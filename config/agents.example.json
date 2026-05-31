@@ -1,0 +1,39 @@
+{
+  "judge_agent": "deepseek_api",
+  "agents": [
+    {
+      "id": "gpt_pro_thinking",
+      "display_name": "GPT Pro Thinking",
+      "provider": "web_manual",
+      "role": "broad strategist and proof synthesizer",
+      "web_url": "https://chatgpt.com/"
+    },
+    {
+      "id": "gemini_deep_think",
+      "display_name": "Gemini Deep Think",
+      "provider": "web_manual",
+      "role": "independent alternative strategist and obstacle finder",
+      "web_url": "https://gemini.google.com/"
+    },
+    {
+      "id": "qwen_api",
+      "display_name": "Qwen API",
+      "provider": "openai_compatible",
+      "role": "technical lemma generator and computation-aware analyst",
+      "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+      "api_key_env": "QWEN_API_KEY",
+      "model_env": "QWEN_MODEL",
+      "default_model": "qwen-plus"
+    },
+    {
+      "id": "deepseek_api",
+      "display_name": "DeepSeek API",
+      "provider": "openai_compatible",
+      "role": "proof critic, gap finder, and judge",
+      "endpoint": "https://api.deepseek.com/chat/completions",
+      "api_key_env": "DEEPSEEK_API_KEY",
+      "model_env": "DEEPSEEK_MODEL",
+      "default_model": "deepseek-reasoner"
+    }
+  ]
+}

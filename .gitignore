@@ -1,0 +1,19 @@
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local generated handoff prompts and copied web responses.
+handoff/
+
+# Keep research outputs versioned by default. If a run becomes too large,
+# move bulky artifacts under artifacts/ and ignore them explicitly.
+artifacts/
+
+# Local reference downloads kept out of the public repo unless explicitly curated.
+Gauss circle problem.html
+Gauss circle problem.pdf
+Gauss circle problem.tex
+Gauss circle problem_files/
