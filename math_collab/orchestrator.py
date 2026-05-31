@@ -307,6 +307,22 @@ For review stages, include: valuable ideas from other agents, claims that look c
 For judge stages, include: selected route, useful fragments by source, rejected or risky ideas, exact gaps, new lemma statements, next-round tasks, and confidence."""
 
 
+def reasoning_stage_guardrail() -> str:
+    return """## Reasoning-Stage Guardrail
+
+This is an independent reasoning stage, not a review stage.
+
+Use the previous rounds only as background state and judge instructions. Do not evaluate "other agents' outputs" as your primary task, and do not use review-stage headings such as:
+
+- `Most valuable input from others`
+- `Claims that look correct`
+- `Claims that need proof`
+- `Score by agent`
+- `Suggested synthesis`
+
+If your draft begins with a review heading, discard that draft and rewrite it as independent reasoning using the required reasoning schema below. Start from a new mathematical claim, derivation, obstruction check, lemma statement, or concrete test."""
+
+
 def build_reasoning_prompt(
     *,
     agent: Agent,
@@ -350,6 +366,8 @@ Follow the protocol and be strict about separating proved claims from conjectura
 {markdown_math_rule()}
 
 {research_quality_rubric()}
+
+{reasoning_stage_guardrail()}
 
 ## Problem
 
@@ -544,6 +562,7 @@ def call_openai_compatible(agent: Agent, prompt: str, timeout: int) -> str:
         ],
         "temperature": float(agent.raw.get("temperature", 0.2)),
     }
+    payload.update(agent.raw.get("extra_payload", {}))
     request = urllib.request.Request(
         endpoint,
         data=json.dumps(payload).encode("utf-8"),
@@ -607,6 +626,10 @@ def run_agent(
     skip_missing_api: bool,
 ) -> str | None:
     write_text(prompt_path, prompt)
+
+    existing_output = usable_web_response(output_path)
+    if existing_output and not existing_output.startswith("# Pending API Response"):
+        return existing_output
 
     if dry_run:
         output = dry_response(agent, stage, round_index)

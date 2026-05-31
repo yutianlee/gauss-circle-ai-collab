@@ -1,6 +1,6 @@
 Selected main route:
 
-Keep the current arithmetic route, but explicitly downgrade its status from “promising proof route” to “structured reduction plus obstruction map.”
+Keep the current arithmetic route, but explicitly downgrade its status from "promising proof route" to "structured reduction plus obstruction map."
 
 The selected route remains:
 
@@ -243,13 +243,13 @@ This is a calibration route, not the main analytic route.
 
 ## From `gemini_deep_think`
 
-The most useful contribution is the “Fejer Majorant DDP Trap” diagnostic.
+The most useful contribution is the "Fejer Majorant DDP Trap" diagnostic.
 
 The point is precise: the Vaaler residual is controlled by a nonnegative Fejer kernel. After expanding the majorant, the first residual family contains $1_{2\nmid d}$ rather than $\chi_4(d)$. Thus the signed two-square character has been replaced by parity support.
 
 This makes H5r structurally divisor-like. That does not prove an impossibility theorem, but it identifies the likely bottleneck of the Vaaler route.
 
-Gemini’s second useful contribution is the dual parity collapse check. If one applies a B-process to the parity residual
+Gemini's second useful contribution is the dual parity collapse check. If one applies a B-process to the parity residual
 
 $$
 \sum_d 1_{2\nmid d}w(d/D)e(kX/d),
@@ -265,39 +265,39 @@ which is constant in $m$.
 
 This is the parity analogue of H7. It says that B-process-first may preserve $\chi_4$ for the signed main term H5a, but it does not obviously rescue the parity residual H5r.
 
-Gemini’s third useful contribution is the non-majorizing truncation suggestion. The claim should not be accepted as a theorem, but the route is worth testing: if the positive Fejer majorant is the mechanism that destroys $\chi_4$, then one should compare Vaaler against signed finite Fourier truncations, Perron/Mellin methods, or exact discrete transforms.
+Gemini's third useful contribution is the non-majorizing truncation suggestion. The claim should not be accepted as a theorem, but the route is worth testing: if the positive Fejer majorant is the mechanism that destroys $\chi_4$, then one should compare Vaaler against signed finite Fourier truncations, Perron/Mellin methods, or exact discrete transforms.
 
 Rejected or risky ideas:
 
-1. **Reject: “H5r is just an error term.”**
+1. **Reject: "H5r is just an error term."**
 
    H5r is part of the analytic core. Without endpoint-strength bounds for $C_1$ and $C_{2,\rho}$, the Vaaler route does not imply the conjectural bound.
 
-2. **Reject: “The Vaaler residual is only $O(D/H_D)$.”**
+2. **Reject: "The Vaaler residual is only $O(D/H_D)$."**
 
    The zeroth Fejer mode gives $D/H_D$, but the nonzero modes give reciprocal sums. Omitting them is a false proof.
 
-3. **Reject: “H5a success would solve the route.”**
+3. **Reject: "H5a success would solve the route."**
 
    Even if the signed spatial-character main family $B_1$ is controlled, the parity/untwisted residual H5r may still block the argument.
 
-4. **Reject: “Fejer Majorant DDP Trap is a theorem.”**
+4. **Reject: "Fejer Majorant DDP Trap is a theorem."**
 
    It is currently a diagnostic obstruction, not a proved lower bound or equivalence. To become a theorem, it would need a formal reduction from H5r to a divisor-problem endpoint estimate, or a lower-bound construction showing unavoidable size.
 
-5. **Reject: “Continuous Fourier truncation methods are exhausted.”**
+5. **Reject: "Continuous Fourier truncation methods are exhausted."**
 
    Positive-majorant Vaaler creates a serious problem, but there may be signed truncations, blockwise cancellation among Fejer modes, Perron/Mellin formulations, or bilinear methods that avoid the crude majorant loss.
 
-6. **Reject: “B-process-first solves the character problem.”**
+6. **Reject: "B-process-first solves the character problem."**
 
    H8 preserves $\chi_4$ in the dual variable for the signed main term, but direct differencing in the dual variable triggers H7 again. For the parity residual, B-process appears to produce an alternating dual factor whose direct differencing collapses immediately.
 
-7. **Reject: “H6 rules out all character-blind methods.”**
+7. **Reject: "H6 rules out all character-blind methods."**
 
    H6 only applies to methods that treat the outer frequency variable trivially and then apply a one-dimensional exponent-pair estimate to the inner reciprocal sum. It does not rule out double large sieve, Bombieri--Iwaniec spacing, bilinear estimates, or decoupling-type methods that preserve the two-variable structure.
 
-8. **Reject: “Current Li--Yang technology reaches H5.”**
+8. **Reject: "Current Li--Yang technology reaches H5."**
 
    Li--Yang-type methods provide the correct structural comparison class, but current known exponents remain above $1/4$ in $X$-notation. H5a, H5b, and H5r are endpoint-strength targets.
 

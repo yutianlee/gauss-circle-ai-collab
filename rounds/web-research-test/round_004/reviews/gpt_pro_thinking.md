@@ -2,7 +2,7 @@ Most valuable input from others:
 
 The only other active Round 4 output to review is `gemini_deep_think`; inactive-agent references should remain historical noise under the active-agent constraint. The uploaded Round 4 review prompt also contains a recent human/process note requiring ChatGPT Extended Pro for `gpt_pro_thinking`, Gemini Pro Deep Think for `gemini_deep_think`, one persistent conversation per web agent when possible, and the public repo plus `reading_packet.md` as authoritative memory.
 
-Gemini’s most valuable Round 4 contribution is the explicit B-process-first analysis of
+Gemini's most valuable Round 4 contribution is the explicit B-process-first analysis of
 
 $$
 S_\chi(h,D)
@@ -28,7 +28,7 @@ $$
 
 This agrees with the prior preliminary H8 formula and should be retained as a proposed but now substantially clarified lemma.
 
-The second valuable contribution is Gemini’s recalibration of H6. It correctly adopts the standard reciprocal-phase scaling
+The second valuable contribution is Gemini's recalibration of H6. It correctly adopts the standard reciprocal-phase scaling
 
 $$
 T\asymp \frac{hX}{D},
@@ -48,13 +48,13 @@ $$
 
 This resolves the earlier ambiguity between $p+2q\le 1$ and $3p+2q\le 1$. It should be recorded as a conditional diagnostic under explicitly stated hypotheses: trivial or absolute-value summation in $h$, one-dimensional exponent-pair treatment of the $d$-sum, and no bilinear/spacing cancellation.
 
-The third useful input is Gemini’s proposed H9: after B-process dualization, the continuous phase has the form
+The third useful input is Gemini's proposed H9: after B-process dualization, the continuous phase has the form
 
 $$
 \Phi(h,m)=\sqrt{Xhm},
 $$
 
-and its two-variable Hessian determinant is identically zero. Gemini’s calculation
+and its two-variable Hessian determinant is identically zero. Gemini's calculation
 
 $$
 \Phi_{hh}\Phi_{mm}-(\Phi_{hm})^2=0
@@ -64,7 +64,7 @@ is correct and should become a guardrail against claims that the B-process dual 
 
 Claims that look correct:
 
-Gemini’s H8 character transfer is correct at the formal Poisson-summation level. Splitting modulo $4$ gives the Gauss factor
+Gemini's H8 character transfer is correct at the formal Poisson-summation level. Splitting modulo $4$ gives the Gauss factor
 
 $$
 \sum_{r\bmod 4}\chi_4(r)e(nr/4)
@@ -74,7 +74,7 @@ e(n/4)-e(3n/4)
 2i\chi_4(n),
 $$
 
-up to the harmless global normalization from Poisson summation on residue classes. Thus the B-process does preserve the mod-$4$ character in the dual variable. The next proof draft should state this as “proved modulo standard smooth Poisson/stationary-phase hypotheses,” not as a complete estimate.
+up to the harmless global normalization from Poisson summation on residue classes. Thus the B-process does preserve the mod-$4$ character in the dual variable. The next proof draft should state this as "proved modulo standard smooth Poisson/stationary-phase hypotheses," not as a complete estimate.
 
 The stationary point and dual length are also correct. For
 
@@ -132,9 +132,9 @@ $$
 0.
 $$
 
-This should be promoted as a proved algebraic/geometric diagnostic, with the caveat that “zero continuous Hessian” does not by itself rule out discrete Bombieri-Iwaniec spacing methods.
+This should be promoted as a proved algebraic/geometric diagnostic, with the caveat that "zero continuous Hessian" does not by itself rule out discrete Bombieri-Iwaniec spacing methods.
 
-Gemini’s warning that B-process-first only delays H7 is also correct. After dualization, the character is $\chi_4(m)$. A direct A-process in $m$ produces
+Gemini's warning that B-process-first only delays H7 is also correct. After dualization, the character is $\chi_4(m)$. A direct A-process in $m$ produces
 
 $$
 \chi_4(m)\chi_4(m+q),
@@ -142,7 +142,7 @@ $$
 
 which falls under the already proved H7 parity-collapse lemma. Thus B-process-first is not a cure by itself; it is only a way to postpone character loss until after the problem has been transformed.
 
-Gemini’s Parseval-style amplitude sanity check is useful. The dual length is
+Gemini's Parseval-style amplitude sanity check is useful. The dual length is
 
 $$
 M_D\asymp \frac{hX}{D^2},
@@ -152,7 +152,7 @@ and the proposed stationary-phase amplitude scale is consistent with conservatio
 
 Claims that need proof:
 
-The statement “the B-process elegantly extracts the character and outputs the dual phase $\sqrt{hXm}$” should not be marked fully proved until the exact stationary-phase formula is written with constants, signs, support restrictions, endpoint errors, and uniformity in the local dyadic ranges. The current output gives the right leading structure, but H8 still needs a theorem-level statement:
+The statement "the B-process elegantly extracts the character and outputs the dual phase $\sqrt{hXm}$" should not be marked fully proved until the exact stationary-phase formula is written with constants, signs, support restrictions, endpoint errors, and uniformity in the local dyadic ranges. The current output gives the right leading structure, but H8 still needs a theorem-level statement:
 
 $$
 S_\chi(h,D)
@@ -184,11 +184,11 @@ $$
 
 up to fixed eighth-root phases. The exact constant is not cosmetic if the next stage compares phases against spacing conditions.
 
-The Hessian-zero observation is proved, but the strategic conclusion “therefore sequential 1D analytic dispersion methods appear broadly obstructed” remains a diagnostic, not a theorem. It rules out one false route: generic full-rank two-dimensional stationary phase on the dual phase. It does not rule out discrete spacing, large sieve, arithmetic congruence partitioning, or a Bombieri-Iwaniec argument whose geometry is not captured solely by the continuous Hessian.
+The Hessian-zero observation is proved, but the strategic conclusion "therefore sequential 1D analytic dispersion methods appear broadly obstructed" remains a diagnostic, not a theorem. It rules out one false route: generic full-rank two-dimensional stationary phase on the dual phase. It does not rule out discrete spacing, large sieve, arithmetic congruence partitioning, or a Bombieri-Iwaniec argument whose geometry is not captured solely by the continuous Hessian.
 
-Gemini’s statement that character-blind, trivial-frequency summation is exhausted is correct under H6 hypotheses, but those hypotheses must be repeated every time H6 is invoked. H6 does not rule out estimates that retain a bilinear $h,d$ structure, estimates that use a double large sieve, or estimates that exploit spacing before taking absolute values.
+Gemini's statement that character-blind, trivial-frequency summation is exhausted is correct under H6 hypotheses, but those hypotheses must be repeated every time H6 is invoked. H6 does not rule out estimates that retain a bilinear $h,d$ structure, estimates that use a double large sieve, or estimates that exploit spacing before taking absolute values.
 
-The claim that splitting into residue classes risks mapping the problem to the Dirichlet-divisor limit is plausible but not proved. It should be logged as a risk: if the Bombieri-Iwaniec reduction separates $d\equiv 1\pmod 4$ and $d\equiv 3\pmod 4$ before extracting cancellation between them, then the special $\chi_4$ structure may be lost. But a proof of “no advantage after residue splitting” would require an equivalence theorem or a specific reduction showing that all interference terms vanish or are discarded.
+The claim that splitting into residue classes risks mapping the problem to the Dirichlet-divisor limit is plausible but not proved. It should be logged as a risk: if the Bombieri-Iwaniec reduction separates $d\equiv 1\pmod 4$ and $d\equiv 3\pmod 4$ before extracting cancellation between them, then the special $\chi_4$ structure may be lost. But a proof of "no advantage after residue splitting" would require an equivalence theorem or a specific reduction showing that all interference terms vanish or are discarded.
 
 Possible errors or hidden assumptions:
 
@@ -224,7 +224,7 @@ $$
 
 has zero Hessian. This means B-process-first changes the analytic geometry. It does not prove that the original Li-Yang/Bombieri-Iwaniec reciprocal-sum framework is worse, nor that the dual phase is useless.
 
-The finite Vaaler residual H5r remains under-addressed by Gemini. The Round 4 `gpt_pro_thinking` output sharpened H5r into parity-supported and untwisted Fejér-residual families. Gemini’s H8/H9 analysis mainly concerns H5a, the spatial-character main sum. It does not solve the residual sums, which may be closer to the divisor-problem barrier.
+The finite Vaaler residual H5r remains under-addressed by Gemini. The Round 4 `gpt_pro_thinking` output sharpened H5r into parity-supported and untwisted Fejer-residual families. Gemini's H8/H9 analysis mainly concerns H5a, the spatial-character main sum. It does not solve the residual sums, which may be closer to the divisor-problem barrier.
 
 Suggested synthesis:
 
@@ -246,7 +246,7 @@ Update the lemma bank as follows.
 
 **H1-H3.** Keep as proved floor-compatible reductions.
 
-**H4.** Keep as finite Vaaler with residual majorant and dual-character bookkeeping. The Vaaler residual must continue to be handled through Fejér kernels, not as a scalar $O(D/H_D)$.
+**H4.** Keep as finite Vaaler with residual majorant and dual-character bookkeeping. The Vaaler residual must continue to be handled through Fejer kernels, not as a scalar $O(D/H_D)$.
 
 **H5a/H5b.** Keep as endpoint-strength local dyadic targets:
 
@@ -310,7 +310,7 @@ Do not state H6 as a general impossibility theorem.
 
 **H7.** Keep as proved algebraic obstruction.
 
-**H8.** Upgrade from “proposed” to “partially derived / pending uniform stationary phase.” The core formula is:
+**H8.** Upgrade from "proposed" to "partially derived / pending uniform stationary phase." The core formula is:
 
 $$
 \sum_d\chi_4(d)w(d/D)e(hX/d)
@@ -352,7 +352,7 @@ The output is strong because it completes the requested H6 normalization, carrie
 
 Next-round recommendation:
 
-For `gpt_pro_thinking`: produce the Round 4 judge synthesis with H8 classified as “partially derived; needs uniform stationary phase” and H9 added as a proved diagnostic. Explicitly keep H5r in the gap register. The synthesis should warn that B-process-first preserves the character but moves the problem into a degenerate dual phase, so it is a diagnostic route rather than a proof route.
+For `gpt_pro_thinking`: produce the Round 4 judge synthesis with H8 classified as "partially derived; needs uniform stationary phase" and H9 added as a proved diagnostic. Explicitly keep H5r in the gap register. The synthesis should warn that B-process-first preserves the character but moves the problem into a degenerate dual phase, so it is a diagnostic route rather than a proof route.
 
 For `gemini_deep_think`: refine H8 into a formal stationary-phase lemma. The output should include:
 
@@ -364,7 +364,7 @@ For `gemini_deep_think`: refine H8 into a formal stationary-phase lemma. The out
 6. endpoint and transition treatment;
 7. a statement of uniformity over $X^{1/4}\le D\le X^{1/2}$ and $h\le D X^{-1/4}$.
 
-For both active agents: focus next on the interaction between H5r and H8. The key question is whether B-process-first can help the Fejér residual families, which are parity-supported or untwisted, or whether H5r forces the route back into the known divisor-type barrier.
+For both active agents: focus next on the interaction between H5r and H8. The key question is whether B-process-first can help the Fejer residual families, which are parity-supported or untwisted, or whether H5r forces the route back into the known divisor-type barrier.
 
 Confidence:
 

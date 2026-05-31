@@ -271,7 +271,7 @@ Thus B-process-first preserves $\chi_4$ as a dual character, but it does not yet
 
 ## From `gemini_deep_think`
 
-Gemini’s strongest Round 4 contribution is the confirmation and sharpening of H8. It independently identifies the same B-process-first structure: Poisson summation modulo $4$ transfers $\chi_4$ from the original denominator variable to a dual Gauss factor, hence to $\chi_4(n)$ in the dual variable.
+Gemini's strongest Round 4 contribution is the confirmation and sharpening of H8. It independently identifies the same B-process-first structure: Poisson summation modulo $4$ transfers $\chi_4$ from the original denominator variable to a dual Gauss factor, hence to $\chi_4(n)$ in the dual variable.
 
 The Gauss factor is:
 
@@ -285,7 +285,7 @@ $$
 
 This should be kept as a real structural fact: B-process-first does not immediately discard the character.
 
-Gemini’s second useful contribution is H9. After stationary phase, the dual phase has the form
+Gemini's second useful contribution is H9. After stationary phase, the dual phase has the form
 
 $$
 \Phi(h,m)=\sqrt{Xhm}
@@ -331,7 +331,7 @@ Rejected or risky ideas:
 
 1. Reject scalar Vaaler residuals.
 
-The statement “Vaaler error is $O(D/H_D)$” is incomplete. The Fejer majorant contains nonzero frequencies. The residual generates sums of the same reciprocal type and must be included as H5r.
+The statement "Vaaler error is $O(D/H_D)$" is incomplete. The Fejer majorant contains nonzero frequencies. The residual generates sums of the same reciprocal type and must be included as H5r.
 
 2. Reject H8 as a proof route by itself.
 
@@ -355,7 +355,7 @@ $$
 
 Any other inequality must be tied to a different explicitly named exponent-pair normalization.
 
-6. Reject “$\chi_4$ gives Deligne/Weil savings after A-process.”
+6. Reject "$\chi_4$ gives Deligne/Weil savings after A-process."
 
 H7 shows that direct differencing gives
 

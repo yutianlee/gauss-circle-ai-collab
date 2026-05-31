@@ -1,13 +1,13 @@
 Summary:
 
-This is the next `gpt_pro_thinking` reasoning output following the Round 3 judge synthesis. The active instruction is to update the proof draft/reading packet classifications, make H4/H5r precise, recompute H6 under a named exponent-pair convention, and retain H8 as a proposed B-process-first route. The uploaded state explicitly says H1–H3 should be treated as proved floor-compatible reductions; H4 is still a proposed finite-Vaaler lemma; H5r is required but not exact; H6 is a conditional one-dimensional diagnostic; H7 is a proved algebraic obstruction; and H8 is proposed.
+This is the next `gpt_pro_thinking` reasoning output following the Round 3 judge synthesis. The active instruction is to update the proof draft/reading packet classifications, make H4/H5r precise, recompute H6 under a named exponent-pair convention, and retain H8 as a proposed B-process-first route. The uploaded state explicitly says H1--H3 should be treated as proved floor-compatible reductions; H4 is still a proposed finite-Vaaler lemma; H5r is required but not exact; H6 is a conditional one-dimensional diagnostic; H7 is a proved algebraic obstruction; and H8 is proposed.
 
 Concrete progress here:
 
 1. I state a usable finite Vaaler lemma with the residual majorant and discontinuity convention.
 2. I derive the exact main-term families H5a/H5b and the residual family H5r.
 3. I recompute H6 using the standard exponent-pair convention for reciprocal phases.
-4. I compare H5a/H5b/H5r against the Li–Yang/Bombieri–Iwaniec framework.
+4. I compare H5a/H5b/H5r against the Li--Yang/Bombieri--Iwaniec framework.
 5. I give a preliminary H8 Poisson/B-process formula showing that $\chi_4$ becomes a dual $\chi_4(n)$ Gauss factor, but that this only delays the H7 parity-degeneration issue.
 
 No exponent improvement is proved.
@@ -34,7 +34,7 @@ $$
 P(X)\ll_\epsilon X^{1/4+\epsilon}
 $$
 
-would follow from local dyadic estimates of Li–Yang/Bombieri–Iwaniec type in the ranges
+would follow from local dyadic estimates of Li--Yang/Bombieri--Iwaniec type in the ranges
 
 $$
 X^{1/4}\le D\le X^{1/2},
@@ -159,7 +159,7 @@ $$
 \sum_{d\asymp D}1\ll D
 $$
 
-is already at the conjectural scale after summing dyadically, so those blocks should be separated as “short blocks.”
+is already at the conjectural scale after summing dyadically, so those blocks should be separated as "short blocks."
 
 For
 
@@ -252,7 +252,7 @@ R_1(D)
 \sum_d |\chi_4(d)|w_D(d)\frac{1}{H_D}K_{H_D}(X/d).
 $$
 
-Expanding the Fejér kernel and taking absolute values gives
+Expanding the Fejer kernel and taking absolute values gives
 
 $$
 R_1(D)
@@ -308,7 +308,7 @@ R_2(D)
 \right].
 $$
 
-After expanding the Fejér kernels, this requires estimates for
+After expanding the Fejer kernels, this requires estimates for
 
 $$
 C_{2,\rho}(K_0,D;X)
@@ -329,9 +329,9 @@ $$
 
 This is the exact content of H5r at the current level. It is character-blind in the denominator variable. This is a serious gap, not a cosmetic detail.
 
-Comparison with Li–Yang:
+Comparison with Li--Yang:
 
-Li–Yang’s Section 4 introduces double sums of the form
+Li--Yang's Section 4 introduces double sums of the form
 
 $$
 S=
@@ -367,9 +367,9 @@ F'(x)F'''(x)-3F''(x)^2
 = -6x^{-6},
 $$
 
-so the Li–Yang nondegeneracy condition is satisfied uniformly on dyadic blocks.
+so the Li--Yang nondegeneracy condition is satisfied uniformly on dyadic blocks.
 
-However, the conjectural H5 range is stronger than known Li–Yang technology. Li–Yang prove
+However, the conjectural H5 range is stronger than known Li--Yang technology. Li--Yang prove
 
 $$
 R(X),\Delta(X)=O_\epsilon(X^{\theta^*+\epsilon}),
@@ -377,9 +377,9 @@ R(X),\Delta(X)=O_\epsilon(X^{\theta^*+\epsilon}),
 \theta^*=0.314483\ldots,
 $$
 
-using Bombieri–Iwaniec, a new first-spacing estimate, and Huxley’s second-spacing results.  The conjectural target here is $\theta=1/4$. ANTEDB currently lists Li–Yang 2023 as the sharpest known two-dimensional Gauss-circle bound, with $\theta_2^{\operatorname{Gauss}}\le 2\alpha$ and $\alpha=0.31448\ldots$. ([Teorth][1])
+using Bombieri--Iwaniec, a new first-spacing estimate, and Huxley's second-spacing results.  The conjectural target here is $\theta=1/4$. ANTEDB currently lists Li--Yang 2023 as the sharpest known two-dimensional Gauss-circle bound, with $\theta_2^{\operatorname{Gauss}}\le 2\alpha$ and $\alpha=0.31448\ldots$. ([Teorth][1])
 
-Therefore H5a/H5b/H5r are not known estimates. They are endpoint-strength targets. They are structurally compatible with the Li–Yang setup, but reaching them would require a new improvement in first spacing, second spacing, coefficient orthogonality, or a different mechanism.
+Therefore H5a/H5b/H5r are not known estimates. They are endpoint-strength targets. They are structurally compatible with the Li--Yang setup, but reaching them would require a new improvement in first spacing, second spacing, coefficient orthogonality, or a different mechanism.
 
 H6 under a named exponent-pair convention:
 
@@ -563,7 +563,7 @@ Dependencies:
 
 The current proof draft depends on:
 
-1. Jacobi’s two-square formula
+1. Jacobi's two-square formula
 
 $$
 r_2(n)=4\sum_{d\mid n}\chi_4(d).
@@ -581,7 +581,7 @@ $$
 
 7. Local reciprocal-sum estimates H5a/H5b/H5r.
 
-8. Li–Yang/Bombieri–Iwaniec double-sum technology as the comparison framework, not as a proof of the endpoint target.
+8. Li--Yang/Bombieri--Iwaniec double-sum technology as the comparison framework, not as a proof of the endpoint target.
 
 Potential gaps:
 
@@ -589,7 +589,7 @@ Potential gaps:
    H5r contains parity-supported and untwisted reciprocal sums. These are closer to divisor-problem sums than to character-exploiting Gauss sums. If H5r can only be bounded by absolute values, the H6 diagnostic becomes active.
 
 2. **H5a/H5b are stronger than known technology.**
-   They match the structural form of Li–Yang’s double sums but ask for the endpoint $\theta=1/4$, while Li–Yang prove $\theta^*=0.314483\ldots$.
+   They match the structural form of Li--Yang's double sums but ask for the endpoint $\theta=1/4$, while Li--Yang prove $\theta^*=0.314483\ldots$.
 
 3. **B-process first is not yet a route.**
    The preliminary H8 transform preserves $\chi_4$ as a dual Gauss factor, but the dual sum may still collapse under differencing. It must be compared to actual spacing estimates before being called useful.
@@ -600,8 +600,8 @@ Potential gaps:
 5. **Endpoint conventions remain fragile.**
    H3 uses the floor-compatible value $\psi(n)=-1/2$. Vaaler uses a continuous trigonometric polynomial plus a residual. The residual majorant is what reconciles the conventions. Omitting it creates a false proof.
 
-6. **Poisson–Bessel calibration is still absent.**
-   The repo still needs the secondary proof of the smoothed Poisson–Bessel formula and the $R^{2/3}$ sanity check.
+6. **Poisson--Bessel calibration is still absent.**
+   The repo still needs the secondary proof of the smoothed Poisson--Bessel formula and the $R^{2/3}$ sanity check.
 
 Counterexample or obstruction search:
 
@@ -634,7 +634,7 @@ $$
 \sum_d\chi_4(d)w_D(d)e(hX/d)
 $$
 
-into $d\equiv 1,3\pmod 4$. Check whether the difference between the two residue classes survives the Li–Yang reduction, or whether absolute values separate them and lose all interference.
+into $d\equiv 1,3\pmod 4$. Check whether the difference between the two residue classes survives the Li--Yang reduction, or whether absolute values separate them and lose all interference.
 
 4. **Vaaler discontinuity check.**
    Test $X$ and $d$ such that $X/d$, $(X/d+1)/4$, or $(X/d+3)/4$ is integral. Verify that the residual majorant supplies the missing half-jump.
@@ -725,7 +725,7 @@ B_2(H_0,D;X)
 \ll_\epsilon H_0X^{1/4+\epsilon}.
 $$
 
-**H5r. Fejér-residual target.**
+**H5r. Fejer-residual target.**
 Status: now formulated; not known.
 
 It requires parity-supported or untwisted estimates $C_1,C_{2,\rho}$ of the same endpoint strength.
@@ -780,27 +780,27 @@ This preserves the character in the dual variable but does not yet yield a savin
 What should be tested next:
 
 1. Insert H4 and H5r into the best proof draft exactly as above.
-2. Mechanically verify the finite Vaaler statement and coefficient normalization from a standard reference before marking H4 as “proved dependency.”
+2. Mechanically verify the finite Vaaler statement and coefficient normalization from a standard reference before marking H4 as "proved dependency."
 3. Run numerical H5r stress tests, especially for square and near-square $X$.
 4. Ask `gemini_deep_think` to refine H8: derive the stationary-phase constants, endpoint terms, and dual dyadic ranges.
-5. Build the Li–Yang dictionary:
+5. Build the Li--Yang dictionary:
 
 $$
 T=X,\qquad M=D,\qquad H=H_0,\qquad F(x)=1/x.
 $$
 
-Then record precisely which Li–Yang hypotheses hold and which endpoint estimate is missing.
+Then record precisely which Li--Yang hypotheses hold and which endpoint estimate is missing.
 
 Confidence:
 
-High confidence in H1–H3 and H7.
+High confidence in H1--H3 and H7.
 
-High confidence that the Vaaler residual must be treated through the Fejér majorant and cannot be replaced by a scalar $O(D/H_D)$.
+High confidence that the Vaaler residual must be treated through the Fejer majorant and cannot be replaced by a scalar $O(D/H_D)$.
 
 High confidence in the H6 correction: under the standard reciprocal-phase convention, the endpoint condition is $3\kappa+2\lambda\le 1$, not $p+2q\le 1$.
 
 Moderate confidence in the H8 preliminary Poisson formula; constants and endpoint terms still need checking.
 
-Low confidence that H5a/H5b/H5r are reachable by current Li–Yang/Bombieri–Iwaniec technology without a new idea.
+Low confidence that H5a/H5b/H5r are reachable by current Li--Yang/Bombieri--Iwaniec technology without a new idea.
 
 [1]: https://teorth.github.io/expdb/blueprint/gauss-circle-chapter.html "The Gauss circle problem and its generalizations"

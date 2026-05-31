@@ -1,6 +1,6 @@
 {
   "judge_agent": "gpt_pro_thinking",
-  "prompt_exclusions": ["qwen", "deepseek"],
+  "prompt_exclusions": ["qwen"],
   "agents": [
     {
       "id": "gpt_pro_thinking",
@@ -18,6 +18,24 @@
       "role": "independent alternative strategist and obstacle finder",
       "web_url": "https://gemini.google.com/",
       "instructions": "Use Gemini Pro Deep Think. Deliberately think longer and answer in substantially more detail than a normal response. Do not optimize for brevity. Match the depth expected from a mathematical referee report: give precise statements, parameter ranges, dependencies, and explicit gap audits. Avoid overconfident language. Do not say 'prove', 'formally prove', 'strictly requires', 'must abandon', or similar unless the proof is actually supplied in the response. Prefer calibrated phrases such as 'suggests', 'would require showing', 'appears to reduce to', 'under the following hypotheses', and 'confidence: low/moderate/high with reasons'. For every strong claim, include at least one missing hypothesis or possible failure mode. Include a dedicated section called 'Confidence calibration and failure modes'. Minimum depth contract for research-mode reasoning: produce at least 8 substantive sections, at least 4 explicit lemma/claim boxes, at least 3 possible failure modes, and at least 2 concrete counterexample or stress-test checks. If your first draft is short, continue expanding before finalizing. When reviewing, include a detailed paragraph for each major claim rather than only a bullet verdict."
+    },
+    {
+      "id": "deepseek_api",
+      "display_name": "DeepSeek API",
+      "provider": "openai_compatible",
+      "role": "API-based algebra checker, obstruction auditor, and alternative-route stress tester",
+      "endpoint": "https://api.deepseek.com/chat/completions",
+      "api_key_env": "DEEPSEEK_API_KEY",
+      "model_env": "DEEPSEEK_MODEL",
+      "default_model": "deepseek-v4-pro",
+      "extra_payload": {
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "max",
+        "max_tokens": 32768
+      },
+      "instructions": "Use DeepSeek API thinking mode with maximal reasoning effort if available. Do not optimize for brevity. Take the role of a detailed mathematical referee and independent proof auditor. Focus on independently checking algebraic reductions, endpoint conventions, Poisson/B-process normalizations, Vaaler/Fejer residuals, Mellin-Perron alternatives, and claimed obstructions. Be skeptical of impossibility claims unless a proof is supplied. Minimum depth contract for reasoning: write at least 10 substantive sections, at least 6 explicit lemma/claim boxes, at least 4 failure modes, at least 3 concrete stress tests, and a final prioritized next-action list. For review and judge-like tasks, discuss each active agent's main contribution in separate paragraphs. Prefer precise parameter ranges and formulas over summaries. Include a dedicated section called 'Confidence calibration and failure modes'."
     }
   ]
 }

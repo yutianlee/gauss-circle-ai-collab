@@ -1,5 +1,5 @@
 Summary:
-Following the Judge's instructions, I have mapped the exact dyadic parameters and rigorously formulated the "character blindness" barrier as a precise dyadic estimate constraint. By explicitly expanding the Fourier series of the Judge's second hyperbola leg, I demonstrate a perfect algebraic **Dual Character Symmetry**: Leg 1 carries $\chi_4(a)$ on the spatial variable, while Leg 2 exactly transfers $\chi_4(h)$ onto the dual frequency variable. I formally prove that any "character-blind" analytic method—meaning it applies absolute values to these coefficients and bounds the resulting raw geometric phase—is structurally isomorphic to the Dirichlet Divisor Problem (DDP) and strictly requires a proof of the Exponent Pair Conjecture to reach $X^{1/4+\epsilon}$.
+Following the Judge's instructions, I have mapped the exact dyadic parameters and rigorously formulated the "character blindness" barrier as a precise dyadic estimate constraint. By explicitly expanding the Fourier series of the Judge's second hyperbola leg, I demonstrate a perfect algebraic **Dual Character Symmetry**: Leg 1 carries $\chi_4(a)$ on the spatial variable, while Leg 2 exactly transfers $\chi_4(h)$ onto the dual frequency variable. I formally prove that any "character-blind" analytic method--meaning it applies absolute values to these coefficients and bounds the resulting raw geometric phase--is structurally isomorphic to the Dirichlet Divisor Problem (DDP) and strictly requires a proof of the Exponent Pair Conjecture to reach $X^{1/4+\epsilon}$.
 
 Main claim or direction:
 To unconditionally breach the DDP exponent barrier ($517/1648$) and reach the Gauss target $X^{1/4+\epsilon}$, the repo must abandon generic, coefficient-blind 2D decoupling and van der Corput machinery.
@@ -40,7 +40,7 @@ Dependencies:
 
 Potential gaps:
 
-* **Character-Twisted Decoupling Feasibility:** It remains completely unproven whether modern discrete decoupling theorems *can* be modified to exploit a multiplicative character. Standard decoupling uses Cauchy-Schwarz or Hölder inequalities, which immediately force absolute values onto the sequences, inducing character-blindness.
+* **Character-Twisted Decoupling Feasibility:** It remains completely unproven whether modern discrete decoupling theorems *can* be modified to exploit a multiplicative character. Standard decoupling uses Cauchy-Schwarz or Holder inequalities, which immediately force absolute values onto the sequences, inducing character-blindness.
 * **Vaaler Cutoff Residuals:** At points where $(X/b+1)/4$ is an integer, the Fourier series evaluates to the midpoint of the jump, while the Judge's floor-based $\psi(t)$ requires a specific value. We must ensure these rare boundary points only sum to $O(1)$.
 
 Counterexample or obstruction search:

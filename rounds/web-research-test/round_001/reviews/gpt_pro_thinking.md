@@ -9,14 +9,12 @@ The most useful concrete object from Gemini is the proposed exact hyperbola form
 $$
 E(R)
 =
-
 -4\sum_{a\le R}\chi_4(a)\psi(R^2/a)
 +
 4\sum_{b\le R}
 \left[
 \psi\left(\frac{R^2/b+1}{4}\right)
-----------------------------------
-
+-
 \psi\left(\frac{R^2/b+3}{4}\right)
 \right]
 +
@@ -34,7 +32,6 @@ The identity
 $$
 N(R)
 =
-
 1+4\sum_{ab\le R^2}\chi_4(a)
 $$
 
@@ -71,7 +68,6 @@ The exact hyperbola decomposition with only $O(1)$ residual must be proved from 
 $$
 \sum_{ab\le X}\chi_4(a)
 =
-
 \sum_{a\le y}\chi_4(a)\left\lfloor\frac Xa\right\rfloor
 +
 \sum_{b\le X/y}\sum_{y<a\le X/b}\chi_4(a),
@@ -90,26 +86,25 @@ The formula
 $$
 P(t)=
 \psi\left(\frac{t+1}{4}\right)
-------------------------------
-
+-
 \psi\left(\frac{t+3}{4}\right)
 $$
 
 appears correct for a suitable shifted partial-sum convention, but it needs a precise definition of $P(t)$ and treatment of integer endpoints. Gemini states the identity for non-integers, which is not enough for a lattice-point formula that has jumps at $R^2\in\mathbb Z$.
 
-The assertion that the nondegenerate phase $\Phi(h,x)=hR^2/x$ “unlocks modern 2D decoupling bounds” needs a theorem-level bridge. The variable $h$ is a Fourier index, not a smooth geometric coordinate; the sums are highly unbalanced; the coefficients include $\chi_4$; and the relevant estimates in the Bombieri-Iwaniec framework usually pass through first-spacing, second-spacing, and large sieve machinery. Bourgain-Watt describe the Bombieri-Iwaniec approach as involving first and second spacing problems combined by a large sieve, and they specifically note that their decoupling treatment improved a zeta mean-square estimate but did not improve Huxley’s circle/divisor bounds.
+The assertion that the nondegenerate phase $\Phi(h,x)=hR^2/x$ "unlocks modern 2D decoupling bounds" needs a theorem-level bridge. The variable $h$ is a Fourier index, not a smooth geometric coordinate; the sums are highly unbalanced; the coefficients include $\chi_4$; and the relevant estimates in the Bombieri-Iwaniec framework usually pass through first-spacing, second-spacing, and large sieve machinery. Bourgain-Watt describe the Bombieri-Iwaniec approach as involving first and second spacing problems combined by a large sieve, and they specifically note that their decoupling treatment improved a zeta mean-square estimate but did not improve Huxley's circle/divisor bounds.
 
-The “character blindness” concern is valid as a warning, but it needs to be converted into a precise analytic question: for which bilinear or trilinear exponential sums does retaining $\chi_4$ produce a provable gain over absolute values? Without such a formulation, it remains a slogan rather than a lemma.
+The "character blindness" concern is valid as a warning, but it needs to be converted into a precise analytic question: for which bilinear or trilinear exponential sums does retaining $\chi_4$ produce a provable gain over absolute values? Without such a formulation, it remains a slogan rather than a lemma.
 
 Possible errors or hidden assumptions:
 
-The recommendation to “formally abandon geometric Bessel expansions” is too strong. The research packet explicitly lists Poisson summation, Bessel expansions, smoothing/unsmoothing, divisor connections, and computational checks as initial directions.  The right synthesis is not to abandon the Bessel route, but to demote it from “direct proof route” to “normalization, sanity-check, and comparison route.”
+The recommendation to "formally abandon geometric Bessel expansions" is too strong. The research packet explicitly lists Poisson summation, Bessel expansions, smoothing/unsmoothing, divisor connections, and computational checks as initial directions.  The right synthesis is not to abandon the Bessel route, but to demote it from "direct proof route" to "normalization, sanity-check, and comparison route."
 
-The statement that smoothing methods “artificially erase point-mass spikes” is misleading. Improper smoothing can hide jumps, but a standard sandwich argument recovers the sharp count from smoothed counts at radii $R+O(\delta)$ and pays an explicit $O(R\delta)$ boundary cost. Smoothing is not a false operation; the danger is using it without unsmoothing.
+The statement that smoothing methods "artificially erase point-mass spikes" is misleading. Improper smoothing can hide jumps, but a standard sandwich argument recovers the sharp count from smoothed counts at radii $R+O(\delta)$ and pays an explicit $O(R\delta)$ boundary cost. Smoothing is not a false operation; the danger is using it without unsmoothing.
 
-The claim that when $R^2\in\mathbb Z$ the phases $hR^2/x$ “perfectly align constructively across the character” and thereby generate the Hardy-Landau omega phenomenon is not proved and is likely oversimplified. The omega phenomenon is real, but recovering it from this specific finite Fourier/hyperbola expression requires a genuine resonance analysis, not just rationality of phases. Gemini’s statement should be put in the obstruction register, not the lemma bank.
+The claim that when $R^2\in\mathbb Z$ the phases $hR^2/x$ "perfectly align constructively across the character" and thereby generate the Hardy-Landau omega phenomenon is not proved and is likely oversimplified. The omega phenomenon is real, but recovering it from this specific finite Fourier/hyperbola expression requires a genuine resonance analysis, not just rationality of phases. Gemini's statement should be put in the obstruction register, not the lemma bank.
 
-The literature-status claim that the divisor problem is “currently stalled around $517/1648$” should be audited. Li-Yang’s 2023 paper states an improvement for both the Gauss circle problem and the Dirichlet divisor problem using the Bombieri-Iwaniec method, a new first-spacing estimate, and Huxley’s second-spacing estimates.  Their Theorem 1.2 gives both $R(X)$ and $\Delta(X)$ bounded by $O_\epsilon(X^{\theta^*+\epsilon})$ with $\theta^*=0.314483\ldots$.
+The literature-status claim that the divisor problem is "currently stalled around $517/1648$" should be audited. Li-Yang's 2023 paper states an improvement for both the Gauss circle problem and the Dirichlet divisor problem using the Bombieri-Iwaniec method, a new first-spacing estimate, and Huxley's second-spacing estimates.  Their Theorem 1.2 gives both $R(X)$ and $\Delta(X)$ bounded by $O_\epsilon(X^{\theta^*+\epsilon})$ with $\theta^*=0.314483\ldots$.
 
 The most serious hidden assumption is that nonzero Hessian in the artificial $(h,x)$ variables is enough to beat the known barrier. It is not. A usable statement must specify the exact dyadic ranges, coefficient classes, truncation parameter $H$, weights, and the external theorem being invoked.
 
@@ -143,7 +138,7 @@ $$
 E(R)\ll_\epsilon R^{1/2+\epsilon}.
 $$
 
-Gemini’s Hessian warning should be recorded as a rejected-route guardrail: “Do not apply generic full-rank 2D stationary phase directly to $R|k|$ or $R\sqrt{ab}$.” But the Bessel expansion itself should remain in the toolkit, because it provides a check on smoothing, dyadic frequency ranges, and the classical $R^{2/3}$ sanity bound.
+Gemini's Hessian warning should be recorded as a rejected-route guardrail: "Do not apply generic full-rank 2D stationary phase directly to $R|k|$ or $R\sqrt{ab}$." But the Bessel expansion itself should remain in the toolkit, because it provides a check on smoothing, dyadic frequency ranges, and the classical $R^{2/3}$ sanity bound.
 
 The hyperbola lemma should be split into smaller lemmas:
 
@@ -153,7 +148,6 @@ For $X=R^2$ and $y=\lfloor \sqrt X\rfloor$,
 $$
 N(R)
 =
-
 1+
 4\sum_{a\le y}\chi_4(a)\left\lfloor\frac Xa\right\rfloor
 +
@@ -181,6 +175,6 @@ Next-round recommendation:
 
 Use the next round to verify the arithmetic foundation, not to chase the conjecture directly.
 
-Assign `gemini_deep_think` to reformulate the “character blindness” issue as a concrete dyadic exponential-sum target, with coefficient classes and parameter ranges.
+Assign `gemini_deep_think` to reformulate the "character blindness" issue as a concrete dyadic exponential-sum target, with coefficient classes and parameter ranges.
 
-Assign `gpt_pro_thinking` to synthesize the corrected hyperbola lemma with the earlier Poisson-Bessel/smoothing route and produce a unified reading packet. The selected route should be “arithmetic hyperbola as the main analytic route; Bessel smoothing as normalization and consistency check.”
+Assign `gpt_pro_thinking` to synthesize the corrected hyperbola lemma with the earlier Poisson-Bessel/smoothing route and produce a unified reading packet. The selected route should be "arithmetic hyperbola as the main analytic route; Bessel smoothing as normalization and consistency check."

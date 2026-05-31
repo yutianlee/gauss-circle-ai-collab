@@ -1,5 +1,5 @@
 Most valuable input from others:
-`gpt_pro_thinking` provides an exceptionally detailed and mathematically mature derivation of the exact residual $\mathcal{C}(X)$ for the balanced sawtooth formula (Lemma H3). The explicit expansion of the non-oscillatory terms and the application of the four-case Gregory-series tail estimate $L(1, \chi_4)$ to cancel the main terms algebraically is a high-quality contribution that elevates the hyperbola method from a heuristic decomposition to a rigorous baseline. Additionally, the refinement of Lemma H4—noting that Vaaler truncation leaves behind explicit Fejér-weighted exponential sums rather than a mere scalar $O(X^{1/2}/H)$ error—is a critical structural insight that helps prevent a notorious class of false proofs in analytic number theory.
+`gpt_pro_thinking` provides an exceptionally detailed and mathematically mature derivation of the exact residual $\mathcal{C}(X)$ for the balanced sawtooth formula (Lemma H3). The explicit expansion of the non-oscillatory terms and the application of the four-case Gregory-series tail estimate $L(1, \chi_4)$ to cancel the main terms algebraically is a high-quality contribution that elevates the hyperbola method from a heuristic decomposition to a rigorous baseline. Additionally, the refinement of Lemma H4--noting that Vaaler truncation leaves behind explicit Fejer-weighted exponential sums rather than a mere scalar $O(X^{1/2}/H)$ error--is a critical structural insight that helps prevent a notorious class of false proofs in analytic number theory.
 
 Claims that look correct:
 
@@ -11,7 +11,7 @@ Claims that look correct:
 Claims that need proof:
 
 * **Uniformity at Discontinuities for the Tail Estimate**: While the asymptotic tail estimate appears correct for large $y$, achieving a strictly bounded $O(1)$ residual uniformly would require showing that the $O(y^{-2})$ error term combined with the variance from $X = y^2 + O(y)$ does not introduce unbounded local fluctuations precisely at the boundaries where $X$ is an integer square. For instance, the exact size of the constant in $O(y^{-2})$ needs to be bounded explicitly to ensure $4X \cdot O(y^{-2}) \le C$ unconditionally for all $y \ge 1$.
-* **Fejér-Residual Independence (Lemma H4/H5)**: The claim that the Fejér-weighted residual sums can be seamlessly bounded by the identical dyadic criterion appears plausible, but it would require showing that placing absolute values outside the inner sum (to handle the positive majorant bounds) does not discard necessary cancellation. Specifically, if the Vaaler majorant prevents exploiting oscillation over $h$, it might weaken the overall bounds compared to the main sum.
+* **Fejer-Residual Independence (Lemma H4/H5)**: The claim that the Fejer-weighted residual sums can be seamlessly bounded by the identical dyadic criterion appears plausible, but it would require showing that placing absolute values outside the inner sum (to handle the positive majorant bounds) does not discard necessary cancellation. Specifically, if the Vaaler majorant prevents exploiting oscillation over $h$, it might weaken the overall bounds compared to the main sum.
 
 Possible errors or hidden assumptions:
 
@@ -19,7 +19,7 @@ Possible errors or hidden assumptions:
 * **The Character-Blindness Barrier in H5**: `gpt_pro_thinking` proposes the dyadic target $B_{\lambda,\mu,c}(H_0,D;X) \ll_\epsilon H_0 X^{1/4+\epsilon}$ for generic (untwisted) coefficients. Under standard Exponent Pair theory $(p,q)$ applied to the $D$-sum, the bound evaluates to $H_0 (H_0 X / D^2)^p D^q = H_0^{1+p} X^p D^{q-2p}$. In the critical range $D \sim X^{1/2}$ and $H_0 \sim X^{1/4}$, this yields $X^{1/4 + p/4 + q/2}$. To achieve $X^{1/4}$ (after summing over dyadic blocks), this appears to reduce exactly to the condition $p + 2q \le 1$. Therefore, relying on generic spacing lemmas without an explicit $\chi_4$-aware mechanism embeds the hidden assumption that the Exponent Pair Conjecture can be bypassed. It implies the Gauss Circle Problem bounds could be improved identically for the Dirichlet Divisor Problem, which has historically been a massive barrier.
 
 Suggested synthesis:
-We should merge `gpt_pro_thinking`'s rigorous Fejér-weighted truncation framework (H4) and exact H3 residual derivation with the exact dual-character evaluation $\gamma_h = 2i \chi_4(h)$.
+We should merge `gpt_pro_thinking`'s rigorous Fejer-weighted truncation framework (H4) and exact H3 residual derivation with the exact dual-character evaluation $\gamma_h = 2i \chi_4(h)$.
 
 Confidence calibration and failure modes:
 
@@ -30,11 +30,11 @@ Confidence calibration and failure modes:
 * *Failure Mode for H5 (Character-Blind)*: The method stalls precisely at the Dirichlet Divisor Problem barrier (currently $\approx 517/1648$), as the geometric sums are structurally isomorphic once absolute values are taken over the character coefficients.
 
 * **Confidence in H5 Feasibility (Character-Aware)**: Moderate.
-* *Failure Mode for H5 (Character-Aware)*: The standard gateway to exponential sum bounds is Hölder's inequality or Cauchy-Schwarz (the A-process) to smooth the weights. Applying Cauchy-Schwarz to the character-twisted sum $\sum_a \chi_4(a) e(hX/a)$ immediately generates cross-terms $\chi_4(a)\chi_4(a+q)$. If the major arcs of the phase $hX/a$ misalign with the modulus of the character, this arithmetic cross-correlation might fail to provide usable geometric cancellation, thereby erasing the advantage of the Dual Character Symmetry.
+* *Failure Mode for H5 (Character-Aware)*: The standard gateway to exponential sum bounds is Holder's inequality or Cauchy-Schwarz (the A-process) to smooth the weights. Applying Cauchy-Schwarz to the character-twisted sum $\sum_a \chi_4(a) e(hX/a)$ immediately generates cross-terms $\chi_4(a)\chi_4(a+q)$. If the major arcs of the phase $hX/a$ misalign with the modulus of the character, this arithmetic cross-correlation might fail to provide usable geometric cancellation, thereby erasing the advantage of the Dual Character Symmetry.
 
 Score by agent:
 
-* `gpt_pro_thinking`: 9/10. An excellent, rigorous derivation of the $O(1)$ residual and identification of the Fejér error structures. Minor deductions for missing the Euler formula reduction of $\gamma_h$ to $2i\chi_4(h)$, which obscures the arithmetic nature of the second sum, and for proposing a dyadic criterion (H5) without calibrating its feasibility against the known DDP exponent barrier.
+* `gpt_pro_thinking`: 9/10. An excellent, rigorous derivation of the $O(1)$ residual and identification of the Fejer error structures. Minor deductions for missing the Euler formula reduction of $\gamma_h$ to $2i\chi_4(h)$, which obscures the arithmetic nature of the second sum, and for proposing a dyadic criterion (H5) without calibrating its feasibility against the known DDP exponent barrier.
 * `gemini_deep_think` (self): N/A (acting as reviewer).
 
 Next-round recommendation:

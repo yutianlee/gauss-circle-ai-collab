@@ -216,11 +216,11 @@ Timestamp: 2026-05-31 22:51:21
 
 See `rounds/web-research-test/round_001/judge/judge.md`.
 
-﻿Selected main route:
+Selected main route:
 
-Adopt a **two-track decomposition, with the arithmetic hyperbola/sawtooth route as the main analytic route and the smoothed Poisson–Bessel route as a normalization and sanity-check route**.
+Adopt a **two-track decomposition, with the arithmetic hyperbola/sawtooth route as the main analytic route and the smoothed Poisson--Bessel route as a normalization and sanity-check route**.
 
-The main Round 2 objective should not be “prove the conjecture.” It should be to produce a verified, endpoint-safe reduction from
+The main Round 2 objective should not be "prove the conjecture." It should be to produce a verified, endpoint-safe reduction from
 
 $$
 E(R)=N(R)-\pi R^2
@@ -272,14 +272,13 @@ Useful fragments by source:
 
 **From `gpt_pro_thinking`:**
 
-The strongest contribution is the normalization into two complementary forms: a smoothed Poisson–Bessel decomposition and an arithmetic sawtooth decomposition using $r_2(n)=4\sum_{d\mid n}\chi_4(d)$. This is the right first-round foundation. The Poisson–Bessel side should remain in the repo because it gives a checkable smoothing/unsmoothing framework and recovers the classical $R^{2/3}$ estimate from trivial radial-sum bounds.
+The strongest contribution is the normalization into two complementary forms: a smoothed Poisson--Bessel decomposition and an arithmetic sawtooth decomposition using $r_2(n)=4\sum_{d\mid n}\chi_4(d)$. This is the right first-round foundation. The Poisson--Bessel side should remain in the repo because it gives a checkable smoothing/unsmoothing framework and recovers the classical $R^{2/3}$ estimate from trivial radial-sum bounds.
 
 The proposed conditional benchmark
 
 $$
 A_M(R)
 =
-
 \sum_{k\ne 0}w(|k|/M)e(R|k|)
 \ll_\epsilon M^{3/2}R^\epsilon
 $$
@@ -291,13 +290,12 @@ The arithmetic identity
 $$
 P(X)
 =
-
 -4\sum_{d\le X}\chi_4(d)\psi(X/d)+O(1)
 $$
 
 is valuable as a compact exact reduction, but it should not be the final analytic form for Vaaler truncation. Before estimation, the sum should be shortened by the Dirichlet hyperbola method.
 
-The literature-status discipline is also valuable: record Huxley, Bourgain–Watt, Li–Yang, and ANTEDB separately, and do not use any record exponent as a black-box dependency until the theorem statement and hypotheses are checked.
+The literature-status discipline is also valuable: record Huxley, Bourgain--Watt, Li--Yang, and ANTEDB separately, and do not use any record exponent as a black-box dependency until the theorem statement and hypotheses are checked.
 
 **From `gemini_deep_think`:**
 
@@ -315,30 +313,28 @@ $$
 
 have rank-deficient Hessian. Therefore any proposed proof that applies a generic full-rank two-dimensional stationary phase or decoupling theorem directly to these phases is invalid.
 
-The proposed symmetric hyperbola route is also useful. The exact formula as stated by Gemini should not be marked proved, but the idea of replacing the length-$X$ sawtooth sum with a balanced hyperbola decomposition is correct and should become the main Round 2 task. Gemini’s review also correctly flags the analytic cost of applying Vaaler directly to the unbalanced $d\le X$ identity.
+The proposed symmetric hyperbola route is also useful. The exact formula as stated by Gemini should not be marked proved, but the idea of replacing the length-$X$ sawtooth sum with a balanced hyperbola decomposition is correct and should become the main Round 2 task. Gemini's review also correctly flags the analytic cost of applying Vaaler directly to the unbalanced $d\le X$ identity.
 
-Gemini’s “character blindness” warning is worth preserving as a gap: after reduction to exponential sums, one must know whether $\chi_4$ is actually being exploited or merely discarded by absolute values. However, this warning needs to be converted into precise coefficient classes and estimates.
+Gemini's "character blindness" warning is worth preserving as a gap: after reduction to exponential sums, one must know whether $\chi_4$ is actually being exploited or merely discarded by absolute values. However, this warning needs to be converted into precise coefficient classes and estimates.
 
 **From `gpt_pro_thinking` Stage B review:**
 
-The review correctly demotes Gemini’s exact hyperbola formula from “proved” to “proposed.” It also gives the right next-step decomposition: split the hyperbola assertion into smaller lemmas H1–H4, separating exact counting, periodic partial sums, main-term cancellation, and Vaaler truncation.
+The review correctly demotes Gemini's exact hyperbola formula from "proved" to "proposed." It also gives the right next-step decomposition: split the hyperbola assertion into smaller lemmas H1--H4, separating exact counting, periodic partial sums, main-term cancellation, and Vaaler truncation.
 
 Rejected or risky ideas:
 
-1. **Reject as proved: Gemini’s exact hyperbola formula.**
+1. **Reject as proved: Gemini's exact hyperbola formula.**
    The formula
 
 $$
 E(R)
 =
-
 -4\sum_{a\le R}\chi_4(a)\psi(R^2/a)
 +
 4\sum_{b\le R}
 \left[
 \psi\left(\frac{R^2/b+1}{4}\right)
-----------------------------------
-
+-
 \psi\left(\frac{R^2/b+3}{4}\right)
 \right]
 +
@@ -347,19 +343,19 @@ $$
 
 is plausible in spirit, but it was not proved in Round 1. It must be derived from an exact hyperbola identity with $y=\lfloor \sqrt X\rfloor$, explicit endpoint conventions, and a verified bounded residual.
 
-2. **Reject: “nonzero Hessian unlocks modern decoupling” as a theorem.**
+2. **Reject: "nonzero Hessian unlocks modern decoupling" as a theorem.**
    For the phase
 
 $$
 \Phi(h,d)=\frac{hX}{d},
 $$
 
-the formal Hessian determinant in continuous variables is nonzero. That calculation is correct, but it does not by itself imply that Bourgain–Watt, Bombieri–Iwaniec, or any decoupling theorem applies. The needed theorem, coefficient hypotheses, dyadic ranges, spacing conditions, and loss factors must be stated.
+the formal Hessian determinant in continuous variables is nonzero. That calculation is correct, but it does not by itself imply that Bourgain--Watt, Bombieri--Iwaniec, or any decoupling theorem applies. The needed theorem, coefficient hypotheses, dyadic ranges, spacing conditions, and loss factors must be stated.
 
 3. **Reject: abandoning Bessel methods entirely.**
    The Bessel route is risky as a direct source of new exponents because of radial degeneracy. It is still useful for smoothing, unsmoothing, checking notation, and recovering the classical $R^{2/3}$ sanity bound.
 
-4. **Reject: “smoothing artificially erases point-mass spikes.”**
+4. **Reject: "smoothing artificially erases point-mass spikes."**
    Smoothing without an unsmoothing argument is dangerous. Standard smoothing with a sandwich lemma is legitimate and should remain in the technical toolkit.
 
 5. **Treat as risky: the radial benchmark $A_M(R)\ll M^{3/2}R^\epsilon$.**
@@ -388,12 +384,10 @@ with $y=\lfloor\sqrt X\rfloor$:
 $$
 T(X)
 =
-
 \sum_{a\le y}\chi_4(a)\left\lfloor\frac Xa\right\rfloor
 +
 \sum_{b\le y}S(X/b)
--------------------
-
+-
 yS(y),
 $$
 
@@ -409,28 +403,25 @@ $$
 $$
 S(u)
 =
-
-## \left\lfloor\frac{u+3}{4}\right\rfloor
-
-# \left\lfloor\frac{u+1}{4}\right\rfloor
-
+\left\lfloor\frac{u+3}{4}\right\rfloor
+- \left\lfloor\frac{u+1}{4}\right\rfloor
+=
 \frac12+
 \psi\left(\frac{u+1}{4}\right)
-------------------------------
-
+-
 \psi\left(\frac{u+3}{4}\right),
 $$
 
 with the same floor-compatible convention for $\psi$.
 
 4. **Main-term cancellation after the symmetric cut.**
-   After substituting the floor and $S(u)$ formulas, the nonoscillatory terms must be shown to equal $\pi X/4+O(1)$ at the level of $T(X)$. This is the critical algebraic step behind Gemini’s proposed formula.
+   After substituting the floor and $S(u)$ formulas, the nonoscillatory terms must be shown to equal $\pi X/4+O(1)$ at the level of $T(X)$. This is the critical algebraic step behind Gemini's proposed formula.
 
 5. **Vaaler truncation error.**
-   The truncation error must be derived with full dependence on the length $D$, Fourier height $H$, and endpoint/jump terms. The heuristic “error is length divided by $H$” is not enough.
+   The truncation error must be derived with full dependence on the length $D$, Fourier height $H$, and endpoint/jump terms. The heuristic "error is length divided by $H$" is not enough.
 
 6. **Dyadic parameter map.**
-   The route needs a precise map from the hyperbola formula to dyadic ranges $D,H,T$, with $T=X$, $D\le X^{1/2}$, and $H$ chosen according to the actual Vaaler error. This must precede any appeal to Bombieri–Iwaniec-type estimates.
+   The route needs a precise map from the hyperbola formula to dyadic ranges $D,H,T$, with $T=X$, $D\le X^{1/2}$, and $H$ chosen according to the actual Vaaler error. This must precede any appeal to Bombieri--Iwaniec-type estimates.
 
 7. **Coefficient handling.**
    The role of $\chi_4(d)$ must be explicit. The repo should distinguish estimates that exploit the character from estimates that merely bound $|c_d|\le 1$.
@@ -454,12 +445,10 @@ Then
 $$
 \sum_{ab\le X}\chi_4(a)
 =
-
 \sum_{a\le y}\chi_4(a)\left\lfloor\frac Xa\right\rfloor
 +
 \sum_{b\le y}S(X/b)
--------------------
-
+-
 yS(y).
 $$
 
@@ -473,10 +462,8 @@ For real $u\ge 0$,
 $$
 S(u)
 =
-
-## \left\lfloor\frac{u+3}{4}\right\rfloor
-
-\left\lfloor\frac{u+1}{4}\right\rfloor.
+\left\lfloor\frac{u+3}{4}\right\rfloor
+- \left\lfloor\frac{u+1}{4}\right\rfloor.
 $$
 
 Equivalently, with $\psi(t)=t-\lfloor t\rfloor-\frac12$,
@@ -484,11 +471,9 @@ Equivalently, with $\psi(t)=t-\lfloor t\rfloor-\frac12$,
 $$
 S(u)
 =
-
 \frac12+
 \psi\left(\frac{u+1}{4}\right)
-------------------------------
-
+-
 \psi\left(\frac{u+3}{4}\right).
 $$
 
@@ -502,21 +487,19 @@ For $X=R^2\ge 1$, $y=\lfloor\sqrt X\rfloor$, and $P(X)=N(\sqrt X)-\pi X$,
 $$
 P(X)
 =
-
 -4\sum_{a\le y}\chi_4(a)\psi(X/a)
 +
 4\sum_{b\le y}
 \left[
 \psi\left(\frac{X/b+1}{4}\right)
---------------------------------
-
+-
 \psi\left(\frac{X/b+3}{4}\right)
 \right]
 +
 O(1).
 $$
 
-This is the corrected version of Gemini’s proposed formula, with $a,b\le y=\lfloor\sqrt X\rfloor$ rather than informal $a,b\le R$. It must not be marked proved until the $O(1)$ residual is derived.
+This is the corrected version of Gemini's proposed formula, with $a,b\le y=\lfloor\sqrt X\rfloor$ rather than informal $a,b\le R$. It must not be marked proved until the $O(1)$ residual is derived.
 
 **Lemma H4: Vaaler truncation for balanced hyperbola sums.**
 Status: proposed technical target.
@@ -526,7 +509,6 @@ For truncation height $H$, express each sawtooth term in H3 as a finite Fourier 
 $$
 P(X)
 =
-
 \sum_{1\le |h|\le H}\alpha_h
 \sum_{a\le y}\chi_4(a)e(hX/a)
 +
@@ -534,8 +516,7 @@ P(X)
 \sum_{b\le y}
 \left[
 e\left(\frac{h(X/b+1)}{4}\right)
---------------------------------
-
+-
 e\left(\frac{h(X/b+3)}{4}\right)
 \right]
 +
@@ -562,10 +543,10 @@ $$
 
 This criterion should state the allowed ranges of $D,H_0$, the coefficient class $c_d$, and the loss permitted after summing over dyadic blocks.
 
-**Lemma B1: Smoothed Poisson–Bessel sanity check.**
+**Lemma B1: Smoothed Poisson--Bessel sanity check.**
 Status: standard/proposed for proof.
 
-For a fixed smooth compactly supported radial mollifier $\rho$, prove the smoothed Poisson–Bessel formula and sandwich inequality, then recover
+For a fixed smooth compactly supported radial mollifier $\rho$, prove the smoothed Poisson--Bessel formula and sandwich inequality, then recover
 
 $$
 E(R)\ll R^{2/3}
@@ -575,7 +556,7 @@ from the trivial bound on dyadic radial sums. This is not the selected main rout
 
 Counterexample checks to run:
 
-1. **Boundary test for H1–H3.**
+1. **Boundary test for H1--H3.**
    Check $X$ in the following classes:
 
 * $0<X<1$,
@@ -588,7 +569,7 @@ Counterexample checks to run:
 2. **Endpoint convention test for $\psi$.**
    Compare the floor-compatible $\psi(t)=t-\lfloor t\rfloor-1/2$ with the Fourier-centered sawtooth convention at integer arguments. Record exactly where each convention is used.
 
-3. **Numerical test of Gemini’s proposed formula.**
+3. **Numerical test of Gemini's proposed formula.**
    Compute
 
 $$
@@ -598,8 +579,7 @@ E(R)-\left[
 4\sum_{b\le \lfloor R\rfloor}
 \left(
 \psi\left(\frac{R^2/b+1}{4}\right)
-----------------------------------
-
+-
 \psi\left(\frac{R^2/b+3}{4}\right)
 \right)
 \right]
@@ -620,21 +600,21 @@ Next round instructions:
 
 **For `gemini_deep_think`:**
 
-Reformulate “character blindness” as a precise dyadic estimate. Specify the coefficient class, the dyadic ranges, and what bound would be needed to reach $X^{1/4+\epsilon}$. Avoid claims that nonzero Hessian alone implies decoupling applicability.
+Reformulate "character blindness" as a precise dyadic estimate. Specify the coefficient class, the dyadic ranges, and what bound would be needed to reach $X^{1/4+\epsilon}$. Avoid claims that nonzero Hessian alone implies decoupling applicability.
 
 **For `gpt_pro_thinking`:**
 
-Write the unified Round 2 reading packet: arithmetic hyperbola as the selected main route, Bessel smoothing as a calibration route, and the exact gap list H1–H5. Include a short literature-audit checklist for Huxley, Bourgain–Watt, Li–Yang, and ANTEDB.
+Write the unified Round 2 reading packet: arithmetic hyperbola as the selected main route, Bessel smoothing as a calibration route, and the exact gap list H1--H5. Include a short literature-audit checklist for Huxley, Bourgain--Watt, Li--Yang, and ANTEDB.
 
 Confidence:
 
 High confidence in selecting the **balanced arithmetic hyperbola/sawtooth route** as the main Round 2 direction.
 
-High confidence that the Poisson–Bessel route remains useful for smoothing, unsmoothing, and the $R^{2/3}$ sanity check.
+High confidence that the Poisson--Bessel route remains useful for smoothing, unsmoothing, and the $R^{2/3}$ sanity check.
 
-Moderate confidence that Gemini’s balanced formula is correct up to $O(1)$ after endpoint repair; it still requires proof.
+Moderate confidence that Gemini's balanced formula is correct up to $O(1)$ after endpoint repair; it still requires proof.
 
-Low confidence that formal Hessian nondegeneracy of $\Phi(h,d)=hX/d$ is enough to invoke modern decoupling or Bombieri–Iwaniec estimates without substantial additional work.
+Low confidence that formal Hessian nondegeneracy of $\Phi(h,d)=hX/d$ is enough to invoke modern decoupling or Bombieri--Iwaniec estimates without substantial additional work.
 
 Overall Round 1 judgment: productive, but no theorem improving the Gauss circle bound has been proved. The next round should verify the arithmetic foundation before attempting any high-powered exponential-sum estimate.
 
@@ -682,11 +662,11 @@ Timestamp: 2026-05-31 22:51:21
 
 See `rounds/web-research-test/round_001/judge/judge.md`.
 
-﻿Selected main route:
+Selected main route:
 
-Adopt a **two-track decomposition, with the arithmetic hyperbola/sawtooth route as the main analytic route and the smoothed Poisson–Bessel route as a normalization and sanity-check route**.
+Adopt a **two-track decomposition, with the arithmetic hyperbola/sawtooth route as the main analytic route and the smoothed Poisson--Bessel route as a normalization and sanity-check route**.
 
-The main Round 2 objective should not be “prove the conjecture.” It should be to produce a verified, endpoint-safe reduction from
+The main Round 2 objective should not be "prove the conjecture." It should be to produce a verified, endpoint-safe reduction from
 
 $$
 E(R)=N(R)-\pi R^2
@@ -738,14 +718,13 @@ Useful fragments by source:
 
 **From `gpt_pro_thinking`:**
 
-The strongest contribution is the normalization into two complementary forms: a smoothed Poisson–Bessel decomposition and an arithmetic sawtooth decomposition using $r_2(n)=4\sum_{d\mid n}\chi_4(d)$. This is the right first-round foundation. The Poisson–Bessel side should remain in the repo because it gives a checkable smoothing/unsmoothing framework and recovers the classical $R^{2/3}$ estimate from trivial radial-sum bounds.
+The strongest contribution is the normalization into two complementary forms: a smoothed Poisson--Bessel decomposition and an arithmetic sawtooth decomposition using $r_2(n)=4\sum_{d\mid n}\chi_4(d)$. This is the right first-round foundation. The Poisson--Bessel side should remain in the repo because it gives a checkable smoothing/unsmoothing framework and recovers the classical $R^{2/3}$ estimate from trivial radial-sum bounds.
 
 The proposed conditional benchmark
 
 $$
 A_M(R)
 =
-
 \sum_{k\ne 0}w(|k|/M)e(R|k|)
 \ll_\epsilon M^{3/2}R^\epsilon
 $$
@@ -757,13 +736,12 @@ The arithmetic identity
 $$
 P(X)
 =
-
 -4\sum_{d\le X}\chi_4(d)\psi(X/d)+O(1)
 $$
 
 is valuable as a compact exact reduction, but it should not be the final analytic form for Vaaler truncation. Before estimation, the sum should be shortened by the Dirichlet hyperbola method.
 
-The literature-status discipline is also valuable: record Huxley, Bourgain–Watt, Li–Yang, and ANTEDB separately, and do not use any record exponent as a black-box dependency until the theorem statement and hypotheses are checked.
+The literature-status discipline is also valuable: record Huxley, Bourgain--Watt, Li--Yang, and ANTEDB separately, and do not use any record exponent as a black-box dependency until the theorem statement and hypotheses are checked.
 
 **From `gemini_deep_think`:**
 
@@ -781,30 +759,28 @@ $$
 
 have rank-deficient Hessian. Therefore any proposed proof that applies a generic full-rank two-dimensional stationary phase or decoupling theorem directly to these phases is invalid.
 
-The proposed symmetric hyperbola route is also useful. The exact formula as stated by Gemini should not be marked proved, but the idea of replacing the length-$X$ sawtooth sum with a balanced hyperbola decomposition is correct and should become the main Round 2 task. Gemini’s review also correctly flags the analytic cost of applying Vaaler directly to the unbalanced $d\le X$ identity.
+The proposed symmetric hyperbola route is also useful. The exact formula as stated by Gemini should not be marked proved, but the idea of replacing the length-$X$ sawtooth sum with a balanced hyperbola decomposition is correct and should become the main Round 2 task. Gemini's review also correctly flags the analytic cost of applying Vaaler directly to the unbalanced $d\le X$ identity.
 
-Gemini’s “character blindness” warning is worth preserving as a gap: after reduction to exponential sums, one must know whether $\chi_4$ is actually being exploited or merely discarded by absolute values. However, this warning needs to be converted into precise coefficient classes and estimates.
+Gemini's "character blindness" warning is worth preserving as a gap: after reduction to exponential sums, one must know whether $\chi_4$ is actually being exploited or merely discarded by absolute values. However, this warning needs to be converted into precise coefficient classes and estimates.
 
 **From `gpt_pro_thinking` Stage B review:**
 
-The review correctly demotes Gemini’s exact hyperbola formula from “proved” to “proposed.” It also gives the right next-step decomposition: split the hyperbola assertion into smaller lemmas H1–H4, separating exact counting, periodic partial sums, main-term cancellation, and Vaaler truncation.
+The review correctly demotes Gemini's exact hyperbola formula from "proved" to "proposed." It also gives the right next-step decomposition: split the hyperbola assertion into smaller lemmas H1--H4, separating exact counting, periodic partial sums, main-term cancellation, and Vaaler truncation.
 
 Rejected or risky ideas:
 
-1. **Reject as proved: Gemini’s exact hyperbola formula.**
+1. **Reject as proved: Gemini's exact hyperbola formula.**
    The formula
 
 $$
 E(R)
 =
-
 -4\sum_{a\le R}\chi_4(a)\psi(R^2/a)
 +
 4\sum_{b\le R}
 \left[
 \psi\left(\frac{R^2/b+1}{4}\right)
-----------------------------------
-
+-
 \psi\left(\frac{R^2/b+3}{4}\right)
 \right]
 +
@@ -813,19 +789,19 @@ $$
 
 is plausible in spirit, but it was not proved in Round 1. It must be derived from an exact hyperbola identity with $y=\lfloor \sqrt X\rfloor$, explicit endpoint conventions, and a verified bounded residual.
 
-2. **Reject: “nonzero Hessian unlocks modern decoupling” as a theorem.**
+2. **Reject: "nonzero Hessian unlocks modern decoupling" as a theorem.**
    For the phase
 
 $$
 \Phi(h,d)=\frac{hX}{d},
 $$
 
-the formal Hessian determinant in continuous variables is nonzero. That calculation is correct, but it does not by itself imply that Bourgain–Watt, Bombieri–Iwaniec, or any decoupling theorem applies. The needed theorem, coefficient hypotheses, dyadic ranges, spacing conditions, and loss factors must be stated.
+the formal Hessian determinant in continuous variables is nonzero. That calculation is correct, but it does not by itself imply that Bourgain--Watt, Bombieri--Iwaniec, or any decoupling theorem applies. The needed theorem, coefficient hypotheses, dyadic ranges, spacing conditions, and loss factors must be stated.
 
 3. **Reject: abandoning Bessel methods entirely.**
    The Bessel route is risky as a direct source of new exponents because of radial degeneracy. It is still useful for smoothing, unsmoothing, checking notation, and recovering the classical $R^{2/3}$ sanity bound.
 
-4. **Reject: “smoothing artificially erases point-mass spikes.”**
+4. **Reject: "smoothing artificially erases point-mass spikes."**
    Smoothing without an unsmoothing argument is dangerous. Standard smoothing with a sandwich lemma is legitimate and should remain in the technical toolkit.
 
 5. **Treat as risky: the radial benchmark $A_M(R)\ll M^{3/2}R^\epsilon$.**
@@ -854,12 +830,10 @@ with $y=\lfloor\sqrt X\rfloor$:
 $$
 T(X)
 =
-
 \sum_{a\le y}\chi_4(a)\left\lfloor\frac Xa\right\rfloor
 +
 \sum_{b\le y}S(X/b)
--------------------
-
+-
 yS(y),
 $$
 
@@ -875,28 +849,25 @@ $$
 $$
 S(u)
 =
-
-## \left\lfloor\frac{u+3}{4}\right\rfloor
-
-# \left\lfloor\frac{u+1}{4}\right\rfloor
-
+\left\lfloor\frac{u+3}{4}\right\rfloor
+- \left\lfloor\frac{u+1}{4}\right\rfloor
+=
 \frac12+
 \psi\left(\frac{u+1}{4}\right)
-------------------------------
-
+-
 \psi\left(\frac{u+3}{4}\right),
 $$
 
 with the same floor-compatible convention for $\psi$.
 
 4. **Main-term cancellation after the symmetric cut.**
-   After substituting the floor and $S(u)$ formulas, the nonoscillatory terms must be shown to equal $\pi X/4+O(1)$ at the level of $T(X)$. This is the critical algebraic step behind Gemini’s proposed formula.
+   After substituting the floor and $S(u)$ formulas, the nonoscillatory terms must be shown to equal $\pi X/4+O(1)$ at the level of $T(X)$. This is the critical algebraic step behind Gemini's proposed formula.
 
 5. **Vaaler truncation error.**
-   The truncation error must be derived with full dependence on the length $D$, Fourier height $H$, and endpoint/jump terms. The heuristic “error is length divided by $H$” is not enough.
+   The truncation error must be derived with full dependence on the length $D$, Fourier height $H$, and endpoint/jump terms. The heuristic "error is length divided by $H$" is not enough.
 
 6. **Dyadic parameter map.**
-   The route needs a precise map from the hyperbola formula to dyadic ranges $D,H,T$, with $T=X$, $D\le X^{1/2}$, and $H$ chosen according to the actual Vaaler error. This must precede any appeal to Bombieri–Iwaniec-type estimates.
+   The route needs a precise map from the hyperbola formula to dyadic ranges $D,H,T$, with $T=X$, $D\le X^{1/2}$, and $H$ chosen according to the actual Vaaler error. This must precede any appeal to Bombieri--Iwaniec-type estimates.
 
 7. **Coefficient handling.**
    The role of $\chi_4(d)$ must be explicit. The repo should distinguish estimates that exploit the character from estimates that merely bound $|c_d|\le 1$.
@@ -920,12 +891,10 @@ Then
 $$
 \sum_{ab\le X}\chi_4(a)
 =
-
 \sum_{a\le y}\chi_4(a)\left\lfloor\frac Xa\right\rfloor
 +
 \sum_{b\le y}S(X/b)
--------------------
-
+-
 yS(y).
 $$
 
@@ -939,10 +908,8 @@ For real $u\ge 0$,
 $$
 S(u)
 =
-
-## \left\lfloor\frac{u+3}{4}\right\rfloor
-
-\left\lfloor\frac{u+1}{4}\right\rfloor.
+\left\lfloor\frac{u+3}{4}\right\rfloor
+- \left\lfloor\frac{u+1}{4}\right\rfloor.
 $$
 
 Equivalently, with $\psi(t)=t-\lfloor t\rfloor-\frac12$,
@@ -950,11 +917,9 @@ Equivalently, with $\psi(t)=t-\lfloor t\rfloor-\frac12$,
 $$
 S(u)
 =
-
 \frac12+
 \psi\left(\frac{u+1}{4}\right)
-------------------------------
-
+-
 \psi\left(\frac{u+3}{4}\right).
 $$
 
@@ -968,21 +933,19 @@ For $X=R^2\ge 1$, $y=\lfloor\sqrt X\rfloor$, and $P(X)=N(\sqrt X)-\pi X$,
 $$
 P(X)
 =
-
 -4\sum_{a\le y}\chi_4(a)\psi(X/a)
 +
 4\sum_{b\le y}
 \left[
 \psi\left(\frac{X/b+1}{4}\right)
---------------------------------
-
+-
 \psi\left(\frac{X/b+3}{4}\right)
 \right]
 +
 O(1).
 $$
 
-This is the corrected version of Gemini’s proposed formula, with $a,b\le y=\lfloor\sqrt X\rfloor$ rather than informal $a,b\le R$. It must not be marked proved until the $O(1)$ residual is derived.
+This is the corrected version of Gemini's proposed formula, with $a,b\le y=\lfloor\sqrt X\rfloor$ rather than informal $a,b\le R$. It must not be marked proved until the $O(1)$ residual is derived.
 
 **Lemma H4: Vaaler truncation for balanced hyperbola sums.**
 Status: proposed technical target.
@@ -992,7 +955,6 @@ For truncation height $H$, express each sawtooth term in H3 as a finite Fourier 
 $$
 P(X)
 =
-
 \sum_{1\le |h|\le H}\alpha_h
 \sum_{a\le y}\chi_4(a)e(hX/a)
 +
@@ -1000,8 +962,7 @@ P(X)
 \sum_{b\le y}
 \left[
 e\left(\frac{h(X/b+1)}{4}\right)
---------------------------------
-
+-
 e\left(\frac{h(X/b+3)}{4}\right)
 \right]
 +
@@ -1028,10 +989,10 @@ $$
 
 This criterion should state the allowed ranges of $D,H_0$, the coefficient class $c_d$, and the loss permitted after summing over dyadic blocks.
 
-**Lemma B1: Smoothed Poisson–Bessel sanity check.**
+**Lemma B1: Smoothed Poisson--Bessel sanity check.**
 Status: standard/proposed for proof.
 
-For a fixed smooth compactly supported radial mollifier $\rho$, prove the smoothed Poisson–Bessel formula and sandwich inequality, then recover
+For a fixed smooth compactly supported radial mollifier $\rho$, prove the smoothed Poisson--Bessel formula and sandwich inequality, then recover
 
 $$
 E(R)\ll R^{2/3}
@@ -1041,7 +1002,7 @@ from the trivial bound on dyadic radial sums. This is not the selected main rout
 
 Counterexample checks to run:
 
-1. **Boundary test for H1–H3.**
+1. **Boundary test for H1--H3.**
    Check $X$ in the following classes:
 
 * $0<X<1$,
@@ -1054,7 +1015,7 @@ Counterexample checks to run:
 2. **Endpoint convention test for $\psi$.**
    Compare the floor-compatible $\psi(t)=t-\lfloor t\rfloor-1/2$ with the Fourier-centered sawtooth convention at integer arguments. Record exactly where each convention is used.
 
-3. **Numerical test of Gemini’s proposed formula.**
+3. **Numerical test of Gemini's proposed formula.**
    Compute
 
 $$
@@ -1064,8 +1025,7 @@ E(R)-\left[
 4\sum_{b\le \lfloor R\rfloor}
 \left(
 \psi\left(\frac{R^2/b+1}{4}\right)
-----------------------------------
-
+-
 \psi\left(\frac{R^2/b+3}{4}\right)
 \right)
 \right]
@@ -1086,21 +1046,21 @@ Next round instructions:
 
 **For `gemini_deep_think`:**
 
-Reformulate “character blindness” as a precise dyadic estimate. Specify the coefficient class, the dyadic ranges, and what bound would be needed to reach $X^{1/4+\epsilon}$. Avoid claims that nonzero Hessian alone implies decoupling applicability.
+Reformulate "character blindness" as a precise dyadic estimate. Specify the coefficient class, the dyadic ranges, and what bound would be needed to reach $X^{1/4+\epsilon}$. Avoid claims that nonzero Hessian alone implies decoupling applicability.
 
 **For `gpt_pro_thinking`:**
 
-Write the unified Round 2 reading packet: arithmetic hyperbola as the selected main route, Bessel smoothing as a calibration route, and the exact gap list H1–H5. Include a short literature-audit checklist for Huxley, Bourgain–Watt, Li–Yang, and ANTEDB.
+Write the unified Round 2 reading packet: arithmetic hyperbola as the selected main route, Bessel smoothing as a calibration route, and the exact gap list H1--H5. Include a short literature-audit checklist for Huxley, Bourgain--Watt, Li--Yang, and ANTEDB.
 
 Confidence:
 
 High confidence in selecting the **balanced arithmetic hyperbola/sawtooth route** as the main Round 2 direction.
 
-High confidence that the Poisson–Bessel route remains useful for smoothing, unsmoothing, and the $R^{2/3}$ sanity check.
+High confidence that the Poisson--Bessel route remains useful for smoothing, unsmoothing, and the $R^{2/3}$ sanity check.
 
-Moderate confidence that Gemini’s balanced formula is correct up to $O(1)$ after endpoint repair; it still requires proof.
+Moderate confidence that Gemini's balanced formula is correct up to $O(1)$ after endpoint repair; it still requires proof.
 
-Low confidence that formal Hessian nondegeneracy of $\Phi(h,d)=hX/d$ is enough to invoke modern decoupling or Bombieri–Iwaniec estimates without substantial additional work.
+Low confidence that formal Hessian nondegeneracy of $\Phi(h,d)=hX/d$ is enough to invoke modern decoupling or Bombieri--Iwaniec estimates without substantial additional work.
 
 Overall Round 1 judgment: productive, but no theorem improving the Gauss circle bound has been proved. The next round should verify the arithmetic foundation before attempting any high-powered exponential-sum estimate.
 
@@ -1222,15 +1182,15 @@ For web-agent tests and formal rounds, use ChatGPT Extended Pro for gpt_pro_thin
 --- OUTPUT FROM gpt_pro_thinking ---
 Summary:
 
-This is the Round 2 `gpt_pro_thinking` response. The active task is to continue from the Round 1 judge decision, make concrete progress, and explicitly separate proved reductions from remaining proof gaps. The uploaded Round 2 prompt says the selected route is the balanced arithmetic hyperbola/sawtooth route, with Bessel smoothing retained as a calibration route, and asks `gpt_pro_thinking` to write the unified Round 2 packet with gap list H1–H5 and a literature-audit checklist.
+This is the Round 2 `gpt_pro_thinking` response. The active task is to continue from the Round 1 judge decision, make concrete progress, and explicitly separate proved reductions from remaining proof gaps. The uploaded Round 2 prompt says the selected route is the balanced arithmetic hyperbola/sawtooth route, with Bessel smoothing retained as a calibration route, and asks `gpt_pro_thinking` to write the unified Round 2 packet with gap list H1--H5 and a literature-audit checklist.
 
 Concrete progress in this response:
 
 1. Lemmas H1 and H2 are proved explicitly.
-2. Lemma H3 is upgraded from “proposed” to “plausibly proved, pending independent check”: the $O(1)$ residual is derived by an explicit tail estimate for $L(1,\chi_4)$.
-3. Lemma H4 is sharpened: the Vaaler residual is not simply $O(y/H)$; it contains Fejér-kernel exponential sums that must be bounded by the same dyadic machinery.
+2. Lemma H3 is upgraded from "proposed" to "plausibly proved, pending independent check": the $O(1)$ residual is derived by an explicit tail estimate for $L(1,\chi_4)$.
+3. Lemma H4 is sharpened: the Vaaler residual is not simply $O(y/H)$; it contains Fejer-kernel exponential sums that must be bounded by the same dyadic machinery.
 4. Lemma H5 is made into a precise sufficient dyadic criterion.
-5. The literature audit is updated: ANTEDB currently records Li–Yang 2023 as the sharpest Gauss-circle exponent, with $\theta^{\operatorname{Gauss}}_2\le 2\alpha=0.6289\ldots$, and Li–Yang’s own abstract states that their improvement uses Bombieri–Iwaniec, a new first-spacing estimate, and Huxley’s second-spacing results. ([Teorth][1])
+5. The literature audit is updated: ANTEDB currently records Li--Yang 2023 as the sharpest Gauss-circle exponent, with $\theta^{\operatorname{Gauss}}_2\le 2\alpha=0.6289\ldots$, and Li--Yang's own abstract states that their improvement uses Bombieri--Iwaniec, a new first-spacing estimate, and Huxley's second-spacing results. ([Teorth][1])
 
 Main claim or direction:
 
@@ -1257,14 +1217,12 @@ because that length-$X$ form is analytically unbalanced. The useful form is the 
 $$
 P(X)
 =
-
 -4\sum_{a\le y}\chi_4(a)\psi(X/a)
 +
 4\sum_{b\le y}
 \left[
 \psi\left(\frac{X/b+1}{4}\right)
---------------------------------
-
+-
 \psi\left(\frac{X/b+3}{4}\right)
 \right]
 +
@@ -1291,7 +1249,7 @@ S(u)=\sum_{1\le a\le u}\chi(a),
 \psi(t)=t-\lfloor t\rfloor-\frac12.
 $$
 
-By Jacobi’s two-square formula,
+By Jacobi's two-square formula,
 
 $$
 r_2(n)=4\sum_{d\mid n}\chi_4(d),
@@ -1322,12 +1280,10 @@ Therefore the union of the two regions $a\le y$ and $b\le y$ covers the hyperbol
 $$
 T(X)
 =
-
 \sum_{a\le y}\chi(a)\left\lfloor\frac Xa\right\rfloor
 +
 \sum_{b\le y}S(X/b)
--------------------
-
+-
 yS(y).
 $$
 
@@ -1338,9 +1294,7 @@ Next prove the exact formula for $S(u)$. Since $\chi_4(a)=1$ for $a\equiv 1\pmod
 $$
 S(u)
 =
-
-## \left\lfloor \frac{u+3}{4}\right\rfloor
-
+\left\lfloor \frac{u+3}{4}\right\rfloor
 \left\lfloor \frac{u+1}{4}\right\rfloor.
 $$
 
@@ -1349,12 +1303,10 @@ Using $\lfloor t\rfloor=t-\psi(t)-1/2$, this becomes
 $$
 S(u)
 =
-
 \frac12
 +
 \psi\left(\frac{u+1}{4}\right)
-------------------------------
-
+-
 \psi\left(\frac{u+3}{4}\right).
 $$
 
@@ -1365,7 +1317,6 @@ Now substitute H2 and the floor identity into H1:
 $$
 \sum_{a\le y}\chi(a)\left\lfloor\frac Xa\right\rfloor
 =
-
 X\sum_{a\le y}\frac{\chi(a)}{a}
 -\frac12 S(y)
 -\sum_{a\le y}\chi(a)\psi(X/a),
@@ -1376,14 +1327,12 @@ and
 $$
 \sum_{b\le y}S(X/b)
 =
-
 \frac y2
 +
 \sum_{b\le y}
 \left[
 \psi\left(\frac{X/b+1}{4}\right)
---------------------------------
-
+-
 \psi\left(\frac{X/b+3}{4}\right)
 \right].
 $$
@@ -1393,15 +1342,13 @@ Thus
 $$
 T(X)
 =
-
 X\sum_{a\le y}\frac{\chi(a)}{a}
 -\sum_{a\le y}\chi(a)\psi(X/a)
 +
 \sum_{b\le y}
 \left[
 \psi\left(\frac{X/b+1}{4}\right)
---------------------------------
-
+-
 \psi\left(\frac{X/b+3}{4}\right)
 \right]
 +
@@ -1415,14 +1362,12 @@ Since $P(X)=1+4T(X)-\pi X$, define
 $$
 W(X)
 =
-
 -4\sum_{a\le y}\chi(a)\psi(X/a)
 +
 4\sum_{b\le y}
 \left[
 \psi\left(\frac{X/b+1}{4}\right)
---------------------------------
-
+-
 \psi\left(\frac{X/b+3}{4}\right)
 \right].
 $$
@@ -1432,16 +1377,13 @@ Then the exact residual is
 $$
 P(X)-W(X)
 =
-
 1
 +
 4X\left(\sum_{a\le y}\frac{\chi(a)}{a}-\frac{\pi}{4}\right)
 +
 2y
---
-
-## 2S(y)
-
+-
+= 2S(y)
 4yS(y).
 $$
 
@@ -1456,7 +1398,6 @@ The tail estimate needed is
 $$
 L-\sum_{a\le y}\frac{\chi(a)}{a}
 =
-
 \frac{1-2S(y)}{2y}
 +
 O(y^{-2}).
@@ -1467,7 +1408,6 @@ This follows by splitting into the four cases $y\equiv 0,1,2,3\pmod 4$ and group
 $$
 \frac{1}{4j+1}-\frac{1}{4j+3}
 =
-
 \frac{2}{(4j+1)(4j+3)}.
 $$
 
@@ -1476,7 +1416,6 @@ Since $X=y^2+O(y)$, the tail estimate gives
 $$
 4X\left(\sum_{a\le y}\frac{\chi(a)}{a}-\frac{\pi}{4}\right)
 =
-
 -2y(1-2S(y))+O(1).
 $$
 
@@ -1485,20 +1424,16 @@ Substitution yields
 $$
 P(X)-W(X)
 =
-
 1
 -2y(1-2S(y))
 +
 2y
---
-
-## 2S(y)
-
+-
+= 2S(y)
 4yS(y)
 +
 O(1)
 =
-
 O(1).
 $$
 
@@ -1507,14 +1442,12 @@ Therefore H3 is proved up to routine verification of the tail estimate and small
 $$
 P(X)
 =
-
 -4\sum_{a\le y}\chi_4(a)\psi(X/a)
 +
 4\sum_{b\le y}
 \left[
 \psi\left(\frac{X/b+1}{4}\right)
---------------------------------
-
+-
 \psi\left(\frac{X/b+3}{4}\right)
 \right]
 +
@@ -1534,13 +1467,12 @@ such that
 $$
 \psi(t)
 =
-
 \sum_{1\le |h|\le H}\alpha_h e(ht)
 +
 \mathcal R_H(t),
 $$
 
-where $\mathcal R_H$ is controlled by a Fejér-type nonnegative trigonometric polynomial with zeroth coefficient $O(1/H)$ and nonzero coefficients $O(1/H)$. Consequently, applying Vaaler to H3 gives a main term of the shape
+where $\mathcal R_H$ is controlled by a Fejer-type nonnegative trigonometric polynomial with zeroth coefficient $O(1/H)$ and nonzero coefficients $O(1/H)$. Consequently, applying Vaaler to H3 gives a main term of the shape
 
 $$
 \sum_{1\le |h|\le H}\alpha_h
@@ -1554,8 +1486,7 @@ $$
 \sum_{b\le y}
 \left[
 e\left(\frac{h(X/b+1)}{4}\right)
---------------------------------
-
+-
 e\left(\frac{h(X/b+3)}{4}\right)
 \right],
 $$
@@ -1590,7 +1521,7 @@ $$
 
 Note that $\gamma_h=0$ for even $h$ and $|\gamma_h|\le 2$ for odd $h$.
 
-This is the important Round 2 correction: the balanced cut lowers the zeroth-order truncation cost from $X/H$ to $X^{1/2}/H$, but the nonzero Fejér residual terms still require exponential-sum estimates. The repo should not record “Vaaler error $=O(\sqrt X/H)$” as a proved statement unless these residual sums are also bounded.
+This is the important Round 2 correction: the balanced cut lowers the zeroth-order truncation cost from $X/H$ to $X^{1/2}/H$, but the nonzero Fejer residual terms still require exponential-sum estimates. The repo should not record "Vaaler error $=O(\sqrt X/H)$" as a proved statement unless these residual sums are also bounded.
 
 A sufficient dyadic criterion is now precise. Fix
 
@@ -1603,7 +1534,6 @@ For dyadic $H_0\le H$ and $D\le X^{1/2}$, define
 $$
 B_{\lambda,\mu,c}(H_0,D;X)
 =
-
 \sum_{h\sim H_0}u_h
 \sum_{d\sim D}c_d e\left(\lambda hX/d+\mu h\right),
 $$
@@ -1630,7 +1560,7 @@ B_{\lambda,\mu,c}(H_0,D;X)
 H_0 X^{1/4+\epsilon}
 $$
 
-uniformly over the above ranges, with enough stability under the Fejér residual weights. Indeed, the main Vaaler terms have an additional factor $1/h\asymp 1/H_0$, so each dyadic block contributes at most $X^{1/4+\epsilon}$. The Fejér residual terms have coefficient $1/H$, and the same estimate gives at most $(H_0/H)X^{1/4+\epsilon}\le X^{1/4+\epsilon}$. Logarithmic losses are absorbed into $X^\epsilon$.
+uniformly over the above ranges, with enough stability under the Fejer residual weights. Indeed, the main Vaaler terms have an additional factor $1/h\asymp 1/H_0$, so each dyadic block contributes at most $X^{1/4+\epsilon}$. The Fejer residual terms have coefficient $1/H$, and the same estimate gives at most $(H_0/H)X^{1/4+\epsilon}\le X^{1/4+\epsilon}$. Logarithmic losses are absorbed into $X^\epsilon$.
 
 This criterion is only sufficient, not necessary. It is also quite strong. A square-root cancellation estimate
 
@@ -1644,7 +1574,7 @@ would imply it, since $D\le X^{1/2}$, but such a square-root estimate is not cur
 
 Dependencies:
 
-The elementary arithmetic reduction depends on Jacobi’s identity
+The elementary arithmetic reduction depends on Jacobi's identity
 
 $$
 r_2(n)=4\sum_{d\mid n}\chi_4(d),
@@ -1654,24 +1584,24 @@ the exact Dirichlet hyperbola method, the floor-compatible sawtooth convention, 
 
 The analytic reduction depends on a precise Vaaler approximation theorem, including the residual majorant. The repo should state the exact version used before any agent estimates the resulting sums.
 
-The serious future estimates would depend on reciprocal-phase exponential-sum technology. Li–Yang describe their 2023 improvement as using the Bombieri–Iwaniec method, deriving a new first-spacing estimate, and combining it with Huxley’s second-spacing estimates. ([arXiv][2]) Huxley’s relevant earlier work is “Exponential sums and lattice points III,” whose abstract identifies the Gauss circle and Dirichlet divisor problems as special cases of integer-lattice counting problems. ([LMS Online Library][3]) Bourgain–Watt should be kept in the audit list because their decoupling paper is explicitly about perturbed cones and zeta mean square; any use for Gauss-circle sums requires a separate theorem-level bridge, not just a formal Hessian computation. ([OUP Academic][4])
+The serious future estimates would depend on reciprocal-phase exponential-sum technology. Li--Yang describe their 2023 improvement as using the Bombieri--Iwaniec method, deriving a new first-spacing estimate, and combining it with Huxley's second-spacing estimates. ([arXiv][2]) Huxley's relevant earlier work is "Exponential sums and lattice points III," whose abstract identifies the Gauss circle and Dirichlet divisor problems as special cases of integer-lattice counting problems. ([LMS Online Library][3]) Bourgain--Watt should be kept in the audit list because their decoupling paper is explicitly about perturbed cones and zeta mean square; any use for Gauss-circle sums requires a separate theorem-level bridge, not just a formal Hessian computation. ([OUP Academic][4])
 
 Potential gaps:
 
 2. **Vaaler residual is not automatically small.**
-   The common heuristic $O(y/H)$ omits nonzero Fejér residual sums. These residual sums have phases similar to the main terms and must be included in H5.
+   The common heuristic $O(y/H)$ omits nonzero Fejer residual sums. These residual sums have phases similar to the main terms and must be included in H5.
 
 3. **Nonzero Hessian is not a theorem.**
-   For $\Phi(h,d)=hX/d$, the continuous Hessian determinant is nonzero, but that alone does not imply that a decoupling or Bombieri–Iwaniec theorem applies. The Round 1 judge already warned that coefficient hypotheses, dyadic ranges, spacing conditions, and loss factors must be stated explicitly.
+   For $\Phi(h,d)=hX/d$, the continuous Hessian determinant is nonzero, but that alone does not imply that a decoupling or Bombieri--Iwaniec theorem applies. The Round 1 judge already warned that coefficient hypotheses, dyadic ranges, spacing conditions, and loss factors must be stated explicitly.
 
 4. **Character blindness remains unresolved.**
    The first leg has $c_d=\chi_4(d)$; the second leg has essentially untwisted coefficients but an odd-$h$ selector. The repo must distinguish estimates that use $\chi_4$ cancellation from estimates that discard it.
 
 5. **Bessel route remains a calibration route only.**
-   The Poisson–Bessel route should not be abandoned, but the raw radial phase has Hessian degeneracy and should not be treated with generic full-rank two-dimensional stationary phase. The Round 1 judge specifically retained Bessel smoothing for smoothing, unsmoothing, notation checks, and the $R^{2/3}$ sanity bound.
+   The Poisson--Bessel route should not be abandoned, but the raw radial phase has Hessian degeneracy and should not be treated with generic full-rank two-dimensional stationary phase. The Round 1 judge specifically retained Bessel smoothing for smoothing, unsmoothing, notation checks, and the $R^{2/3}$ sanity bound.
 
 6. **Literature freshness.**
-   ANTEDB currently records Li–Yang 2023 as the sharpest known two-dimensional Gauss exponent, with Huxley 2003 and Li–Yang 2023 both listed in its historical table. ([Teorth][1]) This should be rechecked before any public claim that a record is current.
+   ANTEDB currently records Li--Yang 2023 as the sharpest known two-dimensional Gauss exponent, with Huxley 2003 and Li--Yang 2023 both listed in its historical table. ([Teorth][1]) This should be rechecked before any public claim that a record is current.
 
 Counterexample or obstruction search:
 
@@ -1682,7 +1612,6 @@ For H3, test the exact residual
 $$
 \mathcal C(X)
 =
-
 P(X)-W(X)
 $$
 
@@ -1691,16 +1620,13 @@ against the explicit formula
 $$
 \mathcal C(X)
 =
-
 1
 +
 4X\left(\sum_{a\le y}\frac{\chi(a)}{a}-\frac{\pi}{4}\right)
 +
 2y
---
-
-## 2S(y)
-
+-
+= 2S(y)
 4yS(y).
 $$
 
@@ -1716,7 +1642,7 @@ $$
 
 integer nonsquares, integer squares, nonintegers just below and just above integers, and $X$ with $\sqrt X\in\mathbb Z$.
 
-For Vaaler, test whether replacing the residual by $O(y/H)$ gives false predictions. Specifically compute the Fejér residual sums
+For Vaaler, test whether replacing the residual by $O(y/H)$ gives false predictions. Specifically compute the Fejer residual sums
 
 $$
 \frac1H
@@ -1753,19 +1679,17 @@ $$
 Useful lemmas:
 
 **H1. Exact symmetric hyperbola identity.**
-Status: proved, modulo Jacobi’s two-square formula.
+Status: proved, modulo Jacobi's two-square formula.
 
 For $X\ge 1$, $y=\lfloor\sqrt X\rfloor$,
 
 $$
 T(X)
 =
-
 \sum_{a\le y}\chi(a)\left\lfloor\frac Xa\right\rfloor
 +
 \sum_{b\le y}S(X/b)
--------------------
-
+-
 yS(y).
 $$
 
@@ -1777,16 +1701,12 @@ For real $u\ge 0$,
 $$
 S(u)
 =
-
-## \left\lfloor \frac{u+3}{4}\right\rfloor
-
-# \left\lfloor \frac{u+1}{4}\right\rfloor
-
+\left\lfloor \frac{u+3}{4}\right\rfloor
+= \left\lfloor \frac{u+1}{4}\right\rfloor
 \frac12
 +
 \psi\left(\frac{u+1}{4}\right)
-------------------------------
-
+-
 \psi\left(\frac{u+3}{4}\right).
 $$
 
@@ -1798,14 +1718,12 @@ For $X\ge 1$, $y=\lfloor\sqrt X\rfloor$,
 $$
 P(X)
 =
-
 -4\sum_{a\le y}\chi(a)\psi(X/a)
 +
 4\sum_{b\le y}
 \left[
 \psi\left(\frac{X/b+1}{4}\right)
---------------------------------
-
+-
 \psi\left(\frac{X/b+3}{4}\right)
 \right]
 +
@@ -1817,23 +1735,20 @@ A sharper version records the exact residual:
 $$
 P(X)-W(X)
 =
-
 1
 +
 4X\left(\sum_{a\le y}\frac{\chi(a)}{a}-\frac{\pi}{4}\right)
 +
 2y
---
-
-## 2S(y)
-
+-
+= 2S(y)
 4yS(y).
 $$
 
 **H4. Vaaler truncation with residual sums.**
 Status: sharpened target, not fully proved inside this response.
 
-For $H=X^{1/4}$, Vaaler reduces H3 to reciprocal sums with $h\le H$ and $d\le X^{1/2}$, but the residual contains Fejér-weighted exponential sums and cannot be recorded merely as $O(X^{1/4})$ without additional estimates.
+For $H=X^{1/4}$, Vaaler reduces H3 to reciprocal sums with $h\le H$ and $d\le X^{1/2}$, but the residual contains Fejer-weighted exponential sums and cannot be recorded merely as $O(X^{1/4})$ without additional estimates.
 
 **H5. Sufficient dyadic reciprocal-sum criterion.**
 Status: target.
@@ -1852,42 +1767,41 @@ $$
 P(X)\ll_\epsilon X^{1/4+\epsilon}.
 $$
 
-**B1. Smoothed Poisson–Bessel calibration route.**
+**B1. Smoothed Poisson--Bessel calibration route.**
 Status: retained as standard/proposed.
 
-The repo should still prove the smoothed Poisson–Bessel formula, the sandwich/unsmoothing lemma, and the classical $E(R)\ll R^{2/3}$ sanity check. This is not the selected route for new exponents but is important for consistency.
+The repo should still prove the smoothed Poisson--Bessel formula, the sandwich/unsmoothing lemma, and the classical $E(R)\ll R^{2/3}$ sanity check. This is not the selected route for new exponents but is important for consistency.
 
 What should be tested next:
 
 $$
 L-\sum_{a\le y}\frac{\chi(a)}{a}
 =
-
 \frac{1-2S(y)}{2y}
 +
 O(y^{-2}).
 $$
 
-`gemini_deep_think` should now convert “character blindness” into a precise estimate for $B_{\lambda,\mu,c}(H_0,D;X)$, distinguishing the $\chi_4$ leg from the untwisted second leg. It should avoid claiming that nonzero Hessian alone supplies a usable decoupling theorem.
+`gemini_deep_think` should now convert "character blindness" into a precise estimate for $B_{\lambda,\mu,c}(H_0,D;X)$, distinguishing the $\chi_4$ leg from the untwisted second leg. It should avoid claiming that nonzero Hessian alone supplies a usable decoupling theorem.
 
-`gpt_pro_thinking` should next compare H5 against known Bombieri–Iwaniec parameter ranges and the Li–Yang first-spacing framework. The audit should identify whether H5 is stronger than known estimates, equivalent to a known spacing problem, or incorrectly formulated.
+`gpt_pro_thinking` should next compare H5 against known Bombieri--Iwaniec parameter ranges and the Li--Yang first-spacing framework. The audit should identify whether H5 is stronger than known estimates, equivalent to a known spacing problem, or incorrectly formulated.
 
 Literature-audit checklist:
 
 | Reference     | What to record                                                                       | Current note                                                                                                                                                      |
 | ------------- | ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Huxley 2003   | Exact theorem statement and notation translation to $R$ and $X$                      | ANTEDB lists Huxley 2003 as $\theta_2^{\operatorname{Gauss}}\le 131/208$; Huxley’s paper is directly about exponential sums and lattice points. ([Teorth][1])     |
-| Bourgain–Watt | Exact decoupling theorem and whether it applies to the Gauss/divisor reciprocal sums | The paper’s stated target is a zeta mean-square estimate using decoupling for perturbed cones; applicability to H5 must be proved separately. ([OUP Academic][4]) |
-| Li–Yang 2023  | Theorem 1.2, definition of $\theta^*$, first-spacing estimate, and mapping to H5     | Li–Yang state an improvement for both Gauss and divisor using Bombieri–Iwaniec, a new first-spacing estimate, and Huxley’s second-spacing work. ([arXiv][2])      |
-| ANTEDB        | Current record exponent and notation                                                 | ANTEDB records Li–Yang 2023 as the current sharpest entry, $\theta_2^{\operatorname{Gauss}}\le 2\alpha=0.6289\ldots$. ([Teorth][1])                               |
+| Huxley 2003   | Exact theorem statement and notation translation to $R$ and $X$                      | ANTEDB lists Huxley 2003 as $\theta_2^{\operatorname{Gauss}}\le 131/208$; Huxley's paper is directly about exponential sums and lattice points. ([Teorth][1])     |
+| Bourgain--Watt | Exact decoupling theorem and whether it applies to the Gauss/divisor reciprocal sums | The paper's stated target is a zeta mean-square estimate using decoupling for perturbed cones; applicability to H5 must be proved separately. ([OUP Academic][4]) |
+| Li--Yang 2023  | Theorem 1.2, definition of $\theta^*$, first-spacing estimate, and mapping to H5     | Li--Yang state an improvement for both Gauss and divisor using Bombieri--Iwaniec, a new first-spacing estimate, and Huxley's second-spacing work. ([arXiv][2])      |
+| ANTEDB        | Current record exponent and notation                                                 | ANTEDB records Li--Yang 2023 as the current sharpest entry, $\theta_2^{\operatorname{Gauss}}\le 2\alpha=0.6289\ldots$. ([Teorth][1])                               |
 
 Confidence:
 
 High confidence in H1 and H2.
 
-Moderate-to-high confidence in H3 after the explicit residual and tail computation, but it should still be independently audited before being committed as “proved.”
+Moderate-to-high confidence in H3 after the explicit residual and tail computation, but it should still be independently audited before being committed as "proved."
 
-Moderate confidence in the H4 formulation; the main correction is reliable, namely that the Vaaler residual includes Fejér-weighted exponential sums.
+Moderate confidence in the H4 formulation; the main correction is reliable, namely that the Vaaler residual includes Fejer-weighted exponential sums.
 
 Low confidence that H5 is reachable by currently known tools in this simple form. It is a clean sufficient criterion, not a claimed theorem.
 

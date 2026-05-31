@@ -5,11 +5,11 @@ Following the research protocol and the Judge's explicit Round 4 instructions, I
 The mathematical derivations reveal a highly restrictive analytical landscape that appears to close the door on continuous, real-variable smoothing strategies:
 1.  **H6 is strictly calibrated:** Under the standard continuous exponent-pair normalizations, the obstruction evaluates precisely to $3\kappa + 2\lambda \le 1$. Because all classical and modern decoupling exponent pairs are theoretically bounded by $\lambda \ge 1/2$ and $\kappa \ge 0$, this mathematically exhausts any 1D character-blind approach that relies on trivial outer frequency summation.
 2.  **H8 is exact but structurally degenerate:** The Twisted Poisson summation (B-process) successfully maps the spatial character $\chi_4(d)$ to an exact dual Gauss-sum multiplier $\chi_4(m)$ without losing amplitude energy. However, the resulting continuous geometric phase has a zero Hessian (H9), and applying spatial differencing to the dual variable recreates the exact modulus degeneracy discovered in H7.
-3.  **H5r Dual Parity Collapse:** Crucially, I test the B-process against the Fejér-residual target H5r. I demonstrate that dualizing the parity-supported residual yields an alternating sign $(-1)^m$. When subjected to Weyl differencing, this sign collapses completely to a constant. This indicates the Vaaler residual remains firmly anchored to Dirichlet Divisor Problem (DDP) limits, and the B-process offers no escape.
+3.  **H5r Dual Parity Collapse:** Crucially, I test the B-process against the Fejer-residual target H5r. I demonstrate that dualizing the parity-supported residual yields an alternating sign $(-1)^m$. When subjected to Weyl differencing, this sign collapses completely to a constant. This indicates the Vaaler residual remains firmly anchored to Dirichlet Divisor Problem (DDP) limits, and the B-process offers no escape.
 
 ## 2. Main claim or direction
 
-The repository should integrate the rigorously normalized **Lemma H6** and the fully explicit **Lemma H8**. Furthermore, we should formally introduce **Claim C1 (Dual Parity Degeneration)** to explicitly record that the B-process provides no analytical advantage for the Fejér residual, and **Claim C2 (The Majorant DDP Trap)** to diagnose the underlying flaw in continuous truncation.
+The repository should integrate the rigorously normalized **Lemma H6** and the fully explicit **Lemma H8**. Furthermore, we should formally introduce **Claim C1 (Dual Parity Degeneration)** to explicitly record that the B-process provides no analytical advantage for the Fejer residual, and **Claim C2 (The Majorant DDP Trap)** to diagnose the underlying flaw in continuous truncation.
 
 The synthesis of these obstructions suggests that any sequential application of continuous transformations (Vaaler $\to$ B-process $\to$ A-process) is analytically bounded by the loss of arithmetic oscillation. The original arithmetic advantage of $\chi_4$ is continually flattened into parity restrictions or entirely stripped by strictly positive real majorants.
 
@@ -54,7 +54,7 @@ Applying the method of stationary phase approximation (amplitude $1/\sqrt{\phi''
 
 ## 5. Testing H8 against H5r: The Dual Parity Collapse
 
-The Judge asked if this dualization rescues the Fejér-residual target H5r.
+The Judge asked if this dualization rescues the Fejer-residual target H5r.
 The first-leg residual target is $C_1(K_0, D; X) = \sum_k v_k \sum_d 1_{2\nmid d} w_D(d) e(kX/d)$.
 We apply Poisson summation to the odd-parity inner sum. Let $d = 2j + 1$:
 $$ \sum_{j} w_D(2j+1) e\left(\frac{kX}{2j+1}\right) $$
@@ -80,7 +80,7 @@ This shifted multiplier is a strict constant with respect to the summation varia
 
 *   **Established:** The 1D exponent pair boundary accurately normalizes to $3\kappa+2\lambda \le 1$ under IK scaling.
 *   **Established:** The B-process transforms the spatial sum into $\sqrt{Xhm}$ with explicit dual length $M_D \asymp hX/D^2$, natively mapping $\chi_4(d)$ to $\chi_4(m)$.
-*   **Established:** The B-process on the Fejér residual H5r maps the spatial parity $1_{2\nmid d}$ exactly to the dual alternating character $(-1)^n$, which degenerates to a constant upon A-process differencing.
+*   **Established:** The B-process on the Fejer residual H5r maps the spatial parity $1_{2\nmid d}$ exactly to the dual alternating character $(-1)^n$, which degenerates to a constant upon A-process differencing.
 *   **Heuristic:** The conclusion that the residual H5r *must* be treated via absolute majorants. A novel contour integral method might bypass the real-variable constraints entirely.
 *   **Remains Open:** Whether the discrete Bombieri-Iwaniec rational collision matrix ($h_1 d_2 \approx h_2 d_1$) naturally harvests the $d \equiv 1,3 \pmod 4$ interference without utilizing the destructive continuous A-process.
 
@@ -115,7 +115,7 @@ The primal and dual integral energies map exactly 1:1, verifying that the contin
 **Explicit Failure Modes:**
 1.  **Failure Mode 1 (Discrete Matrix Evasion):** The $3\kappa+2\lambda \le 1$ obstruction relies exclusively on taking absolute values over $h$ to utilize continuous 1D exponent bounds. Discrete Bombieri-Iwaniec methods that explicitly count 2D rational point configurations over finite fields systematically evade this continuous geometric calculus limit.
 2.  **Failure Mode 2 (Stationary Phase Boundary Collapse):** As modeled in Lemma H8, the continuous dualization risks severe boundary error dominance. When the dual length $M_D \asymp hX/D^2$ shrinks to $\mathcal{O}(1)$ (occurring specifically at the critical block $D \sim X^{1/2}, h \sim 1$), the continuous stationary phase asymptotic $1/\sqrt{\phi''}$ loses dominance to incomplete boundary Fresnel integrals, threatening to collapse the analytical error control at the endpoint.
-3.  **Failure Mode 3 (Complex Contour Divergence):** Proposing Perron integration to bypass the Vaaler Majorant Trap risks exchanging the divisor problem geometric barrier for the Lindelöf Hypothesis analytic barrier on the critical line. If current subconvexity bounds on $L(1/2+it, \chi_4)\zeta(1/2+it)$ are insufficient, the complex contour approach will yield an exponent significantly worse than $1/4$, failing to provide a viable path.
+3.  **Failure Mode 3 (Complex Contour Divergence):** Proposing Perron integration to bypass the Vaaler Majorant Trap risks exchanging the divisor problem geometric barrier for the Lindelof Hypothesis analytic barrier on the critical line. If current subconvexity bounds on $L(1/2+it, \chi_4)\zeta(1/2+it)$ are insufficient, the complex contour approach will yield an exponent significantly worse than $1/4$, failing to provide a viable path.
 
 ## 11. Explicit Lemmas and Claims for the Bank
 
@@ -132,11 +132,11 @@ The primal and dual integral energies map exactly 1:1, verifying that the contin
 
 > **Claim C1: Dual Parity Degeneration (H5r Trap)**
 > *Status: Proved algebraic obstruction.*
-> Applying Poisson summation to the parity-supported Fejér residual H5r ($\sum 1_{2\nmid d} \dots$) produces a dual sum carrying the alternating multiplier $(-1)^n$. If spatial differencing (A-process) is applied to this dual sum, the shifted multiplier evaluates to $(-1)^n(-1)^{n+q} = (-1)^q$. The oscillation is entirely annihilated into a constant independent of the summation variable, proving that dualization offers no analytic structural escape for the character-blind Vaaler residual.
+> Applying Poisson summation to the parity-supported Fejer residual H5r ($\sum 1_{2\nmid d} \dots$) produces a dual sum carrying the alternating multiplier $(-1)^n$. If spatial differencing (A-process) is applied to this dual sum, the shifted multiplier evaluates to $(-1)^n(-1)^{n+q} = (-1)^q$. The oscillation is entirely annihilated into a constant independent of the summation variable, proving that dualization offers no analytic structural escape for the character-blind Vaaler residual.
 
 > **Claim C2: The Majorant DDP Anchor**
 > *Status: Diagnostic obstruction heuristic.*
-> Because the finite Vaaler truncation of fractional parts requires a strictly positive Fejér majorant $K_H(t)$, the resulting residual error inherently strips the signed character $\chi_4(d)$. As dualization (Claim C1) cannot natively inject character cancellation back into a parity sum, continuous real-variable approximations unconditionally anchor the Gauss Circle error term to the Dirichlet Divisor Problem (DDP) exponent limits.
+> Because the finite Vaaler truncation of fractional parts requires a strictly positive Fejer majorant $K_H(t)$, the resulting residual error inherently strips the signed character $\chi_4(d)$. As dualization (Claim C1) cannot natively inject character cancellation back into a parity sum, continuous real-variable approximations unconditionally anchor the Gauss Circle error term to the Dirichlet Divisor Problem (DDP) exponent limits.
 
 ## 12. Next-round recommendation
 

@@ -112,7 +112,7 @@ The Bombieri-Iwaniec method structurally avoids the trivial $h$-summation hypoth
 
 *   **Graham-Kolesnik Method (1991):** Standard $A$ and $B$ step parameter scaling for deriving exponential sum amplitudes from derivatives $|f^{(k)}(d)| \asymp \lambda / D^{k-1}$.
 *   **Properties of Dirichlet Characters:** The fundamental parity, odd-integer support, and strict 4-periodicity of $\chi_4$, utilized in the exact algebraic evaluation of the A-process shifts.
-*   **Riemann Zeta Function Limits:** The equivalence of the Exponent Pair Conjecture $(p,q) \to (0,1/2)$ with the optimal Lindelöf Hypothesis error term, establishing the $p+2q \le 1$ boundary.
+*   **Riemann Zeta Function Limits:** The equivalence of the Exponent Pair Conjecture $(p,q) \to (0,1/2)$ with the optimal Lindelof Hypothesis error term, establishing the $p+2q \le 1$ boundary.
 *   **Vaaler's Theorem:** Determines the frequency height $H_0 \asymp X^{1/4}$ based on bounding the unweighted $O(X^{1/2}/H_0)$ residual.
 
 ## 10. Confidence calibration and failure modes

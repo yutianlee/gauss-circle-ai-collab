@@ -2,10 +2,12 @@ from __future__ import annotations
 
 import argparse
 import re
+import unicodedata
 from pathlib import Path
 
 
 WEB_RESPONSE_MARKER = "# Paste the web response below this line, then rerun the orchestrator."
+MOJIBAKE_MARKERS = "\u9225\u8305\u9518"
 
 MATH_HINTS = [
     "\\",
@@ -99,6 +101,50 @@ def strip_web_response_marker(markdown: str) -> str:
         return text[len(WEB_RESPONSE_MARKER) :].strip() + "\n"
     return markdown.replace(WEB_RESPONSE_MARKER, "").strip() + "\n"
 
+
+def ascii_fold_latin(text: str) -> str:
+    decomposed = unicodedata.normalize("NFKD", text)
+    return "".join(char for char in decomposed if not unicodedata.combining(char))
+
+
+def normalize_smart_punctuation(text: str) -> str:
+    replacements = {
+        "\ufeff": "",
+        "\u2018": "'",
+        "\u2019": "'",
+        "\u201c": '"',
+        "\u201d": '"',
+        "\u2013": "--",
+        "\u2014": "--",
+        "\u2026": "...",
+    }
+    for old, new in replacements.items():
+        text = text.replace(old, new)
+    return ascii_fold_latin(text)
+
+
+def repair_common_mojibake(markdown: str) -> str:
+    # Common when UTF-8 text copied from web AI output is decoded through CP936/GBK.
+    def recover(match: re.Match[str]) -> str:
+        raw = match.group(0)
+        if not any(marker in raw for marker in MOJIBAKE_MARKERS):
+            return raw
+        try:
+            recovered = raw.encode("gbk").decode("utf-8")
+        except UnicodeError:
+            return raw
+        return recovered
+
+    markdown = re.sub(
+        r"[\u4e00-\u9fff\u9200-\u92ff]*[\u9225\u8305\u9518][\u4e00-\u9fff\u9200-\u92ff]*",
+        recover,
+        markdown,
+    )
+    markdown = markdown.replace("\u9225?", '"')
+    markdown = normalize_smart_punctuation(markdown)
+    markdown = re.sub(r'(\*\*Reject: "[^"\n]+")\*$', r"\1**", markdown, flags=re.MULTILINE)
+    markdown = markdown.replace('"diagnostic', '" diagnostic')
+    return markdown
 
 def normalize_copied_display_operators(markdown: str) -> str:
     lines = markdown.splitlines()
@@ -198,6 +244,7 @@ def normalize_file(path: Path) -> bool:
     original = path.read_text(encoding="utf-8")
     normalized = strip_web_response_marker(original)
     normalized = strip_outer_markdown_fence(normalized)
+    normalized = repair_common_mojibake(normalized)
     normalized = normalize_bare_display_math(normalized)
     normalized = normalize_copied_display_operators(normalized)
     normalized = strip_chatgpt_content_references(normalized)

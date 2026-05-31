@@ -49,7 +49,9 @@ function Invoke-Orchestrator([int] $Round) {
         --problem problems/gauss_circle.md `
         --run-id $RunId `
         --start-round $Round `
-        --rounds 1
+        --rounds 1 `
+        --timeout 1800 `
+        --skip-missing-api
 }
 
 function Normalize-IfPresent([string[]] $Paths) {
