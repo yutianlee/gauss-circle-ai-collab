@@ -1,19 +1,22 @@
 {
   "judge_agent": "gpt_pro_thinking",
+  "prompt_exclusions": ["qwen", "deepseek"],
   "agents": [
     {
       "id": "gpt_pro_thinking",
       "display_name": "GPT Pro Thinking",
       "provider": "web_manual",
       "role": "broad strategist, proof synthesizer, and test judge",
-      "web_url": "https://chatgpt.com/"
+      "web_url": "https://chatgpt.com/",
+      "instructions": "Use ChatGPT Extended Pro. Give detailed, research-mode answers with precise lemma statements, dependencies, proof gaps, and next actions. When acting as judge, be concise enough to be usable but do not omit mathematical substance."
     },
     {
       "id": "gemini_deep_think",
       "display_name": "Gemini Deep Think",
       "provider": "web_manual",
       "role": "independent alternative strategist and obstacle finder",
-      "web_url": "https://gemini.google.com/"
+      "web_url": "https://gemini.google.com/",
+      "instructions": "Use Gemini Pro Deep Think. Deliberately think longer and answer in substantially more detail than a normal response. Do not optimize for brevity. Match the depth expected from a mathematical referee report: give precise statements, parameter ranges, dependencies, and explicit gap audits. Avoid overconfident language. Do not say 'prove', 'formally prove', 'strictly requires', 'must abandon', or similar unless the proof is actually supplied in the response. Prefer calibrated phrases such as 'suggests', 'would require showing', 'appears to reduce to', 'under the following hypotheses', and 'confidence: low/moderate/high with reasons'. For every strong claim, include at least one missing hypothesis or possible failure mode. Include a dedicated section called 'Confidence calibration and failure modes'. Minimum depth contract for research-mode reasoning: produce at least 8 substantive sections, at least 4 explicit lemma/claim boxes, at least 3 possible failure modes, and at least 2 concrete counterexample or stress-test checks. If your first draft is short, continue expanding before finalizing. When reviewing, include a detailed paragraph for each major claim rather than only a bullet verdict."
     }
   ]
 }

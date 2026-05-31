@@ -12,11 +12,6 @@ Follow the protocol and be strict about separating proved claims from conjectura
 
 The default four-agent panel is:
 
-1. `gpt_pro_thinking`: broad strategic reasoning through the ChatGPT web UI.
-2. `gemini_deep_think`: alternate high-level reasoning through the Gemini web UI.
-3. `qwen_api`: API-based algebraic and analytic exploration.
-4. `deepseek_api`: API-based proof criticism and counterexample search.
-
 Any agent can be replaced as long as it follows the same output schema.
 
 ## Round Structure
@@ -128,7 +123,6 @@ Agents must explicitly acknowledge relevant human interventions in their next ou
 - Prefer small checkable lemmas over broad vague routes.
 - Keep notation stable across rounds.
 
-
 ## Markdown Output Rule
 
 Return clean Markdown source. For mathematics, use only:
@@ -205,7 +199,6 @@ The immediate goal is not to claim a solution, but to build a rigorous research 
 - Lower-bound obstructions and omega results.
 - Computational checks for small or structured ranges.
 
-
 ## Current State Bundle
 
 --- FILE: state/current_state.md ---
@@ -214,8 +207,6 @@ The immediate goal is not to claim a solution, but to build a rigorous research 
 No completed rounds yet.
 
 The first round should focus on strategy selection, known barriers, and a clean decomposition of the Gauss circle error term.
-
-
 
 --- FILE: state/lemma_bank.md ---
 # Lemma Bank
@@ -232,21 +223,15 @@ None yet.
 
 None yet.
 
-
-
 --- FILE: state/gap_register.md ---
 # Gap Register
 
 No gaps registered yet.
 
-
-
 --- FILE: state/best_proof_draft.md ---
 # Best Proof Draft
 
 No proof draft yet.
-
-
 
 --- FILE: manifests/reading_packet.md ---
 # Reading Packet
@@ -310,8 +295,6 @@ The judge should output: selected route, useful fragments by source, rejected/ri
 
 Use clean Markdown source. Use `$...$` for inline math and `$$...$$` for display math. Do not use bare bracket math such as `[ ... ]`.
 
-
-
 --- HUMAN FILE: human/goals.md ---
 # Human Goals
 
@@ -326,14 +309,10 @@ Build a public GitHub based workflow for multi-AI collaboration on the Gauss cir
 - Allow human intervention at any time.
 - Maintain a compact reading packet for the next round.
 
-
-
 --- HUMAN FILE: human/ideas.md ---
 # Human Ideas
 
 Add new mathematical ideas here. The orchestrator includes this file in every round prompt.
-
-
 
 --- HUMAN FILE: human/references.md ---
 # Human References
@@ -349,8 +328,6 @@ Link or citation:
 Relevant theorem/section:
 Why it matters:
 ```
-
-
 
 --- RECENT HUMAN NOTE: human/inbox/20260531-212136_constraint_web-model-modes-and-conversation-policy.md ---
 # Web model modes and conversation policy

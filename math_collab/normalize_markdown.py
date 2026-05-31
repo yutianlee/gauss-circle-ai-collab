@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import re
 from pathlib import Path
 
 
@@ -77,9 +78,43 @@ def normalize_bare_display_math(markdown: str) -> str:
     return "\n".join(out) + ("\n" if markdown.endswith("\n") else "")
 
 
+def strip_outer_markdown_fence(markdown: str) -> str:
+    stripped = markdown.strip()
+    if not stripped.startswith("```markdown"):
+        return markdown
+    lines = stripped.splitlines()
+    if len(lines) >= 2 and lines[0].strip().lower() == "```markdown" and lines[-1].strip() == "```":
+        return "\n".join(lines[1:-1]).strip() + "\n"
+    return markdown
+
+
+def normalize_copied_display_operators(markdown: str) -> str:
+    lines = markdown.splitlines()
+    out: list[str] = []
+    in_display_math = False
+    for line in lines:
+        stripped = line.strip()
+        if stripped == "$$":
+            in_display_math = not in_display_math
+            out.append(stripped)
+            continue
+        if in_display_math and re.fullmatch(r"={2,}", stripped):
+            out.append("=")
+            continue
+        out.append(line.rstrip())
+    return "\n".join(out) + ("\n" if markdown.endswith("\n") else "")
+
+
+def normalize_final_newline(markdown: str) -> str:
+    return markdown.rstrip() + "\n"
+
+
 def normalize_file(path: Path) -> bool:
     original = path.read_text(encoding="utf-8")
-    normalized = normalize_bare_display_math(original)
+    normalized = strip_outer_markdown_fence(original)
+    normalized = normalize_bare_display_math(normalized)
+    normalized = normalize_copied_display_operators(normalized)
+    normalized = normalize_final_newline(normalized)
     if normalized != original:
         path.write_text(normalized, encoding="utf-8", newline="\n")
         return True

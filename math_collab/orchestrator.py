@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import re
 import subprocess
 import sys
 import time
@@ -50,7 +51,7 @@ def write_text(path: Path, text: str) -> None:
     path.write_text(text, encoding="utf-8", newline="\n")
 
 
-def load_config(path: Path) -> tuple[list[Agent], str]:
+def load_config(path: Path) -> tuple[list[Agent], str, dict[str, Any]]:
     data = json.loads(read_text(path))
     agents = [
         Agent(
@@ -62,7 +63,110 @@ def load_config(path: Path) -> tuple[list[Agent], str]:
         )
         for item in data["agents"]
     ]
-    return agents, data.get("judge_agent", agents[-1].id)
+    return agents, data.get("judge_agent", agents[-1].id), data
+
+
+def active_agents_block(agents: list[Agent]) -> str:
+    agent_lines = "\n".join(
+        f"- `{agent.id}` ({agent.display_name}): {agent.role}" for agent in agents
+    )
+    return f"""## Active Agents For This Run
+
+Only these agents are active in this test:
+
+{agent_lines}
+
+Do not mention, score, or assign tasks to inactive agents. If older state text refers to inactive agents, treat it as historical noise and reassign any still-useful mathematical check to one of the active agents."""
+
+
+def configured_exclusions(config: dict[str, Any]) -> list[str]:
+    values = config.get("prompt_exclusions", [])
+    if isinstance(values, str):
+        values = [values]
+    return [str(value).lower() for value in values if str(value).strip()]
+
+
+def remove_markdown_section(text: str, heading: str) -> str:
+    lines = text.splitlines()
+    kept: list[str] = []
+    skipping = False
+    target = f"## {heading}".lower()
+    for line in lines:
+        stripped = line.strip()
+        if stripped.lower() == target:
+            skipping = True
+            continue
+        if skipping and stripped.startswith("## "):
+            skipping = False
+        if not skipping:
+            kept.append(line)
+    return "\n".join(kept).strip()
+
+
+def scrub_excluded_agent_text(text: str, exclusions: list[str]) -> str:
+    if not text or not exclusions:
+        return text
+
+    paragraphs = re.split(r"\n\s*\n", text)
+    kept: list[str] = []
+    skip_assignment_body = False
+
+    def contains_exclusion(paragraph: str) -> bool:
+        lowered = paragraph.lower()
+        return any(term in lowered for term in exclusions)
+
+    def starts_excluded_assignment(paragraph: str) -> bool:
+        first = paragraph.strip().splitlines()[0].lower() if paragraph.strip() else ""
+        if not any(term in first for term in exclusions):
+            return False
+        return bool(
+            re.match(r"^(#+\s*)?(\*\*)?(for|to)\s+", first)
+            or re.match(r"^\d+\.\s+\*\*(for|to)\s+", first)
+            or re.match(r"^\d+\.\s+\*\*for\s+`", first)
+        )
+
+    def is_boundary(paragraph: str) -> bool:
+        first = paragraph.strip().splitlines()[0] if paragraph.strip() else ""
+        if not first:
+            return False
+        if first.startswith("#"):
+            return True
+        if re.match(r"^\*\*(For|From|To) `", first):
+            return True
+        if re.match(r"^\d+\.\s+\*\*(For|To) `", first):
+            return True
+        return first.endswith(":") and len(first) <= 100
+
+    for paragraph in paragraphs:
+        if skip_assignment_body:
+            if not is_boundary(paragraph) or contains_exclusion(paragraph):
+                continue
+            skip_assignment_body = False
+
+        if contains_exclusion(paragraph):
+            if starts_excluded_assignment(paragraph):
+                skip_assignment_body = True
+            continue
+        kept.append(paragraph.strip())
+
+    return "\n\n".join(item for item in kept if item).strip()
+
+
+def prepare_prompt_context(
+    *,
+    protocol: str,
+    state: str,
+    human: str,
+    agents: list[Agent],
+    config: dict[str, Any],
+) -> tuple[str, str, str, str, list[str]]:
+    exclusions = configured_exclusions(config)
+    if exclusions:
+        protocol = remove_markdown_section(protocol, "Agents")
+        protocol = scrub_excluded_agent_text(protocol, exclusions)
+        state = scrub_excluded_agent_text(state, exclusions)
+        human = scrub_excluded_agent_text(human, exclusions)
+    return protocol, state, human, active_agents_block(agents), exclusions
 
 
 def state_bundle(root: Path) -> str:
@@ -181,6 +285,7 @@ def build_reasoning_prompt(
     agent: Agent,
     problem: str,
     protocol: str,
+    active_agents: str,
     state: str,
     human: str,
     round_index: int,
@@ -195,11 +300,18 @@ def build_reasoning_prompt(
             "Continue the research from the current state. Make concrete progress on the judge's "
             "next-round instructions, and be explicit about proof gaps."
         )
+    agent_instructions = agent.raw.get("instructions", "").strip()
     return f"""You are {agent.display_name}, acting as {agent.role}.
 
 We are running a public GitHub based multi-AI mathematics research workflow.
 
 Follow the protocol and be strict about separating proved claims from conjectural ideas.
+
+## Agent-Specific Instructions
+
+{agent_instructions or "No extra agent-specific instructions."}
+
+{active_agents}
 
 ## Protocol
 
@@ -238,6 +350,7 @@ def build_review_prompt(
     agent: Agent,
     problem: str,
     protocol: str,
+    active_agents: str,
     state: str,
     human: str,
     round_index: int,
@@ -248,9 +361,16 @@ def build_review_prompt(
         f"--- OUTPUT FROM {peer_id} ---\n{clip_text(text.strip(), max_peer_chars)}"
         for peer_id, text in peer_outputs.items()
     )
+    agent_instructions = agent.raw.get("instructions", "").strip()
     return f"""You are {agent.display_name}, acting as {agent.role}.
 
 Review the other agents' Round {round_index} outputs. Your job is to identify useful mathematics, hidden assumptions, likely errors, and a synthesis path.
+
+## Agent-Specific Instructions
+
+{agent_instructions or "No extra agent-specific instructions."}
+
+{active_agents}
 
 ## Protocol
 
@@ -289,6 +409,7 @@ def build_judge_prompt(
     judge: Agent,
     problem: str,
     protocol: str,
+    active_agents: str,
     state: str,
     human: str,
     round_index: int,
@@ -304,9 +425,16 @@ def build_judge_prompt(
         f"--- REVIEW FROM {agent_id} ---\n{clip_text(text.strip(), max_peer_chars)}"
         for agent_id, text in reviews.items()
     )
+    agent_instructions = judge.raw.get("instructions", "").strip()
     return f"""You are the judge agent: {judge.display_name}.
 
 Synthesize Round {round_index}. Prefer precise, checkable progress over impressive prose.
+
+## Agent-Specific Instructions
+
+{agent_instructions or "No extra agent-specific instructions."}
+
+{active_agents}
 
 ## Protocol
 
@@ -565,7 +693,7 @@ def run_round(
     compact_prompts: bool,
     max_section_chars: int,
 ) -> None:
-    agents, judge_id = load_config(config_path)
+    agents, judge_id, config = load_config(config_path)
     agents_by_id = {agent.id: agent for agent in agents}
     judge = agents_by_id.get(judge_id, agents[-1])
 
@@ -573,6 +701,13 @@ def run_round(
     protocol = compact_protocol() if compact_prompts else read_text(root / "protocol.md")
     state = state_bundle(root)
     human = human_bundle(root)
+    protocol, state, human, active_agents, exclusions = prepare_prompt_context(
+        protocol=protocol,
+        state=state,
+        human=human,
+        agents=agents,
+        config=config,
+    )
     if compact_prompts:
         problem = clip_text(problem, max_section_chars)
         state = clip_text(state, max_section_chars)
@@ -587,6 +722,7 @@ def run_round(
             agent=agent,
             problem=problem,
             protocol=protocol,
+            active_agents=active_agents,
             state=state,
             human=human,
             round_index=round_index,
@@ -624,10 +760,16 @@ def run_round(
             peer_outputs = {k: v for k, v in responses.items() if k != agent.id}
             if not peer_outputs:
                 continue
+            if exclusions:
+                peer_outputs = {
+                    agent_id: scrub_excluded_agent_text(text, exclusions)
+                    for agent_id, text in peer_outputs.items()
+                }
             prompt = build_review_prompt(
                 agent=agent,
                 problem=problem,
                 protocol=protocol,
+                active_agents=active_agents,
                 state=state,
                 human=human,
                 round_index=round_index,
@@ -663,15 +805,27 @@ def run_round(
 
     judge_text: str | None = None
     if responses and reviews:
+        prompt_responses = responses
+        prompt_reviews = reviews
+        if exclusions:
+            prompt_responses = {
+                agent_id: scrub_excluded_agent_text(text, exclusions)
+                for agent_id, text in responses.items()
+            }
+            prompt_reviews = {
+                agent_id: scrub_excluded_agent_text(text, exclusions)
+                for agent_id, text in reviews.items()
+            }
         prompt = build_judge_prompt(
             judge=judge,
             problem=problem,
             protocol=protocol,
+            active_agents=active_agents,
             state=state,
             human=human,
             round_index=round_index,
-            responses=responses,
-            reviews=reviews,
+            responses=prompt_responses,
+            reviews=prompt_reviews,
             max_peer_chars=max_section_chars if compact_prompts else 0,
         )
         judge_text = run_agent(
