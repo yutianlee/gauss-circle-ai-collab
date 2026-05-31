@@ -266,6 +266,25 @@ Do not use rendered-equation copy formats. Do not use bare bracket math like `[ 
 Avoid `\\[ ... \\]` and `\\( ... \\)` because some web copy tools drop the backslashes."""
 
 
+def copy_response_rule(agent: Agent) -> str:
+    if agent.raw.get("copy_response_mode") != "raw_markdown_fence":
+        return ""
+    return """## ChatGPT Copy-Response Safety Rule
+
+Your final answer must be one single fenced Markdown code block:
+
+````text
+```markdown
+Summary:
+...
+```
+````
+
+Do not write anything before or after that outer fence. Inside the fence, write normal Markdown and raw LaTeX source using `$...$` and `$$...$$`.
+
+Do not use additional triple-backtick fences inside your answer. This rule is required because ChatGPT web Copy response can corrupt rendered display math, turning `=` into `====` and minus/fraction bars into long dashed lines."""
+
+
 def research_quality_rubric() -> str:
     return """## Research-Mode Quality Rubric
 
@@ -301,6 +320,7 @@ def build_reasoning_prompt(
             "next-round instructions, and be explicit about proof gaps."
         )
     agent_instructions = agent.raw.get("instructions", "").strip()
+    copy_rule = copy_response_rule(agent)
     return f"""You are {agent.display_name}, acting as {agent.role}.
 
 We are running a public GitHub based multi-AI mathematics research workflow.
@@ -310,6 +330,8 @@ Follow the protocol and be strict about separating proved claims from conjectura
 ## Agent-Specific Instructions
 
 {agent_instructions or "No extra agent-specific instructions."}
+
+{copy_rule}
 
 {active_agents}
 
@@ -362,6 +384,7 @@ def build_review_prompt(
         for peer_id, text in peer_outputs.items()
     )
     agent_instructions = agent.raw.get("instructions", "").strip()
+    copy_rule = copy_response_rule(agent)
     return f"""You are {agent.display_name}, acting as {agent.role}.
 
 Review the other agents' Round {round_index} outputs. Your job is to identify useful mathematics, hidden assumptions, likely errors, and a synthesis path.
@@ -369,6 +392,8 @@ Review the other agents' Round {round_index} outputs. Your job is to identify us
 ## Agent-Specific Instructions
 
 {agent_instructions or "No extra agent-specific instructions."}
+
+{copy_rule}
 
 {active_agents}
 
@@ -426,6 +451,7 @@ def build_judge_prompt(
         for agent_id, text in reviews.items()
     )
     agent_instructions = judge.raw.get("instructions", "").strip()
+    copy_rule = copy_response_rule(judge)
     return f"""You are the judge agent: {judge.display_name}.
 
 Synthesize Round {round_index}. Prefer precise, checkable progress over impressive prose.
@@ -433,6 +459,8 @@ Synthesize Round {round_index}. Prefer precise, checkable progress over impressi
 ## Agent-Specific Instructions
 
 {agent_instructions or "No extra agent-specific instructions."}
+
+{copy_rule}
 
 {active_agents}
 

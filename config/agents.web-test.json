@@ -8,6 +8,7 @@
       "provider": "web_manual",
       "role": "broad strategist, proof synthesizer, and test judge",
       "web_url": "https://chatgpt.com/",
+      "copy_response_mode": "raw_markdown_fence",
       "instructions": "Use ChatGPT Extended Pro. Give detailed, research-mode answers with precise lemma statements, dependencies, proof gaps, and next actions. When acting as judge, be concise enough to be usable but do not omit mathematical substance."
     },
     {

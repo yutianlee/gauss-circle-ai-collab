@@ -5,6 +5,8 @@ import re
 from pathlib import Path
 
 
+WEB_RESPONSE_MARKER = "# Paste the web response below this line, then rerun the orchestrator."
+
 MATH_HINTS = [
     "\\",
     "_",
@@ -80,12 +82,22 @@ def normalize_bare_display_math(markdown: str) -> str:
 
 def strip_outer_markdown_fence(markdown: str) -> str:
     stripped = markdown.strip()
-    if not stripped.startswith("```markdown"):
+    if not stripped.startswith("```"):
         return markdown
     lines = stripped.splitlines()
-    if len(lines) >= 2 and lines[0].strip().lower() == "```markdown" and lines[-1].strip() == "```":
+    first = lines[0].strip().lower() if lines else ""
+    if len(lines) >= 2 and first in {"```markdown", "```md", "```"} and lines[-1].strip() == "```":
         return "\n".join(lines[1:-1]).strip() + "\n"
     return markdown
+
+
+def strip_web_response_marker(markdown: str) -> str:
+    text = markdown.strip()
+    if text == WEB_RESPONSE_MARKER:
+        return ""
+    if text.startswith(WEB_RESPONSE_MARKER):
+        return text[len(WEB_RESPONSE_MARKER) :].strip() + "\n"
+    return markdown.replace(WEB_RESPONSE_MARKER, "").strip() + "\n"
 
 
 def normalize_copied_display_operators(markdown: str) -> str:
@@ -98,11 +110,20 @@ def normalize_copied_display_operators(markdown: str) -> str:
             in_display_math = not in_display_math
             out.append(stripped)
             continue
+        if in_display_math and not stripped:
+            continue
         if in_display_math and re.fullmatch(r"={2,}", stripped):
             out.append("=")
             continue
+        if in_display_math and re.fullmatch(r"[-−]{2,}", stripped):
+            out.append("-")
+            continue
         out.append(line.rstrip())
     return "\n".join(out) + ("\n" if markdown.endswith("\n") else "")
+
+
+def strip_chatgpt_content_references(markdown: str) -> str:
+    return re.sub(r"\s*:contentReference\[[^\]]+\]\{[^}]+\}", "", markdown)
 
 
 def normalize_final_newline(markdown: str) -> str:
@@ -111,9 +132,11 @@ def normalize_final_newline(markdown: str) -> str:
 
 def normalize_file(path: Path) -> bool:
     original = path.read_text(encoding="utf-8")
-    normalized = strip_outer_markdown_fence(original)
+    normalized = strip_web_response_marker(original)
+    normalized = strip_outer_markdown_fence(normalized)
     normalized = normalize_bare_display_math(normalized)
     normalized = normalize_copied_display_operators(normalized)
+    normalized = strip_chatgpt_content_references(normalized)
     normalized = normalize_final_newline(normalized)
     if normalized != original:
         path.write_text(normalized, encoding="utf-8", newline="\n")

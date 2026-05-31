@@ -1,6 +1,8 @@
 param(
     [Parameter(Mandatory = $true)]
-    [string] $OutputPath
+    [string] $OutputPath,
+
+    [switch] $NoNormalize
 )
 
 $ErrorActionPreference = "Stop"
@@ -16,5 +18,14 @@ if ($Directory) {
 }
 
 Set-Content -LiteralPath $OutputPath -Value $Text -Encoding UTF8
+
+if (-not $NoNormalize) {
+    $Python = "C:\Users\yutia\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe"
+    if (-not (Test-Path -LiteralPath $Python)) {
+        $Python = "python"
+    }
+    & $Python -m math_collab.normalize_markdown $OutputPath | Write-Host
+}
+
 Write-Host "Saved clipboard response to:"
 Write-Host "  $OutputPath"
