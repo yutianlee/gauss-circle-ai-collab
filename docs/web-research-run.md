@@ -59,6 +59,32 @@ The watcher will:
 - normalize copied Markdown,
 - advance the orchestrator through reasoning, review, judge, and the next round.
 
+## Clipboard Paste Automation
+
+When browser automation is unreliable, use the Windows clipboard helper. It does not depend on ChatGPT/Gemini DOM access.
+
+Paste one prompt:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\paste_web_prompt.ps1 -PromptPath "rounds\web-research-test\round_001\prompts\gpt_pro_thinking_review.md" -DelaySeconds 7
+```
+
+After running it, click inside the target web input before the countdown ends. Add `-Submit` if you want it to press Enter automatically.
+
+Paste both Round 1 review prompts:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\paste_review_prompts.ps1 -RunId web-research-test -Round 1 -DelaySeconds 7
+```
+
+Save a copied web response:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\save_clipboard_response.ps1 -OutputPath "handoff\web-research-test\round_001\reviews\gpt_pro_thinking.md"
+```
+
+For saving responses, first click the web UI's **Copy response** button, then run the save command.
+
 Normalize copied Markdown after saving GPT responses:
 
 ```powershell

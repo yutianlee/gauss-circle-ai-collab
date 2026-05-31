@@ -135,6 +135,8 @@ To keep a three-round web research run moving while ChatGPT/Gemini think, use:
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\watch_web_research_run.ps1 -RunId web-research-test -StartRound 1 -Rounds 3
 ```
 
+To paste generated prompts into the web UIs without relying on browser DOM automation, use `scripts/paste_web_prompt.ps1` or the stage-specific helpers documented in `docs/web-research-run.md`.
+
 ## Publishing as a Public GitHub Repo
 
 This directory is currently safe to turn into its own repo:
