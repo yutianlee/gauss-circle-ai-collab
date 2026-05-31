@@ -16,6 +16,14 @@ function Get-RoundName([int] $Round) {
     return "round_{0:D3}" -f $Round
 }
 
+function Get-PromptPath([string] $PromptBase, [string] $Name, [int] $Round) {
+    $Suffixed = "$PromptBase\$($Name)_$Round.md"
+    if (Test-Path -LiteralPath $Suffixed) {
+        return $Suffixed
+    }
+    return "$PromptBase\$Name.md"
+}
+
 function Test-RealResponse([string] $Path) {
     if (-not (Test-Path -LiteralPath $Path)) {
         return $false
@@ -70,8 +78,8 @@ function Show-NeededFiles([int] $Round) {
         Write-Host ""
         Write-Host "Round $RoundName is waiting for reasoning responses."
         Write-Host "Paste these prompts into the fixed web conversations:"
-        Write-Host "  $PromptBase\gpt_pro_thinking_reasoning.md"
-        Write-Host "  $PromptBase\gemini_deep_think_reasoning.md"
+        Write-Host "  $(Get-PromptPath $PromptBase 'gpt_pro_thinking_reasoning' $Round)"
+        Write-Host "  $(Get-PromptPath $PromptBase 'gemini_deep_think_reasoning' $Round)"
         Write-Host "Then use Copy response and save Markdown to:"
         $ResponseFiles | ForEach-Object { Write-Host "  $_" }
         return "responses"
@@ -84,8 +92,8 @@ function Show-NeededFiles([int] $Round) {
         Write-Host ""
         Write-Host "Round $RoundName is waiting for cross reviews."
         Write-Host "Paste these review prompts:"
-        Write-Host "  $PromptBase\gpt_pro_thinking_review.md"
-        Write-Host "  $PromptBase\gemini_deep_think_review.md"
+        Write-Host "  $(Get-PromptPath $PromptBase 'gpt_pro_thinking_review' $Round)"
+        Write-Host "  $(Get-PromptPath $PromptBase 'gemini_deep_think_review' $Round)"
         Write-Host "Then use Copy response and save Markdown to:"
         $ReviewFiles | ForEach-Object { Write-Host "  $_" }
         return "reviews"
@@ -98,7 +106,7 @@ function Show-NeededFiles([int] $Round) {
         Write-Host ""
         Write-Host "Round $RoundName is waiting for judge synthesis."
         Write-Host "Paste this judge prompt into ChatGPT Extended Pro:"
-        Write-Host "  $PromptBase\judge.md"
+        Write-Host "  $(Get-PromptPath $PromptBase 'judge' $Round)"
         Write-Host "Then use Copy response and save Markdown to:"
         Write-Host "  $JudgeFile"
         return "judge"

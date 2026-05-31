@@ -11,10 +11,18 @@ function Get-RoundName([int] $RoundNumber) {
     return "round_{0:D3}" -f $RoundNumber
 }
 
+function Get-PromptPath([string] $Base, [string] $AgentId, [string] $Stage, [int] $RoundNumber) {
+    $Suffixed = "$Base\$($AgentId)_$($Stage)_$RoundNumber.md"
+    if (Test-Path -LiteralPath $Suffixed) {
+        return $Suffixed
+    }
+    return "$Base\$($AgentId)_$($Stage).md"
+}
+
 $RoundName = Get-RoundName $Round
 $Base = "rounds\$RunId\$RoundName\prompts"
-$GptPrompt = "$Base\gpt_pro_thinking_review.md"
-$GeminiPrompt = "$Base\gemini_deep_think_review.md"
+$GptPrompt = Get-PromptPath $Base "gpt_pro_thinking" "review" $Round
+$GeminiPrompt = Get-PromptPath $Base "gemini_deep_think" "review" $Round
 
 Write-Host ""
 Write-Host "Step 1/2: ChatGPT Extended Pro review prompt"

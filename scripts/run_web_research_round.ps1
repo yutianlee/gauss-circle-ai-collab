@@ -20,6 +20,7 @@ if (-not (Test-Path -LiteralPath $Python)) {
 Write-Host ""
 Write-Host "Next:"
 Write-Host "1. Open prompt files under rounds/$RunId/round_$($Round.ToString('000'))/prompts."
+Write-Host "   Prompt filenames include the round suffix, e.g. *_$Round.md."
 Write-Host "2. Paste them into ChatGPT Extended Pro and Gemini Pro Deep Think."
 Write-Host "3. Use Copy response and save Markdown under handoff/$RunId/round_$($Round.ToString('000'))."
 Write-Host "4. Rerun this script for the same round until judge completes, then increment -Round."

@@ -104,21 +104,85 @@ def normalize_copied_display_operators(markdown: str) -> str:
     lines = markdown.splitlines()
     out: list[str] = []
     in_display_math = False
+    previous_u3_floor = False
+    previous_u1_floor_difference = False
+    previous_math_line = ""
+    previous_restored_hash_equation = False
+
+    def is_u3_floor(line: str) -> bool:
+        return bool(re.search(r"\\left\\lfloor\\frac\{u\+3\}\{4\}\\right\\rfloor", line))
+
+    def is_u1_floor(line: str) -> bool:
+        return bool(re.search(r"\\left\\lfloor\\frac\{u\+1\}\{4\}\\right\\rfloor", line))
+
+    def continues_restored_hash_equation(line: str) -> bool:
+        return bool(
+            re.fullmatch(r"2i\\chi_4\([hn]\)[.,]?", line)
+            or re.fullmatch(r"-6x\^\{-6\},?", line)
+        )
+
+    def append_math_line(line: str, restored_hash_equation: bool = False) -> None:
+        nonlocal previous_math_line, previous_restored_hash_equation
+        nonlocal previous_u3_floor, previous_u1_floor_difference
+        out.append(line)
+        stripped_line = line.strip()
+        previous_math_line = stripped_line
+        previous_restored_hash_equation = restored_hash_equation
+        previous_u1_floor_difference = stripped_line.startswith("-") and is_u1_floor(stripped_line)
+        previous_u3_floor = not previous_u1_floor_difference and is_u3_floor(stripped_line)
+
     for line in lines:
         stripped = line.strip()
         if stripped == "$$":
             in_display_math = not in_display_math
             out.append(stripped)
+            previous_u3_floor = False
+            previous_u1_floor_difference = False
+            previous_math_line = ""
+            previous_restored_hash_equation = False
             continue
         if in_display_math and not stripped:
             continue
         if in_display_math and re.fullmatch(r"={2,}", stripped):
-            out.append("=")
+            append_math_line("=")
             continue
-        if in_display_math and re.fullmatch(r"[-−]{2,}", stripped):
-            out.append("-")
+        if in_display_math and re.fullmatch(r"[-\u2212]{2,}", stripped):
+            append_math_line("-")
             continue
-        out.append(line.rstrip())
+        if in_display_math:
+            copied_hash = re.fullmatch(r"#+\s+(.+)", stripped)
+            if copied_hash:
+                body = copied_hash.group(1)
+                if is_u3_floor(body):
+                    append_math_line(body)
+                elif is_u1_floor(body):
+                    append_math_line(f"- {body}")
+                elif previous_math_line == "=":
+                    append_math_line(body, restored_hash_equation=True)
+                else:
+                    append_math_line(f"= {body}", restored_hash_equation=True)
+                continue
+            if previous_math_line == "=" and stripped.startswith("= "):
+                append_math_line(stripped[2:].strip(), restored_hash_equation=True)
+                continue
+            if previous_restored_hash_equation and continues_restored_hash_equation(stripped):
+                append_math_line(f"= {stripped}")
+                continue
+            if previous_u3_floor and is_u1_floor(stripped) and not stripped.startswith(("-", "=")):
+                append_math_line(f"- {stripped}")
+                continue
+            if previous_u1_floor_difference and stripped.startswith(r"\frac12+"):
+                append_math_line("=")
+                append_math_line(stripped)
+                continue
+        if in_display_math:
+            append_math_line(line.rstrip())
+        else:
+            out.append(line.rstrip())
+            previous_math_line = ""
+            previous_restored_hash_equation = False
+            previous_u3_floor = False
+            previous_u1_floor_difference = False
     return "\n".join(out) + ("\n" if markdown.endswith("\n") else "")
 
 

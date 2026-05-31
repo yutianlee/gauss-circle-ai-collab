@@ -219,6 +219,14 @@ def round_name(index: int) -> str:
     return f"round_{index:03d}"
 
 
+def prompt_filename(agent_id: str, stage: str, round_index: int) -> str:
+    return f"{agent_id}_{stage}_{round_index}.md"
+
+
+def judge_prompt_filename(round_index: int) -> str:
+    return f"judge_{round_index}.md"
+
+
 def output_schema(kind: str) -> str:
     if kind == "review":
         return """Most valuable input from others:
@@ -758,7 +766,7 @@ def run_round(
         output = run_agent(
             agent=agent,
             prompt=prompt,
-            prompt_path=round_dir / "prompts" / f"{agent.id}_reasoning.md",
+            prompt_path=round_dir / "prompts" / prompt_filename(agent.id, "reasoning", round_index),
             output_path=round_dir / "responses" / f"{agent.id}.md",
             handoff_response_path=handoff_dir / "responses" / f"{agent.id}.md",
             stage="reasoning",
@@ -807,7 +815,7 @@ def run_round(
             output = run_agent(
                 agent=agent,
                 prompt=prompt,
-                prompt_path=round_dir / "prompts" / f"{agent.id}_review.md",
+                prompt_path=round_dir / "prompts" / prompt_filename(agent.id, "review", round_index),
                 output_path=round_dir / "reviews" / f"{agent.id}.md",
                 handoff_response_path=handoff_dir / "reviews" / f"{agent.id}.md",
                 stage="review",
@@ -859,7 +867,7 @@ def run_round(
         judge_text = run_agent(
             agent=judge,
             prompt=prompt,
-            prompt_path=round_dir / "prompts" / "judge.md",
+            prompt_path=round_dir / "prompts" / judge_prompt_filename(round_index),
             output_path=round_dir / "judge" / "judge.md",
             handoff_response_path=handoff_dir / "judge" / "judge.md",
             stage="judge",

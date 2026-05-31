@@ -11,6 +11,8 @@ handoff/
 # Keep research outputs versioned by default. If a run becomes too large,
 # move bulky artifacts under artifacts/ and ignore them explicitly.
 artifacts/
+previews/
+rounds/**/*.html
 
 # Local reference downloads kept out of the public repo unless explicitly curated.
 Gauss circle problem.html

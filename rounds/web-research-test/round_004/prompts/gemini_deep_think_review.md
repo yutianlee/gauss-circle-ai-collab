@@ -406,8 +406,9 @@ $$
 $$
 S(u)
 =
-## \left\lfloor\frac{u+3}{4}\right\rfloor
-# \left\lfloor\frac{u+1}{4}\right\rfloor
+\left\lfloor\frac{u+3}{4}\right\rfloor
+- \left\lfloor\frac{u+1}{4}\right\rfloor
+=
 \frac12+
 \psi\left(\frac{u+1}{4}\right)
 -
@@ -464,8 +465,8 @@ For real $u\ge 0$,
 $$
 S(u)
 =
-## \left\lfloor\frac{u+3}{4}\right\rfloor
-\left\lfloor\frac{u+1}{4}\right\rfloor.
+\left\lfloor\frac{u+3}{4}\right\rfloor
+- \left\lfloor\frac{u+1}{4}\right\rfloor.
 $$
 
 Equivalently, with $\psi(t)=t-\lfloor t\rfloor-\frac12$,
@@ -694,8 +695,9 @@ It also used
 $$
 S(u)
 =
-## \left\lfloor\frac{u+3}{4}\right\rfloor
-# \left\lfloor\frac{u+1}{4}\right\rfloor
+\left\lfloor\frac{u+3}{4}\right\rfloor
+- \left\lfloor\frac{u+1}{4}\right\rfloor
+=
 \frac12+
 \psi\left(\frac{u+1}{4}\right)
 -
@@ -763,8 +765,8 @@ produces the coefficient
 $$
 e(h/4)-e(3h/4)
 =
-# 2i\sin(\pi h/2)
-2i\chi_4(h).
+2i\sin(\pi h/2)
+= 2i\chi_4(h).
 $$
 
 Thus Leg 1 carries $\chi_4(a)$ on the spatial variable, while Leg 2 carries $\chi_4(h)$ on the frequency variable. The Round 2 review correctly says H4/H5 should be updated to record this rather than treating the second leg as a generic bounded coefficient.
@@ -888,8 +890,9 @@ For real $u\ge 0$,
 $$
 S(u)
 =
-## \left\lfloor\frac{u+3}{4}\right\rfloor
-# \left\lfloor\frac{u+1}{4}\right\rfloor
+\left\lfloor\frac{u+3}{4}\right\rfloor
+- \left\lfloor\frac{u+1}{4}\right\rfloor
+=
 \frac12+
 \psi\left(\frac{u+1}{4}\right)
 -
@@ -1193,8 +1196,9 @@ Also,
 $$
 S(u)
 =
-## \left\lfloor\frac{u+3}{4}\right\rfloor
-# \left\lfloor\frac{u+1}{4}\right\rfloor
+\left\lfloor\frac{u+3}{4}\right\rfloor
+- \left\lfloor\frac{u+1}{4}\right\rfloor
+=
 \frac12+
 \psi\left(\frac{u+1}{4}\right)
 -
@@ -1407,8 +1411,8 @@ For real $u\ge 0$,
 $$
 S(u)
 =
-## \left\lfloor\frac{u+3}{4}\right\rfloor
-\left\lfloor\frac{u+1}{4}\right\rfloor.
+\left\lfloor\frac{u+3}{4}\right\rfloor
+- \left\lfloor\frac{u+1}{4}\right\rfloor.
 $$
 
 Equivalently,
@@ -1972,8 +1976,9 @@ $$
 $$
 S(u)
 =
-## \left\lfloor\frac{u+3}{4}\right\rfloor
-# \left\lfloor\frac{u+1}{4}\right\rfloor
+\left\lfloor\frac{u+3}{4}\right\rfloor
+- \left\lfloor\frac{u+1}{4}\right\rfloor
+=
 \frac12+
 \psi\left(\frac{u+1}{4}\right)
 -
@@ -2030,8 +2035,8 @@ For real $u\ge 0$,
 $$
 S(u)
 =
-## \left\lfloor\frac{u+3}{4}\right\rfloor
-\left\lfloor\frac{u+1}{4}\right\rfloor.
+\left\lfloor\frac{u+3}{4}\right\rfloor
+- \left\lfloor\frac{u+1}{4}\right\rfloor.
 $$
 
 Equivalently, with $\psi(t)=t-\lfloor t\rfloor-\frac12$,
@@ -2260,8 +2265,9 @@ It also used
 $$
 S(u)
 =
-## \left\lfloor\frac{u+3}{4}\right\rfloor
-# \left\lfloor\frac{u+1}{4}\right\rfloor
+\left\lfloor\frac{u+3}{4}\right\rfloor
+- \left\lfloor\frac{u+1}{4}\right\rfloor
+=
 \frac12+
 \psi\left(\frac{u+1}{4}\right)
 -
@@ -2329,8 +2335,8 @@ produces the coefficient
 $$
 e(h/4)-e(3h/4)
 =
-# 2i\sin(\pi h/2)
-2i\chi_4(h).
+2i\sin(\pi h/2)
+= 2i\chi_4(h).
 $$
 
 Thus Leg 1 carries $\chi_4(a)$ on the spatial variable, while Leg 2 carries $\chi_4(h)$ on the frequency variable. The Round 2 review correctly says H4/H5 should be updated to record this rather than treating the second leg as a generic bounded coefficient.
@@ -2454,8 +2460,9 @@ For real $u\ge 0$,
 $$
 S(u)
 =
-## \left\lfloor\frac{u+3}{4}\right\rfloor
-# \left\lfloor\frac{u+1}{4}\right\rfloor
+\left\lfloor\frac{u+3}{4}\right\rfloor
+- \left\lfloor\frac{u+1}{4}\right\rfloor
+=
 \frac12+
 \psi\left(\frac{u+1}{4}\right)
 -
@@ -2759,8 +2766,9 @@ Also,
 $$
 S(u)
 =
-## \left\lfloor\frac{u+3}{4}\right\rfloor
-# \left\lfloor\frac{u+1}{4}\right\rfloor
+\left\lfloor\frac{u+3}{4}\right\rfloor
+- \left\lfloor\frac{u+1}{4}\right\rfloor
+=
 \frac12+
 \psi\left(\frac{u+1}{4}\right)
 -
@@ -2973,8 +2981,8 @@ For real $u\ge 0$,
 $$
 S(u)
 =
-## \left\lfloor\frac{u+3}{4}\right\rfloor
-\left\lfloor\frac{u+1}{4}\right\rfloor.
+\left\lfloor\frac{u+3}{4}\right\rfloor
+- \left\lfloor\frac{u+1}{4}\right\rfloor.
 $$
 
 Equivalently,
@@ -3650,8 +3658,8 @@ Since
 $$
 e(h/4)-e(3h/4)
 =
-# 2i\sin(\pi h/2)
-2i\chi_4(h),
+2i\sin(\pi h/2)
+= 2i\chi_4(h),
 $$
 
 the second main family is
@@ -3788,8 +3796,8 @@ and
 $$
 F'(x)F'''(x)-3F''(x)^2
 =
-# 6x^{-6}-12x^{-6}
--6x^{-6},
+6x^{-6}-12x^{-6}
+= -6x^{-6},
 $$
 
 so the Li–Yang nondegeneracy condition is satisfied uniformly on dyadic blocks.
@@ -3922,8 +3930,8 @@ The Gauss factor is
 $$
 \sum_{r\bmod 4}\chi_4(r)e(nr/4)
 =
-# e(n/4)-e(3n/4)
-2i\chi_4(n).
+e(n/4)-e(3n/4)
+= 2i\chi_4(n).
 $$
 
 Hence
@@ -4090,8 +4098,9 @@ Status: proved.
 $$
 S(u)
 =
-## \left\lfloor\frac{u+3}{4}\right\rfloor
-# \left\lfloor\frac{u+1}{4}\right\rfloor
+\left\lfloor\frac{u+3}{4}\right\rfloor
+- \left\lfloor\frac{u+1}{4}\right\rfloor
+=
 \frac12+
 \psi\left(\frac{u+1}{4}\right)
 -
