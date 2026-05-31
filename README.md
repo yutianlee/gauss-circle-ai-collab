@@ -129,6 +129,12 @@ python -m math_collab.normalize_markdown rounds/web-smoke/round_001/responses/gp
 
 For the long-thinking web research workflow, see `docs/web-research-run.md`.
 
+To keep a three-round web research run moving while ChatGPT/Gemini think, use:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\watch_web_research_run.ps1 -RunId web-research-test -StartRound 1 -Rounds 3
+```
+
 ## Publishing as a Public GitHub Repo
 
 This directory is currently safe to turn into its own repo:

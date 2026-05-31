@@ -1,0 +1,130 @@
+param(
+    [string] $RunId = "web-research-test",
+    [int] $StartRound = 1,
+    [int] $Rounds = 3,
+    [int] $PollSeconds = 30
+)
+
+$ErrorActionPreference = "Stop"
+
+$Python = "C:\Users\yutia\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe"
+if (-not (Test-Path -LiteralPath $Python)) {
+    $Python = "python"
+}
+
+function Get-RoundName([int] $Round) {
+    return "round_{0:D3}" -f $Round
+}
+
+function Test-RealResponse([string] $Path) {
+    if (-not (Test-Path -LiteralPath $Path)) {
+        return $false
+    }
+    $Text = Get-Content -LiteralPath $Path -Raw
+    if ([string]::IsNullOrWhiteSpace($Text)) {
+        return $false
+    }
+    $Marker = "# Paste the web response below this line, then rerun the orchestrator."
+    $Trimmed = $Text.Trim()
+    if ($Trimmed -eq $Marker) {
+        return $false
+    }
+    if ($Trimmed.StartsWith($Marker) -and $Trimmed.Substring($Marker.Length).Trim().Length -eq 0) {
+        return $false
+    }
+    return $true
+}
+
+function Invoke-Orchestrator([int] $Round) {
+    & $Python -m math_collab.orchestrator `
+        --config config/agents.web-test.json `
+        --problem problems/gauss_circle.md `
+        --run-id $RunId `
+        --start-round $Round `
+        --rounds 1
+}
+
+function Normalize-IfPresent([string[]] $Paths) {
+    $Existing = @($Paths | Where-Object { Test-Path -LiteralPath $_ })
+    if ($Existing.Count -gt 0) {
+        & $Python -m math_collab.normalize_markdown @Existing | Write-Host
+    }
+}
+
+function Show-NeededFiles([int] $Round) {
+    $RoundName = Get-RoundName $Round
+    $Base = "handoff\$RunId\$RoundName"
+    $PromptBase = "rounds\$RunId\$RoundName\prompts"
+
+    $ResponseFiles = @(
+        "$Base\responses\gpt_pro_thinking.md",
+        "$Base\responses\gemini_deep_think.md"
+    )
+    $ReviewFiles = @(
+        "$Base\reviews\gpt_pro_thinking.md",
+        "$Base\reviews\gemini_deep_think.md"
+    )
+    $JudgeFile = "$Base\judge\judge.md"
+
+    if (($ResponseFiles | Where-Object { -not (Test-RealResponse $_) }).Count -gt 0) {
+        Write-Host ""
+        Write-Host "Round $RoundName is waiting for reasoning responses."
+        Write-Host "Paste these prompts into the fixed web conversations:"
+        Write-Host "  $PromptBase\gpt_pro_thinking_reasoning.md"
+        Write-Host "  $PromptBase\gemini_deep_think_reasoning.md"
+        Write-Host "Then use Copy response and save Markdown to:"
+        $ResponseFiles | ForEach-Object { Write-Host "  $_" }
+        return "responses"
+    }
+
+    Normalize-IfPresent $ResponseFiles
+    Invoke-Orchestrator $Round
+
+    if (($ReviewFiles | Where-Object { -not (Test-RealResponse $_) }).Count -gt 0) {
+        Write-Host ""
+        Write-Host "Round $RoundName is waiting for cross reviews."
+        Write-Host "Paste these review prompts:"
+        Write-Host "  $PromptBase\gpt_pro_thinking_review.md"
+        Write-Host "  $PromptBase\gemini_deep_think_review.md"
+        Write-Host "Then use Copy response and save Markdown to:"
+        $ReviewFiles | ForEach-Object { Write-Host "  $_" }
+        return "reviews"
+    }
+
+    Normalize-IfPresent $ReviewFiles
+    Invoke-Orchestrator $Round
+
+    if (-not (Test-RealResponse $JudgeFile)) {
+        Write-Host ""
+        Write-Host "Round $RoundName is waiting for judge synthesis."
+        Write-Host "Paste this judge prompt into ChatGPT Extended Pro:"
+        Write-Host "  $PromptBase\judge.md"
+        Write-Host "Then use Copy response and save Markdown to:"
+        Write-Host "  $JudgeFile"
+        return "judge"
+    }
+
+    Normalize-IfPresent @($JudgeFile)
+    Invoke-Orchestrator $Round
+    Write-Host ""
+    Write-Host "Round $RoundName is complete."
+    return "complete"
+}
+
+Write-Host "Watching run '$RunId' from round $StartRound for $Rounds round(s)."
+Write-Host "Press Ctrl+C to stop."
+
+$EndRound = $StartRound + $Rounds - 1
+for ($Round = $StartRound; $Round -le $EndRound; $Round++) {
+    Invoke-Orchestrator $Round
+    while ($true) {
+        $Status = Show-NeededFiles $Round
+        if ($Status -eq "complete") {
+            break
+        }
+        Start-Sleep -Seconds $PollSeconds
+    }
+}
+
+Write-Host ""
+Write-Host "All requested rounds are complete."

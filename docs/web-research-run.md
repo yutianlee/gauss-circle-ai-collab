@@ -46,6 +46,19 @@ If `python` is not on PATH in Codex Desktop, use the bundled Python:
 & 'C:\Users\yutia\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe' -m math_collab.orchestrator --config config/agents.web-test.json --problem problems/gauss_circle.md --run-id web-research-test --start-round 1 --rounds 1
 ```
 
+Or leave the watcher running while the web models think:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\watch_web_research_run.ps1 -RunId web-research-test -StartRound 1 -Rounds 3 -PollSeconds 30
+```
+
+The watcher will:
+
+- print the prompt files to paste,
+- wait until the required Copy-response Markdown files are saved,
+- normalize copied Markdown,
+- advance the orchestrator through reasoning, review, judge, and the next round.
+
 Normalize copied Markdown after saving GPT responses:
 
 ```powershell
