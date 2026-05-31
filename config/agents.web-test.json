@@ -1,0 +1,19 @@
+{
+  "judge_agent": "gpt_pro_thinking",
+  "agents": [
+    {
+      "id": "gpt_pro_thinking",
+      "display_name": "GPT Pro Thinking",
+      "provider": "web_manual",
+      "role": "broad strategist, proof synthesizer, and test judge",
+      "web_url": "https://chatgpt.com/"
+    },
+    {
+      "id": "gemini_deep_think",
+      "display_name": "Gemini Deep Think",
+      "provider": "web_manual",
+      "role": "independent alternative strategist and obstacle finder",
+      "web_url": "https://gemini.google.com/"
+    }
+  ]
+}

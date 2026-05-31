@@ -115,6 +115,20 @@ python -m math_collab.orchestrator --config config/agents.example.json --problem
 
 In normal research mode, rerun the same command after adding web responses. The round advances only when every agent has completed the current stage.
 
+For browser smoke tests, use compact prompts so the web UI does not choke on large prior-round context:
+
+```powershell
+python -m math_collab.orchestrator --config config/agents.web-test.json --problem problems/gauss_circle.md --run-id web-smoke --rounds 1 --compact-prompts
+```
+
+When copying responses from web UIs, prefer the page's own **Copy response** button. The prompts require Markdown math as `$...$` and `$$...$$`, because some web copy paths turn `\[...\]` into bare `[ ... ]`. If a copied ChatGPT response still contains bare display math, normalize it before committing:
+
+```powershell
+python -m math_collab.normalize_markdown rounds/web-smoke/round_001/responses/gpt_pro_thinking.md
+```
+
+For the long-thinking web research workflow, see `docs/web-research-run.md`.
+
 ## Publishing as a Public GitHub Repo
 
 This directory is currently safe to turn into its own repo:

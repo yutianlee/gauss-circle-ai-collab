@@ -90,6 +90,27 @@ def human_bundle(root: Path) -> str:
     return "\n".join(chunks).strip() or "No human interventions recorded yet."
 
 
+def clip_text(text: str, max_chars: int) -> str:
+    if max_chars <= 0 or len(text) <= max_chars:
+        return text
+    head = text[: max_chars // 2].rstrip()
+    tail = text[-max_chars // 2 :].lstrip()
+    return f"{head}\n\n[... clipped for compact web prompt ...]\n\n{tail}"
+
+
+def compact_protocol() -> str:
+    return """# Compact Multi-AI Math Research Protocol
+
+Stages:
+1. Independent reasoning by every agent.
+2. Cross review only after all reasoning responses are present.
+3. Judge synthesis only after all reviews are present.
+4. State update only after judge synthesis.
+
+Always separate proved claims, conjectures, gaps, counterexample checks, dependencies, and confidence.
+Human directives override prior AI suggestions."""
+
+
 def round_name(index: int) -> str:
     return f"round_{index:03d}"
 
@@ -123,6 +144,38 @@ What should be tested next:
 Confidence:"""
 
 
+def markdown_math_rule() -> str:
+    return """## Markdown Output Rule
+
+Return clean Markdown source. For mathematics, use only:
+
+- inline math: `$...$`
+- display math:
+
+```text
+$$
+...
+$$
+```
+
+Do not use rendered-equation copy formats. Do not use bare bracket math like `[ ... ]`.
+Avoid `\\[ ... \\]` and `\\( ... \\)` because some web copy tools drop the backslashes."""
+
+
+def research_quality_rubric() -> str:
+    return """## Research-Mode Quality Rubric
+
+This is a research-mode run, not a smoke test. Take enough time to reason carefully before answering. Prefer correctness, explicit assumptions, rigorous gap detection, and precise lemma statements over speed or brevity.
+
+Before writing the final response, internally check your proposal against known barriers, missing hypotheses, possible counterexamples, and literature-status uncertainty. In the final answer, report the refined result rather than hidden chain-of-thought.
+
+For reasoning stages, include: main route, precise lemmas, theorem dependencies, hidden assumptions, obstruction or counterexample checks, what would falsify the route, and confidence.
+
+For review stages, include: valuable ideas from other agents, claims that look correct, claims needing proof, likely false or underspecified claims, missing hypotheses, and concrete synthesis recommendations.
+
+For judge stages, include: selected route, useful fragments by source, rejected or risky ideas, exact gaps, new lemma statements, next-round tasks, and confidence."""
+
+
 def build_reasoning_prompt(
     *,
     agent: Agent,
@@ -151,6 +204,10 @@ Follow the protocol and be strict about separating proved claims from conjectura
 ## Protocol
 
 {protocol}
+
+{markdown_math_rule()}
+
+{research_quality_rubric()}
 
 ## Problem
 
@@ -185,9 +242,11 @@ def build_review_prompt(
     human: str,
     round_index: int,
     peer_outputs: dict[str, str],
+    max_peer_chars: int = 0,
 ) -> str:
     peer_text = "\n\n".join(
-        f"--- OUTPUT FROM {peer_id} ---\n{text.strip()}" for peer_id, text in peer_outputs.items()
+        f"--- OUTPUT FROM {peer_id} ---\n{clip_text(text.strip(), max_peer_chars)}"
+        for peer_id, text in peer_outputs.items()
     )
     return f"""You are {agent.display_name}, acting as {agent.role}.
 
@@ -196,6 +255,10 @@ Review the other agents' Round {round_index} outputs. Your job is to identify us
 ## Protocol
 
 {protocol}
+
+{markdown_math_rule()}
+
+{research_quality_rubric()}
 
 ## Problem
 
@@ -231,12 +294,15 @@ def build_judge_prompt(
     round_index: int,
     responses: dict[str, str],
     reviews: dict[str, str],
+    max_peer_chars: int = 0,
 ) -> str:
     response_text = "\n\n".join(
-        f"--- RESPONSE FROM {agent_id} ---\n{text.strip()}" for agent_id, text in responses.items()
+        f"--- RESPONSE FROM {agent_id} ---\n{clip_text(text.strip(), max_peer_chars)}"
+        for agent_id, text in responses.items()
     )
     review_text = "\n\n".join(
-        f"--- REVIEW FROM {agent_id} ---\n{text.strip()}" for agent_id, text in reviews.items()
+        f"--- REVIEW FROM {agent_id} ---\n{clip_text(text.strip(), max_peer_chars)}"
+        for agent_id, text in reviews.items()
     )
     return f"""You are the judge agent: {judge.display_name}.
 
@@ -245,6 +311,10 @@ Synthesize Round {round_index}. Prefer precise, checkable progress over impressi
 ## Protocol
 
 {protocol}
+
+{markdown_math_rule()}
+
+{research_quality_rubric()}
 
 ## Problem
 
@@ -492,15 +562,21 @@ def run_round(
     update_state: bool,
     skip_missing_api: bool,
     allow_partial: bool,
+    compact_prompts: bool,
+    max_section_chars: int,
 ) -> None:
     agents, judge_id = load_config(config_path)
     agents_by_id = {agent.id: agent for agent in agents}
     judge = agents_by_id.get(judge_id, agents[-1])
 
     problem = read_text(problem_path)
-    protocol = read_text(root / "protocol.md")
+    protocol = compact_protocol() if compact_prompts else read_text(root / "protocol.md")
     state = state_bundle(root)
     human = human_bundle(root)
+    if compact_prompts:
+        problem = clip_text(problem, max_section_chars)
+        state = clip_text(state, max_section_chars)
+        human = clip_text(human, max_section_chars)
 
     round_dir = root / "rounds" / run_id / round_name(round_index)
     handoff_dir = root / "handoff" / run_id / round_name(round_index)
@@ -556,6 +632,7 @@ def run_round(
                 human=human,
                 round_index=round_index,
                 peer_outputs=peer_outputs,
+                max_peer_chars=max_section_chars if compact_prompts else 0,
             )
             output = run_agent(
                 agent=agent,
@@ -595,6 +672,7 @@ def run_round(
             round_index=round_index,
             responses=responses,
             reviews=reviews,
+            max_peer_chars=max_section_chars if compact_prompts else 0,
         )
         judge_text = run_agent(
             agent=judge,
@@ -646,6 +724,17 @@ def main(argv: list[str] | None = None) -> int:
         help="Bypass round barriers. Not recommended for normal research runs.",
     )
     parser.add_argument(
+        "--compact-prompts",
+        action="store_true",
+        help="Use shorter web-friendly prompts for smoke tests and slow web UIs.",
+    )
+    parser.add_argument(
+        "--max-section-chars",
+        type=int,
+        default=2500,
+        help="Maximum characters per large section when --compact-prompts is enabled.",
+    )
+    parser.add_argument(
         "--no-state-update",
         action="store_true",
         help="Generate round files without changing state/ or manifests/. Useful for smoke tests.",
@@ -677,6 +766,8 @@ def main(argv: list[str] | None = None) -> int:
             update_state=not args.no_state_update,
             skip_missing_api=args.skip_missing_api,
             allow_partial=args.allow_partial,
+            compact_prompts=args.compact_prompts,
+            max_section_chars=args.max_section_chars,
         )
 
     if args.commit or args.push:
