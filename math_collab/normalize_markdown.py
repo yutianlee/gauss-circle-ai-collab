@@ -114,9 +114,12 @@ def normalize_smart_punctuation(text: str) -> str:
         "\u2019": "'",
         "\u201c": '"',
         "\u201d": '"',
+        "\u2010": "-",
+        "\u2011": "-",
         "\u2013": "--",
         "\u2014": "--",
         "\u2026": "...",
+        "\u2212": "-",
     }
     for old, new in replacements.items():
         text = text.replace(old, new)
