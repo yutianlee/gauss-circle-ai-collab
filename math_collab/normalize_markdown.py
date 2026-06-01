@@ -82,6 +82,48 @@ def normalize_bare_display_math(markdown: str) -> str:
     return "\n".join(out) + ("\n" if markdown.endswith("\n") else "")
 
 
+def normalize_latex_display_delimiters(markdown: str) -> str:
+    display_open = re.compile(r"(?<!\\)\\\[")
+    display_close = re.compile(r"(?<!\\)\\\]")
+    lines = markdown.splitlines()
+    out: list[str] = []
+    in_display = False
+    for line in lines:
+        stripped = line.strip()
+        if stripped == r"\[" and not in_display:
+            out.append("$$")
+            in_display = True
+            continue
+        if stripped == r"\]" and in_display:
+            out.append("$$")
+            in_display = False
+            continue
+        open_match = None if "`" in line else display_open.search(line)
+        close_match = None if "`" in line else display_close.search(line)
+        if open_match and not in_display:
+            before = line[: open_match.start()]
+            after = line[open_match.end() :]
+            if before.strip():
+                out.append(before.rstrip())
+            out.append("$$")
+            if after.strip():
+                out.append(after.strip())
+            in_display = True
+            continue
+        if close_match and in_display:
+            before = line[: close_match.start()]
+            after = line[close_match.end() :]
+            if before.strip():
+                out.append(before.rstrip())
+            out.append("$$")
+            if after.strip():
+                out.append(after.strip())
+            in_display = False
+            continue
+        out.append(line)
+    return "\n".join(out) + ("\n" if markdown.endswith("\n") else "")
+
+
 def strip_outer_markdown_fence(markdown: str) -> str:
     stripped = markdown.strip()
     if not stripped.startswith("```"):
@@ -249,6 +291,7 @@ def normalize_file(path: Path) -> bool:
     normalized = strip_outer_markdown_fence(normalized)
     normalized = repair_common_mojibake(normalized)
     normalized = normalize_bare_display_math(normalized)
+    normalized = normalize_latex_display_delimiters(normalized)
     normalized = normalize_copied_display_operators(normalized)
     normalized = strip_chatgpt_content_references(normalized)
     normalized = normalize_final_newline(normalized)
