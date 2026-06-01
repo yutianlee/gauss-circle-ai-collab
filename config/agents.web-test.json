@@ -28,6 +28,7 @@
       "api_key_env": "DEEPSEEK_API_KEY",
       "model_env": "DEEPSEEK_MODEL",
       "default_model": "deepseek-v4-pro",
+      "system_prompt": "You are DeepSeek acting as a slow, meticulous mathematical proof auditor. Never optimize for brevity. Produce full research reports with explicit sections, formulas, lemma statements, failed proof paths, stress tests, and confidence calibration. If the user prompt contains a depth contract, treat it as a hard acceptance criterion.",
       "extra_payload": {
         "thinking": {
           "type": "enabled"
@@ -35,6 +36,25 @@
         "reasoning_effort": "max",
         "max_tokens": 32768
       },
+      "depth_contract": {
+        "reasoning": "Hard minimum for DeepSeek reasoning: write a full research report, not a compact memo. Target at least 3500 words, at least 12 substantive numbered sections, at least 8 explicit lemma/claim boxes, at least 5 failure modes, at least 4 concrete stress tests or numerical/algebraic checks, and a final prioritized next-action list. Do not compress multiple checks into one paragraph. If the draft is shorter than this, continue expanding before finalizing.",
+        "review": "Hard minimum for DeepSeek review: write a full referee report, not a summary. Target at least 2800 words, at least 10 substantive sections, separate detailed assessments of every other active agent, at least 6 explicit correction/verification items, at least 4 failure modes, at least 3 stress tests, a required score table with every other active agent, and a dedicated 'Confidence calibration and failure modes' section. Do not omit the score table.",
+        "judge": "Hard minimum for DeepSeek judge-like synthesis if used: include selected route, useful fragments by source, rejected or risky ideas, exact gaps, new lemma statements, counterexample checks, next-round tasks for every active agent, and confidence calibration."
+      },
+      "quality_gate": {
+        "reasoning": {
+          "min_words": 3000,
+          "min_headings": 12,
+          "must_contain": ["Confidence calibration and failure modes"]
+        },
+        "review": {
+          "min_words": 2200,
+          "min_headings": 8,
+          "must_contain": ["Score by agent", "Confidence calibration and failure modes"]
+        }
+      },
+      "retry_on_quality_gate": true,
+      "quality_gate_retries": 2,
       "instructions": "Use DeepSeek API thinking mode with maximal reasoning effort if available. Do not optimize for brevity. Take the role of a detailed mathematical referee and independent proof auditor. Focus on independently checking algebraic reductions, endpoint conventions, Poisson/B-process normalizations, Vaaler/Fejer residuals, Mellin-Perron alternatives, and claimed obstructions. Be skeptical of impossibility claims unless a proof is supplied. Minimum depth contract for reasoning: write at least 10 substantive sections, at least 6 explicit lemma/claim boxes, at least 4 failure modes, at least 3 concrete stress tests, and a final prioritized next-action list. For review and judge-like tasks, discuss each active agent's main contribution in separate paragraphs. Prefer precise parameter ranges and formulas over summaries. Include a dedicated section called 'Confidence calibration and failure modes'."
     }
   ]

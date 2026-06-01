@@ -152,6 +152,30 @@ def scrub_excluded_agent_text(text: str, exclusions: list[str]) -> str:
     return "\n\n".join(item for item in kept if item).strip()
 
 
+def scrub_stale_active_agent_constraints(text: str) -> str:
+    """Drop historical run-configuration sentences from state bundles.
+
+    The current active agent list is injected separately from config. Old judge
+    summaries often say "only two agents are active"; if left in the state
+    bundle, web models may treat those archived constraints as current.
+    """
+    if not text:
+        return text
+
+    stale_patterns = [
+        r"restricts this run to two active agents",
+        r"has only two agents",
+        r"only two active agents",
+        r"active-agent constraint",
+        r"inactive-agent references (?:are|should be)",
+        r"older references to inactive agents",
+    ]
+    stale_re = re.compile("|".join(stale_patterns), re.IGNORECASE)
+    paragraphs = re.split(r"\n\s*\n", text)
+    kept = [paragraph.strip() for paragraph in paragraphs if not stale_re.search(paragraph)]
+    return "\n\n".join(item for item in kept if item).strip()
+
+
 def prepare_prompt_context(
     *,
     protocol: str,
@@ -166,6 +190,7 @@ def prepare_prompt_context(
         protocol = scrub_excluded_agent_text(protocol, exclusions)
         state = scrub_excluded_agent_text(state, exclusions)
         human = scrub_excluded_agent_text(human, exclusions)
+    state = scrub_stale_active_agent_constraints(state)
     return protocol, state, human, active_agents_block(agents), exclusions
 
 
@@ -310,6 +335,15 @@ For review stages, include: valuable ideas from other agents, claims that look c
 For judge stages, include: selected route, useful fragments by source, rejected or risky ideas, exact gaps, new lemma statements, next-round tasks, and confidence."""
 
 
+def agent_depth_contract(agent: Agent, stage: str) -> str:
+    contracts = agent.raw.get("depth_contract", {})
+    if isinstance(contracts, dict):
+        text = str(contracts.get(stage, "")).strip()
+        if text:
+            return f"## Agent Depth Contract\n\n{text}"
+    return ""
+
+
 def reasoning_stage_guardrail() -> str:
     return """## Reasoning-Stage Guardrail
 
@@ -384,6 +418,8 @@ Follow the protocol and be strict about separating proved claims from conjectura
 
 {reasoning_stage_guardrail()}
 
+{agent_depth_contract(agent, "reasoning")}
+
 ## Problem
 
 {problem}
@@ -448,6 +484,8 @@ Review the other agents' Round {round_index} outputs. Your job is to identify us
 
 {review_stage_guardrail(round_index)}
 
+{agent_depth_contract(agent, "review")}
+
 ## Problem
 
 {problem}
@@ -467,6 +505,8 @@ Human instructions override prior AI suggestions when they are about research di
 {peer_text}
 
 {review_stage_guardrail(round_index)}
+
+{agent_depth_contract(agent, "review")}
 
 ## Required Output Schema
 
@@ -516,6 +556,8 @@ Synthesize Round {round_index}. Prefer precise, checkable progress over impressi
 {markdown_math_rule()}
 
 {research_quality_rubric()}
+
+{agent_depth_contract(judge, "judge")}
 
 ## Problem
 
@@ -575,7 +617,10 @@ def call_openai_compatible(agent: Agent, prompt: str, timeout: int) -> str:
         "messages": [
             {
                 "role": "system",
-                "content": "You are a rigorous mathematical research collaborator. Be explicit about gaps.",
+                "content": agent.raw.get(
+                    "system_prompt",
+                    "You are a rigorous mathematical research collaborator. Be explicit about gaps.",
+                ),
             },
             {"role": "user", "content": prompt},
         ],
@@ -604,6 +649,59 @@ def call_openai_compatible(agent: Agent, prompt: str, timeout: int) -> str:
         return data["choices"][0]["message"]["content"]
     except (KeyError, IndexError, TypeError) as exc:
         raise RuntimeError(f"Unexpected API response for {agent.id}: {data}") from exc
+
+
+def approximate_word_count(text: str) -> int:
+    return len(re.findall(r"[A-Za-z0-9_]+(?:[-'][A-Za-z0-9_]+)*|[\u4e00-\u9fff]", text))
+
+
+def quality_gate_issues(agent: Agent, stage: str, output: str) -> list[str]:
+    gates = agent.raw.get("quality_gate", {})
+    gate = gates.get(stage, {}) if isinstance(gates, dict) else {}
+    if not isinstance(gate, dict):
+        return []
+
+    issues: list[str] = []
+    min_words = int(gate.get("min_words", 0) or 0)
+    if min_words:
+        words = approximate_word_count(output)
+        if words < min_words:
+            issues.append(f"word count {words} is below required minimum {min_words}")
+
+    min_headings = int(gate.get("min_headings", 0) or 0)
+    if min_headings:
+        headings = sum(1 for line in output.splitlines() if line.lstrip().startswith("#"))
+        if headings < min_headings:
+            issues.append(f"heading count {headings} is below required minimum {min_headings}")
+
+    for required in gate.get("must_contain", []) or []:
+        needle = str(required)
+        if needle and needle.lower() not in output.lower():
+            issues.append(f"missing required phrase: {needle}")
+
+    return issues
+
+
+def env_flag(name: str) -> bool:
+    return os.environ.get(name, "").strip().lower() in {"1", "true", "yes", "on"}
+
+
+def expansion_prompt(prompt: str, previous_output: str, issues: list[str], stage: str) -> str:
+    issue_text = "\n".join(f"- {issue}" for issue in issues)
+    return f"""{prompt}
+
+## Automatic Quality Gate Failure
+
+Your previous {stage} response was not accepted:
+
+{issue_text}
+
+Return a full replacement answer, not an addendum. Preserve any correct mathematics from the previous answer, but expand it into the required depth, with explicit sections, lemma/claim boxes, failure modes, stress tests, score table when the stage is review, and confidence calibration.
+
+## Previous Response To Replace
+
+{previous_output}
+"""
 
 
 def usable_web_response(path: Path) -> str | None:
@@ -677,17 +775,33 @@ def run_agent(
 
     existing_output = usable_web_response(output_path)
     if existing_output and not existing_output.startswith("# Pending API Response"):
-        return existing_output
+        if stage == "reasoning" and env_flag("MATH_COLLAB_ACCEPT_EXISTING_REASONING"):
+            return existing_output
+        issues = quality_gate_issues(agent, stage, existing_output)
+        if not (agent.provider == "openai_compatible" and issues and agent.raw.get("retry_on_quality_gate", True)):
+            return existing_output
 
     if agent.provider == "openai_compatible":
         try:
             output = call_openai_compatible(agent, prompt, timeout)
+            issues = quality_gate_issues(agent, stage, output)
+            quality_retries = int(agent.raw.get("quality_gate_retries", 1) or 0)
+            attempts = 0
+            while issues and agent.raw.get("retry_on_quality_gate", True) and attempts < quality_retries:
+                attempts += 1
+                output = call_openai_compatible(
+                    agent,
+                    expansion_prompt(prompt, output, issues, stage),
+                    timeout,
+                )
+                issues = quality_gate_issues(agent, stage, output)
         except RuntimeError as exc:
             if skip_missing_api and "Missing API key" in str(exc):
-                write_text(
-                    output_path,
-                    f"# Pending API Response\n\n{exc}\n\nSet the required environment variable and rerun this round.\n",
-                )
+                if not existing_output:
+                    write_text(
+                        output_path,
+                        f"# Pending API Response\n\n{exc}\n\nSet the required environment variable and rerun this round.\n",
+                    )
                 return None
             raise
         write_text(output_path, output)
