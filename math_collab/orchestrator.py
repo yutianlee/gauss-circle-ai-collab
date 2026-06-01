@@ -21,6 +21,7 @@ STATE_FILES = [
     "state/gap_register.md",
     "state/best_proof_draft.md",
     "manifests/reading_packet.md",
+    "rounds/web-research-test/Li-Yang-arXiv-2308.14859v2.tex",
 ]
 
 HUMAN_FILES = [
