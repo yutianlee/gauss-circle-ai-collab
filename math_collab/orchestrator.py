@@ -95,6 +95,13 @@ Only these agents are active in this run:
 Do not mention, score, or assign tasks to inactive agents. If older state text refers to inactive agents, treat it as historical context and reassign any still-useful mathematical check to one of the active agents."""
 
 
+def public_audit_trail() -> str:
+    return (
+        "Public audit trail: https://github.com/yutianlee/gauss-circle-ai-collab. "
+        "Use the included prompt context as authoritative for this stage."
+    )
+
+
 def configured_exclusions(config: dict[str, Any]) -> list[str]:
     values = config.get("prompt_exclusions", [])
     if isinstance(values, str):
@@ -566,6 +573,8 @@ def build_reasoning_prompt(
 
 We are running a public GitHub based multi-AI mathematics research workflow.
 
+{public_audit_trail()}
+
 Follow the protocol and be strict about separating proved claims from conjectural ideas.
 
 ## Agent-Specific Instructions
@@ -641,6 +650,8 @@ def build_review_prompt(
     return f"""You are {agent.display_name}, acting as {agent.role}.
 
 Review the other agents' Round {round_index} outputs. Your job is to identify useful mathematics, hidden assumptions, likely errors, and a synthesis path.
+
+{public_audit_trail()}
 
 ## Agent-Specific Instructions
 
@@ -722,6 +733,8 @@ def build_judge_prompt(
     return f"""You are the judge agent: {judge.display_name}.
 
 Synthesize Round {round_index}. Prefer precise, checkable progress over impressive prose.
+
+{public_audit_trail()}
 
 ## Agent-Specific Instructions
 
