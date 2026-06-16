@@ -21,11 +21,11 @@ function Get-PromptPath([string] $Base, [string] $AgentId, [string] $Stage, [int
 
 $RoundName = Get-RoundName $Round
 $Base = "rounds\$RunId\$RoundName\prompts"
-$GptPrompt = Get-PromptPath $Base "gpt_pro_thinking" "review" $Round
-$GeminiPrompt = Get-PromptPath $Base "gemini_deep_think" "review" $Round
+$GptPrompt = Get-PromptPath $Base "A1" "review" $Round
+$GeminiPrompt = Get-PromptPath $Base "A2" "review" $Round
 
 Write-Host ""
-Write-Host "Step 1/2: ChatGPT Extended Pro review prompt"
+Write-Host "Step 1/2: A1 review prompt for ChatGPT Extended Pro"
 Write-Host "Focus the ChatGPT input box before the countdown ends."
 $GptArgs = @(
     "-NoProfile",
@@ -40,7 +40,7 @@ if ($Submit) {
 & powershell @GptArgs
 
 Write-Host ""
-Write-Host "Step 2/2: Gemini Pro Deep Think review prompt"
+Write-Host "Step 2/2: A2 review prompt for Gemini Pro Deep Think"
 Write-Host "Focus the Gemini input box before the countdown ends."
 $GeminiArgs = @(
     "-NoProfile",
@@ -56,5 +56,5 @@ if ($Submit) {
 
 Write-Host ""
 Write-Host "After both models finish, use Copy response and save to:"
-Write-Host "  handoff\$RunId\$RoundName\reviews\gpt_pro_thinking.md"
-Write-Host "  handoff\$RunId\$RoundName\reviews\gemini_deep_think.md"
+Write-Host "  handoff\$RunId\$RoundName\reviews\A1.md"
+Write-Host "  handoff\$RunId\$RoundName\reviews\A2.md"

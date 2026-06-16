@@ -2,23 +2,22 @@
 
 ## Agents
 
-The default four-agent panel is:
+The default Gauss circle panel has exactly three active agents:
 
-1. `gpt_pro_thinking`: broad strategic reasoning through the ChatGPT web UI.
-2. `gemini_deep_think`: alternate high-level reasoning through the Gemini web UI.
-3. `qwen_api`: API-based algebraic and analytic exploration.
-4. `deepseek_api`: API-based proof criticism and counterexample search.
+1. `A1`: ChatGPT Extended Pro through the web UI. Broad strategist, literature scout, synthesis writer, and default judge.
+2. `A2`: Gemini Pro Deep Think through the web UI. Independent alternative strategist, obstruction finder, and conservative referee.
+3. `A3`: Deepseek V4 Pro through the API. Automatic proof auditor, algebra checker, exponential-sum normalization checker, and stress-test planner.
 
-Any agent can be replaced as long as it follows the same output schema.
+Do not mention, score, or assign tasks to `A4`, Qwen, or any inactive KKT agent. Older state text may contain historical agent IDs such as `gpt_pro_thinking`, `gemini_deep_think`, or `deepseek_api`; treat them as aliases for A1, A2, and A3 only when reconstructing prior contributions.
 
 ## Round Structure
 
-Rounds use a strict barrier synchronization rule:
+Rounds use strict barrier synchronization:
 
-- Stage B cannot begin until every agent has completed Stage A.
-- Stage C cannot begin until every agent has completed Stage B.
-- Stage D cannot begin until the judge synthesis is complete.
-- The next round cannot begin until Stage D has been committed and pushed.
+- Stage B cannot begin until A1, A2, and A3 have completed Stage A.
+- Stage C cannot begin until A1, A2, and A3 have completed Stage B.
+- Stage D cannot begin until the A1 judge synthesis is complete.
+- The next round cannot begin until Stage D has updated the compact repo state.
 
 ### Stage A: Independent Reasoning
 
@@ -29,54 +28,69 @@ Each agent receives:
 - the current lemma bank,
 - the current gap register,
 - the prior judge decision if available,
+- the agent-specific judge prompt if available,
+- the human steering bundle,
 - the agent-specific task.
 
 The agent must output:
 
 ```text
-Summary:
-Main claim or direction:
-Detailed reasoning:
-Dependencies:
-Potential gaps:
-Counterexample or obstruction search:
-Useful lemmas:
-What should be tested next:
-Confidence:
+## Summary
+## Main claim or direction
+## Detailed reasoning
+## Theorem-dependency audit
+## Hidden assumptions and potential gaps
+## Counterexample or obstruction search
+## Verification
+## Divergent alternatives and 20% exploration
+## Useful lemmas
+## What should be tested next
+## Confidence
 ```
 
 ### Stage B: Cross Review
 
-Each agent reviews all other agents' Stage A outputs.
+Each agent reviews all other active agents' Stage A outputs.
 
 The review must output:
 
 ```text
-Most valuable input from others:
-Claims that look correct:
-Claims that need proof:
-Possible errors or hidden assumptions:
-Suggested synthesis:
-Score by agent:
-Next-round recommendation:
+## Most valuable input from others
+## Claims that look correct
+## Claims that need proof
+## Possible errors or hidden assumptions
+## Suggested synthesis
+## Research strategy
+## Verification
+## Score by agent
+| Agent reviewed | Score (0-10) | Main reason | Must verify next |
+|---|---:|---|---|
+## Next-round recommendation
+## Confidence
 ```
 
 ### Stage C: Judge Synthesis
 
-The judge reads all Stage A outputs and Stage B reviews.
+A1 reads all Stage A outputs and Stage B reviews, then writes the judge synthesis.
 
 The judge must output:
 
 ```text
-Selected main route:
-Useful fragments by source:
-Rejected or risky ideas:
-Known gaps:
-New lemmas to add:
-Counterexample checks to run:
-Next round instructions:
-Confidence:
+## Selected main route
+## Useful fragments by source
+## Rejected or risky ideas
+## Known gaps
+## New lemmas to add
+## Counterexample checks to run
+## Research strategy adjustment
+## Next-round prompts by agent
+### For A1
+### For A2
+### For A3
+## Confidence
 ```
+
+The `For A1`, `For A2`, and `For A3` blocks are important: the orchestrator extracts them and injects the matching block into the next round's Stage A prompt.
 
 ### Stage D: State Update
 
@@ -86,13 +100,13 @@ The orchestrator updates:
 - `state/lemma_bank.md`: proposed, proved, and rejected lemmas.
 - `state/gap_register.md`: known gaps and possible failure points.
 - `state/best_proof_draft.md`: best current proof skeleton.
-- `manifests/reading_packet.md`: the compact packet for the next round.
+- `manifests/reading_packet.md`: compact packet for the next round.
 
 ## Public Repo Rule
 
 The public GitHub repo is the permanent log. Every completed round should be committed and pushed.
 
-Agents should normally read `manifests/reading_packet.md`, not the full repo. Full round files remain available for audit and later reconstruction.
+Agents should normally read `manifests/reading_packet.md`, not the full repo. Full round files remain available for audit and reconstruction.
 
 ## Human Intervention Rule
 
@@ -116,6 +130,7 @@ Agents must explicitly acknowledge relevant human interventions in their next ou
 - Do not mark a claim as proved unless the proof is explicit.
 - Preserve failed attempts; they help avoid repeated false starts.
 - When a proof step uses an external theorem, name the theorem and state the needed hypotheses.
-- Require counterexample search for any new lemma.
+- Require counterexample or stress-test search for any new lemma.
 - Prefer small checkable lemmas over broad vague routes.
 - Keep notation stable across rounds.
+- Do not claim a new Gauss circle exponent has been proved unless every reduction, smoothing or unsmoothing step, endpoint convention, and external theorem hypothesis is supplied.

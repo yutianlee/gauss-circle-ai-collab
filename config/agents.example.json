@@ -1,39 +1,33 @@
 {
-  "judge_agent": "deepseek_api",
+  "judge_agent": "A1",
+  "prompt_exclusions": ["qwen", "qwen_api", "A4"],
   "agents": [
     {
-      "id": "gpt_pro_thinking",
-      "display_name": "GPT Pro Thinking",
+      "id": "A1",
+      "display_name": "ChatGPT Extended Pro",
       "provider": "web_manual",
-      "role": "broad strategist and proof synthesizer",
-      "web_url": "https://chatgpt.com/"
+      "role": "broad strategist, literature scout, proof synthesizer, and default judge",
+      "web_url": "https://chatgpt.com/",
+      "legacy_ids": ["gpt_pro_thinking"]
     },
     {
-      "id": "gemini_deep_think",
-      "display_name": "Gemini Deep Think",
+      "id": "A2",
+      "display_name": "Gemini Pro Deep Think",
       "provider": "web_manual",
-      "role": "independent alternative strategist and obstacle finder",
-      "web_url": "https://gemini.google.com/"
+      "role": "independent alternative strategist, obstruction finder, and referee-style reviewer",
+      "web_url": "https://gemini.google.com/",
+      "legacy_ids": ["gemini_deep_think"]
     },
     {
-      "id": "qwen_api",
-      "display_name": "Qwen API",
+      "id": "A3",
+      "display_name": "A3 Deepseek V4 Pro",
       "provider": "openai_compatible",
-      "role": "technical lemma generator and computation-aware analyst",
-      "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
-      "api_key_env": "QWEN_API_KEY",
-      "model_env": "QWEN_MODEL",
-      "default_model": "qwen-plus"
-    },
-    {
-      "id": "deepseek_api",
-      "display_name": "DeepSeek API",
-      "provider": "openai_compatible",
-      "role": "proof critic, gap finder, and judge",
+      "role": "API-based proof auditor, algebra checker, and stress-test planner",
       "endpoint": "https://api.deepseek.com/chat/completions",
       "api_key_env": "DEEPSEEK_API_KEY",
       "model_env": "DEEPSEEK_MODEL",
-      "default_model": "deepseek-reasoner"
+      "default_model": "deepseek-v4-pro",
+      "legacy_ids": ["deepseek_api"]
     }
   ]
 }

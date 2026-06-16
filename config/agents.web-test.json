@@ -1,39 +1,53 @@
 {
-  "judge_agent": "gpt_pro_thinking",
-  "prompt_exclusions": ["qwen"],
+  "judge_agent": "A1",
+  "prompt_exclusions": ["qwen", "qwen_api", "A4"],
   "agents": [
     {
-      "id": "gpt_pro_thinking",
-      "display_name": "GPT Pro Thinking",
+      "id": "A1",
+      "display_name": "ChatGPT Extended Pro",
       "provider": "web_manual",
-      "role": "broad strategist, proof synthesizer, and test judge",
+      "role": "broad strategist, literature scout, proof synthesizer, and default judge",
       "web_url": "https://chatgpt.com/",
       "copy_response_mode": "raw_markdown_fence",
-      "instructions": "Use ChatGPT Extended Pro. Give detailed, research-mode answers with precise lemma statements, dependencies, proof gaps, and next actions. When acting as judge, be concise enough to be usable but do not omit mathematical substance."
-    },
-    {
-      "id": "gemini_deep_think",
-      "display_name": "Gemini Deep Think",
-      "provider": "web_manual",
-      "role": "independent alternative strategist and obstacle finder",
-      "web_url": "https://gemini.google.com/",
+      "legacy_ids": ["gpt_pro_thinking"],
+      "instructions": "Use ChatGPT Extended Pro. Act as a research strategist and, when judging, as the conservative synthesis writer. For the Gauss circle problem, prioritize exact normalizations, Poisson/Bessel formulas, hyperbola decompositions, Vaaler/Fejer residuals, exponent-pair or Bombieri-Iwaniec hypotheses, smoothing/unsmoothing losses, and literature status. When web search is available, cite exact theorem statements, authors, publication data, and URLs/DOIs/arXiv links. If web search is unavailable, say so and do not invent citations. In reasoning, spend about 80% on the judge-assigned main route and about 20% on serious alternative routes or obstruction searches. In review, assess A2 and A3 separately and recommend research-strategy adjustments. As judge, write concrete next-round prompts for A1, A2, and A3.",
       "depth_contract": {
-        "reasoning": "Hard minimum for Gemini reasoning: use Pro Deep Think as a long-form mathematical referee, not a summary writer. Target at least 3000 words, at least 10 substantive numbered sections, at least 6 explicit lemma/claim boxes, at least 5 theorem-hypothesis checks, at least 4 failure modes, at least 3 concrete stress tests, and a final prioritized next-action list. For literature audits such as Li--Yang, include a theorem-hypothesis compatibility table with columns: source label, source hypothesis, our H5/H5r object, match status, missing proof. If the first draft is shorter than this, continue expanding before finalizing.",
-        "review": "Hard minimum for Gemini review: write a full referee report, not a compact verdict. Target at least 2600 words, at least 9 substantive sections, separate detailed assessments of every other active agent, at least 6 claim-by-claim corrections or verification items, at least 4 failure modes, at least 3 stress tests, a required score table with every other active agent, and a dedicated 'Confidence calibration and failure modes' section. Do not omit the score table or collapse major claims into one bullet list.",
-        "judge": "If Gemini is ever used for judge-like synthesis, include selected route, useful fragments by source, rejected/risky ideas, exact gaps, new lemma statements, counterexample checks, next-round tasks for every active agent, and confidence calibration."
-      },
-      "instructions": "Use Gemini Pro Deep Think. Deliberately think longer and answer in substantially more detail than a normal response. Do not optimize for brevity. Match the depth expected from a mathematical referee report: give precise statements, parameter ranges, dependencies, and explicit gap audits. Avoid overconfident language. Do not say 'prove', 'formally prove', 'strictly requires', 'must abandon', or similar unless the proof is actually supplied in the response. Prefer calibrated phrases such as 'suggests', 'would require showing', 'appears to reduce to', 'under the following hypotheses', and 'confidence: low/moderate/high with reasons'. For every strong claim, include at least one missing hypothesis or possible failure mode. Include a dedicated section called 'Confidence calibration and failure modes'. Minimum depth contract for research-mode reasoning: produce at least 8 substantive sections, at least 4 explicit lemma/claim boxes, at least 3 possible failure modes, and at least 2 concrete counterexample or stress-test checks. If your first draft is short, continue expanding before finalizing. When reviewing, include a detailed paragraph for each major claim rather than only a bullet verdict."
+        "reasoning": "Write a deep long-form reasoning attempt, not a summary. Include precise claim statements, parameter ranges, derivations, gap labels, falsification tests, and a 20% section for divergent alternatives such as a different decomposition, a dual formulation, a sign-preserving spacing statistic, a Mellin-Perron route, a smoothed cutoff route, or a computational certificate. If web search is available, include a literature-check section with exact theorem statements and sources; if unavailable, state that limitation clearly.",
+        "review": "Write a referee-style report on A2 and A3. Include a score table, hidden assumptions, exact claims needing proof, concrete verification tasks, and a research-strategy adjustment recommendation. Use available web search to verify cited external theorems; if search is unavailable, mark citation status as unverified rather than inventing references.",
+        "judge": "Write a judge synthesis with selected route, exact gaps, rejected/risky ideas, new lemma statements, counterexample checks, research strategy adjustment, and next-round prompts for A1, A2, and A3. Each next-round prompt should include exact objectives, required derivations, verification tasks, and one exploratory allocation when useful."
+      }
     },
     {
-      "id": "deepseek_api",
-      "display_name": "DeepSeek API",
+      "id": "A2",
+      "display_name": "Gemini Pro Deep Think",
+      "provider": "web_manual",
+      "role": "independent alternative strategist, obstruction finder, and referee-style reviewer",
+      "web_url": "https://gemini.google.com/",
+      "copy_response_mode": "raw_markdown_fence",
+      "legacy_ids": ["gemini_deep_think"],
+      "stage_modes": {
+        "reasoning": "Calibrated low-temperature reasoning mode: behave as a conservative mathematical referee while still producing a full long-form reasoning attempt. Optimize for exact formulas, explicit hypotheses, narrow provisional claims, obstruction checks, and reproducible verification tasks. Keep novelty controlled and rhetoric low. Do not invent custom status labels. Do not pad the answer with repeated synonyms, generic process narration, or mechanically inflated sentences. Every paragraph must contain a concrete mathematical object, formula, named theorem/hypothesis, boundary condition, counterexample mechanism, or executable verification step. Before finalizing, delete low-information filler paragraphs and perform a rewrite pass that removes high-certainty, route-closing, finality/permanence, dramatic, or totalizing wording, then confirm `token-family scan: passed` in the calibration section only if the scan is actually true for the answer body.",
+        "review": "Low-temperature review mode: behave as a low-variance conservative referee. Optimize for exact formula checking, explicit assumptions, narrow provisional claims, and reproducible verification tasks. Do not optimize for novelty, rhetorical force, broad synthesis, or route advocacy. When multiple phrasings are possible, choose the least conclusive neutral phrasing. Keep creativity low and calibration high. Prefer boring exactness over memorable language. Low-temperature mode controls style only; it does not reduce the need for concrete evidence. If a draft is below the hard minimum, expand with neutral formula-level checks, theorem-hypothesis audits, boundary-case verifications, or explicit falsification tests, not with rhetoric. Before finalizing, perform a visible approximate word-count self-check. Target 5000-7000 words, with hard minimum 4500 words. If token-family rewriting drops the draft below 4500 words, add neutral mathematical content using additional theorem-hypothesis audit, boundary-case verification, symbolic stress tests, or proof-draft-ready formula audit. Before finalizing, perform a rewrite pass that removes high-certainty, route-closing, finality/permanence, and dramatic wording, then confirm `token-family scan: passed` in the calibration section only if the scan is actually true for the answer body."
+      },
+      "depth_contract": {
+        "reasoning": "Standing A2 reasoning standard: use Gemini Pro Deep Think as a conservative mathematical referee, not a summary writer. Target 5500-7500 words; hard minimum 5000 words. If the first draft is shorter, continue expanding before finalizing with concrete mathematics only. Use at least 14 top-level `##` sections. Include a claim ledger with at least 8 entries, a theorem-dependency audit with at least 6 named dependencies or missing theorem statements, an unsupported-closure audit, at least 5 explicit claim/lemma boxes, at least 5 failure modes or hidden assumptions, at least 4 concrete stress tests or numerical/symbolic verification plans, at least 4 exact formulas or kernels that could be copied into a future proof draft, at least 2 toy-model computations or finite-parameter sanity checks, a visible approximate word-count self-check, and a visible pre-submit calibration check. Every central section must contain formulas, named objects, hypotheses, and at least one explicit test or failure criterion. Every paragraph should add a concrete mathematical object, formula, theorem/hypothesis, boundary condition, counterexample mechanism, or executable verification step; delete repetitive process narration or mechanically inflated text. For the five detailed mathematical tasks assigned by the judge, each detailed reasoning section should be at least 500 words. Include a divergent-alternatives section tied to the official bottleneck, at least 700 words. Label central claims exactly as [PROVED], [DERIVED-UNDER-ASSUMPTIONS], [HEURISTIC], [CONJECTURED], [ASSUMED], or [LIKELY-FALSE]. Use [PROVED] only when the answer supplies exact hypotheses, definitions, and a complete proof. Do not invent custom status labels. Do not use numeric confidence above 0.89, percentage-allocation rhetoric, totalizing closure claims, dramatic verdict words, finality/permanence language, lock-in route language, or quoted/listed prohibited rhetoric examples. Before finalizing, perform a real token-family scan and report only `token-family scan: passed` without listing scanned roots. If web search is available, cite precise theorem statements and sources; if unavailable, explicitly say so and do not invent citations.",
+        "review": "Standing A2 review standard: write a deep Stage B referee report, not a compact verdict. Target 5000-7000 words; hard minimum 4500 words. If the first draft is shorter, continue expanding before finalizing with concrete mathematics only. Review every other active agent separately and in detail. Include at least 12 top-level `##` sections, a claim ledger with at least 8 reviewed claims, a theorem-dependency audit with at least 6 named dependencies or missing theorem statements, an unsupported-closure/overclaim audit, at least 4 explicit correction or verification items, at least 4 hidden assumptions or failure modes, at least 3 concrete stress tests or numerical/symbolic checks, a required score table for every other active agent, an explicit `## Confidence` section, and a visible pre-submit calibration check. For each reviewed agent, identify strongest contribution, exact assumptions, claims that are proved versus derived-under-assumptions versus heuristic, likely false or underspecified statements, missing theorem hypotheses, what would falsify the contribution, and one concrete next verification task. Every major criticism must quote or restate the exact mathematical object being criticized, then give a formula-level reason. Do not reward elegant but uncertified asymptotics, spacing claims, signed-trace claims, Mellin-Perron claims, or Fourier-tail claims unless constants, hypotheses, boundary cases, and error terms are explicit. Use neutral referee language; do not quote, paraphrase, list, or mention prohibited rhetoric examples, even when saying they were avoided. Do not use numeric confidence above 0.89, percentage-allocation rhetoric, totalizing closure claims, dramatic verdict words, finality/permanence language, or lock-in route language. Before finalizing, mechanically replace finality/permanence/lock-in wording with provisional audit wording, then run a hard token-family scan and report only `token-family scan: passed` without listing the scanned roots. End with research-strategy implications and next-round recommendations.",
+        "judge": "If used as judge, include selected route, useful fragments by source, rejected/risky ideas, exact gaps, new lemma statements, counterexample checks, literature-status checks, and next-round prompts for every active agent."
+      },
+      "instructions": "Use Gemini Pro Deep Think. Think slowly and answer in a detailed referee style. The A2 standing standard applies to both reasoning and review: long-form, concrete, formula-level, theorem-hypothesis-aware, and calibrated. Be skeptical of any claimed proof of the Gauss circle conjectural exponent unless all smoothing, truncation, endpoint, and theorem-hypothesis details are explicit. Do not invent transformed identities, monotonicity claims, constants, citations, or counterexamples. Derive them in-line, mark them as conjectural, verify them by web/literature search when available, or request a symbolic/numeric check. Avoid overconfident closure language. Before final submission, perform a visible calibration check for unsupported theorem claims, excessive confidence, and missing hypotheses."
+    },
+    {
+      "id": "A3",
+      "display_name": "A3 Deepseek V4 Pro",
       "provider": "openai_compatible",
-      "role": "API-based algebra checker, obstruction auditor, and alternative-route stress tester",
+      "role": "API-based proof auditor, algebra checker, and stress-test planner",
       "endpoint": "https://api.deepseek.com/chat/completions",
       "api_key_env": "DEEPSEEK_API_KEY",
       "model_env": "DEEPSEEK_MODEL",
       "default_model": "deepseek-v4-pro",
-      "system_prompt": "You are DeepSeek acting as a slow, meticulous mathematical proof auditor. Never optimize for brevity. Produce full research reports with explicit sections, formulas, lemma statements, failed proof paths, stress tests, and confidence calibration. If the user prompt contains a depth contract, treat it as a hard acceptance criterion.",
+      "temperature": 0.1,
+      "legacy_ids": ["deepseek_api"],
+      "system_prompt": "You are A3, Deepseek V4 Pro, acting as a slow, meticulous mathematical proof auditor for the Gauss circle problem. Think deeply before answering, but output only the final auditable research report, not a private chain-of-thought transcript. Your comparative advantage is exact algebra checking, theorem-hypothesis auditing, normalization verification, exponential-sum stress testing, and finding the precise line where a proof attempt can fail. You do not have web-search tools in this pipeline, so do not invent citations or claim to have checked external literature. Use only theorem statements, references, and source excerpts provided in the prompt/state; if a needed theorem or citation is missing, state the exact theorem needed and assign it to A1/A2 or the human for literature search.",
       "extra_payload": {
         "thinking": {
           "type": "enabled"
@@ -42,25 +56,24 @@
         "max_tokens": 32768
       },
       "depth_contract": {
-        "reasoning": "Hard minimum for DeepSeek reasoning: write a full research report, not a compact memo. Target at least 3500 words, at least 12 substantive numbered sections, at least 8 explicit lemma/claim boxes, at least 5 failure modes, at least 4 concrete stress tests or numerical/algebraic checks, and a final prioritized next-action list. Do not compress multiple checks into one paragraph. If the draft is shorter than this, continue expanding before finalizing.",
-        "review": "Hard minimum for DeepSeek review: write a full referee report, not a summary. Target at least 2800 words, at least 10 substantive sections, separate detailed assessments of every other active agent, at least 6 explicit correction/verification items, at least 4 failure modes, at least 3 stress tests, a required score table with every other active agent, and a dedicated 'Confidence calibration and failure modes' section. Do not omit the score table.",
-        "judge": "Hard minimum for DeepSeek judge-like synthesis if used: include selected route, useful fragments by source, rejected or risky ideas, exact gaps, new lemma statements, counterexample checks, next-round tasks for every active agent, and confidence calibration."
+        "reasoning": "Write a rigorous algebra-audit research memo of at least 3000 words. Include exact formula checks, theorem-dependency checks, parameter ranges, hidden assumptions, failure modes, at least one reproducible symbolic or numeric check, divergent alternatives, and confidence calibration. Separate proved statements from conjectural or derived-under-assumptions claims. Do not invent citations; include a theorem-dependency list with exact missing theorem statements for A1/A2 literature search.",
+        "review": "Write a compact but deep Stage B referee report of at least 1700 words. Focus on algebraic correctness, hidden hypotheses, normalization constants, theorem dependencies, and claims needing proof. For each reviewed peer, identify one strongest contribution, one most dangerous gap, and one concrete verification task. Include a score table and research-strategy adjustment. Treat uncited external theorem claims as unverified unless the prompt supplied a source; assign missing source checks to A1/A2."
       },
       "quality_gate": {
         "reasoning": {
           "min_words": 3000,
-          "min_headings": 12,
-          "must_contain": ["Confidence calibration and failure modes"]
+          "min_headings": 10,
+          "must_contain": ["Summary", "Theorem-dependency", "Hidden assumptions", "Counterexample", "Verification", "Useful lemmas", "What should be tested next", "Confidence"]
         },
         "review": {
-          "min_words": 2200,
+          "min_words": 1700,
           "min_headings": 8,
-          "must_contain": ["Score by agent", "Confidence calibration and failure modes"]
+          "must_contain": ["Claims that look correct", "Claims that need proof", "Possible errors", "Suggested synthesis", "Research strategy", "Verification", "Score by agent", "Confidence"]
         }
       },
       "retry_on_quality_gate": true,
       "quality_gate_retries": 2,
-      "instructions": "Use DeepSeek API thinking mode with maximal reasoning effort if available. Do not optimize for brevity. Take the role of a detailed mathematical referee and independent proof auditor. Focus on independently checking algebraic reductions, endpoint conventions, Poisson/B-process normalizations, Vaaler/Fejer residuals, Mellin-Perron alternatives, and claimed obstructions. Be skeptical of impossibility claims unless a proof is supplied. Minimum depth contract for reasoning: write at least 10 substantive sections, at least 6 explicit lemma/claim boxes, at least 4 failure modes, at least 3 concrete stress tests, and a final prioritized next-action list. For review and judge-like tasks, discuss each active agent's main contribution in separate paragraphs. Prefer precise parameter ranges and formulas over summaries. Include a dedicated section called 'Confidence calibration and failure modes'."
+      "instructions": "Check algebraic reductions, Poisson/Bessel normalizations, hyperbola decompositions, endpoint conventions, Vaaler/Fejer residuals, Li-Yang/Bombieri-Iwaniec compatibility claims, Mellin-Perron alternatives, and claimed obstructions. Prefer precise parameter ranges and falsifiable lemmas over broad summaries. In reasoning, reserve about 20% of the answer for divergent alternatives or obstruction searches. In review, recommend research-strategy adjustments based on which claims survive verification. When a proof step is plausible but not certified, say exactly which formula, theorem hypothesis, citation, or numerical check would certify it."
     }
   ]
 }

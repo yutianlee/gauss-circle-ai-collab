@@ -40,6 +40,9 @@ function Test-RealResponse([string] $Path) {
     if ($Trimmed.StartsWith($Marker) -and $Trimmed.Substring($Marker.Length).Trim().Length -eq 0) {
         return $false
     }
+    if ($Trimmed.StartsWith("# Pending API Response")) {
+        return $false
+    }
     return $true
 }
 
@@ -64,45 +67,68 @@ function Normalize-IfPresent([string[]] $Paths) {
 function Show-NeededFiles([int] $Round) {
     $RoundName = Get-RoundName $Round
     $Base = "handoff\$RunId\$RoundName"
+    $ArchiveBase = "rounds\$RunId\$RoundName"
     $PromptBase = "rounds\$RunId\$RoundName\prompts"
 
-    $ResponseFiles = @(
-        "$Base\responses\gpt_pro_thinking.md",
-        "$Base\responses\gemini_deep_think.md"
+    $WebResponseFiles = @(
+        "$Base\responses\A1.md",
+        "$Base\responses\A2.md"
     )
-    $ReviewFiles = @(
-        "$Base\reviews\gpt_pro_thinking.md",
-        "$Base\reviews\gemini_deep_think.md"
+    $ApiResponseFiles = @(
+        "$ArchiveBase\responses\A3-$($Round.ToString('000')).md"
     )
-    $JudgeFile = "$Base\judge\judge.md"
+    $WebReviewFiles = @(
+        "$Base\reviews\A1.md",
+        "$Base\reviews\A2.md"
+    )
+    $ApiReviewFiles = @(
+        "$ArchiveBase\reviews\A3.md"
+    )
+    $JudgeFile = "$Base\judge\judge-$($Round.ToString('000')).md"
 
-    if (($ResponseFiles | Where-Object { -not (Test-RealResponse $_) }).Count -gt 0) {
+    if (($WebResponseFiles | Where-Object { -not (Test-RealResponse $_) }).Count -gt 0) {
         Write-Host ""
         Write-Host "Round $RoundName is waiting for reasoning responses."
-        Write-Host "Paste these prompts into the fixed web conversations:"
-        Write-Host "  $(Get-PromptPath $PromptBase 'gpt_pro_thinking_reasoning' $Round)"
-        Write-Host "  $(Get-PromptPath $PromptBase 'gemini_deep_think_reasoning' $Round)"
+        Write-Host "Paste these prompts into the fixed A1/A2 web conversations:"
+        Write-Host "  $(Get-PromptPath $PromptBase 'A1_reasoning' $Round)"
+        Write-Host "  $(Get-PromptPath $PromptBase 'A2_reasoning' $Round)"
         Write-Host "Then use Copy response and save Markdown to:"
-        $ResponseFiles | ForEach-Object { Write-Host "  $_" }
+        $WebResponseFiles | ForEach-Object { Write-Host "  $_" }
         return "responses"
     }
 
-    Normalize-IfPresent $ResponseFiles
+    Normalize-IfPresent $WebResponseFiles
     Invoke-Orchestrator $Round
 
-    if (($ReviewFiles | Where-Object { -not (Test-RealResponse $_) }).Count -gt 0) {
+    if (($ApiResponseFiles | Where-Object { -not (Test-RealResponse $_) }).Count -gt 0) {
+        Write-Host ""
+        Write-Host "Round $RoundName is waiting for A3 DeepSeek API reasoning."
+        Write-Host "Set DEEPSEEK_API_KEY, then rerun or let the watcher poll:"
+        $ApiResponseFiles | ForEach-Object { Write-Host "  $_" }
+        return "api-responses"
+    }
+
+    if (($WebReviewFiles | Where-Object { -not (Test-RealResponse $_) }).Count -gt 0) {
         Write-Host ""
         Write-Host "Round $RoundName is waiting for cross reviews."
         Write-Host "Paste these review prompts:"
-        Write-Host "  $(Get-PromptPath $PromptBase 'gpt_pro_thinking_review' $Round)"
-        Write-Host "  $(Get-PromptPath $PromptBase 'gemini_deep_think_review' $Round)"
+        Write-Host "  $(Get-PromptPath $PromptBase 'A1_review' $Round)"
+        Write-Host "  $(Get-PromptPath $PromptBase 'A2_review' $Round)"
         Write-Host "Then use Copy response and save Markdown to:"
-        $ReviewFiles | ForEach-Object { Write-Host "  $_" }
+        $WebReviewFiles | ForEach-Object { Write-Host "  $_" }
         return "reviews"
     }
 
-    Normalize-IfPresent $ReviewFiles
+    Normalize-IfPresent $WebReviewFiles
     Invoke-Orchestrator $Round
+
+    if (($ApiReviewFiles | Where-Object { -not (Test-RealResponse $_) }).Count -gt 0) {
+        Write-Host ""
+        Write-Host "Round $RoundName is waiting for A3 DeepSeek API review."
+        Write-Host "Set DEEPSEEK_API_KEY, then rerun or let the watcher poll:"
+        $ApiReviewFiles | ForEach-Object { Write-Host "  $_" }
+        return "api-reviews"
+    }
 
     if (-not (Test-RealResponse $JudgeFile)) {
         Write-Host ""

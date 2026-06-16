@@ -1,36 +1,57 @@
-# Multi-AI Math Research Orchestrator
+# Gauss Circle AI Collaboration
 
-This repo is designed to use a public GitHub repository as the shared memory for a multi-AI mathematics research workflow.
+This repository is a public-memory workflow for multi-AI research on the Gauss circle problem.
 
-The intended setup is:
+It is adapted from the KKT workflow in `yutianlee/kkt-ai-collab`, but this repo uses exactly three agents:
 
-- **GPT Pro Thinking** and **Gemini Deep Think** through their web interfaces.
-- **Qwen** and **DeepSeek** through OpenAI-compatible APIs.
-- **GitHub** as the permanent, public research log: every round is committed and pushed.
+- `A1`: ChatGPT Extended Pro through the web UI.
+- `A2`: Gemini Pro Deep Think through the web UI.
+- `A3`: Deepseek V4 Pro through the API.
 
-The first target problem in this repo is the Gauss circle problem.
+There is no `A4` and no Qwen agent in this Gauss workflow.
 
-## Core Idea
+## Target
 
-Each round follows a fixed protocol:
+Let
 
-1. Every AI produces an independent strategy or reasoning attempt.
-2. Every AI reviews the other agents' outputs.
-3. A judge agent summarizes the useful parts, gaps, and next direction.
-4. The repo state is updated:
-   - `state/current_state.md`
-   - `state/lemma_bank.md`
-   - `state/gap_register.md`
-   - `state/best_proof_draft.md`
-   - `manifests/reading_packet.md`
-5. The round is committed and pushed to GitHub.
-6. The next round gives each AI only the compact reading packet plus selected prior outputs, not the whole repo.
+```text
+N(R) = #{(m,n) in Z^2 : m^2 + n^2 <= R^2}.
+```
 
-This keeps the public repo complete while keeping each AI's working context small.
+The Gauss circle problem asks for the best possible exponent in
 
-Rounds are synchronized by default. The orchestrator will not start reviews until all four reasoning responses are present, will not start judging until all four reviews are present, and will not update state until judge synthesis is complete.
+```text
+N(R) = pi R^2 + E(R).
+```
 
-## Repo Layout
+The conjectural bound is
+
+```text
+E(R) = O_epsilon(R^{1/2 + epsilon})
+```
+
+for every epsilon > 0. The workflow is not allowed to claim a solution without a complete proof; its job is to isolate precise reductions, lemmas, obstructions, citations, and verification tasks.
+
+## Agent Roles
+
+- `A1` is the broad strategist, literature scout, synthesis writer, and default judge. Use ChatGPT Extended Pro or the strongest available long-reasoning mode.
+- `A2` is the independent referee and obstacle finder. Use Gemini Pro Deep Think and ask for long, conservative, theorem-hypothesis-aware reports.
+- `A3` is the automatic API proof auditor. Use Deepseek V4 Pro with maximum available reasoning effort for algebra checks, exponential-sum normalization audits, obstruction searches, and reproducible verification plans.
+
+A1 and A2 are semi-manual: paste prompts into persistent web conversations and save copied Markdown responses into `handoff/`. A3 is automatic when `DEEPSEEK_API_KEY` is configured.
+
+## Round Protocol
+
+Each round uses these synchronized stages:
+
+1. Stage A: every active agent writes an independent reasoning attempt.
+2. Stage B: every active agent reviews the other agents' Stage A outputs.
+3. Stage C: A1 judges the round and writes the next-round prompts for A1, A2, and A3.
+4. Stage D: the repo state and compact reading packet are updated.
+
+The round barrier is strict: reviews do not start until all three reasoning responses are present; judging does not start until all three reviews are present; state update does not happen until judge synthesis is present.
+
+## Layout
 
 ```text
 problems/
@@ -38,8 +59,11 @@ problems/
 protocol.md
 config/
   agents.example.json
+  agents.web-test.json
 math_collab/
   orchestrator.py
+  human.py
+  normalize_markdown.py
 state/
   current_state.md
   lemma_bank.md
@@ -54,24 +78,61 @@ human/
 manifests/
   reading_packet.md
 rounds/
-  round_001/
-    prompts/
-    responses/
-    reviews/
-    judge/
+  <run-id>/
 handoff/
-  ...
+  <run-id>/
 ```
 
-`rounds/` is the public archive. `handoff/` is ignored because it contains temporary web prompts and local copy-paste files.
+`rounds/` is the public archive. `handoff/` is ignored by Git and is used for temporary web prompts and copied web responses.
 
-## Human Intervention
+## Quick Start
 
-Human intervention is first-class. Edit these files any time before starting the next round:
+Smoke test the file layout without external API calls:
+
+```powershell
+python -m math_collab.orchestrator --config config/agents.example.json --problem problems/gauss_circle.md --rounds 1 --dry-run --run-id smoke --no-state-update
+```
+
+Configure DeepSeek for the automatic A3 agent:
+
+```powershell
+$env:DEEPSEEK_API_KEY="sk-..."
+$env:DEEPSEEK_MODEL="deepseek-v4-pro"
+```
+
+Or copy `.env.example` to `.env`; the orchestrator loads `.env` automatically.
+
+Generate or advance a mixed manual-web/API research round:
+
+```powershell
+python -m math_collab.orchestrator --config config/agents.web-test.json --problem problems/gauss_circle.md --run-id gauss-main --start-round 1 --rounds 1 --skip-missing-api
+```
+
+For A1/A2 web agents, paste prompt files from:
+
+```text
+rounds/<run-id>/round_XXX/prompts/
+```
+
+Then save copied web responses under:
+
+```text
+handoff/<run-id>/round_XXX/responses/
+handoff/<run-id>/round_XXX/reviews/
+handoff/<run-id>/round_XXX/judge/
+```
+
+A3 responses and reviews are written automatically under `rounds/<run-id>/round_XXX/` when the API key is present. If the key is missing, the barrier waits with a pending API marker.
+
+For the manual web run procedure and clipboard helpers, see `docs/web-research-run.md`. For DeepSeek API setup, see `docs/api-setup.md`.
+
+## Human Steering
+
+Edit these files before the next stage or round:
 
 - `human/current_directives.md`: active steering instructions for the next round.
 - `human/goals.md`: current research and workflow goals.
-- `human/ideas.md`: new mathematical ideas to try.
+- `human/ideas.md`: mathematical ideas to try.
 - `human/references.md`: papers, links, theorem names, citations, or notes.
 - `human/inbox/`: timestamped human notes.
 
@@ -81,107 +142,17 @@ You can also add a note from the command line:
 python -m math_collab.human --kind idea --title "Try a smoothed cutoff" --text "Ask all agents to compare sharp cutoff vs smooth cutoff before unsmoothing." --activate
 ```
 
-The orchestrator injects these human files into every reasoning, review, and judge prompt. Human direction is treated as stronger than prior AI suggestions.
-
-## Quick Start
-
-Run a smoke test without calling any external API:
-
-```powershell
-python -m math_collab.orchestrator --config config/agents.example.json --problem problems/gauss_circle.md --rounds 1 --dry-run --run-id smoke
-```
-
-Run a real round, generating prompts for web agents and calling API agents when keys are present:
-
-```powershell
-$env:QWEN_API_KEY="..."
-$env:DEEPSEEK_API_KEY="..."
-python -m math_collab.orchestrator --config config/agents.example.json --problem problems/gauss_circle.md --rounds 1 --run-id gauss-001
-```
-
-For GPT/Gemini web agents, the orchestrator writes prompt files under:
-
-```text
-handoff/<run-id>/round_001/
-```
-
-Paste those prompts into the web UI, then save the responses back to the response files named by the script. The next version can add Playwright automation on top of the same handoff interface.
-
-If you want to test only prompt generation before setting API keys:
-
-```powershell
-python -m math_collab.orchestrator --config config/agents.example.json --problem problems/gauss_circle.md --run-id handoff-test --rounds 1 --skip-missing-api --no-state-update
-```
-
-In normal research mode, rerun the same command after adding web responses. The round advances only when every agent has completed the current stage.
-
-For browser smoke tests, use compact prompts so the web UI does not choke on large prior-round context:
-
-```powershell
-python -m math_collab.orchestrator --config config/agents.web-test.json --problem problems/gauss_circle.md --run-id web-smoke --rounds 1 --compact-prompts
-```
-
-When copying responses from web UIs, prefer the page's own **Copy response** button. The prompts require Markdown math as `$...$` and `$$...$$`, because some web copy paths turn `\[...\]` into bare `[ ... ]`. If a copied ChatGPT response still contains bare display math, normalize it before committing:
-
-```powershell
-python -m math_collab.normalize_markdown rounds/web-smoke/round_001/responses/gpt_pro_thinking.md
-```
-
-For the long-thinking web research workflow, see `docs/web-research-run.md`.
-
-To keep a three-round web research run moving while ChatGPT/Gemini think, use:
-
-```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\watch_web_research_run.ps1 -RunId web-research-test -StartRound 1 -Rounds 3
-```
-
-To paste generated prompts into the web UIs without relying on browser DOM automation, use `scripts/paste_web_prompt.ps1` or the stage-specific helpers documented in `docs/web-research-run.md`.
-
-## Publishing as a Public GitHub Repo
-
-This directory is currently safe to turn into its own repo:
-
-```powershell
-git init -b main
-git add .
-git commit -m "Initialize multi-AI math research workflow"
-```
-
-Then create a public GitHub repo in the browser and connect it:
-
-```powershell
-git remote add origin https://github.com/<your-user>/<repo-name>.git
-git push -u origin main
-```
-
-After that, each research round can be committed and pushed:
-
-```powershell
-git add protocol.md problems state manifests human rounds config math_collab .github README.md .gitignore
-git commit -m "Add research round 001"
-git push
-```
-
-## API Configuration
-
-Copy `config/agents.example.json` to `config/agents.local.json` and edit model names or endpoints if needed.
-
-API keys are read from environment variables only:
-
-- `QWEN_API_KEY`
-- `DEEPSEEK_API_KEY`
-
-Do not commit secrets.
+Human direction is injected into reasoning, review, and judge prompts. Human instructions override prior AI suggestions when they change the target, reject a route, add a reference, or change success criteria.
 
 ## Important Practice
 
-The workflow should force every AI to separate:
+Every agent must separate:
 
-- proven statements,
+- proved statements,
 - plausible claims,
 - gaps,
 - counterexample attempts,
 - dependencies,
 - confidence.
 
-This is more important than simply making the agents write long answers.
+The public repository is the durable memory; web conversation memory is useful but not authoritative.
