@@ -8,7 +8,7 @@ The first round should focus on strategy selection, known barriers, and a clean 
 
 Timestamp: 2026-05-31 22:51:21
 
-See `rounds/web-research-test/round_001/judge/judge.md`.
+See `rounds/web-research-test/round_001/judge/judge-001.md`.
 
 Selected main route:
 
@@ -416,7 +416,7 @@ Overall Round 1 judgment: productive, but no theorem improving the Gauss circle 
 
 Timestamp: 2026-05-31 23:34:11
 
-See `rounds/web-research-test/round_002/judge/judge.md`.
+See `rounds/web-research-test/round_002/judge/judge-002.md`.
 
 Selected main route:
 
@@ -905,7 +905,7 @@ No exponent improvement has been proved in Round 2. The concrete gain is a clean
 
 Timestamp: 2026-06-01 03:40:56
 
-See `rounds/web-research-test/round_003/judge/judge.md`.
+See `rounds/web-research-test/round_003/judge/judge-003.md`.
 
 # Selected main route
 
@@ -1538,7 +1538,7 @@ Low confidence that $\chi_4$ alone gives a usable saving after a standard A-proc
 
 Timestamp: 2026-06-01 04:38:34
 
-See `rounds/web-research-test/round_004/judge/judge.md`.
+See `rounds/web-research-test/round_004/judge/judge-004.md`.
 
 Selected main route:
 
@@ -2380,7 +2380,7 @@ Low confidence that current known technology reaches the required H5 endpoint. T
 
 Timestamp: 2026-06-01 05:56:58
 
-See `rounds/web-research-test/round_005/judge/judge.md`.
+See `rounds/web-research-test/round_005/judge/judge-005.md`.
 
 Selected main route:
 
@@ -3110,7 +3110,7 @@ No new exponent has been proved. The concrete Round 5 result is a sharper and mo
 
 Timestamp: 2026-06-01 08:01:08
 
-See `rounds/web-research-test/round_006/judge/judge.md`.
+See `rounds/web-research-test/round_006/judge/judge-006.md`.
 
 Summary:
 
@@ -3864,7 +3864,7 @@ Low confidence that any current route in the repo proves an exponent improvement
 
 Timestamp: 2026-06-01 09:10:10
 
-See `rounds/web-research-test/round_007/judge/judge.md`.
+See `rounds/web-research-test/round_007/judge/judge-007.md`.
 
 Summary:
 
@@ -4701,7 +4701,7 @@ No new Gauss circle exponent has been proved. Round 7 should be recorded as a su
 
 Timestamp: 2026-06-01 10:07:17
 
-See `rounds/web-research-test/round_008/judge/judge.md`.
+See `rounds/web-research-test/round_008/judge/judge-008.md`.
 
 Summary:
 
@@ -5731,7 +5731,7 @@ Overall Round 8 judgment: successful obstruction mapping and lemma cleanup. The 
 
 Timestamp: 2026-06-01 11:05:51
 
-See `rounds/web-research-test/round_009/judge/judge.md`.
+See `rounds/web-research-test/round_009/judge/judge-009.md`.
 
 Summary:
 
@@ -6832,7 +6832,7 @@ Low confidence that current known technology proves H5a-fix/H5b-fix at the endpo
 
 Timestamp: 2026-06-01 12:02:25
 
-See `rounds/web-research-test/round_010/judge/judge.md`.
+See `rounds/web-research-test/round_010/judge/judge-010.md`.
 
 Summary:
 
@@ -7918,3 +7918,5919 @@ Moderate confidence in the C2 stationary-phase leading term; low-to-moderate con
 Low confidence that current known technology proves M9 at the endpoint.
 
 Overall Round 10 judgment: productive and mathematically meaningful. The Fejer residual bottleneck is provisionally cleared; the proof skeleton is now sharper. The hard problem has not vanished, but it has moved to a precise pair of fixed-coefficient main-term estimates and to the question of whether any sign-preserving spacing method can exploit $\alpha_h$ and $\chi_4$ before standard norm estimates erase them.
+
+## Round 11 Update
+
+Timestamp: 2026-06-09 06:12:13
+
+See `rounds/web-research-test/round_011/judge/judge-011.md`.
+
+## Summary
+
+Round 11 is a precision and audit round. It does **not** prove a new Gauss circle exponent.
+
+The conservative Round 11 judgment is:
+
+$$
+\text{H1--H3}+\text{H4}+\text{R5-Full}+\text{M9}
+\Longrightarrow
+P(X)\ll_\epsilon X^{1/4+\epsilon},
+$$
+
+where
+
+$$
+P(X)=N(\sqrt X)-\pi X.
+$$
+
+The residual side of the finite Vaaler route should now be treated as **provisionally controlled**, not as the active bottleneck, provided H4 is source-normalized correctly and R5-Full is written cleanly. The remaining hard analytic problem is M9: the fixed-Vaaler-coefficient main sums. This is not a cosmetic distinction: arbitrary-coefficient versions of H5a/H5b are stronger stress tests, but they are not the actual dependency created by the Vaaler reduction.
+
+External source status: Vaaler’s paper is Jeffrey D. Vaaler, “Some extremal functions in Fourier analysis,” *Bulletin of the American Mathematical Society* 12(2), 183--216, 1985; metadata is available through Project Euclid and AMS. Li--Yang’s paper is Xiaochun Li and Xuerui Yang, “An improvement on Gauss’s Circle Problem and Dirichlet’s Divisor Problem,” arXiv:2308.14859; the arXiv abstract states that it uses the Bombieri--Iwaniec method, a new first-spacing estimate, and Huxley’s second-spacing results.
+
+## Selected main route
+
+Keep the balanced arithmetic hyperbola/Vaaler route as the selected main route:
+
+$$
+P(X)
+\to
+\text{symmetric hyperbola}
+\to
+\text{floor-compatible sawtooth}
+\to
+\text{finite Vaaler}
+\to
+\text{fixed-coefficient reciprocal main sums}.
+$$
+
+The exact arithmetic foundation remains:
+
+$$
+P(X)
+=
+-4\sum_{d\le y}\chi_4(d)\psi(X/d)
++
+4\sum_{d\le y}
+\left[
+\psi\left(\frac{X/d+1}{4}\right)
+-
+\psi\left(\frac{X/d+3}{4}\right)
+\right]
++
+O(1),
+$$
+
+with
+
+$$
+y=\lfloor X^{1/2}\rfloor,
+\qquad
+\psi(t)=t-\lfloor t\rfloor-\frac12.
+$$
+
+For each dyadic denominator block $d\asymp D$ with
+
+$$
+X^{1/4}\le D\le X^{1/2},
+$$
+
+use the local Vaaler height
+
+$$
+H_D\asymp D X^{-1/4}.
+$$
+
+Blocks with $D<X^{1/4}$ must be excluded from Vaaler truncation because the natural height may be $0$; they are handled trivially using $|\psi|\le 1/2$, giving total contribution $O(X^{1/4})$ up to logarithms.
+
+The official remaining analytic target is M9:
+
+$$
+\mathcal M_1(D;X)
+=
+-4\sum_{1\le |h|\le H_D}
+\alpha_{h,H_D}
+\sum_{d\asymp D}
+\chi_4(d)w_D(d)e(hX/d),
+$$
+
+and
+
+$$
+\mathcal M_2(D;X)
+=
+4\sum_{1\le |h|\le H_D}
+\alpha_{h,H_D}
+\left(e(h/4)-e(3h/4)\right)
+\sum_{d\asymp D}
+w_D(d)e(hX/(4d)).
+$$
+
+Since
+
+$$
+e(h/4)-e(3h/4)=2i\chi_4(h),
+$$
+
+the second sum may also be written as
+
+$$
+\mathcal M_2(D;X)
+=
+8i\sum_{1\le |h|\le H_D}
+\alpha_{h,H_D}\chi_4(h)
+\sum_{d\asymp D}w_D(d)e(hX/(4d)).
+$$
+
+The M9 target is:
+
+$$
+\mathcal M_1(D;X),\mathcal M_2(D;X)
+\ll_\epsilon X^{1/4+\epsilon}
+$$
+
+uniformly over dyadic $D$. No agent proved this target.
+
+## Useful fragments by source
+
+### From A1
+
+A1’s main contribution is the clean Round 11 reduction:
+
+$$
+\text{H1--H3}+\text{H4}+\text{R5-Full}+\text{M9}
+\Longrightarrow
+P(X)\ll_\epsilon X^{1/4+\epsilon}.
+$$
+
+A1 also gives the most complete R5 proof. The Fejer kernel is
+
+$$
+K_H(t)
+=
+\sum_{|k|\le H}
+\left(1-\frac{|k|}{H+1}\right)e(kt)
+=
+\frac1{H+1}
+\left(\frac{\sin \pi(H+1)t}{\sin \pi t}\right)^2.
+$$
+
+The standard pointwise bound is
+
+$$
+K_H(t)\ll \min\left(H,\frac1{H\|t\|^2}\right),
+$$
+
+hence
+
+$$
+\frac1H K_H(t)
+\ll
+\min\left(1,\frac1{H^2\|t\|^2}\right).
+$$
+
+For the first residual leg, with $m$ nearest to $X/d$ and $d\asymp D$,
+
+$$
+\left\|\frac Xd\right\|
+=
+\frac{|X-md|}{d}
+\asymp
+\frac{|X-md|}{D}.
+$$
+
+Set
+
+$$
+\Delta=\frac{D}{H}\asymp X^{1/4}.
+$$
+
+Then
+
+$$
+\frac1H K_H(X/d)
+\ll
+\min\left(1,\frac{\Delta^2}{|X-md|^2}\right).
+$$
+
+Grouping by $n=md$ gives at most $\tau(n)$ representations. Thus
+
+$$
+\frac1H\sum_{d\asymp D}K_H(X/d)
+\ll
+\sum_{n\asymp X}\tau(n)
+\min\left(1,\frac{\Delta^2}{|X-n|^2}\right)
+\ll_\epsilon X^{1/4+\epsilon}.
+$$
+
+This last step does **not** need Shiu’s short-interval theorem: the pointwise divisor bound
+
+$$
+\tau(n)\ll_\epsilon n^\epsilon
+$$
+
+and
+
+$$
+\sum_{n\in\mathbb Z}
+\min\left(1,\frac{\Delta^2}{|X-n|^2}\right)
+\ll \Delta+1
+$$
+
+already suffice.
+
+For the second residual leg,
+
+$$
+K_H\left(\frac{X/d+\rho}{4}\right),
+\qquad \rho\in\{1,3\},
+$$
+
+near-integrality is equivalent to
+
+$$
+X\approx d(4m-\rho).
+$$
+
+Writing
+
+$$
+\ell=4m-\rho,\qquad \ell\equiv-\rho\pmod 4,
+$$
+
+again gives a product $n=d\ell$, and the congruence restriction only reduces the number of admissible factorizations. The same divisor-counting argument applies.
+
+A1’s H5b-Shift formulation is also valuable. Splitting
+
+$$
+h=4q+r,\qquad r\in\{1,3\},
+$$
+
+gives
+
+$$
+\chi_4(4q+r)e((4q+r)X/(4d))
+=
+\chi_4(r)e((q+r/4)X/d).
+$$
+
+Thus M9b requires a theorem for fixed fractional frequency shifts
+
+$$
+e((q+\beta)X/d),
+\qquad
+\beta\in\left\{\frac14,\frac34\right\}.
+$$
+
+This is a real theorem-extension gap, not an automatic consequence of the M9a phase.
+
+### From A2
+
+A2’s most useful contribution is Q1-Spectral, the operator-norm character-blindness diagnostic. If the spatial character enters a spacing matrix only through a diagonal unitary matrix
+
+$$
+U=\operatorname{diag}(\chi_4(d)),
+$$
+
+then
+
+$$
+\|U^*KU\|_{\operatorname{op}}=\|K\|_{\operatorname{op}}.
+$$
+
+Therefore any method that bounds the signed quadratic form only through an operator norm, Schur bound, Gershgorin-type estimate, or absolute-value matrix cannot exploit the $\chi_4(d)$ signs. This should be added to the lemma bank as a **proved diagnostic for operator-norm-only methods**.
+
+A2’s trace-cycle observation is useful but narrower. If the signed object is literally a conjugate $U^*KU$, then cyclic traces are invariant:
+
+$$
+\operatorname{Tr}((U^*KU)^m)=\operatorname{Tr}(K^m).
+$$
+
+This proves blindness for pure conjugacy-invariant trace statistics. It does **not** rule out all signed forms, open-path moments, residue-interference estimates, or non-conjugacy signed kernels.
+
+A2 also raised the H8/B-process-first or “twisted Voronoi” exploration. This should be kept, but heavily downgraded. The useful core is: apply Poisson summation modulo $4$ to the spatial-character sum before Cauchy--Schwarz, identify the dual length
+
+$$
+m\asymp \frac{hX}{D^2},
+$$
+
+and check whether the dual character survives an actual spacing estimate. The overclaim is that this automatically produces a symmetric or more tractable endpoint. For general $D$ the dual length is not uniformly $X^{1/4}$; at the critical block $D\asymp X^{1/2}$ and $h\asymp X^{1/4}$ it is $m\asymp X^{1/4}$, but outside that endpoint the geometry changes.
+
+A2’s factorial-alignment obstruction should be rejected in its current form. Taking $X=N!$ does not give many critical denominators $d\in[X^{1/4},X^{1/2}]$ dividing $X$; for large $N$, $X^{1/4}$ is vastly larger than $N$. Also, cancellation of $\sum_{d\sim D}\chi_4(d)$ does not require the prime number theorem in arithmetic progressions: $\chi_4$ is periodic modulo $4$, so unsmoothed interval sums are $O(1)$ and smooth weighted sums are controlled by elementary summation by parts.
+
+### From A3
+
+A3’s strongest contribution is theorem-dependency discipline. A3 correctly keeps R5 conditional on H4, keeps M9 open, and separates phase compatibility with Li--Yang from theorem-level applicability.
+
+A3’s Li--Yang audit is useful and should be retained. Li--Yang’s double sum has the form
+
+$$
+S
+=
+\sum_{H\le h\le 2H}g(h/H)
+\sum_{M\le m\le 2M}G(m/M)
+e\left(\frac{hT}{M}F(m/M)\right),
+$$
+
+with $g,G$ of bounded variation and $F\in C^3([1,2])$ satisfying derivative lower and upper bounds and
+
+$$
+|F^{(1)}F^{(3)}-3(F^{(2)})^2|\ge C_4^{-1}.
+$$
+
+The raw endpoint substitution is
+
+$$
+T=X,\qquad M=D\asymp X^{1/2},\qquad H=H_D\asymp X^{1/4}.
+$$
+
+Li--Yang Case A requires
+
+$$
+H\le MT^{-49/164}=X^{33/164}\approx X^{0.2012},
+$$
+
+while Case B gives
+
+$$
+H\le M^{35/69}T^{-2/23}=X^{23/138}=X^{1/6}.
+$$
+
+Both are below $X^{1/4}$. Therefore their theorem cannot be quoted directly on the raw endpoint block. This is a theorem-application guardrail, not a no-go theorem for all Bombieri--Iwaniec methods.
+
+A3’s C2-SPU stationary-phase outline is useful as a technical module, but it must remain a transform/asymptotic lemma rather than an estimate of the full sum. For
+
+$$
+I(\xi)=\int w_D(u)e(kX/u-\xi u)\,du,
+$$
+
+with $\xi=-m<0$,
+
+$$
+u_0=\sqrt{\frac{kX}{m}},
+\qquad
+\phi(u_0)=2\sqrt{kXm},
+\qquad
+\phi''(u_0)=\frac{2m}{u_0}.
+$$
+
+The active dual length is
+
+$$
+M_{\mathrm{dual}}\asymp \frac{kX}{D^2},
+$$
+
+whereas the stationary-phase large parameter is
+
+$$
+\Lambda\asymp \frac{kX}{D}.
+$$
+
+These two scales must not be conflated. A3 correctly warned that non-analytic weights give rapid integration-by-parts decay, not exponential decay.
+
+A3’s numerical plan is appropriate: test R5 first and second legs, then test $\mathcal M_1,\mathcal M_2$ with the actual Vaaler coefficients, and compare against arbitrary-coefficient and $L^1$ stress versions. One correction: for
+
+$$
+\Phi(u)=\pi u(1-|u|)\cot(\pi u)+|u|,
+$$
+
+one has
+
+$$
+\Phi(1/2)=1/2,
+$$
+
+not $1$. Also $\Phi(1/4)$ and $\Phi(3/4)$ are not equal. This matters for any M9 numerical implementation.
+
+## Rejected or risky ideas
+
+1. **Reject any claim of a new Gauss circle exponent.**  
+Round 11 gives a sharper reduction and obstruction map. It does not prove M9 and therefore does not prove
+
+$$
+P(X)\ll_\epsilon X^{1/4+\epsilon}.
+$$
+
+2. **Reject treating R5 as unconditional before H4 is source-normalized.**  
+The R5 product-count argument is sound once the Vaaler residual majorant is accepted. The H4 theorem still needs a page-level citation and convention check.
+
+3. **Reject H5r-B/H5r-L1 as active proof dependencies.**  
+The residual is controlled directly by the positive Fejer kernel and R5. Arbitrary bounded coefficients and termwise $L^1$ are now stress tests only.
+
+4. **Reject black-box Li--Yang endpoint import.**  
+The Li--Yang phase class overlaps structurally with M9, but their raw Case A/B restrictions and final exponent do not provide the endpoint height needed here.
+
+5. **Reject global no-go language for Bombieri--Iwaniec or spacing methods.**  
+The raw theorem mismatch is proved. A future signed spacing estimate or different dissection is not ruled out.
+
+6. **Reject A2’s factorial-alignment counterexample.**  
+It does not apply to the critical dyadic range as stated and uses unnecessary PNT-in-AP reasoning for $\chi_4$ interval cancellation.
+
+7. **Reject A2’s “twisted Voronoi symmetric dualization” as a proved route.**  
+It is a potentially useful H8-style exploratory transform, but it needs exact Poisson normalization, stationary phase, dual ranges for all $D$, amplitude, boundary estimates, and a post-transform bilinear/spacing theorem.
+
+8. **Reject treating Q1-Spectral as a universal obstruction.**  
+It blocks operator-norm-only and absolute-value matrix methods. It does not block direct signed-form estimates that do not factor through diagonal-unitary-invariant quantities.
+
+9. **Reject using C2-SPU as an endpoint bound.**  
+Stationary phase for a single integral does not prove cancellation in the full double sum over $k$ and the dual variable. C2-SPU is a transform lemma, not a summation theorem.
+
+10. **Reject treating Mellin--Perron or signed Fourier as a primary pivot.**  
+Both remain comparison modules. Signed Fourier may preserve signs formally, but discontinuity neighborhoods still have to be controlled. Mellin--Perron likely reconstructs Hardy--Voronoi--Bessel phases; exact kernels and truncation errors remain unwritten.
+
+## Known gaps
+
+1. **H4 source-normalization gap.**  
+Need a precise citation for the finite Vaaler theorem with coefficient function, Fejer kernel normalization, residual constant, and sawtooth convention. The proof must state exactly how the centered trigonometric convention covers the floor-compatible value $\psi(n)=-1/2$.
+
+2. **R5-Full write-up gap.**  
+The proof must include first leg, shifted second leg, integer and noninteger $X$, nearest-integer choices, signed or non-positive dyadic weights handled by $|w_D|$, zero mode, both frequency signs, short blocks $D<X^{1/4}$, and dyadic logarithms.
+
+3. **M9 remains open.**  
+No endpoint estimate for $\mathcal M_1$ or $\mathcal M_2$ was supplied. This is the main analytic bottleneck.
+
+4. **M9b shifted-frequency theorem gap.**  
+The phase
+
+$$
+e((q+\beta)X/d),
+\qquad
+\beta\in\{1/4,3/4\},
+$$
+
+must be accepted by the intended spacing theorem, or an alternate representation of M9b must be chosen.
+
+5. **Li--Yang subrange map incomplete.**  
+The raw endpoint block fails. The repo still needs a precise map of which $D,H$ subranges are covered by existing Li--Yang technology and which high-frequency ranges remain uncovered.
+
+6. **Character-preserving spacing gap.**  
+Q1-Spectral shows what cannot work. The repo still lacks a signed estimate that actually preserves $\chi_4(d_1)\chi_4(d_2)$ or $\chi_4(h)$ through a useful spacing or bilinear inequality.
+
+7. **H8/B-process-first uniform transform gap.**  
+The transform must be stated uniformly for all $D\in[X^{1/4},X^{1/2}]$ and $1\le h\le H_D$, not only at the endpoint $D\asymp X^{1/2}$.
+
+8. **C2-SPU boundary and summation gap.**  
+Need support-boundary stationary phase, nonstationary integration-by-parts, $M_{\mathrm{dual}}\asymp1$ transitions, and then a separate summation theorem if the transform is to estimate anything.
+
+9. **Numerical evidence gap.**  
+No actual R5 or M9 data have been committed. The next round should produce tables or scripts, not only protocols.
+
+10. **Poisson--Bessel calibration remains secondary.**  
+It is useful for normalization and the $R^{2/3}$ sanity check, but it should not displace M9.
+
+## New lemmas to add
+
+### H4. Vaaler finite approximation with Fejer residual
+
+**Status:** external theorem dependency; statement likely correct, source-normalization pending.
+
+For $H\ge1$,
+
+$$
+\psi(t)
+=
+\sum_{1\le |h|\le H}\alpha_{h,H}e(ht)+R_H(t),
+$$
+
+with
+
+$$
+\alpha_{h,H}
+=
+-\frac{\Phi(|h|/(H+1))}{2\pi i h},
+$$
+
+$$
+\Phi(u)=\pi u(1-u)\cot(\pi u)+u,
+\qquad 0<u<1,
+$$
+
+and
+
+$$
+|R_H(t)|\le \frac1{2H+2}K_H(t),
+$$
+
+where
+
+$$
+K_H(t)=
+\sum_{|k|\le H}
+\left(1-\frac{|k|}{H+1}\right)e(kt).
+$$
+
+The convention check at integers is essential: the Vaaler polynomial cancels symmetrically at integer $t$, while the residual majorant has size $1/2$ because
+
+$$
+K_H(0)=H+1,
+\qquad
+\frac{K_H(0)}{2H+2}=\frac12.
+$$
+
+### R5. Fejer product-count residual bound
+
+**Status:** proved conditional on H4.
+
+For $X\ge2$, $X^{1/4}\le D\le X^{1/2}$, $H\asymp D X^{-1/4}$, and $|w_D|\le1$ supported on $d\asymp D$,
+
+$$
+\frac1H\sum_{d\asymp D}|w_D(d)|K_H(X/d)
+\ll_\epsilon X^{1/4+\epsilon},
+$$
+
+and, for $\rho\in\{1,3\}$,
+
+$$
+\frac1H\sum_{d\asymp D}|w_D(d)|
+K_H\left(\frac{X/d+\rho}{4}\right)
+\ll_\epsilon X^{1/4+\epsilon}.
+$$
+
+### R5-Full. Total Vaaler residual bound
+
+**Status:** conditional bridge lemma; should be written into the proof draft.
+
+Assume H4 and R5 on every dyadic block. Then all finite Vaaler residuals arising from H3 contribute
+
+$$
+\ll_\epsilon X^{1/4+\epsilon}.
+$$
+
+### M9. Fixed-coefficient main-term criterion
+
+**Status:** official remaining target.
+
+If, for every dyadic $D$ with $X^{1/4}\le D\le X^{1/2}$,
+
+$$
+\mathcal M_1(D;X),\mathcal M_2(D;X)
+\ll_\epsilon X^{1/4+\epsilon},
+$$
+
+with the actual Vaaler coefficients $\alpha_{h,H_D}$, then H1--H4 and R5-Full imply
+
+$$
+P(X)\ll_\epsilon X^{1/4+\epsilon}.
+$$
+
+### H5b-Shift. Shifted-frequency theorem-extension problem
+
+**Status:** open theorem-extension problem.
+
+For $\beta\in\{1/4,3/4\}$, $Q\asymp H_D$, prove or cite an endpoint estimate of the form
+
+$$
+\sum_{q\asymp Q}a_{q,\beta,H_D}
+\sum_{d\asymp D}w_D(d)e((q+\beta)X/d)
+\ll_\epsilon X^{1/4+\epsilon},
+$$
+
+where
+
+$$
+a_{q,\beta,H_D}\ll\frac1{q+1}
+$$
+
+and $a_{q,\beta,H_D}$ comes from $\alpha_{4q+r,H_D}\chi_4(r)$.
+
+### LY-Raw-Mismatch
+
+**Status:** proved theorem-application guardrail.
+
+For the raw endpoint block
+
+$$
+T=X,\qquad M=D\asymp X^{1/2},\qquad H=H_D\asymp X^{1/4},
+$$
+
+Li--Yang Case A gives
+
+$$
+H\le X^{33/164},
+$$
+
+and Case B gives
+
+$$
+H\le X^{23/138}.
+$$
+
+Neither reaches $X^{1/4}$. This only blocks black-box import.
+
+### Q1-Spectral
+
+**Status:** proved diagnostic.
+
+If $\chi_4$ enters only as a diagonal unitary conjugation $U^*KU$, then operator-norm-only estimates cannot exploit it:
+
+$$
+\|U^*KU\|_{\operatorname{op}}=\|K\|_{\operatorname{op}}.
+$$
+
+### H12-Trace-Invariance
+
+**Status:** proved diagnostic for pure conjugacy-invariant trace methods; not a universal obstruction.
+
+If the signed matrix is literally $U^*KU$, then
+
+$$
+\operatorname{Tr}((U^*KU)^m)=\operatorname{Tr}(K^m).
+$$
+
+This does not rule out non-conjugacy signed statistics.
+
+### H13. B-process-first / twisted dual M9a transform
+
+**Status:** exploratory target; not proved.
+
+Apply Poisson summation modulo $4$ to the spatial-character M9a sum before Cauchy--Schwarz. Required output:
+
+1. exact transform and constants under $e(t)=e^{2\pi i t}$;
+2. dual character or Gauss factor;
+3. stationary point and phase;
+4. dual length $m\asymp hX/D^2$;
+5. amplitude and boundary terms;
+6. validity range for every $D\in[X^{1/4},X^{1/2}]$;
+7. explicit statement of whether the dual phase is compatible with any known spacing theorem.
+
+### C2-SPU. Uniform odd-lattice stationary phase
+
+**Status:** technical lemma pending.
+
+For
+
+$$
+I(\xi)=\int w_D(u)e(kX/u-\xi u)\,du,
+$$
+
+prove uniform estimates in the stationary, nonstationary, boundary, and short-dual-length regimes. This lemma must not be used as a summation bound by itself.
+
+## Counterexample checks to run
+
+1. **H4 integer jump test.**  
+Verify directly that the chosen Vaaler polynomial has value $0$ at integer arguments and that the residual majorant exactly covers the floor-compatible discrepancy $|\psi(n)-0|=1/2$.
+
+2. **R5 first-leg stress test.**  
+Compute
+
+$$
+\frac1{H_D}\sum_{d\asymp D}K_{H_D}(X/d)
+$$
+
+for square, near-square, nonsquare, and divisor-rich $X$.
+
+3. **R5 shifted-leg stress test.**  
+For $\rho\in\{1,3\}$ compute
+
+$$
+\frac1{H_D}
+\sum_{d\asymp D}
+K_{H_D}\left(\frac{X/d+\rho}{4}\right).
+$$
+
+4. **Short-block check.**  
+Verify that all blocks with $D<X^{1/4}$ are handled before Vaaler is invoked and contribute $O(X^{1/4})$.
+
+5. **M9 fixed-coefficient numerics.**  
+Compute $\mathcal M_1(D;X)$ and $\mathcal M_2(D;X)$ using the exact $\alpha_{h,H_D}$, including the correct values of $\Phi(u)$.
+
+6. **M9 stress comparison.**  
+Compare the fixed-coefficient sums to arbitrary-coefficient and $L^1$ stress norms. The question is whether the actual Vaaler coefficients give significant cancellation.
+
+7. **H5b fractional shift test.**  
+Compare phases
+
+$$
+e(qX/d)
+$$
+
+and
+
+$$
+e((q+\beta)X/d)
+$$
+
+inside a toy spacing dissection. Identify which rational approximation steps are shift-invariant.
+
+8. **Q1-Spectral matrix test.**  
+Build the actual Cauchy--Schwarz kernel from M9a and compare bounds for $K$ and $U^*KU$.
+
+9. **Signed-form toy test.**  
+Test a bilinear form that is not reduced to $\|K\|_{\operatorname{op}}$. Determine whether $\chi_4(d_1)\chi_4(d_2)$ survives any useful statistic before absolute values enter.
+
+10. **H13 dual transform test.**  
+Carry out the B-process-first transform for several dyadic $D$ values. Verify that the claimed symmetric scale occurs only in the endpoint subrange.
+
+11. **C2-SPU transition test.**  
+Numerically and symbolically test $kX/D^2\asymp1$, support-boundary stationary points, and nonstationary tails.
+
+12. **Li--Yang line audit.**  
+Record exact labels, assumptions, Case A/B restrictions, allowed $F$ forms, and final $S/H$ target from the arXiv source. Do not treat phase similarity as theorem applicability.
+
+## Research strategy adjustment
+
+Round 11 should be recorded as a **diagnostic M9 round**, not as a route breakthrough. The residual obstacle has likely been cleared by R5-Full, conditional on H4. The main work now is to determine whether the fixed Vaaler coefficients and $\chi_4$ signs can be exploited before standard norm estimates erase them.
+
+The next round should split labor as follows:
+
+- A1 should lock down the proof infrastructure: exact H4 source, R5-Full, bridge theorem, M9 definitions, and Li--Yang mapping.
+- A2 should repair and formalize the character-blindness diagnostics without overclaiming, then build one exact signed model or one exact H13 dual transform.
+- A3 should execute the computational and formula audits: actual Vaaler coefficients, R5 stress tests, M9 fixed-coefficient numerics, C2-SPU constants, and Li--Yang line matching.
+
+Do not pivot to Mellin--Perron or signed Fourier as the main route. Keep them as comparison modules. The only exploratory track that should receive serious next-round allocation is H13/B-process-first for M9a, because it directly tests whether a sign-preserving transform can change the M9 geometry.
+
+## Next-round prompts by agent
+
+### For A1
+
+Write the proof-infrastructure packet for Round 12.
+
+Objectives:
+
+1. Verify H4 from a standard source. State the exact theorem with:
+   - coefficient function $\Phi$;
+   - coefficient formula $\alpha_{h,H}$;
+   - Fejer kernel normalization;
+   - residual constant;
+   - convention for the centered sawtooth;
+   - explicit conversion to the floor-compatible convention $\psi(n)=-1/2$.
+
+2. Write R5-Full as a complete proof:
+   - first leg $K_H(X/d)$;
+   - second shifted legs $K_H((X/d+\rho)/4)$ for $\rho=1,3$;
+   - noninteger and integer $X$;
+   - dyadic weights and bounded overlap;
+   - zero mode;
+   - both signs of frequency;
+   - short blocks $D<X^{1/4}$;
+   - logarithmic losses absorbed into $X^\epsilon$.
+
+3. Insert the bridge theorem into the proof draft:
+
+$$
+\text{H1--H3}+\text{H4}+\text{R5-Full}+\text{M9}
+\Longrightarrow
+P(X)\ll_\epsilon X^{1/4+\epsilon}.
+$$
+
+4. Freeze M9 as the official remaining target. Use actual Vaaler coefficients only. Do not revert to arbitrary $u_h$ except in a clearly marked stress-test section.
+
+5. Give a theorem-level Li--Yang compatibility map for M9a and M9b:
+   - exact $S$ form;
+   - $F$ functions;
+   - Case A/B restrictions;
+   - final $S/H$ target;
+   - covered and uncovered $D,H$ ranges;
+   - whether shifted $F$ forms or fractional-frequency shifts cover M9b.
+
+Exploratory allocation: include a short “H13 feasibility note” stating what exact transform A2 should prove and what would falsify it.
+
+### For A2
+
+Produce a conservative formula-level obstruction and exploration packet. Use low-temperature referee style and avoid route-closing language.
+
+Objectives:
+
+1. Formalize Q1-Spectral as a proved diagnostic:
+   - specify the finite vector space;
+   - define $U=\operatorname{diag}(\chi_4(d))$ on odd denominators;
+   - prove $\|U^*KU\|_{\operatorname{op}}=\|K\|_{\operatorname{op}}$;
+   - list exactly which methods this blocks;
+   - list signed-form methods it does not block.
+
+2. Rewrite H12 trace/cycle material:
+   - prove only the pure conjugacy-invariant trace statement;
+   - do not call it a global obstruction;
+   - define one non-conjugacy signed statistic that might still preserve signs.
+
+3. Repair C3-Affine/C3-Rational:
+   - state exact lattice hypotheses;
+   - separate odd/even dilation cases;
+   - connect, if possible, to an actual M9 or H13 transform;
+   - label anything not connected to M9 as diagnostic only.
+
+4. Develop H13, the B-process-first transform for M9a:
+   - exact Poisson summation modulo $4$;
+   - exact dual character/Gauss factor;
+   - stationary phase with amplitude;
+   - dual length $m\asymp hX/D^2$;
+   - range table for $D=X^\delta$, $1/4\le\delta\le1/2$;
+   - explicit check of the Hessian-degenerate phase $\sqrt{hXm}$;
+   - statement of what kind of discrete spacing theorem would be needed after the transform.
+
+5. Remove or repair the factorial-alignment example. If retained, it must use denominators actually lying in $[X^{1/4},X^{1/2}]$ and must not invoke PNT in AP for the elementary periodic sum of $\chi_4$.
+
+Exploratory allocation: propose one sign-preserving statistic for M9 that is not an operator norm and not a cyclic conjugacy trace. State a falsification test.
+
+### For A3
+
+Execute verification and computation tasks. Prefer scripts, exact formulas, and tables over prose.
+
+Objectives:
+
+1. Independently source-check H4:
+   - verify the coefficient formula and residual constant from Vaaler or a reliable standard exposition;
+   - check the integer-discontinuity convention;
+   - compute $\Phi(1/4)$, $\Phi(1/2)$, and $\Phi(3/4)$ correctly.
+
+2. Run R5 numerical stress tests:
+   - first leg;
+   - shifted second legs;
+   - square, near-square, nonsquare, and divisor-rich $X$;
+   - multiple dyadic $D$ values;
+   - compare to $X^{1/4}$.
+
+3. Run M9 fixed-coefficient numerics:
+   - compute $\mathcal M_1(D;X)$ and $\mathcal M_2(D;X)$ with actual $\alpha_{h,H}$;
+   - compare against arbitrary-coefficient and $L^1$ stress norms;
+   - report normalized values $|\mathcal M_i|/X^{1/4}$.
+
+4. Complete the Li--Yang theorem line audit:
+   - exact source labels for $S$, Case A, Case B, Theorem 4.3, final reduction, and allowed $F$ forms;
+   - check whether M9b is better represented as shifted $F$ or fractional-frequency shift;
+   - identify the exact uncovered high-frequency range.
+
+5. Finish C2-SPU:
+   - prove stationary, nonstationary, boundary, and $M_{\mathrm{dual}}\asymp1$ regimes;
+   - keep rapid integration-by-parts decay distinct from exponential decay;
+   - do not infer full double-sum cancellation from one-integral estimates.
+
+Exploratory allocation: implement a small signed-spacing matrix test for M9a and compare the signed quadratic form with the corresponding unsigned/absolute form.
+
+## Confidence
+
+High confidence in the selected balanced hyperbola/Vaaler framework.
+
+High confidence that no exponent improvement has been proved.
+
+High confidence that R5 is mathematically sound conditional on H4.
+
+Moderate-to-high confidence that R5-Full clears the total Vaaler residual once the proof is written carefully.
+
+High confidence that M9 fixed-coefficient sums are now the official remaining bottleneck.
+
+High confidence that Li--Yang cannot be imported as a black box for the raw endpoint Vaaler block.
+
+High confidence that Q1-Spectral is a useful restricted diagnostic for operator-norm-only methods.
+
+Moderate confidence that H13/B-process-first is worth exploring as a sign-preserving transform.
+
+Low confidence that H13, Mellin--Perron, signed Fourier truncation, or current Li--Yang technology reaches the endpoint without new input.
+
+Overall Round 11 judgment: productive and conservative. The residual side is provisionally under control; the hard problem has been localized to M9 and to whether any sign-preserving method can exploit the actual Vaaler coefficients and $\chi_4$ signs before standard norm estimates erase them.
+
+## Round 12 Update
+
+Timestamp: 2026-06-09 08:38:55
+
+See `rounds/web-research-test/round_012/judge/judge-012.md`.
+
+## Selected main route
+
+Source basis: Round 12 prompt, Stage A outputs, and Stage B reviews are in the uploaded judge packet. External literature metadata and claims were checked separately: Vaaler's paper metadata is verified as Jeffrey D. Vaaler, "Some extremal functions in Fourier analysis," *Bull. Amer. Math. Soc.* 12(2), 183--216, 1985. Li--Yang's arXiv paper states the theorem-level exponent $\theta^*=0.314483\ldots$ for both the circle and divisor problems, and the abstract says the proof uses the Bombieri--Iwaniec method, a new first-spacing estimate, and Huxley's second-spacing results.
+
+Keep the balanced arithmetic hyperbola/Vaaler route as the selected main route:
+
+$$
+P(X)=N(\sqrt X)-\pi X
+\to
+\text{symmetric hyperbola}
+\to
+\text{floor-compatible sawtooth}
+\to
+\text{finite Vaaler}
+\to
+\text{fixed-coefficient reciprocal main sums}.
+$$
+
+The current proof-infrastructure reduction is:
+
+$$
+\text{H1--H3}+\text{H4}+\text{R5-Full}+\text{M9}
+\Longrightarrow
+P(X)\ll_\epsilon X^{1/4+\epsilon}.
+$$
+
+This is not a proof of the conjectural bound, because M9 remains open. The correct Round 12 status is:
+
+- H1--H3: proved floor-compatible arithmetic reductions from earlier rounds.
+- H4: external Vaaler theorem dependency; coefficient and residual formula are very likely correct, but page/theorem normalization still needs a source-level check.
+- R5/R5-Full: product-count residual bound; mathematically sound conditional on H4, but still needs a complete proof-draft write-up.
+- M9: official remaining analytic bottleneck.
+
+The finite Vaaler main terms should now be frozen with the actual coefficients
+
+$$
+\alpha_{h,H}
+=
+-\frac{\Phi(|h|/(H+1))}{2\pi i h},
+\qquad
+\Phi(u)=\pi u(1-u)\cot(\pi u)+u,
+\qquad 0<u<1.
+$$
+
+For each dyadic block $d\asymp D$ with
+
+$$
+X^{1/4}\le D\le X^{1/2},
+\qquad
+H_D\asymp D X^{-1/4},
+$$
+
+the remaining M9 targets are:
+
+$$
+\mathcal M_1(D;X)
+=
+-4\sum_{1\le |h|\le H_D}
+\alpha_{h,H_D}
+\sum_d
+\chi_4(d)w_D(d)e(hX/d)
+\ll_\epsilon X^{1/4+\epsilon},
+$$
+
+and
+
+$$
+\mathcal M_2(D;X)
+=
+4\sum_{1\le |h|\le H_D}
+\alpha_{h,H_D}
+\left(e(h/4)-e(3h/4)\right)
+\sum_d
+w_D(d)e(hX/(4d))
+\ll_\epsilon X^{1/4+\epsilon}.
+$$
+
+Since
+
+$$
+e(h/4)-e(3h/4)=2i\chi_4(h),
+$$
+
+the second target is equivalently
+
+$$
+\mathcal M_2(D;X)
+=
+8i\sum_{1\le |h|\le H_D}
+\alpha_{h,H_D}\chi_4(h)
+\sum_d
+w_D(d)e(hX/(4d)).
+$$
+
+The fixed Fejer residual should no longer be treated as the central bottleneck. It is provisionally cleared by R5, conditional on H4 and full dyadic bookkeeping. Arbitrary-coefficient H5a/H5b and H5r-B/H5r-L1 remain stress tests only.
+
+## Useful fragments by source
+
+### From A1
+
+A1 supplied the strongest proof-infrastructure packet.
+
+The most valuable contribution is the complete R5 product-count mechanism. The Fejer kernel is
+
+$$
+K_H(t)=
+\sum_{|k|\le H}
+\left(1-\frac{|k|}{H+1}\right)e(kt)
+=
+\frac{1}{H+1}
+\left(\frac{\sin \pi(H+1)t}{\sin \pi t}\right)^2,
+$$
+
+with pointwise bound
+
+$$
+K_H(t)\ll \min\left(H,\frac1{H\|t\|^2}\right),
+$$
+
+hence
+
+$$
+\frac1H K_H(t)
+\ll
+\min\left(1,\frac1{H^2\|t\|^2}\right).
+$$
+
+For the first residual leg, choosing $m$ nearest to $X/d$ gives
+
+$$
+\left\|\frac Xd\right\|
+=
+\frac{|X-md|}{d}
+\asymp
+\frac{|X-md|}{D},
+\qquad d\asymp D.
+$$
+
+With
+
+$$
+\Delta=\frac{D}{H}\asymp X^{1/4},
+$$
+
+one obtains
+
+$$
+\frac1H K_H(X/d)
+\ll
+\min\left(1,\frac{\Delta^2}{|X-md|^2}\right).
+$$
+
+Grouping by $n=md$ gives multiplicity at most $\tau(n)$, and therefore
+
+$$
+\frac1H\sum_{d\asymp D}K_H(X/d)
+\ll
+\sum_{n\asymp X}\tau(n)
+\min\left(1,\frac{\Delta^2}{|X-n|^2}\right)
+\ll_\epsilon X^{1/4+\epsilon}.
+$$
+
+For the shifted second leg,
+
+$$
+K_H\left(\frac{X/d+\rho}{4}\right),
+\qquad \rho\in\{1,3\},
+$$
+
+near-integrality becomes
+
+$$
+X\approx d(4m-\rho).
+$$
+
+Writing
+
+$$
+\ell=4m-\rho,
+\qquad
+\ell\equiv-\rho\pmod 4,
+$$
+
+again gives a product-count problem with at most divisor-function multiplicity. This is the key reason R5 should be accepted as the residual-control mechanism once H4 is verified.
+
+A1 also correctly isolates M9b as a shifted-frequency theorem-extension problem. Splitting $h=4q+r$, $r\in\{1,3\}$, gives
+
+$$
+\chi_4(4q+r)e((4q+r)X/(4d))
+=
+\chi_4(r)e((q+r/4)X/d).
+$$
+
+Thus M9b is not automatically the same theorem as M9a. It requires either an arithmetic-progression-in-$h$ theorem or a fixed fractional-frequency theorem for phases
+
+$$
+e((q+\beta)X/d),
+\qquad
+\beta\in\left\{\frac14,\frac34\right\}.
+$$
+
+A1's Li--Yang audit is also useful. Li--Yang's paper defines the problem with $R(X)$ and $\Delta(X)$ and states the conjectural lower endpoint $\theta=1/4$; it proves $\theta^*=0.314483\ldots$ instead. Their Case A and Case B height restrictions include $H\le MT^{-49/164}$ and $H\le \min(M^{35/69}T^{-2/23},B_0M^{3/2}T^{-1/2})$, respectively. Their final reduction asks for $S/H\lesssim_\epsilon T^{\theta^*+\epsilon}$ and restricts $H\le MT^{-\theta^*}$, not the endpoint $H\le MT^{-1/4}$.
+
+### From A2
+
+A2's best contribution is Q1-Spectral, a precise operator-norm character-blindness diagnostic.
+
+Let
+
+$$
+\mathcal D_{\rm odd}=\{d:D\le d<2D,\ 2\nmid d\},
+\qquad
+\mathcal V_D=\ell^2(\mathcal D_{\rm odd}),
+$$
+
+and define
+
+$$
+U_{d_1,d_2}=\delta_{d_1,d_2}\chi_4(d_1).
+$$
+
+On odd denominators, $\chi_4(d)^2=1$, so $U$ is a diagonal unitary involution. Therefore, for any matrix $K$,
+
+$$
+\|U^*KU\|_{\operatorname{op}}=\|K\|_{\operatorname{op}}.
+$$
+
+This proves that operator-norm-only, spectral-radius-only, Schur/Gershgorin, Frobenius, and absolute-value matrix arguments cannot exploit $\chi_4(d)$ if the character enters only by diagonal unitary conjugation. This is a proved diagnostic with restricted scope, not a no-go theorem.
+
+A2's trace-cycle observation is also correct in its restricted form:
+
+$$
+\operatorname{Tr}((U^*KU)^m)=\operatorname{Tr}(K^m).
+$$
+
+This blocks pure conjugacy-invariant trace statistics from seeing the character, but does not block non-conjugacy signed forms, open-path statistics, cross-residue moments, or a bilinear estimate that keeps signs before norm extraction.
+
+A2's H13 B-process-first transform is the serious exploratory fragment. Splitting the spatial-character M9a sum modulo $4$ and applying Poisson should produce a dual Gauss factor, hence a dual $\chi_4$ factor, with stationary length
+
+$$
+m\asymp \frac{hX}{D^2}.
+$$
+
+At maximal Vaaler height $h\asymp H_D\asymp DX^{-1/4}$ and $D=X^\delta$, this becomes
+
+$$
+m\asymp X^{3/4-\delta},
+\qquad
+1/4\le\delta\le 1/2.
+$$
+
+Thus the transform is roughly balanced only near $D\asymp X^{1/2}$. For smaller $D$, it lengthens the dual variable. The resulting leading phase is of square-root type,
+
+$$
+\Phi(h,m)\asymp \sqrt{Xhm},
+$$
+
+and
+
+$$
+\det\nabla^2\Phi=0.
+$$
+
+Therefore H13 is not a route to generic full-rank stationary phase or generic full-rank decoupling. It remains a possible sign-preserving transform requiring a discrete spacing theorem.
+
+A2's weaker parts are also important to flag. The Cross-Residue Interference statistic is only a proposed object; no estimate is supplied. Some C3-Affine/Rational statements remain stylized parity diagnostics unless connected to actual M9/H13 variables. The factorial-alignment example should be removed or replaced by the divisor-bound statement
+
+$$
+\#\{d\in[X^{1/4},X^{1/2}]:d\mid X\}\le \tau(X)\ll_\epsilon X^\epsilon.
+$$
+
+### From A3
+
+A3 gave the strongest audit and verification packet.
+
+The most useful concrete checks are the special values of $\Phi$:
+
+$$
+\Phi(1/2)=\frac12,
+$$
+
+$$
+\Phi(1/4)=\frac{3\pi}{16}+\frac14,
+$$
+
+and
+
+$$
+\Phi(3/4)=-\frac{3\pi}{16}+\frac34.
+$$
+
+Thus $\Phi(1/4)\ne \Phi(3/4)$, and numerical implementations of M9 must not assume symmetry between these coefficient values.
+
+A3 also correctly checks the integer-discontinuity convention. At an integer $n$,
+
+$$
+\psi(n)=-\frac12,
+$$
+
+whereas the centered Vaaler polynomial satisfies $V_H(n)=0$. Since
+
+$$
+K_H(0)=H+1,
+\qquad
+\frac{K_H(0)}{2H+2}=\frac12,
+$$
+
+the residual majorant exactly covers the floor-compatible half-jump. This should be placed in the proof draft because it prevents a common endpoint-convention error.
+
+A3's Li--Yang audit usefully confirms that black-box theorem import fails at the raw endpoint block. With
+
+$$
+T=X,
+\qquad
+M=D\asymp X^{1/2},
+\qquad
+H=H_D\asymp X^{1/4},
+$$
+
+Case A gives
+
+$$
+H\le MT^{-49/164}=X^{33/164},
+$$
+
+and Case B gives
+
+$$
+H\le M^{35/69}T^{-2/23}=X^{23/138},
+$$
+
+both below $X^{1/4}$. This is a theorem-application guardrail, not a proof that all Bombieri--Iwaniec methods fail.
+
+A3's C2/H13 stationary-phase bookkeeping is useful but not complete. For
+
+$$
+I(\xi)=\int w_D(u)e(kX/u-\xi u)\,du,
+$$
+
+the active sign is $\xi<0$. Writing $\xi=-m$ gives
+
+$$
+u_0=\sqrt{\frac{kX}{m}},
+\qquad
+\phi(u_0)=2\sqrt{kXm},
+\qquad
+\phi''(u_0)=\frac{2m}{u_0}.
+$$
+
+The dual length is
+
+$$
+M_{\rm dual}\asymp \frac{kX}{D^2},
+$$
+
+while the large stationary-phase parameter after scaling is
+
+$$
+\Lambda\asymp \frac{kX}{D}.
+$$
+
+These two scales must remain distinct. A3 is right that smooth nonanalytic weights give rapid integration-by-parts decay, not exponential decay. However, the uniform boundary and transition estimates are not yet proved.
+
+A3's proposed numerical protocols are valuable, but no actual data have yet been committed. Round 13 must produce tables or scripts.
+
+## Rejected or risky ideas
+
+1. **Reject any claim of a new Gauss circle exponent.**
+Round 12 gives proof infrastructure, diagnostics, and theorem-audit improvements. It does not prove M9.
+
+2. **Reject treating H4 as fully source-normalized.**
+The Vaaler coefficient formula and residual constant are plausible and internally consistent, but the repo still lacks a page-level theorem citation. The Vaaler paper metadata is verified, but exact theorem normalization is still a dependency.
+
+3. **Reject arbitrary-coefficient H5a/H5b as the active target.**
+The active target is M9 with actual Vaaler coefficients $\alpha_{h,H_D}$. Arbitrary bounded coefficients and $L^1$ variants are stress tests only.
+
+4. **Reject H5r-B/H5r-L1 as active dependencies.**
+R5 controls the positive Fejer residual directly. H5r-B and H5r-L1 are now diagnostic comparisons only.
+
+5. **Reject black-box Li--Yang endpoint import.**
+Li--Yang's theorem is structurally relevant but does not cover $H\asymp MT^{-1/4}$ at the raw Vaaler endpoint. The printed Case A/B ranges and final $S/H$ target stop short of the conjectural endpoint.
+
+6. **Reject global no-go statements about Bombieri--Iwaniec or spacing methods.**
+The raw theorem mismatch is proved. A new signed spacing estimate, a different dissection, or a theorem adapted to fixed Vaaler coefficients is not ruled out.
+
+7. **Reject absorbing $\chi_4(h)$ into a bounded-variation weight without proof.**
+A periodic weight $\chi_4(h)$ has total variation $\asymp H$ on an interval of length $H$. Unless the theorem explicitly allows this, M9b must be handled by residue splitting or a fractional-frequency extension.
+
+8. **Reject treating Q1-Spectral as a universal obstruction.**
+It only blocks methods that pass through diagonal-unitary-invariant operator norms or absolute-value matrices. It does not block signed bilinear estimates or non-conjugacy statistics.
+
+9. **Reject treating H13 as an estimate.**
+H13 is a transform plus a phase-geometry diagnostic. It gives no endpoint bound without a summation theorem for the dual square-root phase and character.
+
+10. **Reject C2-SPU as proved.**
+The leading stationary phase is credible, but uniform estimates across stationary, nonstationary, boundary, and $M_{\rm dual}\asymp1$ regimes are still missing.
+
+11. **Reject the factorial-alignment example.**
+The relevant obstruction is simply bounded by divisor multiplicity in the dyadic window; PNT in arithmetic progressions is unnecessary for $\chi_4$, whose interval sums are elementary periodic sums.
+
+12. **Reject pivoting to Mellin--Perron or signed Fourier as the main route.**
+They remain comparison modules. Neither currently supplies a better replacement for M9.
+
+## Known gaps
+
+1. **H4 source-normalization gap.**
+Need an exact page/theorem citation and notation match for the finite Vaaler approximation, including $\Phi$, the sign of $\alpha_{h,H}$, the normalization of $K_H$, and the residual constant.
+
+2. **R5-Full proof-draft gap.**
+Need a complete proof covering first leg, both shifted second legs, real and integer $X$, tie-breaking for nearest integer choices, dyadic weights, dyadic overlaps, zero Fejer mode, both signs of $k$, short blocks $D<X^{1/4}$, and small-$X$ endpoint cases.
+
+3. **M9 main-term gap.**
+No agent proved
+
+$$
+\mathcal M_1(D;X),\mathcal M_2(D;X)\ll_\epsilon X^{1/4+\epsilon}.
+$$
+
+This is the central analytic bottleneck.
+
+4. **M9b fractional-frequency gap.**
+After $h=4q+r$,
+
+$$
+e(hX/(4d))=e((q+r/4)X/d).
+$$
+
+A theorem must handle fixed fractional frequencies $\beta\in\{1/4,3/4\}$ or arithmetic progressions in $h$ without uncontrolled BV loss.
+
+5. **Li--Yang subrange map gap.**
+The raw endpoint block fails. The repo still needs an exact map of which $D,H$ subranges are covered by existing Li--Yang technology and which portion of
+
+$$
+MT^{-\theta^*}<H\le MT^{-1/4}
+$$
+
+remains uncovered.
+
+6. **Signed spacing gap.**
+Q1-Spectral explains why operator norms fail to see $\chi_4$. The repo still lacks a signed-form estimate that preserves $\chi_4(d_1)\chi_4(d_2)$ or $\chi_4(h)$ through a useful inequality.
+
+7. **H13 uniform transform gap.**
+Need exact Poisson normalization modulo $4$, dual Gauss factor, leading amplitude, nonstationary integration-by-parts estimates, boundary terms, and a range table for all $D=X^\delta$, $1/4\le\delta\le1/2$.
+
+8. **H13 summation gap.**
+Even after stationary phase, the dual phase $\sqrt{Xhm}$ is Hessian-degenerate. A discrete spacing theorem or signed bilinear estimate is needed; generic full-rank tools are unavailable.
+
+9. **A2 cross-residue statistic gap.**
+The proposed statistic is not yet a lemma. It needs a precise finite matrix, normalization, a bound to be proved, and a falsification test.
+
+10. **C3 relevance gap.**
+C3-Affine/Rational parity-collapse claims must be tied to actual M9 or H13 variables before being treated as more than diagnostics.
+
+11. **Numerical evidence gap.**
+Round 12 still provides protocols rather than data. The repo needs actual R5 and M9 tables.
+
+12. **Poisson--Bessel calibration gap.**
+The calibration route remains useful for normalization and $R^{2/3}$ sanity checks, but it was not advanced in Round 12.
+
+## New lemmas to add
+
+### H4. Vaaler finite approximation with Fejer residual
+
+**Status:** external theorem dependency; internally consistent, source-normalization pending.
+
+For $H\ge1$,
+
+$$
+\psi(t)=V_H(t)+R_H(t),
+$$
+
+where
+
+$$
+V_H(t)=
+\sum_{1\le |h|\le H}
+\alpha_{h,H}e(ht),
+$$
+
+$$
+\alpha_{h,H}
+=
+-\frac{\Phi(|h|/(H+1))}{2\pi i h},
+$$
+
+and
+
+$$
+\Phi(u)=\pi u(1-u)\cot(\pi u)+u.
+$$
+
+The desired residual majorant is
+
+$$
+|R_H(t)|\le \frac{1}{2H+2}K_H(t),
+$$
+
+where
+
+$$
+K_H(t)=
+\sum_{|k|\le H}
+\left(1-\frac{|k|}{H+1}\right)e(kt).
+$$
+
+At integers, $V_H(n)=0$ and $K_H(0)/(2H+2)=1/2$, so the residual covers the floor-compatible value $\psi(n)=-1/2$.
+
+### R5. Fejer product-count residual bound
+
+**Status:** proved conditional on H4.
+
+For $X\ge2$, $X^{1/4}\le D\le X^{1/2}$, $H\asymp DX^{-1/4}$, and $|w_D|\le1$ supported on $d\asymp D$,
+
+$$
+\frac1H\sum_{d\asymp D}|w_D(d)|K_H(X/d)
+\ll_\epsilon X^{1/4+\epsilon},
+$$
+
+and for $\rho\in\{1,3\}$,
+
+$$
+\frac1H\sum_{d\asymp D}|w_D(d)|
+K_H\left(\frac{X/d+\rho}{4}\right)
+\ll_\epsilon X^{1/4+\epsilon}.
+$$
+
+### R5-Full. Total Vaaler residual bound
+
+**Status:** conditional bridge lemma; proof-draft write-up still required.
+
+Assuming H4 and R5 on all dyadic long blocks, all Vaaler residual contributions arising from H3 are
+
+$$
+\ll_\epsilon X^{1/4+\epsilon}.
+$$
+
+Short blocks $D<X^{1/4}$ are handled by $|\psi|\le1/2$.
+
+### M9. Fixed-coefficient main-term criterion
+
+**Status:** official remaining open target.
+
+If, for every dyadic $D$ with $X^{1/4}\le D\le X^{1/2}$,
+
+$$
+\mathcal M_1(D;X),\mathcal M_2(D;X)
+\ll_\epsilon X^{1/4+\epsilon},
+$$
+
+with the actual coefficients $\alpha_{h,H_D}$, then
+
+$$
+\text{H1--H3}+\text{H4}+\text{R5-Full}
+\Longrightarrow
+P(X)\ll_\epsilon X^{1/4+\epsilon}.
+$$
+
+### H5b-Shift. Fractional-frequency theorem-extension problem
+
+**Status:** open theorem-extension problem.
+
+For $\beta\in\{1/4,3/4\}$, prove or cite an estimate for sums of the form
+
+$$
+\sum_{q\asymp Q}a_{q,\beta}
+\sum_{d\asymp D}w_D(d)e((q+\beta)X/d)
+\ll_\epsilon X^{1/4+\epsilon},
+$$
+
+where $Q\le H_D/4$ and $a_{q,\beta}$ is inherited from $\alpha_{4q+r,H_D}\chi_4(r)$.
+
+### LY-Raw-Mismatch
+
+**Status:** proved theorem-application guardrail.
+
+Li--Yang's published Case A/B restrictions do not cover the raw endpoint Vaaler block. At
+
+$$
+T=X,
+\qquad
+M=D\asymp X^{1/2},
+\qquad
+H\asymp X^{1/4},
+$$
+
+Case A gives $H\le X^{33/164}$ and Case B gives $H\le X^{23/138}$, both below $X^{1/4}$.
+
+### LY-Endpoint-Gap
+
+**Status:** diagnostic, not no-go theorem.
+
+Li--Yang's final circle/divisor reduction asks for
+
+$$
+S/H\lesssim_\epsilon T^{\theta^*+\epsilon},
+\qquad
+\theta^*=0.314483\ldots,
+$$
+
+with $H\le MT^{-\theta^*}$, while the endpoint Vaaler range asks for $H\le MT^{-1/4}$.
+
+### Q1-Spectral
+
+**Status:** proved diagnostic for operator-norm-only methods.
+
+On odd denominators, $U=\operatorname{diag}(\chi_4(d))$ is unitary, and
+
+$$
+\|U^*KU\|_{\operatorname{op}}=\|K\|_{\operatorname{op}}.
+$$
+
+Thus operator-norm-only estimates do not exploit the spatial character.
+
+### H12-Trace-Invariance
+
+**Status:** proved diagnostic for pure conjugacy-invariant trace methods.
+
+If the signed matrix is exactly $U^*KU$, then
+
+$$
+\operatorname{Tr}((U^*KU)^m)=\operatorname{Tr}(K^m).
+$$
+
+This does not rule out non-conjugacy signed statistics.
+
+### H13. B-process-first transform for M9a
+
+**Status:** exploratory technical route; transform structure derived, no bound proved.
+
+Apply Poisson summation modulo $4$ to
+
+$$
+\sum_d\chi_4(d)w_D(d)e(hX/d).
+$$
+
+Expected output:
+
+$$
+\sum_m \chi_4(m)
+\int w_D(u)e(hX/u-mu/4)\,du,
+$$
+
+up to convention-dependent constants and signs. Stationarity gives
+
+$$
+m\asymp \frac{hX}{D^2}.
+$$
+
+At maximal height $h\asymp DX^{-1/4}$ and $D=X^\delta$,
+
+$$
+m\asymp X^{3/4-\delta}.
+$$
+
+The leading dual phase is square-root type and Hessian-degenerate:
+
+$$
+\Phi(h,m)\asymp\sqrt{Xhm},
+\qquad
+\det\nabla^2\Phi=0.
+$$
+
+### C2-SPU / H13-SPU. Uniform stationary phase
+
+**Status:** required technical lemma; not proved.
+
+For
+
+$$
+I(\xi)=\int w_D(u)e(kX/u-\xi u)\,du,
+$$
+
+prove uniform stationary, nonstationary, boundary, and short-dual-length estimates, with separate tracking of
+
+$$
+M_{\rm dual}\asymp \frac{kX}{D^2},
+\qquad
+\Lambda\asymp \frac{kX}{D}.
+$$
+
+### CRI. Cross-Residue Interference statistic
+
+**Status:** proposed diagnostic object, not a lemma.
+
+After splitting
+
+$$
+S_D(h)=S_1(h)-S_3(h),
+$$
+
+with
+
+$$
+S_r(h)=\sum_m w_D(4m+r)e(hX/(4m+r)),
+\qquad r\in\{1,3\},
+$$
+
+consider
+
+$$
+\mathcal S_{\rm CRI}
+=
+\sum_h w_H(h)S_1(h)\overline{S_3(h)}.
+$$
+
+This is a candidate non-conjugacy signed statistic. It requires a normalization, a target bound, and numerical falsification before promotion.
+
+### D-Align
+
+**Status:** replacement for rejected factorial-alignment heuristic.
+
+For integer $X$,
+
+$$
+\#\{d\in[X^{1/4},X^{1/2}]:d\mid X\}
+\le \tau(X)
+\ll_\epsilon X^\epsilon.
+$$
+
+Therefore exact divisor alignment alone cannot create a dense critical-block obstruction.
+
+### Phi-Special-Values
+
+**Status:** proved algebraic lemma for computation.
+
+For
+
+$$
+\Phi(u)=\pi u(1-u)\cot(\pi u)+u,
+$$
+
+one has
+
+$$
+\Phi(1/2)=1/2,
+$$
+
+$$
+\Phi(1/4)=3\pi/16+1/4,
+$$
+
+and
+
+$$
+\Phi(3/4)=-3\pi/16+3/4.
+$$
+
+## Counterexample checks to run
+
+1. **H4 source check.**
+Extract the exact Vaaler or Montgomery--Vaughan statement: coefficient formula, sign convention, $K_H$ normalization, residual constant, and integer convention.
+
+2. **H4 integer jump test.**
+Verify numerically and symbolically that $V_H(n)=0$ and $K_H(0)/(2H+2)=1/2$ for integer $n$.
+
+3. **R5 first-leg stress test.**
+Compute
+
+$$
+R_1(D;X)=\frac1{H_D}\sum_{d\asymp D}K_{H_D}(X/d)
+$$
+
+for square, near-square, nonsquare, and divisor-rich $X$.
+
+4. **R5 shifted-leg stress test.**
+For $\rho\in\{1,3\}$ compute
+
+$$
+R_{2,\rho}(D;X)=
+\frac1{H_D}\sum_{d\asymp D}
+K_{H_D}\left(\frac{X/d+\rho}{4}\right).
+$$
+
+5. **R5 continuous $X$ test.**
+Use noninteger $X=N+\eta$, including very small $\eta$, and verify that the product-count kernel
+
+$$
+\min\left(1,\frac{\Delta^2}{|X-n|^2}\right)
+$$
+
+remains uniformly summable.
+
+6. **R5 dyadic bookkeeping test.**
+Check zero mode, both signs of $k$, all dyadic blocks, smooth partition overlap, and $D<X^{1/4}$ short-block handling.
+
+7. **M9 fixed-coefficient numerics.**
+Compute $\mathcal M_1(D;X)$ and $\mathcal M_2(D;X)$ with exact $\alpha_{h,H_D}$ and report
+
+$$
+|\mathcal M_i(D;X)|/X^{1/4}.
+$$
+
+8. **M9 stress comparison.**
+Compare fixed-coefficient values to arbitrary-coefficient and $L^1$ stress norms.
+
+9. **M9b fractional-shift matrix test.**
+Compare toy spacing matrices for
+
+$$
+e(qX/d)
+$$
+
+and
+
+$$
+e((q+\beta)X/d),
+\qquad
+\beta\in\{1/4,3/4\}.
+$$
+
+Identify which rational-collision steps are stable under the shift.
+
+10. **Li--Yang line audit.**
+Record exact source labels for $S$, Case A, Case B, final $S/H$ reduction, allowed $F$ hypotheses, and weight/BV hypotheses. Do not treat phase similarity as theorem applicability.
+
+11. **Q1-Spectral matrix test.**
+Construct the actual Cauchy--Schwarz kernel arising from M9a and compare the signed quadratic form with the operator-norm bound.
+
+12. **CRI numerical falsification.**
+Compute $\mathcal S_{\rm CRI}$ and compare it with the corresponding absolute/cyclic trace statistic. If it shows no reduction, deprioritize CRI.
+
+13. **H13 Poisson normalization test.**
+Derive the exact modulo-$4$ Poisson formula under $e(t)=e^{2\pi it}$, including constants and Gauss factors.
+
+14. **H13 stationary-phase uniformity test.**
+Check the regimes $M_{\rm dual}\asymp1$, $M_{\rm dual}\gg1$, stationary point near support edge, and nonstationary tails.
+
+15. **H13 signed-spacing test.**
+After B-process-first, apply the first intended Cauchy--Schwarz or spacing step and determine whether the dual $\chi_4(m)$ survives or becomes a diagonal unitary erased by an operator norm.
+
+## Research strategy adjustment
+
+Round 12 should be recorded as a **proof-infrastructure and M9-diagnostic round**.
+
+The residual side is now provisionally under control:
+
+$$
+\text{H4}+\text{R5-Full}
+\Longrightarrow
+\text{Vaaler residual}\ll_\epsilon X^{1/4+\epsilon}.
+$$
+
+The active work should no longer focus on arbitrary residual reciprocal sums. It should focus on the fixed Vaaler main sums M9 and on whether any method can exploit the exact coefficients and characters before norm estimates erase them.
+
+The next round should keep the balanced hyperbola/Vaaler route as the main framework. It should not pivot to Mellin--Perron or signed Fourier, except as comparison modules. The serious exploratory allocation should be H13/B-process-first for M9a, because it is directly connected to the current bottleneck and may move $\chi_4$ into a place where a signed estimate can be tested.
+
+Assessment of A2: A2 contributed useful algebraic diagnostics, especially Q1-Spectral and H13, but several statements remain overbroad or stylistically inflated. The next A2 prompt should require proof-draft-ready statements, no route-closing language, and one concrete signed statistic with a falsification test.
+
+Assessment of A3: A3 contributed useful verification discipline, especially $\Phi$ values, Li--Yang endpoint mismatch, and C2 scale separation. The next A3 prompt should move from protocols to executed computations and line-by-line theorem matching. A3 should also treat M9b's BV/arithmetic-progression issue as a live gap, not as automatically covered.
+
+## Next-round prompts by agent
+
+### For A1
+
+Write the Round 13 proof-infrastructure packet.
+
+Objectives:
+
+1. **Source-normalize H4.**
+   Give the exact theorem/page/reference for the finite Vaaler approximation. Match:
+   - the function $\Phi$;
+   - the coefficient formula $\alpha_{h,H}$;
+   - the sign convention for $\psi(t)=t-\lfloor t\rfloor-\frac12$;
+   - the Fejer kernel normalization;
+   - the residual constant;
+   - the integer-discontinuity convention.
+
+2. **Write R5-Full as a complete proof.**
+   Include:
+   - first leg $K_H(X/d)$;
+   - shifted legs $K_H((X/d+\rho)/4)$ for $\rho=1,3$;
+   - real and integer $X$;
+   - nearest-integer tie rules;
+   - positivity and congruence of $\ell=4m-\rho$;
+   - dyadic weights and bounded overlap;
+   - zero mode;
+   - both signs of frequency;
+   - short blocks $D<X^{1/4}$;
+   - logarithmic losses absorbed into $X^\epsilon$.
+
+3. **Insert the bridge theorem into the proof draft.**
+   State and prove:
+
+$$
+\text{H1--H3}+\text{H4}+\text{R5-Full}+\text{M9}
+\Longrightarrow
+P(X)\ll_\epsilon X^{1/4+\epsilon}.
+$$
+
+4. **Freeze M9 as the official main target.**
+   Use actual $\alpha_{h,H_D}$ only. Put arbitrary-coefficient versions in a stress-test appendix.
+
+5. **Write the M9b theorem-extension problem precisely.**
+   Decide whether the natural formulation is:
+   - arithmetic progressions in $h$;
+   - fractional-frequency phases $e((q+\beta)X/d)$;
+   - or a theorem with periodic $h$-weights and controlled BV norm.
+
+6. **Li--Yang subrange map.**
+   Produce a table of covered and uncovered ranges in $(D,H)$ using the exact Li--Yang conditions, distinguishing raw Case A/B restrictions from the final $\theta^*$ reduction.
+
+Exploratory allocation: include a short H13 falsification checklist. State which part of the transform or first signed-spacing step would make H13 unhelpful.
+
+### For A2
+
+Produce a conservative proof-draft-ready obstruction and H13 packet. Use low-temperature referee style and avoid route-closing language.
+
+Objectives:
+
+1. **Rewrite Q1-Spectral cleanly.**
+   State the finite vector space, define $U=\operatorname{diag}(\chi_4(d))$, prove
+
+$$
+\|U^*KU\|_{\operatorname{op}}=\|K\|_{\operatorname{op}},
+$$
+
+   and list exactly which methods this blocks and which it does not block.
+
+2. **Rewrite H12 trace invariance narrowly.**
+   Prove only
+
+$$
+\operatorname{Tr}((U^*KU)^m)=\operatorname{Tr}(K^m).
+$$
+
+   Do not claim this blocks non-conjugacy signed forms.
+
+3. **Repair C3-Affine/Rational.**
+   State exact lattice variables, odd/even cases, and specify whether each statement is connected to M9/H13 or merely diagnostic.
+
+4. **Formalize H13.**
+   Give:
+   - exact Poisson summation modulo $4$ under $e(t)=e^{2\pi it}$;
+   - exact Gauss factor;
+   - stationary point;
+   - leading phase and amplitude;
+   - dual length $m\asymp hX/D^2$;
+   - range table for $D=X^\delta$, $1/4\le\delta\le1/2$;
+   - Hessian-degeneracy check;
+   - statement of the discrete spacing theorem that would be needed after transformation.
+
+5. **Define one concrete sign-preserving statistic.**
+   The Cross-Residue Interference statistic is acceptable only if made executable:
+   - finite matrix or bilinear form;
+   - normalization;
+   - target bound;
+   - precise reason it is not just $U^*KU$ conjugacy;
+   - falsification test.
+
+6. **Remove or replace factorial-alignment material.**
+   Use the divisor-bound replacement:
+
+$$
+\#\{d\in[X^{1/4},X^{1/2}]:d\mid X\}
+\le \tau(X)\ll_\epsilon X^\epsilon.
+$$
+
+Exploratory allocation: propose one signed-spacing or open-path moment for H13 that survives the first Cauchy--Schwarz step. State exactly how to falsify it numerically.
+
+### For A3
+
+Execute verification and computation tasks. Prefer scripts, exact formulas, tables, and line labels over prose.
+
+Objectives:
+
+1. **Complete H4 source audit.**
+   Extract the Vaaler theorem from a primary source or trusted standard exposition. Verify:
+   - $\Phi(u)$;
+   - coefficient formula;
+   - residual constant;
+   - Fejer kernel normalization;
+   - integer convention;
+   - sign conversion from $1/2-\{x\}$ to $\psi(t)=\{t\}-1/2$.
+
+2. **Run R5 numerical tests.**
+   Produce tables for:
+   - first leg;
+   - shifted second legs $\rho=1,3$;
+   - square $X$;
+   - near-square $X$;
+   - nonsquare $X$;
+   - divisor-rich $X$;
+   - dyadic scales $D\asymp X^{1/4},X^{3/8},X^{1/2}$.
+
+   Report values normalized by $X^{1/4}$.
+
+3. **Run M9 fixed-coefficient numerics.**
+   Compute $\mathcal M_1(D;X)$ and $\mathcal M_2(D;X)$ using exact $\alpha_{h,H_D}$. Compare:
+   - fixed coefficients;
+   - random/arbitrary stress coefficients;
+   - $L^1$ stress norm.
+
+   Report $|\mathcal M_i|/X^{1/4}$.
+
+4. **Line-by-line Li--Yang audit.**
+   Record exact labels and lines for:
+   - definition of $S$;
+   - Case A;
+   - Case B;
+   - final $S/H$ target;
+   - $H,M,T$ restrictions;
+   - allowed weight hypotheses;
+   - allowed $F$ hypotheses.
+
+   Determine whether M9b is best represented as an $h$-arithmetic progression, a fractional-frequency shift, or an impermissible BV weight.
+
+5. **Finish C2/H13 stationary-phase uniformity.**
+   Prove or clearly state the missing estimates for:
+   - interior stationary range;
+   - nonstationary integration by parts;
+   - stationary point at support boundary;
+   - $M_{\rm dual}\asymp1$;
+   - dependence on $\Lambda\asymp kX/D$.
+
+   Do not infer double-sum cancellation from one-integral estimates.
+
+6. **Implement signed-spacing toy tests.**
+   Build:
+   - Q1-Spectral operator-norm comparison;
+   - Cross-Residue Interference statistic if A2 specifies it;
+   - M9b fractional-shift toy spacing matrix.
+
+   Report numerical results and code-ready formulas.
+
+Exploratory allocation: test H13 near $D\asymp X^{1/2}$, where the dual length is closest to the original Vaaler height. Compare the signed dual character case with the unsigned dual case.
+
+## Confidence
+
+High confidence in the selected balanced hyperbola/Vaaler route as the current reduction framework.
+
+High confidence that no new Gauss circle exponent was proved in Round 12.
+
+High confidence that H1--H3 remain valid proved reductions.
+
+Moderate-to-high confidence that H4 is correctly stated, but only moderate confidence in exact source normalization until a page-level citation is supplied.
+
+High confidence that R5 is mathematically sound conditional on H4.
+
+Moderate-to-high confidence that R5-Full clears the full Vaaler residual after complete proof-draft bookkeeping.
+
+High confidence that M9 fixed-coefficient main sums are now the official remaining bottleneck.
+
+High confidence that Li--Yang cannot be imported as a black box for the raw endpoint Vaaler block.
+
+High confidence in Q1-Spectral as a restricted operator-norm character-blindness diagnostic.
+
+Moderate confidence that H13 is worth continued exploration, especially near $D\asymp X^{1/2}$.
+
+Low confidence that H13, Cross-Residue Interference, Mellin--Perron, signed Fourier truncation, or current printed Li--Yang technology reaches the endpoint without new input.
+
+Overall Round 12 judgment: productive, but not a proof round. The residual side is provisionally controlled; the hard work has been localized to M9 and to the search for a sign-preserving method that can exploit the actual Vaaler coefficients and $\chi_4$ before standard norm estimates erase them.
+
+## Round 13 Update
+
+Timestamp: 2026-06-15 22:45:20
+
+See `rounds/web-research-test/round_013/judge/judge-013.md`.
+
+## Selected main route
+
+Source anchors: Round 13 packet; Vaaler's periodic majorant theorem and Fejer residual framework are in *Some extremal functions in Fourier analysis*, especially Theorem 18 and the surrounding definitions of $j_N,k_N$ ; Li--Yang's arXiv page verifies the paper metadata, authors, v2 date, DOI, and abstract statement that the proof uses Bombieri--Iwaniec, a new first-spacing estimate, and Huxley's second-spacing results.
+
+Keep the balanced arithmetic hyperbola/Vaaler route as the selected framework:
+
+$$
+P(X)=N(\sqrt X)-\pi X
+\longrightarrow
+\text{symmetric hyperbola}
+\longrightarrow
+\text{floor-compatible sawtooth}
+\longrightarrow
+\text{finite Vaaler}
+\longrightarrow
+\text{fixed-coefficient reciprocal main sums}.
+$$
+
+The Round 13 bridge remains:
+
+$$
+\text{H1--H3}+\text{H4}+\text{R5-Full}+\text{M9}
+\Longrightarrow
+P(X)\ll_\epsilon X^{1/4+\epsilon}.
+$$
+
+This is **not** a proof of the Gauss circle conjecture. H1--H3 are the accepted exact arithmetic reductions; H4 is now substantially source-located in Vaaler's periodic approximation theorems but still needs exact notation translation into the repo's convention; R5-Full is a proof-draft-level product-count residual bound conditional on H4; M9 remains open and is the active analytic bottleneck.
+
+The proof should use the floor-compatible sawtooth
+
+$$
+\psi(t)=t-\lfloor t\rfloor-\frac12,
+\qquad
+\psi(n)=-\frac12.
+$$
+
+The exact arithmetic input remains
+
+$$
+P(X)
+=
+-4\sum_{d\le y}\chi_4(d)\psi(X/d)
++
+4\sum_{d\le y}
+\left[
+\psi\left(\frac{X/d+1}{4}\right)
+-
+\psi\left(\frac{X/d+3}{4}\right)
+\right]
++
+O(1),
+$$
+
+where
+
+$$
+y=\lfloor X^{1/2}\rfloor.
+$$
+
+For dyadic blocks
+
+$$
+X^{1/4}\le D\le X^{1/2},
+$$
+
+use local Vaaler height
+
+$$
+H_D\asymp D X^{-1/4}.
+$$
+
+Blocks with $D<X^{1/4}$ should be handled trivially before invoking Vaaler, using $|\psi|\le 1/2$.
+
+The official remaining target is M9 with actual Vaaler coefficients:
+
+$$
+\alpha_{h,H}
+=
+-\frac{\Phi(|h|/(H+1))}{2\pi i h},
+\qquad
+\Phi(u)=\pi u(1-u)\cot(\pi u)+u,
+\qquad
+0<u<1.
+$$
+
+Thus
+
+$$
+\mathcal M_1(D;X)
+=
+-4\sum_{1\le |h|\le H_D}
+\alpha_{h,H_D}
+\sum_{d\asymp D}
+\chi_4(d)w_D(d)e(hX/d),
+$$
+
+and
+
+$$
+\mathcal M_2(D;X)
+=
+4\sum_{1\le |h|\le H_D}
+\alpha_{h,H_D}
+\left(e(h/4)-e(3h/4)\right)
+\sum_{d\asymp D}
+w_D(d)e(hX/(4d)).
+$$
+
+Since
+
+$$
+e(h/4)-e(3h/4)=2i\chi_4(h),
+$$
+
+one may also write
+
+$$
+\mathcal M_2(D;X)
+=
+8i\sum_{1\le |h|\le H_D}
+\alpha_{h,H_D}\chi_4(h)
+\sum_{d\asymp D}
+w_D(d)e(hX/(4d)).
+$$
+
+The required endpoint-strength estimate is
+
+$$
+\mathcal M_1(D;X),\mathcal M_2(D;X)
+\ll_\epsilon X^{1/4+\epsilon}
+$$
+
+uniformly over dyadic $D$.
+
+The fixed Fejer residual is no longer the central bottleneck. It is provisionally controlled by R5/R5-Full, conditional on H4 and complete dyadic bookkeeping. Arbitrary-coefficient residual targets H5r-B and H5r-L1 should remain stress tests only.
+
+## Useful fragments by source
+
+### From A1
+
+A1's main contribution is the proof-infrastructure packet. The valuable claim is the conditional bridge
+
+$$
+\text{H1--H3}+\text{H4}+\text{R5-Full}+\text{M9}
+\Longrightarrow
+P(X)\ll_\epsilon X^{1/4+\epsilon}.
+$$
+
+A1 also gives the clean R5 mechanism. The Fejer kernel is
+
+$$
+K_H(t)
+=
+\sum_{|k|\le H}
+\left(1-\frac{|k|}{H+1}\right)e(kt)
+=
+\frac1{H+1}
+\left(\frac{\sin \pi(H+1)t}{\sin \pi t}\right)^2,
+$$
+
+and
+
+$$
+K_H(t)\ll \min\left(H,\frac1{H\|t\|^2}\right).
+$$
+
+Therefore
+
+$$
+\frac1H K_H(t)
+\ll
+\min\left(1,\frac1{H^2\|t\|^2}\right).
+$$
+
+For the first residual leg, choose $m$ nearest to $X/d$. For $d\asymp D$,
+
+$$
+\left\|\frac Xd\right\|
+=
+\frac{|X-md|}{d}
+\asymp
+\frac{|X-md|}{D}.
+$$
+
+With
+
+$$
+\Delta=\frac{D}{H}\asymp X^{1/4},
+$$
+
+one gets
+
+$$
+\frac1H K_H(X/d)
+\ll
+\min\left(1,\frac{\Delta^2}{|X-md|^2}\right).
+$$
+
+Grouping by $n=md$ and using $\tau(n)\ll_\epsilon n^\epsilon$ gives
+
+$$
+\frac1H\sum_{d\asymp D}K_H(X/d)
+\ll
+\sum_{n\asymp X}
+\tau(n)
+\min\left(1,\frac{\Delta^2}{|X-n|^2}\right)
+\ll_\epsilon X^{1/4+\epsilon}.
+$$
+
+The dyadic-tail justification is elementary: the central range $|X-n|\le \Delta$ contributes $O(\Delta X^\epsilon)$, and the dyadic annulus $2^{j-1}\Delta<|X-n|\le 2^j\Delta$ contributes $O(2^{-j}\Delta X^\epsilon)$.
+
+For the second residual leg,
+
+$$
+K_H\left(\frac{X/d+\rho}{4}\right),
+\qquad \rho\in\{1,3\},
+$$
+
+near-integrality is equivalent to
+
+$$
+X\approx d(4m-\rho).
+$$
+
+Writing
+
+$$
+\ell=4m-\rho,
+\qquad
+\ell\equiv-\rho\pmod4,
+$$
+
+again produces a product-counting problem. The congruence restriction only reduces divisor multiplicity.
+
+A1's shifted-$F$ formulation of M9b is useful but should be recorded carefully. The identity
+
+$$
+e(hX/(4d))(e(h/4)-e(3h/4))
+=
+e\left(h\left(\frac{X}{4d}+\frac14\right)\right)
+-
+e\left(h\left(\frac{X}{4d}+\frac34\right)\right)
+$$
+
+rewrites M9b as two $h$-linear sums with phase functions
+
+$$
+F_{\rho,D}(z)=\frac{1}{4z}+\frac{\rho D}{4X},
+\qquad \rho\in\{1,3\}.
+$$
+
+This is the preferred formulation for Li--Yang comparison because it avoids inserting a nonsmooth periodic $\chi_4(h)$ weight into the $h$-amplitude. However, theorem-level applicability is still open: one must verify that the intended Bombieri--Iwaniec/Li--Yang theorem permits this $D,X$-dependent constant shift uniformly.
+
+### From A2
+
+A2's strongest contribution is Q1-Spectral, a precise character-blindness diagnostic. On the odd denominator space
+
+$$
+\mathcal V_D=\ell^2(\mathcal D_{\rm odd}),
+\qquad
+\mathcal D_{\rm odd}=\{d:D\le d<2D,\ 2\nmid d\},
+$$
+
+define
+
+$$
+U=\operatorname{diag}(\chi_4(d)).
+$$
+
+Since $\chi_4(d)^2=1$ on odd $d$, $U$ is a diagonal unitary involution. Therefore for any matrix $K$,
+
+$$
+\|U^*KU\|_{\operatorname{op}}=\|K\|_{\operatorname{op}}.
+$$
+
+Thus an argument that first places $\chi_4(d)$ into a diagonal conjugation and then estimates by operator norm, spectral radius, Schur/Gershgorin, Frobenius norm, or absolute-value matrix cannot exploit the spatial character. This is a useful proved diagnostic, but only under its stated matrix-reduction hypotheses.
+
+A2's trace observation is also correct in its restricted form:
+
+$$
+\operatorname{Tr}((U^*KU)^m)=\operatorname{Tr}(K^m).
+$$
+
+This blocks pure conjugacy-invariant trace statistics from seeing the character. It does not block non-conjugacy signed forms, cross-residue statistics, open-path moments, or any method that estimates the signed form before passing to a unitarily invariant norm.
+
+A2's H13 transform remains the serious exploratory fragment. Splitting M9a modulo $4$ and applying Poisson summation should give a dual Gauss factor
+
+$$
+e(n/4)-e(3n/4)=2i\chi_4(n),
+$$
+
+and a transform of schematic form
+
+$$
+\sum_d\chi_4(d)w_D(d)e(hX/d)
+=
+c\sum_n\chi_4(n)
+\int w_D(u)e(hX/u-nu/4)\,du,
+$$
+
+with convention-dependent constant $c$. For the active sign, writing $n=-m$ gives dual length
+
+$$
+m\asymp \frac{hX}{D^2}.
+$$
+
+At maximal height $h\asymp H_D\asymp DX^{-1/4}$ and $D=X^\delta$,
+
+$$
+m\asymp X^{3/4-\delta},
+\qquad
+1/4\le\delta\le1/2.
+$$
+
+Thus H13 is roughly balanced only near $D\asymp X^{1/2}$ and lengthens the dual variable for smaller $D$. The leading phase is square-root type,
+
+$$
+\Phi(h,m)\asymp \sqrt{Xhm},
+$$
+
+and
+
+$$
+\det\nabla^2\Phi=0.
+$$
+
+So H13 is not a route to generic full-rank stationary phase or generic full-rank decoupling. It is an exploratory transform that needs a discrete signed spacing theorem after transformation.
+
+A2's replacement of the old factorial-alignment heuristic by
+
+$$
+\#\{d\in[X^{1/4},X^{1/2}]:d\mid X\}
+\le \tau(X)\ll_\epsilon X^\epsilon
+$$
+
+is correct and should be preserved. The earlier factorial obstruction should be removed.
+
+A2's CRI statistic is not yet a lemma. It is a proposed signed statistic that needs a normalization, a derivation from M9, and a falsification test.
+
+### From A3
+
+A3's best contribution is audit discipline. A3 correctly keeps H4 source-normalization pending, R5 conditional on H4, and M9 open. A3 also correctly verifies the endpoint mismatch for Li--Yang's raw Case A/B restrictions and separates the C2/H13 dual length
+
+$$
+M_{\rm dual}\asymp \frac{kX}{D^2}
+$$
+
+from the stationary-phase large parameter
+
+$$
+\Lambda\asymp \frac{kX}{D}.
+$$
+
+A3's exact values of the Vaaler coefficient function are useful for numerical implementation:
+
+$$
+\Phi(1/2)=\frac12,
+$$
+
+$$
+\Phi(1/4)=\frac{3\pi}{16}+\frac14,
+$$
+
+$$
+\Phi(3/4)=-\frac{3\pi}{16}+\frac34.
+$$
+
+Thus $\Phi(1/4)\ne \Phi(3/4)$; M9 numerics must not assume symmetry.
+
+A3's integer-jump check is correct. If the Vaaler polynomial vanishes at integer arguments and
+
+$$
+K_H(0)=H+1,
+$$
+
+then the residual majorant with coefficient $(2H+2)^{-1}$ gives
+
+$$
+\frac{K_H(0)}{2H+2}=\frac12,
+$$
+
+which exactly covers the discrepancy between the trigonometric midpoint value and the floor-compatible value $\psi(n)=-1/2$.
+
+A3's Li--Yang audit is useful. Li--Yang define a double sum of the schematic form
+
+$$
+S=
+\sum_{H\le h\le2H}g(h/H)
+\sum_{M\le m\le2M}G(m/M)
+e\left(\frac{hT}{M}F(m/M)\right),
+$$
+
+with bounded-variation weights and derivative/nondegeneracy hypotheses on $F$. The uploaded TeX audit records Case A, Case B, and the final circle/divisor reduction. At the raw endpoint block
+
+$$
+T=X,
+\qquad
+M=D\asymp X^{1/2},
+\qquad
+H=H_D\asymp X^{1/4},
+$$
+
+Case A gives
+
+$$
+H\le MT^{-49/164}=X^{33/164}<X^{1/4},
+$$
+
+and Case B gives
+
+$$
+H\le M^{35/69}T^{-2/23}=X^{23/138}=X^{1/6}<X^{1/4}.
+$$
+
+Their final range also only reaches
+
+$$
+H\le MT^{-\theta^*},
+\qquad
+\theta^*=0.314483\ldots,
+$$
+
+not the endpoint
+
+$$
+H\le MT^{-1/4}.
+$$
+
+The arXiv page verifies that Li--Yang's paper is arXiv:2308.14859v2, by Xiaochun Li and Xuerui Yang, last revised 14 September 2023, and states the Bombieri--Iwaniec / first-spacing / second-spacing mechanism.
+
+A3's weakness is execution: Round 13 still contains scripts and protocols, not numerical tables. The next round must run the tests or provide reproducible scripts with actual output.
+
+## Rejected or risky ideas
+
+1. **Reject any claim of a new exponent.**
+Round 13 proves no estimate for M9, hence does not prove
+
+$$
+P(X)\ll_\epsilon X^{1/4+\epsilon}.
+$$
+
+2. **Reject treating R5-Full as unconditional before H4 is fully normalized.**
+The product-count proof is sound conditional on the Vaaler residual theorem. The Vaaler source is now located more precisely in the periodic approximation section of Vaaler's paper, but the repo still needs a clean notation translation from $N,j_N,k_N$ to $H,\alpha_{h,H},K_H$.
+
+3. **Reject H5r-B and H5r-L1 as active dependencies.**
+The residual is controlled directly by the positive Fejer kernel and product counting. Arbitrary bounded coefficients and termwise $L^1$ residual norms are stress tests only.
+
+4. **Reject black-box Li--Yang endpoint import.**
+The phase class is structurally related, but the raw Case A/B and final $\theta^*$ restrictions do not reach the endpoint Vaaler height. This is a theorem-application guardrail, not a no-go theorem.
+
+5. **Reject global no-go claims for Bombieri--Iwaniec, Li--Yang, or decoupling.**
+Q1-Spectral only blocks arguments that reduce to diagonal-unitary conjugation followed by unitarily invariant norms or absolute-value matrices. It does not rule out all signed estimates or all decoupling formulations.
+
+6. **Reject CRI as a proved escape.**
+CRI is a proposed cross-residue statistic. It may avoid the literal $U^*KU$ conjugacy model, but no bound or reduction to M9 is supplied. A standard operator-norm bound on the off-diagonal block may still erase signs.
+
+7. **Reject H13 as an endpoint estimate.**
+H13 is a formal transform, not a sum bound. It preserves $\chi_4$ at the Poisson/Gauss-factor level, but the dual phase is Hessian-degenerate and direct differencing may collapse the dual character again.
+
+8. **Reject the factorial-alignment obstruction.**
+Exact alignments inside $[X^{1/4},X^{1/2}]$ are bounded by $\tau(X)\ll_\epsilon X^\epsilon$. They do not produce a dense obstruction.
+
+9. **Reject unsafe float-only numerical tests near Fejer spikes.**
+Evaluating $K_H(X/d)$ with ordinary floating-point sine near integer or near-integer arguments can create artificial blowups or miss exact resonances. R5 and M9 numerical tests should use high precision or exact modular/rational handling for resonance checks.
+
+10. **Reject the textual claim $\alpha_{-h,H}=-\overline{\alpha_{h,H}}$.**
+With the coefficient convention above,
+
+$$
+\alpha_{-h,H}=\overline{\alpha_{h,H}}.
+$$
+
+Numerical code that uses the conjugate may still be correct, but the proof text must be fixed.
+
+11. **Reject treating M9b as automatically covered by M9a.**
+The shifted-$F$ representation is preferable, but theorem-level applicability still has to be checked. The fractional-frequency representation
+
+$$
+e((q+\beta)X/d),
+\qquad
+\beta\in\{1/4,3/4\},
+$$
+
+and the shifted-$F$ representation are algebraically related but have different theorem-hypothesis risks.
+
+12. **Reject pivoting to Mellin--Perron or signed Fourier as the main route.**
+Both remain comparison modules. Neither currently replaces M9.
+
+## Known gaps
+
+1. **H4 notation translation.**
+Vaaler's Theorem 18 states the periodic approximation and residual bound
+
+$$
+|\psi*j_N(x)-\psi(x)|\le (2N+2)^{-1}k_N(x),
+$$
+
+and Theorem 6 gives the Fourier transform coefficient shape for $J$. This strongly supports H4. The repo still needs to translate Vaaler's $N,j_N,k_N,\widehat J_{N+1}(n)$ notation into
+
+$$
+\psi(t)=\sum_{1\le |h|\le H}\alpha_{h,H}e(ht)+R_H(t),
+\qquad
+|R_H(t)|\le (2H+2)^{-1}K_H(t),
+$$
+
+with exact conventions.
+
+2. **H4 floor-compatible conversion.**
+Vaaler's periodic $\psi$ is the centered sawtooth. The proof draft must explicitly state why the floor-compatible convention $\psi(n)=-1/2$ is covered by the residual majorant at integer points.
+
+3. **R5-Full write-up details.**
+The proof must include nearest-integer tie rules, real and integer $X$, second-leg congruences $\ell=4m-\rho$, positivity/size of $\ell$, zero mode, both frequency signs, dyadic weights, bounded overlap, short blocks, and logarithmic losses.
+
+4. **M9 remains open.**
+No endpoint proof is supplied for $\mathcal M_1(D;X)$ or $\mathcal M_2(D;X)$.
+
+5. **M9b theorem-extension gap.**
+The shifted functions
+
+$$
+F_{\rho,D}(z)=\frac{1}{4z}+\frac{\rho D}{4X}
+$$
+
+have the same derivative nondegeneracy as $1/(4z)$, but Li--Yang applicability with this $D,X$-dependent constant shift must be checked line by line. If using the fractional-frequency representation instead, the theorem must handle $q+\beta$ with $\beta\in\{1/4,3/4\}$.
+
+6. **Li--Yang subrange map incomplete.**
+The endpoint block fails. The repo still needs a full $(D,H)$ map showing which subranges are covered by existing estimates and which remain in the high-frequency gap.
+
+7. **Character-preserving spacing gap.**
+Q1-Spectral tells us what fails. The repo still lacks an actual signed spacing inequality that keeps $\chi_4$ or the fixed Vaaler coefficients alive long enough to gain cancellation.
+
+8. **H13-SPU uniform transform gap.**
+H13 needs exact constants, signs, active dual sign, stationary phase, amplitude, nonstationary integration by parts, boundary stationary points, and short-dual-length regimes. It then needs a summation theorem; stationary phase of one integral is not enough.
+
+9. **CRI normalization gap.**
+CRI must state the exact bilinear/moment it controls, the target scale needed to imply M9, and a falsification test. As written, it is only a proposed statistic.
+
+10. **Numerical evidence gap.**
+A3 supplied plans and code sketches but not executed tables. Round 14 should produce actual R5/M9 values.
+
+11. **Numerical robustness gap.**
+Fejer and M9 tests must use exact or high-precision phase evaluation near rational resonances. The code must handle $H_D\ge1$, short-block exclusion, negative frequencies, and the correct $\alpha_{-h,H}$ relation.
+
+12. **Dyadic-weight specification.**
+The proof draft must define the dyadic partition $w_D$, its bounded overlap, and how signed weights are replaced by $|w_D|$ only in the positive residual estimate.
+
+## New lemmas to add
+
+### H4-R13. Vaaler periodic finite approximation with Fejer residual
+
+**Status:** external theorem now source-located; repo-normalization still pending.
+
+Vaaler's Theorem 18 gives a trigonometric polynomial approximation to the periodic sawtooth with residual bounded by a Fejer-type kernel:
+
+$$
+|\psi*j_N(x)-\psi(x)|\le (2N+2)^{-1}k_N(x).
+$$
+
+Together with the Fourier coefficient formula for $J$,
+
+$$
+\widehat J(t)=\pi t(1-|t|)\cot(\pi t)+|t|
+\qquad (0<|t|<1),
+$$
+
+this supports the repo form
+
+$$
+\psi(t)
+=
+\sum_{1\le |h|\le H}\alpha_{h,H}e(ht)+R_H(t),
+$$
+
+where
+
+$$
+\alpha_{h,H}
+=
+-\frac{\Phi(|h|/(H+1))}{2\pi i h},
+\qquad
+\Phi(u)=\pi u(1-u)\cot(\pi u)+u,
+$$
+
+and
+
+$$
+|R_H(t)|\le \frac1{2H+2}K_H(t).
+$$
+
+The next draft must explicitly map $N$ to $H$ and $k_N$ to $K_H$.
+
+### R5-R13. Fejer product-count residual bound
+
+**Status:** proved conditional on H4.
+
+For $X\ge2$, $X^{1/4}\le D\le X^{1/2}$, $H\asymp D X^{-1/4}$, and $|w_D|\le1$ supported on $d\asymp D$,
+
+$$
+\frac1H\sum_{d\asymp D}|w_D(d)|K_H(X/d)
+\ll_\epsilon X^{1/4+\epsilon},
+$$
+
+and for $\rho\in\{1,3\}$,
+
+$$
+\frac1H\sum_{d\asymp D}|w_D(d)|
+K_H\left(\frac{X/d+\rho}{4}\right)
+\ll_\epsilon X^{1/4+\epsilon}.
+$$
+
+### R5-Full-R13. Total Vaaler residual bound
+
+**Status:** conditional bridge lemma.
+
+Assuming H4-R13 and R5-R13 for every dyadic block, all Vaaler residuals arising from H3 contribute
+
+$$
+\ll_\epsilon X^{1/4+\epsilon}.
+$$
+
+Short blocks $D<X^{1/4}$ are handled trivially.
+
+### Bridge-R13. Conditional endpoint reduction
+
+**Status:** proved conditional theorem.
+
+If H1--H3, H4-R13, R5-Full-R13, and M9 hold, then
+
+$$
+P(X)\ll_\epsilon X^{1/4+\epsilon}.
+$$
+
+### M9-R13. Fixed-coefficient main-term criterion
+
+**Status:** official remaining open target.
+
+For every dyadic
+
+$$
+X^{1/4}\le D\le X^{1/2},
+$$
+
+prove
+
+$$
+\mathcal M_1(D;X),\mathcal M_2(D;X)
+\ll_\epsilon X^{1/4+\epsilon}
+$$
+
+with the actual coefficients $\alpha_{h,H_D}$.
+
+### M9b-ShiftedF-R13
+
+**Status:** open theorem-extension target; preferred formulation.
+
+For $\rho\in\{1,3\}$ define
+
+$$
+F_{\rho,D}(z)=\frac{1}{4z}+\frac{\rho D}{4X}.
+$$
+
+Then
+
+$$
+\frac{hX}{D}F_{\rho,D}(d/D)
+=
+h\left(\frac{X}{4d}+\frac{\rho}{4}\right).
+$$
+
+Thus M9b can be treated as the difference of two reciprocal sums with shifted phase functions. The derivative determinant remains
+
+$$
+F'F'''-3(F'')^2=-\frac{3}{8}z^{-6},
+$$
+
+but theorem-level applicability remains open.
+
+### M9b-FractionalFrequency-R13
+
+**Status:** equivalent stress formulation; theorem gap.
+
+Splitting $h=4q+r$, $r\in\{1,3\}$, yields phases
+
+$$
+e((q+r/4)X/d).
+$$
+
+This formulation is useful for numerical testing and for checking whether spacing matrices are invariant under fixed fractional shifts.
+
+### Alpha-Conjugacy-R13
+
+**Status:** correction lemma.
+
+With
+
+$$
+\alpha_{h,H}
+=
+-\frac{\Phi(|h|/(H+1))}{2\pi i h},
+$$
+
+one has
+
+$$
+\alpha_{-h,H}=\overline{\alpha_{h,H}}.
+$$
+
+Numerical and algebraic reductions over positive $h$ must use this relation.
+
+### LY-Raw-Mismatch-R13
+
+**Status:** proved theorem-application guardrail.
+
+For
+
+$$
+T=X,\qquad M=D\asymp X^{1/2},\qquad H=H_D\asymp X^{1/4},
+$$
+
+Li--Yang Case A allows only
+
+$$
+H\le X^{33/164},
+$$
+
+and Case B gives
+
+$$
+H\le X^{23/138}=X^{1/6}.
+$$
+
+Both are below $X^{1/4}$. Therefore their raw theorem cannot be imported for the endpoint Vaaler block.
+
+### LY-FinalGap-R13
+
+**Status:** diagnostic.
+
+Li--Yang's final circle/divisor reduction reaches
+
+$$
+H\le MT^{-\theta^*},
+\qquad
+\theta^*=0.314483\ldots,
+$$
+
+whereas the Vaaler endpoint requires
+
+$$
+H\le MT^{-1/4}.
+$$
+
+At $D=M=X^{1/2}$, the gap is roughly
+
+$$
+X^{0.1855\ldots}\lesssim H\lesssim X^{1/4}.
+$$
+
+### Q1-Spectral-R13
+
+**Status:** proved diagnostic with restricted hypotheses.
+
+If the spatial character enters only as a diagonal unitary conjugation
+
+$$
+K\mapsto U^*KU,
+\qquad
+U=\operatorname{diag}(\chi_4(d)),
+$$
+
+then operator-norm-only or absolute-value matrix estimates cannot exploit the character:
+
+$$
+\|U^*KU\|_{\operatorname{op}}=\|K\|_{\operatorname{op}}.
+$$
+
+### H12-Trace-R13
+
+**Status:** proved diagnostic with restricted hypotheses.
+
+For pure conjugacy-invariant traces,
+
+$$
+\operatorname{Tr}((U^*KU)^m)=\operatorname{Tr}(K^m).
+$$
+
+This blocks only pure conjugacy-cycle statistics, not all signed statistics.
+
+### H13-R13. B-process-first M9a transform
+
+**Status:** formal transform / exploratory target.
+
+Modulo-$4$ Poisson summation for M9a should produce a dual $\chi_4$ factor and dual length
+
+$$
+m\asymp \frac{hX}{D^2}.
+$$
+
+At maximal height and $D=X^\delta$,
+
+$$
+m\asymp X^{3/4-\delta}.
+$$
+
+The leading phase is $\sqrt{Xhm}$ and has zero Hessian determinant. H13 needs a uniform transform and a signed spacing theorem before it becomes useful for M9.
+
+### CRI-R13. Cross-residue interference statistic
+
+**Status:** proposed falsification object, not a lemma.
+
+Split
+
+$$
+S_\chi(h,D)=S_1(h,D)-S_3(h,D),
+$$
+
+where $S_r$ sums over $d\equiv r\pmod4$. A possible statistic is a cross-residue bilinear form involving $S_1\overline{S_3}$. It must be normalized and shown to imply a bound for M9 before promotion.
+
+### D-Align-R13
+
+**Status:** proved elementary guardrail.
+
+Exact divisibility alignments in the critical interval satisfy
+
+$$
+\#\{d\in[X^{1/4},X^{1/2}]:d\mid X\}
+\le \tau(X)\ll_\epsilon X^\epsilon.
+$$
+
+## Counterexample checks to run
+
+1. **H4 source-normalization check.**
+Extract from Vaaler the exact definitions of $\psi$, $j_N$, $k_N$, $\widehat J$, and the residual inequality. Map them to $H,\alpha_{h,H},K_H$.
+
+2. **H4 integer-jump test.**
+Check directly that the Vaaler polynomial vanishes at integer arguments and that
+
+$$
+\frac{K_H(0)}{2H+2}=\frac12
+$$
+
+covers $|\psi(n)|=1/2$.
+
+3. **R5 first-leg stress test.**
+Compute
+
+$$
+\frac1{H_D}\sum_{d\asymp D}K_{H_D}(X/d)
+$$
+
+for square, nonsquare, near-square, and divisor-rich $X$.
+
+4. **R5 shifted-leg stress test.**
+For $\rho\in\{1,3\}$ compute
+
+$$
+\frac1{H_D}
+\sum_{d\asymp D}K_{H_D}\left(\frac{X/d+\rho}{4}\right).
+$$
+
+5. **R5 nearest-integer tie check.**
+Test cases where $X/d$ or $(X/d+\rho)/4$ lies exactly halfway between integers. Fix a deterministic tie rule and verify the divisor-count proof remains valid.
+
+6. **Short-block check.**
+Verify that blocks $D<X^{1/4}$ are removed before Vaaler is invoked and contribute $O(X^{1/4})$ up to logarithms.
+
+7. **M9 fixed-coefficient numerics.**
+Compute $\mathcal M_1(D;X)$ and $\mathcal M_2(D;X)$ with exact $\alpha_{h,H_D}$ and report
+
+$$
+|\mathcal M_i(D;X)|/X^{1/4}.
+$$
+
+8. **M9 stress comparison.**
+Compare fixed coefficients with arbitrary phase coefficients and dyadic $L^1$ stress norms.
+
+9. **Coefficient-conjugacy test.**
+Verify numerically and symbolically that positive/negative frequency recombination uses
+
+$$
+\alpha_{-h,H}=\overline{\alpha_{h,H}}.
+$$
+
+10. **High-precision Fejer test.**
+Evaluate Fejer kernels near exact resonances using high precision or exact modular arithmetic, not ordinary float-only sine calls.
+
+11. **M9b shifted-$F$ theorem audit.**
+Check whether the relevant Li--Yang theorem allows
+
+$$
+F_{\rho,D}(z)=\frac1{4z}+\frac{\rho D}{4X}
+$$
+
+uniformly in $D,X$ and whether all constants in derivative hypotheses remain admissible.
+
+12. **M9b fractional-frequency matrix test.**
+Compare matrices with phases
+
+$$
+e(qX/d),\qquad e((q+\beta)X/d),
+\qquad \beta\in\{1/4,3/4\}.
+$$
+
+Check whether operator norms are merely diagonal-unitary conjugates, and whether any signed statistic changes.
+
+13. **Q1-Spectral matrix test.**
+Construct the actual Gram matrix arising after a Cauchy--Schwarz step on M9a and verify whether the character enters only as $U^*KU$.
+
+14. **CRI falsification test.**
+Compute the signed cross-residue statistic and compare it to the absolute majorant and to an operator-norm bound.
+
+15. **H13 transform test.**
+Derive exact constants and signs in the modulo-$4$ Poisson transform under $e(t)=e^{2\pi it}$.
+
+16. **H13-SPU test.**
+Prove or numerically test stationary, nonstationary, support-boundary, and $m\asymp1$ regimes for
+
+$$
+I(\xi)=\int w_D(u)e(hX/u-\xi u/4)\,du.
+$$
+
+17. **Li--Yang line audit.**
+Record exact source labels and line numbers for the definition of $S$, Case A, Case B, the main theorem, and the final $S/H$ reduction.
+
+18. **Mellin--Perron and signed Fourier comparison.**
+Keep these as comparison modules only. Test whether their replacement errors reduce to M9-like or Fejer/product-count structures.
+
+## Research strategy adjustment
+
+Round 13 should be recorded as a proof-infrastructure and diagnostic round. No exponent improvement has been proved.
+
+The residual side is provisionally controlled: R5 product-counting removes the fixed Fejer residual from the critical path, conditional on the Vaaler theorem and careful dyadic bookkeeping. The active mathematical bottleneck is now M9, with the exact Vaaler coefficients and the character placements preserved.
+
+The next round should not expand the number of speculative routes. It should do three narrow things:
+
+1. **Finish the proof infrastructure.**
+Source-normalize H4 from Vaaler, write R5-Full as a complete lemma, and insert the bridge theorem into the best proof draft.
+
+2. **Audit M9 against known technology.**
+Use the shifted-$F$ M9b formulation and the original M9a formulation to create a theorem-level Li--Yang/Bombieri--Iwaniec map. Distinguish raw Case A/B restrictions, final $\theta^*$ restrictions, low-height ranges, and the uncovered endpoint range.
+
+3. **Test sign-preserving possibilities before over-investing.**
+Q1-Spectral should be used as a filter: any proposed signed method that immediately becomes an operator norm or absolute-value matrix should be deprioritized. H13 and CRI receive one more round of focused, falsifiable development.
+
+A2 and A3 should be assessed separately:
+
+- A2 contributed strong formula-level diagnostics, especially Q1-Spectral, H12, D-Align, and H13. The weakness is overpromotion of CRI/C3/open-path ideas before estimates exist. A2 should now produce proof-draft-ready, bounded-scope diagnostics and one falsifiable signed statistic.
+- A3 contributed useful verification discipline, especially $\Phi$ values, Li--Yang endpoint mismatch, and scale separation in C2/H13. The weakness is that computations were not executed and some code/text details need correction. A3 should now produce actual tables and exact source-line audits.
+
+## Next-round prompts by agent
+
+### For A1
+
+Write the proof-infrastructure update for Round 14.
+
+Objectives:
+
+1. **Source-normalize H4 from Vaaler.**
+   Extract the exact page/theorem/equation data from Vaaler's paper. Translate Vaaler's notation into the repo notation:
+   - Vaaler's periodic $\psi$ versus the repo's floor-compatible $\psi(t)=t-\lfloor t\rfloor-\frac12$;
+   - $j_N,k_N$ versus the repo's Vaaler polynomial and $K_H$;
+   - $\widehat J_{N+1}(h)$ versus $\Phi(|h|/(H+1))$;
+   - the sign of $\alpha_{h,H}$;
+   - the residual constant $(2H+2)^{-1}$;
+   - the integer-discontinuity convention.
+
+2. **Write R5-Full as a complete proof.**
+   Include:
+   - first leg $K_H(X/d)$;
+   - shifted legs $K_H((X/d+\rho)/4)$ for $\rho=1,3$;
+   - real $X$, integer $X$, and near-integer $X$;
+   - nearest-integer tie rules;
+   - the congruence $\ell=4m-\rho$ and admissible signs/sizes of $\ell$;
+   - dyadic weights and bounded overlap;
+   - zero mode and nonzero Fejer modes;
+   - both frequency signs;
+   - short blocks $D<X^{1/4}$;
+   - the dyadic-tail proof for $\sum_n\tau(n)\min(1,\Delta^2/|X-n|^2)$;
+   - logarithmic losses absorbed into $X^\epsilon$.
+
+3. **Insert the bridge theorem into the proof draft.**
+   State and prove:
+
+$$
+\text{H1--H3}+\text{H4}+\text{R5-Full}+\text{M9}
+\Longrightarrow
+P(X)\ll_\epsilon X^{1/4+\epsilon}.
+$$
+
+4. **Freeze M9 as the official target.**
+   Use the exact $\alpha_{h,H_D}$ coefficients only. Put arbitrary-coefficient variants in a stress-test appendix.
+
+5. **Write the M9b theorem-extension problem precisely.**
+   Compare three formulations:
+   - shifted phase functions $F_{\rho,D}(z)=1/(4z)+\rho D/(4X)$;
+   - fractional-frequency phases $e((q+\beta)X/d)$;
+   - periodic $h$-weights $\chi_4(h)$.
+
+   Decide which formulation is official for theorem comparison and which remain stress formulations.
+
+6. **Produce a Li--Yang subrange map.**
+   Use exact conditions from the TeX source. Table the covered and uncovered regions for $D=X^\delta$ and $H=X^\eta$, distinguishing:
+   - raw Case A;
+   - raw Case B;
+   - final $\theta^*$ reduction;
+   - low-height fallback estimates;
+   - the endpoint region needed for M9.
+
+Exploratory allocation: add a short H13 falsification checklist. State exactly which first spacing, Cauchy--Schwarz, or norm step would make H13 character-blind.
+
+### For A2
+
+Produce a conservative signed-method diagnostics packet. Avoid route-closing language.
+
+Objectives:
+
+1. **Rewrite Q1-Spectral with exact hypotheses.**
+   Specify:
+   - the finite index set;
+   - the Gram matrix context, especially if it arises after Cauchy--Schwarz over $h$;
+   - the diagonal unitary $U=\operatorname{diag}(\chi_4(d))$;
+   - the proof of $\|U^*KU\|_{\operatorname{op}}=\|K\|_{\operatorname{op}}$;
+   - the exact methods blocked;
+   - the signed-form methods not blocked.
+
+2. **Rewrite H12 trace material narrowly.**
+   Prove only
+
+$$
+\operatorname{Tr}((U^*KU)^m)=\operatorname{Tr}(K^m)
+$$
+
+for pure conjugacy-invariant traces. Do not describe it as a global obstruction.
+
+3. **Repair C3 parity diagnostics.**
+   State exact lattice hypotheses. Separate:
+   - translation shifts;
+   - odd dilations;
+   - even dilations;
+   - cases where the parity function is not defined on the image lattice.
+
+   Connect each statement to M9 or H13, or label it diagnostic only.
+
+4. **Make CRI falsifiable.**
+   Define one cross-residue statistic with:
+   - exact normalization;
+   - the M9 quantity it is meant to control;
+   - the target bound required;
+   - an absolute-majorant comparator;
+   - a numerical falsification test.
+
+   Do not mark CRI as a lemma unless a proof is supplied.
+
+5. **Develop H13 one step beyond the formal transform.**
+   State:
+   - exact modulo-$4$ Poisson transform;
+   - dual Gauss factor;
+   - stationary phase and amplitude;
+   - dual length $m\asymp hX/D^2$;
+   - range table for $D=X^\delta$;
+   - Hessian degeneracy;
+   - the first post-transform spacing or Cauchy step.
+
+   The key deliverable is to decide whether that first post-transform step preserves $\chi_4(m)$ or collapses to Q1-Spectral.
+
+Exploratory allocation: propose one non-operator-norm signed statistic and give a falsification test. If it cannot be tied to M9, mark it as a toy model only.
+
+### For A3
+
+Execute verification and computation tasks. Provide tables or reproducible scripts with output.
+
+Objectives:
+
+1. **H4 source audit.**
+   Extract the precise Vaaler statement:
+   - page and theorem/equation numbers;
+   - definitions of $j_N,k_N$;
+   - formula for $\widehat J$;
+   - coefficient formula and sign;
+   - residual bound;
+   - convention at discontinuities.
+
+   Verify the mapping to
+
+$$
+\alpha_{h,H}
+=
+-\frac{\Phi(|h|/(H+1))}{2\pi i h}
+$$
+
+and
+
+$$
+|R_H(t)|\le (2H+2)^{-1}K_H(t).
+$$
+
+2. **Correct coefficient handling.**
+   Explicitly verify
+
+$$
+\alpha_{-h,H}=\overline{\alpha_{h,H}},
+$$
+
+and implement negative frequencies accordingly.
+
+3. **Run R5 numerical stress tests.**
+   Include:
+   - first leg;
+   - shifted second legs $\rho=1,3$;
+   - square, near-square, nonsquare, and divisor-rich $X$;
+   - $D=X^{1/4},X^{3/8},X^{1/2}$ where feasible;
+   - normalized values divided by $X^{1/4}$.
+
+4. **Use high precision or exact resonance handling.**
+   Do not rely on ordinary float-only sine evaluation near Fejer spikes. Use high precision, modular arithmetic, or exact special-case detection for integer arguments.
+
+5. **Run M9 fixed-coefficient numerics.**
+   Compute
+
+$$
+\mathcal M_1(D;X),\qquad \mathcal M_2(D;X)
+$$
+
+with actual $\alpha_{h,H_D}$ and report
+
+$$
+|\mathcal M_i(D;X)|/X^{1/4}.
+$$
+
+Also compare with arbitrary-coefficient and $L^1$ stress norms.
+
+6. **Audit Li--Yang line by line.**
+   Give exact source labels and line references for:
+   - definition of $S$;
+   - hypotheses on $F,g,G$;
+   - Case A;
+   - Case B;
+   - main theorem;
+   - final $S/H$ reduction;
+   - final $H\le MT^{-\theta^*}$ range.
+
+   Then test the shifted-$F$ M9b formulation against the actual hypotheses.
+
+7. **Run Q1-Spectral and CRI toy tests.**
+   Construct a small M9a Gram matrix, verify unitary invariance of the operator norm, and compare any proposed signed statistic with its absolute majorant.
+
+8. **Complete C2/H13-SPU as a transform lemma.**
+   State uniform bounds for
+
+$$
+I(\xi)=\int w_D(u)e(hX/u-\xi u/4)\,du
+$$
+
+in stationary, nonstationary, support-boundary, and short-dual-length regimes. Keep rapid integration-by-parts decay distinct from exponential decay.
+
+Exploratory allocation: implement a small H13 transformed matrix near $D=X^{1/2}$ and test whether the dual $\chi_4(m)$ changes the signed quadratic form before norm extraction.
+
+## Confidence
+
+High confidence:
+
+- The balanced hyperbola/Vaaler framework remains the correct reduction and diagnostic route.
+- No new Gauss circle exponent has been proved.
+- R5 product-counting controls the fixed Fejer residual conditional on the Vaaler theorem.
+- H5r-B and H5r-L1 are overstrong stress tests, not active dependencies.
+- M9 fixed-coefficient main sums are the official remaining bottleneck.
+- Li--Yang cannot be imported as a black box for the raw endpoint Vaaler block.
+- Q1-Spectral is a valid restricted diagnostic for operator-norm-only methods.
+
+Moderate confidence:
+
+- The H4 formula used in the repo matches Vaaler's Theorem 18 plus Theorem 6 after notation translation.
+- R5-Full will survive a complete proof-draft write-up with all edge cases.
+- The shifted-$F$ formulation is the best current M9b representation for theorem comparison.
+- H13 is worth one focused exploratory round, especially near $D\asymp X^{1/2}$.
+
+Low confidence:
+
+- Existing printed Bombieri--Iwaniec/Li--Yang technology proves M9 at the endpoint.
+- CRI or open-path statistics provide a usable endpoint saving without a new signed estimate.
+- H13 gives an endpoint estimate after stationary phase; the dual phase is Hessian-degenerate and the first spacing step may still erase signs.
+- Mellin--Perron or signed Fourier currently bypass M9.
+
+Overall Round 13 judgment: useful proof-infrastructure progress. The Vaaler residual is provisionally under control, the exact M9 bottleneck is sharper, H4 has been source-located but still needs notation normalization, and the next round should prioritize executed verification plus one tightly scoped sign-preserving exploration.
+
+## Round 14 Update
+
+Timestamp: 2026-06-16 00:43:51
+
+See `rounds/web-research-test/round_014/judge/judge-014.md`.
+
+## Selected main route
+
+Source basis: Round 14 agent outputs and reviews are in `judge_14.md`; the relevant retrieved passages state that no Round 14 output proves M9 or a new Gauss circle exponent, that the residual side is provisionally controlled by H4 plus R5-Full, and that the active bottleneck remains fixed-coefficient M9. The same packet records the Vaaler source anchors: Theorem 18, equation (7.14), for the residual inequality and Theorem 6, equation (2.28), for the Fourier transform formula for $J$. A web check confirms Li--Yang's arXiv metadata and abstract-level mechanism: Xiaochun Li and Xuerui Yang, arXiv:2308.14859, using Bombieri--Iwaniec with a new first-spacing estimate and Huxley second-spacing results.
+
+Keep the balanced arithmetic hyperbola/Vaaler route as the selected framework:
+
+$$
+P(X)=N(\sqrt X)-\pi X
+\longrightarrow
+\text{symmetric hyperbola}
+\longrightarrow
+\text{floor-compatible sawtooth}
+\longrightarrow
+\text{finite Vaaler}
+\longrightarrow
+\text{fixed-coefficient reciprocal main sums}.
+$$
+
+The current proof-infrastructure bridge is:
+
+$$
+\text{H1--H3}+\text{H4}+\text{R5-Full}+\text{M9}
+\Longrightarrow
+P(X)\ll_\epsilon X^{1/4+\epsilon}.
+$$
+
+This is not a proof of the Gauss circle conjecture. H1--H3 are the accepted arithmetic reductions. H4 is now source-located and formula-consistent with Vaaler's periodic approximation, but the proof draft still needs the final page/equation notation translation. R5-Full should be treated as proved conditional on H4. M9 remains open and is the active analytic bottleneck.
+
+The exact arithmetic input remains:
+
+$$
+P(X)
+=
+-4\sum_{d\le y}\chi_4(d)\psi(X/d)
++
+4\sum_{d\le y}
+\left[
+\psi\left(\frac{X/d+1}{4}\right)
+-
+\psi\left(\frac{X/d+3}{4}\right)
+\right]
++
+O(1),
+$$
+
+where
+
+$$
+y=\lfloor X^{1/2}\rfloor,
+\qquad
+\psi(t)=t-\lfloor t\rfloor-\frac12,
+\qquad
+\psi(n)=-\frac12.
+$$
+
+For dyadic blocks
+
+$$
+X^{1/4}\le D\le X^{1/2},
+$$
+
+use local Vaaler height
+
+$$
+H_D\asymp D X^{-1/4}.
+$$
+
+Blocks with $D<X^{1/4}$ should be removed before Vaaler is invoked and bounded trivially by $|\psi|\le 1/2$, giving an acceptable $O(X^{1/4})$ contribution up to logarithms.
+
+The official remaining M9 targets use the actual Vaaler coefficients only:
+
+$$
+\alpha_{h,H}
+=
+-\frac{\Phi(|h|/(H+1))}{2\pi i h},
+\qquad
+\Phi(u)=\pi u(1-u)\cot(\pi u)+u,
+\qquad
+0<u<1.
+$$
+
+Define
+
+$$
+\mathcal M_1(D;X)
+=
+-4\sum_{1\le |h|\le H_D}
+\alpha_{h,H_D}
+\sum_{d\asymp D}
+\chi_4(d)w_D(d)e(hX/d),
+$$
+
+and
+
+$$
+\mathcal M_2(D;X)
+=
+4\sum_{1\le |h|\le H_D}
+\alpha_{h,H_D}
+\left(e(h/4)-e(3h/4)\right)
+\sum_{d\asymp D}
+w_D(d)e(hX/(4d)).
+$$
+
+Since
+
+$$
+e(h/4)-e(3h/4)=2i\chi_4(h),
+$$
+
+one may also write
+
+$$
+\mathcal M_2(D;X)
+=
+8i\sum_{1\le |h|\le H_D}
+\alpha_{h,H_D}\chi_4(h)
+\sum_{d\asymp D}w_D(d)e(hX/(4d)).
+$$
+
+The required endpoint-strength estimate is:
+
+$$
+\mathcal M_1(D;X),\mathcal M_2(D;X)
+\ll_\epsilon X^{1/4+\epsilon}
+$$
+
+uniformly over dyadic $D$.
+
+## Useful fragments by source
+
+### From A1
+
+A1 supplied the canonical proof-infrastructure packet.
+
+The strongest contribution is the H4 normalization against Vaaler. The repo form should be:
+
+$$
+\psi_F(t)
+=
+\sum_{1\le |h|\le H}\alpha_{h,H}e(ht)+R_H(t),
+$$
+
+with
+
+$$
+\alpha_{h,H}
+=
+-\frac{\Phi(|h|/(H+1))}{2\pi i h},
+$$
+
+and
+
+$$
+|R_H(t)|\le \frac{1}{2H+2}K_H(t),
+$$
+
+where
+
+$$
+K_H(t)
+=
+\sum_{|k|\le H}
+\left(1-\frac{|k|}{H+1}\right)e(kt)
+=
+\frac{1}{H+1}
+\left(\frac{\sin \pi(H+1)t}{\sin \pi t}\right)^2.
+$$
+
+The floor-compatible conversion is correct in structure: Vaaler's centered polynomial has value $0$ at integers, while the repo sawtooth has $\psi_F(n)=-1/2$, and
+
+$$
+K_H(0)=H+1,
+\qquad
+\frac{K_H(0)}{2H+2}=\frac12
+$$
+
+covers exactly the half-jump. This is an endpoint convention that must be written in the proof draft.
+
+A1's R5-Full product-count proof is the round's main mathematical consolidation. The Fejer bound
+
+$$
+K_H(t)\ll \min\left(H,\frac1{H\|t\|^2}\right)
+$$
+
+gives
+
+$$
+\frac1H K_H(t)
+\ll
+\min\left(1,\frac1{H^2\|t\|^2}\right).
+$$
+
+For the first residual leg, choosing $m$ nearest to $X/d$ gives
+
+$$
+\left\|\frac Xd\right\|
+=
+\frac{|X-md|}{d}
+\asymp
+\frac{|X-md|}{D}
+$$
+
+on $d\asymp D$. With
+
+$$
+\Delta=\frac{D}{H}\asymp X^{1/4},
+$$
+
+one obtains
+
+$$
+\frac1H K_H(X/d)
+\ll
+\min\left(1,\frac{\Delta^2}{|X-md|^2}\right).
+$$
+
+Grouping by $n=md$ and using $\tau(n)\ll_\epsilon n^\epsilon$ gives
+
+$$
+\frac1H\sum_{d\asymp D}K_H(X/d)
+\ll_\epsilon X^{1/4+\epsilon}.
+$$
+
+For the shifted second residual legs, near-integrality of
+
+$$
+\frac{X/d+\rho}{4},
+\qquad
+\rho\in\{1,3\},
+$$
+
+is equivalent to
+
+$$
+X\approx d(4m-\rho).
+$$
+
+Writing $\ell=4m-\rho$ again gives a product-counting problem, with a congruence restriction that only reduces multiplicity. This clears the Vaaler residual at the conjectural scale, conditional on H4 and dyadic bookkeeping.
+
+A1's preferred M9b comparison formulation is also important. Instead of treating $\chi_4(h)$ as a nonsmooth periodic $h$-weight, write
+
+$$
+e(hX/(4d))(e(h/4)-e(3h/4))
+=
+e\left(h\left(\frac{X}{4d}+\frac14\right)\right)
+-
+e\left(h\left(\frac{X}{4d}+\frac34\right)\right).
+$$
+
+After scaling $d=Dz$, compare to Li--Yang-type sums using
+
+$$
+F_{\rho,D}(z)=\frac1{4z}+\frac{\rho D}{4X},
+\qquad
+\rho\in\{1,3\}.
+$$
+
+This shifted-$F$ formulation is safer than absorbing $\chi_4(h)$ into bounded-variation weights.
+
+### From A2
+
+A2's best contribution is Q1-Spectral, a bounded-scope character-blindness diagnostic.
+
+Let
+
+$$
+\mathcal D_{\rm odd}=\{d:D\le d<2D,\ 2\nmid d\},
+\qquad
+\mathcal V_D=\ell^2(\mathcal D_{\rm odd}),
+$$
+
+and define
+
+$$
+U=\operatorname{diag}(\chi_4(d)).
+$$
+
+On odd denominators, $U$ is a diagonal unitary involution. Therefore, for every matrix $K$,
+
+$$
+\|U^*KU\|_{\operatorname{op}}=\|K\|_{\operatorname{op}}.
+$$
+
+Thus any proof that places $\chi_4(d)$ into diagonal unitary conjugation and then estimates only by operator norm, spectral radius, Schur, Gershgorin, Frobenius, or an absolute-value matrix cannot exploit the spatial character. This should be added as a proved diagnostic, not as a global no-go theorem.
+
+A2's H12 trace observation is correct in the same restricted sense:
+
+$$
+\operatorname{Tr}((U^*KU)^m)=\operatorname{Tr}(K^m).
+$$
+
+This blocks pure conjugacy-invariant cyclic trace statistics. It does not block non-conjugacy signed forms, open-path statistics, cross-residue moments, or bilinear estimates that keep signs before norm extraction.
+
+A2's H13/B-process-first transform remains the serious exploratory track. Splitting M9a modulo $4$ and applying Poisson should transfer $\chi_4$ to a dual Gauss factor. The dual length is
+
+$$
+m\asymp \frac{hX}{D^2}.
+$$
+
+At maximal Vaaler height $h\asymp H_D\asymp DX^{-1/4}$ and $D=X^\delta$,
+
+$$
+m\asymp X^{3/4-\delta},
+\qquad
+1/4\le\delta\le 1/2.
+$$
+
+Hence the transform is approximately balanced only near $D\asymp X^{1/2}$ and lengthens the dual variable for smaller $D$. The leading phase is square-root type,
+
+$$
+\Phi(h,m)\asymp \sqrt{Xhm},
+$$
+
+with
+
+$$
+\det\nabla^2\Phi=0.
+$$
+
+So H13 is not a route to generic full-rank stationary phase or generic full-rank decoupling. It remains a possible sign-preserving transform that requires a discrete signed-spacing theorem after transformation.
+
+A2's CRI and BSOS proposals are not proof inputs yet. They are useful only if made executable: finite matrix, normalization, target bound, relation to M9, and falsification by comparison with an absolute majorant and an operator-norm bound.
+
+### From A3
+
+A3's best contribution is verification discipline.
+
+The coefficient conjugacy check is correct:
+
+$$
+\alpha_{-h,H}
+=
+\overline{\alpha_{h,H}}.
+$$
+
+This is necessary for combining positive and negative frequencies correctly. The opposite textual claim
+
+$$
+\alpha_{-h,H}=-\overline{\alpha_{h,H}}
+$$
+
+must be rejected.
+
+The special values
+
+$$
+\Phi(1/2)=\frac12,
+$$
+
+$$
+\Phi(1/4)=\frac{3\pi}{16}+\frac14,
+$$
+
+and
+
+$$
+\Phi(3/4)=-\frac{3\pi}{16}+\frac34
+$$
+
+should be added as code-validation tests. In particular, $\Phi(1/4)\ne\Phi(3/4)$, so numerical M9 implementations must not impose a false symmetry.
+
+A3 also correctly separates the H13 dual length
+
+$$
+M_{\rm dual}\asymp \frac{kX}{D^2}
+$$
+
+from the stationary-phase large parameter
+
+$$
+\Lambda\asymp \frac{kX}{D}.
+$$
+
+These two scales must not be conflated. Single-integral stationary phase remains a transform/asymptotic lemma, not a double-sum estimate.
+
+A3's Li--Yang audit remains useful. In the raw endpoint substitution
+
+$$
+T=X,
+\qquad
+M=D\asymp X^{1/2},
+\qquad
+H=H_D\asymp X^{1/4},
+$$
+
+the audited restrictions give, for example,
+
+$$
+H\le MT^{-49/164}=X^{33/164}<X^{1/4}
+$$
+
+in Case A and
+
+$$
+H\le M^{35/69}T^{-2/23}=X^{23/138}=X^{1/6}<X^{1/4}
+$$
+
+in Case B. Their final range reaches
+
+$$
+H\le MT^{-\theta^*},
+\qquad
+\theta^*=0.314483\ldots,
+$$
+
+not
+
+$$
+H\le MT^{-1/4}.
+$$
+
+Therefore Li--Yang cannot be imported as a black box at the endpoint Vaaler height. This is a theorem-application guardrail, not a global no-go theorem for Bombieri--Iwaniec methods.
+
+A3's computations are still too small-scale to serve as endpoint evidence. They are useful for formula debugging and high-precision Fejer evaluation, but the next round must provide tables at meaningful dyadic sizes.
+
+## Rejected or risky ideas
+
+1. **Reject any claim of a new Gauss circle exponent.** Round 14 does not prove M9 and therefore does not prove $P(X)\ll_\epsilon X^{1/4+\epsilon}$.
+
+2. **Reject treating R5-Full as unconditional before H4 is fully source-normalized.** R5 is mathematically sound conditional on Vaaler's residual theorem. The exact proof draft still needs the final notation translation from $N,j_N,k_N,\widehat J$ to $H,K_H,\alpha_{h,H}$.
+
+3. **Reject arbitrary-coefficient M9 or residual targets as active dependencies.** The active targets use fixed Vaaler coefficients. Arbitrary bounded coefficients and $L^1$ stress norms remain diagnostics only.
+
+4. **Reject black-box Li--Yang endpoint import.** The phase class is relevant, but the printed Case A/B restrictions and final $\theta^*$ range do not cover $H_D\asymp D X^{-1/4}$ at the endpoint.
+
+5. **Reject global no-go claims for Bombieri--Iwaniec, Li--Yang, spacing, or decoupling.** Q1-Spectral blocks only routes that pass through diagonal-unitary conjugation followed by unitarily invariant or absolute-value norms.
+
+6. **Reject H13 as an endpoint estimate.** H13 is a transform plus diagnostic. It preserves a dual character at the Gauss-factor level but gives no bound without a signed-spacing theorem.
+
+7. **Reject generic full-rank stationary phase on the H13 dual phase.** The phase $\sqrt{Xhm}$ has degenerate Hessian.
+
+8. **Reject CRI or BSOS as proved escapes.** They are proposed signed statistics. They need finite definitions, normalization, target inequalities, and numerical falsification tests.
+
+9. **Reject treating $\chi_4(h)$ in M9b as a harmless bounded-variation weight.** Its total variation is $\asymp H$ on an interval of length $H$. Use shifted-$F$ or arithmetic-progression formulations unless a theorem explicitly accepts such weights.
+
+10. **Reject the factorial-alignment obstruction.** Exact divisor alignments in the critical window satisfy
+
+$$
+\#\{d\in[X^{1/4},X^{1/2}]:d\mid X\}
+\le \tau(X)\ll_\epsilon X^\epsilon.
+$$
+
+They do not create a dense obstruction.
+
+11. **Reject unsafe floating-point-only Fejer tests near resonances.** Near integer arguments of $K_H$, ordinary sine evaluation can miss exact spikes or create artificial blowups. Use high precision or exact rational/modular checks.
+
+12. **Reject pivoting to Mellin--Perron or signed Fourier as the main route.** They remain comparison modules. Neither currently replaces M9.
+
+## Known gaps
+
+1. **H4 proof-draft citation gap.** The correct source anchors appear to be Vaaler Theorem 18, equations (7.13)--(7.17), especially (7.14), and Theorem 6, equation (2.28). The final proof draft must quote exact page/equation references and translate notation.
+
+2. **H4 convention gap.** The proof must explicitly distinguish Vaaler's centered value at integers from the repo's floor-compatible value $\psi(n)=-1/2$.
+
+3. **R5-Full bookkeeping gap.** The proof must explicitly include first leg, shifted legs $\rho=1,3$, real and integer $X$, nearest-integer tie rules, sign and positivity of $\ell=4m-\rho$, zero Fejer mode, both frequency signs, dyadic weights, bounded overlap, short blocks $D<X^{1/4}$, and logarithmic losses.
+
+4. **M9 main-term gap.** No endpoint estimate is known for $\mathcal M_1(D;X)$ or $\mathcal M_2(D;X)$.
+
+5. **M9b theorem-extension gap.** The shifted functions
+
+$$
+F_{\rho,D}(z)=\frac1{4z}+\frac{\rho D}{4X}
+$$
+
+have the same derivative nondegeneracy as $1/(4z)$, but an actual theorem must allow the $D,X$-dependent constant term and the Vaaler dyadic $h$ weights.
+
+6. **Li--Yang subrange map gap.** The raw endpoint block fails. The repo still needs a precise covered/uncovered map over all $D=X^\delta$ and $H\le H_D$ using the exact Li--Yang theorem hypotheses.
+
+7. **Signed-spacing gap.** Q1-Spectral explains why operator norms lose $\chi_4$. The repo still lacks a positive signed-form estimate that preserves $\chi_4(d_1)\chi_4(d_2)$ or $\chi_4(h)$ through a useful inequality.
+
+8. **H13 transform gap.** Need exact modulo-$4$ Poisson normalization, constant, Gauss factor, active sign, stationary point, leading amplitude, boundary terms, nonstationary integration by parts, and a range table for $D=X^\delta$.
+
+9. **H13 summation gap.** Even after stationary phase, a discrete signed-spacing theorem is required for the Hessian-degenerate square-root phase.
+
+10. **CRI/BSOS gap.** These statistics need a precise finite matrix or bilinear form, localization weight, normalization, target bound, and evidence that they do not collapse to $U^*KU$ or an absolute-value majorant.
+
+11. **Numerical evidence gap.** Round 14 includes useful small checks and protocols. It does not yet include endpoint-scale tables for R5, M9 fixed coefficients, stress norms, shifted M9b matrices, or H13 signed/unsigned comparisons.
+
+12. **Poisson--Bessel calibration gap.** The calibration route remains useful for normalizations and the $R^{2/3}$ sanity check, but it was not advanced in Round 14.
+
+## New lemmas to add
+
+### H4-R14. Vaaler finite approximation with floor-compatible residual
+
+**Status:** external theorem dependency, source-located; proof-draft notation translation still pending.
+
+For $H\ge1$,
+
+$$
+\psi_F(t)=
+\sum_{1\le |h|\le H}\alpha_{h,H}e(ht)+R_H(t),
+$$
+
+where
+
+$$
+\alpha_{h,H}
+=
+-\frac{\Phi(|h|/(H+1))}{2\pi i h},
+\qquad
+\Phi(u)=\pi u(1-u)\cot(\pi u)+u,
+$$
+
+and
+
+$$
+|R_H(t)|\le \frac1{2H+2}K_H(t).
+$$
+
+At integers, $K_H(0)/(2H+2)=1/2$ covers $\psi_F(n)=-1/2$.
+
+### R5-R14. Product-count Fejer residual bound
+
+**Status:** proved conditional on H4.
+
+For $X^{1/4}\le D\le X^{1/2}$ and $H\asymp D X^{-1/4}$,
+
+$$
+\frac1H\sum_{d\asymp D}|w_D(d)|K_H(X/d)
+\ll_\epsilon X^{1/4+\epsilon},
+$$
+
+and, for $\rho\in\{1,3\}$,
+
+$$
+\frac1H\sum_{d\asymp D}|w_D(d)|
+K_H\left(\frac{X/d+\rho}{4}\right)
+\ll_\epsilon X^{1/4+\epsilon}.
+$$
+
+The proof uses the product-count substitution $n=md$ in the first leg and $n=(4m-\rho)d$ in the shifted legs, plus $\tau(n)\ll_\epsilon n^\epsilon$.
+
+### Bridge-R14. Conditional endpoint reduction
+
+**Status:** proved conditional theorem.
+
+If H1--H3, H4-R14, R5-R14, and M9 hold, then
+
+$$
+P(X)\ll_\epsilon X^{1/4+\epsilon}.
+$$
+
+This is the current best proof skeleton.
+
+### M9-R14. Fixed-coefficient main-term target
+
+**Status:** open analytic target.
+
+For every dyadic $D$ with $X^{1/4}\le D\le X^{1/2}$,
+
+$$
+\mathcal M_1(D;X),\mathcal M_2(D;X)
+\ll_\epsilon X^{1/4+\epsilon}.
+$$
+
+Arbitrary-coefficient variants are stress tests only.
+
+### M9b-Shifted-F. Shifted phase formulation for the second main term
+
+**Status:** algebraic reformulation; theorem-extension gap open.
+
+Use
+
+$$
+F_{\rho,D}(z)=\frac1{4z}+\frac{\rho D}{4X},
+\qquad
+\rho\in\{1,3\},
+$$
+
+to compare M9b with reciprocal double-sum theorems. Do not treat $\chi_4(h)$ as a harmless bounded-variation weight unless a theorem explicitly permits it.
+
+### Q1-Spectral-R14. Diagonal-unitary operator-norm blindness
+
+**Status:** proved diagnostic with restricted scope.
+
+On odd denominators, $U=\operatorname{diag}(\chi_4(d))$ is unitary, and
+
+$$
+\|U^*KU\|_{\operatorname{op}}=\|K\|_{\operatorname{op}}.
+$$
+
+This blocks only methods that reduce to such an operator-norm or absolute-value matrix estimate.
+
+### H12-R14. Pure cyclic trace blindness
+
+**Status:** proved diagnostic with restricted scope.
+
+For pure conjugacy-invariant cyclic traces,
+
+$$
+\operatorname{Tr}((U^*KU)^m)=\operatorname{Tr}(K^m).
+$$
+
+This does not block open-path or non-conjugacy signed statistics.
+
+### H13-R14. B-process-first transform for M9a
+
+**Status:** exploratory transform; not an estimate.
+
+Modulo-$4$ Poisson should transfer $\chi_4(d)$ to a dual Gauss factor and yield dual length
+
+$$
+m\asymp \frac{hX}{D^2}.
+$$
+
+At maximal height and $D=X^\delta$,
+
+$$
+m\asymp X^{3/4-\delta}.
+$$
+
+The leading phase is square-root type with degenerate Hessian. H13 is useful only if a subsequent signed-spacing step avoids Q1-Spectral blindness.
+
+### Phi-R14. Vaaler coefficient checks
+
+**Status:** proved algebraic/computational guardrails.
+
+$$
+\alpha_{-h,H}=\overline{\alpha_{h,H}},
+$$
+
+and
+
+$$
+\Phi(1/2)=\frac12,\qquad
+\Phi(1/4)=\frac{3\pi}{16}+\frac14,\qquad
+\Phi(3/4)=-\frac{3\pi}{16}+\frac34.
+$$
+
+### Divisor-Alignment-R14
+
+**Status:** proved guardrail.
+
+For integer $X$,
+
+$$
+\#\{d\in[X^{1/4},X^{1/2}]:d\mid X\}
+\le \tau(X)\ll_\epsilon X^\epsilon.
+$$
+
+Exact divisor alignment alone is not a dense critical-block obstruction.
+
+## Counterexample checks to run
+
+1. **H4 page-level source check.** Verify Vaaler Theorem 18 and Theorem 6 against the PDF: coefficient sign, $\Phi$, Fejer normalization, residual constant, and notation translation.
+
+2. **H4 integer jump test.** Symbolically and numerically verify $V_H(n)=0$, $K_H(0)=H+1$, and $K_H(0)/(2H+2)=1/2$.
+
+3. **R5 first-leg stress test.** Compute
+
+$$
+R_1(D;X)=\frac1{H_D}\sum_{d\asymp D}K_{H_D}(X/d)
+$$
+
+for square, near-square, nonsquare, and divisor-rich $X$.
+
+4. **R5 shifted-leg stress test.** For $\rho\in\{1,3\}$ compute
+
+$$
+R_{2,\rho}(D;X)=
+\frac1{H_D}\sum_{d\asymp D}
+K_{H_D}\left(\frac{X/d+\rho}{4}\right).
+$$
+
+5. **R5 continuous-$X$ test.** Use $X=N+\eta$ with very small positive and negative $\eta$ and verify uniform summability of
+
+$$
+\min\left(1,\frac{\Delta^2}{|X-n|^2}\right).
+$$
+
+6. **R5 dyadic bookkeeping test.** Check zero mode, both frequency signs, all dyadic $D$, bounded partition overlap, and short-block removal.
+
+7. **M9 fixed-coefficient numerics.** Compute $\mathcal M_1(D;X)$ and $\mathcal M_2(D;X)$ using actual $\alpha_{h,H_D}$ and report
+
+$$
+|\mathcal M_i(D;X)|/X^{1/4}.
+$$
+
+8. **M9 stress comparison.** Compare fixed coefficients with arbitrary phase coefficients and $L^1$ stress norms.
+
+9. **M9b shifted-$F$ theorem audit.** Verify whether candidate theorems allow
+
+$$
+F_{\rho,D}(z)=\frac1{4z}+\frac{\rho D}{4X}
+$$
+
+uniformly in $D,X$.
+
+10. **M9b fractional-frequency matrix test.** Compare phases
+
+$$
+e(qX/d)
+$$
+
+and
+
+$$
+e((q+\beta)X/d),
+\qquad
+\beta\in\{1/4,3/4\},
+$$
+
+in actual toy spacing matrices.
+
+11. **Li--Yang line audit.** Record exact TeX/PDF labels for $S$, Case A, Case B, main theorem, final $S/H$ target, theorem prerequisites, allowed weights, and allowed $F$ forms.
+
+12. **Q1-Spectral matrix test.** Construct the Gram matrix arising from a Cauchy--Schwarz step on M9a and verify whether the character enters only as $U^*KU$.
+
+13. **CRI/BSOS falsification test.** Build one concrete signed statistic, compare it with its absolute-value majorant and operator-norm bound, and deprioritize it if no stable advantage appears.
+
+14. **H13 transform constants.** Verify the modulo-$4$ Poisson constant, active sign, stationary point, leading phase, amplitude, and dual length.
+
+15. **H13 first-spacing falsification.** After H13, apply the first intended Cauchy--Schwarz or spacing step and check whether $\chi_4(m)$ survives as a signed statistic or becomes a diagonal-unitary factor erased by an operator norm.
+
+16. **H13 endpoint-range test.** Focus on $D\asymp X^{1/2}$, where the dual length is closest to the original Vaaler height.
+
+17. **High-precision Fejer test.** Evaluate $K_H(t)$ near exact resonances using high precision or exact rational handling.
+
+18. **Mellin--Perron/signed Fourier comparison.** Keep these only as comparison modules and test whether their replacement errors reduce to M9-like or R5-like structures.
+
+## Research strategy adjustment
+
+Round 14 should be recorded as a proof-infrastructure and M9-diagnostic round.
+
+The residual side is no longer the active bottleneck:
+
+$$
+\text{H4}+\text{R5-Full}
+\Longrightarrow
+\text{Vaaler residual}\ll_\epsilon X^{1/4+\epsilon},
+$$
+
+conditional on final H4 source-normalization and dyadic bookkeeping.
+
+The active work is now M9: fixed Vaaler coefficients, exact character placement, and endpoint-strength reciprocal double sums. Do not revert to arbitrary coefficient formulations except in stress-test sections.
+
+Assessment of A2: A2 contributed valuable Q1-Spectral, H12, and H13 diagnostics. The useful part is the precise diagnosis of operator-norm blindness. The risky part is overbroad obstruction language and undeveloped CRI/BSOS claims. Next round should require proof-draft-ready statements, no route-closing language, and one executable statistic with falsification data.
+
+Assessment of A3: A3 contributed useful verification: coefficient conjugacy, $\Phi$ values, integer-jump check, Li--Yang endpoint mismatch, and scale separation in H13. The weak point is that several computations are still toy-scale or protocol-level. Next round should require executed tables, exact source line labels, and high-precision Fejer/M9 data.
+
+The next round should not expand the route set. It should finish H4/R5 proof infrastructure, make M9 theorem comparison sharper, and run falsifiable sign-preservation tests.
+
+## Next-round prompts by agent
+
+### For A1
+
+Produce the Round 15 proof-infrastructure and theorem-comparison packet.
+
+Objectives:
+
+1. **Finalize H4 source-normalization.**
+   - Quote Vaaler's exact page, theorem, and equation numbers.
+   - Translate $N,j_N,k_N,\widehat J_{N+1}$ into $H,K_H,\alpha_{h,H}$.
+   - Verify the sign of $\alpha_{h,H}$.
+   - Verify the residual constant.
+   - State the centered-to-floor-compatible conversion at integers.
+
+2. **Insert R5-Full into the proof draft.**
+   Include first leg, shifted legs $\rho=1,3$, real and integer $X$, nearest-integer tie rules, congruence $\ell=4m-\rho$, dyadic weights, zero mode, frequency signs, short blocks, and logarithmic losses.
+
+3. **Write the bridge theorem in final proof-draft form.**
+   State:
+
+$$
+\text{H1--H3}+\text{H4}+\text{R5-Full}+\text{M9}
+\Longrightarrow
+P(X)\ll_\epsilon X^{1/4+\epsilon}.
+$$
+
+4. **Freeze M9 as the only active analytic target.**
+   Use actual $\alpha_{h,H_D}$ only. Move arbitrary-coefficient variants to a stress-test appendix.
+
+5. **Write the M9b theorem-extension problem precisely.**
+   Use the shifted-$F$ formulation
+
+$$
+F_{\rho,D}(z)=\frac1{4z}+\frac{\rho D}{4X}.
+$$
+
+   State what theorem hypotheses must be checked: allowed $D,X$ dependence, dyadic $h$ weights from $\alpha_{h,H}$, derivative constants, and endpoint height.
+
+6. **Produce the Li--Yang subrange map.**
+   For $D=X^\delta$ and $H\le H_D$, table the ranges covered by raw Case A, raw Case B, and final $\theta^*$ reduction. Identify the uncovered high-frequency interval.
+
+Exploratory allocation: write a one-page H13 falsification checklist. The checklist should say exactly where H13 becomes unhelpful if the first post-transform step collapses to $U^*KU$.
+
+### For A2
+
+Produce a conservative proof-draft-ready diagnostics and signed-statistic packet.
+
+Objectives:
+
+1. **Rewrite Q1-Spectral as a bounded-scope lemma.**
+   Define the finite space, $U=\operatorname{diag}(\chi_4(d))$, prove
+
+$$
+\|U^*KU\|_{\operatorname{op}}=\|K\|_{\operatorname{op}},
+$$
+
+   and list exactly which methods this blocks and does not block.
+
+2. **Rewrite H12 trace invariance narrowly.**
+   Prove only
+
+$$
+\operatorname{Tr}((U^*KU)^m)=\operatorname{Tr}(K^m)
+$$
+
+   for pure cyclic traces. Do not claim this blocks non-conjugacy signed forms.
+
+3. **Repair C3 claims.**
+   State exact variables, lattice hypotheses, odd/even dilation cases, and whether each claim is connected to M9/H13 or merely a diagnostic model.
+
+4. **Formalize H13.**
+   Give exact modulo-$4$ Poisson summation under $e(t)=e^{2\pi i t}$, Gauss factor, active sign, stationary point, leading amplitude, dual length $m\asymp hX/D^2$, range table for $D=X^\delta$, and Hessian-degeneracy check.
+
+5. **Perform the H13 first-step falsification.**
+   After the transform, apply the first intended Cauchy--Schwarz or spacing step. Decide whether $\chi_4(m)$ survives in a non-conjugacy statistic or collapses to a diagonal-unitary operator-norm pattern.
+
+6. **Define one executable sign-preserving statistic.**
+   CRI or BSOS is acceptable only if it includes:
+   - finite matrix or bilinear form;
+   - localization weight;
+   - normalization;
+   - proposed target bound;
+   - relationship to M9;
+   - absolute-majorant comparator;
+   - falsification criterion.
+
+Exploratory allocation: focus the signed-statistic test near $D\asymp X^{1/2}$, where H13 is most balanced.
+
+### For A3
+
+Execute verification and computation tasks. Prioritize tables, scripts, exact formulas, and line labels.
+
+Objectives:
+
+1. **Verify H4 against Vaaler.**
+   Provide exact page/equation references for Theorem 18 and Theorem 6. Confirm $\Phi$, $\alpha_{h,H}$, $K_H$, residual constant, and integer-jump convention.
+
+2. **Run R5 numerical tables.**
+   Include first leg and shifted legs $\rho=1,3$ for square, near-square, nonsquare, and divisor-rich $X$, across $D\asymp X^{1/4},X^{3/8},X^{1/2}$. Normalize by $X^{1/4}$.
+
+3. **Run M9 fixed-coefficient numerics.**
+   Compute $\mathcal M_1(D;X)$ and $\mathcal M_2(D;X)$ using exact $\alpha_{h,H_D}$. Compare fixed coefficients, arbitrary phase coefficients, and $L^1$ stress norms. Report $|\mathcal M_i|/X^{1/4}$.
+
+4. **Use high precision near Fejer spikes.**
+   Avoid float-only sine evaluations near integer arguments. Use high precision or exact rational/modular checks.
+
+5. **Complete Li--Yang line audit.**
+   Record exact labels and line/page locations for $S$, Case A, Case B, the main theorem, final $S/H$ reduction, theorem prerequisites, allowed weights, and allowed $F$ hypotheses. Treat any suspected typo as a source-audit issue unless conclusively resolved.
+
+6. **Test M9b shifted-$F$.**
+   Check derivative constants for
+
+$$
+F_{\rho,D}(z)=\frac1{4z}+\frac{\rho D}{4X},
+$$
+
+   and compare fractional-frequency toy matrices with unshifted matrices.
+
+7. **Verify H13 constants and regimes.**
+   Confirm the modulo-$4$ Poisson constant, active sign, stationary point, leading phase, amplitude, $M_{\rm dual}\asymp hX/D^2$, $\Lambda\asymp hX/D$, nonstationary decay, support-boundary cases, and $M_{\rm dual}\asymp1$ transition.
+
+8. **Implement Q1/CRI/BSOS tests.**
+   Once A2 gives a finite statistic, compute signed, unsigned, absolute-majorant, and operator-norm comparators.
+
+Exploratory allocation: run H13 signed-vs-unsigned matrix tests near $D\asymp X^{1/2}$ and report whether the dual character survives the first spacing step.
+
+## Confidence
+
+High confidence in the balanced hyperbola/Vaaler framework as the current reduction and diagnostic route.
+
+High confidence that no new Gauss circle exponent was proved in Round 14.
+
+High confidence that H1--H3 remain the correct arithmetic foundation.
+
+High confidence that R5-R14 proves the blockwise Fejer residual bound conditional on H4.
+
+Moderate-to-high confidence that H4 has the correct source anchors and formula translation, but the final proof-draft citation and notation check should still be completed.
+
+High confidence that R5-Full removes the Vaaler residual from the active bottleneck after dyadic bookkeeping.
+
+High confidence that M9 fixed-coefficient main sums remain open and are the active analytic bottleneck.
+
+High confidence that arbitrary-coefficient residual and main-term variants are stress tests, not active dependencies.
+
+High confidence that direct Li--Yang black-box import fails in the endpoint Vaaler height range.
+
+High confidence that Q1-Spectral is correct as a restricted operator-norm blindness diagnostic.
+
+Moderate confidence that the shifted-$F$ formulation is the right official M9b theorem-comparison formulation.
+
+Moderate confidence that H13 is worth one more focused, falsifiable exploration round.
+
+Low confidence that H13, CRI, BSOS, signed Fourier truncation, Mellin--Perron, or current printed Li--Yang technology proves M9 without a new signed or endpoint-strength estimate.
+
+Overall Round 14 judgment: productive and conservative. The concrete progress is a cleaner H4 normalization, a complete conditional R5 residual proof, a bridge theorem ready for proof-draft insertion, sharper M9/M9b targets, and stronger diagnostics for when character signs are erased by norm-based methods. The conjectural Gauss circle bound remains unproved.
+
+## Round 15 Update
+
+Timestamp: 2026-06-16 10:59:40
+
+See `rounds/web-research-test/round_015/judge/judge-015.md`.
+
+## Summary
+
+Round 15 is a proof-infrastructure and diagnostic round. It does **not** prove a new Gauss circle exponent.
+
+The current conservative reduction remains:
+
+$$
+\text{H1--H3}+\text{H4}+\text{R5-Full}+\text{M9}
+\Longrightarrow
+P(X)\ll_\epsilon X^{1/4+\epsilon},
+$$
+
+where $P(X)=N(\sqrt X)-\pi X$. The residual side of the finite Vaaler route is now provisionally controlled by H4 plus R5-Full. The active analytic bottleneck is M9: the fixed-Vaaler-coefficient reciprocal main sums. Arbitrary-coefficient main sums and $L^1$ variants remain stress tests only.
+
+Source basis: uploaded Round 15 packet, local source audits, and web metadata checks. Vaaler's source is Jeffrey D. Vaaler, "Some extremal functions in Fourier analysis," *Bull. Amer. Math. Soc.* 12(2), 183--216, 1985; Project Euclid/AMS metadata confirms the publication. Li--Yang is arXiv:2308.14859v2, Xiaochun Li and Xuerui Yang, last revised 14 September 2023; the arXiv page states the Bombieri--Iwaniec / first-spacing / Huxley second-spacing mechanism and gives DOI `10.48550/arXiv.2308.14859`.
+
+The local audit note is incorporated: A2's official Stage A response is the cleaned `A2-015.md`; A2's second pass is supplemental only. A2's review is useful but below the configured target by local count, and its high-certainty wording must be downgraded unless backed by exact hypotheses and proof. The correct Vaaler coefficient conjugacy is
+
+$$
+\alpha_{-h,H}=\overline{\alpha_{h,H}}.
+$$
+
+Any negative-conjugate recombination is an algebra error.
+
+## Selected main route
+
+Keep the balanced arithmetic hyperbola/Vaaler framework:
+
+$$
+P(X)=N(\sqrt X)-\pi X
+\longrightarrow
+\text{symmetric hyperbola}
+\longrightarrow
+\text{floor-compatible sawtooth}
+\longrightarrow
+\text{finite Vaaler}
+\longrightarrow
+\text{fixed-coefficient reciprocal main sums}.
+$$
+
+The exact arithmetic input remains:
+
+$$
+P(X)
+=
+-4\sum_{d\le y}\chi_4(d)\psi_F(X/d)
++
+4\sum_{d\le y}
+\left[
+\psi_F\left(\frac{X/d+1}{4}\right)
+-
+\psi_F\left(\frac{X/d+3}{4}\right)
+\right]
++
+O(1),
+$$
+
+where
+
+$$
+y=\lfloor X^{1/2}\rfloor,
+\qquad
+\psi_F(t)=t-\lfloor t\rfloor-\frac12,
+\qquad
+\psi_F(n)=-\frac12.
+$$
+
+For dyadic blocks
+
+$$
+X^{1/4}\le D\le X^{1/2},
+$$
+
+use the local Vaaler height
+
+$$
+H_D\asymp D X^{-1/4}.
+$$
+
+Blocks with $D<X^{1/4}$ should be removed before applying Vaaler and bounded trivially by $|\psi_F|\le 1/2$.
+
+The active M9 target uses the actual Vaaler coefficients
+
+$$
+\alpha_{h,H}
+=
+-\frac{\Phi(|h|/(H+1))}{2\pi i h},
+\qquad
+\Phi(u)=\pi u(1-u)\cot(\pi u)+u,
+\qquad
+0<u<1.
+$$
+
+Thus
+
+$$
+\mathcal M_1(D;X)
+=
+-4\sum_{1\le |h|\le H_D}
+\alpha_{h,H_D}
+\sum_{d\asymp D}
+\chi_4(d)w_D(d)e(hX/d),
+$$
+
+and
+
+$$
+\mathcal M_2(D;X)
+=
+4\sum_{1\le |h|\le H_D}
+\alpha_{h,H_D}
+\left(e(h/4)-e(3h/4)\right)
+\sum_{d\asymp D}
+w_D(d)e(hX/(4d)).
+$$
+
+Since
+
+$$
+e(h/4)-e(3h/4)=2i\chi_4(h),
+$$
+
+one may equivalently write
+
+$$
+\mathcal M_2(D;X)
+=
+8i\sum_{1\le |h|\le H_D}
+\alpha_{h,H_D}\chi_4(h)
+\sum_{d\asymp D}
+w_D(d)e(hX/(4d)).
+$$
+
+The required endpoint-strength estimate is:
+
+$$
+\mathcal M_1(D;X),\mathcal M_2(D;X)
+\ll_\epsilon X^{1/4+\epsilon}
+$$
+
+uniformly over dyadic $D$.
+
+## Useful fragments by source
+
+### From A1
+
+A1 supplies the canonical proof-infrastructure packet.
+
+The strongest contribution is H4 source normalization. In repo notation, the finite Vaaler statement should be:
+
+$$
+\psi_F(t)
+=
+\sum_{1\le |h|\le H}\alpha_{h,H}e(ht)+R_H^F(t),
+$$
+
+with
+
+$$
+\alpha_{h,H}
+=
+-\frac{\Phi(|h|/(H+1))}{2\pi i h},
+$$
+
+and
+
+$$
+|R_H^F(t)|\le \frac{1}{2H+2}K_H(t),
+$$
+
+where
+
+$$
+K_H(t)
+=
+\sum_{|k|\le H}
+\left(1-\frac{|k|}{H+1}\right)e(kt)
+=
+\frac1{H+1}
+\left(\frac{\sin \pi(H+1)t}{\sin \pi t}\right)^2.
+$$
+
+The source anchors remain Vaaler Theorem 18, equations (7.13)--(7.16), especially (7.14), for the residual inequality, and Theorem 6, equation (2.28), for the Fourier coefficient function. The final proof draft still needs exact page/equation transcription and notation translation.
+
+A1 also gives the decisive R5 product-count mechanism. The Fejer bound
+
+$$
+K_H(t)\ll \min\left(H,\frac{1}{H\|t\|^2}\right)
+$$
+
+implies
+
+$$
+\frac1H K_H(t)
+\ll
+\min\left(1,\frac{1}{H^2\|t\|^2}\right).
+$$
+
+For the first residual leg, choose $m$ nearest to $X/d$. Since $d\asymp D$,
+
+$$
+\left\|\frac Xd\right\|
+=
+\frac{|X-md|}{d}
+\asymp
+\frac{|X-md|}{D}.
+$$
+
+With
+
+$$
+\Delta=\frac{D}{H}\asymp X^{1/4},
+$$
+
+one obtains
+
+$$
+\frac1H K_H(X/d)
+\ll
+\min\left(1,\frac{\Delta^2}{|X-md|^2}\right).
+$$
+
+Grouping by $n=md$ gives divisor multiplicity at most $\tau(n)$, hence
+
+$$
+\frac1H\sum_{d\asymp D}K_H(X/d)
+\ll
+\sum_{n\asymp X}\tau(n)
+\min\left(1,\frac{\Delta^2}{|X-n|^2}\right)
+\ll_\epsilon X^{1/4+\epsilon}.
+$$
+
+For the shifted second residual legs,
+
+$$
+K_H\left(\frac{X/d+\rho}{4}\right),
+\qquad
+\rho\in\{1,3\},
+$$
+
+near-integrality is equivalent to
+
+$$
+X\approx d(4m-\rho).
+$$
+
+Writing $\ell=4m-\rho$ again gives a product-counting problem, with the congruence restriction $\ell\equiv-\rho\pmod4$ only reducing divisor multiplicity. This clears the Vaaler residual at the conjectural scale, conditional on H4.
+
+A1's M9b shifted-$F$ formulation is the preferred theorem-comparison form. Instead of treating $\chi_4(h)$ as a rough bounded-variation weight, use
+
+$$
+e(hX/(4d))(e(h/4)-e(3h/4))
+=
+e\left(h\left(\frac{X}{4d}+\frac14\right)\right)
+-
+e\left(h\left(\frac{X}{4d}+\frac34\right)\right).
+$$
+
+After setting $d=Dz$, compare to phases with
+
+$$
+F_{\rho,D}(z)=\frac1{4z}+\frac{\rho D}{4X},
+\qquad
+\rho\in\{1,3\}.
+$$
+
+The derivative nondegeneracy is unchanged:
+
+$$
+F'F'''-3(F'')^2=-\frac3{8z^6}.
+$$
+
+The open theorem question is whether a Bombieri--Iwaniec/Li--Yang-type theorem permits this $D,X$-dependent constant shift and the fixed Vaaler $h$ weights at endpoint height.
+
+### From A2
+
+A2's useful core is the bounded-scope operator-norm diagnostic.
+
+Let
+
+$$
+\mathcal D_{\rm odd}=\{d:D\le d<2D,\ 2\nmid d\},
+\qquad
+\mathcal V_D=\ell^2(\mathcal D_{\rm odd}),
+$$
+
+and define
+
+$$
+U=\operatorname{diag}(\chi_4(d)).
+$$
+
+On odd denominators, $U$ is a diagonal unitary involution. Hence for every matrix $K$,
+
+$$
+\|U^*KU\|_{\operatorname{op}}=\|K\|_{\operatorname{op}}.
+$$
+
+Thus any method that inserts $\chi_4(d)$ only as diagonal unitary conjugation and then bounds by operator norm, spectral radius, Schur/Gershgorin, Frobenius norm, or absolute-value matrix is character-blind. This is a proved diagnostic under the stated hypothesis, not a global obstruction.
+
+A2's H12 trace observation is also correct in restricted form:
+
+$$
+\operatorname{Tr}((U^*KU)^m)=\operatorname{Tr}(K^m).
+$$
+
+This blocks pure conjugacy-invariant cyclic trace statistics, but not open-path statistics, non-conjugacy signed forms, cross-residue moments, or bilinear estimates that keep signs before norm extraction.
+
+A2's H13 transform is worth one more falsification-focused round. Splitting M9a modulo $4$ and applying Poisson should yield
+
+$$
+\sum_d\chi_4(d)w_D(d)e(hX/d)
+=
+\frac{i}{2}
+\sum_n\chi_4(n)
+\int w_D(u)e(hX/u-nu/4)\,du,
+$$
+
+under the convention $e(t)=e^{2\pi i t}$, up to a global sign depending on the Fourier transform convention. The stationary sign must be fixed explicitly: for the displayed phase
+
+$$
+hX/u-nu/4,
+$$
+
+one has a stationary point only when $n<0$. Writing $n=-m$,
+
+$$
+u_0=2\sqrt{\frac{hX}{m}},
+\qquad
+m\asymp\frac{hX}{D^2}.
+$$
+
+At maximal Vaaler height $h\asymp H_D\asymp DX^{-1/4}$ and $D=X^\delta$,
+
+$$
+m\asymp X^{3/4-\delta},
+\qquad
+1/4\le\delta\le1/2.
+$$
+
+Thus H13 is roughly balanced only near $D\asymp X^{1/2}$ and lengthens the dual variable for smaller $D$. The leading phase is of square-root type,
+
+$$
+\Phi(h,m)\asymp \sqrt{Xhm},
+$$
+
+and
+
+$$
+\det\nabla^2\Phi=0.
+$$
+
+So H13 cannot be followed by generic full-rank two-dimensional stationary phase or decoupling. It remains an exploratory sign-preserving transform requiring a discrete signed-spacing theorem.
+
+A2's BSOS proposal is not yet a lemma. It is useful only as an executable signed-statistic candidate. It needs a finite definition, a derivation from M9, a target bound, an absolute-majorant comparator, and a falsification criterion.
+
+A2's Round 15 review should be used selectively. It is structurally useful, but local audit found it below the configured target despite its self-check, and several formulations are too conclusive. Round 16 must require a literal low-temperature standard: accurate local word-count self-check, neutral formula-level verification, fewer high-certainty verbs, and no route-closing claims without exact hypotheses.
+
+### From A3
+
+A3 provides useful source and computation checks, but some numerical claims require correction before use.
+
+The valuable H4 audit identifies Vaaler Theorem 18 and Theorem 6 as the right source anchors. A3 also correctly checks the integer jump:
+
+$$
+V_H(n)=0,
+\qquad
+K_H(0)=H+1,
+\qquad
+\frac{K_H(0)}{2H+2}=\frac12,
+$$
+
+which exactly covers the difference between the centered trigonometric value and the floor-compatible value $\psi_F(n)=-1/2$.
+
+A3's special values of $\Phi$ are useful for code validation:
+
+$$
+\Phi(1/2)=\frac12,
+$$
+
+$$
+\Phi(1/4)=\frac{3\pi}{16}+\frac14,
+$$
+
+$$
+\Phi(3/4)=-\frac{3\pi}{16}+\frac34.
+$$
+
+Therefore $\Phi(1/4)\ne\Phi(3/4)$, and M9 code must not impose false coefficient symmetry.
+
+A3 also supports the Li--Yang endpoint non-import. With
+
+$$
+T=X,
+\qquad
+M=D\asymp X^{1/2},
+\qquad
+H=H_D\asymp X^{1/4},
+$$
+
+Li--Yang Case A gives
+
+$$
+H\le MT^{-49/164}=X^{33/164}<X^{1/4},
+$$
+
+and Case B gives
+
+$$
+H\le M^{35/69}T^{-2/23}=X^{23/138}=X^{1/6}<X^{1/4}.
+$$
+
+Their final range reaches
+
+$$
+H\le MT^{-\theta^*},
+\qquad
+\theta^*=0.3144831759741\ldots,
+$$
+
+not
+
+$$
+H\le MT^{-1/4}.
+$$
+
+This is a theorem-application guardrail, not a proof that all Bombieri--Iwaniec methods fail.
+
+A3's numerical section needs correction. In particular:
+
+- The coefficient relation must be
+
+$$
+\alpha_{-h,H}=\overline{\alpha_{h,H}},
+$$
+
+not $-\overline{\alpha_{h,H}}$.
+
+- The R5 toy table appears to double-divide by $H$ after already listing $K_H/H$ terms. The small example should not be used as evidence until recomputed from the raw definition.
+
+- The H13 stationary sign must match the displayed Fourier convention. For $hX/u-nu/4$, the active index has $n<0$.
+
+A3's toy computations are useful as protocols, not endpoint evidence. Round 16 must produce reproducible tables or scripts with exact formulas and high precision.
+
+## Rejected or risky ideas
+
+1. **Reject any claim of a new Gauss circle exponent.**  
+Round 15 does not prove M9 and therefore does not prove
+
+$$
+P(X)\ll_\epsilon X^{1/4+\epsilon}.
+$$
+
+2. **Reject treating H4 as fully finalized before final notation transcription.**  
+The source anchors are correct, but the proof draft still needs the exact conversion from Vaaler's $N,j_N,k_N,\widehat J$ notation to $H,K_H,\alpha_{h,H}$, including page/equation references.
+
+3. **Reject reopening H5r-B or H5r-L1 as active dependencies.**  
+The residual is controlled directly by the positive Fejer kernel and R5. Arbitrary bounded coefficients and $L^1$ residual norms are stress tests only.
+
+4. **Reject arbitrary-coefficient M9 as the official target.**  
+The active target is fixed-coefficient M9 with actual $\alpha_{h,H_D}$. Arbitrary coefficients are useful for stress testing but are not created by the Vaaler reduction.
+
+5. **Reject black-box Li--Yang endpoint import.**  
+The phase class is relevant, but the published Case A/B ranges and final $\theta^*$ range do not cover endpoint height $H_D\asymp D X^{-1/4}$.
+
+6. **Reject global no-go claims for Bombieri--Iwaniec, Li--Yang, spacing, or decoupling.**  
+Q1-Spectral blocks only routes that factor the character into diagonal-unitary conjugation and then use unitarily invariant or absolute-value bounds. It does not block all signed estimates.
+
+7. **Reject treating H13 as an endpoint estimate.**  
+H13 is a transform plus a falsification framework. It does not supply a double-sum bound.
+
+8. **Reject generic full-rank stationary phase or decoupling on the H13 dual phase.**  
+The phase $\sqrt{Xhm}$ has degenerate Hessian.
+
+9. **Reject BSOS as a proved escape.**  
+BSOS is a proposed signed statistic. It needs a proof that its target implies M9 and a numerical comparison with absolute-majorant and operator-norm bounds.
+
+10. **Reject using $\chi_4(h)$ in M9b as a harmless bounded-variation weight.**  
+Its total variation is $\asymp H$ on an interval of length $H$. Use the shifted-$F$ representation or residue splitting unless a theorem explicitly allows such weights.
+
+11. **Reject unsafe floating-point-only Fejer and M9 tests.**  
+Near resonances, ordinary sine evaluation can miss exact spikes or create artificial blowups. Use high precision or exact rational/modular checks.
+
+12. **Reject A3's negative-conjugate M9 recombination.**  
+The correct identity is $\alpha_{-h,H}=\overline{\alpha_{h,H}}$. Any numerical table using the opposite relation must be recomputed.
+
+## Known gaps
+
+1. **H4 final citation and notation gap.**  
+Need exact page/equation references and a proof-draft dictionary from Vaaler's notation to repo notation.
+
+2. **H4 convention gap.**  
+The proof must explicitly distinguish Vaaler's centered sawtooth from the floor-compatible $\psi_F(n)=-1/2$ and show that the Fejer residual covers the half-jump.
+
+3. **R5-Full bookkeeping gap.**  
+The final proof must cover first leg, shifted legs $\rho=1,3$, real and integer $X$, nearest-integer tie rules, sign and positivity of $\ell=4m-\rho$, zero Fejer mode, both signs of frequency, dyadic weights, bounded overlaps, short blocks, and logarithmic losses.
+
+4. **M9 main-term gap.**  
+No endpoint estimate is known for $\mathcal M_1(D;X)$ or $\mathcal M_2(D;X)$.
+
+5. **M9b theorem-extension gap.**  
+The shifted functions
+
+$$
+F_{\rho,D}(z)=\frac1{4z}+\frac{\rho D}{4X}
+$$
+
+have uniform derivative nondegeneracy, but a candidate theorem must allow the $D,X$-dependent constant shift and actual Vaaler $h$ weights at endpoint height.
+
+6. **Li--Yang subrange map gap.**  
+The raw endpoint block fails. The reading packet needs a table over $D=X^\delta$ and $H=X^\beta$ showing raw Case A, raw Case B, final $\theta^*$ range, and the uncovered Vaaler interval.
+
+7. **Signed-spacing gap.**  
+Q1-Spectral explains why operator-norm-only methods lose $\chi_4$. The repo still lacks a signed-form estimate that preserves $\chi_4(d_1)\chi_4(d_2)$ or $\chi_4(h)$ through a useful inequality.
+
+8. **H13 transform gap.**  
+Need exact modulo-$4$ Poisson normalization, active sign, stationary point, leading amplitude, nonstationary integration-by-parts bounds, boundary/transition regimes, and a post-transform signed statistic that avoids Q1-Spectral.
+
+9. **BSOS/CRI gap.**  
+No finite signed statistic has yet been shown to imply M9. A2's proposal needs normalization, target inequality, absolute comparator, and falsification data.
+
+10. **Numerical reliability gap.**  
+A3's current data are toy-scale and include normalization/sign issues. Round 16 needs reproducible high-precision computations.
+
+## New lemmas to add
+
+### H4-R15. Finite Vaaler approximation with floor-compatible residual
+
+**Status:** external theorem dependency; source-located, final notation transcription pending.
+
+For every integer $H\ge1$,
+
+$$
+\psi_F(t)
+=
+\sum_{1\le |h|\le H}\alpha_{h,H}e(ht)+R_H^F(t),
+$$
+
+where
+
+$$
+\alpha_{h,H}
+=
+-\frac{\Phi(|h|/(H+1))}{2\pi i h},
+$$
+
+$$
+\Phi(u)=\pi u(1-u)\cot(\pi u)+u,
+$$
+
+and
+
+$$
+|R_H^F(t)|\le \frac1{2H+2}K_H(t).
+$$
+
+Here
+
+$$
+K_H(t)=
+\sum_{|k|\le H}
+\left(1-\frac{|k|}{H+1}\right)e(kt).
+$$
+
+The coefficient conjugacy is
+
+$$
+\alpha_{-h,H}=\overline{\alpha_{h,H}}.
+$$
+
+### R5-R15. Fejer product-count residual bound
+
+**Status:** proved conditional on H4.
+
+For $X\ge2$, $X^{1/4}\le D\le X^{1/2}$, $H\asymp D X^{-1/4}$, and $|w_D|\le C$ supported on $d\asymp D$,
+
+$$
+\frac1H\sum_{d\asymp D}|w_D(d)|K_H(X/d)
+\ll_\epsilon X^{1/4+\epsilon},
+$$
+
+and for $\rho\in\{1,3\}$,
+
+$$
+\frac1H\sum_{d\asymp D}|w_D(d)|
+K_H\left(\frac{X/d+\rho}{4}\right)
+\ll_\epsilon X^{1/4+\epsilon}.
+$$
+
+### R5-Full-R15. Total Vaaler residual bound
+
+**Status:** proved conditional on H4 and dyadic bookkeeping.
+
+Assuming H4-R15, all Vaaler residual terms arising from H3 contribute
+
+$$
+\ll_\epsilon X^{1/4+\epsilon}.
+$$
+
+### Bridge-R15. Conditional endpoint reduction
+
+**Status:** proved conditional theorem.
+
+If H1--H3, H4-R15, R5-Full-R15, and M9-R15 hold, then
+
+$$
+P(X)\ll_\epsilon X^{1/4+\epsilon}.
+$$
+
+### M9-R15. Fixed-coefficient main-term criterion
+
+**Status:** official open target.
+
+For every dyadic
+
+$$
+X^{1/4}\le D\le X^{1/2},
+$$
+
+prove
+
+$$
+\mathcal M_1(D;X),\mathcal M_2(D;X)
+\ll_\epsilon X^{1/4+\epsilon}
+$$
+
+with the actual coefficients $\alpha_{h,H_D}$.
+
+### M9b-ShiftedF-R15. Shifted phase theorem-extension problem
+
+**Status:** open theorem-extension target.
+
+For
+
+$$
+F_{\rho,D}(z)=\frac1{4z}+\frac{\rho D}{4X},
+\qquad
+\rho\in\{1,3\},
+$$
+
+one has
+
+$$
+\frac{hX}{D}F_{\rho,D}(d/D)
+=
+h\left(\frac{X}{4d}+\frac{\rho}{4}\right),
+$$
+
+and
+
+$$
+F'F'''-3(F'')^2=-\frac3{8z^6}.
+$$
+
+A candidate theorem must allow this shifted $F$, actual Vaaler $h$ weights, and endpoint height $H\le D X^{-1/4}$.
+
+### LY-Subrange-R15. Li--Yang parameter comparison
+
+**Status:** theorem-comparison map, not an obstruction theorem.
+
+For $D=X^\delta$ and $H=X^\beta$,
+
+$$
+\beta_V=\delta-\frac14,
+$$
+
+$$
+\beta_A=\delta-\frac{49}{164},
+$$
+
+$$
+\beta_B=\min\left(\frac{3\delta}{2}-\frac12,\frac{35\delta-6}{69}\right),
+$$
+
+and
+
+$$
+\beta_*=\delta-\theta^*,
+\qquad
+\theta^*=0.3144831759741\ldots.
+$$
+
+Direct final Li--Yang range leaves the interval
+
+$$
+\max(0,\beta_*)<\beta\le\beta_V
+$$
+
+uncovered.
+
+### Q1-Spectral-R15
+
+**Status:** proved diagnostic, bounded scope.
+
+If $\chi_4$ enters a matrix estimate only through
+
+$$
+K\mapsto U^*KU,
+\qquad
+U=\operatorname{diag}(\chi_4(d)),
+$$
+
+then
+
+$$
+\|U^*KU\|_{\operatorname{op}}=\|K\|_{\operatorname{op}}.
+$$
+
+### H12-Trace-R15
+
+**Status:** proved diagnostic, bounded scope.
+
+For pure cyclic traces,
+
+$$
+\operatorname{Tr}((U^*KU)^m)=\operatorname{Tr}(K^m).
+$$
+
+This does not apply to open-path or non-conjugacy signed statistics.
+
+### H13-Mod4-R15
+
+**Status:** transform lemma pending convention-finalization.
+
+Under $e(t)=e^{2\pi i t}$ and a fixed Fourier convention,
+
+$$
+\sum_d\chi_4(d)w_D(d)e(hX/d)
+=
+\frac{i}{2}
+\sum_n\chi_4(n)
+\int w_D(u)e(hX/u-nu/4)\,du
+$$
+
+up to a global sign. For the displayed phase, the stationary contribution has $n=-m<0$ and
+
+$$
+m\asymp \frac{hX}{D^2}.
+$$
+
+### H13-Falsification-R15
+
+**Status:** diagnostic checklist.
+
+If the first post-H13 step sends the dual character into a diagonal unitary conjugation and then applies operator norm or an absolute-value bound, H13 is character-blind for that proof path. H13 remains viable only if a genuinely signed statistic survives.
+
+### BSOS-R15
+
+**Status:** proposed signed statistic, not a lemma.
+
+A BSOS or CRI statistic is admissible only if it specifies a finite matrix or bilinear form, localization, normalization, target bound, implication to M9, absolute-majorant comparator, operator-norm comparator, and falsification criterion.
+
+## Counterexample checks to run
+
+1. **H4 source citation check.**  
+Quote Vaaler Theorem 18 and Theorem 6 with exact printed page and equation numbers; transcribe the notation map.
+
+2. **H4 integer-jump check.**  
+Verify
+
+$$
+V_H(n)=0,
+\qquad
+K_H(0)=H+1,
+\qquad
+K_H(0)/(2H+2)=1/2.
+$$
+
+3. **Coefficient conjugacy check.**  
+Symbolically and numerically verify
+
+$$
+\alpha_{-h,H}=\overline{\alpha_{h,H}}.
+$$
+
+Recompute all paired-frequency formulas using this identity.
+
+4. **R5 raw-form recomputation.**  
+Compute
+
+$$
+\frac1{H_D}\sum_{d\asymp D}K_{H_D}(X/d)
+$$
+
+and the shifted analogues for $\rho=1,3$ without double division.
+
+5. **R5 stress cases.**  
+Test square, near-square, nonsquare, and divisor-rich $X$ across $D\asymp X^{1/4},X^{3/8},X^{1/2}$.
+
+6. **M9 fixed-coefficient numerics.**  
+Compute $\mathcal M_1(D;X)$ and $\mathcal M_2(D;X)$ with actual $\alpha_{h,H_D}$ and report
+
+$$
+|\mathcal M_i(D;X)|/X^{1/4}.
+$$
+
+7. **M9 stress comparison.**  
+Compare fixed coefficients with arbitrary phase coefficients and dyadic $L^1$ stress norms.
+
+8. **M9b shifted-$F$ audit.**  
+Check theorem hypotheses for
+
+$$
+F_{\rho,D}(z)=\frac1{4z}+\frac{\rho D}{4X}
+$$
+
+with uniform constants.
+
+9. **Li--Yang subrange table.**  
+For $D=X^\delta$, table $\beta_V,\beta_A,\beta_B,\beta_*$ for at least $\delta=1/4,3/8,1/2$ and identify covered/uncovered intervals.
+
+10. **Q1-Spectral matrix test.**  
+Construct the Gram matrix arising from the first natural Cauchy--Schwarz step on M9a and verify whether the character appears only as $U^*KU$.
+
+11. **H13 sign and constant check.**  
+Fix the Fourier convention and verify the modulo-$4$ Poisson constant, active sign, stationary point, leading phase, amplitude, and dual length.
+
+12. **H13 first-step falsification.**  
+After H13, apply the intended first Cauchy--Schwarz or spacing step and record whether $\chi_4(m)$ survives or is erased by operator norm.
+
+13. **BSOS/CRI finite test.**  
+Compute signed statistic, unsigned statistic, absolute majorant, operator-norm bound, and ratio. Deprioritize BSOS if it behaves like the absolute/operator-norm comparator.
+
+14. **High-precision Fejer tests.**  
+Use high precision or exact rational/modular handling near resonances.
+
+15. **A2 compliance check.**  
+For Round 16, verify that A2's response and review include accurate local word-count self-checks and avoid unsupported high-certainty route-closing language.
+
+## Research strategy adjustment
+
+Round 15 should be recorded as a proof-infrastructure consolidation round.
+
+The residual side is no longer the active bottleneck:
+
+$$
+\text{H4}+\text{R5-Full}
+\Longrightarrow
+\text{Vaaler residual}\ll_\epsilon X^{1/4+\epsilon},
+$$
+
+conditional on final H4 source-normalization and complete dyadic bookkeeping.
+
+The active work is M9. Do not revert to arbitrary-coefficient versions except as stress tests. The main analytic question is whether the fixed Vaaler coefficients and character placements can be exploited before Cauchy--Schwarz, operator norms, or absolute values erase them.
+
+Allocate the next round approximately as follows:
+
+- 80%: finalize H4/R5 proof text, correct coefficient pairing, produce Li--Yang subrange maps, and compute M9 with exact coefficients.
+- 20%: one falsifiable exploratory track, preferably H13/BSOS near $D\asymp X^{1/2}$.
+
+Assessment of A2: useful diagnostics, but overclaim risk remains. Next round must enforce low-temperature review literally: formula-level verification, exact hypotheses, accurate self-count, no unsupported finality language.
+
+Assessment of A3: useful audit and protocols, but current numeric results include sign and normalization issues. Next round must prioritize corrected scripts/tables over prose protocols.
+
+## Next-round prompts by agent
+
+### For A1
+
+Produce the Round 16 proof-draft and theorem-comparison packet.
+
+Objectives:
+
+1. **Finalize H4 source-normalization.**
+   Quote Vaaler's exact printed page, theorem, and equation numbers for Theorem 18 and Theorem 6. Translate $N,j_N,k_N,\widehat J$ into $H,V_H,K_H,\Phi,\alpha_{h,H}$. State the centered-to-floor-compatible convention at integers.
+
+2. **Write R5-Full as a completed proof-draft lemma.**
+   Include first leg, shifted legs $\rho=1,3$, real/integer $X$, tie rules for nearest integer, congruence $\ell=4m-\rho$, positivity of $\ell$, zero mode, both frequency signs, dyadic weights, short blocks, and logarithmic losses.
+
+3. **State Bridge-R16 cleanly.**
+   Write
+
+$$
+\text{H1--H3}+\text{H4}+\text{R5-Full}+\text{M9}
+\Longrightarrow
+P(X)\ll_\epsilon X^{1/4+\epsilon}.
+$$
+
+4. **Correct all coefficient pairing.**
+   Use only
+
+$$
+\alpha_{-h,H}=\overline{\alpha_{h,H}}.
+$$
+
+Derive the real paired-frequency form of M9 from the raw definition.
+
+5. **Freeze M9 as the active target.**
+   Define $\mathcal M_1,\mathcal M_2$ using actual Vaaler coefficients only. Move arbitrary-coefficient variants to a stress-test appendix.
+
+6. **Complete the M9b shifted-$F$ theorem-extension statement.**
+   Specify the exact theorem hypotheses needed for
+
+$$
+F_{\rho,D}(z)=\frac1{4z}+\frac{\rho D}{4X}.
+$$
+
+7. **Produce the Li--Yang subrange map.**
+   For $D=X^\delta$ and $H=X^\beta$, tabulate raw Case A, raw Case B, final $\theta^*$ range, endpoint Vaaler height, and the uncovered interval.
+
+Exploratory allocation: write a one-page H13 falsification checklist focused on the endpoint $D\asymp X^{1/2}$ and explicitly identify when the dual character becomes a Q1-Spectral diagonal-unitary artifact.
+
+### For A2
+
+Produce a low-temperature, proof-draft-ready signed-diagnostic packet.
+
+Mandatory style and audit constraints:
+
+- Use the cleaned A2 Stage A as the baseline; do not rely on the second Gemini pass except as supplemental provenance.
+- Perform an accurate local word-count self-check.
+- Use neutral formula-level verification.
+- Avoid high-certainty verbs and route-closing language unless exact hypotheses and proof are supplied.
+- Label central claims as `[PROVED]`, `[DERIVED-UNDER-ASSUMPTIONS]`, `[HEURISTIC]`, `[CONJECTURED]`, `[ASSUMED]`, or `[LIKELY-FALSE]`.
+
+Objectives:
+
+1. **Rewrite Q1-Spectral narrowly.**
+   Define $\mathcal V_D$, $U=\operatorname{diag}(\chi_4(d))$, and prove
+
+$$
+\|U^*KU\|_{\operatorname{op}}=\|K\|_{\operatorname{op}}.
+$$
+
+List exactly which methods this blocks and which it does not block.
+
+2. **Rewrite H12 trace invariance narrowly.**
+   Prove only
+
+$$
+\operatorname{Tr}((U^*KU)^m)=\operatorname{Tr}(K^m)
+$$
+
+for pure cyclic traces.
+
+3. **Repair C3 relevance.**
+   State variables and hypotheses. Mark half-integer translation/dilation facts as model diagnostics unless explicitly connected to M9 or H13.
+
+4. **Formalize H13 under one convention.**
+   Give exact modulo-$4$ Poisson summation with $e(t)=e^{2\pi i t}$, active sign, stationary point, amplitude, dual length $m\asymp hX/D^2$, range table for $D=X^\delta$, and Hessian-degeneracy check.
+
+5. **Run H13 first-step falsification symbolically.**
+   After the transform, apply the first intended Cauchy--Schwarz or spacing step. State whether $\chi_4(m)$ becomes a diagonal-unitary conjugation or remains in a non-conjugacy signed statistic.
+
+6. **Make BSOS or CRI executable.**
+   Provide one finite statistic with localization, normalization, target inequality, implication to M9, absolute-majorant comparator, operator-norm comparator, and falsification criterion.
+
+Exploratory allocation: focus the signed-statistic test near $D\asymp X^{1/2}$, where H13 is closest to balanced.
+
+### For A3
+
+Execute corrected verification and computation tasks. Prioritize scripts, tables, exact formulas, and line labels.
+
+Objectives:
+
+1. **Verify H4 against Vaaler with line/page labels.**
+   Provide exact page/equation references for Theorem 18 and Theorem 6. Confirm $\Phi$, $\alpha_{h,H}$, $K_H$, residual constant, and the integer-jump convention.
+
+2. **Correct the coefficient-sign issue.**
+   Use
+
+$$
+\alpha_{-h,H}=\overline{\alpha_{h,H}}.
+$$
+
+Recompute all M9 toy and moderate-scale tables from the raw definitions.
+
+3. **Recompute R5 tables.**
+   Avoid double division. Include first leg and shifted legs $\rho=1,3$ for square, near-square, nonsquare, and divisor-rich $X$ across $D\asymp X^{1/4},X^{3/8},X^{1/2}$. Normalize by $X^{1/4}$.
+
+4. **Run M9 fixed-coefficient numerics.**
+   Compute $\mathcal M_1(D;X)$ and $\mathcal M_2(D;X)$ with exact Vaaler coefficients. Compare fixed coefficients, arbitrary phase coefficients, and $L^1$ stress norms.
+
+5. **Use high precision near Fejer spikes.**
+   Avoid ordinary float-only sine evaluations near integer arguments. Use high precision or exact rational/modular checks.
+
+6. **Complete the Li--Yang line audit.**
+   Record exact labels and locations for the double sum $S$, Case A, Case B, main theorem, final $S/H$ target, allowed weights, and allowed $F$ hypotheses.
+
+7. **Test M9b shifted-$F$.**
+   Check derivative constants for
+
+$$
+F_{\rho,D}(z)=\frac1{4z}+\frac{\rho D}{4X},
+$$
+
+and compare fractional-frequency toy matrices with unshifted matrices.
+
+8. **Verify H13 constants and regimes.**
+   Fix the convention, active sign, stationary point, leading phase, amplitude, $M_{\rm dual}\asymp hX/D^2$, $\Lambda\asymp hX/D$, nonstationary decay, support-boundary cases, and $M_{\rm dual}\asymp1$ transition.
+
+9. **Implement Q1/BSOS tests.**
+   Once A2 gives a finite signed statistic, compute signed, unsigned, absolute-majorant, and operator-norm comparators.
+
+Exploratory allocation: run H13 signed-vs-unsigned matrix tests near $D\asymp X^{1/2}$ and report whether the dual character survives the first spacing step.
+
+## Confidence
+
+High confidence in the balanced hyperbola/Vaaler route as the current reduction framework.
+
+High confidence that no new Gauss circle exponent was proved in Round 15.
+
+High confidence that H1--H3 remain the correct arithmetic foundation.
+
+Moderate-to-high confidence that H4 is source-located correctly in Vaaler; final proof-draft notation transcription remains necessary.
+
+High confidence that R5-Full controls the Fejer residual at $X^{1/4+\epsilon}$ conditional on H4.
+
+High confidence that M9 fixed-coefficient main sums remain open and are the active analytic bottleneck.
+
+High confidence that $\alpha_{-h,H}=\overline{\alpha_{h,H}}$ is the correct conjugacy relation.
+
+High confidence that black-box Li--Yang import fails at endpoint Vaaler height.
+
+High confidence that Q1-Spectral is correct as a bounded operator-norm blindness diagnostic.
+
+Moderate confidence that the shifted-$F$ formulation is the right M9b theorem-comparison form.
+
+Moderate confidence that H13 deserves one more focused, falsifiable exploration near $D\asymp X^{1/2}$.
+
+Low confidence that H13, BSOS/CRI, signed Fourier, Mellin--Perron, or current printed Li--Yang technology proves M9 without a genuinely new signed or endpoint-strength estimate.
+
+## Round 16 Update
+
+Timestamp: 2026-06-16 22:30:45
+
+See `rounds/web-research-test/round_016/judge/judge-016.md`.
+
+## Summary
+
+Source basis: Round 16 Stage A/B material in the uploaded judge packet, including A1/A2/A3 outputs and cross-reviews. The retrieved Round 16 packet says M9 remains the active bottleneck and no new Gauss circle exponent was proved; it also records the conditional bridge
+$$
+\text{H1--H3}+\text{H4}+\text{R5-Full}+\text{M9}
+\Longrightarrow
+P(X)\ll_\epsilon X^{1/4+\epsilon}.
+$$
+
+The same packet records the next-round requirement to keep the bridge conditional, correct the R5 and H13 formulas, and treat M9 as the sole active analytic bottleneck. External source checks remain consistent with the literature anchors: Vaaler's 1985 paper is the relevant finite sawtooth/Fejer source, and Li--Yang's arXiv paper states a Bombieri--Iwaniec/first-spacing/Huxley-second-spacing improvement with exponent $\theta^*=0.314483\ldots$, not the conjectural $\theta=1/4$.
+
+Round 16 is best recorded as a **formula-audit and verification round**, not an exponent-improvement round. The residual side of the Vaaler route remains provisionally controlled by H4 plus R5-Full, after correcting the exact-resonance handling. The active mathematical problem is still M9: fixed-Vaaler-coefficient reciprocal main sums.
+
+## Selected main route
+
+Keep the balanced arithmetic hyperbola/Vaaler framework:
+
+$$
+P(X)=N(\sqrt X)-\pi X
+\longrightarrow
+\text{symmetric hyperbola}
+\longrightarrow
+\text{floor-compatible sawtooth}
+\longrightarrow
+\text{finite Vaaler}
+\longrightarrow
+\text{fixed-coefficient reciprocal main sums}.
+$$
+
+The accepted arithmetic identity remains
+
+$$
+P(X)
+=
+-4\sum_{d\le y}\chi_4(d)\psi_F(X/d)
++
+4\sum_{d\le y}
+\left[
+\psi_F\left(\frac{X/d+1}{4}\right)
+-
+\psi_F\left(\frac{X/d+3}{4}\right)
+\right]
++
+O(1),
+$$
+
+where
+
+$$
+y=\lfloor X^{1/2}\rfloor,
+\qquad
+\psi_F(t)=t-\lfloor t\rfloor-\frac12,
+\qquad
+\psi_F(n)=-\frac12.
+$$
+
+For dyadic blocks
+
+$$
+X^{1/4}\le D\le X^{1/2},
+$$
+
+use the local Vaaler height
+
+$$
+H_D\asymp D X^{-1/4}.
+$$
+
+Blocks with $D<X^{1/4}$ should still be removed before Vaaler expansion and bounded trivially using $|\psi_F|\le 1/2$.
+
+The official conditional bridge is:
+
+$$
+\boxed{
+\text{H1--H3}+\text{H4}+\text{R5-Full}+\text{M9}
+\Longrightarrow
+P(X)\ll_\epsilon X^{1/4+\epsilon}.
+}
+$$
+
+This is not a proof of the Gauss circle conjecture, because M9 is open.
+
+The active M9 target uses the actual Vaaler coefficients
+
+$$
+\alpha_{h,H}
+=
+-\frac{\Phi(|h|/(H+1))}{2\pi i h},
+\qquad
+\Phi(u)=\pi u(1-u)\cot(\pi u)+u,
+\qquad
+0<u<1.
+$$
+
+Define
+
+$$
+\mathcal M_1(D;X)
+=
+-4\sum_{1\le |h|\le H_D}
+\alpha_{h,H_D}
+\sum_{d\asymp D}
+\chi_4(d)w_D(d)e(hX/d),
+$$
+
+and
+
+$$
+\mathcal M_2(D;X)
+=
+4\sum_{1\le |h|\le H_D}
+\alpha_{h,H_D}
+\left(e(h/4)-e(3h/4)\right)
+\sum_{d\asymp D}
+w_D(d)e(hX/(4d)).
+$$
+
+Since
+
+$$
+e(h/4)-e(3h/4)=2i\chi_4(h),
+$$
+
+one may equivalently write
+
+$$
+\mathcal M_2(D;X)
+=
+8i\sum_{1\le |h|\le H_D}
+\alpha_{h,H_D}\chi_4(h)
+\sum_{d\asymp D}
+w_D(d)e(hX/(4d)).
+$$
+
+The open endpoint target is
+
+$$
+\mathcal M_1(D;X),\mathcal M_2(D;X)
+\ll_\epsilon X^{1/4+\epsilon}
+$$
+
+uniformly for $X^{1/4}\le D\le X^{1/2}$.
+
+## Useful fragments by source
+
+### From A1
+
+A1 supplied the strongest proof-infrastructure synthesis. The main useful item is the conditional bridge theorem and the insistence that arbitrary-coefficient versions remain stress tests, not active dependencies.
+
+A1 also gives the correct positive/negative frequency pairing. Since
+
+$$
+\alpha_{-h,H}=\overline{\alpha_{h,H}},
+$$
+
+not $-\overline{\alpha_{h,H}}$, the paired real forms should be frozen for numerical work. If
+
+$$
+A_h(D;X)=\sum_{d\asymp D}\chi_4(d)w_D(d)e(hX/d),
+$$
+
+then
+
+$$
+\mathcal M_1(D;X)
+=
+\frac4\pi
+\sum_{1\le h\le H_D}
+\frac{\Phi(h/(H_D+1))}{h}
+\Im A_h(D;X).
+$$
+
+If
+
+$$
+B_h(D;X)=\sum_{d\asymp D}w_D(d)e(hX/(4d)),
+$$
+
+then
+
+$$
+\mathcal M_2(D;X)
+=
+-\frac8\pi
+\sum_{\substack{1\le h\le H_D\\2\nmid h}}
+\frac{\Phi(h/(H_D+1))}{h}
+\chi_4(h)\Re B_h(D;X).
+$$
+
+This paired form is now the preferred implementation target for M9 computations.
+
+A1's shifted-$F$ formulation of M9b is also important. Instead of treating $\chi_4(h)$ as a nonsmooth periodic $h$-weight, use
+
+$$
+e(hX/(4d))(e(h/4)-e(3h/4))
+=
+e\left(h\left(\frac{X}{4d}+\frac14\right)\right)
+-
+e\left(h\left(\frac{X}{4d}+\frac34\right)\right).
+$$
+
+After writing $d=Dz$, compare with Li--Yang-type phases using
+
+$$
+F_{\rho,D}(z)=\frac1{4z}+\frac{\rho D}{4X},
+\qquad
+\rho\in\{1,3\}.
+$$
+
+The derivative nondegeneracy is unchanged:
+
+$$
+F'F'''-3(F'')^2=-\frac3{8z^6}.
+$$
+
+This is a theorem-comparison formulation, not a theorem application.
+
+### From A2
+
+A2's main useful contribution is the bounded-scope Q1-Spectral diagnostic. On
+
+$$
+\mathcal V_D=\ell^2(\{d:D\le d<2D,\ 2\nmid d\}),
+$$
+
+with
+
+$$
+U=\operatorname{diag}(\chi_4(d)),
+$$
+
+one has $U^*U=I$ and hence
+
+$$
+\|U^*KU\|_{\operatorname{op}}=\|K\|_{\operatorname{op}}.
+$$
+
+Therefore any M9a method that inserts $\chi_4(d)$ only through diagonal unitary conjugation and then estimates by operator norm, spectral radius, Schur/Gershgorin, Frobenius norm, cyclic trace, or absolute-value matrix is character-blind. This is a proved diagnostic under its stated hypothesis. It is not a global obstruction to signed bilinear or open-path methods.
+
+The trace version is similarly useful but narrow:
+
+$$
+\operatorname{Tr}((U^*KU)^m)=\operatorname{Tr}(K^m)
+$$
+
+for pure conjugacy-invariant cyclic traces. It does not block non-conjugacy signed forms, open-path moments, cross-residue moments, or bilinear estimates that keep signs before norm extraction.
+
+A2's H13 and BSOS material should be retained only as falsification infrastructure. The H13 claim that post-transform Cauchy--Schwarz necessarily recreates Q1 must be downgraded until the actual post-H13 kernel and amplitudes are written. BSOS is not a lemma yet; it is a candidate statistic requiring a finite definition, a target inequality, and an implication to M9 or a falsification criterion.
+
+### From A3
+
+A3's useful contribution is formula auditing. The following items should be kept:
+
+1. The coefficient conjugacy is
+
+$$
+\alpha_{-h,H}=\overline{\alpha_{h,H}}.
+$$
+
+2. The integer jump is covered exactly. The Vaaler polynomial has centered value $0$ at integers, while $\psi_F(n)=-1/2$, and
+
+$$
+K_H(0)=H+1,
+\qquad
+\frac{K_H(0)}{2H+2}=\frac12.
+$$
+
+3. The Li--Yang endpoint mismatch remains a valid theorem-application guardrail. At the raw endpoint block
+
+$$
+T=X,\qquad M=D\asymp X^{1/2},\qquad H=H_D\asymp X^{1/4},
+$$
+
+the quoted Li--Yang ranges fall short of $X^{1/4}$; hence the theorem cannot be imported as a black box. Round 16 explicitly asks for a subrange table and shifted-$F$ uniformity audit rather than a phase-shape assertion.
+
+4. H13 has the correct dual length
+
+$$
+M_{\rm dual}\asymp \frac{hX}{D^2}.
+$$
+
+Under the convention
+
+$$
+\phi_n(u)=hX/u-nu/4,
+$$
+
+with $n=-m$, the stationary point is
+
+$$
+u_0=2\sqrt{\frac{hX}{m}},
+$$
+
+and the phase value is
+
+$$
+\phi_{-m}(u_0)=\sqrt{hXm}.
+$$
+
+The earlier $2\sqrt{hXm}$ normalization is incorrect under this convention.
+
+A3's weak point is that most computations remain toy-scale or protocol-level. Round 17 should require actual high-precision tables, not more prose protocols.
+
+## Rejected or risky ideas
+
+1. **Reject any claim that Round 16 proves a new Gauss circle exponent.** No agent supplied M9.
+
+2. **Reject treating R5 as unconditional until H4 is source-normalized.** R5-Full is mathematically sound conditional on the exact Vaaler theorem and must still be written with edge cases.
+
+3. **Reject the erroneous R5 `max` display.** The correct residual counting kernel is the exact-resonance cap plus
+
+$$
+W_\Delta(u)=
+\begin{cases}
+1,&u=0,\\
+\min\left(1,\frac{\Delta^2}{u^2}\right),&u\ne0,
+\end{cases}
+$$
+
+not a formula that becomes undefined or inflates every term.
+
+4. **Reject H13 as a proof route by itself.** The transform preserves a dual character formally, but the resulting phase is Hessian-degenerate and the first natural norm extraction may erase the character.
+
+5. **Reject A2's H13-Dual as "proved" in its strong form.** It is a conditional diagnostic until the actual post-H13 kernel, stationary amplitudes, support restrictions, and first Cauchy--Schwarz step are written.
+
+6. **Reject BSOS as a lemma.** It is a proposed finite statistic and falsification object. No bound and no implication to M9 were proved.
+
+7. **Reject generic operator-norm, Frobenius, Schur, Gershgorin, cyclic-trace, or absolute-value-matrix arguments as character-aware proofs for M9a when the character enters only as $U^*KU$.** Q1-Spectral shows these are character-blind.
+
+8. **Reject black-box Li--Yang endpoint use.** Li--Yang is structurally relevant but does not cover the raw Vaaler endpoint height without additional theorem work.
+
+9. **Reject treating the M9b $\chi_4(h)$ form as automatically admissible for theorems requiring smooth or bounded-variation $h$ weights.** Use the shifted-phase formulation instead.
+
+## Known gaps
+
+1. **H4 source-normalization.** The proof draft still needs exact page, theorem, and equation labels from Vaaler; notation must be translated from $N,j_N,k_N,\widehat J$ to $H,K_H,\Phi,\alpha_{h,H}$.
+
+2. **R5-Full final proof.** The proof must include exact resonances, real $X$, nearest-integer ties, shifted legs $\rho=1,3$, positivity of $\ell=4m-\rho$, dyadic weights, short blocks, both frequency signs, zero Fejer mode, and dyadic logarithmic losses.
+
+3. **M9 remains open.** No estimate of
+
+$$
+\mathcal M_1(D;X),\mathcal M_2(D;X)\ll_\epsilon X^{1/4+\epsilon}
+$$
+
+was proved.
+
+4. **M9 theorem comparison remains incomplete.** The shifted-$F$ formulation passes the derivative determinant check, but allowed $D,X$ dependence, weight classes, endpoint height, and fixed Vaaler $h$ weights must be checked against the theorem being invoked.
+
+5. **Actual M9a Cauchy--Schwarz kernel not yet frozen.** Q1-Spectral should be applied to the actual first-step kernel, not to an abstract placeholder.
+
+6. **Post-H13 kernel not yet frozen.** The actual dual kernel, amplitudes, support, and first spacing step must be written before declaring character preservation or collapse.
+
+7. **Uniform H13 stationary phase is incomplete.** Need nonstationary terms, boundary stationary points, transition zones, and $M_{\rm dual}\asymp1$.
+
+8. **BSOS has no proved implication.** It needs a finite formula, a target inequality, and either a proof that it implies a useful M9 bound or a falsification threshold.
+
+9. **Executed numerics are missing.** Round 16 produced toy computations and protocols, not high-precision R5/M9/H13/BSOS tables.
+
+## New lemmas to add
+
+### Bridge-R16. Conditional Vaaler bridge
+
+**Status: conditional proof skeleton.**
+
+If H1--H3, H4, R5-Full, and M9 hold in the forms stated below, then
+
+$$
+P(X)\ll_\epsilon X^{1/4+\epsilon}.
+$$
+
+This should be placed in `best_proof_draft.md` as a conditional theorem, not as an unconditional result.
+
+### H4-R16. Finite Vaaler approximation with floor-compatible residual
+
+**Status: external theorem dependency; source-located, final notation transcription pending.**
+
+For $H\ge1$,
+
+$$
+\psi_F(t)
+=
+\sum_{1\le |h|\le H}\alpha_{h,H}e(ht)+R_H^F(t),
+$$
+
+with
+
+$$
+\alpha_{h,H}
+=
+-\frac{\Phi(|h|/(H+1))}{2\pi i h},
+$$
+
+and
+
+$$
+|R_H^F(t)|\le \frac1{2H+2}K_H(t),
+$$
+
+where
+
+$$
+K_H(t)=
+\sum_{|k|\le H}
+\left(1-\frac{|k|}{H+1}\right)e(kt).
+$$
+
+At integers the residual majorant covers the half-jump because $K_H(0)/(2H+2)=1/2$.
+
+### CCoef-R16. Vaaler coefficient conjugacy
+
+**Status: proved algebraic lemma.**
+
+For $1\le h\le H$,
+
+$$
+\alpha_{-h,H}=\overline{\alpha_{h,H}}.
+$$
+
+This replaces all negative-conjugate pairings.
+
+### R5-Full-R16. Fejer residual product-count bound
+
+**Status: proved conditional on H4; proof-draft write-up still needed.**
+
+Let
+
+$$
+X^{1/4}\le D\le X^{1/2},
+\qquad
+H\asymp D X^{-1/4},
+\qquad
+\Delta=D/H\asymp X^{1/4}.
+$$
+
+Then, for dyadic $w_D$ with bounded overlap,
+
+$$
+\frac1H\sum_{d\asymp D}|w_D(d)|K_H(X/d)
+\ll_\epsilon X^{1/4+\epsilon},
+$$
+
+and, for $\rho\in\{1,3\}$,
+
+$$
+\frac1H\sum_{d\asymp D}|w_D(d)|K_H\left(\frac{X/d+\rho}{4}\right)
+\ll_\epsilon X^{1/4+\epsilon}.
+$$
+
+For the first leg, choose $m$ nearest to $X/d$ and use
+
+$$
+\left\|\frac Xd\right\|=\frac{|X-md|}{d}\asymp \frac{|X-md|}{D}.
+$$
+
+Then
+
+$$
+\frac1H K_H(X/d)
+\ll
+W_\Delta(X-md),
+$$
+
+where
+
+$$
+W_\Delta(u)=
+\begin{cases}
+1,&u=0,\\
+\min\left(1,\frac{\Delta^2}{u^2}\right),&u\ne0.
+\end{cases}
+$$
+
+Grouping by $n=md$ and using $\tau(n)\ll_\epsilon n^\epsilon$ gives the bound. For shifted legs, near-integrality gives $X\approx d(4m-\rho)$; write $\ell=4m-\rho$ and use the same product-count argument with a congruence restriction.
+
+### M9-R16. Fixed-coefficient main-term target
+
+**Status: open analytic target.**
+
+For all dyadic $D$ in the active range,
+
+$$
+\mathcal M_1(D;X),\mathcal M_2(D;X)
+\ll_\epsilon X^{1/4+\epsilon}.
+$$
+
+This is the sole active analytic bottleneck.
+
+### M9-Pair-R16. Paired real form
+
+**Status: proved algebraic reformulation.**
+
+With $A_h$ and $B_h$ as above,
+
+$$
+\mathcal M_1(D;X)
+=
+\frac4\pi
+\sum_{1\le h\le H_D}
+\frac{\Phi(h/(H_D+1))}{h}
+\Im A_h(D;X),
+$$
+
+and
+
+$$
+\mathcal M_2(D;X)
+=
+-\frac8\pi
+\sum_{\substack{1\le h\le H_D\\2\nmid h}}
+\frac{\Phi(h/(H_D+1))}{h}
+\chi_4(h)\Re B_h(D;X).
+$$
+
+### M9b-Shift-R16. Shifted-phase formulation
+
+**Status: proved algebraic reformulation; theorem applicability open.**
+
+The second main term can be compared to reciprocal sums with
+
+$$
+F_{\rho,D}(z)=\frac1{4z}+\frac{\rho D}{4X},
+\qquad
+\rho\in\{1,3\},
+$$
+
+and
+
+$$
+F'F'''-3(F'')^2=-\frac3{8z^6}.
+$$
+
+The open question is whether a Bombieri--Iwaniec/Li--Yang-type theorem permits this $D,X$-dependent shift and the fixed Vaaler weights at endpoint height.
+
+### Q1-Spectral-R16. Operator-norm character-blindness
+
+**Status: proved diagnostic under stated hypothesis.**
+
+If $\chi_4(d)$ enters a spacing matrix only through
+
+$$
+K\mapsto U^*KU,
+\qquad
+U=\operatorname{diag}(\chi_4(d)),
+$$
+
+on odd denominators, then
+
+$$
+\|U^*KU\|_{\operatorname{op}}=\|K\|_{\operatorname{op}}.
+$$
+
+The same blindness holds for Frobenius norm, Schur/Gershgorin after absolute values, spectral radius, and pure cyclic conjugacy traces. This does not block non-conjugacy signed forms.
+
+### H12-Trace-R16. Pure cyclic trace invariance
+
+**Status: proved diagnostic under stated hypothesis.**
+
+For pure cyclic traces,
+
+$$
+\operatorname{Tr}((U^*KU)^m)=\operatorname{Tr}(K^m).
+$$
+
+No broader claim should be made.
+
+### H13-Mod4-R16. B-process-first modulo-$4$ transform
+
+**Status: derived under smoothness and convention hypotheses; uniform lemma not proved.**
+
+Poisson summation modulo $4$ transfers the spatial character to a dual Gauss factor. Under the convention
+
+$$
+\phi_n(u)=hX/u-nu/4,
+$$
+
+the active sign is $n=-m$, the stationary point is
+
+$$
+u_0=2\sqrt{\frac{hX}{m}},
+$$
+
+the dual length is
+
+$$
+m\asymp \frac{hX}{D^2},
+$$
+
+and
+
+$$
+\phi_{-m}(u_0)=\sqrt{hXm}.
+$$
+
+The resulting square-root phase has zero Hessian determinant, so generic full-rank two-dimensional stationary phase or decoupling is unavailable.
+
+### H13-Q1-Dual-R16
+
+**Status: conditional diagnostic, not proved obstruction.**
+
+If the first post-H13 spacing or Cauchy--Schwarz step puts the dual $\chi_4(m)$ only into a diagonal unitary conjugation, then Q1-Spectral applies again and the character is erased. This must be checked on the actual post-H13 kernel.
+
+### BSOS-R16
+
+**Status: heuristic/falsification statistic.**
+
+BSOS may be tested as a signed off-diagonal statistic, but it is not a lemma until it has:
+
+1. an exact finite definition;
+2. a target bound;
+3. a proof that the target implies a useful M9 estimate, or a clear falsification criterion;
+4. comparison with unsigned, absolute-majorant, and operator-norm quantities.
+
+## Counterexample checks to run
+
+1. **H4 page/equation audit.** Quote Vaaler Theorem 18 and Theorem 6 with printed page and equation labels. Verify coefficient sign, Fejer kernel normalization, residual constant, and jump convention.
+
+2. **R5 exact-resonance test.** Evaluate cases where $X/d\in\mathbb Z$ or $(X/d+\rho)/4\in\mathbb Z$. Confirm the bound uses the finite value $(H+1)/H\le2$, not division by zero.
+
+3. **R5 raw-form tables.** Compute
+
+$$
+\frac1{H_D}\sum_{d\asymp D}K_{H_D}(X/d)
+$$
+
+and the shifted analogues for square, nonsquare, near-square, and divisor-rich $X$, normalized by $X^{1/4}$.
+
+4. **M9 paired-frequency regression.** Compute $\mathcal M_1,\mathcal M_2$ using both the two-sided raw formula and the paired real formula. They must agree numerically.
+
+5. **M9 fixed-coefficient tables.** Use at least $\delta=1/4,3/8,1/2$ with $D=X^\delta$, multiple $X$, and report
+
+$$
+|\mathcal M_i(D;X)|/X^{1/4}.
+$$
+
+Compare against arbitrary-coefficient and $L^1$ stress norms.
+
+6. **Li--Yang subrange map.** For $D=X^\delta$, table
+
+$$
+\beta_V=\delta-\frac14,
+\qquad
+\beta_A=\delta-\frac{49}{164},
+$$
+
+$$
+\beta_{B1}=\frac{35}{69}\delta-\frac{2}{23},
+\qquad
+\beta_{B2}=\frac32\delta-\frac12,
+$$
+
+and
+
+$$
+\beta_*=\delta-\theta^*.
+$$
+
+Identify the uncovered high-frequency interval.
+
+7. **Shifted-$F$ uniformity audit.** Verify whether the theorem being compared permits
+
+$$
+F_{\rho,D}(z)=\frac1{4z}+\frac{\rho D}{4X}
+$$
+
+with uniform constants and the actual Vaaler $h$ weights.
+
+8. **Actual M9a Q1 test.** Construct the first natural Cauchy--Schwarz kernel from M9a and verify whether the character enters only as $U^*KU$.
+
+9. **Actual post-H13 Q1 test.** Construct the endpoint post-H13 kernel for $D\asymp X^{1/2}$ and verify whether the dual character survives beyond diagonal unitary conjugation.
+
+10. **H13 stationary-phase test.** Check the constant, sign, active $m$ range, boundary stationary points, $M_{\rm dual}\asymp1$, and nonstationary integration-by-parts tails.
+
+11. **BSOS falsification.** Implement one finite odd-denominator statistic and compute signed value, unsigned value, absolute majorant, and operator-norm comparator. If no stable signed gain appears, deprioritize BSOS.
+
+12. **Short-block check.** Verify that all $D<X^{1/4}$ blocks are removed before Vaaler and bounded by $O(X^{1/4}\log X)$ or better.
+
+## Research strategy adjustment
+
+Do not expand the route set. Round 17 should be narrower and more executable.
+
+The main route remains the conditional Vaaler reduction, with M9 as the active bottleneck. The residual side should be treated as provisionally cleared but still audited: finish H4 and R5-Full in proof-draft form. The analytic work should now focus on fixed coefficients, not arbitrary coefficients.
+
+Use Q1-Spectral as a filter: any proposed M9 proof that immediately passes to an operator norm, Frobenius norm, Schur/Gershgorin estimate, absolute-value matrix, or cyclic conjugacy trace should be deprioritized unless it explains how $\chi_4$ is used before that step.
+
+Allocate one limited exploratory slot to H13 near $D\asymp X^{1/2}$, where
+
+$$
+m\asymp h\asymp X^{1/4}
+$$
+
+at maximal height. If the endpoint signed-dual test shows immediate character erasure or no signed gain, demote H13 to a comparison module.
+
+A2 and A3 should be assessed separately as follows:
+
+- **A2:** valuable for Q1/H12 diagnostics and for proposing falsifiable signed statistics; overclaims around H13-Dual and BSOS must be downgraded. Next A2 output should be shorter, proof-draft-ready, and tied to actual M9/H13 kernels.
+- **A3:** valuable for coefficient, endpoint, Li--Yang, and H13 formula audits; next A3 output should prioritize executed tables and corrected scripts over further expository protocols.
+
+## Next-round prompts by agent
+
+### For A1
+
+Produce the Round 17 proof-infrastructure and theorem-comparison packet.
+
+Objectives:
+
+1. **Finalize H4-R16 source-normalization.**
+   - Quote Vaaler's exact page, theorem, and equation numbers.
+   - Translate $N,j_N,k_N,\widehat J_{N+1}$ into $H,K_H,\Phi,\alpha_{h,H}$.
+   - Verify the sign of $\alpha_{h,H}$.
+   - Verify the residual constant $1/(2H+2)$.
+   - State the centered-to-floor-compatible conversion at integers.
+
+2. **Insert R5-Full-R16 into proof-draft form.**
+   Include:
+   - first leg $K_H(X/d)$;
+   - shifted legs $K_H((X/d+\rho)/4)$ for $\rho=1,3$;
+   - integer and real $X$;
+   - nearest-integer ties;
+   - exact resonances using $W_\Delta(0)=1$;
+   - $\ell=4m-\rho$ and positivity of $\ell$;
+   - zero Fejer mode;
+   - dyadic weights and bounded overlap;
+   - frequency signs;
+   - short blocks $D<X^{1/4}$;
+   - logarithmic losses.
+
+3. **Write Bridge-R16 in final conditional form.**
+   State only:
+
+$$
+\text{H1--H3}+\text{H4}+\text{R5-Full}+\text{M9}
+\Longrightarrow
+P(X)\ll_\epsilon X^{1/4+\epsilon}.
+$$
+
+Do not imply M9 is proved.
+
+4. **Freeze M9 and the paired formulas.**
+   Put arbitrary-coefficient variants into a stress-test appendix. Use the paired real formulas for all numerical and theorem-comparison work.
+
+5. **Build the full Li--Yang subrange map.**
+   For all $\delta\in[1/4,1/2]$, compare $\beta_V,\beta_A,\beta_{B1},\beta_{B2},\beta_*$. Identify exactly where the endpoint Vaaler height is uncovered.
+
+6. **State the shifted-$F$ theorem-extension problem for M9b.**
+   List the theorem hypotheses that must be checked: $D,X$-dependent additive shift, derivative constants, weight class, dyadic $h$ coefficient variation, and endpoint frequency height.
+
+Exploratory allocation: write a one-page H13 falsification checklist specifying the exact first post-transform step that would reduce to Q1-Spectral.
+
+### For A2
+
+Produce a proof-draft-ready signed-diagnostic packet. Avoid broad route-closing language.
+
+Objectives:
+
+1. **Write Q1-Spectral-R17 for the actual M9a first-step kernel.**
+   Define the finite index set, the actual kernel arising from the first Cauchy--Schwarz or spacing step, and prove whether the character enters as $U^*KU$.
+
+2. **Write H12-R17 narrowly.**
+   Prove only the pure cyclic trace identity and list what it does not block.
+
+3. **Downgrade and repair H13-Dual.**
+   Construct the actual endpoint post-H13 kernel at $D\asymp X^{1/2}$. Include the stationary amplitude weights. State precisely whether the dual $\chi_4(m)$ appears by diagonal unitary conjugation or in a non-conjugacy form.
+
+4. **Make BSOS executable or discard it.**
+   Provide:
+   - one finite matrix definition;
+   - signed statistic;
+   - unsigned comparator;
+   - absolute-majorant comparator;
+   - operator-norm comparator;
+   - target bound;
+   - proof or clear statement of what bound would imply for M9.
+
+   If the implication to M9 is unavailable, label BSOS only as a falsification statistic.
+
+5. **Connect or retire C3.**
+   Keep C3 only if the half-integer translation/dilation variables are explicitly mapped to M9 or H13 variables. Otherwise move it to a diagnostic appendix.
+
+Exploratory allocation: one endpoint H13/BSOS signed-vs-unsigned test plan, not a general alternative route.
+
+### For A3
+
+Prioritize corrected scripts, tables, and exact citations over prose.
+
+Objectives:
+
+1. **H4 source table.**
+   Produce a table with:
+   - Vaaler theorem/equation/page;
+   - object in Vaaler notation;
+   - repo object;
+   - coefficient sign;
+   - residual constant;
+   - jump convention.
+
+2. **Corrected R5 raw-form tables.**
+   Use exact or high-precision arithmetic. Compute both residual legs from raw definitions:
+
+$$
+\frac1{H_D}\sum_{d\asymp D}K_{H_D}(X/d),
+\qquad
+\frac1{H_D}\sum_{d\asymp D}K_{H_D}\left(\frac{X/d+\rho}{4}\right),
+$$
+
+for $\rho=1,3$, without double division and without the erroneous `max` expression.
+
+3. **M9 fixed-coefficient numerical tables.**
+   For at least $\delta=1/4,3/8,1/2$, and for square, nonsquare, near-square, and divisor-rich $X$, report:
+
+$$
+|\mathcal M_1(D;X)|/X^{1/4},
+\qquad
+|\mathcal M_2(D;X)|/X^{1/4}.
+$$
+
+Also compare fixed coefficients with arbitrary-coefficient and $L^1$ stress norms.
+
+4. **H13 constant and stationary-phase verification.**
+   Under the convention $\phi_n(u)=hX/u-nu/4$, verify:
+
+$$
+u_0=2\sqrt{\frac{hX}{m}},
+\qquad
+\phi_{-m}(u_0)=\sqrt{hXm},
+\qquad
+m\asymp \frac{hX}{D^2}.
+$$
+
+Include nonstationary and boundary regimes as separate rows.
+
+5. **Li--Yang subrange and shifted-$F$ audit.**
+   Produce the full $\delta$ table and a separate checklist for whether $F_{\rho,D}$ is allowed uniformly.
+
+6. **Q1/H13/BSOS numerical tests.**
+   Build:
+   - actual M9a first-step matrix;
+   - endpoint post-H13 matrix;
+   - one BSOS matrix.
+
+   Report signed, unsigned, absolute-majorant, and operator-norm quantities.
+
+## Confidence
+
+High confidence in the balanced hyperbola/Vaaler route as the correct current reduction framework.
+
+High confidence that H1--H3 remain valid arithmetic reductions.
+
+Moderate-to-high confidence that H4 is correctly located and formula-consistent with Vaaler, but final source-normalized proof text is still required.
+
+High confidence that R5-Full controls the Fejer residual at the conjectural scale once H4 is accepted and exact resonance handling is corrected.
+
+High confidence that the correct Vaaler pairing is
+
+$$
+\alpha_{-h,H}=\overline{\alpha_{h,H}}.
+$$
+
+High confidence that M9 fixed-coefficient main sums are open and are the sole active analytic bottleneck.
+
+High confidence that Li--Yang cannot be imported as a black box at the endpoint Vaaler height.
+
+High confidence that Q1-Spectral is a valid diagnostic for diagonal-unitary/operator-norm methods, but low confidence that it rules out all signed methods.
+
+Moderate confidence that H13 is worth exactly one more endpoint-focused falsification round.
+
+Low confidence that BSOS, H13, signed Fourier, Mellin--Perron, or current printed Li--Yang technology proves M9 without a genuinely new signed or spacing estimate.
+
+No new Gauss circle exponent has been proved in Round 16.
+
