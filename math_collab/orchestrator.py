@@ -225,7 +225,7 @@ def state_bundle(root: Path) -> str:
     return "\n".join(chunks).strip()
 
 
-def human_bundle(root: Path) -> str:
+def human_bundle(root: Path, run_id: str | None = None, round_index: int | None = None) -> str:
     chunks: list[str] = []
     for rel in HUMAN_FILES:
         path = root / rel
@@ -239,6 +239,22 @@ def human_bundle(root: Path) -> str:
             chunks.append(
                 f"\n\n--- RECENT HUMAN NOTE: human/inbox/{path.name} ---\n{read_text(path).strip()}\n"
             )
+
+    if run_id and round_index is not None:
+        round_rel = f"rounds/{run_id}/round_{round_index:03d}/human"
+        round_human_dir = root / round_rel
+        if round_human_dir.exists():
+            round_files = sorted(round_human_dir.glob("*.md"), key=lambda p: p.name)
+            if round_files:
+                chunks.append(
+                    "\n\n--- ROUND-LOCAL HUMAN NOTES ---\n"
+                    "These files are human steering notes for this round. Treat directional "
+                    "requests as instructions, and treat mathematical assertions as claims "
+                    "to audit unless proof is supplied.\n"
+                )
+                for path in round_files:
+                    rel = f"{round_rel}/{path.name}"
+                    chunks.append(f"\n\n--- HUMAN FILE: {rel} ---\n{read_text(path).strip()}\n")
     return "\n".join(chunks).strip() or "No human interventions recorded yet."
 
 
@@ -1114,7 +1130,7 @@ def run_round(
     problem = read_text(problem_path)
     protocol = compact_protocol() if compact_prompts else read_text(root / "protocol.md")
     state = state_bundle(root)
-    human = human_bundle(root)
+    human = human_bundle(root, run_id=run_id, round_index=round_index)
     protocol, state, human, active_agents, exclusions = prepare_prompt_context(
         protocol=protocol,
         state=state,
