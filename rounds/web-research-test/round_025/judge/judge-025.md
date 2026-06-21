@@ -860,22 +860,17 @@ Objectives:
 2. Write the full fourth-moment expansion for
 $$
 S_2(D;X)
-=
-\sum_{1\le |h|\le H_D}
+=\sum_{1\le |h|\le H_D}
 \alpha_{h,H_D}C_h
 \sum_{d\asymp D}w_D(d)e(hX/(4d)).
 $$
 3. Use the cleared-denominator integer
 $$
-N
-=
+N=
 h_1d_2d_3d_4
--
-h_2d_1d_3d_4
-+
-h_3d_1d_2d_4
--
-h_4d_1d_2d_3.
+-h_2d_1d_3d_4
++h_3d_1d_2d_4
+-h_4d_1d_2d_3.
 $$
 4. Classify $N=0$ into diagonal, pair-swapped, semi-diagonal, denominator-paired, mixed, sign-symmetric, and unclassified families.
 5. For each family, assign one status only:
