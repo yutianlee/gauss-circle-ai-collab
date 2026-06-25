@@ -1,0 +1,585 @@
+{
+  "schema_version": 1,
+  "allowed_statuses": [
+    "proposed",
+    "open",
+    "blocked",
+    "diagnostic_only",
+    "source_audit_required",
+    "derived_under_assumptions",
+    "proved_internal",
+    "proved_external_dependency",
+    "rejected"
+  ],
+  "tracks": [
+    "proof_infrastructure",
+    "M9_analytic",
+    "computation",
+    "source_audit",
+    "tooling"
+  ],
+  "round_selection": {
+    "primary_track": "M9_analytic",
+    "secondary_track": "computation",
+    "target_obligations": [
+      "M9-M2-character-factor",
+      "M9-near-collision-taxonomy",
+      "M9-regression-raw-vs-paired"
+    ],
+    "round_rule": "Each round should choose one primary track and at most one secondary track."
+  },
+  "proof_obligations": [
+    {
+      "id": "GC-target",
+      "type": "theorem",
+      "track": "proof_infrastructure",
+      "title": "Gauss circle conjectural exponent target",
+      "status": "open",
+      "statement_tex": "For every epsilon > 0, P(X)=N(sqrt(X))-pi X satisfies P(X) <<_epsilon X^(1/4+epsilon).",
+      "dependencies": [
+        "Conditional-bridge"
+      ],
+      "implies": [],
+      "blockers": [
+        "M9"
+      ],
+      "evidence": {
+        "positive": [],
+        "negative": [],
+        "inconclusive": [
+          "state/current_state.md"
+        ]
+      },
+      "owner": "A1",
+      "next_action": "Keep the target explicitly conditional until all bridge dependencies, especially M9, are proved."
+    },
+    {
+      "id": "Conditional-bridge",
+      "type": "reduction",
+      "track": "proof_infrastructure",
+      "title": "Conditional bridge from accepted reductions to the target",
+      "status": "derived_under_assumptions",
+      "statement_tex": "H1-H3 + H4 + R5-Full + M9 imply P(X) <<_epsilon X^(1/4+epsilon).",
+      "dependencies": [
+        "H1-H3",
+        "H4",
+        "R5-Full",
+        "M9"
+      ],
+      "implies": [
+        "GC-target"
+      ],
+      "blockers": [
+        "M9",
+        "H4-source-audit"
+      ],
+      "evidence": {
+        "positive": [
+          "rounds/web-research-test/round_027/judge/judge-027.md"
+        ],
+        "negative": [],
+        "inconclusive": []
+      },
+      "owner": "A1",
+      "next_action": "Maintain the bridge in the proof draft, but do not promote the final theorem while M9 remains open."
+    },
+    {
+      "id": "H1-H3",
+      "type": "infrastructure",
+      "track": "proof_infrastructure",
+      "title": "Balanced hyperbola and sawtooth reductions",
+      "status": "proved_internal",
+      "statement_tex": "The exact symmetric hyperbola identity, periodic chi_4 partial-sum formula, and balanced sawtooth formula reduce P(X) to floor-compatible sawtooth sums up to O(1).",
+      "dependencies": [],
+      "implies": [
+        "Conditional-bridge"
+      ],
+      "blockers": [],
+      "evidence": {
+        "positive": [
+          "rounds/web-research-test/round_027/judge/judge-027.md"
+        ],
+        "negative": [],
+        "inconclusive": []
+      },
+      "owner": "A1",
+      "next_action": "Keep endpoint conventions visible when downstream obligations cite H1-H3."
+    },
+    {
+      "id": "H4",
+      "type": "external_theorem",
+      "track": "source_audit",
+      "title": "Finite Vaaler approximation with floor-compatible residual",
+      "status": "source_audit_required",
+      "statement_tex": "Use Vaaler's finite approximation to the floor-compatible sawtooth function with Fejer-kernel residual and integer-jump convention.",
+      "dependencies": [
+        "H4-source-audit"
+      ],
+      "implies": [
+        "Conditional-bridge",
+        "R5-Full"
+      ],
+      "blockers": [
+        "H4-source-audit"
+      ],
+      "source_card": "sources/vaaler_1985.md",
+      "evidence": {
+        "positive": [
+          "rounds/web-research-test/round_027/judge/judge-027.md"
+        ],
+        "negative": [],
+        "inconclusive": []
+      },
+      "owner": "A1",
+      "next_action": "Verify theorem labels, constants, residual convention, and integer values from rendered source pages."
+    },
+    {
+      "id": "H4-source-audit",
+      "type": "source_audit",
+      "track": "source_audit",
+      "title": "Rendered source audit for Vaaler 1985",
+      "status": "source_audit_required",
+      "statement_tex": "The exact Vaaler theorem, notation, hypotheses, constants, and residual inequality used by H4 must be checked from the rendered paper.",
+      "dependencies": [],
+      "implies": [
+        "H4"
+      ],
+      "blockers": [],
+      "source_card": "sources/vaaler_1985.md",
+      "evidence": {
+        "positive": [],
+        "negative": [],
+        "inconclusive": [
+          "rounds/web-research-test/round_027/judge/judge-027.md"
+        ]
+      },
+      "owner": "A1",
+      "next_action": "Complete the source card with rendered page/equation checks."
+    },
+    {
+      "id": "R5-Full",
+      "type": "lemma",
+      "track": "proof_infrastructure",
+      "title": "Fejer residual product-count bound",
+      "status": "derived_under_assumptions",
+      "statement_tex": "For active D and H_D asymp D X^(-1/4), all first and shifted Fejer residual blocks are O_epsilon(X^(1/4+epsilon)), conditional on H4.",
+      "dependencies": [
+        "H4"
+      ],
+      "implies": [
+        "Conditional-bridge"
+      ],
+      "blockers": [
+        "H4-source-audit"
+      ],
+      "evidence": {
+        "positive": [
+          "rounds/web-research-test/round_027/judge/judge-027.md"
+        ],
+        "negative": [],
+        "inconclusive": []
+      },
+      "owner": "A1",
+      "next_action": "Insert the proof with edge cases into the best proof draft after H4 source audit is complete."
+    },
+    {
+      "id": "M9",
+      "type": "lemma",
+      "track": "M9_analytic",
+      "title": "Endpoint bound for fixed Vaaler reciprocal main sums",
+      "status": "open",
+      "statement_tex": "For X large and X^(1/4) <= D <= X^(1/2), the fixed-coefficient reciprocal sums M_1(D;X), M_2(D;X) satisfy M_i(D;X) <<_epsilon X^(1/4+epsilon), uniformly in all active dyadic D.",
+      "dependencies": [
+        "H1-H3",
+        "H4",
+        "R5-Full",
+        "M9-M1",
+        "M9-M2"
+      ],
+      "implies": [
+        "Conditional-bridge"
+      ],
+      "blockers": [
+        "M9-M2-character-factor",
+        "M9-near-collision-taxonomy",
+        "M9-endpoint-uniformity"
+      ],
+      "evidence": {
+        "positive": [],
+        "negative": [],
+        "inconclusive": [
+          "rounds/web-research-test/round_028/responses/A3-028.md"
+        ]
+      },
+      "owner": "A2",
+      "next_action": "Formulate and attack the M2 fourth-moment or near-collision subproblem with the C_h=e(h/4)-e(3h/4) factor retained.",
+      "promotion_rule": "May move from open to derived_under_assumptions only if a proof gives uniform bounds for both M1 and M2 over all active dyadic D."
+    },
+    {
+      "id": "M9-M1",
+      "type": "sublemma",
+      "track": "M9_analytic",
+      "title": "M1 fixed-coefficient reciprocal-sum estimate",
+      "status": "open",
+      "statement_tex": "The M1 dyadic reciprocal main sum with actual Vaaler coefficients is O_epsilon(X^(1/4+epsilon)) uniformly over active D.",
+      "dependencies": [
+        "H4"
+      ],
+      "implies": [
+        "M9"
+      ],
+      "blockers": [
+        "M9-endpoint-uniformity"
+      ],
+      "evidence": {
+        "positive": [],
+        "negative": [],
+        "inconclusive": []
+      },
+      "owner": "A2",
+      "next_action": "Separate any M1 estimate from M2 and state its coefficient hypotheses and D ranges."
+    },
+    {
+      "id": "M9-M2",
+      "type": "sublemma",
+      "track": "M9_analytic",
+      "title": "M2 fixed-coefficient reciprocal-sum estimate",
+      "status": "open",
+      "statement_tex": "The M2 dyadic reciprocal main sum with actual beta_h=alpha_{h,H_D}C_h coefficients is O_epsilon(X^(1/4+epsilon)) uniformly over active D.",
+      "dependencies": [
+        "H4",
+        "M9-M2-character-factor",
+        "M9-near-collision-taxonomy"
+      ],
+      "implies": [
+        "M9"
+      ],
+      "blockers": [
+        "M9-M2-character-factor",
+        "M9-near-collision-taxonomy"
+      ],
+      "evidence": {
+        "positive": [],
+        "negative": [],
+        "inconclusive": []
+      },
+      "owner": "A2",
+      "next_action": "Retain the two-sided convention and prove or refute the near-collision estimate with actual beta_h weights."
+    },
+    {
+      "id": "M9-M2-character-factor",
+      "type": "obstruction",
+      "track": "M9_analytic",
+      "title": "M2 frequency-side character factor",
+      "status": "open",
+      "statement_tex": "The factor C_h=e(h/4)-e(3h/4)=2i chi_4(h) for odd h and 0 for even h must be retained in M2 estimates and in any pairing or fourth-moment reduction.",
+      "dependencies": [
+        "H4"
+      ],
+      "implies": [
+        "M9-M2"
+      ],
+      "blockers": [],
+      "evidence": {
+        "positive": [
+          "rounds/web-research-test/round_027/judge/judge-027.md",
+          "rounds/round_001/responses/A1_reasoning_1.md"
+        ],
+        "negative": [
+          "rounds/round_001/reviews/A1_review_1.md"
+        ],
+        "inconclusive": [
+          "rounds/round_001/responses/A2.md",
+          "rounds/round_001/responses/A2-2.md",
+          "rounds/round_001/responses/A3.md"
+        ]
+      },
+      "owner": "A2",
+      "next_action": "Use M9-M2-beta-algebra, M9-M2-h-cauchy-sign-loss, and M9-M2-fourth-moment-expansion to decide whether the next M2 attack should use fourth moments, CRI, or direct signed bilinear estimates. Do not promote M9-M2 without a uniform endpoint estimate.",
+      "last_updated_round": 1,
+      "last_updated_at": "2026-06-26T01:40:44"
+    },
+    {
+      "id": "M9-near-collision-taxonomy",
+      "type": "obstruction",
+      "track": "M9_analytic",
+      "title": "M2 fourth-moment near-collision taxonomy",
+      "status": "open",
+      "statement_tex": "Classify N=0 and 0<|N|~T configurations for the cleared M2 fourth-moment phase, including diagonal, pair-swapped, semi-diagonal, denominator-paired, mixed, sign-symmetric, truncation-edge, and unclassified cases.",
+      "dependencies": [
+        "M9-M2"
+      ],
+      "implies": [
+        "M9-M2"
+      ],
+      "blockers": [
+        "M9-near-collision-estimate"
+      ],
+      "evidence": {
+        "positive": [],
+        "negative": [
+          "rounds/round_001/reviews/A1_review_1.md"
+        ],
+        "inconclusive": [
+          "rounds/web-research-test/round_027/judge/judge-027.md",
+          "rounds/round_001/responses/A2.md",
+          "rounds/round_001/responses/A2-2.md"
+        ]
+      },
+      "owner": "A2",
+      "next_action": "Repair the taxonomy using the corrected two-sided fourth-moment numerator N and actual beta_h weights. Classify exact N=0 and 0<|N|~T configurations with counterexample-tested sign rules only.",
+      "last_updated_round": 1,
+      "last_updated_at": "2026-06-26T01:40:44"
+    },
+    {
+      "id": "M9-near-collision-estimate",
+      "type": "lemma",
+      "track": "M9_analytic",
+      "title": "Weighted near-collision estimate for M2 fourth moment",
+      "status": "proposed",
+      "statement_tex": "A signed or absolute coefficient-weighted estimate for 0<|N|~T near-collision bands strong enough to imply the M2 endpoint bound.",
+      "dependencies": [
+        "M9-near-collision-taxonomy"
+      ],
+      "implies": [
+        "M9-M2"
+      ],
+      "blockers": [],
+      "evidence": {
+        "positive": [],
+        "negative": [],
+        "inconclusive": []
+      },
+      "owner": "A2",
+      "next_action": "After taxonomy, formulate this as an exact theorem with all coefficient weights and dyadic ranges."
+    },
+    {
+      "id": "M9-endpoint-uniformity",
+      "type": "obstruction",
+      "track": "M9_analytic",
+      "title": "Endpoint uniformity over active dyadic D",
+      "status": "open",
+      "statement_tex": "Any bound used for M9 must hold uniformly for X^(1/4) <= D <= X^(1/2), including endpoint and short-block regimes.",
+      "dependencies": [],
+      "implies": [
+        "M9"
+      ],
+      "blockers": [],
+      "evidence": {
+        "positive": [],
+        "negative": [],
+        "inconclusive": []
+      },
+      "owner": "A2",
+      "next_action": "Attach explicit D-range hypotheses to every proposed M1 or M2 estimate."
+    },
+    {
+      "id": "M9-regression-raw-vs-paired",
+      "type": "computation",
+      "track": "computation",
+      "title": "Raw-vs-paired numerical stress test for M9",
+      "status": "proposed",
+      "statement_tex": "Compare raw two-sided complex M1/M2 formulas with paired real formulas for real weights, and confirm paired formulas fail outside their hypotheses for complex weights.",
+      "dependencies": [
+        "M9",
+        "M9-M2-character-factor"
+      ],
+      "implies": [],
+      "blockers": [],
+      "accepted_evidence_level": "diagnostic_only",
+      "required_output": [
+        "script",
+        "command",
+        "table",
+        "precision log",
+        "report.md"
+      ],
+      "evidence": {
+        "positive": [],
+        "negative": [],
+        "inconclusive": [
+          "rounds/web-research-test/round_028/responses/A3-028.md",
+          "rounds/round_001/responses/A3.md",
+          "rounds/round_001/reviews/A1_review_1.md"
+        ]
+      },
+      "owner": "A3",
+      "next_action": "Produce computations/m9_regression/run.py, outputs/table_small.csv, a precision log, and report.md using the actual M1/M2 raw formulas and actual Vaaler coefficients. Verify real-weight paired equality and complex-weight failure of the paired real formulas. Mark all evidence diagnostic_only.",
+      "last_updated_round": 1,
+      "last_updated_at": "2026-06-26T01:40:44"
+    },
+    {
+      "id": "Li-Yang-source-audit",
+      "type": "source_audit",
+      "track": "source_audit",
+      "title": "Li-Yang theorem and rendered-PDF audit",
+      "status": "source_audit_required",
+      "statement_tex": "Record exact theorem hypotheses, variable ranges, weights, and absolute-value placement before using Li-Yang as a dependency or guardrail.",
+      "dependencies": [],
+      "implies": [],
+      "blockers": [],
+      "source_card": "sources/li_yang_2023.md",
+      "evidence": {
+        "positive": [],
+        "negative": [],
+        "inconclusive": [
+          "rounds/web-research-test/Li-Yang-arXiv-2308.14859v2.tex"
+        ]
+      },
+      "owner": "A1",
+      "next_action": "Resolve the Case A/B discrepancy from the rendered PDF and update the source card."
+    },
+    {
+      "id": "M9-M2-beta-algebra",
+      "type": "normalization",
+      "track": "M9_analytic",
+      "title": "Exact beta_h coefficient algebra for M2",
+      "status": "derived_under_assumptions",
+      "statement_tex": "Assuming the H4 Vaaler coefficient convention alpha_{h,H}=-Phi(|h|/(H+1))/(2 pi i h), the M2 coefficient beta_{h,H}=alpha_{h,H}(e(h/4)-e(3h/4)) equals -Phi(|h|/(H+1)) chi_4(|h|) 1_{2 not divides h}/(pi |h|). Hence beta_{h,H} is real and even.",
+      "dependencies": [
+        "H4"
+      ],
+      "implies": [
+        "M9-M2-character-factor"
+      ],
+      "blockers": [
+        "H4-source-audit"
+      ],
+      "evidence": {
+        "positive": [
+          "rounds/round_001/responses/A1_reasoning_1.md",
+          "rounds/round_001/reviews/A1_review_1.md"
+        ],
+        "negative": [],
+        "inconclusive": [
+          "rounds/round_001/responses/A2.md",
+          "rounds/round_001/responses/A3.md",
+          "rounds/obligation-main/round_001/judge/judge-001.md"
+        ]
+      },
+      "owner": "A1",
+      "next_action": "Verify the exact H4 coefficient convention from the Vaaler source card and then insert the beta_h algebra into the proof draft.",
+      "last_updated_round": 1,
+      "last_updated_at": "2026-06-26T01:40:44"
+    },
+    {
+      "id": "M9-M2-h-cauchy-sign-loss",
+      "type": "obstruction",
+      "track": "M9_analytic",
+      "title": "Weighted h-Cauchy loses the M2 frequency character sign",
+      "status": "derived_under_assumptions",
+      "statement_tex": "For S_2=sum_h alpha_h C_h B_h, the positive |alpha_h|-weighted h-Cauchy step replaces C_h by |C_h|^2=4 1_{2 not divides h}; therefore the chi_4(h) sign is lost and only odd-frequency support remains. This is a bounded-scope diagnostic for that Cauchy normalization.",
+      "dependencies": [
+        "M9-M2-beta-algebra"
+      ],
+      "implies": [
+        "M9-M2-character-factor"
+      ],
+      "blockers": [],
+      "evidence": {
+        "positive": [
+          "rounds/round_001/responses/A1_reasoning_1.md",
+          "rounds/round_001/reviews/A1_review_1.md"
+        ],
+        "negative": [],
+        "inconclusive": [
+          "rounds/round_001/responses/A2.md",
+          "rounds/round_001/responses/A3.md",
+          "rounds/obligation-main/round_001/judge/judge-001.md"
+        ]
+      },
+      "owner": "A1",
+      "next_action": "Use this only as a diagnostic. A2 should test fourth moments, CRI, or direct signed bilinear estimates rather than treating this as a no-go theorem.",
+      "last_updated_round": 1,
+      "last_updated_at": "2026-06-26T01:40:44"
+    },
+    {
+      "id": "M9-M2-fourth-moment-expansion",
+      "type": "reduction",
+      "track": "M9_analytic",
+      "title": "Algebraic fourth-moment expansion for M2 with retained character product",
+      "status": "derived_under_assumptions",
+      "statement_tex": "For S_2(D;X)=sum_{1<=|h|<=H_D} beta_h sum_d w_D(d)e(hX/(4d)), the two-sided fourth moment has phase X/4*(h_1/d_1-h_2/d_2+h_3/d_3-h_4/d_4) and cleared resonance integer N=h_1 d_2 d_3 d_4-h_2 d_1 d_3 d_4+h_3 d_1 d_2 d_4-h_4 d_1 d_2 d_3. The coefficient product retains the fourfold h-character before absolute-value majorization.",
+      "dependencies": [
+        "M9-M2-beta-algebra"
+      ],
+      "implies": [
+        "M9-near-collision-taxonomy"
+      ],
+      "blockers": [
+        "M9-near-collision-estimate"
+      ],
+      "evidence": {
+        "positive": [
+          "rounds/round_001/responses/A1_reasoning_1.md",
+          "rounds/round_001/reviews/A1_review_1.md"
+        ],
+        "negative": [],
+        "inconclusive": [
+          "rounds/round_001/responses/A2.md",
+          "rounds/obligation-main/round_001/judge/judge-001.md"
+        ]
+      },
+      "owner": "A2",
+      "next_action": "Classify exact and near-collision configurations using this N, actual beta_h weights, and a fixed two-sided convention.",
+      "last_updated_round": 1,
+      "last_updated_at": "2026-06-26T01:40:44"
+    }
+  ],
+  "rejected_claims": [
+    {
+      "id": "A2-M9-M2-character-factor-proved-internal-claim",
+      "reason": "A2's proposed promotion overstates the coefficient algebra and relies on the false or unproved cross-parity claim 16(-1)^{N/2}.",
+      "last_updated_at": "2026-06-26T01:40:44",
+      "last_updated_round": 1,
+      "evidence": [
+        "rounds/obligation-main/round_001/judge/judge-001.md"
+      ]
+    },
+    {
+      "id": "A2-M9-near-collision-taxonomy-blocked-claim",
+      "reason": "The taxonomy is not complete, and the Gallagher aliasing obstruction is not proved.",
+      "last_updated_at": "2026-06-26T01:40:44",
+      "last_updated_round": 1,
+      "evidence": [
+        "rounds/obligation-main/round_001/judge/judge-001.md"
+      ]
+    },
+    {
+      "id": "A2-M9-Gallagher-Aliasing-Derivative-Block",
+      "reason": "No precise Gallagher lemma, hypotheses, transition inequality, or counterexample construction is supplied.",
+      "last_updated_at": "2026-06-26T01:40:44",
+      "last_updated_round": 1,
+      "evidence": [
+        "rounds/obligation-main/round_001/judge/judge-001.md"
+      ]
+    },
+    {
+      "id": "A2-2-M9-Poisson-diagonal-capacity",
+      "reason": "The Poisson diagonal-capacity computation is an exploratory transformed-model calculation and does not prove M9 or the actual reciprocal M2 estimate.",
+      "last_updated_at": "2026-06-26T01:40:44",
+      "last_updated_round": 1,
+      "evidence": [
+        "rounds/obligation-main/round_001/judge/judge-001.md"
+      ]
+    },
+    {
+      "id": "A3-M9-regression-diagnostic-only-promotion",
+      "reason": "The response supplies a plan and surrogate-kernel script design, not committed executable files or actual M1/M2 raw-vs-paired output.",
+      "last_updated_at": "2026-06-26T01:40:44",
+      "last_updated_round": 1,
+      "evidence": [
+        "rounds/obligation-main/round_001/judge/judge-001.md"
+      ]
+    },
+    {
+      "id": "A3-M9-regression-script-duplicate",
+      "reason": "The existing obligation M9-regression-raw-vs-paired already requires the script, command, table, precision log, and report.",
+      "last_updated_at": "2026-06-26T01:40:44",
+      "last_updated_round": 1,
+      "evidence": [
+        "rounds/obligation-main/round_001/judge/judge-001.md"
+      ]
+    }
+  ]
+}

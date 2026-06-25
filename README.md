@@ -1,6 +1,7 @@
 # Gauss Circle AI Collaboration
 
 This repository is a public-memory workflow for multi-AI research on the Gauss circle problem.
+The workflow is claim-centered: `state/proof_obligations.yml` is the authoritative mathematical state, while round transcripts are audit evidence.
 
 It is adapted from the KKT workflow in `yutianlee/kkt-ai-collab`, but this repo uses exactly three agents:
 
@@ -44,12 +45,12 @@ A1 and A2 are semi-manual: paste prompts into persistent web conversations and s
 
 Each round uses these synchronized stages:
 
-1. Stage A: every active agent writes an independent reasoning attempt.
-2. Stage B: every active agent reviews the other agents' Stage A outputs.
-3. Stage C: A1 judges the round and writes the next-round prompts for A1, A2, and A3.
-4. Stage D: the repo state and compact reading packet are updated.
+1. Stage A: every active agent independently attacks selected proof obligations.
+2. Stage B: every active agent reviews proposed state changes, blockers, evidence, and status claims from the other agents.
+3. Stage C: A1 writes a judge synthesis, next-round prompts, and a machine-readable `State Patch`.
+4. Stage D: the orchestrator validates the `State Patch`, applies accepted changes to `state/proof_obligations.yml`, and regenerates the compact reading packet.
 
-The round barrier is strict: reviews do not start until all three reasoning responses are present; judging does not start until all three reviews are present; state update does not happen until judge synthesis is present.
+The round barrier is strict: reviews do not start until all three reasoning responses are present; judging does not start until all three reviews are present; state mutation does not happen until the judge synthesis has a valid patch.
 
 ## Layout
 
@@ -62,13 +63,24 @@ config/
   agents.web-test.json
 math_collab/
   orchestrator.py
+  proof_obligations.py
+  validate_state_patch.py
+  validate_round.py
   human.py
   normalize_markdown.py
 state/
+  proof_obligations.yml
+  next_round_prompts.md
+  last_validation_report.md
   current_state.md
   lemma_bank.md
   gap_register.md
   best_proof_draft.md
+sources/
+  vaaler_1985.md
+  li_yang_2023.md
+  huxley_2003.md
+  bourgain_watt.md
 human/
   current_directives.md
   goals.md
@@ -83,7 +95,7 @@ handoff/
   <run-id>/
 ```
 
-`rounds/` is the public archive. `handoff/` is ignored by Git and is used for temporary web prompts and copied web responses.
+`rounds/` is the public archive. `handoff/` is ignored by Git and is used for temporary web prompts and copied web responses. The reading packet should stay compact because it is generated from the proof-obligation graph rather than from the full transcript history.
 
 ## Quick Start
 
@@ -91,6 +103,12 @@ Smoke test the file layout without external API calls:
 
 ```powershell
 python -m math_collab.orchestrator --config config/agents.example.json --problem problems/gauss_circle.md --rounds 1 --dry-run --run-id smoke --no-state-update
+```
+
+Validate the proof-obligation graph:
+
+```powershell
+python -m math_collab.validate_state_patch --graph state/proof_obligations.yml
 ```
 
 Configure DeepSeek for the automatic A3 agent:
@@ -108,6 +126,22 @@ Generate or advance a mixed manual-web/API research round:
 python -m math_collab.orchestrator --config config/agents.web-test.json --problem problems/gauss_circle.md --run-id gauss-main --start-round 1 --rounds 1 --skip-missing-api
 ```
 
+For the most automated routine, use the guided obligation runner. It validates the graph, opens the web agents, pastes prompts, waits while you copy model responses, saves and normalizes them, validates the judge patch, and advances Stage D:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\auto_obligation_run.ps1 -RunId obligation-main -StartRound 1 -Rounds 1
+```
+
+Add `-SubmitPrompts` if you want the helper to press Enter after pasting prompts.
+
+If you prefer to manually open ChatGPT/Gemini, paste prompts, copy responses, save files, and normalize Markdown yourself, use the watcher instead:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\watch_web_research_run.ps1 -RunId obligation-main -StartRound 1 -Rounds 1 -NoNormalize
+```
+
+The watcher still automates graph validation, barrier polling, orchestrator reruns, judge-patch validation, Stage D, and reading-packet regeneration.
+
 For A1/A2 web agents, paste prompt files from:
 
 ```text
@@ -123,6 +157,8 @@ handoff/<run-id>/round_XXX/judge/
 ```
 
 A3 responses and reviews are written automatically under `rounds/<run-id>/round_XXX/` when the API key is present. If the key is missing, the barrier waits with a pending API marker.
+
+When a judge synthesis is ready, it must include a `## State Patch` section using JSON-compatible YAML. JSON is valid YAML, so this remains dependency-free even when PyYAML is not installed. Stage D validates the patch before mutating `state/proof_obligations.yml`.
 
 For the manual web run procedure and clipboard helpers, see `docs/web-research-run.md`. For DeepSeek API setup, see `docs/api-setup.md`.
 
@@ -155,4 +191,4 @@ Every agent must separate:
 - dependencies,
 - confidence.
 
-The public repository is the durable memory; web conversation memory is useful but not authoritative.
+The public repository is the durable memory; web conversation memory is useful but not authoritative. The proof-obligation graph is the durable mathematical memory; prose rounds explain and audit graph changes.

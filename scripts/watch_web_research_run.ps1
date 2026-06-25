@@ -2,7 +2,8 @@ param(
     [string] $RunId = "web-research-test",
     [int] $StartRound = 1,
     [int] $Rounds = 3,
-    [int] $PollSeconds = 30
+    [int] $PollSeconds = 30,
+    [switch] $NoNormalize
 )
 
 $ErrorActionPreference = "Stop"
@@ -57,7 +58,18 @@ function Invoke-Orchestrator([int] $Round) {
         --skip-missing-api
 }
 
+function Invoke-GraphValidation() {
+    & $Python -m math_collab.validate_state_patch --graph state/proof_obligations.yml
+}
+
+function Invoke-JudgePatchValidation([string] $JudgePath) {
+    & $Python -m math_collab.validate_round $JudgePath
+}
+
 function Normalize-IfPresent([string[]] $Paths) {
+    if ($NoNormalize) {
+        return
+    }
     $Existing = @($Paths | Where-Object { Test-Path -LiteralPath $_ })
     if ($Existing.Count -gt 0) {
         & $Python -m math_collab.normalize_markdown @Existing | Write-Host
@@ -141,7 +153,9 @@ function Show-NeededFiles([int] $Round) {
     }
 
     Normalize-IfPresent @($JudgeFile)
+    Invoke-JudgePatchValidation $JudgeFile
     Invoke-Orchestrator $Round
+    Invoke-GraphValidation
     Write-Host ""
     Write-Host "Round $RoundName is complete."
     return "complete"
@@ -149,6 +163,7 @@ function Show-NeededFiles([int] $Round) {
 
 Write-Host "Watching run '$RunId' from round $StartRound for $Rounds round(s)."
 Write-Host "Press Ctrl+C to stop."
+Invoke-GraphValidation
 
 $EndRound = $StartRound + $Rounds - 1
 for ($Round = $StartRound; $Round -le $EndRound; $Round++) {

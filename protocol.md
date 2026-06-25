@@ -10,6 +10,14 @@ The default Gauss circle panel has exactly three active agents:
 
 Do not mention, score, or assign tasks to `A4`, Qwen, or any inactive KKT agent. Older state text may contain historical agent IDs such as `gpt_pro_thinking`, `gemini_deep_think`, or `deepseek_api`; treat them as aliases for A1, A2, and A3 only when reconstructing prior contributions.
 
+## Authoritative Mathematical State
+
+The authoritative state is `state/proof_obligations.yml`.
+
+A proof obligation is any theorem, lemma, reduction, external theorem, normalization convention, computation target, source audit, obstruction, or counterexample search whose status matters for the project. Round transcripts in `rounds/` are evidence and audit trail; they are not the state itself.
+
+The compact reading packet in `manifests/reading_packet.md` is generated from the proof-obligation graph. Agents should normally read the packet and graph, not the full transcript history.
+
 ## Round Structure
 
 Rounds use strict barrier synchronization:
@@ -17,7 +25,7 @@ Rounds use strict barrier synchronization:
 - Stage B cannot begin until A1, A2, and A3 have completed Stage A.
 - Stage C cannot begin until A1, A2, and A3 have completed Stage B.
 - Stage D cannot begin until the A1 judge synthesis is complete.
-- The next round cannot begin until Stage D has updated the compact repo state.
+- The next round cannot begin until Stage D has validated or rejected the judge's `State Patch` and regenerated the compact reading packet.
 
 ### Stage A: Independent Reasoning
 
@@ -25,8 +33,8 @@ Each agent receives:
 
 - the problem statement,
 - the current reading packet,
-- the current lemma bank,
-- the current gap register,
+- the proof-obligation graph,
+- the current next-round prompts,
 - the prior judge decision if available,
 - the agent-specific judge prompt if available,
 - the human steering bundle,
@@ -36,6 +44,7 @@ The agent must output:
 
 ```text
 ## Summary
+## Target proof obligation
 ## Main claim or direction
 ## Detailed reasoning
 ## Theorem-dependency audit
@@ -45,12 +54,15 @@ The agent must output:
 ## Divergent alternatives and 20% exploration
 ## Useful lemmas
 ## What should be tested next
+## Proposed state patch, if any
 ## Confidence
 ```
 
+Stage A is not a full-project continuation by default. It should attack the selected proof obligation or obligations for the round.
+
 ### Stage B: Cross Review
 
-Each agent reviews all other active agents' Stage A outputs.
+Each agent reviews all other active agents' Stage A outputs, with special attention to proposed state changes.
 
 The review must output:
 
@@ -62,6 +74,7 @@ The review must output:
 ## Suggested synthesis
 ## Research strategy
 ## Verification
+## Proposed state changes to accept or reject
 ## Score by agent
 | Agent reviewed | Score (0-10) | Main reason | Must verify next |
 |---|---:|---|---|
@@ -83,24 +96,50 @@ The judge must output:
 ## New lemmas to add
 ## Counterexample checks to run
 ## Research strategy adjustment
+## State Patch
 ## Next-round prompts by agent
 ### For A1
 ### For A2
 ### For A3
+## Round Assessment
 ## Confidence
 ```
 
-The `For A1`, `For A2`, and `For A3` blocks are important: the orchestrator extracts them and injects the matching block into the next round's Stage A prompt.
+The `State Patch` block is the only mechanism for mutating `state/proof_obligations.yml`. Use JSON-compatible YAML so the local validator can parse it without optional dependencies. The `For A1`, `For A2`, and `For A3` blocks are also important: the orchestrator extracts them into `state/next_round_prompts.md` and injects the matching block into the next round's Stage A prompt.
 
 ### Stage D: State Update
 
-The orchestrator updates:
+The orchestrator validates the judge's `State Patch` and then updates:
 
-- `state/current_state.md`: compact current research state.
-- `state/lemma_bank.md`: proposed, proved, and rejected lemmas.
-- `state/gap_register.md`: known gaps and possible failure points.
-- `state/best_proof_draft.md`: best current proof skeleton.
-- `manifests/reading_packet.md`: compact packet for the next round.
+- `state/proof_obligations.yml`: authoritative proof-obligation graph.
+- `state/next_round_prompts.md`: extracted agent-specific next-round tasks.
+- `state/last_validation_report.md`: validator result for the latest patch.
+- `manifests/reading_packet.md`: compact graph-derived packet for the next round.
+- `state/current_state.md`: legacy compact pointer to the latest round and validation result only.
+
+The orchestrator refuses to apply a patch if:
+
+- an unknown status appears;
+- an obligation has duplicate or missing required identifiers;
+- an open-like obligation lacks `next_action`;
+- a computation is promoted as proof;
+- an external theorem or source audit lacks a source card;
+- a claim is promoted without evidence and a reason;
+- `M9` is promoted before both `M9-M1` and `M9-M2` are promoted with uniformity addressed.
+
+Allowed statuses:
+
+```text
+proposed
+open
+blocked
+diagnostic_only
+source_audit_required
+derived_under_assumptions
+proved_internal
+proved_external_dependency
+rejected
+```
 
 ## Public Repo Rule
 

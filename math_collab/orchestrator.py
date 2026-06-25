@@ -14,14 +14,40 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any
 
+try:
+    from .proof_obligations import (
+        apply_state_patch,
+        extract_state_patch,
+        generate_reading_packet,
+        load_graph,
+        parse_structured_text,
+        patch_result_summary,
+        validate_graph,
+        validate_patch_against_graph,
+        write_graph,
+    )
+except ImportError:  # pragma: no cover - supports direct script execution.
+    from proof_obligations import (  # type: ignore
+        apply_state_patch,
+        extract_state_patch,
+        generate_reading_packet,
+        load_graph,
+        parse_structured_text,
+        patch_result_summary,
+        validate_graph,
+        validate_patch_against_graph,
+        write_graph,
+    )
 
 STATE_FILES = [
-    "state/current_state.md",
+    "state/proof_obligations.yml",
+    "manifests/reading_packet.md",
+    "state/next_round_prompts.md",
+    "state/best_proof_draft.md",
     "state/lemma_bank.md",
     "state/gap_register.md",
-    "state/best_proof_draft.md",
-    "manifests/reading_packet.md",
-    "rounds/web-research-test/Li-Yang-arXiv-2308.14859v2.tex",
+    "sources/vaaler_1985.md",
+    "sources/li_yang_2023.md",
 ]
 
 HUMAN_FILES = [
@@ -323,13 +349,80 @@ def compact_protocol() -> str:
     return """# Compact Multi-AI Math Research Protocol
 
 Stages:
-1. Independent reasoning by every agent.
-2. Cross review only after all reasoning responses are present.
-3. Judge synthesis only after all reviews are present.
-4. State update only after judge synthesis.
+1. Independent reasoning by every agent on selected proof obligations.
+2. Cross review only after all reasoning responses are present; review proposed state changes, not just prose.
+3. Judge synthesis only after all reviews are present; the judge must produce a machine-readable State Patch.
+4. State update only after the State Patch is validated against `state/proof_obligations.yml`.
 
 Always separate proved claims, conjectures, gaps, counterexample checks, dependencies, and confidence.
-Human directives override prior AI suggestions."""
+Human directives override prior AI suggestions.
+The proof-obligation graph is authoritative; transcripts are audit evidence."""
+
+
+def proof_obligation_contract() -> str:
+    return """## Proof-Obligation Workflow Contract
+
+The authoritative mathematical state is `state/proof_obligations.yml`. Treat rounds as work on specific obligations, not as global project transcripts.
+
+Rules:
+
+- Focus on the round target obligations named in the reading packet or judge task.
+- Do not promote an obligation unless you provide an exact statement, dependencies, evidence files, and remaining caveats.
+- Computations may add diagnostic evidence or next actions, but may not prove theorem or lemma obligations.
+- External theorem obligations require source cards before they can be used as proof dependencies.
+- The final judge synthesis must include `## State Patch` using JSON-compatible YAML."""
+
+
+def state_patch_schema() -> str:
+    return """## State Patch Format
+
+Use JSON-compatible YAML so the local validator can parse it without extra dependencies. JSON is valid YAML.
+
+If your answer is wrapped in one outer Markdown fence for copy safety, do not nest another fence around the patch. Put the raw JSON-compatible patch directly under `## State Patch`.
+
+Shape:
+
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "new-id",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Short title",
+        "status": "open",
+        "statement_tex": "Exact statement.",
+        "dependencies": [],
+        "implies": [],
+        "blockers": [],
+        "evidence": {"positive": [], "negative": [], "inconclusive": ["rounds/..."]},
+        "owner": "A2",
+        "next_action": "Concrete next verification action."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-character-factor",
+        "status": "open",
+        "blockers_added": ["new-blocker-id"],
+        "evidence_added": {"inconclusive": ["rounds/..."]},
+        "next_action": "Concrete next verification action."
+      }
+    ],
+    "reject": [
+      {"id": "bad-claim-id", "reason": "Exact reason."}
+    ],
+    "no_change": [
+      {"id": "M9", "reason": "No proof-level change."}
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 0,
+    "reason": "Short reason."
+  }
+}
+
+Allowed statuses: proposed, open, blocked, diagnostic_only, source_audit_required, derived_under_assumptions, proved_internal, proved_external_dependency, rejected."""
 
 
 def round_name(index: int) -> str:
@@ -368,6 +461,8 @@ def output_schema(kind: str) -> str:
 
 ## Verification
 
+## Proposed state changes to accept or reject
+
 ## Score by agent
 
 | Agent reviewed | Score (0-10) | Main reason | Must verify next |
@@ -392,6 +487,10 @@ Score every other active agent shown under `## Outputs To Review`. Do not omit t
 
 ## Research strategy adjustment
 
+## State Patch
+
+Use JSON-compatible YAML following the required State Patch Format.
+
 ## Next-round prompts by agent
 
 ### For A1
@@ -400,8 +499,12 @@ Score every other active agent shown under `## Outputs To Review`. Do not omit t
 
 ### For A3
 
+## Round Assessment
+
 ## Confidence"""
     return """## Summary
+
+## Target proof obligation
 
 ## Main claim or direction
 
@@ -420,6 +523,8 @@ Score every other active agent shown under `## Outputs To Review`. Do not omit t
 ## Useful lemmas
 
 ## What should be tested next
+
+## Proposed state patch, if any
 
 ## Confidence"""
 
@@ -609,6 +714,8 @@ Follow the protocol and be strict about separating proved claims from conjectura
 
 {research_quality_rubric()}
 
+{proof_obligation_contract()}
+
 {reasoning_stage_guardrail()}
 
 {agent_stage_mode(agent, "reasoning")}
@@ -636,6 +743,8 @@ Human instructions override prior AI suggestions when they are about research di
 ## Your Task For Round {round_index}
 
 {task}
+
+Work against the proof-obligation graph. If you propose a mathematical state change, describe it under `## Proposed state patch, if any` using ids from `state/proof_obligations.yml`; the judge will decide whether to include it in the formal State Patch.
 
 {quality_gate_contract(agent, "reasoning")}
 
@@ -685,6 +794,8 @@ Review the other agents' Round {round_index} outputs. Your job is to identify us
 
 {research_quality_rubric()}
 
+{proof_obligation_contract()}
+
 {review_stage_guardrail(round_index)}
 
 {agent_stage_mode(agent, "review")}
@@ -708,6 +819,10 @@ Human instructions override prior AI suggestions when they are about research di
 ## Outputs To Review
 
 {peer_text}
+
+## State-Change Review Task
+
+Review proposed new obligations, status changes, dependency changes, evidence files, and no-change claims. Prefer accepting, revising, or rejecting state mutations over giving a broad prose critique.
 
 {review_stage_guardrail(round_index)}
 
@@ -768,6 +883,10 @@ Synthesize Round {round_index}. Prefer precise, checkable progress over impressi
 
 {research_quality_rubric()}
 
+{proof_obligation_contract()}
+
+{state_patch_schema()}
+
 {agent_stage_mode(judge, "judge")}
 
 {agent_depth_contract(judge, "judge")}
@@ -803,6 +922,30 @@ Human instructions override prior AI suggestions when they are about research di
 
 
 def dry_response(agent: Agent, stage: str, round_index: int) -> str:
+    state_patch = ""
+    if stage == "judge":
+        state_patch = """
+## State Patch
+
+{
+  "proof_obligations": {
+    "create": [],
+    "update": [],
+    "reject": [],
+    "no_change": [
+      {"id": "M9", "reason": "Dry run only; no mathematical evidence was evaluated."}
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 0,
+    "reason": "Dry run only."
+  }
+}
+
+## Round Assessment
+
+Dry run only.
+"""
     return f"""# Dry Run Output
 
 Agent: {agent.display_name}
@@ -813,6 +956,8 @@ This placeholder proves that the orchestration, file layout, and prompt generati
 Replace dry-run mode with real API calls or web responses for actual research.
 
 {output_schema("judge" if stage == "judge" else "review" if stage == "review" else "reasoning")}
+
+{state_patch}
 """
 
 
@@ -1033,10 +1178,114 @@ def run_agent(
     raise RuntimeError(f"Unknown provider for {agent.id}: {agent.provider}")
 
 
-def update_state_files(root: Path, run_id: str, round_index: int, judge_text: str | None) -> None:
+def next_round_prompts_text(
+    *,
+    agents: list[Agent],
+    state_text: str,
+    run_id: str,
+    round_index: int,
+    judge_ref: str,
+) -> str:
+    lines = [
+        "# Next Round Prompts",
+        "",
+        f"Generated after round {round_index} in run `{run_id}`.",
+        "",
+        f"Source judge synthesis: `{judge_ref}`.",
+        "",
+    ]
+    for agent in agents:
+        prompt = extract_agent_judge_prompt(state_text, agent_prompt_identifiers(agent))
+        lines.append(f"## For {agent.id}")
+        lines.append("")
+        lines.append(prompt or "No agent-specific judge prompt was found. Use the target obligations in the reading packet.")
+        lines.append("")
+    return "\n".join(lines).rstrip() + "\n"
+
+
+def update_state_files(
+    root: Path,
+    run_id: str,
+    round_index: int,
+    judge_text: str | None,
+    agents: list[Agent],
+) -> None:
     round_ref = f"rounds/{run_id}/{round_name(round_index)}"
     judge_ref = f"{round_ref}/judge/{judge_output_filename(round_index)}"
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+    graph_path = root / "state/proof_obligations.yml"
+    graph = load_graph(graph_path)
+    graph_issues = validate_graph(graph, root=root)
+    if graph_issues:
+        raise ValueError(
+            "Existing proof obligation graph is invalid:\n"
+            + "\n".join(f"- {issue}" for issue in graph_issues)
+        )
+
+    patch_result = None
+    validation_lines = [
+        "# Last State Patch Validation",
+        "",
+        f"Round: {round_index}",
+        f"Run: `{run_id}`",
+        f"Judge: `{judge_ref}`",
+        f"Timestamp: {timestamp}",
+        "",
+    ]
+    if judge_text:
+        patch_text = extract_state_patch(judge_text)
+        if patch_text:
+            patch = parse_structured_text(patch_text, source=judge_ref)
+            patch_issues = validate_patch_against_graph(graph, patch)
+            if patch_issues:
+                validation_lines.append("Status: rejected")
+                validation_lines.append("")
+                validation_lines.extend(f"- {issue}" for issue in patch_issues)
+                write_text(root / "state/last_validation_report.md", "\n".join(validation_lines) + "\n")
+                raise ValueError(
+                    "State Patch validation failed:\n"
+                    + "\n".join(f"- {issue}" for issue in patch_issues)
+                )
+            graph, patch_result = apply_state_patch(
+                graph,
+                patch,
+                round_index=round_index,
+                judge_ref=judge_ref,
+            )
+            graph_issues = validate_graph(graph, root=root)
+            if graph_issues:
+                validation_lines.append("Status: rejected after apply")
+                validation_lines.append("")
+                validation_lines.extend(f"- {issue}" for issue in graph_issues)
+                write_text(root / "state/last_validation_report.md", "\n".join(validation_lines) + "\n")
+                raise ValueError(
+                    "Patched proof obligation graph is invalid:\n"
+                    + "\n".join(f"- {issue}" for issue in graph_issues)
+                )
+            write_graph(graph_path, graph)
+            validation_lines.append("Status: applied")
+        else:
+            validation_lines.append("Status: no State Patch found; graph unchanged")
+    else:
+        validation_lines.append("Status: judge synthesis pending; graph unchanged")
+
+    summary = patch_result_summary(patch_result)
+    validation_lines.append("")
+    validation_lines.append(summary)
+    validation_lines.append("")
+    write_text(root / "state/last_validation_report.md", "\n".join(validation_lines))
+
+    write_text(
+        root / "state/next_round_prompts.md",
+        next_round_prompts_text(
+            agents=agents,
+            state_text=judge_text or "",
+            run_id=run_id,
+            round_index=round_index,
+            judge_ref=judge_ref,
+        ),
+    )
 
     current = read_text(root / "state/current_state.md").strip()
     addition = f"""
@@ -1047,34 +1296,16 @@ Timestamp: {timestamp}
 
 See `{judge_ref}`.
 
-{(judge_text or "Judge synthesis pending.").strip()}
+State patch validation: {summary}
 """
     write_text(root / "state/current_state.md", current + addition + "\n")
 
-    packet = f"""# Reading Packet
-
-Generated after round {round_index} in run `{run_id}`.
-
-## Current State
-
-{read_text(root / "state/current_state.md").strip()}
-
-## Lemma Bank
-
-{read_text(root / "state/lemma_bank.md").strip()}
-
-## Gap Register
-
-{read_text(root / "state/gap_register.md").strip()}
-
-## Best Proof Draft
-
-{read_text(root / "state/best_proof_draft.md").strip()}
-
-## Latest Round
-
-Responses, reviews, and judge synthesis are archived under `{round_ref}/`.
-"""
+    packet = generate_reading_packet(
+        graph,
+        run_id=run_id,
+        round_index=round_index,
+        patch_summary=summary,
+    )
     write_text(root / "manifests/reading_packet.md", packet)
 
 
@@ -1091,6 +1322,8 @@ def git_commit_and_push(root: Path, message: str, push: bool) -> None:
         "math_collab",
         "docs",
         "scripts",
+        "sources",
+        "computations",
         ".env.example",
         ".github",
         ".gitignore",
@@ -1288,7 +1521,7 @@ def run_round(
         return
 
     if update_state:
-        update_state_files(root, run_id, round_index, judge_text)
+        update_state_files(root, run_id, round_index, judge_text, agents)
 
     print(f"Round {round_index} complete for run `{run_id}`.")
     if not dry_run:

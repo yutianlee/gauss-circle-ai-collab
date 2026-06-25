@@ -8,7 +8,7 @@ Use this procedure for high-quality mixed runs where A1/A2 are manual web agents
 - A2: Gemini Pro Deep Think.
 - A3: Deepseek V4 Pro through the API.
 
-Use one persistent web conversation for A1 and one persistent web conversation for A2 for the whole run. The public repo and `manifests/reading_packet.md` remain authoritative; web conversation memory is helpful but not authoritative.
+Use one persistent web conversation for A1 and one persistent web conversation for A2 for the whole run. The public repo remains authoritative; specifically, `state/proof_obligations.yml` is the mathematical state and `manifests/reading_packet.md` is the compact generated packet. Web conversation memory is helpful but not authoritative.
 
 For A3 API setup, see `docs/api-setup.md`.
 
@@ -37,14 +37,59 @@ For the default config:
 3. Stage C requires:
    - `handoff/<run-id>/round_XXX/judge/judge-XXX.md`, because A1 is the default judge.
 
-After each stage is filled, rerun the orchestrator command for that same round. It advances only when the barrier is satisfied.
+The judge output must contain a `## State Patch` section using JSON-compatible YAML. After each stage is filled, rerun the orchestrator command for that same round. It advances only when the barrier is satisfied, and Stage D mutates `state/proof_obligations.yml` only if the patch validates.
 
 ## Commands
+
+Most automated guided run:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\auto_obligation_run.ps1 -RunId obligation-main -StartRound 1 -Rounds 1
+```
+
+This helper:
+
+- validates `state/proof_obligations.yml`;
+- opens ChatGPT and Gemini unless `-NoOpenBrowser` is set;
+- runs the orchestrator at each barrier;
+- pastes each A1/A2 prompt through the clipboard helper unless `-SkipPaste` is set;
+- waits for you to click Copy response in the web UI;
+- saves and normalizes each copied response;
+- validates the judge `State Patch` before Stage D;
+- regenerates the graph-derived reading packet after Stage D.
+
+Optional flags:
+
+```powershell
+-SubmitPrompts   # press Enter after pasting each prompt
+-SkipPaste       # only copy each prompt to clipboard; you paste manually
+-NoOpenBrowser   # do not open ChatGPT/Gemini tabs
+```
+
+Manual web/file handling with automatic barriers:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\watch_web_research_run.ps1 -RunId obligation-main -StartRound 1 -Rounds 1 -NoNormalize
+```
+
+Use this mode when you want to open ChatGPT/Gemini, paste prompts, copy responses, save files, and normalize Markdown yourself. The watcher still validates the graph, polls barriers, reruns the orchestrator, validates the judge patch, applies Stage D, and regenerates the reading packet.
 
 Generate or advance a research-mode round:
 
 ```powershell
 python -m math_collab.orchestrator --config config/agents.web-test.json --problem problems/gauss_circle.md --run-id gauss-main --start-round 1 --rounds 1 --skip-missing-api
+```
+
+Validate the proof-obligation graph before a run:
+
+```powershell
+python -m math_collab.validate_state_patch --graph state/proof_obligations.yml
+```
+
+Validate a saved judge output before rerunning Stage D:
+
+```powershell
+python -m math_collab.validate_round rounds/gauss-main/round_001/judge/judge-001.md
 ```
 
 If `python` is not on PATH in Codex Desktop, use the bundled Python:
@@ -122,3 +167,5 @@ rounds/<run-id>/round_XXX/prompts/judge_<round>.md
 ```
 
 The default judge for `config/agents.web-test.json` is A1, using ChatGPT Extended Pro.
+
+When copying the judge response from a web UI, preserve the `## State Patch` block exactly. If the model wraps the whole answer in one Markdown fence, the patch should be raw JSON-compatible YAML under the heading rather than a nested fenced block.
