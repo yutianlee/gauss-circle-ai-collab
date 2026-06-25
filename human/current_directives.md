@@ -90,3 +90,26 @@ A2 must still be a conservative referee, but it must not only reject. It must in
 A3 should translate the leading route proposals into executable checks where possible, especially formula regression, finite counterexample search, and small exact enumeration. Computation remains diagnostic only.
 
 The judge must compare route proposals explicitly. The judge should select one primary route and one backup route for the next round, and should not reward long critique unless it improves route selection or produces a precise proof obligation.
+
+# Round 2 Score Calibration and Narrow-Evidence Standard
+
+Kind: workflow directive
+Timestamp: 2026-06-26T03:05:00
+
+For the current judge synthesis and future M9 rounds, separate idea quality from proof-graph evidence.
+
+The judge and reviewers should not use one vague score to mix creativity, plausible routes, calibration, and state-promotable proof evidence. Keep the existing required `mathematical_progress_score`, but also report:
+
+- `idea_quality_score`: value of proposed routes, formulas, and diagnostics;
+- `state_evidence_score`: how much can safely mutate `state/proof_obligations.yml`;
+- `calibration_score`: whether the agent used correct statuses, avoided overclaiming, and supplied exact hypotheses.
+
+A2 should improve by proving one narrow lemma per round instead of writing a broad taxonomy essay. If A2 discusses a taxonomy, it must choose one priority subcase, give an exact statement, state dependencies, and mark all other families as open. A2 must label every central claim as exactly one of `[PROVED]`, `[DERIVED-UNDER-ASSUMPTIONS]`, `[HEURISTIC]`, `[CONJECTURED]`, `[ASSUMED]`, or `[LIKELY-FALSE]`. `[PROVED]` requires a complete proof with exact hypotheses; numerical examples are never proof.
+
+A3 should improve by producing execution-ready evidence. If the API agent cannot physically write repo files, it must output a concrete artifact bundle: file paths, script contents, exact command lines, expected table schema, precision/log fields, and a short report. The local workflow or Codex can then materialize and run those artifacts. Prose descriptions of tests do not count as evidence.
+
+For Round 2 judging specifically:
+
+- A2 official response has useful route ideas, but its low score is from overpromotion and incomplete proof evidence.
+- A3 has useful diagnostic design, but its low score is from missing committed executable artifacts.
+- The judge should score A2 and A3 higher on `idea_quality_score` than on `state_evidence_score` if warranted, while keeping mathematical state mutation conservative.

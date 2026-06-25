@@ -418,6 +418,9 @@ Shape:
   },
   "round_assessment": {
     "mathematical_progress_score": 0,
+    "idea_quality_score": 0,
+    "state_evidence_score": 0,
+    "calibration_score": 0,
     "reason": "Short reason."
   }
 }
@@ -465,9 +468,10 @@ def output_schema(kind: str) -> str:
 
 ## Score by agent
 
-| Agent reviewed | Score (0-10) | Main reason | Must verify next |
-|---|---:|---|---|
+| Agent reviewed | Idea quality (0-10) | State evidence (0-10) | Calibration (0-10) | Main reason | Must verify next |
+|---|---:|---:|---:|---|---|
 Score every other active agent shown under `## Outputs To Review`. Do not omit this table.
+Idea quality scores routes, formulas, and diagnostics. State evidence scores what can safely mutate the proof-obligation graph. Calibration scores status labels, hypotheses, and avoidance of overclaiming.
 
 ## Next-round recommendation
 
@@ -500,6 +504,8 @@ Use JSON-compatible YAML following the required State Patch Format.
 ### For A3
 
 ## Round Assessment
+
+Include split scores in prose: idea quality, state evidence, and calibration. In the State Patch, keep `mathematical_progress_score` conservative because it measures proof-graph-safe progress.
 
 ## Confidence"""
     return """## Summary
@@ -938,6 +944,9 @@ def dry_response(agent: Agent, stage: str, round_index: int) -> str:
   },
   "round_assessment": {
     "mathematical_progress_score": 0,
+    "idea_quality_score": 0,
+    "state_evidence_score": 0,
+    "calibration_score": 0,
     "reason": "Dry run only."
   }
 }
@@ -1309,26 +1318,31 @@ State patch validation: {summary}
     write_text(root / "manifests/reading_packet.md", packet)
 
 
-def git_commit_and_push(root: Path, message: str, push: bool) -> None:
-    paths = [
-        "README.md",
-        "protocol.md",
-        "problems",
-        "state",
-        "manifests",
-        "human",
-        "rounds",
-        "config",
-        "math_collab",
-        "docs",
-        "scripts",
-        "sources",
-        "computations",
-        ".env.example",
-        ".github",
-        ".gitignore",
-    ]
-    subprocess.run(["git", "add", *paths], cwd=root, check=True)
+def git_commit_and_push(
+    root: Path,
+    message: str,
+    push: bool,
+    *,
+    run_id: str | None = None,
+    start_round: int | None = None,
+    rounds: int | None = None,
+) -> None:
+    subprocess.run(["git", "add", "-u", "--", "."], cwd=root, check=True)
+
+    paths = ["state", "manifests", "human"]
+    if run_id and start_round is not None and rounds is not None:
+        for offset in range(rounds):
+            round_path = root / "rounds" / run_id / round_name(start_round + offset)
+            if round_path.exists():
+                paths.append(str(round_path.relative_to(root)))
+    else:
+        rounds_root = root / "rounds"
+        if rounds_root.exists():
+            paths.append("rounds")
+
+    existing_paths = [path for path in paths if (root / path).exists()]
+    if existing_paths:
+        subprocess.run(["git", "add", "--", *existing_paths], cwd=root, check=True)
     status = subprocess.run(
         ["git", "diff", "--cached", "--quiet"], cwd=root, text=True
     )
@@ -1602,6 +1616,9 @@ def main(argv: list[str] | None = None) -> int:
             root=root,
             message=f"Add multi-AI research run {args.run_id}",
             push=args.push,
+            run_id=args.run_id,
+            start_round=args.start_round,
+            rounds=args.rounds,
         )
 
     return 0

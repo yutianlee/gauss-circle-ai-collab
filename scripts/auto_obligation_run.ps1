@@ -5,7 +5,8 @@ param(
     [int] $DelaySeconds = 6,
     [switch] $SubmitPrompts,
     [switch] $SkipPaste,
-    [switch] $NoOpenBrowser
+    [switch] $NoOpenBrowser,
+    [switch] $NoAutoPublish
 )
 
 $ErrorActionPreference = "Stop"
@@ -62,6 +63,34 @@ function Invoke-Orchestrator([int] $Round) {
 
 function Invoke-GraphValidation() {
     & $Python -m math_collab.validate_state_patch --graph state/proof_obligations.yml
+}
+
+function Invoke-StageDPublish([int] $Round) {
+    if ($NoAutoPublish) {
+        Write-Host "Stage D auto-publish disabled."
+        return
+    }
+
+    $RoundName = Get-RoundName $Round
+    $RoundPath = "rounds\$RunId\$RoundName"
+    Write-Host ""
+    Write-Host "Publishing Stage D update to GitHub for $RunId / $RoundName..."
+
+    & git add -u -- .
+    $Paths = @("state", "manifests", "human", $RoundPath)
+    $Existing = @($Paths | Where-Object { Test-Path -LiteralPath $_ })
+    if ($Existing.Count -gt 0) {
+        & git add -- @Existing
+    }
+
+    & git diff --cached --quiet
+    if ($LASTEXITCODE -eq 0) {
+        Write-Host "No staged Stage D changes to commit."
+    } else {
+        & git commit -m "Complete $RunId $RoundName"
+    }
+
+    & git push
 }
 
 function Save-ClipboardResponse([string] $OutputPath) {
@@ -161,6 +190,7 @@ function Process-Round([int] $Round) {
 
     Invoke-Orchestrator $Round
     Invoke-GraphValidation
+    Invoke-StageDPublish $Round
 
     Write-Host ""
     Write-Host "Completed $RoundName. Reading packet and proof-obligation graph are updated."

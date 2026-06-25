@@ -2,7 +2,8 @@ param(
     [string] $RunId = "obligation-main",
     [int] $StartRound = 1,
     [int] $Rounds = 1,
-    [int] $PollSeconds = 30
+    [int] $PollSeconds = 30,
+    [switch] $NoAutoPublish
 )
 
 $ErrorActionPreference = "Stop"
@@ -16,4 +17,5 @@ Set-Location $RepoRoot
     -StartRound $StartRound `
     -Rounds $Rounds `
     -PollSeconds $PollSeconds `
-    -NoNormalize
+    -NoNormalize `
+    -NoAutoPublish:$NoAutoPublish

@@ -48,7 +48,7 @@ Each round uses these synchronized stages:
 1. Stage A: every active agent independently attacks selected proof obligations.
 2. Stage B: every active agent reviews proposed state changes, blockers, evidence, and status claims from the other agents.
 3. Stage C: A1 writes a judge synthesis, next-round prompts, and a machine-readable `State Patch`.
-4. Stage D: the orchestrator validates the `State Patch`, applies accepted changes to `state/proof_obligations.yml`, and regenerates the compact reading packet.
+4. Stage D: the orchestrator validates the `State Patch`, applies accepted changes to `state/proof_obligations.yml`, regenerates the compact reading packet, and the guided runner commits/pushes the completed round to GitHub unless `-NoAutoPublish` is set.
 
 The round barrier is strict: reviews do not start until all three reasoning responses are present; judging does not start until all three reviews are present; state mutation does not happen until the judge synthesis has a valid patch.
 
@@ -126,13 +126,14 @@ Generate or advance a mixed manual-web/API research round:
 python -m math_collab.orchestrator --config config/agents.web-test.json --problem problems/gauss_circle.md --run-id gauss-main --start-round 1 --rounds 1 --skip-missing-api
 ```
 
-For the most automated routine, use the guided obligation runner. It validates the graph, opens the web agents, pastes prompts, waits while you copy model responses, saves and normalizes them, validates the judge patch, and advances Stage D:
+For the most automated routine, use the guided obligation runner. It validates the graph, opens the web agents, pastes prompts, waits while you copy model responses, saves and normalizes them, validates the judge patch, advances Stage D, then commits and pushes the completed round to GitHub:
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\auto_obligation_run.ps1 -RunId obligation-main -StartRound 1 -Rounds 1
 ```
 
 Add `-SubmitPrompts` if you want the helper to press Enter after pasting prompts.
+Add `-NoAutoPublish` if you want to apply Stage D locally without committing/pushing to GitHub.
 
 If you prefer to manually open ChatGPT/Gemini, paste prompts, copy responses, save files, and normalize Markdown yourself, use the watcher instead:
 
@@ -140,7 +141,7 @@ If you prefer to manually open ChatGPT/Gemini, paste prompts, copy responses, sa
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\watch_web_research_run.ps1 -RunId obligation-main -StartRound 1 -Rounds 1 -NoNormalize
 ```
 
-The watcher still automates graph validation, barrier polling, orchestrator reruns, judge-patch validation, Stage D, and reading-packet regeneration.
+The watcher still automates graph validation, barrier polling, orchestrator reruns, judge-patch validation, Stage D, reading-packet regeneration, and GitHub publish after each completed round. Add `-NoAutoPublish` to keep the update local.
 
 For A1/A2 web agents, paste prompt files from:
 

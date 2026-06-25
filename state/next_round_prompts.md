@@ -1,102 +1,90 @@
 # Next Round Prompts
 
-Generated after round 1 in run `obligation-main`.
+Generated after round 2 in run `obligation-main`.
 
-Source judge synthesis: `rounds/obligation-main/round_001/judge/judge-001.md`.
+Source judge synthesis: `rounds/obligation-main/round_002/judge/judge-002.md`.
 
 ## For A1
 
-Target obligations: `M9-M2-beta-algebra`, `M9-M2-h-cauchy-sign-loss`, and `M9-M2-fourth-moment-expansion`.
+Target obligations: `M9-M2-beta-algebra`, `M9-M2-fourth-moment-expansion`, `M9-M2-N0-diagonal-core-bound`, and state maintenance.
 
 Objectives:
 
-1. Write a proof-draft-ready coefficient-normalization note using the actual H4 coefficient convention
-
+1. Insert the proof-draft-ready $\mathcal M_2$ coefficient normalization into the proof draft, preserving H4 dependency:
 $$
-\alpha_{h,H}
-=
--\frac{\Phi(|h|/(H+1))}{2\pi i h}.
-$$
-
-2. Prove
-
-$$
-C_h=e(h/4)-e(3h/4)
-=
-2i\chi_4(h)1_{2\nmid h}
+   C_h=2i\chi_4(h)1_{2\nmid h},
+   \qquad
+   \beta_{h,H}
+   =
+   -\frac{\Phi(|h|/(H+1))}{\pi |h|}
+   \chi_4(|h|)1_{2\nmid h}.
 $$
 
-and
+2. State the raw two-sided formula and the paired real formula, with the real-weight hypothesis explicit.
 
-$$
-\beta_{h,H}
-=
--\frac{\Phi(|h|/(H+1))}{\pi |h|}
-\chi_4(|h|)1_{2\nmid h}.
-$$
+3. Write the fourth-moment expansion using the exact coefficient product and corrected numerator $N$.
 
-3. State the paired real $\mathcal M_2$ formula for real dyadic weights only, and explicitly state why complex weights are outside that formula's hypotheses.
+4. Add a small lemma-bank entry for `M9-M2-N0-diagonal-core-bound` as open, not proved. State exactly what A2 must prove.
 
-4. Write the weighted $h$-Cauchy sign-loss diagnostic and the unweighted $h$-Cauchy endpoint diagonal check as bounded-scope diagnostics, not no-go theorems.
+5. Keep `M9`, `M9-M1`, `M9-M2`, `M9-near-collision-taxonomy`, `M9-near-collision-estimate`, and `GC-target` open.
 
-5. Insert the corrected two-sided fourth-moment expansion and cleared numerator $N$ into the proof draft.
+6. Exploratory allocation: compare fourth moment, CRI, and direct signed bilinear routes in one page, with one falsification criterion for each.
 
-6. Do not promote `M9`, `M9-M2`, or `M9-near-collision-taxonomy`.
+Verification tasks:
 
-Exploratory allocation: give a one-page comparison of fourth moment, CRI, and direct signed bilinear routes for $\mathcal M_2$, with one falsification criterion for each.
-
-Route-strengthening requirement: include `## Route proposals` with at least two serious proof routes. For each route, state the exact lemma it would prove, why it might work, which obstruction it attacks, dependencies, the first proof step, a fast falsification test, and a ranking against the other route.
+- Check H4 source-card dependency before any coefficient bound such as $|\Phi(u)|\le C$ is used.
+- Confirm that any paired implementation formula is labelled invalid for complex weights.
 
 ## For A2
 
-Target obligations: `M9-near-collision-taxonomy` and `M9-M2-fourth-moment-expansion`.
+Target obligations: `M9-near-collision-taxonomy`, `M9-M2-N0-diagonal-core-bound`, and `M9-M2-fourth-moment-expansion`.
 
 Objectives:
 
-1. Rewrite the fourth-moment taxonomy using the actual $\Phi$-weighted coefficient $\beta_h$, not a Fejer-linear surrogate.
-
-2. Use exactly one convention: preferably the two-sided convention
-
+1. Use one fixed two-sided convention:
 $$
-1\le |h|\le H_D.
+   1\le |h|\le H_D.
 $$
 
-3. Use the corrected phase
-
+2. Use the actual $\beta_h$ coefficients and the corrected numerator
 $$
-\frac X4
-\left(
-\frac{h_1}{d_1}
--\frac{h_2}{d_2}
-+\frac{h_3}{d_3}
--\frac{h_4}{d_4}
-\right)
-$$
-
-and the corrected numerator
-
-$$
-N=
-h_1d_2d_3d_4
--
-h_2d_1d_3d_4
-+
-h_3d_1d_2d_4
--
-h_4d_1d_2d_3.
+   N=
+   h_1d_2d_3d_4
+   -
+   h_2d_1d_3d_4
+   +
+   h_3d_1d_2d_4
+   -
+   h_4d_1d_2d_3.
 $$
 
-4. Classify exact $N=0$ families: exact diagonal, pair-swapped, semi-diagonal, denominator-paired, mixed, sign-symmetric, truncation-edge, and unclassified.
+3. Prove or explicitly mark open the `M9-M2-N0-diagonal-core-bound` lemma. Do not use the incorrect $\frac{1}{16}D^2$ constant for the whole core.
 
-5. For every claimed class, give either a proof, a counterexample, or a status label from the allowed reasoning labels: `[PROVED]`, `[DERIVED-UNDER-ASSUMPTIONS]`, `[HEURISTIC]`, `[CONJECTURED]`, `[ASSUMED]`, `[LIKELY-FALSE]`.
+4. Produce a taxonomy table with columns:
+   - family name;
+   - defining equations;
+   - proof that $N=0$;
+   - coefficient product;
+   - mass bound;
+   - status;
+   - remaining edge cases.
 
-6. Remove or repair the Gallagher obstruction. If retained, state a precise theorem with hypotheses and explain exactly how the M2 variables violate it.
+5. Resolve or preserve as open the unclassified exact $N=0$ residue reported in the small enumeration.
 
-7. Do not claim that A2-2's Poisson diagonal-capacity model proves M9. If used, restate it as exploratory and connect it back to the actual reciprocal $\mathcal M_2$ formula.
+6. Downgrade denominator-paired negligibility unless a proof is supplied.
 
-Exploratory allocation: define one CRI statistic under the two-sided convention and state what numerical behavior would falsify CRI as a serious route.
+7. Define near-collision bands using
+$$
+   |N|\lesssim D^4/X
+$$
+   and state the first exact theorem needed to bound them.
 
-Route-strengthening requirement: include `## Repair or alternative route`. Do not only reject A1's route. Either repair the strongest criticized route into a narrower lemma, or propose one alternative route with exact hypotheses, proof-obligation impact, and a fast falsification test.
+8. Repair or alternative route: formulate the direct signed bilinear route as a precise lemma with coefficient class, matrix or spacing norm, dependency on a named theorem if any, and a fast falsification test.
+
+Verification tasks:
+
+- Supply either proof or reproducible computation for every numerical claim.
+- Label central claims only as `[PROVED]`, `[DERIVED-UNDER-ASSUMPTIONS]`, `[HEURISTIC]`, `[CONJECTURED]`, `[ASSUMED]`, or `[LIKELY-FALSE]`.
 
 ## For A3
 
@@ -104,54 +92,58 @@ Target obligation: `M9-regression-raw-vs-paired`.
 
 Objectives:
 
-1. Produce actual files, not only a protocol:
+1. Produce actual repository-ready artifacts, not only a protocol:
+   - `computations/m9_regression/run.py`;
+   - `outputs/table_small.csv`;
+   - `computations/m9_regression/precision.log`;
+   - `computations/m9_regression/report.md`.
 
-- `computations/m9_regression/run.py`
-- `outputs/table_small.csv`
-- a precision log
-- `computations/m9_regression/report.md`
+2. Use the official raw two-sided M1/M2 formulas and actual Vaaler coefficients. If H4 source audit is not final, clearly mark the coefficient as provisional and separate structural tests from quantitative tests.
 
-2. Use the actual raw two-sided M1/M2 formulas and actual Vaaler coefficients.
+3. For real dyadic weights, verify raw two-sided sums equal the paired real formulas.
 
-3. For real dyadic weights, verify raw two-sided sums equal the paired formulas to numerical precision.
+4. For complex weights, verify paired real formulas fail unless modified.
 
-4. For complex dyadic weights, verify that the paired real formulas fail unless modified.
-
-5. Include explicit checks for
-
+5. Include explicit checks:
 $$
-C_h=2i\chi_4(h)1_{2\nmid h},
-\qquad
-|C_h|=2 \text{ for odd } h,
-\qquad
-\beta_{-h}=\beta_h.
+   C_h=2i\chi_4(h)1_{2\nmid h},
+   \qquad
+   |C_h|^2=4\,1_{2\nmid h},
+   \qquad
+   \beta_{-h}=\beta_h.
 $$
 
-6. Include a weighted $h$-Cauchy sign-loss regression showing that $|C_h|^2=4\,1_{2\nmid h}$.
+6. Implement small exact fourth-moment binning with the corrected $N$ and actual $\beta_h$ weights. Report exact $N=0$ bins, unclassified bins, and near-collision bands.
 
-7. Include a small fourth-moment binning routine using the corrected $N$ formula. Label results diagnostic only.
+7. Compute CRI ratios:
+$$
+   R_{\rm CRI}
+   =
+   \frac{|\Sigma_1-\Sigma_3|^2}
+   {|\Sigma_1|^2+|\Sigma_3|^2}.
+$$
 
-8. Do not use surrogate kernels as official evidence. Toy kernels may appear only in a separate exploratory appendix.
+8. Compute one bilinear gradient-spacing diagnostic using
+$$
+   \nabla f(h,d)=
+   \left(
+   \frac{X}{4d},
+   -\frac{hX}{4d^2}
+   \right).
+$$
 
-Exploratory allocation: add one complex-weight failure test and one small exact-bin enumeration for A2's corrected taxonomy.
+Verification tasks:
 
-Route-strengthening requirement: translate the leading A1/A2 routes into executable checks where possible. If a route cannot be tested computationally, say exactly why and propose the closest diagnostic-only proxy.
+- Record command line, Python version, precision settings, table schema, and pass/fail assertions.
+- Label all output `diagnostic_only`.
+- Do not use surrogate kernels as official evidence; put any toy kernel in a separate exploratory appendix.
 
 ## Round Assessment
 
-Round 1 is useful but not proof-progress at the endpoint. The correct state update is narrow:
+| Agent | Idea quality | State evidence | Calibration | Assessment |
+|---|---:|---:|---:|---|
+| A1 | 8.0 | 7.0 | 8.0 | Strong algebraic normalization and conservative state handling. Best basis for the judge synthesis. |
+| A2 | 7.5 | 3.0 | 4.5 | Strong route ideas and useful fourth-moment focus, but overpromotes incomplete taxonomy, numerical claims, and unproved denominator-paired estimates. |
+| A3 | 6.5 | 2.5 | 6.0 | Good diagnostic design, but evidence is not committed/executed and uses provisional or possibly non-official normalizations. |
 
-- Accept the exact $C_h$ and $\beta_h$ algebra, conditional on H4.
-- Accept the weighted $h$-Cauchy sign-loss diagnostic.
-- Accept the fourth-moment expansion and corrected numerator as algebraic reductions.
-- Keep `M9`, `M9-M2`, and `M9-near-collision-taxonomy` open.
-- Keep `M9-regression-raw-vs-paired` proposed until actual files exist.
-- Reject A2's and A2-2's broad state promotions.
-- Reject A3's algebraic premise about $\beta_{-h}$ and its surrogate-kernel evidence.
-
-Scores for the reviewed non-judge agents, using the Stage B assessment:
-
-| Agent | Score | Reason |
-|---|---:|---|
-| A2 | 5.0 | Correct base $C_h$ direction and useful fourth-moment instinct, but several central claims are false or unsupported, including the $16(-1)^{N/2}$ rule, denominator parity sieve, Gallagher obstruction, and state-patch promotions. |
-| A3 | 5.5 | Correctly targets executable diagnostics, but the main premise about $\beta_{-h}$ is wrong, the official computation is not executed, and the surrogate kernel is not state evidence. |
+Overall, Round 2 is useful but not proof-level endpoint progress. The fourth-moment route is now the primary M2 research direction. The direct signed bilinear route remains the backup. Computation remains diagnostic only until actual files and outputs exist.

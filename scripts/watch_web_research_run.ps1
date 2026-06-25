@@ -3,7 +3,8 @@ param(
     [int] $StartRound = 1,
     [int] $Rounds = 3,
     [int] $PollSeconds = 30,
-    [switch] $NoNormalize
+    [switch] $NoNormalize,
+    [switch] $NoAutoPublish
 )
 
 $ErrorActionPreference = "Stop"
@@ -64,6 +65,34 @@ function Invoke-GraphValidation() {
 
 function Invoke-JudgePatchValidation([string] $JudgePath) {
     & $Python -m math_collab.validate_round $JudgePath
+}
+
+function Invoke-StageDPublish([int] $Round) {
+    if ($NoAutoPublish) {
+        Write-Host "Stage D auto-publish disabled."
+        return
+    }
+
+    $RoundName = Get-RoundName $Round
+    $RoundPath = "rounds\$RunId\$RoundName"
+    Write-Host ""
+    Write-Host "Publishing Stage D update to GitHub for $RunId / $RoundName..."
+
+    & git add -u -- .
+    $Paths = @("state", "manifests", "human", $RoundPath)
+    $Existing = @($Paths | Where-Object { Test-Path -LiteralPath $_ })
+    if ($Existing.Count -gt 0) {
+        & git add -- @Existing
+    }
+
+    & git diff --cached --quiet
+    if ($LASTEXITCODE -eq 0) {
+        Write-Host "No staged Stage D changes to commit."
+    } else {
+        & git commit -m "Complete $RunId $RoundName"
+    }
+
+    & git push
 }
 
 function Normalize-IfPresent([string[]] $Paths) {
@@ -156,6 +185,7 @@ function Show-NeededFiles([int] $Round) {
     Invoke-JudgePatchValidation $JudgeFile
     Invoke-Orchestrator $Round
     Invoke-GraphValidation
+    Invoke-StageDPublish $Round
     Write-Host ""
     Write-Host "Round $RoundName is complete."
     return "complete"

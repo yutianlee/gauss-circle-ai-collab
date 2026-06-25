@@ -16,7 +16,7 @@ This workflow makes mathematical claims, not transcripts, the unit of progress.
 2. Stage A agents attack the selected target obligations.
 3. Stage B agents review proposed graph mutations: creates, updates, rejections, dependencies, blockers, evidence, and no-change claims.
 4. Stage C judge writes narrative synthesis plus `## State Patch`.
-5. Stage D validates the patch, applies accepted graph changes, extracts next prompts, and regenerates the reading packet.
+5. Stage D validates the patch, applies accepted graph changes, extracts next prompts, regenerates the reading packet, and the guided scripts commit/push the completed round unless `-NoAutoPublish` is set.
 
 ## Patch Rules
 
@@ -59,7 +59,7 @@ Run the guided workflow with minimal file handling:
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\auto_obligation_run.ps1 -RunId obligation-main -StartRound 1 -Rounds 1
 ```
 
-The helper automates graph validation, orchestrator reruns, prompt pasting, response saving, Markdown normalization, judge-patch validation, and reading-packet regeneration. You still need to wait for A1/A2 in their web UIs and click Copy response when each answer is done.
+The helper automates graph validation, orchestrator reruns, prompt pasting, response saving, Markdown normalization, judge-patch validation, reading-packet regeneration, and GitHub publish after Stage D. You still need to wait for A1/A2 in their web UIs and click Copy response when each answer is done. Use `-NoAutoPublish` for a local-only Stage D.
 
 Validate the graph:
 

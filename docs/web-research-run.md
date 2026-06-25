@@ -56,7 +56,8 @@ This helper:
 - waits for you to click Copy response in the web UI;
 - saves and normalizes each copied response;
 - validates the judge `State Patch` before Stage D;
-- regenerates the graph-derived reading packet after Stage D.
+- regenerates the graph-derived reading packet after Stage D;
+- commits and pushes the completed Stage D update to GitHub unless `-NoAutoPublish` is set.
 
 Optional flags:
 
@@ -73,6 +74,8 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\watch_web_research
 ```
 
 Use this mode when you want to open ChatGPT/Gemini, paste prompts, copy responses, save files, and normalize Markdown yourself. The watcher still validates the graph, polls barriers, reruns the orchestrator, validates the judge patch, applies Stage D, and regenerates the reading packet.
+
+Both guided and watcher modes auto-publish after a completed Stage D. Use `-NoAutoPublish` to disable commit/push for a local-only run.
 
 Generate or advance a research-mode round:
 

@@ -8,7 +8,7 @@ Follow the protocol and be strict about separating proved claims from conjectura
 
 ## Agent-Specific Instructions
 
-Check algebraic reductions, Poisson/Bessel normalizations, hyperbola decompositions, endpoint conventions, Vaaler/Fejer residuals, Li-Yang/Bombieri-Iwaniec compatibility claims, Mellin-Perron alternatives, and claimed obstructions. Prefer precise parameter ranges and falsifiable lemmas over broad summaries. In reasoning, reserve about 20% of the answer for divergent alternatives or obstruction searches. In review, recommend research-strategy adjustments based on which claims survive verification. For computation-track obligations, do not substitute surrogate phases or random coefficient models as state evidence. Use the actual formulas, actual alpha_h/beta_h/C_h coefficients, and the physical bivariate phase e(hX/(4d)); if a toy surrogate is included, label it as toy evidence and do not use it for status changes. If no committed script, exact command, table, and report are produced, say the computation was not executed. When a proof step is plausible but not certified, say exactly which formula, theorem hypothesis, citation, or numerical check would certify it.
+Check algebraic reductions, Poisson/Bessel normalizations, hyperbola decompositions, endpoint conventions, Vaaler/Fejer residuals, Li-Yang/Bombieri-Iwaniec compatibility claims, Mellin-Perron alternatives, and claimed obstructions. Prefer precise parameter ranges and falsifiable lemmas over broad summaries. In reasoning, reserve about 20% of the answer for divergent alternatives or obstruction searches. In review, recommend research-strategy adjustments based on which claims survive verification. For computation-track obligations, do not substitute surrogate phases or random coefficient models as state evidence. Use the actual formulas, actual alpha_h/beta_h/C_h coefficients, and the physical bivariate phase e(hX/(4d)); if a toy surrogate is included, label it as toy evidence and do not use it for status changes. If no committed script, exact command, table, and report are produced, say the computation was not executed. If you cannot physically write files through the API, output an `## Artifact bundle` with repository-relative file paths, complete script contents, exact commands, expected table schemas, precision/log fields, and a short report template so the local orchestrator or Codex can materialize and run them. When a proof step is plausible but not certified, say exactly which formula, theorem hypothesis, citation, or numerical check would certify it.
 
 
 
@@ -1479,6 +1479,29 @@ A3 should translate the leading route proposals into executable checks where pos
 
 The judge must compare route proposals explicitly. The judge should select one primary route and one backup route for the next round, and should not reward long critique unless it improves route selection or produces a precise proof obligation.
 
+# Round 2 Score Calibration and Narrow-Evidence Standard
+
+Kind: workflow directive
+Timestamp: 2026-06-26T03:05:00
+
+For the current judge synthesis and future M9 rounds, separate idea quality from proof-graph evidence.
+
+The judge and reviewers should not use one vague score to mix creativity, plausible routes, calibration, and state-promotable proof evidence. Keep the existing required `mathematical_progress_score`, but also report:
+
+- `idea_quality_score`: value of proposed routes, formulas, and diagnostics;
+- `state_evidence_score`: how much can safely mutate `state/proof_obligations.yml`;
+- `calibration_score`: whether the agent used correct statuses, avoided overclaiming, and supplied exact hypotheses.
+
+A2 should improve by proving one narrow lemma per round instead of writing a broad taxonomy essay. If A2 discusses a taxonomy, it must choose one priority subcase, give an exact statement, state dependencies, and mark all other families as open. A2 must label every central claim as exactly one of `[PROVED]`, `[DERIVED-UNDER-ASSUMPTIONS]`, `[HEURISTIC]`, `[CONJECTURED]`, `[ASSUMED]`, or `[LIKELY-FALSE]`. `[PROVED]` requires a complete proof with exact hypotheses; numerical examples are never proof.
+
+A3 should improve by producing execution-ready evidence. If the API agent cannot physically write repo files, it must output a concrete artifact bundle: file paths, script contents, exact command lines, expected table schema, precision/log fields, and a short report. The local workflow or Codex can then materialize and run those artifacts. Prose descriptions of tests do not count as evidence.
+
+For Round 2 judging specifically:
+
+- A2 official response has useful route ideas, but its low score is from overpromotion and incomplete proof evidence.
+- A3 has useful diagnostic design, but its low score is from missing committed executable artifacts.
+- The judge should score A2 and A3 higher on `idea_quality_score` than on `state_evidence_score` if warranted, while keeping mathematical state mutation conservative.
+
 --- HUMAN FILE: human/goals.md ---
 # Human Goals
 
@@ -1544,6 +1567,73 @@ Kind: constraint
 Timestamp: 2026-05-31T21:21:36
 
 For web-agent tests and formal rounds, use ChatGPT Extended Pro for gpt_pro_thinking and Gemini Pro Deep Think for gemini_deep_think. Prefer one persistent conversation per agent per run, so each web AI has continuity across reasoning, review, judge/next-round prompts. The public repo and reading_packet.md remain the authoritative memory; web conversation memory is helpful but not authoritative.
+
+--- ROUND-LOCAL HUMAN NOTES ---
+These files are human steering notes for this round. Treat directional requests as instructions, and treat mathematical assertions as claims to audit unless proof is supplied.
+
+--- HUMAN FILE: rounds/obligation-main/round_002/human/stage-b-review-audit.md ---
+# Round 2 Stage B Review Audit For Judge
+
+Use this note when writing the Round 2 judge synthesis. It is a human/Codex audit of the three Stage B reviews after normalization.
+
+## Consensus
+
+- Accept the algebraic core: `C_h=2i chi_4(h)1_{2\nmid h}`, real-even `beta_h` under the current H4 convention, the raw two-sided M2 convention, the real-weight paired formula as implementation-only, and the corrected fourth-moment numerator
+
+$$
+N=
+h_1d_2d_3d_4
+-
+h_2d_1d_3d_4
++
+h_3d_1d_2d_4
+-
+h_4d_1d_2d_3.
+$$
+
+- Accept `h`-Cauchy sign-loss and endpoint diagnostics only as bounded guardrails.
+- Record the diagonal-core observation only as `O(D^2) <= O(X)` compatibility. Do not use A2's exact `D^2/16` constant for the whole core.
+- Reject promotion of `M9-near-collision-taxonomy`; exact taxonomy has unclassified residue and near-collision bands are unproved.
+- Reject promotion of `M9`, `M9-M2`, `M9-near-collision-estimate`, and `GC-target`.
+- Reject A3 evidence claims unless actual scripts/tables/logs exist.
+
+## Review Weighting
+
+- A1 review is the best calibrated and should guide state mutation.
+- A3 review is also well calibrated and independently confirms the main downgrade decisions.
+- A2 review has useful technical checks, but it pushes too hard toward a shifted-bilinear pivot. Treat that as a serious backup route, not as the new primary route.
+
+## Recommended State Treatment
+
+- `M9-M2-beta-algebra`: keep `derived_under_assumptions`, H4-dependent.
+- `M9-M2-h-cauchy-sign-loss`: keep as bounded diagnostic / `derived_under_assumptions`.
+- `M9-M2-fourth-moment-expansion`: keep `derived_under_assumptions` for algebra only.
+- `M9-near-collision-taxonomy`: keep open.
+- `M9-regression-raw-vs-paired`: keep proposed until actual committed artifacts exist.
+- Optional new obligation: `M9-N0-diagonal-bound`, status `proposed` or `open`, for proving the `N=0` diagonal-core bound with actual `beta_h` and weights.
+
+## Next Round
+
+Primary route: M2 fourth moment with exact `N=0` taxonomy and near-collision lemma.
+
+Backup route: direct signed bilinear estimate / residue-interference route, but only after A2 states a precise theorem, matrix norm, and endpoint spacing audit.
+
+A3 must execute actual local diagnostics, not just describe them.
+
+## Score Calibration Addendum
+
+When scoring A2 and A3, separate:
+
+- `idea_quality_score`: useful formulas, routes, diagnostics, or proof objects;
+- `state_evidence_score`: evidence safe enough to mutate `state/proof_obligations.yml`;
+- `calibration_score`: correct use of statuses and avoidance of overclaiming.
+
+A2 should not be scored low because its route ideas are worthless; it should be scored low on state evidence because broad claims remain unproved and several `[PROVED]` labels are premature. A3 should not be scored low because diagnostics are irrelevant; it should be scored low on state evidence because scripts, commands, tables, logs, and reports are not yet committed.
+
+For the State Patch, keep the single `mathematical_progress_score` conservative. In prose, include the split scores so future prompts can target the right failure mode:
+
+- A2: good idea quality, weak state evidence, weak-to-moderate calibration.
+- A3: good diagnostic design, weak state evidence until artifacts exist, moderate calibration.
 
 ## Judge-Assigned Reasoning Prompt For This Agent
 

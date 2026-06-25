@@ -1,6 +1,6 @@
 # Reading Packet
 
-Generated after round 1 in run `obligation-main`.
+Generated after round 2 in run `obligation-main`.
 
 ## Current Theorem Target
 
@@ -26,11 +26,11 @@ Current blockers:
 ## Round Target Obligations
 
 - `M9-M2-character-factor` (open, owner `A2`): M2 frequency-side character factor
-  Next action: Use M9-M2-beta-algebra, M9-M2-h-cauchy-sign-loss, and M9-M2-fourth-moment-expansion to decide whether the next M2 attack should use fourth moments, CRI, or direct signed bilinear estimates. Do not promote M9-M2 without a uniform endpoint estimate.
+  Next action: Use the exact beta_h algebra and the h-Cauchy sign-loss diagnostic to pursue the M2 fourth-moment route first; keep CRI and direct signed bilinear estimates as secondary diagnostics.
 - `M9-near-collision-taxonomy` (open, owner `A2`): M2 fourth-moment near-collision taxonomy
-  Next action: Repair the taxonomy using the corrected two-sided fourth-moment numerator N and actual beta_h weights. Classify exact N=0 and 0<|N|~T configurations with counterexample-tested sign rules only.
+  Next action: Complete the exact N=0 taxonomy using the corrected numerator N and actual beta_h weights. Resolve or explicitly preserve the unclassified class, prove or downgrade denominator-paired estimates, and formulate near-collision bands using |N| lesssim D^4/X.
 - `M9-regression-raw-vs-paired` (proposed, owner `A3`): Raw-vs-paired numerical stress test for M9
-  Next action: Produce computations/m9_regression/run.py, outputs/table_small.csv, a precision log, and report.md using the actual M1/M2 raw formulas and actual Vaaler coefficients. Verify real-weight paired equality and complex-weight failure of the paired real formulas. Mark all evidence diagnostic_only.
+  Next action: Produce committed or repository-ready artifacts: computations/m9_regression/run.py, outputs/table_small.csv, a precision log, and computations/m9_regression/report.md. Use the official M1/M2 raw formulas and actual Vaaler coefficients; label all evidence diagnostic_only.
 
 ## Do-Not-Claim Rules
 
@@ -59,7 +59,7 @@ Default target split:
 
 ## Last State Patch
 
-created: M9-M2-beta-algebra, M9-M2-h-cauchy-sign-loss, M9-M2-fourth-moment-expansion; updated: M9-M2-character-factor, M9-near-collision-taxonomy, M9-regression-raw-vs-paired; rejected: A2-M9-M2-character-factor-proved-internal-claim, A2-M9-near-collision-taxonomy-blocked-claim, A2-M9-Gallagher-Aliasing-Derivative-Block, A2-2-M9-Poisson-diagonal-capacity, A3-M9-regression-diagnostic-only-promotion, A3-M9-regression-script-duplicate; no_change: M9, M9-M1, M9-M2, M9-endpoint-uniformity, GC-target, H4, Li-Yang-source-audit; round score: 4; Round 1 made useful algebraic progress on the M2 coefficient and clarified Cauchy/fourth-moment diagnostics, but A2 and A3 overpromoted claims and no analytic endpoint estimate was proved.
+created: M9-M2-N0-diagonal-core-bound; updated: M9-M2-character-factor, M9-near-collision-taxonomy, M9-regression-raw-vs-paired, M9-M2-fourth-moment-expansion; rejected: A2-R2-near-collision-taxonomy-promotion, A2-R2-denominator-paired-negligibility-proved, A2-R2-dual-length-explosion-route-closing, A2-R2-diagonal-core-one-sixteenth-union-constant, A3-R2-artifact-evidence-without-files, A3-R2-official-formula-normalization-unverified; no_change: M9, M9-M1, M9-M2, M9-near-collision-estimate, M9-endpoint-uniformity, GC-target, H4, H4-source-audit, Li-Yang-source-audit; round score: 3; Round 2 made useful algebraic and strategic progress on M2 and identified the fourth-moment route as primary, but no endpoint estimate, complete taxonomy, near-collision bound, or executable computation evidence was supplied.
 
 ## Active Obligation Briefs
 
@@ -68,22 +68,22 @@ created: M9-M2-beta-algebra, M9-M2-h-cauchy-sign-loss, M9-M2-fourth-moment-expan
 - Status: `open`
 - Track: `M9_analytic`
 - Owner: `A2`
-- Next action: Use M9-M2-beta-algebra, M9-M2-h-cauchy-sign-loss, and M9-M2-fourth-moment-expansion to decide whether the next M2 attack should use fourth moments, CRI, or direct signed bilinear estimates. Do not promote M9-M2 without a uniform endpoint estimate.
+- Next action: Use the exact beta_h algebra and the h-Cauchy sign-loss diagnostic to pursue the M2 fourth-moment route first; keep CRI and direct signed bilinear estimates as secondary diagnostics.
 
 ### M9-near-collision-taxonomy: M2 fourth-moment near-collision taxonomy
 
 - Status: `open`
 - Track: `M9_analytic`
 - Owner: `A2`
-- Blockers: `M9-near-collision-estimate`
-- Next action: Repair the taxonomy using the corrected two-sided fourth-moment numerator N and actual beta_h weights. Classify exact N=0 and 0<|N|~T configurations with counterexample-tested sign rules only.
+- Blockers: `M9-near-collision-estimate`, `M9-M2-N0-diagonal-core-bound`
+- Next action: Complete the exact N=0 taxonomy using the corrected numerator N and actual beta_h weights. Resolve or explicitly preserve the unclassified class, prove or downgrade denominator-paired estimates, and formulate near-collision bands using |N| lesssim D^4/X.
 
 ### M9-regression-raw-vs-paired: Raw-vs-paired numerical stress test for M9
 
 - Status: `proposed`
 - Track: `computation`
 - Owner: `A3`
-- Next action: Produce computations/m9_regression/run.py, outputs/table_small.csv, a precision log, and report.md using the actual M1/M2 raw formulas and actual Vaaler coefficients. Verify real-weight paired equality and complex-weight failure of the paired real formulas. Mark all evidence diagnostic_only.
+- Next action: Produce committed or repository-ready artifacts: computations/m9_regression/run.py, outputs/table_small.csv, a precision log, and computations/m9_regression/report.md. Use the official M1/M2 raw formulas and actual Vaaler coefficients; label all evidence diagnostic_only.
 
 ### GC-target: Gauss circle conjectural exponent target
 
@@ -139,6 +139,14 @@ created: M9-M2-beta-algebra, M9-M2-h-cauchy-sign-loss, M9-M2-fourth-moment-expan
 - Blockers: `M9-M2-character-factor`, `M9-near-collision-taxonomy`
 - Next action: Retain the two-sided convention and prove or refute the near-collision estimate with actual beta_h weights.
 
+### M9-M2-N0-diagonal-core-bound: Diagonal-core bound for exact M2 fourth-moment resonances
+
+- Status: `open`
+- Track: `M9_analytic`
+- Owner: `A2`
+- Blockers: `H4-source-audit`
+- Next action: Prove the bound with actual beta_h weights, bounded dyadic weights, explicit overlap conventions, and the H4 coefficient bound; do not use the incorrect 1/16 constant for the whole union.
+
 ### M9-endpoint-uniformity: Endpoint uniformity over active dyadic D
 
 - Status: `open`
@@ -175,7 +183,7 @@ created: M9-M2-beta-algebra, M9-M2-h-cauchy-sign-loss, M9-M2-fourth-moment-expan
 - Track: `M9_analytic`
 - Owner: `A2`
 - Blockers: `M9-near-collision-estimate`
-- Next action: Classify exact and near-collision configurations using this N, actual beta_h weights, and a fixed two-sided convention.
+- Next action: Use this only as an algebraic expansion. A2 should classify exact and near-collision configurations with actual beta_h weights; do not infer an analytic estimate from the expansion alone.
 
 ### M9-M2-h-cauchy-sign-loss: Weighted h-Cauchy loses the M2 frequency character sign
 
