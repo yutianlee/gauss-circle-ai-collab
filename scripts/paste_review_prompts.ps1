@@ -23,9 +23,10 @@ $RoundName = Get-RoundName $Round
 $Base = "rounds\$RunId\$RoundName\prompts"
 $GptPrompt = Get-PromptPath $Base "A1" "review" $Round
 $GeminiPrompt = Get-PromptPath $Base "A2" "review" $Round
+$ClaudePrompt = Get-PromptPath $Base "A4" "review" $Round
 
 Write-Host ""
-Write-Host "Step 1/2: A1 review prompt for ChatGPT Extended Pro"
+Write-Host "Step 1/3: A1 review prompt for ChatGPT Extended Pro"
 Write-Host "Focus the ChatGPT input box before the countdown ends."
 $GptArgs = @(
     "-NoProfile",
@@ -40,7 +41,7 @@ if ($Submit) {
 & powershell @GptArgs
 
 Write-Host ""
-Write-Host "Step 2/2: A2 review prompt for Gemini Pro Deep Think"
+Write-Host "Step 2/3: A2 review prompt for Gemini Pro Deep Think"
 Write-Host "Focus the Gemini input box before the countdown ends."
 $GeminiArgs = @(
     "-NoProfile",
@@ -55,6 +56,22 @@ if ($Submit) {
 & powershell @GeminiArgs
 
 Write-Host ""
-Write-Host "After both models finish, use Copy response and save to:"
+Write-Host "Step 3/3: A4 review prompt for Claude Max Thinking"
+Write-Host "Focus the Claude input box before the countdown ends."
+$ClaudeArgs = @(
+    "-NoProfile",
+    "-ExecutionPolicy", "Bypass",
+    "-File", "scripts\paste_web_prompt.ps1",
+    "-PromptPath", $ClaudePrompt,
+    "-DelaySeconds", $DelaySeconds
+)
+if ($Submit) {
+    $ClaudeArgs += "-Submit"
+}
+& powershell @ClaudeArgs
+
+Write-Host ""
+Write-Host "After all three web models finish, use Copy response and save to:"
 Write-Host "  handoff\$RunId\$RoundName\reviews\A1.md"
 Write-Host "  handoff\$RunId\$RoundName\reviews\A2.md"
+Write-Host "  handoff\$RunId\$RoundName\reviews\A4.md"

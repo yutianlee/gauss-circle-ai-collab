@@ -125,13 +125,16 @@
       "source_card": "sources/vaaler_1985.md",
       "evidence": {
         "positive": [
-          "rounds/web-research-test/round_027/judge/judge-027.md"
+          "rounds/web-research-test/round_027/judge/judge-027.md",
+          "rounds/obligation-main/round_004/responses/A1-004.md"
         ],
         "negative": [],
         "inconclusive": []
       },
       "owner": "A1",
-      "next_action": "Verify theorem labels, constants, residual convention, and integer values from rendered source pages."
+      "next_action": "Promote only after the Vaaler source card is physically updated and validated; until then use H4-dependent lemmas as derived_under_assumptions.",
+      "last_updated_round": 4,
+      "last_updated_at": "2026-06-30T00:14:43"
     },
     {
       "id": "H4-source-audit",
@@ -147,18 +150,22 @@
       "blockers": [],
       "source_card": "sources/vaaler_1985.md",
       "evidence": {
-        "positive": [],
+        "positive": [
+          "rounds/obligation-main/round_004/responses/A1-004.md"
+        ],
         "negative": [],
         "inconclusive": [
           "rounds/web-research-test/round_027/judge/judge-027.md",
           "rounds/obligation-main/round_003/responses/A1-003.md",
-          "rounds/obligation-main/round_003/reviews/A3.md"
+          "rounds/obligation-main/round_003/reviews/A3.md",
+          "rounds/obligation-main/round_004/reviews/A1.md",
+          "rounds/obligation-main/round_004/reviews/A4.md"
         ]
       },
       "owner": "A1",
-      "next_action": "Verify from rendered Vaaler pages: Theorem 6 equation (2.28), Section 7 equations (7.1)--(7.3), Theorem 18 equations (7.13)--(7.17), coefficient sign, Fejer normalization, residual constant, and integer endpoint convention.",
-      "last_updated_round": 3,
-      "last_updated_at": "2026-06-29T21:35:33"
+      "next_action": "Commit sources/vaaler_1985.md with bibliographic data, local PDF path, Theorem 6 equation (2.28), Section 7 equations (7.1)--(7.3), Theorem 18 equations (7.13)--(7.17), coefficient sign, Fejer normalization, residual constant, and floor-compatible endpoint convention.",
+      "last_updated_round": 4,
+      "last_updated_at": "2026-06-30T00:14:43"
     },
     {
       "id": "R5-Full",
@@ -179,7 +186,9 @@
       ],
       "evidence": {
         "positive": [
-          "rounds/web-research-test/round_027/judge/judge-027.md"
+          "rounds/web-research-test/round_027/judge/judge-027.md",
+          "rounds/obligation-main/round_004/responses/A1-004.md",
+          "rounds/obligation-main/round_004/reviews/A4.md"
         ],
         "negative": [],
         "inconclusive": [
@@ -188,9 +197,9 @@
         ]
       },
       "owner": "A1",
-      "next_action": "Do not downgrade solely from strategy skepticism. Complete R5-Full-reconciliation and H4 source audit, then insert the product-count proof with all edge cases into best_proof_draft.md.",
-      "last_updated_round": 3,
-      "last_updated_at": "2026-06-29T21:35:33"
+      "next_action": "Use the pointwise product-count proof conditional on H4; do not promote to proved_internal until H4/source-card validation is complete.",
+      "last_updated_round": 4,
+      "last_updated_at": "2026-06-30T00:14:43"
     },
     {
       "id": "M9",
@@ -267,17 +276,23 @@
       "blockers": [
         "M9-M2-character-factor",
         "M9-near-collision-taxonomy",
-        "M9-M2-denominator-paired-weighted-bound"
+        "M9-M2-denominator-paired-weighted-bound",
+        "M9-M2-fourth-moment-average-to-pointwise"
       ],
       "evidence": {
         "positive": [],
         "negative": [],
-        "inconclusive": []
+        "inconclusive": [
+          "rounds/obligation-main/round_004/responses/A1-004.md",
+          "rounds/obligation-main/round_004/responses/A2-004.md",
+          "rounds/obligation-main/round_004/responses/A4-004.md",
+          "rounds/obligation-main/round_004/reviews/A4.md"
+        ]
       },
       "owner": "A2",
-      "next_action": "Retain the two-sided convention and actual beta_h weights. Attack the denominator-paired weighted exact-resonance sublemma first; keep direct signed bilinear estimates as backup only.",
-      "last_updated_round": 3,
-      "last_updated_at": "2026-06-29T21:35:33"
+      "next_action": "Do not promote from exact-resonance sublemmas. Supply pointwise control, near-collision estimates, and endpoint-uniformity before any status change.",
+      "last_updated_round": 4,
+      "last_updated_at": "2026-06-30T00:14:43"
     },
     {
       "id": "M9-M2-character-factor",
@@ -332,10 +347,15 @@
       "blockers": [
         "M9-near-collision-estimate",
         "M9-M2-N0-diagonal-core-bound",
-        "M9-M2-denominator-paired-weighted-bound"
+        "M9-M2-denominator-paired-weighted-bound",
+        "M9-M2-fourth-moment-average-to-pointwise"
       ],
       "evidence": {
-        "positive": [],
+        "positive": [
+          "rounds/obligation-main/round_004/responses/A1-004.md",
+          "rounds/obligation-main/round_004/responses/A2-004.md",
+          "rounds/obligation-main/round_004/responses/A4-004.md"
+        ],
         "negative": [
           "rounds/round_001/reviews/A1_review_1.md",
           "rounds/obligation-main/round_002/reviews/A1.md",
@@ -349,13 +369,16 @@
           "rounds/round_001/responses/A2-2.md",
           "rounds/obligation-main/round_002/responses/A2-002.md",
           "rounds/obligation-main/round_003/responses/A2-003.md",
-          "rounds/obligation-main/round_003/artifacts/m9_regression/report.md"
+          "rounds/obligation-main/round_003/artifacts/m9_regression/report.md",
+          "rounds/obligation-main/round_004/responses/A3-004.md",
+          "rounds/obligation-main/round_004/reviews/A1.md",
+          "rounds/obligation-main/round_004/reviews/A4.md"
         ]
       },
       "owner": "A2",
-      "next_action": "Preserve the unclassified exact N=0 class. First prove or refute the denominator-paired weighted bound, then define semi-diagonal and mixed families with exact equations and mass bounds.",
-      "last_updated_round": 3,
-      "last_updated_at": "2026-06-29T21:35:33"
+      "next_action": "Preserve the unclassified exact N=0 class. Next prove or refute mixed/unclassified exact resonances and start denominator-paired near-collision with the normalized L-condition.",
+      "last_updated_round": 4,
+      "last_updated_at": "2026-06-30T00:14:43"
     },
     {
       "id": "M9-near-collision-estimate",
@@ -374,10 +397,15 @@
       "evidence": {
         "positive": [],
         "negative": [],
-        "inconclusive": []
+        "inconclusive": [
+          "rounds/obligation-main/round_004/responses/A1-004.md",
+          "rounds/obligation-main/round_004/reviews/A4.md"
+        ]
       },
       "owner": "A2",
-      "next_action": "After taxonomy, formulate this as an exact theorem with all coefficient weights and dyadic ranges."
+      "next_action": "First attack the denominator-paired near-collision condition 0<|(h_1-h_2)b+(h_3-h_4)a|<<D^2/X, then decide whether absolute or signed estimates are viable.",
+      "last_updated_round": 4,
+      "last_updated_at": "2026-06-30T00:14:43"
     },
     {
       "id": "M9-endpoint-uniformity",
@@ -436,13 +464,16 @@
           "rounds/obligation-main/round_002/reviews/A1.md",
           "rounds/obligation-main/round_003/responses/A3-003.md",
           "rounds/obligation-main/round_003/human/stage-a-response-audit.md",
-          "rounds/obligation-main/round_003/human/stage-b-review-audit.md"
+          "rounds/obligation-main/round_003/human/stage-b-review-audit.md",
+          "rounds/obligation-main/round_004/responses/A3-004.md",
+          "rounds/obligation-main/round_004/reviews/A1.md",
+          "rounds/obligation-main/round_004/reviews/A4.md"
         ]
       },
       "owner": "A3",
-      "next_action": "After H4 source audit, rerun with the exact Vaaler Phi, official raw M1/M2 formulas, high precision, complex-weight cosine pairing, larger exact N=0 tables, and near-collision bins. Keep all output diagnostic_only.",
-      "last_updated_round": 3,
-      "last_updated_at": "2026-06-29T21:35:33"
+      "next_action": "Rerun with exact Vaaler Phi, official M1/M2 phases, raw two-sided formula, real paired formula, complex-weight cosine formula, and explicit failure of Re B_h for complex weights. Produce executable artifacts.",
+      "last_updated_round": 4,
+      "last_updated_at": "2026-06-30T00:14:43"
     },
     {
       "id": "Li-Yang-source-audit",
@@ -487,7 +518,10 @@
           "rounds/round_001/reviews/A1_review_1.md",
           "rounds/obligation-main/round_003/responses/A1-003.md",
           "rounds/obligation-main/round_003/reviews/A2.md",
-          "rounds/obligation-main/round_003/reviews/A3.md"
+          "rounds/obligation-main/round_003/reviews/A3.md",
+          "rounds/obligation-main/round_004/responses/A1-004.md",
+          "rounds/obligation-main/round_004/reviews/A1.md",
+          "rounds/obligation-main/round_004/reviews/A4.md"
         ],
         "negative": [],
         "inconclusive": [
@@ -497,9 +531,9 @@
         ]
       },
       "owner": "A1",
-      "next_action": "After H4 source audit, insert the beta_h algebra, raw two-sided formula, paired real formula, and complex-weight cosine pairing into best_proof_draft.md.",
-      "last_updated_round": 3,
-      "last_updated_at": "2026-06-29T21:35:33"
+      "next_action": "Insert beta_h algebra, raw two-sided formula, real-weight paired formula, and complex-weight cosine pairing into best_proof_draft.md after H4 source-card update.",
+      "last_updated_round": 4,
+      "last_updated_at": "2026-06-30T00:14:43"
     },
     {
       "id": "M9-M2-h-cauchy-sign-loss",
@@ -586,10 +620,14 @@
       ],
       "blockers": [
         "H4-source-audit",
-        "M9-M2-denominator-paired-weighted-bound"
+        "M9-M2-denominator-paired-weighted-bound",
+        "M9-M2-fourth-moment-average-to-pointwise"
       ],
       "evidence": {
-        "positive": [],
+        "positive": [
+          "rounds/obligation-main/round_004/responses/A2-004.md",
+          "rounds/obligation-main/round_004/responses/A4-004.md"
+        ],
         "negative": [],
         "inconclusive": [
           "rounds/obligation-main/round_002/responses/A2-002.md",
@@ -599,20 +637,22 @@
           "rounds/obligation-main/round_003/responses/A1-003.md",
           "rounds/obligation-main/round_003/responses/A2-003.md",
           "rounds/obligation-main/round_003/reviews/A1.md",
-          "rounds/obligation-main/round_003/reviews/A3.md"
+          "rounds/obligation-main/round_003/reviews/A3.md",
+          "rounds/obligation-main/round_004/reviews/A1.md",
+          "rounds/obligation-main/round_004/reviews/A4.md"
         ]
       },
       "owner": "A2",
-      "next_action": "Keep the narrow pair-equality O(D^2) calculation as a subclaim only. Prove the denominator-paired and semi-diagonal weighted masses with actual beta_h weights before promoting the full diagonal-core obligation.",
-      "last_updated_round": 3,
-      "last_updated_at": "2026-06-29T21:35:33"
+      "next_action": "Record paired-core families as treated under assumptions, but prove or refute mixed and unclassified exact N=0 mass before promoting this obligation.",
+      "last_updated_round": 4,
+      "last_updated_at": "2026-06-30T00:14:43"
     },
     {
       "id": "R5-Full-reconciliation",
       "type": "infrastructure",
       "track": "proof_infrastructure",
       "title": "R5-Full product-count reconciliation audit",
-      "status": "open",
+      "status": "derived_under_assumptions",
       "statement_tex": "Reconcile the older H5r/DDP-trap analysis with the later R5-Full product-count proof. The accepted outcome must either write the Fejer residual product-count proof with all edge cases or give a validator-ready downgrade proposal.",
       "dependencies": [
         "R5-Full",
@@ -627,26 +667,33 @@
         "H4-source-audit"
       ],
       "evidence": {
-        "positive": [],
-        "negative": [],
+        "positive": [
+          "rounds/obligation-main/round_004/responses/A1-004.md",
+          "rounds/obligation-main/round_004/reviews/A4.md"
+        ],
+        "negative": [
+          "rounds/obligation-main/round_004/responses/A2-004.md"
+        ],
         "inconclusive": [
           "rounds/obligation-main/round_003/human/00-strategy-evaluations-judge-merge.md",
           "rounds/obligation-main/round_003/human/strategy-revised4-audit.md",
           "rounds/obligation-main/round_003/human/strategy-revised-judge-merge.md",
-          "rounds/obligation-main/round_003/judge/judge-003.md"
+          "rounds/obligation-main/round_003/judge/judge-003.md",
+          "rounds/obligation-main/round_004/reviews/A1.md"
         ]
       },
       "owner": "A1",
-      "next_action": "Compare the older H5r/DDP-trap concern with the later R5-Full-R18 through R5-Full-R27 product-count entries, then write the accepted proof or downgrade proposal into best_proof_draft.md.",
-      "last_updated_round": 3,
-      "last_updated_at": "2026-06-29T21:35:33"
+      "next_action": "Insert A1's positive Fejer product-count proof into best_proof_draft.md; reject the RMS/L2 argument as a pointwise proof; keep H4 dependency visible.",
+      "last_updated_round": 4,
+      "last_updated_at": "2026-06-30T00:14:43",
+      "reason_for_promotion": "Round 4 supplies a pointwise positive-Fejer product-count proof conditional on H4, with A1 as the main proof source and A4 confirming the norm and dependency."
     },
     {
       "id": "M9-M2-denominator-paired-weighted-bound",
       "type": "lemma",
       "track": "M9_analytic",
       "title": "Weighted denominator-paired exact M2 resonance bound",
-      "status": "open",
+      "status": "derived_under_assumptions",
       "statement_tex": "For X^(1/4) <= D <= X^(1/2), H_D asymp D X^(-1/4), actual beta_h coefficients, and bounded dyadic weights, the exact N=0 subfamily d_1=d_2=a, d_3=d_4=b, equivalently (h_1-h_2)b+(h_3-h_4)a=0, has total absolute beta-weighted fourth-moment mass <<_epsilon X^(1+epsilon), preferably <<_epsilon D^2 X^epsilon if true.",
       "dependencies": [
         "M9-M2-beta-algebra",
@@ -661,7 +708,13 @@
         "H4-source-audit"
       ],
       "evidence": {
-        "positive": [],
+        "positive": [
+          "rounds/obligation-main/round_004/responses/A1-004.md",
+          "rounds/obligation-main/round_004/responses/A2-004.md",
+          "rounds/obligation-main/round_004/responses/A4-004.md",
+          "rounds/obligation-main/round_004/reviews/A1.md",
+          "rounds/obligation-main/round_004/reviews/A4.md"
+        ],
         "negative": [],
         "inconclusive": [
           "rounds/obligation-main/round_003/responses/A2-003.md",
@@ -673,9 +726,10 @@
         ]
       },
       "owner": "A2",
-      "next_action": "Prove the weighted gcd-sum bound with actual beta_h weights, signs, equality cases h_i=h_j, truncation edges, and uniformity in D; otherwise provide a counterexample or downgrade.",
-      "last_updated_round": 3,
-      "last_updated_at": "2026-06-29T21:35:33"
+      "next_action": "Treat denominator-paired exact resonance as settled under H4. Use it as a sublemma only; do not infer M9-M2 or full taxonomy.",
+      "last_updated_round": 4,
+      "last_updated_at": "2026-06-30T00:14:43",
+      "reason_for_promotion": "A1, A2, and A4 independently derive the denominator-paired exact-resonance bound under the H4 beta-coefficient magnitude hypothesis, and A1/A4 reviews agree it is state-promotable only under assumptions."
     },
     {
       "id": "M9-M2-direct-signed-bilinear-lemma",
@@ -708,6 +762,138 @@
       "next_action": "Rewrite as a precise theorem with coefficient class, dyadic ranges, exact bilinear or spacing norm, named external theorem if used, and a fast falsification test comparing signed and unsigned statistics.",
       "last_updated_round": 3,
       "last_updated_at": "2026-06-29T21:35:33"
+    },
+    {
+      "id": "M9-M2-harmonic-convolution-LH",
+      "type": "lemma",
+      "track": "M9_analytic",
+      "title": "Harmonic convolution bound for reciprocal beta weights",
+      "status": "proved_internal",
+      "statement_tex": "For H>=1 and integer q, L_H(q)=sum_{1<=|h|<=H, 1<=|h+q|<=H} 1/(|h||h+q|) satisfies L_H(0)<<1 and L_H(q)<<log(2H)/max(1,|q|).",
+      "dependencies": [],
+      "implies": [
+        "M9-M2-denominator-paired-weighted-bound"
+      ],
+      "blockers": [],
+      "evidence": {
+        "positive": [
+          "rounds/obligation-main/round_004/responses/A4-004.md",
+          "rounds/obligation-main/round_004/reviews/A1.md",
+          "rounds/obligation-main/round_004/reviews/A4.md"
+        ],
+        "negative": [],
+        "inconclusive": [
+          "rounds/obligation-main/round_004/judge/judge-004.md"
+        ]
+      },
+      "owner": "A4",
+      "next_action": "Reuse this lemma in paired exact-resonance and denominator-paired near-collision estimates.",
+      "last_updated_round": 4,
+      "last_updated_at": "2026-06-30T00:14:43"
+    },
+    {
+      "id": "M9-M2-paired-core-weighted-bound",
+      "type": "lemma",
+      "track": "M9_analytic",
+      "title": "Weighted paired-core exact M2 resonance bound",
+      "status": "derived_under_assumptions",
+      "statement_tex": "Assuming the H4 beta coefficient magnitude |beta_h|<<1_{1<=|h|<=H_D}/|h| and bounded dyadic weights, the pair-equality, denominator-paired, pair-swapped, and semi-diagonal exact N=0 paired families in the M2 fourth moment have total absolute beta-weighted mass <<_epsilon D^2 X^epsilon uniformly for X^(1/4)<=D<=X^(1/2). This does not cover mixed or unclassified exact resonances.",
+      "dependencies": [
+        "H4",
+        "M9-M2-beta-algebra",
+        "M9-M2-fourth-moment-expansion",
+        "M9-M2-harmonic-convolution-LH",
+        "M9-M2-denominator-paired-weighted-bound"
+      ],
+      "implies": [
+        "M9-M2-N0-diagonal-core-bound",
+        "M9-near-collision-taxonomy"
+      ],
+      "blockers": [
+        "H4-source-audit"
+      ],
+      "evidence": {
+        "positive": [
+          "rounds/obligation-main/round_004/responses/A2-004.md",
+          "rounds/obligation-main/round_004/responses/A4-004.md",
+          "rounds/obligation-main/round_004/reviews/A4.md"
+        ],
+        "negative": [],
+        "inconclusive": [
+          "rounds/obligation-main/round_004/reviews/A1.md",
+          "rounds/obligation-main/round_004/judge/judge-004.md"
+        ]
+      },
+      "owner": "A2",
+      "next_action": "Write the pair-swapped and semi-diagonal proofs in proof-draft-ready form; keep mixed and unclassified exact N=0 classes open.",
+      "last_updated_round": 4,
+      "last_updated_at": "2026-06-30T00:14:43"
+    },
+    {
+      "id": "M9-M2-fourth-moment-average-to-pointwise",
+      "type": "obstruction",
+      "track": "M9_analytic",
+      "title": "Average-to-pointwise upgrade for M2 fourth-moment estimates",
+      "status": "open",
+      "statement_tex": "Any fourth-moment or near-collision estimate for S_2(D;X) used to prove M9-M2 must yield the pointwise bound |S_2(D;X_0)|<<_epsilon X_0^(1/4+epsilon) for each active X_0, not only an average over an X-window. A candidate proof must control local fourth moments plus derivative or unsmoothing losses uniformly over X^(1/4)<=D<=X^(1/2).",
+      "dependencies": [
+        "M9-M2-fourth-moment-expansion",
+        "M9-endpoint-uniformity"
+      ],
+      "implies": [
+        "M9-M2"
+      ],
+      "blockers": [],
+      "evidence": {
+        "positive": [],
+        "negative": [],
+        "inconclusive": [
+          "rounds/obligation-main/round_004/reviews/A4.md",
+          "rounds/obligation-main/round_004/judge/judge-004.md"
+        ]
+      },
+      "owner": "A4",
+      "next_action": "Formulate an exact local-sup-from-average inequality for S_2(D;X), including derivative bounds, window length optimization, and endpoint D-uniformity.",
+      "last_updated_round": 4,
+      "last_updated_at": "2026-06-30T00:14:43"
+    },
+    {
+      "id": "M9-fourth-moment-enumeration",
+      "type": "computation",
+      "track": "computation",
+      "title": "Exact and near-collision fourth-moment enumeration for M2",
+      "status": "diagnostic_only",
+      "statement_tex": "Executable diagnostics should enumerate exact N=0 and near-collision M2 fourth-moment tuples with actual beta_h weights, classified into pair-equality, denominator-paired, pair-swapped, semi-diagonal, mixed, and unclassified bins; output signed and absolute masses normalized by D^2 and X.",
+      "dependencies": [
+        "M9-M2-beta-algebra",
+        "M9-M2-fourth-moment-expansion",
+        "M9-regression-raw-vs-paired"
+      ],
+      "implies": [],
+      "blockers": [],
+      "accepted_evidence_level": "diagnostic_only",
+      "required_output": [
+        "script",
+        "command",
+        "table",
+        "precision log",
+        "report.md",
+        "pass/fail assertions"
+      ],
+      "evidence": {
+        "positive": [],
+        "negative": [],
+        "inconclusive": [
+          "rounds/obligation-main/round_004/responses/A3-004.md",
+          "rounds/obligation-main/round_004/reviews/A1.md",
+          "rounds/obligation-main/round_004/reviews/A4.md",
+          "rounds/obligation-main/round_004/judge/judge-004.md"
+        ]
+      },
+      "owner": "A3",
+      "next_action": "Produce a runnable artifact bundle with exact integer arithmetic for N, true Phi coefficients after H4, signed-vs-unsigned comparisons, and unclassified exact N=0 growth tables.",
+      "last_updated_round": 4,
+      "last_updated_at": "2026-06-30T00:14:43"
     }
   ],
   "rejected_claims": [
@@ -862,6 +1048,42 @@
       "last_updated_round": 3,
       "evidence": [
         "rounds/obligation-main/round_003/judge/judge-003.md"
+      ]
+    },
+    {
+      "id": "A2-R4-R5-L2-or-RMS-proves-pointwise-R5",
+      "reason": "Rejected because R5-Full is a pointwise residual bound in X. An L2 or RMS residual estimate over X does not prove the pointwise product-count statement required by the conditional bridge.",
+      "last_updated_at": "2026-06-30T00:14:43",
+      "last_updated_round": 4,
+      "evidence": [
+        "rounds/obligation-main/round_004/judge/judge-004.md"
+      ]
+    },
+    {
+      "id": "A2-R4-full-exact-N0-taxonomy-proved",
+      "reason": "Rejected because paired families do not exhaust exact N=0 resonances; mixed and unclassified classes remain open.",
+      "last_updated_at": "2026-06-30T00:14:43",
+      "last_updated_round": 4,
+      "evidence": [
+        "rounds/obligation-main/round_004/judge/judge-004.md"
+      ]
+    },
+    {
+      "id": "A2-R4-M9-M2-N0-diagonal-core-proved",
+      "reason": "Rejected because the paired-core estimates are only subfamilies and the unclassified exact N=0 mass has not been bounded.",
+      "last_updated_at": "2026-06-30T00:14:43",
+      "last_updated_round": 4,
+      "evidence": [
+        "rounds/obligation-main/round_004/judge/judge-004.md"
+      ]
+    },
+    {
+      "id": "A3-R4-unexecuted-artifacts-as-positive-proof-evidence",
+      "reason": "Rejected because diagnostic computations require materialized scripts, commands, tables, precision logs, reports, and pass/fail assertions; unexecuted or placeholder code is diagnostic planning only.",
+      "last_updated_at": "2026-06-30T00:14:43",
+      "last_updated_round": 4,
+      "evidence": [
+        "rounds/obligation-main/round_004/judge/judge-004.md"
       ]
     }
   ]

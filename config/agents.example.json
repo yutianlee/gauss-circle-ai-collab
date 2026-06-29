@@ -1,6 +1,6 @@
 {
   "judge_agent": "A1",
-  "prompt_exclusions": ["qwen", "qwen_api", "A4"],
+  "prompt_exclusions": ["qwen", "qwen_api"],
   "agents": [
     {
       "id": "A1",
@@ -28,6 +28,15 @@
       "model_env": "DEEPSEEK_MODEL",
       "default_model": "deepseek-v4-pro",
       "legacy_ids": ["deepseek_api"]
+    },
+    {
+      "id": "A4",
+      "display_name": "Claude Max Thinking",
+      "provider": "web_manual",
+      "role": "independent analytic proof-surgeon for narrow M9 sublemmas",
+      "web_url": "https://claude.ai/",
+      "copy_response_mode": "raw_markdown_fence",
+      "legacy_ids": ["claude_max_thinking"]
     }
   ]
 }

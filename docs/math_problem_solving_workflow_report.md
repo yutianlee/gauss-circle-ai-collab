@@ -6,11 +6,12 @@ This report summarizes the current architecture and workflow used in the Gauss c
 
 ## Executive Summary
 
-The project is a file-based, public-memory workflow for collaborative mathematical research. It adapts the KKT-style multi-agent collaboration pattern to the Gauss circle problem and uses exactly three active agents:
+The project is a file-based, public-memory workflow for collaborative mathematical research. It adapts the KKT-style multi-agent collaboration pattern to the Gauss circle problem and uses four active agents:
 
 - `A1`: ChatGPT Extended Pro through the web UI.
 - `A2`: Gemini Pro Deep Think through the web UI.
 - `A3`: Deepseek V4 Pro through an API-compatible endpoint.
+- `A4`: Claude Max Thinking through the web UI.
 
 The workflow is organized around strict research rounds. Each round has independent reasoning, cross-review, judge synthesis, and state update stages. The public repository is the authoritative memory; persistent web conversations are useful for continuity but are not treated as authoritative.
 
@@ -84,7 +85,7 @@ handoff/
 The distinction between `rounds/` and `handoff/` is important:
 
 - `rounds/` is the public archive of prompts, responses, reviews, judge syntheses, human notes, and audits.
-- `handoff/` is temporary, ignored by Git, and used to move copied web responses from A1/A2 into the orchestrator.
+- `handoff/` is temporary, ignored by Git, and used to move copied web responses from A1/A2/A4 into the orchestrator.
 
 ### Agent Configuration
 
@@ -97,7 +98,7 @@ The config defines:
 - model or endpoint metadata;
 - stage-specific behavior contracts;
 - quality gates for API outputs;
-- prompt exclusions for inactive agents such as Qwen/A4;
+- prompt exclusions for inactive agents such as Qwen;
 - A1 as the default judge.
 
 The roles are intentionally asymmetric:
@@ -105,8 +106,9 @@ The roles are intentionally asymmetric:
 - `A1` is the strategist, synthesis writer, literature scout, and default judge.
 - `A2` is the conservative referee and obstruction finder, with strict long-form formula-level requirements.
 - `A3` is the API proof auditor, algebra checker, normalization checker, and executable-test planner.
+- `A4` is the narrow analytic proof-surgeon for focused M9 sublemmas and dependency calibration.
 
-This gives the workflow three different failure modes and strengths: synthesis, adversarial conservatism, and automated audit.
+This gives the workflow four complementary failure modes and strengths: synthesis, adversarial conservatism, automated audit, and narrow proof surgery.
 
 ### Orchestrator
 
@@ -125,10 +127,10 @@ This gives the workflow three different failure modes and strengths: synthesis, 
 The barrier synchronization is central:
 
 ```text
-Stage A reasoning must finish for A1/A2/A3
+Stage A reasoning must finish for A1/A2/A3/A4
   before Stage B reviews start.
 
-Stage B reviews must finish for A1/A2/A3
+Stage B reviews must finish for A1/A2/A3/A4
   before Stage C judge synthesis starts.
 
 Stage C judge synthesis must finish
@@ -155,14 +157,15 @@ Human instructions override previous AI suggestions when they change the target,
 
 ### Manual Web Workflow
 
-A1 and A2 are semi-manual web agents. The normal workflow is:
+A1, A2, and A4 are semi-manual web agents. The normal workflow is:
 
 1. The orchestrator generates prompt files.
 2. The user pastes the A1 prompt into the persistent ChatGPT conversation.
 3. The user pastes the A2 prompt into the persistent Gemini conversation.
-4. The user copies each web response as Markdown.
-5. The copied response is saved into the correct `handoff/` file.
-6. The orchestrator normalizes and archives it into `rounds/`.
+4. The user pastes the A4 prompt into the persistent Claude conversation.
+5. The user copies each web response as Markdown.
+6. The copied response is saved into the correct `handoff/` file.
+7. The orchestrator normalizes and archives it into `rounds/`.
 
 Helper scripts support this:
 
@@ -248,10 +251,10 @@ A1 reads all reasoning and review outputs, then writes:
 - new lemmas to add;
 - counterexample checks;
 - research strategy adjustment;
-- next-round prompts for A1/A2/A3;
+- next-round prompts for A1/A2/A3/A4;
 - confidence.
 
-The next-round prompt sections are machine-important: the orchestrator extracts `For A1`, `For A2`, and `For A3` blocks and injects them into the next Stage A prompt.
+The next-round prompt sections are machine-important: the orchestrator extracts `For A1`, `For A2`, `For A3`, and `For A4` blocks and injects them into the next Stage A prompt.
 
 ### Stage D: State Update
 
@@ -334,15 +337,16 @@ and requires careful two-sided conventions.
 At the time of this report:
 
 - Round 27 is complete and contains responses, reviews, judge synthesis, human notes, and audits.
-- Round 28 has generated A1/A2/A3 reasoning prompts.
+- Round 28 has generated A1/A2/A3/A4 reasoning prompts in the current four-agent workflow.
 - Round 28 has an A3 response archived at `rounds/web-research-test/round_028/responses/A3-028.md`.
-- Round 28 is still waiting for A1 and A2 reasoning responses before reviews can begin.
+- Round 28 is still waiting for web-agent reasoning responses before reviews can begin.
 
 Round 28's intended purpose is an execution-and-taxonomy round:
 
 - A1 should maintain the conservative proof draft and state packet.
 - A2 should complete the `M2` fourth-moment taxonomy and near-collision formulation.
 - A3 should execute source checks and computational diagnostics instead of producing only protocol-level plans.
+- A4 should focus on narrow analytic proof surgery for selected M9 sublemmas.
 
 ## Strengths of the Current Workflow
 
@@ -356,11 +360,12 @@ The barrier design prevents premature synthesis. Reviews cannot start until ever
 
 ### 3. Asymmetric Agent Roles
 
-The workflow does not use three interchangeable models. It assigns complementary responsibilities:
+The workflow does not use interchangeable models. It assigns complementary responsibilities:
 
 - A1 synthesizes and manages research direction.
 - A2 slows the process down with conservative referee behavior.
 - A3 audits algebra and executable verification details.
+- A4 performs narrow proof surgery and dependency calibration.
 
 This division is well matched to mathematical research, where false closure is a major risk.
 
@@ -413,7 +418,7 @@ Risks:
 
 ### 3. Manual Web Handoff Is Fragile
 
-A1 and A2 depend on copying Markdown from web UIs into files.
+A1, A2, and A4 depend on copying Markdown from web UIs into files.
 
 Risks:
 
@@ -612,7 +617,7 @@ It should check:
 - Markdown math uses `$...$` and `$$...$$`;
 - copied output does not contain outer web artifacts;
 - A2 includes its required calibration marker;
-- judge includes `For A1`, `For A2`, `For A3`.
+- judge includes `For A1`, `For A2`, `For A3`, and `For A4`.
 
 This would convert prompt-enforced expectations into repository-enforced expectations.
 
@@ -726,14 +731,14 @@ Track D: source/literature audit
 Track E: workflow/tooling maintenance
 ```
 
-Each round can still use A1/A2/A3, but the judge should assign tasks by track. This avoids mixing proof-draft maintenance, theorem hunting, and computation plans into one overloaded prompt.
+Each round can still use A1/A2/A3/A4, but the judge should assign tasks by track. This avoids mixing proof-draft maintenance, theorem hunting, computation plans, and narrow proof surgery into one overloaded prompt.
 
 ## Suggested Near-Term Action Plan
 
 ### Next Round Actions
 
-1. Complete Round 28 Stage A by collecting A1 and A2 reasoning outputs.
-2. Run Stage B cross-review only after A1/A2/A3 reasoning outputs are present.
+1. Complete Round 28 Stage A by collecting the web-agent reasoning outputs.
+2. Run Stage B cross-review only after A1/A2/A3/A4 reasoning outputs are present.
 3. In the Round 28 judge synthesis, require a structured state patch.
 4. Do not accept protocol-only A3 output as sufficient for the execution track.
 5. Make A3's next deliverable a script plus at least one small reproducible table.

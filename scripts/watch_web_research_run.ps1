@@ -113,14 +113,16 @@ function Show-NeededFiles([int] $Round) {
 
     $WebResponseFiles = @(
         "$Base\responses\A1.md",
-        "$Base\responses\A2.md"
+        "$Base\responses\A2.md",
+        "$Base\responses\A4.md"
     )
     $ApiResponseFiles = @(
         "$ArchiveBase\responses\A3-$($Round.ToString('000')).md"
     )
     $WebReviewFiles = @(
         "$Base\reviews\A1.md",
-        "$Base\reviews\A2.md"
+        "$Base\reviews\A2.md",
+        "$Base\reviews\A4.md"
     )
     $ApiReviewFiles = @(
         "$ArchiveBase\reviews\A3.md"
@@ -130,9 +132,10 @@ function Show-NeededFiles([int] $Round) {
     if (($WebResponseFiles | Where-Object { -not (Test-RealResponse $_) }).Count -gt 0) {
         Write-Host ""
         Write-Host "Round $RoundName is waiting for reasoning responses."
-        Write-Host "Paste these prompts into the fixed A1/A2 web conversations:"
+        Write-Host "Paste these prompts into the fixed A1/A2/A4 web conversations:"
         Write-Host "  $(Get-PromptPath $PromptBase 'A1_reasoning' $Round)"
         Write-Host "  $(Get-PromptPath $PromptBase 'A2_reasoning' $Round)"
+        Write-Host "  $(Get-PromptPath $PromptBase 'A4_reasoning' $Round)"
         Write-Host "Then use Copy response and save Markdown to:"
         $WebResponseFiles | ForEach-Object { Write-Host "  $_" }
         return "responses"
@@ -155,6 +158,7 @@ function Show-NeededFiles([int] $Round) {
         Write-Host "Paste these review prompts:"
         Write-Host "  $(Get-PromptPath $PromptBase 'A1_review' $Round)"
         Write-Host "  $(Get-PromptPath $PromptBase 'A2_review' $Round)"
+        Write-Host "  $(Get-PromptPath $PromptBase 'A4_review' $Round)"
         Write-Host "Then use Copy response and save Markdown to:"
         $WebReviewFiles | ForEach-Object { Write-Host "  $_" }
         return "reviews"

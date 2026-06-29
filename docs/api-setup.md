@@ -4,7 +4,7 @@ This Gauss workflow has one API agent:
 
 - `A3`: Deepseek V4 Pro
 
-The web agents `A1` and `A2` still run manually through ChatGPT and Gemini.
+The web agents `A1`, `A2`, and `A4` still run manually through ChatGPT, Gemini, and Claude.
 
 ## Configure Key
 
@@ -63,7 +63,7 @@ python -m math_collab.orchestrator --config config/agents.web-test.json --proble
 
 What happens:
 
-1. A1/A2 web prompts are written under `rounds/gauss-main/round_001/prompts/`.
+1. A1/A2/A4 web prompts are written under `rounds/gauss-main/round_001/prompts/`.
 2. A3 is called automatically if `DEEPSEEK_API_KEY` is configured.
 3. If the key is missing, a pending file is written and the round barrier waits.
-4. After saving A1/A2 web responses into `handoff/gauss-main/round_001/responses/`, rerun the same command to advance to reviews.
+4. After saving A1/A2/A4 web responses into `handoff/gauss-main/round_001/responses/`, rerun the same command to advance to reviews.

@@ -6,7 +6,7 @@ This workflow makes mathematical claims, not transcripts, the unit of progress.
 
 - `state/proof_obligations.yml`: authoritative claim graph.
 - `manifests/reading_packet.md`: compact generated packet for agents.
-- `state/next_round_prompts.md`: extracted judge prompts for A1, A2, and A3.
+- `state/next_round_prompts.md`: extracted judge prompts for A1, A2, A3, and A4.
 - `state/last_validation_report.md`: latest patch validation result.
 - `sources/*.md`: source cards required before external theorem use.
 
@@ -59,7 +59,7 @@ Run the guided workflow with minimal file handling:
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\auto_obligation_run.ps1 -RunId obligation-main -StartRound 1 -Rounds 1
 ```
 
-The helper automates graph validation, orchestrator reruns, prompt pasting, response saving, Markdown normalization, judge-patch validation, reading-packet regeneration, and GitHub publish after Stage D. You still need to wait for A1/A2 in their web UIs and click Copy response when each answer is done. Use `-NoAutoPublish` for a local-only Stage D.
+The helper automates graph validation, orchestrator reruns, prompt pasting, response saving, Markdown normalization, judge-patch validation, reading-packet regeneration, and GitHub publish after Stage D. You still need to wait for A1/A2/A4 in their web UIs and click Copy response when each answer is done. Use `-NoAutoPublish` for a local-only Stage D.
 
 Validate the graph:
 

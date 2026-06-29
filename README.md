@@ -3,13 +3,14 @@
 This repository is a public-memory workflow for multi-AI research on the Gauss circle problem.
 The workflow is claim-centered: `state/proof_obligations.yml` is the authoritative mathematical state, while round transcripts are audit evidence.
 
-It is adapted from the KKT workflow in `yutianlee/kkt-ai-collab`, but this repo uses exactly three agents:
+It is adapted from the KKT workflow in `yutianlee/kkt-ai-collab`, but this repo uses exactly four agents:
 
 - `A1`: ChatGPT Extended Pro through the web UI.
 - `A2`: Gemini Pro Deep Think through the web UI.
 - `A3`: Deepseek V4 Pro through the API.
+- `A4`: Claude Max Thinking through the web UI.
 
-There is no `A4` and no Qwen agent in this Gauss workflow.
+There is no Qwen agent in this Gauss workflow.
 
 ## Target
 
@@ -38,8 +39,9 @@ for every epsilon > 0. The workflow is not allowed to claim a solution without a
 - `A1` is the broad strategist, literature scout, synthesis writer, and default judge. Use ChatGPT Extended Pro or the strongest available long-reasoning mode.
 - `A2` is the independent referee and obstacle finder. Use Gemini Pro Deep Think and ask for long, conservative, theorem-hypothesis-aware reports.
 - `A3` is the automatic API proof auditor. Use Deepseek V4 Pro with maximum available reasoning effort for algebra checks, exponential-sum normalization audits, obstruction searches, and reproducible verification plans.
+- `A4` is the independent analytic proof-surgeon. Use Claude Max Thinking for narrow proof attempts, gcd decompositions, obstruction repair, and calibrated alternatives to A2's route.
 
-A1 and A2 are semi-manual: paste prompts into persistent web conversations and save copied Markdown responses into `handoff/`. A3 is automatic when `DEEPSEEK_API_KEY` is configured.
+A1, A2, and A4 are semi-manual: paste prompts into persistent web conversations and save copied Markdown responses into `handoff/`. A3 is automatic when `DEEPSEEK_API_KEY` is configured.
 
 ## Round Protocol
 
@@ -50,7 +52,7 @@ Each round uses these synchronized stages:
 3. Stage C: A1 writes a judge synthesis, next-round prompts, and a machine-readable `State Patch`.
 4. Stage D: the orchestrator validates the `State Patch`, applies accepted changes to `state/proof_obligations.yml`, regenerates the compact reading packet, and the guided runner commits/pushes the completed round to GitHub unless `-NoAutoPublish` is set.
 
-The round barrier is strict: reviews do not start until all three reasoning responses are present; judging does not start until all three reviews are present; state mutation does not happen until the judge synthesis has a valid patch.
+The round barrier is strict: reviews do not start until all four reasoning responses are present; judging does not start until all four reviews are present; state mutation does not happen until the judge synthesis has a valid patch.
 
 ## Layout
 
@@ -143,7 +145,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\watch_web_research
 
 The watcher still automates graph validation, barrier polling, orchestrator reruns, judge-patch validation, Stage D, reading-packet regeneration, and GitHub publish after each completed round. Add `-NoAutoPublish` to keep the update local.
 
-For A1/A2 web agents, paste prompt files from:
+For A1/A2/A4 web agents, paste prompt files from:
 
 ```text
 rounds/<run-id>/round_XXX/prompts/
@@ -157,7 +159,7 @@ handoff/<run-id>/round_XXX/reviews/
 handoff/<run-id>/round_XXX/judge/
 ```
 
-A3 responses and reviews are written automatically under `rounds/<run-id>/round_XXX/` when the API key is present. If the key is missing, the barrier waits with a pending API marker.
+A3 responses and reviews are written automatically under `rounds/<run-id>/round_XXX/` when the API key is present. A1/A2/A4 copied web responses are staged through `handoff/`. If the key is missing, the barrier waits with a pending API marker.
 
 When a judge synthesis is ready, it must include a `## State Patch` section using JSON-compatible YAML. JSON is valid YAML, so this remains dependency-free even when PyYAML is not installed. Stage D validates the patch before mutating `state/proof_obligations.yml`.
 

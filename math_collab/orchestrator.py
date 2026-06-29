@@ -503,6 +503,8 @@ Use JSON-compatible YAML following the required State Patch Format.
 
 ### For A3
 
+### For A4
+
 ## Round Assessment
 
 Include split scores in prose: idea quality, state evidence, and calibration. In the State Patch, keep `mathematical_progress_score` conservative because it measures proof-graph-safe progress.
@@ -585,7 +587,7 @@ For reasoning stages, dedicate roughly 80% of the mathematical effort to the jud
 
 For review stages, include: valuable ideas from other agents, claims that look correct, claims needing proof, likely false or underspecified claims, missing hypotheses, and concrete synthesis recommendations. Also recommend whether the next round should continue the main route, pivot variables, split into subproblems, test a counterexample, build a computation, or allocate one agent to an exploratory alternative.
 
-For judge stages, include: selected route, useful fragments by source, rejected or risky ideas, exact gaps, new lemma statements, research-strategy adjustment, next-round tasks for A1/A2/A3, and confidence."""
+For judge stages, include: selected route, useful fragments by source, rejected or risky ideas, exact gaps, new lemma statements, research-strategy adjustment, next-round tasks for A1/A2/A3/A4, and confidence."""
 
 
 def agent_depth_contract(agent: Agent, stage: str) -> str:

@@ -160,10 +160,13 @@ function Process-Round([int] $Round) {
 
     $A1ReasoningPrompt = Get-PromptPath $PromptBase "A1_reasoning" $Round
     $A2ReasoningPrompt = Get-PromptPath $PromptBase "A2_reasoning" $Round
+    $A4ReasoningPrompt = Get-PromptPath $PromptBase "A4_reasoning" $Round
     $A1ReasoningOut = "$HandoffBase\responses\A1.md"
     $A2ReasoningOut = "$HandoffBase\responses\A2.md"
+    $A4ReasoningOut = "$HandoffBase\responses\A4.md"
     Capture-WebResponse $A1ReasoningPrompt $A1ReasoningOut "A1 reasoning"
     Capture-WebResponse $A2ReasoningPrompt $A2ReasoningOut "A2 reasoning"
+    Capture-WebResponse $A4ReasoningPrompt $A4ReasoningOut "A4 reasoning"
 
     Invoke-Orchestrator $Round
     Wait-ForApiFile "$ArchiveBase\responses\A3-$($Round.ToString('000')).md" "A3 reasoning" $Round
@@ -171,10 +174,13 @@ function Process-Round([int] $Round) {
 
     $A1ReviewPrompt = Get-PromptPath $PromptBase "A1_review" $Round
     $A2ReviewPrompt = Get-PromptPath $PromptBase "A2_review" $Round
+    $A4ReviewPrompt = Get-PromptPath $PromptBase "A4_review" $Round
     $A1ReviewOut = "$HandoffBase\reviews\A1.md"
     $A2ReviewOut = "$HandoffBase\reviews\A2.md"
+    $A4ReviewOut = "$HandoffBase\reviews\A4.md"
     Capture-WebResponse $A1ReviewPrompt $A1ReviewOut "A1 review"
     Capture-WebResponse $A2ReviewPrompt $A2ReviewOut "A2 review"
+    Capture-WebResponse $A4ReviewPrompt $A4ReviewOut "A4 review"
 
     Invoke-Orchestrator $Round
     Wait-ForApiFile "$ArchiveBase\reviews\A3.md" "A3 review" $Round
@@ -199,6 +205,7 @@ function Process-Round([int] $Round) {
 if (-not $NoOpenBrowser) {
     Start-Process "https://chatgpt.com/"
     Start-Process "https://gemini.google.com/"
+    Start-Process "https://claude.ai/"
 }
 
 Invoke-GraphValidation

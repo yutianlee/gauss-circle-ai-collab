@@ -2,13 +2,14 @@
 
 ## Agents
 
-The default Gauss circle panel has exactly three active agents:
+The default Gauss circle panel has exactly four active agents:
 
 1. `A1`: ChatGPT Extended Pro through the web UI. Broad strategist, literature scout, synthesis writer, and default judge.
 2. `A2`: Gemini Pro Deep Think through the web UI. Independent alternative strategist, obstruction finder, and conservative referee.
 3. `A3`: Deepseek V4 Pro through the API. Automatic proof auditor, algebra checker, exponential-sum normalization checker, and stress-test planner.
+4. `A4`: Claude Max Thinking through the web UI. Independent analytic proof-surgeon for narrow sublemmas, gcd decompositions, route repair, and obstruction calibration.
 
-Do not mention, score, or assign tasks to `A4`, Qwen, or any inactive KKT agent. Older state text may contain historical agent IDs such as `gpt_pro_thinking`, `gemini_deep_think`, or `deepseek_api`; treat them as aliases for A1, A2, and A3 only when reconstructing prior contributions.
+Do not mention, score, or assign tasks to Qwen or any inactive KKT agent. Older state text may contain historical agent IDs such as `gpt_pro_thinking`, `gemini_deep_think`, `deepseek_api`, or `claude_max_thinking`; treat them as aliases for A1, A2, A3, and A4 only when reconstructing prior contributions.
 
 ## Authoritative Mathematical State
 
@@ -22,8 +23,8 @@ The compact reading packet in `manifests/reading_packet.md` is generated from th
 
 Rounds use strict barrier synchronization:
 
-- Stage B cannot begin until A1, A2, and A3 have completed Stage A.
-- Stage C cannot begin until A1, A2, and A3 have completed Stage B.
+- Stage B cannot begin until A1, A2, A3, and A4 have completed Stage A.
+- Stage C cannot begin until A1, A2, A3, and A4 have completed Stage B.
 - Stage D cannot begin until the A1 judge synthesis is complete.
 - The next round cannot begin until Stage D has validated or rejected the judge's `State Patch` and regenerated the compact reading packet.
 
@@ -101,11 +102,12 @@ The judge must output:
 ### For A1
 ### For A2
 ### For A3
+### For A4
 ## Round Assessment
 ## Confidence
 ```
 
-The `State Patch` block is the only mechanism for mutating `state/proof_obligations.yml`. Use JSON-compatible YAML so the local validator can parse it without optional dependencies. The `For A1`, `For A2`, and `For A3` blocks are also important: the orchestrator extracts them into `state/next_round_prompts.md` and injects the matching block into the next round's Stage A prompt.
+The `State Patch` block is the only mechanism for mutating `state/proof_obligations.yml`. Use JSON-compatible YAML so the local validator can parse it without optional dependencies. The `For A1`, `For A2`, `For A3`, and `For A4` blocks are also important: the orchestrator extracts them into `state/next_round_prompts.md` and injects the matching block into the next round's Stage A prompt.
 
 ### Stage D: State Update
 

@@ -15,20 +15,21 @@ Use this file for instructions that should strongly steer the next round, such a
 Kind: constraint
 Timestamp: 2026-05-31T21:21:36
 
-For web-agent tests and formal rounds, use the three-agent Gauss workflow:
+For web-agent tests and formal rounds, use the four-agent Gauss workflow:
 
 - A1 = ChatGPT Extended Pro through the web UI.
 - A2 = Gemini Pro Deep Think through the web UI.
 - A3 = Deepseek V4 Pro through the API.
+- A4 = Claude Max Thinking through the web UI.
 
-Legacy labels in older rounds map as follows: `gpt_pro_thinking` = A1, `gemini_deep_think` = A2, and `deepseek_api` = A3. There is no active Qwen or A4 agent in this repo. Prefer one persistent conversation for A1 and one persistent conversation for A2 per run, so each web AI has continuity across reasoning, review, and judge/next-round prompts. The public repo and reading_packet.md remain the authoritative memory; web conversation memory is helpful but not authoritative.
+Legacy labels in older rounds map as follows: `gpt_pro_thinking` = A1, `gemini_deep_think` = A2, `deepseek_api` = A3, and `claude_max_thinking` = A4. There is no active Qwen agent in this repo. Prefer one persistent conversation for A1, one persistent conversation for A2, and one persistent conversation for A4 per run, so each web AI has continuity across reasoning, review, and judge/next-round prompts. The public repo and reading_packet.md remain the authoritative memory; web conversation memory is helpful but not authoritative.
 
 # Research-mode quality target
 
 Kind: constraint
 Timestamp: 2026-05-31T21:35:00
 
-This is no longer a smoke test. Use research mode for the three-agent A1/A2/A3 Gauss run. Take substantially more time to reason before answering. Prefer correctness, explicit hypotheses, gap detection, literature-status caution, and precise lemma formulation over speed or brevity. Do not optimize for short answers.
+This is no longer a smoke test. Use research mode for the four-agent A1/A2/A3/A4 Gauss run. Take substantially more time to reason before answering. Prefer correctness, explicit hypotheses, gap detection, literature-status caution, and precise lemma formulation over speed or brevity. Do not optimize for short answers.
 
 Each reasoning response should include: a main route, precise proposed lemmas, dependencies on known theorems, hidden assumptions, obstruction/counterexample checks, what would falsify the route, and confidence.
 
