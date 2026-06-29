@@ -1,6 +1,6 @@
 # Reading Packet
 
-Generated after round 2 in run `obligation-main`.
+Generated after round 3 in run `obligation-main`.
 
 ## Current Theorem Target
 
@@ -28,9 +28,9 @@ Current blockers:
 - `M9-M2-character-factor` (open, owner `A2`): M2 frequency-side character factor
   Next action: Use the exact beta_h algebra and the h-Cauchy sign-loss diagnostic to pursue the M2 fourth-moment route first; keep CRI and direct signed bilinear estimates as secondary diagnostics.
 - `M9-near-collision-taxonomy` (open, owner `A2`): M2 fourth-moment near-collision taxonomy
-  Next action: Complete the exact N=0 taxonomy using the corrected numerator N and actual beta_h weights. Resolve or explicitly preserve the unclassified class, prove or downgrade denominator-paired estimates, and formulate near-collision bands using |N| lesssim D^4/X.
-- `M9-regression-raw-vs-paired` (proposed, owner `A3`): Raw-vs-paired numerical stress test for M9
-  Next action: Produce committed or repository-ready artifacts: computations/m9_regression/run.py, outputs/table_small.csv, a precision log, and computations/m9_regression/report.md. Use the official M1/M2 raw formulas and actual Vaaler coefficients; label all evidence diagnostic_only.
+  Next action: Preserve the unclassified exact N=0 class. First prove or refute the denominator-paired weighted bound, then define semi-diagonal and mixed families with exact equations and mass bounds.
+- `M9-regression-raw-vs-paired` (diagnostic_only, owner `A3`): Raw-vs-paired numerical stress test for M9
+  Next action: After H4 source audit, rerun with the exact Vaaler Phi, official raw M1/M2 formulas, high precision, complex-weight cosine pairing, larger exact N=0 tables, and near-collision bins. Keep all output diagnostic_only.
 
 ## Do-Not-Claim Rules
 
@@ -59,7 +59,7 @@ Default target split:
 
 ## Last State Patch
 
-created: M9-M2-N0-diagonal-core-bound; updated: M9-M2-character-factor, M9-near-collision-taxonomy, M9-regression-raw-vs-paired, M9-M2-fourth-moment-expansion; rejected: A2-R2-near-collision-taxonomy-promotion, A2-R2-denominator-paired-negligibility-proved, A2-R2-dual-length-explosion-route-closing, A2-R2-diagonal-core-one-sixteenth-union-constant, A3-R2-artifact-evidence-without-files, A3-R2-official-formula-normalization-unverified; no_change: M9, M9-M1, M9-M2, M9-near-collision-estimate, M9-endpoint-uniformity, GC-target, H4, H4-source-audit, Li-Yang-source-audit; round score: 3; Round 2 made useful algebraic and strategic progress on M2 and identified the fourth-moment route as primary, but no endpoint estimate, complete taxonomy, near-collision bound, or executable computation evidence was supplied.
+created: R5-Full-reconciliation, M9-M2-denominator-paired-weighted-bound, M9-M2-direct-signed-bilinear-lemma; updated: M9-M2-beta-algebra, M9-M2-fourth-moment-expansion, M9-M2-N0-diagonal-core-bound, M9-near-collision-taxonomy, M9-regression-raw-vs-paired, R5-Full, H4-source-audit, M9-M2; rejected: A2-R3-total-exact-N0-OD2-proof-promotion, A2-R3-near-collision-taxonomy-resolved, A2-R3-denominator-paired-negligibility-proved, A2-R3-Gallagher-derivative-route-closing, A2-R3-direct-exponent-pair-M2-proof; no_change: M9, M9-M1, M9-near-collision-estimate, M9-endpoint-uniformity, GC-target, H4, Li-Yang-source-audit; round score: 4; Round 3 improved M2 algebra, route selection, and diagnostic evidence, and it created a sharper denominator-paired target. It did not prove M9, resolve exact N=0 taxonomy, or close any endpoint estimate.
 
 ## Active Obligation Briefs
 
@@ -75,15 +75,15 @@ created: M9-M2-N0-diagonal-core-bound; updated: M9-M2-character-factor, M9-near-
 - Status: `open`
 - Track: `M9_analytic`
 - Owner: `A2`
-- Blockers: `M9-near-collision-estimate`, `M9-M2-N0-diagonal-core-bound`
-- Next action: Complete the exact N=0 taxonomy using the corrected numerator N and actual beta_h weights. Resolve or explicitly preserve the unclassified class, prove or downgrade denominator-paired estimates, and formulate near-collision bands using |N| lesssim D^4/X.
+- Blockers: `M9-near-collision-estimate`, `M9-M2-N0-diagonal-core-bound`, `M9-M2-denominator-paired-weighted-bound`
+- Next action: Preserve the unclassified exact N=0 class. First prove or refute the denominator-paired weighted bound, then define semi-diagonal and mixed families with exact equations and mass bounds.
 
 ### M9-regression-raw-vs-paired: Raw-vs-paired numerical stress test for M9
 
-- Status: `proposed`
+- Status: `diagnostic_only`
 - Track: `computation`
 - Owner: `A3`
-- Next action: Produce committed or repository-ready artifacts: computations/m9_regression/run.py, outputs/table_small.csv, a precision log, and computations/m9_regression/report.md. Use the official M1/M2 raw formulas and actual Vaaler coefficients; label all evidence diagnostic_only.
+- Next action: After H4 source audit, rerun with the exact Vaaler Phi, official raw M1/M2 formulas, high precision, complex-weight cosine pairing, larger exact N=0 tables, and near-collision bins. Keep all output diagnostic_only.
 
 ### GC-target: Gauss circle conjectural exponent target
 
@@ -106,7 +106,7 @@ created: M9-M2-N0-diagonal-core-bound; updated: M9-M2-character-factor, M9-near-
 - Status: `source_audit_required`
 - Track: `source_audit`
 - Owner: `A1`
-- Next action: Complete the source card with rendered page/equation checks.
+- Next action: Verify from rendered Vaaler pages: Theorem 6 equation (2.28), Section 7 equations (7.1)--(7.3), Theorem 18 equations (7.13)--(7.17), coefficient sign, Fejer normalization, residual constant, and integer endpoint convention.
 
 ### Li-Yang-source-audit: Li-Yang theorem and rendered-PDF audit
 
@@ -136,16 +136,31 @@ created: M9-M2-N0-diagonal-core-bound; updated: M9-M2-character-factor, M9-near-
 - Status: `open`
 - Track: `M9_analytic`
 - Owner: `A2`
-- Blockers: `M9-M2-character-factor`, `M9-near-collision-taxonomy`
-- Next action: Retain the two-sided convention and prove or refute the near-collision estimate with actual beta_h weights.
+- Blockers: `M9-M2-character-factor`, `M9-near-collision-taxonomy`, `M9-M2-denominator-paired-weighted-bound`
+- Next action: Retain the two-sided convention and actual beta_h weights. Attack the denominator-paired weighted exact-resonance sublemma first; keep direct signed bilinear estimates as backup only.
 
 ### M9-M2-N0-diagonal-core-bound: Diagonal-core bound for exact M2 fourth-moment resonances
 
 - Status: `open`
 - Track: `M9_analytic`
 - Owner: `A2`
+- Blockers: `H4-source-audit`, `M9-M2-denominator-paired-weighted-bound`
+- Next action: Keep the narrow pair-equality O(D^2) calculation as a subclaim only. Prove the denominator-paired and semi-diagonal weighted masses with actual beta_h weights before promoting the full diagonal-core obligation.
+
+### M9-M2-denominator-paired-weighted-bound: Weighted denominator-paired exact M2 resonance bound
+
+- Status: `open`
+- Track: `M9_analytic`
+- Owner: `A2`
 - Blockers: `H4-source-audit`
-- Next action: Prove the bound with actual beta_h weights, bounded dyadic weights, explicit overlap conventions, and the H4 coefficient bound; do not use the incorrect 1/16 constant for the whole union.
+- Next action: Prove the weighted gcd-sum bound with actual beta_h weights, signs, equality cases h_i=h_j, truncation edges, and uniformity in D; otherwise provide a counterexample or downgrade.
+
+### M9-M2-direct-signed-bilinear-lemma: Direct signed bilinear estimate for M2
+
+- Status: `proposed`
+- Track: `M9_analytic`
+- Owner: `A2`
+- Next action: Rewrite as a precise theorem with coefficient class, dyadic ranges, exact bilinear or spacing norm, named external theorem if used, and a fast falsification test comparing signed and unsigned statistics.
 
 ### M9-endpoint-uniformity: Endpoint uniformity over active dyadic D
 
@@ -161,6 +176,14 @@ created: M9-M2-N0-diagonal-core-bound; updated: M9-M2-character-factor, M9-near-
 - Owner: `A2`
 - Next action: After taxonomy, formulate this as an exact theorem with all coefficient weights and dyadic ranges.
 
+### R5-Full-reconciliation: R5-Full product-count reconciliation audit
+
+- Status: `open`
+- Track: `proof_infrastructure`
+- Owner: `A1`
+- Blockers: `H4-source-audit`
+- Next action: Compare the older H5r/DDP-trap concern with the later R5-Full-R18 through R5-Full-R27 product-count entries, then write the accepted proof or downgrade proposal into best_proof_draft.md.
+
 ### Conditional-bridge: Conditional bridge from accepted reductions to the target
 
 - Status: `derived_under_assumptions`
@@ -175,7 +198,7 @@ created: M9-M2-N0-diagonal-core-bound; updated: M9-M2-character-factor, M9-near-
 - Track: `M9_analytic`
 - Owner: `A1`
 - Blockers: `H4-source-audit`
-- Next action: Verify the exact H4 coefficient convention from the Vaaler source card and then insert the beta_h algebra into the proof draft.
+- Next action: After H4 source audit, insert the beta_h algebra, raw two-sided formula, paired real formula, and complex-weight cosine pairing into best_proof_draft.md.
 
 ### M9-M2-fourth-moment-expansion: Algebraic fourth-moment expansion for M2 with retained character product
 
@@ -183,7 +206,7 @@ created: M9-M2-N0-diagonal-core-bound; updated: M9-M2-character-factor, M9-near-
 - Track: `M9_analytic`
 - Owner: `A2`
 - Blockers: `M9-near-collision-estimate`
-- Next action: Use this only as an algebraic expansion. A2 should classify exact and near-collision configurations with actual beta_h weights; do not infer an analytic estimate from the expansion alone.
+- Next action: Use the expansion only as algebraic infrastructure for exact N=0 and near-collision estimates; do not infer an analytic bound without weighted mass estimates.
 
 ### M9-M2-h-cauchy-sign-loss: Weighted h-Cauchy loses the M2 frequency character sign
 
@@ -191,11 +214,3 @@ created: M9-M2-N0-diagonal-core-bound; updated: M9-M2-character-factor, M9-near-
 - Track: `M9_analytic`
 - Owner: `A1`
 - Next action: Use this only as a diagnostic. A2 should test fourth moments, CRI, or direct signed bilinear estimates rather than treating this as a no-go theorem.
-
-### R5-Full: Fejer residual product-count bound
-
-- Status: `derived_under_assumptions`
-- Track: `proof_infrastructure`
-- Owner: `A1`
-- Blockers: `H4-source-audit`
-- Next action: Insert the proof with edge cases into the best proof draft after H4 source audit is complete.

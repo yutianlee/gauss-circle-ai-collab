@@ -1,149 +1,168 @@
 # Next Round Prompts
 
-Generated after round 2 in run `obligation-main`.
+Generated after round 3 in run `obligation-main`.
 
-Source judge synthesis: `rounds/obligation-main/round_002/judge/judge-002.md`.
+Source judge synthesis: `rounds/obligation-main/round_003/judge/judge-003.md`.
 
 ## For A1
 
-Target obligations: `M9-M2-beta-algebra`, `M9-M2-fourth-moment-expansion`, `M9-M2-N0-diagonal-core-bound`, and state maintenance.
+Target obligations: `H4-source-audit`, `R5-Full-reconciliation`, `M9-M2-beta-algebra`, `M9-M2-fourth-moment-expansion`, and proof-draft consolidation.
 
 Objectives:
 
-1. Insert the proof-draft-ready $\mathcal M_2$ coefficient normalization into the proof draft, preserving H4 dependency:
+1. Complete the rendered-source H4 audit from Vaaler 1985. Verify:
+   - Theorem 6, equation (2.28), for $\widehat J(t)$;
+   - Section 7, equations (7.1)--(7.3), for $i_N,j_N,k_N$;
+   - Theorem 18, equations (7.13)--(7.17), especially (7.14);
+   - coefficient sign in
 $$
-   C_h=2i\chi_4(h)1_{2\nmid h},
-   \qquad
-   \beta_{h,H}
-   =
-   -\frac{\Phi(|h|/(H+1))}{\pi |h|}
-   \chi_4(|h|)1_{2\nmid h}.
+     \alpha_{h,H}=-\frac{\Phi(|h|/(H+1))}{2\pi i h};
 $$
+   - residual constant $(2H+2)^{-1}$;
+   - Fejer normalization;
+   - integer endpoint convention.
 
-2. State the raw two-sided formula and the paired real formula, with the real-weight hypothesis explicit.
+2. Write `R5-Full-reconciliation` into `best_proof_draft.md`. Compare the old H5r/DDP-trap concern with the product-count proof. The output must state exactly why using the positive Fejer majorant before Fourier expansion avoids the older arbitrary-coefficient trap, or else propose a downgrade.
 
-3. Write the fourth-moment expansion using the exact coefficient product and corrected numerator $N$.
+3. Insert into `best_proof_draft.md`:
+   - H1-H3 statement;
+   - H4 statement, still source-audit-dependent;
+   - R5-Full proof or reconciliation gap;
+   - conditional bridge;
+   - official M9 definitions;
+   - $\mathcal M_2$ raw two-sided, paired real, and complex-weight cosine formulas;
+   - fourth-moment numerator $N$;
+   - open blockers.
 
-4. Add a small lemma-bank entry for `M9-M2-N0-diagonal-core-bound` as open, not proved. State exactly what A2 must prove.
+4. State the first near-collision theorem exactly:
+$$
+   0<|N|\lesssim D^4/X
+$$
+   with coefficient weights, dyadic ranges, threshold convention, and whether the estimate is signed or absolute.
 
-5. Keep `M9`, `M9-M1`, `M9-M2`, `M9-near-collision-taxonomy`, `M9-near-collision-estimate`, and `GC-target` open.
-
-6. Exploratory allocation: compare fourth moment, CRI, and direct signed bilinear routes in one page, with one falsification criterion for each.
+5. Do not promote `M9`, `M9-M2`, `M9-M2-N0-diagonal-core-bound`, `M9-near-collision-taxonomy`, `M9-near-collision-estimate`, or `GC-target`.
 
 Verification tasks:
 
-- Check H4 source-card dependency before any coefficient bound such as $|\Phi(u)|\le C$ is used.
-- Confirm that any paired implementation formula is labelled invalid for complex weights.
+- Cite exact rendered pages and equations.
+- Preserve the floor-compatible convention $\psi_F(n)=-1/2$.
+- Explicitly distinguish proof, conditional infrastructure, diagnostic computation, and open estimates.
+
+Exploratory allocation:
+
+- Write a one-page comparison between the denominator-paired fourth-moment route and the direct signed bilinear backup. Include one precise falsification criterion for each.
 
 ## For A2
 
-Target obligations: `M9-near-collision-taxonomy`, `M9-M2-N0-diagonal-core-bound`, and `M9-M2-fourth-moment-expansion`.
+Target obligations: `M9-M2-denominator-paired-weighted-bound`, `M9-M2-N0-diagonal-core-bound`, and `M9-near-collision-taxonomy`.
 
 Objectives:
 
-1. Use one fixed two-sided convention:
+1. Prove or refute the weighted denominator-paired exact resonance lemma. Work in the subfamily
 $$
-   1\le |h|\le H_D.
+   d_1=d_2=a,\qquad d_3=d_4=b,
 $$
-
-2. Use the actual $\beta_h$ coefficients and the corrected numerator
+   where
 $$
-   N=
-   h_1d_2d_3d_4
-   -
-   h_2d_1d_3d_4
-   +
-   h_3d_1d_2d_4
-   -
-   h_4d_1d_2d_3.
+   (h_1-h_2)b+(h_3-h_4)a=0.
 $$
 
-3. Prove or explicitly mark open the `M9-M2-N0-diagonal-core-bound` lemma. Do not use the incorrect $\frac{1}{16}D^2$ constant for the whole core.
-
-4. Produce a taxonomy table with columns:
-   - family name;
-   - defining equations;
-   - proof that $N=0$;
-   - coefficient product;
-   - mass bound;
-   - status;
-   - remaining edge cases.
-
-5. Resolve or preserve as open the unclassified exact $N=0$ residue reported in the small enumeration.
-
-6. Downgrade denominator-paired negligibility unless a proof is supplied.
-
-7. Define near-collision bands using
+2. Use the fixed two-sided convention:
 $$
-   |N|\lesssim D^4/X
+   1\le |h|\le H_D,
+   \qquad
+   H_D\asymp D X^{-1/4}.
 $$
-   and state the first exact theorem needed to bound them.
 
-8. Repair or alternative route: formulate the direct signed bilinear route as a precise lemma with coefficient class, matrix or spacing norm, dependency on a named theorem if any, and a fast falsification test.
+3. Use the actual H4-dependent coefficient class:
+$$
+   \beta_{h,H_D}
+   =
+   -\frac{\Phi(|h|/(H_D+1))}{\pi |h|}
+   \chi_4(|h|)1_{2\nmid h}.
+$$
+
+4. Give a complete gcd decomposition. At minimum, set $g=(a,b)$, $a=ga'$, $b=gb'$, and parameterize frequency differences from
+$$
+   (h_1-h_2)b'=-(h_3-h_4)a'.
+$$
+   Track equality cases $h_1=h_2$, $h_3=h_4$, sign choices, endpoint truncation, and odd-frequency support.
+
+5. Produce a bound for the absolute weighted mass. If the desired bound fails, give a counterexample construction and state the corrected obstruction.
+
+6. Include a taxonomy table only for families actually treated this round. Mark all other families open.
+
+7. Referee R5-Full against the older DDP-trap concern in one section, but do not make it the main proof unless A1's source audit exposes a real contradiction.
+
+8. Any direct exponent-pair or Poisson alternative must be a proposed route only. It must include a named theorem statement, derivative scale, dual length $m\asymp hX/D^2$, boundary terms, actual $\beta_h$ weights, and uniformity over active $D$.
 
 Verification tasks:
 
-- Supply either proof or reproducible computation for every numerical claim.
-- Label central claims only as `[PROVED]`, `[DERIVED-UNDER-ASSUMPTIONS]`, `[HEURISTIC]`, `[CONJECTURED]`, `[ASSUMED]`, or `[LIKELY-FALSE]`.
+- Use only the allowed status labels.
+- Do not label a central claim `[PROVED]` unless the proof is complete.
+- Numerical examples are diagnostic only.
+- The exact output should make clear whether the denominator-paired weighted bound is proved, refuted, or still open.
+
+Exploratory allocation:
+
+- If the weighted denominator-paired estimate stalls, formulate the smallest signed bilinear statistic that would imply M2, and state a fast A3 falsification test.
 
 ## For A3
 
-Target obligation: `M9-regression-raw-vs-paired`.
+Target obligations: `M9-regression-raw-vs-paired`, `M9-M2-denominator-paired-weighted-bound` diagnostics, `R5-Full-reconciliation` diagnostics.
 
 Objectives:
 
-1. Produce actual repository-ready artifacts, not only a protocol:
-   - `computations/m9_regression/run.py`;
-   - `outputs/table_small.csv`;
-   - `computations/m9_regression/precision.log`;
-   - `computations/m9_regression/report.md`.
+1. Verify the committed Round 3 artifacts:
+   - `rounds/obligation-main/round_003/artifacts/m9_regression/run.py`;
+   - `rounds/obligation-main/round_003/artifacts/m9_regression/table_small.csv`;
+   - `rounds/obligation-main/round_003/artifacts/m9_regression/precision.log`;
+   - `rounds/obligation-main/round_003/artifacts/m9_regression/report.md`.
 
-2. Use the official raw two-sided M1/M2 formulas and actual Vaaler coefficients. If H4 source audit is not final, clearly mark the coefficient as provisional and separate structural tests from quantitative tests.
+2. Update the raw-vs-paired script to include:
+   - official $\mathcal M_1$ formula with $\chi_4(d)$;
+   - official $\mathcal M_2$ raw two-sided formula;
+   - paired real formula;
+   - complex-weight cosine pairing;
+   - explicit failure of the $\operatorname{Re}B_h$ formula for complex weights.
 
-3. For real dyadic weights, verify raw two-sided sums equal the paired real formulas.
-
-4. For complex weights, verify paired real formulas fail unless modified.
-
-5. Include explicit checks:
+3. After A1 completes H4, replace any provisional kernel by the exact
 $$
-   C_h=2i\chi_4(h)1_{2\nmid h},
-   \qquad
-   |C_h|^2=4\,1_{2\nmid h},
-   \qquad
-   \beta_{-h}=\beta_h.
+   \Phi(u)=\pi u(1-u)\cot(\pi u)+u.
 $$
 
-6. Implement small exact fourth-moment binning with the corrected $N$ and actual $\beta_h$ weights. Report exact $N=0$ bins, unclassified bins, and near-collision bands.
+4. Scale the exact fourth-moment enumeration. Report:
+   - total exact $N=0$ mass;
+   - pair-equality mass;
+   - denominator-paired mass;
+   - semi-diagonal mass if classified;
+   - unclassified exact $N=0$ mass;
+   - near-collision mass for $0<|N|\le cD^4/X$;
+   - signed and absolute versions;
+   - normalization by $D^2$ and $X$.
 
-7. Compute CRI ratios:
-$$
-   R_{\rm CRI}
-   =
-   \frac{|\Sigma_1-\Sigma_3|^2}
-   {|\Sigma_1|^2+|\Sigma_3|^2}.
-$$
+5. Build a denominator-paired-only diagnostic table matching A2's variables $a,b,g,a',b'$ and frequency-difference parameter.
 
-8. Compute one bilinear gradient-spacing diagnostic using
-$$
-   \nabla f(h,d)=
-   \left(
-   \frac{X}{4d},
-   -\frac{hX}{4d^2}
-   \right).
-$$
+6. Run R5 residual product-count diagnostics for first leg and shifted legs $\rho=1,3$, with square, near-square, nonsquare, and divisor-rich $X$, and exact resonance handling.
+
+7. Continue CRI and gradient-spacing diagnostics, but label all results `diagnostic_only`.
 
 Verification tasks:
 
-- Record command line, Python version, precision settings, table schema, and pass/fail assertions.
-- Label all output `diagnostic_only`.
-- Do not use surrogate kernels as official evidence; put any toy kernel in a separate exploratory appendix.
+- Record command line, Python version, precision, exact table schema, pass/fail assertions, and H4 coefficient status.
+- Use high precision near Fejer spikes and exact integer arithmetic for $N$.
+- Do not infer asymptotic proof from finite tables.
+
+Exploratory allocation:
+
+- Compare fixed $\beta_h$ coefficients against unsigned, random-sign, and adversarial coefficients to test whether the signed route has visible structure.
 
 ## Round Assessment
 
 | Agent | Idea quality | State evidence | Calibration | Assessment |
 |---|---:|---:|---:|---|
-| A1 | 8.0 | 7.0 | 8.0 | Strong algebraic normalization and conservative state handling. Best basis for the judge synthesis. |
-| A2 | 7.5 | 3.0 | 4.5 | Strong route ideas and useful fourth-moment focus, but overpromotes incomplete taxonomy, numerical claims, and unproved denominator-paired estimates. |
-| A3 | 6.5 | 2.5 | 6.0 | Good diagnostic design, but evidence is not committed/executed and uses provisional or possibly non-official normalizations. |
+| A1 | 8.5 | 8.0 | 9.0 | Strong algebraic normalization, conservative proof-state handling, useful route proposals, and correct separation of pair-equality core from full diagonal-core obligation. |
+| A2 | 7.0 | 2.0 | 3.0 | Useful focus on denominator-paired and alternative direct routes, but central claims were overpromoted and several `[PROVED]` labels lacked complete proof. |
+| A3 | 7.0 | 6.5 | 8.0 | Useful executed diagnostic artifacts and good diagnostic-only calibration; quantitative outputs remain provisional until H4 and larger runs. |
 
-Overall, Round 2 is useful but not proof-level endpoint progress. The fourth-moment route is now the primary M2 research direction. The direct signed bilinear route remains the backup. Computation remains diagnostic only until actual files and outputs exist.
+Overall mathematical-progress score is conservative: Round 3 sharpened the target and created usable diagnostic evidence, but it did not prove any endpoint estimate or complete a taxonomy.
