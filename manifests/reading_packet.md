@@ -1,6 +1,6 @@
 # Reading Packet
 
-Generated after round 6 in run `obligation-main`.
+Generated after round 7 in run `obligation-main`.
 
 ## Current Theorem Target
 
@@ -28,9 +28,9 @@ Current blockers:
 - `M9-M2-character-factor` (open, owner `A2`): M2 frequency-side character factor
   Next action: Use the exact beta_h algebra and the h-Cauchy sign-loss diagnostic to pursue the M2 fourth-moment route first; keep CRI and direct signed bilinear estimates as secondary diagnostics.
 - `M9-near-collision-taxonomy` (open, owner `A2`): M2 fourth-moment near-collision taxonomy
-  Next action: Record fraction-matching versus official semi-diagonal terminology. Treat reduced-paired exact resonances under H4, then attack URES; do not promote full taxonomy until mixed and residual exact N=0 are bounded.
+  Next action: Record that the exact N=0 arm is conditionally closed under H4. Keep the obligation open for 0<|N|~T near-collision bands, endpoint uniformity, and pointwise upgrade.
 - `M9-regression-raw-vs-paired` (diagnostic_only, owner `A3`): Raw-vs-paired numerical stress test for M9
-  Next action: Fix the complex-weight B_{-1} relation before running. Then execute the raw two-sided M2, complex-weight cosine pairing, real-weight Re B_h formula, and deliberate complex-weight Re B_h failure tests with exact Phi or explicitly marked surrogate Phi until H4 validates Phi.
+  Next action: Repair the complex-weight failure test using genuinely complex d-weights or asymmetric h-weights. Then execute raw two-sided, complex-weight cosine, real-weight Re B_h, and deliberate complex-weight failure regressions.
 
 ## Do-Not-Claim Rules
 
@@ -60,7 +60,7 @@ Default target split:
 
 ## Last State Patch
 
-created: H4-Phi-regularity, M9-M2-local-fourth-moment-kernel, M9-M2-LFM-endpoint-degeneracy, M9-M2-subcoherence-window-multiplier, M9-M2-LFM-pointwise-equivalence, M9-M2-NF-participation-rigidity, M9-M2-unpaired-reduced-paired-bound, M9-M2-unpaired-residual-URES, M9-M2-sign-preserving-poisson-voronoi-route; updated: H4-source-audit, M9-M2-DP-near-collision-bound, M9-M2-coprime-rigidity-normal-form, M9-M2-local-fourth-moment-LFM, M9-M2-fourth-moment-average-to-pointwise, M9-near-collision-taxonomy, M9-near-collision-estimate, M9-fourth-moment-enumeration, M9-regression-raw-vs-paired, M9-M2-reciprocal-SPD-route, M9-M2-beta-algebra; rejected: A2-R6-unpaired-exact-N0-mass-bound-derived, A2-R6-cleared-phase-non-separability-route-closing, A2-R6-poisson-voronoi-as-proof-evidence, A3-R6-unexecuted-artifact-positive-evidence, A3-R6-unclassified-mass-pass-fail; no_change: M9, M9-M1, M9-M2, GC-target, Conditional-bridge, H4, R5-Full, Li-Yang-source-audit, M9-M2-character-factor; round score: 4; Round 6 makes modest proof-graph-safe progress by adding the local kernel, the whole-range subcoherence obstruction with endpoint degeneration as a corollary, a validator-ready DP update, NF-2 rigidity, reduced-paired exact-resonance control under H4, and a precise URES residual target. It does not prove M9, M9-M2, M9-M1, the full taxonomy, near-collision estimates, or the final target.
+created: Divisor-bound-elementary, M9-M2-URES-representation-divisor-bound, M9-M2-URES-energy-reduction, M9-M2-exact-N0-total-mass, M9-M2-endpoint-algebraic-phase, M9-M2-GM4-from-exact-plus-graded; updated: M9-M2-unpaired-residual-URES, M9-M2-N0-diagonal-core-bound, M9-near-collision-taxonomy, M9-near-collision-estimate, M9-M2-DP-near-collision-bound, M9-M2-coprime-rigidity-normal-form, M9-M2-NF-participation-rigidity, M9-M2-unpaired-reduced-paired-bound, M9-M2-reciprocal-SPD-route, M9-M2-sign-preserving-poisson-voronoi-route, M9-fourth-moment-enumeration, M9-regression-raw-vs-paired, H4-source-audit; rejected: A2-R7-URES-absolute-bound-failure, A2-R7-Poisson-Boundary-Bound-proved, A2-R7-endpoint-algebraic-phase-implies-uniformity, A3-R7-regression-verified, A3-R7-fake-complex-failure-test, A3-R7-Mellin-Perron-route; no_change: M9, M9-M1, M9-M2, M9-endpoint-uniformity, GC-target, Conditional-bridge, H4, R5-Full, Li-Yang-source-audit; round score: 6; Round 7 makes significant proof-graph-safe progress by conditionally closing the exact N=0 fourth-moment mass through A4's URES divisor factorization, while correctly leaving M9, M9-M2, near-collision estimates, endpoint uniformity, H4, and the final Gauss circle target open.
 
 ## Active Obligation Briefs
 
@@ -77,14 +77,14 @@ created: H4-Phi-regularity, M9-M2-local-fourth-moment-kernel, M9-M2-LFM-endpoint
 - Track: `M9_analytic`
 - Owner: `A2`
 - Blockers: `M9-near-collision-estimate`, `M9-M2-N0-diagonal-core-bound`, `M9-M2-denominator-paired-weighted-bound`, `M9-M2-fourth-moment-average-to-pointwise`, `M9-M2-local-fourth-moment-LFM`, `M9-M2-unpaired-residual-URES`, `M9-M2-unpaired-reduced-paired-bound`, `M9-M2-NF-participation-rigidity`
-- Next action: Record fraction-matching versus official semi-diagonal terminology. Treat reduced-paired exact resonances under H4, then attack URES; do not promote full taxonomy until mixed and residual exact N=0 are bounded.
+- Next action: Record that the exact N=0 arm is conditionally closed under H4. Keep the obligation open for 0<|N|~T near-collision bands, endpoint uniformity, and pointwise upgrade.
 
 ### M9-regression-raw-vs-paired: Raw-vs-paired numerical stress test for M9
 
 - Status: `diagnostic_only`
 - Track: `computation`
 - Owner: `A3`
-- Next action: Fix the complex-weight B_{-1} relation before running. Then execute the raw two-sided M2, complex-weight cosine pairing, real-weight Re B_h formula, and deliberate complex-weight Re B_h failure tests with exact Phi or explicitly marked surrogate Phi until H4 validates Phi.
+- Next action: Repair the complex-weight failure test using genuinely complex d-weights or asymmetric h-weights. Then execute raw two-sided, complex-weight cosine, real-weight Re B_h, and deliberate complex-weight failure regressions.
 
 ### GC-target: Gauss circle conjectural exponent target
 
@@ -107,7 +107,7 @@ created: H4-Phi-regularity, M9-M2-local-fourth-moment-kernel, M9-M2-LFM-endpoint
 - Status: `source_audit_required`
 - Track: `source_audit`
 - Owner: `A1`
-- Next action: Commit sources/vaaler_1985.md with bibliographic data, DOI 10.1090/S0273-0979-1985-15349-2, local PDF path, Theorem 6 equation (2.28), Section 7 equations (7.1)-(7.3), Theorem 18 equations (7.13)-(7.17), coefficient sign, Fejer normalization, residual constant, floor-compatible endpoint convention, Phi regularity, and the M2 single-parity support check.
+- Next action: Commit sources/vaaler_1985.md with DOI, local PDF path, Theorem 6 equation (2.28), Section 7 equations (7.1)-(7.3), Theorem 18 equations (7.13)-(7.17), coefficient sign, Fejer normalization, residual constant, floor-compatible endpoint convention, Phi regularity, and M2 parity support.
 
 ### Li-Yang-source-audit: Li-Yang theorem and rendered-PDF audit
 
@@ -140,13 +140,13 @@ created: H4-Phi-regularity, M9-M2-local-fourth-moment-kernel, M9-M2-LFM-endpoint
 - Blockers: `M9-M2-character-factor`, `M9-near-collision-taxonomy`, `M9-M2-denominator-paired-weighted-bound`, `M9-M2-fourth-moment-average-to-pointwise`, `M9-M2-local-fourth-moment-LFM`
 - Next action: Do not promote from AP, DP scoping, or paired/fraction subfamilies. Supply a pointwise M2 estimate, a local fourth-moment estimate valid at endpoint, or a sign-preserving direct estimate with uniformity.
 
-### M9-M2-N0-diagonal-core-bound: Diagonal-core bound for exact M2 fourth-moment resonances
+### M9-M2-GM4-from-exact-plus-graded: Global fourth-moment route from exact resonance plus graded near-collision
 
-- Status: `open`
+- Status: `proposed`
 - Track: `M9_analytic`
-- Owner: `A2`
-- Blockers: `H4-source-audit`, `M9-M2-denominator-paired-weighted-bound`, `M9-M2-fourth-moment-average-to-pointwise`, `M9-M2-fraction-matching-weighted-bound`, `M9-M2-local-fourth-moment-LFM`
-- Next action: Do not promote from paired or fraction-matching subfamilies. Prove or refute mixed and unpaired exact N=0 mass before any status change.
+- Owner: `A1`
+- Blockers: `M9-near-collision-estimate`, `M9-M2-LFM-pointwise-equivalence`
+- Next action: Determine the exact moment or large-value theorem needed beyond derivative propagation; do not use this route to promote M9-M2.
 
 ### M9-M2-direct-signed-bilinear-lemma: Direct signed bilinear estimate for M2
 
@@ -178,7 +178,7 @@ created: H4-Phi-regularity, M9-M2-local-fourth-moment-kernel, M9-M2-LFM-endpoint
 - Track: `M9_analytic`
 - Owner: `A4`
 - Blockers: `H4-source-audit`, `Li-Yang-source-audit`
-- Next action: State the exact sign-preserving spacing theorem required for theta_d=X/(4d), define P(D,H;X), and require A3 to compare true beta signs with unsigned, random, and adversarial signs before further proof investment.
+- Next action: State the exact SPD-1 discrepancy theorem and SPD-J jump/near-jump convention; separate integer-X exact jumps from real-X near-jumps; require A3 true-vs-unsigned-vs-random-vs-adversarial diagnostics before major proof investment.
 
 ### M9-M2-sign-preserving-poisson-voronoi-route: Sign-preserving Poisson or B-process route for M2
 
@@ -186,14 +186,7 @@ created: H4-Phi-regularity, M9-M2-local-fourth-moment-kernel, M9-M2-LFM-endpoint
 - Track: `M9_analytic`
 - Owner: `A2`
 - Blockers: `H4-source-audit`, `Li-Yang-source-audit`
-- Next action: State exact stationary phase, boundary terms, k=0 terms, dual m-range m asymp hX/D^2, amplitudes, and the first sign-preserving post-transform estimate; keep as proposed until then.
-
-### M9-M2-unpaired-residual-URES: URES residual exact-resonance bound
-
-- Status: `open`
-- Track: `M9_analytic`
-- Owner: `A2`
-- Next action: Use NF-2 to prove the R(r)^2 bound or produce a lower-bound family exceeding the D^2 X^epsilon budget. A3 should enumerate this residual first.
+- Next action: Restate as a smooth-weight stationary-phase obligation with exact constants, boundary terms, k=0 terms, nonstationary ranges, support-edge stationary points, and a signed post-transform estimate.
 
 ### M9-endpoint-uniformity: Endpoint uniformity over active dyadic D
 
@@ -207,7 +200,7 @@ created: H4-Phi-regularity, M9-M2-local-fourth-moment-kernel, M9-M2-LFM-endpoint
 - Status: `proposed`
 - Track: `M9_analytic`
 - Owner: `A2`
-- Next action: Recast as a graded global estimate: prove or refute Sigma_abs(0<|N|<=M) <<_epsilon D^2 max(1, M X/D^4) X^epsilon for all relevant M, with signed variants separately marked. Do not infer this from DP or exact N=0 subfamilies.
+- Next action: Attack the graded interval analogue of URES-D: bound the beta-weighted mass with 0<|N|<=M, especially M near D^4/X, and separate absolute and signed variants.
 
 ### Conditional-bridge: Conditional bridge from accepted reductions to the target
 
@@ -216,3 +209,11 @@ created: H4-Phi-regularity, M9-M2-local-fourth-moment-kernel, M9-M2-LFM-endpoint
 - Owner: `A1`
 - Blockers: `M9`, `H4-source-audit`
 - Next action: Maintain the bridge in the proof draft, but do not promote the final theorem while M9 remains open.
+
+### H4-Phi-regularity: Regularity of Vaaler's Phi coefficient function
+
+- Status: `derived_under_assumptions`
+- Track: `source_audit`
+- Owner: `A1`
+- Blockers: `H4-source-audit`
+- Next action: After the Vaaler source card is validated, move this calculus lemma into the lemma bank and cite it in H4 coefficient-stability notes.

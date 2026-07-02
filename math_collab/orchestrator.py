@@ -1456,7 +1456,7 @@ def run_round(
         print(f"Web handoff files, if needed: {handoff_dir}")
         return
 
-    reviews: dict[str, str] = {}
+    review_prompts: dict[str, str] = {}
     if len(responses) >= 2:
         for agent in agents:
             peer_outputs = {k: v for k, v in responses.items() if k != agent.id}
@@ -1478,6 +1478,22 @@ def run_round(
                 peer_outputs=peer_outputs,
                 max_peer_chars=max_section_chars if compact_prompts else 0,
             )
+            review_prompts[agent.id] = prompt
+            write_text(
+                round_dir / "prompts" / prompt_filename(agent.id, "review", round_index),
+                prompt,
+            )
+            if agent.provider == "web_manual":
+                handoff_review_path = handoff_dir / "reviews" / f"{agent.id}.md"
+                if not handoff_review_path.exists():
+                    write_text(handoff_review_path, WEB_RESPONSE_MARKER + "\n\n")
+
+    reviews: dict[str, str] = {}
+    if review_prompts:
+        for agent in agents:
+            prompt = review_prompts.get(agent.id)
+            if not prompt:
+                continue
             output = run_agent(
                 agent=agent,
                 prompt=prompt,
