@@ -159,13 +159,15 @@
           "rounds/obligation-main/round_003/responses/A1-003.md",
           "rounds/obligation-main/round_003/reviews/A3.md",
           "rounds/obligation-main/round_004/reviews/A1.md",
-          "rounds/obligation-main/round_004/reviews/A4.md"
+          "rounds/obligation-main/round_004/reviews/A4.md",
+          "rounds/obligation-main/round_005/responses/A1-005.md",
+          "rounds/obligation-main/round_005/responses/A4-005.md"
         ]
       },
       "owner": "A1",
-      "next_action": "Commit sources/vaaler_1985.md with bibliographic data, local PDF path, Theorem 6 equation (2.28), Section 7 equations (7.1)--(7.3), Theorem 18 equations (7.13)--(7.17), coefficient sign, Fejer normalization, residual constant, and floor-compatible endpoint convention.",
-      "last_updated_round": 4,
-      "last_updated_at": "2026-06-30T00:14:43"
+      "next_action": "Commit sources/vaaler_1985.md with bibliographic data, local PDF path, Theorem 6 equation (2.28), Section 7 equations (7.1)-(7.3), Theorem 18 equations (7.13)-(7.17), coefficient sign, Fejer normalization, residual constant, floor-compatible endpoint convention, and the Phi regularity or Lipschitz fact needed for freezing H_D.",
+      "last_updated_round": 5,
+      "last_updated_at": "2026-07-02T23:47:54"
     },
     {
       "id": "R5-Full",
@@ -277,7 +279,8 @@
         "M9-M2-character-factor",
         "M9-near-collision-taxonomy",
         "M9-M2-denominator-paired-weighted-bound",
-        "M9-M2-fourth-moment-average-to-pointwise"
+        "M9-M2-fourth-moment-average-to-pointwise",
+        "M9-M2-local-fourth-moment-LFM"
       ],
       "evidence": {
         "positive": [],
@@ -286,13 +289,18 @@
           "rounds/obligation-main/round_004/responses/A1-004.md",
           "rounds/obligation-main/round_004/responses/A2-004.md",
           "rounds/obligation-main/round_004/responses/A4-004.md",
-          "rounds/obligation-main/round_004/reviews/A4.md"
+          "rounds/obligation-main/round_004/reviews/A4.md",
+          "rounds/obligation-main/round_005/responses/A1-005.md",
+          "rounds/obligation-main/round_005/responses/A2-005.md",
+          "rounds/obligation-main/round_005/responses/A3-005.md",
+          "rounds/obligation-main/round_005/responses/A4-005.md",
+          "rounds/obligation-main/round_005/reviews/A1.md"
         ]
       },
       "owner": "A2",
-      "next_action": "Do not promote from exact-resonance sublemmas. Supply pointwise control, near-collision estimates, and endpoint-uniformity before any status change.",
-      "last_updated_round": 4,
-      "last_updated_at": "2026-06-30T00:14:43"
+      "next_action": "Do not promote from AP, DP scoping, or paired/fraction subfamilies. Supply a pointwise M2 estimate, a local fourth-moment estimate valid at endpoint, or a sign-preserving direct estimate with uniformity.",
+      "last_updated_round": 5,
+      "last_updated_at": "2026-07-02T23:47:54"
     },
     {
       "id": "M9-M2-character-factor",
@@ -348,20 +356,24 @@
         "M9-near-collision-estimate",
         "M9-M2-N0-diagonal-core-bound",
         "M9-M2-denominator-paired-weighted-bound",
-        "M9-M2-fourth-moment-average-to-pointwise"
+        "M9-M2-fourth-moment-average-to-pointwise",
+        "M9-M2-local-fourth-moment-LFM"
       ],
       "evidence": {
         "positive": [
           "rounds/obligation-main/round_004/responses/A1-004.md",
           "rounds/obligation-main/round_004/responses/A2-004.md",
-          "rounds/obligation-main/round_004/responses/A4-004.md"
+          "rounds/obligation-main/round_004/responses/A4-004.md",
+          "rounds/obligation-main/round_005/responses/A2-005.md",
+          "rounds/obligation-main/round_005/responses/A4-005.md"
         ],
         "negative": [
           "rounds/round_001/reviews/A1_review_1.md",
           "rounds/obligation-main/round_002/reviews/A1.md",
           "rounds/obligation-main/round_002/human/stage-b-review-audit.md",
           "rounds/obligation-main/round_003/human/stage-a-response-audit.md",
-          "rounds/obligation-main/round_003/human/stage-b-review-audit.md"
+          "rounds/obligation-main/round_003/human/stage-b-review-audit.md",
+          "rounds/obligation-main/round_005/reviews/A1.md"
         ],
         "inconclusive": [
           "rounds/web-research-test/round_027/judge/judge-027.md",
@@ -372,13 +384,14 @@
           "rounds/obligation-main/round_003/artifacts/m9_regression/report.md",
           "rounds/obligation-main/round_004/responses/A3-004.md",
           "rounds/obligation-main/round_004/reviews/A1.md",
-          "rounds/obligation-main/round_004/reviews/A4.md"
+          "rounds/obligation-main/round_004/reviews/A4.md",
+          "rounds/obligation-main/round_005/responses/A3-005.md"
         ]
       },
       "owner": "A2",
-      "next_action": "Preserve the unclassified exact N=0 class. Next prove or refute mixed/unclassified exact resonances and start denominator-paired near-collision with the normalized L-condition.",
-      "last_updated_round": 4,
-      "last_updated_at": "2026-06-30T00:14:43"
+      "next_action": "Preserve mixed and unclassified exact N=0 classes. Reconcile semi-diagonal versus fraction-matching terminology, then prove or refute the unpaired exact N=0 mass bound.",
+      "last_updated_round": 5,
+      "last_updated_at": "2026-07-02T23:47:54"
     },
     {
       "id": "M9-near-collision-estimate",
@@ -395,17 +408,20 @@
       ],
       "blockers": [],
       "evidence": {
-        "positive": [],
+        "positive": [
+          "rounds/obligation-main/round_005/responses/A4-005.md"
+        ],
         "negative": [],
         "inconclusive": [
           "rounds/obligation-main/round_004/responses/A1-004.md",
-          "rounds/obligation-main/round_004/reviews/A4.md"
+          "rounds/obligation-main/round_004/reviews/A4.md",
+          "rounds/obligation-main/round_005/reviews/A1.md"
         ]
       },
       "owner": "A2",
-      "next_action": "First attack the denominator-paired near-collision condition 0<|(h_1-h_2)b+(h_3-h_4)a|<<D^2/X, then decide whether absolute or signed estimates are viable.",
-      "last_updated_round": 4,
-      "last_updated_at": "2026-06-30T00:14:43"
+      "next_action": "Treat denominator-paired near-collisions as scoped by M9-M2-DP-near-collision-bound after proof-draft verification. Shift the main analytic target to unpaired-denominator near-collisions with exact beta weights.",
+      "last_updated_round": 5,
+      "last_updated_at": "2026-07-02T23:47:54"
     },
     {
       "id": "M9-endpoint-uniformity",
@@ -421,11 +437,15 @@
       "blockers": [],
       "evidence": {
         "positive": [],
-        "negative": [],
+        "negative": [
+          "rounds/obligation-main/round_005/responses/A4-005.md"
+        ],
         "inconclusive": []
       },
       "owner": "A2",
-      "next_action": "Attach explicit D-range hypotheses to every proposed M1 or M2 estimate."
+      "next_action": "Require each M2 route to isolate the endpoint D=X^(1/2), where the AP/local-average bridge degenerates to pointwise control.",
+      "last_updated_round": 5,
+      "last_updated_at": "2026-07-02T23:47:54"
     },
     {
       "id": "M9-regression-raw-vs-paired",
@@ -467,13 +487,15 @@
           "rounds/obligation-main/round_003/human/stage-b-review-audit.md",
           "rounds/obligation-main/round_004/responses/A3-004.md",
           "rounds/obligation-main/round_004/reviews/A1.md",
-          "rounds/obligation-main/round_004/reviews/A4.md"
+          "rounds/obligation-main/round_004/reviews/A4.md",
+          "rounds/obligation-main/round_005/responses/A3-005.md",
+          "rounds/obligation-main/round_005/reviews/A1.md"
         ]
       },
       "owner": "A3",
-      "next_action": "Rerun with exact Vaaler Phi, official M1/M2 phases, raw two-sided formula, real paired formula, complex-weight cosine formula, and explicit failure of Re B_h for complex weights. Produce executable artifacts.",
-      "last_updated_round": 4,
-      "last_updated_at": "2026-06-30T00:14:43"
+      "next_action": "Rerun after materialization with exact Vaaler Phi, official M1/M2 phases, raw two-sided formula, complex-weight cosine pairing, real-weight Re B_h formula, and explicit failure of Re B_h for complex weights. Archive script, command, table, precision log, and report.",
+      "last_updated_round": 5,
+      "last_updated_at": "2026-07-02T23:47:54"
     },
     {
       "id": "Li-Yang-source-audit",
@@ -621,14 +643,20 @@
       "blockers": [
         "H4-source-audit",
         "M9-M2-denominator-paired-weighted-bound",
-        "M9-M2-fourth-moment-average-to-pointwise"
+        "M9-M2-fourth-moment-average-to-pointwise",
+        "M9-M2-fraction-matching-weighted-bound",
+        "M9-M2-local-fourth-moment-LFM"
       ],
       "evidence": {
         "positive": [
           "rounds/obligation-main/round_004/responses/A2-004.md",
-          "rounds/obligation-main/round_004/responses/A4-004.md"
+          "rounds/obligation-main/round_004/responses/A4-004.md",
+          "rounds/obligation-main/round_005/responses/A2-005.md",
+          "rounds/obligation-main/round_005/responses/A4-005.md"
         ],
-        "negative": [],
+        "negative": [
+          "rounds/obligation-main/round_005/reviews/A1.md"
+        ],
         "inconclusive": [
           "rounds/obligation-main/round_002/responses/A2-002.md",
           "rounds/obligation-main/round_002/reviews/A1.md",
@@ -643,9 +671,9 @@
         ]
       },
       "owner": "A2",
-      "next_action": "Record paired-core families as treated under assumptions, but prove or refute mixed and unclassified exact N=0 mass before promoting this obligation.",
-      "last_updated_round": 4,
-      "last_updated_at": "2026-06-30T00:14:43"
+      "next_action": "Do not promote from paired or fraction-matching subfamilies. Prove or refute mixed and unpaired exact N=0 mass before any status change.",
+      "last_updated_round": 5,
+      "last_updated_at": "2026-07-02T23:47:54"
     },
     {
       "id": "R5-Full-reconciliation",
@@ -746,7 +774,9 @@
       "implies": [
         "M9-M2"
       ],
-      "blockers": [],
+      "blockers": [
+        "M9-M2-reciprocal-SPD-route"
+      ],
       "evidence": {
         "positive": [],
         "negative": [],
@@ -755,13 +785,15 @@
           "rounds/obligation-main/round_003/responses/A2-003.md",
           "rounds/obligation-main/round_003/reviews/A1.md",
           "rounds/obligation-main/round_003/reviews/A3.md",
-          "rounds/obligation-main/round_003/judge/judge-003.md"
+          "rounds/obligation-main/round_003/judge/judge-003.md",
+          "rounds/obligation-main/round_005/responses/A4-005.md",
+          "rounds/obligation-main/round_005/responses/A3-005.md"
         ]
       },
       "owner": "A2",
-      "next_action": "Rewrite as a precise theorem with coefficient class, dyadic ranges, exact bilinear or spacing norm, named external theorem if used, and a fast falsification test comparing signed and unsigned statistics.",
-      "last_updated_round": 3,
-      "last_updated_at": "2026-06-29T21:35:33"
+      "next_action": "Recast as a precise sign-preserving discrepancy or spacing theorem. Require A3 signed-vs-unsigned evidence before allocating major proof effort.",
+      "last_updated_round": 5,
+      "last_updated_at": "2026-07-02T23:47:54"
     },
     {
       "id": "M9-M2-harmonic-convolution-LH",
@@ -816,7 +848,9 @@
         "positive": [
           "rounds/obligation-main/round_004/responses/A2-004.md",
           "rounds/obligation-main/round_004/responses/A4-004.md",
-          "rounds/obligation-main/round_004/reviews/A4.md"
+          "rounds/obligation-main/round_004/reviews/A4.md",
+          "rounds/obligation-main/round_005/responses/A2-005.md",
+          "rounds/obligation-main/round_005/reviews/A1.md"
         ],
         "negative": [],
         "inconclusive": [
@@ -825,9 +859,9 @@
         ]
       },
       "owner": "A2",
-      "next_action": "Write the pair-swapped and semi-diagonal proofs in proof-draft-ready form; keep mixed and unclassified exact N=0 classes open.",
-      "last_updated_round": 4,
-      "last_updated_at": "2026-06-30T00:14:43"
+      "next_action": "Keep paired-core families treated under H4, but do not use them to promote full exact N=0 taxonomy. Separate fraction-matching from official semi-diagonal terminology.",
+      "last_updated_round": 5,
+      "last_updated_at": "2026-07-02T23:47:54"
     },
     {
       "id": "M9-M2-fourth-moment-average-to-pointwise",
@@ -843,19 +877,25 @@
       "implies": [
         "M9-M2"
       ],
-      "blockers": [],
+      "blockers": [
+        "M9-M2-local-fourth-moment-LFM"
+      ],
       "evidence": {
-        "positive": [],
+        "positive": [
+          "rounds/obligation-main/round_005/responses/A4-005.md",
+          "rounds/obligation-main/round_005/reviews/A1.md"
+        ],
         "negative": [],
         "inconclusive": [
           "rounds/obligation-main/round_004/reviews/A4.md",
-          "rounds/obligation-main/round_004/judge/judge-004.md"
+          "rounds/obligation-main/round_004/judge/judge-004.md",
+          "rounds/obligation-main/round_005/responses/A1-005.md"
         ]
       },
       "owner": "A4",
-      "next_action": "Formulate an exact local-sup-from-average inequality for S_2(D;X), including derivative bounds, window length optimization, and endpoint D-uniformity.",
-      "last_updated_round": 4,
-      "last_updated_at": "2026-06-30T00:14:43"
+      "next_action": "Use the AP lemma only as an interpolation module. To advance this obligation, prove the everywhere-local fourth-moment estimate on windows delta=X^(1/2)/D, control the fattened band |N|<<D^5 X^(-1/2), handle exceptional windows, and split off the endpoint D=X^(1/2).",
+      "last_updated_round": 5,
+      "last_updated_at": "2026-07-02T23:47:54"
     },
     {
       "id": "M9-fourth-moment-enumeration",
@@ -887,13 +927,204 @@
           "rounds/obligation-main/round_004/responses/A3-004.md",
           "rounds/obligation-main/round_004/reviews/A1.md",
           "rounds/obligation-main/round_004/reviews/A4.md",
-          "rounds/obligation-main/round_004/judge/judge-004.md"
+          "rounds/obligation-main/round_004/judge/judge-004.md",
+          "rounds/obligation-main/round_005/responses/A3-005.md",
+          "rounds/obligation-main/round_005/reviews/A1.md"
         ]
       },
       "owner": "A3",
-      "next_action": "Produce a runnable artifact bundle with exact integer arithmetic for N, true Phi coefficients after H4, signed-vs-unsigned comparisons, and unclassified exact N=0 growth tables.",
-      "last_updated_round": 4,
-      "last_updated_at": "2026-06-30T00:14:43"
+      "next_action": "Materialize and run executable artifacts with exact integer arithmetic for N, official phases, true Phi after H4, raw/cosine/ReB_h formula tests, fraction-matching overlap tests, unpaired exact N=0 tables, local-window diagnostics, and signed-vs-unsigned comparisons.",
+      "last_updated_round": 5,
+      "last_updated_at": "2026-07-02T23:47:54"
+    },
+    {
+      "id": "M9-M2-average-to-pointwise-AP-lemma",
+      "type": "lemma",
+      "track": "M9_analytic",
+      "title": "Elementary local average-to-pointwise interpolation lemma",
+      "status": "proved_internal",
+      "statement_tex": "For F in C^1(I), |I|=delta, and X0 in I, |F(X0)|^4 <= delta^(-1) int_I |F|^4 + 4 sup_I |F'| delta^(1/4) (int_I |F|^4)^(3/4).",
+      "dependencies": [],
+      "implies": [
+        "M9-M2-fourth-moment-average-to-pointwise"
+      ],
+      "blockers": [],
+      "evidence": {
+        "positive": [
+          "rounds/obligation-main/round_005/responses/A4-005.md",
+          "rounds/obligation-main/round_005/reviews/A1.md"
+        ],
+        "negative": [],
+        "inconclusive": [
+          "rounds/obligation-main/round_005/judge/judge-005.md"
+        ]
+      },
+      "owner": "A4",
+      "next_action": "Insert the AP lemma into the lemma bank as a standalone calculus lemma; keep all S2 applications separate and conditional.",
+      "last_updated_round": 5,
+      "last_updated_at": "2026-07-02T23:47:54"
+    },
+    {
+      "id": "M9-M2-local-fourth-moment-LFM",
+      "type": "lemma",
+      "track": "M9_analytic",
+      "title": "Everywhere-local fourth-moment estimate for S2 on coherence windows",
+      "status": "open",
+      "statement_tex": "For active D and every interval I of length delta=X^(1/2)/D near X, prove delta^(-1) int_I |S_2(D;t)|^4 dt <<_epsilon X^(1+epsilon) with actual beta_h coefficients. The local expansion must control the fattened band |N| << D^5 X^(-1/2).",
+      "dependencies": [
+        "M9-M2-fourth-moment-expansion",
+        "M9-M2-average-to-pointwise-AP-lemma",
+        "M9-endpoint-uniformity"
+      ],
+      "implies": [
+        "M9-M2-fourth-moment-average-to-pointwise"
+      ],
+      "blockers": [
+        "M9-near-collision-estimate",
+        "M9-endpoint-uniformity"
+      ],
+      "evidence": {
+        "positive": [],
+        "negative": [],
+        "inconclusive": [
+          "rounds/obligation-main/round_005/responses/A4-005.md",
+          "rounds/obligation-main/round_005/reviews/A1.md",
+          "rounds/obligation-main/round_005/judge/judge-005.md"
+        ]
+      },
+      "owner": "A4",
+      "next_action": "State and attack a local fourth-moment estimate on every interval of length X^(1/2)/D; include the fattened resonance band, exceptional-window issue, and endpoint D=X^(1/2) subcase.",
+      "last_updated_round": 5,
+      "last_updated_at": "2026-07-02T23:47:54"
+    },
+    {
+      "id": "M9-M2-DP-near-collision-bound",
+      "type": "lemma",
+      "track": "M9_analytic",
+      "title": "Denominator-paired near-collision scoping bound",
+      "status": "derived_under_assumptions",
+      "statement_tex": "In the denominator-paired class d1=d2=a, d3=d4=b, N=ab L with L=(h1-h2)b+(h3-h4)a. Under the H4 beta support on odd h, nonzero L is even. Hence the thin band 0<|N|<=C0 D^4/X is empty unless D >= sqrt(2X/C0') up to dyadic constants; where nonempty its absolute beta-weighted mass is bounded by a harmonic-convolution estimate, and the full DP class is harmless at X^(1+epsilon) scale.",
+      "dependencies": [
+        "H4",
+        "M9-M2-beta-algebra",
+        "M9-M2-harmonic-convolution-LH",
+        "M9-M2-denominator-paired-weighted-bound"
+      ],
+      "implies": [
+        "M9-near-collision-estimate",
+        "M9-near-collision-taxonomy"
+      ],
+      "blockers": [
+        "H4-source-audit"
+      ],
+      "evidence": {
+        "positive": [
+          "rounds/obligation-main/round_005/responses/A4-005.md"
+        ],
+        "negative": [],
+        "inconclusive": [
+          "rounds/obligation-main/round_005/reviews/A1.md",
+          "rounds/obligation-main/round_005/judge/judge-005.md"
+        ]
+      },
+      "owner": "A4",
+      "next_action": "Write validator-ready dyadic proof with constants, parity support, t=0 and t!=0 cases, and exact dependence on C0; do not use it to promote full near-collision estimates.",
+      "last_updated_round": 5,
+      "last_updated_at": "2026-07-02T23:47:54"
+    },
+    {
+      "id": "M9-M2-coprime-rigidity-normal-form",
+      "type": "lemma",
+      "track": "M9_analytic",
+      "title": "Coprime-rigidity normal form for exact reciprocal resonances",
+      "status": "proved_internal",
+      "statement_tex": "After reducing h_i/d_i to lowest terms, exact N=0 reciprocal resonances can be organized by denominator identities and a corresponding linear numerator equation. This is a pure rational normal-form lemma for classifying exact N=0 configurations.",
+      "dependencies": [],
+      "implies": [
+        "M9-near-collision-taxonomy"
+      ],
+      "blockers": [],
+      "evidence": {
+        "positive": [
+          "rounds/obligation-main/round_005/responses/A4-005.md"
+        ],
+        "negative": [],
+        "inconclusive": [
+          "rounds/obligation-main/round_005/reviews/A1.md",
+          "rounds/obligation-main/round_005/judge/judge-005.md"
+        ]
+      },
+      "owner": "A4",
+      "next_action": "Write the normal form in proof-draft-ready notation and use it to define unpaired exact N=0 families.",
+      "last_updated_round": 5,
+      "last_updated_at": "2026-07-02T23:47:54"
+    },
+    {
+      "id": "M9-M2-fraction-matching-weighted-bound",
+      "type": "lemma",
+      "track": "M9_analytic",
+      "title": "Fraction-matching exact resonance bound",
+      "status": "derived_under_assumptions",
+      "statement_tex": "For the exact N=0 family h1/d1=h2/d2 and h3/d3=h4/d4, with d_i asymp D and 1<=|h_i|<=H_D, the absolute beta-weighted mass is <<_epsilon D^2 X^epsilon under the H4 beta magnitude hypothesis. This is a fraction-matching subfamily and should not be identified with the denominator-pattern semi-diagonal family until terminology is reconciled.",
+      "dependencies": [
+        "H4",
+        "M9-M2-beta-algebra",
+        "M9-M2-fourth-moment-expansion"
+      ],
+      "implies": [
+        "M9-near-collision-taxonomy"
+      ],
+      "blockers": [
+        "H4-source-audit"
+      ],
+      "evidence": {
+        "positive": [
+          "rounds/obligation-main/round_005/responses/A2-005.md",
+          "rounds/obligation-main/round_005/responses/A4-005.md",
+          "rounds/obligation-main/round_005/reviews/A1.md"
+        ],
+        "negative": [],
+        "inconclusive": [
+          "rounds/obligation-main/round_005/judge/judge-005.md"
+        ]
+      },
+      "owner": "A2",
+      "next_action": "Rename consistently as fraction-matching or fraction-collision; verify endpoint truncations and prevent accidental promotion of the official semi-diagonal denominator-pattern subcase.",
+      "last_updated_round": 5,
+      "last_updated_at": "2026-07-02T23:47:54"
+    },
+    {
+      "id": "M9-M2-reciprocal-SPD-route",
+      "type": "lemma",
+      "track": "M9_analytic",
+      "title": "Sign-preserving reciprocal discrepancy route for M2",
+      "status": "proposed",
+      "statement_tex": "A sign-preserving discrepancy or first-spacing theorem for smooth-weighted truncated sawtooth sums at reciprocal points theta_d=(X+rho d)/(4d), rho in {1,3}, strong enough to imply S_2(D;X)<<_epsilon X^(1/4+epsilon) uniformly over active D.",
+      "dependencies": [
+        "M9-M2-beta-algebra",
+        "M9-M2-character-factor",
+        "M9-endpoint-uniformity"
+      ],
+      "implies": [
+        "M9-M2-direct-signed-bilinear-lemma",
+        "M9-M2"
+      ],
+      "blockers": [
+        "H4-source-audit",
+        "Li-Yang-source-audit"
+      ],
+      "evidence": {
+        "positive": [],
+        "negative": [],
+        "inconclusive": [
+          "rounds/obligation-main/round_005/responses/A4-005.md",
+          "rounds/obligation-main/round_005/judge/judge-005.md"
+        ]
+      },
+      "owner": "A4",
+      "next_action": "State the exact spacing statistic P(D,H;X), run A3 signed-vs-unsigned and first-spacing diagnostics, and audit Li-Yang only as a source guardrail.",
+      "last_updated_round": 5,
+      "last_updated_at": "2026-07-02T23:47:54"
     }
   ],
   "rejected_claims": [
@@ -1084,6 +1315,51 @@
       "last_updated_round": 4,
       "evidence": [
         "rounds/obligation-main/round_004/judge/judge-004.md"
+      ]
+    },
+    {
+      "id": "A2-R5-continuous-L4-rational-orthogonality",
+      "reason": "Rejected because integral over alpha in [0,1] of e(alpha theta) does not vanish for arbitrary nonzero rational theta; the proposed continuous L4 identity does not exactly detect reciprocal exact resonance.",
+      "last_updated_at": "2026-07-02T23:47:54",
+      "last_updated_round": 5,
+      "evidence": [
+        "rounds/obligation-main/round_005/judge/judge-005.md"
+      ]
+    },
+    {
+      "id": "A2-R5-semi-diagonal-terminology-promotion",
+      "reason": "Rejected because A2's fraction-matching proof may not be the official denominator-pattern semi-diagonal family; it must be renamed or reconciled before being used as that subcase.",
+      "last_updated_at": "2026-07-02T23:47:54",
+      "last_updated_round": 5,
+      "evidence": [
+        "rounds/obligation-main/round_005/judge/judge-005.md"
+      ]
+    },
+    {
+      "id": "A2-R5-full-exact-N0-taxonomy-promotion",
+      "reason": "Rejected because paired and fraction-matching subfamilies do not exhaust exact N=0; unpaired and mixed classes remain open.",
+      "last_updated_at": "2026-07-02T23:47:54",
+      "last_updated_round": 5,
+      "evidence": [
+        "rounds/obligation-main/round_005/judge/judge-005.md"
+      ]
+    },
+    {
+      "id": "A3-R5-unexecuted-artifact-positive-evidence",
+      "reason": "Rejected because a code-and-command plan is not positive diagnostic evidence until files exist, compile, run, and produce tables, logs, and report output.",
+      "last_updated_at": "2026-07-02T23:47:54",
+      "last_updated_round": 5,
+      "evidence": [
+        "rounds/obligation-main/round_005/judge/judge-005.md"
+      ]
+    },
+    {
+      "id": "A4-R5-AP-implies-M9-M2",
+      "reason": "Rejected because Lemma AP only converts an everywhere-local fourth-moment hypothesis into a pointwise bound; it does not prove that local fourth-moment hypothesis.",
+      "last_updated_at": "2026-07-02T23:47:54",
+      "last_updated_round": 5,
+      "evidence": [
+        "rounds/obligation-main/round_005/judge/judge-005.md"
       ]
     }
   ]
