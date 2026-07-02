@@ -1,6 +1,6 @@
 # Reading Packet
 
-Generated after round 5 in run `obligation-main`.
+Generated after round 6 in run `obligation-main`.
 
 ## Current Theorem Target
 
@@ -28,9 +28,9 @@ Current blockers:
 - `M9-M2-character-factor` (open, owner `A2`): M2 frequency-side character factor
   Next action: Use the exact beta_h algebra and the h-Cauchy sign-loss diagnostic to pursue the M2 fourth-moment route first; keep CRI and direct signed bilinear estimates as secondary diagnostics.
 - `M9-near-collision-taxonomy` (open, owner `A2`): M2 fourth-moment near-collision taxonomy
-  Next action: Preserve mixed and unclassified exact N=0 classes. Reconcile semi-diagonal versus fraction-matching terminology, then prove or refute the unpaired exact N=0 mass bound.
+  Next action: Record fraction-matching versus official semi-diagonal terminology. Treat reduced-paired exact resonances under H4, then attack URES; do not promote full taxonomy until mixed and residual exact N=0 are bounded.
 - `M9-regression-raw-vs-paired` (diagnostic_only, owner `A3`): Raw-vs-paired numerical stress test for M9
-  Next action: Rerun after materialization with exact Vaaler Phi, official M1/M2 phases, raw two-sided formula, complex-weight cosine pairing, real-weight Re B_h formula, and explicit failure of Re B_h for complex weights. Archive script, command, table, precision log, and report.
+  Next action: Fix the complex-weight B_{-1} relation before running. Then execute the raw two-sided M2, complex-weight cosine pairing, real-weight Re B_h formula, and deliberate complex-weight Re B_h failure tests with exact Phi or explicitly marked surrogate Phi until H4 validates Phi.
 
 ## Do-Not-Claim Rules
 
@@ -60,7 +60,7 @@ Default target split:
 
 ## Last State Patch
 
-created: M9-M2-average-to-pointwise-AP-lemma, M9-M2-local-fourth-moment-LFM, M9-M2-DP-near-collision-bound, M9-M2-coprime-rigidity-normal-form, M9-M2-fraction-matching-weighted-bound, M9-M2-reciprocal-SPD-route; updated: M9-M2-fourth-moment-average-to-pointwise, M9-near-collision-estimate, M9-near-collision-taxonomy, M9-M2-paired-core-weighted-bound, M9-M2-N0-diagonal-core-bound, M9-fourth-moment-enumeration, M9-regression-raw-vs-paired, H4-source-audit, M9-M2-direct-signed-bilinear-lemma, M9-M2, M9-endpoint-uniformity; rejected: A2-R5-continuous-L4-rational-orthogonality, A2-R5-semi-diagonal-terminology-promotion, A2-R5-full-exact-N0-taxonomy-promotion, A3-R5-unexecuted-artifact-positive-evidence, A4-R5-AP-implies-M9-M2; no_change: M9, M9-M1, GC-target, Conditional-bridge, R5-Full, H4, Li-Yang-source-audit; round score: 5; Round 5 adds a valid elementary AP interpolation lemma, sharpens the average-to-pointwise obstruction, scopes denominator-paired near-collisions, and isolates fraction-matching as a separate subfamily. It does not prove M9, M9-M2, M9-M1, the full exact N=0 taxonomy, or the final Gauss circle target.
+created: H4-Phi-regularity, M9-M2-local-fourth-moment-kernel, M9-M2-LFM-endpoint-degeneracy, M9-M2-subcoherence-window-multiplier, M9-M2-LFM-pointwise-equivalence, M9-M2-NF-participation-rigidity, M9-M2-unpaired-reduced-paired-bound, M9-M2-unpaired-residual-URES, M9-M2-sign-preserving-poisson-voronoi-route; updated: H4-source-audit, M9-M2-DP-near-collision-bound, M9-M2-coprime-rigidity-normal-form, M9-M2-local-fourth-moment-LFM, M9-M2-fourth-moment-average-to-pointwise, M9-near-collision-taxonomy, M9-near-collision-estimate, M9-fourth-moment-enumeration, M9-regression-raw-vs-paired, M9-M2-reciprocal-SPD-route, M9-M2-beta-algebra; rejected: A2-R6-unpaired-exact-N0-mass-bound-derived, A2-R6-cleared-phase-non-separability-route-closing, A2-R6-poisson-voronoi-as-proof-evidence, A3-R6-unexecuted-artifact-positive-evidence, A3-R6-unclassified-mass-pass-fail; no_change: M9, M9-M1, M9-M2, GC-target, Conditional-bridge, H4, R5-Full, Li-Yang-source-audit, M9-M2-character-factor; round score: 4; Round 6 makes modest proof-graph-safe progress by adding the local kernel, the whole-range subcoherence obstruction with endpoint degeneration as a corollary, a validator-ready DP update, NF-2 rigidity, reduced-paired exact-resonance control under H4, and a precise URES residual target. It does not prove M9, M9-M2, M9-M1, the full taxonomy, near-collision estimates, or the final target.
 
 ## Active Obligation Briefs
 
@@ -76,15 +76,15 @@ created: M9-M2-average-to-pointwise-AP-lemma, M9-M2-local-fourth-moment-LFM, M9-
 - Status: `open`
 - Track: `M9_analytic`
 - Owner: `A2`
-- Blockers: `M9-near-collision-estimate`, `M9-M2-N0-diagonal-core-bound`, `M9-M2-denominator-paired-weighted-bound`, `M9-M2-fourth-moment-average-to-pointwise`, `M9-M2-local-fourth-moment-LFM`
-- Next action: Preserve mixed and unclassified exact N=0 classes. Reconcile semi-diagonal versus fraction-matching terminology, then prove or refute the unpaired exact N=0 mass bound.
+- Blockers: `M9-near-collision-estimate`, `M9-M2-N0-diagonal-core-bound`, `M9-M2-denominator-paired-weighted-bound`, `M9-M2-fourth-moment-average-to-pointwise`, `M9-M2-local-fourth-moment-LFM`, `M9-M2-unpaired-residual-URES`, `M9-M2-unpaired-reduced-paired-bound`, `M9-M2-NF-participation-rigidity`
+- Next action: Record fraction-matching versus official semi-diagonal terminology. Treat reduced-paired exact resonances under H4, then attack URES; do not promote full taxonomy until mixed and residual exact N=0 are bounded.
 
 ### M9-regression-raw-vs-paired: Raw-vs-paired numerical stress test for M9
 
 - Status: `diagnostic_only`
 - Track: `computation`
 - Owner: `A3`
-- Next action: Rerun after materialization with exact Vaaler Phi, official M1/M2 phases, raw two-sided formula, complex-weight cosine pairing, real-weight Re B_h formula, and explicit failure of Re B_h for complex weights. Archive script, command, table, precision log, and report.
+- Next action: Fix the complex-weight B_{-1} relation before running. Then execute the raw two-sided M2, complex-weight cosine pairing, real-weight Re B_h formula, and deliberate complex-weight Re B_h failure tests with exact Phi or explicitly marked surrogate Phi until H4 validates Phi.
 
 ### GC-target: Gauss circle conjectural exponent target
 
@@ -107,7 +107,7 @@ created: M9-M2-average-to-pointwise-AP-lemma, M9-M2-local-fourth-moment-LFM, M9-
 - Status: `source_audit_required`
 - Track: `source_audit`
 - Owner: `A1`
-- Next action: Commit sources/vaaler_1985.md with bibliographic data, local PDF path, Theorem 6 equation (2.28), Section 7 equations (7.1)-(7.3), Theorem 18 equations (7.13)-(7.17), coefficient sign, Fejer normalization, residual constant, floor-compatible endpoint convention, and the Phi regularity or Lipschitz fact needed for freezing H_D.
+- Next action: Commit sources/vaaler_1985.md with bibliographic data, DOI 10.1090/S0273-0979-1985-15349-2, local PDF path, Theorem 6 equation (2.28), Section 7 equations (7.1)-(7.3), Theorem 18 equations (7.13)-(7.17), coefficient sign, Fejer normalization, residual constant, floor-compatible endpoint convention, Phi regularity, and the M2 single-parity support check.
 
 ### Li-Yang-source-audit: Li-Yang theorem and rendered-PDF audit
 
@@ -161,16 +161,16 @@ created: M9-M2-average-to-pointwise-AP-lemma, M9-M2-local-fourth-moment-LFM, M9-
 - Status: `open`
 - Track: `M9_analytic`
 - Owner: `A4`
-- Blockers: `M9-M2-local-fourth-moment-LFM`
-- Next action: Use the AP lemma only as an interpolation module. To advance this obligation, prove the everywhere-local fourth-moment estimate on windows delta=X^(1/2)/D, control the fattened band |N|<<D^5 X^(-1/2), handle exceptional windows, and split off the endpoint D=X^(1/2).
+- Blockers: `M9-M2-local-fourth-moment-LFM`, `M9-M2-subcoherence-window-multiplier`, `M9-M2-LFM-pointwise-equivalence`
+- Next action: Keep AP as a calculus interpolation module. Re-scope average-to-pointwise around subcoherence: local windows give no power saving, so pursue either global moment plus large-value propagation away from endpoint or direct signed endpoint control.
 
 ### M9-M2-local-fourth-moment-LFM: Everywhere-local fourth-moment estimate for S2 on coherence windows
 
 - Status: `open`
 - Track: `M9_analytic`
 - Owner: `A4`
-- Blockers: `M9-near-collision-estimate`, `M9-endpoint-uniformity`
-- Next action: State and attack a local fourth-moment estimate on every interval of length X^(1/2)/D; include the fattened resonance band, exceptional-window issue, and endpoint D=X^(1/2) subcase.
+- Blockers: `M9-near-collision-estimate`, `M9-endpoint-uniformity`, `M9-M2-local-fourth-moment-kernel`, `M9-M2-subcoherence-window-multiplier`, `M9-M2-LFM-pointwise-equivalence`
+- Next action: Do not treat coherence-window LFM as a relaxed average route. Any proof must provide full h,d-space cancellation, replace LFM by global moment plus large-value propagation, or split off endpoint blocks with a direct signed estimate.
 
 ### M9-M2-reciprocal-SPD-route: Sign-preserving reciprocal discrepancy route for M2
 
@@ -178,7 +178,22 @@ created: M9-M2-average-to-pointwise-AP-lemma, M9-M2-local-fourth-moment-LFM, M9-
 - Track: `M9_analytic`
 - Owner: `A4`
 - Blockers: `H4-source-audit`, `Li-Yang-source-audit`
-- Next action: State the exact spacing statistic P(D,H;X), run A3 signed-vs-unsigned and first-spacing diagnostics, and audit Li-Yang only as a source guardrail.
+- Next action: State the exact sign-preserving spacing theorem required for theta_d=X/(4d), define P(D,H;X), and require A3 to compare true beta signs with unsigned, random, and adversarial signs before further proof investment.
+
+### M9-M2-sign-preserving-poisson-voronoi-route: Sign-preserving Poisson or B-process route for M2
+
+- Status: `proposed`
+- Track: `M9_analytic`
+- Owner: `A2`
+- Blockers: `H4-source-audit`, `Li-Yang-source-audit`
+- Next action: State exact stationary phase, boundary terms, k=0 terms, dual m-range m asymp hX/D^2, amplitudes, and the first sign-preserving post-transform estimate; keep as proposed until then.
+
+### M9-M2-unpaired-residual-URES: URES residual exact-resonance bound
+
+- Status: `open`
+- Track: `M9_analytic`
+- Owner: `A2`
+- Next action: Use NF-2 to prove the R(r)^2 bound or produce a lower-bound family exceeding the D^2 X^epsilon budget. A3 should enumerate this residual first.
 
 ### M9-endpoint-uniformity: Endpoint uniformity over active dyadic D
 
@@ -192,7 +207,7 @@ created: M9-M2-average-to-pointwise-AP-lemma, M9-M2-local-fourth-moment-LFM, M9-
 - Status: `proposed`
 - Track: `M9_analytic`
 - Owner: `A2`
-- Next action: Treat denominator-paired near-collisions as scoped by M9-M2-DP-near-collision-bound after proof-draft verification. Shift the main analytic target to unpaired-denominator near-collisions with exact beta weights.
+- Next action: Recast as a graded global estimate: prove or refute Sigma_abs(0<|N|<=M) <<_epsilon D^2 max(1, M X/D^4) X^epsilon for all relevant M, with signed variants separately marked. Do not infer this from DP or exact N=0 subfamilies.
 
 ### Conditional-bridge: Conditional bridge from accepted reductions to the target
 
@@ -201,19 +216,3 @@ created: M9-M2-average-to-pointwise-AP-lemma, M9-M2-local-fourth-moment-LFM, M9-
 - Owner: `A1`
 - Blockers: `M9`, `H4-source-audit`
 - Next action: Maintain the bridge in the proof draft, but do not promote the final theorem while M9 remains open.
-
-### M9-M2-DP-near-collision-bound: Denominator-paired near-collision scoping bound
-
-- Status: `derived_under_assumptions`
-- Track: `M9_analytic`
-- Owner: `A4`
-- Blockers: `H4-source-audit`
-- Next action: Write validator-ready dyadic proof with constants, parity support, t=0 and t!=0 cases, and exact dependence on C0; do not use it to promote full near-collision estimates.
-
-### M9-M2-beta-algebra: Exact beta_h coefficient algebra for M2
-
-- Status: `derived_under_assumptions`
-- Track: `M9_analytic`
-- Owner: `A1`
-- Blockers: `H4-source-audit`
-- Next action: Insert beta_h algebra, raw two-sided formula, real-weight paired formula, and complex-weight cosine pairing into best_proof_draft.md after H4 source-card update.

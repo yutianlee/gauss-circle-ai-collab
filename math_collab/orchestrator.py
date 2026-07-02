@@ -1402,7 +1402,7 @@ def run_round(
 
     round_dir = root / "rounds" / run_id / round_name(round_index)
     handoff_dir = root / "handoff" / run_id / round_name(round_index)
-    responses: dict[str, str] = {}
+    reasoning_prompts: dict[str, str] = {}
 
     for agent in agents:
         prompt = build_reasoning_prompt(
@@ -1415,6 +1415,20 @@ def run_round(
             judge_task=judge_tasks.get(agent.id, ""),
             round_index=round_index,
         )
+        reasoning_prompts[agent.id] = prompt
+        write_text(
+            round_dir / "prompts" / prompt_filename(agent.id, "reasoning", round_index),
+            prompt,
+        )
+        if agent.provider == "web_manual":
+            handoff_response_path = handoff_dir / "responses" / f"{agent.id}.md"
+            if not handoff_response_path.exists():
+                write_text(handoff_response_path, WEB_RESPONSE_MARKER + "\n\n")
+
+    responses: dict[str, str] = {}
+
+    for agent in agents:
+        prompt = reasoning_prompts[agent.id]
         output = run_agent(
             agent=agent,
             prompt=prompt,
