@@ -1,197 +1,125 @@
 # Next Round Prompts
 
-Generated after round 7 in run `obligation-main`.
+Generated after round 8 in run `obligation-main`.
 
-Source judge synthesis: `rounds/obligation-main/round_007/judge/judge-007.md`.
+Source judge synthesis: `rounds/obligation-main/round_008/judge/judge-008.md`.
 
 ## For A1
 
-Target obligations: `H4-source-audit`, `M9-M2-exact-N0-total-mass`, `M9-M2-URES-representation-divisor-bound`, `M9-M2-URES-energy-reduction`, `M9-M2-unpaired-residual-URES`, `M9-near-collision-estimate`, proof-draft maintenance.
+Primary objectives:
 
-Objectives:
+1. Write the Round 9 proof-draft update reflecting the route bifurcation:
+   - exact $N=0$ arm remains conditionally closed under H4;
+   - absolute near-collision estimates are refuted for $D>X^{3/8+\delta}$ in the fat band;
+   - absolute/structured estimates remain only a lower-range or class-restricted subroute;
+   - signed $c_\chi$ becomes the upper-range primary target.
 
-1. Insert the Round 7 exact-resonance suite into `state/best_proof_draft.md` and the lemma bank:
-   - `Divisor-bound-elementary`;
-   - `M9-M2-URES-representation-divisor-bound`;
-   - `M9-M2-URES-energy-reduction`;
-   - `M9-M2-exact-N0-total-mass`;
-   - updated NF/DP/OB statements.
+2. Complete `H4-source-audit` if possible. The source card must include Vaaler 1985 metadata, local PDF path, Theorem 6 equation (2.28), Section 7 equations (7.1)-(7.3), Theorem 18 equations (7.13)-(7.17), coefficient sign, Fejer normalization, residual constant, endpoint convention, $\Phi$ regularity, beta lower envelope, and M2 parity support.
 
-2. Reconcile the exact definition of \(R(r)\) with the Round 6 state:
-   - ordered versus unordered pairs;
-   - signed versus absolute weights;
-   - reduced-fraction support;
-   - dyadic lift convention \(h=gp,d=gq\);
-   - parity restriction from beta support.
+3. Formalize the pointwise upgrade gap:
+   - restate A1's derivative obstruction;
+   - define the exact large-value theorem needed after a signed global moment;
+   - specify separated points, threshold $V$, active $D$, and what bound would imply $V\ll X^{1/4+\epsilon}$.
 
-3. Write the short divisor-bound proof explicitly.
+4. Audit the State Patch after validation. If `M9-M2-interval-URES-strip-count` is accepted, insert it as a scoped arithmetic lemma, not as a near-collision theorem.
 
-4. Keep all actual beta-weighted exact-resonance conclusions blocked by `H4-source-audit`.
-
-5. Finalize `sources/vaaler_1985.md` with:
-   - DOI;
-   - local PDF path;
-   - Theorem 6 equation (2.28);
-   - Section 7 equations (7.1)--(7.3);
-   - Theorem 18 equations (7.13)--(7.17);
-   - coefficient sign;
-   - Fejer normalization;
-   - residual constant;
-   - floor-compatible endpoint convention;
-   - \(\Phi\) regularity;
-   - M2 single-parity support.
-
-6. State the next near-collision theorem in proof-draft-ready form:
-$$
-\Sigma_{\mathrm{abs}}(0<|N|\le M)
-\ll_\epsilon
-D^2\max(1,MX/D^4)X^\epsilon,
-$$
-or explain why this absolute version should be replaced by a signed variant.
-
-7. Do not promote `M9`, `M9-M1`, `M9-M2`, `M9-near-collision-estimate`, `M9-endpoint-uniformity`, `GC-target`, or `H4`.
-
-Exploratory allocation: write a one-page route map comparing the graded near-collision/global-moment route against the sign-preserving Poisson/SPD endpoint route.
+Exploratory allocation: formulate one signed large-sieve or spacing theorem that would imply the $c_\chi$ bound, with an immediate falsification test.
 
 ## For A2
 
-Target obligations: `M9-near-collision-estimate`, `M9-M2-GM4-from-exact-plus-graded`, `M9-M2-sign-preserving-poisson-voronoi-route`, `M9-M2-endpoint-algebraic-phase`.
+Primary objectives:
 
-Objectives:
+1. Audit A4's lower-bound families in proof-detail:
+   - UNC large-$M$ family;
+   - TS twin-shift family;
+   - W-1 window/pigeonhole lower bound;
+   - parity, dyadic support, $N\ne0$, $1\le |h_i|\le H_D$, beta lower envelope, and exact $M,D,X$ ranges.
 
-1. Retract or repair the Round 7 URES obstruction:
-   - explicitly include \(q_1\le2D\);
-   - identify where the \(D^4\) or \(D^6\) inflation entered;
-   - state the corrected divisor-sum estimate.
+2. Replace the A2 heuristic absolute-mass obstruction with the W-1 proof. Do not label any heuristic uniform-distribution argument as `proved_internal`.
 
-2. Attack the interval analogue of URES-D. Replace exact equality by
-$$
-\left|
-\frac{p_1}{q_1}+\frac{p_3}{q_3}-\frac{\mu}{Q}
-\right|
-\le \eta.
-$$
-Derive the resulting inequality after multiplying denominators and identify the divisor/lattice-count theorem needed.
+3. Audit the interval URES count:
+   - verify the integer-defect convention;
+   - verify nondegenerate $uv\ne0$ divisor count;
+   - verify the degenerate $uv=0$ branch;
+   - decide how the degenerate branch maps into paired or participation-degenerate fourth-moment classes.
 
-3. Determine whether the graded estimate
-$$
-\Sigma_{\mathrm{abs}}(0<|N|\le M)
-\ll_\epsilon
-D^2\max(1,MX/D^4)X^\epsilon
-$$
-is plausible for URES-type residual classes.
+4. Work on `M9-M2-signed-fat-band-constant`:
+   - define $c_\chi(D;X)$ precisely;
+   - state the required signed bound;
+   - identify whether B-1 signed lift cancellation is strong enough, or what additional cancellation is needed.
 
-4. Restate the Poisson/B-process route as a smooth-weight theorem:
-   - exact Fourier convention;
-   - stationary point;
-   - phase;
-   - amplitude;
-   - \(m\asymp hX/D^2\);
-   - boundary terms;
-   - \(k=0\) terms;
-   - support-edge stationary points;
-   - signed post-transform estimate required.
-
-5. Keep `M9-M2-endpoint-algebraic-phase` as an identity only. Do not use it to imply endpoint uniformity.
-
-Exploratory allocation: compare the sign-preserving endpoint route with the graded near-collision route and state one falsification test for each.
+Exploratory allocation: keep Poisson/B-process only as a backup. Supply a full theorem-shaped stationary-phase statement if pursuing it; otherwise do not promote it.
 
 ## For A3
 
-Target obligations: `M9-fourth-moment-enumeration`, `M9-regression-raw-vs-paired`, `M9-M2-reciprocal-SPD-route` diagnostics.
+Primary objectives:
 
-Objectives:
-
-1. Materialize executable diagnostics. The first line of the report must include:
-   - command line;
-   - Python version;
-   - dependency versions;
+1. Execute diagnostics, not just specify them. Required artifacts:
+   - script path;
+   - `python -m py_compile` log;
+   - exact command;
+   - Python/package versions;
    - precision settings;
    - exact dyadic convention;
-   - H4 coefficient status.
+   - output tables;
+   - `report.md`;
+   - pass/fail assertions.
 
-2. Require `python -m py_compile` to pass before running.
+2. Prioritize diagnostics that match the new $X^{3/8}$ split:
+   - compute $\Sigma_{\mathrm{abs}}(0<|N|\le D^4/X)/D^2$ for $D=X^\delta$ around $\delta=3/8$;
+   - compare with W-1 lower-bound prediction $D^4X^{-3/4}$;
+   - test UNC and TS formula families separately.
 
-3. Use exact rational arithmetic for \(N\), \(\lambda\), and URES factorization checks whenever exactness is claimed.
+3. Compute signed objects:
+   - $c_\chi(D;X)$;
+   - unsigned analogue;
+   - random-sign analogue;
+   - adversarial-sign analogue;
+   - endpoint $D\asymp X^{1/2}$ sign ratios.
 
-4. Standardize dyadic convention across all diagnostics, preferably \(d\in[D,2D)\), and state it in every table.
+4. Fix formula regressions:
+   - cosine pairing may hold for shared complex $d$-weights;
+   - $\operatorname{Re}B_h$ shortcut should fail for complex weights;
+   - exact integer arithmetic must be used for $N$ and rational identities.
 
-5. Correct the complex-weight regression:
-   - raw two-sided formula;
-   - complex-weight cosine pairing;
-   - real-weight \(\operatorname{Re}B_h\) formula;
-   - deliberate failure using genuinely complex \(d\)-weights or asymmetric \(h\)-weights.
-
-6. Run URES-D tests:
-   - random exact-resonance identities;
-   - injectivity recovery of \(q_1,q_3\);
-   - \(R(r)^2/D^2\) concentration for increasing toy ranges;
-   - include the \((6,10,15,5)k\) family.
-
-7. Run DP thin-band tests:
-$$
-0<|N|\le C_0D^4/X.
-$$
-
-8. Run endpoint sign diagnostics:
-   - true beta;
-   - unsigned beta;
-   - random signs;
-   - adversarial signs.
-
-9. Archive script, command, tables, precision log, report, and pass/fail assertions. Keep all output `diagnostic_only`.
-
-Exploratory allocation: one smooth-weight Poisson numerical sanity check near \(D\asymp X^{1/2}\), but only after the exact formula-regression bundle is complete.
+Exploratory allocation: implement U-3$\eta$ strip enumeration, including the degenerate branch, to compare empirical counts with $X^\epsilon(1+\eta QD^2)+\Delta$.
 
 ## For A4
 
-Target obligations: `M9-near-collision-estimate`, `M9-M2-URES-representation-divisor-bound`, `M9-M2-exact-N0-total-mass`, `M9-M2-unpaired-residual-URES`.
+Primary objectives:
 
-Objectives:
+1. Formalize `M9-M2-signed-fat-band-constant` in lemma-bank style:
+   - define the smoothed global fourth moment;
+   - define signed pair weights;
+   - define $c_\chi(D;X)$;
+   - state all frozen-coefficient and smooth-weight hypotheses;
+   - isolate diagonal/exact $N=0$ and off-diagonal contributions.
 
-1. Transcribe the URES-D proof in lemma-bank form:
-   - exact factorization;
-   - injectivity;
-   - divisor-bound count;
-   - zero/nonzero numerator cases;
-   - reducedness constraints;
-   - dyadic denominator constraints.
+2. Expand B-1:
+   - state exact assumptions on $\Phi$, $w_D$, parity, and endpoint support;
+   - prove the signed lift bound with constants and error terms;
+   - state clearly whether it is enough for $c_\chi$ or only a first saving.
 
-2. Verify the lift-weight summation for actual beta magnitudes:
-$$
-\sum_{gq\in[D,2D)}|\beta_{gp,H_D}|
-\ll_\epsilon \frac{X^\epsilon}{|p|}.
-$$
+3. Separate lower-bound families:
+   - write UNC, TS, and W-1 as standalone obstruction lemmas;
+   - specify which one refutes large-$M$ GNC and which one refutes the fat band;
+   - include exact ranges and beta lower-envelope dependencies.
 
-3. Extend URES-D to a short-interval inequality if possible. Starting from
-$$
-\left|
-\frac{p_1}{q_1}+\frac{p_3}{q_3}-\frac{\mu}{Q}
-\right|
-\le \eta,
-$$
-derive the corresponding near-factorization or lattice-strip condition.
+4. If time remains, attempt the lower-range absolute upper half:
+   - for $D\le X^{3/8}$, decide whether U-3$\eta$ plus lift bookkeeping can prove a restricted absolute estimate;
+   - isolate any class where the bound fails.
 
-4. Identify the first obstruction to proving
-$$
-\Sigma_{\mathrm{abs}}(0<|N|\le M)
-\ll_\epsilon
-D^2\max(1,MX/D^4)X^\epsilon.
-$$
-
-5. If the absolute near-collision estimate fails, construct a concrete lower-bound family with beta-weighted mass above budget. If it does not fail, propose the next exact divisor/lattice lemma.
-
-6. Keep all exact \(N=0\) claims conditional on H4 when actual beta weights are used.
-
-Exploratory allocation: formulate a signed variant of the near-collision estimate only after the absolute interval analogue has a clear obstruction.
+Exploratory allocation: examine whether the sign-preserving Poisson route and $c_\chi$ route are actually the same dual obstruction in different variables.
 
 ## Round Assessment
 
+Agent scores:
+
 | Agent | Idea quality | State evidence | Calibration | Assessment |
 |---|---:|---:|---:|---|
-| A1 | 8.4 | 7.3 | 9.0 | Strong source-discipline, beta algebra, R5/LFM route filtering, and accurate no-promotion stance. The main value is synthesis and proof-draft maintenance rather than a new analytic lemma. |
-| A2 | 7.1 | 4.2 | 6.2 | Useful Poisson and endpoint-coordinate structure, but the URES obstruction is rejected and several Poisson/boundary claims were over-statused. |
-| A3 | 7.1 | 2.5 | 7.4 | Good diagnostic design and some useful formula-audit instincts, but no accepted execution evidence; code/regression design must be repaired. |
-| A4 | 9.6 | 9.0 | 8.8 | Strongest Round 7 contributor. The URES divisor factorization and exact \(N=0\) mass closure are proof-graph-safe under H4, with good scope discipline. |
+| A1 | 8.5 | 7.0 | 8.5 | Strong normalization and derivative-propagation obstruction; correctly rejected full-range GNC. The low-band target needed the W-1 correction and must now be $D$-restricted or signed. |
+| A2 | 7.5 | 4.0 | 5.5 | Useful obstruction pressure and Poisson exploration, but over-promoted heuristic and transform claims. Needs to replace heuristics with A4's explicit lower-bound proof. |
+| A3 | 7.0 | 2.5 | 7.5 | Good diagnostic design and formula-awareness, but no executed evidence yet. Must run code and target the new $X^{3/8}$ split. |
+| A4 | 9.5 | 8.5 | 8.5 | Round's strongest contribution: U-3$\eta$ strip count, W-1 fat-band refutation, signed lift direction, and $c_\chi$ target. H4 dependencies and signed-bound gaps remain. |
 
-Overall Round 7 assessment: substantial exact-resonance progress, no endpoint theorem. The state may gain conditional exact \(N=0\) closure, but not `M9-M2`, `M9`, or the final Gauss circle bound.
+State evidence is substantial for arithmetic infrastructure and obstruction, but not for endpoint estimates. The `mathematical_progress_score` is kept at 6 because the round narrows the proof graph and rejects a false route but does not prove `M9-M2`.
