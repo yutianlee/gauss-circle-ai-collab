@@ -1,0 +1,49 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 22,
+    "round_type": "endpoint_boundary_cauchy_reduction",
+    "campaign_id": "m9-m1-endpoint-boundary-cauchy",
+    "title": "Collapse the first endpoint boundary operator by finite Cauchy algebra",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "conductor_policy": {
+      "strategy_owner": "Codex conductor",
+      "subagents_may_start_next_round": false,
+      "monitoring": "Freeze M=1; keep finite contours, artificial-pole cancellation, physical endpoints, profiles, characters, and all outside residues explicit.",
+      "round_close": "Close after blind Cauchy algebra, arithmetic boundary attack, hostile sign/scope review, and graph adjudication."
+    },
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 95,
+      "numerical_experimental_maximum_percent": 5,
+      "numerical_purpose": ["bounded falsification of residue or phase identities"],
+      "literature_policy": "Primary sources only after exact reduction to a recognized finite boundary sum."
+    },
+    "target_obligations": [
+      "M9-M1-endpoint-boundary-operator",
+      "M9-M1-renormalized-radial-boundary-operator",
+      "M9-M1-post-FE-vector-kernel",
+      "M9-M1-maximal-angular-sign-kernel"
+    ],
+    "tasks": [
+      {"id":"blind_M1_boundary_cauchy","role":"statement_only_cauchy_deriver","brief":"rounds/codex-managed/m9-m1-endpoint-boundary-cauchy/briefs/blind_M1_boundary_cauchy.md"},
+      {"id":"endpoint_boundary_arithmetic_attack","role":"boundary_arithmetic_attacker","brief":"rounds/codex-managed/m9-m1-endpoint-boundary-cauchy/briefs/endpoint_boundary_arithmetic_attack.md"},
+      {"id":"boundary_cauchy_hostile_audit","role":"hostile_residue_and_scope_reviewer","brief":"rounds/codex-managed/m9-m1-endpoint-boundary-cauchy/briefs/boundary_cauchy_hostile_audit.md"}
+    ],
+    "exit_gates": ["finite Cauchy reduction","pole/orientation ledger","two endpoint formulas","accepted-boundary comparison","estimate or no-go","conductor decision"],
+    "promotion_policy": "Promote only exact finite Cauchy identities and independently checked endpoint estimates; no infinite-height shortcut.",
+    "closing_assessment": {
+      "decision": "promote_finite_cauchy_and_lower_endpoint_retain_dephased_prefix",
+      "graph_mutation": true,
+      "main_result": "Finite M=1 Cauchy algebra returns the endpoint operator to an original-sector prefix. The lower endpoint is target-safe; the upper endpoint is a full dephased GAR coefficient whose absolute capacity gives only physical X^(3/8), so a chi4-sensitive q-BV estimate remains open."
+    },
+    "next_round": 23
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "40992c2c6154dc1ced384f8a0ebecc8bbf02e8ec502e94d55d7a6cd617880309",
+    "generated_at": "2026-08-12T21:05:00+08:00"
+  },
+  "artifact_policy": {"subagents_may_edit_shared_state":false,"computation_evidence_level":"diagnostic_only","coordinator_owns_synthesis_and_state_patch":true}
+}

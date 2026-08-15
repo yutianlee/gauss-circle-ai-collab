@@ -1,0 +1,282 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-beta-finite-two-axis-product-Cauchy-Green",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Finite two-axis beta product Cauchy--Green identity",
+        "status": "proved_internal",
+        "statement_tex": "Let Theta_beta=psi(t-(mu+nu)/2) multiply a separately meromorphic density Q on a finite product of u- and v-rectangles, with no boundary pole and with all crossed collisions treated by a common combined residue. If F_j is the final vertical plus upper-minus-lower horizontals, P_j is the coordinate-axis residue, and A_j is positive area integration, then the two sequential transfers in either order equal F_uF_v[Theta_beta Q]+F_uP_v[Theta_beta Q]+P_uF_v[Theta_beta Q]+P_uP_v[Theta_beta Q]+(1/2)F_uA_v[psi'Q]+(1/2)P_uA_v[psi'Q]+(1/2)A_uF_v[psi'Q]+(1/2)A_uP_v[psi'Q]+(1/4)A_uA_v[psi''Q]. Expanding the F_j gives sixteen strata: every boundary product, both pure axis families, both connector-boundary families, both connector-axis families, one positive mixed psi''/4 product-area term, and one joint corner. The u-then-v and v-then-u formulas agree by finite Fubini and common iterated residues. This is finite algebra and gives no estimate or limit interchange.",
+        "dependencies": [
+          "M9-M1-beta-finite-axis-mask-connector-identity",
+          "M9-M1-finite-vector-Hankel-identity"
+        ],
+        "implies": [
+          "M9-M1-beta-finite-prelimit-axial-vector-ledger"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-complete-axial-connector-ledger/reports/blind_two_axis_connector_identity.md",
+            "rounds/codex-managed/m9-m1-beta-complete-axial-connector-ledger/reports/actual_axial_connector_ledger_attack.md",
+            "rounds/codex-managed/m9-m1-beta-complete-axial-connector-ledger/reports/two_axis_connector_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-complete-axial-connector-ledger/reviews/conductor_operator_tensor_calculus.md",
+            "rounds/codex-managed/m9-m1-beta-complete-axial-connector-ledger/reviews/conductor_mixed_connector_sign.md",
+            "rounds/codex-managed/m9-m1-beta-complete-axial-connector-ledger/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use only on fixed finite product rectangles with every face, connector, residue, and collision retained; do not infer commutation with physical or nested limits."
+      },
+      {
+        "id": "M9-M1-beta-finite-prelimit-axial-vector-ledger",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Actual finite pre-limit beta axial vector ledger",
+        "status": "proved_internal",
+        "statement_tex": "At fixed finite U,V,S, apply the complete sixteen-stratum beta product Cauchy--Green transfer stratumwise to the actual M1 terminal density, both renormalized radial sides, the finite arithmetic density, and every endpoint, artificial, or arithmetic stratum not removed by an exact finite identity. All W_j, phi, D_j, H_j floors, stars, chi_4, h,q,m factors and the external -(4/pi)X^(1/4) Re(e(1/8) dot) normalization remain attached. Applying the common transfer to G,E1,R1 preserves G-E1-R1=0 on every stratum; axial/artificial/arithmetic collisions use one combined iterated or derivative residue. The two transfer orders agree. This defines a finite algebraic complement, not a post-physical-limit endpoint-free operator.",
+        "dependencies": [
+          "M9-M1-beta-finite-two-axis-product-Cauchy-Green",
+          "M9-M1-beta-global-three-mask-endpoint-recombination",
+          "M9-M1-beta-local-common-ownership-zero-defect",
+          "M9-M1-radial-endpoint-subtraction-identity"
+        ],
+        "implies": [
+          "M9-M1-beta-axial-transfer-module-limit-commutation"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-complete-axial-connector-ledger/reports/actual_axial_connector_ledger_attack.md",
+            "rounds/codex-managed/m9-m1-beta-complete-axial-connector-ledger/reports/two_axis_connector_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-complete-axial-connector-ledger/reviews/conductor_actual_stratum_schema.md",
+            "rounds/codex-managed/m9-m1-beta-complete-axial-connector-ledger/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-complete-axial-connector-ledger/reports/blind_two_axis_connector_identity.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use this full pre-limit ledger as the common antecedent for separate radial-side and physical endpoint/arithmetic limit-commutation lemmas."
+      },
+      {
+        "id": "M9-M1-beta-axial-transfer-radial-side-exhaustion",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Two-axis beta transfer through renormalized radial-side exhaustion",
+        "status": "open",
+        "statement_tex": "For the arbitrary-order endpoint-subtracted renormalized radial sides R_(M,v), apply the complete sixteen-stratum beta two-axis transfer at finite U,V,S. Prove that, for sufficiently large M and a declared polynomial nesting S=S(X,U,V) with S much larger than X+U+V, every transferred horizontal face, pure axis share, connector boundary, connector-axis residue, mixed psi''/4 product-area term, collision term, and corner tends to zero with the actual outside Mellin factors. Equivalently the two-axis transfer commutes with the accepted nested removal of the renormalized radial sides. The assertion concerns only the R_M sides, not endpoint or arithmetic physical modules.",
+        "dependencies": [
+          "M9-M1-beta-finite-prelimit-axial-vector-ledger",
+          "M9-M1-renormalized-radial-side-removal",
+          "M9-M1-radial-endpoint-subtraction-identity"
+        ],
+        "implies": [
+          "M9-M1-beta-axial-transfer-module-limit-commutation"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-complete-axial-connector-ledger/reports/actual_axial_connector_ledger_attack.md",
+            "rounds/codex-managed/m9-m1-beta-complete-axial-connector-ledger/reports/two_axis_connector_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-complete-axial-connector-ledger/synthesis.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Track arbitrary-M S-decay through all sixteen transfer strata and audit every axis/collision residue under the original nested exhaustion."
+      },
+      {
+        "id": "M9-M1-beta-axial-transfer-physical-module-commutation",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Two-axis beta transfer through endpoint and arithmetic physical modules",
+        "status": "open",
+        "statement_tex": "For the finite global endpoint and recombined R1 arithmetic packages, apply the complete sixteen-stratum beta two-axis transfer before the symmetric physical profile limits. Prove that the resulting transferred faces, area connectors, connector-axis residues, mixed term, and corner converge to the corresponding transfer of the accepted unmasked endpoint and arithmetic physical modules, or give an exact finite algebraic replacement whose physical limit is target-safe. Preserve all endpoint weights, stars, profiles, floors, character factors, artificial-pole cancellation, and the external X^(1/4) normalization.",
+        "dependencies": [
+          "M9-M1-beta-finite-prelimit-axial-vector-ledger",
+          "M9-M1-beta-global-three-mask-endpoint-recombination",
+          "M9-M1-endpoint-boundary-operator",
+          "M9-M1-R1-arithmetic-residue"
+        ],
+        "implies": [
+          "M9-M1-beta-axial-transfer-module-limit-commutation"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-complete-axial-connector-ledger/reports/actual_axial_connector_ledger_attack.md",
+            "rounds/codex-managed/m9-m1-beta-complete-axial-connector-ledger/reports/two_axis_connector_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-complete-axial-connector-ledger/synthesis.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "After the radial-side commutator is decided, construct a common finite representative for the endpoint and R1 arithmetic modules and prove the physical-limit transfer theorem."
+      },
+      {
+        "id": "M9-M1-beta-axial-transfer-module-limit-commutation",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Compatibility of the beta axial transfer with boundary modules and limits",
+        "status": "open",
+        "statement_tex": "The complete finite beta two-axis transfer is compatible with both limiting boundary operations: it commutes with the declared nested exhaustion deleting renormalized radial sides and with the symmetric physical endpoint and recombined R1 arithmetic modules, or exact replacement identities route every transferred boundary share without loss or double counting. Once both interfaces are proved, the finite algebraic complement has a unique post-module endpoint-free physical limit and can be used for axial subtraction.",
+        "dependencies": [
+          "M9-M1-beta-axial-transfer-radial-side-exhaustion",
+          "M9-M1-beta-axial-transfer-physical-module-commutation"
+        ],
+        "implies": [
+          "M9-M1-beta-complete-axial-connector-ledger",
+          "M9-M1-beta-mask-endpoint-axial-compatibility"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [],
+          "negative": [
+            "rounds/codex-managed/m9-m1-beta-complete-axial-connector-ledger/reports/two_axis_connector_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-complete-axial-connector-ledger/reports/actual_axial_connector_ledger_attack.md",
+            "rounds/codex-managed/m9-m1-beta-complete-axial-connector-ledger/reviews/conductor_limit_commutation_options.md",
+            "rounds/codex-managed/m9-m1-beta-complete-axial-connector-ledger/synthesis.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "First prove or refute the radial-side exhaustion sublemma, then address the endpoint/arithmetic physical-limit interface."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-beta-complete-axial-connector-ledger",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M1-beta-finite-two-axis-product-Cauchy-Green",
+          "M9-M1-beta-finite-prelimit-axial-vector-ledger",
+          "M9-M1-beta-axial-transfer-module-limit-commutation"
+        ],
+        "statement_tex": "The complete sixteen-stratum two-axis beta transfer and its actual full pre-limit vector application are proved. To obtain the unique post-module endpoint-free connector-completed axial vector, prove that this transfer commutes with the nested deletion of renormalized radial sides and with the physical endpoint and recombined R1 arithmetic modules, or supply exact replacement identities for every transferred face, connector, axis, mixed psi''/4 term, collision, and corner. Only then may the resulting physical axial vector be removed before local polar subtraction. No target-sized estimate is included.",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-complete-axial-connector-ledger/reports/blind_two_axis_connector_identity.md",
+            "rounds/codex-managed/m9-m1-beta-complete-axial-connector-ledger/reports/actual_axial_connector_ledger_attack.md",
+            "rounds/codex-managed/m9-m1-beta-complete-axial-connector-ledger/reviews/conductor_operator_tensor_calculus.md",
+            "rounds/codex-managed/m9-m1-beta-complete-axial-connector-ledger/synthesis.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-m1-beta-complete-axial-connector-ledger/reports/two_axis_connector_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-complete-axial-connector-ledger/reviews/conductor_limit_commutation_options.md"
+          ]
+        },
+        "next_action": "Prove the radial-side and physical-module transfer commutation lemmas; the finite sixteen-stratum algebra alone is not the post-module operator."
+      },
+      {
+        "id": "M9-M1-beta-mask-endpoint-axial-compatibility",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M1-beta-axial-transfer-module-limit-commutation"
+        ],
+        "statement_tex": "Global three-mask endpoint recombination, local common-ownership rho cancellation, and the complete finite two-axis connector ledger are exact. Full mask--endpoint--axial compatibility additionally requires the two-axis transfer to commute with, or be exactly routed through, the nested radial-side removal and the physical endpoint/R1 arithmetic modules. After those two interfaces close, the finite complement has a unique endpoint-free physical limit. No residual terminal-symbol estimate is included.",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-complete-axial-connector-ledger/reports/blind_two_axis_connector_identity.md",
+            "rounds/codex-managed/m9-m1-beta-complete-axial-connector-ledger/synthesis.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-m1-beta-complete-axial-connector-ledger/reports/two_axis_connector_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-complete-axial-connector-ledger/reports/actual_axial_connector_ledger_attack.md"
+          ]
+        },
+        "next_action": "Close the radial-side exhaustion commutator first, then the endpoint/arithmetic physical-module commutator."
+      },
+      {
+        "id": "M9-M1-beta-boundary-first-symbol-architecture",
+        "status": "proved_internal",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-complete-axial-connector-ledger/reports/actual_axial_connector_ledger_attack.md",
+            "rounds/codex-managed/m9-m1-beta-complete-axial-connector-ledger/synthesis.md"
+          ]
+        },
+        "next_action": "Keep the full finite boundary package until the outside-axis transfer is complete, or prove the required module-limit commutators before deleting it; do not form a hybrid post-module finite kernel."
+      },
+      {
+        "id": "M9-M1-beta-axial-subtracted-terminal-symbol-bound",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M1-beta-axial-transfer-module-limit-commutation"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-complete-axial-connector-ledger/synthesis.md"
+          ]
+        },
+        "next_action": "Wait for a unique post-module axial vector supplied by both transfer-limit commutation interfaces, then define and estimate the axial-subtracted terminal symbol."
+      },
+      {
+        "id": "M9-M1-beta-complete-physical-height-symbol-bound",
+        "status": "open",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-complete-axial-connector-ledger/synthesis.md"
+          ]
+        },
+        "next_action": "First close transfer through radial-side and endpoint/arithmetic modules; only then assemble the axial-subtracted physical-height symbol."
+      },
+      {
+        "id": "M9-M1-beta-transition-connector-reduction",
+        "status": "open",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-complete-axial-connector-ledger/synthesis.md"
+          ]
+        },
+        "next_action": "Use the proved finite sixteen-stratum ledger, but retain all boundary modules until the new commutation obligations are closed."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round34-finite-two-axis-ledger-automatically-defines-post-module-operator",
+        "reason": "The endpoint and R1 arithmetic theorems begin after physical profile limits, and radial-side deletion uses a nested exhaustion. Finite product Cauchy--Green algebra supplies no interchange theorem for those operations."
+      },
+      {
+        "id": "Round34-renormalized-side-removal-automatically-controls-transferred-side-strata",
+        "reason": "The accepted side lemma controls the unshifted renormalized side. The two-axis transfer creates additional horizontals, connector boundaries, connector-axis residues, a mixed psi''/4 term, and corner/collision shares whose nested decay has not been proved."
+      },
+      {
+        "id": "Round34-physical-endpoint-bound-implies-finite-transfer-commutation",
+        "reason": "A target bound after symmetric physical inversion does not provide uniform finite-height representatives or dominated convergence for every transferred face and connector."
+      },
+      {
+        "id": "Round34-delete-boundary-modules-before-shift-without-images",
+        "reason": "Deleting finite endpoint, arithmetic, or radial-side strata before shifting omits their nonholomorphic connector images and changes the finite operator unless a commutation or replacement identity is proved."
+      },
+      {
+        "id": "Round34-rectangularize-sheared-A-v-cutoff",
+        "reason": "The product rectangle in u,v becomes a sheared domain in A=s-(u+v)/2 and v. Replacing its slanted faces by independent rectangular cutoffs drops explicit face and connector traces."
+      }
+    ],
+    "no_change": [
+      {"id": "M9-M1", "reason": "The module-limit compatibility, axial-subtracted symbol, beta transition estimate, and residual M1 corridor remain open."},
+      {"id": "M9-M2", "reason": "Round 34 concerns only the M1 beta transition architecture."},
+      {"id": "M9", "reason": "M9-M1 and M9-M2 remain open."},
+      {"id": "GC-target", "reason": "No unconditional Gauss-circle estimate is claimed."}
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 8,
+    "idea_quality_score": 9,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 34 completely resolves the finite two-axis sign, face, connector, residue, corner, and order-reversal algebra, while the independent hostile audit isolates the exact two limit commutators preventing an overclaim."
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "campaign": {
+    "schema_version":1,
+    "round_index":12,
+    "round_type":"cross_product_pairing_attack",
+    "campaign_id":"m9-m1-cross-product-offset-pairing",
+    "title":"Test paired-offset cancellation in the exact M1 odd kernel",
+    "status":"active",
+    "max_concurrency":3,
+    "coordinator":"Codex",
+    "conductor_policy":{"strategy_owner":"Codex conductor","subagents_may_start_next_round":false,"monitoring":"Pair n near X only through exact identities. Audit divisor-set mismatch, d-dependent arguments, integer/noninteger centers, and hard endpoint. Reject artificial symmetry.","round_close":"Close after an exact paired-offset formula, a stability estimate or capacity obstruction, and a blind/hostile validation."},
+    "resource_policy":{"analytical_algebraic_minimum_percent":90,"numerical_experimental_maximum_percent":10,"numerical_purpose":["falsify offset symmetry on exact finite fibers"],"numerical_prohibition":"Finite pairing tests cannot prove the asymptotic estimate.","literature_policy":"Use primary sources only for an imported shifted-divisor or correlation theorem."},
+    "target_obligations":["M9-M1-cross-product-odd-kernel-discrepancy","M9-M1","M9-M1-top-endpoint-signed-cone","M9"],
+    "frozen_target":{"kernel":"C_(D,L)(n;X)=sum_(d:n_X(d)=n)chi_4(d)w_D(d)V_(L,H)((X-n)/d), with V odd.","pairing_question":"For offsets t>0, compare C(X-t;X)+C(X+t;X) when meaningful, including floor/ceiling conventions for nonintegral X. Determine whether divisor-set stability and oddness yield the required H/L saving.","success":"Prove a new M1 residual region, reduce to a precise shifted-divisor correlation lemma, or rigorously show naive offset pairing lacks capacity."},
+    "tasks":[
+      {"id":"blind_offset_pairing_identity","role":"statement_only_exact_deriver","brief":"rounds/codex-managed/m9-m1-cross-product-offset-pairing/briefs/blind_offset_pairing_identity.md"},
+      {"id":"offset_stability_attack","role":"analytic_correlation_attacker","brief":"rounds/codex-managed/m9-m1-cross-product-offset-pairing/briefs/offset_stability_attack.md"},
+      {"id":"offset_pairing_hostile_audit","role":"hostile_falsifier","brief":"rounds/codex-managed/m9-m1-cross-product-offset-pairing/briefs/offset_pairing_hostile_audit.md"}
+    ],
+    "exit_gates":["exact paired-offset identity","integer/noninteger center scope","divisor-set stability or obstruction","hard-top control","actual versus adversarial profile","conductor graph decision"],
+    "promotion_policy":"Oddness of V alone is not cancellation unless the weighted divisor fibers at opposite offsets are quantitatively matched."
+  },
+  "provenance":{"graph_path":"state/proof_obligations.yml","graph_sha256":"476fcf1786eb8d91bdf7ff37e8aed557c6e10575aab1b60f3caaeb2cb274049f","generated_at":"2026-08-12T14:05:00+08:00"},
+  "artifact_policy":{"subagents_may_edit_shared_state":false,"computation_evidence_level":"diagnostic_only","coordinator_owns_synthesis_and_state_patch":true}
+}

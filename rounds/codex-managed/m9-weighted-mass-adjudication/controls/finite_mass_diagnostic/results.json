@@ -1,0 +1,1581 @@
+{
+  "schema_version": 1,
+  "campaign_id": "m9-weighted-mass-adjudication",
+  "task_id": "finite_mass_diagnostic",
+  "graph_sha256": "3c06ffad9c2847b329c57a8954d0758e443ee55be2da01c00ce5731bad3d6b5f",
+  "status": "diagnostic_only",
+  "statement": "Finite exact-integer comparison only; no asymptotic inference.",
+  "normalization": {
+    "N": "h1*d2*d3*d4-h2*d1*d3*d4+h3*d1*d2*d4-h4*d1*d2*d3",
+    "frequency_support": "odd h only, 1<=|h|<=H, because beta_h=0 for even h",
+    "denominator_support": "sharp half-dyadic block floor(D/2)<d<=D",
+    "raw_count": "number of ordered (h1,d1,...,h4,d4) tuples on coefficient-compatible odd support",
+    "reciprocal_mass": "sum 1/(|h1*h2*h3*h4|)",
+    "true_beta_signed_mass": "sum beta_h1*beta_h2*beta_h3*beta_h4",
+    "unsigned_beta_mass": "sum |beta_h1*beta_h2*beta_h3*beta_h4|; equivalently remove chi4 signs",
+    "beta": "-Phi(|h|/(H+1))*chi4(h)/(pi*h) on odd nonzero h",
+    "Phi": "pi*u*(1-u)*cot(pi*u)+u"
+  },
+  "scales": [
+    {
+      "scale_id": "lower",
+      "label": "D=X^(1/4)",
+      "X": 625,
+      "D": 5,
+      "H": 1,
+      "H_rule": "nearest integer to D/X^(1/4), ties upward",
+      "denominator_support": "floor(D/2)<d<=D",
+      "denominators": [
+        3,
+        4,
+        5
+      ],
+      "odd_frequency_support": [
+        1
+      ],
+      "natural_band": 1,
+      "thresholds": [
+        1,
+        4
+      ],
+      "join_diagnostics": {
+        "ordered_denominator_pairs": 9,
+        "ordered_pair_pair_checks": 81,
+        "joined_A_B_values": 63
+      },
+      "brute_force_verification": {
+        "performed": true,
+        "method": "literal Cartesian enumeration independent of the pair join",
+        "all_tensors_equal": true
+      },
+      "random_sign_pattern": [
+        -1
+      ],
+      "bands": [
+        {
+          "band_id": "exact_N0",
+          "band_definition": "N=0",
+          "tensor_counts_by_abs_frequency": [
+            90
+          ],
+          "exact": {
+            "raw_count": 90,
+            "reciprocal_mass_numerator": 90,
+            "reciprocal_mass_denominator": 1,
+            "reciprocal_mass_decimal": "90"
+          },
+          "decimal_evaluations": {
+            "50": {
+              "precision_digits": 50,
+              "pi": "3.1415926535897932384626433832795028841971693993751",
+              "phi": {
+                "1": "0.50000000000000000000000000000000000000000000000000"
+              },
+              "abs_beta": {
+                "1": "0.15915494309189533576888376337251436203445964574046"
+              },
+              "true_sign_pattern": [
+                1
+              ],
+              "random_sign_pattern": [
+                -1
+              ],
+              "true_beta_signed_mass": "0.057746150182599385438984405877542654547781385426722",
+              "true_beta_signed_abs": "0.057746150182599385438984405877542654547781385426722",
+              "unsigned_beta_mass": "0.057746150182599385438984405877542654547781385426722",
+              "random_signed_mass": "0.057746150182599385438984405877542654547781385426722",
+              "random_signed_abs": "0.057746150182599385438984405877542654547781385426722",
+              "adversarial_max_abs_mass": "0.057746150182599385438984405877542654547781385426722",
+              "adversarial_pattern": [
+                -1
+              ]
+            },
+            "80": {
+              "precision_digits": 80,
+              "pi": "3.1415926535897932384626433832795028841971693993751058209749445923078164062862090",
+              "phi": {
+                "1": "0.50000000000000000000000000000000000000000000000000000000000000000000000000000000"
+              },
+              "abs_beta": {
+                "1": "0.15915494309189533576888376337251436203445964574045644874766734405889679763422654"
+              },
+              "true_sign_pattern": [
+                1
+              ],
+              "random_sign_pattern": [
+                -1
+              ],
+              "true_beta_signed_mass": "0.057746150182599385438984405877542654547781385426715227789695199529851852549979558",
+              "true_beta_signed_abs": "0.057746150182599385438984405877542654547781385426715227789695199529851852549979558",
+              "unsigned_beta_mass": "0.057746150182599385438984405877542654547781385426715227789695199529851852549979558",
+              "random_signed_mass": "0.057746150182599385438984405877542654547781385426715227789695199529851852549979558",
+              "random_signed_abs": "0.057746150182599385438984405877542654547781385426715227789695199529851852549979558",
+              "adversarial_max_abs_mass": "0.057746150182599385438984405877542654547781385426715227789695199529851852549979558",
+              "adversarial_pattern": [
+                -1
+              ]
+            }
+          },
+          "precision_relative_differences": {
+            "true_beta_signed_mass": "6.772210304800470148147450020442E-51",
+            "unsigned_beta_mass": "6.772210304800470148147450020442E-51",
+            "random_signed_mass": "6.772210304800470148147450020442E-51",
+            "adversarial_max_abs_mass": "6.772210304800470148147450020442E-51"
+          },
+          "ratios": {
+            "reciprocal_over_raw": "1",
+            "pi4_unsigned_beta_over_reciprocal": "0.062500000000000000000000000",
+            "signed_abs_over_unsigned": "1",
+            "random_abs_over_unsigned": "1",
+            "adversarial_over_unsigned": "1",
+            "unsigned_beta_over_D2": "0.002309846007303975417559376235",
+            "unsigned_beta_over_D_plus_D4_over_X": "0.009624358363766564239830734313"
+          },
+          "pass_flags": {
+            "signed_triangle_inequality": true,
+            "random_triangle_inequality": true,
+            "adversarial_equals_unsigned": true,
+            "precision_stable": true
+          }
+        },
+        {
+          "band_id": "nonzero_le_1",
+          "band_definition": "0<|N|<=1",
+          "tensor_counts_by_abs_frequency": [
+            0
+          ],
+          "exact": {
+            "raw_count": 0,
+            "reciprocal_mass_numerator": 0,
+            "reciprocal_mass_denominator": 1,
+            "reciprocal_mass_decimal": "0"
+          },
+          "decimal_evaluations": {
+            "50": {
+              "precision_digits": 50,
+              "pi": "3.1415926535897932384626433832795028841971693993751",
+              "phi": {
+                "1": "0.50000000000000000000000000000000000000000000000000"
+              },
+              "abs_beta": {
+                "1": "0.15915494309189533576888376337251436203445964574046"
+              },
+              "true_sign_pattern": [
+                1
+              ],
+              "random_sign_pattern": [
+                -1
+              ],
+              "true_beta_signed_mass": "0",
+              "true_beta_signed_abs": "0",
+              "unsigned_beta_mass": "0",
+              "random_signed_mass": "0",
+              "random_signed_abs": "0",
+              "adversarial_max_abs_mass": "0",
+              "adversarial_pattern": [
+                -1
+              ]
+            },
+            "80": {
+              "precision_digits": 80,
+              "pi": "3.1415926535897932384626433832795028841971693993751058209749445923078164062862090",
+              "phi": {
+                "1": "0.50000000000000000000000000000000000000000000000000000000000000000000000000000000"
+              },
+              "abs_beta": {
+                "1": "0.15915494309189533576888376337251436203445964574045644874766734405889679763422654"
+              },
+              "true_sign_pattern": [
+                1
+              ],
+              "random_sign_pattern": [
+                -1
+              ],
+              "true_beta_signed_mass": "0",
+              "true_beta_signed_abs": "0",
+              "unsigned_beta_mass": "0",
+              "random_signed_mass": "0",
+              "random_signed_abs": "0",
+              "adversarial_max_abs_mass": "0",
+              "adversarial_pattern": [
+                -1
+              ]
+            }
+          },
+          "precision_relative_differences": {
+            "true_beta_signed_mass": "0",
+            "unsigned_beta_mass": "0",
+            "random_signed_mass": "0",
+            "adversarial_max_abs_mass": "0"
+          },
+          "ratios": {
+            "reciprocal_over_raw": null,
+            "pi4_unsigned_beta_over_reciprocal": null,
+            "signed_abs_over_unsigned": null,
+            "random_abs_over_unsigned": null,
+            "adversarial_over_unsigned": null,
+            "unsigned_beta_over_D2": "0",
+            "unsigned_beta_over_D_plus_D4_over_X": "0"
+          },
+          "pass_flags": {
+            "signed_triangle_inequality": true,
+            "random_triangle_inequality": true,
+            "adversarial_equals_unsigned": true,
+            "precision_stable": true
+          }
+        },
+        {
+          "band_id": "nonzero_le_4",
+          "band_definition": "0<|N|<=4",
+          "tensor_counts_by_abs_frequency": [
+            0
+          ],
+          "exact": {
+            "raw_count": 0,
+            "reciprocal_mass_numerator": 0,
+            "reciprocal_mass_denominator": 1,
+            "reciprocal_mass_decimal": "0"
+          },
+          "decimal_evaluations": {
+            "50": {
+              "precision_digits": 50,
+              "pi": "3.1415926535897932384626433832795028841971693993751",
+              "phi": {
+                "1": "0.50000000000000000000000000000000000000000000000000"
+              },
+              "abs_beta": {
+                "1": "0.15915494309189533576888376337251436203445964574046"
+              },
+              "true_sign_pattern": [
+                1
+              ],
+              "random_sign_pattern": [
+                -1
+              ],
+              "true_beta_signed_mass": "0",
+              "true_beta_signed_abs": "0",
+              "unsigned_beta_mass": "0",
+              "random_signed_mass": "0",
+              "random_signed_abs": "0",
+              "adversarial_max_abs_mass": "0",
+              "adversarial_pattern": [
+                -1
+              ]
+            },
+            "80": {
+              "precision_digits": 80,
+              "pi": "3.1415926535897932384626433832795028841971693993751058209749445923078164062862090",
+              "phi": {
+                "1": "0.50000000000000000000000000000000000000000000000000000000000000000000000000000000"
+              },
+              "abs_beta": {
+                "1": "0.15915494309189533576888376337251436203445964574045644874766734405889679763422654"
+              },
+              "true_sign_pattern": [
+                1
+              ],
+              "random_sign_pattern": [
+                -1
+              ],
+              "true_beta_signed_mass": "0",
+              "true_beta_signed_abs": "0",
+              "unsigned_beta_mass": "0",
+              "random_signed_mass": "0",
+              "random_signed_abs": "0",
+              "adversarial_max_abs_mass": "0",
+              "adversarial_pattern": [
+                -1
+              ]
+            }
+          },
+          "precision_relative_differences": {
+            "true_beta_signed_mass": "0",
+            "unsigned_beta_mass": "0",
+            "random_signed_mass": "0",
+            "adversarial_max_abs_mass": "0"
+          },
+          "ratios": {
+            "reciprocal_over_raw": null,
+            "pi4_unsigned_beta_over_reciprocal": null,
+            "signed_abs_over_unsigned": null,
+            "random_abs_over_unsigned": null,
+            "adversarial_over_unsigned": null,
+            "unsigned_beta_over_D2": "0",
+            "unsigned_beta_over_D_plus_D4_over_X": "0"
+          },
+          "pass_flags": {
+            "signed_triangle_inequality": true,
+            "random_triangle_inequality": true,
+            "adversarial_equals_unsigned": true,
+            "precision_stable": true
+          }
+        }
+      ],
+      "elapsed_seconds": 0.0014177000002746354
+    },
+    {
+      "scale_id": "crossover",
+      "label": "D=round(X^(3/8))",
+      "X": 625,
+      "D": 11,
+      "H": 2,
+      "H_rule": "nearest integer to D/X^(1/4), ties upward",
+      "denominator_support": "floor(D/2)<d<=D",
+      "denominators": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "odd_frequency_support": [
+        1
+      ],
+      "natural_band": 23,
+      "thresholds": [
+        1,
+        23,
+        92
+      ],
+      "join_diagnostics": {
+        "ordered_denominator_pairs": 36,
+        "ordered_pair_pair_checks": 1296,
+        "joined_A_B_values": 1860
+      },
+      "brute_force_verification": {
+        "performed": true,
+        "method": "literal Cartesian enumeration independent of the pair join",
+        "all_tensors_equal": true
+      },
+      "random_sign_pattern": [
+        1
+      ],
+      "bands": [
+        {
+          "band_id": "exact_N0",
+          "band_definition": "N=0",
+          "tensor_counts_by_abs_frequency": [
+            396
+          ],
+          "exact": {
+            "raw_count": 396,
+            "reciprocal_mass_numerator": 396,
+            "reciprocal_mass_denominator": 1,
+            "reciprocal_mass_decimal": "396"
+          },
+          "decimal_evaluations": {
+            "50": {
+              "precision_digits": 50,
+              "pi": "3.1415926535897932384626433832795028841971693993751",
+              "phi": {
+                "1": "0.73639985871871507790979516836492349606312583290950"
+              },
+              "abs_beta": {
+                "1": "0.23440335521451372707017779347100012038910681966478"
+              },
+              "true_sign_pattern": [
+                1
+              ],
+              "random_sign_pattern": [
+                1
+              ],
+              "true_beta_signed_mass": "1.1955024795074811928914656468491606498461688521182",
+              "true_beta_signed_abs": "1.1955024795074811928914656468491606498461688521182",
+              "unsigned_beta_mass": "1.1955024795074811928914656468491606498461688521182",
+              "random_signed_mass": "1.1955024795074811928914656468491606498461688521182",
+              "random_signed_abs": "1.1955024795074811928914656468491606498461688521182",
+              "adversarial_max_abs_mass": "1.1955024795074811928914656468491606498461688521182",
+              "adversarial_pattern": [
+                -1
+              ]
+            },
+            "80": {
+              "precision_digits": 80,
+              "pi": "3.1415926535897932384626433832795028841971693993751058209749445923078164062862090",
+              "phi": {
+                "1": "0.73639985871871507790979516836492349606312583290949790568219665230847181802807864"
+              },
+              "abs_beta": {
+                "1": "0.23440335521451372707017779347100012038910681966477693828035652414681512560124732"
+              },
+              "true_sign_pattern": [
+                1
+              ],
+              "random_sign_pattern": [
+                1
+              ],
+              "true_beta_signed_mass": "1.1955024795074811928914656468491606498461688521180848378471933447780183193752585",
+              "true_beta_signed_abs": "1.1955024795074811928914656468491606498461688521180848378471933447780183193752585",
+              "unsigned_beta_mass": "1.1955024795074811928914656468491606498461688521180848378471933447780183193752585",
+              "random_signed_mass": "1.1955024795074811928914656468491606498461688521180848378471933447780183193752585",
+              "random_signed_abs": "1.1955024795074811928914656468491606498461688521180848378471933447780183193752585",
+              "adversarial_max_abs_mass": "1.1955024795074811928914656468491606498461688521180848378471933447780183193752585",
+              "adversarial_pattern": [
+                -1
+              ]
+            }
+          },
+          "precision_relative_differences": {
+            "true_beta_signed_mass": "9.63294972454589228910498782772799619586137718552845623010854E-50",
+            "unsigned_beta_mass": "9.63294972454589228910498782772799619586137718552845623010854E-50",
+            "random_signed_mass": "9.63294972454589228910498782772799619586137718552845623010854E-50",
+            "adversarial_max_abs_mass": "9.63294972454589228910498782772799619586137718552845623010854E-50"
+          },
+          "ratios": {
+            "reciprocal_over_raw": "1",
+            "pi4_unsigned_beta_over_reciprocal": "0.2940727521659592644560991278",
+            "signed_abs_over_unsigned": "1",
+            "random_abs_over_unsigned": "1",
+            "adversarial_over_unsigned": "1",
+            "unsigned_beta_over_D2": "0.009880185781053563577615418569",
+            "unsigned_beta_over_D_plus_D4_over_X": "0.03472713560569695787121983776"
+          },
+          "pass_flags": {
+            "signed_triangle_inequality": true,
+            "random_triangle_inequality": true,
+            "adversarial_equals_unsigned": true,
+            "precision_stable": true
+          }
+        },
+        {
+          "band_id": "nonzero_le_1",
+          "band_definition": "0<|N|<=1",
+          "tensor_counts_by_abs_frequency": [
+            0
+          ],
+          "exact": {
+            "raw_count": 0,
+            "reciprocal_mass_numerator": 0,
+            "reciprocal_mass_denominator": 1,
+            "reciprocal_mass_decimal": "0"
+          },
+          "decimal_evaluations": {
+            "50": {
+              "precision_digits": 50,
+              "pi": "3.1415926535897932384626433832795028841971693993751",
+              "phi": {
+                "1": "0.73639985871871507790979516836492349606312583290950"
+              },
+              "abs_beta": {
+                "1": "0.23440335521451372707017779347100012038910681966478"
+              },
+              "true_sign_pattern": [
+                1
+              ],
+              "random_sign_pattern": [
+                1
+              ],
+              "true_beta_signed_mass": "0",
+              "true_beta_signed_abs": "0",
+              "unsigned_beta_mass": "0",
+              "random_signed_mass": "0",
+              "random_signed_abs": "0",
+              "adversarial_max_abs_mass": "0",
+              "adversarial_pattern": [
+                -1
+              ]
+            },
+            "80": {
+              "precision_digits": 80,
+              "pi": "3.1415926535897932384626433832795028841971693993751058209749445923078164062862090",
+              "phi": {
+                "1": "0.73639985871871507790979516836492349606312583290949790568219665230847181802807864"
+              },
+              "abs_beta": {
+                "1": "0.23440335521451372707017779347100012038910681966477693828035652414681512560124732"
+              },
+              "true_sign_pattern": [
+                1
+              ],
+              "random_sign_pattern": [
+                1
+              ],
+              "true_beta_signed_mass": "0",
+              "true_beta_signed_abs": "0",
+              "unsigned_beta_mass": "0",
+              "random_signed_mass": "0",
+              "random_signed_abs": "0",
+              "adversarial_max_abs_mass": "0",
+              "adversarial_pattern": [
+                -1
+              ]
+            }
+          },
+          "precision_relative_differences": {
+            "true_beta_signed_mass": "0",
+            "unsigned_beta_mass": "0",
+            "random_signed_mass": "0",
+            "adversarial_max_abs_mass": "0"
+          },
+          "ratios": {
+            "reciprocal_over_raw": null,
+            "pi4_unsigned_beta_over_reciprocal": null,
+            "signed_abs_over_unsigned": null,
+            "random_abs_over_unsigned": null,
+            "adversarial_over_unsigned": null,
+            "unsigned_beta_over_D2": "0",
+            "unsigned_beta_over_D_plus_D4_over_X": "0E+4"
+          },
+          "pass_flags": {
+            "signed_triangle_inequality": true,
+            "random_triangle_inequality": true,
+            "adversarial_equals_unsigned": true,
+            "precision_stable": true
+          }
+        },
+        {
+          "band_id": "nonzero_le_23",
+          "band_definition": "0<|N|<=23",
+          "tensor_counts_by_abs_frequency": [
+            264
+          ],
+          "exact": {
+            "raw_count": 264,
+            "reciprocal_mass_numerator": 264,
+            "reciprocal_mass_denominator": 1,
+            "reciprocal_mass_decimal": "264"
+          },
+          "decimal_evaluations": {
+            "50": {
+              "precision_digits": 50,
+              "pi": "3.1415926535897932384626433832795028841971693993751",
+              "phi": {
+                "1": "0.73639985871871507790979516836492349606312583290950"
+              },
+              "abs_beta": {
+                "1": "0.23440335521451372707017779347100012038910681966478"
+              },
+              "true_sign_pattern": [
+                1
+              ],
+              "random_sign_pattern": [
+                1
+              ],
+              "true_beta_signed_mass": "0.79700165300498746192764376456610709989744590141212",
+              "true_beta_signed_abs": "0.79700165300498746192764376456610709989744590141212",
+              "unsigned_beta_mass": "0.79700165300498746192764376456610709989744590141212",
+              "random_signed_mass": "0.79700165300498746192764376456610709989744590141212",
+              "random_signed_abs": "0.79700165300498746192764376456610709989744590141212",
+              "adversarial_max_abs_mass": "0.79700165300498746192764376456610709989744590141212",
+              "adversarial_pattern": [
+                -1
+              ]
+            },
+            "80": {
+              "precision_digits": 80,
+              "pi": "3.1415926535897932384626433832795028841971693993751058209749445923078164062862090",
+              "phi": {
+                "1": "0.73639985871871507790979516836492349606312583290949790568219665230847181802807864"
+              },
+              "abs_beta": {
+                "1": "0.23440335521451372707017779347100012038910681966477693828035652414681512560124732"
+              },
+              "true_sign_pattern": [
+                1
+              ],
+              "random_sign_pattern": [
+                1
+              ],
+              "true_beta_signed_mass": "0.79700165300498746192764376456610709989744590141205655856479556318534554625017236",
+              "true_beta_signed_abs": "0.79700165300498746192764376456610709989744590141205655856479556318534554625017236",
+              "unsigned_beta_mass": "0.79700165300498746192764376456610709989744590141205655856479556318534554625017236",
+              "random_signed_mass": "0.79700165300498746192764376456610709989744590141205655856479556318534554625017236",
+              "random_signed_abs": "0.79700165300498746192764376456610709989744590141205655856479556318534554625017236",
+              "adversarial_max_abs_mass": "0.79700165300498746192764376456610709989744590141205655856479556318534554625017236",
+              "adversarial_pattern": [
+                -1
+              ]
+            }
+          },
+          "precision_relative_differences": {
+            "true_beta_signed_mass": "6.344143520443681465445374982764E-50",
+            "unsigned_beta_mass": "6.344143520443681465445374982764E-50",
+            "random_signed_mass": "6.344143520443681465445374982764E-50",
+            "adversarial_max_abs_mass": "6.344143520443681465445374982764E-50"
+          },
+          "ratios": {
+            "reciprocal_over_raw": "1",
+            "pi4_unsigned_beta_over_reciprocal": "0.2940727521659592644560991278",
+            "signed_abs_over_unsigned": "1",
+            "random_abs_over_unsigned": "1",
+            "adversarial_over_unsigned": "1",
+            "unsigned_beta_over_D2": "0.006586790520702375718410279046",
+            "unsigned_beta_over_D_plus_D4_over_X": "0.02315142373713130524747989184"
+          },
+          "pass_flags": {
+            "signed_triangle_inequality": true,
+            "random_triangle_inequality": true,
+            "adversarial_equals_unsigned": true,
+            "precision_stable": true
+          }
+        },
+        {
+          "band_id": "nonzero_le_92",
+          "band_definition": "0<|N|<=92",
+          "tensor_counts_by_abs_frequency": [
+            1764
+          ],
+          "exact": {
+            "raw_count": 1764,
+            "reciprocal_mass_numerator": 1764,
+            "reciprocal_mass_denominator": 1,
+            "reciprocal_mass_decimal": "1764"
+          },
+          "decimal_evaluations": {
+            "50": {
+              "precision_digits": 50,
+              "pi": "3.1415926535897932384626433832795028841971693993751",
+              "phi": {
+                "1": "0.73639985871871507790979516836492349606312583290950"
+              },
+              "abs_beta": {
+                "1": "0.23440335521451372707017779347100012038910681966478"
+              },
+              "true_sign_pattern": [
+                1
+              ],
+              "random_sign_pattern": [
+                1
+              ],
+              "true_beta_signed_mass": "5.3254201359878707683347106086917156220420248867083",
+              "true_beta_signed_abs": "5.3254201359878707683347106086917156220420248867083",
+              "unsigned_beta_mass": "5.3254201359878707683347106086917156220420248867083",
+              "random_signed_mass": "5.3254201359878707683347106086917156220420248867083",
+              "random_signed_abs": "5.3254201359878707683347106086917156220420248867083",
+              "adversarial_max_abs_mass": "5.3254201359878707683347106086917156220420248867083",
+              "adversarial_pattern": [
+                -1
+              ]
+            },
+            "80": {
+              "precision_digits": 80,
+              "pi": "3.1415926535897932384626433832795028841971693993751058209749445923078164062862090",
+              "phi": {
+                "1": "0.73639985871871507790979516836492349606312583290949790568219665230847181802807864"
+              },
+              "abs_beta": {
+                "1": "0.23440335521451372707017779347100012038910681966477693828035652414681512560124732"
+              },
+              "true_sign_pattern": [
+                1
+              ],
+              "random_sign_pattern": [
+                1
+              ],
+              "true_beta_signed_mass": "5.3254201359878707683347106086917156220420248867078324595011339903748088772170607",
+              "true_beta_signed_abs": "5.3254201359878707683347106086917156220420248867078324595011339903748088772170607",
+              "unsigned_beta_mass": "5.3254201359878707683347106086917156220420248867078324595011339903748088772170607",
+              "random_signed_mass": "5.3254201359878707683347106086917156220420248867078324595011339903748088772170607",
+              "random_signed_abs": "5.3254201359878707683347106086917156220420248867078324595011339903748088772170607",
+              "adversarial_max_abs_mass": "5.3254201359878707683347106086917156220420248867078324595011339903748088772170607",
+              "adversarial_pattern": [
+                -1
+              ]
+            }
+          },
+          "precision_relative_differences": {
+            "true_beta_signed_mass": "8.77941058033124356367698398710249404564712080576444872729516E-50",
+            "unsigned_beta_mass": "8.77941058033124356367698398710249404564712080576444872729516E-50",
+            "random_signed_mass": "8.77941058033124356367698398710249404564712080576444872729516E-50",
+            "adversarial_max_abs_mass": "8.77941058033124356367698398710249404564712080576444872729516E-50"
+          },
+          "ratios": {
+            "reciprocal_over_raw": "1",
+            "pi4_unsigned_beta_over_reciprocal": "0.2940727521659592644560991278",
+            "signed_abs_over_unsigned": "1",
+            "random_abs_over_unsigned": "1",
+            "adversarial_over_unsigned": "1",
+            "unsigned_beta_over_D2": "0.04401173666105678320937777363",
+            "unsigned_beta_over_D_plus_D4_over_X": "0.1546936040617409941536156409"
+          },
+          "pass_flags": {
+            "signed_triangle_inequality": true,
+            "random_triangle_inequality": true,
+            "adversarial_equals_unsigned": true,
+            "precision_stable": true
+          }
+        }
+      ],
+      "elapsed_seconds": 0.008746800000153598
+    },
+    {
+      "scale_id": "endpoint",
+      "label": "D=X^(1/2)",
+      "X": 625,
+      "D": 25,
+      "H": 5,
+      "H_rule": "nearest integer to D/X^(1/4), ties upward",
+      "denominator_support": "floor(D/2)<d<=D",
+      "denominators": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "odd_frequency_support": [
+        1,
+        3,
+        5
+      ],
+      "natural_band": 625,
+      "thresholds": [
+        1,
+        625,
+        2500
+      ],
+      "join_diagnostics": {
+        "ordered_denominator_pairs": 169,
+        "ordered_pair_pair_checks": 28561,
+        "joined_A_B_values": 1407339
+      },
+      "brute_force_verification": {
+        "performed": false,
+        "method": "omitted at endpoint to keep the diagnostic bounded",
+        "all_tensors_equal": null
+      },
+      "random_sign_pattern": [
+        -1,
+        1,
+        1
+      ],
+      "bands": [
+        {
+          "band_id": "exact_N0",
+          "band_definition": "N=0",
+          "tensor_counts_by_abs_frequency": [
+            1950,
+            50,
+            2,
+            50,
+            728,
+            114,
+            2,
+            114,
+            748,
+            50,
+            728,
+            114,
+            728,
+            24,
+            72,
+            114,
+            72,
+            44,
+            2,
+            114,
+            748,
+            114,
+            72,
+            44,
+            748,
+            44,
+            6,
+            50,
+            728,
+            114,
+            728,
+            24,
+            72,
+            114,
+            72,
+            44,
+            728,
+            24,
+            72,
+            24,
+            1950,
+            186,
+            72,
+            186,
+            726,
+            114,
+            72,
+            44,
+            72,
+            186,
+            726,
+            44,
+            726,
+            222,
+            2,
+            114,
+            748,
+            114,
+            72,
+            44,
+            748,
+            44,
+            6,
+            114,
+            72,
+            44,
+            72,
+            186,
+            726,
+            44,
+            726,
+            222,
+            748,
+            44,
+            6,
+            44,
+            726,
+            222,
+            6,
+            222,
+            1950
+          ],
+          "exact": {
+            "raw_count": 23782,
+            "reciprocal_mass_numerator": 77186,
+            "reciprocal_mass_denominator": 27,
+            "reciprocal_mass_decimal": "2858.740740740740740740740740740740740741"
+          },
+          "decimal_evaluations": {
+            "50": {
+              "precision_digits": 50,
+              "pi": "3.1415926535897932384626433832795028841971693993751",
+              "phi": {
+                "1": "0.92241640176425743774753260735089822178502760337198",
+                "3": "0.50000000000000000000000000000000000000000000000000",
+                "5": "0.077583598235742562252467392649101778214972396628035"
+              },
+              "abs_beta": {
+                "1": "0.29361425985964251380177324633332039386465394494271",
+                "3": "0.053051647697298445256294587790838120678153215246819",
+                "5": "0.0049391252648296315471988560823416660408530693076421"
+              },
+              "true_sign_pattern": [
+                1,
+                -1,
+                1
+              ],
+              "random_sign_pattern": [
+                -1,
+                1,
+                1
+              ],
+              "true_beta_signed_mass": "15.277597397026947383894621322861046065957607847959",
+              "true_beta_signed_abs": "15.277597397026947383894621322861046065957607847959",
+              "unsigned_beta_mass": "15.886472582475256531071203944145684154749698836799",
+              "random_signed_mass": "15.331455554424534716642608885203076339698953279623",
+              "random_signed_abs": "15.331455554424534716642608885203076339698953279623",
+              "adversarial_max_abs_mass": "15.886472582475256531071203944145684154749698836799",
+              "adversarial_pattern": [
+                -1,
+                -1,
+                -1
+              ]
+            },
+            "80": {
+              "precision_digits": 80,
+              "pi": "3.1415926535897932384626433832795028841971693993751058209749445923078164062862090",
+              "phi": {
+                "1": "0.92241640176425743774753260735089822178502760337197523982078538974505132546931412",
+                "3": "0.50000000000000000000000000000000000000000000000000000000000000000000000000000000",
+                "5": "0.077583598235742562252467392649101778214972396628024760179214610254948674530685879"
+              },
+              "abs_beta": {
+                "1": "0.29361425985964251380177324633332039386465394494270501459030675072128962933763107",
+                "3": "0.053051647697298445256294587790838120678153215246818816249222448019632265878075512",
+                "5": "0.0049391252648296315471988560823416660408530693076415765810055874793007931861643994"
+              },
+              "true_sign_pattern": [
+                1,
+                -1,
+                1
+              ],
+              "random_sign_pattern": [
+                -1,
+                1,
+                1
+              ],
+              "true_beta_signed_mass": "15.277597397026947383894621322861046065957607847964092231090937155479641455572724",
+              "true_beta_signed_abs": "15.277597397026947383894621322861046065957607847964092231090937155479641455572724",
+              "unsigned_beta_mass": "15.886472582475256531071203944145684154749698836794500751192748015319656671261804",
+              "random_signed_mass": "15.331455554424534716642608885203076339698953279615881752845690609956811568981572",
+              "random_signed_abs": "15.331455554424534716642608885203076339698953279615881752845690609956811568981572",
+              "adversarial_max_abs_mass": "15.886472582475256531071203944145684154749698836794500751192748015319656671261804",
+              "adversarial_pattern": [
+                -1,
+                -1,
+                -1
+              ]
+            }
+          },
+          "precision_relative_differences": {
+            "true_beta_signed_mass": "3.33313606753907153632984113785181795714453783107174186308967E-49",
+            "unsigned_beta_mass": "2.83212574968669407697466142861244326326865827700789359034342E-49",
+            "random_signed_mass": "4.64290368845971783000514056961223871288002028122915549193340E-49",
+            "adversarial_max_abs_mass": "2.83212574968669407697466142861244326326865827700789359034342E-49"
+          },
+          "ratios": {
+            "reciprocal_over_raw": "0.1202060693272534160600765596",
+            "pi4_unsigned_beta_over_reciprocal": "0.5413176619837656246028116024",
+            "signed_abs_over_unsigned": "0.9616733555994063931900249623",
+            "random_abs_over_unsigned": "0.9650635454051030674412869660",
+            "adversarial_over_unsigned": "1",
+            "unsigned_beta_over_D2": "0.02541835613196041044971392631",
+            "unsigned_beta_over_D_plus_D4_over_X": "0.02444072704996193312472492914"
+          },
+          "pass_flags": {
+            "signed_triangle_inequality": true,
+            "random_triangle_inequality": true,
+            "adversarial_equals_unsigned": true,
+            "precision_stable": true
+          }
+        },
+        {
+          "band_id": "nonzero_le_1",
+          "band_definition": "0<|N|<=1",
+          "tensor_counts_by_abs_frequency": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            4,
+            0,
+            4,
+            0,
+            0,
+            0,
+            4,
+            0,
+            0,
+            4,
+            4,
+            4,
+            0,
+            0,
+            4,
+            0,
+            4,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            4,
+            0,
+            0,
+            4,
+            4,
+            4,
+            0,
+            0,
+            0,
+            4,
+            0,
+            0,
+            0,
+            4,
+            0,
+            8,
+            4,
+            4,
+            0,
+            4,
+            0,
+            8,
+            0,
+            8,
+            0,
+            0,
+            4,
+            0,
+            4,
+            4,
+            0,
+            0,
+            0,
+            0,
+            4,
+            4,
+            0,
+            4,
+            0,
+            8,
+            0,
+            8,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8,
+            0,
+            0,
+            0,
+            0
+          ],
+          "exact": {
+            "raw_count": 144,
+            "reciprocal_mass_numerator": 112,
+            "reciprocal_mass_denominator": 25,
+            "reciprocal_mass_decimal": "4.48"
+          },
+          "decimal_evaluations": {
+            "50": {
+              "precision_digits": 50,
+              "pi": "3.1415926535897932384626433832795028841971693993751",
+              "phi": {
+                "1": "0.92241640176425743774753260735089822178502760337198",
+                "3": "0.50000000000000000000000000000000000000000000000000",
+                "5": "0.077583598235742562252467392649101778214972396628035"
+              },
+              "abs_beta": {
+                "1": "0.29361425985964251380177324633332039386465394494271",
+                "3": "0.053051647697298445256294587790838120678153215246819",
+                "5": "0.0049391252648296315471988560823416660408530693076421"
+              },
+              "true_sign_pattern": [
+                1,
+                -1,
+                1
+              ],
+              "random_sign_pattern": [
+                -1,
+                1,
+                1
+              ],
+              "true_beta_signed_mass": "-0.00088507752737374349967282074147625477318221745492030",
+              "true_beta_signed_abs": "0.00088507752737374349967282074147625477318221745492030",
+              "unsigned_beta_mass": "0.0012834974322163822193115613133717193930031078794123",
+              "random_signed_mass": "0.00089166879686210942495915305838998813109419457804706",
+              "random_signed_abs": "0.00089166879686210942495915305838998813109419457804706",
+              "adversarial_max_abs_mass": "0.0012834974322163822193115613133717193930031078794123",
+              "adversarial_pattern": [
+                -1,
+                -1,
+                -1
+              ]
+            },
+            "80": {
+              "precision_digits": 80,
+              "pi": "3.1415926535897932384626433832795028841971693993751058209749445923078164062862090",
+              "phi": {
+                "1": "0.92241640176425743774753260735089822178502760337197523982078538974505132546931412",
+                "3": "0.50000000000000000000000000000000000000000000000000000000000000000000000000000000",
+                "5": "0.077583598235742562252467392649101778214972396628024760179214610254948674530685879"
+              },
+              "abs_beta": {
+                "1": "0.29361425985964251380177324633332039386465394494270501459030675072128962933763107",
+                "3": "0.053051647697298445256294587790838120678153215246818816249222448019632265878075512",
+                "5": "0.0049391252648296315471988560823416660408530693076415765810055874793007931861643994"
+              },
+              "true_sign_pattern": [
+                1,
+                -1,
+                1
+              ],
+              "random_sign_pattern": [
+                -1,
+                1,
+                1
+              ],
+              "true_beta_signed_mass": "-0.00088507752737374349967282074147625477318221745492021974436384527306017447450815691",
+              "true_beta_signed_abs": "0.00088507752737374349967282074147625477318221745492021974436384527306017447450815691",
+              "unsigned_beta_mass": "0.0012834974322163822193115613133717193930031078794122086206900257066037631034825516",
+              "random_signed_mass": "0.00089166879686210942495915305838998813109419457804698278974891287228530494080019935",
+              "random_signed_abs": "0.00089166879686210942495915305838998813109419457804698278974891287228530494080019935",
+              "adversarial_max_abs_mass": "0.0012834974322163822193115613133717193930031078794122086206900257066037631034825516",
+              "adversarial_pattern": [
+                -1,
+                -1,
+                -1
+              ]
+            }
+          },
+          "precision_relative_differences": {
+            "true_beta_signed_mass": "8.025563615472693982552549184309E-53",
+            "unsigned_beta_mass": "9.13793099742933962368965174484E-53",
+            "random_signed_mass": "7.721025108712771469505919980065E-53",
+            "adversarial_max_abs_mass": "9.13793099742933962368965174484E-53"
+          },
+          "ratios": {
+            "reciprocal_over_raw": "0.03111111111111111111111111111",
+            "pi4_unsigned_beta_over_reciprocal": "0.02790721388765043486021689732",
+            "signed_abs_over_unsigned": "0.6895826241314443713390839045",
+            "random_abs_over_unsigned": "0.6947180216187489790361738122",
+            "adversarial_over_unsigned": "1",
+            "unsigned_beta_over_D2": "0.000002053595891546211550898498101",
+            "unsigned_beta_over_D_plus_D4_over_X": "0.000001974611434179049568171632790"
+          },
+          "pass_flags": {
+            "signed_triangle_inequality": true,
+            "random_triangle_inequality": true,
+            "adversarial_equals_unsigned": true,
+            "precision_stable": true
+          }
+        },
+        {
+          "band_id": "nonzero_le_625",
+          "band_definition": "0<|N|<=625",
+          "tensor_counts_by_abs_frequency": [
+            30060,
+            5334,
+            548,
+            5334,
+            10048,
+            5468,
+            548,
+            5468,
+            8272,
+            5334,
+            10048,
+            5468,
+            10048,
+            2508,
+            4344,
+            5468,
+            4344,
+            2880,
+            548,
+            5468,
+            8272,
+            5468,
+            4344,
+            2880,
+            8272,
+            2880,
+            636,
+            5334,
+            10048,
+            5468,
+            10048,
+            2508,
+            4344,
+            5468,
+            4344,
+            2880,
+            10048,
+            2508,
+            4344,
+            2508,
+            8664,
+            4028,
+            4344,
+            4028,
+            4610,
+            5468,
+            4344,
+            2880,
+            4344,
+            4028,
+            4610,
+            2880,
+            4610,
+            3990,
+            548,
+            5468,
+            8272,
+            5468,
+            4344,
+            2880,
+            8272,
+            2880,
+            636,
+            5468,
+            4344,
+            2880,
+            4344,
+            4028,
+            4610,
+            2880,
+            4610,
+            3990,
+            8272,
+            2880,
+            636,
+            2880,
+            4610,
+            3990,
+            636,
+            3990,
+            4488
+          ],
+          "exact": {
+            "raw_count": 401272,
+            "reciprocal_mass_numerator": 99522824,
+            "reciprocal_mass_denominator": 1875,
+            "reciprocal_mass_decimal": "53078.83946666666666666666666666666666667"
+          },
+          "decimal_evaluations": {
+            "50": {
+              "precision_digits": 50,
+              "pi": "3.1415926535897932384626433832795028841971693993751",
+              "phi": {
+                "1": "0.92241640176425743774753260735089822178502760337198",
+                "3": "0.50000000000000000000000000000000000000000000000000",
+                "5": "0.077583598235742562252467392649101778214972396628035"
+              },
+              "abs_beta": {
+                "1": "0.29361425985964251380177324633332039386465394494271",
+                "3": "0.053051647697298445256294587790838120678153215246819",
+                "5": "0.0049391252648296315471988560823416660408530693076421"
+              },
+              "true_sign_pattern": [
+                1,
+                -1,
+                1
+              ],
+              "random_sign_pattern": [
+                -1,
+                1,
+                1
+              ],
+              "true_beta_signed_mass": "208.09876338193310649407616544597236666857214011467",
+              "true_beta_signed_abs": "208.09876338193310649407616544597236666857214011467",
+              "unsigned_beta_mass": "269.29551654679363619343466293909649001804191533763",
+              "random_signed_mass": "210.11337767471993747413494787876712912606839561947",
+              "random_signed_abs": "210.11337767471993747413494787876712912606839561947",
+              "adversarial_max_abs_mass": "269.29551654679363619343466293909649001804191533763",
+              "adversarial_pattern": [
+                -1,
+                -1,
+                -1
+              ]
+            },
+            "80": {
+              "precision_digits": 80,
+              "pi": "3.1415926535897932384626433832795028841971693993751058209749445923078164062862090",
+              "phi": {
+                "1": "0.92241640176425743774753260735089822178502760337197523982078538974505132546931412",
+                "3": "0.50000000000000000000000000000000000000000000000000000000000000000000000000000000",
+                "5": "0.077583598235742562252467392649101778214972396628024760179214610254948674530685879"
+              },
+              "abs_beta": {
+                "1": "0.29361425985964251380177324633332039386465394494270501459030675072128962933763107",
+                "3": "0.053051647697298445256294587790838120678153215246818816249222448019632265878075512",
+                "5": "0.0049391252648296315471988560823416660408530693076415765810055874793007931861643994"
+              },
+              "true_sign_pattern": [
+                1,
+                -1,
+                1
+              ],
+              "random_sign_pattern": [
+                -1,
+                1,
+                1
+              ],
+              "true_beta_signed_mass": "208.09876338193310649407616544597236666857214011455492792032061277541469346729157",
+              "true_beta_signed_abs": "208.09876338193310649407616544597236666857214011455492792032061277541469346729157",
+              "unsigned_beta_mass": "269.29551654679363619343466293909649001804191533763281310189030734254325479942293",
+              "random_signed_mass": "210.11337767471993747413494787876712912606839561937836397508091036768023292442237",
+              "random_signed_abs": "210.11337767471993747413494787876712912606839561937836397508091036768023292442237",
+              "adversarial_max_abs_mass": "269.29551654679363619343466293909649001804191533763281310189030734254325479942293",
+              "adversarial_pattern": [
+                -1,
+                -1,
+                -1
+              ]
+            }
+          },
+          "precision_relative_differences": {
+            "true_beta_signed_mass": "5.52968589573933283667267049981719371023723411214300567702612E-49",
+            "unsigned_beta_mass": "1.04461519685884896951685354824317649670564990065831611915843E-50",
+            "random_signed_mass": "4.36126561446044180471587359955943495189318029299051551774827E-49",
+            "adversarial_max_abs_mass": "1.04461519685884896951685354824317649670564990065831611915843E-50"
+          },
+          "ratios": {
+            "reciprocal_over_raw": "0.1322764595253759710786366023",
+            "pi4_unsigned_beta_over_reciprocal": "0.4942050683460936112559020955",
+            "signed_abs_over_unsigned": "0.7727524247354976318865256272",
+            "random_abs_over_unsigned": "0.7802334787040911463734590438",
+            "adversarial_over_unsigned": "1",
+            "unsigned_beta_over_D2": "0.4308728264748698179094954607",
+            "unsigned_beta_over_D_plus_D4_over_X": "0.4143007946873748249129764045"
+          },
+          "pass_flags": {
+            "signed_triangle_inequality": true,
+            "random_triangle_inequality": true,
+            "adversarial_equals_unsigned": true,
+            "precision_stable": true
+          }
+        },
+        {
+          "band_id": "nonzero_le_2500",
+          "band_definition": "0<|N|<=2500",
+          "tensor_counts_by_abs_frequency": [
+            105180,
+            21444,
+            2668,
+            21444,
+            40860,
+            22284,
+            2668,
+            22284,
+            33860,
+            21444,
+            40860,
+            22284,
+            40860,
+            10854,
+            17482,
+            22284,
+            17482,
+            11704,
+            2668,
+            22284,
+            33860,
+            22284,
+            17482,
+            11704,
+            33860,
+            11704,
+            2718,
+            21444,
+            40860,
+            22284,
+            40860,
+            10854,
+            17482,
+            22284,
+            17482,
+            11704,
+            40860,
+            10854,
+            17482,
+            10854,
+            39528,
+            16458,
+            17482,
+            16458,
+            20054,
+            22284,
+            17482,
+            11704,
+            17482,
+            16458,
+            20054,
+            11704,
+            20054,
+            16824,
+            2668,
+            22284,
+            33860,
+            22284,
+            17482,
+            11704,
+            33860,
+            11704,
+            2718,
+            22284,
+            17482,
+            11704,
+            17482,
+            16458,
+            20054,
+            11704,
+            20054,
+            16824,
+            33860,
+            11704,
+            2718,
+            11704,
+            20054,
+            16824,
+            2718,
+            16824,
+            23124
+          ],
+          "exact": {
+            "raw_count": 1637980,
+            "reciprocal_mass_numerator": 1119691996,
+            "reciprocal_mass_denominator": 5625,
+            "reciprocal_mass_decimal": "199056.3548444444444444444444444444444444"
+          },
+          "decimal_evaluations": {
+            "50": {
+              "precision_digits": 50,
+              "pi": "3.1415926535897932384626433832795028841971693993751",
+              "phi": {
+                "1": "0.92241640176425743774753260735089822178502760337198",
+                "3": "0.50000000000000000000000000000000000000000000000000",
+                "5": "0.077583598235742562252467392649101778214972396628035"
+              },
+              "abs_beta": {
+                "1": "0.29361425985964251380177324633332039386465394494271",
+                "3": "0.053051647697298445256294587790838120678153215246819",
+                "5": "0.0049391252648296315471988560823416660408530693076421"
+              },
+              "true_sign_pattern": [
+                1,
+                -1,
+                1
+              ],
+              "random_sign_pattern": [
+                -1,
+                1,
+                1
+              ],
+              "true_beta_signed_mass": "720.89530261109142690158820961603343246634703340617",
+              "true_beta_signed_abs": "720.89530261109142690158820961603343246634703340617",
+              "unsigned_beta_mass": "967.35796593124197315706470856412970223492596587529",
+              "random_signed_mass": "728.69269748086664586102793156376105192021756989321",
+              "random_signed_abs": "728.69269748086664586102793156376105192021756989321",
+              "adversarial_max_abs_mass": "967.35796593124197315706470856412970223492596587529",
+              "adversarial_pattern": [
+                -1,
+                -1,
+                -1
+              ]
+            },
+            "80": {
+              "precision_digits": 80,
+              "pi": "3.1415926535897932384626433832795028841971693993751058209749445923078164062862090",
+              "phi": {
+                "1": "0.92241640176425743774753260735089822178502760337197523982078538974505132546931412",
+                "3": "0.50000000000000000000000000000000000000000000000000000000000000000000000000000000",
+                "5": "0.077583598235742562252467392649101778214972396628024760179214610254948674530685879"
+              },
+              "abs_beta": {
+                "1": "0.29361425985964251380177324633332039386465394494270501459030675072128962933763107",
+                "3": "0.053051647697298445256294587790838120678153215246818816249222448019632265878075512",
+                "5": "0.0049391252648296315471988560823416660408530693076415765810055874793007931861643994"
+              },
+              "true_sign_pattern": [
+                1,
+                -1,
+                1
+              ],
+              "random_sign_pattern": [
+                -1,
+                1,
+                1
+              ],
+              "true_beta_signed_mass": "720.89530261109142690158820961603343246634703340611942516449914665672493040413563",
+              "true_beta_signed_abs": "720.89530261109142690158820961603343246634703340611942516449914665672493040413563",
+              "unsigned_beta_mass": "967.35796593124197315706470856412970223492596587521728249153616258004102129662371",
+              "random_signed_mass": "728.69269748086664586102793156376105192021756989321092910131489390021959689167675",
+              "random_signed_abs": "728.69269748086664586102793156376105192021756989321092910131489390021959689167675",
+              "adversarial_max_abs_mass": "967.35796593124197315706470856412970223492596587521728249153616258004102129662371",
+              "adversarial_pattern": [
+                -1,
+                -1,
+                -1
+              ]
+            }
+          },
+          "precision_relative_differences": {
+            "true_beta_signed_mass": "7.01555903023236285317051844738032080022987403506800088310362E-50",
+            "unsigned_beta_mass": "7.51712509999695881483562814705371376373502956883897166390454E-50",
+            "random_signed_mass": "1.27502487414222470927102045307271618446448647688055914221844E-51",
+            "adversarial_max_abs_mass": "7.51712509999695881483562814705371376373502956883897166390454E-50"
+          },
+          "ratios": {
+            "reciprocal_over_raw": "0.1215255099845202288455563831",
+            "pi4_unsigned_beta_over_reciprocal": "0.4733808184094438674165831879",
+            "signed_abs_over_unsigned": "0.7452208262089520442052965428",
+            "random_abs_over_unsigned": "0.7532813323963063161814240159",
+            "adversarial_over_unsigned": "1",
+            "unsigned_beta_over_D2": "1.547772745489987157051303534",
+            "unsigned_beta_over_D_plus_D4_over_X": "1.488243024509603035626253398"
+          },
+          "pass_flags": {
+            "signed_triangle_inequality": true,
+            "random_triangle_inequality": true,
+            "adversarial_equals_unsigned": true,
+            "precision_stable": true
+          }
+        }
+      ],
+      "elapsed_seconds": 0.8293391999995947
+    }
+  ],
+  "endpoint_pairing_controls": {
+    "precision_digits": 70,
+    "real_weights_raw": [
+      "-0.7041900879155553763181504479031203247303982967057456918848330291854500",
+      "1.95E-70"
+    ],
+    "real_weights_cosine_pair": [
+      "-0.7041900879155553763181504479031203247303982967057456918848330291854505",
+      "0E-211"
+    ],
+    "real_weights_re_shortcut": [
+      "-0.7041900879155553763181504479031203247303982967057456918848330291854505",
+      "0"
+    ],
+    "real_raw_minus_cosine_abs": "5.366796064692602049236382387101784584192065642270321483030880328079851E-70",
+    "real_raw_minus_re_abs": "5.366796064692602049236382387101784584192065642270321483030880328079851E-70",
+    "complex_weights_raw": [
+      "-0.6503623379895987451112970326599198830912432120647640034237343792464250",
+      "-0.3628550524978809234916623609794330517127160055374069788407080822095723"
+    ],
+    "complex_weights_cosine_pair": [
+      "-0.6503623379895987451112970326599198830912432120647640034237343792464261",
+      "-0.3628550524978809234916623609794330517127160055374069788407080822095727"
+    ],
+    "complex_weights_re_shortcut": [
+      "-0.7228591369469490969362890014477119753158754848387300004564835742786687",
+      "0"
+    ],
+    "complex_raw_minus_cosine_abs": "1.170469991071962510910209827422862108882331051828184761466008267969075E-69",
+    "complex_raw_minus_re_abs": "0.3700264517332543296161066625484458877176428969355085874132390980000787",
+    "asymmetric_h_raw": [
+      "-0.2197659107555595000791877958509096166721878404477903525639677968776131",
+      "-0.5101241642960900717458581880425505761602715732112313343719266840549416"
+    ],
+    "asymmetric_raw_minus_symmetric_cosine_abs": "0.4550840300829646553111980184970301697225024278472032754027487209828506",
+    "pass_flags": {
+      "real_raw_equals_cosine": true,
+      "real_raw_equals_Re_shortcut": true,
+      "complex_raw_equals_cosine": true,
+      "complex_Re_shortcut_fails_as_expected": true,
+      "asymmetric_h_pairing_fails_as_expected": true
+    }
+  },
+  "global_controls": {
+    "raw_vs_weighted": {
+      "rule": "At the endpoint natural band, exact reciprocal mass is strictly below the odd-supported raw count.",
+      "pass": true
+    },
+    "signed_vs_unsigned": {
+      "rule": "At the endpoint natural band, true signed mass is strictly below unsigned beta mass; triangle inequality holds in every band.",
+      "pass": true
+    },
+    "dyadic_endpoints": {
+      "rule": "The exact D=X^(1/4), rounded D=X^(3/8), and exact D=X^(1/2) rows all ran and include their natural nonzero bands.",
+      "pass": true
+    },
+    "real_vs_complex_pairing": {
+      "rule": "Raw=cosine pairing for shared weights; Re(B_h) only for real weights; asymmetric h-weights break symmetric pairing.",
+      "pass": true
+    },
+    "exact_vs_near": {
+      "rule": "N=0 and 0<|N| bands are accumulated in disjoint exact-integer tensors.",
+      "pass": true
+    },
+    "precision": {
+      "rule": "All beta masses agree at 50 and 80 digits to relative error below 1e-40.",
+      "pass": true
+    },
+    "small_scale_brute_force": {
+      "rule": "The independent literal enumeration exactly matches every pair-join tensor at the lower and crossover scales.",
+      "pass": true
+    }
+  },
+  "limitations": [
+    "One bounded instance X=625 is used; there is no size sweep or exponent fit.",
+    "Sharp unit denominator weights are used for mass enumeration; smooth-weight behavior is not tested.",
+    "The raw count is coefficient-compatible (odd frequencies only), not an all-frequency count.",
+    "Only exact N=0 and cumulative bands |N|<=1, floor(D^4/X), and four times that natural band are tested.",
+    "The finite comparison cannot certify a uniform asymptotic bound or a crossover exponent."
+  ],
+  "elapsed_seconds": 0.9363474000001588
+}

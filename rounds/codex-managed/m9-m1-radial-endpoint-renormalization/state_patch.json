@@ -1,0 +1,167 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-radial-endpoint-subtraction-identity",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Exact arbitrary-order radial endpoint subtraction",
+        "status": "proved_internal",
+        "statement_tex": "Let rho=w-3/4-v/2, C=pi i sqrt X, and I_k(rho)=int_1^N x^(rho+k/2-1)e(sqrt(Xx))dx. For every M>=1, G_v(w)=E_(M,v)(w)+R_(M,v)(w), where E_M=sum_(k=0)^(M-1)(-C)^k{N^(rho+k/2)e(sqrt(XN))-e(sqrt X)}/prod_(r=0)^k(rho+r/2), and R_M=(-C)^M I_M(rho)/prod_(r=0)^(M-1)(rho+r/2). Upper endpoint signs are positive, lower endpoint signs negative, and the coefficients have full weight; endpoint stars belong to symmetric inversion and do not halve these integration-by-parts coefficients. The apparent poles rho=-r/2 are artificial and cancel between E_M and R_M.",
+        "dependencies": [
+          "M9-M1-finite-vector-Hankel-identity",
+          "M9-M1-absolute-nested-exhaustion-capacity-no-go"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-radial-endpoint-renormalization/reports/blind_radial_endpoint_subtraction.md",
+            "rounds/codex-managed/m9-m1-radial-endpoint-renormalization/reports/endpoint_renormalization_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-radial-endpoint-renormalization/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use the exact split only with artificial-pole residues paired and cancelled; start boundary analysis at M=1."
+      },
+      {
+        "id": "M9-M1-renormalized-radial-side-removal",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Scoped nested removal of the renormalized radial sides",
+        "status": "proved_internal",
+        "statement_tex": "Fix the finite outside abscissae and choose M>-2lambda, lambda=1-c'<0. On radial sides with S>>X+U+V, the endpoint-subtracted remainder satisfies R_(M,v)(sigma plus or minus iS)=O_(X,N,M,c,c',b)(S^(-M-1)). Against the degree-two left-edge capacity and outside Mellin norms, the renormalized side is O_(X,M)((log X)log(2+U)S^(-M-2lambda)). Hence a sufficiently high polynomial nested height S=S(X,U,V) removes the renormalized radial sides. This lemma does not bound the explicit endpoint boundary operator or diagonal transition traces.",
+        "dependencies": [
+          "M9-M1-radial-endpoint-subtraction-identity",
+          "M9-M1-diagonal-single-transition-normal-form"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-radial-endpoint-renormalization/reports/blind_radial_endpoint_subtraction.md",
+            "rounds/codex-managed/m9-m1-radial-endpoint-renormalization/reports/endpoint_renormalization_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-radial-endpoint-renormalization/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Delete only the renormalized radial sides under the declared exhaustion; retain E_M and all outside sides/residues."
+      },
+      {
+        "id": "M9-M1-endpoint-boundary-operator",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Explicit radial endpoint boundary operator",
+        "status": "open",
+        "statement_tex": "For M chosen as in M9-M1-renormalized-radial-side-removal, control the exact endpoint operator Efrak_M=T(E_M)+S(E_M), retaining the upper-minus-lower side orientation, full endpoint coefficients at x=N_X and x=1, every actual scale/floor/profile factor, the reflected dual coefficients, and the correctly recombined arithmetic, height, hard-Perron, corner, and artificial-pole residue ledger. Determine whether it reduces to known direct boundary terms or satisfies a target-sized signed estimate. No half-weight or termwise upper/lower cancellation is valid.",
+        "dependencies": [
+          "M9-M1-radial-endpoint-subtraction-identity",
+          "M9-M1-renormalized-radial-side-removal"
+        ],
+        "implies": [
+          "M9-M1-renormalized-radial-boundary-operator"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-radial-endpoint-renormalization/reports/blind_radial_endpoint_subtraction.md",
+            "rounds/codex-managed/m9-m1-radial-endpoint-renormalization/reports/endpoint_renormalization_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-radial-endpoint-renormalization/synthesis.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Collapse the M=1 terminal-plus-side operator by Cauchy algebra and compare it with the original sharp radial boundary contributions."
+      },
+      {
+        "id": "M9-M1-endpoint-boundary-automatic-cancellation-no-go",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Endpoint boundary terms do not cancel automatically",
+        "status": "proved_internal",
+        "statement_tex": "Endpoint IBP coefficients have full weight. The upper physical endpoint enters with plus sign and the lower with minus sign, while the lower radial contour has the opposite orientation from the upper; in common left-to-right orientation the side is upper minus lower. A far-right k=0,x=1 control is nonzero and reinforces rather than cancels. Artificial poles of E_M and R_M cancel only after recombination, and split arithmetic or axial residues must recombine to the original G_v residue. Thus stars, upper/lower symmetry, or retaining both split and unsplit residues cannot prove boundary cancellation.",
+        "dependencies": [
+          "M9-M1-radial-endpoint-subtraction-identity"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-radial-endpoint-renormalization/reports/endpoint_renormalization_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-radial-endpoint-renormalization/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Require a signed estimate or an exact Cauchy reduction of the full boundary operator; reject coefficientwise cancellation shortcuts."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-renormalized-radial-boundary-operator",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M1-radial-endpoint-subtraction-identity",
+          "M9-M1-renormalized-radial-side-removal",
+          "M9-M1-endpoint-boundary-operator"
+        ],
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-m1-radial-endpoint-renormalization/reports/endpoint_renormalization_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-radial-endpoint-renormalization/reports/blind_radial_endpoint_subtraction.md",
+            "rounds/codex-managed/m9-m1-radial-endpoint-renormalization/synthesis.md"
+          ]
+        },
+        "statement_tex": "The radial Mellin transform has the exact finite split G_v=E_M+R_M. For M>-2lambda, the renormalized radial horizontal sides from R_M vanish under a sufficiently high polynomial nested exhaustion. The remaining sufficient object is the explicit endpoint boundary operator M9-M1-endpoint-boundary-operator together with the two diagonal transition traces and correctly recombined residue ledger. Automatic endpoint or residue cancellation is rejected.",
+        "next_action": "Analyze the M=1 endpoint boundary operator by finite Cauchy algebra before increasing subtraction order or attacking transition traces."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round21-IBP-endpoints-have-half-weight",
+        "reason": "Changing the integrand at endpoint points does not alter its Mellin integral; stars apply to symmetric inversion, not the fundamental-theorem boundary coefficients."
+      },
+      {
+        "id": "Round21-upper-lower-radial-sides-cancel-termwise",
+        "reason": "The lower contour has opposite orientation, converting the tempting denominator sign reversal into reinforcement in the exact far-right control."
+      },
+      {
+        "id": "Round21-artificial-pole-residues-are-new",
+        "reason": "The split terms E_M and R_M have opposite artificial residues because their sum G_v is entire; counting either as a new residue is invalid."
+      },
+      {
+        "id": "Round21-keep-unsplit-and-split-arithmetic-residues",
+        "reason": "At the arithmetic pole the E_M and R_M residues recombine to G_v L; retaining the unsplit residue as well double-counts it."
+      },
+      {
+        "id": "Round21-endpoint-subtraction-alone-closes-vector-kernel",
+        "reason": "Subtraction removes only renormalized radial sides; the explicit endpoint boundary operator and diagonal transition traces remain unestimated."
+      }
+    ],
+    "no_change": [
+      {"id": "M9-M1-swept-transition-horizontal-operator", "reason": "The transition traces and endpoint boundary operator remain open."},
+      {"id": "M9-M1-post-FE-vector-kernel", "reason": "No full vector estimate was proved."},
+      {"id": "M9-M1-high-2adic-tail-conditional", "reason": "No reflected vector norm was proved."},
+      {"id": "M9-M1-global-angular-radial-estimate", "reason": "No GAR estimate was proved."},
+      {"id": "M9-M1", "reason": "No M1 estimate was proved."},
+      {"id": "M9-M2", "reason": "Round 21 concerns transformed M1."},
+      {"id": "M9", "reason": "Principal sublemmas remain open."},
+      {"id": "GC-target", "reason": "Endpoint renormalization infrastructure does not prove the target."}
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 8,
+    "calibration_score": 10,
+    "reason": "Round 21 removes the renormalized radial horizontal sides by exact arbitrary-order endpoint subtraction and isolates a finite explicit boundary operator. The signed boundary attacker did not finish, so no cancellation estimate is asserted."
+  }
+}

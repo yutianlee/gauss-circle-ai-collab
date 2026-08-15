@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "round_index": 72,
+  "round_type": "upper_conductor_reciprocal_square_large_sieve",
+  "campaign_id": "m9-m1-upper-conductor-reciprocal-square-large-sieve",
+  "title": "Upper-conductor reciprocal-square energy estimate",
+  "status": "complete",
+  "max_concurrency": 3,
+  "coordinator": "Codex",
+  "starting_graph_sha256": "1e2876b1d8d60cdf1bd057684a9ac65c1f56f4f2e8aa5d90063fa13b37fc8eda",
+  "resource_policy": {
+    "analytical_algebraic_minimum_percent": 80,
+    "numerical_experimental_maximum_percent": 20,
+    "literature_policy": "Audit primary reciprocal-fraction, spectral-large-sieve, trace-function, and phase-specific bilinear theorems before import."
+  },
+  "target_obligations": [
+    "M9-M1-product-wavelet-short-numerator-Kloosterman-reduction",
+    "M9-M1-product-wavelet-low-conductor-Farey-stationary-bound",
+    "M9-M1-upper-conductor-reciprocal-square-Bprocess-self-return",
+    "M9-M1-global-angular-radial-estimate"
+  ],
+  "frozen_target": {
+    "question": "Can the actual upper-conductor reciprocal-square family satisfy the optimally normalized b-energy bound E_C,k << J^2/T, including its even and axial companions, or can the remaining survivor be narrowed further?",
+    "reference_formula": "For J^(2/3)<C<=J, B=C/T, S_b,k=sum_(c~C,(c,4b)=1) a_(b,c,k)e_(4b)(k cbar)e(-A_b/c), A_b=(sqrt(bX)+sqrt(k)/(2sqrt(b)))^2, prove sum_(b~B)|S_b,k|^2 << X^epsilon J^2/T or an equivalent first-moment estimate.",
+    "quantities": [
+      "J=X^(1/2), Q=X^(1/5), T=J/Q=X^(3/10)",
+      "J^(2/3)<C<=J and B=C/T",
+      "diagonal BC=C^2/T and target energy J^2/T",
+      "actual stationary symbols, transitions, local factors, axes, and finite k family retained"
+    ]
+  },
+  "completion_criteria": [
+    "Derive the exact sufficient energy and first-moment normalizations.",
+    "Prove the upper range, close a strict subrange, or isolate a smaller actual-symbol obstruction.",
+    "Audit diagonal, near-diagonal, perfect powers, transitions, even classes, axes, gcds, and errors.",
+    "Do not repeat the accepted one-variable c-Poisson/n-B-process self-return.",
+    "Complete clean blind and hostile/source gates.",
+    "Do not promote M9-M1 or an exponent from a fixed-interior result."
+  ],
+  "controls": [
+    "energy_normalization",
+    "actual_symbol",
+    "diagonal_and_near_diagonal",
+    "b_endpoints",
+    "Farey_transitions",
+    "perfect_powers",
+    "even_local_classes",
+    "axes_and_gcds",
+    "finite_k_and_error_sum",
+    "source_applicability",
+    "self_return_avoidance",
+    "downstream_scope"
+  ],
+  "tasks": [
+    {
+      "id": "upper_reciprocal_energy_attack",
+      "role": "discovery",
+      "access_mode": "selected_context",
+      "status": "complete",
+      "target": "Expand and estimate the exact b-energy, seeking a diagonal-scale or sufficient J^2/T bound through genuinely joint b,c cancellation; otherwise prove a sharp actual-symbol no-go and isolate a smaller upper-conductor survivor.",
+      "context_files": [
+        "protocol.md",
+        "state/proof_obligations.yml",
+        "state/active_campaign.yml",
+        "rounds/codex-managed/m9-m1-upper-conductor-reciprocal-square-large-sieve/briefs/upper_reciprocal_energy_attack.md",
+        "rounds/codex-managed/m9-m1-upper-conductor-reciprocal-square-large-sieve/derivation_packet.md",
+        "rounds/codex-managed/m9-m1-short-numerator-kloosterman-large-sieve/synthesis.md",
+        "rounds/codex-managed/m9-m1-short-numerator-kloosterman-large-sieve/reviews/conductor_round71_adjudication.md",
+        "rounds/codex-managed/m9-m1-short-numerator-kloosterman-large-sieve/reports/conductor_farey_stationary_low_conductor.md"
+      ],
+      "required_output": [
+        "rounds/codex-managed/m9-m1-upper-conductor-reciprocal-square-large-sieve/reports/upper_reciprocal_energy_attack.md"
+      ]
+    },
+    {
+      "id": "blind_upper_conductor_rederivation",
+      "role": "blind_rederiver",
+      "access_mode": "statement_only",
+      "status": "complete_clean_with_separate_post_isolation_seam_review",
+      "target": "Independently derive the weakest sufficient energy statement, test its diagonal and resonance controls, and prove it or give a rigorous packet-level no-go without importing claimant material.",
+      "context_files": [
+        "rounds/codex-managed/m9-m1-upper-conductor-reciprocal-square-large-sieve/briefs/blind_upper_conductor_rederivation.md",
+        "rounds/codex-managed/m9-m1-upper-conductor-reciprocal-square-large-sieve/derivation_packet.md"
+      ],
+      "excluded_context": [
+        "state/proof_obligations.yml",
+        "state/best_proof_draft.md",
+        "all prior and sibling reports",
+        "all source cards and web literature"
+      ],
+      "required_output": [
+        "rounds/codex-managed/m9-m1-upper-conductor-reciprocal-square-large-sieve/reports/blind_upper_conductor_rederivation.md"
+      ]
+    },
+    {
+      "id": "upper_reciprocal_source_hostile_audit",
+      "role": "source_auditor",
+      "access_mode": "selected_context",
+      "status": "complete_clean_source_audit",
+      "target": "Search for a diagonal, resonance, transition, parity, or source-hypothesis obstruction and audit exact applicability of primary reciprocal-fraction, spectral-large-sieve, trace-function, and phase-specific bilinear theorems.",
+      "context_files": [
+        "protocol.md",
+        "state/proof_obligations.yml",
+        "state/active_campaign.yml",
+        "rounds/codex-managed/m9-m1-upper-conductor-reciprocal-square-large-sieve/briefs/upper_reciprocal_source_hostile_audit.md",
+        "rounds/codex-managed/m9-m1-upper-conductor-reciprocal-square-large-sieve/derivation_packet.md",
+        "rounds/codex-managed/m9-m1-short-numerator-kloosterman-large-sieve/synthesis.md",
+        "rounds/codex-managed/m9-m1-short-numerator-kloosterman-large-sieve/reviews/conductor_round71_adjudication.md",
+        "rounds/codex-managed/m9-m1-short-numerator-kloosterman-large-sieve/reports/short_numerator_source_hostile_audit.md"
+      ],
+      "required_output": [
+        "rounds/codex-managed/m9-m1-upper-conductor-reciprocal-square-large-sieve/reports/upper_reciprocal_source_hostile_audit.md"
+      ]
+    }
+  ],
+  "review_seams": [
+    "energy and first-moment normalization",
+    "actual-symbol diagonal and off-diagonal",
+    "transitions, even classes, axes, and gcds",
+    "source hypotheses and perfect-power controls",
+    "upper-range implication and downstream scope"
+  ]
+}

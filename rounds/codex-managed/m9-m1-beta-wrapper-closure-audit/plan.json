@@ -1,0 +1,181 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 48,
+    "round_type": "beta_wrapper_closure_audit",
+    "campaign_id": "m9-m1-beta-wrapper-closure-audit",
+    "title": "Exact closure audit for the remaining beta wrapper nodes",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "literature_policy": "No external theorem is needed; audit only accepted exact identities, graph implications, and one-count assembly."
+    },
+    "target_obligations": [
+      "M9-M1-beta-complete-physical-height-symbol-bound",
+      "M9-M1-beta-regular-finite-part-symbol-BV",
+      "M9-M1-beta-log-amplitude-two-saddle-kernel",
+      "M9-M1-beta-transition-connector-reduction"
+    ],
+    "frozen_target": {
+      "question": "Do the accepted positive-line beta cells and routing identities now close the four remaining beta wrapper nodes, or does a genuine residual beta operator remain?",
+      "reference_formula": "Use the Round-48 derivation packet and the exact accepted graph state after Round 47.",
+      "quantities": [
+        "finite sixteen-stratum aggregate",
+        "boundary and physical modules",
+        "signed diagonal and regular finite part",
+        "fixed-ratio log/Fresnel package",
+        "compact, middle, inner, and outer positive-line cells",
+        "complete beta-transition wrapper",
+        "one-count normalization ledger"
+      ]
+    },
+    "completion_criteria": [
+      "Every W1--W4 antecedent is mapped to an accepted owner.",
+      "No physical stratum or boundary module is omitted or counted twice.",
+      "Every promoted wrapper follows by exact implication rather than theorem-title similarity.",
+      "Any surviving beta operator is stated explicitly if closure fails.",
+      "The separate alpha-bounded branch and downstream M1/M9 claims remain outside scope.",
+      "A clean statement-only rederivation and independent hostile audit exist.",
+      "The conductor closes the round before opening the alpha-bounded campaign."
+    ],
+    "controls": [
+      "common_antecedent",
+      "sixteen_stratum_aggregate",
+      "physical_module_ownership",
+      "signed_diagonal_order",
+      "stationary_nonsaddle_separation",
+      "wrapper_dependency_implication",
+      "one_count_normalization",
+      "alpha_branch_exclusion"
+    ],
+    "tasks": [
+      {
+        "id": "beta_wrapper_implication_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "target": "Construct an exact owner/dependency table for W1--W4 and prove closure or isolate the first residual beta formula.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-beta-wrapper-closure-audit/derivation_packet.md",
+          "rounds/codex-managed/m9-m1-beta-complete-physical-height-symbol/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-log-amplitude-two-saddle/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-off-diagonal-product-cell/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-global-nonsaddle-signed-section/synthesis.md"
+        ],
+        "required_controls": [
+          "common_antecedent",
+          "sixteen_stratum_aggregate",
+          "physical_module_ownership",
+          "signed_diagonal_order",
+          "stationary_nonsaddle_separation",
+          "wrapper_dependency_implication",
+          "one_count_normalization",
+          "alpha_branch_exclusion"
+        ],
+        "required_output": [
+          "seven-section report",
+          "W1--W4 implication table",
+          "state recommendation"
+        ]
+      },
+      {
+        "id": "blind_beta_wrapper_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "target": "Using only the frozen packet, independently prove or refute the W1--W4 wrapper implications and identify any missing antecedent.",
+        "context_files": [
+          "rounds/codex-managed/m9-m1-beta-wrapper-closure-audit/derivation_packet.md"
+        ],
+        "excluded_context": [
+          "proof graph",
+          "proof draft",
+          "prior reports and syntheses",
+          "other Round-48 reports"
+        ],
+        "required_controls": [
+          "common_antecedent",
+          "sixteen_stratum_aggregate",
+          "physical_module_ownership",
+          "signed_diagonal_order",
+          "stationary_nonsaddle_separation",
+          "wrapper_dependency_implication",
+          "one_count_normalization",
+          "alpha_branch_exclusion"
+        ],
+        "required_output": [
+          "seven-section statement-only report",
+          "independent implication proof or first missing hypothesis",
+          "state recommendation"
+        ]
+      },
+      {
+        "id": "beta_wrapper_hostile_audit",
+        "role": "seam_reviewer",
+        "access_mode": "selected_context",
+        "target": "Hostile-audit W1--W4 for omitted strata, circular dependencies, normalization duplication, and illicit beta-to-alpha scope expansion without reading the discovery report.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-beta-wrapper-closure-audit/derivation_packet.md",
+          "rounds/codex-managed/m9-m1-beta-complete-axial-connector-ledger/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-physical-module-transfer/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-positive-line-localization/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-global-nonsaddle-signed-section/synthesis.md"
+        ],
+        "required_controls": [
+          "common_antecedent",
+          "sixteen_stratum_aggregate",
+          "physical_module_ownership",
+          "signed_diagonal_order",
+          "stationary_nonsaddle_separation",
+          "wrapper_dependency_implication",
+          "one_count_normalization",
+          "alpha_branch_exclusion"
+        ],
+        "required_output": [
+          "seven-section hostile report",
+          "counterexample or seam certification",
+          "recommended graph effect"
+        ]
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "owner_table",
+        "requirement": "Map every finite and limiting beta stratum to exactly one accepted owner."
+      },
+      {
+        "id": "logical_implication",
+        "requirement": "Check W1--W4 in dependency order and reject circular promotion."
+      },
+      {
+        "id": "normalization",
+        "requirement": "Verify stationary, radial, contour, endpoint, and external factors occur once."
+      },
+      {
+        "id": "scope",
+        "requirement": "Exclude the alpha-bounded branch and all downstream M1/M9 claims."
+      },
+      {
+        "id": "mathematical_isolation",
+        "requirement": "The statement-only proof sees only the Round-48 packet and brief."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "951143c8987f82124ac41524dd924576691b7d6753c46633dafa84934861d671",
+    "generated_at": "2026-08-13T13:55:48.417884+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

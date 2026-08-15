@@ -1,0 +1,70 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-alpha-jump-incidence-specification-no-go",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Universal alpha seam incidence and missing actual seam specification",
+        "status": "proved_internal",
+        "statement_tex": "For a generic moving seam W_s=W_-+Delta W S^*(L_s-L_0), differentiating the complete finite two-axis Cauchy-Green ledger gives explicit first-connector delta terms and mixed delta/delta-prime terms. The sixteen grouped strata reassemble the original right-line seam with relative coefficient +1; they do not cancel it identically. The accepted state does not define an actual alpha seam coefficient for an H_j floor, product star, dyadic profile edge, or radial endpoint: it lacks the common finite alpha numerator, a typed primal seam map, the full jump, face/axis pullbacks and velocities, and collision regularization with the Plemelj distribution. Therefore neither zero nor a nonzero actual coefficient is presently determined. Equality-star value one-half does not halve the distributional jump, and the beta sixteen-cell geometry cannot be substituted for an undefined alpha seam.",
+        "dependencies": [
+          "M9-M1-alpha-highpass-moving-packet-no-go",
+          "M9-M1-beta-complete-axial-connector-ledger",
+          "M9-M1-beta-finite-box-Plemelj-limit"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-alpha-signed-jump-incidence/reports/actual_jump_incidence_constructor.md",
+            "rounds/codex-managed/m9-m1-alpha-signed-jump-incidence/reports/blind_jump_incidence_rederivation.md",
+            "rounds/codex-managed/m9-m1-alpha-signed-jump-incidence/reports/jump_incidence_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-alpha-signed-jump-incidence/reviews/conductor_incidence_scope_adjudication.md",
+            "rounds/codex-managed/m9-m1-alpha-signed-jump-incidence/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Freeze only the first H_j-floor transition from the exact finite alpha amplitude, with a declared varied scale coordinate, full adjacent traces, all stratum pullbacks, and joint Plemelj collision rule."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-alpha-bounded-zeta-high-transition-bound",
+        "statement_tex": "The connector-completed alpha-bounded zeta-high trace remains the signed projected cosine-comb/GAR-return operator with moving multiplier m_lambda(beta)=(1-psi(beta))psi(beta+lambda). Zero mass and packetwise BV do not control lattice/floor/star jumps. The universal sixteen-cell seam ledger reconstructs a generic right-line jump with relative coefficient +1 rather than cancelling it. Before any actual signed seam theorem can be attempted, define from the exact finite alpha antecedent the first H_j-floor event: one typed varied scale coordinate, its coupled changes in the height indicator, Vaaler profile, (H_j+1)^v power and denominator profile, the common numerator, all face/axis pullbacks and velocities, equality convention, and joint Plemelj collision rule. Then prove its complete signed incidence is zero or target-sized, followed by the outside-height Cauchy limit and global arithmetic sum. No actual coefficient is currently determined.",
+        "dependencies_added": ["M9-M1-alpha-jump-incidence-specification-no-go"],
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-m1-alpha-signed-jump-incidence/reports/jump_incidence_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-alpha-signed-jump-incidence/reports/actual_jump_incidence_constructor.md",
+            "rounds/codex-managed/m9-m1-alpha-signed-jump-incidence/synthesis.md"
+          ]
+        },
+        "next_action": "Derive the exact first H_j-floor adjacent-scale seam from the finite alpha amplitude, or prove that H_j is not a lawful continuous seam variable and replace the incidence target by a discrete adjacent-scale difference identity."
+      }
+    ],
+    "reject": [
+      {"id": "Round51-sixteen-connector-labels-sum-to-zero-seam", "reason": "The sixteen finite Stokes strata reconstruct the original right-line seam as an operator identity. They are not scalar incidence coefficients whose labels add to zero."},
+      {"id": "Round51-equality-star-halves-distributional-jump", "reason": "A star fixes the point value at equality but the distributional derivative of the corresponding step has full delta mass. At a Plemelj pole a separate joint regularization is required."},
+      {"id": "Round51-beta-ledger-defines-actual-alpha-seam", "reason": "The accepted beta geometry does not supply the endpoint-free alpha numerator, typed primal seam map, jump traces, pullbacks, velocities, or collision rule needed to evaluate even the terminal alpha coefficient."}
+    ],
+    "no_change": [
+      {"id": "M9-M1-swept-transition-horizontal-operator", "reason": "The actual alpha seam and global estimate remain undefined/open."},
+      {"id": "M9-M1-post-FE-vector-kernel", "reason": "Round 51 is a local specification audit only."},
+      {"id": "M9-M1", "reason": "No alpha or full M1 estimate is proved."},
+      {"id": "M9", "reason": "M9-M1 and M9-M2 remain open."},
+      {"id": "GC-target", "reason": "No unconditional Gauss-circle estimate is claimed."}
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 5,
+    "idea_quality_score": 7,
+    "state_evidence_score": 9,
+    "calibration_score": 10,
+    "reason": "Round 51 derives the maximal universal seam algebra and prevents a false connector-cancellation claim, but reveals that the accepted state lacks the typed actual alpha seam needed for a numerical or symbolic coefficient. The next round is narrowed to one H_j-floor transition."
+  }
+}

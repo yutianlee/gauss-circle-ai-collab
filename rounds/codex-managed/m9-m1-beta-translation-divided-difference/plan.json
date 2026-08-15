@@ -1,0 +1,35 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 40,
+    "campaign_id": "m9-m1-beta-translation-divided-difference",
+    "title": "Complete phase-removed translation divided difference",
+    "status": "complete",
+    "max_concurrency": 3,
+    "target_obligations": ["M9-M1-beta-axial-subtracted-terminal-symbol-bound"],
+    "graph_sha256": "d98e136765299e92cd0f959cc9666fe521435ef0c8c1a948fdd55be6065815c0",
+    "resource_policy": {"analytical_algebraic_minimum_percent": 100, "numerical_experimental_maximum_percent": 0},
+    "frozen_objective": "Prove the corrected cellwise mixed symbol norm at the complete second translation divided difference and moving/Morse traces, or isolate the first exact actual quantitative survivor."
+  },
+  "tasks": [
+    {"id": "blind_translation_difference", "role": "blind_rederiver", "status": "complete", "report": "reports/blind_translation_difference.md"},
+    {"id": "complete_translation_difference_attack", "role": "discovery", "status": "complete_with_scope_downgrade", "report": "reports/complete_translation_difference_attack.md"},
+    {"id": "translation_difference_hostile_audit", "role": "seam_reviewer", "status": "complete", "report": "reports/translation_difference_hostile_audit.md"}
+  ],
+  "exit_gates": [
+    "exact phase-removed cell factorization",
+    "fixed-nu divided-difference identity",
+    "actual mixed derivative ledger",
+    "singular/smooth separation",
+    "two-saddle entry/exit and Morse remainder",
+    "moving traces and common ownership",
+    "target mixed norm or sharp actual survivor",
+    "blind and hostile validation",
+    "conductor decision before downstream composition"
+  ],
+  "closing_assessment": {
+    "decision": "promote_fixed_height_identity_and_signed_diagonal_revise_complete_target_to_hybrid",
+    "graph_mutation": true,
+    "main_result": "The fixed-height translation identity is exact, but the all-absolute terminal norm is false because the actual diagonal regularizer has a 1/nu tail. Its signed finite-section logarithmic primitive is target-safe. The complete off-diagonal/smooth connector and Morse norm remains open."
+  }
+}

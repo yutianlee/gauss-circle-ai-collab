@@ -1,0 +1,161 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-ordered-resonance-cell-decomposition",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Exact ordered odd-denominator resonance-cell decomposition",
+        "status": "proved_internal",
+        "statement_tex": "For odd d, chi_4(d)=-i e(d/4). With g_h(d)=hX/d+d/4 and R_h=hX/D^2, the exact increment is g_h(d+2)-g_h(d)=1/2-2hX/(d(d+2)). The bad absorbed-phase cells are dist(2hX/(d(d+2)),Z+1/2)<eta. For every accepted fixed-BV denominator profile, their count is O(min(D,eta D+R_h+1)); exact nonresonant summation by parts and optimization give |S_h(D;X)|<<_epsilon X^epsilon min(D,sqrt(hX/D)). Hence the actual Vaaler shell satisfies |B_(1,L)(D;X)|<<_epsilon X^epsilon min(D,sqrt(LX/D)). The bound is uniform at the hard top and closes no point of U_1 beyond the already accepted (1/2,0) and lower active edge.",
+        "dependencies": [
+          "M9-M1-frequency-phase-diagram-R10",
+          "M9-M2-dyadic-weight-nondegeneracy"
+        ],
+        "implies": ["M9-M1"],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-ordered-denominator-resonance-cells/reports/blind_two_step_resonance_decomposition.md",
+            "rounds/codex-managed/m9-m1-ordered-denominator-resonance-cells/reports/ordered_cell_cancellation_attack.md",
+            "rounds/codex-managed/m9-m1-ordered-denominator-resonance-cells/reports/resonance_cell_literature_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-ordered-denominator-resonance-cells/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use the exact half-integral resonance law only as a reduction. Any improvement must retain cancellation between stationary cells or frequencies."
+      },
+      {
+        "id": "M9-M1-ordered-cell-Bprocess-capacity-no-go",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Capacity obstruction for separate M1 resonance-cell estimates",
+        "status": "proved_internal",
+        "statement_tex": "The natural half-width of a low-curvature resonance cell is rho_h=sqrt(D^3/(hX)), and there are asymp R_h=hX/D^2 possible cells, so separate absolute cell estimates cost R_h rho_h=sqrt(hX/D). The cells map under the odd-lattice B-process to odd dual frequencies q with d=2sqrt(hX/q), character chi_4(q), amplitude (hX)^(1/4)q^(-3/4), and phase e(sqrt(Xhq)). Thus separate cell counting is exactly the accepted V2/B-process loss, closes no point of U_1, and cannot be improved by generic two-variable curvature because sqrt(Xhq) has rank-one Hessian and is constant on product fibers. This does not obstruct signed cancellation between cells for the actual profile.",
+        "dependencies": [
+          "M9-M1-ordered-resonance-cell-decomposition",
+          "M9-M1-top-endpoint-transform"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-ordered-denominator-resonance-cells/reports/blind_two_step_resonance_decomposition.md",
+            "rounds/codex-managed/m9-m1-ordered-denominator-resonance-cells/reports/ordered_cell_cancellation_attack.md",
+            "rounds/codex-managed/m9-m1-ordered-denominator-resonance-cells/reports/resonance_cell_literature_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-ordered-denominator-resonance-cells/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Reject cellwise-absolute or nonsingular-Hessian arguments; require the actual signed restricted convolution or cross-product phase cancellation."
+      },
+      {
+        "id": "M9-M1-dual-restricted-convolution-RCS",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Dual restricted-convolution estimate for M1 resonance cells",
+        "status": "open",
+        "statement_tex": "Let d_(h,q)=2sqrt(hX/q). Uniformly on U_1 and for the actual profiles, prove RCS: |sum_(h asymp L) u_(L,H)(h)(hX)^(1/4) sum_(q odd, d_(h,q) in supp(w_D))^* chi_4(q)q^(-3/4)w_D(d_(h,q))e(sqrt(Xhq))| <<_epsilon X^(1/4+epsilon). The star retains exact endpoint half weights. Grouping n=hq gives sum_n A^*_(D,L)(n;X)e(sqrt(Xn)), where A^* is the actual chi_4(q)-weighted restricted divisor convolution. Standard one-sided/interior B-process errors are target-sized, so RCS is equivalent to the unresolved M1 shell. Divisor multiplicity or product-fiber absolute values yield only sqrt(LX/D) and cannot prove RCS.",
+        "dependencies": [
+          "M9-M1-ordered-resonance-cell-decomposition",
+          "M9-M1-ordered-cell-Bprocess-capacity-no-go",
+          "M9-M1-top-endpoint-transform"
+        ],
+        "implies": ["M9-M1"],
+        "blockers": [],
+        "evidence": {
+          "positive": [],
+          "negative": [
+            "rounds/codex-managed/m9-m1-ordered-denominator-resonance-cells/reports/resonance_cell_literature_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-ordered-denominator-resonance-cells/reports/blind_two_step_resonance_decomposition.md",
+            "rounds/codex-managed/m9-m1-ordered-denominator-resonance-cells/reports/ordered_cell_cancellation_attack.md",
+            "rounds/codex-managed/m9-m1-ordered-denominator-resonance-cells/synthesis.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Simplify and attack the restricted convolution A^* before any product-fiber absolute value; test Mellin or Dirichlet-series separation with exact cutoffs and endpoint terms."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M1-ordered-resonance-cell-decomposition",
+          "M9-M1-ordered-cell-Bprocess-capacity-no-go",
+          "M9-M1-dual-restricted-convolution-RCS"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-ordered-denominator-resonance-cells/reports/blind_two_step_resonance_decomposition.md",
+            "rounds/codex-managed/m9-m1-ordered-denominator-resonance-cells/synthesis.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-m1-ordered-denominator-resonance-cells/reports/ordered_cell_cancellation_attack.md",
+            "rounds/codex-managed/m9-m1-ordered-denominator-resonance-cells/reports/resonance_cell_literature_hostile_audit.md"
+          ]
+        },
+        "next_action": "Attack the exact RCS restricted convolution A^* or prove an equivalent signed cone bound. Separate resonance-cell estimates reproduce V2 and add no region."
+      },
+      {
+        "id": "M9-M1-shifted-divisor-correlation-PSC",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M1-dual-restricted-convolution-RCS"
+        ],
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-m1-ordered-denominator-resonance-cells/synthesis.md"
+          ]
+        },
+        "next_action": "Use RCS as the dual formulation of the same cross-product difficulty; neither formulation may be estimated by separate product-fiber or resonance-cell absolute values."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round13-all-nonresonant-adjacent-pairs-cancel",
+        "reason": "A single adjacent pair is small near integral alpha=2hX/(d(d+2)), not throughout the complement of the bad half-integer cells; nonresonant saving is a multi-term Kusmin--Landau statement."
+      },
+      {
+        "id": "Round13-normalized-BV-makes-each-resonance-cell-O1",
+        "reason": "A localized normalized-BV triangular profile can coherently attain the natural stationary size sqrt(D/R_h) on one cell."
+      },
+      {
+        "id": "Round13-cellwise-absolute-summation-closes-M1",
+        "reason": "Summing the natural cell sizes gives sqrt(hX/D), exactly the accepted V2/B-process loss, which closes no point of U_1."
+      },
+      {
+        "id": "Round13-dual-cone-has-nondegenerate-two-variable-curvature",
+        "reason": "The phase sqrt(Xhq) has determinant-zero Hessian and is constant on every product fiber hq=n."
+      },
+      {
+        "id": "Round13-one-Weyl-step-adds-U1-region",
+        "reason": "The first differencing step removes the d-dependent character and gives only the classical untwisted reciprocal exponent, adding no point beyond the accepted menu."
+      },
+      {
+        "id": "Round13-modular-reciprocal-or-multilinear-import",
+        "reason": "Finite-field inverses, Kloosterman fractions, and separable multilinear monomials do not match the real one-variable reciprocal phase and actual coefficient hypotheses."
+      }
+    ],
+    "no_change": [
+      {"id": "M9-M1-cross-product-odd-kernel-discrepancy", "reason": "RCS is an equivalent dual formulation, not a proof of the discrepancy estimate."},
+      {"id": "M9-M1-top-endpoint-signed-cone", "reason": "RCS specializes to the already open top signed cone."},
+      {"id": "M9-M2", "reason": "Round 13 is M1-specific."},
+      {"id": "M9", "reason": "M9-M1 and M9-M2 remain open."},
+      {"id": "GC-target", "reason": "The final theorem remains conditional on open M9."}
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 6,
+    "idea_quality_score": 7,
+    "state_evidence_score": 9,
+    "calibration_score": 10,
+    "reason": "Round 13 derives and independently validates the exact half-integral resonance decomposition, proves its optimal elementary bound, and identifies the signed restricted convolution RCS. It rigorously shows that separate cell summation is equivalent to V2 and closes no new exponent region."
+  }
+}

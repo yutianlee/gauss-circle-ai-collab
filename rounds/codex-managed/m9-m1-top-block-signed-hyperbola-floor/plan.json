@@ -1,0 +1,186 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 58,
+    "round_type": "signed_hyperbola_floor_sawtooth",
+    "campaign_id": "m9-m1-top-block-signed-hyperbola-floor",
+    "title": "Signed cross-h hyperbola-floor representation on the high shell",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "literature_policy": "Audit primary sources only if a non-elementary sawtooth, incomplete Kloosterman, or two-variable exponential-sum theorem is imported."
+    },
+    "target_obligations": [
+      "M9-M1-global-angular-radial-estimate",
+      "M9-M1-top-block-adjacent-odd-pairing-no-go"
+    ],
+    "frozen_target": {
+      "question": "Can the exact matched-plus-unmatched high-shell selector be rewritten as a finite hyperbola-floor/sawtooth Fourier sum and estimated with square-root strength across h, without taking rowwise absolute values?",
+      "reference_formula": "P_J=sum_(R/4<h<=R/2) sum_(q odd,hq in [A,B]) chi_4(q) A_X(h,q)e(sqrt(Xhq)), with Y=R^2 asymp sqrt(X), B-A+1<=R, and exact actual A_X.",
+      "quantities": [
+        "exact odd-lattice endpoint floors",
+        "zero Fourier mode",
+        "nonzero Fourier modes and truncation",
+        "character parity projector",
+        "cross-h phase after endpoint Fourier expansion",
+        "actual amplitude profile and star jumps",
+        "perfect-fourth-power resonances",
+        "unweighted sqrt(R) target"
+      ]
+    },
+    "completion_criteria": [
+      "The occupied-row and signed-row selectors are written exactly using floors or floor-compatible sawtooth functions.",
+      "Zero mode, endpoint half/full conventions, nonzero Fourier modes, and truncation residual are separately owned.",
+      "The resulting cross-h phases and amplitudes retain the actual profiles, floors, hard top, and stars.",
+      "A square-root high-shell estimate is proved, or a strict obstruction to this Fourier/sawtooth mechanism is derived.",
+      "Perfect-fourth-power, short-window, point-window, and unmatched-density controls are explicit.",
+      "Any imported theorem is audited against the exact moving symbol and parameter ranges.",
+      "A clean statement-only derivation and independent hostile/source gate exist.",
+      "No lower-shell, alpha, M9-M1, M9, or exponent promotion occurs without its own proof."
+    ],
+    "controls": [
+      "exact_floor_selector",
+      "zero_mode",
+      "fourier_truncation",
+      "character_projector",
+      "cross_h_phase",
+      "actual_amplitude",
+      "endpoint_and_stars",
+      "perfect_fourth_power",
+      "target_ledger",
+      "downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "signed_hyperbola_floor_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "target": "Derive the exact floor/sawtooth Fourier representation of the complete high-shell sum and prove the sqrt(R) bound or isolate the first sharp obstruction.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-top-block-signed-hyperbola-floor/derivation_packet.md",
+          "rounds/codex-managed/m9-m1-top-block-signed-adjacent-odd-pairing/synthesis.md",
+          "rounds/codex-managed/m9-m1-top-block-low-leg-curvature/synthesis.md",
+          "rounds/codex-managed/m9-endpoint-kernel-validation/reports/blind_profile_rederivation.md"
+        ],
+        "required_controls": [
+          "exact_floor_selector",
+          "zero_mode",
+          "fourier_truncation",
+          "character_projector",
+          "cross_h_phase",
+          "actual_amplitude",
+          "endpoint_and_stars",
+          "perfect_fourth_power",
+          "target_ledger",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "seven-section report",
+          "exact Fourier/sawtooth identity",
+          "signed exponent ledger"
+        ]
+      },
+      {
+        "id": "blind_hyperbola_floor_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "target": "Using only the Round-58 packet, independently derive the exact floor selector, Fourier modes, endpoint ledger, and capacity.",
+        "context_files": [
+          "rounds/codex-managed/m9-m1-top-block-signed-hyperbola-floor/derivation_packet.md"
+        ],
+        "excluded_context": [
+          "proof graph",
+          "proof draft",
+          "prior reports and syntheses",
+          "other Round-58 reports"
+        ],
+        "required_controls": [
+          "exact_floor_selector",
+          "zero_mode",
+          "fourier_truncation",
+          "character_projector",
+          "cross_h_phase",
+          "actual_amplitude",
+          "endpoint_and_stars",
+          "perfect_fourth_power",
+          "target_ledger",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "seven-section statement-only report",
+          "independent identity or no-go",
+          "isolation ledger"
+        ]
+      },
+      {
+        "id": "hyperbola_floor_source_hostile_audit",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "target": "Hostilely audit zero modes, truncation, sawtooth discontinuities, fourth-power resonance, and applicability of any primary-source hyperbola or exponential-sum theorem.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-top-block-signed-hyperbola-floor/derivation_packet.md",
+          "rounds/codex-managed/m9-m1-top-block-signed-adjacent-odd-pairing/synthesis.md",
+          "rounds/codex-managed/m9-m1-top-block-intermediate-h-resonance/synthesis.md"
+        ],
+        "required_controls": [
+          "exact_floor_selector",
+          "zero_mode",
+          "fourier_truncation",
+          "character_projector",
+          "cross_h_phase",
+          "actual_amplitude",
+          "endpoint_and_stars",
+          "perfect_fourth_power",
+          "target_ledger",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "seven-section hostile/source report",
+          "strict obstruction or source certification",
+          "recommended graph effect"
+        ]
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "floor_convention",
+        "requirement": "Use floor-compatible endpoint values; artificial window boundaries remain full and inherited stars stay local."
+      },
+      {
+        "id": "zero_mode",
+        "requirement": "Do not discard a Fourier zero mode or presume character cancellation before computing its exact coefficient."
+      },
+      {
+        "id": "truncation",
+        "requirement": "Every truncated sawtooth expansion carries an explicit residual at the required uniform scale."
+      },
+      {
+        "id": "signed_outer_sum",
+        "requirement": "Keep h modes signed through the decisive estimate; a modewise absolute sum is not a proof."
+      },
+      {
+        "id": "mathematical_isolation",
+        "requirement": "The blind proof sees only the Round-58 packet and brief."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "1a73979db8bdcec9273d277238a6bd6b6a6c13ce8603cb917cca38fa7ce6fcbb",
+    "generated_at": "2026-08-13T19:13:26.942695+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

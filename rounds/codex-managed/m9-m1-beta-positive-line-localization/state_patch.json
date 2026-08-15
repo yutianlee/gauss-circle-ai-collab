@@ -1,0 +1,138 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-beta-positive-line-compact-terminal-and-artificial-bound",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Target-sized positive-line compact beta terminal and artificial residue",
+        "status": "proved_internal",
+        "statement_tex": "After the complete finite product Cauchy--Green sum is returned to the positive-a, positive-b endpoint-free beta representative, multiply by psi(beta)chi_0(alpha), with b=1/log(2X), 0<=a<=b, a+b<1/2, and a/2+b<1/4. The central terminal is exactly the three-selector functional: j=0 singular u^(-1) under the signed normalized Plemelj distribution, j=0 regular top under ordinary mu integration, and j>=1 interior profiles under ordinary mu integration, with every actual floor, star, equality convention, chi_4, profile, and scale retained. Its amplitude satisfies sup_(1<=x<=N_X)(|A_db(x)|+x|A_db'(x)|)=O(log^C(2X)); the accepted radial-BV reduction therefore gives physical O(X^(1/4)log^C(2X)) with full continuous radial endpoint coefficients. At rho=1/4-s-v/2=0, the local s-residue is +pi i sqrt(X) I_1(0)=e(sqrt(XN_X))-e(sqrt(X)). Keeping zeta(3/4+u/2+v)L(3/4-u/2,chi_4) recombined, both the chi_0(mu/2) and 1-chi_0(mu/2) artificial shares are O(log^C(2X)) normalized, by compact beta height, signed Plemelj at mu=0, period-four Abel summation, and cubic height decay. The external -(4/pi)X^(1/4)Re(e(1/8) dot) operator is owned once. This lemma does not identify or estimate the direct large-alpha complement.",
+        "dependencies": [
+          "M9-M1-beta-finite-two-axis-product-Cauchy-Green",
+          "M9-M1-beta-finite-endpoint-free-Plemelj-vector",
+          "M9-M1-beta-endpoint-free-axial-remainder-limit",
+          "M9-M1-beta-mask-endpoint-axial-compatibility",
+          "M9-M1-beta-hierarchical-radial-split-identity",
+          "M9-M1-beta-double-bounded-radial-BV-reduction"
+        ],
+        "implies": [
+          "M9-M1-beta-positive-line-alpha-localization-certificate",
+          "M9-M1-beta-double-bounded-cell-bound"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-positive-line-localization/reports/positive_line_certificate_attack.md",
+            "rounds/codex-managed/m9-m1-beta-positive-line-localization/reports/isolated_positive_line_rederivation.md",
+            "rounds/codex-managed/m9-m1-beta-positive-line-localization/reports/positive_line_localization_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-positive-line-localization/reviews/conductor_compact_and_residue_adjudication.md",
+            "rounds/codex-managed/m9-m1-beta-positive-line-localization/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use this as the closed compact and artificial component. Do not infer that the positive-line large-alpha complement is covered until its finite partition and nonsaddle remainder are proved."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-beta-positive-line-alpha-localization-certificate",
+        "statement_tex": "At fixed finite U,V,S, the complete sixteen product Cauchy--Green cells are first returned to the positive-a, positive-b endpoint-free beta representative R_u R_v[psi(beta)Q_ef], and only then split by 1=chi_0(alpha)+(1-chi_0(alpha)). The central three-selector terminal and both oriented artificial-residue alpha shares are target-safe by M9-M1-beta-positive-line-compact-terminal-and-artificial-bound. The remaining exact interface is to construct a finite one-count family eta_tau on the identical direct positive-line terminal with sum_tau eta_tau(alpha)=1-chi_0(alpha), match its saddle/entry/exit cells to M9-M1-beta-large-alpha-transition-package-bound, and prove target bounds for every remaining nonsaddle cell. Retain all floors, stars, character, equality and collision conventions, separately routed modules, and the external physical factor once; no transferred row receives an individual physical limit.",
+        "dependencies_added": [
+          "M9-M1-beta-positive-line-compact-terminal-and-artificial-bound"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-positive-line-localization/reviews/conductor_compact_and_residue_adjudication.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-positive-line-localization/reports/positive_line_certificate_attack.md",
+            "rounds/codex-managed/m9-m1-beta-positive-line-localization/reports/isolated_positive_line_rederivation.md",
+            "rounds/codex-managed/m9-m1-beta-positive-line-localization/reports/positive_line_localization_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-positive-line-localization/reviews/conductor_large_alpha_interface.md",
+            "rounds/codex-managed/m9-m1-beta-positive-line-localization/synthesis.md"
+          ]
+        },
+        "next_action": "Exhibit the exact identical-antecedent partition of 1-chi_0, map the signed saddle/entry/exit cells to the accepted Round-41 package, and prove the nonsaddle remainder target-safe."
+      },
+      {
+        "id": "M9-M1-beta-double-bounded-cell-bound",
+        "statement_tex": "The exact compact positive-line beta terminal and both oriented artificial-residue alpha shares are target-safe by M9-M1-beta-positive-line-compact-terminal-and-artificial-bound. In particular the three-selector amplitude satisfies sup_x(|A(x)|+x|A'(x)|)=O(log^C(2X)) and its radial image is O(X^(1/4)log^C X). The aggregate double-bounded node remains open only because its current one-count assembly requires the full positive-line alpha-localization certificate: an exact identical-antecedent large-alpha partition and quantitative nonsaddle completion. No rowwise sixteen-stratum amplitude equality is required or lawful.",
+        "dependencies_added": [
+          "M9-M1-beta-positive-line-compact-terminal-and-artificial-bound"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-positive-line-localization/reports/positive_line_certificate_attack.md",
+            "rounds/codex-managed/m9-m1-beta-positive-line-localization/reports/isolated_positive_line_rederivation.md",
+            "rounds/codex-managed/m9-m1-beta-positive-line-localization/reports/positive_line_localization_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-positive-line-localization/reviews/conductor_compact_and_residue_adjudication.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-positive-line-localization/reviews/conductor_large_alpha_interface.md",
+            "rounds/codex-managed/m9-m1-beta-positive-line-localization/synthesis.md"
+          ]
+        },
+        "next_action": "Close the exact large-alpha partition/nonsaddle seam in the localization certificate; the compact analytic estimate and artificial residue need not be reproved."
+      },
+      {
+        "id": "M9-M1-beta-transition-connector-reduction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-positive-line-localization/reviews/conductor_compact_and_residue_adjudication.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-positive-line-localization/reviews/conductor_large_alpha_interface.md",
+            "rounds/codex-managed/m9-m1-beta-positive-line-localization/synthesis.md"
+          ]
+        },
+        "next_action": "Close the positive-line large-alpha partition and nonsaddle completion, then assemble the beta transition. The alpha-bounded zeta-high branch remains separate."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round45-large-alpha-package-title-implies-exact-positive-line-complement",
+        "reason": "The accepted Round-41 node proves signed large-alpha saddle, entry, and exit cells. Its title does not supply an identical-antecedent finite partition summing to 1-chi_0 or a quantitative estimate for all nonsaddle remainders."
+      },
+      {
+        "id": "Round45-frozen-packet-assertion-is-accepted-graph-evidence",
+        "reason": "A derivation packet freezes the campaign target and hypotheses; it cannot promote a mathematical interface absent from the authoritative graph and supporting evidence."
+      },
+      {
+        "id": "Round45-termwise-series-at-artificial-residue",
+        "reason": "The residue-line arithmetic factor must remain the analytically recombined zeta times L(chi_4) product. A termwise h,q expansion is outside an absolute Dirichlet chamber and is unnecessary for the target bound."
+      },
+      {
+        "id": "Round45-absolute-value-before-hard-top-Plemelj",
+        "reason": "The singular top obtains its full diagonal coefficient only after the delta and constant-numerator principal-value halves are combined. Earlier absolute values destroy this cancellation."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1-beta-large-alpha-transition-package-bound",
+        "reason": "Its accepted saddle/entry/exit estimate remains valid. Round 46 must map it into an exact positive-line complement partition and control nonsaddle remainders."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "The beta large-alpha complement seam, complete beta assembly, alpha-bounded branch, and other M1 interfaces remain open."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1 and M9-M2 remain open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "No unconditional Gauss-circle estimate is claimed."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 8,
+    "idea_quality_score": 8,
+    "state_evidence_score": 9,
+    "calibration_score": 10,
+    "reason": "Round 45 independently proves the complete compact terminal and artificial residue bounds, while correctly refusing to smuggle an unstated nonsaddle-completion theorem through the large-alpha package title."
+  }
+}

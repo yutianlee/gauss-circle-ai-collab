@@ -1,0 +1,172 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 36,
+    "round_type": "beta_physical_module_transfer_commutation",
+    "campaign_id": "m9-m1-beta-physical-module-transfer",
+    "title": "Transfer through the physical endpoint and R1 arithmetic modules",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "literature_policy": "Use the exact finite M=1 endpoint Cauchy identity, the global three-mask recombination, the finite sixteen-stratum transfer, and the proved physical endpoint and R1 arithmetic formulas. Search primary literature only if a nonstandard vector-valued Mellin/Perron convergence theorem is genuinely required; audit all hypotheses before use."
+    },
+    "target_obligations": [
+      "M9-M1-beta-axial-transfer-physical-module-commutation"
+    ],
+    "frozen_target": {
+      "question": "Can the complete finite beta two-axis transfer be commuted with, or exactly routed around, the symmetric physical limits defining the target-safe endpoint and recombined R1 arithmetic modules?",
+      "reference_formula": "Start from the finite global M=1 package T_xi+S_xi+P_xi=D_xi-A_xi and R_ar[G]-sum_xi A_xi=R_ar[R1]. Apply the complete sixteen-stratum transfer with the full hierarchical partition before any physical limit. Either prove that summing the three masks and all their derivatives makes every transfer connector cancel so the resulting module is exactly the transfer of the unmasked finite D_xi and R_ar[R1], whose physical limits are already proved target-safe, or construct one common finite representative and prove convergence of every remaining face, connector, axis, mixed term, collision, and corner. The result must identify the finite object, exact cancellation/order, stars, profiles, floors, character, and external normalization. No terminal-symbol estimate is included.",
+      "quantities": [
+        "finite D_xi and A_xi endpoint/arithmetic representatives",
+        "three hierarchical masks Theta_beta, Theta_alpha, Theta_o and all first/mixed derivatives",
+        "sixteen-stratum transfer on each mask share",
+        "sum-to-one and derivative-sum-to-zero cancellations on every face, axis, connector, and corner",
+        "artificial E1/R1 cancellation and arithmetic/axial collision residues",
+        "off-centred finite Perron kernels and symmetric physical limits",
+        "lower and upper endpoint physical prefix formulas",
+        "recombined R1 physical y-return and chi4 Abel cancellation",
+        "top and product stars, H_j+1 floors, hard endpoint, and external X^(1/4) normalization",
+        "one exact post-module endpoint-free axial-vector definition"
+      ]
+    },
+    "completion_criteria": [
+      "One common finite endpoint/arithmetic representative is fixed before transfer or an exact order avoiding interchange is proved.",
+      "All three hierarchical shares are summed on every one of the sixteen strata, not only on terminal verticals.",
+      "Mask derivative, connector-axis, mixed derivative, and corner cancellations are checked explicitly.",
+      "The passage to the proved endpoint and R1 physical formulas is justified without assuming finite-height compact support or sharp Perron truncation.",
+      "Artificial, arithmetic, and axial collisions use one combined residue and are counted once.",
+      "A statement-only blind derivation and hostile limit audit independently assess the result.",
+      "The conductor closes the round before defining the axial-subtracted terminal symbol."
+    ],
+    "controls": [
+      "three_mask_sixteen_stratum_cancellation",
+      "finite_representative_and_limit_order",
+      "endpoint_and_arithmetic_residue_recombination",
+      "finite_Perron_vs_physical_star",
+      "collision_and_corner_ownership",
+      "actual_profile_character_normalization",
+      "no_terminal_symbol_overreach"
+    ],
+    "tasks": [
+      {
+        "id": "blind_global_module_transfer_identity",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "target": "Independently derive whether the full three-mask sum of the sixteen-stratum transfer collapses exactly to the unmasked transfer of the finite M=1 endpoint/arithmetic package. Track every first and mixed mask derivative, axis restriction, connector-axis residue, collision, and corner. Then decide whether the accepted physical modules can be invoked without a new limit interchange, or isolate the first precise finite survivor. Do not read Round-36 claimant reports.",
+        "context_files": [
+          "protocol.md",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-endpoint-boundary-cauchy/synthesis.md",
+          "rounds/codex-managed/m9-m1-r1-arithmetic-residue/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-complete-axial-connector-ledger/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-axial-side-exhaustion/synthesis.md"
+        ],
+        "excluded_context": [
+          "all Round-36 claimant reports",
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "rounds/codex-managed/m9-m1-beta-complete-axial-connector-ledger/reports"
+        ],
+        "required_controls": [
+          "three_mask_sixteen_stratum_cancellation",
+          "finite_representative_and_limit_order",
+          "endpoint_and_arithmetic_residue_recombination",
+          "finite_Perron_vs_physical_star",
+          "collision_and_corner_ownership",
+          "no_terminal_symbol_overreach"
+        ],
+        "required_output": [
+          "Independent global module-transfer identity or first exact survivor",
+          "Complete mask derivative, residue, corner, and physical-limit scope ledger",
+          "Seven-section report at the assigned path"
+        ]
+      },
+      {
+        "id": "physical_endpoint_arithmetic_transfer_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "target": "Construct the actual common finite endpoint/R1-arithmetic vector, apply and globally recombine all sixteen transfer strata, and prove the remaining finite package passes to the already-proved physical endpoint and y-return formulas. If exact global cancellation avoids a limit theorem, prove that order rigorously. Otherwise prove the required uniform convergence or isolate the smallest nonvanishing transferred module share.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-endpoint-boundary-cauchy/reports/blind_M1_boundary_cauchy.md",
+          "rounds/codex-managed/m9-m1-upper-endpoint-character-abel/reports/blind_upper_endpoint_abel.md",
+          "rounds/codex-managed/m9-m1-r1-arithmetic-residue/reports/blind_r1_residue_return.md",
+          "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/reports/mask_endpoint_axial_attack.md",
+          "rounds/codex-managed/m9-m1-beta-complete-axial-connector-ledger/reports/actual_axial_connector_ledger_attack.md",
+          "rounds/codex-managed/m9-m1-beta-axial-side-exhaustion/synthesis.md"
+        ],
+        "required_controls": [
+          "three_mask_sixteen_stratum_cancellation",
+          "finite_representative_and_limit_order",
+          "endpoint_and_arithmetic_residue_recombination",
+          "finite_Perron_vs_physical_star",
+          "collision_and_corner_ownership",
+          "actual_profile_character_normalization",
+          "no_terminal_symbol_overreach"
+        ],
+        "required_output": [
+          "Actual physical-module transfer theorem or exact smallest survivor",
+          "Finite-to-physical limit, profiles, stars, character, residue, collision, and normalization ledger",
+          "Seven-section report at the assigned path"
+        ]
+      },
+      {
+        "id": "physical_module_limit_hostile_audit",
+        "role": "seam_reviewer",
+        "access_mode": "selected_context",
+        "target": "Hostilely audit the claimed global cancellation or convergence. Check whether sum-to-one is applied before or after restrictions, whether derivative connectors cancel on every stratum, whether finite off-centred Perron tails survive, whether stars appear only after licensed symmetric inversion, and whether endpoint/arithmetic/axial collisions or artificial residues are double-counted. Give a counteridentity or certify the narrowest lawful commutation theorem.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-endpoint-boundary-cauchy/synthesis.md",
+          "rounds/codex-managed/m9-m1-upper-endpoint-character-abel/synthesis.md",
+          "rounds/codex-managed/m9-m1-r1-arithmetic-residue/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/reports/mask_endpoint_axial_hostile_audit.md",
+          "rounds/codex-managed/m9-m1-beta-complete-axial-connector-ledger/reports/two_axis_connector_hostile_audit.md",
+          "rounds/codex-managed/m9-m1-beta-axial-side-exhaustion/synthesis.md"
+        ],
+        "required_controls": [
+          "three_mask_sixteen_stratum_cancellation",
+          "finite_representative_and_limit_order",
+          "endpoint_and_arithmetic_residue_recombination",
+          "finite_Perron_vs_physical_star",
+          "collision_and_corner_ownership",
+          "actual_profile_character_normalization",
+          "no_terminal_symbol_overreach"
+        ],
+        "required_output": [
+          "Independent cancellation, finite-Perron, collision, and limit audit",
+          "Counteridentity or scoped certification",
+          "Seven-section report at the assigned path"
+        ]
+      }
+    ],
+    "review_seams": [
+      "full three-mask partition on every transfer stratum",
+      "first and mixed derivative connector cancellation",
+      "axis restrictions, connector-axis residues, and the one-corner convention",
+      "finite endpoint Cauchy identity and artificial/arithmetic recombination",
+      "off-centred finite Perron tails versus physical sharp support and stars",
+      "uniform passage to upper endpoint and R1 y-return formulas",
+      "actual profiles, floors, hard top, character, and external normalization",
+      "definition of the unique post-module endpoint-free axial vector"
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "9bf9658abcbc762eba2a829c4b8ff982e2fd4a563b593bdec2373c5b1645b411",
+    "generated_at": "2026-08-13T01:42:44.053776+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

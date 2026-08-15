@@ -1,0 +1,111 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 62,
+    "round_type": "lower_radial_small_angle_symbol_collapse",
+    "campaign_id": "m9-m1-lower-radial-small-angle-collapse",
+    "title": "Small-angle collapse of the subcritical angular symbol",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "literature_policy": "Use internal exact profile and recombination theorems. Search primary literature only if a one-sided character-divisor radial theorem is proposed."
+    },
+    "target_obligations": [
+      "M9-M1-global-angular-radial-estimate",
+      "M9-M1-lower-radial-phase-diagram",
+      "M9-M1-global-angular-recombination"
+    ],
+    "frozen_target": {
+      "question": "For n asymp X^nu with 0<nu<1/2, does the exact floor-perturbed angular multiplier collapse to the hard one-sided divisor cone with O(n/sqrt X) error, and over what range is that error target-safe?",
+      "candidate_identity": "Omega_X^*(n,h)=1_(2h sqrt(X/n)<=floor(sqrt X))^*+O(n/sqrt X).",
+      "candidate_coefficient": "D_X^*(n)=sum_(h|n,q=n/h odd,2h sqrt(X/n)<=floor(sqrt X))^* chi_4(q).",
+      "candidate_error": "sum_(n asymp N)n^(-3/4)tau(n)n/sqrt X << N^(5/4+epsilon)/sqrt X, target-safe at fixed nu<2/5."
+    },
+    "completion_criteria": [
+      "Prove or refute the exact angular multiplier collapse with all floors, stars, top, and bottom owners.",
+      "Audit the Taylor bound Phi(u)-1=O(u^2) uniformly on every supported active scale.",
+      "Derive the sharp total radial error and exact threshold, including endpoint logarithms.",
+      "Identify the limiting one-sided character-divisor coefficient exactly.",
+      "Attempt a signed bound or prove an exact return/capacity obstruction for the limiting radial sum.",
+      "A clean statement-only rederivation and an independent hostile/source audit exist.",
+      "No downstream exponent promotion occurs without a new signed estimate."
+    ],
+    "controls": [
+      "Phi_quadratic_expansion",
+      "height_floor_ratio",
+      "active_cutoff",
+      "partition_telescope",
+      "bottom_support",
+      "hard_top_and_star",
+      "divisor_error_sum",
+      "two_fifths_threshold",
+      "one_sided_divisor_identity",
+      "signed_radial_capacity",
+      "downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "small_angle_collapse_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "target": "Prove the strongest exact small-angle collapse and error range, then attack the resulting one-sided character-divisor radial sum.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-lower-radial-small-angle-collapse/derivation_packet.md",
+          "rounds/codex-managed/m9-endpoint-kernel-validation/reports/blind_profile_rederivation.md",
+          "rounds/codex-managed/m9-m1-dual-r2-recombination/synthesis.md",
+          "rounds/codex-managed/m9-m1-lower-radial-phase-diagram/synthesis.md"
+        ],
+        "required_output": ["seven-section report", "exact collapse or no-go", "signed limiting-sum assessment"]
+      },
+      {
+        "id": "blind_small_angle_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "target": "Using only the Round-62 packet, independently prove or refute the multiplier identity, total error, and two-fifths threshold.",
+        "context_files": [
+          "rounds/codex-managed/m9-m1-lower-radial-small-angle-collapse/derivation_packet.md"
+        ],
+        "excluded_context": ["proof graph", "proof draft", "prior syntheses and reports", "other Round-62 reports"],
+        "required_output": ["seven-section statement-only report", "isolation ledger", "exact constants and endpoint qualifications"]
+      },
+      {
+        "id": "small_angle_hostile_source_audit",
+        "role": "seam_and_source_reviewer",
+        "access_mode": "selected_context",
+        "target": "Hostilely test floors, active support, telescope/stars, bottom ownership, the N^(5/4)/sqrt X ledger, and whether any known primary theorem estimates the resulting one-sided character-divisor radial sum.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-lower-radial-small-angle-collapse/derivation_packet.md",
+          "rounds/codex-managed/m9-endpoint-kernel-validation/reports/blind_profile_rederivation.md",
+          "rounds/codex-managed/m9-m1-dual-r2-recombination/synthesis.md",
+          "sources/popov_2024_voronoi_gauss.md"
+        ],
+        "required_output": ["seven-section hostile/source report", "exact countercontrols", "theorem applicability verdict"]
+      }
+    ],
+    "review_seams": [
+      {"id": "coefficient", "requirement": "The floor, top, bottom, and star conventions must give one exact limiting coefficient, not a schematic partition."},
+      {"id": "error", "requirement": "The O(n/sqrt X) pointwise symbol error and its N^(5/4)/sqrt X radial sum must be proved with divisor multiplicity and endpoint logs."},
+      {"id": "arithmetic", "requirement": "Any simplification or estimate for the one-sided divisor coefficient must retain chi_4 and the angular cutoff."},
+      {"id": "scope", "requirement": "A target-safe replacement error does not bound the limiting signed radial sum or improve the Gauss exponent."}
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "85e2060e034db940ee742f399b44bce06c31fbac6f8470784ea464ea22ae89b2",
+    "generated_at": "2026-08-13T21:18:46.2526757Z"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-direct-profile-kernel-pointwise-bound",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Uniform pointwise bound for the direct actual-profile kernel",
+        "status": "proved_internal",
+        "statement_tex": "Let H^prof_(T,X)(h,q) be the exact Round-15 actual-profile scale sum: complete height inversion on Re v=b>0, complete interior spatial inversions, and symmetric top spatial truncation of W_+hat(u)=1/u+R_W(u), with all floors, Phi factors, fixed profiles, and endpoint stars retained. Then sup_(T,h,q)|H^prof_(T,X)(h,q)|<<_W log(2X). The sharp 1/u part is bounded by symmetric sine-integral/Dirichlet inversion and has values 1,1/2,0 at the limiting Perron projector; R_W and interior transforms are uniformly bounded per scale, and there are O(log X) scales. No absolute integration of 1/u is used.",
+        "dependencies": [
+          "M9-M1-angular-double-Mellin-separation",
+          "M9-M2-dyadic-weight-nondegeneracy"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-post-residue-kernel-formalization/reports/blind_post_residue_kernel_definition.md",
+            "rounds/codex-managed/m9-m1-post-residue-kernel-formalization/reports/perron_bv_pointwise_proof.md",
+            "rounds/codex-managed/m9-m1-post-residue-kernel-formalization/reports/post_residue_kernel_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-post-residue-kernel-formalization/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use only for the pre-functional-equation physical profile or another kernel proved exactly equal to it; do not attach it to the reflected Hankel remainder."
+      },
+      {
+        "id": "M9-M1-post-FE-scalar-separation-no-go",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "The post-functional-equation remainder is not an accepted scalar incidence kernel",
+        "status": "proved_internal",
+        "statement_tex": "After finite-height radial functional-equation reflection and residue subtraction, the non-residue term retains G_v(1-s)K_(u+v)(1-s)F_(-(u+v))(s), finite horizontal sides, and a new dual radial index after expanding the Dirichlet series. The gamma quotient couples s to u+v and the radial transform couples s to v and the finite square-root-wave cutoff. No accepted inverse produces a bounded scalar H_(T,X)(h,q), an algebraic delta at the original incidence, or a uniform triple-height L1 majorant. Hence the Round-16 schematic scalar post-FE kernel is not well-formed as a pointwise multiplier; it must be replaced by a vector kernel K_(T,X)(h,q;m) or the original three-contour operator, with all residues kept separately.",
+        "dependencies": [
+          "M9-M1-finite-height-reflected-sector-identity",
+          "M9-M1-angular-Voronoi-return-map-no-go"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-post-residue-kernel-formalization/reports/blind_post_residue_kernel_definition.md",
+            "rounds/codex-managed/m9-m1-post-residue-kernel-formalization/reports/perron_bv_pointwise_proof.md",
+            "rounds/codex-managed/m9-m1-post-residue-kernel-formalization/reports/post_residue_kernel_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-post-residue-kernel-formalization/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Formulate the surviving reflected remainder as a vector-valued Hankel kernel or finite three-contour operator and audit uniform large-complex-shift localization before estimating it."
+      },
+      {
+        "id": "M9-M1-post-FE-vector-kernel",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Uniform vector-valued reflected Hankel kernel estimate",
+        "status": "open",
+        "statement_tex": "With every zeta, height, spatial-Perron, and radial endpoint residue listed outside, define the finite post-functional-equation vector kernel K_(T,X)(h,q;m) by the joint u,v,s integral containing G_v(1-s)K_(u+v)(1-s), the actual scale/floor/profile factors, and finite horizontal sides. Prove a target-sized operator or signed correlation estimate uniform in all three contour heights and large Im(u+v), sufficient for the reflected maximal angular problem. A scalar pointwise profile estimate does not imply this theorem.",
+        "dependencies": [
+          "M9-M1-post-FE-scalar-separation-no-go",
+          "M9-M1-finite-height-reflected-sector-identity"
+        ],
+        "implies": [
+          "M9-M1-top-Perron-angular-correlation"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-post-residue-kernel-formalization/reports/blind_post_residue_kernel_definition.md",
+            "rounds/codex-managed/m9-m1-post-residue-kernel-formalization/reports/perron_bv_pointwise_proof.md",
+            "rounds/codex-managed/m9-m1-post-residue-kernel-formalization/reports/post_residue_kernel_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-post-residue-kernel-formalization/synthesis.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Derive a finite explicit formula and phase diagram for the vector Hankel kernel; separate terminal/horizontal sides before considering a large-shift theorem or source search."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-high-2adic-kernel-pointwise-bound",
+        "status": "rejected",
+        "dependencies_added": [
+          "M9-M1-post-FE-scalar-separation-no-go"
+        ],
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-m1-post-residue-kernel-formalization/reports/blind_post_residue_kernel_definition.md",
+            "rounds/codex-managed/m9-m1-post-residue-kernel-formalization/reports/perron_bv_pointwise_proof.md",
+            "rounds/codex-managed/m9-m1-post-residue-kernel-formalization/reports/post_residue_kernel_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-post-residue-kernel-formalization/synthesis.md"
+          ]
+        },
+        "rejection_reason": "The full post-FE object is vector-valued in a dual radial index and is not defined as a scalar H_(T,X)(h,q); only the direct physical profile has the proved pointwise bound.",
+        "next_action": "Use M9-M1-direct-profile-kernel-pointwise-bound for direct profiles and replace the full reflected scalar claim by M9-M1-post-FE-vector-kernel."
+      },
+      {
+        "id": "M9-M1-high-2adic-tail-conditional",
+        "status": "derived_under_assumptions",
+        "dependencies_added": [
+          "M9-M1-direct-profile-kernel-pointwise-bound",
+          "M9-M1-post-FE-vector-kernel"
+        ],
+        "blockers_added": [
+          "M9-M1-post-FE-vector-kernel"
+        ],
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-m1-post-residue-kernel-formalization/reports/blind_post_residue_kernel_definition.md",
+            "rounds/codex-managed/m9-m1-post-residue-kernel-formalization/reports/post_residue_kernel_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-post-residue-kernel-formalization/synthesis.md"
+          ]
+        },
+        "statement_tex": "The divisor estimate with v_2(hq)>=K is <<B_X N_X^(1/4)2^(-K)log(2N_X) for any genuine scalar incidence kernel bounded pointwise by B_X. It is unconditional for the direct profile H^prof, using B_X<<log X. It does not apply to the full post-FE remainder, which is a vector Hankel kernel; a corresponding high-2-adic operator tail remains conditional on M9-M1-post-FE-vector-kernel.",
+        "next_action": "Do not remove the high-2-adic part of the reflected remainder until a vector-kernel norm or signed operator estimate is proved."
+      },
+      {
+        "id": "M9-M1-maximal-angular-sign-kernel",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M1-post-FE-scalar-separation-no-go",
+          "M9-M1-post-FE-vector-kernel"
+        ],
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-m1-post-residue-kernel-formalization/reports/blind_post_residue_kernel_definition.md",
+            "rounds/codex-managed/m9-m1-post-residue-kernel-formalization/reports/post_residue_kernel_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-post-residue-kernel-formalization/reports/perron_bv_pointwise_proof.md",
+            "rounds/codex-managed/m9-m1-post-residue-kernel-formalization/synthesis.md"
+          ]
+        },
+        "statement_tex": "The direct actual-profile part has a scalar O(log X) kernel and exact local reflection projection. After radial functional-equation reflection, however, the non-residue remainder is the vector-valued joint u,v,s Hankel kernel M9-M1-post-FE-vector-kernel, with all zeta, height, hard-top Perron, and radial endpoint residues outside. Prove a target-sized signed operator estimate for this vector remainder and every residue; no scalar pointwise H_(T,X)(h,q) formulation is accepted.",
+        "next_action": "Derive the explicit finite vector Hankel kernel, its contour/phase ranges and horizontal sides; only then select a large-shift analytic theorem or a new cancellation mechanism."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round18-post-FE-remainder-is-bounded-scalar-profile",
+        "reason": "The reflected gamma/radial transform has a new dual index and joint s,u,v dependence, not a scalar multiplier of the original incidence."
+      },
+      {
+        "id": "Round18-symmetric-Perron-bound-controls-vector-Hankel-term",
+        "reason": "Symmetric sine-integral inversion bounds only the bare physical profile; it gives no uniform estimate for the coupled gamma quotient, radial transform, or finite horizontal sides."
+      },
+      {
+        "id": "Round18-residue-subtraction-factorizes-radial-remainder",
+        "reason": "Subtracting zeta, height, Perron, and endpoint residues leaves the nonseparable Hankel operator; the zeta residue is itself global in the radial variable."
+      },
+      {
+        "id": "Round18-high-2adic-tail-promotes-from-direct-profile-bound",
+        "reason": "The direct profile bound proves a direct-profile tail only; the full post-FE high-2-adic component is vector-valued and remains conditional."
+      }
+    ],
+    "no_change": [
+      {"id": "M9-M1-global-angular-radial-estimate", "reason": "No uniform vector Hankel or target-sized global estimate was proved."},
+      {"id": "M9-M1", "reason": "No M1 estimate was proved."},
+      {"id": "M9-M2", "reason": "Round 18 concerns transformed M1 kernel formalization."},
+      {"id": "M9", "reason": "M9-M1 and M9-M2 remain open."},
+      {"id": "GC-target", "reason": "Kernel formalization and an obstruction do not prove the target."}
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 18 proves the direct scalar Perron/profile bound but catches a category error in the reflected formulation: the survivor is a vector Hankel operator, not a scalar incidence weight. It prevents an invalid tail promotion and identifies the exact next analytic object."
+  }
+}

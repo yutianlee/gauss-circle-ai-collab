@@ -1,0 +1,199 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 45,
+    "round_type": "beta_positive_line_localization",
+    "campaign_id": "m9-m1-beta-positive-line-localization",
+    "title": "Positive-line alpha localization and artificial-residue closure",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "literature_policy": "No external theorem is needed; use exact contour algebra, Mellin profiles, elementary period-four Abel summation, and the accepted local estimates."
+    },
+    "target_obligations": [
+      "M9-M1-beta-positive-line-alpha-localization-certificate",
+      "M9-M1-beta-double-bounded-cell-bound"
+    ],
+    "frozen_target": {
+      "question": "Does recombine-before-localize give an exact one-count central/complementary beta decomposition whose central terminal and oriented artificial residue are target-safe?",
+      "reference_formula": "Use the Round-45 derivation packet: first return the full finite cell complex to R_uR_v[psi(beta)Q_ef], then split by chi_0(alpha); never assign a physical limit to an individual Stokes row.",
+      "quantities": [
+        "positive-line endpoint-free terminal density",
+        "three actual spatial selectors",
+        "signed hard-top Plemelj functional",
+        "oriented rho=0 artificial residue",
+        "exact radial residue coefficient",
+        "central and complementary alpha cutoffs",
+        "large-alpha saddle/entry/exit partition",
+        "actual h q j scale and profile sums",
+        "external X^(1/4) normalization once"
+      ]
+    },
+    "completion_criteria": [
+      "The finite recombine-before-localize identity is exact and one-count.",
+      "The three terminal selectors and signed versus ordinary measures are explicit.",
+      "The artificial radial coefficient, contour orientation, arithmetic chamber, and central/complement bounds are proved.",
+      "The positive-line complement is exactly matched to, or shown not to match, the accepted large-alpha theorem.",
+      "The compact terminal value and one-x-derivative estimate is independently proved or refuted.",
+      "A mathematical statement-only rederivation and a hostile seam audit exist.",
+      "The conductor closes the round before starting the alpha-bounded branch."
+    ],
+    "controls": [
+      "aggregate_stokes_before_localization",
+      "alpha_partition_one_count",
+      "three_terminal_selectors",
+      "signed_plemelj_before_absolute_values",
+      "artificial_radial_residue",
+      "artificial_arithmetic_chamber",
+      "large_alpha_positive_line_match",
+      "compact_x_derivative",
+      "coefficient_and_scale_sums",
+      "collision_corner_and_external_once"
+    ],
+    "tasks": [
+      {
+        "id": "positive_line_certificate_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "target": "Prove or refute the complete positive-line localization certificate, including the compact terminal bound, exact artificial-residue estimate, and large-alpha complement match.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-beta-positive-line-localization/derivation_packet.md",
+          "rounds/codex-managed/m9-m1-beta-endpoint-free-axial-limit/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-actual-profile-Cauchy-tail/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-off-diagonal-product-cell/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-double-bounded-cell/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-compact-selector-ownership/synthesis.md"
+        ],
+        "required_controls": [
+          "aggregate_stokes_before_localization",
+          "alpha_partition_one_count",
+          "three_terminal_selectors",
+          "signed_plemelj_before_absolute_values",
+          "artificial_radial_residue",
+          "artificial_arithmetic_chamber",
+          "large_alpha_positive_line_match",
+          "compact_x_derivative",
+          "coefficient_and_scale_sums",
+          "collision_corner_and_external_once"
+        ],
+        "required_output": [
+          "seven-section report",
+          "exact theorem or first mismatch",
+          "complete normalization and state recommendation"
+        ],
+        "status": "complete_scoped_core_proved_full_certificate_conditional",
+        "report": "reports/positive_line_certificate_attack.md"
+      },
+      {
+        "id": "isolated_positive_line_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "target": "Independently prove or refute the theorem stated in the Round-45 derivation packet, without using any claimant derivation or proof graph.",
+        "context_files": [
+          "rounds/codex-managed/m9-m1-beta-positive-line-localization/derivation_packet.md"
+        ],
+        "excluded_context": [
+          "proof graph",
+          "proof draft",
+          "prior round reports and syntheses",
+          "Round-45 claimant and hostile reports"
+        ],
+        "required_controls": [
+          "aggregate_stokes_before_localization",
+          "alpha_partition_one_count",
+          "three_terminal_selectors",
+          "signed_plemelj_before_absolute_values",
+          "artificial_radial_residue",
+          "artificial_arithmetic_chamber",
+          "large_alpha_positive_line_match",
+          "compact_x_derivative",
+          "coefficient_and_scale_sums",
+          "collision_corner_and_external_once"
+        ],
+        "required_output": [
+          "seven-section statement-only report",
+          "independent algebra and estimates",
+          "first doubtful step and state recommendation"
+        ],
+        "status": "complete_conditional_verification_clean_isolation",
+        "report": "reports/isolated_positive_line_rederivation.md"
+      },
+      {
+        "id": "positive_line_localization_hostile_audit",
+        "role": "seam_reviewer",
+        "access_mode": "selected_context",
+        "target": "Hostile-audit the positive-line localization, artificial-residue orientation and size, large-alpha match, compact estimate, selectors, collisions, and external normalization without reading the Round-45 discovery report.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-beta-positive-line-localization/derivation_packet.md",
+          "rounds/codex-managed/m9-m1-beta-endpoint-free-axial-limit/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-actual-profile-Cauchy-tail/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-off-diagonal-product-cell/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-double-bounded-cell/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-compact-selector-ownership/synthesis.md"
+        ],
+        "required_controls": [
+          "aggregate_stokes_before_localization",
+          "alpha_partition_one_count",
+          "three_terminal_selectors",
+          "signed_plemelj_before_absolute_values",
+          "artificial_radial_residue",
+          "artificial_arithmetic_chamber",
+          "large_alpha_positive_line_match",
+          "compact_x_derivative",
+          "coefficient_and_scale_sums",
+          "collision_corner_and_external_once"
+        ],
+        "required_output": [
+          "seven-section hostile report",
+          "counterexample or certification by seam",
+          "recommended graph effect"
+        ],
+        "status": "complete_partial_certification_large_alpha_gap",
+        "report": "reports/positive_line_localization_hostile_audit.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "operator_order",
+        "requirement": "Verify complete finite Stokes recombination precedes alpha localization and all limits."
+      },
+      {
+        "id": "artificial_residue",
+        "requirement": "Verify residue orientation, exact radial coefficient, arithmetic chamber, Plemelj, and target X-growth."
+      },
+      {
+        "id": "analytic_assembly",
+        "requirement": "Verify the positive-line large-alpha match, compact x derivative, actual selectors, sums, collisions, and external normalization."
+      },
+      {
+        "id": "mathematical_isolation",
+        "requirement": "The statement-only proof may see repository operating instructions but no excluded mathematical claim or derivation artifact."
+      }
+    ],
+    "closing_assessment": {
+      "decision": "promote_compact_and_artificial_core_retain_full_localization_open",
+      "graph_mutation": true,
+      "main_result": "The exact compact three-selector beta terminal and both oriented artificial-residue alpha shares are target-safe. The full direct complement remains open at an identical-antecedent finite partition and quantitative nonsaddle coverage."
+    },
+    "next_round": 46
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "45b0c54cad320dc5a08b1129f5a7b4776f6b9e321b3c1c7c9fa738bcb85c5196",
+    "generated_at": "2026-08-13T19:44:42.994097+08:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

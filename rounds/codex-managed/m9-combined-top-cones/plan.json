@@ -1,0 +1,61 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 9,
+    "round_type": "combined_kernel_discovery",
+    "campaign_id": "m9-combined-top-cones",
+    "title": "Derive and test the combined M1/M2 top-cone architecture",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "conductor_policy": {
+      "strategy_owner": "Codex conductor",
+      "subagents_may_start_next_round": false,
+      "monitoring": "Check all constants, characters, Vaaler variables, cone boundaries, endpoint terms, and whether any purported M1/M2 cancellation preserves the actual profiles.",
+      "round_close": "Close with an exact combined formula and either a target estimate, a strictly smaller signed kernel, or a rigorous no-go showing the cones do not cancel."
+    },
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 90,
+      "numerical_experimental_maximum_percent": 10,
+      "numerical_purpose": ["falsify an exact coefficient, cone, or pairing identity"],
+      "numerical_prohibition": "Numerical agreement cannot promote an asymptotic estimate.",
+      "literature_policy": "Use primary sources only if importing a transformation or bilinear theorem."
+    },
+    "target_obligations": [
+      "M9-M1",
+      "M9-M2-top-endpoint-signed-cone",
+      "M9-M2",
+      "M9-endpoint-uniformity",
+      "M9"
+    ],
+    "frozen_target": {
+      "M2_cone": "The accepted top M2 cone has h odd, ceil(h/4)<=m<=h, phase e(sqrt(Xhm)), and character chi_4(h).",
+      "combined_question": "Derive the top M1 transform with the same conventions and decide exactly whether its stationary cone is complementary to the M2 cone after relabeling, and whether constants/profiles cancel, reinforce, or leave a smaller boundary kernel.",
+      "success": "Prove an O_epsilon(X^(1/4+epsilon)) bound for the combined top sawtooth contribution and separately identify what is still needed for M1/M2 blockwise obligations, or rigorously rule out the combined-cone mechanism."
+    },
+    "tasks": [
+      {"id":"blind_m1_top_transform","role":"statement_only_deriver","brief":"rounds/codex-managed/m9-combined-top-cones/briefs/blind_m1_top_transform.md"},
+      {"id":"combined_cone_algebra","role":"combined_kernel_attacker","brief":"rounds/codex-managed/m9-combined-top-cones/briefs/combined_cone_algebra.md"},
+      {"id":"combined_cone_hostile_audit","role":"hostile_falsifier","brief":"rounds/codex-managed/m9-combined-top-cones/briefs/combined_cone_hostile_audit.md"}
+    ],
+    "exit_gates": [
+      "exact M1 one-sided transform with actual chi_4(d)",
+      "M1 boundary and error sizes after actual alpha weights",
+      "exact M1/M2 cone comparison and constants",
+      "profile and Vaaler-variable compatibility",
+      "special-square and parity controls",
+      "conductor target/no-go decision"
+    ],
+    "promotion_policy": "Do not replace the proof architecture by a combined bound unless its implication to the original balanced sawtooth formula is exact. A combined cancellation does not by itself prove the separately stated M9 obligation; record the weakest correct bridge."
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "d155bdcc1ef62728419694f98c40a1cd4fe9664d6cc7e74528b282f8dc69fa2b",
+    "generated_at": "2026-08-12T11:20:00+08:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

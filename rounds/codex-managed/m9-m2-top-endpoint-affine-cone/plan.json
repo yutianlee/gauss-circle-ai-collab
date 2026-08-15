@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "round_index": 74,
+  "round_type": "m9_m2_top_endpoint_affine_cone",
+  "campaign_id": "m9-m2-top-endpoint-affine-cone",
+  "title": "Signed affine-cone estimate for the top M2 endpoint",
+  "status": "complete",
+  "max_concurrency": 3,
+  "coordinator": "Codex",
+  "starting_graph_sha256": "6e094849c4bbdeb08bb04771667f64cd6a36f0d56ba2cb811942693c3597e767",
+  "resource_policy": {
+    "analytical_algebraic_minimum_percent": 80,
+    "numerical_experimental_maximum_percent": 20,
+    "literature_policy": "Audit primary bilinear square-root-product, double-large-sieve, shifted-divisor, fourth-moment, exponent-pair, and spectral theorems at the exact hard-edge symbol before import."
+  },
+  "target_obligations": [
+    "M9-M2-top-endpoint-signed-cone",
+    "M9-M2-top-endpoint-transform",
+    "M9-M2-character-factor",
+    "M9-M2"
+  ],
+  "frozen_target": {
+    "question": "Can the exact signed top M2 affine cone be bounded by L^(3/2)X^epsilon uniformly for 1<=L<=H, or can the intermediate-height survivor be narrowed strictly?",
+    "reference_formula": "T_end,L=sum_(h asymp L,h odd)sum_(ceil(h/4)<=m<=h)chi4(h)a_end(h,m)e(sqrt(Xhm)) << L^(3/2)X^epsilon.",
+    "quantities": [
+      "y=floor(sqrt X), q_X=X/y^2, H=floor(yX^(-1/4))",
+      "actual normalized Vaaler/profile symbol a_end",
+      "hard affine lower edge m=ceil(h/4) and flat upper profile edge",
+      "external positive-frequency factor -(2/pi)e(1/8)X^(1/4)L^(-3/2)",
+      "intermediate range 1<<L<<H; bounded L and L asymp H are inherited safe slices"
+    ]
+  },
+  "completion_criteria": [
+    "Reproduce the exact top-transform and external normalization.",
+    "Prove the full cone bound, a strict new L-subrange, or isolate a smaller exact actual-symbol correlation.",
+    "Audit the hard edge, character, shear, product multiplicity, diagonal, perfect powers, aliases, and errors.",
+    "Complete a strict statement-only rederivation and a hostile primary-source audit.",
+    "Do not use M1 cancellation or promote M9/global exponent from a scoped result."
+  ],
+  "controls": [
+    "external_normalization",
+    "odd_character",
+    "hard_lower_edge",
+    "flat_upper_edge",
+    "all_L_slices",
+    "product_multiplicity",
+    "shear_projector",
+    "exact_square_and_fourth_power",
+    "diagonal_and_near_diagonal",
+    "stationary_aliases_and_self_return",
+    "source_applicability",
+    "proves_too_much",
+    "downstream_scope"
+  ],
+  "tasks": [
+    {
+      "id": "m2_affine_cone_attack",
+      "role": "discovery",
+      "access_mode": "selected_context",
+      "status": "complete",
+      "target": "Prove the exact signed affine-cone estimate, a strict intermediate-L subrange, or isolate its smallest actual-symbol survivor.",
+      "context_files": [
+        "protocol.md",
+        "state/proof_obligations.yml",
+        "state/active_campaign.yml",
+        "rounds/codex-managed/m9-m2-top-endpoint-affine-cone/briefs/m2_affine_cone_attack.md",
+        "rounds/codex-managed/m9-m2-top-endpoint-affine-cone/derivation_packet.md",
+        "rounds/codex-managed/m9-top-endpoint-transform/synthesis.md",
+        "rounds/codex-managed/m9-top-endpoint-transform/reports/one_sided_poisson_derivation.md",
+        "rounds/codex-managed/m9-combined-top-cones/reports/combined_cone_hostile_audit.md"
+      ],
+      "required_controls": [
+        "external_normalization",
+        "odd_character",
+        "hard_lower_edge",
+        "flat_upper_edge",
+        "all_L_slices",
+        "product_multiplicity",
+        "shear_projector",
+        "exact_square_and_fourth_power",
+        "diagonal_and_near_diagonal",
+        "stationary_aliases_and_self_return",
+        "proves_too_much",
+        "downstream_scope"
+      ],
+      "required_output": [
+        "rounds/codex-managed/m9-m2-top-endpoint-affine-cone/reports/m2_affine_cone_attack.md"
+      ]
+    },
+    {
+      "id": "blind_m2_cone_rederivation",
+      "role": "blind_rederiver",
+      "access_mode": "statement_only",
+      "status": "complete_clean",
+      "target": "Independently rederive and prove or sharply obstruct the exact signed affine cone using only the frozen packet.",
+      "context_files": [
+        "rounds/codex-managed/m9-m2-top-endpoint-affine-cone/briefs/blind_m2_cone_rederivation.md",
+        "rounds/codex-managed/m9-m2-top-endpoint-affine-cone/derivation_packet.md"
+      ],
+      "excluded_context": [
+        "state/proof_obligations.yml",
+        "state/best_proof_draft.md",
+        "all prior and sibling reports",
+        "all source cards and web literature"
+      ],
+      "required_controls": [
+        "external_normalization",
+        "odd_character",
+        "hard_lower_edge",
+        "flat_upper_edge",
+        "all_L_slices",
+        "product_multiplicity",
+        "shear_projector",
+        "exact_square_and_fourth_power",
+        "diagonal_and_near_diagonal",
+        "stationary_aliases_and_self_return",
+        "proves_too_much",
+        "downstream_scope"
+      ],
+      "required_output": [
+        "rounds/codex-managed/m9-m2-top-endpoint-affine-cone/reports/blind_m2_cone_rederivation.md"
+      ]
+    },
+    {
+      "id": "m2_cone_source_hostile_audit",
+      "role": "source_auditor",
+      "access_mode": "selected_context",
+      "status": "complete_clean",
+      "target": "Hostile-audit the cone mechanisms and exact applicability of primary bilinear, fourth-moment, shifted-divisor, exponent-pair, and spectral theorems.",
+      "context_files": [
+        "protocol.md",
+        "state/proof_obligations.yml",
+        "state/active_campaign.yml",
+        "rounds/codex-managed/m9-m2-top-endpoint-affine-cone/briefs/m2_cone_source_hostile_audit.md",
+        "rounds/codex-managed/m9-m2-top-endpoint-affine-cone/derivation_packet.md",
+        "rounds/codex-managed/m9-top-endpoint-transform/synthesis.md",
+        "rounds/codex-managed/m9-top-endpoint-transform/reports/endpoint_transform_hostile_audit.md",
+        "rounds/codex-managed/m9-combined-top-cones/reports/combined_cone_hostile_audit.md"
+      ],
+      "required_controls": [
+        "external_normalization",
+        "odd_character",
+        "hard_lower_edge",
+        "flat_upper_edge",
+        "all_L_slices",
+        "product_multiplicity",
+        "shear_projector",
+        "exact_square_and_fourth_power",
+        "diagonal_and_near_diagonal",
+        "stationary_aliases_and_self_return",
+        "source_applicability",
+        "proves_too_much",
+        "downstream_scope"
+      ],
+      "required_output": [
+        "rounds/codex-managed/m9-m2-top-endpoint-affine-cone/reports/m2_cone_source_hostile_audit.md"
+      ]
+    }
+  ],
+  "review_seams": [
+    "top-transform normalization",
+    "hard affine edge and character",
+    "product multiplicity and Cauchy diagonal",
+    "shear, aliases, and perfect powers",
+    "source hypotheses and self-return",
+    "M2 and downstream implication"
+  ]
+}

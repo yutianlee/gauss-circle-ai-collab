@@ -1,0 +1,189 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-beta-hierarchical-radial-split-identity",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Hierarchical beta partition and recombined radial split",
+        "status": "proved_internal",
+        "statement_tex": "With the hierarchical partition 1=psi(beta)+(1-psi(beta))psi(alpha)+(1-psi(beta))(1-psi(alpha)), the beta branch owns the complete double-bounded box. Its internal split psi(beta)=psi(beta)psi(alpha)+psi(beta)(1-psi(alpha)) has cancelling psi'(alpha) connector edges and complementary A=0 residue weights summing to one. The finite Cauchy-Green displacement is applied first to G=E1+R1, whose apparent rho=0 residues cancel. If omega(-Im rho)=1 near rho=0, then after the complete same-mask E1 endpoint image is removed the exact survivor is R1=omega G+(1-omega)R1-omega E1. The omega' connectors cancel by G-E1-R1=0; the artificial residue, full A=0 residue, all actual profiles, floors, stars, finite sides, and the external -(4/pi)X^(1/4) real-part normalization are retained exactly. This is an identity and supplies no estimate for the double-bounded or transition kernels.",
+        "dependencies": [
+          "M9-M1-beta-Cauchy-Green-connector-identity",
+          "M9-M1-R1-arithmetic-residue",
+          "M9-M1-radial-endpoint-subtraction-identity"
+        ],
+        "implies": [
+          "M9-M1-beta-transition-connector-reduction"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-radial-pushforward-bv/reports/blind_hierarchical_recombined_identity.md",
+            "rounds/codex-managed/m9-m1-beta-radial-pushforward-bv/reports/pushforward_bv_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-radial-pushforward-bv/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use this exact split in every beta estimate. Keep the double-bounded estimate, uniform transition patching, full sums, endpoints, and outside sides explicit."
+      },
+      {
+        "id": "M9-M1-beta-post-endpoint-signed-convolution-gain",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Separated post-endpoint beta radial q-inverse and signed top gain",
+        "status": "proved_internal",
+        "statement_tex": "For the post-endpoint remainder R1=-(pi i sqrt(X)/rho)I1(rho), let alpha_0=pi q sqrt(Xx)/D_j. On a positive-alpha stationary patch with bounded beta, fixed b=Re(v)>0, and positive separation from saddle entry, saddle exit, and the artificial rho=0 seam, 1/rho=2i/alpha_0+O((1+|beta+nu|)/alpha_0^2). Thus R1 has one inverse q relative to the q^0 unsplit G stationary transform. For the hard top, after the symmetric physical split (a+i mu)^(-1)=pi delta_0(mu)-i PV(1/mu), the signed two-denominator nu convolution satisfies C_PV=O_b(alpha_0^(-2)) and C_delta=O_b(alpha_0^(-4)). Restoring the R1 stationary numerator gives O_b(D_j/(q alpha_0))=O_b(D_j/(q^2 theta_j(x))). The constants cost only polylogarithms on b=1/log(2X). This lemma excludes transition zones, the artificial-pole seam, the double-bounded share, full scale/height/radial sums, endpoints, and finite outside-height limits.",
+        "dependencies": [
+          "M9-M1-beta-stationary-character-kernel",
+          "M9-M1-beta-hierarchical-radial-split-identity",
+          "M9-M1-R1-arithmetic-residue"
+        ],
+        "implies": [
+          "M9-M1-beta-transition-connector-reduction"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-radial-pushforward-bv/reports/blind_hierarchical_recombined_identity.md",
+            "rounds/codex-managed/m9-m1-beta-radial-pushforward-bv/reports/radial_pushforward_qbv_attack.md",
+            "rounds/codex-managed/m9-m1-beta-radial-pushforward-bv/reports/pushforward_bv_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-radial-pushforward-bv/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Prove a uniform stationary-transition decomposition that preserves the signed top gain through entry and exit, then execute the complete dyadic, height, radial, endpoint, and side sums."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-beta-Cauchy-Green-connector-identity",
+        "statement_tex": "For the hierarchical beta mask psi(beta), the finite positive-orientation Cauchy-Green displacement has one connector -intint psi'(beta)F, crosses the full A=0 residue with residue sign Res zeta(1-A)=-1, and retains every finite side, profile, floor, star, axial/top/corner term, and the external normalization. Under the exact internal split psi(beta)psi(alpha)+psi(beta)(1-psi(alpha)), the psi'(alpha) edges cancel and the two A=0 weights add to one. Applied to G=E1+R1, the artificial rho=0 pole cancels before displacement; after the endpoint image is removed, R1=omega G+(1-omega)R1-omega E1 preserves that residue ledger with cancelling omega' connectors. This identity supplies no transition estimate.",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-radial-pushforward-bv/reports/blind_hierarchical_recombined_identity.md",
+            "rounds/codex-managed/m9-m1-beta-radial-pushforward-bv/synthesis.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-radial-pushforward-bv/reports/pushforward_bv_hostile_audit.md"
+          ]
+        },
+        "next_action": "Use the hierarchical convention and exact omega split. Do not infer an estimate for the double-bounded or masked R1 share from this algebra."
+      },
+      {
+        "id": "M9-M1-beta-stationary-character-kernel",
+        "title": "Unsplit beta stationary character kernel and post-endpoint scope",
+        "statement_tex": "In the positive-alpha interior, partial_alpha Psi=log(alpha D_j/(pi q sqrt(Xx))), alpha_0=pi q sqrt(Xx)/D_j, and |Psi''(alpha_0)|=alpha_0^(-1). For the unsplit radial transform G=E1+R1, the gamma, arithmetic, and stationary powers leave exactly q^0 with leading phase exp(-iq theta_j(x)). Its finite period-four character Dirichlet kernel has maximal pointwise envelope min(Q,1+|cos theta|^(-1)), one-period L1 norm O(log(2Q)), and the standard discrete-BV Abel bound; the hard-top half-integer parity gap also holds. This q^0 statement does not apply to separated post-endpoint R1, whose explicit 1/rho gives q^(-1) on a separated saddle and whose signed hard-top convolution is recorded separately. The character-kernel facts alone do not prove phase-pushforward density, profile BV, transitions, endpoints, or outside-height limits.",
+        "evidence_added": {
+          "positive": [
+            "proofs/kernels/m9_m1_beta_character_dirichlet.md",
+            "rounds/codex-managed/m9-m1-beta-radial-pushforward-bv/reports/blind_hierarchical_recombined_identity.md",
+            "rounds/codex-managed/m9-m1-beta-radial-pushforward-bv/reports/radial_pushforward_qbv_attack.md",
+            "rounds/codex-managed/m9-m1-beta-radial-pushforward-bv/reports/pushforward_bv_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-radial-pushforward-bv/synthesis.md"
+          ]
+        },
+        "next_action": "Apply the q^0 Dirichlet-kernel lemma only to the unsplit operator. For post-endpoint R1, use the signed two-denominator gain and prove uniform transition patching."
+      },
+      {
+        "id": "M9-M1-beta-transition-connector-reduction",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M1-beta-hierarchical-radial-split-identity",
+          "M9-M1-beta-post-endpoint-signed-convolution-gain"
+        ],
+        "statement_tex": "Use the hierarchical beta partition and the proved recombined G displacement. Remove the complete same-mask E1 endpoint image by the exact omega split. The separated positive-alpha stationary interior of post-endpoint R1 has a local q^(-2) signed hard-top coefficient, but pointwise complete-profile q-BV before the physical PV/delta split is false. Prove the normalized O_epsilon(X^epsilon) beta contribution by uniformly patching the stationary interior to saddle entry/exit, nonstationary and negative-alpha zones, the artificial-rho seam, the double-bounded kernel, connector edges, full dyadic/height/radial sums, radial endpoints, and finite outside-height limits.",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-radial-pushforward-bv/reports/blind_hierarchical_recombined_identity.md",
+            "rounds/codex-managed/m9-m1-beta-radial-pushforward-bv/reports/radial_pushforward_qbv_attack.md",
+            "rounds/codex-managed/m9-m1-beta-radial-pushforward-bv/synthesis.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-m1-beta-radial-pushforward-bv/reports/pushforward_bv_hostile_audit.md"
+          ]
+        },
+        "next_action": "Construct a uniform endpoint-stationary decomposition with the signed PV/delta split first, preserve the q^(-2) interior gain, and prove the complete scale/height/radial and finite-side bound. Keep the double-bounded estimate separate until independently proved."
+      },
+      {
+        "id": "M9-M1-swept-transition-horizontal-operator",
+        "status": "open",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-radial-pushforward-bv/synthesis.md"
+          ]
+        },
+        "next_action": "Close the beta uniform stationary-transition patching and complete sums, then return to the alpha-bounded zeta-high branch. Do not infer the full mixed operator from the separated local q^(-2) lemma."
+      },
+      {
+        "id": "M9-M1-renormalized-radial-boundary-operator",
+        "status": "open",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-radial-pushforward-bv/reports/blind_hierarchical_recombined_identity.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-radial-pushforward-bv/synthesis.md"
+          ]
+        },
+        "next_action": "Use the exact same-mask endpoint removal and omega split. The remaining beta estimate must include transitions, the double-bounded share, full sums, endpoints, and outside sides."
+      }
+    ],
+    "correct_rejected": [
+      {
+        "id": "Round26-alpha-stationary-phase-produces-q-inverse-arctangent",
+        "reason": "Corrected scope: stationary phase alone for the unsplit G=E1+R1 transform leaves q^0 and does not produce a q^(-1) arctangent kernel. That rejection remains valid only for unsplit G. It was false to transfer it to the post-endpoint R1 survivor: R1's explicit 1/rho supplies q^(-1) on a separated positive-alpha saddle, and the signed hard-top PV/delta convolution supplies a further inverse frequency locally.",
+        "evidence_added": [
+          "rounds/codex-managed/m9-m1-beta-radial-pushforward-bv/reports/blind_hierarchical_recombined_identity.md",
+          "rounds/codex-managed/m9-m1-beta-radial-pushforward-bv/reports/radial_pushforward_qbv_attack.md",
+          "rounds/codex-managed/m9-m1-beta-radial-pushforward-bv/reports/pushforward_bv_hostile_audit.md",
+          "rounds/codex-managed/m9-m1-beta-radial-pushforward-bv/synthesis.md"
+        ]
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round27-unsplit-q0-transfers-to-post-endpoint-R1",
+        "reason": "The post-endpoint remainder contains the explicit factor 1/rho, which is of size alpha_0^(-1) at a separated positive-alpha saddle and therefore restores q^(-1)."
+      },
+      {
+        "id": "Round27-uniform-pre-split-hard-top-qBV",
+        "reason": "At an actual top-pole sample the factor {a+i(q theta-beta-nu)}^(-1) has size 1/a, so the complete sampled q-BV norm is not uniform as a tends to zero."
+      },
+      {
+        "id": "Round27-absolute-hard-top-before-PV-split",
+        "reason": "Taking absolute values before the symmetric PV/delta split yields a logarithmic divergence near the top pole and destroys the signed two-denominator gain."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "The beta uniform transition patch, alpha transition, and residual M1 corridor remain open."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Round 27 concerns only the transformed M1 beta transition."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1 and M9-M2 remain open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "No unconditional Gauss-circle target estimate is claimed."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 9,
+    "idea_quality_score": 9,
+    "state_evidence_score": 9,
+    "calibration_score": 10,
+    "reason": "Round 27 independently corrects the operator normalization, proves exact hierarchical and artificial-pole algebra, replaces a false pre-split q-BV route by a scoped signed q^(-2) local gain, and isolates uniform stationary-transition patching plus complete sums as the next interface without promoting M9-M1."
+  }
+}
+

@@ -1,0 +1,160 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 29,
+    "round_type": "beta_outside_v_side_reconciliation",
+    "campaign_id": "m9-m1-beta-outside-v-side-reconciliation",
+    "title": "Oriented outside-v-side cancellation of the moving top-pole edge",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "literature_policy": "Use exact finite-contour Cauchy algebra, Mellin inversion, endpoint expansion, and Hilbert-transform analysis. Search primary literature only if a named finite-section Hilbert or Plemelj theorem is proposed, and audit orientation and uniform-parameter hypotheses."
+    },
+    "target_obligations": [
+      "M9-M1-beta-outside-v-side-reconciliation",
+      "M9-M1-beta-transition-connector-reduction",
+      "M9-M1-swept-transition-horizontal-operator"
+    ],
+    "frozen_target": {
+      "question": "Does the exact oriented sum of the finite v-vertical, its two outside-v sides, and the v=0/u=0/corner ledger cancel the logarithmic moving hard-top edge uniformly in L=alpha-beta, and does the resulting amplitude satisfy the scaled C^2 bounds required by the accepted two-saddle Fresnel lemma?",
+      "reference_formula": "At finite height C_(a,V)(L)=int_(-V)^V H_b(nu)/(a+i(L-nu))dnu has C_(a,V)(V)=-iH_b(V)log(1/a)+O(1). Start from the exact finite vector contour rule: moving the v-line retains the upper left-to-right side minus the lower left-to-right side, plus the v=0 residue and the u=0/v=0 corner when crossed. Keep the omega-recombined radial factor and take no whole-line PV limit before deriving this oriented identity.",
+      "quantities": [
+        "finite v-vertical with moving pole",
+        "upper and lower oriented outside-v sides",
+        "v=0 height residue",
+        "u=0 top residue and joint corner",
+        "omega-recombined G/E1/R1 factor",
+        "logarithmic edge coefficient and sign",
+        "uniform L and alpha derivatives",
+        "nested U,V,S exhaustion",
+        "scaled C^2 Fresnel amplitude or exact obstruction"
+      ]
+    },
+    "completion_criteria": [
+      "The exact oriented finite v-side identity is written with all signs and residues.",
+      "The log coefficient is matched against every possible cancelling side term.",
+      "The physical top limit and height exhaustion order are justified or rigorously obstructed.",
+      "Uniform L/alpha derivatives are proved or their first failure is isolated.",
+      "A blind rederivation and hostile audit independently assess the cancellation.",
+      "The conductor closes the round before choosing a new objective."
+    ],
+    "controls": [
+      "signed-vs-unsigned",
+      "support-and-degeneracy",
+      "residue-and-normalization",
+      "endpoint-uniformity",
+      "order-of-limits",
+      "coefficient-adversary"
+    ],
+    "tasks": [
+      {
+        "id": "blind_outside_v_identity",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "target": "Independently derive the exact oriented finite v-contour identity containing the truncated moving-pole integral, both outside-v sides, v=0 residue, u=0 residue and corner, and omega-recombined radial factor. Compute the coefficient and sign of every logarithmic edge term. Do not estimate the full beta trace.",
+        "context_files": [
+          "protocol.md",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-vector-hankel-kernel/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-uniform-stationary-patching/synthesis.md"
+        ],
+        "excluded_context": [
+          "all other Round-29 reports",
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md"
+        ],
+        "required_controls": [
+          "support-and-degeneracy",
+          "residue-and-normalization",
+          "endpoint-uniformity",
+          "order-of-limits"
+        ],
+        "required_output": [
+          "Exact finite oriented identity and log coefficient ledger",
+          "Seven-section report at the assigned path"
+        ]
+      },
+      {
+        "id": "outside_v_cancellation_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "target": "Evaluate the oriented outside-v sides in the moving-pole coordinate, prove cancellation or target control of the finite-height logarithm, and derive the resulting uniform scaled C^2 amplitude and nested exhaustion. If false, isolate the smallest exact surviving boundary kernel.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-vector-hankel-kernel/reports/blind_finite_vector_kernel.md",
+          "rounds/codex-managed/m9-m1-diagonal-transition-exhaustion/synthesis.md",
+          "rounds/codex-managed/m9-m1-radial-endpoint-renormalization/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-radial-pushforward-bv/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-uniform-stationary-patching/synthesis.md"
+        ],
+        "required_controls": [
+          "signed-vs-unsigned",
+          "support-and-degeneracy",
+          "residue-and-normalization",
+          "endpoint-uniformity",
+          "order-of-limits",
+          "coefficient-adversary"
+        ],
+        "required_output": [
+          "Exact cancellation/bound or boundary survivor",
+          "Uniform derivative and exhaustion verdict",
+          "Seven-section report at the assigned path"
+        ]
+      },
+      {
+        "id": "outside_v_hostile_audit",
+        "role": "seam_reviewer",
+        "access_mode": "selected_context",
+        "target": "Hostilely audit side orientation, moving-pole endpoint convention, Plemelj signs, axial/top/corner double counting, omega recombination, order of limits, and uniform derivatives. Construct an actual-profile falsifier or certify the narrowest exact reconciliation.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-vector-hankel-kernel/reports/blind_finite_vector_kernel.md",
+          "rounds/codex-managed/m9-m1-partial-functional-equation-transitions/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-uniform-stationary-patching/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-uniform-stationary-patching/reports/transition_patching_hostile_audit.md"
+        ],
+        "required_controls": [
+          "signed-vs-unsigned",
+          "support-and-degeneracy",
+          "residue-and-normalization",
+          "endpoint-uniformity",
+          "order-of-limits",
+          "coefficient-adversary"
+        ],
+        "required_output": [
+          "Independent sign/residue/order audit",
+          "Counterexample or scoped certification",
+          "Seven-section report at the assigned path"
+        ]
+      }
+    ],
+    "review_seams": [
+      "outside-v side orientation",
+      "moving-pole Plemelj convention",
+      "log coefficient matching",
+      "v=0/u=0/corner ledger",
+      "omega artificial-pole cancellation",
+      "nested U,V,S versus top limit",
+      "uniform alpha/L derivatives",
+      "actual profile and endpoint stars",
+      "external normalization"
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "2a5a8ac3d40fc39cef58d677ee339ec474c3eb88ca1f4ab5755fec6b73c67a0c",
+    "generated_at": "2026-08-12T22:58:10.342742+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

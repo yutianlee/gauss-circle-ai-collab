@@ -1,0 +1,165 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-top-endpoint-transform",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "One-sided transform for the hard top M1 denominator block",
+        "status": "proved_internal",
+        "statement_tex": "Let y=floor(sqrt X), q=X/y^2, H=floor(yX^(-1/4)), and B_h=sum_(d<=y) chi_4(d)W(d/y)e(hX/d). Uniformly for 1<=h<=H, one-sided Poisson with full endpoint weight gives B_h=E_h^chi(X)+e(1/8)(hX)^(1/4)/i sum_(4h<n<16h, n odd) chi_4(n)W(sqrt(4qh/n))n^(-3/4)e(sqrt(Xhn))+O_W(log(2+h)), where E_h^chi=(2i)^(-1){e(hX/y+y/4)/(1-e(hq-1/4))-e(hX/y+3y/4)/(1-e(hq-3/4))}. The boundary denominators are uniformly separated; after the actual two-sided Vaaler weights the boundary is O(1) and transform errors are O_W(log^2 H). Multiplication by -4 alpha_(h,H) gives leading constant -2e(1/8)X^(1/4)/pi and reduces the top M1 block to M9-M1-top-endpoint-signed-cone.",
+        "dependencies": [
+          "H4",
+          "M9-M2-dyadic-weight-nondegeneracy"
+        ],
+        "implies": [
+          "M9-M1"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-combined-top-cones/reports/blind_m1_top_transform.md",
+            "rounds/codex-managed/m9-combined-top-cones/reports/combined_cone_algebra.md",
+            "rounds/codex-managed/m9-combined-top-cones/reports/combined_cone_hostile_audit.md",
+            "rounds/codex-managed/m9-combined-top-cones/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use the direct chi_4 partial-sum bound to close the endpoint block if possible; otherwise prove the exact signed M1 cone estimate."
+      },
+      {
+        "id": "M9-M1-top-endpoint-signed-cone",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Signed product-phase cone estimate for the top M1 block",
+        "status": "open",
+        "statement_tex": "For dyadic 1<=L<=X^(1/4), prove T_M1,L=sum_(h asymp L) sum_(4h<n<16h, n odd) chi_4(n)a_M1(h,n)e(sqrt(Xhn)) <<_epsilon L^(3/2)X^epsilon, with the actual normalized symbol a_M1 containing Phi(h/(H+1))W(sqrt(4qh/n)). Equivalently after swapping variables, the cone is r odd and ceil(r/16)<=m<=min(H,floor(r/4)). Together with M9-M1-top-endpoint-transform this implies the top M1 block target.",
+        "dependencies": [
+          "M9-M1-top-endpoint-transform",
+          "H4-Phi-regularity"
+        ],
+        "implies": [
+          "M9-M1"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-combined-top-cones/reports/blind_m1_top_transform.md",
+            "rounds/codex-managed/m9-combined-top-cones/reports/combined_cone_algebra.md",
+            "rounds/codex-managed/m9-combined-top-cones/reports/combined_cone_hostile_audit.md",
+            "rounds/codex-managed/m9-combined-top-cones/synthesis.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "First test whether direct summation by parts against chi_4(d), before Poisson, already closes the unique top block; reserve this cone estimate for the residual range."
+      },
+      {
+        "id": "M9-top-combined-piecewise-cone",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Exact piecewise product-phase kernel for the combined top M1/M2 contribution",
+        "status": "proved_internal",
+        "statement_tex": "After the exact one-sided M1 and M2 transforms and restoration of the H3 prefactors, their positive stationary parts have the common leading constant -2e(1/8)X^(1/4)/pi, common phase e(sqrt(Xrm)), and common outer character chi_4(r). M1 has r odd, m<=H, 4m<r<16m with symbol Phi(m/(H+1))W(sqrt(4qm/r)); M2 has r odd, r<=H, ceil(r/4)<=m<=r with symbol Phi(r/(H+1))W(sqrt(qr/(4m)). For r<=H the integer cones concatenate without gap or overlap, but the symbol is piecewise and M1 has an unmatched H<r<16H wing. The full contribution is twice the real part plus explicit target-sized boundary and transform errors. No estimate for this combined kernel is asserted.",
+        "dependencies": [
+          "M9-M1-top-endpoint-transform",
+          "M9-M2-top-endpoint-transform"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-combined-top-cones/reports/blind_m1_top_transform.md",
+            "rounds/codex-managed/m9-combined-top-cones/reports/combined_cone_algebra.md",
+            "rounds/codex-managed/m9-combined-top-cones/reports/combined_cone_hostile_audit.md",
+            "rounds/codex-managed/m9-combined-top-cones/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Retain as exact infrastructure only. Do not replace the separate M1/M2 obligations by a combined estimate without an exact downstream bridge."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M1-top-endpoint-transform",
+          "M9-M1-top-endpoint-signed-cone"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-combined-top-cones/reports/blind_m1_top_transform.md",
+            "rounds/codex-managed/m9-combined-top-cones/reports/combined_cone_algebra.md",
+            "rounds/codex-managed/m9-combined-top-cones/synthesis.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-combined-top-cones/reports/combined_cone_hostile_audit.md"
+          ]
+        },
+        "next_action": "Build the direct M1 frequency phase diagram using bounded chi_4 partial sums and exact Vaaler weights. The top transform is proved, but its signed cone estimate and all lower/intermediate blocks remain open."
+      },
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "status": "open",
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-combined-top-cones/reports/combined_cone_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-combined-top-cones/reports/combined_cone_algebra.md"
+          ]
+        },
+        "next_action": "Prove the exact signed M2 affine-cone estimate. M1 has the same stationary sign but a different Vaaler variable and an unmatched wing, so cone complementarity supplies no cancellation."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round9-top-M1-M2-cone-cancellation",
+        "reason": "The exact stationary constants have the same sign, so the adjacent cones reinforce rather than cancel."
+      },
+      {
+        "id": "Round9-top-cones-common-actual-profile",
+        "reason": "M1 carries Phi on the inner original frequency and M2 carries Phi on the outer character frequency; the profile mismatch is order one near r asymp H."
+      },
+      {
+        "id": "Round9-product-preserving-cone-involution",
+        "reason": "The continuum reflection (r,m)->(4m,r/4) does not preserve the integer odd-r lattice, and M1 has an unmatched H<r<16H wing."
+      },
+      {
+        "id": "Round9-combined-bound-implies-separate-M1-M2",
+        "reason": "A bound for the sum of the two actual kernels gives no separate projection estimate without an additional stability lemma."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M2",
+        "reason": "The top M2 signed cone and the smooth-interior packet estimate remain open."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "The exact transforms are known, but neither top signed cone is bounded at the required scale."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1 and M9-M2 remain open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The final theorem remains conditional on open M9."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 8,
+    "idea_quality_score": 8,
+    "state_evidence_score": 9,
+    "calibration_score": 10,
+    "reason": "Round 9 proves the exact M1 hard-endpoint transform and common product-phase architecture, while a blind derivation and hostile controls rigorously rule out the hoped-for M1/M2 cancellation."
+  }
+}

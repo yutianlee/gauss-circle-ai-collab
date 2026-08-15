@@ -1,0 +1,183 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 50,
+    "round_type": "alpha_highpass_log_dilation_commutator",
+    "campaign_id": "m9-m1-alpha-highpass-log-commutator",
+    "title": "High-pass log-dilation commutator in the projected alpha comb",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "literature_policy": "Search primary literature only after an exact Mellin-commutator kernel matches a named multiplier or variation theorem; audit all hypotheses before import."
+    },
+    "target_obligations": [
+      "M9-M1-alpha-bounded-zeta-high-transition-bound"
+    ],
+    "frozen_target": {
+      "question": "Does the zero at beta=0 of the high-pass factor 1-psi(beta) turn the projected alpha cosine comb into a target-sized logarithmic dilation commutator, or do the actual lattice/floor jumps retain the X^(1/8) normalized capacity?",
+      "reference_formula": "Start from the proved Round-49 masked cosine-comb reduction on one common finite antecedent. Write the inverse beta-height multiplier of 1-psi(beta) as delta_0-check(psi), keep the bounded-alpha factor psi(alpha), and retain every A-strip connector, u/v face, positive axis, mixed connector, corner, signed top/height operation, radial R1 factor, actual profile, floor, star, and the sole external X^(1/4) factor.",
+      "quantities": [
+        "one finite common-antecedent alpha operator",
+        "inverse Fourier convention and zero-mass high-pass kernel",
+        "logarithmic dilation difference of the cosine/Dirac comb amplitude",
+        "bounded-alpha coupling alpha=beta+mu+nu",
+        "Cauchy-Pompeiu or two strip-edge A connectors",
+        "u/v faces, axes, connector axes, mixed connector, and one corner",
+        "signed top Plemelj and joint outside-height limit",
+        "actual scales, H_j+1 floors, profiles, product stars, and radial bracket",
+        "normalized X^(1/8) absolute-capacity benchmark"
+      ]
+    },
+    "completion_criteria": [
+      "An exact finite high-pass commutator formula is derived without replacing the masked branch by the pure comb.",
+      "The zero-mass identity and all Fourier/Mellin constants, signs, and dilation variables are audited.",
+      "The bounded-alpha factor and every connector, face, axis, corner, and A=0 ownership term remain on the same antecedent.",
+      "A proposed BV/difference saving is tested on exact lattice points, dyadic profile boundaries, height floors, and stars.",
+      "The signed Plemelj and height-limit order is preserved before absolute values.",
+      "The full h,q,j,x and external X powers are tracked through any claimed gain.",
+      "At least one clean statement-only derivation and one independent hostile audit exist.",
+      "No alpha bound or downstream wrapper is promoted without the complete normalized estimate and outside-height limit."
+    ],
+    "controls": [
+      "fourier_mellin_normalization",
+      "zero_mass_commutator",
+      "bounded_alpha_coupling",
+      "connector_and_residue_ownership",
+      "lattice_floor_star_adversary",
+      "signed_plemelj_order",
+      "height_cauchy_limit",
+      "radial_and_external_power_ledger",
+      "downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "alpha_log_commutator_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "target": "Derive the complete finite log-dilation commutator for the alpha share and prove a normalized O(X^epsilon) BV/difference estimate, or isolate the first exact actual-profile term that prevents it.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-alpha-bounded-zeta-high-transition/synthesis.md",
+          "rounds/codex-managed/m9-m1-alpha-bounded-zeta-high-transition/reviews/conductor_distribution_and_residue_adjudication.md",
+          "rounds/codex-managed/m9-m1-alpha-bounded-zeta-high-transition/reviews/conductor_projected_return_and_capacity.md",
+          "rounds/codex-managed/m9-m1-beta-wrapper-closure-audit/synthesis.md"
+        ],
+        "required_controls": [
+          "fourier_mellin_normalization",
+          "zero_mass_commutator",
+          "bounded_alpha_coupling",
+          "connector_and_residue_ownership",
+          "lattice_floor_star_adversary",
+          "signed_plemelj_order",
+          "height_cauchy_limit",
+          "radial_and_external_power_ledger",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "seven-section report",
+          "exact commutator formula and owner ledger",
+          "target estimate or first sharp survivor"
+        ]
+      },
+      {
+        "id": "blind_alpha_highpass_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "target": "Independently derive the zero-mass log-dilation commutator from the frozen packet, test it against lattice/floor discontinuities, and prove the target bound or state the first missing quantitative hypothesis.",
+        "context_files": [
+          "rounds/codex-managed/m9-m1-alpha-highpass-log-commutator/derivation_packet.md"
+        ],
+        "excluded_context": [
+          "proof graph",
+          "proof draft",
+          "prior reports and syntheses",
+          "other Round-50 reports"
+        ],
+        "required_controls": [
+          "fourier_mellin_normalization",
+          "zero_mass_commutator",
+          "bounded_alpha_coupling",
+          "connector_and_residue_ownership",
+          "lattice_floor_star_adversary",
+          "signed_plemelj_order",
+          "height_cauchy_limit",
+          "radial_and_external_power_ledger",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "seven-section statement-only report",
+          "independent commutator derivation or no-go",
+          "isolation ledger"
+        ]
+      },
+      {
+        "id": "alpha_commutator_hostile_audit",
+        "role": "seam_reviewer",
+        "access_mode": "selected_context",
+        "target": "Hostile-audit the proposed high-pass saving for hidden delta terms, false zero moments, loss at exact lattice/floor jumps, missing connectors or faces, illicit absolute height exchange, and incorrect X normalization; construct an actual-profile or scoped adversarial obstruction if possible.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-alpha-bounded-zeta-high-transition/synthesis.md",
+          "rounds/codex-managed/m9-m1-alpha-bounded-zeta-high-transition/reports/blind_alpha_kernel_rederivation.md",
+          "rounds/codex-managed/m9-m1-alpha-bounded-zeta-high-transition/reports/alpha_trace_hostile_audit.md",
+          "rounds/codex-managed/m9-m1-dual-r2-recombination/synthesis.md"
+        ],
+        "required_controls": [
+          "fourier_mellin_normalization",
+          "zero_mass_commutator",
+          "bounded_alpha_coupling",
+          "connector_and_residue_ownership",
+          "lattice_floor_star_adversary",
+          "signed_plemelj_order",
+          "height_cauchy_limit",
+          "radial_and_external_power_ledger",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "seven-section hostile report",
+          "seam certification or counterexample",
+          "recommended graph effect"
+        ]
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "commutator_algebra",
+        "requirement": "Verify the inverse Fourier/Mellin convention, zero mass, dilation variable, and bounded-alpha coupling exactly."
+      },
+      {
+        "id": "finite_ownership",
+        "requirement": "Keep the high-pass bulk, A connector, u/v faces, axes, mixed connector, corner, and A=0 routing on one finite antecedent."
+      },
+      {
+        "id": "arithmetic_discontinuities",
+        "requirement": "Test any BV claim at lattice points, dyadic edges, H_j floors, product stars, and endpoint prefixes."
+      },
+      {
+        "id": "signed_limit_and_capacity",
+        "requirement": "Preserve Plemelj-before-absolute order and audit the height, radial, coefficient, scale, and external X powers."
+      },
+      {
+        "id": "mathematical_isolation",
+        "requirement": "The blind proof sees only the Round-50 derivation packet and its brief."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "eb100f77b00ac44d2111881dd8872bb1333496dc0abd737119c908c2a7419dba",
+    "generated_at": "2026-08-13T15:06:06.090263+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

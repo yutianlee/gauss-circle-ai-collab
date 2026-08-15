@@ -1,0 +1,169 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-terminal-frequency-divisor-bound",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Frequency-first divisor bound for the terminal M1 block",
+        "status": "proved_internal",
+        "statement_tex": "Let B_1(D,L;X)=sum_h u_(L,H)(h) sum_(d in D_D) chi_4(d)w_D(d)e(hX/d), where D_D lies in a fixed shell d asymp D, possibly with the hard truncation d<=floor(sqrt X), |w_D|<<1, and ||u||_infty+sum|Delta u|<<1/L. Uniformly for real X>=2 and 1<=L<=D<=X^(1/2), B_1(D,L;X)<<_epsilon X^epsilon(1+D/L). Therefore for the actual Vaaler block with H_D asymp D X^(-1/4), every terminal shell L asymp H_D is O_epsilon(X^(1/4+epsilon)) throughout X^(1/4)<=D<=X^(1/2), including the hard endpoint. At D asymp X^(1/2), the accepted top M1 transform then gives the normalized signed-cone estimate on the terminal h-shell only.",
+        "dependencies": [
+          "H4-Phi-regularity",
+          "M9-M2-dyadic-weight-nondegeneracy",
+          "Divisor-bound-elementary"
+        ],
+        "implies": [
+          "M9-M1",
+          "M9-endpoint-uniformity"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-frequency-phase-diagram/reports/blind_m1_phase_diagram.md",
+            "rounds/codex-managed/m9-m1-frequency-phase-diagram/reports/m1_terminal_arithmetic_attack.md",
+            "rounds/codex-managed/m9-m1-frequency-phase-diagram/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Remove the terminal M1 line from every case split. Do not extrapolate the D/L estimate to lower frequency shells."
+      },
+      {
+        "id": "M9-M1-TTY-exponent-pair-wedge",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Tao--Trudgian--Yang exponent-pair wedge for M1",
+        "status": "proved_external_dependency",
+        "statement_tex": "Let D=X^delta and L=X^ell in the active M1 triangle, with the actual fixed discrete-BV denominator profile and Vaaler coefficient. Resolve chi_4(d) into d=1,3 mod 4 and apply the Tao--Trudgian--Yang pair (89/1282,997/1282) to the resulting shifted reciprocal model phases. Then B_1(D,L;X)<<_epsilon X^([89(1+ell)+819delta]/1282+epsilon), so the X^(1/4+epsilon) target holds when 178ell+1638delta<=463. The theorem is pointwise in real X and includes the hard top BV profile; it does not apply to arbitrary denominator coefficients.",
+        "dependencies": [
+          "M9-M2-TTY-exponent-pair-wedge",
+          "H4-Phi-regularity",
+          "M9-M2-dyadic-weight-nondegeneracy"
+        ],
+        "implies": [
+          "M9-M1"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "sources/tao_trudgian_yang_2025.md",
+            "rounds/codex-managed/m9-m1-frequency-phase-diagram/reports/blind_m1_phase_diagram.md",
+            "rounds/codex-managed/m9-m1-frequency-phase-diagram/reports/m1_literature_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-frequency-phase-diagram/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use the wedge only for the accepted fixed-BV dyadic profiles. Preserve the residual corridor outside it."
+      },
+      {
+        "id": "M9-M1-frequency-phase-diagram-R10",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Exact Round-10 M1 frequency coverage and residual corridor",
+        "status": "proved_internal",
+        "statement_tex": "In Omega={(delta,ell):1/4<=delta<=1/2, 0<=ell<=delta-1/4}, the M1 frequency-first divisor bound covers the terminal line ell=delta-1/4, the full second-derivative estimate covers (1/2,0), and the M1 TTY pair covers 178ell+1638delta<=463. Naive chi_4 Abel adds no active target region. Relative to these proved direct estimates, the exact remaining set is U_1={(delta,ell) in Omega: 0<=ell<delta-1/4 and 178ell+1638delta>463} minus {(1/2,0)}. All bounds use the actual Vaaler coefficient and accepted fixed-BV spatial profiles, including the hard top profile.",
+        "dependencies": [
+          "M9-M1-terminal-frequency-divisor-bound",
+          "M9-M1-TTY-exponent-pair-wedge",
+          "H4-Phi-regularity"
+        ],
+        "implies": [
+          "M9-M1"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-frequency-phase-diagram/reports/blind_m1_phase_diagram.md",
+            "rounds/codex-managed/m9-m1-frequency-phase-diagram/reports/m1_terminal_arithmetic_attack.md",
+            "rounds/codex-managed/m9-m1-frequency-phase-diagram/reports/m1_literature_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-frequency-phase-diagram/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Attack only U_1. Retain the character-divisor coefficient in the frequency-first near-product window or use an equivalent signed product-phase estimate."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M1-terminal-frequency-divisor-bound",
+          "M9-M1-TTY-exponent-pair-wedge",
+          "M9-M1-frequency-phase-diagram-R10"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-frequency-phase-diagram/reports/blind_m1_phase_diagram.md",
+            "rounds/codex-managed/m9-m1-frequency-phase-diagram/reports/m1_terminal_arithmetic_attack.md",
+            "rounds/codex-managed/m9-m1-frequency-phase-diagram/reports/m1_literature_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-frequency-phase-diagram/synthesis.md"
+          ]
+        },
+        "next_action": "Attack the exact residual corridor U_1 through the signed short-interval character-divisor coefficient retained by the frequency-first near-product expansion. The terminal line, certified TTY wedge, and point (1/2,0) are solved."
+      },
+      {
+        "id": "M9-M1-top-endpoint-signed-cone",
+        "status": "open",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-frequency-phase-diagram/reports/m1_terminal_arithmetic_attack.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-frequency-phase-diagram/reports/blind_m1_phase_diagram.md"
+          ]
+        },
+        "next_action": "The terminal h-shell is proved by the direct divisor estimate. Prove only the middle/lower hard-top shells, equivalently the intersection of this cone with U_1."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round10-naive-chi4-Abel-one-step-derivative-saving",
+        "reason": "Abel summation against bounded partial sums costs total phase variation hX/D across a length-D shell, not the one-step derivative hX/D^2; after the h-block this adds no active target region."
+      },
+      {
+        "id": "Round10-ignore-linear-quarter-shift-in-model-phase",
+        "reason": "The first-derivative model-phase hypothesis must be checked. The safe M1 transfer resolves chi_4 into residue classes and applies the reciprocal theorem after d=4n+r."
+      },
+      {
+        "id": "Round10-Robert-Sargos-KRW-direct-M1-import",
+        "reason": "The cited monomial estimates require independent two- or three-variable separable phases and do not directly apply to the one-variable character-twisted reciprocal block."
+      },
+      {
+        "id": "Round10-Bettin-Chandee-real-reciprocal-import",
+        "reason": "Bettin--Chandee treats modular inverses in Kloosterman fractions with essential coprimality and norm hypotheses, not the real reciprocal phase X/d."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M2",
+        "reason": "Round 10 is M1-specific."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "The M1 terminal endpoint is solved, but middle endpoint frequencies and the M2 endpoint remain open."
+      },
+      {
+        "id": "M9",
+        "reason": "Both component obligations remain open on residual corridors."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The final theorem remains conditional on open M9."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 8,
+    "idea_quality_score": 8,
+    "state_evidence_score": 9,
+    "calibration_score": 10,
+    "reason": "Round 10 independently proves the complete terminal M1 line, imports the certified exponent-pair wedge with the spatial character preserved, and reduces M1 to an exact nonempty residual corridor without overstating a full proof."
+  }
+}

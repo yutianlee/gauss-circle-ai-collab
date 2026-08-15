@@ -1,0 +1,137 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-upper-conductor-third-derivative-subrange-bound",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Third-derivative bound for the initial upper Farey conductors",
+        "status": "proved_internal",
+        "statement_tex": "Let J=sqrt(X), Q=X^(1/5)=J^(2/5), T=J/Q, and let D_C be the exact fixed-smooth-interior order-J Farey contribution with J^(2/3)<C<=J^(32/45), b asymp C/T. Retain both offset orientations, the exact half-open Farey neighbors, incomplete-Fresnel saddle entry and exit, all three odd/even local classes, gcd restrictions, both surviving axes, and the finite dual/error sums. For each compatible nonaxial pair k=rho sigma and kappa=c/[c,4] in {1/4,1/2,1}, fixing c modulo 4b makes the exact local unit constant and leaves phase plus-or-minus A_(kappa,b)/c, where A_(kappa,b)=(sqrt(bX)+sqrt(kappa k/b))^2. The two neighbor numerators partition the fixed-b row into O(Q) pieces total; every normalized actual weight has sup plus sampled variation O_epsilon(X^epsilon) on a piece, including the incomplete-Fresnel factor. Along c=r+4b ell, |f'''(ell)| asymp J^2/T^4=Q^(-1), so the weighted third-derivative estimate gives |S_(b,k)^(kappa)(C)| <<_epsilon X^epsilon{C Q^(-1/6)+C^(1/2)Q^(2/3)+Q} <<_epsilon X^epsilon C Q^(-1/6). Hence sum_(b asymp C/T)|S_(b,k)^(kappa)(C)|^2 <<_epsilon X^epsilon C^3/(TQ^(1/3)) <= X^epsilon J^2/T exactly for C<=J^(32/45). The two axes are O_epsilon(X^epsilon C^2/J), and tails and remainders are smaller. Combined with the low-conductor Farey lemma, every fixed-interior block T<=C<=J^(32/45)=X^(16/45) is target-safe. The range J^(32/45)<C<=J, cone edges, full M9-M1, M9, and the exponent remain open.",
+        "dependencies": [
+          "M9-M1-product-wavelet-low-conductor-Farey-stationary-bound"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-upper-conductor-reciprocal-square-large-sieve/reports/upper_reciprocal_energy_attack.md",
+            "rounds/codex-managed/m9-m1-upper-conductor-reciprocal-square-large-sieve/reports/upper_third_derivative_seam_review.md",
+            "rounds/codex-managed/m9-m1-upper-conductor-reciprocal-square-large-sieve/reviews/conductor_round72_adjudication.md",
+            "rounds/codex-managed/m9-m1-upper-conductor-reciprocal-square-large-sieve/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-upper-conductor-reciprocal-square-large-sieve/reports/blind_upper_conductor_clean.md",
+            "rounds/codex-managed/m9-m1-upper-conductor-reciprocal-square-large-sieve/reports/upper_reciprocal_source_hostile_audit.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use this lemma only to remove conductors through J^(32/45). Attack the exact residual range J^(32/45)<C<=J with the transition, parity, and axial ownership retained."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-product-wavelet-low-conductor-Farey-stationary-bound",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-upper-conductor-reciprocal-square-large-sieve/synthesis.md"
+          ]
+        },
+        "next_action": "Combine this low-conductor lemma with M9-M1-upper-conductor-third-derivative-subrange-bound to remove T<=C<=J^(32/45). Its own stationary-capacity statement remains scoped to C<=J^(2/3)."
+      },
+      {
+        "id": "M9-M1-product-wavelet-short-numerator-Kloosterman-reduction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-upper-conductor-reciprocal-square-large-sieve/reports/upper_reciprocal_energy_attack.md",
+            "rounds/codex-managed/m9-m1-upper-conductor-reciprocal-square-large-sieve/reviews/conductor_round72_adjudication.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-m1-upper-conductor-reciprocal-square-large-sieve/reports/upper_reciprocal_source_hostile_audit.md"
+          ]
+        },
+        "next_action": "The exact Farey analysis plus the third-derivative lemma closes T<=C<=J^(32/45). Prove a joint signed estimate only for J^(32/45)<C<=J, with sharp transitions, both even classes, and axial terms retained."
+      },
+      {
+        "id": "M9-M1-upper-conductor-reciprocal-square-Bprocess-self-return",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-upper-conductor-reciprocal-square-large-sieve/reports/upper_reciprocal_energy_attack.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-m1-upper-conductor-reciprocal-square-large-sieve/reports/upper_reciprocal_source_hostile_audit.md"
+          ]
+        },
+        "next_action": "The elementary third-derivative route removes C<=J^(32/45). For J^(32/45)<C<=J, do not repeat the c-Poisson/matching-B-process loop. A phase-matched level-four spectral route still needs an unavailable X^(1/4) short automorphic coefficient theorem plus transition, Eisenstein, even, and axial seams."
+      },
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "dependencies_added": [
+          "M9-M1-upper-conductor-third-derivative-subrange-bound"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-upper-conductor-reciprocal-square-large-sieve/synthesis.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-m1-upper-conductor-reciprocal-square-large-sieve/reports/upper_reciprocal_source_hostile_audit.md"
+          ]
+        },
+        "next_action": "Fixed-interior order-J conductors through C=J^(32/45) are target-safe. Prove the residual upper-conductor range J^(32/45)<C<=J, then reconcile cone edges and the remaining radial sectors; no global exponent follows yet."
+      },
+      {
+        "id": "M9-M1-direct-product-wavelet-self-return",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-upper-conductor-reciprocal-square-large-sieve/synthesis.md"
+          ]
+        },
+        "next_action": "The product-wavelet Farey representation is target-safe through C=J^(32/45). The remaining fixed-center discrepancy is concentrated in J^(32/45)<C<=J; retain the exact one-count antecedent and do not infer a full-cone estimate."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round72-third-derivative-closes-entire-upper-conductor",
+        "reason": "The proved row saving Q^(1/6) yields energy C^3/(TQ^(1/3)), which meets J^2/T only through C=J^(32/45), not up to C=J."
+      },
+      {
+        "id": "Round72-phase-matched-Kuznetsov-closes-upper-conductor",
+        "reason": "The exact odd cusp-pair reduction still requires a pointwise X^(1/4+epsilon) short automorphic coefficient estimate, a uniform oscillatory Bessel transform, transition separation, Eisenstein control, even-class cusp data, and zero-index axes; no audited theorem supplies them."
+      },
+      {
+        "id": "Round72-Farey-piece-count-forces-multiplicative-J-over-C-loss",
+        "reason": "There are O(Q) pieces in the complete fixed-b row. Summing the linear derivative-test term by total length and the square-root term by Cauchy gives C Q^(-1/6)+C^(1/2)Q^(2/3), not a multiplicative J/C loss."
+      },
+      {
+        "id": "Round72-even-local-classes-follow-by-sign-change",
+        "reason": "The two even classes require the exact lift bs_0+rho=tc and their separate local units. They are controlled only after proving t and s_0 modulo 4 are constant on c modulo 4b."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "The residual conductors J^(32/45)<C<=J, cone edges, and all-scale radial completion remain open."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Round 72 is scoped to the M1 fixed-interior product-wavelet representation and proves no M2 estimate."
+      },
+      {
+        "id": "M9",
+        "reason": "Both M9-M1 and M9-M2 remain open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The conductor-range extension narrows a fixed-interior M1 survivor but does not prove a new global exponent."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 9,
+    "idea_quality_score": 9,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 72 proves and independently verifies an all-class transition-safe third-derivative estimate, extending the exact target-safe Farey conductor endpoint from X^(1/3) to X^(16/45), while isolating the conjectural short-GL2 barrier and preserving all downstream limitations."
+  }
+}

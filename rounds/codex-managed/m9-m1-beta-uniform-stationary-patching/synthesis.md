@@ -1,0 +1,156 @@
+# Round 28 synthesis: Fresnel patching works, finite height does not
+
+Campaign: m9-m1-beta-uniform-stationary-patching
+Round type: beta uniform stationary patching
+Graph SHA-256 before patch: e2ee85737b2be860789ded13d5526e81239002ff9debb2fb8edcaf5b44644e3e
+
+## Conductor decision
+
+Promote two exact scoped facts and one obstruction:
+
+1. the accepted signed Stirling phase has stationary points at both
+   alpha=plus lambda and alpha=minus lambda, where
+   lambda=pi q sqrt(Xx)/D_j;
+2. conditional on a scaled C^2 bound for the complete recombined signed
+   amplitude, an exact Morse coordinate gives a uniform incomplete-Fresnel
+   formula through saddle entry and exit, with the expected half-Fresnel
+   normalization and no new q-power;
+3. the isolated finite-v segment has a logarithmic hard-top edge
+   singularity when its moving pole reaches nu=plus or minus V.
+
+The third fact blocks the proposed complete patching. A whole-line
+PV formula may cancel this edge, but the accepted finite vector identity
+retains oriented outside-v sides, and no current theorem reconciles them
+uniformly while the pole moves with alpha. The full beta trace therefore
+remains open.
+
+Round 28 used no numerical experiment and no external theorem.
+
+## Exact two-saddle phase
+
+On the beta-bounded branch, collect every alpha-linear term in the accepted
+Round-20 phase and differentiate the signed Stirling phase. On both signs,
+
+    dPsi/dalpha = log(|alpha| D_j/(pi q sqrt(Xx))).
+
+Thus
+
+    alpha=plus or minus lambda,
+    lambda=pi q sqrt(Xx)/D_j,
+    Psi''(plus or minus lambda)=plus or minus 1/lambda.
+
+The negative-alpha sector is not globally nonstationary. Its separated
+stationary magnitude has the same q-power as the positive saddle. The
+actual masks and one-sided profiles do not give an exact reflection
+cancellation, so both must be estimated.
+
+For fixed beta and nu, the exact finite alpha interval is
+
+    P=max(beta+nu-U,-2S-beta),
+    Q=min(beta+nu+U, 2S-beta).
+
+This finite polytope must be retained before any endpoint asymptotic.
+
+## Uniform Fresnel tool
+
+For the positive saddle put
+
+    h(y)=y log y-y+1,
+    zeta(y)=sgn(y-1)sqrt(2h(y)).
+
+On a component [P,Q] inside [c lambda,C lambda], suppose the complete
+signed recombined amplitude is
+
+    a_lambda(alpha)=A_lambda(alpha/lambda),
+    ||A_lambda||_(C^2) <= M_lambda.
+
+Then the exact Morse change gives
+
+    integral_P^Q a_lambda(alpha)e^(i Psi(alpha)) dalpha
+      =sqrt(lambda) A_lambda(1)
+        {F(sqrt(lambda)zeta(Q/lambda))
+         -F(sqrt(lambda)zeta(P/lambda))}
+        +O_(c,C)(M_lambda),
+
+where F(T)=integral_0^T e^(iu^2/2)du. The reflected coordinate gives the
+negative-saddle formula. If an endpoint equals a saddle and the other is
+remote in stationary units, the leading coefficient is exactly one half
+of the full Fresnel constant. The transition itself loses no q-power.
+
+This tool is conditional: Round 27 provides a separated value estimate,
+not the uniform scaled C^2 bound for the complete signed amplitude.
+
+## Finite-height logarithmic obstruction
+
+After the physical top split, the relevant truncated convolution contains
+
+    C_(a,V)(L)=integral_(-V)^V H_b(nu)/(a+i(L-nu)) dnu,
+    L=alpha-beta.
+
+If H_b is C^1 near V and H_b(V) is nonzero, then
+
+    C_(a,V)(V)=-i H_b(V) log(1/a)+O_(H,V)(1)
+
+as a tends to zero. The same formula holds at -V. The accepted height
+profile is analytic on every fixed b>0 and is not identically zero, so
+admissible edge points with nonzero H_b exist.
+
+Equivalently, the finite PV part contains a logarithm as L approaches the
+edge. Hence the isolated truncated segment has neither a uniform physical
+top limit nor the scaled derivative bounds needed by the Fresnel lemma.
+The delta value at the hard endpoint is also convention-dependent until
+the oriented finite-side ledger is included.
+
+This is not a no-go for the complete operator. It proves that one must
+either:
+
+- combine the truncated segment with the exact outside-v sides and show
+  cancellation of the logarithm; or
+- justify a nested height-before-top limit uniformly in all moving
+  parameters.
+
+Neither has been proved.
+
+## Local capacity retained
+
+On compact patches separated from alpha endpoints, nu endpoints, rho=0,
+and v=0, and on fixed b>0, both signed saddles retain the Round-27 local
+post-endpoint q^(-2) capacity. The fixed-line b-loss is polynomial or
+logarithmic in b^(-1), hence polylogarithmic for b=1/log(2X).
+
+A conductor exponent check suggests the completed stationary main terms
+could be target-safe: after the q^(-2) gain their radial phases are of
+the form exp(i pi sqrt(Xx)(2 plus or minus q/D_j)), and even the exact
+q=2D_j resonance carries D_j^(-2). But this check omits the finite-height
+edge, complete h/profile factors, transition derivatives, and oriented
+sides. It is not promoted.
+
+## First surviving kernel
+
+The next exact object is the connector-completed combination of:
+
+- the finite v-vertical integral;
+- both oriented outside-v sides generated by the finite contour move;
+- the separately retained v=0 axial residue and u=0/v=0 corner;
+- the symmetric physical top limit;
+- the moving saddle parameter L=alpha-beta.
+
+The required lemma must cancel or control the logarithmic edge uniformly
+before the Fresnel and dyadic summations are applied.
+
+## Artifact assessment
+
+- The statement-only report proves the exact positive-saddle Morse formula
+  and independently derives the finite-height logarithm.
+- The hostile report independently finds both signed saddles, confirms
+  their local q^(-2) capacity, and constructs the same actual-profile edge
+  obstruction.
+- The discovery task did not materialize a report within repeated strict
+  time boxes. The conductor therefore wrote a scoped seven-section report
+  from accepted formulas and independent checks; no unwritten agent claim
+  is evidence.
+- The conductor review records the exact phase audit and a non-promoted
+  conditional exponent test.
+
+No status changes are made to M9-M1, M9-M2, M9, or the Gauss-circle
+target.

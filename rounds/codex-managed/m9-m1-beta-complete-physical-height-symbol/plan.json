@@ -1,0 +1,157 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 32,
+    "round_type": "beta_complete_physical_height_symbol",
+    "campaign_id": "m9-m1-beta-complete-physical-height-symbol",
+    "title": "Common recombined physical-height kernel",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "literature_policy": "Use exact endpoint subtraction, Taylor cancellation, Mellin inversion, physical-height coordinates, and finite-contour side ledgers. Search primary literature only for a specifically named uniform incomplete-Mellin or Hilbert-symbol theorem, and audit hard endpoints and parameter-uniform hypotheses before use."
+    },
+    "target_obligations": [
+      "M9-M1-beta-complete-physical-height-symbol-bound",
+      "M9-M1-beta-regular-finite-part-symbol-BV"
+    ],
+    "frozen_target": {
+      "question": "Can one form the exact common physical-height regular kernel for omega G+(1-omega)R1-omega E1 and prove its lambda^(-2)/lambda^(-3) weighted symbol bounds through rho=0, the v=0 axial split, finite radial sides, and joint U,V,S exhaustion?",
+      "reference_formula": "After identical-mask recombination and one combined delta/log subtraction, prove |K_complete(L,nu)| <= X^epsilon lambda^(-2) w_b(nu) and |partial_L K_complete(L,nu)| <= X^epsilon lambda^(-3) w_b(nu), with integrable w_b, compatible translated endpoint traces, polylogarithmic b loss after extracting v=0, and summable radial/height sides.",
+      "quantities": [
+        "exact common K_complete(L,nu)",
+        "rho=0 Taylor coefficients of G/E1/R1",
+        "combined diagonal/log ownership",
+        "ordinary L derivative at fixed physical nu",
+        "v=0 axial residue and b downarrow zero",
+        "radial hard-endpoint and horizontal-side terms",
+        "joint U,V,S exhaustion",
+        "full h,D_j,x,q and external normalization ledger"
+      ]
+    },
+    "completion_criteria": [
+      "One exact common physical-height kernel is written before termwise estimates.",
+      "The rho Taylor/cutoff ledger and combined diagonal subtraction are exact.",
+      "Weighted value and ordinary L-derivative bounds are proved or the first exact coefficient violating them is isolated.",
+      "The v=0 axial residue and b limit are reconciled once.",
+      "Finite radial sides and joint U,V,S tails are bounded or isolated quantitatively.",
+      "A blind derivation and hostile audit independently assess the result.",
+      "The conductor closes the round before choosing the next objective."
+    ],
+    "controls": [
+      "common-kernel-ownership",
+      "rho-Taylor-and-residue",
+      "physical-height-derivative",
+      "axial-b-limit",
+      "radial-side-exhaustion",
+      "normalization-and-q-power"
+    ],
+    "tasks": [
+      {
+        "id": "blind_common_kernel_identity",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "target": "Independently derive the most explicit common physical-height regular kernel licensed by the accepted Round-27 and Round-31 statements, including rho Taylor cancellation, one combined diagonal/log subtraction, axial ownership, radial endpoints, and finite sides. Prove the weighted symbol bounds or isolate the first missing exact coefficient. Do not read Round-32 claimant reports.",
+        "context_files": [
+          "protocol.md",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-beta-radial-pushforward-bv/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-regular-finite-part-symbol-bv/synthesis.md"
+        ],
+        "excluded_context": [
+          "all Round-32 claimant reports",
+          "state/best_proof_draft.md",
+          "rounds/codex-managed/m9-m1-beta-regular-finite-part-symbol-bv/reviews/conductor_rho_taylor_ledger.md"
+        ],
+        "required_controls": [
+          "common-kernel-ownership",
+          "rho-Taylor-and-residue",
+          "physical-height-derivative"
+        ],
+        "required_output": [
+          "Exact common-kernel identity or first definition obstruction",
+          "Weighted-symbol proof or exact missing coefficient",
+          "Seven-section report at the assigned path"
+        ]
+      },
+      {
+        "id": "complete_kernel_symbol_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "target": "Construct K_complete(L,nu), expand the rho-regular Taylor package, extract the axial residue, and prove the lambda^(-2)/lambda^(-3) weighted bounds with radial-side and joint-height exhaustion. If full closure fails, isolate the smallest exact radial or axial operator and quantify its capacity.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-radial-endpoint-renormalization/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-radial-pushforward-bv/reports/blind_hierarchical_recombined_identity.md",
+          "rounds/codex-managed/m9-m1-beta-regular-finite-part-symbol-bv/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-regular-finite-part-symbol-bv/reviews/conductor_rho_taylor_ledger.md"
+        ],
+        "required_controls": [
+          "common-kernel-ownership",
+          "rho-Taylor-and-residue",
+          "physical-height-derivative",
+          "axial-b-limit",
+          "radial-side-exhaustion",
+          "normalization-and-q-power"
+        ],
+        "required_output": [
+          "Complete weighted-symbol proof or smallest explicit survivor",
+          "Axial, radial-side, tail, and normalization ledger",
+          "Seven-section report at the assigned path"
+        ]
+      },
+      {
+        "id": "complete_kernel_hostile_audit",
+        "role": "seam_reviewer",
+        "access_mode": "selected_context",
+        "target": "Hostilely audit common-kernel ownership, rho Taylor uniformity, combined diagonal subtraction, physical-height derivatives, v=0 residue, b losses, radial hard endpoints, horizontal sides, joint height exhaustion, and q normalization. Construct an actual-factor counterexample or certify the narrowest lemma.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-diagonal-transition-exhaustion/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-regular-finite-part-symbol-bv/reports/regular_symbol_hostile_audit.md",
+          "rounds/codex-managed/m9-m1-beta-regular-finite-part-symbol-bv/synthesis.md"
+        ],
+        "required_controls": [
+          "common-kernel-ownership",
+          "rho-Taylor-and-residue",
+          "physical-height-derivative",
+          "axial-b-limit",
+          "radial-side-exhaustion",
+          "normalization-and-q-power"
+        ],
+        "required_output": [
+          "Independent common-symbol and exhaustion audit",
+          "Actual-factor obstruction or scoped certification",
+          "Seven-section report at the assigned path"
+        ]
+      }
+    ],
+    "review_seams": [
+      "one combined kernel before splitting",
+      "rho Taylor constants and residue sign",
+      "combined diagonal and face-log ownership",
+      "ordinary L derivative at fixed nu",
+      "v=0 axial extraction and b-uniformity",
+      "radial endpoint Taylor coefficients",
+      "finite horizontal sides and U,V,S order",
+      "profiles, floors, stars, h and scale powers",
+      "external X^(1/4) normalization"
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "e53cc040c84e084cfa37f22c4a745080909deac6c510b61953eced488362f0b5",
+    "generated_at": "2026-08-13T00:09:18.061403+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

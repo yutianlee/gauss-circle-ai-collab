@@ -1,0 +1,136 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-near-product-character-kernel",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Exact near-product character-divisor kernel for M1",
+        "status": "proved_internal",
+        "statement_tex": "Let u_(L,H)(h)=v_L(h)Phi(h/(H+1))/h and K^+_(L,H)(z)=sum_(h>0)u_(L,H)(h)e(hz). With m_X(d)=floor(X/d+1/2) and n_X(d)=d m_X(d), the exact positive M1 block is its fixed constant times sum_n sum_(d:n_X(d)=n) chi_4(d)w_D(d)K^+((X-n)/d), equivalently d|n and -d/2<=X-n<d/2 with the specified tie convention. For real profiles, pairing positive and negative frequencies gives V_(L,H)(z)=(4/pi)sum_(h>0)u_(L,H)(h)sin(2pi h z) and the exact two-sided block sum_n C_(D,L)(n;X), where C retains the d-dependent V((X-n)/d). Exact products vanish because V(0)=0; one-sided exact-product and tie fibers are O_epsilon(X^epsilon). The weakest remaining lemma keeps the absolute value outside the entire (n,d)-sum and asks |sum_n C_(D,L)(n;X)|<<_epsilon X^(1/4+epsilon) on U_1.",
+        "dependencies": [
+          "M9-M1-frequency-phase-diagram-R10",
+          "H4-Phi-regularity",
+          "M9-M2-dyadic-weight-nondegeneracy"
+        ],
+        "implies": ["M9-M1"],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-near-product-character-kernel/reports/blind_near_product_kernel.md",
+            "rounds/codex-managed/m9-m1-near-product-character-kernel/reports/character_divisor_attack.md",
+            "rounds/codex-managed/m9-m1-near-product-character-kernel/reports/near_product_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-near-product-character-kernel/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Prove signed cancellation between distinct nearby products while retaining the odd kernel and its d-dependence."
+      },
+      {
+        "id": "M9-M1-cross-product-odd-kernel-discrepancy",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Cross-product odd-kernel discrepancy estimate for the M1 residual corridor",
+        "status": "open",
+        "statement_tex": "For every (delta,ell) in the exact residual corridor U_1 and the actual fixed profiles, prove uniformly that |sum_n sum_(d:n_X(d)=n) chi_4(d)w_D(d)V_(L,H)((X-n)/d)| <<_epsilon X^(1/4+epsilon), where V is the exact paired odd Vaaler kernel, D=X^delta, L=X^ell, and n_X(d)=d floor(X/d+1/2). The proof must exploit cancellation between distinct nearby products or an equivalent ordered-denominator structure; separate absolute estimates for n-fibers cannot suffice.",
+        "dependencies": ["M9-M1-near-product-character-kernel"],
+        "implies": ["M9-M1"],
+        "blockers": [],
+        "evidence": {
+          "positive": [],
+          "negative": [
+            "rounds/codex-managed/m9-m1-near-product-character-kernel/reports/character_divisor_attack.md",
+            "rounds/codex-managed/m9-m1-near-product-character-kernel/reports/near_product_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-near-product-character-kernel/reports/blind_near_product_kernel.md",
+            "rounds/codex-managed/m9-m1-near-product-character-kernel/synthesis.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Pair offsets across n=X or derive a signed operator estimate for the ordered denominator/product map. Preserve the actual profile and odd kernel."
+      },
+      {
+        "id": "M9-M1-near-product-fiber-capacity-no-go",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Capacity obstruction to fiberwise or frozen-kernel closure of M1",
+        "status": "proved_internal",
+        "statement_tex": "On the critical window |X-n| asymp D/L in the M1 residual corridor, whole-shell replacement of the exact d-dependent kernel by an n-only coefficient has order-one error per divisor; target-sized absolute freezing requires at least H/L denominator cells and consumes the full desired saving. Moreover individual divisor fibers can be singleton or sign-locked. For fixed interior exponents, prime products n=dp with d,p=1 mod 4 and d in a nonvanishing actual-profile interval yield grouped l1 mass and squared l2 mass >> (D/L)/(log X)^2 for a suitable center X. Hence post-grouping triangle, coefficientwise, l1, l2, multiplicativity-only, complementary-divisor-only, and whole-shell frozen-kernel strategies cannot prove the residual target. This is not an obstruction to cancellation between distinct products in the total actual M1 sum.",
+        "dependencies": [
+          "M9-M1-near-product-character-kernel",
+          "Divisor-bound-elementary"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-near-product-character-kernel/reports/blind_near_product_kernel.md",
+            "rounds/codex-managed/m9-m1-near-product-character-kernel/reports/character_divisor_attack.md",
+            "rounds/codex-managed/m9-m1-near-product-character-kernel/reports/near_product_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-near-product-character-kernel/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use this obstruction to reject any future proof that takes absolute values over product fibers before exploiting cross-product signs."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M1-near-product-character-kernel",
+          "M9-M1-cross-product-odd-kernel-discrepancy",
+          "M9-M1-near-product-fiber-capacity-no-go"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-near-product-character-kernel/reports/blind_near_product_kernel.md",
+            "rounds/codex-managed/m9-m1-near-product-character-kernel/synthesis.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-m1-near-product-character-kernel/reports/character_divisor_attack.md",
+            "rounds/codex-managed/m9-m1-near-product-character-kernel/reports/near_product_hostile_audit.md"
+          ]
+        },
+        "next_action": "Prove the cross-product odd-kernel discrepancy estimate on U_1. Do not freeze to A_D(n), take fiberwise absolute values, or seek the missing power from divisor multiplicity alone."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round11-whole-shell-n-only-kernel-freezing",
+        "reason": "At |X-n| asymp D/L, varying d across a dyadic shell changes the kernel by order one per representation; target-sized subdivision costs at least H/L cells."
+      },
+      {
+        "id": "Round11-uniform-single-fiber-chi4-saving",
+        "reason": "Active divisor fibers can be singleton or contain only divisors with chi_4=+1; no uniform character-cancellation identity exists fiberwise."
+      },
+      {
+        "id": "Round11-coefficient-l1-l2-closes-M1",
+        "reason": "Prime-product fibers with the actual nonvanishing profile have l1 mass and squared l2 mass >> (D/L)/(log X)^2 at suitable centers, exceeding the target by a power at fixed interior points."
+      },
+      {
+        "id": "Round11-exact-products-are-the-M1-obstruction",
+        "reason": "The exact two-sided M1 kernel is odd and vanishes at zero; one-sided exact-product and tie fibers are divisor-bounded."
+      }
+    ],
+    "no_change": [
+      {"id":"M9-M1-top-endpoint-signed-cone","reason":"The hard-top middle-frequency corridor remains a case of the open cross-product discrepancy estimate."},
+      {"id":"M9-M2","reason":"Round 11 is M1-specific."},
+      {"id":"M9","reason":"M9-M1 and M9-M2 remain open."},
+      {"id":"GC-target","reason":"The final theorem remains conditional on open M9."}
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 9,
+    "calibration_score": 10,
+    "reason": "Round 11 derives the exact signed near-product kernel and rigorously eliminates fiberwise, coefficient-norm, and frozen-kernel shortcuts, isolating cross-product odd-kernel cancellation as the first viable M1 residual lemma."
+  }
+}

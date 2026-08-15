@@ -1,0 +1,71 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 15,
+    "round_type": "mellin_twisted_divisor_attack",
+    "campaign_id": "m9-m1-angular-mellin-separation",
+    "title": "Separate the exact M1 angular symbol into twisted divisor modes",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "conductor_policy": {
+      "strategy_owner": "Codex conductor",
+      "subagents_may_start_next_round": false,
+      "monitoring": "Track Mellin conventions, divisor-variable powers, contour shifts, complex-shift uniformity, H_j floors, endpoint stars, and top-symbol tail decay.",
+      "round_close": "Close after an exact separation, an analytic or no-go verdict, a source audit, and conductor graph adjudication."
+    },
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 95,
+      "numerical_experimental_maximum_percent": 5,
+      "numerical_purpose": ["bounded falsification of constants or endpoint conventions"],
+      "literature_policy": "Primary sources only for imported generalized divisor/Voronoi theorems."
+    },
+    "target_obligations": [
+      "M9-M1-global-angular-recombination",
+      "M9-M1-global-angular-radial-estimate",
+      "M9-M1-dual-restricted-convolution-RCS",
+      "M9-M1"
+    ],
+    "tasks": [
+      {
+        "id": "blind_double_mellin_derivation",
+        "role": "statement_only_exact_deriver",
+        "brief": "rounds/codex-managed/m9-m1-angular-mellin-separation/briefs/blind_double_mellin_derivation.md"
+      },
+      {
+        "id": "twisted_divisor_radial_attack",
+        "role": "analytic_functional_equation_attacker",
+        "brief": "rounds/codex-managed/m9-m1-angular-mellin-separation/briefs/twisted_divisor_radial_attack.md"
+      },
+      {
+        "id": "mellin_voronoi_hostile_source_audit",
+        "role": "primary_source_and_hostile_reviewer",
+        "brief": "rounds/codex-managed/m9-m1-angular-mellin-separation/briefs/mellin_voronoi_hostile_source_audit.md"
+      }
+    ],
+    "exit_gates": [
+      "exact double-Mellin separation",
+      "twisted divisor Dirichlet series and parity",
+      "floor and top-endpoint uniformity",
+      "new bound or return-map obstruction",
+      "primary-source applicability audit",
+      "conductor decision"
+    ],
+    "promotion_policy": "Promote only exact formulas with uniform contour/error bounds or rigorously scoped no-go results. A formal Dirichlet series identity alone does not prove GAR.",
+    "closing_assessment": {
+      "decision": "promote_exact_mellin_and_reflection_retain_mode_correlation",
+      "graph_mutation": true,
+      "main_result": "Exact double-Mellin separation gives shifted zeta-times-L divisor modes; their functional equation reflects z to -z, while the zero mode and fixed-mode Voronoi transformations are return maps."
+    }
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "aa33b1c414e135f96f912b34ec17acda79c3cf5cb68a73c4fb706bd393993251",
+    "generated_at": "2026-08-12T18:20:00+08:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 56,
+    "round_type": "intermediate_h_discrete_curvature_resonance",
+    "campaign_id": "m9-m1-top-block-intermediate-h-resonance",
+    "title": "Discrete curvature resonance average in the remaining top-block core",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "literature_policy": "No black-box theorem is presumed. Audit a primary source only if a non-elementary Weyl, completion, or resonance-spacing theorem is imported."
+    },
+    "target_obligations": [
+      "M9-M1-global-angular-radial-estimate",
+      "M9-M1-top-block-low-leg-margin"
+    ],
+    "frozen_target": {
+      "question": "Can the discrete quadratic curvature resonances of the remaining intermediate-h, large-q top-block window be averaged over h to give the missing square-root aggregate bound, or is there a sharp actual-profile resonance obstruction?",
+      "reference_formula": "W_J^core=sum_(hq in J,q odd,h>L) chi_4(q) Omega_X^*(hq,h)(hq)^(-3/4)e(sqrt(Xhq)), where Y asymp sqrt(X), |J|<=R asymp sqrt(Y), L=(log(2X))^B, q>=2sqrt(hq), h<=sqrt(hq)/2.",
+      "quantities": [
+        "odd-q discrete first and second differences",
+        "large-h regime sqrt(R)<h<=sqrt(Y)/2",
+        "resonance parameter modulo one",
+        "averaged resonance count over h",
+        "actual angular sampled amplitude",
+        "short hyperbola-strip geometry",
+        "perfect-fourth-power rational resonance",
+        "target unweighted window size sqrt(R)",
+        "full H/R exponent ledger"
+      ]
+    },
+    "completion_criteria": [
+      "The exact odd-q phase and its discrete first and second differences are derived, including the character shift.",
+      "A legal exponential-sum bound for curvature larger than one is stated with its modulo-one resonance dependence, or a precise reason it cannot be used is proved.",
+      "The resonance parameter is averaged over the full residual h-range without taking termwise worst cases.",
+      "The actual profile, floor, hard-top, and star amplitudes are retained and their effect on completion or differencing is audited.",
+      "The resulting window estimate is propagated to the exact target sqrt(R) unweighted, or a sharp actual-profile family shows the missing capacity.",
+      "Perfect-fourth-power and near-rational curvature controls are explicit.",
+      "A clean statement-only derivation and an independent hostile gate exist.",
+      "No GAR, alpha, M9-M1, M9, or exponent promotion is made without the full residual-core estimate."
+    ],
+    "controls": [
+      "odd_q_discrete_phase",
+      "large_curvature_mod_one",
+      "resonance_spacing_average",
+      "actual_profile_amplitude",
+      "hyperbola_window_edges",
+      "perfect_fourth_power",
+      "target_exponent_ledger",
+      "low_leg_overlap",
+      "alpha_scope",
+      "downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "discrete_curvature_resonance_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "target": "Derive and attack the averaged modulo-one curvature resonance sum over the exact intermediate-h, large-q core; prove a target window theorem or isolate a sharp resonance survivor.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-top-block-intermediate-h-resonance/derivation_packet.md",
+          "rounds/codex-managed/m9-m1-top-block-low-leg-curvature/synthesis.md",
+          "rounds/codex-managed/m9-m1-global-angular-shifted-correlation/synthesis.md",
+          "rounds/codex-managed/m9-endpoint-kernel-validation/reports/blind_profile_rederivation.md"
+        ],
+        "required_controls": [
+          "odd_q_discrete_phase",
+          "large_curvature_mod_one",
+          "resonance_spacing_average",
+          "actual_profile_amplitude",
+          "hyperbola_window_edges",
+          "perfect_fourth_power",
+          "target_exponent_ledger",
+          "low_leg_overlap",
+          "alpha_scope",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "seven-section report",
+          "exact averaged resonance theorem or no-go",
+          "residual-core exponent ledger"
+        ]
+      },
+      {
+        "id": "blind_resonance_average_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "target": "Using only the Round-56 packet, independently derive the discrete curvature resonance interface and determine whether its averaged capacity can reach the sqrt(R) window target.",
+        "context_files": [
+          "rounds/codex-managed/m9-m1-top-block-intermediate-h-resonance/derivation_packet.md"
+        ],
+        "excluded_context": [
+          "proof graph",
+          "proof draft",
+          "prior reports and syntheses",
+          "other Round-56 reports"
+        ],
+        "required_controls": [
+          "odd_q_discrete_phase",
+          "large_curvature_mod_one",
+          "resonance_spacing_average",
+          "actual_profile_amplitude",
+          "hyperbola_window_edges",
+          "perfect_fourth_power",
+          "target_exponent_ledger",
+          "low_leg_overlap",
+          "alpha_scope",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "seven-section statement-only report",
+          "independent resonance ledger",
+          "isolation ledger"
+        ]
+      },
+      {
+        "id": "resonance_spacing_hostile_audit",
+        "role": "seam_reviewer",
+        "access_mode": "selected_context",
+        "target": "Try to falsify the averaged-resonance route at perfect fourth powers, rational curvatures, short intervals, profile edges, and completion boundaries; certify only a sharp lawful range.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-top-block-intermediate-h-resonance/derivation_packet.md",
+          "rounds/codex-managed/m9-m1-top-block-low-leg-curvature/synthesis.md",
+          "rounds/codex-managed/m9-m1-global-angular-shifted-correlation/synthesis.md"
+        ],
+        "required_controls": [
+          "odd_q_discrete_phase",
+          "large_curvature_mod_one",
+          "resonance_spacing_average",
+          "actual_profile_amplitude",
+          "hyperbola_window_edges",
+          "perfect_fourth_power",
+          "target_exponent_ledger",
+          "low_leg_overlap",
+          "alpha_scope",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "seven-section hostile report",
+          "resonance counterexample or certification",
+          "recommended graph effect"
+        ]
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "discrete_not_continuous_curvature",
+        "requirement": "Large continuous second derivative is not itself cancellation on integers; retain the distance of the discrete increment or quadratic coefficient from integers."
+      },
+      {
+        "id": "aggregate_before_absolute_values",
+        "requirement": "Average the resonance loss over h before taking worst cases and preserve chi_4 plus the actual angular symbol."
+      },
+      {
+        "id": "actual_profile_completion",
+        "requirement": "Any completion or Weyl step must carry the true sampled profiles, floors, hard top, and stars with explicit boundary costs."
+      },
+      {
+        "id": "mathematical_isolation",
+        "requirement": "The blind proof sees only the Round-56 packet and its brief."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "7d2604d4c686e45d0348b1087741c812bb8943ee141db1d05aab22f84cb1dd11",
+    "generated_at": "2026-08-13T18:19:43.129664+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

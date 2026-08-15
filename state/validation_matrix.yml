@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "campaign_id": "m9-m2-top-endpoint-signed-offset-energy",
+  "promotion_status": "round_76_odd_lift_resonance_obstruction_promoted_energy_open",
+  "gates": [
+    {"id": "finite_offset_identity", "status": "green", "artifact": "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reports/blind_signed_offset_rederivation.md"},
+    {"id": "negative_Poisson_orientation", "status": "green_interior", "artifact": "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reports/signed_offset_hostile_audit.md"},
+    {"id": "Gaussian_unit_and_Jacobian", "status": "green_interior", "artifact": "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reports/gcd_lift_resonance_attack.md"},
+    {"id": "gcd_uniqueness", "status": "green", "artifact": "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reports/blind_signed_offset_rederivation.md"},
+    {"id": "odd_lift_step", "status": "green_step_two", "artifact": "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reviews/conductor_round76_adjudication.md"},
+    {"id": "offset_character_along_lifts", "status": "green_constant_not_alternating", "artifact": "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reports/signed_offset_hostile_audit.md"},
+    {"id": "packet_resonance_76_17", "status": "red_rejected", "artifact": "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reports/blind_signed_offset_rederivation.md"},
+    {"id": "correct_bulk_resonance", "status": "green_norm_2alpha", "artifact": "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reviews/conductor_round76_adjudication.md"},
+    {"id": "primal_fixed_endpoint_collar", "status": "green_target_safe", "artifact": "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reports/signed_offset_hostile_audit.md"},
+    {"id": "sharp_endpoint_mod_four", "status": "green_scoped", "artifact": "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reports/signed_offset_hostile_audit.md"},
+    {"id": "complete_centred_integral_normal_form", "status": "candidate_not_independently_promoted", "artifact": "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reports/gcd_lift_resonance_attack.md"},
+    {"id": "complete_actual_symbol_step_two_variation", "status": "candidate_not_independently_promoted", "artifact": "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reports/gcd_lift_resonance_attack.md"},
+    {"id": "actual_profile_half_integer_family", "status": "green", "artifact": "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reports/signed_offset_hostile_audit.md"},
+    {"id": "rank_one_reciprocal_self_return", "status": "green_no_go", "artifact": "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reports/gcd_lift_resonance_attack.md"},
+    {"id": "weighted_resonant_union", "status": "open", "artifact": "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/synthesis.md"},
+    {"id": "target_strength_source", "status": "red_none_found", "artifact": "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reports/signed_offset_hostile_audit.md"},
+    {"id": "statement_only_gate", "status": "green_for_parity_obstruction", "artifact": "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reports/blind_signed_offset_rederivation.md"},
+    {"id": "artifact_hygiene", "status": "green", "artifact": "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/controls/round76_validation.md"},
+    {"id": "full_M9_M2_M9_exponent", "status": "open_no_promotion", "artifact": "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reviews/conductor_round76_adjudication.md"},
+    {"id": "graph_patch", "status": "applied_validated", "artifact": "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/state_patch.json"}
+  ],
+  "decision_rule": "Promote only the exact odd-lift parity and corrected resonance obstruction. Keep the centred-integral interface as candidate evidence and retain the signed energy, full top cone, M9-M2, M9, and global exponent open."
+}

@@ -1,0 +1,191 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 1,
+    "round_type": "discovery_and_adjudication",
+    "campaign_id": "m9-weighted-mass-adjudication",
+    "title": "Adjudicate raw near-collision counts versus beta-weighted mass",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "conductor_policy": {
+      "strategy_owner": "Codex conductor",
+      "subagents_may_start_next_round": false,
+      "monitoring": "Conductor monitors task status, artifact production, scope, evidence quality, and resource allocation; it may narrow, redirect, or terminate tasks.",
+      "round_close": "The conductor closes this round after all required reports exist or a task is explicitly terminated, then designs the next round from the closing assessment."
+    },
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 80,
+      "numerical_experimental_maximum_percent": 20,
+      "numerical_purpose": [
+        "reveal a pattern and motivate a conjecture, statement, or lemma",
+        "find a counterexample and falsify a conjecture",
+        "check finite algebra or normalization"
+      ],
+      "numerical_prohibition": "Numerical evidence cannot certify or promote an asymptotic theorem.",
+      "available_local_tools": [
+        "Python",
+        "Mathematica"
+      ],
+      "literature_policy": "Web literature checks are allowed and expected for strategy or method review; record exact citations and audit theorem hypotheses before use."
+    },
+    "target_obligations": [
+      "M9-near-collision-absolute-lower-bounds",
+      "M9-near-collision-estimate",
+      "M9-M2-character-factor"
+    ],
+    "frozen_target": {
+      "question": "Which Round 9 conclusions apply to a weight-blind tuple count, which apply to the actual absolute beta-weighted mass, and which require the signed chi_4 structure?",
+      "reference_formula": "For S_2(D;X)=sum_{1<=|h|<=H_D} beta_{h,H_D} sum_{d~D} w_D(d)e(hX/(4d)), beta_{h,H}=-Phi(|h|/(H+1)) chi_4(h) 1_{2 not divides h}/(pi h), and N=h_1d_2d_3d_4-h_2d_1d_3d_4+h_3d_1d_2d_4-h_4d_1d_2d_3, keep the raw count, absolute coefficient-weighted mass, true signed mass, and unsigned mass distinct.",
+      "quantities": [
+        "weight-blind count of tuples in a specified nonzero N-band",
+        "sum of |beta_{h_1} beta_{h_2} beta_{h_3} beta_{h_4}| over that band",
+        "sum of beta_{h_1} beta_{h_2} beta_{h_3} beta_{h_4} over that band",
+        "the comparison obtained after removing chi_4 signs"
+      ],
+      "endpoint_scales": [
+        "D=X^(1/4)",
+        "D=X^(3/8)",
+        "D=X^(1/2)"
+      ],
+      "forbidden_conflations": [
+        "raw tuple count implies the same exponent for beta-weighted mass without coefficient summation",
+        "an unsigned or absolute estimate implies a signed estimate without a sign-preserving lemma",
+        "a finite diagnostic proves a uniform asymptotic theorem",
+        "an exact N=0 estimate controls 0<|N|"
+      ]
+    },
+    "completion_criteria": [
+      "Each of the four frozen quantities has an exact normalization and scale statement.",
+      "Any claimed X^(3/8) crossover is traced through tuple counting and beta coefficient summation separately.",
+      "The D=X^(1/2) endpoint is checked explicitly.",
+      "The hostile audit either constructs a compatible lower-bound family or proves why the known UNC, TS, and W-1 controls do not transfer.",
+      "The finite diagnostic is independently reproducible and remains diagnostic_only.",
+      "Normalization, counting, coefficient summation, and endpoint seams are reviewed before any graph patch.",
+      "No task promotes M9, M9-M2, or the final Gauss circle target."
+    ],
+    "controls": [
+      "raw-vs-weighted",
+      "signed-vs-unsigned",
+      "known-lower-bound-families",
+      "dyadic-endpoints",
+      "real-vs-complex-pairing",
+      "exact-vs-near-resonance"
+    ],
+    "tasks": [
+      {
+        "id": "blind_weighted_upper_bound",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "target": "Derive from the frozen definitions the strongest justified upper bound for the beta-weighted absolute mass in a nonzero near-collision band. Show every lift, harmonic sum, and truncation factor and state whether an X^(3/8) transition remains.",
+        "context_files": [
+          "problems/gauss_circle.md",
+          "state/control_models.md"
+        ],
+        "excluded_context": [
+          "rounds/obligation-main/round_009",
+          "state/best_proof_draft.md",
+          "claimant derivations or summaries"
+        ],
+        "required_controls": [
+          "raw-vs-weighted",
+          "dyadic-endpoints",
+          "known-lower-bound-families"
+        ],
+        "required_output": [
+          "exact normalization",
+          "lemma or no-go statement",
+          "complete derivation",
+          "first doubtful step",
+          "control outcomes",
+          "recommended state effect"
+        ]
+      },
+      {
+        "id": "hostile_lower_bound_audit",
+        "role": "barrier_no_go",
+        "access_mode": "selected_context",
+        "target": "Attack both candidate conclusions. Search for a compatible weighted lower-bound family or a missing lift, multiplicity, beta, or truncation factor. Determine exactly which known UNC, TS, and W-1 obstruction applies to each frozen quantity.",
+        "context_files": [
+          "state/best_proof_draft.md",
+          "state/proof_obligations.yml",
+          "state/control_models.md",
+          "sources/method_strategy_review_2026-08-11.md",
+          "rounds/obligation-main/round_008/responses/A4-008.md",
+          "rounds/obligation-main/round_009"
+        ],
+        "required_controls": [
+          "raw-vs-weighted",
+          "signed-vs-unsigned",
+          "known-lower-bound-families",
+          "exact-vs-near-resonance"
+        ],
+        "required_output": [
+          "lemma or no-go statement",
+          "explicit family or obstruction",
+          "scale calculation",
+          "first doubtful step",
+          "control outcomes",
+          "recommended state effect"
+        ]
+      },
+      {
+        "id": "finite_mass_diagnostic",
+        "role": "numerical_falsifier",
+        "access_mode": "selected_context",
+        "target": "Implement exact finite comparisons of raw count, 1/|h|-weighted absolute mass, true beta-signed mass, and unsigned beta mass across representative dyadic scales, including the X^(1/2) endpoint. Seek falsification and normalization mistakes, not asymptotic confirmation.",
+        "context_files": [
+          "state/best_proof_draft.md",
+          "state/proof_obligations.yml",
+          "state/control_models.md",
+          "rounds/obligation-main/round_003/artifacts/m9_regression"
+        ],
+        "required_controls": [
+          "raw-vs-weighted",
+          "signed-vs-unsigned",
+          "dyadic-endpoints",
+          "real-vs-complex-pairing"
+        ],
+        "required_output": [
+          "script",
+          "command",
+          "parameter table",
+          "machine-readable results",
+          "precision or exact-arithmetic log",
+          "pass/fail rules",
+          "limitations",
+          "report"
+        ]
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "normalization",
+        "requirement": "Check beta, parity, two-sided frequencies, dyadic support, and band definitions."
+      },
+      {
+        "id": "counting",
+        "requirement": "Check tuple parametrization, gcd conditions, lift multiplicities, degeneracies, and overlap."
+      },
+      {
+        "id": "coefficient_summation",
+        "requirement": "Check every harmonic sum and the passage from raw count to beta-weighted mass."
+      },
+      {
+        "id": "endpoint_uniformity",
+        "requirement": "Check constants and exponents uniformly through D=X^(1/2)."
+      }
+    ],
+    "promotion_policy": "Coordinator may propose only a narrowly scoped graph patch after every validation seam is green; computations remain diagnostic_only."
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "3c06ffad9c2847b329c57a8954d0758e443ee55be2da01c00ce5731bad3d6b5f",
+    "generated_at": "2026-08-11T08:33:32.357283+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

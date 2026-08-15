@@ -1,0 +1,210 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-beta-global-aggregate-physical-module-routing",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Global aggregate routing of the endpoint and R1 physical module",
+        "status": "proved_internal",
+        "statement_tex": "At fixed finite U,V,S and from one common fixed-w meromorphic antecedent, apply the complete two-axis product Cauchy--Green transfer to all three hierarchical mask shares Theta_beta, Theta_alpha, Theta_o and sum every face, axis, connector, mixed term, collision, and corner before any physical limit. Since sum Theta_kappa=1 and the sums of all first and mixed derivatives vanish after every restriction, all mask connectors cancel. The surviving ordinary unmasked cells form the complete finite Stokes representation of M_fin=sum_{xi in {1,N_X}}D_xi+R_ar[R1], hence equal its original positive-line functional. Taking the already licensed symmetric physical limit only after this exact finite replacement yields normalized O_W(log X), and physical O_W(X^(1/4)log X), with all stars, profiles, floors, chi_4, artificial-pole cancellation, and endpoint conventions preserved. No individual masked or cellwise physical limit is asserted; the finite endpoint-free remainder limit is separate.",
+        "dependencies": [
+          "M9-M1-beta-finite-two-axis-product-Cauchy-Green",
+          "M9-M1-beta-finite-prelimit-axial-vector-ledger",
+          "M9-M1-beta-global-three-mask-endpoint-recombination",
+          "M9-M1-endpoint-boundary-operator",
+          "M9-M1-R1-arithmetic-residue"
+        ],
+        "implies": [
+          "M9-M1-beta-axial-transfer-physical-module-commutation"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-physical-module-transfer/reports/blind_global_module_transfer_identity.md",
+            "rounds/codex-managed/m9-m1-beta-physical-module-transfer/reports/physical_endpoint_arithmetic_transfer_attack.md",
+            "rounds/codex-managed/m9-m1-beta-physical-module-transfer/reports/physical_module_limit_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-physical-module-transfer/reviews/conductor_partition_operator_check.md",
+            "rounds/codex-managed/m9-m1-beta-physical-module-transfer/reviews/conductor_finite_Stokes_commutation.md",
+            "rounds/codex-managed/m9-m1-beta-physical-module-transfer/reviews/conductor_common_module_candidate.md",
+            "rounds/codex-managed/m9-m1-beta-physical-module-transfer/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use only in aggregate-before-limit order from the fixed-w antecedent. Do not infer individual masked, face, axis, corner, or off-centred-Perron limits."
+      },
+      {
+        "id": "M9-M1-beta-endpoint-free-axial-remainder-limit",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Physical limit of the endpoint-free beta axial remainder",
+        "status": "open",
+        "statement_tex": "Let V_pre_fin be the accepted complete finite pre-limit axial vector and let M_fin be the common endpoint plus recombined R1 arithmetic module. Define the exact finite complement V_ef_fin=V_pre_fin-M_fin using the fixed-w common antecedent and the one-corner/common-residue convention. Prove that after the compact-beta radial-side separation and the prescribed symmetric U,V,S and physical-profile exhaustion, V_ef_fin has a unique limit defining the endpoint-free connector-completed beta axial vector. The limit must preserve all ordinary outside faces, axes, connectors, collision germs, profiles, floors, character factors, and normalization without reintroducing a boundary module. No target-size or terminal-symbol bound is included.",
+        "dependencies": [
+          "M9-M1-beta-finite-prelimit-axial-vector-ledger",
+          "M9-M1-beta-axial-transfer-module-limit-commutation"
+        ],
+        "implies": [
+          "M9-M1-beta-complete-axial-connector-ledger",
+          "M9-M1-beta-mask-endpoint-axial-compatibility"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-physical-module-transfer/reports/physical_endpoint_arithmetic_transfer_attack.md",
+            "rounds/codex-managed/m9-m1-beta-physical-module-transfer/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-physical-module-transfer/reports/blind_global_module_transfer_identity.md",
+            "rounds/codex-managed/m9-m1-beta-physical-module-transfer/reports/physical_module_limit_hostile_audit.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "At finite fixed-w contours, write V_ef_fin explicitly and prove or refute its symmetric outside-height and physical-profile limit without estimating the terminal symbol."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-beta-axial-transfer-physical-module-commutation",
+        "status": "proved_internal",
+        "statement_tex": "For the common fixed-w finite endpoint and recombined R1 arithmetic package M_fin, the physical-module interface closes by exact aggregate routing rather than termwise commutation. Apply the complete two-axis transfer to all three hierarchical masks, sum all strata at finite U,V,S, use sum Theta=1 and vanishing first/mixed derivative sums to cancel every mask connector, and retain the ordinary unmasked faces, axes, and corner as the complete finite Stokes representation of M_fin. Return that aggregate to the original positive-line M_fin before taking its already accepted symmetric physical limit. The result is normalized O_W(log X), hence physical O_W(X^(1/4)log X), with all endpoint weights, stars, profiles, floors, chi_4 factors, artificial-pole cancellation, and external normalization preserved. No individual masked-stratum limit or endpoint-free remainder limit is asserted.",
+        "dependencies_added": [
+          "M9-M1-beta-global-aggregate-physical-module-routing"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-physical-module-transfer/reports/blind_global_module_transfer_identity.md",
+            "rounds/codex-managed/m9-m1-beta-physical-module-transfer/reports/physical_endpoint_arithmetic_transfer_attack.md",
+            "rounds/codex-managed/m9-m1-beta-physical-module-transfer/reports/physical_module_limit_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-physical-module-transfer/synthesis.md"
+          ]
+        },
+        "blockers": [],
+        "reason_for_promotion": "Blind, discovery, hostile, and conductor derivations agree that the full three-mask finite cell complex exactly reassembles the original positive-line module. This supplies the frozen objective's allowed exact finite algebraic replacement and invokes only the already proved aggregate physical limits.",
+        "next_action": "Treat the endpoint/arithmetic boundary module as globally routed and target-safe; retain all termwise masked limits and the endpoint-free remainder limit as separate open questions."
+      },
+      {
+        "id": "M9-M1-beta-axial-transfer-module-limit-commutation",
+        "status": "proved_internal",
+        "statement_tex": "Both boundary-module compatibility interfaces are proved in their exact scoped forms. For renormalized radial sides, compact beta support makes every transferred side stratum eventually identically zero. For endpoint and recombined R1 arithmetic terms, the full three-mask cell complex is summed at finite fixed-w contours and exactly routed by finite Stokes to the accepted unmasked physical module, which is target-safe. This closes compatibility of beta transfer with the boundary modules; it does not prove existence or a bound for the limiting endpoint-free finite complement.",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-physical-module-transfer/reports/blind_global_module_transfer_identity.md",
+            "rounds/codex-managed/m9-m1-beta-physical-module-transfer/reports/physical_endpoint_arithmetic_transfer_attack.md",
+            "rounds/codex-managed/m9-m1-beta-physical-module-transfer/reports/physical_module_limit_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-physical-module-transfer/synthesis.md"
+          ]
+        },
+        "blockers": [],
+        "reason_for_promotion": "Round 35 proves exact compact-support annihilation on radial sides, while Round 36 proves exact global aggregate routing of endpoint and R1 arithmetic modules before their accepted physical limits. These are precisely the two boundary-module interfaces in this obligation.",
+        "next_action": "Use the closed boundary-module interfaces to attack the separate limit of V_pre_fin-M_fin; do not treat that remainder limit as automatic."
+      },
+      {
+        "id": "M9-M1-beta-complete-axial-connector-ledger",
+        "status": "open",
+        "statement_tex": "The complete finite sixteen-stratum ledger, actual pre-limit application, radial-side compatibility, and aggregate endpoint/R1 physical-module routing are proved. The exact finite endpoint-free complement is V_ef_fin=V_pre_fin-M_fin. To obtain the unique post-module endpoint-free connector-completed beta axial vector, prove that this finite complement has the prescribed symmetric outside-height and physical-profile limit. Only then may the limiting physical axial vector be removed before local polar subtraction. No target-sized estimate is included.",
+        "dependencies_added": [
+          "M9-M1-beta-endpoint-free-axial-remainder-limit"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-physical-module-transfer/synthesis.md"
+          ]
+        },
+        "next_action": "Prove the limit and identity of the exact finite complement V_pre_fin-M_fin; both boundary-module commutators are closed."
+      },
+      {
+        "id": "M9-M1-beta-mask-endpoint-axial-compatibility",
+        "status": "open",
+        "statement_tex": "Global three-mask endpoint recombination, local common-ownership rho cancellation, the complete finite two-axis connector ledger, radial-side compatibility, and aggregate endpoint/R1 physical-module routing are exact. Full mask--endpoint--axial compatibility now requires the prescribed symmetric limit of the exact finite endpoint-free complement V_pre_fin-M_fin. No residual terminal-symbol estimate is included.",
+        "dependencies_added": [
+          "M9-M1-beta-endpoint-free-axial-remainder-limit"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-physical-module-transfer/synthesis.md"
+          ]
+        },
+        "next_action": "Establish the endpoint-free finite complement's physical/outside-height limit before defining its terminal symbol."
+      },
+      {
+        "id": "M9-M1-beta-axial-subtracted-terminal-symbol-bound",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M1-beta-endpoint-free-axial-remainder-limit"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-physical-module-transfer/synthesis.md"
+          ]
+        },
+        "next_action": "Wait for the unique limiting endpoint-free axial remainder, then define and estimate the axial-subtracted terminal symbol."
+      },
+      {
+        "id": "M9-M1-beta-boundary-first-symbol-architecture",
+        "status": "proved_internal",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-physical-module-transfer/reviews/conductor_common_module_candidate.md",
+            "rounds/codex-managed/m9-m1-beta-physical-module-transfer/synthesis.md"
+          ]
+        },
+        "next_action": "Remove the common endpoint/R1 module by global aggregate finite routing, then prove the limit of the endpoint-free finite complement before local symbol analysis."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round36-three-mask-partition-annihilates-ordinary-transfer-cells",
+        "reason": "The partition cancels only mask-derivative connectors. Ordinary final verticals, horizontal faces, axes, and the corner survive with coefficient one and reassemble the complete unmasked finite Stokes identity."
+      },
+      {
+        "id": "Round36-aggregate-routing-implies-termwise-masked-physical-limits",
+        "reason": "The proof simplifies the full finite sum before taking the accepted physical limit. No individual masked face, axis, connector, corner, or mask share is shown to converge physically."
+      },
+      {
+        "id": "Round36-freeze-off-centred-Perron-path-under-v-transfer",
+        "reason": "After r=w-3/4-v/2, both the real part and endpoints of the r-path move with v. Freezing it omits path-boundary terms; the exact routing requires the original fixed-w meromorphic antecedent."
+      },
+      {
+        "id": "Round36-insert-physical-stars-at-finite-Perron-height",
+        "reason": "The finite off-centred Perron kernel has tails and no half tie. Sharp support, product stars, and top half-stars arise only in the licensed symmetric physical inversion after aggregate finite routing."
+      },
+      {
+        "id": "Round36-transfer-isolated-R1-through-artificial-pole",
+        "reason": "Artificial cancellation is valid only under common ownership of G=E1+R1 before residue separation. Shifting the displayed R1 summand alone can double count or omit the artificial residue."
+      },
+      {
+        "id": "Round36-boundary-module-routing-proves-endpoint-free-remainder-limit",
+        "reason": "Exact removal of M_fin defines V_pre_fin-M_fin at finite height but supplies neither its symmetric outside-height/profile limit nor a limiting endpoint-free axial symbol."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "The endpoint-free axial remainder limit, terminal symbol bound, beta transition estimate, and residual M1 corridor remain open."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Round 36 concerns only the M1 beta boundary architecture."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1 and M9-M2 remain open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "No unconditional Gauss-circle estimate is claimed."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 9,
+    "idea_quality_score": 9,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 36 replaces an unavailable termwise physical-limit theorem by an exact finite aggregate-routing identity, independently derived and hostilely audited, while explicitly separating the still-open endpoint-free remainder limit."
+  }
+}

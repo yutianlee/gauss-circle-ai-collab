@@ -1,0 +1,46 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 24,
+    "round_type": "r1_arithmetic_residue_return",
+    "campaign_id": "m9-m1-r1-arithmetic-residue",
+    "title": "Return and estimate the recombined R1 arithmetic residue",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "conductor_policy": {
+      "strategy_owner": "Codex conductor",
+      "subagents_may_start_next_round": false,
+      "monitoring": "Work only on Rar[R1]. Retain admissible contour lines, conditional L-series convergence, the physical top limit, y=0/1/N seams, all floors, and the external X^(1/4) factor.",
+      "round_close": "Close after a statement-only exact return, an analytic fixed-y BV proof, a hostile contour/normalization audit, and graph adjudication."
+    },
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "literature_policy": "No source import is needed for the proposed elementary mechanism; search only if an exact analytic seam fails."
+    },
+    "target_obligations": [
+      "M9-M1-R1-arithmetic-residue",
+      "M9-M1-endpoint-boundary-operator",
+      "M9-M1-renormalized-radial-boundary-operator"
+    ],
+    "frozen_target": {
+      "starting_formula": "Rar[R1]=sum_j integral integral A_j(u,v)R_(1,v)(1-(u+v)/2)L(1-u-v,chi_4)dvdu.",
+      "candidate_bound": "Derive the exact physical y-integral and prove its fixed-y q-sum is O(D_j/sqrt(Xy)); integrate from the automatic threshold y>>D_j^2/X and sum D_j geometrically to obtain normalized O(1).",
+      "success": "A complete normalized O(polylog X), preferably O(1), residue bound, or an exact counterexample to the return/BV transfer."
+    },
+    "tasks": [
+      {"id":"blind_r1_residue_return","role":"statement_only_residue_return_deriver","brief":"rounds/codex-managed/m9-m1-r1-arithmetic-residue/briefs/blind_r1_residue_return.md"},
+      {"id":"fixed_y_character_abel","role":"analytic_sampled_bv_prover","brief":"rounds/codex-managed/m9-m1-r1-arithmetic-residue/briefs/fixed_y_character_abel.md"},
+      {"id":"r1_residue_hostile_audit","role":"hostile_contour_and_normalization_reviewer","brief":"rounds/codex-managed/m9-m1-r1-arithmetic-residue/briefs/r1_residue_hostile_audit.md"}
+    ],
+    "exit_gates": ["exact residue return","conditional L interchange","profile inversions","radial antiderivative","fixed-y q support","sampled BV and Abel","y/scale sum","top and normalization audit","conductor decision"],
+    "promotion_policy": "Promote only after independent agreement on the exact sign and powers, legitimate limit order, q-character placement, small-y threshold, sampled variation, and physical normalization."
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "4778c43f94bec97ea6887fb62456f16ee6fe0981d395d2d7685cb1fc026f22ef",
+    "generated_at": "2026-08-12T21:45:00+08:00"
+  },
+  "artifact_policy": {"subagents_may_edit_shared_state":false,"computation_evidence_level":"diagnostic_only","coordinator_owns_synthesis_and_state_patch":true}
+}

@@ -1,0 +1,46 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 25,
+    "round_type": "partial_functional_equation_transitions",
+    "campaign_id": "m9-m1-partial-functional-equation-transitions",
+    "title": "Undo one functional equation on each diagonal transition trace",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "conductor_policy": {
+      "strategy_owner": "Codex conductor",
+      "subagents_may_start_next_round": false,
+      "monitoring": "Work only on the two single-transition traces after subtracting the accepted endpoints, R1 residue, and renormalized sides. Preserve finite boxes and every outside residue/side.",
+      "round_close": "Close after a blind factorization, an analytic mixed-trace attack, a hostile audit, and graph adjudication."
+    },
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "literature_policy": "Internal derivation first; primary-source search only for a theorem actually imported."
+    },
+    "target_obligations": [
+      "M9-M1-partial-functional-equation-transition-reduction",
+      "M9-M1-swept-transition-horizontal-operator",
+      "M9-M1-renormalized-radial-boundary-operator"
+    ],
+    "frozen_target": {
+      "starting_formula": "Use the exact Round-19 vector kernel and Round-20 diagonal gamma factorization, with the Round-21--24 endpoint/residue terms removed exactly once.",
+      "candidate": "On beta=O(1), undo the bounded zeta factor and leave the large chi_4 factor transformed; on alpha=O(1), undo the bounded chi_4 factor and leave the large zeta factor transformed. Derive and estimate the resulting mixed arithmetic kernels.",
+      "success": "Close at least one trace and isolate the other exactly, or prove a rigorous two-trace no-go for the proposed partial-FE mechanism."
+    },
+    "tasks": [
+      {"id":"blind_partial_FE_factorization","role":"statement_only_mixed_factor_deriver","brief":"rounds/codex-managed/m9-m1-partial-functional-equation-transitions/briefs/blind_partial_FE_factorization.md"},
+      {"id":"mixed_trace_attack","role":"analytic_mixed_trace_attacker","brief":"rounds/codex-managed/m9-m1-partial-functional-equation-transitions/briefs/mixed_trace_attack.md"},
+      {"id":"partial_FE_hostile_audit","role":"hostile_factor_and_residue_reviewer","brief":"rounds/codex-managed/m9-m1-partial-functional-equation-transitions/briefs/partial_FE_hostile_audit.md"}
+    ],
+    "exit_gates": ["factor assignment","mixed identities","residue/side ledger","actual profiles","trace estimates/no-go","controls","normalization","conductor decision"],
+    "promotion_policy": "No trace is promoted from gamma asymptotics alone; require an exact arithmetic kernel and a uniform operator estimate."
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "d4d8ef8a1b506d1d33fe245c26c741fe96307f0035ed92590c39c19c9e4c1d96",
+    "generated_at": "2026-08-12T22:20:00+08:00"
+  },
+  "artifact_policy": {"subagents_may_edit_shared_state":false,"computation_evidence_level":"diagnostic_only","coordinator_owns_synthesis_and_state_patch":true}
+}

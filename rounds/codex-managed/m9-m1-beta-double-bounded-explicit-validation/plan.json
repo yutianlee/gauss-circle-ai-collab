@@ -1,0 +1,33 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 43,
+    "campaign_id": "m9-m1-beta-double-bounded-explicit-validation",
+    "title": "Explicit validation of the beta double-bounded amplitude",
+    "status": "complete",
+    "max_concurrency": 3,
+    "target_obligations": ["M9-M1-beta-double-bounded-cell-bound", "M9-M1-beta-transition-connector-reduction"],
+    "graph_sha256": "a5197836a504b659557f32504c624c2457f24e8f6f3089bfcaa347297bd6b00f",
+    "resource_policy": {"analytical_algebraic_minimum_percent": 100, "numerical_experimental_maximum_percent": 0},
+    "frozen_objective": "Validate or refute the explicit finite compact amplitude, its local estimate, and its one-count routing into the accepted radial-BV reduction."
+  },
+  "tasks": [
+    {"id": "blind_explicit_amplitude_proof", "role": "statement_only_validator", "access_mode": "statement_only", "report": "reports/blind_explicit_amplitude_proof.md"},
+    {"id": "connector_family_line_audit", "role": "assembly_line_auditor", "access_mode": "selected_context", "report": "reports/connector_family_line_audit.md"},
+    {"id": "hostile_compact_assembly_audit", "role": "hostile_seam_reviewer", "access_mode": "selected_context", "report": "reports/hostile_compact_assembly_audit.md"}
+  ],
+  "exit_gates": [
+    "strict statement-only analytic proof",
+    "actual finite family mapping",
+    "connector and artificial one-count ledger",
+    "exact active j range and floors",
+    "local masked endpoint ownership",
+    "full normalization and external factor",
+    "conductor graph decision"
+  ],
+  "closing_assessment": {
+    "decision": "repair_abstract_estimate_retain_actual_cell_open_at_selector_ownership_table",
+    "graph_mutation": true,
+    "main_result": "The corrected finite analytic class is polylogarithmic on the actual a>=0 contour, but the frozen packet fails both strict isolation and exact one-count mapping. The first unmapped term is the surviving beta mixed connector, and physical top/interior j-selectors are absent."
+  }
+}

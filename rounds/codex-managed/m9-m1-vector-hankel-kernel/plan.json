@@ -1,0 +1,49 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 19,
+    "round_type": "finite_vector_hankel_kernel_derivation",
+    "campaign_id": "m9-m1-vector-hankel-kernel",
+    "title": "Derive the finite reflected vector Hankel kernel and its phase ranges",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "conductor_policy": {
+      "strategy_owner": "Codex conductor",
+      "subagents_may_start_next_round": false,
+      "monitoring": "Keep finite contour heights, all gamma constants, the dual radial index, horizontal sides, residues, scale/floor profiles, and large complex shifts explicit.",
+      "round_close": "Close only after blind kernel derivation, uniform phase analysis, hostile normalization/source audit, and graph adjudication."
+    },
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 95,
+      "numerical_experimental_maximum_percent": 5,
+      "numerical_purpose": ["bounded falsification of gamma phases or saddle locations"],
+      "literature_policy": "Primary-source strategy review only after the exact kernel and parameter ranges are derived."
+    },
+    "target_obligations": [
+      "M9-M1-post-FE-vector-kernel",
+      "M9-M1-maximal-angular-sign-kernel",
+      "M9-M1-top-Perron-angular-correlation",
+      "M9-M1-high-2adic-tail-conditional"
+    ],
+    "tasks": [
+      {"id":"blind_finite_vector_kernel","role":"statement_only_vector_kernel_deriver","brief":"rounds/codex-managed/m9-m1-vector-hankel-kernel/briefs/blind_finite_vector_kernel.md"},
+      {"id":"vector_hankel_phase_attack","role":"uniform_stirling_and_phase_attacker","brief":"rounds/codex-managed/m9-m1-vector-hankel-kernel/briefs/vector_hankel_phase_attack.md"},
+      {"id":"vector_kernel_hostile_source_audit","role":"hostile_normalization_and_primary_source_reviewer","brief":"rounds/codex-managed/m9-m1-vector-hankel-kernel/briefs/vector_kernel_hostile_source_audit.md"}
+    ],
+    "exit_gates": ["finite vector kernel","residue and horizontal-side ledger","gamma/phase/conductor audit","large-shift diagram","estimate or smallest survivor","conductor decision"],
+    "promotion_policy": "Promote only formulas valid at finite heights with exact constants; a bound must cover its declared complex-shift and endpoint range.",
+    "closing_assessment": {
+      "decision": "promote_finite_vector_kernel_and_transition_diagram",
+      "graph_mutation": true,
+      "main_result": "The exact finite reflected vector kernel, residue/horizontal-side ledger, and conductor transition diagram are proved. Bounded shifts return to the near-product problem; swept single-transition strips and horizontal sides remain open."
+    },
+    "next_round": 20
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "c29c2fde51f316b7d7837d60c9abfc4210e2e5950586c36d62dec2b550635804",
+    "generated_at": "2026-08-12T20:00:00+08:00"
+  },
+  "artifact_policy": {"subagents_may_edit_shared_state":false,"computation_evidence_level":"diagnostic_only","coordinator_owns_synthesis_and_state_patch":true}
+}

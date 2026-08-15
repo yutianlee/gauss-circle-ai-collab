@@ -1,0 +1,39 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 41,
+    "campaign_id": "m9-m1-beta-off-diagonal-product-cell",
+    "title": "Complete off-diagonal and smooth beta product cell",
+    "status": "complete",
+    "max_concurrency": 3,
+    "target_obligations": ["M9-M1-beta-axial-subtracted-terminal-symbol-bound"],
+    "graph_sha256": "d58c8024e4a71946b4741660fb7048bc1dc24047e0fe94dca3c1122205048095",
+    "resource_policy": {"analytical_algebraic_minimum_percent": 100, "numerical_experimental_maximum_percent": 0},
+    "frozen_objective": "After removing the proved signed diagonal Cauchy section, derive the exact one-count phase-removed singular off-diagonal and smooth product cells and prove their target mixed physical-height, moving-trace, and exact Morse norm, or isolate the first actual-form obstruction."
+  },
+  "tasks": [
+    {"id": "independent_product_norm_rederivation", "role": "statement_only_validator", "report": "reports/independent_product_norm_rederivation.md"},
+    {"id": "off_diagonal_mixed_norm_attack", "role": "discovery", "report": "reports/off_diagonal_mixed_norm_attack.md"},
+    {"id": "product_cell_hostile_audit", "role": "seam_reviewer", "report": "reports/product_cell_hostile_audit.md"}
+  ],
+  "exit_gates": [
+    "exact phase-removed singular and smooth product-cell formulas",
+    "gamma symbol and profile derivative bounds with external ownership",
+    "cancellation-preserving endpoint divided-difference estimate",
+    "physical-center, top-diagonal, radial-ridge, and far-tail partition",
+    "moving physical faces and affine switches",
+    "both saddle signs and exact normalized Morse entry/exit remainder",
+    "beta connector and common artificial ownership",
+    "target hybrid remainder norm or sharp actual-form obstruction",
+    "statement-only independent and hostile validation",
+    "conductor decision before invoking the closed coefficient sum"
+  ],
+  "superseded_artifacts": [
+    {"task": "blind_product_cell_factorization", "report": "reports/blind_product_cell_factorization.md", "reason": "The run disclosed proof-graph exposure and is retained only as a contaminated independent rederivation, not as the statement-only gate."}
+  ],
+  "closing_assessment": {
+    "decision": "promote_large_alpha_product_cell_and_target_sized_package",
+    "graph_mutation": true,
+    "main_result": "The exact modulated off-diagonal and smooth product cell has the target mixed norm on both signed large-alpha saddle/entry/exit cells. Composed with the signed diagonal and coefficient sum, the complete large-alpha beta package is O_epsilon(X^(1/4+epsilon)); bounded-alpha and double-bounded cells remain open."
+  }
+}

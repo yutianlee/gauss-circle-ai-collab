@@ -1,0 +1,182 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-finite-vector-Hankel-identity",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Exact finite reflected vector Hankel kernel",
+        "status": "proved_internal",
+        "statement_tex": "On finite u,v,w rectangles with positive outside abscissae, shift the radial w-segment from Re w=c to lambda=1-c', choose c'>1+(a+b)/2 and S>(U+V)/2, retain both radial horizontal sides, and set s=1-w. Expanding F_(-(u+v))(s) absolutely yields the exact dual-index kernel 1_(hq=m)chi_4(q) times the triple integral of A_j(u,v)(h/q)^((u+v)/2)G_v(1-s)K_(u+v)(1-s)m^(-s), where K_z(1-s)=2^(2s+z-1)pi^(1-2s)Gamma((s-z/2)/2)Gamma((1+s+z/2)/2)/[Gamma((1-s+z/2)/2)Gamma((2-s-z/2)/2)]. The crossed arithmetic residue is A_j G_v(1-z/2)L(1-z,chi_4). Height, hard-Perron, corner, radial-endpoint, and all horizontal-side terms remain explicit when their contours are moved. No infinite-height limit is asserted.",
+        "dependencies": [
+          "M9-M1-finite-height-reflected-sector-identity",
+          "M9-M1-post-FE-scalar-separation-no-go"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-vector-hankel-kernel/reports/blind_finite_vector_kernel.md",
+            "rounds/codex-managed/m9-m1-vector-hankel-kernel/reports/vector_hankel_phase_attack.md",
+            "rounds/codex-managed/m9-m1-vector-hankel-kernel/reports/vector_kernel_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m1-vector-hankel-kernel/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use the finite kernel as the sole reflected operator definition; choose and validate a nested contour-height exhaustion before taking limits."
+      },
+      {
+        "id": "M9-M1-vector-Hankel-conductor-diagram",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Archimedean conductor and transition diagram for the vector kernel",
+        "status": "proved_internal",
+        "statement_tex": "For s=sigma+it and z=zeta+i eta, the completed degree-two conductor is 4(1+|t+eta/2|)(1+|t-eta/2|). For bounded eta and a smooth radial shell x asymp N, the complete Hankel inversion has phases e(plus or minus sqrt(mx)); the stationary branch against e(sqrt(Xx)) localizes to |m-X|<<sqrt(X/N), the accepted near-product return. For unbounded eta, separate: outer Stirling where both |t plus or minus eta/2| are large; single-transition strips where one is O(1); and double-bounded range, possible only for bounded eta. Since eta=Im u+Im v, the single-transition strips sweep the hard-Perron height. No estimate for these strips or horizontal sides is asserted.",
+        "dependencies": [
+          "M9-M1-finite-vector-Hankel-identity",
+          "M9-M1-angular-Voronoi-return-map-no-go"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-vector-hankel-kernel/reports/vector_hankel_phase_attack.md",
+            "rounds/codex-managed/m9-m1-vector-hankel-kernel/reports/vector_kernel_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m1-vector-hankel-kernel/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Change to diagonal heights alpha=t+eta/2 and beta=t-eta/2; derive each single-transition kernel without extrapolating fixed-order Stirling."
+      },
+      {
+        "id": "M9-M1-swept-transition-horizontal-operator",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Swept single-transition and horizontal-side vector operator",
+        "status": "open",
+        "statement_tex": "For the exact finite vector Hankel identity, control the portions |Im s-Im(u+v)/2|<<1 and |Im s+Im(u+v)/2|<<1, together with all radial horizontal sides under a specified nested exhaustion S=S(U,V) that dominates U+V, every crossed arithmetic/axial residue, and the hard symmetric u-Perron limit. A target-sized estimate must be uniform in the remaining large gamma height and actual scale/floor/profile variables. Bounded-shift Hankel formulas do not imply it.",
+        "dependencies": [
+          "M9-M1-finite-vector-Hankel-identity",
+          "M9-M1-vector-Hankel-conductor-diagram"
+        ],
+        "implies": [
+          "M9-M1-post-FE-vector-kernel"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-vector-hankel-kernel/reports/blind_finite_vector_kernel.md",
+            "rounds/codex-managed/m9-m1-vector-hankel-kernel/reports/vector_hankel_phase_attack.md",
+            "rounds/codex-managed/m9-m1-vector-hankel-kernel/reports/vector_kernel_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m1-vector-hankel-kernel/synthesis.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use diagonal gamma-height coordinates and test nested contour exhaustion plus exact single-transition gamma kernels."
+      },
+      {
+        "id": "M9-M1-fixed-order-vector-Hankel-import-no-go",
+        "type": "obstruction",
+        "track": "source_audit",
+        "title": "Fixed-order Voronoi sources do not control the swept vector transition",
+        "status": "proved_internal",
+        "statement_tex": "The audited Banerjee-Khurana formulas are fixed-order odd-character identities for analytic finite-interval weights and do not supply uniform large-imaginary-order estimates or accept the hard top jump. The audited Kiral-Zhou architecture does not directly specialize to the ramified polar degree-two product with three contour heights, finite horizontal sides, and a maximal Perron limit. Neither source proves the swept transition/horizontal operator estimate.",
+        "dependencies": [
+          "Banerjee-Khurana-2023-source-audit",
+          "Kiral-Zhou-2016-source-audit",
+          "M9-M1-vector-Hankel-conductor-diagram"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-vector-hankel-kernel/reports/vector_kernel_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m1-vector-hankel-kernel/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Do not cite fixed-order formulas for a uniform transition estimate; derive the transition kernel first, then search for an exact matching theorem."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-post-FE-vector-kernel",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M1-finite-vector-Hankel-identity",
+          "M9-M1-vector-Hankel-conductor-diagram",
+          "M9-M1-swept-transition-horizontal-operator"
+        ],
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-m1-vector-hankel-kernel/reports/vector_kernel_hostile_source_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-vector-hankel-kernel/reports/blind_finite_vector_kernel.md",
+            "rounds/codex-managed/m9-m1-vector-hankel-kernel/reports/vector_hankel_phase_attack.md",
+            "rounds/codex-managed/m9-m1-vector-hankel-kernel/synthesis.md"
+          ]
+        },
+        "statement_tex": "For the exact finite vector kernel M9-M1-finite-vector-Hankel-identity, prove a target-sized signed operator estimate after every arithmetic, height, hard-Perron, corner, and radial-endpoint residue is separately controlled and after radial/outside horizontal sides are removed by a validated nested exhaustion. The bounded-shift region returns to the near-product problem; the smallest unresolved component is M9-M1-swept-transition-horizontal-operator.",
+        "next_action": "Attack the diagonal-height single-transition strips and nested horizontal-side exhaustion; do not replace them by bounded-shift Hankel waves."
+      },
+      {
+        "id": "M9-M1-maximal-angular-sign-kernel",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M1-swept-transition-horizontal-operator"
+        ],
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-m1-vector-hankel-kernel/reports/vector_kernel_hostile_source_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-vector-hankel-kernel/synthesis.md"
+          ]
+        },
+        "next_action": "Use the exact finite vector identity; the swept transition/horizontal operator is now the principal reflected-mode blocker."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round19-delete-finite-horizontal-sides",
+        "reason": "Their gamma decay is not uniform when the radial height approaches either swept transition plane, and no nested exhaustion has been proved."
+      },
+      {
+        "id": "Round19-bounded-shift-Hankel-localization-is-uniform",
+        "reason": "For large Im z, one gamma argument becomes bounded on t=plus or minus Im z/2; fixed-order two-factor Stirling is invalid there."
+      },
+      {
+        "id": "Round19-bounded-shift-sector-proves-new-saving",
+        "reason": "The bounded-shift stationary phase localizes to m near X, exactly the previously accepted near-product return map."
+      },
+      {
+        "id": "Round19-primary-sources-close-vector-transition",
+        "reason": "The audited sources do not provide a uniform large-imaginary-order, hard-jump, three-height estimate with finite horizontal sides."
+      }
+    ],
+    "no_change": [
+      {"id": "M9-M1-high-2adic-tail-conditional", "reason": "No vector-kernel norm was proved for the reflected tail."},
+      {"id": "M9-M1-global-angular-radial-estimate", "reason": "No target-sized vector estimate was proved."},
+      {"id": "M9-M1", "reason": "No M1 estimate was proved."},
+      {"id": "M9-M2", "reason": "Round 19 concerns transformed M1."},
+      {"id": "M9", "reason": "Both principal sublemmas remain open."},
+      {"id": "GC-target", "reason": "Finite operator infrastructure does not prove the target."}
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 9,
+    "calibration_score": 10,
+    "reason": "Round 19 replaces the schematic reflected object by an exact finite vector kernel and locates its true large-shift obstruction: swept single-gamma transition strips plus nonuniform horizontal sides. It proves no target-sized sector."
+  }
+}

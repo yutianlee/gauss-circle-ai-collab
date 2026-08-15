@@ -1,0 +1,221 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-moving-logarithm-Fresnel-lemma",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Sharp uniform moving-logarithm Fresnel lemma",
+        "status": "proved_internal",
+        "statement_tex": "Let a uniformly nondegenerate one-dimensional phase with large parameter Lambda have at most one saddle on a fixed compact patch. For G in W^(1,1) intersect L^infinity, arbitrary moving subinterval endpoints, moving log point in a fixed compact enlargement, 0<=a<=1, and either Hessian sign, the integral of G(t)Log(a+i(t-t0))exp(plus or minus i Lambda phi(t)) is O(Lambda^(-1/2)log(2+Lambda)(||G||_infinity+||G'||_1)). The bound is uniform when the log point, saddle, and either endpoint coalesce. At exact saddle coincidence the leading term is -one half Lambda^(-1/2)log Lambda times the ordinary incomplete Fresnel coefficient, with the half-Fresnel value at an endpoint, so the logarithm is sharp. The lemma preserves an already proved algebraic prefactor but does not create a missing q-saving or prove actual-profile symbol norms.",
+        "dependencies": [
+          "M9-M1-beta-two-saddle-Fresnel-normal-form",
+          "M9-M1-beta-finite-box-Plemelj-limit"
+        ],
+        "implies": [
+          "M9-M1-beta-log-amplitude-two-saddle-kernel"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-log-amplitude-two-saddle/reports/blind_log_fresnel_lemma.md",
+            "rounds/codex-managed/m9-m1-beta-log-amplitude-two-saddle/reports/beta_log_kernel_attack.md",
+            "rounds/codex-managed/m9-m1-beta-log-amplitude-two-saddle/reports/log_kernel_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-log-amplitude-two-saddle/reviews/conductor_abstract_log_fresnel.md",
+            "rounds/codex-managed/m9-m1-beta-log-amplitude-two-saddle/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Apply only after proving a scale-normalized W^(1,1) or BV norm for the complete actual amplitude; retain the sharp logarithm in all power sums."
+      },
+      {
+        "id": "M9-M1-beta-finite-section-Plemelj-decomposition",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Finite-section delta-PV logarithm and regular-part decomposition",
+        "status": "proved_internal",
+        "statement_tex": "For A(L)=max(-U,L-V), B(L)=min(U,L+V), h0(L)=H(L,L), and Delta_H(L,mu)=(H(L,L-mu)-H(L,L))/mu with continuous diagonal extension, the distribution-first section satisfies C_(U,V)H(L)=h0(L)J_(U,V)(L)+R_(U,V)(L), where J=pi 1_(A<0<B)-i log(|B|/|A|)=-i{Log_-(B)-Log_-(A)} and R=-i int_A^B Delta_H(L,mu)dmu. Only L=plus or minus V creates top-pole face logs; the mu=plus or minus U switches are regular affine endpoints. On each affine cell, sup_L int(|Delta_H|+|partial_L Delta_H|) plus the two endpoint-trace L1 norms controls ||R||_infinity+Var(R). This is an exact conditional BV reduction, not a proof that the complete beta numerator satisfies the stated norm.",
+        "dependencies": [
+          "M9-M1-beta-finite-box-Plemelj-limit"
+        ],
+        "implies": [
+          "M9-M1-beta-log-amplitude-two-saddle-kernel",
+          "M9-M1-beta-regular-finite-part-symbol-BV"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-log-amplitude-two-saddle/reports/blind_log_fresnel_lemma.md",
+            "rounds/codex-managed/m9-m1-beta-log-amplitude-two-saddle/reports/beta_log_kernel_attack.md",
+            "rounds/codex-managed/m9-m1-beta-log-amplitude-two-saddle/reports/log_kernel_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-log-amplitude-two-saddle/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Insert the complete omega-recombined beta numerator into the exact difference quotient and prove its scaled BV and endpoint-trace bounds."
+      },
+      {
+        "id": "M9-M1-beta-R1-face-log-q4-bound",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Actual separated R1 height-face logarithm has local q-minus-four",
+        "status": "proved_internal",
+        "statement_tex": "On either separated signed post-endpoint R1 saddle alpha=plus or minus lambda, lambda=q theta_j(x), away from rho=0 and v=0 seams, put A=rho_0-i alpha and y=L-nu. The exact identity 1/[y(A+iy/2)]=A^(-1)y^(-1)-(i/(2A))(A+iy/2)^(-1) shows that the entire explicit height-face log has coefficient f_b(L)/A. At a saddle-face collision L=plus or minus V asymptotic to plus or minus lambda, the actual fixed-b height transform gives f_b(L)=O_b(lambda^(-3)) and |A| asymptotic to lambda, so the pre-numerator face coefficient is O_b(lambda^(-4)). After the accepted Round-27 numerator (D_j/q)lambda and the sharp moving-log Fresnel loss, the normalized local face term is O_b(D_j log(2+lambda)/(q lambda^3))=O_b(D_j log(2+lambda)/(q^4 theta_j(x)^3)). This does not bound the regular finite part, rho seam, tails, or complete sums.",
+        "dependencies": [
+          "M9-M1-beta-post-endpoint-signed-convolution-gain",
+          "M9-M1-moving-logarithm-Fresnel-lemma",
+          "M9-M1-beta-finite-section-Plemelj-decomposition"
+        ],
+        "implies": [
+          "M9-M1-beta-log-amplitude-two-saddle-kernel"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-log-amplitude-two-saddle/reports/beta_log_kernel_attack.md",
+            "rounds/codex-managed/m9-m1-beta-log-amplitude-two-saddle/reports/log_kernel_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-log-amplitude-two-saddle/reviews/conductor_actual_cauchy_decomposition.md",
+            "rounds/codex-managed/m9-m1-beta-log-amplitude-two-saddle/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Remove the explicit face log using this bound and attack the regular finite-part symbol norm; do not infer the complete beta estimate."
+      },
+      {
+        "id": "M9-M1-beta-regular-finite-part-symbol-BV",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Scale-normalized BV bound for the complete regular beta finite part",
+        "status": "open",
+        "statement_tex": "After removing the explicit delta jumps and height-face logarithms from the distribution-first finite section, let B_(j,h,q,x)^plus or minus be the complete regular amplitude in the exact Morse variable on each signed saddle patch. It retains every scale and height profile, H_j+1 floor, radial x factor, beta connector, moving endpoint trace, endpoint star, and the artificial-pole-safe combination omega G+(1-omega)R1-omega E1. Prove ||B||_infinity+||partial_y B||_1 is at most X^epsilon D_j/(q lambda) times the exact already-recorded h,D_j,x monomial, uniformly through saddle entry/exit, all affine height cells, rho=0 and v=0 ledger seams, and finite U,V,S. Also prove summable height tails. This would preserve q^(-2) up to log(2+lambda) under the moving-logarithm Fresnel lemma; pointwise value bounds alone do not imply it.",
+        "dependencies": [
+          "M9-M1-beta-hierarchical-radial-split-identity",
+          "M9-M1-beta-post-endpoint-signed-convolution-gain",
+          "M9-M1-beta-finite-section-Plemelj-decomposition",
+          "M9-M1-beta-R1-face-log-q4-bound"
+        ],
+        "implies": [
+          "M9-M1-beta-log-amplitude-two-saddle-kernel"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-log-amplitude-two-saddle/reports/beta_log_kernel_attack.md",
+            "rounds/codex-managed/m9-m1-beta-log-amplitude-two-saddle/reports/log_kernel_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-log-amplitude-two-saddle/reviews/conductor_symbol_derivative_scope.md",
+            "rounds/codex-managed/m9-m1-beta-log-amplitude-two-saddle/synthesis.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Expand the complete regular finite part before stationary evaluation, differentiate in the exact Morse variable, and ledger every derivative hitting f_b, A^(-1), beta masks, omega recombination, moving endpoints, radial factors, and scale profiles."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-beta-log-amplitude-two-saddle-kernel",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M1-moving-logarithm-Fresnel-lemma",
+          "M9-M1-beta-finite-section-Plemelj-decomposition",
+          "M9-M1-beta-R1-face-log-q4-bound",
+          "M9-M1-beta-regular-finite-part-symbol-BV"
+        ],
+        "statement_tex": "After the finite-box Plemelj limit, the abstract two-saddle estimate for logarithmic height faces is proved with sharp one-log loss, and the actual separated R1 face log is locally q^(-4) up to that log. The remaining beta kernel is the regular finite part. Prove the complete scale-normalized BV symbol estimate M9-M1-beta-regular-finite-part-symbol-BV, then use the moving-logarithm and ordinary Fresnel lemmas to retain q^(-2), control saddle entry/exit and every polytope face, exhaust U,V,S, and execute all q,h,scale,radial, profile, floor, star, connector, endpoint, and residue sums needed for normalized O_epsilon(X^epsilon). The double-bounded share remains separately open.",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-log-amplitude-two-saddle/reports/blind_log_fresnel_lemma.md",
+            "rounds/codex-managed/m9-m1-beta-log-amplitude-two-saddle/reports/beta_log_kernel_attack.md",
+            "rounds/codex-managed/m9-m1-beta-log-amplitude-two-saddle/reports/log_kernel_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-log-amplitude-two-saddle/synthesis.md"
+          ]
+        },
+        "next_action": "Prove M9-M1-beta-regular-finite-part-symbol-BV. The explicit logarithmic face no longer blocks the local power count."
+      },
+      {
+        "id": "M9-M1-beta-transition-connector-reduction",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M1-beta-regular-finite-part-symbol-BV"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-log-amplitude-two-saddle/reports/blind_log_fresnel_lemma.md",
+            "rounds/codex-managed/m9-m1-beta-log-amplitude-two-saddle/reports/beta_log_kernel_attack.md",
+            "rounds/codex-managed/m9-m1-beta-log-amplitude-two-saddle/reports/log_kernel_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-log-amplitude-two-saddle/synthesis.md"
+          ]
+        },
+        "next_action": "Close the complete regular finite-part symbol norm and height tails, then execute all beta-branch sums and finite-side exhaustion."
+      },
+      {
+        "id": "M9-M1-beta-post-endpoint-signed-convolution-gain",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-log-amplitude-two-saddle/reports/beta_log_kernel_attack.md",
+            "rounds/codex-managed/m9-m1-beta-log-amplitude-two-saddle/reports/log_kernel_hostile_audit.md"
+          ]
+        },
+        "next_action": "Retain the bulk q^(-2) lemma on separated patches. The explicit moving height-face log is now q^(-4); prove the regular finite-part scaled BV norm before extending through all transitions."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round30-moving-logarithm-costs-an-algebraic-power",
+        "reason": "The uniform exact-Morse/dyadic proof gives only the ordinary Fresnel size times log(2+Lambda), for either Hessian sign and all saddle-face-endpoint coalescences."
+      },
+      {
+        "id": "Round30-logarithmic-loss-can-be-removed-uniformly",
+        "reason": "When the logarithmic point equals a nondegenerate saddle, scaling gives a nonzero -one-half log Lambda multiple of the ordinary full or half Fresnel coefficient."
+      },
+      {
+        "id": "Round30-height-face-log-is-the-q-minus-two-bottleneck",
+        "reason": "The exact two-denominator partial fraction gives face coefficient f_b(L)/A=O_b(lambda^(-4)) at saddle-face collision, hence local q^(-4) after the accepted numerator; the q^(-2) survivor is the regular finite part."
+      },
+      {
+        "id": "Round30-pointwise-bounded-amplitude-implies-stationary-size",
+        "reason": "A bounded amplitude proportional to exp(-i Psi) cancels the oscillation and has length-size capacity. A scale-normalized W^(1,1) or BV hypothesis is essential."
+      },
+      {
+        "id": "Round30-fixed-profile-BV-automatically-extends-to-complete-recombined-symbol",
+        "reason": "Differentiation in the Morse variable can hit gamma factors, radial phase, beta connectors, moving endpoints, scale profiles, and the omega G/R1/E1 recombination; the fixed f_b quotient does not control those terms."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "The regular beta symbol norm, height exhaustion, full sums, alpha transition, and residual M1 corridor remain open."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Round 30 concerns only transformed M1 beta transitions."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1 and M9-M2 remain open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "No unconditional Gauss-circle estimate is claimed."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 9,
+    "idea_quality_score": 9,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 30 proves the sharp singular stationary lemma, fixes the finite-section Plemelj decomposition, and shows the actual face logarithm has local q^(-4). It isolates the exact complete-symbol BV norm as the remaining q^(-2) seam without claiming the beta transition."
+  }
+}

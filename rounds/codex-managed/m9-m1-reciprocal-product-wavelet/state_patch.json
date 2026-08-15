@@ -1,0 +1,70 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-reciprocal-product-wavelet-reduction",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Exact product-wavelet reduction of the fixed-interior reciprocal cone",
+        "status": "proved_internal",
+        "statement_tex": "Let T=sqrt(X/N), V be fixed smooth compactly supported in (0,infinity), Xi be fixed smooth compactly supported in (0,1), g(t)=1_(t>0)V(t^2)/t, and K=hat(g). Then the fixed-interior reciprocal cone R=sum_(h,j>=1)chi_4(j)Xi(j/sqrt(X))h^(-1)V(4Xh^2/(j^2N))e(Xh/j) equals sum_(n>=1)A_(X,Xi)(n)K((n-X)/(2T))+O_B(X^(-B)), where A_(X,Xi)(n)=sum_(j|n)chi_4(j)Xi(j/sqrt(X)). All continuous moments of K vanish; once 2T exceeds the support radius of g, sum_(n in Z)(n-X)^r K((n-X)/(2T))=0 for every r>=0. Exact products survive through K(0)A_(X,Xi)(X). Inverse Poisson reconstructs R exactly. The absolute product ledger is O_epsilon(TX^epsilon), so the target O(X^(1/4+epsilon)) needs X^(1/4-nu/2), equal to H/L at D=sqrt(X), L=sqrt(N), H=X^(1/4). The signed estimate and sharp saddle/full-cone completion remain open.",
+        "dependencies": [
+          "M9-M1-one-sided-divisor-Appell-Poisson-reduction",
+          "M9-M1-near-product-character-kernel"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-reciprocal-product-wavelet/reports/blind_product_wavelet_rederivation.md",
+            "rounds/codex-managed/m9-m1-reciprocal-product-wavelet/reports/conductor_product_wavelet_analysis.md",
+            "rounds/codex-managed/m9-m1-reciprocal-product-wavelet/reports/shifted_divisor_source_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-reciprocal-product-wavelet/reviews/conductor_product_wavelet_adjudication.md",
+            "rounds/codex-managed/m9-m1-reciprocal-product-wavelet/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Prove a signed short-product discrepancy estimate for A_(X,Xi) gaining H/L, then separately recover the sharp j=sqrt(X) saddle, lower j scales, entry/exit, negative frequencies, and subtraction."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "dependencies_added": ["M9-M1-reciprocal-product-wavelet-reduction"],
+        "evidence_added": {
+          "positive": ["rounds/codex-managed/m9-m1-reciprocal-product-wavelet/synthesis.md"],
+          "negative": ["rounds/codex-managed/m9-m1-reciprocal-product-wavelet/reports/shifted_divisor_source_hostile_audit.md"]
+        },
+        "next_action": "The fixed-interior subcritical cone is now an exact product wavelet. Prove the H/L signed local discrepancy and complete the omitted saddle/transitions; zero moments and another Poisson transform self-return."
+      },
+      {
+        "id": "M9-M1-shifted-divisor-correlation-PSC",
+        "evidence_added": {
+          "inconclusive": ["rounds/codex-managed/m9-m1-reciprocal-product-wavelet/synthesis.md"]
+        },
+        "next_action": "Use the product-wavelet kernel as a separable test case at the exact PSC scale. A proof must gain H/L on the moving truncated divisor coefficient; it does not automatically prove full PSC."
+      }
+    ],
+    "reject": [
+      {"id": "Round64-all-wavelet-moments-kill-arithmetic-convolution", "reason": "Continuous and sampled polynomial moments vanish, but the moving truncated divisor coefficient is atomic; bounded adversarial coefficients can align with the wavelet and attain length T."},
+      {"id": "Round64-exact-products-vanish-by-zero-mean", "reason": "K(0)=one half integral V(u)du/u is generally nonzero. Exact products survive but are divisor-bounded and target-safe."},
+      {"id": "Round64-second-Poisson-gives-new-saving", "reason": "Inverse Poisson reconstructs the original reciprocal h-sum with the exact phase and measure."},
+      {"id": "Round64-existing-shifted-divisor-or-Kloosterman-theorem-applies", "reason": "Audited sources require additive shifts and complete automorphic coefficients, modular inverses and coprimality, or provide only a transformation; none matches the moving truncated divisor coefficient and product window."},
+      {"id": "Round64-fixed-interior-bound-is-full-cone-bound", "reason": "The fixed Xi cutoff omits lower j scales, the sharp j=sqrt(X) half-saddle, stationary transitions, negative frequencies, and subtraction/boundary recombination."}
+    ],
+    "no_change": [
+      {"id": "M9-M1", "reason": "The signed product discrepancy and full cone remain open."},
+      {"id": "M9", "reason": "M9-M1 and M9-M2 remain open."},
+      {"id": "GC-target", "reason": "Round 64 proves a reduction and no-go, not a radial estimate or exponent."}
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 64 exposes an exact zero-moment product wavelet and the precise H/L arithmetic discrepancy still required, while proving that another Poisson step self-returns. No analytic saving or exponent is proved."
+  }
+}

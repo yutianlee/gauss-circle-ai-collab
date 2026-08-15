@@ -1,0 +1,201 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 60,
+    "round_type": "critical_radial_terminal_mellin_transfer",
+    "campaign_id": "m9-m1-critical-radial-terminal-return",
+    "title": "Full critical radial block transfer to the terminal M1 theorem",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "literature_policy": "Use the accepted internal terminal-frequency and one-sided/interior B-process theorems. Search primary sources only if a new Mellin-transform or uniform B-process theorem is imported; analogy is not evidence."
+    },
+    "target_obligations": [
+      "M9-M1-global-angular-radial-estimate",
+      "M9-M1-top-block-quadratic-completion-self-return",
+      "M9-M1-terminal-frequency-divisor-bound"
+    ],
+    "frozen_target": {
+      "question": "For a fixed smooth critical radial cutoff V(n/sqrt(X)) of constant relative width, does Mellin separation convert the exact GAR sector into terminal M1 blocks already bounded by O_epsilon(1+D/L), including floors, the hard top, stars, and transform errors?",
+      "reference_formula": "G_V(X)=sum_(n<=16sqrt(X)) V(n/sqrt(X)) C_X^*(n)n^(-3/4)e(sqrt(Xn)); prove the fixed GAR real projection for every fixed V in C_c^infinity((c,C)) with 0<c<C<16; the existing factor 1_(h<=H_j) owns the upper terminal endpoint.",
+      "quantities": [
+        "R=X^(1/4), Y=sqrt(X)=R^2",
+        "exact C_X^*(n) and Omega_X^*(n,h)",
+        "stationary identity n=4Xh^2/d^2",
+        "Mellin convention V(z)=(2pi)^(-1) integral Vhat(t)z^(it)dt",
+        "terminal support h asymp H_j=floor(D_j/R)",
+        "mode weights h^(2it) and d^(-2it)",
+        "BV cost (1+|t|)/H_j",
+        "terminal bound 1+D_j/H_j asymp R",
+        "interior and one-sided B-process constants and errors",
+        "hard-top boundary, height floors, profiles, and equality stars",
+        "external factor -(4/pi)R Re(e(1/8) dot) exactly once"
+      ]
+    },
+    "completion_criteria": [
+      "A fixed-relative-width support lemma proves that every contributing h is in a terminal shell h asymp H_j, including small H_j and floor errors.",
+      "Mellin inversion is exact and its t-mode factorization is stated with sign, 2pi normalization, and finite weighted L1 moments.",
+      "Each t-mode satisfies the accepted terminal theorem with frequency BV O((1+|t|)/H_j) and bounded denominator weight, yielding O_epsilon(RX^epsilon) after t integration and scale summation.",
+      "The coefficient-preserving interior and hard-top transforms reconstruct exactly V(n/Y)C_X^*(n)n^(-3/4)e(sqrt(Xn)) with the Round-14 constant.",
+      "All transform errors, hard-top boundary terms, inactive/small-height pieces, profile seams, floors, and stars are target-safe with one-count ownership.",
+      "A proof yields Re(e(1/8)G_V)<<X^epsilon, or the first exact coefficient/endpoint obstruction is isolated.",
+      "A clean statement-only rederivation and an independent hostile seam audit exist.",
+      "No lower radial sector, alpha transition, full GAR, M9-M1, M9, or exponent promotion occurs without its own proof."
+    ],
+    "controls": [
+      "Mellin_normalization",
+      "terminal_support",
+      "frequency_BV",
+      "denominator_mode",
+      "Bprocess_constant",
+      "hard_top_boundary",
+      "floors_profiles_stars",
+      "small_height",
+      "scale_one_count",
+      "error_sum",
+      "GAR_implication_scope",
+      "downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "critical_radial_terminal_transfer_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "target": "Construct the exact Mellin-separated primal antecedent, apply the terminal divisor theorem, transfer through the interior/top B-process, and prove the smooth critical radial GAR sector or isolate the first exact seam.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-critical-radial-terminal-return/derivation_packet.md",
+          "rounds/codex-managed/m9-m1-top-block-quadratic-divisor-completion/synthesis.md",
+          "rounds/codex-managed/m9-m1-dual-r2-recombination/synthesis.md",
+          "rounds/codex-managed/m9-m1-frequency-phase-diagram/reports/m1_terminal_arithmetic_attack.md",
+          "rounds/codex-managed/m9-top-endpoint-transform/reports/one_sided_poisson_derivation.md"
+        ],
+        "required_controls": [
+          "Mellin_normalization",
+          "terminal_support",
+          "frequency_BV",
+          "denominator_mode",
+          "Bprocess_constant",
+          "hard_top_boundary",
+          "floors_profiles_stars",
+          "small_height",
+          "scale_one_count",
+          "error_sum",
+          "GAR_implication_scope",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "seven-section report",
+          "exact sector identity and normalization",
+          "critical-sector theorem or first sharp obstruction"
+        ]
+      },
+      {
+        "id": "blind_critical_terminal_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "target": "Using only the Round-60 packet, independently test the support lemma, Mellin factorization, terminal bound, transform constant, errors, and exact logical scope.",
+        "context_files": [
+          "rounds/codex-managed/m9-m1-critical-radial-terminal-return/derivation_packet.md"
+        ],
+        "excluded_context": [
+          "proof graph",
+          "proof draft",
+          "prior reports and syntheses",
+          "other Round-60 reports"
+        ],
+        "required_controls": [
+          "Mellin_normalization",
+          "terminal_support",
+          "frequency_BV",
+          "denominator_mode",
+          "Bprocess_constant",
+          "hard_top_boundary",
+          "floors_profiles_stars",
+          "small_height",
+          "scale_one_count",
+          "error_sum",
+          "GAR_implication_scope",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "seven-section statement-only report",
+          "independent proof or no-go",
+          "isolation ledger"
+        ]
+      },
+      {
+        "id": "critical_terminal_transfer_hostile_audit",
+        "role": "seam_reviewer",
+        "access_mode": "selected_context",
+        "target": "Hostilely audit the common antecedent, Mellin signs and seminorms, support-to-terminal implication, hard-top one-sided boundary, transform errors, stars, one-count scale assembly, and whether the claimed GAR sector is genuinely new rather than circular.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-critical-radial-terminal-return/derivation_packet.md",
+          "rounds/codex-managed/m9-m1-top-block-quadratic-divisor-completion/synthesis.md",
+          "rounds/codex-managed/m9-m1-dual-r2-recombination/synthesis.md",
+          "rounds/codex-managed/m9-m1-frequency-phase-diagram/reports/m1_terminal_arithmetic_attack.md",
+          "rounds/codex-managed/m9-m1-dual-r2-recombination/reports/blind_rcs_coefficient_algebra.md"
+        ],
+        "required_controls": [
+          "Mellin_normalization",
+          "terminal_support",
+          "frequency_BV",
+          "denominator_mode",
+          "Bprocess_constant",
+          "hard_top_boundary",
+          "floors_profiles_stars",
+          "small_height",
+          "scale_one_count",
+          "error_sum",
+          "GAR_implication_scope",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "seven-section hostile report",
+          "exact counterexample or seam certification",
+          "recommended graph effect"
+        ]
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "support",
+        "requirement": "The physical support V(4Xh^2/(d^2Y)) must force h/H_j into a fixed compact subset of (0,infinity), with h<=H_j and all floor-small cases explicit."
+      },
+      {
+        "id": "Mellin",
+        "requirement": "Check Vhat(t)=integral V(z)z^(-it)dz/z and inversion V(z)=(2pi)^(-1)integral Vhat(t)z^(it)dt, producing (4X/Y)^(it)h^(2it)d^(-2it)."
+      },
+      {
+        "id": "terminal",
+        "requirement": "The t-mode frequency coefficient must have sup plus discrete variation O((1+|t|)/H_j); the spatial mode must satisfy the exact bounded-weight hypothesis."
+      },
+      {
+        "id": "transform",
+        "requirement": "The stationary substitution d=2sqrt(hX/q) must turn the Mellin mode into (hq/Y)^(it), with the -4/pi external constant, both signs, errors, and hard boundary owned once."
+      },
+      {
+        "id": "scope",
+        "requirement": "A critical radial sector theorem does not close lower n sectors, the alpha transition, full GAR, blockwise M9-M1, M9, or the exponent."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "f029f8b805e59fab88500cf2128e3128c2304409fdb87b83ea6b10143420a2c5",
+    "generated_at": "2026-08-13T20:23:08.506149+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

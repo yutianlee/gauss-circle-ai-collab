@@ -1,0 +1,140 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-beta-compact-support-radial-side-annihilation",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Compact beta support annihilates every transferred radial-side stratum",
+        "status": "proved_internal",
+        "statement_tex": "Fix the actual even mask psi in C_c^infinity(R), with psi=1 on [-B0,B0] and supp psi subset [-2B0,2B0]. On either reflected renormalized radial side Im(s)=plus or minus S and throughout |Im u|<=U, |Im v|<=V, beta=Im(s)-(Im u+Im v)/2 satisfies |beta|>=S-(U+V)/2. Hence if S>(U+V)/2+2B0, psi and all derivatives vanish on an open neighborhood of the full side product. Every one of the sixteen finite beta two-axis transfer strata is therefore identically zero: pure faces/axes/corner carry psi, connector faces/axes carry psi'/2, and the mixed product area carries psi''/4. Axis restrictions improve the separation; artificial and arithmetic collision equations lie outside the box. This is exact finite support separation and is scoped only to the beta-masked radial-side vector.",
+        "dependencies": [
+          "M9-M1-beta-finite-two-axis-product-Cauchy-Green",
+          "M9-M1-beta-finite-prelimit-axial-vector-ledger",
+          "M9-M1-beta-Cauchy-Green-connector-identity"
+        ],
+        "implies": [
+          "M9-M1-beta-axial-transfer-radial-side-exhaustion"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-axial-side-exhaustion/reports/blind_transferred_side_decay.md",
+            "rounds/codex-managed/m9-m1-beta-axial-side-exhaustion/reports/side_transfer_capacity_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-axial-side-exhaustion/reviews/conductor_mask_support_separation.md",
+            "rounds/codex-managed/m9-m1-beta-axial-side-exhaustion/reviews/conductor_support_cell_audit.md",
+            "rounds/codex-managed/m9-m1-beta-axial-side-exhaustion/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-axial-side-exhaustion/reports/arbitrary_m_side_transfer_attack.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use this exact-zero lemma only for the frozen compact beta branch and separated radial sides; do not apply it to endpoint/arithmetic physical modules or noncompact masks."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-beta-axial-transfer-radial-side-exhaustion",
+        "status": "proved_internal",
+        "statement_tex": "For the fixed compact beta mask, the complete sixteen-stratum two-axis transfer commutes with the accepted nested removal of renormalized radial sides. In fact, on Im(s)=plus or minus S, |beta|>=S-(U+V)/2, so for S>(U+V)/2+2B0 every mask, connector, axis, collision, mixed, and corner coefficient vanishes identically. Thus any M>=1 works; one explicit witness is M=1 and S=(2+X+U+V+2B0)^2. This assertion concerns only the beta-masked R_M radial sides and gives no endpoint/arithmetic physical-limit result.",
+        "dependencies_added": [
+          "M9-M1-beta-compact-support-radial-side-annihilation"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-axial-side-exhaustion/reports/blind_transferred_side_decay.md",
+            "rounds/codex-managed/m9-m1-beta-axial-side-exhaustion/reports/side_transfer_capacity_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-axial-side-exhaustion/reviews/conductor_global_order_scope.md",
+            "rounds/codex-managed/m9-m1-beta-axial-side-exhaustion/synthesis.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-axial-side-exhaustion/reports/arbitrary_m_side_transfer_attack.md"
+          ]
+        },
+        "blockers": [],
+        "reason_for_promotion": "The fixed compact beta mask is identically zero, together with all connector derivatives, on an open neighborhood of both separated radial-side products. Blind and hostile reports independently verify all sixteen strata, axes, collisions, the corner, and one explicit nesting law.",
+        "next_action": "Treat the radial-side commutator as closed in the compact beta branch; proceed to the separate endpoint/arithmetic physical-module commutator."
+      },
+      {
+        "id": "M9-M1-beta-axial-transfer-module-limit-commutation",
+        "status": "open",
+        "statement_tex": "The radial-side component is proved: compact beta support makes the complete transferred renormalized radial-side vector eventually identically zero. The sole remaining boundary-module interface is the symmetric physical endpoint and recombined R1 arithmetic package. Prove that the complete finite two-axis transfer commutes with those physical limits, or give exact finite replacement identities routing every face, connector, axis, mixed term, collision, and corner without loss or double counting. Closing that interface gives the unique post-module endpoint-free physical axial vector.",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-axial-side-exhaustion/reports/blind_transferred_side_decay.md",
+            "rounds/codex-managed/m9-m1-beta-axial-side-exhaustion/reports/side_transfer_capacity_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-axial-side-exhaustion/synthesis.md"
+          ]
+        },
+        "next_action": "Prove M9-M1-beta-axial-transfer-physical-module-commutation using one common finite endpoint/arithmetic representative and the symmetric physical limit."
+      },
+      {
+        "id": "M9-M1-beta-complete-axial-connector-ledger",
+        "status": "open",
+        "statement_tex": "The complete finite sixteen-stratum ledger, actual pre-limit application, and radial-side limit compatibility are proved. To obtain the unique post-module endpoint-free connector-completed axial vector, it remains only to commute the finite transfer with, or exactly route it through, the symmetric physical endpoint and recombined R1 arithmetic modules. Only after that interface closes may the physical axial vector be removed before local polar subtraction. No target-sized estimate is included.",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-axial-side-exhaustion/synthesis.md"
+          ]
+        },
+        "next_action": "Close the endpoint/arithmetic physical-module commutator; the radial-side commutator is solved by compact support."
+      },
+      {
+        "id": "M9-M1-beta-mask-endpoint-axial-compatibility",
+        "status": "open",
+        "statement_tex": "Global three-mask endpoint recombination, local common-ownership rho cancellation, the complete finite two-axis connector ledger, and radial-side transfer compatibility are exact. Full mask--endpoint--axial compatibility now requires only the transfer through the symmetric physical endpoint and recombined R1 arithmetic modules. After that interface closes, the finite complement has a unique endpoint-free physical limit. No residual terminal-symbol estimate is included.",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-axial-side-exhaustion/synthesis.md"
+          ]
+        },
+        "next_action": "Construct and control a common finite endpoint/R1-arithmetic representative under the complete transfer and physical limit."
+      },
+      {
+        "id": "M9-M1-beta-boundary-first-symbol-architecture",
+        "status": "proved_internal",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-axial-side-exhaustion/reviews/conductor_global_order_scope.md",
+            "rounds/codex-managed/m9-m1-beta-axial-side-exhaustion/synthesis.md"
+          ]
+        },
+        "next_action": "Use the accepted unmasked nested side removal globally; compact support guarantees that subsequent beta localization creates no missing radial-side image. Retain endpoint/arithmetic modules until their physical-limit transfer is proved."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round35-compact-beta-side-requires-arbitrary-M-decay",
+        "reason": "For S>(U+V)/2+2B0, the compact beta mask and all derivatives vanish identically on the radial-side product. Every transferred stratum is zero before any R_M estimate, so M=1 suffices."
+      },
+      {
+        "id": "Round35-support-separation-extends-to-noncompact-mask",
+        "reason": "Exact annihilation uses compact support. A merely decaying mask would require the unproved uniform derivative, residue, collision, and area estimates originally listed in the round brief."
+      },
+      {
+        "id": "Round35-radial-support-separation-proves-physical-module-commutation",
+        "reason": "Endpoint and R1 arithmetic physical modules are not radial-side-supported at Im(s)=plus or minus S; the beta support gap gives no control of their symmetric physical-profile limits."
+      },
+      {
+        "id": "Round35-zero-beta-side-means-all-hierarchical-sides-zero",
+        "reason": "Only the compact beta share vanishes by support. The complementary hierarchical masks need not vanish; their global sum is handled by the already accepted unmasked radial-side module."
+      }
+    ],
+    "no_change": [
+      {"id": "M9-M1-beta-axial-transfer-physical-module-commutation", "reason": "Round 35 is deliberately scoped to renormalized radial sides."},
+      {"id": "M9-M1", "reason": "The physical-module commutator, axial-subtracted symbol, beta transition, and residual M1 corridor remain open."},
+      {"id": "M9-M2", "reason": "Round 35 concerns only the M1 beta boundary architecture."},
+      {"id": "M9", "reason": "M9-M1 and M9-M2 remain open."},
+      {"id": "GC-target", "reason": "No unconditional Gauss-circle estimate is claimed."}
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 9,
+    "idea_quality_score": 10,
+    "state_evidence_score": 9,
+    "calibration_score": 10,
+    "reason": "Round 35 replaces a difficult uniform arbitrary-order side estimate with an exact compact-support separation, independently validated blindly and hostilely, and removes one of the two precise module-limit blockers without touching the remaining physical-module seam."
+  }
+}

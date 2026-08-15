@@ -1,0 +1,197 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-beta-physical-height-finite-section-BV",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Physical-height finite-section BV lemma",
+        "status": "proved_internal",
+        "statement_tex": "Let I_(U,V)(L)=[-V,V] intersect [L-U,L+U] and R(L)=int_(I_(U,V)(L)) K(L,nu)dnu on a signed saddle cell of L-length O(lambda). If |K(L,nu)| is at most M lambda^(-2)w(nu), |partial_L K(L,nu)| is at most M lambda^(-3)w(nu), and the same integrable weight controls the translated endpoint traces, with w in L1, then ||R||_infinity+Var_L R is O(M lambda^(-2)||w||_1), uniformly through all affine U,V faces. Fixed nu faces have zero velocity; moving nu=L plus or minus U faces are controlled by substitution. The lemma estimates translation and endpoint traces together and does not follow from termwise fixed-mu derivative bounds.",
+        "dependencies": [
+          "M9-M1-beta-finite-section-Plemelj-decomposition"
+        ],
+        "implies": [
+          "M9-M1-beta-regular-finite-part-symbol-BV"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-regular-finite-part-symbol-bv/reports/blind_complete_symbol_ledger.md",
+            "rounds/codex-managed/m9-m1-beta-regular-finite-part-symbol-bv/reports/regular_symbol_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-regular-finite-part-symbol-bv/reviews/conductor_separated_symbol_calculus.md",
+            "rounds/codex-managed/m9-m1-beta-regular-finite-part-symbol-bv/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-regular-finite-part-symbol-bv/reports/regular_symbol_bv_attack.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Write the complete omega-recombined physical-height kernel and prove the lemma's two weighted symbol hypotheses uniformly through axial, radial-side, and height-exhaustion seams."
+      },
+      {
+        "id": "M9-M1-beta-separated-R1-regular-symbol-BV",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Separated R1 regular finite-part BV and local q-minus-two",
+        "status": "proved_internal",
+        "statement_tex": "On either signed post-endpoint R1 saddle with |alpha| asymptotic to lambda, bounded beta, fixed b>0, and positive separation from rho=0, v=0, and finite transition endpoints, remove the explicit Plemelj delta and q^(-4) face-log terms. In physical height coordinates the exact remaining kernel K_R1(L,nu)=-i f_b(L)/[2A(A+i(L-nu)/2)]+[f_b(nu)-f_b(L)]/[(L-nu)(A+i(L-nu)/2)] satisfies |K_R1| at most C_b lambda^(-2)w_b(nu) and |partial_L K_R1| at most C_b lambda^(-3)w_b(nu) for an integrable weight. Hence its finite-section sup plus BV norm is O_b(lambda^(-2)); multiplying by the accepted numerator (D_j/q)lambda gives D_j/(q lambda)=D_j/(q^2 theta_j(x)). This excludes the artificial and axial seams, joint height exhaustion, connectors, radial sides, and complete sums.",
+        "dependencies": [
+          "M9-M1-beta-post-endpoint-signed-convolution-gain",
+          "M9-M1-beta-finite-section-Plemelj-decomposition",
+          "M9-M1-beta-R1-face-log-q4-bound",
+          "M9-M1-beta-physical-height-finite-section-BV"
+        ],
+        "implies": [
+          "M9-M1-beta-regular-finite-part-symbol-BV"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-regular-finite-part-symbol-bv/reports/regular_symbol_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-regular-finite-part-symbol-bv/reviews/conductor_separated_symbol_calculus.md",
+            "rounds/codex-managed/m9-m1-beta-regular-finite-part-symbol-bv/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-regular-finite-part-symbol-bv/reports/blind_complete_symbol_ledger.md",
+            "rounds/codex-managed/m9-m1-beta-regular-finite-part-symbol-bv/reports/regular_symbol_bv_attack.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use this only on separated fixed-b R1 patches; prove the common recombined kernel estimate before crossing rho=0 or exhausting heights."
+      },
+      {
+        "id": "M9-M1-beta-complete-physical-height-symbol-bound",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Complete recombined physical-height symbol bound",
+        "status": "open",
+        "statement_tex": "After forming omega G+(1-omega)R1-omega E1 with identical beta masks, finite U,V,S domains, endpoint conventions, radial ledgers, and one combined delta/log subtraction, write the regular kernel as K_complete(L,nu). Prove |K_complete(L,nu)| at most X^epsilon lambda^(-2)w_b(nu) and |partial_L K_complete(L,nu)| at most X^epsilon lambda^(-3)w_b(nu), including the exact inherited h,D_j,x monomial, for an integrable weight whose norm is polylogarithmic as b downarrow zero after the v=0 residue is extracted. Prove compatible translated endpoint traces, finite radial-side bounds, and joint U,V,S exhaustion. This implies the complete regular finite-part BV target by the physical-height finite-section lemma.",
+        "dependencies": [
+          "M9-M1-beta-hierarchical-radial-split-identity",
+          "M9-M1-beta-physical-height-finite-section-BV",
+          "M9-M1-beta-separated-R1-regular-symbol-BV"
+        ],
+        "implies": [
+          "M9-M1-beta-regular-finite-part-symbol-BV"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-regular-finite-part-symbol-bv/reports/blind_complete_symbol_ledger.md",
+            "rounds/codex-managed/m9-m1-beta-regular-finite-part-symbol-bv/reports/regular_symbol_bv_attack.md",
+            "rounds/codex-managed/m9-m1-beta-regular-finite-part-symbol-bv/reports/regular_symbol_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-regular-finite-part-symbol-bv/reviews/conductor_product_symbol_ledger.md",
+            "rounds/codex-managed/m9-m1-beta-regular-finite-part-symbol-bv/reviews/conductor_rho_taylor_ledger.md",
+            "rounds/codex-managed/m9-m1-beta-regular-finite-part-symbol-bv/synthesis.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Derive one exact common K_complete(L,nu) before splitting endpoints; audit its ordinary L derivative, axial residue, radial endpoint Taylor coefficients, and joint height tails."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-beta-hierarchical-radial-split-identity",
+        "statement_tex": "With the hierarchical partition 1=psi(beta)+(1-psi(beta))psi(alpha)+(1-psi(beta))(1-psi(alpha)), the beta branch owns the complete double-bounded box. Its internal split has cancelling psi'(alpha) edges and complementary A=0 weights summing to one. The finite displacement is first applied to G=E1+R1, whose apparent rho=0 residues cancel. After the same-mask E1 endpoint image is removed, R1=omega G+(1-omega)R1-omega E1. Under identical masks, domains, endpoints, and linear finite-section regularization, all first- and second-order cutoff derivative terms cancel because they are derivatives of G-E1-R1=0. The artificial residue, actual profiles, floors, stars, finite sides, and external normalization remain. This supplies no quantitative bound for the remaining ordinary complete-symbol derivatives.",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-regular-finite-part-symbol-bv/reports/blind_complete_symbol_ledger.md",
+            "rounds/codex-managed/m9-m1-beta-regular-finite-part-symbol-bv/reports/regular_symbol_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-regular-finite-part-symbol-bv/reviews/conductor_rho_taylor_ledger.md"
+          ]
+        },
+        "next_action": "Use identical ownership through the combined regularization so cutoff derivatives cancel. Prove ordinary derivatives of the resulting common physical-height kernel."
+      },
+      {
+        "id": "M9-M1-beta-regular-finite-part-symbol-BV",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M1-beta-physical-height-finite-section-BV",
+          "M9-M1-beta-separated-R1-regular-symbol-BV",
+          "M9-M1-beta-complete-physical-height-symbol-bound"
+        ],
+        "statement_tex": "After removing the combined explicit delta jumps and q^(-4) height-face logs, the separated fixed-b R1 regular kernel now has the target BV norm and local q^(-2) power. To prove the complete regular beta amplitude, first form one common physical-height kernel K_complete(L,nu) from omega G+(1-omega)R1-omega E1 with identical masks, finite domains, endpoints, profiles, floors, stars, connectors, radial sides, and residue ledger. Prove the weighted value and ordinary L-derivative estimates in M9-M1-beta-complete-physical-height-symbol-bound, including translated endpoint traces, the v=0 axial split, and joint U,V,S tails. Then apply the physical-height finite-section BV lemma and retain every inherited h,D_j,x and external normalization factor. Do not estimate fixed-mu product-rule derivatives independently.",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-regular-finite-part-symbol-bv/reports/regular_symbol_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-regular-finite-part-symbol-bv/reviews/conductor_separated_symbol_calculus.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-m1-beta-regular-finite-part-symbol-bv/reports/regular_symbol_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-regular-finite-part-symbol-bv/reports/blind_complete_symbol_ledger.md",
+            "rounds/codex-managed/m9-m1-beta-regular-finite-part-symbol-bv/reports/regular_symbol_bv_attack.md",
+            "rounds/codex-managed/m9-m1-beta-regular-finite-part-symbol-bv/synthesis.md"
+          ]
+        },
+        "next_action": "Prove M9-M1-beta-complete-physical-height-symbol-bound. The separated R1 derivative and omega cutoff seams are no longer the blockers."
+      },
+      {
+        "id": "M9-M1-beta-log-amplitude-two-saddle-kernel",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M1-beta-complete-physical-height-symbol-bound"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-regular-finite-part-symbol-bv/reports/regular_symbol_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-regular-finite-part-symbol-bv/synthesis.md"
+          ]
+        },
+        "next_action": "Close the common physical-height symbol and exhaustion bound, then apply the accepted ordinary and logarithmic Fresnel lemmas and execute all sums."
+      },
+      {
+        "id": "M9-M1-beta-transition-connector-reduction",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M1-beta-complete-physical-height-symbol-bound"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-regular-finite-part-symbol-bv/synthesis.md"
+          ]
+        },
+        "next_action": "Prove the complete physical-height symbol and joint height/radial-side exhaustion; then finish beta-branch sums."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round31-termwise-fixed-mu-product-rule-BV",
+        "reason": "For the actual height profile, the differentiated term f_b'(L-mu)/[mu(A+i mu/2)] has absolute mass asymptotic to lambda^(-1) on a legal saddle cell, one power above the target lambda^(-2). Translation and moving endpoint traces must be recombined in physical height coordinates before absolute estimates."
+      },
+      {
+        "id": "Round31-pointwise-q-minus-two-implies-BV",
+        "reason": "The smooth family H_T(L,nu)=M exp(iTL)nu retains pointwise size M while its regular finite-part variation is asymptotic to MT. A weighted ordinary derivative or BV hypothesis is essential."
+      },
+      {
+        "id": "Round31-omega-cutoff-derivative-is-the-first-obstruction",
+        "reason": "With identical masks, domains, endpoints, and linear regularization, omega-prime, omega-double-prime, and paired second-derivative terms cancel exactly as derivatives of G-E1-R1=0. The missing estimate concerns the ordinary derivative of the combined kernel."
+      },
+      {
+        "id": "Round31-fixed-b-separated-R1-tail-proves-complete-height-exhaustion",
+        "reason": "Cubic fixed-b transform decay controls only the separated R1 tail. It does not control the axial b=0 residue, G/E1 radial endpoint coefficients, finite radial sides, or coupled U,V,S exhaustion."
+      }
+    ],
+    "no_change": [
+      {"id": "M9-M1", "reason": "The complete beta symbol, axial and radial-side exhaustion, alpha branch, double-bounded share, and residual M1 corridor remain open."},
+      {"id": "M9-M2", "reason": "Round 31 concerns only the M1 beta transition."},
+      {"id": "M9", "reason": "M9-M1 and M9-M2 remain open."},
+      {"id": "GC-target", "reason": "No unconditional Gauss-circle estimate is claimed."}
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 8,
+    "idea_quality_score": 9,
+    "state_evidence_score": 9,
+    "calibration_score": 10,
+    "reason": "Round 31 rejects a false termwise derivative route, proves the correct physical-height finite-section BV lemma and the separated R1 q^(-2) application, and isolates the complete recombined symbol plus height exhaustion as the exact survivor."
+  }
+}

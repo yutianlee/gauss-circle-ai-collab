@@ -1,0 +1,29 @@
+status=diagnostic_only
+campaign_id=m9-weighted-mass-adjudication
+task_id=finite_mass_diagnostic
+graph_sha256=3c06ffad9c2847b329c57a8954d0758e443ee55be2da01c00ce5731bad3d6b5f
+python=3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]
+platform=Windows-11-10.0.26200-SP0
+integer_arithmetic=Python arbitrary-precision integers
+reciprocal_mass=exact integer numerator over lcm(odd h)^4
+decimal_precisions=(50, 80)
+decimal_transcendentals=dependency-free Machin pi and Taylor sin/cos
+scale=lower D=5 H=1 d_count=3 elapsed_seconds=0.001418
+scale=lower band=exact_N0 max_relative_50_vs_80=6.772210304800470148147450020442E-51
+scale=lower band=nonzero_le_1 max_relative_50_vs_80=0
+scale=lower band=nonzero_le_4 max_relative_50_vs_80=0
+scale=crossover D=11 H=2 d_count=6 elapsed_seconds=0.008747
+scale=crossover band=exact_N0 max_relative_50_vs_80=9.63294972454589228910498782772799619586137718552845623010854E-50
+scale=crossover band=nonzero_le_1 max_relative_50_vs_80=0
+scale=crossover band=nonzero_le_23 max_relative_50_vs_80=6.344143520443681465445374982764E-50
+scale=crossover band=nonzero_le_92 max_relative_50_vs_80=8.77941058033124356367698398710249404564712080576444872729516E-50
+scale=endpoint D=25 H=5 d_count=13 elapsed_seconds=0.829339
+scale=endpoint band=exact_N0 max_relative_50_vs_80=4.64290368845971783000514056961223871288002028122915549193340E-49
+scale=endpoint band=nonzero_le_1 max_relative_50_vs_80=9.13793099742933962368965174484E-53
+scale=endpoint band=nonzero_le_625 max_relative_50_vs_80=5.52968589573933283667267049981719371023723411214300567702612E-49
+scale=endpoint band=nonzero_le_2500 max_relative_50_vs_80=7.51712509999695881483562814705371376373502956883897166390454E-50
+pairing_precision_digits=70
+pairing_real_raw_minus_cosine_abs=5.366796064692602049236382387101784584192065642270321483030880328079851E-70
+pairing_complex_raw_minus_cosine_abs=1.170469991071962510910209827422862108882331051828184761466008267969075E-69
+pairing_complex_raw_minus_Re_abs=0.3700264517332543296161066625484458877176428969355085874132390980000787
+total_elapsed_seconds=0.936347

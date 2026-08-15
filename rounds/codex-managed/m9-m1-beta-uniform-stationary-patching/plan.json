@@ -1,0 +1,168 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 28,
+    "round_type": "beta_uniform_stationary_patching",
+    "campaign_id": "m9-m1-beta-uniform-stationary-patching",
+    "title": "Uniform beta saddle-transition patching and complete-sum test",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "literature_policy": "Use internal stationary-phase, Fresnel, Mellin, Hilbert-transform, and dyadic summation analysis. If a named uniform endpoint-stationary theorem is proposed, search its primary source and audit parameter-uniform hypotheses before relying on it."
+    },
+    "target_obligations": [
+      "M9-M1-beta-transition-connector-reduction",
+      "M9-M1-beta-post-endpoint-signed-convolution-gain",
+      "M9-M1-swept-transition-horizontal-operator"
+    ],
+    "frozen_target": {
+      "question": "Can the separated post-endpoint q^(-2) hard-top gain be extended uniformly through positive-alpha saddle entry and exit, nonstationary zones, and the exact artificial-rho recombination, and can the resulting actual-profile terms be summed over q, h, scales, radial endpoints, and finite sides at normalized O_epsilon(X^epsilon)?",
+      "reference_formula": "Start from R1=omega G+(1-omega)R1-omega E1, alpha_0=pi q sqrt(Xx)/D_j, and the physical top split (a+i mu)^(-1)=pi delta_0(mu)-i PV(1/mu). The accepted interior bound is (D_j/q) alpha_0 C_PV << D_j/(q alpha_0)=D_j/(q^2 theta_j(x)) only where the saddle is separated from entry, exit, and rho=0. Derive a uniform endpoint-stationary normal form rather than extending this estimate by assertion.",
+      "quantities": [
+        "exact finite alpha integration range and stationary point",
+        "entry and exit transition parameters and half-Fresnel terms",
+        "nonstationary positive- and negative-alpha zones",
+        "signed PV/delta convolution before absolute estimates",
+        "omega-G and omega-E1 artificial-pole seam",
+        "actual smooth interior and one-sided hard-top profiles",
+        "complete q, h, dyadic-scale, and radial sums",
+        "radial endpoints and finite outside u/v sides",
+        "normalized O_epsilon(X^epsilon) beta bound or sharp obstruction"
+      ]
+    },
+    "completion_criteria": [
+      "A uniform stationary/endpoint decomposition is stated with exact parameter ranges and errors.",
+      "The signed hard-top PV/delta order of limits is preserved through transitions.",
+      "The artificial-rho seam and double-bounded ownership are kept separate and ledger-safe.",
+      "All q, h, scale, radial, endpoint, and finite-side powers are summed, or the first quantitatively failing sector is isolated.",
+      "A statement-only derivation and hostile seam audit independently assess the key uniform lemma.",
+      "The conductor closes the round before choosing another objective."
+    ],
+    "controls": [
+      "signed-vs-unsigned",
+      "coefficient-adversary",
+      "support-and-degeneracy",
+      "exact-vs-near-resonance",
+      "residue-and-normalization",
+      "endpoint-uniformity"
+    ],
+    "tasks": [
+      {
+        "id": "blind_uniform_saddle_statement",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "target": "From the accepted Round-27 statement only, derive a uniform one-dimensional stationary/endpoint decomposition for the finite alpha integral, including entry, exit, nonstationary zones, half-Fresnel terms, exact errors, and the order of the signed PV/delta limit. Do not estimate the full dyadic sum.",
+        "context_files": [
+          "protocol.md",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-diagonal-transition-exhaustion/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-radial-pushforward-bv/synthesis.md"
+        ],
+        "excluded_context": [
+          "all other Round-28 reports",
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md"
+        ],
+        "required_controls": [
+          "support-and-degeneracy",
+          "residue-and-normalization",
+          "endpoint-uniformity"
+        ],
+        "required_output": [
+          "Exact uniform endpoint-stationary lemma or exact statement-level obstruction",
+          "Seven-section report at the assigned path"
+        ]
+      },
+      {
+        "id": "uniform_patching_sum_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "target": "Prove a uniform beta stationary-transition estimate preserving the accepted q^(-2) interior gain, then execute the complete actual-profile q, h, scale, radial, endpoint, and finite-side sums. If closure fails, isolate the smallest explicit kernel with its exact capacity.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-vector-hankel-kernel/synthesis.md",
+          "rounds/codex-managed/m9-m1-diagonal-transition-exhaustion/synthesis.md",
+          "rounds/codex-managed/m9-m1-radial-endpoint-renormalization/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-transition-connector/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-radial-pushforward-bv/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-radial-pushforward-bv/reports/pushforward_bv_hostile_audit.md"
+        ],
+        "required_controls": [
+          "signed-vs-unsigned",
+          "coefficient-adversary",
+          "support-and-degeneracy",
+          "exact-vs-near-resonance",
+          "residue-and-normalization",
+          "endpoint-uniformity"
+        ],
+        "required_output": [
+          "Uniform patching proof and complete sum, or the first exact quantitative survivor",
+          "Separate smooth-interior and hard-top verdicts",
+          "Seven-section report at the assigned path"
+        ]
+      },
+      {
+        "id": "transition_patching_hostile_audit",
+        "role": "seam_reviewer",
+        "access_mode": "selected_context",
+        "target": "Hostilely audit any uniform stationary-transition extension: endpoint coalescence, PV/delta interchange, b tending to zero, artificial-rho recombination, double-bounded ownership, all scale and height exponents, radial endpoints, and finite sides. Produce an actual-profile obstruction or certify the narrowest true uniform lemma.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-diagonal-transition-exhaustion/synthesis.md",
+          "rounds/codex-managed/m9-m1-radial-endpoint-renormalization/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-radial-pushforward-bv/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-radial-pushforward-bv/reports/blind_hierarchical_recombined_identity.md",
+          "rounds/codex-managed/m9-m1-beta-radial-pushforward-bv/reports/radial_pushforward_qbv_attack.md"
+        ],
+        "required_controls": [
+          "signed-vs-unsigned",
+          "coefficient-adversary",
+          "support-and-degeneracy",
+          "exact-vs-near-resonance",
+          "residue-and-normalization",
+          "endpoint-uniformity"
+        ],
+        "required_output": [
+          "Independent endpoint/PV/residue/power audit",
+          "Counterexample or scoped certification",
+          "Seven-section report at the assigned path"
+        ]
+      }
+    ],
+    "review_seams": [
+      "finite alpha support and stationary-point location",
+      "uniform entry/exit scaling and half-Fresnel normalization",
+      "PV/delta limit before absolute values",
+      "fixed-b estimates and b=1/log(2X) loss",
+      "artificial-rho omega recombination",
+      "double-bounded ownership",
+      "q/h/D_j/X/x exponent ledger",
+      "hard radial endpoints and one-sided top star",
+      "finite outside u/v sides",
+      "physical X^(1/4) normalization and target implication"
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "e2ee85737b2be860789ded13d5526e81239002ff9debb2fb8edcaf5b44644e3e",
+    "generated_at": "2026-08-13T06:26:54.947198+08:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  },
+  "closing_assessment": {
+    "decision": "promote_two_saddle_Fresnel_and_height_edge_obstruction",
+    "graph_mutation": true,
+    "main_result": "Both signed saddles have conditional uniform Fresnel transitions, but the finite-v moving top pole has a logarithmic edge. The oriented outside-v-side reconciliation is the next open kernel.",
+    "graph_sha256": "2a5a8ac3d40fc39cef58d677ee339ec474c3eb88ca1f4ab5755fec6b73c67a0c"
+  }
+}

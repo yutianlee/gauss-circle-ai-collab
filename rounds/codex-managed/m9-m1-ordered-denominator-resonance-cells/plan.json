@@ -1,0 +1,72 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 13,
+    "round_type": "ordered_denominator_mechanism_attack",
+    "campaign_id": "m9-m1-ordered-denominator-resonance-cells",
+    "title": "Exploit ordered odd-denominator resonance cells in M1",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "conductor_policy": {
+      "strategy_owner": "Codex conductor",
+      "subagents_may_start_next_round": false,
+      "monitoring": "Keep chi_4 inside the ordered denominator phase. Separate nonresonant and resonant increments with exact widths and total cell cost. Compare every claimed gain with U_1 and the accepted Poisson cone.",
+      "round_close": "Close after the exact two-step decomposition, a full exponent-capacity calculation, a hard-top control, and a hostile/source applicability verdict."
+    },
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 90,
+      "numerical_experimental_maximum_percent": 10,
+      "numerical_purpose": ["falsify a resonance-cell count or cancellation claim"],
+      "numerical_prohibition": "Finite resonance tables are diagnostic only.",
+      "literature_policy": "Use primary sources only and distinguish real reciprocal phases from modular inverses."
+    },
+    "target_obligations": [
+      "M9-M1-shifted-divisor-correlation-PSC",
+      "M9-M1-cross-product-odd-kernel-discrepancy",
+      "M9-M1",
+      "M9"
+    ],
+    "frozen_target": {
+      "block": "B_(1,L)(D;X)=sum_(h asymp L)u_(L,H)(h)sum_(d odd)chi_4(d)w_D(d)e(hX/d).",
+      "exact_identity": "chi_4(d)=-i e(d/4) for odd d and g_h(d+2)-g_h(d)=1/2-2hX/(d(d+2)).",
+      "success": "Prove a new subset of U_1, isolate a strictly smaller resonance-cell lemma, or prove equivalence/no capacity relative to the accepted M1 transform."
+    },
+    "tasks": [
+      {
+        "id": "blind_two_step_resonance_decomposition",
+        "role": "statement_only_exact_deriver",
+        "brief": "rounds/codex-managed/m9-m1-ordered-denominator-resonance-cells/briefs/blind_two_step_resonance_decomposition.md"
+      },
+      {
+        "id": "ordered_cell_cancellation_attack",
+        "role": "analytic_mechanism_attacker",
+        "brief": "rounds/codex-managed/m9-m1-ordered-denominator-resonance-cells/briefs/ordered_cell_cancellation_attack.md"
+      },
+      {
+        "id": "resonance_cell_literature_hostile_audit",
+        "role": "primary_source_and_hostile_reviewer",
+        "brief": "rounds/codex-managed/m9-m1-ordered-denominator-resonance-cells/briefs/resonance_cell_literature_hostile_audit.md"
+      }
+    ],
+    "exit_gates": [
+      "exact odd-denominator two-step identity",
+      "resonant and nonresonant cell accounting",
+      "full U_1 exponent comparison",
+      "hard-top and exact-square controls",
+      "primary-source applicability audit",
+      "conductor graph decision"
+    ],
+    "promotion_policy": "A resonance decomposition promotes only if its summed cell bounds improve the accepted phase diagram or establish a rigorous scoped no-go."
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "beb0966bb239cd503dd4edde9ac6949bce5e75077d1dbd038043ee3c08972485",
+    "generated_at": "2026-08-12T17:05:03+08:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

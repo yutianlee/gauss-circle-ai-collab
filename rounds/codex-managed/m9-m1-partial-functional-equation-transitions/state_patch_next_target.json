@@ -1,0 +1,74 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-beta-transition-connector-reduction",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Connector-completed beta-transition reduction",
+        "status": "open",
+        "statement_tex": "Fix an even smooth mask psi with psi(beta)=1 for |beta|<=B and psi(beta)=0 for |beta|>=2B. In A=s-z/2, B_+=s+z/2=A+z coordinates, shift the finite beta-bounded character-high trace from its original A-line to Re A=-kappa with 0<kappa<Re z. Derive the exact Cauchy-Pompeiu identity including the psi'(Im A) area connector, finite outside sides, and the crossed A=0 pole reconciled exactly with the accepted R_1 residue. Then return the shifted line plus connector to a physical mask-convolved chi_4 kernel coupled to the actual radial and symmetric top-Hilbert profiles, and prove a normalized O_epsilon(X^epsilon) estimate or a rigorous capacity/resonance obstruction.",
+        "dependencies": [
+          "M9-M1-partial-functional-equation-transition-reduction",
+          "M9-M1-finite-vector-Hankel-identity",
+          "M9-M1-diagonal-single-transition-normal-form",
+          "M9-M1-R1-arithmetic-residue"
+        ],
+        "implies": [
+          "M9-M1-swept-transition-horizontal-operator"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-partial-functional-equation-transitions/synthesis.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Freeze one mask and finite box, derive the connector identity independently, then test the full mask-convolved physical character kernel rather than the rejected pure sine coefficientwise Abel shortcut."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-swept-transition-horizontal-operator",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M1-beta-transition-connector-reduction"
+        ],
+        "next_action": "Resolve the connector-completed beta transition before returning to the alpha-bounded zeta-high trace."
+      },
+      {
+        "id": "M9-M1-renormalized-radial-boundary-operator",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M1-beta-transition-connector-reduction"
+        ],
+        "next_action": "Use the connector-completed beta reduction without reopening the target-safe endpoint and R1 packages."
+      }
+    ],
+    "reject": [],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "The new connector target is unproved and the residual direct M1 corridor remains open."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "The candidate concerns only the transformed M1 beta transition."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1 and M9-M2 remain open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "No target estimate is claimed."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "reason": "Round 25 isolates a precise connector-completed beta-transition candidate for the next reasoning round without claiming its estimate."
+  }
+}

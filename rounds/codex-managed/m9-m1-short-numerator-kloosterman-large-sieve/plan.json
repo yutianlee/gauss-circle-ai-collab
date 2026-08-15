@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "round_index": 71,
+  "round_type": "short_numerator_kloosterman_large_sieve",
+  "campaign_id": "m9-m1-short-numerator-kloosterman-large-sieve",
+  "title": "Joint large sieve for the incomplete Kloosterman numerator",
+  "status": "complete",
+  "max_concurrency": 3,
+  "coordinator": "Codex",
+  "starting_graph_sha256": "3c8b13fe5e3dc872823d8d926f497561ca3fff6b63aa53970e6c7a308739f4b9",
+  "resource_policy": {
+    "analytical_algebraic_minimum_percent": 80,
+    "numerical_experimental_maximum_percent": 20,
+    "literature_policy": "Audit primary spectral-large-sieve, incomplete-Kloosterman, bilinear Kloosterman-fraction, and delta/Kuznetsov theorems before import."
+  },
+  "target_obligations": [
+    "M9-M1-product-wavelet-short-numerator-Kloosterman-reduction",
+    "M9-M1-direct-product-wavelet-self-return",
+    "M9-M1-global-angular-radial-estimate"
+  ],
+  "frozen_target": {
+    "question": "Can the exact conductor-scale incomplete-numerator Kloosterman family be bounded strongly enough to prove the J^(1/2) fixed-centre product-wavelet estimate, or does a diagonal, axial, or theorem-hypothesis obstruction isolate a smaller survivor?",
+    "reference_formula": "For J=X^(1/2), Q=X^(1/5), T=J/Q, and T<=C<=J, normalize S_C=sum_(c asymp C) sum_(b<<c/T,(b,c)=1) sum_(rho,sigma) alpha_(c,b)(rho,sigma;X) e_c(+-bN+lambda_c rho sigma bbar), including even-modulus variants and axial modes, and prove an aggregate saving T/J^(1/2)=X^(1/20).",
+    "quantities": [
+      "J=X^(1/2), Q=X^(1/5), T=X^(3/10)",
+      "T<=C<=J and A_c=c/T<sqrt(c)",
+      "lambda_c=(c^2-1)/4 for odd c",
+      "all actual weights, local factors, gcds, axial modes, and dual lengths retained"
+    ]
+  },
+  "completion_criteria": [
+    "Derive the exact dyadic formula and every prefactor from the accepted finite delta representative.",
+    "State a normalized joint inequality and prove that it is sufficient after all sums.",
+    "Prove it, give an actual-symbol counterexample, or isolate a strictly narrower obstruction.",
+    "Audit axial modes, gcds, even moduli, completion frequencies, and primary-source hypotheses.",
+    "Complete clean blind and hostile/source gates.",
+    "Do not promote a full cone or exponent from a fixed-interior estimate."
+  ],
+  "controls": [
+    "dyadic_normalization",
+    "actual_weights",
+    "modulus_and_numerator_ranges",
+    "dual_lengths",
+    "local_factors",
+    "zero_and_axial_modes",
+    "gcds",
+    "dispersion_diagonal",
+    "completion_cost",
+    "source_applicability",
+    "benchmark_power",
+    "downstream_scope"
+  ],
+  "tasks": [
+    {
+      "id": "short_numerator_dispersion_attack",
+      "role": "discovery",
+      "access_mode": "selected_context",
+      "status": "terminated_after_analytic_interim_no_report",
+      "target": "Derive the exact dyadic conductor contribution and prove the X^(1/20) aggregate saving by dispersion, reciprocity, completion-after-averaging, or a genuinely joint large sieve; otherwise prove a sharp capacity no-go and isolate the first new inequality.",
+      "context_files": [
+        "protocol.md",
+        "state/proof_obligations.yml",
+        "state/active_campaign.yml",
+        "rounds/codex-managed/m9-m1-short-numerator-kloosterman-large-sieve/briefs/short_numerator_dispersion_attack.md",
+        "rounds/codex-managed/m9-m1-short-numerator-kloosterman-large-sieve/derivation_packet.md",
+        "rounds/codex-managed/m9-m1-near-product-delta-salie/synthesis.md",
+        "rounds/codex-managed/m9-m1-near-product-delta-salie/reviews/conductor_delta_salie_adjudication.md",
+        "rounds/codex-managed/m9-m1-near-product-delta-salie/reports/delta_salie_transform_attack.md",
+        "rounds/codex-managed/m9-m1-near-product-delta-salie/reports/delta_kuznetsov_source_hostile_audit.md"
+      ],
+      "required_controls": [
+        "dyadic_normalization",
+        "actual_weights",
+        "modulus_and_numerator_ranges",
+        "dual_lengths",
+        "local_factors",
+        "zero_and_axial_modes",
+        "gcds",
+        "dispersion_diagonal",
+        "completion_cost",
+        "benchmark_power",
+        "downstream_scope"
+      ],
+      "required_output": [
+        "rounds/codex-managed/m9-m1-short-numerator-kloosterman-large-sieve/reports/short_numerator_dispersion_attack.md"
+      ]
+    },
+    {
+      "id": "blind_short_numerator_large_sieve",
+      "role": "blind_rederiver",
+      "access_mode": "statement_only",
+      "status": "complete_clean_with_post_isolation_seam_pass",
+      "target": "Independently derive the weakest sufficient dyadic large-sieve statement from the frozen packet, test every power and diagonal, and prove it or give a rigorous packet-level no-go without inventing missing weights.",
+      "context_files": [
+        "rounds/codex-managed/m9-m1-short-numerator-kloosterman-large-sieve/briefs/blind_short_numerator_large_sieve.md",
+        "rounds/codex-managed/m9-m1-short-numerator-kloosterman-large-sieve/derivation_packet.md"
+      ],
+      "excluded_context": [
+        "state/proof_obligations.yml",
+        "state/best_proof_draft.md",
+        "all prior and sibling reports",
+        "all source cards and web literature"
+      ],
+      "required_controls": [
+        "dyadic_normalization",
+        "actual_weights",
+        "modulus_and_numerator_ranges",
+        "dual_lengths",
+        "local_factors",
+        "zero_and_axial_modes",
+        "gcds",
+        "dispersion_diagonal",
+        "completion_cost",
+        "benchmark_power",
+        "downstream_scope"
+      ],
+      "required_output": [
+        "rounds/codex-managed/m9-m1-short-numerator-kloosterman-large-sieve/reports/blind_short_numerator_large_sieve.md"
+      ]
+    },
+    {
+      "id": "short_numerator_source_hostile_audit",
+      "role": "source_auditor",
+      "access_mode": "selected_context",
+      "status": "complete_clean_source_and_seam_audit",
+      "target": "Reconstruct the normalized family, search for diagonal, axial, gcd, and resonance obstructions, and audit exact applicability of primary spectral-large-sieve, incomplete-Kloosterman, bilinear-fraction, and Kuznetsov theorems.",
+      "context_files": [
+        "protocol.md",
+        "state/proof_obligations.yml",
+        "state/active_campaign.yml",
+        "rounds/codex-managed/m9-m1-short-numerator-kloosterman-large-sieve/briefs/short_numerator_source_hostile_audit.md",
+        "rounds/codex-managed/m9-m1-short-numerator-kloosterman-large-sieve/derivation_packet.md",
+        "rounds/codex-managed/m9-m1-near-product-delta-salie/synthesis.md",
+        "rounds/codex-managed/m9-m1-near-product-delta-salie/reviews/conductor_delta_salie_adjudication.md",
+        "rounds/codex-managed/m9-m1-near-product-delta-salie/reports/delta_kuznetsov_source_hostile_audit.md"
+      ],
+      "required_controls": [
+        "dyadic_normalization",
+        "actual_weights",
+        "modulus_and_numerator_ranges",
+        "dual_lengths",
+        "local_factors",
+        "zero_and_axial_modes",
+        "gcds",
+        "dispersion_diagonal",
+        "completion_cost",
+        "source_applicability",
+        "benchmark_power",
+        "downstream_scope"
+      ],
+      "required_output": [
+        "rounds/codex-managed/m9-m1-short-numerator-kloosterman-large-sieve/reports/short_numerator_source_hostile_audit.md"
+      ]
+    }
+  ],
+  "review_seams": [
+    "normalization and exact common antecedent",
+    "short numerator versus complete residue systems",
+    "dual lengths, diagonal, axial modes, and gcds",
+    "spectral and bilinear source hypotheses",
+    "benchmark X^(1/20) power and downstream scope"
+  ],
+  "closing_decision": "Promote the exact order-J Farey stationary bound through C=J^(2/3) and the scoped upper-conductor B-process self-return; retain the upper conductor, full wavelet, M9-M1, and exponent open.",
+  "resulting_graph_sha256": "1e2876b1d8d60cdf1bd057684a9ac65c1f56f4f2e8aa5d90063fa13b37fc8eda"
+}

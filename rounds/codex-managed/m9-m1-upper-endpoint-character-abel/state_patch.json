@@ -1,0 +1,121 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-upper-endpoint-character-Abel",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Fixed-scale character-Abel bound for the physical upper endpoint",
+        "status": "proved_internal",
+        "statement_tex": "Let Q_j(h)=Xh/D_j^2 and let a_(j,h)(q)=q^(-3/4)W(2sqrt(Q_j(h)/q)) times the actual top one-jump star when j=0 and the product-prefix star at hq=N_X. For every active D_j=2^(-j)floor(sqrt X) and 1<=h<=H_j=floor(D_jX^(-1/4)), one has ||a_(j,h)||_infinity+sum_q|a_(j,h)(q+1)-a_(j,h)(q)| <<_W Q_j(h)^(-3/4). Since sup_T|sum_(q<=T)chi_4(q)|<=1, discrete Abel summation gives sum_q chi_4(q)a_(j,h)(q)<<_W Q_j(h)^(-3/4). The product cutoff is automatic on profile support apart from its half tie. This statement is for the accepted physical symmetric-profile limit, not arbitrary finite top Mellin truncations.",
+        "dependencies": [
+          "M9-M1-endpoint-Cauchy-reduction",
+          "M9-M1-global-angular-recombination",
+          "M9-M1-direct-profile-kernel-pointwise-bound"
+        ],
+        "implies": [
+          "M9-M1-upper-radial-endpoint-prefix"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-upper-endpoint-character-abel/reports/blind_upper_endpoint_abel.md",
+            "rounds/codex-managed/m9-m1-upper-endpoint-character-abel/reports/fixed_scale_q_bv_proof.md",
+            "rounds/codex-managed/m9-m1-upper-endpoint-character-abel/reports/upper_endpoint_abel_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-upper-endpoint-character-abel/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use only after the accepted physical profile limit; do not infer uniform sampled BV for a finite top Mellin truncation."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-upper-radial-endpoint-prefix",
+        "status": "proved_internal",
+        "reason_for_promotion": "Three independent Round-23 derivations prove uniform fixed-scale sampled BV, period-four chi_4 Abel cancellation, the full height/scale sum, and the correct physical normalization with all top, product, star, and floor seams retained.",
+        "dependencies_added": [
+          "M9-M1-upper-endpoint-character-Abel"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-upper-endpoint-character-abel/reports/blind_upper_endpoint_abel.md",
+            "rounds/codex-managed/m9-m1-upper-endpoint-character-abel/reports/fixed_scale_q_bv_proof.md",
+            "rounds/codex-managed/m9-m1-upper-endpoint-character-abel/reports/upper_endpoint_abel_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-upper-endpoint-character-abel/synthesis.md"
+          ]
+        },
+        "statement_tex": "In the accepted physical symmetric-profile limit, with N_X=floor(16sqrt X), every actual dyadic scale D_j=2^(-j)floor(sqrt X), height H_j=floor(D_jX^(-1/4)), Vaaler factor, hard-top star, and product half tie retained, one has sum_(hq<=N_X)^* chi_4(q)(hq)^(-3/4)H^prof_(infinity,X)(h,q)<<_W 1. After restoring the external active-M1 factor, the upper radial endpoint is O_W(X^(1/4)). The proof is fixed-scale Abel summation in q and does not assert a uniform finite-top-Mellin-truncation bound.",
+        "next_action": "Treat the physical upper endpoint as target-safe. Keep finite top Mellin truncations outside this lemma and attack the recombined R_1 arithmetic residue and diagonal transition traces separately."
+      },
+      {
+        "id": "M9-M1-endpoint-boundary-operator",
+        "status": "open",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-upper-endpoint-character-abel/synthesis.md"
+          ]
+        },
+        "statement_tex": "For M=1, finite Cauchy algebra returns the terminal-plus-side endpoint operator to original-sector right-line Perron prefixes minus the arithmetic and artificial residue shares. Both physical radial prefixes are now target-safe: the lower by the direct profile bound and the upper by fixed-scale chi_4 Abel summation. The arithmetic ledger still recombines to R^ar[R_1], and the two diagonal transition traces remain separate and open; control these before declaring the full endpoint/vector operator closed.",
+        "next_action": "Derive and estimate the recombined R_1 arithmetic residue in exact physical profile variables, keeping both diagonal transition traces separate."
+      },
+      {
+        "id": "M9-M1-renormalized-radial-boundary-operator",
+        "status": "open",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-upper-endpoint-character-abel/synthesis.md"
+          ]
+        },
+        "statement_tex": "The renormalized radial sides are removed, the endpoint boundary has an exact finite Cauchy return, and both physical radial endpoints are target-safe. The unresolved package is the recombined R_1 arithmetic residue together with both diagonal single-transition traces and their outside-height limits.",
+        "next_action": "Attack the exact R_1 arithmetic residue first, then determine whether the remaining two transition traces form a target-sized vector-Hilbert operator."
+      },
+      {
+        "id": "M9-M1-swept-transition-horizontal-operator",
+        "status": "open",
+        "next_action": "Separate and estimate the recombined R_1 arithmetic residue, then return to the two diagonal transition traces; both physical radial endpoint prefixes are already target-safe."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round23-character-Abel-uniform-for-finite-top-Mellin-height",
+        "reason": "At finite top Mellin height the inverse top profile has noncompact Perron tails, and no uniform sampled-q BV bound for that intermediate kernel has been proved. The accepted lemma begins after the physical symmetric-profile limit."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1-post-FE-vector-kernel",
+        "reason": "The recombined R_1 arithmetic residue and both diagonal transition traces remain open."
+      },
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "reason": "The endpoint estimate removes the n-dependent GAR phase and does not prove GAR."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "A boundary component is closed, but the residual M1 corridor and transformed vector package remain open."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Round 23 concerns a transformed M1 endpoint."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1 and M9-M2 remain open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "No unconditional Gauss-circle target estimate is claimed."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 8,
+    "idea_quality_score": 9,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 23 converts the upper endpoint's X^(3/8) absolute capacity into a target-sized O(X^(1/4)) physical bound by an exact chi_4-sensitive fixed-scale Abel argument, independently rederived and hostile-audited without changing the still-open interior/vector problem."
+  }
+}

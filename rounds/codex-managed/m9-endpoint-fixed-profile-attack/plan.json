@@ -1,0 +1,144 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 6,
+    "round_type": "endpoint_mechanism_attack",
+    "campaign_id": "m9-endpoint-fixed-profile-attack",
+    "title": "Attack the balanced endpoint with the actual fixed profiles",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "conductor_policy": {
+      "strategy_owner": "Codex conductor",
+      "subagents_may_start_next_round": false,
+      "monitoring": "Conductor checks exact profile normalization, both frequency signs, endpoint constants, stationary errors, character retention, and proves-too-much controls.",
+      "round_close": "Close with a proved endpoint edge, a rigorously smaller endpoint subregion, or an exact obstruction plus the weakest surviving signed lemma."
+    },
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 80,
+      "numerical_experimental_maximum_percent": 20,
+      "numerical_purpose": [
+        "falsify a precise endpoint cancellation claim",
+        "identify an exact arithmetic transition for proof"
+      ],
+      "numerical_prohibition": "Finite endpoint samples cannot promote an asymptotic estimate.",
+      "available_local_tools": ["Python", "Mathematica"],
+      "literature_policy": "Use primary sources only for endpoint reciprocal sums, bilinear square-root sums, or large-sieve inputs."
+    },
+    "target_obligations": [
+      "M9-M2",
+      "M9-endpoint-uniformity",
+      "M9-M2-dyadic-weight-nondegeneracy",
+      "M9-M2-two-shift-sine-kernel-sharpness",
+      "M9-M2-smooth-dual-three-quarter-equivalence",
+      "M9-M2-dual-square-root-spacing-mean-square"
+    ],
+    "frozen_target": {
+      "endpoint": "D asymp X^(1/2), 1<=L<=X^(1/4), excluding the already solved L=1 and L asymp X^(1/4) endpoints.",
+      "original_target": "|B_L(D;X)|<<X^(1/4+epsilon) for the actual fixed normalized-BV denominator profile.",
+      "sine_kernel": "B_L=4 sum_d w_D(d)chi_4(r_d) sum_(h>0 odd) a_h sin(pi h(X-dr_d)/(2d)).",
+      "dual_target": "At D=X^(1/2), K=XL/D^2 asymp L and M=LK asymp L^2; prove T_(L,L)<<L^(3/2)X^epsilon for the actual chi_4(h) symbol.",
+      "forbidden_conflations": [
+        "arbitrary bounded weights with the prescribed fixed profile",
+        "positive frequencies with the full two-sided sine kernel",
+        "unweighted square-root sums with localized divisor coefficients",
+        "a Cauchy mean square with the weaker signed target",
+        "perfect-square model X with uniform real X"
+      ]
+    },
+    "tasks": [
+      {
+        "id": "dyadic_profile_certificate",
+        "role": "normalization_builder",
+        "access_mode": "selected_context",
+        "target": "Write an explicit smooth dyadic partition and endpoint truncation or merging rule for the actual d-sum. Prove uniform discrete BV for every block, sampled l1 nondegeneracy wherever W-1 is invoked, and compatibility with smooth Poisson. State exactly which existing conditional results become unconditional for this chosen decomposition.",
+        "context_files": [
+          "state/best_proof_draft.md",
+          "state/proof_obligations.yml",
+          "rounds/codex-managed/m9-unit-frequency-w1-validation/reports/h4_weight_normalization_review.md",
+          "rounds/codex-managed/m9-frequency-phase-diagram/synthesis.md"
+        ],
+        "required_controls": [
+          "endpoint-truncation",
+          "partition-of-unity",
+          "uniform-BV",
+          "sampled-l1"
+        ],
+        "required_output": [
+          "explicit profiles",
+          "proof of every norm",
+          "transfer table",
+          "first remaining seam"
+        ]
+      },
+      {
+        "id": "endpoint_sine_kernel_attack",
+        "role": "direct_endpoint_attacker",
+        "access_mode": "selected_context",
+        "target": "Attack the full endpoint interval through the exact two-sided sine kernel for one prescribed fixed smooth profile. Use the nearest-odd product geometry, quadratic endpoint expansion, or exact summation. Either prove X^(1/4+epsilon) on a nontrivial L-range or construct a fixed-profile coherent obstruction. Check X=4N^2 only as a hostile model and then return to uniform real X.",
+        "context_files": [
+          "state/best_proof_draft.md",
+          "rounds/codex-managed/m9-frequency-phase-diagram/reports/hybrid_corridor_hostile.md",
+          "state/control_models.md"
+        ],
+        "required_controls": [
+          "both-frequency-signs",
+          "actual-Phi-amplitude",
+          "fixed-profile-not-adversarial",
+          "uniform-real-X",
+          "endpoint-support"
+        ],
+        "required_output": [
+          "proved endpoint range or obstruction",
+          "exact kernel estimate",
+          "special-X audit",
+          "smallest surviving lemma"
+        ]
+      },
+      {
+        "id": "endpoint_dual_signed_attack",
+        "role": "dual_endpoint_attacker",
+        "access_mode": "selected_context_and_primary_sources",
+        "target": "At K asymp L, attack T=sum_(h,k asymp L) chi_4(h)a(h,k)e(sqrt(Xhk)) at the L^(3/2) target. Preserve chi_4 before Cauchy, analyze product multiplicities and square-root spacing, and audit any primary theorem exactly. Prove a nontrivial L-range, derive a sharp obstruction, or isolate a strictly weaker signed lemma than the character-erasing mean square.",
+        "context_files": [
+          "rounds/codex-managed/m9-frequency-phase-diagram/reports/dual_three_quarter_attack.md",
+          "rounds/codex-managed/m9-frequency-phase-diagram/synthesis.md",
+          "sources/li_yang_2023.md",
+          "sources/tao_trudgian_yang_2025.md"
+        ],
+        "required_controls": [
+          "signed-vs-unsigned",
+          "diagonal-and-square-products",
+          "source-applicability",
+          "proves-too-much",
+          "balanced-endpoint"
+        ],
+        "required_output": [
+          "best proved bound",
+          "target comparison",
+          "arithmetic obstruction or mechanism",
+          "primary citations",
+          "first unproved step"
+        ]
+      }
+    ],
+    "completion_criteria": [
+      "The actual dyadic and endpoint profile norms are explicit.",
+      "The balanced endpoint is attacked independently in original and dual coordinates.",
+      "Every claimed saving retains the actual character or states where it is lost.",
+      "Special square X and general real X are not conflated.",
+      "No global M2 promotion occurs unless every endpoint L-block is covered."
+    ],
+    "promotion_policy": "Round 6 may promote explicit profile infrastructure, scoped endpoint ranges, exact endpoint identities, or no-go obstructions. It may promote endpoint uniformity only if all 1<=L<=X^(1/4) blocks are proved with the actual profiles."
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "90f44e99047eff10b620228e8480a88984f9dbbca4445bb8921667d9d3575031",
+    "generated_at": "2026-08-12T00:00:00+08:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

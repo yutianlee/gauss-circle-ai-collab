@@ -1,0 +1,18 @@
+{
+  "campaign_id": "m9-m1-alpha-bounded-zeta-high-transition",
+  "round_index": 49,
+  "promotion_status": "scoped_reduction_promoted_alpha_bound_open",
+  "gates": [
+    {"gate": "clean_statement_only_rederivation", "status": "green", "evidence": "reports/blind_alpha_kernel_rederivation.md"},
+    {"gate": "independent_hostile_audit", "status": "green", "evidence": "reports/alpha_trace_hostile_audit.md"},
+    {"gate": "discovery_isolation", "status": "amber", "evidence": "reports/alpha_physical_kernel_attack.md is explicitly non-isolated candidate evidence"},
+    {"gate": "distribution_identity_and_residue_sign", "status": "green", "evidence": "hostile report and conductor distribution review"},
+    {"gate": "mask_connector_derivatives", "status": "green", "evidence": "hostile report equations (49.4)-(49.5)"},
+    {"gate": "zero_alpha_A0_ownership", "status": "green", "evidence": "Theta_alpha and its connector derivatives vanish at beta=0"},
+    {"gate": "actual_profile_unmasked_GAR_identification", "status": "amber", "evidence": "one non-isolated claimant plus graph-consistency audit; not promoted"},
+    {"gate": "integer_cosine_and_radial_controls", "status": "green", "evidence": "clean blind derivation and hostile audit"},
+    {"gate": "target_alpha_estimate", "status": "open", "evidence": "positive height and X^(1/8) absolute capacities remain"},
+    {"gate": "downstream_scope", "status": "green", "evidence": "no wrapper or theorem promotion"},
+    {"gate": "resource_policy", "status": "green", "evidence": "100 percent analytical/algebraic; no numerics or external theorem"}
+  ]
+}

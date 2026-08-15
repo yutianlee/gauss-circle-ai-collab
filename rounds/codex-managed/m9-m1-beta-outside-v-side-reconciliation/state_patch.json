@@ -1,0 +1,190 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-beta-finite-box-Plemelj-limit",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Finite-box signed hard-top Plemelj limit",
+        "status": "proved_internal",
+        "statement_tex": "Let U,V>0 and F be C^1 on [-U,U]x[-V,V]. Then int_(-V)^V int_(-U)^U F(mu,nu)/(a+i mu) dmu dnu has, as a tends to zero from above, the limit pi int_(-V)^V F(0,nu)dnu - i int_(-V)^V PV int_(-U)^U F(mu,nu)/mu dmu dnu. Under L=mu+nu the exact section is I_(U,V)(L)=[-V,V] intersect [L-U,L+U], and the resulting fixed-L kernel has only locally L^p logarithmic singularities at L=plus or minus V for every finite p. This is a signed finite-box lemma: taking absolute values first costs log(1/a), and it supplies no arithmetic or full-sum estimate.",
+        "dependencies": [
+          "M9-M1-finite-vector-Hankel-identity",
+          "M9-M1-beta-hierarchical-radial-split-identity"
+        ],
+        "implies": [
+          "M9-M1-beta-outside-v-side-reconciliation",
+          "M9-M1-beta-log-amplitude-two-saddle-kernel"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-outside-v-side-reconciliation/reports/outside_v_cancellation_attack.md",
+            "rounds/codex-managed/m9-m1-beta-outside-v-side-reconciliation/reports/outside_v_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-outside-v-side-reconciliation/reviews/conductor_finite_section_analysis.md",
+            "rounds/codex-managed/m9-m1-beta-outside-v-side-reconciliation/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use the distributional limit before stationary phase or absolute values; retain the exact finite polytope and prove a logarithmic-amplitude two-saddle estimate."
+      },
+      {
+        "id": "M9-M1-beta-log-amplitude-two-saddle-kernel",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Distribution-first logarithmic-amplitude two-saddle beta kernel",
+        "status": "open",
+        "statement_tex": "After applying the finite-box Plemelj limit in the original top variable mu, estimate the exact beta-transition integral over the polytope |nu|<=V, |L-nu|<=U, |alpha+beta|<=2S. Its L-amplitude is the delta trace plus a finite-section PV integral with logarithmic singularities at L=plus or minus V. Prove a uniform two-saddle stationary bound through saddle-face and endpoint coalescence with at most polylogarithmic loss, retain the local post-endpoint q^(-2) power, and then control the U,V tails and every q,h,scale,radial, profile, floor, star, connector, and residue term needed for normalized O_epsilon(X^epsilon). Ordinary pointwise scaled C^2 is not assumed at the moving faces.",
+        "dependencies": [
+          "M9-M1-beta-finite-box-Plemelj-limit",
+          "M9-M1-beta-two-saddle-Fresnel-normal-form",
+          "M9-M1-beta-post-endpoint-signed-convolution-gain",
+          "M9-M1-beta-hierarchical-radial-split-identity",
+          "M9-M1-beta-outside-v-side-reconciliation"
+        ],
+        "implies": [
+          "M9-M1-beta-transition-connector-reduction"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-outside-v-side-reconciliation/reports/outside_v_cancellation_attack.md",
+            "rounds/codex-managed/m9-m1-beta-outside-v-side-reconciliation/reports/outside_v_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-outside-v-side-reconciliation/reviews/conductor_finite_section_analysis.md",
+            "rounds/codex-managed/m9-m1-beta-outside-v-side-reconciliation/synthesis.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Prove and blindly validate the abstract moving-logarithm Fresnel lemma, then insert the complete recombined beta numerator and audit whether its scaled variation and q^(-2) normalization survive every polytope face."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-beta-outside-v-side-reconciliation",
+        "type": "reduction",
+        "title": "Finite v-side orientation and distributional reconciliation",
+        "status": "proved_internal",
+        "statement_tex": "With upward verticals and both horizontal v-sides written left-to-right, a genuine finite v-shift satisfies V_b=V_left+S_+-S_-+2pi i Res. At L=plus V the edge-log coefficients of V_b and S_+ agree, and at L=minus V those of V_b and -S_- agree; the standard retained sides reproduce rather than cancel the pointwise edge. They are not |nu|>V tails, and the physical u-top limit does not generate them. The exact original box instead has |nu|<=V and |L-nu|<=U, and its signed top limit exists by the finite-box Plemelj lemma. The resulting section is locally logarithmic but not pointwise scaled C^2. Axial/top/corner and omega-artificial-pole terms must remain exactly ledgered, and no nested height exhaustion or complete beta estimate follows.",
+        "dependencies_added": [
+          "M9-M1-beta-finite-box-Plemelj-limit"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-outside-v-side-reconciliation/reports/blind_outside_v_identity.md",
+            "rounds/codex-managed/m9-m1-beta-outside-v-side-reconciliation/reports/outside_v_cancellation_attack.md",
+            "rounds/codex-managed/m9-m1-beta-outside-v-side-reconciliation/reports/outside_v_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-outside-v-side-reconciliation/reviews/conductor_finite_section_analysis.md",
+            "rounds/codex-managed/m9-m1-beta-outside-v-side-reconciliation/synthesis.md"
+          ],
+          "negative": []
+        },
+        "reason_for_promotion": "Three independent derivations agree on the exact side signs and no-cancellation verdict, while two independent proofs and the conductor derivation establish the signed finite-box Plemelj limit and exact polytope support.",
+        "next_action": "Use this closed orientation/reconciliation result only to define the distribution-first logarithmic beta kernel; do not seek pointwise cancellation from the retained v-sides."
+      },
+      {
+        "id": "M9-M1-beta-finite-height-Hilbert-edge-obstruction",
+        "statement_tex": "For the exact finite section C_(a,U,V)(L)=int_([-V,V] intersect [L-U,L+U]) H_b(nu,L)/(a+i(L-nu))dnu, a nonzero actual numerator gives C_(a,U,V)(V)=-i H_b(V,V)log(1/a)+O(1) and the analogous opposite-sign formula at -V. Its first two pointwise L derivatives have capacities a^(-1) and a^(-2), so isolated finite-section scaled C^2 patching is impossible. Standard oriented v-sides reproduce, not cancel, this edge. However the singularity after the signed top limit is locally logarithmic in L and the complete finite-box operator has a Plemelj limit; this is not an obstruction to a distribution-first transition estimate.",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-outside-v-side-reconciliation/reports/blind_outside_v_identity.md",
+            "rounds/codex-managed/m9-m1-beta-outside-v-side-reconciliation/reports/outside_v_cancellation_attack.md",
+            "rounds/codex-managed/m9-m1-beta-outside-v-side-reconciliation/reports/outside_v_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-outside-v-side-reconciliation/synthesis.md"
+          ]
+        },
+        "next_action": "Treat this only as a pointwise-C2 obstruction. Apply the physical top limit in the original mu rectangle and attack the resulting logarithmic-amplitude oscillatory kernel."
+      },
+      {
+        "id": "M9-M1-beta-two-saddle-Fresnel-normal-form",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-outside-v-side-reconciliation/synthesis.md"
+          ]
+        },
+        "next_action": "Use the ordinary scaled-C2 Fresnel lemma only away from moving height faces; prove a separate logarithmic-amplitude version at the faces."
+      },
+      {
+        "id": "M9-M1-beta-transition-connector-reduction",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M1-beta-finite-box-Plemelj-limit",
+          "M9-M1-beta-log-amplitude-two-saddle-kernel"
+        ],
+        "statement_tex": "Use the exact hierarchical beta partition and omega-recombined radial split. Both signed alpha saddles retain separated local q^(-2) capacity. The standard oriented outside-v sides do not cancel the finite-section edge, but the exact original (mu,nu) box has a signed Plemelj limit whose L-sections have only logarithmic moving-face singularities. Prove normalized O_epsilon(X^epsilon) by a distribution-first logarithmic-amplitude two-saddle estimate, followed by U,V,S exhaustion and every q,h,scale,radial, endpoint, profile, connector, and residue sum. The double-bounded share remains separately open.",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-outside-v-side-reconciliation/reports/outside_v_cancellation_attack.md",
+            "rounds/codex-managed/m9-m1-beta-outside-v-side-reconciliation/reports/outside_v_hostile_audit.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-m1-beta-outside-v-side-reconciliation/reports/blind_outside_v_identity.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-outside-v-side-reconciliation/synthesis.md"
+          ]
+        },
+        "next_action": "Prove M9-M1-beta-log-amplitude-two-saddle-kernel; then execute the complete beta sums and exhaustion."
+      },
+      {
+        "id": "M9-M1-swept-transition-horizontal-operator",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M1-beta-log-amplitude-two-saddle-kernel"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-outside-v-side-reconciliation/synthesis.md"
+          ]
+        },
+        "next_action": "Close the distribution-first logarithmic beta kernel and its height tails before returning to the alpha-bounded zeta-high branch."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round29-standard-retained-v-sides-cancel-edge-log",
+        "reason": "Positive rectangle orientation gives +S_+-S_-, and these terms have the same edge-log coefficients as the original right vertical. They reproduce or transfer the logarithm rather than cancel it."
+      },
+      {
+        "id": "Round29-outside-v-sides-are-complementary-height-tails",
+        "reason": "The horizontal connectors integrate the real abscissa at Im(v)=plus or minus V; they are not the omitted real-height regions |nu|>V. Physical top inversion moves u and does not generate v-horizontal sides."
+      },
+      {
+        "id": "Round29-fixed-L-edge-log-diverges-complete-beta-operator",
+        "reason": "After restoring |mu|=|L-nu|<=U and pairing in the original mu variable, the signed finite-box Plemelj limit exists. The fixed-L edge becomes a locally integrable logarithmic singularity."
+      },
+      {
+        "id": "Round29-finite-section-amplitude-is-uniformly-scaled-C2",
+        "reason": "At L=plus or minus V the first two derivatives have a^(-1) and a^(-2) capacities and become inverse-power face singularities after the top limit. Ordinary pointwise scaled C2 is false there."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "The logarithmic beta two-saddle kernel, height tails, full sums, double-bounded share, alpha transition, and residual M1 corridor remain open."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Round 29 concerns only the transformed M1 beta branch."
+      },
+      {
+        "id": "M9",
+        "reason": "Both M9-M1 and M9-M2 remain open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "No unconditional Gauss-circle estimate is claimed."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 9,
+    "idea_quality_score": 9,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 29 rigorously rejects the proposed side cancellation, restores the exact top-height polytope, and proves that the signed finite-box operator has a Plemelj limit. This converts the apparent divergence into a locally logarithmic amplitude and isolates a viable distribution-first two-saddle kernel without overclaiming the beta estimate."
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 4,
+    "round_type": "mechanism_discovery",
+    "campaign_id": "m9-generic-band-signed-correlation",
+    "title": "Find the actual signed mechanism in the generic single-lift M2 band",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "conductor_policy": {
+      "strategy_owner": "Codex conductor",
+      "subagents_may_start_next_round": false,
+      "monitoring": "Conductor checks exact support, signed p conventions, residue symmetries, critical-band normalization, endpoint powers, and theorem provenance.",
+      "round_close": "Close on the smallest actual-coefficient cancellation lemma or a rigorous route obstruction. Do not accept an envelope-only argument or a numerical trend."
+    },
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 80,
+      "numerical_experimental_maximum_percent": 20,
+      "numerical_purpose": ["falsify candidate identities", "generate a precise analytically testable conjecture"],
+      "numerical_prohibition": "Numerics cannot promote an asymptotic statement.",
+      "available_local_tools": ["Python", "Mathematica"],
+      "literature_policy": "Search primary literature and audit exact hypotheses before importing any reciprocal-sum estimate."
+    },
+    "target_obligations": [
+      "M9-M2-character-factor",
+      "M9-M2-signed-fat-band-constant",
+      "M9-near-collision-estimate",
+      "M9-M2-reciprocal-SPD-route"
+    ],
+    "frozen_target": {
+      "question": "Can the actual chi_4 structure in the single-lift q asymp D sector produce the missing critical off-diagonal cancellation?",
+      "reference_formula": "For reduced p/q with D<=q<2D and 1<=|p|<=H_D, A_chi(p/q)=beta_{p,H_D}w_D(q), beta_p=-Phi(|p|/(H_D+1))chi_4(p)/(pi p) for odd signed p.",
+      "critical_form": "D^(-2) Re sum_{0<|r-s|<=kappa/X} R_chi(r) conjugate(R_chi(s)) K(X(r-s)/4).",
+      "endpoint_scales": ["D=X^(1/3)", "D=X^(3/8)", "D=X^(1/2)"],
+      "forbidden_conflations": [
+        "p=1 subtotal and full signed form",
+        "exact and near pair sums",
+        "chi_4(p) and chi_4(|p|) without the signed 1/p factor",
+        "smaller Li-Yang height range and top M2 block",
+        "global and pointwise estimates"
+      ]
+    },
+    "tasks": [
+      {
+        "id": "blind_generic_band_algebra",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "target": "Starting only from the audited beta formula, derive the exact single-lift coefficient system for D<=q<2D, including signed p, parity, coprimality, p<0 symmetry, pair convolution, and the critical near-pair-sum condition. Search for exact residue-class pairings or involutions that yield cancellation; prove them or exhibit the first obstruction. Do not inspect Round 3 conclusions.",
+        "context_files": ["problems/gauss_circle.md", "sources/vaaler_1985.md", "state/control_models.md"],
+        "excluded_context": ["rounds/codex-managed/m9-signed-lift-capacity", "state/proof_obligations.yml", "state/best_proof_draft.md"],
+        "required_controls": ["support-and-degeneracy", "signed-vs-unsigned", "proves-too-much"],
+        "required_output": ["exact formulas", "symmetry table", "proved candidate or obstruction", "first unproved step"]
+      },
+      {
+        "id": "top_block_two_shift_attack",
+        "role": "analytic_method_attacker",
+        "access_mode": "selected_context_and_primary_sources",
+        "target": "Attack the top frequency block L asymp D X^(-1/4) using the exact rho=1,3 phase difference. Quantify what direct van der Corput, Poisson/stationary phase, large-sieve, or primary-source Bombieri-Iwaniec estimates actually give. Identify any smaller-L range already covered and state the exact exponent deficit at the top. Propose the weakest new analytic lemma that would close the deficit.",
+        "context_files": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "sources/li_yang_2023.md",
+          "rounds/codex-managed/m9-signed-lift-capacity/reviews/conductor_literature_method_audit.md"
+        ],
+        "required_controls": ["source-applicability", "dyadic-endpoints", "signed-vs-unsigned"],
+        "required_output": ["exact phase map", "bound ledger", "parameter feasibility", "candidate top-block lemma or no-go", "primary citations"]
+      },
+      {
+        "id": "signed_correlation_falsifier",
+        "role": "hostile_falsifier",
+        "access_mode": "selected_context",
+        "target": "Hostilely test proposed generic-band cancellation mechanisms. Analytically compare actual, unsigned, residue-randomized, and B1-envelope coefficient systems. You may use a small exact-rational or high-precision Python/Mathematica diagnostic only to falsify residue-pairing conjectures or propose a precise lemma; archive code, parameters, outputs, and limitations. Seek a rigorous lower-bound subfamily or a cancellation identity.",
+        "context_files": [
+          "state/control_models.md",
+          "state/proof_obligations.yml",
+          "rounds/codex-managed/m9-signed-lift-capacity/synthesis.md",
+          "sources/vaaler_1985.md"
+        ],
+        "required_controls": ["signed-vs-unsigned", "coefficient-adversary", "proves-too-much", "dyadic-endpoints"],
+        "required_output": ["analytic seam audit", "reproducible diagnostic if used", "falsified conjectures", "surviving candidate or obstruction", "scope statement"]
+      }
+    ],
+    "completion_criteria": [
+      "Exact generic-band algebra is independently rederived.",
+      "At least one actual-sign mechanism is proved or rigorously obstructed.",
+      "Top-block method feasibility is quantified from primary sources.",
+      "Signed, unsigned, and adversarial controls are passed.",
+      "Global-to-pointwise scope remains separate."
+    ],
+    "promotion_policy": "Round 4 may promote a scoped actual-coefficient lemma or obstruction only. No M9-M2, M9, or final-theorem promotion is permitted."
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "dfe9ec7e1ed006ed54a72c5c1e8947c9371b897eed41d13351a80ea8b4100537",
+    "generated_at": "2026-08-12T00:00:00+08:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

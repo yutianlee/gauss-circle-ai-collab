@@ -1,0 +1,134 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-product-wavelet-short-numerator-Kloosterman-reduction",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Delta/Farey reduction to a short-numerator Kloosterman family",
+        "status": "proved_internal",
+        "statement_tex": "Let J=sqrt(X), T=J/Q, and let the fixed-interior signed product wavelet have K=hat(g) with g smooth, compactly supported, and separated from zero. Exact Poisson summation in the offset localizes the circle variable to ||alpha|| asymp T^(-1). Therefore a Farey dissection of order R<T/O(1), in particular R=Q at the benchmark, has only the 0/1 cell and is exactly the known two-dimensional Fourier self-return. At conductor order J, every nonzero contributing reduced fraction has T<<c<<J and b=min(a,c-a)<<c/T, so the actual numerator length is A_c asymp c/T<=Q and A_c<sqrt(c), the latter because c<=J<T^2 at the benchmark. The complete two-variable residue is an ordinary Kloosterman local factor for odd c and a conductor-4 twisted local factor for even c only after counterfactual numerator completion. Its double zero mode vanishes, but single-zero axial modes and gcd factors survive. Hence termwise completion plus Weil and standard complete-sum Kuznetsov do not prove the J^(1/2) target. The first open interface is the joint dyadic (c,b,dual-frequency) estimate with actual weights, which must save T/J^(1/2)=X^(1/20) at J=X^(1/2), Q=X^(1/5). This is a fixed-smooth-interior reduction/no-go and gives no full-cone or exponent estimate.",
+        "dependencies": [
+          "M9-M1-direct-product-wavelet-self-return",
+          "M9-M1-reciprocal-product-wavelet-reduction"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-near-product-delta-salie/reports/blind_delta_method_rederivation.md",
+            "rounds/codex-managed/m9-m1-near-product-delta-salie/reports/conductor_short_numerator_kloosterman_audit.md",
+            "rounds/codex-managed/m9-m1-near-product-delta-salie/reports/delta_salie_transform_attack.md",
+            "rounds/codex-managed/m9-m1-near-product-delta-salie/reports/delta_kuznetsov_source_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-near-product-delta-salie/reviews/conductor_delta_salie_adjudication.md",
+            "rounds/codex-managed/m9-m1-near-product-delta-salie/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Prove a dyadic joint large-sieve bound for the actual incomplete numerator family c asymp C, b asymp c/T, including both even-modulus types, axial modes, gcds, and dual weights; do not complete b termwise or repeat the zero-cell Poisson return."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "dependencies_added": [
+          "M9-M1-product-wavelet-short-numerator-Kloosterman-reduction"
+        ],
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-m1-near-product-delta-salie/reports/delta_kuznetsov_source_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-near-product-delta-salie/synthesis.md"
+          ]
+        },
+        "next_action": "The natural delta cutoff is an exact zero-cell self-return; conductor scale exposes only an incomplete numerator c/T<sqrt(c). Prove the joint short-numerator/modulus estimate saving X^(1/20), or pivot to an independent blocker."
+      },
+      {
+        "id": "M9-M1-direct-product-wavelet-self-return",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-near-product-delta-salie/reports/blind_delta_method_rederivation.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-near-product-delta-salie/synthesis.md"
+          ]
+        },
+        "next_action": "The delta method at natural cutoff returns exactly to this wavelet; at conductor scale its only new form is a joint short-numerator Kloosterman family. Attack that family without termwise completion."
+      },
+      {
+        "id": "M9-M1-reciprocal-product-wavelet-reduction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-near-product-delta-salie/reports/delta_salie_transform_attack.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-near-product-delta-salie/synthesis.md"
+          ]
+        },
+        "next_action": "Exact circle localization confirms the product-wavelet self-return. Any improvement now requires joint cancellation in the incomplete numerator/modulus family, not another one-variable transform."
+      },
+      {
+        "id": "M9-M1-shifted-divisor-correlation-PSC",
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-m1-near-product-delta-salie/reports/delta_kuznetsov_source_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-near-product-delta-salie/synthesis.md"
+          ]
+        },
+        "next_action": "The delta/Kloosterman reformulation retains the same H/L-sized deficit in a short moving numerator. Standard complete-sum estimates do not prove PSC; a genuinely joint signed near-product theorem remains necessary."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round70-natural-delta-cutoff-produces-nontrivial-moduli",
+        "reason": "After the signed offset Poisson transform, the circle support lies inside the 0/1 Farey cell whenever R<T/O(1), including the natural R=Q cutoff."
+      },
+      {
+        "id": "Round70-complete-Kloosterman-Weil-closes-wavelet",
+        "reason": "The actual numerator has length c/T<sqrt(c), so completing it and applying a square-root complete-sum bound is non-improving."
+      },
+      {
+        "id": "Round70-standard-Kuznetsov-handles-short-numerator",
+        "reason": "Standard Kuznetsov averages complete Kloosterman sums over moduli; completing the actual numerator creates about T moving arguments and does not preserve the required power."
+      },
+      {
+        "id": "Round70-odd-modulus-local-factor-is-Salie",
+        "reason": "For odd c the counterfactually completed numerator is an ordinary Kloosterman sum; the chi_4-twisted or Salié-type factors occur only in the even-modulus cases."
+      },
+      {
+        "id": "Round70-chi4-kills-all-zero-modes",
+        "reason": "The double zero mode vanishes, but odd-c rho=0 and 4|c sigma=0 axial modes survive, including Ramanujan or twisted-Gauss gcd degenerations."
+      },
+      {
+        "id": "Round70-single-congruence-is-an-exact-delta-substitute",
+        "reason": "A single congruence also counts nonzero aliases mn-N-s=lc; exact circle or delta-symbol weights are mandatory."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "The signed short-numerator estimate, cone edges, remaining radial sectors, and endpoint completion remain open."
+      },
+      {
+        "id": "M9",
+        "reason": "Both M9-M1 and M9-M2 remain open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "Round 70 proves a reduction/no-go but no new target-sized estimate or exponent."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 6,
+    "idea_quality_score": 8,
+    "state_evidence_score": 9,
+    "calibration_score": 10,
+    "reason": "Round 70 rigorously reconciles the natural and conductor delta cutoffs, computes the exact residue families and zero modes, and isolates a narrower joint incomplete-numerator estimate while proving that completion, Weil, and standard Kuznetsov do not supply the missing X^(1/20)."
+  }
+}

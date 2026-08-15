@@ -1,0 +1,119 @@
+{
+  "proof_obligations": {
+    "update": [
+      {
+        "id": "M9-M1-partial-functional-equation-transition-reduction",
+        "type": "reduction",
+        "status": "proved_internal",
+        "reason_for_promotion": "Three independent Round-25 derivations agree on the terminal reflected factor assignment, exact finite one-factor identities, coefficient placement, and pole/side/profile ledger. Hostile review restricts the promotion to pointwise meromorphic substitution on the original finite contours; no trace estimate or outside-height limit is included.",
+        "statement_tex": "Let A=s-z/2 and B=s+z/2, so Im A=beta and Im B=alpha in the terminal reflected kernel. Exactly on the original finite contours, K_z(1-s)F_(-z)(s)=X_zeta(A)zeta(A)X_4(B)L(B,chi_4). On the beta-bounded trace this equals zeta(1-A)X_4(B)L(B,chi_4), leaving character-high coefficients chi_4(q)q^(-B); on the alpha-bounded trace it equals X_zeta(A)zeta(A)L(1-B,chi_4), leaving unsigned high coefficients h^(-A). This substitution crosses no pole and preserves the trace masks, actual profiles and floors, R_(1,v), finite outside sides, axial/top/corner ledger, and external M1 normalization. It is not a side-free shifted mixed chamber and supplies no target-sized estimate or outside-height limit.",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-partial-functional-equation-transitions/reports/blind_partial_FE_factorization.md",
+            "rounds/codex-managed/m9-m1-partial-functional-equation-transitions/reports/mixed_trace_attack.md",
+            "rounds/codex-managed/m9-m1-partial-functional-equation-transitions/reports/partial_FE_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-partial-functional-equation-transitions/synthesis.md"
+          ]
+        },
+        "next_action": "Use this only as the exact finite definition of the two mixed transition operators. Estimate the connector-completed beta branch jointly with radial integration, spatial convolution, and the symmetric top Hilbert factor; do not infer coefficientwise Abel cancellation."
+      },
+      {
+        "id": "M9-M1-swept-transition-horizontal-operator",
+        "status": "open",
+        "statement_tex": "After the target-safe radial endpoint/residue package is removed, the remaining normalized operator is the pair of exact finite mixed traces from M9-M1-partial-functional-equation-transition-reduction, together with their transition-mask Cauchy-Pompeiu or strip-edge connectors, finite outside-height sides, and separately retained axial/top/corner terms. Prove their joint contribution is O_epsilon(X^epsilon). Separate coefficientwise Abel summation and absolute height integration do not suffice.",
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-m1-partial-functional-equation-transitions/reports/mixed_trace_attack.md",
+            "rounds/codex-managed/m9-m1-partial-functional-equation-transitions/reports/partial_FE_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-partial-functional-equation-transitions/reports/blind_partial_FE_factorization.md",
+            "rounds/codex-managed/m9-m1-partial-functional-equation-transitions/synthesis.md"
+          ]
+        },
+        "next_action": "Freeze a smooth beta-transition mask, derive the connector-completed finite A-shift with the A=0 residue reconciled to Round 24, and prove a normalized O_epsilon(X^epsilon) bound or a sharp resonance-return obstruction for its physical mask-convolved character kernel."
+      },
+      {
+        "id": "M9-M1-renormalized-radial-boundary-operator",
+        "status": "open",
+        "statement_tex": "The renormalized radial sides are removed and the complete physical endpoint/residue package is target-safe. The unresolved part is exactly the connector-completed pair of diagonal mixed transition traces and their outside-height limits; the finite one-factor identities are proved, but no trace estimate is known.",
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-m1-partial-functional-equation-transitions/reports/mixed_trace_attack.md",
+            "rounds/codex-managed/m9-m1-partial-functional-equation-transitions/reports/partial_FE_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-partial-functional-equation-transitions/reports/blind_partial_FE_factorization.md",
+            "rounds/codex-managed/m9-m1-partial-functional-equation-transitions/synthesis.md"
+          ]
+        },
+        "next_action": "Resolve the connector-completed mixed transition traces; do not reopen the closed physical endpoint or R1-residue estimates."
+      },
+      {
+        "id": "M9-M1-post-FE-vector-kernel",
+        "status": "open",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-partial-functional-equation-transitions/synthesis.md"
+          ]
+        },
+        "next_action": "Estimate the connector-completed beta transition first, then the alpha transition; the finite partial-FE identities alone do not control the vector kernel."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round25-one-factor-FE-closes-a-transition",
+        "reason": "Exact partial factorization leaves the one-large-gamma and top-1/u polynomial absolute capacity and proves neither a target-sized trace estimate nor an outside-height limit."
+      },
+      {
+        "id": "Round25-partial-FE-coefficientwise-Abel-closes-a-transition",
+        "reason": "The standalone character-high sine kernel can neutralize chi_4 at odd integral kernel arguments, while the zeta-high cosine kernel is coherent at integers. This rejects a uniform coefficientwise Abel shortcut, not signed cancellation in the fully coupled masked operator."
+      },
+      {
+        "id": "Round25-side-free-transition-cutoff-Cauchy-shift",
+        "reason": "A compact smooth transition mask is nonholomorphic and creates a Cauchy-Pompeiu area term; a sharp mask creates internal strip-edge connectors. A beta-branch shift also crosses A=0, whose residue is already represented by the Round-24 R1 ledger."
+      },
+      {
+        "id": "Round25-pole-subtracted-zeta-has-bounded-height-remainder",
+        "reason": "Euler summation retains a factor of the high Mellin variable, while eta reconstruction restores the dyadic unsigned zeta tower; neither supplies the missing high-height decay."
+      },
+      {
+        "id": "Round25-alpha-trace-has-simultaneous-ordinary-Dirichlet-chamber",
+        "reason": "The requirements Re A>1 and Re(1-B)>0 are incompatible for Re z>0."
+      },
+      {
+        "id": "Round25-new-zeta-residue-at-A-equals-1",
+        "reason": "A=1 is removable in X_zeta(A)zeta(A)=zeta(1-A); the existing moving arithmetic pole is A=0 and is already represented by the R1 residue ledger."
+      },
+      {
+        "id": "Round25-partial-FE-moves-character-to-zeta-high-branch",
+        "reason": "The alpha-bounded branch has unsigned high coefficients h^(-A); the chi_4 coefficients occur only in the beta-bounded character-high branch."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "The two transition traces and the residual direct M1 corridor remain open."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Round 25 concerns the transformed M1 transition operator."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1 and M9-M2 remain open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "No unconditional Gauss-circle target estimate is claimed."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 9,
+    "calibration_score": 10,
+    "reason": "Round 25 proves a useful exact finite mixed-factor reduction and sharply rules out side-free chamber shifts and elementary coefficientwise Abel closure, while leaving the genuinely coupled transition operator open."
+  }
+}

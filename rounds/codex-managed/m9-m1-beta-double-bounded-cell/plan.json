@@ -1,0 +1,29 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 42,
+    "campaign_id": "m9-m1-beta-double-bounded-cell",
+    "title": "Direct double-bounded beta-cell estimate",
+    "status": "complete",
+    "max_concurrency": 3,
+    "target_obligations": ["M9-M1-beta-complete-physical-height-symbol-bound", "M9-M1-beta-transition-connector-reduction"],
+    "graph_sha256": "774b64709170bd09a99200f7f1f5cdf237fa6c712820394f309c6b7e58e177f8",
+    "resource_policy": {"analytical_algebraic_minimum_percent": 100, "numerical_experimental_maximum_percent": 0},
+    "frozen_objective": "Prove or refute a target-sized direct estimate for the exact beta-owned double-bounded cell by compact archimedean control plus one radial integration by parts, with the signed top distribution and global ownership ledger intact."
+  },
+  "tasks": [
+    {"id": "blind_compact_cell_rederivation", "role": "statement_only_validator", "access_mode": "statement_only", "report": "reports/blind_compact_cell_rederivation.md"},
+    {"id": "double_bounded_radial_attack", "role": "discovery", "access_mode": "selected_context", "report": "reports/double_bounded_radial_attack.md"},
+    {"id": "double_bounded_hostile_audit", "role": "seam_reviewer", "access_mode": "selected_context", "report": "reports/double_bounded_hostile_audit.md"}
+  ],
+  "exit_gates": [
+    "exact central-cell cutoff and raw normalization",
+    "compact gamma and signed top height bound",
+    "one x-derivative of the complete modulated amplitude",
+    "absolute h and q convergence and actual scale sum",
+    "radial integration by parts with endpoint stars",
+    "global post-routing ownership without masked-module inference",
+    "statement-only and hostile validation",
+    "conductor decision before beta-transition assembly"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "round_index": 69,
+  "campaign_id": "m9-m1-direct-square-root-product-bilinear",
+  "objective": "Prove or sharply obstruct the direct Q^(3/2) square-root-product bilinear estimate before Cauchy.",
+  "graph_sha256": "9cb30a47556b9c7cf47220264a1a4691948889dea88e376e0355993288b041b3",
+  "resource_policy": {
+    "analytical_algebraic_minimum_percent": 80,
+    "numerical_experimental_maximum_percent": 20,
+    "literature_policy": "Audit primary bilinear monomial, divisor exponential-sum, Voronoi, exponent-pair, and spectral results before import."
+  },
+  "tasks": [
+    {"id": "direct_product_bilinear_attack", "role": "discovery", "status": "complete"},
+    {"id": "blind_direct_bilinear_rederivation", "role": "statement_only_blind_rederiver", "status": "complete_clean"},
+    {"id": "direct_bilinear_source_hostile_audit", "role": "hostile_source_reviewer", "status": "complete_corrected"}
+  ],
+  "exit_gates": [
+    "direct normalization", "actual wavelet symbol", "one-sided cone",
+    "product grouping", "perfect powers", "stationary aliases",
+    "direct versus energy capacity", "source applicability",
+    "blind and hostile gates", "conductor decision"
+  ],
+  "conductor_decision": "Promote the fixed-interior X^(7/20) bound and direct product-wavelet self-return; retain the Q^(3/2) target and exponent open."
+}

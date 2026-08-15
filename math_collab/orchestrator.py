@@ -1,3 +1,10 @@
+"""Legacy fixed A1/A2/A3/A4 web/API orchestrator.
+
+Retained to interpret and reproduce historical rounds. New work uses
+``math_collab.campaigns`` plus Codex runtime subagents; this Python module cannot
+launch Codex subagents and is not part of the active research workflow.
+"""
+
 from __future__ import annotations
 
 import argparse
@@ -373,6 +380,18 @@ Rules:
 - The final judge synthesis must include `## State Patch` using JSON-compatible YAML."""
 
 
+def diagnostic_execution_contract() -> str:
+    return """## Diagnostic Execution Contract
+
+Computation remains `diagnostic_only`; it cannot prove a theorem or promote a lemma by itself.
+
+- A2 is the primary external Python diagnostic runner when Google AI Studio Code Execution is enabled.
+- A2 may run only small self-contained Python diagnostics and must report exact code, stdout/stderr or returned tables, parameters, pass/fail criteria, and limitations.
+- If Code Execution is unavailable or returns no runtime output, A2 must mark the job `not_executed` and provide only a runnable artifact bundle.
+- Codex or the local workflow must reproduce any A2 Code Execution result inside this repository before it counts as positive diagnostic evidence.
+- A3 audits diagnostic formulas, script logic, exact arithmetic, and result interpretation. A3 must not claim execution unless real runtime output is present."""
+
+
 def state_patch_schema() -> str:
     return """## State Patch Format
 
@@ -724,6 +743,8 @@ Follow the protocol and be strict about separating proved claims from conjectura
 
 {proof_obligation_contract()}
 
+{diagnostic_execution_contract()}
+
 {reasoning_stage_guardrail()}
 
 {agent_stage_mode(agent, "reasoning")}
@@ -803,6 +824,8 @@ Review the other agents' Round {round_index} outputs. Your job is to identify us
 {research_quality_rubric()}
 
 {proof_obligation_contract()}
+
+{diagnostic_execution_contract()}
 
 {review_stage_guardrail(round_index)}
 
@@ -892,6 +915,8 @@ Synthesize Round {round_index}. Prefer precise, checkable progress over impressi
 {research_quality_rubric()}
 
 {proof_obligation_contract()}
+
+{diagnostic_execution_contract()}
 
 {state_patch_schema()}
 

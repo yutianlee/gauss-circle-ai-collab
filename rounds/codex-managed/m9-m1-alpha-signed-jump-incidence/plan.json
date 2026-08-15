@@ -1,0 +1,184 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 51,
+    "round_type": "alpha_signed_jump_incidence",
+    "campaign_id": "m9-m1-alpha-signed-jump-incidence",
+    "title": "Signed incidence ledger at actual alpha floor, star, profile, and radial seams",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "literature_policy": "No external theorem is needed for the finite incidence algebra. Search only if the surviving coefficient becomes a named singular-integral or jump-cancellation form."
+    },
+    "target_obligations": [
+      "M9-M1-alpha-bounded-zeta-high-transition-bound"
+    ],
+    "frozen_target": {
+      "question": "At one actual logarithmic discontinuity of the alpha amplitude, does the complete signed terminal/connector/face/axis/corner/Plemelj incidence coefficient cancel identically, or what is the first nonzero survivor?",
+      "reference_formula": "Start from the Round-50 coupled multiplier m_lambda(beta)=(1-psi(beta))psi(beta+lambda) and the common finite endpoint-free alpha antecedent. Model one actual seam by W(L)=W_-(L)+Delta_W S^*_(L0)(L), keep the exact top Plemelj identity (0^++i mu)^(-1)=pi delta_0(mu)-i PV(1/mu), and apply the full finite Cauchy-Pompeiu/product outside-axis ledger before any limit or absolute value.",
+      "quantities": [
+        "one actual seam type at a time: H_j floor, product star, dyadic profile edge, or radial endpoint",
+        "terminal fundamental-line trace",
+        "A-strip area connector or both sharp edges",
+        "oriented u/v faces and positive axes",
+        "connector-face, connector-axis, mixed connector, and one corner",
+        "signed top delta plus principal value",
+        "moving bounded-alpha packet lambda=mu+nu",
+        "common E1/R1 artificial-pole and A=0 ownership exclusions",
+        "exact jump coefficient and one-count external normalization"
+      ]
+    },
+    "completion_criteria": [
+      "The logarithmic seam variable and jump coefficient are defined from an actual profile/floor/star/radial factor, not an arbitrary surrogate.",
+      "Every finite terminal, connector, face, axis, mixed, corner, delta, and PV incidence is listed once with orientation.",
+      "A=0 arithmetic, artificial rho=0, log-kernel delta, lattice delta, and Plemelj delta remain distinct owners.",
+      "The total singular jump coefficient is proved zero or an explicit nonzero survivor is derived.",
+      "Any cancellation is tested at equality stars and moving finite faces and before outside-height limits.",
+      "The resulting local statement is connected to, but not confused with, the global X^(1/8) and height capacities.",
+      "A clean statement-only derivation and independent hostile audit exist.",
+      "No global alpha or downstream estimate is promoted from local incidence alone."
+    ],
+    "controls": [
+      "actual_seam_definition",
+      "orientation_and_one_count",
+      "three_delta_ownership",
+      "plemelj_before_absolute",
+      "moving_face_and_equality_star",
+      "complete_signed_jump_coefficient",
+      "local_to_global_capacity_scope",
+      "outside_height_scope",
+      "downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "actual_jump_incidence_constructor",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "target": "Construct the complete finite signed incidence table for one representative actual seam in each class, calculate the total singular jump coefficient, and prove cancellation or isolate the first survivor.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-alpha-highpass-log-commutator/synthesis.md",
+          "rounds/codex-managed/m9-m1-alpha-highpass-log-commutator/reviews/conductor_commutator_adjudication.md",
+          "rounds/codex-managed/m9-m1-beta-complete-axial-connector-ledger/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-outside-v-side-reconciliation/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-compact-selector-ownership/synthesis.md"
+        ],
+        "required_controls": [
+          "actual_seam_definition",
+          "orientation_and_one_count",
+          "three_delta_ownership",
+          "plemelj_before_absolute",
+          "moving_face_and_equality_star",
+          "complete_signed_jump_coefficient",
+          "local_to_global_capacity_scope",
+          "outside_height_scope",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "seven-section report",
+          "complete signed incidence table",
+          "zero identity or first survivor"
+        ]
+      },
+      {
+        "id": "blind_jump_incidence_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "target": "Independently derive the finite signed seam incidence from the frozen packet and decide whether the singular coefficient cancels, without consulting graph or claimant work.",
+        "context_files": [
+          "rounds/codex-managed/m9-m1-alpha-signed-jump-incidence/derivation_packet.md"
+        ],
+        "excluded_context": [
+          "proof graph",
+          "proof draft",
+          "prior reports and syntheses",
+          "other Round-51 reports"
+        ],
+        "required_controls": [
+          "actual_seam_definition",
+          "orientation_and_one_count",
+          "three_delta_ownership",
+          "plemelj_before_absolute",
+          "moving_face_and_equality_star",
+          "complete_signed_jump_coefficient",
+          "local_to_global_capacity_scope",
+          "outside_height_scope",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "seven-section statement-only report",
+          "independent incidence algebra",
+          "isolation ledger"
+        ]
+      },
+      {
+        "id": "jump_incidence_hostile_audit",
+        "role": "seam_reviewer",
+        "access_mode": "selected_context",
+        "target": "Hostile-audit the local incidence for omitted moving-boundary distributions, sign errors, conflated deltas, equality-star half weights, false rowwise connector cancellation, and illicit promotion from local to global estimates.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-alpha-highpass-log-commutator/synthesis.md",
+          "rounds/codex-managed/m9-m1-alpha-highpass-log-commutator/reports/alpha_commutator_hostile_audit.md",
+          "rounds/codex-managed/m9-m1-beta-complete-axial-connector-ledger/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-outside-v-side-reconciliation/reports/outside_v_hostile_audit.md"
+        ],
+        "required_controls": [
+          "actual_seam_definition",
+          "orientation_and_one_count",
+          "three_delta_ownership",
+          "plemelj_before_absolute",
+          "moving_face_and_equality_star",
+          "complete_signed_jump_coefficient",
+          "local_to_global_capacity_scope",
+          "outside_height_scope",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "seven-section hostile report",
+          "counterexample or seam certification",
+          "recommended graph effect"
+        ]
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "incidence_geometry",
+        "requirement": "List every stratum incident to one actual jump and its exact orientation."
+      },
+      {
+        "id": "distribution_ownership",
+        "requirement": "Separate arithmetic, log-kernel, lattice, and Plemelj distributions and retain equality stars."
+      },
+      {
+        "id": "signed_coefficient",
+        "requirement": "Evaluate the complete signed singular coefficient before absolute values or limits."
+      },
+      {
+        "id": "scope",
+        "requirement": "Distinguish local seam cancellation from global height and arithmetic summation."
+      },
+      {
+        "id": "mathematical_isolation",
+        "requirement": "The blind proof sees only the Round-51 packet and its brief."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "6d9c9af100c6434da046b3fcbfc1b7712a36931860af1bd7c1bbcaa3c5932ab5",
+    "generated_at": "2026-08-13T15:38:12.509583+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

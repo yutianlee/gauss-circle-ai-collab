@@ -1,0 +1,297 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-beta-masked-endpoint-Cauchy-Green-identity",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Finite beta-masked endpoint Cauchy--Green identity",
+        "status": "proved_internal",
+        "statement_tex": "For the hierarchical beta mask Theta_beta=psi(beta), upward A-verticals, and A-horizontals written left-to-right, each M=1 radial endpoint satisfies T_xi^beta+S_xi^beta+P_xi^beta+C_(A,xi)^beta=D_xi^beta-A_xi, where C_(A,xi)^beta=-intint psi'(beta)F_xi and S_xi is upper minus lower. The A=0 arithmetic share A_xi is full because beta=0 and psi(0)=1, whereas D_xi^beta=D_xi[psi(beta)] remains masked. Artificial E1/R1 residues cancel under the same mask, and a pole collision uses one derivative residue. This is a finite identity and gives no bound for D_xi^beta.",
+        "dependencies": [
+          "M9-M1-endpoint-Cauchy-reduction",
+          "M9-M1-beta-Cauchy-Green-connector-identity",
+          "M9-M1-radial-endpoint-subtraction-identity"
+        ],
+        "implies": [
+          "M9-M1-beta-mask-endpoint-axial-compatibility"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/reports/blind_mask_endpoint_axial_identity.md",
+            "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/reports/mask_endpoint_axial_attack.md",
+            "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/reports/mask_endpoint_axial_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use this identity only with D_xi^beta retained, or sum the full three-mask partition before invoking the unmasked endpoint theorem."
+      },
+      {
+        "id": "M9-M1-beta-global-three-mask-endpoint-recombination",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Global three-mask endpoint recombination",
+        "status": "proved_internal",
+        "statement_tex": "Let Theta_beta=psi(beta), Theta_alpha=(1-psi(beta))psi(alpha), and Theta_o=(1-psi(beta))(1-psi(alpha)). They sum pointwise to one. Therefore the right-line endpoint prefixes satisfy D_xi^beta+D_xi^alpha+D_xi^o=D_xi, and the three radial Cauchy--Green connector densities sum to zero. Hence the accepted unmasked physical endpoint module may be invoked only after this global recombination, or equivalently if endpoint collapse is performed on the global operator before hierarchical localization. The two internal beta shares alone recover only D_xi^beta.",
+        "dependencies": [
+          "M9-M1-beta-masked-endpoint-Cauchy-Green-identity",
+          "M9-M1-beta-hierarchical-radial-split-identity",
+          "M9-M1-endpoint-boundary-operator"
+        ],
+        "implies": [
+          "M9-M1-beta-mask-endpoint-axial-compatibility"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/reports/blind_mask_endpoint_axial_identity.md",
+            "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/reports/mask_endpoint_axial_attack.md",
+            "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/reports/mask_endpoint_axial_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/reviews/conductor_masked_endpoint_scope.md",
+            "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/reviews/conductor_full_partition_recombination.md",
+            "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use the boundary-first global order so no standalone estimate of D_xi^beta is needed; retain every connector until the three masks recombine."
+      },
+      {
+        "id": "M9-M1-beta-finite-axis-mask-connector-identity",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Finite axial Cauchy--Green mask-connector identity",
+        "status": "proved_internal",
+        "statement_tex": "At fixed s,u, beta=t-(mu+nu)/2 and a finite v-shift of the beta-masked density satisfies V_(b+)=V_(b-)+H_(v,+)-H_(v,-)+2pi i Res_(v=0)(Theta_beta Q)+C_(v,beta)[Q], where C_(v,beta)=-intint partial_nu Theta_beta Q=(1/2)intint psi'(beta)Q. The analogous u-shift has the same one-half connector. A sequential two-axis shift must also act on all horizontals and area connectors and contains the mixed density partial_mu partial_nu Theta_beta=psi''(beta)/4, connector-axis residues, and the joint u=v=0 corner exactly once. Full-axis inclusion--exclusion and corner-deleted-axis conventions are equivalent only when all these strata are retained. This is exact finite algebra and supplies no estimate.",
+        "dependencies": [
+          "M9-M1-finite-vector-Hankel-identity",
+          "M9-M1-beta-Cauchy-Green-connector-identity"
+        ],
+        "implies": [
+          "M9-M1-beta-complete-axial-connector-ledger",
+          "M9-M1-beta-mask-endpoint-axial-compatibility"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/reports/blind_mask_endpoint_axial_identity.md",
+            "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/reports/mask_endpoint_axial_attack.md",
+            "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/reports/mask_endpoint_axial_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/reviews/conductor_two_axis_connector_ledger.md",
+            "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Expand this generic identity on every actual endpoint-free terminal, radial-side, arithmetic, horizontal, and connector stratum before axial subtraction."
+      },
+      {
+        "id": "M9-M1-beta-local-common-ownership-zero-defect",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Local common-ownership rho defect vanishes",
+        "status": "proved_internal",
+        "statement_tex": "Let H be either the beta-retained finite operator, which keeps D_xi^beta and every masked axial/connector output explicit, or the globally collapsed operator, which first recombines all three masks and then removes the unmasked endpoint module. If H is applied with identical finite domains, masks, endpoint conventions, stars, sides, connectors, residues, and regularization to G,E1,R1, then E_own=H[G]-H[E1]-H[R1]=H[G-E1-R1]=0 meromorphically. Every rho Laurent/Taylor coefficient and the fixed-physical-height L derivative vanish, distributionally across common affine switches. This conclusion does not apply to a hybrid operator that deletes D_xi^beta by an unmasked theorem or omits an axial connector.",
+        "dependencies": [
+          "M9-M1-beta-rho-cutoff-all-order-cancellation",
+          "M9-M1-beta-masked-endpoint-Cauchy-Green-identity",
+          "M9-M1-beta-global-three-mask-endpoint-recombination",
+          "M9-M1-beta-finite-axis-mask-connector-identity"
+        ],
+        "implies": [
+          "M9-M1-beta-mask-endpoint-axial-compatibility"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/reports/blind_mask_endpoint_axial_identity.md",
+            "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/reports/mask_endpoint_axial_attack.md",
+            "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/reports/mask_endpoint_axial_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use zero defect only after the actual connector-completed axial operator is written with common ownership; it is not an estimate."
+      },
+      {
+        "id": "M9-M1-beta-complete-axial-connector-ledger",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Actual connector-completed beta axial vector ledger",
+        "status": "open",
+        "statement_tex": "After global endpoint collapse and removal of the accepted unmasked endpoint and R1 arithmetic modules, expand the finite beta-masked v- and u-displacements on every actual endpoint-free terminal, renormalized radial-side, arithmetic remainder, v-horizontal, and mask-area stratum. Include the filtered v=0 and u=0 residues, the u=0 residue and finite boundaries of C_(v,beta), the analogous u connector, the mixed psi''(beta)/4 density, and the joint corner exactly once. Prove that this explicit operator is identical under either order of the two axis shifts and is the unique vector share removed before local polar subtraction. No target-sized estimate is included.",
+        "dependencies": [
+          "M9-M1-beta-finite-axis-mask-connector-identity",
+          "M9-M1-beta-global-three-mask-endpoint-recombination",
+          "M9-M1-beta-local-common-ownership-zero-defect",
+          "M9-M1-finite-vector-Hankel-identity"
+        ],
+        "implies": [
+          "M9-M1-beta-mask-endpoint-axial-compatibility"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/reports/blind_mask_endpoint_axial_identity.md",
+            "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/reports/mask_endpoint_axial_attack.md",
+            "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/reports/mask_endpoint_axial_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/reviews/conductor_two_axis_connector_ledger.md",
+            "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/synthesis.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Write one actual finite two-axis operator in a fixed order, expand all connector-axis and mixed strata, and verify the reversed order and physical normalization term by term."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-beta-boundary-first-symbol-architecture",
+        "status": "proved_internal",
+        "statement_tex": "Endpoint collapse must be performed on the global unmasked finite operator before hierarchical transition localization, or equivalently all three hierarchical endpoint masks and their Cauchy--Green connectors must be recombined before the accepted physical endpoint modules are invoked. The two internal beta shares give only D_xi^beta, while the full three-mask sum gives D_xi. After global endpoint/artificial/arithmetic reconciliation and accepted side removal, define the beta terminal symbol only from the endpoint-image-free masked remainder. Its connector-completed axial vector remains separately ledgered. This is an architecture reduction, not a transition estimate.",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/reviews/conductor_full_partition_recombination.md",
+            "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/synthesis.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/reports/mask_endpoint_axial_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/reports/blind_mask_endpoint_axial_identity.md",
+            "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/reports/mask_endpoint_axial_attack.md"
+          ]
+        },
+        "next_action": "Use global endpoint collapse before masking, then complete the actual beta axial connector ledger; never delete D_xi^beta by the unmasked endpoint theorem."
+      },
+      {
+        "id": "M9-M1-beta-rho-cutoff-all-order-cancellation",
+        "status": "proved_internal",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/reports/blind_mask_endpoint_axial_identity.md",
+            "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/reports/mask_endpoint_axial_attack.md",
+            "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/reports/mask_endpoint_axial_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/synthesis.md"
+          ]
+        },
+        "next_action": "Use the all-order identity only for a common beta-retained or globally endpoint-collapsed operator containing every axial connector stratum."
+      },
+      {
+        "id": "M9-M1-beta-mask-endpoint-axial-compatibility",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M1-beta-masked-endpoint-Cauchy-Green-identity",
+          "M9-M1-beta-global-three-mask-endpoint-recombination",
+          "M9-M1-beta-finite-axis-mask-connector-identity",
+          "M9-M1-beta-local-common-ownership-zero-defect",
+          "M9-M1-beta-complete-axial-connector-ledger"
+        ],
+        "statement_tex": "The local same-mask rho ownership defect is zero, and global three-mask endpoint recombination is exact. To complete mask--endpoint--axial compatibility, first collapse the global endpoint/artificial/arithmetic package before beta localization, then write the actual endpoint-free connector-completed beta axial vector on every terminal, side, arithmetic, horizontal, connector-axis, mixed psi''/4, u=0, v=0, and joint-corner stratum. Verify the two axis-shift orders agree and every physical-profile module is invoked only at its accepted limit. No size estimate for the residual terminal symbol is included.",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/reports/blind_mask_endpoint_axial_identity.md",
+            "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/reports/mask_endpoint_axial_attack.md",
+            "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/reviews/conductor_full_partition_recombination.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/reports/mask_endpoint_axial_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/reviews/conductor_masked_endpoint_scope.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/reviews/conductor_two_axis_connector_ledger.md",
+            "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/synthesis.md"
+          ]
+        },
+        "next_action": "Prove M9-M1-beta-complete-axial-connector-ledger on the globally endpoint-collapsed actual kernel; do not start the symbol estimate first."
+      },
+      {
+        "id": "M9-M1-beta-axial-subtracted-terminal-symbol-bound",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M1-beta-complete-axial-connector-ledger"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/synthesis.md"
+          ]
+        },
+        "next_action": "Wait for the actual connector-completed axial vector ledger, then define the unique axial subtraction and prove the fixed-physical-height symbol and tail bounds."
+      },
+      {
+        "id": "M9-M1-beta-complete-physical-height-symbol-bound",
+        "status": "open",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/synthesis.md"
+          ]
+        },
+        "next_action": "Complete the actual axial connector ledger and axial-subtracted terminal bound under the corrected global endpoint-first architecture."
+      },
+      {
+        "id": "M9-M1-beta-regular-finite-part-symbol-BV",
+        "status": "open",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/synthesis.md"
+          ]
+        },
+        "next_action": "Do not apply the separated symbol lemma across masked endpoint or axial seams; first close the actual connector-completed axial ledger and reduced symbol."
+      },
+      {
+        "id": "M9-M1-beta-transition-connector-reduction",
+        "status": "open",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/synthesis.md"
+          ]
+        },
+        "next_action": "Use global endpoint collapse before hierarchical localization and retain the full beta axial connector vector before executing transition sums."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round33-beta-internal-split-recovers-unmasked-endpoint",
+        "reason": "The two internal beta shares sum to psi(beta), so their right-line image is D_xi^beta. Only the three global hierarchical masks sum to D_xi; fullness of the A=0 residue does not imply fullness of the endpoint prefix."
+      },
+      {
+        "id": "Round33-finite-masked-v-shift-has-only-sides-and-residue",
+        "reason": "Because beta=t-(mu+nu)/2, the beta mask is nonholomorphic in v and produces the nonzero area connector (1/2)intint psi'(beta)Q in addition to finite horizontals and the filtered v=0 residue."
+      },
+      {
+        "id": "Round33-pure-axis-residues-complete-two-axis-ledger",
+        "reason": "A second axis shift acts on the first area connector and its boundaries, producing connector-axis residues and the mixed density psi''(beta)/4. Pure u=0, v=0, and corner residues omit these strata."
+      },
+      {
+        "id": "Round33-local-zero-rho-defect-implies-endpoint-module-compatibility",
+        "reason": "E_own=0 follows for a common operator with all masked outputs retained, but it does not authorize deleting D_xi^beta by a theorem for unmasked D_xi or omitting axial connectors."
+      },
+      {
+        "id": "Round33-beta-v-zero-residue-is-unmasked",
+        "reason": "On v=0 the beta mask is psi(t-mu/2), generally not one. Only the moving arithmetic pole A=0 automatically has beta=0 and full beta-mask weight."
+      }
+    ],
+    "no_change": [
+      {"id": "M9-M1", "reason": "The complete beta axial ledger, reduced symbol estimate, alpha branch, double-bounded share, and residual corridor remain open."},
+      {"id": "M9-M2", "reason": "Round 33 concerns only the M1 beta transition architecture."},
+      {"id": "M9", "reason": "M9-M1 and M9-M2 remain open."},
+      {"id": "GC-target", "reason": "No unconditional Gauss-circle estimate is claimed."}
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 8,
+    "idea_quality_score": 9,
+    "state_evidence_score": 9,
+    "calibration_score": 10,
+    "reason": "Round 33 closes the local rho ownership seam, corrects the endpoint scope, and identifies the exact nonholomorphic axial connector hierarchy. It does not overclaim the full compatibility or a symbol estimate."
+  }
+}

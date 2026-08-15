@@ -1,0 +1,151 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-top-endpoint-transposed-character-energy",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Character-preserving transposed-row energy for the top M2 cone",
+        "status": "proved_internal",
+        "statement_tex": "Let H_L be the actual finite odd h-support, let a(h,m) be the exact normalized top-endpoint symbol, and let T_L=sum_(h in H_L) chi_4(h) sum_(ceil(h/4)<=m<=h) a(h,m)e(sqrt(Xhm)). Define R_m=sum_(h in H_L,m<=h<=4m) chi_4(h)a(h,m)e(sqrt(Xhm)). Then T_L=sum_m R_m and |T_L|^2 << L E_L^top, where E_L^top=sum_m|R_m|^2. Its diagonal is O(L^2), and its exact positive-offset part is 2 Re sum_(r>=1)(-1)^r sum_(h,h+2r in H_L) sum_(m=ceil((h+2r)/4))^h a(h,m)conj(a(h+2r,m)) e(-2r sqrt(Xm)/(sqrt(h)+sqrt(h+2r))). Hence E_L^top <<_epsilon L^2 X^epsilon is sufficient for T_L <<_epsilon L^(3/2)X^epsilon. This finite reduction preserves the ceiling, both affine edges, the actual profile, and chi_4(h)chi_4(h+2r)=(-1)^r.",
+        "dependencies": [
+          "M9-M2-top-endpoint-transform",
+          "M9-M2-character-factor",
+          "H4-Phi-regularity"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-top-endpoint-near-product-energy/reports/blind_near_product_energy_rederivation.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-near-product-energy/reports/reciprocal_energy_attack.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-near-product-energy/reports/near_product_energy_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-near-product-energy/reviews/conductor_round75_adjudication.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-near-product-energy/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Prove the complete alternating even-offset union at L^2 X^epsilon before absolute values over the offset; keep the hard moving endpoints and actual symbol." 
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "dependencies_added": [
+          "M9-M2-top-endpoint-transposed-character-energy"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-top-endpoint-near-product-energy/reports/blind_near_product_energy_rederivation.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-near-product-energy/reviews/conductor_round75_adjudication.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-m2-top-endpoint-near-product-energy/reports/near_product_energy_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-top-endpoint-near-product-energy/reports/reciprocal_energy_attack.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-near-product-energy/synthesis.md"
+          ]
+        },
+        "next_action": "Prove the exact transposed-row signed energy, equivalently its alternating even-offset aggregate. The frozen leading-wavelet reciprocal energy is not an all-orders identity, and its repaired B-process is an adjoint return."
+      },
+      {
+        "id": "M9-M2-top-endpoint-row-correlation-reduction",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-top-endpoint-near-product-energy/synthesis.md"
+          ]
+        },
+        "next_action": "Prefer the exact transposed-row energy because it preserves chi_4. Retain the characterless interior row correlation only as a stronger sufficient alternative."
+      },
+      {
+        "id": "M9-M2-h-cauchy-sign-loss",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-top-endpoint-near-product-energy/reports/blind_near_product_energy_rederivation.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-near-product-energy/reviews/conductor_round75_adjudication.md"
+          ]
+        },
+        "next_action": "Use Cauchy after regrouping by m when treating the top cone: chi_4 remains inside each transposed row and becomes the exact offset sign (-1)^r. Outer h-Cauchy still deletes the character."
+      },
+      {
+        "id": "M9-M2-sign-preserving-poisson-voronoi-route",
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-m2-top-endpoint-near-product-energy/reports/blind_near_product_energy_rederivation.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-near-product-energy/reports/near_product_energy_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-top-endpoint-near-product-energy/reports/reciprocal_energy_attack.md"
+          ]
+        },
+        "next_action": "Do not iterate the frozen leading-wavelet transform. Any repaired full-symbol transform must be used only as an equivalent representation of the alternating transposed-row energy, unless a genuinely new signed estimate is proved."
+      },
+      {
+        "id": "M9-M2",
+        "dependencies_added": [
+          "M9-M2-top-endpoint-transposed-character-energy"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-top-endpoint-near-product-energy/synthesis.md"
+          ]
+        },
+        "next_action": "For the hard top block attack the exact alternating transposed-row energy. Smooth interior small-gcd packets and the fourth-moment/pointwise interface remain separate."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round75-leading-saddle-evaluation-is-all-orders",
+        "reason": "The angular amplitude is nonconstant. Quadratic stationary phase has a generally nonzero correction g''(t_0)/(8 pi i x l), only J^(-1) below the leading normalized symbol on the narrowest collar; evaluation at t_0 alone cannot have an arbitrary-order remainder."
+      },
+      {
+        "id": "Round75-coefficient-L2-mass-implies-reciprocal-energy",
+        "reason": "The symbol square-mass budget controls only the diagonal. An artificial phase-conjugating array satisfies the same size budget while making one S_k of size J, so the actual signed off-diagonal requires additional structure."
+      },
+      {
+        "id": "Round75-continuous-Parseval-is-the-discrete-diagonal",
+        "reason": "The exact discrete square identity is periodized Parseval and contains every integer translate of the narrow l-packets. Replacing it by the unperiodized continuous L2 norm omits the alias off-diagonal."
+      },
+      {
+        "id": "Round75-second-high-character-Bprocess-gives-new-saving",
+        "reason": "The active modes are k=-m. The high-character B-process restores the odd character, the cone m<=r<=4m, the phase e(sqrt(Xmr)), and the actual profile, with principal factor e(-1/8)sqrt(J/L). Its energy is the transposed-row Cauchy problem, not an independent gain."
+      },
+      {
+        "id": "Round75-frozen-symbol-has-exact-finite-self-return",
+        "reason": "Exact inversion requires the full Fresnel or all-orders moving symbol. The frozen leading symbol loses algebraic stationary corrections, so its finite margin-sensitive self-return is only asymptotic with target-safe error."
+      },
+      {
+        "id": "Round75-fixed-angular-collar-replaces-additive-edge",
+        "reason": "The lower and upper collar distances are x(t^2-1/4) and x(1-t^2); they depend on both variables. A fixed angular cutoff does not preserve the affine lattice edges or their derivative ledger."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "reason": "The alternating transposed-row energy remains unproved and no polynomial intermediate L-range was added."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "Round 75 concerns only the M2 top endpoint."
+      },
+      {
+        "id": "M9",
+        "reason": "Both M9-M1 and M9-M2 remain open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The exact energy reduction gives no full M2 estimate and no global exponent improvement."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "The round proves no target estimate, but it corrects a false all-orders transform, independently certifies a character-preserving finite energy reduction, identifies its exact alternating offset, and proves that the reciprocal-energy loop is an adjoint return rather than a new gain."
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 34,
+    "round_type": "beta_complete_axial_connector_ledger",
+    "campaign_id": "m9-m1-beta-complete-axial-connector-ledger",
+    "title": "Actual two-axis beta connector and corner ledger",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "literature_policy": "Use finite one- and several-variable Cauchy--Green/Stokes algebra and the accepted vector-kernel factors. Search primary literature only if a named several-complex-variable residue identity is genuinely needed; any import must preserve the finite rectangular faces, nonholomorphic mask, axial poles, and mixed connector."
+    },
+    "target_obligations": [
+      "M9-M1-beta-complete-axial-connector-ledger",
+      "M9-M1-beta-mask-endpoint-axial-compatibility"
+    ],
+    "frozen_target": {
+      "question": "After global endpoint collapse but before any local polar subtraction, can the actual finite endpoint-free beta operator be expanded under both u- and v-axis shifts with every face, area connector, connector-axis residue, mixed psi''/4 stratum, and joint corner assigned exactly once and independently of shift order?",
+      "reference_formula": "For the actual endpoint-free finite kernel Q_beta=psi(beta)Q on the terminal, renormalized-side, and residual arithmetic strata, define the v-transfer by H_(v,+)-H_(v,-)+2pi i Res_(v=0)(psi(beta)Q)+(1/2)intint psi'(beta)Q, and analogously in u. Expand X_u X_v Q_beta and X_v X_u Q_beta completely. Include the u-shift of v-horizontals, v=0 residue, and v-area connector, hence connector boundaries, connector-axis residues, mixed +(1/4)intintintint psi''(beta)Q, and the joint corner once. Prove the two expansions agree or isolate the first explicit mismatch. No size estimate is included.",
+      "quantities": [
+        "actual endpoint-free terminal R1 vector integrand",
+        "renormalized radial-side and residual arithmetic strata before licensed limits",
+        "finite u- and v-horizontal faces with orientations",
+        "filtered u=0 and v=0 vector residues",
+        "u and v mask-area connectors",
+        "connector-axis residues and connector boundary faces",
+        "mixed derivative partial_mu partial_nu Theta_beta=psi''(beta)/4",
+        "joint u=v=0 corner under one fixed convention",
+        "artificial-pole, collision, profile, floor, star, and X^(1/4) ledger",
+        "equivalence of u-then-v and v-then-u expansions"
+      ]
+    },
+    "completion_criteria": [
+      "One explicit finite endpoint-free actual integrand schema is frozen before applying the axis shifts.",
+      "The v-then-u expansion lists every codimension-zero, face, connector, axis, mixed, and corner stratum with sign and mask weight.",
+      "The u-then-v expansion is written independently and matched term by term, or the first mismatch is isolated.",
+      "The full-axis versus corner-deleted residue convention is fixed and never mixed.",
+      "Artificial-pole cancellation and physical endpoint-module scope remain compatible with the global boundary-first order.",
+      "A blind derivation and hostile audit independently assess the ledger.",
+      "The conductor closes the round before defining or estimating the axial-subtracted symbol."
+    ],
+    "controls": [
+      "one-axis-orientation-and-area-sign",
+      "two-axis-mixed-derivative-sign",
+      "connector-axis-and-boundary-strata",
+      "corner-inclusion-exclusion",
+      "shift-order-commutation",
+      "actual-factor-and-residue-ownership",
+      "endpoint-first-normalization"
+    ],
+    "tasks": [
+      {
+        "id": "blind_two_axis_connector_identity",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "target": "Independently derive the finite two-axis Cauchy--Green formula for a separately meromorphic Q(u,v) multiplied by Theta=psi(t-(mu+nu)/2). Expand v then u and u then v, including all horizontal faces, area connectors, connector-axis residues, mixed psi''/4 term, and one joint corner. Fix one residue convention and prove equality or isolate the first sign mismatch. Then state exactly how the abstract identity acts stratumwise on an endpoint-free vector kernel. Do not read Round-34 claimant reports.",
+        "context_files": [
+          "protocol.md",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-vector-hankel-kernel/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/synthesis.md"
+        ],
+        "excluded_context": [
+          "all Round-34 claimant reports",
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/reviews"
+        ],
+        "required_controls": [
+          "one-axis-orientation-and-area-sign",
+          "two-axis-mixed-derivative-sign",
+          "connector-axis-and-boundary-strata",
+          "corner-inclusion-exclusion",
+          "shift-order-commutation"
+        ],
+        "required_output": [
+          "Complete abstract two-axis finite identity or first mismatch",
+          "Term-by-term order-reversal and corner ledger",
+          "Seven-section report at the assigned path"
+        ]
+      },
+      {
+        "id": "actual_axial_connector_ledger_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "target": "Insert the actual endpoint-free M1 beta terminal R1 vector factor, renormalized radial sides, and any residual arithmetic strata into the finite two-axis shift. Write one explicit v-then-u ledger and match the reversed order, retaining every profile, floor, star, character, artificial-pole cancellation, and physical normalization. Prove the actual connector-completed axial vector identity or isolate the smallest undefined actual coefficient.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-vector-hankel-kernel/reports/blind_finite_vector_kernel.md",
+          "rounds/codex-managed/m9-m1-radial-endpoint-renormalization/synthesis.md",
+          "rounds/codex-managed/m9-m1-r1-arithmetic-residue/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-radial-pushforward-bv/reports/blind_hierarchical_recombined_identity.md",
+          "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/reports/mask_endpoint_axial_attack.md",
+          "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/reviews/conductor_two_axis_connector_ledger.md",
+          "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/synthesis.md"
+        ],
+        "required_controls": [
+          "one-axis-orientation-and-area-sign",
+          "two-axis-mixed-derivative-sign",
+          "connector-axis-and-boundary-strata",
+          "corner-inclusion-exclusion",
+          "shift-order-commutation",
+          "actual-factor-and-residue-ownership",
+          "endpoint-first-normalization"
+        ],
+        "required_output": [
+          "Actual connector-completed axial vector identity or first undefined coefficient",
+          "Complete profiles, residues, sides, collision, and normalization ledger",
+          "Seven-section report at the assigned path"
+        ]
+      },
+      {
+        "id": "two_axis_connector_hostile_audit",
+        "role": "seam_reviewer",
+        "access_mode": "selected_context",
+        "target": "Hostilely audit the two-axis ledger. Check one-variable signs, orientation of all faces, product Stokes signs, psi''/4, whether connector-axis residues are omitted, full-axis versus corner-deleted conventions, order reversal, sheared-coordinate faces, artificial-pole and axial collisions, and whether any claimed actual stratum was already removed by a physical-limit module. Give a counteridentity or certify the narrowest finite result.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-vector-hankel-kernel/reports/blind_finite_vector_kernel.md",
+          "rounds/codex-managed/m9-m1-endpoint-boundary-cauchy/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/reports/mask_endpoint_axial_hostile_audit.md",
+          "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/reviews/conductor_two_axis_connector_ledger.md",
+          "rounds/codex-managed/m9-m1-beta-mask-endpoint-axial-compatibility/synthesis.md"
+        ],
+        "required_controls": [
+          "one-axis-orientation-and-area-sign",
+          "two-axis-mixed-derivative-sign",
+          "connector-axis-and-boundary-strata",
+          "corner-inclusion-exclusion",
+          "shift-order-commutation",
+          "actual-factor-and-residue-ownership",
+          "endpoint-first-normalization"
+        ],
+        "required_output": [
+          "Independent product-Stokes, corner, collision, and scope audit",
+          "Counteridentity or scoped certification",
+          "Seven-section report at the assigned path"
+        ]
+      }
+    ],
+    "review_seams": [
+      "right-minus-left and upper-minus-lower orientation in each axis",
+      "sign of one-axis mask area connector",
+      "sign and dimension of mixed psi'' connector",
+      "connector boundary and connector-axis residues",
+      "full-axis inclusion--exclusion versus corner-deleted convention",
+      "termwise u-v order reversal",
+      "sheared A,v coordinate boundary equivalence",
+      "actual R1 terminal, side, and arithmetic ownership",
+      "artificial/axial/corner pole collisions",
+      "profiles, floors, stars, character, and external normalization"
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "09d4a1cb1664719cb8df255f371d496b5bbcb112f5611d63c742055bf495f193",
+    "generated_at": "2026-08-13T00:53:06.119398+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

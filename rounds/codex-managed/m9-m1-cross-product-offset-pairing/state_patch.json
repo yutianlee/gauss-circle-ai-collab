@@ -1,0 +1,164 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-half-lattice-centering",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Target-sized half-lattice centering for the exact M1 kernel",
+        "status": "proved_internal",
+        "statement_tex": "For the exact two-sided M1 frequency block with its fixed actual spatial profile and hard endpoint, choose c in (1/2)Z with |X-c|<=1/4. Then M_(1,L)(D;X)=sum_d chi_4(d)w_D(d)V_(L,H)(c/d)+O_w(L+X^epsilon), uniformly for X^(1/4)<=D<=X^(1/2) and 1<=L<=H asymp D X^(-1/4). Changed nearest-product assignments satisfy d|2c and 2c/d odd and are divisor-bounded; all other terms cost O(L) by ||V'||_infinity<<L and sum_(d asymp D)|w_D(d)|/d<<1. The top cutoff is held fixed, so the lemma includes the hard endpoint.",
+        "dependencies": [
+          "M9-M1-near-product-character-kernel",
+          "M9-M2-dyadic-weight-nondegeneracy"
+        ],
+        "implies": ["M9-M1-cross-product-odd-kernel-discrepancy"],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-cross-product-offset-pairing/reports/blind_offset_pairing_identity.md",
+            "rounds/codex-managed/m9-m1-cross-product-offset-pairing/reports/offset_stability_attack.md",
+            "rounds/codex-managed/m9-m1-cross-product-offset-pairing/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use half-lattice centers without changing the actual spatial cutoff; charge the O(L+X^epsilon) error once per frequency block."
+      },
+      {
+        "id": "M9-M1-offset-pairing-disjoint-fiber-no-go",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Disjoint-fiber obstruction to naive opposite-offset cancellation",
+        "status": "proved_internal",
+        "statement_tex": "At c in (1/2)Z, pair integer product centers c-u and c+u and define the exact nearest-product fibers F_-(u)={d:w_D(d)!=0,d|c-u,d>2u} and F_+(u)={d:w_D(d)!=0,d|c+u,d>2u}, with the harmless upper equality removed using V(1/2)=0. Then F_-(u) intersect F_+(u) is empty for every u>0. The paired odd-kernel contribution is sum_(F_-)chi_4(d)w_D(d)V(u/d)-sum_(F_+)chi_4(d)w_D(d)V(u/d). Divisibility gives V(u/d)=V(c/d) on F_- and V(u/d)=-V(c/d) on F_+, so the outer minus reverses and the two incidences reconstruct, rather than cancel, the centered M1 block. Therefore same-denominator matching, rank pairing, and symmetric-difference control provide no H/L saving. This does not obstruct collective cancellation between different denominators.",
+        "dependencies": [
+          "M9-M1-near-product-character-kernel",
+          "M9-M1-half-lattice-centering"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-cross-product-offset-pairing/reports/blind_offset_pairing_identity.md",
+            "rounds/codex-managed/m9-m1-cross-product-offset-pairing/reports/offset_stability_attack.md",
+            "rounds/codex-managed/m9-m1-cross-product-offset-pairing/reports/offset_pairing_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-cross-product-offset-pairing/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Reject future opposite-offset arguments unless they prove a collective correlation between unequal denominators rather than a termwise reflection."
+      },
+      {
+        "id": "M9-M1-shifted-divisor-correlation-PSC",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Annular paired shifted-divisor correlation for M1",
+        "status": "open",
+        "statement_tex": "For c in (1/2)Z, dyadic U, lambda_U=min(LU/D,1,D/(LU)), G_U(u,d)=lambda_U^(-1)V_(L,H)(u/d), and the exact disjoint nearest-product fibers F_-(u),F_+(u), prove |Q_U(c;D,L)|<<_epsilon X^(1/4+epsilon)lambda_U^(-1), where Q_U is the outside-absolute signed sum over U<u<=2U of the F_- incidence minus the F_+ incidence with coefficient chi_4(d)w_D(d)G_U(u,d). The estimate must be uniform on U_1 and retain the actual profiles and divisor-dependent symbol. Summing lambda_U Q_U over annuli, together with half-lattice centering, is sufficient for the M1 target. At U=D/L it must save the factor H/L beyond the trivial divisor bound.",
+        "dependencies": [
+          "M9-M1-half-lattice-centering",
+          "M9-M1-offset-pairing-disjoint-fiber-no-go"
+        ],
+        "implies": ["M9-M1-cross-product-odd-kernel-discrepancy"],
+        "blockers": [],
+        "evidence": {
+          "positive": [],
+          "negative": [
+            "rounds/codex-managed/m9-m1-cross-product-offset-pairing/reports/offset_pairing_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-cross-product-offset-pairing/reports/blind_offset_pairing_identity.md",
+            "rounds/codex-managed/m9-m1-cross-product-offset-pairing/reports/offset_stability_attack.md",
+            "rounds/codex-managed/m9-m1-cross-product-offset-pairing/synthesis.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Seek ordered-denominator or bilinear cancellation between unequal divisors; do not estimate the two fibers separately."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-cross-product-odd-kernel-discrepancy",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M1-half-lattice-centering",
+          "M9-M1-offset-pairing-disjoint-fiber-no-go",
+          "M9-M1-shifted-divisor-correlation-PSC"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-cross-product-offset-pairing/reports/blind_offset_pairing_identity.md",
+            "rounds/codex-managed/m9-m1-cross-product-offset-pairing/reports/offset_stability_attack.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-m1-cross-product-offset-pairing/reports/offset_pairing_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-cross-product-offset-pairing/synthesis.md"
+          ]
+        },
+        "next_action": "Prove PSC or a weaker whole-sum ordered-denominator estimate on U_1. Opposite-offset reflection is only a reindexing and cannot supply the saving termwise."
+      },
+      {
+        "id": "M9-M1",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M1-half-lattice-centering",
+          "M9-M1-offset-pairing-disjoint-fiber-no-go",
+          "M9-M1-shifted-divisor-correlation-PSC"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-cross-product-offset-pairing/reports/blind_offset_pairing_identity.md",
+            "rounds/codex-managed/m9-m1-cross-product-offset-pairing/synthesis.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-m1-cross-product-offset-pairing/reports/offset_stability_attack.md",
+            "rounds/codex-managed/m9-m1-cross-product-offset-pairing/reports/offset_pairing_hostile_audit.md"
+          ]
+        },
+        "next_action": "Attack ordered-denominator cancellation for the actual M1 kernel on U_1; the exact-square control shows this mechanism can work, whereas opposite-offset divisor matching cannot."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round12-naive-opposite-offset-cancellation",
+        "reason": "The paired nearest-product divisor fibers are disjoint, and the divisibility sign on the upper kernel cancels the outer oddness sign, reconstructing the centered M1 sum."
+      },
+      {
+        "id": "Round12-same-denominator-reflection",
+        "reason": "A denominator common to the lower and upper nearest-product fibers would divide 2u while the lower cutoff requires d>2u."
+      },
+      {
+        "id": "Round12-generic-real-exact-product-reflection",
+        "reason": "Reflection of integer product centers about X preserves the integer lattice only when 2X is integral; generic X must first be moved to a half-lattice center at target-sized cost."
+      },
+      {
+        "id": "Round12-separate-fiber-large-sieve-closes-PSC",
+        "reason": "Separate norm estimates see two disjoint supports and discard the signed cross-correlation; they recover only the trivial D/L critical scale."
+      },
+      {
+        "id": "Round12-prime-singletons-prove-total-lower-bound",
+        "reason": "Singleton fibers refute deterministic termwise matching, but a simultaneous unmatched lower bound for both reflected products at one center requires an unproved shifted factorization correlation."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1-top-endpoint-signed-cone",
+        "reason": "The hard-top residual remains an instance of the open ordered-denominator or PSC estimate."
+      },
+      {"id": "M9-M2", "reason": "Round 12 is M1-specific."},
+      {"id": "M9", "reason": "M9-M1 and M9-M2 remain open."},
+      {"id": "GC-target", "reason": "The final theorem remains conditional on open M9."}
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 6,
+    "idea_quality_score": 7,
+    "state_evidence_score": 9,
+    "calibration_score": 10,
+    "reason": "Round 12 proves target-sized half-lattice centering and an exact disjoint-fiber identity, rigorously closing naive reflected-offset cancellation while isolating PSC as the honest signed correlation. It closes no new exponent region."
+  }
+}

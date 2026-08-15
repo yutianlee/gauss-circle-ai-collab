@@ -1,0 +1,100 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-top-block-quadratic-completion-self-return",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Exact additive quadratic completion and terminal-symbol self-return",
+        "status": "proved_internal",
+        "statement_tex": "For the Round-58 high-shell core, 1_(h|n)chi_4(n/h)=-(i/(2h))sum_(a mod 4h)chi_4(a)e(an/(4h)). On every smooth interior radial piece, Poisson summation with r=4hk-a has n_*=4Xh^2/r^2, Legendre phase Xh/r, curvature -r^3/(32Xh^3), and stationary coefficient 2sqrt(2)e(1/8)chi_4(r)X^(1/2)h^(1/2)r^(-3/2). The identity 2h sqrt(X/n_*)=r restores exactly sum_j 1_(h<=H_j)Phi(h/(H_j+1))[w_j(r)]^*, including floors, hard top, and equality stars. For X asymp R^4, h asymp R, r asymp R^2, a length-R primal window gives an R-by-R raw reciprocal strip of capacity R^2, while the stationary coefficient is R^(-1/2); the required raw signed bound is O_epsilon(RX^epsilon). Under r=4Kh+s, det Hess(Xh/(4Kh+s))=-X^2/r^4 asymp -1 and both eigenvalues have order one with opposite signs, but this real determinant alone implies no lattice saving. A complete hard-symbol B-process, the raw signed strip estimate, and a lossless decomposition into the accepted terminal-M1 coefficient class remain open.",
+        "dependencies": [
+          "M9-M1-top-block-hyperbola-floor-Fourier-reduction",
+          "M9-M1-terminal-frequency-divisor-bound",
+          "M9-M1-global-angular-recombination"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-top-block-quadratic-divisor-completion/reports/quadratic_divisor_completion_attack.md",
+            "rounds/codex-managed/m9-m1-top-block-quadratic-divisor-completion/reports/blind_quadratic_completion_rederivation.md",
+            "rounds/codex-managed/m9-m1-top-block-quadratic-divisor-completion/reports/quadratic_completion_source_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-top-block-quadratic-divisor-completion/reviews/conductor_quadratic_completion_adjudication.md",
+            "rounds/codex-managed/m9-m1-top-block-quadratic-divisor-completion/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Audit the full fixed-relative-width critical radial block against the accepted terminal-frequency divisor theorem, with exact D,L ownership, Mellin or dyadic separation, endpoints, profiles, floors, stars, and transform errors."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "dependencies_added": ["M9-M1-top-block-quadratic-completion-self-return"],
+        "evidence_added": {
+          "negative": ["rounds/codex-managed/m9-m1-top-block-quadratic-divisor-completion/synthesis.md"],
+          "inconclusive": ["rounds/codex-managed/m9-m1-top-block-quadratic-divisor-completion/reviews/conductor_quadratic_completion_adjudication.md"]
+        },
+        "next_action": "Audit whether the full critical radial block, unlike a length-R short window, is a fixed-relative-width terminal M1 sector controlled by the accepted O_epsilon(1+D/L) theorem. Keep the exact angular symbol and all boundary owners."
+      },
+      {
+        "id": "M9-M1-top-block-hyperbola-floor-Fourier-reduction",
+        "evidence_added": {
+          "positive": ["rounds/codex-managed/m9-m1-top-block-quadratic-divisor-completion/synthesis.md"]
+        },
+        "next_action": "The exact short core now has an exact reciprocal self-return, but its R-by-R signed strip remains open. Do not use determinant or counting alone."
+      },
+      {
+        "id": "M9-M1-terminal-frequency-divisor-bound",
+        "evidence_added": {
+          "inconclusive": ["rounds/codex-managed/m9-m1-top-block-quadratic-divisor-completion/synthesis.md"]
+        },
+        "next_action": "Test the full critical radial sector only. The short-window moving strip is not in the theorem's separable coefficient class."
+      },
+      {
+        "id": "M9-M1-dual-restricted-convolution-RCS",
+        "evidence_added": {
+          "negative": ["rounds/codex-managed/m9-m1-top-block-quadratic-divisor-completion/reports/quadratic_completion_source_hostile_audit.md"]
+        },
+        "next_action": "Use the exact coefficient self-return to distinguish full terminal sectors from short moving strips; product completion alone supplies no signed estimate."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round59-short-window-dual-counting-closes-shell",
+        "reason": "A length-R primal window produces R dual integers for each of R frequency rows, hence raw capacity R^2; the stationary factor R^(-1/2) still leaves R^(3/2), not sqrt(R)."
+      },
+      {
+        "id": "Round59-nonzero-Hessian-determinant-implies-lattice-square-root",
+        "reason": "The integer phase Q(u,v)=uv has Hessian determinant -1 yet e(Q(u,v)) is identically one on Z^2. Modulo-one arithmetic and the actual character-weighted symbol are indispensable."
+      },
+      {
+        "id": "Round59-sheared-Hessian-has-R-and-R-inverse-eigenvalues",
+        "reason": "Exact differentiation after r=4Kh+s cancels the apparent order-R hh terms; the mixed derivative is order one, determinant is order one, and both eigenvalues have order-one magnitude with opposite signs."
+      },
+      {
+        "id": "Round59-short-moving-strip-is-automatically-terminal-M1-coefficient-class",
+        "reason": "The short radial selector 2h sqrt(X/B)<=r<=2h sqrt(X/A) depends jointly on h and r, whereas the accepted terminal theorem assumes a separable BV frequency coefficient and h-independent bounded denominator profile."
+      },
+      {
+        "id": "Round59-smooth-interior-saddle-formula-owns-hard-endpoints-and-stars",
+        "reason": "Artificial radial endpoints, profile and hard-top seams, independent stars, nonstationary integrals, and saddle-edge transitions require a separate uniform B-process ledger."
+      }
+    ],
+    "no_change": [
+      {"id": "M9-M1", "reason": "The short signed strip, lower radial/frequency corridor, alpha transfer, and endpoint uniformity remain open."},
+      {"id": "M9", "reason": "M9-M1 and M9-M2 remain open."},
+      {"id": "GC-target", "reason": "The self-return reduction proves no discrepancy exponent."}
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 59 proves the exact additive projector, stationary normalization, and coefficient-level return to the terminal M1 reciprocal symbol, while correcting two tempting scale errors. It rigorously shows that short-window completion retains an R-by-R signed strip and that Hessian determinant alone is insufficient. No shell estimate or exponent is proved."
+  }
+}

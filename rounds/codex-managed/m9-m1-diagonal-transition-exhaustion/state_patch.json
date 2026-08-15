@@ -1,0 +1,138 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-diagonal-single-transition-normal-form",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Exact diagonal gamma factorization and single-transition normal forms",
+        "status": "proved_internal",
+        "statement_tex": "With alpha=Im s+Im(u+v)/2 and beta=Im s-Im(u+v)/2, K_z(1-s) factors exactly into R_alpha R_beta times the explicit 2,pi powers, where R_alpha=Gamma((1+sigma+zeta/2)/2+i alpha/2)/Gamma((2-sigma-zeta/2)/2-i alpha/2) and R_beta=Gamma((sigma-zeta/2)/2+i beta/2)/Gamma((1-sigma+zeta/2)/2-i beta/2). If beta is bounded and alpha large, R_beta remains exact while R_alpha has power |alpha/2|^(sigma+zeta/2-1/2) and signed Stirling phase |alpha|log(|alpha|/2)-|alpha|+pi/4; the opposite transition interchanges alpha,beta and has phase constant -pi/4. The map (t,eta,mu) to (alpha,beta,nu) has absolute Jacobian one and sends the finite box to |nu|<=V, |alpha-beta-nu|<=U, |alpha+beta|<=2S. All profiles, residues, stars, and horizontal sides remain explicit.",
+        "dependencies": [
+          "M9-M1-finite-vector-Hankel-identity",
+          "M9-M1-vector-Hankel-conductor-diagram"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-diagonal-transition-exhaustion/reports/blind_diagonal_transition_kernel.md",
+            "rounds/codex-managed/m9-m1-diagonal-transition-exhaustion/reports/nested_contour_exhaustion_attack.md",
+            "rounds/codex-managed/m9-m1-diagonal-transition-exhaustion/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use this normal form for signed transition estimates; do not replace the bounded gamma factor by large-argument Stirling."
+      },
+      {
+        "id": "M9-M1-absolute-nested-exhaustion-capacity-no-go",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Absolute nested contour exhaustion cannot remove the hard radial sides",
+        "status": "proved_internal",
+        "statement_tex": "For S=(X+U+V+2)^4, radial horizontal sides are separated from both gamma transition planes and the radial x-phase is nonstationary. Because the finite radial cutoff is hard, integration by parts produces endpoint terms beginning at O(S^(-1)), not rapid decay. On the forced left edge lambda=1-c'<0, the available degree-two functional-equation upper capacity is O(S^(1-2lambda)); hence the elementary absolute side bound is O(S^(-2lambda)), which grows. On terminal single-transition traces, the gamma power combined with the hard 1/u profile is likewise not absolutely integrable. This rules out side deletion and transition control by absolute pointwise estimates or faster nesting alone; it does not rule out a new signed boundary or vector-Hilbert cancellation theorem.",
+        "dependencies": [
+          "M9-M1-diagonal-single-transition-normal-form",
+          "M9-M1-finite-vector-Hankel-identity"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-diagonal-transition-exhaustion/reports/nested_contour_exhaustion_attack.md",
+            "rounds/codex-managed/m9-m1-diagonal-transition-exhaustion/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Subtract explicit radial endpoint asymptotics before contour shifting and test signed cancellation of the resulting boundary functional."
+      },
+      {
+        "id": "M9-M1-renormalized-radial-boundary-operator",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Renormalized radial endpoint and diagonal vector-Hilbert operator",
+        "status": "open",
+        "statement_tex": "Expand G_v(w) at both hard radial endpoints to sufficient finite order, subtract those endpoint asymptotics before the radial contour shift, and retain the resulting explicit boundary functionals together with every zeta, height, hard-Perron, corner, and radial endpoint residue. Prove that the renormalized radial horizontal sides vanish under a declared nested exhaustion and that the remaining two diagonal single-transition traces satisfy a target-sized signed vector-Hilbert estimate under the symmetric top 1/u limit. No absolute-value or fixed-order shortcut is allowed.",
+        "dependencies": [
+          "M9-M1-diagonal-single-transition-normal-form",
+          "M9-M1-absolute-nested-exhaustion-capacity-no-go"
+        ],
+        "implies": [
+          "M9-M1-swept-transition-horizontal-operator"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-diagonal-transition-exhaustion/reports/blind_diagonal_transition_kernel.md",
+            "rounds/codex-managed/m9-m1-diagonal-transition-exhaustion/reports/nested_contour_exhaustion_attack.md",
+            "rounds/codex-managed/m9-m1-diagonal-transition-exhaustion/synthesis.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Derive the endpoint subtraction algebra exactly and test whether its boundary terms pair with existing residues before attempting the transition estimate."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-swept-transition-horizontal-operator",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M1-diagonal-single-transition-normal-form",
+          "M9-M1-absolute-nested-exhaustion-capacity-no-go",
+          "M9-M1-renormalized-radial-boundary-operator"
+        ],
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-m1-diagonal-transition-exhaustion/reports/nested_contour_exhaustion_attack.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-diagonal-transition-exhaustion/reports/blind_diagonal_transition_kernel.md",
+            "rounds/codex-managed/m9-m1-diagonal-transition-exhaustion/synthesis.md"
+          ]
+        },
+        "statement_tex": "In diagonal heights alpha=Im s+Im(u+v)/2 and beta=Im s-Im(u+v)/2, control both exact single-transition normal forms together with the radial horizontal-side functional and all residues. Absolute nested exhaustion fails because hard radial endpoints give only S^(-1) decay against functional-equation growth; the next sufficient interface is M9-M1-renormalized-radial-boundary-operator.",
+        "next_action": "Renormalize radial endpoint expansions and seek signed boundary/residue cancellation plus a vector-Hilbert estimate on both transition traces."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round20-faster-nesting-deletes-radial-sides-absolutely",
+        "reason": "Hard radial endpoint terms decay only as S^(-1), while the left-edge functional-equation factor has growing polynomial capacity."
+      },
+      {
+        "id": "Round20-transition-traces-integrate-absolutely-through-top",
+        "reason": "On a swept trace the one-large gamma power combined with the hard 1/u measure is nonintegrable on the required terminal abscissa."
+      },
+      {
+        "id": "Round20-diagonal-normal-form-proves-target-sector",
+        "reason": "The normal form supplies exact phase and amplitude but no signed vector-Hilbert or boundary cancellation estimate."
+      },
+      {
+        "id": "Round20-sharp-side-lower-bound-promoted-without-review",
+        "reason": "The stronger claimed two-sided asymptotic lower bound for the full side functional did not receive the planned hostile validation; only the absolute-method capacity obstruction is accepted."
+      }
+    ],
+    "no_change": [
+      {"id": "M9-M1-post-FE-vector-kernel", "reason": "No vector operator estimate was proved."},
+      {"id": "M9-M1-high-2adic-tail-conditional", "reason": "The reflected vector tail remains uncontrolled."},
+      {"id": "M9-M1-global-angular-radial-estimate", "reason": "No GAR bound was proved."},
+      {"id": "M9-M1", "reason": "No M1 estimate was proved."},
+      {"id": "M9-M2", "reason": "Round 20 concerns transformed M1."},
+      {"id": "M9", "reason": "Principal sublemmas remain open."},
+      {"id": "GC-target", "reason": "Transition algebra and a no-go do not prove the target."}
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 6,
+    "idea_quality_score": 8,
+    "state_evidence_score": 7,
+    "calibration_score": 10,
+    "reason": "Round 20 derives exact single-transition normal forms and proves that absolute nested exhaustion cannot remove the hard radial sides. The hostile task did not complete, so stronger side asymptotics were deliberately withheld."
+  }
+}

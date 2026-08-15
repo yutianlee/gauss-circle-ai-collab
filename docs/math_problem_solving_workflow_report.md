@@ -1,4 +1,6 @@
-# Math Problem-Solving Workflow Report: Gauss Circle Project
+# Math Problem-Solving Workflow Report: Gauss Circle Project (Historical)
+
+> This report describes the retired fixed-agent workflow. The active architecture is documented in `architecture-and-workflow-revised.md`, `protocol.md`, and `docs/proof-obligation-workflow.md`.
 
 Generated: 2026-06-25
 
@@ -104,8 +106,8 @@ The config defines:
 The roles are intentionally asymmetric:
 
 - `A1` is the strategist, synthesis writer, literature scout, and default judge.
-- `A2` is the conservative referee and obstruction finder, with strict long-form formula-level requirements.
-- `A3` is the API proof auditor, algebra checker, normalization checker, and executable-test planner.
+- `A2` is the conservative referee and obstruction finder, with strict long-form formula-level requirements, and the AI Studio Code Execution runner for small self-contained diagnostics.
+- `A3` is the API proof auditor, algebra checker, normalization checker, and diagnostic script/result auditor.
 - `A4` is the narrow analytic proof-surgeon for focused M9 sublemmas and dependency calibration.
 
 This gives the workflow four complementary failure modes and strengths: synthesis, adversarial conservatism, automated audit, and narrow proof surgery.
@@ -344,8 +346,8 @@ At the time of this report:
 Round 28's intended purpose is an execution-and-taxonomy round:
 
 - A1 should maintain the conservative proof draft and state packet.
-- A2 should complete the `M2` fourth-moment taxonomy and near-collision formulation.
-- A3 should execute source checks and computational diagnostics instead of producing only protocol-level plans.
+- A2 should complete the `M2` fourth-moment taxonomy and near-collision formulation, and run assigned small Python diagnostics through AI Studio Code Execution when available.
+- A3 should audit diagnostic scripts/results and source-check logic instead of producing only protocol-level plans.
 - A4 should focus on narrow analytic proof surgery for selected M9 sublemmas.
 
 ## Strengths of the Current Workflow
@@ -740,8 +742,8 @@ Each round can still use A1/A2/A3/A4, but the judge should assign tasks by track
 1. Complete Round 28 Stage A by collecting the web-agent reasoning outputs.
 2. Run Stage B cross-review only after A1/A2/A3/A4 reasoning outputs are present.
 3. In the Round 28 judge synthesis, require a structured state patch.
-4. Do not accept protocol-only A3 output as sufficient for the execution track.
-5. Make A3's next deliverable a script plus at least one small reproducible table.
+4. Do not accept protocol-only output as sufficient for the execution track.
+5. Make A2's next computation-track deliverable an AI Studio Code Execution run with exact Python code, returned output, parameters, limitations, and `diagnostic_only` status; require Codex/local reproduction and A3 script/result audit before treating it as repository evidence.
 
 ### Next Tooling Actions
 

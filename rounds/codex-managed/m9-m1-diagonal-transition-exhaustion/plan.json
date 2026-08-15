@@ -1,0 +1,49 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 20,
+    "round_type": "diagonal_transition_exhaustion_attack",
+    "campaign_id": "m9-m1-diagonal-transition-exhaustion",
+    "title": "Diagonalize the swept gamma transitions and validate contour exhaustion",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "conductor_policy": {
+      "strategy_owner": "Codex conductor",
+      "subagents_may_start_next_round": false,
+      "monitoring": "Keep alpha,beta, all finite heights, residues, actual profiles, dual indices, and symmetric hard-Perron truncation explicit; no premature side deletion.",
+      "round_close": "Close after blind transition algebra, exhaustion attack, hostile uniformity/source audit, and graph adjudication."
+    },
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 95,
+      "numerical_experimental_maximum_percent": 5,
+      "numerical_purpose": ["bounded falsification of transition scaling or side-decay exponents"],
+      "literature_policy": "Primary uniform-asymptotic sources only after exact single-transition normalization."
+    },
+    "target_obligations": [
+      "M9-M1-swept-transition-horizontal-operator",
+      "M9-M1-post-FE-vector-kernel",
+      "M9-M1-maximal-angular-sign-kernel",
+      "M9-M1-top-Perron-angular-correlation"
+    ],
+    "tasks": [
+      {"id":"blind_diagonal_transition_kernel","role":"statement_only_transition_deriver","brief":"rounds/codex-managed/m9-m1-diagonal-transition-exhaustion/briefs/blind_diagonal_transition_kernel.md"},
+      {"id":"nested_contour_exhaustion_attack","role":"horizontal_side_and_transition_attacker","brief":"rounds/codex-managed/m9-m1-diagonal-transition-exhaustion/briefs/nested_contour_exhaustion_attack.md"},
+      {"id":"transition_exhaustion_hostile_audit","role":"hostile_uniformity_and_source_reviewer","brief":"rounds/codex-managed/m9-m1-diagonal-transition-exhaustion/briefs/transition_exhaustion_hostile_audit.md"}
+    ],
+    "exit_gates": ["diagonal transition formula","phase/amplitude/localization","nested exhaustion","Perron/residue compatibility","estimate or obstruction","conductor decision"],
+    "promotion_policy": "Promote only transition formulas with exact gamma normalization and estimates uniform under the declared nested exhaustion.",
+    "closing_assessment": {
+      "decision": "promote_transition_normal_form_and_absolute_exhaustion_no_go",
+      "graph_mutation": true,
+      "main_result": "Exact diagonal single-transition normal forms are proved. Hard radial endpoint terms and nonintegrable hard-Perron traces prevent absolute nested exhaustion; stronger side asymptotics were withheld for lack of hostile review."
+    },
+    "next_round": 21
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "8b995fb71c46fb4b38a2ee79c70da79e99a16fa67ebaf84338f736186abd42ef",
+    "generated_at": "2026-08-12T20:20:00+08:00"
+  },
+  "artifact_policy": {"subagents_may_edit_shared_state":false,"computation_evidence_level":"diagnostic_only","coordinator_owns_synthesis_and_state_patch":true}
+}

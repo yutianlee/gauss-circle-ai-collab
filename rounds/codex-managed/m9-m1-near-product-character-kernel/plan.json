@@ -1,0 +1,44 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 11,
+    "round_type": "signed_near_product_kernel",
+    "campaign_id": "m9-m1-near-product-character-kernel",
+    "title": "Retain and exploit the M1 short-interval character-divisor coefficient",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "conductor_policy": {
+      "strategy_owner": "Codex conductor",
+      "subagents_may_start_next_round": false,
+      "monitoring": "Derive the exact grouped kernel before absolute values; distinguish exact products, near products, divisor characters, and d-dependent frequency kernels; test both target estimates and sharp obstructions.",
+      "round_close": "Close only after an exact kernel, an arithmetic capacity verdict, and an independent hostile validation exist."
+    },
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 90,
+      "numerical_experimental_maximum_percent": 10,
+      "numerical_purpose": ["falsify a proposed cancellation law on bounded exact products"],
+      "numerical_prohibition": "Finite tests cannot certify the asymptotic kernel estimate.",
+      "literature_policy": "Use primary sources only if a short-interval character-divisor theorem is imported."
+    },
+    "target_obligations": ["M9-M1","M9-M1-frequency-phase-diagram-R10","M9-M1-top-endpoint-signed-cone","M9"],
+    "frozen_target": {
+      "corridor": "U_1={(delta,ell):0<=ell<delta-1/4, 178ell+1638delta>463} minus {(1/2,0)}.",
+      "kernel_question": "Regroup the actual frequency-first M1 block by n=dm before the final triangle inequality, retaining chi_4(d), w_D(d), the actual Vaaler kernel, and the dependence on (X-n)/d.",
+      "success": "Prove the X^(1/4+epsilon) target on a nonempty subset of U_1, isolate a smaller exact arithmetic lemma, or prove a rigorous capacity obstruction showing what extra input is necessary."
+    },
+    "tasks": [
+      {"id":"blind_near_product_kernel","role":"statement_only_exact_deriver","brief":"rounds/codex-managed/m9-m1-near-product-character-kernel/briefs/blind_near_product_kernel.md"},
+      {"id":"character_divisor_attack","role":"arithmetic_mechanism_attacker","brief":"rounds/codex-managed/m9-m1-near-product-character-kernel/briefs/character_divisor_attack.md"},
+      {"id":"near_product_hostile_audit","role":"hostile_capacity_reviewer","brief":"rounds/codex-managed/m9-m1-near-product-character-kernel/briefs/near_product_hostile_audit.md"}
+    ],
+    "exit_gates": ["exact pre-absolute-value kernel","exact-product and near-product separation","character-divisor estimate or obstruction","hard-top middle-frequency control","independent hostile validation","conductor graph decision"],
+    "promotion_policy": "Do not replace the d-dependent frequency kernel by an n-only surrogate without a quantified error. Promote no short-interval divisor theorem without exact character, weight, and interval hypotheses."
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "9ecc34dcf97f615b0f39fc8dfd3021ee5c31659e593088e09e88166b889199cb",
+    "generated_at": "2026-08-12T13:05:00+08:00"
+  },
+  "artifact_policy": {"subagents_may_edit_shared_state":false,"computation_evidence_level":"diagnostic_only","coordinator_owns_synthesis_and_state_patch":true}
+}

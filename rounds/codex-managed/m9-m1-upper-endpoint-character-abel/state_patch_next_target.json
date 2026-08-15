@@ -1,0 +1,72 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-R1-arithmetic-residue",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Target-sized recombined R1 arithmetic residue",
+        "status": "open",
+        "statement_tex": "Let delta=1/4-u/2-v and R_(1,v)(1-(u+v)/2)=-(pi i sqrt X)/delta times integral_(1<=x<=N_X)x^(delta-1/2)e(sqrt(Xx))dx. Prove that the accepted physical symmetric-profile limit of sum_j integral integral A_j(u,v)R_(1,v)(1-(u+v)/2)L(1-u-v,chi_4)dvdu is O_epsilon(X^epsilon) on the normalized M1 scale, with all scale floors, the top one-sided profile, height profile, and residue ledger retained. A candidate exact return formula introduces y=xr through 1/delta=integral_0^1 r^(delta-1)dr and then uses fixed-y Abel summation in q.",
+        "dependencies": [
+          "M9-M1-endpoint-Cauchy-reduction",
+          "M9-M1-radial-endpoint-subtraction-identity",
+          "M9-M1-upper-endpoint-character-Abel"
+        ],
+        "implies": [
+          "M9-M1-endpoint-boundary-operator",
+          "M9-M1-renormalized-radial-boundary-operator"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-radial-endpoint-renormalization/synthesis.md",
+            "rounds/codex-managed/m9-m1-endpoint-boundary-cauchy/synthesis.md",
+            "rounds/codex-managed/m9-m1-upper-endpoint-character-abel/synthesis.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Derive the physical y-integral return exactly, justify the conditionally convergent L-series and outside-profile limits, and prove or refute the fixed-y chi_4/q sampled-BV bound."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-endpoint-boundary-operator",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M1-R1-arithmetic-residue"
+        ],
+        "next_action": "Resolve M9-M1-R1-arithmetic-residue, then retain only the two diagonal transition traces if that bound succeeds."
+      },
+      {
+        "id": "M9-M1-renormalized-radial-boundary-operator",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M1-R1-arithmetic-residue"
+        ],
+        "next_action": "Resolve the exact R_1 arithmetic residue before attacking the remaining diagonal transition traces."
+      }
+    ],
+    "reject": [],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "Creating the next exact residue obligation does not estimate it."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1 and M9-M2 remain open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "No target proof is claimed."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 8,
+    "reason": "The Round-23 closure identifies the recombined R_1 residue as the next smallest exact component and records it without claiming an estimate."
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-dyadic-weight-nondegeneracy",
+        "type": "infrastructure",
+        "track": "M9_analytic",
+        "title": "Discrete nondegeneracy of actual M2 dyadic weights",
+        "status": "open",
+        "statement_tex": "For every actual M2 block to which the weighted W-1 obstruction is applied, the denominator support lies in a fixed shell [aD,bD], H_D>=1, and sum_d |w_D(d)| >= lambda D for a fixed lambda>0; endpoint-truncated blocks are explicitly merged, excluded, or verified separately.",
+        "dependencies": [],
+        "implies": ["M9-near-collision-absolute-lower-bounds"],
+        "blockers": [],
+        "evidence": {
+          "positive": [],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-unit-frequency-w1-validation/reports/h4_weight_normalization_review.md",
+            "rounds/codex-managed/m9-unit-frequency-w1-validation/reports/adversarial_endpoint_review.md",
+            "rounds/codex-managed/m9-unit-frequency-w1-validation/reviews/conductor_weight_transfer_analysis.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Specify the actual fixed dyadic profiles and endpoint truncation/merging rule, then verify the sampled l1 lower bound and H_D>=1 block by block."
+      }
+    ],
+    "update": [
+      {
+        "id": "H4-source-audit",
+        "status": "proved_external_dependency",
+        "evidence_added": {
+          "positive": [
+            "sources/vaaler_1985.md",
+            "rounds/codex-managed/m9-unit-frequency-w1-validation/reports/h4_weight_normalization_review.md"
+          ]
+        },
+        "reason_for_promotion": "The official Vaaler PDF was downloaded, hashed, rendered, and checked at Theorem 6, equations (6.5)-(6.6), equations (7.1)-(7.3), and Theorem 18; the source card now records the exact normalization and endpoint convention.",
+        "next_action": "Maintain the completed source card and local PDF hash; re-audit only if the project changes the sawtooth, Fourier, Fejer, or truncation convention."
+      },
+      {
+        "id": "H4",
+        "status": "proved_external_dependency",
+        "blockers_removed": ["H4-source-audit"],
+        "evidence_added": {
+          "positive": [
+            "sources/vaaler_1985.md",
+            "rounds/codex-managed/m9-unit-frequency-w1-validation/reports/h4_weight_normalization_review.md"
+          ]
+        },
+        "reason_for_promotion": "Vaaler Theorem 6 and Theorem 18 verify the coefficient and Fejer residual, and the floor-compatible integer convention follows with equality from K_H(0)/(2H+2)=1/2.",
+        "next_action": "Use the audited H4 formula with H+1 normalization and keep the midpoint-to-floor integer corollary explicit."
+      },
+      {
+        "id": "H4-Phi-regularity",
+        "status": "proved_internal",
+        "blockers_removed": ["H4-source-audit"],
+        "evidence_added": {
+          "positive": [
+            "sources/vaaler_1985.md",
+            "rounds/codex-managed/m9-unit-frequency-w1-validation/reports/h4_weight_normalization_review.md"
+          ]
+        },
+        "reason_for_promotion": "The primary source verifies the Phi formula and C1 monotonicity; the endpoint extensions and derivative values follow by elementary series expansion.",
+        "next_action": "Use the bounded C1 norm and monotonicity in coefficient-stability arguments; cite the completed source card."
+      },
+      {
+        "id": "M9-M2-beta-algebra",
+        "status": "proved_internal",
+        "statement_tex": "With the audited Vaaler coefficient alpha_{h,H}=-Phi(|h|/(H+1))/(2 pi i h), the M2 coefficient beta_{h,H}=alpha_{h,H}(e(h/4)-e(3h/4)) equals -Phi(|h|/(H+1)) chi_4(|h|) 1_{2 not divides h}/(pi |h|). Hence beta_{h,H} is real and even, and |beta_{1,H}|>=1/(2 pi) for H>=1.",
+        "blockers_removed": ["H4-source-audit"],
+        "evidence_added": {
+          "positive": [
+            "sources/vaaler_1985.md",
+            "rounds/codex-managed/m9-unit-frequency-w1-validation/reports/h4_weight_normalization_review.md"
+          ]
+        },
+        "reason_for_promotion": "The source coefficient is now audited and the modulo-4 evaluation of e(h/4)-e(3h/4) was independently checked.",
+        "next_action": "Use the exact real-even odd-frequency formula in raw two-sided M2 expansions and signed lift analysis."
+      },
+      {
+        "id": "M9-near-collision-absolute-lower-bounds",
+        "status": "derived_under_assumptions",
+        "statement_tex": "Assuming the matching exact N=0 absolute mass closure, H_D>=1, and either a sharp dyadic block or actual weights supported in a fixed shell with sum_d |w_D(d)| >= lambda D, the unit-frequency W-1 family satisfies Sigma_abs(0<|N|<=M) >= c min(D^4,MD)-C_epsilon D^2 X^epsilon. At M=D^4/X this refutes Sigma_abs <<_epsilon D^2 X^epsilon for D>=X^(1/3+delta), after choosing epsilon<3delta. This is an absolute or genuinely unsigned obstruction only, not a signed estimate; the exact crossover D=X^(1/3) is not a power contradiction.",
+        "dependencies_added": ["M9-M2-dyadic-weight-nondegeneracy"],
+        "blockers_removed": ["H4-source-audit"],
+        "blockers_added": ["M9-M2-dyadic-weight-nondegeneracy"],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-unit-frequency-w1-validation/reports/blind_w1_rederivation.md",
+            "rounds/codex-managed/m9-unit-frequency-w1-validation/reports/h4_weight_normalization_review.md",
+            "rounds/codex-managed/m9-unit-frequency-w1-validation/reports/adversarial_endpoint_review.md",
+            "rounds/codex-managed/m9-unit-frequency-w1-validation/reviews/conductor_weight_transfer_analysis.md",
+            "rounds/codex-managed/m9-unit-frequency-w1-validation/synthesis.md"
+          ]
+        },
+        "next_action": "Treat character-blind absolute control as impossible by a power for D>=X^(1/3+delta). Verify the actual dyadic l1 normalization, then pursue a sign-preserving M2 estimate from the X^(1/3) crossover upward."
+      },
+      {
+        "id": "M9-M2-character-factor",
+        "status": "open",
+        "evidence_added": {
+          "positive": [
+            "sources/vaaler_1985.md",
+            "rounds/codex-managed/m9-unit-frequency-w1-validation/reports/h4_weight_normalization_review.md"
+          ]
+        },
+        "next_action": "Preserve chi_4(h) in signed lift, signed energy, or direct bilinear estimates. Do not use character-blind absolute norms in the power-obstructed range D>=X^(1/3+delta)."
+      },
+      {
+        "id": "M9-M2-exact-N0-total-mass",
+        "status": "derived_under_assumptions",
+        "blockers_removed": ["H4-source-audit"],
+        "next_action": "Round 2 used this as a matching weighted assumption rather than reproving it. Re-audit whether the accepted internal exact-resonance class lemmas now justify proved_internal status after H4 validation."
+      },
+      {
+        "id": "Conditional-bridge",
+        "status": "derived_under_assumptions",
+        "blockers_removed": ["H4-source-audit"],
+        "evidence_added": {
+          "positive": ["sources/vaaler_1985.md"]
+        },
+        "next_action": "Maintain the bridge with M9 as the remaining principal blocker; no final-theorem promotion is licensed."
+      },
+      {
+        "id": "R5-Full",
+        "status": "derived_under_assumptions",
+        "blockers_removed": ["H4-source-audit"],
+        "next_action": "H4 is now audited. Complete the separate R5-Full reconciliation before considering proved_internal status."
+      },
+      {
+        "id": "R5-Full-reconciliation",
+        "status": "derived_under_assumptions",
+        "blockers_removed": ["H4-source-audit"],
+        "next_action": "Consolidate the accepted positive Fejer product-count proof into the draft and resolve the remaining reconciliation seam."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round2-unqualified-smooth-weight-W1-transfer",
+        "reason": "Bounded smooth weights may vanish or have o(D) sampled l1 mass; smoothness alone cannot transfer the sharp W-1 lower bound."
+      },
+      {
+        "id": "Round2-W1-signed-lower-bound",
+        "reason": "A positive h=1 subtotal does not lower-bound the full signed sum because complementary frequency tuples can cancel it."
+      },
+      {
+        "id": "Round2-W1-power-obstruction-at-exact-one-third",
+        "reason": "At D=X^(1/3) the W-1 main term is only of order D^2, so there is no power separation from D^2 X^epsilon."
+      }
+    ],
+    "no_change": [
+      {"id": "M9-M2", "reason": "The round proves an absolute obstruction, not a signed pointwise M2 upper bound."},
+      {"id": "M9-M1", "reason": "No M1 estimate was attempted."},
+      {"id": "M9", "reason": "Neither both reciprocal main sums nor endpoint uniformity were proved."},
+      {"id": "M9-endpoint-uniformity", "reason": "The endpoint remains open and now requires sign-preserving analysis."},
+      {"id": "GC-target", "reason": "The final theorem remains conditional on open M9."}
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 8,
+    "idea_quality_score": 9,
+    "state_evidence_score": 9,
+    "calibration_score": 9,
+    "reason": "Round 2 independently validates the unit-frequency absolute obstruction with the sharper X^(1/3) crossover, completes the Vaaler source audit, and isolates the actual dyadic-weight normalization seam. It does not prove any signed M2 or final Gauss-circle estimate."
+  }
+}

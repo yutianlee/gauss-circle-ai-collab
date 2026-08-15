@@ -1,0 +1,97 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-top-block-adjacent-odd-pairing-no-go",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Exact adjacent-odd decomposition and unmatched-row capacity obstruction",
+        "status": "proved_internal",
+        "statement_tex": "Let Y=R^2 asymp sqrt(X), let J=[A,B] intersect Z have length at most R, and restrict R/4<h<=R/2. For each h the odd-denominator row Q_h={q odd:hq in J} has size 0, 1, or 2. A two-point row is uniquely {q,q+2}, exists exactly when A<=hq and h(q+2)<=B, and equals chi_4(q)e(sqrt(Xhq)){A_X(h,q)-A_X(h,q+2)e(Theta_h(q))}, where Theta_h(q)=2sqrt(Xh)/(sqrt(q+2)+sqrt(q)) asymp hR. One-point rows remain full unmatched terms, with only inherited angular or radial equalities starred. On smooth actual-profile pieces the adjacent amplitude difference is O(h/R^2) and totals O(1), but the phase bracket has no automatic modulo-one saving and seam rows remain explicit. For infinitely many X=K^4, a strict star-free top-profile length-K window has >>R unmatched rows of amplitude at least 1/2. Thus adjacent pairing followed by endpoint counting or absolute values retains R capacity against the sqrt(R) target. This is not a signed lower bound; the full cross-h matched-plus-unmatched hyperbola sum remains open.",
+        "dependencies": [
+          "M9-M1-top-block-discrete-curvature-singleton-no-go",
+          "M9-M1-top-block-low-leg-margin",
+          "M9-M1-global-angular-recombination",
+          "M9-M2-dyadic-weight-nondegeneracy",
+          "H4-Phi-regularity"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-top-block-signed-adjacent-odd-pairing/reports/adjacent_odd_pairing_attack.md",
+            "rounds/codex-managed/m9-m1-top-block-signed-adjacent-odd-pairing/reports/blind_adjacent_pair_rederivation.md",
+            "rounds/codex-managed/m9-m1-top-block-signed-adjacent-odd-pairing/reports/adjacent_pairing_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-top-block-signed-adjacent-odd-pairing/reviews/conductor_adjacent_pairing_adjudication.md",
+            "rounds/codex-managed/m9-m1-top-block-signed-adjacent-odd-pairing/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Keep the complete matched and unmatched h rows signed. Derive the exact hyperbola-floor/sawtooth representation of q_h and test a two-variable cross-h estimate; do not take rowwise absolute values or assume universal pairing."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "dependencies_added": [
+          "M9-M1-top-block-adjacent-odd-pairing-no-go"
+        ],
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-m1-top-block-signed-adjacent-odd-pairing/synthesis.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-top-block-signed-adjacent-odd-pairing/reviews/conductor_adjacent_pairing_adjudication.md"
+          ]
+        },
+        "next_action": "On R/4<h<=R/2, prove the signed matched-plus-unmatched hyperbola-floor sum of unweighted size sqrt(R), retaining the exact actual amplitude and window endpoints. Treat (log X)^B<h<=R/4 separately."
+      },
+      {
+        "id": "M9-M1-top-block-discrete-curvature-singleton-no-go",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-top-block-signed-adjacent-odd-pairing/synthesis.md"
+          ]
+        },
+        "next_action": "The first cross-residue local test is now complete and fails after absolute values. Preserve the full signed cross-h matched-plus-unmatched selector."
+      },
+      {
+        "id": "M9-M1-alpha-bounded-zeta-high-transition-bound",
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-m1-top-block-signed-adjacent-odd-pairing/synthesis.md"
+          ]
+        },
+        "next_action": "First solve the physical signed hyperbola-floor core. Adjacent character pairing supplies no alpha transfer or height-limit theorem."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round57-every-high-row-has-adjacent-odd-partner",
+        "reason": "Pair availability requires both window inequalities. A strict actual top-profile family has order R unmatched rows."
+      },
+      {
+        "id": "Round57-character-sign-reversal-makes-paired-row-small",
+        "reason": "The pair contains the factor 1-e(Theta_h(q)); Theta_h(q) has scale hR but no automatic control modulo one, and admissible fourth-power rows are bounded away from integers."
+      },
+      {
+        "id": "Round57-unmatched-endpoints-are-counting-target-safe",
+        "reason": "Artificial window edges are full owners, and an actual star-free plateau family has unmatched absolute mass >>R rather than O(sqrt(R))."
+      }
+    ],
+    "no_change": [
+      {"id": "M9-M1", "reason": "The signed high shell, lower h sector, and alpha transfer remain open."},
+      {"id": "M9", "reason": "M9-M1 and M9-M2 remain open."},
+      {"id": "GC-target", "reason": "The exact decomposition and obstruction prove no new discrepancy exponent."}
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 57 makes the first cross-residue local interaction exact and proves with a strict actual-profile family that adjacent pairing plus absolute values cannot supply the missing square root. It isolates the signed cross-h hyperbola-floor sum but proves no shell estimate or exponent."
+  }
+}

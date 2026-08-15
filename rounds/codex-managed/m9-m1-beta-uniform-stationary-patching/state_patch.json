@@ -1,0 +1,186 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-beta-two-saddle-Fresnel-normal-form",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Two-saddle endpoint-uniform Fresnel normal form",
+        "status": "proved_internal",
+        "statement_tex": "For the accepted beta single-transition phase, collecting the exact linear terms and differentiating the signed Stirling branch gives partial_alpha Psi=log(|alpha|D_j/(pi q sqrt(Xx))). Hence there are two stationary points alpha=plus or minus lambda, lambda=pi q sqrt(Xx)/D_j, with Hessians plus or minus lambda^(-1). For fixed beta,nu the finite alpha interval is [max(beta+nu-U,-2S-beta), min(beta+nu+U,2S-beta)]. On any component with |alpha| comparable to lambda, if the complete signed recombined amplitude has a scale-normalized C^2 norm M, the exact Morse coordinate zeta(y)=sgn(y-1)sqrt(2(y log y-y+1)) gives an incomplete-Fresnel leading term and O(M) remainder uniformly through saddle entry and exit. An exact endpoint saddle has half the full Fresnel coefficient. This lemma is conditional on the scaled C^2 amplitude hypothesis and supplies no outside-height or full-sum estimate.",
+        "dependencies": [
+          "M9-M1-diagonal-single-transition-normal-form",
+          "M9-M1-beta-hierarchical-radial-split-identity"
+        ],
+        "implies": [
+          "M9-M1-beta-transition-connector-reduction"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-uniform-stationary-patching/reports/blind_uniform_saddle_statement.md",
+            "rounds/codex-managed/m9-m1-beta-uniform-stationary-patching/reports/transition_patching_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-uniform-stationary-patching/reviews/conductor_transition_analysis.md",
+            "rounds/codex-managed/m9-m1-beta-uniform-stationary-patching/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Prove the scaled C^2 hypothesis only after the finite v-vertical and oriented outside-v sides are recombined in the symmetric top limit."
+      },
+      {
+        "id": "M9-M1-beta-finite-height-Hilbert-edge-obstruction",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Finite-height moving Hilbert-pole logarithmic edge",
+        "status": "proved_internal",
+        "statement_tex": "Let C_(a,V)(L)=int_(-V)^V H_b(nu)/(a+i(L-nu))dnu, where H_b is the actual fixed-b beta height amplitude after all nonsingular factors are retained. If H_b is C^1 near V and H_b(V) is nonzero, then C_(a,V)(V)=-i H_b(V)log(1/a)+O_(H,V)(1) as a tends to zero; the analogous formula holds at -V. The accepted height transform is analytic and nonzero on b>0, so admissible actual-profile edge points exist. Therefore an isolated finite-v segment cannot be replaced uniformly by the whole-line PV/delta convolution when the moving pole L=alpha-beta reaches its edge. This does not obstruct the complete finite operator: the logarithm may cancel against oriented outside-v sides or under a justified uniform height-before-top exhaustion.",
+        "dependencies": [
+          "M9-M1-finite-vector-Hankel-identity",
+          "M9-M1-beta-post-endpoint-signed-convolution-gain"
+        ],
+        "implies": [
+          "M9-M1-beta-transition-connector-reduction",
+          "M9-M1-swept-transition-horizontal-operator"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-uniform-stationary-patching/reports/blind_uniform_saddle_statement.md",
+            "rounds/codex-managed/m9-m1-beta-uniform-stationary-patching/reports/transition_patching_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-uniform-stationary-patching/reviews/conductor_transition_analysis.md",
+            "rounds/codex-managed/m9-m1-beta-uniform-stationary-patching/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Derive the exact finite outside-v side in the same coordinates and test cancellation of the logarithmic edge before taking the symmetric top limit."
+      },
+      {
+        "id": "M9-M1-beta-outside-v-side-reconciliation",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Outside-v-side reconciliation of the moving top-pole edge",
+        "status": "open",
+        "statement_tex": "For the connector-completed beta branch at finite U,V,S and positive outside abscissae, combine the truncated v-vertical integral with both oriented outside-v sides, the v=0 height residue, the u=0 top residue and joint corner when crossed, and the exact omega-recombined radial factor. Prove that the symmetric physical top limit exists uniformly as L=alpha-beta crosses plus or minus V, with the logarithmic edge terms cancelled or target-bounded, and then justify a nested U,V,S exhaustion with constants polynomial in b^(-1). The resulting complete signed amplitude must satisfy the scale-normalized C^2 hypotheses of the two-saddle Fresnel lemma.",
+        "dependencies": [
+          "M9-M1-finite-vector-Hankel-identity",
+          "M9-M1-beta-Cauchy-Green-connector-identity",
+          "M9-M1-beta-hierarchical-radial-split-identity",
+          "M9-M1-beta-finite-height-Hilbert-edge-obstruction"
+        ],
+        "implies": [
+          "M9-M1-beta-transition-connector-reduction"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-uniform-stationary-patching/synthesis.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Write the exact oriented outside-v side and its endpoint expansion in the L=alpha-beta coordinate; compare its log coefficient with the truncated vertical edge before estimating anything."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-beta-post-endpoint-signed-convolution-gain",
+        "statement_tex": "For R1=-(pi i sqrt(X)/rho)I1(rho), let lambda=pi q sqrt(Xx)/D_j. On either signed stationary patch alpha=plus or minus lambda, with bounded beta, fixed b=Re(v)>0, and positive separation from alpha endpoints, finite nu endpoints, rho=0, and v=0, the explicit 1/rho gives q^(-1) relative to unsplit G. After the symmetric full-line hard-top split (a+i mu)^(-1)=pi delta_0(mu)-iPV(1/mu), the signed two-denominator convolution gives a further inverse frequency, yielding local capacity O_b(D_j/(q lambda))=O_b(D_j/(q^2 theta_j(x))). This excludes finite-height edge crossing, transitions without scaled derivative control, artificial-pole and axial seams, the double-bounded share, full sums, endpoints, and outside-height limits.",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-uniform-stationary-patching/reports/transition_patching_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-uniform-stationary-patching/synthesis.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-uniform-stationary-patching/reports/blind_uniform_saddle_statement.md"
+          ]
+        },
+        "next_action": "Retain this only as a compact-patch local capacity lemma. Reconcile the finite v-edge and outside sides before applying the two-saddle Fresnel tool or summing scales."
+      },
+      {
+        "id": "M9-M1-beta-transition-connector-reduction",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M1-beta-two-saddle-Fresnel-normal-form",
+          "M9-M1-beta-finite-height-Hilbert-edge-obstruction",
+          "M9-M1-beta-outside-v-side-reconciliation"
+        ],
+        "statement_tex": "Use the exact hierarchical beta partition and omega-recombined radial split. Both alpha=plus or minus pi q sqrt(Xx)/D_j are stationary and admit a conditional endpoint-uniform Fresnel normal form. The separated full-line post-endpoint hard-top patches have local q^(-2) capacity, but the finite-v vertical has a logarithmic edge when the moving top pole reaches plus or minus V. Prove normalized O_epsilon(X^epsilon) only after combining the finite vertical with its oriented outside-v sides and axial/top/corner ledger, establishing uniform scaled amplitude derivatives, and completing q,h,scale,radial, endpoint, and outside-height sums. The double-bounded share remains separate and open.",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-uniform-stationary-patching/reports/blind_uniform_saddle_statement.md",
+            "rounds/codex-managed/m9-m1-beta-uniform-stationary-patching/reports/transition_patching_hostile_audit.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-m1-beta-uniform-stationary-patching/synthesis.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-uniform-stationary-patching/reports/uniform_patching_sum_attack.md",
+            "rounds/codex-managed/m9-m1-beta-uniform-stationary-patching/reviews/conductor_transition_analysis.md"
+          ]
+        },
+        "next_action": "Prove M9-M1-beta-outside-v-side-reconciliation. Then apply the two-saddle Fresnel lemma and execute every remaining sum."
+      },
+      {
+        "id": "M9-M1-swept-transition-horizontal-operator",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M1-beta-outside-v-side-reconciliation"
+        ],
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-m1-beta-uniform-stationary-patching/synthesis.md"
+          ]
+        },
+        "next_action": "Close the beta outside-v-side reconciliation and finite-height exhaustion before returning to the alpha-bounded zeta-high branch."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round28-negative-alpha-is-globally-nonstationary",
+        "reason": "Differentiating the exact signed Stirling phase gives partial_alpha Psi=log(|alpha|D_j/(pi q sqrt(Xx))), so alpha=-pi q sqrt(Xx)/D_j is a second stationary point."
+      },
+      {
+        "id": "Round28-local-q-minus-two-implies-uniform-Fresnel-patch",
+        "reason": "A pointwise separated saddle bound does not supply the scale-normalized alpha derivatives required by the uniform Morse lemma, especially near the moving hard-top and artificial-rho seams."
+      },
+      {
+        "id": "Round28-truncated-v-segment-has-uniform-physical-top-limit",
+        "reason": "When L=alpha-beta reaches plus or minus V, the actual truncated convolution has a nonzero logarithmic edge coefficient unless its oriented outside contribution is recombined."
+      },
+      {
+        "id": "Round28-absolute-q-summability-closes-dyadic-scales",
+        "reason": "The q^(-2) local factor omits material h, real-abscissa, profile, radial, transition, endpoint, and finite-side powers; it cannot alone certify the dyadic sum."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "The beta outside-height reconciliation, double-bounded share, alpha transition, and residual M1 corridor remain open."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Round 28 concerns only transformed M1 beta transitions."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1 and M9-M2 remain open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "No unconditional Gauss-circle estimate is claimed."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 8,
+    "idea_quality_score": 9,
+    "state_evidence_score": 9,
+    "calibration_score": 10,
+    "reason": "Round 28 proves the exact two-saddle and endpoint-Fresnel structure, finds an actual finite-height logarithmic obstruction, and isolates the oriented outside-v-side reconciliation as the next kernel without promoting the beta trace."
+  }
+}

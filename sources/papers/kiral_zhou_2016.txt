@@ -1,0 +1,1037 @@
+                                              The Voronoi formula and double Dirichlet series
+                                                                             Eren Mehmet Kıral and Fan Zhou
+                                                                                           May 10, 2016
+arXiv:1508.01985v2 [math.NT] 9 May 2016
+
+
+
+
+                                                                                              Abstract
+                                                  We prove a Voronoi formula for coefficients of a large class of L-functions including Maass cusp forms,
+                                               Rankin-Selberg convolutions, and certain non-cuspidal forms. Our proof is based on the functional
+                                               equations of L-functions twisted by Dirichlet characters and does not directly depend on automorphy.
+                                               Hence it has wider application than previous proofs. The key ingredient is the construction of a double
+                                               Dirichlet series.
+
+                                               MSC: 11F30 (Primary), 11F68, 11L05
+
+                                               Keywords: Voronoi formula, automorphic form, Maass form, multiple Dirichlet series, Gauss
+                                               sum, Kloosterman sum, Rankin-Selberg L-function
+
+
+                                          1    Introduction
+                                          A Voronoi formula is an identity involving Fourier coefficients of automorphic forms, with the coefficients
+                                          twisted by additive characters on either side. A history of the Voronoi formula can be found in [MS04]. Since
+                                          its introduction in [MS06], the Voronoi formula on GL(3) of Miller and Schmid has become a standard tool
+                                          in the study of L-functions arising from GL(3), and has found important applications such as [BB], [BKY13],
+                                          [Kha12], [Li09], [Li11], [LY12], [Mil06], [Mun13] and [Mun15]. As of yet the general GL(N ) formula has had
+                                          fewer applications, a notable one being [KR14].
+                                              The first proof of a Voronoi formula on GL(3) was found by Miller and Schmid in [MS06] using the theory
+                                          of automorphic distributions. Later, a Voronoi formula was established for GL(N ) with N ≥ 4 in [GL06],
+                                          [GL08], and [MS11], with [MS11] being more general and earlier than [GL08] (see the addendum, loc. cit.).
+                                          Goldfeld and Li’s proof [GL08] is more akin to the classical proof in GL(2) (see [Goo81]), obtaining the
+                                          associated Dirichlet series through a shifted “vertical” period integral and making use of automorphy. An
+                                          adelic version was established by Ichino and Templier in [IT13], allowing ramifications and applications to
+                                          number fields. Another direction of generalization with more complicated additive twists on either side has
+                                          been considered in an unpublished work of Li and Miller and in [Zho16].
+                                              In this article, we prove a Voronoi formula for a large class of automorphic objects or L-functions,
+                                          including cusp forms for SL(N, Z), Rankin-Selberg convolutions, and certain non-cuspidal forms. Previous
+                                          works ([MS11], [GL08], [IT13]) do not offer a Voronoi formula for Rankin-Selberg convolutions or non-
+                                          cuspidal forms. Even for Maass cusp forms, our new proof is shorter than any previous one, and uses a
+                                          completely different set of techniques.
+                                              Let us briefly summarize our method of proof. We first reduce the statement of Voronoi formula to a
+                                          formula involving Gauss sums of Dirichlet characters. We construct a complex function of two variables
+                                          and write it as double Dirichlet series in two different ways by applying a functional equation. Using the
+                                          uniqueness theorem of Dirichlet series, we get an identity between coefficients of these two double Dirichlet
+                                          series. This leads us to the Voronoi formula with Gauss sums.
+                                              One of our key steps in obtaining the Voronoi formula is the use of functional equations of L-functions
+                                          twisted by Dirichlet characters. The relationship between the Voronoi formulas and the functional equa-
+                                          tions of these L-functions is known from previous works, such as [DI90], Section 4 of [GL06], [BK15] and
+                                          [Zho16]. Miller-Schmid derived the functional equation of L-functions twisted by a Dirichlet character of
+                                                                                                   1
+prime conductor from the Voronoi formula in Section 6 of [MS06]. However there is a combinatorial difficulty
+in reversing this process, i.e., obtaining additive twists of general non-prime conductors from multiplicative
+ones, which was acknowledged in both [MS06, p. 430] and [IT13, p. 68]. The method presented here is able
+to overcome this difficulty by discovering an interlocking structure among a family of Voronoi formulas with
+different conductors.
+    Our proof of the Voronoi formula is complete for additive twists of all conductors, prime or not, and
+unlike [GL06], [GL08],[IT13], [MS06], or [MS11], does not depend directly on automorphy of the cusp forms.
+This fact allows us to apply our theorem to many conjectural Langlands functorial transfers. For example,
+the Rankin-Selberg convolutions (also called functorial products) for GL(m) × GL(n) are not yet known
+to be automorphic on GL(m × n) in general. Yet we know the functional equations of GL(m) × GL(n)
+L-functions twisted by Dirichlet characters. Thus, our proof provides a Voronoi formula for the Rankin-
+Selberg convolutions on GL(m) × GL(n) (see Example 1.7). Voronoi formulas for these functorial cases are
+unavailable from [GL08], [MS11] or [IT13]. In Theorem 1.3 we reformulate our Voronoi formula like the
+classical converse theorem of Weil, i.e., assuming every L-function twisted by Dirichlet character is entire,
+has an Euler product (or satisfies Hecke relations), and satisfies the precise functional equations, then the
+Voronoi formula as in Theorem 1.1 is valid. We do not have to assume it is a standard L-function coming
+from a cusp form.
+    Furthermore, by Theorem 1.3, we obtain a Voronoi formula for certain non-cuspidal forms, such as
+isobaric sums (see Example 1.8). This is not readily available from any previous work but it is believed (see
+[MS11] p.176) that one may derive a formula by using formulas on smaller groups through a possibly compli-
+cated procedure. Such complication does not occur in our method because we work directly with L-functions.
+
+   We first state the main results for Maass cusp forms. Denote e(x) := exp(2πix) for x ∈ R. Let N ≥ 3 be
+an integer. Let a, n ∈ Z, c ∈ N and let
+
+                              q = (q1 , q2 , . . . , qN −2 )         and         d = (d1 , d2 , . . . , dN −2 )
+
+be tuples of positive integers satisfying the divisibility conditions
+
+                                                    q1 q2 c                                 q1 · · · qN −2 c
+                                  d1 |q1 c,    d2           ,        ··· ,       dN −2                       .                      (1)
+                                                     d1                                     d1 · · · dN −3
+
+    Define the hyper-Kloosterman sum as
+                                  X∗                            X∗                     X∗
+              Kl(a, n, c; q, d) =                                          ···
+                                               q1 c              q1 q2 c                   q1 ···qN −2 c
+                                     x1 (mod   d1 )   x2 (mod    d1 d2 )     xN −2 (mod    d1 ···dN −2 )
+                                                                                                                    !
+                                               d1 x1 a d2 x2 x1        dN −2 xN −2 xN −3    nxN −2
+                                       ×e             + q1 c + · · · +     q1 ···qN −3 c + q1 ···qN −2 c                ,
+                                                  c       d1               d1 ···dN −3     d1 ···dN −2
+
+         X∗
+where           indicates that the summation is over reduced residue classes, and xi denotes the multiplicative
+inverse of xi modulo q1 · · · qi c/d1 · · · di . When N = 3, Kl(a, n, c; q1 , d1 ) becomes the classical Kloosterman
+sum S(aq1 , n; cq1 /d1 ). For the degenerate case of N = 2, we define Kl(a, n, c; , ) := e(an/c).
+    Let F be a Hecke-Maass cusp form for SL(N, Z) with the spectral parameters (λ1 , . . . , λn ) ∈ Cn . Let
+A(∗, . . . , ∗) be the Fourier-Whittaker coefficients of F normalized as A(1, . . . , 1) = 1. We refer to [Gol06] for
+the definitions and the basic results of Maass forms for SL(N, Z). The Fourier coefficients satisfy the Hecke
+relations
+                         A(m1 m′1 , · · · , mN −1 m′N −1 ) = A(m1 , . . . , mN −1 )A(m′1 , . . . , m′N −1 )       (2)
+if (m1 · · · mN −1 , m′1 · · · m′N −1 ) = 1 is satisfied,
+                                                                   X                                                       
+                                                                                           mN −1 dN −2       m2 d1 m1 d0
+           A(1, . . . , 1, n)A(mN −1 , . . . , m1 ) =                              A                   ,...,      ,             ,   (3)
+                                                                                             dN −1            d2    d1
+                                                             d0 ...dN −1 =n
+                                                        d1 |m1 ,...,dN −1 |mN −1
+                                                                      2
+and                                                                                                                                         
+                                                                    X                              m1 d0 m2 d1       mN −1 dN −2
+          A(n, 1, . . . , 1)A(m1 , . . . , mN −1 ) =                                     A              ,      ,...,                             .   (4)
+                                                                                                    d1    d2           dN −1
+                                                            d0 ...dN −1 =n
+                                                       d1 |m1 ,...,dN −1 |mN −1
+
+   The dual Maass form of F is denoted by Fe. Let B(∗, . . . , ∗) be the Fourier-Whittaker coefficients of Fe .
+These coefficients satisfy
+                                B(m1 , . . . , mN −1 ) = A(mN −1 , . . . , m1 ).                          (5)
+   Define the ratio of Gamma factors
+                                                          N
+                                                          Y                                                        −1
+                                                                        δ + 1 − s − λj                     δ + s − λj
+                      G± (s) := i−N δ π −N (1/2−s)              Γ                                       Γ                 ,                          (6)
+                                                          j=1
+                                                                              2                                 2
+
+where for even Maass forms, we define δ = 0 in G+ and δ = 1 in G− and for odd Maass forms, we define
+δ = 1 in G+ and δ = 0 in G− . We refer to Section 9.2 of [Gol06] for the definition of even and odd Maass
+forms.
+Theorem 1.1 (Voronoi formula on GL(N ) of Miller-Schmid [MS11]). Let F be a Hecke-Maass cusp form
+with coefficients A(∗, . . . , ∗), and G± a ratio of Gamma factors as in (6). Let c > 0 be an integer and let
+a be any integer with (a, c) = 1. Denote by a the multiplicative inverse of a modulo c. Let the additively
+twisted Dirichlet series be given as
+                                                     X∞                               
+                                                         A(qN −2 , . . . , q1 , n)    an
+                                    Lq (s, F, a/c) =                s
+                                                                                   e                     (7)
+                                                     n=1
+                                                                 n                     c
+
+for ℜ(s) > 1. This Dirichlet series has an analytic continuation to all s ∈ C and satisfies the functional
+equation
+                             G+ (s) − G− (s) X                X                          X
+          Lq (s, F, a/c) =                                                ···
+                                    2
+                                                  d1 |q1 c d2 | q1dq2 c                  q ...q
+                                                                                dN −2 | d1 ...dN −2
+                                                                                                         c
+                                                                    1                      1       N −3
+
+                                     ∞
+                                     X                                                   (N −1)s (N −2)s
+                                       A(n, dN −2 , . . . , d2 , d1 ) Kl(a, n, c; q, d) d1      d2       · · · d2s
+                                                                                                                N −2
+                                 ×
+                                     n=1
+                                                 n1−s cN s−1 d1 d2 · · · dN −2                               q1
+                                                                                                               (N −2)s (N −3)s
+                                                                                                                      q2              s
+                                                                                                                               · · · qN −2
+                                                                                                                                                     (8)
+                                 G+ (s) + G− (s) X                  X                          X
+                             +                                                  ···
+                                        2
+                                                       d1 |q1 c d2 | q1dq2 c                   q ...q
+                                                                                      dN −2 | d1 ...dN −2
+                                                                                                             c
+                                                                          1                        1    N −3
+
+                                     ∞
+                                     X                                                    (N −1)s (N −2)s
+                                       A(n, dN −2 , . . . , d2 , d1 ) Kl(a, −n, c; q, d) d1      d2       · · · d2s
+                                                                                                                 N −2
+                                 ×                                                                                                               ,
+                                     n=1
+                                                  n1−s cN s−1 d1 d2 · · · dN −2                                   (N −2)s (N −3)s
+                                                                                                                 q1      q2              s
+                                                                                                                                  · · · qN −2
+
+in the region of convergence of the expression on the right hand side (ℜ(s) < 0).
+    The traditional Voronoi formula, involving weight functions instead of Dirichlet series, is obtained after
+taking an inverse Mellin transform against a suitable test function.
+    Choose a Dirichlet character χ modulo c, which is not necessarily primitive, multiply both sides of (8) by
+χ(a), and sum this equality over the reduced residue system modulo c. We obtain the following the Voronoi
+formula with Gauss sums. In Section 3.2 we show through elementary finite arithmetic that the formulas
+(8) and (11) are equivalent.
+Theorem 1.2 (Voronoi formula with Gauss sums). Let χ be a Dirichlet character modulo c, induced from
+the primitive character χ∗ modulo c∗ with c∗ |c. Define for q = (q1 , . . . , qN −2 ) a tuple of positive integers
+                                                         ∞
+                                                         X A(qN −2 , . . . , q1 , n)g(χ∗ , c, n)
+                                  H(q; c, χ∗ , s) =                                                                   ,                              (9)
+                                                         n=1
+                                                                                ns (c/c∗ )1−2s
+                                                                          3
+for ℜ(s) > 1 and
+                                           G(s)χ∗ (−1)           X              X                           X
+                   G(q; c, χ∗ , s) =                                                         ···
+                                         cN s−1 (c/c∗ )1−2s
+                                                               d1 c∗ |q1 c d2 c∗ | q1dq2 c                   q ...q
+                                                                                                   dN −2 c∗ | d1 ...dN −2
+                                                                                                                            c
+                                                                                        1                      1      N −3
+
+                          ∞
+                          X                            (N −1)s (N −2)s
+                            A(n, dN −2 , . . . , d1 ) d1      d2       · · · d2s
+                                                                              N −2
+                      ×                                                                                                         (10)
+                          n=1
+                                n1−s d1 d2 · · · dN −2 q (N −2)s q (N −3)s · · · q s
+                                                          1          2                      N −2
+                      × g(χ∗ , c, d1 )g(χ∗ , qd11c , d2 ) · · · g(χ∗ , qd11···qN −3 c            ∗ q1 ···qN −2 c
+                                                                            ···dN −3 , dN −2 )g(χ , d1 ···dN −2 , n)
+
+for ℜ(s) < 0, where G equals G+ or G− depending on whether χ∗ (−1) is 1 or −1, and g(χ∗ , ℓc∗ , ∗) is the
+Gauss sum of the induced character modulo ℓc∗ from χ∗ , which is defined in Definition 2.1. Both functions
+have analytic continuation to all s ∈ C, and the equality
+
+                                                H(q; c, χ∗ , s) = G(q; c, χ∗ , s)                                               (11)
+
+is satisfied.
+    In proving (11), we define
+                                                        Lq (2w − s, F )L(s, F × χ∗ )
+                                          Z(s, w) =                                  ,                                          (12)
+                                                            L(2w − 2s + 1, χ∗ )
+where q = (q1 , . . . , qN −2 ) is a tuple of positive integers, and the function Lq (s, F ) is given as the Dirichlet
+series
+                                                        X∞
+                                                            A(qN −2 , . . . , q1 , n)
+                                           Lq (s, F ) =                               ,
+                                                        n=1
+                                                                    ns
+for ℜ(s) ≫ 1. We express Z(s, w) as a double Dirichlet series in two different ways. In one region of
+convergence we express the L-functions as Dirichlet series and obtain
+                                                                    ∞
+                                                                    X an (s)
+                                                     Z(s, w) =                      .
+                                                                    n=1
+                                                                            n2w
+
+On the other hand we apply the functional equation of L(s, F × χ∗ ), replacing s with 1 − s, and write Z(s, w)
+as the Dirichlet series
+                                                     X bn (s)
+                                           Z(s, w) =           .
+                                                      n
+                                                          n2w
+By the uniqueness of Dirichlet series, we must have an (s) = bn (s). This equality leads us to the Voronoi
+formula with Gauss sums.
+   Our proof only uses the Hecke relations about the Fourier coefficients of F and the exact form of the
+functional equations. The expression of Gamma factors, or the automorphy of F , plays no role. Hence we
+can formulate our theorem in a style similar to the classical converse theorem of Weil. First let us list the
+properties of Fourier coefficients that we use in order to state the following theorem.
+   The Fourier coefficients of F grow moderately, i.e.,
+                                                                                                    σ
+                                          A(m1 , . . . , mN −1 ) ≪ (m1 . . . mN −1 )                                            (13)
+
+for some σ > 0. Given a primitive Dirichlet character χ∗ modulo c∗ , define the twisted L-function
+                                                              ∞
+                                                              X A(1, . . . , 1, n)χ∗ (n)
+                                         L(s, F × χ∗ ) =                                                ,                       (14)
+                                                              n=1
+                                                                                  ns
+
+for ℜ(s) > σ + 1. It has analytic continuation to the whole complex plane, and satisfies the functional
+equation
+                          L(s, F × χ∗ ) = τ (χ∗ )N c∗ −N s G(s)L(1 − s, Fe × χ∗ ),                 (15)
+where G(s) = G+ (s) or G− (s) depending on whether χ∗ (−1) = 1 or −1.
+                                                  4
+Theorem 1.3. Let F be a symbol and assume that with F comes numbers A(m1 , . . . , mN −1 ) ∈ C attached
+to every (N − 1)-tuple (m1 , . . . , mN −1 ) of natural numbers. Assume A(1, . . . , 1) = 1.
+    Assume that these “coefficients” A(∗, . . . , ∗) satisfy the aforementioned Hecke relations (2), (3) and (4).
+Further assume that they grow moderately as in (13).
+    Let Fe be another symbol whose associated coefficients B(∗, . . . , ∗) ∈ C are given as in (5) and assume
+that they also satisfy the same properties. Further, assume that there are two meromorphic functions G+ (s)
+and G− (s) associated to the pair (F, Fe), so that for a given primitive character χ∗ , the function L(s, F × χ∗ )
+as defined in (14) satisfies the functional equation (15).
+    Under all these assumptions, Lq (s, F, a/c) defined as in (7) for ℜ(s) > 1 + σ, has analytic continuation
+to all s ∈ C, and satisfies the Voronoi formula (8). (The Dirichlet series on the right side of (8) is absolutely
+convergent for ℜ(s) < −σ.)
+    Equivalently the functions H(q; c, χ∗ , s) and G(q; c, χ∗ , s) as defined by the formulas (9) and (10) have
+analytic continuations to all s and equal each other as in (11).
+Remark 1.4 (The structure of this article). Theorem 1.3 is our main result. For the most part our focus is
+N ≥ 3, and we deal with the case N = 2 in Remark 3.2. The Voronoi formula (8) is proved to be equivalent
+to a formula (11) involving Gauss sums. The equivalence is shown in Proposition 3.5. A convoluted version
+of (11) is obtained in Theorem 3.1 by comparing Dirichlet coefficients of two different expressions of a double
+Dirichlet series. We later show in Proposition 3.3 that this convoluted version yields (11).
+Remark 1.5. If we start with an L-series L(s, F ) with an Euler product
+                                           ∞
+                                           X                          YY N           −1
+                                             A(1, . . . , 1, n)                αi (p)
+                              L(s, F ) =                          =         1−
+                                           n=1
+                                                     ns               p i=1
+                                                                                ps
+               Q
+and with i αi (p) = 1 for any p, we can define A(pk1 , . . . , pkN −1 ) by the Casselman-Shalika formula
+(Proposition 5.1 of [Zho14]) and they are compatible with the Hecke relations. More explicitly, for a
+prime number p, we define A(pk1 , . . . , pkN −1 ) = Sk1 ,...,kN −1 (α1 (p), . . . , αN (p)) by the work of Shintani where
+Sk1 ,...,kN −1 (x1 , . . . , xN ) is the Schur polynomial, which can be found in [Gol06, p. 233].
+    We extend the definition to all A(∗, . . . , ∗) multiplicatively by (2). One can prove that A(∗, . . . , ∗) satisfies
+the Hecke relations (2), (3), (4). In summary, the “coefficients” A(∗, . . . , ∗) along with the Hecke relations
+can be generated by an L-function with an Euler product.
+   The following examples satisfy the conditions in Theorem 1.3 and hence we have a Voronoi formula for
+each of them.
+Example 1.6 (Automorphic form for SL(N, Z)). Any cuspidal automorphic form for SL(N, Z) satisfies the
+conditions in Theorem 1.3. It can have an unramified or ramified component at the archimedean place,
+because only the exact form of the G± function would change (see [GJ72]). The Hecke-Maass cusp forms
+considered in Theorem 1.1 are included in this category, and therefore, we prove Theorem 1.3 instead of
+Theorem 1.1.
+Example 1.7 (Rankin-Selberg convolution). Let F1 and F2 be even Hecke-Maass cusp forms for SL(N1 , Z)
+and SL(N2 , Z) with the spectral parameters (λ1 , . . . , λN1 ) ∈ CN1 and (µ1 , . . . , µN2 ) ∈ CN2 respectively.
+Assume F1 6= Fe2 if N1 = N2 . The automorphic forms F1 and F2 have the standard L-functions
+
+                          YY N1           −1                                      YY N2          −1
+                                    αi (p)                                                   βi (p)
+              L(s, F1 ) =        1−                        and          L(s, F2 ) =        1− s         .
+                          p i=1
+                                     ps                                             p i=1
+                                                                                              p
+
+   Let L(s, F1 × F2 ) be the Rankin-Selberg L-function of F1 and F2 defined by
+
+                                                YY N1 Y N2                   −1
+                                                               αi1 (p)βi2 (p)
+                               L(s, F1 × F2 ) =             1−                    .
+                                                p i =1 i =1
+                                                                     ps
+                                                       1    2
+
+
+                                                             5
+The L-function is of degree N := N1 N2 . The work of Jacquet, Piatetski-Shapiro, and Shalika [JPSS83]
+shows that L(s, F × χ∗ ) = L(s, (F1 × χ∗ ) × F2 ) is holomorphic and satisfies the functional equation (15) for
+F := F1 × F2 .
+   Define A(pk1 , . . . , pkN −1 ) by the Schur polynomials as in Remark 1.5
+
+               A(pk1 , . . . , pkN −1 ) := Sk1 ,...,kN −1 (α1 (p)β1 (p), . . . , αi1 (p)βi2 (p), . . . , αN1 (p)βN2 (p)) .
+
+Extend the definition to all A(∗, · · · ∗) multiplicatively by (2). Define
+                                                 N2
+                                              N1 Y
+                                              Y                                                                −1
+                         −N δ −N (1/2−s)                            δ + 1 − s − λi1 − µi2       δ + s − λi1 − µi2
+           G± (s) := i        π                             Γ                                Γ                        ,
+                                              i1 =1 i2 =1
+                                                                              2                         2
+
+where one takes δ = 0 or δ = 1 for G+ and G− respectively. Theorem 1.3 gives us a Voronoi formula for the
+Rankin-Selberg convolution F = F1 × F2 with the A(∗, · · · ∗) and G± defined above.
+Example 1.8 (Isobaric sum, Eisenstein series).          P For i = 1, . . . , k let Fi be a Hecke-Maass cusp form        for
+                                                                                                                    s1
+SL(Ni , Z). Let si be complex numbers with                 i Ni si = 0. DefineQ  the isobaric sum F  =  (F1 × | · | A  ) ⊞
+(F2 × | · |sA2 ) ⊞ · · · ⊞ (Fk × | · |sAk ), whose L-function is L(s, F ) = i L(s + si , Fi ). This isobaric sum F is
+associated with  P a non-cuspidal automorphic form on GL(N ), an Eisenstein series twisted by Maass forms,
+where N = iQ         Ni (see [Gol06, Section 10.5]). The L-function twisted by a character is simply given by
+L(s, F × χ∗ ) = i L(s + si , Fi × χ∗ ) which satisfies the conditions of Theorem 1.3.
+Example 1.9 (Symmetric powers on GL(2)). Let f be a modular form of weight k for SL(2, Z) and define
+F := Sym2 f . The symmetric square F satisfies the conditions in Theorem 1.3 by the work of Shimura,
+[Shi75]. Here we do not need to involve automorphy using Gelbart-Jacquet lifting. One may have similar
+results for higher symmetric powers depending on the recent progress in the theory of Galois representations.
+   As a last remark, let us explain the construction of the double Dirichlet series Z(s, w) given by (12).
+This construction originates from the Rankin-Selberg convolution of a cusp form F and an Eisenstein series
+on GL(2). The Fourier coefficients of the Eisenstein series E(z, s, χ∗ ) can be written in terms of the divisor
+function σ2s−1 (n, χ∗ ) defined in Definition 2.1:
+                                                                              ∞
+                                                                              X
+                                          1 σ2s−1 (n, χ∗ )                      g(χ∗ , ℓc∗ , n)
+                                                                         or                       .
+                                       n2s−1 L(2s, χ∗ )                              (ℓc∗ )2s
+                                                                              ℓ=1
+
+Therefore, in the case of F on GL(2), the Rankin-Selberg integral of F and E(∗, w − s + 1/2, χ∗ ) produces
+the double Dirichlet series              ∞ X∞
+                                        X      A(n)g(χ∗ , ℓc∗ , n)
+                                                                   .
+                                        n=1
+                                                ns (ℓc∗ )2w+1−2s
+                                                            ℓ=1
+
+A similar expression appears on the left hand side of the Voronoi formula with Gauss sums (9). The Rankin-
+Selberg convolution of the cusp form F and an Eisenstein series can be written as a product of two copies
+of standard L-function of F , namely
+
+                                                   L(2w − s, F )L(s, F × χ∗ )
+                                                                              .
+                                                      L(2w − 2s + 1, χ∗ )
+
+Applying the functional equation to only L(s, F × χ∗ ) gives us another expression, which is similar to the
+right hand side (10) of the Voronoi formula with Gauss sums. Since L(2w −s, F ) was not used in this process,
+we have the freedom to replace L(2w − s, F ) by Lq (2w − s, F ) in the case of GL(N ) and it gives us enough
+generality to prove the Voronoi formula (11) with Gauss sums. In the case of GL(3), this construction is
+similar to Bump’s double Dirichlet series, see [Gol06, Chapter 6.6] or [Bum84, Chapter X].
+
+
+
+                                                                        6
+2     Background on Gauss sums
+Here we collect information about the Gauss sums of Dirichlet characters which are not necessarily primitive.
+Definition 2.1. Let χ be a Dirichlet character modulo c induced from a primitive Dirichlet character χ∗
+modulo c∗ . Define the divisor function
+                                                    X
+                                        σs (m, χ) =   χ(d)ds .
+                                                               d|m
+
+Define the Gauss sum of χ                                  X                  mu 
+                                         g(χ∗ , c, m) =              χ(u)e            ,
+                                                                                c
+                                                          u mod c
+                                                          (u,c)=1
+
+and the standard Gauss sum for χ∗ is given as τ (χ∗ ) = g(χ∗ , c∗ , 1).
+   The Gauss sum g(χ∗ , c, m) is the same as the Gauss sum τm (χ) in other literature. However we prefer
+our notation because we come upon numerous Gauss sums of characters χ induced from a single primitive
+character χ∗ .
+Lemma 2.2 (Gauss sum of non-primitive characters, Lemma 3.1.3.(2) of [Miy06]). Let χ be a character
+modulo c induced from primitive character χ∗ modulo c∗ . Then the Gauss sum of χ is given by
+                                                  X             c  a  c 
+                         g(χ∗ , c, a) = τ (χ∗ )             dχ∗ ∗ χ∗    µ ∗ .
+                                                                c d   d   c d
+                                                d|(a, cc∗ )
+
+
+Lemma 2.3 (Theorem 9.12 of [MV07]). Let χ∗ be a primitive character modulo c∗ and assume c∗ |c. Then,
+we have                                                                         
+                  ∗              ∗   φ(c)           c        ∗     c        ∗
+                                                                                a
+               g(χ , c, a) = τ (χ )         µ ∗          χ              χ            ,
+                                        c
+                                    φ (c,a)      c (c, a)      c∗ (c, a)      (c, a)
+
+if c∗ |c/(a, c). Otherwise g(χ∗ , c, a) is zero.
+    Next lemma is a generalization of a famous formula of Ramanujan,
+                                                                     ∞
+                                                              X cℓ (n)
+                                              σs−1 (n)
+                                                       = ζ(s)          ,
+                                               ns−1               ℓs
+                                                                     ℓ=1
+
+where cℓ (n) is the Ramanujan sum.
+Lemma 2.4. Let ℜ(s) > 1. Define a Dirichlet series
+                                                               ∞
+                                                               X g(χ∗ , ℓc∗ , m)
+                                         I(s, χ∗ , c∗ , m) =                          ,
+                                                                           ℓs
+                                                               ℓ=1
+
+as a generating function for the non-primitive Gauss sums induced from χ∗ . It satisfies the identity
+
+                                 τ (χ∗ )σs−1 (m, χ∗ ) = ms−1 I(s, χ∗ , c∗ , m)L(s, χ∗ ).
+
+Proof. We prove the equivalent formula τ (χ∗ )m1−s σs−1 (m, χ∗ )L(s, χ∗ )−1 = I(s, χ∗ , c∗ , m). Expand its both
+sides and the left hand side is
+                                  ∞                         ∞
+                                                              P           ∗                  ∗
+                    X dχ∗ (m/d) X    χ∗ (n)µ(n)             X   d|(m,ℓ) dχ (m/d)µ(ℓ/d)χ (ℓ/d)
+                 ∗                                      ∗
+             τ (χ )                             =  τ (χ   )                                        ,
+                           ds    n=1
+                                         ns                                   ℓs
+                     d|m                                             ℓ=1
+
+which equals the right side by Lemma 2.2.
+                                                               7
+Lemma 2.5. For any two positive integers n and m, and a primitive Dirichlet character χ∗ modulo c∗ , we
+have                                              (
+                      X                             τ (χ∗ )χ∗ (m/n)n, if n|m,
+                          χ∗ (d)g(χ∗ , ℓc∗ , m) =
+                     ℓd=n
+                                                    0,                otherwise.
+
+Proof. We start with the formula,
+
+                                         τ (χ∗ )σs−1 (m, χ∗ )
+                                                              = I(s, χ∗ , c∗ , m)L(s, χ∗ ).
+                                                ms−1
+Both sides are Dirichlet series and we equate coefficients. The left hand side is given as
+                                                                      X χ∗ (m/e)e
+                                                            τ (χ∗ )                        ,
+                                                                                  es
+                                                                      e|m
+
+whereas the right hand side is
+                            ∞
+                            X                 ∞                             ∞ P
+                              g(χ∗ , ℓc∗ , m) X χ∗ (d)                      X                ∗      ∗    ∗
+                                                                                       dℓ=n χ (d)g(χ , ℓc , m)
+                                                                        =                                      .
+                                          ℓs                    ds          n=1
+                                                                                                ns
+                            ℓ=1                        d=1
+
+
+3     The Voronoi formula
+3.1    Double Dirichlet series
+We begin by proving a convoluted version of (11).
+
+Theorem 3.1. For N ≥ 3, q = (q1 , . . . , qN −2 ) ∈ NN −2 , and n ∈ N, define
+                                     X                χ∗ (d1 · · · dN −2 ) X ∗
+          H(q; n, s) :=                                                     χ (d)H(q′ ; ℓc∗ , χ∗ , s)              for ℜ(s) ≫ 1
+                                                       (d1 · · · dN −2 )s
+                           d1 |q1 ,...,dN −2 |qN −2                             dℓ=n
+
+
+and
+                                  X                χ∗ (d1 · · · dN −2 ) X ∗
+        G(q; n, s) :=                                                    χ (d)G(q′ ; ℓc∗ , χ∗ , s)            for ℜ(1 − s) ≫ 1,
+                                                    (d1 · · · dN −2 )s
+                        d1 |q1 ,...,dN −2 |qN −2                            dℓ=n
+
+
+where we denote for abbreviation
+                                                    q′ = ( qd11d , q2dd2 1 , . . . , qN d−2Nd−2
+                                                                                              N −3
+                                                                                                   ).                             (16)
+The functions H(q; n, s) and G(q; n, s) have analytic continuation to all s ∈ C and these analytic continua-
+tions satisfy
+                                           H(q; n, s) = G(q; n, s).                                     (17)
+Proof. The region of absolute convergence for H(q; n, s) is a right half plane ℜ(s) ≫ 1, and the region of
+absolute convergence of G(q; n; s) is a left half plane ℜ(1 − s) ≫ 1. Let Z(s, w) be defined as in (12). For
+any s ∈ C and w with ℜ(w) large enough so that ℜ(2w − s) ≫ 1 and ℜ(w − s) > 0, writing Lq (2w − s, F )
+and L(2w − 2s + 1, χ∗ )−1 as Dirichlet series, we derive
+                                        ∞
+                                            P                               s ∗                2s−1
+                                       X      d|n A(qN −2 , . . . , q1 , d)d χ (n/d)µ(n/d)(n/d)
+                                    ∗
+              Z(s, w) = L(s, F × χ )                                                                .
+                                       n=1
+                                                                           n2w
+
+Hence, we have
+                                                                            ∞
+                                                                            X an (s)
+                                                           Z(s, w) =                        .
+                                                                            n=1
+                                                                                    n2w
+                                                                            8
+where                                              X
+                    an (s) = L(s, F × χ∗ )                 A(qN −2 , . . . , q1 , d)ds χ∗ (n/d)µ(n/d)(n/d)2s−1 .
+                                                    d|n
+
+Here an (s) is an analytic function of s ∈ C, because L(s, F × χ∗ ) is entire. The computation below shows
+that an (s) equals either side of (17) in their respective regions of absolute convergence, up to scaling by a
+constant τ (χ∗ ). This proves the analytic continuation of H and G as well as their equality.
+    For ℜ(s) ≫ 1, ℜ(w − s) > 0, we expand the two L-functions in the numerator of Z(s, w) as Dirichlet
+series, obtaining
+                                         X∞
+                            1                 A(qN −2 , . . . , q1 , n)A(1, . . . , 1, m)χ∗ (m)
+        Z(s, w) =
+                    L(2w − 2s + 1, χ∗ ) n,m=1                     n2w−s ms
+
+                            1           X∞
+                                               χ∗ (m)                              X                                                               
+                                                                                                          qN −2 dN −3
+                =                              2w−s
+                                                                                                  A          dN −2    , . . . , q1dd1 0 , nddN0−1       ,
+                                    ∗
+                    L(2w − 2s + 1, χ ) n,m=1 n      ms
+                                                                         d0 d1 ···dN −1 =m
+                                                                    d0 |n,d1 |q1 ,...,dN −2 |qN −2
+
+
+where we have used the Hecke relation (3). We change the variable n/d0 → n and combine h = ndN −1 ,
+giving
+                                                X∞                          X
+                                1                                                         χ∗ (d0 . . . dN −1 )
+          Z(s, w) =
+                        L(2w − 2s + 1, χ∗ ) n,d ,d =1                  di |qi
+                                                                                      n2w−s d2w−s
+                                                                                             0    (d0 . . . dN −1 )s
+                                                       0    N −1
+                                                                    i=1,...,N −2
+                                                                                                                                  
+                                                                                     qN −2 dN −3
+                                                                            ×A          dN −2    , . . . , q1dd1 0 , ndN −1
+                                            ∞
+                                            X                      X
+                                1                                               χ∗ (d0 . . . dN −2 )
+                    =
+                        L(2w − 2s + 1, χ∗ )
+                                                    d0 ,h=1      di |qi
+                                                                             d2w−s
+                                                                              0     (d0 . . . dN −2 )s
+                                                              i=1,...,N −2
+                                                                                                                        σ               ∗
+                                                                                     qN −2 dN −3                               2w−2s (h, χ )
+                                                                            ×A          dN −2    , . . . , q1dd1 0 , h             2w−s
+                                                                                                                                             .
+                                                                                                                                 h
+Applying Lemma 2.4, we get
+                                                                                                                              
+                                                                                           qN −2 dN −3
+                          ∞
+                          X          X            χ∗ (d0 . . . dN −2 ) X A
+                                                                             ∞
+                                                                                              dN −2    , . . . , q1dd1 0 , h       ∞
+                                                                                                                                   X g(χ∗ , ℓc∗ , h)
+    Z(s, w) =τ (χ∗ )−1                                                                                                                                      .
+                                                 d2w
+                                                  0 (d1 . . . dN −2 )
+                                                                      s                                hs                                ℓ2w−2s+1
+                          d0 =1      di |qi                                  h=1                                                   ℓ=1
+                                  i=1,...,N −2
+
+Therefore we reach
+                                    X∞                     X
+                                         1                                  χ∗ (d1 · · · dN −2 ) X ∗
+           Z(s, w) = τ (χ∗ )−1                                                                    χ (d)H(q′ ; ℓc∗ , χ∗ , s),                                    (18)
+                                    n=1
+                                        n2w                                  (d1 · · · dN −2 )s
+                                                 d1 |q1 ,...,dN −2 |qN −2                             dℓ=n
+
+
+where q′ is defined in (16).
+
+   On the other hand, let us apply the functional equation (15) to L(s, F × χ∗ ) in Z(s, w), giving
+
+                                                 G(s)τ (χ∗ )N Lq (2w − s, F )L(1 − s, Fe × χ∗ )
+                              Z(s, w) =                                                         .
+                                                    c∗ N s          L(2w − 2s + 1, χ∗ )
+
+
+
+
+                                                                       9
+Given ℜ(1 − s) ≫ 1 and ℜ(2w − s) ≫ 1, we open the expression as a Dirichlet series,
+                                       ∞
+                 G(s)τ (χ∗ )N c∗ −N s X A(qN −2 , . . . , q1 , n)A(m, 1, . . . , 1)χ∗ (m)
+     Z(s, w) =
+                 L(2w − 2s + 1, χ∗ ) n,m=1                 n2w−s m1−s
+                                      ∞
+                 G(s)τ (χ∗ )N c∗ −N s X      χ∗ (m)                                               X                                                                   
+                                                                                                                                qN −2 dN −1
+             =                              2w−s
+                                                                                                                        A          dN −2    , . . . , q1dd1 2 , nd
+                                                                                                                                                                d0
+                                                                                                                                                                   1
+                                   ∗
+                 L(2w − 2s + 1, χ ) n,m=1 n      m1−s
+                                                                                       d0 d1 ···dN −1 =m
+                                                                                  d0 |n,d1 |q1 ,...,dN −2 |qN −2
+                                                                                                                                                                      
+                                                                                                                   qN −2 dN −1
+               G(s)τ (χ∗ )N c∗ −N s X
+                                     ∞                                X                      χ∗ (d0 d1 . . . dN −1 )A dN −2    , . . . , q1dd1 2 , nd
+                                                                                                                                                   d0
+                                                                                                                                                      1
+
+             =                                                                                                                                                             ,
+               L(2w − 2s + 1, χ∗ ) n,m=1
+                                                          d0 d1 ···dN −1 =m
+                                                                                                  (n/d0 )2w−s d1+2w−2s
+                                                                                                               0       (d1 . . . dN −1 )1−s
+                                                     d0 |n,d1 |q1 ,...,dN −2 |qN −2
+
+where we have combined the Fourier coefficients by the Hecke relation (4).We change the variable n/d0 → n.
+Then the sum over d0 cancels with L(2w − 2s + 1, χ∗ ) in the denominator, giving
+                                                                                                                   
+                                                                              q    dN −1
+                G(s)τ (χ∗ )N c∗ −N s     X∞       X χ∗ (d0 d1 . . . dN −1 )A N d−2N −2     , . . . , q1dd1 2 , d1 n
+     Z(s, w) =
+                L(2w − 2s + 1, χ∗ )
+                                     n,d ,d =1    d |q
+                                                              n2w−s d1+2w−2s
+                                                                       0        (d1 . . . dN −1 )1−s
+                                                 0    N −1                    i     i
+                                                                     i=1,...,N −2
+                                                                                                                                                     
+                                                                                                               qN −2 dN −1
+                 G(s)τ (χ∗ )N    X∞                   X               χ∗ (d1 . . . dN −1 )A                       dN −2    , . . . , q1dd1 2 , d1 n
+               =                                                                                                                                          .                    (19)
+                    c∗ N s    n,d   =1
+                                                                                                n2w−s (d1 . . . dN −1 )1−s
+                                       N −1        di |qi
+                                                i=1,...,N −2
+
+                                                                                         ∗
+P∞If we denote−2w
+                    the right hand side of (17) by τ (χ )bn (s), our goal is to transform (19) into R :=
+ n=1 b n (s)n     . But at this point it is easier to start from R. More explicitly, we have
+                                ∞
+                                X                         X
+                                   1                                              χ∗ (d1 · · · dN −2 ) X ∗
+              R = τ (χ∗ )−1                                                                             χ (d)G(q′ ; ℓc∗ , χ∗ , s).                                             (20)
+                                  h2w                                              (d1 · · · dN −2 )s
+                                h=1         d1 |q1 ,...,dN −2 |qN −2                                           dℓ=h
+
+
+Here q′ has been defined in (16). We plug in the definition of G(q′ ; ℓc∗ , χ∗ , s) from (10) for q′ , giving
+
+                                       G(s)χ∗ (−1) X                                    X                            X
+            G(q′ ; ℓc∗ , χ∗ , s) =                                                               ···
+                                      c∗ N s−1 ℓ(N −2)s q1 dℓ                           q q dℓ                    q ...qN −2 dℓ
+                                                              f1 | d                      2
+                                                                                  f2 | f1 d                       1
+                                                                                                       fN −2 | f ...f
+                                                                          1              1 2                     1    N −3 dN −2
+
+                   ∞
+                   X                            (N −1)s (N −2)s        2s                    s
+                     A(n, fN −2 , . . . , f1 ) f1      f2       · · · fN −2 (d1 . . . dN −2 )
+               ×
+                   n=1
+                         n1−s f1 f2 · · · fN −2 q (N −2)s q (N −3)s · · · q s            d(N −2)s
+                                                      1               2      N −2
+                                                                                     ∗                                ∗
+                                                  ∗
+                                                                  ∗ q1 ···qN −3 dℓc                ∗ q1 ···qN −2 dℓc
+               × g(χ∗ , ℓc∗ , f1 )g(χ∗ , qf1 1dℓc
+                                               d1 , f2 ) · · · g(χ , f1 ···fN −3 dN −3 , fN −2 )g(χ , f1 ···fN −2 dN −2 , n).
+
+We substitute G(q′ ; ℓc∗ , χ∗ , s) with this expression in (20) and change the orders of summation between fi
+and di . The summations over d and di collapse with the repeated use of Lemma 2.5, giving
+                                            ∞    ∞
+                          G(s)χ∗ (−1) X X X                               X                            X                    X
+         R = τ (χ∗ )−1                                                                  ···
+                            c∗ N s−1 h=1 n=1                          q1 h                     q1 ···qN −3 h         q1 ...qN −2 h
+                                                           h|f1
+                                                                       f1 |f2                   f1 ···fN −3 |fN −2 f1 ···fN −2 |n
+                                                          f1 |q1 h       q q h
+                                                                     f2 | 1f 2                         q1 ···qN −2 h
+                                                                                               fN −2 | f ···f
+                                                                            1
+                                                                                                         1    N −3
+                                                                                            
+              τ (χ∗ )N −1 ∗ f1   ∗
+                                   f1 f2        ∗
+                                                     f1 f2 · · · fN −2    ∗
+                                                                               f1 f2 · · · fN −2 n
+                         χ     χ           ...χ                         χ
+                  h2w       h       hq1               hq1 · · · qN −3            hq1 · · · qN −2
+                  N −2  N −3                                                            (N −1)s        2s
+                   q1       q2           qN −2      N −1−N s+2s A(n, fN −2 , . . . , f1 ) f1          · · · fN −2
+              ×                    ···            h                                                               .
+                   f1       f2           fN −2                       n1−s f1 · · · fN −2 q (N −2)s · · · q s
+                                                                                                                                         1                    N −2
+
+                                                                                   10
+Define the variables e1 = f1 /h and ei = f1 · · · fi /q1 · · · qi−1 h for i = 2, . . . N − 2. The double conditions
+under the sums simplify to ei |qi . Also define eN −1 = f1 · · · fN −2 n/hq1 · · · qN −2 and it runs over all positive
+integers. Finally noting τ (χ∗ )−1 = χ∗ (−1)τ (χ∗ )/c∗ , we get
+                              ∞
+              G(s)τ (χ∗ )N X         1                            X        χ∗ (e1 · · · eN −2 eN −1 ) eN −1 qN −2
+         R=                                                                                          A( eN −2 , . . . , e2e1q1 , e1 h),
+                 c∗ N s   h,e   =1
+                                   h2w−s                                     (e1 · · · eN −1 )1−s
+                                         N −1                  ei |qi
+                                                            i=1,...,N −2
+
+which in turn, by (19), equals Z(s, w) as well as (18). We complete the proof after applying the uniqueness
+theorem for Dirichlet series (Theorem 11.3 of [Apo76]) to the equality between (18) and (20).
+Remark 3.2. The above proof works for N ≥ 3 but not for N = 2. We can prove the Voronoi formula for
+SL(2, Z) similarly and easily by considering
+
+                                                                   L(2w − s, F )L(s, F × χ∗ )
+                                                Z(s, w) =                                       .
+                                                                  L(2w − 2s + 1, χ∗ )L(2w, χ∗ )
+
+We have from the Hecke relations on GL(2)
+                                                                          ∞
+                                                                        ∞ X
+                                                                        X   A(n) g(χ∗ , ℓc∗ , n)
+                                             Z(s, w) = τ (χ∗ )−1                                            ,
+                                                                                    ns     ℓ1+2w−2s
+                                                                        ℓ=1 n=1
+
+and applying the functional equation for L(s, F × χ∗ ) we have
+                                                                               ∞
+                                                                             ∞ X
+                                                                             X   A(n) g(χ∗ , ℓc∗ , n)
+                                        Z(s, w) = τ (χ∗ )c∗ −2s G(s)                                              .
+                                                                                         n1−s         ℓ2w
+                                                                             ℓ=1 n=1
+
+Applying the uniqueness theorem for Dirichlet series to the variable w, we get the Voronoi formula with
+Gauss sums on GL(2).
+Proposition 3.3. Equation (11) is equivalent to Theorem 3.1.
+Proof. Construct the following summation
+               X X                              X                                                                                            
+                                                            µ(e0 · · · eN −2 )χ∗ (e0 · · · eN −2 )         q1 e0       qN −2 eN −3 n
+     T   :=                      ···                                                               H             ,...,            ; ,s
+                                                                       (e1 · · · eN −2 )s                   e1            eN −2    e0
+               e0 |n e1 |q1 e0         eN −2 |qN −2 eN −3
+               X X                              X           µ(e0 · · · eN −2 )χ∗ (e0 · · · eN −2 )        X            χ∗ (d1 · · · dN −2 )
+          =                      ···
+                                                                       (e1 · · · eN −2 )s                               (d1 · · · dN −2 )s
+               e0 |n e1 |q1 e0         eN −2 |qN −2 eN −3                                            di |qi ei−1 /ei
+                                                                                                     i=1,...,N −2
+                                       X                                                                      
+                                                                q1 e0 d0       qN −2 eN −3 dN −3 n ∗ ∗
+                             ×               χ∗ (d0 )H                   ,...,                  ;       c ,χ ,s .
+                                                                 e1 d1            eN −2 dN −2     e0 d0
+                                  d0 |n/e0
+
+Change variables ei di → ai for i = 0, . . . , N − 2, and change orders of summation, getting
+                    X X X X                                       X              X χ∗ (a0 · · · aN −2 )
+          T   =                                     ···
+                                                                                    (a1 · · · aN −2 )s
+                    a0 |n e0 |a0 a1 |q1 e0 e1 |a1  aN −2 |qN −2 eN −3 eN −2 |aN −2
+                                                                                                      
+                                                     q1 a0 q2 a1          qN −2 aN −3 nc∗ ∗
+                                                ×H          ,       ,...,               ;       , χ , s µ(e0 ) · · · µ(eN −2 ).
+                                                       a1      a2             aN −2         a0
+
+One by one the Möbius summation over ei will force ai = 1, and we obtain T = H(q; nc∗ , χ∗ , s). By Theorem
+3.1, we have H = G and and the same calculations yield T = G(q; nc∗ , χ∗ , s). This proves the theorem.
+
+
+                                                                           11
+3.2     Equivalence between equations (8) and (11)
+First we prove a lemma showing that the hyper-Kloosterman sum on the right hand side of (8) becomes a
+product of (N − 2) Gauss sums after averaging against a Dirichlet character.
+Lemma 3.4. Let χ be a Dirichlet character modulo c which is induced from the primitive character χ∗
+modulo c∗ . Let q = (q1 , . . . , qN −2 ) and d = (d1 , . . . , dN −2 ) be two tuples of positive integers, and assume
+that all the divisibility conditions in (1) are met. Consider the summation
+                                                 X
+                                           S :=         χ(a) Kl(a, n, c; q, d).
+                                                          a mod c
+                                                          (a,c)=1
+
+The quantity S is zero unless the divisibility conditions
+
+                                             q1 q2 c                    q1 q2 q3 c                               q1 · · · qN −2 c
+                     d1 c∗ |q1 c,   d2 c∗            ,          d3 c∗              ,      ...,      dN −2 c∗                      ,   (21)
+                                              d1                         d1 d2                                   d1 · · · dN −3
+
+are satisfied. Under such divisibility conditions, S can be written as a product of Gauss sums
+
+                    S = g(χ∗ , c, d1 )g(χ∗ , qd11c , d2 ) · · · g(χ∗ , qd11···qN −3 c            ∗ q1 ···qN −2 c
+                                                                            ···dN −3 , dN −2 )g(χ , d1 ···dN −2 , n).
+
+Proof. The divisibility conditions (1) imply
+                                                                                                          
+                              q1 c                q1 q2 c                              q1 . . . qN −3 c
+     d1 |q1 (c, d1 ), d2 q2        , d2 , d3 q3           , d3 , . . . , dN −2 qN −2                    , dN −2 .                     (22)
+                              d1                  d1 d2                                d1 . . . dN −3
+
+We open up the hyper-Kloosterman sum in S. Our forthcoming computation is an iterative process. The
+summation over a yields a Gauss sum, which in turn produces the term χ∗ (x1 ). Then the summation over
+x1 yields another Gauss sum, which produces the term χ∗ (x2 ) and so on.
+   Firstly we sum over a modulo c
+                                                                                      
+                                                                                !
+                         X          X∗          d1 x1 a     X∗          d2 x2 x1      
+                   S=        χ(a)           e                         e    q1 c    ···
+                                       q1 c        c           q1 q2 c      d1
+                             a mod c        x1 (mod      d1 )                      x2 (mod       d1 d2 )
+                                                                                                                
+                                                                                                           !
+                               X∗                                        X∗                  d2 x2 x1            
+                         =                 g(χ∗ , c, x1 d1 )                             e       q1 c         ···.
+                          x1 (mod
+                                    q1 c                                        q1 q2 c           d1
+                                    d1 )                           x2 (mod      d1 d2 )
+
+
+
+
+Now because of (c, x1 d1 ) = ((c, q1 c), x1 d1 ) = (c, (q1 c, x1 d1 )) = (c, d1 ), we deduce from Lemma 2.3 that
+
+                                               g(χ∗ , c, x1 d1 ) = χ∗ (x1 )g(χ∗ , c, d1 ).
+                                                    c
+By Lemma 2.3, this Gauss sum is zero unless c∗ | (c,d 1)
+                                                         , which implies the first divisibility condition of (21)
+                           d1      c q1 c
+because c∗ | (c,dc 1 ) = (c,d       |
+                              1 ) d1 d1
+                                          by (22).
+   Next we sum over x1 . Notice that x1 is its multiplicative inverse modulo q1 c/d1 and hence modulo c∗ .
+This means that χ∗ (x1 ) = χ∗ (x1 ). We change variables in the x1 summation x1 → x1 , and change orders of
+
+
+
+
+                                                                           12
+summation to obtain
+                                                                                                            
+                                    X∗                               X∗                            
+                                                                                                          
+            S = g(χ∗ , c, d1 )                  χ∗ (x1 )                        e       d2 x2 x1
+                                                                                           q1 c         ···
+                                                                                           d1
+                                         q1 c                          q1 q2 c
+                               x1 (mod   d1 )                x2 (mod   d1 d2 )
+                                                                                                                                                         
+                                     X∗                 X∗                                                      X∗                               
+                                                                                                                                                          
+               = g(χ∗ , c, d1 )                                      χ∗ (x1 )e       d2 x2 x1
+                                                                                         q1 c                                   e       d3 x3 x2
+                                                                                                                                          q1 q2 c       ···
+                                                                                         d1                                               d1 d2
+                                         q1 q2 c              q1 c                                                   q q q c
+                               x2 (mod   d1 d2 )   x1 (mod    d1 )                                      x3 (mod d1 d2 d3 )
+                                                                                                                       1 2 3
+                                                                                                                                 
+                                     X∗                                               X∗                                  
+                                                                                                                                 
+               = g(χ∗ , c, d1 )                    g(χ∗ , qd11c , d2 x2 )                              e       d3 x3 x2
+                                                                                                                 q1 q2 c       ···.
+                                                                                                                 d1 d2
+                                         q1 q2 c                                          q1 q2 q3 c
+                               x2 (mod   d1 d2 )                               x3 (mod    d1 d2 d3 )
+
+
+Once again the equalities ( qd11c , d2 x2 ) = (( qd11c , q1dq12 c ), d2 x2 ) = ( qd11c , ( q1dq12 c , d2 x2 )) = ( qd11c , d2 ) imply that we
+can pull out χ∗ (x2 ) from the Gauss sum. Then we have
+                                                                                                                           
+                                                       X∗                               X∗                          
+                                                                                                                           
+              S = g(χ∗ , c, d1 )g(χ∗ , qd11c , d2 )                  χ∗ (x2 )                          e dq31xq32xc2 · · ·  .
+                                                                                                                                d1 d2
+                                                                     q1 q2 c                                q q q c
+                                                         x2 (mod     d1 d2 )                    x3 (mod d1 d2 d3 )
+                                                                                                             1 2 3
+
+
+                                                                  1 c/d1
+The second Gauss sum g(χ∗ , qd11c , d2 ) vanishes unless c∗ | (q1qc/d 1 ,d2 )
+                                                                              by Lemma 2.3. This in turn implies
+         1 c/d1
+c∗ | (q1qc/d        | cq1 q2 by (22), which is the second divisibility condition of (21). We complete the proof after
+             1 ,d2 ) d1 d2
+repeating this process (N − 2) times.
+Proposition 3.5. The equations (8) and (11) are equivalent.
+Proof. Let χ be a Dirichlet character modulo c induced from the primitive Dirichlet character χ∗ modulo
+c∗ . Multiply both sides of (8) by χ(a) and sum over reduced residue classes modulo c. On the left hand side
+of (8), one gets                X
+                                     χ(a)Lq (s, F, a/c) = (c/c∗ )1−2s H(q; c, χ∗ , s),
+                                     a mod c
+                                     (a,c)=1
+
+whereas on the right hand side of (8), one obtains (c/c∗ )1−2s G(q; c, χ∗ , s) by making use of Lemma 3.4 and
+the fact that
+                                g(χ∗ , qd11···qN −2 c            ∗ q1 ···qN −2 c
+                                            ···dN −2 , −n) = ±g(χ , d1 ···dN −2 , n),
+
+depending on whether χ(−1) is 1 or −1. This shows that (8) implies (11). Conversely if we multiply both
+                  1
+sides of (11) by φ(c) χ(a) and sum over all Dirichlet characters (both primitive and non-primitive) modulo c,
+we obtain (8), by using the orthogonality relation for Dirichlet characters. Since both of the aforementioned
+summations that shuttle between (8) and (11) are finite, the properties of absolute convergence and analytic
+continuation are preserved.
+
+
+Acknowledgements
+The authors would like to thank Dorian Goldfeld, Wenzhi Luo for helpful suggestions, Matthew Young for
+his extensive help in organization of the manuscript and his encouragement, and Jeffrey Hoffstein, in whose
+class the seed for this work originated.
+
+
+References
+[Apo76] Tom M. Apostol. Introduction to analytic number theory. Springer-Verlag, New York-Heidelberg,
+        1976. Undergraduate Texts in Mathematics.
+                                                 13
+[BB]      Valentin Blomer and Jack Buttcane. On the subconvexity problem for L-functions on GL(3).
+          arXiv:1504.02667.
+[BK15]    Jack Buttcane and Rizwanur Khan. L4 -norms of Hecke newforms of large level. Math. Ann.,
+          362(3-4):699–715, 2015.
+[BKY13] Valentin Blomer, Rizwanur Khan, and Matthew Young. Distribution of mass of holomorphic cusp
+        forms. Duke Math. J., 162(14):2609–2644, 2013.
+[Bum84] Daniel Bump. Automorphic forms on GL(3, R), volume 1083 of Lecture Notes in Mathematics.
+        Springer-Verlag, Berlin, 1984.
+[DI90]    W. Duke and H. Iwaniec. Estimates for coefficients of L-functions. I. In Automorphic forms and
+          analytic number theory (Montreal, PQ, 1989), pages 43–47. Univ. Montréal, Montreal, QC, 1990.
+[GJ72]    Roger Godement and Hervé Jacquet. Zeta functions of simple algebras. Lecture Notes in Mathe-
+          matics, Vol. 260. Springer-Verlag, Berlin-New York, 1972.
+[GL06]    Dorian Goldfeld and Xiaoqing Li. Voronoi formulas on GL(n). Int. Math. Res. Not., pages Art.
+          ID 86295, 25, 2006.
+[GL08]    Dorian Goldfeld and Xiaoqing Li. The Voronoi formula for GL(n, R). Int. Math. Res. Not. IMRN,
+          (2):Art. ID rnm144, 39, 2008.
+[Gol06]   Dorian Goldfeld. Automorphic forms and L-functions for the group GL(n, R), volume 99 of Cam-
+          bridge Studies in Advanced Mathematics. Cambridge University Press, Cambridge, 2006. With an
+          appendix by Kevin A. Broughan.
+[Goo81] A. Good. Cusp forms and eigenfunctions of the Laplacian. Math. Ann., 255(4):523–548, 1981.
+[IT13]    Atsushi Ichino and Nicolas Templier. On the Voronoı̆ formula for GL(n). Amer. J. Math.,
+          135(1):65–101, 2013.
+[JPSS83] H. Jacquet, I. I. Piatetskii-Shapiro, and J. A. Shalika. Rankin-Selberg convolutions. Amer. J.
+         Math., 105(2):367–464, 1983.
+[Kha12] Rizwanur Khan. Simultaneous non-vanishing of GL(3) × GL(2) and GL(2) L-functions. Math.
+        Proc. Cambridge Philos. Soc., 152(3):535–553, 2012.
+[KR14]    Emmanuel Kowalski and Guillaume Ricotta. Fourier coefficients of GL(N ) automorphic forms in
+          arithmetic progressions. Geom. Funct. Anal., 24(4):1229–1297, 2014.
+[Li09]    Xiaoqing Li. The central value of the Rankin-Selberg L-functions. Geom. Funct. Anal., 18(5):1660–
+          1695, 2009.
+[Li11]    Xiaoqing Li. Bounds for GL(3) × GL(2) L-functions and GL(3) L-functions. Ann. of Math. (2),
+          173(1):301–336, 2011.
+[LY12]    Xiaoqing Li and Matthew P. Young. The L2 restriction norm of a GL3 Maass form. Compos.
+          Math., 148(3):675–717, 2012.
+[Mil06]   Stephen D. Miller. Cancellation in additively twisted sums on GL(n). Amer. J. Math., 128(3):699–
+          729, 2006.
+[Miy06]   Toshitsune Miyake. Modular forms. Springer Monographs in Mathematics. Springer-Verlag, Berlin,
+          english edition, 2006. Translated from the 1976 Japanese original by Yoshitaka Maeda.
+[MS04]    Stephen D. Miller and Wilfried Schmid. Summation formulas, from Poisson and Voronoi to the
+          present. In Noncommutative harmonic analysis, volume 220 of Progr. Math., pages 419–440.
+          Birkhäuser Boston, Boston, MA, 2004.
+                                                  14
+[MS06]    Stephen D. Miller and Wilfried Schmid. Automorphic distributions, L-functions, and Voronoi
+          summation for GL(3). Ann. of Math. (2), 164(2):423–488, 2006.
+[MS11]    Stephen D. Miller and Wilfried Schmid. A general Voronoi summation formula for GL(n, Z). In
+          Geometry and analysis. No. 2, volume 18 of Adv. Lect. Math. (ALM), pages 173–224. Int. Press,
+          Somerville, MA, 2011.
+[Mun13] Ritabrata Munshi. Shifted convolution sums for GL(3)×GL(2). Duke Math. J., 162(13):2345–2362,
+        2013.
+[Mun15] Ritabrata Munshi. The circle method and bounds for L-functions - IV: Subconvexity for twists of
+        GL(3) L-functions. Ann. of Math. (2), 182(2):617–672, 2015.
+[MV07]    Hugh L. Montgomery and Robert C. Vaughan. Multiplicative number theory. I. Classical theory,
+          volume 97 of Cambridge Studies in Advanced Mathematics. Cambridge University Press, Cam-
+          bridge, 2007.
+[Shi75]   Goro Shimura. On the holomorphy of certain Dirichlet series. Proc. London Math. Soc. (3),
+          31(1):79–98, 1975.
+[Zho14]   Fan Zhou. Weighted Sato-Tate vertical distribution of the Satake parameter of Maass forms on
+          PGL(N ). Ramanujan J., 35(3):405–425, 2014.
+[Zho16]   Fan Zhou. Voronoi summation formulae on GL(n). J. Number Theory, 162:483–495, 2016.
+
+
+
+
+Eren Mehmet Kıral
+Department of Mathematics
+Texas A&M University
+College Station, TX 77843, USA
+ekiral@math.tamu.edu
+
+Fan Zhou
+Department of Mathematics
+The Ohio State University
+Columbus, OH 43210, USA
+zhou.1406@math.osu.edu
+
+
+
+
+                                                  15
+

@@ -1,0 +1,124 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-level-four-Appell-source-audit",
+        "type": "source_audit",
+        "track": "source_audit",
+        "title": "Level-four Appell completion and moving-section source audit",
+        "status": "proved_external_dependency",
+        "statement_tex": "For integer level four and tau in the upper half-plane, the Semikhatov-Taormina-Tipunin K_4 transformation and the equivalent completed A_4 Jacobi law apply to the pole-free moving section (nu,mu)=(tau/8,1/2-tau/8). The exact completion contains four theta times Mordell/nonholomorphic correction terms. The completed section is stabilized modulo exact elliptic shifts by Gamma(2), but the holomorphic part alone is not modular and the theorem supplies no square-root radial estimate. The double-cone expansion requiring |q|<|exp(2pi i(nu+mu))|<1 is inapplicable because the middle modulus equals one.",
+        "dependencies": [],
+        "implies": [],
+        "blockers": [],
+        "source_card": "sources/semikhatov_taormina_tipunin_2005.md",
+        "evidence": {
+          "positive": [
+            "sources/semikhatov_taormina_tipunin_2005.md",
+            "rounds/codex-managed/m9-m1-one-sided-divisor-false-theta/reports/false_theta_source_hostile_audit.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use only the completed four-term Appell identity. Any analytic application must estimate all correction terms jointly with the periodized radial kernel."
+      },
+      {
+        "id": "M9-M1-one-sided-divisor-Appell-Poisson-reduction",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Exact Appell completion and character-Poisson return of the one-sided divisor cone",
+        "status": "proved_internal",
+        "statement_tex": "For D(n)=sum_(hq=n,q odd,q>4h)chi_4(q), F(z)=sum_(n>=1)D(n)z^n=sum_(h>=1)z^(4h^2+h)/(1+z^(2h)). With z=exp(pi i tau), A_4(1/2,-3tau/2;tau)=K_4(tau,tau/8,1/2-tau/8)=1/2+2F(z). For compactly supported smooth w, the associated radial sum equals one half sum_h w(4h^2) plus (i/2)sum_(h>=1,j nonzero)chi_4(j){h^(-1)int_(4h^2)^infinity w(u)e(-ju/(4h))du-2w(4h^2)/(pi i j)}. For w(u)=V(u/N)u^(-3/4)e(sqrt(Xu)), the positive-j interior stationary term is 2X^(-1/4)h^(-1)chi_4(j)V(4Xh^2/(j^2N))e(Xh/j-1/8). The boundary is target-safe, while the reciprocal signed cone and uniform entry/exit transitions remain open.",
+        "dependencies": [
+          "M9-M1-subcritical-small-angle-collapse",
+          "M9-M1-level-four-Appell-source-audit"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-one-sided-divisor-false-theta/reports/false_theta_transform_attack.md",
+            "rounds/codex-managed/m9-m1-one-sided-divisor-false-theta/reports/blind_false_theta_rederivation.md",
+            "rounds/codex-managed/m9-m1-one-sided-divisor-false-theta/reports/false_theta_source_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-one-sided-divisor-false-theta/reviews/conductor_false_theta_adjudication.md",
+            "rounds/codex-managed/m9-m1-one-sided-divisor-false-theta/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Attack the complete reciprocal-character cone with its stationary entry/exit and subtraction terms. Exploit the linear h-phase e(Xh/j), period-four character, and near-hyperbola variable |X-jm| without taking absolute values or silently returning to M1."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "dependencies_added": [
+          "M9-M1-one-sided-divisor-Appell-Poisson-reduction"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-one-sided-divisor-false-theta/synthesis.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-m1-one-sided-divisor-false-theta/reports/false_theta_source_hostile_audit.md"
+          ]
+        },
+        "next_action": "On the target-safe replacement range nu<=2/5, estimate the exact reciprocal-character Poisson cone including entry/exit and subtraction. The Appell completion is exact but supplies no standalone radial bound."
+      },
+      {
+        "id": "M9-M1-subcritical-small-angle-collapse",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-one-sided-divisor-false-theta/synthesis.md"
+          ]
+        },
+        "next_action": "The remaining one-sided coefficient now has exact Appell and reciprocal-Poisson representations. Prove cancellation in the complete reciprocal cone; do not infer it from modular appearance or termwise stationary phase."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round63-false-theta-appearance-implies-modular-radial-bound",
+        "reason": "The exact object is a moving meromorphic level-four Appell section. Its completion has four correction terms, and no audited theorem controls their square-root radial convolution."
+      },
+      {
+        "id": "Round63-K4-zero-one-half-is-the-one-sided-kernel",
+        "reason": "K_4(tau,0,1/2) pairs to an ordinary theta half-sum. The correct section is K_4(tau,tau/8,1/2-tau/8)."
+      },
+      {
+        "id": "Round63-drop-Appell-Mordell-corrections",
+        "reason": "The exact level-four transformation contains four theta-Mordell/nonholomorphic terms; no cancellation identity removing them was proved."
+      },
+      {
+        "id": "Round63-absolute-Fourier-transfer-proves-signed-target",
+        "reason": "Elementary Cauchy-Parseval returns N^(1/4+epsilon), and taking absolute values before periodization costs X^(1/4)N^(-1/2). These routes are not target-sized; the exact signed periodized pairing remains open."
+      },
+      {
+        "id": "Round63-STT-double-cone-expansion-applies-at-the-moving-section",
+        "reason": "That expansion requires |q|<|exp(2pi i(nu+mu))|<1, whereas exp(2pi i(nu+mu))=-1 here. Only the bilateral meromorphic definition and transformation apply."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "The reciprocal signed cone and the full lower-radial estimate remain open."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1 and M9-M2 remain open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "Round 63 proves transformations, not a new analytic bound or discrepancy exponent."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 8,
+    "idea_quality_score": 9,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 63 identifies the exact level-four Appell section and derives a boundary-explicit character-Poisson return with exact reciprocal stationary phase. It sharply excludes naive modular and absolute-transfer shortcuts, but proves no signed cancellation estimate or exponent improvement."
+  }
+}

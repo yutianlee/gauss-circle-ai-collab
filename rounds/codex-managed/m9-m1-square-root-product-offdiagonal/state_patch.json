@@ -1,0 +1,118 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-square-root-product-energy-involution",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Actual ratio-symbol and two-step square-root energy involution",
+        "status": "proved_internal",
+        "statement_tex": "In the fixed smooth positive-ratio interior, the normalized square-root-product row is P_k=sum_(q odd) chi_4(q) C(k/q)e(sqrt(Xkq)), where C(y)=y^(3/4)Xi(2sqrt(y)) has bounded logarithmic derivatives and a Schwartz Mellin transform. Expanding |P_k|^2, writing q_1=q+2d, and applying stationary Poisson/B-process first in d and then on the odd q-lattice gives the following exact stationary-main involution: the first saddle is q_1^*=4Xk/j^2 with odd j, square phase (sqrt(Xk/j)-sqrt(jq)/2)^2, and amplitude sqrt(k/J)Xi(j/J); the second saddle is q^*=4Xk/s^2 with odd s, phase Xk(1/j-1/s), and amplitude sqrt(k/J)conj(Xi(s/J)). The Gaussian units cancel, the odd-lattice density is 1/2, and (-1)^((j-s)/2)=chi_4(j)chi_4(s), so the complete two-step stationary main is (k/J)|S_k|^2. This is a return map, not an estimate. Every fixed nonzero half-integral difference shell is O(Q^2), and exact product-square fibers have O(Q^(3/2+epsilon)) unsigned pairs, but the signed union of O(Q) shells and the complete twice-transformed nonstationary/transition/error ledger remain open.",
+        "dependencies": [
+          "M9-M1-joint-reciprocal-energy-Bprocess-reduction"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-square-root-product-offdiagonal/actual_symbol_addendum.md",
+            "rounds/codex-managed/m9-m1-square-root-product-offdiagonal/reports/blind_offdiagonal_rederivation.md",
+            "rounds/codex-managed/m9-m1-square-root-product-offdiagonal/reports/conductor_two_step_involution.md",
+            "rounds/codex-managed/m9-m1-square-root-product-offdiagonal/reports/square_root_product_source_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-square-root-product-offdiagonal/reviews/conductor_offdiagonal_adjudication.md",
+            "rounds/codex-managed/m9-m1-square-root-product-offdiagonal/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Do not repeat the reciprocal-energy B-process. Return to the exact direct bilinear form before Cauchy and test whether its weaker Q^(3/2) square-root-product target can exploit the wavelet symbol without requiring a lossless Q^2 energy theorem."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-joint-reciprocal-energy-Bprocess-reduction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-square-root-product-offdiagonal/reports/conductor_two_step_involution.md",
+            "rounds/codex-managed/m9-m1-square-root-product-offdiagonal/reports/square_root_product_source_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-square-root-product-offdiagonal/synthesis.md"
+          ]
+        },
+        "next_action": "The actual square-root-product symbol is now explicit, but the energy transform is involutive. Attack the original direct bilinear form before Cauchy, or prove genuinely new cross-shell cancellation not preserved by the reciprocal duality."
+      },
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "dependencies_added": [
+          "M9-M1-square-root-product-energy-involution"
+        ],
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-m1-square-root-product-offdiagonal/reports/square_root_product_source_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-square-root-product-offdiagonal/synthesis.md"
+          ]
+        },
+        "next_action": "Use the exact ratio symbol but avoid the circular lossless energy route. Derive and attack the weaker direct square-root-product bilinear estimate with the original wavelet coefficients before Cauchy."
+      },
+      {
+        "id": "M9-M1-shifted-divisor-correlation-PSC",
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-m1-square-root-product-offdiagonal/reports/square_root_product_source_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-square-root-product-offdiagonal/synthesis.md"
+          ]
+        },
+        "next_action": "The lossless energy formulation is a two-step stationary self-return. Seek a direct outside-absolute signed bilinear estimate or a cross-shell correlation that uses the exact wavelet coefficient before squaring."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round68-arbitrary-moving-symbol-square-root-large-sieve",
+        "reason": "A smooth phase-conjugating coefficient can make the energy Q^3. The actual ratio symbol excludes that countermodel, but no theorem uniform over arbitrary moving coefficients is possible."
+      },
+      {
+        "id": "Round68-repeat-Bprocess-closes-square-root-energy",
+        "reason": "Two successive stationary B-processes restore exactly (k/J)|S_k|^2, including both characters, Gaussian units, and the odd-lattice half-density; the route is involutive rather than saving."
+      },
+      {
+        "id": "Round68-Robert-Sargos-spacing-closes-square-root-energy",
+        "reason": "After lawful Mellin separation of the actual ratio symbol, the audited root-spacing/double-large-sieve route gives only Q^2 X^(1/4+epsilon), which is worse than the required Q^2 X^epsilon."
+      },
+      {
+        "id": "Round68-fixed-shell-target-bounds-sum-for-free",
+        "reason": "Each fixed nonzero half-integral difference shell is O(Q^2), but there are O(Q) shells and no proved cancellation across their signed union."
+      },
+      {
+        "id": "Round68-perfect-powers-refute-actual-energy",
+        "reason": "Exact product-square fibers have only O(Q^(3/2+epsilon)) unsigned pairs and fourth-power fibers are smaller, so they lie below the Q^2 diagonal scale under the actual bounded symbol."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "The signed union of difference shells, full fixed-sector error ledger, lower radial sectors, and endpoint completion remain open."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1 and M9-M2 remain open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "Round 68 proves an exact symbol and a circular reduction, not the conjectural exponent."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 9,
+    "state_evidence_score": 9,
+    "calibration_score": 10,
+    "reason": "Round 68 replaces the abstract coefficient by its exact Mellin-separable ratio symbol and proves the fully normalized two-step stationary self-return, sharply ruling out repeated B-process and unsigned spacing as closure mechanisms while retaining the lossless energy and exponent open."
+  }
+}

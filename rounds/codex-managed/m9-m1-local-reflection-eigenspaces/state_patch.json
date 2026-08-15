@@ -1,0 +1,227 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-local-reflection-cocycle",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Exact 2-adic coefficient reflection cocycle",
+        "status": "proved_internal",
+        "statement_tex": "For a_z(n)=sum_(hq=n)chi_4(q)(q/h)^(z/2), write n=2^k m with m odd. Then a_z(2^k m)=2^(-kz/2)a_z(m) and a_(-z)(2^k m)=chi_4(m)2^(kz)a_z(2^k m). Equivalently b_z(2^k m):=2^(kz/2)a_z(2^k m) satisfies b_(-z)=chi_4(m)b_z. Hence the normalized symmetric projection is supported on odd part m=1 mod 4 and the normalized antisymmetric projection on odd part m=3 mod 4. For odd p, a_z(p^r)=p^(-rz/2)sum_(j=0)^r(chi_4(p)p^z)^j, while a_z(2^r)=2^(-rz/2).",
+        "dependencies": [
+          "M9-M1-centered-angular-functional-equation"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-local-reflection-eigenspaces/reports/blind_local_reflection_algebra.md",
+            "rounds/codex-managed/m9-m1-local-reflection-eigenspaces/reports/local_eigenspace_kernel_attack.md",
+            "rounds/codex-managed/m9-m1-local-reflection-eigenspaces/reports/local_reflection_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-local-reflection-eigenspaces/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use the normalized odd-part projections only inside an exact actual-profile divisor sum; the unnormalized prime-2 factor rotates rather than damps Mellin modes."
+      },
+      {
+        "id": "M9-M1-local-eigenspace-profile-projection",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Exact matching reflection projection of the maximal profile kernel",
+        "status": "proved_internal",
+        "statement_tex": "In the finite Round-16 maximal kernel, write h=2^k r with r,q odd and m=rq. For H^[epsilon]_(T,k)(r,q)=(H_(T,X)(2^k r,q)+epsilon H_(T,X)(2^k q,r))/2, divisor exchange gives sum_(rq=m)chi_4(q)H_(T,X)(2^k r,q)=sum_(rq=m)chi_4(q)H^[chi_4(m)]_(T,k)(r,q), while the opposite projection contributes zero. This is an exact norm-one projection, not a bound. A reflected actual profile would require D'=2^k 4X/D, outside the actual D<=sqrt X range, and would also change the height divisor, floor, Phi factor, and endpoint convention.",
+        "dependencies": [
+          "M9-M1-local-reflection-cocycle",
+          "M9-M1-reflected-Perron-completion-no-go",
+          "M9-M1-maximal-angular-sign-kernel"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-local-reflection-eigenspaces/reports/local_eigenspace_kernel_attack.md",
+            "rounds/codex-managed/m9-m1-local-reflection-eigenspaces/reports/local_reflection_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-local-reflection-eigenspaces/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Estimate the single matching projection; do not split its chi_4(m)=plus/minus sectors outside the absolute value without a new correlation theorem."
+      },
+      {
+        "id": "M9-M1-reflection-eigenspace-pole-no-go",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Local reflection eigenspaces do not cancel the Mellin axes",
+        "status": "proved_internal",
+        "statement_tex": "For z not equal to 0, F_z plus or minus F_(-z) generically has distinct poles at s=1-z/2 and s=1+z/2 with residues proportional to L(1-z,chi_4) and plus or minus L(1+z,chi_4); no structural cancellation occurs. At z=0 the antisymmetric coefficient vanishes but the symmetric coefficient is r_2/4, the Hardy return. Near (u,v)=(0,0), the antisymmetric coefficient is O(u+v), so multiplication by the top and height factors 1/(uv) removes only the joint double residue and leaves both 1/u and 1/v axes. Coefficient eigenspaces therefore prove neither hard-Perron cancellation nor GAR.",
+        "dependencies": [
+          "M9-M1-local-reflection-cocycle",
+          "M9-M1-angular-Voronoi-return-map-no-go"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-local-reflection-eigenspaces/reports/blind_local_reflection_algebra.md",
+            "rounds/codex-managed/m9-m1-local-reflection-eigenspaces/reports/local_eigenspace_kernel_attack.md",
+            "rounds/codex-managed/m9-m1-local-reflection-eigenspaces/reports/local_reflection_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-local-reflection-eigenspaces/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Reject pole-cancellation arguments based solely on a_z plus/minus a_(-z); any gain must estimate the matched actual-profile kernel."
+      },
+      {
+        "id": "M9-M1-high-2adic-tail-conditional",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Conditional absolute control of the high 2-adic maximal tail",
+        "status": "derived_under_assumptions",
+        "statement_tex": "Let B_X=sup_(T,h,q)|H_(T,X)(h,q)| for a fully specified post-residue symmetrically truncated BV/Perron kernel. Conditional on B_X<<log X, the contribution with v_2(hq)>=K is <<B_X N_X^(1/4)2^(-K)log(2N_X). Thus K=ceil(log_2(2X^(1/8))) makes the tail O(log^2 X). The divisor-summation exponent 2^(-K) is proved, but the uniform pointwise kernel hypothesis has not yet been accepted for every Round-16 remainder and residue convention.",
+        "dependencies": [
+          "M9-M1-local-eigenspace-profile-projection"
+        ],
+        "implies": [],
+        "blockers": [
+          "M9-M1-high-2adic-kernel-pointwise-bound"
+        ],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-local-reflection-eigenspaces/reports/local_eigenspace_kernel_attack.md",
+            "rounds/codex-managed/m9-m1-local-reflection-eigenspaces/reports/local_reflection_hostile_audit.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-local-reflection-eigenspaces/reports/blind_local_reflection_algebra.md",
+            "rounds/codex-managed/m9-m1-local-reflection-eigenspaces/synthesis.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Define H_(T,X) term by term after residue subtraction and independently prove or refute sup|H|<<log X before removing the high-2-adic tail."
+      },
+      {
+        "id": "M9-M1-high-2adic-kernel-pointwise-bound",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Uniform pointwise bound for the post-residue Perron profile kernel",
+        "status": "open",
+        "statement_tex": "For the term-by-term specified post-residue actual-profile kernel H_(T,X)(h,q), with symmetric spatial and any required height BV truncations, prove sup_(T,h,q)|H_(T,X)(h,q)|<<log X uniformly through all active scales, floors, smooth Mellin remainders, and endpoint stars. This statement must not be justified by absolute integration of 1/u and must record the precise abscissae and residue grouping.",
+        "dependencies": [
+          "M9-M1-finite-height-reflected-sector-identity",
+          "M9-M1-local-eigenspace-profile-projection"
+        ],
+        "implies": [
+          "M9-M1-high-2adic-tail-conditional"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-local-reflection-eigenspaces/reports/blind_local_reflection_algebra.md",
+            "rounds/codex-managed/m9-m1-local-reflection-eigenspaces/reports/local_reflection_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-local-reflection-eigenspaces/synthesis.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Freeze an explicit formula for H_(T,X), separate sine-integral Perron pieces from rapid/BV remainders, and validate uniformity independently."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-maximal-angular-sign-kernel",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M1-local-reflection-cocycle",
+          "M9-M1-local-eigenspace-profile-projection",
+          "M9-M1-reflection-eigenspace-pole-no-go"
+        ],
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-m1-local-reflection-eigenspaces/reports/local_eigenspace_kernel_attack.md",
+            "rounds/codex-managed/m9-m1-local-reflection-eigenspaces/reports/local_reflection_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-local-reflection-eigenspaces/reports/blind_local_reflection_algebra.md",
+            "rounds/codex-managed/m9-m1-local-reflection-eigenspaces/synthesis.md"
+          ]
+        },
+        "statement_tex": "With h=2^k r, r,q,m=rq odd, the exact remaining target is sup_T |sum_(k>=0)2^(-3k/4) sum_(m<=N_X/2^k,m odd)m^(-3/4)e(sqrt(2^kXm)) sum_(rq=m)chi_4(q)H^[chi_4(m)]_(T,k)(r,q)|<<_epsilon X^epsilon, where H^[epsilon] is the matching profile projection. The opposite reflection eigenspace is exactly null, but this norm-one projection supplies no estimate. High k may be removed only after M9-M1-high-2adic-kernel-pointwise-bound is proved.",
+        "next_action": "First formalize and prove the pointwise post-residue kernel bound needed for the high-2-adic tail; then attack the remaining low-k matched projection without separating its two chi_4(m) sectors absolutely."
+      },
+      {
+        "id": "M9-M1-top-Perron-angular-correlation",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M1-local-eigenspace-profile-projection",
+          "M9-M1-reflection-eigenspace-pole-no-go"
+        ],
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-m1-local-reflection-eigenspaces/reports/local_reflection_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-local-reflection-eigenspaces/reports/local_eigenspace_kernel_attack.md",
+            "rounds/codex-managed/m9-m1-local-reflection-eigenspaces/synthesis.md"
+          ]
+        },
+        "next_action": "Retain the two axial residues and estimate the exact matching profile projection; the vanished joint antisymmetric residue is not enough."
+      },
+      {
+        "id": "M9-M1-centered-angular-functional-equation",
+        "status": "proved_internal",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-local-reflection-eigenspaces/reports/blind_local_reflection_algebra.md",
+            "rounds/codex-managed/m9-m1-local-reflection-eigenspaces/reports/local_reflection_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-local-reflection-eigenspaces/synthesis.md"
+          ]
+        },
+        "next_action": "Use the proved local cocycle and exact profile projection; no further coefficient-reflection identity is needed."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round17-local-reflection-cancels-generic-poles",
+        "reason": "The symmetric and antisymmetric Dirichlet series have distinct generic poles at 1-z/2 and 1+z/2; at z=0 the symmetric pole is the nonzero Hardy return."
+      },
+      {
+        "id": "Round17-odd-eigenspace-cancels-both-Mellin-axes",
+        "reason": "The antisymmetric coefficient is O(u+v), so against 1/(uv) only the joint residue vanishes; the separate 1/u and 1/v axes remain."
+      },
+      {
+        "id": "Round17-local-eigenspaces-create-actual-reflected-profile",
+        "reason": "The required reflected scale is D'=2^k4X/D outside the actual range, and the height divisor, floors, Phi factor, and endpoint profile also change."
+      },
+      {
+        "id": "Round17-orthogonal-eigenspaces-give-a-power-saving",
+        "reason": "The coefficient selects the matching profile eigenspace by an exact norm-one projection; the opposite space is null but no magnitude is reduced."
+      },
+      {
+        "id": "Round17-high-2adic-tail-unconditional-as-stated",
+        "reason": "The divisor exponent is correct, but the needed uniform pointwise bound for the schematically defined post-residue kernel has not received unanimous independent validation and is retained as an explicit assumption."
+      }
+    ],
+    "no_change": [
+      {"id": "M9-M1-global-angular-radial-estimate", "reason": "No target-sized global angular estimate was proved."},
+      {"id": "M9-M1", "reason": "No blockwise or global M1 estimate was proved."},
+      {"id": "M9-M2", "reason": "Round 17 concerns only local algebra inside the transformed M1 kernel."},
+      {"id": "M9", "reason": "M9-M1 and M9-M2 remain open."},
+      {"id": "GC-target", "reason": "Round 17 is an algebraic reduction and obstruction, not a proof of the target."}
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 9,
+    "calibration_score": 10,
+    "reason": "Round 17 proves a clean 2-adic local reflection cocycle and an exact actual-profile eigenspace projection, shows that only the joint odd residue vanishes, and isolates a conditional high-2-adic tail reduction. It gains exact structure but no new cancellation bound."
+  }
+}

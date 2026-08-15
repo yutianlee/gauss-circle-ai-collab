@@ -1,0 +1,277 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-TTY-exponent-pair-wedge",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Tao--Trudgian--Yang reciprocal exponent-pair wedge",
+        "status": "proved_external_dependency",
+        "statement_tex": "Let D=X^delta, L=X^ell in the active M2 triangle, and assume the denominator block has sup_d |w_D(d)|+sum_d |w_D(d+1)-w_D(d)| << 1 uniformly. The Tao--Trudgian--Yang exponent pair (89/1282,997/1282), applied after conjugating the reciprocal phase to the sigma=2 model phase, gives |B_L(D;X)| <<_epsilon X^([89(1+ell)+819delta]/1282+epsilon). Hence the X^(1/4+epsilon) target holds when 178ell+1638delta<=463. This covers every frequency through delta<=1015/3632 and a nonempty lower slice through delta<=463/1638.",
+        "dependencies": [
+          "M9-M2-beta-algebra"
+        ],
+        "implies": [
+          "M9-M2",
+          "M9-M2-reciprocal-SPD-route"
+        ],
+        "blockers": [
+          "M9-M2-dyadic-weight-nondegeneracy"
+        ],
+        "evidence": {
+          "positive": [
+            "sources/tao_trudgian_yang_2025.md",
+            "rounds/codex-managed/m9-frequency-phase-diagram/reviews/conductor_primary_source_and_region_audit.md",
+            "rounds/codex-managed/m9-frequency-phase-diagram/reports/hybrid_corridor_hostile.md",
+            "rounds/codex-managed/m9-frequency-phase-diagram/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Write and verify the actual normalized-BV dyadic and endpoint profiles, then use this wedge as proved M2 coverage. Do not extend it to arbitrary bounded weights."
+      },
+      {
+        "id": "M9-M2-frequency-phase-diagram-R5",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Exact Round-5 frequency coverage and residual corridor",
+        "status": "derived_under_assumptions",
+        "statement_tex": "In Omega={(delta,ell):1/4<=delta<=1/2, 0<=ell<=delta-1/4}, the elementary T2S, full second-derivative, and trivial estimates cover the terminal line ell=delta-1/4 and the point (1/2,0) at target 1/4. Under the normalized-BV transfer for the TTY pair, the additional wedge is 178ell+1638delta<=463. The exact remaining set is U={(delta,ell) in Omega: 0<=ell<delta-1/4 and 178ell+1638delta>463} minus {(1/2,0)}.",
+        "dependencies": [
+          "M9-M2-top-frequency-two-shift-T2S",
+          "M9-M2-TTY-exponent-pair-wedge"
+        ],
+        "implies": [
+          "M9-M2",
+          "M9-M2-reciprocal-SPD-route",
+          "M9-M2-sign-preserving-poisson-voronoi-route"
+        ],
+        "blockers": [
+          "M9-M2-dyadic-weight-nondegeneracy"
+        ],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-frequency-phase-diagram/reports/blind_phase_diagram.md",
+            "rounds/codex-managed/m9-frequency-phase-diagram/reviews/conductor_primary_source_and_region_audit.md",
+            "rounds/codex-managed/m9-frequency-phase-diagram/reports/hybrid_corridor_hostile.md",
+            "rounds/codex-managed/m9-frequency-phase-diagram/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Target only the explicit residual corridor U. Keep the fixed-profile BV hypothesis separate from arbitrary bounded-weight statements."
+      },
+      {
+        "id": "M9-M2-two-shift-sine-kernel-sharpness",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Exact two-shift sine kernel and bounded-weight D/L sharpness",
+        "status": "proved_internal",
+        "statement_tex": "The rho=1,3 shifts are exactly an odd-frequency parity projector. Pairing positive and negative frequencies gives S_(2,L)=4 sum_(d asymp D) w_D(d) chi_4(r_d) sum_(h>0 odd) a_(h,H,L) sin(pi h(X-dr_d)/(2d)), where r_d is a nearest odd integer to X/d. The kernel vanishes at X=dr_d but has constant size on |X-dr_d| asymp D/L. For some X asymp Y there is a bounded nonnegative sparse denominator weight with actual Vaaler amplitudes for which |S_(2,L)| >> D/L. Thus no improvement of T2S is uniform over arbitrary bounded weights; the example has variation >>D/L and does not obstruct a fixed normalized-BV profile.",
+        "dependencies": [
+          "H4",
+          "H4-Phi-regularity",
+          "M9-M2-beta-algebra",
+          "M9-M2-top-frequency-two-shift-T2S"
+        ],
+        "implies": [
+          "M9-M2-reciprocal-SPD-route",
+          "M9-M2-character-factor"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-frequency-phase-diagram/reports/hybrid_corridor_hostile.md",
+            "rounds/codex-managed/m9-frequency-phase-diagram/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Exploit the actual fixed normalized-BV denominator profile or chi_4(r_d) oscillation. Do not seek cancellation by pairing the two shifts, and do not claim a bound uniform over arbitrary bounded weights."
+      },
+      {
+        "id": "M9-M2-smooth-dual-three-quarter-equivalence",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Smooth Poisson duality and equivalent three-quarter target",
+        "status": "proved_internal",
+        "statement_tex": "For a fixed W in C_c^infinity((a,b)), d-Poisson summation and uniform stationary phase give sum_d W(d/D)e(hX/(4d)) = e(1/8)(hX)^(1/4)/2 sum_(k>=1) W(sqrt(hX/(4kD^2))) k^(-3/4)e(sqrt(hXk))+O_W(1). With K=XL/D^2 and M=LK, the positive M2 block equals -e(1/8)/(2pi) X^(1/4)M^(-3/4) T_(L,K)+O_W(1), where T_(L,K)=sum_(h asymp L,k asymp K) chi_4(h)a_(L,K)(h,k)e(sqrt(Xhk)) has the actual smooth slanted symbol. Therefore T_(L,K)<<M^(3/4)X^epsilon is equivalent-hard to the smooth positive block target, not an easier reduction.",
+        "dependencies": [
+          "H4",
+          "M9-M2-beta-algebra",
+          "M9-M2-character-factor"
+        ],
+        "implies": [
+          "M9-M2-sign-preserving-poisson-voronoi-route"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-frequency-phase-diagram/reports/dual_three_quarter_attack.md",
+            "rounds/codex-managed/m9-frequency-phase-diagram/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Prove the signed M^(3/4) product-phase estimate only in a genuinely new part of the residual corridor, or exploit the actual fixed-profile sine kernel instead. Do not apply unweighted derivative estimates after grouping by m=hk."
+      },
+      {
+        "id": "M9-M2-dual-square-root-spacing-mean-square",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Diagonal-critical dual square-root spacing mean square",
+        "status": "proposed",
+        "statement_tex": "For K>=L and the actual normalized smooth symbol a_(L,K), prove sum_(h asymp L) |sum_(k asymp K) a_(L,K)(h,k)e(sqrt(Xhk))|^2 <<_epsilon L^(1/2)K^(3/2)X^epsilon. This implies the dual M^(3/4) target after Cauchy, but is stronger because Cauchy erases chi_4(h); it is exactly diagonal-critical when K=L, corresponding to D=X^(1/2).",
+        "dependencies": [
+          "M9-M2-smooth-dual-three-quarter-equivalence"
+        ],
+        "implies": [
+          "M9-M2"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-frequency-phase-diagram/reports/dual_three_quarter_attack.md",
+            "rounds/codex-managed/m9-frequency-phase-diagram/synthesis.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Audit square-root spacing and large-sieve inputs at K>=L. Prefer a signed estimate retaining chi_4(h), since the mean-square target is stronger and has no endpoint slack."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M2-frequency-phase-diagram-R5",
+          "M9-M2-two-shift-sine-kernel-sharpness",
+          "M9-M2-smooth-dual-three-quarter-equivalence"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-frequency-phase-diagram/reports/blind_phase_diagram.md",
+            "rounds/codex-managed/m9-frequency-phase-diagram/reports/hybrid_corridor_hostile.md",
+            "rounds/codex-managed/m9-frequency-phase-diagram/reports/dual_three_quarter_attack.md",
+            "rounds/codex-managed/m9-frequency-phase-diagram/reviews/conductor_primary_source_and_region_audit.md",
+            "rounds/codex-managed/m9-frequency-phase-diagram/synthesis.md"
+          ]
+        },
+        "next_action": "Work only on U={(delta,ell) in Omega: ell<delta-1/4, 178ell+1638delta>463} minus {(1/2,0)}. First verify the actual BV block profiles; then attack either the fixed-profile sine kernel or the signed dual product-phase sum without erasing chi_4."
+      },
+      {
+        "id": "M9-M2-character-factor",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M2-two-shift-sine-kernel-sharpness"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-frequency-phase-diagram/reports/hybrid_corridor_hostile.md"
+          ]
+        },
+        "next_action": "Use the exact chi_4(r_d) sine kernel or retain chi_4(h) in the dual product phase. The two shifts reinforce odd frequencies; they do not cancel each other."
+      },
+      {
+        "id": "M9-M2-reciprocal-SPD-route",
+        "status": "proposed",
+        "dependencies_added": [
+          "M9-M2-TTY-exponent-pair-wedge",
+          "M9-M2-frequency-phase-diagram-R5",
+          "M9-M2-two-shift-sine-kernel-sharpness"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-frequency-phase-diagram/reviews/conductor_primary_source_and_region_audit.md",
+            "rounds/codex-managed/m9-frequency-phase-diagram/reports/hybrid_corridor_hostile.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-frequency-phase-diagram/reports/hybrid_corridor_hostile.md"
+          ]
+        },
+        "next_action": "Use the certified wedge under normalized BV. In the remaining corridor seek cancellation of the prescribed fixed profile; arbitrary bounded-weight improvement is false at the D/L scale."
+      },
+      {
+        "id": "M9-M2-sign-preserving-poisson-voronoi-route",
+        "status": "proposed",
+        "dependencies_added": [
+          "M9-M2-smooth-dual-three-quarter-equivalence",
+          "M9-M2-dual-square-root-spacing-mean-square"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-frequency-phase-diagram/reports/dual_three_quarter_attack.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-frequency-phase-diagram/reports/dual_three_quarter_attack.md"
+          ]
+        },
+        "next_action": "Treat the actual-symbol M^(3/4) product-phase estimate as equivalent-hard to the smooth M2 block. Do not group to an unweighted m-sum. If using Cauchy, prove the diagonal-critical square-root spacing mean square and acknowledge that chi_4 is lost."
+      },
+      {
+        "id": "M9-M2-dyadic-weight-nondegeneracy",
+        "status": "open",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-frequency-phase-diagram/reports/hybrid_corridor_hostile.md",
+            "rounds/codex-managed/m9-frequency-phase-diagram/reports/dual_three_quarter_attack.md"
+          ]
+        },
+        "next_action": "Specify the actual fixed profiles and endpoint rule. Verify uniform discrete BV for the TTY wedge and smooth Poisson transform, and separately verify sampled l1 nondegeneracy wherever the W-1 obstruction is invoked."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round5-two-shift-residue-cancellation",
+        "reason": "The rho=1,3 difference is exactly an odd-frequency parity projector and reinforces every surviving odd h."
+      },
+      {
+        "id": "Round5-arbitrary-bounded-weight-improvement-below-T2S",
+        "reason": "A sparse bounded nonnegative denominator weight with actual Vaaler amplitudes coherently attains size >>D/L on the first product annulus."
+      },
+      {
+        "id": "Round5-product-grouped-unweighted-derivative-bound",
+        "reason": "Grouping by m=hk produces an irregular localized chi_4-divisor coefficient, so an unweighted square-root phase estimate cannot be transferred by partial summation."
+      },
+      {
+        "id": "Round5-dual-three-quarter-is-an-easier-reduction",
+        "reason": "The exact smooth Poisson identity makes the actual-symbol M^(3/4) target equivalent to the original positive smooth block target up to O(1)."
+      },
+      {
+        "id": "Round5-exponent-pair-closes-M2",
+        "reason": "The certified TTY pair covers only 178ell+1638delta<=463 and gives no coverage at delta=1/3, 3/8, or 1/2."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "No M1 estimate was attempted."
+      },
+      {
+        "id": "M9",
+        "reason": "The explicit M2 residual corridor and M9-M1 remain open."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "Only the isolated M2 point (delta,ell)=(1/2,0) and terminal line are covered; the open endpoint interval 0<ell<1/4 remains."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The final theorem remains conditional on open M9."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 9,
+    "idea_quality_score": 9,
+    "state_evidence_score": 9,
+    "calibration_score": 9,
+    "reason": "Round 5 adds a primary-sourced pointwise wedge, proves an exact signed sine-kernel identity and a sharp bounded-weight obstruction, and completes the smooth Poisson transform with an equivalence-hard dual target. It reduces the open work to an explicit corridor without mistaking a reformulation for a proof."
+  }
+}

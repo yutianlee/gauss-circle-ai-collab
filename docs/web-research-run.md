@@ -1,4 +1,6 @@
-# Gauss Web Research Run Procedure
+# Gauss Web Research Run Procedure (Legacy)
+
+> This document describes the retired A1/A2/A3/A4 web and clipboard workflow. Do not use it for new campaigns; see `protocol.md` and `state/active_campaign.yml`.
 
 Use this procedure for high-quality mixed runs where A1/A2/A4 are manual web agents and A3 is called automatically through the DeepSeek API.
 

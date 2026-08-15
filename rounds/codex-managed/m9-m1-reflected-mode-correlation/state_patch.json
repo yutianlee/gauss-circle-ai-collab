@@ -1,0 +1,186 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-finite-height-reflected-sector-identity",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Finite-height functional-equation reflection with complete residue ledger",
+        "status": "proved_internal",
+        "statement_tex": "On finite Mellin rectangles the exact centered radial integral may be transformed with Lambda_z(s)=Lambda_(-z)(1-s). The reflected term contains F_(-z) with the original outside (u,v) scale symbol and the exact completed gamma quotient. Returning it to a common positive Mellin chamber crosses the zeta pole s=1-z/2, the height pole v=0, the hard-top spatial Perron pole u=0, and any explicitly introduced radial endpoint half residue. The chi_4 and zeta root numbers are +1. Gamma poles paired with trivial zeros in the intact completion are not additional residues. Passing uniformly to infinite height, especially through the top 1/u mode, is not part of this identity and remains open.",
+        "dependencies": [
+          "M9-M1-angular-double-Mellin-separation",
+          "M9-M1-centered-angular-functional-equation"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-reflected-mode-correlation/reports/blind_reflected_mode_identity.md",
+            "rounds/codex-managed/m9-m1-reflected-mode-correlation/reports/reflected_mode_correlation_attack.md",
+            "rounds/codex-managed/m9-m1-reflected-mode-correlation/reports/reflected_mode_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-reflected-mode-correlation/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use only with finite contour height unless a separate vector-valued maximal estimate controls the horizontal sides and hard-top Perron limit."
+      },
+      {
+        "id": "M9-M1-reflected-Perron-completion-no-go",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Reflected Perron sectors complete rather than cancel",
+        "status": "proved_internal",
+        "statement_tex": "For symmetric Perron projection P(A)=1_(A>1)+(1/2)1_(A=1), one has P(A)+P(A^(-1))=1. Hence reflected principal-value pieces have opposite signs but their half residues have the same sign, and ideal profile matching reconstructs the completed angular coefficient rather than zero; at z=0 this is the r_2/4 Hardy return. For an actual incidence d_(h,q)=2sqrt(X)sqrt(h/q), coefficient reflection replaces A_D=D/d_(h,q) by A_(4X/D)^(-1) and moves the height cutoff from h to q. The required scale 4X/D is outside the actual D<=sqrt(X) range, while floors, Phi, parity, and endpoint profiles also fail to match. The reflected sector is neither actual M1 nor actual M2.",
+        "dependencies": [
+          "M9-M1-finite-height-reflected-sector-identity",
+          "M9-M1-r2-Hardy-return-no-go",
+          "M9-top-combined-piecewise-cone"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-reflected-mode-correlation/reports/blind_reflected_mode_identity.md",
+            "rounds/codex-managed/m9-m1-reflected-mode-correlation/reports/reflected_mode_correlation_attack.md",
+            "rounds/codex-managed/m9-m1-reflected-mode-correlation/reports/reflected_mode_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-reflected-mode-correlation/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Do not seek cancellation from Perron oddness or formal angular reflection alone; retain the actual unmatched angular-sign correlation."
+      },
+      {
+        "id": "M9-M1-maximal-angular-sign-kernel",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Maximal actual-profile angular-sign radial correlation",
+        "status": "open",
+        "statement_tex": "After exact finite-height functional-equation reflection and subtraction of every zeta, height, spatial-Perron, and endpoint residue, prove an X^epsilon bound for the supremum over Perron height T of the actual character-weighted radial sum sum_(hq<=16sqrt X) chi_4(q)(hq)^(-3/4)e(sqrt(Xhq)) H_(T,X)(h,q), where H_(T,X) retains the full D-scale sum, height floors, Phi factors, endpoint stars, smooth Mellin remainders, and the truncated angular-sign kernel in log(D/(2sqrt(X)sqrt(h/q))). A proof with target-sized residue control would imply the top-Perron angular-correlation obligation and GAR. Ordinary pointwise mode estimates or unstructured L2 bounds do not establish it.",
+        "dependencies": [
+          "M9-M1-finite-height-reflected-sector-identity",
+          "M9-M1-reflected-Perron-completion-no-go"
+        ],
+        "implies": [
+          "M9-M1-top-Perron-angular-correlation"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-reflected-mode-correlation/reports/reflected_mode_correlation_attack.md",
+            "rounds/codex-managed/m9-m1-reflected-mode-correlation/reports/reflected_mode_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-reflected-mode-correlation/synthesis.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Before estimating, derive the exact arithmetic relation between a_z and a_(-z) prime by prime, including the 2-adic factor, and project the kernel into its reflection eigenspaces."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-top-Perron-angular-correlation",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M1-finite-height-reflected-sector-identity",
+          "M9-M1-reflected-Perron-completion-no-go",
+          "M9-M1-maximal-angular-sign-kernel"
+        ],
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-m1-reflected-mode-correlation/reports/reflected_mode_correlation_attack.md",
+            "rounds/codex-managed/m9-m1-reflected-mode-correlation/reports/reflected_mode_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-reflected-mode-correlation/reports/blind_reflected_mode_identity.md",
+            "rounds/codex-managed/m9-m1-reflected-mode-correlation/synthesis.md"
+          ]
+        },
+        "statement_tex": "Control the exact maximal actual-profile angular-sign kernel M9-M1-maximal-angular-sign-kernel, together with every crossed zeta, height, spatial-Perron, and endpoint residue, by O_epsilon(X^epsilon). Ideal reflected profiles only complete the full Hardy angular coefficient, and the actual reflected scale is absent, so formal z/-z or 1/u cancellation is not a valid substitute.",
+        "next_action": "Decompose the reflected coefficients arithmetically, including the prime 2, and determine whether any reflection eigenspace cancels a Mellin pole or reduces the maximal kernel."
+      },
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M1-maximal-angular-sign-kernel"
+        ],
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-m1-reflected-mode-correlation/reports/reflected_mode_correlation_attack.md",
+            "rounds/codex-managed/m9-m1-reflected-mode-correlation/reports/reflected_mode_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-reflected-mode-correlation/reports/blind_reflected_mode_identity.md",
+            "rounds/codex-managed/m9-m1-reflected-mode-correlation/synthesis.md"
+          ]
+        },
+        "next_action": "Replace the failed formal-reflection route by an exact local coefficient/eigenspace decomposition, then attack only the surviving actual-profile maximal kernel."
+      },
+      {
+        "id": "M9-M1-angular-Voronoi-return-map-no-go",
+        "status": "proved_internal",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-reflected-mode-correlation/reports/reflected_mode_correlation_attack.md",
+            "rounds/codex-managed/m9-m1-reflected-mode-correlation/reports/reflected_mode_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-reflected-mode-correlation/synthesis.md"
+          ]
+        },
+        "next_action": "The signed z/-z cancellation exception is now also ruled out for formal profile reflection; only the explicit actual-profile maximal kernel remains viable."
+      },
+      {
+        "id": "M9-M1-centered-angular-functional-equation",
+        "status": "proved_internal",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-reflected-mode-correlation/reports/blind_reflected_mode_identity.md",
+            "rounds/codex-managed/m9-m1-reflected-mode-correlation/reports/reflected_mode_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-reflected-mode-correlation/synthesis.md"
+          ]
+        },
+        "next_action": "Derive and independently validate the coefficient-level relation between a_z(n) and a_(-z)(n), with the odd part and 2-adic valuation explicit."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round16-automatic-reflected-mode-cancellation",
+        "reason": "The completed functional equation has root number +1, and putting reflected modes on common contours crosses nonzero zeta, height, and hard-top Perron residues."
+      },
+      {
+        "id": "Round16-top-Perron-oddness-cancels",
+        "reason": "Although the principal-value kernel changes sign under A to A^(-1), the two endpoint half residues have the same sign and P(A)+P(A^(-1))=1."
+      },
+      {
+        "id": "Round16-actual-scale-range-is-reflection-invariant",
+        "reason": "Angle reflection requires D to map to 4X/D, which lies at least at 4sqrt(X) for every actual D<=sqrt(X)."
+      },
+      {
+        "id": "Round16-reflected-sector-equals-M2",
+        "reason": "Reindexing moves the character, but the factor-four lattice, cone support, Vaaler variable, height floors, and endpoint profile do not match actual M2; the accepted leading stationary signs also reinforce."
+      },
+      {
+        "id": "Round16-unstructured-Hilbert-L2-proves-GAR",
+        "reason": "Plancherel exposes exact and near collisions of logarithmic divisor ratios and supplies no accepted spacing or signed actual-profile correlation theorem; it also leaves the crossed Hardy residue."
+      }
+    ],
+    "no_change": [
+      {"id": "M9-M1", "reason": "No blockwise or global target-sized M1 estimate was proved."},
+      {"id": "M9-M2", "reason": "The reflected sector is not actual M2 and supplies no M2 bound."},
+      {"id": "M9", "reason": "Both M9-M1 and M9-M2 remain open."},
+      {"id": "GC-target", "reason": "Round 16 is an exact obstruction and kernel reduction, not a proof of the target."}
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 6,
+    "idea_quality_score": 8,
+    "state_evidence_score": 9,
+    "calibration_score": 10,
+    "reason": "Round 16 proves that functional-equation and Perron reflection complete rather than cancel the angular sector, identifies every crossed residue and the absent reflected scale, and replaces a vague z/-z correlation hope by one explicit maximal actual-profile angular-sign kernel. It proves no new exponent region."
+  }
+}

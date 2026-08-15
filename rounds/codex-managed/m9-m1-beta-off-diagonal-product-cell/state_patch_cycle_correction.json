@@ -1,0 +1,28 @@
+{
+  "proof_obligations": {
+    "create": [],
+    "update": [
+      {
+        "id": "M9-M1-beta-cellwise-symbol-sum-reduction",
+        "dependencies_removed": [
+          "M9-M1-beta-large-alpha-transition-package-bound"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-off-diagonal-product-cell/reviews/conductor_diagonal_composition.md"
+          ]
+        },
+        "next_action": "Use this reduction as an input to the proved large-alpha transition package; do not reverse that dependency. Analyze the bounded-alpha and double-bounded cells separately."
+      }
+    ],
+    "reject": [],
+    "no_change": []
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 9,
+    "idea_quality_score": 9,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Mechanical dependency-direction correction: the coefficient-sum reduction is an input to, not a consequence of, the large-alpha package."
+  }
+}

@@ -1,18 +1,10 @@
-# Gauss Circle AI Collaboration
+# Gauss Circle Proof Research
 
-This repository is a public-memory workflow for multi-AI research on the Gauss circle problem.
-The workflow is claim-centered: `state/proof_obligations.yml` is the authoritative mathematical state, while round transcripts are audit evidence.
+This repository is a claim-centered research workspace for the Gauss circle problem. `state/proof_obligations.yml` is the authoritative mathematical state; campaign reports, computations, and historical rounds are auditable evidence.
 
-It is adapted from the KKT workflow in `yutianlee/kkt-ai-collab`, but this repo uses exactly four agents:
+The active workflow uses one persistent Codex conductor and temporary, context-isolated subagents chosen for a specific mathematical interface. The conductor designs strategy, distributes objectives, monitors execution, closes each reasoning round, and defines the next one. The former A1/A2/A3/A4 web/API panel is retired. Its rounds and evidence paths are preserved as historical provenance.
 
-- `A1`: ChatGPT Extended Pro through the web UI.
-- `A2`: Gemini Pro Deep Think through the web UI.
-- `A3`: Deepseek V4 Pro through the API.
-- `A4`: Claude Max Thinking through the web UI.
-
-There is no Qwen agent in this Gauss workflow.
-
-## Target
+## Target and current status
 
 Let
 
@@ -20,178 +12,108 @@ Let
 N(R) = #{(m,n) in Z^2 : m^2 + n^2 <= R^2}.
 ```
 
-The Gauss circle problem asks for the best possible exponent in
+The conjectural error estimate is
 
 ```text
-N(R) = pi R^2 + E(R).
+N(R) - pi R^2 = O_epsilon(R^(1/2+epsilon)).
 ```
 
-The conjectural bound is
+Equivalently, in the repository's $X=R^2$ normalization,
 
 ```text
-E(R) = O_epsilon(R^{1/2 + epsilon})
+P(X) = N(sqrt(X)) - pi X <<_epsilon X^(1/4+epsilon).
 ```
 
-for every epsilon > 0. The workflow is not allowed to claim a solution without a complete proof; its job is to isolate precise reductions, lemmas, obstructions, citations, and verification tasks.
+The repository does not contain an unconditional proof of this target. The accepted reduction is conditional, and `M9`, especially its `M9-M2` pointwise bridge, remains the main bottleneck. See `state/best_proof_draft.md` for the proof assembled from accepted obligations and its explicit gaps.
 
-## Agent Roles
-
-- `A1` is the broad strategist, literature scout, synthesis writer, and default judge. Use ChatGPT Extended Pro or the strongest available long-reasoning mode.
-- `A2` is the independent referee and obstacle finder. Use Gemini Pro Deep Think and ask for long, conservative, theorem-hypothesis-aware reports.
-- `A3` is the automatic API proof auditor. Use Deepseek V4 Pro with maximum available reasoning effort for algebra checks, exponential-sum normalization audits, obstruction searches, and reproducible verification plans.
-- `A4` is the independent analytic proof-surgeon. Use Claude Max Thinking for narrow proof attempts, gcd decompositions, obstruction repair, and calibrated alternatives to A2's route.
-
-A1, A2, and A4 are semi-manual: paste prompts into persistent web conversations and save copied Markdown responses into `handoff/`. A3 is automatic when `DEEPSEEK_API_KEY` is configured.
-
-## Round Protocol
-
-Each round uses these synchronized stages:
-
-1. Stage A: every active agent independently attacks selected proof obligations.
-2. Stage B: every active agent reviews proposed state changes, blockers, evidence, and status claims from the other agents.
-3. Stage C: A1 writes a judge synthesis, next-round prompts, and a machine-readable `State Patch`.
-4. Stage D: the orchestrator validates the `State Patch`, applies accepted changes to `state/proof_obligations.yml`, regenerates the compact reading packet, and the guided runner commits/pushes the completed round to GitHub unless `-NoAutoPublish` is set.
-
-The round barrier is strict: reviews do not start until all four reasoning responses are present; judging does not start until all four reviews are present; state mutation does not happen until the judge synthesis has a valid patch.
-
-## Layout
+## Active architecture
 
 ```text
-problems/
-  gauss_circle.md
-protocol.md
-config/
-  agents.example.json
-  agents.web-test.json
-math_collab/
-  orchestrator.py
-  proof_obligations.py
-  validate_state_patch.py
-  validate_round.py
-  human.py
-  normalize_markdown.py
-state/
-  proof_obligations.yml
-  next_round_prompts.md
-  last_validation_report.md
-  current_state.md
-  lemma_bank.md
-  gap_register.md
-  best_proof_draft.md
-sources/
-  vaaler_1985.md
-  li_yang_2023.md
-  huxley_2003.md
-  bourgain_watt.md
-human/
-  current_directives.md
-  goals.md
-  ideas.md
-  references.md
-  inbox/
-manifests/
-  reading_packet.md
-rounds/
-  <run-id>/
-handoff/
-  <run-id>/
+Human objective
+  -> Codex conductor
+      -> frozen obligation and barrier packet
+      -> temporary discovery / no-go / control workers
+      -> smallest candidate proof kernel
+      -> seam-specific reviewers and blind rederivation
+      -> local computational falsification and source checks
+  -> conductor round-closing synthesis
+  -> validated State Patch
+  -> proof graph and proof draft
 ```
 
-`rounds/` is the public archive. `handoff/` is ignored by Git and is used for temporary web prompts and copied web responses. The reading packet should stay compact because it is generated from the proof-obligation graph rather than from the full transcript history.
+Subagents are selected by function, not permanent identity. Reasoning proceeds in numbered rounds, with one campaign manifest per round. A round may use discovery, hostile obstruction, countermodel, source-audit, numerical-falsification, seam-review, blind-rederivation, or formalization tasks. There is no vote and no fixed response barrier. At most three subagents run concurrently, and they stop at the round interface chosen by the conductor.
 
-## Quick Start
+The full rules are in `protocol.md` and `AGENTS.md`.
 
-Smoke test the file layout without external API calls:
+## Core files
 
-```powershell
-python -m math_collab.orchestrator --config config/agents.example.json --problem problems/gauss_circle.md --rounds 1 --dry-run --run-id smoke --no-state-update
+```text
+AGENTS.md                         conductor and subagent rules
+protocol.md                       mathematical campaign protocol
+problems/gauss_circle.md          problem statement
+state/proof_obligations.yml       authoritative claim graph
+state/project_summary.md          project, route, strategy, and progress summary
+state/active_campaign.yml         current frozen campaign and briefs
+state/current_round.md            generated active-round summary
+state/round_ledger.yml            numbered round status and decisions
+state/next_campaign.md            generated campaign summary
+state/failure_ledger.md            generated rejected-claim memory
+state/control_models.md            Gauss-specific proof-unit tests
+state/validation_matrix.yml        claim-by-seam acceptance gates
+state/best_proof_draft.md          proof assembled from accepted graph
+manifests/reading_packet.md        compact generated project state
+math_collab/campaigns.py           campaign validator and brief generator
+math_collab/proof_obligations.py   graph validation and packet generation
+proofs/kernels/                    isolated candidate proof kernels
+rounds/codex-managed/              active campaign artifacts
+rounds/obligation-main/            immutable legacy evidence
+rounds/web-research-test/          immutable legacy evidence
 ```
 
-Validate the proof-obligation graph:
+## First campaign
+
+The pilot campaign adjudicates the Round 9 count-versus-weighted-mass disagreement. It keeps separate:
+
+1. the raw, weight-blind near-collision tuple count;
+2. the Vaaler-$\beta$-weighted absolute mass;
+3. the true signed mass carrying $\chi_4$;
+4. the unsigned comparison quantity.
+
+Its three orthogonal tasks are a statement-only upper-bound rederivation, a hostile lower-bound/missing-factor audit, and an exact finite diagnostic. Normalization, counting, coefficient summation, and endpoint uniformity are separate review seams. The campaign must not promote `M9`.
+
+## Quick start
+
+The bundled Codex Python runtime can be located through the desktop workspace dependencies. If `python` is already on `PATH`, run:
 
 ```powershell
 python -m math_collab.validate_state_patch --graph state/proof_obligations.yml
+python -m math_collab.campaigns validate
+python -m math_collab.campaigns prepare
 ```
 
-Configure DeepSeek for the automatic A3 agent:
+`prepare` creates the campaign directory, immutable plan snapshot, and minimal subagent briefs. It does not launch subagents and does not mutate the proof graph.
+
+After work is complete:
 
 ```powershell
-$env:DEEPSEEK_API_KEY="sk-..."
-$env:DEEPSEEK_MODEL="deepseek-v4-pro"
+python -m unittest discover -s tests -v
+python -m compileall -q math_collab tests
+git diff --check
 ```
 
-Or copy `.env.example` to `.env`; the orchestrator loads `.env` automatically.
+## Evidence and promotion discipline
 
-Generate or advance a mixed manual-web/API research round:
+- A report must give an exact lemma or no-go result, proof, first doubtful step, control test, dependencies, and recommended state effect.
+- Computation is diagnostic and must be locally reproducible.
+- External results require source cards and exact theorem-hypothesis checks.
+- Review is by failure seam; at least one important claim receives a statement-only independent derivation.
+- Only the conductor writes round synthesis, State Patches, or changes the accepted proof draft.
+- Historical A1--A4 owner labels and artifact names remain provenance, not active assignments.
 
-```powershell
-python -m math_collab.orchestrator --config config/agents.web-test.json --problem problems/gauss_circle.md --run-id gauss-main --start-round 1 --rounds 1 --skip-missing-api
-```
+## Legacy workflow
 
-For the most automated routine, use the guided obligation runner. It validates the graph, opens the web agents, pastes prompts, waits while you copy model responses, saves and normalizes them, validates the judge patch, advances Stage D, then commits and pushes the completed round to GitHub:
+`math_collab/orchestrator.py`, `config/agents*.json`, the manual web/clipboard scripts, `docs/api-setup.md`, `docs/web-research-run.md`, and `state/next_round_prompts.md` document the retired four-agent system. They are retained so old evidence remains interpretable; do not use them for new research campaigns.
 
-```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\auto_obligation_run.ps1 -RunId obligation-main -StartRound 1 -Rounds 1
-```
+## Human steering
 
-Add `-SubmitPrompts` if you want the helper to press Enter after pasting prompts.
-Add `-NoAutoPublish` if you want to apply Stage D locally without committing/pushing to GitHub.
-
-If you prefer to manually open ChatGPT/Gemini, paste prompts, copy responses, save files, and normalize Markdown yourself, use the watcher instead:
-
-```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\watch_web_research_run.ps1 -RunId obligation-main -StartRound 1 -Rounds 1 -NoNormalize
-```
-
-The watcher still automates graph validation, barrier polling, orchestrator reruns, judge-patch validation, Stage D, reading-packet regeneration, and GitHub publish after each completed round. Add `-NoAutoPublish` to keep the update local.
-
-For A1/A2/A4 web agents, paste prompt files from:
-
-```text
-rounds/<run-id>/round_XXX/prompts/
-```
-
-Then save copied web responses under:
-
-```text
-handoff/<run-id>/round_XXX/responses/
-handoff/<run-id>/round_XXX/reviews/
-handoff/<run-id>/round_XXX/judge/
-```
-
-A3 responses and reviews are written automatically under `rounds/<run-id>/round_XXX/` when the API key is present. A1/A2/A4 copied web responses are staged through `handoff/`. If the key is missing, the barrier waits with a pending API marker.
-
-When a judge synthesis is ready, it must include a `## State Patch` section using JSON-compatible YAML. JSON is valid YAML, so this remains dependency-free even when PyYAML is not installed. Stage D validates the patch before mutating `state/proof_obligations.yml`.
-
-For the manual web run procedure and clipboard helpers, see `docs/web-research-run.md`. For DeepSeek API setup, see `docs/api-setup.md`.
-
-## Human Steering
-
-Edit these files before the next stage or round:
-
-- `human/current_directives.md`: active steering instructions for the next round.
-- `human/goals.md`: current research and workflow goals.
-- `human/ideas.md`: mathematical ideas to try.
-- `human/references.md`: papers, links, theorem names, citations, or notes.
-- `human/inbox/`: timestamped human notes.
-
-You can also add a note from the command line:
-
-```powershell
-python -m math_collab.human --kind idea --title "Try a smoothed cutoff" --text "Ask all agents to compare sharp cutoff vs smooth cutoff before unsmoothing." --activate
-```
-
-Human direction is injected into reasoning, review, and judge prompts. Human instructions override prior AI suggestions when they change the target, reject a route, add a reference, or change success criteria.
-
-## Important Practice
-
-Every agent must separate:
-
-- proved statements,
-- plausible claims,
-- gaps,
-- counterexample attempts,
-- dependencies,
-- confidence.
-
-The public repository is the durable memory; web conversation memory is useful but not authoritative. The proof-obligation graph is the durable mathematical memory; prose rounds explain and audit graph changes.
+Edit `human/current_directives.md`, `human/goals.md`, `human/ideas.md`, and `human/references.md`. Human instructions may change the target, completion rule, allowed sources, or controls. The conductor must record any such change in the active round before delegating work.

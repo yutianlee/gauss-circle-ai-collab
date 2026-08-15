@@ -1,0 +1,49 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 17,
+    "round_type": "local_reflection_eigenspace_attack",
+    "campaign_id": "m9-m1-local-reflection-eigenspaces",
+    "title": "Resolve the coefficient-level reflection algebra before estimating the maximal kernel",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "conductor_policy": {
+      "strategy_owner": "Codex conductor",
+      "subagents_may_start_next_round": false,
+      "monitoring": "Keep the prime 2, polar terms, actual scale/height profiles, and endpoint stars explicit; do not promote a local identity into global cancellation without an exact interface.",
+      "round_close": "Close only after blind algebra, analytic insertion, hostile mixed-prime controls, and conductor graph adjudication."
+    },
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 95,
+      "numerical_experimental_maximum_percent": 5,
+      "numerical_purpose": ["bounded falsification of finite prime-power or 2-adic identities"],
+      "literature_policy": "Primary sources only for a theorem applied to the exact ramified and polar eigenspace family."
+    },
+    "target_obligations": [
+      "M9-M1-maximal-angular-sign-kernel",
+      "M9-M1-centered-angular-functional-equation",
+      "M9-M1-top-Perron-angular-correlation",
+      "M9-M1"
+    ],
+    "tasks": [
+      {"id":"blind_local_reflection_algebra","role":"statement_only_algebra_deriver","brief":"rounds/codex-managed/m9-m1-local-reflection-eigenspaces/briefs/blind_local_reflection_algebra.md"},
+      {"id":"local_eigenspace_kernel_attack","role":"analytic_eigenspace_attacker","brief":"rounds/codex-managed/m9-m1-local-reflection-eigenspaces/briefs/local_eigenspace_kernel_attack.md"},
+      {"id":"local_reflection_hostile_audit","role":"hostile_local_to_global_reviewer","brief":"rounds/codex-managed/m9-m1-local-reflection-eigenspaces/briefs/local_reflection_hostile_audit.md"}
+    ],
+    "exit_gates": ["exact local reflection algebra","2-adic and Euler-factor audit","pole/eigenspace verdict","actual-profile insertion","estimate or rigorous no-gain obstruction","conductor decision"],
+    "promotion_policy": "Promote coefficient identities only after mixed-prime and 2-adic checks; promote a bound only if actual profiles and maximal truncation remain present.",
+    "closing_assessment": {
+      "decision": "promote_local_cocycle_and_profile_projection_retain_tail_conditional",
+      "graph_mutation": true,
+      "main_result": "The exact 2-adic reflection cocycle and matching-profile projection are proved. Only the joint antisymmetric residue vanishes; generic poles and both Mellin axes remain. High-2-adic tail control is conditional on an independently formalized pointwise kernel bound."
+    },
+    "next_round": 18
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "7b1a14fc8a3b883b776da17467afd1a0895b744c36d3509988e912eb8bcf961c",
+    "generated_at": "2026-08-12T19:10:00+08:00"
+  },
+  "artifact_policy": {"subagents_may_edit_shared_state":false,"computation_evidence_level":"diagnostic_only","coordinator_owns_synthesis_and_state_patch":true}
+}

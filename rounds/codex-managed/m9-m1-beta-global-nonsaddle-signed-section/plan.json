@@ -1,0 +1,190 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 47,
+    "round_type": "beta_global_nonsaddle_signed_section",
+    "campaign_id": "m9-m1-beta-global-nonsaddle-signed-section",
+    "title": "Global direct nonsaddle signed-section and radial-BV theorem",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "literature_policy": "No external theorem is needed; use the exact gamma quotient, actual radial remainder, signed Plemelj calculus, one-factor Stirling, and the accepted finite-section identities."
+    },
+    "target_obligations": [
+      "M9-M1-beta-positive-line-alpha-localization-certificate"
+    ],
+    "frozen_target": {
+      "question": "Can the actual returned positive-line beta terminal satisfy a global quantitative signed-section theorem on the subordinate inner and outer nonsaddle supports?",
+      "reference_formula": "Use the Round-47 derivation packet. The partition, compact terminal, artificial residue, fixed-X Cauchy-tail existence, and fixed-ratio product-cell theorem are accepted; prove the global nonsaddle value/x-derivative/moving-trace/outer-limit bounds under the raw q^(-p) ledger.",
+      "quantities": [
+        "exact global R_alpha and R_beta factors",
+        "singular signed Plemelj section and diagonal log",
+        "off-diagonal divided difference and smooth shares",
+        "phase-conjugated x derivative",
+        "moving traces and outer limits",
+        "inner and outer subordinate supports",
+        "raw h q j x coefficient and radial-BV sum",
+        "middle-cutoff literal match or cutoff invariance"
+      ]
+    },
+    "completion_criteria": [
+      "The actual singular and smooth positive-line sections have a global quantitative bound, or the first exact obstruction is isolated.",
+      "The signed top is formed before absolute values and its diagonal log is retained.",
+      "One phase-conjugated x derivative, every moving trace, and both outer limits are controlled.",
+      "The raw coefficient, scale, radial, floor, star, character, collision, and external-factor ledger is complete.",
+      "Literal middle-cell coverage or a precise cutoff-invariance result is established or isolated separately.",
+      "A clean statement-only rederivation and an independent hostile audit exist.",
+      "The conductor closes the round before starting a successor."
+    ],
+    "controls": [
+      "global_gamma_both_signs",
+      "signed_plemelj_before_absolute",
+      "diagonal_offdiagonal_smooth_split",
+      "phase_conjugated_x_derivative",
+      "moving_faces_and_outer_limits",
+      "inner_outer_lambda_uniformity",
+      "middle_cutoff_interface",
+      "raw_coefficient_radial_sum",
+      "collision_and_external_once"
+    ],
+    "tasks": [
+      {
+        "id": "global_signed_section_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "target": "Derive the global actual signed-section estimates, x derivative, moving traces, outer limits, and full nonsaddle radial-BV sum, or isolate the first exact failing term.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-beta-global-nonsaddle-signed-section/derivation_packet.md",
+          "rounds/codex-managed/m9-m1-beta-actual-profile-Cauchy-tail/reports/actual_cauchy_tail_attack.md",
+          "rounds/codex-managed/m9-m1-beta-off-diagonal-product-cell/reports/off_diagonal_mixed_norm_attack.md",
+          "rounds/codex-managed/m9-m1-beta-positive-line-localization/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-large-alpha-complement-completion/synthesis.md"
+        ],
+        "required_controls": [
+          "global_gamma_both_signs",
+          "signed_plemelj_before_absolute",
+          "diagonal_offdiagonal_smooth_split",
+          "phase_conjugated_x_derivative",
+          "moving_faces_and_outer_limits",
+          "inner_outer_lambda_uniformity",
+          "middle_cutoff_interface",
+          "raw_coefficient_radial_sum",
+          "collision_and_external_once"
+        ],
+        "required_output": [
+          "seven-section report",
+          "global theorem or first exact survivor",
+          "state recommendation"
+        ],
+        "status": "complete",
+        "report": "reports/global_signed_section_attack.md"
+      },
+      {
+        "id": "blind_global_section_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "target": "Independently prove or refute the exact global section theorem stated in the Round-47 packet, without reading the graph or any claimant report.",
+        "context_files": [
+          "rounds/codex-managed/m9-m1-beta-global-nonsaddle-signed-section/derivation_packet.md"
+        ],
+        "excluded_context": [
+          "proof graph",
+          "proof draft",
+          "prior reports and syntheses",
+          "other Round-47 reports"
+        ],
+        "required_controls": [
+          "global_gamma_both_signs",
+          "signed_plemelj_before_absolute",
+          "diagonal_offdiagonal_smooth_split",
+          "phase_conjugated_x_derivative",
+          "moving_faces_and_outer_limits",
+          "inner_outer_lambda_uniformity",
+          "middle_cutoff_interface",
+          "raw_coefficient_radial_sum",
+          "collision_and_external_once"
+        ],
+        "required_output": [
+          "seven-section statement-only report",
+          "independent proof, counterexample, or first missing hypothesis",
+          "first doubtful step and state recommendation"
+        ],
+        "status": "complete_clean_isolation",
+        "report": "reports/blind_global_section_rederivation.md"
+      },
+      {
+        "id": "global_section_hostile_audit",
+        "role": "seam_reviewer",
+        "access_mode": "selected_context",
+        "target": "Hostile-audit the global signed-section estimate, exact x derivative, moving traces, outer limits, both signs, and raw power ledger without reading the discovery report.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-beta-global-nonsaddle-signed-section/derivation_packet.md",
+          "rounds/codex-managed/m9-m1-beta-actual-profile-Cauchy-tail/reports/cauchy_tail_hostile_audit.md",
+          "rounds/codex-managed/m9-m1-beta-off-diagonal-product-cell/reports/product_cell_hostile_audit.md",
+          "rounds/codex-managed/m9-m1-beta-large-alpha-complement-completion/synthesis.md"
+        ],
+        "required_controls": [
+          "global_gamma_both_signs",
+          "signed_plemelj_before_absolute",
+          "diagonal_offdiagonal_smooth_split",
+          "phase_conjugated_x_derivative",
+          "moving_faces_and_outer_limits",
+          "inner_outer_lambda_uniformity",
+          "middle_cutoff_interface",
+          "raw_coefficient_radial_sum",
+          "collision_and_external_once"
+        ],
+        "required_output": [
+          "seven-section hostile report",
+          "counterexample, sharp no-go, or seam certification",
+          "recommended graph effect"
+        ],
+        "status": "replaced_after_initial_context_contamination_clean_replacement_complete",
+        "report": "reports/clean_global_section_hostile_audit.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "global_symbol",
+        "requirement": "Verify exact gamma/radial powers, signed section, and global value plus x-derivative bounds on both alpha signs."
+      },
+      {
+        "id": "boundary_and_trace",
+        "requirement": "Verify moving face signs, collapsed sections, cutoff derivatives, and genuine outer limits."
+      },
+      {
+        "id": "power_assembly",
+        "requirement": "Verify the raw q^(-p) coefficient, scale, radial, endpoint, character, collision, and external-factor powers."
+      },
+      {
+        "id": "mathematical_isolation",
+        "requirement": "The statement-only proof sees only the Round-47 packet and its brief."
+      }
+    ],
+    "closing_assessment": {
+      "decision": "promote_global_nonsaddle_cutoff_invariance_positive_line_localization_and_double_bounded_cell",
+      "graph_mutation": true,
+      "main_result": "Intrinsic-height dyadic symbol bounds and the exact combined x numerator close both nonsaddle sectors; smooth scaled cutoff invariance closes the repaired middle group. The complete returned positive-line beta localization and aggregate double-bounded node are target-safe."
+    },
+    "next_round": 48
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "50afffd106f12da5d4b1d6aba6e15a28782f9c364f8960a084ca611a7a42cf0d",
+    "generated_at": "2026-08-13T12:56:15.986477+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}
