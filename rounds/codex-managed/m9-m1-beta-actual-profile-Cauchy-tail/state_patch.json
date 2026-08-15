@@ -1,0 +1,159 @@
+{
+  "proof_obligations": {
+    "create": [],
+    "update": [
+      {
+        "id": "M9-M1-beta-endpoint-free-axial-Cauchy-tail",
+        "status": "proved_internal",
+        "reason_for_promotion": "The discovery proof, statement-only blind rederivation, hostile seam audit, and conductor calculation independently establish a uniform integrable positive-b tail. The hostile correction keeps the artificial residue analytically recombined and removes the only chamber error.",
+        "statement_tex": "Fix b=1/log(2X)>0 and a lawful terminal line c'=5/4 with 0<=a<a0, a+b<1/2, and a/2+b<1/4. In beta-slab coordinates t=(mu+nu)/2+beta, alpha=mu+nu+beta, eta=mu/2+nu+beta, the Jacobian is one, A=s-(u+v)/2 has bounded beta height, and the remaining gamma power is kappa=3/4+(a+b)/2<1. The exact terminal coefficient powers h^(-5/4+(a+b)/2)q^(-5/4-(a+b)/2), including one logarithmic derivative, are absolutely summable; R1 and its mu derivative are O_X((1+|eta|)^(-1)). After forming the signed top distribution (1/2)delta_0-(i/(2pi))PV(1/mu), the terminal positive-line density is O_X,b((1+|nu|)^(kappa-4)log(2+|nu|)) uniformly in U. At rho=0 the h,q expansion is not used; recombination as zeta(1-A)L(1-B,chi4), compact beta support, and period-four Abel summation give an O_X,b((1+|nu|)^(-3)) artificial-residue tail. Axes and the corner have bounded nu support, and compact beta support deletes radial sides for the prescribed nested S. Hence the complete endpoint-free density has a uniform signed Cauchy tail and a unique joint U,V,S/profile limit. Constants are unrestricted in X; no local q^(-2), lambda-symbol, b=0, or target-size estimate is included.",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-actual-profile-Cauchy-tail/reports/blind_beta_slab_height_asymptotic.md",
+            "rounds/codex-managed/m9-m1-beta-actual-profile-Cauchy-tail/reports/actual_cauchy_tail_attack.md",
+            "rounds/codex-managed/m9-m1-beta-actual-profile-Cauchy-tail/reports/cauchy_tail_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-actual-profile-Cauchy-tail/reviews/conductor_beta_slab_coordinate.md",
+            "rounds/codex-managed/m9-m1-beta-actual-profile-Cauchy-tail/reviews/conductor_transition_power_audit.md",
+            "rounds/codex-managed/m9-m1-beta-actual-profile-Cauchy-tail/reviews/conductor_tail_partition_candidate.md",
+            "rounds/codex-managed/m9-m1-beta-actual-profile-Cauchy-tail/reviews/conductor_cauchy_majorant_check.md",
+            "rounds/codex-managed/m9-m1-beta-actual-profile-Cauchy-tail/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "next_action": "Use the Cauchy theorem only to define the limiting endpoint-free axial vector. Quantitative X-uniform value and physical-height derivative estimates belong to the separate axial-subtracted terminal-symbol obligation."
+      },
+      {
+        "id": "M9-M1-beta-endpoint-free-axial-remainder-limit",
+        "status": "proved_internal",
+        "reason_for_promotion": "Round 37 reduced existence of the unique endpoint-free physical vector exactly to the Cauchy-tail node, which Round 38 now proves under the prescribed joint exhaustion.",
+        "statement_tex": "The exact fixed-w complement V_ef_fin=V_pre_fin-M_fin has a unique symmetric outside-height and physical-profile limit. At fixed boxes it is T[R1]+S[R1]+P_rho[R1] with the complete sixteen-cell inventory and signed top Plemelj realization; compact beta support deletes S[R1]. The proved actual positive-b Cauchy-tail theorem controls the remaining terminal/artificial package uniformly in the prescribed U,V,S exhaustion, with all profiles, floors, characters, collisions, stars, and external normalization retained. This defines the limiting endpoint-free connector-completed beta axial vector. No quantitative X^epsilon or terminal-symbol estimate is included.",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-actual-profile-Cauchy-tail/reports/blind_beta_slab_height_asymptotic.md",
+            "rounds/codex-managed/m9-m1-beta-actual-profile-Cauchy-tail/reports/actual_cauchy_tail_attack.md",
+            "rounds/codex-managed/m9-m1-beta-actual-profile-Cauchy-tail/reports/cauchy_tail_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-actual-profile-Cauchy-tail/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "next_action": "Use the unique limiting vector in the axial-subtracted side-collapsed terminal-symbol definition; do not infer its quantitative size from existence alone."
+      },
+      {
+        "id": "M9-M1-beta-complete-axial-connector-ledger",
+        "status": "proved_internal",
+        "reason_for_promotion": "Every finite ledger, radial-side, physical-module, and endpoint-free-limit dependency is now proved; the newly proved Cauchy tail supplies the final global limit interface without adding an estimate claim.",
+        "statement_tex": "The actual connector-completed beta axial vector is now fully defined. Its complete finite sixteen-stratum ledger, actual fixed-w pre-limit realization, exact compact-support radial-side removal, aggregate endpoint/R1 physical-module routing, and unique endpoint-free outside-height/profile limit are all proved. Artificial, arithmetic, axial, connector-axis, collision, and corner shares retain the accepted one-count ownership. This closes the ledger and limit interface only; it gives no target-sized terminal-symbol estimate.",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-actual-profile-Cauchy-tail/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "next_action": "Use this proved limiting ledger as an input to the axial-subtracted terminal-symbol bound."
+      },
+      {
+        "id": "M9-M1-beta-mask-endpoint-axial-compatibility",
+        "status": "proved_internal",
+        "reason_for_promotion": "The finite mask/endpoint/connector identities and module routing were already proved, and Round 38 establishes the sole remaining endpoint-free symmetric limit with common ownership and one-count collision conventions.",
+        "statement_tex": "Global three-mask endpoint recombination, local all-order common-ownership rho cancellation, the complete finite two-axis connector ledger, compact-support radial-side removal, aggregate endpoint/R1 physical-module routing, and the unique endpoint-free axial remainder limit are compatible. Thus the hierarchical mask, endpoint collapse, and connector-completed axial vector define one consistent physical decomposition with every boundary, connector, axial, artificial, arithmetic, collision, and corner share counted once. No residual terminal-symbol or target estimate is included.",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-actual-profile-Cauchy-tail/reports/blind_beta_slab_height_asymptotic.md",
+            "rounds/codex-managed/m9-m1-beta-actual-profile-Cauchy-tail/reports/cauchy_tail_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-actual-profile-Cauchy-tail/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "next_action": "Define the side-collapsed endpoint-image-free axial-subtracted terminal symbol and prove its quantitative weighted value and physical-height derivative estimates."
+      },
+      {
+        "id": "M9-M1-beta-axial-subtracted-terminal-symbol-bound",
+        "status": "open",
+        "statement_tex": "Using the now-proved mask--endpoint--axial compatibility and limiting endpoint-free vector, define K_term_circ(L,nu) as the endpoint-image-free, side-collapsed, omega-recombined beta terminal vertical plus connector after the full v=0 vector residue, artificial share, and corner ledger are extracted and the combined top delta/log term is removed. Prove |K_term_circ(L,nu)|<=X^epsilon lambda^(-2)w(nu) and |partial_L K_term_circ(L,nu)|<=X^epsilon lambda^(-3)w(nu) at fixed physical nu, with w in L1 of polylogarithmic norm and with all translated endpoint traces, h,D_j,x factors, profiles, floors, stars, and external normalization retained. The Round-38 fixed-X Cauchy majorant licenses the limiting definition but supplies no target-safe X dependence.",
+        "evidence_added": {
+          "positive": [],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-actual-profile-Cauchy-tail/reports/blind_beta_slab_height_asymptotic.md",
+            "rounds/codex-managed/m9-m1-beta-actual-profile-Cauchy-tail/reports/actual_cauchy_tail_attack.md",
+            "rounds/codex-managed/m9-m1-beta-actual-profile-Cauchy-tail/reports/cauchy_tail_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-actual-profile-Cauchy-tail/synthesis.md"
+          ]
+        },
+        "next_action": "At c'=5/4, write the exact limiting axial-subtracted symbol and audit every X, D_j, h, q, x, beta-profile, and height factor. Prove the weighted lambda^(-2)/lambda^(-3) estimates or isolate the first actual quantitative survivor."
+      },
+      {
+        "id": "M9-M1-beta-complete-physical-height-symbol-bound",
+        "status": "open",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-actual-profile-Cauchy-tail/synthesis.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-actual-profile-Cauchy-tail/reports/cauchy_tail_hostile_audit.md"
+          ]
+        },
+        "next_action": "All boundary, side, endpoint, axial-ownership, and global-height existence interfaces are now closed. Prove the remaining axial-subtracted terminal-symbol bound, then compose it with the physical-height finite-section BV lemma."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round38-absolute-pre-Plemelj-tail-majorant",
+        "reason": "The hard-top kernel contains 1/mu. Its absolute integral diverges at mu=0; the symmetric PV subtraction H(mu,nu)-H(0,nu) must be formed before absolute values."
+      },
+      {
+        "id": "Round38-termwise-dual-series-at-artificial-residue",
+        "reason": "The rho=0 residue lies outside the absolute h,q Dirichlet chamber used on the terminal line. Its arithmetic factor must remain recombined as zeta(1-A)L(1-B,chi4)."
+      },
+      {
+        "id": "Round38-global-tail-requires-local-qminus2",
+        "reason": "The global height tail closes using one inverse radial height, kappa<1, cubic profile decay, and the signed Plemelj subtraction. No local stationary q^(-2) estimate is needed or implied."
+      },
+      {
+        "id": "Round38-two-large-gamma-Stirling-on-beta-slab",
+        "reason": "On compact beta support A=s-(u+v)/2 has bounded height. Replacing both functional-equation factors by simultaneous large-height Stirling powers gives the wrong tangent exponent."
+      },
+      {
+        "id": "Round38-send-positive-b-to-zero-inside-tail-proof",
+        "reason": "The tail theorem is on the fixed physical line b=1/log(2X)>0. Passing b through zero requires a separate distributional reconciliation with the already-extracted v=0 residue and is not part of the theorem."
+      },
+      {
+        "id": "Round38-tail-existence-implies-Xepsilon-symbol-bound",
+        "reason": "The Cauchy majorant has an unrestricted fixed-X constant and includes crude sqrt(X), scale, and residue capacities. It proves existence and ownership, not target-safe X growth or local lambda symbol estimates."
+      },
+      {
+        "id": "Round38-terminal-right-chamber-series-controls-all-cells",
+        "reason": "Absolute coefficient summation is valid for the terminal c'=5/4 cell only. Residues, axes, and corners retain their separate analytic representations and ownership rules."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "The endpoint-free vector now exists, but its quantitative terminal-symbol bound, complete beta transition, and residual M1 corridor remain open."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Round 38 concerns only the M1 beta axial architecture."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1 and M9-M2 remain open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "No unconditional Gauss-circle estimate is claimed."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 9,
+    "idea_quality_score": 9,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 38 turns the last global existence obstruction into an elementary beta-slab convolution theorem. Independent blind and hostile derivations certify the kappa<1 threshold, while the hostile audit corrects the artificial-residue chamber. The full limiting beta axial architecture is now defined; only quantitative X-uniform symbol control remains."
+  }
+}

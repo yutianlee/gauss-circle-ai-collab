@@ -1,0 +1,114 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-top-block-hyperbola-floor-Fourier-reduction",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Exact high-shell hyperbola-floor Fourier reduction and target-safe endpoint residual",
+        "status": "proved_internal",
+        "statement_tex": "Let Y=R^2 asymp sqrt(X), let J=[A,B] intersect Z lie in [cY,CY] with ell=B-A+1<=R, and restrict R/4<h<=R/2. Put L_h=(A+h-1)/(2h), U_h=(B+h)/(2h), q_h=2floor(L_h)+1, and nu_h=floor(U_h)-floor(L_h) in {0,1,2}. With I_1(v)=v(3-v)/2, I_2(v)=v(v-1)/2, and the exact actual starred amplitude, the complete row is (-1)^floor(L_h){I_1(nu_h)F_h(q_h)-I_2(nu_h)F_h(q_h+2)}. The character zero mode cancels only with both Abel boundaries and all differences, while the geometric selector mode ell/(2h) remains. For every endpoint argument t_h=(N+ch)/(dh), N asymp R^2 and d in {2,4}, the floor-compatible Vaaler residual satisfies sum_h kappa_T(t_h)<<_epsilon X^epsilon(R/T+1): if ||t_h||<=delta, then s=N-(dk-c)h has |s|<<delta R and h divides N-s, giving X^epsilon(delta R+1) samples. Thus T=ceil(sqrt(R)) makes the full endpoint and integer-jump residual target-sized. The finite core is exactly sum_(A<=n<=B)e(sqrt(Xn)) sum_(h|n,R/4<h<=R/2,n/h odd) chi_4(n/h) Atilde_X(h,n/h). Fixed-floor branches and fixed-q fibres have O(1) points, and modewise or branchwise absolute closure retains R capacity versus sqrt(R), sharp on the inherited actual fourth-power unmatched family. This is not a signed lower bound; the short actual-symbol twisted-divisor estimate remains open.",
+        "dependencies": [
+          "M9-M1-top-block-adjacent-odd-pairing-no-go",
+          "M9-M1-top-block-low-leg-margin",
+          "M9-M1-global-angular-recombination",
+          "H4",
+          "H4-Phi-regularity"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-top-block-signed-hyperbola-floor/reports/signed_hyperbola_floor_attack.md",
+            "rounds/codex-managed/m9-m1-top-block-signed-hyperbola-floor/reports/blind_hyperbola_floor_rederivation.md",
+            "rounds/codex-managed/m9-m1-top-block-signed-hyperbola-floor/reports/hyperbola_floor_source_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-top-block-signed-hyperbola-floor/reviews/conductor_hyperbola_floor_adjudication.md",
+            "rounds/codex-managed/m9-m1-top-block-signed-hyperbola-floor/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Estimate the signed length-R actual-symbol twisted-divisor core by a coefficient-preserving quadratic completion or prove that exact completion returns to the existing Hardy/GAR kernel; do not take absolute values over divisors, Fourier modes, or floor branches."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "dependencies_added": [
+          "M9-M1-top-block-hyperbola-floor-Fourier-reduction"
+        ],
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-m1-top-block-signed-hyperbola-floor/synthesis.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-top-block-signed-hyperbola-floor/reviews/conductor_hyperbola_floor_adjudication.md"
+          ]
+        },
+        "next_action": "On R/4<h<=R/2, prove the signed length-R twisted-divisor estimate isolated in Round 58, retaining the actual angular symbol and stars. Test quadratic completion before absolute values. Treat (log X)^B<h<=R/4 and alpha transfer separately."
+      },
+      {
+        "id": "M9-M1-top-block-adjacent-odd-pairing-no-go",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-top-block-signed-hyperbola-floor/synthesis.md"
+          ]
+        },
+        "next_action": "The exact floor and endpoint residual are now closed. Preserve the resulting signed short twisted-divisor core rather than returning to local row pairing."
+      },
+      {
+        "id": "M9-M1-global-angular-Fejer-shifted-correlation-reduction",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-top-block-signed-hyperbola-floor/synthesis.md"
+          ]
+        },
+        "next_action": "Use the exact short twisted-divisor core as the high-shell coefficient interface. The local endpoint Fejer residual is already target-safe and is not the missing shifted-correlation saving."
+      },
+      {
+        "id": "M9-M1-alpha-bounded-zeta-high-transition-bound",
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-m1-top-block-signed-hyperbola-floor/synthesis.md"
+          ]
+        },
+        "next_action": "First solve the physical signed short twisted-divisor core. The exact endpoint Fourier reduction supplies no connector or height-limit estimate."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round58-unweighted-floor-count-equals-actual-weighted-row",
+        "reason": "On a two-point row the unweighted character count is zero, whereas the actual contribution is a phase- and amplitude-weighted difference that can have order-one size."
+      },
+      {
+        "id": "Round58-character-zero-mode-removes-all-selector-mass",
+        "reason": "The character mean cancels only with the complete Abel boundary ledger. The geometric count mode ell/(2h) remains in the exact selector."
+      },
+      {
+        "id": "Round58-endpoint-Fourierization-plus-absolute-values-closes-shell",
+        "reason": "The target-safe Fejer residual leaves a finite core whose branchwise and modewise absolute capacity is R, sharp on the accepted actual fourth-power unmatched family, against target sqrt(R)."
+      },
+      {
+        "id": "Round58-large-reciprocal-frequency-gives-derivative-gap",
+        "reason": "Large real frequency does not control its fractional derivative; exact fourth-power odd-divisor incidences exhibit reciprocal-frequency collisions modulo one."
+      },
+      {
+        "id": "Round58-existing-monomial-or-Kloosterman-theorem-closes-moving-symbol",
+        "reason": "The audited Robert-Sargos mapping retains a full-box term of the wrong size, and Duke-Friedlander-Iwaniec requires modular inverses, coprimality, and smooth weights absent from the floor-selected actual symbol."
+      }
+    ],
+    "no_change": [
+      {"id": "M9-M1", "reason": "The signed high-shell twisted-divisor core, lower h sector, and alpha transfer remain open."},
+      {"id": "M9", "reason": "M9-M1 and M9-M2 remain open."},
+      {"id": "GC-target", "reason": "The exact reduction and residual theorem prove no new discrepancy exponent."}
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 8,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 58 proves an exact complete-row floor representation and a sharper divisor-sampled Fejer residual bound that closes all endpoint approximation error at the target scale. It isolates the sole high-shell survivor as a signed short actual-symbol twisted-divisor sum and rules out branchwise, modewise-absolute, spacing-only, and presently cited black-box closures. No shell estimate or exponent is proved."
+  }
+}

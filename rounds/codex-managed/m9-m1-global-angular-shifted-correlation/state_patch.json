@@ -1,0 +1,122 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-global-angular-Fejer-shifted-correlation-reduction",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Exact coefficient-preserving Fejer shifted-correlation reduction",
+        "status": "proved_internal",
+        "statement_tex": "Let c_n=tau_X(n)C_X^*(n)n^(-3/4)e(sqrt(Xn)) on a consecutive radial interval I of length L, with the exact radial endpoint star, and extend c_n by zero. For 1<=R<=L, |sum_I c_n|^2 <= (L+R-1)/R F_(I,R), where F_(I,R)=Q_I+2 Re sum_(1<=r<R)(1-r/R) C_(I,r)=R^(-1)sum_k|sum_(s=0)^(R-1)c_(k+s)|^2>=0. The diagonal radial top has weight 1/4 and a shifted upper endpoint has weight 1/2. Expanding C_(I,r) preserves the two actual angular symbols, characters, floors and stars and has exact incidence h_1q_1-h_2q_2=r. On n asymp Y, the weakest sufficient theorem is F_(Y,R)<<_epsilon X^epsilon R/Y. Since Q_Y<<_epsilon X^epsilon Y^(-1/2), for Y^(1/2)<=R<=Y the stronger signed average |sum_(r<R)(1-r/R)C_(Y,r)|<<_epsilon X^epsilon R/Y suffices without diagonal cancellation. The Hermitian form proves the stronger complex bound; a lossless real-part polarization also creates a nonconjugated sum-phase correlation. No alpha transfer is asserted.",
+        "dependencies": [
+          "M9-M1-global-angular-recombination",
+          "M9-M1-alpha-coupled-dyadic-scale-capacity-no-go"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-global-angular-shifted-correlation/reports/angular_shifted_correlation_attack.md",
+            "rounds/codex-managed/m9-m1-global-angular-shifted-correlation/reports/blind_vdc_correlation_rederivation.md",
+            "rounds/codex-managed/m9-m1-global-angular-shifted-correlation/reports/shifted_convolution_source_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-global-angular-shifted-correlation/reviews/conductor_shifted_correlation_adjudication.md",
+            "rounds/codex-managed/m9-m1-global-angular-shifted-correlation/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Attack the minimal top-block range Y asymp sqrt(X), R asymp Y^(1/2) using the full signed additive-product incidence and character before absolute values."
+      },
+      {
+        "id": "M9-M1-global-angular-Fejer-absolute-capacity-no-go",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Sharp one-step Fejer absolute-capacity and source no-go",
+        "status": "proved_internal",
+        "statement_tex": "For the exact global angular coefficient, termwise absolute shifted correlations and ordinary divisor envelopes give |C_r|<<_epsilon X^epsilon r^(-1/2) globally and the optimized Fejer bound |S_X|<<_epsilon X^epsilon N^(1/4)=X^(1/8+epsilon). On n asymp Y the same closure gives Y^(1/4+epsilon) for every R. A phase-cancelling bounded coefficient saturates the coefficient-blind inequality, while an actual star-free h_1=h_2=1 Round-53 shell realizes the expanded absolute Fejer mass. Smooth phase curvature without an actual coefficient BV theorem either loses the same Y^(1/2) or returns the additive-product shifted kernel. The audited Blomer-Harcos, Cowan, Petrow, Banerjee-Khurana and Kiral-Zhou theorems do not accept the moving angular symbol, floors, stars, growing shift average and nonlinear phase with target-uniform constants. This is an absolute/source obstruction, not a signed lower bound for the actual coefficient.",
+        "dependencies": [
+          "M9-M1-global-angular-Fejer-shifted-correlation-reduction",
+          "M9-M1-alpha-coupled-dyadic-scale-capacity-no-go"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-global-angular-shifted-correlation/reports/angular_shifted_correlation_attack.md",
+            "rounds/codex-managed/m9-m1-global-angular-shifted-correlation/reports/blind_vdc_correlation_rederivation.md",
+            "rounds/codex-managed/m9-m1-global-angular-shifted-correlation/reports/shifted_convolution_source_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-global-angular-shifted-correlation/reviews/conductor_shifted_correlation_adjudication.md",
+            "rounds/codex-managed/m9-m1-global-angular-shifted-correlation/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Do not use absolute shifted-convolution, divisor-envelope, or phase-only estimates as a route to GAR; retain the signed shift average and actual angular coefficient."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "dependencies_added": [
+          "M9-M1-global-angular-Fejer-shifted-correlation-reduction",
+          "M9-M1-global-angular-Fejer-absolute-capacity-no-go"
+        ],
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-m1-global-angular-shifted-correlation/reports/shifted_convolution_source_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-global-angular-shifted-correlation/synthesis.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-global-angular-shifted-correlation/reports/angular_shifted_correlation_attack.md",
+            "rounds/codex-managed/m9-m1-global-angular-shifted-correlation/reports/blind_vdc_correlation_rederivation.md"
+          ]
+        },
+        "next_action": "Prove the dyadic signed Fejer correlation bound in the minimal top-block range Y asymp sqrt(X), R asymp Y^(1/2), retaining h_1q_1-h_2q_2=r, both chi_4 factors, floors, stars, and the square-root difference phase."
+      },
+      {
+        "id": "M9-M1-alpha-bounded-zeta-high-transition-bound",
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-m1-global-angular-shifted-correlation/synthesis.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-global-angular-shifted-correlation/reviews/conductor_shifted_correlation_adjudication.md"
+          ]
+        },
+        "next_action": "First solve the physical signed top-block shifted-correlation kernel. Then separately prove its connector-completed alpha transfer and joint outside-height limit; do not infer that transfer from Fejer differencing alone."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round54-Fejer-differencing-alone-saves-X-one-eighth",
+        "reason": "Termwise absolute closure optimizes to N^(1/4)=X^(1/8) normalized, and both an envelope adversary and an actual star-free expanded incidence realize this capacity."
+      },
+      {
+        "id": "Round54-generic-radial-curvature-closes-actual-shifted-correlation",
+        "reason": "The actual coefficient product has no target-sized BV theorem; elementary Abel loses Y^(1/2), while a B-process reconstructs the same additive-product shifted kernel."
+      },
+      {
+        "id": "Round54-existing-shifted-convolution-theorem-imports-black-box",
+        "reason": "The audited primary theorems do not match the X-dependent angular divisor symbol, character and level data, floors and stars, growing shift range, nonlinear phase, and required uniform transform norms."
+      },
+      {
+        "id": "Round54-Hermitian-kernel-is-lossless-real-part-polarization",
+        "reason": "The Hermitian difference-phase kernel controls the stronger complex modulus. Direct real-part Fejer differencing also creates a nonconjugated sum-phase correlation."
+      }
+    ],
+    "no_change": [
+      {"id": "M9-M1", "reason": "The signed shifted-correlation theorem and alpha transfer remain open."},
+      {"id": "M9", "reason": "M9-M1 and M9-M2 remain open."},
+      {"id": "GC-target", "reason": "No new Gauss-circle exponent is proved."}
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 54 gives an exact post-scale signed arithmetic interface, derives the precise missing square-root correlation gain, and exhausts coefficient-blind Fejer, phase-only, and black-box source routes. It does not prove the required signed theorem or a new exponent."
+  }
+}

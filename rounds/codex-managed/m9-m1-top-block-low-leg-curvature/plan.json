@@ -1,0 +1,183 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 55,
+    "round_type": "top_block_low_leg_curvature",
+    "campaign_id": "m9-m1-top-block-low-leg-curvature",
+    "title": "Top-block curvature on low angular and character legs",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "literature_policy": "No new source theorem is presumed. Audit a primary source only if a non-elementary exponential-sum lemma is imported."
+    },
+    "target_obligations": [
+      "M9-M1-global-angular-radial-estimate",
+      "M9-M1-global-angular-Fejer-shifted-correlation-reduction"
+    ],
+    "frozen_target": {
+      "question": "On the critical top radial block, can one-dimensional curvature prove target-sized control of all incidences with a polylogarithmically small angular leg h or character leg q, and what exact balanced bilinear core remains?",
+      "reference_formula": "S_(Y;H,Q)=sum_(n asymp Y)^* n^(-3/4)e(sqrt(Xn)) sum_(hq=n,q odd,h<=H or q<=Q) chi_4(q)Omega_X^*(n,h), with Y asymp sqrt(X) and R asymp sqrt(Y).",
+      "quantities": [
+        "length-R moving product windows",
+        "fixed-h odd-q phase sqrt(Xhq)",
+        "fixed-q h phase sqrt(Xhq)",
+        "profile and Vaaler sampled BV",
+        "small-curvature versus trivial crossover at leg sqrt(R)",
+        "hard top and angular stars",
+        "H,Q exponent ledger",
+        "balanced core h,q>polylog(X)"
+      ]
+    },
+    "completion_criteria": [
+      "The fixed-h and fixed-q window sums are written with exact character, profile, floor, and star ownership.",
+      "A uniform second-derivative/trivial crossover bound is proved or sharply refuted.",
+      "Sampled BV of the actual angular amplitude on every length-R product window is proved with the hard-top jump separated.",
+      "The exact H,Q loss is propagated through the Fejer energy.",
+      "A target-safe polylogarithmic margin theorem or a sharp actual-profile obstruction is established.",
+      "Perfect-fourth-power and phase-resonance controls are checked analytically.",
+      "A clean statement-only derivation and independent hostile gate exist.",
+      "No full shifted-correlation, GAR, alpha, or downstream promotion is made without control of the balanced core."
+    ],
+    "controls": [
+      "fixed_leg_phase",
+      "curvature_trivial_crossover",
+      "sampled_profile_BV",
+      "height_floor_and_stars",
+      "moving_window_edges",
+      "perfect_fourth_power",
+      "H_Q_ledger",
+      "double_counting",
+      "balanced_core_scope",
+      "downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "low_leg_curvature_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "target": "Prove the strongest uniform fixed-leg moving-window estimate supported by the actual profiles, propagate it through Fejer, and isolate the balanced core.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-top-block-low-leg-curvature/derivation_packet.md",
+          "rounds/codex-managed/m9-m1-global-angular-shifted-correlation/synthesis.md",
+          "rounds/codex-managed/m9-m1-alpha-coupled-dyadic-difference/synthesis.md",
+          "rounds/codex-managed/m9-endpoint-kernel-validation/reports/blind_profile_rederivation.md"
+        ],
+        "required_controls": [
+          "fixed_leg_phase",
+          "curvature_trivial_crossover",
+          "sampled_profile_BV",
+          "height_floor_and_stars",
+          "moving_window_edges",
+          "perfect_fourth_power",
+          "H_Q_ledger",
+          "double_counting",
+          "balanced_core_scope",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "seven-section report",
+          "exact margin theorem or no-go",
+          "balanced-core statement"
+        ]
+      },
+      {
+        "id": "blind_fixed_leg_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "target": "Using only the Round-55 packet, independently derive the fixed-h/fixed-q curvature bounds, sampled-BV requirement, and H,Q Fejer ledger.",
+        "context_files": [
+          "rounds/codex-managed/m9-m1-top-block-low-leg-curvature/derivation_packet.md"
+        ],
+        "excluded_context": [
+          "proof graph",
+          "proof draft",
+          "prior reports and syntheses",
+          "other Round-55 reports"
+        ],
+        "required_controls": [
+          "fixed_leg_phase",
+          "curvature_trivial_crossover",
+          "sampled_profile_BV",
+          "height_floor_and_stars",
+          "moving_window_edges",
+          "perfect_fourth_power",
+          "H_Q_ledger",
+          "double_counting",
+          "balanced_core_scope",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "seven-section statement-only report",
+          "independent exponent ledger",
+          "isolation ledger"
+        ]
+      },
+      {
+        "id": "top_margin_hostile_audit",
+        "role": "seam_reviewer",
+        "access_mode": "selected_context",
+        "target": "Try to falsify the low-leg theorem at hard profile edges, perfect fourth powers, integer/half-integer resonances, large fixed legs, and h/q overlap; certify only the sharp lawful scope.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-top-block-low-leg-curvature/derivation_packet.md",
+          "rounds/codex-managed/m9-m1-global-angular-shifted-correlation/synthesis.md",
+          "rounds/codex-managed/m9-m1-alpha-coupled-dyadic-difference/reports/coupled_scale_hostile_audit.md",
+          "rounds/codex-managed/m9-endpoint-kernel-validation/reports/blind_profile_rederivation.md"
+        ],
+        "required_controls": [
+          "fixed_leg_phase",
+          "curvature_trivial_crossover",
+          "sampled_profile_BV",
+          "height_floor_and_stars",
+          "moving_window_edges",
+          "perfect_fourth_power",
+          "H_Q_ledger",
+          "double_counting",
+          "balanced_core_scope",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "seven-section hostile report",
+          "resonance and endpoint audit",
+          "recommended graph effect"
+        ]
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "one_dimensional_phase",
+        "requirement": "Check the exact derivatives after restricting to odd q or to fixed q, including the regime where the second derivative exceeds one."
+      },
+      {
+        "id": "actual_amplitude",
+        "requirement": "Prove sampled sup-plus-variation for the complete local angular weight rather than a schematic smooth amplitude."
+      },
+      {
+        "id": "Fejer_transfer",
+        "requirement": "Propagate uniform moving-window bounds through the exact finite Fejer identity with all edge windows."
+      },
+      {
+        "id": "mathematical_isolation",
+        "requirement": "The blind proof sees only the Round-55 packet and its brief."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "4efbecf244fa2c1f071a7fd2fe5c1eda0ba2596d51c4c873eefc0b47ffca211f",
+    "generated_at": "2026-08-13T17:55:53.080888+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

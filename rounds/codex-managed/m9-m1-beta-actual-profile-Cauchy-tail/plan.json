@@ -1,0 +1,19 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 38,
+    "campaign_id": "m9-m1-beta-actual-profile-cauchy-tail",
+    "title": "Actual beta-slab Cauchy tail for the endpoint-free vector",
+    "status": "complete",
+    "max_concurrency": 3,
+    "target_obligations": ["M9-M1-beta-endpoint-free-axial-Cauchy-tail"],
+    "graph_sha256": "da69e58e4abbfdf5bc16207c4f3b7411e29661cc8d43c07769c4c2adf28ff0bf",
+    "resource_policy": {"analytical_algebraic_minimum_percent": 100, "numerical_experimental_maximum_percent": 0},
+    "frozen_objective": "Prove the complete actual positive-b signed Cauchy tail in beta-slab coordinates, or isolate its first exact actual-kernel survivor, without attempting the local terminal-symbol bound."
+  },
+  "tasks": [
+    {"id": "blind_beta_slab_height_asymptotic", "role": "blind_rederiver", "report": "reports/blind_beta_slab_height_asymptotic.md"},
+    {"id": "actual_cauchy_tail_attack", "role": "discovery", "report": "reports/actual_cauchy_tail_attack.md"},
+    {"id": "cauchy_tail_hostile_audit", "role": "seam_reviewer", "report": "reports/cauchy_tail_hostile_audit.md"}
+  ]
+}

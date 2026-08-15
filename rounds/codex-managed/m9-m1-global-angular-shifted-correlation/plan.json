@@ -1,0 +1,188 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 54,
+    "round_type": "global_angular_shifted_correlation",
+    "campaign_id": "m9-m1-global-angular-shifted-correlation",
+    "title": "Coefficient-preserving shifted correlation after the scale sum",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "literature_policy": "Primary-source search is required only for exact shifted-convolution or spectral theorems whose hypotheses match the derived kernel."
+    },
+    "target_obligations": [
+      "M9-M1-global-angular-radial-estimate",
+      "M9-M1-alpha-bounded-zeta-high-transition-bound"
+    ],
+    "frozen_target": {
+      "question": "Does one coefficient-preserving Fejer/van-der-Corput step convert the exact global angular radial sum into an averaged signed shifted-divisor correlation with target capacity, or what sharp obstruction remains?",
+      "reference_formula": "S_X=sum_(n<=16sqrt X)^* A_X(n)n^(-3/4)e(sqrt(Xn)), A_X(n)=sum_(h|n,q=n/h odd)chi_4(q)Omega_X^*(n,h).",
+      "quantities": [
+        "finite Fejer or van der Corput inequality",
+        "shifted phase sqrt(X)(sqrt(n+r)-sqrt n)",
+        "exact coefficient correlation A_X(n+r) conjugate(A_X(n))",
+        "additive incidence h_1q_1-h_2q_2=r",
+        "R and N exponent ledger",
+        "endpoint and angular stars",
+        "spectral or shifted-convolution theorem hypotheses",
+        "transfer back to the projected alpha operator"
+      ]
+    },
+    "completion_criteria": [
+      "An exact finite differencing inequality is derived with every diagonal, shift weight, and boundary term.",
+      "The shifted angular coefficient is expanded without replacing it by r_2 or an arbitrary divisor bound.",
+      "The weakest averaged correlation bound sufficient for the X^epsilon target is stated with exact powers.",
+      "At least one target-relevant estimate or a sharp one-step capacity obstruction is proved.",
+      "Primary-source hypotheses are audited for every claimed imported theorem.",
+      "A clean statement-only derivation and independent hostile/source gate exist.",
+      "Physical radial and finite alpha transfer scopes remain distinct.",
+      "No downstream promotion follows without the signed correlation bound and transfer theorem."
+    ],
+    "controls": [
+      "exact_differencing",
+      "real_part_scope",
+      "shifted_incidence",
+      "coefficient_ownership",
+      "endpoint_stars",
+      "R_N_exponents",
+      "absolute_capacity",
+      "source_hypotheses",
+      "alpha_transfer_scope",
+      "downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "angular_shifted_correlation_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "target": "Derive and optimize the exact coefficient-preserving shifted-correlation inequality for the global angular radial sum; prove a target range or isolate the first sharp survivor.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-global-angular-shifted-correlation/derivation_packet.md",
+          "rounds/codex-managed/m9-m1-alpha-coupled-dyadic-difference/synthesis.md",
+          "rounds/codex-managed/m9-m1-dual-r2-recombination/synthesis.md",
+          "rounds/codex-managed/m9-m1-ordered-denominator-resonance-cells/synthesis.md",
+          "rounds/codex-managed/m9-m1-near-product-character-kernel/synthesis.md"
+        ],
+        "required_controls": [
+          "exact_differencing",
+          "real_part_scope",
+          "shifted_incidence",
+          "coefficient_ownership",
+          "endpoint_stars",
+          "R_N_exponents",
+          "absolute_capacity",
+          "alpha_transfer_scope",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "seven-section report",
+          "exact shifted kernel",
+          "sufficient averaged theorem or no-go"
+        ]
+      },
+      {
+        "id": "blind_vdc_correlation_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "target": "Using only the Round-54 packet, independently derive the finite differencing inequality, exact shifted incidence, and target exponent ledger; test whether one step can save X^(1/8).",
+        "context_files": [
+          "rounds/codex-managed/m9-m1-global-angular-shifted-correlation/derivation_packet.md"
+        ],
+        "excluded_context": [
+          "proof graph",
+          "proof draft",
+          "prior reports and syntheses",
+          "other Round-54 reports"
+        ],
+        "required_controls": [
+          "exact_differencing",
+          "real_part_scope",
+          "shifted_incidence",
+          "coefficient_ownership",
+          "endpoint_stars",
+          "R_N_exponents",
+          "absolute_capacity",
+          "alpha_transfer_scope",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "seven-section statement-only report",
+          "independent exponent ledger",
+          "isolation ledger"
+        ]
+      },
+      {
+        "id": "shifted_convolution_source_hostile_audit",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "target": "Hostile-audit the exact shifted kernel and search primary literature for an actually applicable shifted-convolution, spectral, large-sieve, or bilinear theorem; certify hypotheses or prove non-importability/capacity obstruction.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-global-angular-shifted-correlation/derivation_packet.md",
+          "rounds/codex-managed/m9-m1-alpha-coupled-dyadic-difference/synthesis.md",
+          "rounds/codex-managed/m9-m1-dual-r2-recombination/synthesis.md",
+          "rounds/codex-managed/m9-m1-frequency-phase-diagram/reports/m1_literature_hostile_audit.md",
+          "rounds/codex-managed/m9-m1-ordered-denominator-resonance-cells/reports/resonance_cell_literature_hostile_audit.md",
+          "sources/banerjee_khurana_2023.md",
+          "sources/kiral_zhou_2016.md"
+        ],
+        "required_controls": [
+          "exact_differencing",
+          "shifted_incidence",
+          "coefficient_ownership",
+          "endpoint_stars",
+          "R_N_exponents",
+          "absolute_capacity",
+          "source_hypotheses",
+          "alpha_transfer_scope",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "seven-section hostile/source report",
+          "exact applicability table",
+          "recommended graph effect"
+        ]
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "finite_inequality",
+        "requirement": "Audit the exact Fejer/van-der-Corput constants, shift weights, diagonal, and endpoint terms."
+      },
+      {
+        "id": "arithmetic_incidence",
+        "requirement": "Retain the full angular divisor coefficients and additive product-shift constraint."
+      },
+      {
+        "id": "exponent_capacity",
+        "requirement": "Derive the exact R,N bound needed for X^epsilon and compare every absolute route."
+      },
+      {
+        "id": "source_match",
+        "requirement": "Use only primary theorems with exact hypothesis mapping."
+      },
+      {
+        "id": "mathematical_isolation",
+        "requirement": "The blind proof sees only the Round-54 packet and its brief."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "ee2e84080cef5a9a49fd9a573f3ee0f1e14c3ec5032db3cca8fb5a50bc97ef22",
+    "generated_at": "2026-08-13T17:25:30.674103+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

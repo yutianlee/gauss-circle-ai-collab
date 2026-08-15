@@ -1,0 +1,50 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 44,
+    "campaign_id": "m9-m1-beta-compact-selector-ownership",
+    "title": "Exact selector and ownership certificate for the beta compact cell",
+    "status": "complete",
+    "max_concurrency": 3,
+    "target_obligations": [
+      "M9-M1-beta-compact-sixteen-stratum-selector-table",
+      "M9-M1-beta-double-bounded-cell-bound"
+    ],
+    "graph_sha256": "47bcb792c460c2a9bdab382b2cf05977684cd9fd178e961988feccdb30e4aec0",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0
+    },
+    "frozen_objective": "Construct or refute an exact finite row-by-row selector/ownership certificate from the accepted product Cauchy--Green identity to the corrected beta compact amplitude."
+  },
+  "tasks": [
+    {
+      "id": "actual_compact_table_constructor",
+      "role": "actual_operator_constructor",
+      "access_mode": "selected_context",
+      "report": "reports/actual_compact_table_constructor.md"
+    },
+    {
+      "id": "independent_compact_table_rederivation",
+      "role": "statement_only_independent_rederiver",
+      "access_mode": "statement_only",
+      "report": "reports/independent_compact_table_rederivation.md"
+    },
+    {
+      "id": "compact_table_hostile_audit",
+      "role": "hostile_ownership_reviewer",
+      "access_mode": "selected_context_no_claimant",
+      "report": "reports/compact_table_hostile_audit.md"
+    }
+  ],
+  "exit_gates": [
+    "all sixteen finite transfer strata classified",
+    "surviving beta mixed connector explicit",
+    "j=0 singular and regular top separated from j>=1 interior",
+    "every routed module named and used only within proved scope",
+    "floors stars collisions corner and measures retained",
+    "external normalization owned once",
+    "strict independent derivation or explicit isolation failure",
+    "conductor graph decision"
+  ]
+}

@@ -1,0 +1,243 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-top-frequency-two-shift-T2S",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Pointwise two-shift bound for the terminal M2 frequency block",
+        "status": "proved_internal",
+        "statement_tex": "Let 1<=L<=H<=D<=X^(1/2). If u_L is supported on h asymp L with sup|u_L|+sum|Delta u_L| << 1/L and |w_D(d)|<<1 on d asymp D, then for rho in {1,3}, |sum_d w_D(d) sum_h u_L(h)e(h(X/d+rho)/4)| <<_epsilon X^epsilon(1+D/L). The actual Vaaler block satisfies the BV hypothesis. Hence every terminal block L asymp H_D asymp D X^(-1/4) is pointwise O_epsilon(X^(1/4+epsilon)), uniformly for X^(1/4)<=D<=X^(1/2). This does not bound the lower frequency blocks.",
+        "dependencies": [
+          "H4",
+          "H4-Phi-regularity",
+          "M9-M2-beta-algebra",
+          "Divisor-bound-elementary"
+        ],
+        "implies": [
+          "M9-M2",
+          "M9-M2-reciprocal-SPD-route",
+          "M9-endpoint-uniformity"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-generic-band-signed-correlation/reports/top_block_two_shift_attack.md",
+            "rounds/codex-managed/m9-generic-band-signed-correlation/reports/blind_generic_band_algebra.md",
+            "rounds/codex-managed/m9-generic-band-signed-correlation/reviews/conductor_independent_analysis.md",
+            "rounds/codex-managed/m9-generic-band-signed-correlation/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use T2S to remove L asymp H_D from every M2 case split. Do not extrapolate D/L to lower blocks; map the remaining (D,L) region with direct and transformed estimates."
+      },
+      {
+        "id": "M9-M2-generic-single-lift-algebra",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Exact generic single-lift coefficient and pair-fiber algebra",
+        "status": "proved_internal",
+        "statement_tex": "For reduced p/q with D<=q<2D, the only lift is g=1, so A_chi(p/q)=beta_{p,H}w_D(q), with beta_{p,H}=-Phi(|p|/(H+1))chi_4(p)/(pi p), even in signed p and zero for even p. The pair convolution has the exact numerator equation p_1q_2+p_2q_1=N and the critical correlation has determinant band 0<|Delta|<=kappa q_1q_2q_3q_4/X.",
+        "dependencies": ["M9-M2-beta-algebra"],
+        "implies": [
+          "M9-M2-generic-2adic-sign-lock",
+          "M9-M2-signed-fat-band-constant"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-generic-band-signed-correlation/reports/blind_generic_band_algebra.md",
+            "rounds/codex-managed/m9-generic-band-signed-correlation/reports/signed_correlation_falsifier.md",
+            "rounds/codex-managed/m9-generic-band-signed-correlation/reviews/conductor_independent_analysis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use the exact equations and coprimality restrictions in every generic-band correlation attempt; do not replace them by a free residue model."
+      },
+      {
+        "id": "M9-M2-generic-2adic-sign-lock",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Two-adic sign locking on generic pair-sum fibers",
+        "status": "proved_internal",
+        "statement_tex": "Write q_1=da, q_2=db with (a,b)=1. Along odd solutions p_1=p_1^(0)+2ak, p_2=p_2^(0)-2bk of p_1q_2+p_2q_1=N, the character product changes by (-1)^(k(a+b)). It alternates only when v_2(q_1) differs from v_2(q_2), and is constant when the valuations agree. Hence all-odd and equal-valuation denominator fibers admit no universal numerator-character orthogonality.",
+        "dependencies": ["M9-M2-generic-single-lift-algebra"],
+        "implies": [
+          "M9-M2-signed-fat-band-constant",
+          "M9-near-collision-estimate"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-generic-band-signed-correlation/reports/blind_generic_band_algebra.md",
+            "rounds/codex-managed/m9-generic-band-signed-correlation/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Split any signed pair correlation into equal-valuation locked and unequal-valuation alternating sectors. Prove the lock-lock term by incidence or phase geometry, not assumed character cancellation."
+      },
+      {
+        "id": "M9-M2-beta-squarewave-convolution",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Finite Vaaler square-wave self-convolution",
+        "status": "proved_internal",
+        "statement_tex": "For b_h=-chi_4(|h|)1_(2 not divides h)/(pi|h|), b_0=0, one has sum_h b_h b_(n-h)=1/4 for n=0 and 0 otherwise. Extending beta_{h,H} by zero gives sup_n |sum_h beta_{h,H}beta_{n-h,H}-(1/4)1_(n=0)| << H^(-1/2). This genuine signed cancellation applies to equal unfiltered denominator dilations; coprimality and unequal dilations prevent coefficientwise transfer to the generic pair convolution.",
+        "dependencies": [
+          "H4-Phi-regularity",
+          "M9-M2-beta-algebra"
+        ],
+        "implies": ["M9-M2-signed-fat-band-constant"],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-generic-band-signed-correlation/reports/signed_correlation_falsifier.md",
+            "rounds/codex-managed/m9-generic-band-signed-correlation/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Test whether a coprimality-aware averaged dilated square-wave correlation survives across unequal denominators. Do not use the equal-dilation identity pointwise outside its scope."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2",
+        "status": "open",
+        "dependencies_added": ["M9-M2-top-frequency-two-shift-T2S"],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-generic-band-signed-correlation/reports/top_block_two_shift_attack.md",
+            "rounds/codex-managed/m9-generic-band-signed-correlation/reports/blind_generic_band_algebra.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-generic-band-signed-correlation/reports/signed_correlation_falsifier.md"
+          ]
+        },
+        "next_action": "Remove the terminal block L asymp H_D using T2S. Build a rigorous (D,L) phase diagram for 1<=L<<H_D and prove the pointwise X^(1/4+epsilon) bound on the remaining lower/intermediate region."
+      },
+      {
+        "id": "M9-M2-character-factor",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M2-generic-2adic-sign-lock",
+          "M9-M2-beta-squarewave-convolution"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-generic-band-signed-correlation/reports/blind_generic_band_algebra.md",
+            "rounds/codex-managed/m9-generic-band-signed-correlation/reports/signed_correlation_falsifier.md",
+            "rounds/codex-managed/m9-generic-band-signed-correlation/reports/top_block_two_shift_attack.md"
+          ]
+        },
+        "next_action": "Use chi_4 only through an exact mechanism: the two shifted phases, unequal-valuation fiber alternation, or averaged dilated square-wave correlation. Equal-valuation fibers are sign-locked, and the terminal pointwise block is already closed by T2S."
+      },
+      {
+        "id": "M9-M2-signed-fat-band-constant",
+        "status": "proposed",
+        "dependencies_added": [
+          "M9-M2-generic-single-lift-algebra",
+          "M9-M2-generic-2adic-sign-lock",
+          "M9-M2-beta-squarewave-convolution"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-generic-band-signed-correlation/reports/signed_correlation_falsifier.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-generic-band-signed-correlation/reports/blind_generic_band_algebra.md"
+          ]
+        },
+        "next_action": "If this route is continued, split locked and alternating two-adic sectors and retain coprimality. The lock-lock term and unique p=1 coefficients require denominator-level cancellation; the equal-dilation square-wave identity alone is insufficient."
+      },
+      {
+        "id": "M9-near-collision-estimate",
+        "status": "proposed",
+        "dependencies_added": [
+          "M9-M2-generic-single-lift-algebra",
+          "M9-M2-generic-2adic-sign-lock"
+        ],
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-generic-band-signed-correlation/reports/signed_correlation_falsifier.md"
+          ]
+        },
+        "next_action": "Do not seek universal numerator-residue cancellation. Either prove denominator-level cancellation in the two-adically locked sector or prefer a direct pointwise frequency-block estimate on the remaining (D,L) region."
+      },
+      {
+        "id": "M9-M2-reciprocal-SPD-route",
+        "status": "proposed",
+        "dependencies_added": ["M9-M2-top-frequency-two-shift-T2S"],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-generic-band-signed-correlation/reports/top_block_two_shift_attack.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-generic-band-signed-correlation/reviews/conductor_independent_analysis.md"
+          ]
+        },
+        "next_action": "Treat L asymp H_D as proved by T2S. Map the remaining lower/intermediate frequency region using direct exponent-pair, two-shift divisor, and transformed bounds; isolate the smallest unresolved polygon before proposing a new theorem."
+      },
+      {
+        "id": "M9-M2-sign-preserving-poisson-voronoi-route",
+        "status": "proposed",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-generic-band-signed-correlation/reports/top_block_two_shift_attack.md",
+            "rounds/codex-managed/m9-generic-band-signed-correlation/reviews/conductor_independent_analysis.md"
+          ]
+        },
+        "next_action": "The top block no longer needs Poisson. Use the formal dual scale K=XL/D^2 and product phase sqrt(Xhk) only where it improves a lower/intermediate block, after proving all transform errors and coefficient structure."
+      },
+      {
+        "id": "Li-Yang-source-audit",
+        "status": "source_audit_required",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-generic-band-signed-correlation/reports/top_block_two_shift_attack.md"
+          ]
+        },
+        "next_action": "Complete the rendered-PDF source card, resolve the apparent M<T^(-7/16) versus M<T^(7/16) threshold inconsistency, and transcribe all auxiliary conditions. Record that the published output exponent exceeds 1/4 even in height-admissible regions."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round4-automatic-adjacent-numerator-pairing",
+        "reason": "Changing p by 2 leaves the critical band or requires a compensating second sign flip; exact amplitudes and coprimality also prevent termwise cancellation."
+      },
+      {
+        "id": "Round4-universal-generic-fiber-character-orthogonality",
+        "reason": "Fixed pair-sum fibers with equal denominator two-adic valuations have constant chi_4 product, including every all-odd denominator pair."
+      },
+      {
+        "id": "Round4-equal-dilation-squarewave-implies-generic-energy",
+        "reason": "The finite square-wave convolution identity is broken by unequal denominator dilations and generic coprimality filters."
+      },
+      {
+        "id": "Round4-Li-Yang-height-admissibility-implies-project-target",
+        "reason": "The published Li-Yang output is at exponent 0.314483... rather than 1/4, and its full auxiliary hypotheses remain unaudited."
+      }
+    ],
+    "no_change": [
+      {"id": "M9-M1", "reason": "No M1 estimate was attempted."},
+      {"id": "M9", "reason": "M9-M2 lower/intermediate blocks and M9-M1 remain open."},
+      {"id": "M9-endpoint-uniformity", "reason": "The terminal M2 block is now uniform at the endpoint, but the full endpoint estimate remains open."},
+      {"id": "GC-target", "reason": "The final theorem remains conditional on open M9."}
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 9,
+    "idea_quality_score": 9,
+    "state_evidence_score": 9,
+    "calibration_score": 9,
+    "reason": "Round 4 proves a new direct pointwise X^(1/4+epsilon) bound for the terminal M2 frequency block, independently validates every resonance and endpoint seam, and derives exact two-adic and square-wave structure showing why naive generic-band sign pairing fails. The full lower/intermediate frequency region remains open."
+  }
+}
+

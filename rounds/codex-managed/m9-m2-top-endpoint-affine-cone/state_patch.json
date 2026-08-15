@@ -1,0 +1,146 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-top-endpoint-row-correlation-reduction",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Top M2 affine cone reduced to its interior row correlation",
+        "status": "proved_internal",
+        "statement_tex": "Let b_h=ceil(h/4), let a(h,m) be the exact normalized top-endpoint symbol, and let T_L=sum_(h asymp L,h odd)chi_4(h)sum_(b_h<=m<=h)a(h,m)e(sqrt(Xhm)). For every fixed K_0>=1, outer h-Cauchy gives |T_L|^2 << L(D+C_ne), with D=sum_h sum_m |a(h,m)|^2 << L^2 and C_ne=C_core+O_(K_0)(L^2), where C_core=2 Re sum_h sum_(k>K_0) sum_(b_h<m<h-k) a(h,m)conj(a(h,m+k)) e(sqrt(Xh)(sqrt(m)-sqrt(m+k))). Hence C_core <<_epsilon L^2 X^epsilon is sufficient for T_L <<_epsilon L^(3/2)X^epsilon. The diagonal, every fixed-width near-diagonal, and every correlation touching either moving endpoint are target-safe absolutely. This sufficient Cauchy route deletes chi_4(h) and is not necessary for a character-preserving proof. Also, the target is epsilon-trivial for L<=(log(2+X))^A for each fixed A; this gives no polynomial intermediate range.",
+        "dependencies": [
+          "M9-M2-top-endpoint-transform",
+          "M9-M2-character-factor",
+          "H4-Phi-regularity"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-top-endpoint-affine-cone/reports/blind_m2_cone_rederivation.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-affine-cone/reports/m2_cone_source_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-affine-cone/reviews/conductor_round74_adjudication.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-affine-cone/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-top-endpoint-affine-cone/reports/m2_affine_cone_attack.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Prove the signed one-sided core correlation at L^2 X^epsilon, or bypass Cauchy by validating and attacking the character-preserving near-product reciprocal energy."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "dependencies_added": [
+          "M9-M2-top-endpoint-row-correlation-reduction"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-top-endpoint-affine-cone/reports/blind_m2_cone_rederivation.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-affine-cone/reviews/conductor_round74_adjudication.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-m2-top-endpoint-affine-cone/reports/m2_cone_source_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-top-endpoint-affine-cone/reports/m2_affine_cone_attack.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-affine-cone/synthesis.md"
+          ]
+        },
+        "next_action": "Validate the candidate rank-one quarter-shift Poisson formula, boundary collar, actual near-product wavelet, LJ reciprocal-energy normalization, and high-character self-return by a strict statement-only rederivation. Then prove its signed off-diagonal, or prove the sufficient interior row-correlation bound."
+      },
+      {
+        "id": "M9-M2-h-cauchy-sign-loss",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-top-endpoint-affine-cone/reports/blind_m2_cone_rederivation.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-affine-cone/reviews/conductor_round74_adjudication.md"
+          ]
+        },
+        "next_action": "For the top cone, use the exact core-row reduction only as a sufficient route: it removes diagonal, fixed near-diagonal, and endpoint-touching terms but deletes chi_4(h). Prefer a validated character-preserving near-product energy if possible."
+      },
+      {
+        "id": "M9-M2-sign-preserving-poisson-voronoi-route",
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-m2-top-endpoint-affine-cone/reports/m2_cone_source_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-top-endpoint-affine-cone/reports/m2_affine_cone_attack.md"
+          ]
+        },
+        "next_action": "Do not treat rank-one 2D Poisson as a nondegenerate estimate or apply a second high-character Poisson transform for a fictitious gain. First validate the exact near-product/reciprocal-energy interface; its off-diagonal, not formal inversion, is the candidate saving."
+      },
+      {
+        "id": "M9-M2",
+        "dependencies_added": [
+          "M9-M2-top-endpoint-row-correlation-reduction"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-top-endpoint-affine-cone/synthesis.md"
+          ]
+        },
+        "next_action": "For the top block validate and attack the exact character-preserving near-product reciprocal energy; the row-Cauchy core is only a stronger sufficient alternative. Smooth interior small-gcd packets and the fourth-moment/pointwise interface remain separate."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round74-shear-antisymmetry-closes-top-cone",
+        "reason": "The character numerator after r=4m-h is antisymmetric, but the triangular domain, original-h cutoff, Vaaler factor, and endpoint profile are not invariant under h and r interchange."
+      },
+      {
+        "id": "Round74-product-grouping-divisor-bound-closes",
+        "reason": "The product coefficient is a moving near-square truncated divisor sum. A divisor bound gives only L^2, and phase-conjugating artificial coefficients falsify a coefficient-blind L^(3/2) theorem."
+      },
+      {
+        "id": "Round74-large-real-curvature-implies-cancellation",
+        "reason": "Real second derivatives do not control distance of the discrete phase from integers; exact square and perfect-fourth-power resonances remain, although their actual capacity is target-safe."
+      },
+      {
+        "id": "Round74-absolute-stationary-alias-summation",
+        "reason": "The one-variable stationary transform has about sqrt(X) aliases and absolute mass worse than the original trivial row bound; its phase and profile return exactly to the reciprocal denominator block."
+      },
+      {
+        "id": "Round74-nondegenerate-two-dimensional-Poisson",
+        "reason": "The Hessian of sqrt(hm) has determinant zero. Quarter-shift Poisson is rank one and produces a near-product wavelet, not a two-dimensional nondegenerate stationary saving."
+      },
+      {
+        "id": "Round74-second-high-character-Poisson-gives-new-saving",
+        "reason": "Fourier inversion in the character-bearing high dual leg restores the two quarter shifts, the short odd character, the endpoint profile, and the original top M2 reciprocal block. It is a self-return."
+      },
+      {
+        "id": "Round74-KRW-improves-the-accepted-envelope",
+        "reason": "Kowalski--Robert--Wu Proposition 5 is nontrivial against L^2 only for L>J^(1/3), where the accepted two-shift bound J^(1/2)L^(1/2) is already no larger. It never reaches L^(3/2)."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "reason": "The polynomial intermediate L range and the candidate reciprocal-energy off-diagonal remain open."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "Round 74 concerns only the M2 top endpoint."
+      },
+      {
+        "id": "M9",
+        "reason": "Both M9-M1 and M9-M2 remain open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The row-correlation reduction proves no full M2 estimate and supplies no global exponent improvement."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 6,
+    "idea_quality_score": 8,
+    "state_evidence_score": 9,
+    "calibration_score": 10,
+    "reason": "The round proves no polynomial target range, but it removes every elementary row-Cauchy piece, identifies a sharply normalized character-preserving near-product energy candidate, and rules out several tempting shear, curvature, Poisson, and source shortcuts. The candidate is deliberately deferred until a statement-only seam validates it."
+  }
+}

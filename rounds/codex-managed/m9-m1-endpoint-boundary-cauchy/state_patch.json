@@ -1,0 +1,189 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-endpoint-Cauchy-reduction",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Finite M=1 endpoint boundary Cauchy reduction",
+        "status": "proved_internal",
+        "statement_tex": "For each radial endpoint xi in {1,N_X}, let E_(xi,v)(w)=epsilon_xi e(sqrt(X xi)) xi^(w-3/4-v/2)/(w-3/4-v/2), with epsilon_(N_X)=1 and epsilon_1=-1. On the finite Round-19 radial rectangle, terminal plus oriented sides plus the artificial-pole residue equals the original right-line endpoint integral minus the arithmetic-pole residue: T_xi+S_xi+P_xi=D_xi-A_xi. The artificial residue cancels only with the opposite R_1 residue; the unsplit arithmetic residue recombines as R^ar[G]-sum_xi A_xi=R^ar[R_1]. If the artificial and arithmetic poles collide, their single double-pole derivative residue replaces the two simple residues. No horizontal side or outside limit is suppressed.",
+        "dependencies": [
+          "M9-M1-finite-vector-Hankel-identity",
+          "M9-M1-radial-endpoint-subtraction-identity"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-endpoint-boundary-cauchy/reports/blind_M1_boundary_cauchy.md",
+            "rounds/codex-managed/m9-m1-endpoint-boundary-cauchy/reports/endpoint_boundary_arithmetic_attack.md",
+            "rounds/codex-managed/m9-m1-endpoint-boundary-cauchy/reports/boundary_cauchy_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-endpoint-boundary-cauchy/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use the right-line endpoint-prefix formula with the exact outside profile; do not count split artificial or arithmetic residues twice."
+      },
+      {
+        "id": "M9-M1-lower-radial-endpoint-bound",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Target-safe lower radial endpoint",
+        "status": "proved_internal",
+        "statement_tex": "After the symmetric Perron and smooth-height limits, the xi=1 right-line endpoint is -e(sqrt X)/2 times the accepted direct profile H^prof_(U,X)(1,1). Hence its normalized size is O(log X), uniformly in the symmetric top truncation, and after restoring the external X^(1/4) M1 factor its physical size is O(X^(1/4)log X). Endpoint integration-by-parts coefficients remain full; the half weight occurs only in the inverse-Perron equality case.",
+        "dependencies": [
+          "M9-M1-endpoint-Cauchy-reduction",
+          "M9-M1-direct-profile-kernel-pointwise-bound"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-endpoint-boundary-cauchy/reports/endpoint_boundary_arithmetic_attack.md",
+            "rounds/codex-managed/m9-m1-endpoint-boundary-cauchy/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Treat the lower radial endpoint as target-safe; retain the upper endpoint and residue ledger separately."
+      },
+      {
+        "id": "M9-M1-upper-radial-endpoint-prefix",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Signed upper radial endpoint-prefix estimate",
+        "status": "open",
+        "statement_tex": "Prove uniformly in the symmetric top-profile truncation that sum_(hq<=N_X)^* chi_4(q)(hq)^(-3/4) H^prof_(U,X)(h,q) <<_epsilon X^epsilon, with N_X=floor(16sqrt X) and every actual scale, height floor, Vaaler factor, and stationary endpoint star retained. In the profile limit its grouped coefficient is exactly C_X^*(n) from GAR, but the radial phase e(sqrt(Xn)) is replaced by the constant endpoint phase e(sqrt(XN_X)); it is a full dephased prefix, not a thin endpoint subtotal. The direct-profile pointwise bound gives only the triangle-inequality capacity O(N_X^(1/4)log^2 X)=O(X^(1/8)log^2 X), which becomes O(X^(3/8)log^2 X) after restoring the external X^(1/4) M1 factor and is not target-sized.",
+        "dependencies": [
+          "M9-M1-endpoint-Cauchy-reduction",
+          "M9-M1-direct-profile-kernel-pointwise-bound",
+          "M9-M1-global-angular-recombination"
+        ],
+        "implies": [
+          "M9-M1-endpoint-boundary-operator"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [],
+          "negative": [
+            "rounds/codex-managed/m9-m1-endpoint-boundary-cauchy/reports/endpoint_boundary_arithmetic_attack.md",
+            "rounds/codex-managed/m9-m1-endpoint-boundary-cauchy/reports/boundary_cauchy_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-endpoint-boundary-cauchy/reports/blind_M1_boundary_cauchy.md",
+            "rounds/codex-managed/m9-m1-endpoint-boundary-cauchy/synthesis.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "First recombine the dephased prefix with the R_1 arithmetic and transition package and test whether the variable GAR phase is restored; treat a standalone prefix theorem as a stronger alternative, not an easier endpoint estimate."
+      },
+      {
+        "id": "M9-M1-upper-endpoint-absolute-capacity-no-go",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Absolute upper endpoint capacity misses the physical target",
+        "status": "proved_internal",
+        "statement_tex": "At finite radial height the off-centred Perron factor is not sharply supported; in the symmetric limit it selects the full prefix hq<N_X plus the half tie. The accepted pointwise profile bound and triangle inequality yield only N_X^(1/4)log^2 X on the normalized radial scale. Since active M1 carries the external X^(1/4) factor, this is X^(3/8)log^2 X physically. The arithmetic-residue recombination removes only the split E_1 residue share and does not cancel the endpoint prefix. Thus absolute endpoint summation or treating the endpoint as only hq=N_X cannot prove the target estimate.",
+        "dependencies": [
+          "M9-M1-endpoint-Cauchy-reduction",
+          "M9-M1-global-angular-recombination"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-endpoint-boundary-cauchy/reports/blind_M1_boundary_cauchy.md",
+            "rounds/codex-managed/m9-m1-endpoint-boundary-cauchy/reports/endpoint_boundary_arithmetic_attack.md",
+            "rounds/codex-managed/m9-m1-endpoint-boundary-cauchy/reports/boundary_cauchy_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-endpoint-boundary-cauchy/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Require chi_4-sensitive cancellation in the full actual-profile prefix or a cancellation identity with another explicitly retained term."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-endpoint-boundary-operator",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M1-endpoint-Cauchy-reduction",
+          "M9-M1-lower-radial-endpoint-bound",
+          "M9-M1-upper-radial-endpoint-prefix"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-endpoint-boundary-cauchy/reports/blind_M1_boundary_cauchy.md",
+            "rounds/codex-managed/m9-m1-endpoint-boundary-cauchy/reports/endpoint_boundary_arithmetic_attack.md",
+            "rounds/codex-managed/m9-m1-endpoint-boundary-cauchy/reports/boundary_cauchy_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-endpoint-boundary-cauchy/synthesis.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-m1-endpoint-boundary-cauchy/reports/boundary_cauchy_hostile_audit.md"
+          ]
+        },
+        "statement_tex": "For M=1, finite Cauchy algebra returns the terminal-plus-side endpoint operator to an original-sector right-line Perron prefix, minus the arithmetic and artificial residue shares. The lower radial endpoint is target-safe. The upper endpoint requires M9-M1-upper-radial-endpoint-prefix; absolute summation gives only physical size X^(3/8)log^2 X. The arithmetic residue recombines to R^ar[R_1] and the two diagonal transition traces remain separate. Control all of these before declaring the endpoint boundary operator closed.",
+        "next_action": "Attack the signed upper endpoint prefix and the recombined R_1 arithmetic residue as distinct interfaces; do not infer a bound from the exact Cauchy return."
+      },
+      {
+        "id": "M9-M1-renormalized-radial-boundary-operator",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M1-endpoint-Cauchy-reduction",
+          "M9-M1-upper-radial-endpoint-prefix"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-endpoint-boundary-cauchy/synthesis.md"
+          ]
+        },
+        "statement_tex": "The renormalized radial sides are removed, and the M=1 endpoint boundary now has an exact finite Cauchy return. Its lower endpoint is target-safe, while the upper original-sector prefix, recombined R_1 arithmetic residue, and both diagonal transition traces remain open. The upper prefix has only physical X^(3/8)log^2 X absolute capacity and needs a normalized X^epsilon signed bound.",
+        "next_action": "Resolve the signed upper radial endpoint prefix, then return to the recombined arithmetic residue and diagonal transition traces."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round22-finite-Perron-has-sharp-prefix-support",
+        "reason": "At finite radial height the off-centred Perron kernel is nonzero beyond hq<=xi; sharp prefix support and half ties arise only after a justified symmetric limit."
+      },
+      {
+        "id": "Round22-IBP-endpoint-coefficients-have-half-weight",
+        "reason": "The endpoint subtraction coefficients have full weight; the half weight belongs only to the symmetric inverse-Perron equality case."
+      },
+      {
+        "id": "Round22-expand-dual-series-at-artificial-pole",
+        "reason": "The reflected evaluation occurs near Re s=1/4, outside absolute convergence; the intact functional equation is meromorphic but its dual Dirichlet series cannot be expanded there."
+      },
+      {
+        "id": "Round22-upper-endpoint-absolute-bound-is-target-sized",
+        "reason": "The X^(1/8) bound is on the normalized GAR scale; restoring the external X^(1/4) factor yields X^(3/8), not X^(1/4+epsilon)."
+      },
+      {
+        "id": "Round22-arithmetic-residue-cancels-upper-prefix",
+        "reason": "The arithmetic ledger cancels only its split E_1 residue share and recombines to R^ar[R_1]; it does not cancel the right-line endpoint prefix."
+      }
+    ],
+    "no_change": [
+      {"id": "M9-M1-swept-transition-horizontal-operator", "reason": "The two diagonal transition traces remain open."},
+      {"id": "M9-M1-post-FE-vector-kernel", "reason": "The upper endpoint, recombined arithmetic residue, and transitions remain unproved."},
+      {"id": "M9-M1-global-angular-radial-estimate", "reason": "No normalized X^epsilon signed endpoint or GAR estimate was proved."},
+      {"id": "M9-M1", "reason": "No uniform M1 estimate was proved."},
+      {"id": "M9-M2", "reason": "Round 22 concerns transformed M1."},
+      {"id": "M9", "reason": "Both principal sublemmas remain open."},
+      {"id": "GC-target", "reason": "Finite Cauchy reduction does not prove the target."}
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 9,
+    "calibration_score": 10,
+    "reason": "Round 22 exactly collapses the first endpoint boundary operator and proves the lower endpoint target-safe. A conductor normalization audit catches that the upper absolute bound loses X^(1/8); the surviving signed endpoint prefix is isolated without overclaiming."
+  }
+}

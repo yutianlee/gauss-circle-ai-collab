@@ -1,0 +1,25 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 39,
+    "campaign_id": "m9-m1-beta-axial-subtracted-terminal-symbol",
+    "title": "Quantitative axial-subtracted beta terminal symbol",
+    "status": "complete",
+    "max_concurrency": 3,
+    "target_obligations": ["M9-M1-beta-axial-subtracted-terminal-symbol-bound"],
+    "graph_sha256": "37028b878c143ca545f2fe0139f171387d1377526d1336b2475c07ac5d16e6fb",
+    "resource_policy": {"analytical_algebraic_minimum_percent": 100, "numerical_experimental_maximum_percent": 0},
+    "frozen_objective": "Define the limiting axial-subtracted terminal symbol and prove its target X-uniform weighted value and fixed-physical-height derivative bounds, or isolate the first exact actual quantitative survivor."
+  },
+  "tasks": [
+    {"id": "blind_terminal_symbol_definition", "role": "blind_rederiver", "status": "complete_with_aggregate_type_obstruction", "report": "reports/blind_terminal_symbol_definition.md"},
+    {"id": "quantitative_terminal_symbol_attack", "role": "discovery", "status": "complete_with_cellwise_reformulation", "report": "reports/quantitative_terminal_symbol_attack.md"},
+    {"id": "terminal_symbol_hostile_audit", "role": "seam_reviewer", "status": "complete_corrective", "report": "reports/terminal_symbol_hostile_audit.md"}
+  ],
+  "closing_assessment": {
+    "decision": "revise_aggregate_target_promote_cellwise_reductions",
+    "graph_mutation": true,
+    "main_result": "The aggregate has no single saddle scale. The exact lawful object is a cellwise phase-removed pre-numerator mixed symbol, with singular hard-top Plemelj and smooth ordinary-mu shares separated. Conditional on its mixed norm, every leading large-alpha coefficient and resonance sum is target-safe; the complete second translation divided difference and Morse traces remain open."
+  },
+  "next_round": 40
+}

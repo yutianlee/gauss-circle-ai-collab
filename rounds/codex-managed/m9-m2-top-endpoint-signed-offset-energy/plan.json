@@ -1,0 +1,181 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 76,
+    "round_type": "m9_m2_top_endpoint_signed_offset_energy",
+    "campaign_id": "m9-m2-top-endpoint-signed-offset-energy",
+    "title": "Attack the alternating even-offset top-M2 energy",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "baa5fc13ca3682ae561c44cd1b20e94728c117378545f586ff3224c16a8eeb6b",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 80,
+      "numerical_experimental_maximum_percent": 20,
+      "literature_policy": "Derive and validate the complete signed Poisson/gcd-lift interface before importing exponent-pair, spacing, or spectral theorems."
+    },
+    "target_obligations": [
+      "M9-M2-top-endpoint-transposed-character-energy",
+      "M9-M2-top-endpoint-signed-cone",
+      "M9-M2",
+      "M9"
+    ],
+    "frozen_target": {
+      "question": "Can the complete alternating even-offset energy in (76.2) be bounded at L^2 X^epsilon, and does Poisson in m followed by the exact gcd-lift phase produce a genuine saving?",
+      "reference_formula": "sum_m |sum_(h odd,m<=h<=4m) chi4(h)a(h,m)e(sqrt(Xhm))|^2 << L^2 X^epsilon.",
+      "quantities": [
+        "J=sqrt(X), 1<=L<=H<=J^(1/2)",
+        "exact ceiling and both moving m-endpoints",
+        "signed offset chi4(h)chi4(h+2r)=(-1)^r",
+        "negative m-Poisson mode and saddle x*=C_(h,r)^2/(4k^2)",
+        "gcd variables h=ga, h+2r=gb",
+        "linear lift phase alpha_(a,b,k) and actual moving symbol"
+      ]
+    },
+    "completion_criteria": [
+      "Validate or correct every constant, endpoint, mode sign, stationary factor, gcd multiplicity, and parity in (76.1)-(76.16).",
+      "Complete a strict statement-only rederivation and an independent hostile seam/source audit.",
+      "Prove the energy, a strict polynomial L-subrange, or isolate a smaller exact actual-symbol resonance survivor.",
+      "Audit rank-one self-return, perfect powers, near-integer resonance, and adversarial coefficients.",
+      "Do not promote full M2, M9, or the exponent from a formal or partial transform."
+    ],
+    "controls": [
+      "external_normalization",
+      "exact_ceiling_stars_and_endpoints",
+      "diagonal_and_fixed_offsets",
+      "alternating_character_sign",
+      "Poisson_orientation_and_Gaussian",
+      "endpoint_Fresnel_and_error_sum",
+      "gcd_parity_and_multiplicity",
+      "linear_lift_phase",
+      "actual_moving_symbol",
+      "rank_one_self_return",
+      "perfect_power_and_resonance_capacity",
+      "source_applicability",
+      "downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "blind_signed_offset_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "assigned",
+        "target": "Independently validate or refute the complete finite offset identity and candidate Poisson/gcd-lift normal form.",
+        "context_files": [
+          "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/derivation_packet.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/briefs/blind_signed_offset_rederivation.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "all Round-75 and sibling Round-76 reports",
+          "all source cards and literature"
+        ],
+        "required_controls": [
+          "exact_ceiling_stars_and_endpoints",
+          "diagonal_and_fixed_offsets",
+          "alternating_character_sign",
+          "Poisson_orientation_and_Gaussian",
+          "endpoint_Fresnel_and_error_sum",
+          "gcd_parity_and_multiplicity",
+          "linear_lift_phase",
+          "actual_moving_symbol",
+          "rank_one_self_return",
+          "perfect_power_and_resonance_capacity",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reports/blind_signed_offset_rederivation.md"
+        ]
+      },
+      {
+        "id": "gcd_lift_resonance_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "assigned",
+        "target": "Prove the alternating energy or derive and attack the exact actual-symbol gcd-lift resonance sum.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/derivation_packet.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/briefs/gcd_lift_resonance_attack.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-near-product-energy/synthesis.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-near-product-energy/reports/reciprocal_energy_attack.md",
+          "rounds/codex-managed/m9-endpoint-kernel-validation/synthesis.md"
+        ],
+        "required_controls": [
+          "external_normalization",
+          "exact_ceiling_stars_and_endpoints",
+          "diagonal_and_fixed_offsets",
+          "alternating_character_sign",
+          "Poisson_orientation_and_Gaussian",
+          "endpoint_Fresnel_and_error_sum",
+          "gcd_parity_and_multiplicity",
+          "linear_lift_phase",
+          "actual_moving_symbol",
+          "rank_one_self_return",
+          "perfect_power_and_resonance_capacity",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reports/gcd_lift_resonance_attack.md"
+        ]
+      },
+      {
+        "id": "signed_offset_hostile_audit",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "status": "assigned",
+        "target": "Hostile-audit the Poisson endpoint ledger, gcd-lift resonance, self-return, and exact source applicability.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/derivation_packet.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/briefs/signed_offset_hostile_audit.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-near-product-energy/synthesis.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-near-product-energy/reports/near_product_energy_hostile_audit.md",
+          "rounds/codex-managed/m9-endpoint-kernel-validation/synthesis.md"
+        ],
+        "required_controls": [
+          "external_normalization",
+          "exact_ceiling_stars_and_endpoints",
+          "diagonal_and_fixed_offsets",
+          "alternating_character_sign",
+          "Poisson_orientation_and_Gaussian",
+          "endpoint_Fresnel_and_error_sum",
+          "gcd_parity_and_multiplicity",
+          "linear_lift_phase",
+          "actual_moving_symbol",
+          "rank_one_self_return",
+          "perfect_power_and_resonance_capacity",
+          "source_applicability",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reports/signed_offset_hostile_audit.md"
+        ]
+      }
+    ],
+    "review_seams": [
+      "finite endpoint ownership",
+      "Poisson orientation and stationary constant",
+      "gcd-lift phase and multiplicity",
+      "actual sampled lift symbol",
+      "rank-one self-return",
+      "resonance capacity and source hypotheses",
+      "downstream implication"
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "baa5fc13ca3682ae561c44cd1b20e94728c117378545f586ff3224c16a8eeb6b",
+    "generated_at": "2026-08-14T15:15:21.757930+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

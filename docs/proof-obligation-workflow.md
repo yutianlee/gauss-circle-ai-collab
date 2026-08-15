@@ -1,90 +1,59 @@
-# Proof-Obligation Workflow
+# Proof-Obligation and Campaign Workflow
 
-This workflow makes mathematical claims, not transcripts, the unit of progress.
+The proof obligation, not the transcript or agent, is the unit of progress.
 
-## Core Files
+## State model
 
-- `state/proof_obligations.yml`: authoritative claim graph.
-- `manifests/reading_packet.md`: compact generated packet for agents.
-- `state/next_round_prompts.md`: extracted judge prompts for A1, A2, A3, and A4.
-- `state/last_validation_report.md`: latest patch validation result.
-- `sources/*.md`: source cards required before external theorem use.
+- `state/proof_obligations.yml`: authoritative accepted graph.
+- `state/active_campaign.yml`: frozen current target and task briefs.
+- `state/current_round.md`: generated summary of the active numbered round.
+- `state/round_ledger.yml`: durable round status, exit gates, closing assessments, and next-round decisions.
+- `state/failure_ledger.md`: generated anti-memory from rejected claims.
+- `state/control_models.md`: false analogues and boundary tests.
+- `state/validation_matrix.yml`: independent acceptance gates for a candidate kernel.
+- `state/best_proof_draft.md`: proof text assembled only from accepted graph state.
+- `manifests/reading_packet.md`: compact derived project state.
 
-## Round Flow
+Historical fixed-agent rounds remain evidence. Their owner fields are historical stewards, not active assignments.
 
-1. Select one primary track and at most one secondary track in `state/proof_obligations.yml`.
-2. Stage A agents attack the selected target obligations.
-3. Stage B agents review proposed graph mutations: creates, updates, rejections, dependencies, blockers, evidence, and no-change claims.
-4. Stage C judge writes narrative synthesis plus `## State Patch`.
-5. Stage D validates the patch, applies accepted graph changes, extracts next prompts, regenerates the reading packet, and the guided scripts commit/push the completed round unless `-NoAutoPublish` is set.
+## Campaign flow
 
-## Patch Rules
+1. The conductor designs a numbered round and freezes one exact obligation, definitions, range, dependencies, forbidden shortcuts, and completion rule.
+2. Extract relevant rejected claims into a barrier packet.
+3. Prepare minimal, context-isolated briefs.
+4. Run up to three orthogonal subagents, such as discovery, no-go, blind derivation, source audit, or numerical falsification.
+5. Select the smallest candidate kernel that could change the graph.
+6. Review different failure seams independently; route at least one important derivation around the claimant.
+7. Reproduce diagnostic computations and attack with adversarial controls.
+8. Fill the validation matrix.
+9. The conductor closes the round, records its assessment, and writes any State Patch.
+10. Only then update the graph and proof draft and design the next numbered round.
 
-Use JSON-compatible YAML under `## State Patch`. JSON is valid YAML, and this keeps the validator dependency-free when PyYAML is unavailable.
+Reports must include an exact lemma or no-go result, proof, first doubtful step, control outcome, dependencies, and recommended state effect.
 
-```json
-{
-  "proof_obligations": {
-    "create": [],
-    "update": [
-      {
-        "id": "M9-M2-character-factor",
-        "status": "open",
-        "evidence_added": {
-          "inconclusive": ["rounds/web-research-test/round_029/responses/A2-029.md"]
-        },
-        "next_action": "State the exact near-collision lemma with C_h retained."
-      }
-    ],
-    "reject": [],
-    "no_change": [
-      {
-        "id": "M9",
-        "reason": "No theorem-level proof of both M1 and M2 with endpoint uniformity."
-      }
-    ]
-  },
-  "round_assessment": {
-    "mathematical_progress_score": 1,
-    "reason": "A blocker was sharpened; no theorem was promoted."
-  }
-}
-```
-
-## Validation Commands
-
-Run the guided workflow with minimal file handling:
-
-```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\auto_obligation_run.ps1 -RunId obligation-main -StartRound 1 -Rounds 1
-```
-
-The helper automates graph validation, orchestrator reruns, prompt pasting, response saving, Markdown normalization, judge-patch validation, reading-packet regeneration, and GitHub publish after Stage D. You still need to wait for A1/A2/A4 in their web UIs and click Copy response when each answer is done. Use `-NoAutoPublish` for a local-only Stage D.
-
-Validate the graph:
+## Commands
 
 ```powershell
 python -m math_collab.validate_state_patch --graph state/proof_obligations.yml
+python -m math_collab.campaigns validate
+python -m math_collab.campaigns prepare
+python -m math_collab.campaigns status
+python -m unittest discover -s tests -v
 ```
 
-Validate a judge output before applying it:
+`prepare` writes a plan snapshot, task briefs, `state/current_round.md`, the compatibility `state/next_campaign.md`, and the generated failure ledger. It does not launch Codex subagents, edit the proof graph, or certify mathematics.
 
-```powershell
-python -m math_collab.validate_round rounds/web-research-test/round_029/judge/judge-029.md
-```
+## State Patch rules
 
-Apply a validated judge patch:
+The existing JSON-compatible YAML patch format remains supported. Candidate reports do not patch the graph directly. Only the conductor proposes a patch, and promotion remains subject to graph invariants:
 
-```powershell
-python -m math_collab.validate_round rounds/web-research-test/round_029/judge/judge-029.md --apply --round-index 29
-```
+- computation can add only diagnostic evidence;
+- external dependencies require source cards;
+- downstream obligations cannot outrun blockers;
+- M9 cannot be promoted without M9-M1 and M9-M2 plus endpoint uniformity;
+- signed/unsigned and raw/weighted quantities require explicit connecting lemmas;
+- a failed campaign may record a new obstruction or rejected claim without promoting its target.
 
-Normal orchestrator Stage D applies the same validation automatically when `--no-state-update` is not set.
+## Active pilot
 
-## Safety Rules
-
-- Computation can only add diagnostic evidence.
-- External theorem obligations need source cards.
-- Open or proposed obligations need owners and concrete next actions.
-- `M9` cannot be promoted unless both `M9-M1` and `M9-M2` are promoted and uniformity over active dyadic `D` is explicit.
-- A round with no valid graph change may still be useful as evidence, but it should receive a low progress score.
+The first campaign adjudicates raw near-collision counts versus genuine $\beta$-weighted mass. The $X^{3/8}$ split is unchanged until the normalization, counting, coefficient-summation, endpoint, blind-rederivation, hostile-audit, and local-computation gates have been evaluated.

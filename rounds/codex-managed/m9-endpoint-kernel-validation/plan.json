@@ -1,0 +1,75 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 7,
+    "round_type": "seam_validation",
+    "campaign_id": "m9-endpoint-kernel-validation",
+    "title": "Validate the profile certificate and signed endpoint packet",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "conductor_policy": {
+      "strategy_owner": "Codex conductor",
+      "subagents_may_start_next_round": false,
+      "claimant_routing": "Every review is routed away from the Round-6 claimant; the two central lemmas are rederived from statement-only briefs.",
+      "round_close": "Promote only the independently reproduced statements whose normalization, signs, endpoint scope, and downstream implications all pass."
+    },
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 90,
+      "numerical_experimental_maximum_percent": 10,
+      "numerical_purpose": ["falsify an exact finite identity or endpoint scope claim"],
+      "numerical_prohibition": "No asymptotic statement may be certified numerically.",
+      "literature_policy": "Use primary sources only and only when a source theorem is actually invoked."
+    },
+    "target_obligations": [
+      "M9-M2-dyadic-weight-nondegeneracy",
+      "M9-endpoint-uniformity",
+      "M9-M2-smooth-dual-three-quarter-equivalence",
+      "M9-M2-dual-square-root-spacing-mean-square",
+      "M9-M2"
+    ],
+    "frozen_candidates": {
+      "profile": "An explicit exact dyadic partition of 1<=d<=floor(sqrt X) has uniform discrete BV <=4, sampled l1 mass >=D/8 on every active block, and exactly one non-smooth continuum endpoint block.",
+      "packet": "After removing gcd(h,k)>=L^(1/2), the balanced smooth endpoint sum is exactly a fixed dyadic sum of signed differences of 1/4 and 3/4 Poisson resonance packets in g=gcd(h,k).",
+      "direct_no_go": "A fixed smooth profile still has D/L classwise one-sided first-annulus capacity; this obstructs absolute/classwise methods but is not a lower bound for the full signed block."
+    },
+    "tasks": [
+      {
+        "id": "blind_profile_rederivation",
+        "role": "statement_only_blind_rederiver",
+        "claimant_excluded": "Round-6 dyadic_profile_certificate author",
+        "brief": "rounds/codex-managed/m9-endpoint-kernel-validation/briefs/blind_profile_rederivation.md"
+      },
+      {
+        "id": "blind_packet_rederivation",
+        "role": "statement_only_blind_rederiver",
+        "claimant_excluded": "Round-6 endpoint_dual_signed_attack author",
+        "brief": "rounds/codex-managed/m9-endpoint-kernel-validation/briefs/blind_packet_rederivation.md"
+      },
+      {
+        "id": "hostile_endpoint_scope_review",
+        "role": "hostile_seam_reviewer",
+        "claimant_excluded": "Round-6 endpoint_sine_kernel_attack author",
+        "brief": "rounds/codex-managed/m9-endpoint-kernel-validation/briefs/hostile_endpoint_scope_review.md"
+      }
+    ],
+    "exit_gates": [
+      "statement-only profile rederivation or exact counterexample",
+      "statement-only signed packet and sign rederivation or exact counterexample",
+      "hostile audit of classwise annulus and square-transition scope",
+      "endpoint versus interior Poisson seam classified",
+      "all proposed graph effects matched to green validation entries"
+    ],
+    "promotion_policy": "Round 7 may promote scoped infrastructure, exact reductions, and rigorous obstructions. It may not promote endpoint uniformity or M9-M2 without a complete pointwise bound for every remaining L block."
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "90f44e99047eff10b620228e8480a88984f9dbbca4445bb8921667d9d3575031",
+    "generated_at": "2026-08-12T10:26:56+08:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

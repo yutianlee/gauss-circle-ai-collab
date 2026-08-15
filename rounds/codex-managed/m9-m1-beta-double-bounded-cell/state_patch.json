@@ -1,0 +1,145 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-beta-double-bounded-radial-BV-reduction",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Conditional radial-BV reduction for the beta double-bounded cell",
+        "status": "proved_internal",
+        "statement_tex": "Let A(x) be the exact endpoint-image-free beta-owned double-bounded amplitude after signed hard-top recombination and finite post-routing ownership. If sup_(1<=x<=N_X)|A(x)|+int_1^(N_X)|A'(x)|dx is O_epsilon(X^epsilon), then sqrt(X) int_1^(N_X) x^(-3/2-b/2)e(sqrt(Xx))A(x)dx is O_epsilon(X^epsilon). The exact identity has boundary [x^(-1-b/2)e(sqrt(Xx))A(x)]_1^(N_X)/(pi i) with full continuous endpoint coefficients; pre-existing profile and inversion stars retain their own values. The beta-masked endpoints must be estimated locally and may not be identified with the accepted unmasked three-mask endpoint module.",
+        "dependencies": [
+          "M9-M1-beta-mask-endpoint-axial-compatibility",
+          "M9-M1-beta-boundary-first-symbol-architecture"
+        ],
+        "implies": [
+          "M9-M1-beta-double-bounded-cell-bound"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-double-bounded-cell/reports/double_bounded_radial_attack.md",
+            "rounds/codex-managed/m9-m1-beta-double-bounded-cell/reports/double_bounded_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-double-bounded-cell/reports/fast_blind_compact_cell.md",
+            "rounds/codex-managed/m9-m1-beta-double-bounded-cell/reviews/conductor_radial_endpoint_and_ownership.md",
+            "rounds/codex-managed/m9-m1-beta-double-bounded-cell/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Apply this reduction only after the explicit compact amplitude and its value plus one-x-derivative bound have passed isolated validation."
+      },
+      {
+        "id": "M9-M1-beta-double-bounded-cell-bound",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Explicit target-sized beta double-bounded cell",
+        "status": "open",
+        "statement_tex": "For the exact beta-owned compact cell Theta_db=psi(beta)chi_0(alpha), with the full gamma unit phase, signed hard-top Plemelj functional, smooth ordinary-mu shares, complete finite connector/profile family, exact floors and stars, and all routed boundary modules excluded once, prove sup_x(|A(x)|+x|A'(x)|)=O_epsilon(X^epsilon). The candidate discovery and hostile proofs yield this bound by compact gamma control, a cancellation-preserving divided difference, absolute h and q convergence, and a polylogarithmic dyadic scale sum; an isolated verifier must still certify the explicit one-count assembly and local masked endpoints.",
+        "dependencies": [
+          "M9-M1-beta-double-bounded-radial-BV-reduction",
+          "M9-M1-beta-hierarchical-radial-split-identity",
+          "M9-M1-beta-finite-box-Plemelj-limit",
+          "M9-M1-beta-mask-endpoint-axial-compatibility",
+          "M9-M1-beta-large-alpha-transition-package-bound"
+        ],
+        "implies": [
+          "M9-M1-beta-complete-physical-height-symbol-bound",
+          "M9-M1-beta-regular-finite-part-symbol-BV",
+          "M9-M1-beta-log-amplitude-two-saddle-kernel",
+          "M9-M1-beta-transition-connector-reduction"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-double-bounded-cell/reports/double_bounded_radial_attack.md",
+            "rounds/codex-managed/m9-m1-beta-double-bounded-cell/reports/double_bounded_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-double-bounded-cell/reviews/conductor_signed_top_and_gamma.md",
+            "rounds/codex-managed/m9-m1-beta-double-bounded-cell/reviews/conductor_radial_endpoint_and_ownership.md",
+            "rounds/codex-managed/m9-m1-beta-double-bounded-cell/reviews/conductor_coefficient_scale_audit.md",
+            "proofs/kernels/m9_m1_beta_double_bounded_cell_candidate.md",
+            "rounds/codex-managed/m9-m1-beta-double-bounded-cell/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-double-bounded-cell/reports/fast_blind_compact_cell.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Freeze the finite post-routing amplitude term by term and assign an isolated verifier the exact formulas, profile seminorms, j range, and exclusion ledger."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-beta-transition-connector-reduction",
+        "dependencies_added": [
+          "M9-M1-beta-double-bounded-cell-bound"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-double-bounded-cell/reports/double_bounded_radial_attack.md",
+            "rounds/codex-managed/m9-m1-beta-double-bounded-cell/reports/double_bounded_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-double-bounded-cell/reports/fast_blind_compact_cell.md",
+            "rounds/codex-managed/m9-m1-beta-double-bounded-cell/synthesis.md"
+          ]
+        },
+        "next_action": "Close M9-M1-beta-double-bounded-cell-bound by explicit-amplitude isolated validation, then compose it with the proved large-alpha package. The alpha-bounded zeta-high branch remains separate."
+      },
+      {
+        "id": "M9-M1-beta-complete-physical-height-symbol-bound",
+        "dependencies_added": [
+          "M9-M1-beta-double-bounded-cell-bound"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-double-bounded-cell/reports/double_bounded_radial_attack.md",
+            "rounds/codex-managed/m9-m1-beta-double-bounded-cell/reports/double_bounded_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-double-bounded-cell/reports/fast_blind_compact_cell.md"
+          ]
+        },
+        "next_action": "Validate the explicit double-bounded amplitude and its local endpoints; all large-alpha symbol interfaces are already closed."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round42-half-weight-radial-IBP-endpoint",
+        "reason": "Continuous radial integration by parts gives full endpoint coefficients. Half-values belong only to pre-existing profile, product-equality, or inverse-Mellin stars."
+      },
+      {
+        "id": "Round42-beta-masked-endpoint-is-the-unmasked-module",
+        "reason": "The accepted endpoint theorem applies after global three-mask recombination. A single beta-masked endpoint must be estimated locally or retained; it cannot be identified with the unmasked module."
+      },
+      {
+        "id": "Round42-absolute-hard-top-diagonal",
+        "reason": "Before delta/PV recombination the constant diagonal has a nonintegrable absolute height tail. The signed diagonal must be formed before absolute values."
+      },
+      {
+        "id": "Round42-undefined-post-routing-amplitude-passes-blind-gate",
+        "reason": "A statement-only verifier cannot certify the complete connector, profile, scale, and boundary-module assembly unless the finite amplitude and exclusion ledger are explicitly supplied."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "The beta double-bounded cell has not passed isolated validation and the alpha-bounded branch remains open."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1 and M9-M2 remain open."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 8,
+    "idea_quality_score": 9,
+    "state_evidence_score": 8,
+    "calibration_score": 10,
+    "reason": "Discovery and hostile proofs isolate a convincing target-sized compact-cell mechanism, while the isolated packet exposes an explicit one-count validation gap. The graph promotes only the unconditional radial reduction and keeps the full cell open."
+  }
+}
+

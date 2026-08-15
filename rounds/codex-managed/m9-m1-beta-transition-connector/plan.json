@@ -1,0 +1,146 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 26,
+    "round_type": "beta_transition_connector",
+    "campaign_id": "m9-m1-beta-transition-connector",
+    "title": "Connector-completed beta-transition reduction and physical kernel attack",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "literature_policy": "Derive the finite Cauchy-Pompeiu identity internally. Use primary sources only if a named operator theorem is imported, and audit every hypothesis before reliance."
+    },
+    "target_obligations": [
+      "M9-M1-beta-transition-connector-reduction",
+      "M9-M1-swept-transition-horizontal-operator",
+      "M9-M1-renormalized-radial-boundary-operator"
+    ],
+    "frozen_target": {
+      "question": "For one fixed smooth beta-transition mask, can the exact finite character-high trace be shifted across A=0 with the Cauchy-Pompeiu connector and R1 residue reconciled, then returned to a physical mask-convolved chi_4 kernel of normalized size O_epsilon(X^epsilon)?",
+      "reference_formula": "Set A=s-z/2 and B_+=s+z/2=A+z. The accepted beta-bounded factor is zeta(1-A)X_4(B_+)L(B_+,chi_4). For an even psi in C_c^infinity(R), psi=1 on [-B0,B0] and supported on [-2B0,2B0], derive the finite displacement from Re A=c'-Re z/2 to Re A=-kappa, including dbar psi(Im A), the crossed A=0 pole already represented by R1, all horizontal connectors, actual profiles/floors, and the external -(4/pi)X^(1/4) normalization.",
+      "quantities": [
+        "the shifted vertical beta trace",
+        "the Cauchy-Pompeiu area connector or equivalent strip-edge connector",
+        "the A=0 residue subtraction matched to Round 24",
+        "the physical mask-convolved character kernel with radial integration and symmetric top-Hilbert factor",
+        "signed actual-profile versus unsigned/adversarial controls"
+      ]
+    },
+    "completion_criteria": [
+      "Two independent finite connector identities agree on sign, orientation, residue, and all outside sides.",
+      "The claimant derives an exact physical or Fourier-convolution kernel for the shifted line plus connector, not merely the pure sine kernel.",
+      "The full actual-profile kernel receives a normalized O_epsilon(X^epsilon) estimate or a rigorous scoped capacity/resonance no-go.",
+      "The R1 residue is counted exactly once and no endpoint package is reopened.",
+      "The conductor closes the round and applies only a validated State Patch."
+    ],
+    "controls": [
+      "signed-vs-unsigned",
+      "coefficient-adversary",
+      "support-and-degeneracy",
+      "exact-vs-near-resonance"
+    ],
+    "tasks": [
+      {
+        "id": "blind_beta_connector_identity",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "target": "Independently derive the exact finite Cauchy-Pompeiu or strip-edge identity for a smooth beta mask, including orientations, A=0 residue reconciliation, finite sides, profiles, and normalization. Do not estimate it.",
+        "context_files": [
+          "protocol.md",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-vector-hankel-kernel/synthesis.md",
+          "rounds/codex-managed/m9-m1-diagonal-transition-exhaustion/synthesis.md",
+          "rounds/codex-managed/m9-m1-r1-arithmetic-residue/synthesis.md",
+          "rounds/codex-managed/m9-m1-partial-functional-equation-transitions/synthesis.md"
+        ],
+        "excluded_context": [
+          "all other Round-26 reports",
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md"
+        ],
+        "required_controls": [
+          "support-and-degeneracy",
+          "exact-vs-near-resonance"
+        ],
+        "required_output": [
+          "Exact finite connector identity",
+          "Full sign, residue, side, and normalization ledger",
+          "Seven-section report at the assigned path"
+        ]
+      },
+      {
+        "id": "beta_physical_kernel_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "target": "Derive the exact physical mask-convolved chi_4 kernel for the shifted beta line plus connector and prove a target-sized bound, or isolate its smallest rigorous obstruction.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-vector-hankel-kernel/synthesis.md",
+          "rounds/codex-managed/m9-m1-diagonal-transition-exhaustion/synthesis.md",
+          "rounds/codex-managed/m9-m1-r1-arithmetic-residue/synthesis.md",
+          "rounds/codex-managed/m9-m1-partial-functional-equation-transitions/synthesis.md"
+        ],
+        "required_controls": [
+          "signed-vs-unsigned",
+          "coefficient-adversary",
+          "support-and-degeneracy",
+          "exact-vs-near-resonance"
+        ],
+        "required_output": [
+          "Exact post-mask physical or Fourier-convolution kernel",
+          "Normalized bound or quantitative obstruction",
+          "Seven-section report at the assigned path"
+        ]
+      },
+      {
+        "id": "beta_connector_hostile_audit",
+        "role": "seam_reviewer",
+        "access_mode": "selected_context",
+        "target": "Hostilely rederive the connector displacement and attempt to falsify any claimed mask, character, residue, limit, or normalization saving.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-vector-hankel-kernel/synthesis.md",
+          "rounds/codex-managed/m9-m1-diagonal-transition-exhaustion/synthesis.md",
+          "rounds/codex-managed/m9-m1-r1-arithmetic-residue/synthesis.md",
+          "rounds/codex-managed/m9-m1-partial-functional-equation-transitions/synthesis.md"
+        ],
+        "required_controls": [
+          "signed-vs-unsigned",
+          "coefficient-adversary",
+          "support-and-degeneracy"
+        ],
+        "required_output": [
+          "Independent connector and residue audit",
+          "Countermodel or scoped promotion recommendation",
+          "Seven-section report at the assigned path"
+        ]
+      }
+    ],
+    "review_seams": [
+      "Wirtinger derivative sign and rectangle orientation",
+      "transition-mask boundary convention and Fourier transform",
+      "A=0 residue reconciliation with the accepted R1 term",
+      "finite horizontal connectors and outside-height limits",
+      "physical inversion with actual scale profiles, floors, and top star",
+      "chi_4 cancellation versus pure-sine resonance and unsigned controls",
+      "external X^(1/4) normalization"
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "dce19447a6adb9e776acc944d2b47f22d31eba1f8c2cfecbacac10565d699fdc",
+    "generated_at": "2026-08-12T20:23:34.369996+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

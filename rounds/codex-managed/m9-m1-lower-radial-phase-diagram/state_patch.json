@@ -1,0 +1,105 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-lower-radial-phase-diagram",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Exact lower-radial phase diagram below the critical sector",
+        "status": "proved_internal",
+        "statement_tex": "Let N=X^nu, D=X^delta, and L=X^ell. Stationary support gives ell=delta+(nu-1)/2 and (1-nu)/2<=delta<=1/2. The terminal theorem is exactly nu=1/2; V2 closes exactly (nu,delta)=(0,1/2); and the TTY wedge becomes 1816delta+89nu<=552, first meeting active support at (nu,delta,ell)=(356/819,463/1638,0). This contact is only partial scale coverage. The accepted direct menu closes every active denominator scale only at nu=0 and nu=1/2. Every 0<nu<1/2 retains the hard-top block (delta,ell)=(1/2,nu/2). On a residual block the exact excess above X^(1/4) for the best accepted menu is min((1-2nu)/4,(1816delta+89nu-552)/2564,delta-1/4,nu/4); at the hard top it is min(nu/4,(1-2nu)/4), crossing at nu=1/3. Floors, hard top, stars, smooth Mellin multipliers, and logarithmic scale sums preserve the reduction.",
+        "dependencies": [
+          "M9-M1-frequency-phase-diagram-R10",
+          "M9-M1-ordered-resonance-cell-decomposition",
+          "M9-M1-global-angular-recombination",
+          "M9-M1-smooth-critical-radial-terminal-transfer"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-radial-phase-diagram/reports/lower_radial_phase_diagram_attack.md",
+            "rounds/codex-managed/m9-m1-lower-radial-phase-diagram/reports/blind_lower_radial_rederivation.md",
+            "rounds/codex-managed/m9-m1-lower-radial-phase-diagram/reports/lower_radial_phase_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-lower-radial-phase-diagram/reviews/conductor_lower_radial_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-radial-phase-diagram/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Exploit h/H_j tending to zero on every fixed subcritical radial slice. Prove the exact Phi(u)=1+O(u^2) and denominator-partition collapse, quantify its total error, and isolate the resulting one-sided character-divisor radial sum."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "dependencies_added": [
+          "M9-M1-lower-radial-phase-diagram"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-radial-phase-diagram/synthesis.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-lower-radial-phase-diagram/reviews/conductor_lower_radial_adjudication.md"
+          ]
+        },
+        "next_action": "The critical radial sector and the degenerate nu=0 endpoint are closed, but every 0<nu<1/2 retains a hard-top survivor. Attack the small-angle angular-symbol collapse and its one-sided character-divisor radial remainder; do not infer all-scale closure from the TTY prefix."
+      },
+      {
+        "id": "M9-M1-frequency-phase-diagram-R10",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-radial-phase-diagram/synthesis.md"
+          ]
+        },
+        "next_action": "Use the accepted radial pullback of U_1. The TTY contact nu=356/819 is only partial low-D coverage; every fixed 0<nu<1/2 retains the top scale."
+      },
+      {
+        "id": "M9-M1-smooth-critical-radial-terminal-transfer",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-radial-phase-diagram/synthesis.md"
+          ]
+        },
+        "next_action": "Keep this theorem scoped to fixed critical radial support. Below nu=1/2, use the exact lower-radial diagram and the small-angle Vaaler structure rather than extending terminal support."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round61-TTY-contact-is-full-radial-threshold",
+        "reason": "The value 356/819 is only where the TTY-covered low-D prefix first meets active support. The actual hard-top block remains outside TTY for every 0<nu<1/2."
+      },
+      {
+        "id": "Round61-optimize-over-one-denominator-scale-closes-radial-sector",
+        "reason": "The exact angular coefficient sums every active denominator profile. Existence of one target-sized scale gives no estimate for the remaining scales without an additional signed cross-scale theorem."
+      },
+      {
+        "id": "Round61-terminal-transfer-extends-below-critical-radial-scale",
+        "reason": "The terminal condition ell=delta-1/4 is equivalent to nu=1/2. For fixed nu<1/2, h/H_j tends to zero and the terminal bound loses X^((1-2nu)/4) over the target."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "The entire open lower-radial band 0<nu<1/2 still contains an unproved hard-top block."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1 and M9-M2 remain open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The phase diagram is a reduction and supplies no new cancellation estimate or exponent improvement."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 61 gives an exact, independently validated map of every accepted M1 input into radial coordinates and identifies the unavoidable hard-top survivor and exact missing powers. It prevents a false threshold claim and focuses the next proof attack, but proves no new bound."
+  }
+}

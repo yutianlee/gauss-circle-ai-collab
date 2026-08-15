@@ -1,0 +1,81 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-joint-reciprocal-energy-Bprocess-reduction",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Signed reciprocal energy and square-root-product second-moment reduction",
+        "status": "proved_internal",
+        "statement_tex": "Let J=sqrt(X), Q=J/T, a_j=chi_4(j)Xi(j/J), and let w be smooth, nonnegative, and bounded below on the support of b_k. Then weighted Cauchy reduces the fixed-interior bilinear form to E=sum_k w(k/Q)|sum_j a_j e(kX/j)|^2 with |B|^2<<Q^(-1)E. Poisson summation gives E=Q sum_(j1,j2)a_(j1)conj(a_(j2)) sum_m hat(w)(Q[m-X(1/j1-1/j2)]), whose diagonal is asymp QJ, and for odd j1,j2 the character product is (-1)^((j2-j1)/2). Under the accepted smooth fixed-interior B-process, S_k=(J/k)^(1/2) sum_(rho in {1,3})epsilon_rho sum_(r asymp k)c_rho(k,r)e(2sqrt(kX(r-rho/4))) plus controlled errors. Hence RSLS E<<QJX^epsilon is equivalent to a shifted square-root-product second moment sum_(k asymp Q)|P_k|^2<<Q^2X^epsilon, whose diagonal is already asymp Q^2. Its complete signed off-diagonal remains open.",
+        "dependencies": [
+          "M9-M1-unmatched-crossing-Fourier-mode-reduction",
+          "M9-M1-one-sided-divisor-Appell-Poisson-reduction"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-joint-reciprocal-large-sieve/reports/blind_RSLS_rederivation.md",
+            "rounds/codex-managed/m9-m1-joint-reciprocal-large-sieve/reports/conductor_signed_reciprocal_energy_analysis.md",
+            "rounds/codex-managed/m9-m1-joint-reciprocal-large-sieve/reports/conductor_RSLS_source_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-joint-reciprocal-large-sieve/reviews/conductor_RSLS_adjudication.md",
+            "rounds/codex-managed/m9-m1-joint-reciprocal-large-sieve/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Prove the lossless signed off-diagonal sum_(k asymp Q)|P_k|^2_off<<Q^2X^epsilon with the actual residue-restricted moving symbol, or find a coherent family exceeding diagonal scale."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "dependencies_added": ["M9-M1-joint-reciprocal-energy-Bprocess-reduction"],
+        "evidence_added": {
+          "negative": ["rounds/codex-managed/m9-m1-joint-reciprocal-large-sieve/reports/conductor_RSLS_source_hostile_audit.md"],
+          "inconclusive": ["rounds/codex-managed/m9-m1-joint-reciprocal-large-sieve/synthesis.md"]
+        },
+        "next_action": "The fixed-interior subcritical problem is now a target-diagonal signed square-root-product second moment. Prove its full off-diagonal with the actual moving symbol; the B-process self-return alone gives no gain."
+      },
+      {
+        "id": "M9-M1-shifted-divisor-correlation-PSC",
+        "evidence_added": {
+          "inconclusive": ["rounds/codex-managed/m9-m1-joint-reciprocal-large-sieve/synthesis.md"]
+        },
+        "next_action": "Test the lossless shifted square-root-product off-diagonal theorem; reciprocal spacing and period-four sign pairing are insufficient before absolute values."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round67-character-alternation-closes-reciprocal-spacing",
+        "reason": "Changing the odd half-difference by one moves the reciprocal alias on unit scale, much larger than the Poisson kernel width Q^(-1); no lawful termwise alternating pairing results."
+      },
+      {
+        "id": "Round67-unsigned-reciprocal-spacing-proves-RSLS",
+        "reason": "Reciprocal points cluster at the Q^(-1) scale and the unsigned off-diagonal has capacity above QJ; the character must be used before absolute values."
+      },
+      {
+        "id": "Round67-known-double-large-sieve-proves-RSLS",
+        "reason": "The audited large-sieve and spacing results do not supply the required fixed-center, moving-symbol, residue-restricted lossless signed estimate."
+      },
+      {
+        "id": "Round67-Bprocess-return-is-covered-by-critical-terminal-theorem",
+        "reason": "The B-process returns to the subcritical one-sided divisor block, while the terminal theorem applies to fixed smooth critical radial sectors near n asymp sqrt(X)."
+      }
+    ],
+    "no_change": [
+      {"id": "M9-M1", "reason": "The signed square-root-product off-diagonal and full cone remain open."},
+      {"id": "M9", "reason": "M9-M1 and M9-M2 remain open."},
+      {"id": "GC-target", "reason": "Round 67 proves an exact reduction only; it proves no exponent improvement."}
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 6,
+    "idea_quality_score": 8,
+    "state_evidence_score": 9,
+    "calibration_score": 10,
+    "reason": "Round 67 converts the H/L deficit into an optimally normalized target-diagonal signed square-root-product energy and isolates the exact off-diagonal theorem, while correctly withholding RSLS and exponent promotion."
+  }
+}

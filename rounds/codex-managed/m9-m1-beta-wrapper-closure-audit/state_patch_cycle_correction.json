@@ -1,0 +1,30 @@
+{
+  "proof_obligations": {
+    "update": [
+      {
+        "id": "M9-M1-alpha-bounded-zeta-high-transition-bound",
+        "dependencies_removed": [
+          "M9-M1-renormalized-radial-boundary-operator"
+        ],
+        "dependencies_added": [
+          "M9-M1-radial-endpoint-subtraction-identity",
+          "M9-M1-renormalized-radial-side-removal",
+          "M9-M1-endpoint-boundary-operator",
+          "M9-M1-endpoint-Cauchy-reduction",
+          "M9-M1-upper-radial-endpoint-prefix",
+          "M9-M1-R1-arithmetic-residue"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-wrapper-closure-audit/reviews/conductor_W3_provenance_and_alpha_boundary.md"
+          ]
+        },
+        "next_action": "Freeze the exact alpha-bounded positive-line operator over the proved endpoint, side-removal, and R1 modules without using the open renormalized-boundary wrapper as an antecedent; then seek a signed joint kernel estimate."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 9,
+    "reason": "This correction removes an accidental circular dependency between the new alpha branch and the renormalized-boundary wrapper, replacing it by the wrapper's proved endpoint, side-removal, and arithmetic constituent modules."
+  }
+}

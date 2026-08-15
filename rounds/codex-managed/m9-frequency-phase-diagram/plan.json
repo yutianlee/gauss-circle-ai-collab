@@ -1,0 +1,113 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 5,
+    "round_type": "parameter_region_reduction",
+    "campaign_id": "m9-frequency-phase-diagram",
+    "title": "Map and reduce the remaining M2 frequency region",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "conductor_policy": {
+      "strategy_owner": "Codex conductor",
+      "subagents_may_start_next_round": false,
+      "monitoring": "Conductor checks every exponent conversion, weight hypothesis, transform error, endpoint, and source range.",
+      "round_close": "Close with an exact covered-region union and one smallest unresolved kernel. A no-go theorem is acceptable."
+    },
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 80,
+      "numerical_experimental_maximum_percent": 20,
+      "numerical_purpose": ["falsify region claims", "suggest an exact transition for proof"],
+      "numerical_prohibition": "Plots and finite sums cannot promote an asymptotic region.",
+      "available_local_tools": ["Python", "Mathematica"],
+      "literature_policy": "Audit primary statements for every exponent-pair or double-sum input."
+    },
+    "target_obligations": [
+      "M9-M2",
+      "M9-M2-top-frequency-two-shift-T2S",
+      "M9-M2-reciprocal-SPD-route",
+      "M9-M2-sign-preserving-poisson-voronoi-route"
+    ],
+    "frozen_target": {
+      "parameterization": "D=X^delta, L=X^ell, 1/4<=delta<=1/2, 0<=ell<=delta-1/4.",
+      "target": "|B_L(D;X)|<<X^(1/4+epsilon) pointwise.",
+      "accepted_bounds": [
+        "B_T2S<<X^epsilon(1+D/L)",
+        "B_vdC<<(LX/D)^(1/2)+(D^3/(LX))^(1/2)",
+        "B_trivial<<D",
+        "K=XL/D^2, LK=XL^2/D^2 in the formal B-process"
+      ],
+      "candidate_dual_target": "sum_{h~L}sum_{k~K} a(h,k)e(sqrt(Xhk)) << (LK)^(3/4)X^epsilon for the actual symbol.",
+      "forbidden_conflations": [
+        "known record exponent and conjectural 1/4 target",
+        "height conditions and conclusion size",
+        "formal and fully justified Poisson transforms",
+        "smooth coefficients and irregular product-grouped divisor coefficients"
+      ]
+    },
+    "tasks": [
+      {
+        "id": "blind_phase_diagram",
+        "role": "parameter_auditor",
+        "access_mode": "selected_context",
+        "target": "Independently normalize every accepted block estimate in (delta,ell), prove its exact target-coverage region, include all secondary terms and edge cases, and state the exact uncovered set. Derive the correct abstract exponent-pair inequality but do not import any pair without a primary-source certificate.",
+        "context_files": [
+          "state/best_proof_draft.md",
+          "rounds/codex-managed/m9-generic-band-signed-correlation/reports/top_block_two_shift_attack.md",
+          "state/control_models.md"
+        ],
+        "required_controls": ["dyadic-endpoints", "support-and-degeneracy", "source-applicability"],
+        "required_output": ["region inequalities", "coverage table", "unresolved polygon", "first doubtful step"]
+      },
+      {
+        "id": "dual_three_quarter_attack",
+        "role": "analytic_method_attacker",
+        "access_mode": "selected_context_and_primary_sources",
+        "target": "Derive the smooth Poisson/B-process formula for a lower/intermediate block far enough to validate or correct K=XL/D^2 and its amplitude. Determine whether a bilinear (LK)^(3/4) product-phase bound is provable by elementary Cauchy/differencing or an audited primary theorem, or show precisely why it is equivalent to a hard divisor-weighted square-root sum. Track zero modes, nonstationary tails, support edges, and coefficient variation.",
+        "context_files": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "rounds/codex-managed/m9-generic-band-signed-correlation/reports/top_block_two_shift_attack.md",
+          "rounds/codex-managed/m9-generic-band-signed-correlation/reviews/conductor_independent_analysis.md",
+          "sources/li_yang_2023.md",
+          "sources/bourgain_watt.md"
+        ],
+        "required_controls": ["source-applicability", "proves-too-much", "dyadic-endpoints"],
+        "required_output": ["proved transform scope", "dual target normalization", "best justified bound", "sufficiency or no-go verdict", "primary citations"]
+      },
+      {
+        "id": "hybrid_corridor_hostile",
+        "role": "hostile_seam_reviewer",
+        "access_mode": "selected_context",
+        "target": "Attack improvements of T2S below the top edge. Rewrite the shifted block through its near-integer n=d(4m-rho) geometry, test whether the rho=1,3 difference or nonnegative fixed dyadic weights cancel the D/L proximity mass, and construct coherent subfamilies or exact identities. Use bounded computation only to falsify a precise transition or formulate a lemma, with reproducible artifacts.",
+        "context_files": [
+          "rounds/codex-managed/m9-generic-band-signed-correlation/synthesis.md",
+          "rounds/codex-managed/m9-generic-band-signed-correlation/reports/signed_correlation_falsifier.md",
+          "state/control_models.md",
+          "sources/vaaler_1985.md"
+        ],
+        "required_controls": ["signed-vs-unsigned", "coefficient-adversary", "proves-too-much", "dyadic-endpoints"],
+        "required_output": ["hybrid candidate or obstruction", "sharpness analysis", "control outcomes", "exact remaining seam"]
+      }
+    ],
+    "completion_criteria": [
+      "Every accepted estimate has a checked region inequality.",
+      "The union of proved regions and its complement are explicit.",
+      "The formal dual target is validated, corrected, or rejected with full scope.",
+      "The two-shift corridor has a mechanism or obstruction.",
+      "No global or final theorem is promoted from partial coverage."
+    ],
+    "promotion_policy": "Round 5 may promote scoped region lemmas, a complete transform, or a no-go obstruction. It may promote M9-M2 only if the entire parameter triangle is rigorously covered, including the endpoint."
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "1600cd93d279ecfc8bb6f55f7e12f7ce2489de54f77e29983c5af33522894ddc",
+    "generated_at": "2026-08-12T00:00:00+08:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}
+

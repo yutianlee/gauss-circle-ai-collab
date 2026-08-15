@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "round_index": 66,
+  "campaign_id": "m9-m1-unmatched-crossing-fourier-modes",
+  "objective": "Exploit the exact Fourier difference factor in the unmatched crossing functional, or prove a sharp exponent-pair/bilinear capacity obstruction.",
+  "graph_sha256": "fff839f848082c29f42c2224940f0b35ca787b23e016cc0b73985ea4271e90bf",
+  "resource_policy": {"analytical_algebraic_minimum_percent": 80, "numerical_experimental_maximum_percent": 20},
+  "tasks": [
+    {"id": "joint_reciprocal_mode_attack", "role": "discovery", "status": "assigned"},
+    {"id": "blind_fourier_mode_rederivation", "role": "statement_only_blind_rederiver", "status": "assigned"},
+    {"id": "reciprocal_mode_source_hostile_audit", "role": "hostile_source_reviewer", "status": "assigned"}
+  ],
+  "exit_gates": ["Vaaler identity", "difference factor", "Fejer residual", "low/high modes", "TTY applicability", "bilinear diagonal", "target exponent", "perfect powers", "source applicability", "blind and hostile gates", "conductor decision"]
+}

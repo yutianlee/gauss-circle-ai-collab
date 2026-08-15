@@ -1,0 +1,45 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 14,
+    "round_type": "global_recombination_discovery",
+    "campaign_id": "m9-m1-dual-r2-recombination",
+    "title": "Recombine the RCS coefficient and test the Hardy return map",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "conductor_policy": {
+      "strategy_owner": "Codex conductor",
+      "subagents_may_start_next_round": false,
+      "monitoring": "Track every H_D floor, dyadic L and D weight, odd-q restriction, endpoint star, and stationary error. Do not replace a localized divisor sum by r_2 until the partition identity is exact.",
+      "round_close": "Close after exact single-block algebra, global partition bookkeeping, a Hardy/Voronoi normalization comparison, and a verdict on whether the global estimate is strictly weaker or circular."
+    },
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 90,
+      "numerical_experimental_maximum_percent": 10,
+      "numerical_purpose": ["falsify a proposed exact finite coefficient identity"],
+      "numerical_prohibition": "Finite agreement cannot prove a global radial-sum estimate.",
+      "literature_policy": "Use primary sources for Hardy or truncated Voronoi formulas and audit exact constants, truncations, and errors."
+    },
+    "target_obligations": ["M9-M1-dual-restricted-convolution-RCS","M9-M1","M9","Conditional-bridge"],
+    "frozen_target": {
+      "coefficient_identity": "For n=hq, prove the cancellation of the stationary h powers against the Vaaler 1/h and retain the exact Phi and shell factors.",
+      "recombination_question": "Sum actual L and D partitions and determine whether the coefficient becomes r_2(n)/4 times an n-only symbol or a precisely localized angular divisor sum.",
+      "success": "Derive a strictly weaker global sufficient estimate with controlled errors, or rigorously prove that the route is a return to an equivalent Hardy/Bessel object and isolate any noncircular remainder."
+    },
+    "tasks": [
+      {"id":"blind_rcs_coefficient_algebra","role":"statement_only_exact_deriver","brief":"rounds/codex-managed/m9-m1-dual-r2-recombination/briefs/blind_rcs_coefficient_algebra.md"},
+      {"id":"dyadic_r2_recombination_attack","role":"global_algebraic_attacker","brief":"rounds/codex-managed/m9-m1-dual-r2-recombination/briefs/dyadic_r2_recombination_attack.md"},
+      {"id":"hardy_return_hostile_source_audit","role":"primary_source_and_hostile_reviewer","brief":"rounds/codex-managed/m9-m1-dual-r2-recombination/briefs/hardy_return_hostile_source_audit.md"}
+    ],
+    "exit_gates": ["exact grouped RCS coefficient","r_2 divisor identity with parity","D/L recombination including Phi and floor heights","Hardy/Bessel normalization comparison","global-versus-blockwise implication audit","conductor decision"],
+    "promotion_policy": "A global recombination promotes only if all partitions and errors are exact and the resulting sufficient estimate is proved to be logically weaker than the existing blockwise target.",
+    "closing_assessment": {
+      "decision": "promote_exact_angular_recombination_reject_r2_collapse",
+      "graph_mutation": true,
+      "main_result": "The active M1 aggregate has an exact angular divisor coefficient and a weaker global estimate; M1 alone does not collapse to r_2/4, while full radial completion is the Hardy--Voronoi return map."
+    }
+  },
+  "provenance": {"graph_path":"state/proof_obligations.yml","graph_sha256":"ba43cb4e073a06640030a9090df6b57cc4ad8564feada6a0698aa777d1378b14","generated_at":"2026-08-12T17:35:00+08:00"},
+  "artifact_policy": {"subagents_may_edit_shared_state":false,"computation_evidence_level":"diagnostic_only","coordinator_owns_synthesis_and_state_patch":true}
+}

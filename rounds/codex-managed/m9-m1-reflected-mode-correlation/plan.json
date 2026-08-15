@@ -1,0 +1,49 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 16,
+    "round_type": "reflected_mode_correlation_attack",
+    "campaign_id": "m9-m1-reflected-mode-correlation",
+    "title": "Compare the actual Mellin sector with its functional-equation reflection",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "conductor_policy": {
+      "strategy_owner": "Codex conductor",
+      "subagents_may_start_next_round": false,
+      "monitoring": "Require finite contour truncation. Track z=u+v, gamma heights, every pole, scale/floor factor, and the top 1/u principal value.",
+      "round_close": "Close only after exact algebra, hostile scope review, and a signed estimate or proved obstruction."
+    },
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 95,
+      "numerical_experimental_maximum_percent": 5,
+      "numerical_purpose": ["bounded falsification of signs, residues, or reflection constants"],
+      "literature_policy": "Primary sources only for a theorem used beyond accepted functional equations."
+    },
+    "target_obligations": [
+      "M9-M1-top-Perron-angular-correlation",
+      "M9-M1-global-angular-radial-estimate",
+      "M9-M1-centered-angular-functional-equation",
+      "M9-M1"
+    ],
+    "tasks": [
+      {"id":"blind_reflected_mode_identity","role":"statement_only_exact_deriver","brief":"rounds/codex-managed/m9-m1-reflected-mode-correlation/briefs/blind_reflected_mode_identity.md"},
+      {"id":"reflected_mode_correlation_attack","role":"signed_correlation_attacker","brief":"rounds/codex-managed/m9-m1-reflected-mode-correlation/briefs/reflected_mode_correlation_attack.md"},
+      {"id":"reflected_mode_hostile_audit","role":"hostile_contour_and_capacity_reviewer","brief":"rounds/codex-managed/m9-m1-reflected-mode-correlation/briefs/reflected_mode_hostile_audit.md"}
+    ],
+    "exit_gates": ["finite-height reflection identity","complete residue ledger","profile-sector comparison","top Perron sign and maximal scope","new estimate or rigorous obstruction","conductor decision"],
+    "promotion_policy": "A reflected-mode formula promotes only with exact contours and residues; a bound requires uniform complex-height and hard-top control.",
+    "closing_assessment": {
+      "decision": "promote_finite_reflection_and_perron_completion_no_go",
+      "graph_mutation": true,
+      "main_result": "Finite-height reflection is exact only with zeta, height, hard-top Perron, and endpoint residues retained. Ideal reflected Perron sectors complete the Hardy angular coefficient rather than cancel; actual M1 profiles lack the reflected scale and leave an explicit maximal angular-sign kernel."
+    },
+    "next_round": 17
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "7619a6b552347ce9b522018a104aeaa048304e2913ea1e072e583c0a2ace2c86",
+    "generated_at": "2026-08-12T19:05:00+08:00"
+  },
+  "artifact_policy": {"subagents_may_edit_shared_state":false,"computation_evidence_level":"diagnostic_only","coordinator_owns_synthesis_and_state_patch":true}
+}

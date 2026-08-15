@@ -1,0 +1,171 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 33,
+    "round_type": "beta_mask_endpoint_axial_compatibility",
+    "campaign_id": "m9-m1-beta-mask-endpoint-axial-compatibility",
+    "title": "Exact mask, endpoint, and axial ownership identity",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "literature_policy": "This is a finite contour and ownership round. Use exact Cauchy--Green, endpoint Cauchy, and vector-residue algebra. Search primary literature only if a specifically named several-variable residue or Cauchy--Pompeiu identity becomes necessary; no black-box theorem may replace the finite sign and corner ledger."
+    },
+    "target_obligations": [
+      "M9-M1-beta-mask-endpoint-axial-compatibility"
+    ],
+    "frozen_target": {
+      "question": "For the hierarchical beta mask at finite U,V,S, does endpoint collapse followed by finite v-axis displacement give exactly the same boundary, arithmetic, axial, connector, and corner ownership as performing those operations before masking, so that the residual terminal share has E_own=0?",
+      "reference_formula": "Write one mask-by-mask identity for the beta terminal vertical plus its Cauchy--Green area connector. It must route T_xi+S_xi+P_xi=D_xi-A_xi, the cancelling artificial R1 residue, the recombined R1 arithmetic residue, the v=0 vector residue on every contour stratum, the u=0 share, the joint corner, and both finite height connectors exactly once. Prove E_own=H_G-H_E1-H_R1=0 for the endpoint-free residual, or isolate the first explicit nonzero masked boundary operator. No terminal symbol estimate is part of this round.",
+      "quantities": [
+        "hierarchical mask Theta_beta=psi(beta) and its one-edge Cauchy--Green connector",
+        "finite endpoint identity T_xi+S_xi+P_xi=D_xi-A_xi",
+        "G=E1+R1 artificial-pole cancellation under the same mask",
+        "full versus masked A=0 arithmetic residue share",
+        "terminal, radial-side, and arithmetic v=0 vector residues",
+        "u=0 axial share and joint u=v=0 corner",
+        "finite v-horizontal connectors and orientations",
+        "endpoint stars, profiles, floors, and external X^(1/4) normalization",
+        "rho ownership defect E_own and its physical L derivative"
+      ]
+    },
+    "completion_criteria": [
+      "The hierarchical beta mask convention is frozen and distinguished from the disjoint two-edge mask.",
+      "One exact finite contour identity lists every endpoint, artificial, arithmetic, v=0, u=0, corner, side, and connector term with orientation.",
+      "The accepted endpoint and arithmetic modules are invoked only after exact mask recombination; no unmasked estimate is applied to an isolated masked share.",
+      "E_own=0 and its physical L derivative are proved for the endpoint-free terminal remainder, or the first explicit surviving operator is isolated.",
+      "A blind derivation and hostile seam audit independently assess the identity.",
+      "The conductor closes the round before opening the axial-subtracted symbol estimate."
+    ],
+    "controls": [
+      "hierarchical-versus-disjoint-mask",
+      "cauchy-green-orientation",
+      "endpoint-artificial-arithmetic-ledger",
+      "axial-residue-and-corner-count",
+      "finite-height-connector-ownership",
+      "rho-ownership-defect",
+      "profile-star-normalization"
+    ],
+    "tasks": [
+      {
+        "id": "blind_mask_endpoint_axial_identity",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "target": "Independently derive the finite mask-by-mask compatibility identity for the hierarchical beta mask Theta_beta=psi(beta). Start from the accepted finite vector kernel, endpoint Cauchy identity, and one-edge Cauchy--Green formula. List terminal, radial-side, arithmetic, v=0, u=0, joint-corner, and finite-height connector shares with signs. Decide whether the endpoint-free residual has E_own=0; if the permitted statements do not define a needed share, isolate the first exact missing coefficient. Do not read any Round-33 claimant report.",
+        "context_files": [
+          "protocol.md",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-vector-hankel-kernel/synthesis.md",
+          "rounds/codex-managed/m9-m1-endpoint-boundary-cauchy/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-transition-connector/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-complete-physical-height-symbol/synthesis.md"
+        ],
+        "excluded_context": [
+          "all Round-33 claimant reports",
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "rounds/codex-managed/m9-m1-beta-complete-physical-height-symbol/reviews"
+        ],
+        "required_controls": [
+          "hierarchical-versus-disjoint-mask",
+          "cauchy-green-orientation",
+          "endpoint-artificial-arithmetic-ledger",
+          "axial-residue-and-corner-count",
+          "rho-ownership-defect"
+        ],
+        "required_output": [
+          "Exact finite compatibility identity or first definition obstruction",
+          "Complete orientation and one-count residue ledger",
+          "Seven-section report at the assigned path"
+        ]
+      },
+      {
+        "id": "mask_endpoint_axial_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "target": "Construct the exact commuting diagram between hierarchical beta masking, Cauchy--Green displacement, M=1 endpoint collapse, and finite v-axis displacement. Recombine complementary mask and connector shares before invoking proved unmasked endpoint/arithmetic modules. Prove E_own=0 for the side-collapsed endpoint-free terminal operator, or write the smallest explicit masked boundary/axial survivor including its normalization and dependencies.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-vector-hankel-kernel/synthesis.md",
+          "rounds/codex-managed/m9-m1-endpoint-boundary-cauchy/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-transition-connector/reports/blind_beta_connector_identity.md",
+          "rounds/codex-managed/m9-m1-beta-transition-connector/synthesis.md",
+          "rounds/codex-managed/m9-m1-r1-arithmetic-residue/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-complete-physical-height-symbol/reviews/conductor_endpoint_ownership_map.md",
+          "rounds/codex-managed/m9-m1-beta-complete-physical-height-symbol/reviews/conductor_axial_vector_ownership.md",
+          "rounds/codex-managed/m9-m1-beta-complete-physical-height-symbol/synthesis.md"
+        ],
+        "required_controls": [
+          "hierarchical-versus-disjoint-mask",
+          "cauchy-green-orientation",
+          "endpoint-artificial-arithmetic-ledger",
+          "axial-residue-and-corner-count",
+          "finite-height-connector-ownership",
+          "rho-ownership-defect",
+          "profile-star-normalization"
+        ],
+        "required_output": [
+          "Exact commuting identity or smallest explicit survivor",
+          "Mask, endpoint, axial, connector, corner, and normalization ledger",
+          "Seven-section report at the assigned path"
+        ]
+      },
+      {
+        "id": "mask_endpoint_axial_hostile_audit",
+        "role": "seam_reviewer",
+        "access_mode": "selected_context",
+        "target": "Hostilely audit the finite compatibility claim. Check Cauchy--Green signs, the full-versus-filtered A=0 residue, artificial-pole cancellation, endpoint Cauchy orientations, whether v=0 extraction commutes with the beta mask, u=0 and corner inclusion-exclusion, finite connector ownership, and the physical endpoint-limit scope. Produce a counteridentity if any term is double counted or missing; otherwise certify only the narrow exact lemma.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-vector-hankel-kernel/synthesis.md",
+          "rounds/codex-managed/m9-m1-endpoint-boundary-cauchy/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-transition-connector/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-complete-physical-height-symbol/reviews/conductor_axial_vector_ownership.md",
+          "rounds/codex-managed/m9-m1-beta-complete-physical-height-symbol/synthesis.md"
+        ],
+        "required_controls": [
+          "hierarchical-versus-disjoint-mask",
+          "cauchy-green-orientation",
+          "endpoint-artificial-arithmetic-ledger",
+          "axial-residue-and-corner-count",
+          "finite-height-connector-ownership",
+          "rho-ownership-defect",
+          "profile-star-normalization"
+        ],
+        "required_output": [
+          "Independent sign, residue, corner, and scope audit",
+          "Counteridentity or scoped certification",
+          "Seven-section report at the assigned path"
+        ]
+      }
+    ],
+    "review_seams": [
+      "hierarchical mask versus disjoint transition partition",
+      "Cauchy--Green rectangle orientation and residue sign",
+      "endpoint Cauchy identity before and after masking",
+      "artificial R1/E1 pole and A=0 arithmetic reconciliation",
+      "v=0 residue on terminal, side, and arithmetic strata",
+      "u=0 residue and joint-corner inclusion--exclusion",
+      "finite v-horizontal connector orientation",
+      "physical-limit scope of endpoint modules",
+      "profiles, floors, stars, q character, and X^(1/4) factor",
+      "zero rho ownership defect and physical L derivative"
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "62d2197f75b5d0ca1a8c2c320573c678328e8d36bbdad8dba5c997d0c97a2d29",
+    "generated_at": "2026-08-13T00:28:46.591198+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

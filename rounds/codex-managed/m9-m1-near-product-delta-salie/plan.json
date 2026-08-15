@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "round_index": 70,
+  "campaign_id": "m9-m1-near-product-delta-salie",
+  "objective": "Prove the signed J^(1/2) fixed-centre product-wavelet bound via an exact delta/Salié or Kuznetsov transform, or isolate its sharp arithmetic obstruction.",
+  "graph_sha256": "a2d39921ce280da226ef0e58a81842d54a2320796af718caf7e7547a88c9a169",
+  "resource_policy": {
+    "analytical_algebraic_minimum_percent": 80,
+    "numerical_experimental_maximum_percent": 20,
+    "literature_policy": "Use primary delta-method, Kloosterman/Salié, Kuznetsov, and short-divisor sources; audit exact hypotheses and conductor powers."
+  },
+  "tasks": [
+    {"id": "delta_salie_transform_attack", "role": "discovery", "status": "complete"},
+    {"id": "blind_delta_method_rederivation", "role": "statement_only_blind_rederiver", "status": "complete_clean"},
+    {"id": "delta_kuznetsov_source_hostile_audit", "role": "hostile_source_reviewer", "status": "complete_with_patch_audit"}
+  ],
+  "exit_gates": [
+    "exact offset coefficient", "finite delta identity", "modulus range",
+    "complete character sums", "zero frequencies and gcds", "dual lengths",
+    "target power ledger", "source applicability", "blind and hostile gates",
+    "conductor decision"
+  ],
+  "status": "complete",
+  "closing_decision": "Promote the scoped delta/Farey short-numerator Kloosterman reduction; retain the signed J^(1/2) target and exponent open.",
+  "resulting_graph_sha256": "3c8b13fe5e3dc872823d8d926f497561ca3fff6b63aa53970e6c7a308739f4b9"
+}

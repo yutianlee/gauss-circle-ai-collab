@@ -1,0 +1,129 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-beta-positive-line-subordinate-alpha-partition",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Exact nonnegative subordinate alpha partition on the beta positive line",
+        "status": "proved_internal",
+        "statement_tex": "Let t=|alpha|/lambda on the returned positive-a, positive-b endpoint-free beta terminal, with 0<=chi_0<=1 and 1-chi_0 identically zero near alpha=0. The preliminary normalized weights tilde_vartheta_k are nonnegative and sum to one but tilde_vartheta_infinity(1)=1/2, so they are not subordinate to the stationary geometry. Choose smooth nonnegative c_0+c_1+c_infinity=1 with supp(c_0) contained in [0,3/4], supp(c_1) compactly contained in (2/3,3/2), c_1=1 on [3/4,4/3], and supp(c_infinity) contained in [4/3,infinity). Choose s_++s_-=1 with its sign transition inside the zero set of 1-chi_0. Then eta_(sigma,k,ell)=(1-chi_0(alpha))s_sigma(alpha)tilde_vartheta_k(t)c_ell(t) is a finite smooth nonnegative one-count refinement summing exactly to 1-chi_0. The grouped inner and outer supports obey |log(|alpha|/lambda)|>=log(4/3), and every unsafe collar belongs to the middle group. This reduction creates no alpha connector because it is inserted on the returned positive line. It does not identify the middle group with the accepted Round-41 cell family and proves no nonsaddle estimate.",
+        "dependencies": [
+          "M9-M1-beta-finite-two-axis-product-Cauchy-Green",
+          "M9-M1-beta-finite-endpoint-free-Plemelj-vector",
+          "M9-M1-beta-mask-endpoint-axial-compatibility",
+          "M9-M1-beta-hierarchical-radial-split-identity",
+          "M9-M1-beta-positive-line-compact-terminal-and-artificial-bound"
+        ],
+        "implies": [
+          "M9-M1-beta-positive-line-alpha-localization-certificate"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-large-alpha-complement-completion/reports/isolated_nonsaddle_rederivation.md",
+            "rounds/codex-managed/m9-m1-beta-large-alpha-complement-completion/reports/clean_nonsaddle_power_attack.md",
+            "rounds/codex-managed/m9-m1-beta-large-alpha-complement-completion/reports/clean_nonsaddle_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-large-alpha-complement-completion/reviews/conductor_partition_adjudication.md",
+            "rounds/codex-managed/m9-m1-beta-large-alpha-complement-completion/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use the grouped middle, inner, and outer antecedents only after separately proving literal Round-41 middle-cell coverage and the global direct nonsaddle signed-section estimate."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-beta-positive-line-alpha-localization-certificate",
+        "statement_tex": "At fixed finite U,V,S, first return the complete sixteen product Cauchy--Green cells to the positive-a, positive-b endpoint-free beta representative and only then split by 1=chi_0(alpha)+(1-chi_0(alpha)). The central terminal and both artificial alpha shares are target-safe. The complement has an exact finite smooth nonnegative one-count subordinate partition by M9-M1-beta-positive-line-subordinate-alpha-partition: the grouped inner and outer sectors have a fixed phase gap and all unsafe collars lie in the middle group. Two interfaces remain open. First, the repaired middle aggregate must be identified literally with the accepted Round-41 saddle/entry/exit cells, or cutoff invariance must be proved. Second, the grouped nonsaddle sectors require a direct positive-line quantitative theorem after signed hard-top Cauchy assembly, controlling value, one x derivative, grouped L variation, moving traces, outer boundary limits, and the untouched raw coefficient/radial-BV ledger. Do not import the saddle stationary numerator or its local lambda^(-2) norm into nonsaddle cells. Retain all floors, stars, character, equality/collision conventions, routed modules, and the external physical factor once.",
+        "dependencies_added": [
+          "M9-M1-beta-positive-line-subordinate-alpha-partition"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-large-alpha-complement-completion/reviews/conductor_partition_adjudication.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-m1-beta-large-alpha-complement-completion/reports/isolated_nonsaddle_rederivation.md",
+            "rounds/codex-managed/m9-m1-beta-large-alpha-complement-completion/reports/clean_nonsaddle_power_attack.md",
+            "rounds/codex-managed/m9-m1-beta-large-alpha-complement-completion/reports/clean_nonsaddle_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-large-alpha-complement-completion/reviews/conductor_nonsaddle_interface.md",
+            "rounds/codex-managed/m9-m1-beta-large-alpha-complement-completion/synthesis.md"
+          ]
+        },
+        "next_action": "Prove a global direct positive-line nonsaddle signed-section/radial-BV theorem, including the x derivative, grouped L variation, moving traces, outer boundary limits, and complete raw coefficient sums; separately expose the Round-41 cutoffs or prove cutoff invariance for the repaired middle group."
+      },
+      {
+        "id": "M9-M1-beta-double-bounded-cell-bound",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-large-alpha-complement-completion/reviews/conductor_partition_adjudication.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-large-alpha-complement-completion/reviews/conductor_nonsaddle_interface.md",
+            "rounds/codex-managed/m9-m1-beta-large-alpha-complement-completion/synthesis.md"
+          ]
+        },
+        "next_action": "The compact analytic core remains closed. Complete the positive-line complement by literal middle-cell coverage and the direct nonsaddle signed-section/radial-BV theorem."
+      },
+      {
+        "id": "M9-M1-beta-transition-connector-reduction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-large-alpha-complement-completion/reviews/conductor_partition_adjudication.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-large-alpha-complement-completion/reviews/conductor_nonsaddle_interface.md",
+            "rounds/codex-managed/m9-m1-beta-large-alpha-complement-completion/synthesis.md"
+          ]
+        },
+        "next_action": "Close the global direct beta nonsaddle theorem and middle-cell cutoff interface, then assemble the beta transition before returning to the separate alpha-bounded branch."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round46-preliminary-normalized-outer-weight-is-nonsaddle",
+        "reason": "At |alpha|/lambda=1 the preliminary normalized outer weight equals 1/2, exactly at Psi'=0. A second subordinate partition is mandatory."
+      },
+      {
+        "id": "Round46-support-compatible-middle-equals-Round41-cells",
+        "reason": "The repaired middle aggregate equals one at the saddle while the preliminary middle weight equals one half, and the accepted Round-41 node exposes neither literal cutoffs nor a cutoff-invariance theorem. Support containment is not antecedent equality."
+      },
+      {
+        "id": "Round46-import-saddle-numerator-into-nonsaddle-ledger",
+        "reason": "A genuinely nonsaddle cell has no stationary main term. Its direct positive-line radial amplitude must be estimated without multiplying by the Round-41 post-stationary numerator or imposing the local saddle lambda^(-2) normalization."
+      },
+      {
+        "id": "Round46-phase-gap-alone-controls-outer-boundary",
+        "reason": "A fixed lower bound for |Psi'| gives only the formal integration-by-parts identity. Vanishing outer boundary terms and summable grouped derivatives require quantitative bounds for the complete after-Plemelj actual symbol and moving traces."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1-beta-large-alpha-transition-package-bound",
+        "reason": "Its accepted saddle/entry/exit theorem remains valid on its stated cells. Round 46 does not alter those estimates or prove that the repaired middle group is literally their antecedent."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "The direct beta nonsaddle theorem, literal middle-cell coverage, complete beta assembly, alpha-bounded branch, and other M1 interfaces remain open."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1 and M9-M2 remain open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "No unconditional Gauss-circle estimate is claimed."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 6,
+    "idea_quality_score": 7,
+    "state_evidence_score": 8,
+    "calibration_score": 10,
+    "reason": "Round 46 closes the exact nonnegative partition subproblem and corrects the nonsaddle normalization, while rigorously isolating the missing global after-Plemelj radial-BV theorem and literal Round-41 cutoff interface."
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-alpha-masked-cosine-comb-reduction",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Masked alpha cosine-comb reduction and zero arithmetic-pole ownership",
+        "status": "proved_internal",
+        "statement_tex": "On the common finite endpoint-free antecedent put A=s-z/2 and B=s+z/2. Against compact smooth Mellin tests, the unmasked inverse Mellin transform of X_zeta(A)zeta(A) is the positive Dirac comb on Re A<0 and the comb minus one, equivalently 2 sum_(h>=1) cos(2 pi hY), on Re A>0. The difference is Res_(A=0) zeta(1-A)=-1; A=1 is removable. For the actual hierarchical alpha mask Theta_alpha=(1-psi(beta))psi(alpha), multiplication in beta is logarithmic-Mellin convolution and every finite displacement retains its Cauchy-Pompeiu or two strip-edge connectors, outside faces, axes, and one corner. Since psi=1 near zero, Theta_alpha and its first and mixed outside-axis connector derivatives vanish at A=0, so alpha owns no new R1 arithmetic residue. Integer cosine coherence and the interior stationary point of sqrt(Xx)-hx/t reject coefficientwise cancellation and uniform radial integration by parts. This is an exact reduction and no-go result, not an estimate of the alpha branch.",
+        "dependencies": [
+          "M9-M1-finite-vector-Hankel-identity",
+          "M9-M1-diagonal-single-transition-normal-form",
+          "M9-M1-partial-functional-equation-transition-reduction",
+          "M9-M1-beta-hierarchical-radial-split-identity",
+          "M9-M1-R1-arithmetic-residue"
+        ],
+        "implies": [
+          "M9-M1-alpha-bounded-zeta-high-transition-bound"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-alpha-bounded-zeta-high-transition/reports/blind_alpha_kernel_rederivation.md",
+            "rounds/codex-managed/m9-m1-alpha-bounded-zeta-high-transition/reports/alpha_trace_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-alpha-bounded-zeta-high-transition/reviews/conductor_distribution_and_residue_adjudication.md",
+            "rounds/codex-managed/m9-m1-alpha-bounded-zeta-high-transition/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-alpha-bounded-zeta-high-transition/reports/alpha_physical_kernel_attack.md",
+            "rounds/codex-managed/m9-m1-alpha-bounded-zeta-high-transition/reviews/conductor_projected_return_and_capacity.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use the exact mask/residue/comb architecture to derive the high-pass log-dilation commutator on the complete common antecedent; do not replace the masked alpha share by the pure comb."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-alpha-bounded-zeta-high-transition-bound",
+        "statement_tex": "Put A=s-z/2 and B=s+z/2. The exact alpha arithmetic factor is X_zeta(A)zeta(A)L(1-B,chi_4), with unsigned high coefficients h^(-A). By M9-M1-alpha-masked-cosine-comb-reduction, its unmasked zeta factor is distributionally a Dirac comb or cosine comb with the A=0 constant mode already owned by the accepted R1 module; the actual hierarchical alpha share is instead a logarithmic-Mellin projection. Prove that the complete projected cosine-Cauchy/GAR-return operator, including the actual mask, A-strip connector, finite u/v outside faces, positive axes, connector axes, mixed connector, one corner, signed top/height limit, radial R1 factor, profiles, floors, stars, and the single external M1 normalization, is O_epsilon(X^epsilon) normalized. The alpha mask owns no fresh A=0 residue. The required signed estimate must overcome absolute height capacity U^(c'-1/2-Re z/2) and normalized lattice capacity X^(1/8+o(1)). Pure-comb substitution, coefficientwise cancellation, uniform radial integration by parts, a side-free shift, and all-absolute estimates are invalid substitutes.",
+        "dependencies_added": [
+          "M9-M1-alpha-masked-cosine-comb-reduction"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-alpha-bounded-zeta-high-transition/reports/blind_alpha_kernel_rederivation.md",
+            "rounds/codex-managed/m9-m1-alpha-bounded-zeta-high-transition/reports/alpha_trace_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-alpha-bounded-zeta-high-transition/reviews/conductor_distribution_and_residue_adjudication.md",
+            "rounds/codex-managed/m9-m1-alpha-bounded-zeta-high-transition/synthesis.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-m1-alpha-bounded-zeta-high-transition/reports/alpha_trace_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-alpha-bounded-zeta-high-transition/reports/alpha_physical_kernel_attack.md",
+            "rounds/codex-managed/m9-m1-alpha-bounded-zeta-high-transition/reviews/conductor_projected_return_and_capacity.md"
+          ]
+        },
+        "next_action": "Freeze the zero-mass high-pass log-dilation commutator induced by 1-psi(beta), with the bounded-alpha factor, all connectors, signed Plemelj operation, and actual profiles retained; prove its BV/difference estimate or exhibit a sharp floor/lattice obstruction."
+      },
+      {
+        "id": "M9-M1-swept-transition-horizontal-operator",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-alpha-bounded-zeta-high-transition/synthesis.md"
+          ]
+        },
+        "next_action": "Close the explicit projected alpha cosine-Cauchy/GAR-return obligation; the beta branch is already closed and must not be reopened."
+      },
+      {
+        "id": "M9-M1-renormalized-radial-boundary-operator",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-alpha-bounded-zeta-high-transition/synthesis.md"
+          ]
+        },
+        "next_action": "Prove the connector-completed projected alpha trace; all radial endpoint, R1 arithmetic, radial-side, and beta-owned interfaces remain closed."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round49-pure-cosine-comb-closes-alpha",
+        "reason": "The hierarchical alpha mask is a nonholomorphic log-Mellin projector and creates nonzero strip/area connectors, outside faces, axes, and a corner. The pure comb is recovered only after unmasking or summing the complete mask partition."
+      },
+      {
+        "id": "Round49-alpha-owns-fresh-A0-R1-residue",
+        "reason": "At A=0 one has beta=0, while psi is identically one near zero. Therefore Theta_alpha and its first and mixed connector derivatives vanish; the residue -1 belongs to the already accepted global R1 routing."
+      },
+      {
+        "id": "Round49-uniform-radial-IBP-after-cosine-inversion",
+        "reason": "The minus radial phase sqrt(Xx)-hx/t has the interior stationary point x=Xt^2/(4h^2) whenever it lies in the radial interval. Uniform radial nonstationarity is false."
+      },
+      {
+        "id": "Round49-all-absolute-alpha-comb-is-target-sized",
+        "reason": "The unmasked lattice has normalized all-absolute capacity X^(1/8+o(1)), and the terminal height integral has capacity U^(c'-1/2-Re z/2) with positive exponent. Neither is target-sized."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1-post-FE-vector-kernel",
+        "reason": "The exact alpha reduction is promoted, but its projected connector-completed signed estimate and outside-height limit remain open."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "Round 49 gives an exact alpha return map and no-go controls, not the M1 estimate."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1 and M9-M2 remain open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "No unconditional Gauss-circle estimate is claimed."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 9,
+    "calibration_score": 10,
+    "reason": "Round 49 converts the opaque alpha trace into an exact masked cosine-comb architecture, fixes A=0 ownership, and rejects three tempting shortcuts. The target estimate is still open, and the stronger actual-profile GAR return has only non-isolated candidate evidence."
+  }
+}

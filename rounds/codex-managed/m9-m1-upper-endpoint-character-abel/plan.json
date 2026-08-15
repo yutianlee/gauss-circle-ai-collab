@@ -1,0 +1,46 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 23,
+    "round_type": "upper_endpoint_character_abel",
+    "campaign_id": "m9-m1-upper-endpoint-character-abel",
+    "title": "Exploit period-four character cancellation in the dephased upper endpoint",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "conductor_policy": {
+      "strategy_owner": "Codex conductor",
+      "subagents_may_start_next_round": false,
+      "monitoring": "Work only with the physical symmetric-profile limit. Freeze one scale and one h before Abel summation in q; retain the top jump, product cutoff, stars, floors, and physical X^(1/4) normalization.",
+      "round_close": "Close after a blind exact rederivation, an analytic BV proof, a hostile endpoint audit, and graph adjudication."
+    },
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "literature_policy": "No source import is needed for the elementary period-four Abel mechanism; search only if the exact discrete-BV step fails."
+    },
+    "target_obligations": [
+      "M9-M1-upper-radial-endpoint-prefix",
+      "M9-M1-endpoint-boundary-operator",
+      "M9-M1-renormalized-radial-boundary-operator"
+    ],
+    "frozen_target": {
+      "sum": "S_end(X)=sum_j sum_(1<=h<=H_j) Phi(h/(H_j+1))h^(-3/4) sum_q chi_4(q)q^(-3/4)[w_j(2sqrt(Xh/q))]^*, with the automatic hq<=N_X support and physical top convention.",
+      "candidate_bound": "For Q_j(h)=Xh/D_j^2, prove the inner q-sum is O(Q_j(h)^(-3/4)) by bounded partial sums of chi_4 and uniform sampled BV. Then sum h and the geometric D_j scales to obtain S_end(X)=O(1).",
+      "success": "A uniform normalized O(log^C X), preferably O(1), upper-endpoint bound with a complete top/product/star/floor audit, or an exact counterexample to the q-BV transfer."
+    },
+    "tasks": [
+      {"id":"blind_upper_endpoint_abel","role":"statement_only_character_abel_deriver","brief":"rounds/codex-managed/m9-m1-upper-endpoint-character-abel/briefs/blind_upper_endpoint_abel.md"},
+      {"id":"fixed_scale_q_bv_proof","role":"analytic_discrete_bv_prover","brief":"rounds/codex-managed/m9-m1-upper-endpoint-character-abel/briefs/fixed_scale_q_bv_proof.md"},
+      {"id":"upper_endpoint_abel_hostile_audit","role":"hostile_endpoint_and_normalization_reviewer","brief":"rounds/codex-managed/m9-m1-upper-endpoint-character-abel/briefs/upper_endpoint_abel_hostile_audit.md"}
+    ],
+    "exit_gates": ["exact physical prefix","fixed-scale q-support","sampled BV bound","period-four Abel estimate","h/scale summation","top/star/product audit","physical normalization","conductor decision"],
+    "promotion_policy": "Promote only after independent agreement on q support, BV variation, the automatic product cutoff, the hard top jump, and the external X^(1/4) factor."
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "eca71399b98ecaf53de8b04594af6046f07d0bbcd0c3683b6b57c51c8bc3cf7b",
+    "generated_at": "2026-08-12T20:45:00+08:00"
+  },
+  "artifact_policy": {"subagents_may_edit_shared_state":false,"computation_evidence_level":"diagnostic_only","coordinator_owns_synthesis_and_state_patch":true}
+}

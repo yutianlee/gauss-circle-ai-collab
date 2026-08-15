@@ -1,0 +1,151 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-residual-upper-conductor-offdiagonal-reduction",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Residual upper-conductor energy reduced to the actual off-diagonal",
+        "status": "proved_internal",
+        "statement_tex": "Let J=sqrt(X), Q=X^(1/5)=J^(2/5), T=J/Q, and J^(32/45)<C<=J. Fix a compatible nonaxial k=rho sigma=O(1), a local class kappa in {1/4,1/2,1}, and an endpoint orientation. For the exact half-open one-count cell set Z_b at b asymp C/T, write c_(b,z)=r+4b ell and a_(b,z)=u_(b,r,k)^(kappa) w_(b,r,nu,k)^(kappa)(ell), retaining the actual inverse or even local unit, both Farey-neighbor transitions, and all finite ownership conventions. Then the exact energy E_(C,k)^(kappa)=sum_b |sum_(z in Z_b) a_(b,z)e(plus-or-minus A_(kappa,b)/c_(b,z))|^2 splits as E=D+H, where D=sum_b sum_z |a_(b,z)|^2 <<_epsilon X^epsilon (C/T)C = X^epsilon C^2/T <= X^epsilon J^2/T, and H is the sum over z not equal to z' with phase plus-or-minus A_(kappa,b)(c_(b,z)^(-1)-c_(b,z')^(-1)). Every fixed nonzero denominator-offset layer has the same target-safe absolute capacity O_epsilon(X^epsilon C^2/T). Therefore the residual nonaxial energy estimate is exactly reduced to the coherent signed bound H <<_epsilon X^epsilon J^2/T. This reduction proves no estimate for H, no new conductor interval, and no control of the separate upper axial band, cone edges, full M9-M1, M9, or the global exponent.",
+        "dependencies": [
+          "M9-M1-product-wavelet-short-numerator-Kloosterman-reduction",
+          "M9-M1-upper-conductor-third-derivative-subrange-bound"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-residual-upper-conductor-hybrid-energy/reports/hybrid_residue_energy_attack.md",
+            "rounds/codex-managed/m9-m1-residual-upper-conductor-hybrid-energy/reports/blind_hybrid_energy_rederivation.md",
+            "rounds/codex-managed/m9-m1-residual-upper-conductor-hybrid-energy/reports/hybrid_spectral_source_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-residual-upper-conductor-hybrid-energy/reviews/conductor_round73_adjudication.md",
+            "rounds/codex-managed/m9-m1-residual-upper-conductor-hybrid-energy/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Prove the complete actual-unit off-diagonal bound H <<_epsilon X^epsilon J^2/T for J^(32/45)<C<=J, including coherent accumulation over all offsets, the upper axial band, parity classes, transitions, gcds, and finite errors; do not replace Farey ownership labels by orthogonality variables."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-upper-conductor-third-derivative-subrange-bound",
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-m1-residual-upper-conductor-hybrid-energy/reports/hybrid_residue_energy_attack.md",
+            "rounds/codex-managed/m9-m1-residual-upper-conductor-hybrid-energy/reports/hybrid_spectral_source_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-residual-upper-conductor-hybrid-energy/reports/blind_hybrid_energy_rederivation.md"
+          ]
+        },
+        "next_action": "Use this lemma only through C=J^(32/45). A fourth-derivative A-process, cellwise Bourgain exponent-pair input, and Hessian nondegeneracy do not extend the range after all actual transition pieces are retained."
+      },
+      {
+        "id": "M9-M1-product-wavelet-short-numerator-Kloosterman-reduction",
+        "dependencies_added": [
+          "M9-M1-residual-upper-conductor-offdiagonal-reduction"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-residual-upper-conductor-hybrid-energy/reviews/conductor_round73_adjudication.md",
+            "rounds/codex-managed/m9-m1-residual-upper-conductor-hybrid-energy/synthesis.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-m1-residual-upper-conductor-hybrid-energy/reports/hybrid_spectral_source_hostile_audit.md"
+          ]
+        },
+        "next_action": "For J^(32/45)<C<=J, attack the exact off-diagonal H of M9-M1-residual-upper-conductor-offdiagonal-reduction. The diagonal and each fixed offset are safe, but their coherent accumulation and the upper axes remain open."
+      },
+      {
+        "id": "M9-M1-upper-conductor-reciprocal-square-Bprocess-self-return",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-residual-upper-conductor-hybrid-energy/reports/hybrid_residue_energy_attack.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-m1-residual-upper-conductor-hybrid-energy/reports/hybrid_spectral_source_hostile_audit.md"
+          ]
+        },
+        "next_action": "Do not count phase-matched Kuznetsov followed by switched-cusp Voronoi as an independent saving: it localizes at m=X+O(T) and preserves the X^(1/20) deficit. A viable spectral proof would require an actual-symbol level-four short coefficient theorem of size X^(1/4+epsilon), plus transition, even-cusp, Eisenstein, and axial control."
+      },
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "dependencies_added": [
+          "M9-M1-residual-upper-conductor-offdiagonal-reduction"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-residual-upper-conductor-hybrid-energy/synthesis.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-m1-residual-upper-conductor-hybrid-energy/reports/hybrid_spectral_source_hostile_audit.md"
+          ]
+        },
+        "next_action": "The fixed-interior residual is now the exact actual-unit off-diagonal H for J^(32/45)<C<=J, together with the upper axes. Prove that correlation, then reconcile cone edges and the remaining radial sectors; no global exponent follows from the reduction alone."
+      },
+      {
+        "id": "M9-M1-direct-product-wavelet-self-return",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-residual-upper-conductor-hybrid-energy/synthesis.md"
+          ]
+        },
+        "next_action": "Within J^(32/45)<C<=J, use the exact off-diagonal formulation rather than another coefficient-preserving Poisson/B-process loop. The phase-matched spectral model returns to the same length-T short-coefficient deficit."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round73-fourth-derivative-leading-term-extends-range",
+        "reason": "After all O(Q) exact Farey transition pieces are retained, the fourth-derivative row bound contains C^(3/4)Q^(3/7). This secondary term would require C<=J^(116/175)<J^(32/45), so the attractive leading term C Q^(-5/28) cannot extend the accepted range."
+      },
+      {
+        "id": "Round73-Hessian-nondegeneracy-closes-lattice-sum",
+        "reason": "The actual continuous Hessian is nondegenerate because k=O(1), but absolute summation of the two-dimensional Poisson aliases is non-saving and the arithmetic local unit cannot be discarded. Continuous rank alone proves no lattice cancellation."
+      },
+      {
+        "id": "Round73-Farey-numerator-orthogonality",
+        "reason": "Farey-neighbor numerator labels are disjoint one-count ownership labels, not orthogonal variables. Even optimistic independent square-root gains over residue and b variables leave a power deficit at C=J."
+      },
+      {
+        "id": "Round73-cellwise-Bourgain-implies-global-gluing",
+        "reason": "Bourgain's exponent pair applies at ambient scale T to each BV cell, but the accepted symbol is split into O(Q) Farey cells. The progression-wide gluing variation bound needed for a C Q^(-5/24) row is unproved."
+      },
+      {
+        "id": "Round73-phase-matched-spectral-gain-multiplies-third-derivative",
+        "reason": "Level-four Voronoi after the phase-matched Kuznetsov model localizes at m=X+O(T) and reproduces the same X^(1/20) short-sum deficit. It is a deficit-preserving return, not a second independent gain."
+      },
+      {
+        "id": "Round73-current-short-Hecke-theorems-close",
+        "reason": "No audited primary theorem gives the required pointwise level-four moving short-coefficient estimate of length T and size X^(1/4+epsilon), uniformly over the relevant spectral family and with the actual transition symbol; Eisenstein, even-cusp, and axial terms also remain."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "The residual upper-conductor off-diagonal, upper axial band, cone edges, and remaining radial sectors are open."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Round 73 concerns only the M1 fixed-interior residual conductor and proves no M2 estimate."
+      },
+      {
+        "id": "M9",
+        "reason": "Both M9-M1 and M9-M2 remain open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The off-diagonal reduction narrows an M1 obstruction but supplies no improvement to the global exponent."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 73 proves no new conductor interval, but it exactly removes the target-safe diagonal and fixed-offset layers, isolates the coherent actual-unit off-diagonal as the smallest residual nonaxial target, and rigorously rules out several tempting fourth-derivative, Hessian, exponent-pair, and phase-matched spectral shortcuts."
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-product-wavelet-affine-Abel-reduction",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Affine Abel reduction and unmatched character-hyperbola crossings",
+        "status": "proved_internal",
+        "statement_tex": "Let A_(X,Xi)(n)=sum_(j|n)chi_4(j)Xi(j/sqrt(X)) for n>=1 and zero for n<=0, c_X=sum_j chi_4(j)Xi(j/sqrt(X))/j, n_0=floor(X), and define the all-integer D by D(n_0)=0 and D(n)-D(n-1)=A_(X,Xi)(n)-c_X. For W_n=K((n-X)/(2T)), the sampled zero mode gives sum_n A(n)W_n=sum_n D(n)(W_n-W_(n+1)). Moreover c_X<<_Xi X^(-1/2). For integral 0<v<inf(supp Xi)sqrt(X), period-four pairing gives D(n_0+v)=sum_r Xi((4r+1)/sqrt(X))(C_(4r+1)(v)-C_(4r+3)(v))+O_Xi(1+v/sqrt(X)), where C_j(v) indicates that (n_0,n_0+v] contains a multiple of j. The survivor has coefficients 0,+1,-1. Its X^(1/4+epsilon) signed bound is open; at nu=2/5 the unsaved factor is X^(1/20)=H/L.",
+        "dependencies": ["M9-M1-reciprocal-product-wavelet-reduction"],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-product-wavelet-local-discrepancy/reports/conductor_blind_local_discrepancy.md",
+            "rounds/codex-managed/m9-m1-product-wavelet-local-discrepancy/reports/conductor_character_hyperbola_analysis.md",
+            "rounds/codex-managed/m9-m1-product-wavelet-local-discrepancy/reports/short_hyperbola_source_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-product-wavelet-local-discrepancy/reviews/conductor_local_discrepancy_adjudication.md",
+            "rounds/codex-managed/m9-m1-product-wavelet-local-discrepancy/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Prove the signed unmatched-crossing correlation, preferably in the weaker exact wavelet-weighted norm; elementary period-four pairing and wavelet Abel summation self-return."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-reciprocal-product-wavelet-reduction",
+        "implies_added": ["M9-M1-product-wavelet-affine-Abel-reduction"],
+        "evidence_added": {
+          "inconclusive": ["rounds/codex-managed/m9-m1-product-wavelet-local-discrepancy/synthesis.md"]
+        },
+        "next_action": "The exact survivor is the signed symmetric difference of period-four crossing rows, or its weaker wavelet-weighted norm. Prove its H/L saving, then complete the sharp saddle and omitted cone modules."
+      },
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "dependencies_added": ["M9-M1-product-wavelet-affine-Abel-reduction"],
+        "evidence_added": {
+          "inconclusive": ["rounds/codex-managed/m9-m1-product-wavelet-local-discrepancy/synthesis.md"],
+          "negative": ["rounds/codex-managed/m9-m1-product-wavelet-local-discrepancy/reports/short_hyperbola_source_hostile_audit.md"]
+        },
+        "next_action": "Prove the wavelet-weighted unmatched period-four crossing estimate gaining H/L. This is weaker than pointwise LCD but still leaves the sharp saddle and full-cone completion."
+      },
+      {
+        "id": "M9-M1-shifted-divisor-correlation-PSC",
+        "evidence_added": {
+          "inconclusive": ["rounds/codex-managed/m9-m1-product-wavelet-local-discrepancy/synthesis.md"]
+        },
+        "next_action": "The fixed-interior product-wavelet test case reduces exactly to unmatched period-four crossings. A proof must gain H/L in their signed wavelet-weighted correlation; this still does not prove full PSC."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round65-period-four-pairing-closes-LCD",
+        "reason": "Pairing j=4r+1 with j+2=4r+3 cancels matched crossings but leaves their signed symmetric difference with coefficients 0,+1,-1 and full T capacity before new cancellation."
+      },
+      {
+        "id": "Round65-wavelet-Abel-averaging-supplies-H-over-L",
+        "reason": "Substitution of the exact crossing discrepancy into the wavelet difference sum reconstructs the original product-wavelet functional; no saving follows without a signed arithmetic estimate."
+      },
+      {
+        "id": "Round65-known-short-divisor-theorem-proves-fixed-center-LCD",
+        "reason": "Audited theorems use complete coefficients, average or almost-all centers, or modular-inverse structures; none matches the prescribed center and moving character-truncated divisor leg."
+      }
+    ],
+    "no_change": [
+      {"id": "M9-M1", "reason": "The signed crossing estimate and full reciprocal cone remain open."},
+      {"id": "M9", "reason": "M9-M1 and M9-M2 remain open."},
+      {"id": "GC-target", "reason": "Round 65 proves a reduction and no-go, not a radial estimate or exponent."}
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 6,
+    "idea_quality_score": 7,
+    "state_evidence_score": 9,
+    "calibration_score": 10,
+    "reason": "Round 65 isolates the exact unmatched period-four crossing functional and corrects the all-integer Abel seam, but proves no H/L saving or exponent."
+  }
+}

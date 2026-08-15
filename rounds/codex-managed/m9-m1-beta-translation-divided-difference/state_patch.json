@@ -1,0 +1,254 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-beta-fixed-height-translation-divided-difference-identity",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Fixed-physical-height translation divided-difference identity",
+        "status": "proved_internal",
+        "statement_tex": "Put y=L-nu and F(L,y)=H(L,L-y). At fixed physical nu, partial_L H=F_L+F_y and (partial_L+partial_nu)H(L,L)=F_L(L,0). Hence E_H=[partial_L H(L,nu)-(partial_L+partial_nu)H(L,L)]/y-[H(L,nu)-H(L,L)]/y^2 equals int_0^1 F_Ly(L,ty)dt+int_0^1 t F_yy(L,ty)dt, with continuous diagonal value F_Ly(L,0)+F_yy(L,0)/2. The identity is signed: its two integrals may not be majorized separately on a long translated-height segment.",
+        "dependencies": [
+          "M9-M1-beta-cellwise-phase-removed-symbol-reduction"
+        ],
+        "implies": [
+          "M9-M1-beta-axial-subtracted-terminal-symbol-bound"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-translation-divided-difference/reports/blind_translation_difference.md",
+            "rounds/codex-managed/m9-m1-beta-translation-divided-difference/reports/complete_translation_difference_attack.md",
+            "rounds/codex-managed/m9-m1-beta-translation-divided-difference/reports/translation_difference_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-translation-divided-difference/reviews/conductor_divided_difference_identity.md",
+            "rounds/codex-managed/m9-m1-beta-translation-divided-difference/reviews/conductor_hybrid_adjudication.md",
+            "rounds/codex-managed/m9-m1-beta-translation-divided-difference/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use the identity only in its recombined endpoint-divided-difference form when proving the complete off-diagonal and smooth hybrid symbol bound."
+      },
+      {
+        "id": "M9-M1-beta-signed-diagonal-Cauchy-section-BV",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Signed diagonal radial Cauchy section and separated-saddle BV",
+        "status": "proved_internal",
+        "statement_tex": "For the singular hard-top regularizer put A(L)=-1-b/2-i(L+beta), D(L,nu)=A(L)+i(L-nu)/2, K_C(L,nu)=-iH(L,L)/(2A(L)D(L,nu)), and I_(U,V)(L)=[-V,V] intersect [L-U,L+U]=[p(L),q(L)]. On the continuous left-half-plane logarithm, C_(U,V)[H](L)=int_p^q K_C(L,nu)dnu=[H(L,L)/A(L)]{Log D(L,q)-Log D(L,p)}. The unintegrated K_C has a nonzero 1/nu tail and is not in L1(dnu). For the actual separated profile H(L,nu)=f_b(nu) on either signed saddle |L+beta| asymptotic to lambda, the signed section has sup plus L-variation O_b(lambda^(-4)log(2+lambda)), uniformly in U,V; upper moving physical faces have positive sign and lower moving faces negative sign. Apply the incomplete-Fresnel/Morse operator only after this section is formed. Under symmetric exhaustion C_(T,T) tends to i pi f_b(L)/A(L).",
+        "dependencies": [
+          "M9-M1-beta-finite-section-Plemelj-decomposition",
+          "M9-M1-beta-R1-face-log-q4-bound",
+          "M9-M1-beta-two-saddle-Fresnel-normal-form"
+        ],
+        "implies": [
+          "M9-M1-beta-separated-R1-regular-symbol-BV",
+          "M9-M1-beta-axial-subtracted-terminal-symbol-bound"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-translation-divided-difference/reports/blind_translation_difference.md",
+            "rounds/codex-managed/m9-m1-beta-translation-divided-difference/reports/complete_translation_difference_attack.md",
+            "rounds/codex-managed/m9-m1-beta-translation-divided-difference/reports/translation_difference_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-translation-divided-difference/reviews/conductor_cauchy_primitive_scope.md",
+            "rounds/codex-managed/m9-m1-beta-translation-divided-difference/reviews/conductor_hybrid_adjudication.md",
+            "rounds/codex-managed/m9-m1-beta-translation-divided-difference/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Retain this signed module with the explicit face log under identical endpoints, logarithm branch, stars, and collision ownership; do not put K_C under an absolute height norm."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-beta-cellwise-phase-removed-symbol-reduction",
+        "status": "proved_internal",
+        "statement_tex": "On c'=5/4 freeze one actual terminal cell (j,h,q,x,beta,sign), with lambda=pi q sqrt(Xx)/D_j. The summed limiting vector has no single lambda. Split the singular u^(-1) hard-top share from every smooth ordinary-mu share. For the singular share put A(L)=-1-b/2-i(L+beta), D(L,nu)=A(L)+i(L-nu)/2, and R_A[H]=K_C+K_Delta with K_C=-iH(L,L)/(2AD) and K_Delta=[H(L,nu)-H(L,L)]/[(L-nu)D]. K_C is a signed finite-section Cauchy module and is not an absolute L1(dnu) symbol. At fixed physical nu the derivative of R_A is the exact Round-39 six-term formula; its second translation coefficient obeys M9-M1-beta-fixed-height-translation-divided-difference-identity. Smooth shares retain ordinary mu integration. Two contour measures remain after the top distribution. Remove the full stationary phase before differentiating, keep chi_4(q), the stationary numerator (D_j/q)lambda, real coefficient monomial, radial integration, floors, stars, contour factors, and external X^(1/4) outside, and apply exact Morse localization only after the signed Cauchy section has been formed. This is a normalization reduction, not the complete hybrid estimate.",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-translation-divided-difference/reviews/conductor_hybrid_adjudication.md",
+            "rounds/codex-managed/m9-m1-beta-translation-divided-difference/synthesis.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-m1-beta-translation-divided-difference/reports/translation_difference_hostile_audit.md"
+          ]
+        },
+        "next_action": "Use this reduction with the signed diagonal section first, then prove the cancellation-preserving off-diagonal and smooth mixed norm cellwise."
+      },
+      {
+        "id": "M9-M1-beta-separated-R1-regular-symbol-BV",
+        "status": "proved_internal",
+        "statement_tex": "On either separated signed post-endpoint R1 saddle with |alpha| asymptotic to lambda, bounded beta, fixed b>0, and positive separation from rho=0, v=0, and finite transition endpoints, split the exact kernel into K_C=-i f_b(L)/[2A(A+i(L-nu)/2)] and K_Delta=[f_b(nu)-f_b(L)]/[(L-nu)(A+i(L-nu)/2)]. The prior claim that K_C+K_Delta and its fixed-nu derivative are pointwise dominated by one integrable physical-height weight is false because K_C has a 1/nu tail. Instead form K_C's exact signed finite section first; its sup plus BV is O_b(lambda^(-4)log(2+lambda)). K_Delta has the required absolute value, fixed-height derivative, and moving-trace mixed norm. Their combined finite-section amplitude has sup plus BV O_b(lambda^(-2)), uniformly on both separated saddle cells. Multiplication by the accepted numerator (D_j/q)lambda gives D_j/(q lambda)=D_j/(q^2 theta_j(x)). This excludes artificial and axial seams, connectors, radial sides, joint height exhaustion, and complete sums.",
+        "dependencies_added": [
+          "M9-M1-beta-fixed-height-translation-divided-difference-identity",
+          "M9-M1-beta-signed-diagonal-Cauchy-section-BV"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-translation-divided-difference/reports/complete_translation_difference_attack.md",
+            "rounds/codex-managed/m9-m1-beta-translation-divided-difference/reports/translation_difference_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-translation-divided-difference/reviews/conductor_hybrid_adjudication.md",
+            "rounds/codex-managed/m9-m1-beta-translation-divided-difference/synthesis.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-m1-beta-translation-divided-difference/reports/blind_translation_difference.md",
+            "rounds/codex-managed/m9-m1-beta-translation-divided-difference/reports/translation_difference_hostile_audit.md"
+          ]
+        },
+        "next_action": "Use only the hybrid finite-section conclusion and local q^(-2) scale; never invoke an integrable majorant for the unintegrated full separated kernel."
+      },
+      {
+        "id": "M9-M1-beta-physical-height-finite-section-BV",
+        "status": "proved_internal",
+        "statement_tex": "Let I_(U,V)(L)=[-V,V] intersect [L-U,L+U] on a signed cell of length O(lambda). The direct absolute mixed-norm Leibniz lemma remains valid for an integrable kernel K. More generally, if a singular kernel is first decomposed as a signed section C_(U,V)(L) plus an absolutely controlled remainder K_abs, if ||C||_infinity+Var(C)+R_Morse(C)<=M lambda^(-2), and if K_abs satisfies the direct mixed value, fixed-height derivative, moving-trace, and exact Morse norm <=M lambda^(-2), then their total finite-section/Morse amplitude is O(M lambda^(-2)). The signed Cauchy section must be formed before absolute values and before Morse localization.",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-translation-divided-difference/reports/translation_difference_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-translation-divided-difference/reviews/conductor_hybrid_adjudication.md",
+            "rounds/codex-managed/m9-m1-beta-translation-divided-difference/synthesis.md"
+          ]
+        },
+        "next_action": "Apply the hybrid form to the complete cell only after its off-diagonal, smooth, connector, moving-trace, and normalized Morse remainder bounds are proved."
+      },
+      {
+        "id": "M9-M1-beta-axial-subtracted-terminal-symbol-bound",
+        "status": "open",
+        "title": "Cellwise phase-removed axial-subtracted beta hybrid symbol bound",
+        "statement_tex": "At c'=5/4, after the proved endpoint, side, arithmetic, artificial, axial, collision, connector, corner, and height-limit ownership operations, freeze one actual cell (j,h,q,x,beta,sign) and lambda=pi q sqrt(Xx)/D_j. Use the phase-removed normalization and keep the character, stationary numerator (D_j/q)lambda, real coefficient monomial, contour constants, radial integration, floors, stars, and external X^(1/4) outside. For the singular hard-top share split R_A[H]=K_C+K_Delta. First prove uniformly that the signed section C_(U,V)[H]=int_(I_(U,V))K_C dnu, with the same face-log branch and ownership, has sup plus L-variation plus exact post-section Morse remainder O_epsilon(X^epsilon lambda^(-2)). Then prove the direct absolute mixed value, fixed-height derivative, moving-trace, and exact normalized Morse norm O_epsilon(X^epsilon lambda^(-2)) for K_Delta and every smooth ordinary-mu share. The fixed-height translation coefficient is governed by M9-M1-beta-fixed-height-translation-divided-difference-identity and must be recombined before absolute values. Bounded-alpha and double-bounded assembly remain separate.",
+        "dependencies_added": [
+          "M9-M1-beta-fixed-height-translation-divided-difference-identity",
+          "M9-M1-beta-signed-diagonal-Cauchy-section-BV"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-translation-divided-difference/reviews/conductor_hybrid_adjudication.md",
+            "rounds/codex-managed/m9-m1-beta-translation-divided-difference/synthesis.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-m1-beta-translation-divided-difference/reports/translation_difference_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-translation-divided-difference/reports/blind_translation_difference.md",
+            "rounds/codex-managed/m9-m1-beta-translation-divided-difference/reports/complete_translation_difference_attack.md"
+          ]
+        },
+        "next_action": "Write the complete off-diagonal and smooth one-count product cell, evaluate its long translation as endpoint divided differences, and prove its moving-trace and exact Morse mixed norm without separately absolutizing F_Ly and F_yy."
+      },
+      {
+        "id": "M9-M1-beta-cellwise-symbol-sum-reduction",
+        "status": "proved_internal",
+        "statement_tex": "Let r=5/4-(a+b)/2 in (1,2). Assume on every phase-removed signed saddle/entry/exit cell the hybrid terminal bound: the signed diagonal Cauchy section is formed first and has target sup/BV/Morse size, while the off-diagonal and smooth shares have target absolute mixed size, together O_epsilon(X^epsilon lambda^(-2)). After multiplication by the exact stationary numerator, the retained coefficient before the external X^(1/4) factor is |chi_4(q)|h^(-r)q^(-2)D_j^(2-r)X^(r/2-1/2+b/4)x^(-r/2-b/2-5/4). Radial integration contributes min(1,[sqrt(X)|2 minus-or-plus q/D_j|]^(-1)); its q-sum is O(X^(-1/2)log(2X)). The formal resonance q=2D_j is even and vanishes under chi_4. The h-sum and all actual dyadic scales are polylogarithmic internally, so restoring the external normalization gives O_epsilon(X^(1/4+epsilon)) for the complete large-alpha saddle package. This remains conditional and excludes bounded-alpha, double-bounded, and complete beta-transition assembly.",
+        "dependencies_added": [
+          "M9-M1-beta-fixed-height-translation-divided-difference-identity",
+          "M9-M1-beta-signed-diagonal-Cauchy-section-BV"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-translation-divided-difference/reviews/conductor_hybrid_adjudication.md",
+            "rounds/codex-managed/m9-m1-beta-translation-divided-difference/synthesis.md"
+          ]
+        },
+        "next_action": "Invoke this implication only after the complete hybrid cell norm is proved; form the diagonal Cauchy section before the stationary/Morse and arithmetic sum."
+      },
+      {
+        "id": "M9-M1-beta-complete-physical-height-symbol-bound",
+        "status": "open",
+        "statement_tex": "The all-strata pointwise and all-absolute formulations are rejected. Boundary, side, endpoint, arithmetic, artificial, axial, collision, connector, corner, and global-height interfaces are routed through their proved modules. The remaining quantitative terminal interface is the hybrid cellwise obligation M9-M1-beta-axial-subtracted-terminal-symbol-bound: signed diagonal Cauchy section first, absolute off-diagonal and smooth mixed norm second, then the proved hybrid finite-section BV lemma and conditional cellwise symbol sum. Bounded-alpha, double-bounded, and complete beta-transition assembly remain separate obligations.",
+        "dependencies_added": [
+          "M9-M1-beta-fixed-height-translation-divided-difference-identity",
+          "M9-M1-beta-signed-diagonal-Cauchy-section-BV"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-translation-divided-difference/synthesis.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-m1-beta-translation-divided-difference/reports/translation_difference_hostile_audit.md"
+          ]
+        },
+        "next_action": "Prove the complete hybrid off-diagonal and smooth cell bound, then compose it with the signed diagonal and conditional summation modules."
+      },
+      {
+        "id": "M9-M1-beta-regular-finite-part-symbol-BV",
+        "status": "open",
+        "statement_tex": "After the explicit delta jumps and q^(-4) face logs are assigned, the separated fixed-b R1 finite-section BV and local q^(-2) conclusion are proved only in the corrected hybrid sense: its diagonal radial Cauchy term is integrated signed first, and its off-diagonal remainder is controlled absolutely. For the complete regular beta finite part, use the boundary-first and axial ownership modules, the cellwise phase-removed hybrid terminal obligation, the hybrid finite-section BV lemma, and the conditional cellwise symbol sum. Singular hard-top and smooth ordinary-mu shares remain distinct. Bounded-alpha and double-bounded assembly remain open.",
+        "dependencies_added": [
+          "M9-M1-beta-fixed-height-translation-divided-difference-identity",
+          "M9-M1-beta-signed-diagonal-Cauchy-section-BV"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-translation-divided-difference/synthesis.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-m1-beta-translation-divided-difference/reports/translation_difference_hostile_audit.md"
+          ]
+        },
+        "next_action": "Prove the complete cancellation-preserving off-diagonal/smooth hybrid norm and Morse traces; do not use the retracted full-kernel integrable weight."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round40-fixed-y-derivative-substituted-for-fixed-physical-height",
+        "reason": "For y=L-nu, fixed physical nu gives partial_L H=F_L+F_y. Omitting F_y creates a spurious -F_y(L,0)/y term and fails the quadratic Taylor control."
+      },
+      {
+        "id": "Round40-complete-regularizer-has-absolute-height-mixed-norm",
+        "reason": "The exact diagonal term K_C=-iH(L,L)/(2AD) equals H(L,L)/(A nu)+O(nu^(-2)); its absolute physical-height mass diverges logarithmically whenever the diagonal coefficient is nonzero."
+      },
+      {
+        "id": "Round40-separated-R1-full-integrable-height-majorant",
+        "reason": "The actual separated R1 kernel contains K_C with a nonzero 1/nu tail. Its finite-section BV conclusion survives only after K_C is integrated as a signed logarithmic section and the off-diagonal remainder is treated separately."
+      },
+      {
+        "id": "Round40-termwise-absolute-FLy-Fyy-proof",
+        "reason": "On the actual translated height profile, the two terms in the exact fixed-height identity are individually of order lambda^(-1) on a long segment while their endpoint-divided-difference recombination can be O(lambda^(-5)). Separate absolute majorization destroys the required cancellation."
+      },
+      {
+        "id": "Round40-pointwise-Morse-before-diagonal-Cauchy-section",
+        "reason": "Both the saddle value and normalized varying-amplitude Morse remainder inherit the nonintegrable 1/nu coefficient. The signed physical-height section must be formed first, after which the resulting scalar BV amplitude is target-safe under Morse localization."
+      },
+      {
+        "id": "Round40-singular-G-of-L-times-p-of-nu-factorization-covers-all-strata",
+        "reason": "That factorization is valid only for a narrow frozen singular share. Smooth spatial profiles depend on L-nu, and connector, moving-restriction, common-ownership, and exact Morse strata require separate one-count formulas before the same quantitative conclusion can be asserted."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1-beta-log-amplitude-two-saddle-kernel",
+        "reason": "The signed diagonal section is now controlled, but the complete off-diagonal, smooth, connector, moving-trace, and exact Morse hybrid norm remains open."
+      },
+      {
+        "id": "M9-M1-swept-transition-horizontal-operator",
+        "reason": "Round 40 treats only the beta large-alpha terminal branch and does not close the alpha-bounded branch or full mixed transition operator."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "The complete hybrid beta terminal norm, bounded-alpha and double-bounded branches, and other M1 corridors remain open."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Round 40 concerns the transformed M1 beta branch only."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1 and M9-M2 remain open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "No unconditional Gauss-circle estimate is claimed."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 8,
+    "idea_quality_score": 9,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 40 proves the exact fixed-height translation identity, finds an actual counterexample to the all-absolute symbol formulation, and replaces it by a rigorously controlled signed diagonal Cauchy module plus a sharply isolated off-diagonal hybrid target."
+  }
+}

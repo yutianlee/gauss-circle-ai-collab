@@ -1,0 +1,179 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 75,
+    "round_type": "m9_m2_top_endpoint_near_product_energy",
+    "campaign_id": "m9-m2-top-endpoint-near-product-energy",
+    "title": "Validate and attack the character-preserving top-M2 near-product energy",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "b5aa6150a62e1ecc21045c21bcb4af9ede4ab164545b43a93756e53fcc402bd2",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 80,
+      "numerical_experimental_maximum_percent": 20,
+      "literature_policy": "Derive the exact moving-amplitude reciprocal energy before auditing primary large-sieve, short-divisor, dispersion, or spectral theorems."
+    },
+    "target_obligations": [
+      "M9-M2-top-endpoint-signed-cone",
+      "M9-M2-sign-preserving-poisson-voronoi-route",
+      "M9-M2",
+      "M9"
+    ],
+    "frozen_target": {
+      "question": "Does the exact top-M2 cone admit the character-preserving near-product identity and diagonal-scale reciprocal energy in (75.7)-(75.16), and can its actual-symbol off-diagonal be bounded?",
+      "reference_formula": "sum_(|k|<<L X^epsilon)|sum_(tau,j odd)chi4(j)b_(tau,j,k)e(-kX/j)|^2 << L sqrt(X) X^epsilon.",
+      "quantities": [
+        "J=sqrt(X), 1<=L<=H<=J^(1/2)",
+        "exact B=ceil(sqrt(L)) boundary collars and O(log L) layers",
+        "actual l-dependent radial wavelet",
+        "quarter-shift character transfer and e(1/8) constant",
+        "Parseval diagonal L J and signed reciprocal off-diagonal",
+        "character-leg self-return to the original top M2 block"
+      ]
+    },
+    "completion_criteria": [
+      "Validate or correct every constant, collar, moving symbol, alias error, and Poisson measure in (75.7)-(75.16).",
+      "Complete a strict statement-only rederivation and an independent hostile seam/source audit.",
+      "Prove the reciprocal energy, a strict polynomial L-subrange, or isolate a smaller exact actual-symbol survivor.",
+      "Audit perfect powers, exact products, adversarial coefficients, and the high-character self-return.",
+      "Do not promote full M2, M9, or the exponent from a reduction alone."
+    ],
+    "controls": [
+      "external_normalization",
+      "hard_and_flat_boundary_collars",
+      "actual_qX_and_layer_ownership",
+      "quarter_shift_and_Gaussian_constant",
+      "moving_l_symbol",
+      "alias_and_layer_errors",
+      "Poisson_measure",
+      "Parseval_diagonal",
+      "signed_offdiagonal",
+      "character_self_return",
+      "perfect_powers_and_adversarial_weights",
+      "source_applicability",
+      "downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "blind_near_product_energy_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "assigned",
+        "target": "Independently validate or refute the complete moving-amplitude near-product/energy identity.",
+        "context_files": [
+          "rounds/codex-managed/m9-m2-top-endpoint-near-product-energy/derivation_packet.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-near-product-energy/briefs/blind_near_product_energy_rederivation.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "all Round-74 and sibling Round-75 reports",
+          "all source cards and literature"
+        ],
+        "required_controls": [
+          "hard_and_flat_boundary_collars",
+          "quarter_shift_and_Gaussian_constant",
+          "moving_l_symbol",
+          "alias_and_layer_errors",
+          "Poisson_measure",
+          "Parseval_diagonal",
+          "signed_offdiagonal",
+          "character_self_return",
+          "perfect_powers_and_adversarial_weights",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "rounds/codex-managed/m9-m2-top-endpoint-near-product-energy/reports/blind_near_product_energy_rederivation.md"
+        ]
+      },
+      {
+        "id": "reciprocal_energy_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "assigned",
+        "target": "Repair the exact interface if needed and prove the actual-symbol reciprocal energy, a strict L-subrange, or a smaller survivor.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m2-top-endpoint-near-product-energy/derivation_packet.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-near-product-energy/briefs/reciprocal_energy_attack.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-affine-cone/synthesis.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-affine-cone/reports/m2_affine_cone_attack.md",
+          "rounds/codex-managed/m9-top-endpoint-transform/synthesis.md"
+        ],
+        "required_controls": [
+          "external_normalization",
+          "hard_and_flat_boundary_collars",
+          "actual_qX_and_layer_ownership",
+          "quarter_shift_and_Gaussian_constant",
+          "moving_l_symbol",
+          "alias_and_layer_errors",
+          "Poisson_measure",
+          "Parseval_diagonal",
+          "signed_offdiagonal",
+          "character_self_return",
+          "perfect_powers_and_adversarial_weights",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "rounds/codex-managed/m9-m2-top-endpoint-near-product-energy/reports/reciprocal_energy_attack.md"
+        ]
+      },
+      {
+        "id": "near_product_energy_hostile_audit",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "status": "assigned",
+        "target": "Hostile-audit the moving-amplitude reduction, reciprocal energy, self-return, and exact applicability of primary sources.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m2-top-endpoint-near-product-energy/derivation_packet.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-near-product-energy/briefs/near_product_energy_hostile_audit.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-affine-cone/synthesis.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-affine-cone/reports/m2_cone_source_hostile_audit.md",
+          "rounds/codex-managed/m9-top-endpoint-transform/synthesis.md"
+        ],
+        "required_controls": [
+          "external_normalization",
+          "hard_and_flat_boundary_collars",
+          "actual_qX_and_layer_ownership",
+          "quarter_shift_and_Gaussian_constant",
+          "moving_l_symbol",
+          "alias_and_layer_errors",
+          "Poisson_measure",
+          "Parseval_diagonal",
+          "signed_offdiagonal",
+          "character_self_return",
+          "perfect_powers_and_adversarial_weights",
+          "source_applicability",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "rounds/codex-managed/m9-m2-top-endpoint-near-product-energy/reports/near_product_energy_hostile_audit.md"
+        ]
+      }
+    ],
+    "review_seams": [
+      "boundary collar and layer ownership",
+      "quarter-shift stationary normalization",
+      "moving radial symbol and Poisson measure",
+      "Parseval diagonal and reciprocal off-diagonal",
+      "character-comb self-return",
+      "source hypotheses and downstream implication"
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "b5aa6150a62e1ecc21045c21bcb4af9ede4ab164545b43a93756e53fcc402bd2",
+    "generated_at": "2026-08-14T14:27:31.821516+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

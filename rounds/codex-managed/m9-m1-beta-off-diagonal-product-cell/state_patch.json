@@ -1,0 +1,259 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-beta-off-diagonal-smooth-product-cell-bound",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Complete routed off-diagonal and smooth beta product-cell bound",
+        "status": "proved_internal",
+        "statement_tex": "On c'=5/4 freeze one post-routing signed large-alpha cell with lambda=pi q sqrt(Xx)/D_j and |L+beta| asymptotic to lambda. After removing the canonical phase Psi'(L)=log(|L+beta|/lambda) and lambda^kappa, the exact height profile is p(nu)=exp(i gamma nu)phi_hat(b+i nu), gamma=log(2sqrt(X)(H_j+1)/(D_j sqrt(x))), and the normalized gamma symbol has partial_L^m G=O_epsilon(X^epsilon lambda^(-m)) for m<=2. For K_Delta=G[p(nu)-p(L)]/[(L-nu)D] and every smooth K_W=Gp(nu)W(L-nu)/D, D=-1-b/2-i((L+nu)/2+beta), the direct value, integrated fixed-physical-height derivative, moving-trace, and exact normalized Morse remainder norm is O_epsilon(X^epsilon lambda^(-2)), uniformly on both saddle signs and through entry or exit. The derivative is formed as the recombined endpoint second divided difference before absolute values. The height profile uses only L1 derivative bounds and its genuine cubic tail; arbitrary decay is used only for smooth spatial profiles. Character, stationary numerator, real coefficient monomial, radial integration, contour constants, floors, stars, and external X^(1/4) remain outside.",
+        "dependencies": [
+          "M9-M1-diagonal-single-transition-normal-form",
+          "M9-M1-angular-double-Mellin-separation",
+          "M9-M1-beta-mask-endpoint-axial-compatibility",
+          "M9-M1-beta-rho-cutoff-all-order-cancellation",
+          "M9-M1-beta-cellwise-phase-removed-symbol-reduction",
+          "M9-M1-beta-fixed-height-translation-divided-difference-identity",
+          "M9-M1-beta-physical-height-finite-section-BV",
+          "M9-M1-beta-two-saddle-Fresnel-normal-form"
+        ],
+        "implies": [
+          "M9-M1-beta-axial-subtracted-terminal-symbol-bound"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-off-diagonal-product-cell/reports/independent_product_norm_rederivation.md",
+            "rounds/codex-managed/m9-m1-beta-off-diagonal-product-cell/reports/off_diagonal_mixed_norm_attack.md",
+            "rounds/codex-managed/m9-m1-beta-off-diagonal-product-cell/reports/product_cell_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-off-diagonal-product-cell/reviews/conductor_phase_profile_factorization.md",
+            "rounds/codex-managed/m9-m1-beta-off-diagonal-product-cell/reviews/conductor_mixed_norm_and_morse.md",
+            "rounds/codex-managed/m9-m1-beta-off-diagonal-product-cell/synthesis.md",
+            "proofs/kernels/m9_m1_beta_off_diagonal_product_cell.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-off-diagonal-product-cell/reports/blind_product_cell_factorization.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use this only for post-routing large-alpha cells and compose it with the signed diagonal section; bounded-alpha and double-bounded cells remain separate."
+      },
+      {
+        "id": "M9-M1-beta-large-alpha-transition-package-bound",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Target-sized complete large-alpha beta package",
+        "status": "proved_internal",
+        "statement_tex": "For the complete post-routing beta branch on both signed large-alpha saddle, entry, and exit cells, form the diagonal Cauchy section before Morse, apply the proved off-diagonal and smooth mixed product-cell norm, and then invoke the exact conditional cellwise coefficient-sum reduction. The character, radial oscillation, floors, stars, endpoint and arithmetic modules, contour factors, and external normalization are counted once. The resulting physical contribution is O_epsilon(X^(1/4+epsilon)). This excludes bounded-alpha, the double-bounded cell, the alpha-bounded zeta-high branch, complete transition assembly, M9-M1, M9, and the Gauss-circle target.",
+        "dependencies": [
+          "M9-M1-beta-axial-subtracted-terminal-symbol-bound",
+          "M9-M1-beta-cellwise-symbol-sum-reduction",
+          "M9-M1-beta-endpoint-free-axial-remainder-limit",
+          "M9-M1-beta-R1-face-log-q4-bound",
+          "M9-M1-beta-off-diagonal-smooth-product-cell-bound",
+          "M9-M1-beta-signed-diagonal-Cauchy-section-BV"
+        ],
+        "implies": [
+          "M9-M1-beta-log-amplitude-two-saddle-kernel",
+          "M9-M1-beta-regular-finite-part-symbol-BV",
+          "M9-M1-beta-complete-physical-height-symbol-bound",
+          "M9-M1-beta-transition-connector-reduction"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-off-diagonal-product-cell/reports/independent_product_norm_rederivation.md",
+            "rounds/codex-managed/m9-m1-beta-off-diagonal-product-cell/reports/off_diagonal_mixed_norm_attack.md",
+            "rounds/codex-managed/m9-m1-beta-off-diagonal-product-cell/reports/product_cell_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-off-diagonal-product-cell/reviews/conductor_diagonal_composition.md",
+            "rounds/codex-managed/m9-m1-beta-off-diagonal-product-cell/reviews/conductor_mixed_norm_and_morse.md",
+            "rounds/codex-managed/m9-m1-beta-off-diagonal-product-cell/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Treat the large-alpha beta package as closed and isolate the bounded-alpha/double-bounded physical cell before returning to the alpha-bounded branch."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-beta-signed-diagonal-Cauchy-section-BV",
+        "status": "proved_internal",
+        "title": "Signed diagonal radial Cauchy section and complete product-saddle BV",
+        "statement_tex": "For K_C=-iH(L,L)/(2A(L)D(L,nu)), I_(U,V)(L)=[-V,V] intersect [L-U,L+U]=[p(L),q(L)], and the continuous left-half-plane logarithm, the exact signed section is C_(U,V)[H]=[H(L,L)/A(L)]{Log D(L,q)-Log D(L,p)}; the unintegrated K_C has a nonzero 1/nu tail and is not in L1(dnu). The separated-profile estimate extends to every exact phase-removed product cell H(L,nu)=C(beta)G(L)p(nu): on either signed large-alpha cell, H(L,L)/A has supremum O_epsilon(X^epsilon lambda^(-4)) and variation O_epsilon(X^epsilon lambda^(-3)), while the affine-endpoint logarithm has sup plus variation O(log(2+lambda)). Hence the signed section, its moving faces, and its exact post-section Morse remainder are O_epsilon(X^epsilon lambda^(-2)), uniformly in U,V and through entry or exit. Upper moving faces have positive sign and lower faces negative sign. The section must be formed before absolute values and Morse localization.",
+        "dependencies_added": [
+          "M9-M1-beta-cellwise-phase-removed-symbol-reduction",
+          "M9-M1-diagonal-single-transition-normal-form"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-off-diagonal-product-cell/reviews/conductor_diagonal_composition.md",
+            "rounds/codex-managed/m9-m1-beta-off-diagonal-product-cell/reviews/conductor_phase_profile_factorization.md",
+            "rounds/codex-managed/m9-m1-beta-off-diagonal-product-cell/synthesis.md"
+          ]
+        },
+        "next_action": "Use the complete product-saddle section only under the common logarithm branch and ownership; never place the unintegrated diagonal kernel under an absolute height norm."
+      },
+      {
+        "id": "M9-M1-beta-axial-subtracted-terminal-symbol-bound",
+        "status": "proved_internal",
+        "statement_tex": "At c'=5/4, after the proved endpoint, side, arithmetic, artificial, axial, collision, connector, corner, and height-limit ownership operations, freeze one actual signed large-alpha cell and lambda=pi q sqrt(Xx)/D_j. Keep the character, stationary numerator (D_j/q)lambda, real coefficient monomial, contour constants, radial integration, floors, stars, and external X^(1/4) outside. For the singular hard-top share, the signed diagonal Cauchy section is formed first and has target sup, variation, moving-face, and exact post-section Morse size O_epsilon(X^epsilon lambda^(-2)). The off-diagonal divided difference and every smooth ordinary-mu share have direct absolute value, integrated fixed-height derivative, moving-trace, and exact Morse norm O_epsilon(X^epsilon lambda^(-2)); the fixed-height translation is recombined before absolute values. This proves the corrected hybrid terminal-symbol bound on both saddle signs and through entry or exit. Bounded-alpha and double-bounded assembly remain separate.",
+        "dependencies_added": [
+          "M9-M1-beta-off-diagonal-smooth-product-cell-bound"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-off-diagonal-product-cell/reports/independent_product_norm_rederivation.md",
+            "rounds/codex-managed/m9-m1-beta-off-diagonal-product-cell/reports/off_diagonal_mixed_norm_attack.md",
+            "rounds/codex-managed/m9-m1-beta-off-diagonal-product-cell/reports/product_cell_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-off-diagonal-product-cell/reviews/conductor_phase_profile_factorization.md",
+            "rounds/codex-managed/m9-m1-beta-off-diagonal-product-cell/reviews/conductor_mixed_norm_and_morse.md",
+            "rounds/codex-managed/m9-m1-beta-off-diagonal-product-cell/reviews/conductor_diagonal_composition.md",
+            "rounds/codex-managed/m9-m1-beta-off-diagonal-product-cell/synthesis.md",
+            "proofs/kernels/m9_m1_beta_off_diagonal_product_cell.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-off-diagonal-product-cell/reports/blind_product_cell_factorization.md"
+          ]
+        },
+        "next_action": "Invoke the proved cellwise coefficient sum for the large-alpha package. Analyze the bounded-alpha and double-bounded cells separately.",
+        "reason_for_promotion": "A corrected statement-only rederivation, an independent hostile audit, the discovery proof, and three conductor seam checks agree on the exact product normalization, cubic height scope, endpoint cancellation, traces, both saddle signs, and exact Morse passage."
+      },
+      {
+        "id": "M9-M1-beta-cellwise-symbol-sum-reduction",
+        "status": "proved_internal",
+        "statement_tex": "Let r=5/4-(a+b)/2 in (1,2). The hybrid terminal hypothesis is now proved on every phase-removed signed large-alpha saddle, entry, and exit cell: form the signed diagonal Cauchy section first, then apply the off-diagonal and smooth absolute mixed norm, together O_epsilon(X^epsilon lambda^(-2)). After multiplication by the exact stationary numerator, the retained coefficient before the external X^(1/4) factor is |chi_4(q)|h^(-r)q^(-2)D_j^(2-r)X^(r/2-1/2+b/4)x^(-r/2-b/2-5/4). Radial integration contributes min(1,[sqrt(X)|2 minus-or-plus q/D_j|]^(-1)); its q-sum is O(X^(-1/2)log(2X)), and the formal resonance q=2D_j is even and vanishes under chi_4. The h-sum and actual dyadic scales are polylogarithmic internally. Restoring the external normalization gives O_epsilon(X^(1/4+epsilon)) for the complete large-alpha saddle package. Bounded-alpha, double-bounded, and complete transition assembly remain excluded.",
+        "dependencies_added": [
+          "M9-M1-beta-off-diagonal-smooth-product-cell-bound"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-off-diagonal-product-cell/reviews/conductor_diagonal_composition.md",
+            "rounds/codex-managed/m9-m1-beta-off-diagonal-product-cell/synthesis.md"
+          ]
+        },
+        "next_action": "Use the resulting target-sized large-alpha package as closed; do not extend it to bounded-alpha or double-bounded cells without a separate proof."
+      },
+      {
+        "id": "M9-M1-beta-complete-physical-height-symbol-bound",
+        "status": "open",
+        "statement_tex": "The all-strata pointwise and all-absolute formulations remain rejected. Boundary, side, endpoint, arithmetic, artificial, axial, collision, connector, corner, and global-height interfaces are routed through their proved modules. The corrected hybrid physical-height symbol and its coefficient sum are now proved for the complete large-alpha beta saddle, entry, and exit package. The remaining quantitative interface is the bounded-alpha/double-bounded cell, followed by complete beta-transition assembly; the alpha-bounded branch remains separate.",
+        "dependencies_added": [
+          "M9-M1-beta-off-diagonal-smooth-product-cell-bound",
+          "M9-M1-beta-large-alpha-transition-package-bound"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-off-diagonal-product-cell/synthesis.md"
+          ]
+        },
+        "next_action": "Define the exact bounded-alpha/double-bounded physical cell and prove its target norm without using large-alpha Stirling."
+      },
+      {
+        "id": "M9-M1-beta-regular-finite-part-symbol-BV",
+        "status": "open",
+        "statement_tex": "The corrected hybrid regular finite-part bound is proved for every large-alpha beta cell: integrate the diagonal Cauchy term signed first, control the off-diagonal and smooth shares absolutely, and then execute the target-safe coefficient sum. The complete remaining regular beta finite part is the bounded-alpha/double-bounded cell. Singular hard-top and smooth ordinary-mu shares remain distinct, and complete beta-transition assembly remains open.",
+        "dependencies_added": [
+          "M9-M1-beta-off-diagonal-smooth-product-cell-bound",
+          "M9-M1-beta-large-alpha-transition-package-bound"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-off-diagonal-product-cell/synthesis.md"
+          ]
+        },
+        "next_action": "Attack only the bounded-alpha/double-bounded regular cell; the large-alpha finite part is closed."
+      },
+      {
+        "id": "M9-M1-beta-log-amplitude-two-saddle-kernel",
+        "status": "open",
+        "statement_tex": "The distribution-first logarithmic moving-face lemma, q^(-4) face coefficient, complete large-alpha hybrid symbol, exact Morse entry/exit control, height exhaustion, and all large-alpha coefficient sums are now proved, giving a target-sized complete large-alpha beta package. The remaining beta kernel is the bounded-alpha/double-bounded cell, which has no large Stirling saddle and must be treated separately before complete transition assembly.",
+        "dependencies_added": [
+          "M9-M1-beta-large-alpha-transition-package-bound"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-off-diagonal-product-cell/synthesis.md"
+          ]
+        },
+        "next_action": "Do not reopen the two-saddle package. Isolate and estimate the bounded-alpha/double-bounded cell."
+      },
+      {
+        "id": "M9-M1-beta-transition-connector-reduction",
+        "status": "open",
+        "statement_tex": "The hierarchical beta partition, omega-recombined radial split, connector/endpoint/axial ownership, signed Plemelj limit, logarithmic moving faces, height exhaustion, and both signed large-alpha saddle packages are target-safe. The first remaining beta-branch contribution is the bounded-alpha/double-bounded cell. Prove its normalized O_epsilon(X^epsilon) contribution and then assemble the complete beta transition; the alpha-bounded zeta-high branch remains a separate part of the swept operator.",
+        "dependencies_added": [
+          "M9-M1-beta-large-alpha-transition-package-bound"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-off-diagonal-product-cell/synthesis.md"
+          ]
+        },
+        "next_action": "Freeze the exact double-bounded physical kernel and determine whether direct compact-height estimates close it."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round41-omit-physical-height-modulation",
+        "reason": "The raw powers contain the exact factor exp(i gamma nu), gamma=log(2sqrt(X)(H_j+1)/(D_j sqrt(x))). Omitting it makes the factorization and fixed-height derivatives inexact, although its true cost is only polylogarithmic."
+      },
+      {
+        "id": "Round41-full-exact-gamma-argument-is-canonical-Morse-phase",
+        "reason": "The accepted stationary points are determined by the canonical Stirling main phase Psi'(L)=log(|L+beta|/lambda). Absorbing the full exact gamma argument into Psi shifts the saddle; lower Stirling phase corrections must remain in the symbol."
+      },
+      {
+        "id": "Round41-Vaaler-height-profile-has-arbitrary-weighted-moments",
+        "reason": "The actual Vaaler height transform has a genuine cubic leading tail. The proof uses cubic pointwise decay and L1 derivative bounds; arbitrary polynomial decay is available only for smooth spatial Mellin profiles and the top regular remainder."
+      },
+      {
+        "id": "Round41-reinsert-routed-connector-or-artificial-cell",
+        "reason": "Global endpoint, axial, connector, collision, corner, and artificial-residue ownership is completed before the local terminal cell is frozen, while common G=E1+R1 ownership cancels all cutoff derivatives. Reinsertion double counts the decomposition."
+      },
+      {
+        "id": "Round41-contaminated-report-satisfies-statement-only-gate",
+        "reason": "The first assigned blind run disclosed proof-graph exposure. It is retained only as contaminated inconclusive evidence; the replacement independently rederived the corrected theorem under the declared isolation contract."
+      },
+      {
+        "id": "Round41-scalar-Fresnel-replaces-varying-product-cell",
+        "reason": "Entry, exit, moving traces, and the exact remainder require the full Morse pullback and its BV variation. Only the leading saddle value has a full or half Fresnel coefficient."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1-swept-transition-horizontal-operator",
+        "reason": "The large-alpha beta branch is now target-safe, but its bounded-alpha/double-bounded cell and the separate alpha-bounded zeta-high branch remain open."
+      },
+      {
+        "id": "M9-M1-post-FE-vector-kernel",
+        "reason": "The complete swept transition operator is not yet proved."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "The double-bounded beta cell, alpha-bounded branch, and other residual M1 interfaces remain open."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Round 41 concerns only the transformed M1 beta branch."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1 and M9-M2 remain open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "No unconditional Gauss-circle estimate is claimed."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 9,
+    "idea_quality_score": 9,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 41 closes the cancellation-preserving large-alpha beta product cell and, by the already proved coefficient-sum implication, the complete target-sized large-alpha beta package, while preserving the precise bounded/double-bounded frontier."
+  }
+}

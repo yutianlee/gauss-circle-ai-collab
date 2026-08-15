@@ -1,0 +1,113 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-smooth-critical-radial-terminal-transfer",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Smooth critical radial sectors transfer to terminal M1 blocks",
+        "status": "proved_internal",
+        "statement_tex": "Let R=X^(1/4), Y=sqrt X, and let V be any fixed smooth compactly supported function in (c,C), with 0<c<C<16. For the exact Round-14 angular coefficient C_X^*(n), define G_V(X)=sum_(n<=16Y) V(n/Y) C_X^*(n)n^(-3/4)e(sqrt(Xn)). Then |G_V(X)|<<_(epsilon,V)X^epsilon. Indeed the positive reciprocal antecedent B_(j,V)=sum_h eta_j(h)1_(h<=H_j)Phi(h/(H_j+1))/h sum_d chi_4(d)w_j(d)V(4Xh^2/(d^2Y))e(hX/d) is terminal-supported; Mellin separation gives frequency BV O_V((1+|t|)/H_j) and bounded denominator coefficient, hence sum_j B_(j,V)<<_(epsilon,V)RX^epsilon. The accepted positive-frequency interior/top transforms give sum_j B_(j,V)=(e(1/8)/i)R G_V+O_V(log^2 X), with the hard-top cotangent boundary O_V(1), exact floors, profiles, hard sample, and stars. Pairing signs yields the required real GAR projection with coefficient -4R/pi. The theorem excludes the n=16Y endpoint, sharp radial cutoffs, and n/Y tending to zero.",
+        "dependencies": [
+          "M9-M1-global-angular-recombination",
+          "M9-M1-terminal-frequency-divisor-bound",
+          "M9-M1-top-endpoint-transform",
+          "M9-M2-dyadic-weight-nondegeneracy"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-critical-radial-terminal-return/reports/critical_radial_terminal_transfer_attack.md",
+            "rounds/codex-managed/m9-m1-critical-radial-terminal-return/reports/blind_critical_terminal_rederivation.md",
+            "rounds/codex-managed/m9-m1-critical-radial-terminal-return/reports/critical_terminal_transfer_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-critical-radial-terminal-return/reviews/conductor_critical_terminal_adjudication.md",
+            "rounds/codex-managed/m9-m1-critical-radial-terminal-return/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Map the remaining lower radial range n=o(sqrt X) into exact frequency scales and combine the accepted terminal and TTY regions before attacking the first uncovered band. Keep the sharp n=16sqrt X endpoint separate."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "dependencies_added": [
+          "M9-M1-smooth-critical-radial-terminal-transfer"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-critical-radial-terminal-return/synthesis.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-critical-radial-terminal-return/reviews/conductor_critical_terminal_adjudication.md"
+          ]
+        },
+        "next_action": "The fixed smooth critical radial range n asymp sqrt X is closed, even in complex modulus. Isolate the exact lower-radial phase diagram n=o(sqrt X), retain the n=16sqrt X endpoint separately, and attack the first band not already covered by the terminal or TTY theorems."
+      },
+      {
+        "id": "M9-M1-terminal-frequency-divisor-bound",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-critical-radial-terminal-return/synthesis.md"
+          ]
+        },
+        "next_action": "Use the proved Mellin transfer as the terminal endpoint of the lower-radial phase diagram. Do not extend it to n/Y tending to zero, where h/H_j is no longer bounded below."
+      },
+      {
+        "id": "M9-M1-top-block-quadratic-completion-self-return",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-critical-radial-terminal-return/synthesis.md"
+          ]
+        },
+        "next_action": "The full fixed-relative-width critical sector is now closed through the primal terminal theorem. The length-R moving strip remains a distinct signed reciprocal-strip problem and should not be conflated with the smooth sector."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round60-strict-upper-terminal-margin-required",
+        "reason": "Only a positive lower radial cutoff is needed. The exact inherited factor 1_(h<=H_j) owns the upper edge, and its zero-extension jump is O(1/H_j), admissible in the terminal BV norm."
+      },
+      {
+        "id": "Round60-Mellin-denominator-mode-breaks-terminal-theorem",
+        "reason": "The direct terminal theorem permits arbitrary bounded complex denominator coefficients, so d^(-2it) is admissible. Transform derivatives cost only polynomial powers of t, absorbed by the Schwartz Mellin transform."
+      },
+      {
+        "id": "Round60-paired-real-identity-precludes-modulus",
+        "reason": "The already accepted interior and top transforms are positive-frequency complex identities before conjugate pairing. Their localized form directly gives sum_j B_(j,V)=(e(1/8)/i)R G_V+O_V(log^2 X), hence the modulus bound."
+      },
+      {
+        "id": "Round60-smooth-critical-sector-closes-full-GAR",
+        "reason": "Fixed support bounded away from zero forces h asymp H_j; when n/sqrt X tends to zero this fails and the terminal loss D/L reappears. The sharp outer product endpoint also needs separate ownership."
+      },
+      {
+        "id": "Round60-short-length-R-window-is-the-same-terminal-sector",
+        "reason": "A length-R selector is a moving joint h-d or h-r strip and is not a fixed relative-width Mellin-separable radial multiplier. Round 59's signed strip remains open."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "Lower/intermediate radial-frequency sectors, the sharp outer endpoint, alpha transfer, and endpoint uniformity remain open."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1 and M9-M2 remain open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The smooth critical-sector theorem does not change the unconditional discrepancy exponent."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 9,
+    "idea_quality_score": 9,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 60 proves a genuinely new power-saving theorem for every fixed smooth critical radial sector by transferring it to the accepted terminal reciprocal bound. The positive-frequency identity yields the stronger complex modulus, with floors, hard top, stars, and errors audited. Full GAR and the exponent remain open."
+  }
+}

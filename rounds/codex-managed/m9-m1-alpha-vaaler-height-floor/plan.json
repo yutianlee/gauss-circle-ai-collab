@@ -1,0 +1,179 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 52,
+    "round_type": "alpha_vaaler_height_floor_type_and_variation",
+    "campaign_id": "m9-m1-alpha-vaaler-height-floor",
+    "title": "Type and adjacent variation of the Vaaler height floor",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "literature_policy": "The exact Vaaler formula is already source-audited. No web search is needed unless an external discrete-variation theorem is invoked."
+    },
+    "target_obligations": [
+      "M9-M1-alpha-bounded-zeta-high-transition-bound"
+    ],
+    "frozen_target": {
+      "question": "Is H_j=floor(D_j X^(-1/4)) a moving alpha-contour seam, or a fixed discrete parameter; and what is the exact adjacent-height variation of its Vaaler coefficient family?",
+      "reference_formula": "a_H(h)=1_(1<=h<=H) Phi(h/(H+1)), Phi(u)=pi u(1-u)cot(pi u)+u, alpha_(h,H)=i a_H(h)/(2 pi h), and Omega_X^*(n,h)=sum_j a_(H_j)(h)[w_j(2h sqrt(X/n))]^*.",
+      "quantities": [
+        "zero or nonzero contour velocities of H_j",
+        "exact Delta_H a(h)=a_(H+1)(h)-a_H(h)",
+        "unweighted, 1/h-weighted, and power-weighted h norms",
+        "new endpoint h=H+1",
+        "simultaneous D_j, dyadic-profile, support, and star changes",
+        "possible implication for alpha lattice jump capacity"
+      ]
+    },
+    "completion_criteria": [
+      "The variable with respect to which the floor changes is explicitly typed.",
+      "The floor is not differentiated with respect to unrelated contour heights.",
+      "The exact adjacent-height coefficient difference, including its new endpoint, is derived.",
+      "Sharp enough uniform l1 and weighted-l1 bounds are proved or refuted.",
+      "Any transfer to actual dyadic blocks retains simultaneous changes in D_j, w_j, supports, stars, and normalization.",
+      "The result's implication for the alpha projected trace is scoped without promoting the target.",
+      "A clean statement-only derivation and an independent hostile audit exist."
+    ],
+    "controls": [
+      "variable_type",
+      "exact_Phi_formula",
+      "right_endpoint_taper",
+      "adjacent_height_identity",
+      "weighted_norms",
+      "actual_scale_coupling",
+      "star_ownership",
+      "alpha_capacity_scope",
+      "downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "vaaler_height_difference_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "target": "Derive the exact H-to-H+1 Vaaler coefficient difference, prove its sharp weighted norms, and determine whether a lawful discrete summation-by-parts mechanism can reduce alpha lattice capacity.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-alpha-vaaler-height-floor/derivation_packet.md",
+          "rounds/codex-managed/m9-unit-frequency-w1-validation/synthesis.md",
+          "rounds/codex-managed/m9-m1-dual-r2-recombination/synthesis.md",
+          "rounds/codex-managed/m9-m1-upper-endpoint-character-abel/synthesis.md",
+          "rounds/codex-managed/m9-m1-alpha-signed-jump-incidence/synthesis.md"
+        ],
+        "required_controls": [
+          "variable_type",
+          "exact_Phi_formula",
+          "right_endpoint_taper",
+          "adjacent_height_identity",
+          "weighted_norms",
+          "actual_scale_coupling",
+          "star_ownership",
+          "alpha_capacity_scope",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "seven-section report",
+          "exact adjacent-height lemma or no-go",
+          "capacity implication"
+        ]
+      },
+      {
+        "id": "blind_vaaler_height_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "target": "Using only the Round-52 packet, independently decide the variable type and derive sharp adjacent-height variation bounds.",
+        "context_files": [
+          "rounds/codex-managed/m9-m1-alpha-vaaler-height-floor/derivation_packet.md"
+        ],
+        "excluded_context": [
+          "proof graph",
+          "proof draft",
+          "prior reports and syntheses",
+          "other Round-52 reports"
+        ],
+        "required_controls": [
+          "variable_type",
+          "exact_Phi_formula",
+          "right_endpoint_taper",
+          "adjacent_height_identity",
+          "weighted_norms",
+          "actual_scale_coupling",
+          "star_ownership",
+          "alpha_capacity_scope",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "seven-section statement-only report",
+          "independent proof",
+          "isolation ledger"
+        ]
+      },
+      {
+        "id": "vaaler_floor_hostile_audit",
+        "role": "seam_reviewer",
+        "access_mode": "selected_context",
+        "target": "Hostile-audit the floor as a contour seam, endpoint asymptotics of Phi, uniform constants, small H, and any illicit transfer from an abstract adjacent H change to actual dyadic scales.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-alpha-vaaler-height-floor/derivation_packet.md",
+          "rounds/codex-managed/m9-unit-frequency-w1-validation/reports/h4_weight_normalization_review.md",
+          "rounds/codex-managed/m9-m1-alpha-signed-jump-incidence/reports/jump_incidence_hostile_audit.md"
+        ],
+        "required_controls": [
+          "variable_type",
+          "exact_Phi_formula",
+          "right_endpoint_taper",
+          "adjacent_height_identity",
+          "weighted_norms",
+          "actual_scale_coupling",
+          "star_ownership",
+          "alpha_capacity_scope",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "seven-section hostile report",
+          "counterexample or certification",
+          "recommended graph effect"
+        ]
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "type",
+        "requirement": "Separate fixed contour parameters from moving contour variables."
+      },
+      {
+        "id": "coefficient_algebra",
+        "requirement": "Use exact Phi and include the new endpoint."
+      },
+      {
+        "id": "summation",
+        "requirement": "Prove the relevant h-norms uniformly down to H=1."
+      },
+      {
+        "id": "actual_mapping",
+        "requirement": "Do not identify abstract H adjacency with an actual scale change without a complete owner map."
+      },
+      {
+        "id": "mathematical_isolation",
+        "requirement": "The blind proof sees only the Round-52 packet and its brief."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "76a480a78ae30353d4f9cbe26c0e17337c1b89318c4a15758a6ffe0c34051fea",
+    "generated_at": "2026-08-13T16:08:02.784936+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

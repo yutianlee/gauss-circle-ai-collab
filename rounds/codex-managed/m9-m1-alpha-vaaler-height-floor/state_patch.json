@@ -1,0 +1,79 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-alpha-Vaaler-height-discrete-variation",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Typed Vaaler-height variation and dyadic-transfer obstruction",
+        "status": "proved_internal",
+        "statement_tex": "For fixed X and dyadic label j, H_j=floor(D_j X^(-1/4)) is external to the Mellin contour variables and has zero mu,nu,alpha,beta velocity, so it creates no alpha Cauchy-Green floor delta. For a_H(h)=1_(1<=h<=H) Phi(h/(H+1)), the adjacent difference a_(H+1)-a_H is positive, includes the full new endpoint h=H+1, has exact l1 mass 1/2, and has 1/h-weighted mass asymptotic to 1/(H+1); more generally its fixed power-weighted norms have the sharp Vaaler endpoint orders. The new endpoint is O(H^(-2)), while old frequencies carry the remaining mass. Exact dyadic scaling gives H_(j+1)=floor(H_j/2), and ||a_K-a_H||_1=|K-H|/2, so an actual dyadic height change has H-sized unweighted and order-one 1/h-weighted coefficient capacity. The complete physical/Mellin difference additionally changes D_j, profile, support, star, scale powers, radial factors and normalization. Therefore the unit-height lemma is not an alpha seam estimate or an actual dyadic-block estimate.",
+        "dependencies": [
+          "H4-Phi-regularity",
+          "M9-M1-global-angular-recombination",
+          "M9-M1-alpha-jump-incidence-specification-no-go"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-alpha-vaaler-height-floor/reports/vaaler_height_difference_attack.md",
+            "rounds/codex-managed/m9-m1-alpha-vaaler-height-floor/reports/blind_vaaler_height_rederivation.md",
+            "rounds/codex-managed/m9-m1-alpha-vaaler-height-floor/reports/vaaler_floor_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-alpha-vaaler-height-floor/reviews/conductor_height_type_and_transfer_adjudication.md",
+            "rounds/codex-managed/m9-m1-alpha-vaaler-height-floor/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Construct the complete coupled adjacent-dyadic-scale difference on a common positive-line alpha antecedent and prove a signed scale-partial-sum theorem or capacity no-go."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-alpha-bounded-zeta-high-transition-bound",
+        "statement_tex": "The connector-completed alpha-bounded zeta-high trace remains the signed projected cosine-comb/GAR-return operator. The Vaaler floor H_j is not a moving alpha-contour seam: it has zero contour velocity. Although a formal unit-height coefficient change has exact l1 mass 1/2 and 1/h-weighted size asymptotic to 1/H, actual dyadic scaling sends H_j to floor(H_j/2), giving H-sized unweighted coefficient variation, while D_j, the denominator profile, support, equality star, Mellin powers, radial factors, and normalization change simultaneously. The next lawful local object is therefore the complete coupled adjacent-dyadic-scale difference on one common positive-line alpha antecedent. Prove a signed partial-sum estimate for that full family, then the outside-height Cauchy limit and global arithmetic sum. Coefficient-only height differencing and floor seam incidence are rejected routes.",
+        "dependencies_added": ["M9-M1-alpha-Vaaler-height-discrete-variation"],
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-m1-alpha-vaaler-height-floor/reports/vaaler_floor_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-alpha-vaaler-height-floor/synthesis.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-alpha-vaaler-height-floor/reports/vaaler_height_difference_attack.md"
+          ]
+        },
+        "next_action": "Write the exact coupled difference between adjacent physical dyadic scales on a common positive-line alpha antecedent, including both height families, profiles, supports, stars, scale powers, radial terms and normalization, and prove a signed partial-sum bound or sharp no-go."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round52-Hj-floor-is-moving-alpha-contour-seam",
+        "reason": "For fixed X and block j, H_j contains no contour variable and all alpha/beta contour velocities vanish. The multiplier (H_j+1)^v is entire in v and does not create a floor delta."
+      },
+      {
+        "id": "Round52-unit-height-variation-controls-dyadic-step",
+        "reason": "An actual adjacent dyadic scale has H_(j+1)=floor(H_j/2), not H_j plus or minus one; its coefficient-only l1 variation is comparable to H_j, and all profile and scale factors also change."
+      },
+      {
+        "id": "Round52-endpoint-taper-makes-full-height-change-small",
+        "reason": "The new endpoint is O(H^(-2)), but old frequencies retune coherently and give exact total adjacent l1 mass 1/2."
+      }
+    ],
+    "no_change": [
+      {"id": "M9-M1-swept-transition-horizontal-operator", "reason": "The full alpha transition remains open."},
+      {"id": "M9-M1-post-FE-vector-kernel", "reason": "Round 52 proves coefficient algebra and a type correction only."},
+      {"id": "M9-M1", "reason": "No uniform full M1 estimate is proved."},
+      {"id": "M9", "reason": "M9-M1 and M9-M2 remain open."},
+      {"id": "GC-target", "reason": "No new Gauss-circle exponent is claimed."}
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 52 proves an exact sharp Vaaler variation theorem, corrects a type error in the alpha program, and identifies the complete coupled dyadic-scale family as the next lawful object. It does not estimate that family or improve the global exponent."
+  }
+}

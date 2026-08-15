@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "round_index": 68,
+  "campaign_id": "m9-m1-square-root-product-offdiagonal",
+  "objective": "Prove or sharply obstruct the lossless signed off-diagonal in the shifted square-root-product second moment.",
+  "graph_sha256": "cca103db062b7e0fc877904261a12b827dd751a5d348da1fb55c3dd46ffc7e7b",
+  "resource_policy": {"analytical_algebraic_minimum_percent": 80, "numerical_experimental_maximum_percent": 20},
+  "tasks": [
+    {"id": "square_root_product_energy_attack", "role": "discovery", "status": "terminated_without_report_conductor_rederived"},
+    {"id": "blind_offdiagonal_rederivation", "role": "statement_only_blind_rederiver", "status": "complete_clean"},
+    {"id": "square_root_product_source_hostile_audit", "role": "hostile_source_reviewer", "status": "complete_clean"}
+  ],
+  "exit_gates": ["difference algebra", "diagonal", "cross-residue near diagonal", "Poisson/B-process aliases", "perfect powers", "actual symbol", "source applicability", "blind and hostile gates", "conductor decision"],
+  "status": "complete",
+  "closing_decision": "promote_actual_ratio_symbol_and_stationary_main_involution_retain_signed_energy_open",
+  "resulting_graph_sha256": "9cb30a47556b9c7cf47220264a1a4691948889dea88e376e0355993288b041b3"
+}

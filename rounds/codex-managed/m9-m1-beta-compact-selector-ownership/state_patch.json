@@ -1,0 +1,144 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-beta-positive-line-alpha-localization-certificate",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Aggregate positive-line alpha localization of the endpoint-free beta vector",
+        "status": "open",
+        "statement_tex": "At fixed finite U,V,S and from the common fixed-w endpoint-free beta vector, first sum the complete sixteen product Cauchy--Green cells to the original positive-a, positive-b representative R_u R_v[psi(beta)Q_ef]. Only then apply 1=chi_0(alpha)+(1-chi_0(alpha)). Prove that the central terminal is exactly the three-selector functional with j=0 singular u^(-1) under signed Plemelj, j=0 regular top, and j>=1 interior profiles under ordinary mu integration; split the oriented artificial-pole coefficient under the same alpha partition; and identify the direct positive-line complement exactly with the accepted large-alpha package. Retain all D_j,H_j floors, stars, chi_4, equality and collision conventions, separately routed modules, and the external -(4/pi)X^(1/4)Re(e(1/8) dot) factor once. No individual transferred row is assigned a physical limit.",
+        "dependencies": [
+          "M9-M1-beta-finite-two-axis-product-Cauchy-Green",
+          "M9-M1-beta-finite-endpoint-free-Plemelj-vector",
+          "M9-M1-beta-endpoint-free-axial-remainder-limit",
+          "M9-M1-beta-mask-endpoint-axial-compatibility",
+          "M9-M1-beta-large-alpha-transition-package-bound",
+          "M9-M1-beta-hierarchical-radial-split-identity"
+        ],
+        "implies": [
+          "M9-M1-beta-double-bounded-cell-bound"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-compact-selector-ownership/reports/actual_compact_table_constructor.md",
+            "rounds/codex-managed/m9-m1-beta-compact-selector-ownership/reports/compact_table_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-compact-selector-ownership/reviews/conductor_aggregate_before_localization_adjudication.md",
+            "rounds/codex-managed/m9-m1-beta-compact-selector-ownership/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-compact-selector-ownership/reports/independent_compact_table_rederivation.md",
+            "rounds/codex-managed/m9-m1-beta-compact-selector-ownership/reviews/conductor_artificial_residue_candidate.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Prove the exact central/complement split of the oriented artificial residue, match the positive-line complement to the accepted large-alpha theorem, and obtain a mathematically isolated rederivation of the complete positive-line certificate."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-beta-double-bounded-cell-bound",
+        "statement_tex": "For the exact beta-owned compact positive-line terminal obtained only after complete finite Stokes recombination, with Theta_db=psi(beta)chi_0(alpha) on 0<=a, a+b<1/2, and a/2+b<1/4, prove sup_x(|A(x)|+x|A'(x)|)=O_epsilon(X^epsilon). The analytic compact estimate is already proved for the corrected three selector classes: j=0 singular top under signed Plemelj, j=0 regular top, and j>=1 interior profiles under ordinary integration. Promotion now requires the aggregate positive-line alpha-localization certificate, including the artificial-pole share and exact match to the accepted large-alpha complement, plus a mathematically isolated proof of this corrected functional. No rowwise sixteen-stratum amplitude equality is required or lawful.",
+        "dependencies_added": [
+          "M9-M1-beta-positive-line-alpha-localization-certificate"
+        ],
+        "dependencies_removed": [
+          "M9-M1-beta-compact-sixteen-stratum-selector-table"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-compact-selector-ownership/reports/actual_compact_table_constructor.md",
+            "rounds/codex-managed/m9-m1-beta-compact-selector-ownership/reviews/conductor_aggregate_before_localization_adjudication.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-m1-beta-compact-selector-ownership/reports/compact_table_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-compact-selector-ownership/reports/independent_compact_table_rederivation.md",
+            "rounds/codex-managed/m9-m1-beta-compact-selector-ownership/synthesis.md"
+          ]
+        },
+        "next_action": "Validate the aggregate positive-line localization, oriented artificial residue, and large-alpha complement match; then run a clean mathematical statement-only proof of the corrected compact amplitude estimate."
+      },
+      {
+        "id": "M9-M1-beta-transition-connector-reduction",
+        "dependencies_added": [
+          "M9-M1-beta-positive-line-alpha-localization-certificate"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-compact-selector-ownership/reviews/conductor_aggregate_before_localization_adjudication.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-m1-beta-compact-selector-ownership/reports/compact_table_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-compact-selector-ownership/synthesis.md"
+          ]
+        },
+        "next_action": "Close the aggregate positive-line alpha-localization certificate and double-bounded estimate, then compose with the proved large-alpha beta package. The alpha-bounded zeta-high branch remains separate."
+      },
+      {
+        "id": "M9-M1-beta-complete-physical-height-symbol-bound",
+        "dependencies_added": [
+          "M9-M1-beta-positive-line-alpha-localization-certificate"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-compact-selector-ownership/synthesis.md"
+          ]
+        },
+        "next_action": "Use aggregate-before-localization rather than rowwise transfer. Validate the positive-line compact/artificial split and corrected compact estimate; the large-alpha symbol remains closed."
+      }
+    ],
+    "reject": [
+      {
+        "id": "M9-M1-beta-compact-sixteen-stratum-selector-table",
+        "reason": "The sixteen terms are finite product-Stokes representation cells, not ownership projectors or separately limiting physical amplitudes. Accepted height limits occur after their complete finite sum is returned to the original positive-line operator. The mixed psi''/4 cell is indispensable in that sum but has no independent compact-amplitude type."
+      },
+      {
+        "id": "Round44-product-Stokes-row-is-a-physical-ownership-projector",
+        "reason": "A label such as L_uL_v, B_uP_v, or A_uA_v specifies contour geometry only. Terminal, radial-side, or module ownership depends on the common antecedent, and no individual beta-masked row inherits the aggregate physical-module theorem."
+      },
+      {
+        "id": "Round44-alpha-cutoff-may-be-inserted-after-rowwise-transfer-without-new-connectors",
+        "reason": "Transferring psi(beta)chi_0(alpha) differentiates both cutoffs. Central and complementary alpha shares cancel chi_0 derivatives only after recombination; the beta psi''/4 mixed cell survives until the whole Stokes complex is returned to the positive line."
+      },
+      {
+        "id": "Round44-artificial-residue-is-part-of-the-terminal-three-selector-functional",
+        "reason": "The endpoint-free vector is T[R1]+P_rho[R1] after radial-side removal. The oriented artificial coefficient is separately owned and must be localized and estimated under the same alpha partition; inserting it into the terminal functional would double count or conceal a distinct contour stratum."
+      },
+      {
+        "id": "Round44-contaminated-no-go-satisfies-replacement-statement-only-gate",
+        "reason": "The statement-only report correctly proves the frozen rowwise packet underdetermined, but it was exposed to injected repository instructions and did not contain the positive-line replacement theorem. It cannot validate that replacement."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1-beta-large-alpha-transition-package-bound",
+        "reason": "Its analytic large-alpha estimate remains accepted; only the exact match to the newly corrected positive-line complementary representation needs a separate certificate."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "The corrected positive-line compact certificate, double-bounded beta cell, alpha-bounded branch, and other M1 interfaces remain open."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1 and M9-M2 remain open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "No unconditional Gauss-circle estimate is claimed."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 8,
+    "idea_quality_score": 9,
+    "state_evidence_score": 9,
+    "calibration_score": 10,
+    "reason": "Round 44 rigorously rejects a type-wrong rowwise ownership requirement and replaces it with the aggregate-before-localization interface already dictated by the accepted Stokes and height-limit architecture. It also exposes and sharply simplifies the remaining artificial-residue seam without promoting an unvalidated compact bound."
+  }
+}

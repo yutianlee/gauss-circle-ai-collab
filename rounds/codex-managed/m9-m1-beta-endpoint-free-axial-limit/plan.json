@@ -1,0 +1,172 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 37,
+    "round_type": "beta_endpoint_free_axial_remainder_limit",
+    "campaign_id": "m9-m1-beta-endpoint-free-axial-limit",
+    "title": "Physical limit of the endpoint-free beta axial remainder",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "literature_policy": "Use accepted finite and distributional identities; audit any indispensable external convergence theorem."
+    },
+    "target_obligations": [
+      "M9-M1-beta-endpoint-free-axial-remainder-limit"
+    ],
+    "frozen_target": {
+      "question": "Does V_ef_fin=V_pre_fin-M_fin have the prescribed unique symmetric physical/outside-height limit?",
+      "reference_formula": "Work from the original fixed-w finite meromorphic antecedent, subtract the aggregate module exactly, retain every remaining terminal, face, axis, connector, collision, mixed, and corner stratum, and prove the complete remainder limit or isolate the first exact survivor. No terminal-symbol estimate.",
+      "quantities": [
+        "V_ef_fin",
+        "fixed-w contours",
+        "all post-module strata",
+        "signed top Plemelj limit",
+        "outside-height exhaustion",
+        "actual factors and normalization"
+      ]
+    },
+    "completion_criteria": [
+      "exact finite complement",
+      "complete stratum inventory",
+      "lawful boundary-module deletion",
+      "fixed exhaustion",
+      "signed moving-face reconciliation",
+      "blind and hostile validation",
+      "conductor decision before symbol estimates"
+    ],
+    "controls": [
+      "fixed_w_finite_complement_definition",
+      "complete_post_module_stratum_inventory",
+      "no_boundary_module_double_count",
+      "symmetric_Plemelj_and_moving_log_faces",
+      "outside_height_tail_and_face_limit",
+      "collision_corner_and_artificial_residue_ownership",
+      "actual_profile_star_character_normalization",
+      "no_terminal_symbol_estimate_overreach"
+    ],
+    "tasks": [
+      {
+        "id": "blind_endpoint_free_limit_identity",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "target": "Independently derive the exact finite complement and decide its complete symmetric limit or first survivor.",
+        "context_files": [
+          "protocol.md",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-vector-hankel-kernel/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-outside-v-side-reconciliation/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-complete-axial-connector-ledger/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-axial-side-exhaustion/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-physical-module-transfer/synthesis.md"
+        ],
+        "excluded_context": [
+          "all Round-37 claimant reports",
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md"
+        ],
+        "required_controls": [
+          "fixed_w_finite_complement_definition",
+          "complete_post_module_stratum_inventory",
+          "no_boundary_module_double_count",
+          "symmetric_Plemelj_and_moving_log_faces",
+          "outside_height_tail_and_face_limit",
+          "collision_corner_and_artificial_residue_ownership",
+          "no_terminal_symbol_estimate_overreach"
+        ],
+        "required_output": [
+          "Independent limit identity or first survivor",
+          "Complete scope ledger",
+          "Seven-section report"
+        ]
+      },
+      {
+        "id": "endpoint_free_axial_limit_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "target": "Construct and prove the actual endpoint-free axial limit or isolate its smallest normalized survivor.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-vector-hankel-kernel/reports/blind_finite_vector_kernel.md",
+          "rounds/codex-managed/m9-m1-beta-outside-v-side-reconciliation/reports/outside_v_cancellation_attack.md",
+          "rounds/codex-managed/m9-m1-beta-log-amplitude-two-saddle/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-complete-axial-connector-ledger/reports/actual_axial_connector_ledger_attack.md",
+          "rounds/codex-managed/m9-m1-beta-axial-side-exhaustion/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-physical-module-transfer/reports/physical_endpoint_arithmetic_transfer_attack.md",
+          "rounds/codex-managed/m9-m1-beta-physical-module-transfer/synthesis.md"
+        ],
+        "required_controls": [
+          "fixed_w_finite_complement_definition",
+          "complete_post_module_stratum_inventory",
+          "no_boundary_module_double_count",
+          "symmetric_Plemelj_and_moving_log_faces",
+          "outside_height_tail_and_face_limit",
+          "collision_corner_and_artificial_residue_ownership",
+          "actual_profile_star_character_normalization",
+          "no_terminal_symbol_estimate_overreach"
+        ],
+        "required_output": [
+          "Actual limit theorem or first survivor",
+          "Complete normalization ledger",
+          "Seven-section report"
+        ]
+      },
+      {
+        "id": "endpoint_free_limit_hostile_audit",
+        "role": "seam_reviewer",
+        "access_mode": "selected_context",
+        "target": "Audit every limit, face, collision, subtraction, and representation seam; certify or produce a counterfunctional.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-beta-outside-v-side-reconciliation/reports/outside_v_hostile_audit.md",
+          "rounds/codex-managed/m9-m1-beta-log-amplitude-two-saddle/reports/log_kernel_hostile_audit.md",
+          "rounds/codex-managed/m9-m1-beta-complete-axial-connector-ledger/reports/two_axis_connector_hostile_audit.md",
+          "rounds/codex-managed/m9-m1-beta-axial-side-exhaustion/reports/side_transfer_capacity_hostile_audit.md",
+          "rounds/codex-managed/m9-m1-beta-physical-module-transfer/reports/physical_module_limit_hostile_audit.md",
+          "rounds/codex-managed/m9-m1-beta-physical-module-transfer/synthesis.md"
+        ],
+        "required_controls": [
+          "fixed_w_finite_complement_definition",
+          "complete_post_module_stratum_inventory",
+          "no_boundary_module_double_count",
+          "symmetric_Plemelj_and_moving_log_faces",
+          "outside_height_tail_and_face_limit",
+          "collision_corner_and_artificial_residue_ownership",
+          "actual_profile_star_character_normalization",
+          "no_terminal_symbol_estimate_overreach"
+        ],
+        "required_output": [
+          "Independent hostile audit",
+          "Counterfunctional or scoped certification",
+          "Seven-section report"
+        ]
+      }
+    ],
+    "review_seams": [
+      "fixed-w representation",
+      "finite complement subtraction",
+      "complete post-module strata",
+      "Plemelj moving faces",
+      "outside-height exhaustion",
+      "collision ownership",
+      "actual normalization",
+      "no symbol-estimate overreach"
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "e60df4442ad731d8efe193e8a224934b27bfd12cc3842bfab581a452904f32cb",
+    "generated_at": "2026-08-13T10:20:00+08:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

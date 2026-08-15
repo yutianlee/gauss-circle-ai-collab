@@ -1,0 +1,139 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-beta-Cauchy-Green-connector-identity",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Finite beta-mask Cauchy-Green connector identity",
+        "status": "proved_internal",
+        "statement_tex": "Let A=s-z/2=x+iy and R=[x_1,x_0] times [-T,T]. For the complete finite meromorphic transition integrand F(A;z) and a prescribed C^1 height mask Theta(y;z), positive rectangle orientation gives V_(x0)=V_(x1)+H_+-H_-+2 pi i sum_(p in R) Theta(Im p;z) Res_(A=p)F-intint_R partial_y Theta(y;z)F(x+iy;z)dxdy. For the hierarchical mask Theta_beta=psi(beta), partial_y Theta_beta=psi'(beta) and the full A=0 residue is crossed. For the disjoint mask Theta_beta=psi(beta)(1-psi(alpha)), alpha=beta+Im z, the connector has both terms psi'(beta)(1-psi(alpha))-psi(beta)psi'(alpha), and its A=0 residue is weighted by 1-psi(Im z). The residue of zeta(1-A) at A=0 is -1. All finite outside sides, profiles, floors, endpoint stars, axial/top/corner terms, and the external -(4/pi)X^(1/4) real-part normalization remain. This identity supplies no transition estimate and does not control a masked R1 share.",
+        "dependencies": [
+          "M9-M1-partial-functional-equation-transition-reduction",
+          "M9-M1-finite-vector-Hankel-identity",
+          "M9-M1-diagonal-single-transition-normal-form"
+        ],
+        "implies": [
+          "M9-M1-beta-transition-connector-reduction"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-transition-connector/reports/blind_beta_connector_identity.md",
+            "rounds/codex-managed/m9-m1-beta-transition-connector/reports/beta_connector_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-transition-connector/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use one explicit partition convention. Keep E1 and R1 recombined through the displacement, and do not infer a bound for a filtered R1 share from the unmasked Round-24 estimate."
+      },
+      {
+        "id": "M9-M1-beta-stationary-character-kernel",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Corrected beta-transition stationary character kernel",
+        "status": "proved_internal",
+        "statement_tex": "In the positive-alpha interior of the accepted beta-transition normal form, partial_alpha Psi=log(alpha D_j/(pi q sqrt(Xx))), alpha_0=pi q sqrt(Xx)/D_j, and |Psi''(alpha_0)|=alpha_0^(-1). Multiplying the Round-20 gamma power alpha^(sigma+Re(z)/2-1/2), the arithmetic factor h^(-sigma+Re(z)/2)q^(-sigma-Re(z)/2), and the stationary factor alpha_0^(1/2) leaves exactly q^0. The leading q-phase is exp(-i q theta_j(x)), theta_j(x)=pi sqrt(Xx)/D_j. For D_M^chi(theta)=sum_(q<=M)chi_4(q)exp(-iqtheta), sup_(M<=Q)|D_M^chi(theta)|<<min(Q,1+|cos theta|^(-1)) and its one-period L1 norm is <<log(2Q); interval sums carry the discrete-BV norm of their amplitude. For integral D_0 and odd q, |D_0-q/2|>=1/2. These conclusions do not supply the phase-pushforward density, complete actual-profile q-BV bound, Hilbert-pole uniformity, endpoint control, or outside-height limit needed for the transition estimate.",
+        "dependencies": [
+          "M9-M1-diagonal-single-transition-normal-form",
+          "M9-M1-partial-functional-equation-transition-reduction"
+        ],
+        "implies": [
+          "M9-M1-beta-transition-connector-reduction"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "proofs/kernels/m9_m1_beta_character_dirichlet.md",
+            "rounds/codex-managed/m9-m1-beta-transition-connector/reports/beta_physical_kernel_attack.md",
+            "rounds/codex-managed/m9-m1-beta-transition-connector/reports/beta_connector_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-transition-connector/reports/blind_character_dirichlet_lemma.md",
+            "rounds/codex-managed/m9-m1-beta-transition-connector/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Derive the exact radial phase pushforward and an integrable uniform discrete-BV bound for the complete actual-profile amplitude, separating the hard top Hilbert pole from smooth interior scales."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-beta-transition-connector-reduction",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M1-beta-Cauchy-Green-connector-identity",
+          "M9-M1-beta-stationary-character-kernel"
+        ],
+        "statement_tex": "Choose and record either a hierarchical beta mask psi(beta), which contains the double-bounded box, or a disjoint mask psi(beta)(1-psi(alpha)), which has two connector edges and crosses only a filtered A=0 residue share. Using the proved finite Cauchy-Green identity, displace the complete recombined radial integrand without separating the artificial E1/R1 pole. Then physicalize the shifted line plus connector and prove normalized O_epsilon(X^epsilon) using a controlled radial phase pushforward and complete-profile q-BV estimate for the q^0 period-four character kernel, uniformly through the hard top Hilbert pole, mask edges, radial endpoints, and finite outside-height limits.",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-transition-connector/reports/blind_beta_connector_identity.md",
+            "rounds/codex-managed/m9-m1-beta-transition-connector/reports/beta_physical_kernel_attack.md",
+            "rounds/codex-managed/m9-m1-beta-transition-connector/reports/beta_connector_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-transition-connector/reports/blind_character_dirichlet_lemma.md",
+            "rounds/codex-managed/m9-m1-beta-transition-connector/synthesis.md"
+          ]
+        },
+        "next_action": "Adopt the hierarchical partition, prove the double-bounded share and recombined E1+R1 displacement are target-safe, then establish the radial pushforward and complete-profile q-BV theorem with hard top and smooth interior scales separated."
+      },
+      {
+        "id": "M9-M1-swept-transition-horizontal-operator",
+        "status": "open",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-transition-connector/synthesis.md"
+          ]
+        },
+        "next_action": "Complete the beta radial-pushforward/BV estimate, including its full residue ledger, before returning to the alpha-bounded zeta-high branch."
+      },
+      {
+        "id": "M9-M1-renormalized-radial-boundary-operator",
+        "status": "open",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-transition-connector/synthesis.md"
+          ]
+        },
+        "next_action": "Use the recombined E1+R1 displacement; do not reopen the accepted unmasked physical endpoint and R1 bounds or apply them to an isolated masked share."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round26-alpha-stationary-phase-produces-q-inverse-arctangent",
+        "reason": "The stationary Hessian factor alpha_0^(1/2) changes the apparent power: the exact total exponent is q^0, consistent with the exact sine kernel. The chi_4(q)/q arctangent series does not arise from this stationary phase."
+      },
+      {
+        "id": "Round26-disjoint-beta-mask-has-one-connector-edge",
+        "reason": "For psi(beta)(1-psi(alpha)), differentiation gives psi'(beta)(1-psi(alpha))-psi(beta)psi'(alpha); omitting the second strip-edge term changes the finite identity."
+      },
+      {
+        "id": "Round26-filtered-R1-share-controlled-by-full-R1-bound",
+        "reason": "At A=0 the disjoint mask weights the residue by 1-psi(Im z). The accepted Round-24 estimate is for the recombined unmasked physical R1 term and does not separately bound this finite-height filtered share."
+      },
+      {
+        "id": "Round26-isolated-R1-connector-shift-has-only-A0-residue",
+        "reason": "The isolated R1 split has the artificial pole A=1/4-u/2-v in the displacement strip. Its residue cancels only against E1, so the recombined radial factor or both split terms must be shifted together."
+      },
+      {
+        "id": "Round26-character-Dirichlet-L1-alone-closes-beta-transition",
+        "reason": "The logarithmic L1 lemma requires a controlled phase pushforward and integrable uniform discrete BV for the complete actual-profile amplitude; it also holds for the unsigned Dirichlet kernel and by itself proves no transition estimate."
+      }
+    ],
+    "no_change": [
+      {"id":"M9-M1","reason":"The beta transition estimate, alpha transition, and residual direct M1 corridor remain open."},
+      {"id":"M9-M2","reason":"Round 26 concerns only the transformed M1 beta transition."},
+      {"id":"M9","reason":"M9-M1 and M9-M2 remain open."},
+      {"id":"GC-target","reason":"No unconditional Gauss-circle target estimate is claimed."}
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 8,
+    "idea_quality_score": 8,
+    "state_evidence_score": 9,
+    "calibration_score": 10,
+    "reason": "Round 26 proves the exact connector algebra, corrects a decisive stationary-power error, and replaces the false arctangent route by a rigorously logarithmic radial character-kernel interface. Residue recombination, complete-profile BV, Hilbert-pole uniformity, and the actual transition estimate remain open."
+  }
+}

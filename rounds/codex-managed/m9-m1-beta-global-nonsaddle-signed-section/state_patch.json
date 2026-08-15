@@ -1,0 +1,150 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-beta-global-nonsaddle-signed-section-bound",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Global direct beta nonsaddle signed-section and radial-BV bound",
+        "status": "proved_internal",
+        "statement_tex": "On the returned positive-a, positive-b endpoint-free beta terminal, put R=1+|alpha| and kappa=3/4+(a+b)/2<1. After forming the singular signed diagonal Cauchy logarithm before absolute values, the complete phase-removed section satisfies |P|<<log^C(2X)R^(kappa-2), |partial_L P|<<log^C(2X)R^(kappa-3), while its exact phase-conjugated logarithmic x derivative satisfies |Q|<<log^C(2X)R^(kappa-1), |partial_L Q|<<log^C(2X)R^(kappa-2), uniformly in both alpha signs, every actual index, finite physical section, and actual lambda. The x derivative is kept as [eta p(nu)-alpha p(L)]/(L-nu)=alpha[p(nu)-p(L)]/(L-nu)-p(nu)/2. Moving traces have the matching dyadic capacities and vanish in symmetric height exhaustion; the exact diagonal limit is smaller by two powers. On the accepted subordinate inner and outer supports, one L integration by parts is summable because kappa<1, both true outer boundary terms vanish, and the untouched h^(-r)q^(-p), scale, radial-BV, floor, star, character, collision, endpoint, routed-module, and external-factor ledger gives a physical O(X^(1/4)log^C(2X)) contribution. No saddle stationary numerator or global lambda^(-2) normalization is used.",
+        "dependencies": [
+          "M9-M1-beta-finite-endpoint-free-Plemelj-vector",
+          "M9-M1-beta-endpoint-free-axial-remainder-limit",
+          "M9-M1-beta-signed-diagonal-Cauchy-section-BV",
+          "M9-M1-beta-off-diagonal-smooth-product-cell-bound",
+          "M9-M1-beta-double-bounded-radial-BV-reduction",
+          "M9-M1-beta-positive-line-subordinate-alpha-partition"
+        ],
+        "implies": [
+          "M9-M1-beta-positive-line-alpha-localization-certificate"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-global-nonsaddle-signed-section/reports/blind_global_section_rederivation.md",
+            "rounds/codex-managed/m9-m1-beta-global-nonsaddle-signed-section/reports/global_signed_section_attack.md",
+            "rounds/codex-managed/m9-m1-beta-global-nonsaddle-signed-section/reports/clean_global_section_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-global-nonsaddle-signed-section/reviews/conductor_global_section_calculus.md",
+            "rounds/codex-managed/m9-m1-beta-global-nonsaddle-signed-section/reviews/conductor_global_boundary_and_power_audit.md",
+            "rounds/codex-managed/m9-m1-beta-global-nonsaddle-signed-section/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use this only for the subordinate positive-line inner and outer groups; retain the signed-before-absolute order and raw nonsaddle coefficient ledger."
+      },
+      {
+        "id": "M9-M1-beta-fixed-ratio-smooth-cutoff-invariance",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Smooth-cutoff invariance of the fixed-ratio beta product-cell theorem",
+        "status": "proved_internal",
+        "statement_tex": "Let m be one of a fixed finite family of smooth multipliers supported where c lambda<=|alpha|<=C lambda, with |partial_L^a(x partial_x)^b m|<<lambda^(-a) for a<=2 and b<=1. Multiplication by m preserves the accepted Round-41 signed diagonal, off-diagonal, smooth, moving-trace, exact Morse-BV, entry, exit, and half-Fresnel bounds by Leibniz and finite linearity. Hence the repaired middle multipliers from M9-M1-beta-positive-line-subordinate-alpha-partition are covered exactly by the accepted fixed-ratio saddle/entry/exit theorem; their sum equals the full middle antecedent and leaves the total saddle coefficient unchanged. This creates no alpha connector because localization occurs after return to the positive line.",
+        "dependencies": [
+          "M9-M1-beta-off-diagonal-smooth-product-cell-bound",
+          "M9-M1-beta-signed-diagonal-Cauchy-section-BV",
+          "M9-M1-beta-two-saddle-Fresnel-normal-form",
+          "M9-M1-beta-positive-line-subordinate-alpha-partition"
+        ],
+        "implies": [
+          "M9-M1-beta-positive-line-alpha-localization-certificate"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-global-nonsaddle-signed-section/reports/global_signed_section_attack.md",
+            "rounds/codex-managed/m9-m1-beta-global-nonsaddle-signed-section/reports/clean_global_section_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-global-nonsaddle-signed-section/reviews/conductor_middle_cutoff_invariance.md",
+            "rounds/codex-managed/m9-m1-beta-global-nonsaddle-signed-section/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-global-nonsaddle-signed-section/reports/blind_global_section_rederivation.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use this scoped invariance only for fixed finite smooth scaled middle refinements under the accepted Round-41 antecedent."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-beta-positive-line-alpha-localization-certificate",
+        "status": "proved_internal",
+        "statement_tex": "At fixed finite U,V,S, first return the complete sixteen product Cauchy--Green cells to the positive-a, positive-b endpoint-free beta representative and only then split by 1=chi_0(alpha)+(1-chi_0(alpha)). The central terminal and both artificial alpha shares are target-safe by M9-M1-beta-positive-line-compact-terminal-and-artificial-bound. The complement has the exact one-count subordinate partition M9-M1-beta-positive-line-subordinate-alpha-partition. Its inner and outer groups are target-safe by M9-M1-beta-global-nonsaddle-signed-section-bound, while its middle group is covered by M9-M1-beta-fixed-ratio-smooth-cutoff-invariance and the accepted complete large-alpha saddle/entry/exit package. Every floor, star, character, equality/collision convention, routed module, contour factor, radial coefficient, and external physical factor is retained once. Therefore the complete returned positive-line beta alpha localization contributes O(X^(1/4)log^C(2X)).",
+        "dependencies_added": [
+          "M9-M1-beta-global-nonsaddle-signed-section-bound",
+          "M9-M1-beta-fixed-ratio-smooth-cutoff-invariance"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-global-nonsaddle-signed-section/reports/global_signed_section_attack.md",
+            "rounds/codex-managed/m9-m1-beta-global-nonsaddle-signed-section/reports/clean_global_section_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-global-nonsaddle-signed-section/reviews/conductor_global_boundary_and_power_audit.md",
+            "rounds/codex-managed/m9-m1-beta-global-nonsaddle-signed-section/reviews/conductor_middle_cutoff_invariance.md",
+            "rounds/codex-managed/m9-m1-beta-global-nonsaddle-signed-section/synthesis.md"
+          ]
+        },
+        "reason_for_promotion": "The exact subordinate partition, compact/artificial bounds, global nonsaddle signed-section theorem, fixed-ratio cutoff-invariance bridge, and complete large-alpha package now cover one common returned positive-line antecedent with all boundary and normalization controls validated.",
+        "next_action": "Use the complete positive-line localization as a closed beta-branch input; do not infer the separate alpha-bounded zeta-high branch or M9-M1."
+      },
+      {
+        "id": "M9-M1-beta-double-bounded-cell-bound",
+        "status": "proved_internal",
+        "statement_tex": "The exact compact positive-line beta terminal and both oriented artificial-residue alpha shares are target-safe by M9-M1-beta-positive-line-compact-terminal-and-artificial-bound. Their exact three-selector amplitude satisfies sup_x(|A(x)|+x|A'(x)|)=O(log^C(2X)), and the accepted radial-BV reduction gives physical O(X^(1/4)log^C X). The formerly missing aggregate one-count coverage is now supplied by the proved positive-line alpha-localization certificate: the compact cell, repaired fixed-ratio middle package, and global nonsaddle inner/outer groups form one complete returned positive-line partition. No rowwise sixteen-stratum amplitude equality is asserted or needed.",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-global-nonsaddle-signed-section/synthesis.md"
+          ]
+        },
+        "reason_for_promotion": "The compact three-selector amplitude and radial-BV estimate were already proved; Round 47 closes its sole remaining aggregate localization dependency by exact middle and global nonsaddle coverage.",
+        "next_action": "Treat the beta double-bounded/positive-line cell as closed and perform the explicit complete beta-transition graph assembly before returning to the alpha-bounded branch."
+      },
+      {
+        "id": "M9-M1-beta-transition-connector-reduction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-global-nonsaddle-signed-section/synthesis.md"
+          ]
+        },
+        "next_action": "All positive-line beta analytic cells are now target-safe. Reconcile and promote the remaining wrapper dependencies, then certify the complete beta transition before returning to the separate alpha-bounded branch."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round47-global-nonsaddle-normalized-by-lambda",
+        "reason": "Away from fixed-ratio saddle cells, the correct global analytic scale is R=1+|alpha|. A global lambda^(-2) symbol normalization imports a saddle scale into nonsaddle geometry."
+      },
+      {
+        "id": "Round47-split-x-endpoint-numerator-before-height-estimate",
+        "reason": "The exact radial derivative must retain [eta p(nu)-alpha p(L)]/(L-nu)=alpha[p(nu)-p(L)]/(L-nu)-p(nu)/2. Estimating its endpoint terms independently discards the cancellation that gives an integrable height tail."
+      },
+      {
+        "id": "Round47-fixed-X-Cauchy-tail-constant-is-polylogarithmic",
+        "reason": "Round 38 proves height-tail existence with an unrestricted X-dependent constant. The target-sized result instead keeps the radial oscillation and proves a normalized radial-BV bound before applying the external X^(1/4) operator."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "The beta positive-line branch has advanced substantially, but the complete beta wrapper, separate alpha-bounded zeta-high branch, and other M1 interfaces remain open."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1 and M9-M2 remain open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "No unconditional Gauss-circle estimate is claimed."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 9,
+    "idea_quality_score": 9,
+    "state_evidence_score": 9,
+    "calibration_score": 10,
+    "reason": "Round 47 proves the global nonsaddle theorem and middle-cutoff invariance, closing the exact positive-line beta localization and its aggregate double-bounded dependency while preserving the separate alpha-bounded and M9 obligations."
+  }
+}

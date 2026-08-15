@@ -1,0 +1,2152 @@
+{
+  "schema_version": 1,
+  "research_program": "gauss-circle-proof-development",
+  "conductor": "Codex",
+  "active_round": 73,
+  "archive_note": "Rounds 1-25 are documented in their campaign plan, synthesis, state patch, and historical project summary artifacts. This compact ledger retains the immediately active research chain after a repair of the derived ledger file in Round 28.",
+  "rounds": [
+    {
+      "round_index": 26,
+      "campaign_id": "m9-m1-beta-transition-connector",
+      "type": "beta_transition_connector",
+      "status": "complete",
+      "objective": "Derive the connector-completed finite beta-transition identity and its stationary character interface.",
+      "tasks": [
+        {
+          "id": "blind_beta_connector_identity",
+          "role": "blind_rederiver",
+          "status": "complete_with_elementary_kernel_addendum"
+        },
+        {
+          "id": "beta_physical_kernel_attack",
+          "role": "discovery",
+          "status": "complete_with_normalization_correction"
+        },
+        {
+          "id": "beta_connector_hostile_audit",
+          "role": "seam_reviewer",
+          "status": "complete_with_normalization_correction"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0
+      },
+      "closing_assessment": {
+        "decision": "promote_connector_identity_with_later_scope_correction",
+        "graph_mutation": true,
+        "main_result": "The finite connector and unsplit q^0 character kernel are proved; Round 27 corrects their operator scope."
+      },
+      "next_round": 27
+    },
+    {
+      "round_index": 27,
+      "campaign_id": "m9-m1-beta-radial-pushforward-bv",
+      "type": "beta_radial_pushforward_bv",
+      "status": "complete",
+      "objective": "Use the hierarchical beta partition and distinguish unsplit from post-endpoint radial normalization.",
+      "tasks": [
+        {
+          "id": "blind_hierarchical_recombined_identity",
+          "role": "blind_rederiver",
+          "status": "complete"
+        },
+        {
+          "id": "radial_pushforward_qbv_attack",
+          "role": "discovery",
+          "status": "complete_with_conductor_materialized_report"
+        },
+        {
+          "id": "pushforward_bv_hostile_audit",
+          "role": "seam_reviewer",
+          "status": "complete"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0
+      },
+      "closing_assessment": {
+        "decision": "promote_exact_hierarchy_and_scoped_signed_gain_reject_pre_split_qBV",
+        "graph_mutation": true,
+        "main_result": "The exact hierarchy and omega split are proved. Unsplit G is q^0, post-endpoint R1 is q^(-1), and the separated signed hard-top convolution is locally q^(-2). Uniform transition patching and complete sums remain open."
+      },
+      "next_round": 28
+    },
+    {
+      "round_index": 28,
+      "campaign_id": "m9-m1-beta-uniform-stationary-patching",
+      "type": "beta_uniform_stationary_patching",
+      "status": "complete",
+      "objective": "Extend the separated signed hard-top gain uniformly through saddle transitions and execute the complete beta-branch sums, or isolate the first exact quantitative survivor.",
+      "tasks": [
+        {
+          "id": "blind_uniform_saddle_statement",
+          "role": "blind_rederiver",
+          "status": "complete"
+        },
+        {
+          "id": "uniform_patching_sum_attack",
+          "role": "discovery",
+          "status": "terminated_no_report_conductor_materialized"
+        },
+        {
+          "id": "transition_patching_hostile_audit",
+          "role": "seam_reviewer",
+          "status": "complete"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0
+      },
+      "exit_gates": [
+        "uniform endpoint-stationary decomposition",
+        "signed PV/delta order",
+        "artificial-pole ledger",
+        "complete power summation or exact survivor",
+        "blind and hostile validation",
+        "conductor decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_two_saddle_Fresnel_and_height_edge_obstruction",
+        "graph_mutation": true,
+        "main_result": "Both signed saddles have conditional uniform Fresnel transitions, but the finite-v moving top pole has a logarithmic edge. The oriented outside-v-side reconciliation is the next open kernel."
+      },
+      "next_round": 29
+    },
+    {
+      "round_index": 29,
+      "campaign_id": "m9-m1-beta-outside-v-side-reconciliation",
+      "type": "beta_outside_v_side_reconciliation",
+      "status": "complete",
+      "objective": "Reconcile the finite v-vertical logarithmic moving-pole edge with its exact oriented outside-v sides and residue ledger.",
+      "tasks": [
+        {
+          "id": "blind_outside_v_identity",
+          "role": "blind_rederiver",
+          "status": "complete"
+        },
+        {
+          "id": "outside_v_cancellation_attack",
+          "role": "discovery",
+          "status": "complete"
+        },
+        {
+          "id": "outside_v_hostile_audit",
+          "role": "seam_reviewer",
+          "status": "complete"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0
+      },
+      "exit_gates": [
+        "oriented finite v identity",
+        "log coefficient matching",
+        "top/height order of limits",
+        "uniform derivatives",
+        "blind and hostile validation",
+        "conductor decision"
+      ],
+      "closing_assessment": {
+        "decision": "reject_side_cancellation_promote_finite_box_Plemelj_limit",
+        "graph_mutation": true,
+        "main_result": "The retained v-sides reproduce the moving edge rather than cancel it. The exact signed (mu,nu) box has a distributional Plemelj limit, leaving a locally logarithmic two-saddle kernel instead of a pointwise C2 amplitude."
+      },
+      "next_round": 30
+    },
+    {
+      "round_index": 30,
+      "campaign_id": "m9-m1-beta-log-amplitude-two-saddle",
+      "type": "beta_log_amplitude_two_saddle",
+      "status": "complete",
+      "objective": "Prove a distribution-first logarithmic-amplitude two-saddle estimate through every moving polytope face, retaining the local q^(-2) power.",
+      "tasks": [
+        {
+          "id": "blind_log_fresnel_lemma",
+          "role": "blind_rederiver",
+          "status": "complete"
+        },
+        {
+          "id": "beta_log_kernel_attack",
+          "role": "discovery",
+          "status": "complete"
+        },
+        {
+          "id": "log_kernel_hostile_audit",
+          "role": "seam_reviewer",
+          "status": "complete"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0
+      },
+      "exit_gates": [
+        "sharp moving-log stationary lemma",
+        "exact delta/PV finite-section decomposition",
+        "actual q-power audit",
+        "complete-symbol hypothesis audit",
+        "blind and hostile validation",
+        "conductor decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_log_Fresnel_and_face_q4_isolate_regular_symbol_BV",
+        "graph_mutation": true,
+        "main_result": "The moving logarithm costs one sharp log and the actual face term is locally q^(-4). The regular finite part retains the q^(-2) bottleneck, conditional on an unproved complete-symbol BV norm."
+      },
+      "next_round": 31
+    },
+    {
+      "round_index": 31,
+      "campaign_id": "m9-m1-beta-regular-finite-part-symbol-bv",
+      "type": "beta_regular_finite_part_symbol_bv",
+      "status": "complete",
+      "objective": "Prove the complete regular beta finite-part scale-normalized BV norm through actual profiles and residue seams, or isolate the first exact derivative obstruction.",
+      "tasks": [
+        {
+          "id": "blind_complete_symbol_ledger",
+          "role": "blind_rederiver",
+          "status": "complete"
+        },
+        {
+          "id": "regular_symbol_bv_attack",
+          "role": "discovery",
+          "status": "terminated_timebox_conductor_materialized"
+        },
+        {
+          "id": "regular_symbol_hostile_audit",
+          "role": "seam_reviewer",
+          "status": "complete"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0
+      },
+      "exit_gates": [
+        "exact complete-symbol definition",
+        "scaled product-rule derivative ledger",
+        "moving endpoint traces",
+        "rho and v seam reconciliation",
+        "height-tail and q-power audit",
+        "blind and hostile validation",
+        "conductor decision"
+      ],
+      "closing_assessment": {
+        "decision": "reject_termwise_mu_BV_promote_physical_height_lemma_and_separated_R1",
+        "graph_mutation": true,
+        "main_result": "Physical-height translation and endpoint recombination restore the target BV scale and prove separated R1 local q^(-2). The common recombined kernel, axial/radial sides, and joint exhaustion remain open."
+      },
+      "next_round": 32
+    },
+    {
+      "round_index": 32,
+      "campaign_id": "m9-m1-beta-complete-physical-height-symbol",
+      "type": "beta_complete_physical_height_symbol",
+      "status": "complete",
+      "objective": "Construct and bound the common recombined physical-height kernel through rho, axial, radial-side, and joint height-exhaustion seams.",
+      "tasks": [
+        {
+          "id": "blind_common_kernel_identity",
+          "role": "blind_rederiver",
+          "status": "complete"
+        },
+        {
+          "id": "complete_kernel_symbol_attack",
+          "role": "discovery",
+          "status": "terminated_timebox_conductor_materialized"
+        },
+        {
+          "id": "complete_kernel_hostile_audit",
+          "role": "seam_reviewer",
+          "status": "complete"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0
+      },
+      "exit_gates": [
+        "exact common physical-height kernel",
+        "rho Taylor and combined-diagonal ledger",
+        "weighted value and derivative bounds",
+        "axial b-limit",
+        "radial-side and joint-height exhaustion",
+        "blind and hostile validation",
+        "conductor decision"
+      ],
+      "closing_assessment": {
+        "decision": "reject_all_strata_symbol_promote_boundary_first_architecture",
+        "graph_mutation": true,
+        "main_result": "Radial sides and endpoint functionals must be collapsed through separate modules before defining the terminal symbol. Rho/cutoff cancellation holds to all orders; mask-compatible endpoint/axial ownership and the reduced terminal bound remain open."
+      },
+      "next_round": 33
+    },
+    {
+      "round_index": 33,
+      "campaign_id": "m9-m1-beta-mask-endpoint-axial-compatibility",
+      "type": "beta_mask_endpoint_axial_compatibility",
+      "status": "complete",
+      "objective": "Prove the exact finite compatibility of hierarchical beta masking, endpoint collapse, and axial vector ownership, or isolate the first explicit surviving boundary operator.",
+      "tasks": [
+        {
+          "id": "blind_mask_endpoint_axial_identity",
+          "role": "blind_rederiver",
+          "status": "complete_with_scope_addendum"
+        },
+        {
+          "id": "mask_endpoint_axial_attack",
+          "role": "discovery",
+          "status": "complete_after_conductor_scope_intervention"
+        },
+        {
+          "id": "mask_endpoint_axial_hostile_audit",
+          "role": "seam_reviewer",
+          "status": "complete"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0
+      },
+      "exit_gates": [
+        "frozen hierarchical mask convention",
+        "finite endpoint and axial contour identity",
+        "one-count arithmetic, artificial, axial, corner, and connector ledger",
+        "rho ownership defect decision",
+        "physical endpoint-limit scope audit",
+        "blind and hostile validation",
+        "conductor decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_scoped_mask_algebra_retain_full_compatibility_open",
+        "graph_mutation": true,
+        "main_result": "The local common rho defect vanishes, but beta-internal recombination yields a masked endpoint prefix and finite axis shifts create nonzero connector and mixed strata. Global endpoint collapse plus an actual connector-completed axial ledger is required."
+      },
+      "next_round": 34
+    },
+    {
+      "round_index": 34,
+      "campaign_id": "m9-m1-beta-complete-axial-connector-ledger",
+      "type": "beta_complete_axial_connector_ledger",
+      "status": "complete",
+      "objective": "Write and validate the actual finite two-axis beta connector, residue, mixed-stratum, and corner ledger after global endpoint collapse.",
+      "tasks": [
+        {
+          "id": "blind_two_axis_connector_identity",
+          "role": "blind_rederiver",
+          "status": "complete"
+        },
+        {
+          "id": "actual_axial_connector_ledger_attack",
+          "role": "discovery",
+          "status": "complete"
+        },
+        {
+          "id": "two_axis_connector_hostile_audit",
+          "role": "seam_reviewer",
+          "status": "complete"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0
+      },
+      "exit_gates": [
+        "actual endpoint-free kernel schema",
+        "v-then-u full connector ledger",
+        "u-then-v independent reversal",
+        "corner convention and mixed-stratum signs",
+        "artificial-pole and physical-module scope",
+        "blind and hostile validation",
+        "conductor decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_finite_sixteen_stratum_ledger_isolate_limit_commutators",
+        "graph_mutation": true,
+        "main_result": "The complete finite product Cauchy--Green ledger, order reversal, actual pre-limit stratum application, and artificial-pole cancellation are proved. A post-module endpoint-free axial vector still requires radial-side and physical-module transfer commutation."
+      },
+      "next_round": 35
+    },
+    {
+      "round_index": 35,
+      "campaign_id": "m9-m1-beta-axial-side-exhaustion",
+      "type": "beta_axial_side_exhaustion_commutation",
+      "status": "complete",
+      "objective": "Prove or refute commutation of the complete sixteen-stratum beta transfer with the accepted nested exhaustion deleting renormalized radial sides.",
+      "tasks": [
+        {
+          "id": "blind_transferred_side_decay",
+          "role": "blind_rederiver",
+          "status": "complete"
+        },
+        {
+          "id": "arbitrary_m_side_transfer_attack",
+          "role": "discovery",
+          "status": "terminated_timebox_conductor_materialized"
+        },
+        {
+          "id": "side_transfer_capacity_hostile_audit",
+          "role": "seam_reviewer",
+          "status": "complete"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0
+      },
+      "exit_gates": [
+        "arbitrary-M remainder derivative and residue bounds",
+        "sixteen-stratum S-power table",
+        "one explicit M and polynomial nesting",
+        "collision and corner control",
+        "actual profile and normalization ledger",
+        "blind and hostile validation",
+        "conductor decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_exact_compact_support_side_annihilation",
+        "graph_mutation": true,
+        "main_result": "For the actual compact beta mask, support separation makes all sixteen transferred renormalized radial-side strata identically zero at sufficiently separated finite height; M=1 suffices. Only the endpoint/arithmetic physical-module commutator remains."
+      },
+      "next_round": 36
+    },
+    {
+      "round_index": 36,
+      "campaign_id": "m9-m1-beta-physical-module-transfer",
+      "type": "beta_physical_module_transfer_commutation",
+      "status": "complete",
+      "objective": "Prove or refute exact compatibility of the complete beta two-axis transfer with the symmetric physical endpoint and recombined R1 arithmetic modules.",
+      "tasks": [
+        {
+          "id": "blind_global_module_transfer_identity",
+          "role": "blind_rederiver",
+          "status": "complete_after_scope_correction"
+        },
+        {
+          "id": "physical_endpoint_arithmetic_transfer_attack",
+          "role": "discovery",
+          "status": "complete"
+        },
+        {
+          "id": "physical_module_limit_hostile_audit",
+          "role": "seam_reviewer",
+          "status": "complete"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0
+      },
+      "exit_gates": [
+        "common finite endpoint/arithmetic representative",
+        "three-mask cancellation on all sixteen strata",
+        "finite Perron to physical profile limit",
+        "artificial/arithmetic/axial collision ledger",
+        "profiles, stars, character, and normalization",
+        "blind and hostile validation",
+        "conductor decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_exact_aggregate_physical_module_routing",
+        "graph_mutation": true,
+        "main_result": "The full three-mask finite transfer exactly reassembles the original fixed-w positive-line endpoint/R1 module before the accepted physical limit. Both boundary-module interfaces are closed; the endpoint-free complement limit remains open."
+      },
+      "next_round": 37
+    },
+    {
+      "round_index": 37,
+      "campaign_id": "m9-m1-beta-endpoint-free-axial-limit",
+      "type": "beta_endpoint_free_axial_remainder_limit",
+      "status": "complete",
+      "objective": "Prove or refute the unique symmetric physical/outside-height limit of the exact fixed-w endpoint-free finite complement.",
+      "tasks": [
+        {
+          "id": "blind_endpoint_free_limit_identity",
+          "role": "blind_rederiver",
+          "status": "complete"
+        },
+        {
+          "id": "endpoint_free_axial_limit_attack",
+          "role": "discovery",
+          "status": "complete"
+        },
+        {
+          "id": "endpoint_free_limit_hostile_audit",
+          "role": "seam_reviewer",
+          "status": "complete"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0
+      },
+      "exit_gates": [
+        "fixed-w finite complement",
+        "complete post-module stratum inventory",
+        "signed Plemelj and moving-face reconciliation",
+        "outside-height and profile exhaustion",
+        "collision, corner, profile, and normalization ledger",
+        "blind and hostile validation",
+        "conductor decision before symbol estimates"
+      ],
+      "closing_assessment": {
+        "decision": "promote_finite_Plemelj_vector_isolate_complete_Cauchy_tail",
+        "graph_mutation": true,
+        "main_result": "The exact fixed-w endpoint-free complement and fixed-box signed Plemelj vector are proved. The unique global physical/outside-height limit remains open at one complete actual positive-line Cauchy tail; finite local distribution theory alone is insufficient."
+      },
+      "next_round": 38
+    },
+    {
+      "round_index": 38,
+      "campaign_id": "m9-m1-beta-actual-profile-cauchy-tail",
+      "type": "beta_actual_profile_Cauchy_tail",
+      "status": "complete",
+      "objective": "Prove the complete actual positive-b endpoint-free Cauchy tail in beta-slab coordinates, or isolate its first exact actual-kernel survivor.",
+      "tasks": [
+        {
+          "id": "blind_beta_slab_height_asymptotic",
+          "role": "blind_rederiver",
+          "status": "complete"
+        },
+        {
+          "id": "actual_cauchy_tail_attack",
+          "role": "discovery",
+          "status": "complete_with_artificial_residue_scope_correction"
+        },
+        {
+          "id": "cauchy_tail_hostile_audit",
+          "role": "seam_reviewer",
+          "status": "complete"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0
+      },
+      "exit_gates": [
+        "beta-slab coordinate and Jacobian",
+        "two-sided gamma/R1 tangent power table",
+        "signed top delta/PV treatment",
+        "complete actual coefficient and profile sum",
+        "uniform joint exhaustion or exact survivor",
+        "blind and hostile validation",
+        "conductor decision before local symbol estimates"
+      ],
+      "closing_assessment": {
+        "decision": "promote_actual_Cauchy_tail_and_limiting_axial_architecture",
+        "graph_mutation": true,
+        "main_result": "At c'=5/4 the beta-slab gamma exponent is kappa<1. Signed Plemelj subtraction, one inverse R1 height, and cubic profile decay give an integrable terminal tail; the analytically recombined artificial residue is O_X(|nu|^-3). The endpoint-free axial limit, complete connector ledger, and mask--endpoint--axial compatibility are proved. Quantitative X-uniform terminal-symbol bounds remain open."
+      },
+      "next_round": 39
+    },
+    {
+      "round_index": 39,
+      "campaign_id": "m9-m1-beta-axial-subtracted-terminal-symbol",
+      "type": "beta_axial_subtracted_terminal_symbol",
+      "status": "complete",
+      "objective": "Define and prove the quantitative X-uniform weighted value and fixed-physical-height derivative bounds for the limiting axial-subtracted beta terminal symbol, or isolate the first exact actual survivor.",
+      "tasks": [
+        {
+          "id": "blind_terminal_symbol_definition",
+          "role": "blind_rederiver",
+          "status": "complete_with_aggregate_type_obstruction"
+        },
+        {
+          "id": "quantitative_terminal_symbol_attack",
+          "role": "discovery",
+          "status": "complete_with_cellwise_reformulation"
+        },
+        {
+          "id": "terminal_symbol_hostile_audit",
+          "role": "seam_reviewer",
+          "status": "complete_corrective"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0
+      },
+      "exit_gates": [
+        "limiting symbol definition and one-count ownership",
+        "fixed-nu derivative ledger",
+        "complete X and lambda power audit",
+        "saddle, rho, axial and moving-face seams",
+        "actual profile, scale and coefficient sums",
+        "target weighted bound or exact survivor",
+        "blind and hostile validation",
+        "conductor decision before downstream BV promotion"
+      ],
+      "closing_assessment": {
+        "decision": "revise_aggregate_target_promote_cellwise_reductions",
+        "graph_mutation": true,
+        "main_result": "The aggregate one-lambda target is ill typed. Exact normalization, singular/smooth separation, fixed-height regularizer algebra, phase removal, and a conditional target-safe leading sum are proved. The complete cellwise second translation divided difference, moving traces, and Morse remainder remain open."
+      },
+      "next_round": 40
+    },
+    {
+      "round_index": 40,
+      "campaign_id": "m9-m1-beta-translation-divided-difference",
+      "type": "beta_translation_divided_difference",
+      "status": "complete",
+      "objective": "Prove the corrected cellwise mixed symbol norm at the complete second translation divided difference and moving/Morse traces, or isolate the first exact actual quantitative survivor.",
+      "tasks": [
+        {
+          "id": "blind_translation_difference",
+          "role": "blind_rederiver",
+          "status": "complete"
+        },
+        {
+          "id": "complete_translation_difference_attack",
+          "role": "discovery",
+          "status": "complete_with_scope_downgrade"
+        },
+        {
+          "id": "translation_difference_hostile_audit",
+          "role": "seam_reviewer",
+          "status": "complete"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0
+      },
+      "exit_gates": [
+        "exact phase-removed cell factorization",
+        "fixed-nu divided-difference identity",
+        "actual mixed derivative ledger",
+        "singular/smooth separation",
+        "two-saddle entry/exit and Morse remainder",
+        "moving traces and common ownership",
+        "target mixed norm or sharp actual survivor",
+        "blind and hostile validation",
+        "conductor decision before downstream composition"
+      ],
+      "closing_assessment": {
+        "decision": "promote_fixed_height_identity_and_signed_diagonal_revise_complete_target_to_hybrid",
+        "graph_mutation": true,
+        "main_result": "The exact fixed-height identity is proved. The all-absolute terminal norm and the separated full-kernel integrable majorant are false because K_C has a 1/nu tail. Its signed finite-section primitive is target-safe, leaving the complete off-diagonal/smooth hybrid norm open."
+      },
+      "next_round": 41
+    },
+    {
+      "round_index": 41,
+      "campaign_id": "m9-m1-beta-off-diagonal-product-cell",
+      "type": "beta_off_diagonal_product_cell",
+      "status": "complete",
+      "objective": "Prove the complete cancellation-preserving off-diagonal and smooth product-cell norm after the signed diagonal Cauchy section, or isolate a sharp actual-form obstruction.",
+      "tasks": [
+        {
+          "id": "independent_product_norm_rederivation",
+          "role": "statement_only_validator",
+          "status": "complete_corrected"
+        },
+        {
+          "id": "off_diagonal_mixed_norm_attack",
+          "role": "discovery",
+          "status": "complete_corrected"
+        },
+        {
+          "id": "product_cell_hostile_audit",
+          "role": "seam_reviewer",
+          "status": "complete"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0
+      },
+      "exit_gates": [
+        "exact product-cell formulas and ownership",
+        "endpoint-divided-difference cancellation",
+        "four-region height estimates",
+        "moving traces and affine switches",
+        "two-saddle entry/exit and exact Morse remainder",
+        "blind and hostile validation",
+        "conductor decision"
+      ],
+      "superseded_artifacts": [
+        {
+          "id": "blind_product_cell_factorization",
+          "status": "contaminated_independent_not_counted_as_statement_only_gate"
+        }
+      ],
+      "closing_assessment": {
+        "decision": "promote_large_alpha_product_cell_and_target_sized_package",
+        "graph_mutation": true,
+        "main_result": "The cancellation-preserving off-diagonal and smooth product-cell norm is proved on both signed large-alpha saddle, entry, and exit cells. With the signed diagonal section and coefficient sum, the complete large-alpha beta package is O_epsilon(X^(1/4+epsilon)); bounded-alpha and double-bounded cells remain open."
+      },
+      "next_round": 42
+    },
+    {
+      "round_index": 42,
+      "campaign_id": "m9-m1-beta-double-bounded-cell",
+      "type": "beta_double_bounded_cell",
+      "status": "complete",
+      "objective": "Prove or refute the target-sized direct estimate for the beta-owned double-bounded cell by compact height control and one radial integration by parts.",
+      "tasks": [
+        {
+          "id": "blind_compact_cell_rederivation",
+          "role": "statement_only_validator",
+          "status": "terminated_no_artifact"
+        },
+        {
+          "id": "double_bounded_radial_attack",
+          "role": "discovery",
+          "status": "complete_corrected"
+        },
+        {
+          "id": "double_bounded_hostile_audit",
+          "role": "seam_reviewer",
+          "status": "complete"
+        },
+        {
+          "id": "fast_blind_compact_cell",
+          "role": "replacement_statement_only_validator",
+          "status": "complete_packet_scope_gap"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0
+      },
+      "exit_gates": [
+        "exact central cutoff and normalization",
+        "compact gamma and signed top height bound",
+        "one x derivative",
+        "coefficient and scale sums",
+        "radial IBP and endpoint stars",
+        "global module ownership",
+        "independent and hostile validation",
+        "conductor decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_conditional_radial_reduction_retain_explicit_compact_cell_open",
+        "graph_mutation": true,
+        "main_result": "The exact radial-BV implication, full endpoint coefficients, signed-top algebra, and candidate compact-cell proof are established. The isolated packet did not expose the complete finite connector/profile one-count amplitude, so the full beta double-bounded cell remains open for explicit validation."
+      },
+      "next_round": 43
+    },
+    {
+      "round_index": 43,
+      "campaign_id": "m9-m1-beta-double-bounded-explicit-validation",
+      "type": "beta_double_bounded_explicit_validation",
+      "status": "complete",
+      "objective": "Validate or refute the explicit finite post-routing beta compact amplitude and its one-count assembly into the accepted radial-BV reduction.",
+      "tasks": [
+        {
+          "id": "blind_explicit_amplitude_proof",
+          "role": "statement_only_validator",
+          "status": "complete_contaminated_not_counted_as_strict_gate"
+        },
+        {
+          "id": "connector_family_line_audit",
+          "role": "assembly_line_auditor",
+          "status": "complete"
+        },
+        {
+          "id": "hostile_compact_assembly_audit",
+          "role": "hostile_seam_reviewer",
+          "status": "complete"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0
+      },
+      "exit_gates": [
+        "strict statement-only amplitude proof",
+        "actual finite family mapping",
+        "connector and artificial one-count",
+        "active j range and floors",
+        "local masked endpoint ownership",
+        "normalization",
+        "conductor decision"
+      ],
+      "closing_assessment": {
+        "decision": "repair_analytic_statement_retain_actual_cell_open_at_selector_table",
+        "graph_mutation": true,
+        "main_result": "The corrected analytic family is target-safe on the actual contour. Promotion fails because strict isolation and exact one-count ownership fail; the surviving beta mixed connector and top/interior scale selectors are the first explicit gaps."
+      },
+      "next_round": 44
+    },
+    {
+      "round_index": 44,
+      "campaign_id": "m9-m1-beta-compact-selector-ownership",
+      "type": "beta_compact_selector_ownership",
+      "status": "complete",
+      "objective": "Construct or refute an exact finite row-by-row selector/ownership certificate from the accepted product Cauchy--Green identity to the corrected beta compact amplitude.",
+      "tasks": [
+        {
+          "id": "actual_compact_table_constructor",
+          "role": "actual_operator_constructor",
+          "status": "complete_with_aggregate_replacement"
+        },
+        {
+          "id": "independent_compact_table_rederivation",
+          "role": "statement_only_independent_rederiver",
+          "status": "complete_contaminated_no_go"
+        },
+        {
+          "id": "compact_table_hostile_audit",
+          "role": "hostile_ownership_reviewer",
+          "status": "complete"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0
+      },
+      "exit_gates": [
+        "all sixteen finite transfer strata classified",
+        "surviving beta mixed connector explicit",
+        "j=0 singular and regular top separated from j>=1 interior",
+        "aggregate versus rowwise physical ownership adjudicated",
+        "floors stars collisions corner and measures retained",
+        "external normalization owned once",
+        "isolation failure recorded",
+        "conductor graph decision"
+      ],
+      "closing_assessment": {
+        "decision": "reject_rowwise_selector_target_replace_by_aggregate_positive_line_localization",
+        "graph_mutation": true,
+        "main_result": "All sixteen terms are finite Stokes representation cells and must be recombined before alpha localization; no row has an individual physical-amplitude type. The lawful replacement is a positive-line central/complement split with three actual terminal selectors. Artificial-residue localization and exact large-alpha matching remain open."
+      },
+      "next_round": 45
+    },
+    {
+      "round_index": 45,
+      "campaign_id": "m9-m1-beta-positive-line-localization",
+      "type": "beta_positive_line_localization",
+      "status": "complete",
+      "objective": "Prove or refute the aggregate positive-line alpha-localization certificate, including the compact terminal, artificial residue, and exact large-alpha complement match.",
+      "tasks": [
+        {
+          "id": "positive_line_certificate_attack",
+          "role": "discovery",
+          "status": "complete_scoped_core_proved_full_certificate_conditional"
+        },
+        {
+          "id": "isolated_positive_line_rederivation",
+          "role": "blind_rederiver",
+          "status": "complete_conditional_verification_clean_isolation"
+        },
+        {
+          "id": "positive_line_localization_hostile_audit",
+          "role": "seam_reviewer",
+          "status": "complete_partial_certification_large_alpha_gap"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0
+      },
+      "exit_gates": [
+        "aggregate Stokes before localization",
+        "three selectors and signed Plemelj",
+        "compact value and x derivative",
+        "artificial residue sign and arithmetic chamber",
+        "large-alpha identical-antecedent match",
+        "clean blind and hostile validation",
+        "conductor decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_compact_and_artificial_core_retain_full_localization_open",
+        "graph_mutation": true,
+        "main_result": "The exact compact three-selector beta terminal and both oriented artificial-residue alpha shares are target-safe. The direct complement remains open at a finite identical-antecedent partition and quantitative nonsaddle completion."
+      },
+      "next_round": 46
+    },
+    {
+      "round_index": 46,
+      "campaign_id": "m9-m1-beta-large-alpha-complement-completion",
+      "type": "beta_large_alpha_complement_completion",
+      "status": "complete",
+      "objective": "Construct an exact finite one-count positive-line complement partition and prove or isolate the nonsaddle completion seam.",
+      "tasks": [
+        {
+          "id": "nonsaddle_completion_attack",
+          "role": "discovery",
+          "status": "replaced_after_context_contamination_clean_replacement_complete"
+        },
+        {
+          "id": "isolated_nonsaddle_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "complete_clean_isolation"
+        },
+        {
+          "id": "nonsaddle_hostile_audit",
+          "role": "seam_reviewer",
+          "status": "replaced_after_context_contamination_clean_replacement_complete"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0
+      },
+      "exit_gates": [
+        "same positive-line antecedent",
+        "finite nonnegative partition",
+        "literal Round-41 cell match or explicit gap",
+        "inner and outer nonsaddle analysis",
+        "signed Cauchy order",
+        "moving traces and raw power ledger",
+        "clean independent and hostile validation",
+        "conductor decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_exact_partition_retain_quantitative_nonsaddle_and_literal_middle_match_open",
+        "graph_mutation": true,
+        "main_result": "The exact subordinate partition is proved. The missing theorem is the global direct after-Plemelj nonsaddle section estimate with one x derivative, moving traces, outer limits, and the untouched q^(-p) ledger; literal Round-41 cutoff coverage is separately open."
+      },
+      "next_round": 47
+    },
+    {
+      "round_index": 47,
+      "campaign_id": "m9-m1-beta-global-nonsaddle-signed-section",
+      "type": "beta_global_nonsaddle_signed_section",
+      "status": "complete",
+      "objective": "Prove the global direct beta nonsaddle signed-section/radial-BV theorem and close the repaired middle-cutoff interface.",
+      "tasks": [
+        {
+          "id": "global_signed_section_attack",
+          "role": "discovery",
+          "status": "complete"
+        },
+        {
+          "id": "blind_global_section_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "complete_clean_isolation"
+        },
+        {
+          "id": "global_section_hostile_audit",
+          "role": "seam_reviewer",
+          "status": "replaced_after_initial_context_contamination_clean_replacement_complete"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0
+      },
+      "exit_gates": [
+        "global gamma both signs",
+        "signed Plemelj before absolute values",
+        "exact phase-conjugated x derivative",
+        "moving traces and true outer limits",
+        "inner and outer lambda uniformity",
+        "middle smooth-cutoff invariance",
+        "raw coefficient and radial-BV sum",
+        "clean independent and hostile validation",
+        "conductor graph decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_global_nonsaddle_cutoff_invariance_positive_line_localization_and_double_bounded_cell",
+        "graph_mutation": true,
+        "main_result": "Intrinsic-height dyadic bounds close both nonsaddle sectors, smooth-cutoff invariance closes the repaired middle group, and the complete returned positive-line beta localization and aggregate double-bounded cell are target-safe."
+      },
+      "next_round": 48
+    },
+    {
+      "round_index": 48,
+      "campaign_id": "m9-m1-beta-wrapper-closure-audit",
+      "type": "beta_wrapper_closure_audit",
+      "status": "complete",
+      "objective": "Audit exact closure of the four remaining beta wrapper nodes and isolate any surviving transition operator.",
+      "tasks": [
+        {
+          "id": "beta_wrapper_implication_attack",
+          "role": "discovery",
+          "status": "complete"
+        },
+        {
+          "id": "blind_beta_wrapper_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "complete_clean_isolation"
+        },
+        {
+          "id": "beta_wrapper_hostile_audit",
+          "role": "seam_reviewer",
+          "status": "complete"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0
+      },
+      "exit_gates": [
+        "common finite antecedent",
+        "complete sixteen-stratum owner ledger",
+        "signed diagonal before absolute values",
+        "stationary versus nonsaddle normalization",
+        "triangular wrapper dependencies",
+        "one-count external normalization",
+        "clean statement-only and hostile gates",
+        "alpha branch exclusion"
+      ],
+      "closing_assessment": {
+        "decision": "promote_all_four_beta_wrappers_zero_residual_create_alpha_branch",
+        "graph_mutation": true,
+        "main_result": "The exact finite beta residual is identically zero and W1--W4 close in order. The alpha-bounded zeta-high trace is the sole remaining transition branch and is now an explicit graph obligation."
+      },
+      "next_round": 49
+    },
+    {
+      "round_index": 49,
+      "campaign_id": "m9-m1-alpha-bounded-zeta-high-transition",
+      "type": "alpha_bounded_zeta_high_operator_definition",
+      "status": "complete",
+      "objective": "Derive the exact connector-completed alpha-bounded zeta-high operator, prove a target estimate, or isolate the first sharp obstruction.",
+      "tasks": [
+        {
+          "id": "alpha_physical_kernel_attack",
+          "role": "discovery",
+          "status": "complete_nonisolated_candidate_evidence"
+        },
+        {
+          "id": "blind_alpha_kernel_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "complete_clean_isolation"
+        },
+        {
+          "id": "alpha_trace_hostile_audit",
+          "role": "seam_reviewer",
+          "status": "complete_independent"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0
+      },
+      "exit_gates": [
+        "finite common-antecedent alpha reduction",
+        "test-distribution comb identity",
+        "mask connector and residue ledger",
+        "integer cosine resonance",
+        "radial stationary control",
+        "height and X capacity",
+        "clean statement-only and hostile validation",
+        "conductor graph decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_masked_cosine_comb_reduction_retain_alpha_bound_open",
+        "graph_mutation": true,
+        "main_result": "The zeta factor has an exact residue-sensitive Dirac/cosine-comb return. The actual alpha mask turns it into a connector-completed log-Mellin projection and owns no A=0 residue. Integer coherence, a radial saddle, and X^(1/8) normalized absolute capacity rule out elementary closure."
+      },
+      "next_round": 50
+    },
+    {
+      "round_index": 50,
+      "campaign_id": "m9-m1-alpha-highpass-log-commutator",
+      "type": "alpha_highpass_log_dilation_commutator",
+      "status": "complete",
+      "objective": "Test whether the zero-mass high-pass log-dilation commutator yields a target-sized projected alpha estimate.",
+      "tasks": [
+        {
+          "id": "alpha_log_commutator_attack",
+          "role": "discovery",
+          "status": "terminated_no_artifact_after_deadline"
+        },
+        {
+          "id": "blind_alpha_highpass_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "complete_clean_isolation"
+        },
+        {
+          "id": "alpha_commutator_hostile_audit",
+          "role": "seam_reviewer",
+          "status": "complete_independent"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0
+      },
+      "exit_gates": [
+        "exact moving multiplier and zero-mass identity",
+        "bounded-alpha coupling",
+        "lattice floor and star adversaries",
+        "connector ownership scope",
+        "Plemelj and height order",
+        "X and height capacity",
+        "clean blind and hostile gates",
+        "conductor decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_moving_packet_no_go_retain_alpha_bound_open",
+        "graph_mutation": true,
+        "main_result": "On separated bounded-alpha slices the high-pass is identically one and the inverse packet has fixed L1 norm. Zero mass and BV do not save lattice/floor/star capacity; the first remaining target is the complete signed jump-incidence coefficient and height tail."
+      },
+      "next_round": 51
+    },
+    {
+      "round_index": 51,
+      "campaign_id": "m9-m1-alpha-signed-jump-incidence",
+      "type": "alpha_signed_jump_incidence",
+      "status": "complete",
+      "objective": "Evaluate the complete signed incidence coefficient at one actual alpha floor, star, profile, or radial seam.",
+      "tasks": [
+        {
+          "id": "actual_jump_incidence_constructor",
+          "role": "discovery",
+          "status": "complete_with_specification_no_go"
+        },
+        {
+          "id": "blind_jump_incidence_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "complete_clean_underdetermination"
+        },
+        {
+          "id": "jump_incidence_hostile_audit",
+          "role": "seam_reviewer",
+          "status": "complete_independent_no_go"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0
+      },
+      "exit_gates": [
+        "universal sixteen-cell incidence",
+        "actual seam definition",
+        "orientation and one count",
+        "distinct distributions",
+        "Plemelj order",
+        "local/global scope",
+        "blind and hostile gates",
+        "conductor decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_universal_incidence_specification_no_go",
+        "graph_mutation": true,
+        "main_result": "The universal connector ledger reconstructs a generic seam with coefficient +1, while the accepted state lacks the typed actual alpha seam needed to evaluate any floor/star/profile/radial coefficient."
+      },
+      "next_round": 52
+    },
+    {
+      "round_index": 52,
+      "campaign_id": "m9-m1-alpha-vaaler-height-floor",
+      "type": "alpha_vaaler_height_floor_type_and_variation",
+      "status": "complete",
+      "objective": "Type the Vaaler height floor correctly and prove its exact adjacent-height variation and actual dyadic-transfer scope.",
+      "tasks": [
+        {
+          "id": "vaaler_height_difference_attack",
+          "role": "discovery",
+          "status": "complete"
+        },
+        {
+          "id": "blind_vaaler_height_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "complete_clean_isolation"
+        },
+        {
+          "id": "vaaler_floor_hostile_audit",
+          "role": "seam_reviewer",
+          "status": "complete_independent"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0
+      },
+      "exit_gates": [
+        "variable type",
+        "exact Phi algebra",
+        "adjacent-height identity",
+        "sharp weighted norms",
+        "dyadic transfer scope",
+        "star ownership",
+        "blind and hostile gates",
+        "conductor decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_discrete_height_lemma_reject_floor_seam_and_unit_to_dyadic_transfer",
+        "graph_mutation": true,
+        "main_result": "H_j has zero contour velocity; its exact unit-height Vaaler change has l1 mass 1/2 and 1/h mass asymptotic to 1/H, but an actual dyadic step changes H to floor(H/2) and restores H-sized coefficient capacity plus all coupled profile and Mellin changes."
+      },
+      "next_round": 53
+    },
+    {
+      "round_index": 53,
+      "campaign_id": "m9-m1-alpha-coupled-dyadic-difference",
+      "type": "alpha_complete_coupled_dyadic_difference",
+      "status": "complete",
+      "objective": "Construct the complete finite and physical adjacent-dyadic difference, audit exact ownership, and prove a signed saving or sharp capacity no-go.",
+      "tasks": [
+        {
+          "id": "coupled_dyadic_difference_attack",
+          "role": "discovery",
+          "status": "complete"
+        },
+        {
+          "id": "blind_coupled_scale_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "complete_clean_isolation"
+        },
+        {
+          "id": "coupled_scale_hostile_audit",
+          "role": "seam_reviewer",
+          "status": "complete_independent"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0
+      },
+      "exit_gates": [
+        "common support",
+        "finite versus physical identity",
+        "profile telescope",
+        "height coupling",
+        "top and bottom owners",
+        "star ownership",
+        "signed scale sums",
+        "boundary terms",
+        "sharp capacity",
+        "blind and hostile gates"
+      ],
+      "closing_assessment": {
+        "decision": "promote_coupled_scale_capacity_no_go_pivot_to_post_scale_arithmetic",
+        "graph_mutation": true,
+        "main_result": "The finite adjacent multiplier has full bulk size, physical fixed-row scale terms are phase-coherent, and a strict star-free actual adjacent pair retains normalized absolute mass of order at least X^(1/8). Scale algebra cannot provide the missing power."
+      },
+      "next_round": 54
+    },
+    {
+      "round_index": 54,
+      "campaign_id": "m9-m1-global-angular-shifted-correlation",
+      "type": "global_angular_shifted_correlation",
+      "status": "complete",
+      "objective": "Derive the exact coefficient-preserving shifted correlation, its target exponent ledger, and either a target range or a sharp one-step obstruction.",
+      "tasks": [
+        {
+          "id": "angular_shifted_correlation_attack",
+          "role": "discovery",
+          "status": "complete"
+        },
+        {
+          "id": "blind_vdc_correlation_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "complete_clean_isolation"
+        },
+        {
+          "id": "shifted_convolution_source_hostile_audit",
+          "role": "source_auditor",
+          "status": "complete_independent"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0
+      },
+      "exit_gates": [
+        "exact Fejer identity",
+        "real-part scope",
+        "shifted additive-product incidence",
+        "endpoint and star ownership",
+        "dyadic R/Y ledger",
+        "sharp absolute capacity",
+        "primary-source applicability",
+        "blind and hostile gates",
+        "alpha transfer scope",
+        "conductor graph decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_exact_Fejer_reduction_and_absolute_source_no_go_retain_signed_theorem_open",
+        "graph_mutation": true,
+        "main_result": "The dyadic Fejer target is F_(Y,R)<<X^epsilon R/Y. At R=Y^(1/2) it requires exactly the missing Y^(-1/2) quadratic gain, while every absolute or coefficient-blind closure retains X^(1/8) normalized capacity. No audited source imports as a black box."
+      },
+      "next_round": 55
+    },
+    {
+      "round_index": 55,
+      "campaign_id": "m9-m1-top-block-low-leg-curvature",
+      "type": "top_block_low_leg_curvature",
+      "status": "complete",
+      "objective": "Prove target-sized control of the critical top-block low angular margins and identify the exact surviving product core.",
+      "tasks": [
+        {
+          "id": "low_leg_curvature_attack",
+          "role": "discovery",
+          "status": "complete"
+        },
+        {
+          "id": "blind_fixed_leg_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "complete_clean_isolation"
+        },
+        {
+          "id": "top_margin_hostile_audit",
+          "role": "seam_reviewer",
+          "status": "complete_independent"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0
+      },
+      "exit_gates": [
+        "fixed-leg phase",
+        "curvature/trivial crossover",
+        "sampled profile BV",
+        "height floors and stars",
+        "edge windows",
+        "fourth-power resonance",
+        "H-Q ledger",
+        "one-count overlap",
+        "residual core",
+        "downstream scope"
+      ],
+      "closing_assessment": {
+        "decision": "promote_top_block_low_leg_margin_retain_intermediate_h_core_open",
+        "graph_mutation": true,
+        "main_result": "Every length-R top-block window has low-margin size at most X^epsilon(H+Q)/sqrt(Y), hence full-block size X^epsilon(H+Q). Actual support makes the polylog low-q margin empty and leaves polylog<h<=sqrt(n)/2 with q>=2sqrt(n)."
+      },
+      "next_round": 56
+    },
+    {
+      "round_index": 56,
+      "campaign_id": "m9-m1-top-block-intermediate-h-resonance",
+      "type": "intermediate_h_discrete_curvature_resonance",
+      "status": "complete",
+      "objective": "Test whether averaged discrete-curvature resonances close the residual intermediate-h top-block core.",
+      "tasks": [
+        {
+          "id": "discrete_curvature_resonance_attack",
+          "role": "discovery",
+          "status": "complete"
+        },
+        {
+          "id": "blind_resonance_average_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "complete_clean_isolation"
+        },
+        {
+          "id": "resonance_spacing_hostile_audit",
+          "role": "seam_reviewer",
+          "status": "complete_independent_corrected"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0
+      },
+      "exit_gates": [
+        "exact discrete phase",
+        "modulo-one typing",
+        "resonance average",
+        "actual amplitude",
+        "singleton boundary",
+        "fourth-power control",
+        "target ledger",
+        "blind and hostile gates",
+        "conductor decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_discrete_curvature_singleton_no_go_pivot_to_signed_cross_residue_hyperbola",
+        "graph_mutation": true,
+        "main_result": "Nonnegative fixed-h resonance averaging loses sqrt(H), and a strict actual-profile high shell realizes residuewise absolute capacity R while every residue fibre is a singleton. Signed cross-residue and cross-h cancellation remains open."
+      },
+      "next_round": 57
+    },
+    {
+      "round_index": 57,
+      "campaign_id": "m9-m1-top-block-signed-adjacent-odd-pairing",
+      "type": "signed_adjacent_odd_pairing",
+      "status": "complete",
+      "objective": "Test whether exact q,q+2 character pairing closes the high singleton shell, including unmatched endpoints and actual amplitudes.",
+      "tasks": [
+        {
+          "id": "adjacent_odd_pairing_attack",
+          "role": "discovery",
+          "status": "complete"
+        },
+        {
+          "id": "blind_adjacent_pair_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "complete_clean_isolation"
+        },
+        {
+          "id": "adjacent_pairing_hostile_audit",
+          "role": "seam_reviewer",
+          "status": "complete_independent_corrected"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0
+      },
+      "exit_gates": [
+        "exact pairing identity",
+        "two-point window geometry",
+        "phase increment",
+        "actual amplitude difference",
+        "unmatched ownership",
+        "fourth-power controls",
+        "target ledger",
+        "blind and hostile gates",
+        "conductor decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_adjacent_pairing_absolute_capacity_no_go_pivot_to_signed_hyperbola_selector",
+        "graph_mutation": true,
+        "main_result": "The exact q,q+2 decomposition retains phase brackets and full unmatched rows. A strict actual top-profile family has unmatched absolute mass >>R versus the sqrt(R) target, so only a genuinely signed cross-h hyperbola-floor theorem can close the shell."
+      },
+      "next_round": 58
+    },
+    {
+      "round_index": 58,
+      "campaign_id": "m9-m1-top-block-signed-hyperbola-floor",
+      "type": "signed_hyperbola_floor_sawtooth",
+      "status": "complete",
+      "objective": "Derive an exact signed floor/Fourier representation of the high shell, close its endpoint residual, and prove the square-root estimate or isolate the exact surviving core.",
+      "tasks": [
+        {
+          "id": "signed_hyperbola_floor_attack",
+          "role": "discovery",
+          "status": "complete"
+        },
+        {
+          "id": "blind_hyperbola_floor_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "complete_clean_isolation_with_conductor_requested_residual_addendum"
+        },
+        {
+          "id": "hyperbola_floor_source_hostile_audit",
+          "role": "source_auditor",
+          "status": "complete_independent_with_conductor_requested_residual_addendum"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0
+      },
+      "exit_gates": [
+        "exact floor selector",
+        "character and selector zero modes",
+        "floor-compatible Vaaler identity",
+        "sampled Fejer residual",
+        "actual moving symbol",
+        "point and fourth-power controls",
+        "primary-source applicability",
+        "blind and hostile gates",
+        "conductor decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_floor_Fourier_reduction_and_target_safe_residual_retain_signed_twisted_divisor_core_open",
+        "graph_mutation": true,
+        "main_result": "The complete high-shell row has an exact floor identity and its endpoint Fejer residual is O_epsilon(X^epsilon(R/T+1)), hence target-safe at T=sqrt(R). The remaining finite core is exactly a signed length-R actual-symbol twisted-divisor sum; branchwise and modewise absolute closures retain R capacity against sqrt(R)."
+      },
+      "next_round": 59
+    },
+    {
+      "round_index": 59,
+      "campaign_id": "m9-m1-top-block-quadratic-divisor-completion",
+      "type": "short_twisted_divisor_quadratic_completion",
+      "status": "complete",
+      "objective": "Apply exact additive completion and a coefficient-preserving radial B-process to the signed high-shell short divisor core.",
+      "tasks": [
+        {
+          "id": "quadratic_divisor_completion_attack",
+          "role": "discovery",
+          "status": "complete_after_conductor_scale_correction"
+        },
+        {
+          "id": "blind_quadratic_completion_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "complete_clean_isolation_with_normalization_correction"
+        },
+        {
+          "id": "quadratic_completion_source_hostile_audit",
+          "role": "source_auditor",
+          "status": "complete_independent"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0
+      },
+      "exit_gates": [
+        "projector constant",
+        "stationary normalization",
+        "dual strip geometry",
+        "coefficient self-return",
+        "Hessian and lattice resonance",
+        "actual amplitude",
+        "endpoints and stars",
+        "target ledger",
+        "source applicability",
+        "conductor decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_exact_quadratic_completion_self_return_retain_signed_strip_open",
+        "graph_mutation": true,
+        "main_result": "The exact projector and smooth-interior B-process return coefficient-for-coefficient to the terminal M1 reciprocal symbol with stationary factor R^(-1/2). A length-R window still gives an R-by-R raw strip and needs a signed O(RX^epsilon) theorem; Hessian determinant alone is insufficient."
+      },
+      "next_round": 60
+    },
+    {
+      "round_index": 60,
+      "campaign_id": "m9-m1-critical-radial-terminal-return",
+      "type": "critical_radial_terminal_mellin_transfer",
+      "status": "complete",
+      "objective": "Transfer every fixed smooth critical radial sector to the proved terminal reciprocal theorem, with exact positive-frequency readback.",
+      "tasks": [
+        {
+          "id": "critical_radial_terminal_transfer_attack",
+          "role": "discovery",
+          "status": "complete_with_stronger_modulus"
+        },
+        {
+          "id": "blind_critical_terminal_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "complete_clean_with_authorized_interface_addendum"
+        },
+        {
+          "id": "critical_terminal_transfer_hostile_audit",
+          "role": "seam_reviewer",
+          "status": "complete_independent_with_modulus_upgrade"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0
+      },
+      "exit_gates": [
+        "terminal support",
+        "Mellin normalization",
+        "frequency BV",
+        "denominator mode",
+        "positive transform",
+        "hard top",
+        "floors and stars",
+        "small heights",
+        "error sum",
+        "blind and hostile gates",
+        "conductor decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_smooth_critical_radial_modulus_bound_retain_lower_radial_GAR_open",
+        "graph_mutation": true,
+        "main_result": "Every fixed smooth sector n asymp sqrt X compactly inside the product range satisfies |G_V(X)|<<X^epsilon. The proof directly bounds a Mellin-separated terminal reciprocal antecedent, then uses the accepted unpaired positive-frequency transform with exact floors, hard top, stars, and O(log^2 X) errors."
+      },
+      "next_round": 61
+    },
+    {
+      "round_index": 61,
+      "campaign_id": "m9-m1-lower-radial-phase-diagram",
+      "type": "lower_radial_phase_diagram",
+      "status": "complete",
+      "objective": "Map every accepted M1 estimate into lower-radial coordinates and identify the exact all-scale survivor and missing power.",
+      "tasks": [
+        {
+          "id": "lower_radial_phase_diagram_attack",
+          "role": "discovery",
+          "status": "complete"
+        },
+        {
+          "id": "blind_lower_radial_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "complete_clean_with_V2_correction"
+        },
+        {
+          "id": "lower_radial_phase_hostile_audit",
+          "role": "seam_and_source_reviewer",
+          "status": "complete_independent"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0
+      },
+      "exit_gates": [
+        "stationary map",
+        "active support",
+        "terminal translation",
+        "TTY translation",
+        "V2 translation",
+        "all-scale union",
+        "hard-top survivor",
+        "saving ledger",
+        "blind and hostile gates",
+        "conductor decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_exact_lower_radial_phase_diagram_retain_every_positive_subcritical_sector_open",
+        "graph_mutation": true,
+        "main_result": "The exact map is ell=delta+(nu-1)/2 with (1-nu)/2<=delta<=1/2. TTY first contacts at nu=356/819 but only covers a low-D prefix. Only nu=0 and nu=1/2 are all-scale closed; every 0<nu<1/2 retains the hard-top block, whose best-current deficit is min(nu/4,(1-2nu)/4)."
+      },
+      "next_round": 62
+    },
+    {
+      "round_index": 62,
+      "campaign_id": "m9-m1-lower-radial-small-angle-collapse",
+      "type": "lower_radial_small_angle_symbol_collapse",
+      "status": "complete",
+      "objective": "Collapse the exact subcritical angular symbol to a one-sided divisor cone and determine the target-safe replacement range.",
+      "tasks": [
+        {
+          "id": "small_angle_collapse_attack",
+          "role": "discovery",
+          "status": "complete"
+        },
+        {
+          "id": "blind_small_angle_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "complete_clean_isolation"
+        },
+        {
+          "id": "small_angle_hostile_source_audit",
+          "role": "seam_and_source_reviewer",
+          "status": "complete_independent"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0
+      },
+      "exit_gates": [
+        "Phi expansion",
+        "height floors",
+        "active partition",
+        "bottom and hard top",
+        "stars",
+        "exact coefficient",
+        "radial error",
+        "two-fifths endpoint",
+        "signed capacity",
+        "blind and hostile gates",
+        "conductor decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_subcritical_small_angle_collapse_retain_signed_one_sided_cone_open",
+        "graph_mutation": true,
+        "main_result": "The exact angular symbol becomes the floor-free coefficient sum_(hq=n,q odd,q>4h) chi_4(q) on every fixed subcritical block. Its replacement error is target-safe through nu=2/5, while the signed cone remains open."
+      },
+      "next_round": 63
+    },
+    {
+      "round_index": 63,
+      "campaign_id": "m9-m1-one-sided-divisor-false-theta",
+      "type": "one_sided_divisor_false_theta_transform",
+      "status": "complete",
+      "objective": "Classify and transform the exact one-sided character-divisor generating kernel, with full completion and radial-loss ledgers.",
+      "tasks": [
+        {
+          "id": "false_theta_transform_attack",
+          "role": "discovery",
+          "status": "complete"
+        },
+        {
+          "id": "blind_false_theta_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "complete_clean_isolation"
+        },
+        {
+          "id": "false_theta_source_hostile_audit",
+          "role": "seam_and_source_reviewer",
+          "status": "complete_independent"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 80,
+        "numerical_experimental_maximum_percent": 20,
+        "actual_numerical_percent": 0
+      },
+      "exit_gates": [
+        "coefficient identity",
+        "Appell normalization",
+        "completion terms",
+        "character-Poisson boundary",
+        "stationary phase",
+        "Abel periodization",
+        "cusp controls",
+        "target ledger",
+        "blind and hostile gates",
+        "conductor decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_exact_Appell_source_and_character_Poisson_reductions_retain_reciprocal_cone_open",
+        "graph_mutation": true,
+        "main_result": "The one-sided divisor kernel is an exact moving level-four Appell section and has a boundary-explicit character-Poisson return with phase e(Xh/j). Four completion terms and the reciprocal signed cone remain essential; no radial bound or exponent follows."
+      },
+      "next_round": 64
+    },
+    {
+      "round_index": 64,
+      "campaign_id": "m9-m1-reciprocal-product-wavelet",
+      "type": "reciprocal_product_wavelet",
+      "status": "complete",
+      "objective": "Exploit the exact product-wavelet form of the reciprocal character cone or isolate its precise arithmetic discrepancy obstruction.",
+      "tasks": [
+        {
+          "id": "product_wavelet_cancellation_attack",
+          "role": "discovery",
+          "status": "terminated_after_result_message_conductor_materialized"
+        },
+        {
+          "id": "blind_product_wavelet_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "complete_clean_isolation"
+        },
+        {
+          "id": "shifted_divisor_source_hostile_audit",
+          "role": "hostile_source_reviewer",
+          "status": "complete_independent"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 80,
+        "numerical_experimental_maximum_percent": 20,
+        "actual_numerical_percent": 0
+      },
+      "exit_gates": [
+        "exact Poisson identity",
+        "fixed cutoff",
+        "product grouping",
+        "moments",
+        "sampled annihilation",
+        "self-return",
+        "target ledger",
+        "source applicability",
+        "blind and hostile gates",
+        "conductor decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_exact_product_wavelet_and_self_return_retain_H_over_L_discrepancy_open",
+        "graph_mutation": true,
+        "main_result": "The fixed-interior reciprocal cone is an exact zero-moment product wavelet whose samples annihilate polynomials, but inverse Poisson self-returns and the atomic divisor coefficient still needs the exact H/L saving."
+      },
+      "next_round": 65
+    },
+    {
+      "round_index": 65,
+      "campaign_id": "m9-m1-product-wavelet-local-discrepancy",
+      "type": "product_wavelet_local_discrepancy",
+      "status": "complete",
+      "objective": "Prove the H/L-saving local character-hyperbola discrepancy exposed by the exact product-wavelet reduction, or isolate its sharp survivor.",
+      "tasks": [
+        {
+          "id": "character_hyperbola_discrepancy_attack",
+          "role": "discovery",
+          "status": "complete_result_message_conductor_materialized"
+        },
+        {
+          "id": "blind_local_discrepancy_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "complete_final_message_conductor_materialized"
+        },
+        {
+          "id": "short_hyperbola_source_hostile_audit",
+          "role": "hostile_source_reviewer",
+          "status": "complete_independent"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 80,
+        "numerical_experimental_maximum_percent": 20,
+        "actual_numerical_percent": 0
+      },
+      "exit_gates": [
+        "affine Abel identity",
+        "sampled zero mode",
+        "thin hyperbola",
+        "period-four pairing",
+        "unmatched rows",
+        "H/L ledger",
+        "source applicability",
+        "blind and hostile gates",
+        "conductor decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_affine_Abel_and_unmatched_crossing_reduction_retain_signed_H_over_L_bound_open",
+        "graph_mutation": true,
+        "main_result": "The product wavelet reduces exactly to the signed symmetric difference of period-four crossing rows. Matched rows cancel, but the wavelet-weighted survivor still needs the full H/L saving."
+      },
+      "next_round": 66
+    },
+    {
+      "round_index": 66,
+      "campaign_id": "m9-m1-unmatched-crossing-fourier-modes",
+      "type": "unmatched_crossing_fourier_modes",
+      "status": "complete",
+      "objective": "Exploit the exact reciprocal Fourier difference modes or sharply audit their exponent-pair and bilinear capacity.",
+      "tasks": [
+        {
+          "id": "joint_reciprocal_mode_attack",
+          "role": "discovery",
+          "status": "complete_final_message_conductor_materialized"
+        },
+        {
+          "id": "blind_fourier_mode_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "terminated_no_result"
+        },
+        {
+          "id": "reciprocal_mode_source_hostile_audit",
+          "role": "hostile_source_reviewer",
+          "status": "complete_independent"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 80,
+        "numerical_experimental_maximum_percent": 20,
+        "actual_numerical_percent": 0
+      },
+      "exit_gates": [
+        "Vaaler interface",
+        "difference factor",
+        "wavelet transition",
+        "Fejer residual",
+        "TTY capacity",
+        "classical pair",
+        "perfect powers",
+        "bilinear diagonal",
+        "source audit",
+        "conductor decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_exact_reciprocal_mode_capacity_no_go_retain_joint_off_diagonal_open",
+        "graph_mutation": true,
+        "main_result": "Exact wavelet averaging localizes k around J/T. All audited one-variable exponent-pair bounds lose to the original product bound; a lossless joint j-k off-diagonal theorem is required."
+      },
+      "next_round": 67
+    },
+    {
+      "round_index": 67,
+      "campaign_id": "m9-m1-joint-reciprocal-large-sieve",
+      "type": "joint_reciprocal_large_sieve",
+      "status": "complete",
+      "objective": "Prove the optimally scaled signed reciprocal energy, or identify its exact square-root-product self-return.",
+      "tasks": [
+        {"id": "signed_reciprocal_energy_attack", "role": "discovery", "status": "complete_final_message_conductor_materialized"},
+        {"id": "blind_RSLS_rederivation", "role": "statement_only_blind_rederiver", "status": "complete_clean"},
+        {"id": "reciprocal_large_sieve_source_hostile_audit", "role": "hostile_source_reviewer", "status": "complete_final_message_conductor_materialized"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 80,
+        "numerical_experimental_maximum_percent": 20,
+        "actual_numerical_percent": 0
+      },
+      "exit_gates": [
+        "Cauchy normalization", "diagonal", "Poisson energy", "character sign",
+        "reciprocal clustering", "B-process", "product fibers", "perfect powers",
+        "source applicability", "blind and hostile gates", "conductor decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_exact_target_diagonal_energy_Bprocess_reduction_retain_RSLS_open",
+        "graph_mutation": true,
+        "main_result": "RSLS is exactly a target-diagonal shifted square-root-product second moment. The signed off-diagonal is the sole new estimate and remains open."
+      },
+      "next_round": 68
+    },
+    {
+      "round_index": 68,
+      "campaign_id": "m9-m1-square-root-product-offdiagonal",
+      "type": "square_root_product_offdiagonal",
+      "status": "complete",
+      "objective": "Prove or sharply obstruct the lossless signed off-diagonal in the shifted square-root-product second moment.",
+      "tasks": [
+        {"id": "square_root_product_energy_attack", "role": "discovery", "status": "terminated_without_report_conductor_rederived"},
+        {"id": "blind_offdiagonal_rederivation", "role": "statement_only_blind_rederiver", "status": "complete_clean"},
+        {"id": "square_root_product_source_hostile_audit", "role": "hostile_source_reviewer", "status": "complete_clean"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 80,
+        "numerical_experimental_maximum_percent": 20,
+        "actual_numerical_percent": 3
+      },
+      "exit_gates": [
+        "difference algebra", "diagonal", "cross-residue near diagonal",
+        "Poisson and B-process aliases", "perfect powers", "actual ratio symbol",
+        "source applicability", "blind and hostile gates", "conductor decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_actual_ratio_symbol_and_stationary_main_involution_retain_signed_energy_open",
+        "graph_mutation": true,
+        "main_result": "The actual coefficient is a Mellin-separable ratio symbol, and two exact stationary transforms restore (k/J)|S_k|^2 with all character and density factors. The energy route is circular; its signed shell union and full error ledger remain open."
+      },
+      "next_round": 69
+    },
+    {
+      "round_index": 69,
+      "campaign_id": "m9-m1-direct-square-root-product-bilinear",
+      "type": "direct_square_root_product_bilinear",
+      "status": "complete",
+      "objective": "Prove or sharply obstruct the direct Q^(3/2) square-root-product bilinear estimate before Cauchy.",
+      "tasks": [
+        {"id": "direct_product_bilinear_attack", "role": "discovery", "status": "complete"},
+        {"id": "blind_direct_bilinear_rederivation", "role": "statement_only_blind_rederiver", "status": "complete_clean"},
+        {"id": "direct_bilinear_source_hostile_audit", "role": "hostile_source_reviewer", "status": "complete_corrected"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 80,
+        "numerical_experimental_maximum_percent": 20,
+        "actual_numerical_percent": 0
+      },
+      "exit_gates": [
+        "direct normalization", "actual wavelet symbol", "one-sided cone",
+        "product grouping", "perfect powers", "stationary aliases",
+        "stationary remainder", "source applicability",
+        "blind and hostile gates", "conductor decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_direct_X7_20_bound_and_product_wavelet_return_retain_Q3_2_target_open",
+        "graph_mutation": true,
+        "main_result": "Direct character Poisson proves X^(7/20+epsilon) at Q=X^(1/5) and returns coefficient-for-coefficient to a length-J/Q signed central product wavelet. The remaining X^(1/20) saving and exponent are open."
+      },
+      "next_round": 70
+    },
+    {
+      "round_index": 70,
+      "campaign_id": "m9-m1-near-product-delta-salie",
+      "type": "near_product_delta_salie",
+      "status": "complete",
+      "objective": "Prove or sharply obstruct the signed J^(1/2) fixed-centre product-wavelet bound through an exact delta/Salié transform.",
+      "tasks": [
+        {"id": "delta_salie_transform_attack", "role": "discovery", "status": "complete"},
+        {"id": "blind_delta_method_rederivation", "role": "statement_only_blind_rederiver", "status": "complete_clean"},
+        {"id": "delta_kuznetsov_source_hostile_audit", "role": "hostile_source_reviewer", "status": "complete_with_patch_audit"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 80,
+        "numerical_experimental_maximum_percent": 20,
+        "actual_numerical_percent": 2
+      },
+      "exit_gates": [
+        "exact signed offset Poisson",
+        "natural Farey collapse",
+        "conductor modulus and numerator range",
+        "complete residue sums",
+        "zero modes and gcds",
+        "dual lengths",
+        "source applicability",
+        "blind and hostile gates",
+        "conductor decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_delta_Farey_short_numerator_reduction_retain_J1_2_target_open",
+        "graph_mutation": true,
+        "main_result": "Natural order Q gives an exact zero-cell self-return; conductor order J gives only a short numerator c/T<sqrt(c), for which termwise completion, Weil, and standard Kuznetsov are nonclosing."
+      },
+      "next_round": 71
+    },
+    {
+      "round_index": 71,
+      "campaign_id": "m9-m1-short-numerator-kloosterman-large-sieve",
+      "type": "short_numerator_kloosterman_large_sieve",
+      "status": "complete",
+      "objective": "Prove the joint incomplete-numerator Kloosterman estimate or isolate a strictly smaller conductor survivor.",
+      "tasks": [
+        {"id": "short_numerator_dispersion_attack", "role": "discovery", "status": "terminated_after_analytic_interim_no_report"},
+        {"id": "blind_short_numerator_large_sieve", "role": "statement_only_blind_rederiver", "status": "complete_clean_with_post_isolation_seam_pass"},
+        {"id": "short_numerator_source_hostile_audit", "role": "hostile_source_reviewer", "status": "complete_clean_source_and_seam_audit"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 80,
+        "numerical_experimental_maximum_percent": 20,
+        "actual_numerical_percent": 0
+      },
+      "exit_gates": [
+        "exact alias and Farey normalization",
+        "three-variable stationary factor",
+        "odd/even local data",
+        "axes and dual tails",
+        "sharp entry and exit",
+        "low-conductor power",
+        "completion diagonal",
+        "source applicability",
+        "blind and hostile gates",
+        "conductor decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_low_conductor_Farey_stationary_bound_and_upper_Bprocess_self_return",
+        "graph_mutation": true,
+        "main_result": "The exact three-variable Farey factor proves D_C<<X^epsilon C^(3/2)/sqrt(J), closing X^(3/10)<=C<=X^(1/3). The upper reciprocal-square phase self-returns under the bare second B-process and remains open."
+      },
+      "next_round": 72
+    },
+    {
+      "round_index": 72,
+      "campaign_id": "m9-m1-upper-conductor-reciprocal-square-large-sieve",
+      "type": "upper_conductor_reciprocal_square_large_sieve",
+      "status": "complete",
+      "objective": "Prove the optimally normalized upper-conductor b-energy or isolate a smaller actual-symbol survivor.",
+      "tasks": [
+        {"id": "upper_reciprocal_energy_attack", "role": "discovery", "status": "complete"},
+        {"id": "blind_upper_conductor_clean", "role": "statement_only_blind_rederiver", "status": "complete_clean"},
+        {"id": "upper_third_derivative_seam_review", "role": "independent_seam_reviewer", "status": "complete_pass"},
+        {"id": "upper_reciprocal_source_hostile_audit", "role": "hostile_source_reviewer", "status": "complete_clean"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 80,
+        "numerical_experimental_maximum_percent": 20,
+        "actual_numerical_percent": 0
+      },
+      "exit_gates": [
+        "energy normalization",
+        "actual symbol",
+        "Farey transition BV",
+        "odd and even local phases",
+        "axes and gcds",
+        "third-derivative power",
+        "perfect powers",
+        "source applicability",
+        "clean blind and hostile gates",
+        "conductor decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_all_class_third_derivative_subrange_bound",
+        "graph_mutation": true,
+        "main_result": "The exact row bound CQ^(-1/6) proves the diagonal-scale energy through C=J^(32/45)=X^(16/45), extending the fixed-interior target-safe conductor range beyond X^(1/3). The remaining range and global exponent are open."
+      },
+      "next_round": 73
+    },
+    {
+      "round_index": 73,
+      "campaign_id": "m9-m1-residual-upper-conductor-hybrid-energy",
+      "type": "residual_upper_conductor_hybrid_energy",
+      "status": "complete",
+      "objective": "Combine the accepted third-derivative range with residue, Farey-numerator, or spectral cancellation on J^(32/45)<C<=J, or isolate a strictly smaller actual-symbol survivor.",
+      "tasks": [
+        {"id": "hybrid_residue_energy_attack", "role": "discovery", "status": "complete"},
+        {"id": "blind_hybrid_energy_rederivation", "role": "statement_only_blind_rederiver", "status": "complete_clean"},
+        {"id": "hybrid_spectral_source_hostile_audit", "role": "hostile_source_reviewer", "status": "complete_clean"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 80,
+        "numerical_experimental_maximum_percent": 20,
+        "actual_numerical_percent": 0
+      },
+      "exit_gates": [
+        "inherited normalization",
+        "one-count residue ownership",
+        "diagonal and fixed offsets",
+        "transition BV",
+        "fourth derivative",
+        "Hessian and aliases",
+        "Bourgain source scope",
+        "phase-matched spectral return",
+        "clean blind and hostile gates",
+        "conductor decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_exact_residual_offdiagonal_reduction_no_range_extension",
+        "graph_mutation": true,
+        "main_result": "The residual diagonal and every fixed denominator-offset layer are target-safe; only their coherent actual-unit off-diagonal accumulation remains. Fourth-derivative, Hessian-only, cellwise Bourgain, and current phase-matched spectral routes do not extend C=J^(32/45)."
+      },
+      "next_round": 74
+    },
+    {
+      "round_index": 74,
+      "campaign_id": "m9-m2-top-endpoint-affine-cone",
+      "type": "m9_m2_top_endpoint_affine_cone",
+      "status": "complete",
+      "objective": "Prove the exact signed top M2 affine cone, a strict intermediate-L subrange, or isolate a smaller actual-symbol survivor.",
+      "tasks": [
+        {"id": "m2_affine_cone_attack", "role": "discovery", "status": "complete_candidate"},
+        {"id": "blind_m2_cone_rederivation", "role": "statement_only_blind_rederiver", "status": "complete_clean"},
+        {"id": "m2_cone_source_hostile_audit", "role": "hostile_source_reviewer", "status": "complete_clean"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 80,
+        "numerical_experimental_maximum_percent": 20,
+        "actual_numerical_percent": 0
+      },
+      "exit_gates": [
+        "external normalization",
+        "odd character",
+        "hard and flat endpoints",
+        "all L slices",
+        "shear and product multiplicity",
+        "row Cauchy diagonal",
+        "stationary aliases and self-return",
+        "perfect powers",
+        "source applicability",
+        "statement-only and hostile gates",
+        "conductor decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_exact_row_correlation_reduction_retain_near_product_candidate",
+        "graph_mutation": true,
+        "main_result": "The diagonal, fixed near-diagonal, and endpoint-touching row correlations are target-safe, leaving one interior signed core as a sufficient Cauchy target. A rank-one character-preserving near-product energy is independently supported but deferred for statement-only validation. No polynomial L range or exponent is proved."
+      },
+      "next_round": 75
+    },
+    {
+      "round_index": 75,
+      "campaign_id": "m9-m2-top-endpoint-near-product-energy",
+      "type": "m9_m2_top_endpoint_near_product_energy",
+      "status": "complete",
+      "objective": "Validate the exact character-preserving near-product energy and either prove it, find a strict polynomial L-range, or isolate a smaller actual-symbol survivor.",
+      "tasks": [
+        {"id": "blind_near_product_energy_rederivation", "role": "statement_only_blind_rederiver", "status": "complete_clean"},
+        {"id": "reciprocal_energy_attack", "role": "discovery", "status": "complete"},
+        {"id": "near_product_energy_hostile_audit", "role": "hostile_source_reviewer", "status": "complete_clean"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 80,
+        "numerical_experimental_maximum_percent": 20,
+        "actual_numerical_percent": 0
+      },
+      "exit_gates": [
+        "exact ceiling and affine edges",
+        "quarter-shift and Gaussian normalization",
+        "moving-symbol corrections",
+        "Poisson measure and periodized Parseval",
+        "character-preserving transposed energy",
+        "signed off-diagonal",
+        "adjoint return",
+        "perfect powers",
+        "source applicability",
+        "statement-only and hostile gates",
+        "conductor decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_exact_transposed_character_energy_reject_frozen_all_orders_transform",
+        "graph_mutation": true,
+        "main_result": "Regrouping by m gives an exact character-preserving energy whose diagonal is O(L^2) and whose off-diagonal has sign (-1)^r. The frozen leading-wavelet formula omits algebraic stationary corrections, while its repaired high-character transform adjoint-returns to the same open energy. No polynomial L range or exponent is proved."
+      },
+      "next_round": 76
+    },
+    {
+      "round_index": 76,
+      "campaign_id": "m9-m2-top-endpoint-signed-offset-energy",
+      "type": "m9_m2_top_endpoint_signed_offset_energy",
+      "status": "complete",
+      "objective": "Bound the exact alternating even-offset energy or isolate its smallest actual-symbol gcd-lift resonance survivor.",
+      "tasks": [
+        {"id": "blind_signed_offset_rederivation", "role": "statement_only_blind_rederiver", "status": "complete_clean"},
+        {"id": "gcd_lift_resonance_attack", "role": "discovery", "status": "complete"},
+        {"id": "signed_offset_hostile_audit", "role": "hostile_source_reviewer", "status": "complete_clean"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 80,
+        "numerical_experimental_maximum_percent": 20,
+        "actual_numerical_percent": 0
+      },
+      "exit_gates": [
+        "external normalization",
+        "exact ceiling stars and endpoints",
+        "alternating character sign",
+        "Poisson orientation and Gaussian",
+        "gcd parity and lift multiplicity",
+        "step-two versus step-four resonance",
+        "actual-profile perfect-power control",
+        "rank-one self-return",
+        "source applicability",
+        "statement-only and hostile gates",
+        "conductor decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_odd_lift_resonance_obstruction_reject_step_one_criterion",
+        "graph_mutation": true,
+        "main_result": "Odd gcd lifts have step two and the offset character is constant along each primitive ray. The correct bulk resonance is ||2alpha||, with a strict actual-profile half-integer coherent family; an unextracted endpoint may require step four. Reciprocal Poisson self-returns, and no energy, polynomial L range, or exponent is proved."
+      },
+      "next_round": 77
+    }
+  ]
+}

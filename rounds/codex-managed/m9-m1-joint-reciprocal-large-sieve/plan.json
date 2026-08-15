@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "round_index": 67,
+  "campaign_id": "m9-m1-joint-reciprocal-large-sieve",
+  "objective": "Prove the optimally scaled signed reciprocal large-sieve energy, or identify its exact square-root-product self-return.",
+  "graph_sha256": "13afaa7090afaae1a09f84adbcd299c91815e92165af34e8bdc8b17551d57d80",
+  "resource_policy": {"analytical_algebraic_minimum_percent": 80, "numerical_experimental_maximum_percent": 20},
+  "tasks": [
+    {"id": "signed_reciprocal_energy_attack", "role": "discovery", "status": "complete_final_message_conductor_materialized"},
+    {"id": "blind_RSLS_rederivation", "role": "statement_only_blind_rederiver", "status": "complete_clean"},
+    {"id": "reciprocal_large_sieve_source_hostile_audit", "role": "hostile_source_reviewer", "status": "complete_final_message_conductor_materialized"}
+  ],
+  "exit_gates": ["Cauchy normalization", "diagonal", "Poisson energy", "character sign", "reciprocal clustering", "B-process", "product fibers", "perfect powers", "source applicability", "blind and hostile gates", "conductor decision"],
+  "closing_decision": "Promote the exact target-diagonal energy/B-process reduction; retain RSLS and its signed off-diagonal open; no exponent change."
+}

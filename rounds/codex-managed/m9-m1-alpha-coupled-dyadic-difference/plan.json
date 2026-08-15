@@ -1,0 +1,187 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 53,
+    "round_type": "alpha_complete_coupled_dyadic_difference",
+    "campaign_id": "m9-m1-alpha-coupled-dyadic-difference",
+    "title": "Complete coupled adjacent-dyadic alpha difference",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "literature_policy": "No external theorem is needed for the exact scale algebra. Search only if the resulting signed scale sum exactly matches a named theorem."
+    },
+    "target_obligations": [
+      "M9-M1-alpha-bounded-zeta-high-transition-bound"
+    ],
+    "frozen_target": {
+      "question": "Does the complete coupled difference between adjacent physical dyadic scales admit a target-relevant signed partial-sum bound, or what exact profile/height/Mellin survivor blocks it?",
+      "reference_formula": "D_j=2^(-j)floor(sqrt X), H_j=floor(D_j X^(-1/4)), W(t)=eta(t)-eta(2t), A_j(u,v)=W_hat_j(u) phi_hat(v)(D_j/(2sqrt X))^u(H_j+1)^v, and physical profile B_j(n,q)=V_j^*(2sqrt(Xn/q)/D_j) phi(n/(H_j+1)).",
+      "quantities": [
+        "finite positive-line adjacent-scale difference",
+        "physical returned adjacent-scale difference",
+        "exact W=eta-eta(2 dot) scale telescoping",
+        "H_(j+1)=floor(H_j/2) height coupling",
+        "top, bottom, support, profile-star and product-star owners",
+        "signed scale partial sums and boundary terms",
+        "normalized alpha lattice capacity"
+      ]
+    },
+    "completion_criteria": [
+      "Both finite-Mellin and physical-return differences are written on common supports.",
+      "Every scale, height, profile, support, star, radial and normalization change is owned once.",
+      "The W telescoping identity is applied with exact top and bottom boundary owners.",
+      "Any Abel transformation in j includes an explicit actual signed partial-sum hypothesis and boundary terms.",
+      "A target-relevant saving is proved or a sharp actual-profile capacity obstruction is derived.",
+      "Finite-height and physical-limit conclusions are kept distinct.",
+      "A clean statement-only derivation and independent hostile audit exist.",
+      "No full alpha or downstream promotion follows from scale algebra alone."
+    ],
+    "controls": [
+      "common_support",
+      "finite_vs_physical",
+      "profile_telescoping",
+      "height_coupling",
+      "top_bottom_ownership",
+      "all_star_ownership",
+      "signed_partial_sums",
+      "boundary_terms",
+      "alpha_capacity_scope",
+      "downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "coupled_dyadic_difference_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "target": "Construct the exact finite and physical adjacent-dyadic differences with a complete owner table, then prove a signed scale-partial-sum saving or isolate the first exact survivor/countercapacity.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-alpha-coupled-dyadic-difference/derivation_packet.md",
+          "rounds/codex-managed/m9-m1-alpha-vaaler-height-floor/synthesis.md",
+          "rounds/codex-managed/m9-endpoint-kernel-validation/reports/blind_profile_rederivation.md",
+          "rounds/codex-managed/m9-m1-dual-r2-recombination/synthesis.md",
+          "rounds/codex-managed/m9-m1-alpha-bounded-zeta-high-transition/synthesis.md",
+          "rounds/codex-managed/m9-m1-alpha-highpass-log-commutator/synthesis.md"
+        ],
+        "required_controls": [
+          "common_support",
+          "finite_vs_physical",
+          "profile_telescoping",
+          "height_coupling",
+          "top_bottom_ownership",
+          "all_star_ownership",
+          "signed_partial_sums",
+          "boundary_terms",
+          "alpha_capacity_scope",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "seven-section report",
+          "complete owner table",
+          "signed lemma or sharp no-go"
+        ]
+      },
+      {
+        "id": "blind_coupled_scale_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "target": "Using only the Round-53 packet, independently construct the lawful coupled scale difference, audit exact telescoping and decide what bound follows without an unstated partial-sum theorem.",
+        "context_files": [
+          "rounds/codex-managed/m9-m1-alpha-coupled-dyadic-difference/derivation_packet.md"
+        ],
+        "excluded_context": [
+          "proof graph",
+          "proof draft",
+          "prior reports and syntheses",
+          "other Round-53 reports"
+        ],
+        "required_controls": [
+          "common_support",
+          "finite_vs_physical",
+          "profile_telescoping",
+          "height_coupling",
+          "top_bottom_ownership",
+          "all_star_ownership",
+          "signed_partial_sums",
+          "boundary_terms",
+          "alpha_capacity_scope",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "seven-section statement-only report",
+          "independent identity or no-go",
+          "isolation ledger"
+        ]
+      },
+      {
+        "id": "coupled_scale_hostile_audit",
+        "role": "seam_reviewer",
+        "access_mode": "selected_context",
+        "target": "Hostile-audit common-support ownership, W telescoping, height/profile mismatch, finite-v bulk capacity, boundary terms and any unproved signed partial-sum claim for the complete scale family.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-alpha-coupled-dyadic-difference/derivation_packet.md",
+          "rounds/codex-managed/m9-m1-alpha-vaaler-height-floor/reports/vaaler_floor_hostile_audit.md",
+          "rounds/codex-managed/m9-endpoint-kernel-validation/reports/blind_profile_rederivation.md",
+          "rounds/codex-managed/m9-m1-alpha-highpass-log-commutator/reports/alpha_commutator_hostile_audit.md"
+        ],
+        "required_controls": [
+          "common_support",
+          "finite_vs_physical",
+          "profile_telescoping",
+          "height_coupling",
+          "top_bottom_ownership",
+          "all_star_ownership",
+          "signed_partial_sums",
+          "boundary_terms",
+          "alpha_capacity_scope",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "seven-section hostile report",
+          "counterexample or certification",
+          "recommended graph effect"
+        ]
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "finite_identity",
+        "requirement": "Write adjacent-scale Mellin factors on one common finite antecedent."
+      },
+      {
+        "id": "physical_identity",
+        "requirement": "Write returned profiles on common support with all stars and boundaries."
+      },
+      {
+        "id": "telescoping",
+        "requirement": "Audit top, bottom, height, and profile boundary residues in every scale telescoping claim."
+      },
+      {
+        "id": "capacity",
+        "requirement": "Require an actual signed scale-partial-sum estimate before claiming a saving."
+      },
+      {
+        "id": "mathematical_isolation",
+        "requirement": "The blind proof sees only the Round-53 packet and its brief."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "ffe8d5a79d866395f674ea77294da69c3d8f24ef09072bf36aa7fb3c2287c3a8",
+    "generated_at": "2026-08-13T16:51:34.104694+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

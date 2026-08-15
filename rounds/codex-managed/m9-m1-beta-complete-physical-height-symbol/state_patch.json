@@ -1,0 +1,218 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-beta-boundary-first-symbol-architecture",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Boundary-first architecture for the beta terminal symbol",
+        "status": "proved_internal",
+        "statement_tex": "A pointwise terminal K(L,nu) cannot contain radial horizontal sides or explicit endpoint boundary functionals, which live on different contour strata. The accepted architecture is: apply arbitrary-order radial endpoint subtraction and remove only the renormalized sides under nested heights; collapse the explicit endpoint/artificial/arithmetic functional by the finite endpoint Cauchy identity; route the proved lower endpoint, physical upper endpoint, and recombined R1 arithmetic residue to their separate modules; then define the local beta symbol from the endpoint-image-free terminal vertical and connector. The v=0 vector residue and its finite connectors remain separately ledgered. This reduction does not prove mask-compatible transfer or the reduced terminal estimate.",
+        "dependencies": [
+          "M9-M1-radial-endpoint-subtraction-identity",
+          "M9-M1-endpoint-Cauchy-reduction",
+          "M9-M1-lower-radial-endpoint-bound",
+          "M9-M1-upper-radial-endpoint-prefix",
+          "M9-M1-R1-arithmetic-residue"
+        ],
+        "implies": [
+          "M9-M1-beta-regular-finite-part-symbol-BV"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-complete-physical-height-symbol/reports/complete_kernel_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-complete-physical-height-symbol/reviews/conductor_endpoint_ownership_map.md",
+            "rounds/codex-managed/m9-m1-beta-complete-physical-height-symbol/reviews/conductor_reduced_kernel_proposal.md",
+            "rounds/codex-managed/m9-m1-beta-complete-physical-height-symbol/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-complete-physical-height-symbol/reports/blind_common_kernel_identity.md",
+            "rounds/codex-managed/m9-m1-beta-complete-physical-height-symbol/reports/complete_kernel_symbol_attack.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Prove that the beta masks and Cauchy-Green connector commute with the accepted endpoint collapse and axial vector ledger without leaving a boundary ownership defect."
+      },
+      {
+        "id": "M9-M1-beta-rho-cutoff-all-order-cancellation",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "All-order rho Taylor and cutoff cancellation",
+        "status": "proved_internal",
+        "statement_tex": "If G=E1+R1 is represented with identical beta masks, finite domains, endpoint images, stars, diagonal/log subtraction, and residue ownership, then Q=omega G+(1-omega)R1-omega E1 equals R1 meromorphically. For every compatible directional derivative order k, D^k Q=D^k R1. Hence every artificial rho Laurent/Taylor defect and every omega derivative term cancels to all orders. If ownership differs, the first missing datum is the rho-constant coefficient of E_own=H_G-H_E1-H_R1, followed by its physical L derivative. This is exact algebra and supplies no weighted bound for the remaining kernel.",
+        "dependencies": [
+          "M9-M1-beta-hierarchical-radial-split-identity"
+        ],
+        "implies": [
+          "M9-M1-beta-mask-endpoint-axial-compatibility"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-complete-physical-height-symbol/reports/blind_common_kernel_identity.md",
+            "rounds/codex-managed/m9-m1-beta-complete-physical-height-symbol/reports/complete_kernel_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-complete-physical-height-symbol/reviews/conductor_rho_taylor_ledger.md",
+            "rounds/codex-managed/m9-m1-beta-complete-physical-height-symbol/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use this only after proving identical endpoint, side, mask, and axial ownership. Do not estimate split rho pieces separately."
+      },
+      {
+        "id": "M9-M1-beta-mask-endpoint-axial-compatibility",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Mask-compatible endpoint collapse and axial vector ownership",
+        "status": "open",
+        "statement_tex": "At finite U,V,S, apply the accepted radial endpoint Cauchy identity and finite v-contour displacement to every hierarchical beta mask and Cauchy-Green connector share. Prove that the explicit endpoint/artificial/arithmetic terms recombine exactly into the already-proved lower endpoint, physical upper endpoint, and R1 arithmetic-residue modules, that the renormalized radial sides are removed under their accepted nested-height theorem, and that the v=0 terminal, radial-side, arithmetic, u=0, and joint-corner residues plus finite height connectors are each assigned once. The residual endpoint-free terminal share must have zero rho ownership defect E_own and identical masks/domains for all-order cutoff cancellation. No estimate for the residual terminal symbol is included.",
+        "dependencies": [
+          "M9-M1-beta-boundary-first-symbol-architecture",
+          "M9-M1-beta-rho-cutoff-all-order-cancellation",
+          "M9-M1-beta-Cauchy-Green-connector-identity",
+          "M9-M1-finite-vector-Hankel-identity"
+        ],
+        "implies": [
+          "M9-M1-beta-axial-subtracted-terminal-symbol-bound"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-complete-physical-height-symbol/reports/blind_common_kernel_identity.md",
+            "rounds/codex-managed/m9-m1-beta-complete-physical-height-symbol/reports/complete_kernel_symbol_attack.md",
+            "rounds/codex-managed/m9-m1-beta-complete-physical-height-symbol/reports/complete_kernel_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-complete-physical-height-symbol/reviews/conductor_axial_vector_ownership.md",
+            "rounds/codex-managed/m9-m1-beta-complete-physical-height-symbol/synthesis.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Write the finite mask-by-mask contour identity, including endpoint, radial-side, v=0, u=0, and corner shares, and prove the ownership defect vanishes."
+      },
+      {
+        "id": "M9-M1-beta-axial-subtracted-terminal-symbol-bound",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Axial-subtracted side-collapsed terminal symbol bound",
+        "status": "open",
+        "statement_tex": "After M9-M1-beta-mask-endpoint-axial-compatibility, let K_term_circ(L,nu) be the endpoint-image-free, side-collapsed, omega-recombined beta terminal vertical plus connector after the full v=0 vector residue and corner ledger are extracted and one combined top delta/log term is removed. Prove |K_term_circ(L,nu)| at most X^epsilon lambda^(-2)w(nu) and |partial_L K_term_circ(L,nu)| at most X^epsilon lambda^(-3)w(nu) at fixed physical nu, with w in L1 of polylogarithmic norm, compatible translated endpoint traces, and summable U,V tails. Retain the exact inherited h,D_j,x and external normalization factors. This implies the regular terminal BV target and local q^(-2) by the physical-height finite-section lemma.",
+        "dependencies": [
+          "M9-M1-beta-mask-endpoint-axial-compatibility",
+          "M9-M1-beta-physical-height-finite-section-BV",
+          "M9-M1-beta-separated-R1-regular-symbol-BV"
+        ],
+        "implies": [
+          "M9-M1-beta-regular-finite-part-symbol-BV"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-complete-physical-height-symbol/reports/blind_common_kernel_identity.md",
+            "rounds/codex-managed/m9-m1-beta-complete-physical-height-symbol/reports/complete_kernel_symbol_attack.md",
+            "rounds/codex-managed/m9-m1-beta-complete-physical-height-symbol/reports/complete_kernel_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-complete-physical-height-symbol/reviews/conductor_axial_subtraction.md",
+            "rounds/codex-managed/m9-m1-beta-complete-physical-height-symbol/synthesis.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "After the finite compatibility identity is proved, estimate the axial-regular terminal kernel at fixed physical nu and execute its U,V tail bound."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-beta-complete-physical-height-symbol-bound",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M1-beta-boundary-first-symbol-architecture",
+          "M9-M1-beta-mask-endpoint-axial-compatibility",
+          "M9-M1-beta-axial-subtracted-terminal-symbol-bound"
+        ],
+        "statement_tex": "The literal all-inclusive K_complete(L,nu) target is revised: radial horizontal sides and endpoint boundary operators are different contour strata and cannot obey a terminal pointwise symbol bound. First prove the mask-compatible endpoint/axial compatibility identity and route renormalized sides, endpoint images, and arithmetic residues through their accepted modules. Then prove the axial-subtracted side-collapsed terminal symbol bound. Together with the boundary-first architecture, all-order rho cancellation, and physical-height finite-section BV lemma, these composable obligations replace the former one-kernel formulation. The complete beta transition and final sums remain open.",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-complete-physical-height-symbol/reports/complete_kernel_hostile_audit.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-m1-beta-complete-physical-height-symbol/reports/complete_kernel_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-complete-physical-height-symbol/reports/blind_common_kernel_identity.md",
+            "rounds/codex-managed/m9-m1-beta-complete-physical-height-symbol/reports/complete_kernel_symbol_attack.md",
+            "rounds/codex-managed/m9-m1-beta-complete-physical-height-symbol/synthesis.md"
+          ]
+        },
+        "next_action": "Prove M9-M1-beta-mask-endpoint-axial-compatibility, then M9-M1-beta-axial-subtracted-terminal-symbol-bound."
+      },
+      {
+        "id": "M9-M1-beta-regular-finite-part-symbol-BV",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M1-beta-boundary-first-symbol-architecture",
+          "M9-M1-beta-mask-endpoint-axial-compatibility",
+          "M9-M1-beta-axial-subtracted-terminal-symbol-bound"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-complete-physical-height-symbol/synthesis.md"
+          ]
+        },
+        "next_action": "Close the mask-compatible boundary/axial ownership and axial-subtracted terminal symbol. Do not place radial sides or endpoint modules inside a pointwise L,nu kernel."
+      },
+      {
+        "id": "M9-M1-beta-transition-connector-reduction",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M1-beta-mask-endpoint-axial-compatibility",
+          "M9-M1-beta-axial-subtracted-terminal-symbol-bound"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-complete-physical-height-symbol/synthesis.md"
+          ]
+        },
+        "next_action": "Complete the boundary-first terminal beta branch, then execute its sums; keep endpoint, arithmetic, axial, and side modules separate."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round32-all-contour-strata-form-one-terminal-symbol",
+        "reason": "Terminal verticals, radial horizontal sides, and explicit endpoint operators live on different contour strata. The finite identity adds their integrals but does not identify a common pointwise K(L,nu)."
+      },
+      {
+        "id": "Round32-raw-radial-side-satisfies-lambda-symbol-bound",
+        "reason": "The hard side starts at S^(-1), while the left-edge degree-two capacity is S^(1-2ell) with ell<0, giving growing capacity S^(-2ell). Arbitrary-order subtraction removes only the renormalized side and leaves a separate endpoint operator."
+      },
+      {
+        "id": "Round32-local-polar-subtraction-is-the-full-v-zero-residue",
+        "reason": "Moving the finite v-line produces terminal, radial-side, arithmetic, u=0, corner, and horizontal-connector shares. Subtracting 1/(b+i nu) locally does not reconcile that vector ledger."
+      },
+      {
+        "id": "Round32-rho-cutoff-cancellation-needs-only-first-two-derivatives",
+        "reason": "Under identical ownership Q=R1 meromorphically, so cancellation holds to every derivative order; without identical ownership even the rho-constant defect is undefined."
+      },
+      {
+        "id": "Round32-closed-endpoint-modules-may-be-reinserted-into-terminal-kernel",
+        "reason": "The endpoint Cauchy and physical endpoint/residue modules already own those contributions. Reinsertion risks double counting and imposes a false local lambda-symbol normalization on global boundary polynomials."
+      }
+    ],
+    "no_change": [
+      {"id": "M9-M1", "reason": "The beta ownership identity, axial-subtracted terminal bound, alpha branch, double-bounded share, and residual corridor remain open."},
+      {"id": "M9-M2", "reason": "Round 32 concerns only the M1 beta transition."},
+      {"id": "M9", "reason": "M9-M1 and M9-M2 remain open."},
+      {"id": "GC-target", "reason": "No unconditional Gauss-circle estimate is claimed."}
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 8,
+    "idea_quality_score": 9,
+    "state_evidence_score": 9,
+    "calibration_score": 10,
+    "reason": "Round 32 rejects a type-wrong all-inclusive kernel, proves all-order rho cancellation, and replaces it by boundary-first compatibility plus an axial-subtracted terminal symbol target."
+  }
+}

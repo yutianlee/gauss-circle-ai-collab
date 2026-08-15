@@ -1,0 +1,26 @@
+Round: 70
+Status: diagnostic_only
+Date: 2026-08-14
+
+Command:
+C:\Users\yutia\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe controls/residue_identity_check.py
+
+Parameters:
+- odd moduli c = 3, 5, 7, 9, 11;
+- every reduced numerator a modulo c;
+- every h modulo c;
+- every odd k modulo 4c;
+- complex absolute comparison tolerance 1e-7.
+
+Output:
+odd-modulus residue identity: PASS
+
+Pass rule:
+For every tested tuple, the direct double residue sum differs by less
+than 1e-7 from
+2 i c chi_4(kc) e_c(((c^2-1)/4) k h inverse(a)).
+
+Limitation:
+This finite floating-point check cannot prove the identity or any
+asymptotic estimate. The algebraic four-lift calculation in the conductor
+report is the proof.

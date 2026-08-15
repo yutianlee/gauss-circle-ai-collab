@@ -1,0 +1,158 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 31,
+    "round_type": "beta_regular_finite_part_symbol_bv",
+    "campaign_id": "m9-m1-beta-regular-finite-part-symbol-bv",
+    "title": "Complete regular beta finite-part symbol BV",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "literature_policy": "Use exact differentiation, divided differences, Mellin/gamma symbol estimates, and BV product rules. Search primary literature only if a named uniform Mellin-symbol or finite-Hilbert divided-difference theorem materially shortens the proof; audit moving-endpoint, cutoff, and parameter-uniformity hypotheses before use."
+    },
+    "target_obligations": [
+      "M9-M1-beta-regular-finite-part-symbol-BV",
+      "M9-M1-beta-log-amplitude-two-saddle-kernel"
+    ],
+    "frozen_target": {
+      "question": "Does the complete regular finite part, after removing the explicit delta jumps and q^(-4) face logarithms, satisfy the scale-normalized BV norm needed to retain the local q^(-2) beta gain through every actual profile and residue seam?",
+      "reference_formula": "For each signed saddle with lambda=pi q sqrt(Xx)/D_j, expand the exact regular finite part from Delta_H(L,mu)=[H(L,L-mu)-H(L,L)]/mu inside the artificial-pole-safe combination omega G+(1-omega)R1-omega E1. Prove ||B||_infinity+||partial_y B||_1 << X^epsilon D_j/(q lambda) times the exact inherited h,D_j,x monomial in the exact Morse variable y, with endpoint traces and summable height tails.",
+      "quantities": [
+        "exact complete regular finite-part amplitude",
+        "divided difference Delta_H and its L derivative",
+        "scale-normalized Morse-variable BV norm",
+        "moving affine endpoint traces",
+        "omega G/R1/E1 derivative cancellation at rho=0",
+        "v=0 axial and b downarrow zero loss",
+        "actual dyadic profiles, floors, stars, and radial factors",
+        "finite U,V,S height tails and q^(-2) normalization"
+      ]
+    },
+    "completion_criteria": [
+      "The complete regular finite-part amplitude is written explicitly before differentiation.",
+      "Every derivative term and moving endpoint trace is bounded at the target scale or the first exact offender is isolated.",
+      "The omega-prime cancellation is checked with identical masks, domains, and endpoints.",
+      "The q^(-2), h, scale, radial, profile, floor, star, and external normalization ledgers are preserved.",
+      "Finite U,V,S tails and the b downarrow zero limit are proved summable or isolated as the next survivor.",
+      "A blind rederivation and hostile audit independently assess the result.",
+      "The conductor closes the round before choosing the next objective."
+    ],
+    "controls": [
+      "product-rule-and-derivative",
+      "moving-endpoint-traces",
+      "residue-and-normalization",
+      "profile-floor-star-uniformity",
+      "height-exhaustion",
+      "pointwise-versus-BV"
+    ],
+    "tasks": [
+      {
+        "id": "blind_complete_symbol_ledger",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "target": "From the accepted Round-27 and Round-30 statements only, independently reconstruct the exact complete regular finite-part amplitude and a term-by-term Morse-variable derivative ledger. Prove the target BV norm or identify the first factor whose derivative exceeds it. Do not use any Round-31 claimant report.",
+        "context_files": [
+          "protocol.md",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-beta-radial-pushforward-bv/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-log-amplitude-two-saddle/synthesis.md"
+        ],
+        "excluded_context": [
+          "all Round-31 claimant reports",
+          "state/best_proof_draft.md",
+          "rounds/codex-managed/m9-m1-beta-log-amplitude-two-saddle/reviews/conductor_symbol_derivative_scope.md"
+        ],
+        "required_controls": [
+          "product-rule-and-derivative",
+          "moving-endpoint-traces",
+          "pointwise-versus-BV"
+        ],
+        "required_output": [
+          "Exact complete-symbol definition and derivative ledger",
+          "Target BV proof or first exact offending factor",
+          "Seven-section report at the assigned path"
+        ]
+      },
+      {
+        "id": "regular_symbol_bv_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "target": "Expand the complete omega-recombined regular finite part, apply divided-difference and BV product estimates to every actual factor, and prove the scale-normalized symbol norm with endpoint traces and summable tails. If it fails, isolate the smallest explicit derivative term and quantify its exact power loss.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-beta-transition-connector/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-radial-pushforward-bv/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-log-amplitude-two-saddle/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-log-amplitude-two-saddle/reviews/conductor_symbol_derivative_scope.md"
+        ],
+        "required_controls": [
+          "product-rule-and-derivative",
+          "moving-endpoint-traces",
+          "residue-and-normalization",
+          "profile-floor-star-uniformity",
+          "height-exhaustion",
+          "pointwise-versus-BV"
+        ],
+        "required_output": [
+          "Complete regular-symbol BV proof or smallest explicit offender",
+          "Derivative, endpoint, q-power, tail, and normalization ledger",
+          "Seven-section report at the assigned path"
+        ]
+      },
+      {
+        "id": "regular_symbol_hostile_audit",
+        "role": "seam_reviewer",
+        "access_mode": "selected_context",
+        "target": "Hostilely audit the complete symbol definition, every product-rule derivative, moving endpoint trace, omega-prime cancellation, q^(-2) normalization, v=0 and rho=0 seams, actual profiles/floors/stars, and height exhaustion. Construct a lawful actual-factor counterexample or certify the narrowest uniform BV lemma.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-beta-radial-pushforward-bv/reports/pushforward_bv_hostile_audit.md",
+          "rounds/codex-managed/m9-m1-beta-log-amplitude-two-saddle/reports/log_kernel_hostile_audit.md",
+          "rounds/codex-managed/m9-m1-beta-log-amplitude-two-saddle/synthesis.md"
+        ],
+        "required_controls": [
+          "product-rule-and-derivative",
+          "moving-endpoint-traces",
+          "residue-and-normalization",
+          "profile-floor-star-uniformity",
+          "height-exhaustion",
+          "pointwise-versus-BV"
+        ],
+        "required_output": [
+          "Independent derivative and endpoint audit",
+          "Counterexample or scoped BV certification",
+          "Seven-section report at the assigned path"
+        ]
+      }
+    ],
+    "review_seams": [
+      "exact complete-amplitude ownership",
+      "divided-difference regularity",
+      "scaled Morse-variable product rule",
+      "moving affine endpoint traces",
+      "omega-prime cancellation at rho=0",
+      "v=0 axial separation and b-uniformity",
+      "q-power and stationary normalization",
+      "U,V,S order of limits",
+      "actual profiles, floors, and stars",
+      "external X^(1/4) normalization"
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "fd2cf1bc11f8cba48bce0e3713473d96478500c219cc980b5467312ecc4f992c",
+    "generated_at": "2026-08-12T23:46:02.226983+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

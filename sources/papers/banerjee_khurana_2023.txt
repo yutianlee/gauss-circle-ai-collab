@@ -1,0 +1,2420 @@
+                                                  CHARACTER ANALOGUES OF COHEN-TYPE IDENTITIES AND RELATED
+                                                               VORONOI SUMMATION FORMULAS
+
+                                                                                  DEBIKA BANERJEE AND KHYATI KHURANA
+arXiv:2306.12399v2 [math.NT] 30 Aug 2023
+
+
+
+
+                                                   Abstract. In [1], B. C. Berndt and A. Zaharescu introduced the twisted divisor sums associated with the Dirich-
+                                                   let character while studying the Ramanujan’s type identity involving finite trigonometric sums and doubly infinite
+                                                   series of Bessel functions. Later, in a follow-up paper [2], S. Kim extended the definition of the twisted divisor
+                                                   sums to twisted sums of divisor functions. In this paper, we derive identities associated with the aforementioned
+                                                   weighted divisor functions and the modified K-Bessel function in light of recent results obtained by the first
+                                                   author and B. Maji [3]. Moreover, we provide a new expression for L(1, χ) from which we establish the positivity
+                                                   of L(1, χ) for any real primitive character χ. In addition, we deduce Cohen-type identities and then exhibit the
+                                                   Voronoı̈-type summation formulas for them.
+
+                                                                                                1. Introduction
+                                              We begin by reminiscing about a beautiful identity due to Ramanujan involving the K-Bessel function, which
+                                           is recorded on page 253 of his lost notebook. If α and β are any two positive numbers such that αβ = π 2 and
+                                           ν is any complex number, then
+                                                               ∞                                  ∞
+                                                           √ X                               p X
+                                                             α    σ−ν (n)nν/2 Kν/2 (2nα) − β        σ−ν (n)nν/2 Kν/2 (2nβ)
+                                                                 n=1                                     n=1
+                                                              1 ν                                       1  ν
+                                                            = Γ       ζ(ν){β (1−ν)/2 − α(1−ν)/2 } + Γ −              ζ(−ν){β (1+ν)/2 − α(1+ν)/2 }, (1.1)
+                                                              4    2                                      4      2
+                                           where σk (n) = d|n dk and Kν (z) denotes the modified Bessel function of order ν [4, p. 78], which is defined
+                                                           P
+
+                                           as the following
+                                                                                          π I−ν (z) − Iν (z)
+                                                                              Kν (z) :=                       , z ∈ C, ν ∈/ Z,                     (1.2)
+                                                                                          2      sin πν
+                                           with Iν being the Bessel function of the imaginary argument [4, p. 77] given by
+                                                                                            ∞
+                                                                                            X       ( 21 z)ν+2n
+                                                                                 Iν (z) :=                         , z ∈ C.                        (1.3)
+                                                                                                n!Γ(ν + n + 1)
+                                                                                                 n=0
+                                           Later in 1955, Guinand [5] derived a formula almost similar to (1.1) by appealing to a formula due to Watson
+                                           [6] involving the K-Bessel function. One can use Ramanujan’s formula (1.1) to derive Koshliakov’s formula [7],
+                                           given by
+                                                                               ∞                                           ∞
+                                                                                              !                                            !
+                                                       √     1    1           X                   p      1     1          X
+                                                         α     γ − log(4β) +      d(n)K0 (2nα) = β         γ − log(4α) +      d(n)K0 (2nβ) ,       (1.4)
+                                                             4    4           n=1
+                                                                                                         4     4          n=1
+                                           where γ denotes Euler’s constant and K0 (z) is defined by the limit
+                                                                                               K0 (z) := lim Kν (z).                                                    (1.5)
+                                                                                                           ν→0
+                                           Koshliakov, in 1929, proved the formula (1.4) by employing the Voronoı̈ summation formula [8], which reads
+                                           as the following
+                                                                    Z b                        ∞      Z b
+                                                X
+                                                      ′
+                                                                                               X                          √                 √
+                                                        d(n)f (n) =     (log(x) + 2γ)f (x)dx +   d(n)     f (x ) (4K0 (4 π nx ) − 2 πY0 (4 π nx ))dx , (1.6)
+                                               a≤n≤b                   a                           n=1           a
+
+
+                                              2010 Mathematics Subject Classification. Primary 11M06, 11T24.
+                                           Keywords and phrases. Dirichlet character; Dirichlet-L functions; Bessel functions; weighted divisor sums; Ramanujan’s lost
+                                           notebook; Voronoı̈ summation formula.
+                                                                                                           1
+where the prime ′ on the summation of the left-hand side implies that if a or b is an integer, only f (a)/2 or
+f (b)/2 is counted, respectively. Here f (x) is a function of bounded variation in (a, b) with 0 < a < b, and K0 (z)
+is defined in (1.5), and Yν (z) denotes the Weber-Bessel function of order ν [4, p. 64] given by
+                                            Jν (z) cos πν − J−ν (z)
+                                  Yν (z) :=                                    / Z,
+                                                                    , z ∈ C, ν ∈                               (1.7)
+                                                     sin πν
+                                  Yn (z) := lim Yν (z), z ∈ C, n ∈ Z,                                          (1.8)
+                                              ν→0
+
+and Jν (z) denotes the Bessel function of the first kind of order ν [4, p. 40]
+                                                    ∞
+                                                    X (−1)n ( 1 z)ν+2n
+                                                                2
+                                       Jν (z) :=                         , z ∈ C.                              (1.9)
+                                                    n=0
+                                                        n!Γ(ν + n + 1)
+
+After Voronoı̈’s remarkable discovery of (1.6), many number theorists examined the formula (1.6) and provided
+proofs under different conditions on the function f (x). A. L. Dixon and W. L. Ferrar [9] gave proof for a bounded
+second differential coefficient function f (x) in (a, b). Koshliakov proved (1.6) for the analytic function f inside
+a closed contour strictly containing the interval [a, b] with 0 < a < b. J. R. Wilton [10] proved (1.6) for the
+function f , which has compact support in the interval [a, b] such that limε→0 Vαβ−ε f (x) = Vαβ−0 f (x) where Vαβ
+denotes the total variation of f (x) over (α, β). In 1987, M. Jutila [11] gave a Voronoı̈-type summation formula
+involving an exponential factor. One can refer to [12, 13, 14, 15] for details and developments on Voronoı̈’s
+summation formulas. Apart from its connection to different fields of mathematics, Voronoı̈-type summation
+formulas also have some applications in physics, especially in quantum graph theory [16].
+   After Koshliakov, many mathematicians studied his formula (1.4). In 1936, Ferrar [17] reproved (1.4) by
+appealing to the functional equation of ζ(s). Later in 1966, K. Soni [18] showed that the functional equation
+of ζ 2 (s) is equivalent to the Voronoı̈ summation formula (1.6) and is equivalent to Koshliakov’s formula (1.4).
+In 1972, Oberhettinger and Soni [19] established that the functional equation of ζ(s) and Koshliakov’s formula
+are equivalent using the methods of Hamburger. In 2008, B. C. Berndt, Y. Lee, and J. Sohn [20] proved (1.1)
+by elaborating Guinand’s method. They rediscovered Koshliakov’s formula (1.4) by taking ν → 0 in (1.1).
+However, A. Dixit in [21] gave an extended version of Ramanujan’s formula (1.1) by appealing to the Cauchy
+residue theorem and the theory of the Mellin transform. Further analysis of identities analogous to (1.1) and
+(1.4) have been done by B. C. Berndt, S. Kim and A. Zaharescu in [22]. They studied character analogues
+of Koshliakov’s formula (1.4) for even characters. They replaced the classical divisor function d(n) with the
+twisted divisor sums, namely,
+                                         X                              X
+                                dχ (n) =    χ(d),         dχ1 ,χ2 (n) =   χ1 (d)χ2 (n/d),                     (1.10)
+                                       d|n                               d|n
+
+where χ, χ1 and χ2 are the Dirichlet characters, and they proved the following beautiful identity
+                            ∞                    √                      ∞
+                                                       qL(1, χ) τ (χ) X
+                                                                                           
+                qL(1, χ) X                 2πnz                                         2πn
+                         +      dχ (n)K0    √      =           +    √       dχ̄ (n)K0     √ ,
+                 4τ (χ)    n=1
+                                              q          4z       z   q n=1
+                                                                                        z  q
+
+where χ is a non-principal even primitive character mod q, ℜ(z) > 0, and τ (χ) is the Gauss sum defined in
+(2.2), and K0 (z) is defined in (1.5). In particular, for even real character χ, they established the positivity
+of L(1, χ), which is instrumental in proving Dirichlet’s theorem on primes in arithmetic progressions. The
+weighted divisor sums defined in (1.10) were introduced by B. C. Berndt and A. Zaharescu [1], where they
+showed that the twisted or weighted divisor sums could be studied in connection with identities associated with
+r2 (n). However, S. Kim [2] extended the definition of twisted divisor sums to twisted sums of divisor functions,
+namely,
+                     X                          X                               X
+         σk,χ (n) :=    dk χ(d),   σ̄k,χ (n) :=   dk χ(n/d),   σk,χ1 ,χ2 (n) :=   dk χ1 (d)χ2 (n/d),       (1.11)
+                    d|n                         d|n                                 d|n
+
+and they studied Riesz sum-type identities associated with them. Recently A. Dixit and A. Kesarwani [23]
+studied a new generalization of the modified Bessel function of the second kind. They derived a formula
+analogous to (1.1) associated with the generalized Bessel function. They proved that their formula is equivalent
+to the functional equation of a non-holomorphic Eisenstein series on SL(2, Z).
+                                                            2
+   The study of the infinite series in (1.1) is of prime importance as it is intimately connected with the Fourier se-
+ries expansion of non-holomorphic Eisenstein series on SL(2, Z) or Maass wave forms [24, 25, 26, 27]. Motivated
+by this fact, Cohen, in 2010 [28], established the following result, similar to (1.1),
+                       ∞                                                                                      ∞
+                   1   X σν (n)                                      (1−ν)/2        (ν−1)/2            − 21
+                                                                                                              X σν (n)            2πn
+              4x   2                Kν/2 (2πnx) + Λ(s)(x                       −x             ) = 4x                     Kν/2 (       )
+                       n=1
+                             nν/2                                                                             n=1
+                                                                                                                  nν/2             x
+                                                                                                                 −(1+ν)/2
+                                                                                               + Λ(−s)(x                    − x(1+ν)/2 ),   (1.12)
+                  s
+where Λ(s) = π − 2 Γ 2s ζ(s) and Kν (z) is defined in (1.2). As an application, he obtained the following beautiful
+                       
+
+identity involving the divisor function σs (n) and the modified K-Bessel function.
+                                                / Z such that ℜ(ν) ≥ 0 and any integer N such that
+Proposition 1.1. [28, p. 62, Theorem 3.4] For ν ∈
+     ℜ(ν)+1
+N ≥ ⌊ 2 ⌋, then
+                                                                        
+       ∞                                                                                         N
+       X                     √        Γ(ν)ζ(ν) Γ(1 + ν)ζ(1 + ν)  ζ(ν)xν−1                2     X
+           σ−ν (n)nν/2 Kν (4π nx) = −
+     ν
+ 8πx 2                                           +                   +              +               ζ(2j) ζ(2j − ν)x2j−1
+                                          ν−1            ν+1 2ν x        sin πν           πν
+                                                                                             
+       n=1
+                                      (2π)             π                       2      sin   2   j=1
+                                                                                                       )
+                                      ζ(ν + 1)xν
+                                                                ∞
+                                                         2     X           x2N +1
+                                                                                     nν−2N − xν−2N
+                                                                                                      
+                                   −π              +               σ−ν (n) 2                             .          (1.13)
+                                       cos( πν       sin πν
+                                                             
+                                             2 )           2   n=1
+                                                                          (n − x2 )
+
+   In addition to (1.13), he derived several interesting identities involving the divisor function σs (n) and the
+modified K-Bessel function. Later, B. C. Berndt, A. Dixit, A. Roy, and A. Zaharescu [29], in their seminal
+work, showed that Cohen-type identity (1.13) can be used to derive the Voronoı̈-type summation formula for
+σs (n).
+Proposition 1.2. [29, p. 841, Theorem 6.1] Let 0 < α < β and α, β ∈     / Z. Let f denote a function analytic
+inside a closed contour strictly containing [α, β]. Assume that − 2 < ℜ(ν) < 21 . Then
+                                                                  1
+
+
+     X                   Z β
+                             f (t) ζ(1 − ν, χ) t−ν + ζ(ν + 1) dt
+                                                             
+          σ−ν (j)f (j) =
+   α<j<β                            α
+          ∞                        Z β                              √            √                       √
+                                                                                                                πν 
+          X
+                             ν/2                − ν2        2                              πν 
+   + 2π         σ−ν (n)n                 f (t)(t)             Kν (4π nt) − Yν (4π nt) cos        − Jν (4π nt) sin         dt.
+                                    α                       π                                2                       2
+          n=1
+
+   Inspired by Cohen’s results [28], the first author and B. Maji [3] studied the infinite series involving the
+generalised divisor function and the modified K-Bessel functions. More precisely, they studied the following
+infinite series, for r ∈ Z, z ∈ C and a and x be any two positive real numbers,
+                                                             ∞
+                                                             X                ν      √
+                                                                   σz(r) (n)n 2 Kν (a nx),                                                  (1.14)
+                                                             n=1
+
+        (r)                                                                                      (1)
+where σz (n) = dr |n dz and ν is a complex number with ℜ(ν) ≥ 0. It is important to note that σz (n) = σz (n).
+                 P
+
+Hence almost all the Cohen-type identities can be derived from their results. In this article, we are interested
+in the character analogues of (1.14). That is, we study the following infinite series
+      ∞                                                ∞                                          ∞
+      X                 ν  √                           X               ν       √                  X                     ν      √
+            σz,χ (n)n Kν (a nx),
+                        2                                    σ̄z,χ (n)n Kν (a nx),
+                                                                       2                                  σz,χ1,χ2 (n)n 2 Kν (a nx),        (1.15)
+      n=1                                              n=1                                        n=1
+
+where σz,χ (n), σ̄z,χ (n) and σz,χ1 ,χ2 (n) are defined in (1.11), and ν is a complex number with ℜ(ν) ≥ 0. We
+derive Cohen-type identities for twisted sums of divisor functions σz,χ (n), σ̄z,χ (n) and σz,χ1 ,χ2 (n) and obtain the
+Voronoı̈-type summation formula for them. The paper is organized as follows: Section 2 states the results for
+the twisted sums of divisor functions when z ∈ Z. Section 3 provides Cohen-type identities for them. Section
+4 states the Voronoı̈-type summation formula for twisted sums of divisor functions. Section 5 reviews several
+significant results needed to derive our main results. Sections 6, 7 and 8 are devoted to the proofs of identities
+stated in Sections 2, 3 and 4, respectively.
+                                                                           3
+                                   2. Main Results for the case z ∈ Z≥0
+  In this section, we consider z a non-negative integer and denote it by k. Throughout the paper, we assume
+that a and x are two strictly positive real numbers, which differ from 0. Before proceeding further, we will
+mention some definitions and notations which will be used later.
+  The Dirichlet L-function is defined by
+                                                      ∞
+                                                      X χ(n)
+                                         L(s, χ) :=                , ℜ(s) > 1,                              (2.1)
+                                                      n=1
+                                                              ns
+
+where χ is a Dirichlet character modulo q. It can be meromorphically continued to the entire complex plane.
+Furthermore, if χ is principal, the corresponding Dirichlet L-function has a simple pole at s = 1. Otherwise,
+the L-function is entire.
+  The Gauss sum of a Dirichlet character modulo q is
+                                                        q
+                                                        X
+                                             τ (χ) :=         χ(h)e2πih/q .                                 (2.2)
+                                                        h=1
+
+  Since our results involve the modified K-Bessel function, it is important to state some related results. The
+asymptotic estimate for the K-Bessel function defined in (1.2) is [4, p. 202]
+                                           π 1           −x 
+                                               2 −x         e
+                                 Kν (x) =        e +O         3     as x → ∞.
+                                           2x               x2
+The above expression ensures the absolute convergence of all the infinite series defined in (1.15). Throughout
+this paper, we will consider ℜ(ν) ≥ 0 as K−ν (x) = Kν (x). We recall that K0 (x) is defined by (1.5). From the
+integral representation of K0 (x) [4, p. 446]
+                                                       Z ∞
+                                              K0 (x) =     e−x cosh t dt,
+                                                         0
+
+one can see that K0 (x) is positive and monotonically decreasing on the interval (0, ∞). We also note the series
+representation of K0 (x) [4, p. 80]
+                                                            ∞   x 2m ′
+                                               x                
+                                                            X
+                                                                2    Γ (m + 1)
+                                K0 (x) = − log     I0 (x) +                     ,
+                                                2              (m!)2 Γ(m + 1)
+                                                                   m=0
+
+where I0 (x) is defined in (1.3). From its series representation mentioned above, one can infer that K0 (x) tends
+to +∞ as x decreases to 0.
+
+2.1. Identities involving odd characters. In this subsection, we will consider k to be an even, non-negative
+integer and χ an odd primitive character.
+Theorem 2.1. Let k be an even, non-negative integer and χ be an odd primitive Dirichlet character modulo
+q. Then, for any ℜ(ν) > 0,
+  ∞                                                                           k
+  X               ν      √       2ν+1                   ν       (−1) 2 iq k                                 ν
+        σk,χ (n)n 2 Kν (a nx) =δk ν+2 Γ(1 + ν)L(1, χ)x− 2 −1 + ν k+2−ν k+1 Γ(ν)τ (χ)Γ(k + 1)L(k + 1, χ̄) x− 2
+                                 a                            a 2       π
+  n=1
+                                     k             ν              ∞
+                                (−1) 2 iaν q ν+k x 2             X                   σ̄k,χ̄ (n)
+                               − 3ν+k+2 2ν+k+1 Γ(ν + k + 1)τ (χ)                             ν+k+1 ,
+                                 2       π
+                                                                     
+                                                                                      a2 qx
+                                                                 n=1              n + 16π  2
+
+
+where δk is given by
+                                                   (
+                                                    1,           if k = 0,
+                                              δk =                                                          (2.3)
+                                                    0,           if k > 0.
+
+  Our next result corresponds to ν = 0 is as follows
+                                                             4
+Theorem 2.2. Let k be an even, non-negative integer and χ be an odd primitive Dirichlet character modulo
+q. Then
+       ∞
+                       √                                                  L′ (−k, χ)
+                                                                                      
+      X                          2              L(−k, χ)           8π                         L(−k, χ)
+          σk,χ (n)K0 (a nx) =δk 2 L(1, χ) −                log       2
+                                                                        +            − 2γ +            log x
+      n=1
+                               a x                  4              a      L(−k, χ)               4
+                                                        ∞
+                                                                                             !
+                                     k   ik!q k         X               1            1
+                              + (−1) 2            τ (χ)   σ̄k,χ̄ (n)        −                  ,             (2.4)
+                                       2(2π)k+1                        nk+1 (n + a2 qx2 )k+1
+                                                              n=1                        16π
+
+where δk is defined in (2.3).
+Remark 1. Let us assume that χ is a real odd primitive Dirichlet character modulo q. Now setting k = 0 and
+then employing the functional equation (5.16) in (2.4), we obtain
+          ∞
+                        √                                                          L′ (0, χ)
+                                                                                             
+         X                      L(1, χ) 2      iτ (χ)           L(0, χ)      8π
+             dχ (n)K0 (a nx) =              −         x log x −          log    +            − 2γ
+                                  x      a2      4π               4          a2    L(0, χ)
+          n=1
+                                                      ∞
+                                       ia2 q x       X      dχ̄ (n)
+                                   +           τ (χ)                     .                                      (2.5)
+                                        64π 3        n=1 n(n +   a2 qx
+                                                                     2 )
+                                                                    16π
+
+Now we can easily show that dχ (n) is non-negative for each n from the Euler product on the left-hand side of
+(5.10). More precisely, the factors in its Euler product are of the forms
+
+                                        1 −1          1 −2               1 −1
+                                                                     
+                                   1− s       , 1− s         , or 1 − 2s      ,
+                                       p              p                 p
+according as to whether χ(p) = 0, 1 or −1 respectively. Therefore, by rewriting the Euler product as a Dirichlet
+series, one can easily notice that dχ (n) ≥ 0 for all n. In addition, it is clear from (1.10) that dχ (n) ≥ 1
+whenever n is a perfect square. We have already mentioned the fact that K0 (x) tends to +∞ as x decreases to
+0 at the beginning of this section. Therefore, the left-hand side of (2.5) approaches +∞ as x decreases to 0.
+Let us examine the right-hand side of (2.5). Noting that iτ (χ) is real for real odd primitive Dirichlet character
+[30, Theorem 9.9, p. 288], we can easily deduce that the infinite series on the right-hand side of (2.5) tends to
+0 as x decreases to 0. Next noting that iτ (χ) is real and x log x tends to 0 as x decreases to 0, we infer that
+L(1,χ)
+  x    tends to +∞ as x decreases to 0, which ensures the strict positivity of L(1, χ).
+Theorem 2.3. Let k ≥ 2 be an even integer and χ be an odd primitive Dirichlet character modulo q. Then,
+for any ℜ(ν) > 0,
+             ∞
+             X                ν      √     2ν+2k+1                                    ν
+                   σ̄k,χ (n)n 2 Kν (a nx) = ν+2k+2 Γ(k + 1)Γ(ν + k + 1)L(1 + k, χ) x− 2 −k−1
+                                           a
+             n=1
+                                                   k          ν                 ∞
+                                              (−1) 2 i(aq)ν x 2                X              σk,χ̄ (n)
+                                             − 3ν+k+2 2ν+k+1 Γ(ν + k + 1)τ (χ)                       ν+k+1 .
+                                              2        π
+                                                                                   
+                                                                                               a2 qx
+                                                                               n=1         n + 16π 2
+
+
+  The result corresponding to ν = 0 is as follows
+Theorem 2.4. Let k ≥ 2 be an even integer and χ be an odd primitive Dirichlet character modulo q. Then
+                ∞
+                X                 √     22k+1                        1   1
+                    σ̄k,χ (n)K0 (a nx) = 2k+2 Γ2 (k + 1)L(k + 1, χ) k+1 + ζ ′ (−k)L(0, χ)
+                n=1
+                                        a                          x     2
+                                                                    ∞
+                                                      k
+                                                                                                        !
+                                               (−1) 2 ik!τ (χ) X              1                1
+                                             +                   σk,χ̄ (n)          −                       .
+                                                 2(2π)k+1                    nk+1              2
+                                                                                             a qx k+1
+                                                                                        (n + 16π 2)
+                                                                   n=1
+
+Remark 2. The case k = 0 is excluded from Theorem 2.3 and Theorem 2.4 because of the fact that σ̄0,χ (n) =
+σ0,χ (n) = dχ (n) and ∞            ν/2 K (a√nx) for ℜ(ν) > 0 and                 √
+                     P                                           P∞
+                       n=1 dχ (n)n      ν                         n=1 dχ (n)K0 (a nx) are already considered
+in Theorems 2.1 and 2.2, respectively.
+                                                               5
+2.2. Identities involving even characters. In this subsection, we present similar results when k is an odd
+positive integer and χ is a non-principal even primitive character.
+Theorem 2.5. Let k ≥ 1 be an odd integer and χ be a non-principal even primitive Dirichlet character modulo
+q. Then, for any ℜ(ν) > 0,
+              ∞                               k−1
+              X           ν     √        (−1) 2 q k                                  ν
+                  σk,χ (n)n Kν (a nx) = ν k+2−ν k+1 Γ(ν)τ (χ)Γ(k + 1)L(1 + k, χ̄) x− 2
+                          2
+
+              n=1
+                                       a 2     π
+                                             k+1           ν               ∞
+                                         (−1) 2 aν q ν+k x 2              X      σk,χ̄ (n)
+                                        + 3ν+k+2 2ν+k+1 Γ(ν + k + 1)τ (χ)               ν+k+1 .
+                                          2      π
+                                                                             
+                                                                                  a2 qx
+                                                                          n=1 n +
+                                                                                  16π 2
+
+  The result corresponding to ν = 0 is as follows
+Theorem 2.6. Let k ≥ 1 be an odd integer and χ be a non-principal even primitive Dirichlet character modulo
+q. Then
+         ∞
+                         √                                  L′ (−k, χ)
+                                                                           
+         X                         L(−k, χ)         8π                            L(−k, χ)
+            σk,χ (n)K0 (a nx) = −              log    2
+                                                          +              − 2γ +            log x
+                                       4            a       L(−k, χ)                 4
+        n=1
+                                                           ∞
+                                                                                                !
+                                        k−1   k!q k        X                1          1
+                                 + (−1) 2            τ (χ)    σ̄k,χ̄ (n)        −                 .
+                                            2(2π)k+1                      nk+1 (n + a2 qx2 )k+1
+                                                                   n=1                       16π
+Theorem 2.7. Let k ≥ 1 be an odd integer and χ be a non-principal even primitive Dirichlet character modulo
+q. Then, for any ℜ(ν) > 0,
+         ∞
+        X              ν      √     2ν+2k+1                                    ν
+            σ̄k,χ (n)n 2 Kν (a nx) = ν+2k+2 Γ(k + 1)Γ(ν + k + 1)L(1 + k, χ) x− 2 −k−1
+        n=1
+                                    a
+                                             k+1        ν                   ∞
+                                      (−1) 2 (aq)ν x 2                 X                     1
+                                     + 3ν+k+2 2ν+k+1 Γ(ν + k + 1)τ (χ)     σk,χ̄ (n)           ν+k+1 .
+                                       2     π                                            a2 qx
+                                                                       n=1            n + 16π 2
+
+
+  The result corresponding to ν = 0 is as follows
+Theorem 2.8. Let k ≥ 1 be an odd integer and χ be a non-principal even primitive Dirichlet character modulo
+q. Then
+             ∞
+            X                 √     22k+1                          1    1
+                σ̄k,χ (n)K0 (a nx) = 2k+2 Γ2 (k + 1)L(k + 1, χ) k+1 + ζ ′ (−k)L(0, χ)
+                                    a                            x      2
+            n=1
+                                            k−1         ∞
+                                                                                           !
+                                       (−1) 2 k!        X             1           1
+                                     +            τ (χ)   σk,χ̄ (n)       −                  .
+                                        2(2π)k+1                     nk+1 (n + a2 qx2 )k+1
+                                                             n=1                       16π
+   The next result corresponds to the case ν = 0 and k = 0. We can also claim the positivity of L(1, χ) for even
+real character χ from the following identity.
+Theorem 2.9. Let χ be a non-principal even primitive Dirichlet character modulo q. Then we have
+                                                                                             2 
+          ∞                                                                 ∞                16π n
+         X              √        2            τ (χ)             2
+                                                               a q x       X            log   a2 qx
+             dχ (n)K0 (a nx) = 2 L(1, χ) −          L(1, χ̄) +       τ (χ)     dχ̄ (n)               2 ,   (2.6)
+                                a x             8              32π 4
+                                                                                             
+                                                                                         2     a2 qx
+         n=1                                                               n=1         n − 16π2
+          2
+         a qx
+provided 16π   / Z+ .
+             2 ∈
+
+Remark 3. When χ is any real even primitive Dirichlet character modulo q, we can show that dχ (n) is non-
+negative for each n by similar arguments given in Remark 1. From (1.10), it can be easily seen that dχ (n) ≥ 1
+whenever n is a perfect square. As K0 (x) tends to +∞ as x decreases to 0, the left-hand side of (2.6) approaches
++∞ as x decreases to 0. Now the infinite series in the right-hand side of (2.6) decreases rapidly as x decreases
+to 0. Therefore, we arrive at the conclusion that a22x L(1, χ) tends to +∞ as x decreases to 0 which proves the
+strict positivity of L(1, χ).
+                                                         6
+              P involving two characters. In this subsection, we provide the identities corresponding to
+2.3. Identities
+σk,χ1,χ2 (n) = d/n dk χ1 (d)χ2 (n/d), where χ1 and χ2 are Dirichlet characters modulo p and q, respectively.
+Theorem 2.10. Let k ≥ 1 be an odd integer. Let χ1 and χ2 be primitive characters modulo p and q, respectively,
+such that either both are non-principal even characters or both are odd characters. Then, for any ℜ(ν) > 0,
+      ∞                                  k+1             ν                             ∞
+      X                  ν    √      (−1) 2 (aq)ν pν+k x 2                            X     σk,χ¯2,χ¯1 (n)
+          σk,χ1 ,χ2 (n)n Kν (a nx) =
+                         2
+                                        3ν+k+2   2ν+k+1
+                                                           τ (χ1 )τ (χ2 )Γ(ν + k + 1)                 ν+k+1 .
+                                       2       π
+                                                                                         
+                                                                                              a2 pqx
+      n=1                                                                             n=1 n +
+                                                                                               16π 2
+
+  The result corresponding to ν = 0 is as follows
+Theorem 2.11. Let k ≥ 1 be an odd integer. Assume that χ1 and χ2 are primitive characters modulo p and
+q, respectively, such that either both are non-principal even characters or both are odd characters, then
+    ∞                                            k−1                     ∞
+                                                                                                                   !
+   X                     √       1          (−1) 2 k!pk                 X                    1           1
+       σk,χ1 ,χ2 (n)K0 (a nx) = ck,χ1 ,χ2 +        k+1
+                                                         τ (χ1 )τ (χ2 )     σk,χ̄2,χ̄1 (n)   k+1
+                                                                                                 −      a2 pqx k+1
+                                                                                                                     ,
+   n=1
+                                 2            2(2π)                     n=1
+                                                                                           n       (n +      2 )
+                                                                                                          16π
+where ck,χ1 ,χ2 is a constant defined as
+                                      (
+                                        L(−k, χ1 )L′ (0, χ2 ),   if both χ1 and χ2 are even,
+                          ck,χ1 ,χ2 =                                                                            (2.7)
+                                        L′ (−k, χ1 )L(0, χ2 ),   if both χ1 and χ2 are odd.
+
+                                                                          k
+                                                                 P
+  Setting χ1 = χ2 = χ and observing σk,χ,χ(n) = χ(n)                 d/n d = χ(n)σk (n) in Theorems 2.10 and 2.11, we
+obtain the following interesting identities.
+Corollary 2.12. Let k ≥ 1 be an odd integer and χ be a non-principal primitive character modulo q. Then,
+for any ℜ(ν) > 0,
+           ∞                                k+1            ν                ∞
+           X               ν      √     (−1) 2 aν q 2ν+k x 2               X    σk (n) χ̄(n)
+               σk (n)χ(n)n 2 Kν (a nx) = 3ν+k+2 2ν+k+1 τ 2 (χ)Γ(ν + k + 1)                   ν+k+1 .
+                                          2     π
+                                                                              
+                                                                                    a2 q 2 x
+           n=1                                                             n=1 n +
+                                                                                    16π 2
+
+Corollary 2.13. Let k ≥ 1 be an odd integer and χ be a non-principal primitive character modulo q. For
+ν = 0, we have
+       ∞                                     k−1            ∞
+                                                                                                   !
+      X                  √     1         (−1) 2 k!q k 2    X                 1         1
+          σk (n)χ(n)K0 (a nx) = ck,χ,χ +             τ (χ)     σk (n) χ̄(n)     −                    ,
+      n=1
+                               2          2(2π)k+1         n=1
+                                                                            nk+1 (n + a2 q22x )k+1
+                                                                                                    16π
+where ck,χ,χ is defined in (2.7).
+  The results corresponding to ν = 0 and k = 0 are as follows
+Theorem 2.14. Let χ1 and χ2 be non-principal even primitive characters modulo p and q, respectively. Then
+                                                                                             2 
+                ∞                                                  ∞                         16π n
+               X                   √       2
+                                          a pq x                  X                     log  a2 pqx
+                   dχ1 ,χ2 (n)K0 (a nx) =        τ (χ 1 )τ (χ 2 )     dχ̄   , χ̄   (n)               2 ,
+                                           32π 4                          1      2          
+                                                                                        2     a2 pqx
+               n=1                                                n=1                  n − 16π2
+           2pqx
+provided a16π   / Z+ .
+              2 ∈
+
+
+Theorem 2.15. Let χ1 and χ2 be odd primitive characters modulo p and q, respectively. Then we have
+         ∞
+                            √                                                        L′ (0, χ1 ) L′ (0, χ2 )
+                                                                                                          
+        X                         1                                         4
+            dχ1 ,χ2 (n)K0 (a nx) = L(0, χ1 )L(0, χ2 ) −2γ + log                   +              +
+                                  2                                       a2 x        L(0, χ1 )    L(0, χ2 )
+        n=1
+                                                                                       2 
+                                                                   ∞ dχ̄ ,χ̄ (n) log a pqx
+                                    a4 p 2 q 2 2                  X     1 2              16π 2 n
+                                  +           x  τ (χ 1 )τ (χ 2 )                              ,
+                                    512π 4
+                                                                         
+                                                                       n    n 2 − ( a2 pqx )2
+                                                                  n=1                16π 2
+           2pqx
+provided a16π   / Z+ .
+              2 ∈
+                                                             7
+Theorem 2.16. Let k be an even, non-negative integer. Assume that χ1 and χ2 are primitive characters
+modulo p and q, respectively, such that one is a non-principal even character and the other is an odd character.
+Then, for any ℜ(ν) > 0,
+        ∞                                   k              ν                             ∞
+        X                    ν         (−1) 2 (aq)ν pν+k x 2
+                                        √                                               X     σk,χ¯2,χ¯1 (n)
+            σk,χ1 ,χ2 (n)n Kν (a nx) =
+                             2
+                                           3ν+k+2 π 2ν+k+1
+                                                             τ (χ1 )τ (χ2 )Γ(ν + k + 1)                 ν+k+1 .
+                                         i2
+                                                                                           
+                                                                                                a2 pqx
+        n=1                                                                             n=1 n +      2
+                                                                                                 16π
+
+  The result corresponding to ν = 0 is as follows
+Theorem 2.17. Let k be an even, non-negative integer. If χ1 and χ2 are primitive characters modulo p and
+q, respectively, such that one is a non-principal even character and the other is an odd character, then
+  ∞                                                                       ∞
+                                                                                                                   !
+ X                    √       1                k   ik!pk                 X                    1         1
+     σk,χ1,χ2 (n)K0 (a nx) = ek,χ1 ,χ2 + (−1) 2           τ (χ1 )τ (χ2 )     σk,χ̄2 ,χ̄1 (n)     −                   ,
+ n=1
+                              2                  2(2π)k+1                n=1
+                                                                                             nk+1 (n + a2 pqx
+                                                                                                            2 )
+                                                                                                               k+1
+                                                                                                         16π
+where
+                                             (
+                                              L(−k, χ1 )L′ (0, χ2 ), if χ1 is odd and χ2 is even,
+                                 ek,χ1 ,χ2 =                                                                       (2.8)
+                                              L′ (−k, χ1 )L(0, χ2 ), if χ1 is even and χ2 is odd.
+
+                                                   3. Cohen-Type Identities
+                                         / Z such that ℜ(ν) ≥ 0. We will assume that x is a strictly positive
+   This section deals with z = −ν with ν ∈
+real number.
+
+3.1. Identities involving even characters and specializations. In this subsection, we present the identities
+associated with σ−ν,χ̄ (n) and σ̄−ν,χ̄ (n) when χ is a non-principal even primitive character.
+Theorem 3.1. Let ν ∈  / Z such that ℜ(ν) ≥ 0. Let χ be a non-principal even primitive character modulo q. If
+N is any integer such that N ≥ ⌊ ℜ(ν)+1
+                                    2   ⌋, then
+          ∞
+          X                        √         Γ(ν)L(ν, χ̄) 2Γ(1 + ν)L(1 + ν, χ̄) −1
+ 8πxν/2      σ−ν,χ̄ (n)nν/2 Kν (4π nx) = −                +                       x
+         n=1
+                                               (2π)ν−1            (2π)ν+1
+                                                                                                        
+                 1−ν        N                                          ∞              ν−2N        ν−2N
+                                                                                                        
+              2q          X                                           X              n      − (qx)
+        +                       ζ(2j) L(2j − ν, χ)(qx)2j−1 + (qx)2N +1    σ̄−ν,χ (n)                       , (3.1)
+          τ (χ) sin πν                                                                     2 − (qx)2
+                        
+                      2
+                          
+                                                                              n=1
+                                                                                         n               
+                                  j=1
+
+            / Z+ .
+provided qx ∈
+  The specialization of the above theorem to ν = 1/2 is as follows
+Corollary 3.2. We have
+         ∞                                                                        ∞
+         X                  √
+                         −4π nx                           1            −1 2q 3/2 X                    1
+    2π       σ− 1 ,χ̄ (n)e              = −πL(1/2, χ̄) +    L(3/2, χ̄)x +       x   σ̄ 1 (n)          √   √    .
+         n=1
+                2                                        4π               τ (χ) n=1 − 2 ,χ   (n + qx)( n + qx)
+
+Theorem 3.3. Let ν ∈      / Z such that ℜ(ν) ≥ 0. Let χ be a non-principal even primitive character modulo q. If
+N is any integer such that N ≥ ⌊ ℜ(ν)+12   ⌋, then
+           ∞
+                                                   (
+      ν/2
+          X
+                           ν/2      √          q     L(ν, χ)             πL(1 + ν, χ)
+  8πx         σ̄−ν,χ̄ (n)n Kν (4π nx) =                      (qx)ν−1 −             (qx)ν
+                                             τ (χ) sin πν 2                cos 2πν
+          n=1
+                                                                                                             
+                        N                                                   ∞             ν−2N        ν−2N
+                                                                                                            
+               2       X                                    2              X              n      − (qx)
+         +       πν        ζ(2j − ν)L(2j, χ)(qx)2j−1 +       πν (qx)
+                                                                     2N +1
+                                                                               σ−ν,χ (n)                       ,
+                                                                                               2
+                                                                                             n − (qx)2
+                                                               
+           sin 2         j=1
+                                                       sin 2               n=1
+                                                                                                             
+
+            / Z+ .
+provided qx ∈
+  The result corresponding to ν = 1/2 is as follows
+                                                                 8
+Corollary 3.4. We have
+        ∞                                                                              ∞        σ− 1 ,χ (n)
+       X                    √     q 1/2             1   πq 3/2            1    2q 2 X
+    2π     σ̄− 1 ,χ̄ (n)e−4π nx =       L(1/2, χ)x− 2 −        L(3/2, χ)x 2 +       x              2
+                                                                                                    √       √    .
+       n=1
+               2                  τ (χ)                 τ (χ)                 τ (χ)   n=1
+                                                                                          (n + qx)(    n +   qx)
+
+3.2. Identities involving odd characters and specializations. In this subsection, we state the identities
+associated with σ−ν,χ̄ (n) and σ̄−ν,χ̄ (n) when χ is an odd primitive character.
+Theorem 3.5. Let ν ∈ / Z such that ℜ(ν) ≥ 0. Let χ be an odd primitive character modulo q. If N is any integer
+               ℜ(ν)+1
+such that N ≥ ⌊ 2 ⌋, then
+            ∞
+      ν/2
+            X                          √        Γ(ν)L(ν, χ̄) 2Γ(1 + ν)L(1 + ν, χ̄) −1       2iq 1−ν
+8πx               σ−ν,χ̄ (n)nν/2 Kν (4π nx) = −             +                     x   +
+                                                 (2π)ν−1           (2π)ν+1              τ (χ) cos πν
+                                                                                                      
+            n=1                                                                                     2
+                                                                                                                    
+                                   N                                              ∞            ν+1−2N       ν+1−2N
+                                                                                                                    
+                                  X                                              X σ̄−ν,χ (n) n       − (qx)
+×       ζ(ν + 1)L(1, χ)(qx)ν −           ζ(2j) L(2j − ν, χ)(qx)2j−1 − (qx)2N +1                                          ,
+    
+                                                                                  n=1
+                                                                                        n           n2 − (qx)2       
+                                   j=1
+
+            / Z+ .
+provided qx ∈
+    Setting ν = 1/2 in the above theorem, we obtain the following
+Corollary 3.6. We have
+                ∞                  √
+               X                                          1                     2iq
+            2π     σ− 1 ,χ̄ (n)e−4π nx = − πL(1/2, χ̄) +      L(3/2, χ̄)x−1 +        ζ(3/2)L(1, χ)x1/2
+                      2                                  4π                    τ (χ)
+               n=1
+                                                    ∞                      √
+                                           2iq 3/2 X                  (n + nqx + qx)
+                                         −        x    σ̄− 1 ,χ (n)             1        1 .
+                                            τ (χ) n=1 2             n(n + qx)(n 2 + (qx) 2 )
+Theorem 3.7. Let ν ∈       / Z such that ℜ(ν) ≥ 0. Let χ be an odd primitive character modulo q. If N is any integer
+                     ℜ(ν)+1
+such that N ≥ ⌊ 2 ⌋, then
+          ∞
+                                                                       (
+     ν/2
+         X
+                          ν/2      √        2Γ(ν)ζ(ν)L(0, χ̄)      iq     L(ν, χ)            πL(1 + ν, χ)
+ 8πx          σ̄−ν,χ̄ (n)n Kν (4π nx) =              ν−1
+                                                               +              πν
+                                                                                  (qx)ν−1 +         πν
+                                                                                                         (qx)ν
+         n=1
+                                                 (2π)            τ (χ)   cos   2               sin    2
+                                                                                                                   
+                 N −1                                                      ∞             ν+1−2N           ν+1−2N
+                                                                                                                  
+          2      X                                           2            X               n         − (qx)
+   +        πν
+                      ζ(2j + 1 − ν)L(2j + 1, χ)(qx)2j +       πν (qx)
+                                                                      2N
+                                                                              σ−ν,χ (n)           2        2
+                                                                                                                     ,
+     cos 2 j=1                                           cos 2            n=1
+                                                                                                n   −  (qx)        
+
+            / Z+ .
+provided qx ∈
+    The result corresponding to ν = 1/2 is as follows
+Corollary 3.8. We have
+               ∞
+              X                    √                        iq 1/2             1   πiq 3/2            1
+           2π     σ̄− 1 ,χ̄ (n)e−4π nx =2πζ(1/2)L(0, χ̄) +         L(1/2, χ)x− 2 +         L(3/2, χ)x 2
+              n=1
+                      2                                     τ (χ)                   τ (χ)
+                                                 ∞                    √
+                                           2iq X                 (n + nqx + qx)
+                                        +          σ− 1 ,χ (n)           √     √     .
+                                          τ (χ) n=1 2          (n + qx)( n + qx)
+
+                       P two characters and specializations. Here we state the identities correspond-
+3.3. Identities involving
+ing to σ−ν,χ1 ,χ2 (n) = d/n d−ν χ1 (d)χ2 (n/d), where χ1 and χ2 are the Dirichlet characters modulo p and q,
+respectively.
+Theorem 3.9. Let ν ∈      / Z such that ℜ(ν) ≥ 0. Both χ1 and χ2 are non-principal even primitive characters
+modulo p and q, respectively. If N is any integer such that N ≥ ⌊ ℜ(ν)+1   2   ⌋, then
+                                                                         
+            ∞                                                               N
+         ν X
+                                ν/2     √               2p1−ν q          X
+     8πx 2     σ−ν,χ¯1 ,χ¯2 (n)n Kν (4π nx) =                       πν 
+                                                                              L(2j, χ2 ) L(2j − ν, χ1 )(pqx)2j−1
+           n=1
+                                               τ (χ 1 )τ (χ 2 ) sin  2     j=1
+                                                                9
+                                                                    ∞                                                 )
+                                                                                               nν−2N − (pqx)ν−2N
+                                                                    X                      
+                                                     +(pqx)2N +1          σ−ν,χ2 ,χ1 (n)                                   ,
+                                                                                                  n2 − (pqx)2
+                                                                    n=1
+             / Z+ .
+provided pqx ∈
+  Setting χ1 = χ2 = χ in the above theorem, we get the following
+Corollary 3.10. Let ν ∈  / Z such that ℜ(ν) ≥ 0. Let χ be a non-principal even primitive character modulo q.
+If N is any integer such that N ≥ ⌊ ℜ(ν)+1
+                                       2   ⌋, then
+                                                                  
+                ∞                                         2−ν        N
+             ν X
+                                ν/2      √             2q         X
+         8πx 2     σ−ν (n)χ̄(n)n Kν (4π nx) = 2               πν 
+                                                                       L(2j, χ) L(2j − ν, χ)(q 2 x)2j−1
+               n=1
+                                                   τ (χ) sin 2      j=1
+                                                               ∞                ν−2N                 )
+                                                     2 2N +1
+                                                               X                 n     − (q 2 x)ν−2N
+                                                 +(q x)           σ−ν (n)χ(n)                            ,
+                                                                                    n2 − (q 2 x)2
+                                                                                n=1
+provided q 2 x ∈
+               /Z       +.
+
+Theorem 3.11. Let ν ∈    / Z such that ℜ(ν) ≥ 0. Both χ1 and χ2 are odd primitive characters modulo p and q,
+respectively. If N is any integer such that N ≥ ⌊ ℜ(ν)+1
+                                                     2   ⌋, then
+                 ∞
+                 X                                 √                                          2
+       8πxν/2           σ−ν,χ¯1 ,χ¯2 (n)nν/2 Kν (4π nx) = Γ(ν)L(ν, χ¯1 )L(0, χ¯2 )
+                                                                                           (2π)ν−1
+                 n=1
+                                        
+                                                                                 N −1
+                      2p1−ν q           
+                                                                            ν
+                                                                                 X
+       −                         πν
+                                           −L(ν + 1, χ2 )L(1, χ1 )(pqx) +              L(2j + 1, χ2 ) L(2j + 1 − ν, χ1 )(pqx)2j
+           τ (χ1 )τ (χ2 ) sin     2
+                                        
+                                                                                  j=1
+                                                                    ∞                                                          )
+                                                                                                nν−2N +2 − (pqx)ν−2N +2
+                                                                                            
+                                                               2N
+                                                                    X     σ−ν,χ2 ,χ1 (n)
+                                                       +(pqx)                                                                       ,
+                                                                               n                      n2 − (pqx)2
+                                                                    n=1
+             / Z+ .
+provided pqx ∈
+  Taking χ1 = χ2 = χ in the above theorem, we get the following
+Corollary 3.12. Let ν ∈ / Z such that ℜ(ν) ≥ 0. Let χ be an odd primitive character modulo p. If N is any
+                       ℜ(ν)+1
+integer such that N ≥ ⌊ 2 ⌋, then
+                     ∞
+                 ν   X                            √                                          2
+           8πx 2           σ−ν (n)χ̄(n)nν/2 Kν (4π nx) = Γ(ν)L(ν, χ̄)L(0, χ̄)
+                     n=1
+                                                                                          (2π)ν−1
+                           
+                                                                N −1
+                2p2−ν      
+                                                         2 ν
+                                                                 X
+           − 2               −L(ν + 1, χ 2 )L(1, χ 1 )(p  x)  +      L(2j + 1, χ) L(2j + 1 − ν, χ)(p2 x)2j
+            τ (χ) sin πν
+                         
+                       2
+                           
+                                                                 j=1
+                                                             ∞                                          )
+                                                                σ−ν (n)χ(n) nν−2N +2 − (p2 x)ν−2N +2
+                                                           X                
+                                                    2 2N
+                                              +(p x)                                                       ,
+                                                           n=1
+                                                                     n              n2 − (p2 x)2
+provided p2 x ∈
+              / Z+ .
+Theorem 3.13. Let ν ∈  / Z such that ℜ(ν) ≥ 0. Let χ1 be a non-principal even primitive character modulo p
+and χ2 be an odd primitive character modulo q. If N is any integer such that N ≥ ⌊ ℜ(ν)+1
+                                                                                      2   ⌋, then
+            ∞
+            X                                   √            2                                      2ip1−ν q
+   8πxν/2            σ−ν,χ¯1 ,χ¯2 (n)nν/2 Kν (4π nx) =            Γ(ν)L(ν, χ
+                                                                           ¯ 1 )L(0, ¯
+                                                                                     χ 2 ) +                            πν
+                                                          (2π)ν−1
+                                                                                                                               
+            n=1
+                                                                                             τ (χ1 )τ (χ2 ) cos          2
+                                                                                                                                   
+         −1
+       NX                                                                      ∞
+                                                                                X                      
+                                                                                                           nν−2N +1 − (pqx)ν−2N +1 
+                                                                                                                                  
+   ×             L(2j + 1, χ2 )L(2j + 1 − ν, χ1 )(pqx)2j + (pqx)2N                    σ−ν,χ2 ,χ1 (n)                                  ,
+       
+                                                                                n=1
+                                                                                                                 n2 − (pqx)2        
+           j=1
+
+             / Z+ .
+provided pqx ∈
+                                                                     10
+Theorem 3.14. Let ν ∈  / Z such that ℜ(ν) ≥ 0. Let χ1 be an odd primitive character modulo p and χ2 be a
+non-principal even primitive character modulo q. If N is any integer such that N ≥ ⌊ ℜ(ν)+1
+                                                                                        2   ⌋, then
+              ∞
+              X                                √               2ip1−ν q
+     8πxν/2         σ−ν,χ¯1 ,χ¯2 (n)nν/2 Kν (4π nx) =                        πν
+                                                                                   {L(ν + 1, χ2 )L(1, χ1 )(pqx)ν
+              n=1
+                                                        τ (χ1 )τ (χ2 ) cos    2
+                                                                                                              
+           N                                                          ∞
+                                                                        σ−ν,χ ,χ (n) nν−2N +1 − (pqx)ν−2N +1 
+           X                                                          X                                    
+       −         L(2j, χ2 ) L(2j − ν, χ1 )(pqx)2j−1 − (pqx)2N +1                    2   1
+                                                                                                                        ,
+                                                                                    n               n2 − (pqx)2     
+           j=1                                                        n=1
+
+             / Z+ .
+provided pqx ∈
+
+                                4. Connection with Voronoı̈ summation formula
+   In this section, we offer Voronoı̈-type summation formulas for σz,χ (n), σ̄z,χ (n) and σz,χ1,χ2 (n) defined in
+(1.11).
+
+4.1. Identities involving even characters.
+Theorem 4.1. Let 0 < α < β and α, β ∈         / Z. Let f denote a function analytic inside a closed contour strictly
+containing [α, β]. Assume that χ is a non-principal even primitive character modulo q. For 0 < ℜ(ν) < 12 , we
+have
+               ν                              ν                                 ∞
+          q 1− 2 X                       q 1− 2
+                                                            Z β                                       Z β
+                                                                f (t)          X
+                                                                                                  ν/2                ν
+                       σ̄−ν,χ (j)f (j) =        L(1 − ν, χ)         ν
+                                                                       dt + 2π     σ −ν,χ̄ (n)  n          f (t)(t)− 2
+          τ (χ)                          τ (χ)               α    t            n=1                      α
+                 α<j<β
+                      r                 r                             r                       
+                  2            nt                 nt           πν                nt            πν  
+          ×         Kν 4π            − Yν 4π              cos          − Jν 4π              sin           dt.
+                  π             q                  q             2                  q              2
+Theorem 4.2. Let 0 < α < β and α, β ∈       / Z. Let f denote a function analytic inside a closed contour strictly
+containing [α, β]. Assume that χ is a non-principal even primitive character modulo q. For 0 < ℜ(ν) < 21 , we
+have
+               ν                             ν                               ∞
+          q 1+ 2 X                      q 1+ 2
+                                                           Z β                                    Z β
+                                                                            X                                   ν
+                                                                                              ν/2
+                       σ−ν,χ (j)f (j) =        L(1 + ν, χ)     f (t)dt + 2π     σ̄−ν,χ̄ (n) n         f (t)(t)− 2
+          τ (χ)                         τ (χ)               α               n=1                    α
+                 α<j<β
+                       r               r                            r                     
+                  2           nt                 nt           πν               nt           πν 
+          ×         Kν 4π           − Yν 4π              cos         − Jν 4π             sin          dt.
+                  π            q                  q             2                 q             2
+
+4.2. Identities involving odd characters.
+Theorem 4.3. Let 0 < α < β and α, β ∈       / Z. Let f denote a function analytic inside a closed contour strictly
+containing [α, β]. Assume that χ is an odd primitive character modulo q. For 0 < ℜ(ν) < 21 , we have
+             ν                            ν                                  ∞
+        q 1− 2 X σ̄−ν,χ (j)          q 1− 2
+                                                        Z β                                       Z β
+                                                             f (t)          X
+                                                                                              ν/2               ν
+                             f (j) =        L(1 − ν, χ)        ν+1
+                                                                   dt − 2πi     σ −ν,χ̄ (n) n         f (t)(t)− 2 −1
+        τ (χ)           j            τ (χ)                α  t                                     α
+               α<j<β                                                        n=1
+                    r              r                                r                   
+                2         nt                  nt           πν               nt           πν 
+        ×         Kν 4π          − Yν 4π              sin         + Jν 4π            cos           dt.
+                π         q                    q             2                 q             2
+Theorem 4.4. Let 0 < α < β and α, β ∈       / Z. Let f denote a function analytic inside a closed contour strictly
+containing [α, β]. Assume that χ is an odd primitive character modulo q. For 0 < ℜ(ν) < 12 , we have
+              ν                             ν                                ∞
+         q 1+ 2 X                      q 1+ 2
+                                                          Z β                                     Z β
+                                                                            X                                   ν
+                                                                                              ν/2
+                      σ−ν,χ (j)f (j) =        L(1 + ν, χ)     f (t)dt + 2πi     σ̄−ν,χ̄ (n) n         f (t)(t)− 2
+          τ (χ)                        τ (χ)               α                n=1                    α
+                α<j<β
+                      r               r                           r                       
+                 2           nt                 nt           πν               nt           πν 
+          ×        Kν 4π           + Yν 4π              sin        − Jν 4π              cos          dt.
+                 π            q                  q             2                 q             2
+
+                                                                 11
+4.3. Identities involving two   P characters. In this subsection, we state Voronoı̈-type summation formula
+associated with σ−ν,χ1 ,χ2 (n) = d/n d−ν χ1 (d)χ2 (n/d), where χ1 and χ2 are Dirichlet characters modulo p and
+q, respectively.
+Theorem 4.5. Let 0 < α < β and α, β ∈                / Z. Let f denote a function analytic inside a closed contour
+strictly containing [α, β]. Assume that χ1 and χ2 are non-principal even primitive characters modulo p and q,
+respectively. For 0 < ℜ(ν) < 12 , we have
+                    ν      ν                                  ∞
+                p1− 2 q 1+ 2 X
+                                                                                        Z β
+                                                             X                                         ν
+                                                                                    ν/2
+                                    σ−ν,χ2 ,χ1 (j)f (j) = 2π     σ−ν,χ¯1 ,χ¯2 (n) n         f (t)(t)− 2
+               τ (χ1 )τ (χ2 )                                n=1                         α
+                              α<j<β
+                             r                r                                  r             πν 
+                       2            nt                   nt          πν                   nt
+               ×         Kν 4π            − Yν 4π               cos            − Jν 4π             sin         dt.
+                       π            pq                   pq            2                    pq            2
+  Substituting χ1 = χ2 = χ in the above theorem, we get the following
+Corollary 4.6. Let 0 < α < β and α, β ∈   / Z. Let f denote a function analytic inside a closed contour strictly
+containing [α, β]. Assume that χ is a non-principal even primitive character modulo q. For 0 < ℜ(ν) < 21 , we
+have
+                                                 ∞                     Z β
+                q2   X                          X
+                                                                   ν/2               ν
+
+               2
+                          σ−ν (j)χ(j)f (j) = 2π     σ−ν (n)χ̄(j) n         f (t)(t)− 2
+              τ (χ)                                                     α
+                    α<j<β                       n=1
+                       r                r                            r               πν 
+                    2           nt                nt          πν                 nt
+              ×       Kν 4π          − Yν 4π             cos         − Jν 4π             sin         dt.
+                    π           q2                q2            2                  q2           2
+Theorem 4.7. Let 0 < α < β and α, β ∈      / Z. Let f denote a function analytic inside a closed contour strictly
+containing [α, β]. Assume that χ1 and χ2 are odd primitive characters modulo p and q, respectively. For
+0 < ℜ(ν) < 21 , we have
+                   ν      ν                              ∞                        Z β
+               p1− 2 q 1+ 2 X σ−ν,χ2 ,χ1 (j)f (j)       X                                       ν
+                                                  = −2π     σ−ν,χ¯1 ,χ¯2 (n) nν/2     f (t)(t)− 2 −1
+              τ (χ1 )τ (χ2 )             j                                         α
+                             α<j<β                      n=1
+                            r            r                              r             πν 
+                      2            nt             nt          πν                 nt
+               ×        Kν 4π           + Yν 4π          cos          + Jν 4π             sin         dt.
+                      π            pq             pq            2                  pq            2
+  Substituting χ1 = χ2 = χ in the above theorem, we get the following
+Corollary 4.8. Let 0 < α < β and α, β ∈  / Z. Let f denote a function analytic inside a closed contour strictly
+containing [α, β]. Assume that χ is an odd primitive character modulo q. For 0 < ℜ(ν) < 12 , we have
+                                                  ∞                      Z β
+                q2   X σ−ν (j)χ(j)f (j)          X
+                                                                     ν/2               ν
+
+               2
+                                          = −2π      σ −ν (n)χ̄(j) n         f (t)(t)− 2 −1
+              τ (χ)              j                                        α
+                    α<j<β                        n=1
+                       r               r                               r             πν 
+                    2          nt               nt           πν                 nt
+              ×       Kν 4π          + Yν 4π            cos         + Jν 4π              sin         dt.
+                    π          q2               q2             2                  q2            2
+Theorem 4.9. Let 0 < α < β and α, β ∈          / Z. Let f denote a function analytic inside a closed contour strictly
+containing [α, β]. Assume that χ1 is a non-principal even primitive character modulo p and χ2 is an odd
+primitive character modulo q. For 0 < ℜ(ν) < 21 , we have
+                   ν      ν                                   ∞                         Z β
+               p1− 2 q 1+ 2 X                                X
+                                                                                    ν/2               ν
+                                   σ−ν,χ2 ,χ1 (j)f (j) = 2πi     σ−ν,χ¯1 ,χ¯2 (n) n         f (t)(t)− 2
+              τ (χ1 )τ (χ2 )                                                             α
+                             α<j<β                           n=1
+                            r                r                                  r            πν 
+                      2            nt                   nt          πν                   nt
+              ×         Kν 4π            + Yν 4π               sin           − Jν 4π             cos         dt.
+                      π            pq                   pq            2                    pq           2
+Theorem 4.10. Let 0 < α < β and α, β ∈       / Z. Let f denote a function analytic inside a closed contour
+strictly containing [α, β]. Assume that χ1 is an odd primitive character modulo p and χ2 is a non-principal
+                                                         12
+even primitive character modulo q. For 0 < ℜ(ν) < 12 , we have
+                   ν      ν                               ∞                         Z β
+               p1− 2 q 1+ 2 X σ−ν,χ2 ,χ1 (j)f (j)        X
+                                                                                ν/2             ν
+                                                  = −2πi     σ−ν,χ¯1 ,χ¯2 (n) n         f (t)t− 2 −1
+              τ (χ1 )τ (χ2 )             j                                           α
+                             α<j<β                       n=1
+                            r            r                               r             πν 
+                      2            nt             nt          πν                  nt
+              ×         Kν 4π           − Yν 4π          sin        + Jν 4π                cos         dt.
+                      π            pq             pq            2                   pq            2
+
+                                                 5. Preliminaries
+  We begin this section by recalling and proving some important results which will be used throughout the
+paper.
+  The Mellin transform of a locally integrable function f (x) on (0, ∞) is defined by
+                                                         Z ∞
+                                      M[f ; s] = F (s) =     f (t) ts−1 dt,                         (5.1)
+                                                                0
+provided the integral converges. The basic properties of the Mellin transform follow immediately from those of
+the Laplace transform since these transforms are intimately connected. The integral in (5.1) defines the Mellin
+transform in a vertical strip in the s plane whose boundaries are determined by the analytic structure of f (x)
+as x → 0+ and x → +∞. If we assume that f (x) satisfies the following growth condition
+                                               (
+                                                  O(x−a−ε ) as x → 0+,
+                                       f (x) =                                                            (5.2)
+                                                  O(x−b+ε ) as x → +∞,
+where ε > 0 and a < b, then the integral (5.1) converges absolutely in the strip a < ℜ(s) < b and defines an
+analytic function there in the strip. This strip is known as the strip of analyticity of M[f ; s]. Furthermore, the
+inversion formula for (5.1) follows directly from the corresponding inversion formula for the bilateral Laplace
+transform. Thus,
+                                             Z c+i∞
+                                          1
+                                 f (x) =              x−s M[f ; s]ds (a < c < b),                             (5.3)
+                                         2πi c−i∞
+which is valid at all points x ≥ 0 where f (x) is continuous. For example, M[ex ; s] = Γ(s) for ℜ(s) > 0, and we
+have the corresponding Mellin’s inversion formula
+                                                     1
+                                                        Z
+                                            e−y =           Γ(s)y −s ds,
+                                                    2πi (c)
+valid for ℜ(y) > 0. The functional relations for Γ(s) are given by [31, p. 73]
+                                                                            √
+                                                                  
+                                                                 1
+                           Γ(s + 1) =sΓ(s),        Γ(s)Γ s +         = 21−2s πΓ(2s),                          (5.4)
+                                                                 2
+                                                          π
+                                      Γ(s)Γ(1 − s) =           .                                              (5.5)
+                                                       sin(πs)
+The following lemma states the asymptotic behaviour of Γ(s).
+Lemma 5.1. [32, p. 38] In a vertical strip, for s=σ + it with a ≤ σ ≤ b and |t| ≥ 1,
+                                                                      
+                                             1
+                                                σ− 1
+                                                       − 1
+                                                           π|t|         1
+                             |Γ(s)| = (2π) 2 |t| 2 exp 2          1+O       .
+                                                                       |t|
+  In our investigation, we shall require the following results related to the Mellin transform of derivatives of a
+function.
+Lemma 5.2. Let n ∈ N. Assume that φ is n-times differentiable function and
+                                             Z ∞
+                                M[φ(t); s] =      φ(t)ts−1 dt = Φ(s).                                         (5.6)
+                                                       0
+If φ satisfies (5.2), then
+                                                                    Γ(s + n)
+                                       M[φ(n) (t)tn ; s] = (−1)n             Φ(s),                            (5.7)
+                                                                      Γ(s)
+                                                           13
+where s ∈ {w ∈ C; a < ℜ(w) < b}, provided
+                                           lim ts+n−j−1φ(n−j−1) (t) = 0 j = 0, 1, · · · , n − 1.                           (5.8)
+                                       t→0,∞
+
+Proof. The proof relies on mathematical induction. Using integration by parts, we have
+                                        Z ∞                               Z ∞
+                        M[xφ′ (x); s] =     φ′ (t) ts dt = [ts φ(t)]∞
+                                                                    0 − s     φ(t) ts−1 dt.
+                                                      0                                   0
+Noting φ(t) satisfies (5.2), we can claim that
+                                               M[xφ′ (x); s] = −sΦ(s) for a < ℜ(s) < b.
+Suppose the statement of the theorem is true for n = N and φ is N +1-times differentiable function and satisfies
+(5.8). Then
+                                            Z ∞
+                      N +1 (N +1)
+                  M[x      φ      (x); s] =     tN +1 φ(N +1) (t) ts−1 dt
+                                              0
+                                            h             i∞              Z ∞
+                                          = ts+N φ(N ) (t)    − (s + N )      tN φ(N ) (t) ts−1 dt.
+                                                                             0            0
+As φ satisfies (5.8), so we have
+                                                              Z ∞
+                    (N +1)          N +1                                                              Γ(s + N + 1)
+             M[φ             (t)t          ; s] = −(s + N )         tN φ(N ) (t) ts−1 dt = (−1)N +1                Φ(s),
+                                                              0                                           Γ(s)
+and this completes the proof.                                                                                                 
+Lemma 5.3. [33, p. 91, Formula (3.3.9)] We have
+                                                                             Γ(s)Γ(a − s)
+                                                    M[(1 + x)−a ; s] =                    ,
+                                                                                 Γ(a)
+for 0 < ℜ(s) < ℜ(a).
+As an immediate consequence of Lemma 5.3 we get,
+Lemma 5.4. For any n ∈ N,
+                                       a(a + 1) · · · (a + n − 1)xn
+                                                                     
+                                                                         Γ(s + n)Γ(a − s)
+                                     M                   a+n
+                                                                    ;s =                  ,
+                                              (1 + x)                          Γ(a)
+whenever 0 < ℜ(s) < ℜ(a).
+Proof. By Lemma 5.3, we can write
+                                                                             Γ(s)Γ(a − s)
+                                                    M[(1 + x)−a ; s] =                    ,
+                                                                                 Γ(a)
+                                                1
+for 0 < ℜ(s) < ℜ(a). The function φ(t) = (1+t)    a for t ≥ 0 is a continuous function and satisfies all the conditions
+
+of Lemma 5.2. Furthermore,
+                                                        a(a + 1) · · · (a + n − 1)
+                                      φ(n) (t) = (−1)n                             .
+                                                              (1 + t)(a+n)
+We have
+                                              Γ(a − s)Γ(s)
+                                  Φ(s) =                     for 0 < ℜ(s) < ℜ(a).
+                                                  Γ(a)
+Hence by Lemma 5.2,
+                        a(a + 1) · · · (a + n − 1)tn
+                                                       
+                                                             Γ(s + n)            Γ(s + n)Γ(a − s)
+                   M                     (a+1)
+                                                      ;s =               Φ(s) =                   ,
+                              (1 + x)                           Γ(s)                   Γ(a)
+for 0 < ℜ(s) < ℜ(a).                                                                                                          
+Lemma 5.5. Let n ≥ 0 be any integer and t > 0 be any real number. Then
+                             1                                Γ(a + n) n
+                                Z
+                                    Γ(s + n)Γ(a − s)t−s ds =            t ,
+                            2πi (c)                          (1 + t)a+n
+for 0 < c < ℜ(a).
+                                                                        14
+Proof. We get our desired result by combining Lemmas 5.3 and 5.4 and applying Mellin’s inversion formula. 
+Lemma 5.6. [34, p. 346, Formula (20)] We have
+                                                         π2
+                                                  
+                                           log t
+                                      M          ;s =           ,
+                                           t−1        sin2 (πs)
+for 0 < ℜ(s) < 1. The integral is convergent in the sense of Cauchy’s principal value.
+Lemma 5.7. We have
+                                                               π2
+                                                       
+                                            4 log x
+                                          M         ; s   =         ,                                        (5.9)
+                                            x2 − 1          sin2 πs
+                                                                  2
+for 0 < ℜ(s) < 2. The integral is convergent in the sense of Cauchy’s principal value.
+Proof. This is a direct consequence of Lemma 5.6.                                                                
+Now, we record a few important results related to the modified K-Bessel function Kν (x) defined by (1.2).
+Lemma 5.8. [3, p. 10, Lemma 3.3] Let ν ∈ C. For any c > max{0, −ℜ(ν)}, we have
+                                           ν
+                              √                                       4 s −s
+                                                                        
+                                     1   2     1
+                                                  Z
+                       ν
+                     t 2 Kν (a tx) =     √            Γ(s)Γ(s + ν)          t ds.
+                                     2 a x    2πi (c)                a2 x
+
+  We first observe that the generating functions for σz,χ (n) and σ̄z,χ (n) and σz,χ1 ,χ2 (n) defined in (1.11) are
+the following
+                                              ∞       ∞              ∞
+                                             X    1 X dz χ(d) X σz,χ (n)
+                           ζ(s)L(s − z, χ) =                     =              ,                            (5.10)
+                                                 ms         ds              ns
+                                                 m=1        d=1             n=1
+                                                  ∞            ∞             ∞
+                                                 X      1     X    χ(d)     X     σ̄z,χ (n)
+                             ζ(s − z)L(s, χ) =                          =                   ,               (5.11)
+                                                       ms−z         ds               ns
+                                                 m=1        d=1        n=1
+                                                  ∞   z        ∞            ∞
+                                                 X   d χ1 (d) X   χ2 (m) X σz,χ1 ,χ2 (n)
+                        L(s − z, χ1 )L(s, χ2 ) =                        =                ,                  (5.12)
+                                                        ds         ms          ns
+                                                 d=1          m=1          n=1
+for ℜ(s) > max(ℜ(z)+1, 1), where ζ(s) denotes the the Riemann zeta function and L(s, χ) denotes the Dirichlet
+L-function defined by (2.1) for ℜ(s) > 1. We recall that the functional equation of ζ(s) [35, p. 234]
+                                                        πs 
+                                   ζ(s) = 2s π s−1 sin        Γ(1 − s)ζ(1 − s).                        (5.13)
+                                                         2
+Replacing s by 1 − s in (5.13), we obtain
+                                                             π s ζ(1 − s)
+                                            Γ(s)ζ(s) =                    .                                (5.14)
+                                                            21−s cos πs2
+Next, we write the functional equation for L(s, χ) [31, p. 71]
+                                          τ (χ) π s−1/2 Γ( 1−s+κ   )
+                                                
+                                                                2
+                               L(s, χ) = κ √                   s+κ   L(1 − s, χ̄),                          (5.15)
+                                         i q q              Γ( 2 )
+where
+                                                 (
+                                                  0,             if χ(−1) = 1,
+                                      κ = κ(χ) =
+                                                  1,             if χ(−1) = −1.
+Employing (5.4) and (5.5) in (5.15), we obtain [30, Corrolary 10.9, p. 333]
+                                               (2π) s
+                                                  
+                                    −κ τ (χ)                       π(s + κ)
+                        L(s, χ) = i                   Γ(1 − s) sin          L(1 − s, χ̄).                   (5.16)
+                                         π       q                     2
+Now replacing s by s − z in (5.16), we get
+                                         (2π) s−z
+                                            
+                              −κ τ (χ)                             π(s + κ − z)
+               L(s − z, χ) = i                    Γ(1 + z − s) sin              L(1 + z − s, χ̄).
+                                   π       q                            2
+                                                            15
+So, we can rewrite the above equation as
+                                                                         π  q s−z L(s − z, χ)
+                          Γ(1 + z − s)L(1 + z − s, χ̄) = iκ                                        .           (5.17)
+                                                                       τ (χ) 2π     sin π( s+κ−z
+                                                                                             2   )
+We will also note that [31, p. 69, p. 71]
+                                      (
+                                        −q,      for odd primitive χ mod q,
+                        τ (χ)τ (χ̄) =                                                                          (5.18)
+                                        q,       for even non-principal primitive χ mod q.
+
+                                      6. Proof of results when z ∈ Z+
+  We will start this section by considering a more general setup. Let χ be any Dirichlet character modulo q
+and z ∈ C. Let fz (n) be one of the arithmetical functions σz,χ (n) or σ̄z,χ (n) or σz,χ1 ,χ2 (n) defined in (1.11).
+We denote
+                                                   ∞
+                                                  X   fz (n)
+                                        Fz (s) :=         s
+                                                             , ℜ(s) > 1.                                       (6.1)
+                                                  n=1
+                                                       n
+Hence Fz (s) is one of the Dirichlet series given in (5.10) or (5.11) or (5.12). As mentioned in the previous section,
+we will consider ℜ(ν) > 0 and ν = 0. Employing Lemma 5.8 with t = n and subsequently interchanging the
+summation and integration, we get
+               ∞                                      ν                                 ∞
+                                  √                                                 4 sX
+                                                                                
+                                             1    2       1
+              X                                               Z
+                  fz (n)nν/2 Kν (a nx) =          √               Γ(s)Γ(s + ν)                fz (n)n−s ds
+                                             2 a x       2πi (c)                   a2 x
+              n=1                                                                         n=1
+                                             1 ν/2 1
+                                                        Z
+                                         = X                Γ(s)Γ(s + ν)Fz (s)X s ds,                            (6.2)
+                                             2      2πi (c)
+where c > ℜ(z) + 1 and X = a24x . Here the notation (c) denotes the vertical line [c − i∞, c + i∞]. Next, we
+investigate the following integral
+                                                 1
+                                                   Z
+                                   Iz(ν) (X) :=         Γ(s + ν)Γ(s)Fz (s)X s ds.                      (6.3)
+                                                2πi (c)
+We shall use the Cauchy residue theorem to evaluate this line integral in (6.3). We consider the contour formed
+by the line segments [c − iT, c + iT ], [c + iT, −d + iT ], [−d + iT, −d − iT ], [−d − iT, c − iT ], where the choice
+for d is as follows: 0 < d < min{1, ℜ(ν)} whenever ℜ(ν) > 0 and 0 < d < 1 otherwise. Here, T is taken to
+be a large positive number. The possible poles of the integrand function in (6.3) are at s = 0, 1 and z + 1.
+Now letting T → ∞ and invoking Lemma 5.1, one can show that the integrals along the horizontal segments
+[c + iT, −d + iT ] and [−d − iT, c − iT ] vanish and get
+                                                          1
+                                                              Z
+                          (ν)
+                         Iz (X) = Rz+1 + R1 + R0 +                 Γ(s + ν)Γ(s)Fz (s)X s ds,                    (6.4)
+                                                        2πi (−d)
+where Rz+1 , R1 and R0 are the residues at s = z + 1, 1 and s = 0, respectively. It is easy to see that Rz+1 = 0
+whenever z = 0. Hence combining (6.2) and (6.3) together with (6.4), we obtain
+                      ∞
+                     X                   √       1                                    
+                         fz (n)nν/2 Kν (a nx) = X ν/2 Rz+1 + R1 + R0 + Jz(ν) (X) ,                          (6.5)
+                                                 2
+                        n=1
+        (ν)
+where Jz (X) is defined by
+                                                  1
+                                                       Z
+                                  Jz(ν) (X) :=                    Γ(s + ν)Γ(s)Fz (s)X s ds.                     (6.6)
+                                                 2πi       (−d)
+Next, we will offer the proofs of the theorems corresponding to z = k, where k is a non-negative integer.
+ Proof of Theorem 2.1. Letting fk (n) = σk,χ (n) where χ being an odd primitive character modulo q and k an
+even, non-negative integer in (6.5), we obtain
+                       ∞
+                      X                     √     1                                
+                          σk,χ (n)nν/2 Kν (a nx) = X ν/2 Rk+1 + R1 + R0 + Jz(ν) (X) ,                  (6.7)
+                                                  2
+                       n=1
+                                                                  16
+                        (ν)
+where ℜ(ν) > 0 and Jk (X) is defined in (6.6) with Fk (s) = ζ(s)L(s − k, χ). It is easy to see that Rk+1 = 0 as
+the integrand function in (6.6) does not have any pole at s = k + 1. Here, one can notice that L(s − k, χ) has
+a zero at s = 1 when k ≥ 2 is an even integer and χ is odd. Therefore, we will not get any contribution from
+the pole of ζ(s) at s = 1. However, if k = 0, the integrand in (6.6) will encounter a pole at s = 1. Therefore,
+we can get
+                                          (
+                                            0,                    if k > 0,
+                                     R1 =                                                                 (6.8)
+                                            Γ(1 + ν)L(1, χ)X, if k = 0.
+The integrand also has a pole at s = 0 with residue R0 given by
+                                                 k
+                                           (−1) 2 iτ (χ) (2π) −k
+                                                            
+                          Γ(ν)L(−k, χ)
+                  R0 = −                =                        Γ(1 + k)Γ(ν)L(1 + k, χ̄),                 (6.9)
+                                 2              2π         q
+where in the last step, we have applied functional equation (5.16). Collecting (6.8) and (6.9) and Rk+1 = 0 and
+then substituting them in (6.7), we get
+                       ∞                              k
+                                          √      (−1) 2 iτ (χ) (2π) −k
+                                                                   
+                  − ν2             ν
+                       X
+                X        σk,χ (n)n 2 Kν (a nx) =                        Γ(1 + k)Γ(ν)L(1 + k, χ̄)
+                                                     4π          q
+                       n=1
+                                                          Γ(1 + ν)L(1, χ)    1 (ν)
+                                                   + δk                   X + Jk (X),                     (6.10)
+                                                                 2           2
+                                             (ν)
+where δk is defined in (2.3). To evaluate Jk (X) defined in (6.6), we invoke the functional equations (5.14) and
+(5.16),
+                                 hk
+                                     Z
+                       (ν)
+                     Jk (X) =             Γ(s + ν)Γ(1 + k − s)ζ(1 − s)L(1 − s + k, χ̄)Y s ds
+                                 2πi (−d)
+                                 Y hk
+                                      Z
+                              =             Γ(1 − s + ν)Γ(k + s)ζ(s)L(s + k, χ̄)Y −s ds
+                                 2πi (1+d)
+                                      ∞
+                                                     1
+                                      X                Z
+                              = Y hk     σ−k,χ̄ (n)           Γ(1 − s + ν)Γ(k + s)(nY )−s ds,
+                                                    2πi (1+d)
+                                       n=1
+                1+ k
+                              q k
+where hk = (−1) 2π iτ (χ) 2π and Y = 4πq X with X = a24x . As 0 < d < ℜ(ν), we can apply Lemma 5.5 with
+                   2                         2
+
+
+n = k and a = 1 + ν to obtain
+                                                     ∞
+                           (ν)
+                                                    X              (ν + 1) · · · (ν + k)nk
+                          Jk (X) = Y k+1 Γ(1 + ν)hk     σ−k,χ̄ (n)
+                                                    n=1
+                                                                      (1 + nY )1+ν+k
+                                                                ∞
+                                                                X         σ̄k,χ (n)
+                                     = Y k+1 Γ(1 + ν + k)hk                          ,                    (6.11)
+                                                                      (1 + nY )1+ν+k
+                                                                n=1
+                                                                                                              2
+where in the penultimate step we have used the fact nk σ−k,χ(n) = σ̄k,χ (n). Therefore, remarking Y = 16π
+                                                                                                        a2 qx
+and inserting (6.11) in (6.10) and simplifying, we can complete the proof.                                 
+ Proof of Theorem 2.2. Let us begin the proof by taking fk (n) = σk,χ (n) with χ being an odd primitive
+character modulo q and k ≥ 0 an even integer and ν = 0 in (6.5). The corresponding Dirichlet series, in this
+case, is Fk (s) = ζ(s)L(s − k, χ). Therefore, we obtain
+                               ∞
+                               X                √     1                   (0)
+                                   σk,χ (n)K0 (a nx) = (Rk+1 + R1 + R0 + Jk (X)),                         (6.12)
+                               n=1
+                                                      2
+        (0)
+where Jk (X) is defined in (6.6). It is clear that Rk+1 = 0 for k ≥ 0. L(s − k, χ) has a zero at s = 1 in case
+k ≥ 2 is an even integer, and χ is odd. So we will not get any contribution from the pole of ζ(s) at s = 1.
+However, in the case of k = 0, the integrand in (6.6) will encounter a pole at s = 1. Hence, we can write
+                                               (
+                                                 0,            if k > 0,
+                                         R1 =                                                            (6.13)
+                                                 L(1, χ)X,     if k = 0,
+                                                           17
+and the integrand in (6.6) encounters a double pole at s = 0 with residue R0 given by
+                                                              L′ (−k, χ)
+                                                                            
+                                      L(−k, χ)
+                               R0 = −            log(2πX) +              − 2γ .                                                 (6.14)
+                                          2                   L(−k, χ)
+Now using (6.13) and (6.14) and the fact Rk+1 = 0 in (6.12), we obtain
+      ∞
+                      √                                            L′ (−k, χ)
+                                                                                 
+     X                       δk            L(−k, χ)                                 1 (0)
+         σk,χ (n)K0 (a nx) = L(1, χ)X −                log(2πX) +             − 2γ + Jk (X),                                    (6.15)
+                              2                4                   L(−k, χ)         2
+      n=1
+                                           (0)
+where δk is defined in (2.3). For Jk (X), we employ the functional equations (5.14) and (5.16) to obtain
+                             hk
+                                 Z
+                  (0)
+                 Jk (X) =              Γ(s)Γ(1 + k − s)ζ(1 − s)L(1 − s + k, χ̄)Y s ds
+                             2πi (−d)
+                             Y hk
+                                  Z
+                          =             Γ(1 − s)Γ(k + s)ζ(s)L(s + k, χ̄)Y −s ds
+                             2πi (1+d)
+                                   ∞
+                                                  1
+                                  X                   Z
+                          = Y hk      σ−k,χ̄ (n)              Γ(1 − s)Γ(k + s)(nY )−s ds
+                                  n=1
+                                                 2πi    (1+d)
+                                    ∞
+                                                    1             Γ(k + s)
+                                   X                    Z
+                          = πY hk      σ−k,χ̄ (n)                            (nY )−s ds
+                                                  2πi (1+d) Γ(s) sin(πs)
+                                   n=1
+                                                      
+                                                                      1          Γ(k + s)
+                                       X         X                       Z
+                          = πY hk            +          σ−k,χ̄ (n)                         (nY )−s ds, (6.16)
+                                                                     2πi  (1+d) Γ(s) sin(πs)
+                                         −1 n≤Y     −1n>Y
+
+                  1+ k
+                            q k
+where hk = (−1) 2π iτ (χ) 2π
+                                             2
+                                 and Y = 4πq X with X = a24x . In the second last step, we have used the reflection
+                     2
+
+
+formula (5.5).                                  P
+   We will first investigate the infinite sum n>Y −1 . To evaluate this inner line integral in (6.16), we shall use
+the Cauchy residue theorem with the contour consisting of the line segments [1 + d − iT, 1 + d + iT ], [1 + d +
+iT, M + 21 + iT ], [M + 12 + iT, M + 21 − iT ], [M + 12 − iT, 1 + d − iT ] where M ∈ N is a large number and T is a
+large positive number. The poles of the integrand function in (6.16) are at 2, 3, · · · , M , and they are simple.
+The residue at s = m is given by
+                                        1
+                                          (−1)m m(m + 1)...(m + k − 1)(nY )−m ,
+                                        Rm :=                                                           (6.17)
+                                        π
+where m = 2, 3, · · · , M . Employing Lemma 5.1, we can show that both the integrals along the horizontal lines
+[1 + d + iT, M + 12 + iT ] and [M + 12 − iT, 1 + d − iT ] vanish as T → ∞. From (6.17), we arrive at
+                                                M
+    1               Γ(k + s)                             1           Γ(k + s)
+         Z                                     X            Z
+                                (nY )−s ds = −     Rm +                          (nY )−s ds
+   2πi       (1+d) Γ(s) sin(πs)                m=2
+                                                        2πi       1 Γ(s) sin(πs)
+                                                              (M + )     2
+                                                    M
+                                                                                                                                !
+                                                  1 X                                                                Mk
+                                             =−             (−1)m m(m + 1)...(m + k − 1)(nY )−m + Ok                                ,
+                                                  π
+                                                      m=2                                                         (nY )M +1/2
+
+where we have used | sin π(σ + it)| ≫ eπ|t| for |t| ≥ 1 to bound the integral
+                                                                                             R
+                                                                           (M + 21 ) and the implied constant
+depends on k.                                                              −1
+                    Next, allowing M → ∞, the error term goes to 0 as n > Y . Now simplifying, we readily
+obtain that
+                                                                                              nk+1
+                                                                                                       
+                         1               Γ(k + s)                   k!        1
+                              Z
+                                                     (nY )−s ds = −                    1−                     ,
+                        2πi       (1+d) Γ(s) sin(πs)                π        nY           (Y −1 + n)k+1
+and we easily deduce from the above expression that
+                                                                             X σ−k,χ̄ (n)         nk+1
+                                                                                                             
+                       1         Γ(k + s)                   k!
+     X                   Z
+           σ−k,χ̄ (n)                        (nY )−s ds = −                                 1−                 .                (6.18)
+                      2πi (1+d) Γ(s) sin(πs)                πY                    n            (Y −1 + n)k+1
+     n>Y−1                                                               n>Y  −1
+
+                                                                  18
+Similarly, by shifting the line of integration to the left, we obtain
+                                                                                       nk+1
+                                                                                                
+                        1          Γ(k + s)                   k! X σ−k,χ̄ (n)
+      X                   Z
+                                                   −s
+            σ−k,χ̄ (n)                        (nY ) ds = −                      1−                 .       (6.19)
+                       2πi (1+d) Γ(s) sin(πs)                πY         n          (Y −1 + n)k+1
+     n≤Y −1                                                       n≤Y−1
+
+
+Inserting (6.18) and (6.19) in (6.16),
+                                                 ∞
+                                                                         nk+1
+                                                                                    
+                              (0)
+                                                 X σ−k,χ̄ (n)
+                             Jk (X) = −k!hk                       1−                     .                 (6.20)
+                                                         n           (Y −1 + n)k+1
+                                                 n=1
+                                      2
+We finish the proof by noting Y = 16π
+                                  a2 qx
+                                        , substituting (6.20) in (6.15) and then simplifying.                   
+ Proof of Theorem 2.3. Here we will take fk (n) = σ̄k,χ (n) and ℜ(ν) > 0 in (6.5). Similar to the previous
+theorems, χ is odd and k ≥ 2 is an even integer, and the corresponding Dirichlet series is Fk (s) = ζ(s−k)L(s, χ).
+It is clear that R1 = 0. When k ≥ 2 is an even integer, ζ(s − k) has a zero at s = 0. Therefore, we will not get
+any contribution from the pole of Γ(s) at s = 0. But the integrand in (6.6) will encounter a pole at s = k + 1
+with the residue Rk+1 given by
+                                 Rk+1 = Γ(k + 1)Γ(ν + k + 1)L(k + 1, χ)X k+1 .
+                      (0)
+The calculation for Jk (X) will be similar as given in the proof of Theorem 2.1. To avoid repetition, we skip
+the detail of the proof.                                                                                    
+ Proof of Theorem 2.4. Here we will consider fk (n) = σ̄k,χ (n) with χ being an odd primitive character modulo
+q and k ≥ 2 an even integer and ν = 0 in (6.5). We skip the detail of the proof because of its similarity with
+the proof of Theorem 2.2.                                                                                   
+Proofs of Theorems 2.5 and 2.6. Here, we will take fk (n) = σk,χ (n) and χ being a non-principal even primitive
+Dirichlet character modulo q and k ≥ 1 an odd integer in (6.5). We can see that Theorem 2.5 deals with the
+case ℜ(ν) > 0 while Theorem 2.6 concerns with ν = 0. Proceeding by almost identically the same argument as
+in the proof of Theorems 2.1 and 2.2, one can deduce Theorems 2.5 and 2.6, respectively. We leave the details
+of the proofs for the reader.                                                                                
+Proofs of Theorems 2.7 and 2.8. The proofs are similar to the corresponding proofs of Theorems 2.3 and 2.4
+for the odd character.                                                                                       
+ Proof of Theorem 2.9. It deals with the special case k = 0 and ν = 0 when χ is a non-principal even primitive
+character modulo q. Thus setting f0 (n) = dχ (n) in (6.5), we obtain
+                                 ∞
+                                 X                √     1            (0)
+                                       dχ (n)K0 (a nx) = (R1 + R0 + J0 (X)),                               (6.21)
+                                                        2
+                                 n=1
+where the residues R1 and R0 are given by
+                                         R1 =L(1, χ)X,                                                     (6.22)
+                                               1              τ (χ)
+                                         R0 = − L′ (0, χ) = −       L(1, χ̄),                              (6.23)
+                                               2                4
+                                                                                             (0)
+where in (6.23), we have used [36, p. 181, equation (3.2)]. Next, we evaluate J0 (X) defined in (6.6) with
+F0 (s) = ζ(s)L(s, χ). Utilizing the functional equations (5.14) and (5.16), one can get
+                                                  ∞
+                                          τ (χ) X             1          (nY )−s
+                                                                Z
+                                 (0)
+                               J0 (X) =        Y     dχ̄ (n)                       ds,               (6.24)
+                                            4                2πi (1+d) sin2 (πs/2)
+                                                 n=1
+              2
+where Y = 4πq X . As 0 < d < 1, applying inverse Mellin transform to (5.9) of Lemma 5.7 and then employing
+the formula in (6.24), we deduce that
+                                                          ∞
+                                         (0)      τ (χ) X          log(nY )
+                                       J0 (X) =      2
+                                                       Y  dχ̄ (n)            .                             (6.25)
+                                                   π              (nY )2 − 1
+                                                         n=1
+                                                                    2
+Inserting (6.22), (6.23) and (6.25) in (6.21) and noting Y = 16π
+                                                             a2 qx
+                                                                   , one can complete the proof.                
+Next, we are going to investigate the identities involving two characters.
+                                                          19
+ Proof of Theorem 2.10. We will take fk (n) = σk,χ1,χ2 (n) and k ≥ 1 an odd integer and ℜ(ν) > 0 in (6.5).
+By assumption, χ1 and χ2 are primitive characters modulo p and q, respectively, such that either both are
+non-principal even characters or both are odd characters. In the notation of (6.1), Fk (s) = L(s − k, χ1 )L(s, χ2 ).
+We get
+                            ∞
+                            X                    √     1                         (ν)
+                                σk,χ1,χ2 (n)Kν (a nx) = X ν/2 (Rk+1 + R1 + R0 + Jk (X)),                      (6.26)
+                            n=1
+                                                       2
+        (ν)
+where Jk (X) is defined in (6.6). It is easy to see that Rk+1 = 0 and R1 = 0. When both χ1 and χ2 are non-
+principal even primitive characters, L(s, χ2 ) has a zero at s = 0. Hence we will not be getting any contribution
+from the pole of Γ(s) at s = 0. As a result, we will get R0 = 0. If both χ1 and χ2 are odd primitive characters,
+L(s − k, χ1 ) has a zero at s = 0 since k is an odd integer. Again, there will be no contribution of the pole from
+Γ(s) at s = 0. Therefore R0 = 0. Now utilizing the facts Rk+1 = 0, R1 = 0 and R0 = 0 in (6.26), we obtain
+                                                ∞
+                                                X                     √     1       (ν)
+                                                    σk,χ1 ,χ2 (n)Kν (a nx) = X ν/2 Jk (X).                    (6.27)
+                                                n=1
+                                                                            2
+              (ν)
+To evaluate Jk (X), we utilize the functional equations (5.16), (5.17) with (5.18)
+                                  ∞
+                                                       1
+                                                         Z
+                  (ν)
+                                 X
+                 Jk (X) = Y gk       σ−k,χ¯1 ,χ¯2 (n)           Γ(1 − s + ν)Γ(k + s)(nY )−s ds,               (6.28)
+                                                      2πi (1+d)
+                                                n=1
+                  k+1
+                   2 pk τ (χ1 )τ (χ2 )
+where gk = (−1)
+                                                       2
+                    (2π)k+1
+                                         and Y = 4π
+                                                  pq X. As 0 < d < 1, appealing to Lemma 5.5 with n = k and a = 1+ν,
+we deduce
+                                                                          ∞
+                                          (ν)
+                                                                          X     σk,χ¯2,χ¯1 (n)
+                                         Jk (X) = Y k+1 gk Γ(1 + ν + k)                 1+ν+k
+                                                                                                 ,            (6.29)
+                                                                          n=1 (1 + nY )
+
+where we have used the fact σ−k,χ¯1 ,χ¯2 (n) = n−k σk,χ¯2 ,χ¯1 (n). We complete the proof by substituting (6.29) in
+                               2
+(6.27) and remarking Y = a16π
+                           2 pqx .                                                                               
+ Proof of Theorem 2.11. We leave the proof to the reader for its similarity with the proofs of Theorems 2.2
+and 2.6.                                                                                                 
+Proofs of Theorems 2.14 and 2.15. We begin the proof by setting k = 0 and ν = 0 and f0 (n) = dχ1 ,χ2 (n) in
+(6.5). This will give
+                                          ∞
+                                          X                     √     1            (0)
+                                                dχ1 ,χ2 (n)K0 (a nx) = (R0 + R1 + J0 (X)),                    (6.30)
+                                                                      2
+                                          n=1
+        (0)
+where J0 (X)) is defined in (6.6) with F0 (z) = L(s, χ1 )L(s, χ2 ). Here we will have R1 = 0. Now we will discuss
+the following two cases.
+Case 1: When χ1 and χ2 are even non-principal primitive characters modulo p and q, respectively. Both
+L(s, χ1 ) and L(s, χ2 ) have simple zero at s = 0 which will get cancelled by the double pole of Γ2 (s) at s = 0.
+Hence we have R0 = 0. Employing functional relation (5.16), we obtain
+                                                       ∞
+                                      τ (χ1 )τ (χ2 ) X                   1         (nY )−s
+                                                                           Z
+                             (0)
+                           J0 (X) =                 Y     dχ̄1 ,χ̄2 (n)                    ds,            (6.31)
+                                            4                           2πi (1+d) sin2 πs
+                                                                                        2
+                                                      n=1
+              2
+where Y = 4π pq X. Note that integral in (6.31) can be treated similarly as in the proof of Theorem 2.9. To avoid
+repetitions, we skip the detail.
+Case 2: When χ1 and χ2 are odd primitive characters modulo p and q, respectively. In this case, the integrand
+will encounter a double pole at s = 0. Hence the residue R0 is given by
+                                                                  L′ (0, χ1 ) L′ (0, χ2 )
+                                                                                         
+                        R0 = L(0, χ1 )L(0, χ2 ) −2γ + log (X) +              +              .              (6.32)
+                                                                  L(0, χ1 )     L(0, χ2 )
+                                                                    20
+Employing (6.32) and R1 = 0 in (6.30), we obtain
+   ∞
+                      √                                         L′ (0, χ1 ) L′ (0, χ2 )
+                                                                                       
+  X                         1                                                              1 (0)
+      dχ1 ,χ2 (n)K0 (a nx) = L(0, χ1 )L(0, χ2 ) −2γ + log (X) +            +              + J0 (X).                     (6.33)
+                            2                                   L(0, χ1 )    L(0, χ2 )     2
+   n=1
+
+Now appealing to functional relation (5.16), we will have
+                                                          ∞
+                               τ (χ1 )τ (χ2 )                              (nY )−s
+                                                                              1
+                                                                                   Z
+                     (0)
+                                                          X
+                    J0 (X) = −                Y                dχ̄1 ,χ̄2 (n)  2 πs
+                                                                                     ds
+                                         4                       (1+d) cos   2πi  2
+                                                   n=1
+                                                               
+                                   τ (χ1 )τ (χ2 )Y                              1         (nY )−s
+                                                      X     X                        Z
+                                =−                        +      dχ̄1 ,χ̄2 (n)                    ds,                 (6.34)
+                                          4                                     2πi (1+d) cos2 πs
+                                                                                                2
+                                                       −1     n<Y
+                                                             −1           n>Y
+
+                2
+where Y = a16π
+             2 pqx and Y
+                         −1 ∈
+                            / Z+ .
+                                                           P
+We first evaluate the inner line integral on the sum n>Y −1 . We shall use the Cauchy residue theorem with
+the contour formed by the lines [1 + d − iT, 1 + d + iT ], [1 + d + iT, M + 12 + iT ], [M + 12 + iT, M + 21 − iT ], [M +
+1
+2 − iT, 1 + d − iT ] where M ∈ N is any odd large number and T is a large positive number. The poles of the
+integrand function in (6.34) are at 3, 5, · · · , M , and they are double poles. The residue at s = m is given by
+                                                                    4
+                                                       Rm := −         (nY )−m log (nY ) ,                              (6.35)
+                                                                    π2
+where m = 3, 5, · · · , M . Employing Lemma 5.1, we can show both the integrals along the horizontal line
+segments [1 + d + iT, M + 21 + iT ] and [M + 21 − iT, 1 + d − iT ] vanish as T → ∞. Utilising (6.35), we arrive at
+                                                                    M −1
+                            1             (nY )−s           2
+                                                                            1           (nY )−s
+                                  Z                        X                  Z
+                                             2 πs
+                                                    ds = −      R 2m+1  +                       ds
+                                                                          2πi (M + 1 ) cos2 πs
+                                                  
+                           2πi     (1+d) cos   2                                             2
+                                                           m=1                     2
+                                                            M −1                                !
+                                                              2
+                                                         4 X      log (nY )              1
+                                                       = 2                   +O                   .                     (6.36)
+                                                         π       (nY )2m+1
+                                                                     m=1          (nY )M +1/2
+
+Letting M → ∞, the error term in (6.36) goes to 0 as n > Y −1 . Thus simplifying, we can readily deduce that
+                                                        ∞
+                      1               (nY )−s      4 X log (nY )          4         1
+                           Z
+                                           πs ds = π 2          2m+1 = π 2 Y 3 n(n2 − Y −2 ) log (nY ) ,
+                                             
+                     2πi                 2
+                               (1+d) cos   2           m=1
+                                                           (nY )
+
+and subsequently, we get
+
+                                         1               (nY )−s        4 X                     Y −3
+                 X                            Z
+                        dχ̄1 ,χ̄2 (n)                       2 πs
+                                                                   ds =       dχ̄1 ,χ̄2 (n)               log (nY ) .   (6.37)
+                                                                        π2                  n(n2 − Y −2 )
+                                                                 
+                                        2πi       (1+d) cos   2
+               n>Y −1                                                      −1   n>Y
+
+Similarly, by shifting the integration line to the left, we get
+
+                                      1         (nY )−s       4 X                     Y −3
+                X                       Z
+                       dχ̄1 ,χ̄2 (n)                     ds =       dχ̄  , χ̄ (n)               log (nY ) .             (6.38)
+                                     2πi (1+d) cos2 πs        π2                  n(n2 − Y −2 )
+                                                                       1 2
+               n<Y  −1                               2           −1             n≤Y
+
+Hence combining (6.37) and (6.38) with (6.34), we obtain
+                                                                    ∞
+                                 (0)       τ (χ1 )τ (χ2 )           X                         Y −2
+                                J0 (X) = −        2
+                                                                          dχ̄1 ,χ̄2 (n)                 log (nY ) .     (6.39)
+                                                          π                               n(n2 − Y −2 )
+                                                                    n=1
+                                                                           2
+Inserting (6.39) in (6.33) and remarking that Y = a16π
+                                                    2 pqx , we get the desired result.                                      
+Proofs of Theorems 2.16 and 2.17. The proofs are similar to the proofs of Theorems 2.10 and 2.11.                           
+                                                                           21
+                                      7. Proof of Cohen-Type Identities
+  This section is devoted to the proof of Cohen-type identities. Throughout this section, we will deal with
+z = −ν ∈/ Z and ℜ(ν) ≥ 0. In general set up, if we consider ℜ(ν) ≥ 0 with ν ∈ / Z and a = 4π, then (6.5)
+becomes
+                  ∞
+                  X                    √      1     
+                                                                                (ν)
+                                                                                       
+                     f−ν (n)nν/2 Kν (4π nx) = X ν/2 R1−ν + R1 + R0 + R−ν + J−ν (X) ,                   (7.1)
+                                              2
+                    n=1
+where R−ν is the residue corresponding to the pole s = −ν. It is easy to see that the pole at s = −ν appears
+                                        (ν)
+                  / Z. The expression J−ν (X) defined in (6.6), can be rewritten as
+if ℜ(ν) = 0 and ν ∈
+                                             1
+                                               Z
+                                (ν)
+                               J−ν (X) :=            Γ(s + ν)Γ(s)F−ν (s)X s ds,                        (7.2)
+                                            2πi (−d)
+where F−ν (s) defined in (6.1) is the Dirichlet series associated with the arithmetical function f−ν (n). We will
+note that X = 4π12 x .
+ Proof of Theorem 3.1. Letting f−ν (n) = σ−ν,χ̄ (n) where χ being a non-principal even primitive character
+modulo q in (7.1), we obtain
+                    ∞
+                    X                        √     1                               (ν)
+                        σ−ν,χ̄ (n)nν/2 Kν (4π nx) = X ν/2 (R1−ν + R1 + R0 + R−ν + J−ν (X)),                            (7.3)
+                    n=1
+                                                   2
+         (ν)
+where J−ν (X) is given in (7.2) and F−ν (s) = ζ(s)L(s + ν, χ̄). The integrand in (7.2) will encounter simple
+poles at s = 1 and s = 0 with residues R1 and R0 given by
+                                                                          Γ(ν)L(ν, χ̄)
+                               R1 = Γ(1 + ν)L(1 + ν, χ̄)X, and R0 = −                  ,                       (7.4)
+                                                                               2
+respectively. It is easy to see that R1−ν = 0. As χ̄ is a non-principal even primitive character, L(s + ν, χ̄) has a
+zero at s = −ν. Therefore, we will not be getting any contribution from the pole of Γ(s + ν) at s = −ν. Hence
+R−ν = 0. Now employing (7.4) together with the facts R1−ν = 0 and R−ν = 0 in (7.3), we obtain
+            ∞
+                                    √
+                                                                                                    
+           X
+                          ν/2               1 ν/2                             Γ(ν)L(ν, χ̄)    (ν)
+               σ−ν,χ̄ (n)n Kν (4π nx) = X            Γ(1 + ν)L(1 + ν, χ̄)X −               + J−ν (X) ,         (7.5)
+                                            2                                       2
+           n=1
+                                                                    (ν)
+where X = 4π12 x . Next, we evaluate the following integral J−ν (X). Replacing s by 1 − s and then employing
+(5.14), (5.17), we obtain
+                               1
+                                   Z
+                     (ν)
+                    J−ν (X) =            Γ(1 − s + ν)Γ(1 − s)ζ(1 − s)L(1 − s + ν, χ̄)X 1−s ds
+                              2πi (1+d)
+                               ν 2
+                                2π    π X 1                       ζ(s)L(s − ν, χ)
+                                               Z
+                            =                                                             ds
+                                 q    τ (χ) 2πi (1+d) ((2π)2 q −1 X)s sin πs  sin π(s−ν)
+                                                                            2         2
+                                   ν
+                              (2π) q −ν  1
+                                             Z
+                                                   ζ(s)L(s − ν, χ)(qx)  s
+                            =                                           ds.                           (7.6)
+                               4xτ (χ) 2πi (1+d) sin πs  sin π(s−ν)
+                                                        2           2
+
+To evaluate the integral in (7.6), we employ the Cauchy residue theorem with the rectangular contour formed
+by the lines [1 + d − iT, 1 + d + iT ], [1 + d + iT, 2N + δ + iT ], [2N + δ + iT, 2N + δ − iT ], [2N + δ − iT, 1 + d − iT ]
+with N ≥ [ ℜ(ν)+1
+                2   ] and {ℜ(ν) + 1} < δ < 1 and T is a large positive number. One can note that the simple
+             −1 π(s−ν)
+poles of sin ( 2 ) at s = ν, ν − 2, · · · will get canceled by the simple zeroes of L(s − ν, χ). Hence the poles of
+the integrand function in (7.6) are at 2, 4, · · · , 2N, and ν + 2, · · · , ν + 2bN where bN = ⌊ 2N +δ−ν 2    ⌋, and they are
+simple. Utilising the fact | sin π(σ + it)| ≫ e    π|t| for |t| ≥ 1, one can see that the integrals along the horizontal
+lines [1 + d + iT, 2N + δ + iT ] and [2N + δ − iT, 1 + d − iT ] vanish as T → ∞. Hence we get
+                                                   N             bN
+        1         ζ(s)L(s − ν, χ)(qx)s                                      1            ζ(s)L(s − ν, χ)(qx)s
+           Z                                      X             X              Z
+                                        ds =  −       H 2j −      H 2r +                                     ds,    (7.7)
+       2πi (1+d) sin πs  sin π(s−ν)                            r=1
+                                                                           2πi   (2N +δ) sin πs
+                                                                                                
+                                                                                                  sin   π(s−ν)
+                       2           2              j=1                                         2            2
+                                                             22
+where H2j is the residue at s = 2j given by
+
+                                                      2ζ(2j)L(2j − ν, χ)(qx)2j
+                                            H2j = −                            ,
+                                                             π sin( πν
+                                                                     2 )
+
+for j = 1, 2, · · · , N and H2r is the residue at s = ν + 2r given by
+                                                                           ∞
+                                             (qx)ν+2r          2       X
+                    H2r = 2ζ(ν + 2r)L(2r, χ)             =               σν,χ (n)(n−1 qx)ν+2r ,
+                                             π sin( πν
+                                                     2 )   π sin( πν
+                                                                   2 )
+                                                                          n=1
+
+for r = 1, 2, · · · , bN . In the above expression, we have applied the series representation of function ζ(ν +
+2r)L(2r, χ) for r ≥ 1. Now let us evaluate the integral in (7.7):
+                              1            ζ(s)L(s − ν, χ)(qx)s
+                                 Z
+                                                                  ds
+                             2πi (2N +δ) sin πs  sin π(s−ν)
+                                                2             2
+                                 ∞
+                                              1                    (n−1 qx)s
+                                X                Z
+                             =      σν,χ (n)                                        ds
+                                n=1
+                                             2πi   (2N +δ)  sin  πs
+                                                                    
+                                                                      sin   π(s−ν)
+                                                                  2            2
+                                               !
+                                                             1                    (n−1 qx)s
+                                  X       X                     Z
+                             =         +          σν,χ (n)                                    ds,        (7.8)
+                                  n<qx    n>qx
+                                                           2πi (2N +δ) sin πs  sin π(s−ν)
+                                                                                 2          2
+
+noting that qx ∈/ Z+ .                          P
+   Next, we will first investigate the sum n>qx . To evaluate this inner line integral in (7.8), we shall use
+the Cauchy residue theorem with the contour consisting of the lines [2N + δ − iT, 2N + δ + iT ], [2N + δ +
+iT, 2M + 12 + iT ], [2M + 12 + iT, 2M + 21 − iT ], [2M + 21 − iT, 2N + δ − iT ] where M ∈ N is a large number and
+T is a large positive number. The poles of the integrand function in (7.8) are at 2N + 2, 2N + 4, · · · , 2M and
+ν +2bN +2, ν +2bN +4, · · · , ν +2aM where aM = ⌊M + 14 − ν2 ⌋, and they are simple. Now taking into account the
+fact that both the integrals along the horizontal lines [2M + 21 − iT, 2N + δ − iT ] and [2N + δ + iT, 2M + 12 + iT ]
+vanish as T → ∞, we obtain
+          1                   (n−1 qx)s
+             Z
+                                            ds
+         2πi (2N +δ) sin πs  sin π(s−ν)
+                             2          2
+                                                                   
+                             M                   aM
+                 2                                                       1                      (n−1 qx)s
+                            X                    X                          Z
+                                    −1    2r             −1    ν+2r 
+          =                     (n    qx)   −        (n    qx)       +                                           ds
+            π sin πν
+                                                                                                       
+                     2
+                                                                        2πi  (2M  + 1
+                                                                                      ) sin   πs
+                                                                                                  
+                                                                                                    sin   π(s−ν)
+                           r=N +1              r=bN +1                              2          2             2
+                                                                   
+                             M                   aM
+                 2          X
+                                    −1    2r
+                                                 X
+                                                         −1    ν+2r 
+                                                                          
+                                                                              −1      2M + 12
+                                                                                              
+          =                     (n    qx)   −        (n    qx)       + O  (n    qx)            .
+            π sin πν
+                       
+                     2     r=N +1              r=b +1
+                                                  N
+
+
+Letting M → ∞, the error term in the above expression goes to 0 since n−1 qx < 1. Therefore, we get
+                                                                                                 
+                              −1   s                          ∞                  ∞
+          1               (n qx)                     2
+            Z                                                X                   X
+                                          ds =                 (n−1 qx)2r −       (n−1 qx)ν+2r  ,
+                                                π sin πν
+                                 
+         2πi (2N +δ) sin πs  sin π(s−ν)               2
+                            2               2               r=N +1             r=b +1  N
+
+
+which in turn will give
+                                       1               (n−1 qx)s
+                       X                    Z
+                           σν,χ (n)                                    ds
+                      n>qx
+                                      2πi
+                                        (2N +δ) sin  πs
+                                                        
+                                                          sin   π(s−ν)
+                                                      2            2
+                                                                                            
+                                                      ∞                     ∞
+                              2     X                X                      X
+                      =                  σν,χ (n)          (n−1 qx)2r −        (n−1 qx)ν+2r  .
+                         π sin πν
+                                  
+                                2   n>qx            r=N +1                r=b +1
+                                                                               N
+
+                                                             23
+From the above expression, one can deduce
+                                                                                                   bN
+                            1                   (n−1 qx)s                    2
+             X                 Z                                                     X            X
+                 σν,χ (n)                                        ds −         πν      σ ν,χ (n)     (n−1 qx)ν+2r
+                          2πi   (2N +δ) sin   πs
+                                                       π(s−ν)           π sin(    )
+            n>qx                               2 sin       2                     2 n>qx           r=1
+                                               ∞                     ∞
+                                                                                     !
+                     2       X                X
+                                                       −1     2r
+                                                                    X
+             =                   σν,χ (n)           (n qx) −            (n−1 qx)ν+2r
+               π sin πν
+                         
+                       2    n>qx             r=N +1                 r=1
+                                                         ν−2N   − (qx)ν−2N
+                                                                              
+                     2       X            (qx) 2N  +2  n
+             =                   σν,χ (n)
+               π sin πν                       nν            n 2 − q 2 x2
+                         
+                       2    n>qx
+
+               2(qx)2N +2 X
+                                              ν−2N
+                                                       − (qx)ν−2N
+                                                                      
+                                               n
+             =                    σ̄−ν,χ (n)                             .                                              (7.9)
+                π sin πν                            n 2 − q 2 x2
+                          
+                       2     n>qx
+                                                                  P
+Similarly, by shifting the line of integration to the left, n≤qx can be evaluated as
+                                                                                                bN
+                            1                  (n−1 qx)s                  2
+              X                  Z                                                X            X
+                  σν,χ (n)                                      ds −                  σν,χ (n)     (n−1 qx)ν+2r
+                                                                     π sin( πν
+                                                             
+             n<qx
+                           2πi (2N +δ) sin πs sin π(s−ν)
+                                                
+                                                                             2 ) n<qx
+                                              2          2                                     r=1
+                                                ∞                    ∞
+                                                                                         !
+                      2      X                 X
+                                                           −1 2r
+                                                                    X
+             =−                    σ ν,χ (n)       (n(qx)     )   −     (n(qx)−1 )−ν+2r
+                 π sin πν
+                           
+                         2   n<qx             r=−N                  r=0
+                                                                2       qx ν (qx)2 
+                                              
+                      2      X                  qx 2N     (qx)
+             =−                    σν,χ (n)                         −
+                 π sin πν                              (qx)2 − n2               (qx)2 − n2
+                           
+                         2   n<qx
+                                                n                        n
+               2(qx)2N +2 X
+                                              ν−2N
+                                                      − (qx)ν−2N
+                                                                   
+                                              n
+             =                   σ̄−ν,χ (n)                          .                                                 (7.10)
+               π sin πν                           n 2 − q 2 x2
+                         
+                       2   n<qx
+
+Now substituting (7.9) and (7.10) in (7.8),
+                                                                 ∞             bN
+             1          ζ(s)L(s − ν, χ)(qx)s           2
+                Z                                               X             X
+                                              ds =                  σ ν,χ (n)     (n−1 qx)ν+2r
+                                                   π sin( πν
+                                           
+            2πi (2N +δ) sin πs  sin π(s−ν)                   )
+                                                           2 n=1              r=1
+                             2          2
+                                                                  ∞
+                                                   2(qx)2N +2 X
+                                                                                  ν−2N
+                                                                                           − (qx)ν−2N
+                                                                                                      
+                                                                                   n
+                                                 +                   σ̄−ν,χ (n)                         .              (7.11)
+                                                   π sin πν                             n 2 − q 2 x2
+                                                               
+                                                            2    n=1
+
+Inserting (7.11) in (7.7) and then simplifying, we obtain
+                                                          N
+        1         ζ(s)L(s − ν, χ)(qx)s            2
+           Z                                             X
+                                       ds =                  ζ(2j) L(2j − ν, χ)(qx)2j
+                                             π sin πν
+                                                    
+       2πi (1+d) sin πs  sin π(s−ν)                2
+                        2        2                       j=1
+                                                                    ∞              ν−2N
+                                                                                          − (qx)ν−2N
+                                                                                                     
+                                                  2          2N +2
+                                                                   X               n
+                                          +             (qx)           σ̄−ν,χ (n)                      .               (7.12)
+                                            π sin πν                                   n 2 − q 2 x2
+                                                      
+                                                    2              n=1
+
+Combining (7.12) with (7.6), we deduce that
+                                    
+                          ν  −ν       N
+        (ν)          (2π) q         X
+      J−ν (X) =                         ζ(2j) L(2j − ν, χ)(qx)2j
+                 2πxτ (χ) sin πν
+                                  
+                                2
+                                    
+                                            j=1
+                                                                    ∞                                         )
+                                                                                           nν−2N − (qx)ν−2N
+                                                                    X                  
+                                                       +(qx)2N +2         σ̄−ν,χ (n)                               .   (7.13)
+                                                                                               n 2 − q 2 x2
+                                                                    n=1
+
+Next, by substituting (7.13) in (7.5), one can finish the proof.                                                           
+The proofs of other remaining theorems in Section 3 can be proved similarly. We leave the explanations for the
+readers.
+                                                              24
+                                8. Proof of Voronoı̈-type Summation formulas
+   In this section, we prove Theorem 4.1. The proofs of other theorems will be similar, so we will skip the proofs
+of other theorems. To prove Theorem 4.1, we will adapt the method introduced by B. C. Berndt, A. Dixit, A.
+Roy, and A. Zaharescu in [29].
+ Proof of Theorem 4.1. Let us recall the Theorem 3.1. One can see that identity (3.1) in Theorem 3.1 is valid
+not only for x > 0 but also for −π < arg x < π by analytic continuation. If we set N = 1 in (3.1), then the
+condition ⌊ ℜ(ν)+1
+                2   ⌋ ≤ 1 will imply that 0 ≤ ℜ(ν) < 3. We consider 0 < ℜ(ν) < 21 . Replace x by iz/q in (3.1) for
+                 π
+−π < arg z < 2 and then by −iz/q for − π2 < arg z < π. Now the common region of the resultant identities is
+− π2 < arg z < π2 . So we add the resulting two identities and simplify, in the region − π2 < arg z < π2 , to obtain
+                                                     Λ(z, ν) = Ψ1 (z, ν),                                        (8.1)
+where
+                                ∞                                r                      
+                                                                    nz                   nz
+                                                                                       r
+                            ν   X                      iπν      iπ
+             Λ(z, ν) = 2z − 2         σ−ν,χ̄ (n) nν/2 e 4 Kν 4πe 4
+                                                                          −iπν     −iπ
+                                                                       + e 4 Kν 4πe 4          ,                 (8.2)
+                                                                     q                    q
+                                n=1
+and
+                                                  ν                        ν  ∞
+                                                q 2 Γ(ν)L(ν, χ̄) −ν   q 1− 2 X σ̄−ν,χ (n)
+                                Ψ1 (z, ν) = −                   z   +                     z.                     (8.3)
+                                                     (2π)ν            πτ (χ) n=1 n2 + z 2
+Note that Ψ1 (z, ν) is an analytic function of z in C except on negative real axis and at z = in where n ∈ Z.
+Hence Ψ1 (iz, ν) is analytic in C except on the positive imaginary axis and at z ∈ Z. Similarly, Ψ1 (−iz, ν) is
+analytic in C except on the negative imaginary axis and at z ∈ Z. We deduce Ψ1 (iz, ν) + Ψ1 (−iz, ν) is analytic
+in both the left and right half plane, except possibly when z is an integer. Since
+                                                ν                                                ν
+                                       q 1− 2                                              q 1− 2
+              lim (z ± n)Ψ1 (iz, ν) =          σ̄−ν,χ (n),     lim (z ± n)Ψ1 (−iz, ν) = −          σ̄−ν,χ (n),
+             z→∓n                     2πiτ (χ)                z→∓n                        2πiτ (χ)
+so we have
+                                         lim (z ± n) (Ψ1 (iz, ν) + Ψ1 (−iz, ν)) = 0.
+                                        z→∓n
+
+Hence Ψ1 (iz, ν) + Ψ1 (−iz, ν) is analytic in the entire right half plane. From (8.3), we observe that for z lying
+inside an interval (a, b) on the positive real line not containing an integer, we have
+                                                             ν
+                                                          2q 2 Γ(ν)L(ν, χ̄)      πν  1
+                             Ψ1 (iz, ν) + Ψ1 (−iz, ν) = −                   cos          .                   (8.4)
+                                                                (2π)ν              2 zν
+Since both sides are analytic in the right half-complex plane as a function of z, by analytic continuation, the
+identity (8.4) holds for any z in the right half-plane. Next employing functional equation for L-function (5.16)
+in (8.4) and simplifying, we obtain for − π2 < arg z < π2 ,
+                                                                       ν
+                                                                   q 1− 2             1
+                                      Ψ1 (iz, ν) + Ψ1 (−iz, ν) = −        L(1 − ν, χ) ν .                        (8.5)
+                                                                   τ (χ)             z
+Next, Let f be an analytic function of z in a closed contour γ ′ intersecting the real axis in α and β where
+0 < α < β, m − 1 < α < m, n − 1 < β < n and m, n ∈ Z. Now γ ′ consists of two parts γ1 and γ2 where γ1
+is the portion of the contour in the upper half-plane, and γ2 is the portion corresponding to lower half-plane.
+Now αγ1 β and αγ2 β denote the paths from α to β in the upper and lower half planes, respectively. By the
+Cauchy residue theorem, we have
+                                                                  ν
+                                                             q 1− 2 X
+                             Z
+                                         f (z)Ψ1 (iz, ν)dz =          σ̄−ν,χ (j)f (j),
+                               αγ2 βγ1 α                     τ (χ)
+                                                                       α<j<β
+             ν
+        q 1− 2
+where 2πiτ (χ) σ̄−ν,χ (j)f (j) is the residue of f (z)Ψ1 (iz, ν) at each integer j where α < j < β. Hence the above
+expression can be rewritten as
+                      ν
+                 q 1− 2 X
+                                                Z                           Z
+                              σ̄−ν,χ (j)f (j) =         f (z)Ψ1 (iz, ν)dz −        f (z)Ψ1 (iz, ν)dz
+                 τ (χ)                            αγ2 β                      αγ1 β
+                      α<j<β
+                                                              25
+                                                                (                  ν
+                                                                                                    )
+                                                                            q 1− 2             1
+                           Z                      Z
+                      =       f (z)Ψ1 (iz, ν)dz +       f (z) Ψ1 (−iz, ν) +        L(1 − ν, χ) ν        dz,       (8.6)
+                        αγ2 β                     αγ1 β                     τ (χ)             z
+where in the last step, we used (8.5). Again we make use of the Cauchy residue theorem and obtain
+                               ν                                    ν
+                          q 1− 2                               q 1− 2
+                                                                                  Z β
+                                                    f (z)                             f (t)
+                                             Z
+                                 L(1 − ν, χ)           ν
+                                                          dz =        L(1 − ν, χ)           dt.                   (8.7)
+                          τ (χ)                αγ1 β z         τ (χ)               α   tν
+From (8.1), Λ(z, ν) = Ψ1 (z, ν) for − π2 < arg z < π2 . So it is easy to see that Λ(iz, ν) = Ψ1 (iz, ν) holds for
+−π < arg z < 0, and Λ(−iz, ν) = Ψ1 (−iz, ν) holds for 0 < arg z < π. Thus
+                             (R                            R
+                                αγ  β f (z)Ψ 1 (iz, ν)dz =   αγ    f (z)Λ(iz, ν)dz,
+                               R 2                            R 2β                                          (8.8)
+                                αγ1 β f (z)Ψ1 (−iz, ν)dz = αγ1 β f (z)Λ(−iz, ν)dz.
+
+Here we notice that the series Λ(iz, ν) in (8.2) is uniformly convergent in compact subintervals of −π < arg z < 0,
+and series Λ(−iz, ν) is uniformly convergent in compact subintervals of 0 < arg z < π. Thus, interchanging the
+order of summation and integration in (8.8) and inserting them in (8.6) together with (8.7), we get
+           ν                                  ν                                ∞
+      q 1− 2 X                           q 1− 2
+                                                             Z β
+                                                                 f (t)        X
+                     σ̄−ν,χ (j)f (j) =          L(1 − ν, χ)         ν
+                                                                       dt + 2     σ−ν,χ̄ (n) nν/2
+      τ (χ)                               τ (χ)               α   t
+             α<j<β                                                            n=1
+                                      (                  s       !                          s      !)
+                                                             inz                               inz
+               Z
+                                   ν     iπν          iπ
+                                 −2                                      −iπν          −iπ
+             ×         f (z)(iz)        e 4 Kν 4πe 4                 + e 4 Kν 4πe 4                   dz
+                αγ2 β                                         q                                 q
+                                                                          s                                s
+         ∞
+                                                     (                             !                              !)
+                                                                             −inz                            −inz
+                              Z
+        X                                          ν     iπν           iπ
+             σ−ν,χ̄ (n) nν/2          f (z)(−iz)− 2 e 4 Kν 4πe 4
+                                                                                           −iπν        −iπ
+   +2                                                                                + e 4 Kν 4πe 4                  dz.
+                                αγ1 β                                          q                              q
+       n=1
+Simplifying we get
+                   ν                                   ν
+              q 1− 2 X                            q 1− 2
+                                                                       Z β
+                                                                            f (t)
+                             σ̄−ν,χ (j)f (j) =            L(1 − ν, χ)             dt
+              τ (χ)                               τ (χ)                 α    tν
+                     α<j<β
+                 ∞                                           r                            r    
+                                                                         nz                     nz
+                                      Z
+                                                      − ν2
+                X
+                                  ν/2                                                −iπν
+             +2      σ−ν,χ̄ (n) n             f (z)z           Kν 4πi            + e 2 Kν 4π          dz
+                n=1                     αγ2 β                             q                      q
+                     ∞                                                  r                         
+                                                                                  nz               nz
+                                          Z                                                      r
+                                                           − ν2    iπν
+                    X
+                                      ν/2
+              +2       σ−ν,χ̄ (n) n               f (z)z          e 2 Kν 4π             + Kν −4πi        dz.
+                                            αγ1 β                                  q                q
+                     n=1
+Employing the residue theorem again, this time for each of the integrals inside the two sums, and simplifying,
+we obtain
+                ν                                ν                               ∞
+           q 1− 2 X                         q 1− 2
+                                                               Z β
+                                                                   f (t)        X
+                          σ̄−ν,χ (j)f (j) =        L(1 − ν, χ)        ν
+                                                                         dt + 2     σ−ν,χ̄ (n) nν/2
+           τ (χ)                            τ (χ)               α   t           n=1
+                  α<j<β
+              Z β                r                          r                            r       
+                          − ν2              nt                     nt              πν             nt
+           ×       f (t)t       Kν 4πi             + Kν −4πi              + 2 cos        Kν 4π            dt. (8.9)
+                α                           q                      q                 2              q
+Here by [29, p. 848, equation (7.15)], we have
+                                                                 πν              πν 
+                               Kν (ix) + Kν (−ix) = −π Jν (x) sin( ) + Yν (x) cos( ) ,                    (8.10)
+                                                                   2               2
+                                                                                                          p
+where Jν and Yν are the Bessel functions defined in (1.9) and (1.7), respectively. Now, we replace x by 4π nt/q
+in (8.10) and substitute in (8.9), to get the desired result.                                                 
+
+                                               9. Acknowledgement
+  We thank Prof Atul Dixit for his valuable input. Research of the second author was supported by the
+University Grants Commission, Department of Higher Education, Government of India, under NTA Ref. no.
+191620205105. They are grateful to the referee for several helpful suggestions and comments.
+                                                           26
+                                                References
+ [1] B. C. Berndt and A. Zaharescu, “Weighted divisor sums and Bessel function series,” Math. Ann., vol.
+     335, no. 2, pp. 249–283, 2006. [Online]. Available: https://doi.org/10.1007/s00208-005-0734-3
+ [2] S. Kim, “Sums of divisors functions and Bessel function series,” J. Number Theory, vol. 170, pp. 142–184,
+     2017. [Online]. Available: https://doi.org/10.1016/j.jnt.2016.06.018
+ [3] D. Banerjee and B. Maji, “Identities associated to generalized divisor function and bessel functions,”
+     accepted for publication to Reseach in Number Theory, 2023.
+ [4] G. N. Watson, A treatise on the theory of Bessel functions, ser. Cambridge Mathematical Library. Cam-
+     bridge University Press, Cambridge, 1995, reprint of the second (1944) edition.
+ [5] A. P. Guinand, “Some rapidly convergent series for the Riemann ξ-function,” Quart. J. Math. Oxford Ser.
+     (2), vol. 6, pp. 156–160, 1955. [Online]. Available: https://doi.org/10.1093/qmath/6.1.156
+ [6] G. N. Watson, “Some self-reciprocal functions,” The Quarterly Journal of Mathematics, no. 1, pp. 298–309,
+     1931.
+ [7] N. Koshliakov, “On Voronoi’s sum-formula,” Mess. Math, vol. 58, pp. 30–32, 1929.
+ [8] G. Voronoı̈, “Sur une fonction transcendante et ses applications à la sommation de quelques séries,” in
+     Annales scientifiques de l’École Normale Supérieure, vol. 21, 1904, pp. 207–267.
+ [9] A. Dixon and W. Ferrar, “Lattice-point summation formulae,” The Quarterly Journal of Mathematics,
+     no. 1, pp. 31–54, 1931.
+[10] J. Wilton, “Voronoı̈’s summation formula,” The Quarterly Journal of Mathematics, no. 1, pp. 26–32, 1932.
+[11] M. Jutila, Lectures on a method in the theory of exponential sums, ser. Tata Institute of Fundamental
+     Research Lectures on Mathematics and Physics. Published for the Tata Institute of Fundamental Research,
+     Bombay; by Springer-Verlag, Berlin, 1987, vol. 80.
+[12] A. Ivić, “The Voronoi identity via the Laplace transform,” 1998, vol. 2, no. 1-2, pp. 39–45, Paul Erdös
+     (1913–1996). [Online]. Available: https://doi.org/10.1023/A:1009753723245
+[13] B. C. Berndt, “The Voronoı̈ summation formula,” in The theory of arithmetic functions (Proc. Conf.,
+     Western Michigan Univ., Kalamazoo, Mich., 1971), ser. Lecture Notes in Math., Vol. 251. Springer,
+     Berlin, 1972, pp. 21–36.
+[14] ——, “Identities involving the coefficients of a class of Dirichlet series. V, VI,” Trans. Amer.
+     Math. Soc., vol. 160, pp. 139–156; ibid. 160 (1971), 157–167, 1971. [Online]. Available:
+     https://doi.org/10.1090/s0002-9947-1971-0280693-9
+[15] T. Meurman, “A simple proof of Voronoı̆’s identity,” 1992, no. 209, pp. 15, 265–274, Journées
+     Arithmétiques, 1991 (Geneva).
+[16] S. Egger né Endres and F. Steiner, “An exact trace formula and zeta functions for an infinite quantum
+     graph with a non-standard Weyl asymptotics,” J. Phys. A, vol. 44, no. 18, pp. 185 202, 44, 2011. [Online].
+     Available: https://doi.org/10.1088/1751-8113/44/18/185202
+[17] W. L. Ferrar, “Some Solutions of the Equation F(t) = F(t-1),” J. London Math. Soc., vol. 11, no. 2, pp.
+     99–103, 1936. [Online]. Available: https://doi.org/10.1112/jlms/s1-11.2.99
+[18] K. Soni, “Some relations associated with an extension of Koshliakov’s formula,” Proc. Amer. Math. Soc.,
+     vol. 17, pp. 543–551, 1966. [Online]. Available: https://doi.org/10.2307/2035364
+[19] F. Oberhettinger and K. L. Soni, “On some relations which are equivalent to functional equations
+     involving the Riemann zeta function,” Math. Z., vol. 127, pp. 17–34, 1972. [Online]. Available:
+     https://doi.org/10.1007/BF01110101
+[20] B. C. Berndt, Y. Lee, and J. Sohn, “Koshliakov’s formula and Guinand’s formula in Ramanujan’s lost
+     notebook,” in Surveys in number theory, ser. Dev. Math. Springer, New York, 2008, vol. 17, pp. 21–42.
+[21] A. Dixit, “Transformation formulas associated with integrals involving the Riemann Ξ-function,” Monatsh.
+     Math., vol. 164, no. 2, pp. 133–156, 2011. [Online]. Available: https://doi.org/10.1007/s00605-010-0208-x
+[22] B. C. Berndt, S. Kim, and A. Zaharescu, “Analogues of Koshliakov’s formula,” in Ramanujan 125, ser.
+     Contemp. Math. Amer. Math. Soc., Providence, RI, 2014, vol. 627, pp. 41–48. [Online]. Available:
+     https://doi.org/10.1090/conm/627/12531
+[23] A. Dixit, A. Kesarwani, and V. H. Moll, “A generalized modified Bessel function and a higher level
+     analogue of the theta transformation formula,” J. Math. Anal. Appl., vol. 459, no. 1, pp. 385–418, 2018.
+     [Online]. Available: https://doi.org/10.1016/j.jmaa.2017.10.050
+
+                                                      27
+[24] H. Maass, “Über eine neue Art von nichtanalytischen automorphen Funktionen und die Bestimmung
+     Dirichletscher Reihen durch Funktionalgleichungen,” Math. Ann., vol. 121, pp. 141–183, 1949. [Online].
+     Available: https://doi.org/10.1007/BF01329622
+[25] C. J. Moreno, Advanced analytic number theory: L-functions, ser. Mathematical Surveys and
+     Monographs. American Mathematical Society, Providence, RI, 2005, vol. 115. [Online]. Available:
+     https://doi.org/10.1090/surv/115
+[26] T. Kubota, Elementary theory of Eisenstein series. Kodansha, Ltd., Tokyo; Halsted Press [John Wiley
+     & Sons, Inc.], New York-London-Sydney, 1973.
+[27] A. Terras, Harmonic analysis on symmetric spaces and applications. I. Springer-Verlag, New York, 1985.
+     [Online]. Available: https://doi.org/10.1007/978-1-4612-5128-6
+[28] H. Cohen, “Some formulas of Ramanujan involving Bessel functions,” in Actes de la Conférence “Fonctions
+     L et Arithmétique”, ser. Publ. Math. Besançon Algèbre Théorie Nr. Lab. Math. Besançon, Besançon,
+     2010, vol. 2010, pp. 59–68.
+[29] B. C. Berndt, A. Dixit, A. Roy, and A. Zaharescu, “New pathways and connections in number theory
+     and analysis motivated by two incorrect claims of Ramanujan,” Adv. Math., vol. 304, pp. 809–929, 2017.
+     [Online]. Available: https://doi.org/10.1016/j.aim.2016.08.011
+[30] H. L. Montgomery and R. C. Vaughan, Multiplicative number theory. I. Classical theory, ser. Cambridge
+     Studies in Advanced Mathematics. Cambridge University Press, Cambridge, 2007, vol. 97.
+[31] H. Davenport, Multiplicative number theory, 3rd ed., ser. Graduate Texts in Mathematics. Springer-Verlag,
+     New York, 2000, vol. 74, revised and with a preface by Hugh L. Montgomery.
+[32] H. Rademacher, Topics in analytic number theory, ser. Die Grundlehren der mathematischen Wis-
+     senschaften, Band 169. Springer-Verlag, New York-Heidelberg, 1973, edited by E. Grosswald, J. Lehner
+     and M. Newman.
+[33] R. B. Paris and D. Kaminski, Asymptotics and Mellin-Barnes integrals, ser. Encyclopedia of Mathematics
+     and its Applications. Cambridge University Press, Cambridge, 2001, vol. 85. [Online]. Available:
+     https://doi.org/10.1017/CBO9780511546662
+[34] A. Erdélyi, W. Magnus, F. Oberhettinger, and F. G. Tricomi, Tables of integral transforms. Vol. I.
+     McGraw-Hill Book Co., Inc., New York-Toronto-London, 1954, based, in part, on notes left by Harry
+     Bateman.
+[35] G. Tenenbaum, Introduction to analytic and probabilistic number theory, 3rd ed., ser. Graduate Studies in
+     Mathematics. American Mathematical Society, Providence, RI, 2015, vol. 163, translated from the 2008
+     French edition by Patrick D. F. Ion. [Online]. Available: https://doi.org/10.1090/gsm/163
+[36] C. Deninger, “On the analogue of the formula of Chowla and Selberg for real quadratic fields,” J. Reine
+     Angew. Math., vol. 351, pp. 171–191, 1984. [Online]. Available: https://doi.org/10.1515/crll.1984.351.171
+  Debika Banerjee, Department of Mathematics, Indraprastha Institute of Information Technology IIIT, Delhi,
+Okhla, Phase III, New Delhi-110020, India.
+  Email address: debika@iiitd.ac.in
+
+  Khyati Khurana, Department of Mathematics, Indraprastha Institute of Information Technology IIIT, Delhi,
+Okhla, Phase III, New Delhi-110020, India
+  Email address: khyatii@iiitd.ac.in
+
+
+
+
+                                                      28
+

@@ -1,0 +1,169 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-alpha-bounded-zeta-high-transition-bound",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Connector-completed alpha-bounded zeta-high transition bound",
+        "status": "open",
+        "statement_tex": "Put A=s-z/2 and B=s+z/2 in the terminal reflected kernel. On the alpha-bounded trace the exact one-factor identity is X_zeta(A)zeta(A)L(1-B,chi_4), whose high Dirichlet coefficients are unsigned h^(-A). After retaining the actual transition mask, Cauchy--Pompeiu or strip-edge connectors, finite outside-height sides, R_(1,v)-reconciled arithmetic pole at A=0, axial/top/corner strata, floors, profiles, and external M1 normalization, prove that the complete normalized alpha-bounded contribution is O_epsilon(X^epsilon). The beta-bounded character-high branch is already closed and is not part of this obligation. Coefficientwise period-four Abel summation, a side-free contour shift, an ordinary simultaneous Dirichlet chamber, and absolute height integration are not accepted substitutes for the joint operator estimate.",
+        "dependencies": [
+          "M9-M1-finite-vector-Hankel-identity",
+          "M9-M1-diagonal-single-transition-normal-form",
+          "M9-M1-partial-functional-equation-transition-reduction",
+          "M9-M1-beta-transition-connector-reduction",
+          "M9-M1-radial-endpoint-subtraction-identity",
+          "M9-M1-renormalized-radial-side-removal",
+          "M9-M1-endpoint-boundary-operator",
+          "M9-M1-endpoint-Cauchy-reduction",
+          "M9-M1-upper-radial-endpoint-prefix",
+          "M9-M1-R1-arithmetic-residue"
+        ],
+        "implies": [
+          "M9-M1-swept-transition-horizontal-operator"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-wrapper-closure-audit/reviews/conductor_W3_provenance_and_alpha_boundary.md",
+            "rounds/codex-managed/m9-m1-beta-wrapper-closure-audit/synthesis.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-m1-partial-functional-equation-transitions/reports/mixed_trace_attack.md",
+            "rounds/codex-managed/m9-m1-partial-functional-equation-transitions/reports/partial_FE_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-partial-functional-equation-transitions/synthesis.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Freeze the exact alpha-bounded positive-line operator, including its mask connectors, outside sides, A=0/R1 reconciliation, axial/top/corner ownership, and one-count normalization; then seek a signed joint kernel estimate rather than coefficientwise Abel cancellation."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-beta-complete-physical-height-symbol-bound",
+        "status": "proved_internal",
+        "statement_tex": "After aggregate-before-localization routing, the corrected hybrid physical-height beta symbol is target-safe on the complete returned positive-line partition. Boundary, radial-side, endpoint, arithmetic, artificial, axial, collision, connector, corner, and global-height interfaces stay at their proved owners. On the hard-top diagonal the signed Cauchy section is formed before absolute values; off-diagonal and smooth shares use their accepted mixed norms. Fixed-ratio middle, compact, and global nonsaddle cells retain their distinct normalizations. The complete normalized beta symbol and coefficient sum are O_epsilon(X^epsilon), equivalently O_epsilon(X^(1/4+epsilon)) after the external M1 factor. No all-strata pointwise or all-absolute symbol claim is made, and the alpha-bounded zeta-high trace is excluded.",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-wrapper-closure-audit/reports/beta_wrapper_implication_attack.md",
+            "rounds/codex-managed/m9-m1-beta-wrapper-closure-audit/reports/blind_beta_wrapper_rederivation.md",
+            "rounds/codex-managed/m9-m1-beta-wrapper-closure-audit/reports/beta_wrapper_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-wrapper-closure-audit/reviews/conductor_owner_and_zero_residual.md",
+            "rounds/codex-managed/m9-m1-beta-wrapper-closure-audit/synthesis.md"
+          ]
+        },
+        "reason_for_promotion": "Every routed interface already had a proved owner, while Round 47 supplied the formerly missing double-bounded cell and exact complete returned positive-line partition. Round 48 verifies their one-count assembly and the hybrid signed-before-absolute scope.",
+        "next_action": "Use this only as the complete beta hybrid symbol bound; do not infer an all-absolute diagonal norm, rowwise physical limits, or the separate alpha-bounded trace."
+      },
+      {
+        "id": "M9-M1-beta-regular-finite-part-symbol-BV",
+        "status": "proved_internal",
+        "statement_tex": "The complete regular beta finite part satisfies the corrected hybrid finite-section/BV estimate on the full returned positive-line partition. The unintegrated hard-top diagonal is not absolutely integrable and is first evaluated as its signed Cauchy section; the off-diagonal divided difference and smooth ordinary-height shares satisfy the accepted absolute value, physical-height derivative, moving-trace, and Morse norms. Fixed-ratio, compact, and nonsaddle cells are then summed with their own proved normalizations. The resulting complete beta finite-part contribution is O_epsilon(X^(1/4+epsilon)) physically. No all-absolute majorant for the unintegrated diagonal is asserted.",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-wrapper-closure-audit/reports/beta_wrapper_implication_attack.md",
+            "rounds/codex-managed/m9-m1-beta-wrapper-closure-audit/reports/blind_beta_wrapper_rederivation.md",
+            "rounds/codex-managed/m9-m1-beta-wrapper-closure-audit/reports/beta_wrapper_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-wrapper-closure-audit/reviews/conductor_owner_and_zero_residual.md",
+            "rounds/codex-managed/m9-m1-beta-wrapper-closure-audit/synthesis.md"
+          ]
+        },
+        "reason_for_promotion": "After the complete physical-height wrapper is promoted, every diagonal, off-diagonal, smooth, compact, middle, and nonsaddle finite-part component has a proved owner and the Round-48 owner ledger shows no omitted or duplicated share.",
+        "next_action": "Use only the hybrid signed-diagonal plus absolute-off-diagonal package; retain rejection of a single all-absolute physical-height weight."
+      },
+      {
+        "id": "M9-M1-beta-log-amplitude-two-saddle-kernel",
+        "status": "proved_internal",
+        "statement_tex": "The distribution-first logarithmic two-saddle beta package is target-safe. On the repaired fixed-ratio middle sector, the accepted moving-logarithm Fresnel lemma, exact q^(-4) face coefficient, two-saddle Morse normal form, signed-diagonal/off-diagonal hybrid symbol, entry/exit and half-Fresnel control, height exhaustion, and coefficient sums apply with both Hessian signs. Compact and global nonsaddle cells are supplied by their separate positive-line estimates and are not multiplied by a stationary numerator or normalized by lambda^(-2). Together these cells give the complete beta log-amplitude package with normalized O_epsilon(X^epsilon) size. This is a wrapper around the named proved formula-level lemmas, not a new pointwise kernel identity.",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-wrapper-closure-audit/reports/beta_wrapper_implication_attack.md",
+            "rounds/codex-managed/m9-m1-beta-wrapper-closure-audit/reports/beta_wrapper_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-wrapper-closure-audit/reviews/conductor_W3_provenance_and_alpha_boundary.md",
+            "rounds/codex-managed/m9-m1-beta-wrapper-closure-audit/synthesis.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-wrapper-closure-audit/reports/blind_beta_wrapper_rederivation.md"
+          ]
+        },
+        "reason_for_promotion": "The graph, beyond the statement-only packet, already proves the exact moving-log, face, Morse, fixed-ratio cutoff, and large-alpha coefficient-sum inputs. W1 and W2 supply the complete complementary cells without importing saddle normalization into nonsaddle geometry.",
+        "next_action": "Treat the beta log-amplitude package as closed at wrapper level; use its constituent formula lemmas for provenance and do not reopen the stationary/nonsaddle split."
+      },
+      {
+        "id": "M9-M1-beta-transition-connector-reduction",
+        "status": "proved_internal",
+        "statement_tex": "Starting from one fixed-w finite meromorphic antecedent, sum all three hierarchical masks and all sixteen product Cauchy--Green strata before physical limits. The mask derivatives cancel, endpoint and recombined R1 arithmetic modules return once to their accepted physical limits, compact beta support removes the transferred renormalized radial sides, and the endpoint-free vector has its accepted signed Plemelj and joint height limit. After positive-line alpha localization, the compact terminal, two oriented artificial shares, repaired fixed-ratio middle cells, and inner/outer nonsaddle cells form one exact target-safe partition. The finite residual beta operator is identically zero, so the complete beta-bounded character-high transition is O_epsilon(X^epsilon) normalized and O_epsilon(X^(1/4+epsilon)) physically, with every floor, star, character, collision, contour, radial, endpoint, and external factor counted once. The separate alpha-bounded zeta-high trace is excluded.",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-wrapper-closure-audit/reports/beta_wrapper_implication_attack.md",
+            "rounds/codex-managed/m9-m1-beta-wrapper-closure-audit/reports/blind_beta_wrapper_rederivation.md",
+            "rounds/codex-managed/m9-m1-beta-wrapper-closure-audit/reports/beta_wrapper_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-wrapper-closure-audit/reviews/conductor_owner_and_zero_residual.md",
+            "rounds/codex-managed/m9-m1-beta-wrapper-closure-audit/reviews/conductor_W3_provenance_and_alpha_boundary.md",
+            "rounds/codex-managed/m9-m1-beta-wrapper-closure-audit/synthesis.md"
+          ]
+        },
+        "reason_for_promotion": "W1--W3 now close sequentially, every finite and limiting beta stratum has exactly one accepted owner, and the exact finite residual after module routing and the positive-line one-count partition is zero.",
+        "next_action": "Use this as the closed beta branch only. The next transition task is the explicit alpha-bounded zeta-high obligation; do not promote the swept operator from this node alone."
+      },
+      {
+        "id": "M9-M1-swept-transition-horizontal-operator",
+        "statement_tex": "After the target-safe radial endpoint/residue package is removed, the exact finite mixed transition pair splits into two separately owned branches. The beta-bounded character-high branch, including its connectors and outside-height limit, is proved by M9-M1-beta-transition-connector-reduction. The remaining normalized operator is the connector-completed alpha-bounded zeta-high trace M9-M1-alpha-bounded-zeta-high-transition-bound, together with its finite outside-height sides and separately retained A=0/R1, axial, top, and corner strata. Prove that remaining branch is O_epsilon(X^epsilon). Coefficientwise Abel summation, side-free contour displacement, and absolute height integration do not suffice.",
+        "dependencies_added": [
+          "M9-M1-alpha-bounded-zeta-high-transition-bound"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-wrapper-closure-audit/synthesis.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-wrapper-closure-audit/reports/beta_wrapper_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-wrapper-closure-audit/reviews/conductor_W3_provenance_and_alpha_boundary.md"
+          ]
+        },
+        "next_action": "Attack the explicit alpha-bounded zeta-high transition node; the beta branch is closed and must not be reopened."
+      },
+      {
+        "id": "M9-M1-renormalized-radial-boundary-operator",
+        "statement_tex": "The renormalized radial sides are removed and the complete physical endpoint/residue package is target-safe. Of the connector-completed pair of diagonal mixed transition traces, the beta-bounded character-high branch and its outside-height limit are now target-safe. The remaining component is exactly M9-M1-alpha-bounded-zeta-high-transition-bound, with its outside-height and axial/top/corner seams retained.",
+        "dependencies_added": [
+          "M9-M1-alpha-bounded-zeta-high-transition-bound"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-wrapper-closure-audit/synthesis.md"
+          ]
+        },
+        "next_action": "Prove the connector-completed alpha-bounded zeta-high trace; all radial endpoint and beta-owned interfaces are closed."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1-post-FE-vector-kernel",
+        "reason": "The beta branch is closed, but the explicit alpha-bounded zeta-high transition and other vector-kernel interfaces remain open."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "Round 48 closes the beta transition only; the alpha-bounded trace and downstream post-FE/vector interfaces remain open."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1 and M9-M2 remain open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "No unconditional Gauss-circle estimate is claimed."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 9,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 48 closes four stale beta wrappers by exact triangular implication and a zero finite residual, while isolating the alpha-bounded zeta-high trace as the sole remaining transition branch and preventing an illicit downstream promotion."
+  }
+}

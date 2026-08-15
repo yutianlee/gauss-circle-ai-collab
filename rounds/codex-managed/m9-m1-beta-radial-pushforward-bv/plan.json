@@ -1,0 +1,165 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 27,
+    "round_type": "beta_radial_pushforward_bv",
+    "campaign_id": "m9-m1-beta-radial-pushforward-bv",
+    "title": "Hierarchical beta branch: recombined displacement and radial BV attack",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "literature_policy": "Use internal Mellin, stationary-phase, Abel, and BV analysis. Search primary literature only if a named uniform stationary-phase or vector-Hilbert theorem is proposed for import, and audit its hypotheses before reliance."
+    },
+    "target_obligations": [
+      "M9-M1-beta-transition-connector-reduction",
+      "M9-M1-swept-transition-horizontal-operator",
+      "M9-M1-renormalized-radial-boundary-operator"
+    ],
+    "frozen_target": {
+      "question": "For the hierarchical beta branch Theta_beta=psi(beta), can the double-bounded share and recombined E1+R1 contour displacement be made exact and target-safe, and can the remaining positive-alpha piece be reduced to a radial theta-pushforward with integrable uniform q-BV so that the accepted logarithmic character-kernel lemma proves normalized O_epsilon(X^epsilon), or is there a rigorous obstruction?",
+      "reference_formula": "Use 1=psi(beta)+(1-psi(beta))psi(alpha)+(1-psi(beta))(1-psi(alpha)). In the beta component apply the accepted Cauchy-Green identity to the complete recombined radial integrand, not isolated R1. In the positive-alpha saddle use alpha_0=pi q sqrt(Xx)/D_j, theta_j(x)=pi sqrt(Xx)/D_j, and the accepted q^0 character kernel. Preserve the actual W_j, phi, H_j+1 floors, top half-star, finite outside sides, and external -(4/pi)X^(1/4) normalization.",
+      "quantities": [
+        "the double-bounded beta share",
+        "the recombined E1+R1 finite connector displacement and full A=0 residue",
+        "the positive-alpha saddle/transition decomposition",
+        "the radial phase pushforward theta_j(x)",
+        "the complete theta-dependent discrete q-BV norm",
+        "hard top Hilbert-pole and smooth interior contributions",
+        "finite sides, endpoints, and signed/unsigned/adversarial controls"
+      ]
+    },
+    "completion_criteria": [
+      "The hierarchical partition and recombined radial displacement are written exactly with every residue and side counted once.",
+      "The double-bounded share is proved target-safe or reduced to one explicit open finite kernel.",
+      "The claimant derives a uniform stationary/transition decomposition and an exact theta-pushforward formula with all X, D_j, h, q powers.",
+      "A complete-profile discrete q-BV theorem is proved with an integrable theta-majorant, or a rigorous actual-profile counterexample/capacity obstruction is given.",
+      "Hard top Hilbert pole and smooth interior scales are audited separately.",
+      "The conductor closes the round and applies only a validated State Patch."
+    ],
+    "controls": [
+      "signed-vs-unsigned",
+      "coefficient-adversary",
+      "support-and-degeneracy",
+      "exact-vs-near-resonance",
+      "residue-and-normalization"
+    ],
+    "tasks": [
+      {
+        "id": "blind_hierarchical_recombined_identity",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "target": "Independently derive the hierarchical mask partition, identify the double-bounded share, and write the exact finite Cauchy-Green displacement for the recombined E1+R1 radial factor, including A=0, the artificial pole cancellation, all finite sides, profiles, and normalization. Do not estimate the positive-alpha kernel.",
+        "context_files": [
+          "protocol.md",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-radial-endpoint-renormalization/synthesis.md",
+          "rounds/codex-managed/m9-m1-r1-arithmetic-residue/synthesis.md",
+          "rounds/codex-managed/m9-m1-partial-functional-equation-transitions/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-transition-connector/synthesis.md"
+        ],
+        "excluded_context": [
+          "all other Round-27 reports",
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md"
+        ],
+        "required_controls": [
+          "support-and-degeneracy",
+          "residue-and-normalization"
+        ],
+        "required_output": [
+          "Exact hierarchical partition and double-bounded share",
+          "Exact recombined E1+R1 connector and residue/side ledger",
+          "Seven-section report at the assigned path"
+        ]
+      },
+      {
+        "id": "radial_pushforward_qbv_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "target": "Derive the uniform positive-alpha stationary/transition decomposition, exact radial theta-pushforward, and complete actual-profile q-BV norm for the hierarchical beta branch. Prove the normalized bound using the accepted character-kernel lemma, or isolate the smallest quantitative obstruction. Separate smooth interior scales from the hard top Hilbert pole.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "proofs/kernels/m9_m1_beta_character_dirichlet.md",
+          "rounds/codex-managed/m9-m1-diagonal-transition-exhaustion/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-transition-connector/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-transition-connector/reports/beta_physical_kernel_attack.md",
+          "rounds/codex-managed/m9-m1-upper-endpoint-character-abel/synthesis.md",
+          "rounds/codex-managed/m9-m1-r1-arithmetic-residue/synthesis.md"
+        ],
+        "required_controls": [
+          "signed-vs-unsigned",
+          "coefficient-adversary",
+          "support-and-degeneracy",
+          "exact-vs-near-resonance",
+          "residue-and-normalization"
+        ],
+        "required_output": [
+          "Exact stationary/transition and theta-pushforward formula",
+          "Complete-profile q-BV theorem or quantitative obstruction",
+          "Separate hard-top and smooth-interior verdicts",
+          "Seven-section report at the assigned path"
+        ]
+      },
+      {
+        "id": "pushforward_bv_hostile_audit",
+        "role": "seam_reviewer",
+        "access_mode": "selected_context",
+        "target": "Hostilely audit the hierarchical partition, recombined residue ledger, stationary normalization, theta pushforward, q-BV, Hilbert-pole treatment, scale summation, endpoint and finite-side uniformity. Construct an actual-profile falsifier for any invalid BV or density claim, or certify the narrowest true lemma.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "proofs/kernels/m9_m1_beta_character_dirichlet.md",
+          "rounds/codex-managed/m9-m1-diagonal-transition-exhaustion/synthesis.md",
+          "rounds/codex-managed/m9-m1-radial-endpoint-renormalization/synthesis.md",
+          "rounds/codex-managed/m9-m1-r1-arithmetic-residue/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-transition-connector/synthesis.md"
+        ],
+        "required_controls": [
+          "signed-vs-unsigned",
+          "coefficient-adversary",
+          "support-and-degeneracy",
+          "exact-vs-near-resonance",
+          "residue-and-normalization"
+        ],
+        "required_output": [
+          "Independent partition and residue audit",
+          "BV/density/Hilbert-pole countermodel or scoped validation",
+          "Seven-section report at the assigned path"
+        ]
+      }
+    ],
+    "review_seams": [
+      "hierarchical partition and double-bounded ownership",
+      "E1/R1 artificial-pole cancellation before contour displacement",
+      "full A=0 residue sign and one-time accounting",
+      "stationary Hessian and all q/h/X/D powers",
+      "saddle entry, exit, and mask-transition zones",
+      "theta pushforward density and number of resonance periods",
+      "complete actual-profile discrete q-BV including moving supports",
+      "hard top Hilbert pole versus smooth interior profiles",
+      "radial endpoints, outside-height sides, and external X^(1/4) normalization"
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "8a92f4ad5e1067f9e184baa0d85c6eb71b1e1f2eee76261f66b6b437a5e27cac",
+    "generated_at": "2026-08-12T21:18:58.136919+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  },
+  "closing_assessment": {
+    "decision": "promote_exact_hierarchy_and_scoped_signed_gain_reject_pre_split_qBV",
+    "graph_mutation": true,
+    "main_result": "The exact hierarchy and omega split are proved. Unsplit G is q^0, post-endpoint R1 is q^(-1), and the separated signed hard-top convolution is locally q^(-2). Uniform transition patching and complete sums remain open.",
+    "graph_sha256": "e2ee85737b2be860789ded13d5526e81239002ff9debb2fb8edcaf5b44644e3e"
+  }
+}

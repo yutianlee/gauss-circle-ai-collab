@@ -1,0 +1,109 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-subcritical-small-angle-collapse",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Subcritical angular-symbol collapse to a one-sided character-divisor cone",
+        "status": "proved_internal",
+        "statement_tex": "Put Y=sqrt(X), y=floor(sqrt(X)), and d_(n,h)=2h sqrt(X/n). The exact angular multiplier satisfies Omega_X^*(n,h)=1_(d_(n,h)<=y)^*+O(min(1,n/Y)); the floor-, activity-, bottom-, partition-, and star-safe proof is nontrivial on n<=9Y/4. On every fixed block n asymp N=X^nu with 0<nu<1/2, the hard coefficient is eventually exactly D(n)=sum_(hq=n,q odd,q>4h) chi_4(q)=sum_(q|n,q odd,q>2sqrt(n)) chi_4(q), with no equality star. For fixed smooth V the normalized radial replacement error is O_V(N^(5/4)log(2N)/Y), power-saving for nu<2/5 and X^epsilon-safe with a logarithm at nu=2/5. The remaining signed one-sided radial sum is open and has polynomial absolute capacity.",
+        "dependencies": [
+          "H4-Phi-regularity",
+          "M9-M2-dyadic-weight-nondegeneracy",
+          "M9-M1-global-angular-recombination",
+          "M9-M1-lower-radial-phase-diagram"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-radial-small-angle-collapse/reports/small_angle_collapse_attack.md",
+            "rounds/codex-managed/m9-m1-lower-radial-small-angle-collapse/reports/blind_small_angle_rederivation.md",
+            "rounds/codex-managed/m9-m1-lower-radial-small-angle-collapse/reports/small_angle_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-radial-small-angle-collapse/reviews/conductor_small_angle_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-radial-small-angle-collapse/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Attack the exact one-sided coefficient through its false-theta generating function sum_(h>=1) z^(4h^2+h)/(1+z^(2h)); seek a coefficient-preserving transformation or signed radial estimate and audit partial-theta/Appell literature before import."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "dependencies_added": [
+          "M9-M1-subcritical-small-angle-collapse"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-radial-small-angle-collapse/synthesis.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-lower-radial-small-angle-collapse/reviews/conductor_small_angle_adjudication.md"
+          ]
+        },
+        "next_action": "For smooth lower-radial blocks through nu=2/5, the exact symbol replacement is target-safe. Prove the signed one-sided character-divisor radial estimate, preferably through the exact false-theta/Appell-type generating kernel; retain a separate signed correction above nu=2/5."
+      },
+      {
+        "id": "M9-M1-global-angular-recombination",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-radial-small-angle-collapse/synthesis.md"
+          ]
+        },
+        "next_action": "Use the proved subcritical collapse. Below the two-fifths replacement threshold, estimate the exact one-sided divisor cone; do not replace it by r_2/4 or discard its angular projector."
+      },
+      {
+        "id": "M9-M1-lower-radial-phase-diagram",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-radial-small-angle-collapse/synthesis.md"
+          ]
+        },
+        "next_action": "The angular symbol is reduced to the exact one-sided coefficient with target-safe error through nu=2/5. The signed cone remains open there, and both the signed correction and cone remain open above nu=2/5."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round62-active-profile-telescope-gives-r2-over-four",
+        "reason": "The telescope leaves the asymmetric cone q>4h. Its coefficient is an incomplete character-divisor prefix and is not r_2(n)/4."
+      },
+      {
+        "id": "Round62-small-angle-error-closes-lower-radial-sum",
+        "reason": "The replacement error is target-safe through nu=2/5, but the limiting signed one-sided sum has polynomial absolute capacity and remains unproved."
+      },
+      {
+        "id": "Round62-two-fifths-threshold-is-strict",
+        "reason": "At nu=2/5 the replacement error is O(log X), which is admissible under an X^epsilon target."
+      },
+      {
+        "id": "Round62-Popov-full-r2-Voronoi-bounds-one-sided-cone",
+        "reason": "Popov's theorem uses the complete r_2 coefficient. The joint cutoff q>4h destroys that complete convolution and is not covered by the theorem."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "The signed one-sided lower-radial sum and the remaining subcritical range are open."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1 and M9-M2 remain open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The promoted result is a reduction and proves no new discrepancy exponent."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 8,
+    "idea_quality_score": 9,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 62 eliminates the complete floor-perturbed angular profile on the lower radial range, identifies an exact X-independent one-sided arithmetic coefficient, and closes its replacement error through nu=2/5. It does not estimate the remaining signed cone or improve the final exponent."
+  }
+}

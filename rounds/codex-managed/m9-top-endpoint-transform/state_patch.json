@@ -1,0 +1,100 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Signed affine-cone estimate for the top M2 block",
+        "status": "open",
+        "statement_tex": "For the exact top-endpoint transform, prove uniformly for dyadic 1<=L<=X^(1/4) that T_end,L=sum_(h asymp L, h odd) sum_(ceil(h/4)<=m<=h) chi_4(h) a_end(h,m)e(sqrt(Xhm)) <<_epsilon L^(3/2)X^epsilon, where a_end is the actual normalized Vaaler/profile symbol. The symbol is smooth in the cone interior and at the upper support edge but has a hard affine lower edge m=ceil(h/4) where W(1)=1. This estimate implies the top M2 block target because the endpoint and transform errors are target-sized.",
+        "dependencies": [
+          "M9-M2-top-endpoint-transform",
+          "M9-M2-character-factor",
+          "H4-Phi-regularity"
+        ],
+        "implies": [
+          "M9-endpoint-uniformity",
+          "M9-M2"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-top-endpoint-transform/reports/one_sided_poisson_derivation.md",
+            "rounds/codex-managed/m9-top-endpoint-transform/reports/endpoint_transform_hostile_audit.md",
+            "rounds/codex-managed/m9-top-endpoint-transform/synthesis.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Exploit the exact odd-h affine cone before absolute values. Audit whether M1 supplies a complementary cone with matching actual amplitudes, but do not infer cancellation without an exact combined formula."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-top-endpoint-transform",
+        "status": "proved_internal",
+        "reason_for_promotion": "The one-sided Poisson formula, half-weight, principal-value boundary, odd-frequency separation, stationary cone, and Vaaler-weighted error sums were derived and independently hostile-audited. The audit corrected the exact separation minimum and boundary scopes without affecting the transform.",
+        "statement_tex": "Let y=floor(sqrt X), q=X/y^2, w_end(d)=W(d/y)1_(d<=y), and let 1<=h<=H_y=floor(yX^(-1/4)) be odd. Then dist(hX/(4y^2),Z)>=1/8 for sufficiently large X, and the closest stationary point is >>y^(1/4) stationary widths from d=y. One-sided Poisson with full endpoint weight gives sum_(d<=y) W(d/y)e(hX/(4d)) = e(hX/(4y))/(1-e(hX/(4y^2))) + e(1/8)(hX)^(1/4)/2 sum_(m=ceil(h/4))^h W(sqrt(qh/(4m)))m^(-3/4)e(sqrt(Xhm)) + O_W(log(2+h)). The endpoint is O(1) on each positive dyadic h-block and for the actual two-sided real-even block; the weighted errors are O_W(log^2 H). Thus the hard endpoint is reduced to the signed affine-cone estimate M9-M2-top-endpoint-signed-cone.",
+        "dependencies_added": [
+          "M9-M2-dyadic-weight-nondegeneracy"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-top-endpoint-transform/reports/one_sided_poisson_derivation.md",
+            "rounds/codex-managed/m9-top-endpoint-transform/reports/endpoint_transform_hostile_audit.md",
+            "rounds/codex-managed/m9-top-endpoint-transform/synthesis.md"
+          ]
+        },
+        "next_action": "Prove M9-M2-top-endpoint-signed-cone. Do not use the smooth full-line transform at the affine lower edge and do not hide the principal-value endpoint term."
+      },
+      {
+        "id": "M9-M2",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M2-top-endpoint-signed-cone"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-top-endpoint-transform/reports/one_sided_poisson_derivation.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-top-endpoint-transform/reports/endpoint_transform_hostile_audit.md"
+          ]
+        },
+        "next_action": "For smooth interior blocks prove the outside-absolute small-gcd quarter-packet estimate; for the top block prove the exact signed affine-cone estimate."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round8-smooth-full-line-Poisson-on-hard-endpoint",
+        "reason": "The included integer endpoint contributes an explicit half weight and a nonzero principal-value cotangent boundary term."
+      },
+      {
+        "id": "Round8-exact-quarter-endpoint-separation",
+        "reason": "The exact minimum is 1/4-h_*(X-y^2)/(4y^2), although a fixed 1/8 lower bound holds for large X."
+      },
+      {
+        "id": "Round8-positive-whole-height-boundary-O1",
+        "reason": "An exact-square actual-coefficient family gives a sharp logarithmic positive-frequency boundary. O(1) holds dyadically and after the actual two-sided real-even pairing."
+      },
+      {
+        "id": "Round8-endpoint-separation-proves-top-M2",
+        "reason": "Endpoint separation removes a Fresnel seam but gives no cancellation in the transformed signed affine cone."
+      }
+    ],
+    "no_change": [
+      {"id":"M9-endpoint-uniformity","reason":"The top signed cone and smooth interior packet estimates remain open."},
+      {"id":"M9","reason":"M9-M2 and M9-M1 remain open."},
+      {"id":"GC-target","reason":"The final theorem remains conditional on open M9."}
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 8,
+    "idea_quality_score": 8,
+    "state_evidence_score": 9,
+    "calibration_score": 10,
+    "reason": "Round 8 closes the hard endpoint transform and all boundary/error seams, while correctly retaining the signed affine-cone estimate as the first unproved step."
+  }
+}

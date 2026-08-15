@@ -1,0 +1,62 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 10,
+    "round_type": "m1_parameter_region_attack",
+    "campaign_id": "m9-m1-frequency-phase-diagram",
+    "title": "Map and attack the M1 spatial-character frequency diagram",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "conductor_policy": {
+      "strategy_owner": "Codex conductor",
+      "subagents_may_start_next_round": false,
+      "monitoring": "Keep the actual Vaaler coefficient and spatial chi_4(d); distinguish direct, transformed, and literature-imported estimates; verify every exponent region and endpoint.",
+      "round_close": "Close only after a complete justified M1 phase diagram, a terminal/top verdict, and a primary-source applicability audit exist."
+    },
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 90,
+      "numerical_experimental_maximum_percent": 10,
+      "numerical_purpose": ["falsify an exponent inequality or exact resonance claim"],
+      "numerical_prohibition": "Numerics cannot certify an asymptotic estimate.",
+      "literature_policy": "Search primary sources for character-twisted reciprocal sums or applicable exponent-pair theorems and audit every hypothesis."
+    },
+    "target_obligations": [
+      "M9-M1",
+      "M9-M1-top-endpoint-transform",
+      "M9-M1-top-endpoint-signed-cone",
+      "M9-endpoint-uniformity",
+      "M9"
+    ],
+    "frozen_target": {
+      "block": "B_1(D,L;X)=sum_(h asymp L) Phi(h/(H_D+1))/h sum_(d asymp D) chi_4(d)w_D(d)e(hX/d), up to the fixed harmless M1 constant and conjugate frequency.",
+      "parameters": "D=X^delta, L=X^ell, 1/4<=delta<=1/2, 0<=ell<=delta-1/4.",
+      "question": "Prove B_1(D,L;X)<<_epsilon X^(1/4+epsilon) on the largest possible certified region, decide the terminal/top blocks, and isolate the smallest residual corridor.",
+      "success": "Prove M9-M1 uniformly, or enlarge its proved region and produce an exact residual corridor with a rigorously scoped next kernel."
+    },
+    "tasks": [
+      {"id":"blind_m1_phase_diagram","role":"statement_only_parameter_deriver","brief":"rounds/codex-managed/m9-m1-frequency-phase-diagram/briefs/blind_m1_phase_diagram.md"},
+      {"id":"m1_terminal_arithmetic_attack","role":"analytic_mechanism_attacker","brief":"rounds/codex-managed/m9-m1-frequency-phase-diagram/briefs/m1_terminal_arithmetic_attack.md"},
+      {"id":"m1_literature_hostile_audit","role":"primary_source_and_hostile_reviewer","brief":"rounds/codex-managed/m9-m1-frequency-phase-diagram/briefs/m1_literature_hostile_audit.md"}
+    ],
+    "exit_gates": [
+      "exact normalization and exponent phase diagram",
+      "terminal and hard-endpoint verdict",
+      "actual chi_4 and profile controls",
+      "primary-source theorem-hypothesis audit",
+      "smallest residual M1 corridor",
+      "conductor graph decision"
+    ],
+    "promotion_policy": "Promote only rigorously proved regions or exact reductions. A theorem for arbitrary coefficients, an unsigned model, or a smooth full-line endpoint does not imply the actual M1 block."
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "de423711249b9a2d4e136f52923b525a41a1e8d09239a74df92fd9c1a74ae819",
+    "generated_at": "2026-08-12T12:10:00+08:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

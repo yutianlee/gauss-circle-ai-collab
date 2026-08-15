@@ -1,0 +1,114 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-R1-physical-return-character-Abel",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Physical return and fixed-y character-Abel bound for the R1 residue",
+        "status": "proved_internal",
+        "statement_tex": "On lines a,b>0 with a/2+b<1/4, the physical symmetric-profile limit of R^ar[R_1] equals int_0^N y^(-3/4){e(sqrt(X max(1,y)))-e(sqrt(XN))} sum_j sum_q chi_4(q)q^(-1)V_j^*(2sqrt(Xy)/(D_jq))phi(y/((H_j+1)q))dy. For Q_j(y)=sqrt(Xy)/D_j, the fixed-(j,y) q-amplitude has sup norm plus sampled variation <<_W Q_j(y)^(-1), hence character Abel gives <<_W D_j/sqrt(Xy). Nonempty support forces D_j<=4sqrt(Xy), the y and geometric scale sums are O_W(1), and the restored physical contribution is O_W(X^(1/4)). This begins only after the accepted physical profile limits.",
+        "dependencies": [
+          "M9-M1-radial-endpoint-subtraction-identity",
+          "M9-M1-endpoint-Cauchy-reduction",
+          "M9-M1-upper-endpoint-character-Abel"
+        ],
+        "implies": [
+          "M9-M1-R1-arithmetic-residue"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-r1-arithmetic-residue/reports/blind_r1_residue_return.md",
+            "rounds/codex-managed/m9-m1-r1-arithmetic-residue/reports/fixed_y_character_abel.md",
+            "rounds/codex-managed/m9-m1-r1-arithmetic-residue/reports/r1_residue_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-r1-arithmetic-residue/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use only for the accepted physical profile limit; retain finite-height contour tails outside this lemma."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-R1-arithmetic-residue",
+        "status": "proved_internal",
+        "reason_for_promotion": "Three independent Round-24 derivations agree on the exact physical y-return, admissible conditional character-series order, fixed-y sampled BV, period-four Abel bound, y/scale summation, endpoint seams, and restored physical normalization.",
+        "dependencies_added": [
+          "M9-M1-R1-physical-return-character-Abel"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-r1-arithmetic-residue/reports/blind_r1_residue_return.md",
+            "rounds/codex-managed/m9-m1-r1-arithmetic-residue/reports/fixed_y_character_abel.md",
+            "rounds/codex-managed/m9-m1-r1-arithmetic-residue/reports/r1_residue_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-r1-arithmetic-residue/synthesis.md"
+          ]
+        },
+        "statement_tex": "After the accepted symmetric physical-profile limits, the recombined R_1 arithmetic residue has the exact y-integral return recorded in M9-M1-R1-physical-return-character-Abel and is O_W(1) on the normalized M1 scale. Restoring the external active-M1 factor gives O_W(X^(1/4)). The result retains all actual scales, H_j+1 floors, the one-sided top half-star, height endpoint zero, and the lower-minus-upper radial phase; it is not a uniform arbitrary-finite-top-height statement.",
+        "next_action": "Treat the recombined physical R_1 residue as target-safe and keep the two diagonal transition traces separate."
+      },
+      {
+        "id": "M9-M1-endpoint-boundary-operator",
+        "status": "proved_internal",
+        "reason_for_promotion": "The finite Cauchy reduction, both physical endpoint-prefix bounds, artificial-pole cancellation, and the recombined physical R_1 arithmetic-residue bound are now all proved with compatible normalizations and residue ledger.",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-r1-arithmetic-residue/synthesis.md"
+          ]
+        },
+        "statement_tex": "For M=1, the explicit radial endpoint boundary package is target-safe after the accepted physical profile limits. Finite Cauchy algebra returns it to the lower and upper original-sector prefixes plus the recombined R_1 arithmetic residue after the artificial-pole cancellation; the lower prefix is O(X^(1/4)log X), the upper prefix is O_W(X^(1/4)), and R^ar[R_1] is O_W(X^(1/4)) physically. This node does not include the two separate diagonal transition traces.",
+        "next_action": "Use the closed endpoint package when attacking the two remaining diagonal transition traces; do not infer arbitrary finite-top-height uniformity."
+      },
+      {
+        "id": "M9-M1-renormalized-radial-boundary-operator",
+        "status": "open",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-r1-arithmetic-residue/synthesis.md"
+          ]
+        },
+        "statement_tex": "The renormalized radial sides are removed and the entire physical endpoint/residue package is target-safe. The only unresolved parts of this operator are the two diagonal single-transition traces and their outside-height limits.",
+        "next_action": "Freeze the exact pair of diagonal transition traces and test whether their vector-Hilbert structure gives a target-sized bound after the endpoint package is removed."
+      },
+      {
+        "id": "M9-M1-swept-transition-horizontal-operator",
+        "status": "open",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-r1-arithmetic-residue/synthesis.md"
+          ]
+        },
+        "statement_tex": "In diagonal heights alpha=Im s+Im(u+v)/2 and beta=Im s-Im(u+v)/2, the renormalized radial sides, both physical endpoint prefixes, and the recombined R_1 arithmetic residue are target-safe. Prove a target-sized bound for the two remaining exact single-transition traces together with their outside-height limits and any separately retained axial residues.",
+        "next_action": "Derive a common finite formula for the positive and negative diagonal transition traces after subtracting every accepted endpoint/residue term, then seek a vector-Hilbert or signed character-Abel estimate."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round24-R1-character-Abel-uniform-for-finite-top-Mellin-height",
+        "reason": "Before the physical top-profile limit, the finite inverse Mellin profile has noncompact logarithmic tails and the compact-support sampled-BV lemma does not apply uniformly."
+      },
+      {
+        "id": "Round24-R1-character-Abel-proves-unsigned-residue-bound",
+        "reason": "Without bounded partial sums of chi_4, a q-asymp-Q block has Q terms of size Q^(-1), losing the inverse-support-length gain and retaining normalized N_X^(1/4)-type capacity."
+      }
+    ],
+    "no_change": [
+      {"id":"M9-M1-post-FE-vector-kernel","reason":"Both diagonal transition traces remain open."},
+      {"id":"M9-M1-global-angular-radial-estimate","reason":"The residue return is a separate main term and does not estimate GAR."},
+      {"id":"M9-M1","reason":"The residual direct M1 corridor and diagonal post-FE transition traces remain open."},
+      {"id":"M9-M2","reason":"Round 24 concerns a transformed M1 residue."},
+      {"id":"M9","reason":"M9-M1 and M9-M2 remain open."},
+      {"id":"GC-target","reason":"No unconditional Gauss-circle target estimate is claimed."}
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 9,
+    "idea_quality_score": 9,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 24 exactly returns and closes the recombined R_1 arithmetic residue at physical target size, completing the radial endpoint/residue package while leaving the genuinely vector-valued transition traces and all theorem-level targets open."
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-beta-compact-sixteen-stratum-selector-table",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Exact selector and ownership table for the beta compact cell",
+        "status": "open",
+        "statement_tex": "Starting from the accepted finite product Cauchy--Green ledger and fixed-w endpoint-free operator, expand every compact beta double-bounded stratum. For each row record its orientation, coefficient and contour measure, central/large-alpha recombination, terminal or routed status, named singular/smooth amplitude type, exact j=0 or j>=1 selector and physical profile, floors and stars, collision/corner convention, boundary-module exclusion, and unique external-normalization owner. The surviving mixed beta connector (1/4)A_u A_v[psi''(beta)Q_T] must appear explicitly. The table must prove equality with the actual post-routing compact remainder, not only membership in an abstract finite analytic class.",
+        "dependencies": [
+          "M9-M1-beta-complete-axial-connector-ledger",
+          "M9-M1-beta-global-aggregate-physical-module-routing",
+          "M9-M1-beta-mask-endpoint-axial-compatibility",
+          "M9-M1-beta-hierarchical-radial-split-identity"
+        ],
+        "implies": [
+          "M9-M1-beta-double-bounded-cell-bound"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-complete-axial-connector-ledger/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-double-bounded-explicit-validation/reports/connector_family_line_audit.md",
+            "rounds/codex-managed/m9-m1-beta-double-bounded-explicit-validation/reports/hostile_compact_assembly_audit.md",
+            "rounds/codex-managed/m9-m1-beta-double-bounded-explicit-validation/reviews/conductor_ownership_table_gap.md",
+            "rounds/codex-managed/m9-m1-beta-double-bounded-explicit-validation/synthesis.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Derive a finite row-by-row table from the accepted sixteen-stratum product identity, including beta mixed connectors and exact physical j-selectors, then subject the table to strict isolated and hostile audits."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-beta-double-bounded-cell-bound",
+        "statement_tex": "For the exact beta-owned compact cell Theta_db=psi(beta)chi_0(alpha), on the full actual contour 0<=a with a+b<1/2 and a/2+b<1/4, prove sup_x(|A(x)|+x|A'(x)|)=O_epsilon(X^epsilon). The corrected abstract finite-family estimate is polylogarithmic when multiplier x-derivatives, the j=0 hard and regular top selectors, the j>=1 interior selectors, signed Plemelj functional, exact floors/stars, and profile seminorms are included. Promotion still requires an exact row-by-row equality between that family and the actual post-routing compact operator plus a strict statement-only rederivation; the Round-43 isolated report was contaminated and the schematic packet omitted both the lower contour condition and the ownership table.",
+        "dependencies_added": [
+          "M9-M1-beta-compact-sixteen-stratum-selector-table"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-double-bounded-explicit-validation/reviews/conductor_abstract_amplitude_adjudication.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-m1-beta-double-bounded-explicit-validation/reports/connector_family_line_audit.md",
+            "rounds/codex-managed/m9-m1-beta-double-bounded-explicit-validation/reports/hostile_compact_assembly_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-double-bounded-explicit-validation/reports/replacement_strict_amplitude.md",
+            "rounds/codex-managed/m9-m1-beta-double-bounded-explicit-validation/reviews/conductor_selector_and_contour_correction.md",
+            "rounds/codex-managed/m9-m1-beta-double-bounded-explicit-validation/reviews/conductor_ownership_table_gap.md",
+            "rounds/codex-managed/m9-m1-beta-double-bounded-explicit-validation/synthesis.md"
+          ]
+        },
+        "next_action": "Construct the exact compact selector/ownership table, correct the contour and j-selectors in the packet, and obtain a genuinely isolated analytic proof before promotion."
+      },
+      {
+        "id": "M9-M1-beta-transition-connector-reduction",
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-m1-beta-double-bounded-explicit-validation/reports/connector_family_line_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-double-bounded-explicit-validation/synthesis.md"
+          ]
+        },
+        "next_action": "Close the exact compact selector/ownership table and double-bounded cell, then compose with the proved large-alpha package. The alpha-bounded zeta-high branch remains separate."
+      },
+      {
+        "id": "M9-M1-beta-complete-physical-height-symbol-bound",
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-m1-beta-double-bounded-explicit-validation/reports/hostile_compact_assembly_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-double-bounded-explicit-validation/synthesis.md"
+          ]
+        },
+        "next_action": "Validate the corrected actual compact selector/ownership family and its strict isolated estimate; the large-alpha interfaces remain closed."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round43-upper-contour-inequalities-imply-absolute-coefficient-and-scale-sums",
+        "reason": "The packet's two upper inequalities admit negative a. Then p can be at most one, or the bottom active dyadic block can have polynomial weight. The actual contour has a>=0 and avoids this defect."
+      },
+      {
+        "id": "Round43-one-smooth-profile-valid-for-all-j",
+        "reason": "The physical decomposition has a j=0 regular-top profile and separate j>=1 interior profiles. Their estimates agree, but omitting selectors makes the one-count identity false."
+      },
+      {
+        "id": "Round43-abstract-finite-family-is-an-actual-one-count-operator",
+        "reason": "Uniform finite cardinality and admissible seminorms prove only a class estimate. They do not map the sixteen product-Cauchy--Green strata, coefficients, measures, stars, collisions, and routed modules into named types."
+      },
+      {
+        "id": "Round43-central-alpha-cancellation-deletes-beta-mixed-connector",
+        "reason": "Central/complementary alpha recombination cancels chi_0' and chi_0'' terms but leaves (1/4)A_uA_v[psi''(beta)Q_T], which needs explicit compact ownership."
+      },
+      {
+        "id": "Round43-contaminated-independent-report-satisfies-strict-statement-only-gate",
+        "reason": "The assigned validator disclosed proof-graph exposure. Its derivation is useful independent evidence but cannot count as the protocol's isolated rederivation."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "The beta double-bounded cell and alpha-bounded branch remain open."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1 and M9-M2 remain open."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 9,
+    "calibration_score": 10,
+    "reason": "The abstract compact estimate is repaired and the actual obstruction is narrowed to an explicit, finite selector/ownership certificate. No target claim is promoted without the failed isolation and one-count gates."
+  }
+}

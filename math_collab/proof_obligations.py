@@ -49,6 +49,7 @@ class PatchResult:
     applied: bool
     created: list[str]
     updated: list[str]
+    corrected_rejected: list[str]
     rejected: list[str]
     no_change: list[str]
     messages: list[str]
@@ -231,7 +232,7 @@ def _patch_ops(patch: dict[str, Any]) -> dict[str, list[Any]]:
     if not isinstance(proof_patch, dict):
         raise ValueError("State patch must contain a proof_obligations mapping")
     ops: dict[str, list[Any]] = {}
-    for key in ("create", "update", "reject", "no_change"):
+    for key in ("create", "update", "correct_rejected", "reject", "no_change"):
         ops[key] = _normalize_list(proof_patch.get(key, []))
     return ops
 
@@ -281,6 +282,21 @@ def validate_patch_against_graph(graph: dict[str, Any], patch: dict[str, Any]) -
             if not _has_new_evidence(item):
                 issues.append(f"{obligation_id}: promotion requires evidence_added or evidence")
 
+    rejected_by_id = {
+        item.get("id"): item
+        for item in graph.get("rejected_claims", [])
+        if isinstance(item, dict) and isinstance(item.get("id"), str)
+    }
+    for item in ops["correct_rejected"]:
+        if not isinstance(item, dict):
+            issues.append("correct_rejected entries must be mappings")
+            continue
+        claim_id = item.get("id")
+        if claim_id not in rejected_by_id:
+            issues.append(f"correct_rejected entry references unknown claim: {claim_id}")
+        if not str(item.get("reason", "")).strip():
+            issues.append(f"{claim_id}: corrected rejected claim requires reason")
+
     for key in ("reject", "no_change"):
         for item in ops[key]:
             if isinstance(item, str):
@@ -318,6 +334,7 @@ def apply_state_patch(
 
     created: list[str] = []
     updated: list[str] = []
+    corrected_rejected: list[str] = []
     rejected: list[str] = []
     no_change: list[str] = []
     timestamp = datetime.now().isoformat(timespec="seconds")
@@ -369,6 +386,34 @@ def apply_state_patch(
         obligation["last_updated_at"] = timestamp
         updated.append(item["id"])
 
+    rejected_claims = updated_graph.setdefault("rejected_claims", [])
+    if not isinstance(rejected_claims, list):
+        rejected_claims = []
+        updated_graph["rejected_claims"] = rejected_claims
+    rejected_by_id = {
+        item.get("id"): item
+        for item in rejected_claims
+        if isinstance(item, dict) and isinstance(item.get("id"), str)
+    }
+    for item in ops["correct_rejected"]:
+        claim = rejected_by_id[item["id"]]
+        for key, value in item.items():
+            if key == "id":
+                continue
+            if key.endswith("_added"):
+                target_key = key[: -len("_added")]
+                current = claim.setdefault(target_key, [])
+                if not isinstance(current, list):
+                    current = _normalize_list(current)
+                    claim[target_key] = current
+                _append_unique(current, value)
+            else:
+                claim[key] = copy.deepcopy(value)
+        if round_index is not None:
+            claim["last_updated_round"] = round_index
+        claim["last_updated_at"] = timestamp
+        corrected_rejected.append(item["id"])
+
     for item in ops["reject"]:
         obligation_id = item if isinstance(item, str) else item.get("id")
         if obligation_id not in by_id:
@@ -415,6 +460,7 @@ def apply_state_patch(
         applied=True,
         created=created,
         updated=updated,
+        corrected_rejected=corrected_rejected,
         rejected=rejected,
         no_change=no_change,
         messages=messages,
@@ -450,6 +496,8 @@ def patch_result_summary(result: PatchResult | None) -> str:
         parts.append(f"created: {', '.join(result.created)}")
     if result.updated:
         parts.append(f"updated: {', '.join(result.updated)}")
+    if result.corrected_rejected:
+        parts.append(f"corrected_rejected: {', '.join(result.corrected_rejected)}")
     if result.rejected:
         parts.append(f"rejected: {', '.join(result.rejected)}")
     if result.no_change:
@@ -486,9 +534,9 @@ def generate_reading_packet(
     graph: dict[str, Any],
     *,
     run_id: str,
-    round_index: int,
+    round_index: int | None,
     patch_summary: str,
-    next_round_prompts_path: str = "state/next_round_prompts.md",
+    next_round_prompts_path: str = "state/next_campaign.md",
 ) -> str:
     by_id = obligation_index(graph)
     selection = graph.get("round_selection", {}) if isinstance(graph.get("round_selection"), dict) else {}
@@ -496,10 +544,15 @@ def generate_reading_packet(
     route = by_id.get("Conditional-bridge", {})
     m9 = by_id.get("M9", {})
 
+    provenance_line = (
+        f"Generated for active campaign `{run_id}`."
+        if round_index is None
+        else f"Generated after legacy round {round_index} in run `{run_id}`."
+    )
     lines = [
         "# Reading Packet",
         "",
-        f"Generated after round {round_index} in run `{run_id}`.",
+        provenance_line,
         "",
         "## Current Theorem Target",
         "",
@@ -525,14 +578,15 @@ def generate_reading_packet(
         status = blocker_item.get("status", "unknown")
         lines.append(f"- `{blocker}` ({status}): {title}")
 
-    lines.extend(["", "## Round Target Obligations", ""])
+    lines.extend(["", "## Selected Target Obligations", ""])
     for obligation_id in targets:
         item = by_id.get(obligation_id)
         if not item:
             lines.append(f"- `{obligation_id}`: missing from graph")
             continue
+        legacy_owner = item.get("owner", "unassigned")
         lines.append(
-            f"- `{obligation_id}` ({item.get('status')}, owner `{item.get('owner', 'unassigned')}`): {item.get('title')}"
+            f"- `{obligation_id}` ({item.get('status')}, historical steward `{legacy_owner}`): {item.get('title')}"
         )
         lines.append(f"  Next action: {item.get('next_action', 'none recorded')}")
 
@@ -546,20 +600,33 @@ def generate_reading_packet(
             "- Do not use Li-Yang, Vaaler, Huxley, or Bourgain-Watt as theorem dependencies without completed source cards.",
             "- Do not promote a claim without exact statement, dependencies, evidence, and remaining caveats.",
             "",
-            "## Agent Assignments",
+            "## Active Subagent Campaign",
             "",
-            f"Use `{next_round_prompts_path}` for any judge-assigned A1/A2/A3/A4 tasks.",
+            f"Use `{next_round_prompts_path}` and `state/active_campaign.yml` for current task briefs.",
             "",
-            "Default target split:",
-            "- `A1`: synthesis, proof-draft maintenance, source-card discipline, and State Patch authoring.",
-            "- `A2`: conservative obstruction analysis for the selected M9 obligations.",
-            "- `A3`: executable diagnostics or source-card artifacts, not prose-only plans.",
-            "- `A4`: independent analytic proof-surgery for narrow sublemmas and route repair.",
+            "Campaign rules:",
+            "- Codex is the persistent coordinator and the only writer of shared proof state.",
+            "- Temporary subagents receive narrow, context-isolated briefs selected by mathematical interface.",
+            "- Use at most three concurrent subagents; use functional roles rather than permanent identities.",
+            "- Do not vote. Validate the smallest candidate kernel by seam and blind rederivation.",
+            "- A rigorous no-go result is useful progress.",
+            "",
+            "Diagnostic execution policy:",
+            "- Computation is `diagnostic_only` and must include exact code, runtime output, parameters, pass/fail criteria, and limitations.",
+            "- The coordinator must reproduce important diagnostics locally before they count as positive diagnostic evidence.",
+            "- Passing numerics cannot promote an asymptotic claim; a failed control may reject one.",
             "",
             "## Relevant Files",
             "",
             "- `state/proof_obligations.yml`",
-            "- `state/next_round_prompts.md`",
+            "- `state/project_summary.md`",
+            "- `state/active_campaign.yml`",
+            "- `state/current_round.md`",
+            "- `state/round_ledger.yml`",
+            "- `state/next_campaign.md`",
+            "- `state/failure_ledger.md`",
+            "- `state/control_models.md`",
+            "- `state/validation_matrix.yml`",
             "- `state/best_proof_draft.md`",
             "- `sources/vaaler_1985.md`",
             "- `sources/li_yang_2023.md`",
@@ -579,7 +646,7 @@ def generate_reading_packet(
         lines.append("")
         lines.append(f"- Status: `{item.get('status')}`")
         lines.append(f"- Track: `{item.get('track')}`")
-        lines.append(f"- Owner: `{item.get('owner', 'unassigned')}`")
+        lines.append(f"- Historical steward: `{item.get('owner', 'unassigned')}` (non-binding)")
         blockers = item.get("blockers", [])
         if blockers:
             lines.append(f"- Blockers: {', '.join(f'`{blocker}`' for blocker in blockers)}")

@@ -1,0 +1,138 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-direct-product-wavelet-self-return",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Direct square-root-product bilinear Poisson return",
+        "status": "proved_internal",
+        "statement_tex": "Let J=sqrt(X), T=J/Q, 1<<Q<=J^(1-delta), beta be fixed smooth compactly supported, Xi be fixed smooth compactly supported in (0,1), and C(y)=y^(3/4)Xi(2sqrt(y)). On a fixed positive ratio sector inside q>4k, T_Q=sum_(k,q odd)chi_4(q)beta(k/Q)C(k/q)e(sqrt(Xkq)) has a coefficient-preserving two-dimensional character-Poisson stationary expansion whose principal returned wavelet is W_Q=sum_(m>J)sum_(r<J odd)chi_4(r)Xi(J/m)K_beta((m/J)(X-mr)/T), with fixed ratio restrictions, and T_Q=e(1/8)Q^(3/2)J^(-1/2)W_Q+O((QJ)^(-1/2)X^epsilon). Every correction has the same Schwartz product localization. Hence T_Q<<Q^(3/2)J^(-1/2)(1+J/Q)X^epsilon. At Q=X^(1/5) this is X^(7/20+epsilon), while the target X^(3/10+epsilon) is equivalent to the still-open signed bound W_Q<<J^(1/2)X^epsilon and needs the factor J^(1/2)/Q=X^(1/20) beyond absolute counting. The two-dimensional Hessian determinant is zero, exact products and perfect-power fibres are subtarget, and the statement is fixed-smooth-interior only.",
+        "dependencies": [
+          "M9-M1-reciprocal-product-wavelet-reduction",
+          "M9-M1-square-root-product-energy-involution"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-direct-square-root-product-bilinear/reports/blind_direct_bilinear_rederivation.md",
+            "rounds/codex-managed/m9-m1-direct-square-root-product-bilinear/reports/conductor_two_dimensional_poisson_return.md",
+            "rounds/codex-managed/m9-m1-direct-square-root-product-bilinear/reports/direct_product_bilinear_attack.md",
+            "rounds/codex-managed/m9-m1-direct-square-root-product-bilinear/reports/direct_bilinear_source_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-direct-square-root-product-bilinear/reviews/conductor_direct_bilinear_adjudication.md",
+            "rounds/codex-managed/m9-m1-direct-square-root-product-bilinear/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Prove the exact signed fixed-centre product-wavelet bound W_Q<<J^(1/2)X^epsilon without repeating Poisson, Cauchy, or completion to the full r_2 coefficient; alternatively pivot to an independent unresolved bridge obligation."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "dependencies_added": [
+          "M9-M1-direct-product-wavelet-self-return"
+        ],
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-m1-direct-square-root-product-bilinear/reports/direct_bilinear_source_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-direct-square-root-product-bilinear/synthesis.md"
+          ]
+        },
+        "next_action": "The direct form improves the benchmark exponent to 7/20 but returns to the same fixed-centre signed product wavelet. Prove its X^(1/20) cancellation, or move to an independent blocker rather than repeat a transform loop."
+      },
+      {
+        "id": "M9-M1-shifted-divisor-correlation-PSC",
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-m1-direct-square-root-product-bilinear/reports/direct_bilinear_source_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-direct-square-root-product-bilinear/synthesis.md"
+          ]
+        },
+        "next_action": "The direct two-dimensional transform is a fixed-centre product-wavelet return with the same H/L deficit. A new signed near-product theorem is required; product grouping and another Poisson transform are circular."
+      },
+      {
+        "id": "M9-M1-reciprocal-product-wavelet-reduction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-direct-square-root-product-bilinear/reports/direct_product_bilinear_attack.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-direct-square-root-product-bilinear/synthesis.md"
+          ]
+        },
+        "next_action": "The direct pre-Cauchy form and two-dimensional Poisson independently return to this fixed-centre product wavelet. Only genuine signed near-product cancellation can improve the X^(7/20) direct bound."
+      },
+      {
+        "id": "M9-M1-square-root-product-energy-involution",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-direct-square-root-product-bilinear/reports/blind_direct_bilinear_rederivation.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-direct-square-root-product-bilinear/synthesis.md"
+          ]
+        },
+        "next_action": "Neither the lossless energy involution nor the weaker direct Poisson return closes the target. Do not repeat these transforms; isolate a genuinely new signed fixed-centre input."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round69-direct-two-dimensional-Poisson-closes-target",
+        "reason": "The exact transform returns a length-J/Q fixed-centre product wavelet and gives only X^(7/20+epsilon) at Q=X^(1/5), missing X^(1/20)."
+      },
+      {
+        "id": "Round69-nondegenerate-Hessian-bilinear-closure",
+        "reason": "The Hessian determinant of sqrt(Xkq) is identically zero by degree-one homogeneity; its dual aliases form the near-hyperbola mr=X+O(J/Q)."
+      },
+      {
+        "id": "Round69-product-grouping-or-Cauchy-closes-direct-form",
+        "reason": "Product grouping gives Q^2 capacity, while Cauchy invokes the stronger unresolved Q^2 energy theorem. Neither proves the Q^(3/2) direct target."
+      },
+      {
+        "id": "Round69-Kumchev-Sargos-Wu-closes-direct-form",
+        "reason": "The applicable published bilinear monomial bound contains an exactly trivial X^(2/5) term and therefore does not improve the direct form to X^(3/10)."
+      },
+      {
+        "id": "Round69-Robert-Sargos-FI-method-closes-direct-form",
+        "reason": "The lawful singleton mapping has an X^(17/40) term, worse than trivial; the methodological analogy cannot delete it."
+      },
+      {
+        "id": "Round69-TTY-rowwise-closes-direct-form",
+        "reason": "The best audited current exponent pair gives X^(0.388883...+epsilon), above both the X^(7/20) Poisson bound and the X^(3/10) target."
+      },
+      {
+        "id": "Round69-perfect-powers-refute-direct-target",
+        "reason": "All square-product rays have only O(Q^(1+epsilon)) capacity and fourth-power fibres are smaller, below the Q^(3/2) target."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "The signed product-wavelet estimate, cone edges, remaining radial sectors, and endpoint completion remain open."
+      },
+      {
+        "id": "M9",
+        "reason": "Both M9-M1 and M9-M2 remain open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "Round 69 improves one fixed-interior benchmark bound but does not prove the conjectural exponent."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 9,
+    "calibration_score": 10,
+    "reason": "Round 69 proves a strict X^(7/20) direct fixed-interior bound and an exact coefficient-preserving return to the signed near-product wavelet, isolates the remaining X^(1/20) factor, and rules out several source and transform shortcuts without changing the final exponent."
+  }
+}

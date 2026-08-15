@@ -1,0 +1,188 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-beta-finite-endpoint-free-Plemelj-vector",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Finite endpoint-free beta vector and fixed-box Plemelj realization",
+        "status": "proved_internal",
+        "statement_tex": "On one common fixed-w finite antecedent define V_ef_fin=V_pre_fin-M_fin, where M_fin is the globally routed endpoint plus recombined R1 arithmetic module. Under common artificial-pole ownership, V_ef_fin=T[R1]+S[R1]+P_rho[R1]. Compact beta support deletes the complete transferred S[R1] vector for S>(U+V)/2+2B0. The remaining terminal/artificial package has exactly sixteen product Cauchy--Green cells: four boundary products, four boundary-axis terms, one corner, four connector-boundary terms, two connector-axis terms, and one mixed psi''/4 area, with one combined collision coefficient. At every fixed U,V,S its hard-top limit is the signed normalized distribution (1/2)delta_0-(i/(2pi))PV(1/mu), and the induced moving-face logarithms are locally integrable. No outside-height/profile limit or symbol estimate is asserted.",
+        "dependencies": [
+          "M9-M1-beta-finite-prelimit-axial-vector-ledger",
+          "M9-M1-beta-axial-transfer-module-limit-commutation",
+          "M9-M1-beta-finite-two-axis-product-Cauchy-Green",
+          "M9-M1-beta-compact-support-radial-side-annihilation"
+        ],
+        "implies": [
+          "M9-M1-beta-endpoint-free-axial-Cauchy-tail"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-endpoint-free-axial-limit/reports/blind_endpoint_free_limit_identity.md",
+            "rounds/codex-managed/m9-m1-beta-endpoint-free-axial-limit/reports/endpoint_free_axial_limit_attack.md",
+            "rounds/codex-managed/m9-m1-beta-endpoint-free-axial-limit/reports/endpoint_free_limit_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-endpoint-free-axial-limit/reviews/conductor_remainder_operator_definition.md",
+            "rounds/codex-managed/m9-m1-beta-endpoint-free-axial-limit/reviews/conductor_exhaustion_order.md",
+            "rounds/codex-managed/m9-m1-beta-endpoint-free-axial-limit/reviews/conductor_tail_reduction_check.md",
+            "rounds/codex-managed/m9-m1-beta-endpoint-free-axial-limit/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use this only at fixed boxes and then prove the separate complete positive-line Cauchy tail; do not infer a global physical limit or terminal symbol bound."
+      },
+      {
+        "id": "M9-M1-beta-endpoint-free-axial-Cauchy-tail",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Complete actual-profile Cauchy tail for the endpoint-free beta vector",
+        "status": "open",
+        "statement_tex": "Let F_ef(b;U,S;nu) be the complete positive-b, fixed-w, endpoint-free density obtained after the fixed-box signed top Plemelj limit and finite Stokes recombination, with every actual profile, floor, character, collision convention, and external normalization retained. Prove that the signed tail integral over V1<|nu|<=V2 tends to zero uniformly along the prescribed symmetric U,V,S and physical-profile exhaustion, equivalently J_ef(2H,2H)-J_ef(H,H) tends to zero for the exact polytope-aware Plemelj functional. A sufficient stronger statement is an integrable uniform nu-majorant for the top value, its mu-difference quotient, and the regular u integral. No lambda-symbol or target-size estimate is included.",
+        "dependencies": [
+          "M9-M1-beta-finite-endpoint-free-Plemelj-vector"
+        ],
+        "implies": [
+          "M9-M1-beta-endpoint-free-axial-remainder-limit"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-endpoint-free-axial-limit/reports/endpoint_free_axial_limit_attack.md",
+            "rounds/codex-managed/m9-m1-beta-endpoint-free-axial-limit/reviews/conductor_tail_reduction_check.md",
+            "rounds/codex-managed/m9-m1-beta-endpoint-free-axial-limit/synthesis.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-m1-beta-endpoint-free-axial-limit/reports/endpoint_free_limit_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-endpoint-free-axial-limit/reports/blind_endpoint_free_limit_identity.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "In beta-slab coordinates t=(mu+nu)/2+beta, derive the exact joint large-height asymptotic of the complete omega-recombined positive-line density and prove its signed Cauchy tail or a uniform difference-quotient majorant."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-beta-endpoint-free-axial-remainder-limit",
+        "status": "open",
+        "statement_tex": "The fixed-w finite complement V_ef_fin=V_pre_fin-M_fin, its complete sixteen-cell inventory, radial-side deletion, and fixed-box signed Plemelj realization are proved. Its unique symmetric outside-height and physical-profile limit is equivalent to the complete actual positive-b Cauchy-tail criterion for F_ef(b;U,S;nu), with all moving faces, axes, connectors, collision germs, profiles, floors, character factors, and external normalization retained. Prove that tail criterion before defining the limiting endpoint-free connector-completed beta axial vector. No target-size or terminal-symbol estimate is included.",
+        "dependencies_added": [
+          "M9-M1-beta-finite-endpoint-free-Plemelj-vector",
+          "M9-M1-beta-endpoint-free-axial-Cauchy-tail"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-endpoint-free-axial-limit/reports/blind_endpoint_free_limit_identity.md",
+            "rounds/codex-managed/m9-m1-beta-endpoint-free-axial-limit/reports/endpoint_free_axial_limit_attack.md",
+            "rounds/codex-managed/m9-m1-beta-endpoint-free-axial-limit/reviews/conductor_remainder_operator_definition.md",
+            "rounds/codex-managed/m9-m1-beta-endpoint-free-axial-limit/reviews/conductor_tail_reduction_check.md",
+            "rounds/codex-managed/m9-m1-beta-endpoint-free-axial-limit/synthesis.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-m1-beta-endpoint-free-axial-limit/reports/endpoint_free_limit_hostile_audit.md"
+          ],
+          "inconclusive": []
+        },
+        "next_action": "Prove the complete signed positive-b Cauchy-tail lemma uniformly along the actual profile exhaustion; finite Plemelj and local moving-log control alone are insufficient."
+      },
+      {
+        "id": "M9-M1-beta-complete-axial-connector-ledger",
+        "status": "open",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-endpoint-free-axial-limit/synthesis.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-endpoint-free-axial-limit/reports/endpoint_free_limit_hostile_audit.md"
+          ]
+        },
+        "next_action": "The finite post-module ledger is closed. Await the complete actual-profile Cauchy tail before defining its limiting physical axial vector."
+      },
+      {
+        "id": "M9-M1-beta-mask-endpoint-axial-compatibility",
+        "status": "open",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-endpoint-free-axial-limit/synthesis.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-endpoint-free-axial-limit/reports/endpoint_free_limit_hostile_audit.md"
+          ]
+        },
+        "next_action": "Treat finite compatibility as proved; global compatibility still waits on the endpoint-free actual-profile Cauchy tail."
+      },
+      {
+        "id": "M9-M1-beta-axial-subtracted-terminal-symbol-bound",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M1-beta-endpoint-free-axial-Cauchy-tail"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-endpoint-free-axial-limit/synthesis.md"
+          ]
+        },
+        "next_action": "Wait for the complete endpoint-free Cauchy tail and limiting axial vector before defining the local axial-subtracted terminal symbol."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round37-finite-Plemelj-implies-global-height-limit",
+        "reason": "A bounded smooth counterfunctional has a valid signed Plemelj limit on every finite box but distinct subsequential symmetric outside-height limits; the actual kernel therefore needs an additional uniform tail theorem."
+      },
+      {
+        "id": "Round37-compact-beta-support-kills-outside-u-v-faces",
+        "reason": "Compact beta support kills separated radial w-sides only. On an outside u or v face, t can track (mu+nu)/2 so beta remains in the mask support."
+      },
+      {
+        "id": "Round37-v-horizontals-are-omitted-height-tails",
+        "reason": "Horizontal connectors integrate real-abscissa displacement at finite imaginary height and, together with axes and connectors, reassemble the original positive-b vertical; they are not the omitted |nu| tail."
+      },
+      {
+        "id": "Round37-local-moving-log-integrability-implies-Cauchy-exhaustion",
+        "reason": "Local logarithmic integrability controls each fixed polytope but gives no decay as its faces and saddles escape to infinity."
+      },
+      {
+        "id": "Round37-compact-mask-Fourier-decay-closes-two-tangent-height-tail",
+        "reason": "The mask Fourier transform decays in its auxiliary variable, not in both unbounded directions tangent to the beta slab; the coupled gamma/radial factors and hard-top PV difference quotient still lack a uniform integrable majorant."
+      },
+      {
+        "id": "Round37-right-chamber-absolute-series-licenses-height-limit-interchange",
+        "reason": "Absolute convergence of the coefficient series on fixed real lines justifies finite-box algebra but does not dominate the joint s,u,v height exhaustion or the physical top distribution."
+      },
+      {
+        "id": "Round37-boundary-module-removal-may-be-repeated-cellwise",
+        "reason": "The common endpoint/R1 arithmetic module is subtracted once by global finite routing. Removing endpoint prefixes, Perron tails, or arithmetic shares again from individual beta cells double counts the boundary module."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "The endpoint-free Cauchy tail, limiting axial vector, terminal symbol bound, beta transition, and residual M1 corridor remain open."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Round 37 concerns only the M1 beta axial architecture."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1 and M9-M2 remain open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "No unconditional Gauss-circle estimate is claimed."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 8,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 37 proves the exact finite endpoint-free vector and fixed-box distribution, reduces all optional cells to one complete actual positive-line Cauchy tail, and supplies a sharp generic counterfunctional showing why a new actual-kernel tail theorem is indispensable."
+  }
+}

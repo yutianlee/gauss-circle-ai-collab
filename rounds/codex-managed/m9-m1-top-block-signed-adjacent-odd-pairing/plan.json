@@ -1,0 +1,182 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 57,
+    "round_type": "signed_adjacent_odd_pairing",
+    "campaign_id": "m9-m1-top-block-signed-adjacent-odd-pairing",
+    "title": "Signed adjacent-odd pairing on the high singleton shell",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "literature_policy": "No external theorem is presumed. Audit a primary source only if a non-elementary incomplete exponential-sum estimate is imported."
+    },
+    "target_obligations": [
+      "M9-M1-global-angular-radial-estimate",
+      "M9-M1-top-block-discrete-curvature-singleton-no-go"
+    ],
+    "frozen_target": {
+      "question": "On R/4<h<=R/2, can adjacent odd denominators q and q+2 be paired before splitting chi_4 residue classes to produce the missing signed square-root window bound, including unmatched endpoints and actual amplitude differences?",
+      "reference_formula": "P_J=sum_(R/4<h<=R/2) sum_(q odd,hq in J) chi_4(q) A_X(h,q)e(sqrt(Xhq)), with Y=R^2 asymp sqrt(X), |J|<=R, and exact actual A_X.",
+      "quantities": [
+        "chi_4(q+2)=-chi_4(q)",
+        "exact q-to-q+2 phase increment",
+        "availability of both products in one window",
+        "amplitude finite difference",
+        "unmatched endpoint incidence",
+        "cross-h phase of the paired row",
+        "perfect-fourth-power coherence",
+        "unweighted sqrt(R) target"
+      ]
+    },
+    "completion_criteria": [
+      "The exact adjacent-odd pairing identity is derived without splitting residue moduli.",
+      "The geometry determining when both q and q+2 lie in the same product window is exact.",
+      "The phase increment and actual-amplitude difference are bounded or shown coherent, with floors, profiles, hard top, and stars retained.",
+      "Every unmatched endpoint is counted with its inherited full or starred weight.",
+      "The aggregate over h is target-sized sqrt(R), or a strict signed actual-profile obstruction is proved.",
+      "Perfect-fourth-power and window-alignment controls are explicit.",
+      "A clean statement-only derivation and independent hostile gate exist.",
+      "No lower-shell, GAR, alpha, M9-M1, M9, or exponent promotion occurs without its own proof."
+    ],
+    "controls": [
+      "pairing_identity",
+      "two_point_window_geometry",
+      "phase_increment",
+      "amplitude_difference",
+      "unmatched_endpoints",
+      "cross_h_aggregation",
+      "perfect_fourth_power",
+      "target_ledger",
+      "lower_shell_scope",
+      "downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "adjacent_odd_pairing_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "target": "Construct the exact signed q,q+2 pairing on the high singleton shell and prove the sqrt(R) aggregate or a strict signed obstruction.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-top-block-signed-adjacent-odd-pairing/derivation_packet.md",
+          "rounds/codex-managed/m9-m1-top-block-intermediate-h-resonance/synthesis.md",
+          "rounds/codex-managed/m9-m1-top-block-low-leg-curvature/synthesis.md",
+          "rounds/codex-managed/m9-endpoint-kernel-validation/reports/blind_profile_rederivation.md"
+        ],
+        "required_controls": [
+          "pairing_identity",
+          "two_point_window_geometry",
+          "phase_increment",
+          "amplitude_difference",
+          "unmatched_endpoints",
+          "cross_h_aggregation",
+          "perfect_fourth_power",
+          "target_ledger",
+          "lower_shell_scope",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "seven-section report",
+          "exact paired-row theorem or no-go",
+          "high-shell exponent ledger"
+        ]
+      },
+      {
+        "id": "blind_adjacent_pair_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "target": "Using only the Round-57 packet, independently derive the adjacent-odd pairing, endpoint ledger, and aggregate capacity.",
+        "context_files": [
+          "rounds/codex-managed/m9-m1-top-block-signed-adjacent-odd-pairing/derivation_packet.md"
+        ],
+        "excluded_context": [
+          "proof graph",
+          "proof draft",
+          "prior reports and syntheses",
+          "other Round-57 reports"
+        ],
+        "required_controls": [
+          "pairing_identity",
+          "two_point_window_geometry",
+          "phase_increment",
+          "amplitude_difference",
+          "unmatched_endpoints",
+          "cross_h_aggregation",
+          "perfect_fourth_power",
+          "target_ledger",
+          "lower_shell_scope",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "seven-section statement-only report",
+          "independent pairing ledger",
+          "isolation ledger"
+        ]
+      },
+      {
+        "id": "adjacent_pairing_hostile_audit",
+        "role": "seam_reviewer",
+        "access_mode": "selected_context",
+        "target": "Try to falsify adjacent-odd cancellation using high-shell window geometry, unmatched singleton owners, top plateau rows, and fourth-power phase coherence.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-top-block-signed-adjacent-odd-pairing/derivation_packet.md",
+          "rounds/codex-managed/m9-m1-top-block-intermediate-h-resonance/synthesis.md",
+          "rounds/codex-managed/m9-endpoint-kernel-validation/reports/blind_profile_rederivation.md"
+        ],
+        "required_controls": [
+          "pairing_identity",
+          "two_point_window_geometry",
+          "phase_increment",
+          "amplitude_difference",
+          "unmatched_endpoints",
+          "cross_h_aggregation",
+          "perfect_fourth_power",
+          "target_ledger",
+          "lower_shell_scope",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "seven-section hostile report",
+          "strict counterexample or certification",
+          "recommended graph effect"
+        ]
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "pair_exists",
+        "requirement": "Do not algebraically pair q and q+2 unless both products lie in the same physical window; retain unmatched rows."
+      },
+      {
+        "id": "difference_not_cancellation",
+        "requirement": "Character sign reversal converts a pair into a phase/amplitude difference, whose size must be proved rather than assumed small."
+      },
+      {
+        "id": "signed_h_sum",
+        "requirement": "Keep the aggregate over h signed; do not revert to the residuewise absolute no-go of Round 56."
+      },
+      {
+        "id": "mathematical_isolation",
+        "requirement": "The blind proof sees only the Round-57 packet and its brief."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "a460b66b30b01db14bb52d3891875f7e1a97ba2f0c73b77557eef1d60b599c0a",
+    "generated_at": "2026-08-13T18:50:03.247901+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

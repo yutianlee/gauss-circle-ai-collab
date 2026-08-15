@@ -1,0 +1,12 @@
+{
+  "round_index": 73,
+  "campaign_id": "m9-m1-residual-upper-conductor-hybrid-energy",
+  "status": "active",
+  "objective": "Combine the accepted third-derivative cell saving with exact residue/Farey-numerator or spectral cancellation on J^(32/45)<C<=J.",
+  "tasks": [
+    {"id": "hybrid_residue_energy_attack", "role": "discovery", "status": "assigned"},
+    {"id": "blind_hybrid_energy_rederivation", "role": "statement_only_blind", "status": "assigned"},
+    {"id": "hybrid_spectral_source_hostile_audit", "role": "hostile_source", "status": "assigned"}
+  ],
+  "exit_gate": "Prove the residual range, close a strict subrange, or isolate a smaller actual-symbol correlation with clean blind and hostile gates."
+}

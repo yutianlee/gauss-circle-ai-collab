@@ -1,0 +1,166 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-B1-energy-capacity-barrier",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "B1 pair-energy capacity and off-diagonal no-go",
+        "status": "proved_internal",
+        "statement_tex": "Assume the exact reduced-fraction support and B1. Then ||A_chi||_1 << D log(2H), ||A_chi||_2^2 << D, and for R_chi=A_chi*A_chi the divisor identity gives sum_r |R_chi(r)|^2 <<_epsilon D^2 X^epsilon. Rational spacing yields only the smoothed global capacity D^2 X^epsilon(1+D^4/X). Moreover, an even odd-numerator exact-support envelope model has normalized critical fat-band mass >> D^3/X-O_epsilon(X^epsilon), so B1 alone cannot imply c_chi << X^epsilon by a power for D>=X^(1/3+delta). This does not refute the actual chi_4 lift system.",
+        "dependencies": [
+          "M9-M2-signed-lift-cancellation-B1",
+          "Divisor-bound-elementary"
+        ],
+        "implies": [
+          "M9-M2-signed-fat-band-constant",
+          "M9-near-collision-estimate"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-signed-lift-capacity/reports/signed_energy_capacity.md",
+            "rounds/codex-managed/m9-signed-lift-capacity/reports/adversarial_b1_review.md",
+            "rounds/codex-managed/m9-signed-lift-capacity/reviews/conductor_independent_analysis.md",
+            "rounds/codex-managed/m9-signed-lift-capacity/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use this as a scope barrier: the next proof must establish an actual chi_4-structured off-diagonal autocorrelation theorem and must fail on the envelope adversary. Keep the global-moment to pointwise bridge separate."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-signed-lift-cancellation-B1",
+        "status": "proved_internal",
+        "statement_tex": "For A_chi(p/q)=sum_{gq in [D,2D), 1<=|gp|<=H} beta_{gp,H}w_D(gq), even p gives A_chi=0. For odd p, if the sampled odd-lift sequence has uniformly bounded chi_4-twisted discrepancy, in particular if w_D is a fixed scale-normalized BV profile or has uniform restricted-lattice BV norm, then |A_chi(p/q)| <= C/(pi|p|) min(1,q/D) <= Cq/(pi D|p|). Boundedness or unnormalized smoothness alone is insufficient. This is an individual pair-weight lemma only.",
+        "blockers_removed": ["H4-source-audit"],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-signed-lift-capacity/reports/blind_b1_rederivation.md",
+            "rounds/codex-managed/m9-signed-lift-capacity/reports/adversarial_b1_review.md",
+            "rounds/codex-managed/m9-signed-lift-capacity/reviews/conductor_independent_analysis.md",
+            "rounds/codex-managed/m9-signed-lift-capacity/synthesis.md"
+          ]
+        },
+        "reason_for_promotion": "Independent Abel-summation derivations agree after the exact odd-lift interval, parity, truncation, Phi monotonicity, and uniform twisted-discrepancy/BV hypotheses are stated. Hostile examples refute only the broader bounded-weight wording.",
+        "next_action": "Apply B1 only after the actual block profile has a verified uniform scaled-BV or twisted-discrepancy norm. Do not infer off-diagonal energy cancellation from the pointwise envelope."
+      },
+      {
+        "id": "M9-M2-dyadic-weight-nondegeneracy",
+        "statement_tex": "Specify every actual M2 denominator profile and endpoint rule. For a weighted W-1 obstruction require support in a fixed shell, H_D>=1, and sum_d |w_D(d)|>=lambda D. For B1 applications require a uniform scale-normalized BV or restricted-lattice twisted-discrepancy bound. Endpoint-truncated blocks must be merged, excluded, or verified separately.",
+        "implies_added": ["M9-M2-signed-lift-cancellation-B1"],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-signed-lift-capacity/reports/blind_b1_rederivation.md",
+            "rounds/codex-managed/m9-signed-lift-capacity/reports/adversarial_b1_review.md"
+          ]
+        },
+        "next_action": "Write the actual fixed dyadic profiles and endpoint truncation/merging rule, then verify both sampled l1 nondegeneracy and uniform scaled BV block by block."
+      },
+      {
+        "id": "M9-M2-signed-fat-band-constant",
+        "status": "proposed",
+        "statement_tex": "For the actual reduced-fraction lift coefficients set R_chi(r)=sum_{x+y=r}A_chi(x)A_chi(y). With K the Fourier transform of a fixed smooth global weight, define c_chi^V(D;X)=D^(-2) Re sum_{r not equal s} R_chi(r) conjugate(R_chi(s)) K(X(r-s)/4). Prove |c_chi^V(D;X)| <<_epsilon X^epsilon, with a graded tail or full off-diagonal estimate, at least in the sign-critical range D>=X^(1/3+delta). B1 alone is insufficient, and this global statement does not imply pointwise M9-M2 without a separate large-value or direct bridge.",
+        "dependencies_added": ["M9-M2-B1-energy-capacity-barrier"],
+        "blockers_removed": ["H4-source-audit"],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-signed-lift-capacity/reviews/conductor_independent_analysis.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-signed-lift-capacity/reports/signed_energy_capacity.md",
+            "rounds/codex-managed/m9-signed-lift-capacity/reports/adversarial_b1_review.md"
+          ]
+        },
+        "next_action": "Prove the actual chi_4-structured off-diagonal autocorrelation bound for the critical band or full graded kernel. Start with the generic single-lift region q asymp D, where B1 is sharp and complementary numerator classes must provide cancellation."
+      },
+      {
+        "id": "M9-M2-character-factor",
+        "status": "open",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-signed-lift-capacity/reports/blind_b1_rederivation.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-signed-lift-capacity/reports/signed_energy_capacity.md"
+          ]
+        },
+        "next_action": "Exploit the actual chi_4-generated correlation across numerator and denominator classes in the generic q asymp D band. B1 already uses lift-index alternation on small q but is character-blind at the energy step."
+      },
+      {
+        "id": "M9-near-collision-estimate",
+        "status": "proposed",
+        "statement_tex": "A coefficient-weighted near-collision estimate for 0<|N|~T that preserves the actual M2 chi_4 signs and is strong enough for the endpoint. Character-blind absolute control is power-obstructed for D>=X^(1/3+delta); the exact crossover D=X^(1/3) is not itself a contradiction.",
+        "dependencies_added": ["M9-M2-B1-energy-capacity-barrier"],
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-signed-lift-capacity/reports/signed_energy_capacity.md",
+            "rounds/codex-managed/m9-signed-lift-capacity/reports/adversarial_b1_review.md"
+          ]
+        },
+        "next_action": "Decompose the actual reduced-fraction support into many-lift and generic single-lift regions. Use B1 only for the former; for q asymp D prove a sign-sensitive autocorrelation or two-shift reciprocal-phase estimate."
+      },
+      {
+        "id": "M9-M2-reciprocal-SPD-route",
+        "blockers_removed": ["H4-source-audit"],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-signed-lift-capacity/reviews/conductor_literature_method_audit.md"
+          ]
+        },
+        "next_action": "Use the exact two-shift map H=L, M=D, T=X/4, F_rho(u)=u^(-1)+rho D/X. Quantify the smaller frequency blocks covered by Li-Yang and isolate the top block L asymp D X^(-1/4), which misses Case A by X^(2/41) and is excluded from Case B."
+      },
+      {
+        "id": "M9-M2-sign-preserving-poisson-voronoi-route",
+        "blockers_removed": ["H4-source-audit"],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-signed-lift-capacity/reviews/conductor_literature_method_audit.md"
+          ]
+        },
+        "next_action": "Preserve the exact rho=1,3 phase difference through any transform. Supply a full smooth stationary-phase formula and a post-transform signed estimate for the top frequency block rather than importing an inapplicable height-range theorem."
+      },
+      {
+        "id": "Li-Yang-source-audit",
+        "status": "source_audit_required",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-signed-lift-capacity/reviews/conductor_literature_method_audit.md"
+          ]
+        },
+        "next_action": "Complete the source card from the rendered primary PDF, including all Case A/B hypotheses and auxiliary parameters. The exact M2 phase map and top-height non-applicability are already recorded, but no theorem dependency is licensed."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round3-bounded-weight-B1",
+        "reason": "Arbitrary bounded, and even smooth but unnormalized, weights can match chi_4 on an active lift progression and make A_chi(1/q) of order one while q/D tends to zero."
+      },
+      {
+        "id": "Round3-B1-implies-signed-fat-band",
+        "reason": "An exact-support even odd-numerator envelope model satisfies B1 but has normalized critical fat-band size of order D^3/X above the X^(1/3) crossover."
+      },
+      {
+        "id": "Round3-global-moment-implies-pointwise-M2",
+        "reason": "The accepted derivative propagation from a global fourth moment yields only D^(3/5)X^(3/20+epsilon), which is X^(9/20+epsilon) at D=X^(1/2)."
+      }
+    ],
+    "no_change": [
+      {"id": "M9-M2", "reason": "No actual signed off-diagonal theorem or pointwise endpoint estimate was proved."},
+      {"id": "M9-M1", "reason": "No M1 estimate was attempted."},
+      {"id": "M9", "reason": "Both reciprocal main sums are not uniformly closed."},
+      {"id": "M9-endpoint-uniformity", "reason": "The top frequency and pointwise endpoint gaps remain open."},
+      {"id": "GC-target", "reason": "The final theorem remains conditional on open M9."}
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 8,
+    "idea_quality_score": 9,
+    "state_evidence_score": 9,
+    "calibration_score": 9,
+    "reason": "Round 3 proves the exact B1 lemma under sharp hypotheses, derives the exact signed global normalization and a D^2 X^epsilon pair-energy bound, and rigorously shows that the B1 envelope cannot supply the needed upper-range off-diagonal cancellation. It identifies the actual chi_4 autocorrelation and top-height two-shift block as the next interface without promoting M9-M2."
+  }
+}

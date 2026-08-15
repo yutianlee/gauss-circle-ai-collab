@@ -1,0 +1,222 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-angular-double-Mellin-separation",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Exact double-Mellin separation of the M1 angular coefficient",
+        "status": "proved_internal",
+        "statement_tex": "With z=u+v, tau_(chi4,z)(n)=sum_(hq=n)chi_4(q)h^(-z), and R_X(u,v)=sum_(n<=16sqrt X)tau_(chi4,u+v)(n)n^(-3/4+u/2)e(sqrt(Xn)), every interior active M1 scale is the exact double Mellin integral of W_hat(u)phi_hat(v)(D_j/(2sqrt X))^u(H_j+1)^v R_X(u,v). Floors, odd q, product cutoff, and endpoint stars are retained. The hard top has W_+hat(u)=1/u-(1/u)int_0^1 W'(t)t^u dt; symmetric inversion gives the endpoint half weight, while the 1/u term requires a maximal Perron estimate. Moreover sum_n tau_(chi4,z)(n)n^(-s)=zeta(s+z)L(s,chi_4) for Re s>1 and Re(s+z)>1.",
+        "dependencies": [
+          "M9-M1-global-angular-recombination"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-angular-mellin-separation/reports/blind_double_mellin_derivation.md",
+            "rounds/codex-managed/m9-m1-angular-mellin-separation/reports/twisted_divisor_radial_attack.md",
+            "rounds/codex-managed/m9-m1-angular-mellin-separation/reports/mellin_voronoi_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m1-angular-mellin-separation/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use the centered angular modes and retain the top 1/u Perron term as a separate maximal-estimate obligation."
+      },
+      {
+        "id": "M9-M1-centered-angular-functional-equation",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Centered twisted-divisor functional equation and angular reflection",
+        "status": "proved_internal",
+        "statement_tex": "Let a_z(n)=n^(z/2)tau_(chi4,z)(n)=sum_(hq=n)chi_4(q)(q/h)^(z/2) and F_z(s)=zeta(s+z/2)L(s-z/2,chi_4). The completion Lambda_z(s)=pi^(-(s+z/2)/2)Gamma((s+z/2)/2)(4/pi)^((s-z/2+1)/2)Gamma((s-z/2+1)/2)F_z(s) has conductor 4, root number +1, and satisfies Lambda_z(s)=Lambda_(-z)(1-s). Thus Voronoi duality reflects a_z to a_(-z). In the Round-15 radial sum, R_X(u,v)=sum_(n<=16sqrt X)a_(u+v)(n)n^(-3/4-v/2)e(sqrt(Xn)); the spatial Mellin variable leaves the radial power exactly.",
+        "dependencies": [
+          "M9-M1-angular-double-Mellin-separation"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-angular-mellin-separation/reports/twisted_divisor_radial_attack.md",
+            "rounds/codex-managed/m9-m1-angular-mellin-separation/reports/mellin_voronoi_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m1-angular-mellin-separation/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Test cancellation between the actual z and reflected -z sectors before taking absolute values over Mellin modes."
+      },
+      {
+        "id": "M9-M1-angular-Voronoi-return-map-no-go",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Fixed-mode Voronoi is an angular reflection, not a GAR bound",
+        "status": "proved_internal",
+        "statement_tex": "The centered functional equation maps a_z to a_(-z), reversing the divisor angle rather than removing it. At z=0 it is the full r_2/4 Hardy--Voronoi return. Existing fixed-parameter Voronoi identities do not provide estimates uniform in the two Mellin heights, and cannot be integrated through the hard top 1/u Perron mode by pointwise bounds alone. Therefore the functional equation by itself proves neither GAR nor a new point of U_1. This does not obstruct signed cancellation between reflected angular sectors under the actual outside-integral mode measure.",
+        "dependencies": [
+          "M9-M1-centered-angular-functional-equation",
+          "M9-M1-r2-Hardy-return-no-go"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-angular-mellin-separation/reports/twisted_divisor_radial_attack.md",
+            "rounds/codex-managed/m9-m1-angular-mellin-separation/reports/mellin_voronoi_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m1-angular-mellin-separation/synthesis.md",
+            "sources/banerjee_khurana_2023.md",
+            "sources/kiral_zhou_2016.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Reject fixed-mode black-box Voronoi as a proof; retain the signed z/-z correlation and top Perron maximal problem."
+      },
+      {
+        "id": "M9-M1-top-Perron-angular-correlation",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Reflected angular-mode correlation with top Perron maximal control",
+        "status": "open",
+        "statement_tex": "Prove an X^epsilon bound for the actual outside-integral signed combination of centered radial modes a_z and their functional-equation reflections a_(-z), uniformly under the scale factors, phi_hat(v), and W_hat(u). For the unique top scale, include the symmetric 1/u Perron kernel and prove a maximal truncation bound; pointwise fixed-z estimates are insufficient. Such a theorem would imply the global angular radial estimate GAR after exact residue accounting.",
+        "dependencies": [
+          "M9-M1-angular-double-Mellin-separation",
+          "M9-M1-centered-angular-functional-equation"
+        ],
+        "implies": [
+          "M9-M1-global-angular-radial-estimate"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-angular-mellin-separation/reports/blind_double_mellin_derivation.md",
+            "rounds/codex-managed/m9-m1-angular-mellin-separation/reports/twisted_divisor_radial_attack.md",
+            "rounds/codex-managed/m9-m1-angular-mellin-separation/reports/mellin_voronoi_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m1-angular-mellin-separation/synthesis.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Derive the exact z/-z outside-integral identity including residues and test whether profile complementarity yields cancellation; isolate the top maximal component."
+      },
+      {
+        "id": "Banerjee-Khurana-2023-source-audit",
+        "type": "source_audit",
+        "track": "source_audit",
+        "title": "Twisted-divisor character Voronoi source audit",
+        "status": "proved_external_dependency",
+        "statement_tex": "Banerjee--Khurana equation (5.11) gives sum_n overline_sigma_(z,chi)(n)n^(-s)=zeta(s-z)L(s,chi), so tau_(chi4,z)=overline_sigma_(-z,chi4). Their Theorems 4.3--4.4 give fixed-order Voronoi identities for odd primitive characters and analytic finite-interval weights, but no uniform large-imaginary-order or hard-Perron estimate.",
+        "dependencies": [],
+        "implies": [],
+        "blockers": [],
+        "source_card": "sources/banerjee_khurana_2023.md",
+        "evidence": {
+          "positive": [
+            "sources/banerjee_khurana_2023.md",
+            "rounds/codex-managed/m9-m1-angular-mellin-separation/reports/mellin_voronoi_hostile_source_audit.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use only for coefficient matching and fixed-parameter identity; do not infer GAR uniformity."
+      },
+      {
+        "id": "Kiral-Zhou-2016-source-audit",
+        "type": "source_audit",
+        "track": "source_audit",
+        "title": "Double-Dirichlet-series Voronoi source audit",
+        "status": "proved_external_dependency",
+        "statement_tex": "Kiral--Zhou Theorem 1.3 supplies a general Voronoi architecture from twisted functional equations, and Example 1.8 treats certain isobaric sums; its main proof is degree at least 3 with a separate degree-2 remark. The project's ramified degree-2 noncuspidal product with a zeta pole is structural analogy rather than a directly matched black-box theorem, and the source gives no mode-integrable complex-shift estimate.",
+        "dependencies": [],
+        "implies": [],
+        "blockers": [],
+        "source_card": "sources/kiral_zhou_2016.md",
+        "evidence": {
+          "positive": [
+            "sources/kiral_zhou_2016.md",
+            "rounds/codex-managed/m9-m1-angular-mellin-separation/reports/mellin_voronoi_hostile_source_audit.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Retain as method architecture only unless all degree-2 polar and ramified hypotheses are separately derived."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M1-angular-double-Mellin-separation",
+          "M9-M1-centered-angular-functional-equation",
+          "M9-M1-top-Perron-angular-correlation"
+        ],
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-m1-angular-mellin-separation/reports/mellin_voronoi_hostile_source_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-angular-mellin-separation/reports/blind_double_mellin_derivation.md",
+            "rounds/codex-managed/m9-m1-angular-mellin-separation/reports/twisted_divisor_radial_attack.md",
+            "rounds/codex-managed/m9-m1-angular-mellin-separation/synthesis.md"
+          ]
+        },
+        "next_action": "Attack the exact outside-integral z/-z angular correlation and top Perron maximal term; fixed-mode Voronoi alone returns to the same difficulty."
+      },
+      {
+        "id": "M9-M1-global-angular-recombination",
+        "status": "proved_internal",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-angular-mellin-separation/reports/blind_double_mellin_derivation.md",
+            "rounds/codex-managed/m9-m1-angular-mellin-separation/synthesis.md"
+          ]
+        },
+        "next_action": "Use the exact centered Mellin modes; preserve the scale factors, height floors, and hard top Perron component."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round15-fixed-mode-Voronoi-proves-GAR",
+        "reason": "The functional equation reflects a_z to a_(-z) and supplies no uniform integrable estimate over both Mellin heights or the hard top 1/u mode."
+      },
+      {
+        "id": "Round15-zero-Mellin-mode-is-easier",
+        "reason": "At z=0 the coefficient is r_2(n)/4 and the radial sum is exactly the Hardy--Voronoi return already equivalent to the target."
+      },
+      {
+        "id": "Round15-pointwise-mode-bounds-integrate-absolutely",
+        "reason": "The analytic conductor grows with t plus or minus Im(z)/2, phi_hat has a pole near zero, and the top spatial transform has a non-L1 1/u Perron tail."
+      },
+      {
+        "id": "Round15-Kiral-Zhou-black-box-import",
+        "reason": "The exact project family is degree two, ramified, noncuspidal, and polar; the paper's general theorem does not directly supply this specialization or its required complex-shift estimates."
+      },
+      {
+        "id": "Round15-Banerjee-Khurana-uniform-GAR-import",
+        "reason": "The source gives fixed-order identities under analytic-weight and real-part restrictions, not uniform large-imaginary-order bounds or a hard-Perron maximal theorem."
+      }
+    ],
+    "no_change": [
+      {"id": "M9-M1", "reason": "No blockwise or global M1 cancellation estimate was proved."},
+      {"id": "M9-M2", "reason": "Round 15 concerns the transformed M1 angular family."},
+      {"id": "M9", "reason": "M9-M1 and M9-M2 remain open."},
+      {"id": "GC-target", "reason": "The functional equation is a reduction/return map, not the required estimate."}
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 9,
+    "calibration_score": 10,
+    "reason": "Round 15 exactly separates the angular coefficient into shifted zeta-times-L modes and proves their centered functional equation and angular reflection. It isolates the noncircular remaining seam as outside-integral z/-z correlation plus a top Perron maximal theorem, while primary-source review rules out two tempting black-box imports."
+  }
+}

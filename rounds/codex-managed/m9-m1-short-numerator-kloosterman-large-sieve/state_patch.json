@@ -1,0 +1,142 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-product-wavelet-low-conductor-Farey-stationary-bound",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Order-J Farey stationary bound for low product-wavelet conductors",
+        "status": "proved_internal",
+        "statement_tex": "Let J=sqrt(X), Q=X^(1/5), T=J/Q, and let D_C be the exact fixed-smooth-interior product-wavelet contribution from order-J Farey denominators c asymp C. Retain the two offset-Poisson aliases, X=N+vartheta, the exact neighbor-dependent half-open Farey interval, the one-sided ratio symbol, all three odd/even local residue classes, and both surviving axes. After x=Ju, y=Jv, tau=beta J^2, and tau=(J/c)z, the exact phase is (J/c){z(uv-1)-rho u-(c/[c,4])sigma v}. Every compatible nonaxial critical point is nondegenerate; the d tau measure and three-dimensional stationary phase give (c/J)^(1/2)|rho sigma|^(-1/4), with the bounded neighbor-dependent incomplete-Fresnel factor at entry and exit. The nonstationary dual tails are summable by u- or v-integration by parts, and the odd-c rho=0 and 4|c sigma=0 axes have no triple critical point. Hence D_C <<_epsilon X^epsilon C^(3/2)J^(-1/2). In particular every T<=C<=J^(2/3), equivalently X^(3/10)<=C<=X^(1/3) at the benchmark, is J^(1/2)X^epsilon-safe. This is a fixed-interior conductor-block lemma and gives no estimate for J^(2/3)<C<=J, cone edges, M9-M1, or the exponent.",
+        "dependencies": [
+          "M9-M1-product-wavelet-short-numerator-Kloosterman-reduction"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-short-numerator-kloosterman-large-sieve/reports/conductor_farey_stationary_low_conductor.md",
+            "rounds/codex-managed/m9-m1-short-numerator-kloosterman-large-sieve/reports/blind_short_numerator_large_sieve.md",
+            "rounds/codex-managed/m9-m1-short-numerator-kloosterman-large-sieve/reports/short_numerator_source_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-short-numerator-kloosterman-large-sieve/reviews/conductor_round71_adjudication.md",
+            "rounds/codex-managed/m9-m1-short-numerator-kloosterman-large-sieve/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use this lemma only to remove T<=C<=J^(2/3). Prove signed cancellation for J^(2/3)<C<=J with sharp transitions, both even classes, and upper-conductor axial terms retained."
+      },
+      {
+        "id": "M9-M1-upper-conductor-reciprocal-square-Bprocess-self-return",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Upper-conductor reciprocal-square B-process self-return",
+        "status": "proved_internal",
+        "statement_tex": "On an odd-modulus nonaxial interior saddle of the order-J Farey transform, put k=rho sigma, q=4b, and A_b=(sqrt(bX)+sqrt(k)/(2sqrt(b)))^2. The exact leading arithmetic phase is e_q(k cbar)e(-A_b/c). Poisson summation in c modulo q gives q^(-1) sum_n S(n,k;q) int W(x/C)e(-A_b/x-nx/q)dx, with stationary n asymp qA_b/C^2 asymp Q^2 and critical phase -J sqrt(n)-sqrt(kn)/(2b). Expanding S(n,k;q) and applying the matching B-process in n has h asymp C and Legendre value -A_b/h; after renaming h=c it restores e_q(k cbar)e(-A_b/c), with adjoint stationary amplitudes. Thus a bare c-Poisson followed by the n-B-process is a self-return and supplies no upper-conductor saving. This statement is scoped to the smooth odd nonaxial stationary main; even classes, axes, transitions, and the required signed upper-conductor estimate remain open.",
+        "dependencies": [
+          "M9-M1-product-wavelet-low-conductor-Farey-stationary-bound"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-short-numerator-kloosterman-large-sieve/reports/short_numerator_source_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-short-numerator-kloosterman-large-sieve/reviews/conductor_round71_adjudication.md",
+            "rounds/codex-managed/m9-m1-short-numerator-kloosterman-large-sieve/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Do not repeat the one-variable c-Poisson/n-B-process loop. Seek genuinely joint cancellation in b and c, or a phase-specific spectral estimate that retains the square-root chirp."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-product-wavelet-short-numerator-Kloosterman-reduction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-short-numerator-kloosterman-large-sieve/reports/conductor_farey_stationary_low_conductor.md",
+            "rounds/codex-managed/m9-m1-short-numerator-kloosterman-large-sieve/reviews/conductor_round71_adjudication.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-m1-short-numerator-kloosterman-large-sieve/reports/short_numerator_source_hostile_audit.md"
+          ]
+        },
+        "next_action": "The exact three-variable Farey analysis closes T<=C<=J^(2/3). Prove the joint signed estimate only for J^(2/3)<C<=J, retaining the square-root reciprocal phase, sharp transitions, both even classes, and axial terms; completion and the bare second B-process are nonclosing."
+      },
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "dependencies_added": [
+          "M9-M1-product-wavelet-low-conductor-Farey-stationary-bound",
+          "M9-M1-upper-conductor-reciprocal-square-Bprocess-self-return"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-short-numerator-kloosterman-large-sieve/synthesis.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-m1-short-numerator-kloosterman-large-sieve/reports/short_numerator_source_hostile_audit.md"
+          ]
+        },
+        "next_action": "Low order-J conductors through C=J^(2/3) are target-safe. Prove the upper-conductor signed reciprocal-square sum for J^(2/3)<C<=J, or find a non-self-returning joint transform; no one-variable completion or B-process repetition."
+      },
+      {
+        "id": "M9-M1-direct-product-wavelet-self-return",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-short-numerator-kloosterman-large-sieve/reports/short_numerator_source_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-short-numerator-kloosterman-large-sieve/synthesis.md"
+          ]
+        },
+        "next_action": "The low Farey conductors are closed, but the upper reciprocal-square transform returns under a second B-process. Attack the remaining upper conductors jointly in b and c."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round71-phase-only-arbitrary-coefficient-large-sieve",
+        "reason": "The phase, parity, and support alone admit coefficient arrays that cancel the phase termwise. Any valid estimate must use the actual Farey/delta stationary weight."
+      },
+      {
+        "id": "Round71-direct-Pascadi-DFI-Kuznetsov-import",
+        "reason": "The closest theorems do not simultaneously allow the high-conductor linear twist e(-Nb/c), the coupled actual weight, moving completion arguments, level-four local data, and surviving axes."
+      },
+      {
+        "id": "Round71-second-Bprocess-saves-upper-conductor",
+        "reason": "Poisson in c followed by the matching B-process in the Kloosterman index restores the original reciprocal-square phase and adjoint amplitude."
+      },
+      {
+        "id": "Round71-outer-T-over-c-is-the-sharp-Farey-coefficient",
+        "reason": "The beta,x,y integral has a nondegenerate three-variable saddle and contributes the additional factor (c/J)^(1/2); the sharp local size is T/sqrt(cJ)."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "The upper Farey conductors, cone edges, and all-scale radial completion remain open."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Round 71 is scoped to the M1 fixed-interior product wavelet and proves no M2 estimate."
+      },
+      {
+        "id": "M9",
+        "reason": "Both M9-M1 and M9-M2 remain open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The low-conductor lemma narrows a fixed-interior M1 survivor but does not prove a new global exponent."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 8,
+    "idea_quality_score": 9,
+    "state_evidence_score": 9,
+    "calibration_score": 10,
+    "reason": "Round 71 finds and independently validates the missing three-variable Farey stationary factor, proves a new target-safe conductor interval X^(3/10)<=C<=X^(1/3), and identifies the exact upper reciprocal-square self-return while preserving every alias, local class, axis, transition, and downstream limitation."
+  }
+}

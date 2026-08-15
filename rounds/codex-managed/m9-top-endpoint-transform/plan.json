@@ -1,0 +1,60 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 8,
+    "round_type": "endpoint_transform_attack",
+    "campaign_id": "m9-top-endpoint-transform",
+    "title": "Derive and exploit the one-sided top-block transform",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "conductor_policy": {
+      "strategy_owner": "Codex conductor",
+      "subagents_may_start_next_round": false,
+      "monitoring": "Check endpoint half-weight conventions, the odd-h quarter-integer separation, boundary stationary transitions, actual beta coefficients, and the exact implication to the top M2 block.",
+      "round_close": "Close only after an exact one-sided transform or a rigorous obstruction is proved and independently scoped."
+    },
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 90,
+      "numerical_experimental_maximum_percent": 10,
+      "numerical_purpose": ["falsify an endpoint constant or parity-separation claim"],
+      "numerical_prohibition": "Finite transforms cannot certify a uniform asymptotic estimate.",
+      "literature_policy": "Use primary sources for discontinuous Poisson or endpoint stationary phase only if a non-elementary theorem is imported."
+    },
+    "target_obligations": [
+      "M9-M2-top-endpoint-transform",
+      "M9-endpoint-uniformity",
+      "M9-M2",
+      "M9-M2-smooth-dual-three-quarter-equivalence"
+    ],
+    "frozen_target": {
+      "sum": "For y=floor(sqrt X), w_end(d)=W(d/y)1_(d<=y), and odd h<=H_y=floor(yX^(-1/4)), transform or directly bound sum_(d<=y) w_end(d)e(hX/(4d)) with all endpoint terms explicit.",
+      "key_separation": "Prove or refute that dist(hX/(4y^2),Z)>=c for every surviving odd h<=H_y and large X, preventing a stationary point from coalescing with u=1.",
+      "success": "Either prove the top M2 frequency block is O_epsilon(X^(1/4+epsilon)) uniformly in 1<=L<=X^(1/4), or reduce it to an exact strictly cleaner signed cone/packet estimate with a target-sized boundary term."
+    },
+    "tasks": [
+      {"id": "one_sided_poisson_derivation", "role": "analytic_deriver", "brief": "rounds/codex-managed/m9-top-endpoint-transform/briefs/one_sided_poisson_derivation.md"},
+      {"id": "endpoint_tail_symmetry_attack", "role": "arithmetic_structure_attacker", "brief": "rounds/codex-managed/m9-top-endpoint-transform/briefs/endpoint_tail_symmetry_attack.md"},
+      {"id": "endpoint_transform_hostile_audit", "role": "hostile_falsifier", "brief": "rounds/codex-managed/m9-top-endpoint-transform/briefs/endpoint_transform_hostile_audit.md"}
+    ],
+    "exit_gates": [
+      "exact endpoint Poisson convention and half-weight",
+      "uniform odd-frequency boundary separation",
+      "stationary and nonstationary errors summed over h",
+      "actual signed cone or direct top-block estimate",
+      "hostile special-X and lowest/highest-frequency audit",
+      "conductor graph decision"
+    ],
+    "promotion_policy": "Promote only an exact endpoint transform, a proved target-sized boundary contribution, a scoped top-block range, or a rigorous obstruction. Do not infer the smooth small-gcd packet estimate from endpoint algebra."
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "7b5a7c93190fa88305d91bb1f2e64788921fe2f4cbbd02eddb8e60e654d64d58",
+    "generated_at": "2026-08-12T10:43:19+08:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

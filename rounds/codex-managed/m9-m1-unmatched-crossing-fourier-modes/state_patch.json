@@ -1,0 +1,69 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-unmatched-crossing-Fourier-mode-reduction",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Reciprocal Fourier modes and exponent-pair capacity of unmatched crossings",
+        "status": "proved_internal",
+        "statement_tex": "For J=sqrt(X), T=sqrt(X/N), Q=J/T, and fixed Xi, the floor-compatible Vaaler main of the Round-65 discrepancy has modes S_k(v)=sum_j chi_4(j)Xi(j/J)e(k floor(X)/j)(1-e(kv/j)) with coefficient O(1/|k|), plus the difference of two positive Fejer residuals. The exact wavelet filter localizes nonzero main modes to |k| asymp Q. A lawful exponent pair (kappa,lambda) therefore has capacity J^lambda Q^kappa=X^((lambda+kappa nu)/2+epsilon). At nu=2/5, TTY gives 5163/12820 and the classical pair (2/7,4/7) gives 12/35, both worse than the trivial product exponent 3/10. The residual satisfies sum_(j asymp J)E_K(n/j)<<X^epsilon(1+J/K), hence is target-safe for K>=X^(1/4). A new joint signed (j,k) theorem with lossless off-diagonal control is required.",
+        "dependencies": [
+          "M9-M1-product-wavelet-affine-Abel-reduction",
+          "M9-M1-TTY-exponent-pair-wedge",
+          "H4"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-unmatched-crossing-fourier-modes/reports/conductor_joint_reciprocal_mode_analysis.md",
+            "rounds/codex-managed/m9-m1-unmatched-crossing-fourier-modes/reports/reciprocal_mode_source_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-unmatched-crossing-fourier-modes/reviews/conductor_reciprocal_mode_adjudication.md",
+            "rounds/codex-managed/m9-m1-unmatched-crossing-fourier-modes/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Formulate a joint signed j-k large-sieve or bilinear off-diagonal theorem whose diagonal is exactly X^(1/4) and whose off-diagonal loses no power."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "dependencies_added": ["M9-M1-unmatched-crossing-Fourier-mode-reduction"],
+        "evidence_added": {
+          "negative": ["rounds/codex-managed/m9-m1-unmatched-crossing-fourier-modes/reports/reciprocal_mode_source_hostile_audit.md"],
+          "inconclusive": ["rounds/codex-managed/m9-m1-unmatched-crossing-fourier-modes/synthesis.md"]
+        },
+        "next_action": "One-variable exponent pairs are weaker than the original product bound. Attack the joint j-k off-diagonal at an exactly target-sized diagonal, while retaining the Fejer residual and full-cone scope."
+      },
+      {
+        "id": "M9-M1-shifted-divisor-correlation-PSC",
+        "evidence_added": {
+          "inconclusive": ["rounds/codex-managed/m9-m1-unmatched-crossing-fourier-modes/synthesis.md"]
+        },
+        "next_action": "The separable test case now needs a lossless joint reciprocal-mode off-diagonal theorem; one-variable exponent pairs do not gain H/L."
+      }
+    ],
+    "reject": [
+      {"id": "Round66-TTY-one-variable-modes-close-H-over-L", "reason": "At nu=2/5 the exact wavelet transition capacity is X^(5163/12820+epsilon), worse than both the target and the original trivial product bound."},
+      {"id": "Round66-difference-factor-survives-as-extra-T-over-J-saving", "reason": "Exact wavelet averaging uses the difference factor to localize k asymp J/T; it does not leave an additional independent small factor after resummation."},
+      {"id": "Round66-Fejer-residual-is-zero-at-exact-integers", "reason": "At an integer the floor-compatible residual has magnitude one half; divisor grouping, not deletion, yields the bound X^epsilon(1+J/K)."},
+      {"id": "Round66-Bettin-Chandee-applies-to-ordinary-reciprocal-phase", "reason": "The cited trilinear theorem requires modular inverses and coprimality, unlike the ordinary phase e(kX/j) with moving difference amplitude."}
+    ],
+    "no_change": [
+      {"id": "M9-M1", "reason": "No joint signed reciprocal-mode theorem or full-cone estimate is proved."},
+      {"id": "M9", "reason": "M9-M1 and M9-M2 remain open."},
+      {"id": "GC-target", "reason": "Round 66 proves a reduction and capacity no-go, not an exponent."}
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 5,
+    "idea_quality_score": 7,
+    "state_evidence_score": 8,
+    "calibration_score": 10,
+    "reason": "Round 66 identifies the exact transition-frequency and proves that every audited one-variable exponent-pair route loses to the original trivial bound; the required joint off-diagonal remains open."
+  }
+}

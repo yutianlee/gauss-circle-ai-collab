@@ -1,0 +1,63 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-partial-functional-equation-transition-reduction",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "One-factor functional-equation reduction of the diagonal transition traces",
+        "status": "open",
+        "statement_tex": "Factor the centered degree-two completion into the completed zeta factor at s+z/2 and completed chi_4 factor at s-z/2. On the beta-bounded trace, undo the low-height zeta functional equation and retain only the high-height chi_4 functional equation; on the alpha-bounded trace, undo the low-height chi_4 functional equation and retain only the high-height zeta functional equation. Derive exact finite mixed-chamber formulas, including moving poles, axial/top residues, outside segments, actual profiles, and normalization, then prove a target-sized bound or a rigorous obstruction.",
+        "dependencies": [
+          "M9-M1-finite-vector-Hankel-identity",
+          "M9-M1-diagonal-single-transition-normal-form",
+          "M9-M1-endpoint-boundary-operator",
+          "M9-M1-R1-arithmetic-residue"
+        ],
+        "implies": [
+          "M9-M1-swept-transition-horizontal-operator"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-diagonal-transition-exhaustion/synthesis.md",
+            "rounds/codex-managed/m9-m1-r1-arithmetic-residue/synthesis.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Derive both exact mixed-factor trace formulas and test whether the chi_4-high branch admits character Abel while the zeta-high branch requires pole-subtracted eta/Euler-Maclaurin cancellation."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-swept-transition-horizontal-operator",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M1-partial-functional-equation-transition-reduction"
+        ],
+        "next_action": "Test the one-factor functional-equation mixed-chamber reduction for both diagonal traces, with the closed endpoint/residue package removed exactly once."
+      },
+      {
+        "id": "M9-M1-renormalized-radial-boundary-operator",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M1-partial-functional-equation-transition-reduction"
+        ],
+        "next_action": "Resolve the two diagonal traces through the partial-functional-equation reduction; all radial endpoint/residue terms are already target-safe."
+      }
+    ],
+    "reject": [],
+    "no_change": [
+      {"id":"M9-M1-post-FE-vector-kernel","reason":"The proposed mixed-factor reduction is not yet proved or estimated."},
+      {"id":"M9-M1","reason":"The transition traces and residual direct corridor remain open."},
+      {"id":"M9","reason":"M9-M1 and M9-M2 remain open."},
+      {"id":"GC-target","reason":"No target proof is claimed."}
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 9,
+    "reason": "Round-24 closure isolates the pair of transition traces and records a factor-by-factor functional-equation strategy without claiming that it succeeds."
+  }
+}

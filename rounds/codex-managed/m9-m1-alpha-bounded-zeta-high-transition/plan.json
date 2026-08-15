@@ -1,0 +1,185 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 49,
+    "round_type": "alpha_bounded_zeta_high_operator_definition",
+    "campaign_id": "m9-m1-alpha-bounded-zeta-high-transition",
+    "title": "Exact alpha-bounded zeta-high operator and first capacity attack",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "literature_policy": "No black-box theorem import. A targeted primary-source search is allowed only if an exact resulting kernel matches a known zeta/Voronoi/Hankel transform after all masks and residues are retained."
+    },
+    "target_obligations": [
+      "M9-M1-alpha-bounded-zeta-high-transition-bound"
+    ],
+    "frozen_target": {
+      "question": "Can the remaining alpha-bounded trace be converted into one exact connector-completed physical kernel with a target-sized signed estimate, or what is the first sharp capacity obstruction?",
+      "reference_formula": "With A=s-z/2 and B=s+z/2, freeze the alpha-bounded branch X_zeta(A) zeta(A) L(1-B,chi_4), equivalently the finite h-series formula (9) in the Round-25 blind factorization, after removing only already accepted beta, endpoint, radial-side, and R1 modules.",
+      "quantities": [
+        "one common fixed-w finite antecedent",
+        "alpha transition mask and every Cauchy-Pompeiu or strip-edge connector",
+        "finite u,v,s outside sides and their orientation",
+        "A=0 arithmetic pole reconciled with the accepted R1 module",
+        "u=0 top, v=0 height, and one joint corner",
+        "unsigned high h-series and exact X_zeta cosine kernel",
+        "radial R1 factor, actual profiles, floors, stars, and one external X^(1/4) factor",
+        "signed rather than all-absolute physical height limit"
+      ]
+    },
+    "completion_criteria": [
+      "An exact finite alpha-branch formula and one-count owner ledger are stated without importing beta terms.",
+      "The physical kernel after the signed top/height operation is derived, or the first unavailable transform is named exactly.",
+      "A=0, A=1, artificial rho=0, u=0, v=0, outside sides, and the corner are distinguished correctly.",
+      "Any proposed cancellation is tested against coherent integer cosine frequencies and an unsigned-coefficient adversary.",
+      "The required X and height powers are audited through radial and coefficient sums.",
+      "At least one clean statement-only derivation and one independent hostile audit exist.",
+      "No beta wrapper, swept operator, post-FE kernel, M9-M1, M9, or target is promoted unless the exact implication is separately proved."
+    ],
+    "controls": [
+      "branch_orientation",
+      "common_antecedent_and_mask_connectors",
+      "pole_and_residue_ledger",
+      "signed_height_order",
+      "integer_cosine_resonance",
+      "unsigned_coefficient_control",
+      "radial_and_external_normalization",
+      "outside_height_limit",
+      "downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "alpha_physical_kernel_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "target": "Derive the complete connector-completed alpha-bounded physical kernel from the finite one-factor formula, then prove a normalized O(X^epsilon) estimate or isolate the first explicit unproved integral with its exact capacity.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-partial-functional-equation-transitions/synthesis.md",
+          "rounds/codex-managed/m9-m1-partial-functional-equation-transitions/reports/blind_partial_FE_factorization.md",
+          "rounds/codex-managed/m9-m1-beta-wrapper-closure-audit/synthesis.md",
+          "rounds/codex-managed/m9-m1-r1-arithmetic-residue/synthesis.md"
+        ],
+        "required_controls": [
+          "branch_orientation",
+          "common_antecedent_and_mask_connectors",
+          "pole_and_residue_ledger",
+          "signed_height_order",
+          "integer_cosine_resonance",
+          "unsigned_coefficient_control",
+          "radial_and_external_normalization",
+          "outside_height_limit",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "seven-section report",
+          "exact finite and physical kernel formulas",
+          "owner and pole ledger",
+          "target estimate or first sharp survivor"
+        ]
+      },
+      {
+        "id": "blind_alpha_kernel_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "target": "Independently derive the alpha-bounded zeta-high operator from the frozen packet, audit every pole and side, and determine whether a signed cosine/Hilbert/radial mechanism can beat the known absolute capacity.",
+        "context_files": [
+          "rounds/codex-managed/m9-m1-alpha-bounded-zeta-high-transition/derivation_packet.md"
+        ],
+        "excluded_context": [
+          "proof graph",
+          "proof draft",
+          "prior reports and syntheses",
+          "other Round-49 reports"
+        ],
+        "required_controls": [
+          "branch_orientation",
+          "common_antecedent_and_mask_connectors",
+          "pole_and_residue_ledger",
+          "signed_height_order",
+          "integer_cosine_resonance",
+          "unsigned_coefficient_control",
+          "radial_and_external_normalization",
+          "outside_height_limit",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "seven-section statement-only report",
+          "independent exact kernel derivation",
+          "estimate or first missing hypothesis",
+          "isolation ledger"
+        ]
+      },
+      {
+        "id": "alpha_trace_hostile_audit",
+        "role": "seam_reviewer",
+        "access_mode": "selected_context",
+        "target": "Hostile-audit the alpha trace for false pole subtraction, illicit simultaneous Dirichlet chambers, missing mask connectors or outside sides, integer-cosine coherence, and hidden X or height losses; search primary literature only after an exact kernel match is established.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-partial-functional-equation-transitions/synthesis.md",
+          "rounds/codex-managed/m9-m1-partial-functional-equation-transitions/reports/partial_FE_hostile_audit.md",
+          "rounds/codex-managed/m9-m1-partial-functional-equation-transitions/reports/mixed_trace_attack.md",
+          "rounds/codex-managed/m9-m1-vector-hankel-kernel/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-wrapper-closure-audit/synthesis.md"
+        ],
+        "required_controls": [
+          "branch_orientation",
+          "common_antecedent_and_mask_connectors",
+          "pole_and_residue_ledger",
+          "signed_height_order",
+          "integer_cosine_resonance",
+          "unsigned_coefficient_control",
+          "radial_and_external_normalization",
+          "outside_height_limit",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "seven-section hostile report",
+          "counterexample or seam certification",
+          "primary-source applicability note if used",
+          "recommended graph effect"
+        ]
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "finite_operator",
+        "requirement": "Derive one exact common-antecedent alpha operator with every connector, side, residue, profile, and normalization."
+      },
+      {
+        "id": "physicalization",
+        "requirement": "Justify the signed top/height limits and radial transform before any absolute value or infinite series exchange."
+      },
+      {
+        "id": "arithmetic",
+        "requirement": "Keep the high h coefficients unsigned and test all claimed cancellation against integer cosine coherence."
+      },
+      {
+        "id": "capacity",
+        "requirement": "Track high-height, h, scale, radial, and external X powers through the proposed mechanism."
+      },
+      {
+        "id": "mathematical_isolation",
+        "requirement": "The blind proof sees only the Round-49 derivation packet and its brief."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "7a79835af0a5bfe25cc385d2a5ef9747bf1f3fad04ac8af21a1d41c323fef400",
+    "generated_at": "2026-08-13T14:18:37.290406+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

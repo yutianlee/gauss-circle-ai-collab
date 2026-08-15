@@ -1,0 +1,181 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "Popov-2024-truncated-Voronoi-source-audit",
+        "type": "source_audit",
+        "track": "source_audit",
+        "title": "Popov 2024 truncated Voronoi formula source audit",
+        "status": "proved_external_dependency",
+        "statement_tex": "Popov Theorem 5 states P(x)=-(x^(1/4)/pi) sum_(n<=N) r_2(n)n^(-3/4) cos(2pi sqrt(nx)+pi/4)+Delta_N P(x), with Delta_N P(x)<<sqrt(x/N) rbar(x)+rbar(N)log N and rbar(t)=t^(o(1)). At N asymp X^(1/2), the error is O_epsilon(X^(1/4+epsilon)). Theorem 4 and the J_1 asymptotic confirm the same radial constant and phase.",
+        "dependencies": [],
+        "implies": [],
+        "blockers": [],
+        "source_card": "sources/popov_2024_voronoi_gauss.md",
+        "evidence": {
+          "positive": [
+            "sources/popov_2024_voronoi_gauss.md",
+            "rounds/codex-managed/m9-m1-dual-r2-recombination/reports/hardy_return_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m1-dual-r2-recombination/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use only for the exact Hardy--Voronoi normalization and target-sized truncation error; it supplies no new radial-sum estimate."
+      },
+      {
+        "id": "M9-M1-global-angular-recombination",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Exact global angular recombination of active M1",
+        "status": "proved_internal",
+        "statement_tex": "For the accepted exact dyadic denominator partition, actual Vaaler heights H_j=floor(D_j X^(-1/4)), and endpoint-star convention, the total active M1 stationary contribution equals -(4/pi)X^(1/4) Re{e(1/8) sum_(n<=16sqrt X) C_X^*(n)n^(-3/4)e(sqrt(Xn))}+O_W(log^2 X), where C_X^*(n)=sum_(h|n,q=n/h odd) chi_4(q) Omega_X^*(n,h) and Omega_X^*(n,h)=sum_j 1_(h<=H_j) Phi(h/(H_j+1))[w_j(2h sqrt(X/n))]^*. The inactive bottom range is separately O(X^(1/4)). The L-partition disappears exactly, while the D-partition leaves a floor-perturbed angular divisor symbol.",
+        "dependencies": [
+          "M9-M1-ordered-resonance-cell-decomposition",
+          "M9-M1-top-endpoint-transform",
+          "M9-M2-dyadic-weight-nondegeneracy"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-dual-r2-recombination/reports/blind_rcs_coefficient_algebra.md",
+            "rounds/codex-managed/m9-m1-dual-r2-recombination/reports/hardy_return_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m1-dual-r2-recombination/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Separate the exact angular symbol by Mellin or Dirichlet-series methods without discarding height floors, the hard cone, or the endpoint star."
+      },
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Global angular radial estimate for the active M1 aggregate",
+        "status": "open",
+        "statement_tex": "For the exact C_X^*(n) of M9-M1-global-angular-recombination, prove Re{e(1/8) sum_(n<=16sqrt X) C_X^*(n)n^(-3/4)e(sqrt(Xn))} <<_epsilon X^epsilon. This is sufficient for the total active M1 contribution and is strictly weaker than uniform blockwise M9-M1, but it does not imply an individual dyadic block estimate and is equivalent to the original global active M1 sum up to controlled transform and inactive-tail errors.",
+        "dependencies": [
+          "M9-M1-global-angular-recombination"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-dual-r2-recombination/reports/blind_rcs_coefficient_algebra.md",
+            "rounds/codex-managed/m9-m1-dual-r2-recombination/synthesis.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Derive a two-variable Mellin expansion of Omega_X^*(n,h), identify the resulting twisted divisor coefficients, and audit whether any mode admits cancellation beyond the accepted RCS bounds."
+      },
+      {
+        "id": "M9-M1-r2-Hardy-return-no-go",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "M1 r2-collapse obstruction and Hardy return map",
+        "status": "proved_internal",
+        "statement_tex": "M1 alone does not recombine to r_2(n)/4 times an n-only symbol: at X=y^2 and n=7, the active incidence (h,q)=(1,7) has nonzero weight while (7,1) lies beyond d<=y, so C_X^*(7) is nonzero although r_2(7)/4=chi_4(1)+chi_4(7)=0. If all divisor angles were instead completed to the full r_2(n)/4 coefficient through n asymp X^(1/2), the exact stationary constant reproduces the classical truncated Hardy--Voronoi radial sum; Popov Theorem 5 makes a target bound for that complete sum equivalent to the Gauss-circle target up to O_epsilon(X^(1/4+epsilon)). This obstruction does not rule out cancellation in the actual angular coefficient.",
+        "dependencies": [
+          "M9-M1-global-angular-recombination",
+          "Popov-2024-truncated-Voronoi-source-audit"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-dual-r2-recombination/reports/blind_rcs_coefficient_algebra.md",
+            "rounds/codex-managed/m9-m1-dual-r2-recombination/reports/hardy_return_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m1-dual-r2-recombination/synthesis.md",
+            "sources/popov_2024_voronoi_gauss.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Retain the divisor-dependent angular symbol; do not replace it by r_2 or import the completed radial sum as an easier theorem."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-dual-restricted-convolution-RCS",
+        "status": "open",
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-m1-dual-r2-recombination/reports/hardy_return_hostile_source_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-dual-r2-recombination/reports/blind_rcs_coefficient_algebra.md",
+            "rounds/codex-managed/m9-m1-dual-r2-recombination/synthesis.md"
+          ]
+        },
+        "next_action": "Use the exact angular coefficient or its global aggregate. Product grouping removes only the monomial h-power; it does not remove Phi, floors, the hard cone, or divisor-angle dependence."
+      },
+      {
+        "id": "M9-M1",
+        "status": "open",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-dual-r2-recombination/reports/blind_rcs_coefficient_algebra.md",
+            "rounds/codex-managed/m9-m1-dual-r2-recombination/synthesis.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-m1-dual-r2-recombination/reports/hardy_return_hostile_source_audit.md"
+          ]
+        },
+        "next_action": "Attack the exact global angular symbol by Mellin separation, while separately auditing whether the final bridge may use the global M1 aggregate instead of every dyadic M1 block."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round14-M1-exact-r2-collapse",
+        "reason": "The exact coefficient retains a divisor-angle symbol; at X=y^2,n=7 the (1,7) incidence is active and the cancelling (7,1) incidence is absent."
+      },
+      {
+        "id": "Round14-spatial-telescoping-removes-Phi",
+        "reason": "Each dyadic spatial profile is multiplied by a scale-dependent Vaaler factor, exact height cutoff, floor perturbation, and endpoint convention, so denominator telescoping does not apply to the full symbol."
+      },
+      {
+        "id": "Round14-full-r2-radial-sum-is-easier",
+        "reason": "At cutoff N asymp X^(1/2), Popov's truncated Voronoi formula makes a target-sized estimate for the completed r_2 radial sum equivalent to the Gauss-circle target up to target-sized errors."
+      },
+      {
+        "id": "Round14-global-aggregate-implies-blockwise-M1",
+        "reason": "The global real-part estimate allows cancellation between actual D and L pieces and has no projection recovering a single dyadic block."
+      },
+      {
+        "id": "Round14-ignore-height-floors-or-endpoint-stars",
+        "reason": "The exact angular multiplier contains H_j=floor(D_jX^(-1/4)) and the one-sided top endpoint convention; discarding them changes the coefficient rather than producing a controlled algebraic identity."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M2",
+        "reason": "Round 14 derives only the M1 aggregate; a complementary global M2 symbol identity has not been proved."
+      },
+      {
+        "id": "M9",
+        "reason": "Blockwise M9-M1 and M9-M2 remain open, and the accepted bridge has not been replaced by a global-aggregate variant."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The current bridge explicitly assumes blockwise M9; using GAR would require a separate full-assembly audit."
+      },
+      {
+        "id": "GC-target",
+        "reason": "No new cancellation estimate was proved; the target remains open."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 9,
+    "calibration_score": 10,
+    "reason": "Round 14 proves the exact global angular coefficient and a genuinely weaker aggregate formulation, while two independent derivations and an audited primary source rule out both the M1-only r_2 collapse and the completed Hardy sum as easier interfaces. It proves no new cancellation bound."
+  }
+}

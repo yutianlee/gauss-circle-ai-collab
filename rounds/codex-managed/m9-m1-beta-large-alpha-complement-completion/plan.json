@@ -1,0 +1,190 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 46,
+    "round_type": "beta_large_alpha_complement_completion",
+    "campaign_id": "m9-m1-beta-large-alpha-complement-completion",
+    "title": "Exact positive-line large-alpha partition and nonsaddle completion",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "literature_policy": "No external theorem is needed; use the exact beta-slab phase, signed Cauchy section, integration by parts, and the accepted Round-41 cell bounds."
+    },
+    "target_obligations": [
+      "M9-M1-beta-positive-line-alpha-localization-certificate",
+      "M9-M1-beta-double-bounded-cell-bound"
+    ],
+    "frozen_target": {
+      "question": "Does the exact direct positive-line complement admit a finite one-count saddle/nonsaddle partition whose nonsaddle cells are target-safe?",
+      "reference_formula": "Use the Round-46 derivation packet. The compact terminal and artificial residue are closed; estimate only the same-antecedent 1-chi_0 complement.",
+      "quantities": [
+        "same-antecedent alpha partition",
+        "signed saddle and entry/exit cells",
+        "inner and outer nonsaddle sectors",
+        "singular signed Cauchy section",
+        "smooth top and interior profiles",
+        "moving traces and cutoff collars",
+        "coefficient and radial sums",
+        "external normalization once"
+      ]
+    },
+    "completion_criteria": [
+      "The finite cutoff family sums exactly to 1-chi_0 on the direct positive-line terminal.",
+      "The saddle/entry/exit share is literally the accepted Round-41 package.",
+      "Every nonsaddle share is target-safe, or its first exact obstruction is isolated.",
+      "The singular top remains under its signed Cauchy section before absolute values.",
+      "Moving traces, coefficients, scales, endpoints, and external normalization are complete.",
+      "A clean statement-only rederivation and a hostile audit exist.",
+      "The conductor closes the round before returning to the alpha-bounded branch."
+    ],
+    "controls": [
+      "same_positive_line_antecedent",
+      "finite_partition_exactness",
+      "round41_literal_cell_match",
+      "inner_nonsaddle_sector",
+      "outer_nonsaddle_sector",
+      "signed_cauchy_before_absolute",
+      "moving_trace_and_cutoff_derivatives",
+      "coefficient_scale_radial_sum",
+      "collision_and_external_once"
+    ],
+    "tasks": [
+      {
+        "id": "nonsaddle_completion_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "target": "Construct the exact positive-line alpha partition, prove or refute target bounds for both nonsaddle sectors, and map the saddle share literally to Round 41.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-beta-large-alpha-complement-completion/derivation_packet.md",
+          "rounds/codex-managed/m9-m1-beta-axial-subtracted-terminal-symbol/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-off-diagonal-product-cell/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-positive-line-localization/synthesis.md"
+        ],
+        "required_controls": [
+          "same_positive_line_antecedent",
+          "finite_partition_exactness",
+          "round41_literal_cell_match",
+          "inner_nonsaddle_sector",
+          "outer_nonsaddle_sector",
+          "signed_cauchy_before_absolute",
+          "moving_trace_and_cutoff_derivatives",
+          "coefficient_scale_radial_sum",
+          "collision_and_external_once"
+        ],
+        "required_output": [
+          "seven-section report",
+          "complete theorem or first exact survivor",
+          "state recommendation"
+        ],
+        "status": "replaced_after_context_contamination_clean_replacement_complete",
+        "report": "reports/clean_nonsaddle_power_attack.md"
+      },
+      {
+        "id": "isolated_nonsaddle_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "target": "Independently prove or refute the Round-46 packet theorem, including partition exactness and nonsaddle integration by parts, without reading the graph or other reports.",
+        "context_files": [
+          "rounds/codex-managed/m9-m1-beta-large-alpha-complement-completion/derivation_packet.md"
+        ],
+        "excluded_context": [
+          "proof graph",
+          "proof draft",
+          "prior reports and syntheses",
+          "other Round-46 reports"
+        ],
+        "required_controls": [
+          "same_positive_line_antecedent",
+          "finite_partition_exactness",
+          "round41_literal_cell_match",
+          "inner_nonsaddle_sector",
+          "outer_nonsaddle_sector",
+          "signed_cauchy_before_absolute",
+          "moving_trace_and_cutoff_derivatives",
+          "coefficient_scale_radial_sum",
+          "collision_and_external_once"
+        ],
+        "required_output": [
+          "seven-section statement-only report",
+          "independent proof or counterexample",
+          "first doubtful step and state recommendation"
+        ],
+        "status": "complete_clean_isolation",
+        "report": "reports/isolated_nonsaddle_rederivation.md"
+      },
+      {
+        "id": "nonsaddle_hostile_audit",
+        "role": "seam_reviewer",
+        "access_mode": "selected_context",
+        "target": "Hostile-audit the partition, Round-41 antecedent match, inner/outer nonsaddle integration by parts, signed diagonal, moving traces, and full power ledger without reading the discovery report.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-beta-large-alpha-complement-completion/derivation_packet.md",
+          "rounds/codex-managed/m9-m1-beta-axial-subtracted-terminal-symbol/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-off-diagonal-product-cell/synthesis.md",
+          "rounds/codex-managed/m9-m1-beta-positive-line-localization/synthesis.md"
+        ],
+        "required_controls": [
+          "same_positive_line_antecedent",
+          "finite_partition_exactness",
+          "round41_literal_cell_match",
+          "inner_nonsaddle_sector",
+          "outer_nonsaddle_sector",
+          "signed_cauchy_before_absolute",
+          "moving_trace_and_cutoff_derivatives",
+          "coefficient_scale_radial_sum",
+          "collision_and_external_once"
+        ],
+        "required_output": [
+          "seven-section hostile report",
+          "counterexample or seam certification",
+          "recommended graph effect"
+        ],
+        "status": "replaced_after_context_contamination_clean_replacement_complete",
+        "report": "reports/clean_nonsaddle_hostile_audit.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "partition",
+        "requirement": "Verify a smooth finite partition of exactly 1-chi_0 on the direct antecedent."
+      },
+      {
+        "id": "nonsaddle_analysis",
+        "requirement": "Verify phase derivatives, boundary terms, signed Cauchy order, and both unbounded sectors."
+      },
+      {
+        "id": "power_assembly",
+        "requirement": "Verify coefficient, scale, radial, endpoint, character, and external-factor powers."
+      },
+      {
+        "id": "mathematical_isolation",
+        "requirement": "The statement-only proof sees no excluded mathematical artifact."
+      }
+    ],
+    "closing_assessment": {
+      "decision": "promote_exact_partition_retain_quantitative_nonsaddle_and_literal_middle_match_open",
+      "graph_mutation": true,
+      "main_result": "A finite smooth nonnegative subordinate partition of the direct positive-line complement is exact. The first remaining analytic input is a global after-Plemelj nonsaddle value/x-derivative/moving-trace theorem under the raw q^(-p) ledger; literal Round-41 middle-cell coverage is also unproved."
+    },
+    "next_round": 47
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "295fbe40d51001a263c0740930b476599f04c35afbc7ca159fb9fa819d204739",
+    "generated_at": "2026-08-13T12:14:46.620711+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

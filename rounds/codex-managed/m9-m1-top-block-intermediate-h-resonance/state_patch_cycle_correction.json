@@ -1,0 +1,19 @@
+{
+  "proof_obligations": {
+    "create": [],
+    "update": [
+      {
+        "id": "M9-M1-top-block-low-leg-margin",
+        "dependencies_removed": [
+          "M9-M1-top-block-discrete-curvature-singleton-no-go"
+        ]
+      }
+    ],
+    "reject": [],
+    "no_change": []
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "reason": "Mechanical graph-direction correction only: Round 56 depends on Round 55, not conversely."
+  }
+}

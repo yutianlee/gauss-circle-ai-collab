@@ -1,0 +1,49 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 21,
+    "round_type": "radial_endpoint_renormalization",
+    "campaign_id": "m9-m1-radial-endpoint-renormalization",
+    "title": "Subtract radial endpoint asymptotics and reconcile boundary residues",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "conductor_policy": {
+      "strategy_owner": "Codex conductor",
+      "subagents_may_start_next_round": false,
+      "monitoring": "Require exact finite endpoint coefficients, half weights, contour orientations, every residue, and a declared subtraction order before any limit.",
+      "round_close": "Close after blind endpoint algebra, signed reconciliation attack, hostile sign/scope review, and graph adjudication."
+    },
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 95,
+      "numerical_experimental_maximum_percent": 5,
+      "numerical_purpose": ["bounded falsification of endpoint signs or coefficients"],
+      "literature_policy": "Primary Mellin endpoint-renormalization sources only after exact project normalization."
+    },
+    "target_obligations": [
+      "M9-M1-renormalized-radial-boundary-operator",
+      "M9-M1-swept-transition-horizontal-operator",
+      "M9-M1-post-FE-vector-kernel",
+      "M9-M1-maximal-angular-sign-kernel"
+    ],
+    "tasks": [
+      {"id":"blind_radial_endpoint_subtraction","role":"statement_only_endpoint_deriver","brief":"rounds/codex-managed/m9-m1-radial-endpoint-renormalization/briefs/blind_radial_endpoint_subtraction.md"},
+      {"id":"boundary_residue_reconciliation_attack","role":"signed_boundary_attacker","brief":"rounds/codex-managed/m9-m1-radial-endpoint-renormalization/briefs/boundary_residue_reconciliation_attack.md"},
+      {"id":"endpoint_renormalization_hostile_audit","role":"hostile_sign_and_scope_reviewer","brief":"rounds/codex-managed/m9-m1-radial-endpoint-renormalization/briefs/endpoint_renormalization_hostile_audit.md"}
+    ],
+    "exit_gates": ["endpoint expansion","boundary functional","residue reconciliation","renormalized exhaustion","signed verdict","conductor decision"],
+    "promotion_policy": "Promote only exact finite subtraction identities and signed cancellations independently checked for orientation, endpoint stars, and residue scope.",
+    "closing_assessment": {
+      "decision": "promote_endpoint_subtraction_and_renormalized_side_removal",
+      "graph_mutation": true,
+      "main_result": "Arbitrary-order endpoint subtraction removes the renormalized radial sides under nested exhaustion. Full-weight endpoint coefficients, artificial-pole cancellation, and side orientations are fixed; the explicit endpoint boundary operator remains open."
+    },
+    "next_round": 22
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "19f21f378c9f2ca932c25f0de66deba8d37fdc6d5deaeb74185e01dfa3a9b637",
+    "generated_at": "2026-08-12T20:45:00+08:00"
+  },
+  "artifact_policy": {"subagents_may_edit_shared_state":false,"computation_evidence_level":"diagnostic_only","coordinator_owns_synthesis_and_state_patch":true}
+}

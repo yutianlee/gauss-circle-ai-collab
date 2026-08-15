@@ -1,0 +1,99 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-top-block-discrete-curvature-singleton-no-go",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Discrete-curvature resonance and high-shell singleton capacity no-go",
+        "status": "proved_internal",
+        "statement_tex": "For q=4m+rho, rho in {1,3}, the exact phase F_(h,rho)(m)=sqrt(Xh(4m+rho)) has Delta F=4sqrt(Xh)/(sqrt(q+4)+sqrt(q)) and Delta^2F=-32sqrt(Xh)/[(sqrt(q+8)+sqrt(q+4))(sqrt(q+4)+sqrt(q))(sqrt(q+8)+sqrt(q))]. On hq asymp Y=R^2, |Delta^2F| asymp h^2/R, |Delta^3F| asymp h^3/R^3, and the fibre drift is O(h^2/R^2), so only the exact accumulated curvature modulo one with this tolerance is a lawful resonance parameter. On h asymp H, every nonnegative fixed-h Fejer/Weyl majorant retains diagonal capacity sqrt(RH), losing sqrt(H) against the sqrt(R) window target. For R/4<h<=R/2 each residue fibre has at most one sample. Moreover for infinitely many X=K^4, a strict top-profile window and 3K/8<=h<=7K/16 give sum_(h,rho)|T_(h,rho)| >> R with all height, profile, product and radial stars avoided. This is an actual-profile obstruction to fixed-residue or fixed-h absolute resonance averaging, not a signed lower bound for the cross-h, cross-residue sum.",
+        "dependencies": [
+          "M9-M1-top-block-low-leg-margin",
+          "M9-M1-global-angular-recombination",
+          "M9-M2-dyadic-weight-nondegeneracy",
+          "H4-Phi-regularity"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-top-block-intermediate-h-resonance/reports/discrete_curvature_resonance_attack.md",
+            "rounds/codex-managed/m9-m1-top-block-intermediate-h-resonance/reports/blind_resonance_average_rederivation.md",
+            "rounds/codex-managed/m9-m1-top-block-intermediate-h-resonance/reports/resonance_spacing_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-top-block-intermediate-h-resonance/reviews/conductor_resonance_adjudication.md",
+            "rounds/codex-managed/m9-m1-top-block-intermediate-h-resonance/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Keep the two chi_4 residue classes and distinct h fibres signed. Test exact adjacent-odd-q pairing and unmatched endpoints on R/4<h<=R/2 before any absolute value."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "dependencies_added": [
+          "M9-M1-top-block-discrete-curvature-singleton-no-go"
+        ],
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-m1-top-block-intermediate-h-resonance/synthesis.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-top-block-intermediate-h-resonance/reviews/conductor_resonance_adjudication.md"
+          ]
+        },
+        "next_action": "On the top shell R/4<h<=R/2, preserve the signed pairing between q congruent to 1 and 3 mod 4 (or group by product n) and prove a short-hyperbola-strip bound of unweighted size sqrt(R). Treat lower h shells separately; do not sum fixed-h resonance majorants."
+      },
+      {
+        "id": "M9-M1-top-block-low-leg-margin",
+        "dependencies_added": [
+          "M9-M1-top-block-discrete-curvature-singleton-no-go"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-top-block-intermediate-h-resonance/synthesis.md"
+          ]
+        },
+        "next_action": "The low-h margin is closed. The next disjoint sector is the signed singleton shell R/4<h<=R/2; retain cross-residue and cross-h cancellation there."
+      },
+      {
+        "id": "M9-M1-alpha-bounded-zeta-high-transition-bound",
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-m1-top-block-intermediate-h-resonance/synthesis.md"
+          ]
+        },
+        "next_action": "First solve the physical signed short-hyperbola-strip core; fixed-h resonance averaging cannot supply it. Alpha connector and height transfer remain separate later obligations."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round56-large-real-curvature-implies-lattice-cancellation",
+        "reason": "The exact step-four curvature must be reduced modulo one or assigned a rational approximant; its real magnitude h^2/R alone gives no discrete cancellation."
+      },
+      {
+        "id": "Round56-nonnegative-fixed-h-resonance-average-closes-core",
+        "reason": "Even ideal off-diagonal cancellation leaves aggregate diagonal capacity sqrt(RH), and the high shell consists of at-most-singleton residue fibres with actual absolute capacity R."
+      },
+      {
+        "id": "Round56-completion-borrows-inherited-half-stars",
+        "reason": "Artificial completion endpoints are full cutoff owners. Existing angular or radial equality stars cannot be reassigned to them."
+      }
+    ],
+    "no_change": [
+      {"id": "M9-M1", "reason": "The signed cross-residue, cross-h residual core and alpha transfer remain open."},
+      {"id": "M9", "reason": "M9-M1 and M9-M2 remain open."},
+      {"id": "GC-target", "reason": "This method obstruction proves no new discrepancy exponent."}
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 56 makes the discrete modulo-one resonance interface exact and proves that any nonnegative fixed-h closure fails, including a strict actual-profile singleton-shell witness. It isolates signed cross-residue and cross-h cancellation as the next kernel but proves no residual-core bound or exponent."
+  }
+}

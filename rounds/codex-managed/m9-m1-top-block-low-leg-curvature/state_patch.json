@@ -1,0 +1,93 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-top-block-low-leg-margin",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Target-safe low-angular margin on the critical top block",
+        "status": "proved_internal",
+        "statement_tex": "Let I_Y subset [cY,CY] be consecutive with Y asymp sqrt(X) and R asymp sqrt(Y). Retain the exact active angular coefficient Omega_X^*(hq,h), all H_j floors, profile equality stars, the one-sided hard top, and the independent radial endpoint star. For every consecutive product window J subset I_Y of length at most R, including edge windows, the disjoint union {h<=H} dot-union {h>H,q<=Q} satisfies |sum_(n in J)^* A_(X;H,Q)(n)n^(-3/4)e(sqrt(Xn))| <<_epsilon X^epsilon(H+Q)Y^(-1/2). Hence the exact moving-window identity gives |S_(Y;H,Q)|<<_epsilon X^epsilon(H+Q), so polylogarithmic H+Q is target-safe. The proof uses actual sampled BV, one-signed fixed-leg curvature ell^2/R for ell<=sqrt(R), and the trivial complementary length above sqrt(R). Active support further forces q>=4h, q>=2sqrt(n), and h<=sqrt(n)/2, so a polylogarithmic low-q margin is empty. After H=(log(2X))^B, the unresolved core is (log(2X))^B<h<=sqrt(n)/2 and q=n/h>=2sqrt(n). This is a physical radial lemma only and supplies no alpha transfer.",
+        "dependencies": [
+          "M9-M1-global-angular-recombination",
+          "M9-M1-global-angular-Fejer-shifted-correlation-reduction",
+          "M9-M2-dyadic-weight-nondegeneracy",
+          "H4-Phi-regularity"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-top-block-low-leg-curvature/reports/low_leg_curvature_attack.md",
+            "rounds/codex-managed/m9-m1-top-block-low-leg-curvature/reports/blind_fixed_leg_rederivation.md",
+            "rounds/codex-managed/m9-m1-top-block-low-leg-curvature/reports/top_margin_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-top-block-low-leg-curvature/reviews/conductor_low_leg_adjudication.md",
+            "rounds/codex-managed/m9-m1-top-block-low-leg-curvature/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use this lemma to delete only the polylogarithmic low-h margin. Attack the remaining intermediate-h, large-q core without summing fixed-leg absolute bounds."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "dependencies_added": [
+          "M9-M1-top-block-low-leg-margin"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-top-block-low-leg-curvature/synthesis.md"
+          ]
+        },
+        "next_action": "On Y asymp sqrt(X), remove h<=(log(2X))^B using the proved low-leg lemma, then prove a signed window or Fejer bound for (log(2X))^B<h<=sqrt(n)/2 and q=n/h>=2sqrt(n), retaining chi_4, floors, profiles, and stars."
+      },
+      {
+        "id": "M9-M1-global-angular-Fejer-shifted-correlation-reduction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-top-block-low-leg-curvature/synthesis.md"
+          ]
+        },
+        "next_action": "Apply Fejer only to the residual intermediate-h, large-q top-block core after deleting the target-safe low-h margin."
+      },
+      {
+        "id": "M9-M1-alpha-bounded-zeta-high-transition-bound",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-top-block-low-leg-curvature/reviews/conductor_low_leg_adjudication.md"
+          ]
+        },
+        "next_action": "First solve the residual physical intermediate-h, large-q top-block core. Then separately prove common-antecedent connector and outside-height transfer; do not infer alpha closure from the physical low-margin theorem."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round55-first-derivative-gap-closes-low-legs",
+        "reason": "At perfect fourth powers actual admissible top-product examples have integral or half-integral first derivative. The proved theorem uses one-signed second derivative, not a derivative gap."
+      },
+      {
+        "id": "Round55-fixed-leg-curvature-sums-over-the-full-core",
+        "reason": "Each fixed leg costs Y^(-1/2), but polynomially many intermediate h legs remain; summing the lawful estimates recovers the Y^(1/4)-scale loss."
+      },
+      {
+        "id": "Round55-physical-low-margin-automatically-transfers-to-alpha",
+        "reason": "The finite mask connectors, signed Plemelj order, and outside-height limits are separate common-antecedent obligations not supplied by the physical radial estimate."
+      }
+    ],
+    "no_change": [
+      {"id": "M9-M1", "reason": "The intermediate-h, large-q physical core and alpha transfer remain open."},
+      {"id": "M9", "reason": "M9-M1 and M9-M2 remain open."},
+      {"id": "GC-target", "reason": "The low-margin theorem alone proves no new discrepancy exponent."}
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 8,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 55 rigorously removes every polylogarithmic low-h margin from the critical top block using actual-profile sampled BV and fixed-leg curvature, and sharpens the survivor by the cone q>=2sqrt(n). The polynomial intermediate-h core remains open, so no new exponent is claimed."
+  }
+}

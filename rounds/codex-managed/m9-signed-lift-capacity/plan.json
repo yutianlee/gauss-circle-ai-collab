@@ -1,0 +1,195 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 3,
+    "round_type": "mechanism_capacity",
+    "campaign_id": "m9-signed-lift-capacity",
+    "title": "Prove the B1 signed lift envelope and test its capacity for the M2 fat band",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "conductor_policy": {
+      "strategy_owner": "Codex conductor",
+      "subagents_may_start_next_round": false,
+      "monitoring": "Conductor monitors parity, g-range truncation, weight variation, exact signed normalization, endpoint powers, and theorem provenance.",
+      "round_close": "Close with separate verdicts on the B1 pair-weight lemma and on B1's sufficiency for the signed fat-band energy. Do not infer a pointwise M2 estimate from a global moment."
+    },
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 90,
+      "numerical_experimental_maximum_percent": 10,
+      "numerical_purpose": [
+        "falsify an exact finite identity or an endpoint normalization if necessary"
+      ],
+      "numerical_prohibition": "Finite signed ratios cannot validate an asymptotic signed-energy theorem.",
+      "available_local_tools": [
+        "Python",
+        "Mathematica"
+      ],
+      "literature_policy": "The conductor will review primary literature for sign-preserving reciprocal or double-exponential-sum mechanisms and will distinguish structural analogy from theorem applicability."
+    },
+    "target_obligations": [
+      "M9-M2-signed-lift-cancellation-B1",
+      "M9-M2-signed-fat-band-constant",
+      "M9-M2-character-factor",
+      "M9-near-collision-estimate"
+    ],
+    "frozen_target": {
+      "question": "Is the signed lift envelope A_chi(p/q)<<q/(D|p|) correct with exact support and weight hypotheses, and can that pointwise envelope alone control the signed M2 fat-band energy?",
+      "reference_formula": "For reduced p/q, A_chi(p/q)=sum_{gq in [D,2D), 1<=|gp|<=H_D} beta_{gp,H_D} w_D(gq), with beta_{h,H}=-Phi(|h|/(H+1))chi_4(|h|)1_{2 not divides h}/(pi|h|). The candidate B1 estimate is A_chi=0 for even p and |A_chi(p/q)|<<q/(D|p|) for odd p under a fixed smooth or bounded-variation dyadic profile.",
+      "quantities": [
+        "individual signed reduced-fraction lift weight A_chi(p/q)",
+        "l1 and l2 capacity implied by the B1 envelope",
+        "signed off-diagonal global fourth-moment fat-band form",
+        "absolute or adversarial envelope analogues",
+        "pointwise S_2(D;X), explicitly excluded from any moment-only conclusion"
+      ],
+      "endpoint_scales": [
+        "D=X^(1/3)",
+        "D=X^(3/8)",
+        "D=X^(1/2)"
+      ],
+      "forbidden_conflations": [
+        "bounded weights with bounded-variation or fixed smooth weights",
+        "a pointwise bound on each A_chi with cancellation in a quadratic or quartic energy",
+        "the absolute value of a signed subtotal with a lower bound for the full signed form",
+        "a global fourth moment with a pointwise M2 estimate",
+        "a literature theorem with a merely analogous phase or parameter range"
+      ]
+    },
+    "completion_criteria": [
+      "A statement-only worker independently proves or refutes B1 with the exact g interval, parity support, truncation edge, and weight regularity.",
+      "A capacity analyst writes one exact normalization of the signed fat-band form and determines the strongest implication obtainable from B1 alone.",
+      "A hostile reviewer tests bounded, sharp, BV, fixed-profile, endpoint-truncated, and adversarial weights and checks whether the proposed argument proves a false unsigned analogue.",
+      "The conductor records a primary-literature method audit with exact applicability barriers.",
+      "The conductor separately accepts, revises, or rejects B1 and the B1-implies-signed-energy step."
+    ],
+    "controls": [
+      "signed-vs-unsigned",
+      "coefficient-adversary",
+      "support-and-degeneracy",
+      "dyadic-endpoints",
+      "raw-vs-weighted",
+      "proves-too-much"
+    ],
+    "tasks": [
+      {
+        "id": "blind_b1_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "target": "Prove or refute the frozen B1 estimate from the exact beta formula. Track the nonempty g-range, p and g parity, the H_D truncation edge, Abel summation, and the weakest correct regularity assumption on w_D. Do not inspect prior B1 derivations or infer an energy estimate.",
+        "context_files": [
+          "problems/gauss_circle.md",
+          "sources/vaaler_1985.md",
+          "state/control_models.md"
+        ],
+        "excluded_context": [
+          "rounds/obligation-main/round_008",
+          "rounds/obligation-main/round_009",
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "rounds/codex-managed/m9-unit-frequency-w1-validation",
+          "claimant B1 derivations"
+        ],
+        "required_controls": [
+          "support-and-degeneracy",
+          "coefficient-adversary",
+          "dyadic-endpoints"
+        ],
+        "required_output": [
+          "exact lemma",
+          "proof or counterexample",
+          "weight regularity audit",
+          "endpoint audit",
+          "first doubtful step"
+        ]
+      },
+      {
+        "id": "signed_energy_capacity",
+        "role": "barrier_no_go",
+        "access_mode": "selected_context",
+        "target": "Define the frozen-coefficient smoothed global fourth moment and one exact signed off-diagonal fat-band form in reduced-fraction variables. Assuming B1 only, derive the strongest justified l1/l2/quartic bound or construct an envelope-saturating obstruction showing B1 cannot imply the desired signed energy. Keep the average-to-pointwise gap separate.",
+        "context_files": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "state/control_models.md",
+          "rounds/obligation-main/round_008/responses/A4-008.md",
+          "rounds/obligation-main/round_008/reviews/A1.md",
+          "rounds/codex-managed/m9-unit-frequency-w1-validation/synthesis.md"
+        ],
+        "required_controls": [
+          "signed-vs-unsigned",
+          "proves-too-much",
+          "dyadic-endpoints"
+        ],
+        "required_output": [
+          "exact c_chi normalization",
+          "B1-only capacity bound",
+          "sufficiency or no-go verdict",
+          "missing cancellation statement",
+          "pointwise-scope warning"
+        ]
+      },
+      {
+        "id": "adversarial_b1_review",
+        "role": "seam_reviewer",
+        "access_mode": "selected_context",
+        "target": "Attack both B1 and its proposed energy use. Test arbitrary bounded weights, sharp cutoffs, fixed smooth profiles, BV weights, short truncation intervals, p/q boundary cases, D=X^(1/3), X^(3/8), X^(1/2), and unsigned/adversarial coefficient controls. Identify the weakest surviving statement.",
+        "context_files": [
+          "sources/vaaler_1985.md",
+          "state/proof_obligations.yml",
+          "state/control_models.md",
+          "state/best_proof_draft.md",
+          "rounds/obligation-main/round_008/responses/A4-008.md",
+          "rounds/obligation-main/round_008/reviews/A1.md",
+          "rounds/codex-managed/m9-unit-frequency-w1-validation/synthesis.md"
+        ],
+        "required_controls": [
+          "signed-vs-unsigned",
+          "coefficient-adversary",
+          "support-and-degeneracy",
+          "proves-too-much"
+        ],
+        "required_output": [
+          "seam-by-seam verdict",
+          "counterexamples",
+          "strongest surviving B1 statement",
+          "energy-use verdict",
+          "accept/revise/reject recommendation"
+        ]
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "b1_algebra",
+        "requirement": "Verify parity, beta normalization, and the exact g-sum."
+      },
+      {
+        "id": "abel_regularization",
+        "requirement": "Verify which weight norms make partial summation uniform, including short truncated intervals."
+      },
+      {
+        "id": "capacity",
+        "requirement": "Determine what B1 alone implies for l1, l2, and the signed quartic form."
+      },
+      {
+        "id": "signed_scope",
+        "requirement": "Reject every step that would equally prove a known-false unsigned or adversarial analogue."
+      },
+      {
+        "id": "literature_applicability",
+        "requirement": "Map exact theorem phases, coefficient classes, and parameter ranges before importing a method."
+      }
+    ],
+    "promotion_policy": "Round 3 may promote B1 only with exact weight hypotheses, or record a no-go capacity result. No M9-M2, pointwise, M9, or final-theorem promotion is permitted."
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "feaeb32971492ea8f0adb245a996f4deb3085ab4e63749da98b5d2b2903f157d",
+    "generated_at": "2026-08-11T09:02:10.123211+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

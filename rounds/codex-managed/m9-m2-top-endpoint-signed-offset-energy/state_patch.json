@@ -1,0 +1,140 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-top-endpoint-odd-lift-resonance-obstruction",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Odd-lift parity and corrected reciprocal resonance in the top M2 energy",
+        "status": "proved_internal",
+        "statement_tex": "In the positive-offset part of the accepted transposed-row energy, write h=ga and h+2r=gb with (a,b)=1. Then g,a,b are odd, r=g(b-a)/2, and at a negative m-Poisson stationary mode k the complete character-phase factor is (-1)^((b-a)/2)e(-gX(sqrt(b)-sqrt(a))^2/(4k)). Consecutive admissible lifts differ by two, so the exact lift ratio is e(-X(sqrt(b)-sqrt(a))^2/(2k)); a step-two Abel bound is governed by ||2alpha||=||X(sqrt(b)-sqrt(a))^2/(2k)||, not ||alpha||. A fixed primal collar at m=ceil(gb/4) and m=ga has O(L^2 X^epsilon) capacity and removes the ceiling parity from the interior. If the sharp endpoint is left inside the transform, ceil(gb/4)=gb/4+1/2+chi_4(gb)/4 forces a mod-four split and the conservative distance ||4alpha||. For X=T^4, odd 13|T, (a,b)=(81,121), and k=2T^2/13, the saddle x*/g=169/4 is strictly interior, alpha=10-13T^2/2 is half-integral, and the two actual W-profile arguments 9/13 and 11/13 both have weight one. Thus the offset character gives no liftwise alternation and the criterion ||alpha|| >> G^(-1) cannot discard the resonant union. This obstruction proves no energy estimate.",
+        "dependencies": [
+          "M9-M2-top-endpoint-transposed-character-energy",
+          "M9-M2-top-endpoint-transform",
+          "H4-Phi-regularity"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reports/blind_signed_offset_rederivation.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reports/gcd_lift_resonance_attack.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reports/signed_offset_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reviews/conductor_round76_adjudication.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Independently certify the complete collar-extracted centred-integral normal form and actual-symbol step-two variation, then bound the coefficient-weighted reciprocal resonance union before absolute values over primitive pairs or k."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "dependencies_added": [
+          "M9-M2-top-endpoint-odd-lift-resonance-obstruction"
+        ],
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reports/blind_signed_offset_rederivation.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reports/signed_offset_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reports/gcd_lift_resonance_attack.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/synthesis.md"
+          ]
+        },
+        "next_action": "Remove fixed primal endpoint collars, certify the complete actual-symbol centred-integral and step-two variation theorem, and bound the corrected ||X(sqrt(b)-sqrt(a))^2/(2k)|| resonance union. The offset character is constant along odd gcd lifts."
+      },
+      {
+        "id": "M9-M2-top-endpoint-transposed-character-energy",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reports/blind_signed_offset_rederivation.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reports/signed_offset_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reviews/conductor_round76_adjudication.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reports/gcd_lift_resonance_attack.md"
+          ]
+        },
+        "next_action": "Use the exact finite energy as the antecedent. Any m-Poisson attack must use the odd-lift ratio and retain the corrected reciprocal resonance; do not infer character cancellation along gcd lifts."
+      },
+      {
+        "id": "M9-M2-sign-preserving-poisson-voronoi-route",
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reports/blind_signed_offset_rederivation.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reports/signed_offset_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reports/gcd_lift_resonance_attack.md"
+          ]
+        },
+        "next_action": "Treat radial Poisson as an exact representation only: the reciprocal k-process returns to the original m-phase. A new estimate must act jointly on the primitive-pair and reciprocal-mode resonance union."
+      },
+      {
+        "id": "M9-M2",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/synthesis.md"
+          ]
+        },
+        "next_action": "The hard top block remains the exact transposed-row energy. Correct its odd-lift resonance interface and bound the weighted primitive-pair/reciprocal-mode survivor; smooth packets and other M2 ranges remain separately owned."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round76-step-one-gcd-lift-resonance",
+        "reason": "All admissible gcd lifts are odd, so consecutive lifts differ by two. The geometric denominator is governed by ||2alpha||, and exact half-integer alpha families are fully coherent although ||alpha||=1/2."
+      },
+      {
+        "id": "Round76-offset-character-alternates-along-gcd-lifts",
+        "reason": "With r=g(b-a)/2 and odd g, (-1)^r=(-1)^((b-a)/2) is constant on a primitive lift ray. It supplies no liftwise alternation."
+      },
+      {
+        "id": "Round76-unextracted-sharp-endpoint-has-step-two-BV",
+        "reason": "The exact ceiling ceil(gb/4)=gb/4+1/2+chi_4(gb)/4 has a mod-four component. Step two is structurally valid only after the target-safe primal endpoint collar is removed; otherwise a step-four split is required."
+      },
+      {
+        "id": "Round76-rank-one-reciprocal-Poisson-gives-independent-curvature-saving",
+        "reason": "The gcd-lift phase is linear in the radial lift. Transforming the reciprocal variable back restores the original m-phase with cancelling Gaussian units and reciprocal Jacobians, so the operation is a self-return."
+      },
+      {
+        "id": "Round76-half-integer-ray-alone-lower-bounds-the-full-energy",
+        "reason": "The exact fourth-power family proves phase coherence and has both W-profile factors equal to one, but the remaining Vaaler/support weights and cancellation across primitive pairs and reciprocal modes are not controlled. It is a route falsifier, not a lower bound for the complete signed energy."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "reason": "The complete actual-symbol resonant union remains unbounded and no new polynomial L-range was proved."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "The hard top block is still open."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "Round 76 concerns only the M2 top-endpoint energy."
+      },
+      {
+        "id": "M9",
+        "reason": "Both M9-M1 and M9-M2 remain open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The corrected resonance obstruction gives no global exponent improvement."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "The round proves no target estimate, but it independently identifies and corrects a decisive parity error, supplies a strict interior actual-profile half-integer resonance, separates the step-two bulk from the step-four endpoint seam, and proves that reciprocal Poisson is a self-return rather than a new gain."
+  }
+}

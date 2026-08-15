@@ -1,0 +1,232 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-smooth-small-gcd-quarter-packet",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Smooth balanced endpoint small-gcd quarter-packet reduction",
+        "status": "proved_internal",
+        "statement_tex": "For a uniformly smooth balanced symbol T_A(R,L)=sum_(h,k) chi_4(h) A(h/L,k/L)e(R sqrt(hk)), 1<=L<=R^(1/2), one has sum_m r_L(m)^2 << L^2 log(2L); exact squares and R^(-1)-near-squares contribute O_epsilon(L^(1+epsilon)) absolutely; and gcd(h,k)>=L^(1/2) contributes O(L^(3/2)) absolutely. With a fixed smooth dyadic partition g=gcd(h,k) asymp G<L^(1/2), h=gu, k=gv, gcd(u,v)=1, Poisson in g gives T_G=G P_G/(2i), where P_G retains chi_4(u) and the signed difference of the 3/4 and 1/4 resonance packets. Therefore the weakest remaining small-gcd target is |sum_G G P_G| <<_epsilon L^(3/2)X^epsilon. The shellwise sum_G G|P_G| version is stronger. Sharp gcd cutoffs and the hard top denominator endpoint are excluded unless their boundary terms are controlled separately.",
+        "dependencies": [
+          "M9-M2-smooth-dual-three-quarter-equivalence",
+          "M9-M2-character-factor"
+        ],
+        "implies": [
+          "M9-M2-sign-preserving-poisson-voronoi-route",
+          "M9-M2"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-endpoint-fixed-profile-attack/reports/endpoint_dual_signed_attack.md",
+            "rounds/codex-managed/m9-endpoint-kernel-validation/reports/blind_packet_rederivation.md",
+            "rounds/codex-managed/m9-endpoint-kernel-validation/reports/hostile_endpoint_scope_review.md",
+            "rounds/codex-managed/m9-endpoint-kernel-validation/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Prove the outside-absolute signed aggregate |sum_G G P_G| at the L^(3/2) scale for the actual smooth interior symbol. Retain chi_4(u) and the 3/4-minus-1/4 packet difference. Treat the hard top denominator block separately."
+      },
+      {
+        "id": "M9-M2-fixed-profile-local-annulus-capacity",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Localized fixed-profile first-annulus capacity",
+        "status": "proved_internal",
+        "statement_tex": "Let a prescribed real smooth denominator profile have a fixed one-sign spatial slice J bounded away from the moving hard endpoint, and let the odd frequency block be nonterminal with L<=H/4 and a fixed positive interior. For either residue class modulo 4 and either side of the first nearest-odd product annulus, the additionally localized subtotal P_(c,J) has Y-average absolute size >> D/L and hence has size >>D/L for some real X asymp Y. This obstructs taking absolute values or estimating such localized pieces separately. It is not a statement about the whole class subtotal, the moving hard endpoint block, a common X for both classes, or the full signed block.",
+        "dependencies": [
+          "H4-Phi-regularity",
+          "M9-M2-two-shift-sine-kernel-sharpness"
+        ],
+        "implies": [
+          "M9-M2-reciprocal-SPD-route"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-endpoint-fixed-profile-attack/reports/endpoint_sine_kernel_attack.md",
+            "rounds/codex-managed/m9-endpoint-kernel-validation/reports/hostile_endpoint_scope_review.md",
+            "rounds/codex-managed/m9-endpoint-kernel-validation/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Seek cancellation before separating residue classes, sides, annuli, or spatial slices. Do not turn a localized subtotal into a lower bound for the full signed block."
+      },
+      {
+        "id": "M9-M2-top-endpoint-transform",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "One-sided transform for the hard top denominator block",
+        "status": "open",
+        "statement_tex": "For the explicit top block w_end(d)=W(d/y) 1_(d<=y), y=floor(sqrt X), derive a one-sided Poisson or stationary-phase formula with its boundary term, or prove the required pointwise M2 bound directly, uniformly for 1<L<X^(1/4). Discrete BV alone does not justify the accepted smooth transform because W(1)=1 and the continuum profile jumps at t=1.",
+        "dependencies": [
+          "M9-M2-dyadic-weight-nondegeneracy",
+          "M9-M2-smooth-dual-three-quarter-equivalence"
+        ],
+        "implies": [
+          "M9-endpoint-uniformity",
+          "M9-M2"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-endpoint-fixed-profile-attack/reports/dyadic_profile_certificate.md",
+            "rounds/codex-managed/m9-endpoint-kernel-validation/reports/blind_profile_rederivation.md",
+            "rounds/codex-managed/m9-endpoint-kernel-validation/reports/hostile_endpoint_scope_review.md",
+            "rounds/codex-managed/m9-endpoint-kernel-validation/synthesis.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Derive the exact Euler/Poisson endpoint contribution for the real top profile and decide whether it is target-sized, cancels with the dual bulk, or requires a direct sine-kernel estimate."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-dyadic-weight-nondegeneracy",
+        "status": "proved_internal",
+        "reason_for_promotion": "An explicit partition was proved in Round 6 and independently rederived statement-only in Round 7; the hostile reviewer confirmed the BV, sampled-mass, height, inactive-tail, and unique endpoint scopes.",
+        "statement_tex": "Let y=floor(sqrt X). There is an explicit fixed nonnegative telescoping dyadic partition of 1<=d<=y into active bands w_D plus a bottom remainder such that every active D>=X^(1/4) has fixed-shell support, ||w_D||_infinity+sum_d|w_D(d+1)-w_D(d)|<=4, sum_d|w_D(d)|>=D/8 for sufficiently large X, and H_D=floor(DX^(-1/4)) satisfies (1/2)DX^(-1/4)<=H_D<=DX^(-1/4). The inactive remainder is supported on d<<X^(1/4) and costs O(X^(1/4)) before Fourier expansion. Every interior active band is a full fixed C_c^infinity rescaling; exactly one top band has a continuum endpoint jump at d=floor(sqrt X). Thus B1, W-1, TTY, and profile-side Fejer hypotheses are verified for every active block, while smooth Poisson applies only to the interior blocks.",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-endpoint-fixed-profile-attack/reports/dyadic_profile_certificate.md",
+            "rounds/codex-managed/m9-endpoint-kernel-validation/reports/blind_profile_rederivation.md",
+            "rounds/codex-managed/m9-endpoint-kernel-validation/reports/hostile_endpoint_scope_review.md",
+            "rounds/codex-managed/m9-endpoint-kernel-validation/synthesis.md"
+          ]
+        },
+        "next_action": "Use the verified partition for B1, W-1, TTY, and Fejer profile inputs. Apply smooth Poisson only to interior bands; route the single hard top band through M9-M2-top-endpoint-transform."
+      },
+      {
+        "id": "M9-near-collision-absolute-lower-bounds",
+        "status": "derived_under_assumptions",
+        "blockers_removed": [
+          "M9-M2-dyadic-weight-nondegeneracy"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-endpoint-kernel-validation/reports/blind_profile_rederivation.md"
+          ]
+        },
+        "next_action": "Treat the actual weighted absolute W-1 obstruction as applicable to every active block of the chosen partition. It remains conditional on the matching exact-N=0 closure and remains unsigned/absolute only."
+      },
+      {
+        "id": "M9-M2-TTY-exponent-pair-wedge",
+        "status": "proved_external_dependency",
+        "blockers_removed": [
+          "M9-M2-dyadic-weight-nondegeneracy"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-endpoint-kernel-validation/reports/blind_profile_rederivation.md",
+            "rounds/codex-managed/m9-endpoint-kernel-validation/synthesis.md"
+          ]
+        },
+        "next_action": "Use the wedge 178ell+1638delta<=463 unconditionally for the chosen actual dyadic decomposition. Do not extend it outside the verified fixed-profile BV class."
+      },
+      {
+        "id": "M9-M2-frequency-phase-diagram-R5",
+        "status": "proved_internal",
+        "blockers_removed": [
+          "M9-M2-dyadic-weight-nondegeneracy"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-endpoint-kernel-validation/reports/blind_profile_rederivation.md",
+            "rounds/codex-managed/m9-endpoint-kernel-validation/synthesis.md"
+          ]
+        },
+        "next_action": "Treat the exact residual corridor U as unconditional for the chosen partition. Attack only U, with the hard top block and smooth interior blocks kept separate."
+      },
+      {
+        "id": "M9-M2-sign-preserving-poisson-voronoi-route",
+        "status": "proposed",
+        "dependencies_added": [
+          "M9-M2-smooth-small-gcd-quarter-packet"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-endpoint-kernel-validation/reports/blind_packet_rederivation.md",
+            "rounds/codex-managed/m9-endpoint-kernel-validation/synthesis.md"
+          ]
+        },
+        "next_action": "For smooth interior blocks, prove the outside-absolute small-gcd quarter-packet aggregate and retain the exact character. Separately solve the hard top endpoint transform."
+      },
+      {
+        "id": "M9-M2-reciprocal-SPD-route",
+        "status": "proposed",
+        "dependencies_added": [
+          "M9-M2-fixed-profile-local-annulus-capacity"
+        ],
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-endpoint-kernel-validation/reports/hostile_endpoint_scope_review.md"
+          ]
+        },
+        "next_action": "Do not estimate one-sign endpoint-interior slices, residue classes, sides, or annuli separately. Any direct proof must couple the signed pieces before absolute values."
+      },
+      {
+        "id": "M9-M2",
+        "status": "open",
+        "dependencies_added": [
+          "M9-M2-smooth-small-gcd-quarter-packet",
+          "M9-M2-top-endpoint-transform"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-endpoint-kernel-validation/reports/blind_packet_rederivation.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-endpoint-kernel-validation/reports/hostile_endpoint_scope_review.md"
+          ]
+        },
+        "next_action": "On the unconditional residual corridor, separate smooth interior blocks from the single hard top block. Prove the signed outside-absolute quarter-packet estimate for the former and an endpoint transform or direct bound for the latter."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round6-whole-profile-classwise-D-over-L-lower-bound",
+        "reason": "The proof gives D/L only for a fixed one-sign endpoint-interior slice P_(c,J); sign-changing slices can cancel in the whole class subtotal."
+      },
+      {
+        "id": "Round6-moving-hard-endpoint-covered-by-annulus-average",
+        "reason": "The cell average requires a fixed active endpoint margin and does not control a profile slice concentrated at the moving cutoff d<=floor(sqrt X)."
+      },
+      {
+        "id": "Round6-shellwise-packet-is-weaker-than-mean-square",
+        "reason": "The sum_G G|P_G| estimate imposes cancellation separately in each gcd shell. Only the outside-absolute |sum_G G P_G| target is logically weaker than the character-erasing mean square."
+      },
+      {
+        "id": "Round6-hard-endpoint-is-a-smooth-dual-symbol",
+        "reason": "The top continuum profile W(t)1_(t<=1) jumps at t=1, so the accepted smooth Poisson and packet identities do not apply without an endpoint term."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "The hard top denominator profile and the balanced signed small-gcd aggregate remain open."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M2 and M9-M1 remain open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The final theorem remains conditional on open M9."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 8,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 7 independently proves the actual dyadic profile infrastructure, validates the signed smooth small-gcd packet identity, and sharply corrects the direct and shellwise scopes without overstating endpoint progress."
+  }
+}

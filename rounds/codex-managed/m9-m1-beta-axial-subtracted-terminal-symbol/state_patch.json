@@ -1,0 +1,206 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-beta-cellwise-phase-removed-symbol-reduction",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Cellwise phase-removed beta terminal-symbol normalization",
+        "status": "proved_internal",
+        "statement_tex": "On c'=5/4 freeze one actual terminal cell (j,h,q,x,beta,sign), with lambda=pi q sqrt(Xx)/D_j. The already summed limiting endpoint-free vector has no single lambda. Split the singular u^(-1) hard-top share from the smooth top remainder and all interior W_j shares. Only on the singular share, after the top delta and constant-numerator PV/log term are removed together, put A(L)=-1-b/2-i(L+beta), D(L,nu)=A(L)+i(L-nu)/2, and R_A[H]=-iH(L,L)/(2AD)+[H(L,nu)-H(L,L)]/[(L-nu)D]. At fixed physical nu its exact derivative is -i Hdot_0/(2AD)+H_0/(2A^2D)+H_0/(4AD^2)+[partial_L H-Hdot_0]/[(L-nu)D]-[H-H_0]/[(L-nu)^2D]+i[H-H_0]/[2(L-nu)D^2], where Hdot_0=(partial_L+partial_nu)H(L,L). Smooth shares retain their ordinary mu integral. The original three contour measures leave (2pi)^(-2) after the top distribution. Remove the full stationary phase before differentiating, and keep chi_4(q), the stationary numerator (D_j/q)lambda, the real h,D_j,x monomial, contour factors, radial integration, floors, stars, and external X^(1/4) outside the pre-numerator symbol. Exact Morse localization is a leading incomplete-Fresnel term plus a normalized varying-amplitude remainder, not a scalar multiplier. This is an exact normalization and derivative reduction, not a symbol estimate.",
+        "dependencies": [
+          "M9-M1-beta-mask-endpoint-axial-compatibility",
+          "M9-M1-beta-endpoint-free-axial-remainder-limit",
+          "M9-M1-beta-finite-section-Plemelj-decomposition",
+          "M9-M1-beta-two-saddle-Fresnel-normal-form",
+          "M9-M1-beta-separated-R1-regular-symbol-BV"
+        ],
+        "implies": [
+          "M9-M1-beta-axial-subtracted-terminal-symbol-bound"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-axial-subtracted-terminal-symbol/reports/quantitative_terminal_symbol_attack.md",
+            "rounds/codex-managed/m9-m1-beta-axial-subtracted-terminal-symbol/reports/terminal_symbol_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-axial-subtracted-terminal-symbol/reviews/conductor_symbol_type_audit.md",
+            "rounds/codex-managed/m9-m1-beta-axial-subtracted-terminal-symbol/reviews/conductor_cell_normalization_audit.md",
+            "rounds/codex-managed/m9-m1-beta-axial-subtracted-terminal-symbol/reviews/conductor_regularizer_check.md",
+            "rounds/codex-managed/m9-m1-beta-axial-subtracted-terminal-symbol/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-axial-subtracted-terminal-symbol/reports/blind_terminal_symbol_definition.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use this normalization only cellwise. Prove the mixed norm for the complete phase-removed second translation divided difference and moving traces; do not attach one lambda to the aggregate vector."
+      },
+      {
+        "id": "M9-M1-beta-cellwise-symbol-sum-reduction",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Conditional summation of the cellwise beta saddle symbol",
+        "status": "proved_internal",
+        "statement_tex": "Let r=5/4-(a+b)/2 in (1,2). Assume on every phase-removed signed saddle/entry/exit cell the complete mixed physical-height norm, including moving regular traces and the exact normalized Morse remainder, is O_epsilon(X^epsilon lambda^(-2)). After multiplication by the exact stationary numerator, the retained coefficient before the external X^(1/4) factor is |chi_4(q)|h^(-r)q^(-2)D_j^(2-r)X^(r/2-1/2+b/4)x^(-r/2-b/2-5/4). Radial integration contributes min(1,[sqrt(X)|2 minus-or-plus q/D_j|]^(-1)); its q-sum is O(X^(-1/2)log(2X)). The formal resonance q=2D_j is even and vanishes under chi_4, and the nearest nonzero odd term is O((D_j sqrt(X))^(-1)). The h-sum and all actual dyadic scales are therefore polylogarithmic internally, and restoring the external normalization gives O_epsilon(X^(1/4+epsilon)) for this complete large-alpha saddle package. This is a conditional implication only; it does not prove the mixed symbol hypothesis, bounded-alpha or double-bounded shares, or the complete beta transition.",
+        "dependencies": [
+          "M9-M1-beta-cellwise-phase-removed-symbol-reduction",
+          "M9-M1-beta-axial-subtracted-terminal-symbol-bound",
+          "M9-M1-beta-two-saddle-Fresnel-normal-form",
+          "M9-M1-beta-R1-face-log-q4-bound"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-axial-subtracted-terminal-symbol/reports/quantitative_terminal_symbol_attack.md",
+            "rounds/codex-managed/m9-m1-beta-axial-subtracted-terminal-symbol/reports/terminal_symbol_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-axial-subtracted-terminal-symbol/reviews/conductor_conditional_sum_audit.md",
+            "rounds/codex-managed/m9-m1-beta-axial-subtracted-terminal-symbol/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Invoke this implication only after the cellwise mixed symbol norm and its exact Morse remainder are proved; do not use it for bounded-alpha or double-bounded cells."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-beta-physical-height-finite-section-BV",
+        "status": "proved_internal",
+        "statement_tex": "Let I_(U,V)(L)=[-V,V] intersect [L-U,L+U] and R(L)=int_(I_(U,V)(L))K(L,nu)dnu on a signed cell I_lambda of length O(lambda). The earlier factorized hypothesis |K|<=M lambda^(-2)w, |partial_L K|<=M lambda^(-3)w, with the same L1 weight on moving traces, remains sufficient. More generally and directly, it is enough that sup_(L in I_lambda)int|K(L,nu)|dnu + int_(I_lambda)int|partial_L K(L,nu)|dnu dL + sum_gamma int_(I_lambda)|K(L,gamma(L))|dL <= M lambda^(-2), where gamma ranges over the affine moving faces. Then ||R||_infinity+Var_(I_lambda)R=O(M lambda^(-2)). This is the physical-height Leibniz lemma; it neither controls an oscillatory stationary phase nor supplies the exact Morse remainder needed before K is formed.",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-axial-subtracted-terminal-symbol/reports/quantitative_terminal_symbol_attack.md",
+            "rounds/codex-managed/m9-m1-beta-axial-subtracted-terminal-symbol/reports/terminal_symbol_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-axial-subtracted-terminal-symbol/reviews/conductor_profile_weight_check.md",
+            "rounds/codex-managed/m9-m1-beta-axial-subtracted-terminal-symbol/synthesis.md"
+          ]
+        },
+        "next_action": "Apply the direct mixed-norm form only after the complete cellwise phase-removed kernel, its moving traces, and the separate exact Morse remainder have been controlled."
+      },
+      {
+        "id": "M9-M1-beta-axial-subtracted-terminal-symbol-bound",
+        "status": "open",
+        "title": "Cellwise phase-removed axial-subtracted beta mixed symbol bound",
+        "statement_tex": "At c'=5/4, after the proved endpoint, side, arithmetic, artificial, axial, collision, connector, and corner ownership operations, freeze one actual cell (j,h,q,x,beta,sign) and lambda=pi q sqrt(Xx)/D_j. Use M9-M1-beta-cellwise-phase-removed-symbol-reduction: split the singular hard-top Plemelj regularizer from all smooth ordinary-mu shares; remove the complete stationary phase; and keep the character, stationary numerator (D_j/q)lambda, exact real coefficient monomial, contour constants, radial integration, floors, stars, and external X^(1/4) outside. Prove uniformly that sup_L int|K(L,nu)|dnu + int int|partial_L K(L,nu)|dnu dL + sum_gamma int|K(L,gamma(L))|dL + R_Morse(K) <<_epsilon X^epsilon lambda^(-2), where partial_L fixes physical nu, gamma includes every moving regular face, and R_Morse is the exact normalized varying-amplitude Morse remainder with its endpoint traces. For the singular share the first open coefficient is E_H=[partial_L H(L,nu)-(partial_L+partial_nu)H(L,L)]/(L-nu)-[H(L,nu)-H(L,L)]/(L-nu)^2, with complete entry/exit, beta-connector, and common-ownership factors. Smooth shares retain ordinary mu integration and may use an X-truncated harmonic height weight of polylogarithmic L1 norm. No single-lambda bound is asserted for the already summed limiting vector.",
+        "dependencies_added": [
+          "M9-M1-beta-cellwise-phase-removed-symbol-reduction"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-axial-subtracted-terminal-symbol/reports/blind_terminal_symbol_definition.md",
+            "rounds/codex-managed/m9-m1-beta-axial-subtracted-terminal-symbol/reports/quantitative_terminal_symbol_attack.md",
+            "rounds/codex-managed/m9-m1-beta-axial-subtracted-terminal-symbol/reports/terminal_symbol_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-beta-axial-subtracted-terminal-symbol/synthesis.md"
+          ]
+        },
+        "next_action": "Expand the complete phase-removed hard-top numerator and prove the mixed norm for E_H and every moving trace through both saddle signs and entry/exit. Treat smooth shares separately and reuse the already closed conditional coefficient sum."
+      },
+      {
+        "id": "M9-M1-beta-complete-physical-height-symbol-bound",
+        "status": "open",
+        "statement_tex": "The all-strata aggregate pointwise-symbol formulation is rejected. Boundary, side, endpoint, arithmetic, artificial, axial, collision, connector, corner, and global-height interfaces are already routed through their proved modules. The remaining quantitative terminal interface is exactly the cellwise phase-removed mixed symbol obligation M9-M1-beta-axial-subtracted-terminal-symbol-bound, followed by the proved physical-height finite-section BV lemma and M9-M1-beta-cellwise-symbol-sum-reduction. This compositional formulation retains singular hard-top and smooth ordinary-mu shares separately and makes no single-lambda assertion for the limiting aggregate. Bounded-alpha, double-bounded, and complete beta-transition assembly remain separate obligations.",
+        "dependencies_added": [
+          "M9-M1-beta-cellwise-phase-removed-symbol-reduction",
+          "M9-M1-beta-cellwise-symbol-sum-reduction"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-axial-subtracted-terminal-symbol/synthesis.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-m1-beta-axial-subtracted-terminal-symbol/reports/terminal_symbol_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-axial-subtracted-terminal-symbol/reports/quantitative_terminal_symbol_attack.md"
+          ]
+        },
+        "next_action": "Prove the corrected cellwise mixed symbol norm, then compose it with the finite-section and conditional summation reductions; do not revive an all-inclusive aggregate pointwise kernel."
+      },
+      {
+        "id": "M9-M1-beta-regular-finite-part-symbol-BV",
+        "status": "open",
+        "statement_tex": "After removing the explicit delta jumps and q^(-4) height-face logs, the separated fixed-b R1 kernel has the target local norm. For the complete regular beta finite part, use the proved boundary-first and axial ownership modules, the exact cellwise phase-removed normalization, and the direct mixed physical-height BV lemma. The sole quantitative terminal input is M9-M1-beta-axial-subtracted-terminal-symbol-bound; the large-alpha coefficient and resonance sums are then supplied by M9-M1-beta-cellwise-symbol-sum-reduction. The singular hard-top divided difference and every smooth ordinary-mu share remain distinct, and all phase, stationary numerator, h,D_j,x, contour, floor, star, character, and external factors retain their declared ownership. Bounded-alpha and double-bounded assembly remain open.",
+        "dependencies_added": [
+          "M9-M1-beta-cellwise-phase-removed-symbol-reduction",
+          "M9-M1-beta-cellwise-symbol-sum-reduction"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-beta-axial-subtracted-terminal-symbol/synthesis.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-beta-axial-subtracted-terminal-symbol/reports/quantitative_terminal_symbol_attack.md",
+            "rounds/codex-managed/m9-m1-beta-axial-subtracted-terminal-symbol/reports/terminal_symbol_hostile_audit.md"
+          ]
+        },
+        "next_action": "Prove the complete second translation divided-difference mixed norm and Morse traces. The scale and exact-resonance summation no longer needs to be redone."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round39-single-lambda-bound-for-aggregate-vector",
+        "reason": "The limiting vector is summed over j,h,q and integrated over x, so lambda=pi q sqrt(Xx)/D_j varies inside it. The bare lambda symbol inequality is meaningful only after freezing and normalizing a cell."
+      },
+      {
+        "id": "Round39-Plemelj-regularizer-on-all-spatial-shares",
+        "reason": "Only the singular u^(-1) hard-top share produces the signed delta/PV regularizer. Smooth top remainders and interior W_j shares retain ordinary mu integration and cannot undergo a second top subtraction."
+      },
+      {
+        "id": "Round39-drop-two-residual-contour-measures",
+        "reason": "The top distribution consumes one of the three (2pi)^(-1) factors. The beta and nu measures leave (2pi)^(-2); omitting them makes an aggregate identity inexact even though it does not change exponents."
+      },
+      {
+        "id": "Round39-differentiate-unremoved-stationary-phase-as-symbol",
+        "reason": "On saddle entry and exit, Psi'(L)=log(|L+beta|/lambda) is order one. Differentiating the oscillatory phase preserves lambda^(-2) rather than producing the required lambda^(-3)."
+      },
+      {
+        "id": "Round39-exact-scalar-Fresnel-times-varying-cell",
+        "reason": "Uniform Morse localization of a varying amplitude is an incomplete-Fresnel leading term plus an exact normalized remainder and moving traces, not an exact scalar factorization by the saddle value."
+      },
+      {
+        "id": "Round39-X-independent-pointwise-height-weight-is-required",
+        "reason": "The downstream Leibniz argument only needs the mixed physical-height norm. Smooth translated ridges may instead use an actual-range truncated harmonic weight with polylogarithmic L1 cost."
+      },
+      {
+        "id": "Round39-Cauchy-existence-implies-quantitative-symbol",
+        "reason": "Round 38 proves a fixed-X signed Cauchy limit with unrestricted X-dependent constants. It supplies neither the cellwise X^epsilon mixed norm nor the fixed-physical-height second divided-difference bound."
+      },
+      {
+        "id": "Round39-conditional-leading-sum-proves-complete-beta-transition",
+        "reason": "The summation ledger is conditional on the missing mixed symbol norm and covers the large-alpha saddle package. Bounded-alpha, double-bounded, and final transition assembly remain open."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1-beta-log-amplitude-two-saddle-kernel",
+        "reason": "The exact phase-removed complete divided-difference mixed norm and bounded/double-bounded assembly remain open."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "Round 39 corrects and narrows the quantitative interface but does not prove the terminal mixed symbol norm or the remaining M1 corridor."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Round 39 concerns the transformed M1 beta branch only."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1 and M9-M2 remain open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "No unconditional Gauss-circle estimate is claimed."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 8,
+    "idea_quality_score": 9,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 39 removes an ill-typed aggregate target, fixes the singular-versus-smooth and contour normalizations, identifies the exact phase-removed second translation divided difference, and proves that the conditional coefficient and resonance sums are target-safe. The quantitative mixed symbol norm itself remains open."
+  }
+}

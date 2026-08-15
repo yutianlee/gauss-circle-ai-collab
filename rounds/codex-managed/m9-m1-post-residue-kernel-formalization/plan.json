@@ -1,0 +1,49 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 18,
+    "round_type": "post_residue_kernel_formalization",
+    "campaign_id": "m9-m1-post-residue-kernel-formalization",
+    "title": "Define and validate the post-residue Perron profile kernel",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "conductor_policy": {
+      "strategy_owner": "Codex conductor",
+      "subagents_may_start_next_round": false,
+      "monitoring": "Require a term-by-term kernel, finite truncations, explicit abscissae and residues, and a strict separation between scalar profile inversion and the open radial sum.",
+      "round_close": "Close only after blind reconstruction, direct proof/refutation, hostile hidden-dependence audit, and graph adjudication."
+    },
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 95,
+      "numerical_experimental_maximum_percent": 5,
+      "numerical_purpose": ["bounded falsification of endpoint and truncation constants"],
+      "literature_policy": "Primary sources only for exact matching Perron/BV inversion statements."
+    },
+    "target_obligations": [
+      "M9-M1-high-2adic-kernel-pointwise-bound",
+      "M9-M1-high-2adic-tail-conditional",
+      "M9-M1-maximal-angular-sign-kernel",
+      "M9-M1-top-Perron-angular-correlation"
+    ],
+    "tasks": [
+      {"id":"blind_post_residue_kernel_definition","role":"statement_only_kernel_reconstructor","brief":"rounds/codex-managed/m9-m1-post-residue-kernel-formalization/briefs/blind_post_residue_kernel_definition.md"},
+      {"id":"perron_bv_pointwise_proof","role":"scalar_kernel_bound_prover","brief":"rounds/codex-managed/m9-m1-post-residue-kernel-formalization/briefs/perron_bv_pointwise_proof.md"},
+      {"id":"post_residue_kernel_hostile_audit","role":"hostile_definition_and_dependence_reviewer","brief":"rounds/codex-managed/m9-m1-post-residue-kernel-formalization/briefs/post_residue_kernel_hostile_audit.md"}
+    ],
+    "exit_gates": ["exact kernel definition","complete residue/abscissa ledger","pointwise proof or counterexample","radial-dependence audit","tail implication verdict","conductor decision"],
+    "promotion_policy": "Promote O(log X) only for a fully specified scalar kernel separated from the arithmetic radial sum; otherwise revise or reject the tail implication.",
+    "closing_assessment": {
+      "decision": "promote_direct_profile_bound_reject_post_FE_scalarization",
+      "graph_mutation": true,
+      "main_result": "The direct scalar actual-profile kernel is uniformly O(log X) under symmetric Perron truncation. The reflected remainder is instead a vector Hankel operator with a dual radial index, so the full high-2-adic tail remains conditional."
+    },
+    "next_round": 19
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "e581befbc6c1648e50ab0382a0a9478d84629786d37613d0a63f1b1acdad0746",
+    "generated_at": "2026-08-12T19:35:00+08:00"
+  },
+  "artifact_policy": {"subagents_may_edit_shared_state":false,"computation_evidence_level":"diagnostic_only","coordinator_owns_synthesis_and_state_patch":true}
+}
