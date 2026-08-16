@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "round_index": 81,
+  "campaign_id": "m9-m1-upper-conductor-transition-flattening",
+  "title": "Flatten Farey transitions and extend the fixed-interior M1 conductor range",
+  "status": "complete",
+  "starting_graph_sha256": "f69da71546e5a6fd1d48c7fa561e17b62ce6669fb4a29c497f74f748e7379635",
+  "max_concurrency": 3,
+  "objective": "Prove or refute a neighbor-independent main plus O(sqrt(C/J)) complete-symbol transition remainder, and determine whether it extends C <= J^(32/45) to C <= J^(13/18).",
+  "tasks": [
+    "blind_transition_flattening_rederivation",
+    "farey_transition_flattening_attack",
+    "transition_gluing_hostile_audit"
+  ],
+  "completion_gates": [
+    "Exact all-class transition decomposition or exact counterexample",
+    "Clean statement-only rederivation",
+    "Hostile Farey-sawtooth and source audit",
+    "Energy and downstream-scope validation",
+    "Conductor adjudication and State Patch"
+  ]
+}

@@ -1,0 +1,253 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 80,
+    "round_type": "m9_m2_top_endpoint_signed_strict_metric_energy",
+    "campaign_id": "m9-m2-top-endpoint-signed-strict-metric-energy",
+    "title": "Bound the residual signed nonsquare strict-metric energy",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "cb007911c1e9d407d9adbc8919ce44cc3eaab411a212d0925e1176f5a154a43a",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 80,
+      "numerical_experimental_maximum_percent": 20,
+      "planned_numerical_percent": 0,
+      "literature_policy": "Primary sources may be audited for signed large-sieve, quadratic-irrational, divisor-fiber, or discrepancy estimates, but no theorem is imported without a literal coefficient, range, parity, endpoint, and uniformity map."
+    },
+    "target_obligations": [
+      "M9-M2-top-endpoint-signed-cone",
+      "M9-M2-top-endpoint-transposed-character-energy",
+      "M9-M2"
+    ],
+    "frozen_target": {
+      "question": "After removing primitive square rays, exact nonsquare centers, and the positive-safe blocks AJD^3<<L^3, can the remaining complete-coefficient strict-metric nonsquare sum be bounded by L^2 X^epsilon through a signed primitive-ray or fiber argument?",
+      "reference_formula": "For q=(b-a)/2, theta=Lambda/k=X(sqrt(b)-sqrt(a))^2/(2k), g=2n+1, the exact combined phase is (-1)^q e(-g theta/2). If ell is the nearest integer and eta=theta-ell, it is (-1)^(q+ell)e(-g eta/2). Bound the dyadic strict-metric sum with AJD^3>>L^3 and 0<|eta| asymp 1/R while retaining B^circ_(a,b,k)(g).",
+      "quantities": [
+        "The exact square family, exact nonsquare centers, and blocks AJD^3<<L^3 are already removed.",
+        "The residual window has ordinary density 1/R; density and centered discrepancy must be controlled together.",
+        "The literal outer sign is (-1)^(q+ell) after nearest-integer reduction and may not be discarded.",
+        "The complete Round-77 centered integral, finite odd lift support, floors, stars, profiles, and saddle transitions remain inside the sum.",
+        "The target is L^2 X^epsilon after all dyadic A,D,K,G,R blocks, with no absolute sum over primitive rays or reciprocal modes."
+      ],
+      "scope": [
+        "complete Round-77 centered-integral coefficient",
+        "residual primitive nonsquare strict-metric blocks AJD^3>>L^3",
+        "nearest-integer fiber parity and product p=ell k",
+        "density plus centered discrepancy",
+        "signed primitive-ray TT-star or equivalent",
+        "perfect-power, near-square, Pell, endpoint, and adversarial controls"
+      ]
+    },
+    "completion_criteria": [
+      "Derive the exact combined odd-lift phase and nearest-integer parity with no normalization loss.",
+      "Write a complete one-count dyadic residual sum after all Round-78 and Round-79 removals.",
+      "Prove the L^2 X^epsilon target, close a new explicit hard subrange, or give a rigorous actual-symbol no-go that isolates a strictly smaller signed survivor.",
+      "Treat the ordinary density and centered discrepancy together; do not substitute another positive incidence count.",
+      "Retain the complete actual coefficient through every Cauchy, Fourier, TT-star, or fiber transformation.",
+      "Test exact, strict-metric, near-square, Pell, perfect-power, empty/singleton, endpoint/star, and phase-conjugating controls.",
+      "Complete a clean statement-only rederivation, an analytic attack, and a hostile/source audit.",
+      "Do not promote M9-M2, M9, endpoint uniformity, or the exponent unless the full residual signed energy is actually proved and independently validated."
+    ],
+    "controls": [
+      "external_normalization",
+      "round78_round79_exclusions",
+      "primitive_parity",
+      "combined_odd_lift_phase",
+      "nearest_integer_sign",
+      "strict_metric_one_count",
+      "density_and_discrepancy",
+      "complete_actual_coefficient",
+      "lift_support_and_step_two_variation",
+      "fiber_product_parity",
+      "safe_block_boundary",
+      "near_square_and_Pell",
+      "perfect_power_metric_recurrence",
+      "endpoints_stars_and_collars",
+      "coefficient_adversary",
+      "rank_one_self_return",
+      "source_hypothesis_map",
+      "downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "blind_strict_metric_energy_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "completed_clean",
+        "target": "Independently derive the exact residual signed strict-metric sum and prove the strongest lawful target, partial range, or no-go from the self-contained packet.",
+        "context_files": [
+          "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/derivation_packet.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/briefs/blind_strict_metric_energy_rederivation.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "all strategy files",
+          "all Round-76 through Round-79 reports and reviews",
+          "all sibling Round-80 reports",
+          "all source cards"
+        ],
+        "required_controls": [
+          "external_normalization",
+          "round78_round79_exclusions",
+          "primitive_parity",
+          "combined_odd_lift_phase",
+          "nearest_integer_sign",
+          "strict_metric_one_count",
+          "density_and_discrepancy",
+          "complete_actual_coefficient",
+          "lift_support_and_step_two_variation",
+          "fiber_product_parity",
+          "safe_block_boundary",
+          "near_square_and_Pell",
+          "perfect_power_metric_recurrence",
+          "endpoints_stars_and_collars",
+          "coefficient_adversary",
+          "rank_one_self_return",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "One seven-section statement-only report at the assigned path."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/reports/blind_strict_metric_energy_rederivation.md"
+      },
+      {
+        "id": "primitive_ray_parity_energy_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "completed",
+        "target": "Exploit the exact (-1)^(q+ell) fiber parity, complete odd-lift transform, and density/discrepancy decomposition to prove the residual signed energy or isolate its smallest actual-symbol correlation.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0816_full_proof_strategy.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/derivation_packet.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/briefs/primitive_ray_parity_energy_attack.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-actual-symbol-variation/reviews/conductor_round77_adjudication.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/reviews/conductor_round78_adjudication.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/reviews/conductor_round79_adjudication.md"
+        ],
+        "excluded_context": [
+          "all sibling Round-80 reports"
+        ],
+        "required_controls": [
+          "external_normalization",
+          "round78_round79_exclusions",
+          "primitive_parity",
+          "combined_odd_lift_phase",
+          "nearest_integer_sign",
+          "strict_metric_one_count",
+          "density_and_discrepancy",
+          "complete_actual_coefficient",
+          "lift_support_and_step_two_variation",
+          "fiber_product_parity",
+          "safe_block_boundary",
+          "near_square_and_Pell",
+          "perfect_power_metric_recurrence",
+          "endpoints_stars_and_collars",
+          "coefficient_adversary",
+          "rank_one_self_return",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "One seven-section analytic report at the assigned path."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/reports/primitive_ray_parity_energy_attack.md"
+      },
+      {
+        "id": "strict_metric_energy_hostile_source_audit",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "status": "completed_clean",
+        "target": "Attempt to falsify parity, density-discrepancy, or TT-star closures with actual perfect-power and near-square controls, and audit exact primary-source applicability to the resulting signed fiber sum.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/derivation_packet.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/briefs/strict_metric_energy_hostile_source_audit.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reviews/conductor_round76_adjudication.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-actual-symbol-variation/reviews/conductor_round77_adjudication.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/reviews/conductor_round79_adjudication.md"
+        ],
+        "excluded_context": [
+          "all sibling Round-80 reports"
+        ],
+        "required_controls": [
+          "external_normalization",
+          "round78_round79_exclusions",
+          "primitive_parity",
+          "combined_odd_lift_phase",
+          "nearest_integer_sign",
+          "strict_metric_one_count",
+          "density_and_discrepancy",
+          "complete_actual_coefficient",
+          "lift_support_and_step_two_variation",
+          "fiber_product_parity",
+          "safe_block_boundary",
+          "near_square_and_Pell",
+          "perfect_power_metric_recurrence",
+          "endpoints_stars_and_collars",
+          "coefficient_adversary",
+          "rank_one_self_return",
+          "source_hypothesis_map",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "One seven-section hostile/source report at the assigned path, with exact links for each source used."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/reports/strict_metric_energy_hostile_source_audit.md"
+      }
+    ],
+      "live_notes": [
+        {
+          "timestamp": "2026-08-16T16:35:00+08:00",
+          "author": "Codex conductor",
+          "note": "Round 79 is closed and graph-applied. Round 80 freezes the literal signed strict-metric hard blocks; positive incidence classification is excluded as a closing mechanism."
+        },
+        {
+          "timestamp": "2026-08-16T17:55:00+08:00",
+          "author": "Codex conductor",
+          "note": "Round 80 closes with an exact actual-symbol no-go: quotient parity and the apparent half-frequency gap cancel against the complete coefficient carrier, restoring the density zero mode and the original transposed character kernel. No hard range or downstream estimate is promoted."
+        }
+      ],
+    "review_seams": [
+      {
+        "id": "phase_and_parity",
+        "requirement": "Check the exact combination (-1)^q e(-g theta/2) and nearest-integer sign (-1)^(q+ell)."
+      },
+      {
+        "id": "one_count_residual",
+        "requirement": "Check that square rays, exact nonsquare centers, and positive-safe blocks are removed exactly once."
+      },
+      {
+        "id": "density_discrepancy",
+        "requirement": "Check both the ordinary density and centered discrepancy without positive majorization."
+      },
+      {
+        "id": "actual_symbol",
+        "requirement": "Retain the complete centered integral and all endpoints, stars, profiles, and transitions."
+      },
+      {
+        "id": "hostile_families",
+        "requirement": "Test near-square, Pell, perfect-power, singleton, endpoint, and phase-conjugating controls."
+      },
+      {
+        "id": "source_applicability",
+        "requirement": "Audit literal hypotheses and reject structural analogies or self-returns."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "cb007911c1e9d407d9adbc8919ce44cc3eaab411a212d0925e1176f5a154a43a",
+    "generated_at": "2026-08-16T07:08:04.956367+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

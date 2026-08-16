@@ -1,6 +1,6 @@
 # Reading Packet
 
-Generated for active campaign `m9-m2-top-endpoint-signed-offset-energy`.
+Generated for active campaign `m9-m1-deep-exceptional-strata-dispersion`.
 
 ## Current Theorem Target
 
@@ -127,7 +127,7 @@ No State Patch applied. Campaign preparation changes workflow artifacts only.
 - Track: `M9_analytic`
 - Historical steward: `A2` (non-binding)
 - Blockers: `M9-endpoint-uniformity`
-- Next action: Attack the exact global angular symbol by Mellin separation, while separately auditing whether the final bridge may use the global M1 aggregate instead of every dyadic M1 block.
+- Next action: Close the deep first-band correlation D_1<|d|<Delta_b-E_*, then treat C>J^(3/4), cone edges, remaining radial sectors, and endpoint uniformity.
 
 ### M9-M1-alpha-bounded-zeta-high-transition-bound: Connector-completed alpha-bounded zeta-high transition bound
 
@@ -212,7 +212,7 @@ No State Patch applied. Campaign preparation changes workflow artifacts only.
 - Track: `M9_analytic`
 - Historical steward: `A2` (non-binding)
 - Blockers: `M9-M2-character-factor`, `M9-near-collision-taxonomy`, `M9-M2-denominator-paired-weighted-bound`, `M9-M2-fourth-moment-average-to-pointwise`, `M9-M2-local-fourth-moment-LFM`
-- Next action: For the hard top block attack the exact alternating transposed-row energy. Smooth interior small-gcd packets and the fourth-moment/pointwise interface remain separate.
+- Next action: The residual top-endpoint cross-row energy is still open after exact carrier recoupling. Close it directly, then reconcile every other M2 packet and endpoint owner.
 
 ### M9-M2-GM4-from-exact-plus-graded: Global fourth-moment route from exact resonance plus graded near-collision
 

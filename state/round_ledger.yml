@@ -2,7 +2,7 @@
   "schema_version": 1,
   "research_program": "gauss-circle-proof-development",
   "conductor": "Codex",
-  "active_round": 73,
+  "active_round": 89,
   "archive_note": "Rounds 1-25 are documented in their campaign plan, synthesis, state patch, and historical project summary artifacts. This compact ledger retains the immediately active research chain after a repair of the derived ledger file in Round 28.",
   "rounds": [
     {
@@ -2147,6 +2147,458 @@
         "main_result": "Odd gcd lifts have step two and the offset character is constant along each primitive ray. The correct bulk resonance is ||2alpha||, with a strict actual-profile half-integer coherent family; an unextracted endpoint may require step four. Reciprocal Poisson self-returns, and no energy, polynomial L range, or exponent is proved."
       },
       "next_round": 77
+    },
+    {
+      "round_index": 77,
+      "campaign_id": "m9-m2-top-endpoint-actual-symbol-variation",
+      "type": "m9_m2_top_endpoint_actual_symbol_variation",
+      "status": "closed",
+      "objective": "Prove or refute the complete collar-extracted Poisson/gcd-lift identity, aggregate error, and step-two actual-symbol variation theorem.",
+      "tasks": [
+        {"id": "blind_actual_symbol_rederivation", "role": "statement_only_blind_rederiver", "status": "completed"},
+        {"id": "centered_integral_variation_attack", "role": "analytic_discovery", "status": "completed"},
+        {"id": "actual_symbol_hostile_audit", "role": "hostile_seam_reviewer", "status": "completed"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 80,
+        "numerical_experimental_maximum_percent": 20,
+        "planned_numerical_percent": 0
+      },
+      "exit_gates": [
+        "finite Poisson endpoints",
+        "fixed collar capacity",
+        "complete actual symbol",
+        "aggregate error sum",
+        "step-two variation",
+        "saddle entry and exit",
+        "sharp-ceiling mod-four seam",
+        "half-integer actual-profile control",
+        "statement-only and hostile gates",
+        "conductor decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_complete_actual_symbol_normal_form_and_step_two_variation",
+        "graph_mutation": true,
+        "main_result": "Round 77 proves the exact collar-extracted complete centred-integral identity with O(L^2 log(2+L)) aggregate error and proves the actual-symbol step-two variation at J(sqrt(b)-sqrt(a))sqrt(G)/k^(3/2). The weighted resonance union, energy, M9-M2, and exponent remain open."
+      },
+      "next_round": 78
+    },
+    {
+      "round_index": 78,
+      "campaign_id": "m9-m2-top-endpoint-square-resonance-mass",
+      "type": "m9_m2_top_endpoint_square_resonance_mass",
+      "status": "closed",
+      "objective": "Prove or sharply refute target-sized closure of the complete actual-symbol primitive-square contribution and determine the capacity of its absolute Abel majorant.",
+      "tasks": [
+        {"id": "blind_square_resonance_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean"},
+        {"id": "square_resonance_mass_attack", "role": "analytic_discovery", "status": "completed"},
+        {"id": "square_resonance_hostile_audit", "role": "hostile_seam_reviewer", "status": "completed_clean"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 80,
+        "numerical_experimental_maximum_percent": 20,
+        "planned_numerical_percent": 5
+      },
+      "exit_gates": [
+        "square/common-kernel equivalence",
+        "primitive parity and exact phase",
+        "open reciprocal k interval",
+        "complete actual coefficient",
+        "exact and metric resonance",
+        "absolute versus signed distinction",
+        "fourth-power hostile control",
+        "statement-only and hostile gates",
+        "conductor decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_signed_square_family_and_absolute_majorant_obstruction",
+        "graph_mutation": true,
+        "main_result": "The complete actual-symbol primitive-square contribution is O_epsilon(L^2 X^epsilon) by sampled k-variation and reciprocal second-derivative cancellation. Its positive Abel majorant instead has sharp capacity sqrt(J)L^(3/2). Generic nonsquare rays and the exponent remain open."
+      },
+      "next_round": 79
+    },
+    {
+      "round_index": 79,
+      "campaign_id": "m9-m2-top-endpoint-generic-reciprocal-resonance",
+      "type": "m9_m2_top_endpoint_generic_reciprocal_resonance",
+      "status": "closed",
+      "objective": "Prove a quantitative inverse/incidence theorem for the residual nonsquare reciprocal-resonance set, or isolate a rigorous obstruction and smaller signed survivor.",
+      "tasks": [
+        {"id": "blind_nonsquare_geometry_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean"},
+        {"id": "nonsquare_reciprocal_incidence_attack", "role": "analytic_discovery", "status": "completed"},
+        {"id": "nonsquare_resonance_hostile_source_audit", "role": "hostile_source_reviewer", "status": "completed_clean"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 80,
+        "numerical_experimental_maximum_percent": 20,
+        "planned_numerical_percent": 5
+      },
+      "exit_gates": [
+        "exact dyadic Abel and metric window",
+        "nearest-integer orientation",
+        "primitive nonsquare ownership",
+        "quantitative high-multiplicity classification",
+        "near-square and perfect-power controls",
+        "actual coefficient ledger",
+        "incidence versus signed-energy scope",
+        "source applicability",
+        "statement-only and hostile gates",
+        "conductor decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_nonsquare_divisor_strip_exact_centers_safe_blocks_and_metric_density_obstruction",
+        "graph_mutation": true,
+        "main_result": "The nonsquare metric incidence count saves the sharp factor R, exact nonsquare centers contribute O_epsilon(LX^epsilon), and blocks AJD^3<<L^3 close positively. Ordinary strictly metric resonances remain at density 1/R, leaving the complete-coefficient signed hard-block sum open."
+      },
+      "next_round": 80
+    },
+    {
+      "round_index": 80,
+      "campaign_id": "m9-m2-top-endpoint-signed-strict-metric-energy",
+      "type": "m9_m2_top_endpoint_signed_strict_metric_energy",
+      "status": "closed",
+      "objective": "Prove the complete-coefficient signed strict-metric nonsquare energy on AJD^3>>L^3, close a new hard subrange, or isolate a smaller exact signed survivor.",
+      "tasks": [
+        {"id": "blind_strict_metric_energy_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean"},
+        {"id": "primitive_ray_parity_energy_attack", "role": "analytic_discovery", "status": "completed"},
+        {"id": "strict_metric_energy_hostile_source_audit", "role": "hostile_source_reviewer", "status": "completed_clean"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 80,
+        "numerical_experimental_maximum_percent": 20,
+        "planned_numerical_percent": 0
+      },
+      "exit_gates": [
+        "combined odd-lift phase",
+        "nearest-integer fiber parity",
+        "Round78 and Round79 one-count exclusions",
+        "density plus centered discrepancy",
+        "complete actual coefficient",
+        "hard-block signed energy",
+        "near-square Pell and perfect-power controls",
+        "endpoint star and collar ownership",
+        "source applicability",
+        "statement-only and hostile gates",
+        "conductor decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_complete_symbol_carrier_cancellation_and_metric_parity_self_return_obstruction",
+        "graph_mutation": true,
+        "main_result": "The complete Round-77 carrier cancels nearest-integer quotient parity and the apparent half-frequency gap, restoring the literal metric density zero mode and returning exactly to the original transposed chi_4(h)chi_4(s) energy. No hard range or endpoint estimate closes."
+      },
+      "next_round": 81
+    },
+    {
+      "round_index": 81,
+      "campaign_id": "m9-m1-upper-conductor-transition-flattening",
+      "type": "m9_m1_upper_conductor_transition_flattening",
+      "status": "closed",
+      "objective": "Prove or refute a complete-symbol neighbor-independent Gaussian main plus O(sqrt(C/J)) transition remainder and its C <= J^(13/18) implication.",
+      "tasks": [
+        {"id": "blind_transition_flattening_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean_after_authorized_exact_integral_reaudit"},
+        {"id": "farey_transition_flattening_attack", "role": "analytic_discovery", "status": "completed"},
+        {"id": "transition_gluing_hostile_audit", "role": "hostile_source_reviewer", "status": "completed_clean"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 80,
+        "numerical_experimental_maximum_percent": 20,
+        "planned_numerical_percent": 0
+      },
+      "exit_gates": [
+        "transition normalization",
+        "inside boundary outside trichotomy",
+        "complete stationary remainder",
+        "Farey fixed-residue sawtooth",
+        "all parity classes and aliases",
+        "Bourgain proper-subinterval source interface",
+        "energy exponent arithmetic",
+        "statement-only and hostile gates",
+        "conductor decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_complete_symbol_transition_flattening_and_extend_fixed_interior_range",
+        "graph_mutation": true,
+        "main_result": "The complete neighbor-dependent coefficient is a globally BV Gaussian principal symbol plus a pointwise O_epsilon(X^epsilon sqrt(C/J)) transition remainder. Bourgain's audited reciprocal exponent pair extends the fixed-interior M1 safe range to C<=J^(13/18); the residual J^(13/18)<C<=J remains open."
+      },
+      "next_round": 82
+    },
+    {
+      "round_index": 82,
+      "campaign_id": "m9-m1-transition-flattened-kloosterman-energy",
+      "type": "m9_m1_transition_flattened_kloosterman_energy",
+      "status": "closed",
+      "objective": "Prove the smooth nonaxial M1 energy on J^(13/18)<C<=J^(3/4), prove a nonempty extension, or isolate a strictly smaller exact phase-sensitive Kloosterman correlation.",
+      "tasks": [
+        {"id": "blind_chirped_kloosterman_energy_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean"},
+        {"id": "chirped_residue_energy_attack", "role": "analytic_discovery", "status": "completed"},
+        {"id": "kloosterman_energy_source_hostile_audit", "role": "hostile_source_reviewer", "status": "completed_clean"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 80,
+        "numerical_experimental_maximum_percent": 20,
+        "planned_numerical_percent": 0
+      },
+      "exit_gates": [
+        "exact odd Poisson normalization",
+        "even cusp and local-unit ledger",
+        "ordinary-large-sieve factor-B deficit",
+        "phase-sensitive signed off-diagonal",
+        "stationary lower terms and errors",
+        "current primary-source applicability",
+        "statement-only and hostile gates",
+        "conductor decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_strict_residue_offset_reduction_without_conductor_extension",
+        "graph_mutation": true,
+        "main_result": "The complete same-residue energy and every fixed nonzero residue-offset layer are target-safe through C<=J^(47/60). The first residual band is reduced to the coherent nonzero-offset actual-unit correlation. Ordinary large-sieve, fixed-column bilinear, and complete-transform routes do not supply the required offset gain."
+      },
+      "next_round": 83
+    },
+    {
+      "round_index": 83,
+      "campaign_id": "m9-m1-nonzero-residue-offset-dispersion",
+      "type": "m9_m1_nonzero_residue_offset_dispersion",
+      "status": "closed",
+      "objective": "Prove any fixed B-power saving in the coherent nonzero residue-offset actual-unit correlation, close the first band, or isolate a strictly smaller exact signed survivor.",
+      "tasks": [
+        {"id": "blind_offset_dispersion_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean"},
+        {"id": "inverse_unit_offset_attack", "role": "analytic_discovery", "status": "completed_clean_after_normalization_correction"},
+        {"id": "offset_trace_source_hostile_audit", "role": "hostile_source_reviewer", "status": "completed_clean"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 80,
+        "numerical_experimental_maximum_percent": 20,
+        "planned_numerical_percent": 0
+      },
+      "exit_gates": [
+        "exact residue-offset normalization",
+        "odd inverse-unit and even local units",
+        "same-residue removal and degenerate offsets",
+        "actual-weight signed offset gain",
+        "complete transform self-return controls",
+        "current primary-source applicability",
+        "statement-only and hostile gates",
+        "conductor decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_all_class_dual_difference_reduction_without_B_gain",
+        "graph_mutation": true,
+        "main_result": "The two even local units are derived exactly after class rescaling. Exact Poisson and sampled autocorrelation remove the literal d=0 dual slice target-safely. The first survivor is the centred d!=0 all-class Kloosterman-product correlation with actual Fourier weights; no conductor range or exponent changes."
+      },
+      "next_round": 84
+    },
+    {
+      "round_index": 84,
+      "campaign_id": "m9-m1-centred-dual-difference-stationary-correlation",
+      "type": "m9_m1_centred_dual_difference_stationary_correlation",
+      "status": "closed",
+      "objective": "Exploit the exact stationary Fourier weights to prove a B-power gain in the centred d!=0 Kloosterman-product correlation or isolate a strictly smaller signed resonance survivor.",
+      "tasks": [
+        {"id": "blind_dual_difference_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean"},
+        {"id": "stationary_dual_difference_attack", "role": "analytic_discovery", "status": "completed"},
+        {"id": "dual_difference_source_hostile_audit", "role": "hostile_source_reviewer", "status": "completed_clean"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 80,
+        "numerical_experimental_maximum_percent": 20,
+        "planned_numerical_percent": 0
+      },
+      "exit_gates": [
+        "all-class stationary normalization",
+        "exact critical phase and Gaussian",
+        "saddle support and aggregate errors",
+        "literal d=0 ownership",
+        "nonzero modulus multiples and gcd modes",
+        "signed progression resonance",
+        "actual-weight B-power ledger",
+        "current primary-source applicability",
+        "statement-only and hostile gates",
+        "conductor decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_small_dual_difference_stationary_bound_without_conductor_extension",
+        "graph_mutation": true,
+        "main_result": "The exact principal stationary profile, Kloosterman residue Parseval, and progression curvature remove every 0<|d|<=floor(J^(17/30)) target-safely. The strict survivor is the same centred correlation on larger differences; no whole-range B-power, conductor range, or exponent changes."
+      },
+      "next_round": 85
+    },
+    {
+      "round_index": 85,
+      "campaign_id": "m9-m1-large-dual-difference-joint-dispersion",
+      "type": "m9_m1_large_dual_difference_joint_dispersion",
+      "status": "closed",
+      "objective": "Couple the exact M1 large dual differences across (d,b,r), preserving the physical reciprocal-row saving and the Round-84 stationary deletion.",
+      "tasks": [
+        {"id": "blind_hybrid_large_difference_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean"},
+        {"id": "hybrid_large_difference_attack", "role": "analytic_discovery", "status": "completed_clean"},
+        {"id": "large_difference_source_hostile_audit", "role": "hostile_source_reviewer", "status": "completed_clean"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 80,
+        "numerical_experimental_maximum_percent": 20,
+        "planned_numerical_percent": 0
+      },
+      "exit_gates": [
+        "physical and dual normalization",
+        "inherited reciprocal-row saving",
+        "small-difference ownership",
+        "large-difference support and errors",
+        "prime-power and modulus-multiple modes",
+        "joint differencing prefactor and diagonal",
+        "actual-symbol signed gain",
+        "source and self-return audit",
+        "statement-only and hostile gates",
+        "conductor decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_outer_stationary_support_difference_deletion_without_conductor_extension",
+        "graph_mutation": true,
+        "main_result": "Compact smooth support flatness removes every |d|>=Delta_b-Q^2J^(-1/20) target-safely, with all-d stationary errors separately controlled. The exact first-band survivor is D0<|d|<Delta_b-J^(3/4); its continuously twisted-row/four-Kloosterman interior correlation remains open. No conductor range or exponent changes."
+      },
+      "next_round": 86
+    },
+    {
+      "round_index": 86,
+      "campaign_id": "m9-m1-interior-four-kloosterman-ambiguity",
+      "type": "m9_m1_interior_four_kloosterman_ambiguity",
+      "status": "closed",
+      "objective": "Estimate the exact middle-difference M1 correlation through continuously twisted physical rows or the weighted four-Kloosterman A-process off-diagonal while retaining Q^(-5/12).",
+      "tasks": [
+        {"id": "blind_four_kloosterman_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean"},
+        {"id": "twisted_ambiguity_attack", "role": "analytic_discovery", "status": "completed_clean"},
+        {"id": "four_kloosterman_hostile_source_audit", "role": "hostile_source_reviewer", "status": "completed_clean"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 80,
+        "numerical_experimental_maximum_percent": 20,
+        "planned_numerical_percent": 0
+      },
+      "exit_gates": [
+        "physical and dual normalization",
+        "exact middle-difference ownership",
+        "all-class and prime-power arithmetic",
+        "Fejer prefactor and diagonal",
+        "weighted four-Kloosterman off-diagonal",
+        "actual stationary ambiguity symbol",
+        "complete-transform and u=M self-return",
+        "current primary-source applicability",
+        "statement-only and hostile gates",
+        "conductor decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_cubic_lower_interior_difference_deletion_without_conductor_extension",
+        "graph_mutation": true,
+        "main_result": "Fixed-sign cubic curvature and exact residue L1 normalization remove every floor(J^(17/30))<|d|<=floor(J^(87/140)) target-safely. The exact first-band survivor is D1<|d|<Delta_b-J^(3/4); generic complete-trace bounds fail on divisor-aligned and prime-power modes. No conductor range or exponent changes."
+      },
+      "next_round": 87
+    },
+    {
+      "round_index": 87,
+      "campaign_id": "m9-m1-deep-exceptional-strata-dispersion",
+      "type": "m9_m1_deep_exceptional_strata_dispersion",
+      "status": "closed",
+      "objective": "Classify and estimate the divisor-aligned and prime-power exceptional strata in the exact deep M1 four-Kloosterman ambiguity while retaining the actual stationary symbol and Q^(-5/12).",
+      "tasks": [
+        {"id": "blind_exceptional_strata_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean_with_supplemental_certification"},
+        {"id": "aligned_mode_aggregate_attack", "role": "analytic_discovery", "status": "completed_clean_after_normalization_correction"},
+        {"id": "exceptional_trace_hostile_source_audit", "role": "hostile_source_reviewer", "status": "completed_clean_with_supplemental_certification"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 80,
+        "numerical_experimental_maximum_percent": 20,
+        "planned_numerical_percent": 0
+      },
+      "exit_gates": [
+        "external and Fejer normalization",
+        "deep difference ownership",
+        "all-class local units and 2-part",
+        "prime-power and divisor-aligned exceptional strata",
+        "actual fourfold stationary symbol",
+        "Ramanujan cross and square terms",
+        "generic rational-trace remainder",
+        "entry-exit and perfect-power controls",
+        "complete-transform self-return",
+        "current primary-source applicability",
+        "statement-only and hostile gates",
+        "conductor decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_full_factor_same_group_fejer_package_without_deep_or_conductor_closure",
+        "graph_mutation": true,
+        "main_result": "At U=D, normalized physical rows and exact full-prime-power active-set grouping make every same-group local-zero/paired mixture target-safe with J^(-2/15) slack. The strict cross-group off-diagonal remains open; no conductor range or global exponent changes."
+      },
+      "next_round": 88
+    },
+    {
+      "round_index": 88,
+      "campaign_id": "m9-m1-cross-group-period-depth-dispersion",
+      "type": "m9_m1_cross_group_period_depth_dispersion",
+      "status": "closed",
+      "objective": "Estimate the exact cross-group deep M1 Fejer off-diagonal after separating partial-period lower-conductor returns from genuinely aperiodic local traces.",
+      "tasks": [
+        {"id": "blind_cross_group_tensor_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean_with_supplemental_certification"},
+        {"id": "period_depth_tensor_attack", "role": "analytic_discovery", "status": "completed_clean"},
+        {"id": "cross_group_hostile_source_audit", "role": "hostile_source_reviewer", "status": "completed_clean"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 80,
+        "numerical_experimental_maximum_percent": 20,
+        "planned_numerical_percent": 0
+      },
+      "exit_gates": [
+        "normalized-row and Fejer normalization",
+        "full-factor group ownership",
+        "global diagonal one-count",
+        "full prime-power period depth",
+        "bad-prime and full 2-adic routing",
+        "actual fourfold stationary symbol",
+        "partial-period and aperiodic cross-group energy",
+        "Ramanujan and modulus-multiple terms",
+        "support, perfect-power, and self-return controls",
+        "literal source applicability",
+        "statement-only and hostile gates",
+        "conductor decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_coarse_depth_and_good_prime_period_subaggregates_without_first_band_closure",
+        "graph_mutation": true,
+        "main_result": "Centered Fejer coarse-group shells R_*<=rho_* and, after their deletion, complete good-prime reciprocal-period fibres with mathfrak_a>=M^2/rho_*^2 are target-safe. Exact masked depth descends with p^(2j). The hard cross-group residual remains open; no conductor range or global exponent changes."
+      },
+      "next_round": 89
+    },
+    {
+      "round_index": 89,
+      "campaign_id": "m9-m1-bad-prime-period-fibre-energy",
+      "type": "m9_m1_bad_prime_period_fibre_energy",
+      "status": "active",
+      "objective": "Classify and estimate the complete small-prime, nonunit-K, and full 2-adic reciprocal-period fibres in the exact hard M1 cross-group operator.",
+      "tasks": [
+        {"id": "blind_bad_prime_fibre_rederivation", "role": "statement_only_blind_rederiver", "status": "assigned"},
+        {"id": "bad_prime_period_graph_attack", "role": "analytic_discovery", "status": "assigned"},
+        {"id": "bad_prime_hostile_source_audit", "role": "hostile_source_reviewer", "status": "assigned"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 80,
+        "numerical_experimental_maximum_percent": 20,
+        "planned_numerical_percent": 5
+      },
+      "exit_gates": [
+        "normalized-row and centered-Fejer ownership",
+        "complete small-prime masks",
+        "nonunit-K conductor depth",
+        "full 2-adic period ledger",
+        "p-squared-j trace descent",
+        "directed in/out physical-edge degree",
+        "prior-package one-count",
+        "actual fourfold stationary symbol",
+        "Ramanujan, modulus-multiple, support, and perfect-power controls",
+        "complete-transform self-return",
+        "current primary-source applicability",
+        "statement-only and hostile gates",
+        "conductor decision"
+      ],
+      "next_round": null
     }
   ]
 }

@@ -1,0 +1,116 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-cross-group-period-depth-subaggregate-bound",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Coarse-depth and good-prime masked-period cross-group packages are target-safe",
+        "status": "proved_internal",
+        "statement_tex": "Let J=sqrt(X), Q=J^(2/5), T=J^(3/5), B=C/T, J^(13/18)<C<=J^(3/4), and fix one transition-flattened smooth nonaxial M1 principal component and one dyadic deep interval D_1<|d|<Delta_b-E_*. Use the normalized physical rows R_(b,x)=M^(-1)sum_n I_b(n)e_M(nx)e(n theta), so an ordered-pair function already contains M^(-2), and delete the globally owned u=0 term with K_D^circ=|D_D|^2-D. After the accepted Round-87 same-group package, define R_*(P,P') as the first quotient at which two physical ordered-pair labels coincide in the Round-87 active-set/active-label group after reduction, including the empty coarse active set, and put rho_*=min(M,floor(J^(11/30)B^(-2))). Exact divisor-lattice shell ownership gives G_coarse(D)<<_epsilon X^epsilon D B^3 rho_*^2 T^4 Q^(-5/6)<<_epsilon X^epsilon(D/B)J^(14/5), so every cross-group shell 1<R_*<=rho_* is target-safe. Separately, the exact local period is the period of the complete reciprocal masked weight, not of its numerator or of the total affine phase. If that weight modulo p^nu has period p^(nu-j), its completed local trace is supported on p^j|u and descends with factor p^(2j). For p>=11, p not dividing K, and a nonempty mask, a=min(j,nu-j) implies p^a|(B_2-A), p^a|AV, and p^a|AV(V+B_2). For the product mathfrak_a of these good-prime depths, the complete physical-edge graph has in- and out-degree <<_epsilon X^epsilon M^2/mathfrak_a. After the coarse deletion, Schur and the centered Fejer kernel give G_good(D)<<_epsilon X^epsilon D B^3(M^2/mathfrak_a)T^4Q^(-5/6), so mathfrak_a>=M^2/rho_*^2 is target-safe. The strict unresolved first-band object has R_*>rho_* and mathfrak_a<M^2/rho_*^2 and retains affine/full-phase cancellation, p<=7 mask periods, nonunit-K and 2-adic conductor loss, projection-only depth, shallow good-prime lifts, aperiodic traces, both signs, modulus multiples, exact Ramanujan centering, and the actual fourfold stationary symbol. No estimate for that residual, the full first band, C>J^(3/4), cone edges, other radial sectors, full M9-M1, M9, or the exponent is proved.",
+        "dependencies": [
+          "M9-M1-deep-full-factor-same-group-fejer-bound",
+          "M9-M1-centred-dual-difference-cubic-shell-bound"
+        ],
+        "implies": [
+          "M9-M1-residual-upper-conductor-offdiagonal-reduction"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/candidates/conductor_shallow_quotient_coarse_group_bound.md",
+            "rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/candidates/conductor_good_prime_period_lemma.md",
+            "rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/reports/period_depth_tensor_attack.md",
+            "rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/reports/blind_cross_group_tensor_rederivation.md",
+            "rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/reports/cross_group_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/reviews/conductor_round88_normalization_coarse_count.md",
+            "rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/reviews/conductor_round88_masked_period_graph.md",
+            "rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/reviews/conductor_round88_adjudication.md",
+            "rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Estimate the exact hard cross-group operator with R_*>rho_* and mathfrak_a<M^2/rho_*^2, separating small-prime, nonunit-K, 2-adic, affine-period, projection-only, and aperiodic local factors while retaining the actual fourfold symbol and Q^(-5/12)."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-residual-upper-conductor-offdiagonal-reduction",
+        "statement_tex": "Let J=sqrt(X), Q=J^(2/5), T=J^(3/5), and J^(13/18)<C<=J. In the first band J^(13/18)<C<=J^(3/4), transition errors and axes are separately target-safe. For each fixed smooth nonaxial principal component, all three classes reduce to the centered Kloosterman-product correlation. The same-residue mode, literal dual d=0, every 0<|d|<=D_1=floor(J^(87/140)), and the outer support collar |d|>=Delta_b-E_* are target-safe. On each remaining deep dyadic interval, the exact Round-87 full-prime-power same-group package is target-safe at Fejer shift U=D. For the strict cross-group u!=0 package, let R_* be the first coarse physical-group coincidence quotient and rho_*=min(M,floor(J^(11/30)B^(-2))). Every shell 1<R_*<=rho_* is target-safe by exact divisor-lattice grouping and the centered Fejer kernel. For the unique reciprocal-mask period vector, let mathfrak_a be the product over p>=11, p not dividing K, of p^min(j_p,nu_p-j_p). After the coarse deletion, all complete fibres with mathfrak_a>=M^2/rho_*^2 are target-safe by the in/out-degree bound M^2/mathfrak_a. The exact first-band residual has R_*>rho_* and mathfrak_a<M^2/rho_*^2 and contains affine/full-phase periods, small-prime mask-created periods, nonunit-K and extra 2-adic conductor drops, projection-only depths, shallow good-prime lifts, and aperiodic traces, with the actual fourfold symbol and Q^(-5/12) retained. No estimate for this residual is proved. On J^(3/4)<C<=J, principal main, transition error, and axes remain open. No conductor extension, cone-edge estimate, full M9-M1, M9, or exponent is proved.",
+        "dependencies_added": [
+          "M9-M1-cross-group-period-depth-subaggregate-bound"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/reports/period_depth_tensor_attack.md",
+            "rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/reports/blind_cross_group_tensor_rederivation.md",
+            "rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/reports/cross_group_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/synthesis.md"
+          ]
+        },
+        "next_action": "Attack only the hard cross-group first-band operator R_*>rho_*, mathfrak_a<M^2/rho_*^2, preferably by separating small-prime and nonunit conductor returns from the genuinely aperiodic actual-symbol tensor. Preserve U=D, the old u=0 owner, and Q^(-5/12)."
+      },
+      {
+        "id": "M9-M1",
+        "dependencies_added": [
+          "M9-M1-cross-group-period-depth-subaggregate-bound"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/synthesis.md"
+          ]
+        },
+        "next_action": "Close the hard first-band cross-group operator R_*>rho_* and mathfrak_a<M^2/rho_*^2; then treat C>J^(3/4), cone edges, remaining radial sectors, and endpoint uniformity."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round88-numerator-only-period-depth",
+        "reason": "The unit mask can create exact lower periods at p=3 and p=5 even when the displayed numerator has unit coefficients. Exact depth must be computed from the complete masked weight."
+      },
+      {
+        "id": "Round88-completed-trace-descends-by-p-to-j",
+        "reason": "The unprefactored Fourier transform descends by p^j, but the completed trace includes an outer factor q and descends by p^(2j)."
+      },
+      {
+        "id": "Round88-Fourier-support-sparsity-gives-Fejer-saving",
+        "reason": "Restricting to p^j|u rescales the Fejer kernel and retains total mass D; the trace descent factor creates an exact transform self-return."
+      },
+      {
+        "id": "Round88-coarse-depth-equals-functional-period-depth",
+        "reason": "Coarse physical-label coincidence is a divisor-lattice equivalence relation, while mask-created, affine, nonunit-K, and extra 2-adic periods need not correspond to it."
+      },
+      {
+        "id": "Round88-coefficientwise-square-root-cross-trace",
+        "reason": "An exact cross-group q=3^nu family has completed local trace magnitude q^2/3. Only a joint actual-symbol estimate can control such lower-conductor returns."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "Two nonempty cross-group subaggregates are removed, but a nonempty hard first-band operator, C>J^(3/4), cone edges, other radial sectors, and endpoint uniformity remain open."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Round 88 concerns only the M1 transition-flattened smooth-principal first band."
+      },
+      {
+        "id": "M9",
+        "reason": "Both M9-M1 and M9-M2 remain open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The round proves strict M1 cross-group reductions but no new global Gauss-circle exponent."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 8,
+    "idea_quality_score": 9,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 88 converts a broad cross-group trace problem into two certified target-safe deletions: an exact congruence-aligned coarse-shell package and a restricted good-prime masked-period graph. It also corrects the local descent normalization and falsifies numerator-only period classification. The exact hard residual is substantially narrower, but the first band and global exponent remain open."
+  }
+}

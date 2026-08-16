@@ -2,7 +2,7 @@
 
 Generated from `state/proof_obligations.yml`; edit the graph rather than this derived file.
 
-Graph SHA-256: `baa5fc13ca3682ae561c44cd1b20e94728c117378545f586ff3224c16a8eeb6b`.
+Graph SHA-256: `909b828c22ae9db75aabae375794d288259429d742c2b5f5fffcb0a97b84e167`.
 
 ## A2-M9-M2-character-factor-proved-internal-claim
 
@@ -2359,3 +2359,333 @@ The lower and upper collar distances are x(t^2-1/4) and x(1-t^2); they depend on
 
 Evidence:
 - `rounds/codex-managed/m9-m2-top-endpoint-near-product-energy/reviews/conductor_round75_adjudication.md`
+
+## Round76-step-one-gcd-lift-resonance
+
+All admissible gcd lifts are odd, so consecutive lifts differ by two. The geometric denominator is governed by ||2alpha||, and exact half-integer alpha families are fully coherent although ||alpha||=1/2.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reviews/conductor_round76_adjudication.md`
+
+## Round76-offset-character-alternates-along-gcd-lifts
+
+With r=g(b-a)/2 and odd g, (-1)^r=(-1)^((b-a)/2) is constant on a primitive lift ray. It supplies no liftwise alternation.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reviews/conductor_round76_adjudication.md`
+
+## Round76-unextracted-sharp-endpoint-has-step-two-BV
+
+The exact ceiling ceil(gb/4)=gb/4+1/2+chi_4(gb)/4 has a mod-four component. Step two is structurally valid only after the target-safe primal endpoint collar is removed; otherwise a step-four split is required.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reviews/conductor_round76_adjudication.md`
+
+## Round76-rank-one-reciprocal-Poisson-gives-independent-curvature-saving
+
+The gcd-lift phase is linear in the radial lift. Transforming the reciprocal variable back restores the original m-phase with cancelling Gaussian units and reciprocal Jacobians, so the operation is a self-return.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reviews/conductor_round76_adjudication.md`
+
+## Round76-half-integer-ray-alone-lower-bounds-the-full-energy
+
+The exact fourth-power family proves phase coherence and has both W-profile factors equal to one, but the remaining Vaaler/support weights and cancellation across primitive pairs and reciprocal modes are not controlled. It is a route falsifier, not a lower bound for the complete signed energy.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reviews/conductor_round76_adjudication.md`
+
+## Round77-unordered-precollar-Poisson-series-is-absolute
+
+With nonzero finite-interval endpoint values, the Poisson integral series requires symmetric or distributional summation. Absolute convergence holds only after the fixed collars make the amplitude smoothly compactly supported.
+
+## Round77-arbitrary-bounded-lift-coefficients-have-actual-symbol-variation
+
+Arbitrary alternating or phase-conjugating lift coefficients can make the step-two variation comparable to the sum of pointwise masses. The theorem depends on the exact g-homogeneous factorization, slow eta/Phi factor, and g-independent W-ratio profile.
+
+## Round77-leading-stationary-term-controls-complete-moving-collar-variation
+
+A frozen leading stationary value does not control saddle entry, exit, lower corrections, or moving collars. The valid proof retains the complete centred integral and differentiates it through the exact quadratic identity.
+
+## Round78-square-ray-absolute-Abel-majorant-is-target-sized
+
+The positive majorant has sharp capacity sqrt(J)L^(3/2) up to X^epsilon on the standard support, and already one fixed populated ray gives X^(1/4) at fixed L. Absolute reciprocal-mode summation loses the cancellation that proves the signed theorem.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/reviews/conductor_round78_adjudication.md`
+
+## Round78-pointwise-k-derivative-has-complete-BV-scale
+
+At a fixed physical collar crossing, k|B_g'(k)| can exceed the complete coefficient size by a factor L. Only the total sampled k-variation is target-safe because the smooth collar parameter is traversed once.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/reviews/conductor_round78_adjudication.md`
+
+## Round78-collar-transition-modes-may-be-deleted-absolutely
+
+A collar crossing lasts about K/L reciprocal modes; absolute deletion can cost sqrt(K/L) per lift. The valid proof retains the complete smooth-collar integral and controls its total variation.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/reviews/conductor_round78_adjudication.md`
+
+## Round78-exact-divisors-exhaust-square-ray-resonance
+
+For general real X, the Abel window contains metric near-resonances not represented by exact divisors. The valid signed k-estimate includes the complete interval rather than classifying only exact centers.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/reviews/conductor_round78_adjudication.md`
+
+## Round79-every-nonsquare-metric-resonance-is-algebraically-exceptional
+
+Averaging the prescribed real X produces the ordinary 1/R population even after exact equalities and primitive square rays are removed, and the incidences may span many squarefree fields.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/reviews/conductor_round79_adjudication.md`
+
+## Round79-incidence-saving-alone-closes-the-signed-energy
+
+The factor-R divisor-strip saving exactly cancels the Abel weight R and leaves positive capacity A sqrt(G)sqrt(J)D^(3/2), which is too large on AJD^3>>L^3.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/reviews/conductor_round79_adjudication.md`
+
+## Round79-exact-divisor-counting-exhausts-the-metric-window
+
+The metric strip contains O(K/R) distinct nearby integers p=ell k. Exact centers form only one absolutely safe subcase.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/reviews/conductor_round79_adjudication.md`
+
+## Round79-algebraic-root-spacing-separates-the-active-metric-set
+
+The norm thresholds R<<A^5D^2K^7 and R<<AD^2K^3 lie far beyond R<=L/A, and multiplication by arbitrary real X creates ordinary modulo-one clustering.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/reviews/conductor_round79_adjudication.md`
+
+## Round79-reciprocal-divisor-reenumeration-gives-a-second-saving
+
+Reversing p=ell k merely lists the same integer-product fibers and supplies no independent oscillation or curvature.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/reviews/conductor_round79_adjudication.md`
+
+## Round80-nearest-integer-quotient-parity-survives-the-complete-symbol
+
+The complete coefficient contains e(g theta/2), which cancels (-1)^ell e(-g eta/2) pointwise for odd g.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/reviews/conductor_round80_adjudication.md`
+
+## Round80-half-integer-Fourier-gap-removes-metric-density
+
+Restoring the complete coefficient carrier shifts r-g/2 back to the integer mode r and restores the literal r=0 mean.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/reviews/conductor_round80_adjudication.md`
+
+## Round80-centered-discrepancy-alone-closes-the-strict-metric-sum
+
+The window mean mu_R multiplies a complete actual-symbol zero-mode correlation, which returns to the original transposed energy and remains unestimated.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/reviews/conductor_round80_adjudication.md`
+
+## Round80-step-two-variation-transfers-to-the-decentered-coefficient
+
+Differentiating C^circ=e(-g theta/2)B^circ introduces the uncontrolled term theta B^circ, so the accepted variation theorem cannot be transferred mechanically.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/reviews/conductor_round80_adjudication.md`
+
+## Round80-product-fiber-reenumeration-gives-an-independent-parity-saving
+
+The quotient sign cancels inside the actual symbol, and the remaining sign is exactly the original chi_4(h)chi_4(s) character product.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/reviews/conductor_round80_adjudication.md`
+
+## Round80-adjoint-metric-Poisson-gives-a-second-curvature-saving
+
+The zero mode changes variables back to the original h,s,x transposed-row kernel with identical character and symbol ownership.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/reviews/conductor_round80_adjudication.md`
+
+## Round81-raw-Farey-transition-has-global-BV
+
+The actual boundary sawtooth has about J/C resets of standardized size sqrt(C/J), hence total-variation capacity sqrt(J/C). Only the neighbor-independent principal coefficient is globally BV.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-upper-conductor-transition-flattening/reviews/conductor_round81_adjudication.md`
+
+## Round81-cellwise-Bourgain-pays-no-piece-cost
+
+The exponent-pair theorem applies on the ambient progression. Applying it independently on O(Q) Farey cells pays an unacceptable piece loss; the valid proof first flattens the principal weight globally.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-upper-conductor-transition-flattening/reviews/conductor_round81_adjudication.md`
+
+## Round81-both-boundary-faces-are-small
+
+At z_*=1 only the adjacent standardized face is O(Lambda^(-1/2)); the remote face is asymptotic to sqrt(Lambda) and is controlled by its oscillatory tail.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-upper-conductor-transition-flattening/reviews/conductor_round81_adjudication.md`
+
+## Round81-simultaneous-neighbor-switches-cancel
+
+In the active b>2 range the left and right numerator threshold lattices are distinct, and one progression step cannot cross both. No exact reset cancellation occurs.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-upper-conductor-transition-flattening/reviews/conductor_round81_adjudication.md`
+
+## Round82-coefficient-blind-large-sieve-uses-chirp
+
+The ordinary Kloosterman large sieve depends only on coefficient L2 mass and has exact capacity BQ^2T=B J^2/T. The common square-root chirp supplies no saving in a coefficient-uniform theorem.
+
+## Round82-fixed-column-bilinear-Kloosterman-closes-energy
+
+The current Pascadi and Blomer-Pascadi theorems require a single fixed modulus and two genuinely varying coefficient intervals for their savings. The literal map is a full residue interval against one singleton, while the energy is a varying-modulus product-Kloosterman kernel with a joint symbol.
+
+## Round82-modulus-average-has-common-divisor-B
+
+For moduli 4b the common divisor in Pascadi's modulus-average theorem is only 4, not B. Its literal capacity retains the unsaved modulus factor and does not estimate the product kernel.
+
+## Round82-complete-transform-gives-second-saving
+
+Complete Poisson, the chirp-preserving B-process, and the matched Kuznetsov-Voronoi chain reconstruct the original residue row when all lower terms, supports, and tails are retained. An involutive representation change is not an analytic gain.
+
+## Round82-level-four-spectrum-has-universal-X-over-4-center
+
+Switched-cusp Voronoi after level-four newform and oldform decomposition has conductor- and dilation-dependent centers. The raw newform centers include N_f X/4 for N_f in {1,2,4}; no universal X/4 center is justified.
+
+## Round82-fixed-offset-bounds-sum-with-no-offset-loss
+
+There are O(B) nonzero residue offsets. Each fixed layer is target-safe, but absolute accumulation costs exactly the missing factor B; a signed correlation theorem is required.
+
+## Round83-uniform-pointwise-square-root-rational-sum
+
+For q=4p^nu and a=4p^(nu-1)alpha with p not dividing k alpha, the zero additive-frequency rational sum has size q^(1-1/(2nu)+o(1)); in particular q^(3/4+o(1)) at nu=2 and q^(7/8+o(1)) at nu=4. Any usable bound must retain gcd degeneracies and average with the actual weights.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-nonzero-residue-offset-dispersion/reviews/conductor_round83_adjudication.md`
+
+## Round83-coefficient-blind-trace-bound-controls-actual-row
+
+The all-offset kernel is the rank-one form |sum_r u(r)R(r)|^2-sum_r|R(r)|^2, and arbitrary phase-conjugating weights saturate it. A proof must use the actual reciprocal Fourier weights, not only coefficient norms or complete-sum moments.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-nonzero-residue-offset-dispersion/reviews/conductor_round83_adjudication.md`
+
+## Round83-square-root-offset-average-closes-first-band
+
+A B^(-1/2) gain reaches only C<=J^(56/75). The upper endpoint C=J^(3/4) requires at least B^(-5/9).
+
+Evidence:
+- `rounds/codex-managed/m9-m1-nonzero-residue-offset-dispersion/reviews/conductor_round83_adjudication.md`
+
+## Round83-complete-offset-transform-gives-power-saving
+
+The exact product-Kloosterman Fourier transform followed by inversion returns the original nonzero residue-offset row in all three local classes. Only an estimate after the transform can save a power.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-nonzero-residue-offset-dispersion/reviews/conductor_round83_adjudication.md`
+
+## Round83-dual-zero-means-all-multiples-of-modulus
+
+The proved target-safe slice is the literal integer difference d=0. Terms d!=0 with d congruent 0 mod M remain in the centred correlation and cannot be discarded as the same zero mode.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-nonzero-residue-offset-dispersion/reviews/conductor_round83_adjudication.md`
+
+## Round83-even-units-follow-by-odd-parity-analogy
+
+The c congruent 2 mod 4 and 4|c units require separate rescalings to moduli 2b and b. Their exact coefficients follow from bs_0+rho=tc and cannot be inferred by copying the odd modulus 4b formula.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-nonzero-residue-offset-dispersion/reviews/conductor_round83_adjudication.md`
+
+## Round84-bare-BV-gives-uniform-leading-stationary-symbol
+
+A bounded-variation symbol may vary on the saddle-width scale, so its exact truncated-Gaussian transform can differ by a constant from the value-at-saddle leading term. The proved lemma instead uses the accepted Round-81 smooth extension and integrated c-seminorm.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-centred-dual-difference-stationary-correlation/reviews/conductor_round84_adjudication.md`
+
+## Round84-complete-stationary-summation-gives-saving
+
+Exact completion of the stationary square-root phase reconstructs the pre-dual physical rank-one progression form. An independent signed estimate after completion is required; the transform itself supplies no norm decrease.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-centred-dual-difference-stationary-correlation/reviews/conductor_round84_adjudication.md`
+
+## Round84-small-difference-deletion-is-a-whole-range-B-power
+
+The bound removes only 0<|d|<=floor(J^(17/30)). At C=J^(3/4) its first term reaches the full target at the endpoint, and it gives no estimate for the remaining |d|>floor(J^(17/30)) correlation.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-centred-dual-difference-stationary-correlation/reviews/conductor_round84_adjudication.md`
+
+## Round84-prime-field-trace-bound-closes-composite-actual-row
+
+Prime-field trace results do not cover arbitrary composite and prime-power moduli with the joint square-root weight. Explicit nonzero prime-power Fourier modes have normalized losses q^(3/4+o(1)) and q^(7/8+o(1)), excluding a uniform coefficientwise square-root substitute.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-centred-dual-difference-stationary-correlation/reviews/conductor_round84_adjudication.md`
+
+## Round84-first-derivative-nonresonance-closes-small-d
+
+Exact integer derivative and perfect-power resonances occur. The scoped proof survives them only because the nonzero second derivative is asymptotic to M^2|d|/J.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-centred-dual-difference-stationary-correlation/reviews/conductor_round84_adjudication.md`
+
+## Round85-shifted-row-multiplier-triangle-gives-B-power
+
+The exact continuously shifted physical-row identity preserves Q^(-5/12), but Fourier projection costs ||K_w||_1>=1 for any unit plateau and returns the prior C^3/(TQ^(5/12)) capacity. A new signed theta,b,residue correlation is required.
+
+## Round85-zero-mean-Parseval-closes-large-differences
+
+Zero mean removes only the zero residue frequency. Exact Parseval trades the arithmetic modes for an unresolved stationary ambiguity energy, whose trivial norm cancels the apparent saving.
+
+## Round85-differencing-without-four-Kloosterman-offdiagonal
+
+The literal d-A-process has compulsory Fejer prefactors and a diagonal. Although the diagonal is target-safe, the off-diagonal is a weighted four-Kloosterman correlation; modulus self-return shifts, prime-power modes, and perfect-power phase resonances cannot be omitted.
+
+## Round85-smooth-edge-flatness-owns-raw-transition
+
+The support-edge proof uses the compact C-infinity neighbor-independent principal cutoff. The separately owned raw Round-81 Farey transition has different variation and is not covered by endpoint flatness.
+
+## Round86-twisted-row-multiplier-triangle-gives-B-power
+
+The exact continuously twisted physical-row identity preserves Q^(-5/12), but every retained unit plateau has Fourier-kernel L1 norm at least one. Triangle inequality therefore returns C^3/(TQ^(5/12)) and no B-power.
+
+## Round86-uniform-four-Kloosterman-square-root-bound
+
+On v=0 and h_1=h_2 the reciprocal phase cancels. Prime-power choices give exact size M^(2-1/nu), and squarefree M=ell R with u=h_1=h_2=R gives size asymptotic to M^2. A joint actual-symbol exceptional-mode estimate is required.
+
+## Round86-A-process-U-below-M-avoids-near-return
+
+Although U<=M avoids the first exact period u=M, divisor-aligned shifts u=M/ell and prime-power shifts u=M/p already produce near-quadratic complete modes. The Fejer prefactor, diagonal, and exceptional strata remain compulsory.
+
+## Round86-residual-b-phase-alone-gives-B-minus-1-over-18
+
+The b-phase has the right formal variation, but modulus, inverse unit, Kloosterman products, residue support, and stationary symbol vary simultaneously. No sampled-b BV or composite-modulus theorem converts that variation into a gain on the actual vector.
+
+## Round86-generic-prime-trace-bound-closes-composite-aggregate
+
+Generic prime-local square-root estimates leave exact paired, local-zero, divisor-aligned, higher-prime-power, and 2-adic strata. Existing sources do not aggregate those modes with the actual stationary symbol or retain the physical Q^(-5/12) factor.
+# Round 88 cross-group period-depth controls
+
+- **Numerator-only period depth is false.** The unit mask creates exact
+  lower periods at \(p=3\) and \(p=5\) even when the displayed numerator
+  has unit coefficients.
+- **Completed-trace descent is \(p^{2j}\), not \(p^j\).** The second
+  factor comes from the outer modulus in the completed trace.
+- **Fourier sparsity is not a Fejer gain.** Restricting \(p^j\mid u\)
+  rescales the Fejer kernel and leaves total mass \(D\).
+- **Coarse depth is not functional period depth.** Divisor-lattice
+  inversion owns only physical-label congruence shells.
+- **Coefficientwise square-root bounds fail.** A cross-group
+  \(3^\nu\) family has exact completed trace magnitude \(3^{2\nu}/3\).

@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "round_index": 77,
+  "campaign_id": "m9-m2-top-endpoint-actual-symbol-variation",
+  "title": "Certify the complete collar-extracted odd-lift symbol",
+  "starting_graph_sha256": "e14373a05ee7d55258b53f07e18afa33682806add90bee49789208f464e46166",
+  "frozen_objective": "Prove or refute the complete collar-extracted Poisson/gcd-lift identity, its O(L^2 X^epsilon) aggregate error, and the step-two actual-symbol variation bound before any resonance-union estimate.",
+  "target_obligations": [
+    "M9-M2-top-endpoint-transposed-character-energy",
+    "M9-M2-top-endpoint-signed-cone",
+    "M9-M2-top-endpoint-odd-lift-resonance-obstruction",
+    "M9-M2"
+  ],
+  "resource_policy": {
+    "analytical_algebraic_minimum_percent": 80,
+    "numerical_experimental_maximum_percent": 20,
+    "planned_numerical_percent": 0
+  },
+  "tasks": [
+    {
+      "id": "blind_actual_symbol_rederivation",
+      "role": "statement_only_blind_rederiver",
+      "brief": "briefs/blind_actual_symbol_rederivation.md"
+    },
+    {
+      "id": "centered_integral_variation_attack",
+      "role": "analytic_discovery",
+      "brief": "briefs/centered_integral_variation_attack.md"
+    },
+    {
+      "id": "actual_symbol_hostile_audit",
+      "role": "hostile_seam_reviewer",
+      "brief": "briefs/actual_symbol_hostile_audit.md"
+    }
+  ],
+  "exit_gates": [
+    "exact finite Poisson and full endpoint ownership",
+    "fixed primal collar capacity",
+    "complete centred-integral normal form",
+    "summed nonstationary and stationary correction error",
+    "actual Phi, W, eta_L, q_X, floors, and stars",
+    "step-two variation through saddle entry and exit",
+    "mod-four sharp-ceiling seam",
+    "half-integer actual-profile control",
+    "rank-one self-return and coefficient-adversary controls",
+    "independent statement-only and hostile gates",
+    "conductor decision"
+  ]
+}

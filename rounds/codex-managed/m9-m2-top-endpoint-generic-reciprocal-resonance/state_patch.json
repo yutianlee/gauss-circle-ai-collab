@@ -1,0 +1,171 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-top-endpoint-nonsquare-divisor-strip",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Nonsquare reciprocal divisor-strip incidence and exact-center closure",
+        "status": "proved_internal",
+        "statement_tex": "Let J=sqrt X, 1<=L<=H<=J^(1/2), and retain the accepted complete collar-extracted top-M2 coefficient. For primitive odd coprime nonsquare rays a<b<4a, put m=(a+b)/2, q=(b-a)/2, u=q/(m+sqrt(m^2-q^2)), and Lambda=Xqu. Then (sqrt(b)-sqrt(a))^2/2=qu and the literal reciprocal interval is Ju/(1-u)<k<2Ju/(1+u). On a dyadic block a asymp A, b-a asymp D, k asymp K, G_(a,b) asymp G, let P be the number of actual residual rays and M_(a,b)(K) the literal reciprocal-mode count. For every 1<=R<=N_(a,b)<<G, the metric incidence satisfies I_ns<<_(epsilon,c)X^epsilon sum_(a,b) min(M_(a,b)(K),1+K/R)<<X^epsilon P(1+K/R). Since K asymp JD/A, R<=G asymp L/A, and L<=J^(1/2), this is <<X^epsilon ADK/R. The complete coefficient scale is V<<X^epsilon A sqrt(G)/sqrt(JD); after the Abel weight and standalone Abel-1 term, the positive block capacity is <<X^epsilon A sqrt(G)sqrt(J)D^(3/2), so all blocks AJD^3<<L^3 are target-sized after dyadic summation. If ab=d r^2 with d>1 squarefree, rational ratios of m-r sqrt(d) force the same primitive ray. Hence at fixed X at most one primitive nonsquare ray is exactly resonant, and all its divisor modes contribute O_epsilon(LX^epsilon) absolutely. Two distinct metric incidences further imply R<<A^5D^2K^7, improved to R<<AD^2K^3 in one squarefree field, but these thresholds are outside the active metric range. No signed estimate is claimed on the remaining strict-metric blocks AJD^3>>L^3.",
+        "dependencies": [
+          "M9-M2-top-endpoint-transposed-character-energy",
+          "M9-M2-top-endpoint-actual-symbol-variation",
+          "M9-M2-top-endpoint-square-ray-signed-cancellation",
+          "M9-M2-top-endpoint-odd-lift-resonance-obstruction"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/reports/blind_nonsquare_geometry_rederivation.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/reports/nonsquare_reciprocal_incidence_attack.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/reports/nonsquare_resonance_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/reviews/conductor_round79_divisor_strip_check.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/reviews/conductor_round79_adjudication.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Remove exact nonsquare centers and the positive-safe blocks AJD^3<<L^3. Bound the complete-coefficient signed strict-metric sum on AJD^3>>L^3 outside absolute values."
+      },
+      {
+        "id": "M9-M2-top-endpoint-metric-density-obstruction",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Random-density obstruction to algebraic classification of all nonsquare metric resonances",
+        "status": "proved_internal",
+        "statement_tex": "Fix a uniformly populated geometric inner cone of primitive nonsquare rays and reciprocal integers that stays strictly inside the literal k interval while X ranges over [Y,2Y]. For each dyadic metric width 1/R, elementary periodic averaging gives mean incidence (2c/R)#T plus an endpoint error smaller in the active range. Exact equalities have measure zero, so the same baseline may be strictly metric. On a fixed-ratio B-block with asymp B^2 primitive geometric rays and asymp sqrt(Y) reciprocal modes per ray, some real X has >>B^2 sqrt(Y)/R metric incidences; near-square rays b=a+2 give the analogous >>sqrt(Y)/R baseline. Mapping this geometric statement to the literal complete lift requires a populated actual subblock with N_(a,b)>=R and does not provide an actual coefficient lower bound. It rigorously shows that the factor-R divisor-strip estimate is sharp at ordinary density and that a future inverse theorem may classify only excess over density 1/R. The density part itself still requires a signed complete-coefficient estimate; coefficient-blind positive summation leaves capacity A sqrt(G)sqrt(J)D^(3/2).",
+        "dependencies": [
+          "M9-M2-top-endpoint-nonsquare-divisor-strip",
+          "M9-M2-top-endpoint-actual-symbol-variation"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/reports/nonsquare_reciprocal_incidence_attack.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/reports/nonsquare_resonance_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/reviews/conductor_round79_preliminary_algebra.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/reviews/conductor_round79_adjudication.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Do not launch another coefficient-blind inverse classification. Estimate the signed density component and centered discrepancy together using the literal primitive-ray coefficient."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "dependencies_added": [
+          "M9-M2-top-endpoint-nonsquare-divisor-strip"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/reviews/conductor_round79_adjudication.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/reports/nonsquare_resonance_hostile_source_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/synthesis.md"
+          ]
+        },
+        "next_action": "Exact nonsquare centers and blocks AJD^3<<L^3 are target-safe. Prove the complete-coefficient signed strict-metric estimate on AJD^3>>L^3; ordinary incidence and algebraic-spacing arguments are exhausted."
+      },
+      {
+        "id": "M9-M2-top-endpoint-transposed-character-energy",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/reviews/conductor_round79_adjudication.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/synthesis.md"
+          ]
+        },
+        "next_action": "Remove the proved square family, exact nonsquare centers, and positive-safe nonsquare blocks. The first remaining energy is the literal signed strict-metric sum on AJD^3>>L^3."
+      },
+      {
+        "id": "M9-M2-top-endpoint-actual-symbol-variation",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/reports/nonsquare_reciprocal_incidence_attack.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/reviews/conductor_round79_adjudication.md"
+          ]
+        },
+        "next_action": "Use the complete coefficient, not only its variation envelope, in the signed strict-metric primitive-ray correlation on the residual hard blocks."
+      },
+      {
+        "id": "M9-M2-top-endpoint-odd-lift-resonance-obstruction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/reports/nonsquare_resonance_hostile_source_audit.md"
+          ]
+        },
+        "next_action": "Exact nonsquare resonances are absolutely safe, but strict metric near-resonances persist at density 1/R. Retain perfect-power and Pell families as controls for the signed strict-metric theorem."
+      },
+      {
+        "id": "M9-M2",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/synthesis.md"
+          ]
+        },
+        "next_action": "The square family, exact nonsquare centers, and positive-safe nonsquare blocks of the hard top cone are closed. Prove the residual strict-metric signed primitive-ray energy; all other M2 packets and endpoint ownership remain separately required."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round79-every-nonsquare-metric-resonance-is-algebraically-exceptional",
+        "reason": "Averaging the prescribed real X produces the ordinary 1/R population even after exact equalities and primitive square rays are removed, and the incidences may span many squarefree fields."
+      },
+      {
+        "id": "Round79-incidence-saving-alone-closes-the-signed-energy",
+        "reason": "The factor-R divisor-strip saving exactly cancels the Abel weight R and leaves positive capacity A sqrt(G)sqrt(J)D^(3/2), which is too large on AJD^3>>L^3."
+      },
+      {
+        "id": "Round79-exact-divisor-counting-exhausts-the-metric-window",
+        "reason": "The metric strip contains O(K/R) distinct nearby integers p=ell k. Exact centers form only one absolutely safe subcase."
+      },
+      {
+        "id": "Round79-algebraic-root-spacing-separates-the-active-metric-set",
+        "reason": "The norm thresholds R<<A^5D^2K^7 and R<<AD^2K^3 lie far beyond R<=L/A, and multiplication by arbitrary real X creates ordinary modulo-one clustering."
+      },
+      {
+        "id": "Round79-reciprocal-divisor-reenumeration-gives-a-second-saving",
+        "reason": "Reversing p=ell k merely lists the same integer-product fibers and supplies no independent oscillation or curvature."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "reason": "The complete signed strict-metric nonsquare sum on AJD^3>>L^3 remains open."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "The full hard top energy and other M2 packets remain open."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "Round 79 concerns only the residual M2 top-endpoint geometry and does not change the M1 upper-conductor corridor."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1 and M9-M2 remain open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The round closes exact centers and a dyadic subregion but not the full M9 chain, so the global exponent is unchanged."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 9,
+    "idea_quality_score": 9,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "The round proves a sharp factor-R nonsquare incidence theorem, removes exact centers and a positive dyadic region, and rigorously identifies the unavoidable metric-density baseline and the first remaining complete-coefficient signed sum without overclaiming a global energy estimate."
+  }
+}

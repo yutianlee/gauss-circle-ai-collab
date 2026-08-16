@@ -1,0 +1,130 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-nonzero-residue-offset-dual-difference-reduction",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Nonzero residue-offset energy reduced to a centred nonzero dual difference",
+        "status": "proved_internal",
+        "statement_tex": "Let J=sqrt(X), Q=J^(2/5), T=J^(3/5), B=C/T, and J^(13/18)<C<=J^(3/4). For every compatible smooth-interior nonaxial M1 component and local class kappa in {1/4,1/2,1}, put g_kappa=4kappa, M_kappa=4b/g_kappa, and c=g_kappa x. After the accepted reciprocal correction is absorbed into e(plus-or-minus A_(kappa,b)/c), the exact local unit is zeta e_(M_kappa)(K_kappa bar(x)), with (g,M,K)=(1,4b,k), (2,2b,2[k bar(4)]_b), or (4,b,[k bar(4)]_b). Exact progression Poisson gives M^(-1) sum_n S(n,K;M)I_b(n). Removing the residue offset a=0 once is exactly the same-residue mode. The remaining energy splits into a literal integer difference d=0 and Y_C=M^(-2) sum_(b asymp B) sum_(d not equal 0) sum_n (S(n+d,K;M)conj(S(n,K;M))-c_M(d)) I_b(n+d)conj(I_b(n)). Sampled Parseval plus the reciprocal autocorrelation phase gives sum_n|I_b(n)|^2 <<_epsilon X^epsilon M C/g. Therefore the d=0 slice is <<_epsilon X^epsilon B^2 C=X^epsilon C^3/T^2, target-safe throughout the frozen band; the standard Weil-Estermann bound sharpens it to X^epsilon BC. Nonzero multiples d congruent 0 mod M remain in Y_C. The first exact smooth-main survivor is Y_C with target <<_epsilon X^epsilon J^2/T. Complete offset Fourier transformation and inversion are self-returns in all three classes. No B-power gain, conductor extension, transition or axial estimate, cone-edge estimate, full M9-M1, M9, or exponent is proved.",
+        "dependencies": [
+          "M9-M1-transition-flattened-residue-offset-reduction",
+          "M9-M1-upper-conductor-transition-flattened-subrange-bound"
+        ],
+        "implies": [
+          "M9-M1-residual-upper-conductor-offdiagonal-reduction"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-nonzero-residue-offset-dispersion/reports/inverse_unit_offset_attack.md",
+            "rounds/codex-managed/m9-m1-nonzero-residue-offset-dispersion/reviews/conductor_round83_dual_normalization.md",
+            "rounds/codex-managed/m9-m1-nonzero-residue-offset-dispersion/reviews/conductor_round83_adjudication.md",
+            "rounds/codex-managed/m9-m1-nonzero-residue-offset-dispersion/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-nonzero-residue-offset-dispersion/reports/blind_offset_dispersion_rederivation.md",
+            "rounds/codex-managed/m9-m1-nonzero-residue-offset-dispersion/reports/offset_trace_source_hostile_audit.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Estimate the centred d!=0 Kloosterman-product correlation with the actual stationary Fourier weights. Any B^(-delta) gain must preserve the inherited Q^(-5/12) row saving and treat nonzero d congruent 0 mod M and gcd-degenerate modes explicitly."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-residual-upper-conductor-offdiagonal-reduction",
+        "statement_tex": "Let J=sqrt(X), Q=J^(2/5), T=J^(3/5), and J^(13/18)<C<=J. In the first band J^(13/18)<C<=J^(3/4), the exact transition error and axes are separately target-safe. For each fixed smooth nonaxial local component, rescale the three arithmetic classes to inverse units modulo M in {4b,2b,b} and Poisson-sum the actual reciprocal row. The complete same-residue mode and the literal dual difference d=0 are target-safe. Thus the first-band principal energy is exactly reduced to Y_C=M^(-2) sum_b sum_(d not equal 0) sum_n (S(n+d,K;M)conj(S(n,K;M))-c_M(d)) I_b(n+d)conj(I_b(n)), with target Y_C<<_epsilon X^epsilon J^2/T. Nonzero multiples d congruent 0 mod M, gcd-degenerate modes, and every coherent nonzero offset remain in Y_C. The inherited absolute offset capacity is X^epsilon C^3/(TQ^(5/12)); a signed B^(-delta) gain is still required. On J^(3/4)<C<=J, the principal main, transition error, and axes all require signed control. This proves no estimate for Y_C, no conductor extension, no cone edge, full M9-M1, M9, or exponent.",
+        "dependencies_added": [
+          "M9-M1-nonzero-residue-offset-dual-difference-reduction"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-nonzero-residue-offset-dispersion/reports/inverse_unit_offset_attack.md",
+            "rounds/codex-managed/m9-m1-nonzero-residue-offset-dispersion/reviews/conductor_round83_adjudication.md",
+            "rounds/codex-managed/m9-m1-nonzero-residue-offset-dispersion/synthesis.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-nonzero-residue-offset-dispersion/reports/blind_offset_dispersion_rederivation.md",
+            "rounds/codex-managed/m9-m1-nonzero-residue-offset-dispersion/reports/offset_trace_source_hostile_audit.md"
+          ]
+        },
+        "next_action": "Attack the centred nonzero-dual-difference actual-weight correlation in J^(13/18)<C<=J^(3/4), then return to the upper band where transitions and axes also remain open."
+      },
+      {
+        "id": "M9-M1",
+        "dependencies_added": [
+          "M9-M1-nonzero-residue-offset-dual-difference-reduction"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-nonzero-residue-offset-dispersion/synthesis.md"
+          ]
+        },
+        "next_action": "Close the centred d!=0 Kloosterman-product correlation in the first upper-conductor band, then treat C>J^(3/4), cone edges, remaining radial sectors, and endpoint uniformity."
+      },
+      {
+        "id": "M9-M1-transition-flattened-residue-offset-reduction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-nonzero-residue-offset-dispersion/reviews/conductor_round83_dual_normalization.md"
+          ]
+        },
+        "next_action": "The coherent nonzero-offset energy has now been further reduced by removing the literal dual difference d=0. Estimate the centred d!=0 correlation in M9-M1-nonzero-residue-offset-dual-difference-reduction."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round83-uniform-pointwise-square-root-rational-sum",
+        "reason": "For q=4p^nu and a=4p^(nu-1)alpha with p not dividing k alpha, the zero additive-frequency rational sum has size q^(1-1/(2nu)+o(1)); in particular q^(3/4+o(1)) at nu=2 and q^(7/8+o(1)) at nu=4. Any usable bound must retain gcd degeneracies and average with the actual weights."
+      },
+      {
+        "id": "Round83-coefficient-blind-trace-bound-controls-actual-row",
+        "reason": "The all-offset kernel is the rank-one form |sum_r u(r)R(r)|^2-sum_r|R(r)|^2, and arbitrary phase-conjugating weights saturate it. A proof must use the actual reciprocal Fourier weights, not only coefficient norms or complete-sum moments."
+      },
+      {
+        "id": "Round83-square-root-offset-average-closes-first-band",
+        "reason": "A B^(-1/2) gain reaches only C<=J^(56/75). The upper endpoint C=J^(3/4) requires at least B^(-5/9)."
+      },
+      {
+        "id": "Round83-complete-offset-transform-gives-power-saving",
+        "reason": "The exact product-Kloosterman Fourier transform followed by inversion returns the original nonzero residue-offset row in all three local classes. Only an estimate after the transform can save a power."
+      },
+      {
+        "id": "Round83-dual-zero-means-all-multiples-of-modulus",
+        "reason": "The proved target-safe slice is the literal integer difference d=0. Terms d!=0 with d congruent 0 mod M remain in the centred correlation and cannot be discarded as the same zero mode."
+      },
+      {
+        "id": "Round83-even-units-follow-by-odd-parity-analogy",
+        "reason": "The c congruent 2 mod 4 and 4|c units require separate rescalings to moduli 2b and b. Their exact coefficients follow from bs_0+rho=tc and cannot be inferred by copying the odd modulus 4b formula."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "The first residual band is narrowed to a centred d!=0 actual-weight correlation, but no estimate or conductor extension is proved; upper conductors, cone edges, other radial sectors, and endpoint uniformity remain open."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Round 83 concerns only the M1 transition-flattened upper-conductor principal energy."
+      },
+      {
+        "id": "M9",
+        "reason": "Both M9-M1 and M9-M2 remain open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The round proves a structural M1 reduction but no new global Gauss-circle exponent."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 6,
+    "idea_quality_score": 8,
+    "state_evidence_score": 9,
+    "calibration_score": 10,
+    "reason": "The round proves no B-power saving and no new conductor range, but it derives the two even inverse units exactly, removes a complete target-safe dual slice, and replaces the raw nonzero-offset energy by a strictly smaller all-class centred d!=0 Kloosterman-product correlation. Prime-power degeneracies, rank-one self-return, and current-source failures are recorded without overclaiming M9-M1 or the exponent."
+  }
+}

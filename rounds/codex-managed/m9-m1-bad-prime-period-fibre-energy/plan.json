@@ -1,0 +1,108 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 89,
+    "round_type": "m9_m1_bad_prime_period_fibre_energy",
+    "campaign_id": "m9-m1-bad-prime-period-fibre-energy",
+    "title": "Classify and estimate bad-prime and nonunit M1 period fibres",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "b279e9e671b54b43855bdfc90727e36e808eb539578dac0faeb115394789f674",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 80,
+      "numerical_experimental_maximum_percent": 20,
+      "planned_numerical_percent": 5,
+      "literature_policy": "Audit only literal theorems for masked rational sums modulo small prime powers, nonunit phase conductors, and 2-adic trace correlations. Preserve the actual physical symbol and directed-degree normalization."
+    },
+    "target_obligations": [
+      "M9-M1-cross-group-period-depth-subaggregate-bound",
+      "M9-M1-residual-upper-conductor-offdiagonal-reduction",
+      "M9-M1"
+    ],
+    "frozen_target": {
+      "question": "Can the remaining small-prime, nonunit-K, and full 2-adic reciprocal-period fibres be classified and bounded target-safely inside the exact hard M1 cross-group operator?",
+      "reference_formula": "Bound a nonempty complete-fibre subaggregate of R_*>rho_*, mathfrak_a<M^2/rho_*^2 by X^epsilon(D/B)J^(14/5), preferably through directed degree Delta<=rho_*^2, or isolate the exact smaller actual-symbol survivor.",
+      "scope": [
+        "transition-flattened smooth nonaxial M1 principal row only",
+        "J^(13/18)<C<=J^(3/4) and exact deep d support",
+        "all three classes, both signs, reflected orientations, modulus multiples, and Ramanujan centering",
+        "small primes, nonunit K, and full 2-adic reciprocal periods",
+        "no affine or aperiodic estimate without an exact interface",
+        "no M2, upper conductor, cone edge, assembly, endpoint, R5-Full, or exponent claim"
+      ]
+    },
+    "completion_criteria": [
+      "Retain normalized rows, centered Fejer ownership, and Q^(-5/12).",
+      "Classify the complete mask at p=2,3,5,7 and nonunit-K factors before counting.",
+      "Prove both directed degrees for every selected complete fibre.",
+      "Keep Round-87 and Round-88 owners exactly once.",
+      "Prove a nonempty target-safe package or an actual-symbol no-go with an exact residual.",
+      "Audit signs, modulus multiples, Ramanujan terms, support, perfect powers, self-return, and current sources.",
+      "Complete clean blind, constructive, and hostile/source gates."
+    ],
+    "tasks": [
+      {
+        "id": "blind_bad_prime_fibre_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "assigned",
+        "context_files": ["rounds/codex-managed/m9-m1-bad-prime-period-fibre-energy/derivation_packet.md"],
+        "report_path": "rounds/codex-managed/m9-m1-bad-prime-period-fibre-energy/reports/blind_bad_prime_fibre_rederivation.md"
+      },
+      {
+        "id": "bad_prime_period_graph_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "assigned",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0816_full_proof_strategy.md",
+          "rounds/codex-managed/m9-m1-bad-prime-period-fibre-energy/derivation_packet.md",
+          "rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/synthesis.md",
+          "rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/candidates/conductor_good_prime_period_lemma.md",
+          "rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/reports/period_depth_tensor_attack.md",
+          "rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/reviews/conductor_round88_masked_period_graph.md"
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-bad-prime-period-fibre-energy/reports/bad_prime_period_graph_attack.md"
+      },
+      {
+        "id": "bad_prime_hostile_source_audit",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "status": "assigned",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-bad-prime-period-fibre-energy/derivation_packet.md",
+          "rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/synthesis.md",
+          "rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/reports/cross_group_hostile_source_audit.md",
+          "rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/reviews/conductor_round88_adjudication.md"
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-bad-prime-period-fibre-energy/reports/bad_prime_hostile_source_audit.md"
+      }
+    ],
+    "review_seams": [
+      {"id": "mask_and_local_depth", "requirement": "Classify complete small-prime and 2-adic masks, not just phase numerators."},
+      {"id": "nonunit_conductor", "requirement": "Track v_p(K), trace descent p^(2j), and every local normalization."},
+      {"id": "physical_edge_degree", "requirement": "Prove in- and out-degree bounds on complete fibres after prior deletions."},
+      {"id": "actual_symbol_and_ownership", "requirement": "Retain the fourfold symbol, centered Fejer kernel, prior owners, and Q^(-5/12)."},
+      {"id": "scope_and_sources", "requirement": "Keep affine/aperiodic, M2, upper conductors, endpoints, and exponent separate unless proved."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "b279e9e671b54b43855bdfc90727e36e808eb539578dac0faeb115394789f674",
+    "generated_at": "2026-08-17T06:15:00+08:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}
+

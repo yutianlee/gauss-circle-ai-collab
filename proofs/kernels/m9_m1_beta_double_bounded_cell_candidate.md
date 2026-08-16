@@ -1,7 +1,9 @@
-# Candidate beta double-bounded cell kernel
+# Accepted beta double-bounded cell kernel
 
-Status: candidate only. Acceptance is controlled by
-state/proof_obligations.yml.
+Status: `proved_internal` as
+`M9-M1-beta-double-bounded-cell-bound` in
+`state/proof_obligations.yml`. This file is a readable proof kernel; the
+graph remains authoritative.
 
 Fix
 

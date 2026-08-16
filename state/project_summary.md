@@ -22,6 +22,402 @@ $$
 
 This target is open. The repository has a conditional proof architecture, not a proof of a new exponent.
 
+## Round 87 full-factor exceptional Fejer deletion (2026-08-17)
+
+The deep first-band M1 correlation has been reduced at the exact
+four-Kloosterman exceptional interface.  Write the normalized physical
+row as
+
+\[
+ \mathcal R_{b,x}(\theta)
+ ={1\over M}\sum_n I_b(n)e_M(nx)e(n\theta),
+ \qquad
+ \|\mathcal R_{b,x}\|_\infty
+ \ll_\varepsilon X^\varepsilon TQ^{-5/24}.
+\]
+
+Grouping each ordered pair by the full prime-power factors on which its
+two entries differ converts every mixture of the full-factor local-zero
+and paired branches into positive Fejer squares.  For a dyadic deep
+interval and \(U=D\), the complete same-group package satisfies
+
+\[
+ \mathcal P_{\rm exc}(D,D)
+ \ll_\varepsilon X^\varepsilon DB^3T^4Q^{-5/6}
+ \ll_\varepsilon X^\varepsilon {D\over B}J^{14/5},
+\]
+
+with \(J^{-2/15}\) slack at the largest \(B\).  This includes arbitrary
+prime powers, the full \(2\)-part, the hostile prime-power and squarefree
+aligned families, same-group stride-\(M\) returns, and the exact centered
+Ramanujan bookkeeping.  The conductor audit caught and rejected an
+earlier false normalization that double-counted \(M^{-2}\).
+
+The new exact survivor is the cross-group off-diagonal after the global
+\(u=0\) diagonal is retained once.  It contains partial lower-conductor
+returns, bad-prime and extra \(2\)-adic periods, and aperiodic local
+traces.  No estimate for this residual, no conductor extension, and no
+new global exponent is proved.
+
+Accepted evidence:
+
+- rounds/codex-managed/m9-m1-deep-exceptional-strata-dispersion/reports/aligned_mode_aggregate_attack.md;
+- rounds/codex-managed/m9-m1-deep-exceptional-strata-dispersion/reports/blind_exceptional_strata_rederivation.md;
+- rounds/codex-managed/m9-m1-deep-exceptional-strata-dispersion/reports/exceptional_trace_hostile_source_audit.md;
+- rounds/codex-managed/m9-m1-deep-exceptional-strata-dispersion/reviews/conductor_round87_normalization.md;
+- rounds/codex-managed/m9-m1-deep-exceptional-strata-dispersion/reviews/conductor_round87_crt_fejer.md;
+- rounds/codex-managed/m9-m1-deep-exceptional-strata-dispersion/synthesis.md.
+
+## Round 86 cubic lower-interior difference deletion (2026-08-16)
+
+The first M1 residual smooth-principal correlation has been narrowed a
+third time. Put
+
+\[
+ D_1=\lfloor J^{87/140}\rfloor.
+\]
+
+On each residue progression, the phase difference for
+\(e=|d|\le D_1\) has fixed-sign third derivative
+
+\[
+ \asymp {JM^3e\over Q^7}.
+\]
+
+Combining the weighted third-derivative estimate with the exact
+all-modulus residue \(L^1\) normalization proves that every
+
+\[
+ \lfloor J^{17/30}\rfloor<|d|\le
+ \lfloor J^{87/140}\rfloor
+\]
+
+is target-safe. The aggregate has three terms with worst endpoint
+exponents \(7/5\), \(369/280\), and \(61/70\). Both signs, all three
+local classes, nonzero modulus multiples, prime powers, gcd modes,
+Ramanujan centering, support endpoints, and reflected orientations are
+included.
+
+The exact first-band survivor is now
+
+\[
+ {1\over M^2}\sum_{b\asymp B}
+ \sum_{\lfloor J^{87/140}\rfloor<|d|<\Delta_b-J^{3/4}}\sum_n
+ \bigl(S(n+d,K;M)\overline{S(n,K;M)}-c_M(d)\bigr)
+ I_b(n+d)\overline{I_b(n)}.
+\]
+
+The physical \(Q^{-5/12}\) energy factor remains available. Exact
+completion reveals prime-power and squarefree divisor-aligned modes of
+near-quadratic size, so a uniform coefficientwise square-root bound is
+false. No audited theorem controls their joint actual-symbol aggregate.
+No conductor interval or global exponent has changed.
+
+Accepted evidence:
+
+- rounds/codex-managed/m9-m1-interior-four-kloosterman-ambiguity/reports/twisted_ambiguity_attack.md;
+- rounds/codex-managed/m9-m1-interior-four-kloosterman-ambiguity/reports/four_kloosterman_hostile_source_audit.md;
+- rounds/codex-managed/m9-m1-interior-four-kloosterman-ambiguity/reviews/conductor_round86_cubic_shell_normalization.md;
+- rounds/codex-managed/m9-m1-interior-four-kloosterman-ambiguity/reviews/conductor_round86_adjudication.md;
+- rounds/codex-managed/m9-m1-interior-four-kloosterman-ambiguity/synthesis.md.
+
+## Round 85 outer support-difference deletion (2026-08-16)
+
+The smooth-principal M1 dual correlation now has a second exact deletion.
+Let \(\Delta_b\asymp Q^2\) be the diameter of its actual stationary
+Fourier support and put
+
+\[
+ E_*=Q^2J^{-1/20}=J^{3/4}.
+\]
+
+Compact endpoint flatness through normalized derivative order three and
+a fresh all-difference error sum prove that every
+
+\[
+ |d|\geq\Delta_b-E_*
+\]
+
+is target-safe. The edge main is
+\(O_\varepsilon(X^\varepsilon J^{13/10})\), and the complete entry/exit,
+stationary-remainder, wrong-sign, and exterior errors are
+\(O_\varepsilon(X^\varepsilon J^{23/20})\), both below the target
+\(J^{7/5}\). Negative differences, nonzero modulus multiples, Ramanujan
+terms, and prime-power modes are included.
+
+Together with Round 84, the exact first-band smooth-principal survivor is
+
+\[
+ {1\over M^2}\sum_{b\asymp B}
+ \sum_{\lfloor J^{17/30}\rfloor<|d|<\Delta_b-J^{3/4}}\sum_n
+ \bigl(S(n+d,K;M)\overline{S(n,K;M)}-c_M(d)\bigr)
+ I_b(n+d)\overline{I_b(n)}.
+\]
+
+The shifted physical-row identity retains the accepted \(Q^{-5/12}\)
+energy factor, but multiplier triangle and complete transforms provide no
+power of \(B\). A literal A-process leaves a weighted four-Kloosterman
+off-diagonal with the complete actual symbol. No audited theorem currently
+estimates it. No conductor interval or global exponent has changed.
+
+Accepted evidence:
+
+- rounds/codex-managed/m9-m1-large-dual-difference-joint-dispersion/reports/hybrid_large_difference_attack.md;
+- rounds/codex-managed/m9-m1-large-dual-difference-joint-dispersion/reports/large_difference_source_hostile_audit.md;
+- rounds/codex-managed/m9-m1-large-dual-difference-joint-dispersion/reviews/conductor_round85_support_edge_normalization.md;
+- rounds/codex-managed/m9-m1-large-dual-difference-joint-dispersion/reviews/conductor_round85_adjudication.md;
+- rounds/codex-managed/m9-m1-large-dual-difference-joint-dispersion/synthesis.md.
+
+## Round 84 stationary small-dual-difference deletion (2026-08-16)
+
+The first M1 residual smooth-main correlation has been narrowed again.
+For the actual Round-81 principal symbol, the three local classes have a
+uniform stationary Fourier profile with phase
+
+\[
+ -\eta\left(\sqrt X+{\sqrt{\kappa k}\over b}\right)\sqrt{|n|},
+\]
+
+Gaussian \(e(-\eta/8)\), and sampled profile size
+\(H=C\sqrt T/J\). Exact Kloosterman Parseval gives normalized residue
+mass at most two, while on \(n=r+M\ell\) the product phase has curvature
+\(\asymp M^2|d|/J\).
+
+Consequently every
+
+\[
+ 0<|d|\leq\lfloor J^{17/30}\rfloor
+\]
+
+is target-safe throughout \(J^{13/18}<C\le J^{3/4}\), including
+negative differences, nonzero modulus multiples, Ramanujan terms,
+prime-power gcd modes, saddle entry/exit, and stationary errors.  The
+first exact principal survivor is the same centered Kloosterman-product
+correlation on larger differences.
+
+This is a strict polynomial reduction, not a whole-range \(B\)-saving or
+a conductor extension. `M9-M1`, `M9-M2`, `M9`, endpoint uniformity,
+`R5-Full`, and the global \(1/4+\varepsilon\) target remain open.
+
+## Round 83 centred M1 dual-difference reduction (2026-08-16)
+
+The first M1 upper-conductor residual band has been narrowed again.
+After the exact class-dependent rescaling \(c=g_\kappa x\), the odd and
+both even arithmetic factors are ordinary inverse units modulo
+\(M\in\{4b,2b,b\}\). Exact Poisson summation writes the smooth row as
+\(M^{-1}\sum_nS(n,K;M)I_b(n)\), with \(I_b\) the Fourier transform of
+the actual reciprocal symbol.
+
+The same-residue mode \(a=0\) is removed once. Sampled Parseval and the
+reciprocal autocorrelation phase then show that the literal dual
+difference \(d=0\) is target-safe. The exact remaining smooth-main
+object is
+
+\[
+ {1\over M^2}\sum_{b\asymp B}\sum_{d\ne0}\sum_n
+ \bigl(S(n+d,K;M)\overline{S(n,K;M)}-c_M(d)\bigr)
+ I_b(n+d)\overline{I_b(n)}.
+\]
+
+This is a strict structural improvement, not a conductor extension.
+Prime-power offsets rule out a uniform pointwise square-root estimate,
+and current trace/Kloosterman dispersion theorems do not accept the
+literal composite moduli and joint weights. M9-M1, M9-M2, M9,
+and the global \(1/4+\varepsilon\) target remain open.
+
+## Round 79 nonsquare incidence and exact-center closure (2026-08-16)
+
+The residual nonsquare reciprocal geometry now has a graph-accepted
+sharp positive theorem. In half-angle coordinates
+
+\[
+ m=\frac{a+b}{2},\quad q=\frac{b-a}{2},\quad
+ u=\frac{q}{m+\sqrt{m^2-q^2}},
+\]
+
+one has \(\Lambda=Xqu\) and the exact open interval
+\(Ju/(1-u)<k<2Ju/(1+u)\). On a dyadic block the metric window
+contains only \(O(1+K/R)\) integer products \(p=\ell k\) per ray,
+and divisor counting gives
+
+\[
+ \mathcal I_{\rm ns}\ll_\varepsilon X^\varepsilon\frac{ADK}{R}.
+\]
+
+After inserting the complete Round-77 coefficient, the positive
+capacity is
+
+\[
+ \mathcal A_{\rm ns}\ll_\varepsilon
+ X^\varepsilon A\sqrt G\sqrt J D^{3/2}.
+\]
+
+Therefore every block \(AJD^3\ll L^3\) is target-sized. Exact
+nonsquare centers are also closed: rational-ratio rigidity leaves at
+most one primitive ray at fixed \(X\), and all of its divisor modes
+contribute \(O_\varepsilon(LX^\varepsilon)\).
+
+The factor-\(R\) saving is sharp. Ordinary strictly metric incidences
+occur at density \(1/R\) on populated inner cones, even after square
+rays and exact equalities are removed. Thus another algebraic
+classification cannot close the problem.  The remaining M2 object is
+the complete-coefficient signed strict-metric sum on
+\(AJD^3\gg L^3\). The full \(M9\!-\!M2\), \(M9\!-\!M1\), \(M9\),
+and global exponent remain open.
+
+## Round 78 signed primitive-square closure (2026-08-16)
+
+The algebraically structured primitive-square/common-squarefree family
+inside the exact top-\(M2\) survivor is now graph-accepted.  Writing
+
+\[
+ a=s^2,\qquad b=t^2,\qquad t=s+2u,\qquad g=2n+1,
+\]
+
+the complete outer and lift phases combine to \(e(-gXu^2/k)\) on
+\(Ju/s<k<2Ju/t\).  For each actual lift, the complete collared
+coefficient has sampled reciprocal-mode variation
+
+\[
+ \sup_k|B_g(k)|+\operatorname{Var}_k B_g(k)
+ \ll_\varepsilon X^\varepsilon
+ \sqrt{\frac{gt^2}{Ju/s}}.
+\]
+
+This is a total-variation theorem, not a pointwise
+\(k\partial_k\)-bound; the latter is false at a moving physical collar.
+Reciprocal second-derivative cancellation gives \(O(L+1)\) per lifted
+square triple, and the \(O(L\log L)\) triple count yields
+
+\[
+ |\mathcal S_L^\square(X)|
+ \ll_\varepsilon L^2X^\varepsilon.
+\]
+
+The corresponding positive Abel majorant is sharply larger:
+
+\[
+ \mathcal M_L^\square(X)
+ \asymp_{X^\varepsilon}\sqrt J\,L^{3/2}.
+\]
+
+Thus exact and metric square-ray resonances are harmless only when the
+actual signed \(k\)-phase is retained.  Generic nonsquare rays, the full
+top energy, \(M9\!-\!M2\), \(M9\!-\!M1\), \(M9\), endpoint uniformity,
+and the global exponent remain open.
+
+## Round 77 actual-symbol normal form and variation (2026-08-16)
+
+The complete top-\(M2\) odd-lift coefficient is now accepted, not merely
+a leading stationary approximation.  After one fixed primal collar is
+removed at each \(m\)-endpoint, symmetric finite Poisson summation gives
+
+\[
+ \mathcal O_L=\mathcal O_{L,\mathrm{stat}}^\circ
+ +O_{M,\eta,\Phi,W}\!\left(L^2\log(2+L)\right).
+\]
+
+This error owns both full endpoint samples, all removed collar samples,
+zero and positive modes, equality modes, and every negative
+nonstationary mode.  Every stationary and saddle-transition mode remains
+inside the complete centred integral.
+
+For \(h=ga,s=gb\), the actual symbol factors as
+\(g^{-3}E_{a,b}(g)P_{a,b}(u)\), with the exact \(W\)-profiles and \(q_X\)
+independent of \(g\), while \(E'(g)=O(G^{-1})\).  The exact centred square
+then proves
+
+\[
+ |\mathfrak B^\circ(g)|+g|\partial_g\mathfrak B^\circ(g)|
+ \ll {J(\sqrt b-\sqrt a)\sqrt G\over k^{3/2}},
+\]
+
+uniformly through collar entry and exit.  Hence the step-two total
+variation has the same scale and discrete Abel is now lawful with
+
+\[
+ \left\|{X(\sqrt b-\sqrt a)^2\over2k}\right\|.
+\]
+
+The first remaining \(M2\) object is the coefficient-weighted
+primitive-pair/reciprocal-mode resonance union.  The energy, signed top
+cone, \(M9\!-\!M2\), \(M9\), and global exponent remain open.
+
+## Round 76 odd-lift resonance correction (2026-08-14)
+
+For the hard top-M2 transposed energy, write
+\(h=ga\), \(h+2r=gb\), with \(g,a,b\) odd and \((a,b)=1\).
+The offset character is constant on each primitive ray, and consecutive
+admissible lifts differ by two. The correct bulk resonance is therefore
+
+\[
+\left\|\frac{X(\sqrt b-\sqrt a)^2}{2k}\right\|
+\lesssim G_{a,b}^{-1},
+\]
+
+not the earlier step-one criterion. A fixed primal endpoint collar is
+target-safe; an unremoved sharp lower endpoint may require a mod-four
+split. The actual-profile family \((a,b)=(81,121)\) at fourth powers
+exhibits fully coherent half-integer lift phase. Reciprocal Poisson
+self-returns. No energy estimate, polynomial \(L\)-range, or exponent is
+proved. The complete centred-integral symbol and its variation remain
+uncertified and are the Round-77 target.
+
+## Round 75 exact character-preserving top-M2 energy (2026-08-14)
+
+Regrouping the finite top cone by \(m\) gives
+
+\[
+R_m=\sum_{\substack{h\in\mathscr H_L\\m\le h\le4m}}
+\chi_4(h)a(h,m)e(\sqrt{Xhm}),
+\qquad
+|\mathcal T_L|^2\ll L\sum_m|R_m|^2.
+\]
+
+The diagonal is \(O(L^2)\), and the exact positive-offset term has sign
+\(\chi_4(h)\chi_4(h+2r)=(-1)^r\). Thus
+\(\sum_m|R_m|^2\ll_\varepsilon L^2X^\varepsilon\) is sufficient.
+The earlier evaluated-saddle all-orders formula is false because the
+moving angular amplitude has nonzero stationary corrections. A repaired
+dual transform returns to the same energy.
+
+## Round 74 hard-top affine-cone reduction (2026-08-14)
+
+The diagonal, fixed near-diagonal, and endpoint-touching correlations are
+target-safe. The remaining intermediate-\(L\) interior is a signed
+fixed-centre near-product/row-correlation problem. Two-dimensional
+Poisson is rank one; character-leg Poisson returns to the original block.
+No polynomial intermediate-\(L\) range or exponent is gained.
+
+## Round 73 residual M1 upper-conductor survivor (2026-08-14)
+
+On \(J^{32/45}<C\le J\), the exact diagonal and every fixed
+denominator-offset layer are target-safe. Only their coherent
+actual-unit off-diagonal accumulation remains. Fourth derivatives,
+Hessian-only estimates, cellwise Bourgain input, and the current
+phase-matched spectral model do not extend the accepted conductor range.
+
+## Round 72 M1 conductor advance (2026-08-14)
+
+The all-class weighted third-derivative estimate proves the fixed-interior
+M1 conductor blocks through
+
+\[
+C\le J^{32/45}=X^{16/45},
+\]
+
+extending the earlier \(C\le J^{2/3}\) range. The residual upper
+conductor and the global exponent remain open.
+
+## Round 71 low-conductor M1 closure (2026-08-14)
+
+Three-variable Farey stationarity gives local size
+\(T/\sqrt{cJ}\) and total block bound
+\(\mathcal D_C\ll_\varepsilon X^\varepsilon C^{3/2}/\sqrt J\).
+This closes \(T\le C\le J^{2/3}\). The upper-conductor
+incomplete-numerator correlation remains open, with the benchmark
+\(X^{1/20}\) deficit preserved by the natural completion/self-return.
+
 ## Round 68 exact symbol and stationary involution (2026-08-14)
 
 The shifted square-root-product coefficient is now explicit in every
@@ -217,7 +613,7 @@ For \(n\asymp X^\nu\), \(0<\nu<1/2\), the resulting coefficient is
 eventually exactly
 
 \[
- \mathcal D(n)=\sum_{\substack{hq=n\\q\ {m odd}\\q>4h}}\chi_4(q),
+ \mathcal D(n)=\sum_{\substack{hq=n\\q\ \mathrm{odd}\\q>4h}}\chi_4(q),
 \]
 
 with no floor perturbation or equality star.  The smooth radial
@@ -1391,7 +1787,7 @@ length-\(R\) actual-symbol twisted-divisor sum
 
 \[
  \sum_{n=A}^{B}e(\sqrt{Xn})
- \sum_{\substack{h\mid n,\ R/4<h\le R/2\\n/h\ {m odd}}}
+ \sum_{\substack{h\mid n,\ R/4<h\le R/2\\n/h\ \mathrm{odd}}}
  \chi_4(n/h)\widetilde{\mathcal A}_X(h,n/h).
 \]
 
@@ -1446,7 +1842,7 @@ complete actual ratio symbol and a summed stationary-symbol ledger, gives
  Q^{3/2}J^{-1/2}(1+J/Q)X^\varepsilon.
 \]
 
-At (Q=X^{1/5}), this is (X^{7/20+arepsilon}), improving the
+At (Q=X^{1/5}), this is (X^{7/20+\varepsilon}), improving the
 trivial (X^{2/5}). The desired direct target is (X^{3/10}), so the
 exact remaining gap is (X^{1/20}). The dual object is again the signed
 fixed-centre product wavelet of length (J/Q); its absolute capacity is
@@ -1480,3 +1876,136 @@ Kuznetsov does not match the moving incomplete numerator.
 The next analytic object is a joint modulus, short-numerator, and
 dual-frequency large-sieve estimate with the actual weights. It still
 must save \(T/J^{1/2}=X^{1/20}\). No final exponent has changed.
+
+## Round 80 progress (2026-08-16)
+
+The residual M2 strict-metric parity proposal has been resolved exactly.
+For \(\theta=\Lambda/k\), the complete Round-77 coefficient satisfies
+
+\[
+ \mathfrak B^\circ(g)=e(g\theta/2)\mathfrak C^\circ(g).
+\]
+
+Hence, if \(\theta=\ell+\eta\) and \(g\) is odd,
+
+\[
+ (-1)^{q+\ell}\mathfrak B^\circ(g)e(-g\eta/2)
+ =(-1)^q\mathfrak C^\circ(g).
+\]
+
+The quotient sign \((-1)^{p/k}\) cancels pointwise. The same carrier
+restores the integer Fourier modes of the period-one metric window,
+including its \(r=0\) density term. Under \(h=ga\), \(s=gb\), and
+\(x=gu\), the remaining sign is exactly
+\(\chi_4(h)\chi_4(s)\), and the integral returns to the original
+transposed character kernel.
+
+Thus quotient parity, a half-frequency spectral gap, discrepancy alone,
+and another reciprocal Poisson step are now rigorously excluded. No new
+hard range closes: the accepted block bound remains
+
+\[
+ L^2X^\varepsilon\sqrt{AJD^3/L^3}.
+\]
+
+The honest M2 survivor is the complete cross-row density--discrepancy
+correlation itself. M9-M2, M9-M1, M9, and the global exponent remain
+open.
+
+## Round 81 progress (2026-08-16)
+
+The fixed-interior M1 Farey transition is now flattened at the complete-
+symbol level.  On every admissible residue progression,
+
+\[
+ \mathcal W(c)=\Gamma_{\epsilon,z_*}V(c)+E(c),
+ \qquad
+ \|V\|_\infty+\operatorname {Var}V\ll_\varepsilon X^\varepsilon,
+ \qquad
+ |E(c)|\ll_\varepsilon X^\varepsilon\sqrt{C/J}.
+\]
+
+The exact moving Farey boundary and all first stationary corrections are
+retained in \(E\).  The raw transition itself can have total variation
+\(\asymp\sqrt{J/C}\), so it cannot be used as an Abel weight; only the
+neighbor-independent principal coefficient \(V\) is globally BV.
+
+Bourgain's audited reciprocal exponent pair then gives
+
+\[
+ \sum_{b\asymp C/T}|S_b|^2
+ \ll_\varepsilon X^\varepsilon
+ \left({C^3\over TQ^{5/12}}+{C^4\over TJ}\right),
+\]
+
+which is target-safe through \(C\le J^{13/18}\).  This strictly improves
+the earlier \(J^{32/45}\) fixed-interior boundary.  The remaining M1
+fixed-interior corridor is \(J^{13/18}<C\le J\); below \(J^{3/4}\), only
+the smooth nonaxial main energy remains open.  No global exponent has
+changed, and M9-M2 remains at its separate cross-row energy.
+
+## Round 82 progress (2026-08-16)
+
+The first transition-flattened M1 residual band has been reduced to a
+strictly smaller exact signed correlation.  For (B=C/T), every fixed
+smooth nonaxial row has
+
+\[
+ S_b=\sum_{r\in\mathscr R_{\kappa,b}}u(r)R(r),
+ \qquad
+ |R(r)|\ll_\varepsilon X^\varepsilon TQ^{-5/24}.
+\]
+
+The entire same-residue energy and every fixed nonzero residue-offset
+layer are
+
+\[
+ \ll_\varepsilon X^\varepsilon C^2Q^{-5/12},
+\]
+
+which is target-safe through (C\le J^{47/60}), and therefore on the
+whole first residual band (J^{13/18}<C\le J^{3/4}).  The only remaining
+smooth-main object is the coherent sum
+
+\[
+ \mathfrak X_C^{(\kappa,k)}=
+ \sum_{b\asymp B}\sum_{r\ne s}
+ u(r)\overline{u(s)}R(r)\overline{R(s)}.
+\]
+
+Absolute offset summation loses the factor (B).  A gain (B^{-1/2})
+would extend the safe range to (C\le J^{56/75}); (B^{-5/9}) would
+close the band.  Neither is proved.  Complete Poisson and matched
+Kuznetsov--Voronoi are exact self-returns, and current bilinear
+Kloosterman theorems do not match the varying-modulus product kernel.
+No global exponent has changed.
+
+## Round 88 progress (2026-08-17)
+
+The first-band M1 cross-group survivor has been reduced twice more. Exact
+coarse physical-label shells satisfy
+
+\[
+ R_*\leq\rho_*=min\!\left(M,
+ \left\lfloor J^{11/30}B^{-2}\right\rfloor\right)
+\]
+
+and are target-safe by centered Fejer grouping. After deleting those
+shells, complete reciprocal-mask period fibres at good primes are also
+target-safe whenever
+
+\[
+ \mathfrak a\geq M^2/\rho_*^2.
+\]
+
+The local normalization was corrected: a depth-\(j\) completed trace
+descends by \(p^{2j}\), not \(p^j\). Exact small-prime examples also
+show that numerator coefficients alone do not determine masked period
+depth.
+
+The remaining first-band M1 operator has
+\(R_*>\rho_*\) and \(\mathfrak a<M^2/\rho_*^2\), with small-prime,
+nonunit, \(2\)-adic, affine, projection-only, and aperiodic pieces still
+present. M9-M1, M9-M2, M9, endpoint uniformity, R5-Full reconciliation,
+and the Gauss-circle exponent remain open. No global exponent has
+changed.

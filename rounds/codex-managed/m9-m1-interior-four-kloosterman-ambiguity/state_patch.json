@@ -1,0 +1,146 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-centred-dual-difference-cubic-shell-bound",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Cubic curvature removes a further lower-interior dual-difference shell",
+        "status": "proved_internal",
+        "statement_tex": "Let J=sqrt(X), Q=J^(2/5), T=J^(3/5), B=C/T, and J^(13/18)<C<=J^(3/4). Fix a compatible transition-flattened smooth nonaxial M1 principal component, any of the three local classes M in {b,2b,4b} up to their exact class constants, either sign, and either reflected endpoint orientation. Put D_0=floor(J^(17/30)), D_1=floor(J^(87/140)), E_*=floor(Q^2J^(-1/20)), and let Delta_b asymp Q^2 be the active stationary-support diameter. On every residue progression n=r+M ell and for D_0<e=|d|<=D_1, translation and reflection reduce the stationary phase to plus or minus lambda_b(sqrt(m+e)-sqrt(m)), m asymp Q^2, lambda_b asymp J, whose third derivative has fixed sign and size rho_e asymp JM^3e/Q^7. The complete phase-removed product has sampled supremum plus variation <<_epsilon X^epsilon H^2, H=C sqrt(T)/J. Weighted third derivative and the exact all-modulus identity M^(-2)sum_(r mod M)|S(r+d,K;M)conj(S(r,K;M))-c_M(d)|<=2 give the aggregate shell bound <<_epsilon X^epsilon(B^(5/2)J^(3/10)D^(7/6)+B^2J^(1/2)D^(5/6)+B^3J^(-1/5)D) for D<=D_1. At B<=J^(3/20), D=D_1, the three exponents are 7/5, 369/280, and 61/70. Hence every D_0<|d|<=D_1 is target-safe, including negative d, nonzero d congruent 0 mod M, arbitrary composite and prime-power modes, the centered Ramanujan term, support endpoints, and reflected orientations. The exact remaining smooth-principal first-band survivor is M^(-2)sum_(b asymp B)sum_(D_1<|d|<Delta_b-E_*)sum_n(S(n+d,K;M)conj(S(n,K;M))-c_M(d))I_b(n+d)conj(I_b(n)). The inherited physical Q^(-5/12) energy factor remains available on this survivor. No whole-middle B-power, conductor extension, raw transition or axial estimate, cone-edge estimate, full M9-M1, M9, or exponent is proved.",
+        "dependencies": [
+          "M9-M1-centred-dual-difference-small-shift-bound",
+          "M9-M1-centred-dual-difference-support-edge-bound",
+          "M9-M1-upper-conductor-transition-flattened-subrange-bound"
+        ],
+        "implies": [
+          "M9-M1-residual-upper-conductor-offdiagonal-reduction"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-interior-four-kloosterman-ambiguity/reports/twisted_ambiguity_attack.md",
+            "rounds/codex-managed/m9-m1-interior-four-kloosterman-ambiguity/reports/four_kloosterman_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m1-interior-four-kloosterman-ambiguity/reviews/conductor_round86_cubic_shell_normalization.md",
+            "rounds/codex-managed/m9-m1-interior-four-kloosterman-ambiguity/reviews/conductor_round86_adjudication.md",
+            "rounds/codex-managed/m9-m1-interior-four-kloosterman-ambiguity/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-interior-four-kloosterman-ambiguity/reports/blind_four_kloosterman_rederivation.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Estimate the exact deep survivor D_1<|d|<Delta_b-E_* through an outside-absolute actual-symbol four-Kloosterman ambiguity bound that stratifies divisor-aligned and prime-power modes while retaining Q^(-5/12)."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-residual-upper-conductor-offdiagonal-reduction",
+        "statement_tex": "Let J=sqrt(X), Q=J^(2/5), T=J^(3/5), and J^(13/18)<C<=J. In the first band J^(13/18)<C<=J^(3/4), the exact transition error and axes are separately target-safe. For each fixed smooth nonaxial principal component, the three arithmetic classes reduce to the centred Kloosterman-product dual correlation. The complete same-residue mode, literal d=0, every 0<|d|<=D_1=floor(J^(87/140)), and the complete outer support-difference range |d|>=Delta_b-E_* are target-safe, where Delta_b asymp Q^2 is the actual stationary-support diameter and E_*=floor(Q^2J^(-1/20)). These deletions include both signs, nonzero multiples d congruent 0 mod M, Ramanujan terms, gcd modes, entry/exit, stationary errors, and wrong-sign tails. Thus the first-band principal survivor is exactly Y_deep=M^(-2)sum_(b asymp B)sum_(D_1<|d|<Delta_b-E_*)sum_n(S(n+d,K;M)conj(S(n,K;M))-c_M(d))I_b(n+d)conj(I_b(n)), with target <<_epsilon X^epsilon J^2/T and the physical Q^(-5/12) energy factor retained. No estimate for Y_deep is proved. On J^(3/4)<C<=J, the principal main, transition error, and axes all require signed control. This proves no conductor extension, cone edge, full M9-M1, M9, or exponent.",
+        "dependencies_added": [
+          "M9-M1-centred-dual-difference-cubic-shell-bound"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-interior-four-kloosterman-ambiguity/reports/twisted_ambiguity_attack.md",
+            "rounds/codex-managed/m9-m1-interior-four-kloosterman-ambiguity/reports/four_kloosterman_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m1-interior-four-kloosterman-ambiguity/reviews/conductor_round86_adjudication.md",
+            "rounds/codex-managed/m9-m1-interior-four-kloosterman-ambiguity/synthesis.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-interior-four-kloosterman-ambiguity/reports/blind_four_kloosterman_rederivation.md"
+          ]
+        },
+        "next_action": "Estimate the deep first-band actual-symbol four-Kloosterman correlation D_1<|d|<Delta_b-E_*, explicitly separating and summing divisor-aligned and prime-power exceptional modes, then return to C>J^(3/4)."
+      },
+      {
+        "id": "M9-M1-centred-dual-difference-support-edge-bound",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-interior-four-kloosterman-ambiguity/reviews/conductor_round86_cubic_shell_normalization.md",
+            "rounds/codex-managed/m9-m1-interior-four-kloosterman-ambiguity/synthesis.md"
+          ]
+        },
+        "next_action": "The lower range through D_1 and the outer stationary-support edge are target-safe. Estimate the exact deep survivor recorded in M9-M1-centred-dual-difference-cubic-shell-bound."
+      },
+      {
+        "id": "M9-M1-centred-dual-difference-small-shift-bound",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-interior-four-kloosterman-ambiguity/synthesis.md"
+          ]
+        },
+        "next_action": "The direct progression estimates now remove every 0<|d|<=D_1. Estimate only the remaining deep middle interval before the support edge."
+      },
+      {
+        "id": "M9-M1-nonzero-residue-offset-dual-difference-reduction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-interior-four-kloosterman-ambiguity/synthesis.md"
+          ]
+        },
+        "next_action": "The literal d=0, all differences through D_1, and the outer support collar are target-safe. Estimate the remaining deep centred difference correlation."
+      },
+      {
+        "id": "M9-M1",
+        "dependencies_added": [
+          "M9-M1-centred-dual-difference-cubic-shell-bound"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-interior-four-kloosterman-ambiguity/synthesis.md"
+          ]
+        },
+        "next_action": "Close the deep first-band correlation D_1<|d|<Delta_b-E_*, then treat C>J^(3/4), cone edges, remaining radial sectors, and endpoint uniformity."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round86-twisted-row-multiplier-triangle-gives-B-power",
+        "reason": "The exact continuously twisted physical-row identity preserves Q^(-5/12), but every retained unit plateau has Fourier-kernel L1 norm at least one. Triangle inequality therefore returns C^3/(TQ^(5/12)) and no B-power."
+      },
+      {
+        "id": "Round86-uniform-four-Kloosterman-square-root-bound",
+        "reason": "On v=0 and h_1=h_2 the reciprocal phase cancels. Prime-power choices give exact size M^(2-1/nu), and squarefree M=ell R with u=h_1=h_2=R gives size asymptotic to M^2. A joint actual-symbol exceptional-mode estimate is required."
+      },
+      {
+        "id": "Round86-A-process-U-below-M-avoids-near-return",
+        "reason": "Although U<=M avoids the first exact period u=M, divisor-aligned shifts u=M/ell and prime-power shifts u=M/p already produce near-quadratic complete modes. The Fejer prefactor, diagonal, and exceptional strata remain compulsory."
+      },
+      {
+        "id": "Round86-residual-b-phase-alone-gives-B-minus-1-over-18",
+        "reason": "The b-phase has the right formal variation, but modulus, inverse unit, Kloosterman products, residue support, and stationary symbol vary simultaneously. No sampled-b BV or composite-modulus theorem converts that variation into a gain on the actual vector."
+      },
+      {
+        "id": "Round86-generic-prime-trace-bound-closes-composite-aggregate",
+        "reason": "Generic prime-local square-root estimates leave exact paired, local-zero, divisor-aligned, higher-prime-power, and 2-adic strata. Existing sources do not aggregate those modes with the actual stationary symbol or retain the physical Q^(-5/12) factor."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "The lower-interior difference shell is removed, but the deep first-band correlation, C>J^(3/4), cone edges, remaining radial sectors, and endpoint uniformity remain open."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Round 86 concerns only the M1 transition-flattened smooth-principal upper-conductor correlation."
+      },
+      {
+        "id": "M9",
+        "reason": "Both M9-M1 and M9-M2 remain open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The round proves a strict M1 range deletion but no new global Gauss-circle exponent."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 8,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 86 proves no conductor or exponent improvement, but a new fixed-sign cubic-curvature estimate removes the nonempty shell J^(17/30)<|d|<=J^(87/140) while retaining the exact arithmetic normalization and physical row saving. Independent hostile review certifies every seam and shows why generic complete-trace estimates cannot close the remaining deep aggregate."
+  }
+}
