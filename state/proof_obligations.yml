@@ -277,7 +277,15 @@
         "M9-M1-shifted-divisor-correlation-PSC",
         "M9-M1-ordered-resonance-cell-decomposition",
         "M9-M1-ordered-cell-Bprocess-capacity-no-go",
-        "M9-M1-dual-restricted-convolution-RCS"
+        "M9-M1-dual-restricted-convolution-RCS",
+        "M9-M1-upper-conductor-transition-flattened-subrange-bound",
+        "M9-M1-transition-flattened-residue-offset-reduction",
+        "M9-M1-nonzero-residue-offset-dual-difference-reduction",
+        "M9-M1-centred-dual-difference-small-shift-bound",
+        "M9-M1-centred-dual-difference-support-edge-bound",
+        "M9-M1-centred-dual-difference-cubic-shell-bound",
+        "M9-M1-deep-full-factor-same-group-fejer-bound",
+        "M9-M1-cross-group-period-depth-subaggregate-bound"
       ],
       "implies": [
         "M9"
@@ -301,7 +309,15 @@
           "rounds/codex-managed/m9-m1-ordered-denominator-resonance-cells/reports/blind_two_step_resonance_decomposition.md",
           "rounds/codex-managed/m9-m1-ordered-denominator-resonance-cells/synthesis.md",
           "rounds/codex-managed/m9-m1-dual-r2-recombination/reports/blind_rcs_coefficient_algebra.md",
-          "rounds/codex-managed/m9-m1-dual-r2-recombination/synthesis.md"
+          "rounds/codex-managed/m9-m1-dual-r2-recombination/synthesis.md",
+          "rounds/codex-managed/m9-m1-upper-conductor-transition-flattening/synthesis.md",
+          "rounds/codex-managed/m9-m1-transition-flattened-kloosterman-energy/synthesis.md",
+          "rounds/codex-managed/m9-m1-nonzero-residue-offset-dispersion/synthesis.md",
+          "rounds/codex-managed/m9-m1-centred-dual-difference-stationary-correlation/synthesis.md",
+          "rounds/codex-managed/m9-m1-large-dual-difference-joint-dispersion/synthesis.md",
+          "rounds/codex-managed/m9-m1-interior-four-kloosterman-ambiguity/synthesis.md",
+          "rounds/codex-managed/m9-m1-deep-exceptional-strata-dispersion/synthesis.md",
+          "rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/synthesis.md"
         ],
         "negative": [
           "rounds/codex-managed/m9-combined-top-cones/reports/combined_cone_hostile_audit.md",
@@ -316,9 +332,9 @@
         "inconclusive": []
       },
       "owner": "A2",
-      "next_action": "Attack the exact global angular symbol by Mellin separation, while separately auditing whether the final bridge may use the global M1 aggregate instead of every dyadic M1 block.",
-      "last_updated_round": 14,
-      "last_updated_at": "2026-08-12T18:04:48"
+      "next_action": "Close the hard first-band cross-group operator R_*>rho_* and mathfrak_a<M^2/rho_*^2; then treat C>J^(3/4), cone edges, remaining radial sectors, and endpoint uniformity.",
+      "last_updated_round": 88,
+      "last_updated_at": "2026-08-17T02:22:40"
     },
     {
       "id": "M9-M2",
@@ -380,13 +396,17 @@
           "rounds/obligation-main/round_005/reviews/A1.md",
           "rounds/codex-managed/m9-m2-top-endpoint-affine-cone/synthesis.md",
           "rounds/codex-managed/m9-m2-top-endpoint-near-product-energy/synthesis.md",
-          "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/synthesis.md"
+          "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/synthesis.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-actual-symbol-variation/synthesis.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/synthesis.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/synthesis.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/synthesis.md"
         ]
       },
       "owner": "A2",
-      "next_action": "The hard top block remains the exact transposed-row energy. Correct its odd-lift resonance interface and bound the weighted primitive-pair/reciprocal-mode survivor; smooth packets and other M2 ranges remain separately owned.",
-      "last_updated_round": 76,
-      "last_updated_at": "2026-08-14T23:52:28"
+      "next_action": "The residual top-endpoint cross-row energy is still open after exact carrier recoupling. Close it directly, then reconcile every other M2 packet and endpoint owner.",
+      "last_updated_round": 80,
+      "last_updated_at": "2026-08-16T15:41:11"
     },
     {
       "id": "M9-M2-character-factor",
@@ -2499,7 +2519,11 @@
         "H4-Phi-regularity",
         "M9-M2-top-endpoint-row-correlation-reduction",
         "M9-M2-top-endpoint-transposed-character-energy",
-        "M9-M2-top-endpoint-odd-lift-resonance-obstruction"
+        "M9-M2-top-endpoint-odd-lift-resonance-obstruction",
+        "M9-M2-top-endpoint-actual-symbol-variation",
+        "M9-M2-top-endpoint-square-ray-signed-cancellation",
+        "M9-M2-top-endpoint-nonsquare-divisor-strip",
+        "M9-M2-top-endpoint-strict-metric-carrier-cancellation"
       ],
       "implies": [
         "M9-endpoint-uniformity",
@@ -2511,14 +2535,21 @@
           "rounds/codex-managed/m9-m2-top-endpoint-affine-cone/reports/blind_m2_cone_rederivation.md",
           "rounds/codex-managed/m9-m2-top-endpoint-affine-cone/reviews/conductor_round74_adjudication.md",
           "rounds/codex-managed/m9-m2-top-endpoint-near-product-energy/reports/blind_near_product_energy_rederivation.md",
-          "rounds/codex-managed/m9-m2-top-endpoint-near-product-energy/reviews/conductor_round75_adjudication.md"
+          "rounds/codex-managed/m9-m2-top-endpoint-near-product-energy/reviews/conductor_round75_adjudication.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-actual-symbol-variation/reviews/conductor_round77_adjudication.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/reviews/conductor_round78_adjudication.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/reviews/conductor_round79_adjudication.md"
         ],
         "negative": [
           "rounds/codex-managed/m9-combined-top-cones/reports/combined_cone_hostile_audit.md",
           "rounds/codex-managed/m9-m2-top-endpoint-affine-cone/reports/m2_cone_source_hostile_audit.md",
           "rounds/codex-managed/m9-m2-top-endpoint-near-product-energy/reports/near_product_energy_hostile_audit.md",
           "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reports/blind_signed_offset_rederivation.md",
-          "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reports/signed_offset_hostile_audit.md"
+          "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reports/signed_offset_hostile_audit.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/reports/square_resonance_hostile_audit.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/reports/nonsquare_resonance_hostile_source_audit.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/reports/strict_metric_energy_hostile_source_audit.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/reviews/conductor_round80_adjudication.md"
         ],
         "inconclusive": [
           "rounds/codex-managed/m9-top-endpoint-transform/reports/one_sided_poisson_derivation.md",
@@ -2530,13 +2561,17 @@
           "rounds/codex-managed/m9-m2-top-endpoint-near-product-energy/reports/reciprocal_energy_attack.md",
           "rounds/codex-managed/m9-m2-top-endpoint-near-product-energy/synthesis.md",
           "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reports/gcd_lift_resonance_attack.md",
-          "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/synthesis.md"
+          "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/synthesis.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-actual-symbol-variation/synthesis.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/synthesis.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/synthesis.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/synthesis.md"
         ]
       },
       "owner": "Codex conductor",
-      "next_action": "Remove fixed primal endpoint collars, certify the complete actual-symbol centred-integral and step-two variation theorem, and bound the corrected ||X(sqrt(b)-sqrt(a))^2/(2k)|| resonance union. The offset character is constant along odd gcd lifts.",
-      "last_updated_round": 76,
-      "last_updated_at": "2026-08-14T23:52:28"
+      "next_action": "The quotient-parity and half-frequency-gap routes are exhausted. Prove the residual complete-symbol chi_4(h)chi_4(s) cross-row energy directly, coupling the metric density and discrepancy modes.",
+      "last_updated_round": 80,
+      "last_updated_at": "2026-08-16T15:41:11"
     },
     {
       "id": "M9-M1-top-endpoint-transform",
@@ -7489,7 +7524,8 @@
           "rounds/codex-managed/m9-m1-upper-conductor-reciprocal-square-large-sieve/reports/upper_reciprocal_energy_attack.md",
           "rounds/codex-managed/m9-m1-upper-conductor-reciprocal-square-large-sieve/reports/upper_third_derivative_seam_review.md",
           "rounds/codex-managed/m9-m1-upper-conductor-reciprocal-square-large-sieve/reviews/conductor_round72_adjudication.md",
-          "rounds/codex-managed/m9-m1-upper-conductor-reciprocal-square-large-sieve/synthesis.md"
+          "rounds/codex-managed/m9-m1-upper-conductor-reciprocal-square-large-sieve/synthesis.md",
+          "rounds/codex-managed/m9-m1-upper-conductor-transition-flattening/synthesis.md"
         ],
         "negative": [
           "rounds/codex-managed/m9-m1-residual-upper-conductor-hybrid-energy/reports/hybrid_residue_energy_attack.md",
@@ -7503,9 +7539,9 @@
         ]
       },
       "owner": "Codex conductor",
-      "next_action": "Use this lemma only through C=J^(32/45). A fourth-derivative A-process, cellwise Bourgain exponent-pair input, and Hessian nondegeneracy do not extend the range after all actual transition pieces are retained.",
-      "last_updated_round": 73,
-      "last_updated_at": "2026-08-14T13:35:18"
+      "next_action": "Retain this third-derivative lemma through C=J^(32/45). The transition-flattened successor extends the combined fixed-interior safe range to C=J^(13/18).",
+      "last_updated_round": 81,
+      "last_updated_at": "2026-08-16T16:21:07"
     },
     {
       "id": "M9-M1-residual-upper-conductor-offdiagonal-reduction",
@@ -7513,10 +7549,18 @@
       "track": "M9_analytic",
       "title": "Residual upper-conductor energy reduced to the actual off-diagonal",
       "status": "proved_internal",
-      "statement_tex": "Let J=sqrt(X), Q=X^(1/5)=J^(2/5), T=J/Q, and J^(32/45)<C<=J. Fix a compatible nonaxial k=rho sigma=O(1), a local class kappa in {1/4,1/2,1}, and an endpoint orientation. For the exact half-open one-count cell set Z_b at b asymp C/T, write c_(b,z)=r+4b ell and a_(b,z)=u_(b,r,k)^(kappa) w_(b,r,nu,k)^(kappa)(ell), retaining the actual inverse or even local unit, both Farey-neighbor transitions, and all finite ownership conventions. Then the exact energy E_(C,k)^(kappa)=sum_b |sum_(z in Z_b) a_(b,z)e(plus-or-minus A_(kappa,b)/c_(b,z))|^2 splits as E=D+H, where D=sum_b sum_z |a_(b,z)|^2 <<_epsilon X^epsilon (C/T)C = X^epsilon C^2/T <= X^epsilon J^2/T, and H is the sum over z not equal to z' with phase plus-or-minus A_(kappa,b)(c_(b,z)^(-1)-c_(b,z')^(-1)). Every fixed nonzero denominator-offset layer has the same target-safe absolute capacity O_epsilon(X^epsilon C^2/T). Therefore the residual nonaxial energy estimate is exactly reduced to the coherent signed bound H <<_epsilon X^epsilon J^2/T. This reduction proves no estimate for H, no new conductor interval, and no control of the separate upper axial band, cone edges, full M9-M1, M9, or the global exponent.",
+      "statement_tex": "Let J=sqrt(X), Q=J^(2/5), T=J^(3/5), and J^(13/18)<C<=J. In the first band J^(13/18)<C<=J^(3/4), transition errors and axes are separately target-safe. For each fixed smooth nonaxial principal component, all three classes reduce to the centered Kloosterman-product correlation. The same-residue mode, literal dual d=0, every 0<|d|<=D_1=floor(J^(87/140)), and the outer support collar |d|>=Delta_b-E_* are target-safe. On each remaining deep dyadic interval, the exact Round-87 full-prime-power same-group package is target-safe at Fejer shift U=D. For the strict cross-group u!=0 package, let R_* be the first coarse physical-group coincidence quotient and rho_*=min(M,floor(J^(11/30)B^(-2))). Every shell 1<R_*<=rho_* is target-safe by exact divisor-lattice grouping and the centered Fejer kernel. For the unique reciprocal-mask period vector, let mathfrak_a be the product over p>=11, p not dividing K, of p^min(j_p,nu_p-j_p). After the coarse deletion, all complete fibres with mathfrak_a>=M^2/rho_*^2 are target-safe by the in/out-degree bound M^2/mathfrak_a. The exact first-band residual has R_*>rho_* and mathfrak_a<M^2/rho_*^2 and contains affine/full-phase periods, small-prime mask-created periods, nonunit-K and extra 2-adic conductor drops, projection-only depths, shallow good-prime lifts, and aperiodic traces, with the actual fourfold symbol and Q^(-5/12) retained. No estimate for this residual is proved. On J^(3/4)<C<=J, principal main, transition error, and axes remain open. No conductor extension, cone-edge estimate, full M9-M1, M9, or exponent is proved.",
       "dependencies": [
         "M9-M1-product-wavelet-short-numerator-Kloosterman-reduction",
-        "M9-M1-upper-conductor-third-derivative-subrange-bound"
+        "M9-M1-upper-conductor-third-derivative-subrange-bound",
+        "M9-M1-upper-conductor-transition-flattened-subrange-bound",
+        "M9-M1-transition-flattened-residue-offset-reduction",
+        "M9-M1-nonzero-residue-offset-dual-difference-reduction",
+        "M9-M1-centred-dual-difference-small-shift-bound",
+        "M9-M1-centred-dual-difference-support-edge-bound",
+        "M9-M1-centred-dual-difference-cubic-shell-bound",
+        "M9-M1-deep-full-factor-same-group-fejer-bound",
+        "M9-M1-cross-group-period-depth-subaggregate-bound"
       ],
       "implies": [],
       "blockers": [],
@@ -7526,15 +7570,49 @@
           "rounds/codex-managed/m9-m1-residual-upper-conductor-hybrid-energy/reports/blind_hybrid_energy_rederivation.md",
           "rounds/codex-managed/m9-m1-residual-upper-conductor-hybrid-energy/reports/hybrid_spectral_source_hostile_audit.md",
           "rounds/codex-managed/m9-m1-residual-upper-conductor-hybrid-energy/reviews/conductor_round73_adjudication.md",
-          "rounds/codex-managed/m9-m1-residual-upper-conductor-hybrid-energy/synthesis.md"
+          "rounds/codex-managed/m9-m1-residual-upper-conductor-hybrid-energy/synthesis.md",
+          "rounds/codex-managed/m9-m1-upper-conductor-transition-flattening/reviews/conductor_round81_adjudication.md",
+          "rounds/codex-managed/m9-m1-transition-flattened-kloosterman-energy/reports/chirped_residue_energy_attack.md",
+          "rounds/codex-managed/m9-m1-transition-flattened-kloosterman-energy/reviews/conductor_round82_adjudication.md",
+          "rounds/codex-managed/m9-m1-transition-flattened-kloosterman-energy/synthesis.md",
+          "rounds/codex-managed/m9-m1-nonzero-residue-offset-dispersion/reports/inverse_unit_offset_attack.md",
+          "rounds/codex-managed/m9-m1-nonzero-residue-offset-dispersion/reviews/conductor_round83_adjudication.md",
+          "rounds/codex-managed/m9-m1-nonzero-residue-offset-dispersion/synthesis.md",
+          "rounds/codex-managed/m9-m1-centred-dual-difference-stationary-correlation/reports/stationary_dual_difference_attack.md",
+          "rounds/codex-managed/m9-m1-centred-dual-difference-stationary-correlation/reviews/conductor_round84_adjudication.md",
+          "rounds/codex-managed/m9-m1-centred-dual-difference-stationary-correlation/synthesis.md",
+          "rounds/codex-managed/m9-m1-large-dual-difference-joint-dispersion/reports/hybrid_large_difference_attack.md",
+          "rounds/codex-managed/m9-m1-large-dual-difference-joint-dispersion/reviews/conductor_round85_adjudication.md",
+          "rounds/codex-managed/m9-m1-large-dual-difference-joint-dispersion/synthesis.md",
+          "rounds/codex-managed/m9-m1-interior-four-kloosterman-ambiguity/reports/twisted_ambiguity_attack.md",
+          "rounds/codex-managed/m9-m1-interior-four-kloosterman-ambiguity/reports/four_kloosterman_hostile_source_audit.md",
+          "rounds/codex-managed/m9-m1-interior-four-kloosterman-ambiguity/reviews/conductor_round86_adjudication.md",
+          "rounds/codex-managed/m9-m1-interior-four-kloosterman-ambiguity/synthesis.md",
+          "rounds/codex-managed/m9-m1-deep-exceptional-strata-dispersion/reports/aligned_mode_aggregate_attack.md",
+          "rounds/codex-managed/m9-m1-deep-exceptional-strata-dispersion/reports/blind_exceptional_strata_rederivation.md",
+          "rounds/codex-managed/m9-m1-deep-exceptional-strata-dispersion/reports/exceptional_trace_hostile_source_audit.md",
+          "rounds/codex-managed/m9-m1-deep-exceptional-strata-dispersion/synthesis.md",
+          "rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/reports/period_depth_tensor_attack.md",
+          "rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/reports/blind_cross_group_tensor_rederivation.md",
+          "rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/reports/cross_group_hostile_source_audit.md",
+          "rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/synthesis.md"
         ],
         "negative": [],
-        "inconclusive": []
+        "inconclusive": [
+          "rounds/codex-managed/m9-m1-upper-conductor-transition-flattening/synthesis.md",
+          "rounds/codex-managed/m9-m1-transition-flattened-kloosterman-energy/reports/blind_chirped_kloosterman_energy_rederivation.md",
+          "rounds/codex-managed/m9-m1-transition-flattened-kloosterman-energy/reports/kloosterman_energy_source_hostile_audit.md",
+          "rounds/codex-managed/m9-m1-nonzero-residue-offset-dispersion/reports/blind_offset_dispersion_rederivation.md",
+          "rounds/codex-managed/m9-m1-nonzero-residue-offset-dispersion/reports/offset_trace_source_hostile_audit.md",
+          "rounds/codex-managed/m9-m1-centred-dual-difference-stationary-correlation/reports/blind_dual_difference_rederivation.md",
+          "rounds/codex-managed/m9-m1-large-dual-difference-joint-dispersion/reports/blind_hybrid_large_difference_rederivation.md",
+          "rounds/codex-managed/m9-m1-interior-four-kloosterman-ambiguity/reports/blind_four_kloosterman_rederivation.md"
+        ]
       },
       "owner": "Codex conductor",
-      "next_action": "Prove the complete actual-unit off-diagonal bound H <<_epsilon X^epsilon J^2/T for J^(32/45)<C<=J, including coherent accumulation over all offsets, the upper axial band, parity classes, transitions, gcds, and finite errors; do not replace Farey ownership labels by orthogonality variables.",
-      "last_updated_round": 73,
-      "last_updated_at": "2026-08-14T13:35:18"
+      "next_action": "Attack only the hard cross-group first-band operator R_*>rho_*, mathfrak_a<M^2/rho_*^2, preferably by separating small-prime and nonunit conductor returns from the genuinely aperiodic actual-symbol tensor. Preserve U=D, the old u=0 owner, and Q^(-5/12).",
+      "last_updated_round": 88,
+      "last_updated_at": "2026-08-17T02:22:40"
     },
     {
       "id": "M9-M2-top-endpoint-row-correlation-reduction",
@@ -7592,7 +7670,14 @@
           "rounds/codex-managed/m9-m2-top-endpoint-near-product-energy/synthesis.md",
           "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reports/blind_signed_offset_rederivation.md",
           "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reports/signed_offset_hostile_audit.md",
-          "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reviews/conductor_round76_adjudication.md"
+          "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reviews/conductor_round76_adjudication.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-actual-symbol-variation/reviews/conductor_round77_adjudication.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/reviews/conductor_round78_adjudication.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/synthesis.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/reviews/conductor_round79_adjudication.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/synthesis.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/reports/primitive_ray_parity_energy_attack.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/reviews/conductor_round80_adjudication.md"
         ],
         "negative": [],
         "inconclusive": [
@@ -7601,9 +7686,9 @@
         ]
       },
       "owner": "Codex conductor",
-      "next_action": "Use the exact finite energy as the antecedent. Any m-Poisson attack must use the odd-lift ratio and retain the corrected reciprocal resonance; do not infer character cancellation along gcd lifts.",
-      "last_updated_round": 76,
-      "last_updated_at": "2026-08-14T23:52:28"
+      "next_action": "Estimate its residual chi_4(h)chi_4(s) cross-row kernel itself. The strict-metric quotient sign cancels inside the complete coefficient and is not new arithmetic information.",
+      "last_updated_round": 80,
+      "last_updated_at": "2026-08-16T15:41:11"
     },
     {
       "id": "M9-M2-top-endpoint-odd-lift-resonance-obstruction",
@@ -7625,7 +7710,12 @@
           "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reports/gcd_lift_resonance_attack.md",
           "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reports/signed_offset_hostile_audit.md",
           "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reviews/conductor_round76_adjudication.md",
-          "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/synthesis.md"
+          "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/synthesis.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-actual-symbol-variation/reports/blind_actual_symbol_rederivation.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-actual-symbol-variation/reports/actual_symbol_hostile_audit.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/reports/blind_square_resonance_rederivation.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/reports/square_resonance_hostile_audit.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/reports/nonsquare_resonance_hostile_source_audit.md"
         ],
         "negative": [],
         "inconclusive": [
@@ -7633,9 +7723,518 @@
         ]
       },
       "owner": "Codex conductor",
-      "next_action": "Independently certify the complete collar-extracted centred-integral normal form and actual-symbol step-two variation, then bound the coefficient-weighted reciprocal resonance union before absolute values over primitive pairs or k.",
-      "last_updated_round": 76,
-      "last_updated_at": "2026-08-14T23:52:28"
+      "next_action": "Exact nonsquare resonances are absolutely safe, but strict metric near-resonances persist at density 1/R. Retain perfect-power and Pell families as controls for the signed strict-metric theorem.",
+      "last_updated_round": 79,
+      "last_updated_at": "2026-08-16T14:53:10"
+    },
+    {
+      "id": "M9-M2-top-endpoint-actual-symbol-variation",
+      "type": "lemma",
+      "track": "M9_analytic",
+      "title": "Complete collar-extracted top-M2 actual-symbol normal form and odd-lift variation",
+      "status": "proved_internal",
+      "statement_tex": "Let J=sqrt X and 1<=L<=H<=J^(1/2). For the accepted exact normalized top symbol with fixed smooth eta_L and W, accepted C1 Phi, exact q_X, floors, stars, and finite odd support, remove one fixed smooth physical collar at each m-endpoint. Interpret pre-collar finite Poisson symmetrically. For h=ga, s=gb with primitive odd a<b<4a, delta=sqrt(b)-sqrt(a), Lambda=X delta^2/2, and J delta/(2 sqrt(a))<k<J delta/sqrt(b), retain the complete centred integral B^circ_(a,b,k)(g)=g int_(b/4)^a A^circ_(ga,gb)(gu)e(g[-J delta sqrt(u)+ku+X delta^2/(4k)])du. Then the exact positive-offset energy satisfies O_L=2 Re sum_(a,b,k)e(alpha) sum_(g=2n+1 in G_(a,b)) B^circ_(a,b,k)(g)e(-n Lambda/k)+O_(M,eta,Phi,W)(L^2 log(2+L)), where alpha=(b-a)/4-X delta^2/(4k). The error owns both full lattice endpoint samples, both removed collars, zero and positive modes, equality modes, and all negative nonstationary modes; retained stationary and transition modes have no expansion error. Uniformly through saddle entry and exit, |B^circ(g)|+g|d_g B^circ(g)| << J delta sqrt(G)/k^(3/2), G asymp L/b, hence its step-two endpoint-plus-total-variation has the same bound. The proof uses the exact factorization A_(ga,gb)(gu)=g^(-3)E_(a,b)(g)P_(a,b)(u), with P independent of g and E'(g)<<G^(-1), and the exact centred square. It is false for arbitrary bounded lift coefficients and proves no resonance-union or energy estimate.",
+      "dependencies": [
+        "M9-M2-top-endpoint-transposed-character-energy",
+        "M9-M2-top-endpoint-transform",
+        "M9-M2-top-endpoint-odd-lift-resonance-obstruction",
+        "H4-Phi-regularity"
+      ],
+      "implies": [],
+      "blockers": [],
+      "evidence": {
+        "positive": [
+          "rounds/codex-managed/m9-m2-top-endpoint-actual-symbol-variation/reports/blind_actual_symbol_rederivation.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-actual-symbol-variation/reports/centered_integral_variation_attack.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-actual-symbol-variation/reports/actual_symbol_hostile_audit.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-actual-symbol-variation/reviews/conductor_round77_adjudication.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-actual-symbol-variation/synthesis.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/reports/nonsquare_reciprocal_incidence_attack.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/reviews/conductor_round79_adjudication.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/reports/blind_strict_metric_energy_rederivation.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/reviews/conductor_round80_actual_symbol_recoupling.md"
+        ],
+        "negative": [],
+        "inconclusive": []
+      },
+      "owner": "Codex conductor",
+      "next_action": "Retain the complete carrier when changing representation. The proved g-variation of B^circ does not transfer unchanged to C^circ=e(-g theta/2)B^circ.",
+      "last_updated_round": 80,
+      "last_updated_at": "2026-08-16T15:41:11"
+    },
+    {
+      "id": "M9-M2-top-endpoint-square-ray-signed-cancellation",
+      "type": "lemma",
+      "track": "M9_analytic",
+      "title": "Complete actual-symbol signed cancellation on primitive square rays",
+      "status": "proved_internal",
+      "statement_tex": "Let J=sqrt X, 1<=L<=H<=J^(1/2), and use the accepted complete collar-extracted top-M2 primitive-ray coefficient. Restrict to primitive rays with ab a square, equivalently a=s^2, b=t^2, t=s+2u, with s,t odd, (s,u)=1, and 1<=u<s/2. For each actual odd lift g and reciprocal interval Ju/s<k<2Ju/t, the exact combined phase is e(-gXu^2/k). Put K=Ju/s and B_g(k)=B^circ_(s^2,t^2,k)(g). The complete smooth-collar coefficient satisfies sup_k |B_g(k)|+Var_k B_g(k) <<_epsilon X^epsilon sqrt(g t^2/K), including both collar crossings, floors, stars, q_X, and the exact W and normalized eta/Phi profiles. Since |d_k^2(-gXu^2/k)| is comparable to g t^2/K and is at most one, weighted second-derivative summation gives sum_k B_g(k)e(-gXu^2/k) <<_epsilon (L+1)X^epsilon for every fixed (s,u,g). The number of actual lifted square triples is O(L log(2+L)); hence the exact signed square-family contribution is O_epsilon(L^2 X^epsilon). This includes exact and metric reciprocal resonances and uses no cancellation between distinct lifts or rays. It proves no nonsquare, full-energy, M9-M2, endpoint, or exponent estimate.",
+      "dependencies": [
+        "M9-M2-top-endpoint-transposed-character-energy",
+        "M9-M2-top-endpoint-odd-lift-resonance-obstruction",
+        "M9-M2-top-endpoint-actual-symbol-variation",
+        "H4-Phi-regularity"
+      ],
+      "implies": [],
+      "blockers": [],
+      "evidence": {
+        "positive": [
+          "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/reports/blind_square_resonance_rederivation.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/reports/square_resonance_mass_attack.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/reports/square_resonance_hostile_audit.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/reviews/conductor_round78_adjudication.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/synthesis.md"
+        ],
+        "negative": [],
+        "inconclusive": [
+          "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/reviews/conductor_round78_adjudication.md"
+        ]
+      },
+      "owner": "Codex conductor",
+      "next_action": "Remove this exact structured family from the primitive-ray survivor and prove a quantitative inverse or incidence theorem for the remaining nonsquare reciprocal-resonance set.",
+      "last_updated_round": 78,
+      "last_updated_at": "2026-08-16T13:28:36"
+    },
+    {
+      "id": "M9-M2-top-endpoint-square-Abel-majorant-obstruction",
+      "type": "obstruction",
+      "track": "M9_analytic",
+      "title": "Sharp capacity obstruction to absolute Abel summation on square rays",
+      "status": "proved_internal",
+      "statement_tex": "For the standard fixed top-M2 dyadic support with a positive interior terminal box, the positive square-ray Abel majorant M_L^square defined by the Round-77 step-two variation bound has capacity asymp_(X^epsilon) sqrt(J)L^(3/2). The upper bound follows from min(N,(2||theta||)^(-1))<=N<<G, G<<L/t^2, and the exact reciprocal interval length. For the lower bound, a terminal g=1 box contains >>L coprime odd (s,u) pairs with s,u,s-2u asymp sqrt L; each owns N,G asymp1, a k-interval of length asymp J, and positive mass >>sqrt(JL). Already one fixed populated (9,11) ray along X=T^4 gives >>X^(1/4) at fixed L. Therefore M_L^square<<L^2X^epsilon is false. This is a route obstruction only: the actual signed square sum is target-sized by cancellation in k.",
+      "dependencies": [
+        "M9-M2-top-endpoint-actual-symbol-variation",
+        "M9-M2-top-endpoint-odd-lift-resonance-obstruction"
+      ],
+      "implies": [],
+      "blockers": [],
+      "evidence": {
+        "positive": [
+          "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/reports/blind_square_resonance_rederivation.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/reports/square_resonance_mass_attack.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/reports/square_resonance_hostile_audit.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/reviews/conductor_round78_adjudication.md"
+        ],
+        "negative": [],
+        "inconclusive": [
+          "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/reviews/conductor_round78_adjudication.md"
+        ]
+      },
+      "owner": "Codex conductor",
+      "next_action": "Do not take absolute values over reciprocal modes. Retain the complete k-phase and sampled coefficient variation in every later structured or generic primitive-ray estimate.",
+      "last_updated_round": 78,
+      "last_updated_at": "2026-08-16T13:28:36"
+    },
+    {
+      "id": "M9-M2-top-endpoint-nonsquare-divisor-strip",
+      "type": "lemma",
+      "track": "M9_analytic",
+      "title": "Nonsquare reciprocal divisor-strip incidence and exact-center closure",
+      "status": "proved_internal",
+      "statement_tex": "Let J=sqrt X, 1<=L<=H<=J^(1/2), and retain the accepted complete collar-extracted top-M2 coefficient. For primitive odd coprime nonsquare rays a<b<4a, put m=(a+b)/2, q=(b-a)/2, u=q/(m+sqrt(m^2-q^2)), and Lambda=Xqu. Then (sqrt(b)-sqrt(a))^2/2=qu and the literal reciprocal interval is Ju/(1-u)<k<2Ju/(1+u). On a dyadic block a asymp A, b-a asymp D, k asymp K, G_(a,b) asymp G, let P be the number of actual residual rays and M_(a,b)(K) the literal reciprocal-mode count. For every 1<=R<=N_(a,b)<<G, the metric incidence satisfies I_ns<<_(epsilon,c)X^epsilon sum_(a,b) min(M_(a,b)(K),1+K/R)<<X^epsilon P(1+K/R). Since K asymp JD/A, R<=G asymp L/A, and L<=J^(1/2), this is <<X^epsilon ADK/R. The complete coefficient scale is V<<X^epsilon A sqrt(G)/sqrt(JD); after the Abel weight and standalone Abel-1 term, the positive block capacity is <<X^epsilon A sqrt(G)sqrt(J)D^(3/2), so all blocks AJD^3<<L^3 are target-sized after dyadic summation. If ab=d r^2 with d>1 squarefree, rational ratios of m-r sqrt(d) force the same primitive ray. Hence at fixed X at most one primitive nonsquare ray is exactly resonant, and all its divisor modes contribute O_epsilon(LX^epsilon) absolutely. Two distinct metric incidences further imply R<<A^5D^2K^7, improved to R<<AD^2K^3 in one squarefree field, but these thresholds are outside the active metric range. No signed estimate is claimed on the remaining strict-metric blocks AJD^3>>L^3.",
+      "dependencies": [
+        "M9-M2-top-endpoint-transposed-character-energy",
+        "M9-M2-top-endpoint-actual-symbol-variation",
+        "M9-M2-top-endpoint-square-ray-signed-cancellation",
+        "M9-M2-top-endpoint-odd-lift-resonance-obstruction"
+      ],
+      "implies": [],
+      "blockers": [],
+      "evidence": {
+        "positive": [
+          "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/reports/blind_nonsquare_geometry_rederivation.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/reports/nonsquare_reciprocal_incidence_attack.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/reports/nonsquare_resonance_hostile_source_audit.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/reviews/conductor_round79_divisor_strip_check.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/reviews/conductor_round79_adjudication.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/synthesis.md"
+        ],
+        "negative": [],
+        "inconclusive": [
+          "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/reviews/conductor_round79_adjudication.md"
+        ]
+      },
+      "owner": "Codex conductor",
+      "next_action": "Remove exact nonsquare centers and the positive-safe blocks AJD^3<<L^3. Bound the complete-coefficient signed strict-metric sum on AJD^3>>L^3 outside absolute values.",
+      "last_updated_round": 79,
+      "last_updated_at": "2026-08-16T14:53:10"
+    },
+    {
+      "id": "M9-M2-top-endpoint-metric-density-obstruction",
+      "type": "obstruction",
+      "track": "M9_analytic",
+      "title": "Random-density obstruction to algebraic classification of all nonsquare metric resonances",
+      "status": "proved_internal",
+      "statement_tex": "Fix a uniformly populated geometric inner cone of primitive nonsquare rays and reciprocal integers that stays strictly inside the literal k interval while X ranges over [Y,2Y]. For each dyadic metric width 1/R, elementary periodic averaging gives mean incidence (2c/R)#T plus an endpoint error smaller in the active range. Exact equalities have measure zero, so the same baseline may be strictly metric. On a fixed-ratio B-block with asymp B^2 primitive geometric rays and asymp sqrt(Y) reciprocal modes per ray, some real X has >>B^2 sqrt(Y)/R metric incidences; near-square rays b=a+2 give the analogous >>sqrt(Y)/R baseline. Mapping this geometric statement to the literal complete lift requires a populated actual subblock with N_(a,b)>=R and does not provide an actual coefficient lower bound. It rigorously shows that the factor-R divisor-strip estimate is sharp at ordinary density and that a future inverse theorem may classify only excess over density 1/R. The density part itself still requires a signed complete-coefficient estimate; coefficient-blind positive summation leaves capacity A sqrt(G)sqrt(J)D^(3/2).",
+      "dependencies": [
+        "M9-M2-top-endpoint-nonsquare-divisor-strip",
+        "M9-M2-top-endpoint-actual-symbol-variation"
+      ],
+      "implies": [],
+      "blockers": [],
+      "evidence": {
+        "positive": [
+          "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/reports/nonsquare_reciprocal_incidence_attack.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/reports/nonsquare_resonance_hostile_source_audit.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/reviews/conductor_round79_preliminary_algebra.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/reviews/conductor_round79_adjudication.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/reports/strict_metric_energy_hostile_source_audit.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/reviews/conductor_round80_adjudication.md"
+        ],
+        "negative": [],
+        "inconclusive": [
+          "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/reviews/conductor_round79_adjudication.md"
+        ]
+      },
+      "owner": "Codex conductor",
+      "next_action": "The complete carrier restores the literal Fourier zero mode. Estimate density and discrepancy jointly in the original transposed two-character kernel.",
+      "last_updated_round": 80,
+      "last_updated_at": "2026-08-16T15:41:11"
+    },
+    {
+      "id": "M9-M2-top-endpoint-strict-metric-carrier-cancellation",
+      "type": "obstruction",
+      "track": "M9_analytic",
+      "title": "Complete-symbol carrier cancellation and metric-parity self-return",
+      "status": "proved_internal",
+      "statement_tex": "Let J=sqrt X, retain the complete collar-extracted top-M2 coefficient B^circ_(a,b,k)(g), and put theta=Lambda/k=X(sqrt(b)-sqrt(a))^2/(2k), q=(b-a)/2. Define C^circ=e(-g theta/2)B^circ. Then exactly C^circ=g int_(b/4)^a A^circ_(ga,gb)(gu)e(g[ku-J(sqrt(b)-sqrt(a))sqrt(u)])du. If theta=ell+eta, p=ell k, and g is odd, then (-1)^(q+ell)B^circ(g)e(-g eta/2)=(-1)^q C^circ(g); hence the quotient sign (-1)^(p/k) cancels pointwise against the carrier inside the complete actual symbol. For a period-one strict-metric window W_R(t)=mu_R+sum_(r!=0) W_hat_R(r)e(rt), the complete-symbol expansion has integer modes mu_R C^circ+sum_(r!=0)W_hat_R(r)e(r theta)C^circ, so the literal r=0 density mode returns. Under h=ga, s=gb, x=gu, C^circ=int_(s/4)^h A^circ_(h,s)(x)e(kx-J(sqrt(s)-sqrt(h))sqrt(x))dx and (-1)^q=chi_4(h)chi_4(s), giving an exact adjoint-Poisson return to the residual transposed two-character energy. Therefore quotient parity, a half-integer Fourier gap, discrepancy-only bounds, or another reciprocal re-enumeration supply no independent saving. The residual complete-coefficient signed cross-row correlation remains open, and no hard subrange, M9-M2 estimate, or exponent follows.",
+      "dependencies": [
+        "M9-M2-top-endpoint-transposed-character-energy",
+        "M9-M2-top-endpoint-actual-symbol-variation",
+        "M9-M2-top-endpoint-nonsquare-divisor-strip",
+        "M9-M2-top-endpoint-metric-density-obstruction"
+      ],
+      "implies": [],
+      "blockers": [],
+      "evidence": {
+        "positive": [
+          "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/reports/blind_strict_metric_energy_rederivation.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/reports/primitive_ray_parity_energy_attack.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/reports/strict_metric_energy_hostile_source_audit.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/reviews/conductor_round80_actual_symbol_recoupling.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/reviews/conductor_round80_adjudication.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/synthesis.md"
+        ],
+        "negative": [],
+        "inconclusive": [
+          "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/reviews/conductor_round80_adjudication.md"
+        ]
+      },
+      "owner": "Codex conductor",
+      "next_action": "Estimate the complete residual chi_4(h)chi_4(s) cross-row kernel directly, with the metric density and all nonzero integer modes coupled. Do not extract quotient parity or repeat adjoint reciprocal Poisson.",
+      "last_updated_round": 80,
+      "last_updated_at": "2026-08-16T15:41:11"
+    },
+    {
+      "id": "Bourgain-2017-reciprocal-exponent-pair-source-audit",
+      "type": "source_audit",
+      "track": "source_audit",
+      "title": "Bourgain 2017 reciprocal exponent-pair interface",
+      "status": "proved_external_dependency",
+      "statement_tex": "Bourgain's exponent pair (13/84+epsilon,55/84+epsilon), in the source range T_parameter^(17/42) << M << T_parameter^(1/2), applies to the reciprocal progression phase K/(ell+alpha) with M=J^(3/5), T_parameter=J^(7/5), and log(M)/log(T_parameter)=3/7. Uniformly on every proper subinterval it gives sum e(plus-or-minus K/(ell+alpha)) <<_epsilon X^epsilon M Q^(-5/24), with the proper-subinterval logarithm absorbed in X^epsilon. The input is unweighted; actual BV weights are inserted only afterwards by Abel summation on the full progression.",
+      "dependencies": [],
+      "implies": [
+        "M9-M1-upper-conductor-transition-flattened-subrange-bound"
+      ],
+      "blockers": [],
+      "source_card": "sources/bourgain_2017_exponent_pair.md",
+      "evidence": {
+        "positive": [
+          "sources/bourgain_2017_exponent_pair.md",
+          "rounds/codex-managed/m9-m1-upper-conductor-transition-flattening/reports/transition_gluing_hostile_audit.md",
+          "rounds/codex-managed/m9-m1-upper-conductor-transition-flattening/reviews/conductor_round81_transition_normalization.md"
+        ],
+        "negative": [],
+        "inconclusive": [
+          "rounds/codex-managed/m9-m1-upper-conductor-transition-flattening/reviews/conductor_round81_adjudication.md"
+        ]
+      },
+      "owner": "Codex conductor",
+      "next_action": "Use only on the ambient reciprocal progression with the audited derivative class and proper-subinterval uniformity; do not rescale it to individual Farey-neighbor cells or arbitrary weights.",
+      "last_updated_round": 81,
+      "last_updated_at": "2026-08-16T16:21:07"
+    },
+    {
+      "id": "M9-M1-upper-conductor-transition-flattened-subrange-bound",
+      "type": "lemma",
+      "track": "M9_analytic",
+      "title": "Transition-flattened bound for the extended upper Farey conductors",
+      "status": "proved_internal",
+      "statement_tex": "Let J=sqrt(X), Q=J^(2/5), T=J/Q, and J^(32/45)<C<=J^(13/18). For the exact fixed-smooth-interior order-J Farey contribution, retain both aliases and orientations, all three kappa classes, exact half-open neighbors, floors, local units, the finite nonaxial family, and the separately owned axes. On every admissible progression c=r mod 4b, b asymp C/T, the complete normalized nonaxial coefficient splits as W(c)=Gamma_(epsilon,z_*) V(c)+E(c), where Gamma is the full Gaussian for -1<z_*<1, the oriented half Gaussian for z_*=plus-or-minus1, and zero outside; sup|V|+Var(V)<<_epsilon X^epsilon and |E(c)|<<_epsilon X^epsilon sqrt(C/J). The error contains both moving Farey faces, the complete first stationary and Morse corrections, nonstationary pieces, aliases, floors, and neighbor resets, and no BV is claimed for E. Bourgain's audited reciprocal exponent pair then gives sum_(b asymp C/T)|S_b|^2 <<_epsilon X^epsilon{C^3/(TQ^(5/12))+C^4/(TJ)} <= X^epsilon J^2/T. Combined with the accepted lower-conductor lemmas, every fixed-interior conductor T<=C<=J^(13/18) is target-safe. The residual J^(13/18)<C<=J, cone edges, other radial sectors, full M9-M1, M9, and the exponent remain open.",
+      "dependencies": [
+        "M9-M1-product-wavelet-low-conductor-Farey-stationary-bound",
+        "M9-M1-upper-conductor-third-derivative-subrange-bound",
+        "Bourgain-2017-reciprocal-exponent-pair-source-audit"
+      ],
+      "implies": [],
+      "blockers": [],
+      "evidence": {
+        "positive": [
+          "rounds/codex-managed/m9-m1-upper-conductor-transition-flattening/reports/blind_transition_flattening_rederivation.md",
+          "rounds/codex-managed/m9-m1-upper-conductor-transition-flattening/reports/farey_transition_flattening_attack.md",
+          "rounds/codex-managed/m9-m1-upper-conductor-transition-flattening/reports/transition_gluing_hostile_audit.md",
+          "rounds/codex-managed/m9-m1-upper-conductor-transition-flattening/reviews/conductor_round81_transition_normalization.md",
+          "rounds/codex-managed/m9-m1-upper-conductor-transition-flattening/reviews/conductor_round81_adjudication.md",
+          "rounds/codex-managed/m9-m1-upper-conductor-transition-flattening/synthesis.md"
+        ],
+        "negative": [],
+        "inconclusive": [
+          "rounds/codex-managed/m9-m1-upper-conductor-transition-flattening/reviews/conductor_round81_adjudication.md"
+        ]
+      },
+      "owner": "Codex conductor",
+      "next_action": "Use this lemma only for the fixed-smooth-interior block through C=J^(13/18). Attack the residual smooth nonaxial main on J^(13/18)<C<=J^(3/4), then the main, transition error, and axes on J^(3/4)<C<=J.",
+      "last_updated_round": 81,
+      "last_updated_at": "2026-08-16T16:21:07"
+    },
+    {
+      "id": "M9-M1-transition-flattened-residue-offset-reduction",
+      "type": "reduction",
+      "track": "M9_analytic",
+      "title": "Transition-flattened energy reduced to coherent nonzero residue offsets",
+      "status": "proved_internal",
+      "statement_tex": "Let J=sqrt(X), Q=J^(2/5), T=J^(3/5), B=C/T, and J^(13/18)<C<=J^(3/4). For every fixed smooth-interior nonaxial M1 component, local class kappa in {1/4,1/2,1}, alias, and orientation, split the exact transition-flattened principal row into admissible progressions modulo 4b: S_b=sum_(r in R_(kappa,b)) u_(kappa,b,k)(r) R_(kappa,b,k)(r), where the exact odd or even local unit is constant on the progression and R(r)=sum_(c asymp C,c=r mod 4b) V(c)e(plus-or-minus A_(kappa,b)/c). The accepted global-BV symbol and Bourgain reciprocal estimate give |R(r)|<<_epsilon X^epsilon TQ^(-5/24). Hence the complete same-residue energy and every fixed nonzero residue-offset layer are <<_epsilon X^epsilon B^2T^2Q^(-5/12)=X^epsilon C^2Q^(-5/12), target-safe through C<=J^(47/60), in particular throughout the frozen band. The only remaining smooth-main object is X_C=sum_(b asymp B)sum_(r not equal s)u(r)conj(u(s))R(r)conj(R(s)), with target X_C<<_epsilon X^epsilon J^2/T. Absolute accumulation gives only X^epsilon C^3/(TQ^(5/12)). A conditional gain B^(-delta) reaches C<=J^((13/6-3delta/5)/(3-delta)); delta=1/2 reaches J^(56/75) and delta=5/9 closes the first band. In the odd class the zero product-Kloosterman Fourier mode is exactly the safe same-residue part and the nonzero modes are exactly X_C; complete Poisson inversion is an exact self-return. No offset gain, conductor extension, upper-band estimate, cone-edge estimate, full M9-M1, M9, or exponent is proved.",
+      "dependencies": [
+        "M9-M1-upper-conductor-transition-flattened-subrange-bound",
+        "Bourgain-2017-reciprocal-exponent-pair-source-audit"
+      ],
+      "implies": [
+        "M9-M1-residual-upper-conductor-offdiagonal-reduction"
+      ],
+      "blockers": [],
+      "evidence": {
+        "positive": [
+          "rounds/codex-managed/m9-m1-transition-flattened-kloosterman-energy/reports/blind_chirped_kloosterman_energy_rederivation.md",
+          "rounds/codex-managed/m9-m1-transition-flattened-kloosterman-energy/reports/chirped_residue_energy_attack.md",
+          "rounds/codex-managed/m9-m1-transition-flattened-kloosterman-energy/reviews/conductor_round82_residue_normalization.md",
+          "rounds/codex-managed/m9-m1-transition-flattened-kloosterman-energy/reviews/conductor_round82_adjudication.md",
+          "rounds/codex-managed/m9-m1-transition-flattened-kloosterman-energy/synthesis.md",
+          "rounds/codex-managed/m9-m1-nonzero-residue-offset-dispersion/reviews/conductor_round83_dual_normalization.md"
+        ],
+        "negative": [],
+        "inconclusive": [
+          "rounds/codex-managed/m9-m1-transition-flattened-kloosterman-energy/reports/kloosterman_energy_source_hostile_audit.md"
+        ]
+      },
+      "owner": "Codex conductor",
+      "next_action": "The coherent nonzero-offset energy has now been further reduced by removing the literal dual difference d=0. Estimate the centred d!=0 correlation in M9-M1-nonzero-residue-offset-dual-difference-reduction.",
+      "last_updated_at": "2026-08-16T17:52:06",
+      "last_updated_round": 83
+    },
+    {
+      "id": "M9-M1-nonzero-residue-offset-dual-difference-reduction",
+      "type": "reduction",
+      "track": "M9_analytic",
+      "title": "Nonzero residue-offset energy reduced to a centred nonzero dual difference",
+      "status": "proved_internal",
+      "statement_tex": "Let J=sqrt(X), Q=J^(2/5), T=J^(3/5), B=C/T, and J^(13/18)<C<=J^(3/4). For every compatible smooth-interior nonaxial M1 component and local class kappa in {1/4,1/2,1}, put g_kappa=4kappa, M_kappa=4b/g_kappa, and c=g_kappa x. After the accepted reciprocal correction is absorbed into e(plus-or-minus A_(kappa,b)/c), the exact local unit is zeta e_(M_kappa)(K_kappa bar(x)), with (g,M,K)=(1,4b,k), (2,2b,2[k bar(4)]_b), or (4,b,[k bar(4)]_b). Exact progression Poisson gives M^(-1) sum_n S(n,K;M)I_b(n). Removing the residue offset a=0 once is exactly the same-residue mode. The remaining energy splits into a literal integer difference d=0 and Y_C=M^(-2) sum_(b asymp B) sum_(d not equal 0) sum_n (S(n+d,K;M)conj(S(n,K;M))-c_M(d)) I_b(n+d)conj(I_b(n)). Sampled Parseval plus the reciprocal autocorrelation phase gives sum_n|I_b(n)|^2 <<_epsilon X^epsilon M C/g. Therefore the d=0 slice is <<_epsilon X^epsilon B^2 C=X^epsilon C^3/T^2, target-safe throughout the frozen band; the standard Weil-Estermann bound sharpens it to X^epsilon BC. Nonzero multiples d congruent 0 mod M remain in Y_C. The first exact smooth-main survivor is Y_C with target <<_epsilon X^epsilon J^2/T. Complete offset Fourier transformation and inversion are self-returns in all three classes. No B-power gain, conductor extension, transition or axial estimate, cone-edge estimate, full M9-M1, M9, or exponent is proved.",
+      "dependencies": [
+        "M9-M1-transition-flattened-residue-offset-reduction",
+        "M9-M1-upper-conductor-transition-flattened-subrange-bound"
+      ],
+      "implies": [
+        "M9-M1-residual-upper-conductor-offdiagonal-reduction"
+      ],
+      "blockers": [],
+      "evidence": {
+        "positive": [
+          "rounds/codex-managed/m9-m1-nonzero-residue-offset-dispersion/reports/inverse_unit_offset_attack.md",
+          "rounds/codex-managed/m9-m1-nonzero-residue-offset-dispersion/reviews/conductor_round83_dual_normalization.md",
+          "rounds/codex-managed/m9-m1-nonzero-residue-offset-dispersion/reviews/conductor_round83_adjudication.md",
+          "rounds/codex-managed/m9-m1-nonzero-residue-offset-dispersion/synthesis.md",
+          "rounds/codex-managed/m9-m1-centred-dual-difference-stationary-correlation/reviews/conductor_round84_stationary_normalization.md",
+          "rounds/codex-managed/m9-m1-centred-dual-difference-stationary-correlation/synthesis.md",
+          "rounds/codex-managed/m9-m1-large-dual-difference-joint-dispersion/synthesis.md",
+          "rounds/codex-managed/m9-m1-interior-four-kloosterman-ambiguity/synthesis.md"
+        ],
+        "negative": [],
+        "inconclusive": [
+          "rounds/codex-managed/m9-m1-nonzero-residue-offset-dispersion/reports/blind_offset_dispersion_rederivation.md",
+          "rounds/codex-managed/m9-m1-nonzero-residue-offset-dispersion/reports/offset_trace_source_hostile_audit.md",
+          "rounds/codex-managed/m9-m1-nonzero-residue-offset-dispersion/reviews/conductor_round83_adjudication.md"
+        ]
+      },
+      "owner": "Codex conductor",
+      "next_action": "The literal d=0, all differences through D_1, and the outer support collar are target-safe. Estimate the remaining deep centred difference correlation.",
+      "last_updated_round": 86,
+      "last_updated_at": "2026-08-16T23:14:58"
+    },
+    {
+      "id": "M9-M1-centred-dual-difference-small-shift-bound",
+      "type": "reduction",
+      "track": "M9_analytic",
+      "title": "Stationary cancellation removes the small nonzero dual differences",
+      "status": "proved_internal",
+      "statement_tex": "Let J=sqrt(X), Q=J^(2/5), T=J^(3/5), B=C/T, and J^(13/18)<C<=J^(3/4). Fix any compatible smooth-interior nonaxial M1 principal component, local class kappa in {1/4,1/2,1}, alias, and endpoint orientation from M9-M1-nonzero-residue-offset-dual-difference-reduction. Put g=4kappa, M=4b/g, A_(kappa,b)=(sqrt(bX)+sqrt(kappa k/b))^2, and D_0=floor(J^(17/30)). The accepted Round-81 neighbor-independent smooth extension and integrated c-seminorm give a uniform stationary Fourier interface: the active sign has c_n=sqrt(4bA/|n|), phase -eta(sqrt(X)+sqrt(kappa k)/b)sqrt(|n|), Gaussian e(-eta/8), stationary size H=C sqrt(T)/J, and a complete phase-removed entry/exit profile with sampled sup plus variation <<_epsilon X^epsilon H. Exact Kloosterman Parseval gives M^(-2)sum_(r mod M)|S(r+d,K;M)conj(S(r,K;M))-c_M(d)|<=2 for every integer d. On n=r+M ell and 0<|d|<=D<=D_0, the square-root difference phase has second derivative asymptotic to M^2|d|/J. Hence the complete principal contribution satisfies Y_(<=D)<<_epsilon X^epsilon{C^3J^(-17/10)D^(3/2)+C^2TJ^(-3/2)D^(1/2)+DC^2/(T sqrt(JQ))+DB^2/Q^2}<<_epsilon X^epsilon J^2/T. This includes both signs of d, all three local classes, every nonzero d congruent 0 mod M in the range, Ramanujan terms, prime-power gcd modes, saddle entry/exit, stationary errors, and wrong-sign tails. Therefore the first exact principal survivor is the same centred correlation restricted to |d|>D_0. No whole-range B-power, conductor extension, transition-error or axial estimate, cone-edge estimate, full M9-M1, M9, or exponent is proved.",
+      "dependencies": [
+        "M9-M1-nonzero-residue-offset-dual-difference-reduction",
+        "M9-M1-upper-conductor-transition-flattened-subrange-bound"
+      ],
+      "implies": [
+        "M9-M1-residual-upper-conductor-offdiagonal-reduction"
+      ],
+      "blockers": [],
+      "evidence": {
+        "positive": [
+          "rounds/codex-managed/m9-m1-centred-dual-difference-stationary-correlation/reports/stationary_dual_difference_attack.md",
+          "rounds/codex-managed/m9-m1-centred-dual-difference-stationary-correlation/reports/dual_difference_source_hostile_audit.md",
+          "rounds/codex-managed/m9-m1-centred-dual-difference-stationary-correlation/reviews/conductor_round84_stationary_normalization.md",
+          "rounds/codex-managed/m9-m1-centred-dual-difference-stationary-correlation/reviews/conductor_round84_adjudication.md",
+          "rounds/codex-managed/m9-m1-centred-dual-difference-stationary-correlation/synthesis.md",
+          "rounds/codex-managed/m9-m1-large-dual-difference-joint-dispersion/reviews/conductor_round85_support_edge_normalization.md",
+          "rounds/codex-managed/m9-m1-large-dual-difference-joint-dispersion/synthesis.md",
+          "rounds/codex-managed/m9-m1-interior-four-kloosterman-ambiguity/synthesis.md"
+        ],
+        "negative": [],
+        "inconclusive": [
+          "rounds/codex-managed/m9-m1-centred-dual-difference-stationary-correlation/reports/blind_dual_difference_rederivation.md",
+          "rounds/codex-managed/m9-m1-centred-dual-difference-stationary-correlation/reviews/conductor_round84_adjudication.md"
+        ]
+      },
+      "owner": "Codex conductor",
+      "next_action": "The direct progression estimates now remove every 0<|d|<=D_1. Estimate only the remaining deep middle interval before the support edge.",
+      "last_updated_round": 86,
+      "last_updated_at": "2026-08-16T23:14:58"
+    },
+    {
+      "id": "M9-M1-centred-dual-difference-support-edge-bound",
+      "type": "reduction",
+      "track": "M9_analytic",
+      "title": "Smooth stationary support flatness removes the outer dual-difference edge",
+      "status": "proved_internal",
+      "statement_tex": "Let J=sqrt(X), Q=J^(2/5), T=J^(3/5), B=C/T, and J^(13/18)<C<=J^(3/4). Fix a compatible transition-flattened smooth nonaxial M1 principal component, local class kappa in {1/4,1/2,1}, alias, and endpoint orientation from M9-M1-centred-dual-difference-small-shift-bound. Let N_b^-,N_b^+ be the extreme integer endpoints of the active stationary support of the compact smooth principal Fourier main, Delta_b=N_b^+-N_b^- asymp Q^2, D_0=floor(J^(17/30)), and E_*=floor(Q^2J^(-1/20))=floor(J^(3/4)). The accepted normalized smooth hierarchy through order 3 transfers endpoint flatness under the saddle map: when 0<=Delta_b-|d|<=E_*, the two principal symbols lie at opposite support endpoints and their product has the factor ((Delta_b-|d|+1)/Q^2)^6. Exact residue L1 mass then gives the complete main-main edge bound <<_epsilon X^epsilon H^2(BE_*+E_*^2)(E_*/Q^2)^6<<X^epsilon J^(13/10), where H=C sqrt(T)/J. Independently, the complete entry/exit, stationary-remainder, wrong-sign, and nonstationary terms summed over all integer differences are <<_epsilon X^epsilon(B^2HQ^2+B^3)<<X^epsilon J^(23/20). Hence every |d|>=Delta_b-E_* is target-safe, including negative d, all three classes, reflected orientations, nonzero d congruent 0 mod M, Ramanujan terms, prime-power gcd modes, and the no-main-overlap exterior. The exact first-band smooth-principal survivor is M^(-2)sum_(b asymp B)sum_(D_0<|d|<Delta_b-E_*)sum_n(S(n+d,K;M)conj(S(n,K;M))-c_M(d))I_b(n+d)conj(I_b(n)). The proof preserves the inherited physical Q^(-5/24) row estimate for this interior survivor. No whole-offset B-power, conductor extension, raw transition or axial estimate, cone-edge estimate, full M9-M1, M9, or exponent is proved.",
+      "dependencies": [
+        "M9-M1-centred-dual-difference-small-shift-bound",
+        "M9-M1-upper-conductor-transition-flattened-subrange-bound"
+      ],
+      "implies": [
+        "M9-M1-residual-upper-conductor-offdiagonal-reduction"
+      ],
+      "blockers": [],
+      "evidence": {
+        "positive": [
+          "rounds/codex-managed/m9-m1-large-dual-difference-joint-dispersion/reports/hybrid_large_difference_attack.md",
+          "rounds/codex-managed/m9-m1-large-dual-difference-joint-dispersion/reports/large_difference_source_hostile_audit.md",
+          "rounds/codex-managed/m9-m1-large-dual-difference-joint-dispersion/reviews/conductor_round85_support_edge_normalization.md",
+          "rounds/codex-managed/m9-m1-large-dual-difference-joint-dispersion/reviews/conductor_round85_adjudication.md",
+          "rounds/codex-managed/m9-m1-large-dual-difference-joint-dispersion/synthesis.md",
+          "rounds/codex-managed/m9-m1-interior-four-kloosterman-ambiguity/reviews/conductor_round86_cubic_shell_normalization.md",
+          "rounds/codex-managed/m9-m1-interior-four-kloosterman-ambiguity/synthesis.md"
+        ],
+        "negative": [],
+        "inconclusive": [
+          "rounds/codex-managed/m9-m1-large-dual-difference-joint-dispersion/reports/blind_hybrid_large_difference_rederivation.md"
+        ]
+      },
+      "owner": "Codex conductor",
+      "next_action": "The lower range through D_1 and the outer stationary-support edge are target-safe. Estimate the exact deep survivor recorded in M9-M1-centred-dual-difference-cubic-shell-bound.",
+      "last_updated_round": 86,
+      "last_updated_at": "2026-08-16T23:14:58"
+    },
+    {
+      "id": "M9-M1-centred-dual-difference-cubic-shell-bound",
+      "type": "reduction",
+      "track": "M9_analytic",
+      "title": "Cubic curvature removes a further lower-interior dual-difference shell",
+      "status": "proved_internal",
+      "statement_tex": "Let J=sqrt(X), Q=J^(2/5), T=J^(3/5), B=C/T, and J^(13/18)<C<=J^(3/4). Fix a compatible transition-flattened smooth nonaxial M1 principal component, any of the three local classes M in {b,2b,4b} up to their exact class constants, either sign, and either reflected endpoint orientation. Put D_0=floor(J^(17/30)), D_1=floor(J^(87/140)), E_*=floor(Q^2J^(-1/20)), and let Delta_b asymp Q^2 be the active stationary-support diameter. On every residue progression n=r+M ell and for D_0<e=|d|<=D_1, translation and reflection reduce the stationary phase to plus or minus lambda_b(sqrt(m+e)-sqrt(m)), m asymp Q^2, lambda_b asymp J, whose third derivative has fixed sign and size rho_e asymp JM^3e/Q^7. The complete phase-removed product has sampled supremum plus variation <<_epsilon X^epsilon H^2, H=C sqrt(T)/J. Weighted third derivative and the exact all-modulus identity M^(-2)sum_(r mod M)|S(r+d,K;M)conj(S(r,K;M))-c_M(d)|<=2 give the aggregate shell bound <<_epsilon X^epsilon(B^(5/2)J^(3/10)D^(7/6)+B^2J^(1/2)D^(5/6)+B^3J^(-1/5)D) for D<=D_1. At B<=J^(3/20), D=D_1, the three exponents are 7/5, 369/280, and 61/70. Hence every D_0<|d|<=D_1 is target-safe, including negative d, nonzero d congruent 0 mod M, arbitrary composite and prime-power modes, the centered Ramanujan term, support endpoints, and reflected orientations. The exact remaining smooth-principal first-band survivor is M^(-2)sum_(b asymp B)sum_(D_1<|d|<Delta_b-E_*)sum_n(S(n+d,K;M)conj(S(n,K;M))-c_M(d))I_b(n+d)conj(I_b(n)). The inherited physical Q^(-5/12) energy factor remains available on this survivor. No whole-middle B-power, conductor extension, raw transition or axial estimate, cone-edge estimate, full M9-M1, M9, or exponent is proved.",
+      "dependencies": [
+        "M9-M1-centred-dual-difference-small-shift-bound",
+        "M9-M1-centred-dual-difference-support-edge-bound",
+        "M9-M1-upper-conductor-transition-flattened-subrange-bound"
+      ],
+      "implies": [
+        "M9-M1-residual-upper-conductor-offdiagonal-reduction"
+      ],
+      "blockers": [],
+      "evidence": {
+        "positive": [
+          "rounds/codex-managed/m9-m1-interior-four-kloosterman-ambiguity/reports/twisted_ambiguity_attack.md",
+          "rounds/codex-managed/m9-m1-interior-four-kloosterman-ambiguity/reports/four_kloosterman_hostile_source_audit.md",
+          "rounds/codex-managed/m9-m1-interior-four-kloosterman-ambiguity/reviews/conductor_round86_cubic_shell_normalization.md",
+          "rounds/codex-managed/m9-m1-interior-four-kloosterman-ambiguity/reviews/conductor_round86_adjudication.md",
+          "rounds/codex-managed/m9-m1-interior-four-kloosterman-ambiguity/synthesis.md",
+          "rounds/codex-managed/m9-m1-deep-exceptional-strata-dispersion/synthesis.md"
+        ],
+        "negative": [],
+        "inconclusive": [
+          "rounds/codex-managed/m9-m1-interior-four-kloosterman-ambiguity/reports/blind_four_kloosterman_rederivation.md"
+        ]
+      },
+      "owner": "Codex conductor",
+      "next_action": "The deep interval remains, but its complete full-factor same-group exceptional package is now target-safe. Estimate only the cross-group off-diagonal after the one-count diagonal convention.",
+      "last_updated_round": 87,
+      "last_updated_at": "2026-08-17T00:25:21"
+    },
+    {
+      "id": "M9-M1-deep-full-factor-same-group-fejer-bound",
+      "type": "reduction",
+      "track": "M9_analytic",
+      "title": "Full-prime-power same-group exceptional Fejer package is target-safe",
+      "status": "proved_internal",
+      "statement_tex": "Let J=sqrt(X), Q=J^(2/5), T=J^(3/5), B=C/T, J^(13/18)<C<=J^(3/4), and fix one compatible transition-flattened smooth nonaxial M1 principal component, sign, alias, reflected orientation, and dyadic interval in D_1<|d|<Delta_b-E_*. For the normalized physical row R_(b,x)(theta)=M^(-1)sum_n I_b(n)e_M(nx)e(n theta), ||R_(b,x)||_infinity<<_epsilon X^epsilon TQ^(-5/24). Factor M into full prime-power factors. Group each ordered unit pair x!=y by its unique nonempty active set S={q||M:x_q!=y_q} and its active local ordered-pair label alpha, and sum the inactive diagonal units into H_(b,S,alpha). Then the exact same-group Fejer package P_exc(D,U)=sum_(b asymp B)int_|D_U(theta)|^2 sum_(S,alpha)|Pi_(b,D)H_(b,S,alpha)(theta)|^2 dtheta satisfies P_exc(D,U)<<_epsilon X^epsilon U B^3T^4Q^(-5/6). With the packet-allowed choice U=floor(D) asymp D, B^4T^4Q^(-5/6)<=J^(8/3)=J^(14/5-2/15), so P_exc(D,D)<<_epsilon X^epsilon(D/B)J^(14/5), target-safe with J^(-2/15) slack. This is a symmetric signed Fejer estimate, not a per-shift absolute estimate. The grouping is exactly the one-count union of all mixtures in which, at every full prime-power factor including the full 2-part, the two physical ordered pairs are either both locally diagonal or locally identical. It includes the corrected nu>=2 prime-power family, the squarefree divisor-aligned family, all same-group stride-M returns, both signs, all three classes, the actual fourfold stationary symbol, and exact centering/Ramanujan ownership. The global u=0 diagonal remains owned once. The strict unresolved object is the cross-group off-diagonal with u!=0; it contains partial lower-conductor returns, bad-prime pieces, extra 2-adic periods, and aperiodic local traces. No estimate for that residual, the full deep target, a conductor extension, full M9-M1, M9, or the exponent is proved.",
+      "dependencies": [
+        "M9-M1-transition-flattened-residue-offset-reduction",
+        "M9-M1-centred-dual-difference-cubic-shell-bound"
+      ],
+      "implies": [
+        "M9-M1-residual-upper-conductor-offdiagonal-reduction"
+      ],
+      "blockers": [],
+      "evidence": {
+        "positive": [
+          "rounds/codex-managed/m9-m1-deep-exceptional-strata-dispersion/reports/aligned_mode_aggregate_attack.md",
+          "rounds/codex-managed/m9-m1-deep-exceptional-strata-dispersion/reports/blind_exceptional_strata_rederivation.md",
+          "rounds/codex-managed/m9-m1-deep-exceptional-strata-dispersion/reports/exceptional_trace_hostile_source_audit.md",
+          "rounds/codex-managed/m9-m1-deep-exceptional-strata-dispersion/reviews/conductor_round87_normalization.md",
+          "rounds/codex-managed/m9-m1-deep-exceptional-strata-dispersion/reviews/conductor_round87_crt_fejer.md",
+          "rounds/codex-managed/m9-m1-deep-exceptional-strata-dispersion/reviews/conductor_round87_adjudication.md",
+          "rounds/codex-managed/m9-m1-deep-exceptional-strata-dispersion/synthesis.md"
+        ],
+        "negative": [],
+        "inconclusive": []
+      },
+      "owner": "Codex conductor",
+      "next_action": "Estimate the exact cross-group off-diagonal after excluding the already-owned u=0 diagonal, separating partial lower-conductor and extra 2-adic periods from genuinely aperiodic local traces while retaining the actual stationary symbol and Q^(-5/12).",
+      "last_updated_round": 87,
+      "last_updated_at": "2026-08-17T00:25:21"
+    },
+    {
+      "id": "M9-M1-cross-group-period-depth-subaggregate-bound",
+      "type": "reduction",
+      "track": "M9_analytic",
+      "title": "Coarse-depth and good-prime masked-period cross-group packages are target-safe",
+      "status": "proved_internal",
+      "statement_tex": "Let J=sqrt(X), Q=J^(2/5), T=J^(3/5), B=C/T, J^(13/18)<C<=J^(3/4), and fix one transition-flattened smooth nonaxial M1 principal component and one dyadic deep interval D_1<|d|<Delta_b-E_*. Use the normalized physical rows R_(b,x)=M^(-1)sum_n I_b(n)e_M(nx)e(n theta), so an ordered-pair function already contains M^(-2), and delete the globally owned u=0 term with K_D^circ=|D_D|^2-D. After the accepted Round-87 same-group package, define R_*(P,P') as the first quotient at which two physical ordered-pair labels coincide in the Round-87 active-set/active-label group after reduction, including the empty coarse active set, and put rho_*=min(M,floor(J^(11/30)B^(-2))). Exact divisor-lattice shell ownership gives G_coarse(D)<<_epsilon X^epsilon D B^3 rho_*^2 T^4 Q^(-5/6)<<_epsilon X^epsilon(D/B)J^(14/5), so every cross-group shell 1<R_*<=rho_* is target-safe. Separately, the exact local period is the period of the complete reciprocal masked weight, not of its numerator or of the total affine phase. If that weight modulo p^nu has period p^(nu-j), its completed local trace is supported on p^j|u and descends with factor p^(2j). For p>=11, p not dividing K, and a nonempty mask, a=min(j,nu-j) implies p^a|(B_2-A), p^a|AV, and p^a|AV(V+B_2). For the product mathfrak_a of these good-prime depths, the complete physical-edge graph has in- and out-degree <<_epsilon X^epsilon M^2/mathfrak_a. After the coarse deletion, Schur and the centered Fejer kernel give G_good(D)<<_epsilon X^epsilon D B^3(M^2/mathfrak_a)T^4Q^(-5/6), so mathfrak_a>=M^2/rho_*^2 is target-safe. The strict unresolved first-band object has R_*>rho_* and mathfrak_a<M^2/rho_*^2 and retains affine/full-phase cancellation, p<=7 mask periods, nonunit-K and 2-adic conductor loss, projection-only depth, shallow good-prime lifts, aperiodic traces, both signs, modulus multiples, exact Ramanujan centering, and the actual fourfold stationary symbol. No estimate for that residual, the full first band, C>J^(3/4), cone edges, other radial sectors, full M9-M1, M9, or the exponent is proved.",
+      "dependencies": [
+        "M9-M1-deep-full-factor-same-group-fejer-bound",
+        "M9-M1-centred-dual-difference-cubic-shell-bound"
+      ],
+      "implies": [
+        "M9-M1-residual-upper-conductor-offdiagonal-reduction"
+      ],
+      "blockers": [],
+      "evidence": {
+        "positive": [
+          "rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/candidates/conductor_shallow_quotient_coarse_group_bound.md",
+          "rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/candidates/conductor_good_prime_period_lemma.md",
+          "rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/reports/period_depth_tensor_attack.md",
+          "rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/reports/blind_cross_group_tensor_rederivation.md",
+          "rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/reports/cross_group_hostile_source_audit.md",
+          "rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/reviews/conductor_round88_normalization_coarse_count.md",
+          "rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/reviews/conductor_round88_masked_period_graph.md",
+          "rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/reviews/conductor_round88_adjudication.md",
+          "rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/synthesis.md"
+        ],
+        "negative": [],
+        "inconclusive": [
+          "rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/reviews/conductor_round88_adjudication.md"
+        ]
+      },
+      "owner": "Codex conductor",
+      "next_action": "Estimate the exact hard cross-group operator with R_*>rho_* and mathfrak_a<M^2/rho_*^2, separating small-prime, nonunit-K, 2-adic, affine-period, projection-only, and aperiodic local factors while retaining the actual fourfold symbol and Q^(-5/12).",
+      "last_updated_round": 88,
+      "last_updated_at": "2026-08-17T02:22:40"
     }
   ],
   "rejected_claims": [
@@ -10767,6 +11366,453 @@
       "last_updated_round": 76,
       "evidence": [
         "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reviews/conductor_round76_adjudication.md"
+      ]
+    },
+    {
+      "id": "Round77-unordered-precollar-Poisson-series-is-absolute",
+      "reason": "With nonzero finite-interval endpoint values, the Poisson integral series requires symmetric or distributional summation. Absolute convergence holds only after the fixed collars make the amplitude smoothly compactly supported.",
+      "last_updated_at": "2026-08-16T12:30:22",
+      "last_updated_round": 77
+    },
+    {
+      "id": "Round77-arbitrary-bounded-lift-coefficients-have-actual-symbol-variation",
+      "reason": "Arbitrary alternating or phase-conjugating lift coefficients can make the step-two variation comparable to the sum of pointwise masses. The theorem depends on the exact g-homogeneous factorization, slow eta/Phi factor, and g-independent W-ratio profile.",
+      "last_updated_at": "2026-08-16T12:30:22",
+      "last_updated_round": 77
+    },
+    {
+      "id": "Round77-leading-stationary-term-controls-complete-moving-collar-variation",
+      "reason": "A frozen leading stationary value does not control saddle entry, exit, lower corrections, or moving collars. The valid proof retains the complete centred integral and differentiates it through the exact quadratic identity.",
+      "last_updated_at": "2026-08-16T12:30:22",
+      "last_updated_round": 77
+    },
+    {
+      "id": "Round78-square-ray-absolute-Abel-majorant-is-target-sized",
+      "reason": "The positive majorant has sharp capacity sqrt(J)L^(3/2) up to X^epsilon on the standard support, and already one fixed populated ray gives X^(1/4) at fixed L. Absolute reciprocal-mode summation loses the cancellation that proves the signed theorem.",
+      "last_updated_at": "2026-08-16T13:28:36",
+      "last_updated_round": 78,
+      "evidence": [
+        "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/reviews/conductor_round78_adjudication.md"
+      ]
+    },
+    {
+      "id": "Round78-pointwise-k-derivative-has-complete-BV-scale",
+      "reason": "At a fixed physical collar crossing, k|B_g'(k)| can exceed the complete coefficient size by a factor L. Only the total sampled k-variation is target-safe because the smooth collar parameter is traversed once.",
+      "last_updated_at": "2026-08-16T13:28:36",
+      "last_updated_round": 78,
+      "evidence": [
+        "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/reviews/conductor_round78_adjudication.md"
+      ]
+    },
+    {
+      "id": "Round78-collar-transition-modes-may-be-deleted-absolutely",
+      "reason": "A collar crossing lasts about K/L reciprocal modes; absolute deletion can cost sqrt(K/L) per lift. The valid proof retains the complete smooth-collar integral and controls its total variation.",
+      "last_updated_at": "2026-08-16T13:28:36",
+      "last_updated_round": 78,
+      "evidence": [
+        "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/reviews/conductor_round78_adjudication.md"
+      ]
+    },
+    {
+      "id": "Round78-exact-divisors-exhaust-square-ray-resonance",
+      "reason": "For general real X, the Abel window contains metric near-resonances not represented by exact divisors. The valid signed k-estimate includes the complete interval rather than classifying only exact centers.",
+      "last_updated_at": "2026-08-16T13:28:36",
+      "last_updated_round": 78,
+      "evidence": [
+        "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/reviews/conductor_round78_adjudication.md"
+      ]
+    },
+    {
+      "id": "Round79-every-nonsquare-metric-resonance-is-algebraically-exceptional",
+      "reason": "Averaging the prescribed real X produces the ordinary 1/R population even after exact equalities and primitive square rays are removed, and the incidences may span many squarefree fields.",
+      "last_updated_at": "2026-08-16T14:53:10",
+      "last_updated_round": 79,
+      "evidence": [
+        "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/reviews/conductor_round79_adjudication.md"
+      ]
+    },
+    {
+      "id": "Round79-incidence-saving-alone-closes-the-signed-energy",
+      "reason": "The factor-R divisor-strip saving exactly cancels the Abel weight R and leaves positive capacity A sqrt(G)sqrt(J)D^(3/2), which is too large on AJD^3>>L^3.",
+      "last_updated_at": "2026-08-16T14:53:10",
+      "last_updated_round": 79,
+      "evidence": [
+        "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/reviews/conductor_round79_adjudication.md"
+      ]
+    },
+    {
+      "id": "Round79-exact-divisor-counting-exhausts-the-metric-window",
+      "reason": "The metric strip contains O(K/R) distinct nearby integers p=ell k. Exact centers form only one absolutely safe subcase.",
+      "last_updated_at": "2026-08-16T14:53:10",
+      "last_updated_round": 79,
+      "evidence": [
+        "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/reviews/conductor_round79_adjudication.md"
+      ]
+    },
+    {
+      "id": "Round79-algebraic-root-spacing-separates-the-active-metric-set",
+      "reason": "The norm thresholds R<<A^5D^2K^7 and R<<AD^2K^3 lie far beyond R<=L/A, and multiplication by arbitrary real X creates ordinary modulo-one clustering.",
+      "last_updated_at": "2026-08-16T14:53:10",
+      "last_updated_round": 79,
+      "evidence": [
+        "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/reviews/conductor_round79_adjudication.md"
+      ]
+    },
+    {
+      "id": "Round79-reciprocal-divisor-reenumeration-gives-a-second-saving",
+      "reason": "Reversing p=ell k merely lists the same integer-product fibers and supplies no independent oscillation or curvature.",
+      "last_updated_at": "2026-08-16T14:53:10",
+      "last_updated_round": 79,
+      "evidence": [
+        "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/reviews/conductor_round79_adjudication.md"
+      ]
+    },
+    {
+      "id": "Round80-nearest-integer-quotient-parity-survives-the-complete-symbol",
+      "reason": "The complete coefficient contains e(g theta/2), which cancels (-1)^ell e(-g eta/2) pointwise for odd g.",
+      "last_updated_at": "2026-08-16T15:41:11",
+      "last_updated_round": 80,
+      "evidence": [
+        "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/reviews/conductor_round80_adjudication.md"
+      ]
+    },
+    {
+      "id": "Round80-half-integer-Fourier-gap-removes-metric-density",
+      "reason": "Restoring the complete coefficient carrier shifts r-g/2 back to the integer mode r and restores the literal r=0 mean.",
+      "last_updated_at": "2026-08-16T15:41:11",
+      "last_updated_round": 80,
+      "evidence": [
+        "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/reviews/conductor_round80_adjudication.md"
+      ]
+    },
+    {
+      "id": "Round80-centered-discrepancy-alone-closes-the-strict-metric-sum",
+      "reason": "The window mean mu_R multiplies a complete actual-symbol zero-mode correlation, which returns to the original transposed energy and remains unestimated.",
+      "last_updated_at": "2026-08-16T15:41:11",
+      "last_updated_round": 80,
+      "evidence": [
+        "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/reviews/conductor_round80_adjudication.md"
+      ]
+    },
+    {
+      "id": "Round80-step-two-variation-transfers-to-the-decentered-coefficient",
+      "reason": "Differentiating C^circ=e(-g theta/2)B^circ introduces the uncontrolled term theta B^circ, so the accepted variation theorem cannot be transferred mechanically.",
+      "last_updated_at": "2026-08-16T15:41:11",
+      "last_updated_round": 80,
+      "evidence": [
+        "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/reviews/conductor_round80_adjudication.md"
+      ]
+    },
+    {
+      "id": "Round80-product-fiber-reenumeration-gives-an-independent-parity-saving",
+      "reason": "The quotient sign cancels inside the actual symbol, and the remaining sign is exactly the original chi_4(h)chi_4(s) character product.",
+      "last_updated_at": "2026-08-16T15:41:11",
+      "last_updated_round": 80,
+      "evidence": [
+        "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/reviews/conductor_round80_adjudication.md"
+      ]
+    },
+    {
+      "id": "Round80-adjoint-metric-Poisson-gives-a-second-curvature-saving",
+      "reason": "The zero mode changes variables back to the original h,s,x transposed-row kernel with identical character and symbol ownership.",
+      "last_updated_at": "2026-08-16T15:41:11",
+      "last_updated_round": 80,
+      "evidence": [
+        "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/reviews/conductor_round80_adjudication.md"
+      ]
+    },
+    {
+      "id": "Round81-raw-Farey-transition-has-global-BV",
+      "reason": "The actual boundary sawtooth has about J/C resets of standardized size sqrt(C/J), hence total-variation capacity sqrt(J/C). Only the neighbor-independent principal coefficient is globally BV.",
+      "last_updated_at": "2026-08-16T16:21:07",
+      "last_updated_round": 81,
+      "evidence": [
+        "rounds/codex-managed/m9-m1-upper-conductor-transition-flattening/reviews/conductor_round81_adjudication.md"
+      ]
+    },
+    {
+      "id": "Round81-cellwise-Bourgain-pays-no-piece-cost",
+      "reason": "The exponent-pair theorem applies on the ambient progression. Applying it independently on O(Q) Farey cells pays an unacceptable piece loss; the valid proof first flattens the principal weight globally.",
+      "last_updated_at": "2026-08-16T16:21:07",
+      "last_updated_round": 81,
+      "evidence": [
+        "rounds/codex-managed/m9-m1-upper-conductor-transition-flattening/reviews/conductor_round81_adjudication.md"
+      ]
+    },
+    {
+      "id": "Round81-both-boundary-faces-are-small",
+      "reason": "At z_*=1 only the adjacent standardized face is O(Lambda^(-1/2)); the remote face is asymptotic to sqrt(Lambda) and is controlled by its oscillatory tail.",
+      "last_updated_at": "2026-08-16T16:21:07",
+      "last_updated_round": 81,
+      "evidence": [
+        "rounds/codex-managed/m9-m1-upper-conductor-transition-flattening/reviews/conductor_round81_adjudication.md"
+      ]
+    },
+    {
+      "id": "Round81-simultaneous-neighbor-switches-cancel",
+      "reason": "In the active b>2 range the left and right numerator threshold lattices are distinct, and one progression step cannot cross both. No exact reset cancellation occurs.",
+      "last_updated_at": "2026-08-16T16:21:07",
+      "last_updated_round": 81,
+      "evidence": [
+        "rounds/codex-managed/m9-m1-upper-conductor-transition-flattening/reviews/conductor_round81_adjudication.md"
+      ]
+    },
+    {
+      "id": "Round82-coefficient-blind-large-sieve-uses-chirp",
+      "reason": "The ordinary Kloosterman large sieve depends only on coefficient L2 mass and has exact capacity BQ^2T=B J^2/T. The common square-root chirp supplies no saving in a coefficient-uniform theorem.",
+      "last_updated_at": "2026-08-16T17:08:50"
+    },
+    {
+      "id": "Round82-fixed-column-bilinear-Kloosterman-closes-energy",
+      "reason": "The current Pascadi and Blomer-Pascadi theorems require a single fixed modulus and two genuinely varying coefficient intervals for their savings. The literal map is a full residue interval against one singleton, while the energy is a varying-modulus product-Kloosterman kernel with a joint symbol.",
+      "last_updated_at": "2026-08-16T17:08:50"
+    },
+    {
+      "id": "Round82-modulus-average-has-common-divisor-B",
+      "reason": "For moduli 4b the common divisor in Pascadi's modulus-average theorem is only 4, not B. Its literal capacity retains the unsaved modulus factor and does not estimate the product kernel.",
+      "last_updated_at": "2026-08-16T17:08:50"
+    },
+    {
+      "id": "Round82-complete-transform-gives-second-saving",
+      "reason": "Complete Poisson, the chirp-preserving B-process, and the matched Kuznetsov-Voronoi chain reconstruct the original residue row when all lower terms, supports, and tails are retained. An involutive representation change is not an analytic gain.",
+      "last_updated_at": "2026-08-16T17:08:50"
+    },
+    {
+      "id": "Round82-level-four-spectrum-has-universal-X-over-4-center",
+      "reason": "Switched-cusp Voronoi after level-four newform and oldform decomposition has conductor- and dilation-dependent centers. The raw newform centers include N_f X/4 for N_f in {1,2,4}; no universal X/4 center is justified.",
+      "last_updated_at": "2026-08-16T17:08:50"
+    },
+    {
+      "id": "Round82-fixed-offset-bounds-sum-with-no-offset-loss",
+      "reason": "There are O(B) nonzero residue offsets. Each fixed layer is target-safe, but absolute accumulation costs exactly the missing factor B; a signed correlation theorem is required.",
+      "last_updated_at": "2026-08-16T17:08:50"
+    },
+    {
+      "id": "Round83-uniform-pointwise-square-root-rational-sum",
+      "reason": "For q=4p^nu and a=4p^(nu-1)alpha with p not dividing k alpha, the zero additive-frequency rational sum has size q^(1-1/(2nu)+o(1)); in particular q^(3/4+o(1)) at nu=2 and q^(7/8+o(1)) at nu=4. Any usable bound must retain gcd degeneracies and average with the actual weights.",
+      "last_updated_at": "2026-08-16T17:52:06",
+      "last_updated_round": 83,
+      "evidence": [
+        "rounds/codex-managed/m9-m1-nonzero-residue-offset-dispersion/reviews/conductor_round83_adjudication.md"
+      ]
+    },
+    {
+      "id": "Round83-coefficient-blind-trace-bound-controls-actual-row",
+      "reason": "The all-offset kernel is the rank-one form |sum_r u(r)R(r)|^2-sum_r|R(r)|^2, and arbitrary phase-conjugating weights saturate it. A proof must use the actual reciprocal Fourier weights, not only coefficient norms or complete-sum moments.",
+      "last_updated_at": "2026-08-16T17:52:06",
+      "last_updated_round": 83,
+      "evidence": [
+        "rounds/codex-managed/m9-m1-nonzero-residue-offset-dispersion/reviews/conductor_round83_adjudication.md"
+      ]
+    },
+    {
+      "id": "Round83-square-root-offset-average-closes-first-band",
+      "reason": "A B^(-1/2) gain reaches only C<=J^(56/75). The upper endpoint C=J^(3/4) requires at least B^(-5/9).",
+      "last_updated_at": "2026-08-16T17:52:06",
+      "last_updated_round": 83,
+      "evidence": [
+        "rounds/codex-managed/m9-m1-nonzero-residue-offset-dispersion/reviews/conductor_round83_adjudication.md"
+      ]
+    },
+    {
+      "id": "Round83-complete-offset-transform-gives-power-saving",
+      "reason": "The exact product-Kloosterman Fourier transform followed by inversion returns the original nonzero residue-offset row in all three local classes. Only an estimate after the transform can save a power.",
+      "last_updated_at": "2026-08-16T17:52:06",
+      "last_updated_round": 83,
+      "evidence": [
+        "rounds/codex-managed/m9-m1-nonzero-residue-offset-dispersion/reviews/conductor_round83_adjudication.md"
+      ]
+    },
+    {
+      "id": "Round83-dual-zero-means-all-multiples-of-modulus",
+      "reason": "The proved target-safe slice is the literal integer difference d=0. Terms d!=0 with d congruent 0 mod M remain in the centred correlation and cannot be discarded as the same zero mode.",
+      "last_updated_at": "2026-08-16T17:52:06",
+      "last_updated_round": 83,
+      "evidence": [
+        "rounds/codex-managed/m9-m1-nonzero-residue-offset-dispersion/reviews/conductor_round83_adjudication.md"
+      ]
+    },
+    {
+      "id": "Round83-even-units-follow-by-odd-parity-analogy",
+      "reason": "The c congruent 2 mod 4 and 4|c units require separate rescalings to moduli 2b and b. Their exact coefficients follow from bs_0+rho=tc and cannot be inferred by copying the odd modulus 4b formula.",
+      "last_updated_at": "2026-08-16T17:52:06",
+      "last_updated_round": 83,
+      "evidence": [
+        "rounds/codex-managed/m9-m1-nonzero-residue-offset-dispersion/reviews/conductor_round83_adjudication.md"
+      ]
+    },
+    {
+      "id": "Round84-bare-BV-gives-uniform-leading-stationary-symbol",
+      "reason": "A bounded-variation symbol may vary on the saddle-width scale, so its exact truncated-Gaussian transform can differ by a constant from the value-at-saddle leading term. The proved lemma instead uses the accepted Round-81 smooth extension and integrated c-seminorm.",
+      "last_updated_at": "2026-08-16T18:39:50",
+      "last_updated_round": 84,
+      "evidence": [
+        "rounds/codex-managed/m9-m1-centred-dual-difference-stationary-correlation/reviews/conductor_round84_adjudication.md"
+      ]
+    },
+    {
+      "id": "Round84-complete-stationary-summation-gives-saving",
+      "reason": "Exact completion of the stationary square-root phase reconstructs the pre-dual physical rank-one progression form. An independent signed estimate after completion is required; the transform itself supplies no norm decrease.",
+      "last_updated_at": "2026-08-16T18:39:50",
+      "last_updated_round": 84,
+      "evidence": [
+        "rounds/codex-managed/m9-m1-centred-dual-difference-stationary-correlation/reviews/conductor_round84_adjudication.md"
+      ]
+    },
+    {
+      "id": "Round84-small-difference-deletion-is-a-whole-range-B-power",
+      "reason": "The bound removes only 0<|d|<=floor(J^(17/30)). At C=J^(3/4) its first term reaches the full target at the endpoint, and it gives no estimate for the remaining |d|>floor(J^(17/30)) correlation.",
+      "last_updated_at": "2026-08-16T18:39:50",
+      "last_updated_round": 84,
+      "evidence": [
+        "rounds/codex-managed/m9-m1-centred-dual-difference-stationary-correlation/reviews/conductor_round84_adjudication.md"
+      ]
+    },
+    {
+      "id": "Round84-prime-field-trace-bound-closes-composite-actual-row",
+      "reason": "Prime-field trace results do not cover arbitrary composite and prime-power moduli with the joint square-root weight. Explicit nonzero prime-power Fourier modes have normalized losses q^(3/4+o(1)) and q^(7/8+o(1)), excluding a uniform coefficientwise square-root substitute.",
+      "last_updated_at": "2026-08-16T18:39:50",
+      "last_updated_round": 84,
+      "evidence": [
+        "rounds/codex-managed/m9-m1-centred-dual-difference-stationary-correlation/reviews/conductor_round84_adjudication.md"
+      ]
+    },
+    {
+      "id": "Round84-first-derivative-nonresonance-closes-small-d",
+      "reason": "Exact integer derivative and perfect-power resonances occur. The scoped proof survives them only because the nonzero second derivative is asymptotic to M^2|d|/J.",
+      "last_updated_at": "2026-08-16T18:39:50",
+      "last_updated_round": 84,
+      "evidence": [
+        "rounds/codex-managed/m9-m1-centred-dual-difference-stationary-correlation/reviews/conductor_round84_adjudication.md"
+      ]
+    },
+    {
+      "id": "Round85-shifted-row-multiplier-triangle-gives-B-power",
+      "reason": "The exact continuously shifted physical-row identity preserves Q^(-5/12), but Fourier projection costs ||K_w||_1>=1 for any unit plateau and returns the prior C^3/(TQ^(5/12)) capacity. A new signed theta,b,residue correlation is required.",
+      "last_updated_at": "2026-08-16T22:34:39",
+      "last_updated_round": 85
+    },
+    {
+      "id": "Round85-zero-mean-Parseval-closes-large-differences",
+      "reason": "Zero mean removes only the zero residue frequency. Exact Parseval trades the arithmetic modes for an unresolved stationary ambiguity energy, whose trivial norm cancels the apparent saving.",
+      "last_updated_at": "2026-08-16T22:34:39",
+      "last_updated_round": 85
+    },
+    {
+      "id": "Round85-differencing-without-four-Kloosterman-offdiagonal",
+      "reason": "The literal d-A-process has compulsory Fejer prefactors and a diagonal. Although the diagonal is target-safe, the off-diagonal is a weighted four-Kloosterman correlation; modulus self-return shifts, prime-power modes, and perfect-power phase resonances cannot be omitted.",
+      "last_updated_at": "2026-08-16T22:34:39",
+      "last_updated_round": 85
+    },
+    {
+      "id": "Round85-smooth-edge-flatness-owns-raw-transition",
+      "reason": "The support-edge proof uses the compact C-infinity neighbor-independent principal cutoff. The separately owned raw Round-81 Farey transition has different variation and is not covered by endpoint flatness.",
+      "last_updated_at": "2026-08-16T22:34:39",
+      "last_updated_round": 85
+    },
+    {
+      "id": "Round86-twisted-row-multiplier-triangle-gives-B-power",
+      "reason": "The exact continuously twisted physical-row identity preserves Q^(-5/12), but every retained unit plateau has Fourier-kernel L1 norm at least one. Triangle inequality therefore returns C^3/(TQ^(5/12)) and no B-power.",
+      "last_updated_at": "2026-08-16T23:14:58",
+      "last_updated_round": 86
+    },
+    {
+      "id": "Round86-uniform-four-Kloosterman-square-root-bound",
+      "reason": "On v=0 and h_1=h_2 the reciprocal phase cancels. Prime-power choices give exact size M^(2-1/nu), and squarefree M=ell R with u=h_1=h_2=R gives size asymptotic to M^2. A joint actual-symbol exceptional-mode estimate is required.",
+      "last_updated_at": "2026-08-16T23:14:58",
+      "last_updated_round": 86
+    },
+    {
+      "id": "Round86-A-process-U-below-M-avoids-near-return",
+      "reason": "Although U<=M avoids the first exact period u=M, divisor-aligned shifts u=M/ell and prime-power shifts u=M/p already produce near-quadratic complete modes. The Fejer prefactor, diagonal, and exceptional strata remain compulsory.",
+      "last_updated_at": "2026-08-16T23:14:58",
+      "last_updated_round": 86
+    },
+    {
+      "id": "Round86-residual-b-phase-alone-gives-B-minus-1-over-18",
+      "reason": "The b-phase has the right formal variation, but modulus, inverse unit, Kloosterman products, residue support, and stationary symbol vary simultaneously. No sampled-b BV or composite-modulus theorem converts that variation into a gain on the actual vector.",
+      "last_updated_at": "2026-08-16T23:14:58",
+      "last_updated_round": 86
+    },
+    {
+      "id": "Round86-generic-prime-trace-bound-closes-composite-aggregate",
+      "reason": "Generic prime-local square-root estimates leave exact paired, local-zero, divisor-aligned, higher-prime-power, and 2-adic strata. Existing sources do not aggregate those modes with the actual stationary symbol or retain the physical Q^(-5/12) factor.",
+      "last_updated_at": "2026-08-16T23:14:58",
+      "last_updated_round": 86
+    },
+    {
+      "id": "Round87-unnormalized-row-with-extra-M-minus-two",
+      "reason": "The row estimate TQ^(-5/24) applies to M^(-1)sum_n I_b(n)e_M(nx)e(n theta). Inserting another M^(-2) in the ordered-pair function double counts normalization and produces a false U asymp B gain by M^4.",
+      "last_updated_at": "2026-08-17T00:25:21",
+      "last_updated_round": 87
+    },
+    {
+      "id": "Round87-coefficientwise-generic-trace-deletes-exceptional-strata",
+      "reason": "Prime-power and squarefree divisor-aligned complete traces can have near-M^2 size. Their target-safe disposal uses the full same-group physical Fejer norm at U=D, not a coefficientwise square-root estimate.",
+      "last_updated_at": "2026-08-17T00:25:21",
+      "last_updated_round": 87
+    },
+    {
+      "id": "Round87-frequency-diagonal-is-physical-diagonal",
+      "reason": "Paired local modes are diagonal only in the completed Fourier label. Their actual weight is a shifted physical-row correlation. Only the exact same-group positive package is controlled; cross-group u=0 remains with the old diagonal and cross-group u!=0 remains open.",
+      "last_updated_at": "2026-08-17T00:25:21",
+      "last_updated_round": 87
+    },
+    {
+      "id": "Round87-pointwise-trace-times-b-phase-gain",
+      "reason": "Formal b-phase variation after D_1 cannot be multiplied by a pointwise trace bound because the modulus, local unit, factorization strata, and actual stationary symbol vary with b. A varying-modulus signed coefficient theorem is absent.",
+      "last_updated_at": "2026-08-17T00:25:21",
+      "last_updated_round": 87
+    },
+    {
+      "id": "Round87-all-stride-M-returns-removed",
+      "reason": "The proved Fejer package contains and bounds only same-group stride-M returns. Cross-group stride-M terms and partial lower-conductor returns remain in the strict residual.",
+      "last_updated_at": "2026-08-17T00:25:21",
+      "last_updated_round": 87
+    },
+    {
+      "id": "Round88-numerator-only-period-depth",
+      "reason": "The unit mask can create exact lower periods at p=3 and p=5 even when the displayed numerator has unit coefficients. Exact depth must be computed from the complete masked weight.",
+      "last_updated_at": "2026-08-17T02:22:40",
+      "last_updated_round": 88,
+      "evidence": [
+        "rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/reviews/conductor_round88_adjudication.md"
+      ]
+    },
+    {
+      "id": "Round88-completed-trace-descends-by-p-to-j",
+      "reason": "The unprefactored Fourier transform descends by p^j, but the completed trace includes an outer factor q and descends by p^(2j).",
+      "last_updated_at": "2026-08-17T02:22:40",
+      "last_updated_round": 88,
+      "evidence": [
+        "rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/reviews/conductor_round88_adjudication.md"
+      ]
+    },
+    {
+      "id": "Round88-Fourier-support-sparsity-gives-Fejer-saving",
+      "reason": "Restricting to p^j|u rescales the Fejer kernel and retains total mass D; the trace descent factor creates an exact transform self-return.",
+      "last_updated_at": "2026-08-17T02:22:40",
+      "last_updated_round": 88,
+      "evidence": [
+        "rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/reviews/conductor_round88_adjudication.md"
+      ]
+    },
+    {
+      "id": "Round88-coarse-depth-equals-functional-period-depth",
+      "reason": "Coarse physical-label coincidence is a divisor-lattice equivalence relation, while mask-created, affine, nonunit-K, and extra 2-adic periods need not correspond to it.",
+      "last_updated_at": "2026-08-17T02:22:40",
+      "last_updated_round": 88,
+      "evidence": [
+        "rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/reviews/conductor_round88_adjudication.md"
+      ]
+    },
+    {
+      "id": "Round88-coefficientwise-square-root-cross-trace",
+      "reason": "An exact cross-group q=3^nu family has completed local trace magnitude q^2/3. Only a joint actual-symbol estimate can control such lower-conductor returns.",
+      "last_updated_at": "2026-08-17T02:22:40",
+      "last_updated_round": 88,
+      "evidence": [
+        "rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/reviews/conductor_round88_adjudication.md"
       ]
     }
   ]

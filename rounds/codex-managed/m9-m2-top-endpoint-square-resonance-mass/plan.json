@@ -1,0 +1,178 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 78,
+    "round_type": "m9_m2_top_endpoint_square_resonance_mass",
+    "campaign_id": "m9-m2-top-endpoint-square-resonance-mass",
+    "title": "Adjudicate the structured square-ray resonance mass",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "5afbe1bb7b5c5d943be9438ba02bd9ede1ab6735344174b33b4a99c7de7f9123",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 80,
+      "numerical_experimental_maximum_percent": 20,
+      "planned_numerical_percent": 5,
+      "literature_policy": "No external theorem may be imported without an exact hypothesis map; the primary objective is an internal divisor/metric analysis of the accepted actual symbol."
+    },
+    "target_obligations": [
+      "M9-M2-top-endpoint-actual-symbol-variation",
+      "M9-M2-top-endpoint-transposed-character-energy",
+      "M9-M2-top-endpoint-signed-cone",
+      "M9-M2"
+    ],
+    "frozen_target": {
+      "question": "Is the complete actual-symbol contribution of primitive square rays target-sized, and is its absolute Abel resonance majorant target-sized or provably too large?",
+      "reference_formula": "a=s^2, b=t^2, t=s+2u; Lambda=2Xu^2; V<<2Ju sqrt(G)/k^(3/2).",
+      "scope": [
+        "complete Round-77 centred integral",
+        "primitive odd square rays and equivalent common-squarefree-kernel original pairs",
+        "exact and metric k-resonances",
+        "actual signed phase e(-Xu^2/k)",
+        "exact finite lift interval and endpoint term",
+        "separate actual signed contribution from absolute Abel majorant"
+      ]
+    },
+    "completion_criteria": [
+      "Derive the exact square/common-squarefree parameterization, signs, k-range, and weights.",
+      "Prove or sharply refute the L^2 X^epsilon bound for the actual signed square-ray contribution.",
+      "Independently determine the capacity of the absolute Abel majorant without conflating it with the signed sum.",
+      "Test the fourth-power coherent family and all exact/near-resonant k ownership.",
+      "Complete a clean statement-only rederivation and hostile audit.",
+      "Do not promote the generic resonance union, full energy, M2, M9, or the exponent."
+    ],
+    "controls": [
+      "external_normalization",
+      "square_common_kernel_equivalence",
+      "primitive_parity_and_sign",
+      "exact_k_interval",
+      "complete_actual_symbol",
+      "exact_vs_metric_resonance",
+      "absolute_majorant_vs_signed_sum",
+      "fourth_power_coherence",
+      "near_square_and_nonsquare_scope",
+      "endpoint_stars_and_lift_support",
+      "coefficient_adversary",
+      "rank_one_self_return",
+      "downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "blind_square_resonance_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "completed_clean",
+        "target": "Independently derive and adjudicate the complete primitive-square contribution and its Abel majorant from the self-contained packet.",
+        "context_files": [
+          "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/derivation_packet.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/briefs/blind_square_resonance_rederivation.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/reviews/conductor_round78_preliminary_algebra.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "all strategy files",
+          "all Round-76 and Round-77 reports",
+          "all sibling Round-78 reports",
+          "all source cards"
+        ],
+        "required_controls": [
+          "square_common_kernel_equivalence",
+          "primitive_parity_and_sign",
+          "exact_k_interval",
+          "complete_actual_symbol",
+          "absolute_majorant_vs_signed_sum",
+          "fourth_power_coherence",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "One seven-section statement-only report at the assigned path."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/reports/blind_square_resonance_rederivation.md"
+      },
+      {
+        "id": "square_resonance_mass_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "completed",
+        "target": "Prove the strongest correct actual-symbol square-ray theorem, including exact and metric reciprocal resonances.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/derivation_packet.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/briefs/square_resonance_mass_attack.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-actual-symbol-variation/reviews/conductor_round77_adjudication.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reviews/conductor_round76_adjudication.md"
+        ],
+        "excluded_context": [
+          "all sibling Round-78 reports"
+        ],
+        "required_controls": [
+          "external_normalization",
+          "complete_actual_symbol",
+          "exact_vs_metric_resonance",
+          "absolute_majorant_vs_signed_sum",
+          "endpoint_stars_and_lift_support",
+          "coefficient_adversary",
+          "rank_one_self_return"
+        ],
+        "required_output": [
+          "One seven-section analytic report at the assigned path."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/reports/square_resonance_mass_attack.md"
+      },
+      {
+        "id": "square_resonance_hostile_audit",
+        "role": "seam_reviewer",
+        "access_mode": "selected_context",
+        "status": "completed_clean",
+        "target": "Attempt to falsify separate square-family closure, audit the absolute majorant, and test fourth-power and metric resonances.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/derivation_packet.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/briefs/square_resonance_hostile_audit.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-actual-symbol-variation/reports/actual_symbol_hostile_audit.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reports/signed_offset_hostile_audit.md"
+        ],
+        "excluded_context": [
+          "all sibling Round-78 reports"
+        ],
+        "required_controls": [
+          "external_normalization",
+          "exact_k_interval",
+          "complete_actual_symbol",
+          "exact_vs_metric_resonance",
+          "absolute_majorant_vs_signed_sum",
+          "fourth_power_coherence",
+          "near_square_and_nonsquare_scope"
+        ],
+        "required_output": [
+          "One seven-section hostile report at the assigned path."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/reports/square_resonance_hostile_audit.md"
+      }
+    ],
+    "review_seams": [
+      "primitive square/common-kernel equivalence",
+      "exact sign and phase",
+      "reciprocal k-resonance counting",
+      "actual complete-integral coefficient",
+      "absolute-versus-signed distinction",
+      "fourth-power coherent family",
+      "generic and downstream separation"
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "5afbe1bb7b5c5d943be9438ba02bd9ede1ab6735344174b33b4a99c7de7f9123",
+    "generated_at": "2026-08-16T12:45:00+08:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

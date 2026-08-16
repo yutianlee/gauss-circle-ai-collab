@@ -1,0 +1,152 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-top-endpoint-strict-metric-carrier-cancellation",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Complete-symbol carrier cancellation and metric-parity self-return",
+        "status": "proved_internal",
+        "statement_tex": "Let J=sqrt X, retain the complete collar-extracted top-M2 coefficient B^circ_(a,b,k)(g), and put theta=Lambda/k=X(sqrt(b)-sqrt(a))^2/(2k), q=(b-a)/2. Define C^circ=e(-g theta/2)B^circ. Then exactly C^circ=g int_(b/4)^a A^circ_(ga,gb)(gu)e(g[ku-J(sqrt(b)-sqrt(a))sqrt(u)])du. If theta=ell+eta, p=ell k, and g is odd, then (-1)^(q+ell)B^circ(g)e(-g eta/2)=(-1)^q C^circ(g); hence the quotient sign (-1)^(p/k) cancels pointwise against the carrier inside the complete actual symbol. For a period-one strict-metric window W_R(t)=mu_R+sum_(r!=0) W_hat_R(r)e(rt), the complete-symbol expansion has integer modes mu_R C^circ+sum_(r!=0)W_hat_R(r)e(r theta)C^circ, so the literal r=0 density mode returns. Under h=ga, s=gb, x=gu, C^circ=int_(s/4)^h A^circ_(h,s)(x)e(kx-J(sqrt(s)-sqrt(h))sqrt(x))dx and (-1)^q=chi_4(h)chi_4(s), giving an exact adjoint-Poisson return to the residual transposed two-character energy. Therefore quotient parity, a half-integer Fourier gap, discrepancy-only bounds, or another reciprocal re-enumeration supply no independent saving. The residual complete-coefficient signed cross-row correlation remains open, and no hard subrange, M9-M2 estimate, or exponent follows.",
+        "dependencies": [
+          "M9-M2-top-endpoint-transposed-character-energy",
+          "M9-M2-top-endpoint-actual-symbol-variation",
+          "M9-M2-top-endpoint-nonsquare-divisor-strip",
+          "M9-M2-top-endpoint-metric-density-obstruction"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/reports/blind_strict_metric_energy_rederivation.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/reports/primitive_ray_parity_energy_attack.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/reports/strict_metric_energy_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/reviews/conductor_round80_actual_symbol_recoupling.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/reviews/conductor_round80_adjudication.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Estimate the complete residual chi_4(h)chi_4(s) cross-row kernel directly, with the metric density and all nonzero integer modes coupled. Do not extract quotient parity or repeat adjoint reciprocal Poisson."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "dependencies_added": [
+          "M9-M2-top-endpoint-strict-metric-carrier-cancellation"
+        ],
+        "evidence_added": {
+          "positive": [],
+          "negative": [
+            "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/reports/strict_metric_energy_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/reviews/conductor_round80_adjudication.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/synthesis.md"
+          ]
+        },
+        "next_action": "The quotient-parity and half-frequency-gap routes are exhausted. Prove the residual complete-symbol chi_4(h)chi_4(s) cross-row energy directly, coupling the metric density and discrepancy modes."
+      },
+      {
+        "id": "M9-M2-top-endpoint-transposed-character-energy",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/reports/primitive_ray_parity_energy_attack.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/reviews/conductor_round80_adjudication.md"
+          ],
+          "negative": []
+        },
+        "next_action": "Estimate its residual chi_4(h)chi_4(s) cross-row kernel itself. The strict-metric quotient sign cancels inside the complete coefficient and is not new arithmetic information."
+      },
+      {
+        "id": "M9-M2-top-endpoint-actual-symbol-variation",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/reports/blind_strict_metric_energy_rederivation.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/reviews/conductor_round80_actual_symbol_recoupling.md"
+          ],
+          "negative": []
+        },
+        "next_action": "Retain the complete carrier when changing representation. The proved g-variation of B^circ does not transfer unchanged to C^circ=e(-g theta/2)B^circ."
+      },
+      {
+        "id": "M9-M2-top-endpoint-metric-density-obstruction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/reports/strict_metric_energy_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/reviews/conductor_round80_adjudication.md"
+          ],
+          "negative": []
+        },
+        "next_action": "The complete carrier restores the literal Fourier zero mode. Estimate density and discrepancy jointly in the original transposed two-character kernel."
+      },
+      {
+        "id": "M9-M2",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/synthesis.md"
+          ]
+        },
+        "next_action": "The residual top-endpoint cross-row energy is still open after exact carrier recoupling. Close it directly, then reconcile every other M2 packet and endpoint owner."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round80-nearest-integer-quotient-parity-survives-the-complete-symbol",
+        "reason": "The complete coefficient contains e(g theta/2), which cancels (-1)^ell e(-g eta/2) pointwise for odd g."
+      },
+      {
+        "id": "Round80-half-integer-Fourier-gap-removes-metric-density",
+        "reason": "Restoring the complete coefficient carrier shifts r-g/2 back to the integer mode r and restores the literal r=0 mean."
+      },
+      {
+        "id": "Round80-centered-discrepancy-alone-closes-the-strict-metric-sum",
+        "reason": "The window mean mu_R multiplies a complete actual-symbol zero-mode correlation, which returns to the original transposed energy and remains unestimated."
+      },
+      {
+        "id": "Round80-step-two-variation-transfers-to-the-decentered-coefficient",
+        "reason": "Differentiating C^circ=e(-g theta/2)B^circ introduces the uncontrolled term theta B^circ, so the accepted variation theorem cannot be transferred mechanically."
+      },
+      {
+        "id": "Round80-product-fiber-reenumeration-gives-an-independent-parity-saving",
+        "reason": "The quotient sign cancels inside the actual symbol, and the remaining sign is exactly the original chi_4(h)chi_4(s) character product."
+      },
+      {
+        "id": "Round80-adjoint-metric-Poisson-gives-a-second-curvature-saving",
+        "reason": "The zero mode changes variables back to the original h,s,x transposed-row kernel with identical character and symbol ownership."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "reason": "No residual hard block or complete signed energy estimate is proved."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "The top-endpoint residual and other M2 interfaces remain open."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "Round 80 concerns only the M2 strict-metric representation and does not change the M1 upper-conductor corridor."
+      },
+      {
+        "id": "M9",
+        "reason": "Both M9-M1 and M9-M2 remain open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The round proves a route obstruction but no new endpoint estimate, so the global exponent is unchanged."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "The round rigorously falsifies the planned quotient-parity and half-frequency-gap mechanisms at the complete-symbol level, restores the metric density zero mode, and identifies the residual kernel as an exact adjoint return to the original two-character energy. It closes no parameter range but prevents an invalid Gate-III proof and isolates the honest next interface."
+  }
+}

@@ -1,0 +1,236 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 86,
+    "round_type": "m9_m1_interior_four_kloosterman_ambiguity",
+    "campaign_id": "m9-m1-interior-four-kloosterman-ambiguity",
+    "title": "Estimate the interior weighted four-Kloosterman ambiguity correlation",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "910950f389c49a17cc188c8e0ad9b18e4d83d4a7f580fa0baacca97d39195fe6",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 80,
+      "numerical_experimental_maximum_percent": 20,
+      "planned_numerical_percent": 0,
+      "literature_policy": "Audit only literal current primary theorems for shifted or fourfold Kloosterman correlations with composite and prime-power moduli. Preserve the actual stationary symbol and the physical Q^(-5/12) energy factor."
+    },
+    "target_obligations": [
+      "M9-M1-centred-dual-difference-support-edge-bound",
+      "M9-M1-centred-dual-difference-small-shift-bound",
+      "M9-M1-residual-upper-conductor-offdiagonal-reduction",
+      "M9-M1"
+    ],
+    "frozen_target": {
+      "question": "Can the exact continuously twisted physical-row ambiguity or the literal d-A-process four-Kloosterman off-diagonal bound the remaining M1 interior differences while retaining Q^(-5/12)?",
+      "reference_formula": "Bound M^(-2) sum_(b asymp B) sum_(D0<|d|<Delta_b-E*) sum_n (S(n+d,K;M)conj(S(n,K;M))-c_M(d)) I_b(n+d)conj(I_b(n)) by X^epsilon J^2/T, or isolate a strictly smaller exact signed survivor.",
+      "quantities": [
+        "J=X^(1/2), Q=J^(2/5), T=J^(3/5), B=C/T",
+        "J^(13/18)<C<=J^(3/4)",
+        "D0=floor(J^(17/30)), E*=floor(Q^2J^(-1/20))=floor(J^(3/4))",
+        "Delta_b asymp Q^2 and D0<|d|<Delta_b-E*",
+        "physical row TQ^(-5/24), energy factor Q^(-5/12)",
+        "B^(-1/2) reaches C=J^(56/75); B^(-5/9) closes the endpoint"
+      ],
+      "scope": [
+        "transition-flattened smooth nonaxial principal row only",
+        "all three local classes, both signs, and reflected endpoint orientations",
+        "small d and outer support edge already removed exactly once",
+        "entry/exit, stationary errors, raw transition, and axes separately owned",
+        "no C>J^(3/4), cone edge, other radial sector, full M9-M1, M9, or exponent claim"
+      ]
+    },
+    "completion_criteria": [
+      "Retain the exact M^(-2) normalization and the physical Q^(-5/12) energy factor.",
+      "Treat both signs, all local classes, reflected orientations, and the exact middle support.",
+      "Keep nonzero modulus multiples, prime-power gcd modes, and all Ramanujan terms.",
+      "Retain the Fejer/A-process diagonal and prefactor and audit u=M self-return.",
+      "Prove the target, a fixed B-power, a nonempty interior shell/subrange, or a strictly smaller exact signed survivor/no-go.",
+      "Audit square/fourth-power resonances and complete-transform self-return.",
+      "Complete a clean statement-only derivation, a constructive analytic attack, and a hostile/source audit."
+    ],
+    "controls": [
+      "external_normalization",
+      "all_class_local_units",
+      "physical_row_energy_factor",
+      "middle_difference_ownership",
+      "negative_and_modulus_multiple_differences",
+      "ramanujan_cross_and_square_terms",
+      "prime_power_gcd_modes",
+      "fejer_prefactor_and_diagonal",
+      "four_kloosterman_offdiagonal",
+      "actual_stationary_symbol",
+      "entry_exit_and_error_ownership",
+      "integer_and_perfect_power_resonance",
+      "complete_transform_and_uM_self_return",
+      "source_hypothesis_map",
+      "downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "blind_four_kloosterman_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "completed_clean",
+        "target": "Independently derive the exact ambiguity and d-A-process interfaces and test whether any retained cancellation proves a B-power or a smaller middle survivor.",
+        "context_files": [
+          "rounds/codex-managed/m9-m1-interior-four-kloosterman-ambiguity/derivation_packet.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "all strategy files",
+          "all prior-round reports and reviews",
+          "all sibling Round-86 reports",
+          "all source cards and web sources"
+        ],
+        "required_controls": [
+          "external_normalization",
+          "all_class_local_units",
+          "physical_row_energy_factor",
+          "middle_difference_ownership",
+          "negative_and_modulus_multiple_differences",
+          "ramanujan_cross_and_square_terms",
+          "prime_power_gcd_modes",
+          "fejer_prefactor_and_diagonal",
+          "four_kloosterman_offdiagonal",
+          "actual_stationary_symbol",
+          "entry_exit_and_error_ownership",
+          "integer_and_perfect_power_resonance",
+          "complete_transform_and_uM_self_return",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "One seven-section statement-only report at the assigned path."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-interior-four-kloosterman-ambiguity/reports/blind_four_kloosterman_rederivation.md"
+      },
+      {
+        "id": "twisted_ambiguity_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "completed_clean",
+        "target": "Exploit the continuously twisted physical rows or a weighted d-A-process to prove a genuine interior B-power, shell deletion, or strictly smaller exact correlation.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0816_full_proof_strategy.md",
+          "rounds/codex-managed/m9-m1-interior-four-kloosterman-ambiguity/derivation_packet.md",
+          "rounds/codex-managed/m9-m1-large-dual-difference-joint-dispersion/synthesis.md",
+          "rounds/codex-managed/m9-m1-large-dual-difference-joint-dispersion/reviews/conductor_round85_support_edge_normalization.md",
+          "rounds/codex-managed/m9-m1-large-dual-difference-joint-dispersion/reports/hybrid_large_difference_attack.md",
+          "rounds/codex-managed/m9-m1-centred-dual-difference-stationary-correlation/reviews/conductor_round84_stationary_normalization.md"
+        ],
+        "excluded_context": [
+          "all sibling Round-86 reports"
+        ],
+        "required_controls": [
+          "external_normalization",
+          "all_class_local_units",
+          "physical_row_energy_factor",
+          "middle_difference_ownership",
+          "negative_and_modulus_multiple_differences",
+          "ramanujan_cross_and_square_terms",
+          "prime_power_gcd_modes",
+          "fejer_prefactor_and_diagonal",
+          "four_kloosterman_offdiagonal",
+          "actual_stationary_symbol",
+          "entry_exit_and_error_ownership",
+          "integer_and_perfect_power_resonance",
+          "complete_transform_and_uM_self_return",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "One seven-section analytic report at the assigned path."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-interior-four-kloosterman-ambiguity/reports/twisted_ambiguity_attack.md"
+      },
+      {
+        "id": "four_kloosterman_hostile_source_audit",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "status": "completed_clean",
+        "target": "Falsify or certify a literal weighted four-Kloosterman/ambiguity estimate and audit current primary-source applicability for arbitrary composite and prime-power moduli.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-interior-four-kloosterman-ambiguity/derivation_packet.md",
+          "rounds/codex-managed/m9-m1-large-dual-difference-joint-dispersion/synthesis.md",
+          "rounds/codex-managed/m9-m1-large-dual-difference-joint-dispersion/reports/large_difference_source_hostile_audit.md",
+          "rounds/codex-managed/m9-m1-transition-flattened-kloosterman-energy/reports/kloosterman_energy_source_hostile_audit.md",
+          "rounds/codex-managed/m9-m1-nonzero-residue-offset-dispersion/reports/offset_trace_source_hostile_audit.md"
+        ],
+        "excluded_context": [
+          "all sibling Round-86 reports"
+        ],
+        "required_controls": [
+          "external_normalization",
+          "all_class_local_units",
+          "physical_row_energy_factor",
+          "middle_difference_ownership",
+          "negative_and_modulus_multiple_differences",
+          "ramanujan_cross_and_square_terms",
+          "prime_power_gcd_modes",
+          "fejer_prefactor_and_diagonal",
+          "four_kloosterman_offdiagonal",
+          "actual_stationary_symbol",
+          "entry_exit_and_error_ownership",
+          "integer_and_perfect_power_resonance",
+          "complete_transform_and_uM_self_return",
+          "source_hypothesis_map",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "One seven-section hostile/source report at the assigned path."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-interior-four-kloosterman-ambiguity/reports/four_kloosterman_hostile_source_audit.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "physical_dual_normalization",
+        "requirement": "Every claimed gain must retain M^(-2), the shifted-row identity, and Q^(-5/12)."
+      },
+      {
+        "id": "difference_ownership",
+        "requirement": "Check the exact middle interval, both signs, modulus multiples, and prior deletions exactly once."
+      },
+      {
+        "id": "four_product_arithmetic",
+        "requirement": "Check the A-process diagonal, all Ramanujan terms, prime-power modes, and the full four-Kloosterman off-diagonal."
+      },
+      {
+        "id": "symbol_and_self_return",
+        "requirement": "Keep the actual stationary weight and reject complete-transform or u=M self-return as an unsupported saving."
+      },
+      {
+        "id": "source_and_scope",
+        "requirement": "Audit literal source hypotheses and keep transitions, axes, upper conductors, cone edges, other sectors, and downstream claims separate."
+      }
+    ],
+    "live_notes": [
+      {
+        "timestamp": "2026-08-16T23:45:00+08:00",
+        "author": "Codex conductor",
+        "note": "Round 85 deleted the outer support-difference collar. Round 86 freezes the remaining middle interval and requires any ambiguity or A-process gain to retain the physical Q^(-5/12) energy factor and all prime-power self-return modes."
+      },
+      {
+        "timestamp": "2026-08-17T00:35:00+08:00",
+        "author": "Codex conductor",
+        "note": "Round 86 closes with the independently certified cubic-shell deletion and the exact deep survivor D_1<|d|<Delta_b-E_*."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "910950f389c49a17cc188c8e0ad9b18e4d83d4a7f580fa0baacca97d39195fe6",
+    "generated_at": "2026-08-16T14:46:01.215141+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

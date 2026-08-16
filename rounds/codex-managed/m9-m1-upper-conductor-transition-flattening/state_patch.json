@@ -1,0 +1,142 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "Bourgain-2017-reciprocal-exponent-pair-source-audit",
+        "type": "source_audit",
+        "track": "source_audit",
+        "title": "Bourgain 2017 reciprocal exponent-pair interface",
+        "status": "proved_external_dependency",
+        "statement_tex": "Bourgain's exponent pair (13/84+epsilon,55/84+epsilon), in the source range T_parameter^(17/42) << M << T_parameter^(1/2), applies to the reciprocal progression phase K/(ell+alpha) with M=J^(3/5), T_parameter=J^(7/5), and log(M)/log(T_parameter)=3/7. Uniformly on every proper subinterval it gives sum e(plus-or-minus K/(ell+alpha)) <<_epsilon X^epsilon M Q^(-5/24), with the proper-subinterval logarithm absorbed in X^epsilon. The input is unweighted; actual BV weights are inserted only afterwards by Abel summation on the full progression.",
+        "dependencies": [],
+        "implies": [
+          "M9-M1-upper-conductor-transition-flattened-subrange-bound"
+        ],
+        "blockers": [],
+        "source_card": "sources/bourgain_2017_exponent_pair.md",
+        "evidence": {
+          "positive": [
+            "sources/bourgain_2017_exponent_pair.md",
+            "rounds/codex-managed/m9-m1-upper-conductor-transition-flattening/reports/transition_gluing_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-upper-conductor-transition-flattening/reviews/conductor_round81_transition_normalization.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use only on the ambient reciprocal progression with the audited derivative class and proper-subinterval uniformity; do not rescale it to individual Farey-neighbor cells or arbitrary weights."
+      },
+      {
+        "id": "M9-M1-upper-conductor-transition-flattened-subrange-bound",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Transition-flattened bound for the extended upper Farey conductors",
+        "status": "proved_internal",
+        "statement_tex": "Let J=sqrt(X), Q=J^(2/5), T=J/Q, and J^(32/45)<C<=J^(13/18). For the exact fixed-smooth-interior order-J Farey contribution, retain both aliases and orientations, all three kappa classes, exact half-open neighbors, floors, local units, the finite nonaxial family, and the separately owned axes. On every admissible progression c=r mod 4b, b asymp C/T, the complete normalized nonaxial coefficient splits as W(c)=Gamma_(epsilon,z_*) V(c)+E(c), where Gamma is the full Gaussian for -1<z_*<1, the oriented half Gaussian for z_*=plus-or-minus1, and zero outside; sup|V|+Var(V)<<_epsilon X^epsilon and |E(c)|<<_epsilon X^epsilon sqrt(C/J). The error contains both moving Farey faces, the complete first stationary and Morse corrections, nonstationary pieces, aliases, floors, and neighbor resets, and no BV is claimed for E. Bourgain's audited reciprocal exponent pair then gives sum_(b asymp C/T)|S_b|^2 <<_epsilon X^epsilon{C^3/(TQ^(5/12))+C^4/(TJ)} <= X^epsilon J^2/T. Combined with the accepted lower-conductor lemmas, every fixed-interior conductor T<=C<=J^(13/18) is target-safe. The residual J^(13/18)<C<=J, cone edges, other radial sectors, full M9-M1, M9, and the exponent remain open.",
+        "dependencies": [
+          "M9-M1-product-wavelet-low-conductor-Farey-stationary-bound",
+          "M9-M1-upper-conductor-third-derivative-subrange-bound",
+          "Bourgain-2017-reciprocal-exponent-pair-source-audit"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-upper-conductor-transition-flattening/reports/blind_transition_flattening_rederivation.md",
+            "rounds/codex-managed/m9-m1-upper-conductor-transition-flattening/reports/farey_transition_flattening_attack.md",
+            "rounds/codex-managed/m9-m1-upper-conductor-transition-flattening/reports/transition_gluing_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-upper-conductor-transition-flattening/reviews/conductor_round81_transition_normalization.md",
+            "rounds/codex-managed/m9-m1-upper-conductor-transition-flattening/reviews/conductor_round81_adjudication.md",
+            "rounds/codex-managed/m9-m1-upper-conductor-transition-flattening/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use this lemma only for the fixed-smooth-interior block through C=J^(13/18). Attack the residual smooth nonaxial main on J^(13/18)<C<=J^(3/4), then the main, transition error, and axes on J^(3/4)<C<=J."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-upper-conductor-third-derivative-subrange-bound",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-upper-conductor-transition-flattening/synthesis.md"
+          ]
+        },
+        "next_action": "Retain this third-derivative lemma through C=J^(32/45). The transition-flattened successor extends the combined fixed-interior safe range to C=J^(13/18)."
+      },
+      {
+        "id": "M9-M1-residual-upper-conductor-offdiagonal-reduction",
+        "statement_tex": "Let J=sqrt(X), Q=X^(1/5)=J^(2/5), T=J/Q, and J^(13/18)<C<=J. Fix a compatible nonaxial k=rho sigma=O(1), a local class kappa in {1/4,1/2,1}, and an endpoint orientation. For the exact half-open one-count cell set Z_b at b asymp C/T, write c_(b,z)=r+4b ell and a_(b,z)=u_(b,r,k)^(kappa) w_(b,r,nu,k)^(kappa)(ell), retaining the actual inverse or even local unit, both Farey-neighbor transitions, and all finite ownership conventions. Then the exact energy E_(C,k)^(kappa)=sum_b |sum_(z in Z_b) a_(b,z)e(plus-or-minus A_(kappa,b)/c_(b,z))|^2 splits as E=D+H, where D<<_epsilon X^epsilon C^2/T<=X^epsilon J^2/T and every fixed nonzero denominator-offset layer has the same target-safe absolute capacity. Thus the residual nonaxial estimate is reduced to the coherent signed bound H<<_epsilon X^epsilon J^2/T. On J^(13/18)<C<=J^(3/4), the transition error and axes are already safe, so only the globally smooth nonaxial main remains. On J^(3/4)<C<=J, the main, transition error, and axes all require signed control. This proves no estimate for H, cone edges, full M9-M1, M9, or the exponent.",
+        "dependencies_added": [
+          "M9-M1-upper-conductor-transition-flattened-subrange-bound"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-upper-conductor-transition-flattening/reviews/conductor_round81_adjudication.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-upper-conductor-transition-flattening/synthesis.md"
+          ]
+        },
+        "next_action": "First attack the globally smooth nonaxial main energy on J^(13/18)<C<=J^(3/4), where transitions and axes are already safe. Then treat the upper band C>J^(3/4), retaining transitions and axes."
+      },
+      {
+        "id": "M9-M1",
+        "dependencies_added": [
+          "M9-M1-upper-conductor-transition-flattened-subrange-bound"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-upper-conductor-transition-flattening/synthesis.md"
+          ]
+        },
+        "next_action": "Close the fixed-interior residual J^(13/18)<C<=J, beginning with the globally smooth nonaxial main below J^(3/4), then reconcile cone edges, remaining radial sectors, and endpoint uniformity."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round81-raw-Farey-transition-has-global-BV",
+        "reason": "The actual boundary sawtooth has about J/C resets of standardized size sqrt(C/J), hence total-variation capacity sqrt(J/C). Only the neighbor-independent principal coefficient is globally BV."
+      },
+      {
+        "id": "Round81-cellwise-Bourgain-pays-no-piece-cost",
+        "reason": "The exponent-pair theorem applies on the ambient progression. Applying it independently on O(Q) Farey cells pays an unacceptable piece loss; the valid proof first flattens the principal weight globally."
+      },
+      {
+        "id": "Round81-both-boundary-faces-are-small",
+        "reason": "At z_*=1 only the adjacent standardized face is O(Lambda^(-1/2)); the remote face is asymptotic to sqrt(Lambda) and is controlled by its oscillatory tail."
+      },
+      {
+        "id": "Round81-simultaneous-neighbor-switches-cancel",
+        "reason": "In the active b>2 range the left and right numerator threshold lattices are distinct, and one progression step cannot cross both. No exact reset cancellation occurs."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "A fixed-interior range is extended, but the upper residual, cone edges, other radial sectors, and endpoint reconciliation remain open."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Round 81 concerns only the M1 Farey transition interface."
+      },
+      {
+        "id": "M9",
+        "reason": "Both M9-M1 and M9-M2 remain open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The round improves a local M1 conductor range but proves no new global Gauss-circle exponent."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 9,
+    "idea_quality_score": 9,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "The round proves a new fixed-interior M1 conductor interval by separating a globally BV principal symbol from a sharp pointwise transition remainder, survives a clean blind rederivation and hostile source audit, and narrows the residual from J^(32/45)<C<=J to J^(13/18)<C<=J without overclaiming the full theorem or exponent."
+  }
+}

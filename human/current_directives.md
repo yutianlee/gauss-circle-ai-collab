@@ -8,14 +8,21 @@ Historical A1--A4 artifact names and owner labels remain provenance only. They d
 
 ## Active research directive
 
-Run the `m9-weighted-mass-adjudication` pilot before changing the accepted $X^{3/8}$ split. Keep separate:
+Adopt `strategy/conductor_0816_full_proof_strategy.md`.  Rounds 77--79
+have certified the complete M2 actual-symbol normal form, closed the
+primitive-square family, proved the sharp nonsquare divisor-strip
+incidence theorem, removed exact nonsquare centers, and closed the
+positive region \(AJD^3\ll L^3\). The next mathematical objective is
+the complete-coefficient signed strict-metric sum on
+\(AJD^3\gg L^3\).
 
-- weight-blind tuple count;
-- absolute $\beta$-weighted mass;
-- true signed mass retaining $\chi_4$;
-- unsigned comparison mass.
-
-Require a statement-only derivation, a hostile lower-bound audit, and a locally reproducible finite diagnostic. Review normalization, tuple counting, coefficient summation, and $D=X^{1/2}$ uniformity separately. A rigorous no-go theorem counts as progress. Do not promote M9 or M9-M2 from this campaign unless a later campaign closes all stated dependencies.
+Do not replace metric windows by exact divisors, repeat a positive
+incidence classification, or take absolute values over the primitive-ray
+union. The ordinary \(1/R\) density and its centered discrepancy must be
+treated together.  Keep the M1 residual upper-conductor
+problem as a separate mandatory branch with exact theorem-input maps.
+Do not claim M9, M9-M1, M9-M2, endpoint uniformity, or a new global
+exponent until their graph dependencies close.
 
 ## Standing evidence rules
 

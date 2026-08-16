@@ -1,31 +1,51 @@
-# Current Research Round 76
+# Current Research Round 89
 
-Campaign: m9-m2-top-endpoint-signed-offset-energy — Attack the alternating even-offset top-M2 energy
+Campaign: m9-m1-bad-prime-period-fibre-energy — Classify and estimate bad-prime and nonunit M1 period fibres
 
-Status: complete.
+Status: active. Maximum concurrent subagents: 3.
 
-Starting graph SHA-256: baa5fc13ca3682ae561c44cd1b20e94728c117378545f586ff3224c16a8eeb6b.
+Starting graph SHA-256: b279e9e671b54b43855bdfc90727e36e808eb539578dac0faeb115394789f674.
 
-Resulting graph SHA-256: 4d6c10b15f104c1983ffc6ac7d29fe06c0dfbb9033665c929427830bb98138dd.
+## Frozen question
 
-## Decision
+Can the remaining small-prime, nonunit-\(K\), and full \(2\)-adic
+reciprocal-period fibres in the exact hard M1 cross-group operator be
+classified and bounded target-safely?
 
-Promote the exact odd-lift parity and corrected reciprocal-resonance
-obstruction.  Reject the step-one resonance criterion.  Retain the
-complete energy, top cone, M9-M2, M9, and global exponent open.
-
-## Exact survivor
-
-After target-safe endpoint-collar extraction, the odd gcd-lift sum is
-governed by
+The target is a nonempty complete-fibre package bounded by
 
 \[
- \left\|{X(\sqrt b-\sqrt a)^2\over2k}\right\|
- \lesssim G_{a,b}^{-1}.
+ X^\varepsilon {D\over B}J^{14/5},
 \]
 
-The next round must first certify the complete collar-extracted
-actual-symbol normal form and step-two variation, then attack this
-coefficient-weighted resonant union without absolute values over
-primitive pairs or reciprocal modes.
+preferably through directed in/out degree \(\Delta\leq\rho_*^2\), or an
+exact smaller actual-symbol survivor.
+
+## Exact inherited state
+
+- Round 87 owns every full-prime-power same-group package at \(U=D\).
+- Round 88 owns every coarse shell \(R_*\leq\rho_*\) and every subsequent
+  good-prime reciprocal-period fibre
+  \(\mathfrak a\geq M^2/\rho_*^2\).
+- The hard residual has \(R_*>\rho_*\) and
+  \(\mathfrak a<M^2/\rho_*^2\).
+- Normalized rows, the centered Fejer kernel, the global \(u=0\) owner,
+  the actual fourfold symbol, and \(Q^{-5/12}\) are frozen.
+
+## Task briefs
+
+- blind_bad_prime_fibre_rederivation (statement-only): rounds/codex-managed/m9-m1-bad-prime-period-fibre-energy/briefs/blind_bad_prime_fibre_rederivation.md
+- bad_prime_period_graph_attack (discovery): rounds/codex-managed/m9-m1-bad-prime-period-fibre-energy/briefs/bad_prime_period_graph_attack.md
+- bad_prime_hostile_source_audit (hostile/source): rounds/codex-managed/m9-m1-bad-prime-period-fibre-energy/briefs/bad_prime_hostile_source_audit.md
+
+## Completion gates
+
+- Classify the complete masks at \(p=2,3,5,7\) and for \(p\mid K\).
+- Preserve the \(p^{2j}\) descent and prove both directed degrees.
+- Keep all earlier owners exactly once.
+- Retain the actual physical symbol before inequalities.
+- Prove a target-safe package or an exact actual-symbol no-go.
+
+No later round is designed until the three reports are closed and
+adjudicated.
 

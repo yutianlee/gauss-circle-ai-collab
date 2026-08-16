@@ -1,7 +1,9 @@
-# Beta off-diagonal product-cell kernel
+# Accepted beta off-diagonal product-cell kernel
 
-Status: candidate proof kernel. Acceptance is recorded only in
-state/proof_obligations.yml.
+Status: `proved_internal` as
+`M9-M1-beta-off-diagonal-smooth-product-cell-bound` in
+`state/proof_obligations.yml`. This file is a readable proof kernel; the
+graph remains authoritative.
 
 ## Statement
 

@@ -1,0 +1,134 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 88,
+    "round_type": "m9_m1_cross_group_period_depth_dispersion",
+    "campaign_id": "m9-m1-cross-group-period-depth-dispersion",
+    "title": "Estimate the cross-group deep M1 period-depth correlation",
+    "status": "closed",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "e2346245d09d22ba66e17037ad57e85cf56808d9ca70526657f78d94e52809be",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 80,
+      "numerical_experimental_maximum_percent": 20,
+      "planned_numerical_percent": 0,
+      "literature_policy": "Audit only literal current theorems for prime-power rational traces, tensor-product trace correlations, and varying-modulus Kloosterman dispersion. Preserve the actual cross-group symbol, U=D, and Q^(-5/12)."
+    },
+    "target_obligations": [
+      "M9-M1-deep-full-factor-same-group-fejer-bound",
+      "M9-M1-residual-upper-conductor-offdiagonal-reduction",
+      "M9-M1"
+    ],
+    "frozen_target": {
+      "question": "Can the exact cross-group deep M1 Fejer off-diagonal be bounded target-safely after separating partial-period lower-conductor returns from genuinely aperiodic local traces?",
+      "reference_formula": "Bound G_cross(D)=sum_(b asymp B) int |D_D(theta)|^2 sum_((S,alpha)!=(S',alpha'),u!=0) H_(b,S,alpha)(theta)conj(H_(b,S',alpha')(theta)) dtheta by X^epsilon(D/B)J^(14/5), or isolate a strictly smaller exact signed survivor.",
+      "quantities": [
+        "J=X^(1/2), Q=J^(2/5), T=J^(3/5), B=C/T",
+        "J^(13/18)<C<=J^(3/4)",
+        "D1=floor(J^(87/140)), E*=floor(Q^2J^(-1/20))",
+        "D1<|d|<Delta_b-E*, Delta_b asymp Q^2",
+        "normalized row M^(-1)sum I_b(n)e_M(nx)e(n theta) of size TQ^(-5/24)",
+        "Fejer shift U=D; global u=0 diagonal owned once",
+        "same-group full-factor package already removed in Round 87"
+      ],
+      "scope": [
+        "transition-flattened smooth nonaxial M1 principal row only",
+        "all three classes, both signs, reflected orientations, and exact deep support",
+        "cross-group u!=0 terms only after one-count global diagonal ownership",
+        "partial prime-power periods, bad primes, nonunit K, and full 2-adic ledger",
+        "actual fourfold stationary symbol and Ramanujan centering",
+        "no C>J^(3/4), transitions, axes, cone edges, other sectors, full M9-M1, M9, or exponent claim"
+      ]
+    },
+    "completion_criteria": [
+      "Retain normalized physical rows, U=D, Fejer normalization, and Q^(-5/12).",
+      "Prove the exact full-prime-power period-depth and 2-adic routing before estimating.",
+      "Keep the global u=0 diagonal and Round-87 same-group package one-count.",
+      "Estimate aperiodic and partial-period cross-group pieces against the actual symbol before absolute values.",
+      "Prove the target, a nonempty target-safe subaggregate with exact residual, or a rigorous actual-symbol no-go.",
+      "Audit negative differences, modulus multiples, Ramanujan terms, support, perfect powers, self-return, and current sources.",
+      "Complete clean statement-only, constructive, and hostile/source gates."
+    ],
+    "controls": [
+      "external_normalization",
+      "full_factor_group_ownership",
+      "global_diagonal_one_count",
+      "fejer_U_equals_D",
+      "physical_row_energy_factor",
+      "partial_period_depth",
+      "bad_prime_and_2adic",
+      "actual_fourfold_stationary_symbol",
+      "aperiodic_trace_operator",
+      "negative_and_modulus_multiple_differences",
+      "ramanujan_cross_and_square_terms",
+      "deep_support_and_errors",
+      "integer_and_perfect_power_resonance",
+      "complete_transform_self_return",
+      "source_hypothesis_map",
+      "downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "blind_cross_group_tensor_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "completed_clean_with_supplemental_certification",
+        "context_files": ["rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/derivation_packet.md"],
+        "report_path": "rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/reports/blind_cross_group_tensor_rederivation.md"
+      },
+      {
+        "id": "period_depth_tensor_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "completed_clean",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0816_full_proof_strategy.md",
+          "rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/derivation_packet.md",
+          "rounds/codex-managed/m9-m1-deep-exceptional-strata-dispersion/synthesis.md",
+          "rounds/codex-managed/m9-m1-deep-exceptional-strata-dispersion/reports/aligned_mode_aggregate_attack.md",
+          "rounds/codex-managed/m9-m1-deep-exceptional-strata-dispersion/reviews/conductor_round87_normalization.md",
+          "rounds/codex-managed/m9-m1-deep-exceptional-strata-dispersion/reviews/conductor_round87_crt_fejer.md"
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/reports/period_depth_tensor_attack.md"
+      },
+      {
+        "id": "cross_group_hostile_source_audit",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "status": "completed_clean",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/derivation_packet.md",
+          "rounds/codex-managed/m9-m1-deep-exceptional-strata-dispersion/synthesis.md",
+          "rounds/codex-managed/m9-m1-deep-exceptional-strata-dispersion/reports/exceptional_trace_hostile_source_audit.md",
+          "rounds/codex-managed/m9-m1-deep-exceptional-strata-dispersion/reviews/conductor_round87_crt_fejer.md",
+          "rounds/codex-managed/m9-m1-interior-four-kloosterman-ambiguity/reports/four_kloosterman_hostile_source_audit.md"
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/reports/cross_group_hostile_source_audit.md"
+      }
+    ],
+    "review_seams": [
+      {"id": "normalization_and_one_count", "requirement": "Keep the normalized rows, U=D, global u=0 diagonal, and Round-87 same-group package exactly once."},
+      {"id": "period_depth_arithmetic", "requirement": "Prove full-prime-power periods, bad-prime effects, and the 2-part without a squarefree surrogate."},
+      {"id": "actual_symbol_and_energy", "requirement": "Estimate only after the cross-group object carries the actual fourfold symbol and Q^(-5/12)."},
+      {"id": "self_return_and_sources", "requirement": "Audit lower-conductor returns, perfect powers, and literal current theorem hypotheses."},
+      {"id": "scope", "requirement": "Keep upper conductors, transitions, axes, cone edges, other sectors, M2, assembly, and the exponent separate."}
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "e2346245d09d22ba66e17037ad57e85cf56808d9ca70526657f78d94e52809be",
+    "generated_at": "2026-08-17T00:40:00+08:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

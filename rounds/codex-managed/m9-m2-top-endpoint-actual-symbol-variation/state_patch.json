@@ -1,0 +1,123 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-top-endpoint-actual-symbol-variation",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Complete collar-extracted top-M2 actual-symbol normal form and odd-lift variation",
+        "status": "proved_internal",
+        "statement_tex": "Let J=sqrt X and 1<=L<=H<=J^(1/2). For the accepted exact normalized top symbol with fixed smooth eta_L and W, accepted C1 Phi, exact q_X, floors, stars, and finite odd support, remove one fixed smooth physical collar at each m-endpoint. Interpret pre-collar finite Poisson symmetrically. For h=ga, s=gb with primitive odd a<b<4a, delta=sqrt(b)-sqrt(a), Lambda=X delta^2/2, and J delta/(2 sqrt(a))<k<J delta/sqrt(b), retain the complete centred integral B^circ_(a,b,k)(g)=g int_(b/4)^a A^circ_(ga,gb)(gu)e(g[-J delta sqrt(u)+ku+X delta^2/(4k)])du. Then the exact positive-offset energy satisfies O_L=2 Re sum_(a,b,k)e(alpha) sum_(g=2n+1 in G_(a,b)) B^circ_(a,b,k)(g)e(-n Lambda/k)+O_(M,eta,Phi,W)(L^2 log(2+L)), where alpha=(b-a)/4-X delta^2/(4k). The error owns both full lattice endpoint samples, both removed collars, zero and positive modes, equality modes, and all negative nonstationary modes; retained stationary and transition modes have no expansion error. Uniformly through saddle entry and exit, |B^circ(g)|+g|d_g B^circ(g)| << J delta sqrt(G)/k^(3/2), G asymp L/b, hence its step-two endpoint-plus-total-variation has the same bound. The proof uses the exact factorization A_(ga,gb)(gu)=g^(-3)E_(a,b)(g)P_(a,b)(u), with P independent of g and E'(g)<<G^(-1), and the exact centred square. It is false for arbitrary bounded lift coefficients and proves no resonance-union or energy estimate.",
+        "dependencies": [
+          "M9-M2-top-endpoint-transposed-character-energy",
+          "M9-M2-top-endpoint-transform",
+          "M9-M2-top-endpoint-odd-lift-resonance-obstruction",
+          "H4-Phi-regularity"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-top-endpoint-actual-symbol-variation/reports/blind_actual_symbol_rederivation.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-actual-symbol-variation/reports/centered_integral_variation_attack.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-actual-symbol-variation/reports/actual_symbol_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-actual-symbol-variation/reviews/conductor_round77_adjudication.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-actual-symbol-variation/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Bound the coefficient-weighted primitive-pair/reciprocal-mode union after step-two Abel, retaining exact resonances and the actual complete-integral coefficient."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "dependencies_added": [
+          "M9-M2-top-endpoint-actual-symbol-variation"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-top-endpoint-actual-symbol-variation/reviews/conductor_round77_adjudication.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-top-endpoint-actual-symbol-variation/synthesis.md"
+          ]
+        },
+        "next_action": "Bound the coefficient-weighted primitive-pair/reciprocal-mode survivor produced by the accepted complete actual-symbol normal form. Use the step-two distance ||X(sqrt(b)-sqrt(a))^2/(2k)|| and do not take absolute values over the full union."
+      },
+      {
+        "id": "M9-M2-top-endpoint-transposed-character-energy",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-top-endpoint-actual-symbol-variation/reviews/conductor_round77_adjudication.md"
+          ]
+        },
+        "next_action": "Use the accepted complete centred-integral and variation lemma. The remaining task is the signed coefficient-weighted reciprocal resonance union, not another radial transform."
+      },
+      {
+        "id": "M9-M2-top-endpoint-odd-lift-resonance-obstruction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-top-endpoint-actual-symbol-variation/reports/blind_actual_symbol_rederivation.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-actual-symbol-variation/reports/actual_symbol_hostile_audit.md"
+          ]
+        },
+        "next_action": "Use the promoted actual-symbol variation in discrete Abel and attack the exact coefficient-weighted resonance union; retain the coherent (81,121) family as a hostile control."
+      },
+      {
+        "id": "M9-M2",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-top-endpoint-actual-symbol-variation/synthesis.md"
+          ]
+        },
+        "next_action": "The hard top block now has a certified complete actual-symbol odd-lift interface. Prove the remaining weighted primitive-pair/reciprocal-mode energy bound; other M2 packets remain separately owned."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round77-unordered-precollar-Poisson-series-is-absolute",
+        "reason": "With nonzero finite-interval endpoint values, the Poisson integral series requires symmetric or distributional summation. Absolute convergence holds only after the fixed collars make the amplitude smoothly compactly supported."
+      },
+      {
+        "id": "Round77-arbitrary-bounded-lift-coefficients-have-actual-symbol-variation",
+        "reason": "Arbitrary alternating or phase-conjugating lift coefficients can make the step-two variation comparable to the sum of pointwise masses. The theorem depends on the exact g-homogeneous factorization, slow eta/Phi factor, and g-independent W-ratio profile."
+      },
+      {
+        "id": "Round77-leading-stationary-term-controls-complete-moving-collar-variation",
+        "reason": "A frozen leading stationary value does not control saddle entry, exit, lower corrections, or moving collars. The valid proof retains the complete centred integral and differentiates it through the exact quadratic identity."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "reason": "The exact coefficient-weighted reciprocal resonance union is still unbounded, so the target top-cone estimate is not proved."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "The hard top block remains open after the local actual-symbol interface is promoted."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "Round 77 concerns only the M2 top-endpoint energy."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1 and M9-M2 remain open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The local normal form and variation theorem do not improve the global exponent."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 8,
+    "idea_quality_score": 9,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "The round converts a candidate representation into an independently certified exact actual-symbol lemma, closes endpoint and moving-collar seams, and isolates the coefficient-weighted resonance union as the first remaining M2 obstruction, without overstating any energy or exponent consequence."
+  }
+}

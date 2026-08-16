@@ -24,15 +24,16 @@ Li--Yang uses small-cap decoupling for a truncated cone in its first-spacing ana
 
 **Control warning.** A theorem uniform over arbitrary bounded or unit-modulus coefficients will normally be insensitive to the special $\chi_4(h)$ sign. Such a theorem may help a global moment or spacing bound, but cannot by itself supply the sign-sensitive pointwise bridge if the corresponding unsigned control is known to be false. Any proposed decoupling input must be tested against `coefficient-adversary` and `signed-vs-unsigned`.
 
-## 3. Bourgain--Watt as a structural reference
+## 3. Bourgain--Watt is withdrawn
 
-Bourgain and Watt revisit how exponential-sum estimates feed the zeta mean square, circle problem, and divisor problem:
+Bourgain and Watt's paper is retained only as withdrawn method history:
 
 - [Bourgain--Watt, *Mean square of zeta function, circle problem and divisor problem revisited*](https://arxiv.org/abs/1709.04340)
 
-This is relevant to the global-statistics side of the project. It does not remove the need to prove that the project's fixed reciprocal sums satisfy the paper's normalization and parameter ranges.
-
-**Campaign implication.** Treat Bourgain--Watt/Li--Yang as a candidate exported interface: exact transformed sum plus a parameter-feasibility certificate. Review the transformation and theorem application as different seams.
+The authors withdrew version 2 on 2023-07-16 and stated that Theorems
+1--3 lose theorem status because of gaps or faults in the relevant
+propositions.  It may not be used as a theorem dependency.  Li--Yang must
+be audited independently through its own primary source.
 
 ## 4. Recent square-root moment work
 
@@ -46,10 +47,17 @@ The phase and parameter geometry differ from M9, and this recent preprint is not
 
 ## 5. Ranked strategy after the active campaign
 
-1. Finish the raw-count versus $\beta$-weighted-mass normalization adjudication.
-2. Freeze a smallest sign-sensitive pointwise bridge for M9-M2 and attack it directly.
-3. In parallel, construct an exact Li--Yang/Bourgain--Watt input map; stop immediately if a phase, coefficient, smoothness, or parameter condition fails.
-4. Consider small-cap decoupling only after a valid transformed frequency geometry is written. Test whether the result proves too much for arbitrary coefficients.
-5. Keep global moment estimates and pointwise upgrade as separate proof obligations.
+1. Certify the complete collar-extracted actual-symbol odd-lift
+   interface for the hard top-M2 energy.
+2. Separate structured from generic reciprocal resonances, then seek a
+   genuinely signed primitive-ray energy estimate.
+3. For M1, construct exact input maps to live bilinear Kloosterman
+   sources; stop at the first failed phase, coefficient, smoothness, or
+   range hypothesis.
+4. Consider small-cap decoupling only after a valid transformed frequency
+   geometry is written. Test whether the result proves too much for
+   arbitrary coefficients.
+5. Keep global moment estimates and pointwise upgrade as separate proof
+   obligations. Never use the withdrawn Bourgain--Watt claims as input.
 
 This ranking is analytical. Numerical work may test finite normalizations or falsify a candidate mapping, but it should remain within the campaign's 20% cap.

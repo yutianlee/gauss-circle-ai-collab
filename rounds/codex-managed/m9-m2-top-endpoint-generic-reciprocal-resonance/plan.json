@@ -1,0 +1,235 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 79,
+    "round_type": "m9_m2_top_endpoint_generic_reciprocal_resonance",
+    "campaign_id": "m9-m2-top-endpoint-generic-reciprocal-resonance",
+    "title": "Classify the residual nonsquare reciprocal resonances",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "5e5c01114e46fcb3079a6e1427f8155421f7ec9a45c9599cbd8aa8c94cf0bac2",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 80,
+      "numerical_experimental_maximum_percent": 20,
+      "planned_numerical_percent": 5,
+      "literature_policy": "Primary-source searches may be used for radical spacing, determinant/incidence, or large-sieve comparisons, but no theorem is imported without an exact variable, range, weight, and endpoint map."
+    },
+    "target_obligations": [
+      "M9-M2-top-endpoint-signed-cone",
+      "M9-M2-top-endpoint-transposed-character-energy",
+      "M9-M2"
+    ],
+    "frozen_target": {
+      "question": "After removing the proved primitive-square family, does high multiplicity in the complete actual-symbol reciprocal-resonance set force a further explicit algebraic structure, or can one prove a quantitative generic incidence estimate strong enough to feed the next signed-energy round?",
+      "reference_formula": "For primitive odd coprime a<b<4a with ab nonsquare, delta=sqrt(b)-sqrt(a), Lambda=X delta^2/2, J delta/(2sqrt(a))<k<J delta/sqrt(b), and G asymp L/b, classify ||Lambda/k|| <= 1/R for dyadic 1<=R<=N_{a,b}<=G while retaining the complete Round-77 coefficient.",
+      "quantities": [
+        "The exact residual set excludes only ab square, equivalently the graph-accepted primitive-square/common-squarefree family.",
+        "The metric window is equivalent to an integer ell satisfying |Lambda-ell k|<=k/R; exact divisibility is only one special case.",
+        "A useful inverse theorem must be quantitative on dyadic a, b-a, k, G, and R blocks and must state how its output can enter a signed primitive-ray energy estimate.",
+        "An incidence count alone is not the final M2 estimate and may not take absolute values over the full primitive-ray union."
+      ],
+      "scope": [
+        "complete Round-77 centred-integral coefficient and lift support",
+        "primitive odd coprime nonsquare rays",
+        "exact and metric reciprocal resonances",
+        "near-square, perfect-power, and rational-approximation clusters",
+        "blockwise inverse/incidence geometry",
+        "separation from the later signed-energy estimate"
+      ]
+    },
+    "completion_criteria": [
+      "Derive the exact dyadic Abel-to-metric-window and nearest-integer formulation with all ranges and parities.",
+      "Prove a quantitative inverse/incidence theorem for nonsquare rays, or give a rigorous actual-range no-go/counterfamily showing the proposed inverse principle is false or too weak.",
+      "Identify every structured enlargement forced by high multiplicity and separate it from the already closed square family.",
+      "Carry any proposed incidence bound through the accepted coefficient scale far enough to show exactly what the next signed-energy theorem would still require.",
+      "Test near-square, fourth/perfect-power, one-point k, metric-resonance, endpoint, and adversarial-coefficient controls.",
+      "Complete a clean statement-only rederivation, an analytic attack, and a hostile/source audit.",
+      "Do not promote the full signed cone, M9-M2, M9, endpoint uniformity, or the exponent unless the exact signed energy is unexpectedly proved."
+    ],
+    "controls": [
+      "external_normalization",
+      "residual_nonsquare_ownership",
+      "primitive_coprime_parity",
+      "exact_k_and_lift_support",
+      "dyadic_abel_metric_window",
+      "nearest_integer_orientation",
+      "square_family_excision",
+      "near_square_nonsquare",
+      "perfect_power_and_fourth_power",
+      "exact_vs_metric_resonance",
+      "complete_actual_coefficient",
+      "coefficient_adversary",
+      "rank_one_self_return",
+      "incidence_to_energy_capacity",
+      "endpoints_stars_and_collars",
+      "source_hypothesis_map",
+      "downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "blind_nonsquare_geometry_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "completed_clean",
+        "target": "Independently derive the exact nonsquare resonance geometry and determine the strongest lawful inverse/incidence statement or no-go available from the self-contained packet.",
+        "context_files": [
+          "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/derivation_packet.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/briefs/blind_nonsquare_geometry_rederivation.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "all strategy files",
+          "all Round-76 through Round-78 reports and reviews",
+          "all sibling Round-79 reports",
+          "all source cards"
+        ],
+        "required_controls": [
+          "external_normalization",
+          "residual_nonsquare_ownership",
+          "primitive_coprime_parity",
+          "exact_k_and_lift_support",
+          "dyadic_abel_metric_window",
+          "nearest_integer_orientation",
+          "square_family_excision",
+          "near_square_nonsquare",
+          "perfect_power_and_fourth_power",
+          "exact_vs_metric_resonance",
+          "complete_actual_coefficient",
+          "coefficient_adversary",
+          "rank_one_self_return",
+          "incidence_to_energy_capacity",
+          "endpoints_stars_and_collars",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "One seven-section statement-only report at the assigned path."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/reports/blind_nonsquare_geometry_rederivation.md"
+      },
+      {
+        "id": "nonsquare_reciprocal_incidence_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "completed",
+        "target": "Attack the exact residual nonsquare metric-resonance set analytically; prove the strongest quantitative inverse/incidence theorem and map it to the actual coefficient-weighted signed-energy interface.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/derivation_packet.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/briefs/nonsquare_reciprocal_incidence_attack.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-actual-symbol-variation/reviews/conductor_round77_adjudication.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/reviews/conductor_round78_adjudication.md"
+        ],
+        "excluded_context": [
+          "all sibling Round-79 reports"
+        ],
+        "required_controls": [
+          "external_normalization",
+          "residual_nonsquare_ownership",
+          "primitive_coprime_parity",
+          "exact_k_and_lift_support",
+          "dyadic_abel_metric_window",
+          "nearest_integer_orientation",
+          "square_family_excision",
+          "near_square_nonsquare",
+          "perfect_power_and_fourth_power",
+          "exact_vs_metric_resonance",
+          "complete_actual_coefficient",
+          "coefficient_adversary",
+          "rank_one_self_return",
+          "incidence_to_energy_capacity",
+          "endpoints_stars_and_collars",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "One seven-section analytic report at the assigned path."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/reports/nonsquare_reciprocal_incidence_attack.md"
+      },
+      {
+        "id": "nonsquare_resonance_hostile_source_audit",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "status": "completed_clean",
+        "target": "Attempt to falsify generic inverse principles using actual near-square, perfect-power, and metric families, and audit exact applicability of primary radical-spacing, incidence, determinant, or large-sieve theorems.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/derivation_packet.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/briefs/nonsquare_resonance_hostile_source_audit.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-signed-offset-energy/reviews/conductor_round76_adjudication.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/reviews/conductor_round78_adjudication.md"
+        ],
+        "excluded_context": [
+          "all sibling Round-79 reports"
+        ],
+        "required_controls": [
+          "external_normalization",
+          "residual_nonsquare_ownership",
+          "primitive_coprime_parity",
+          "exact_k_and_lift_support",
+          "dyadic_abel_metric_window",
+          "nearest_integer_orientation",
+          "square_family_excision",
+          "near_square_nonsquare",
+          "perfect_power_and_fourth_power",
+          "exact_vs_metric_resonance",
+          "complete_actual_coefficient",
+          "coefficient_adversary",
+          "rank_one_self_return",
+          "incidence_to_energy_capacity",
+          "endpoints_stars_and_collars",
+          "source_hypothesis_map",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "One seven-section hostile/source report at the assigned path, with exact links for every primary source used."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/reports/nonsquare_resonance_hostile_source_audit.md"
+      }
+    ],
+    "live_notes": [
+      {
+        "timestamp": "2026-08-16T14:07:24+08:00",
+        "author": "Codex conductor",
+        "note": "Round 78 is closed and the primitive-square family is graph-accepted. Round 79 freezes only the residual nonsquare inverse/incidence geometry; the later signed-energy theorem remains a separate gate."
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "exact_geometry",
+        "requirement": "Check the dyadic metric window, nearest integer, ranges, parity, and square-family excision."
+      },
+      {
+        "id": "inverse_multiplicity",
+        "requirement": "Check every high-multiplicity classification and its quantitative losses."
+      },
+      {
+        "id": "hostile_families",
+        "requirement": "Test near-square, perfect-power, exact, metric, endpoint, and one-point ranges."
+      },
+      {
+        "id": "actual_coefficient",
+        "requirement": "Retain the complete coefficient and distinguish a counting input from the signed energy."
+      },
+      {
+        "id": "source_applicability",
+        "requirement": "Audit exact theorem hypotheses and exclude structural analogies without a complete map."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "5e5c01114e46fcb3079a6e1427f8155421f7ec9a45c9599cbd8aa8c94cf0bac2",
+    "generated_at": "2026-08-16T14:07:24+08:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

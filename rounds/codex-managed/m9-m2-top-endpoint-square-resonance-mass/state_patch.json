@@ -1,0 +1,157 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-top-endpoint-square-ray-signed-cancellation",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Complete actual-symbol signed cancellation on primitive square rays",
+        "status": "proved_internal",
+        "statement_tex": "Let J=sqrt X, 1<=L<=H<=J^(1/2), and use the accepted complete collar-extracted top-M2 primitive-ray coefficient. Restrict to primitive rays with ab a square, equivalently a=s^2, b=t^2, t=s+2u, with s,t odd, (s,u)=1, and 1<=u<s/2. For each actual odd lift g and reciprocal interval Ju/s<k<2Ju/t, the exact combined phase is e(-gXu^2/k). Put K=Ju/s and B_g(k)=B^circ_(s^2,t^2,k)(g). The complete smooth-collar coefficient satisfies sup_k |B_g(k)|+Var_k B_g(k) <<_epsilon X^epsilon sqrt(g t^2/K), including both collar crossings, floors, stars, q_X, and the exact W and normalized eta/Phi profiles. Since |d_k^2(-gXu^2/k)| is comparable to g t^2/K and is at most one, weighted second-derivative summation gives sum_k B_g(k)e(-gXu^2/k) <<_epsilon (L+1)X^epsilon for every fixed (s,u,g). The number of actual lifted square triples is O(L log(2+L)); hence the exact signed square-family contribution is O_epsilon(L^2 X^epsilon). This includes exact and metric reciprocal resonances and uses no cancellation between distinct lifts or rays. It proves no nonsquare, full-energy, M9-M2, endpoint, or exponent estimate.",
+        "dependencies": [
+          "M9-M2-top-endpoint-transposed-character-energy",
+          "M9-M2-top-endpoint-odd-lift-resonance-obstruction",
+          "M9-M2-top-endpoint-actual-symbol-variation",
+          "H4-Phi-regularity"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/reports/blind_square_resonance_rederivation.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/reports/square_resonance_mass_attack.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/reports/square_resonance_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/reviews/conductor_round78_adjudication.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Remove this exact structured family from the primitive-ray survivor and prove a quantitative inverse or incidence theorem for the remaining nonsquare reciprocal-resonance set."
+      },
+      {
+        "id": "M9-M2-top-endpoint-square-Abel-majorant-obstruction",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Sharp capacity obstruction to absolute Abel summation on square rays",
+        "status": "proved_internal",
+        "statement_tex": "For the standard fixed top-M2 dyadic support with a positive interior terminal box, the positive square-ray Abel majorant M_L^square defined by the Round-77 step-two variation bound has capacity asymp_(X^epsilon) sqrt(J)L^(3/2). The upper bound follows from min(N,(2||theta||)^(-1))<=N<<G, G<<L/t^2, and the exact reciprocal interval length. For the lower bound, a terminal g=1 box contains >>L coprime odd (s,u) pairs with s,u,s-2u asymp sqrt L; each owns N,G asymp1, a k-interval of length asymp J, and positive mass >>sqrt(JL). Already one fixed populated (9,11) ray along X=T^4 gives >>X^(1/4) at fixed L. Therefore M_L^square<<L^2X^epsilon is false. This is a route obstruction only: the actual signed square sum is target-sized by cancellation in k.",
+        "dependencies": [
+          "M9-M2-top-endpoint-actual-symbol-variation",
+          "M9-M2-top-endpoint-odd-lift-resonance-obstruction"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/reports/blind_square_resonance_rederivation.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/reports/square_resonance_mass_attack.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/reports/square_resonance_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/reviews/conductor_round78_adjudication.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Do not take absolute values over reciprocal modes. Retain the complete k-phase and sampled coefficient variation in every later structured or generic primitive-ray estimate."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "dependencies_added": [
+          "M9-M2-top-endpoint-square-ray-signed-cancellation"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/reviews/conductor_round78_adjudication.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/reports/square_resonance_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/synthesis.md"
+          ]
+        },
+        "next_action": "The exact square/common-squarefree family is target-safe. Prove a reciprocal-resonance inverse or incidence theorem for the remaining nonsquare primitive rays, then close their signed energy without absolute summation over rays or modes."
+      },
+      {
+        "id": "M9-M2-top-endpoint-transposed-character-energy",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/reviews/conductor_round78_adjudication.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/synthesis.md"
+          ]
+        },
+        "next_action": "Remove the proved square-ray contribution. The first remaining energy problem is the complete actual-symbol nonsquare reciprocal-resonance union."
+      },
+      {
+        "id": "M9-M2-top-endpoint-odd-lift-resonance-obstruction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/reports/blind_square_resonance_rederivation.md",
+            "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/reports/square_resonance_hostile_audit.md"
+          ]
+        },
+        "next_action": "Retain the coherent fourth-power family as a control, but use the proved reciprocal-mode cancellation for exact square rays. Analyze only the residual nonsquare resonance set."
+      },
+      {
+        "id": "M9-M2",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/synthesis.md"
+          ]
+        },
+        "next_action": "The complete actual-symbol square-ray subfamily of the hard top block is now closed. Prove the generic nonsquare primitive-ray energy; all other M2 packets and endpoint ownership remain separately required."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round78-square-ray-absolute-Abel-majorant-is-target-sized",
+        "reason": "The positive majorant has sharp capacity sqrt(J)L^(3/2) up to X^epsilon on the standard support, and already one fixed populated ray gives X^(1/4) at fixed L. Absolute reciprocal-mode summation loses the cancellation that proves the signed theorem."
+      },
+      {
+        "id": "Round78-pointwise-k-derivative-has-complete-BV-scale",
+        "reason": "At a fixed physical collar crossing, k|B_g'(k)| can exceed the complete coefficient size by a factor L. Only the total sampled k-variation is target-safe because the smooth collar parameter is traversed once."
+      },
+      {
+        "id": "Round78-collar-transition-modes-may-be-deleted-absolutely",
+        "reason": "A collar crossing lasts about K/L reciprocal modes; absolute deletion can cost sqrt(K/L) per lift. The valid proof retains the complete smooth-collar integral and controls its total variation."
+      },
+      {
+        "id": "Round78-exact-divisors-exhaust-square-ray-resonance",
+        "reason": "For general real X, the Abel window contains metric near-resonances not represented by exact divisors. The valid signed k-estimate includes the complete interval rather than classifying only exact centers."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "reason": "Only the exact square/common-squarefree subfamily is closed; generic nonsquare primitive rays remain unbounded."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "The full hard top energy and other M2 packets remain open."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "Round 78 concerns only a structured M2 subfamily and does not change the residual M1 upper-conductor corridor."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1 and M9-M2 remain open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "Closing a structured M2 subfamily does not improve the global exponent."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 9,
+    "idea_quality_score": 9,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "The round proves the first nontrivial structured subfamily of the exact top-M2 primitive-ray survivor by a complete-symbol k-variation theorem and direct reciprocal-mode cancellation, while sharply falsifying the corresponding absolute route and preserving every downstream scope boundary."
+  }
+}

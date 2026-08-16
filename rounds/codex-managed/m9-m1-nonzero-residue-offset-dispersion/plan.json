@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "round_index": 83,
+  "campaign_id": "m9-m1-nonzero-residue-offset-dispersion",
+  "title": "Exploit cancellation across the nonzero M1 residue offsets",
+  "status": "closed",
+  "starting_graph_sha256": "abbec651f0dc76e3e15408ce7fce76700aee01652d88db261d84f83815bdb112",
+  "max_concurrency": 3,
+  "objective": "Prove any fixed B-power saving in the coherent nonzero residue-offset actual-unit correlation, close the first band, or isolate a strictly smaller exact signed survivor.",
+  "tasks": [
+    "blind_offset_dispersion_rederivation",
+    "inverse_unit_offset_attack",
+    "offset_trace_source_hostile_audit"
+  ],
+  "completion_gates": [
+    "Exact residue-offset normalization and target",
+    "Odd inverse-unit identity and even local units",
+    "Same-residue removal and degenerate offsets",
+    "Actual-weight signed offset gain",
+    "Complete transform and self-return controls",
+    "Current primary-source applicability",
+    "Blind and hostile validation",
+    "Conductor adjudication"
+  ],
+  "task_statuses": {
+    "blind_offset_dispersion_rederivation": "completed_clean",
+    "inverse_unit_offset_attack": "completed_clean_after_normalization_correction",
+    "offset_trace_source_hostile_audit": "completed_clean"
+  },
+  "closing_assessment": {
+    "decision": "promote_all_class_dual_difference_reduction_without_B_gain",
+    "resulting_graph_sha256": "b744aa885442ec9be13913782471cf65a94cd794579f8c6a8fbb2854ce52e271",
+    "main_result": "All three local units reduce to ordinary inverse units after exact rescaling. The literal dual difference d=0 is target-safe, leaving a centred d!=0 Kloosterman-product correlation with the actual Fourier weights. No B-power gain, conductor extension, or exponent is proved."
+  }
+}

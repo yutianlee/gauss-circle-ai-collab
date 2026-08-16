@@ -1,0 +1,243 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 84,
+    "round_type": "m9_m1_centred_dual_difference_stationary_correlation",
+    "campaign_id": "m9-m1-centred-dual-difference-stationary-correlation",
+    "title": "Exploit the stationary phase across nonzero M1 dual differences",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "b744aa885442ec9be13913782471cf65a94cd794579f8c6a8fbb2854ce52e271",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 80,
+      "numerical_experimental_maximum_percent": 20,
+      "planned_numerical_percent": 0,
+      "literature_policy": "Audit current primary shifted-Kloosterman, Kloosterman-product, spectral large-sieve, and oscillatory correlation theorems at the literal M, n, and d scales. No analogy or involutive transform is a dependency."
+    },
+    "target_obligations": [
+      "M9-M1-nonzero-residue-offset-dual-difference-reduction",
+      "M9-M1-residual-upper-conductor-offdiagonal-reduction",
+      "M9-M1"
+    ],
+    "frozen_target": {
+      "question": "Can the exact stationary Fourier weights force any fixed B-power saving in the centred nonzero dual-difference Kloosterman-product correlation on J^(13/18)<C<=J^(3/4)?",
+      "reference_formula": "For M in {4b,2b,b}, prove M^(-2) sum_(b asymp B) sum_(d!=0) sum_n (S(n+d,K;M)conj(S(n,K;M))-c_M(d)) I_b(n+d)conj(I_b(n)) << X^epsilon J^2/T, or isolate a strictly smaller exact signed survivor.",
+      "quantities": [
+        "J=X^(1/2), Q=J^(2/5), T=J^(3/5), B=C/T",
+        "first residual band J^(13/18)<C<=J^(3/4)",
+        "g_kappa M_kappa=4b and A_(kappa,b)=(sqrt(bX)+sqrt(kappa k/b))^2",
+        "stationary n asymp Q^2",
+        "exact critical phase (sqrt(X)+sqrt(kappa k)/b)sqrt(|n|)",
+        "d=0 removed once; d!=0 with d=0 mod M retained",
+        "delta=1/2 reaches C=J^(56/75); delta=5/9 closes the band"
+      ],
+      "scope": [
+        "transition-flattened smooth nonaxial principal row only",
+        "all three exact local classes and both endpoint orientations",
+        "same-residue and literal d=0 slices already removed",
+        "pointwise transition error and axes separately owned",
+        "no C>J^(3/4), cone edge, other radial sector, full M9-M1, M9, or exponent claim"
+      ]
+    },
+    "completion_criteria": [
+      "Verify the exact stationary point, Gaussian, amplitude, support, and summed errors for I_b(n).",
+      "Retain the all-class Kloosterman product, Ramanujan subtraction, and M^(-2) normalization.",
+      "Treat small, mesoscopic, large, negative, and nonzero modulus-multiple differences.",
+      "Prove any fixed B^(-delta) gain or isolate a strictly smaller exact signed resonance survivor.",
+      "Audit prime-power gcd modes, integer derivative resonances, and perfect-power controls.",
+      "Audit current primary source hypotheses and every failed parameter map.",
+      "Complete a clean statement-only rederivation, a constructive attack, and a hostile/source audit.",
+      "Do not count stationary Poisson, full completion, or adjoint return as a gain."
+    ],
+    "controls": [
+      "external_normalization",
+      "all_class_local_units",
+      "poisson_measure",
+      "stationary_sign_phase_gaussian",
+      "saddle_support_and_tails",
+      "d_zero_removed_once",
+      "nonzero_modulus_multiples",
+      "ramanujan_subtraction",
+      "gcd_prime_power_modes",
+      "actual_symbol_derivatives",
+      "difference_range_and_edges",
+      "progression_integer_resonance",
+      "perfect_power_adversarial_controls",
+      "complete_transform_self_return",
+      "source_hypothesis_map",
+      "transition_axis_ownership",
+      "downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "blind_dual_difference_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "completed_clean",
+        "target": "Independently derive the complete stationary form of I_b(n), test signed cancellation across d!=0, and either prove a range gain or identify the first exact survivor without reading claimant or source material.",
+        "context_files": [
+          "rounds/codex-managed/m9-m1-centred-dual-difference-stationary-correlation/derivation_packet.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "all strategy files",
+          "all prior-round reports and reviews",
+          "all sibling Round-84 reports",
+          "all source cards and web sources"
+        ],
+        "required_controls": [
+          "external_normalization",
+          "all_class_local_units",
+          "poisson_measure",
+          "stationary_sign_phase_gaussian",
+          "saddle_support_and_tails",
+          "d_zero_removed_once",
+          "nonzero_modulus_multiples",
+          "ramanujan_subtraction",
+          "gcd_prime_power_modes",
+          "actual_symbol_derivatives",
+          "difference_range_and_edges",
+          "progression_integer_resonance",
+          "perfect_power_adversarial_controls",
+          "complete_transform_self_return",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "One seven-section statement-only report at the assigned path."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-centred-dual-difference-stationary-correlation/reports/blind_dual_difference_rederivation.md"
+      },
+      {
+        "id": "stationary_dual_difference_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "completed",
+        "target": "Derive a uniform all-class stationary expansion for I_b(n), then exploit the exact square-root difference phase on n=r+M ell to prove a B-aspect gain or remove a nontrivial family of d modes target-safely.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0816_full_proof_strategy.md",
+          "rounds/codex-managed/m9-m1-centred-dual-difference-stationary-correlation/derivation_packet.md",
+          "rounds/codex-managed/m9-m1-nonzero-residue-offset-dispersion/reviews/conductor_round83_dual_normalization.md",
+          "rounds/codex-managed/m9-m1-nonzero-residue-offset-dispersion/reports/inverse_unit_offset_attack.md",
+          "rounds/codex-managed/m9-m1-transition-flattened-kloosterman-energy/reviews/conductor_round82_residue_normalization.md",
+          "rounds/codex-managed/m9-m1-upper-conductor-transition-flattening/reviews/conductor_round81_transition_normalization.md"
+        ],
+        "excluded_context": [
+          "all sibling Round-84 reports"
+        ],
+        "required_controls": [
+          "external_normalization",
+          "all_class_local_units",
+          "poisson_measure",
+          "stationary_sign_phase_gaussian",
+          "saddle_support_and_tails",
+          "d_zero_removed_once",
+          "nonzero_modulus_multiples",
+          "ramanujan_subtraction",
+          "gcd_prime_power_modes",
+          "actual_symbol_derivatives",
+          "difference_range_and_edges",
+          "progression_integer_resonance",
+          "perfect_power_adversarial_controls",
+          "complete_transform_self_return",
+          "transition_axis_ownership",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "One seven-section analytic report at the assigned path."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-centred-dual-difference-stationary-correlation/reports/stationary_dual_difference_attack.md"
+      },
+      {
+        "id": "dual_difference_source_hostile_audit",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "status": "completed_clean",
+        "target": "Falsify stationary dual-difference cancellation or certify an exact current primary theorem map for the actual shifted Kloosterman product and square-root weight at M asymp B and n asymp Q^2.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m1-centred-dual-difference-stationary-correlation/derivation_packet.md",
+          "rounds/codex-managed/m9-m1-nonzero-residue-offset-dispersion/reviews/conductor_round83_dual_normalization.md",
+          "rounds/codex-managed/m9-m1-nonzero-residue-offset-dispersion/reports/offset_trace_source_hostile_audit.md",
+          "rounds/codex-managed/m9-m1-transition-flattened-kloosterman-energy/reports/kloosterman_energy_source_hostile_audit.md"
+        ],
+        "excluded_context": [
+          "all sibling Round-84 reports"
+        ],
+        "required_controls": [
+          "external_normalization",
+          "all_class_local_units",
+          "poisson_measure",
+          "stationary_sign_phase_gaussian",
+          "saddle_support_and_tails",
+          "d_zero_removed_once",
+          "nonzero_modulus_multiples",
+          "ramanujan_subtraction",
+          "gcd_prime_power_modes",
+          "actual_symbol_derivatives",
+          "difference_range_and_edges",
+          "progression_integer_resonance",
+          "perfect_power_adversarial_controls",
+          "complete_transform_self_return",
+          "source_hypothesis_map",
+          "transition_axis_ownership",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "One seven-section hostile/source report at the assigned path."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-centred-dual-difference-stationary-correlation/reports/dual_difference_source_hostile_audit.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "stationary_normalization",
+        "requirement": "Check the exact saddle, Gaussian, coefficient, phase identity, support, and aggregate errors in every class and orientation."
+      },
+      {
+        "id": "difference_ownership",
+        "requirement": "Check literal d=0 removal, nonzero modulus multiples, difference edges, and Ramanujan subtraction exactly once."
+      },
+      {
+        "id": "signed_resonance",
+        "requirement": "Check integer first-derivative resonances, gcd modes, actual weights, and the B-power ledger before absolute values."
+      },
+      {
+        "id": "source_and_self_return",
+        "requirement": "Check current primary-source parameters and prevent stationary or complete transforms from being counted as gains."
+      },
+      {
+        "id": "scope",
+        "requirement": "Keep transitions, axes, upper conductors, edges, and downstream obligations separate."
+      }
+    ],
+    "live_notes": [
+      {
+        "timestamp": "2026-08-16T17:55:00+08:00",
+        "author": "Codex conductor",
+        "note": "Round 83 removed the literal d=0 slice after exact all-class Poisson. Round 84 freezes the centred d!=0 correlation and tests the stationary square-root difference before any further complete transform."
+      },
+      {
+        "timestamp": "2026-08-16T18:35:00+08:00",
+        "author": "Codex conductor",
+        "note": "Closed with graph mutation. The scoped stationary lemma removes every 0<|d|<=floor(J^(17/30)); larger differences remain open and no conductor or exponent changes."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "b744aa885442ec9be13913782471cf65a94cd794579f8c6a8fbb2854ce52e271",
+    "generated_at": "2026-08-16T10:02:06.184651+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "round_index": 82,
+  "campaign_id": "m9-m1-transition-flattened-kloosterman-energy",
+  "title": "Exploit the transition-flattened chirped Kloosterman energy",
+  "status": "completed",
+  "starting_graph_sha256": "01333baabd40e4b9fb94aa16495fefdc5ec54e86fb56c43cada928ff55a9b835",
+  "max_concurrency": 3,
+  "objective": "Prove the smooth nonaxial M1 energy on J^(13/18)<C<=J^(3/4), prove a nonempty extension, or isolate a strictly smaller exact phase-sensitive Kloosterman correlation.",
+  "tasks": [
+    "blind_chirped_kloosterman_energy_rederivation",
+    "chirped_residue_energy_attack",
+    "kloosterman_energy_source_hostile_audit"
+  ],
+  "completion_gates": [
+    "Exact odd Poisson normalization and energy target",
+    "Even cusp/local-unit ledger",
+    "Ordinary-large-sieve factor-B deficit",
+    "Phase-sensitive signed off-diagonal",
+    "Stationary lower terms and errors",
+    "Current primary-source applicability",
+    "Blind and hostile validation",
+    "Conductor adjudication"
+  ]
+}

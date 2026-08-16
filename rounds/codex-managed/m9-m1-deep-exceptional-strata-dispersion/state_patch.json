@@ -1,0 +1,123 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-deep-full-factor-same-group-fejer-bound",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Full-prime-power same-group exceptional Fejer package is target-safe",
+        "status": "proved_internal",
+        "statement_tex": "Let J=sqrt(X), Q=J^(2/5), T=J^(3/5), B=C/T, J^(13/18)<C<=J^(3/4), and fix one compatible transition-flattened smooth nonaxial M1 principal component, sign, alias, reflected orientation, and dyadic interval in D_1<|d|<Delta_b-E_*. For the normalized physical row R_(b,x)(theta)=M^(-1)sum_n I_b(n)e_M(nx)e(n theta), ||R_(b,x)||_infinity<<_epsilon X^epsilon TQ^(-5/24). Factor M into full prime-power factors. Group each ordered unit pair x!=y by its unique nonempty active set S={q||M:x_q!=y_q} and its active local ordered-pair label alpha, and sum the inactive diagonal units into H_(b,S,alpha). Then the exact same-group Fejer package P_exc(D,U)=sum_(b asymp B)int_|D_U(theta)|^2 sum_(S,alpha)|Pi_(b,D)H_(b,S,alpha)(theta)|^2 dtheta satisfies P_exc(D,U)<<_epsilon X^epsilon U B^3T^4Q^(-5/6). With the packet-allowed choice U=floor(D) asymp D, B^4T^4Q^(-5/6)<=J^(8/3)=J^(14/5-2/15), so P_exc(D,D)<<_epsilon X^epsilon(D/B)J^(14/5), target-safe with J^(-2/15) slack. This is a symmetric signed Fejer estimate, not a per-shift absolute estimate. The grouping is exactly the one-count union of all mixtures in which, at every full prime-power factor including the full 2-part, the two physical ordered pairs are either both locally diagonal or locally identical. It includes the corrected nu>=2 prime-power family, the squarefree divisor-aligned family, all same-group stride-M returns, both signs, all three classes, the actual fourfold stationary symbol, and exact centering/Ramanujan ownership. The global u=0 diagonal remains owned once. The strict unresolved object is the cross-group off-diagonal with u!=0; it contains partial lower-conductor returns, bad-prime pieces, extra 2-adic periods, and aperiodic local traces. No estimate for that residual, the full deep target, a conductor extension, full M9-M1, M9, or the exponent is proved.",
+        "dependencies": [
+          "M9-M1-transition-flattened-residue-offset-reduction",
+          "M9-M1-centred-dual-difference-cubic-shell-bound"
+        ],
+        "implies": [
+          "M9-M1-residual-upper-conductor-offdiagonal-reduction"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-deep-exceptional-strata-dispersion/reports/aligned_mode_aggregate_attack.md",
+            "rounds/codex-managed/m9-m1-deep-exceptional-strata-dispersion/reports/blind_exceptional_strata_rederivation.md",
+            "rounds/codex-managed/m9-m1-deep-exceptional-strata-dispersion/reports/exceptional_trace_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m1-deep-exceptional-strata-dispersion/reviews/conductor_round87_normalization.md",
+            "rounds/codex-managed/m9-m1-deep-exceptional-strata-dispersion/reviews/conductor_round87_crt_fejer.md",
+            "rounds/codex-managed/m9-m1-deep-exceptional-strata-dispersion/reviews/conductor_round87_adjudication.md",
+            "rounds/codex-managed/m9-m1-deep-exceptional-strata-dispersion/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Estimate the exact cross-group off-diagonal after excluding the already-owned u=0 diagonal, separating partial lower-conductor and extra 2-adic periods from genuinely aperiodic local traces while retaining the actual stationary symbol and Q^(-5/12)."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-residual-upper-conductor-offdiagonal-reduction",
+        "statement_tex": "Let J=sqrt(X), Q=J^(2/5), T=J^(3/5), and J^(13/18)<C<=J. In the first band J^(13/18)<C<=J^(3/4), transition errors and axes are separately target-safe. For each fixed smooth nonaxial principal component, all three classes reduce to the centered Kloosterman-product correlation. The same-residue mode, literal dual d=0, every 0<|d|<=D_1=floor(J^(87/140)), and the outer support collar |d|>=Delta_b-E_* are target-safe. On each dyadic interval in the remaining deep range, the exact full-prime-power same-group A-process package is also target-safe at Fejer shift U=D: grouping physical ordered unit pairs by their full-factor active set and active local label gives P_exc(D,D)<<_epsilon X^epsilon D B^3T^4Q^(-5/6)<<_epsilon X^epsilon(D/B)J^(14/5). This removes every one-count mixture of full-factor local-zero and paired branches, including the hostile prime-power and squarefree aligned families and same-group stride-M returns, with the actual fourfold symbol. The accepted global u=0 diagonal remains owned once. The exact first-band residual is the cross-group off-diagonal u!=0 on D_1<|d|<Delta_b-E_*, containing partial lower-conductor returns, bad-prime and extra 2-adic periods, and aperiodic local traces. No estimate for this cross-group residual is proved. On J^(3/4)<C<=J, principal main, transition error, and axes remain open. No conductor extension, cone-edge estimate, full M9-M1, M9, or exponent is proved.",
+        "dependencies_added": [
+          "M9-M1-deep-full-factor-same-group-fejer-bound"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-deep-exceptional-strata-dispersion/reports/aligned_mode_aggregate_attack.md",
+            "rounds/codex-managed/m9-m1-deep-exceptional-strata-dispersion/reports/blind_exceptional_strata_rederivation.md",
+            "rounds/codex-managed/m9-m1-deep-exceptional-strata-dispersion/reports/exceptional_trace_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m1-deep-exceptional-strata-dispersion/synthesis.md"
+          ]
+        },
+        "next_action": "Bound the strict cross-group deep off-diagonal, first separating exact partial-period returns and the full 2-adic ledger from aperiodic local traces; preserve U=D, the old u=0 diagonal ownership, and Q^(-5/12)."
+      },
+      {
+        "id": "M9-M1-centred-dual-difference-cubic-shell-bound",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-deep-exceptional-strata-dispersion/synthesis.md"
+          ]
+        },
+        "next_action": "The deep interval remains, but its complete full-factor same-group exceptional package is now target-safe. Estimate only the cross-group off-diagonal after the one-count diagonal convention."
+      },
+      {
+        "id": "M9-M1",
+        "dependencies_added": [
+          "M9-M1-deep-full-factor-same-group-fejer-bound"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-deep-exceptional-strata-dispersion/synthesis.md"
+          ]
+        },
+        "next_action": "Close the first-band cross-group deep off-diagonal, then treat C>J^(3/4), cone edges, remaining radial sectors, and endpoint uniformity."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round87-unnormalized-row-with-extra-M-minus-two",
+        "reason": "The row estimate TQ^(-5/24) applies to M^(-1)sum_n I_b(n)e_M(nx)e(n theta). Inserting another M^(-2) in the ordered-pair function double counts normalization and produces a false U asymp B gain by M^4."
+      },
+      {
+        "id": "Round87-coefficientwise-generic-trace-deletes-exceptional-strata",
+        "reason": "Prime-power and squarefree divisor-aligned complete traces can have near-M^2 size. Their target-safe disposal uses the full same-group physical Fejer norm at U=D, not a coefficientwise square-root estimate."
+      },
+      {
+        "id": "Round87-frequency-diagonal-is-physical-diagonal",
+        "reason": "Paired local modes are diagonal only in the completed Fourier label. Their actual weight is a shifted physical-row correlation. Only the exact same-group positive package is controlled; cross-group u=0 remains with the old diagonal and cross-group u!=0 remains open."
+      },
+      {
+        "id": "Round87-pointwise-trace-times-b-phase-gain",
+        "reason": "Formal b-phase variation after D_1 cannot be multiplied by a pointwise trace bound because the modulus, local unit, factorization strata, and actual stationary symbol vary with b. A varying-modulus signed coefficient theorem is absent."
+      },
+      {
+        "id": "Round87-all-stride-M-returns-removed",
+        "reason": "The proved Fejer package contains and bounds only same-group stride-M returns. Cross-group stride-M terms and partial lower-conductor returns remain in the strict residual."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "A nontrivial full-factor exceptional package is removed, but the cross-group deep off-diagonal, C>J^(3/4), cone edges, other radial sectors, and endpoint uniformity remain open."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Round 87 concerns only the M1 transition-flattened smooth-principal first band."
+      },
+      {
+        "id": "M9",
+        "reason": "Both M9-M1 and M9-M2 remain open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The round proves a strict M1 exceptional-strata reduction but no new global Gauss-circle exponent."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 8,
+    "idea_quality_score": 9,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 87 turns the coefficientwise prime-power and squarefree near-return obstruction into a target-safe positive physical Fejer package at U=D, after detecting and repairing a fatal M^4 normalization error. The surviving cross-group off-diagonal is exact and strictly smaller, but no conductor range or global exponent changes."
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-centred-dual-difference-small-shift-bound",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Stationary cancellation removes the small nonzero dual differences",
+        "status": "proved_internal",
+        "statement_tex": "Let J=sqrt(X), Q=J^(2/5), T=J^(3/5), B=C/T, and J^(13/18)<C<=J^(3/4). Fix any compatible smooth-interior nonaxial M1 principal component, local class kappa in {1/4,1/2,1}, alias, and endpoint orientation from M9-M1-nonzero-residue-offset-dual-difference-reduction. Put g=4kappa, M=4b/g, A_(kappa,b)=(sqrt(bX)+sqrt(kappa k/b))^2, and D_0=floor(J^(17/30)). The accepted Round-81 neighbor-independent smooth extension and integrated c-seminorm give a uniform stationary Fourier interface: the active sign has c_n=sqrt(4bA/|n|), phase -eta(sqrt(X)+sqrt(kappa k)/b)sqrt(|n|), Gaussian e(-eta/8), stationary size H=C sqrt(T)/J, and a complete phase-removed entry/exit profile with sampled sup plus variation <<_epsilon X^epsilon H. Exact Kloosterman Parseval gives M^(-2)sum_(r mod M)|S(r+d,K;M)conj(S(r,K;M))-c_M(d)|<=2 for every integer d. On n=r+M ell and 0<|d|<=D<=D_0, the square-root difference phase has second derivative asymptotic to M^2|d|/J. Hence the complete principal contribution satisfies Y_(<=D)<<_epsilon X^epsilon{C^3J^(-17/10)D^(3/2)+C^2TJ^(-3/2)D^(1/2)+DC^2/(T sqrt(JQ))+DB^2/Q^2}<<_epsilon X^epsilon J^2/T. This includes both signs of d, all three local classes, every nonzero d congruent 0 mod M in the range, Ramanujan terms, prime-power gcd modes, saddle entry/exit, stationary errors, and wrong-sign tails. Therefore the first exact principal survivor is the same centred correlation restricted to |d|>D_0. No whole-range B-power, conductor extension, transition-error or axial estimate, cone-edge estimate, full M9-M1, M9, or exponent is proved.",
+        "dependencies": [
+          "M9-M1-nonzero-residue-offset-dual-difference-reduction",
+          "M9-M1-upper-conductor-transition-flattened-subrange-bound"
+        ],
+        "implies": [
+          "M9-M1-residual-upper-conductor-offdiagonal-reduction"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-centred-dual-difference-stationary-correlation/reports/stationary_dual_difference_attack.md",
+            "rounds/codex-managed/m9-m1-centred-dual-difference-stationary-correlation/reports/dual_difference_source_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-centred-dual-difference-stationary-correlation/reviews/conductor_round84_stationary_normalization.md",
+            "rounds/codex-managed/m9-m1-centred-dual-difference-stationary-correlation/reviews/conductor_round84_adjudication.md",
+            "rounds/codex-managed/m9-m1-centred-dual-difference-stationary-correlation/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-centred-dual-difference-stationary-correlation/reports/blind_dual_difference_rederivation.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Estimate the exact large-difference survivor |d|>floor(J^(17/30)) by a joint signed (d,b,r) mechanism before completion. Preserve the actual stationary profile, nonzero modulus multiples, and prime-power gcd modes."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-residual-upper-conductor-offdiagonal-reduction",
+        "statement_tex": "Let J=sqrt(X), Q=J^(2/5), T=J^(3/5), and J^(13/18)<C<=J. In the first band J^(13/18)<C<=J^(3/4), the exact transition error and axes are separately target-safe. For each fixed smooth nonaxial principal component, the three arithmetic classes reduce to the centred Kloosterman-product dual correlation of M9-M1-nonzero-residue-offset-dual-difference-reduction. The complete same-residue mode, literal d=0, and now every 0<|d|<=D_0=floor(J^(17/30)) are target-safe; the small-d statement includes negative d, nonzero multiples d congruent 0 mod M, Ramanujan terms, gcd modes, entry/exit, and stationary errors. Thus the first-band principal survivor is exactly Y_(>D_0)=M^(-2)sum_(b asymp B)sum_(|d|>D_0)sum_n(S(n+d,K;M)conj(S(n,K;M))-c_M(d))I_b(n+d)conj(I_b(n)), with target <<_epsilon X^epsilon J^2/T. No estimate for Y_(>D_0) is proved. On J^(3/4)<C<=J, the principal main, transition error, and axes all require signed control. This proves no conductor extension, cone edge, full M9-M1, M9, or exponent.",
+        "dependencies_added": [
+          "M9-M1-centred-dual-difference-small-shift-bound"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-centred-dual-difference-stationary-correlation/reports/stationary_dual_difference_attack.md",
+            "rounds/codex-managed/m9-m1-centred-dual-difference-stationary-correlation/reviews/conductor_round84_adjudication.md",
+            "rounds/codex-managed/m9-m1-centred-dual-difference-stationary-correlation/synthesis.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-centred-dual-difference-stationary-correlation/reports/blind_dual_difference_rederivation.md"
+          ]
+        },
+        "next_action": "Attack the exact |d|>floor(J^(17/30)) actual-weight correlation in J^(13/18)<C<=J^(3/4), then return to the upper band where transitions and axes also remain open."
+      },
+      {
+        "id": "M9-M1-nonzero-residue-offset-dual-difference-reduction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-centred-dual-difference-stationary-correlation/reviews/conductor_round84_stationary_normalization.md",
+            "rounds/codex-managed/m9-m1-centred-dual-difference-stationary-correlation/synthesis.md"
+          ]
+        },
+        "next_action": "The literal d=0 and every 0<|d|<=floor(J^(17/30)) are now target-safe. Estimate the exact large-difference survivor recorded in M9-M1-centred-dual-difference-small-shift-bound."
+      },
+      {
+        "id": "M9-M1",
+        "dependencies_added": [
+          "M9-M1-centred-dual-difference-small-shift-bound"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-centred-dual-difference-stationary-correlation/synthesis.md"
+          ]
+        },
+        "next_action": "Close the |d|>floor(J^(17/30)) centred correlation in the first upper-conductor band, then treat C>J^(3/4), cone edges, remaining radial sectors, and endpoint uniformity."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round84-bare-BV-gives-uniform-leading-stationary-symbol",
+        "reason": "A bounded-variation symbol may vary on the saddle-width scale, so its exact truncated-Gaussian transform can differ by a constant from the value-at-saddle leading term. The proved lemma instead uses the accepted Round-81 smooth extension and integrated c-seminorm."
+      },
+      {
+        "id": "Round84-complete-stationary-summation-gives-saving",
+        "reason": "Exact completion of the stationary square-root phase reconstructs the pre-dual physical rank-one progression form. An independent signed estimate after completion is required; the transform itself supplies no norm decrease."
+      },
+      {
+        "id": "Round84-small-difference-deletion-is-a-whole-range-B-power",
+        "reason": "The bound removes only 0<|d|<=floor(J^(17/30)). At C=J^(3/4) its first term reaches the full target at the endpoint, and it gives no estimate for the remaining |d|>floor(J^(17/30)) correlation."
+      },
+      {
+        "id": "Round84-prime-field-trace-bound-closes-composite-actual-row",
+        "reason": "Prime-field trace results do not cover arbitrary composite and prime-power moduli with the joint square-root weight. Explicit nonzero prime-power Fourier modes have normalized losses q^(3/4+o(1)) and q^(7/8+o(1)), excluding a uniform coefficientwise square-root substitute."
+      },
+      {
+        "id": "Round84-first-derivative-nonresonance-closes-small-d",
+        "reason": "Exact integer derivative and perfect-power resonances occur. The scoped proof survives them only because the nonzero second derivative is asymptotic to M^2|d|/J."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "A polynomial family of nonzero dual differences is removed, but the large-difference first-band correlation, C>J^(3/4), cone edges, remaining radial sectors, and endpoint uniformity remain open."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Round 84 concerns only the M1 transition-flattened upper-conductor principal correlation."
+      },
+      {
+        "id": "M9",
+        "reason": "Both M9-M1 and M9-M2 remain open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The round proves a strict M1 reduction but no new global Gauss-circle exponent."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 9,
+    "calibration_score": 10,
+    "reason": "The round proves no conductor or exponent improvement, but it combines the exact actual-symbol stationary profile, Kloosterman residue Parseval, and progression curvature to remove every nonzero dual difference through J^(17/30), including all arithmetic and endpoint seams. It replaces the full centred correlation by a strictly smaller large-difference survivor and records why completion and coefficientwise trace bounds do not close it."
+  }
+}
