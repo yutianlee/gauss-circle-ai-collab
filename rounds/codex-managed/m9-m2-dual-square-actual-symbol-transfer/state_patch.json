@@ -1,0 +1,165 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-dual-square-signed-principal-owner-conjugation",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Signed dual-square principal symbol and exact owner-conjugation obstruction",
+        "status": "proved_internal",
+        "statement_tex": "Fix one orientation of the residual hard-top M2 fixed-a row, put c=nu-tau g/2, n=2|c| and epsilon=sgn(c), and split primitivity by q=du with d|a odd. On any fixed smooth interpolated component whose physical, reciprocal, lift, maximal and owner boundaries are separated from the joint saddle, the k and u dual labels are m=-epsilon ell and d-2h=-epsilon r with ell>0 and r>0 odd; y_*^2=ell/n, k_*^2=n Lambda_(du)/(2ell), b_*=4d^2Xn ell/r^2, and the stationary phase is epsilon(J sqrt(dn ell/r)-sqrt(ar/d)/2)^2. The physical, k and u Gaussian units multiply to e(1/8), and the strict-interior principal coefficient is e(1/8)g^(1/2)b_*^(3/4)[dJ^(1/2)n^(3/4)ell^(1/4)]^(-1) A^circ_(ga,gb_*)(gell/n). The normalized complete physical factor is the centred Fresnel functional, not this point value at collars or endpoints. The scalar frequency map preserves local L2 density. For every literal finite zero-extended integer owner P_E, the exact Fourier stage transports it to F P_E F^(-1), preserving idempotency, rank, norm, complements and one-count; because b_* is generally nonintegral, point evaluation of a sharp owner there is noncanonical. Hence scalar stationary phase and full Hessian rank yield no owner-preserving D-saving. The complete Fresnel transitions, nonlocal owner kernel and signed actual Gram remain open, and the returned denominator row does not meet the accepted terminal M1 range, separability, BV or maximal-owner hypotheses.",
+        "dependencies": [
+          "M9-M2-polynomial-q-carrier-dual-square-reduction",
+          "M9-M2-primitive-ray-fixed-q-sampled-k-short-shell",
+          "M9-M2-top-endpoint-actual-symbol-variation"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-dual-square-actual-symbol-transfer/reports/blind_dual_square_rederivation.md",
+            "rounds/codex-managed/m9-m2-dual-square-actual-symbol-transfer/reports/dual_square_actual_transfer_attack.md",
+            "rounds/codex-managed/m9-m2-dual-square-actual-symbol-transfer/reports/dual_square_owner_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m2-dual-square-actual-symbol-transfer/reviews/conductor_round106_signed_stationary_normalization.md",
+            "rounds/codex-managed/m9-m2-dual-square-actual-symbol-transfer/reviews/conductor_round106_owner_conjugation_gate.md",
+            "rounds/codex-managed/m9-m2-dual-square-actual-symbol-transfer/reviews/conductor_round106_terminal_and_adjudication.md",
+            "rounds/codex-managed/m9-m2-dual-square-actual-symbol-transfer/controls/conductor_round106_controls.md",
+            "rounds/codex-managed/m9-m2-dual-square-actual-symbol-transfer/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Do not repeat the scalar dual-square or determinant route. Attack the literal signed nonzero-shift fixed-a Gram or its conjugated complete-Fresnel owner kernel directly, seeking cancellation across actual q-rows before absolute values. Any stationary reformulation must keep both signs, all transition modules and the exact owner Fourier kernels.",
+        "reason_for_promotion": "The two signed branches, three saddle normalizations, final Gaussian constant, local density identity, nonintegral-saddle interpolation obstruction and exact Fourier conjugation of finite owners are independently reproduced and hostilely scoped. The lemma explicitly does not assert a complete stationary expansion, target-sized remainder, D-saving, polynomial shell or actual lower bound."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-polynomial-q-carrier-dual-square-reduction",
+        "statement_tex": "For one complete scalar mode of the residual fixed-a M2 row, let c=nu-tau g/2, n=2|c|, epsilon=sgn(c), t=sqrt((a+2q)/a), and retain the centered physical integral. The centered material derivative transports the saddle but leaves the complete metric residual c Lambda_q'/k asymp nJ, while det Hess_(q,k)(q/2+c Lambda_q/k)=-c^2X^2(t-1)^3/(t^3k^4) asymp -n^2A/D. Both reciprocal endpoints are monotone. After q=du with d|a odd, the scalar dual labels are m=-epsilon ell and d-2h=-epsilon r, ell>0 and r>0 odd, and the exact phase is epsilon(J sqrt(dn ell/r)-sqrt(ar/d)/2)^2; its linear quarter factor is epsilon i chi_4(a/d)chi_4(r). This is a carrier-level determinant-route obstruction only. Round 106 supplies the strict smooth-interior actual principal normalization and proves that exact integer owners become nonlocal Fourier-conjugated kernels; no complete actual transform, maximal theorem, polynomial q-shell or Gram estimate follows.",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-dual-square-actual-symbol-transfer/reports/dual_square_actual_transfer_attack.md",
+            "rounds/codex-managed/m9-m2-dual-square-actual-symbol-transfer/reports/dual_square_owner_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m2-dual-square-actual-symbol-transfer/reviews/conductor_round106_signed_stationary_normalization.md",
+            "rounds/codex-managed/m9-m2-dual-square-actual-symbol-transfer/synthesis.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-dual-square-actual-symbol-transfer/reports/blind_dual_square_rederivation.md"
+          ]
+        },
+        "next_action": "Use the corrected two-sign carrier only through M9-M2-dual-square-signed-principal-owner-conjugation. Do not point-evaluate sharp owners at b_* or invoke terminal M1; the remaining problem is the literal signed actual Gram."
+      },
+      {
+        "id": "M9-M2-primitive-ray-fixed-a-actual-Gram",
+        "dependencies_added": [
+          "M9-M2-dual-square-signed-principal-owner-conjugation"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-dual-square-actual-symbol-transfer/reports/dual_square_actual_transfer_attack.md",
+            "rounds/codex-managed/m9-m2-dual-square-actual-symbol-transfer/reports/dual_square_owner_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m2-dual-square-actual-symbol-transfer/reviews/conductor_round106_terminal_and_adjudication.md",
+            "rounds/codex-managed/m9-m2-dual-square-actual-symbol-transfer/synthesis.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-dual-square-actual-symbol-transfer/reports/blind_dual_square_rederivation.md"
+          ]
+        },
+        "next_action": "The dual-square principal transform preserves scalar L2 capacity and sharp owners return as nonlocal conjugated kernels. Attack the literal signed nonzero-shift Gram directly, or prove directional cancellation of the complete-Fresnel owner vector across q; generic square-root cancellation and further scalar B-processes are insufficient."
+      },
+      {
+        "id": "M9-M2-top-endpoint-density-discrepancy-energy",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-dual-square-actual-symbol-transfer/reports/dual_square_actual_transfer_attack.md",
+            "rounds/codex-managed/m9-m2-dual-square-actual-symbol-transfer/reports/dual_square_owner_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m2-dual-square-actual-symbol-transfer/synthesis.md"
+          ]
+        },
+        "next_action": "The polynomial shell is now reduced past scalar stationary normalization to the complete signed nonzero-shift actual Gram, equivalently the conjugated complete-Fresnel owner kernel. Prove a full-D directional cancellation before absolute values; do not repeat determinant, character-B-process or pointwise-owner arguments."
+      },
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-dual-square-actual-symbol-transfer/synthesis.md"
+          ]
+        },
+        "next_action": "First close the polynomial fixed-a signed actual Gram or equivalent canonical density-discrepancy energy. The signed dual-square principal symbol and owner-conjugation obstruction do not supply the cone estimate."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round106-negative-dual-square-covers-all-metric-modes",
+        "reason": "For each orientation c=nu-tau g/2 has both signs. With epsilon=sgn(c), the dual phase is epsilon times the square and the labels are m=-epsilon ell, d-2h=-epsilon r."
+      },
+      {
+        "id": "Round106-leading-physical-Gaussian-is-the-uniform-actual-symbol",
+        "reason": "The point value is only the strict smooth-interior zeroth symbol. Physical collars, reciprocal or maximal endpoints, lift boundaries, hard samples and the collapsing edge require the complete one- or multi-sided Fresnel vector."
+      },
+      {
+        "id": "Round106-pointwise-owner-at-nonintegral-bstar-is-canonical",
+        "reason": "Sharp owners are defined on integer q. Different cardinal extensions agree on every primal sample but can differ at the generally nonintegral saddle b_*, with the difference cancelled only by the remaining exact dual integrals."
+      },
+      {
+        "id": "Round106-prior-owner-masks-are-smooth-u-amplitudes",
+        "reason": "Square-ray and other sparse prior-owner complements have polynomially many arithmetic jumps and are accepted only in aggregate norms. Their exact Fourier kernels must remain in the transformed vector."
+      },
+      {
+        "id": "Round106-exact-owner-Fourier-conjugation-supplies-a-D-saving",
+        "reason": "Conjugation preserves projector norm, rank, complements and one-count and inverse Fourier transform returns the original owner. It is an identity, not an estimate."
+      },
+      {
+        "id": "Round106-terminal-M1-closes-the-returned-denominator-row",
+        "reason": "The denominator scale is dnJ, while b_* couples ell and r inside profiles, maximal support, lifts, collars and owners. The accepted terminal theorem's range, separability, BV and maximal-owner hypotheses fail literally."
+      },
+      {
+        "id": "Round106-scalar-density-preservation-proves-the-fixed-a-Gram",
+        "reason": "Local L2 density is preserved, so scalar square-root capacity remains a factor sqrt(D) above the row target and direct Gram capacity retains the D^2 deficit. Actual directional cancellation is still required."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M2-primitive-ray-fixed-a-actual-Gram",
+        "reason": "No full-D signed estimate or positive-power shell is proved."
+      },
+      {
+        "id": "M9-M2-top-endpoint-density-discrepancy-energy",
+        "reason": "The complete polynomial-shell actual-vector energy remains open."
+      },
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "reason": "The hard cone still depends on the open canonical energy."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "The hard polynomial shell and both smooth M2 packets remain open."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "The returned M1-like row fails the accepted terminal hypotheses and proves no M1 block."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "No all-denominator pointwise endpoint assembly is proved."
+      },
+      {
+        "id": "M9",
+        "reason": "Neither M9-M1 nor M9-M2 is closed."
+      },
+      {
+        "id": "GC-target",
+        "reason": "No global pointwise exponent changes."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 5,
+    "idea_quality_score": 8,
+    "state_evidence_score": 9,
+    "calibration_score": 10,
+    "reason": "Round 106 corrects the missing metric sign, verifies the full three-Gaussian principal normalization and local capacity, and converts the vague owner-transfer seam into an exact nonlocal Fourier-conjugation obstruction. It proves no target estimate, but it decisively retires pointwise-owner and terminal-M1 shortcuts and isolates the literal signed actual Gram."
+  }
+}

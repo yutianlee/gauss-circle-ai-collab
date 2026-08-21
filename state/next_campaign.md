@@ -1,20 +1,22 @@
-# Next Campaign
+# Next campaign
 
-Round 89 is active. The next campaign is intentionally not designed until
-`m9-m1-bad-prime-period-fibre-energy` is closed and its graph effect is
-adjudicated.
+Round 113 is closed. No new campaign is active.
 
-Current graph SHA-256:
-`b279e9e671b54b43855bdfc90727e36e808eb539578dac0faeb115394789f674`.
-
-Current exact survivor:
+The leading Round-114 candidate is a core analytic attack on the literal
+balanced smooth M2 quarter packet proved in Round 113. Its fixed-block
+target is
 
 \[
- R_*>\rho_*,\qquad
- \mathfrak a<M^2/\rho_*^2,
+ \left|\sum_\sigma G_\sigma
+ Q_{B,\sigma}^{\mathrm{full}}(\sqrt X)\right|
+ \ll_\varepsilon L^{3/2}X^\varepsilon.
 \]
 
-inside the first-band deep M1 cross-group operator. Round 89 separates
-complete small-prime, nonunit-\(K\), and full \(2\)-adic reciprocal-period
-fibres from affine and genuinely aperiodic factors while retaining the
-actual symbol, centered Fejer ownership, and \(Q^{-5/12}\).
+The design must exploit the actual coefficient and the joint signed shell
+sum. It must not replace the target by shellwise absolute values, unsigned
+spacing, arbitrary coefficients, or cancellation across physical blocks.
+The persistent geometry is the (j=1) denominator family; (j=2) is an
+isolated exact-square boundary control.
+
+Starting graph SHA-256:
+`411adc0c93d2451dfc1235840f27063b3ef4869d0c67aebfbbc74fe9ef04387c`.

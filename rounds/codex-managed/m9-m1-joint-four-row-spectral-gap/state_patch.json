@@ -1,0 +1,175 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-joint-four-row-separable-self-return-obstruction",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "The joint (d,u) Hessian is the existing separable four-row transform",
+        "status": "proved_internal",
+        "statement_tex": "On the literal canonical hard M1 complement, open the complete trace and set r=n+d+u, s=m+d. This is an integral bijection with d=s-m and u=r-s+m-n, and ux+dV+nA-mB_2=rx+n(A-x)+s(V-x)+m(x-V-B_2). The outer M in mathfrak T_M converts M^(-5) to M^(-4), exactly the four normalized physical rows. On every smooth stationary branch, D^2_(d,u)Psi=L^T diag(psi_b''(r),-psi_b''(s))L with L in GL_2(Z), so the determinant asymp -J^(-2/5) is precisely the two one-row curvatures. The Fejer factor becomes (U-|r-s+m-n|)1_(0<|r-s+m-n|<U), and Fourier recompletion is the same centered Toeplitz four-row Gram. Thus a second two-dimensional B-process gives no independent J^(-1/5) after the row capacity is charged; after the hard owners, the arithmetic mask and moving entry/exit also fail the scalar smooth-amplitude hypotheses. Each fixed configuration is rank one in (n,m), actual phases telescope on paired closed trace cycles, and ordinary trace moments are direct sums in conductor row b. For M=8, mathfrak T_8=8e_8(K(A-B_2))c_8(u), so (A,B_2,V)=(2,2,2), u=4 is an exact nonzero coherent control after the unique u=0 owner. This obstructs configuration-separated, post-absolute-value, second-completion, and ordinary high-trace mechanisms, but is not a lower bound for the fixed global actual vector.",
+        "dependencies": [
+          "M9-M1-residual-upper-conductor-offdiagonal-reduction",
+          "M9-M1-square-root-capacity-self-return-barrier"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-joint-four-row-spectral-gap/reports/blind_joint_gram_rederivation.md",
+            "rounds/codex-managed/m9-m1-joint-four-row-spectral-gap/reports/complete_trace_spectral_attack.md",
+            "rounds/codex-managed/m9-m1-joint-four-row-spectral-gap/reports/joint_gram_source_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-joint-four-row-spectral-gap/candidates/conductor_joint_four_row_self_return.md",
+            "rounds/codex-managed/m9-m1-joint-four-row-spectral-gap/reviews/conductor_round99_normalization_and_q8.md",
+            "rounds/codex-managed/m9-m1-joint-four-row-spectral-gap/reviews/conductor_round99_self_return_and_source_scope.md",
+            "rounds/codex-managed/m9-m1-joint-four-row-spectral-gap/reviews/conductor_round99_adjudication.md",
+            "rounds/codex-managed/m9-m1-joint-four-row-spectral-gap/controls/conductor_round99_hygiene.md",
+            "rounds/codex-managed/m9-m1-joint-four-row-spectral-gap/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Do not reuse the separable Hessian, a second completion, configuration-separated high traces, or a direct-sum conductor norm as a new saving. Attack the fixed actual-vector directional coefficient with every owner and transition retained."
+      },
+      {
+        "id": "M9-M1-canonical-hard-actual-vector-directional-estimate",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Fixed actual-vector directional estimate for the canonical hard Gram",
+        "status": "open",
+        "statement_tex": "For every accepted deep length U, form the literal Round-92 canonical hard block after the unique u=0 owner and the successive Round-87--89 owners. Sum all three classes, signs, aliases, reflections, modulus multiples, Ramanujan terms, prime powers, nonunit K, the full 2-part, and every physical configuration inside the matrix entries, retaining the exact fourfold I_b symbol and moving entry/exit. Let mathsf C_U be its exact coefficient-blind Schur capacity and normalize the fixed actual vectors p_U,q_U and block operator K_U so that E_hard(U)=mathsf C_U p_U^*K_U q_U. Prove |p_U^*K_U q_U|<<_epsilon X^epsilon ((U/B)J^(14/5))/mathsf C_U, equal to J^(-1/6+epsilon) at the top. Any cancellation across conductor rows must be taken in this scalar coefficient before replacing the direct sum by a uniform norm. This is a fixed-vector statement, not an arbitrary-coefficient or configuration-separated operator-norm theorem.",
+        "dependencies": [
+          "M9-M1-residual-upper-conductor-offdiagonal-reduction",
+          "M9-M1-square-root-capacity-self-return-barrier",
+          "M9-M1-joint-four-row-separable-self-return-obstruction"
+        ],
+        "implies": [
+          "M9-M1-canonical-hard-actual-symbol-Gram-estimate"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-joint-four-row-spectral-gap/reports/blind_joint_gram_rederivation.md",
+            "rounds/codex-managed/m9-m1-joint-four-row-spectral-gap/reports/complete_trace_spectral_attack.md",
+            "rounds/codex-managed/m9-m1-joint-four-row-spectral-gap/reports/joint_gram_source_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-joint-four-row-spectral-gap/candidates/conductor_joint_four_row_self_return.md",
+            "rounds/codex-managed/m9-m1-joint-four-row-spectral-gap/reviews/conductor_round99_adjudication.md",
+            "rounds/codex-managed/m9-m1-joint-four-row-spectral-gap/synthesis.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Exploit a proved property of the fixed actual rows and their conductor sum to show small projection onto every surviving paired, two-adic, modulus-multiple, and transition mode. Do not strengthen to a uniform norm unless a literal dense-block obstruction is first resolved."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-canonical-hard-actual-symbol-Gram-estimate",
+        "dependencies_added": [
+          "M9-M1-canonical-hard-actual-vector-directional-estimate"
+        ],
+        "blockers_added": [
+          "M9-M1-canonical-hard-actual-vector-directional-estimate"
+        ],
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-m1-joint-four-row-spectral-gap/reports/complete_trace_spectral_attack.md",
+            "rounds/codex-managed/m9-m1-joint-four-row-spectral-gap/reports/joint_gram_source_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-joint-four-row-spectral-gap/reviews/conductor_round99_self_return_and_source_scope.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-joint-four-row-spectral-gap/reports/blind_joint_gram_rederivation.md",
+            "rounds/codex-managed/m9-m1-joint-four-row-spectral-gap/candidates/conductor_joint_four_row_self_return.md",
+            "rounds/codex-managed/m9-m1-joint-four-row-spectral-gap/reviews/conductor_round99_adjudication.md",
+            "rounds/codex-managed/m9-m1-joint-four-row-spectral-gap/synthesis.md"
+          ]
+        },
+        "next_action": "Prove the fixed actual-vector directional estimate. The separable (d,u) Hessian, second completion, configuration-separated high trace, and direct-sum conductor norm are exhausted controls, not new savings."
+      },
+      {
+        "id": "M9-M1-square-root-capacity-self-return-barrier",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-joint-four-row-spectral-gap/reports/blind_joint_gram_rederivation.md",
+            "rounds/codex-managed/m9-m1-joint-four-row-spectral-gap/reports/complete_trace_spectral_attack.md",
+            "rounds/codex-managed/m9-m1-joint-four-row-spectral-gap/reports/joint_gram_source_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-joint-four-row-spectral-gap/synthesis.md"
+          ]
+        },
+        "next_action": "Use the equal-capacity barrier and the exact four-row self-return to formulate only fixed-vector cancellation. Do not resume local period peeling, separated high traces, or second completion."
+      },
+      {
+        "id": "M9-M1-residual-upper-conductor-offdiagonal-reduction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-joint-four-row-spectral-gap/candidates/conductor_joint_four_row_self_return.md",
+            "rounds/codex-managed/m9-m1-joint-four-row-spectral-gap/reviews/conductor_round99_adjudication.md",
+            "rounds/codex-managed/m9-m1-joint-four-row-spectral-gap/synthesis.md"
+          ]
+        },
+        "next_action": "Route the exact hard complement to the fixed actual-vector directional estimate. Keep upper conductors, axes, raw transitions, cone edges, and other radial sectors separate."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round99-two-dimensional-Hessian-extra-J-one-fifth",
+        "reason": "The full-rank Hessian is integrally congruent to the two one-row Hessians, and double B-process reconstructs the same four physical rows already charged to Schur capacity."
+      },
+      {
+        "id": "Round99-second-completion-new-power",
+        "reason": "Opening the complete trace gives exactly M^(-4), the four normalized rows, and Fejer recompletion returns the centered Toeplitz Gram with no spare modulus or transform factor."
+      },
+      {
+        "id": "Round99-ordinary-high-trace-uses-conductor-cancellation",
+        "reason": "The exact operator is a direct sum in conductor row b; ordinary norms take a maximum and ordinary trace moments sum block traces, so they contain no mixed-b closed walks."
+      },
+      {
+        "id": "Round99-configuration-separated-high-trace-gap",
+        "reason": "Fixed configurations are rank one, their actual phases telescope on paired closed cycles, and the exact q=8,u=4 local mode is coherent after the unique u=0 owner."
+      },
+      {
+        "id": "Round99-q8-mode-proves-global-lower-bound",
+        "reason": "The q=8 mode is an exact local coherent control, but no dense comparable archimedean plateau or noncancelling global actual-vector projection has been proved."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1-canonical-hard-actual-symbol-Gram-estimate",
+        "reason": "The round proves mechanism obstructions and an exact directional reduction, not the hard estimate."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "The canonical packet is only one global-route child and remains open; the direct blockwise parents are unchanged."
+      },
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "reason": "The lower-radial and sharp-interface parents remain open outside the canonical packet."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Round 99 is confined to the canonical M1 Gram."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "No real-X endpoint estimate or uniform block theorem is proved."
+      },
+      {
+        "id": "M9",
+        "reason": "Neither M9-M1 nor M9-M2 is closed."
+      },
+      {
+        "id": "GC-target",
+        "reason": "No new pointwise estimate or exponent is proved."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 99 rigorously removes the apparent extra two-dimensional curvature, second-completion, and configuration-separated high-trace mechanisms, and isolates the exact fixed-actual-vector directional inequality. It proves no new power saving."
+  }
+}

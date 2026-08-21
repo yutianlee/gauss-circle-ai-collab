@@ -1,12 +1,16 @@
 {
-  "round_index": 73,
-  "campaign_id": "m9-m1-residual-upper-conductor-hybrid-energy",
-  "status": "active",
-  "objective": "Combine the accepted third-derivative cell saving with exact residue/Farey-numerator or spectral cancellation on J^(32/45)<C<=J.",
-  "tasks": [
-    {"id": "hybrid_residue_energy_attack", "role": "discovery", "status": "assigned"},
-    {"id": "blind_hybrid_energy_rederivation", "role": "statement_only_blind", "status": "assigned"},
-    {"id": "hybrid_spectral_source_hostile_audit", "role": "hostile_source", "status": "assigned"}
+  "round_index": 114,
+  "status": "design_pending",
+  "candidate_type": "core_analytic_attack",
+  "candidate_objective": "Attack the now-literal balanced smooth M2 signed quarter-packet estimate for the persistent j=1 family, with the isolated exact-square j=2 boundary kept as a separate control.",
+  "starting_graph_sha256": "411adc0c93d2451dfc1235840f27063b3ef4869d0c67aebfbbc74fe9ef04387c",
+  "required_guardrails": [
+    "use the exact Round-113 continuum symbol and physical one-count equation",
+    "retain chi_4 and both quarter shifts",
+    "place the modulus outside the complete internal gcd-shell sum",
+    "do not combine distinct physical D or L blocks",
+    "audit exact squares, near-squares, high gcd, transform error, and the j=2 exact-square boundary",
+    "prove a genuine L^(3/2) bound, a strict subrange, or a rigorous actual-symbol route obstruction"
   ],
-  "exit_gate": "Prove the residual range, close a strict subrange, or isolate a smaller actual-symbol correlation with clean blind and hostile gates."
+  "downstream_scope": "Even success closes only the balanced smooth M2 child; the hard and unbalanced M2 parents, both M1 parents, endpoint uniformity, M9, and the quarter theorem remain separate."
 }

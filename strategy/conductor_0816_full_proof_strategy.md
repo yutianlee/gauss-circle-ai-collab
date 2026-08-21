@@ -1,5 +1,9 @@
 # Conductor Strategy for a Full Proof
 
+> Superseded for rounds after 89 by
+> `strategy/conductor_0817_full_proof_strategy.md`. Retained for
+> provenance and the Round-77--88 execution record.
+
 Date: 2026-08-16  
 Status: adopted strategy; no theorem or graph node is promoted by this file.  
 Authoritative graph SHA-256 at adoption:

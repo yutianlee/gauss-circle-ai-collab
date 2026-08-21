@@ -1,0 +1,134 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-adjacent-transport-discrete-lattice-obstruction",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Adjacent parity transport and bulk discrete-lattice obstruction",
+        "status": "proved_internal",
+        "statement_tex": "Let J=sqrt X, 1<=L<=J^(1/2), and use one representative primitive hard-top orientation a<b=a+2q<4a with one outer 2Re. For every finite zero-extended row, 2 sum_q(-1)^q F_(L,a)(q)=sum_q(-1)^q(F_(L,a)(q)-F_(L,a)(q+1)); this is a signed high-pass identity, not a total-variation or Gram estimate, and truncated sums retain the exact endpoint atom. Put delta_q=sqrt(a+2q)-sqrt a and lambda_q=(delta_q/delta_(q+1))^2. The map T_q(x,k)=(lambda_q x,k/lambda_q) has determinant 1 and preserves the radical phase, kx, and Lambda_q/k. For any fixed compact cardinal extension H, the exact pulled-back sampler is lambda_q sum_n H(lambda_q n)-sum_n H(n)=sum_r(Hhat(r/lambda_q)-Hhat(r)). On every positive common interval of length K, the total-variation distance between sum delta_n and lambda_q sum delta_(lambda_q n) is asymp K for every lambda_q!=1, whether rational or irrational. In a noncollapsed block a asymp A, q asymp D, g asymp L/A, K asymp JD/A, the reciprocal endpoint slabs have width K/D=J/A, the physical pullback slabs have width L/D, the raw lower ceiling jump is (g-chi_4(g(a+2q)))/2, and the exact common-band carrier displacement is Xg(delta_(q+1)^2-delta_q^2)/(4k) asymp JL/A. The coefficient-blind common-comb capacity is DL^2 and the available absolute endpoint capacity is L^2 sqrt(kappa), kappa=JD/(AL)>=D. Hence closeness lambda_q=1+O(1/D), continuous Jacobians, boundary-only decompositions, integer rounding, total variation, and perturbative transport do not supply a polynomial D-saving. A literal first-failure Boolean partition owns simultaneous zero-extension, coprimality, lift, ceiling, reciprocal-support, collar, floor, star, entry/exit, terminal, puncture, and metric-centre jumps exactly once. This is a scoped route obstruction only: it proves no lower bound for the actual signed Vaaler/profile vector and no strict polynomial subrange. The smallest open object is the actual signed common-band scaled-comb correlation, kept jointly with its support and arithmetic slabs when needed. No hard-cone theorem, smooth M2 packet, M9 component, endpoint theorem, or exponent follows.",
+        "dependencies": [
+          "M9-M2-global-completed-realpart-self-return",
+          "M9-M2-top-endpoint-actual-symbol-variation",
+          "M9-M2-primitive-ray-fixed-q-sampled-k-short-shell",
+          "M9-M2-polynomial-q-carrier-dual-square-reduction"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-adjacent-ray-transport-commutator/reports/blind_adjacent_commutator_rederivation.md",
+            "rounds/codex-managed/m9-m2-adjacent-ray-transport-commutator/reports/adjacent_transport_commutator_attack.md",
+            "rounds/codex-managed/m9-m2-adjacent-ray-transport-commutator/reports/adjacent_commutator_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m2-adjacent-ray-transport-commutator/reviews/conductor_round111_highpass_and_one_count.md",
+            "rounds/codex-managed/m9-m2-adjacent-ray-transport-commutator/reviews/conductor_round111_transport_lattice_and_capacity.md",
+            "rounds/codex-managed/m9-m2-adjacent-ray-transport-commutator/controls/conductor_round111_controls.md",
+            "rounds/codex-managed/m9-m2-adjacent-ray-transport-commutator/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Do not repeat phase-preserving adjacent transport in a coefficient-blind norm. Either prove cancellation in the complete actual signed common-band scaled-comb plus one-count slabs before absolute values, or move to a distinct M9-M2 packet/interface with a genuinely non-self-returning degree of freedom.",
+        "reason_for_promotion": "The blind report independently proves the exact high-pass and norm separation. The discovery and hostile reports derive the same determinant-one transport, sampler normalization, support widths and capacity obstruction, while conductor reviews reconcile the inverse transport conventions and certify that the result is route-scoped rather than an actual lower bound."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-global-completed-realpart-self-return",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-adjacent-ray-transport-commutator/reviews/conductor_round111_highpass_and_one_count.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-adjacent-ray-transport-commutator/synthesis.md"
+          ]
+        },
+        "next_action": "The adjacent high-pass is exact, but its phase-preserving continuous transport has a bulk scaled-comb defect at equal coefficient-blind capacity. The remaining direct route is cancellation in the complete actual signed common-band comb-plus-jump vector; do not infer smallness from 1-lambda, Jacobians, total variation, or boundary slabs."
+      },
+      {
+        "id": "M9-M2-top-endpoint-density-discrepancy-energy",
+        "dependencies_added": [
+          "M9-M2-adjacent-transport-discrete-lattice-obstruction"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-adjacent-ray-transport-commutator/reports/adjacent_transport_commutator_attack.md",
+            "rounds/codex-managed/m9-m2-adjacent-ray-transport-commutator/reports/adjacent_commutator_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m2-adjacent-ray-transport-commutator/synthesis.md"
+          ]
+        },
+        "next_action": "Prove the global real signed Round-75 off-diagonal through a genuinely arithmetic actual-vector estimate. The exact adjacent transport normal form leaves the signed common-band scaled-comb correlation and one-count support slabs at original capacity; separating slabs by absolute values loses at least D^(1/2)."
+      },
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-adjacent-ray-transport-commutator/synthesis.md"
+          ]
+        },
+        "next_action": "The hard cone remains equivalent to the open global real signed row. Adjacent parity transport gives exact bookkeeping but no polynomial saving because the discrete sampler is bulk. Seek a new actual-vector cancellation theorem or complete the other M2 packets and endpoint interfaces without reopening this route."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round111-parity-highpass-itself-saves-a-power",
+        "reason": "The parity vector is an eigenvector of the adjacent difference with eigenvalue 2; the high-pass is an exact reformulation and can amplify arbitrary alternating rows."
+      },
+      {
+        "id": "Round111-lambda-closeness-makes-comb-small",
+        "reason": "For every lambda different from 1, rational or irrational, the total-variation distance of the integer and pulled-back scaled combs on a K-interval is comparable with K, not K times |1-lambda|."
+      },
+      {
+        "id": "Round111-continuous-Jacobian-produces-D-saving",
+        "reason": "The two-dimensional transport has determinant 1, and the one-dimensional x-Jacobian is canceled exactly by the changed density of the pulled-back k-comb."
+      },
+      {
+        "id": "Round111-transport-defect-is-boundary-only",
+        "reason": "The exact Poisson identity retains every common-band scaled-comb frequency; replacing it by the symmetric difference of reciprocal intervals drops a bulk term."
+      },
+      {
+        "id": "Round111-fixed-collars-own-all-transport-slabs",
+        "reason": "Reciprocal endpoints move by J/A and physical supports by L/D, crossing L/D accepted curvature widths; these atoms are not uniformly fixed collars."
+      },
+      {
+        "id": "Round111-integer-rounding-preserves-phase",
+        "reason": "Rounding k/lambda to an integer destroys exact kx preservation and leaves a bounded frequency error multiplied by the full physical variable."
+      },
+      {
+        "id": "Round111-large-carrier-increment-gives-uniform-gap",
+        "reason": "The unwrapped increment is of size JL/A, but square, Pell, fourth-power and near-centre configurations can make it integral or nearly integral."
+      },
+      {
+        "id": "Round111-comb-TV-is-an-actual-symbol-lower-bound",
+        "reason": "Total variation is attained only after a coefficient-blind phase-conjugating choice. The actual signed Vaaler/profile vector may still cancel before absolute values."
+      },
+      {
+        "id": "Round111-adjacent-transport-closes-a-polynomial-shell",
+        "reason": "The common-comb capacity loses D and the separate endpoint majorant loses at least D^(1/2); no fixed positive-power D-range is proved."
+      }
+    ],
+    "no_change": [
+      {"id": "M9-M2-top-endpoint-density-discrepancy-energy", "reason": "The exact transport normal form is proved, but the actual signed correlation is not estimated."},
+      {"id": "M9-M2-top-endpoint-signed-cone", "reason": "The hard top estimate remains open."},
+      {"id": "M9-M2-primitive-ray-fixed-a-actual-Gram", "reason": "No fixed-a Gram estimate or directional bridge is proved."},
+      {"id": "M9-M2-smooth-balanced-quarter-packet-estimate", "reason": "Round 111 treated only the residual hard-top signed direction."},
+      {"id": "M9-M2-smooth-unbalanced-three-quarter-estimate", "reason": "Round 111 treated only the residual hard-top signed direction."},
+      {"id": "M9-M2", "reason": "The hard, balanced and unbalanced M2 obligations remain open."},
+      {"id": "M9-M1", "reason": "No M1 estimate is proved."},
+      {"id": "M9-endpoint-uniformity", "reason": "All-denominator endpoint assembly remains open."},
+      {"id": "M9", "reason": "Neither M9-M1 nor M9-M2 is closed."},
+      {"id": "Conditional-bridge", "reason": "Its M9 hypothesis remains open."},
+      {"id": "GC-target", "reason": "No global pointwise exponent changes."}
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 5,
+    "idea_quality_score": 7,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 111 proves the exact adjacent high-pass and transport normalization, resolves every jump owner, and identifies the first bulk discrete defect that defeats a tempting D^(-1) saving. It eliminates a substantial false route and isolates the actual signed scaled-comb survivor, but proves no new analytic range, M9 component, or exponent."
+  }
+}
+

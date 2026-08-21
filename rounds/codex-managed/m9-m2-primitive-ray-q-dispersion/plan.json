@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "round_index": 96,
+  "round_type": "m9_m2_primitive_ray_q_dispersion",
+  "campaign_id": "m9-m2-primitive-ray-q-dispersion",
+  "title": "Primitive-ray q-dispersion for the canonical M2 density--discrepancy core",
+  "status": "complete",
+  "max_concurrency": 3,
+  "coordinator": "Codex",
+  "starting_graph_sha256": "242a5f0c6cb22d2e9a400bca110a91c08aea3b3cc8c537bc17fd73418df88fd1",
+  "resource_policy": {
+    "analytical_algebraic_minimum_percent": 90,
+    "numerical_experimental_maximum_percent": 10,
+    "planned_numerical_percent": 0,
+    "literature_policy": "Use primary sources only and audit literal moving-symbol, parity, support, and endpoint hypotheses before any source import."
+  },
+  "target_obligations": [
+    "M9-M2-top-endpoint-density-discrepancy-energy",
+    "M9-M2-top-endpoint-signed-cone",
+    "M9-M2",
+    "M9",
+    "GC-target"
+  ],
+  "frozen_target": {
+    "question": "Can exact cross-ray differencing in q=(b-a)/2, using chi_4(a)chi_4(b)=(-1)^q before density/discrepancy separation, supply the full rho^(-1/2) gain for the canonical hard M2 block?",
+    "reference_formula": "sum_(A,D,K,G,R)|Q_(A,D,K,G,R)| <<_epsilon L^2 X^epsilon, where positive block capacity is L^2 X^epsilon sqrt(rho) and rho=AJD^3/L^3.",
+    "scope": [
+      "retain the complete actual coefficient and moving k interval",
+      "keep metric density and discrepancy modes coupled",
+      "retain coprimality, parity, both orientations, stars, and all prior owners",
+      "do not reuse pointwise quotient parity or reciprocal Poisson self-return as a proof",
+      "do not infer other M2 packets, M9, or the quarter target"
+    ]
+  },
+  "completion_criteria": [
+    "Derive the exact m,q lattice, character, and q-shift correlation.",
+    "Audit moving reciprocal endpoints and the complete actual symbol.",
+    "Retain density and discrepancy jointly through every norm inequality.",
+    "Prove rho^(-1/2), a target-safe nonempty hard subrange, or an exact self-return/no-go.",
+    "Audit square, exact-centre, Pell, fourth-power, and short-q controls.",
+    "Map all primary-source hypotheses used.",
+    "Complete clean blind, analytic, and hostile/source reports.",
+    "Make one conductor decision without advancing to another round."
+  ],
+  "controls": [
+    "m_q_parity_and_coprimality",
+    "chi4_equals_minus_one_power_q",
+    "moving_k_interval",
+    "entry_exit_and_stars",
+    "density_discrepancy_jointness",
+    "square_ray_prior_owner",
+    "exact_nonsquare_centre_owner",
+    "near_square_and_Pell",
+    "fourth_power_metric_resonance",
+    "false_unsigned_and_arbitrary_coefficients",
+    "rho_gain_and_block_sum",
+    "transform_self_return",
+    "downstream_scope"
+  ],
+  "tasks": [
+    {
+      "id": "blind_primitive_ray_q_rederivation",
+      "role": "blind_rederiver",
+      "access_mode": "statement_only",
+      "status": "completed_clean",
+      "target": "Independently derive and test the complete q-shift dispersion mechanism.",
+      "context_files": [
+        "rounds/codex-managed/m9-m2-primitive-ray-q-dispersion/derivation_packet.md"
+      ],
+      "report_path": "rounds/codex-managed/m9-m2-primitive-ray-q-dispersion/reports/blind_primitive_ray_q_rederivation.md"
+    },
+    {
+      "id": "primitive_ray_q_dispersion_attack",
+      "role": "discovery",
+      "access_mode": "selected_context",
+      "status": "completed_clean",
+      "target": "Prove the canonical bound, a target-safe hard subrange, or an exact equal-capacity return from actual-symbol q-dispersion.",
+      "context_files": [
+        "protocol.md",
+        "state/proof_obligations.yml",
+        "state/active_campaign.yml",
+        "rounds/codex-managed/m9-m2-primitive-ray-q-dispersion/derivation_packet.md",
+        "rounds/codex-managed/m9-canonical-core-formalization/candidates/conductor_canonical_core_statements.md",
+        "rounds/codex-managed/m9-canonical-core-formalization/reviews/conductor_round92_capacity_and_bridges.md",
+        "rounds/codex-managed/m9-m2-top-endpoint-actual-symbol-variation/synthesis.md",
+        "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/synthesis.md",
+        "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/synthesis.md",
+        "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/synthesis.md"
+      ],
+      "report_path": "rounds/codex-managed/m9-m2-primitive-ray-q-dispersion/reports/primitive_ray_q_dispersion_attack.md"
+    },
+    {
+      "id": "primitive_ray_q_hostile_source_audit",
+      "role": "source_auditor",
+      "access_mode": "selected_context",
+      "status": "completed_clean",
+      "target": "Falsify unsupported q-dispersion gains and audit current theorem applicability.",
+      "context_files": [
+        "protocol.md",
+        "state/active_campaign.yml",
+        "rounds/codex-managed/m9-m2-primitive-ray-q-dispersion/derivation_packet.md",
+        "rounds/codex-managed/m9-canonical-core-formalization/candidates/conductor_canonical_core_statements.md",
+        "rounds/codex-managed/m9-canonical-core-formalization/reviews/conductor_round92_source_and_graph_hygiene.md",
+        "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/reports/strict_metric_energy_hostile_source_audit.md",
+        "strategy/conductor_0817_full_proof_strategy.md"
+      ],
+      "report_path": "rounds/codex-managed/m9-m2-primitive-ray-q-dispersion/reports/primitive_ray_q_hostile_source_audit.md"
+    }
+  ],
+  "review_seams": [
+    {"id": "normalization", "requirement": "Check m,q,k,u,Lambda,rho and the L^2 target exactly."},
+    {"id": "coefficient", "requirement": "Keep the complete actual symbol and density/discrepancy coefficient coupled."},
+    {"id": "shift", "requirement": "Check every q-shift support, parity, gcd, endpoint, and owner boundary."},
+    {"id": "capacity", "requirement": "Measure the actual rho power before and after differencing."},
+    {"id": "controls", "requirement": "Test short-q, Pell, square, exact-centre, fourth-power, and false unsigned cases."},
+    {"id": "source", "requirement": "Audit literal hypotheses of every proposed external theorem."},
+    {"id": "scope", "requirement": "Separate the canonical cone from other M2 packets, M9, and the target."}
+  ],
+  "closing_assessment": {
+    "decision": "promote_scoped_q_dispersion_obstruction_retain_actual_Gram_open",
+    "resulting_graph_sha256": "a2b3387c43d467aaa2223ecb31807cd09cf0d429dcebd9b7bde0db6f14cf3657",
+    "main_result": "Legal fixed-m q-shifts erase the character, coefficientwise or diagonal-separated one-step bounds gain at most D^(-1/2), and shift plus reciprocal transforms return at equal capacity. The complete fixed-a actual Gram remains open; no hard subrange, canonical M2 theorem, or exponent is promoted."
+  }
+}

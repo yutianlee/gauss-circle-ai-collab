@@ -1,0 +1,568 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-direct-smooth-residual-blockwise-estimate",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Literal smooth residual blockwise M1 estimate",
+        "status": "open",
+        "statement_tex": "For every real X and every literal smooth physical M1 label (D,L) in U_1, prove B_1(D,L;X)<<_epsilon X^(1/4+epsilon), uniformly with the exact Vaaler taper, both frequency signs, denominator profile, height floor, endpoint stars and half weights, support crossings, and real-X boundary convention. The unique hard profile containing d=floor(sqrt X) is excluded and belongs to M9-M1-top-endpoint-signed-cone. This is a physical blockwise estimate, not a global angular-radial or conductor packet.",
+        "dependencies": [
+          "H4-Phi-regularity",
+          "M9-M2-dyadic-weight-nondegeneracy",
+          "M9-M1-frequency-phase-diagram-R10"
+        ],
+        "implies": [
+          "M9-M1-physical-one-count-assembly"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reports/blind_m1_route_assembly_rederivation.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reports/m1_route_assembly_attack.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reports/m1_route_graph_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/candidates/conductor_m1_route_owner_tree.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reviews/conductor_round98_partition_and_route_scope.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reviews/conductor_round98_adjudication.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/synthesis.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Prove the literal smooth residual estimate, or replace it and the hard child by one whole-U_1 theorem such as the exact odd-kernel or RCS target. Do not import the global canonical Gram without a block-local inverse."
+      },
+      {
+        "id": "M9-M1-physical-one-count-assembly",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Physical one-count assembly of all blockwise M1 packets",
+        "status": "proved_internal",
+        "statement_tex": "Use the exact denominator partition with one unexpanded bottom, one hard profile containing d=floor(sqrt X), and otherwise smooth profiles; the exact clipped frequency partition; and owner priority R5-Full, terminal divisor theorem, full second derivative, then TTY. The remaining main set is U_1={(delta,ell) in Omega: ell<delta-1/4, 178ell+1638delta>463} minus {(1/2,0)}. Split its literal labels by physical profile. If the middle/lower residual hard signed cone and the literal smooth residual blockwise estimate hold uniformly with every profile, floor, star, sign, support crossing, and real-X endpoint, then every M1 block is O_epsilon(X^(1/4+epsilon)); the logarithmic one-count assembly proves M9-M1.",
+        "dependencies": [
+          "H4-Phi-regularity",
+          "M9-M2-dyadic-weight-nondegeneracy",
+          "R5-Full",
+          "M9-M1-terminal-frequency-divisor-bound",
+          "M9-M1-TTY-exponent-pair-wedge",
+          "M9-M1-frequency-phase-diagram-R10",
+          "M9-M1-top-endpoint-transform",
+          "M9-M1-top-endpoint-signed-cone",
+          "M9-M1-direct-smooth-residual-blockwise-estimate"
+        ],
+        "implies": [
+          "M9-M1"
+        ],
+        "blockers": [
+          "M9-M1-top-endpoint-signed-cone",
+          "M9-M1-direct-smooth-residual-blockwise-estimate"
+        ],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reports/blind_m1_route_assembly_rederivation.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reports/m1_route_assembly_attack.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reports/m1_route_graph_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/candidates/conductor_m1_route_owner_tree.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reviews/conductor_round98_partition_and_route_scope.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reviews/conductor_round98_adjudication.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Prove the two open physical parents. The one-count blockwise assembly itself is complete."
+      },
+      {
+        "id": "M9-M1-canonical-Gram-route-scope-obstruction",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Canonical M1 Gram does not localize every physical block",
+        "status": "proved_internal",
+        "statement_tex": "The canonical hard actual-symbol Gram theorem owns only one transition-flattened smooth nonaxial principal packet in J^(13/18)<C_cond<=J^(3/4), after global angular recombination and product-wavelet/Farey refinements. That route has summed away the physical L partition and supplies no inverse localization to an individual B_1(D,L;X). Even if the Gram theorem is assumed, it controls neither the middle/lower hard top cone nor every smooth physical U_1 block and therefore does not imply blockwise M9-M1. In its global route it also leaves C_cond>J^(3/4), raw transitions, axes, cone edges, other radial sectors, and radial/top interfaces.",
+        "dependencies": [
+          "M9-M1-canonical-hard-actual-symbol-Gram-estimate",
+          "M9-M1-global-angular-recombination",
+          "M9-M1-frequency-phase-diagram-R10",
+          "M9-M1-lower-radial-phase-diagram",
+          "M9-M1-residual-upper-conductor-offdiagonal-reduction"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reports/blind_m1_route_assembly_rederivation.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reports/m1_route_assembly_attack.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reports/m1_route_graph_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reviews/conductor_round98_partition_and_route_scope.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reviews/conductor_round98_adjudication.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use the canonical Gram only inside its global lower-radial conductor child. A blockwise consequence requires a new localization theorem."
+      },
+      {
+        "id": "M9-M1-global-lower-radial-signed-estimate",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Exact lower-radial signed aggregate for global M1",
+        "status": "open",
+        "statement_tex": "Fix a smooth lower cutoff in n/sqrt X, equal to one near zero and disjoint from the proved compact critical interior. For the exact C_X^*(n), prove the corresponding lower-radial sum sum_n V_low(n/sqrt X)C_X^*(n)n^(-3/4)e(sqrt(Xn))<<_epsilon X^epsilon, with all dyadic lower scales, floors, stars, signs, and hard-top incidences assembled once. On fixed blocks nu<=2/5 the target-safe one-sided divisor replacement may be used but its signed radial sum remains open; above 2/5 both the exact correction and signed limiting cone are retained.",
+        "dependencies": [
+          "M9-M1-global-angular-recombination",
+          "M9-M1-lower-radial-phase-diagram",
+          "M9-M1-subcritical-small-angle-collapse"
+        ],
+        "implies": [
+          "M9-M1-global-radial-one-count-assembly"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reports/blind_m1_route_assembly_rederivation.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reports/m1_route_assembly_attack.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reports/m1_route_graph_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reviews/conductor_round98_partition_and_route_scope.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/synthesis.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Prove the exact lower-radial signed aggregate. Treat alpha and product-wavelet/conductor decompositions as alternative refinements, not simultaneous owners."
+      },
+      {
+        "id": "M9-M1-global-radial-interface-estimate",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Sharp radial endpoint and interface estimate for global M1",
+        "status": "open",
+        "statement_tex": "For the exact C_X^*(n), prove the normalized X^epsilon bound for the sharp upper radial endpoint n=16sqrt X and the finite support, cutoff, and top-interface pieces excluded by the proved smooth critical transfer and the chosen lower cutoff. Retain the endpoint star, hard sample, floors, signs, and all transform boundary terms. This is a physical radial-interface owner; the connector-completed alpha branch is an alternative transformed architecture rather than an additional summand.",
+        "dependencies": [
+          "M9-M1-global-angular-recombination",
+          "M9-M1-smooth-critical-radial-terminal-transfer",
+          "M9-M1-top-endpoint-transform"
+        ],
+        "implies": [
+          "M9-M1-global-radial-one-count-assembly"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reports/blind_m1_route_assembly_rederivation.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reports/m1_route_assembly_attack.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reports/m1_route_graph_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reviews/conductor_round98_partition_and_route_scope.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/synthesis.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Prove the exact sharp radial/top interface package without extending the compact critical theorem to its excluded endpoint."
+      },
+      {
+        "id": "M9-M1-global-radial-one-count-assembly",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Coarse radial one-count assembly of global active M1",
+        "status": "proved_internal",
+        "statement_tex": "Choose one fixed smooth partition of the exact finite n<=16sqrt X sum into a lower cutoff, finitely many compact critical functions, and the sharp upper/interface remainder. The compact critical functions are proved by M9-M1-smooth-critical-radial-terminal-transfer. If the exact lower-radial signed aggregate and the sharp radial/interface estimate are O_epsilon(X^epsilon), then the full global angular-radial estimate follows. Alpha, near-product, product-wavelet, and conductor decompositions are alternative nested attacks inside unresolved children and are not additional flat owners.",
+        "dependencies": [
+          "M9-M1-global-angular-recombination",
+          "M9-M1-smooth-critical-radial-terminal-transfer",
+          "M9-M1-lower-radial-phase-diagram",
+          "M9-M1-global-lower-radial-signed-estimate",
+          "M9-M1-global-radial-interface-estimate"
+        ],
+        "implies": [
+          "M9-M1-global-angular-radial-estimate"
+        ],
+        "blockers": [
+          "M9-M1-global-lower-radial-signed-estimate",
+          "M9-M1-global-radial-interface-estimate"
+        ],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reports/blind_m1_route_assembly_rederivation.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reports/m1_route_assembly_attack.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reports/m1_route_graph_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/candidates/conductor_m1_route_owner_tree.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reviews/conductor_round98_partition_and_route_scope.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reviews/conductor_round98_adjudication.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Prove the two open radial parents. Refine a child by alpha or conductor variables only with an explicit successive-complement identity."
+      },
+      {
+        "id": "M9-M1-GAR-total-active-equivalence",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "GAR is equivalent to the total active M1 target",
+        "status": "proved_internal",
+        "statement_tex": "The exact global recombination gives M_(1,active)^stat(X)=-(4/pi)X^(1/4)G_X+O(log^2 X), with the inactive bottom and transform errors separately O_epsilon(X^(1/4+epsilon)). Therefore M9-M1-global-angular-radial-estimate is exactly sufficient for the total active M1 contribution at the quarter scale. It does not imply any individual dyadic B_1(D,L;X) bound and hence does not imply blockwise M9-M1 or the blockwise M9 node.",
+        "dependencies": [
+          "M9-M1-global-angular-recombination",
+          "M9-M1-global-angular-radial-estimate"
+        ],
+        "implies": [
+          "GC-global-M1-alternative-bridge"
+        ],
+        "blockers": [
+          "M9-M1-global-angular-radial-estimate"
+        ],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reports/blind_m1_route_assembly_rederivation.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reports/m1_route_assembly_attack.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reports/m1_route_graph_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reviews/conductor_round98_partition_and_route_scope.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reviews/conductor_round98_adjudication.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use this only in the alternative total-M1 Gauss-circle bridge. Do not infer blockwise M9-M1."
+      },
+      {
+        "id": "GC-global-M1-alternative-bridge",
+        "type": "reduction",
+        "track": "proof_infrastructure",
+        "title": "Alternative Gauss-circle bridge using global M1",
+        "status": "derived_under_assumptions",
+        "statement_tex": "H1-H3, H4, R5-Full, the exact GAR-to-total-active-M1 equivalence, and blockwise M9-M2 imply P(X)<<_epsilon X^(1/4+epsilon). This is an alternative to the standard blockwise M9 bridge: the global M1 estimate controls the total active M1 contribution, while M9-M2 controls every M2 block. It does not prove the blockwise M9 or M9-M1 statements.",
+        "dependencies": [
+          "H1-H3",
+          "H4",
+          "R5-Full",
+          "M9-M1-GAR-total-active-equivalence",
+          "M9-M2"
+        ],
+        "implies": [
+          "GC-target"
+        ],
+        "blockers": [
+          "M9-M1-global-angular-radial-estimate",
+          "M9-M2"
+        ],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reports/blind_m1_route_assembly_rederivation.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reports/m1_route_assembly_attack.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reports/m1_route_graph_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/candidates/conductor_m1_route_owner_tree.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reviews/conductor_round98_partition_and_route_scope.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reviews/conductor_round98_adjudication.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Close either GAR plus M9-M2 through this route, or retain the standard blockwise M9 route. Do not conjoin the two alternatives as packet owners."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1",
+        "dependencies": [
+          "M9-M1-physical-one-count-assembly"
+        ],
+        "blockers": [
+          "M9-M1-top-endpoint-signed-cone",
+          "M9-M1-direct-smooth-residual-blockwise-estimate"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reports/blind_m1_route_assembly_rederivation.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reports/m1_route_assembly_attack.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reports/m1_route_graph_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reviews/conductor_round98_adjudication.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/synthesis.md"
+          ]
+        },
+        "next_action": "Prove the residual hard top signed cone and literal smooth residual estimate, or one alternative whole-U_1 theorem. The canonical global Gram has no direct blockwise implication."
+      },
+      {
+        "id": "M9-M1-top-endpoint-transform",
+        "implies_removed": [
+          "M9-M1"
+        ],
+        "implies_added": [
+          "M9-M1-physical-one-count-assembly"
+        ],
+        "next_action": "Use this proved transform only on the unique hard physical profile and route its residual cone to the physical assembly."
+      },
+      {
+        "id": "M9-M1-top-endpoint-signed-cone",
+        "statement_tex": "For every literal middle or lower residual frequency shell of the unique hard M1 profile containing d=floor(sqrt X), after excluding the already owned terminal shell and full second-derivative point, prove T_(M1,L)=sum_(h asymp L)sum_(4h<n<16h,n odd)chi_4(n)a_(M1)(h,n)e(sqrt(Xhn))<<_epsilon L^(3/2)X^epsilon. The actual normalized symbol retains Phi(h/(H+1)), W(sqrt(4qh/n)), floors, stars, signs, and real-X support crossings. Together with the proved top transform this supplies exactly the hard residual child of M9-M1-physical-one-count-assembly.",
+        "implies_removed": [
+          "M9-M1"
+        ],
+        "implies_added": [
+          "M9-M1-physical-one-count-assembly"
+        ],
+        "next_action": "Prove only the middle/lower residual hard shells. The terminal hard shell and isolated second-derivative cell are already owned."
+      },
+      {
+        "id": "M9-M1-terminal-frequency-divisor-bound",
+        "implies_removed": [
+          "M9-M1",
+          "M9-endpoint-uniformity"
+        ],
+        "implies_added": [
+          "M9-M1-physical-one-count-assembly"
+        ]
+      },
+      {
+        "id": "M9-M1-TTY-exponent-pair-wedge",
+        "implies_removed": [
+          "M9-M1"
+        ],
+        "implies_added": [
+          "M9-M1-physical-one-count-assembly"
+        ]
+      },
+      {
+        "id": "M9-M1-frequency-phase-diagram-R10",
+        "implies_removed": [
+          "M9-M1"
+        ],
+        "implies_added": [
+          "M9-M1-physical-one-count-assembly"
+        ],
+        "next_action": "Use U_1 only as the exact direct residual input to the physical assembly or to one alternative whole-residual theorem."
+      },
+      {
+        "id": "M9-M1-near-product-character-kernel",
+        "implies_removed": [
+          "M9-M1"
+        ],
+        "next_action": "Treat this as an exact alternative representation of the whole residual. Its separate open odd-kernel estimate, not the reduction, may imply M9-M1."
+      },
+      {
+        "id": "M9-M1-ordered-resonance-cell-decomposition",
+        "implies_removed": [
+          "M9-M1"
+        ],
+        "next_action": "Use this only as the reduction underlying the alternative RCS target; its pointwise bound closes no new U_1 cell."
+      },
+      {
+        "id": "R5-Full",
+        "implies_added": [
+          "M9-M1-physical-one-count-assembly"
+        ]
+      },
+      {
+        "id": "M9-M2-dyadic-weight-nondegeneracy",
+        "implies_added": [
+          "M9-M1-physical-one-count-assembly"
+        ]
+      },
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "dependencies": [
+          "M9-M1-global-radial-one-count-assembly"
+        ],
+        "implies_added": [
+          "M9-M1-GAR-total-active-equivalence"
+        ],
+        "blockers": [
+          "M9-M1-global-lower-radial-signed-estimate",
+          "M9-M1-global-radial-interface-estimate"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reports/blind_m1_route_assembly_rederivation.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reports/m1_route_assembly_attack.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reports/m1_route_graph_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reviews/conductor_round98_adjudication.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/synthesis.md"
+          ]
+        },
+        "next_action": "Prove the exact lower-radial and sharp-interface parents. Canonical, alpha, near-product, and conductor programs are alternative nested attacks, not conjunctive GAR dependencies."
+      },
+      {
+        "id": "M9-M1-global-angular-recombination",
+        "implies_added": [
+          "M9-M1-global-radial-one-count-assembly",
+          "M9-M1-GAR-total-active-equivalence"
+        ],
+        "next_action": "Use this exact identity either in the coarse radial assembly or in the total-active-M1 equivalence. It does not localize individual physical blocks."
+      },
+      {
+        "id": "M9-M1-smooth-critical-radial-terminal-transfer",
+        "implies_added": [
+          "M9-M1-global-radial-one-count-assembly"
+        ]
+      },
+      {
+        "id": "M9-M1-lower-radial-phase-diagram",
+        "implies_added": [
+          "M9-M1-global-lower-radial-signed-estimate",
+          "M9-M1-global-radial-one-count-assembly"
+        ]
+      },
+      {
+        "id": "M9-M1-subcritical-small-angle-collapse",
+        "implies_added": [
+          "M9-M1-global-lower-radial-signed-estimate"
+        ]
+      },
+      {
+        "id": "M9-M1-local-eigenspace-profile-projection",
+        "dependencies_removed": [
+          "M9-M1-maximal-angular-sign-kernel"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reports/m1_route_graph_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reviews/conductor_round98_graph_and_cycle_audit.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/synthesis.md"
+          ]
+        },
+        "next_action": "Use this proved projection as a prerequisite for the open maximal kernel; do not reverse the dependency."
+      },
+      {
+        "id": "M9-M1-beta-cellwise-phase-removed-symbol-reduction",
+        "dependencies_removed": [
+          "M9-M1-beta-separated-R1-regular-symbol-BV"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reports/m1_route_graph_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reviews/conductor_round98_graph_and_cycle_audit.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/synthesis.md"
+          ]
+        },
+        "next_action": "Use the cellwise normalization as the prerequisite of the fixed-height and signed-section lemmas; the downstream separated BV theorem must not be its dependency."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "blockers_removed": [
+          "M9-M1-canonical-hard-actual-symbol-Gram-estimate"
+        ],
+        "blockers_added": [
+          "M9-M1-top-endpoint-signed-cone",
+          "M9-M1-direct-smooth-residual-blockwise-estimate"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reports/m1_route_graph_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reviews/conductor_round98_graph_and_cycle_audit.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/synthesis.md"
+          ]
+        },
+        "next_action": "For the standard blockwise route, prove both direct M1 parents and the three M2 parents uniformly for every real-X physical label. The alternative GAR bridge bypasses blockwise M1 but not its own lower/interface parents."
+      },
+      {
+        "id": "M9",
+        "blockers_removed": [
+          "M9-M2-character-factor",
+          "M9-near-collision-taxonomy"
+        ],
+        "blockers_added": [
+          "M9-M1-top-endpoint-signed-cone",
+          "M9-M1-direct-smooth-residual-blockwise-estimate",
+          "M9-M2-top-endpoint-density-discrepancy-energy",
+          "M9-M2-smooth-balanced-quarter-packet-estimate",
+          "M9-M2-smooth-unbalanced-three-quarter-estimate"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reviews/conductor_round98_graph_and_cycle_audit.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/synthesis.md"
+          ]
+        },
+        "next_action": "On the standard route, prove the two direct M1 and three M2 analytic parents and retain endpoint uniformity. Alternatively, prove GAR and M9-M2 through GC-global-M1-alternative-bridge without claiming blockwise M9."
+      },
+      {
+        "id": "GC-target",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-route-interface-assembly/reviews/conductor_round98_partition_and_route_scope.md",
+            "rounds/codex-managed/m9-m1-route-interface-assembly/synthesis.md"
+          ]
+        },
+        "next_action": "Close either the standard blockwise Conditional-bridge or the alternative GAR plus M9-M2 bridge. No quarter estimate is currently proved."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round98-canonical-Gram-alone-implies-blockwise-M9-M1",
+        "reason": "The canonical theorem is one transformed first-band packet after global recombination and has no inverse localization to every literal physical block."
+      },
+      {
+        "id": "Round98-GAR-implies-blockwise-M9-M1-or-M9",
+        "reason": "GAR bounds only the scalar total active M1 aggregate. The summation map is not invertible on individual dyadic blocks."
+      },
+      {
+        "id": "Round98-alpha-radial-conductor-flat-conjunction",
+        "reason": "Alpha, radial, product-wavelet, and conductor descriptions are nested or alternative transformed architectures; conjoining them without successive complements double-owns terms."
+      },
+      {
+        "id": "Round98-partial-direct-owner-implies-full-M9-M1",
+        "reason": "The hard transform, terminal theorem, TTY wedge, phase diagram, near-product reduction, and ordered-resonance reduction each leave a nonempty residual."
+      },
+      {
+        "id": "Round98-delta-one-half-selects-hard-M1-profile",
+        "reason": "Fixed smooth physical bands below the top also have exponent 1/2+o(1); only the actual profile containing floor(sqrt X) is hard."
+      },
+      {
+        "id": "Round98-canonical-Gram-closes-full-GAR",
+        "reason": "Even within the global route, upper conductors, raw transitions, axes, cone edges, other radial sectors, and radial/top interfaces remain open."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1-canonical-hard-actual-symbol-Gram-estimate",
+        "reason": "Round 98 types its scope but proves no Gram estimate."
+      },
+      {
+        "id": "M9-M1-top-endpoint-signed-cone",
+        "reason": "The statement is narrowed to its unowned hard shells, but the signed estimate remains open."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "Both direct physical parents remain open."
+      },
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "reason": "Both radial parents remain open."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Round 98 is confined to M1 route assembly."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "The blocker list is repaired, but no uniform analytic theorem is proved."
+      },
+      {
+        "id": "M9",
+        "reason": "Neither the standard nor alternative conditional route is closed."
+      },
+      {
+        "id": "GC-target",
+        "reason": "No new pointwise estimate or exponent is proved."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 8,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 98 constructs two exact noncircular M1 proof architectures, proves the canonical packet has no blockwise localization, isolates four literal analytic parents, creates a lawful global-M1 alternative bridge, and removes two exact dependency cycles without promoting any unproved estimate."
+  }
+}

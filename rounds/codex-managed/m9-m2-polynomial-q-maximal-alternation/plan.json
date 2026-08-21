@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "round_index": 105,
+  "campaign_id": "m9-m2-polynomial-q-maximal-alternation",
+  "title": "Complete actual maximal q-alternation on polynomial primitive-ray shells",
+  "starting_graph_sha256": "f8f20833d2f24fa0b323488e247887ba943b8dffdd3eacb58e5bae773eb5831b",
+  "objective": "Prove a complete actual maximal alternating q-sum bound strong enough to close the polynomial fixed-a Gram, or rigorously isolate the first actual-symbol obstruction after uniform fixed-q sampled-k control.",
+  "max_concurrency": 3,
+  "resource_policy": {
+    "analytical_algebraic_minimum_percent": 95,
+    "numerical_experimental_maximum_percent": 5,
+    "planned_numerical_percent": 0
+  },
+  "tasks": [
+    "blind_maximal_q_rederivation",
+    "adjacent_q_transport_attack",
+    "maximal_q_hostile_source_audit"
+  ],
+  "exit_gate": "Prove the maximal alternating q theorem or a strict polynomial subrange, or produce a rigorous actual-symbol no-go and a strictly smaller surviving correlation. Quantify the exact implication to the fixed-a Gram."
+}

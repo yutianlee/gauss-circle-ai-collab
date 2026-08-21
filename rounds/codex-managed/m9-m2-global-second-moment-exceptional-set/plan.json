@@ -1,0 +1,28 @@
+{
+  "round_index": 93,
+  "campaign_id": "m9-m2-global-second-moment-exceptional-set",
+  "objective": "Prove the strongest honest global second-moment and exceptional-set theorem for the exact frozen M2 coefficient, and decide whether the moving Vaaler height/top profile transfers without a power loss.",
+  "resource_budget": {
+    "analytical_algebraic_percent": 90,
+    "numerical_experimental_percent": 0,
+    "source_audit_percent": 10
+  },
+  "tasks": [
+    "blind_m2_moment_rederivation",
+    "moving_coefficient_moment_attack",
+    "moment_hostile_source_audit"
+  ],
+  "exit_gates": [
+    "exact reduced-fraction grouping",
+    "coefficient ell2 mass",
+    "continuous large-sieve normalization",
+    "chi4 and both frequency signs",
+    "exceptional-set exponent and all-block union",
+    "diagonal sharpness",
+    "moving-height and top-profile transfer",
+    "pointwise and canonical-core scope",
+    "source hypotheses",
+    "blind and hostile validation",
+    "conductor decision"
+  ]
+}

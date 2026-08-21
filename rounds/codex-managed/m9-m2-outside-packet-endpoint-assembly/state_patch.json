@@ -1,0 +1,374 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-smooth-balanced-quarter-packet-estimate",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Balanced smooth residual signed quarter-packet estimate",
+        "status": "open",
+        "statement_tex": "Fix C_bal=16. For every real X and every literal smooth residual M2 block with 1<=K/L<=C_bal, after the accepted fixed smooth gcd decomposition and all preliminary exact-square, near-square, and large-gcd owners, prove |sum_G G P_G|<<_epsilon L^(3/2)X^epsilon. The absolute value remains outside the G-sum, and P_G retains both quarter shifts, chi_4, the Vaaler taper, profiles, floors, stars, support crossings, signs, and all real-X endpoint labels. This is the open estimate following the proved balanced reduction, not the reduction itself.",
+        "dependencies": [
+          "M9-M2-smooth-small-gcd-quarter-packet",
+          "M9-M2-character-factor",
+          "M9-M2-dyadic-weight-nondegeneracy"
+        ],
+        "implies": [
+          "M9-M2-physical-one-count-assembly"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/reports/blind_m2_assembly_rederivation.md",
+            "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/reports/m2_outside_packet_assembly_attack.md",
+            "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/reports/m2_assembly_hostile_hygiene_audit.md",
+            "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/reviews/conductor_round97_partition_and_normalization.md",
+            "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/synthesis.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Prove the outside-absolute signed G-aggregate for the actual fixed-comparability smooth symbol. Do not replace it by sum_G G|P_G| and do not import the hard endpoint."
+      },
+      {
+        "id": "M9-M2-smooth-unbalanced-three-quarter-estimate",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Unbalanced smooth residual product-phase three-quarter estimate",
+        "status": "open",
+        "statement_tex": "For every real X and every literal smooth residual M2 block with K=XL/D^2, M=LK, and K/L>16, prove T_(L,K)=sum_(h asymp L,k asymp K)chi_4(h)a_(L,K)(h,k)e(sqrt(Xhk))<<_epsilon M^(3/4)X^epsilon. The slanted actual symbol retains the exact Vaaler taper, both quarter shifts and signs, profiles, floors, stars, support entries and exits, and transform boundary terms. By the proved smooth Poisson identity this is exactly sufficient for the corresponding physical block, but that identity does not prove the estimate.",
+        "dependencies": [
+          "M9-M2-smooth-dual-three-quarter-equivalence",
+          "M9-M2-character-factor",
+          "M9-M2-dyadic-weight-nondegeneracy"
+        ],
+        "implies": [
+          "M9-M2-physical-one-count-assembly"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/reports/blind_m2_assembly_rederivation.md",
+            "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/reports/m2_outside_packet_assembly_attack.md",
+            "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/reports/m2_assembly_hostile_hygiene_audit.md",
+            "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/reviews/conductor_round97_partition_and_normalization.md",
+            "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/synthesis.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Seek a signed rectangular square-root-product estimate retaining chi_4 and the slanted actual symbol. Balanced gcd packets do not control K/L tending to infinity."
+      },
+      {
+        "id": "M9-M2-physical-one-count-assembly",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Physical one-count assembly of all M2 packets",
+        "status": "proved_internal",
+        "statement_tex": "Use the exact denominator partition with one unexpanded bottom, one hard profile at d=floor(sqrt X), and otherwise smooth profiles; the exact clipped odd-frequency partition; and owner priority R5-Full, terminal T2S, full second derivative, TTY, then the residual U. Split U physically into the unique hard band, balanced smooth labels 1<=K/L<=16, and unbalanced smooth labels K/L>16. If the top signed cone, the balanced signed quarter-packet estimate, and the unbalanced M^(3/4) product-phase estimate hold uniformly with every literal profile, floor, star, sign, shift, support crossing, and real-X endpoint, then every M2 block is O_epsilon(X^(1/4+epsilon)); the O(log^2 X) one-count assembly proves M9-M2.",
+        "dependencies": [
+          "M9-M2-dyadic-weight-nondegeneracy",
+          "R5-Full",
+          "M9-M2-frequency-phase-diagram-R5",
+          "M9-M2-character-factor",
+          "M9-M2-top-endpoint-transform",
+          "M9-M2-top-endpoint-signed-cone",
+          "M9-M2-smooth-balanced-quarter-packet-estimate",
+          "M9-M2-smooth-unbalanced-three-quarter-estimate"
+        ],
+        "implies": [
+          "M9-M2"
+        ],
+        "blockers": [
+          "M9-M2-top-endpoint-density-discrepancy-energy",
+          "M9-M2-smooth-balanced-quarter-packet-estimate",
+          "M9-M2-smooth-unbalanced-three-quarter-estimate"
+        ],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/reports/blind_m2_assembly_rederivation.md",
+            "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/reports/m2_outside_packet_assembly_attack.md",
+            "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/reports/m2_assembly_hostile_hygiene_audit.md",
+            "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/candidates/conductor_m2_packet_table.md",
+            "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/reviews/conductor_round97_partition_and_normalization.md",
+            "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/reviews/conductor_round97_graph_and_implication.md",
+            "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/reviews/conductor_round97_adjudication.md",
+            "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Prove the three open analytic parents. The reduction itself needs no further packet bookkeeping."
+      },
+      {
+        "id": "M9-M2-hard-top-alone-outside-packet-obstruction",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "A canonical hard-top theorem alone leaves smooth M2 packets",
+        "status": "proved_internal",
+        "statement_tex": "The canonical density-discrepancy theorem owns only the residual of the unique physical hard band containing d=floor(sqrt X). It has no implication for a smooth band merely because its exponent tends to 1/2. The residual contains a smooth unbalanced witness (delta,ell)=(1/3,0), with K/L=X^(1/3), and a smooth balanced witness D asymp sqrt(X)/2, L asymp X^(1/8), with K/L asymp 4. Hence the canonical hard theorem alone cannot prove the full M9-M2 assembly in the accepted dependency system.",
+        "dependencies": [
+          "M9-M2-frequency-phase-diagram-R5",
+          "M9-M2-dyadic-weight-nondegeneracy",
+          "M9-M2-top-endpoint-density-discrepancy-energy",
+          "M9-M2-smooth-dual-three-quarter-equivalence",
+          "M9-M2-smooth-small-gcd-quarter-packet"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/reports/blind_m2_assembly_rederivation.md",
+            "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/reports/m2_outside_packet_assembly_attack.md",
+            "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/reports/m2_assembly_hostile_hygiene_audit.md",
+            "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/reviews/conductor_round97_partition_and_normalization.md",
+            "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/reviews/conductor_round97_adjudication.md",
+            "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Do not infer full M2 from the hard cone. Treat the two smooth estimate nodes as independent outside packets."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-character-factor",
+        "status": "proved_internal",
+        "dependencies_removed": [
+          "H4",
+          "M9-M2-generic-2adic-sign-lock",
+          "M9-M2-beta-squarewave-convolution",
+          "M9-M2-two-shift-sine-kernel-sharpness"
+        ],
+        "dependencies_added": [
+          "M9-M2-beta-algebra"
+        ],
+        "implies_removed": [
+          "M9-M2"
+        ],
+        "implies_added": [
+          "M9-M2-physical-one-count-assembly"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/reports/blind_m2_assembly_rederivation.md",
+            "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/reports/m2_outside_packet_assembly_attack.md",
+            "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/reports/m2_assembly_hostile_hygiene_audit.md",
+            "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/reviews/conductor_round97_partition_and_normalization.md",
+            "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/synthesis.md"
+          ]
+        },
+        "next_action": "Use the exact chi_4 factor as a proved no-erasure normalization guardrail. It is not an analytic estimate and no longer blocks M9-M2.",
+        "reason_for_promotion": "The exact identity is already contained in the proved M9-M2-beta-algebra node and was reproduced in all Round-97 assembly audits."
+      },
+      {
+        "id": "M9-near-collision-taxonomy",
+        "dependencies_removed": [
+          "M9-M2"
+        ],
+        "dependencies_added": [
+          "M9-M2-fourth-moment-expansion"
+        ],
+        "implies_removed": [
+          "M9-M2"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/reports/m2_assembly_hostile_hygiene_audit.md",
+            "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/reviews/conductor_round97_graph_and_implication.md",
+            "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/synthesis.md"
+          ]
+        },
+        "next_action": "Retain this as an alternative fourth-moment route. The taxonomy alone neither depends on nor implies the full M9-M2 theorem."
+      },
+      {
+        "id": "M9-M2-top-frequency-two-shift-T2S",
+        "implies_removed": [
+          "M9-M2"
+        ],
+        "implies_added": [
+          "M9-M2-physical-one-count-assembly"
+        ]
+      },
+      {
+        "id": "M9-M2-TTY-exponent-pair-wedge",
+        "implies_removed": [
+          "M9-M2"
+        ],
+        "implies_added": [
+          "M9-M2-physical-one-count-assembly"
+        ]
+      },
+      {
+        "id": "M9-M2-frequency-phase-diagram-R5",
+        "implies_removed": [
+          "M9-M2"
+        ],
+        "implies_added": [
+          "M9-M2-physical-one-count-assembly"
+        ],
+        "next_action": "Use the exact residual corridor only as the phase-diagram input to the physical one-count assembly."
+      },
+      {
+        "id": "M9-M2-smooth-dual-three-quarter-equivalence",
+        "implies_added": [
+          "M9-M2-smooth-unbalanced-three-quarter-estimate"
+        ],
+        "next_action": "Treat this as a proved transform. The separate unbalanced estimate node is the open analytic target."
+      },
+      {
+        "id": "M9-M2-smooth-small-gcd-quarter-packet",
+        "implies_removed": [
+          "M9-M2"
+        ],
+        "implies_added": [
+          "M9-M2-smooth-balanced-quarter-packet-estimate"
+        ],
+        "next_action": "Treat this as a proved balanced reduction. Prove the separate outside-absolute signed estimate and keep the hard endpoint excluded."
+      },
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "implies_added": [
+          "M9-M2-physical-one-count-assembly"
+        ],
+        "next_action": "Prove the canonical joint density-discrepancy energy. Even then, use the signed cone only as the hard-band parent of the physical assembly."
+      },
+      {
+        "id": "R5-Full",
+        "implies_added": [
+          "M9-M2-physical-one-count-assembly"
+        ]
+      },
+      {
+        "id": "M9-M2-dyadic-weight-nondegeneracy",
+        "implies_added": [
+          "M9-M2-physical-one-count-assembly"
+        ]
+      },
+      {
+        "id": "M9-M2",
+        "dependencies_removed": [
+          "H4",
+          "M9-M2-character-factor",
+          "M9-near-collision-taxonomy",
+          "M9-M2-top-frequency-two-shift-T2S",
+          "M9-M2-frequency-phase-diagram-R5",
+          "M9-M2-two-shift-sine-kernel-sharpness",
+          "M9-M2-smooth-dual-three-quarter-equivalence",
+          "M9-M2-smooth-small-gcd-quarter-packet",
+          "M9-M2-top-endpoint-transform",
+          "M9-M2-top-endpoint-signed-cone",
+          "M9-M2-top-endpoint-row-correlation-reduction",
+          "M9-M2-top-endpoint-transposed-character-energy"
+        ],
+        "dependencies_added": [
+          "M9-M2-physical-one-count-assembly"
+        ],
+        "blockers_removed": [
+          "M9-M2-character-factor",
+          "M9-near-collision-taxonomy",
+          "M9-M2-denominator-paired-weighted-bound",
+          "M9-M2-fourth-moment-average-to-pointwise",
+          "M9-M2-local-fourth-moment-LFM"
+        ],
+        "blockers_added": [
+          "M9-M2-smooth-balanced-quarter-packet-estimate",
+          "M9-M2-smooth-unbalanced-three-quarter-estimate"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/reports/blind_m2_assembly_rederivation.md",
+            "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/reports/m2_outside_packet_assembly_attack.md",
+            "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/reports/m2_assembly_hostile_hygiene_audit.md",
+            "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/reviews/conductor_round97_adjudication.md",
+            "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/synthesis.md"
+          ]
+        },
+        "next_action": "Prove the canonical hard density-discrepancy theorem and the two explicit smooth outside estimates. The physical assembly is now complete and noncircular."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "blockers_added": [
+          "M9-M2-smooth-balanced-quarter-packet-estimate",
+          "M9-M2-smooth-unbalanced-three-quarter-estimate"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/reports/m2_assembly_hostile_hygiene_audit.md",
+            "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/synthesis.md"
+          ]
+        },
+        "next_action": "Prove and assemble the canonical M1 and M2 cores plus both smooth M2 outside estimates uniformly for every real-X denominator label."
+      },
+      {
+        "id": "M9",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/synthesis.md"
+          ]
+        },
+        "next_action": "M9-M1 remains open. For M9-M2, prove the canonical hard core and the two smooth outside packets; then combine with endpoint uniformity."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round97-canonical-hard-top-alone-implies-M9-M2",
+        "reason": "The canonical theorem owns only the unique hard physical band. Nonempty balanced and unbalanced smooth residual cells remain."
+      },
+      {
+        "id": "Round97-smooth-Poisson-equivalence-is-the-three-quarter-estimate",
+        "reason": "Poisson and stationary phase identify the product-phase target but do not bound it."
+      },
+      {
+        "id": "Round97-balanced-gcd-reduction-proves-the-quarter-packet-target",
+        "reason": "The reduction stops at the outside-absolute signed sum |sum_G G P_G|, which remains open."
+      },
+      {
+        "id": "Round97-delta-equals-one-half-selects-the-hard-profile",
+        "reason": "Every fixed smooth band D_j=2^(-j)sqrt X has exponent 1/2+o(1); only the physical jump label is hard."
+      },
+      {
+        "id": "Round97-near-collision-taxonomy-is-a-mandatory-direct-M2-parent",
+        "reason": "It is an alternative fourth-moment route and was absent from the exact physical TOP+BAL+UNBAL assembly."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M2-top-endpoint-density-discrepancy-energy",
+        "reason": "Round 97 formalizes its hard-band role but proves no density-discrepancy estimate."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "The canonical hard theorem and both smooth outside estimates remain open."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "Round 97 is confined to M2 assembly."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "The exact blocker list is improved, but no pointwise all-band theorem is proved."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1 and M9-M2 remain open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "No new pointwise estimate or global exponent is proved."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 7,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 97 closes the full M2 packet bookkeeping, proves that the hard canonical theorem alone is insufficient, isolates two exact smooth analytic survivors, and repairs circular or partial-owner graph edges without claiming any new estimate."
+  }
+}

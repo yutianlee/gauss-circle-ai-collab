@@ -1,0 +1,237 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 94,
+    "round_type": "prescribed_point_local_moment_bridge",
+    "campaign_id": "gc-prescribed-point-local-moment-bridge",
+    "title": "Prescribed-point persistence, local moment, and integer exceptional-set bridge",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "6b7b5b681890edd49b0e0a525fe813044943d4072dd7fc90e27620615d2e93ae",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 90,
+      "numerical_experimental_maximum_percent": 10,
+      "planned_numerical_percent": 0,
+      "literature_policy": "Audit only primary short-interval, large-value, or local Gauss-circle sources whose exact variable, interval, coefficient, and pointwise scope can be mapped. Structural analogy is not theorem applicability."
+    },
+    "target_obligations": [
+      "GC-global-real-second-moment-density-one-quarter",
+      "M9-endpoint-uniformity",
+      "M9-M2-fourth-moment-average-to-pointwise",
+      "M9-M2-local-fourth-moment-LFM",
+      "M9-M1-canonical-hard-actual-symbol-Gram-estimate",
+      "M9-M2-top-endpoint-density-discrepancy-energy",
+      "Conditional-bridge",
+      "GC-target"
+    ],
+    "frozen_target": {
+      "question": "Starting only from the accepted global real mean square, prove the exact one-sided persistence and discrete exceptional-set consequences, then determine and attack the weakest uniform short-window actual-coefficient moment that would upgrade a prescribed point to the quarter exponent.",
+      "reference_formula": "If M=|P(x)|, monotonicity gives M^2*min(H,M/(2*pi)) << sup_(|I|=H) int_I|P|^2. Audit whether the standard local scale H Y^(1/2+epsilon) for H=Y^(1/4+o(1)), or the stronger total scale Y^(3/4+epsilon) on a fixed longer window, can be proved from the literal moving M1/M2 expansion; otherwise isolate the exact signed rational-frequency cluster survivor.",
+      "quantities": [
+        "P(t)=N(sqrt(t))-pi*t with inclusive integer jumps",
+        "Round-93 global moment int_Y^(2Y)|P(t)|^2 dt << Y^(3/2+epsilon)",
+        "one-sided persistence length M/(2*pi)",
+        "one-separated sampling sum_x|P(x)|^2",
+        "local bridge M << Q^(1/3)+(Q/H)^(1/2) for local mass Q",
+        "target window H=Y^(1/4+sigma)",
+        "frequency cells |h/(4d)-nu/H| << H^(-1)",
+        "top denominator D=Y^(1/2) and actual height |h|<<D Y^(-1/4)"
+      ],
+      "scope": [
+        "retain the jump convention and both persistence signs",
+        "derive integer and one-separated exceptional counts with bounded overlap",
+        "retain exact rational lifts, chi_4, both signs, floors, moving heights, hard top, stars, M1/M2 ownership, and R5 in every local expansion",
+        "do not infer a prescribed-point theorem from global Chebyshev",
+        "do not assume either canonical core or claim a uniform exponent without the signed cluster estimate"
+      ]
+    },
+    "completion_criteria": [
+      "Prove or refute exact one-sided persistence at all real and jump points.",
+      "Prove the one-separated sampling and integer exceptional-set consequences.",
+      "Derive the sharp local-moment-to-pointwise formula, including additive errors and boundary windows.",
+      "Decide whether unit-window local L2 is equivalent to pointwise control.",
+      "Derive the exact short-window moving M1/M2 frequency-cluster kernel.",
+      "Quantify the top-scale spacing capacity against the required local target.",
+      "Prove a nontrivial local range or name the first exact signed cluster survivor.",
+      "Audit current primary short-interval and large-value sources literally.",
+      "Complete clean blind, construction, and hostile/source gates."
+    ],
+    "controls": [
+      "positive_right_persistence",
+      "negative_left_persistence",
+      "integer_jump_convention",
+      "dyadic_boundary_windows",
+      "bounded_overlap_sampling",
+      "integer_exceptional_count",
+      "local_bridge_exponent",
+      "additive_error_ledger",
+      "unit_window_equivalence",
+      "moving_height_floor",
+      "hard_top_and_stars",
+      "chi4_and_two_sided_frequency",
+      "exact_rational_clusters",
+      "M1_M2_R5_ownership",
+      "top_scale_spacing_capacity",
+      "canonical_core_nonimplication",
+      "source_hypothesis_map"
+    ],
+    "tasks": [
+      {
+        "id": "blind_pointwise_bridge_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "running",
+        "target": "Independently prove or refute the persistence, one-separated sampling, integer exceptional-set, and local-moment implication package, and identify the strongest conclusion available from the global moment alone.",
+        "context_files": [
+          "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/derivation_packet.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "all strategy files",
+          "all prior reports, candidates, reviews, syntheses, source cards, and sibling Round-94 reports",
+          "all web sources"
+        ],
+        "required_controls": [
+          "positive_right_persistence",
+          "negative_left_persistence",
+          "integer_jump_convention",
+          "dyadic_boundary_windows",
+          "bounded_overlap_sampling",
+          "integer_exceptional_count",
+          "local_bridge_exponent",
+          "additive_error_ledger",
+          "unit_window_equivalence",
+          "canonical_core_nonimplication"
+        ],
+        "required_output": [
+          "Exactly seven numbered report sections.",
+          "A full proof or exact first failure for every bridge statement, with no local-frequency claimant context.",
+          "Write only rounds/codex-managed/gc-prescribed-point-local-moment-bridge/reports/blind_pointwise_bridge_rederivation.md."
+        ],
+        "report_path": "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/reports/blind_pointwise_bridge_rederivation.md"
+      },
+      {
+        "id": "local_cluster_moment_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "running",
+        "target": "Derive the literal short-window moving M1/M2 Gram kernel and try to prove the target local moment on H=Y^(1/4+sigma); if it fails, isolate the smallest exact signed cluster inequality and quantify every exponent.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/derivation_packet.md",
+          "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/candidates/conductor_persistence_and_local_bridge.md",
+          "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/candidates/conductor_exact_cluster_kernel.md",
+          "rounds/codex-managed/m9-m2-global-second-moment-exceptional-set/synthesis.md",
+          "rounds/codex-managed/m9-m2-global-second-moment-exceptional-set/reports/moving_coefficient_moment_attack.md",
+          "rounds/codex-managed/m9-canonical-core-formalization/candidates/conductor_canonical_core_statements.md"
+        ],
+        "required_controls": [
+          "local_bridge_exponent",
+          "additive_error_ledger",
+          "moving_height_floor",
+          "hard_top_and_stars",
+          "chi4_and_two_sided_frequency",
+          "exact_rational_clusters",
+          "M1_M2_R5_ownership",
+          "top_scale_spacing_capacity",
+          "canonical_core_nonimplication"
+        ],
+        "required_output": [
+          "Exactly seven numbered report sections.",
+          "An exact local kernel, a proved range or first signed survivor, exponent ledger, and graph-ready state recommendation.",
+          "Write only rounds/codex-managed/gc-prescribed-point-local-moment-bridge/reports/local_cluster_moment_attack.md."
+        ],
+        "report_path": "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/reports/local_cluster_moment_attack.md"
+      },
+      {
+        "id": "pointwise_bridge_hostile_source_audit",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "status": "running",
+        "target": "Try to break every persistence, sampling, local-moment, endpoint, and implication normalization; audit primary short-interval or large-value sources and decide whether any literal theorem beats the top-scale cluster barrier.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "state/gap_register.md",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/derivation_packet.md",
+          "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/candidates/conductor_persistence_and_local_bridge.md",
+          "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/candidates/conductor_exact_cluster_kernel.md",
+          "rounds/codex-managed/m9-m2-global-second-moment-exceptional-set/synthesis.md",
+          "strategy/conductor_0817_full_proof_strategy.md"
+        ],
+        "required_controls": [
+          "positive_right_persistence",
+          "negative_left_persistence",
+          "integer_jump_convention",
+          "dyadic_boundary_windows",
+          "bounded_overlap_sampling",
+          "integer_exceptional_count",
+          "local_bridge_exponent",
+          "additive_error_ledger",
+          "unit_window_equivalence",
+          "moving_height_floor",
+          "hard_top_and_stars",
+          "chi4_and_two_sided_frequency",
+          "exact_rational_clusters",
+          "M1_M2_R5_ownership",
+          "top_scale_spacing_capacity",
+          "canonical_core_nonimplication",
+          "source_hypothesis_map"
+        ],
+        "required_output": [
+          "Exactly seven numbered report sections.",
+          "A hostile seam table, literal primary-source map, sharp controls, and a promote/revise/reject recommendation.",
+          "Write only rounds/codex-managed/gc-prescribed-point-local-moment-bridge/reports/pointwise_bridge_hostile_source_audit.md."
+        ],
+        "report_path": "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/reports/pointwise_bridge_hostile_source_audit.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "persistence",
+        "requirement": "Check both signs, inclusive jumps, orientation, and dyadic boundaries exactly."
+      },
+      {
+        "id": "sampling",
+        "requirement": "Prove bounded overlap for one-separated points and state the integer exceptional exponent."
+      },
+      {
+        "id": "bridge",
+        "requirement": "Derive the local-to-pointwise and additive-error exponents without suppressing H."
+      },
+      {
+        "id": "local_kernel",
+        "requirement": "Retain the exact moving coefficients and derive the frequency-cluster Gram kernel and tails."
+      },
+      {
+        "id": "endpoint",
+        "requirement": "Audit D=Y^(1/2), H=Y^(1/4+sigma), floors, hard top, and stars."
+      },
+      {
+        "id": "scope",
+        "requirement": "Separate almost-all integers from a prescribed integer and local equivalence from an actual local estimate."
+      },
+      {
+        "id": "sources",
+        "requirement": "Map every primary theorem in its literal variable, interval, smoothing, coefficient, and uniformity range."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "6b7b5b681890edd49b0e0a525fe813044943d4072dd7fc90e27620615d2e93ae",
+    "generated_at": "2026-08-17T04:02:22.683041+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

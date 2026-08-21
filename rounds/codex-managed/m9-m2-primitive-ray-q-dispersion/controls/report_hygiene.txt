@@ -1,0 +1,27 @@
+Round 96 report hygiene
+
+blind_primitive_ray_q_rederivation.md:
+  sections 7
+  inline delimiters 157/157
+  display delimiters 32/32
+  CR 0
+  forbidden controls 0
+  trailing whitespace 0
+
+primitive_ray_q_dispersion_attack.md:
+  sections 7
+  inline delimiters 167/167
+  display delimiters 35/35
+  CR 0
+  forbidden controls 0
+  trailing whitespace 0
+
+primitive_ray_q_hostile_source_audit.md:
+  sections 7
+  inline delimiters 233/233
+  display delimiters 30/30
+  CR 0
+  forbidden controls 0
+  trailing whitespace 0
+
+git diff --check: clean.

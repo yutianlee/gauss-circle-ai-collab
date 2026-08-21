@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "round_index": 97,
+  "round_type": "m9_m2_outside_packet_endpoint_assembly",
+  "campaign_id": "m9-m2-outside-packet-endpoint-assembly",
+  "title": "M2 outside-packet and endpoint assembly after the canonical hard top",
+  "status": "complete",
+  "max_concurrency": 3,
+  "coordinator": "Codex",
+  "starting_graph_sha256": "a2b3387c43d467aaa2223ecb31807cd09cf0d429dcebd9b7bde0db6f14cf3657",
+  "resource_policy": {
+    "analytical_algebraic_minimum_percent": 95,
+    "numerical_experimental_maximum_percent": 5,
+    "planned_numerical_percent": 0,
+    "literature_policy": "Use accepted source-audited nodes. If a new source is proposed, use primary sources and audit the literal weight, range, endpoint, and uniformity hypotheses."
+  },
+  "target_obligations": [
+    "M9-M2",
+    "M9-M2-top-endpoint-density-discrepancy-energy",
+    "M9-M2-top-endpoint-signed-cone",
+    "M9-endpoint-uniformity",
+    "M9"
+  ],
+  "frozen_target": {
+    "question": "Assuming the canonical residual hard-top M2 theorem, which exact additional outside-packet estimates are necessary and sufficient to prove the full pointwise M9-M2 dyadic estimate?",
+    "reference_formula": "Every literal M2 block B_2(D,L;X) must be O_epsilon(X^(1/4+epsilon)) on the active triangle, with bottom and R5 owned once and logarithmic assembly absorbed.",
+    "scope": [
+      "build a physical one-count table before any implication",
+      "distinguish the single hard top band from smooth top-scale bands",
+      "separate proved reductions from proved estimates",
+      "retain all character, profile, floor, star, sign, and real-X endpoint data",
+      "do not assume any open Gram or smooth product-phase estimate",
+      "do not infer M9-M1 or the quarter target"
+    ]
+  },
+  "completion_criteria": [
+    "Construct the exact active-triangle owner table.",
+    "Split the residual set into hard top, smooth balanced, and smooth unbalanced packets.",
+    "Audit all physical endpoint and one-count seams.",
+    "Decide whether the canonical theorem alone implies M9-M2.",
+    "State the minimal conditional assembly theorem or exact smaller residual.",
+    "Classify legacy near-collision and fourth-moment dependencies as necessary or alternative.",
+    "Complete clean blind, analytic, and hostile reports.",
+    "Make one conductor decision without starting another core attack."
+  ],
+  "controls": [
+    "active_triangle_and_residual_U",
+    "hard_top_vs_smooth_top_scale",
+    "bottom_and_R5_owners",
+    "terminal_T2S_and_TTY_wedge",
+    "smooth_Poisson_and_support_crossings",
+    "hard_one_sided_boundary",
+    "chi4_two_shifts_profiles_floors_stars",
+    "dyadic_one_count",
+    "real_X_endpoint_uniformity",
+    "reduction_vs_estimate",
+    "legacy_route_dependency",
+    "downstream_and_exponent_scope",
+    "primary_source_hypothesis_map"
+  ],
+  "tasks": [
+    {
+      "id": "blind_m2_assembly_rederivation",
+      "role": "blind_rederiver",
+      "access_mode": "statement_only",
+      "status": "completed_clean",
+      "target": "Independently construct the conditional M2 packet table and identify every outside survivor.",
+      "context_files": [
+        "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/derivation_packet.md"
+      ],
+      "required_controls": [
+        "active_triangle_and_residual_U",
+        "hard_top_vs_smooth_top_scale",
+        "bottom_and_R5_owners",
+        "terminal_T2S_and_TTY_wedge",
+        "smooth_Poisson_and_support_crossings",
+        "hard_one_sided_boundary",
+        "chi4_two_shifts_profiles_floors_stars",
+        "dyadic_one_count",
+        "real_X_endpoint_uniformity",
+        "reduction_vs_estimate",
+        "legacy_route_dependency",
+        "downstream_and_exponent_scope"
+      ],
+      "report_path": "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/reports/blind_m2_assembly_rederivation.md"
+    },
+    {
+      "id": "m2_outside_packet_assembly_attack",
+      "role": "discovery",
+      "access_mode": "selected_context",
+      "status": "completed_clean_after_format_repair",
+      "target": "Prove the sharp conditional one-count assembly or isolate the minimal independent outside M2 packets.",
+      "context_files": [
+        "protocol.md",
+        "state/proof_obligations.yml",
+        "state/active_campaign.yml",
+        "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/derivation_packet.md",
+        "rounds/codex-managed/m9-frequency-phase-diagram/synthesis.md",
+        "rounds/codex-managed/m9-endpoint-kernel-validation/synthesis.md",
+        "rounds/codex-managed/m9-top-endpoint-transform/synthesis.md",
+        "rounds/codex-managed/m9-canonical-core-formalization/candidates/conductor_canonical_core_statements.md",
+        "rounds/codex-managed/gc-unconditional-exponent-extraction/synthesis.md",
+        "rounds/codex-managed/m9-m2-primitive-ray-q-dispersion/synthesis.md"
+      ],
+      "required_controls": [
+        "active_triangle_and_residual_U",
+        "hard_top_vs_smooth_top_scale",
+        "bottom_and_R5_owners",
+        "terminal_T2S_and_TTY_wedge",
+        "smooth_Poisson_and_support_crossings",
+        "hard_one_sided_boundary",
+        "chi4_two_shifts_profiles_floors_stars",
+        "dyadic_one_count",
+        "real_X_endpoint_uniformity",
+        "reduction_vs_estimate",
+        "legacy_route_dependency",
+        "downstream_and_exponent_scope"
+      ],
+      "report_path": "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/reports/m2_outside_packet_assembly_attack.md"
+    },
+    {
+      "id": "m2_assembly_hostile_hygiene_audit",
+      "role": "source_auditor",
+      "access_mode": "selected_context",
+      "status": "completed_clean",
+      "target": "Falsify circular conditional implications, double owners, stale dependencies, and endpoint omissions in the M2 assembly.",
+      "context_files": [
+        "protocol.md",
+        "state/proof_obligations.yml",
+        "state/active_campaign.yml",
+        "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/derivation_packet.md",
+        "rounds/codex-managed/m9-frequency-phase-diagram/synthesis.md",
+        "rounds/codex-managed/m9-endpoint-kernel-validation/synthesis.md",
+        "rounds/codex-managed/m9-top-endpoint-transform/reports/endpoint_transform_hostile_audit.md",
+        "rounds/codex-managed/m9-canonical-core-formalization/reviews/conductor_round92_source_and_graph_hygiene.md",
+        "strategy/conductor_0817_full_proof_strategy.md"
+      ],
+      "required_controls": [
+        "active_triangle_and_residual_U",
+        "hard_top_vs_smooth_top_scale",
+        "bottom_and_R5_owners",
+        "terminal_T2S_and_TTY_wedge",
+        "smooth_Poisson_and_support_crossings",
+        "hard_one_sided_boundary",
+        "chi4_two_shifts_profiles_floors_stars",
+        "dyadic_one_count",
+        "real_X_endpoint_uniformity",
+        "reduction_vs_estimate",
+        "legacy_route_dependency",
+        "downstream_and_exponent_scope",
+        "primary_source_hypothesis_map"
+      ],
+      "report_path": "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/reports/m2_assembly_hostile_hygiene_audit.md"
+    }
+  ],
+  "review_seams": [
+    {"id": "domain", "requirement": "Check every physical D,L cell and residual phase-diagram inequality."},
+    {"id": "owners", "requirement": "Give each bottom, residual, boundary, profile, and transform term exactly one owner."},
+    {"id": "endpoint", "requirement": "Separate the hard top band from smooth top-scale bands and keep real-X floors."},
+    {"id": "implication", "requirement": "Prove the exact minimal conditional implication into M9-M2 without circular nodes."},
+    {"id": "legacy", "requirement": "Classify near-collision and fourth-moment nodes as required or alternative routes."},
+    {"id": "scope", "requirement": "Keep M9-M1, M9, and the exponent unchanged unless their dependencies genuinely close."}
+  ]
+}

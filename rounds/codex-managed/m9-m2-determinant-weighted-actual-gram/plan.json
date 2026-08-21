@@ -1,0 +1,29 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 102,
+    "round_type": "m9_m2_determinant_weighted_actual_gram_core_attack",
+    "campaign_id": "m9-m2-determinant-weighted-actual-gram",
+    "title": "Determinant-weighted fixed-a actual-Gram attack",
+    "status": "closed",
+    "max_concurrency": 3,
+    "starting_graph_sha256": "fbe0e9b9e4db078128f75d97b790dd78a6adc8216c7b0b14c4fad928925637ca",
+    "objective": "Prove a rho^(-1/2) gain, a strict disjoint hard subrange, or a rigorous new mechanism obstruction for the complete fixed-a primitive-ray M2 Gram.",
+    "tasks": [
+      {"id": "blind_determinant_gram_rederivation", "role": "blind_rederiver", "access_mode": "statement_only", "status": "completed_clean_with_disclosed_followup", "report_path": "rounds/codex-managed/m9-m2-determinant-weighted-actual-gram/reports/blind_determinant_gram_rederivation.md"},
+      {"id": "determinant_weighted_gram_attack", "role": "discovery", "access_mode": "selected_context", "status": "completed_clean_with_seam_addendum", "report_path": "rounds/codex-managed/m9-m2-determinant-weighted-actual-gram/reports/determinant_weighted_gram_attack.md"},
+      {"id": "determinant_gram_hostile_source_audit", "role": "source_auditor", "access_mode": "selected_context", "status": "completed_clean_with_seam_addendum", "report_path": "rounds/codex-managed/m9-m2-determinant-weighted-actual-gram/reports/determinant_gram_hostile_source_audit.md"}
+    ],
+    "exit_gate": "A complete actual-symbol Gram estimate, a target-safe disjoint hard subrange with a genuine rho power, or a rigorous no-go for the determinant-separation mechanism with a smaller named survivor."
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "902eb43bc0fc72b1c3e080dac5cd89757d17e2eaa1f72d606b89afbecff92935",
+    "generated_at": "2026-08-17T18:15:00+08:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

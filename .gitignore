@@ -4,6 +4,7 @@ __pycache__/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
+*.baiduyun.uploading.cfg
 
 # Local generated handoff prompts and copied web responses.
 handoff/

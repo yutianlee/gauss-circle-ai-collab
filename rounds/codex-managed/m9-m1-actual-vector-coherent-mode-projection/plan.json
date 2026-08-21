@@ -1,0 +1,31 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 100,
+    "round_type": "m9_m1_actual_vector_coherent_mode_projection",
+    "campaign_id": "m9-m1-actual-vector-coherent-mode-projection",
+    "title": "Actual-vector coupling to coherent local and paired modes",
+    "status": "complete",
+    "max_concurrency": 3,
+    "starting_graph_sha256": "6aebb7ada9edb65dc6a1605ac0741b8a0e750bc50317b78061cfe39ce382aa6e",
+    "objective": "Determine the literal fixed-actual-vector coupling to the exact q=8 parity and paired coherent modes after all canonical hard owners.",
+    "tasks": [
+      {"id": "blind_coherent_projection_rederivation", "role": "blind_rederiver", "access_mode": "statement_only", "status": "completed_clean", "report_path": "rounds/codex-managed/m9-m1-actual-vector-coherent-mode-projection/reports/blind_coherent_projection_rederivation.md"},
+      {"id": "actual_vector_parity_projection_attack", "role": "formalizer", "access_mode": "selected_context", "status": "completed_clean_after_format_repair", "report_path": "rounds/codex-managed/m9-m1-actual-vector-coherent-mode-projection/reports/actual_vector_parity_projection_attack.md"},
+      {"id": "coherent_projection_hostile_source_audit", "role": "source_auditor", "access_mode": "selected_context", "status": "completed_clean", "report_path": "rounds/codex-managed/m9-m1-actual-vector-coherent-mode-projection/reports/coherent_projection_hostile_source_audit.md"}
+    ],
+    "exit_gate": "An exact target-safe coherent package, an actual-symbol obstruction, or a strictly smaller fixed-vector survivor with complete CRT, owner, and transition controls.",
+    "closing_decision": "The strictly smaller q=8 fixed-row cross-projection survivor is exact; no target estimate or lower obstruction is proved.",
+    "resulting_graph_sha256": "f4a21236d49d03ff141f637eef932fe95868612e8bb885c97c7f1d042b3c0133"
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "6aebb7ada9edb65dc6a1605ac0741b8a0e750bc50317b78061cfe39ce382aa6e",
+    "generated_at": "2026-08-17T16:15:00+08:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

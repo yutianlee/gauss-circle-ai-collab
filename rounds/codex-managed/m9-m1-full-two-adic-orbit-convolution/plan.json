@@ -1,0 +1,31 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 101,
+    "round_type": "m9_m1_full_two_adic_orbit_convolution_formalization",
+    "campaign_id": "m9-m1-full-two-adic-orbit-convolution",
+    "title": "Full two-adic actual-row orbit convolution",
+    "status": "closed",
+    "max_concurrency": 3,
+    "starting_graph_sha256": "f4a21236d49d03ff141f637eef932fe95868612e8bb885c97c7f1d042b3c0133",
+    "objective": "Formalize the exact full 2^nu actual-row cyclic convolution and intersect every special mode with prior owners.",
+    "tasks": [
+      {"id": "blind_full_two_adic_orbit_rederivation", "role": "blind_rederiver", "access_mode": "statement_only", "status": "completed_clean_after_conjugation_correction", "report_path": "rounds/codex-managed/m9-m1-full-two-adic-orbit-convolution/reports/blind_full_two_adic_orbit_rederivation.md"},
+      {"id": "full_two_adic_actual_symbol_formalization", "role": "formalizer", "access_mode": "selected_context", "status": "completed_clean", "report_path": "rounds/codex-managed/m9-m1-full-two-adic-orbit-convolution/reports/full_two_adic_actual_symbol_formalization.md"},
+      {"id": "full_two_adic_hostile_owner_audit", "role": "source_auditor", "access_mode": "selected_context", "status": "completed_clean_after_whitespace_repair", "report_path": "rounds/codex-managed/m9-m1-full-two-adic-orbit-convolution/reports/full_two_adic_hostile_owner_audit.md"}
+    ],
+    "exit_gate": "An exact full-two-part cyclic convolution and one-count owner map, or a sharp algebraic obstruction with a named smaller survivor.",
+    "closing_decision": "promote_exact_full_two_adic_unitary_convolution_and_owner_map_without_power_saving",
+    "resulting_graph_sha256": "fbe0e9b9e4db078128f75d97b790dd78a6adc8216c7b0b14c4fad928925637ca"
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "f4a21236d49d03ff141f637eef932fe95868612e8bb885c97c7f1d042b3c0133",
+    "generated_at": "2026-08-17T17:30:00+08:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

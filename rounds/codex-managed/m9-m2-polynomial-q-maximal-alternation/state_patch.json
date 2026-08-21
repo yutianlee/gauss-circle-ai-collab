@@ -1,0 +1,153 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-polynomial-q-carrier-dual-square-reduction",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Polynomial-q transport residual and primitive dual-square carrier reduction",
+        "status": "proved_internal",
+        "statement_tex": "For one complete scalar mode of the residual fixed-a M2 row, let Psi(q,k)=q/2+(nu-g/2)Lambda_q/k, n=|2nu-g|, t=sqrt((a+2q)/a), and retain the centered physical integral. Then the centered material derivative transports the saddle but leaves the complete metric residual (nu-g/2)Lambda_q'/k asymp nJ, while det Hess_(q,k) Psi=-(nu-g/2)^2 X^2(t-1)^3/(t^3 k^4) asymp -n^2 A/D. Both reciprocal endpoints are monotone, so each fixed integer k has at most one entry and one exit. After exact primitive decomposition q=du with d|a odd, a scalar k-B process followed by a scalar u-B process has odd dual s=d-2h and exact phase -dXn ell/s-as/(4d)+J sqrt(an ell)=-(J sqrt(dn ell/s)-sqrt(as/d)/2)^2, with e(-as/(4d))=-i chi_4(a/d)chi_4(s). This is a carrier-level determinant-route obstruction and an exact reduced interface only: the transformed actual owners, lift fibres, collars, metric modes, maximal cutoff, and stationary remainders are not yet matched, so no maximal theorem, positive-power q-shell, or fixed-a Gram estimate follows.",
+        "dependencies": [
+          "M9-M2-primitive-ray-fixed-q-sampled-k-short-shell",
+          "M9-M2-top-endpoint-actual-symbol-variation",
+          "M9-M2-top-endpoint-strict-metric-carrier-cancellation",
+          "M9-M2-primitive-ray-q-dispersion-obstruction"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-polynomial-q-maximal-alternation/reports/adjacent_q_transport_attack.md",
+            "rounds/codex-managed/m9-m2-polynomial-q-maximal-alternation/reports/maximal_q_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m2-polynomial-q-maximal-alternation/reviews/conductor_round105_maximal_implication_and_joint_phase.md",
+            "rounds/codex-managed/m9-m2-polynomial-q-maximal-alternation/reviews/conductor_round105_double_bprocess_normalization.md",
+            "rounds/codex-managed/m9-m2-polynomial-q-maximal-alternation/reviews/conductor_round105_full_phase_transport_gate.md",
+            "rounds/codex-managed/m9-m2-polynomial-q-maximal-alternation/reviews/conductor_round105_mobius_dual_character.md",
+            "rounds/codex-managed/m9-m2-polynomial-q-maximal-alternation/reviews/conductor_round105_adjudication.md",
+            "rounds/codex-managed/m9-m2-polynomial-q-maximal-alternation/controls/conductor_round105_controls.md",
+            "rounds/codex-managed/m9-m2-polynomial-q-maximal-alternation/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-polynomial-q-maximal-alternation/reports/blind_maximal_q_rederivation.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Formalize the complete transformed actual amplitude on the odd dual square, including every owner, lift, collar, mode, maximal cutoff, and stationary error, then seek a full-D actual-vector saving or return to the weaker original weighted shift aggregate. Do not apply a determinant-only theorem or the terminal M1 divisor bound before the literal amplitude map is proved.",
+        "reason_for_promotion": "The material-derivative residual, reciprocal endpoint monotonicity, primitive progression, full Hessian determinant, two scalar stationary values, and returned odd character are exact algebraic identities reproduced by discovery, conductor, and hostile audits. The promotion is explicitly scoped to a carrier reduction/no-go and does not assert an owner-preserving transform estimate."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-primitive-ray-fixed-a-actual-Gram",
+        "dependencies_added": [
+          "M9-M2-polynomial-q-carrier-dual-square-reduction"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-polynomial-q-maximal-alternation/reports/adjacent_q_transport_attack.md",
+            "rounds/codex-managed/m9-m2-polynomial-q-maximal-alternation/reports/maximal_q_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m2-polynomial-q-maximal-alternation/reviews/conductor_round105_adjudication.md",
+            "rounds/codex-managed/m9-m2-polynomial-q-maximal-alternation/synthesis.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-polynomial-q-maximal-alternation/reports/blind_maximal_q_rederivation.md"
+          ]
+        },
+        "next_action": "The bounded maximal theorem would close the Gram exactly, but total q-variation is stronger than necessary and centered transport leaves the full metric residual. Attack the complete owner-preserving dual odd-character square row, or directly prove the weaker weighted nonzero-shift aggregate; generic square-root cancellation is insufficient."
+      },
+      {
+        "id": "M9-M2-top-endpoint-density-discrepancy-energy",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-polynomial-q-maximal-alternation/reports/adjacent_q_transport_attack.md",
+            "rounds/codex-managed/m9-m2-polynomial-q-maximal-alternation/reports/maximal_q_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m2-polynomial-q-maximal-alternation/synthesis.md"
+          ]
+        },
+        "next_action": "The fixed/polylogarithmic q-shell is owned, while the polynomial shell remains the complete actual-vector weighted shift aggregate. The scalar dual-square carrier is exact but equal-capacity until all owners and amplitudes are transported and a full-D signed saving is proved."
+      },
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-polynomial-q-maximal-alternation/synthesis.md"
+          ]
+        },
+        "next_action": "Do not invoke hard-cone assembly from the scalar dual-square reduction. First close the polynomial fixed-a actual Gram or an equivalent complete density-discrepancy energy."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round105-fixed-q-pointwise-bound-implies-polynomial-maximal-q",
+        "reason": "Pointwise control gives maximal amplitude D L^2/A and direct Gram capacity H^2 D L^4/A. The deficits are exactly D and D^2, and arbitrary coherent coefficients saturate them."
+      },
+      {
+        "id": "Round105-total-q-variation-is-necessary-for-the-Gram",
+        "reason": "Total variation is only a sufficient strengthening. The target is an averaged signed shift energy and can hold even when primitive-mask variation is of order D."
+      },
+      {
+        "id": "Round105-centered-material-transport-controls-the-complete-mode",
+        "reason": "Recoupling the centered integral with the metric mode leaves the residual (nu-g/2)Lambda_q'/k asymp nJ; the material derivative controls saddle motion but not the complete q-oscillation."
+      },
+      {
+        "id": "Round105-full-rank-qk-Hessian-supplies-an-extra-polynomial-gain",
+        "reason": "Two scalar stationary transforms return the centered reciprocal/product square and its odd character. Full rank alone does not estimate the transformed actual vector and cannot be multiplied into the existing fixed-row saving."
+      },
+      {
+        "id": "Round105-primitive-mask-destroys-alternation",
+        "reason": "Every divisor d of odd a is odd, so q=du preserves (-1)^q=(-1)^u and mask-only interval sums cost at most tau(a). The moving actual coefficient, not primitivity, is the open seam."
+      },
+      {
+        "id": "Round105-uniform-first-derivative-gap-on-the-reciprocal-support",
+        "reason": "At the simultaneous open reciprocal and physical saddle corner Lambda_q'/k_+(q)=J exactly, producing parity resonances for fourth-power controls. The flat collar prevents this from being an actual lower bound but rejects a uniform gap proof."
+      },
+      {
+        "id": "Round105-dual-square-is-a-complete-owner-preserving-self-return",
+        "reason": "Only the scalar carrier and character have been transformed exactly. The prior owners, finite lifts, profiles, collars, maximal cutoff, and aggregate stationary errors have not been matched one by one."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M2-primitive-ray-fixed-a-actual-Gram",
+        "reason": "The maximal theorem and every fixed positive-power q-shell remain open; only an exact carrier reduction and route obstruction are added."
+      },
+      {
+        "id": "M9-M2-top-endpoint-density-discrepancy-energy",
+        "reason": "No complete signed polynomial-shell energy estimate is proved."
+      },
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "reason": "The canonical polynomial hard-top energy remains a blocker."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "The hard polynomial shell and both smooth M2 packets remain open."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "Round 105 proves no M1 block estimate; the M1-like dual carrier is only an unestimated interface."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "No all-denominator pointwise endpoint assembly is proved."
+      },
+      {
+        "id": "M9",
+        "reason": "Neither M9-M1 nor M9-M2 is closed."
+      },
+      {
+        "id": "GC-target",
+        "reason": "No global pointwise exponent changes."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 6,
+    "idea_quality_score": 8,
+    "state_evidence_score": 9,
+    "calibration_score": 10,
+    "reason": "Round 105 does not extend the closed q-range, but it eliminates total-variation and determinant-only shortcuts, proves the exact primitive dual odd-character square reduction, and replaces a broad maximal hope by a literal actual-vector transform interface without overstating a complete self-return."
+  }
+}

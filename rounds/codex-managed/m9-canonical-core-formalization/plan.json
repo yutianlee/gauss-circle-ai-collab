@@ -1,0 +1,82 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 92,
+    "round_type": "canonical_core_formalization",
+    "campaign_id": "m9-canonical-core-formalization",
+    "title": "Formalize the canonical M1 and M2 hard cores",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "1bc91c527bfe3595436497483aeb058d4a3b3e87c073931f8517b53df24fe0e5",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 90,
+      "numerical_experimental_maximum_percent": 10,
+      "planned_numerical_percent": 0
+    },
+    "target_obligations": [
+      "M9-M1",
+      "M9-M1-square-root-capacity-self-return-barrier",
+      "M9-M1-global-angular-radial-estimate",
+      "M9-M2",
+      "M9-M2-top-endpoint-signed-cone",
+      "M9-endpoint-uniformity",
+      "M9"
+    ],
+    "frozen_target": {
+      "question": "Can the accepted Round-90 M1 hard actual-symbol Gram operator and Round-80 M2 signed density--discrepancy kernel be stated as two self-contained graph-ready theorem targets with exact owners, normalizations, capacity gaps, false shadows, source mismatches, and downstream scope?",
+      "M1_target": "E_hard(U) << X^epsilon (U/B)J^(14/5), with J^(1/12) linear top deficit",
+      "M2_target": "sum |Q_(A,D,K,G,R)| << X^epsilon L^2 on rho=AJD^3/L^3>>1, retaining density and discrepancy jointly",
+      "scope": "formalization and hygiene only; no new hard-core estimate or downstream promotion"
+    },
+    "completion_criteria": [
+      "Two standalone graph-ready core statements",
+      "Exact variable dictionaries and one-count owner maps",
+      "Exact capacity, target, and required-gain ledgers",
+      "False-shadow and primary-source mismatch tables",
+      "Separation from all outside M1/M2 packets",
+      "Clean blind, construction, and hostile-hygiene gates"
+    ],
+    "tasks": [
+      {
+        "id": "blind_canonical_core_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "pending",
+        "report_path": "rounds/codex-managed/m9-canonical-core-formalization/reports/blind_canonical_core_rederivation.md"
+      },
+      {
+        "id": "canonical_core_formalization_attack",
+        "role": "formalizer",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "report_path": "rounds/codex-managed/m9-canonical-core-formalization/reports/canonical_core_formalization_attack.md"
+      },
+      {
+        "id": "canonical_core_hostile_hygiene_audit",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "report_path": "rounds/codex-managed/m9-canonical-core-formalization/reports/canonical_core_hostile_hygiene_audit.md"
+      }
+    ],
+    "review_seams": [
+      "definitions and variable dictionary",
+      "M1 norm levels and owner map",
+      "M2 original-to-energy implication and owner map",
+      "capacity and required signed gain",
+      "sources and false shadows",
+      "downstream scope and graph hygiene"
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "1bc91c527bfe3595436497483aeb058d4a3b3e87c073931f8517b53df24fe0e5",
+    "generated_at": "2026-08-17"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

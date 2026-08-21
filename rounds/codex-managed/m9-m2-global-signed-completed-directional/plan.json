@@ -1,0 +1,151 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 110,
+    "round_type": "m9_m2_global_signed_completed_directional_reconciliation",
+    "campaign_id": "m9-m2-global-signed-completed-directional",
+    "title": "Global signed completed directional kernel and hard-energy implication",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "33bf8e043cb8a1e0852b7f98941ee6186f798ed40124525de3d0373269019397",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 95,
+      "numerical_experimental_maximum_percent": 5,
+      "planned_numerical_percent": 0,
+      "literature_policy": "No external theorem is assumed. Any invoked direct estimate requires a primary-source literal-symbol audit."
+    },
+    "target_obligations": [
+      "M9-M2-blockwise-linear-owner-completion",
+      "M9-M2-primitive-ray-fixed-a-actual-Gram",
+      "M9-M2-top-endpoint-density-discrepancy-energy"
+    ],
+    "frozen_target": {
+      "question": "Is the hard-top energy equivalent up to target-sized terms to one global one-sided estimate Re C_L^comp << L^2 X^epsilon; what is the literal completed two-character kernel, and can it be bounded or reduced strictly without a Gram lift?",
+      "reference_formula": "E_L^top=E_owned,L+2 Re sum_B Q_B^res and Q_B^res=Q_B^comp-sum_nu O_(B,nu).",
+      "quantities": [
+        "C_L^comp=sum_B Q_B^comp",
+        "one-sided real part, modulus, blockwise absolute and Gram norms",
+        "one primitive orientation and one outer 2Re",
+        "complete A,D,K,G,R partitions and actual symbol"
+      ]
+    },
+    "completion_criteria": [
+      "Prove the exact hard-energy identity with target-sized remainder.",
+      "Determine the weakest sufficient and necessary scalar norm.",
+      "Write the literal finite completed two-character kernel.",
+      "Audit exact block recombination and all endpoint conventions.",
+      "Prove the estimate, a strict subrange, a smaller survivor, or a rigorous actual-symbol no-go.",
+      "Leave downstream targets open absent exact bridges."
+    ],
+    "controls": [
+      "real_part_modulus_blockwise_and_Gram_norms",
+      "energy_positivity_and_owned_sign",
+      "one_orientation_one_outer_2Re",
+      "finite_block_interchange_and_one_count",
+      "literal_completed_kernel_dictionary",
+      "original_zero_mode_vs_metric_density",
+      "terminal_member_and_exact_centre",
+      "floors_stars_collars_entry_exit_zero_extension",
+      "q1_square_Pell_fourth_power_and_near_centres",
+      "false_unsigned_and_phase_conjugating_coefficients",
+      "Fejer_Gram_nonimplication",
+      "transform_self_return",
+      "primary_source_hypothesis_map",
+      "downstream_and_exponent_scope"
+    ],
+    "tasks": [
+      {
+        "id": "blind_global_signed_implication",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "running",
+        "target": "Derive the weakest scalar implication and finite norm countermodels.",
+        "context_files": [
+          "problems/gauss_circle.md",
+          "state/control_models.md",
+          "rounds/codex-managed/m9-m2-global-signed-completed-directional/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "strategy files",
+          "Round-110 derivation packet and candidate",
+          "all Round-110 sibling reports"
+        ],
+        "required_output": [
+          "Seven-section statement-only report.",
+          "Necessary and sufficient scalar implication.",
+          "Finite abstract countermodels."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-global-signed-completed-directional/reports/blind_global_signed_implication.md"
+      },
+      {
+        "id": "completed_directional_kernel_attack",
+        "role": "formalizer",
+        "access_mode": "selected_context",
+        "status": "running",
+        "target": "Construct the literal completed kernel, prove the physical implication and seek direct cancellation.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m2-global-signed-completed-directional/derivation_packet.md",
+          "rounds/codex-managed/m9-m2-global-signed-completed-directional/candidates/conductor_global_signed_kernel.md",
+          "rounds/codex-managed/m9-m2-blockwise-owner-completion/synthesis.md",
+          "rounds/codex-managed/m9-m2-blockwise-owner-completion/reviews/conductor_round109_adjudication.md",
+          "rounds/codex-managed/m9-canonical-core-formalization/candidates/conductor_canonical_core_statements.md",
+          "rounds/codex-managed/m9-canonical-core-formalization/synthesis.md",
+          "rounds/codex-managed/m9-m2-metaplectic-two-character-energy/synthesis.md"
+        ],
+        "required_output": [
+          "Seven-section formalization/discovery report.",
+          "Literal finite formula and exact implication.",
+          "Proof, strict subrange, smaller survivor, or first exact failure."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-global-signed-completed-directional/reports/completed_directional_kernel_attack.md"
+      },
+      {
+        "id": "completed_directional_hostile_audit",
+        "role": "seam_reviewer",
+        "access_mode": "selected_context",
+        "status": "running",
+        "target": "Audit the real-part reduction, dyadic recombination and direct two-character mechanism.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m2-global-signed-completed-directional/derivation_packet.md",
+          "rounds/codex-managed/m9-m2-global-signed-completed-directional/candidates/conductor_global_signed_kernel.md",
+          "rounds/codex-managed/m9-m2-blockwise-owner-completion/reports/linear_owner_completion_attack.md",
+          "rounds/codex-managed/m9-m2-blockwise-owner-completion/reports/owner_completion_hostile_audit.md",
+          "rounds/codex-managed/m9-m2-blockwise-owner-completion/reviews/conductor_round109_adjudication.md",
+          "rounds/codex-managed/m9-canonical-core-formalization/synthesis.md",
+          "rounds/codex-managed/m9-m2-metaplectic-two-character-energy/reports/two_character_spectral_source_hostile_audit.md"
+        ],
+        "required_output": [
+          "Seven-section hostile report.",
+          "Certification or first unsupported seam.",
+          "Smallest lawful survivor and graph recommendation."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-global-signed-completed-directional/reports/completed_directional_hostile_audit.md"
+      }
+    ],
+    "review_seams": [
+      {"id": "implication", "requirement": "One-sided real-part estimate is necessary and sufficient up to target terms."},
+      {"id": "kernel", "requirement": "Literal completed scalar is written on one finite atom space."},
+      {"id": "recombination", "requirement": "Every block interchange is finite and one-count."},
+      {"id": "direct_estimate", "requirement": "Any gain survives actual-symbol and false-shadow controls."},
+      {"id": "scope", "requirement": "No downstream target is promoted without its bridge."}
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "33bf8e043cb8a1e0852b7f98941ee6186f798ed40124525de3d0373269019397",
+    "generated_at": "2026-08-17T22:10:00+08:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

@@ -3,11 +3,21 @@
 ## Scope and status
 
 This document consolidates the accepted proof-obligation graph through
-completed Codex-managed Round 87, together with the earlier accepted
-infrastructure. It is a conditional proof draft, not a proof of the
-Gauss circle conjecture and not a claim of a new exponent.
+completed Codex-managed Round 95, together with the earlier accepted
+infrastructure. It contains an internally proved \(1/3+\epsilon\)
+theorem, a narrowly repaired and source-audited external theorem at
+exponent \(0.3144831759\ldots\), and the conditional architecture for
+the conjectural \(1/4+\epsilon\) target. It is not a proof of the Gauss
+circle conjecture.
 
-The current theorem-level implication is
+The strongest theorem proved from the repository's own M1/M2
+architecture is
+
+$$
+\boxed{P(X)\ll_\epsilon X^{1/3+\epsilon}}
+$$
+
+for every real \(X\ge2\). The target-level implication remains
 
 $$
 \boxed{
@@ -17,7 +27,27 @@ P(X)\ll_\epsilon X^{1/4+\epsilon}.
 }
 $$
 
-Here H1--H3 are proved internally, H4 is an audited external theorem, R5-Full remains under its separate reconciliation status, and M9 is open. Consequently the desired bound remains open.
+Here H1--H3 are proved internally, H4 is an audited external theorem,
+R5-Full is now proved internally by the pointwise divisor-product
+reconciliation, and M9 is open. Consequently the desired
+\(1/4+\epsilon\) bound remains open.
+
+Separately, the completed Li--Yang source audit and independent range
+repairs certify the direct external theorem
+
+$$
+\boxed{
+P(X)\ll_\epsilon X^{\theta_{\rm LY}+\epsilon},\qquad
+\theta_{\rm LY}=
+\frac{3292+25\sqrt{1717}}{13762}
+=0.3144831759740614\ldots .
+}
+$$
+
+Only the narrow final real-\(X\), inclusive theorem is accepted. The
+printed general intermediate ranges are not. This external theorem does
+not prove the internal Round-95 cluster estimate, M9-M1, M9-M2, M9, or
+the quarter target.
 
 Status labels used below:
 
@@ -310,8 +340,7 @@ This normalization is audited in `sources/vaaler_1985.md` against Vaaler's Theor
 
 ### Proposition R5-Full
 
-**Status: `derived_under_assumptions`; blocker:
-`R5-Full-reconciliation`.**
+**Status: proved internally.**
 
 For every active block $D$ with $H_D\asymp D X^{-1/4}$, the first and shifted Fejer residual blocks are
 
@@ -4532,3 +4561,1378 @@ Accepted evidence:
 - rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/reviews/conductor_round88_normalization_coarse_count.md;
 - rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/reviews/conductor_round88_masked_period_graph.md;
 - rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/synthesis.md.
+
+## Round 89 accepted bad-prime cellwise period graph
+
+For a unit local phase, reciprocal periodicity is classified from the
+complete mask. The successful raw reduction counts at
+\(p=2,3,5,7\) are \(1,15,25,13\). The transverse \(p=3,5\) rays have
+exact reciprocal depth one at every lift. Odd nonunit factors and the
+full (2)-part have the guaranteed periods recorded in the Round-89
+synthesis; these are routing identities only.
+
+For a tensor of selected complete reduction cells, put
+
+\[
+ \mathfrak b_\sigma=
+ \prod_{p^\nu\in S}{p^2\over\eta_{\omega_p}}.
+\]
+
+Separate source and target counts give
+
+\[
+ \deg^+(\mathcal E_\sigma),\deg^-(\mathcal E_\sigma)
+ \leq {M^2\over\mathfrak b_\sigma}.
+\]
+
+Therefore every cell tensor with
+\(\mathfrak b_\sigma\geq M^2/\rho_*^2\) is target-safe. A union must
+pay the explicit sum of cellwise degrees. The conditional
+\(M=3^\nu\), \([1:2:1]\), \(M/3\leq\rho_*<M\) family is a nonempty newly
+owned example.
+
+The full nonunit union can retain degree \(M^2\). At top conductor
+\(M^2\asymp J^{3/10}\) while \(\rho_*^2=J^{2/15}\), leaving the exact
+factor \(J^{1/6}\). Exact \(q=4,8,9\) controls show that period depth
+does not remove this physical capacity. The full first band and the
+global exponent remain open.
+
+Accepted evidence:
+
+- rounds/codex-managed/m9-m1-bad-prime-period-fibre-energy/reports/bad_prime_period_graph_attack.md;
+- rounds/codex-managed/m9-m1-bad-prime-period-fibre-energy/reports/blind_bad_prime_fibre_rederivation.md;
+- rounds/codex-managed/m9-m1-bad-prime-period-fibre-energy/reports/bad_prime_hostile_source_audit.md;
+- rounds/codex-managed/m9-m1-bad-prime-period-fibre-energy/reviews/conductor_round89_adjudication.md;
+- rounds/codex-managed/m9-m1-bad-prime-period-fibre-energy/synthesis.md.
+
+## Round 90 accepted square-root capacity self-return barrier
+
+Let \(H_{b,D}\) be the complete deep centered physical-pair row and
+
+\[
+ \mathcal E_D=\sum_{b\asymp B}\int_{\mathbb T}
+ |D_D(\theta)|^2|H_{b,D}(\theta)|^2\,d\theta.
+\]
+
+The Fourier coefficients of \(H_{b,D}\) are exactly the centered
+Kloosterman-product coefficients from Round 83.  Expanding
+\(\mathcal E_D\) gives the complete four-row actual-symbol operator of
+Rounds 87--89.  The integer \(u=0\) coefficient is owned once, and the
+remaining edge set is partitioned by successive complements into the
+Round-87, Round-88, Round-89, and hard packages.
+
+Complete prime-power descent is exactly invertible.  The
+\(p^{2j}\) trace factor cancels the quotient-square inverse
+normalization, and restricted Fejer shifts retain total mass.  The
+finite Toeplitz inequality gives
+
+\[
+ \left|\sum_{b\asymp B}H_{b,D}(0)\right|^2
+ \ll_\varepsilon X^\varepsilon{B\over D}\mathcal E_D.
+\]
+
+With
+
+\[
+ \mathsf C_{82}=B^3T^2Q^{-5/12},\qquad
+ \mathsf T_{82}=J^2/T,
+\]
+
+the full-degree Gram capacity and target satisfy
+
+\[
+ \mathsf C_{\rm deep}={D\over B}\mathsf C_{82}^2,
+ \qquad
+ \mathsf T_{\rm deep}={D\over B}\mathsf T_{82}^2.
+\]
+
+Thus the late \(J^{1/6}\) energy gap square-roots exactly to the
+Round-82 \(J^{1/12}\) linear gap.  This proves a Gram-level
+equal-capacity barrier, not a linear involution and not an estimate of
+the hard signed operator.  The \(q=8\) residual cell retains full
+directed degree, so further local period peeling cannot provide a
+strict gain.  M9-M1 and the global exponent remain open.
+
+Accepted evidence:
+
+- rounds/codex-managed/m9-m1-capacity-self-return-fork/reports/m1_self_return_barrier_attack.md;
+- rounds/codex-managed/m9-m1-capacity-self-return-fork/reports/blind_m1_capacity_rederivation.md;
+- rounds/codex-managed/m9-m1-capacity-self-return-fork/reports/m1_self_return_hostile_source_audit.md;
+- rounds/codex-managed/m9-m1-capacity-self-return-fork/reviews/conductor_round90_normalization.md;
+- rounds/codex-managed/m9-m1-capacity-self-return-fork/reviews/conductor_round90_reassembly.md;
+- rounds/codex-managed/m9-m1-capacity-self-return-fork/synthesis.md.
+
+## Round 91 accepted unconditional one-third theorem
+
+For every literal dyadic M1 or M2 block, including the actual Vaaler
+coefficient, the M1 spatial character, the M2 two-shift character
+factor, both signs, floors, stars, and the hard-top sampled-BV profile,
+the accepted direct estimates give
+
+\[
+ B_i(D,L;X)\ll_\varepsilon X^\varepsilon
+ \min\!\left\{1+{D\over L},
+ 1+\left({LX\over D}\right)^{1/2}
+   +{D^{3/2}\over(LX)^{1/2}}\right\}.
+\]
+
+Write \(R=D/L\). If \(R\le X^{1/3}\), the first row is
+\(O(X^{1/3+\varepsilon})\). If \(R\ge X^{1/3}\), then
+
+\[
+ (X/R)^{1/2}\le X^{1/3},\qquad
+ D(R/X)^{1/2}\le X^{1/4},
+\]
+
+because \(R\le D\le X^{1/2}\). Hence every main block is
+\(O(X^{1/3+\varepsilon})\). The bottom denominator range is
+\(O(X^{1/4})\), and the pointwise Fejer product-count argument gives
+\(O(X^{1/4+\varepsilon})\) for every residual block, including exact
+products and the two shifted legs. The exact denominator-frequency
+assembly costs only \(O(\log^2X)\). Therefore
+
+\[
+ \boxed{P(X)\ll_\varepsilon X^{1/3+\varepsilon}}
+\]
+
+uniformly for real \(X\ge2\).
+
+This exponent is exact for the accepted direct menu: at
+\((\delta,\ell)=(1/2,1/6)\), the T2S and full second-derivative rows
+both equal \(1/3\), while the trivial and TTY rows are larger. This is
+menu optimality, not a lower bound for the actual sums. Any exponent
+below \(1/3\), and in particular the target \(1/4\), requires a new
+signed estimate for the residual M1 or M2 hard core.
+
+Accepted evidence:
+
+- rounds/codex-managed/gc-unconditional-exponent-extraction/reports/blind_global_exponent_rederivation.md;
+- rounds/codex-managed/gc-unconditional-exponent-extraction/reports/global_exponent_assembly_attack.md;
+- rounds/codex-managed/gc-unconditional-exponent-extraction/reports/global_exponent_hostile_audit.md;
+- rounds/codex-managed/gc-unconditional-exponent-extraction/reviews/conductor_round91_r5_reconciliation.md;
+- rounds/codex-managed/gc-unconditional-exponent-extraction/reviews/conductor_round91_assembly.md;
+- rounds/codex-managed/gc-unconditional-exponent-extraction/synthesis.md.
+
+## Round 92 accepted canonical open cores
+
+Round 92 promotes no estimate.  It replaces two informal survivor chains by
+two exact open obligations.
+
+For the first smooth nonaxial M1 residual band
+(J^{13/18}<C\leq J^{3/4}), with
+(D_1<|d|<\Delta_b-E_*), the exact hard complement of the accepted
+Round-87--89 owners must satisfy
+
+\[
+ |\mathcal E_{\rm hard}(U)|
+ \ll_\varepsilon X^\varepsilon{U\over B}J^{14/5}.
+\]
+
+The definition retains every local class and sign, the actual fourfold
+stationary symbol, modulus multiples, Ramanujan terms, the full (2)-part,
+one global (u=0) owner, and a conjugation-closed hard complement.  The
+linear (J^{1/12}) and Gram (J^{1/6}) gaps are the same deficit before
+and after the proved Toeplitz square root.
+
+For the residual hard top M2 cone, the exact joint density--discrepancy
+target is
+
+\[
+ \sum_{A,D_{\rm ray},K_{\rm rec},G,R}
+ |\mathfrak Q_{A,D_{\rm ray},K_{\rm rec},G,R}|
+ \ll_\varepsilon L^2X^\varepsilon.
+\]
+
+It retains the metric density (r=0), all discrepancy modes, the actual
+character/profile, both orientations, and one outer (2\Re).  A hard block
+has capacity (L^2X^\varepsilon\sqrt\rho), so the missing gain is exactly
+(\rho^{-1/2}).  The accepted bridge
+(|\mathcal T_{\rm end,L}|^2\ll L\mathcal E_L^\top) then yields the
+original top-row target if the energy closes.
+
+Neither obligation closes its outside packets.  Therefore M9-M1, M9-M2,
+M9, target-scale endpoint uniformity, and the one-quarter theorem remain
+open.
+
+Accepted evidence:
+
+- rounds/codex-managed/m9-canonical-core-formalization/candidates/conductor_canonical_core_statements.md;
+- rounds/codex-managed/m9-canonical-core-formalization/reports/canonical_core_formalization_attack.md;
+- rounds/codex-managed/m9-canonical-core-formalization/reports/canonical_core_hostile_hygiene_audit.md;
+- rounds/codex-managed/m9-canonical-core-formalization/reviews/conductor_round92_adjudication.md;
+- rounds/codex-managed/m9-canonical-core-formalization/synthesis.md.
+
+## Round 93 accepted global mean square and density-one quarter theorem
+
+For a fixed dyadic denominator shell, exact rational-frequency grouping
+and a continuous large sieve give
+
+\[
+ \int_I|S_{D,H,w}(t)|^2\,dt\ll (|I|+D^2)D.
+\]
+
+The coefficient mass is sharp at order \(D\).  Writing
+\(\gamma_{h,r}=\beta_{h,r}-\beta_{h,r-1}\), one has
+\(|\gamma_{h,r}|\ll r^{-2}\mathbf 1_{0<|h|\le r}\).  Exact reduced-ray
+grouping, a binary-prefix maximal large sieve, and a Stieltjes
+representation of every fixed-BV profile transfer the same power bound to
+the moving height floor, hard top, and endpoint stars with logarithmic loss
+only.
+
+Using the fixed-in-\(Y\) partition
+\(D_j=2^{-j}\sqrt Y\), the exact moving M1 and M2 blocks, the bottom owner,
+R5-Full, and H1--H4 assemble to
+
+\[
+ \boxed{\int_Y^{2Y}|P(t)|^2\,dt
+ \ll_\varepsilon Y^{3/2+\varepsilon}.}
+\]
+
+Consequently, for every fixed \(\eta>0\),
+
+\[
+ \boxed{
+ \bigl|\{t\in[Y,2Y]:|P(t)|>Y^{1/4+\eta}\}\bigr|
+ \ll_{\varepsilon,\eta}Y^{1-2\eta+\varepsilon}.}
+\]
+
+This proves the quarter exponent on a density-one set of real parameters.
+It does not control a prescribed real, an integer, or a jump point.  It also
+does not estimate either Round-92 canonical core, so M9-M1, M9-M2, M9,
+endpoint uniformity, and the uniform one-quarter theorem remain open.  The
+uniform exponent remains \(1/3\).
+
+Accepted evidence:
+
+- rounds/codex-managed/m9-m2-global-second-moment-exceptional-set/reports/blind_m2_moment_rederivation.md;
+- rounds/codex-managed/m9-m2-global-second-moment-exceptional-set/reports/moving_coefficient_moment_attack.md;
+- rounds/codex-managed/m9-m2-global-second-moment-exceptional-set/reports/moment_hostile_source_audit.md;
+- rounds/codex-managed/m9-m2-global-second-moment-exceptional-set/reviews/conductor_round93_adjudication.md;
+- rounds/codex-managed/m9-m2-global-second-moment-exceptional-set/synthesis.md.
+
+## Round 94 accepted prescribed-point interfaces
+
+For \(u\ge0\), monotonicity of the inclusive count gives
+
+\[
+ P(x+u)\ge P(x)-\pi u,
+ \qquad
+ P(x-u)\le P(x)+\pi u.
+\]
+
+Thus, if \(M=|P(x)|\) and \(Q(Y,W)\) bounds every relevant
+length-\(W\) local square integral, then
+
+\[
+ \frac{M^2}{4}\min\left(W,\frac{M}{2\pi}\right)\le Q(Y,W),
+ \qquad
+ M\ll Q^{1/3}+(Q/W)^{1/2}.
+\]
+
+For every integer \(n\),
+
+\[
+ \int_n^{n+1}P(t)^2dt
+ =\left(P(n)-\frac\pi2\right)^2+\frac{\pi^2}{12}.
+\]
+
+Consequently
+
+\[
+ \sum_{Y\le n\le2Y}|P(n)|^2
+ \ll_\varepsilon Y^{3/2+\varepsilon},
+\]
+
+and the number of integers with
+\(|P(n)|>Y^{1/4+\eta}\) is
+\(O_{\varepsilon,\eta}(Y^{1-2\eta+\varepsilon})\).  The same square
+sampling estimate holds for every one-separated real sample set.  These
+are discrete density-one results, not prescribed-point estimates.
+
+For a fixed exponential polynomial on a window of length \(W\), the
+sinc-square kernel gives the exact randomly shifted rational-cell form
+
+\[
+ \int_I|S(t)|^2dt
+ \le \frac{\pi^2}{4}W\int_0^1\sum_\nu
+ \left|\sum_{\lambda\in C_{\nu,\vartheta}}
+ a_\lambda e(\lambda c)\right|^2d\vartheta.
+\]
+
+The literal frequencies are \(h/d\) for M1 and \(h/(4d)\) for M2.
+For \(W\le Y^{1/2}\), the moving floors and hard prefix create only
+\(O(\log Y)\) fixed-symbol strata.  At the minimax block
+\((D,L)=(Y^{1/2},Y^{1/6})\), the frequency diameter is
+\(O(Y^{-1/3})\).  Therefore \(W=Y^\alpha\), \(\alpha<1/3\), is
+subcoherent and the cluster form contains \((1-o(1))|S(c)|^2\).
+
+The first genuinely averaging open range is
+
+\[
+ 1/3<\alpha<1/2.
+\]
+
+An actual signed cluster energy \(\ll Y^{1/2+\varepsilon}\) there would
+imply \(P(X)\ll X^{1/6+\alpha/3+\varepsilon}<X^{1/3+\varepsilon}\).
+No such estimate is proved.  Popov's uniform local second moment retains
+an additive \(Y(\log Y)^2\) term and returns exactly exponent \(1/3\).
+Thus the certified uniform exponent remains \(1/3\), and both canonical
+M9 cores and the quarter target remain open.
+
+Accepted evidence:
+
+- rounds/codex-managed/gc-prescribed-point-local-moment-bridge/reports/blind_pointwise_bridge_rederivation.md;
+- rounds/codex-managed/gc-prescribed-point-local-moment-bridge/reviews/conductor_round94_persistence_sampling.md;
+- rounds/codex-managed/gc-prescribed-point-local-moment-bridge/reviews/conductor_round94_local_kernel.md;
+- rounds/codex-managed/gc-prescribed-point-local-moment-bridge/reviews/conductor_round94_source_scope.md;
+- rounds/codex-managed/gc-prescribed-point-local-moment-bridge/reviews/conductor_round94_adjudication.md;
+- rounds/codex-managed/gc-prescribed-point-local-moment-bridge/synthesis.md.
+
+## Round 95 certified external exponent and internal cluster normal form
+
+The narrowly repaired and source-audited Li--Yang theorem gives, for
+real \(X\ge2\),
+
+\[
+ P(X)\ll_\varepsilon
+ X^{(3292+25\sqrt{1717})/13762+\varepsilon}
+ =X^{0.3144831759740614\ldots+\varepsilon}.
+\]
+
+This is the strongest certified global pointwise theorem. It is an
+external direct route and does not prove either canonical M9 core.
+
+Internally, the fixed \(W=Y^{7/16}\) M1/M2 cluster reduces exactly to a
+signed reduced-determinant correlation after all equal lifts are
+combined. The equal-frequency diagonal is
+\(O_\varepsilon(D/L)\), while coefficient-blind Farey capacity at the
+minimax block is \(Y^{43/48+\varepsilon}\), missing the target by
+\(Y^{19/48}\). Thus the strongest internally proved exponent remains
+\(1/3\).
+
+Accepted evidence:
+
+- rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/synthesis.md;
+- sources/li_yang_2023.md.
+
+## Round 96 primitive-ray q-dispersion obstruction
+
+For the residual canonical hard top M2 cone,
+
+\[
+ m=(a+b)/2,\qquad q=(b-a)/2,\qquad
+ \chi_4(a)\chi_4(b)=(-1)^q.
+\]
+
+At fixed \(m\), legal shifts are \(q\mapsto q+2h\), so the character
+autocorrelation is \(+1\). At fixed \(a=m-q\), sign-changing shifts
+produce the exact complete actual-symbol Fejer Gram, retaining both
+moving reciprocal intervals, lift sets, owner masks, entry/exit, and
+the joint metric density-discrepancy coefficient.
+
+With
+
+\[
+ P\asymp L^2\sqrt\rho,\qquad E_0\asymp LJD^2,
+\]
+
+a separately estimated diagonal costs \(P^2/H\), \(H\le D\), and gives
+at most \(D^{-1/2}\) linear gain. Hard \(q=1\) Pell rows have
+\(D\asymp1\) and \(\rho\to\infty\). Shift Fourier transform and the
+adjoint reciprocal transform return to the original half-frequency /
+two-character row at equal capacity.
+
+This is a proved route obstruction, not a lower bound for the actual
+block. The first open kernel is the complete fixed-\(a\) Gram estimate
+
+\[
+ \mathcal G_H^{\rm act}
+ \ll_\varepsilon X^\varepsilon\frac{H^2}{\rho}E_0,
+\]
+
+or an equivalent determinant-weighted off-shift correlation theorem.
+No M2, M9, or exponent promotion follows.
+
+Accepted evidence:
+
+- rounds/codex-managed/m9-m2-primitive-ray-q-dispersion/synthesis.md;
+- rounds/codex-managed/m9-m2-primitive-ray-q-dispersion/reviews/conductor_round96_adjudication.md.
+
+## 19. Round 97 exact M2 outside-packet assembly
+
+The accepted denominator partition has one bottom remainder, one hard
+profile containing \(d=\lfloor\sqrt X\rfloor\), and otherwise smooth
+profiles. After R5-Full, terminal T2S, the full second-derivative cell,
+and the TTY wedge, the exact residual is
+
+\[
+ \mathcal U=
+ \{(\delta,\ell)\in\Omega:
+ \ell<\delta-1/4,\ 178\ell+1638\delta>463\}
+ \setminus\{(1/2,0)\}.
+\]
+
+Freeze the physical balanced class by \(1\le K/L\le16\), where
+\(K=XL/D^2\). The residual then splits disjointly into hard, smooth
+balanced, and smooth unbalanced labels. The exact one-count table proves
+
+\[
+ \mathrm{TOP}+\mathrm{BAL}+\mathrm{UNBAL}
+ \Longrightarrow\mathrm{M9\!-\!M2},
+\]
+
+where
+
+\[
+ \mathrm{BAL}:\quad
+ \left|\sum_GG\mathscr P_G\right|
+ \ll_\varepsilon L^{3/2}X^\varepsilon
+\]
+
+and
+
+\[
+ \mathrm{UNBAL}:\quad
+ \mathcal T_{L,K}\ll_\varepsilon(LK)^{3/4}X^\varepsilon.
+\]
+
+The hard canonical theorem, BAL, and UNBAL are all open. The smooth
+Poisson and balanced gcd identities are proved reductions only. Thus the
+canonical hard theorem alone does not imply M9-M2.
+
+Round 97 also removes the circular M9-M2 / near-collision-taxonomy edge
+and reclassifies the exact character factor as proved normalization.
+No pointwise exponent changes.
+
+Accepted evidence:
+
+- rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/synthesis.md;
+- rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/reviews/conductor_round97_adjudication.md.
+
+## 20. Round 98 exact M1 route-interface assembly
+
+After bottom ownership, R5-Full, the terminal theorem, the full
+second-derivative region, and the TTY wedge, the exact direct M1 residual is
+
+\[
+ \mathcal U_1=
+ \{(\delta,\ell)\in\Omega:
+ \ell<\delta-1/4,\ 178\ell+1638\delta>463\}
+ \setminus\{(1/2,0)\}.
+\]
+
+Lifting this exponent region to literal physical labels and splitting by the
+unique profile containing (d=\lfloor\sqrt X\rfloor) gives a disjoint hard
+residual and smooth residual. The accepted one-count table proves the exact
+conditional implication
+
+\[
+ \mathrm{TOP}_{\rm residual}+\mathrm{SMOOTH}_{\rm residual}
+ \Longrightarrow \mathrm{M9\!-!M1}.
+\]
+
+The canonical first-band M1 Gram is downstream of global angular
+recombination and owns only one transition-flattened smooth nonaxial
+principal component for (J^{13/18}<C_{\rm cond}\le J^{3/4}). There is no
+accepted inverse localization from that Gram to individual physical
+((D,L))-blocks. Consequently, even its conjectural proof would not remove
+either direct parent above.
+
+For the alternative total-active route, a fixed smooth radial partition has
+a proved compact critical interior and two exact open parents: a signed lower
+radial aggregate and a sharp upper radial/interface aggregate. The exact
+global assembly is
+
+\[
+ \mathrm{LOWER}_{\rm radial}+\mathrm{INTERFACE}_{\rm radial}
+ \Longrightarrow \mathrm{GAR}.
+\]
+
+GAR controls the total active M1 contribution, not each dyadic block. Thus
+
+\[
+ H1\!-!H3+H4+R5\text{-Full}+\mathrm{GAR}+\mathrm{M9\!-!M2}
+ \Longrightarrow \mathrm{GC\ target}
+\]
+
+is an alternative conditional bridge, not a proof of blockwise M9-M1 or M9.
+The graph has been rewired accordingly and its dependency cycles removed.
+All analytic parents remain open and no exponent changes.
+
+Accepted evidence:
+
+- rounds/codex-managed/m9-m1-route-interface-assembly/synthesis.md;
+- rounds/codex-managed/m9-m1-route-interface-assembly/reviews/conductor_round98_adjudication.md;
+- rounds/codex-managed/m9-m1-route-interface-assembly/reviews/conductor_round98_graph_and_cycle_audit.md.
+
+## 21. Round 99 exact joint four-row self-return
+
+On the literal canonical hard complement, open the complete trace and set
+
+\[
+ r=n+d+u,\qquad s=m+d.
+\]
+
+Then
+
+\[
+ ux+dV+nA-mB_2
+ =rx+n(A-x)+s(V-x)+m(x-V-B_2),
+\]
+
+and \(M^{-5}\mathfrak T_M\) becomes exactly \(M^{-4}\) times the four
+normalized physical rows. On a smooth stationary branch,
+
+\[
+ D^2_{d,u}\Psi
+ =L^T\operatorname{diag}(\psi_b''(r),-\psi_b''(s))L,
+ \qquad L\in GL_2(\mathbb Z).
+\]
+
+Thus the nonzero determinant \(\asymp-J^{-2/5}\) consists exactly of the
+two one-row curvatures. The Fejer factor becomes a function of
+\(r-s+m-n\), and Fourier recompletion is the original centered Toeplitz
+four-row Gram. A second B-process gives no independent \(J^{-1/5}\).
+
+Every fixed physical configuration is rank one in \((n,m)\); actual phases
+are gauges and telescope on paired closed trace cycles. Ordinary trace
+moments are direct sums in conductor row. The exact local identity
+
+\[
+ \mathfrak T_8(u,A,B_2,V)=8e_8(K(A-B_2))c_8(u)
+\]
+
+retains the coherent nonzero \(u=4\) mode after the unique \(u=0\) owner.
+This is a control obstruction, not a global actual-vector lower bound.
+
+The exact remaining analytic obligation is the fixed-vector estimate
+
+\[
+ \left|\widehat p_U^*\widehat{\mathcal K}_U\widehat q_U\right|
+ \ll_\varepsilon X^\varepsilon
+ { (U/B)J^{14/5}\over\mathsf C_U},
+\]
+
+whose top scale is \(J^{-1/6}\). All configurations must remain inside the
+matrix entry, and any conductor-row cancellation must occur in the scalar
+coefficient before taking a uniform norm. This estimate remains open.
+
+Accepted evidence:
+
+- rounds/codex-managed/m9-m1-joint-four-row-spectral-gap/synthesis.md;
+- rounds/codex-managed/m9-m1-joint-four-row-spectral-gap/candidates/conductor_joint_four_row_self_return.md;
+- rounds/codex-managed/m9-m1-joint-four-row-spectral-gap/reviews/conductor_round99_adjudication.md.
+
+## 22. Round 100 exact \(q=8\) actual-vector cross-projection
+
+On the exact two-primary subfamily
+
+\[
+ M=8N,\qquad N\ \mathrm{odd},\qquad
+ A\equiv B_2\equiv V\equiv2\pmod8,
+\]
+
+CRT and the completed-trace convention give
+
+\[
+ {\mathfrak T_M\over M^2}
+ ={c_8(u)\over8}{\mathfrak T_N\over N^2}.
+\]
+
+The local factor is \(+1/2\) for \(8\mid u\), \(-1/2\) for
+\(u\equiv4\pmod8\), and zero otherwise. The unique global \(u=0\) owner
+does not remove the nonzero branches. The canonical normalization remains
+\(M^{-5}\mathfrak T_M=M^{-3}(\mathfrak T_M/M^2)\), and opening the odd
+trace gives exactly four shared local bases, hence \(4/M^4\).
+
+For the literal actual pair sequences on the local order-four orbit,
+
+\[
+ \sum_{j\bmod4}F_j\overline{G_{j-1}}
+ ={1\over4}\sum_{k\bmod4}e_4(k)
+ \widehat F_k\overline{\widehat G_k}.
+\]
+
+Thus the generic hard object is a cross-projection. The only structural
+alignment \(G=F\) gives a difference of squares, but then the physical pair
+labels coincide modulo \(2N\), so \(R_*=4\) and Round 88 already owns it.
+The exact residual is the scalar \(\mathscr C_8(U)\), with odd completed
+trace, all actual rows, transitions, and conductor sum retained.
+
+No target estimate for \(\mathscr C_8(U)\) is proved. Local trace size and
+paired trace mass give neither the missing \(J^{-1/6}\) gain nor a global
+actual-vector lower bound. Higher \(2\)-parts and complementary modes remain
+open.
+
+Accepted evidence:
+
+- rounds/codex-managed/m9-m1-actual-vector-coherent-mode-projection/synthesis.md;
+- rounds/codex-managed/m9-m1-actual-vector-coherent-mode-projection/candidates/conductor_q8_actual_vector_cross_projection.md;
+- rounds/codex-managed/m9-m1-actual-vector-coherent-mode-projection/reviews/conductor_round100_adjudication.md.
+
+## 23. Round 101 full two-adic actual-row convolution
+
+Write
+
+\[
+ M=2^\nu N,\qquad N\ \mathrm{odd},\qquad L=2^{\nu-1}.
+\]
+
+When the local four-unit mask is nonempty, it is exactly the complete odd
+orbit \(x=1+2j\), \(j\bmod L\). For the literal actual pair rows,
+
+\[
+ \mathcal C_{2^\nu}(F,G)
+ ={1\over L^2}\sum_{k,l\bmod L}e_L(lv)
+ \widehat w_{l-k}\widehat F_k\overline{\widehat G_l}.
+\]
+
+The normalized matrix \(L^{-1}\widehat w_{l-k}e_L(lv)\) is unitarily
+equivalent to multiplication by the unimodular physical weight followed by
+a cyclic shift. It has rank \(L\), norm one, and no local spectral gap.
+
+The reciprocal phase has the guaranteed period
+
+\[
+ P_\nu=1\quad(\nu\le3),\qquad P_4=2,\qquad
+ P_\nu=L/8\quad(\nu\ge5),
+\]
+
+so the full weight has affine Fourier support
+
+\[
+ \widehat w_r=0\qquad\text{unless}\qquad
+ r\equiv u_2\pmod{L/P_\nu}.
+\]
+
+This decomposes the operator into permuted unitary blocks and gives no
+power saving. Nonunit \(K\) may shorten the period but does not change this
+conclusion.
+
+The global integer \(u=0\) is owned once. Full aligned or reversal terms
+are deleted only after their odd and two-adic return orders satisfy the
+Round-87--89 owner tests. In particular, the Round-100 \(q=8\) aligned
+square is prior-owned, but higher two-parts can have return
+\(L/\gcd(L,v)>\rho_*\) and remain hard.
+
+The exact survivor is the odd-cofactor and conductor sum
+\(\mathscr S_{2\text{-adic}}(U)\), with all actual rows, transitions,
+stars, classes, nonunit phases, and nonzero modulus multiples retained
+before absolute value. Its \(J^{-1/6}\) fixed-vector estimate remains open.
+
+Accepted evidence:
+
+- rounds/codex-managed/m9-m1-full-two-adic-orbit-convolution/synthesis.md;
+- rounds/codex-managed/m9-m1-full-two-adic-orbit-convolution/candidates/conductor_full_two_adic_orbit_convolution.md;
+- rounds/codex-managed/m9-m1-full-two-adic-orbit-convolution/reviews/conductor_round101_adjudication.md.
+
+## 24. Round 102 determinant carrier and short-ray ceiling
+
+For the literal fixed-\(a\) primitive-ray row,
+
+\[
+ \mathcal G_H^{\rm act}
+ =H E_{\rm act}
+ +2\Re\sum_{1\le s<H}(H-s)(-1)^s C_s^{\rm act}.
+\]
+
+The extracted density carrier has curvature
+
+\[
+ -{X\sqrt a\over2}
+ \left({g'\over k'(a+2q+2s)^{3/2}}
+       -{g\over k(a+2q)^{3/2}}\right).
+\]
+
+This is not the complete density-discrepancy determinant. Metric Fourier
+expansion replaces \(g,g'\) by \(g-2\ell,g'-2\ell'\); without expansion,
+the complete metric and entry/exit coefficient has no accepted
+\(q\)-variation theorem.
+
+The density-carrier zero set is exact:
+
+\[
+ b=dx^2,\quad b_s=dy^2,\quad
+ d(y^2-x^2)=2s,\quad g'kx^3=gk'y^3.
+\]
+
+For fixed \(a,s\) it has
+\(O_\varepsilon(X^\varepsilon s^\varepsilon GK)\) raw tuples, and the
+near ratio count is
+
+\[
+ \ll_\varepsilon X^\varepsilon
+ \{\eta(GK)^2+GK\}.
+\]
+
+These are raw density-mode facts, not a weighted actual-symbol estimate.
+Algebraic nonzero spacing is also below the active oscillatory scale.
+
+The residual half-open \(q=1\) block has no nonzero shift. Its exact open
+target is
+
+\[
+ \sum_a|F_a(1)|^2
+ \ll_\varepsilon X^\varepsilon {L^4\over A}.
+\]
+
+Thus determinant separation is not a uniform proof mechanism. The
+fixed-\(a\) Gram remains open, ordered after the short diagonal and then
+the complete longer-row mode-resolved near and separated packages.
+
+Accepted evidence:
+
+- rounds/codex-managed/m9-m2-determinant-weighted-actual-gram/synthesis.md;
+- rounds/codex-managed/m9-m2-determinant-weighted-actual-gram/candidates/conductor_determinant_split.md;
+- rounds/codex-managed/m9-m2-determinant-weighted-actual-gram/reviews/conductor_round102_adjudication.md.
+
+## 25. Round 103 complete singleton actual diagonal
+
+On a residual fixed-\(a\) row containing only \(q=1\), write
+
+\[
+ b=a+2,\qquad \delta_a=\sqrt{a+2}-\sqrt a,
+ \qquad \Lambda_a={X\delta_a^2\over2},
+\]
+
+\[
+ I_a=\left({J\delta_a\over2\sqrt a},
+            {J\delta_a\over\sqrt{a+2}}\right),
+ \qquad K\asymp {J\over A},\qquad G\asymp {L\over A}.
+\]
+
+The complete physical coefficient has the exact carrier factorization
+
+\[
+ \mathfrak C^\circ_{a,k}(g)
+ =e\!\left(-{g\Lambda_a\over2k}\right)
+  \mathfrak B^\circ_{a,k}(g).
+\]
+
+After \(u=y^2\), the centered factor is a complete quadratic integral.
+Every actual profile and both physical endpoint collars remain inside its
+amplitude. Uniform complete-Fresnel analysis gives
+
+\[
+ \sup_k|B_{a,g}(k)|+\operatorname {Var}_kB_{a,g}(k)
+ \ll_\varepsilon X^\varepsilon\sqrt{AL\over J}.
+\]
+
+For a complete metric Fourier mode \(\nu\), the total reciprocal phase is
+
+\[
+ f_{\nu,g}(k)=\left(\nu-{g\over2}\right){\Lambda_a\over k},
+ \qquad |f_{\nu,g}''(k)|\asymp {|2\nu-g|A^2\over J}.
+\]
+
+Because \(g\) is odd, \(|2\nu-g|\ge1\); the density mode is retained and
+is nonstationary in \(k\). Weighted second-derivative cancellation and the
+two metric Fourier moments yield
+
+\[
+ |F_a(1)|\ll_\varepsilon X^\varepsilon {L^2\over A},
+ \qquad
+ \boxed{\sum_{a\asymp A}|F_a(1)|^2
+ \ll_\varepsilon X^\varepsilon {L^4\over A}.}
+\]
+
+This is an actual-symbol theorem. It is false as a coefficient-uniform
+principle and does not estimate a nonzero \(q\)-shift. The complete
+longer-row fixed-\(a\) Gram remains open.
+
+Accepted evidence:
+
+- rounds/codex-managed/m9-m2-q1-actual-diagonal-energy/synthesis.md;
+- rounds/codex-managed/m9-m2-q1-actual-diagonal-energy/candidates/conductor_q1_sampled_k_closure.md;
+- rounds/codex-managed/m9-m2-q1-actual-diagonal-energy/reviews/conductor_round103_adjudication.md.
+
+## 26. Uniform fixed-\(q\) actual rows and the polynomial-shell survivor
+
+Let \(b=a+2q\), \(a\asymp b\asymp A\), and \(q\asymp D\) on one
+residual hard top M2 block. Put
+
+\[
+ \delta_q=\sqrt{a+2q}-\sqrt a,\qquad
+ \Lambda_q={X\delta_q^2\over2},\qquad
+ K\asymp {JD\over A},\qquad G\asymp {L\over A}.
+\]
+
+The literal complete centered integral has sampled-\(k\) variation
+
+\[
+ \sup_k|B_{a,q,g}(k)|+\operatorname{Var}_kB_{a,q,g}(k)
+ \ll_\varepsilon X^\varepsilon\sqrt{AL\over JD}.
+\]
+
+This actual-symbol theorem uses the exact homogeneous profile, both fixed
+physical collars, all entry/exit data, and
+
+\[
+ k\partial_k e(gk(y-r_k)^2)
+ ={y+r_k\over2}\partial_y e(gk(y-r_k)^2).
+\]
+
+It is uniform as \(b/a\to4^{-}\): the reciprocal interval and physical
+saddle path collapse together, and no inverse edge length occurs.
+
+Opening the complete punctured metric factor gives reciprocal frequencies
+\(n=|2\nu\pm g|\ge1\), including the density mode, with
+
+\[
+ |f_{\nu,g}''(k)|\asymp {nA^2\over JD}.
+\]
+
+Weighted second derivative estimation and the two complete Fourier
+half-moments yield
+
+\[
+ |F_a(q)|\ll_\varepsilon X^\varepsilon {L^2\over A},
+\qquad
+ \sum_{a\asymp A}\sum_{q\asymp D}|F_a(q)|^2
+ \ll_\varepsilon X^\varepsilon {DL^4\over A}.
+\]
+
+Consequently
+
+\[
+ \mathcal G_H^{\rm act}
+ \ll_\varepsilon X^\varepsilon {H^2DL^4\over A}.
+\]
+
+Against the canonical target \(X^\varepsilon H^2L^4/(AD)\), the exact
+rowwise-Cauchy deficit is \(D^2\). It is absorbed for every prescribed
+fixed polylogarithmic range \(D\le(\log(2+X))^C\), but no fixed
+positive-power shell follows. This is a route ceiling rather than an
+actual lower obstruction.
+
+The first remaining M2 core is the complete signed polynomial-shell
+cross-\(q\) correlation, with both moving reciprocal fibres, both lift
+sets, every owner, the metric density and every discrepancy mode, and all
+entry/exit transitions still coupled. No global exponent changes.
+
+Accepted evidence:
+
+- rounds/codex-managed/m9-m2-fixed-q-sampled-k-short-shell/synthesis.md;
+- rounds/codex-managed/m9-m2-fixed-q-sampled-k-short-shell/reviews/conductor_round104_adjudication.md.
+
+## 27. Polynomial-\(q\) transport residual and primitive dual square
+
+The strongest transparent sufficient theorem is
+
+\[
+ \sup_{I\subset[D,2D)}
+ \left|\sum_{q\in I}(-1)^qF_a(q)\right|
+ \ll_\varepsilon X^\varepsilon {L^2\over A}.
+\]
+
+At \(H\asymp D\), the exact zero-extended one-count would give the
+canonical fixed-\(a\) Gram.  The theorem is unproved: fixed-row control
+misses it by \(D\) in amplitude and misses the direct Gram by \(D^2\).
+
+For one complete mode, set
+
+\[
+ r_{q,k}={J\delta_q\over2k},\qquad c=\nu-{g\over2}.
+\]
+
+The centered material derivative transports the physical saddle, but the
+complete phase recouples as
+
+\[
+ c{\Lambda_q\over k}+gk(y-r_{q,k})^2
+ =\nu{\Lambda_q\over k}+gky^2-gJ\delta_qy.
+\]
+
+Thus a residual derivative \(c\Lambda_q'/k\asymp nJ\) remains.  The
+density mode is the original physical phase, so neither total variation
+nor deletion of a formal zero mode is licensed.
+
+The scalar joint Hessian is exactly
+
+\[
+ \det\nabla^2_{q,k}\Psi
+ =-{c^2X^2(t-1)^3\over t^3k^4}
+ \asymp-{n^2A\over D},
+ \qquad t=\sqrt{(a+2q)/a}.
+\]
+
+Full rank is not a free gain. Expand primitivity and put \(q=du\),
+where \(d\mid a\) is odd. For the branch
+\(c=\nu-g/2<0\), successive scalar stationary transforms have odd dual
+\(s=d-2h\) and exact phase
+
+\[
+ -{dXn\ell\over s}-{as\over4d}+J\sqrt{an\ell}
+ =-\left(J\sqrt{dn\ell/s}-{1\over2}\sqrt{as/d}\right)^2,
+\]
+
+with
+
+\[
+ e(-as/(4d))=-i\chi_4(a/d)\chi_4(s).
+\]
+
+Hence the alternating primitive lattice returns an odd-character
+reciprocal/product square at equal carrier capacity.  This is an exact
+reduction and a determinant-only route obstruction, not an
+owner-preserving transform theorem: all transformed owners, lifts,
+profiles, collars, modes, maximal cutoffs, and stationary errors remain to
+be matched.
+
+The complete maximal theorem, every fixed positive-power \(q\)-shell,
+the fixed-\(a\) Gram, and all downstream M2 obligations remain open.
+
+Accepted evidence:
+
+- rounds/codex-managed/m9-m2-polynomial-q-maximal-alternation/synthesis.md;
+- rounds/codex-managed/m9-m2-polynomial-q-maximal-alternation/reviews/conductor_round105_adjudication.md;
+- rounds/codex-managed/m9-m2-polynomial-q-maximal-alternation/controls/conductor_round105_controls.md.
+
+## 28. Signed principal symbol and exact owner conjugation
+
+Round 106 corrects and completes the smooth-interior scalar dictionary.
+For either orientation put
+
+\[
+ c=\nu-\tau g/2,\qquad n=2|c|,\qquad
+ \epsilon=\operatorname {sgn}(c).
+\]
+
+Each orientation contains both signs. After \(q=du\), \(d\mid a\) odd,
+the signed dual labels and joint saddle are
+
+\[
+ m=-\epsilon\ell,\qquad d-2h=-\epsilon r,\qquad
+ y_*^2={\ell\over n},\qquad
+ k_*^2={n\Lambda_{du}\over2\ell},\qquad
+ b_*={4d^2Xn\ell\over r^2}.
+\]
+
+The stationary phase is
+
+\[
+ \epsilon\left(J\sqrt{dn\ell/r}
+       -{1\over2}\sqrt{ar/d}\right)^2.
+\]
+
+The physical, \(k\)- and \(u\)-Gaussian units multiply to \(e(1/8)\),
+and the strict-interior principal coefficient is
+
+\[
+ e(1/8){g^{1/2}b_*^{3/4}\over
+ dJ^{1/2}n^{3/4}\ell^{1/4}}
+ A^\circ_{ga,gb_*}(g\ell/n).
+\]
+
+This point value is not a uniform actual symbol. At collars, reciprocal
+or maximal endpoints, lift boundaries, hard samples, equalities and the
+collapsing edge, the normalized complete Fresnel vector must remain.
+
+There is an exact discrete obstruction to pointwise owner transport. If
+\(P_E\) is any literal owner on the finite zero-extended \((u,k)\)-array,
+then the Fourier stage gives
+
+\[
+ \widetilde P_E=\mathcal F P_E\mathcal F^{-1}.
+\]
+
+It preserves norm, rank, complements and one-count and returns exactly
+under inversion. Since \(b_*\) is generally nonintegral, evaluating a
+sharp integer owner there depends on an arbitrary cardinal interpolation.
+The invariant dual object is the nonlocal conjugated owner kernel, not a
+pointwise indicator.
+
+The scalar frequency map preserves local \(L^2\) density. Therefore the
+complete-Fresnel owner kernel is an equal-capacity reformulation of the
+open signed nonzero-shift actual Gram, not a \(D\)-saving. Its denominator
+scale and joint \((\ell,r)\) symbol also fail the accepted terminal M1
+hypotheses.
+
+Accepted evidence:
+
+- rounds/codex-managed/m9-m2-dual-square-actual-symbol-transfer/synthesis.md;
+- rounds/codex-managed/m9-m2-dual-square-actual-symbol-transfer/reviews/conductor_round106_signed_stationary_normalization.md;
+- rounds/codex-managed/m9-m2-dual-square-actual-symbol-transfer/reviews/conductor_round106_owner_conjugation_gate.md;
+- rounds/codex-managed/m9-m2-dual-square-actual-symbol-transfer/controls/conductor_round106_controls.md.
+
+## 29. Unbalanced smooth divisor regrouping and fixed-centre return
+
+For a literal strict smooth unbalanced M2 component, put
+
+\[
+ K={XL\over D^2},\qquad M=LK,qquad F=\sqrt{XM}={XL\over D}.
+\]
+
+The exact product coefficient is
+
+\[
+ A_{L,K}(n)=\sum_{hk=n}\chi_4(h)a_{L,K}(h,k),
+ \qquad
+ \mathcal T_{L,K}=\sum_nA_{L,K}(n)e(\sqrt{Xn}),
+\]
+
+with
+
+\[
+ \sum_n|A_{L,K}(n)|^2\ll_\varepsilon MX^\varepsilon.
+\]
+
+For a separated Mellin mode its Dirichlet series is
+
+\[
+ L(s-it_1,\chi_4)\zeta(s-it_2).
+\]
+
+The actual coefficient is the full two-height inverse-Mellin
+superposition and is not (r_2(n)/4). Complementary divisor incidences
+belong to other physical owners.
+
+Both degree-one root numbers are (+1), and the formal reflected factor
+lengths are
+
+\[
+ {X\over D}\quad\hbox{and}\quad D.
+\]
+
+The exact smooth character process has
+
+\[
+ h_*={4Xk\over r^2},\qquad
+ 2\sqrt2\,i,e(-1/8)\chi_4(r)(Xk)^{1/2}r^{-3/2}.
+\]
+
+After inserting the literal symbol, the physical normalization leaves
+exactly (-i/(2\pi)) times the returned row. Exact (k)-Poisson gives
+
+\[
+ \mathscr R_{D,L}(X)=
+ \sum_s\sum_{\substack{r\mid s\\r\ \mathrm{odd}}}
+ \chi_4(r)W\!\left({X\over rD}\right)
+ \int_0^\infty {q_L(h)\over h}
+ e\!\left({hr(X-s)\over4X}\right)dh.
+\]
+
+It is rapidly supported on
+
+\[
+ |s-X|\lesssim {D\over L}.
+\]
+
+On a fixed flat smooth component the aggregate stationary error is
+(O(KF^{-1/2})), hence (O(L^{-1})) after physical normalization.
+Sharp clipped, starred, hard, or arithmetic-owner boundaries retain their
+exact endpoint kernels.
+
+The absolute capacity is ((D/L)X^\varepsilon), so the exact missing
+factor against the physical target is
+
+\[
+ {D\over LX^{1/4}}={H_D\over L}.
+\]
+
+It vanishes only on the already owned terminal line. A sliding-window
+outside-absolute correlation of the exact (A_{L,K}) is sufficient for
+the three-quarter target, but that signed estimate remains open.
+
+Accepted evidence:
+
+- rounds/codex-managed/m9-m2-smooth-unbalanced-divisor-recombination/synthesis.md;
+- rounds/codex-managed/m9-m2-smooth-unbalanced-divisor-recombination/reviews/conductor_round107_hb_kpoisson_return.md;
+- rounds/codex-managed/m9-m2-smooth-unbalanced-divisor-recombination/reviews/conductor_round107_recombination_and_capacity.md;
+- rounds/codex-managed/m9-m2-smooth-unbalanced-divisor-recombination/controls/conductor_round107_controls.md.
+
+## 30. Complete metric functional calculus and equal capacity
+
+For the complete punctured metric multiplier, the normalized quadratic
+kernel \(T_\alpha\) has Fourier multiplier \(e(\alpha y^2)\). Therefore
+
+\[
+ \sum_r\widehat W_R(r)T_{rc}
+ =\mathcal F^{-1}M_{W_R(cy^2)}\mathcal F
+\]
+
+exactly, including the density mode. Its operator norm is
+\(\|W_R\|_\infty\), independent of the apparent resonance parameter.
+The transform is equal-capacity and the primitive character cancels in
+the fixed-\(a\) Gram. This is a proved obstruction, not an estimate.
+
+Accepted evidence:
+
+- rounds/codex-managed/m9-m2-metaplectic-two-character-energy/synthesis.md.
+
+## 31. Blockwise scalar owner completion
+
+With \(V_R(t)=\eta(R\|t\|)\) and \(W_R=V_R-V_{2R}\),
+
+\[
+ 1_{t\notin\mathbb Z}
+ =\sum_{1\le R<G_*}W_R(t)+V_{G_*}(t)-1_{t\in\mathbb Z}
+\]
+
+pointwise on the dyadic metric lattice. Using one orientation and one outer
+\(2\Re\), the literal first-applicable owner partition gives
+
+\[
+ \mathfrak Q_B^{\mathrm{res}}
+ =\mathfrak Q_B^{\mathrm{comp}}-sum_\nu\mathfrak O_{B,\nu},
+ \qquad
+ \sum_{B,\nu}|\mathfrak O_{B,\nu}|
+ \ll_\varepsilon L^2X^\varepsilon.
+\]
+
+This is a scalar linear connector only. It supplies no Fejer or Gram cross
+energy.
+
+Accepted evidence:
+
+- rounds/codex-managed/m9-m2-blockwise-owner-completion/synthesis.md.
+
+## 32. Global completed real-part self-return
+
+Let
+
+\[
+ \mathfrak C_{L,\mathrm{tag}}^{\mathrm{comp}}
+ =\sum_B\mathfrak Q_B^{\mathrm{comp}}.
+\]
+
+The accepted owner identity and the original Round-75 row identity are
+
+\[
+ \mathcal E_L^{\mathrm{top}}
+ =\widetilde{\mathcal E}_{\mathrm{owned},L}
+  +2\Re\mathfrak C_{L,\mathrm{tag}}^{\mathrm{comp}}
+ =\mathcal D_L+2\Re\mathfrak C_L^{\mathrm{off}},
+\]
+
+with
+\(|\widetilde{\mathcal E}_{\mathrm{owned},L}|+\mathcal D_L
+\ll_\varepsilon L^2X^\varepsilon\). Hence
+
+\[
+ \Re\bigl(
+ \mathfrak C_{L,\mathrm{tag}}^{\mathrm{comp}}
+ -\mathfrak C_L^{\mathrm{off}}
+ \bigr)=O_\varepsilon(L^2X^\varepsilon).
+\]
+
+The one-sided bound for the completed real part is therefore the minimal
+hard-energy target and is equivalent to the original signed off-diagonal.
+There is no certified complex self-return or smaller kernel. With
+\(s=h+2r\), the remaining exact signed presentation is
+
+\[
+ \mathfrak C_L^{\mathrm{off}}
+ =\sum_{a,r}\bigl(F_{L,a}(2r)-F_{L,a}(2r+1)\bigr),
+\]
+
+where every moving owner and support seam remains. Its target estimate is
+open.
+
+Accepted evidence:
+
+- rounds/codex-managed/m9-m2-global-signed-completed-directional/synthesis.md;
+- rounds/codex-managed/m9-m2-global-signed-completed-directional/reviews/conductor_round110_recombination_and_orientation.md.
+
+## 33. Adjacent transport and the bulk discrete-lattice obstruction
+
+For the exact finite zero-extended primitive-ray row,
+
+\[
+ 2\sum_q(-1)^qF_{L,a}(q)
+ =\sum_q(-1)^q\{F_{L,a}(q)-F_{L,a}(q+1)\}.
+\]
+
+This signed high-pass retains the cutoff endpoint and uses one orientation
+with one outer \(2\Re\). Total variation, maximal, energy, modulus, and
+Gram bounds are stronger.
+
+Put
+
+\[
+ \delta_q=\sqrt{a+2q}-\sqrt a,\qquad
+ \lambda_q=\left({\delta_q\over\delta_{q+1}}\right)^2.
+\]
+
+The map \((x,k)\mapsto(\lambda_qx,k/\lambda_q)\) has determinant one and
+preserves the radical phase, \(kx\), and \(\Lambda_q/k\). For a compact
+cardinal extension \(H\), however,
+
+\[
+ \lambda_q\sum_nH(\lambda_qn)-\sum_nH(n)
+ =\sum_r\{\widehat H(r/\lambda_q)-\widehat H(r)\}.
+\]
+
+On any positive interval of length \(K\), the integer comb and pulled-back
+scaled comb have coefficient-blind total-variation distance \(\asymp K\)
+for every \(\lambda_q\ne1\), rational or irrational.
+
+In a noncollapsed block
+
+\[
+ a\asymp A,\quad q\asymp D,\quad g\asymp L/A,\quad
+ K\asymp JD/A,
+\]
+
+the reciprocal slabs have width \(K/D=J/A\), the physical slabs have
+width \(L/D\), and the common-band carrier displacement is
+
+\[
+ {Xg(\delta_{q+1}^2-\delta_q^2)\over4k}\asymp {JL\over A}.
+\]
+
+The coefficient-blind bulk capacity is \(DL^2\); the separate endpoint
+bound is \(L^2\sqrt\kappa\), with \(\kappa=JD/(AL)\ge D\). Hence
+phase-preserving transport proves no positive-power shell. A first-failure
+Boolean partition nevertheless owns every simultaneous arithmetic and
+support jump exactly once.
+
+This is a route obstruction, not an actual-symbol lower bound. The live
+theorem is cancellation in the complete actual signed common-band
+scaled-comb correlation, jointly with its one-count slabs when needed.
+
+Accepted evidence:
+
+- rounds/codex-managed/m9-m2-adjacent-ray-transport-commutator/synthesis.md;
+- rounds/codex-managed/m9-m2-adjacent-ray-transport-commutator/reviews/conductor_round111_highpass_and_one_count.md;
+- rounds/codex-managed/m9-m2-adjacent-ray-transport-commutator/reviews/conductor_round111_transport_lattice_and_capacity.md.
+
+## 34. Balanced smooth quarter-packet normalization and literal seam
+
+For one fixed real smooth balanced physical block \(B=(X,D,L,+)\), write
+\[
+R=\sqrt X,\qquad K=\frac{XL}{D^2},\qquad 1\le K/L\le16.
+\]
+Let \(\Omega_B\) contain only bounded internal subdivisions of this block,
+and let \(G\) index a fixed smooth partition of \(g=(h,k)\). With
+\(h=gu,\ k=gv,\ (u,v)=1\), the exact character identity and Poisson
+summation give
+\[
+T_{B,\mathrm{small}}^{+,\mathrm{full}}
+=\frac1{2i}\sum_{\omega\in\Omega_B}\sum_G
+GQ_{B,\omega,G}^{\mathrm{full}}(R)+E_{B,\mathrm{gcd\text{-}bd}},
+\]
+where \(Q^{\mathrm{full}}\) is the \(\chi_4(u)\)-weighted \(1/4\) packet
+minus the \(3/4\) packet. For real profiles,
+\[
+Q^{\mathrm{full}}(-R)=-\overline{Q^{\mathrm{full}}(R)},
+\]
+so the physical frequency blocks are conjugate after the factor
+\(1/(2i)\).
+
+The smooth packet is the full small-gcd transform. Exact-square and
+\(R^{-1}\)-near-square prior owners therefore enter through explicit
+signed subtraction terms; their arithmetic complement is not a smooth
+\(g/G\)-profile. The required open norm has one modulus outside the
+complete internal \((\omega,G)\)-sum for each fixed physical block.
+Shellwise \(\ell^1\), product-fibre absolute values, and Gram bounds are
+stronger.
+
+The first remaining formal seam is the coefficientwise finite atom
+dictionary: literal denominator and frequency profiles, floors, stars,
+support crossings, transform errors, and their exact one-count identity
+are named but not instantiated in the frozen artifacts. Once that
+dictionary is supplied, the first analytic gap is
+\[
+\left|\sum_{\omega,G}GQ_{B,\omega,G}^{\mathrm{full}}(R)\right|
+\ll_\varepsilon L^{3/2}X^\varepsilon.
+\]
+The present envelope still loses at most \(X^{1/12}\), maximally at
+\(L=X^{1/6}\). No exponent changes.
+
+Accepted evidence:
+
+- rounds/codex-managed/m9-m2-balanced-smooth-quarter-packet-canonicalization/synthesis.md;
+- rounds/codex-managed/m9-m2-balanced-smooth-quarter-packet-canonicalization/reviews/conductor_round112_normalization_and_symbol.md;
+- rounds/codex-managed/m9-m2-balanced-smooth-quarter-packet-canonicalization/reviews/conductor_round112_owner_norm_capacity.md.
+
+## 35. Literal balanced smooth dictionary and exact physical one-count
+
+Round 113 removes the remaining formal seam in the balanced smooth M2
+packet. With (y=\lfloor\sqrt X\rfloor), (D_j=2^{-j}y),
+(H=\lfloor DX^{-1/4}\rfloor), and (L_r=2^{-r}H), the denominator and
+frequency profiles telescope exactly. Only (j=0) and (r=0) are
+clipped; the frequency bottom is explicit; (H=1,2) have no full smooth
+residual label. The entire (d=0) summand is defined as zero.
+
+For a full smooth block (B=(X,j,r,+)), put
+
+\[
+ K={XL\over D^2},\qquad M=LK,
+\]
+
+and define the positive-quadrant continuum symbol
+
+\[
+ A_B(x,z)=W(x/L)\Phi(x/(H+1))
+ \left({M\over xz}\right)^{3/4}
+ W\!\left(\sqrt{{xX\over4zD^2}}\right).
+\]
+
+Its zero extension is real and smooth, agrees with every integer
+coefficient, and has uniform rescaled seminorms. The exact physical
+normalization is
+
+\[
+ \mathcal B_B^+=-c_B\mathcal T_B+E_{B,\mathrm{tr}},\qquad
+ c_B={e(1/8)\over2\pi}X^{1/4}M^{-3/4},\qquad
+ B_{2,B}=8\Re\mathcal B_B^+,
+\]
+
+with (|E_{B,\mathrm{tr}}|\ll1).
+
+The exact ratio
+
+\[
+ {K\over L}=4^j{X\over\lfloor\sqrt X\rfloor^2}
+\]
+
+leaves (j=1) as the persistent balanced family. The (j=2) label is
+balanced only at exact-square (X), where (K/L=16); all (j\ge3)
+are unbalanced.
+
+The explicit gcd telescope has low weight
+(\eta(g/(\sqrt L/2))), an exact scale-one integer bottom, and high owner
+(1-\eta(g/(\sqrt L/2))). On each low shell, Poisson gives
+
+\[
+ \mathcal T_B^{\mathrm{low}}
+ ={1\over2i}\sum_\sigma G_\sigma
+ Q_{B,\sigma}^{\mathrm{full}}(\sqrt X),
+\]
+
+where (Q^{\mathrm{full}}) is the (\chi_4(u))-weighted (1/4) packet
+minus the (3/4) packet. High gcd is owned first; exact squares and
+nonsquare (X^{-1/2})-near-squares are explicit signed low-part
+corrections. Therefore
+
+\[
+ \mathcal T_B=\mathcal T_B^{\mathrm{hi}}
+ +\mathcal S_B^{\mathrm{sq}}+\mathcal S_B^{\mathrm{near}}
+ +\mathcal T_B^{\mathrm{res}},
+\]
+
+and
+
+\[
+ B_{2,B}=8\Re\!\left[-c_B(\mathcal T_B^{\mathrm{hi}}
+ +\mathcal S_B^{\mathrm{sq}}+\mathcal S_B^{\mathrm{near}}
+ +\mathcal T_B^{\mathrm{res}})+E_{B,\mathrm{tr}}\right].
+\]
+
+The first open analytic estimate is exactly
+
+\[
+ \left|\sum_\sigma G_\sigma
+ Q_{B,\sigma}^{\mathrm{full}}(\sqrt X)\right|
+ \ll_\varepsilon L^{3/2}X^\varepsilon
+\]
+
+for each fixed physical block. The dictionary is capacity-preserving; the
+worst remaining loss is still (X^{1/12}). No global exponent changes.
+
+Accepted evidence:
+
+- rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/synthesis.md;
+- rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/reviews/conductor_round113_dictionary_and_normalization.md;
+- rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/reviews/conductor_round113_ownership_and_scope.md.

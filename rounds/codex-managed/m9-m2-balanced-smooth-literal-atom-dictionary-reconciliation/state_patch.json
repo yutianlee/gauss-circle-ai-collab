@@ -1,0 +1,165 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-balanced-smooth-literal-atom-dictionary",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Literal coefficientwise dictionary for balanced smooth M2 residual blocks",
+        "status": "proved_internal",
+        "statement_tex": "Let X>=4096 be real, R=sqrt X, y=floor R, D_j=2^(-j)y, H=floor(D_j X^(-1/4)), and L_r=2^(-r)H. The fixed eta/W telescopes give exact denominator and frequency partitions; only j=0 and r=0 are clipped, and H=1,2 have no full smooth residual frequency label. For every residual full-smooth block B=(X,j,r,+), define the whole d=0 summand as zero, set K=XL/D^2 and M=LK, and define the real continuum amplitude A_B(x,z)=W(x/L)Phi(x/(H+1))(M/(xz))^(3/4)W(sqrt(xX/(4zD^2))) on the positive quadrant, extended by zero. Then B_(2,B)=8 Re B_B^+, B_B^+=-c_B T_B+E_(B,tr), c_B=e(1/8)X^(1/4)M^(-3/4)/(2pi), |E_(B,tr)|<<1, and all rescaled symbol seminorms are uniform. Moreover K/L=4^j X/floor(sqrt X)^2: j=1 is balanced, j=2 is balanced exactly for square X at K/L=16, and j>=3 is unbalanced. With G_0=sqrt L/2, the explicit smooth gcd telescope has low weight eta(g/G_0), exact integer bottom c_LW(g), and high owner 1-eta(g/G_0). Writing h=gu,k=gv gives T_B^low=(1/(2i))sum_sigma G_sigma Q_(B,sigma)^full(R), where Q is the chi_4(u)-weighted 1/4 packet minus the 3/4 packet and Q(-R)=-conj Q(R). High gcd is owned first; exact squares and nonsquare R^(-1)-near-squares are explicit disjoint signed low-part corrections. Thus T_B=T_B^hi+S_B^sq+S_B^near+T_B^res and B_(2,B)=8 Re[-c_B(T_B^hi+S_B^sq+S_B^near+T_B^res)+E_(B,tr)] coefficientwise. The first open analytic assertion is |sum_sigma G_sigma Q_(B,sigma)^full(R)|<<_epsilon L^(3/2)X^epsilon for each fixed B. The dictionary is capacity-preserving and proves no signed estimate or exponent.",
+        "dependencies": [
+          "M9-M2-balanced-quarter-packet-normalization-scope",
+          "M9-M2-smooth-small-gcd-quarter-packet",
+          "M9-M2-dyadic-weight-nondegeneracy",
+          "H4-Phi-regularity"
+        ],
+        "implies": [
+          "M9-M2-smooth-balanced-quarter-packet-estimate"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/reports/blind_atom_dictionary_rederivation.md",
+            "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/reports/literal_atom_dictionary_constructor.md",
+            "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/reports/atom_dictionary_hostile_seam_audit.md",
+            "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/reviews/conductor_round113_dictionary_and_normalization.md",
+            "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/reviews/conductor_round113_ownership_and_scope.md",
+            "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/controls/conductor_round113_controls.md",
+            "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Attack the literal per-block signed quarter-packet sum with its complete actual symbol. Preserve both quarter shifts, chi_4, the full internal gcd-shell sum, and the fixed-block outer modulus."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-balanced-quarter-packet-normalization-scope",
+        "statement_tex": "Fix one real smooth positive-frequency residual physical block B=(X,D,L,+) with R=sqrt X, K=XL/D^2 and 1<=K/L<=16. The exact full-small-gcd transform is T_(B,small)^(+,full)=(1/(2i))sum_sigma G_sigma Q_(B,sigma)^full(R), where Q retains chi_4(u) and is the 1/4 packet minus the 3/4 packet. For real profiles Q(-R)=-conj(Q(R)), giving physical frequency conjugacy after the factor 1/(2i). The packet represents the full small-gcd shell; exact squares and R^(-1)-near-squares are explicit signed corrections, never arithmetic masks inside the smooth profile. The absolute value remains outside the complete internal gcd-shell sum for each fixed physical block, and distinct D or L blocks cannot cancel before the accepted blockwise assembly. Shellwise l1, product-fibre absolute values, and Gram norms are stronger. The current envelope loses min(L^(1/2),R^(1/2)/L), maximally X^(1/12) at L=X^(1/6). The coefficientwise continuum bridge, clipped-profile dictionary, exact gcd bottom, crossing owner, and physical correction equation are now instantiated by M9-M2-balanced-smooth-literal-atom-dictionary; no analytic packet estimate is included.",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/synthesis.md"
+          ]
+        },
+        "next_action": "Use the proved literal dictionary and its exact physical one-count equation. The next gap is the signed per-block L^(3/2) quarter-packet estimate, not another normalization or owner-reconciliation step."
+      },
+      {
+        "id": "M9-M2-smooth-small-gcd-quarter-packet",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/reports/literal_atom_dictionary_constructor.md",
+            "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/synthesis.md"
+          ]
+        },
+        "next_action": "Retain this as the abstract full-small-gcd reduction. Its literal balanced M2 instantiation is now M9-M2-balanced-smooth-literal-atom-dictionary; the remaining work is analytic cancellation in the complete signed packet."
+      },
+      {
+        "id": "M9-M2-smooth-balanced-quarter-packet-estimate",
+        "dependencies_added": [
+          "M9-M2-balanced-smooth-literal-atom-dictionary"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/reports/blind_atom_dictionary_rederivation.md",
+            "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/reports/literal_atom_dictionary_constructor.md",
+            "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/reports/atom_dictionary_hostile_seam_audit.md",
+            "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/synthesis.md"
+          ]
+        },
+        "next_action": "Prove |sum_sigma G_sigma Q_(B,sigma)^full(R)|<<_epsilon L^(3/2)X^epsilon for the literal Round-113 block. The persistent balanced denominator is j=1, with only an isolated exact-square j=2 boundary. Do not use cross-block cancellation, arithmetic masks in the smooth profile, shellwise l1, unsigned spacing, or arbitrary coefficients."
+      },
+      {
+        "id": "M9-M2-physical-one-count-assembly",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/reviews/conductor_round113_ownership_and_scope.md",
+            "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/synthesis.md"
+          ]
+        },
+        "next_action": "Retain the proved blockwise owner architecture. The balanced child now has a literal coefficientwise dictionary and physical correction equation, but its signed estimate remains open; the hard and unbalanced parents are independent and also open."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round113-discrete-values-define-a-smooth-continuum-symbol",
+        "reason": "Integer coefficient values do not determine the continuum profile required by Poisson. The positive-quadrant smooth extension and its seminorms must be explicitly fixed."
+      },
+      {
+        "id": "Round113-zero-cutoff-times-undefined-d0-phase",
+        "reason": "W(0)=0 does not make e(hX/(4d)) meaningful at d=0. The entire d=0 summand must be defined as zero or omitted."
+      },
+      {
+        "id": "Round113-low-gcd-identity-is-the-full-physical-one-count",
+        "reason": "The low packet alone omits the high-gcd owner and transform error. The full physical equation must display high, square, near, residual, and error terms."
+      },
+      {
+        "id": "Round113-optional-equality-and-collar-ownership",
+        "reason": "An optional blockwise owner convention is incompatible with coefficientwise one-count. Priority and equality ownership must be frozen globally for the dictionary."
+      },
+      {
+        "id": "Round113-generic-j2-balanced-family",
+        "reason": "The exact identity K/L=4^jX/floor(sqrt X)^2 puts j=2 in the balanced range only when X is an exact square and K/L=16."
+      },
+      {
+        "id": "Round113-square-near-mask-inside-smooth-profile",
+        "reason": "Exact-square and near-square complements are arithmetic and nonsmooth. They are explicit signed corrections to the full smooth packet."
+      },
+      {
+        "id": "Round113-cross-DL-block-packet-cancellation",
+        "reason": "The accepted physical assembly is blockwise. The packet modulus is per fixed D,L block and cannot combine distinct physical blocks."
+      },
+      {
+        "id": "Round113-dictionary-saves-X-one-twelfth",
+        "reason": "The dictionary is an exact representation. X^(1/12) is the worst remaining analytic deficit, not a saving."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M2-smooth-balanced-quarter-packet-estimate",
+        "reason": "The literal antecedent is now proved, but the signed L^(3/2) packet estimate is not."
+      },
+      {
+        "id": "M9-M2-top-endpoint-density-discrepancy-energy",
+        "reason": "Round 113 concerns only smooth balanced blocks."
+      },
+      {
+        "id": "M9-M2-smooth-unbalanced-three-quarter-estimate",
+        "reason": "The unbalanced product-phase parent is independent."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Its hard, balanced, and unbalanced analytic parents remain open."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "No M1 estimate is proved."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "Uniform completion of all physical packets remains open."
+      },
+      {
+        "id": "M9",
+        "reason": "Neither M9-M1 nor M9-M2 is closed."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "Its M9 hypothesis remains open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "No pointwise exponent changes."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 4,
+    "idea_quality_score": 6,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 113 closes the literal continuum-symbol, d=0, gcd-bottom, owner-priority, and physical one-count seams for the balanced smooth M2 child. It reduces the persistent denominator geometry to j=1 plus an isolated exact-square j=2 boundary, but proves no analytic cancellation, range, or exponent."
+  }
+}

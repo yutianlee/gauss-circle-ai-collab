@@ -2,7 +2,7 @@
   "schema_version": 1,
   "research_program": "gauss-circle-proof-development",
   "conductor": "Codex",
-  "active_round": 89,
+  "active_round": 113,
   "archive_note": "Rounds 1-25 are documented in their campaign plan, synthesis, state patch, and historical project summary artifacts. This compact ledger retains the immediately active research chain after a repair of the derived ledger file in Round 28.",
   "rounds": [
     {
@@ -2571,12 +2571,12 @@
       "round_index": 89,
       "campaign_id": "m9-m1-bad-prime-period-fibre-energy",
       "type": "m9_m1_bad_prime_period_fibre_energy",
-      "status": "active",
+      "status": "closed",
       "objective": "Classify and estimate the complete small-prime, nonunit-K, and full 2-adic reciprocal-period fibres in the exact hard M1 cross-group operator.",
       "tasks": [
-        {"id": "blind_bad_prime_fibre_rederivation", "role": "statement_only_blind_rederiver", "status": "assigned"},
-        {"id": "bad_prime_period_graph_attack", "role": "analytic_discovery", "status": "assigned"},
-        {"id": "bad_prime_hostile_source_audit", "role": "hostile_source_reviewer", "status": "assigned"}
+        {"id": "blind_bad_prime_fibre_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean_with_supplemental_certification"},
+        {"id": "bad_prime_period_graph_attack", "role": "analytic_discovery", "status": "completed_clean_after_citation_repair"},
+        {"id": "bad_prime_hostile_source_audit", "role": "hostile_source_reviewer", "status": "completed_clean_with_supplemental_certification"}
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 80,
@@ -2598,7 +2598,986 @@
         "statement-only and hostile gates",
         "conductor decision"
       ],
-      "next_round": null
+      "closing_assessment": {
+        "decision": "promote_bad_prime_cellwise_period_graph_and_terminate_local_peeling",
+        "graph_mutation": true,
+        "main_result": "Complete p=2,3,5,7 mask classification and cellwise two-directed-degree bounds remove a nonempty bad-prime package. The full union retains a top-conductor J^(1/6) capacity deficit, so M9-M1 and the exponent remain open."
+      },
+      "next_round": 90
+    },
+    {
+      "round_index": 90,
+      "campaign_id": "m9-m1-capacity-self-return-fork",
+      "type": "m9_m1_capacity_self_return_fork",
+      "status": "closed",
+      "objective": "Prove equal-capacity self-return of the complete first-band M1 survivor or isolate a strict non-returning signed operator with reduced capacity power.",
+      "tasks": [
+        {"id": "blind_m1_capacity_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean_with_post_isolation_seam_certification"},
+        {"id": "m1_self_return_barrier_attack", "role": "analytic_discovery", "status": "completed_clean"},
+        {"id": "m1_self_return_hostile_source_audit", "role": "hostile_source_reviewer", "status": "completed_clean"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 80,
+        "numerical_experimental_maximum_percent": 20,
+        "planned_numerical_percent": 0
+      },
+      "exit_gates": [
+        "R82_to_R89_capacity_ledger",
+        "Q_power_normalization",
+        "complete_cell_reassembly",
+        "completed_descent_and_inverse_transform",
+        "global_diagonal_one_count",
+        "all_class_sign_and_modulus_multiple_ownership",
+        "actual_stationary_symbol_and_support",
+        "top_J_one_sixth_control",
+        "literal_self_return_or_strict_nonreturn_operator",
+        "source_hypothesis_map",
+        "statement_only_and_hostile_gates",
+        "conductor_decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_gram_square_root_equal_capacity_barrier_without_hard_core_estimate",
+        "graph_mutation": true,
+        "main_result": "The complete R82--R89 first-band M1 transform chain is the exact Fejer Gram lift of the Round-82 centered row. Its target and full-degree capacity are D/B times the squares of the Round-82 quantities, so the J^(1/6) Gram gap square-roots to the same J^(1/12) linear gap. The hard signed actual-symbol core and global exponent remain open."
+      },
+      "next_round": 91
+    },
+    {
+      "round_index": 91,
+      "campaign_id": "gc-unconditional-exponent-extraction",
+      "type": "unconditional_exponent_extraction",
+      "status": "closed",
+      "objective": "Determine the strongest unconditional global exponent implied by the accepted hyperbola--Vaaler reduction and proved direct M1/M2 block menu.",
+      "tasks": [
+        {"id": "blind_global_exponent_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean"},
+        {"id": "global_exponent_assembly_attack", "role": "analytic_assembly", "status": "completed_clean"},
+        {"id": "global_exponent_hostile_audit", "role": "hostile_dependency_reviewer", "status": "completed_clean"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 80,
+        "numerical_experimental_maximum_percent": 20,
+        "planned_numerical_percent": 0
+      },
+      "exit_gates": [
+        "exact_block_normalization",
+        "one_third_region_optimization",
+        "second_derivative_small_curvature",
+        "actual_M1_M2_coefficients",
+        "R5_pointwise_product_count",
+        "exact_product_and_floor_endpoint",
+        "hard_top_BV",
+        "small_denominator_owner",
+        "dyadic_frequency_and_denominator_assembly",
+        "real_X_uniformity",
+        "dependency_status_and_source_map",
+        "statement_only_and_hostile_gates",
+        "conductor_decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_unconditional_one_third_theorem_and_pointwise_R5_reconciliation",
+        "graph_mutation": true,
+        "main_result": "The literal fully weighted M1/M2 direct menu and pointwise Fejer product count prove P(X)<<_epsilon X^(1/3+epsilon) uniformly for every real X>=2. The exponent 1/3 is exact for the accepted direct menu, while M9-M1, M9-M2, M9, endpoint uniformity, and the one-quarter target remain open."
+      },
+      "next_round": 92
+    },
+    {
+      "round_index": 92,
+      "campaign_id": "m9-canonical-core-formalization",
+      "type": "canonical_core_formalization",
+      "status": "closed",
+      "objective": "Formalize the accepted Round-90 M1 hard actual-symbol Gram operator and Round-80 M2 signed density--discrepancy kernel as two self-contained graph-ready theorem targets with exact owners, normalizations, capacity gaps, false shadows, source mismatches, and downstream scope.",
+      "tasks": [
+        {"id": "blind_canonical_core_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean"},
+        {"id": "canonical_core_formalization_attack", "role": "formalizer", "status": "completed_clean_after_format_repair"},
+        {"id": "canonical_core_hostile_hygiene_audit", "role": "hostile_source_reviewer", "status": "completed_clean"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 90,
+        "numerical_experimental_maximum_percent": 10,
+        "planned_numerical_percent": 0
+      },
+      "exit_gates": [
+        "two_standalone_graph_ready_core_statements",
+        "collision_free_variable_dictionaries",
+        "M1_linear_pair_Gram_normalization",
+        "M1_one_count_owner_map",
+        "M1_capacity_and_signed_gain",
+        "M1_outside_core_scope",
+        "M2_original_to_energy_implication",
+        "M2_joint_density_discrepancy_kernel",
+        "M2_one_count_owner_map",
+        "M2_capacity_and_signed_gain",
+        "M2_outside_core_scope",
+        "false_shadow_and_source_maps",
+        "graph_forward_pointer_hygiene",
+        "statement_only_and_hostile_gates",
+        "conductor_decision"
+      ],
+      "closing_assessment": {
+        "decision": "create_two_exact_open_canonical_cores_and_repair_graph_hygiene_without_analytic_promotion",
+        "graph_mutation": true,
+        "main_result": "The M1 hard actual-symbol Gram operator and M2 joint density--discrepancy energy are exact standalone open obligations with certified owners, capacities, bridges, false shadows, and outside scope. No estimate or exponent changed."
+      },
+      "next_round": 93
+    },
+    {
+      "round_index": 93,
+      "campaign_id": "m9-m2-global-second-moment-exceptional-set",
+      "type": "m9_m2_global_second_moment_exceptional_set",
+      "status": "closed",
+      "objective": "Prove the strongest honest global second-moment and exceptional-set theorem for the exact frozen M2 block and decide whether the moving Vaaler height/top profile transfers without a power loss.",
+      "tasks": [
+        {"id": "blind_m2_moment_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean"},
+        {"id": "moving_coefficient_moment_attack", "role": "analytic_discovery", "status": "completed_clean"},
+        {"id": "moment_hostile_source_audit", "role": "hostile_source_reviewer", "status": "completed_clean_after_partition_correction"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 90,
+        "numerical_experimental_maximum_percent": 10,
+        "planned_numerical_percent": 0
+      },
+      "exit_gates": [
+        "reduced_fraction_grouping",
+        "coefficient_ell2_mass",
+        "continuous_large_sieve_normalization",
+        "chi4_and_two_sided_frequency",
+        "exceptional_set_and_all_block_union",
+        "diagonal_sharpness",
+        "moving_height_and_top_profile",
+        "pointwise_and_canonical_core_scope",
+        "source_hypothesis_map",
+        "statement_only_and_hostile_gates",
+        "conductor_decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_exact_global_mean_square_and_density_one_quarter_only",
+        "graph_mutation": true,
+        "main_result": "Exact moving M1/M2 blocks, bottom ownership, R5-Full, and H1--H4 assemble to int_Y^(2Y)|P(t)|^2 dt <<_epsilon Y^(3/2+epsilon), giving a density-one 1/4+eta theorem with exceptional measure Y^(1-2eta+epsilon). No prescribed-point, canonical-core, M9, endpoint-uniformity, or uniform-exponent conclusion follows; the uniform exponent remains 1/3."
+      },
+      "next_round": 94
+    },
+    {
+      "round_index": 94,
+      "campaign_id": "gc-prescribed-point-local-moment-bridge",
+      "type": "prescribed_point_local_moment_bridge",
+      "status": "closed",
+      "objective": "Prove the exact persistence and discrete exceptional-set consequences of the Round-93 mean square, then derive and attack the weakest uniform local actual-coefficient moment capable of removing a prescribed exceptional point.",
+      "tasks": [
+        {"id": "blind_pointwise_bridge_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean"},
+        {"id": "local_cluster_moment_attack", "role": "analytic_discovery", "status": "terminated_without_artifact_conductor_rederived"},
+        {"id": "pointwise_bridge_hostile_source_audit", "role": "hostile_source_reviewer", "status": "completed_context_contaminated_conductor_revalidated"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 90,
+        "numerical_experimental_maximum_percent": 10,
+        "planned_numerical_percent": 0
+      },
+      "exit_gates": [
+        "positive_and_negative_one_sided_persistence",
+        "inclusive_integer_jump_convention",
+        "one_separated_sampling_and_integer_exceptional_count",
+        "local_moment_to_pointwise_exponent",
+        "additive_error_ledger",
+        "unit_window_equivalence",
+        "exact_moving_M1_M2_cluster_kernel",
+        "top_scale_spacing_capacity",
+        "floors_hard_top_stars_chi4_and_both_signs",
+        "canonical_core_and_uniform_exponent_scope",
+        "primary_source_hypothesis_map",
+        "statement_only_and_hostile_gates",
+        "conductor_decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_persistence_integer_sampling_and_exact_cluster_interface_without_uniform_exponent_gain",
+        "graph_mutation": true,
+        "main_result": "Round 94 proves the sharp local-moment bridge, exact integer-cell and one-separated density-one theorem, and exact triangular rational-cluster reduction. The first genuinely averaging survivor is 1/3<alpha<1/2; no signed cluster bound is proved, so the uniform exponent remains 1/3."
+      },
+      "next_round": 95
+    },
+    {
+      "round_index": 95,
+      "campaign_id": "gc-strict-sub-one-third-cluster-source-fork",
+      "type": "strict_sub_one_third_cluster_source_fork",
+      "status": "closed",
+      "objective": "Decide whether a rigorously certified uniform exponent below one third follows from the fixed W=Y^(7/16) actual cluster estimate or the independently audited Li--Yang direct theorem.",
+      "tasks": [
+        {"id": "blind_fixed_cluster_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean"},
+        {"id": "actual_rational_cluster_attack", "role": "analytic_discovery", "status": "completed_clean_after_format_repair"},
+        {"id": "li_yang_strict_source_audit", "role": "hostile_source_reviewer", "status": "completed_clean"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 90,
+        "numerical_experimental_maximum_percent": 10,
+        "planned_numerical_percent": 0
+      },
+      "exit_gates": [
+        "five_sixteenths_exponent_and_local_mass",
+        "exact_random_cell_normalization",
+        "equal_frequency_lifts_and_diagonal",
+        "near_unequal_rational_correlation",
+        "M1_M2_character_and_factor_four",
+        "moving_symbol_and_owner_assembly",
+        "arbitrary_coefficient_false_shadow",
+        "Li_Yang_primary_theorem_chain",
+        "Li_Yang_range_discrepancy",
+        "internal_external_route_separation",
+        "statement_only_and_hostile_gates",
+        "conductor_decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_repaired_external_theta_and_exact_internal_determinant_reduction",
+        "graph_mutation": true,
+        "main_result": "The narrow repaired Li--Yang real-X theorem proves P(X)<<_epsilon X^(0.3144831759740614...+epsilon) as an external dependency. Internally, W=Y^(7/16) reduces exactly to a signed reduced-determinant correlation; equal lifts are safe, but coefficient-blind capacity misses by Y^(19/48), so the project's M1/M2 exponent remains 1/3 and all quarter-scale M9 nodes remain open."
+      },
+      "next_round": 96
+    },
+    {
+      "round_index": 96,
+      "campaign_id": "m9-m2-primitive-ray-q-dispersion",
+      "type": "m9_m2_primitive_ray_q_dispersion",
+      "status": "closed",
+      "objective": "Test whether exact cross-ray differencing in q=(b-a)/2 supplies the missing rho^(-1/2) gain in the canonical M2 density--discrepancy energy.",
+      "tasks": [
+        {"id": "blind_primitive_ray_q_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean"},
+        {"id": "primitive_ray_q_dispersion_attack", "role": "analytic_discovery", "status": "completed_clean"},
+        {"id": "primitive_ray_q_hostile_source_audit", "role": "hostile_source_reviewer", "status": "completed_clean"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 90,
+        "numerical_experimental_maximum_percent": 10,
+        "planned_numerical_percent": 0
+      },
+      "exit_gates": [
+        "m_q_parity_and_coprimality",
+        "complete_actual_symbol",
+        "moving_k_interval_and_endpoints",
+        "density_discrepancy_jointness",
+        "prior_owner_one_count",
+        "short_q_Pell_and_fourth_power_controls",
+        "rho_power_ledger",
+        "transform_self_return",
+        "primary_source_hypothesis_map",
+        "statement_only_and_hostile_gates",
+        "conductor_decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_scoped_q_dispersion_obstruction_retain_actual_Gram_open",
+        "graph_mutation": true,
+        "main_result": "Fixed-m legal shifts erase chi_4, fixed-a dispersion is a complete actual-symbol Gram, coefficientwise or diagonal-separated bounds gain at most D^(-1/2), and the transforms self-return. The determinant-weighted actual Gram remains open, so no M2 or exponent promotion follows."
+      },
+      "next_round": 97
+    },
+    {
+      "round_index": 97,
+      "campaign_id": "m9-m2-outside-packet-endpoint-assembly",
+      "type": "m9_m2_outside_packet_endpoint_assembly",
+      "status": "closed",
+      "objective": "Determine the exact additional outside packets required, beyond the canonical hard-top theorem, to prove full pointwise M9-M2.",
+      "tasks": [
+        {"id": "blind_m2_assembly_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean"},
+        {"id": "m2_outside_packet_assembly_attack", "role": "discovery", "status": "completed_clean_after_format_repair"},
+        {"id": "m2_assembly_hostile_hygiene_audit", "role": "source_auditor", "status": "completed_clean"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 95,
+        "numerical_experimental_maximum_percent": 5,
+        "planned_numerical_percent": 0
+      },
+      "exit_gates": [
+        "active_triangle_and_residual_U",
+        "hard_top_vs_smooth_top_scale",
+        "bottom_and_R5_owners",
+        "terminal_T2S_and_TTY_wedge",
+        "smooth_and_hard_endpoint_transforms",
+        "character_profiles_floors_stars",
+        "dyadic_one_count",
+        "real_X_endpoint_uniformity",
+        "reduction_vs_estimate",
+        "legacy_route_dependency",
+        "statement_only_and_hostile_gates",
+        "conductor_decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_conditional_physical_assembly_and_two_smooth_open_packets",
+        "graph_mutation": true,
+        "main_result": "The canonical hard theorem alone is insufficient. After exact one-count owners, M2 has three independent residual families: the hard canonical cone, a balanced smooth signed quarter packet, and an unbalanced smooth M^(3/4) product-phase packet. The graph now records a noncircular conditional assembly and removes the character/taxonomy and partial-owner defects without proving M9-M2."
+      },
+      "next_round": 98
+    },
+    {
+      "round_index": 98,
+      "campaign_id": "m9-m1-route-interface-assembly",
+      "type": "m9_m1_route_interface_assembly",
+      "status": "closed",
+      "objective": "Separate the direct blockwise M1 owner tree from the alternative global angular-radial route, and identify every packet outside the canonical first-band Gram.",
+      "tasks": [
+        {"id": "blind_m1_route_assembly_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean"},
+        {"id": "m1_route_assembly_attack", "role": "discovery", "status": "completed_clean_after_lf_normalization"},
+        {"id": "m1_route_graph_hostile_audit", "role": "source_auditor", "status": "completed_clean_after_lf_normalization"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 95,
+        "numerical_experimental_maximum_percent": 5,
+        "planned_numerical_percent": 0
+      },
+      "exit_gates": [
+        "direct_active_triangle_and_residual_U1",
+        "hard_top_vs_smooth_profiles",
+        "bottom_R5_terminal_TTY_second_derivative",
+        "blockwise_vs_global_target",
+        "canonical_packet_literal_scope",
+        "critical_and_lower_radial_partition",
+        "upper_conductor_axes_transitions",
+        "alpha_transition_and_radial_endpoint",
+        "profiles_floors_stars_signs_real_X",
+        "one_count_and_route_exclusivity",
+        "reduction_vs_estimate",
+        "legacy_route_dependency",
+        "statement_only_and_hostile_gates",
+        "conductor_decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_exact_direct_and_global_M1_route_assemblies_and_repair_route_graph",
+        "graph_mutation": true,
+        "main_result": "Direct blockwise M9-M1 has exactly two open physical parents: the hard-top residual and the direct smooth residual. The canonical first-band Gram is only an alternative global-route packet and does not localize blockwise. Lower-radial plus sharp-interface estimates imply GAR, and GAR plus M9-M2 supplies an alternative final bridge. No analytic parent or exponent is promoted."
+      },
+      "next_round": 99
+    },
+    {
+      "round_index": 99,
+      "campaign_id": "m9-m1-joint-four-row-spectral-gap",
+      "type": "m9_m1_joint_four_row_spectral_gap",
+      "status": "closed",
+      "objective": "Prove or sharply obstruct the missing J^(-1/6) spectral gain in the complete canonical hard M1 four-row Gram.",
+      "tasks": [
+        {"id": "blind_joint_gram_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean_after_format_repair"},
+        {"id": "complete_trace_spectral_attack", "role": "discovery", "status": "completed_clean"},
+        {"id": "joint_gram_source_hostile_audit", "role": "source_auditor", "status": "completed_clean_after_control_byte_repair"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 90,
+        "numerical_experimental_maximum_percent": 10,
+        "planned_numerical_percent": 5
+      },
+      "exit_gates": [
+        "canonical_operator_normalization",
+        "prior_owner_one_count",
+        "u_zero_and_Ramanujan_ownership",
+        "all_class_sign_alias_reflection",
+        "actual_fourfold_symbol",
+        "global_trace_moment_expansion",
+        "required_J_one_sixth_gain",
+        "q8_full_degree_control",
+        "prime_power_and_two_adic_control",
+        "nonunit_K_and_modulus_multiples",
+        "perfect_square_fourth_power_resonance",
+        "arbitrary_coefficient_false_shadow",
+        "absolute_value_false_shadow",
+        "transform_self_return",
+        "primary_source_hypothesis_map",
+        "statement_only_and_hostile_gates",
+        "conductor_decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_separable_self_return_obstruction_and_fixed_vector_reduction",
+        "graph_mutation": true,
+        "main_result": "The full-rank (d,u) Hessian is integrally the two one-row transforms, exact completion returns to the centered four-row Gram, and configuration-separated high traces retain coherent cycles. The canonical estimate is reduced to an open fixed-actual-vector directional coefficient at J^(-1/6).",
+        "resulting_graph_sha256": "6aebb7ada9edb65dc6a1605ac0741b8a0e750bc50317b78061cfe39ce382aa6e",
+        "exponent_change": false
+      },
+      "next_round": 100
+    },
+    {
+      "round_index": 100,
+      "campaign_id": "m9-m1-actual-vector-coherent-mode-projection",
+      "type": "m9_m1_actual_vector_coherent_mode_projection",
+      "status": "closed",
+      "objective": "Determine the literal fixed-actual-vector coupling to the exact q=8 parity and paired coherent modes after all canonical hard owners.",
+      "tasks": [
+        {"id": "blind_coherent_projection_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean"},
+        {"id": "actual_vector_parity_projection_attack", "role": "formalizer", "status": "completed_clean_after_format_repair"},
+        {"id": "coherent_projection_hostile_source_audit", "role": "source_auditor", "status": "completed_clean"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 95,
+        "numerical_experimental_maximum_percent": 5,
+        "planned_numerical_percent": 0
+      },
+      "exit_gates": [
+        "literal_fixed_actual_vector",
+        "q8_as_local_CRT_factor",
+        "unique_u_zero_owner",
+        "nonzero_u4_and_modulus_multiples",
+        "all_four_rows_and_physical_pairs",
+        "hard_owner_one_count",
+        "paired_backtracking_cycles",
+        "nonunit_K_and_full_two_part",
+        "entry_exit_and_zero_extension",
+        "conductor_row_scalar_sum",
+        "local_trace_vs_global_projection",
+        "dense_plateau_false_inference",
+        "source_hypothesis_map",
+        "statement_only_and_hostile_gates",
+        "conductor_decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_exact_q8_actual_vector_cross_projection_reduction_without_power_saving",
+        "graph_mutation": true,
+        "main_result": "For v_2(M)=3, the q=8 hard mode is exactly a fragmented Z/4 cross-projection of the four actual rows. The only aligned difference-of-squares slice has R_*=4 and is already coarse-owned. The remaining scalar cross-projection is open, so no canonical estimate or exponent changes.",
+        "resulting_graph_sha256": "f4a21236d49d03ff141f637eef932fe95868612e8bb885c97c7f1d042b3c0133",
+        "exponent_change": false
+      },
+      "next_round": 101
+    },
+    {
+      "round_index": 101,
+      "campaign_id": "m9-m1-full-two-adic-orbit-convolution",
+      "type": "m9_m1_full_two_adic_orbit_convolution_formalization",
+      "status": "closed",
+      "objective": "Formalize the full two-power actual-row cyclic convolution and owner partition beyond the exact q=8 subfamily.",
+      "tasks": [
+        {"id": "blind_full_two_adic_orbit_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean_after_conjugation_correction"},
+        {"id": "full_two_adic_actual_symbol_formalization", "role": "formalizer", "status": "completed_clean"},
+        {"id": "full_two_adic_hostile_owner_audit", "role": "source_auditor", "status": "completed_clean_after_whitespace_repair"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 95,
+        "numerical_experimental_maximum_percent": 5,
+        "planned_numerical_percent": 0
+      },
+      "exit_gates": [
+        "full_two_power_not_mod8_quotient",
+        "nonempty_unit_mask",
+        "exact_orbit_length",
+        "local_phase_weight",
+        "DFT_convolution_normalization",
+        "actual_four_rows",
+        "unique_u_zero_owner",
+        "nonzero_modulus_multiples",
+        "nonunit_K",
+        "period_depth_self_return",
+        "aligned_and_reversal_owners",
+        "higher_two_adic_resonance",
+        "entry_exit_and_zero_extension",
+        "odd_cofactor_and_conductor_sum",
+        "arbitrary_coefficient_false_shadow",
+        "statement_only_and_hostile_gates",
+        "conductor_decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_exact_full_two_adic_unitary_convolution_and_owner_map_without_power_saving",
+        "graph_mutation": true,
+        "main_result": "Every nonempty full two-adic mask is one complete odd orbit. Its literal four-row DFT kernel is full-rank unitary, with guaranteed twisted period 1, 2, or L/8. Period depth is only a block self-return; higher aligned and reversal terms require their exact owner test. The complete odd-cofactor/conductor scalar remains open.",
+        "resulting_graph_sha256": "fbe0e9b9e4db078128f75d97b790dd78a6adc8216c7b0b14c4fad928925637ca",
+        "exponent_change": false
+      },
+      "next_round": 102
+    },
+    {
+      "round_index": 102,
+      "campaign_id": "m9-m2-determinant-weighted-actual-gram",
+      "type": "m9_m2_determinant_weighted_actual_gram_core_attack",
+      "status": "closed",
+      "objective": "Prove a rho^(-1/2) gain, a strict disjoint hard subrange, or a rigorous new mechanism obstruction for the complete fixed-a primitive-ray M2 Gram.",
+      "tasks": [
+        {"id": "blind_determinant_gram_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean_with_disclosed_followup"},
+        {"id": "determinant_weighted_gram_attack", "role": "discovery", "status": "completed_clean_with_seam_addendum"},
+        {"id": "determinant_gram_hostile_source_audit", "role": "source_auditor", "status": "completed_clean_with_seam_addendum"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 90,
+        "numerical_experimental_maximum_percent": 10,
+        "planned_numerical_percent": 5
+      },
+      "exit_gates": [
+        "literal_fixed_a_row",
+        "complete_actual_symbol",
+        "primitive_and_prior_owner_masks",
+        "moving_k_and_g_intervals",
+        "metric_density_discrepancy_jointness",
+        "exact_Gram_and_diagonal",
+        "determinant_separated_locus",
+        "near_determinant_incidence",
+        "D_ray_one_and_q_one",
+        "Pell_and_near_square",
+        "fourth_power_recurrence",
+        "entry_exit_and_zero_extension",
+        "arbitrary_coefficient_false_shadow",
+        "unsigned_false_shadow",
+        "transform_self_return",
+        "rho_power_ledger",
+        "primary_source_hypothesis_map",
+        "statement_only_and_hostile_gates",
+        "conductor_decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_narrow_determinant_carrier_short_ray_route_obstruction_create_open_q1_diagonal",
+        "graph_mutation": true,
+        "main_result": "The extracted density carrier has exact sparse determinant incidence, but the complete metric phase is mode-resolved and no q-variation theorem applies. The q=1 residual block has no nonzero shift, isolating its complete actual diagonal as the first disjoint open survivor.",
+        "resulting_graph_sha256": "902eb43bc0fc72b1c3e080dac5cd89757d17e2eaa1f72d606b89afbecff92935",
+        "exponent_change": false
+      },
+      "next_round": 103
+    },
+    {
+      "round_index": 103,
+      "campaign_id": "m9-m2-q1-actual-diagonal-energy",
+      "type": "m9_m2_singleton_q1_actual_diagonal_adjudication",
+      "status": "closed",
+      "objective": "Prove the complete singleton q=1 actual diagonal, find a literal actual obstruction, or reduce it to a strictly smaller signed kernel.",
+      "tasks": [
+        {"id": "blind_q1_diagonal_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean_after_format_repair"},
+        {"id": "q1_stationary_energy_attack", "role": "discovery", "status": "completed_clean_after_conductor_hygiene_repair"},
+        {"id": "q1_actual_symbol_hostile_source_audit", "role": "source_auditor", "status": "completed_clean"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 90,
+        "numerical_experimental_maximum_percent": 10,
+        "planned_numerical_percent": 5
+      },
+      "exit_gates": [
+        "literal_q1_coefficient",
+        "singleton_Gram_normalization",
+        "exact_k_interval",
+        "finite_odd_g_support",
+        "complete_metric_density_discrepancy",
+        "quotient_carrier_cancellation",
+        "centred_integral_and_Gaussian_unit",
+        "profiles_floors_stars_orientations",
+        "prior_owner_complements",
+        "empty_and_singleton_fibres",
+        "Pell_25_27_and_near_square",
+        "fourth_power_strict_metric_recurrence",
+        "saddle_entry_exit_and_collars",
+        "actual_lower_bound_gate",
+        "arbitrary_coefficient_false_shadow",
+        "unsigned_false_shadow",
+        "energy_and_rho_ledger",
+        "route_vs_canonical_scope",
+        "primary_source_hypothesis_map",
+        "statement_only_and_hostile_gates",
+        "conductor_decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_complete_actual_symbol_singleton_q1_diagonal",
+        "graph_mutation": true,
+        "main_result": "The literal complete centered integral has sampled-k variation of size sqrt(AL/J). Odd lift parity leaves no zero reciprocal Fourier frequency, and weighted second-derivative cancellation proves the exact L^4/A energy target with density and discrepancy coupled.",
+        "resulting_graph_sha256": "d2502a33224fbcb1fe3b8ffe0ea1227b953112fa0c98216597e8b0ccfa887372",
+        "exponent_change": false
+      },
+      "next_round": 104
+    },
+    {
+      "round_index": 104,
+      "campaign_id": "m9-m2-fixed-q-sampled-k-short-shell",
+      "type": "m9_m2_fixed_q_sampled_k_short_shell",
+      "status": "closed",
+      "objective": "Generalize the proved singleton sampled-k theorem to literal q~D rows and certify the maximal short-shell Gram range without polynomial q-cancellation.",
+      "tasks": [
+        {"id": "blind_fixed_q_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean"},
+        {"id": "fixed_q_sampled_k_attack", "role": "discovery", "status": "completed_clean_after_notation_repair"},
+        {"id": "fixed_q_hostile_source_audit", "role": "source_auditor", "status": "completed_clean"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 95,
+        "numerical_experimental_maximum_percent": 5,
+        "planned_numerical_percent": 0
+      },
+      "exit_gates": [
+        "general_q_reciprocal_geometry",
+        "K_G_VD_normalization",
+        "complete_centered_integral",
+        "sampled_k_BV_through_collars",
+        "odd_metric_frequency",
+        "density_and_discrepancy_modes",
+        "reciprocal_second_derivative",
+        "Fourier_half_moments",
+        "primitive_and_prior_owners",
+        "profiles_floors_stars_orientations",
+        "entry_exit_and_zero_extension",
+        "empty_and_singleton_fibres",
+        "Pell_near_square_and_fourth_power",
+        "G_one_and_small_K",
+        "arbitrary_coefficient_false_shadow",
+        "unsigned_false_shadow",
+        "row_energy_D_count",
+        "Cauchy_to_Gram_D_squared_deficit",
+        "polylog_absorption",
+        "polynomial_q_survivor",
+        "primary_source_hypothesis_map",
+        "statement_only_and_hostile_gates",
+        "conductor_decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_uniform_actual_fixed_q_row_and_prescribed_polylogarithmic_shell",
+        "graph_mutation": true,
+        "main_result": "The actual complete centered integral has uniform sampled-k variation sqrt(AL/(JD)); all metric modes yield |F_a(q)| << X^epsilon L^2/A. The fixed/polylogarithmic shell is target-safe, while rowwise Cauchy has an exact D^2 polynomial-shell deficit.",
+        "resulting_graph_sha256": "f8f20833d2f24fa0b323488e247887ba943b8dffdd3eacb58e5bae773eb5831b",
+        "exponent_change": false
+      },
+      "next_round": 105
+    },
+    {
+      "round_index": 105,
+      "campaign_id": "m9-m2-polynomial-q-maximal-alternation",
+      "type": "m9_m2_polynomial_q_maximal_alternation_core",
+      "status": "closed",
+      "objective": "Prove the complete actual maximal alternating q theorem on polynomial primitive-ray shells, a strict polynomial subrange, or a rigorous actual-symbol obstruction with a smaller survivor.",
+      "tasks": [
+        {"id": "blind_maximal_q_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_provenance_contaminated_but_statement_derived"},
+        {"id": "adjacent_q_transport_attack", "role": "discovery", "status": "completed_clean_after_format_repair"},
+        {"id": "maximal_q_hostile_source_audit", "role": "source_auditor", "status": "completed_clean_after_format_repair"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 95,
+        "numerical_experimental_maximum_percent": 5,
+        "planned_numerical_percent": 0
+      },
+      "exit_gates": [
+        "maximal_to_Gram_implication",
+        "adjacent_q_transport_identity",
+        "total_q_variation_vs_maximal_alternation",
+        "primitive_Mobius_or_residue_decomposition",
+        "moving_k_interval_and_integer_entry_exit",
+        "finite_odd_lift_transport",
+        "complete_metric_density_discrepancy",
+        "physical_collars_and_cone_edge",
+        "Pell_near_square_square_fourth_power",
+        "exact_and_near_metric_centers",
+        "coherent_alternating_coefficient_false_shadow",
+        "actual_symbol_lower_obstruction_gate",
+        "dyadic_polynomial_endpoints",
+        "transform_self_return",
+        "primary_source_hypothesis_map",
+        "statement_only_and_hostile_gates",
+        "conductor_decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_scoped_transport_residual_and_primitive_dual_square_carrier_reduction",
+        "graph_mutation": true,
+        "main_result": "The maximal theorem would close the Gram exactly but is unproved. Centered q-transport leaves the complete metric residual, and the full-rank scalar Hessian returns after two stationary transforms to an odd-character primitive dual square at equal capacity. No positive-power q-shell closes.",
+        "resulting_graph_sha256": "2b61ad459192c94e83ee80adfa3bdda5374df87b01f42c4a0ab306c07eb817de",
+        "exponent_change": false
+      },
+      "next_round": 106
+    },
+    {
+      "round_index": 106,
+      "campaign_id": "m9-m2-dual-square-actual-symbol-transfer",
+      "type": "m9_m2_dual_square_actual_symbol_transfer_deliverable",
+      "status": "closed",
+      "objective": "Derive the complete owner-preserving primitive dual-square actual-symbol transform and seek the full D-saving or a strict polynomial shell.",
+      "tasks": [
+        {"id": "blind_dual_square_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean"},
+        {"id": "dual_square_actual_transfer_attack", "role": "discovery", "status": "completed_clean_after_format_repair"},
+        {"id": "dual_square_owner_hostile_source_audit", "role": "source_auditor", "status": "completed_clean"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 95,
+        "numerical_experimental_maximum_percent": 5,
+        "planned_numerical_percent": 0
+      },
+      "exit_gates": [
+        "scalar_stationary_points_and_Gaussian_units",
+        "physical_Gaussian_interaction",
+        "principal_symbol_normalization",
+        "maximal_cutoff_transport",
+        "reciprocal_integer_entry_exit",
+        "finite_odd_lift_transport",
+        "primitive_Mobius_progressions",
+        "complete_metric_density_discrepancy",
+        "both_orientations",
+        "profiles_floors_stars_hard_top",
+        "prior_owner_one_count",
+        "physical_collars_and_cone_edge",
+        "stationary_transition_nonstationary_errors",
+        "empty_singleton_and_equality_saddles",
+        "Pell_near_square_square_fourth_power",
+        "exact_and_near_metric_centres",
+        "dual_capacity_and_full_D_gain",
+        "transform_inversion_and_self_return",
+        "terminal_M1_and_primary_source_map",
+        "statement_only_and_hostile_gates",
+        "conductor_decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_signed_smooth_principal_symbol_and_exact_owner_conjugation_obstruction",
+        "graph_mutation": true,
+        "main_result": "Both metric signs, the full three-Gaussian e(1/8) principal normalization and local L2 density are exact. The complete physical coefficient is a Fresnel vector, and every sharp owner becomes a nonlocal Fourier-conjugated equal-capacity kernel; no polynomial q-shell or D-saving follows.",
+        "resulting_graph_sha256": "d20981c158e3525b89fd9f5e1352580fcd1349e7662e14c990bf9896b4da4e16",
+        "exponent_change": false
+      },
+      "next_round": 107
+    },
+    {
+      "round_index": 107,
+      "campaign_id": "m9-m2-smooth-unbalanced-divisor-recombination",
+      "type": "m9_m2_smooth_unbalanced_divisor_recombination_deliverable",
+      "status": "closed",
+      "objective": "Regroup the literal unbalanced smooth product-phase packet and test an exact Mellin/functional-equation proof, strict residual corridor, or coefficient-preserving self-return.",
+      "tasks": [
+        {"id": "blind_unbalanced_divisor_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean"},
+        {"id": "truncated_r2_recombination_attack", "role": "discovery", "status": "completed_clean_after_format_repair"},
+        {"id": "unbalanced_product_source_hostile_audit", "role": "source_auditor", "status": "completed_clean_after_format_repair"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 90,
+        "numerical_experimental_maximum_percent": 10,
+        "planned_numerical_percent": 0
+      },
+      "exit_gates": [
+        "exact_product_regrouping",
+        "truncated_divisor_coefficient",
+        "double_Mellin_representation",
+        "functional_equation_conductors_and_root_numbers",
+        "transformed_factor_lengths",
+        "physical_one_count_r2_completion",
+        "raw_vs_weighted_capacity",
+        "signed_unsigned_adversarial_controls",
+        "exact_products_squares_fourth_powers_primes",
+        "unbalanced_endpoint_scales",
+        "terminal_SD_TTY_prior_owners",
+        "profiles_floors_stars_support_crossings",
+        "transform_inversion_and_capacity",
+        "primary_source_hypothesis_map",
+        "statement_only_and_hostile_gates",
+        "conductor_decision"
+      ],
+      "closing_assessment": {
+        "decision": "promote_exact_truncated_divisor_return_and_retain_signed_estimate_open",
+        "graph_mutation": true,
+        "main_result": "The literal unbalanced packet groups into a moving truncated chi4-divisor coefficient. Its character h-process and exact k-Poisson normalization return to a width-D/L prescribed-centre wavelet with constant -i/(2pi), and every functional-equation route has the same H_D/L deficit. No new corridor closes.",
+        "resulting_graph_sha256": "7347081c1a765acafc6a4d1e3a96171d7b971079c2af144f7a0eaa825309bb2a",
+        "exponent_change": false
+      },
+      "next_round": 108
+    },
+    {
+      "round_index": 108,
+      "campaign_id": "m9-m2-metaplectic-two-character-energy",
+      "type": "m9_m2_metaplectic_two_character_energy_core",
+      "status": "closed",
+      "objective": "Derive an exact joint two-character metaplectic representation of the hard M2 fixed-a Gram and prove a rho^(-1/2) linear gain, a strict rho-power subrange, or an equal-capacity obstruction.",
+      "tasks": [
+        {"id": "blind_two_character_energy_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean_after_format_repair"},
+        {"id": "metaplectic_two_character_attack", "role": "discovery", "status": "completed_clean"},
+        {"id": "two_character_spectral_source_hostile_audit", "role": "source_auditor", "status": "completed_clean"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 90,
+        "numerical_experimental_maximum_percent": 10,
+        "planned_numerical_percent": 0
+      },
+      "exit_gates": [
+        "exact_gaussian_constant_and_density_atom",
+        "joint_two_character_factorization",
+        "literal_actual_symbol_and_owner_order",
+        "physical_collars_entry_exit_and_zero_extension",
+        "q1_Pell_near_square_and_fourth_power_controls",
+        "transform_inversion_and_capacity",
+        "rho_inverse_energy_gain",
+        "primary_source_hypothesis_map",
+        "statement_only_and_hostile_gates",
+        "conductor_decision"
+      ],
+      "starting_graph_sha256": "7347081c1a765acafc6a4d1e3a96171d7b971079c2af144f7a0eaa825309bb2a",
+      "closing_assessment": {
+        "decision": "promote_exact_metric_functional_calculus_equal_capacity_obstruction",
+        "graph_mutation": true,
+        "main_result": "The complete metric density-plus-discrepancy Gaussian sum is exactly the original multiplier under Fourier conjugation, with unchanged L2 capacity. The primitive character pair cancels in the fixed-a Gram, so the mechanism yields no rho power and leaves the actual-vector target open.",
+        "resulting_graph_sha256": "f861f43d46bec112682a73e4c6062cbebf82f83fdcf0639e6fe122c6a123ad0d",
+        "exponent_change": false
+      },
+      "next_round": 109
+    },
+    {
+      "round_index": 109,
+      "campaign_id": "m9-m2-blockwise-owner-completion",
+      "type": "m9_m2_blockwise_owner_completion_deliverable",
+      "status": "closed",
+      "objective": "Prove the literal blockwise fixed-K owner-completion identity and O(L^2 X^epsilon) outside-absolute owner norm, a strict partial completion, or the first exact failing owner.",
+      "tasks": [
+        {"id": "blind_owner_completion_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean"},
+        {"id": "linear_owner_completion_attack", "role": "formalizer", "status": "completed_clean"},
+        {"id": "owner_completion_hostile_audit", "role": "seam_reviewer", "status": "completed_clean_with_terminal_followup"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 95,
+        "numerical_experimental_maximum_percent": 5,
+        "planned_numerical_percent": 0
+      },
+      "exit_gates": [
+        "literal_owner_dictionary",
+        "owner_one_count_and_disjointness",
+        "scalar_vs_energy_normalization",
+        "blockwise_absolute_vs_signed_aggregate",
+        "fixed_K_completion_and_open_endpoints",
+        "physical_collar_and_entry_exit",
+        "original_zero_mode_vs_metric_density",
+        "smooth_and_sharp_projective_costs",
+        "square_Pell_q1_exact_centre_rho_boundary_controls",
+        "statement_only_and_hostile_gates",
+        "conductor_decision"
+      ],
+      "starting_graph_sha256": "f861f43d46bec112682a73e4c6062cbebf82f83fdcf0639e6fe122c6a123ad0d",
+      "closing_assessment": {
+        "decision": "promote_blockwise_scalar_owner_completion_connector",
+        "graph_mutation": true,
+        "main_result": "Exact smooth punctured metric telescoping, a literal first-applicable owner partition, and owner-specific estimates prove the fixed-K scalar identity with total outside-absolute owner cost O(L^2 X^epsilon). Neither completed directional estimate nor a Gram cross energy is proved.",
+        "resulting_graph_sha256": "33bf8e043cb8a1e0852b7f98941ee6186f798ed40124525de3d0373269019397",
+        "exponent_change": false
+      },
+      "next_round": 110
+    },
+    {
+      "round_index": 110,
+      "campaign_id": "m9-m2-global-signed-completed-directional",
+      "type": "m9_m2_global_signed_completed_directional_reconciliation",
+      "status": "closed",
+      "objective": "Prove the exact global signed completed-scalar implication for the hard-top energy, write its literal two-character kernel, and prove a bound, strict subrange, smaller survivor, or rigorous no-go.",
+      "tasks": [
+        {"id": "blind_global_signed_implication", "role": "statement_only_blind_rederiver", "status": "completed_clean"},
+        {"id": "completed_directional_kernel_attack", "role": "formalizer", "status": "completed_clean_after_format_repair"},
+        {"id": "completed_directional_hostile_audit", "role": "seam_reviewer", "status": "completed_clean"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 95,
+        "numerical_experimental_maximum_percent": 5,
+        "planned_numerical_percent": 0
+      },
+      "exit_gates": [
+        "real_part_modulus_blockwise_and_Gram_norms",
+        "energy_positivity_and_owned_sign",
+        "one_orientation_one_outer_2Re",
+        "finite_block_interchange_and_one_count",
+        "literal_completed_kernel_dictionary",
+        "original_zero_mode_vs_metric_density",
+        "terminal_member_and_exact_centre",
+        "floors_stars_collars_entry_exit_zero_extension",
+        "q1_square_Pell_fourth_power_and_near_centres",
+        "false_unsigned_and_phase_conjugating_coefficients",
+        "Fejer_Gram_nonimplication",
+        "transform_self_return",
+        "primary_source_hypothesis_map",
+        "statement_only_and_hostile_gates",
+        "conductor_decision"
+      ],
+      "starting_graph_sha256": "33bf8e043cb8a1e0852b7f98941ee6186f798ed40124525de3d0373269019397",
+      "closing_assessment": {
+        "decision": "promote_global_completed_realpart_self_return_connector",
+        "graph_mutation": true,
+        "main_result": "The tagged completed scalar is the minimal one-sided hard-energy target and returns in real part to the original Round-75 alternating off-diagonal up to target-sized terms. No estimate or smaller kernel is gained.",
+        "resulting_graph_sha256": "c93f14d6790341b792b54bbaa7ccb96c211741d666729f08addc80fb91d1b759",
+        "exponent_change": false
+      },
+      "next_round": 111
+    },
+    {
+      "round_index": 111,
+      "campaign_id": "m9-m2-adjacent-ray-transport-commutator",
+      "type": "m9_m2_adjacent_ray_transport_commutator_core",
+      "status": "closed",
+      "objective": "Prove the one-sided Round-75 signed off-diagonal by an exact adjacent-ray parity commutator, close a strict polynomial hard subrange, or prove equal-capacity transport/lattice return.",
+      "tasks": [
+        {"id": "blind_adjacent_commutator_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean"},
+        {"id": "adjacent_transport_commutator_attack", "role": "discovery", "status": "completed_clean_after_format_repair"},
+        {"id": "adjacent_commutator_hostile_source_audit", "role": "source_auditor", "status": "completed_clean"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 90,
+        "numerical_experimental_maximum_percent": 10,
+        "planned_numerical_percent": 0
+      },
+      "exit_gates": [
+        "exact_parity_highpass_identity",
+        "phase_preserving_transport_and_Jacobian",
+        "integer_lattice_and_all_jump_owners",
+        "structured_controls",
+        "capacity_gain_or_self_return",
+        "statement_only_and_hostile_gates",
+        "conductor_decision"
+      ],
+      "starting_graph_sha256": "c93f14d6790341b792b54bbaa7ccb96c211741d666729f08addc80fb91d1b759",
+      "closing_assessment": {
+        "decision": "promote_exact_adjacent_transport_discrete_lattice_route_obstruction",
+        "graph_mutation": true,
+        "main_result": "The adjacent parity high-pass and determinant-one phase-preserving transport are exact, but the pulled-back integer sampler has a bulk scaled-comb commutator of full coefficient-blind capacity. Endpoint and physical slabs do not close a polynomial shell, while no actual-symbol lower bound is proved.",
+        "resulting_graph_sha256": "5c49f612b262b1191fe74642ddd8e5d6c70e04b34a59fb1473487d5b5132d747",
+        "exponent_change": false
+      },
+      "next_round": 112
+    },
+    {
+      "round_index": 112,
+      "campaign_id": "m9-m2-balanced-smooth-quarter-packet-canonicalization",
+      "type": "m9_m2_balanced_smooth_packet_canonicalization_deliverable",
+      "status": "closed",
+      "objective": "Canonicalize the proved balanced smooth M9-M2 reduction as one literal actual-symbol quarter-packet theorem, or identify its first unresolved normalization seam.",
+      "tasks": [
+        {"id": "blind_balanced_packet_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean_after_format_repair"},
+        {"id": "balanced_packet_actual_symbol_formalization", "role": "formalizer", "status": "completed_clean_after_format_repair"},
+        {"id": "balanced_packet_hostile_source_audit", "role": "source_auditor", "status": "completed_clean_after_format_repair"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 95,
+        "numerical_experimental_maximum_percent": 5,
+        "planned_numerical_percent": 0
+      },
+      "exit_gates": [
+        "quarter_shift_sign_and_2i_normalization",
+        "literal_actual_symbol_dictionary",
+        "physical_equivalence_and_one_count_owners",
+        "outside_absolute_norm_bridge",
+        "hard_endpoint_and_frequency_conjugacy",
+        "capacity_and_smallest_survivor",
+        "statement_only_and_hostile_gates",
+        "conductor_decision"
+      ],
+      "starting_graph_sha256": "5c49f612b262b1191fe74642ddd8e5d6c70e04b34a59fb1473487d5b5132d747",
+      "closing_assessment": {
+        "decision": "promote_scoped_packet_normalization_and_revise_literal_interface",
+        "graph_mutation": true,
+        "main_result": "The full-small-gcd quarter-shift normalization, conjugacy, explicit prior-owner correction rule, blockwise omega scope and norm hierarchy are exact. The frozen artifacts do not instantiate the coefficientwise owner-aware atom dictionary, so the literal residual theorem and signed estimate remain open.",
+        "resulting_graph_sha256": "9d560539df2db7d69e72dd6e7e6af7247f00237ee795ac13b053b3f34eae8efa",
+        "exponent_change": false
+      },
+      "next_round": 113
+    },
+    {
+      "round_index": 113,
+      "campaign_id": "m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation",
+      "type": "m9_m2_balanced_smooth_literal_atom_dictionary_reconciliation",
+      "status": "closed",
+      "objective": "Instantiate and certify the finite coefficientwise balanced smooth M2 atom dictionary and exact one-count equation, or isolate its first exact missing datum.",
+      "tasks": [
+        {"id": "blind_atom_dictionary_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean_after_format_repair"},
+        {"id": "literal_atom_dictionary_constructor", "role": "formalizer", "status": "completed_clean_after_d0_and_format_repair"},
+        {"id": "atom_dictionary_hostile_seam_audit", "role": "seam_reviewer", "status": "completed_clean_after_format_repair"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 98,
+        "numerical_experimental_maximum_percent": 2,
+        "planned_numerical_percent": 0
+      },
+      "exit_gates": [
+        "denominator_and_frequency_telescoping",
+        "physical_and_stationary_normalization",
+        "finite_balanced_label_dictionary",
+        "smooth_gcd_one_count",
+        "owner_correction_equation",
+        "uniform_profile_seminorms",
+        "statement_only_and_hostile_gates",
+        "conductor_decision"
+      ],
+      "starting_graph_sha256": "9d560539df2db7d69e72dd6e7e6af7247f00237ee795ac13b053b3f34eae8efa",
+      "closing_assessment": {
+        "decision": "promote_repaired_literal_balanced_dictionary_connector",
+        "graph_mutation": true,
+        "main_result": "The full smooth balanced M2 coefficient dictionary, continuum symbol, exact gcd bottom, physical normalization, owner priority, and high-square-near-residual-transform-error one-count equation are proved. The signed quarter-packet estimate remains open at unchanged capacity.",
+        "resulting_graph_sha256": "411adc0c93d2451dfc1235840f27063b3ef4869d0c67aebfbbc74fe9ef04387c",
+        "exponent_change": false
+      },
+      "next_round": 114
     }
   ]
 }

@@ -1,0 +1,218 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-frozen-global-second-moment",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Frozen exact M2 global second moment",
+        "status": "proved_internal",
+        "statement_tex": "Let I be an interval of length V, 1<=H<=D, D_D be any subset of [c_0D,c_1D] intersected with the positive integers, and |w_D(d)|<=1. For the exact two-sided coefficient beta_(h,H)=-Phi(|h|/(H+1))chi_4(|h|)1_(h odd)/(pi|h|), the frozen block S_(D,H,w)(t)=sum_(0<|h|<=H)beta_(h,H)sum_(d in D_D)w_D(d)e(ht/(4d)) satisfies int_I|S_(D,H,w)(t)|^2dt <<_(c_0,c_1) (V+D^2)D. Exact equal rational frequencies h/d=a/b are grouped before separation; their total coefficient ell2 mass is O(D), and distinct reduced frequencies a/(4b) are separated by a constant times D^(-2). For I=[Y,2Y] and D<=Y^(1/2), the exceptional set at height Y^(1/4+eta) has measure << D Y^(1/2-2eta), and a geometric all-D union has measure <<Y^(1-2eta). The actual h=+-1 no-multiplicity zone has coefficient energy >>D on a nondegenerate full shell, so the diagonal scale is sharp. This is a global metric lemma, not a pointwise or canonical-core estimate.",
+        "dependencies": [
+          "M9-M2-beta-algebra"
+        ],
+        "implies": [
+          "M9-M1-M2-moving-global-second-moment"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-global-second-moment-exceptional-set/reports/blind_m2_moment_rederivation.md",
+            "rounds/codex-managed/m9-m2-global-second-moment-exceptional-set/reports/moving_coefficient_moment_attack.md",
+            "rounds/codex-managed/m9-m2-global-second-moment-exceptional-set/reports/moment_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m2-global-second-moment-exceptional-set/candidates/conductor_frozen_second_moment.md",
+            "rounds/codex-managed/m9-m2-global-second-moment-exceptional-set/reviews/conductor_round93_frozen_moment.md",
+            "rounds/codex-managed/m9-m2-global-second-moment-exceptional-set/reviews/conductor_round93_adjudication.md",
+            "rounds/codex-managed/m9-m2-global-second-moment-exceptional-set/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use this as the frozen metric kernel and as the base estimate in the exact moving-profile theorem. Do not infer a prescribed-point estimate."
+      },
+      {
+        "id": "M9-M1-M2-moving-global-second-moment",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Exact moving M1 and M2 main-block global second moments",
+        "status": "proved_internal",
+        "statement_tex": "Let Y>=2, let D<<sqrt(Y), and use either literal M1 or M2 Vaaler coefficients with both signs. For a fixed compactly supported BV denominator profile at scale D, an arbitrary measurable comparable scale R(t)~D, a height H(t) whose range on [Y,2Y] is fixed-ratio comparable (including H(t)=floor(Dt^(-1/4)) and the accepted dyadic floor), every moving prefix, hard top, and fixed endpoint-star convention satisfy int_Y^(2Y)|S_(i,D)^mov(t)|^2dt <<_epsilon Y^epsilon(Y+D^2)D, i=1,2. The proof uses gamma_(h,r)=beta_(h,r)-beta_(h,r-1) with |gamma_(h,r)|<<r^(-2)1_(|h|<=r), exact interval ray energy O(N/r^2), a binary-prefix maximal separated-frequency inequality, and a Stieltjes decomposition of fixed BV profiles. For D_j=2^(-j)sqrt(Y), weights W(d/(2D_j))1_(d<=floor(sqrt(t))), and bottom eta(d/(2D_(J+1))), J maximal with D_J>=(2Y)^(1/4), the partition is exact and all moving floors and hard endpoints are retained. Only logarithmic losses occur. Arbitrary bounded t-dependent weights are excluded and can violate the target by a factor D.",
+        "dependencies": [
+          "H4",
+          "H4-Phi-regularity",
+          "M9-M2-frozen-global-second-moment",
+          "M9-M2-dyadic-weight-nondegeneracy"
+        ],
+        "implies": [
+          "GC-global-real-second-moment-density-one-quarter"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-global-second-moment-exceptional-set/reports/moving_coefficient_moment_attack.md",
+            "rounds/codex-managed/m9-m2-global-second-moment-exceptional-set/reports/moment_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m2-global-second-moment-exceptional-set/candidates/conductor_moving_moment_extension.md",
+            "rounds/codex-managed/m9-m2-global-second-moment-exceptional-set/reviews/conductor_round93_moving_and_assembly.md",
+            "rounds/codex-managed/m9-m2-global-second-moment-exceptional-set/reviews/conductor_round93_adjudication.md",
+            "rounds/codex-managed/m9-m2-global-second-moment-exceptional-set/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-global-second-moment-exceptional-set/reports/blind_m2_moment_rederivation.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use the theorem for global real-variable moments. The remaining bridge is exceptional-set removal at a prescribed point; do not identify this average with either Round-92 canonical core."
+      },
+      {
+        "id": "GC-global-real-second-moment-density-one-quarter",
+        "type": "theorem",
+        "track": "proof_infrastructure",
+        "title": "Global real-variable mean square and density-one quarter exponent",
+        "status": "proved_internal",
+        "statement_tex": "For every epsilon>0 and Y>=2, P(t)=N(sqrt(t))-pi t satisfies int_Y^(2Y)|P(t)|^2dt <<_epsilon Y^(3/2+epsilon). The exact fixed-in-Y dyadic partition, M9-M1-M2-moving-global-second-moment, the O(Y^(1/4)) pre-Fourier bottom, the accepted pointwise R5-Full residual, and H1-H4 give the assembly. Consequently, for every eta>0, |{t in [Y,2Y]: |P(t)|>Y^(1/4+eta)}| <<_(epsilon,eta) Y^(1-2eta+epsilon), which is density one when epsilon<2eta. This theorem concerns Lebesgue-almost-every real t only; it gives no estimate at a prescribed real or integer t, no jump-point theorem, no bound for either canonical M9 core, and no improvement of the accepted uniform exponent 1/3.",
+        "dependencies": [
+          "H1-H3",
+          "H4",
+          "R5-Full",
+          "M9-M1-M2-moving-global-second-moment"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-global-second-moment-exceptional-set/reports/moving_coefficient_moment_attack.md",
+            "rounds/codex-managed/m9-m2-global-second-moment-exceptional-set/reports/moment_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m2-global-second-moment-exceptional-set/candidates/conductor_moving_moment_extension.md",
+            "rounds/codex-managed/m9-m2-global-second-moment-exceptional-set/reviews/conductor_round93_moving_and_assembly.md",
+            "rounds/codex-managed/m9-m2-global-second-moment-exceptional-set/reviews/conductor_round93_adjudication.md",
+            "rounds/codex-managed/m9-m2-global-second-moment-exceptional-set/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Seek a quantitative local large-value or short-interval theorem that can remove exceptional points without assuming M9-M1 or M9-M2."
+      }
+    ],
+    "update": [
+      {
+        "id": "Xiao-2026-source-audit",
+        "status": "proved_external_dependency",
+        "statement_tex": "Xiao 2026 Theorem 1.1 averages the unweighted sum S(h,n)=sum_(n/2<=a<=n)e(hsqrt(a)) over positive integer h~H under H>=n^(1/2+delta); Theorem 1.2 gives a fourth moment for n^(1/2+delta)<=H<=n^(2/3); Theorem 1.3 combines the second moment with Erdos-Turan and separate pointwise exponential-sum inputs. The coefficient, support, averaging variable, moving endpoint, and fixed-X norms do not map to either canonical M9 core. The source audit is complete as a non-importable guardrail and creates no implication edge.",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-global-second-moment-exceptional-set/reports/moment_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m2-global-second-moment-exceptional-set/reviews/conductor_round93_source_scope.md",
+            "rounds/codex-managed/m9-m2-global-second-moment-exceptional-set/synthesis.md",
+            "sources/xiao_2026.md"
+          ]
+        },
+        "reason_for_promotion": "Round 93 audited the primary v1 hypotheses and discrepancy proof literally and confirmed that the source is a guardrail, not a theorem dependency.",
+        "next_action": "Keep Xiao as a completed guardrail. Reopen only if a future argument supplies a literal variable, coefficient, support, norm, endpoint, and pointwise map."
+      },
+      {
+        "id": "M9-M2-beta-algebra",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-global-second-moment-exceptional-set/reports/blind_m2_moment_rederivation.md",
+            "rounds/codex-managed/m9-m2-global-second-moment-exceptional-set/reports/moving_coefficient_moment_attack.md"
+          ]
+        },
+        "next_action": "Reuse the exact coefficient in both pointwise and metric arguments. The metric theorem retains chi_4 before equality grouping but does not solve the pointwise character problem."
+      },
+      {
+        "id": "M9-M1",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-global-second-moment-exceptional-set/reports/moving_coefficient_moment_attack.md"
+          ]
+        },
+        "next_action": "The exact moving M1 block has the target global second moment, but prescribed-point control remains open. Prove the canonical hard Gram estimate and the separate upper-conductor, cone/radial, alpha/top, and endpoint packets."
+      },
+      {
+        "id": "M9-M2",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-global-second-moment-exceptional-set/reports/moving_coefficient_moment_attack.md",
+            "rounds/codex-managed/m9-m2-global-second-moment-exceptional-set/reports/moment_hostile_source_audit.md"
+          ]
+        },
+        "next_action": "The exact moving M2 block has the target global second moment and density-one quarter bound, but the top-scale RMS equals the pointwise target. Remove exceptional points or prove the canonical joint density-discrepancy energy and remaining M2 packets."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-global-second-moment-exceptional-set/reports/moving_coefficient_moment_attack.md"
+          ]
+        },
+        "next_action": "Global mean square controls almost every real parameter only. Prove a prescribed-point large-value bridge or target-scale pointwise M1/M2 endpoint estimates through D=X^(1/2)."
+      },
+      {
+        "id": "M9",
+        "next_action": "Use the new global moment only as metric evidence. Pointwise M9 still requires both canonical cores, their outside packets, and an endpoint or exceptional-set-removal bridge."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round93-arbitrary-bounded-moving-weight-transfer",
+        "reason": "A t-dependent bounded denominator weight can conjugate the phases and produce moment of size YD^2, a factor D above the target. Ordered-prefix or fixed-BV motion is essential."
+      },
+      {
+        "id": "Round93-naive-floor-by-floor-freezing",
+        "reason": "Paying the frozen D^3 term on every height-floor interval loses Y^(1/4) at D=Y^(1/2); the exact height-difference basis is required."
+      },
+      {
+        "id": "Round93-zero-margin-density-saving",
+        "reason": "At D=Y^(1/2) and threshold Y^(1/4), the second moment permits exceptional measure O(Y), and the h=+-1 diagonal shows the RMS scale is genuine."
+      },
+      {
+        "id": "Round93-global-moment-implies-pointwise-M9-or-canonical-core",
+        "reason": "The proof averages over t before the Round-92 transforms and allows every prescribed point to be exceptional. It supplies neither the M1 J^(-1/12) gain nor the M2 rho^(-1/2) gain."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1-canonical-hard-actual-symbol-Gram-estimate",
+        "reason": "The global t-average does not estimate the fixed-X four-row Gram operator."
+      },
+      {
+        "id": "M9-M2-top-endpoint-density-discrepancy-energy",
+        "reason": "The original-block global moment does not estimate the transformed fixed-X density-discrepancy energy."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "The pointwise one-quarter M1 theorem remains open."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "The pointwise one-quarter M2 theorem remains open."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "Almost-everywhere real-variable control is not endpoint uniformity at every X."
+      },
+      {
+        "id": "M9",
+        "reason": "M9 is a uniform pointwise theorem and is not implied by a global second moment."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The bridge still requires pointwise M9 at exponent one quarter."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The new density-one quarter exponent does not improve the accepted uniform one-third exponent or prove the pointwise target."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 9,
+    "idea_quality_score": 9,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 93 proves the exact frozen and moving M1/M2 global moments, assembles an unconditional real-variable mean square for P, and reaches the quarter exponent on a density-one set with an explicit exceptional-measure exponent, while sharply separating this metric advance from every still-open pointwise core."
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-unbalanced-truncated-divisor-fixed-centre-return",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Unbalanced product regrouping and fixed-centre truncated-divisor return",
+        "status": "proved_internal",
+        "statement_tex": "For every strict smooth unbalanced M2 component with K=XL/D^2, M=LK, F=sqrt(XM)=XL/D and flat normalized cutoffs, T_(L,K)=sum_(h,k)chi_4(h)a_(L,K)(h,k)e(sqrt(Xhk)) groups exactly as sum_n A_(L,K)(n)e(sqrt(Xn)), with A_(L,K)(n)=sum_(hk=n)chi_4(h)a_(L,K)(h,k), sum_n|A_(L,K)(n)|^2<<_epsilon MX^epsilon, and separated Dirichlet series L(s-it_1,chi_4)zeta(s-it_2). The literal truncated coefficient does not equal r_2(n)/4. The two degree-one root numbers are +1 and the formal dual factor scales are X/D and D. Resolving chi_4 and applying the smooth h-process gives h_*=4Xk/r^2 and combined coefficient 2sqrt(2)i e(-1/8)chi_4(r)(Xk)^(1/2)r^(-3/2); substitution of the literal symbol and the inherited physical normalization leaves exactly -i/(2pi) times the r,k row. Exact k-Poisson returns the prescribed-centre truncated-divisor wavelet sum_s sum_(r|s,r odd) chi_4(r)W(X/(rD)) int q_L(h)h^(-1)e(hr(X-s)/(4X))dh, rapidly supported on |s-X|<<D/L. On a fixed flat smooth component the aggregate h-process error is O(KF^(-1/2)), hence O(L^(-1)) after physical normalization; sharp clipped, starred, hard or arithmetic-owner boundaries require their exact endpoint kernels. Absolute divisor bounds give (D/L)X^epsilon, so the missing power is D/(LX^(1/4))=H_D/L and vanishes only on the prior terminal line. A sliding-window outside-absolute correlation bound for the exact A_(L,K) is sufficient for the three-quarter target but remains unproved.",
+        "dependencies": [
+          "M9-M2-smooth-dual-three-quarter-equivalence",
+          "M9-M2-character-factor",
+          "M9-M2-dyadic-weight-nondegeneracy",
+          "Divisor-bound-elementary"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-smooth-unbalanced-divisor-recombination/reports/blind_unbalanced_divisor_rederivation.md",
+            "rounds/codex-managed/m9-m2-smooth-unbalanced-divisor-recombination/reports/truncated_r2_recombination_attack.md",
+            "rounds/codex-managed/m9-m2-smooth-unbalanced-divisor-recombination/reports/unbalanced_product_source_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-smooth-unbalanced-divisor-recombination/reviews/conductor_round107_hb_kpoisson_return.md",
+            "rounds/codex-managed/m9-m2-smooth-unbalanced-divisor-recombination/reviews/conductor_round107_recombination_and_capacity.md",
+            "rounds/codex-managed/m9-m2-smooth-unbalanced-divisor-recombination/reviews/conductor_round107_stationary_error_gate.md",
+            "rounds/codex-managed/m9-m2-smooth-unbalanced-divisor-recombination/controls/conductor_round107_controls.md",
+            "rounds/codex-managed/m9-m2-smooth-unbalanced-divisor-recombination/synthesis.md",
+            "sources/popov_2024_voronoi_gauss.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Attack the literal signed fixed-centre wavelet before absolute values, or the exact outside-absolute shifted product correlation. Do not repeat r_2 completion, functional-equation inversion, scalar Plancherel, or coefficient-blind cone arguments. Preserve endpoint kernels outside the flat smooth scope.",
+        "reason_for_promotion": "Exact product algebra, Mellin modes, character transfer, Gaussian constant, symbol cancellation, dual lengths, k-Poisson kernel, raw capacity, signed-correlation implication and the flat-smooth aggregate error were independently reproduced and hostilely scoped. The statement explicitly leaves the signed estimate and all sharp endpoint owners open."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-smooth-unbalanced-three-quarter-estimate",
+        "dependencies_added": [
+          "M9-M2-unbalanced-truncated-divisor-fixed-centre-return"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-smooth-unbalanced-divisor-recombination/reports/blind_unbalanced_divisor_rederivation.md",
+            "rounds/codex-managed/m9-m2-smooth-unbalanced-divisor-recombination/reports/truncated_r2_recombination_attack.md",
+            "rounds/codex-managed/m9-m2-smooth-unbalanced-divisor-recombination/reports/unbalanced_product_source_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-smooth-unbalanced-divisor-recombination/synthesis.md"
+          ]
+        },
+        "next_action": "Prove the actual prescribed-centre truncated-divisor wavelet R_(D,L)(X)<<_epsilon X^(1/4+epsilon), equivalently save H_D/L in the exact outside-absolute shifted product correlation. The transform and r_2 completion routes now have proved equal-capacity obstructions."
+      },
+      {
+        "id": "M9-M2-sign-preserving-poisson-voronoi-route",
+        "dependencies_added": [
+          "M9-M2-unbalanced-truncated-divisor-fixed-centre-return"
+        ],
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-m2-smooth-unbalanced-divisor-recombination/reports/truncated_r2_recombination_attack.md",
+            "rounds/codex-managed/m9-m2-smooth-unbalanced-divisor-recombination/reports/unbalanced_product_source_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-smooth-unbalanced-divisor-recombination/reviews/conductor_round107_recombination_and_capacity.md"
+          ]
+        },
+        "next_action": "For the unbalanced smooth packet, the sign-preserving h-process and k-Poisson route returns exactly to a width-D/L fixed-centre truncated-divisor wavelet and saves no power. Any continuation must prove cancellation in that literal wavelet; another scalar transform is closed as a route."
+      },
+      {
+        "id": "M9-M2-physical-one-count-assembly",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-smooth-unbalanced-divisor-recombination/synthesis.md"
+          ]
+        },
+        "next_action": "The unbalanced child is now reduced to an exact fixed-centre signed truncated-divisor estimate but remains open. Close it together with the balanced quarter packet and hard signed cone before invoking this assembly."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round107-unbalanced-residual-completes-r2-over4",
+        "reason": "The literal slanted packet contains only selected weighted divisor incidences. Prime, square and fourth-power controls show complementary divisors belong to other physical owners."
+      },
+      {
+        "id": "Round107-Popov-bounds-the-truncated-unbalanced-packet",
+        "reason": "Popov requires complete r_2. At cutoff M his remainder is (D/L)X^o(1), which is target-safe only on the terminal line; at cutoff X^(1/2) the radial sum is equivalent to the Gauss target."
+      },
+      {
+        "id": "Round107-two-functional-equations-produce-a-shorter-box",
+        "reason": "The reflected factor scales are X/D and D, their product is X, both root numbers are +1, and transform inversion preserves coefficient information and capacity."
+      },
+      {
+        "id": "Round107-hB-kPoisson-supplies-an-independent-power-saving",
+        "reason": "The exact scale and Gaussian factors cancel to -i/(2pi), while k-Poisson returns a width-D/L fixed-centre wavelet. Its absolute deficit is exactly H_D/L."
+      },
+      {
+        "id": "Round107-positive-coefficient-energy-proves-the-three-quarter-target",
+        "reason": "The exact-product energy is O(MX^epsilon), but global Cauchy gives only the trivial M scale. Signed nonzero product shifts remain open."
+      },
+      {
+        "id": "Round107-cone-or-exponent-pair-bound-applies-after-product-grouping",
+        "reason": "The grouped coefficient is an irregular moving truncated divisor coefficient. Audited cone and one-variable exponent-pair theorems do not accept it and coefficient-blind analogues are false."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M2-smooth-unbalanced-three-quarter-estimate",
+        "reason": "The exact fixed-centre signed estimate remains unproved."
+      },
+      {
+        "id": "M9-M2-smooth-balanced-quarter-packet-estimate",
+        "reason": "The round treated only K/L>16."
+      },
+      {
+        "id": "M9-M2-top-endpoint-density-discrepancy-energy",
+        "reason": "The hard physical profile was excluded."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "The unbalanced, balanced and hard residual children remain open."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "No M1 block estimate is proved."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "Sharp endpoint and hard-owner kernels remain outside the smooth return."
+      },
+      {
+        "id": "M9",
+        "reason": "Neither M9-M1 nor M9-M2 is closed."
+      },
+      {
+        "id": "GC-target",
+        "reason": "No global pointwise exponent changes."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 6,
+    "idea_quality_score": 8,
+    "state_evidence_score": 9,
+    "calibration_score": 10,
+    "reason": "Round 107 converts the vague unbalanced product-phase target into an exact prescribed-centre truncated-divisor wavelet, verifies its character and normalization through -i/(2pi), proves the flat-smooth aggregate error and signed-correlation implication, and decisively rejects automatic r_2 completion and transform-shortening shortcuts. It proves no new corridor, but isolates the exact missing factor and smallest coefficient-preserving survivor."
+  }
+}

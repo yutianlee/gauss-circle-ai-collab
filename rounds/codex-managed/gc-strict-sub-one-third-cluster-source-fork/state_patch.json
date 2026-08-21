@@ -1,0 +1,229 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "GC-W7-16-reduced-Farey-cluster-reduction",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Exact reduced-Farey form of the W=Y^(7/16) actual M1/M2 cluster",
+        "status": "proved_internal",
+        "statement_tex": "Fix W=Y^(7/16), one literal M1 or M2 dyadic block d asymp D, |h| asymp L, and one fixed moving-symbol stratum. Write h/d=a/b in lowest terms and aggregate every lift (h,d)=(ga,gb) before taking absolute values. With kappa_1=1 and kappa_2=4, the reduced coefficients A_i(a,b) retain the literal Vaaler taper, profiles, floors, hard top, stars, both signs, and character placement; bounded sampled variation and the common lift character chi_4(g) give |A_i(a,b)|<<_epsilon Y^epsilon/L and sum_(a,b)=1 |A_i(a,b)|^2<<_epsilon Y^epsilon D/L. The complete triangular energy splits into this equal-frequency diagonal and a signed off-diagonal with determinant n=ab'-a'b, phase e(cn/(kappa_i bb')), and weight (1-W|n|/(kappa_i bb'))_+. Farey spacing gives the coefficient-blind bound Y^epsilon(D/L)(1+min(DL,D^2/W)), which is target-safe outside 3delta-ell>15/16. At (delta,ell)=(1/2,1/6) its capacity is Y^(43/48+epsilon), missing the Y^(1/2+epsilon) target by Y^(19/48); a phase-conjugating bounded-coefficient model attains this false-shadow capacity. Polylogarithmically many fixed strata assemble without deleting bottom, R5, endpoint, or cross-sign owners. This is a reduction and no-go, not a signed determinant estimate, canonical-core estimate, M9 theorem, or quarter theorem.",
+        "dependencies": [
+          "H4",
+          "M9-M2-beta-algebra",
+          "M9-short-window-triangular-cluster-kernel"
+        ],
+        "implies": [
+          "GC-W7-16-actual-reduced-determinant-correlation"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/reports/blind_fixed_cluster_rederivation.md",
+            "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/reports/actual_rational_cluster_attack.md",
+            "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/candidates/conductor_reduced_farey_cluster.md",
+            "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/reviews/conductor_round95_normalization.md",
+            "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/reviews/conductor_round95_cluster_adjudication.md",
+            "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use the exact determinant form as the only Round-95 internal survivor. Any improvement must exploit its literal phase and M1/M2 character placements, not coefficient-blind Farey degree."
+      },
+      {
+        "id": "GC-W7-16-actual-reduced-determinant-correlation",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Actual signed reduced-determinant correlation at W=Y^(7/16)",
+        "status": "open",
+        "statement_tex": "For W=Y^(7/16), every hard literal M1/M2 block and every fixed moving-symbol stratum, prove that the one-sided sum over n=ab'-a'b>0 of A_i(a,b) conjugate(A_i(a',b')) e(cn/(kappa_i bb'))(1-Wn/(kappa_i bb')) is O_epsilon(Y^(1/2+epsilon)), uniformly for kappa_1=1 and kappa_2=4. The coefficients must retain the actual Vaaler taper, chi_4 on the literal M1 or M2 coordinate, common lift character, both signs, profiles, floors, hard top, stars, and exact reduced supports. The equal-frequency diagonal is already O_epsilon(D/L); the open issue is signed cancellation in the nonzero determinant. With logarithmic all-block assembly, bottom, and R5 ownership, this lemma would imply P(X)<<_epsilon X^(5/16+epsilon), but it would not prove either canonical M9 core or the quarter target.",
+        "dependencies": [
+          "GC-W7-16-reduced-Farey-cluster-reduction",
+          "GC-one-sided-persistence-local-bridge"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/reports/blind_fixed_cluster_rederivation.md",
+            "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/reports/actual_rational_cluster_attack.md",
+            "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/reviews/conductor_round95_cluster_adjudication.md",
+            "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/synthesis.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Seek a phase-sensitive determinant or additive-divisor estimate with the literal character placements, or prove a fixed power saving in Popov's additive local-discrepancy term."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "type": "theorem",
+        "track": "proof_infrastructure",
+        "title": "Repaired Li--Yang real-X Gauss-circle exponent",
+        "status": "proved_external_dependency",
+        "statement_tex": "For every epsilon>0 and every real X>=2, the inclusive Gauss-circle discrepancy P(X)=N(sqrt(X))-pi X satisfies P(X)<<_epsilon X^(theta_LY+epsilon), where theta_LY=(3292+25sqrt(1717))/13762=0.3144831759740614.... This accepts only the final application after four unique literal repairs: M<T^(7/16), H=MT^x, sqrt(-1-8x) in Li--Yang (5.27), and the exact two-sign circle identity from Bourgain--Watt v1 (7.2). The missing Guth--Maldague beta_2>=0 condition is proved on the final x-range by -(8x+3)(3908x+753)>=0, and the missing Case-B logarithm is absorbed by fixed power slack on the final Case-II range. The printed general Proposition 3.1 and general Case-B theorem are not accepted. This direct external theorem does not prove the project's internal cluster theorem, M9-M1, M9-M2, M9, or exponent one quarter.",
+        "dependencies": [
+          "Li-Yang-source-audit"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "sources/li_yang_2023.md",
+            "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/reports/li_yang_strict_source_audit.md",
+            "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/reviews/conductor_round95_li_yang_repair.md",
+            "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/controls/li_yang_exact_arithmetic_check.txt",
+            "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/reviews/conductor_round95_adjudication.md",
+            "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use this as the strongest certified global pointwise theorem and a benchmark only. Keep the repaired range and nonimplication scope explicit."
+      }
+    ],
+    "update": [
+      {
+        "id": "Li-Yang-source-audit",
+        "status": "proved_external_dependency",
+        "statement_tex": "The final real-X inclusive Li--Yang circle theorem is source-audited and independently repaired: M<T^(7/16), H=MT^x, sqrt(-1-8x) in (5.27), and the Bourgain--Watt v1 (7.2) two-sign identity are the unique readings consistent with adjacent formulas. The general printed Proposition 3.1 omits beta_2>=0 and the general Case-B comparison omits a logarithm; neither is accepted globally. On the exact final application range, the missing beta_2 condition and Case-B logarithm are supplied by explicit fixed-power inequalities, yielding theta_LY=(3292+25sqrt(1717))/13762. The paper remains a preprint and no public erratum was found.",
+        "evidence_added": {
+          "positive": [
+            "sources/li_yang_2023.md",
+            "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/reports/li_yang_strict_source_audit.md",
+            "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/reviews/conductor_round95_li_yang_repair.md",
+            "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/controls/li_yang_exact_arithmetic_check.txt",
+            "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/synthesis.md"
+          ]
+        },
+        "reason_for_promotion": "Round 95 resolves every literal and auxiliary-range defect needed by the narrow final theorem using primary sources and independently reproduced algebra, while explicitly rejecting the overstated general intermediate ranges.",
+        "next_action": "Treat only the narrow repaired theorem as an external dependency; do not cite the full printed general Proposition 3.1 or general Case-B statement without the Round-95 restrictions."
+      },
+      {
+        "id": "GC-nonsubcoherent-actual-cluster-local-moment",
+        "dependencies_added": [
+          "GC-W7-16-reduced-Farey-cluster-reduction"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/reports/blind_fixed_cluster_rederivation.md",
+            "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/reports/actual_rational_cluster_attack.md",
+            "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/reviews/conductor_round95_cluster_adjudication.md",
+            "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/synthesis.md"
+          ]
+        },
+        "next_action": "At W=Y^(7/16), the exact remaining block theorem is GC-W7-16-actual-reduced-determinant-correlation. Do not repeat coefficient-blind Farey spacing; seek literal signed phase/character cancellation or a power saving in the additive full-discrepancy term."
+      },
+      {
+        "id": "M9-short-window-triangular-cluster-kernel",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/reports/blind_fixed_cluster_rederivation.md",
+            "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/reviews/conductor_round95_normalization.md",
+            "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/synthesis.md"
+          ]
+        },
+        "next_action": "The W=Y^(7/16) lift and determinant reduction is now exact. Use the kernel only to reach the signed determinant correlation, not as a cancellation estimate."
+      },
+      {
+        "id": "GC-one-sided-persistence-local-bridge",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/reports/blind_fixed_cluster_rederivation.md",
+            "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/synthesis.md"
+          ]
+        },
+        "next_action": "At W=Y^(7/16), a local cluster mass WY^(1/2+epsilon)=Y^(15/16+epsilon) gives exponent 5/16. The external Li--Yang theorem is logically separate and does not validate this premise."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/reviews/conductor_round95_cluster_adjudication.md",
+            "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/synthesis.md"
+          ]
+        },
+        "next_action": "Keep one third as the strongest theorem proved from the project's internal M1/M2 architecture. The stronger certified global benchmark is the separate repaired external Li--Yang exponent, while the internal determinant route remains open."
+      },
+      {
+        "id": "M9-M1",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/reviews/conductor_round95_cluster_adjudication.md",
+            "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/synthesis.md"
+          ]
+        },
+        "next_action": "Round 95 gives only a pre-transform local determinant reduction. Continue with the canonical hard actual-symbol Gram estimate and every outside M1 packet; the external exponent changes no M9 status."
+      },
+      {
+        "id": "M9-M2",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/reviews/conductor_round95_cluster_adjudication.md",
+            "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/synthesis.md"
+          ]
+        },
+        "next_action": "Round 95 gives only a pre-transform local determinant reduction. Continue with the canonical joint density-discrepancy energy and every outside M2 packet; the external exponent changes no M9 status."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round95-random-cells-and-Farey-spacing-prove-the-cluster-target",
+        "reason": "At the minimax block their sharp coefficient-blind capacity is Y^(43/48), missing Y^(1/2) by Y^(19/48); a phase-conjugating bounded-coefficient model attains that false shadow."
+      },
+      {
+        "id": "Round95-exact-lift-cancellation-closes-the-off-diagonal",
+        "reason": "Lift cancellation makes the complete equal-frequency diagonal O(D/L), but the unequal reduced-determinant correlation remains unchanged and open."
+      },
+      {
+        "id": "Round95-Popov-full-discrepancy-reverses-to-each-positive-block-cluster",
+        "reason": "Popov controls the assembled signed discrepancy local moment. It does not upper-bound every fixed block's positive triangular energy, and its additive Y term returns exactly exponent one third."
+      },
+      {
+        "id": "Round95-literal-general-Li-Yang-Proposition-3-1-is-accepted",
+        "reason": "The printed hypotheses do not imply Guth--Maldague beta_2>=0; an explicit admissible printed-range tuple gives beta_2=-1/22. Only the final application range is repaired."
+      },
+      {
+        "id": "Round95-literal-general-Li-Yang-Case-B-comparison-is-accepted",
+        "reason": "The printed comparison omits a logarithmic factor. Fixed power slack absorbs it only on the final Case-II range."
+      },
+      {
+        "id": "Round95-repaired-external-theorem-proves-the-internal-cluster-or-M9",
+        "reason": "The Li--Yang theorem is a separate direct global route and supplies no estimate for the actual reduced determinant, either canonical core, or any M9 outside packet."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1-canonical-hard-actual-symbol-Gram-estimate",
+        "reason": "The Round-95 determinant reduction is pre-transform and does not supply the required J^(-1/6) Gram or J^(-1/12) linear gain."
+      },
+      {
+        "id": "M9-M2-top-endpoint-density-discrepancy-energy",
+        "reason": "The Round-95 determinant reduction does not supply the required rho^(-1/2) gain in the canonical transformed M2 energy."
+      },
+      {
+        "id": "M9",
+        "reason": "Neither full pointwise M1 nor full pointwise M2 is proved at exponent one quarter."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The target bridge still requires M9 at exponent one quarter."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The repaired exponent 0.314483... and the open 5/16 cluster route are both strictly above one quarter."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 9,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 95 certifies the strongest global exponent in the project through a narrowly repaired and source-audited external theorem, while independently reducing the internal W=Y^(7/16) cluster to its exact actual signed determinant correlation and proving sharp coefficient-blind no-go bounds without overstating progress on M9 or one quarter."
+  }
+}

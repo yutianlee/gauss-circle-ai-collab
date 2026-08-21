@@ -73,9 +73,17 @@ Fix \(q=p^\nu\Vert M\), put \(\kappa_q=v_p(K_q)\), and write
 
 Empty masks are zero and receive no period label. For a nonempty mask,
 the exact reciprocal depth is still the accepted complete-mask depth
-\(j_q=\nu-r_q\), with \(r_q\) defined by the finite-difference test in
-(89.10). The following theorem classifies existence of \(j_q>0\), and
-in the transverse small-prime cases determines \(j_q\) exactly.
+\(j_q=\nu-r_q\), where, with
+\(\Psi_t(x)=(\Phi(x+t)-\Phi(x))/t\),
+
+\[
+ r_q=\min\left\{1\le r\le\nu:
+   \min_{x\in\Omega_q}v_p\!\left(K_qp^r\Psi_{p^r}(x)\right)
+      \ge\nu\right\}.                                  \tag{2.1a}
+\]
+
+The following theorem classifies existence of \(j_q>0\), and in the
+transverse small-prime cases determines \(j_q\) exactly.
 
 Use \(Z\) for the reduction \((A,B_2,V)=(0,0,0)\). For a nonzero triple,
 \([a:b:v]\) denotes its \(\mathbf F_p^\times\)-scaling orbit. The allowed
@@ -138,7 +146,7 @@ Then the complete masked reciprocal weight has period
  j_q\ge \nu-r_{2,0}(n).                                \tag{2.7}
 \]
 
-The exact depth may be larger and is obtained from (89.10); selecting an
+The exact depth may be larger and is obtained from (2.1a); selecting an
 exact-depth subfibre never worsens the graph degrees below.
 
 The full affine phase is deliberately classified separately. For
@@ -306,7 +314,7 @@ Every \(S_m(x)\) is even. If \(m\) is even, every odd inverse power in
 After adding \(\kappa_q\), the least \(r\ge1\) for which the right side
 is at least \(\nu\) is exactly the piecewise value (2.6). This proves
 the full-prime-power \(2\)-adic period (2.7). It does not pretend that
-all fibres have the same exact depth; (89.10) remains the exact
+all fibres have the same exact depth; (2.1a) remains the exact
 classifier.
 
 **Both directed degrees.** Fix a projective ray
@@ -458,8 +466,8 @@ The derivation used only the context selected for this task:
 - \`rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/reviews/conductor_round88_masked_period_graph.md\`.
 
 The exact inputs used from those artifacts are: the normalized physical
-row and ordered-pair function; the complete mask and finite-difference
-definition (89.10); CRT tensorization and completed descent
+row and ordered-pair function; the complete-mask finite-difference
+criterion (2.1a); CRT tensorization and completed descent
 \(p^{2j_q}\); the hard survivor \(R_*>\rho_*\),
 \(\mathfrak a<M^2/\rho_*^2\); the accepted two-sided graph estimate
 (89.13); and the controls forbidding coefficientwise square-root,

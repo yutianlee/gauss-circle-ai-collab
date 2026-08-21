@@ -1,0 +1,157 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-blockwise-linear-owner-completion",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Blockwise scalar owner completion on the hard top M2 cone",
+        "status": "proved_internal",
+        "statement_tex": "Let J=sqrt X, 1<=L<=J^(1/2), and use one representative orientation a<b with one outer 2Re, the inherited half-open dyadic block lattices and open reciprocal saddle intervals, and the same complete collared hard-top M2 coefficient. Put d(t)=||t||, V_R(t)=eta(Rd(t)), and W_R=V_R-V_(2R), where eta is fixed smooth, equals one on [0,1/2], and vanishes on [1,infinity). For dyadic G_* asymp G, 1_(t notin Z)=sum_(1<=R<G_*, R dyadic)W_R(t)+V_(G_*)(t)-1_(t in Z) pointwise; terminal and annular Fourier coefficients satisfy R^(-1)(1+|nu|/R)^(-M), and for odd g asymp G their |g-2nu|^(plus or minus 1/2) moments are O(G^(plus or minus 1/2)). On the common finite atom space z=(B,a,b,k,g), apply the first matching owner: Round-77 endpoint/collar/original-mode/equality/nonstationary complement; primitive square ray including metric and exact-center pieces; primitive nonsquare exact center; positive-safe block with the fixed rho-boundary and equality on the safe side; residual q=1; residual prescribed-polylogarithmic q>1 shell; residual. The Round-75 diagonal is separate. If Q_B^res, Q_B^comp, and O_(B,nu) are the resulting oriented scalar sums, then coefficientwise Q_B^res=Q_B^comp-sum_nu O_(B,nu), and sum_(B,nu)|O_(B,nu)|<<_epsilon L^2X^epsilon. Hence sum_B|Q_B^res|<=sum_B|Q_B^comp|+O_epsilon(L^2X^epsilon), and also |sum_B Q_B^res|<=|sum_B Q_B^comp|+O_epsilon(L^2X^epsilon). Physical completion means only zero extension of the unchanged collared coefficient; floors, stars, equality weights, entry/exit, original Poisson zero modes, metric density, empty/singleton fibres, square/Pell/exact-center atoms, and the conjugate orientation are retained exactly once. This is a scalar linear connector. It proves neither completed directional estimate, supplies no Fejer or Gram cross energy, and implies no hard-cone, smooth-packet, M9-M2, M9-M1, endpoint, M9, or exponent bound.",
+        "dependencies": [
+          "M9-M2-top-endpoint-transposed-character-energy",
+          "M9-M2-top-endpoint-actual-symbol-variation",
+          "M9-M2-top-endpoint-square-ray-signed-cancellation",
+          "M9-M2-top-endpoint-nonsquare-divisor-strip",
+          "M9-M2-primitive-ray-q1-actual-diagonal-energy",
+          "M9-M2-primitive-ray-fixed-q-sampled-k-short-shell"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-blockwise-owner-completion/reports/linear_owner_completion_attack.md",
+            "rounds/codex-managed/m9-m2-blockwise-owner-completion/reports/owner_completion_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-blockwise-owner-completion/reviews/conductor_round109_owner_dictionary.md",
+            "rounds/codex-managed/m9-m2-blockwise-owner-completion/reviews/conductor_round109_metric_reconstruction.md",
+            "rounds/codex-managed/m9-m2-blockwise-owner-completion/reviews/conductor_round109_adjudication.md",
+            "rounds/codex-managed/m9-m2-blockwise-owner-completion/controls/conductor_round109_controls.md",
+            "rounds/codex-managed/m9-m2-blockwise-owner-completion/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-blockwise-owner-completion/reports/blind_owner_completion_rederivation.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use the completed scalar vector exactly once and prove either its blockwise outside-absolute directional bound or the weaker global signed bound. Do not infer Gram cross energies, delete collars, duplicate orientations, or repeat owner completion.",
+        "reason_for_promotion": "The literal finite owner priority proves one-count coefficientwise completion. Round-77 is absolute per ordered pair; smooth terminal and annular square atoms have uniform sampled-k Fourier half-moment bounds; exact centers and positive-safe blocks are absolute; q=1 and polylog shells have exact scalar Cauchy bridges. A hostile follow-up independently certified the smooth telescoping terminal reconstruction and all normalization seams."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-metaplectic-metric-functional-calculus-return",
+        "dependencies_added": [
+          "M9-M2-blockwise-linear-owner-completion"
+        ],
+        "statement_tex": "For the literal collar-extracted hard top M2 coefficient, put c=X/(2gk), K_alpha(u)=e(sgn(alpha)/8)(2|alpha|)^(-1/2)e(-u^2/(4alpha)), T_alpha f=K_alpha*f, and T_0=I. In tempered distributions, Fourier(T_alpha f)(y)=e(alpha y^2)Fourier(f)(y), T_(-alpha)=T_alpha^(-1)=T_alpha^*, and K_alpha tends to delta_0. For the complete punctured metric window W_R(t)=sum_r W_hat_R(r)e(rt), including W_hat_R(0)=mu_R, sum_r W_hat_R(r)T_(rc)=Fourier^(-1) M_(W_R(cy^2)) Fourier exactly. Thus its L2 norm is int |W_R(cy^2)|^2|Fourier(f)(y)|^2dy and its operator norm is ||W_R||_infinity, independent of rho; at y=sqrt(s)-sqrt(h) it reconstructs W_R(Lambda/k). A second quadratic chirp remains in the same metaplectic family with Jacobian |1-4alpha beta|^(-1/2) and a distributional caustic. The signed linear ray factor is chi_4(a)chi_4(a+2q)=(-1)^q, but in the fixed-a shift-v Gram the Fejer sign times the two character pairs is identically one, so no primitive-character autocorrelation remains. At fixed k the sharp ratio band (1-k/J)^(-1)<sqrt(b/a)<1+2k/J has an exact finite triangular Fourier separation of l1 cost O(log N), but its rank factors are jagged and its continuous Mellin kernel has a 1/xi tail. Exact owner conjugation preserves one-count linearly, and the proved blockwise scalar owner-completion lemma now licenses add-transform-subtract before outside scalar absolute values; it still supplies no Fejer or Gram cross energies. At fixed lift the local character dual length is JG and squared coefficient mass is A. Consequently Gaussian separation, separate metric modes, Plancherel, character B-processes, generic theta notation, and transform inversion supply no rho^(-1/2) linear or rho^(-1) energy gain. The completed actual directional linear and cross-q Gram estimates remain open.",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-blockwise-owner-completion/reports/linear_owner_completion_attack.md",
+            "rounds/codex-managed/m9-m2-blockwise-owner-completion/reports/owner_completion_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-blockwise-owner-completion/reviews/conductor_round109_metric_reconstruction.md",
+            "rounds/codex-managed/m9-m2-blockwise-owner-completion/synthesis.md"
+          ]
+        },
+        "next_action": "The fixed-K blockwise scalar completion gate is closed. Prove the completed actual directional bound before outside block absolute values, or the weaker global signed completed-vector bound. Gram cross energies remain unavailable; do not repeat functional calculus or owner completion."
+      },
+      {
+        "id": "M9-M2-primitive-ray-fixed-a-actual-Gram",
+        "dependencies_added": [
+          "M9-M2-blockwise-linear-owner-completion"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-blockwise-owner-completion/reviews/conductor_round109_adjudication.md",
+            "rounds/codex-managed/m9-m2-blockwise-owner-completion/synthesis.md"
+          ]
+        },
+        "next_action": "Owner completion is now lawful only at the scalar linear level. Prove cancellation of the completed character-neutral cross-q vector, then derive the Gram only through an explicit directional-to-energy bridge; no Gram owner commutation or cross-energy estimate is available."
+      },
+      {
+        "id": "M9-M2-top-endpoint-density-discrepancy-energy",
+        "dependencies_added": [
+          "M9-M2-blockwise-linear-owner-completion"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-blockwise-owner-completion/reviews/conductor_round109_adjudication.md",
+            "rounds/codex-managed/m9-m2-blockwise-owner-completion/synthesis.md"
+          ]
+        },
+        "next_action": "The fixed-K scalar owner-completion ambiguity is closed. Prove the completed directional hard-block estimate with a rho^(-1/2) gain, or prove the weaker global signed completed-vector estimate and an explicit assembly bridge. Do not infer the canonical energy from scalar completion alone."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round109-aggregate-owner-bound-implies-blockwise-completion",
+        "reason": "A signed aggregate, row energy without exact mass, and a positive Gram do not control sum_B|sum_nu O_(B,nu)| or sum_(B,nu)|O_(B,nu)|. Literal owner estimates are required."
+      },
+      {
+        "id": "Round109-sum-both-orientations-and-apply-outer-2Re",
+        "reason": "The finite scalar formula uses one representative orientation and one outer 2Re. Summing the conjugate orientation again double counts."
+      },
+      {
+        "id": "Round109-smooth-terminal-without-exact-center-subtraction",
+        "reason": "The exact pointwise punctured identity is sum W_R+V_(G_*)-1_(integer). Omitting the point atom reconstructs the full terminal window, not the punctured metric owner."
+      },
+      {
+        "id": "Round109-owner-completion-commutes-through-Fejer-Gram",
+        "reason": "The proved completion is scalar and linear. Sharp owner projectors produce cross terms under Fejer or Gram lifts, and no corresponding cross energy is proved."
+      },
+      {
+        "id": "Round109-physical-completion-deletes-moving-collars",
+        "reason": "Physical completion is only zero extension of the unchanged collared coefficient. Deleting or point-evaluating a moving collar changes the actual symbol."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M2-primitive-ray-fixed-a-actual-Gram",
+        "reason": "Scalar owner completion supplies no cross-q Gram cancellation or cross energy."
+      },
+      {
+        "id": "M9-M2-top-endpoint-density-discrepancy-energy",
+        "reason": "Neither completed directional estimate is proved."
+      },
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "reason": "The residual hard top estimate remains open."
+      },
+      {
+        "id": "M9-M2-smooth-balanced-quarter-packet-estimate",
+        "reason": "The round treated only hard-top scalar owner completion."
+      },
+      {
+        "id": "M9-M2-smooth-unbalanced-three-quarter-estimate",
+        "reason": "The round treated only hard-top scalar owner completion."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Hard, balanced, and unbalanced M2 children remain open."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "No M1 estimate is proved."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "All-denominator endpoint assembly remains open."
+      },
+      {
+        "id": "M9",
+        "reason": "Neither M9-M1 nor M9-M2 is closed."
+      },
+      {
+        "id": "GC-target",
+        "reason": "No global pointwise exponent changes."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 109 closes a real connector that Round 108 had isolated: exact smooth punctured metric reconstruction, literal fixed-K one-count owner subtraction, and the stronger outside-absolute scalar owner norm. It removes owner completion as an ambiguity while preserving the exact distinction between scalar completion and Gram cross energy. No hard estimate or exponent is promoted."
+  }
+}

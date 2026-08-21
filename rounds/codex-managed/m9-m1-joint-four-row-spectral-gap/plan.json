@@ -1,0 +1,52 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 99,
+    "round_type": "m9_m1_joint_four_row_spectral_gap",
+    "campaign_id": "m9-m1-joint-four-row-spectral-gap",
+    "title": "Joint spectral-gap attack on the canonical hard M1 Gram",
+    "status": "complete",
+    "max_concurrency": 3,
+    "starting_graph_sha256": "d59fac4b3be1d0773a9ab944eac0e3048d381353be6f3a5d7a11e3bc82456918",
+    "objective": "Prove or sharply obstruct the missing J^(-1/6) spectral gain in the complete canonical hard M1 four-row Gram.",
+    "tasks": [
+      {
+        "id": "blind_joint_gram_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "completed_clean_after_format_repair",
+        "report_path": "rounds/codex-managed/m9-m1-joint-four-row-spectral-gap/reports/blind_joint_gram_rederivation.md"
+      },
+      {
+        "id": "complete_trace_spectral_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "completed_clean",
+        "report_path": "rounds/codex-managed/m9-m1-joint-four-row-spectral-gap/reports/complete_trace_spectral_attack.md"
+      },
+      {
+        "id": "joint_gram_source_hostile_audit",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "status": "completed_clean_after_control_byte_repair",
+        "report_path": "rounds/codex-managed/m9-m1-joint-four-row-spectral-gap/reports/joint_gram_source_hostile_audit.md"
+      }
+    ],
+    "exit_gate": "Full target, strict nonempty hard subrange with a new power, or rigorous equal-capacity obstruction, with all actual-symbol and ownership controls.",
+    "closing_assessment": {
+      "decision": "promote_separable_self_return_obstruction_and_fixed_vector_reduction",
+      "resulting_graph_sha256": "6aebb7ada9edb65dc6a1605ac0741b8a0e750bc50317b78061cfe39ce382aa6e",
+      "main_result": "Exact four-row self-return and configuration-separated high-trace obstruction; no power saving."
+    }
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "d59fac4b3be1d0773a9ab944eac0e3048d381353be6f3a5d7a11e3bc82456918",
+    "generated_at": "2026-08-17T15:20:00+08:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

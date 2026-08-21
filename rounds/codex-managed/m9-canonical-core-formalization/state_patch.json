@@ -1,0 +1,245 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-canonical-hard-actual-symbol-Gram-estimate",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Canonical hard actual-symbol Fejer-Gram estimate on the first residual M1 band",
+        "status": "open",
+        "statement_tex": "Let J=sqrt(X), Q=J^(2/5), T=J^(3/5), J^(13/18)<C<=J^(3/4), B=C/T, D_1=floor(J^(87/140)), and E_*=floor(Q^2J^(-1/20))=floor(J^(3/4)). Fix one accepted transition-flattened smooth nonaxial principal component, one class (g_kappa,M,K) in {(1,4b,k),(2,2b,2[k bar4]_b),(4,b,[k bar4]_b)}, one sign, alias, and reflected orientation. With the exact Round-81 Fourier symbol I_b, normalized physical rows R_(b,x), ordered-pair functions F_(b,P), and accepted dyadic multiplier Pi_(b,U) supported in D_1<|d|<Delta_b-E_*, form H_(b,U) and E_U=sum_(b asymp B)int_T |D_U(theta)|^2|H_(b,U)(theta)|^2 dtheta. Expand on u!=0 and remove successively the Round-87 same-group owner, Round-88 coarse shells R_*<=rho_*, Round-88 good-prime graph mathfrak a>=M^2/rho_*^2, and Round-89 certified bad-prime cells and summable unions, where rho_*=min(M,floor(J^(11/30)B^(-2))). The literal conjugation-closed complement retains all classes and signs, modulus multiples, centered Ramanujan terms, the full 2-part, nonunit-K, affine/full-phase and projection-only periods, shallow and aperiodic factors, and the complete fourfold actual symbol. Prove uniformly in every accepted U that |E_hard(U)|<<_epsilon X^epsilon(U/B)J^(14/5). Together with the one global u=0 owner, the accepted prior owners, and |sum_(b asymp B)H_(b,U)(0)|^2<<_epsilon X^epsilon(B/U)E_U, this closes only the first-band smooth nonaxial principal packet at linear target J^(7/5). The top linear and Gram capacity gaps are respectively J^(1/12) and J^(1/6), one deficit at two norm levels.",
+        "dependencies": [
+          "M9-M1-residual-upper-conductor-offdiagonal-reduction",
+          "M9-M1-square-root-capacity-self-return-barrier",
+          "M9-M1-deep-full-factor-same-group-fejer-bound",
+          "M9-M1-cross-group-period-depth-subaggregate-bound",
+          "M9-M1-bad-prime-cellwise-period-graph-bound"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-canonical-core-formalization/candidates/conductor_canonical_core_statements.md",
+            "rounds/codex-managed/m9-canonical-core-formalization/reports/canonical_core_formalization_attack.md",
+            "rounds/codex-managed/m9-canonical-core-formalization/reports/canonical_core_hostile_hygiene_audit.md",
+            "rounds/codex-managed/m9-canonical-core-formalization/reviews/conductor_round92_definitions_and_owners.md",
+            "rounds/codex-managed/m9-canonical-core-formalization/reviews/conductor_round92_capacity_and_bridges.md",
+            "rounds/codex-managed/m9-canonical-core-formalization/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-canonical-core-formalization/reports/blind_canonical_core_rederivation.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Seek joint signed cancellation in the complete actual four-row operator strong enough to gain J^(-1/6) at Gram level, equivalently J^(-1/12) after Toeplitz. Do not resume coefficient-blind period peeling."
+      },
+      {
+        "id": "M9-M2-top-endpoint-density-discrepancy-energy",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Canonical joint density-discrepancy energy for the residual hard top M2 cone",
+        "status": "open",
+        "statement_tex": "Let H_L be the exact finite odd top-frequency support, T_end,L=sum_m R_m the accepted transposed-row regrouping, and E_L^top=sum_m|R_m|^2, so |T_end,L|^2<<L E_L^top. After the unique Round-75 diagonal, Round-77 endpoint/collar and original Poisson-mode owners, Round-78 square-ray owner, Round-79 exact nonsquare-centre and positive-safe owners, and bounded boundary/profile terms, write every residual primitive odd ray h=ga,s=gb with u_ang=(sqrt(b)-sqrt(a))/(sqrt(b)+sqrt(a)), Lambda=X(sqrt(b)-sqrt(a))^2/2, and Ju_ang/(1-u_ang)<k<2Ju_ang/(1+u_ang). On dyadic blocks a asymp A, b-a asymp D_ray, k asymp K_rec, |G_(a,b)| asymp G, and rho=AJD_ray^3/L^3>>1, retain the complete actual collar-extracted coefficient and the punctured metric partition W_R=mu_R+sum_(r!=0)W_hat_R(r)e(r·). Let Q_(A,D_ray,K_rec,G,R) be the resulting complete chi_4(ga)chi_4(gb) block with the metric density r=0 and every discrepancy mode r!=0 coupled, both conjugate orientations, and one outer 2Re. Prove sum_(A,D_ray,K_rec,G,R)|Q_(A,D_ray,K_rec,G,R)|<<_epsilon L^2X^epsilon. The exact one-count energy identity then gives E_L^top<<_epsilon L^2X^epsilon and T_end,L<<_epsilon L^(3/2)X^epsilon. The positive hard-block capacity is L^2X^epsilon sqrt(rho), so the required relative gain is rho^(-1/2). This closes only the residual hard top cone, not the other M2 packets or all-denominator endpoint assembly.",
+        "dependencies": [
+          "M9-M2-top-endpoint-transposed-character-energy",
+          "M9-M2-top-endpoint-actual-symbol-variation",
+          "M9-M2-top-endpoint-square-ray-signed-cancellation",
+          "M9-M2-top-endpoint-nonsquare-divisor-strip",
+          "M9-M2-top-endpoint-strict-metric-carrier-cancellation"
+        ],
+        "implies": [
+          "M9-M2-top-endpoint-signed-cone"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-canonical-core-formalization/candidates/conductor_canonical_core_statements.md",
+            "rounds/codex-managed/m9-canonical-core-formalization/reports/canonical_core_formalization_attack.md",
+            "rounds/codex-managed/m9-canonical-core-formalization/reports/canonical_core_hostile_hygiene_audit.md",
+            "rounds/codex-managed/m9-canonical-core-formalization/reviews/conductor_round92_definitions_and_owners.md",
+            "rounds/codex-managed/m9-canonical-core-formalization/reviews/conductor_round92_capacity_and_bridges.md",
+            "rounds/codex-managed/m9-canonical-core-formalization/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-canonical-core-formalization/reports/blind_canonical_core_rederivation.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Prove a joint signed moment or exceptional-set estimate gaining rho^(-1/2) for the complete actual density-discrepancy block. Do not delete the density mode, extract quotient parity, or repeat reciprocal Poisson."
+      },
+      {
+        "id": "Xiao-2026-source-audit",
+        "type": "source_audit",
+        "track": "source_audit",
+        "title": "Xiao square-root moment theorem hypothesis audit",
+        "status": "source_audit_required",
+        "statement_tex": "Audit the exact hypotheses and possible maps of Xiao's second moment, fourth moment, and discrepancy theorems before any use. The source studies the unweighted S(h,n)=sum_(n/2<=a<=n)e(h sqrt(a)); its averaged height norms and separate pointwise input do not presently map to either fixed-X canonical actual-symbol core.",
+        "dependencies": [],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-canonical-core-formalization/reports/canonical_core_hostile_hygiene_audit.md",
+            "rounds/codex-managed/m9-canonical-core-formalization/reviews/conductor_round92_source_and_graph_hygiene.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "source_card": "sources/xiao_2026.md",
+        "owner": "Codex conductor",
+        "next_action": "Keep Xiao as a guardrail unless a future argument supplies a literal variable, coefficient, support, norm, and endpoint map plus a pointwise consequence."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-product-wavelet-short-numerator-Kloosterman-reduction",
+        "dependencies_removed": [
+          "M9-M1-residual-upper-conductor-offdiagonal-reduction"
+        ],
+        "implies_added": [
+          "M9-M1-residual-upper-conductor-offdiagonal-reduction"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-canonical-core-formalization/reports/canonical_core_formalization_attack.md"
+          ]
+        },
+        "next_action": "Use this reduction as a prerequisite for the residual conductor analysis. It does not depend on its own downstream residual node."
+      },
+      {
+        "id": "M9-M1-residual-upper-conductor-offdiagonal-reduction",
+        "implies_added": [
+          "M9-M1-canonical-hard-actual-symbol-Gram-estimate"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-canonical-core-formalization/candidates/conductor_canonical_core_statements.md",
+            "rounds/codex-managed/m9-canonical-core-formalization/reviews/conductor_round92_definitions_and_owners.md"
+          ]
+        },
+        "next_action": "Use the exact D_1<|d|<Delta_b-E_* owner map and attack M9-M1-canonical-hard-actual-symbol-Gram-estimate. Treat C>J^(3/4), axes, raw transitions, cone edges, and other sectors separately."
+      },
+      {
+        "id": "M9-M1",
+        "dependencies_added": [
+          "M9-M1-canonical-hard-actual-symbol-Gram-estimate"
+        ],
+        "blockers_added": [
+          "M9-M1-canonical-hard-actual-symbol-Gram-estimate"
+        ],
+        "next_action": "Attack the canonical hard first-band Gram estimate, then close the upper-conductor main/transition/axis package, cone and radial interfaces, alpha/top owners, and target-scale endpoint assembly. The unconditional one-third exponent is already proved."
+      },
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "next_action": "In J^(13/18)<C<=J^(3/4), estimate the exact canonical hard actual-symbol Gram operator. For J^(3/4)<C<=J, treat the principal main, transitions, and axes separately, then reconcile cone edges and the remaining radial/alpha/top sectors."
+      },
+      {
+        "id": "M9-M2-top-endpoint-transform",
+        "implies_removed": [
+          "M9-endpoint-uniformity",
+          "M9-M2"
+        ],
+        "implies_added": [
+          "M9-M2-top-endpoint-signed-cone"
+        ],
+        "next_action": "Use the exact one-sided transform only to reduce the hard top block to M9-M2-top-endpoint-signed-cone; it does not by itself prove full M2 or endpoint uniformity."
+      },
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "dependencies_added": [
+          "M9-M2-top-endpoint-density-discrepancy-energy"
+        ],
+        "implies_removed": [
+          "M9-endpoint-uniformity",
+          "M9-M2"
+        ],
+        "blockers_added": [
+          "M9-M2-top-endpoint-density-discrepancy-energy"
+        ],
+        "next_action": "Prove the canonical joint density-discrepancy energy, then combine it only with the already owned top-cone pieces. Full M2 and endpoint uniformity still require explicit outside-packet assemblies."
+      },
+      {
+        "id": "M9-M2",
+        "blockers_added": [
+          "M9-M2-top-endpoint-density-discrepancy-energy"
+        ],
+        "next_action": "Close the canonical hard top density-discrepancy energy, then reconcile every other M2 denominator-frequency packet and the all-D endpoint owners. Historical fourth-moment routes remain alternatives, not substitutes for this core."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "blockers_added": [
+          "M9-M1-canonical-hard-actual-symbol-Gram-estimate",
+          "M9-M2-top-endpoint-density-discrepancy-energy"
+        ],
+        "next_action": "Prove and assemble target-scale pointwise M1 and M2 estimates uniformly for every active denominator scale through D=X^(1/2). A top-M2 cone theorem or an averaged moment alone is insufficient."
+      },
+      {
+        "id": "M9",
+        "next_action": "Prove the two canonical signed cores, close their explicitly separate M1 and M2 outside packets, and supply the uniform pointwise endpoint assembly. The unconditional one-third theorem and R5 are already closed."
+      },
+      {
+        "id": "Li-Yang-source-audit",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-canonical-core-formalization/reports/canonical_core_hostile_hygiene_audit.md",
+            "rounds/codex-managed/m9-canonical-core-formalization/reviews/conductor_round92_source_and_graph_hygiene.md"
+          ]
+        },
+        "next_action": "Resolve the literal M<T^(-7/16) versus M<T^(7/16) v2 inconsistency and record every Case A/B auxiliary condition. Even after repair, keep the theorem as a guardrail unless a literal map to an actual canonical operator is proved."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round92-formalization-proves-either-canonical-core",
+        "reason": "Round 92 supplies exact definitions, owners, capacities, and bridges only. Neither signed hard estimate is derived."
+      },
+      {
+        "id": "Round92-M1-local-period-peeling-supplies-the-missing-power",
+        "reason": "The exact full-degree Gram capacity retains the J^(1/6) gap and Toeplitz returns it to the J^(1/12) linear gap; the q=8 control forbids a coefficient-blind period-depth conclusion."
+      },
+      {
+        "id": "Round92-M2-discrepancy-can-be-separated-from-density",
+        "reason": "The complete coefficient carrier restores integer metric frequencies and the literal density zero mode; density and discrepancy must be estimated jointly."
+      },
+      {
+        "id": "Round92-top-M2-cone-alone-implies-full-M2-or-endpoint-uniformity",
+        "reason": "The top cone is only one M2 packet, and endpoint uniformity requires all active denominator scales and both M1/M2 assemblies."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "The exact hard Gram obligation is created open; upper-conductor, cone/radial, alpha/top, and endpoint packets also remain."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "The exact density-discrepancy obligation is created open and closes only the residual hard top cone if proved."
+      },
+      {
+        "id": "M9",
+        "reason": "Both one-quarter component theorems and endpoint assembly remain open."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "No pointwise all-denominator target-scale endpoint theorem is proved."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The bridge still requires M9 at exponent one quarter."
+      },
+      {
+        "id": "GC-target",
+        "reason": "Formalizing the target-scale cores does not improve the accepted unconditional exponent one third."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 6,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 92 turns two long informal survivor chains into exact collision-free open operators, repairs one-count and graph-direction defects, and records their true missing powers without claiming a new estimate or exponent."
+  }
+}

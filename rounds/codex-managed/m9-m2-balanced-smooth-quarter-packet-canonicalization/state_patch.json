@@ -1,0 +1,164 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-balanced-quarter-packet-normalization-scope",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Balanced quarter-packet normalization, owner correction, and blockwise scope",
+        "status": "proved_internal",
+        "statement_tex": "Fix one real smooth positive-frequency residual physical block B=(X,D,L,+) with R=sqrt X, K=XL/D^2 and 1<=K/L<=16. Let Omega_B index only bounded internal smooth subdivisions of this one block, and let a fixed smooth gcd partition have full small shells G below L^(1/2) plus one explicit crossing-shell owner. Conditional on the coefficientwise real C_c^infinity bridge psi_G(g)A_(B,omega)(gu,gv;X)=F_(B,omega,u,v,G)(g/G), h=gu, k=gv and gcd(u,v)=1, Poisson with Fhat(xi)=int F(t)e(-t xi)dt gives T_(B,small)^(+,full)=(1/(2i))sum_(omega,G)GQ_(B,omega,G)^(full)+E_(gcd-bd), where Q is exactly the chi_4(u)-weighted 1/4 packet minus the 3/4 packet. For real profiles Q(-R)=-conj(Q(R)), and the minus sign cancels conjugation of 1/(2i), yielding physical frequency conjugacy. The smooth packet represents the full small-gcd shell: if exact-square and R^(-1)-near-square terms are prior owners, the residual equals the full packet plus the explicit gcd-boundary term minus their exact signed subtotals; their arithmetic complement cannot be silently inserted into the smooth g/G profile. The required open norm is the modulus outside the complete internal (omega,G)-sum for each fixed physical block separately. Shellwise l1, product-fibre absolute values and Cauchy or Gram norms are stronger. Distinct D or L blocks cannot cancel before the accepted blockwise assembly. The current envelope loses min(L^(1/2),R^(1/2)/L), maximally X^(1/12) at L=X^(1/6). The existing artifacts do not instantiate the finite literal atom dictionary of profiles, clipped or starred weights, crossings and transform-error labels, so no standalone literal residual theorem or analytic estimate is included.",
+        "dependencies": [
+          "M9-M2-smooth-dual-three-quarter-equivalence",
+          "M9-M2-character-factor",
+          "M9-M2-dyadic-weight-nondegeneracy"
+        ],
+        "implies": [
+          "M9-M2-smooth-balanced-quarter-packet-estimate"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-balanced-smooth-quarter-packet-canonicalization/reports/blind_balanced_packet_rederivation.md",
+            "rounds/codex-managed/m9-m2-balanced-smooth-quarter-packet-canonicalization/reports/balanced_packet_actual_symbol_formalization.md",
+            "rounds/codex-managed/m9-m2-balanced-smooth-quarter-packet-canonicalization/reports/balanced_packet_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m2-balanced-smooth-quarter-packet-canonicalization/reviews/conductor_round112_normalization_and_symbol.md",
+            "rounds/codex-managed/m9-m2-balanced-smooth-quarter-packet-canonicalization/reviews/conductor_round112_owner_norm_capacity.md",
+            "rounds/codex-managed/m9-m2-balanced-smooth-quarter-packet-canonicalization/controls/conductor_round112_controls.md",
+            "rounds/codex-managed/m9-m2-balanced-smooth-quarter-packet-canonicalization/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Instantiate the coefficientwise finite atom dictionary for one smooth balanced physical block from the accepted dyadic profile, Vaaler coefficient and stationary transform. Verify its one-count identity, crossing owners and uniform seminorms before attempting the open signed packet estimate."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-smooth-small-gcd-quarter-packet",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-balanced-smooth-quarter-packet-canonicalization/synthesis.md",
+            "rounds/codex-managed/m9-m2-balanced-smooth-quarter-packet-canonicalization/reports/blind_balanced_packet_rederivation.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-balanced-smooth-quarter-packet-canonicalization/reports/balanced_packet_actual_symbol_formalization.md",
+            "rounds/codex-managed/m9-m2-balanced-smooth-quarter-packet-canonicalization/reports/balanced_packet_hostile_source_audit.md"
+          ]
+        },
+        "next_action": "Retain this as the abstract uniformly smooth full-small-gcd reduction. Use the exact 1/4-minus-3/4 normalization and explicit owner corrections from M9-M2-balanced-quarter-packet-normalization-scope. Do not call it a literal owner-removed residual theorem until the atom dictionary is instantiated."
+      },
+      {
+        "id": "M9-M2-smooth-balanced-quarter-packet-estimate",
+        "dependencies_added": [
+          "M9-M2-balanced-quarter-packet-normalization-scope"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-balanced-smooth-quarter-packet-canonicalization/reports/balanced_packet_actual_symbol_formalization.md",
+            "rounds/codex-managed/m9-m2-balanced-smooth-quarter-packet-canonicalization/reports/balanced_packet_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m2-balanced-smooth-quarter-packet-canonicalization/synthesis.md"
+          ]
+        },
+        "next_action": "First instantiate the literal atom dictionary for each fixed smooth physical (D,L,+) block. Then prove the modulus-outside internal (omega,G)-sum bound at L^(3/2)X^epsilon. Do not use cancellation across distinct physical blocks, hide square or near-square masks in the smooth gcd profile, or substitute shellwise l1, unsigned spacing or an arbitrary-coefficient Gram."
+      },
+      {
+        "id": "M9-M2-physical-one-count-assembly",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-balanced-smooth-quarter-packet-canonicalization/synthesis.md"
+          ]
+        },
+        "next_action": "Retain the blockwise owner architecture. The balanced hypothesis is applied separately to each literal smooth (D,L) block after its internal subdivisions recombine; the assembly does not license cancellation across blocks. Hard and unbalanced parents remain independent."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round112-reverse-quarter-packet-order",
+        "reason": "Under the stated Fourier convention the exact character identity gives the 1/4 packet minus the 3/4 packet. Reversing them changes the sign."
+      },
+      {
+        "id": "Round112-negative-packet-is-direct-conjugate",
+        "reason": "For real profiles Q(-R)=-conj(Q(R)); only after multiplying by 1/(2i) does the physical negative child become the conjugate."
+      },
+      {
+        "id": "Round112-silent-square-near-owner-mask",
+        "reason": "Smooth Poisson transforms the full small-gcd shell. An exact square or near-square complement is arithmetic and nonsmooth in g; prior owners require explicit signed correction terms."
+      },
+      {
+        "id": "Round112-cross-physical-block-omega-cancellation",
+        "reason": "The accepted M2 assembly bounds each physical D,L block before summation. Only bounded internal subdivisions of one fixed block may lie under the packet's outer modulus."
+      },
+      {
+        "id": "Round112-sharp-gcd-threshold-has-no-boundary-term",
+        "reason": "A smooth shell meeting g=L^(1/2) must be assigned explicitly to the large or boundary gcd owner; a sharp cutoff creates an unowned Fourier tail."
+      },
+      {
+        "id": "Round112-shellwise-l1-is-equivalent-to-direct-packet",
+        "reason": "The direct signed internal sum can cancel between shells. Shellwise l1 and Gram estimates are strictly stronger sufficient conditions."
+      },
+      {
+        "id": "Round112-generic-complex-frequency-conjugacy",
+        "reason": "The negative-frequency identity uses the literal real profile and beta_(-h)=beta_h. It fails for a generic complex coefficient."
+      },
+      {
+        "id": "Round112-hard-endpoint-is-a-smooth-balanced-atom",
+        "reason": "The unique physical profile containing d=floor(sqrt X) has a continuum jump and is excluded from smooth Poisson regardless of its scale exponent."
+      },
+      {
+        "id": "Round112-complementary-divisors-cancel-all-products",
+        "reason": "Symmetry cancels only odd m congruent to 3 modulo 4, reinforces odd m congruent to 1 modulo 4, and supplies no character-bearing swapped term for even products."
+      },
+      {
+        "id": "Round112-quarter-packet-identity-saves-X-one-twelfth",
+        "reason": "The identity is capacity-preserving. X^(1/12) is the worst remaining deficit of the current envelope, not a saving."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M2-smooth-balanced-quarter-packet-estimate",
+        "reason": "The literal dictionary and the signed L^(3/2) estimate remain unproved."
+      },
+      {
+        "id": "M9-M2-top-endpoint-density-discrepancy-energy",
+        "reason": "Round 112 treats only smooth balanced blocks."
+      },
+      {
+        "id": "M9-M2-smooth-unbalanced-three-quarter-estimate",
+        "reason": "The unbalanced product-phase parent is independent."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "The hard, balanced and unbalanced M2 parents remain open."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "No M1 estimate is proved."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "Uniform completion of all physical packets remains open."
+      },
+      {
+        "id": "M9",
+        "reason": "Neither M9-M1 nor M9-M2 is closed."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "Its M9 hypothesis remains open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "No pointwise exponent changes."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 4,
+    "idea_quality_score": 6,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 112 certifies all relative quarter-packet constants, conjugacy, owner corrections and norm scope, and prevents two material one-count errors. It identifies the first literal atom-dictionary seam and a precise next deliverable, but proves no analytic estimate, range or exponent."
+  }
+}

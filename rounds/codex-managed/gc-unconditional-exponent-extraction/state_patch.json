@@ -1,0 +1,201 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-direct-one-third-envelope",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Uniform direct one-third envelope for the literal M1 and M2 main blocks",
+        "status": "proved_internal",
+        "statement_tex": "Let X>=2 be real, X^(1/4)<=D<=X^(1/2), H_D=floor(DX^(-1/4)), and 1<=L<=H_D. For every literal dyadic M1 or M2 block with the actual Vaaler coefficient, M1 spatial chi_4(d), M2 two-shift chi_4(h) factor, both frequency signs, the exact dyadic denominator profile, and the hard top sampled-BV profile, one has B_i(D,L;X)<<_epsilon X^epsilon min(1+D/L, 1+(LX/D)^(1/2)+D^(3/2)(LX)^(-1/2))<<_epsilon X^(1/3+epsilon). If D/L<=X^(1/3), use the frequency-first bound. If D/L>=X^(1/3), then (LX/D)^(1/2)<=X^(1/3) and D^(3/2)(LX)^(-1/2)=D(D/(LX))^(1/2)<=X^(1/4), since D/L<=D<=X^(1/2). Summing the dyadic frequency blocks gives M_1(D;X),M_2(D;X)<<_epsilon X^(1/3+epsilon) uniformly in every active D. This is a weaker fallback than the M9 target exponent 1/4.",
+        "dependencies": [
+          "M9-M2-frequency-phase-diagram-R5",
+          "M9-M1-frequency-phase-diagram-R10",
+          "M9-M2-top-frequency-two-shift-T2S",
+          "M9-M1-terminal-frequency-divisor-bound",
+          "M9-M2-dyadic-weight-nondegeneracy",
+          "H4-Phi-regularity",
+          "M9-M2-beta-algebra",
+          "Divisor-bound-elementary"
+        ],
+        "implies": [
+          "GC-partial-one-third"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/gc-unconditional-exponent-extraction/reports/blind_global_exponent_rederivation.md",
+            "rounds/codex-managed/gc-unconditional-exponent-extraction/reports/global_exponent_assembly_attack.md",
+            "rounds/codex-managed/gc-unconditional-exponent-extraction/reports/global_exponent_hostile_audit.md",
+            "rounds/codex-managed/gc-unconditional-exponent-extraction/candidates/conductor_one_third_assembly.md",
+            "rounds/codex-managed/gc-unconditional-exponent-extraction/reviews/conductor_round91_block_optimization.md",
+            "rounds/codex-managed/gc-unconditional-exponent-extraction/reviews/conductor_round91_assembly.md",
+            "rounds/codex-managed/gc-unconditional-exponent-extraction/reviews/conductor_round91_adjudication.md",
+            "rounds/codex-managed/gc-unconditional-exponent-extraction/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use this only as the unconditional fallback envelope. The one-quarter M1 and M2 hard-core estimates remain the proof target."
+      },
+      {
+        "id": "M9-direct-menu-one-third-optimality",
+        "type": "normalization",
+        "track": "M9_analytic",
+        "title": "The accepted direct block menu has exact minimax exponent one third",
+        "status": "proved_internal",
+        "statement_tex": "On Omega={(delta,ell):1/4<=delta<=1/2, 0<=ell<=delta-1/4}, minimize blockwise among T2S exponent delta-ell, the full second-derivative maximum of (1+ell-delta)/2, (3delta-1-ell)/2, and 0, the trivial exponent delta, and the audited TTY exponent [89(1+ell)+819delta]/1282 with its companion. The supremum of this minimum is exactly 1/3. At (delta,ell)=(1/2,1/6), the entries are 1/3, max(1/3,1/6,0), 1/2, and 770/1923>1/3. Hence this menu proves no uniform exponent below 1/3. This is menu optimality, not a lower bound for the actual sums.",
+        "dependencies": [
+          "M9-direct-one-third-envelope",
+          "M9-M2-TTY-exponent-pair-wedge",
+          "M9-M1-TTY-exponent-pair-wedge"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/gc-unconditional-exponent-extraction/reports/global_exponent_assembly_attack.md",
+            "rounds/codex-managed/gc-unconditional-exponent-extraction/reports/global_exponent_hostile_audit.md",
+            "rounds/codex-managed/gc-unconditional-exponent-extraction/reviews/conductor_round91_block_optimization.md",
+            "rounds/codex-managed/gc-unconditional-exponent-extraction/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Any exponent below one third requires a new signed estimate on the residual M1 or M2 core, not another selection among the accepted direct rows."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "type": "theorem",
+        "track": "proof_infrastructure",
+        "title": "Unconditional Gauss circle error bound at exponent one third",
+        "status": "proved_internal",
+        "statement_tex": "For every epsilon>0 and every real X>=2, P(X)=N(sqrt(X))-pi X satisfies P(X)<<_epsilon X^(1/3+epsilon). The exact H1-H3 identity and H4 Vaaler approximation split the denominator range into an O(X^(1/4)) bottom remainder, pointwise Fejer residuals O_epsilon(X^(1/4+epsilon)), and literal M1/M2 main blocks. M9-direct-one-third-envelope bounds each main block by O_epsilon(X^(1/3+epsilon)); the O(log^2 X) denominator-frequency assembly is absorbed into X^epsilon. The hard top profile, exact products, floors, integer sawtooth jump, both M2 shifts, both signs, and real-X uniformity are retained. This theorem is strictly weaker than GC-target and does not prove M9-M1, M9-M2, or M9 at exponent 1/4.",
+        "dependencies": [
+          "H1-H3",
+          "H4",
+          "R5-Full",
+          "M9-direct-one-third-envelope",
+          "M9-M2-dyadic-weight-nondegeneracy"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/gc-unconditional-exponent-extraction/reports/blind_global_exponent_rederivation.md",
+            "rounds/codex-managed/gc-unconditional-exponent-extraction/reports/global_exponent_assembly_attack.md",
+            "rounds/codex-managed/gc-unconditional-exponent-extraction/reports/global_exponent_hostile_audit.md",
+            "rounds/codex-managed/gc-unconditional-exponent-extraction/candidates/conductor_one_third_assembly.md",
+            "rounds/codex-managed/gc-unconditional-exponent-extraction/reviews/conductor_round91_r5_reconciliation.md",
+            "rounds/codex-managed/gc-unconditional-exponent-extraction/reviews/conductor_round91_assembly.md",
+            "rounds/codex-managed/gc-unconditional-exponent-extraction/reviews/conductor_round91_adjudication.md",
+            "rounds/codex-managed/gc-unconditional-exponent-extraction/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Keep this as the unconditional fallback theorem while continuing the separate one-quarter M1 and M2 hard-core program."
+      }
+    ],
+    "update": [
+      {
+        "id": "R5-Full-reconciliation",
+        "status": "proved_internal",
+        "statement_tex": "Let X>=2 be real, X^(1/4)<=D<=X^(1/2), H_D asymp D X^(-1/4), and let w_D be an actual active denominator profile, including the hard top truncation. Vaaler's positive Fejer residual satisfies, pointwise in X, (1/H_D)sum_(d asymp D)|w_D(d)|K_(H_D)(X/d)<<_epsilon X^(1/4+epsilon). The two shifted legs have the same bound after the exact grouping n=d(4m-rho), rho in {1,3}. Exact products receive weight one, the floor-compatible integer jump is exact, half-open shells and the top cutoff only restrict the positive majorant, and the far tail is D H_D^(-2) asymp X^(1/2)/D<=X^(1/4). This is a divisor-product proof, not a mean-square argument.",
+        "dependencies_removed": [
+          "R5-Full"
+        ],
+        "dependencies_added": [
+          "M9-M2-dyadic-weight-nondegeneracy",
+          "Divisor-bound-elementary"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/gc-unconditional-exponent-extraction/reports/blind_global_exponent_rederivation.md",
+            "rounds/codex-managed/gc-unconditional-exponent-extraction/reports/global_exponent_assembly_attack.md",
+            "rounds/codex-managed/gc-unconditional-exponent-extraction/reports/global_exponent_hostile_audit.md",
+            "rounds/codex-managed/gc-unconditional-exponent-extraction/reviews/conductor_round91_r5_reconciliation.md",
+            "rounds/codex-managed/gc-unconditional-exponent-extraction/synthesis.md"
+          ]
+        },
+        "reason_for_promotion": "Round 91 independently rederives and hostilely certifies the pointwise positive-Fejer product-count proof from H4, the exact profile, and the elementary divisor bound, removing the former circular documentary dependency.",
+        "next_action": "Reuse the pointwise residual theorem directly; do not replace it with a mean-square Fourier argument."
+      },
+      {
+        "id": "R5-Full",
+        "status": "proved_internal",
+        "statement_tex": "For every real X>=2, every active D with H_D asymp D X^(-1/4), and every actual active denominator profile including the hard top, all first and shifted Fejer residual blocks are O_epsilon(X^(1/4+epsilon)) pointwise. The statement includes exact products, both shifts rho=1,3, half-open shells, height floors, the integer sawtooth convention, and dyadic assembly.",
+        "dependencies_added": [
+          "R5-Full-reconciliation",
+          "H4-source-audit",
+          "M9-M2-dyadic-weight-nondegeneracy",
+          "Divisor-bound-elementary"
+        ],
+        "blockers_removed": [
+          "R5-Full-reconciliation"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/gc-unconditional-exponent-extraction/reports/blind_global_exponent_rederivation.md",
+            "rounds/codex-managed/gc-unconditional-exponent-extraction/reports/global_exponent_assembly_attack.md",
+            "rounds/codex-managed/gc-unconditional-exponent-extraction/reports/global_exponent_hostile_audit.md",
+            "rounds/codex-managed/gc-unconditional-exponent-extraction/reviews/conductor_round91_r5_reconciliation.md",
+            "rounds/codex-managed/gc-unconditional-exponent-extraction/synthesis.md"
+          ]
+        },
+        "reason_for_promotion": "H4 is source-audited, and Round 91 closes every pointwise product-count, exact-product, shifted-leg, floor, hard-top, and real-X reconciliation seam.",
+        "next_action": "Treat all Vaaler Fejer residuals as proved pointwise; the remaining one-quarter problem lies in the main M1 and M2 sums."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round91-accepted-direct-menu-proves-below-one-third",
+        "reason": "At (delta,ell)=(1/2,1/6), the best accepted direct exponent is exactly 1/3; TTY is 770/1923>1/3 and the trivial row is 1/2."
+      },
+      {
+        "id": "Round91-open-transformed-endpoint-cones-block-the-direct-one-third-theorem",
+        "reason": "The original reciprocal-block T2S and weighted second-derivative estimates include the hard top sampled-BV profile, so the transformed endpoint cones are not used in the one-third proof."
+      },
+      {
+        "id": "Round91-mean-square-Fejer-control-is-the-R5-proof",
+        "reason": "R5 is proved pointwise by positivity and exact divisor-product grouping; a mean-square Fourier calculation would be the wrong norm."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "Its statement asks for exponent 1/4. The new one-third envelope does not estimate the canonical hard M1 Gram core at that scale."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Its statement asks for exponent 1/4. The residual signed M2 cross-row energy remains open."
+      },
+      {
+        "id": "M9",
+        "reason": "M9 remains the one-quarter main-sum theorem; a weaker one-third fallback does not promote it."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "Endpoint uniformity at exponent 1/4 remains open even though the direct one-third proof is uniform."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The bridge still concerns the one-quarter target and remains conditional on M9."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The theorem X^(1/3+epsilon) is strictly weaker than the requested X^(1/4+epsilon) target."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 9,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 91 converts the accepted direct block menu into a complete unconditional real-X theorem at exponent one third, proves that exponent is exact for the menu, and closes the longstanding pointwise R5 reconciliation without overstating progress on the one-quarter hard cores."
+  }
+}
