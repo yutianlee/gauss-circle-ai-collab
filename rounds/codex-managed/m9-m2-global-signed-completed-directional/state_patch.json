@@ -1,0 +1,161 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-global-completed-realpart-self-return",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Global completed real-part equivalence and Round-75 self-return",
+        "status": "proved_internal",
+        "statement_tex": "Let J=sqrt X, 1<=L<=J^(1/2), T=L^2X^epsilon, and use one representative hard-top orientation h<s (equivalently primitive a<b) with one outer 2Re. Let C_(L,tag)^comp=sum_B Q_B^comp be the finite tagged completed scalar on the inherited half-open A,D,K,G,R cells, with the terminal metric member, exact-centre atom, fixed k-lattice, open reciprocal interval, collars, floors, stars, equality weights, entry/exit data, empty/singleton fibres, and original Poisson-mode tags retained. The Round-109 owner identity gives E_L^top=E_tilde_owned,L+2Re C_(L,tag)^comp with |E_tilde_owned,L|<<_epsilon T. The exact Round-75 row expansion gives E_L^top=D_L+2Re C_L^off with D_L<<_epsilon T. Hence Re(C_(L,tag)^comp-C_L^off)=(D_L-E_tilde_owned,L)/2=O_epsilon(T), and E_L^top<<_epsilon T is equivalent, as a one-sided upper bound, to Re C_(L,tag)^comp<<_epsilon T; positivity supplies the lower real-part bound. Writing s=h+2r gives chi_4(h)chi_4(s)=(-1)^r, and after primitive-ray factorization C_L^off=sum_(a,r)(F_(L,a)(2r)-F_(L,a)(2r+1)) with every moving actual-symbol seam retained. The tagged completed scalar therefore has the same physical real-part capacity as the original Round-75 off-diagonal. No complex self-return, modulus or blockwise-absolute estimate, fixed-a Gram estimate, adjacent-difference bound, hard-cone theorem, smooth-packet theorem, M9 component, endpoint theorem, or exponent improvement follows.",
+        "dependencies": [
+          "M9-M2-blockwise-linear-owner-completion",
+          "M9-M2-top-endpoint-transposed-character-energy",
+          "M9-M2-top-endpoint-actual-symbol-variation",
+          "M9-M2-top-endpoint-strict-metric-carrier-cancellation"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-global-signed-completed-directional/reports/blind_global_signed_implication.md",
+            "rounds/codex-managed/m9-m2-global-signed-completed-directional/reports/completed_directional_kernel_attack.md",
+            "rounds/codex-managed/m9-m2-global-signed-completed-directional/reports/completed_directional_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-global-signed-completed-directional/reviews/conductor_round110_implication.md",
+            "rounds/codex-managed/m9-m2-global-signed-completed-directional/reviews/conductor_round110_recombination_and_orientation.md",
+            "rounds/codex-managed/m9-m2-global-signed-completed-directional/controls/conductor_round110_controls.md",
+            "rounds/codex-managed/m9-m2-global-signed-completed-directional/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Attack the exact actual-symbol adjacent primitive-ray difference or the equivalent one-sided Round-75 off-diagonal directly. A valid gain must control simultaneous coprimality, lift, ceiling, interval, collar, entry/exit, and metric-centre jumps and must not be another invertible transform self-return.",
+        "reason_for_promotion": "Two accepted exact energy identities independently identify the completed tagged real part with the original Round-75 off-diagonal up to target-sized terms. The blind norm audit proves the one-sided target is minimal, and the hostile audit certifies the actual-symbol adjoint return and orientation normalization."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-top-endpoint-density-discrepancy-energy",
+        "dependencies_added": [
+          "M9-M2-global-completed-realpart-self-return"
+        ],
+        "statement_tex": "Let H_L be the exact finite odd top-frequency support, T_end,L=sum_m R_m the accepted transposed-row regrouping, and E_L^top=sum_m|R_m|^2, so |T_end,L|^2<<L E_L^top. After the unique Round-75 diagonal and every proved endpoint, collar, original-mode, square-ray, exact-centre, positive-safe, q=1, and prescribed-polylogarithmic owner, use one representative primitive orientation h<s (equivalently a<b) and one outer 2Re. On the common finite tagged A,D,K,G,R atom space retain the complete actual collared coefficient, metric density, all discrepancy modes, terminal member, exact-centre convention, floors, stars, and entry/exit data. Let C_(L,tag)^comp=sum_B Q_B^comp. The exact one-count identity is E_L^top=E_tilde_owned,L+2Re C_(L,tag)^comp with |E_tilde_owned,L|<<_epsilon L^2X^epsilon, and the global completed real part returns to the Round-75 off-diagonal at the same capacity. Prove Re C_(L,tag)^comp<<_epsilon L^2X^epsilon, equivalently the exact adjacent primitive-ray signed difference bound; this is necessary and sufficient up to target-sized terms for E_L^top<<_epsilon L^2X^epsilon and hence T_end,L<<_epsilon L^(3/2)X^epsilon. A blockwise outside-absolute completed estimate or the fixed-a Gram is a stronger optional sufficient route, not a consequence. This closes only the residual hard top cone, not either smooth M2 packet or all-denominator endpoint assembly.",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-global-signed-completed-directional/reviews/conductor_round110_implication.md",
+            "rounds/codex-managed/m9-m2-global-signed-completed-directional/reviews/conductor_round110_recombination_and_orientation.md",
+            "rounds/codex-managed/m9-m2-global-signed-completed-directional/synthesis.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-global-signed-completed-directional/reports/completed_directional_kernel_attack.md"
+          ]
+        },
+        "next_action": "Prove the one-sided actual Round-75 off-diagonal bound, equivalently cancellation in the exact adjacent primitive-ray difference with all moving support and owner jumps. Do not repeat global completion, infer a complex bound, or require the stronger fixed-a Gram unless an explicit directional bridge is supplied."
+      },
+      {
+        "id": "M9-M2-primitive-ray-fixed-a-actual-Gram",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-global-signed-completed-directional/reports/completed_directional_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-global-signed-completed-directional/synthesis.md"
+          ]
+        },
+        "next_action": "This Gram is an optional stronger route: prove its complete actual nonzero-shift correlation only if an explicit bridge to the needed global signed direction is retained. Global scalar completion does not commute through the Gram, and the primitive character cancels in the fixed-a lift."
+      },
+      {
+        "id": "M9-M2-blockwise-linear-owner-completion",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-global-signed-completed-directional/reviews/conductor_round110_recombination_and_orientation.md",
+            "rounds/codex-managed/m9-m2-global-signed-completed-directional/synthesis.md"
+          ]
+        },
+        "next_action": "The completion gate is closed and its global real part self-returns to the original Round-75 off-diagonal. Use it only as an exact connector; do not repeat owner completion or infer blockwise, modulus, or Gram bounds."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round110-global-completion-produces-smaller-hard-kernel",
+        "reason": "Comparison of the two exact energy identities gives real-part equality with the original Round-75 off-diagonal up to a target-sized packet. Completion and adjoint inversion preserve physical capacity."
+      },
+      {
+        "id": "Round110-energy-identities-give-complex-self-return",
+        "reason": "The energy identities determine only the real part. The imaginary correction is irrelevant and uncontrolled, so neither complex equality nor a modulus bound follows."
+      },
+      {
+        "id": "Round110-fixed-q-character-gives-a-or-g-orthogonality",
+        "reason": "For b=a+2q, chi_4(ga)chi_4(gb)=(-1)^q is constant in a and every odd lift g at fixed q; in the fixed-a Gram the character factors cancel."
+      },
+      {
+        "id": "Round110-global-realpart-implies-blockwise-or-Gram",
+        "reason": "Finite cancelling-block and orthogonal-Gram controls separate the global real part from modulus, blockwise absolute mass, row energy, and operator norm."
+      },
+      {
+        "id": "Round110-both-orientations-plus-outer-2Re",
+        "reason": "The exact off-diagonal convention is one representative orientation plus one outer 2Re. Including the conjugate orientation inside the scalar and retaining 2Re double counts."
+      },
+      {
+        "id": "Round110-simplified-untagged-kernel-is-automatically-literal",
+        "reason": "Finiteness permits reordering but not deletion, deduplication, or replacement of block-dependent coefficients. Only the inherited tagged finite sum is promoted without an additional atom-level merger proof."
+      },
+      {
+        "id": "Round110-adjacent-ray-presentation-proves-cancellation",
+        "reason": "The adjacent even-odd difference is an exact reindexing. A unit q-shift changes coprimality, lifts, ceilings, reciprocal support, collars, entry/exit, and metric centres, and no target variation estimate is proved."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M2-primitive-ray-fixed-a-actual-Gram",
+        "reason": "The optional stronger Gram estimate remains open."
+      },
+      {
+        "id": "M9-M2-top-endpoint-density-discrepancy-energy",
+        "reason": "The exact minimal scalar target is identified but not estimated."
+      },
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "reason": "The hard-top signed estimate remains open."
+      },
+      {
+        "id": "M9-M2-smooth-balanced-quarter-packet-estimate",
+        "reason": "Round 110 treated only hard-top reconciliation."
+      },
+      {
+        "id": "M9-M2-smooth-unbalanced-three-quarter-estimate",
+        "reason": "Round 110 treated only hard-top reconciliation."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Hard, balanced, and unbalanced M2 children remain open."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "No M1 estimate is proved."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "All-denominator endpoint assembly remains open."
+      },
+      {
+        "id": "M9",
+        "reason": "Neither M9-M1 nor M9-M2 is closed."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "Its M9 hypothesis remains open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "No global pointwise exponent changes."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 6,
+    "idea_quality_score": 7,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 110 identifies the exact weakest hard-energy scalar target, corrects the orientation normalization, and proves that global completion returns in real part to the original Round-75 alternating off-diagonal. This removes a false appearance of a smaller kernel and isolates the adjacent primitive-ray actual-symbol difference as the direct survivor, but proves no new analytic bound or exponent."
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-square-root-capacity-self-return-barrier",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "The complete first-band M1 Gram lift returns at equal square-root capacity",
+        "status": "proved_internal",
+        "statement_tex": "Let J=sqrt(X), Q=J^(2/5), T=J^(3/5), B=C/T, and J^(13/18)<C<=J^(3/4). For each transition-flattened smooth nonaxial M1 component, the complete deep centered Kloosterman-product coefficient is the exact sum of distinct normalized physical ordered pairs. Its unnormalized Fejer A-process is the exact four-row Gram operator used in Rounds 87--89. The integer u=0 coefficient is the whole global diagonal and is owned once; on u!=0, successive complements give a disjoint R87/R88/R89/hard partition. Full-prime-power completed descent is exactly invertible because q^(-2) sum_u T_q(u)e_q(-ux)=w_q(x) and the p^(2j) descent factor cancels q^2=(p^j q')^2; restricted Fejer shifts retain total mass. The finite Toeplitz inequality gives |sum_b H_(b,D)(0)|^2 <<_epsilon X^epsilon(B/D)E_D. With C_82=B^3T^2Q^(-5/12), T_82=J^2/T, and full directed degree Delta asymp B^2, the deep capacity and target are (D/B)C_82^2 and (D/B)T_82^2. Hence Gamma_deep=Gamma_82^2 and the compulsory square root returns to equal Round-82 capacity. At B=J^(3/20), J^(1/6) is the Gram-space square of J^(1/12), not an additional linear loss. The q=8 residual retains full degree, so local period peeling gives no strict gain. This is a Gram-level capacity barrier, not a linear involution and not an estimate of the hard signed operator.",
+        "dependencies": [
+          "M9-M1-bad-prime-cellwise-period-graph-bound",
+          "M9-M1-cross-group-period-depth-subaggregate-bound",
+          "M9-M1-deep-full-factor-same-group-fejer-bound",
+          "M9-M1-centred-dual-difference-cubic-shell-bound"
+        ],
+        "implies": [
+          "M9-M1-residual-upper-conductor-offdiagonal-reduction"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-capacity-self-return-fork/reports/m1_self_return_barrier_attack.md",
+            "rounds/codex-managed/m9-m1-capacity-self-return-fork/reports/blind_m1_capacity_rederivation.md",
+            "rounds/codex-managed/m9-m1-capacity-self-return-fork/reports/m1_self_return_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m1-capacity-self-return-fork/candidates/conductor_square_root_self_return_barrier.md",
+            "rounds/codex-managed/m9-m1-capacity-self-return-fork/reviews/conductor_round90_normalization.md",
+            "rounds/codex-managed/m9-m1-capacity-self-return-fork/reviews/conductor_round90_reassembly.md",
+            "rounds/codex-managed/m9-m1-capacity-self-return-fork/reviews/conductor_round90_adjudication.md",
+            "rounds/codex-managed/m9-m1-capacity-self-return-fork/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Estimate the canonical hard actual-symbol Gram operator jointly. Do not resume local period peeling unless it proves a strict capacity reduction."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-residual-upper-conductor-offdiagonal-reduction",
+        "statement_tex": "Let J=sqrt(X), Q=J^(2/5), T=J^(3/5), and J^(13/18)<C<=J. In the first band J^(13/18)<C<=J^(3/4), transition errors and axes are separately target-safe. The same-residue mode, literal dual d=0, every 0<|d|<=D_1=floor(J^(87/140)), and the outer support collar are target-safe. Rounds 87--89 remove the certified same-group, coarse, good-prime, and bad-prime cell packages. Their complete transform chain reassembles exactly to the deep Fejer Gram lift of the Round-82 centered Kloosterman-product operator. Full-prime-power descent/inversion, all classes and signs, stationary weights, modulus multiples, Ramanujan terms, and the global u=0 diagonal are retained once. The deep target and full-degree capacity are (D/B) times the squares of the Round-82 target and triangle capacity, so the Gram-space gap J^(1/6) at top conductor square-roots exactly to the Round-82 gap J^(1/12). The canonical hard residual retains cells failing the conductor thresholds, full nonunit-K, affine/full-phase, projection-only, shallow, and aperiodic factors, with the actual fourfold symbol and full directed degree possible. No signed estimate for this core is proved. On J^(3/4)<C<=J, principal main, transition error, and axes remain open. No full first-band, upper-conductor, cone-edge, M9-M1, M9, or exponent estimate is proved.",
+        "dependencies_added": [
+          "M9-M1-square-root-capacity-self-return-barrier"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-capacity-self-return-fork/reports/m1_self_return_barrier_attack.md",
+            "rounds/codex-managed/m9-m1-capacity-self-return-fork/reports/blind_m1_capacity_rederivation.md",
+            "rounds/codex-managed/m9-m1-capacity-self-return-fork/reports/m1_self_return_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m1-capacity-self-return-fork/synthesis.md"
+          ]
+        },
+        "next_action": "Treat the displayed hard actual-symbol Gram operator as the canonical first-band M1 core. A valid next estimate must give joint signed cancellation and a strict capacity gain; local period peeling is closed."
+      },
+      {
+        "id": "M9-M1",
+        "dependencies_added": [
+          "M9-M1-square-root-capacity-self-return-barrier"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-capacity-self-return-fork/synthesis.md"
+          ]
+        },
+        "next_action": "First extract the strongest unconditional exponent from the accepted graph. Then attack the canonical hard M1 Gram operator jointly, while keeping upper conductor, cone edges, other sectors, and endpoint owners separate."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round90-deep-J-one-sixth-is-an-additional-linear-loss",
+        "reason": "The deep energy gap is exactly the square of the Round-82 linear gap; the Fejer/Cauchy passage takes its compulsory square root."
+      },
+      {
+        "id": "Round90-completed-descent-frequency-sparsity-saves-capacity",
+        "reason": "The p^(2j) trace factor cancels the quotient-square inverse normalization, and the restricted Fejer shifts retain total mass."
+      },
+      {
+        "id": "Round90-linear-M1-operator-equals-its-Gram-lift",
+        "reason": "The transform identities are exact at the Gram level, but the linear-to-Gram step is the one-way Fejer/Cauchy inequality."
+      },
+      {
+        "id": "Round90-further-local-period-peeling-closes-the-hard-core",
+        "reason": "The exact q=8 residual cell retains full directed degree, so a strict gain requires joint signed actual-symbol cancellation."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "The capacity barrier identifies the canonical core but does not estimate it; the rest of the first band, upper conductor, cone edges, other sectors, and endpoint uniformity remain open."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Round 90 concerns only the M1 first-band Gram lift."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1 and M9-M2 remain open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "No new conductor range or global exponent is proved."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 9,
+    "state_evidence_score": 9,
+    "calibration_score": 10,
+    "reason": "Round 90 proves an exact Gram reassembly and square-root equal-capacity barrier for the full R82--R89 first-band pipeline. It removes a false extra J^(1/12) interpretation and freezes the canonical hard core, while correctly leaving the signed estimate and global exponent open."
+  }
+}

@@ -1,0 +1,26 @@
+Round 97 report hygiene
+
+blind_m2_assembly_rederivation.md
+  sections: 7
+  forbidden controls / CR: 0 / 0
+  inline delimiters: 59 / 59
+  display delimiters: 6 / 6
+  trailing whitespace: 0
+
+m2_outside_packet_assembly_attack.md
+  sections: 7
+  forbidden controls / CR: 0 / 0
+  inline delimiters: 93 / 93
+  display delimiters: 19 / 19
+  trailing whitespace: 0
+
+m2_assembly_hostile_hygiene_audit.md
+  sections: 7
+  forbidden controls / CR: 0 / 0
+  inline delimiters: 77 / 77
+  display delimiters: 12 / 12
+  trailing whitespace: 0
+
+All three files decode as strict UTF-8, have balanced displayed and
+inline TeX delimiters, and pass git diff --check.
+

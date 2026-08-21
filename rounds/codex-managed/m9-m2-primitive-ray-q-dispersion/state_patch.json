@@ -1,0 +1,162 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-primitive-ray-q-dispersion-obstruction",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Primitive-ray q-dispersion character and equal-capacity obstruction",
+        "status": "proved_internal",
+        "statement_tex": "In the residual canonical hard top M2 cone, primitive odd rays a=m-q, b=m+q satisfy m not congruent q mod 2, (m,q)=1, and chi_4(a)chi_4(b)=(-1)^q. At fixed m every legal q-shift is q to q+2h, so the character autocorrelation is +1 and parity-aware Poisson retains a zero frequency. At fixed a, sign-changing shifts give an exact complete-symbol Fejer Gram with both moving reciprocal intervals, lift sets, owner masks, entry/exit samples, and the joint metric density-discrepancy coefficient. With positive linear capacity P asymp L^2 sqrt(rho), row energy E_0 asymp L J D^2, and H<=D, separately estimating the diagonal and the shifted correlations costs P^2/H and gains at most D^(-1/2) linearly; it cannot supply rho^(-1/2) on the nonempty hard range rho>D, including q=1 nonsquare Pell rows with D asymp 1 and rho tending to infinity. Fourier transformation in the shift, parity-aware q-Poisson, and the adjoint reciprocal transform return to the original half-frequency or transposed two-character row at equal capacity. The full phase has a radial Hessian null direction. This is a scoped obstruction to automatic character, coefficientwise, diagonal-separated, determinant-only, and transform-unitarity proofs; it is not a lower bound for the complete actual block and does not exclude a new signed actual-Gram estimate.",
+        "dependencies": [
+          "M9-M2-top-endpoint-transposed-character-energy",
+          "M9-M2-top-endpoint-actual-symbol-variation",
+          "M9-M2-top-endpoint-square-ray-signed-cancellation",
+          "M9-M2-top-endpoint-nonsquare-divisor-strip",
+          "M9-M2-top-endpoint-strict-metric-carrier-cancellation"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-primitive-ray-q-dispersion/reports/blind_primitive_ray_q_rederivation.md",
+            "rounds/codex-managed/m9-m2-primitive-ray-q-dispersion/reports/primitive_ray_q_dispersion_attack.md",
+            "rounds/codex-managed/m9-m2-primitive-ray-q-dispersion/reports/primitive_ray_q_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m2-primitive-ray-q-dispersion/candidates/conductor_q_curvature_audit.md",
+            "rounds/codex-managed/m9-m2-primitive-ray-q-dispersion/reviews/conductor_round96_normalization_and_shift.md",
+            "rounds/codex-managed/m9-m2-primitive-ray-q-dispersion/reviews/conductor_round96_capacity_and_controls.md",
+            "rounds/codex-managed/m9-m2-primitive-ray-q-dispersion/reviews/conductor_round96_adjudication.md",
+            "rounds/codex-managed/m9-m2-primitive-ray-q-dispersion/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Do not repeat fixed-m alternation, coefficientwise q-A-process, or parity-aware Poisson. Any successor must prove cancellation in the complete fixed-a shifted Gram or use an additional actual physical variable."
+      },
+      {
+        "id": "M9-M2-primitive-ray-fixed-a-actual-Gram",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Complete fixed-a primitive-ray shifted Gram estimate",
+        "status": "open",
+        "statement_tex": "For every residual hard top M2 block, let F_a(q) be the exact zero-extended fixed-a row retaining the primitive and owner masks, moving k interval, finite odd lifts, profiles, floors, stars, physical entry/exit integral, and the coupled metric coefficient W_R. Let G_H^act=sum_(a,n)|sum_(0<=h<H)(-1)^h F_a(n+h)|^2, E_0 asymp L J D^2, and rho=A J D^3/L^3. Prove for some lawful 1<=H<=D that G_H^act <<_epsilon X^epsilon H^2 E_0/rho, or prove an equivalent direct complete nonzero-shift correlation estimate. The stationary determinant contains g'/(k'(a+2q+2s)^(3/2))-g/(k(a+2q)^(3/2)) and must be controlled jointly with all moving symbols and the metric density. Together with the accepted one-count assembly and logarithmic block sum, this would close the canonical residual hard top M2 density-discrepancy energy. The statement does not cover other M2 packets or all-denominator endpoint assembly.",
+        "dependencies": [
+          "M9-M2-primitive-ray-q-dispersion-obstruction",
+          "M9-M2-top-endpoint-actual-symbol-variation",
+          "M9-M2-top-endpoint-strict-metric-carrier-cancellation"
+        ],
+        "implies": [
+          "M9-M2-top-endpoint-density-discrepancy-energy"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-primitive-ray-q-dispersion/reports/blind_primitive_ray_q_rederivation.md",
+            "rounds/codex-managed/m9-m2-primitive-ray-q-dispersion/reports/primitive_ray_q_dispersion_attack.md",
+            "rounds/codex-managed/m9-m2-primitive-ray-q-dispersion/reports/primitive_ray_q_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m2-primitive-ray-q-dispersion/reviews/conductor_round96_adjudication.md",
+            "rounds/codex-managed/m9-m2-primitive-ray-q-dispersion/synthesis.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Attack the determinant-weighted off-shift correlation before taking absolute values, with special attention to the short-q and near-equal g/k locus."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-top-endpoint-density-discrepancy-energy",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-primitive-ray-q-dispersion/reports/blind_primitive_ray_q_rederivation.md",
+            "rounds/codex-managed/m9-m2-primitive-ray-q-dispersion/reports/primitive_ray_q_dispersion_attack.md",
+            "rounds/codex-managed/m9-m2-primitive-ray-q-dispersion/reports/primitive_ray_q_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m2-primitive-ray-q-dispersion/reviews/conductor_round96_adjudication.md",
+            "rounds/codex-managed/m9-m2-primitive-ray-q-dispersion/synthesis.md"
+          ]
+        },
+        "next_action": "The first exact survivor is M9-M2-primitive-ray-fixed-a-actual-Gram. Prove its determinant-weighted signed correlation or find a different actual-symbol mechanism; do not repeat automatic q alternation or coefficientwise A-process."
+      },
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-primitive-ray-q-dispersion/synthesis.md"
+          ]
+        },
+        "next_action": "Keep the top cone open. Round 96 removes bare primitive-ray q-dispersion as a standalone closure and leaves the complete fixed-a shifted Gram as the strict residual kernel."
+      },
+      {
+        "id": "M9-M2",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-primitive-ray-q-dispersion/synthesis.md"
+          ]
+        },
+        "next_action": "Prove the canonical fixed-a actual Gram or an alternative joint density-discrepancy theorem, then assemble every other M2 packet. No pointwise M2 or exponent improvement follows from Round 96."
+      },
+      {
+        "id": "M9",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-primitive-ray-q-dispersion/synthesis.md"
+          ]
+        },
+        "next_action": "Both M9-M1 and M9-M2 remain open. Round 96 is a scoped M2 route obstruction and changes no endpoint or quarter-target status."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round96-fixed-m-q-shifts-retain-chi4-alternation",
+        "reason": "The exact primitive odd lattice has one q parity at fixed m, so legal shifts are q to q+2h and the character autocorrelation is identically +1."
+      },
+      {
+        "id": "Round96-coefficientwise-one-q-A-process-supplies-rho-half-gain",
+        "reason": "A separately estimated zero shift contributes P^2/H with H<=D, giving at most D^(-1/2) linearly; q=1 nonsquare Pell rows have D asymp 1 and rho tending to infinity."
+      },
+      {
+        "id": "Round96-parity-aware-q-Poisson-deletes-zero-frequency",
+        "reason": "On the exact parity coset the dual lattice is one-half Z and contains zero; in the q-slice representation modulation only shifts the original row to frequency one half."
+      },
+      {
+        "id": "Round96-fixed-variable-Hessian-determinant-is-a-complete-symbol-determinant",
+        "reason": "The complete three-variable phase is degree-one homogeneous with a radial null vector, and the saddle-reduced (m,q) Hessian has rank one."
+      },
+      {
+        "id": "Round96-rho-less-than-D-wedge-is-proved",
+        "reason": "That wedge is only compatible with the diagonal capacity. The complete signed off-shift Gram and its moving determinant locus remain unproved."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M2-top-endpoint-density-discrepancy-energy",
+        "reason": "No complete actual-Gram or block-sum estimate was proved."
+      },
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "reason": "The residual hard top cone still depends on the open canonical density-discrepancy estimate."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "The canonical top core and other M2 packets remain open."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "Round 96 is confined to the M2 primitive-ray core."
+      },
+      {
+        "id": "GC-target",
+        "reason": "No new pointwise exponent or quarter-bound dependency was proved."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 7,
+    "state_evidence_score": 9,
+    "calibration_score": 10,
+    "reason": "Round 96 rigorously removes automatic primitive-ray character dispersion and transform unitarity as full M2 closures, while preserving the exact actual-symbol Gram estimate as the smaller open kernel and avoiding any false claim that the canonical theorem itself is disproved."
+  }
+}

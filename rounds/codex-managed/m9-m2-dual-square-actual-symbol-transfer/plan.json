@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "round_index": 106,
+  "campaign_id": "m9-m2-dual-square-actual-symbol-transfer",
+  "title": "Owner-preserving primitive dual-square actual-symbol transfer",
+  "starting_graph_sha256": "2b61ad459192c94e83ee80adfa3bdda5374df87b01f42c4a0ab306c07eb817de",
+  "objective": "Derive the complete two-step transform of the literal polynomial-q M2 row, with every actual owner and error retained, and decide whether the returned odd-character square yields the full D-saving, a strict polynomial subrange, or an exact equal-capacity reassembly.",
+  "max_concurrency": 3,
+  "resource_policy": {
+    "analytical_algebraic_minimum_percent": 95,
+    "numerical_experimental_maximum_percent": 5,
+    "planned_numerical_percent": 0
+  },
+  "tasks": [
+    "blind_dual_square_rederivation",
+    "dual_square_actual_transfer_attack",
+    "dual_square_owner_hostile_source_audit"
+  ],
+  "exit_gate": "A complete owner-preserving transform theorem plus a full-D estimate or strict polynomial subrange, or a rigorous owner-by-owner equal-capacity return with the smallest remaining actual-vector correlation."
+}

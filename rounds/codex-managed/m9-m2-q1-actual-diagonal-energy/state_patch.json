@@ -1,0 +1,133 @@
+{
+  "proof_obligations": {
+    "create": [],
+    "update": [
+      {
+        "id": "M9-M2-primitive-ray-q1-actual-diagonal-energy",
+        "type": "lemma",
+        "status": "proved_internal",
+        "statement_tex": "On every residual hard top M2 half-open bottom block whose fixed-a row contains only q=1, retain the exact actual coefficient F_a(1), including primitive and prior-owner masks, the moving open reciprocal interval, finite odd lifts, actual profiles, floors, stars, fixed physical collars, the full punctured metric density and every discrepancy mode, both orientations, saddle entry and exit, and zero extension. Then sum_(a asymp A)|F_a(1)|^2 <<_epsilon X^epsilon L^4/A, uniformly for real X and every active singleton block. The proof uses complete-Fresnel sampled k-variation of the actual centered integral, Fourier expansion of the complete metric window, the nonzero odd frequency |2nu-g|>=1, and a second-derivative estimate in k. It closes only the singleton primitive-ray input and does not imply the longer-row fixed-a Gram or another M2 packet.",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-q1-actual-diagonal-energy/reports/blind_q1_diagonal_rederivation.md",
+            "rounds/codex-managed/m9-m2-q1-actual-diagonal-energy/reports/q1_stationary_energy_attack.md",
+            "rounds/codex-managed/m9-m2-q1-actual-diagonal-energy/reports/q1_actual_symbol_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m2-q1-actual-diagonal-energy/candidates/conductor_q1_sampled_k_closure.md",
+            "rounds/codex-managed/m9-m2-q1-actual-diagonal-energy/reviews/conductor_round103_normalization_and_kbv.md",
+            "rounds/codex-managed/m9-m2-q1-actual-diagonal-energy/reviews/conductor_round103_owners_controls_and_sources.md",
+            "rounds/codex-managed/m9-m2-q1-actual-diagonal-energy/reviews/conductor_round103_adjudication.md",
+            "rounds/codex-managed/m9-m2-q1-actual-diagonal-energy/controls/conductor_round103_controls.md",
+            "rounds/codex-managed/m9-m2-q1-actual-diagonal-energy/synthesis.md"
+          ]
+        },
+        "reason_for_promotion": "The complete centered integral has uniform sampled k-variation of size sqrt(AL/J), including both physical collar transitions. Fourier expansion retains the metric mean and every discrepancy mode; odd lift parity gives |2nu-g|>=1, reciprocal curvature and the two exact Fourier moments give O(L+1) per lift, O(L^2/A) per row, and O(L^4/A) after squaring and summing a. The literal Round-80 owner formula proves that no uncontrolled k-mask remains.",
+        "next_action": "Use this proved singleton owner once. Attack the longer-row complete mode-resolved fixed-a Gram; do not repeat the q=1 determinant or parity analysis."
+      },
+      {
+        "id": "M9-M2-primitive-ray-fixed-a-actual-Gram",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-q1-actual-diagonal-energy/reports/q1_stationary_energy_attack.md",
+            "rounds/codex-managed/m9-m2-q1-actual-diagonal-energy/reports/q1_actual_symbol_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m2-q1-actual-diagonal-energy/reviews/conductor_round103_adjudication.md",
+            "rounds/codex-managed/m9-m2-q1-actual-diagonal-energy/synthesis.md"
+          ]
+        },
+        "next_action": "The q=1 diagonal is proved and remains a dependency. On longer rows, combine the new complete sampled-k actual-symbol control with a genuinely signed q-shift estimate for the full mode-resolved near-determinant tube and separated complement."
+      },
+      {
+        "id": "M9-M2-top-endpoint-density-discrepancy-energy",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-q1-actual-diagonal-energy/reports/q1_stationary_energy_attack.md",
+            "rounds/codex-managed/m9-m2-q1-actual-diagonal-energy/reports/q1_actual_symbol_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m2-q1-actual-diagonal-energy/reviews/conductor_round103_adjudication.md",
+            "rounds/codex-managed/m9-m2-q1-actual-diagonal-energy/synthesis.md"
+          ]
+        },
+        "next_action": "The singleton q=1 owner is closed. Prove the remaining longer-row complete mode-resolved fixed-a Gram, keeping metric density and every discrepancy mode coupled."
+      },
+      {
+        "id": "M9-M2-determinant-carrier-short-ray-route-obstruction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-q1-actual-diagonal-energy/reviews/conductor_round103_adjudication.md"
+          ]
+        },
+        "next_action": "The singleton route ceiling has been bypassed by actual sampled-k variation. Retain the obstruction only for determinant-only arguments and attack the complete longer-row mode-resolved correlation."
+      },
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-q1-actual-diagonal-energy/synthesis.md"
+          ]
+        },
+        "next_action": "Use the proved q=1 singleton owner and prove the remaining canonical joint density-discrepancy energy before invoking the hard-cone assembly."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round103-carrier-cancellation-forbids-sampled-k-proof",
+        "reason": "Round 80 forbids a formal half-frequency argument based only on lift variation. Round 103 proves the missing complete actual sampled-k variation and estimates the retained density mode by reciprocal curvature."
+      },
+      {
+        "id": "Round103-density-mode-is-deleted",
+        "reason": "The metric density is nu=0; its total reciprocal frequency is -g/2, so |2nu-g|=g and it is explicitly estimated rather than removed."
+      },
+      {
+        "id": "Round103-sampled-k-bound-is-coefficient-uniform",
+        "reason": "The complete-Fresnel variation uses the literal homogeneous actual profile and bounded-variation owners. An arbitrary phase-conjugated k-sequence can destroy it."
+      },
+      {
+        "id": "Round103-leading-Gaussian-capacity-refutes-q1-bound",
+        "reason": "A leading Gaussian and recurrent Pell mode do not lower-bound the complete coefficient. The exact complete-integral upper theorem controls all modes and transitions."
+      },
+      {
+        "id": "Round103-q1-closure-implies-longer-fixed-a-Gram",
+        "reason": "The singleton has no nonzero q-shift. Longer rows retain shifted owner products, independent fibres, and the open complete mode-resolved correlation."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M2-primitive-ray-fixed-a-actual-Gram",
+        "reason": "Only the disjoint q=1 diagonal is closed; every nonzero-shift longer-row correlation remains open."
+      },
+      {
+        "id": "M9-M2-top-endpoint-density-discrepancy-energy",
+        "reason": "The singleton is one proved owner, not the full canonical hard energy."
+      },
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "reason": "The remaining longer-row hard cone is open."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "The canonical hard energy and two smooth outside packets remain open."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "Round 103 is confined to a disjoint M2 singleton input."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "No all-denominator pointwise endpoint assembly is proved."
+      },
+      {
+        "id": "M9",
+        "reason": "Neither M9-M1 nor M9-M2 is closed."
+      },
+      {
+        "id": "GC-target",
+        "reason": "No global pointwise exponent changes."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 9,
+    "idea_quality_score": 9,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 103 proves the complete actual-symbol singleton q=1 energy at the exact target by a new sampled-k complete-Fresnel mechanism, closes every owner and carrier seam, and sharply preserves the longer-row and downstream scope."
+  }
+}

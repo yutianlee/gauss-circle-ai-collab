@@ -20,7 +20,210 @@ $$
 P(X)=N(\sqrt X)-\pi X\ll_\varepsilon X^{1/4+\varepsilon}.
 $$
 
-This target is open. The repository has a conditional proof architecture, not a proof of a new exponent.
+This target is open. The repository contains a complete internal proof
+of the fallback bound
+\(P(X)\ll_\varepsilon X^{1/3+\varepsilon}\), together with a
+conditional architecture for the conjectural \(1/4+\varepsilon\)
+target. Round 95 also certifies, as a repaired external dependency, the
+stronger direct theorem
+
+\[
+ P(X)\ll_\varepsilon X^{\theta_{\rm LY}+\varepsilon},\qquad
+ \theta_{\rm LY}=
+ \frac{3292+25\sqrt{1717}}{13762}
+ =0.3144831759740614\ldots .
+\]
+
+The internal \(1/3\) theorem and the repaired external theorem are
+logically separate. Neither closes M9 or the quarter target.
+
+## Round 95 reduced cluster and repaired external theorem (2026-08-17)
+
+At the fixed window \(W=Y^{7/16}\), reducing every literal M1/M2
+frequency \(h/d\) to \(a/b\) and aggregating all lifts gives
+
+\[
+ |A_i(a,b)|\ll_\varepsilon Y^\varepsilon L^{-1},
+ \qquad
+ \sum_{(a,b)=1}|A_i(a,b)|^2
+ \ll_\varepsilon Y^\varepsilon D/L.
+\]
+
+Thus the complete equal-ray diagonal, including all lift cross terms,
+is safe. The exact remaining object is the signed determinant
+correlation with \(n=ab'-a'b\), phase
+\(e(cn/(\kappa_i bb'))\), \(\kappa_1=1\), \(\kappa_2=4\), and the
+literal M1/M2 characters and endpoint symbols retained. At the minimax
+block, coefficient-blind Farey degree gives only
+\(Y^{43/48+\varepsilon}\), missing the desired
+\(Y^{1/2+\varepsilon}\) cluster energy by \(Y^{19/48}\). The accepted
+Popov full-discrepancy theorem is closer, with an additive gap
+\(Y^{1/16}\), but cannot be reversed blockwise. No internal exponent
+below one third is proved by this route.
+
+Independently, the Li--Yang source chain was repaired and rechecked. Four
+literal defects have unique final-argument readings, and the two missing
+general range conditions are proved only on the exact final application
+range. The narrow real-\(X\), inclusive theorem at
+\(\theta_{\rm LY}=0.3144831759\ldots\) is therefore accepted as a
+`proved_external_dependency`; the over-stated general intermediate
+claims are not. M9-M1, M9-M2, both canonical cores, endpoint uniformity,
+M9, and the quarter target remain open.
+
+## Round 93 global mean square and density-one quarter theorem (2026-08-17)
+
+The exact frozen denominator-shell moment and the full moving-height/top
+transfer are now proved.  Rational equal-frequency grouping gives
+
+\[
+ \int_I|S_{D,H,w}(t)|^2\,dt\ll (|I|+D^2)D,
+\]
+
+and the exact height increments, ordered-prefix maximal inequality, and
+fixed-BV Stieltjes decomposition retain this power bound for the moving M1
+and M2 profiles with logarithmic loss only.  The fixed-in-\(Y\) dyadic
+partition, bottom owner, R5-Full, and H1--H4 therefore give
+
+\[
+ \int_Y^{2Y}|P(t)|^2\,dt\ll_\varepsilon Y^{3/2+\varepsilon}.
+\]
+
+For every fixed \(\eta>0\),
+
+\[
+ \bigl|\{t\in[Y,2Y]:|P(t)|>Y^{1/4+\eta}\}\bigr|
+ \ll_{\varepsilon,\eta}Y^{1-2\eta+\varepsilon}.
+\]
+
+Thus the quarter exponent holds on a density-one set of real parameters.
+The result is not pointwise and does not control prescribed reals,
+integers, or circle-counting jump points.  It gives no bound for either
+canonical hard core.  The uniform exponent remains \(1/3\), and M9-M1,
+M9-M2, endpoint uniformity, M9, and the conjectural uniform quarter theorem
+remain open.
+
+Accepted evidence:
+
+- rounds/codex-managed/m9-m2-global-second-moment-exceptional-set/reports/blind_m2_moment_rederivation.md;
+- rounds/codex-managed/m9-m2-global-second-moment-exceptional-set/reports/moving_coefficient_moment_attack.md;
+- rounds/codex-managed/m9-m2-global-second-moment-exceptional-set/reports/moment_hostile_source_audit.md;
+- rounds/codex-managed/m9-m2-global-second-moment-exceptional-set/synthesis.md.
+
+## Round 92 canonical core formalization (2026-08-17)
+
+The two target-scale survivors are now exact standalone open graph nodes.
+The M1 node is the conjugation-closed hard four-row actual-symbol
+Fejer--Gram operator on (J^{13/18}<C\leq J^{3/4}), after literal
+one-count deletion of the accepted Round-87--89 packages. Its target is
+
+\[
+ |\mathcal E_{\rm hard}(U)|
+ \ll_\varepsilon X^\varepsilon{U\over B}J^{14/5}.
+\]
+
+The (J^{1/6}) Gram deficit square-roots through Toeplitz to the same
+(J^{1/12}) linear deficit; it is not an additional loss.
+
+The M2 node is the residual hard-top primitive-ray energy with the ordinary
+metric density and every discrepancy mode kept jointly:
+
+\[
+ \sum_{A,D_{\rm ray},K_{\rm rec},G,R}|\mathfrak Q_{A,D_{\rm ray},K_{\rm rec},G,R}|
+ \ll_\varepsilon L^2X^\varepsilon.
+\]
+
+A hard block has excess (sqrt\rho), so the required gain is
+(\rho^{-1/2}).  The exact row-to-energy bridge is retained.  Li--Yang and
+Xiao were audited as nonapplicable guardrails, one graph dependency cycle
+and overstrong top-M2 edges were repaired, and no analytic status changed.
+
+The unconditional exponent remains (1/3).  M1 and M2 still have
+separately owned outside packets and target-scale endpoint assembly beyond
+these two cores.
+
+## Round 91 unconditional one-third theorem (2026-08-17)
+
+The accepted hyperbola--Vaaler decomposition, pointwise Fejer
+product-count estimate, and literal fully weighted M1/M2 direct block
+menu now prove
+
+\[
+ P(X)\ll_\varepsilon X^{1/3+\varepsilon}
+\]
+
+uniformly for every real \(X\ge2\).  The proof retains the actual
+Vaaler coefficients, M1 spatial character, M2 two-shift character,
+both signs, hard-top sampled-BV profile, exact products, floors, stars,
+and the complete dyadic assembly.
+
+For \(R=D/L\), the frequency-first row handles
+\(R\le X^{1/3}\).  On \(R\ge X^{1/3}\), the full second-derivative row
+has terms at most \(X^{1/3}\) and \(X^{1/4}\), since
+\(R\le D\le X^{1/2}\).  The bottom denominator range and every Fejer
+residual are already \(O(X^{1/4+\varepsilon})\).
+
+The exponent \(1/3\) is exact for the accepted direct menu at
+\((\delta,\ell)=(1/2,1/6)\).  Thus any improvement below \(1/3\)
+requires a genuinely new signed M1 or M2 hard-core estimate.  The
+pointwise R5 reconciliation is now closed.  M9-M1, M9-M2, M9,
+endpoint uniformity at the target scale, and the conjectural
+\(1/4+\varepsilon\) theorem remain open.
+
+Accepted evidence:
+
+- rounds/codex-managed/gc-unconditional-exponent-extraction/reports/blind_global_exponent_rederivation.md;
+- rounds/codex-managed/gc-unconditional-exponent-extraction/reports/global_exponent_assembly_attack.md;
+- rounds/codex-managed/gc-unconditional-exponent-extraction/reports/global_exponent_hostile_audit.md;
+- rounds/codex-managed/gc-unconditional-exponent-extraction/synthesis.md.
+
+## Round 90 M1 square-root capacity barrier (2026-08-17)
+
+The complete R82--R89 first-band M1 transform chain now has an exact
+norm-level interpretation.  The deep centered Kloosterman-product row
+reassembles from distinct physical ordered pairs, and its Fejer
+A-process is exactly the four-row actual-symbol Gram operator used in
+Rounds 87--89.  Complete cells, local descent, inverse completion,
+transposition, signs, classes, modulus multiples, stationary weights,
+and the global \(u=0\) diagonal reassemble once.
+
+If
+
+\[
+ \mathsf C_{82}=B^3T^2Q^{-5/12},\qquad
+ \mathsf T_{82}=J^2/T,
+\]
+
+then at full directed degree
+
+\[
+ \mathsf C_{\rm deep}={D\over B}\mathsf C_{82}^2,
+ \qquad
+ \mathsf T_{\rm deep}={D\over B}\mathsf T_{82}^2.
+\]
+
+The Toeplitz/Fejer inequality supplies the factor \(B/D\) before the
+square root.  Therefore the top-band \(J^{1/6}\) Gram gap is exactly
+the square of the Round-82 \(J^{1/12}\) linear gap, not an additional
+loss.  This is a Gram-level equal-capacity barrier, not a linear
+involution.
+
+The exact \(q=8\) residual cell retains full degree, so further local
+period peeling is terminated.  The canonical remaining task is a joint
+signed estimate for the hard actual-symbol Gram operator.  No M9-M1,
+M9-M2, M9, R5-Full, endpoint, or global-exponent conclusion changes.
+
+The current full-proof strategy is recorded in
+`strategy/conductor_0817_full_proof_strategy.md`.  Rounds 91 and 92 have
+completed unconditional-exponent extraction and canonical-core
+formalization.  The next deliverable is a signed moment/exceptional-set
+theorem with an explicit pointwise consequence.
+
+Accepted evidence:
+
+- rounds/codex-managed/m9-m1-capacity-self-return-fork/reports/m1_self_return_barrier_attack.md;
+- rounds/codex-managed/m9-m1-capacity-self-return-fork/reports/blind_m1_capacity_rederivation.md;
+- rounds/codex-managed/m9-m1-capacity-self-return-fork/reports/m1_self_return_hostile_source_audit.md;
+- rounds/codex-managed/m9-m1-capacity-self-return-fork/synthesis.md.
 
 ## Round 87 full-factor exceptional Fejer deletion (2026-08-17)
 
@@ -700,7 +903,12 @@ The accepted route has three levels:
 2. `H4` supplies a finite Vaaler approximation, while `R5-Full` controls its Fejer residual.
 3. `M9` asks for endpoint bounds for two fixed-coefficient reciprocal sums, $\mathcal M_1(D;X)$ and $\mathcal M_2(D;X)$, uniformly for $X^{1/4}\le D\le X^{1/2}$.
 
-If H1--H4, R5-Full, and M9 all hold with their stated uniformity, the `Conditional-bridge` yields the target. H1-H3 are proved internally. H4 is now a source-validated external dependency, with the audited paper and normalization recorded in `sources/vaaler_1985.md`. R5-Full remains under its separate reconciliation status.
+If H1--H4, R5-Full, and M9 all hold with their stated uniformity, the
+`Conditional-bridge` yields the target. H1-H3 are proved internally.
+H4 is a source-validated external dependency, with the audited paper
+and normalization recorded in `sources/vaaler_1985.md`. R5-Full and
+its pointwise reconciliation are now proved internally; M9 is the
+remaining target-scale main-sum obligation.
 
 ## Current mathematical progress
 
@@ -1098,7 +1306,7 @@ normalization audit showed that the unsplit radial transform has a (q^0)
 positive-alpha stationary coefficient. The resulting finite period-four
 character Dirichlet kernel has
 maximal one-period (L^1) norm (O(\log Q)), and the hard top phase has the
-exact parity gap 
+exact parity gap
 
 $$
 |D_0-q/2|\ge\frac12 \qquad(D_0\in\mathbb Z,\ q\text{ odd}).
@@ -2006,6 +2214,511 @@ depth.
 The remaining first-band M1 operator has
 \(R_*>\rho_*\) and \(\mathfrak a<M^2/\rho_*^2\), with small-prime,
 nonunit, \(2\)-adic, affine, projection-only, and aperiodic pieces still
-present. M9-M1, M9-M2, M9, endpoint uniformity, R5-Full reconciliation,
-and the Gauss-circle exponent remain open. No global exponent has
+present. M9-M1, M9-M2, M9, endpoint uniformity, and the one-quarter
+Gauss-circle target remain open. R5-Full reconciliation is closed. No global exponent has
 changed.
+
+## Round 89 progress (2026-08-17)
+
+The complete bad-prime reciprocal masks are now classified at
+\(p=2,3,5,7\). Each selected complete reduction-cell tensor has both
+directed degrees bounded by \(M^2/\mathfrak b_\sigma\), so cells with
+\(\mathfrak b_\sigma\geq M^2/\rho_*^2\) are target-safe. A nonempty
+power-of-three transverse family passes all ownership gates.
+
+The complete bad-prime/nonunit union does not close. Its top-conductor
+physical capacity still exceeds the target by \(J^{1/6}\), even on an
+exact lower-period \(q=8\) control. This supplies a rigorous stopping
+rule: further local period peeling is no longer the active route.
+Round 90 tests whether the surviving actual-symbol operator is an exact
+self-return/barrier or contains a genuinely smaller signed interaction.
+No global exponent has changed.
+
+## Round 94 progress (2026-08-17)
+
+The Round-93 global mean square now has exact discrete consequences.  The
+inclusive step structure gives the sharp two-branch local bridge
+
+\[
+ |P(x)|\ll Q^{1/3}+(Q/W)^{1/2},
+\]
+
+and the integer-cell identity
+
+\[
+ \int_n^{n+1}P(t)^2dt
+ =\left(P(n)-\frac\pi2\right)^2+\frac{\pi^2}{12}.
+\]
+
+Hence the quarter exponent holds on a density-one set of integers with
+exceptional count \(O(Y^{1-2\eta+\varepsilon})\), and the same second
+moment holds on every one-separated sample set.  No prescribed integer is
+controlled.
+
+The exact short-window kernel is a signed rational-cell square.  M1 has
+frequency \(h/d\), M2 has \(h/(4d)\), and the moving profiles reduce to
+only logarithmically many fixed strata for windows below \(Y^{1/2}\).
+The minimax block is subcoherent below \(Y^{1/3}\), so local smoothing at
+the quarter scale is already pointwise-hard.  The first genuinely
+averaging open range is \(1/3<\alpha<1/2\); a target cluster bound there
+would improve the uniform exponent to \(1/6+\alpha/3\).
+
+No such cluster estimate is proved.  Existing Popov local moments return
+exactly exponent \(1/3\).  M9-M1, M9-M2, both canonical cores, endpoint
+uniformity, M9, and the quarter target remain open.
+
+## Round 95 progress (2026-08-17)
+
+The narrow repaired Li--Yang theorem is now a certified external
+dependency and gives the strongest global pointwise exponent
+
+\[
+ \theta_{\rm LY}
+ =\frac{3292+25\sqrt{1717}}{13762}
+ =0.3144831759740614\ldots.
+\]
+
+The internal \(W=Y^{7/16}\) cluster route reduces exactly to a signed
+reduced-determinant correlation. Equal lifts and the diagonal are safe,
+but coefficient-blind Farey spacing misses by \(Y^{19/48}\), so the
+project's internal theorem remains exponent \(1/3\). The external
+theorem does not close M9-M1, M9-M2, M9, or the quarter target.
+
+## Round 96 progress (2026-08-17)
+
+Primitive-ray \(q\)-dispersion does not automatically expose the M2
+character. At fixed \(m\), legal shifts have step two and character
+autocorrelation \(+1\). Fixed-\(a\) sign-changing shifts form the exact
+complete actual-symbol Fejer Gram, and transform completion returns to
+the accepted half-frequency / transposed two-character row.
+
+The positive block has capacity \(L^2\sqrt\rho\). A separately estimated
+zero shift permits at most \(D^{-1/2}\) gain, while hard \(q=1\) Pell
+rows have \(D\asymp1\) and \(\rho\to\infty\). This certifies a scoped
+route obstruction, not failure of the actual theorem.
+
+The first strict survivor is the determinant-weighted complete
+fixed-\(a\) Gram estimate at strength \(H^2E_0/\rho\). It remains open.
+No global exponent changed.
+
+## Round 97 progress (2026-08-17)
+
+The full M2 packet bookkeeping is now exact and noncircular. After the
+bottom, Fejer residual, terminal T2S, second-derivative, and TTY owners,
+the residual splits physically into
+
+\[
+ \mathcal U_{\rm hard},\qquad
+ \mathcal U_{\rm sm,bal},\qquad
+ \mathcal U_{\rm sm,unbal}.
+\]
+
+The canonical density-discrepancy theorem owns only the first family.
+Two independent smooth targets remain:
+
+\[
+ \left|\sum_GG\mathscr P_G\right|
+ \ll_\varepsilon L^{3/2}X^\varepsilon,
+\qquad
+ \mathcal T_{L,K}\ll_\varepsilon(LK)^{3/4}X^\varepsilon.
+\]
+
+The proved conditional assembly is
+
+\[
+ \mathrm{TOP}+\mathrm{BAL}+\mathrm{UNBAL}
+ \Longrightarrow\mathrm{M9\!-\!M2}.
+\]
+
+The graph now distinguishes the proved smooth transforms from these open
+estimates, removes the M9-M2 / near-collision dependency cycle, and
+treats the exact \(\chi_4\) factor as a proved normalization guardrail.
+M9-M2 and all downstream quarter-scale claims remain open. No global
+exponent changed.
+
+## Round 98 progress (2026-08-17)
+
+The M1 route bookkeeping is now exact. On the direct physical route, all
+accepted owners reduce blockwise M9-M1 to precisely two open estimates: the
+middle/lower hard-top residual and the literal smooth residual. The canonical
+first-band Gram has no accepted inverse localization to physical blocks, so it
+belongs only to an alternative global angular-radial route.
+
+On that global route, the compact critical sector is proved and the remaining
+requirements are a signed lower-radial aggregate and a sharp radial-interface
+aggregate. Together they imply GAR. GAR plus M9-M2 supplies an alternative
+final bridge, but neither blockwise M9-M1 nor M9 follows from it.
+
+The graph patch created eight route-interface nodes, updated twenty nodes,
+rejected six false route claims, and left an acyclic dependency graph. No
+analytic estimate or exponent changed. The strongest certified pointwise
+exponent remains
+
+\[
+ \theta_{\rm LY}=0.3144831759740614\ldots,
+\]
+
+while the strongest internal uniform theorem remains (1/3).
+
+## Round 99 progress (2026-08-17)
+
+The apparent two-dimensional spectral gain in the canonical M1 hard Gram is
+now rigorously classified as a self-return. After opening the complete trace,
+the integral variables \(r=n+d+u\), \(s=m+d\) recover exactly the four
+physical rows and the centered Fejer Gram. The Hessian determinant is real
+but is just the product of the two one-row curvatures; crediting another
+\(J^{-1/5}\) would double-count their transform.
+
+Configuration-separated high traces also retain rank-one paired cycles, and
+ordinary trace moments cannot mix conductor rows. The exact \(q=8,u=4\)
+mode is a coherent local control. The sole unexcluded canonical route is now
+the fixed actual-vector directional coefficient at \(J^{-1/6}\), with all
+owners and transitions retained.
+
+No analytic hard subrange closed. The strongest certified external exponent
+remains \(0.3144831759740614\ldots\), and the strongest internal uniform
+theorem remains \(1/3\).
+
+## Round 104: uniform fixed-\(q\) rows
+
+Round 104 promoted the uniform actual-symbol theorem
+
+\[
+ |F_a(q)|\ll_\varepsilon X^\varepsilon {L^2\over A}
+\]
+
+for every \(q\asymp D\), uniformly through both physical collars, empty
+and singleton reciprocal fibres, and \(b/a\to4^{-}\). The proof retains
+the metric density and every discrepancy mode.
+
+The resulting row energy is
+
+\[
+ \sum_{a,q}|F_a(q)|^2
+ \ll_\varepsilon X^\varepsilon {DL^4\over A}.
+\]
+
+Rowwise Cauchy is exactly \(D^2\) above the polynomial-shell Gram target,
+so the argument closes every prescribed polylogarithmic shell and no
+fixed positive-power shell. The loss is a method ceiling, not a literal
+lower obstruction. The next strict M2 survivor is the complete signed
+polynomial-shell cross-\(q\) correlation.
+
+The best global exponent did not change. The certified external exponent
+is \(0.3144831759740614\ldots\), and the strongest internal uniform
+exponent remains \(1/3\).
+
+## Round 100 progress (2026-08-17)
+
+The exact \(q=8\) coherent mode has now been projected against the literal
+four-row actual vector. For \(M=8N\), \(N\) odd, its normalized CRT factor
+is \(c_8(u)/8=\pm1/2\), and the global \(u=0\) owner leaves both nonzero
+\(u\equiv0,4\pmod8\) branches.
+
+Opening the four local bases gives a \(\mathbb Z/4\mathbb Z\)
+cross-projection
+
+\[
+ {1\over4}\sum_{k\bmod4}e_4(k)
+ \widehat F_k\overline{\widehat G_k}.
+\]
+
+The only forced \(F=G\) slice is already Round-88-owned because its exact
+coarse quotient is \(R_*=4\). Hence the genuine hard \(q=8\) object is the
+generic odd-cofactor/conductor cross-projection, not a positive square.
+
+This is a strict algebraic refinement but not a power saving. The canonical
+directional estimate, M9-M1, M9-M2, M9, and the quarter theorem remain open.
+The certified external exponent stays \(0.3144831759740614\ldots\), and the
+strongest internal uniform theorem stays \(1/3\).
+
+## Round 101 progress (2026-08-17)
+
+The complete two-adic factor is now exact. Every nonempty \(2^\nu\)-local
+mask is the full odd orbit of length \(L=2^{\nu-1}\), and its four-row
+coefficient is the cyclic DFT convolution
+
+\[
+ L^{-2}\sum_{k,l}e_L(lv)\widehat w_{l-k}
+ \widehat F_k\overline{\widehat G_l}.
+\]
+
+The normalized local operator is unitary and full rank. Its reciprocal
+phase has guaranteed period \(1\), \(2\), or \(L/8\), depending on
+\(\nu\), but the resulting affine Fourier sparsity only splits the unitary
+into permuted blocks. It gives no \(J^{-1/6}\) gain.
+
+The owner map is also corrected: the Round-100 aligned return four is
+prior-owned, while higher two-part aligned or reversal terms can have long
+returns and must pass their literal Round-87--89 tests. The remaining
+object is one odd-cofactor/conductor fixed-vector scalar with every actual
+symbol retained.
+
+No analytic estimate or exponent changed. The strongest certified external
+exponent remains \(0.3144831759740614\ldots\), and the strongest internal
+uniform theorem remains \(1/3\).
+
+## Round 102 progress (2026-08-17)
+
+The fixed-\(a\) primitive-ray Gram is now split at the correct level.
+The density carrier has the exact determinant
+
+\[
+ {g'\over k'(a+2q+2s)^{3/2}}
+ -{g\over k(a+2q)^{3/2}},
+\]
+
+but the complete metric phase replaces \(g,g'\) by
+\(g-2\ell,g'-2\ell'\). Thus density-only determinant separation does
+not estimate the coupled density-discrepancy coefficient.
+
+The carrier zero set has a same-squarefree-kernel classification, and
+the raw near count improves from quadratic to essentially linear in
+\(GK\) at the natural tube width. This does not transfer to the actual
+weighted mode-resolved tube because no \(q\)-variation or operator
+estimate is available.
+
+More decisively, the residual \(q=1\) block has no nonzero shifted
+correlation. Its first open theorem is the complete actual diagonal
+
+\[
+ \sum_a|F_a(1)|^2
+ \ll_\varepsilon X^\varepsilon {L^4\over A}.
+\]
+
+The graph now records one proved determinant-carrier/short-ray route
+obstruction and this new open diagonal-energy node. The longer-row Gram,
+canonical M2 energy, M9-M2, M9-M1, M9, and the quarter target remain
+open.
+
+No global exponent changed. The strongest certified external exponent
+remains \(0.3144831759740614\ldots\), and the strongest internal uniform
+theorem remains \(1/3\).
+
+## Round 103 progress (2026-08-17)
+
+The determinant-free singleton \(q=1\) M2 row is now closed at the exact
+target. The complete centered physical integral, including both moving
+saddle transitions and every actual profile, has sampled-\(k\) bounded
+variation
+
+\[
+ \ll_\varepsilon X^\varepsilon\sqrt{AL/J}.
+\]
+
+After expanding the full metric window, every reciprocal phase has
+frequency \(\nu-g/2\). Odd lift parity gives \(|2\nu-g|\ge1\), including
+for the retained density mode. Reciprocal second-derivative cancellation
+therefore proves
+
+\[
+ |F_a(1)|\ll_\varepsilon X^\varepsilon {L^2\over A},
+ \qquad
+ \sum_{a\asymp A}|F_a(1)|^2
+ \ll_\varepsilon X^\varepsilon {L^4\over A}.
+\]
+
+This bypasses the Round-80 formal carrier no-go by adding a genuinely new
+actual sampled-\(k\) theorem; it does not use quotient parity as a sign and
+does not delete the density mode.
+
+The singleton node is now `proved_internal`. Polynomial-length \(q\)-rows,
+the complete fixed-\(a\) Gram, canonical M2 energy, M9-M2, M9-M1, M9 and
+the quarter target remain open. The strongest certified external exponent
+is still \(0.3144831759740614\ldots\), and the strongest internal uniform
+theorem remains \(1/3\).
+
+## Round 104 progress (2026-08-17)
+
+The singleton sampled-\(k\) theorem now holds uniformly on every literal
+fixed row \(b=a+2q\), \(q\asymp D\).  The complete centered integral has
+variation
+
+\[
+ \ll_\varepsilon X^\varepsilon\sqrt{AL/(JD)},
+\]
+
+and reciprocal curvature of every odd metric frequency yields
+
+\[
+ |F_a(q)|\ll_\varepsilon X^\varepsilon L^2/A.
+\]
+
+This closes every prescribed fixed polylogarithmic \(q\)-shell.  Direct
+Cauchy misses a polynomial shell by exactly \(D^2\), so a signed
+cross-\(q\) theorem remains necessary.  No exponent changed.
+
+## Round 105 progress (2026-08-17)
+
+The strongest rowwise maximal theorem would imply the fixed-\(a\) Gram
+exactly, but it remains open.  Adjacent transport controls the centered
+physical saddle and both reciprocal endpoints are monotone; the complete
+mode leaves a metric residual of size \(nJ\).
+
+The scalar \((q,k)\) Hessian is full rank, but exact primitive Mobius
+decomposition followed by two scalar stationary transforms gives
+
+\[
+ -{dXn\ell\over s}-{as\over4d}+J\sqrt{an\ell}
+ =-\left(J\sqrt{dn\ell/s}-{1\over2}\sqrt{as/d}\right)^2,
+\]
+
+with
+
+\[
+ e(-as/(4d))=-i\chi_4(a/d)\chi_4(s).
+\]
+
+Thus the determinant returns an odd-character reciprocal/product square
+at equal carrier capacity.  This is a proved route obstruction and exact
+next interface, not an owner-preserving transform theorem or an actual
+lower bound.  No positive-power \(q\)-range, downstream M2 theorem, or
+global exponent changed.  The certified external exponent remains
+\(0.3144831759740614\ldots\), and the strongest internal uniform theorem
+remains \(1/3\).
+
+## Round 106 progress (2026-08-17)
+
+The dual square now has the correct two-sign principal dictionary. With
+\(c=\nu-\tau g/2\), \(n=2|c|\), and
+\(\epsilon=\operatorname {sgn}(c)\), the signed stationary phase is
+
+\[
+ \epsilon\left(J\sqrt{dn\ell/r}
+       -{1\over2}\sqrt{ar/d}\right)^2,
+\]
+
+and the three Gaussian operations have exact final unit \(e(1/8)\).
+The strict smooth-interior coefficient and local \(L^2\)-density are
+verified with no spare Hessian gain.
+
+The complete physical factor is a Fresnel transition vector, not its
+point value at collars or endpoints. Every literal integer owner becomes
+a nonlocal Fourier-conjugated kernel with the same norm, rank and
+one-count, and \(b_*\) is generally nonintegral. This proves that
+pointwise owner interpolation and a terminal-M1 shortcut are invalid.
+
+The smallest survivor is still the signed nonzero-shift fixed-\(a\)
+actual Gram, equivalently the complete-Fresnel conjugated-owner vector.
+No polynomial \(q\)-range, M9-M2 theorem, or global exponent changed.
+
+## Round 107 progress (2026-08-17)
+
+The unbalanced smooth M2 product packet now has an exact
+coefficient-preserving return. Product grouping gives the moving truncated
+coefficient
+
+\[
+ A_{L,K}(n)=\sum_{hk=n}\chi_4(h)a_{L,K}(h,k),
+\]
+
+whose separated Dirichlet series is
+\(L(s-it_1,\chi_4)\zeta(s-it_2)\). The literal angular weights prevent an
+automatic \(r_2(n)/4\) completion.
+
+The two functional equations have root number \(+1\) and dual factor
+lengths \(X/D\) and \(D\). Independently, the exact smooth character
+\(h\)-process and \(k\)-Poisson normalization gives \(-i/(2\pi)\) times a
+prescribed-centre truncated-divisor wavelet supported on
+
+\[
+ |dr-X|\lesssim D/L.
+\]
+
+Its absolute capacity is \(D/L\), so the missing factor is exactly
+
+\[
+ {D\over LX^{1/4}}={H_D\over L}.
+\]
+
+This becomes one only on the already terminal-owned line. No new smooth
+residual corridor closes. The unbalanced target is now reduced to the
+literal signed fixed-centre wavelet, or equivalently an outside-absolute
+shifted product correlation.
+
+No downstream theorem or exponent changed. The strongest certified
+external exponent remains \(0.3144831759740614\ldots\), the strongest
+internal uniform theorem remains \(1/3\), and the quarter target is open.
+
+## Round 111 progress (2026-08-17)
+
+The exact adjacent primitive-ray parity high-pass is certified, including
+one orientation, zero extension, the cutoff endpoint, and a first-failure
+partition of simultaneous arithmetic and support jumps.
+
+The phase-preserving dilation has determinant one and preserves the full
+continuous carrier, but it does not preserve the integer sampler. Its
+exact pullback is a scaled Dirac comb. On any common interval of length
+\(K\), the scaled and original combs have coefficient-blind
+total-variation distance \(\asymp K\), even though
+\(1-\lambda\asymp D^{-1}\).
+
+The reciprocal endpoint slabs have width \(J/A\), the physical slabs have
+width \(L/D\), and the common-band carrier changes by \(\asymp JL/A\).
+Consequently the bulk route retains a factor-\(D\) deficit and separate
+endpoint estimation loses at least \(D^{1/2}\). No positive-power shell
+closes.
+
+This is a proved route obstruction, not a lower bound for the actual
+signed coefficient. The actual common-band scaled-comb plus one-count jump
+correlation remains open. M9-M2, M9-M1, endpoint uniformity, M9, and the
+quarter target are unchanged. The certified external exponent remains
+\(0.3144831759740614\ldots\), and the internal uniform exponent remains
+\(1/3\).
+
+## Round 112 progress (2026-08-17)
+
+The balanced smooth M2 quarter-packet now has an exact scoped
+normalization. For one fixed physical block, smooth gcd Poisson gives the
+\(1/4\)-packet minus the \(3/4\)-packet with factor \(1/(2i)\), and the
+negative packet is minus the conjugate before that factor. The direct norm
+has one modulus outside all internal gcd and bounded subdivision labels.
+
+Two material one-count errors were removed. The packet transforms the full
+small-gcd shell, so square and near-square prior owners require explicit
+signed correction terms rather than a hidden arithmetic mask. Also,
+distinct physical \(D,L\) blocks cannot cancel before the blockwise
+assembly.
+
+The frozen artifacts do not yet instantiate the finite literal atom
+dictionary of profiles, floors, stars, crossings, and transform errors.
+That documentary seam is now the next deliverable; after it closes, the
+signed \(L^{3/2}\) packet bound remains the analytic gap. No M2 range,
+M9-M1 result, or global exponent changed. The certified external exponent
+remains \(0.3144831759740614\ldots\), and the internal uniform exponent
+remains \(1/3\).
+
+## Round 113 progress (2026-08-21)
+
+The balanced smooth M2 packet now has a complete coefficientwise dictionary.
+The denominator and odd-frequency partitions telescope exactly, the whole
+\(d=0\) summand is defined as zero, and the normalized continuum symbol is
+fixed on the positive quadrant with uniform seminorms. The physical
+constant is exactly \(-e(1/8)/(2\pi)\), with the earlier outer factor four
+and the two frequency signs giving \(8\Re\).
+
+The exact identity
+
+\[
+ {K\over L}=4^j{X\over\lfloor\sqrt X\rfloor^2}
+\]
+
+reduces the persistent balanced denominator geometry to \(j=1\), plus an
+isolated \(j=2\) label when \(X\) is an exact square. The smooth gcd
+telescope, its scale-one bottom, high-gcd transition owner, square and
+near-square corrections, residual packet, and transform error now occur in
+one physical one-count equation.
+
+The first open line is the actual signed fixed-block estimate
+
+\[
+ \left|\sum_\sigma G_\sigma
+ Q_{B,\sigma}^{\mathrm{full}}(\sqrt X)\right|
+ \ll_\varepsilon L^{3/2}X^\varepsilon.
+\]
+
+This is analytical, not documentary. Round 113 gives no saving: the worst
+balanced deficit remains \(X^{1/12}\). M9-M2 still has three open parents,
+M9-M1 still has two standard open parents, and the global exponents remain
+the internally proved \(1/3\) and repaired external
+\(0.3144831759740614\ldots\); the pointwise quarter exponent remains open.

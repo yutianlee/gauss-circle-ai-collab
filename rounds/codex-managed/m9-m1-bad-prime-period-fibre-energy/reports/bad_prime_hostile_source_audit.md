@@ -8,7 +8,7 @@ Three smaller conclusions are certifiable.
 
 1. Empty and one-residue masks, every first-layer period by $q/p$, and every first-layer affine cancellation are classified exactly by the complete four-pole mask and $\Phi'$. Genuine accidental branches occur at $p=3,5$; coefficientwise vanishing of the numerator of $\Phi$ is not a valid substitute.
 2. If $\kappa=v_p(K_q)<\nu$, then the complete masked weight modulo $p^\nu$ is exactly the pullback of a unit-$K$ masked weight modulo $p^{\nu-\kappa}$. Fourier and completed-trace descent contribute $p^\kappa$ and $p^{2\kappa}$, respectively. This conductor drop is independent of the partner labels and gives no directed-degree saving.
-3. The smallest explicit strict-cross local survivor occurs at $q=8$. With
+3. A particularly transparent strict-cross local survivor occurs at $q=8$. With
    $$
    A=B_2=V=2,
    $$
@@ -22,13 +22,13 @@ Three smaller conclusions are certifiable.
    $$
    The two physical pairs are neither equal nor reversals modulo $8$. After CRT with generic odd cofactor labels, this local fibre has $R_*>\rho_*$, $\mathfrak a=1$, nonzero admissible Fourier modes, and the complete symbol (89.8)--(89.9). It is an obstruction to coefficientwise cancellation, not a lower bound for the signed aggregate.
 
-More strongly, fix a source with $A\equiv2\pmod8$. All nonempty local partners have $B_2,V$ even, and every such $q=8$ weight has exact period $2$. Excluding the equal and reversed partners leaves ten of the twelve off-diagonal even $(B_2,V)$ patterns. With generic odd CRT cofactors this gives both directed degrees $\gg X^{-\varepsilon}M^2$. At the upper endpoint,
+More strongly, fix a source with $A\equiv2\pmod8$. All nonempty local partners have $B_2,V$ even, and every such $q=8$ weight has exact period $2$. Excluding the equal partner leaves eleven of the twelve off-diagonal even $(B_2,V)$ patterns. With generic odd CRT cofactors this gives both directed degrees $\gg X^{-\varepsilon}M^2$. At the upper endpoint,
 $$
 \rho_*^2\asymp J^{2/15},\qquad M^2\asymp J^{3/10},
 $$
 so the target degree is missed by $J^{1/6-o(1)}$. Exact period depth, even with the full $2$-part retained, cannot certify this whole fibre through (89.13).
 
-No requested complete-fibre package is obtained by declaring empty masks periodic, using sparse Fourier support, or arbitrarily thinning the graph to a matching. The first is the zero tensor, the second is an exact transform self-return, and although a matching is trivially low-degree, it is not a classification of a complete fibre.
+No package for the **full bad-prime union** is obtained by declaring empty masks periodic, using sparse Fourier support, or arbitrarily thinning the graph to a matching. The first is the zero tensor, the second is an exact transform self-return, and although a matching is trivially low-degree, it is not a classification of a complete fibre. The supplemental audit in Section 7 separately certifies a genuine cellwise package.
 
 ## 2. Exact statement and hypotheses
 
@@ -143,9 +143,9 @@ $$
 $$
 This is also $2^{2j}=2^4$ times the completed modulus-$2$ trace.
 
-At $q=4$, nonempty off-diagonal pairs force $A=B_2=2$; $V=0$ gives the same pair and $V=2$ its reversal. Thus $q=8$, $A=B_2=V=2$, is the first local $2$-power example not already equal or reversed at full modulus. Its direct coordinate differences are both $2$, while reflected coincidence occurs at modulus at most $4$. After tensoring with odd cofactor labels chosen not to coalesce, $R_*\ge M/4$.
+At $q=4$, nonempty off-diagonal pairs force $A=B_2=2$; $V=0$ gives the same ordered pair, while $V=2$ gives its reversed but distinct directed pair. Hence $q=4$ is already a strict-cross local example. The choice $q=8$, $A=B_2=V=2$, is useful because it is neither equal nor reversed at full modulus. Its direct ordered labels first coalesce modulo $2$, so after tensoring with odd cofactor labels chosen not to coalesce, $R_*=M/2$.
 
-For the degree obstruction, fix a source whose $8$-part has $A=2$. There are twelve local choices with $B_2\in\{2,4,6\}$ and $V\in\{0,2,4,6\}$; removing the equal and reversed choices leaves ten strict-cross patterns, all of exact depth $j_2=2$. Choose odd CRT cofactor labels away from equality, reversal, and the good-prime period congruences. These exclusions remove only an $X^{o(1)}$ proportion, so a fixed source has $\gg X^{-\varepsilon}M^2$ partners. The reversal involution
+For the degree obstruction, fix a source whose $8$-part has $A=2$. There are twelve local choices with $B_2\in\{2,4,6\}$ and $V\in\{0,2,4,6\}$; removing the equal choice leaves eleven strict-cross patterns, all of exact depth $j_2=2$. Choose odd CRT cofactor labels away from equality and the good-prime period congruences. These exclusions remove only an $X^{o(1)}$ proportion, so a fixed source has $\gg X^{-\varepsilon}M^2$ partners. The reversal involution
 $$
 (A,B_2,V)\longmapsto(B_2,A,-V)
 $$
@@ -182,7 +182,7 @@ The complete deeper classification for arbitrary unit-$K$ weights modulo $2^\nu$
 |---|---|
 | External normalization | **Pass.** The argument uses normalized physical rows and (89.13); no extra $M^{-2}$ is inserted. Completion remains at $M^{-5}$ with the outer factor inside $\mathfrak T_M$. |
 | Global diagonal one-count | **Pass.** $\mathcal K_D^\circ$ removes only the integer $u=0$ once. It does not remove $u=kM\ne0$. |
-| Prior-package ownership | **Pass.** Equal and full-reversal cases are excluded. CRT cofactor labels are chosen so $R_*>\rho_*$, and no good-prime depth contributes to $\mathfrak a$. |
+| Prior-package ownership | **Pass.** Equal ordered-label cases are excluded. A reversed ordered edge is handled by the in/out audit, not silently assigned to the same-group owner. CRT cofactor labels are chosen so $R_*>\rho_*$, and no good-prime depth contributes to $\mathfrak a$. |
 | Complete small-prime mask | **Pass.** Empty and one-residue masks are classified by the full pole set $\{0,A,V,V+B_2\}$; pole collisions are retained. |
 | Nonunit-$K$ conductor | **Pass as an identity; fail as a saving.** The exact pullback and $p^{2\kappa}$ descent hold, but $\kappa$ imposes no partner-label congruence. |
 | Full $2$-adic depth | **Fail for the proposed general classification/bound.** The complete factor $q=8$, not a squarefree surrogate, already has a high-degree exact depth-$2$ fibre. Arbitrary deeper $2^\nu$ classification remains open. |
@@ -212,8 +212,9 @@ The exact artifacts used were:
 7. rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/synthesis.md.
 8. rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/reports/cross_group_hostile_source_audit.md.
 9. rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/reviews/conductor_round88_adjudication.md.
+10. rounds/codex-managed/m9-m1-bad-prime-period-fibre-energy/reports/bad_prime_period_graph_attack.md (supplemental seam audit only).
 
-No sibling Round-89 report was read.
+The initial audit read no sibling Round-89 report. The supplemental audit subsequently read only bad_prime_period_graph_attack.md, as explicitly authorized.
 
 No new literature search was triggered because no external theorem is invoked in the algebraic classification or counterexample. The selected Round-88 source audit already maps the closest current primary result, Cochrane--Granville, *Mixed character sums modulo prime powers*, arXiv:2604.02614v1, including its separate $2$-adic theorem and conductor-lowering branches. Its literal object is one local mixed character sum; it supplies neither a bound for the directed physical-edge graph nor cancellation against (89.8)--(89.9), and its constant/degenerate branches do not contradict the $q=8$ or $q=9$ traces. The other already-audited prime-field, special-prime-power, squarefree, and fixed-modulus bilinear results likewise fail the full-prime-power, four-mask, varying-$b$, actual-symbol hypotheses. Importing any of them here would be nonliteral.
 
@@ -224,5 +225,21 @@ No new literature search was triggered because no external theorem is invoked in
 - **Promote only as exact local routing lemmas** the mask classification, first-layer reciprocal/affine criterion, displayed $p\le7$ table, and nonunit pullback identity. The $p^{2j}$ descent is already owned by Round 88 and should not be duplicated.
 - **Promote as a hostile control** the exact $q=8$, $A=B_2=V=2$ trace $|\mathfrak T_8(4)|=32$, together with the ten-pattern directed-degree obstruction. Retain the $q=9$ trace $27$ as an independent odd-prime check.
 - **Reject** empty-mask depth, affine/reciprocal conflation, a $p^j$ completed descent, sparse-support Fejer saving, one-direction-only degree counts, and coefficientwise square-root cancellation.
-- **Retain open** the complete deeper unit-$K$ $2$-adic classification and the strict residual actual-symbol estimate. The smallest certified survivor is the single complete $q=8$ local factor above, tensored with strict generic CRT cofactors; the first analytically meaningful unresolved package is its high-degree exact-depth graph, not an arbitrarily selected matching.
+- **Retain open** the complete deeper unit-$K$ $2$-adic classification and the strict residual actual-symbol estimate. The minimal local ordered-edge control already occurs at $q=4$; the $q=8$ factor above remains a convenient non-reversal witness. The first analytically meaningful unresolved package is the high-degree exact-depth graph, not an arbitrarily selected matching.
 - Make **no change** to Round-87 same-group ownership, either Round-88 deletion, the global $u=0$ owner, Ramanujan ownership, support/error owners, or any downstream theorem node.
+
+**Supplemental seam audit of bad_prime_period_graph_attack.md.** The new report materially narrows, but does not contradict, the hostile verdict: its cellwise theorem is valid, whereas a target bound for the full bad-prime union remains false by this route.
+
+1. **Small-prime table: certified.** The projective tables at $p=2,3,5,7$ agree with the complete mask calculation. They give respectively $1,15,25,13$ successful residue triples. At $p=3$ these are all nonempty triples. At $p=5$ the four accidental rays are exactly the sixteen one-residue triples after unit scaling, and at $p=7$ only the zero and two structural same-group rays occur. Empty masks are correctly treated as zero tensors, not as periodic cells. The affine criterion is kept separate.
+2. **Exact transverse depth one: certified.** Every ray in (2.2)--(2.3) has a one-residue mask and the displayed $\Phi''(a)$ is nonzero. For $\nu\ge4$, varying $x=x_0+pz$ makes $\Phi'(x)/p$ nonzero modulo $p$, so a shift by $p^{\nu-2}$ fails. For $\nu=3$, the quadratic term in (3.6) has the same nonzero $z$-coefficient; for $\nu=2$, support excludes period $1$. Hence every lift, including arbitrary higher digits of $A,B_2,V$ and every unit $K_q$, has exact $j_q=1$.
+3. **Cellwise directed degrees: certified with one wording qualification.** For a ray $[a:b:v]$, fixing the source difference determines the projective scalar when $a\ne0$ and leaves at most $p-1$ scalars when $a=0$; fixing the target gives the identical statement with $b$. Thus (3.9)--(3.10), including the special zero-cell factor, correctly control both directions. CRT gives (1.3)--(1.4), and intersection with prior owners only lowers degrees. Equation (3.12) is a valid union upper bound and its displayed inequality is a **sufficient summability condition** for the target. It should not be called necessary or “exact” after overlaps, different vertices attaining the two maxima, or prior deletions.
+4. **Example (3.13): genuinely new and outside the prior owners.** At the allowed residue $x=2$ for $[1:2:1]$,
+   $$
+   P=(2,1),\qquad P'=(1,2)\pmod3.
+   $$
+   These are distinct **ordered** physical labels. Edge reversal is the transpose operation used in the in/out audit; it is not Round-87 same-group identification. Therefore the labels do not coalesce modulo any nontrivial divisor of $3^\nu$, so $R_*=M$. Under $M/3\le\rho_*<M$, the edge is not in the Round-88 coarse owner, while $\mathfrak b=9$ gives $M^2/9\le\rho_*^2$. There are no good-prime factors, $\mathfrak a=1<M^2/\rho_*^2$, and exact depth one supplies nonzero frequencies after the globally owned integer $u=0$ is removed. The example is a lawful nonempty newly owned cellwise package.
+5. **Full-union boundary: retained.** Summing all cells must pay (3.12). In particular, at a nonunit factor $p\ge5$ every $(B_2,V)$ residue pair is periodic and the local degree is $q^2$; no period conductor reduces the physical graph. The $p=3,5$ transverse cells remain only depth one, and the full $2$-adic period supplies at most its cell residue saving without additional full-power congruences. Thus the promoted result is cellwise (or summable cellwise), never the complete bad-prime/nonunit union.
+
+**Hygiene correction to the initial audit.** Its draft statements that a full reversal is already a prior same-group owner and that $q=8$ is the smallest strict-cross local survivor have been corrected above. Physical labels are ordered. Already at $q=4$, $(A,B_2,V)=(2,2,2)$ is the reversed but distinct directed edge, has exact period $2$, and satisfies $|\mathfrak T_4(2)|=8$; after generic CRT tensoring its first coarse quotient is $M/2$. The $q=8$ calculation and its high-degree obstruction remain valid, but not its former claimed minimality. Likewise, the initial blanket sentence denying a requested complete-fibre package is superseded by the certified cellwise theorem (1.3)--(1.5). No other conclusion changes.
+
+**Supplemental state recommendation.** Promote the complete table, transverse exact-depth-one lemma, cellwise conductor bound, and the sufficient summability theorem, including example (3.13). Retain the hostile $q=4,8,9$ traces and the full-degree nonunit branch as controls against extending that theorem to the full union. No shared state file or additional Round-89 report was read or edited in this supplemental audit.

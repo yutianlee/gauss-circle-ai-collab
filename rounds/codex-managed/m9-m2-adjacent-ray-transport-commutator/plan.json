@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "round_index": 111,
+  "round_type": "m9_m2_adjacent_ray_transport_commutator_core",
+  "campaign_id": "m9-m2-adjacent-ray-transport-commutator",
+  "title": "Adjacent primitive-ray parity high-pass and phase-preserving transport commutator",
+  "status": "closed",
+  "starting_graph_sha256": "c93f14d6790341b792b54bbaa7ccb96c211741d666729f08addc80fb91d1b759",
+  "objective": "Prove the one-sided Round-75 signed off-diagonal bound by an exact adjacent-ray parity commutator, close a strict polynomial hard subrange, or prove that phase-preserving transport and its integer-lattice defect return at equal capacity.",
+  "resource_policy": {
+    "analytical_algebraic_minimum_percent": 90,
+    "numerical_experimental_maximum_percent": 10,
+    "planned_numerical_percent": 0
+  },
+  "tasks": [
+    {"id": "blind_adjacent_commutator_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean"},
+    {"id": "adjacent_transport_commutator_attack", "role": "discovery", "status": "completed_clean_after_format_repair"},
+    {"id": "adjacent_commutator_hostile_source_audit", "role": "source_auditor", "status": "completed_clean"}
+  ],
+  "exit_gates": [
+    "exact_parity_highpass_identity",
+    "one_orientation_and_zero_extension",
+    "phase_preserving_adjacent_transport",
+    "integer_lattice_commutator",
+    "coprimality_lift_ceiling_and_support_jumps",
+    "collars_entry_exit_metric_centres_and_stars",
+    "q1_polylog_square_Pell_fourth_power_controls",
+    "false_unsigned_and_phase_conjugating_controls",
+    "capacity_gain_or_equal_capacity_no_go",
+    "primary_source_hypothesis_map",
+    "statement_only_and_hostile_gates",
+    "conductor_decision"
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-determinant-carrier-short-ray-route-obstruction",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Carrier-determinant incompleteness and singleton-ray ceiling",
+        "status": "proved_internal",
+        "statement_tex": "For the literal zero-extended fixed-a row, G_H^act=H E_act+2 Re sum_(1<=s<H)(H-s)(-1)^s C_s^act. With b=a+2q, b_s=b+2s, and Lambda_q=X(sqrt(b)-sqrt(a))^2/2, the extracted density carrier has Psi_s''=-(X sqrt(a)/2) Delta_0, Delta_0=g'/(k' b_s^(3/2))-g/(k b^(3/2)). Expanding the mandatory joint metric factors replaces g,g' by g-2ell,g'-2ell', so Delta_0 is not the determinant of the complete density-discrepancy phase; keeping the factors unexpanded leaves a moving q-amplitude for which the accepted Round-77 theorem gives no q-variation. Density-carrier zero is equivalent to b=d x^2, b_s=d y^2, d(y^2-x^2)=2s, and g'k x^3=gk' y^3. For fixed a,s this gives O_epsilon(X^epsilon s^epsilon GK) raw exact-zero tuples. On common dyadic boxes, with N=GK, the raw near count is #{|g'k/(gk')-(b_s/b)^(3/2)|<=eta} <<_epsilon X^epsilon(eta N^2+N). These are raw density-mode counts and do not estimate the coefficient-weighted mode-resolved actual tube. Nonzero algebraic rationalization gives only |Psi_s''|>>(L J D_ray^3)^(-1), below one quadratic oscillation across the row. At a density zero the carrier cubic scale is |Psi_s'''| asymp J L s/(D_ray A^3), but no complete moving-amplitude derivative theorem follows. Separately bounding the Gram diagonal requires H>=rho and is confined to rho<=D_ray. A residual half-open q=1 block has no nonzero shift at all while primitive nonsquare near-square and Pell rows can have unbounded rho. Therefore nonzero-shift determinant separation, algebraic spacing, or raw incidence alone cannot uniformly prove the actual Gram. This is a route obstruction, not a lower bound or a disproof of the actual-symbol estimate.",
+        "dependencies": [
+          "M9-M2-primitive-ray-q-dispersion-obstruction",
+          "M9-M2-top-endpoint-actual-symbol-variation",
+          "M9-M2-top-endpoint-strict-metric-carrier-cancellation"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-determinant-weighted-actual-gram/reports/blind_determinant_gram_rederivation.md",
+            "rounds/codex-managed/m9-m2-determinant-weighted-actual-gram/reports/determinant_weighted_gram_attack.md",
+            "rounds/codex-managed/m9-m2-determinant-weighted-actual-gram/reports/determinant_gram_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m2-determinant-weighted-actual-gram/candidates/conductor_determinant_split.md",
+            "rounds/codex-managed/m9-m2-determinant-weighted-actual-gram/reviews/conductor_round102_normalization_and_determinant.md",
+            "rounds/codex-managed/m9-m2-determinant-weighted-actual-gram/reviews/conductor_round102_owners_controls_and_sources.md",
+            "rounds/codex-managed/m9-m2-determinant-weighted-actual-gram/reviews/conductor_round102_adjudication.md",
+            "rounds/codex-managed/m9-m2-determinant-weighted-actual-gram/controls/conductor_round102_controls.md",
+            "rounds/codex-managed/m9-m2-determinant-weighted-actual-gram/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Do not repeat density-carrier determinant separation as a uniform proof. First estimate the disjoint q=1 actual diagonal, then attack the complete mode-resolved near tube and separated complement on longer rows with all moving symbols retained."
+      },
+      {
+        "id": "M9-M2-primitive-ray-q1-actual-diagonal-energy",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Complete actual-symbol energy on the singleton q=1 primitive-ray block",
+        "status": "open",
+        "statement_tex": "On every residual hard top M2 half-open bottom block whose fixed-a row contains only q=1, retain the exact actual coefficient F_a(1), including primitive and prior-owner masks, the moving reciprocal interval, finite odd lifts, profiles, floors, stars, collars, the full metric density and all discrepancy modes, both orientations, physical entry and exit, and zero extension. Prove sum_a |F_a(1)|^2 <<_epsilon X^epsilon E_(0,short)/rho = X^epsilon L^4/A, uniformly for real X and every active short block. No nonzero shifted correlation or determinant exists on this block. This closes only the singleton primitive-ray subrange and does not imply the longer-row fixed-a Gram or any other M2 packet.",
+        "dependencies": [
+          "M9-M2-top-endpoint-actual-symbol-variation",
+          "M9-M2-top-endpoint-strict-metric-carrier-cancellation",
+          "M9-M2-determinant-carrier-short-ray-route-obstruction"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-determinant-weighted-actual-gram/reports/blind_determinant_gram_rederivation.md",
+            "rounds/codex-managed/m9-m2-determinant-weighted-actual-gram/reports/determinant_weighted_gram_attack.md",
+            "rounds/codex-managed/m9-m2-determinant-weighted-actual-gram/reports/determinant_gram_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m2-determinant-weighted-actual-gram/reviews/conductor_round102_owners_controls_and_sources.md",
+            "rounds/codex-managed/m9-m2-determinant-weighted-actual-gram/reviews/conductor_round102_adjudication.md",
+            "rounds/codex-managed/m9-m2-determinant-weighted-actual-gram/synthesis.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Open the literal q=1 coefficient and seek a direct lift-k energy estimate or a new disjoint owner. Retain the Pell, strict-metric, fourth-power, moving-interval, entry-exit, and arbitrary-coefficient controls."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-primitive-ray-fixed-a-actual-Gram",
+        "dependencies_added": [
+          "M9-M2-determinant-carrier-short-ray-route-obstruction",
+          "M9-M2-primitive-ray-q1-actual-diagonal-energy"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-determinant-weighted-actual-gram/reports/blind_determinant_gram_rederivation.md",
+            "rounds/codex-managed/m9-m2-determinant-weighted-actual-gram/reports/determinant_weighted_gram_attack.md",
+            "rounds/codex-managed/m9-m2-determinant-weighted-actual-gram/reports/determinant_gram_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m2-determinant-weighted-actual-gram/candidates/conductor_determinant_split.md",
+            "rounds/codex-managed/m9-m2-determinant-weighted-actual-gram/reviews/conductor_round102_adjudication.md",
+            "rounds/codex-managed/m9-m2-determinant-weighted-actual-gram/synthesis.md"
+          ]
+        },
+        "next_action": "First prove M9-M2-primitive-ray-q1-actual-diagonal-energy. On longer rows, estimate the signed complete mode-resolved near-determinant tube jointly with a literal separated complement; the density carrier alone and raw tuple incidence are insufficient."
+      },
+      {
+        "id": "M9-M2-top-endpoint-density-discrepancy-energy",
+        "dependencies_added": [
+          "M9-M2-determinant-carrier-short-ray-route-obstruction",
+          "M9-M2-primitive-ray-q1-actual-diagonal-energy"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-determinant-weighted-actual-gram/reports/determinant_weighted_gram_attack.md",
+            "rounds/codex-managed/m9-m2-determinant-weighted-actual-gram/reports/determinant_gram_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m2-determinant-weighted-actual-gram/reviews/conductor_round102_adjudication.md",
+            "rounds/codex-managed/m9-m2-determinant-weighted-actual-gram/synthesis.md"
+          ]
+        },
+        "next_action": "Close the disjoint q=1 actual diagonal and the longer-row mode-resolved fixed-a Gram. Keep metric density and every discrepancy mode coupled, and do not infer a gain from the raw density determinant."
+      },
+      {
+        "id": "M9-M2-top-endpoint-strict-metric-carrier-cancellation",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-determinant-weighted-actual-gram/reports/determinant_weighted_gram_attack.md",
+            "rounds/codex-managed/m9-m2-determinant-weighted-actual-gram/reviews/conductor_round102_normalization_and_determinant.md",
+            "rounds/codex-managed/m9-m2-determinant-weighted-actual-gram/synthesis.md"
+          ]
+        },
+        "next_action": "Retain the full metric carrier before taking absolute values. In fixed-a dispersion, expand it only with the mode-resolved parameters g-2ell and g'-2ell', or prove a direct complete q-variation theorem."
+      },
+      {
+        "id": "M9-M2-primitive-ray-q-dispersion-obstruction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-determinant-weighted-actual-gram/reports/blind_determinant_gram_rederivation.md",
+            "rounds/codex-managed/m9-m2-determinant-weighted-actual-gram/reports/determinant_gram_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m2-determinant-weighted-actual-gram/reviews/conductor_round102_adjudication.md",
+            "rounds/codex-managed/m9-m2-determinant-weighted-actual-gram/synthesis.md"
+          ]
+        },
+        "next_action": "Use the exact short-ray diagonal and complete mode-resolved determinant as the next interfaces. The fixed-a Gram remains open; no coefficientwise or diagonal-separated rho gain is available uniformly."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round102-density-carrier-determinant-is-complete",
+        "reason": "Expanding the mandatory metric factors replaces g,g' by g-2ell,g'-2ell'; keeping them unexpanded leaves a rapidly moving q-amplitude."
+      },
+      {
+        "id": "Round102-algebraic-nonzero-determinant-gives-active-oscillation",
+        "reason": "The guaranteed carrier curvature is only (L J D_ray^3)^(-1), giving less than one quadratic oscillation across the full q row."
+      },
+      {
+        "id": "Round102-round77-g-variation-supplies-q-BV",
+        "reason": "Round 77 proves variation in the odd lift g, not in q; primitive and owner masks, moving intervals, metric windows, and entry-exit remain non-smooth in q."
+      },
+      {
+        "id": "Round102-determinant-split-covers-singleton-q1-block",
+        "reason": "The half-open q=1 block has no nonzero shift, so its Gram is the actual diagonal and the determinant locus is empty."
+      },
+      {
+        "id": "Round102-raw-near-incidence-gives-actual-rho-saving",
+        "reason": "The raw density-mode count is neither coefficient-weighted nor mode-resolved and supplies no signed cancellation of the Gram diagonal."
+      },
+      {
+        "id": "Round102-post-diagonal-absolute-route-is-uniform",
+        "reason": "Separately bounding the diagonal requires H>=rho, while H<=D_ray and lawful short blocks can have rho>D_ray."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M2-primitive-ray-fixed-a-actual-Gram",
+        "reason": "The q=1 diagonal and the complete longer-row mode-resolved correlation remain open."
+      },
+      {
+        "id": "M9-M2-top-endpoint-density-discrepancy-energy",
+        "reason": "No actual hard-block estimate or target-safe hard subrange is proved."
+      },
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "reason": "The residual hard top cone is not closed."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "The hard top and outside-packet M2 assemblies remain open."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "Round 102 is confined to the M2 primitive-ray core."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "No all-denominator real-X endpoint estimate is proved."
+      },
+      {
+        "id": "M9",
+        "reason": "Neither M9-M1 nor M9-M2 is closed."
+      },
+      {
+        "id": "GC-target",
+        "reason": "No pointwise exponent is improved."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 102 proves the exact carrier and mode-resolved determinant algebra, sharp raw zero and near incidence, and a decisive singleton-ray route ceiling. It isolates the complete q=1 diagonal as a new disjoint actual-symbol obligation but proves no analytic saving."
+  }
+}

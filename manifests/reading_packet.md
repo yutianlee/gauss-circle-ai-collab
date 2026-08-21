@@ -1,6 +1,6 @@
 # Reading Packet
 
-Generated for active campaign `m9-m1-deep-exceptional-strata-dispersion`.
+Generated for active campaign `m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation`.
 
 ## Current Theorem Target
 
@@ -19,9 +19,12 @@ H1-H3 + H4 + R5-Full + M9 imply P(X) <<_epsilon X^(1/4+epsilon).
 For X large and X^(1/4) <= D <= X^(1/2), the fixed-coefficient reciprocal sums M_1(D;X), M_2(D;X) satisfy M_i(D;X) <<_epsilon X^(1/4+epsilon), uniformly in all active dyadic D.
 
 Current blockers:
-- `M9-M2-character-factor` (open): M2 frequency-side character factor
-- `M9-near-collision-taxonomy` (open): M2 fourth-moment near-collision taxonomy
 - `M9-endpoint-uniformity` (open): Endpoint uniformity over active dyadic D
+- `M9-M1-top-endpoint-signed-cone` (open): Signed product-phase cone estimate for the top M1 block
+- `M9-M1-direct-smooth-residual-blockwise-estimate` (open): Literal smooth residual blockwise M1 estimate
+- `M9-M2-top-endpoint-density-discrepancy-energy` (open): Canonical joint density-discrepancy energy for the residual hard top M2 cone
+- `M9-M2-smooth-balanced-quarter-packet-estimate` (open): Balanced smooth residual signed quarter-packet estimate
+- `M9-M2-smooth-unbalanced-three-quarter-estimate` (open): Unbalanced smooth residual product-phase three-quarter estimate
 
 ## Selected Target Obligations
 
@@ -29,8 +32,8 @@ Current blockers:
   Next action: Treat the actual weighted absolute W-1 obstruction as applicable to every active block of the chosen partition. It remains conditional on the matching exact-N=0 closure and remains unsigned/absolute only.
 - `M9-near-collision-estimate` (proposed, historical steward `A2`): Weighted near-collision estimate for M2 fourth moment
   Next action: Do not seek universal numerator-residue cancellation. Either prove denominator-level cancellation in the two-adically locked sector or prefer a direct pointwise frequency-block estimate on the remaining (D,L) region.
-- `M9-M2-character-factor` (open, historical steward `A2`): M2 frequency-side character factor
-  Next action: Use the exact chi_4(r_d) sine kernel or retain chi_4(h) in the dual product phase. The two shifts reinforce odd frequencies; they do not cancel each other.
+- `M9-M2-character-factor` (proved_internal, historical steward `A2`): M2 frequency-side character factor
+  Next action: Use the exact chi_4 factor as a proved no-erasure normalization guardrail. It is not an analytic estimate and no longer blocks M9-M2.
 
 ## Do-Not-Claim Rules
 
@@ -91,12 +94,19 @@ No State Patch applied. Campaign preparation changes workflow artifacts only.
 - Historical steward: `A2` (non-binding)
 - Next action: Do not seek universal numerator-residue cancellation. Either prove denominator-level cancellation in the two-adically locked sector or prefer a direct pointwise frequency-block estimate on the remaining (D,L) region.
 
-### M9-M2-character-factor: M2 frequency-side character factor
+### GC-W7-16-actual-reduced-determinant-correlation: Actual signed reduced-determinant correlation at W=Y^(7/16)
 
 - Status: `open`
 - Track: `M9_analytic`
-- Historical steward: `A2` (non-binding)
-- Next action: Use the exact chi_4(r_d) sine kernel or retain chi_4(h) in the dual product phase. The two shifts reinforce odd frequencies; they do not cancel each other.
+- Historical steward: `Codex conductor` (non-binding)
+- Next action: Seek a phase-sensitive determinant or additive-divisor estimate with the literal character placements, or prove a fixed power saving in Popov's additive local-discrepancy term.
+
+### GC-nonsubcoherent-actual-cluster-local-moment: Non-subcoherent actual M1/M2 cluster local moment
+
+- Status: `open`
+- Track: `M9_analytic`
+- Historical steward: `Codex conductor` (non-binding)
+- Next action: At W=Y^(7/16), the exact remaining block theorem is GC-W7-16-actual-reduced-determinant-correlation. Do not repeat coefficient-blind Farey spacing; seek literal signed phase/character cancellation or a power saving in the additive full-discrepancy term.
 
 ### GC-target: Gauss circle conjectural exponent target
 
@@ -104,30 +114,23 @@ No State Patch applied. Campaign preparation changes workflow artifacts only.
 - Track: `proof_infrastructure`
 - Historical steward: `A1` (non-binding)
 - Blockers: `M9`
-- Next action: Keep the target explicitly conditional until all bridge dependencies, especially M9, are proved.
-
-### Li-Yang-source-audit: Li-Yang theorem and rendered-PDF audit
-
-- Status: `source_audit_required`
-- Track: `source_audit`
-- Historical steward: `A1` (non-binding)
-- Next action: Complete the rendered-PDF source card, resolve the apparent M<T^(-7/16) versus M<T^(7/16) threshold inconsistency, and transcribe all auxiliary conditions. Record that the published output exponent exceeds 1/4 even in height-admissible regions.
+- Next action: Close either the standard blockwise Conditional-bridge or the alternative GAR plus M9-M2 bridge. No quarter estimate is currently proved.
 
 ### M9: Endpoint bound for fixed Vaaler reciprocal main sums
 
 - Status: `open`
 - Track: `M9_analytic`
 - Historical steward: `A2` (non-binding)
-- Blockers: `M9-M2-character-factor`, `M9-near-collision-taxonomy`, `M9-endpoint-uniformity`
-- Next action: Formulate and attack the M2 fourth-moment or near-collision subproblem with the C_h=e(h/4)-e(3h/4) factor retained.
+- Blockers: `M9-endpoint-uniformity`, `M9-M1-top-endpoint-signed-cone`, `M9-M1-direct-smooth-residual-blockwise-estimate`, `M9-M2-top-endpoint-density-discrepancy-energy`, `M9-M2-smooth-balanced-quarter-packet-estimate`, `M9-M2-smooth-unbalanced-three-quarter-estimate`
+- Next action: On the standard route, prove the two direct M1 and three M2 analytic parents and retain endpoint uniformity. Alternatively, prove GAR and M9-M2 through GC-global-M1-alternative-bridge without claiming blockwise M9.
 
 ### M9-M1: M1 fixed-coefficient reciprocal-sum estimate
 
 - Status: `open`
 - Track: `M9_analytic`
 - Historical steward: `A2` (non-binding)
-- Blockers: `M9-endpoint-uniformity`
-- Next action: Close the deep first-band correlation D_1<|d|<Delta_b-E_*, then treat C>J^(3/4), cone edges, remaining radial sectors, and endpoint uniformity.
+- Blockers: `M9-M1-top-endpoint-signed-cone`, `M9-M1-direct-smooth-residual-blockwise-estimate`
+- Next action: Prove the residual hard top signed cone and literal smooth residual estimate, or one alternative whole-U_1 theorem. The canonical global Gram has no direct blockwise implication.
 
 ### M9-M1-alpha-bounded-zeta-high-transition-bound: Connector-completed alpha-bounded zeta-high transition bound
 
@@ -136,12 +139,34 @@ No State Patch applied. Campaign preparation changes workflow artifacts only.
 - Historical steward: `Codex conductor` (non-binding)
 - Next action: First solve the physical signed short twisted-divisor core. The exact endpoint Fourier reduction supplies no connector or height-limit estimate.
 
+### M9-M1-canonical-hard-actual-symbol-Gram-estimate: Canonical hard actual-symbol Fejer-Gram estimate on the first residual M1 band
+
+- Status: `open`
+- Track: `M9_analytic`
+- Historical steward: `Codex conductor` (non-binding)
+- Blockers: `M9-M1-canonical-hard-actual-vector-directional-estimate`
+- Next action: Close the fixed actual-vector directional estimate with the complete two-adic unitary convolution retained. Constant-character, lower-period, long-return aligned or reversal, and maximal-period blocks all remain unless a prior owner applies.
+
+### M9-M1-canonical-hard-actual-vector-directional-estimate: Fixed actual-vector directional estimate for the canonical hard Gram
+
+- Status: `open`
+- Track: `M9_analytic`
+- Historical steward: `Codex conductor` (non-binding)
+- Next action: Prove cancellation in the exact full two-adic fixed-vector scalar after the odd labels and conductor rows are summed before absolute value. The local operator is unitary and its affine Fourier support supplies no J^(-1/6) norm gain.
+
 ### M9-M1-cross-product-odd-kernel-discrepancy: Cross-product odd-kernel discrepancy estimate for the M1 residual corridor
 
 - Status: `open`
 - Track: `M9_analytic`
 - Historical steward: `Codex conductor` (non-binding)
 - Next action: Prove PSC or a weaker whole-sum ordered-denominator estimate on U_1. Opposite-offset reflection is only a reindexing and cannot supply the saving termwise.
+
+### M9-M1-direct-smooth-residual-blockwise-estimate: Literal smooth residual blockwise M1 estimate
+
+- Status: `open`
+- Track: `M9_analytic`
+- Historical steward: `Codex conductor` (non-binding)
+- Next action: Prove the literal smooth residual estimate, or replace it and the hard child by one whole-U_1 theorem such as the exact odd-kernel or RCS target. Do not import the global canonical Gram without a block-local inverse.
 
 ### M9-M1-dual-restricted-convolution-RCS: Dual restricted-convolution estimate for M1 resonance cells
 
@@ -155,7 +180,22 @@ No State Patch applied. Campaign preparation changes workflow artifacts only.
 - Status: `open`
 - Track: `M9_analytic`
 - Historical steward: `Codex conductor` (non-binding)
-- Next action: The fixed-interior residual is now the exact actual-unit off-diagonal H for J^(32/45)<C<=J, together with the upper axes. Prove that correlation, then reconcile cone edges and the remaining radial sectors; no global exponent follows from the reduction alone.
+- Blockers: `M9-M1-global-lower-radial-signed-estimate`, `M9-M1-global-radial-interface-estimate`
+- Next action: Prove the exact lower-radial and sharp-interface parents. Canonical, alpha, near-product, and conductor programs are alternative nested attacks, not conjunctive GAR dependencies.
+
+### M9-M1-global-lower-radial-signed-estimate: Exact lower-radial signed aggregate for global M1
+
+- Status: `open`
+- Track: `M9_analytic`
+- Historical steward: `Codex conductor` (non-binding)
+- Next action: Prove the exact lower-radial signed aggregate. Treat alpha and product-wavelet/conductor decompositions as alternative refinements, not simultaneous owners.
+
+### M9-M1-global-radial-interface-estimate: Sharp radial endpoint and interface estimate for global M1
+
+- Status: `open`
+- Track: `M9_analytic`
+- Historical steward: `Codex conductor` (non-binding)
+- Next action: Prove the exact sharp radial/top interface package without extending the compact critical theorem to its excluded endpoint.
 
 ### M9-M1-maximal-angular-sign-kernel: Maximal actual-profile angular-sign radial correlation
 
@@ -184,40 +224,3 @@ No State Patch applied. Campaign preparation changes workflow artifacts only.
 - Track: `M9_analytic`
 - Historical steward: `Codex conductor` (non-binding)
 - Next action: The delta/Kloosterman reformulation retains the same H/L-sized deficit in a short moving numerator. Standard complete-sum estimates do not prove PSC; a genuinely joint signed near-product theorem remains necessary.
-
-### M9-M1-swept-transition-horizontal-operator: Swept single-transition and horizontal-side vector operator
-
-- Status: `open`
-- Track: `M9_analytic`
-- Historical steward: `Codex conductor` (non-binding)
-- Next action: Close the explicit projected alpha cosine-Cauchy/GAR-return obligation; the beta branch is already closed and must not be reopened.
-
-### M9-M1-top-Perron-angular-correlation: Reflected angular-mode correlation with top Perron maximal control
-
-- Status: `open`
-- Track: `M9_analytic`
-- Historical steward: `Codex conductor` (non-binding)
-- Next action: Retain the two axial residues and estimate the exact matching profile projection; the vanished joint antisymmetric residue is not enough.
-
-### M9-M1-top-endpoint-signed-cone: Signed product-phase cone estimate for the top M1 block
-
-- Status: `open`
-- Track: `M9_analytic`
-- Historical steward: `Codex conductor` (non-binding)
-- Next action: The terminal h-shell is proved by the direct divisor estimate. Prove only the middle/lower hard-top shells, equivalently the intersection of this cone with U_1.
-
-### M9-M2: M2 fixed-coefficient reciprocal-sum estimate
-
-- Status: `open`
-- Track: `M9_analytic`
-- Historical steward: `A2` (non-binding)
-- Blockers: `M9-M2-character-factor`, `M9-near-collision-taxonomy`, `M9-M2-denominator-paired-weighted-bound`, `M9-M2-fourth-moment-average-to-pointwise`, `M9-M2-local-fourth-moment-LFM`
-- Next action: The residual top-endpoint cross-row energy is still open after exact carrier recoupling. Close it directly, then reconcile every other M2 packet and endpoint owner.
-
-### M9-M2-GM4-from-exact-plus-graded: Global fourth-moment route from exact resonance plus graded near-collision
-
-- Status: `proposed`
-- Track: `M9_analytic`
-- Historical steward: `A1` (non-binding)
-- Blockers: `M9-near-collision-estimate`, `M9-M2-LFM-pointwise-equivalence`
-- Next action: Do not use exact N=0 plus an absolute graded estimate to promote M9-M2. The absolute fat-band target is false for D > X^(3/8+delta), and a global L4 estimate plus crude derivative propagation gives only D^(3/5)X^(3/20+epsilon). Any viable route now needs signed fat-band control and a large-value or direct pointwise theorem.

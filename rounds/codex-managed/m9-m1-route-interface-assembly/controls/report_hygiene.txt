@@ -1,0 +1,34 @@
+Round 98 report and conductor-artifact hygiene
+
+reports/blind_m1_route_assembly_rederivation.md
+- exactly seven numbered H2 sections: 1,2,3,4,5,6,7
+- LF 157; CR 0; forbidden controls 0; trailing-whitespace lines 0
+- inline TeX delimiters 79/79; display delimiters 8/8; brace delta 0
+- corrected canonical target: X^epsilon (U/B) J^(14/5)
+
+reports/m1_route_assembly_attack.md
+- exactly seven numbered H2 sections: 1,2,3,4,5,6,7
+- LF 201; CR 0; forbidden controls 0; trailing-whitespace lines 0
+- inline TeX delimiters 62/62; display delimiters 11/11; brace delta 0
+
+reports/m1_route_graph_hostile_audit.md
+- exactly seven numbered H2 sections: 1,2,3,4,5,6,7
+- LF 334; CR 0; forbidden controls 0; trailing-whitespace lines 0
+- inline TeX delimiters 56/56; display delimiters 11/11; brace delta 0
+
+Conductor candidate, three reviews, derivation packet, and synthesis
+- strict UTF-8 and LF-only
+- CR/control bytes 0
+- trailing-whitespace lines 0
+- inline/display TeX delimiters and braces balanced in every file
+
+state_patch.json
+- strict JSON parse passes
+- state-patch dry-run passes
+- in-memory patched graph validation passes
+- dependency SCC count after the patch: 0
+- created nodes: 8; updated nodes: 20
+
+git diff --check
+- no whitespace-error diagnostics in Round 98 or its state/strategy scaffolding
+- only repository-configured LF-to-CRLF warnings may appear for unrelated files

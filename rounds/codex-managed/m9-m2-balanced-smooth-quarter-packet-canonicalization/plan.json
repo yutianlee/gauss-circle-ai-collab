@@ -1,0 +1,200 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 112,
+    "round_type": "m9_m2_balanced_smooth_packet_canonicalization_deliverable",
+    "campaign_id": "m9-m2-balanced-smooth-quarter-packet-canonicalization",
+    "title": "Canonical actual-symbol balanced smooth quarter-packet interface",
+    "status": "closed",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "5c49f612b262b1191fe74642ddd8e5d6c70e04b34a59fb1473487d5b5132d747",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 95,
+      "numerical_experimental_maximum_percent": 5,
+      "planned_numerical_percent": 0,
+      "literature_policy": "Use primary sources only to audit the literal signed quarter-packet hypotheses; do not import a coefficient-blind bilinear bound as a proof."
+    },
+    "target_obligations": [
+      "M9-M2-smooth-small-gcd-quarter-packet",
+      "M9-M2-smooth-balanced-quarter-packet-estimate",
+      "M9-M2-physical-one-count-assembly",
+      "M9-M2"
+    ],
+    "frozen_target": {
+      "question": "Can the proved balanced smooth reduction be rewritten as one standalone literal actual-symbol quarter-packet theorem, with exact constants, signs, owner scope, conjugate frequency, and capacity, or is there a first unresolved normalization seam?",
+      "reference_formula": "T_small=(1/(2i)) sum_(G<L^(1/2)) G Q_G, where Q_G is the chi_4(u)-weighted difference of the 1/4 and 3/4 Poisson resonance packets; the open target is |sum_G G Q_G|<<_epsilon L^(3/2)X^epsilon.",
+      "quantities": [
+        "fixed smooth gcd partition and coprime h=Gu,k=Gv decomposition",
+        "literal Vaaler taper, profiles, floors, stars, both quarter shifts and signs",
+        "real-even positive/negative frequency conjugacy",
+        "exact-square, near-square and large-gcd prior owners",
+        "outside-absolute G-sum versus stronger shellwise l1 and Cauchy Gram",
+        "uniform real-X and fixed-comparability 1<=K/L<=16 scope"
+      ]
+    },
+    "completion_criteria": [
+      "Derive the exact chi_4 Poisson normalization and both quarter shifts independently.",
+      "Give a standalone literal definition of every actual packet coefficient and support label.",
+      "Prove the exact equivalence between the balanced physical child and the outside-absolute packet target after prior owners.",
+      "Separate the direct linear target from shellwise absolute, Cauchy, product-fibre and arbitrary-coefficient surrogates.",
+      "Audit the hard endpoint exclusion, smooth gcd boundary, frequency conjugacy, floors, stars, support crossings and real-X uniformity.",
+      "State the exact capacity deficit and the smallest non-self-returning signed survivor.",
+      "Do not claim the analytic packet estimate, M9-M2, endpoint uniformity, M9, or an exponent unless the full chain closes."
+    ],
+    "controls": [
+      "quarter_shift_sign_and_2i_normalization",
+      "fixed_smooth_gcd_partition",
+      "odd_h_implies_odd_g_and_u",
+      "even_product_and_complementary_divisor",
+      "positive_negative_frequency_conjugacy",
+      "exact_square_near_square_and_large_gcd_owners",
+      "hard_endpoint_exclusion",
+      "floors_stars_profiles_and_support_crossings",
+      "outside_absolute_G_sum_vs_shellwise_l1_and_Gram",
+      "false_unsigned_and_phase_conjugating_coefficients",
+      "real_X_and_balanced_comparability",
+      "capacity_and_downstream_scope",
+      "primary_source_hypothesis_map"
+    ],
+    "tasks": [
+      {
+        "id": "blind_balanced_packet_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "completed_clean_after_format_repair",
+        "target": "Independently derive the exact quarter-packet Poisson identity, signs, norm hierarchy, conjugacy and logical implication from the frozen statement only.",
+        "context_files": [
+          "problems/gauss_circle.md",
+          "state/control_models.md",
+          "rounds/codex-managed/m9-m2-balanced-smooth-quarter-packet-canonicalization/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "strategy files",
+          "Round-112 derivation packet and candidate",
+          "prior balanced-packet derivations and all Round-112 sibling reports"
+        ],
+        "required_controls": [
+          "quarter_shift_sign_and_2i_normalization",
+          "odd_h_implies_odd_g_and_u",
+          "positive_negative_frequency_conjugacy",
+          "outside_absolute_G_sum_vs_shellwise_l1_and_Gram",
+          "false_unsigned_and_phase_conjugating_coefficients",
+          "capacity_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section statement-only report.",
+          "Exact normalization and implication lemmas.",
+          "Finite sign, conjugacy and norm countermodels."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-balanced-smooth-quarter-packet-canonicalization/reports/blind_balanced_packet_rederivation.md"
+      },
+      {
+        "id": "balanced_packet_actual_symbol_formalization",
+        "role": "formalizer",
+        "access_mode": "selected_context",
+        "status": "completed_clean_after_format_repair",
+        "target": "Write the full literal actual-symbol packet, owner dictionary and physical equivalence for every balanced smooth residual label.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m2-balanced-smooth-quarter-packet-canonicalization/derivation_packet.md",
+          "rounds/codex-managed/m9-m2-balanced-smooth-quarter-packet-canonicalization/candidates/conductor_balanced_packet_interface.md",
+          "rounds/codex-managed/m9-endpoint-fixed-profile-attack/reports/endpoint_dual_signed_attack.md",
+          "rounds/codex-managed/m9-endpoint-kernel-validation/synthesis.md",
+          "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/synthesis.md",
+          "rounds/codex-managed/m9-m2-smooth-unbalanced-divisor-recombination/synthesis.md"
+        ],
+        "required_controls": [
+          "quarter_shift_sign_and_2i_normalization",
+          "fixed_smooth_gcd_partition",
+          "odd_h_implies_odd_g_and_u",
+          "even_product_and_complementary_divisor",
+          "positive_negative_frequency_conjugacy",
+          "exact_square_near_square_and_large_gcd_owners",
+          "hard_endpoint_exclusion",
+          "floors_stars_profiles_and_support_crossings",
+          "outside_absolute_G_sum_vs_shellwise_l1_and_Gram",
+          "real_X_and_balanced_comparability",
+          "capacity_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section formalization report.",
+          "A standalone literal finite packet formula and owner table.",
+          "An exact physical implication and first unproved estimate."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-balanced-smooth-quarter-packet-canonicalization/reports/balanced_packet_actual_symbol_formalization.md"
+      },
+      {
+        "id": "balanced_packet_hostile_source_audit",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "status": "completed_clean_after_format_repair",
+        "target": "Audit every normalization and owner seam, reject false unsigned or hard-endpoint imports, and map the closest primary theorems.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m2-balanced-smooth-quarter-packet-canonicalization/derivation_packet.md",
+          "rounds/codex-managed/m9-m2-balanced-smooth-quarter-packet-canonicalization/candidates/conductor_balanced_packet_interface.md",
+          "rounds/codex-managed/m9-endpoint-kernel-validation/reports/hostile_endpoint_scope_review.md",
+          "rounds/codex-managed/m9-endpoint-fixed-profile-attack/reports/endpoint_dual_signed_attack.md",
+          "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/reports/m2_assembly_hostile_hygiene_audit.md"
+        ],
+        "required_controls": [
+          "quarter_shift_sign_and_2i_normalization",
+          "fixed_smooth_gcd_partition",
+          "even_product_and_complementary_divisor",
+          "positive_negative_frequency_conjugacy",
+          "hard_endpoint_exclusion",
+          "floors_stars_profiles_and_support_crossings",
+          "outside_absolute_G_sum_vs_shellwise_l1_and_Gram",
+          "false_unsigned_and_phase_conjugating_coefficients",
+          "real_X_and_balanced_comparability",
+          "capacity_and_downstream_scope",
+          "primary_source_hypothesis_map"
+        ],
+        "required_output": [
+          "A seven-section hostile/source report.",
+          "Certification or the first exact failed seam.",
+          "A smallest lawful survivor and graph recommendation."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-balanced-smooth-quarter-packet-canonicalization/reports/balanced_packet_hostile_source_audit.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "normalization",
+        "requirement": "The two quarter shifts, signs, Fourier convention and 1/(2i) factor are exact."
+      },
+      {
+        "id": "actual_symbol",
+        "requirement": "Every physical profile, floor, star, support crossing and real-X label is retained."
+      },
+      {
+        "id": "ownership",
+        "requirement": "Smooth balanced, hard endpoint and unbalanced packets are disjoint, and prior owners occur once."
+      },
+      {
+        "id": "norm",
+        "requirement": "The global outside-absolute packet is not replaced by shellwise l1 or Gram without a bridge."
+      },
+      {
+        "id": "scope",
+        "requirement": "No analytic or downstream promotion without the missing signed estimate."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "5c49f612b262b1191fe74642ddd8e5d6c70e04b34a59fb1473487d5b5132d747",
+    "generated_at": "2026-08-17T15:36:46.880762+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

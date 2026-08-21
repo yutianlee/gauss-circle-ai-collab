@@ -1,0 +1,150 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-q8-actual-vector-cross-projection-reduction",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "The exact q=8 hard actual-vector mode is a fragmented four-cycle cross-projection",
+        "status": "proved_internal",
+        "statement_tex": "On the literal canonical first-band M1 hard complement, restrict to class moduli M=8N with N odd and A congruent to B_2 congruent to V congruent to 2 modulo 8. Exact CRT gives (mathfrak T_M/M^2)=(c_8(u)/8)(mathfrak T_N/N^2), with c_8(u)/8=1/2 for 8|u, -1/2 for u=4 mod 8, and 0 otherwise; this is independent of whether K is a unit. The global u=0 owner deletes only u=0, so nonzero u in both surviving branches and nonzero modulus multiples remain. The canonical normalization is M^(-5)mathfrak T_M=M^(-3)(mathfrak T_M/M^2); after opening the odd trace the four shared local bases contribute exactly 4/M^4=2^(-10)N^(-4). On the local order-four orbit, the literal four actual rows give sum_j F_j overline(G_(j-1))=(1/4)sum_(k mod 4)e_4(k)Fhat_k overline(Ghat_k). Generic hard odd-cofactor labels therefore give a cross-projection. The only structural alignment B_(2,N)=A_N, V_N=0 makes G=F and yields a difference of squares, but the two physical pair labels then coalesce modulo 2N, so R_*=4<=rho_* and the slice is already in the Round-88 coarse owner. Thus the exact q=8 hard survivor is the scalar C_8(U) consisting of the remaining cross-projections, odd completed trace, all four I_b rows, entry/exit, stars, aliases, reflections, and conductor sum before absolute value. Its target |C_8(U)|<<_epsilon X^epsilon(U/B)J^(14/5) remains open. The result is exact only for v_2(M)=3 and supplies neither a J^(-1/6) gain nor a global actual-vector lower bound.",
+        "dependencies": [
+          "M9-M1-cross-group-period-depth-subaggregate-bound",
+          "M9-M1-bad-prime-cellwise-period-graph-bound",
+          "M9-M1-joint-four-row-separable-self-return-obstruction"
+        ],
+        "implies": [
+          "M9-M1-canonical-hard-actual-vector-directional-estimate"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-actual-vector-coherent-mode-projection/reports/blind_coherent_projection_rederivation.md",
+            "rounds/codex-managed/m9-m1-actual-vector-coherent-mode-projection/reports/actual_vector_parity_projection_attack.md",
+            "rounds/codex-managed/m9-m1-actual-vector-coherent-mode-projection/reports/coherent_projection_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m1-actual-vector-coherent-mode-projection/candidates/conductor_q8_actual_vector_cross_projection.md",
+            "rounds/codex-managed/m9-m1-actual-vector-coherent-mode-projection/reviews/conductor_round100_crt_normalization_and_owners.md",
+            "rounds/codex-managed/m9-m1-actual-vector-coherent-mode-projection/reviews/conductor_round100_source_and_scope.md",
+            "rounds/codex-managed/m9-m1-actual-vector-coherent-mode-projection/reviews/conductor_round100_adjudication.md",
+            "rounds/codex-managed/m9-m1-actual-vector-coherent-mode-projection/controls/conductor_round100_hygiene.md",
+            "rounds/codex-managed/m9-m1-actual-vector-coherent-mode-projection/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Estimate the scalar q=8 cross-projection across odd-cofactor labels and conductor rows, and separately retain higher two-parts and complementary local modes. Do not replace it by the prior-owned aligned square or by a uniform local trace norm."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-canonical-hard-actual-vector-directional-estimate",
+        "dependencies_added": [
+          "M9-M1-q8-actual-vector-cross-projection-reduction"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-actual-vector-coherent-mode-projection/reports/blind_coherent_projection_rederivation.md",
+            "rounds/codex-managed/m9-m1-actual-vector-coherent-mode-projection/reports/actual_vector_parity_projection_attack.md",
+            "rounds/codex-managed/m9-m1-actual-vector-coherent-mode-projection/reports/coherent_projection_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m1-actual-vector-coherent-mode-projection/candidates/conductor_q8_actual_vector_cross_projection.md",
+            "rounds/codex-managed/m9-m1-actual-vector-coherent-mode-projection/reviews/conductor_round100_adjudication.md",
+            "rounds/codex-managed/m9-m1-actual-vector-coherent-mode-projection/synthesis.md"
+          ]
+        },
+        "next_action": "Prove cancellation in the exact q=8 odd-cofactor/conductor cross-projection and in the complementary higher-two-part and noncoherent modes. The aligned square is already owned and local trace magnitude gives no fixed-vector estimate."
+      },
+      {
+        "id": "M9-M1-canonical-hard-actual-symbol-Gram-estimate",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-actual-vector-coherent-mode-projection/candidates/conductor_q8_actual_vector_cross_projection.md",
+            "rounds/codex-managed/m9-m1-actual-vector-coherent-mode-projection/reviews/conductor_round100_adjudication.md",
+            "rounds/codex-managed/m9-m1-actual-vector-coherent-mode-projection/synthesis.md"
+          ]
+        },
+        "next_action": "Close the fixed actual-vector directional estimate, now retaining the exact q=8 cross-projection scalar and all complementary modes. No local projector alone supplies the required top J^(-1/6)."
+      },
+      {
+        "id": "M9-M1-joint-four-row-separable-self-return-obstruction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-actual-vector-coherent-mode-projection/reports/actual_vector_parity_projection_attack.md",
+            "rounds/codex-managed/m9-m1-actual-vector-coherent-mode-projection/reports/coherent_projection_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m1-actual-vector-coherent-mode-projection/synthesis.md"
+          ]
+        },
+        "next_action": "Use q=8 only through the exact fragmented cross-projection control. Do not infer a global lower bound, positive hard eigenspace, or new trace-moment saving."
+      },
+      {
+        "id": "M9-M1-bad-prime-cellwise-period-graph-bound",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-actual-vector-coherent-mode-projection/reviews/conductor_round100_crt_normalization_and_owners.md",
+            "rounds/codex-managed/m9-m1-actual-vector-coherent-mode-projection/synthesis.md"
+          ]
+        },
+        "next_action": "Treat the residual q=8 fibre through its generic cross-projection, not through further cellwise degree peeling. The only aligned square has R_*=4 and is already coarse-owned."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round100-q8-local-trace-implies-global-actual-vector-mass",
+        "reason": "The local eigenvalue is only the constant c_8(u)/8, while the literal hard coefficient is an odd-cofactor and conductor cross-projection that may vanish or cancel."
+      },
+      {
+        "id": "Round100-aligned-difference-of-squares-is-hard",
+        "reason": "The alignment forcing G=F makes the two physical pair labels coincide modulo 2N, hence R_*=4 and the slice is already owned by the Round-88 coarse package."
+      },
+      {
+        "id": "Round100-global-u-zero-owner-deletes-local-coherent-line",
+        "reason": "The owner removes only the integer label u=0; nonzero u congruent to 0 or 4 modulo 8 remain, including nonzero modulus multiples."
+      },
+      {
+        "id": "Round100-mod8-quotient-controls-full-two-part",
+        "reason": "When v_2(M)>3, 8 is not coprime to M/8; the full 2-power phase and longer orbit must be retained before CRT with the odd part."
+      },
+      {
+        "id": "Round100-paired-trace-mass-implies-fixed-vector-coefficient",
+        "reason": "Backtracking words survive in ordinary trace moments, but a fixed-vector coefficient contains separate overlaps with the two rank-one directions and may vanish or cancel."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1-canonical-hard-actual-vector-directional-estimate",
+        "reason": "The exact q=8 component is reduced to a smaller scalar cross-projection, but no target-scale bound is proved."
+      },
+      {
+        "id": "M9-M1-canonical-hard-actual-symbol-Gram-estimate",
+        "reason": "Complementary local modes and the unbounded q=8 scalar remain open."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "The canonical packet is only one alternative global-route child and no blockwise M1 parent is closed."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Round 100 is confined to one M1 coherent subfamily."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "No real-X endpoint or all-denominator estimate is proved."
+      },
+      {
+        "id": "M9",
+        "reason": "Neither M9-M1 nor M9-M2 is closed."
+      },
+      {
+        "id": "GC-target",
+        "reason": "No pointwise bound or exponent is improved."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 6,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 100 converts the q=8 coherent control into the exact fixed-row cross-projection, proves that the only square is prior-owned, and isolates a smaller scalar survivor. It proves no power saving."
+  }
+}

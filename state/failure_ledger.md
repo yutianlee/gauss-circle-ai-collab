@@ -2,7 +2,7 @@
 
 Generated from `state/proof_obligations.yml`; edit the graph rather than this derived file.
 
-Graph SHA-256: `909b828c22ae9db75aabae375794d288259429d742c2b5f5fffcb0a97b84e167`.
+Graph SHA-256: `9d560539df2db7d69e72dd6e7e6af7247f00237ee795ac13b053b3f34eae8efa`.
 
 ## A2-M9-M2-character-factor-proved-internal-claim
 
@@ -2676,16 +2676,992 @@ The b-phase has the right formal variation, but modulus, inverse unit, Kloosterm
 ## Round86-generic-prime-trace-bound-closes-composite-aggregate
 
 Generic prime-local square-root estimates leave exact paired, local-zero, divisor-aligned, higher-prime-power, and 2-adic strata. Existing sources do not aggregate those modes with the actual stationary symbol or retain the physical Q^(-5/12) factor.
-# Round 88 cross-group period-depth controls
 
-- **Numerator-only period depth is false.** The unit mask creates exact
-  lower periods at \(p=3\) and \(p=5\) even when the displayed numerator
-  has unit coefficients.
-- **Completed-trace descent is \(p^{2j}\), not \(p^j\).** The second
-  factor comes from the outer modulus in the completed trace.
-- **Fourier sparsity is not a Fejer gain.** Restricting \(p^j\mid u\)
-  rescales the Fejer kernel and leaves total mass \(D\).
-- **Coarse depth is not functional period depth.** Divisor-lattice
-  inversion owns only physical-label congruence shells.
-- **Coefficientwise square-root bounds fail.** A cross-group
-  \(3^\nu\) family has exact completed trace magnitude \(3^{2\nu}/3\).
+## Round87-unnormalized-row-with-extra-M-minus-two
+
+The row estimate TQ^(-5/24) applies to M^(-1)sum_n I_b(n)e_M(nx)e(n theta). Inserting another M^(-2) in the ordered-pair function double counts normalization and produces a false U asymp B gain by M^4.
+
+## Round87-coefficientwise-generic-trace-deletes-exceptional-strata
+
+Prime-power and squarefree divisor-aligned complete traces can have near-M^2 size. Their target-safe disposal uses the full same-group physical Fejer norm at U=D, not a coefficientwise square-root estimate.
+
+## Round87-frequency-diagonal-is-physical-diagonal
+
+Paired local modes are diagonal only in the completed Fourier label. Their actual weight is a shifted physical-row correlation. Only the exact same-group positive package is controlled; cross-group u=0 remains with the old diagonal and cross-group u!=0 remains open.
+
+## Round87-pointwise-trace-times-b-phase-gain
+
+Formal b-phase variation after D_1 cannot be multiplied by a pointwise trace bound because the modulus, local unit, factorization strata, and actual stationary symbol vary with b. A varying-modulus signed coefficient theorem is absent.
+
+## Round87-all-stride-M-returns-removed
+
+The proved Fejer package contains and bounds only same-group stride-M returns. Cross-group stride-M terms and partial lower-conductor returns remain in the strict residual.
+
+## Round88-numerator-only-period-depth
+
+The unit mask can create exact lower periods at p=3 and p=5 even when the displayed numerator has unit coefficients. Exact depth must be computed from the complete masked weight.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/reviews/conductor_round88_adjudication.md`
+
+## Round88-completed-trace-descends-by-p-to-j
+
+The unprefactored Fourier transform descends by p^j, but the completed trace includes an outer factor q and descends by p^(2j).
+
+Evidence:
+- `rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/reviews/conductor_round88_adjudication.md`
+
+## Round88-Fourier-support-sparsity-gives-Fejer-saving
+
+Restricting to p^j|u rescales the Fejer kernel and retains total mass D; the trace descent factor creates an exact transform self-return.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/reviews/conductor_round88_adjudication.md`
+
+## Round88-coarse-depth-equals-functional-period-depth
+
+Coarse physical-label coincidence is a divisor-lattice equivalence relation, while mask-created, affine, nonunit-K, and extra 2-adic periods need not correspond to it.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/reviews/conductor_round88_adjudication.md`
+
+## Round88-coefficientwise-square-root-cross-trace
+
+An exact cross-group q=3^nu family has completed local trace magnitude q^2/3. Only a joint actual-symbol estimate can control such lower-conductor returns.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-cross-group-period-depth-dispersion/reviews/conductor_round88_adjudication.md`
+
+## Round89-period-depth-controls-full-physical-degree
+
+Exact reciprocal period depth controls Fourier routing but not the number of physical partner labels; the q=8 and full nonunit controls retain full degree.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-bad-prime-period-fibre-energy/reviews/conductor_round89_adjudication.md`
+
+## Round89-full-bad-prime-nonunit-union-bound
+
+The rigorous union bound pays the sum of cellwise degrees, and at top conductor the full union remains J^(1/6) above target capacity.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-bad-prime-period-fibre-energy/reviews/conductor_round89_adjudication.md`
+
+## Round89-full-2adic-period-completes-first-band
+
+The full 2-adic period identities are routing statements; without a directed-degree or signed-symbol gain they do not close the union.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-bad-prime-period-fibre-energy/reviews/conductor_round89_adjudication.md`
+
+## Round89-frequency-sparsity-reduces-centered-Fejer-mass
+
+The p^(2j) trace descent and frequency support rescale the centered Fejer kernel without reducing its total mass.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-bad-prime-period-fibre-energy/reviews/conductor_round89_adjudication.md`
+
+## Round89-coefficientwise-square-root-bad-prime-trace
+
+Exact q=4, q=8, and q=9 controls exhibit large lower-conductor traces; only a joint actual-symbol estimate can supply the missing gain.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-bad-prime-period-fibre-energy/reviews/conductor_round89_adjudication.md`
+
+## Round90-deep-J-one-sixth-is-an-additional-linear-loss
+
+The deep energy gap is exactly the square of the Round-82 linear gap; the Fejer/Cauchy passage takes its compulsory square root.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-capacity-self-return-fork/synthesis.md`
+
+## Round90-completed-descent-frequency-sparsity-saves-capacity
+
+The p^(2j) trace factor cancels the quotient-square inverse normalization, and the restricted Fejer shifts retain total mass.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-capacity-self-return-fork/synthesis.md`
+
+## Round90-linear-M1-operator-equals-its-Gram-lift
+
+The transform identities are exact at the Gram level, but the linear-to-Gram step is the one-way Fejer/Cauchy inequality.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-capacity-self-return-fork/synthesis.md`
+
+## Round90-further-local-period-peeling-closes-the-hard-core
+
+The exact q=8 residual cell retains full directed degree, so a strict gain requires joint signed actual-symbol cancellation.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-capacity-self-return-fork/synthesis.md`
+
+## Round91-accepted-direct-menu-proves-below-one-third
+
+At (delta,ell)=(1/2,1/6), the best accepted direct exponent is exactly 1/3; TTY is 770/1923>1/3 and the trivial row is 1/2.
+
+Evidence:
+- `rounds/codex-managed/gc-unconditional-exponent-extraction/synthesis.md`
+
+## Round91-open-transformed-endpoint-cones-block-the-direct-one-third-theorem
+
+The original reciprocal-block T2S and weighted second-derivative estimates include the hard top sampled-BV profile, so the transformed endpoint cones are not used in the one-third proof.
+
+Evidence:
+- `rounds/codex-managed/gc-unconditional-exponent-extraction/synthesis.md`
+
+## Round91-mean-square-Fejer-control-is-the-R5-proof
+
+R5 is proved pointwise by positivity and exact divisor-product grouping; a mean-square Fourier calculation would be the wrong norm.
+
+Evidence:
+- `rounds/codex-managed/gc-unconditional-exponent-extraction/synthesis.md`
+
+## Round92-formalization-proves-either-canonical-core
+
+Round 92 supplies exact definitions, owners, capacities, and bridges only. Neither signed hard estimate is derived.
+
+Evidence:
+- `rounds/codex-managed/m9-canonical-core-formalization/reviews/conductor_round92_adjudication.md`
+
+## Round92-M1-local-period-peeling-supplies-the-missing-power
+
+The exact full-degree Gram capacity retains the J^(1/6) gap and Toeplitz returns it to the J^(1/12) linear gap; the q=8 control forbids a coefficient-blind period-depth conclusion.
+
+Evidence:
+- `rounds/codex-managed/m9-canonical-core-formalization/reviews/conductor_round92_adjudication.md`
+
+## Round92-M2-discrepancy-can-be-separated-from-density
+
+The complete coefficient carrier restores integer metric frequencies and the literal density zero mode; density and discrepancy must be estimated jointly.
+
+Evidence:
+- `rounds/codex-managed/m9-canonical-core-formalization/reviews/conductor_round92_adjudication.md`
+
+## Round92-top-M2-cone-alone-implies-full-M2-or-endpoint-uniformity
+
+The top cone is only one M2 packet, and endpoint uniformity requires all active denominator scales and both M1/M2 assemblies.
+
+Evidence:
+- `rounds/codex-managed/m9-canonical-core-formalization/reviews/conductor_round92_adjudication.md`
+
+## Round93-arbitrary-bounded-moving-weight-transfer
+
+A t-dependent bounded denominator weight can conjugate the phases and produce moment of size YD^2, a factor D above the target. Ordered-prefix or fixed-BV motion is essential.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-global-second-moment-exceptional-set/reviews/conductor_round93_adjudication.md`
+
+## Round93-naive-floor-by-floor-freezing
+
+Paying the frozen D^3 term on every height-floor interval loses Y^(1/4) at D=Y^(1/2); the exact height-difference basis is required.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-global-second-moment-exceptional-set/reviews/conductor_round93_adjudication.md`
+
+## Round93-zero-margin-density-saving
+
+At D=Y^(1/2) and threshold Y^(1/4), the second moment permits exceptional measure O(Y), and the h=+-1 diagonal shows the RMS scale is genuine.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-global-second-moment-exceptional-set/reviews/conductor_round93_adjudication.md`
+
+## Round93-global-moment-implies-pointwise-M9-or-canonical-core
+
+The proof averages over t before the Round-92 transforms and allows every prescribed point to be exceptional. It supplies neither the M1 J^(-1/12) gain nor the M2 rho^(-1/2) gain.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-global-second-moment-exceptional-set/reviews/conductor_round93_adjudication.md`
+
+## Round94-global-mean-square-implies-uniform-local-supremum
+
+Fubini controls only the average over window positions. A monotone inclusive-jump spike model has global moment Y^(3/2) while a prescribed short window has much larger mass.
+
+Evidence:
+- `rounds/codex-managed/gc-prescribed-point-local-moment-bridge/synthesis.md`
+
+## Round94-fixed-sigma-standard-local-scale-proves-quarter
+
+At W=Y^(1/4+sigma), Q<<WY^(1/2) gives exponent 1/4+sigma/3 through the cubic persistence branch. Strict quarter requires sigma=o(1) or total Q<<Y^(3/4+o(1)).
+
+Evidence:
+- `rounds/codex-managed/gc-prescribed-point-local-moment-bridge/synthesis.md`
+
+## Round94-subcoherence-no-go-covers-all-bridge-improving-windows
+
+The minimax band is subcoherent only for alpha<1/3, while the sharp persistence bridge improves one third throughout alpha<1/2. The range 1/3<alpha<1/2 is genuinely open.
+
+Evidence:
+- `rounds/codex-managed/gc-prescribed-point-local-moment-bridge/synthesis.md`
+
+## Round94-common-M1-M2-frequency-h-over-4d
+
+The literal M1 phase is e(hX/d), while M2 is e(hX/(4d)). A common frequency requires an explicit relabelling with the coefficient and support changed accordingly.
+
+Evidence:
+- `rounds/codex-managed/gc-prescribed-point-local-moment-bridge/synthesis.md`
+
+## Round94-random-cell-identity-is-arithmetic-cancellation
+
+The triangular random-cell formula is an exact positive re-expression. It supplies no cancellation inside a cell and is pointwise-strength in the subcoherent minimax range.
+
+Evidence:
+- `rounds/codex-managed/gc-prescribed-point-local-moment-bridge/synthesis.md`
+
+## Round94-Popov-local-second-moment-improves-one-third
+
+The additive T(log T)^2 term has power exponent one on every H<=T^(1/2) window and returns exactly one third through the sharp bridge.
+
+Evidence:
+- `rounds/codex-managed/gc-prescribed-point-local-moment-bridge/synthesis.md`
+
+## Round95-random-cells-and-Farey-spacing-prove-the-cluster-target
+
+At the minimax block their sharp coefficient-blind capacity is Y^(43/48), missing Y^(1/2) by Y^(19/48); a phase-conjugating bounded-coefficient model attains that false shadow.
+
+## Round95-exact-lift-cancellation-closes-the-off-diagonal
+
+Lift cancellation makes the complete equal-frequency diagonal O(D/L), but the unequal reduced-determinant correlation remains unchanged and open.
+
+## Round95-Popov-full-discrepancy-reverses-to-each-positive-block-cluster
+
+Popov controls the assembled signed discrepancy local moment. It does not upper-bound every fixed block's positive triangular energy, and its additive Y term returns exactly exponent one third.
+
+## Round95-literal-general-Li-Yang-Proposition-3-1-is-accepted
+
+The printed hypotheses do not imply Guth--Maldague beta_2>=0; an explicit admissible printed-range tuple gives beta_2=-1/22. Only the final application range is repaired.
+
+## Round95-literal-general-Li-Yang-Case-B-comparison-is-accepted
+
+The printed comparison omits a logarithmic factor. Fixed power slack absorbs it only on the final Case-II range.
+
+## Round95-repaired-external-theorem-proves-the-internal-cluster-or-M9
+
+The Li--Yang theorem is a separate direct global route and supplies no estimate for the actual reduced determinant, either canonical core, or any M9 outside packet.
+
+## Round96-fixed-m-q-shifts-retain-chi4-alternation
+
+The exact primitive odd lattice has one q parity at fixed m, so legal shifts are q to q+2h and the character autocorrelation is identically +1.
+
+## Round96-coefficientwise-one-q-A-process-supplies-rho-half-gain
+
+A separately estimated zero shift contributes P^2/H with H<=D, giving at most D^(-1/2) linearly; q=1 nonsquare Pell rows have D asymp 1 and rho tending to infinity.
+
+## Round96-parity-aware-q-Poisson-deletes-zero-frequency
+
+On the exact parity coset the dual lattice is one-half Z and contains zero; in the q-slice representation modulation only shifts the original row to frequency one half.
+
+## Round96-fixed-variable-Hessian-determinant-is-a-complete-symbol-determinant
+
+The complete three-variable phase is degree-one homogeneous with a radial null vector, and the saddle-reduced (m,q) Hessian has rank one.
+
+## Round96-rho-less-than-D-wedge-is-proved
+
+That wedge is only compatible with the diagonal capacity. The complete signed off-shift Gram and its moving determinant locus remain unproved.
+
+## Round97-canonical-hard-top-alone-implies-M9-M2
+
+The canonical theorem owns only the unique hard physical band. Nonempty balanced and unbalanced smooth residual cells remain.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/reviews/conductor_round97_adjudication.md`
+
+## Round97-smooth-Poisson-equivalence-is-the-three-quarter-estimate
+
+Poisson and stationary phase identify the product-phase target but do not bound it.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/reviews/conductor_round97_adjudication.md`
+
+## Round97-balanced-gcd-reduction-proves-the-quarter-packet-target
+
+The reduction stops at the outside-absolute signed sum |sum_G G P_G|, which remains open.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/reviews/conductor_round97_adjudication.md`
+
+## Round97-delta-equals-one-half-selects-the-hard-profile
+
+Every fixed smooth band D_j=2^(-j)sqrt X has exponent 1/2+o(1); only the physical jump label is hard.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/reviews/conductor_round97_adjudication.md`
+
+## Round97-near-collision-taxonomy-is-a-mandatory-direct-M2-parent
+
+It is an alternative fourth-moment route and was absent from the exact physical TOP+BAL+UNBAL assembly.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/reviews/conductor_round97_adjudication.md`
+
+## Round98-canonical-Gram-alone-implies-blockwise-M9-M1
+
+The canonical theorem is one transformed first-band packet after global recombination and has no inverse localization to every literal physical block.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-route-interface-assembly/reviews/conductor_round98_adjudication.md`
+
+## Round98-GAR-implies-blockwise-M9-M1-or-M9
+
+GAR bounds only the scalar total active M1 aggregate. The summation map is not invertible on individual dyadic blocks.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-route-interface-assembly/reviews/conductor_round98_adjudication.md`
+
+## Round98-alpha-radial-conductor-flat-conjunction
+
+Alpha, radial, product-wavelet, and conductor descriptions are nested or alternative transformed architectures; conjoining them without successive complements double-owns terms.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-route-interface-assembly/reviews/conductor_round98_adjudication.md`
+
+## Round98-partial-direct-owner-implies-full-M9-M1
+
+The hard transform, terminal theorem, TTY wedge, phase diagram, near-product reduction, and ordered-resonance reduction each leave a nonempty residual.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-route-interface-assembly/reviews/conductor_round98_adjudication.md`
+
+## Round98-delta-one-half-selects-hard-M1-profile
+
+Fixed smooth physical bands below the top also have exponent 1/2+o(1); only the actual profile containing floor(sqrt X) is hard.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-route-interface-assembly/reviews/conductor_round98_adjudication.md`
+
+## Round98-canonical-Gram-closes-full-GAR
+
+Even within the global route, upper conductors, raw transitions, axes, cone edges, other radial sectors, and radial/top interfaces remain open.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-route-interface-assembly/reviews/conductor_round98_adjudication.md`
+
+## Round99-two-dimensional-Hessian-extra-J-one-fifth
+
+The full-rank Hessian is integrally congruent to the two one-row Hessians, and double B-process reconstructs the same four physical rows already charged to Schur capacity.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-joint-four-row-spectral-gap/reviews/conductor_round99_adjudication.md`
+
+## Round99-second-completion-new-power
+
+Opening the complete trace gives exactly M^(-4), the four normalized rows, and Fejer recompletion returns the centered Toeplitz Gram with no spare modulus or transform factor.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-joint-four-row-spectral-gap/reviews/conductor_round99_adjudication.md`
+
+## Round99-ordinary-high-trace-uses-conductor-cancellation
+
+The exact operator is a direct sum in conductor row b; ordinary norms take a maximum and ordinary trace moments sum block traces, so they contain no mixed-b closed walks.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-joint-four-row-spectral-gap/reviews/conductor_round99_adjudication.md`
+
+## Round99-configuration-separated-high-trace-gap
+
+Fixed configurations are rank one, their actual phases telescope on paired closed cycles, and the exact q=8,u=4 local mode is coherent after the unique u=0 owner.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-joint-four-row-spectral-gap/reviews/conductor_round99_adjudication.md`
+
+## Round99-q8-mode-proves-global-lower-bound
+
+The q=8 mode is an exact local coherent control, but no dense comparable archimedean plateau or noncancelling global actual-vector projection has been proved.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-joint-four-row-spectral-gap/reviews/conductor_round99_adjudication.md`
+
+## Round100-q8-local-trace-implies-global-actual-vector-mass
+
+The local eigenvalue is only the constant c_8(u)/8, while the literal hard coefficient is an odd-cofactor and conductor cross-projection that may vanish or cancel.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-actual-vector-coherent-mode-projection/reviews/conductor_round100_adjudication.md`
+
+## Round100-aligned-difference-of-squares-is-hard
+
+The alignment forcing G=F makes the two physical pair labels coincide modulo 2N, hence R_*=4 and the slice is already owned by the Round-88 coarse package.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-actual-vector-coherent-mode-projection/reviews/conductor_round100_adjudication.md`
+
+## Round100-global-u-zero-owner-deletes-local-coherent-line
+
+The owner removes only the integer label u=0; nonzero u congruent to 0 or 4 modulo 8 remain, including nonzero modulus multiples.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-actual-vector-coherent-mode-projection/reviews/conductor_round100_adjudication.md`
+
+## Round100-mod8-quotient-controls-full-two-part
+
+When v_2(M)>3, 8 is not coprime to M/8; the full 2-power phase and longer orbit must be retained before CRT with the odd part.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-actual-vector-coherent-mode-projection/reviews/conductor_round100_adjudication.md`
+
+## Round100-paired-trace-mass-implies-fixed-vector-coefficient
+
+Backtracking words survive in ordinary trace moments, but a fixed-vector coefficient contains separate overlaps with the two rank-one directions and may vanish or cancel.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-actual-vector-coherent-mode-projection/reviews/conductor_round100_adjudication.md`
+
+## Round101-full-two-adic-DFT-is-low-rank
+
+The normalized Fourier matrix is unitarily equivalent to multiplication by a unimodular physical weight followed by a cyclic shift, so it has full rank and norm one.
+
+## Round101-twisted-period-support-gives-power-saving
+
+Affine Fourier support only decomposes the operator into permuted unitary blocks; the descent normalization exactly restores norm one.
+
+## Round101-all-aligned-two-adic-slices-are-prior-owned
+
+The aligned return is L/gcd(L,v) only after full odd and local alignment, and it can exceed rho_* for higher two-parts.
+
+## Round101-reversal-is-an-owned-positive-square
+
+Reversal is a distinct ordered edge with its own full return order and a Hankel-type Fourier coefficient; it is neither automatically positive nor automatically owned.
+
+## Round101-mod8-phase-determines-higher-two-part
+
+For nu>=4 the reciprocal phase can vary above modulus eight; the exact full 2^nu phase and longer orbit are indispensable.
+
+## Round101-local-zero-mode-is-the-global-u-zero-owner
+
+The global owner removes only the integer u=0. Nonzero modulus multiples and nonzero integers with locally constant characters retain different Fejer weights and shifted actual rows.
+
+## Round102-density-carrier-determinant-is-complete
+
+Expanding the mandatory metric factors replaces g,g' by g-2ell,g'-2ell'; keeping them unexpanded leaves a rapidly moving q-amplitude.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-determinant-weighted-actual-gram/reviews/conductor_round102_adjudication.md`
+
+## Round102-algebraic-nonzero-determinant-gives-active-oscillation
+
+The guaranteed carrier curvature is only (L J D_ray^3)^(-1), giving less than one quadratic oscillation across the full q row.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-determinant-weighted-actual-gram/reviews/conductor_round102_adjudication.md`
+
+## Round102-round77-g-variation-supplies-q-BV
+
+Round 77 proves variation in the odd lift g, not in q; primitive and owner masks, moving intervals, metric windows, and entry-exit remain non-smooth in q.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-determinant-weighted-actual-gram/reviews/conductor_round102_adjudication.md`
+
+## Round102-determinant-split-covers-singleton-q1-block
+
+The half-open q=1 block has no nonzero shift, so its Gram is the actual diagonal and the determinant locus is empty.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-determinant-weighted-actual-gram/reviews/conductor_round102_adjudication.md`
+
+## Round102-raw-near-incidence-gives-actual-rho-saving
+
+The raw density-mode count is neither coefficient-weighted nor mode-resolved and supplies no signed cancellation of the Gram diagonal.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-determinant-weighted-actual-gram/reviews/conductor_round102_adjudication.md`
+
+## Round102-post-diagonal-absolute-route-is-uniform
+
+Separately bounding the diagonal requires H>=rho, while H<=D_ray and lawful short blocks can have rho>D_ray.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-determinant-weighted-actual-gram/reviews/conductor_round102_adjudication.md`
+
+## Round103-carrier-cancellation-forbids-sampled-k-proof
+
+Round 80 forbids a formal half-frequency argument based only on lift variation. Round 103 proves the missing complete actual sampled-k variation and estimates the retained density mode by reciprocal curvature.
+
+## Round103-density-mode-is-deleted
+
+The metric density is nu=0; its total reciprocal frequency is -g/2, so |2nu-g|=g and it is explicitly estimated rather than removed.
+
+## Round103-sampled-k-bound-is-coefficient-uniform
+
+The complete-Fresnel variation uses the literal homogeneous actual profile and bounded-variation owners. An arbitrary phase-conjugated k-sequence can destroy it.
+
+## Round103-leading-Gaussian-capacity-refutes-q1-bound
+
+A leading Gaussian and recurrent Pell mode do not lower-bound the complete coefficient. The exact complete-integral upper theorem controls all modes and transitions.
+
+## Round103-q1-closure-implies-longer-fixed-a-Gram
+
+The singleton has no nonzero q-shift. Longer rows retain shifted owner products, independent fibres, and the open complete mode-resolved correlation.
+
+## Round104-carrier-cancellation-forbids-general-q-sampled-k-proof
+
+Carrier cancellation is an exact change of representation. The literal complete centered coefficient has independently proved sampled-k variation, which dephases the physical Fourier coefficient before the remaining complete metric reciprocal modes are estimated.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-fixed-q-sampled-k-short-shell/synthesis.md`
+
+## Round104-fixed-q-row-bound-is-coefficient-uniform
+
+The proof uses the exact homogeneous actual profile, resolved physical collars, and literal owner placement. Arbitrary phase-conjugated k-coefficients can violate the bound.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-fixed-q-sampled-k-short-shell/synthesis.md`
+
+## Round104-rowwise-Cauchy-closes-a-polynomial-q-shell
+
+The row energy is D L^4/A and the Cauchy Gram bound is H^2 D L^4/A, whereas the target is H^2 L^4/(A D); the exact route deficit is D^2.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-fixed-q-sampled-k-short-shell/synthesis.md`
+
+## Round104-D2-route-ceiling-is-an-actual-Gram-obstruction
+
+The coherent coefficient shadow saturating Cauchy is not the literal actual symbol. No lower bound for the signed actual Gram is proved, so polynomial-shell cross-q cancellation remains possible.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-fixed-q-sampled-k-short-shell/synthesis.md`
+
+## Round104-collapsing-cone-edge-breaks-sampled-k-variation
+
+The reciprocal interval and physical saddle path collapse together, the proof never divides by their length, overlapping collars retain uniform seminorms, and empty or singleton fibres are handled directly.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-fixed-q-sampled-k-short-shell/synthesis.md`
+
+## Round105-fixed-q-pointwise-bound-implies-polynomial-maximal-q
+
+Pointwise control gives maximal amplitude D L^2/A and direct Gram capacity H^2 D L^4/A. The deficits are exactly D and D^2, and arbitrary coherent coefficients saturate them.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-polynomial-q-maximal-alternation/synthesis.md`
+
+## Round105-total-q-variation-is-necessary-for-the-Gram
+
+Total variation is only a sufficient strengthening. The target is an averaged signed shift energy and can hold even when primitive-mask variation is of order D.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-polynomial-q-maximal-alternation/synthesis.md`
+
+## Round105-centered-material-transport-controls-the-complete-mode
+
+Recoupling the centered integral with the metric mode leaves the residual (nu-g/2)Lambda_q'/k asymp nJ; the material derivative controls saddle motion but not the complete q-oscillation.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-polynomial-q-maximal-alternation/synthesis.md`
+
+## Round105-full-rank-qk-Hessian-supplies-an-extra-polynomial-gain
+
+Two scalar stationary transforms return the centered reciprocal/product square and its odd character. Full rank alone does not estimate the transformed actual vector and cannot be multiplied into the existing fixed-row saving.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-polynomial-q-maximal-alternation/synthesis.md`
+
+## Round105-primitive-mask-destroys-alternation
+
+Every divisor d of odd a is odd, so q=du preserves (-1)^q=(-1)^u and mask-only interval sums cost at most tau(a). The moving actual coefficient, not primitivity, is the open seam.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-polynomial-q-maximal-alternation/synthesis.md`
+
+## Round105-uniform-first-derivative-gap-on-the-reciprocal-support
+
+At the simultaneous open reciprocal and physical saddle corner Lambda_q'/k_+(q)=J exactly, producing parity resonances for fourth-power controls. The flat collar prevents this from being an actual lower bound but rejects a uniform gap proof.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-polynomial-q-maximal-alternation/synthesis.md`
+
+## Round105-dual-square-is-a-complete-owner-preserving-self-return
+
+Only the scalar carrier and character have been transformed exactly. The prior owners, finite lifts, profiles, collars, maximal cutoff, and aggregate stationary errors have not been matched one by one.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-polynomial-q-maximal-alternation/synthesis.md`
+
+## Round106-negative-dual-square-covers-all-metric-modes
+
+For each orientation c=nu-tau g/2 has both signs. With epsilon=sgn(c), the dual phase is epsilon times the square and the labels are m=-epsilon ell, d-2h=-epsilon r.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-dual-square-actual-symbol-transfer/synthesis.md`
+
+## Round106-leading-physical-Gaussian-is-the-uniform-actual-symbol
+
+The point value is only the strict smooth-interior zeroth symbol. Physical collars, reciprocal or maximal endpoints, lift boundaries, hard samples and the collapsing edge require the complete one- or multi-sided Fresnel vector.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-dual-square-actual-symbol-transfer/synthesis.md`
+
+## Round106-pointwise-owner-at-nonintegral-bstar-is-canonical
+
+Sharp owners are defined on integer q. Different cardinal extensions agree on every primal sample but can differ at the generally nonintegral saddle b_*, with the difference cancelled only by the remaining exact dual integrals.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-dual-square-actual-symbol-transfer/synthesis.md`
+
+## Round106-prior-owner-masks-are-smooth-u-amplitudes
+
+Square-ray and other sparse prior-owner complements have polynomially many arithmetic jumps and are accepted only in aggregate norms. Their exact Fourier kernels must remain in the transformed vector.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-dual-square-actual-symbol-transfer/synthesis.md`
+
+## Round106-exact-owner-Fourier-conjugation-supplies-a-D-saving
+
+Conjugation preserves projector norm, rank, complements and one-count and inverse Fourier transform returns the original owner. It is an identity, not an estimate.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-dual-square-actual-symbol-transfer/synthesis.md`
+
+## Round106-terminal-M1-closes-the-returned-denominator-row
+
+The denominator scale is dnJ, while b_* couples ell and r inside profiles, maximal support, lifts, collars and owners. The accepted terminal theorem's range, separability, BV and maximal-owner hypotheses fail literally.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-dual-square-actual-symbol-transfer/synthesis.md`
+
+## Round106-scalar-density-preservation-proves-the-fixed-a-Gram
+
+Local L2 density is preserved, so scalar square-root capacity remains a factor sqrt(D) above the row target and direct Gram capacity retains the D^2 deficit. Actual directional cancellation is still required.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-dual-square-actual-symbol-transfer/synthesis.md`
+
+## Round107-unbalanced-residual-completes-r2-over4
+
+The literal slanted packet contains only selected weighted divisor incidences. Prime, square and fourth-power controls show complementary divisors belong to other physical owners.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-smooth-unbalanced-divisor-recombination/synthesis.md`
+
+## Round107-Popov-bounds-the-truncated-unbalanced-packet
+
+Popov requires complete r_2. At cutoff M his remainder is (D/L)X^o(1), which is target-safe only on the terminal line; at cutoff X^(1/2) the radial sum is equivalent to the Gauss target.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-smooth-unbalanced-divisor-recombination/synthesis.md`
+
+## Round107-two-functional-equations-produce-a-shorter-box
+
+The reflected factor scales are X/D and D, their product is X, both root numbers are +1, and transform inversion preserves coefficient information and capacity.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-smooth-unbalanced-divisor-recombination/synthesis.md`
+
+## Round107-hB-kPoisson-supplies-an-independent-power-saving
+
+The exact scale and Gaussian factors cancel to -i/(2pi), while k-Poisson returns a width-D/L fixed-centre wavelet. Its absolute deficit is exactly H_D/L.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-smooth-unbalanced-divisor-recombination/synthesis.md`
+
+## Round107-positive-coefficient-energy-proves-the-three-quarter-target
+
+The exact-product energy is O(MX^epsilon), but global Cauchy gives only the trivial M scale. Signed nonzero product shifts remain open.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-smooth-unbalanced-divisor-recombination/synthesis.md`
+
+## Round107-cone-or-exponent-pair-bound-applies-after-product-grouping
+
+The grouped coefficient is an irregular moving truncated divisor coefficient. Audited cone and one-variable exponent-pair theorems do not accept it and coefficient-blind analogues are false.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-smooth-unbalanced-divisor-recombination/synthesis.md`
+
+## Round108-visible-Fresnel-prefactor-saves-rho
+
+The Fresnel kernel is unitary after its scale/Jacobian is retained, and the complete mode sum is exactly Fourier-conjugate to the original metric multiplier.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-metaplectic-two-character-energy/synthesis.md`
+
+## Round108-density-may-be-deleted-or-estimated-separately
+
+The density is the r=0 identity component of the exact functional calculus. Removing it changes W_R and loses mandatory cross-mode terms.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-metaplectic-two-character-energy/synthesis.md`
+
+## Round108-fixed-a-Gram-retains-two-character-orthogonality
+
+The Fejer shift sign times the two primitive-ray character pairs is identically one.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-metaplectic-two-character-energy/synthesis.md`
+
+## Round108-square-root-character-sum-is-an-automorphic-theta-series
+
+The phase tau sqrt(n) is not a quadratic lattice phase, the weight and owners move, and audited Jacobi and half-integral spectral formulas do not accept the object.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-metaplectic-two-character-energy/synthesis.md`
+
+## Round108-sharp-ratio-band-has-a-smooth-integrable-Mellin-kernel
+
+The continuous sharp kernel has a principal-value 1/xi tail. Its exact finite triangular separation costs logarithmically and has jagged rank factors.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-metaplectic-two-character-energy/synthesis.md`
+
+## Round108-aggregate-owner-bound-licenses-Gram-reinsertion
+
+Linear one-count survives conjugation, but the accepted aggregate owner bound does not control blockwise absolute completion or Fejer cross energies.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-metaplectic-two-character-energy/synthesis.md`
+
+## Round108-separate-character-B-processes-produce-a-dual-square-root-gain
+
+The correct local dual length is JG, coefficient mass is preserved, the full tau kernel is nonlocal, and exact quadratic composition remains in the same metaplectic family.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-metaplectic-two-character-energy/synthesis.md`
+
+## Round109-aggregate-owner-bound-implies-blockwise-completion
+
+A signed aggregate, row energy without exact mass, and a positive Gram do not control sum_B|sum_nu O_(B,nu)| or sum_(B,nu)|O_(B,nu)|. Literal owner estimates are required.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-blockwise-owner-completion/synthesis.md`
+
+## Round109-sum-both-orientations-and-apply-outer-2Re
+
+The finite scalar formula uses one representative orientation and one outer 2Re. Summing the conjugate orientation again double counts.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-blockwise-owner-completion/synthesis.md`
+
+## Round109-smooth-terminal-without-exact-center-subtraction
+
+The exact pointwise punctured identity is sum W_R+V_(G_*)-1_(integer). Omitting the point atom reconstructs the full terminal window, not the punctured metric owner.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-blockwise-owner-completion/synthesis.md`
+
+## Round109-owner-completion-commutes-through-Fejer-Gram
+
+The proved completion is scalar and linear. Sharp owner projectors produce cross terms under Fejer or Gram lifts, and no corresponding cross energy is proved.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-blockwise-owner-completion/synthesis.md`
+
+## Round109-physical-completion-deletes-moving-collars
+
+Physical completion is only zero extension of the unchanged collared coefficient. Deleting or point-evaluating a moving collar changes the actual symbol.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-blockwise-owner-completion/synthesis.md`
+
+## Round110-global-completion-produces-smaller-hard-kernel
+
+Comparison of the two exact energy identities gives real-part equality with the original Round-75 off-diagonal up to a target-sized packet. Completion and adjoint inversion preserve physical capacity.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-global-signed-completed-directional/synthesis.md`
+
+## Round110-energy-identities-give-complex-self-return
+
+The energy identities determine only the real part. The imaginary correction is irrelevant and uncontrolled, so neither complex equality nor a modulus bound follows.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-global-signed-completed-directional/synthesis.md`
+
+## Round110-fixed-q-character-gives-a-or-g-orthogonality
+
+For b=a+2q, chi_4(ga)chi_4(gb)=(-1)^q is constant in a and every odd lift g at fixed q; in the fixed-a Gram the character factors cancel.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-global-signed-completed-directional/synthesis.md`
+
+## Round110-global-realpart-implies-blockwise-or-Gram
+
+Finite cancelling-block and orthogonal-Gram controls separate the global real part from modulus, blockwise absolute mass, row energy, and operator norm.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-global-signed-completed-directional/synthesis.md`
+
+## Round110-both-orientations-plus-outer-2Re
+
+The exact off-diagonal convention is one representative orientation plus one outer 2Re. Including the conjugate orientation inside the scalar and retaining 2Re double counts.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-global-signed-completed-directional/synthesis.md`
+
+## Round110-simplified-untagged-kernel-is-automatically-literal
+
+Finiteness permits reordering but not deletion, deduplication, or replacement of block-dependent coefficients. Only the inherited tagged finite sum is promoted without an additional atom-level merger proof.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-global-signed-completed-directional/synthesis.md`
+
+## Round110-adjacent-ray-presentation-proves-cancellation
+
+The adjacent even-odd difference is an exact reindexing. A unit q-shift changes coprimality, lifts, ceilings, reciprocal support, collars, entry/exit, and metric centres, and no target variation estimate is proved.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-global-signed-completed-directional/synthesis.md`
+
+## Round111-parity-highpass-itself-saves-a-power
+
+The parity vector is an eigenvector of the adjacent difference with eigenvalue 2; the high-pass is an exact reformulation and can amplify arbitrary alternating rows.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-adjacent-ray-transport-commutator/synthesis.md`
+
+## Round111-lambda-closeness-makes-comb-small
+
+For every lambda different from 1, rational or irrational, the total-variation distance of the integer and pulled-back scaled combs on a K-interval is comparable with K, not K times |1-lambda|.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-adjacent-ray-transport-commutator/synthesis.md`
+
+## Round111-continuous-Jacobian-produces-D-saving
+
+The two-dimensional transport has determinant 1, and the one-dimensional x-Jacobian is canceled exactly by the changed density of the pulled-back k-comb.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-adjacent-ray-transport-commutator/synthesis.md`
+
+## Round111-transport-defect-is-boundary-only
+
+The exact Poisson identity retains every common-band scaled-comb frequency; replacing it by the symmetric difference of reciprocal intervals drops a bulk term.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-adjacent-ray-transport-commutator/synthesis.md`
+
+## Round111-fixed-collars-own-all-transport-slabs
+
+Reciprocal endpoints move by J/A and physical supports by L/D, crossing L/D accepted curvature widths; these atoms are not uniformly fixed collars.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-adjacent-ray-transport-commutator/synthesis.md`
+
+## Round111-integer-rounding-preserves-phase
+
+Rounding k/lambda to an integer destroys exact kx preservation and leaves a bounded frequency error multiplied by the full physical variable.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-adjacent-ray-transport-commutator/synthesis.md`
+
+## Round111-large-carrier-increment-gives-uniform-gap
+
+The unwrapped increment is of size JL/A, but square, Pell, fourth-power and near-centre configurations can make it integral or nearly integral.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-adjacent-ray-transport-commutator/synthesis.md`
+
+## Round111-comb-TV-is-an-actual-symbol-lower-bound
+
+Total variation is attained only after a coefficient-blind phase-conjugating choice. The actual signed Vaaler/profile vector may still cancel before absolute values.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-adjacent-ray-transport-commutator/synthesis.md`
+
+## Round111-adjacent-transport-closes-a-polynomial-shell
+
+The common-comb capacity loses D and the separate endpoint majorant loses at least D^(1/2); no fixed positive-power D-range is proved.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-adjacent-ray-transport-commutator/synthesis.md`
+
+## Round112-reverse-quarter-packet-order
+
+Under the stated Fourier convention the exact character identity gives the 1/4 packet minus the 3/4 packet. Reversing them changes the sign.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-balanced-smooth-quarter-packet-canonicalization/synthesis.md`
+
+## Round112-negative-packet-is-direct-conjugate
+
+For real profiles Q(-R)=-conj(Q(R)); only after multiplying by 1/(2i) does the physical negative child become the conjugate.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-balanced-smooth-quarter-packet-canonicalization/synthesis.md`
+
+## Round112-silent-square-near-owner-mask
+
+Smooth Poisson transforms the full small-gcd shell. An exact square or near-square complement is arithmetic and nonsmooth in g; prior owners require explicit signed correction terms.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-balanced-smooth-quarter-packet-canonicalization/synthesis.md`
+
+## Round112-cross-physical-block-omega-cancellation
+
+The accepted M2 assembly bounds each physical D,L block before summation. Only bounded internal subdivisions of one fixed block may lie under the packet's outer modulus.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-balanced-smooth-quarter-packet-canonicalization/synthesis.md`
+
+## Round112-sharp-gcd-threshold-has-no-boundary-term
+
+A smooth shell meeting g=L^(1/2) must be assigned explicitly to the large or boundary gcd owner; a sharp cutoff creates an unowned Fourier tail.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-balanced-smooth-quarter-packet-canonicalization/synthesis.md`
+
+## Round112-shellwise-l1-is-equivalent-to-direct-packet
+
+The direct signed internal sum can cancel between shells. Shellwise l1 and Gram estimates are strictly stronger sufficient conditions.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-balanced-smooth-quarter-packet-canonicalization/synthesis.md`
+
+## Round112-generic-complex-frequency-conjugacy
+
+The negative-frequency identity uses the literal real profile and beta_(-h)=beta_h. It fails for a generic complex coefficient.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-balanced-smooth-quarter-packet-canonicalization/synthesis.md`
+
+## Round112-hard-endpoint-is-a-smooth-balanced-atom
+
+The unique physical profile containing d=floor(sqrt X) has a continuum jump and is excluded from smooth Poisson regardless of its scale exponent.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-balanced-smooth-quarter-packet-canonicalization/synthesis.md`
+
+## Round112-complementary-divisors-cancel-all-products
+
+Symmetry cancels only odd m congruent to 3 modulo 4, reinforces odd m congruent to 1 modulo 4, and supplies no character-bearing swapped term for even products.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-balanced-smooth-quarter-packet-canonicalization/synthesis.md`
+
+## Round112-quarter-packet-identity-saves-X-one-twelfth
+
+The identity is capacity-preserving. X^(1/12) is the worst remaining deficit of the current envelope, not a saving.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-balanced-smooth-quarter-packet-canonicalization/synthesis.md`
+
+## Round113-discrete-values-define-a-smooth-continuum-symbol
+
+Integer coefficient values do not determine the continuum profile required
+by Poisson. The positive-quadrant smooth extension and its seminorms must be
+fixed explicitly.
+
+## Round113-zero-cutoff-times-undefined-d0-phase
+
+The equality \(W(0)=0\) does not define \(e(hX/(4d))\) at \(d=0\).
+Define the entire summand as zero or sum over \(d\ge1\).
+
+## Round113-low-gcd-identity-is-the-full-physical-one-count
+
+The low packet omits the high-gcd owner and transform error. The full
+physical equation must retain high, square, near, residual, and error terms.
+
+## Round113-optional-equality-and-collar-ownership
+
+Coefficientwise one-count requires one frozen priority and equality rule;
+ownership cannot vary opportunistically between blocks.
+
+## Round113-generic-j2-balanced-family
+
+The exact floor identity makes \(j=2\) balanced only at exact-square
+\(X\), where \(K/L=16\).
+
+## Round113-dictionary-saves-X-one-twelfth
+
+The dictionary is capacity-preserving. \(X^{1/12}\) remains the worst
+analytic deficit and is not a saving.
+
+Evidence for all Round-113 entries:
+- `rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/synthesis.md`

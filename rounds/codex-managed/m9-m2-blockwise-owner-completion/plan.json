@@ -1,0 +1,213 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 109,
+    "round_type": "m9_m2_blockwise_owner_completion_deliverable",
+    "campaign_id": "m9-m2-blockwise-owner-completion",
+    "title": "Blockwise linear owner completion and fixed-K reconciliation",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "f861f43d46bec112682a73e4c6062cbebf82f83fdcf0639e6fe122c6a123ad0d",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 95,
+      "numerical_experimental_maximum_percent": 5,
+      "planned_numerical_percent": 0,
+      "literature_policy": "No new external theorem is required. If a source is invoked, use primary sources and map it to the literal scalar owner norm."
+    },
+    "target_obligations": [
+      "M9-M2-primitive-ray-fixed-a-actual-Gram",
+      "M9-M2-top-endpoint-density-discrepancy-energy",
+      "M9-M2-metaplectic-metric-functional-calculus-return"
+    ],
+    "frozen_target": {
+      "question": "Can every prior hard-top M2 owner be reinserted and subtracted blockwise in the oriented scalar pair sum with total outside-absolute cost O_epsilon(L^2 X^epsilon), thereby licensing a fixed-K completed directional vector, or which literal owner first prevents that completion?",
+      "reference_formula": "Q_B^res=Q_B^comp-sum_nu O_(B,nu), with sum_(B,nu)|O_(B,nu)| <<_epsilon L^2 X^epsilon. The accepted aggregate identity E_L^top=E_owned,L+2 Re sum_B Q_B^res and E_owned,L <<_epsilon L^2 X^epsilon is not by itself the required norm.",
+      "quantities": [
+        "J=X^(1/2), 1<=L<=J^(1/2), B=(A,D,K,G,R,orientation)",
+        "K asymp JD/A, G asymp L/A, rho=AJD^3/L^3",
+        "Round-77 transform/error owners; Round-78 square owner; Round-79 exact-centre and rho-safe owners; Round-103/104 short-row owners",
+        "scalar signed, blockwise outside-absolute, row-energy, and positive Gram estimates are distinct",
+        "the metric density remains inside the completed coefficient"
+      ]
+    },
+    "completion_criteria": [
+      "Write a literal disjoint owner table in the oriented scalar normalization.",
+      "Prove or refute the exact completion identity for the fixed dyadic k-lattice and collared physical range.",
+      "For every owner prove the blockwise outside-absolute sum, give an explicit lawful bridge from its accepted energy estimate, or mark the first unsupported step.",
+      "Audit smooth Fourier and Mobius separation costs without assigning them to sharp pair-dependent owners.",
+      "Keep original Poisson modes distinct from the metric density mode.",
+      "Retain endpoints, floors, stars, half weights, collars, entry/exit, both orientations, empty/singleton fibres, q=1, squares, Pell, exact centres and rho=1.",
+      "Prove full completion, a strict partial completion with a named residual, or a rigorous no-go with the smallest replacement norm.",
+      "Leave the completed directional estimate, both smooth M2 packets, M9-M2, M9-M1, endpoint uniformity, M9 and the exponent open unless their exact dependency chain is proved."
+    ],
+    "controls": [
+      "owner_one_count_and_disjointness",
+      "scalar_vs_energy_normalization",
+      "blockwise_absolute_vs_signed_aggregate",
+      "fixed_K_completion_and_open_endpoints",
+      "physical_collar_and_entry_exit",
+      "original_zero_mode_vs_metric_density",
+      "smooth_projective_separation",
+      "sharp_pair_owner_projective_norm",
+      "square_fourth_power_and_Pell",
+      "q1_polylog_and_empty_singleton",
+      "exact_centre_and_rho_boundary",
+      "orientation_floor_star_halfweight",
+      "Fejer_commutator_and_Gram_nonimplication",
+      "downstream_and_exponent_scope"
+    ],
+    "tasks": [
+      {
+        "id": "blind_owner_completion_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "completed",
+        "target": "Independently derive the weakest sufficient blockwise owner-completion lemma and finite countermodels for invalid aggregate-to-blockwise implications.",
+        "context_files": [
+          "problems/gauss_circle.md",
+          "state/control_models.md",
+          "rounds/codex-managed/m9-m2-blockwise-owner-completion/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "strategy files",
+          "Round-109 derivation packet and conductor candidate",
+          "all Round-109 sibling reports and prior claimant derivations"
+        ],
+        "required_controls": [
+          "owner_one_count_and_disjointness",
+          "scalar_vs_energy_normalization",
+          "blockwise_absolute_vs_signed_aggregate",
+          "Fejer_commutator_and_Gram_nonimplication"
+        ],
+        "required_output": [
+          "A seven-section statement-only report at the assigned path.",
+          "A necessary/sufficient completion lemma or no-go with proof.",
+          "Finite countermodels scoped as arbitrary-coefficient controls, not actual-symbol obstructions."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-blockwise-owner-completion/reports/blind_owner_completion_rederivation.md"
+      },
+      {
+        "id": "linear_owner_completion_attack",
+        "role": "formalizer",
+        "access_mode": "selected_context",
+        "status": "completed",
+        "target": "Construct the literal owner dictionary and prove the strongest lawful full or partial fixed-K completion with every normalization and blockwise absolute cost visible.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m2-blockwise-owner-completion/derivation_packet.md",
+          "rounds/codex-managed/m9-m2-blockwise-owner-completion/candidates/conductor_blockwise_owner_completion.md",
+          "rounds/codex-managed/m9-canonical-core-formalization/candidates/conductor_canonical_core_statements.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-actual-symbol-variation/synthesis.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/synthesis.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/synthesis.md",
+          "rounds/codex-managed/m9-m2-q1-actual-diagonal-energy/synthesis.md",
+          "rounds/codex-managed/m9-m2-fixed-q-sampled-k-short-shell/synthesis.md",
+          "rounds/codex-managed/m9-m2-metaplectic-two-character-energy/synthesis.md"
+        ],
+        "required_controls": [
+          "owner_one_count_and_disjointness",
+          "scalar_vs_energy_normalization",
+          "blockwise_absolute_vs_signed_aggregate",
+          "fixed_K_completion_and_open_endpoints",
+          "physical_collar_and_entry_exit",
+          "original_zero_mode_vs_metric_density",
+          "smooth_projective_separation",
+          "sharp_pair_owner_projective_norm",
+          "square_fourth_power_and_Pell",
+          "q1_polylog_and_empty_singleton",
+          "exact_centre_and_rho_boundary",
+          "orientation_floor_star_halfweight",
+          "downstream_and_exponent_scope"
+        ],
+        "required_output": [
+          "A seven-section discovery/formalization report at the assigned path.",
+          "A literal owner table with formula, norm type, and block placement.",
+          "A full completion proof, strict partial completion, or first exact failing owner."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-blockwise-owner-completion/reports/linear_owner_completion_attack.md"
+      },
+      {
+        "id": "owner_completion_hostile_audit",
+        "role": "seam_reviewer",
+        "access_mode": "selected_context",
+        "status": "completed",
+        "target": "Hostilely audit every owner norm, its stability under outside absolute values and dyadic splitting, and the exact fixed-K/collar completion.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m2-blockwise-owner-completion/derivation_packet.md",
+          "rounds/codex-managed/m9-m2-blockwise-owner-completion/candidates/conductor_blockwise_owner_completion.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-actual-symbol-variation/reports/actual_symbol_hostile_audit.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-square-resonance-mass/reports/square_resonance_hostile_audit.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-generic-reciprocal-resonance/reports/nonsquare_resonance_hostile_source_audit.md",
+          "rounds/codex-managed/m9-m2-q1-actual-diagonal-energy/reviews/conductor_round103_owners_controls_and_sources.md",
+          "rounds/codex-managed/m9-m2-fixed-q-sampled-k-short-shell/reviews/conductor_round104_actual_symbol_and_owner_seam.md",
+          "rounds/codex-managed/m9-m2-metaplectic-two-character-energy/reports/two_character_spectral_source_hostile_audit.md"
+        ],
+        "required_controls": [
+          "owner_one_count_and_disjointness",
+          "scalar_vs_energy_normalization",
+          "blockwise_absolute_vs_signed_aggregate",
+          "fixed_K_completion_and_open_endpoints",
+          "physical_collar_and_entry_exit",
+          "original_zero_mode_vs_metric_density",
+          "sharp_pair_owner_projective_norm",
+          "square_fourth_power_and_Pell",
+          "q1_polylog_and_empty_singleton",
+          "exact_centre_and_rho_boundary",
+          "orientation_floor_star_halfweight",
+          "Fejer_commutator_and_Gram_nonimplication",
+          "downstream_and_exponent_scope"
+        ],
+        "required_output": [
+          "A seven-section hostile report at the assigned path.",
+          "A certification or the first exact unsupported implication.",
+          "A smallest lawful survivor and explicit state recommendation."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-blockwise-owner-completion/reports/owner_completion_hostile_audit.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "dictionary",
+        "requirement": "Every owner has a literal formula, norm type, sign, block placement, and one-count priority."
+      },
+      {
+        "id": "normalization",
+        "requirement": "Scalar, row-energy, positive Gram, and outside-absolute block estimates are not interchanged."
+      },
+      {
+        "id": "completion",
+        "requirement": "The fixed-K and physical-range complements equal the named owners exactly, including endpoints and zero extension."
+      },
+      {
+        "id": "projective_cost",
+        "requirement": "Smooth separation costs are summable; sharp pair masks are estimated or separately subtracted, never silently factorized."
+      },
+      {
+        "id": "controls",
+        "requirement": "Square, Pell, q=1, exact-centre, rho-boundary, collar, floor, star, orientation and density controls pass."
+      },
+      {
+        "id": "scope",
+        "requirement": "No directional estimate, smooth packet, M9-M2, M9-M1, M9 or exponent is promoted without the exact bridge."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "f861f43d46bec112682a73e4c6062cbebf82f83fdcf0639e6fe122c6a123ad0d",
+    "generated_at": "2026-08-17T13:43:34.771127+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

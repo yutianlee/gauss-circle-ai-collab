@@ -1,0 +1,208 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 108,
+    "round_type": "m9_m2_metaplectic_two_character_energy_core",
+    "campaign_id": "m9-m2-metaplectic-two-character-energy",
+    "title": "Metaplectic Gaussian separation and joint two-character energy",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "7347081c1a765acafc6a4d1e3a96171d7b971079c2af144f7a0eaa825309bb2a",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 90,
+      "numerical_experimental_maximum_percent": 10,
+      "planned_numerical_percent": 0,
+      "literature_policy": "Use primary sources only. A half-integral-weight, Jacobi, Kuznetsov, theta, or large-sieve theorem may enter the graph only after a literal map to the complete moving actual symbol and its owner order."
+    },
+    "target_obligations": [
+      "M9-M2-primitive-ray-fixed-a-actual-Gram",
+      "M9-M2-top-endpoint-density-discrepancy-energy"
+    ],
+    "frozen_target": {
+      "question": "Can exact Gaussian linearization of the complete metric chirps and the two-character factorization in the physical square-root variables prove the missing rho^(-1/2) linear gain in the residual hard M2 Gram, or is the resulting metaplectic/theta representation an equal-capacity return?",
+      "reference_formula": "G_H^act=sum_(a,n)|sum_(0<=j<H)(-1)^j F_a(n+j)|^2 <<_eps X^eps H^2 E_0/rho, with E_0 asymp L J D^2 and rho=A J D^3/L^3; for alpha!=0, e(alpha y^2)=e(sgn(alpha)/8)(2|alpha|)^(-1/2) int_R e(-t^2/(4alpha)+ty)dt, while the metric density alpha=0 is retained separately.",
+      "quantities": [
+        "J=X^(1/2), b=a+2q, h=ga, s=gb, Lambda=X(sqrt(b)-sqrt(a))^2/2",
+        "Ju_ang/(1-u_ang)<k<2Ju_ang/(1+u_ang), G asymp L/A, K asymp JD/A",
+        "positive hard-block capacity L^2 X^eps sqrt(rho); required energy gain rho^(-1)",
+        "the density mode and every nonzero metric mode form one complete coefficient",
+        "the arbitrary-coefficient and unsigned analogues are false controls"
+      ]
+    },
+    "completion_criteria": [
+      "Derive the exact density-plus-discrepancy Gaussian/metaplectic separation with the e(x)=exp(2pi i x) constants.",
+      "Express the complete hard block or shifted Gram as a joint two-character square-root transform without point-evaluating sharp owners.",
+      "Compute the exact transformed L2 capacity and the rho^(-1) energy gain required at every dyadic endpoint.",
+      "Prove the full fixed-a actual Gram, a strict disjoint hard subrange with a genuine rho power, or a rigorous equal-capacity/no-go theorem with a strictly smaller named survivor.",
+      "Audit whether smooth profiles and owner complements admit a finite-rank Mellin/Fourier separation with summable norm.",
+      "Audit primary half-integral-weight, Jacobi, Kuznetsov, theta and spectral-large-sieve hypotheses literally.",
+      "Retain q=1, Pell, near-square, fourth-power, density, endpoint, collar, primitive and prior-owner controls.",
+      "Leave smooth M2 packets, M9-M2, endpoint uniformity, M9 and the exponent unchanged unless the exact dependency chain is proved."
+    ],
+    "controls": [
+      "gaussian_constant_and_density_limit",
+      "metric_density_discrepancy_jointness",
+      "two_character_factorization",
+      "actual_symbol_vs_arbitrary_coefficients",
+      "signed_vs_unsigned_and_adversarial",
+      "primitive_and_prior_owner_one_count",
+      "sharp_owner_conjugation_and_interpolation",
+      "physical_collars_entry_exit_and_zero_extension",
+      "q1_Pell_near_square_and_fourth_power",
+      "transform_inversion_and_capacity",
+      "rho_power_and_endpoint_ledger",
+      "primary_source_hypothesis_map",
+      "downstream_and_exponent_scope"
+    ],
+    "tasks": [
+      {
+        "id": "blind_two_character_energy_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "ready",
+        "target": "Independently derive the exact Gaussian separation, the weakest sufficient two-character energy inequality, and a capacity/no-go test from the frozen statement only.",
+        "context_files": [
+          "problems/gauss_circle.md",
+          "state/control_models.md",
+          "rounds/codex-managed/m9-m2-metaplectic-two-character-energy/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "strategy files",
+          "Round-108 derivation packet and conductor candidate",
+          "all Round-108 sibling reports and earlier claimant derivations"
+        ],
+        "required_controls": [
+          "gaussian_constant_and_density_limit",
+          "metric_density_discrepancy_jointness",
+          "actual_symbol_vs_arbitrary_coefficients",
+          "transform_inversion_and_capacity",
+          "rho_power_and_endpoint_ledger"
+        ],
+        "required_output": [
+          "A seven-section statement-only report at the assigned path.",
+          "An exact lemma or no-go result, proof, first doubtful step, and control outcomes.",
+          "The weakest sufficient transformed inequality with every normalization visible."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-metaplectic-two-character-energy/reports/blind_two_character_energy_rederivation.md"
+      },
+      {
+        "id": "metaplectic_two_character_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "ready",
+        "target": "Construct the exact density-plus-discrepancy metaplectic factorization of the literal hard M2 actual vector and seek the full rho^(-1/2) gain or a strict hard subrange.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m2-metaplectic-two-character-energy/derivation_packet.md",
+          "rounds/codex-managed/m9-m2-metaplectic-two-character-energy/candidates/conductor_metaplectic_two_character_core.md",
+          "rounds/codex-managed/m9-canonical-core-formalization/candidates/conductor_canonical_core_statements.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-actual-symbol-variation/synthesis.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/synthesis.md",
+          "rounds/codex-managed/m9-m2-primitive-ray-q-dispersion/synthesis.md",
+          "rounds/codex-managed/m9-m2-fixed-q-sampled-k-short-shell/synthesis.md",
+          "rounds/codex-managed/m9-m2-dual-square-actual-symbol-transfer/synthesis.md"
+        ],
+        "required_controls": [
+          "gaussian_constant_and_density_limit",
+          "metric_density_discrepancy_jointness",
+          "two_character_factorization",
+          "actual_symbol_vs_arbitrary_coefficients",
+          "signed_vs_unsigned_and_adversarial",
+          "primitive_and_prior_owner_one_count",
+          "sharp_owner_conjugation_and_interpolation",
+          "physical_collars_entry_exit_and_zero_extension",
+          "q1_Pell_near_square_and_fourth_power",
+          "transform_inversion_and_capacity",
+          "rho_power_and_endpoint_ledger",
+          "downstream_and_exponent_scope"
+        ],
+        "required_output": [
+          "A seven-section discovery report at the assigned path.",
+          "Exact oscillatory-integral constants and a complete variable/owner dictionary.",
+          "A proof of the target, a genuine rho-power subrange, or a rigorous equal-capacity obstruction with the smallest surviving actual-vector inequality."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-metaplectic-two-character-energy/reports/metaplectic_two_character_attack.md"
+      },
+      {
+        "id": "two_character_spectral_source_hostile_audit",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "status": "ready",
+        "target": "Hostilely audit the Gaussian separation, transformed capacity, owner compatibility, and every primary theta/Jacobi/half-integral Kuznetsov or spectral-large-sieve theorem map.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m2-metaplectic-two-character-energy/derivation_packet.md",
+          "rounds/codex-managed/m9-m2-metaplectic-two-character-energy/candidates/conductor_metaplectic_two_character_core.md",
+          "rounds/codex-managed/m9-canonical-core-formalization/candidates/conductor_canonical_core_statements.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/synthesis.md",
+          "rounds/codex-managed/m9-m2-polynomial-q-maximal-alternation/synthesis.md",
+          "rounds/codex-managed/m9-m2-dual-square-actual-symbol-transfer/synthesis.md",
+          "sources/popov_2024_voronoi_gauss.md",
+          "sources/li_yang_2023.md"
+        ],
+        "required_controls": [
+          "gaussian_constant_and_density_limit",
+          "metric_density_discrepancy_jointness",
+          "two_character_factorization",
+          "actual_symbol_vs_arbitrary_coefficients",
+          "primitive_and_prior_owner_one_count",
+          "sharp_owner_conjugation_and_interpolation",
+          "q1_Pell_near_square_and_fourth_power",
+          "transform_inversion_and_capacity",
+          "rho_power_and_endpoint_ledger",
+          "primary_source_hypothesis_map",
+          "downstream_and_exponent_scope"
+        ],
+        "required_output": [
+          "A seven-section hostile/source report at the assigned path.",
+          "Literal primary-source hypothesis maps with citations for every theorem considered.",
+          "A certification, a precise non-applicability theorem, or the first exact unsupported seam."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-metaplectic-two-character-energy/reports/two_character_spectral_source_hostile_audit.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "normalization",
+        "requirement": "Check the Fresnel/Gaussian constant, sign, density mode and alpha-to-zero ownership."
+      },
+      {
+        "id": "factorization",
+        "requirement": "Distinguish exact radical-phase separation from separability of the full moving actual amplitude."
+      },
+      {
+        "id": "owners",
+        "requirement": "Keep primitive, prior-owner, collar, endpoint, floor, star and zero-extension operators one-count and interpolation independent."
+      },
+      {
+        "id": "capacity",
+        "requirement": "Prove an energy gain rho^(-1), not merely a unitary change of representation or generic square-root saving."
+      },
+      {
+        "id": "sources",
+        "requirement": "Map all automorphic/spectral source hypotheses to the literal fixed-X complete symbol."
+      },
+      {
+        "id": "scope",
+        "requirement": "Do not promote another M2 packet, M9-M2, endpoint uniformity, M9 or an exponent without the exact bridge."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "7347081c1a765acafc6a4d1e3a96171d7b971079c2af144f7a0eaa825309bb2a",
+    "generated_at": "2026-08-17T12:52:26.296611+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

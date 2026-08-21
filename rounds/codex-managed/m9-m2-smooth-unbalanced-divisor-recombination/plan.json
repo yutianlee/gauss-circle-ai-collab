@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "round_index": 107,
+  "campaign_id": "m9-m2-smooth-unbalanced-divisor-recombination",
+  "title": "Unbalanced smooth M2 product regrouping and truncated r2 fork",
+  "starting_graph_sha256": "d20981c158e3525b89fd9f5e1352580fcd1349e7662e14c990bf9896b4da4e16",
+  "objective": "Regroup the literal unbalanced smooth product-phase packet by n=hk, derive its exact character-divisor coefficient and Mellin/functional-equation interface, and prove a new residual corridor or a coefficient-preserving self-return with the smallest remaining signed truncated-divisor correlation.",
+  "max_concurrency": 3,
+  "resource_policy": {
+    "analytical_algebraic_minimum_percent": 90,
+    "numerical_experimental_maximum_percent": 10,
+    "planned_numerical_percent": 0
+  },
+  "tasks": [
+    "blind_unbalanced_divisor_rederivation",
+    "truncated_r2_recombination_attack",
+    "unbalanced_product_source_hostile_audit"
+  ],
+  "exit_gate": "A literal actual-symbol proof of the M^(3/4) estimate on a nonempty new residual corridor, or an exact Mellin/Voronoi self-return and strictly smaller coefficient-level survivor with all owners and capacity accounted for."
+}
+

@@ -1,0 +1,166 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-full-two-adic-actual-row-unitary-convolution",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "The full two-adic hard actual-row factor is a unitary cyclic convolution",
+        "status": "proved_internal",
+        "statement_tex": "Let M=2^nu N with N odd, q=2^nu, and L=q/2. For nu>=1, the two-adic four-unit mask is empty unless A=2a, B_2=2c, and V=2v modulo q; when nonempty it is the complete odd orbit x=1+2j, j mod L. After the exact CRT rescaling of u and K, put w_j=e_q(u_2(1+2j)+K_2 Phi_(2a,2c,2v)(1+2j)). For the two literal actual pair rows F_j^a and G_(j-v)^c, including all four I_b slots, entry and exit, stars, and zero extension, C_q(F,G)=sum_(j mod L) w_j F_j^a overline(G_(j-v)^c)=L^(-2)sum_(k,l mod L)e_L(lv) what_(l-k) Fhat_k^a overline(Ghat_l^c). On unitary Fourier coordinates A_(w,v)(l,k)=L^(-1)what_(l-k)e_L(lv) is unitarily equivalent to unimodular multiplication followed by a cyclic shift, so it has rank L, norm one, and all singular values one. The reciprocal phase has the guaranteed period P_nu=1 for nu<=3, P_4=2, and P_nu=L/8 for nu>=5; hence w_(j+P_nu)=e_L(u_2P_nu)w_j and what_r=0 unless r=u_2 mod L/P_nu. This is a guaranteed twisted period, not necessarily a fundamental period; nonunit K can shorten it. The affine Fourier support only permutes unitary blocks and supplies no rank or power gain. The completed trace normalization is (T_M/M^2)=(T_q/q^2)(T_N/N^2) and M^(-5)T_M=M^(-4)sum_x^(mask)w_x, with no extra L factor. Remove the integer u=0 once, then apply the Round-87 same-group, Round-88 coarse and good-prime, and Round-89 certified-cell owners successively. Full alignment has local return L/gcd(L,v) only after the odd labels and a=c align; higher two-parts can have return larger than rho_* and are not automatically owned. Exact reversal has its own return order and gives a Hankel-type coefficient, not an automatic positive square. The exact remaining object S_(2-adic)(U) is the conductor-before-absolute-value scalar sum of these unitary coefficients with the odd completed trace, all classes, signs, aliases, reflections, Ramanujan terms, nonzero modulus multiples, nonunit K, transitions, stars, dyadic multipliers, and zero extension retained. The q=8 Round-100 cross-projection is exactly the nu=3 specialization. No estimate for S_(2-adic)(U), no J^(-1/6) gain, and no downstream theorem is proved.",
+        "dependencies": [
+          "M9-M1-cross-group-period-depth-subaggregate-bound",
+          "M9-M1-bad-prime-cellwise-period-graph-bound",
+          "M9-M1-q8-actual-vector-cross-projection-reduction",
+          "M9-M1-joint-four-row-separable-self-return-obstruction"
+        ],
+        "implies": [
+          "M9-M1-canonical-hard-actual-vector-directional-estimate"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-full-two-adic-orbit-convolution/reports/blind_full_two_adic_orbit_rederivation.md",
+            "rounds/codex-managed/m9-m1-full-two-adic-orbit-convolution/reports/full_two_adic_actual_symbol_formalization.md",
+            "rounds/codex-managed/m9-m1-full-two-adic-orbit-convolution/reports/full_two_adic_hostile_owner_audit.md",
+            "rounds/codex-managed/m9-m1-full-two-adic-orbit-convolution/candidates/conductor_full_two_adic_orbit_convolution.md",
+            "rounds/codex-managed/m9-m1-full-two-adic-orbit-convolution/reviews/conductor_round101_normalization_period.md",
+            "rounds/codex-managed/m9-m1-full-two-adic-orbit-convolution/reviews/conductor_round101_owners_and_capacity.md",
+            "rounds/codex-managed/m9-m1-full-two-adic-orbit-convolution/reviews/conductor_round101_adjudication.md",
+            "rounds/codex-managed/m9-m1-full-two-adic-orbit-convolution/controls/conductor_round101_hygiene.md",
+            "rounds/codex-managed/m9-m1-full-two-adic-orbit-convolution/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Estimate the complete fixed-vector scalar S_(2-adic)(U) across the odd cofactor and conductor rows. Use the exact affine block structure, but do not infer a norm saving from period depth, low Fourier support, alignment, or reversal."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-canonical-hard-actual-vector-directional-estimate",
+        "dependencies_added": [
+          "M9-M1-full-two-adic-actual-row-unitary-convolution"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-full-two-adic-orbit-convolution/reports/full_two_adic_actual_symbol_formalization.md",
+            "rounds/codex-managed/m9-m1-full-two-adic-orbit-convolution/reports/full_two_adic_hostile_owner_audit.md",
+            "rounds/codex-managed/m9-m1-full-two-adic-orbit-convolution/candidates/conductor_full_two_adic_orbit_convolution.md",
+            "rounds/codex-managed/m9-m1-full-two-adic-orbit-convolution/reviews/conductor_round101_adjudication.md",
+            "rounds/codex-managed/m9-m1-full-two-adic-orbit-convolution/synthesis.md"
+          ]
+        },
+        "next_action": "Prove cancellation in the exact full two-adic fixed-vector scalar after the odd labels and conductor rows are summed before absolute value. The local operator is unitary and its affine Fourier support supplies no J^(-1/6) norm gain."
+      },
+      {
+        "id": "M9-M1-canonical-hard-actual-symbol-Gram-estimate",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-full-two-adic-orbit-convolution/candidates/conductor_full_two_adic_orbit_convolution.md",
+            "rounds/codex-managed/m9-m1-full-two-adic-orbit-convolution/reviews/conductor_round101_owners_and_capacity.md",
+            "rounds/codex-managed/m9-m1-full-two-adic-orbit-convolution/synthesis.md"
+          ]
+        },
+        "next_action": "Close the fixed actual-vector directional estimate with the complete two-adic unitary convolution retained. Constant-character, lower-period, long-return aligned or reversal, and maximal-period blocks all remain unless a prior owner applies."
+      },
+      {
+        "id": "M9-M1-q8-actual-vector-cross-projection-reduction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-full-two-adic-orbit-convolution/reports/full_two_adic_actual_symbol_formalization.md",
+            "rounds/codex-managed/m9-m1-full-two-adic-orbit-convolution/reviews/conductor_round101_normalization_period.md",
+            "rounds/codex-managed/m9-m1-full-two-adic-orbit-convolution/synthesis.md"
+          ]
+        },
+        "next_action": "Use the q=8 cross-projection only as the nu=3 specialization of the full two-adic unitary convolution. Its aligned return four is prior-owned, but higher two-part aligned returns require their own full owner test."
+      },
+      {
+        "id": "M9-M1-bad-prime-cellwise-period-graph-bound",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-full-two-adic-orbit-convolution/reports/full_two_adic_hostile_owner_audit.md",
+            "rounds/codex-managed/m9-m1-full-two-adic-orbit-convolution/reviews/conductor_round101_owners_and_capacity.md",
+            "rounds/codex-managed/m9-m1-full-two-adic-orbit-convolution/synthesis.md"
+          ]
+        },
+        "next_action": "Apply the certified cell or summable-union degree test to full two-adic periods. A guaranteed period or affine support class alone is a unitary self-return and is not an owner."
+      },
+      {
+        "id": "M9-M1-joint-four-row-separable-self-return-obstruction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-full-two-adic-orbit-convolution/reports/full_two_adic_actual_symbol_formalization.md",
+            "rounds/codex-managed/m9-m1-full-two-adic-orbit-convolution/reports/full_two_adic_hostile_owner_audit.md",
+            "rounds/codex-managed/m9-m1-full-two-adic-orbit-convolution/synthesis.md"
+          ]
+        },
+        "next_action": "Retain the exact full two-adic unitary convolution as a fixed-vector scalar. Do not split its affine Fourier blocks after absolute values or credit their sparsity as an additional transform gain."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round101-full-two-adic-DFT-is-low-rank",
+        "reason": "The normalized Fourier matrix is unitarily equivalent to multiplication by a unimodular physical weight followed by a cyclic shift, so it has full rank and norm one."
+      },
+      {
+        "id": "Round101-twisted-period-support-gives-power-saving",
+        "reason": "Affine Fourier support only decomposes the operator into permuted unitary blocks; the descent normalization exactly restores norm one."
+      },
+      {
+        "id": "Round101-all-aligned-two-adic-slices-are-prior-owned",
+        "reason": "The aligned return is L/gcd(L,v) only after full odd and local alignment, and it can exceed rho_* for higher two-parts."
+      },
+      {
+        "id": "Round101-reversal-is-an-owned-positive-square",
+        "reason": "Reversal is a distinct ordered edge with its own full return order and a Hankel-type Fourier coefficient; it is neither automatically positive nor automatically owned."
+      },
+      {
+        "id": "Round101-mod8-phase-determines-higher-two-part",
+        "reason": "For nu>=4 the reciprocal phase can vary above modulus eight; the exact full 2^nu phase and longer orbit are indispensable."
+      },
+      {
+        "id": "Round101-local-zero-mode-is-the-global-u-zero-owner",
+        "reason": "The global owner removes only the integer u=0. Nonzero modulus multiples and nonzero integers with locally constant characters retain different Fejer weights and shifted actual rows."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1-canonical-hard-actual-vector-directional-estimate",
+        "reason": "The full two-adic factor is now exact, but no fixed-vector cancellation or J^(-1/6) gain is proved."
+      },
+      {
+        "id": "M9-M1-canonical-hard-actual-symbol-Gram-estimate",
+        "reason": "The complete odd-cofactor and conductor scalar remains open."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "The canonical packet remains an alternative global-route child and neither direct blockwise M1 parent is closed."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Round 101 is confined to a local M1 algebraic factor."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "No real-X endpoint or all-denominator estimate is proved."
+      },
+      {
+        "id": "M9",
+        "reason": "Neither M9-M1 nor M9-M2 is closed."
+      },
+      {
+        "id": "GC-target",
+        "reason": "No pointwise estimate or exponent is improved."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 101 replaces the q=8 shadow by the exact all-valuations two-adic actual-row operator, proves its twisted-period structure and full-rank unitarity, and corrects blanket aligned ownership. It proves no analytic saving."
+  }
+}

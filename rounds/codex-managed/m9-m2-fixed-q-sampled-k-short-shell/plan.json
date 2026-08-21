@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "round_index": 104,
+  "campaign_id": "m9-m2-fixed-q-sampled-k-short-shell",
+  "title": "Uniform fixed-q sampled-k interface and short-shell closure",
+  "starting_graph_sha256": "d2502a33224fbcb1fe3b8ffe0ea1227b953112fa0c98216597e8b0ccfa887372",
+  "objective": "Generalize the proved singleton sampled-k theorem to literal q~D rows, determine its exact Gram consequence, and certify the maximal short-shell range without claiming polynomial q-cancellation.",
+  "max_concurrency": 3,
+  "resource_policy": {
+    "analytical_algebraic_minimum_percent": 95,
+    "numerical_experimental_maximum_percent": 5,
+    "planned_numerical_percent": 0
+  },
+  "tasks": [
+    "blind_fixed_q_rederivation",
+    "fixed_q_sampled_k_attack",
+    "fixed_q_hostile_source_audit"
+  ],
+  "exit_gate": "Prove or refute the uniform literal fixed-q row bound, compute the exact D-loss in the Gram, and either close a fixed/polylogarithmic short shell or isolate a strictly smaller polynomial-shell survivor."
+}

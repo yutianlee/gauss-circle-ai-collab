@@ -1,0 +1,202 @@
+{
+  "schema_version": 1,
+  "round_index": 95,
+  "round_type": "strict_sub_one_third_cluster_source_fork",
+  "campaign_id": "gc-strict-sub-one-third-cluster-source-fork",
+  "title": "Fixed non-subcoherent cluster and strict source fork",
+  "status": "complete",
+  "max_concurrency": 3,
+  "coordinator": "Codex",
+  "starting_graph_sha256": "e3233f94ee0630b28c21ba102a0ee0fc55016858af6fbd61e80ea0e264128104",
+  "resource_policy": {
+    "analytical_algebraic_minimum_percent": 90,
+    "numerical_experimental_maximum_percent": 10,
+    "planned_numerical_percent": 0,
+    "literature_policy": "Use primary sources only for the Li--Yang theorem chain, versions, journal publication, errata, and author clarification. A direct theorem and the internal cluster route remain logically separate."
+  },
+  "target_obligations": [
+    "GC-nonsubcoherent-actual-cluster-local-moment",
+    "M9-short-window-triangular-cluster-kernel",
+    "GC-one-sided-persistence-local-bridge",
+    "GC-partial-one-third",
+    "Li-Yang-source-audit",
+    "M9-M1",
+    "M9-M2",
+    "GC-target"
+  ],
+  "frozen_target": {
+    "question": "At W=Y^(7/16), can the literal actual-coefficient random-cell energy be bounded by Y^(1/2+epsilon), giving the internal exponent 5/16, or can the claimed Li--Yang exponent 0.314483... be independently certified as an external theorem?",
+    "reference_formula": "C(c)=int_0^1 sum_nu |sum_(lambda in C_(nu,theta)) a_lambda(c)e(lambda c)|^2 dtheta << Y^(1/2+epsilon), with M1 lambda=h/d and M2 lambda=h/(4d). Then Q<<W Y^(1/2+epsilon) and |P(X)|<<X^(5/16+epsilon).",
+    "quantities": [
+      "W=Y^(7/16)",
+      "target local mass Q=Y^(15/16+epsilon)",
+      "target internal exponent 5/16",
+      "minimax frequency diameter Y^(-1/3)",
+      "minimax random-cell count Y^(5/48)",
+      "M1 frequency h/d",
+      "M2 frequency h/(4d)",
+      "actual Vaaler coefficients, chi_4 placement, both signs, floors, profiles, hard top and stars",
+      "Li--Yang claimed theta=0.3144831759741..."
+    ],
+    "scope": [
+      "retain equal-frequency lift cross terms and nearby unequal fractions separately",
+      "retain literal M1/M2 coefficient systems and all owners",
+      "do not treat the random-cell identity or coefficient-blind spacing as cancellation",
+      "do not infer either canonical core, M9, endpoint uniformity, or the quarter target",
+      "do not combine an external direct theorem with an incomplete internal cluster proof"
+    ]
+  },
+  "completion_criteria": [
+    "Re-derive the 5/16 exponent and Y^(15/16) local target.",
+    "Audit diagonal and exact reduced-fraction multiplicities.",
+    "Audit near unequal rational frequencies and both signs.",
+    "Prove the fixed actual cluster estimate or isolate the first smaller signed survivor with an exponent ledger.",
+    "Retain moving floors, heights, prefix, hard top, stars, bottom, and R5 ownership.",
+    "Resolve or sharply classify the Li--Yang T^(-7/16) versus T^(7/16) source discrepancy.",
+    "Map every primary-source hypothesis in any promoted direct theorem.",
+    "Complete clean blind, analytic, and hostile/source reports.",
+    "Make one conductor decision on whether any strict sub-one-third theorem is certified."
+  ],
+  "controls": [
+    "five_sixteenths_exponent",
+    "local_mass_fifteen_sixteenths",
+    "M1_M2_factor_four",
+    "equal_frequency_lifts",
+    "diagonal_mass",
+    "near_unequal_rationals",
+    "chi4_and_two_sided_frequency",
+    "minimax_cell_count",
+    "moving_height_floor",
+    "hard_top_and_stars",
+    "bottom_and_R5_ownership",
+    "all_block_assembly",
+    "arbitrary_coefficient_false_shadow",
+    "canonical_core_nonimplication",
+    "Li_Yang_discrepancy_convention",
+    "Li_Yang_real_parameter_scope",
+    "Li_Yang_exponent_optimization",
+    "Li_Yang_auxiliary_ranges",
+    "Li_Yang_rendered_and_TeX_forms",
+    "external_internal_route_separation",
+    "source_version_erratum_map"
+  ],
+  "tasks": [
+    {
+      "id": "blind_fixed_cluster_rederivation",
+      "role": "blind_rederiver",
+      "access_mode": "statement_only",
+      "status": "completed_clean",
+      "target": "Independently rederive the fixed-alpha cluster target, test elementary closure routes, and isolate the smallest exact surviving correlation or proof.",
+      "context_files": [
+        "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/derivation_packet.md"
+      ],
+      "excluded_context": [
+        "state/proof_obligations.yml",
+        "state/best_proof_draft.md",
+        "all strategy files",
+        "all source cards and web sources",
+        "all prior reports, candidates, reviews, syntheses, and sibling Round-95 files"
+      ],
+      "required_controls": [
+        "five_sixteenths_exponent",
+        "local_mass_fifteen_sixteenths",
+        "M1_M2_factor_four",
+        "equal_frequency_lifts",
+        "diagonal_mass",
+        "near_unequal_rationals",
+        "chi4_and_two_sided_frequency",
+        "minimax_cell_count",
+        "all_block_assembly",
+        "canonical_core_nonimplication"
+      ],
+      "required_output": [
+        "Exactly seven numbered report sections.",
+        "A full proof or exact first failure for every displayed target, with an exponent ledger and false-shadow control.",
+        "Write only rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/reports/blind_fixed_cluster_rederivation.md."
+      ],
+      "report_path": "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/reports/blind_fixed_cluster_rederivation.md"
+    },
+    {
+      "id": "actual_rational_cluster_attack",
+      "role": "discovery",
+      "access_mode": "selected_context",
+      "status": "completed_clean_after_format_repair",
+      "target": "Prove the literal W=Y^(7/16) actual M1/M2 cluster estimate or reduce it to a quantitatively smaller signed rational-correlation survivor.",
+      "context_files": [
+        "protocol.md",
+        "state/proof_obligations.yml",
+        "state/best_proof_draft.md",
+        "state/active_campaign.yml",
+        "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/derivation_packet.md",
+        "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/synthesis.md",
+        "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/candidates/conductor_exact_cluster_kernel.md",
+        "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/reviews/conductor_round94_local_kernel.md",
+        "rounds/codex-managed/m9-m2-global-second-moment-exceptional-set/reports/moving_coefficient_moment_attack.md",
+        "rounds/codex-managed/gc-unconditional-exponent-extraction/candidates/conductor_one_third_assembly.md"
+      ],
+      "required_controls": [
+        "five_sixteenths_exponent",
+        "local_mass_fifteen_sixteenths",
+        "M1_M2_factor_four",
+        "equal_frequency_lifts",
+        "diagonal_mass",
+        "near_unequal_rationals",
+        "chi4_and_two_sided_frequency",
+        "minimax_cell_count",
+        "moving_height_floor",
+        "hard_top_and_stars",
+        "bottom_and_R5_ownership",
+        "all_block_assembly",
+        "arbitrary_coefficient_false_shadow",
+        "canonical_core_nonimplication"
+      ],
+      "required_output": [
+        "Exactly seven numbered report sections.",
+        "A proof or smallest exact signed survivor, complete exponent ledger, actual-symbol controls, and graph-ready recommendation.",
+        "Write only rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/reports/actual_rational_cluster_attack.md."
+      ],
+      "report_path": "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/reports/actual_rational_cluster_attack.md"
+    },
+    {
+      "id": "li_yang_strict_source_audit",
+      "role": "source_auditor",
+      "access_mode": "selected_context",
+      "status": "completed_clean",
+      "target": "Decide whether the full Li--Yang direct exponent is a certifiable external theorem by resolving its disputed range and auditing the complete primary-source chain.",
+      "context_files": [
+        "protocol.md",
+        "state/proof_obligations.yml",
+        "state/active_campaign.yml",
+        "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/derivation_packet.md",
+        "sources/li_yang_2023.md",
+        "rounds/web-research-test/Li-Yang-arXiv-2308.14859v2.tex",
+        "rounds/codex-managed/m9-canonical-core-formalization/reviews/conductor_round92_source_and_graph_hygiene.md",
+        "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/reviews/conductor_round94_source_scope.md"
+      ],
+      "required_controls": [
+        "Li_Yang_discrepancy_convention",
+        "Li_Yang_real_parameter_scope",
+        "Li_Yang_exponent_optimization",
+        "Li_Yang_auxiliary_ranges",
+        "Li_Yang_rendered_and_TeX_forms",
+        "source_version_erratum_map",
+        "external_internal_route_separation",
+        "canonical_core_nonimplication"
+      ],
+      "required_output": [
+        "Exactly seven numbered report sections.",
+        "A source-card-ready primary theorem map, discrepancy resolution or first exact source seam, and promote/retain/reject recommendation.",
+        "Write only rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/reports/li_yang_strict_source_audit.md."
+      ],
+      "report_path": "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/reports/li_yang_strict_source_audit.md"
+    }
+  ],
+  "review_seams": [
+    {"id": "normalization", "requirement": "Check W, Q, 5/16, cell count, and M1/M2 factor four exactly."},
+    {"id": "arithmetic", "requirement": "Check equal lifts, diagonal, near unequal fractions, chi_4, and both signs before any norm inequality."},
+    {"id": "moving_symbol", "requirement": "Retain floors, height basis, prefix, hard top, stars, bottom, and R5 ownership."},
+    {"id": "capacity", "requirement": "Compare every proposed bound to Y^(1/2) cluster energy and state the exact surviving power."},
+    {"id": "source", "requirement": "Resolve the Li--Yang range discrepancy from primary artifacts and audit the entire final theorem chain."},
+    {"id": "scope", "requirement": "Separate internal cluster, external exponent, canonical cores, M9, and quarter target."}
+  ]
+}

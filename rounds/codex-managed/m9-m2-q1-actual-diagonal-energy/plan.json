@@ -1,0 +1,29 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 103,
+    "round_type": "m9_m2_singleton_q1_actual_diagonal_adjudication",
+    "campaign_id": "m9-m2-q1-actual-diagonal-energy",
+    "title": "Singleton q=1 complete actual-diagonal adjudication",
+    "status": "active",
+    "max_concurrency": 3,
+    "starting_graph_sha256": "902eb43bc0fc72b1c3e080dac5cd89757d17e2eaa1f72d606b89afbecff92935",
+    "objective": "Prove the complete q=1 actual diagonal, disprove this sufficient Gram lemma on a literal actual subfamily, or reduce it to a strictly smaller signed kernel.",
+    "tasks": [
+      {"id": "blind_q1_diagonal_rederivation", "role": "blind_rederiver", "access_mode": "statement_only", "status": "running", "report_path": "rounds/codex-managed/m9-m2-q1-actual-diagonal-energy/reports/blind_q1_diagonal_rederivation.md"},
+      {"id": "q1_stationary_energy_attack", "role": "discovery", "access_mode": "selected_context", "status": "running", "report_path": "rounds/codex-managed/m9-m2-q1-actual-diagonal-energy/reports/q1_stationary_energy_attack.md"},
+      {"id": "q1_actual_symbol_hostile_source_audit", "role": "source_auditor", "access_mode": "selected_context", "status": "running", "report_path": "rounds/codex-managed/m9-m2-q1-actual-diagonal-energy/reports/q1_actual_symbol_hostile_source_audit.md"}
+    ],
+    "exit_gate": "A uniform actual-symbol diagonal estimate, a literal actual counterexample or lower obstruction to this sufficient lemma, a target-safe disjoint subrange, or a rigorous reduction/no-go with a strictly smaller named kernel."
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "902eb43bc0fc72b1c3e080dac5cd89757d17e2eaa1f72d606b89afbecff92935",
+    "generated_at": "2026-08-17T20:30:00+08:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

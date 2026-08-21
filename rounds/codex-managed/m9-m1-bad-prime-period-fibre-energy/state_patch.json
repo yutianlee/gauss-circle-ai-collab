@@ -1,0 +1,116 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-bad-prime-cellwise-period-graph-bound",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Bad-prime complete cells have a target-safe directed-degree package",
+        "status": "proved_internal",
+        "statement_tex": "Fix the transition-flattened smooth nonaxial M1 first-band hard survivor after the Round-87 same-group and Round-88 coarse/good-prime deletions, with normalized physical rows, centered Fejer ownership, and the actual fourfold symbol retained. For unit local phase, reciprocal periodicity is equivalent to vanishing of the complete-mask derivative on every allowed residue. The complete successful reduction counts at p=2,3,5,7 are 1,15,25,13, with the normalized rays in the Round-89 table; every transverse p=3 or p=5 ray has exact reciprocal depth one at every prime-power lift. Odd nonunit factors and the full 2-part have the guaranteed local periods stated in the Round-89 synthesis, used only as routing identities. For a tensor sigma of selected complete reduction cells, put mathfrak_b_sigma=prod_(p^nu in S) p^2/eta_(omega_p), where eta=1 for the zero cell and for rays whose A- and B_2-coordinates are both nonzero, and eta=p-1 otherwise. Both physical directed degrees satisfy Delta_sigma<=M^2/mathfrak_b_sigma. Hence mathfrak_b_sigma>=M^2/rho_*^2 is target-safe under the accepted graph estimate. A union Sigma is target-safe under the explicit sufficient condition sum_(sigma in Sigma)mathfrak_b_sigma^(-1)<=rho_*^2/M^2; period depth alone gives no stronger union estimate. The conditional family M=3^nu, omega=[1:2:1], M/3<=rho_*<M is a nonempty newly owned example. Residual cells failing this threshold, the full nonunit union, affine-only, projection-only, and aperiodic factors remain open. At top conductor a full-degree residual exceeds the target degree by J^(1/6), so no first-band, M9-M1, M9, or exponent closure follows.",
+        "dependencies": [
+          "M9-M1-cross-group-period-depth-subaggregate-bound",
+          "M9-M1-centred-dual-difference-cubic-shell-bound"
+        ],
+        "implies": [
+          "M9-M1-residual-upper-conductor-offdiagonal-reduction"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-bad-prime-period-fibre-energy/reports/bad_prime_period_graph_attack.md",
+            "rounds/codex-managed/m9-m1-bad-prime-period-fibre-energy/reports/blind_bad_prime_fibre_rederivation.md",
+            "rounds/codex-managed/m9-m1-bad-prime-period-fibre-energy/reports/bad_prime_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m1-bad-prime-period-fibre-energy/candidates/conductor_bad_prime_cellwise_graph_lemma.md",
+            "rounds/codex-managed/m9-m1-bad-prime-period-fibre-energy/controls/conductor_bad_prime_table_check.md",
+            "rounds/codex-managed/m9-m1-bad-prime-period-fibre-energy/reviews/conductor_round89_mask_and_degree.md",
+            "rounds/codex-managed/m9-m1-bad-prime-period-fibre-energy/reviews/conductor_round89_capacity_no_go.md",
+            "rounds/codex-managed/m9-m1-bad-prime-period-fibre-energy/reviews/conductor_round89_adjudication.md",
+            "rounds/codex-managed/m9-m1-bad-prime-period-fibre-energy/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Do not continue cell-by-cell period peeling. Formalize the exact residual capacity and test whether the complete signed actual-symbol operator self-returns to an accepted M1 core or requires a genuinely new signed interaction theorem."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-residual-upper-conductor-offdiagonal-reduction",
+        "statement_tex": "Let J=sqrt(X), Q=J^(2/5), T=J^(3/5), and J^(13/18)<C<=J. In the first band J^(13/18)<C<=J^(3/4), transition errors and axes are separately target-safe. The same-residue mode, literal dual d=0, every 0<|d|<=D_1=floor(J^(87/140)), and the outer support collar are target-safe; Round 87 removes the full-factor same-group package; Round 88 removes R_*<=rho_* and sufficiently deep good-prime masked-period fibres. Round 89 classifies the complete p=2,3,5,7 reciprocal masks and proves that each selected complete cell tensor has both directed degrees at most M^2/mathfrak_b_sigma, so every cell with mathfrak_b_sigma>=M^2/rho_*^2, or every union satisfying sum mathfrak_b_sigma^(-1)<=rho_*^2/M^2, is target-safe. The exact first-band residual retains cells failing this threshold, the full nonunit-K union, affine/full-phase and projection-only periods, shallow good-prime lifts, and genuinely aperiodic traces, with the actual fourfold symbol and Q^(-5/12) retained. At top conductor its full-degree capacity exceeds target by J^(1/6). On J^(3/4)<C<=J, principal main, transition error, and axes remain open. No full first-band, upper-conductor, cone-edge, M9-M1, M9, or exponent estimate is proved.",
+        "dependencies_added": [
+          "M9-M1-bad-prime-cellwise-period-graph-bound"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-bad-prime-period-fibre-energy/reports/bad_prime_period_graph_attack.md",
+            "rounds/codex-managed/m9-m1-bad-prime-period-fibre-energy/reports/blind_bad_prime_fibre_rederivation.md",
+            "rounds/codex-managed/m9-m1-bad-prime-period-fibre-energy/reports/bad_prime_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m1-bad-prime-period-fibre-energy/synthesis.md"
+          ]
+        },
+        "next_action": "Formalize the canonical signed residual and its capacity. Prove a self-return/barrier theorem or a new signed actual-symbol interaction; do not schedule another purely local period classification."
+      },
+      {
+        "id": "M9-M1",
+        "dependencies_added": [
+          "M9-M1-bad-prime-cellwise-period-graph-bound"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-bad-prime-period-fibre-energy/synthesis.md"
+          ]
+        },
+        "next_action": "Run the accepted capacity/self-return fork for the canonical M1 residual, then extract the strongest unconditional exponent from the currently closed parameter region."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round89-period-depth-controls-full-physical-degree",
+        "reason": "Exact reciprocal period depth controls Fourier routing but not the number of physical partner labels; the q=8 and full nonunit controls retain full degree."
+      },
+      {
+        "id": "Round89-full-bad-prime-nonunit-union-bound",
+        "reason": "The rigorous union bound pays the sum of cellwise degrees, and at top conductor the full union remains J^(1/6) above target capacity."
+      },
+      {
+        "id": "Round89-full-2adic-period-completes-first-band",
+        "reason": "The full 2-adic period identities are routing statements; without a directed-degree or signed-symbol gain they do not close the union."
+      },
+      {
+        "id": "Round89-frequency-sparsity-reduces-centered-Fejer-mass",
+        "reason": "The p^(2j) trace descent and frequency support rescale the centered Fejer kernel without reducing its total mass."
+      },
+      {
+        "id": "Round89-coefficientwise-square-root-bad-prime-trace",
+        "reason": "Exact q=4, q=8, and q=9 controls exhibit large lower-conductor traces; only a joint actual-symbol estimate can supply the missing gain."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "The cellwise package is nonempty, but the complete first-band residual, upper conductor, cone edges, other radial sectors, and endpoint uniformity remain open."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Round 89 is confined to the M1 first-band hard cross-group operator."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1 and M9-M2 remain open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "No new conductor range or global exponent is proved."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 89 proves a complete bad-prime mask classification and a nonempty target-safe cellwise graph package, while the hostile controls quantify the exact J^(1/6) limit of further local peeling. The full first band and exponent remain open, but the result supplies a rigorous stopping rule and a canonical next fork."
+  }
+}

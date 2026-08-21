@@ -1,0 +1,287 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "GC-one-sided-persistence-local-bridge",
+        "type": "lemma",
+        "track": "proof_infrastructure",
+        "title": "One-sided persistence and exact local-moment bridge",
+        "status": "proved_internal",
+        "statement_tex": "Let P(t)=N(sqrt(t))-pi t with the inclusive integer-jump convention. For u>=0, P(x+u)>=P(x)-pi u and P(x-u)<=P(x)+pi u whenever x-u>=0. Thus a positive value persists to the right and a negative value to the left. If Q(Y,W) bounds every relevant length-W local square integral near x asymp Y and M=|P(x)|, then (M^2/4)min(W,M/(2pi))<=Q(Y,W), hence M<<Q^(1/3)+(Q/W)^(1/2). If W=Y^alpha, E=Y^(beta+o(1)), and Q<<WY^(1/2+delta)+E, then with q=max(alpha+1/2+delta,beta) the delivered exponent is max(q/3,(q-alpha)/2). In particular the standard local scale gives max(1/4,1/6+alpha/3); at fixed alpha=1/4+sigma it gives 1/4+sigma/3, while a strict quarter bound on a longer window requires total Q<<Y^(3/4+o(1)). Uniform unit-window L2 control is exponent-wise equivalent to uniform pointwise control. The accepted global moment alone does not imply the local supremum.",
+        "dependencies": [],
+        "implies": [
+          "GC-integer-one-separated-density-one",
+          "GC-nonsubcoherent-actual-cluster-local-moment"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/reports/blind_pointwise_bridge_rederivation.md",
+            "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/candidates/conductor_persistence_and_local_bridge.md",
+            "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/reviews/conductor_round94_persistence_sampling.md",
+            "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/reviews/conductor_round94_adjudication.md",
+            "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/reports/pointwise_bridge_hostile_source_audit.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use the exact two-branch formula for every future local-moment proposal. Do not suppress the cubic branch or infer a local supremum from a global average."
+      },
+      {
+        "id": "GC-integer-one-separated-density-one",
+        "type": "theorem",
+        "track": "proof_infrastructure",
+        "title": "Integer-cell and one-separated density-one quarter theorem",
+        "status": "proved_internal",
+        "statement_tex": "For every integer n and n<=t<n+1, P(t)=P(n)-pi(t-n), so int_n^(n+1)P(t)^2dt=(P(n)-pi/2)^2+pi^2/12. For every one-separated set Xset in [Y,2Y], sign-oriented unit persistence intervals have bounded overlap and sum_(x in Xset)|P(x)|^2<<_epsilon Y^(3/2+epsilon). In particular sum_(Y<=n<=2Y)|P(n)|^2<<_epsilon Y^(3/2+epsilon), and for every eta>0 the number of integers n in [Y,2Y] with |P(n)|>Y^(1/4+eta) is <<_(epsilon,eta)Y^(1-2eta+epsilon). Also |P(t)|<=|P(n)|+pi on n<=t<n+1, so the uniform real theorem is equivalent up to O(1) to the theorem at every integer. This is a discrete density-one theorem and does not bound a prescribed integer.",
+        "dependencies": [
+          "GC-global-real-second-moment-density-one-quarter",
+          "GC-one-sided-persistence-local-bridge"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/reports/blind_pointwise_bridge_rederivation.md",
+            "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/candidates/conductor_persistence_and_local_bridge.md",
+            "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/reviews/conductor_round94_persistence_sampling.md",
+            "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/reviews/conductor_round94_adjudication.md",
+            "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/reports/pointwise_bridge_hostile_source_audit.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use this only for discrete exceptional counts and for reducing uniform real control to prescribed integers. It does not remove any individual exceptional integer."
+      },
+      {
+        "id": "M9-short-window-triangular-cluster-kernel",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Exact short-window triangular rational-frequency cluster kernel",
+        "status": "proved_internal",
+        "statement_tex": "For a fixed finite exponential polynomial S(t)=sum_lambda a_lambda e(lambda t), an interval I of length W and center c satisfies int_I|S(t)|^2dt<=(pi^2/4)W int_0^1 sum_nu |sum_(lambda in C_(nu,theta))a_lambda e(lambda c)|^2 dtheta, where C_(nu,theta)=[(nu+theta)/W,(nu+1+theta)/W). This is the exact sinc-square triangular form; equal frequencies are aggregated with all cross terms. The literal M1 frequencies are h/d and the literal M2 frequencies are h/(4d). On every window W<=Y^(1/2), the moving denominator prefix and each dyadic Vaaler height have O(1) changes, so all scales form O(log Y) fixed-symbol strata; floors, hard top, stars, both signs, chi_4, bottom, and R5 ownership are retained. At the accepted minimax block D=Y^(1/2),L=Y^(1/6), the frequency diameter is O(Y^(-1/3)). If W=Y^alpha with alpha<1/3, all frequencies occupy one random cell for measure 1-o(1), so the cluster form is >=(1-o(1))|S(c)|^2 and supplies no smoothing gain. The obstruction is only subcoherent; it does not cover 1/3<alpha<1/2.",
+        "dependencies": [
+          "H4",
+          "M9-M2-beta-algebra",
+          "M9-M1-M2-moving-global-second-moment",
+          "M9-direct-one-third-envelope"
+        ],
+        "implies": [
+          "GC-nonsubcoherent-actual-cluster-local-moment"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/candidates/conductor_exact_cluster_kernel.md",
+            "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/reviews/conductor_round94_local_kernel.md",
+            "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/reviews/conductor_round94_adjudication.md",
+            "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/reports/pointwise_bridge_hostile_source_audit.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use the fixed kernel only as an exact reduction. The remaining input is signed cancellation within the actual rational cells, not the Fourier identity itself."
+      },
+      {
+        "id": "GC-nonsubcoherent-actual-cluster-local-moment",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Non-subcoherent actual M1/M2 cluster local moment",
+        "status": "open",
+        "statement_tex": "Fix 1/3<alpha<1/2 and W=Y^alpha. For every center c asymp Y and every fixed-symbol stratum of every literal M1/M2 dyadic block, with M1 frequency h/d, M2 frequency h/(4d), actual Vaaler coefficient, chi_4 on its literal coordinate, both signs, floors, profiles, hard top and stars, prove int_0^1 sum_nu |sum_(lambda in C_(nu,theta))a_lambda(c)e(lambda c)|^2dtheta<<_epsilon Y^(1/2+epsilon), uniformly with logarithmic all-block assembly. Together with bottom and R5 owners this gives sup_(|I|=W)int_I|P(t)|^2dt<<_epsilon WY^(1/2+epsilon), and the persistence bridge gives P(X)<<_epsilon X^(1/6+alpha/3+epsilon)<X^(1/3+epsilon). At alpha<1/3 the minimax block is subcoherent and this estimate is already pointwise-hard; at alpha>=1/2 the standard local scale gives no improvement over one third. This candidate is a stepping-stone below one third, not the quarter target.",
+        "dependencies": [
+          "H1-H3",
+          "H4",
+          "R5-Full",
+          "GC-one-sided-persistence-local-bridge",
+          "M9-short-window-triangular-cluster-kernel"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/reviews/conductor_round94_local_kernel.md",
+            "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/reports/pointwise_bridge_hostile_source_audit.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Attack a fixed alpha just below one half using the actual chi_4-weighted rational-cell square. Any proof must beat the Popov/Nowak additive Y-scale error and preserve the literal M1/M2 coefficient systems."
+      },
+      {
+        "id": "Popov-2024-local-moment-source-audit",
+        "type": "source_audit",
+        "track": "source_audit",
+        "title": "Popov 2024 local second-moment source audit",
+        "status": "proved_external_dependency",
+        "statement_tex": "Popov 2024 Theorem 10(ii) defines E_2(T,H)=(2H)^(-1)int_(T-H)^(T+H)P(x)^2dx and proves E_2(T,H)<<sqrt(T)+T(log T)^2/H for H<=T/2. Thus total local mass is <<Hsqrt(T)+T(log T)^2. For H=T^alpha, alpha<=1/2, the additive term has exponent q=1; the exact persistence bridge gives max(1/3,(1-alpha)/2), exactly one third on 1/3<=alpha<=1/2 and worse below. Theorem 10(iii)-(iv) begins the fourth and sixth local moments at H>=T^(1/2). These theorems do not improve the accepted one-third exponent and do not estimate the actual M1/M2 rational clusters.",
+        "dependencies": [],
+        "implies": [],
+        "blockers": [],
+        "source_card": "sources/popov_2024_local_moments.md",
+        "evidence": {
+          "positive": [
+            "sources/popov_2024_local_moments.md",
+            "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/reviews/conductor_round94_source_scope.md",
+            "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/reports/pointwise_bridge_hostile_source_audit.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Keep this as a completed guardrail. A useful local theorem must remove a fixed power from the additive T-scale term or prove the actual signed cluster bound directly."
+      }
+    ],
+    "update": [
+      {
+        "id": "GC-global-real-second-moment-density-one-quarter",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/reports/blind_pointwise_bridge_rederivation.md",
+            "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/reviews/conductor_round94_persistence_sampling.md",
+            "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/synthesis.md"
+          ]
+        },
+        "next_action": "The global moment now has exact integer-cell and one-separated consequences, but no prescribed-point consequence beyond the conditional local bridge. Seek the actual non-subcoherent cluster estimate or a direct canonical-core theorem."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/synthesis.md"
+          ]
+        },
+        "next_action": "The accepted uniform exponent remains one third. Any local-moment improvement must prove the actual signed cluster bound for some 1/3<alpha<1/2; the quarter window alpha=1/4+o(1) is subcoherent and pointwise-hard."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/reviews/conductor_round94_local_kernel.md",
+            "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/synthesis.md"
+          ]
+        },
+        "next_action": "Persistence and exact local clustering do not remove a prescribed endpoint. Prove either the non-subcoherent signed cluster estimate for a sub-one-third deliverable or the full target-scale canonical M1/M2 pointwise cores."
+      },
+      {
+        "id": "M9-M2-fourth-moment-average-to-pointwise",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/reports/blind_pointwise_bridge_rederivation.md",
+            "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/reviews/conductor_round94_local_kernel.md"
+          ]
+        },
+        "next_action": "Use the sharp two-branch persistence formula. Local windows below Y^(1/3) are pointwise-hard on the minimax block; 1/3<alpha<1/2 remains a possible sub-one-third route but no cluster theorem is proved."
+      },
+      {
+        "id": "M9-M2-local-fourth-moment-LFM",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/reviews/conductor_round94_local_kernel.md"
+          ]
+        },
+        "next_action": "Do not treat the fixed triangular identity as a moment estimate. The exact missing input is cancellation in the actual rational cells, with the target quarter range still subcoherent."
+      },
+      {
+        "id": "M9-M1",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/reviews/conductor_round94_local_kernel.md"
+          ]
+        },
+        "next_action": "The local kernel retains the literal M1 frequency h/d and chi_4(d), but proves no signed cell cancellation. Continue with the canonical hard actual-symbol Gram estimate and its outside packets."
+      },
+      {
+        "id": "M9-M2",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/reviews/conductor_round94_local_kernel.md"
+          ]
+        },
+        "next_action": "The local kernel retains the literal M2 frequency h/(4d) and chi_4(h), but proves no signed cell cancellation. Continue with the canonical joint density-discrepancy energy and remaining packets."
+      },
+      {
+        "id": "Li-Yang-source-audit",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/reviews/conductor_round94_source_scope.md"
+          ]
+        },
+        "next_action": "Resolve the literal v2 auxiliary-range inconsistency before treating the claimed 0.314483 exponent as a certified external dependency. Even if certified, it remains above one quarter and does not prove the actual cluster or canonical core."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round94-global-mean-square-implies-uniform-local-supremum",
+        "reason": "Fubini controls only the average over window positions. A monotone inclusive-jump spike model has global moment Y^(3/2) while a prescribed short window has much larger mass."
+      },
+      {
+        "id": "Round94-fixed-sigma-standard-local-scale-proves-quarter",
+        "reason": "At W=Y^(1/4+sigma), Q<<WY^(1/2) gives exponent 1/4+sigma/3 through the cubic persistence branch. Strict quarter requires sigma=o(1) or total Q<<Y^(3/4+o(1))."
+      },
+      {
+        "id": "Round94-subcoherence-no-go-covers-all-bridge-improving-windows",
+        "reason": "The minimax band is subcoherent only for alpha<1/3, while the sharp persistence bridge improves one third throughout alpha<1/2. The range 1/3<alpha<1/2 is genuinely open."
+      },
+      {
+        "id": "Round94-common-M1-M2-frequency-h-over-4d",
+        "reason": "The literal M1 phase is e(hX/d), while M2 is e(hX/(4d)). A common frequency requires an explicit relabelling with the coefficient and support changed accordingly."
+      },
+      {
+        "id": "Round94-random-cell-identity-is-arithmetic-cancellation",
+        "reason": "The triangular random-cell formula is an exact positive re-expression. It supplies no cancellation inside a cell and is pointwise-strength in the subcoherent minimax range."
+      },
+      {
+        "id": "Round94-Popov-local-second-moment-improves-one-third",
+        "reason": "The additive T(log T)^2 term has power exponent one on every H<=T^(1/2) window and returns exactly one third through the sharp bridge."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1-canonical-hard-actual-symbol-Gram-estimate",
+        "reason": "The short-window Fourier identity does not estimate the fixed-X four-row Gram operator."
+      },
+      {
+        "id": "M9-M2-top-endpoint-density-discrepancy-energy",
+        "reason": "The short-window Fourier identity does not supply the required rho^(-1/2) gain in the transformed fixed-X density-discrepancy energy."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "Discrete density one and conditional local bridges do not control every endpoint."
+      },
+      {
+        "id": "M9",
+        "reason": "Neither pointwise M1 nor pointwise M2 is proved."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The bridge still requires M9 at exponent one quarter."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The exact local interfaces and discrete density-one theorem do not remove prescribed exceptional points or prove the quarter exponent."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 8,
+    "calibration_score": 10,
+    "reason": "Round 94 proves the sharp prescribed-point persistence bridge, exact integer-cell and one-separated density-one theorem, and the exact triangular rational-cluster reduction with a scoped subcoherence barrier. It isolates a genuine 1/3<alpha<1/2 cluster stepping-stone, while correctly recording that no local cancellation theorem or uniform exponent improvement has been proved."
+  }
+}

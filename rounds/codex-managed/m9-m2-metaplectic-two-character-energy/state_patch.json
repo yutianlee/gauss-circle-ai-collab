@@ -1,0 +1,162 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-metaplectic-metric-functional-calculus-return",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Complete metric Fresnel functional calculus and two-character Gram return",
+        "status": "proved_internal",
+        "statement_tex": "For the literal collar-extracted hard top M2 coefficient, put c=X/(2gk), K_alpha(u)=e(sgn(alpha)/8)(2|alpha|)^(-1/2)e(-u^2/(4alpha)), T_alpha f=K_alpha*f, and T_0=I. In tempered distributions, Fourier(T_alpha f)(y)=e(alpha y^2)Fourier(f)(y), T_(-alpha)=T_alpha^(-1)=T_alpha^*, and K_alpha tends to delta_0. For the complete punctured metric window W_R(t)=sum_r W_hat_R(r)e(rt), including W_hat_R(0)=mu_R, sum_r W_hat_R(r)T_(rc)=Fourier^(-1) M_(W_R(cy^2)) Fourier exactly. Thus its L2 norm is int |W_R(cy^2)|^2|Fourier(f)(y)|^2dy and its operator norm is ||W_R||_infinity, independent of rho; at y=sqrt(s)-sqrt(h) it reconstructs W_R(Lambda/k). A second quadratic chirp remains in the same metaplectic family with Jacobian |1-4alpha beta|^(-1/2) and a distributional caustic. The signed linear ray factor is chi_4(a)chi_4(a+2q)=(-1)^q, but in the fixed-a shift-v Gram the Fejer sign times the two character pairs is identically one, so no primitive-character autocorrelation remains. At fixed k the sharp ratio band (1-k/J)^(-1)<sqrt(b/a)<1+2k/J has an exact finite triangular Fourier separation of l1 cost O(log N), but its rank factors are jagged and its continuous Mellin kernel has a 1/xi tail. Exact owner conjugation preserves one-count linearly but the accepted aggregate owner bound supplies neither blockwise add-transform-subtract control nor Gram cross energies. At fixed lift the local character dual length is JG and squared coefficient mass is A. Consequently Gaussian separation, separate metric modes, Plancherel, character B-processes, generic theta notation, and transform inversion supply no rho^(-1/2) linear or rho^(-1) energy gain. The actual directional linear or cross-q Gram estimate remains open.",
+        "dependencies": [
+          "M9-M2-character-factor",
+          "M9-M2-top-endpoint-actual-symbol-variation",
+          "M9-M2-top-endpoint-strict-metric-carrier-cancellation",
+          "M9-M2-primitive-ray-q-dispersion-obstruction",
+          "M9-M2-dual-square-signed-principal-owner-conjugation"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-metaplectic-two-character-energy/reports/blind_two_character_energy_rederivation.md",
+            "rounds/codex-managed/m9-m2-metaplectic-two-character-energy/reports/metaplectic_two_character_attack.md",
+            "rounds/codex-managed/m9-m2-metaplectic-two-character-energy/reports/two_character_spectral_source_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-metaplectic-two-character-energy/reviews/conductor_round108_gaussian_and_factorization.md",
+            "rounds/codex-managed/m9-m2-metaplectic-two-character-energy/reviews/conductor_round108_fixed_a_character_and_ratio_gate.md",
+            "rounds/codex-managed/m9-m2-metaplectic-two-character-energy/reviews/conductor_round108_metric_functional_calculus.md",
+            "rounds/codex-managed/m9-m2-metaplectic-two-character-energy/reviews/conductor_round108_adjudication.md",
+            "rounds/codex-managed/m9-m2-metaplectic-two-character-energy/controls/conductor_round108_controls.md",
+            "rounds/codex-managed/m9-m2-metaplectic-two-character-energy/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-metaplectic-two-character-energy/reviews/conductor_round108_linear_completion_candidate.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Prove an actual-vector directional estimate outside absolute values: either the character-neutral fixed-a cross-q Gram or a direct signed linear rho^(-1/2) theorem retaining the finite triangular band and conjugated owners. A fixed-K owner completion requires a new blockwise linear one-count norm before it can be used. Do not repeat Gaussian mode opening, separate theta bounds, character B-process inversion, or scalar metaplectic transforms.",
+        "reason_for_promotion": "The Gaussian normalization was independently rederived; discovery and hostile audits proved the stronger exact complete-mode functional calculus, capacity identity, density ownership, character cancellation in the Gram, triangular mask lemma, corrected dual scale, source non-applicability and inversion controls. The statement explicitly leaves all actual-vector cancellation open."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-primitive-ray-fixed-a-actual-Gram",
+        "dependencies_added": [
+          "M9-M2-metaplectic-metric-functional-calculus-return"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-metaplectic-two-character-energy/reports/blind_two_character_energy_rederivation.md",
+            "rounds/codex-managed/m9-m2-metaplectic-two-character-energy/reports/metaplectic_two_character_attack.md",
+            "rounds/codex-managed/m9-m2-metaplectic-two-character-energy/reports/two_character_spectral_source_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-metaplectic-two-character-energy/synthesis.md"
+          ]
+        },
+        "next_action": "The complete Gaussian metric sum is exactly the original multiplier under Fourier conjugation, and the primitive character cancels in Gram autocorrelation. Prove cancellation of the character-neutral actual cross-q vector, or prove a direct signed linear rho^(-1/2) estimate with all conjugated owners. Separate theta, Plancherel, character-B-process and scalar-transform routes are now closed as sources of free capacity."
+      },
+      {
+        "id": "M9-M2-top-endpoint-density-discrepancy-energy",
+        "dependencies_added": [
+          "M9-M2-metaplectic-metric-functional-calculus-return"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-metaplectic-two-character-energy/reports/metaplectic_two_character_attack.md",
+            "rounds/codex-managed/m9-m2-metaplectic-two-character-energy/reports/two_character_spectral_source_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-metaplectic-two-character-energy/synthesis.md"
+          ]
+        },
+        "next_action": "The metric density and discrepancies are now proved to be one exact Fourier-conjugated multiplier with unchanged capacity. Close the actual directional hard-block estimate before absolute values; do not split metric modes or infer a gain from the Fresnel prefactor."
+      },
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-metaplectic-two-character-energy/synthesis.md"
+          ]
+        },
+        "next_action": "First prove the complete actual directional hard-block estimate. Gaussian/two-character separation is an exact equal-capacity return and does not close the cone."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round108-visible-Fresnel-prefactor-saves-rho",
+        "reason": "The Fresnel kernel is unitary after its scale/Jacobian is retained, and the complete mode sum is exactly Fourier-conjugate to the original metric multiplier."
+      },
+      {
+        "id": "Round108-density-may-be-deleted-or-estimated-separately",
+        "reason": "The density is the r=0 identity component of the exact functional calculus. Removing it changes W_R and loses mandatory cross-mode terms."
+      },
+      {
+        "id": "Round108-fixed-a-Gram-retains-two-character-orthogonality",
+        "reason": "The Fejer shift sign times the two primitive-ray character pairs is identically one."
+      },
+      {
+        "id": "Round108-square-root-character-sum-is-an-automorphic-theta-series",
+        "reason": "The phase tau sqrt(n) is not a quadratic lattice phase, the weight and owners move, and audited Jacobi and half-integral spectral formulas do not accept the object."
+      },
+      {
+        "id": "Round108-sharp-ratio-band-has-a-smooth-integrable-Mellin-kernel",
+        "reason": "The continuous sharp kernel has a principal-value 1/xi tail. Its exact finite triangular separation costs logarithmically and has jagged rank factors."
+      },
+      {
+        "id": "Round108-aggregate-owner-bound-licenses-Gram-reinsertion",
+        "reason": "Linear one-count survives conjugation, but the accepted aggregate owner bound does not control blockwise absolute completion or Fejer cross energies."
+      },
+      {
+        "id": "Round108-separate-character-B-processes-produce-a-dual-square-root-gain",
+        "reason": "The correct local dual length is JG, coefficient mass is preserved, the full tau kernel is nonlocal, and exact quadratic composition remains in the same metaplectic family."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M2-primitive-ray-fixed-a-actual-Gram",
+        "reason": "No actual-vector cross-q or direct linear rho-power estimate is proved."
+      },
+      {
+        "id": "M9-M2-top-endpoint-density-discrepancy-energy",
+        "reason": "The exact functional calculus is an obstruction, not the missing signed estimate."
+      },
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "reason": "The residual hard cone remains open."
+      },
+      {
+        "id": "M9-M2-smooth-balanced-quarter-packet-estimate",
+        "reason": "The round treated only the residual hard top cone."
+      },
+      {
+        "id": "M9-M2-smooth-unbalanced-three-quarter-estimate",
+        "reason": "The round treated only the residual hard top cone."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "The hard, balanced, and unbalanced M2 children remain open."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "No M1 estimate is proved."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "All-denominator endpoint assembly remains open."
+      },
+      {
+        "id": "M9",
+        "reason": "Neither M9-M1 nor M9-M2 is closed."
+      },
+      {
+        "id": "GC-target",
+        "reason": "No global pointwise exponent changes."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 5,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 108 converts a formal Gaussian/theta proposal into the exact complete metric functional calculus, proves its equal-capacity return, fixes the character and dual-length ledgers, resolves the sharp finite ratio separation, and hostilely excludes all audited automorphic source maps. It proves no new hard range, but closes a broad family of false transform gains and isolates the actual directional vector as the only remaining source of cancellation."
+  }
+}
