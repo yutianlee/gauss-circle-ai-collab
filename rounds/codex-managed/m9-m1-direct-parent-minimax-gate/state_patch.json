@@ -1,0 +1,216 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-direct-hard-smooth-separate-one-third-minimax",
+        "type": "normalization",
+        "track": "M9_analytic",
+        "title": "Separate hard and smooth direct-M1 menu minimax",
+        "status": "proved_internal",
+        "statement_tex": "For a literal residual M1 block put a=delta-ell and define the accepted direct numerical capacity C_dir(D,L;X) as the minimum of 1+D/L, 1+sqrt(LX/D)+D^(3/2)/sqrt(LX), and the audited TTY row X^[89(1+ell)+819delta]/1282. On the active triangle its exponent is min(a,(1-a)/2,[89(1+ell)+819delta]/1282), since the companion second-derivative exponent is smaller. Lift the residual U_1 to the unique hard profile and all smooth profiles separately. The limsup of the worst menu exponent is 1/3 on each parent. Literal witnesses are D_0=floor(sqrt X) and D_1=floor(sqrt X)/2 with full nonterminal L asymp X^(1/6) shells; their coordinates tend to (1/2,1/6), the elementary rows are X^(1/3+o(1)), and TTY tends to 770/1923=1/3+43/641. On the hard witness the accepted transform converts normalized L^2 capacity to physical X^(1/4)L^(1/2), against normalized target L^(3/2), so both parents miss by X^(1/12+o(1))=L^(1/2+o(1)). This is optimality of the accepted upper-bound menu separately on the two physical parent sets, not a lower bound for either actual signed sum.",
+        "dependencies": [
+          "M9-direct-menu-one-third-optimality",
+          "M9-M1-frequency-phase-diagram-R10",
+          "M9-M1-TTY-exponent-pair-wedge",
+          "M9-M1-top-endpoint-transform",
+          "M9-M1-physical-one-count-assembly",
+          "M9-M2-dyadic-weight-nondegeneracy"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-direct-parent-minimax-gate/reports/blind_m1_parent_minimax_rederivation.md",
+            "rounds/codex-managed/m9-m1-direct-parent-minimax-gate/reports/literal_m1_parent_capacity_attack.md",
+            "rounds/codex-managed/m9-m1-direct-parent-minimax-gate/reports/m1_parent_minimax_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-direct-parent-minimax-gate/reviews/conductor_round119_capacity_and_labels.md",
+            "rounds/codex-managed/m9-m1-direct-parent-minimax-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Do not rescan the accepted direct rows. A direct continuation must prove a new sign-sensitive X^(1/12) gain on each literal critical parent, or one exact whole-U_1 theorem with a lawful owner map."
+      },
+      {
+        "id": "M9-M1-adjacent-hard-smooth-profile-connector-no-go",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Adjacent hard and smooth profile telescope supplies no direct connector gain",
+        "status": "proved_internal",
+        "statement_tex": "For the accepted nested denominator profiles w_j=E_j-E_(j+1) and Vaaler height weights a_(H_j)(h), the exact scale identity is sum_(j=0)^J w_j(d)a_(H_j)(h)=E_0(d)a_(H_0)(h)-E_(J+1)(d)a_(H_J)(h)+sum_(j=1)^J E_j(d){a_(H_j)(h)-a_(H_(j-1))(h)}. Thus spatial telescoping retains all height differences and both boundary owners. At a fixed physical atom the original scale terms are nonnegative multiples of one common chi_4-character phase, so adding the hard and first-smooth profiles is aggregation rather than coefficientwise cancellation, while subtracting them is not the physical M1 sum. The equal X^(1/12) deficits do not define a connector. Raw profile telescoping, adjacent differencing, scale BV, and scale-only Abel summation therefore supply no missing power. This does not obstruct a new joint signed inequality across distinct lattice atoms or product fibres, and it is not a lower bound for the complete M1 sum.",
+        "dependencies": [
+          "M9-M1-alpha-coupled-dyadic-scale-capacity-no-go",
+          "M9-M1-alpha-Vaaler-height-discrete-variation",
+          "M9-M1-physical-one-count-assembly",
+          "M9-M2-dyadic-weight-nondegeneracy",
+          "H4-Phi-regularity"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-direct-parent-minimax-gate/reports/literal_m1_parent_capacity_attack.md",
+            "rounds/codex-managed/m9-m1-direct-parent-minimax-gate/reports/m1_parent_minimax_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-direct-parent-minimax-gate/reviews/conductor_round119_connector_and_route_scope.md",
+            "rounds/codex-managed/m9-m1-direct-parent-minimax-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Work after the complete scale sum with a genuinely joint signed inequality, or use the separate GAR backup. Do not claim a gain from profile addition, equal deficits, or scale-only telescoping."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-top-endpoint-signed-cone",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-direct-parent-minimax-gate/reports/blind_m1_parent_minimax_rederivation.md",
+            "rounds/codex-managed/m9-m1-direct-parent-minimax-gate/reports/literal_m1_parent_capacity_attack.md",
+            "rounds/codex-managed/m9-m1-direct-parent-minimax-gate/reports/m1_parent_minimax_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-direct-parent-minimax-gate/reviews/conductor_round119_capacity_and_labels.md",
+            "rounds/codex-managed/m9-m1-direct-parent-minimax-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The literal hard shell D=floor(sqrt X), L asymp X^(1/6) has accepted physical menu capacity X^(1/3+o(1)); the normalized cone ledger is L^2 versus target L^(3/2). Prove a sign-sensitive L^(-1/2) gain on every residual hard shell, or replace the direct route by a complete lawful aggregate theorem."
+      },
+      {
+        "id": "M9-M1-direct-smooth-residual-blockwise-estimate",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-direct-parent-minimax-gate/reports/blind_m1_parent_minimax_rederivation.md",
+            "rounds/codex-managed/m9-m1-direct-parent-minimax-gate/reports/literal_m1_parent_capacity_attack.md",
+            "rounds/codex-managed/m9-m1-direct-parent-minimax-gate/reports/m1_parent_minimax_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-direct-parent-minimax-gate/reviews/conductor_round119_capacity_and_labels.md",
+            "rounds/codex-managed/m9-m1-direct-parent-minimax-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The first smooth profile D=floor(sqrt X)/2 with L asymp X^(1/6) has accepted menu capacity X^(1/3+o(1)), missing X^(1/12). Prove a new actual-symbol saving uniformly on all smooth U_1 labels, or one whole-U_1 theorem with an exact owner bridge."
+      },
+      {
+        "id": "M9-M1-physical-one-count-assembly",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-direct-parent-minimax-gate/reports/m1_parent_minimax_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-direct-parent-minimax-gate/reviews/conductor_round119_connector_and_route_scope.md",
+            "rounds/codex-managed/m9-m1-direct-parent-minimax-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The one-count assembly remains complete and requires both direct parents. Their accepted menus now have certified separate one-third witnesses; equal deficits and adjacent profile addition do not merge the leaves."
+      },
+      {
+        "id": "M9-direct-menu-one-third-optimality",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-direct-parent-minimax-gate/reports/blind_m1_parent_minimax_rederivation.md",
+            "rounds/codex-managed/m9-m1-direct-parent-minimax-gate/reports/literal_m1_parent_capacity_attack.md",
+            "rounds/codex-managed/m9-m1-direct-parent-minimax-gate/reports/m1_parent_minimax_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-direct-parent-minimax-gate/reviews/conductor_round119_capacity_and_labels.md",
+            "rounds/codex-managed/m9-m1-direct-parent-minimax-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The global menu optimum is now sharpened to separate hard-M1 and smooth-M1 physical witnesses. Any exponent below one third still requires a new signed estimate; menu capacity remains distinct from an arithmetic lower bound."
+      },
+      {
+        "id": "M9-M1",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-direct-parent-minimax-gate/reports/m1_parent_minimax_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-direct-parent-minimax-gate/reviews/conductor_round119_connector_and_route_scope.md",
+            "rounds/codex-managed/m9-m1-direct-parent-minimax-gate/synthesis.md"
+          ]
+        },
+        "next_action": "On the direct route, prove both separately one-third-critical parents with the missing X^(1/12) gain. On the alternative route, prove both global radial parents and GAR, then use only the separate total-M1 bridge; GAR does not prove blockwise M9-M1."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round119-hard-critical-label-is-terminal-or-second-derivative-owned",
+        "reason": "Its full frequency shell has L asymp X^(1/6), while the terminal scale is asymp X^(1/4), and it is not the isolated label (1/2,0)."
+      },
+      {
+        "id": "Round119-first-smooth-label-is-hard-because-delta-tends-to-one-half",
+        "reason": "Hardness is the literal profile containing floor(sqrt X). The j=1 profile is smooth even though its exponent tends to one half."
+      },
+      {
+        "id": "Round119-TTY-shrinks-the-critical-parent-witnesses",
+        "reason": "At the limiting critical point its exponent is 770/1923=1/3+43/641, strictly larger than the elementary one-third contact."
+      },
+      {
+        "id": "Round119-normalized-L2-is-a-physical-exponent-2ell-row",
+        "reason": "The hard cone must be converted by X^(1/4)L^(-3/2). Its physical coefficient-blind row is X^(1/4)L^(1/2), not L^2 in physical B_1 units."
+      },
+      {
+        "id": "Round119-equal-hard-smooth-deficits-imply-cancellation",
+        "reason": "The equality X^(1/12)=L^(1/2) is only a capacity comparison. The two blocks have different profiles, heights, endpoints, and owners."
+      },
+      {
+        "id": "Round119-raw-profile-telescope-supplies-the-missing-power",
+        "reason": "The exact telescope retains height differences and top/bottom owners, while original scale atoms have one common character phase and nonnegative scale weights."
+      },
+      {
+        "id": "Round119-canonical-Gram-is-an-accepted-direct-parent-owner",
+        "reason": "The canonical Gram is post-global, owns only one transformed component, remains open, and has no inverse localization to a literal direct block."
+      },
+      {
+        "id": "Round119-GAR-is-a-third-direct-summand-or-blockwise-owner",
+        "reason": "GAR controls only the total active M1 aggregate and enters a separate global bridge. It implies no individual block and no blockwise M9-M1."
+      },
+      {
+        "id": "Round119-menu-one-third-is-an-arithmetic-lower-bound",
+        "reason": "The result concerns the minimum of proved upper-bound right sides. A new sign-sensitive inequality may still be smaller."
+      },
+      {
+        "id": "Round119-closing-one-direct-parent-proves-M9-M1",
+        "reason": "The accepted physical one-count assembly requires the conjunction of the hard and smooth direct parents."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1-top-endpoint-signed-cone",
+        "reason": "The required normalized L^(3/2) estimate is not proved."
+      },
+      {
+        "id": "M9-M1-direct-smooth-residual-blockwise-estimate",
+        "reason": "No literal smooth residual block is newly bounded at the quarter scale."
+      },
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "reason": "Its lower-radial and sharp radial/interface parents remain open."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "Neither direct conjunction nor the complete alternative GAR bridge is proved."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Hard TOP, balanced smooth, and complete unbalanced parents remain open."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "The analytic parents remain open and this round proves no endpoint theorem."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain open."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The separate-parent certificate refines the already accepted menu frontier and gives no strict exponent improvement."
+      },
+      {
+        "id": "GC-target",
+        "reason": "No all-parent quarter theorem is proved."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 5,
+    "idea_quality_score": 7,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 119 proves the exact separate hard and smooth direct-menu one-third frontier, verifies literal critical witnesses and hard physical normalization, and closes adjacent-profile telescoping as a missing-power mechanism. It proves no new signed estimate, parent, or exponent, but it sharply freezes the direct route and identifies the two exact GAR backup parents."
+  }
+}

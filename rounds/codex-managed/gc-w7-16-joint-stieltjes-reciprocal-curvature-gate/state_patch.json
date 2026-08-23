@@ -1,0 +1,226 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "GC-W7-16-direct-Stieltjes-birth-block-curvature-lemma",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Direct character-Stieltjes birth-block reciprocal-curvature bound",
+        "status": "proved_internal",
+        "statement_tex": "At W=Y^(7/16), D=Y^(1/2), L=Y^(1/6), fix D/L<=B<=D, Q_B=min(B,BD/(WL)), lambda_B=YL/(DB^2), one exact character-split M1 or M2 package, and one Mobius progression b'=rho v with rho|a'. Let N_rho asymp Q_B/rho, Lambda_rho=lambda_B rho^2, and K_rho=min(N_rho,N_rho sqrt(Lambda_rho)+Lambda_rho^(-1/2)). In the exact discrete Stieltjes representation, first fix one denominator threshold, Abel-sum the common chi_4(g) against the fixed sampled-BV lift factor before a modulus, partition v into the literal floor plateaux floor(t/(rho v)), apply weighted second-derivative summation on each plateau, and recombine the bounded Stieltjes mass last. Since N_rho Lambda_rho asymp L rho (J_B-1) and N_rho Lambda_rho >= D/W, every nonconstant plateau endpoint is absorbed. Uniformly for the two M1 quarter phases and the M2 phase, including all integer derivative aliases, both endpoint stars, threshold equalities, hard samples, floors, taper, clipping, Mobius progressions, and half-open shell owners, the branch sum is O_epsilon(K_rho L^(-1)Y^epsilon). This is a direct fixed-Stieltjes-mass theorem, not a bound by the completed V2 norm.",
+        "dependencies": [
+          "GC-W7-16-reduced-Farey-cluster-reduction",
+          "GC-W7-16-local-lift-BV-threshold-V2-lemma",
+          "GC-W7-16-bounded-lift-top-shell-curvature-saving"
+        ],
+        "implies": [
+          "GC-W7-16-complete-all-shell-curvature-saving",
+          "GC-W7-16-local-transverse-square-variation-connector"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/reports/actual_stieltjes_reciprocal_sum_attack.md",
+            "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/reports/reciprocal_curvature_hostile_audit.md",
+            "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/reviews/hostile_birth_block_curvature_addendum.md",
+            "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/reviews/post_blind_absolute_curvature_outer_ledger.md",
+            "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/reviews/conductor_round129_direct_curvature_adjudication.md",
+            "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/candidates/conductor_birth_block_abel_curvature.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use this as the terminal inner reciprocal/lift estimate. Any further saving must come from signed coupling of the remaining numerator increments or outer rays; do not reintroduce a generic completed-V2 norm."
+      },
+      {
+        "id": "GC-W7-16-complete-all-shell-curvature-saving",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Complete all-reduced-denominator-shell reciprocal-curvature saving",
+        "status": "proved_internal",
+        "statement_tex": "For the complete literal W=Y^(7/16), D=Y^(1/2), L=Y^(1/6) fixed determinant block, decompose the inner reduced denominator into half-open shells D/L<=B<=D. The direct character-Stieltjes birth-block lemma and the Mobius divisor sum give inner cost K_B/L, where K_B=min(Q_B,Q_B sqrt(lambda_B)+lambda_B^(-1/2)). The accepted complete outer ledger has O(LD) outer rays, O(L) numerator increments, outer coefficient O(L^(-1)), and inner coefficient K_B/L, hence each shell costs D K_B. Uniformly for B=Y^b, 1/3<=b<=1/2, Q_B sqrt(lambda_B)=Y^(11/48) and lambda_B^(-1/2)<=Y^(1/6), so every shell and their logarithmic sum are O_epsilon(Y^(35/48+epsilon)). This includes the equal-ray diagonal, threshold equality residuals, both M1 branches, M2, all literal owners, and extends the previously top-shell-only Y^(35/48) bound to the complete block. It remains Y^(11/48) above the Y^(1/2) determinant target and yields no global exponent improvement.",
+        "dependencies": [
+          "GC-W7-16-reduced-Farey-cluster-reduction",
+          "GC-W7-16-direct-Stieltjes-birth-block-curvature-lemma"
+        ],
+        "implies": [
+          "GC-W7-16-actual-reduced-determinant-correlation"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/reports/actual_stieltjes_reciprocal_sum_attack.md",
+            "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/reviews/hostile_birth_block_curvature_addendum.md",
+            "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/reviews/post_blind_absolute_curvature_outer_ledger.md",
+            "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/reviews/conductor_round129_direct_curvature_adjudication.md",
+            "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "The inner reciprocal/lift and lower-shell seams are closed at Y^(35/48). Seek a genuinely joint signed saving across numerator increments or outer rays of Y^(11/48), avoiding the accepted unit-Hessian sequential-transform self-return."
+      },
+      {
+        "id": "GC-W7-16-norm-relative-reciprocal-curvature-obstruction",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Completed-V2 norm-relative reciprocal-curvature obstruction",
+        "status": "proved_internal",
+        "statement_tex": "For the endpoint-inclusive discrete V2 norm, the exact dual is the prefix-sum variance norm, equivalently the Dirichlet path Green kernel (L_N^(-1))_(jk)=min(j,k)(N+1-max(j,k))/(N+1). On the top one-lift rho=1 shell, take a compact real triangular sampled-BV denominator profile of width comparable to Lambda^(-1/2) centered at an exact reciprocal integer first-derivative alias; the same construction survives both M1 quarter shifts. Its oscillatory sum is bounded below at fixed scale while its completed V2 norm times K is smaller by Y^(1/48), with both V2 endpoint values zero. Hence |S(U)|<<||U||_(V2)K Y^epsilon is false for the displayed bounded-mass Stieltjes threshold class. The obstruction concerns only replacement of the fixed Stieltjes mass by the completed norm and does not contradict the direct absolute birth-block theorem.",
+        "dependencies": [
+          "GC-W7-16-local-lift-BV-threshold-V2-lemma"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/reports/blind_structured_v2_curvature_feasibility.md",
+            "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/reports/reciprocal_curvature_hostile_audit.md",
+            "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/reviews/conductor_round129_direct_curvature_adjudication.md",
+            "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Reject completed-norm substitutions. Use the exact fixed Stieltjes mass and threshold-first proof whenever this family is estimated."
+      }
+    ],
+    "update": [
+      {
+        "id": "GC-W7-16-local-transverse-square-variation-connector",
+        "statement_tex": "At W=Y^(7/16), D=Y^(1/2), L=Y^(1/6), the two exact M1 quarter-phase packages and one M2 package have the proved local V2 coefficient norm J_B^(1/2)/L, but the formerly proposed norm-relative curvature inequality is false for the displayed Stieltjes class by a Y^(1/48) stationary-alias counterexample. The needed physical numerical conclusion is instead proved directly: thresholdwise character Abel followed by plateau curvature and Stieltjes Minkowski gives K_rho/L for every branch and divisor progression, with K_rho=min(N_rho,N_rho sqrt(lambda_B rho^2)+(lambda_B rho^2)^(-1/2)). The identity N_rho lambda_B rho^2 asymp L rho (J_B-1) removes every J_B endpoint loss. The complete outer ledger therefore gives Y^(35/48+epsilon) over all B-shells, stronger than the former conditional Y^(73/96) forecast. The route is closed at this fixed-block exponent, which persists only to 7/18>1/3 and does not improve the global theorem.",
+        "dependencies_added": [
+          "GC-W7-16-direct-Stieltjes-birth-block-curvature-lemma",
+          "GC-W7-16-complete-all-shell-curvature-saving",
+          "GC-W7-16-norm-relative-reciprocal-curvature-obstruction"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/reviews/conductor_round129_direct_curvature_adjudication.md",
+            "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/synthesis.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/reports/blind_structured_v2_curvature_feasibility.md",
+            "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/reports/reciprocal_curvature_hostile_audit.md"
+          ]
+        },
+        "next_action": "Treat the inner reciprocal/lift estimate as complete at K_B/L. Move to the remaining joint numerator-increment or outer-ray interface; do not pursue the false norm-relative reformulation."
+      },
+      {
+        "id": "GC-W7-16-actual-reduced-determinant-correlation",
+        "dependencies_added": [
+          "GC-W7-16-complete-all-shell-curvature-saving",
+          "GC-W7-16-direct-Stieltjes-birth-block-curvature-lemma"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/synthesis.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/reports/blind_structured_v2_curvature_feasibility.md"
+          ]
+        },
+        "next_action": "The complete fixed block is now O_epsilon(Y^(35/48+epsilon)) uniformly over every reduced-denominator shell, leaving Y^(11/48) to the Y^(1/2) target. Seek signed cancellation across the remaining numerator increments or outer rays; sequential two-dimensional transforms with aliaswise modulus are already known to self-return."
+      },
+      {
+        "id": "GC-W7-16-bounded-lift-top-shell-curvature-saving",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/synthesis.md"
+          ]
+        },
+        "next_action": "This top-shell result is now subsumed, with the same Y^(35/48) exponent, by the complete all-shell birth-block curvature lemma."
+      },
+      {
+        "id": "GC-W7-16-original-numerator-product-window-bound",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The complete Y^(37/48) product-window envelope is now superseded at the critical block by the all-shell Y^(35/48) direct curvature bound; retain this lemma as an independent original-variable fallback."
+      },
+      {
+        "id": "GC-W7-16-local-lift-BV-threshold-V2-lemma",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/synthesis.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/reports/blind_structured_v2_curvature_feasibility.md"
+          ]
+        },
+        "next_action": "Retain the coefficient theorem as an independent structural fact. It does not imply a norm-relative curvature theorem; the physical oscillatory sum is instead controlled directly threshold by threshold."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round129-completed-V2-norm-times-curvature-without-sqrtN",
+        "reason": "A one-lift triangular stationary-alias Stieltjes profile violates the claim by Y^(1/48), with both endpoint values zero."
+      },
+      {
+        "id": "Round129-coefficient-V2-bound-implies-oscillatory-bound",
+        "reason": "The exact V2 dual is prefix-sum variance; threshold cancellations can make the completed norm smaller than the fixed Stieltjes mass used by the valid direct theorem."
+      },
+      {
+        "id": "Round129-birth-block-curvature-must-pay-JB-square-root",
+        "reason": "The identity N_rho Lambda_rho asymp L rho (J_B-1) absorbs all nonconstant plateau endpoints before Stieltjes superposition, giving effective J_B power zero."
+      },
+      {
+        "id": "Round129-phase-adapted-profile-refutes-direct-absolute-theorem",
+        "reason": "Phase adaptation refutes only the norm normalization; the direct theorem is uniform in the bounded fixed Stieltjes mass and remains valid."
+      },
+      {
+        "id": "Round129-complete-Y35over48-bound-reaches-determinant-target",
+        "reason": "Y^(35/48) remains Y^(11/48) above the required Y^(1/2) fixed-block bound."
+      },
+      {
+        "id": "Round129-complete-Y35over48-bound-improves-global-exponent",
+        "reason": "Its accepted persistence exponent is 7/18, worse than the proved one-third fallback."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "The graded determinant block is not the canonical M9-M1 parent, and both direct M1 routes remain open."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Hard TOP, BAL, and UNBAL remain open."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "No all-owner endpoint estimate is proved."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain open."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The complete M9 hypothesis remains open."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The new fixed-block exponent persists only to 7/18, so the internal one-third theorem remains stronger."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The quarter target still lacks both M9 components, endpoint uniformity, and the final bridge."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 9,
+    "idea_quality_score": 9,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 129 refutes the proposed completed-V2 normalization but proves a stronger direct physical threshold theorem. Independent blind, discovery, hostile, and outer-owner audits certify K_rho/L and the complete all-shell Y^(35/48) fixed-block bound, closing the long-lift shell seam without changing any global exponent or M9 parent."
+  }
+}
+

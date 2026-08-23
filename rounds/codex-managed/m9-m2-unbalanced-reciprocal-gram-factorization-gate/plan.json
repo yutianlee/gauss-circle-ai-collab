@@ -1,0 +1,225 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 123,
+    "round_type": "m9_m2_unbalanced_reciprocal_gram_factorization_gate",
+    "campaign_id": "m9-m2-unbalanced-reciprocal-gram-factorization-gate",
+    "title": "Unbalanced reciprocal-frequency signed-Gram and near-product factorization gate",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "d29ae6c0f398cc2df699b15ee2901b525290263b6cde5eecece49cdeee095bb1",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 99,
+      "numerical_experimental_maximum_percent": 1,
+      "planned_numerical_percent": 0,
+      "literature_policy": "Use no external theorem unless its primary statement matches the literal truncated chi_4 row, moving sampled profiles, real-to-integer centre perturbation, signed near-reciprocal aliases, pointwise norm, and required power. Do not import a complete divisor or circle estimate."
+    },
+    "target_obligations": [
+      "M9-M2-smooth-unbalanced-three-quarter-estimate",
+      "M9-M2-unbalanced-truncated-divisor-fixed-centre-return",
+      "M9-M2-unbalanced-flat-wave-curvature-envelope"
+    ],
+    "frozen_target": {
+      "question": "Can the exact flat-smooth UNBAL wave be phase-integerized at target-safe cost and then bounded through a character-preserving joint frequency Gram whose reciprocal aliases factor around N^2, or does the construction rigorously self-return?",
+      "reference_formula": "R_X=sum_(r odd)chi_4(r)W(X/(rD))sum_k q_L(4Xk/r^2)k^(-1)e(Xk/r), with D=X^delta, L=X^ell, R=X/D, K=XL/D^2, and target R_X<<X^(1/4+epsilon).",
+      "quantities": [
+        "X real at least 2 and N=floor X",
+        "1/4<=delta<1/2, 0<=ell<delta-1/4, and 178ell+1638delta>463",
+        "literal fixed q_L and W profiles, including support overlap and edges",
+        "phase-only integerized row with amplitudes still frozen at X",
+        "physical product kernels centred at X and N with denominator 4X",
+        "weighted k-Cauchy Gram and its full signed ordered-pair expansion",
+        "diagonal r=s and every off-diagonal reciprocal alias",
+        "j nearest N(1/r-1/s), E=N(s-r)-jrs, and (N-jr)(N+js)-N^2=jE",
+        "N=2^tN_0, exact and near collisions, negative and zero aliases, and mod-four character signs",
+        "flat-smooth owner only; every hard, sharp, starred, clipped, arithmetic, and transition owner excluded"
+      ]
+    },
+    "completion_criteria": [
+      "Prove or reject uniform phase integerization without a circular post-cancellation charge.",
+      "Derive the exact smallest weighted Gram with literal sampled amplitudes and quantify its diagonal.",
+      "Prove uniform reciprocal-frequency localization with support-overlap and endpoint costs.",
+      "Factor every alias collision and derive the correct defect window and factor congruences.",
+      "Audit all two-adic, mod-four, sign, zero-alias, negative-alias, and tie branches.",
+      "Keep the signed off-diagonal intact; distinguish exact-collision divisor counts from the full near window.",
+      "Determine whether defect parity yields a noninvertible gain or only restates the original quarter shift.",
+      "Prove the full target, a strict target-safe subrange, a quantified signed saving or inverse theorem, or a rigorous smallest-survivor no-go.",
+      "State exactly what follows for flat smooth UNBAL, complete UNBAL, M9-M2, M9, the quarter target, and every exponent."
+    ],
+    "controls": [
+      "literal_Round118_flat_wave",
+      "phase_integerization_physical_kernel",
+      "reciprocal_termwise_false_charge",
+      "weighted_Gram_normalization",
+      "diagonal_capacity",
+      "smooth_alias_localization",
+      "alias_product_factorization",
+      "two_adic_character_sign",
+      "exact_versus_near_collision",
+      "zero_and_negative_aliases",
+      "signed_offdiagonal_aggregation",
+      "old_transform_return",
+      "owner_and_downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "blind_integer_gram_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "pending",
+        "target": "Independently prove or refute phase integerization, derive the literal weighted Gram and every alias-product/parity branch, and obtain a target, saving, inverse theorem, or smallest no-go.",
+        "context_files": [
+          "problems/gauss_circle.md",
+          "state/control_models.md",
+          "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "all strategy files",
+          "all Round-107 through Round-123 nonblind artifacts",
+          "all Round-123 sibling reports"
+        ],
+        "required_controls": [
+          "literal_Round118_flat_wave",
+          "phase_integerization_physical_kernel",
+          "reciprocal_termwise_false_charge",
+          "weighted_Gram_normalization",
+          "diagonal_capacity",
+          "smooth_alias_localization",
+          "alias_product_factorization",
+          "two_adic_character_sign",
+          "exact_versus_near_collision",
+          "zero_and_negative_aliases",
+          "signed_offdiagonal_aggregation",
+          "owner_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section statement-only report.",
+          "A complete phase-perturbation, Gram, alias, and parity derivation.",
+          "A target estimate, strict signed gain, inverse theorem, or explicit smallest no-go.",
+          "A promote, retain, revise, reject, or no-change recommendation."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/reports/blind_integer_gram_rederivation.md"
+      },
+      {
+        "id": "signed_alias_product_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "target": "Attack the complete signed Gram in factor coordinates, seeking defect-parity cancellation, a target-safe alias sector, a strict exponent gain, or a quantified inverse theorem.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0821_full_proof_strategy.md",
+          "rounds/codex-managed/m9-m2-smooth-unbalanced-divisor-recombination/synthesis.md",
+          "rounds/codex-managed/m9-m2-unbalanced-prescribed-centre-wave-gate/synthesis.md",
+          "rounds/codex-managed/m9-m2-unbalanced-prescribed-centre-wave-gate/reports/literal_unbalanced_wave_attack.md",
+          "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/derivation_packet.md"
+        ],
+        "required_controls": [
+          "literal_Round118_flat_wave",
+          "phase_integerization_physical_kernel",
+          "weighted_Gram_normalization",
+          "diagonal_capacity",
+          "smooth_alias_localization",
+          "alias_product_factorization",
+          "two_adic_character_sign",
+          "exact_versus_near_collision",
+          "zero_and_negative_aliases",
+          "signed_offdiagonal_aggregation",
+          "old_transform_return",
+          "owner_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section analytic report.",
+          "Exact factor-coordinate formulas, congruences, capacities, and character signs.",
+          "A target, strict signed gain, inverse theorem, or smallest exact survivor.",
+          "A precise state recommendation."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/reports/signed_alias_product_attack.md"
+      },
+      {
+        "id": "reciprocal_gram_hostile_audit",
+        "role": "seam_reviewer",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "target": "Hostilely audit the perturbation norm, Gram target equivalence, diagonal cancellation burden, factor and character algebra, alias windows, endpoint scope, circularity, and duplication of prior transforms.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0821_full_proof_strategy.md",
+          "rounds/codex-managed/m9-m2-smooth-unbalanced-divisor-recombination/reviews/conductor_round107_recombination_and_capacity.md",
+          "rounds/codex-managed/m9-m2-balanced-nonzero-alias-defect-gate/synthesis.md",
+          "rounds/codex-managed/m9-m2-unbalanced-prescribed-centre-wave-gate/synthesis.md",
+          "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/derivation_packet.md"
+        ],
+        "required_controls": [
+          "literal_Round118_flat_wave",
+          "phase_integerization_physical_kernel",
+          "reciprocal_termwise_false_charge",
+          "weighted_Gram_normalization",
+          "diagonal_capacity",
+          "smooth_alias_localization",
+          "alias_product_factorization",
+          "two_adic_character_sign",
+          "exact_versus_near_collision",
+          "zero_and_negative_aliases",
+          "signed_offdiagonal_aggregation",
+          "old_transform_return",
+          "owner_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section hostile report.",
+          "A pass/fail seam table with normalization, parity, capacity, and scope controls.",
+          "The maximal safe theorem or fatal correction and exact smallest survivor.",
+          "A precise state recommendation."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/reports/reciprocal_gram_hostile_audit.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "integerization",
+        "requirement": "The real-to-integer phase change is proved with the physical product kernel and uniform tails, not charged termwise against a capacity obtained only after oscillation."
+      },
+      {
+        "id": "gram",
+        "requirement": "The Cauchy weight, target square, literal profile overlap, ordered-pair expansion, reality, and diagonal size are exact."
+      },
+      {
+        "id": "alias",
+        "requirement": "Every reciprocal alias has the correct orientation, nearest-integer convention, defect scale, factor congruence, and zero/negative branch."
+      },
+      {
+        "id": "character",
+        "requirement": "The two-adic and mod-four sign formula is valid for exact and near defects without silently assuming N odd or j even."
+      },
+      {
+        "id": "cancellation",
+        "requirement": "A claimed saving controls the complete signed diagonal plus off-diagonal; exact collisions and absolute counts are not substituted for the near window."
+      },
+      {
+        "id": "return",
+        "requirement": "The factor coordinates or a second transform are not called a gain if they reconstruct the Round-118 sparse selector or scalar quarter-shift estimate."
+      },
+      {
+        "id": "scope",
+        "requirement": "A flat-smooth result is not promoted to hard or transition kernels, complete UNBAL, M9-M2, M9, or an exponent without every graph bridge."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "d29ae6c0f398cc2df699b15ee2901b525290263b6cde5eecece49cdeee095bb1",
+    "generated_at": "2026-08-21T19:16:58.382488+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

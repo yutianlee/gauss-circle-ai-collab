@@ -1,0 +1,235 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 117,
+    "round_type": "gc_w7_16_actual_determinant_fibre_gate",
+    "campaign_id": "gc-w7-16-actual-determinant-fibre-gate",
+    "title": "W=Y^(7/16) actual determinant-fibre and character high-pass gate",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "a27a89fd4e688cae719a28fec8f48dd74190bafb64d0345c590f1caadc2805d9",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 98,
+      "numerical_experimental_maximum_percent": 2,
+      "planned_numerical_percent": 0,
+      "literature_policy": "Primary sources may guide determinant, Kloosterman-fraction, bilinear, or local-discrepancy strategy only after every literal coefficient, one-sided cutoff, norm, and theorem hypothesis is matched. No source analogy has proof status."
+    },
+    "target_obligations": [
+      "GC-W7-16-actual-reduced-determinant-correlation",
+      "GC-nonsubcoherent-actual-cluster-local-moment",
+      "GC-one-sided-persistence-local-bridge"
+    ],
+    "frozen_target": {
+      "question": "Can the literal one-sided reduced-determinant correlation at W=Y^(7/16) exploit its M1 denominator or M2 numerator character high-pass, centre phase, and lift transforms to prove O(Y^(1/2+epsilon)), a target-safe strict block subrange, or a quantified saving; or does the exact determinant-fibre transform self-return with its smallest signed survivor named?",
+      "reference_formula": "O_i=2 Re sum_{0<n=ab'-a'b<kappa_i bb'/W} A_i(a,b) conjugate(A_i(a',b')) e(cn/(kappa_i bb')) (1-Wn/(kappa_i bb')), with kappa_1=1, kappa_2=4, W=Y^(7/16), c asymp Y, and A_i the complete literal reduced-ray coefficient. In increments p=a'-a, q=b'-b, n=aq-bp. M1 has b,b' odd, q=2r and chi_4(b)chi_4(b')=(-1)^r; M2 has a,a' odd, p=2s and chi_4(a)chi_4(a')=(-1)^s.",
+      "quantities": [
+        "Y large real, c in a fixed comparable interval, W=Y^(7/16)",
+        "one fixed moving-symbol stratum and one hard block D=Y^delta, L=Y^ell in H_95",
+        "1/4<=delta<=1/2, 0<=ell<=delta-1/4, and 3delta-ell>15/16",
+        "literal frequencies a/(kappa_i b), both signs, kappa_1=1 and kappa_2=4",
+        "complete lift coefficients A_1=(constant chi_4(b)/a) sum_g chi_4(g)U_1(g)/g and A_2=(constant chi_4(|a|)/|a|) sum_g chi_4(g)U_2(g)/g",
+        "equal-lift diagonal already O_epsilon(D/L Y^epsilon)",
+        "capacity_before (D/L)(1+min(DL,D^2/W)); minimax Y^(43/48+epsilon)",
+        "target Y^(1/2+epsilon); minimax coefficient-blind deficit Y^(19/48)",
+        "full target implies internal exponent 5/16=0.3125 after accepted assembly, but not M9 or the quarter theorem",
+        "no determinantwise, character-sector, liftwise, raywise, or blockwise absolute value may hide the required signed cancellation"
+      ]
+    },
+    "completion_criteria": [
+      "Rederive the exact one-sided determinant kernel from the complete reduced-ray coefficients and certify the M1/M2 character placements, parities, both signs, factor four, and equal-lift owner.",
+      "Derive the increment chart n=aq-bp, the exact character high-pass in q for M1 and p for M2, and the phase identity cn/(kappa b(b+q))=ca/(kappa b)-c(a+p)/(kappa(b+q)).",
+      "Price the determinant strip in both orientations, including lengths D^2/(WL) and D/W at minimax, all gcd congruences, boundary triangles, and every Cauchy or transform factor.",
+      "State an explicit signed inequality or fibre norm whose left side contains the complete literal survivor and whose right side is at or below the claimed capacity.",
+      "Prove the Y^(1/2) target, a target-safe strict block region, a quantified positive-power saving, or a rigorous no-go for a named determinant-fibre/high-pass mechanism.",
+      "Show why the argument does not also prove the phase-conjugated Y^(43/48) coefficient-adversary analogue.",
+      "Audit every external theorem against the one-sided determinant cutoff, real centre c, coefficient norms, moving-symbol uniformity, and M1/M2 character placement.",
+      "Do not claim M9-M1, M9-M2, endpoint uniformity, M9, or the quarter theorem from this graded lane. Report an exponent improvement only if the complete local-moment and all-block implication is proved."
+    ],
+    "controls": [
+      "literal_reduced_ray_and_equal_lift_diagonal",
+      "m1_m2_character_placement_and_factor_four",
+      "increment_determinant_and_one_sided_orientation",
+      "character_high_pass_progressions",
+      "determinant_strip_widths_and_boundary",
+      "centre_phase_and_stationary_or_geometric_norm",
+      "gcd_congruence_and_multiplicity",
+      "capacity_before_after_each_norm",
+      "actual_symbol_vs_phase_conjugated_coefficients",
+      "moving_strata_bottom_R5_and_cross_block_owners",
+      "external_theorem_hypothesis_fit",
+      "real_Y_and_endpoint_uniformity",
+      "linear_cluster_vs_local_mass_vs_pointwise_exponent",
+      "downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "blind_determinant_fibre_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "active",
+        "target": "Independently rederive the literal determinant-increment and character-high-pass chart from the supplied fixed-block statement, price both strip orientations and capacities, and either state a lawful signed target or prove the first exact obstruction.",
+        "context_files": [
+          "problems/gauss_circle.md",
+          "state/control_models.md",
+          "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "all strategy files",
+          "all Round-94 and Round-95 reports and reviews",
+          "the Round-117 derivation packet and conductor candidate",
+          "all Round-117 sibling reports"
+        ],
+        "required_controls": [
+          "literal_reduced_ray_and_equal_lift_diagonal",
+          "m1_m2_character_placement_and_factor_four",
+          "increment_determinant_and_one_sided_orientation",
+          "character_high_pass_progressions",
+          "determinant_strip_widths_and_boundary",
+          "centre_phase_and_stationary_or_geometric_norm",
+          "gcd_congruence_and_multiplicity",
+          "capacity_before_after_each_norm",
+          "actual_symbol_vs_phase_conjugated_coefficients",
+          "real_Y_and_endpoint_uniformity",
+          "linear_cluster_vs_local_mass_vs_pointwise_exponent",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section statement-only report.",
+          "The exact increment, parity-character, phase, and strip charts.",
+          "A candidate signed inequality with every norm and capacity charged, or a precisely scoped no-go.",
+          "A promote, retain, revise, reject, or no-change recommendation."
+        ],
+        "report_path": "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/reports/blind_determinant_fibre_rederivation.md"
+      },
+      {
+        "id": "actual_character_determinant_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "active",
+        "target": "Exploit the exact M1 q-high-pass or M2 p-high-pass, centre phase, and determinant congruence to prove the strongest literal block estimate available, or isolate the first irreducible signed fibre norm with a complete exponent ledger.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0821_full_proof_strategy.md",
+          "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/reviews/conductor_round94_local_kernel.md",
+          "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/reports/actual_rational_cluster_attack.md",
+          "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/reviews/conductor_round95_cluster_adjudication.md",
+          "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/derivation_packet.md",
+          "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/candidates/conductor_character_highpass_fibre.md"
+        ],
+        "required_controls": [
+          "literal_reduced_ray_and_equal_lift_diagonal",
+          "m1_m2_character_placement_and_factor_four",
+          "increment_determinant_and_one_sided_orientation",
+          "character_high_pass_progressions",
+          "determinant_strip_widths_and_boundary",
+          "centre_phase_and_stationary_or_geometric_norm",
+          "gcd_congruence_and_multiplicity",
+          "capacity_before_after_each_norm",
+          "actual_symbol_vs_phase_conjugated_coefficients",
+          "moving_strata_bottom_R5_and_cross_block_owners",
+          "real_Y_and_endpoint_uniformity",
+          "linear_cluster_vs_local_mass_vs_pointwise_exponent",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section discovery report.",
+          "The strongest proved target, strict subrange, saving, or exact signed survivor.",
+          "Every Poisson, B-process, geometric-sum, Cauchy, and divisor factor charged.",
+          "A precise state recommendation."
+        ],
+        "report_path": "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/reports/actual_character_determinant_attack.md"
+      },
+      {
+        "id": "determinant_fibre_hostile_source_audit",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "status": "active",
+        "target": "Hostilely audit the character-high-pass determinant mechanism for involution, coherent actual sectors, large-sieve diagonals, congruence multiplicity, owner loss, and exact primary-source theorem fit.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0821_full_proof_strategy.md",
+          "rounds/codex-managed/gc-prescribed-point-local-moment-bridge/synthesis.md",
+          "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/synthesis.md",
+          "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/reports/actual_rational_cluster_attack.md",
+          "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/reviews/conductor_round95_cluster_adjudication.md",
+          "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/derivation_packet.md",
+          "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/candidates/conductor_character_highpass_fibre.md"
+        ],
+        "required_controls": [
+          "literal_reduced_ray_and_equal_lift_diagonal",
+          "m1_m2_character_placement_and_factor_four",
+          "increment_determinant_and_one_sided_orientation",
+          "character_high_pass_progressions",
+          "determinant_strip_widths_and_boundary",
+          "centre_phase_and_stationary_or_geometric_norm",
+          "gcd_congruence_and_multiplicity",
+          "capacity_before_after_each_norm",
+          "actual_symbol_vs_phase_conjugated_coefficients",
+          "moving_strata_bottom_R5_and_cross_block_owners",
+          "external_theorem_hypothesis_fit",
+          "real_Y_and_endpoint_uniformity",
+          "linear_cluster_vs_local_mass_vs_pointwise_exponent",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section hostile/source report.",
+          "A pass/fail table for algebra, progressions, strip widths, norms, sources, owners, and downstream scope.",
+          "A rigorous named no-go if the mechanism self-returns, or the exact theorem still required.",
+          "A precise state recommendation."
+        ],
+        "report_path": "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/reports/determinant_fibre_hostile_source_audit.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "literal_kernel",
+        "requirement": "Every reduced-ray coefficient, lift character, parity support, sign, factor four, profile, floor, hard top, and star is retained."
+      },
+      {
+        "id": "determinant_algebra",
+        "requirement": "The one-sided determinant, increment chart, phase identity, parity progressions, and both strip orientations agree exactly."
+      },
+      {
+        "id": "multiplicity",
+        "requirement": "Primitive-ray, determinant-fibre, gcd, congruence, and boundary multiplicities are all charged before a norm step."
+      },
+      {
+        "id": "capacity",
+        "requirement": "Every high-pass, geometric-sum, transform, large-sieve, and Cauchy factor is compared with the block capacity and Y^(1/2) target."
+      },
+      {
+        "id": "actual_symbol",
+        "requirement": "Any saving uses a literal property unavailable to the phase-conjugated Y^(43/48) adversary."
+      },
+      {
+        "id": "source",
+        "requirement": "Every external theorem is matched to the exact one-sided cutoff, coefficient norm, real centre, parameter ranges, and character placement."
+      },
+      {
+        "id": "owners",
+        "requirement": "Equal lifts, moving strata, bottom, R5, signs, and cross-block terms are counted once with no false reversal of the positive kernel."
+      },
+      {
+        "id": "scope",
+        "requirement": "A block saving is not called a global exponent improvement without the full all-block local moment, and the graded lane is not called M9 or the quarter theorem."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "a27a89fd4e688cae719a28fec8f48dd74190bafb64d0345c590f1caadc2805d9",
+    "generated_at": "2026-08-21T15:13:57.801175+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

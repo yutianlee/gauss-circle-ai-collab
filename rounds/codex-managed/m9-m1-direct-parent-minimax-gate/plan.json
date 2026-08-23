@@ -1,0 +1,241 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 119,
+    "round_type": "m9_m1_direct_parent_minimax_gate",
+    "campaign_id": "m9-m1-direct-parent-minimax-gate",
+    "title": "Direct M9-M1 hard and smooth parent minimax gate",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "c3498daad3bdceb7c69c0e47a616e03ebfa12ccaf42f8df42958aa227f50fd91",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 99,
+      "numerical_experimental_maximum_percent": 1,
+      "planned_numerical_percent": 0,
+      "literature_policy": "Use only primary reciprocal-sum or product-phase sources after matching the literal M1 profile, pointwise norm, real-X endpoints, and hard/smooth owner. A global theorem is not a blockwise owner without an exact inverse-localization lemma."
+    },
+    "target_obligations": [
+      "M9-M1-top-endpoint-signed-cone",
+      "M9-M1-direct-smooth-residual-blockwise-estimate",
+      "M9-M1-physical-one-count-assembly",
+      "M9-M1",
+      "M9-direct-menu-one-third-optimality"
+    ],
+    "frozen_target": {
+      "question": "After every accepted direct owner is removed, what is the exact separate minimax capacity of the hard and smooth M9-M1 physical parents, and does any accepted theorem or literal adjacent-profile identity shrink either parent?",
+      "reference_formula": "B_1(D,L;X)=sum_(h asymp L)Phi(h/(H_D+1))h^(-1) sum_(d asymp D)chi_4(d)w_D(d)e(hX/d), with residual U_1={ell<delta-1/4,178ell+1638delta>463} minus {(1/2,0)}. Direct bounds are 1+D/L, 1+sqrt(LX/D)+D^(3/2)/sqrt(LX), and the audited TTY exponent [89(1+ell)+819delta]/1282. The hard transformed parent has target L^(3/2) and coefficient-blind capacity L^2.",
+      "quantities": [
+        "X large real; D=X^delta, L=X^ell, 1/4<=delta<=1/2, 0<=ell<=delta-1/4",
+        "accepted owner priority bottom, R5-Full, terminal, full second derivative, TTY, then residual U_1",
+        "unique hard profile containing floor(sqrt X), every other denominator profile smooth",
+        "hard parent M9-M1-top-endpoint-signed-cone on middle/lower residual shells",
+        "smooth parent M9-M1-direct-smooth-residual-blockwise-estimate on every smooth U_1 label",
+        "candidate hard witness D_0 asymp floor(sqrt X), L asymp X^(1/6)",
+        "candidate smooth witness D_1 asymp floor(sqrt X)/2, L asymp X^(1/6)",
+        "candidate critical capacity X^(1/3) versus target X^(1/4), deficit X^(1/12)=L^(1/2)",
+        "canonical Gram and GAR are alternative routes, not accepted blockwise owners"
+      ]
+    },
+    "completion_criteria": [
+      "Reproduce the exact direct physical owner partition and residual U_1 without adding a global-route summand.",
+      "Minimize every accepted direct bound separately on the hard and smooth literal parent sets, including the TTY row and its scope.",
+      "Verify the hard and first-smooth critical label families, actual dyadic frequency availability, floors, stars, support crossings, and prior-owner exclusions.",
+      "Translate the hard critical physical capacity into the normalized L^2 versus L^(3/2) cone ledger without dropping literal weights.",
+      "Test whether the hard and first-smooth profiles have any exact adjacent-profile cancellation or whether they remain separate owner leaves.",
+      "Distinguish menu optimality from an arithmetic lower bound and a pointwise theorem from a stronger Gram or global aggregate.",
+      "Prove a strict parent improvement, a newly target-safe subrange, an exact connector gain, or a rigorous separate-parent minimax/no-go with the smallest critical survivors.",
+      "State exactly what would follow for M9-M1, M9, the global exponent, and the alternative GAR route."
+    ],
+    "controls": [
+      "literal_m1_block_and_profiles",
+      "owner_priority_and_U1",
+      "hard_smooth_physical_split",
+      "frequency_first_capacity",
+      "full_second_derivative_capacity",
+      "TTY_exponent_and_hypotheses",
+      "critical_hard_label",
+      "critical_first_smooth_label",
+      "floor_star_support_and_real_X",
+      "hard_cone_physical_normalization",
+      "adjacent_profile_telescope",
+      "menu_optimality_vs_lower_bound",
+      "canonical_Gram_and_GAR_nonimplication",
+      "external_theorem_hypothesis_fit",
+      "downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "blind_m1_parent_minimax_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "active",
+        "target": "Independently derive the exact separate hard/smooth direct-menu minimax, verify the literal critical labels, and identify any lawful shrink or the first exact obstruction.",
+        "context_files": [
+          "problems/gauss_circle.md",
+          "state/control_models.md",
+          "rounds/codex-managed/m9-m1-direct-parent-minimax-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "all strategy files",
+          "all Round-91, Round-98, and Round-119 nonblind artifacts",
+          "all Round-119 sibling reports"
+        ],
+        "required_controls": [
+          "literal_m1_block_and_profiles",
+          "owner_priority_and_U1",
+          "hard_smooth_physical_split",
+          "frequency_first_capacity",
+          "full_second_derivative_capacity",
+          "TTY_exponent_and_hypotheses",
+          "critical_hard_label",
+          "critical_first_smooth_label",
+          "floor_star_support_and_real_X",
+          "hard_cone_physical_normalization",
+          "adjacent_profile_telescope",
+          "menu_optimality_vs_lower_bound",
+          "canonical_Gram_and_GAR_nonimplication",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section statement-only report.",
+          "The exact separate minimax and literal witness families, or a proved shrink.",
+          "A hard/smooth owner and capacity table.",
+          "A promote, retain, revise, reject, or no-change recommendation."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-direct-parent-minimax-gate/reports/blind_m1_parent_minimax_rederivation.md"
+      },
+      {
+        "id": "literal_m1_parent_capacity_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "active",
+        "target": "Minimize the exact accepted capacity separately on the hard and smooth direct M1 parents, test adjacent-profile or owner gains, and isolate the smallest critical survivors.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0821_full_proof_strategy.md",
+          "rounds/codex-managed/m9-m1-frequency-phase-diagram/synthesis.md",
+          "rounds/codex-managed/gc-unconditional-exponent-extraction/reviews/conductor_round91_block_optimization.md",
+          "rounds/codex-managed/m9-m1-route-interface-assembly/synthesis.md",
+          "rounds/codex-managed/m9-m1-route-interface-assembly/reports/m1_route_assembly_attack.md",
+          "rounds/codex-managed/m9-combined-top-cones/synthesis.md",
+          "rounds/codex-managed/m9-m1-direct-parent-minimax-gate/derivation_packet.md",
+          "rounds/codex-managed/m9-m1-direct-parent-minimax-gate/candidates/conductor_m1_parent_capacity_chart.md"
+        ],
+        "required_controls": [
+          "literal_m1_block_and_profiles",
+          "owner_priority_and_U1",
+          "hard_smooth_physical_split",
+          "frequency_first_capacity",
+          "full_second_derivative_capacity",
+          "TTY_exponent_and_hypotheses",
+          "critical_hard_label",
+          "critical_first_smooth_label",
+          "floor_star_support_and_real_X",
+          "hard_cone_physical_normalization",
+          "adjacent_profile_telescope",
+          "menu_optimality_vs_lower_bound",
+          "canonical_Gram_and_GAR_nonimplication",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section discovery report.",
+          "Exact hard and smooth capacity functions and minimax witnesses.",
+          "Any proved parent shrink, or the smallest literal critical survivors and missing powers.",
+          "A precise state recommendation."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-direct-parent-minimax-gate/reports/literal_m1_parent_capacity_attack.md"
+      },
+      {
+        "id": "m1_parent_minimax_hostile_audit",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "status": "active",
+        "target": "Hostilely audit the separate-parent minimax, literal label ownership, any adjacent-profile connector, and every claimed implication from direct, canonical, global, or source estimates.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0821_full_proof_strategy.md",
+          "rounds/codex-managed/m9-m1-frequency-phase-diagram/synthesis.md",
+          "rounds/codex-managed/gc-unconditional-exponent-extraction/reports/global_exponent_hostile_audit.md",
+          "rounds/codex-managed/gc-unconditional-exponent-extraction/reviews/conductor_round91_block_optimization.md",
+          "rounds/codex-managed/m9-m1-route-interface-assembly/reports/m1_route_graph_hostile_audit.md",
+          "rounds/codex-managed/m9-m1-route-interface-assembly/reviews/conductor_round98_graph_and_cycle_audit.md",
+          "rounds/codex-managed/m9-m1-route-interface-assembly/synthesis.md",
+          "rounds/codex-managed/m9-combined-top-cones/reports/combined_cone_hostile_audit.md",
+          "rounds/codex-managed/m9-m1-direct-parent-minimax-gate/derivation_packet.md",
+          "rounds/codex-managed/m9-m1-direct-parent-minimax-gate/candidates/conductor_m1_parent_capacity_chart.md"
+        ],
+        "required_controls": [
+          "literal_m1_block_and_profiles",
+          "owner_priority_and_U1",
+          "hard_smooth_physical_split",
+          "frequency_first_capacity",
+          "full_second_derivative_capacity",
+          "TTY_exponent_and_hypotheses",
+          "critical_hard_label",
+          "critical_first_smooth_label",
+          "floor_star_support_and_real_X",
+          "hard_cone_physical_normalization",
+          "adjacent_profile_telescope",
+          "menu_optimality_vs_lower_bound",
+          "canonical_Gram_and_GAR_nonimplication",
+          "external_theorem_hypothesis_fit",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section hostile report.",
+          "A pass/fail table for owner, minimax, literal labels, normalization, connector, source, and implication seams.",
+          "The maximal safe minimax/no-go statement or a fatal correction.",
+          "A precise state recommendation."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-direct-parent-minimax-gate/reports/m1_parent_minimax_hostile_audit.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "owner_tree",
+        "requirement": "The bottom, R5, terminal, second-derivative, TTY, hard, and smooth owners are disjoint and exhaustive on the direct route."
+      },
+      {
+        "id": "capacity",
+        "requirement": "Every accepted row is minimized on the correct literal parent set and compared with X^(1/4)."
+      },
+      {
+        "id": "critical_labels",
+        "requirement": "Hard and first-smooth X^(1/6) frequency families exist with floors, dyadic support, stars, and real-X crossings retained."
+      },
+      {
+        "id": "hard_normalization",
+        "requirement": "The physical hard block and normalized L^2 versus L^(3/2) cone ledger use the accepted transform constants and target-safe errors."
+      },
+      {
+        "id": "connector",
+        "requirement": "Any adjacent-profile cancellation is coefficientwise and owner-preserving; a shared exponent deficit is not an identity."
+      },
+      {
+        "id": "route_scope",
+        "requirement": "Canonical Gram and GAR implications follow only proved graph edges; menu optimality is not an actual lower bound."
+      },
+      {
+        "id": "downstream",
+        "requirement": "No M9-M1, M9, exponent, or quarter promotion occurs unless the full required parent conjunction is proved."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "c3498daad3bdceb7c69c0e47a616e03ebfa12ccaf42f8df42958aa227f50fd91",
+    "generated_at": "2026-08-21T16:34:24.392280+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

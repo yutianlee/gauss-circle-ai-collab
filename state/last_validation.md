@@ -1,30 +1,33 @@
 # Last validation
 
-Round: 113
+Round: 130
 
-Campaign: m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation
+Campaign: `gc-w7-16-post-inner-outer-bilinear-gate`
 
 Graph SHA-256:
-411adc0c93d2451dfc1235840f27063b3ef4869d0c67aebfbbc74fe9ef04387c
+`23e7bfacbf6abc5582769fbe8d427cbca2379e1d265b99df21d93a65ec504825`
 
-- State Patch dry-run and apply: passed.
-- Authoritative graph validation: passed.
-- Built-in unit tests: 6 passed.
-- All three reports: complete, clean, and exactly seven numbered sections.
-- UTF-8/LF, control-byte, TeX-delimiter, brace, environment, and whitespace
-  hygiene: passed.
-- Denominator and frequency telescopes, empty-height cases, (d=0)
-  convention, physical/stationary constants, real-(X) ratio boundary,
-  continuum-symbol bridge, smooth crossings, gcd bottom, high owner,
-  quarter-packet sign, conjugacy, prior-owner priority, uniform seminorms,
-  and full physical one-count gates: passed after the explicit repairs.
-- Literal dictionary gate: closed. A new proved internal connector records
-  the coefficientwise actual symbol and correction equation.
-- Signed analytic gate: open. No bound for the complete internal gcd-shell
-  packet and no actual-symbol lower obstruction was proved.
-- Scope check: the balanced signed estimate, hard and unbalanced M2 parents,
-  both M1 parents, endpoint uniformity, M9, and the pointwise quarter theorem
-  remain open.
+Status: State Patch applied and graph validated.
 
-Decision: promote only the repaired literal balanced dictionary and exact
-one-count connector. No range or exponent change.
+Validated result:
+
+- exact recombined complete-lift support gives only $O(LB/D)$ inner
+  numerators on shell $B$;
+- the shell bound is $BK_B$, improving every lower shell by $B/D$ and
+  localizing the complete residual to $B\asymp D$;
+- the top and complete critical fixed block remains
+  $O_\varepsilon(Y^{35/48+\varepsilon})$;
+- the exact resolved outer Gram is $H^*H$, equivalently
+  $K_{B,+}^*K_{B,+}$ after physical reassembly, while $G^2$ is full-row
+  completion only;
+- for a fixed primitive top-shell outer ray, $p$ is a bounded-multiplicity
+  determinant-residue lift of $n=aq-bp$;
+- product-window reversal, positive outer energy, and sequential
+  unit-Hessian transforms do not improve the accepted complete capacity.
+
+Open: the literal signed $B\asymp D$ determinant correlation at target
+$Y^{1/2+\varepsilon}$, leaving $Y^{11/48}$; M9-M1, M9-M2, endpoint
+uniformity, M9, the conditional bridge, and the quarter theorem.
+
+Exponent: no change. Internal $1/3$; audited external
+$0.3144831759740614\ldots$.

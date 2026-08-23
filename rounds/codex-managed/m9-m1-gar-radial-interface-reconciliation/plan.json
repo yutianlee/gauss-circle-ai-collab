@@ -1,0 +1,232 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 120,
+    "round_type": "m9_m1_gar_radial_interface_reconciliation",
+    "campaign_id": "m9-m1-gar-radial-interface-reconciliation",
+    "title": "GAR sharp radial-interface physical owner reconciliation",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "daa3c03b4b08ab062fa78724813fd2beff02ad92df8bf25d32407b1ce7f91177",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 99,
+      "numerical_experimental_maximum_percent": 1,
+      "planned_numerical_percent": 0,
+      "literature_policy": "Use no new theorem unless a primary source matches the exact C_X^* coefficient, sharp moving endpoint, real-X star convention, pointwise norm, and physical-limit scope. Existing endpoint theorems must be matched coefficientwise rather than cited by title."
+    },
+    "target_obligations": [
+      "M9-M1-global-radial-interface-estimate",
+      "M9-M1-upper-radial-endpoint-prefix",
+      "M9-M1-endpoint-boundary-operator",
+      "M9-M1-global-radial-one-count-assembly",
+      "M9-M1-global-angular-radial-estimate"
+    ],
+    "frozen_target": {
+      "question": "After deleting the proved fixed smooth critical sectors and matching the accepted physical endpoint modules coefficientwise, what is the exact remaining sharp radial/interface parent of GAR, and can it be closed or strictly reduced?",
+      "reference_formula": "G_X=sum_(n<=N_X)^* C_X^*(n)n^(-3/4)e(sqrt(Xn)), N_X=floor(16sqrt X), C_X^*(n)=sum_(hq=n,q odd)chi_4(q)Omega_X^*(n,h), Omega_X^*=sum_j 1_(h<=H_j)Phi(h/(H_j+1))[w_j(2h sqrt(X/n))]^*. Fixed V compact in (c,C), C<16, is target-safe. The physical upper endpoint prefix and aggregate endpoint/R1 module are target-safe only in their accepted physical limits.",
+      "quantities": [
+        "X large real, Y=sqrt X, y=floor(sqrt X), N_X=floor(16Y)",
+        "exact dyadic D_j=2^(-j)y and H_j=floor(D_jX^(-1/4))",
+        "literal radial endpoint star, product half tie, hard j=0 sample, support crossings, and both signs",
+        "fixed compact critical transfer for V in C_c^infinity((c,C)), 0<c<C<16",
+        "physical upper endpoint prefix H_prof_(infinity,X), not arbitrary finite top height",
+        "endpoint boundary operator equals lower prefix plus upper prefix plus recombined R1 arithmetic residue after common routing",
+        "open sharp upper/interface remainder after one fixed lower-critical-upper radial partition",
+        "candidate flat support edge n=16Y and possible collar-seminorm summation",
+        "lower-radial signed aggregate excluded as an independent parent",
+        "connector-completed alpha architecture excluded as an additional flat summand"
+      ]
+    },
+    "completion_criteria": [
+      "Reproduce the exact global radial coefficient, external normalization, and one fixed lower-critical-upper partition.",
+      "Match the physical upper endpoint prefix and endpoint boundary operator coefficientwise to the sharp radial/interface remainder, including stars and hard samples.",
+      "Distinguish an original radial collar or cutoff commutator from an integration-by-parts boundary prefix.",
+      "Distinguish the accepted symmetric physical limit from arbitrary finite Mellin or height truncations.",
+      "Audit whether fixed compact critical transfer can approach 16 after pricing all cutoff seminorms, or prove a flat-edge collar estimate directly.",
+      "Remove each compact, endpoint, residue, transition, and boundary owner exactly once and retain every unmatched interface explicitly.",
+      "Prove the complete radial-interface target, a strict target-safe subpackage, or a rigorous no-go with the smallest exact remainder.",
+      "State exactly what follows for GAR, the alternative M1 bridge, blockwise M9-M1, M9-M2, endpoint uniformity, and the global exponent."
+    ],
+    "controls": [
+      "literal_global_radial_coefficient",
+      "external_X_one_quarter_normalization",
+      "fixed_radial_partition_one_count",
+      "compact_critical_transfer_scope",
+      "upper_endpoint_prefix_coefficient",
+      "endpoint_boundary_and_R1_routing",
+      "radial_collar_vs_boundary_prefix",
+      "flat_support_edge_and_cutoff_seminorms",
+      "floor_star_product_tie_hard_sample",
+      "physical_limit_vs_finite_height",
+      "alpha_route_nonduplication",
+      "lower_parent_disjointness",
+      "downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "blind_radial_interface_partition",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "active",
+        "target": "Independently construct the exact radial owner partition, test whether the proved endpoint modules close the sharp upper/interface parent, and isolate the first unmatched coefficient if not.",
+        "context_files": [
+          "problems/gauss_circle.md",
+          "state/control_models.md",
+          "rounds/codex-managed/m9-m1-gar-radial-interface-reconciliation/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "all strategy files",
+          "all Round-98 and Round-120 nonblind artifacts",
+          "all Round-120 sibling reports"
+        ],
+        "required_controls": [
+          "literal_global_radial_coefficient",
+          "external_X_one_quarter_normalization",
+          "fixed_radial_partition_one_count",
+          "compact_critical_transfer_scope",
+          "upper_endpoint_prefix_coefficient",
+          "endpoint_boundary_and_R1_routing",
+          "radial_collar_vs_boundary_prefix",
+          "floor_star_product_tie_hard_sample",
+          "physical_limit_vs_finite_height",
+          "lower_parent_disjointness",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section statement-only report.",
+          "An exact radial owner equation and endpoint/collar distinction.",
+          "A proof, strict subpackage, or smallest exact unmatched remainder.",
+          "A promote, retain, revise, reject, or no-change recommendation."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-gar-radial-interface-reconciliation/reports/blind_radial_interface_partition.md"
+      },
+      {
+        "id": "literal_radial_interface_reconciliation",
+        "role": "formalizer",
+        "access_mode": "selected_context",
+        "status": "active",
+        "target": "Reconcile the exact C_X^* sharp radial-interface remainder with every proved physical endpoint and critical owner, attempt a flat-edge collar bound, and isolate the smallest survivor.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0821_full_proof_strategy.md",
+          "rounds/codex-managed/m9-m1-route-interface-assembly/synthesis.md",
+          "rounds/codex-managed/m9-m1-route-interface-assembly/reviews/conductor_round98_partition_and_route_scope.md",
+          "rounds/codex-managed/m9-m1-critical-radial-terminal-return/synthesis.md",
+          "rounds/codex-managed/m9-m1-upper-endpoint-character-abel/synthesis.md",
+          "rounds/codex-managed/m9-m1-endpoint-boundary-cauchy/synthesis.md",
+          "rounds/codex-managed/m9-m1-r1-arithmetic-residue/synthesis.md",
+          "rounds/codex-managed/m9-m1-gar-radial-interface-reconciliation/derivation_packet.md"
+        ],
+        "required_controls": [
+          "literal_global_radial_coefficient",
+          "external_X_one_quarter_normalization",
+          "fixed_radial_partition_one_count",
+          "compact_critical_transfer_scope",
+          "upper_endpoint_prefix_coefficient",
+          "endpoint_boundary_and_R1_routing",
+          "radial_collar_vs_boundary_prefix",
+          "flat_support_edge_and_cutoff_seminorms",
+          "floor_star_product_tie_hard_sample",
+          "physical_limit_vs_finite_height",
+          "alpha_route_nonduplication",
+          "lower_parent_disjointness",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section formalization report.",
+          "A coefficientwise one-count table for compact, endpoint, residue, collar, and transition pieces.",
+          "A complete bound, target-safe subpackage, or smallest exact remainder.",
+          "A precise state recommendation."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-gar-radial-interface-reconciliation/reports/literal_radial_interface_reconciliation.md"
+      },
+      {
+        "id": "radial_interface_hostile_scope_audit",
+        "role": "seam_reviewer",
+        "access_mode": "selected_context",
+        "status": "active",
+        "target": "Hostilely audit every endpoint/collar equality, physical-limit claim, cutoff-seminorm cost, route owner, and downstream implication in the proposed GAR interface reconciliation.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0821_full_proof_strategy.md",
+          "rounds/codex-managed/m9-m1-route-interface-assembly/reports/m1_route_graph_hostile_audit.md",
+          "rounds/codex-managed/m9-m1-route-interface-assembly/reviews/conductor_round98_graph_and_cycle_audit.md",
+          "rounds/codex-managed/m9-m1-critical-radial-terminal-return/reports/critical_terminal_transfer_hostile_audit.md",
+          "rounds/codex-managed/m9-m1-upper-endpoint-character-abel/reports/upper_endpoint_abel_hostile_audit.md",
+          "rounds/codex-managed/m9-m1-endpoint-boundary-cauchy/reports/boundary_cauchy_hostile_audit.md",
+          "rounds/codex-managed/m9-m1-r1-arithmetic-residue/reports/r1_residue_hostile_audit.md",
+          "rounds/codex-managed/m9-m1-gar-radial-interface-reconciliation/derivation_packet.md"
+        ],
+        "required_controls": [
+          "literal_global_radial_coefficient",
+          "external_X_one_quarter_normalization",
+          "fixed_radial_partition_one_count",
+          "compact_critical_transfer_scope",
+          "upper_endpoint_prefix_coefficient",
+          "endpoint_boundary_and_R1_routing",
+          "radial_collar_vs_boundary_prefix",
+          "flat_support_edge_and_cutoff_seminorms",
+          "floor_star_product_tie_hard_sample",
+          "physical_limit_vs_finite_height",
+          "alpha_route_nonduplication",
+          "lower_parent_disjointness",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section hostile report.",
+          "A pass/fail table for coefficient, endpoint, collar, limit, owner, source, and implication seams.",
+          "The maximal safe reconciliation statement or fatal correction.",
+          "A precise state recommendation."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-gar-radial-interface-reconciliation/reports/radial_interface_hostile_scope_audit.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "radial_partition",
+        "requirement": "The lower, compact critical, and sharp upper/interface pieces form one exact physical partition with one endpoint star."
+      },
+      {
+        "id": "coefficient_match",
+        "requirement": "Any endpoint module deleted from the open parent has exactly the same C_X^* coefficient, profile limit, character, and boundary weight."
+      },
+      {
+        "id": "collar",
+        "requirement": "A sharp radial collar is not replaced by an integration-by-parts prefix unless an exact identity is displayed."
+      },
+      {
+        "id": "flatness",
+        "requirement": "Every approach to n=16Y prices cutoff seminorm growth, lattice length, floors, and support crossings."
+      },
+      {
+        "id": "limit",
+        "requirement": "Physical symmetric limits and arbitrary finite top heights are never interchanged without a proved uniform theorem."
+      },
+      {
+        "id": "one_count",
+        "requirement": "Endpoint, R1, transition, alpha, lower-radial, and critical owners are removed exactly once and never conjoined across alternative routes."
+      },
+      {
+        "id": "downstream",
+        "requirement": "No GAR, blockwise M9-M1, M9, exponent, or quarter promotion occurs without every required remaining parent."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "daa3c03b4b08ab062fa78724813fd2beff02ad92df8bf25d32407b1ce7f91177",
+    "generated_at": "2026-08-21T17:02:26.876142+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-unbalanced-integer-centred-shifted-alias-reduction",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Integer-centred shifted-Gram zero-alias and inverse reduction",
+        "status": "proved_internal",
+        "statement_tex": "For one literal flat-smooth strict-UNBAL row R_X=sum_(r odd)chi_4(r)W(X/(rD))sum_k q_L(4Xk/r^2)k^(-1)e(Xk/r), with D=X^delta, L=X^ell, R=X/D and K=XL/D^2, keep every amplitude and the physical denominator 4X frozen at X. For every integer M asymp X, |R_X-R_M^sharp|<<_epsilon(1+|M-X|)X^epsilon. In the shifted length-H block square, the exact ordered-pair kernel Gamma_(M,H)(r,s) is at most a constant times psi_H(M/r)psi_H(M/s)(1+K||M(1/r-1/s)||)^(-A), where psi_H(x)=min(1,(H||x||)^(-1)), and sum_(r asymp R)psi_H(M/r)^2<<_epsilon(1+R/H)X^epsilon. Therefore the complete nearest-alias sector j=0 is O_epsilon((1+R/H)X^epsilon), including every shifted self-correlation and off-diagonal zero alias. At H_0=ceil(X^(1/2)/D)<=K it is square-target-safe. For the unique nearest alias j, with E=M(s-r)-jrs, all nonzero exact aliases E=0 together are O_epsilon(X^epsilon), and |E|>X^(1+rho)/L is rapidly small. Consequently, for every fixed eta>0, any |R_X|>=X^(1/4+eta) forces a positive-real contribution >>X^(1/2+2eta) in the complete signed sector j!=0, E!=0, |E|<=X^(1+eta/10)/L, with both reciprocal selectors, every shifted profile and endpoint, both alias orientations and all character signs retained. This is a one-way fixed-power inverse theorem, not the quarter estimate.",
+        "dependencies": [
+          "M9-M2-unbalanced-truncated-divisor-fixed-centre-return",
+          "M9-M2-character-factor",
+          "M9-M2-dyadic-weight-nondegeneracy",
+          "H4-Phi-regularity",
+          "Divisor-bound-elementary"
+        ],
+        "implies": [
+          "M9-M2-smooth-unbalanced-three-quarter-estimate"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/reports/blind_integer_gram_rederivation.md",
+            "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/reports/signed_alias_product_attack.md",
+            "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/reports/reciprocal_gram_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/reviews/independent_shifted_gram_candidate_audit.md",
+            "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/reviews/hostile_shifted_zero_alias_addendum.md",
+            "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/reviews/conductor_round123_integerization_gram_adjudication.md",
+            "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Prove the square-target bound for the complete actual-sign nonzero, nonexact near-alias aggregate at H_0, jointly across transverse modes, shifts, aliases and reciprocal variables. Do not split its conjugate, character, or profile labels before the inequality."
+      },
+      {
+        "id": "M9-M2-unbalanced-alias-factor-and-derivative-self-return",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Unbalanced alias-factor parity and fixed-alias derivative self-return",
+        "status": "proved_internal",
+        "statement_tex": "For an integer centre M=2^tM_0 with M_0 odd, the unique reciprocal alias and defect satisfy M(1/r-1/s)=j+E/(rs), (M-jr)(M+js)-M^2=jE, and chi_4(r)chi_4(s)=(-1)^((jrs+E)/2^(t+1)). The factor map is invertible for j!=0 only after retaining its congruences, orientations, supports and literal profiles, and it collapses at j=0. Choosing t with 2^t asymp X^(1/4) is target-safe for the centre perturbation and thins exact aliases, but its near-defect congruence is tautological and removes no original pair. The ordinary same-k Cauchy Gram is a strictly stronger sufficient norm with nondegenerate diagonal R>X^(1/2). In the shifted Gram, transverse Poisson has active modes nu=m-sigma/4 asymp L. The opposite character channel obeys partial_r Phi+m=-(Mh+nu(s^2-r^2))/r^2. For a nonempty alias range there are allowed |h|<H_0 and interior points where this derivative is integral, with second derivative asymp L|j|/X. Therefore neither exact factorization, automatic defect parity, nor a uniform fixed-alias Kusmin-Landau first-derivative bound supplies the missing saving. This is a method obstruction, not a signed lower bound.",
+        "dependencies": [
+          "M9-M2-unbalanced-integer-centred-shifted-alias-reduction",
+          "M9-M2-character-factor"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/reports/blind_integer_gram_rederivation.md",
+            "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/reports/signed_alias_product_attack.md",
+            "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/reports/reciprocal_gram_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/candidates/alias_curve_character_probe.md",
+            "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/reviews/hostile_alias_curve_no_go_audit.md",
+            "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/reviews/conductor_round123_integerization_gram_adjudication.md",
+            "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Freeze the unshifted positive Gram, automatic two-adic thinning, factorwise absolute values, and fixed-alias first-derivative route. Reopen only with a joint stationary-lattice estimate or a stronger complete-aggregate inverse theorem."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-smooth-unbalanced-three-quarter-estimate",
+        "dependencies_added": [
+          "M9-M2-unbalanced-integer-centred-shifted-alias-reduction"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/reports/blind_integer_gram_rederivation.md",
+            "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/reports/signed_alias_product_attack.md",
+            "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/reports/reciprocal_gram_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/reviews/hostile_shifted_zero_alias_addendum.md",
+            "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The exact shifted survivor is the complete signed nonzero, nonexact near-alias aggregate from Round 123. Prove it at X^(1/2+epsilon) jointly across transverse mode, h-shift, alias and reciprocal variables. The zero alias, exact aliases and far defects are already safe."
+      },
+      {
+        "id": "M9-M2-unbalanced-truncated-divisor-fixed-centre-return",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/reviews/conductor_round123_integerization_gram_adjudication.md",
+            "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Round 123 permits target-safe integer-centre transfer and deletes the whole zero alias, every nonzero exact alias and far defects in a shifted square. The remaining near-alias factor map is invertible and still requires a genuinely joint signed inequality."
+      },
+      {
+        "id": "M9-M2-unbalanced-flat-wave-curvature-envelope",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/reviews/hostile_shifted_zero_alias_addendum.md",
+            "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The scalar envelope is now supplemented by a fixed-power inverse reduction to nonzero, nonexact shifted aliases. A continuation must estimate that full signed sector; scalar curvature, exact factors, or another coefficient-preserving transform are parked."
+      },
+      {
+        "id": "M9-M2",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Hard TOP and BAL remain open, while flat-smooth UNBAL is reduced to the Round-123 nonzero, nonexact near-alias aggregate and still lacks its target bound."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round123-reciprocal-termwise-integerization-is-O1",
+        "reason": "Termwise phase replacement costs up to K. The target-safe result uses the physical product kernel and a divisor layer cake."
+      },
+      {
+        "id": "Round123-same-k-Gram-is-target-equivalent",
+        "reason": "Weighted Cauchy is one-way, and the nondegenerate diagonal is R=X/D>X^(1/2). The scalar target need not imply this stronger energy bound."
+      },
+      {
+        "id": "Round123-positive-diagonal-proves-or-refutes-the-scalar-wave",
+        "reason": "The positive diagonal belongs to a stronger sufficient norm. Its cancellation burden is not a lower bound for the original scalar row."
+      },
+      {
+        "id": "Round123-reciprocal-alias-has-a-half-integer-tie",
+        "reason": "A tie would give 2M(s-r)=(2j+1)rs, impossible because the left side is even and the right side is odd."
+      },
+      {
+        "id": "Round123-exact-factor-count-controls-near-defects",
+        "reason": "The divisor factorization uv=M^2 controls only E=0. The live window has 0<|E|<=X^(1+rho)/L and retains every factor congruence and profile."
+      },
+      {
+        "id": "Round123-factor-defect-parity-is-a-new-sign",
+        "reason": "The displayed parity quotient equals M_0(s-r)/2 and is exactly the original chi_4(r)chi_4(s) sign under the inverse map."
+      },
+      {
+        "id": "Round123-positive-and-negative-aliases-cancel",
+        "reason": "Swapping r and s conjugates the analytic kernel but leaves the character product unchanged. The two orientations combine as a real part, not automatic cancellation."
+      },
+      {
+        "id": "Round123-high-two-adic-centre-thins-near-aliases",
+        "reason": "It forces a large modulus only on exact aliases, which are already divisor-small. Every original near pair defines a defect satisfying the new congruence."
+      },
+      {
+        "id": "Round123-only-h0-diagonal-is-safe-in-shifted-Gram",
+        "reason": "The exact block-square kernel has two reciprocal selectors. A product layer cake proves the complete j=0 sector, including all shifted self-correlations and off-diagonal zero aliases, is target-safe at H_0."
+      },
+      {
+        "id": "Round123-selector-density-ledger-is-an-incidence-bound",
+        "reason": "Multiplying nominal densities proves neither an arithmetic upper bound nor a lower-bound obstruction for the correlated thin annulus."
+      },
+      {
+        "id": "Round123-fixed-alias-quarter-mode-Kusmin-Landau-closes",
+        "reason": "All transverse modes nu=m-sigma/4 asymp L are active, and allowed h-shifts create nondegenerate interior derivative crossings in the opposite character channel."
+      },
+      {
+        "id": "Round123-flat-zero-alias-package-proves-complete-UNBAL",
+        "reason": "The nonzero, nonexact near-alias aggregate and every nonflat owner remain open."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M2-smooth-unbalanced-three-quarter-estimate",
+        "reason": "The complete signed near-alias survivor has no X^(1/2+epsilon) shifted-energy estimate."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Hard TOP, BAL and complete UNBAL all remain open."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "Round 123 concerns only one M2 flat-smooth owner; both M1 routes remain open."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "Every sharp, clipped, starred, hard, arithmetic and transition endpoint is excluded."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, complete M9-M2 and endpoint uniformity remain open."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "Its full M9 hypothesis remains open."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The round proves reductions and a strict energy subpackage but no complete pointwise estimate below the accepted one-third frontier."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The quarter target still lacks complete M9-M2, an M1 route, endpoint uniformity and the final bridge."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 8,
+    "idea_quality_score": 9,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 123 proves target-safe movable-centre stability, exact alias-factor algebra, a complete shifted zero-alias theorem, global exact-alias and far-tail deletions, and a fixed-power inverse reduction to one explicit actual-sign near-alias aggregate. It also rigorously rules out automatic two-adic thinning and the proposed fixed-alias first-derivative shortcut. The complete flat-smooth target, every nonflat M2 owner, all M1 parents and every exponent remain open."
+  }
+}

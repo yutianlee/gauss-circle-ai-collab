@@ -1,0 +1,202 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-lower-near-square-wavelet-reduction",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Uniform lower-wavelet localization and exact low-two-adic survivor",
+        "status": "proved_internal",
+        "statement_tex": "Let R=X^(1/4), y=floor(sqrt X), N=floor X, W(k)=hat J(k)-hat J(k+1), and B_flat^(N)=sum_k D_N(k)W(k) be the exact Round-121 lower discrepancy. For every fixed A>=1, |W(k)| is at most a constant times (R+|k|)^(-1)(1+|k|/y)^(-A), while sum_k|W(k)|<<log X and sum_k|kW(k)|<<y. Fix 0<delta<1/8, K_delta=yX^delta, and A_0=ceil(log_2 R). The ranges |k|>K_delta and |k|<=R, the cumulative increments v_2(N+j)>=A_0, and the odd positive-character central complementary band are all O_(epsilon,delta)(RX^epsilon). If m=2^a n with n odd, a(n)=sum_(d|n)chi_4(d)=r_2(m)/4, T_z(n)=sum_(q|n,q<z)chi_4(q), and V_delta(m) equals a(n)/2 for a=0 and chi_4(n)=1, T_(n/y)(n) for a=0 and chi_4(n)=-1, a(n)-chi_4(n)T_(n/y)(n) for 1<=a<A_0, and zero for a>=A_0, then B_flat^(N)=sum_(R<|k|<=K_delta)W(k) I_k V_delta+O_(epsilon,delta)(RX^epsilon), where I_k is the exact oriented interval from N to N+k. All centering and overlap seams are included. This is a target-scale reduction, not an estimate of the displayed survivor.",
+        "dependencies": [
+          "M9-M1-lower-radial-flat-discrepancy-equivalence"
+        ],
+        "implies": [
+          "M9-M1-global-lower-radial-signed-estimate"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/candidates/conductor_wavelet_localization_and_two_adic_split.md",
+            "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/reports/blind_near_square_divisor_involution.md",
+            "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/reports/literal_two_adic_complementary_divisor_attack.md",
+            "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/reports/near_square_complement_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/reviews/conductor_round122_complement_adjudication.md",
+            "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Prove one genuinely joint signed RX^epsilon bound for the exact medium-index low-two-adic survivor. Keep all residue, valuation, full-divisor, complement, and wavelet labels together."
+      },
+      {
+        "id": "M9-M1-near-square-complementary-divisor-self-return",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "All-two-adic complementary-divisor self-return for the lower sharp cone",
+        "status": "proved_internal",
+        "statement_tex": "For every positive m=2^a n with n odd, the exact sharp coefficient satisfies A_y(m)=a(n)-chi_4(n)T_(n/y)(n), where a(n)=r_2(m)/4 and T_z(n)=sum_(q|n,q<z)chi_4(q). The complement is d<->n/d=m/(2^a d); using m/d for a>=1 leaves the character support. The strict lower-tail boundary accounts exactly for d=y and every square fixed point. If chi_4(n)=-1 then a(n)=0 and A_y(m)=T_(n/y)(n), so the involution returns the truncated coefficient without contraction. If chi_4(n)=1 it leaves one half of the full r_2/4 coefficient plus an exact central band; the odd near-square central band is target-safe, but low even bands are generally wide. Completing the full coefficient and subtracting its complement reconstructs the original d<=y product cone. Thus complementary divisors alone yield no power saving. This is not a signed lower bound for the complete survivor.",
+        "dependencies": [
+          "M9-M1-lower-near-square-wavelet-reduction"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/candidates/conductor_wavelet_localization_and_two_adic_split.md",
+            "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/reports/blind_near_square_divisor_involution.md",
+            "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/reports/literal_two_adic_complementary_divisor_attack.md",
+            "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/reports/near_square_complement_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/reviews/conductor_round122_complement_adjudication.md",
+            "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Freeze a second complement, residuewise or valuationwise norms, and full-r_2 completion followed by a circle estimate. Reopen only with a new joint signed inequality on the exact survivor."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-global-lower-radial-signed-estimate",
+        "dependencies_added": [
+          "M9-M1-lower-near-square-wavelet-reduction"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/reports/blind_near_square_divisor_involution.md",
+            "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/reports/literal_two_adic_complementary_divisor_attack.md",
+            "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/reports/near_square_complement_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The exact survivor is the medium-index low-two-adic cumulative wavelet from Round 122. Prove it jointly at RX^epsilon, or leave GAR parked; complementary inversion and separate full-circle/tail bounds are exhausted."
+      },
+      {
+        "id": "M9-M1-lower-radial-flat-discrepancy-equivalence",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/reviews/conductor_round122_complement_adjudication.md",
+            "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Round 122 localizes its exact wavelet and deletes four strict packages, leaving one explicit low-two-adic survivor. A new joint signed estimate, not another complement or Fourier return, is required."
+      },
+      {
+        "id": "M9-M1-global-radial-one-count-assembly",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Its sole open lower child is now reduced to the exact Round-122 medium-index low-two-adic wavelet. The nonlower child remains complete."
+      },
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/synthesis.md"
+          ]
+        },
+        "next_action": "GAR remains open on the Round-122 low-two-adic survivor. The complementary-divisor gate is parked absent a genuinely joint signed inequality."
+      },
+      {
+        "id": "M9-M1-product-wavelet-affine-Abel-reduction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/reviews/conductor_round122_complement_adjudication.md",
+            "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Round 122 proves that all-two-adic complementary completion returns to this sharp product cone after four target-safe deletions. Another Abel/Fourier/complement cycle is frozen."
+      },
+      {
+        "id": "M9-M1-unmatched-crossing-Fourier-mode-reduction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/reviews/conductor_round122_complement_adjudication.md",
+            "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The localized complementary-divisor split still reconstructs the unmatched sharp crossing cone. Continue only with a new joint signed inequality on the exact Round-122 survivor."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round122-fixed-X-Schwartz-tail-is-uniform",
+        "reason": "The one-sided cutoff changes at scale 1/y. Uniform Fourier decay requires explicit derivative norms growing as powers of y."
+      },
+      {
+        "id": "Round122-even-complement-is-m-over-d",
+        "reason": "For m=2^a n with a>=1 and contributing odd d, m/d is even and has zero character. The character-preserving complement is n/d=m/(2^a d)."
+      },
+      {
+        "id": "Round122-use-chi4-m-on-even-branch",
+        "reason": "chi_4(m)=0 for even m. The lawful sign is chi_4(n) on the odd part."
+      },
+      {
+        "id": "Round122-all-two-adic-central-bands-are-near-square",
+        "reason": "Only a=0 has threshold n/y=y+O(X^delta). For a>=1 the threshold is y/2^a+O(X^delta/2^a), so the band is generally wide."
+      },
+      {
+        "id": "Round122-complement-factor-one-half-is-power-saving",
+        "reason": "A constant factor cannot supply the missing power, and the positive-character identity retains the full r_2/4 coefficient plus its exact central term."
+      },
+      {
+        "id": "Round122-full-circle-coefficient-may-be-separated-from-tail",
+        "reason": "The full coefficient and exact complementary tail occur together once. Separating them exposes the open circle estimate; recombining restores the original sharp cone."
+      },
+      {
+        "id": "Round122-truncated-pre-Abel-has-no-boundary-seam",
+        "reason": "A localized pre-Abel sum requires a boundary or an independently controlled Fourier tail. The accepted proof instead uses the exact localized cumulative correction and displays every overlap."
+      },
+      {
+        "id": "Round122-high-valuation-is-terminal-index-condition",
+        "reason": "The proved projection applies to every increment N+j in the oriented cumulative interval, not merely to v_2(N+k)."
+      },
+      {
+        "id": "Round122-complement-self-return-is-a-signed-lower-bound",
+        "reason": "The result is an algebraic no-go for this mechanism. Cancellation across k, valuations, residues, and full/complement labels remains possible in the actual signed survivor."
+      },
+      {
+        "id": "Round122-safe-subpackages-prove-lower-GAR-or-blockwise-M1",
+        "reason": "The medium-index low-two-adic survivor remains open. Even a future GAR theorem would control total active M1, not either direct blockwise M1 parent."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "Both direct blockwise parents remain open, and the alternative GAR route still lacks the Round-122 lower signed survivor."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Hard TOP, BAL, and UNBAL are independent of the Round-122 lower-M1 reduction and remain open."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "Fourier localization of the lower radial owner proves no endpoint-uniformity statement."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain open."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The round proves reductions and safe subpackages but no complete signed estimate below the accepted one-third frontier."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The lower GAR survivor, complete M9-M2, endpoint uniformity, and final bridge remain open. No quarter theorem follows."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 8,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 122 proves a uniform sharp-wavelet localization, deletes the far, central-index, high-two-adic, and odd-central packages at target scale, and identifies the exact remaining low-two-adic functional. It also proves that complementary divisors self-return on one residue branch and expose an open circle coefficient on the other. The complete lower estimate, GAR, every M9 parent, and every exponent improvement remain open."
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 127,
+    "round_type": "full_proof_frontier_inequality_selection_gate",
+    "campaign_id": "full-proof-frontier-inequality-selection-gate",
+    "title": "Full-proof frontier noninvertible-inequality selection gate",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "fd8831d74d53795182b9f8c234753b33df27e096b9d9f52a6cf43403c87c4a43",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "planned_numerical_percent": 0,
+      "literature_policy": "Primary-source literature may be used only to state a theorem-shaped candidate and must be audited against the literal coefficient, support, endpoint, sign, and norm. Structural analogy alone is selection evidence, not proof evidence."
+    },
+    "target_obligations": [
+      "M9-M2-top-endpoint-density-discrepancy-energy",
+      "M9-M1-global-lower-radial-signed-estimate",
+      "GC-W7-16-actual-reduced-determinant-correlation"
+    ],
+    "frozen_target": {
+      "question": "Among the exact nonsquare hard-TOP actual direction, the Round-122 lower-GAR cumulative wavelet, and the graded W=Y^(7/16) determinant correlation, which one admits a genuinely new noninvertible signed inequality with a stated capacity, a valid literal interface, and the strongest proof-level payoff?",
+      "reference_formula": "Select exactly one next analytic interface only after deriving its literal target, current capacity, proposed inequality, bypass of the last no-go, exponent or graph payoff, and finite stop rule. A selection is not a proof of the selected estimate.",
+      "quantities": [
+        "Hard TOP: E_ns=||A_L^ns chi_4||_2^2 with target O_epsilon(L^2X^epsilon), after the hm-square entry sector is removed only through the norm triangle",
+        "Lower GAR: the exact medium-index low-two-adic cumulative wavelet of Round 122 with target O_epsilon(RX^epsilon) against O(R^2) absolute capacity",
+        "Graded determinant: the literal W=Y^(7/16) signed nonzero determinant correlation with target O_epsilon(Y^(1/2+epsilon)); the strongest complete bound is Y^(37/48+epsilon) and the bounded-lift top shell is Y^(35/48+epsilon)",
+        "M9-M2 is mandatory on both final bridges; complete hard TOP alone would still leave BAL and UNBAL",
+        "Complete lower GAR would close the alternative total-M1 analytic parent but would not close M9-M2",
+        "The graded target would prove the internal exponent 5/16 but not M9 or the quarter theorem; a partial saving is bankable only with exact exponent propagation",
+        "A route is ineligible if its claimed gain is an invertible transform, equivalent canonicalization, height-only parity filter, ambient spectrum, separated norm, random-sign credit, or coefficient-blind bound"
+      ]
+    },
+    "completion_criteria": [
+      "Reproduce all three literal targets, current capacities, exact missing powers, dependencies, and downstream payoffs from accepted graph evidence.",
+      "For each frontier, state one genuinely new theorem-shaped inequality or prove that the proposed mechanism is only an already parked self-return or stronger norm.",
+      "Audit the hard-TOP square-sector norm triangle, the lower-wavelet two-adic and full-circle seams, and the graded long-lift and moving-symbol seams.",
+      "Answer arbitrary aligned coefficients, exact resonances, endpoints, floors, stars, support births, and owner duplication wherever relevant.",
+      "Rank routes by literal theorem fit, capacity deficit, dependency payoff, and finite falsifiability; do not rank by analogy or vote.",
+      "Select exactly one frozen Round-128 analytic objective and name the mechanism and stop rule, or record that no candidate is eligible and the exact innovation still missing.",
+      "State conservatively what the selection does and does not change for M9-M1, M9-M2, M9, the global exponent, and the quarter theorem."
+    ],
+    "controls": [
+      "literal_three_frontier_statements",
+      "capacity_and_missing_power_table",
+      "noninvertible_mechanism_test",
+      "prior_no_go_bypass",
+      "actual_vs_adversarial_coefficients",
+      "endpoint_floor_star_and_support_scope",
+      "dependency_and_payoff_scope",
+      "finite_stop_rule",
+      "single_objective_selection",
+      "no_proof_status_from_strategy_only"
+    ],
+    "tasks": [
+      {
+        "id": "blind_hard_top_nonsquare_feasibility",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "assigned",
+        "target": "Independently derive the nonsquare hard-TOP fixed-direction target and either formulate and justify a genuinely non-height-only noninvertible inequality with a credible L-factor gain, or prove the sharpest rigorous obstruction to such a mechanism.",
+        "context_files": [
+          "problems/gauss_circle.md",
+          "state/control_models.md",
+          "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "all strategy files",
+          "all Round-75 through Round-127 nonblind artifacts",
+          "all Round-127 sibling reports"
+        ],
+        "required_controls": [
+          "literal_three_frontier_statements",
+          "capacity_and_missing_power_table",
+          "noninvertible_mechanism_test",
+          "actual_vs_adversarial_coefficients",
+          "endpoint_floor_star_and_support_scope",
+          "finite_stop_rule",
+          "no_proof_status_from_strategy_only"
+        ],
+        "required_output": [
+          "A seven-section statement-only report.",
+          "The exact hard-TOP nonsquare target and capacity ledger.",
+          "One theorem-shaped new inequality with proof sketch and first doubtful seam, or a rigorous no-go.",
+          "A ranked feasibility recommendation without any graph edit."
+        ],
+        "report_path": "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/reports/blind_hard_top_nonsquare_feasibility.md"
+      },
+      {
+        "id": "lower_gar_wavelet_feasibility",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "assigned",
+        "target": "At the exact Round-122 medium-index low-two-adic cumulative wavelet, design and test one genuinely joint noninvertible signed inequality, or prove that the candidate mechanism returns the original wavelet or keeps R^2 capacity.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0821_full_proof_strategy.md",
+          "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/synthesis.md",
+          "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/synthesis.md",
+          "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/reviews/conductor_round122_complement_adjudication.md"
+        ],
+        "required_controls": [
+          "literal_three_frontier_statements",
+          "capacity_and_missing_power_table",
+          "noninvertible_mechanism_test",
+          "prior_no_go_bypass",
+          "actual_vs_adversarial_coefficients",
+          "endpoint_floor_star_and_support_scope",
+          "dependency_and_payoff_scope",
+          "finite_stop_rule",
+          "no_proof_status_from_strategy_only"
+        ],
+        "required_output": [
+          "A seven-section analytic report.",
+          "The exact surviving wavelet and R^2-to-R deficit.",
+          "A proved strict subrange, inverse theorem, theorem-shaped candidate, or first fatal seam.",
+          "A precise feasibility and state recommendation."
+        ],
+        "report_path": "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/reports/lower_gar_wavelet_feasibility.md"
+      },
+      {
+        "id": "graded_determinant_long_lift_feasibility",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "assigned",
+        "target": "At the literal W=Y^(7/16) determinant correlation, design and exponent-audit one genuinely joint long-lift or prescribed-centre product-wave inequality that improves Y^(37/48), or prove the proposed mechanism cannot bank an exponent improvement.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0821_full_proof_strategy.md",
+          "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/synthesis.md",
+          "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/reviews/conductor_round117_actual_savings.md",
+          "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/reviews/conductor_round117_involution_product_and_source.md",
+          "rounds/codex-managed/m9-m2-unbalanced-prescribed-centre-wave-gate/synthesis.md"
+        ],
+        "required_controls": [
+          "literal_three_frontier_statements",
+          "capacity_and_missing_power_table",
+          "noninvertible_mechanism_test",
+          "prior_no_go_bypass",
+          "actual_vs_adversarial_coefficients",
+          "endpoint_floor_star_and_support_scope",
+          "dependency_and_payoff_scope",
+          "finite_stop_rule",
+          "no_proof_status_from_strategy_only"
+        ],
+        "required_output": [
+          "A seven-section analytic report.",
+          "The exact determinant target, complete and bounded-lift envelopes, and exponent propagation.",
+          "A theorem-shaped new inequality, strict proved subrange, or exact no-go with first doubtful seam.",
+          "A precise feasibility and state recommendation."
+        ],
+        "report_path": "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/reports/graded_determinant_long_lift_feasibility.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "literal_frontiers",
+        "requirement": "Each candidate is the exact accepted survivor, not a stronger norm, reduced shadow, or historical formulation."
+      },
+      {
+        "id": "capacity",
+        "requirement": "Current capacity, target, missing power, and any claimed saving use one consistent linear or energy scale."
+      },
+      {
+        "id": "novelty",
+        "requirement": "The proposed gain bypasses the exact last no-go and is not an invertible or representation-only restatement."
+      },
+      {
+        "id": "literal_seams",
+        "requirement": "Characters, orientations, lifts, endpoints, floors, stars, supports, and owner boundaries remain attached until the claimed cancellation."
+      },
+      {
+        "id": "payoff",
+        "requirement": "Every downstream implication and exponent propagation follows through existing graph dependencies."
+      },
+      {
+        "id": "selection_scope",
+        "requirement": "The round selects one next objective but promotes no unproved selected estimate."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "fd8831d74d53795182b9f8c234753b33df27e096b9d9f52a6cf43403c87c4a43",
+    "generated_at": "2026-08-23T04:23:09.505463+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

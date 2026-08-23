@@ -1,0 +1,217 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-hard-top-square-product-entry-sector",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Hard-TOP square-product entry sector is power-safe",
+        "status": "proved_internal",
+        "statement_tex": "Let A_L(m,h)=1_(h in H_L)1_(m<=h<=4m)a_end(h,m)e(sqrt(Xhm)) be the literal hard-TOP matrix and A_L^square(m,h)=1_(hm is a square)A_L(m,h). If A_*=sup_(m,h)|a_end(h,m)|, then uniformly for |c_h|<=1, ||A_L^square c||_2^2<<A_*^2 L^(3/2), and ||A_L^square||_(HS)^2<<A_*^2 L log(2L). Indeed m=du^2 with d squarefree forces h=dv^2 and the hard support gives u<=v<=2u. Thus the actual character sector is O_epsilon(L^(3/2)X^epsilon), and the full target reduces by the norm triangle to the nonsquare complement A_L^ns=A_L-A_L^square. This is not an orthogonal energy split and is distinct from the primitive off-diagonal condition ab square.",
+        "dependencies": [
+          "M9-M2-top-endpoint-transposed-character-energy",
+          "M9-M2-character-factor",
+          "H4-Phi-regularity"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-hard-top-actual-vector-spectral-gate/reports/hard_top_parity_spectral_operator_attack.md",
+            "rounds/codex-managed/m9-m2-hard-top-actual-vector-spectral-gate/reviews/conductor_round126_adjudication.md",
+            "rounds/codex-managed/m9-m2-hard-top-actual-vector-spectral-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Retain the square entry projection through the norm triangle only. Estimate the complete nonsquare actual-character vector; do not delete its cross interaction additively."
+      },
+      {
+        "id": "M9-M2-hard-top-parity-spectral-filter-obstruction",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Hard-TOP parity high-pass and ambient spectral bounds do not contract",
+        "status": "proved_internal",
+        "statement_tex": "Enumerate odd heights as h=h_0+2t and put z_t=v_h. Then E_L^top=||zhat(pi)||_2^2 and the spectral mean is D_L=sum_t||z_t||_2^2. The exact high-pass 2sum_t(-1)^t z_t=sum_t(-1)^t(z_t-z_(t+1)) has multiplier 1-e^(itheta), of modulus 2 at pi, so its selected energy is exactly 4E_L^top. More generally a finite height-only convolution either has nonzero symbol at pi and is invertible on the target coefficient, or kills pi and needs a separate estimate. If V e_h=v_h and U_chi=diag(chi_4(h)), V and VU_chi have identical singular values, so operator, Schatten, Frobenius, Schur, and coefficient-uniform Bessel estimates cannot gain merely from the character. Bounded vectors z_h=chi_4(h)w on the common literal affine interior attain diagonal capacity L^2 and parity energy L^3; this is a coefficient adversary, not an actual physical lower bound. The missing statement is a fixed actual-direction spectral-measure or one-sided real estimate.",
+        "dependencies": [
+          "M9-M2-top-endpoint-transposed-character-energy",
+          "M9-M2-character-factor"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-hard-top-actual-vector-spectral-gate/candidates/conductor_hard_top_spectral_filter_dichotomy.md",
+            "rounds/codex-managed/m9-m2-hard-top-actual-vector-spectral-gate/reports/blind_hard_top_vector_rederivation.md",
+            "rounds/codex-managed/m9-m2-hard-top-actual-vector-spectral-gate/reports/hard_top_parity_spectral_operator_attack.md",
+            "rounds/codex-managed/m9-m2-hard-top-actual-vector-spectral-gate/reports/hard_top_actual_vector_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-hard-top-actual-vector-spectral-gate/reviews/conductor_round126_adjudication.md",
+            "rounds/codex-managed/m9-m2-hard-top-actual-vector-spectral-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Freeze parity-only filters, adjacent total variation, ambient singular values, and coefficient-uniform Bessel bounds. Reopen only with a kernel-dependent estimate of the fixed actual character direction."
+      },
+      {
+        "id": "M9-M2-hard-top-complete-offset-inverse-localization",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Positive hard-TOP excess localizes to one complete signed offset family",
+        "status": "proved_internal",
+        "statement_tex": "Let Gamma_r be the literal one-orientation hard-TOP physical correlation, including chi_4(h)chi_4(h+2r)=(-1)^r, the exact common affine m-range, actual profiles, and every internal tag. Then E_L^top-D_L=2Re sum_(r>=1)Gamma_r. If Delta=E_L^top-D_L>0, one of O(log L) complete dyadic physical-r shells has real part at least Delta/O(log L). Directly partitioning the unique primitive labels gives the analogous conclusion for one complete dyadic q-shell; an r-shell is not identified with one q-shell because r=gq. At resolution 1<=R<=N_L, one consecutive interval of at most R physical offsets carries at least RDelta/(4N_L). Every lift, ceiling, reciprocal interval, collar, floor, star, metric centre, entry, exit, and one-count slab remains joint. This is a signed one-way inverse theorem, not a bound. The Round-110 completed-to-physical comparison is global in real part and supplies no shellwise completed connector.",
+        "dependencies": [
+          "M9-M2-top-endpoint-transposed-character-energy",
+          "M9-M2-global-completed-realpart-self-return"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-hard-top-actual-vector-spectral-gate/reports/blind_hard_top_vector_rederivation.md",
+            "rounds/codex-managed/m9-m2-hard-top-actual-vector-spectral-gate/reports/hard_top_parity_spectral_operator_attack.md",
+            "rounds/codex-managed/m9-m2-hard-top-actual-vector-spectral-gate/reports/hard_top_actual_vector_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-hard-top-actual-vector-spectral-gate/reviews/conductor_round126_adjudication.md",
+            "rounds/codex-managed/m9-m2-hard-top-actual-vector-spectral-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use only as an inverse localization after a positive excess. A continuation must bound a complete actual-symbol shell before any offsetwise modulus or slabwise norm, or prove a new shellwise completion connector."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-top-endpoint-transposed-character-energy",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-hard-top-actual-vector-spectral-gate/reviews/conductor_round126_adjudication.md",
+            "rounds/codex-managed/m9-m2-hard-top-actual-vector-spectral-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The hm-square entry sector is power-safe through a norm triangle. Estimate the nonsquare actual-character vector; parity high-pass and ambient operator spectra supply no gain."
+      },
+      {
+        "id": "M9-M2-top-endpoint-density-discrepancy-energy",
+        "dependencies_added": [
+          "M9-M2-hard-top-square-product-entry-sector",
+          "M9-M2-hard-top-parity-spectral-filter-obstruction",
+          "M9-M2-hard-top-complete-offset-inverse-localization"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-hard-top-actual-vector-spectral-gate/reports/blind_hard_top_vector_rederivation.md",
+            "rounds/codex-managed/m9-m2-hard-top-actual-vector-spectral-gate/reports/hard_top_parity_spectral_operator_attack.md",
+            "rounds/codex-managed/m9-m2-hard-top-actual-vector-spectral-gate/reports/hard_top_actual_vector_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-hard-top-actual-vector-spectral-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The exact survivor is the nonsquare literal actual-character vector, equivalently the global one-sided completed real scalar modulo a target-safe component. Positive violations localize to a complete signed offset shell, but parity-only and ambient spectral mechanisms are parked."
+      },
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-hard-top-actual-vector-spectral-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The hm-square entry sector is safe, but the nonsquare hard-TOP energy remains open. Reopen only for a fixed actual-direction inequality or a complete signed-shell theorem, not a height-only filter or coefficient-blind norm."
+      },
+      {
+        "id": "M9-M2",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-hard-top-actual-vector-spectral-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Round 126 closes the strict hard-TOP hm-square entry sector and parks parity-only spectral contraction. Hard TOP, BAL, and all UNBAL owners remain; rotate only to a genuinely new actual-symbol mechanism."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round126-parity-highpass-supplies-energy-contraction",
+        "reason": "The difference multiplier has modulus two at the selected parity frequency, so the selected energy is exactly multiplied by four."
+      },
+      {
+        "id": "Round126-character-insertion-improves-ambient-operator-spectrum",
+        "reason": "Column modulation by diag(chi_4(h)) is unitary and preserves all singular values and unitarily invariant norms."
+      },
+      {
+        "id": "Round126-hard-affine-support-implies-target-Bessel-constant",
+        "reason": "A common-interior aligned vector family obeys the literal supports and has optimal Bessel constant N asymptotic to L."
+      },
+      {
+        "id": "Round126-support-adversary-is-an-actual-energy-lower-bound",
+        "reason": "The adversary replaces the physical phase vectors and is only a coefficient-uniform method control."
+      },
+      {
+        "id": "Round126-square-entry-projection-is-an-orthogonal-energy-split",
+        "reason": "The square and nonsquare entry matrices have cross terms after application to the character; only the norm triangle is licensed."
+      },
+      {
+        "id": "Round126-physical-r-shell-identifies-one-primitive-q-shell",
+        "reason": "Unique factorization gives r=gq with varying odd g. The q-shell inverse is valid only by a separate direct partition."
+      },
+      {
+        "id": "Round126-offset-localization-bounds-the-selected-band",
+        "reason": "Signed pigeonhole locates positive mass but supplies no cancellation estimate within the selected actual-symbol family."
+      },
+      {
+        "id": "Round126-global-completion-comparison-is-shellwise",
+        "reason": "Round 110 controls only the globally summed real correction; bandwise completion errors can cancel."
+      },
+      {
+        "id": "Round126-square-product-entry-sector-closes-hard-TOP",
+        "reason": "The nonsquare complement still contains coherent, Pell, metric, endpoint, and generic actual-symbol families and has no target bound."
+      },
+      {
+        "id": "Round126-parity-no-go-proves-hard-TOP-false",
+        "reason": "The obstruction concerns coefficient-blind mechanisms and asserts no physical lower bound."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M2-top-endpoint-density-discrepancy-energy",
+        "reason": "The complete nonsquare actual-character energy has no L^2X^epsilon upper bound."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Hard TOP, BAL, and every UNBAL owner remain open."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "Round 126 concerns only one hard-TOP M2 vector; both direct M1 parents and the lower GAR alternative remain open."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "No full hard-TOP, smooth packet, or all-owner endpoint estimate is proved."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, complete M9-M2, and endpoint uniformity remain open."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "Its full M9 hypothesis remains open."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "A strict entry sector and method obstruction do not improve the accepted internal global estimate."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The quarter target still lacks complete M9-M2, an M1 route, endpoint uniformity, and the final bridge."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 6,
+    "idea_quality_score": 7,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 126 proves a new power-safe hm-square entry projection and a quantitative complete-offset inverse localization. It also sharply closes parity-only high-pass, ambient operator-spectrum, and coefficient-uniform Bessel mechanisms at the exact hard-TOP vector. The nonsquare actual-direction target, hard TOP, M9-M2, M9, and every exponent remain open."
+  }
+}

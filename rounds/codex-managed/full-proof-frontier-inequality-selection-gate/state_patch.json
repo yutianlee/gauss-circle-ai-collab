@@ -1,0 +1,264 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-hard-top-product-fibre-mean-obstruction",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Hard-TOP phase alignment and product-fibre mean obstruction",
+        "status": "proved_internal",
+        "statement_tex": "For finite row supports S_m, arbitrary real phases phi_(m,h), a unit-modulus direction c_h, and coefficients |a_(m,h)|<=1, the exact variational identity is sup_a sum_m |sum_(h in S_m) a_(m,h)e(phi_(m,h))c_h|^2=sum_m |S_m|^2. A hard-cone rectangle retains asymptotic L entries per row after every hm-square entry is deleted, so this support-phase-magnitude class has Hilbert-Schmidt energy asymptotic L^2 and selected energy asymptotic L^3. After the phase and character are absorbed, averaging along exact product fibres is genuinely noninvertible but fixes every F(m,h)=f(mh), including the coherent constant direction; its complementary high-pass kills that direction and requires a remainder of full coherent capacity. Hence support, pointwise magnitude, the displayed joint phase, and product-fibre averaging cannot prove the L^2X^epsilon nonsquare target. This is a coefficient-interface obstruction, not a lower bound for the literal endpoint array; a continuation must use a proved actual-coefficient property that fails under entrywise phase alignment and must control the discarded fibre mean.",
+        "dependencies": [
+          "M9-M2-top-endpoint-transposed-character-energy",
+          "M9-M2-hard-top-square-product-entry-sector",
+          "M9-M2-hard-top-parity-spectral-filter-obstruction"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/reports/blind_hard_top_nonsquare_feasibility.md",
+            "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/reviews/conductor_round127_frontier_selection_adjudication.md",
+            "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Keep hard TOP parked at the nonsquare actual direction. Reopen only with the literal endpoint formula and a structural lemma excluding entrywise phase alignment, together with a target-safe estimate of the discarded product-fibre mean."
+      },
+      {
+        "id": "M9-M1-lower-centered-square-function-farey-self-return",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Lower centered square-function and Farey determinant self-return",
+        "status": "proved_internal",
+        "statement_tex": "For the exact Round-122 increment S(k)=I_k V_delta and c_y=sum_(d<=y)chi_4(d)/d, the uncentered dyadic energy is false at target capacity: on a positive block K asymptotic y, the actual drift kc_y gives sum_(K<k<=2K)|S(k)|^2 >> y^3. The unique centering is S^circ(k)=S(k)-kc_y, and the original scalar wavelet is target-equivalent to its centered form because its exact full first moment vanishes and the central and far truncations are target-safe. The sufficient estimate sum_(k in K(K))|S^circ(k)|^2 << K(R^2+K)X^epsilon is a stronger separated k-norm and at K=y asks for y^2 against coefficient-blind y^3 capacity. The broader centered discrepancy has an exact reduced-Farey expansion with coefficient lambda_b=chi_4(b)b^(-1)sum_(g<=y/b)chi_4(g)/g; the b=1 term is exactly the centre, determinant zero is equality of reduced fractions and contributes O(K(y+K)X^epsilon), while all missing cancellation lies in the prescribed-centre nonzero determinant. The expansion is an ambient Fourier canonicalization and provides no gain. This obstruction does not disprove a genuinely signed scalar inequality for the actual wavelet.",
+        "dependencies": [
+          "M9-M1-lower-near-square-wavelet-reduction",
+          "M9-M1-lower-radial-flat-discrepancy-equivalence"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/reports/lower_gar_wavelet_feasibility.md",
+            "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/reviews/conductor_round127_frontier_selection_adjudication.md",
+            "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/candidates/conductor_lower_wavelet_square_function_connector.md",
+            "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/candidates/conductor_lower_discrepancy_farey_energy_connector.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Do not use the uncentered norm, a separated positive k-square function, or ambient Farey spectrum as the claimed gain. Reopen lower GAR only with a genuinely signed scalar inequality that keeps the wavelet index joint with the low-two-adic and complementary labels."
+      },
+      {
+        "id": "GC-W7-16-scalar-cell-continuation-capacity-obstruction",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Critical scalar-cell prescribed-centre continuation has no strict saving",
+        "status": "proved_internal",
+        "statement_tex": "At W=Y^(7/16), write a=log_Y(D/L). Even granting every literal determinant cell the prescribed-centre scalar envelope Y^epsilon min(Y^a,Y^((1-a)/2)) with no interface loss, the triangular cell square function has exponent beta_scalar(a)=2min(a,(1-a)/2)+max(0,7/16-a). At the complete critical block D=Y^(1/2), L=Y^(1/6), one has a=1/3 and beta_scalar=37/48, exactly the strongest certified complete capacity. Thus scalar-per-cell continuation cannot produce a uniform strict power saving, even before floors, stars, moving symbols, and endpoint transfer are charged. This is a capacity obstruction to that mechanism, not a lower bound for the actual determinant correlation.",
+        "dependencies": [
+          "GC-W7-16-original-numerator-product-window-bound",
+          "M9-M2-unbalanced-flat-wave-curvature-envelope",
+          "M9-short-window-triangular-cluster-kernel"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/reports/graded_determinant_long_lift_feasibility.md",
+            "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/reviews/conductor_round127_frontier_selection_adjudication.md",
+            "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Park scalar-per-cell prescribed-centre continuation at the a=1/3 contact. Any strict graded saving must couple cells or keep the lift endpoint inside the same reciprocal window before a norm."
+      },
+      {
+        "id": "GC-W7-16-local-transverse-square-variation-connector",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Conditional local transverse lift square-variation connector",
+        "status": "proved_internal",
+        "statement_tex": "At W=Y^(7/16), D=Y^(1/2), L=Y^(1/6), let B=Y^b with 1/3<=b<=1/2, Q_B=min(B,BD/(WL)), lambda_B=YL/(DB^2), and J_B=1+DQ_B/B^2. Suppose every literal complete lift amplitude U_(i,rho) on the actual reciprocal q-window satisfies ||U_(i,rho)||_(V^2(I)) << Y^epsilon J_B^(1/2)/L, including all smooth, hard, floor, star, endpoint, support-birth, and moving-symbol pieces. Suppose also its unseparated reciprocal sum obeys the V^2-weighted curvature inequality |sum_(v in I)^* U_(i,rho)(v)e(-ca'/(kappa_i rho v)+vartheta_i rho v)| << ||U_(i,rho)||_(V^2(I)) min(N_rho,N_rho sqrt(lambda_B rho^2)+(lambda_B rho^2)^(-1/2))Y^epsilon, without an extra N_rho^(1/2). Then the complete B-shell is O_epsilon(D J_B^(1/2)min(Q_B,Q_Bsqrt(lambda_B)+lambda_B^(-1/2))Y^epsilon), and summing all shells gives O_epsilon(Y^(73/96+epsilon)), a strict Y^(1/96) improvement over Y^(37/48+epsilon). Both hypotheses are open. The conditional exponent gives persistence 115/288>1/3, so it banks only a fixed-block saving and does not improve the global theorem.",
+        "dependencies": [
+          "GC-W7-16-reduced-Farey-cluster-reduction",
+          "GC-W7-16-original-numerator-product-window-bound",
+          "GC-W7-16-bounded-lift-top-shell-curvature-saving"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/reports/graded_determinant_long_lift_feasibility.md",
+            "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/reviews/conductor_round127_frontier_selection_adjudication.md",
+            "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "First prove or refute the literal local V^2 coefficient norm J_B^(1/2)/L. Only if it passes, test the joint curvature inequality; stop on full-shell variation, J_B^theta with theta>=2/3, an N_rho^(1/2) loss, or owner separation."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-hard-top-parity-spectral-filter-obstruction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/reports/blind_hard_top_nonsquare_feasibility.md",
+            "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Parity-only, ambient spectral, support-only, and product-fibre averaging mechanisms are parked. Reopen only with a literal actual-coefficient property that excludes phase alignment and controls the invariant fibre mean."
+      },
+      {
+        "id": "M9-M2-top-endpoint-density-discrepancy-energy",
+        "dependencies_added": [
+          "M9-M2-hard-top-product-fibre-mean-obstruction"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/reports/blind_hard_top_nonsquare_feasibility.md",
+            "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The nonsquare actual-character vector remains open. Product-fibre averaging and coefficient-blind joint-phase arguments are now parked; require a proved literal endpoint-coefficient structure before reopening hard TOP."
+      },
+      {
+        "id": "M9-M1-lower-near-square-wavelet-reduction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/reviews/conductor_round127_frontier_selection_adjudication.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/reports/lower_gar_wavelet_feasibility.md"
+          ]
+        },
+        "next_action": "The uncentered norm is false and the centered positive square function is an excluded stronger norm. Retain the exact medium-index survivor and seek a genuinely signed scalar inequality with all arithmetic labels joint."
+      },
+      {
+        "id": "M9-M1-global-lower-radial-signed-estimate",
+        "dependencies_added": [
+          "M9-M1-lower-centered-square-function-farey-self-return"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/reports/lower_gar_wavelet_feasibility.md",
+            "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Lower GAR remains at the exact Round-122 signed wavelet. Do not replace it by the false uncentered energy or an ambient separated Farey square function; a new signed scalar inequality is required."
+      },
+      {
+        "id": "GC-W7-16-actual-reduced-determinant-correlation",
+        "dependencies_added": [
+          "GC-W7-16-scalar-cell-continuation-capacity-obstruction",
+          "GC-W7-16-local-transverse-square-variation-connector"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/reports/graded_determinant_long_lift_feasibility.md",
+            "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Round 128 first tests the literal local V^2 lift-coefficient norm J_B^(1/2)/L. Only after that finite gate passes may the joint V^2 reciprocal-curvature inequality be attempted. Even both successes give Y^(73/96), not the Y^(1/2) target."
+      },
+      {
+        "id": "GC-W7-16-bounded-lift-top-shell-curvature-saving",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/reports/graded_determinant_long_lift_feasibility.md"
+          ]
+        },
+        "next_action": "Test whether the bounded-lift curvature proof extends to B<D when the complete lift coefficient is measured only over the J_B births inside the same q-window. Full-shell variation or separated Cauchy is not sufficient."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round127-hard-support-phase-magnitude-implies-nonsquare-target",
+        "reason": "Entrywise phase alignment attains the full coherent row capacity L^3 after all hm-square entries are removed."
+      },
+      {
+        "id": "Round127-product-fibre-averaging-contracts-the-hard-target-mode",
+        "reason": "Exact product-fibre means fix F(m,h)=f(mh), including the coherent aligned direction; a high-pass needs a full-capacity remainder."
+      },
+      {
+        "id": "Round127-hard-interface-obstruction-is-a-physical-lower-bound",
+        "reason": "The aligned array chooses adversarial phases and does not establish that the literal endpoint coefficient has large energy."
+      },
+      {
+        "id": "Round127-lower-uncentered-square-function-is-target-safe",
+        "reason": "The actual drift kc_y produces energy much larger than y^2 on a block K asymptotic y."
+      },
+      {
+        "id": "Round127-lower-centered-k-square-is-the-literal-scalar-target",
+        "reason": "Cauchy discards cross-k signs and creates a stronger separated positive norm."
+      },
+      {
+        "id": "Round127-lower-Farey-canonicalization-supplies-a-saving",
+        "reason": "The exact transform retains y^3 coefficient-blind capacity at K=y; only the diagonal is target-safe and the nonzero determinant is unproved."
+      },
+      {
+        "id": "Round127-graded-scalar-cell-continuation-gives-a-strict-saving",
+        "reason": "At D/L=Y^(1/3), its square-function exponent is exactly 37/48."
+      },
+      {
+        "id": "Round127-full-shell-lift-square-variation-preserves-the-graded-saving",
+        "reason": "Replacing the local birth count J_B by the full lift length D/B erases the Y^(1/96) margin."
+      },
+      {
+        "id": "Round127-conditional-Y73over96-bound-improves-the-global-exponent",
+        "reason": "Its persistence exponent is 115/288, which is worse than the already proved one-third theorem."
+      },
+      {
+        "id": "Round127-strategy-selection-proves-the-selected-inequality",
+        "reason": "Both the literal local V^2 coefficient norm and the joint V^2-weighted curvature inequality remain open."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "Both direct parents and the lower-GAR alternative remain open."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Hard TOP, BAL, and all UNBAL owners remain open."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "No all-owner endpoint estimate is proved."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain open."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The complete M9 hypothesis remains open."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The only strict graded saving is conditional and would not improve persistence even if proved."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The quarter target still lacks both M9 components, endpoint uniformity, and the final bridge."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 6,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 127 proves three scoped method obstructions, exposes the exact local lift-birth count, and identifies the only eligible new inequality with a strict Y^(1/96) conditional fixed-block payoff and a finite stop rule. It proves no frontier estimate, M9 parent, or exponent improvement."
+  }
+}

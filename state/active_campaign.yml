@@ -1,188 +1,197 @@
 {
   "schema_version": 1,
-  "round_index": 113,
-  "round_type": "m9_m2_balanced_smooth_literal_atom_dictionary_reconciliation",
-  "campaign_id": "m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation",
-  "title": "Literal balanced smooth atom dictionary and one-count reconciliation",
+  "round_index": 130,
+  "round_type": "gc_w7_16_post_inner_outer_bilinear_gate",
+  "campaign_id": "gc-w7-16-post-inner-outer-bilinear-gate",
+  "title": "W=Y^(7/16) post-inner numerator/outer-ray bilinear gate",
   "status": "complete",
   "max_concurrency": 3,
   "coordinator": "Codex",
-  "starting_graph_sha256": "9d560539df2db7d69e72dd6e7e6af7247f00237ee795ac13b053b3f34eae8efa",
+  "starting_graph_sha256": "354f5ca462467d091a9a50c8dbc1173ffba56516963274f9fc232ea11890d20e",
   "resource_policy": {
-    "analytical_algebraic_minimum_percent": 98,
-    "numerical_experimental_maximum_percent": 2,
+    "analytical_algebraic_minimum_percent": 100,
+    "numerical_experimental_maximum_percent": 0,
     "planned_numerical_percent": 0,
-    "literature_policy": "This is a reconciliation round. Use only already audited exact sources; do not search for or import a new analytic estimate."
+    "literature_policy": "No external theorem is assumed. Consult a source only for an exact bilinear or large-sieve inequality whose hypotheses match the literal determinant kernel and actual characters."
   },
   "target_obligations": [
-    "M9-M2-balanced-quarter-packet-normalization-scope",
-    "M9-M2-smooth-small-gcd-quarter-packet",
-    "M9-M2-smooth-balanced-quarter-packet-estimate",
-    "M9-M2-physical-one-count-assembly"
+    "GC-W7-16-complete-all-shell-curvature-saving",
+    "GC-W7-16-actual-reduced-determinant-correlation"
   ],
   "frozen_target": {
-    "question": "Can the accepted denominator profile, clipped odd-frequency partition, Vaaler coefficient, smooth stationary transform, gcd partition, and prior-owner corrections be instantiated as one finite coefficientwise atom dictionary for every balanced smooth M2 residual block?",
-    "reference_formula": "For each literal residual block B, define its normalized positive-frequency coefficient a_B(h,k), its exact smooth-gcd partition, the full quarter packet Q_B, and target-safe square, near-square, high-gcd, and transform-error corrections so that the physical block equals 8 Re[-e(1/8)X^(1/4)(LK)^(-3/4)T_B/(2pi)] and the residual T_B is exactly the full quarter packet minus the prior-owner corrections.",
+    "question": "After the Round-129 K_rho/L inner reciprocal/lift theorem, can one obtain a genuine signed contraction across the remaining reduced-numerator increments and/or outer rays, or does the exact outer dual, phase alignment, or unit-Hessian geometry force a capacity self-return?",
+    "reference_formula": "For one half-open B-shell, O_(i,B)^+=sum_(r=(a,b)) A_i(r)e(ca/(kappa_i b)) F_i(r), where F_i(r)=sum_(a') sum_(rho|a') sum_(eta) S_(i,r,a',rho,eta), and every S retains its exact threshold/plateau formula. Accepted bounds are sup|A_i|<<L^(-1)Y^epsilon, sum_r|A_i(r)|^2<<D/L Y^epsilon, #r<<LD, #a'<<L, and |S|<<K_B/L Y^epsilon. Outside triangles give D K_B=Y^(35/48), while target is D=Y^(1/2). Test a direct bilinear estimate or the target-scale outer energy sum_r|F_i(r)|^2<<LD Y^epsilon without replacing the actual coefficients by an arbitrary matrix family.",
     "quantities": [
-      "y=floor(sqrt X), D_j=2^(-j)y, and the one hard plus full smooth denominator profiles",
-      "H_D=floor(DX^(-1/4)) and an exact clipped positive-frequency partition including top and bottom pieces",
-      "Phi(u)=pi u(1-u)cot(pi u)+u and the exact positive M2 normalization",
-      "balanced ratio 1<=K/L<=16 with K=XL/D^2",
-      "full slanted stationary symbol and smooth support crossings",
-      "a fixed finite smooth gcd partition with an explicit high-gcd boundary owner",
-      "square, near-square, high-gcd, transform-error, sign, and conjugacy tags",
-      "one-count equality and scale-normalized seminorms uniform in real X"
+      "W=Y^(7/16), D=Y^(1/2), L=Y^(1/6), D/L<=B<=D",
+      "Q_B=min(B,BD/(WL)), lambda_B=YL/(DB^2), K_B=min(Q_B,Q_B sqrt(lambda_B)+lambda_B^(-1/2))=Y^(11/48+o(1))",
+      "current complete block D K_B=Y^(35/48+epsilon), target D=Y^(1/2+epsilon), missing factor K_B=Y^(11/48)",
+      "outer ray energy sum|A_i|^2<<D/L and pointwise scale L^(-1) are exact actual-coefficient facts",
+      "a'=a+p lies in O(L) literal increments, with determinant taper, M1/M2 characters, Mobius divisors, threshold data, and shell owners retained",
+      "a strict fixed-power saving is bankable, but no global pointwise improvement follows until the complete correlation exponent drops below 9/16"
     ]
   },
   "completion_criteria": [
-    "Give explicit formulas for the denominator and frequency partitions and prove their finite one-count identities.",
-    "Derive the exact physical positive-frequency normalization and the normalized stationary symbol without losing floors, clipping, signs, or constants.",
-    "Define every balanced smooth residual label, including the exact finite ratio boundary, and prove that no hard endpoint enters.",
-    "Define a literal fixed smooth gcd partition and prove its full-small-gcd plus high-gcd identity.",
-    "Give the exact square, near-square, high-gcd, and transform-error correction equation with one owner for each term.",
-    "Prove uniform compact support, reality, smoothness, and scale-normalized seminorm bounds for every packet profile.",
-    "Either certify the finite atom dictionary and identify the signed estimate as the next analytic gap, or name the first exact missing datum without attempting the estimate.",
-    "Do not claim the signed packet estimate, a new range, M9-M2, M9-M1, M9, endpoint uniformity, or an exponent."
+    "Write the exact post-inner M1/M2 bilinear sum before either the a'-triangle or outer-ray triangle, preserving both outer and inner complete-lift coefficients, centre phases, determinant taper, threshold representation, and character placement.",
+    "Derive the exact dual or Gram form of the proposed outer energy and test whether it is equivalent to a stronger positive norm rather than the scalar signed target.",
+    "Construct a phase-aligned and coefficient-blind false control at the same support and energy scales; identify the exact physical property required to exclude it.",
+    "Attack the a'=a+p sum jointly with the reciprocal variable, including every product-window resonance and M1/M2 quarter-character orientation, before taking a modulus.",
+    "Audit the known unit-Hessian two-dimensional transform return and show precisely whether the proposed mechanism is noninvertible or merely another canonical self-return.",
+    "Charge Mobius progressions, strict/weak/star faces, threshold equalities, numerator support exits, cross-shell owners, and the equal-ray diagonal exactly once.",
+    "Either prove a complete target-scale outer inequality, prove a strict fixed-power saving with exact first residual, or establish the smallest rigorous no-go and park this interface.",
+    "Do not infer a global exponent improvement unless the complete fixed-block correlation exponent is below 9/16; make no M9 or quarter promotion."
   ],
   "controls": [
-    "denominator_telescoping_and_hard_profile",
-    "frequency_telescoping_top_bottom_and_clipping",
-    "height_floor_and_empty_block",
-    "exact_Phi_and_positive_frequency_constant",
-    "positive_negative_frequency_recombination",
-    "balanced_ratio_boundary_and_real_X",
-    "stationary_symbol_support_crossings_and_error",
-    "smooth_gcd_one_count_and_boundary_owner",
-    "square_near_square_and_large_gcd_priority",
-    "finite_omega_and_no_cross_block_cancellation",
-    "profile_seminorms_and_uniformity",
-    "false_arithmetic_mask_and_unsigned_models",
-    "capacity_and_downstream_scope"
+    "literal_post_inner_dictionary",
+    "outer_ray_and_increment_counts",
+    "outer_l2_dual_or_Gram",
+    "phase_aligned_false_control",
+    "actual_character_placement",
+    "M1_M2_increment_orientation",
+    "product_window_resonance_return",
+    "unit_Hessian_sequential_transform_return",
+    "scalar_vs_positive_energy",
+    "Mobius_threshold_and_owner_ledger",
+    "strict_weak_star_and_support_faces",
+    "capacity_before_and_after",
+    "no_exponent_or_M9_promotion"
   ],
   "tasks": [
     {
-      "id": "blind_atom_dictionary_rederivation",
+      "id": "blind_outer_bilinear_dual_feasibility",
       "role": "blind_rederiver",
       "access_mode": "statement_only",
-      "status": "complete",
-      "target": "Independently test the frozen explicit dictionary statement: prove its finite partitions, constants, one-count equation, and first missing datum using only the statement packet.",
+      "status": "completed_with_exact_dual_no_go_and_post_unmask_gram_review",
+      "target": "Compute the exact outer dual/Gram implied by the supplied post-inner bilinear statement. Prove the proposed target-scale outer energy, give a support-matched phase-aligned countermodel, or state the sharp additional actual-family property required.",
       "context_files": [
         "problems/gauss_circle.md",
         "state/control_models.md",
-        "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/blind_statement.md"
+        "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/blind_statement.md"
       ],
       "excluded_context": [
         "state/proof_obligations.yml",
         "state/best_proof_draft.md",
-        "strategy files",
-        "Round-113 derivation packet and candidate",
-        "all earlier balanced-packet derivations and all Round-113 sibling reports"
+        "all strategy files",
+        "all Round-95 through Round-130 nonblind artifacts",
+        "all Round-130 sibling reports"
       ],
       "required_controls": [
-        "denominator_telescoping_and_hard_profile",
-        "frequency_telescoping_top_bottom_and_clipping",
-        "height_floor_and_empty_block",
-        "exact_Phi_and_positive_frequency_constant",
-        "positive_negative_frequency_recombination",
-        "balanced_ratio_boundary_and_real_X",
-        "smooth_gcd_one_count_and_boundary_owner",
-        "square_near_square_and_large_gcd_priority",
-        "false_arithmetic_mask_and_unsigned_models",
-        "capacity_and_downstream_scope"
+        "outer_l2_dual_or_Gram",
+        "phase_aligned_false_control",
+        "outer_ray_and_increment_counts",
+        "scalar_vs_positive_energy",
+        "unit_Hessian_sequential_transform_return",
+        "capacity_before_and_after",
+        "no_exponent_or_M9_promotion"
       ],
       "required_output": [
         "A seven-section statement-only report.",
-        "A coefficientwise proof or exact counterexample to the dictionary.",
-        "The first doubtful datum and a precise state recommendation."
+        "An exact dual/Gram calculation and support-matched control.",
+        "A proof, minimal repaired inequality, or rigorous no-go.",
+        "No graph or shared-state edit."
       ],
-      "report_path": "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/reports/blind_atom_dictionary_rederivation.md"
+      "report_path": "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/reports/blind_outer_bilinear_dual_feasibility.md"
     },
     {
-      "id": "literal_atom_dictionary_constructor",
-      "role": "formalizer",
+      "id": "actual_numerator_increment_recombination_attack",
+      "role": "discovery",
       "access_mode": "selected_context",
-      "status": "complete",
-      "target": "Construct and prove the complete finite actual-symbol atom dictionary from the accepted dyadic profile, Vaaler coefficient, stationary transform, and Round-112 guardrails.",
+      "status": "completed_with_BKB_shell_refinement_and_inversion_return",
+      "target": "Recombine the exact a'=a+p increments with the reciprocal variable before modulus. Prove a target or strict saving beyond D K_B, or isolate the first exact product-window or character-alias return, while retaining the Round-129 threshold theorem inside the joint expression.",
       "context_files": [
         "protocol.md",
         "state/proof_obligations.yml",
         "state/active_campaign.yml",
-        "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/derivation_packet.md",
-        "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/candidates/conductor_literal_atom_dictionary.md",
-        "rounds/codex-managed/m9-endpoint-fixed-profile-attack/reports/dyadic_profile_certificate.md",
-        "rounds/codex-managed/m9-unit-frequency-w1-validation/reports/h4_weight_normalization_review.md",
-        "rounds/codex-managed/m9-frequency-phase-diagram/reports/dual_three_quarter_attack.md",
-        "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/reports/m2_outside_packet_assembly_attack.md",
-        "rounds/codex-managed/m9-m2-balanced-smooth-quarter-packet-canonicalization/synthesis.md"
+        "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/reports/actual_rational_cluster_attack.md",
+        "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/reports/actual_character_determinant_attack.md",
+        "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/reports/graded_determinant_long_lift_feasibility.md",
+        "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/reports/actual_stieltjes_reciprocal_sum_attack.md",
+        "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/reviews/conductor_round129_direct_curvature_adjudication.md",
+        "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/synthesis.md"
       ],
       "required_controls": [
-        "denominator_telescoping_and_hard_profile",
-        "frequency_telescoping_top_bottom_and_clipping",
-        "height_floor_and_empty_block",
-        "exact_Phi_and_positive_frequency_constant",
-        "positive_negative_frequency_recombination",
-        "balanced_ratio_boundary_and_real_X",
-        "stationary_symbol_support_crossings_and_error",
-        "smooth_gcd_one_count_and_boundary_owner",
-        "square_near_square_and_large_gcd_priority",
-        "finite_omega_and_no_cross_block_cancellation",
-        "profile_seminorms_and_uniformity",
-        "capacity_and_downstream_scope"
+        "literal_post_inner_dictionary",
+        "outer_ray_and_increment_counts",
+        "actual_character_placement",
+        "M1_M2_increment_orientation",
+        "product_window_resonance_return",
+        "unit_Hessian_sequential_transform_return",
+        "Mobius_threshold_and_owner_ledger",
+        "strict_weak_star_and_support_faces",
+        "capacity_before_and_after",
+        "no_exponent_or_M9_promotion"
       ],
       "required_output": [
-        "A seven-section formalization report.",
-        "A literal finite dictionary and exact one-count theorem.",
-        "A complete list of any irreducible missing definitions."
+        "A seven-section analytic report.",
+        "The exact p-v-threshold formula before every outside modulus.",
+        "A target theorem, strict saving plus first residual, or exact self-return/no-go.",
+        "No graph or shared-state edit."
       ],
-      "report_path": "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/reports/literal_atom_dictionary_constructor.md"
+      "report_path": "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/reports/actual_numerator_increment_recombination_attack.md"
     },
     {
-      "id": "atom_dictionary_hostile_seam_audit",
+      "id": "outer_ray_bilinear_hostile_audit",
       "role": "seam_reviewer",
       "access_mode": "selected_context",
-      "status": "complete",
-      "target": "Hostilely audit clipping, floors, balanced-boundary labels, stationary crossings, gcd shells, owner subtraction, constants, and seminorm uniformity in the proposed dictionary.",
+      "status": "completed_with_resolved_gram_resonance_and_transform_no_go",
+      "target": "Hostilely test every proposed post-inner outer contraction against actual character placement, phase alignment, positive-energy strengthening, product-window resonances, unit-Hessian return, and exact owners. Certify only a literal scalar gain.",
       "context_files": [
         "protocol.md",
         "state/proof_obligations.yml",
         "state/active_campaign.yml",
-        "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/derivation_packet.md",
-        "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/candidates/conductor_literal_atom_dictionary.md",
-        "rounds/codex-managed/m9-endpoint-fixed-profile-attack/reports/dyadic_profile_certificate.md",
-        "rounds/codex-managed/m9-endpoint-kernel-validation/reports/hostile_endpoint_scope_review.md",
-        "rounds/codex-managed/m9-frequency-phase-diagram/reports/dual_three_quarter_attack.md",
-        "rounds/codex-managed/m9-m2-outside-packet-endpoint-assembly/reports/m2_assembly_hostile_hygiene_audit.md",
-        "rounds/codex-managed/m9-m2-balanced-smooth-quarter-packet-canonicalization/reports/balanced_packet_hostile_source_audit.md"
+        "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/reviews/conductor_round117_actual_savings.md",
+        "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/reports/graded_determinant_long_lift_feasibility.md",
+        "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/reports/blind_structured_v2_curvature_feasibility.md",
+        "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/reports/actual_stieltjes_reciprocal_sum_attack.md",
+        "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/reviews/post_blind_absolute_curvature_outer_ledger.md",
+        "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/synthesis.md"
       ],
       "required_controls": [
-        "denominator_telescoping_and_hard_profile",
-        "frequency_telescoping_top_bottom_and_clipping",
-        "height_floor_and_empty_block",
-        "exact_Phi_and_positive_frequency_constant",
-        "positive_negative_frequency_recombination",
-        "balanced_ratio_boundary_and_real_X",
-        "stationary_symbol_support_crossings_and_error",
-        "smooth_gcd_one_count_and_boundary_owner",
-        "square_near_square_and_large_gcd_priority",
-        "finite_omega_and_no_cross_block_cancellation",
-        "profile_seminorms_and_uniformity",
-        "false_arithmetic_mask_and_unsigned_models",
-        "capacity_and_downstream_scope"
+        "literal_post_inner_dictionary",
+        "outer_l2_dual_or_Gram",
+        "phase_aligned_false_control",
+        "actual_character_placement",
+        "M1_M2_increment_orientation",
+        "product_window_resonance_return",
+        "unit_Hessian_sequential_transform_return",
+        "scalar_vs_positive_energy",
+        "Mobius_threshold_and_owner_ledger",
+        "strict_weak_star_and_support_faces",
+        "capacity_before_and_after",
+        "no_exponent_or_M9_promotion"
       ],
       "required_output": [
-        "A seven-section hostile seam report.",
-        "Certification or the first exact counterexample.",
-        "A smallest lawful corrected dictionary and graph recommendation."
+        "A seven-section hostile review.",
+        "A seam matrix and exact aligned or resonance control.",
+        "Certification, strict scope restriction, or rigorous no-go.",
+        "No graph or shared-state edit."
       ],
-      "report_path": "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/reports/atom_dictionary_hostile_seam_audit.md"
+      "report_path": "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/reports/outer_ray_bilinear_hostile_audit.md"
     }
   ],
   "review_seams": [
-    {"id": "partition", "requirement": "Both finite telescoping partitions and every clipped endpoint are exact."},
-    {"id": "normalization", "requirement": "The physical constant, positive-frequency child, character, stationary unit, and conjugacy are exact."},
-    {"id": "atom_dictionary", "requirement": "Every coefficient and finite support label is explicitly defined rather than named abstractly."},
-    {"id": "ownership", "requirement": "High gcd, square, near square, transform errors, hard endpoint, and analytic block owners occur once."},
-    {"id": "uniformity", "requirement": "Every smooth profile has proved scale-normalized seminorms uniformly in real X and all floors."},
-    {"id": "scope", "requirement": "No signed estimate or downstream theorem is inferred from the dictionary."}
+    {
+      "id": "dictionary",
+      "requirement": "Both complete ray coefficients, the a' increments, every threshold, the determinant taper, and all phases are written before an outer norm."
+    },
+    {
+      "id": "duality",
+      "requirement": "The exact dual or Gram of every proposed outer energy is computed, and a stronger positive norm is not confused with the scalar target."
+    },
+    {
+      "id": "arithmetic",
+      "requirement": "Actual M1/M2 characters and Mobius congruences remain in their literal variables until any claimed cancellation is obtained."
+    },
+    {
+      "id": "resonance",
+      "requirement": "Product-window near integers, phase-aligned controls, and every two-dimensional stationary alias are priced."
+    },
+    {
+      "id": "owners",
+      "requirement": "Threshold equality, support exits, stars, diagonal, and half-open shells are charged once."
+    },
+    {
+      "id": "capacity",
+      "requirement": "Every proposed norm displays its exact power relative to current D K_B, target D, and the 9/16 global-improvement threshold."
+    }
   ]
 }

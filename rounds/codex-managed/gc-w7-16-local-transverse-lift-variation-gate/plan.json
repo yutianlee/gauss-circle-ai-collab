@@ -1,0 +1,213 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 128,
+    "round_type": "gc_w7_16_local_transverse_lift_variation_gate",
+    "campaign_id": "gc-w7-16-local-transverse-lift-variation-gate",
+    "title": "W=Y^(7/16) literal local transverse lift-variation gate",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "1a5c8c8b4b6c6c0dcf3d0e05a1607b3d29dfe22f66748d401405d1c0f7b474d6",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "planned_numerical_percent": 0,
+      "literature_policy": "No external theorem is needed for the coefficient gate. A source may be consulted only if it supplies an exact variation inequality whose hypotheses are checked against every literal coefficient package."
+    },
+    "target_obligations": [
+      "GC-W7-16-local-transverse-square-variation-connector",
+      "GC-W7-16-actual-reduced-determinant-correlation"
+    ],
+    "frozen_target": {
+      "question": "For every literal M1/M2 complete-lift coefficient on one moving reciprocal window at W=Y^(7/16), is its local V^2 norm O_epsilon(J_B^(1/2)L^(-1)Y^epsilon), or does an exact coefficient package force a larger variation and stop the selected route?",
+      "reference_formula": "On b' asymptotic B, write G=D/B, Q_B=min(B,BD/(WL)), J_B=1+DQ_B/B^2, b'=rho v, and U_(i,rho)(v)=sum_(g in I_(i,rho)(v))^* chi_4(g) omega_i(g,a',rho v). Prove ||U_(i,rho)||_(V^2(I)) <<_epsilon J_B^(1/2)L^(-1)Y^epsilon uniformly, including endpoint values, or isolate the first literal counterterm.",
+      "quantities": [
+        "W=Y^(7/16), D=Y^(1/2), L=Y^(1/6), D/L <= B <= D",
+        "Q_B=BD/(WL)=Y^(log_Y B-5/48) on the critical block",
+        "J_B=1+DQ_B/B^2=1+Y^(19/48-log_Y B)",
+        "V^2(I)=|U(v_-)|^2+sum_(v,v+1 in I)|U(v+1)-U(v)|^2+|U(v_+)|^2",
+        "The desired exponent theta=1/2 is useful only because theta<2/3; full-shell G^(1/2) variation is insufficient",
+        "A proof of this coefficient norm alone does not prove the subsequent oscillatory inequality or any exponent improvement"
+      ]
+    },
+    "completion_criteria": [
+      "Reconstruct the exact literal U_(i,rho)(v) for M1 and M2 from accepted artifacts, including every taper, character, lift, sign, profile, floor, hard sample, star, support birth and exit, and divisor progression.",
+      "Separate pure moving-endpoint births from continuous v-dependence of tapers and profiles, fixed endpoint values, Mobius/progression weights, and cross-shell ownership.",
+      "Prove the J_B^(1/2)/L V^2 bound for every package, prove it on a strict complete subset and isolate the exact residual, or construct a literal package forcing a larger power.",
+      "Audit both V^2 endpoint terms; bounded increments alone are not sufficient if U(v_-) or U(v_+) has full lift capacity.",
+      "Keep chi_4(g) cancellation inside each complete lift sum before any modulus and test arbitrary phase-conjugating lift coefficients as a false control.",
+      "Verify that floors, stars, strict and weak faces, support births, and moving symbols change at the claimed J_B rate on the actual Q_B window.",
+      "Check the effective J_B exponent: theta<2/3 passes the conditional capacity gate, theta>=2/3 stops it.",
+      "If the coefficient gate passes, state the exact remaining V^2-weighted curvature theorem without claiming it; if it fails, state the smallest rigorous obstruction and stop the graded route.",
+      "State conservatively that no M9 parent, global exponent, or quarter theorem changes in this round without the subsequent analytic inequality."
+    ],
+    "controls": [
+      "literal_complete_lift_dictionary",
+      "local_window_and_birth_count",
+      "V2_endpoint_terms",
+      "continuous_weight_variation",
+      "character_partial_sum_before_modulus",
+      "mobius_divisor_progressions",
+      "floors_stars_hard_faces_and_support",
+      "cross_shell_owner_and_no_duplication",
+      "actual_vs_adversarial_lift_coefficients",
+      "theta_two_thirds_capacity_threshold",
+      "finite_stop_rule",
+      "no_exponent_or_M9_promotion"
+    ],
+    "tasks": [
+      {
+        "id": "blind_local_v2_feasibility",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "assigned",
+        "target": "Determine exactly what local birth-count and character hypotheses can imply about the V^2 norm, and either prove the displayed abstract bound or give the sharpest countermodel and necessary missing hypothesis without using historical reports.",
+        "context_files": [
+          "problems/gauss_circle.md",
+          "state/control_models.md",
+          "rounds/codex-managed/gc-w7-16-local-transverse-lift-variation-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "all strategy files",
+          "all Round-95 through Round-128 nonblind artifacts",
+          "all Round-128 sibling reports"
+        ],
+        "required_controls": [
+          "local_window_and_birth_count",
+          "V2_endpoint_terms",
+          "continuous_weight_variation",
+          "character_partial_sum_before_modulus",
+          "actual_vs_adversarial_lift_coefficients",
+          "theta_two_thirds_capacity_threshold",
+          "finite_stop_rule",
+          "no_exponent_or_M9_promotion"
+        ],
+        "required_output": [
+          "A seven-section statement-only report.",
+          "A proof of the abstract local V^2 bound under explicit hypotheses, or a sharp countermodel and minimal repaired hypotheses.",
+          "Separate conclusions for endpoint births, continuous weights, and V^2 endpoint values.",
+          "No graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/gc-w7-16-local-transverse-lift-variation-gate/reports/blind_local_v2_feasibility.md"
+      },
+      {
+        "id": "literal_lift_coefficient_variation_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "assigned",
+        "target": "Reconstruct the exact M1/M2 complete-lift coefficient on a moving B-shell window and prove the local J_B^(1/2)/L V^2 bound package by package, or isolate the first literal residual or counterterm.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/synthesis.md",
+          "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/reports/actual_character_determinant_attack.md",
+          "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/reviews/hostile_round117_discovery_addendum.md",
+          "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/reviews/conductor_round117_actual_savings.md",
+          "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/synthesis.md",
+          "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/reports/graded_determinant_long_lift_feasibility.md",
+          "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/reviews/conductor_round127_frontier_selection_adjudication.md"
+        ],
+        "required_controls": [
+          "literal_complete_lift_dictionary",
+          "local_window_and_birth_count",
+          "V2_endpoint_terms",
+          "continuous_weight_variation",
+          "character_partial_sum_before_modulus",
+          "mobius_divisor_progressions",
+          "floors_stars_hard_faces_and_support",
+          "cross_shell_owner_and_no_duplication",
+          "theta_two_thirds_capacity_threshold",
+          "finite_stop_rule",
+          "no_exponent_or_M9_promotion"
+        ],
+        "required_output": [
+          "A seven-section analytic report.",
+          "An exact literal coefficient dictionary before any variation estimate.",
+          "A packagewise V^2 proof, strict partial theorem plus exact residual, or literal no-go.",
+          "The first doubtful step and a precise state recommendation without editing shared state."
+        ],
+        "report_path": "rounds/codex-managed/gc-w7-16-local-transverse-lift-variation-gate/reports/literal_lift_coefficient_variation_attack.md"
+      },
+      {
+        "id": "local_variation_hostile_audit",
+        "role": "seam_reviewer",
+        "access_mode": "selected_context",
+        "status": "assigned",
+        "target": "Hostilely audit whether J_B counts every literal source of variation and whether endpoint values, continuous weights, Mobius progressions, hard faces, and cross-shell terms force a larger capacity; certify a proof only after all seams close.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/reports/blind_determinant_fibre_rederivation.md",
+          "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/reports/determinant_fibre_hostile_source_audit.md",
+          "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/reviews/conductor_round117_involution_product_and_source.md",
+          "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/reviews/conductor_round117_actual_savings.md",
+          "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/synthesis.md",
+          "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/reports/graded_determinant_long_lift_feasibility.md",
+          "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/reviews/conductor_round127_frontier_selection_adjudication.md"
+        ],
+        "required_controls": [
+          "literal_complete_lift_dictionary",
+          "local_window_and_birth_count",
+          "V2_endpoint_terms",
+          "continuous_weight_variation",
+          "character_partial_sum_before_modulus",
+          "mobius_divisor_progressions",
+          "floors_stars_hard_faces_and_support",
+          "cross_shell_owner_and_no_duplication",
+          "actual_vs_adversarial_lift_coefficients",
+          "theta_two_thirds_capacity_threshold",
+          "finite_stop_rule",
+          "no_exponent_or_M9_promotion"
+        ],
+        "required_output": [
+          "A seven-section hostile review.",
+          "A seam matrix covering every literal variation source and both V^2 endpoints.",
+          "A reproducible counterexample if the stated bound fails, or an independent derivation if it passes.",
+          "A conservative promotion, revision, rejection, or no-change recommendation."
+        ],
+        "report_path": "rounds/codex-managed/gc-w7-16-local-transverse-lift-variation-gate/reports/local_variation_hostile_audit.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "literal_dictionary",
+        "requirement": "Every actual M1/M2 lift coefficient and owner is explicitly defined before a norm is taken."
+      },
+      {
+        "id": "locality",
+        "requirement": "The J_B birth count is proved on the same Q_B reciprocal window used by the curvature estimate, not on a different or completed shell."
+      },
+      {
+        "id": "variation",
+        "requirement": "Endpoint values, discrete births, continuous v-dependence, stars, floors, hard faces, and support entries/exits are all charged exactly once."
+      },
+      {
+        "id": "character",
+        "requirement": "The common lift character remains inside complete lift sums until its partial-sum cancellation is used."
+      },
+      {
+        "id": "capacity",
+        "requirement": "The effective local exponent is below two thirds; no full-lift or reciprocal-window square-root loss is hidden."
+      },
+      {
+        "id": "scope",
+        "requirement": "A coefficient-norm result is not promoted to the oscillatory inequality, a global exponent, M9, or the quarter theorem."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "1a5c8c8b4b6c6c0dcf3d0e05a1607b3d29dfe22f66748d401405d1c0f7b474d6",
+    "generated_at": "2026-08-23T04:59:15.741477+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

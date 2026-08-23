@@ -1,0 +1,200 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-unbalanced-double-character-stationary-offdiagonal-reduction",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Unmasked double-character stationary transform and off-product inverse reduction",
+        "status": "proved_internal",
+        "statement_tex": "For one literal flat-smooth strict-UNBAL row at an integer centre M asymp X, with D=X^delta, L=X^ell, K=XL/D^2 and H_0=ceil(X^(1/2)/D), apply character Poisson and uniform scalar stationary phase to the complete unmasked zero-extended row. The exact shifted square equals, up to O(1), the block square of A_tilde(k)=e(-1/8)M^(1/4)k^(-3/4)sum_(p>0 odd)chi_4(p)p^(-3/4)W((X/(2D))sqrt(p/(Mk)))q_L((X/M)p)e(sqrt(Mkp)). Its product phase is Theta=sqrt(M){sqrt(p(k+h))-sqrt(qk)}. The complete principal product-equality sector p=q,h=0 is O(X^(1/2)). If Q_safe is the already-proved physical zero-alias, nonzero-exact-alias and rapid-tail package, then V_(M,H_0)=S_eq^(nonzero)+S_neq+(D_0-Q_safe)+O(1), where S_eq^(nonzero) is the complete actual-sign p=q,h!=0 sector and S_neq is the complete p!=q sector. Hence the physical survivor and the full dual off-product aggregate are target-equivalent modulo target-sized packages, and every fixed-power violation forces at least one of these two complete dual sectors to have the same power excess. This is an inverse reduction, not an estimate of either sector or the flat-smooth quarter target.",
+        "dependencies": [
+          "M9-M2-unbalanced-integer-centred-shifted-alias-reduction",
+          "M9-M2-character-factor",
+          "H4-Phi-regularity"
+        ],
+        "implies": [
+          "M9-M2-smooth-unbalanced-three-quarter-estimate"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-unbalanced-joint-stationary-lattice-gate/reports/blind_joint_stationary_lattice_rederivation.md",
+            "rounds/codex-managed/m9-m2-unbalanced-joint-stationary-lattice-gate/reports/double_poisson_product_defect_attack.md",
+            "rounds/codex-managed/m9-m2-unbalanced-joint-stationary-lattice-gate/reports/joint_stationary_lattice_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-unbalanced-joint-stationary-lattice-gate/reviews/conductor_round124_stationary_lattice_adjudication.md",
+            "rounds/codex-managed/m9-m2-unbalanced-joint-stationary-lattice-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Prove the X^(1/2+epsilon) bound for the complete actual-sign dual off-product aggregate before any outside norm, or obtain a stronger inverse theorem that localizes a violation to one complete equal-mode-shifted or unequal-mode sector."
+      },
+      {
+        "id": "M9-M2-unbalanced-joint-stationary-principal-return",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Joint stationary principal-phase alias return and capacity diagnostic",
+        "status": "proved_internal",
+        "statement_tex": "For the Round-124 unmasked dual phase Theta=sqrt(M){sqrt(p(k+h))-sqrt(qk)}, the product defect N=p(k+h)-qk has gradient numerator G=pk-q(k+h)=N-(p+q)h, and partial_k Theta=M(1/r_*-1/s_*). For an integer k-label j, the continuous physical defect is E_*=M(s_*-r_*)-jr_*s_*=r_*s_*(partial_k Theta-j), so every exact k-saddle lies on E_*=0 even when N!=0. On fixed smooth interiors, det Hess_(k,h) Theta=-M sqrt(pq)/(16(k+h)^(3/2)k^(3/2)); for dual labels (j,d), r_*=M/d, s_*=M/(d-j), k_*=Mq/(4(d-j)^2), h_*=M(p/d^2-q/(d-j)^2)/4, and Theta-jk-dh=jk+dh=M(p/d-q/(d-j))/4. Thus the joint principal Legendre phase returns to the primal reciprocal phase and Hessian rank alone supplies no saving. The nominal D^2 and D^2/L stationary capacities are unsigned diagnostics, not lower bounds or universal norm obstructions. The physical j,E projector is coupled and cannot pass through rowwise Poisson; no complete joint endpoint transform is asserted.",
+        "dependencies": [
+          "M9-M2-unbalanced-double-character-stationary-offdiagonal-reduction",
+          "M9-M2-unbalanced-alias-factor-and-derivative-self-return",
+          "M9-M2-character-factor"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-unbalanced-joint-stationary-lattice-gate/candidates/conductor_stationary_lattice_involution.md",
+            "rounds/codex-managed/m9-m2-unbalanced-joint-stationary-lattice-gate/reports/blind_joint_stationary_lattice_rederivation.md",
+            "rounds/codex-managed/m9-m2-unbalanced-joint-stationary-lattice-gate/reports/double_poisson_product_defect_attack.md",
+            "rounds/codex-managed/m9-m2-unbalanced-joint-stationary-lattice-gate/reports/joint_stationary_lattice_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-unbalanced-joint-stationary-lattice-gate/reviews/conductor_round124_stationary_lattice_adjudication.md",
+            "rounds/codex-managed/m9-m2-unbalanced-joint-stationary-lattice-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Freeze product-equality counts, joint Hessian nondegeneracy, random character-sign credit, and a second invertible stationary transform as standalone mechanisms. Reopen only with a complete signed inequality or an endpoint-complete transform used inside a noninvertible estimate."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-smooth-unbalanced-three-quarter-estimate",
+        "dependencies_added": [
+          "M9-M2-unbalanced-double-character-stationary-offdiagonal-reduction"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-unbalanced-joint-stationary-lattice-gate/reports/blind_joint_stationary_lattice_rederivation.md",
+            "rounds/codex-managed/m9-m2-unbalanced-joint-stationary-lattice-gate/reports/double_poisson_product_defect_attack.md",
+            "rounds/codex-managed/m9-m2-unbalanced-joint-stationary-lattice-gate/reports/joint_stationary_lattice_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-unbalanced-joint-stationary-lattice-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The exact target-equivalent dual survivor is S_eq^(nonzero)+S_neq. Prove its complete actual-sign X^(1/2+epsilon) bound, or obtain a stronger inverse localization. Product defect, Hessian rank and random p,q sign credit are insufficient."
+      },
+      {
+        "id": "M9-M2-unbalanced-integer-centred-shifted-alias-reduction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-unbalanced-joint-stationary-lattice-gate/reviews/conductor_round124_stationary_lattice_adjudication.md",
+            "rounds/codex-managed/m9-m2-unbalanced-joint-stationary-lattice-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Round 124 converts the Round-123 physical survivor, modulo its proved safe packages, into one complete dual off-product aggregate. Continue only through a genuinely signed estimate or stronger sectorwise inverse theorem."
+      },
+      {
+        "id": "M9-M2-unbalanced-alias-factor-and-derivative-self-return",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-unbalanced-joint-stationary-lattice-gate/reports/double_poisson_product_defect_attack.md",
+            "rounds/codex-managed/m9-m2-unbalanced-joint-stationary-lattice-gate/reports/joint_stationary_lattice_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-unbalanced-joint-stationary-lattice-gate/reviews/conductor_round124_stationary_lattice_adjudication.md",
+            "rounds/codex-managed/m9-m2-unbalanced-joint-stationary-lattice-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The derivative self-return now has the exact dual correction G=N-(p+q)h and the continuous saddle identity E_*=0. Freeze all defect-equality and second-transform shortcuts unless embedded in a new complete signed inequality."
+      },
+      {
+        "id": "M9-M2",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-unbalanced-joint-stationary-lattice-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Hard TOP and BAL remain open. Flat-smooth UNBAL is target-equivalent to the Round-124 dual off-product aggregate, while every nonflat UNBAL owner remains separate."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round124-product-defect-is-gradient-numerator",
+        "reason": "The phase numerator is N=p(k+h)-qk, but the k-gradient numerator is G=pk-q(k+h)=N-(p+q)h."
+      },
+      {
+        "id": "Round124-N-zero-classifies-physical-aliases",
+        "reason": "N=0 only gives p=q,h=0 on active interiors. Exact reciprocal aliases occur whenever partial_k Theta is integral, including equal-mode shifted and unequal-mode sectors."
+      },
+      {
+        "id": "Round124-near-alias-projector-passes-rowwise-Poisson",
+        "reason": "The j,E indicator is a discontinuous coupled function of r,s. The valid connector transforms the full square and subtracts the already-safe physical scalar package afterward."
+      },
+      {
+        "id": "Round124-E-nonzero-gives-k-frequency-gap",
+        "reason": "The minimum discrete gap is of order R^(-2), whose K-scale resolution is K/R^2=L/X=o(1). Nonexactness alone gives no integration-by-parts saving."
+      },
+      {
+        "id": "Round124-dual-product-diagonal-is-all-physical-zero-aliases",
+        "reason": "The p=q,h=0 sector is target-safe but is not the termwise transform of the complete primal j=0 package."
+      },
+      {
+        "id": "Round124-full-Hessian-rank-supplies-Q-saving",
+        "reason": "The joint Hessian is nondegenerate, but its Legendre phase and amplitude return to the primal reciprocal variables without a power gain."
+      },
+      {
+        "id": "Round124-D2-over-L-is-a-positive-lower-bound",
+        "reason": "D^2/L is an unsigned principal-symbol capacity. The equal-mode shifted terms are autocorrelations, not a termwise positive diagonal, and no signed lower bound is proved."
+      },
+      {
+        "id": "Round124-random-character-square-root-closes",
+        "reason": "Even hypothetical square-root credit across L^2 mode pairs leaves D^2/L=Q sqrt(X) with Q tending to infinity."
+      },
+      {
+        "id": "Round124-local-Legendre-return-is-complete-joint-transform",
+        "reason": "The Fejer cusp and faces, k-support entries and exits, stationary transitions, and nonstationary two-dimensional modules have no complete target-level ledger."
+      },
+      {
+        "id": "Round124-offproduct-reduction-proves-flat-UNBAL",
+        "reason": "Both complete dual off-product sectors remain without an X^(1/2+epsilon) signed estimate."
+      },
+      {
+        "id": "Round124-flat-smooth-result-proves-complete-UNBAL-or-M9-M2",
+        "reason": "Every nonflat, hard, sharp, clipped, starred, arithmetic-owner and transition UNBAL packet remains separate, as do hard TOP and BAL."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M2-smooth-unbalanced-three-quarter-estimate",
+        "reason": "The complete actual-sign dual off-product aggregate has no square-target estimate."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Hard TOP, BAL and complete UNBAL remain open."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "Round 124 concerns only one M2 flat-smooth owner; both direct M1 parents and the lower GAR alternative remain open."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "No sharp, clipped, starred, hard, arithmetic or transition endpoint is closed."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, complete M9-M2 and endpoint uniformity remain open."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "Its full M9 hypothesis remains open."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The round proves a strict reduction and obstruction but no complete pointwise estimate below the accepted one-third frontier."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The quarter target still lacks complete M9-M2, an M1 route, endpoint uniformity and the final bridge."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 124 proves a complete unmasked double-character stationary transform with aggregate O(1) error, removes its product-equality diagonal at the square target, and gives an exact target-equivalent inverse reduction to two complete dual off-product sectors. It also repairs the product-versus-gradient defect and rigorously identifies the later principal-phase self-return and capacity scope. Neither dual sector, flat-smooth UNBAL, any nonflat owner, M9-M2, M9-M1, nor any exponent is closed."
+  }
+}

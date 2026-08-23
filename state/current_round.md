@@ -1,36 +1,34 @@
-# Current Research Round 113
+# Research status after Round 130
 
-Campaign: `m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation` — Literal balanced smooth atom dictionary and one-count reconciliation
+Campaign: `gc-w7-16-post-inner-outer-bilinear-gate`
 
-Status: `complete`. Maximum concurrent subagents: 3.
+Status: `closed`.  No research round is currently active.
 
-Resulting graph SHA-256: `411adc0c93d2451dfc1235840f27063b3ef4869d0c67aebfbbc74fe9ef04387c`.
+Resulting graph SHA-256:
+`23e7bfacbf6abc5582769fbe8d427cbca2379e1d265b99df21d93a65ec504825`.
 
-## Frozen question
+## Closed outcome
 
-Can the accepted denominator profile, clipped odd-frequency partition, Vaaler coefficient, smooth stationary transform, gcd partition, and prior-owner corrections be instantiated as one finite coefficientwise atom dictionary for every balanced smooth M2 residual block?
+- Exact complete-lift support sharpens every reduced-denominator shell to
+  $|\mathfrak O_{i,B}^{+}|\ll_\varepsilon BK_BY^\varepsilon$.
+- Every lower shell gains $B/D$; the complete exponent-critical residual
+  is the bounded-lift shell $B\asymp D$.
+- The top and complete fixed-block bound remains
+  $Y^{35/48+\varepsilon}$, still $Y^{11/48}$ above target.
+- The exact resolved outer energy is $H^*H$ in atom coordinates or
+  $K_{B,+}^*K_{B,+}$ after physical reassembly; $G^2$ belongs only to a
+  fully completed row.
+- For one fixed primitive top-shell outer ray, $p$ is a bounded-multiplicity
+  determinant-residue lift of $n=aq-bp$, not an independent long variable.
+- Product-window reversal and sequential unit-Hessian transforms return
+  weaker capacities and are parked as scoped method no-gos.
 
-## Task briefs
+No global exponent, M9 component, endpoint theorem, bridge, or quarter
+theorem changed.
 
-- `blind_atom_dictionary_rederivation` (blind_rederiver, statement_only): `rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/briefs/blind_atom_dictionary_rederivation.md`
-- `literal_atom_dictionary_constructor` (formalizer, selected_context): `rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/briefs/literal_atom_dictionary_constructor.md`
-- `atom_dictionary_hostile_seam_audit` (seam_reviewer, selected_context): `rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/briefs/atom_dictionary_hostile_seam_audit.md`
+## Proposed successor
 
-## Completion gates
-
-- Give explicit formulas for the denominator and frequency partitions and prove their finite one-count identities.
-- Derive the exact physical positive-frequency normalization and the normalized stationary symbol without losing floors, clipping, signs, or constants.
-- Define every balanced smooth residual label, including the exact finite ratio boundary, and prove that no hard endpoint enters.
-- Define a literal fixed smooth gcd partition and prove its full-small-gcd plus high-gcd identity.
-- Give the exact square, near-square, high-gcd, and transform-error correction equation with one owner for each term.
-- Prove uniform compact support, reality, smoothness, and scale-normalized seminorm bounds for every packet profile.
-- Either certify the finite atom dictionary and identify the signed estimate as the next analytic gap, or name the first exact missing datum without attempting the estimate.
-- Do not claim the signed packet estimate, a new range, M9-M2, M9-M1, M9, endpoint uniformity, or an exponent.
-
-## Closing decision
-
-The required seams are green after explicit repairs. Round 113 promoted one
-proved internal connector for the finite balanced smooth coefficient
-dictionary and physical one-count equation. The signed
-quarter-packet estimate, the hard and unbalanced M2 parents, both M1
-parents, endpoint uniformity, M9, and every exponent claim remain open.
+Round 131 is proposed but not opened: compute the exact induced
+determinant-residue zero mode on the signed $B\asymp D$ scalar and either
+prove a fixed-power actual-coefficient contraction or establish a physical
+zero-mode obstruction before rotating away from the graded interface.
