@@ -1,0 +1,209 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 130,
+    "round_type": "gc_w7_16_post_inner_outer_bilinear_gate",
+    "campaign_id": "gc-w7-16-post-inner-outer-bilinear-gate",
+    "title": "W=Y^(7/16) post-inner numerator/outer-ray bilinear gate",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "354f5ca462467d091a9a50c8dbc1173ffba56516963274f9fc232ea11890d20e",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "planned_numerical_percent": 0,
+      "literature_policy": "No external theorem is assumed. Consult a source only for an exact bilinear or large-sieve inequality whose hypotheses match the literal determinant kernel and actual characters."
+    },
+    "target_obligations": [
+      "GC-W7-16-complete-all-shell-curvature-saving",
+      "GC-W7-16-actual-reduced-determinant-correlation"
+    ],
+    "frozen_target": {
+      "question": "After the Round-129 K_rho/L inner reciprocal/lift theorem, can one obtain a genuine signed contraction across the remaining reduced-numerator increments and/or outer rays, or does the exact outer dual, phase alignment, or unit-Hessian geometry force a capacity self-return?",
+      "reference_formula": "For one half-open B-shell, O_(i,B)^+=sum_(r=(a,b)) A_i(r)e(ca/(kappa_i b)) F_i(r), where F_i(r)=sum_(a') sum_(rho|a') sum_(eta) S_(i,r,a',rho,eta), and every S retains its exact threshold/plateau formula. Accepted bounds are sup|A_i|<<L^(-1)Y^epsilon, sum_r|A_i(r)|^2<<D/L Y^epsilon, #r<<LD, #a'<<L, and |S|<<K_B/L Y^epsilon. Outside triangles give D K_B=Y^(35/48), while target is D=Y^(1/2). Test a direct bilinear estimate or the target-scale outer energy sum_r|F_i(r)|^2<<LD Y^epsilon without replacing the actual coefficients by an arbitrary matrix family.",
+      "quantities": [
+        "W=Y^(7/16), D=Y^(1/2), L=Y^(1/6), D/L<=B<=D",
+        "Q_B=min(B,BD/(WL)), lambda_B=YL/(DB^2), K_B=min(Q_B,Q_B sqrt(lambda_B)+lambda_B^(-1/2))=Y^(11/48+o(1))",
+        "current complete block D K_B=Y^(35/48+epsilon), target D=Y^(1/2+epsilon), missing factor K_B=Y^(11/48)",
+        "outer ray energy sum|A_i|^2<<D/L and pointwise scale L^(-1) are exact actual-coefficient facts",
+        "a'=a+p lies in O(L) literal increments, with determinant taper, M1/M2 characters, Mobius divisors, threshold data, and shell owners retained",
+        "a strict fixed-power saving is bankable, but no global pointwise improvement follows until the complete correlation exponent drops below 9/16"
+      ]
+    },
+    "completion_criteria": [
+      "Write the exact post-inner M1/M2 bilinear sum before either the a'-triangle or outer-ray triangle, preserving both outer and inner complete-lift coefficients, centre phases, determinant taper, threshold representation, and character placement.",
+      "Derive the exact dual or Gram form of the proposed outer energy and test whether it is equivalent to a stronger positive norm rather than the scalar signed target.",
+      "Construct a phase-aligned and coefficient-blind false control at the same support and energy scales; identify the exact physical property required to exclude it.",
+      "Attack the a'=a+p sum jointly with the reciprocal variable, including every product-window resonance and M1/M2 quarter-character orientation, before taking a modulus.",
+      "Audit the known unit-Hessian two-dimensional transform return and show precisely whether the proposed mechanism is noninvertible or merely another canonical self-return.",
+      "Charge Mobius progressions, strict/weak/star faces, threshold equalities, numerator support exits, cross-shell owners, and the equal-ray diagonal exactly once.",
+      "Either prove a complete target-scale outer inequality, prove a strict fixed-power saving with exact first residual, or establish the smallest rigorous no-go and park this interface.",
+      "Do not infer a global exponent improvement unless the complete fixed-block correlation exponent is below 9/16; make no M9 or quarter promotion."
+    ],
+    "controls": [
+      "literal_post_inner_dictionary",
+      "outer_ray_and_increment_counts",
+      "outer_l2_dual_or_Gram",
+      "phase_aligned_false_control",
+      "actual_character_placement",
+      "M1_M2_increment_orientation",
+      "product_window_resonance_return",
+      "unit_Hessian_sequential_transform_return",
+      "scalar_vs_positive_energy",
+      "Mobius_threshold_and_owner_ledger",
+      "strict_weak_star_and_support_faces",
+      "capacity_before_and_after",
+      "no_exponent_or_M9_promotion"
+    ],
+    "tasks": [
+      {
+        "id": "blind_outer_bilinear_dual_feasibility",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "completed_with_exact_dual_no_go_and_post_unmask_gram_review",
+        "target": "Compute the exact outer dual/Gram implied by the supplied post-inner bilinear statement. Prove the proposed target-scale outer energy, give a support-matched phase-aligned countermodel, or state the sharp additional actual-family property required.",
+        "context_files": [
+          "problems/gauss_circle.md",
+          "state/control_models.md",
+          "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "all strategy files",
+          "all Round-95 through Round-130 nonblind artifacts",
+          "all Round-130 sibling reports"
+        ],
+        "required_controls": [
+          "outer_l2_dual_or_Gram",
+          "phase_aligned_false_control",
+          "outer_ray_and_increment_counts",
+          "scalar_vs_positive_energy",
+          "unit_Hessian_sequential_transform_return",
+          "capacity_before_and_after",
+          "no_exponent_or_M9_promotion"
+        ],
+        "required_output": [
+          "A seven-section statement-only report.",
+          "An exact dual/Gram calculation and support-matched control.",
+          "A proof, minimal repaired inequality, or rigorous no-go.",
+          "No graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/reports/blind_outer_bilinear_dual_feasibility.md"
+      },
+      {
+        "id": "actual_numerator_increment_recombination_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "completed_with_BKB_shell_refinement_and_inversion_return",
+        "target": "Recombine the exact a'=a+p increments with the reciprocal variable before modulus. Prove a target or strict saving beyond D K_B, or isolate the first exact product-window or character-alias return, while retaining the Round-129 threshold theorem inside the joint expression.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/reports/actual_rational_cluster_attack.md",
+          "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/reports/actual_character_determinant_attack.md",
+          "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/reports/graded_determinant_long_lift_feasibility.md",
+          "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/reports/actual_stieltjes_reciprocal_sum_attack.md",
+          "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/reviews/conductor_round129_direct_curvature_adjudication.md",
+          "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/synthesis.md"
+        ],
+        "required_controls": [
+          "literal_post_inner_dictionary",
+          "outer_ray_and_increment_counts",
+          "actual_character_placement",
+          "M1_M2_increment_orientation",
+          "product_window_resonance_return",
+          "unit_Hessian_sequential_transform_return",
+          "Mobius_threshold_and_owner_ledger",
+          "strict_weak_star_and_support_faces",
+          "capacity_before_and_after",
+          "no_exponent_or_M9_promotion"
+        ],
+        "required_output": [
+          "A seven-section analytic report.",
+          "The exact p-v-threshold formula before every outside modulus.",
+          "A target theorem, strict saving plus first residual, or exact self-return/no-go.",
+          "No graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/reports/actual_numerator_increment_recombination_attack.md"
+      },
+      {
+        "id": "outer_ray_bilinear_hostile_audit",
+        "role": "seam_reviewer",
+        "access_mode": "selected_context",
+        "status": "completed_with_resolved_gram_resonance_and_transform_no_go",
+        "target": "Hostilely test every proposed post-inner outer contraction against actual character placement, phase alignment, positive-energy strengthening, product-window resonances, unit-Hessian return, and exact owners. Certify only a literal scalar gain.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/reviews/conductor_round117_actual_savings.md",
+          "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/reports/graded_determinant_long_lift_feasibility.md",
+          "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/reports/blind_structured_v2_curvature_feasibility.md",
+          "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/reports/actual_stieltjes_reciprocal_sum_attack.md",
+          "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/reviews/post_blind_absolute_curvature_outer_ledger.md",
+          "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/synthesis.md"
+        ],
+        "required_controls": [
+          "literal_post_inner_dictionary",
+          "outer_l2_dual_or_Gram",
+          "phase_aligned_false_control",
+          "actual_character_placement",
+          "M1_M2_increment_orientation",
+          "product_window_resonance_return",
+          "unit_Hessian_sequential_transform_return",
+          "scalar_vs_positive_energy",
+          "Mobius_threshold_and_owner_ledger",
+          "strict_weak_star_and_support_faces",
+          "capacity_before_and_after",
+          "no_exponent_or_M9_promotion"
+        ],
+        "required_output": [
+          "A seven-section hostile review.",
+          "A seam matrix and exact aligned or resonance control.",
+          "Certification, strict scope restriction, or rigorous no-go.",
+          "No graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/reports/outer_ray_bilinear_hostile_audit.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "dictionary",
+        "requirement": "Both complete ray coefficients, the a' increments, every threshold, the determinant taper, and all phases are written before an outer norm."
+      },
+      {
+        "id": "duality",
+        "requirement": "The exact dual or Gram of every proposed outer energy is computed, and a stronger positive norm is not confused with the scalar target."
+      },
+      {
+        "id": "arithmetic",
+        "requirement": "Actual M1/M2 characters and Mobius congruences remain in their literal variables until any claimed cancellation is obtained."
+      },
+      {
+        "id": "resonance",
+        "requirement": "Product-window near integers, phase-aligned controls, and every two-dimensional stationary alias are priced."
+      },
+      {
+        "id": "owners",
+        "requirement": "Threshold equality, support exits, stars, diagonal, and half-open shells are charged once."
+      },
+      {
+        "id": "capacity",
+        "requirement": "Every proposed norm displays its exact power relative to current D K_B, target D, and the 9/16 global-improvement threshold."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "354f5ca462467d091a9a50c8dbc1173ffba56516963274f9fc232ea11890d20e",
+    "generated_at": "2026-08-23T06:17:32.505563+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

@@ -1,0 +1,231 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 124,
+    "round_type": "m9_m2_unbalanced_joint_stationary_lattice_gate",
+    "campaign_id": "m9-m2-unbalanced-joint-stationary-lattice-gate",
+    "title": "Unbalanced complete signed stationary-lattice gate",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "2b60eca238542d4f321a19c90f20163c6dd4cd7c60da6f324910b6db10b638c6",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 99,
+      "numerical_experimental_maximum_percent": 1,
+      "planned_numerical_percent": 0,
+      "literature_policy": "Use no external estimate unless its primary statement controls the literal signed shifted product correlation with both quarter characters, moving sampled profiles, all stationary and endpoint modules, and the required X^(1/2) energy scale. A transform identity or coefficient-blind large sieve is not a saving."
+    },
+    "target_obligations": [
+      "M9-M2-smooth-unbalanced-three-quarter-estimate",
+      "M9-M2-unbalanced-integer-centred-shifted-alias-reduction",
+      "M9-M2-unbalanced-alias-factor-and-derivative-self-return"
+    ],
+    "frozen_target": {
+      "question": "Can the complete Round-123 signed nonzero, nonexact near-alias shifted energy be bounded by a genuinely joint stationary-lattice inequality, or does the full character-Poisson stationary map rigorously self-return?",
+      "reference_formula": "V_(M,H0)=sum_(r,s odd; j!=0,E!=0,|E|<=X^(1+rho)/L) chi_4(r)chi_4(s)Gamma_(M,H0)(r,s), with H0=ceil(X^(1/2)/D), target V_(M,H0)<<X^(1/2+epsilon), and Gamma the exact Round-123 block-square kernel.",
+      "quantities": [
+        "X real at least 2; M integer asymptotic to X with all physical amplitudes frozen at X",
+        "D=X^delta, L=X^ell, R=X/D, K=XL/D^2, 1/4<=delta<1/2, 0<=ell<delta-1/4, and 178ell+1638delta>463",
+        "H0=ceil(X^(1/2)/D), so K is asymptotic to L H0^2 and 1<=H0<<K",
+        "literal W_r and q_(r,k), zero extension, block endpoints, Fejer weight, and exact prefactor (J+H0-1)/H0^2",
+        "the full real ordered-pair sum with positive and negative aliases, defects, shifts, and conjugates retained",
+        "j nearest M(1/r-1/s), E=M(s-r)-jrs; the accepted j=0, nonzero exact-alias, and rapid-tail packages kept distinct",
+        "both chi_4 expansions and all quarter-shift Poisson modes on the r and s legs",
+        "candidate positive odd stationary modes p,q asymptotic to L, their exact stationary points, phases, amplitudes, boundary and nonstationary remainders",
+        "candidate dual product defect N=p(k+h)-qk and the exact relation between the dual k-gradient and the primal reciprocal alias",
+        "dual diagonal p=q,h=0, equal-mode shifted sector p=q,h!=0, and unequal-mode sector p!=q treated separately before any norm",
+        "flat-smooth strict-UNBAL owner only; every hard, sharp, clipped, starred, arithmetic, and transition owner excluded"
+      ]
+    },
+    "completion_criteria": [
+      "Derive or refute the complete two-character Poisson and stationary expansion with exact signs, Gaussian units, amplitudes, supports, endpoint modules, and aggregate error.",
+      "Prove the stationary-mode ranges and the exact product-defect and gradient identities, including the map back to j, E, and the two reciprocal selectors.",
+      "Classify the dual diagonal, equal-mode shifted, unequal-mode, negative-shift, and quarter-sign branches without replacing the complete signed aggregate by absolute values.",
+      "Prove a target bound, a strict target-safe dual sector, a quantified signed saving, or a fixed-power inverse theorem for the complete actual-sign stationary aggregate.",
+      "If the route self-returns, prove the smallest exact involution or overstrong-norm obstruction and state what genuinely new inequality would bypass it.",
+      "Audit literal profile entries and exits, nonstationary modes, saddle-endpoint transitions, short H0, small L, and every multiplicity or one-count seam.",
+      "State exactly what follows for flat smooth UNBAL, complete UNBAL, M9-M2, M9, the quarter theorem, and every exponent."
+    ],
+    "controls": [
+      "literal_Round123_near_alias_survivor",
+      "H0_K_normalization",
+      "double_character_Poisson_signs",
+      "stationary_points_and_Gaussian_units",
+      "dual_product_defect",
+      "dual_gradient_to_primal_alias",
+      "dual_diagonal_one_count",
+      "equal_mode_shifted_sector",
+      "unequal_mode_sector",
+      "mode_shift_alias_multiplicity",
+      "character_persistence",
+      "stationary_endpoint_and_error_ledger",
+      "signed_joint_aggregation",
+      "transform_involution_and_norm_scope",
+      "owner_and_downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "blind_joint_stationary_lattice_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "pending",
+        "target": "Independently derive the exact two-character stationary lattice of the literal shifted energy and prove the target, a strict safe sector, an inverse theorem, or the smallest rigorous no-go.",
+        "context_files": [
+          "problems/gauss_circle.md",
+          "state/control_models.md",
+          "rounds/codex-managed/m9-m2-unbalanced-joint-stationary-lattice-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "all strategy files",
+          "all Round-106 through Round-124 nonblind artifacts",
+          "all Round-124 sibling reports"
+        ],
+        "required_controls": [
+          "literal_Round123_near_alias_survivor",
+          "H0_K_normalization",
+          "double_character_Poisson_signs",
+          "stationary_points_and_Gaussian_units",
+          "dual_product_defect",
+          "dual_gradient_to_primal_alias",
+          "dual_diagonal_one_count",
+          "equal_mode_shifted_sector",
+          "unequal_mode_sector",
+          "mode_shift_alias_multiplicity",
+          "character_persistence",
+          "stationary_endpoint_and_error_ledger",
+          "signed_joint_aggregation",
+          "transform_involution_and_norm_scope",
+          "owner_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section statement-only report.",
+          "Exact Poisson conventions, stationary points, phases, amplitudes, ranges, defect identities, and error ledger.",
+          "A target estimate, strict safe sector, inverse theorem, or explicit smallest no-go.",
+          "A promote, retain, revise, reject, or no-change recommendation."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-unbalanced-joint-stationary-lattice-gate/reports/blind_joint_stationary_lattice_rederivation.md"
+      },
+      {
+        "id": "double_poisson_product_defect_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "target": "Exploit the complete dual product-defect lattice before absolute values, seeking a target bound, a strict equal-mode or unequal-mode gain, or a stronger complete-aggregate inverse theorem.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0821_full_proof_strategy.md",
+          "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/synthesis.md",
+          "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/reports/signed_alias_product_attack.md",
+          "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/reviews/conductor_round123_integerization_gram_adjudication.md",
+          "rounds/codex-managed/m9-m2-unbalanced-joint-stationary-lattice-gate/derivation_packet.md"
+        ],
+        "required_controls": [
+          "literal_Round123_near_alias_survivor",
+          "H0_K_normalization",
+          "double_character_Poisson_signs",
+          "stationary_points_and_Gaussian_units",
+          "dual_product_defect",
+          "dual_gradient_to_primal_alias",
+          "dual_diagonal_one_count",
+          "equal_mode_shifted_sector",
+          "unequal_mode_sector",
+          "mode_shift_alias_multiplicity",
+          "character_persistence",
+          "stationary_endpoint_and_error_ledger",
+          "signed_joint_aggregation",
+          "transform_involution_and_norm_scope",
+          "owner_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section analytic report.",
+          "A complete dual stationary formula or a precise statement of the first invalid transform seam.",
+          "A joint inequality, strict safe sector, inverse theorem, or exact self-return with capacity accounting.",
+          "A precise state recommendation."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-unbalanced-joint-stationary-lattice-gate/reports/double_poisson_product_defect_attack.md"
+      },
+      {
+        "id": "joint_stationary_lattice_hostile_audit",
+        "role": "seam_reviewer",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "target": "Hostilely audit every sign, saddle, profile, multiplicity, endpoint, diagonal correspondence, claimed cancellation, and transform-return seam in the joint stationary-lattice proposal.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0821_full_proof_strategy.md",
+          "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/synthesis.md",
+          "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/reviews/hostile_alias_curve_no_go_audit.md",
+          "rounds/codex-managed/m9-m2-dual-square-actual-symbol-transfer/reviews/conductor_round106_dual_character_stationarity.md",
+          "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/reviews/conductor_round117_involution_product_and_source.md",
+          "rounds/codex-managed/m9-m2-unbalanced-joint-stationary-lattice-gate/derivation_packet.md"
+        ],
+        "required_controls": [
+          "literal_Round123_near_alias_survivor",
+          "H0_K_normalization",
+          "double_character_Poisson_signs",
+          "stationary_points_and_Gaussian_units",
+          "dual_product_defect",
+          "dual_gradient_to_primal_alias",
+          "dual_diagonal_one_count",
+          "equal_mode_shifted_sector",
+          "unequal_mode_sector",
+          "mode_shift_alias_multiplicity",
+          "character_persistence",
+          "stationary_endpoint_and_error_ledger",
+          "signed_joint_aggregation",
+          "transform_involution_and_norm_scope",
+          "owner_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section hostile report.",
+          "A pass/fail seam table covering formulas, capacity, errors, and scope.",
+          "The maximal safe theorem or fatal correction and the exact smallest survivor.",
+          "A precise state recommendation."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-unbalanced-joint-stationary-lattice-gate/reports/joint_stationary_lattice_hostile_audit.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "literal_input",
+        "requirement": "The proof begins with the exact Round-123 shifted survivor and does not substitute a rectangular or coefficient-free model."
+      },
+      {
+        "id": "stationary_transform",
+        "requirement": "Both character-Poisson legs have exact mode signs, saddle ranges, Gaussian units, principal amplitudes, endpoint transitions, and summable aggregate errors."
+      },
+      {
+        "id": "lattice",
+        "requirement": "The product defect, dual gradient, primal alias, mode multiplicities, and diagonal correspondences are exact in every sign branch."
+      },
+      {
+        "id": "cancellation",
+        "requirement": "Any saving controls the complete actual-sign equal-mode and unequal-mode sectors before an outside norm and identifies what fails for unsigned or adversarial coefficients."
+      },
+      {
+        "id": "return",
+        "requirement": "Poisson or stationary inversion is not called a gain if its k-dual mode is exactly the original reciprocal alias or if a positive dual norm is stronger than the scalar target."
+      },
+      {
+        "id": "scope",
+        "requirement": "A flat-smooth strict-UNBAL result is not promoted to nonflat UNBAL, hard TOP, BAL, M9-M2, M9, the quarter theorem, or an exponent without every graph bridge."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "2b60eca238542d4f321a19c90f20163c6dd4cd7c60da6f324910b6db10b638c6",
+    "generated_at": "2026-08-23T02:15:32.715428+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

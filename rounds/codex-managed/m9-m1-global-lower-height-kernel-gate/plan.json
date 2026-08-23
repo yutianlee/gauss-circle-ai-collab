@@ -1,0 +1,240 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 121,
+    "round_type": "m9_m1_global_lower_height_kernel_gate",
+    "campaign_id": "m9-m1-global-lower-height-kernel-gate",
+    "title": "Global lower-radial profile-height and character-pairing gate",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "54f1c4ffd3a4ec9f166773ddb5f013a2fc7028b0a2586709f7379116a92da974",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 99,
+      "numerical_experimental_maximum_percent": 1,
+      "planned_numerical_percent": 0,
+      "literature_policy": "Use no new theorem unless a primary source matches the exact reciprocal phase, mod-four character, moving height, one-sided hard profile, floor perturbation, and pointwise real-X norm. Existing transform identities are barriers unless they produce a quantified inequality."
+    },
+    "target_obligations": [
+      "M9-M1-global-lower-radial-signed-estimate",
+      "M9-M1-global-radial-one-count-assembly",
+      "M9-M1-global-angular-radial-estimate"
+    ],
+    "frozen_target": {
+      "question": "After summing every exact dyadic denominator profile into one floor-perturbed height kernel before applying a norm, does mod-four denominator pairing yield a target-safe joint height inequality for the complete lower-radial antecedent, or what is the smallest exact survivor?",
+      "reference_formula": "B_low^+=sum_j sum_(h<=H_j) Phi(h/(H_j+1))/h sum_d chi_4(d)w_j(d)V_low(4R^2h^2/d^2)e(hX/d)=sum_(h,d)chi_4(d)A_X(h,d)V_low(4R^2h^2/d^2)e(hX/d)/h, target B_low^+<<R X^epsilon, R=X^(1/4).",
+      "quantities": [
+        "X large real, R=X^(1/4), Y=sqrt X, y=floor(sqrt X)",
+        "D_j=2^(-j)y and H_j=floor(D_j/R), with empty heights omitted",
+        "exact hard top and smooth profiles w_j, inactive bottom kept separate",
+        "A_X(h,d)=sum_j 1_(h<=H_j)Phi(h/(H_j+1))w_j(d)",
+        "fixed physical V_low from the proved radial one-count partition",
+        "mod-four pair F_X(4m+1)-F_X(4m+3) with zero-extended boundaries",
+        "amplitude seam and joint phase increment Delta_d=2X/(d(d+2))",
+        "all floors, profile stars, stationary stars, hard sample, product half tie, and both signs",
+        "accepted one-sided-divisor, Appell, product-wavelet, crossing, and conductor barriers",
+        "full lower range, including the part above the small-angle replacement threshold"
+      ]
+    },
+    "completion_criteria": [
+      "Reproduce the exact lower reciprocal antecedent and external R normalization.",
+      "Prove the finite profile-first aggregation with every floor and boundary owner retained.",
+      "Derive the mod-four denominator-pair identity with zero-extension and no lost endpoint.",
+      "Bound or exactly isolate the amplitude-variation seam, including hard and bottom jumps.",
+      "Keep the phase-increment height sum signed until a quantified inequality is obtained.",
+      "Audit resonant and nonresonant denominator pairs at the full R X^epsilon budget.",
+      "Distinguish any new kernel from the accepted one-sided Poisson, Appell, product-wavelet, and crossing returns.",
+      "Prove the complete lower target, a strict target-safe subpackage, a signed power saving, or a rigorous no-go with the smallest survivor.",
+      "State exactly what follows for GAR, blockwise M9-M1, M9-M2, endpoint uniformity, M9, and every exponent."
+    ],
+    "controls": [
+      "literal_lower_reciprocal_antecedent",
+      "external_R_normalization",
+      "global_profile_height_kernel",
+      "mod_four_pairing_identity",
+      "amplitude_seam_BV",
+      "phase_increment_joint_height_kernel",
+      "resonant_nonresonant_capacity",
+      "floor_star_hard_bottom_boundaries",
+      "old_return_map_nonduplication",
+      "unsigned_adversarial_control",
+      "full_lower_range_scope",
+      "one_count_downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "blind_lower_height_kernel_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "active",
+        "target": "Independently rederive the complete lower reciprocal antecedent, its exact profile-first and mod-four-paired kernels, and prove a bound, strict subpackage, or smallest survivor without using nonblind history.",
+        "context_files": [
+          "problems/gauss_circle.md",
+          "state/control_models.md",
+          "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "all strategy files",
+          "all Round-61 through Round-121 nonblind artifacts",
+          "all Round-121 sibling reports"
+        ],
+        "required_controls": [
+          "literal_lower_reciprocal_antecedent",
+          "external_R_normalization",
+          "global_profile_height_kernel",
+          "mod_four_pairing_identity",
+          "amplitude_seam_BV",
+          "phase_increment_joint_height_kernel",
+          "resonant_nonresonant_capacity",
+          "floor_star_hard_bottom_boundaries",
+          "unsigned_adversarial_control",
+          "full_lower_range_scope",
+          "one_count_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section statement-only report.",
+          "An exact one-count and paired-kernel derivation.",
+          "A complete bound, strict target-safe package, signed saving, or smallest exact survivor.",
+          "A promote, retain, revise, reject, or no-change recommendation."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/reports/blind_lower_height_kernel_rederivation.md"
+      },
+      {
+        "id": "literal_character_paired_height_kernel_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "active",
+        "target": "Formalize the exact full-profile height kernel, prove the amplitude seam, and attack the jointly signed mod-four phase-increment kernel by a capacity-explicit resonant/nonresonant or height-first inequality.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0821_full_proof_strategy.md",
+          "rounds/codex-managed/m9-m1-dual-r2-recombination/synthesis.md",
+          "rounds/codex-managed/m9-m1-lower-radial-phase-diagram/synthesis.md",
+          "rounds/codex-managed/m9-m1-lower-radial-small-angle-collapse/synthesis.md",
+          "rounds/codex-managed/m9-m1-top-block-signed-adjacent-odd-pairing/synthesis.md",
+          "rounds/codex-managed/m9-m1-one-sided-divisor-false-theta/synthesis.md",
+          "rounds/codex-managed/m9-m1-reciprocal-product-wavelet/synthesis.md",
+          "rounds/codex-managed/m9-m1-product-wavelet-local-discrepancy/synthesis.md",
+          "rounds/codex-managed/m9-m1-unmatched-crossing-fourier-modes/synthesis.md",
+          "rounds/codex-managed/m9-m1-direct-parent-minimax-gate/synthesis.md",
+          "rounds/codex-managed/m9-m1-gar-radial-interface-reconciliation/synthesis.md",
+          "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/derivation_packet.md"
+        ],
+        "required_controls": [
+          "literal_lower_reciprocal_antecedent",
+          "external_R_normalization",
+          "global_profile_height_kernel",
+          "mod_four_pairing_identity",
+          "amplitude_seam_BV",
+          "phase_increment_joint_height_kernel",
+          "resonant_nonresonant_capacity",
+          "floor_star_hard_bottom_boundaries",
+          "old_return_map_nonduplication",
+          "unsigned_adversarial_control",
+          "full_lower_range_scope",
+          "one_count_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section analytic report.",
+          "An exact amplitude/phase seam identity and capacity table.",
+          "A complete estimate, strict target-safe region, power saving, or exact return/no-go.",
+          "A precise state recommendation."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/reports/literal_character_paired_height_kernel_attack.md"
+      },
+      {
+        "id": "lower_height_kernel_hostile_audit",
+        "role": "seam_reviewer",
+        "access_mode": "selected_context",
+        "status": "active",
+        "target": "Hostilely audit the exact pairing, boundary and floor ledger, resonance capacity, false analogues, comparison with prior return maps, and every claimed implication of the global lower height-kernel route.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0821_full_proof_strategy.md",
+          "rounds/codex-managed/m9-m1-lower-radial-phase-diagram/synthesis.md",
+          "rounds/codex-managed/m9-m1-lower-radial-small-angle-collapse/synthesis.md",
+          "rounds/codex-managed/m9-m1-top-block-signed-adjacent-odd-pairing/synthesis.md",
+          "rounds/codex-managed/m9-m1-one-sided-divisor-false-theta/synthesis.md",
+          "rounds/codex-managed/m9-m1-reciprocal-product-wavelet/synthesis.md",
+          "rounds/codex-managed/m9-m1-product-wavelet-local-discrepancy/synthesis.md",
+          "rounds/codex-managed/m9-m1-unmatched-crossing-fourier-modes/synthesis.md",
+          "rounds/codex-managed/m9-m1-residual-upper-conductor-hybrid-energy/synthesis.md",
+          "rounds/codex-managed/m9-m1-direct-parent-minimax-gate/synthesis.md",
+          "rounds/codex-managed/m9-m1-gar-radial-interface-reconciliation/synthesis.md",
+          "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/derivation_packet.md"
+        ],
+        "required_controls": [
+          "literal_lower_reciprocal_antecedent",
+          "external_R_normalization",
+          "global_profile_height_kernel",
+          "mod_four_pairing_identity",
+          "amplitude_seam_BV",
+          "phase_increment_joint_height_kernel",
+          "resonant_nonresonant_capacity",
+          "floor_star_hard_bottom_boundaries",
+          "old_return_map_nonduplication",
+          "unsigned_adversarial_control",
+          "full_lower_range_scope",
+          "one_count_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section hostile report.",
+          "A pass/fail seam table and adversarial capacity controls.",
+          "The maximal safe theorem or the fatal correction and smallest survivor.",
+          "A precise state recommendation."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/reports/lower_height_kernel_hostile_audit.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "antecedent",
+        "requirement": "The positive reciprocal antecedent, lower radial multiplier, transform normalization, and conjugate frequency are exact."
+      },
+      {
+        "id": "one_count",
+        "requirement": "Every active profile, height floor, hard sample, and physical boundary occurs exactly once; the inactive bottom remains separate."
+      },
+      {
+        "id": "pairing",
+        "requirement": "The mod-four pair is an exact zero-extended identity, including the top and bottom leftover pairs."
+      },
+      {
+        "id": "amplitude",
+        "requirement": "Any BV estimate includes profile crossings, height cutoffs, the lower multiplier, and hard jumps."
+      },
+      {
+        "id": "phase",
+        "requirement": "The height sum remains signed through the phase-increment step; no termwise absolute-value gain is credited."
+      },
+      {
+        "id": "resonance",
+        "requirement": "All discrete resonances of the reciprocal phase are priced, including the threshold interface."
+      },
+      {
+        "id": "return",
+        "requirement": "An Appell, Poisson, wavelet, crossing, or conductor reformulation is not called a saving unless a new quantitative inequality is proved."
+      },
+      {
+        "id": "scope",
+        "requirement": "A subcritical block result does not close the full lower cutoff, and GAR is not confused with blockwise M9-M1 or the final M9 conjunction."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "54f1c4ffd3a4ec9f166773ddb5f013a2fc7028b0a2586709f7379116a92da974",
+    "generated_at": "2026-08-21T17:42:50.931043+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

@@ -1,0 +1,206 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "GC-W7-16-original-numerator-product-window-bound",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Original-variable numerator product-window bound at W=Y^(7/16)",
+        "status": "proved_internal",
+        "statement_tex": "Fix W=Y^(7/16), one literal M1 or M2 dyadic block d asymp D, |h| asymp L, one fixed moving-symbol stratum, and a real centre c asymp Y. In each random frequency cell the numerator interval has length T_0<<min(L,D/W). Sampled BV and geometric summation give L^(-1)min(T_0,||c/d||^(-1)) for M1 and the two shifted norms L^(-1)min(T_0,||c/(4d)+/-1/4||^(-1)) for M2. A real-centre integer-product window count and divisor bounds give total cell amplitude O_epsilon(DL^(-1)Y^epsilon). Since the signed band meets O(1+WL/D) cells, the complete triangular energy and the absolute signed off-diagonal satisfy C_i(c), |O_i| <<_epsilon (D^2/L^2+WD/L)Y^epsilon. Every lift, both signs, profiles, floors, hard top, stars, and the equal-ray diagonal are retained. At D=Y^(1/2), L=Y^(1/6), this is Y^(37/48+epsilon), a factor Y^(1/8) below the coefficient-blind Y^(43/48), but it is not the Y^(1/2) target and gives no new pointwise exponent.",
+        "dependencies": [
+          "M9-short-window-triangular-cluster-kernel",
+          "GC-W7-16-reduced-Farey-cluster-reduction"
+        ],
+        "implies": [
+          "GC-W7-16-actual-reduced-determinant-correlation"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/reports/actual_character_determinant_attack.md",
+            "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/reviews/hostile_round117_discovery_addendum.md",
+            "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/reviews/conductor_round117_actual_savings.md",
+            "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use this as the strongest proved complete fixed-block bound in the graded lane. Any further saving must act on the signed prescribed-centre product wave or couple cells; do not reinsert a reduced-ray or liftwise triangle."
+      },
+      {
+        "id": "GC-W7-16-bounded-lift-top-shell-curvature-saving",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Bounded-lift top reduced-denominator reciprocal-curvature saving",
+        "status": "proved_internal",
+        "statement_tex": "In the same W=Y^(7/16) literal determinant correlation, restrict both reduced denominators to b,b' asymp D, so |a|,|a'| asymp L and every complete lift sum has bounded length. Extend each finite-lift weight to all nonprimitive pairs before Mobius inversion. Put Q_*=min(D,D^2/(WL)) and lambda=YL/D^3. Weighted second-derivative summation of the phase -ca'/(kappa_i b') on every divisor progression, including the M1 quarter shifts, primitivity, triangular variation, endpoints, both signs, and kappa_2=4, gives |O_(i,B asymp D)| <<_epsilon D min(Q_*,Q_*sqrt(lambda)+lambda^(-1/2))Y^epsilon. At the minimax block this is Y^(35/48+epsilon), a factor Y^(1/6) below Y^(43/48), but still Y^(11/48) above target. The proof does not extend to B<D, where the lift length D/B is unbounded and transverse BV of the complete lift transform is open.",
+        "dependencies": [
+          "GC-W7-16-reduced-Farey-cluster-reduction"
+        ],
+        "implies": [
+          "GC-W7-16-actual-reduced-determinant-correlation"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/reports/actual_character_determinant_attack.md",
+            "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/reviews/hostile_round117_discovery_addendum.md",
+            "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/reviews/conductor_round117_actual_savings.md",
+            "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "A continuation must either control the long-lift B<D variation without losing D/B or save jointly over the O(L) numerator increments after the reciprocal q-sum."
+      },
+      {
+        "id": "GC-W7-16-determinant-half-shift-transform-obstruction",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Determinant half-shift transform, norm, and product-completion self-return",
+        "status": "proved_internal",
+        "statement_tex": "For the literal ratio phase f(p,q)=(c/kappa_i)(a/b-(a+p)/(b+q)), det Hess(f)=-(c/kappa_i)^2/(b+q)^4 and the exact Legendre phase is ca/(kappa_i b)+au+bv+(c/kappa_i)v/u. The M1 denominator character and M2 numerator character half-shift one dual coordinate but do not remove the stationary lattice. At B asymp sqrt(Y), the two-dimensional stationary amplitude is constant, the dual strip has B^2/W modes, and any coefficient-blind Cauchy, Plancherel, or large sieve after the transform contains the original B^4/(DLW)=Y^(43/48) diagonal; a second transform restores the primal ratio phase and strip. A fixed determinant has only O(1) comparable-shell points, so the long increment high-pass is transverse rather than a long fixed-fibre alternation. Cellwise numerator Poisson gives two different literal truncated product coefficients B_1(s;y)=sum_(d|s)chi_4(d)F_1(dy,d) and B_2(s;y)=sum_(rd=s)chi_4(r)F_2(4dy,d); both equal r_2(s)/4 only after deleting every truncation and profile. The M1 axial mode is target-safe, but the remaining endpoint packages and product wave self-return under inversion. Thus fixed-fibre alternation, sequential transforms followed by norms, sectorwise absolute values, and clean r_2 completion do not prove the target. This is a scoped method obstruction, not a lower bound for the actual correlation.",
+        "dependencies": [
+          "GC-W7-16-reduced-Farey-cluster-reduction"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/reports/blind_determinant_fibre_rederivation.md",
+            "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/reports/determinant_fibre_hostile_source_audit.md",
+            "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/reports/actual_character_determinant_attack.md",
+            "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/reviews/conductor_round117_involution_product_and_source.md",
+            "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Do not repeat a fixed-determinant high-pass, sequential one-variable B-processes, a two-dimensional transform followed by a coefficient-blind norm, or clean r_2 completion. Test a noninvertible signed estimate or coherent countermodel for the actual truncated product wave."
+      }
+    ],
+    "update": [
+      {
+        "id": "GC-W7-16-reduced-Farey-cluster-reduction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/reviews/conductor_round117_actual_savings.md",
+            "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/reviews/conductor_round117_involution_product_and_source.md"
+          ]
+        },
+        "next_action": "The literal correlation now has a complete original-variable Y^(37/48) bound and a bounded-lift top-shell Y^(35/48) bound at minimax. Use the exact determinant reduction only for a joint signed improvement; the transform-and-norm route is parked."
+      },
+      {
+        "id": "GC-W7-16-actual-reduced-determinant-correlation",
+        "dependencies_added": [
+          "GC-W7-16-original-numerator-product-window-bound",
+          "GC-W7-16-bounded-lift-top-shell-curvature-saving"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/reports/blind_determinant_fibre_rederivation.md",
+            "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/reports/actual_character_determinant_attack.md",
+            "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/reports/determinant_fibre_hostile_source_audit.md",
+            "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/reviews/hostile_round117_discovery_addendum.md",
+            "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The complete minimax block is now O(Y^(37/48+epsilon)); the bounded-lift B asymp D shell is O(Y^(35/48+epsilon)). The Y^(1/2) target still needs respectively Y^(13/48) and Y^(11/48). Test the exact prescribed-centre truncated divisor-product wave and the long-lift B<D variation seam by a noninvertible signed method."
+      },
+      {
+        "id": "GC-nonsubcoherent-actual-cluster-local-moment",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/reports/actual_character_determinant_attack.md",
+            "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/reports/determinant_fibre_hostile_source_audit.md",
+            "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The first actual complete-block saving is certified, but Y^(37/48) is still above the Y^(1/2) cluster target and yields no improved pointwise exponent. Continue only through the prescribed-centre truncated product-wave/UNBAL probe or a new joint signed inequality."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round117-fixed-determinant-long-character-highpass",
+        "reason": "At fixed determinant the primitive solutions advance by step 2(a,b), leaving only O(1) points in a comparable denominator shell. The long alternating increment progression is transverse to determinant fibres."
+      },
+      {
+        "id": "Round117-fibrewise-geometric-sum-from-lift-BV",
+        "reason": "Round-95 BV is in the lift variable g and does not imply transverse variation of the complete two-ray symbol. Only the bounded-lift B asymp D shell has the required finite expansion; lower shells remain open."
+      },
+      {
+        "id": "Round117-multiply-p-highpass-and-q-curvature-savings",
+        "reason": "The two one-variable estimates are orientations of the same determinant phase. The unit-order two-dimensional Hessian map restores the second dual range; even formally multiplying their best independent gains leaves Y^(2/3) at minimax."
+      },
+      {
+        "id": "Round117-two-dimensional-Bprocess-plus-norm-closes",
+        "reason": "The exact Legendre dual is another ratio phase and standard norms contain the unchanged Y^(43/48) diagonal. A second transform restores the primal phase, parity, and strip."
+      },
+      {
+        "id": "Round117-literal-truncated-product-equals-r2-over-four",
+        "reason": "The M1 and M2 product coefficients retain different divisor orientations, profiles, Vaaler factors, scale restrictions, and endpoint atoms. They become r_2(s)/4 only after deleting all literal truncations."
+      },
+      {
+        "id": "Round117-positive-product-wave-bounds-one-sided-offdiagonal",
+        "reason": "Numerator Poisson and its inverse preserve the full positive cell norm, not the one-sided off-diagonal after diagonal subtraction. The truncated coefficients need not be nonnegative."
+      },
+      {
+        "id": "Round117-Kloosterman-fraction-theorems-directly-apply",
+        "reason": "No separable inverse-modular form matches the real centre, coupled two-ray coefficients, variable triangular top, simultaneous determinant range, moving symbols, and hard endpoints. The audited source hypotheses fail before exponent substitution."
+      },
+      {
+        "id": "Round117-Y37-over48-is-the-cluster-target",
+        "reason": "The required fixed-block cluster bound is Y^(1/2+epsilon). The proved complete bound Y^(37/48+epsilon) remains Y^(13/48) too large and licenses no pointwise exponent improvement."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "GC-W7-16-actual-reduced-determinant-correlation",
+        "reason": "Two positive-power actual-phase savings are proved, but the Y^(1/2) target remains open on every hard block."
+      },
+      {
+        "id": "GC-nonsubcoherent-actual-cluster-local-moment",
+        "reason": "The complete local-moment target is not reached."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "Round 117 proves no all-block local moment strong enough to improve the internal pointwise exponent."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "The graded W=Y^(7/16) lane is not a proof of hard TOP, BAL, or UNBAL."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "Neither direct M1 physical parent is estimated by this local-moment lane."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "The analytic parents remain open."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain open."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "Its M9 hypothesis remains open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "No quarter theorem or new uniform exponent is proved."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 8,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 117 proves the first coefficient-sensitive savings in the W=Y^(7/16) determinant lane: a complete fixed-block Y^(37/48) bound and a bounded-lift top-shell Y^(35/48) bound at minimax. Independent blind and hostile audits certify the determinant charts, actual-symbol seams, and transform self-return. The Y^(1/2) target, local moment, M9 parents, and every exponent remain open."
+  }
+}

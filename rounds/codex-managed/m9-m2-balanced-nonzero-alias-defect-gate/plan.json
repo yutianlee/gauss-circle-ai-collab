@@ -1,0 +1,236 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 116,
+    "round_type": "m9_m2_balanced_nonzero_alias_defect_gate",
+    "campaign_id": "m9-m2-balanced-nonzero-alias-defect-gate",
+    "title": "Balanced half-shifted alias defect proof-design gate",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "6421d27cb531be922b11ec48b51002ba568f235d510d16ac28a7d84881d66dad",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 98,
+      "numerical_experimental_maximum_percent": 2,
+      "planned_numerical_percent": 0,
+      "literature_policy": "External large-sieve, B-process, spacing, or spectral results may be used only from primary sources after the literal transformed kernel and every theorem hypothesis are matched. Structural analogy has no proof status."
+    },
+    "target_obligations": [
+      "M9-M2-balanced-double-far-oscillatory-remainder",
+      "M9-M2-balanced-double-far-actual-energy",
+      "M9-M2-smooth-balanced-quarter-packet-estimate"
+    ],
+    "frozen_target": {
+      "question": "Does the Round-115 zero-subtracted double-far remainder admit an explicit joint signed half-shifted-alias or local-energy inequality of total cost O(L^3 X^epsilon), after retaining the literal gcd masks, slanted symbols, determinant projector, full shift family, and fixed physical block; or can the proposed one-alias defect mechanism be rigorously parked with its smallest surviving kernel named?",
+      "reference_formula": "R_B^osc=sum_df a_B^<(h,k) conjugate(a_B^<(h',k')) [e(R(sqrt(hk)-sqrt(h'k')))-1], with R=sqrt X asymp L^3, h,k,h',k' asymp L, |h'k'-hk|>L, and |hk'-h'k|>L. In increments h'=h+2s and k'=k+q the character is e(s/2). For the oscillatory summand, formal Poisson in s has positive half-integer alias lambda=1/2-m, stationary point x=h'=X(k+q)/lambda^2, dual phase R sqrt(hk)-X(k+q)/(2lambda)-lambda h/2. With lambda_0=R sqrt(k/h), this equals -h(lambda-lambda_0)^2/(2lambda)-Xq/(2lambda). The round must make this formal chart literal, price its errors and norms, and determine whether it yields the missing factor L.",
+      "quantities": [
+        "X>=4096 real, R=sqrt X, persistent j=1, L asymp R^(1/3), and 1<=K/L<=16",
+        "one fixed physical block B with the exact Round-113 real slanted symbol, floors, tapers, stars, crossings, and support",
+        "a_B^<(h,k)=chi_4(h) eta(gcd(h,k)/(sqrt L/2)) A_B(h,k)",
+        "double-far gates |Delta|=|h'k'-hk|>L and |rho|=|hk'-h'k|>L",
+        "capacity_before L^4, claimed_gain one factor L, target and survivor capacity L^3",
+        "the phase-free term is already owned and may be subtracted exactly once",
+        "no residuewise, shiftwise, divisorwise, aliaswise, or shellwise absolute value may be hidden",
+        "any stationary-phase or Poisson formula must retain boundary, gcd-expansion, gate-crossing, and nonstationary errors"
+      ]
+    },
+    "completion_criteria": [
+      "Derive a literal finite half-shifted alias representation, or identify the first exact obstruction caused by the gcd mask, sharp gates, support crossings, or Poisson normalization.",
+      "Verify the stationary point, dual phase, square-completed defect phase, and exact images of both double-far gates, with all constants and alias ranges.",
+      "State an explicit signed inequality whose left side contains the complete zero-subtracted remainder and whose right side exposes the precise alias norm or spacing quantity to be bounded.",
+      "Prove the L^3 target, a target-safe strict subrange, a positive-power saving, or a rigorous no-go for a named class of one-alias/large-sieve arguments; do not park BAL from a vague failure to find a proof.",
+      "Audit the reciprocal q-frequency X/(2lambda), the near-hyperbola resonance count, the lambda-defect oscillation, and every Cauchy or large-sieve factor against the L^3 budget.",
+      "Demonstrate why the proposed mechanism does not also prove the false arbitrary-coefficient analogue, or record that it is coefficient-blind and insufficient.",
+      "Do not claim BAL, any M2 parent, M9-M1, endpoint uniformity, M9, or a new exponent unless the complete graph implication is proved."
+    ],
+    "controls": [
+      "literal_half_shift_poisson_legality",
+      "gcd_expansion_and_character_progressions",
+      "stationary_alias_range_and_amplitude",
+      "dual_phase_square_completion",
+      "radial_and_determinant_gate_images",
+      "reciprocal_q_frequency_resonance_count",
+      "signed_alias_norm_without_l1",
+      "large_sieve_spacing_and_diagonal_cost",
+      "boundary_and_nonstationary_errors",
+      "actual_symbol_vs_arbitrary_coefficients",
+      "fixed_block_and_owner_scope",
+      "critical_j1_and_exact_square_j2_boundary",
+      "external_theorem_hypothesis_fit",
+      "linear_vs_energy_capacity",
+      "downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "blind_half_shift_alias_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "active",
+        "target": "Independently derive the half-shifted alias chart for the supplied literal zero-subtracted remainder, including both far gates and the exact alias capacity, then either state a lawful L^3 inequality or prove the first named obstruction.",
+        "context_files": [
+          "problems/gauss_circle.md",
+          "state/control_models.md",
+          "rounds/codex-managed/m9-m2-balanced-nonzero-alias-defect-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "all strategy files",
+          "the Round-116 derivation packet and conductor candidate",
+          "all Round-114 and Round-115 reports",
+          "all Round-116 sibling reports"
+        ],
+        "required_controls": [
+          "literal_half_shift_poisson_legality",
+          "gcd_expansion_and_character_progressions",
+          "stationary_alias_range_and_amplitude",
+          "dual_phase_square_completion",
+          "radial_and_determinant_gate_images",
+          "reciprocal_q_frequency_resonance_count",
+          "signed_alias_norm_without_l1",
+          "large_sieve_spacing_and_diagonal_cost",
+          "boundary_and_nonstationary_errors",
+          "actual_symbol_vs_arbitrary_coefficients",
+          "fixed_block_and_owner_scope",
+          "critical_j1_and_exact_square_j2_boundary",
+          "linear_vs_energy_capacity",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section statement-only report.",
+          "The exact alias chart and gate images, or the first failed literal seam.",
+          "An explicit candidate inequality with capacity before and after every norm step.",
+          "A promote, retain, revise, reject, or no-change recommendation."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-balanced-nonzero-alias-defect-gate/reports/blind_half_shift_alias_rederivation.md"
+      },
+      {
+        "id": "literal_alias_local_energy_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "active",
+        "target": "Make the conductor half-shift alias defect chart literal and use it to prove the strongest signed local-energy or reciprocal-frequency large-sieve estimate available at the exact L^3 budget, or isolate the first irreducible alias norm.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0821_full_proof_strategy.md",
+          "rounds/codex-managed/m9-m2-balanced-double-far-shifted-divisor-fork/synthesis.md",
+          "rounds/codex-managed/m9-m2-balanced-double-far-shifted-divisor-fork/reviews/conductor_round115_identity_and_zero_mode.md",
+          "rounds/codex-managed/m9-m2-balanced-nonzero-alias-defect-gate/derivation_packet.md",
+          "rounds/codex-managed/m9-m2-balanced-nonzero-alias-defect-gate/candidates/conductor_half_shift_alias_defect.md"
+        ],
+        "required_controls": [
+          "literal_half_shift_poisson_legality",
+          "gcd_expansion_and_character_progressions",
+          "stationary_alias_range_and_amplitude",
+          "dual_phase_square_completion",
+          "radial_and_determinant_gate_images",
+          "reciprocal_q_frequency_resonance_count",
+          "signed_alias_norm_without_l1",
+          "large_sieve_spacing_and_diagonal_cost",
+          "boundary_and_nonstationary_errors",
+          "actual_symbol_vs_arbitrary_coefficients",
+          "fixed_block_and_owner_scope",
+          "critical_j1_and_exact_square_j2_boundary",
+          "external_theorem_hypothesis_fit",
+          "linear_vs_energy_capacity",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section discovery report.",
+          "A literal transformed kernel with every amplitude, alias range, and error priced.",
+          "The best proved target, subrange, saving, or precisely named survivor.",
+          "A precise state recommendation."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-balanced-nonzero-alias-defect-gate/reports/literal_alias_local_energy_attack.md"
+      },
+      {
+        "id": "alias_large_sieve_hostile_audit",
+        "role": "barrier_no_go",
+        "access_mode": "selected_context",
+        "status": "active",
+        "target": "Hostilely audit the half-shift alias defect mechanism: derive its exact Cauchy/large-sieve diagonal and spacing costs, test near-hyperbola and resonant reciprocal-frequency controls, and decide whether the route gains a factor L or self-returns.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0821_full_proof_strategy.md",
+          "rounds/codex-managed/m9-m2-balanced-double-far-shifted-divisor-fork/reports/literal_dispersion_attack.md",
+          "rounds/codex-managed/m9-m2-balanced-double-far-shifted-divisor-fork/reports/actual_symbol_main_term_hostile.md",
+          "rounds/codex-managed/m9-m2-balanced-double-far-shifted-divisor-fork/synthesis.md",
+          "rounds/codex-managed/m9-m2-balanced-nonzero-alias-defect-gate/derivation_packet.md",
+          "rounds/codex-managed/m9-m2-balanced-nonzero-alias-defect-gate/candidates/conductor_half_shift_alias_defect.md"
+        ],
+        "required_controls": [
+          "literal_half_shift_poisson_legality",
+          "gcd_expansion_and_character_progressions",
+          "stationary_alias_range_and_amplitude",
+          "dual_phase_square_completion",
+          "radial_and_determinant_gate_images",
+          "reciprocal_q_frequency_resonance_count",
+          "signed_alias_norm_without_l1",
+          "large_sieve_spacing_and_diagonal_cost",
+          "boundary_and_nonstationary_errors",
+          "actual_symbol_vs_arbitrary_coefficients",
+          "fixed_block_and_owner_scope",
+          "critical_j1_and_exact_square_j2_boundary",
+          "external_theorem_hypothesis_fit",
+          "linear_vs_energy_capacity",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section hostile report.",
+          "A pass/fail table for literal legality, alias geometry, resonance count, norm cost, source fit, owners, and downstream scope.",
+          "A rigorous named no-go if the candidate self-returns, or the exact theorem still needed if it does not.",
+          "A precise state recommendation."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-balanced-nonzero-alias-defect-gate/reports/alias_large_sieve_hostile_audit.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "literal_legality",
+        "requirement": "Poisson or stationary phase is applied only after the gcd, parity, gates, and support are decomposed into lawful amplitudes, with every error retained."
+      },
+      {
+        "id": "alias_algebra",
+        "requirement": "The half-integer alias, stationary point, dual phase, square completion, and both gate images agree exactly in every derivation."
+      },
+      {
+        "id": "norm",
+        "requirement": "The signed alias family remains assembled until a proved inequality; aliaswise or shiftwise l1 is explicitly charged."
+      },
+      {
+        "id": "capacity",
+        "requirement": "The Poisson amplitude, alias count, reciprocal-frequency resonance count, Cauchy factor, and large-sieve diagonal are priced against L^3."
+      },
+      {
+        "id": "actual_symbol",
+        "requirement": "Any saving uses a literal character, symbol, gcd, or gate property unavailable to an arbitrary bounded coefficient array."
+      },
+      {
+        "id": "source",
+        "requirement": "Any external result is primary-source matched to the exact dimensions, spacing, coefficient norm, real-X uniformity, and endpoint range."
+      },
+      {
+        "id": "owners",
+        "requirement": "The phase-free mode and both Round-114 corridors are used at most once; hard TOP, UNBAL, M1, and j=2 are not imported."
+      },
+      {
+        "id": "scope",
+        "requirement": "A transformed identity, reciprocal resonance count, or named mechanism obstruction is not reported as the balanced estimate without the complete L^3 bound."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "6421d27cb531be922b11ec48b51002ba568f235d510d16ac28a7d84881d66dad",
+    "generated_at": "2026-08-21T14:28:28.995602+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

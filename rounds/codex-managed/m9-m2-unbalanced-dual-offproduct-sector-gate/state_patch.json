@@ -1,0 +1,215 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-unbalanced-dual-block-energy-one-sided-reduction",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Endpoint-complete full-character block-energy and one-sided UNBAL reduction",
+        "status": "proved_internal",
+        "statement_tex": "For the literal Round-124 zero-extended dual rows put B_(p,n)=sum_(0<=a<H)b_(p,n+a), E_eq=C_H sum_(p,n)|B_(p,n)|^2, and E_chi=C_H sum_n|sum_(p>0 odd)chi_4(p)B_(p,n)|^2. Exact Fejer expansion gives E_eq=D_0+S_eq^(nonzero), E_chi=D_0+S_eq^(nonzero)+S_neq, hence S_off=E_chi-D_0 and S_neq=E_chi-E_eq. Since E_chi,D_0>=0 and D_0<<X^(1/2), S_off>=-D_0 and the absolute square-target estimate for S_off is equivalent to the single upper bound E_chi<<_epsilon X^(1/2+epsilon). Combining with Round 124 gives V_(M,H)=E_chi-Q_safe+O(1), so any fixed-power physical violation is positive and is exactly an excess of E_chi modulo proved packages. This is a sign localization and target-equivalent reduction, not the missing upper estimate.",
+        "dependencies": [
+          "M9-M2-unbalanced-double-character-stationary-offdiagonal-reduction",
+          "M9-M2-character-factor",
+          "H4-Phi-regularity"
+        ],
+        "implies": [
+          "M9-M2-smooth-unbalanced-three-quarter-estimate"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/reports/blind_dual_offproduct_sector_rederivation.md",
+            "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/reports/actual_symbol_dual_sector_attack.md",
+            "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/reports/dual_offproduct_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/reviews/conductor_round125_dual_sector_adjudication.md",
+            "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "The exact parked flat-smooth survivor is E_chi. Reopen only for a genuinely joint actual-character upper bound before any sectorwise norm, or for an endpoint-complete stronger inverse theorem."
+      },
+      {
+        "id": "M9-M2-unbalanced-dual-sector-curvature-no-go",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Dual-sector coefficient obstruction, curvature ledger, and half-alias repair",
+        "status": "proved_internal",
+        "statement_tex": "For the same rows, the complete fixed-mode energy satisfies E_eq<<_epsilon X^epsilon min(X/D,D^2/L)=X^(1/2+epsilon)min(H,Q), where H=ceil(X^(1/2)/D), Q=D^2/(Lsqrt X), and both H,Q tend to infinity. Thus the reciprocal Q deficit is operative only for Q<=H; the uniform elementary loss is min(H,Q). Two identical long smooth rows in opposite chi_4 classes give exact coefficient controls with |S_eq^(nonzero)|,|S_neq|>>H D_0 but S_off=-D_0, so predetermined coefficient-blind sector bounds are fixed-power stronger than the target. On strict interiors the k-B-process has coefficient -2i/p, returned profile W(Xd/(DM))q_L((X/M)p), and Q dual labels, while a second B-process self-returns. Odd-p coherence requires E_d^*=M(d'-d)-2Add' and phase factor (-1)^A, not the incomplete 4a lattice. At fixed (n,d,d') the p-window has length O(1/H), and summing n first leaves an unresolved moving floor overlap. Hence cellwise Cauchy, a separate positive-row norm, re-Poissonization, and the proposed exact/far/near second-stage split do not prove the target. The stationary statements are principal-interior diagnostics, not a complete hard-block transform or a signed lower bound.",
+        "dependencies": [
+          "M9-M2-unbalanced-dual-block-energy-one-sided-reduction",
+          "M9-M2-unbalanced-joint-stationary-principal-return",
+          "M9-M2-character-factor"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/candidates/conductor_curvature_cell_reciprocal_packet.md",
+            "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/reports/blind_dual_offproduct_sector_rederivation.md",
+            "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/reports/actual_symbol_dual_sector_attack.md",
+            "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/reports/dual_offproduct_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/reviews/conductor_round125_dual_sector_adjudication.md",
+            "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/candidates/conductor_curvature_cell_reciprocal_packet.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Freeze separate-sector positivity, cellwise norms, a universal Q-only ledger, the 4a alias lattice, and another one-variable B-process. Reopen only inside a complete actual-character inequality for E_chi."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-smooth-unbalanced-three-quarter-estimate",
+        "dependencies_added": [
+          "M9-M2-unbalanced-dual-block-energy-one-sided-reduction"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/reports/blind_dual_offproduct_sector_rederivation.md",
+            "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/reports/actual_symbol_dual_sector_attack.md",
+            "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/reports/dual_offproduct_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The exact endpoint-complete survivor is the positive full-character block energy E_chi. The negative side is target-safe, but its upper bound remains open. This UNBAL mechanism is parked pending a genuinely joint actual-character inequality."
+      },
+      {
+        "id": "M9-M2-unbalanced-double-character-stationary-offdiagonal-reduction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/reviews/conductor_round125_dual_sector_adjudication.md",
+            "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Round 125 recombines the two dual sectors exactly as S_off=E_chi-D_0 and shows only the positive E_chi upper bound remains. Predetermined sectorwise norms are overstrong."
+      },
+      {
+        "id": "M9-M2-unbalanced-joint-stationary-principal-return",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/reports/actual_symbol_dual_sector_attack.md",
+            "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/reports/dual_offproduct_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/reviews/conductor_round125_dual_sector_adjudication.md"
+          ]
+        },
+        "next_action": "The later rowwise curvature chart also self-returns and has the corrected half-integer alias lattice. Freeze invertible transforms and positive-row norms unless embedded in a complete E_chi inequality."
+      },
+      {
+        "id": "M9-M2-unbalanced-integer-centred-shifted-alias-reduction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/reviews/conductor_round125_dual_sector_adjudication.md",
+            "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Rounds 124-125 convert the physical survivor to one positive endpoint-complete dual block energy modulo safe packages. The negative tail is safe; only the actual-character upper bound is open."
+      },
+      {
+        "id": "M9-M2",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Round 125 parks the flat-smooth UNBAL mechanism at E_chi with no upper contraction; all other UNBAL owners also remain. Rotate to a new noninvertible hard TOP or BAL actual-symbol mechanism."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round125-separate-dual-sector-bounds-are-target-equivalent",
+        "reason": "The exact identities S_eq^(nonzero)=E_eq-D_0 and S_neq=E_chi-E_eq show that the entire positive fixed-mode energy can cancel between the sectors."
+      },
+      {
+        "id": "Round125-Fejer-positivity-upper-bounds-the-survivor",
+        "reason": "Positivity proves only S_off>=-D_0. It gives no upper bound for the full-character energy E_chi."
+      },
+      {
+        "id": "Round125-coefficient-blind-sectorization-loses-no-power",
+        "reason": "Two opposite-character identical smooth rows make both separate sectors of size at least H D_0 while their sum is -D_0."
+      },
+      {
+        "id": "Round125-universal-Q-capacity-deficit",
+        "reason": "When Q>H, the original H-term triangle is smaller than the reciprocal Q ledger. The best elementary loss is min(H,Q)."
+      },
+      {
+        "id": "Round125-Q-crossings-are-always-Q-nonempty-primal-cells",
+        "reason": "If K/D<1, the derivative crosses Q>H dual labels across only H primal spacings; the labels are not independent nonempty lattice cells."
+      },
+      {
+        "id": "Round125-4a-defect-classifies-all-odd-p-coherence",
+        "reason": "Odd-p sums are coherent modulo one-half integers. The 4a lattice retains only even A and misses exact odd half-integer aliases."
+      },
+      {
+        "id": "Round125-fixed-n-d-dprime-has-length-L-p-sum",
+        "reason": "The literal simultaneous saddle selectors leave a p-window of length D^2H/X asymptotic to 1/H, not L."
+      },
+      {
+        "id": "Round125-moving-overlap-floor-error-is-absolutely-target-safe",
+        "reason": "After summing n first, the exact p-dependent overlap has moving floor and hard-face jumps; no target-safe aggregate error ledger is proved."
+      },
+      {
+        "id": "Round125-principal-reciprocal-packet-is-endpoint-complete",
+        "reason": "Hard block faces, endpoint saddles, Fresnel transitions, inactive modes, support entries and exits, and aggregate errors are not included."
+      },
+      {
+        "id": "Round125-second-B-process-supplies-a-saving",
+        "reason": "On strict interiors the second reciprocal B-process restores the original phase, coefficient, profile, and selector."
+      },
+      {
+        "id": "Round125-positive-fixed-row-bound-proves-flat-UNBAL",
+        "reason": "The complete bound is X^(1/2+epsilon)min(H,Q), and both H and Q tend to infinity; moreover E_eq is stronger than the target E_chi."
+      },
+      {
+        "id": "Round125-one-sided-reduction-proves-flat-or-complete-UNBAL",
+        "reason": "The required positive upper bound for E_chi is unproved, and every nonflat, hard, sharp, clipped, starred, arithmetic, and transition owner remains separate."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M2-smooth-unbalanced-three-quarter-estimate",
+        "reason": "The full-character block energy has no X^(1/2+epsilon) upper bound."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Hard TOP, BAL, flat-smooth and all other UNBAL owners remain open."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "Round 125 concerns only one M2 flat-smooth owner; both direct M1 parents and the lower GAR alternative remain open."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "No hard, sharp, clipped, starred, arithmetic, or transition endpoint is closed."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, complete M9-M2, and endpoint uniformity remain open."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "Its full M9 hypothesis remains open."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The round proves a sign localization and method obstruction but no complete pointwise estimate below the accepted one-third frontier."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The quarter target still lacks complete M9-M2, an M1 route, endpoint uniformity, and the final bridge."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 6,
+    "idea_quality_score": 7,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 125 proves that the complete dual survivor has a target-safe negative side and is target-equivalent to one positive endpoint-complete actual-character block energy. It gives a complete over-target fixed-row curvature bound, a sharp coefficient-blind sectorization obstruction, the corrected half-integer alias lattice, and an exact first invalid seam in the proposed far decomposition. No upper contraction, UNBAL parent, M9 parent, or exponent closes."
+  }
+}

@@ -2,7 +2,7 @@
   "schema_version": 1,
   "research_program": "gauss-circle-proof-development",
   "conductor": "Codex",
-  "active_round": 113,
+  "active_round": null,
   "archive_note": "Rounds 1-25 are documented in their campaign plan, synthesis, state patch, and historical project summary artifacts. This compact ledger retains the immediately active research chain after a repair of the derived ledger file in Round 28.",
   "rounds": [
     {
@@ -3578,6 +3578,825 @@
         "exponent_change": false
       },
       "next_round": 114
+    },
+    {
+      "round_index": 114,
+      "campaign_id": "m9-m2-balanced-literal-energy-connector-fork",
+      "type": "m9_m2_balanced_literal_energy_connector_fork",
+      "status": "closed",
+      "objective": "Derive the exact full-product energy of the literal balanced packet, validate or reject the mean-square and ray-defect connectors, and prove a target-safe branch, strict saving, or rigorous mechanism obstruction.",
+      "tasks": [
+        {"id": "blind_literal_energy_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean_after_escape_repair"},
+        {"id": "actual_symbol_connector_attack", "role": "discovery", "status": "completed_clean_after_escape_repair"},
+        {"id": "mean_square_ray_hostile_audit", "role": "barrier_no_go", "status": "completed_clean_after_escape_repair"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 95,
+        "numerical_experimental_maximum_percent": 5,
+        "planned_numerical_percent": 0
+      },
+      "exit_gates": [
+        "literal_packet_and_two_lift_energy",
+        "equal_full_product_diagonal",
+        "full_symbol_mean_square_connector",
+        "radial_and_determinant_corridors",
+        "ray_identity_and_threshold_interface",
+        "actual_symbol_coefficient_adversary",
+        "owner_norm_and_downstream_scope",
+        "statement_only_and_hostile_gates",
+        "conductor_decision"
+      ],
+      "starting_graph_sha256": "411adc0c93d2451dfc1235840f27063b3ef4869d0c67aebfbbc74fe9ef04387c",
+      "closing_assessment": {
+        "decision": "promote_full_product_double_corridor_reduction_and_mean_square_connector",
+        "graph_mutation": true,
+        "main_result": "The literal packet has full-product diagonal hk=h'k', with O(L^2) energy. The width-L full-product and determinant corridors are each target-safe at O(L^3), and the square-root determinant identity is exact. The old full-symbol mean square implies the balanced packet but not hard TOP. The remaining double-far actual signed shifted-divisor energy has L^4 coefficient-blind capacity and is open.",
+        "resulting_graph_sha256": "6eb6eb5941e6d4720294c6b0890356113700db3201cf7c19337b96fb5ed47155",
+        "exponent_change": false
+      },
+      "next_round": 115
+    },
+    {
+      "round_index": 115,
+      "campaign_id": "m9-m2-balanced-double-far-shifted-divisor-fork",
+      "type": "m9_m2_balanced_double_far_shifted_divisor_fork",
+      "status": "closed",
+      "objective": "Expose the exact literal chi_4-twisted shifted-divisor coefficient in the Round-114 double-far energy and either save one factor L by a noninvertible actual-symbol mechanism or prove an equal-capacity actual-symbol obstruction.",
+      "tasks": [
+        {"id": "blind_shifted_divisor_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean_after_lf_normalization"},
+        {"id": "literal_dispersion_attack", "role": "discovery", "status": "completed_clean_after_lf_normalization"},
+        {"id": "actual_symbol_main_term_hostile", "role": "barrier_no_go", "status": "completed_clean_after_hostile_audit_and_lf_normalization"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 98,
+        "numerical_experimental_maximum_percent": 2,
+        "planned_numerical_percent": 0
+      },
+      "exit_gates": [
+        "literal_divisor_pair_and_increment_charts",
+        "parity_character_and_half_shifted_aliases",
+        "phase_free_actual_symbol_main_term",
+        "inner_vs_outer_cancellation",
+        "fejer_normalization_and_owner_amplification",
+        "critical_outer_transform_and_hessian_scope",
+        "external_source_hypothesis_fit",
+        "statement_only_and_hostile_gates",
+        "conductor_decision"
+      ],
+      "starting_graph_sha256": "6eb6eb5941e6d4720294c6b0890356113700db3201cf7c19337b96fb5ed47155",
+      "closing_assessment": {
+        "decision": "promote_phase_free_mode_and_owner_amplification_obstruction_retain_oscillatory_remainder",
+        "graph_mutation": true,
+        "main_result": "The fully assembled phase-free double-far actual-symbol mode is O(L^3 X^epsilon), but the cancellation is lost under internal absolute values. The actual target is reduced exactly to a zero-subtracted oscillatory remainder. Existing shortened Fejer owners, the critical outer B-process, and continuous Hessian size do not certify the required factor-L saving; the half-shifted nonzero aliases remain open.",
+        "resulting_graph_sha256": "6421d27cb531be922b11ec48b51002ba568f235d510d16ac28a7d84881d66dad",
+        "exponent_change": false
+      },
+      "next_round": 116
+    },
+    {
+      "round_index": 116,
+      "campaign_id": "m9-m2-balanced-nonzero-alias-defect-gate",
+      "type": "m9_m2_balanced_nonzero_alias_defect_gate",
+      "status": "closed",
+      "objective": "Make the Round-115 half-shifted alias mechanism literal through the gcd progressions and either prove the L^3 bound, a target-safe subrange or saving, or a rigorous no-go naming the smallest signed survivor.",
+      "tasks": [
+        {
+          "id": "blind_half_shift_alias_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed_clean_after_control_character_repair"
+        },
+        {
+          "id": "literal_alias_local_energy_attack",
+          "role": "discovery",
+          "status": "completed_clean"
+        },
+        {
+          "id": "alias_large_sieve_hostile_audit",
+          "role": "barrier_no_go",
+          "status": "completed_clean_after_final_consistency_check"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 98,
+        "numerical_experimental_maximum_percent": 2,
+        "planned_numerical_percent": 0
+      },
+      "exit_gates": [
+        "literal_divisor_progressive_alias_legality",
+        "stationary_phase_and_gate_images",
+        "aggregate_boundary_and_nonstationary_errors",
+        "reciprocal_frequency_resonance_and_capacity",
+        "large_sieve_diagonal_and_cluster_spacing",
+        "second_B_process_involution",
+        "positive_row_energy_scope",
+        "source_and_downstream_scope",
+        "statement_only_and_hostile_gates",
+        "conductor_decision"
+      ],
+      "starting_graph_sha256": "6421d27cb531be922b11ec48b51002ba568f235d510d16ac28a7d84881d66dad",
+      "closing_assessment": {
+        "decision": "promote_literal_alias_reduction_and_scoped_self_return_obstruction_park_one_alias_mechanism",
+        "graph_mutation": true,
+        "main_result": "The literal alias lattice is divisor-progressive, with target-safe aggregate transform errors. Aliaswise l1, reciprocal-frequency counting alone, spacing-only large sieve, a second B-process, and the proposed row energy cannot supply the missing factor L. The complete signed bulk kernel and BAL remain open.",
+        "resulting_graph_sha256": "a27a89fd4e688cae719a28fec8f48dd74190bafb64d0345c590f1caadc2805d9",
+        "exponent_change": false
+      },
+      "next_round": 117
+    },
+    {
+      "round_index": 117,
+      "campaign_id": "gc-w7-16-actual-determinant-fibre-gate",
+      "type": "gc_w7_16_actual_determinant_fibre_gate",
+      "status": "closed",
+      "objective": "Exploit the literal W=Y^(7/16) determinant centre phase and M1/M2 character high-passes to prove the Y^(1/2) target, a target-safe subrange, a quantified actual-symbol saving, or a rigorous mechanism obstruction.",
+      "tasks": [
+        {"id": "blind_determinant_fibre_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean_after_control_character_repair"},
+        {"id": "actual_character_determinant_attack", "role": "discovery", "status": "completed_clean_with_hostile_addendum"},
+        {"id": "determinant_fibre_hostile_source_audit", "role": "source_auditor", "status": "completed_clean_after_control_character_repair"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 98,
+        "numerical_experimental_maximum_percent": 2,
+        "planned_numerical_percent": 0
+      },
+      "exit_gates": [
+        "literal_reduced_ray_and_equal_lift_diagonal",
+        "m1_m2_character_placement_and_factor_four",
+        "increment_determinant_and_one_sided_orientation",
+        "product_window_full_block_bound",
+        "bounded_lift_top_shell_curvature",
+        "gcd_congruence_and_multiplicity",
+        "two_dimensional_transform_and_norm_capacity",
+        "product_return_and_source_scope",
+        "statement_only_and_hostile_gates",
+        "conductor_decision"
+      ],
+      "starting_graph_sha256": "a27a89fd4e688cae719a28fec8f48dd74190bafb64d0345c590f1caadc2805d9",
+      "closing_assessment": {
+        "decision": "promote_complete_product_window_and_top_shell_curvature_savings_with_transform_obstruction",
+        "graph_mutation": true,
+        "main_result": "The complete literal minimax block improves from Y^(43/48) to Y^(37/48), and the bounded-lift B asymp D shell improves to Y^(35/48). The exact half-shifted two-dimensional transform and clean product completion self-return under standard norms. The Y^(1/2) determinant target and every pointwise exponent remain open.",
+        "resulting_graph_sha256": "d4e626708a04680cc97b043835466948204c6e123a1dc9fd569b50377349feeb",
+        "exponent_change": false
+      },
+      "next_round": 118
+    },
+    {
+      "round_index": 118,
+      "campaign_id": "m9-m2-unbalanced-prescribed-centre-wave-gate",
+      "type": "m9_m2_unbalanced_prescribed_centre_wave_gate",
+      "status": "closed",
+      "objective": "Test the literal smooth unbalanced M2 prescribed-centre truncated-divisor wave for the quarter target, a target-safe subrange or saving, a rigorous coherent countermodel, or a scoped no-go with the smallest signed survivor.",
+      "tasks": [
+        {"id": "blind_prescribed_centre_wave_probe", "role": "statement_only_blind_rederiver", "status": "completed_clean_with_square_sector_seam"},
+        {"id": "literal_unbalanced_wave_attack", "role": "discovery", "status": "completed_clean_with_hostile_addendum"},
+        {"id": "prescribed_centre_wave_hostile_source_audit", "role": "source_auditor", "status": "completed_clean_with_discovery_addendum"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 98,
+        "numerical_experimental_maximum_percent": 2,
+        "planned_numerical_percent": 0
+      },
+      "exit_gates": [
+        "literal_wave_and_product_reciprocal_equivalence",
+        "real_centre_product_window_capacity",
+        "reciprocal_curvature_and_character_parity",
+        "uniform_same_residue_run_control",
+        "integer_phase_one_square_sector",
+        "exact_centre_tie_and_arithmetic_controls",
+        "complement_and_endpoint_scope",
+        "source_hypothesis_audit",
+        "statement_only_and_hostile_gates",
+        "conductor_decision"
+      ],
+      "starting_graph_sha256": "d4e626708a04680cc97b043835466948204c6e123a1dc9fd569b50377349feeb",
+      "closing_assessment": {
+        "decision": "promote_flat_wave_envelope_and_scoped_coherent_countermodel_no_go_retain_joint_selector",
+        "graph_mutation": true,
+        "main_result": "The flat wave obeys min(D/L,sqrt(XL/D)+sqrt(X/(LD)))X^epsilon, saving over capacity only when delta-ell>1/3 but never reaching the strict quarter target. A uniformly repaired same-residue central run and the integer-centre interior phase-one sector are target-safe. The complete joint selector, endpoint packages, all M9 parents, and every exponent remain open.",
+        "resulting_graph_sha256": "c3498daad3bdceb7c69c0e47a616e03ebfa12ccaf42f8df42958aa227f50fd91",
+        "exponent_change": false
+      },
+      "next_round": 119
+    },
+    {
+      "round_index": 119,
+      "campaign_id": "m9-m1-direct-parent-minimax-gate",
+      "type": "m9_m1_direct_parent_minimax_gate",
+      "status": "closed",
+      "objective": "Minimize every accepted direct estimate separately on the hard and smooth M9-M1 physical parents, prove a lawful shrink or certify their exact separate minimax witnesses and connector scope.",
+      "tasks": [
+        {"id": "blind_m1_parent_minimax_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean_after_physical_normalization_repair"},
+        {"id": "literal_m1_parent_capacity_attack", "role": "discovery", "status": "completed_clean_after_LF_normalization"},
+        {"id": "m1_parent_minimax_hostile_audit", "role": "source_auditor", "status": "completed_clean_after_LF_and_trailing_whitespace_normalization"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 99,
+        "numerical_experimental_maximum_percent": 1,
+        "planned_numerical_percent": 0
+      },
+      "exit_gates": [
+        "literal_M1_block_and_owner_partition",
+        "separate_hard_and_smooth_capacity",
+        "critical_hard_and_first_smooth_labels",
+        "TTY_and_companion_rows",
+        "hard_cone_physical_normalization",
+        "adjacent_profile_connector",
+        "canonical_and_GAR_route_scope",
+        "menu_optimality_not_lower_bound",
+        "statement_only_and_hostile_gates",
+        "conductor_decision"
+      ],
+      "starting_graph_sha256": "c3498daad3bdceb7c69c0e47a616e03ebfa12ccaf42f8df42958aa227f50fd91",
+      "closing_assessment": {
+        "decision": "promote_separate_parent_one_third_minimax_and_adjacent_profile_no_go_retain_both_parents",
+        "graph_mutation": true,
+        "main_result": "The accepted direct menu has separate one-third limsup witnesses on the literal hard and first-smooth L asymp X^(1/6) families. Both miss the quarter target by X^(1/12); the hard normalized L^2 ledger converts to physical X^(1/4)L^(1/2). Exact profile telescoping supplies no connector gain. Both direct parents, both GAR parents, all M9 obligations, and every exponent remain open.",
+        "resulting_graph_sha256": "daa3c03b4b08ab062fa78724813fd2beff02ad92df8bf25d32407b1ce7f91177",
+        "exponent_change": false
+      },
+      "next_round": 120
+    },
+    {
+      "round_index": 120,
+      "campaign_id": "m9-m1-gar-radial-interface-reconciliation",
+      "type": "m9_m1_gar_radial_interface_reconciliation",
+      "status": "closed",
+      "objective": "Reconcile the exact GAR sharp radial/interface owner with every proved compact, endpoint, boundary, and residue module, and prove it or isolate its smallest exact survivor.",
+      "tasks": [
+        {"id": "blind_radial_interface_partition", "role": "statement_only_blind_rederiver", "status": "completed_clean_with_terminal_candidate_addendum"},
+        {"id": "literal_radial_interface_reconciliation", "role": "formalizer", "status": "completed_clean_after_support_and_owner_repairs"},
+        {"id": "radial_interface_hostile_scope_audit", "role": "seam_reviewer", "status": "completed_clean_after_support_and_text_hygiene_repairs"}
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 99,
+        "numerical_experimental_maximum_percent": 1,
+        "planned_numerical_percent": 0
+      },
+      "exit_gates": [
+        "literal_global_radial_coefficient",
+        "terminal_height_frequency_BV",
+        "positive_smooth_and_hard_transform_errors",
+        "exact_profile_support_and_floors",
+        "localized_terminal_compact_subtraction",
+        "fixed_radial_partition_one_count",
+        "endpoint_prefix_and_R1_nonduplication",
+        "physical_limit_and_downstream_scope",
+        "statement_only_and_hostile_gates",
+        "conductor_decision"
+      ],
+      "starting_graph_sha256": "daa3c03b4b08ab062fa78724813fd2beff02ad92df8bf25d32407b1ce7f91177",
+      "closing_assessment": {
+        "decision": "promote_terminal_height_nonlower_theorem_and_close_sharp_radial_interface",
+        "graph_mutation": true,
+        "main_result": "A fixed terminal-height cutoff has BV O(1/H_j), is target-safe under the accepted terminal theorem and exact smooth/hard transforms, equals the original coefficient for n/sqrt(X)>=s_0, and is supported above s_0/144. An antecedent-level compact subtraction proves the whole nonlower complement. Exact compact-sector subtraction closes the old sharp interface, leaving the lower-radial signed aggregate as the sole GAR analytic parent.",
+        "resulting_graph_sha256": "54f1c4ffd3a4ec9f166773ddb5f013a2fc7028b0a2586709f7379116a92da974",
+        "exponent_change": false
+      },
+      "next_round": 121
+    },
+    {
+      "round_index": 121,
+      "campaign_id": "m9-m1-global-lower-height-kernel-gate",
+      "type": "m9_m1_global_lower_height_kernel_gate",
+      "status": "closed",
+      "objective": "Aggregate every exact lower denominator profile before applying a norm, test mod-four pairing as a joint height mechanism, and prove the target or isolate the smallest exact survivor.",
+      "tasks": [
+        {
+          "id": "blind_lower_height_kernel_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed_with_second_stage_line_audit"
+        },
+        {
+          "id": "literal_character_paired_height_kernel_attack",
+          "role": "discovery_formalizer",
+          "status": "completed_after_smooth_separation_and_bottom_repairs"
+        },
+        {
+          "id": "lower_height_kernel_hostile_audit",
+          "role": "seam_reviewer",
+          "status": "completed_after_resonance_capacity_and_candidate_audit"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 99,
+        "numerical_experimental_maximum_percent": 1,
+        "planned_numerical_percent": 0
+      },
+      "exit_gates": [
+        "literal_lower_reciprocal_antecedent",
+        "external_R_normalization",
+        "global_profile_height_kernel",
+        "full_profile_target_scale_flattening",
+        "integer_phase_error",
+        "exact_Fourier_and_all_integer_discrepancy",
+        "mod_four_pairing_and_amplitude_seam",
+        "resonance_tubewise_capacity",
+        "old_return_map_and_downstream_scope",
+        "statement_only_and_hostile_gates",
+        "conductor_decision"
+      ],
+      "starting_graph_sha256": "54f1c4ffd3a4ec9f166773ddb5f013a2fc7028b0a2586709f7379116a92da974",
+      "closing_assessment": {
+        "decision": "promote_full_lower_flat_discrepancy_equivalence_and_local_pairing_no_go_retain_lower_target",
+        "graph_mutation": true,
+        "main_result": "The entire floor-perturbed lower reciprocal profile is target-equivalent to one flat sharp cone, an integer-centred cone, and an exact all-integer truncated-character divisor-discrepancy wavelet. Adjacent mod-four pairing has only a polylogarithmic amplitude seam but leaves a target-equivalent phase kernel; half-integer resonance tubes retain R^(3/2) capacity after local moduli. The signed lower estimate, GAR, every M9 parent, and every exponent improvement remain open.",
+        "resulting_graph_sha256": "3e85caebbaf6c69d0019009bee3ce8f720f34f579bfb0cfa2035b92be0fb2c13",
+        "exponent_change": false
+      },
+      "next_round": 122
+    },
+    {
+      "round_index": 122,
+      "campaign_id": "m9-m1-near-square-complementary-divisor-gate",
+      "type": "m9_m1_near_square_complementary_divisor_gate",
+      "status": "closed",
+      "objective": "Uniformly localize the exact lower discrepancy, derive every two-adic complementary-divisor branch, and prove a strict signed gain or the smallest rigorous self-return.",
+      "tasks": [
+        {
+          "id": "blind_near_square_divisor_involution",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed_with_second_stage_supersession_audit"
+        },
+        {
+          "id": "literal_two_adic_complementary_divisor_attack",
+          "role": "discovery_formalizer",
+          "status": "completed_with_second_stage_candidate_audit"
+        },
+        {
+          "id": "near_square_complement_hostile_audit",
+          "role": "seam_reviewer",
+          "status": "completed_with_cumulative_factor_pair_audit"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 99,
+        "numerical_experimental_maximum_percent": 1,
+        "planned_numerical_percent": 0
+      },
+      "exit_gates": [
+        "exact_Round121_discrepancy",
+        "uniform_wavelet_envelope",
+        "far_k_tail_budget",
+        "positive_near_square_window",
+        "central_k_window",
+        "localized_centering_and_high_two_adic_projection",
+        "two_adic_divisor_involution",
+        "character_residue_branches",
+        "square_and_central_boundaries",
+        "odd_central_factor_pair_count",
+        "exact_smallest_survivor",
+        "circle_problem_noncircularity",
+        "old_return_map_and_downstream_scope",
+        "statement_only_and_hostile_gates",
+        "conductor_decision"
+      ],
+      "starting_graph_sha256": "3e85caebbaf6c69d0019009bee3ce8f720f34f579bfb0cfa2035b92be0fb2c13",
+      "closing_assessment": {
+        "decision": "promote_uniform_wavelet_reduction_and_complement_self_return_retain_lower_target",
+        "graph_mutation": true,
+        "main_result": "The exact lower wavelet has uniform three-range decay. The far, central-index, high-two-adic cumulative, and odd positive-character central-band packages are target-safe. The complete complementary-divisor identity leaves an exact medium-index low-two-adic survivor: the negative odd residue branch self-returns, the positive branch retains a full circle coefficient, and low even branches retain full-minus-tail. Lower GAR and every downstream target remain open.",
+        "resulting_graph_sha256": "d29ae6c0f398cc2df699b15ee2901b525290263b6cde5eecece49cdeee095bb1",
+        "exponent_change": false
+      },
+      "next_round": 123
+    },
+    {
+      "round_index": 123,
+      "campaign_id": "m9-m2-unbalanced-reciprocal-gram-factorization-gate",
+      "type": "m9_m2_unbalanced_reciprocal_gram_factorization_gate",
+      "status": "closed",
+      "objective": "Integerize the literal flat-smooth UNBAL reciprocal phase at target-safe cost, derive the exact character-preserving shifted Gram and alias factorization, and prove the target or isolate the smallest rigorous survivor.",
+      "tasks": [
+        {
+          "id": "blind_integer_gram_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed_with_alias_probe_repair"
+        },
+        {
+          "id": "signed_alias_product_attack",
+          "role": "discovery_formalizer",
+          "status": "completed_with_shifted_zero_alias_addendum"
+        },
+        {
+          "id": "reciprocal_gram_hostile_audit",
+          "role": "seam_reviewer",
+          "status": "completed_with_final_alias_curve_audit"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 99,
+        "numerical_experimental_maximum_percent": 1,
+        "planned_numerical_percent": 0
+      },
+      "exit_gates": [
+        "literal_Round118_flat_wave",
+        "phase_integerization_physical_kernel",
+        "weighted_Gram_normalization",
+        "shifted_block_square_normalization",
+        "smooth_alias_localization",
+        "alias_product_factorization",
+        "two_adic_character_sign",
+        "exact_versus_near_collision",
+        "complete_zero_alias",
+        "fixed_power_inverse_reduction",
+        "fixed_alias_derivative_no_go",
+        "owner_and_downstream_scope",
+        "statement_only_and_hostile_gates",
+        "conductor_decision"
+      ],
+      "starting_graph_sha256": "d29ae6c0f398cc2df699b15ee2901b525290263b6cde5eecece49cdeee095bb1",
+      "closing_assessment": {
+        "decision": "promote_integer_centre_shifted_zero_alias_and_inverse_reduction_retain_unbalanced_target",
+        "graph_mutation": true,
+        "main_result": "The literal flat-smooth UNBAL row is stable under a target-safe integer centre transfer. In the exact shifted block square, the complete zero-alias sector is target-safe, all nonzero exact aliases are globally divisor-small, and far defects are rapidly small. Any fixed-power violation is therefore forced into one complete signed nonzero, nonexact near-alias aggregate. Automatic two-adic thinning and the proposed fixed-alias first-derivative route self-return. Complete UNBAL and every downstream target remain open.",
+        "resulting_graph_sha256": "2b60eca238542d4f321a19c90f20163c6dd4cd7c60da6f324910b6db10b638c6",
+        "exponent_change": false
+      },
+      "next_round": 124
+    },
+    {
+      "round_index": 124,
+      "campaign_id": "m9-m2-unbalanced-joint-stationary-lattice-gate",
+      "type": "m9_m2_unbalanced_joint_stationary_lattice_gate",
+      "status": "closed",
+      "objective": "Transform the complete Round-123 flat-smooth strict-UNBAL shifted survivor through both quarter characters, prove a joint signed target or strict inverse reduction, and adjudicate the stationary-lattice self-return.",
+      "tasks": [
+        {
+          "id": "blind_joint_stationary_lattice_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed"
+        },
+        {
+          "id": "double_poisson_product_defect_attack",
+          "role": "discovery_formalizer",
+          "status": "completed_after_gradient_and_selector_repairs"
+        },
+        {
+          "id": "joint_stationary_lattice_hostile_audit",
+          "role": "seam_reviewer",
+          "status": "completed_with_capacity_and_endpoint_scope"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 99,
+        "numerical_experimental_maximum_percent": 1,
+        "planned_numerical_percent": 0
+      },
+      "exit_gates": [
+        "literal_Round123_near_alias_survivor",
+        "H0_K_normalization",
+        "double_character_Poisson_signs",
+        "stationary_points_and_Gaussian_units",
+        "scalar_stationary_error_ledger",
+        "dual_product_and_gradient_defects",
+        "physical_selector_scope",
+        "dual_product_diagonal",
+        "offproduct_inverse_reduction",
+        "joint_principal_Hessian_and_Legendre_return",
+        "capacity_and_norm_scope",
+        "owner_and_downstream_scope",
+        "statement_only_and_hostile_gates",
+        "conductor_decision"
+      ],
+      "starting_graph_sha256": "2b60eca238542d4f321a19c90f20163c6dd4cd7c60da6f324910b6db10b638c6",
+      "closing_assessment": {
+        "decision": "promote_unmasked_stationary_offproduct_inverse_reduction_and_principal_return_retain_unbalanced_target",
+        "graph_mutation": true,
+        "main_result": "The full unmasked flat-smooth shifted square has a double-character stationary transform with aggregate O(1) error. Its p=q,h=0 product diagonal is target-safe, making the physical survivor target-equivalent modulo proved packages to two complete dual off-product sectors. The corrected alias gradient and joint principal Legendre return are exact; neither sector is estimated and no exponent changes.",
+        "resulting_graph_sha256": "27bd4173fbdb16e5689595a02d42d82ffa8bb514b4610ea745ce2da6e2b8b152",
+        "exponent_change": false
+      },
+      "next_round": 125
+    },
+    {
+      "round_index": 125,
+      "campaign_id": "m9-m2-unbalanced-dual-offproduct-sector-gate",
+      "type": "m9_m2_unbalanced_dual_offproduct_sector_gate",
+      "status": "closed",
+      "objective": "Bound the complete Round-124 dual off-product aggregate by a genuinely signed inequality, obtain a stronger complete-sector inverse theorem, or park the UNBAL lane at its smallest endpoint-complete functional.",
+      "tasks": [
+        {
+          "id": "blind_dual_offproduct_sector_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed"
+        },
+        {
+          "id": "actual_symbol_dual_sector_attack",
+          "role": "discovery",
+          "status": "completed_after_half_alias_and_capacity_repairs"
+        },
+        {
+          "id": "dual_offproduct_hostile_audit",
+          "role": "seam_reviewer",
+          "status": "completed_with_endpoint_and_moving_overlap_corrections"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 99,
+        "numerical_experimental_maximum_percent": 1,
+        "planned_numerical_percent": 0
+      },
+      "exit_gates": [
+        "literal_Round124_dual_offproduct_survivor",
+        "H_K_Q_normalization",
+        "bpk_profile_and_character_placement",
+        "Fejer_block_square_identity",
+        "equal_mode_offzero_vs_positive_energy",
+        "equal_mode_integer_crossings_and_curvature",
+        "unequal_mode_product_gradient_defects",
+        "unequal_mode_character_persistence",
+        "sector_intercancellation",
+        "negative_shift_conjugacy",
+        "mode_shift_multiplicity",
+        "moving_profile_and_zero_extension",
+        "stationary_endpoint_and_error_scope",
+        "signed_vs_unsigned_and_adversarial_coefficients",
+        "capacity_before_and_claimed_gain",
+        "owner_and_downstream_scope",
+        "statement_only_and_hostile_gates",
+        "conductor_decision"
+      ],
+      "starting_graph_sha256": "27bd4173fbdb16e5689595a02d42d82ffa8bb514b4610ea745ce2da6e2b8b152",
+      "closing_assessment": {
+        "decision": "promote_one_sided_full_character_energy_and_sectorization_no_go_park_unbalanced_lane",
+        "graph_mutation": true,
+        "main_result": "The complete dual survivor equals one positive endpoint-complete actual-character block energy minus the target-safe diagonal, so its negative side is safe and only the positive energy upper bound remains. Separate coefficient-blind sector bounds can be overstrong by H. The complete fixed-row curvature estimate loses min(H,Q), the reciprocal chart self-returns, odd-p coherence requires a half-integer alias lattice, and the moving saddle selector removes the proposed long p-sum. Flat-smooth UNBAL and every downstream target remain open.",
+        "resulting_graph_sha256": "85cf63f0087c6c6adf911bd0f7fdf5d3985a6a49b4e0d6158a7dc28470da10c9",
+        "exponent_change": false
+      },
+      "next_round": 126
+    },
+    {
+      "round_index": 126,
+      "campaign_id": "m9-m2-hard-top-actual-vector-spectral-gate",
+      "type": "m9_m2_hard_top_actual_vector_spectral_gate",
+      "status": "closed",
+      "objective": "Bound the exact hard-TOP actual-character vector at diagonal energy scale by a genuinely noninvertible signed spectral/operator inequality, obtain a strict complete-sector saving or inverse theorem, or park the lane at its smallest exact survivor.",
+      "tasks": [
+        {
+          "id": "blind_hard_top_vector_rederivation",
+          "role": "blind_rederiver",
+          "status": "completed"
+        },
+        {
+          "id": "hard_top_parity_spectral_operator_attack",
+          "role": "discovery",
+          "status": "completed_with_square_entry_sector_and_offset_inverse"
+        },
+        {
+          "id": "hard_top_actual_vector_hostile_audit",
+          "role": "seam_reviewer",
+          "status": "completed_with_filter_capacity_and_shell_scope_repairs"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 99,
+        "numerical_experimental_maximum_percent": 1,
+        "planned_numerical_percent": 0
+      },
+      "exit_gates": [
+        "literal_Round75_hard_top_vector",
+        "one_orientation_and_outer_2Re",
+        "diagonal_one_count_and_target",
+        "character_inside_vector_before_square",
+        "hard_affine_support_and_zero_extension",
+        "square_product_entry_projection",
+        "block_energy_vs_offdiagonal_realpart",
+        "parity_highpass_vector_scope",
+        "actual_vs_adversarial_vectors",
+        "square_Pell_fourth_power_resonances",
+        "one_count_slabs_retained_jointly",
+        "complete_offset_inverse_localization",
+        "capacity_before_and_claimed_gain",
+        "endpoint_and_prior_owner_scope",
+        "owner_and_downstream_scope",
+        "statement_only_and_hostile_gates",
+        "conductor_decision"
+      ],
+      "starting_graph_sha256": "85cf63f0087c6c6adf911bd0f7fdf5d3985a6a49b4e0d6158a7dc28470da10c9",
+      "closing_assessment": {
+        "decision": "promote_square_entry_sector_filter_obstruction_and_offset_inverse_park_parity_mechanism",
+        "graph_mutation": true,
+        "main_result": "The literal hm-square entry projection has actual-vector energy O_epsilon(L^(3/2)X^epsilon), and every positive energy excess localizes with logarithmic loss to one complete signed physical or primitive offset shell. The parity high-pass selects the target pi-mode with multiplier two, while character column modulation preserves all ambient singular values; support-only Bessel bounds sharply lose L. The nonsquare actual-direction bound and complete hard TOP remain open.",
+        "resulting_graph_sha256": "fd8831d74d53795182b9f8c234753b33df27e096b9d9f52a6cf43403c87c4a43",
+        "exponent_change": false
+      },
+      "next_round": 127
+    },
+    {
+      "round_index": 127,
+      "campaign_id": "full-proof-frontier-inequality-selection-gate",
+      "type": "full_proof_frontier_inequality_selection_gate",
+      "status": "closed",
+      "objective": "Select exactly one genuinely new noninvertible signed inequality frontier among hard TOP, lower GAR, and the graded W=Y^(7/16) determinant, with a literal interface, capacity ledger, payoff, and finite stop rule.",
+      "tasks": [
+        {
+          "id": "blind_hard_top_nonsquare_feasibility",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed_with_phase_alignment_and_product_fibre_obstruction"
+        },
+        {
+          "id": "lower_gar_wavelet_feasibility",
+          "role": "discovery",
+          "status": "completed_with_centering_repair_and_separated_norm_no_go"
+        },
+        {
+          "id": "graded_determinant_long_lift_feasibility",
+          "role": "discovery",
+          "status": "completed_with_scalar_capacity_no_go_and_local_V2_candidate"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0,
+        "planned_numerical_percent": 0
+      },
+      "exit_gates": [
+        "literal_three_frontier_statements",
+        "capacity_and_missing_power_table",
+        "noninvertible_mechanism_test",
+        "prior_no_go_bypass",
+        "actual_vs_adversarial_coefficients",
+        "endpoint_floor_star_and_support_scope",
+        "dependency_and_payoff_scope",
+        "finite_stop_rule",
+        "single_objective_selection",
+        "no_proof_status_from_strategy_only",
+        "conductor_decision"
+      ],
+      "starting_graph_sha256": "fd8831d74d53795182b9f8c234753b33df27e096b9d9f52a6cf43403c87c4a43",
+      "closing_assessment": {
+        "decision": "promote_scoped_obstructions_and_conditional_connector_select_local_transverse_lift_variation",
+        "graph_mutation": true,
+        "main_result": "Hard TOP is blocked at the present interface by exact coefficient-phase alignment and a product-fibre invariant mean. The lower uncentered square function is false and its centered Farey energy is an excluded separated ambient norm. The graded scalar continuation returns exactly Y^(37/48), but a local transverse V2 coefficient and curvature inequality would conditionally give Y^(73/96), a strict Y^(1/96) fixed-block saving. Neither new inequality is proved.",
+        "resulting_graph_sha256": "1a5c8c8b4b6c6c0dcf3d0e05a1607b3d29dfe22f66748d401405d1c0f7b474d6",
+        "exponent_change": false
+      },
+      "next_round": 128
+    },
+    {
+      "round_index": 128,
+      "campaign_id": "gc-w7-16-local-transverse-lift-variation-gate",
+      "type": "gc_w7_16_local_transverse_lift_variation_gate",
+      "status": "closed",
+      "objective": "Prove or refute the literal local J_B^(1/2)/L V2 norm for every M1/M2 complete-lift coefficient on one reciprocal window, including endpoints, continuous profiles, hard faces, stars, floors, divisor progressions, and shell ownership.",
+      "tasks": [
+        {
+          "id": "blind_local_v2_feasibility",
+          "role": "blind_rederiver",
+          "status": "completed_with_sharp_abstract_no_go_and_repaired_energy_criterion"
+        },
+        {
+          "id": "literal_lift_coefficient_variation_attack",
+          "role": "discovery",
+          "status": "completed_with_branchwise_BV_threshold_proof_and_unsplit_M1_counterterm"
+        },
+        {
+          "id": "local_variation_hostile_audit",
+          "role": "seam_reviewer",
+          "status": "completed_with_normalization_warning_and_literal_dictionary_gate"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0,
+        "planned_numerical_percent": 0
+      },
+      "exit_gates": [
+        "literal_complete_lift_dictionary",
+        "local_window_and_birth_count",
+        "V2_endpoint_terms",
+        "continuous_weight_variation",
+        "character_partial_sum_before_modulus",
+        "mobius_divisor_progressions",
+        "floors_stars_hard_faces_and_support",
+        "cross_shell_owner_and_no_duplication",
+        "actual_vs_adversarial_lift_coefficients",
+        "theta_two_thirds_capacity_threshold",
+        "finite_stop_rule",
+        "no_exponent_or_M9_promotion",
+        "conductor_decision"
+      ],
+      "starting_graph_sha256": "1a5c8c8b4b6c6c0dcf3d0e05a1607b3d29dfe22f66748d401405d1c0f7b474d6",
+      "closing_assessment": {
+        "decision": "promote_character_split_BV_threshold_V2_lemma_reject_abstract_and_unsplit_M1_inference",
+        "graph_mutation": true,
+        "main_result": "The accepted Round-95 coefficient is frequency-BV times a denominator-BV profile. Exact discrete Stieltjes decomposition and interval-uniform chi_4 Abel prove J_B^(1/2)/L local V2 for the two M1 quarter-phase branches and one M2 branch, including all endpoints and literal faces. Birth count plus pointwise size is false abstractly, and unsplit M1 chi_4(b') has Q_B^(1/2)/L variation when J_B is bounded. The joint reciprocal-curvature inequality remains open.",
+        "resulting_graph_sha256": "476b1445ef73d86627fd87de8bd2dd76a5efa53564a5b195230f2ad33ba2bbe8",
+        "exponent_change": false
+      },
+      "next_round": 129
+    },
+    {
+      "round_index": 129,
+      "campaign_id": "gc-w7-16-joint-stieltjes-reciprocal-curvature-gate",
+      "type": "gc_w7_16_joint_stieltjes_reciprocal_curvature_gate",
+      "status": "closed",
+      "objective": "Prove or refute the exact character-split Stieltjes reciprocal-curvature inequality without a generic N_rho^(1/2) loss, including stationary aliases and every literal owner.",
+      "tasks": [
+        {
+          "id": "blind_structured_v2_curvature_feasibility",
+          "role": "blind_rederiver",
+          "status": "completed_with_structured_norm_no_go_and_post_blind_direct_audit"
+        },
+        {
+          "id": "actual_stieltjes_reciprocal_sum_attack",
+          "role": "discovery",
+          "status": "completed_with_direct_K_over_L_threshold_theorem"
+        },
+        {
+          "id": "reciprocal_curvature_hostile_audit",
+          "role": "seam_reviewer",
+          "status": "completed_with_norm_counterexample_and_direct_outer_addendum"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0,
+        "planned_numerical_percent": 0
+      },
+      "exit_gates": [
+        "branchwise_literal_dictionary",
+        "generic_V2_dual_countermodel",
+        "single_threshold_birth_phase",
+        "character_before_modulus",
+        "M1_quarter_phase_aliases",
+        "reciprocal_second_derivative_and_stationary_lattice",
+        "threshold_superposition_and_Minkowski",
+        "V2_endpoint_terms",
+        "mobius_progressions",
+        "floors_stars_taper_and_shell_owners",
+        "actual_vs_phase_adapted_coefficients",
+        "N_rho_square_root_stop_rule",
+        "theta_two_thirds_capacity_threshold",
+        "outer_ledger",
+        "no_exponent_or_M9_promotion",
+        "conductor_decision"
+      ],
+      "starting_graph_sha256": "476b1445ef73d86627fd87de8bd2dd76a5efa53564a5b195230f2ad33ba2bbe8",
+      "closing_assessment": {
+        "decision": "reject_norm_relative_formulation_promote_direct_threshold_curvature_and_complete_all_shell_Y35over48",
+        "graph_mutation": true,
+        "main_result": "The endpoint-inclusive completed-V2 formulation is false by a Y^(1/48) stationary-alias packet. A stronger direct physical theorem survives: character Abel on each threshold plateau, curvature, the identity N_rho Lambda_rho asymp L rho (J_B-1), and Stieltjes recombination give K_rho/L. The complete outer ledger yields Y^(35/48+epsilon) uniformly over all reduced-denominator shells, closing the long-lift seam without changing any global exponent or M9 parent.",
+        "resulting_graph_sha256": "354f5ca462467d091a9a50c8dbc1173ffba56516963274f9fc232ea11890d20e",
+        "exponent_change": false
+      },
+      "next_round": 130
+    },
+    {
+      "round_index": 130,
+      "campaign_id": "gc-w7-16-post-inner-outer-bilinear-gate",
+      "type": "gc_w7_16_post_inner_outer_bilinear_gate",
+      "status": "closed",
+      "objective": "Prove a genuine signed contraction before the remaining numerator-increment and outer-ray triangles, or isolate the exact dual, resonance, and transform self-return after the Round-129 inner theorem.",
+      "tasks": [
+        {
+          "id": "blind_outer_bilinear_dual_feasibility",
+          "role": "blind_rederiver",
+          "status": "completed_with_exact_dual_no_go_and_post_unmask_gram_review"
+        },
+        {
+          "id": "actual_numerator_increment_recombination_attack",
+          "role": "discovery",
+          "status": "completed_with_BKB_shell_refinement_and_inversion_return"
+        },
+        {
+          "id": "outer_ray_bilinear_hostile_audit",
+          "role": "seam_reviewer",
+          "status": "completed_with_resolved_gram_resonance_and_transform_no_go"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0,
+        "planned_numerical_percent": 0
+      },
+      "exit_gates": [
+        "literal_post_inner_dictionary",
+        "outer_ray_and_increment_counts",
+        "outer_l2_dual_or_Gram",
+        "phase_aligned_false_control",
+        "actual_character_placement",
+        "M1_M2_increment_orientation",
+        "product_window_resonance_return",
+        "unit_Hessian_sequential_transform_return",
+        "scalar_vs_positive_energy",
+        "Mobius_threshold_and_owner_ledger",
+        "strict_weak_star_and_support_faces",
+        "capacity_before_and_after",
+        "no_exponent_or_M9_promotion",
+        "conductor_decision"
+      ],
+      "starting_graph_sha256": "354f5ca462467d091a9a50c8dbc1173ffba56516963274f9fc232ea11890d20e",
+      "closing_assessment": {
+        "decision": "promote_BKB_shell_refinement_determinant_residue_chart_and_resolved_energy_obstruction",
+        "graph_mutation": true,
+        "main_result": "Exact complete-lift support sharpens each shell from D K_B to B K_B, localizing the complete residual to B asymp D without changing the Y^(35/48) top-shell exponent. The exact resolved energy is H^*H or K_(B,+)^*K_(B,+), not G^2; phase-aligned controls, product windows, and unit-Hessian transforms give scoped no-gos. The fixed-ray determinant chart makes p a bounded-multiplicity residue lift of n, leaving one literal signed top-shell correlation open.",
+        "resulting_graph_sha256": "23e7bfacbf6abc5582769fbe8d427cbca2379e1d265b99df21d93a65ec504825",
+        "exponent_change": false
+      },
+      "next_round": 131
     }
   ]
 }

@@ -1,0 +1,220 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 129,
+    "round_type": "gc_w7_16_joint_stieltjes_reciprocal_curvature_gate",
+    "campaign_id": "gc-w7-16-joint-stieltjes-reciprocal-curvature-gate",
+    "title": "W=Y^(7/16) joint Stieltjes-character reciprocal-curvature gate",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "476b1445ef73d86627fd87de8bd2dd76a5efa53564a5b195230f2ad33ba2bbe8",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "planned_numerical_percent": 0,
+      "literature_policy": "No external theorem is assumed. Consult a source only if it states a discrete variation-weighted reciprocal-phase estimate whose hypotheses are matched to the exact Stieltjes-character family."
+    },
+    "target_obligations": [
+      "GC-W7-16-local-transverse-square-variation-connector",
+      "GC-W7-16-actual-reduced-determinant-correlation"
+    ],
+    "frozen_target": {
+      "question": "For the exact character-split M1/M2 Stieltjes lift packages proved in Round 128, does the joint V2-weighted reciprocal-curvature inequality hold uniformly without an extra N_rho^(1/2), or is there a literal structured counterterm that stops the graded route?",
+      "reference_formula": "U_(i,rho,eta)(v)=tau_i(v) sum_t c_t a'^(-1) sum_(g<=t/(rho v)) chi_4(g)g^(-1)P_(i,a')(g), with sum_t|c_t|<<1 and branch phase f(v)=-ca'/(kappa_i rho v)+vartheta_(i,eta)rho v. Test |sum_(v in I)^* U(v)e(f(v))| <<_epsilon ||U||_(V2(I)) min(N_rho,N_rho sqrt(lambda_B rho^2)+(lambda_B rho^2)^(-1/2))Y^epsilon.",
+      "quantities": [
+        "W=Y^(7/16), D=Y^(1/2), L=Y^(1/6), D/L<=B<=D",
+        "Q_B=min(B,BD/(WL)), J_B=1+DQ_B/B^2, N_rho asymp Q_B/rho",
+        "lambda_B=YL/(DB^2), b'=rho v, |a'| asymp LB/D, rho divides a'",
+        "vartheta_(1,+)=1/4, vartheta_(1,-)=-1/4, vartheta_(2,0)=0",
+        "The coefficient norm ||U||_(V2)<<J_B^(1/2)/L is already proved and must not be reproved as the oscillatory theorem",
+        "Generic V2 partial summation loses N_rho^(1/2); a valid proof must exploit the actual threshold/character/reciprocal coupling",
+        "Success gives only conditional complete-block Y^(73/96), whose persistence exponent 115/288 is worse than one third"
+      ]
+    },
+    "completion_criteria": [
+      "Write the exact branchwise sum after the Round-128 Stieltjes decomposition, before any outside modulus, and preserve the common lift character and reduced quarter phase in their accepted locations.",
+      "Compute the exact discrete dual norm of the proposed V2 inequality and construct a sharp generic-U countermodel; then state what additional actual-family property is required.",
+      "For a single threshold t, analyze the joint birth locations floor(t/(rho v)), reciprocal phase, character signs, both V2 endpoints, and every stationary or alias regime.",
+      "Determine whether summing the threshold coefficients c_t by Minkowski or another lawful joint step preserves the required bound without a hidden D, G, J_B, or N_rho loss.",
+      "Treat the determinant taper, clipped intervals, strict and weak faces, stars, M1 quarter shifts, M2 fixed character, Mobius progressions, and cross-shell owners exactly once.",
+      "Either prove the joint inequality for every literal branch, prove a strict complete subset and isolate the first exact residual, or give a literal structured counterterm and stop the route.",
+      "If the inequality passes, derive only the already audited Y^(73/96+epsilon) fixed-block consequence; do not claim the Y^(1/2) determinant target or a global exponent improvement.",
+      "If the inequality fails or costs N_rho^(1/2), full-lift variation, or effective J_B^theta with theta>=2/3, record the smallest rigorous obstruction and park this graded continuation.",
+      "State conservatively that M9-M1, M9-M2, endpoint uniformity, M9, and the quarter theorem remain unchanged."
+    ],
+    "controls": [
+      "branchwise_literal_dictionary",
+      "generic_V2_dual_countermodel",
+      "single_threshold_birth_phase",
+      "character_before_modulus",
+      "M1_quarter_phase_aliases",
+      "reciprocal_second_derivative_and_stationary_lattice",
+      "threshold_superposition_and_Minkowski",
+      "V2_endpoint_terms",
+      "mobius_progressions",
+      "floors_stars_taper_and_shell_owners",
+      "actual_vs_phase_adapted_coefficients",
+      "N_rho_square_root_stop_rule",
+      "theta_two_thirds_capacity_threshold",
+      "no_exponent_or_M9_promotion"
+    ],
+    "tasks": [
+      {
+        "id": "blind_structured_v2_curvature_feasibility",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "assigned",
+        "target": "Determine whether the displayed V2-weighted reciprocal-curvature inequality is valid for the exact abstract Stieltjes-character threshold class. Prove it, give a structured counterexample, or isolate a sharp additional hypothesis, while separately deriving the generic V2 dual obstruction.",
+        "context_files": [
+          "problems/gauss_circle.md",
+          "state/control_models.md",
+          "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "all strategy files",
+          "all Round-95 through Round-129 nonblind artifacts",
+          "all Round-129 sibling reports"
+        ],
+        "required_controls": [
+          "generic_V2_dual_countermodel",
+          "single_threshold_birth_phase",
+          "character_before_modulus",
+          "M1_quarter_phase_aliases",
+          "reciprocal_second_derivative_and_stationary_lattice",
+          "threshold_superposition_and_Minkowski",
+          "V2_endpoint_terms",
+          "actual_vs_phase_adapted_coefficients",
+          "N_rho_square_root_stop_rule",
+          "theta_two_thirds_capacity_threshold",
+          "no_exponent_or_M9_promotion"
+        ],
+        "required_output": [
+          "A seven-section statement-only report.",
+          "An exact dual-norm calculation for generic V2 amplitudes.",
+          "A proof, structured counterexample, or minimal repaired theorem for the supplied threshold class.",
+          "No graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/reports/blind_structured_v2_curvature_feasibility.md"
+      },
+      {
+        "id": "actual_stieltjes_reciprocal_sum_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "assigned",
+        "target": "Attack the exact branchwise M1/M2 reciprocal sum after Stieltjes decomposition. Obtain the desired joint inequality, a strict shell theorem with the first residual, or a literal counterterm, without separating the lift character from the reciprocal variable.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/reports/actual_rational_cluster_attack.md",
+          "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/reports/actual_character_determinant_attack.md",
+          "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/reports/graded_determinant_long_lift_feasibility.md",
+          "rounds/codex-managed/gc-w7-16-local-transverse-lift-variation-gate/reports/literal_lift_coefficient_variation_attack.md",
+          "rounds/codex-managed/gc-w7-16-local-transverse-lift-variation-gate/reviews/conductor_round128_literal_v2_adjudication.md",
+          "rounds/codex-managed/gc-w7-16-local-transverse-lift-variation-gate/synthesis.md"
+        ],
+        "required_controls": [
+          "branchwise_literal_dictionary",
+          "single_threshold_birth_phase",
+          "character_before_modulus",
+          "M1_quarter_phase_aliases",
+          "reciprocal_second_derivative_and_stationary_lattice",
+          "threshold_superposition_and_Minkowski",
+          "V2_endpoint_terms",
+          "mobius_progressions",
+          "floors_stars_taper_and_shell_owners",
+          "N_rho_square_root_stop_rule",
+          "theta_two_thirds_capacity_threshold",
+          "no_exponent_or_M9_promotion"
+        ],
+        "required_output": [
+          "A seven-section analytic report.",
+          "An exact sum formula before every norm and a shell-by-shell capacity ledger.",
+          "A full proof, strict partial theorem plus exact residual, or literal structured no-go.",
+          "No graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/reports/actual_stieltjes_reciprocal_sum_attack.md"
+      },
+      {
+        "id": "reciprocal_curvature_hostile_audit",
+        "role": "seam_reviewer",
+        "access_mode": "selected_context",
+        "status": "assigned",
+        "target": "Hostilely test the joint inequality against the exact threshold birth lattice, reciprocal stationary aliases, M1 quarter phases, endpoint terms, divisor progressions, and shell faces. Certify only if no structured resonance or hidden square-root loss remains.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/reviews/conductor_round117_actual_savings.md",
+          "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/reports/graded_determinant_long_lift_feasibility.md",
+          "rounds/codex-managed/gc-w7-16-local-transverse-lift-variation-gate/reports/blind_local_v2_feasibility.md",
+          "rounds/codex-managed/gc-w7-16-local-transverse-lift-variation-gate/reports/literal_lift_coefficient_variation_attack.md",
+          "rounds/codex-managed/gc-w7-16-local-transverse-lift-variation-gate/reviews/conductor_round128_literal_v2_adjudication.md",
+          "rounds/codex-managed/gc-w7-16-local-transverse-lift-variation-gate/controls/conductor_round128_controls.md"
+        ],
+        "required_controls": [
+          "branchwise_literal_dictionary",
+          "generic_V2_dual_countermodel",
+          "single_threshold_birth_phase",
+          "character_before_modulus",
+          "M1_quarter_phase_aliases",
+          "reciprocal_second_derivative_and_stationary_lattice",
+          "threshold_superposition_and_Minkowski",
+          "V2_endpoint_terms",
+          "mobius_progressions",
+          "floors_stars_taper_and_shell_owners",
+          "actual_vs_phase_adapted_coefficients",
+          "N_rho_square_root_stop_rule",
+          "theta_two_thirds_capacity_threshold",
+          "no_exponent_or_M9_promotion"
+        ],
+        "required_output": [
+          "A seven-section hostile review.",
+          "A seam matrix and an exact resonance or dual-norm control.",
+          "A certification, strict scope restriction, or structured counterexample.",
+          "No graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/reports/reciprocal_curvature_hostile_audit.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "duality",
+        "requirement": "The proposed norm is tested against its exact discrete dual; generic V2 failure is not confused with actual-family failure."
+      },
+      {
+        "id": "joint_structure",
+        "requirement": "The threshold birth lattice, chi_4(g), reciprocal carrier, and M1 quarter shift remain joint until the claimed saving is obtained."
+      },
+      {
+        "id": "stationary_aliases",
+        "requirement": "Every first-derivative integer crossing and second-derivative regime is priced uniformly in rho and B."
+      },
+      {
+        "id": "literal_owners",
+        "requirement": "Endpoints, taper, stars, floors, Mobius pieces, and shell cuts are charged once."
+      },
+      {
+        "id": "capacity",
+        "requirement": "No N_rho^(1/2), full-lift, or J_B^theta with theta>=2/3 is hidden."
+      },
+      {
+        "id": "scope",
+        "requirement": "Success proves at most the conditional Y^(73/96) complete block; failure parks only this graded route."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "476b1445ef73d86627fd87de8bd2dd76a5efa53564a5b195230f2ad33ba2bbe8",
+    "generated_at": "2026-08-23T05:33:38.626058+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

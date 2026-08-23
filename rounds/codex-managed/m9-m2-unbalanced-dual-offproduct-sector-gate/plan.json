@@ -1,0 +1,234 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 125,
+    "round_type": "m9_m2_unbalanced_dual_offproduct_sector_gate",
+    "campaign_id": "m9-m2-unbalanced-dual-offproduct-sector-gate",
+    "title": "Unbalanced dual off-product actual-sign sector gate",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "27bd4173fbdb16e5689595a02d42d82ffa8bb514b4610ea745ce2da6e2b8b152",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 99,
+      "numerical_experimental_maximum_percent": 1,
+      "planned_numerical_percent": 0,
+      "literature_policy": "Import no estimate unless its primary statement controls the literal moving-profile square-root phase with the actual quarter character, exact Fejer triangle, zero extension, and X^(1/2) energy target. A coefficient-blind large sieve or a transform identity is not a saving."
+    },
+    "target_obligations": [
+      "M9-M2-smooth-unbalanced-three-quarter-estimate",
+      "M9-M2-unbalanced-double-character-stationary-offdiagonal-reduction",
+      "M9-M2-unbalanced-joint-stationary-principal-return"
+    ],
+    "frozen_target": {
+      "question": "Can the complete Round-124 dual off-product aggregate be bounded at the square target by a genuinely signed inequality, or can a violation be localized to a strictly smaller complete sector before this UNBAL lane is parked?",
+      "reference_formula": "S_off=S_eq^(nonzero)+S_neq, with S_eq^(nonzero)=C_H sum_p sum_(0<|h|<H)(H-|h|)sum_k b_(p,k+h)conj(b_(p,k)) and S_neq=C_H sum_(p!=q)chi_4(p)chi_4(q)sum_(|h|<H)(H-|h|)sum_k b_(p,k+h)conj(b_(q,k)); prove S_off<<X^(1/2+epsilon).",
+      "quantities": [
+        "X real at least 2; M integer asymptotic to X with every physical amplitude frozen at X",
+        "D=X^delta, L=X^ell, K=XL/D^2, H=ceil(X^(1/2)/D), K asymptotic to LH^2",
+        "1/4<=delta<1/2, 0<=ell<delta-1/4, 178ell+1638delta>463, and Q=D^2/(Lsqrt(X)) tending to infinity",
+        "b_(p,k)=e(-1/8)M^(1/4)k^(-3/4)p^(-3/4)A_(p,k)e(sqrt(Mpk)) for positive odd p, with the literal moving profiles and zero extension",
+        "C_H=(J+H-1)/H^2, exact triangular Fejer weight, all positive and negative shifts, block entries and exits",
+        "D_0=C_H H sum_(p,k)|b_(p,k)|^2 is already O(X^(1/2))",
+        "D_0+S_eq^(nonzero)=C_H sum_p sum_n |sum_(a<H)b_(p,n+a)|^2 is positive but may be a stronger norm than the target",
+        "S_neq retains chi_4(p)chi_4(q), both ordered conjugates, moving p/k and q/k profiles, and no outside sectorwise modulus",
+        "the full scalar S_off is target-equivalent modulo accepted packages to the physical Round-123 survivor",
+        "the equal-mode and unequal-mode pieces may cancel, so separate absolute estimates are only sufficient",
+        "product-defect, gradient, and joint stationary-return identities from Round 124 retained as barriers, not gains",
+        "flat-smooth strict-UNBAL owner only; every hard, sharp, clipped, starred, arithmetic, nonflat, and transition owner excluded"
+      ]
+    },
+    "completion_criteria": [
+      "Reproduce the exact b_(p,k), D_0, S_eq^(nonzero), S_neq, Fejer, zero-extension, conjugacy, and target-equivalence identities without rectangularizing the profiles.",
+      "Determine whether the equal-mode shifted sector or its stronger positive p-row block energy is target-safe; quantify every integer crossing, curvature cell, endpoint, and capacity loss.",
+      "Estimate the complete unequal-mode actual-character aggregate, or prove precisely why product-defect progression, mode-difference summation, or a proposed large sieve is overstrong.",
+      "Retain possible cancellation between the two sectors unless a separate bound is actually proved; distinguish a scalar estimate from p-row, shiftwise, aliaswise, and coefficient-blind norms.",
+      "Prove the full target, a strict complete-sector saving, a stronger fixed-power inverse theorem, or the smallest rigorous no-go and exact parked survivor.",
+      "Audit moving profiles, short L, short H, negative shifts, Fejer cusp and faces, zero-extension entries and exits, support transitions, and every multiplicity seam.",
+      "State exactly what follows for flat-smooth UNBAL, complete UNBAL, hard TOP, BAL, M9-M2, M1, M9, the quarter theorem, and all exponents."
+    ],
+    "controls": [
+      "literal_Round124_dual_offproduct_survivor",
+      "H_K_Q_normalization",
+      "bpk_profile_and_character_placement",
+      "Fejer_block_square_identity",
+      "equal_mode_offzero_vs_positive_energy",
+      "equal_mode_integer_crossings_and_curvature",
+      "unequal_mode_product_gradient_defects",
+      "unequal_mode_character_persistence",
+      "sector_intercancellation",
+      "negative_shift_conjugacy",
+      "mode_shift_multiplicity",
+      "moving_profile_and_zero_extension",
+      "stationary_endpoint_and_error_scope",
+      "signed_vs_unsigned_and_adversarial_coefficients",
+      "capacity_before_and_claimed_gain",
+      "owner_and_downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "blind_dual_offproduct_sector_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "pending",
+        "target": "Independently derive the exact dual off-product problem and prove its target, a strict complete-sector saving, a stronger inverse theorem, or the smallest rigorous sectorwise no-go.",
+        "context_files": [
+          "problems/gauss_circle.md",
+          "state/control_models.md",
+          "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "all strategy files",
+          "all Round-106 through Round-125 nonblind artifacts",
+          "all Round-125 sibling reports"
+        ],
+        "required_controls": [
+          "literal_Round124_dual_offproduct_survivor",
+          "H_K_Q_normalization",
+          "bpk_profile_and_character_placement",
+          "Fejer_block_square_identity",
+          "equal_mode_offzero_vs_positive_energy",
+          "equal_mode_integer_crossings_and_curvature",
+          "unequal_mode_product_gradient_defects",
+          "unequal_mode_character_persistence",
+          "sector_intercancellation",
+          "negative_shift_conjugacy",
+          "mode_shift_multiplicity",
+          "moving_profile_and_zero_extension",
+          "stationary_endpoint_and_error_scope",
+          "signed_vs_unsigned_and_adversarial_coefficients",
+          "capacity_before_and_claimed_gain",
+          "owner_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section statement-only report.",
+          "An exact derivation of both sectors and every normalization.",
+          "A target estimate, strict saving, inverse theorem, or smallest no-go.",
+          "A promote, retain, revise, reject, or no-change recommendation."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/reports/blind_dual_offproduct_sector_rederivation.md"
+      },
+      {
+        "id": "actual_symbol_dual_sector_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "target": "Develop a genuinely noninvertible actual-symbol inequality for the equal-mode shifted and unequal-mode sectors, preserving their possible cancellation and exhibiting the full factor beyond the Q capacity deficit.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0821_full_proof_strategy.md",
+          "rounds/codex-managed/m9-m2-unbalanced-joint-stationary-lattice-gate/synthesis.md",
+          "rounds/codex-managed/m9-m2-unbalanced-joint-stationary-lattice-gate/reviews/conductor_round124_stationary_lattice_adjudication.md",
+          "rounds/codex-managed/m9-m2-unbalanced-joint-stationary-lattice-gate/reports/double_poisson_product_defect_attack.md",
+          "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/derivation_packet.md"
+        ],
+        "required_controls": [
+          "literal_Round124_dual_offproduct_survivor",
+          "H_K_Q_normalization",
+          "bpk_profile_and_character_placement",
+          "Fejer_block_square_identity",
+          "equal_mode_offzero_vs_positive_energy",
+          "equal_mode_integer_crossings_and_curvature",
+          "unequal_mode_product_gradient_defects",
+          "unequal_mode_character_persistence",
+          "sector_intercancellation",
+          "negative_shift_conjugacy",
+          "mode_shift_multiplicity",
+          "moving_profile_and_zero_extension",
+          "stationary_endpoint_and_error_scope",
+          "signed_vs_unsigned_and_adversarial_coefficients",
+          "capacity_before_and_claimed_gain",
+          "owner_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section analytic report.",
+          "Exact p-row and p-not-equal-q identities with a capacity ledger.",
+          "A proved inequality, strict sector, inverse theorem, or first invalid seam.",
+          "A precise state recommendation."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/reports/actual_symbol_dual_sector_attack.md"
+      },
+      {
+        "id": "dual_offproduct_hostile_audit",
+        "role": "seam_reviewer",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "target": "Hostilely audit sector splitting, positive p-row norms, crossing counts, character cancellation, moving profiles, endpoint ledgers, and every claimed factor in the Round-125 off-product proposal.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0821_full_proof_strategy.md",
+          "rounds/codex-managed/m9-m2-unbalanced-joint-stationary-lattice-gate/synthesis.md",
+          "rounds/codex-managed/m9-m2-unbalanced-joint-stationary-lattice-gate/reports/joint_stationary_lattice_hostile_audit.md",
+          "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/derivation_packet.md"
+        ],
+        "required_controls": [
+          "literal_Round124_dual_offproduct_survivor",
+          "H_K_Q_normalization",
+          "bpk_profile_and_character_placement",
+          "Fejer_block_square_identity",
+          "equal_mode_offzero_vs_positive_energy",
+          "equal_mode_integer_crossings_and_curvature",
+          "unequal_mode_product_gradient_defects",
+          "unequal_mode_character_persistence",
+          "sector_intercancellation",
+          "negative_shift_conjugacy",
+          "mode_shift_multiplicity",
+          "moving_profile_and_zero_extension",
+          "stationary_endpoint_and_error_scope",
+          "signed_vs_unsigned_and_adversarial_coefficients",
+          "capacity_before_and_claimed_gain",
+          "owner_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section hostile report.",
+          "A pass/fail seam table for exact identities, capacities, and endpoint scope.",
+          "The maximal safe theorem or exact fatal correction.",
+          "A precise state recommendation and parked survivor if the route fails."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/reports/dual_offproduct_hostile_audit.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "literal_input",
+        "requirement": "The proof uses the exact Round-124 b_(p,k) and complete dual off-product aggregate, not a rectangular square-root model."
+      },
+      {
+        "id": "equal_mode",
+        "requirement": "The off-zero equal-mode scalar is distinguished from the stronger positive p-row block energy, with all crossings and endpoints priced."
+      },
+      {
+        "id": "unequal_mode",
+        "requirement": "The actual chi_4(p)chi_4(q), product and gradient defects, mode multiplicities, and moving profiles survive until the claimed inequality."
+      },
+      {
+        "id": "joint_cancellation",
+        "requirement": "Possible cancellation between equal-mode shifted and unequal-mode sectors is not discarded unless separate target bounds are proved."
+      },
+      {
+        "id": "capacity",
+        "requirement": "Every norm states its capacity before use and exhibits the required factor beyond Q; unsigned capacity is not called a lower bound."
+      },
+      {
+        "id": "scope",
+        "requirement": "No flat-smooth strict-UNBAL result is promoted to complete UNBAL, hard TOP, BAL, M9-M2, M9, the quarter theorem, or an exponent without all graph bridges."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "27bd4173fbdb16e5689595a02d42d82ffa8bb514b4610ea745ce2da6e2b8b152",
+    "generated_at": "2026-08-23T02:58:29.722041+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-unbalanced-flat-wave-curvature-envelope",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Flat unbalanced prescribed-centre product-window and curvature envelope",
+        "status": "proved_internal",
+        "statement_tex": "Let D=X^delta and L=X^ell in the strict smooth unbalanced M2 residual region, and retain one frozen flat smooth component of the literal prescribed-centre wave R_(D,L)(X), including q_L, W, chi_4, the real centre, and the accepted stationary normalization. Then |R_(D,L)(X)|<<_epsilon X^epsilon min(D/L, sqrt(XL/D)+sqrt(X/(LD))). The first term follows from Abel summation and a real-centre integer-product layer cake; the second follows by resolving chi_4 on the full integer lattice, applying weighted second-derivative summation to Xk/r+/-r/4, and then taking the k-triangle with the exact k^(-1) mass. If a=delta-ell, the exponent is beta(a)=min(a,(1-a)/2). This saves X^((3a-1)/2) over divisor capacity exactly when a>1/3, but beta(a)>1/4 at every strict point 1/4<a<1/2. The bound is not character-specific and does not cover sharp, starred, clipped, hard, arithmetic-owner, or transition kernels.",
+        "dependencies": [
+          "M9-M2-unbalanced-truncated-divisor-fixed-centre-return",
+          "M9-M2-dyadic-weight-nondegeneracy",
+          "H4-Phi-regularity",
+          "Divisor-bound-elementary"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-unbalanced-prescribed-centre-wave-gate/reports/literal_unbalanced_wave_attack.md",
+            "rounds/codex-managed/m9-m2-unbalanced-prescribed-centre-wave-gate/reports/prescribed_centre_wave_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m2-unbalanced-prescribed-centre-wave-gate/reviews/hostile_round118_discovery_addendum.md",
+            "rounds/codex-managed/m9-m2-unbalanced-prescribed-centre-wave-gate/reviews/conductor_round118_curvature_run_and_scope.md",
+            "rounds/codex-managed/m9-m2-unbalanced-prescribed-centre-wave-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use this only as the sharp certified one-dimensional envelope for the flat wave. A continuation must save jointly in r and k before the k-triangle, or control the entire sparse selector and complement by a new inverse theorem."
+      },
+      {
+        "id": "M9-M2-unbalanced-coherent-sector-countermodel-no-go",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Central-run and integer phase-one coherent-sector countermodel obstruction",
+        "status": "proved_internal",
+        "statement_tex": "For the same literal flat-smooth prescribed-centre wave, the exact centre and a half-integer tie are divisor-bounded. Suppose U consecutive d asymp D select r_d in one fixed odd residue class mod 4 and |X-dr_d|<=cD/L for a sufficiently small central-lobe constant. There is C_0 such that U<<1+(D^3/(XL))^(1/2) when D^3>=C_0X and U<<1+(D^4/(XL))^(1/3) when D^3<C_0X. The mod-4 lattice gap forces r_d affine or quadratic, and separated divided differences give the two bounds; both are uniformly O(X^(1/4)L^(-1/2)+X^(1/9)L^(-1/3)). Separately, on a uniformly smooth interior stationary cell and for integer X=bA^2 with b squarefree, the complete leading phase-one sector e(sqrt(Xknu))=1 has O_epsilon(sqrt(M)X^epsilon) modes and contributes O_epsilon(sqrt(D/L)X^epsilon). For X=A^2 its literal chi_4-weighted square-sector count is O(sqrt(M)); the unsigned upper bound is O(sqrt(M)log(2L)). These results rule out the listed coherent subsets as target-sized countermodels but do not control unions of runs, nonzero coherent phases for arbitrary real X, stationary transitions, endpoints, remainders, noncentral shoulders, or the complete signed complement.",
+        "dependencies": [
+          "M9-M2-unbalanced-truncated-divisor-fixed-centre-return",
+          "M9-M2-character-factor",
+          "H4-Phi-regularity",
+          "Divisor-bound-elementary"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-unbalanced-prescribed-centre-wave-gate/reports/blind_prescribed_centre_wave_probe.md",
+            "rounds/codex-managed/m9-m2-unbalanced-prescribed-centre-wave-gate/reports/literal_unbalanced_wave_attack.md",
+            "rounds/codex-managed/m9-m2-unbalanced-prescribed-centre-wave-gate/reports/prescribed_centre_wave_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m2-unbalanced-prescribed-centre-wave-gate/reviews/hostile_round118_discovery_addendum.md",
+            "rounds/codex-managed/m9-m2-unbalanced-prescribed-centre-wave-gate/reviews/conductor_round118_square_sector_seam.md",
+            "rounds/codex-managed/m9-m2-unbalanced-prescribed-centre-wave-gate/reviews/conductor_round118_curvature_run_and_scope.md",
+            "rounds/codex-managed/m9-m2-unbalanced-prescribed-centre-wave-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Do not seek a lower bound from one central same-sign run, the exact centre, a tie, or the integer phase-one square sector. Any countermodel or upper bound must control all disconnected selectors, coherent phases, shoulders, and the signed complement in one literal norm."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-unbalanced-truncated-divisor-fixed-centre-return",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-unbalanced-prescribed-centre-wave-gate/reviews/conductor_round118_curvature_run_and_scope.md",
+            "rounds/codex-managed/m9-m2-unbalanced-prescribed-centre-wave-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The flat wave now has the exact one-dimensional envelope min(D/L,sqrt(XL/D)+sqrt(X/(LD))), but it never reaches the quarter target at a strict residual point. Continue only with a genuinely joint signed selector inequality; the tested coherent subsets, clean completion, and scalar transform routes are parked."
+      },
+      {
+        "id": "M9-M2-smooth-unbalanced-three-quarter-estimate",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-unbalanced-prescribed-centre-wave-gate/reports/blind_prescribed_centre_wave_probe.md",
+            "rounds/codex-managed/m9-m2-unbalanced-prescribed-centre-wave-gate/reports/literal_unbalanced_wave_attack.md",
+            "rounds/codex-managed/m9-m2-unbalanced-prescribed-centre-wave-gate/reports/prescribed_centre_wave_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m2-unbalanced-prescribed-centre-wave-gate/reviews/hostile_round118_discovery_addendum.md",
+            "rounds/codex-managed/m9-m2-unbalanced-prescribed-centre-wave-gate/reviews/conductor_round118_square_sector_seam.md",
+            "rounds/codex-managed/m9-m2-unbalanced-prescribed-centre-wave-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The complete joint r,k selector before the k-triangle is the smallest flat-smooth survivor. Its one-dimensional envelope saves only for delta-ell>1/3 and remains above X^(1/4); central runs and the integer phase-one sector are target-safe. Reopen only with a new joint signed inequality or inverse theorem controlling every complement."
+      },
+      {
+        "id": "GC-W7-16-actual-reduced-determinant-correlation",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-unbalanced-prescribed-centre-wave-gate/reports/prescribed_centre_wave_hostile_source_audit.md",
+            "rounds/codex-managed/m9-m2-unbalanced-prescribed-centre-wave-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The analogous prescribed-centre UNBAL probe yields no transferable target estimate: scalar curvature, a single coherent run, and an integer phase-one sector remain insufficient. The graded determinant lane still requires long-lift control or a genuinely joint signed product-wave inequality."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round118-exact-centre-is-a-target-sized-countermodel",
+        "reason": "The exact product level exists only for integer X and is bounded by the divisor function times Q_L(0), hence X^epsilon."
+      },
+      {
+        "id": "Round118-half-integer-tie-forces-positivity-or-cancellation",
+        "reason": "The two nearest integer product levels have different divisor sets and profiles. Each is divisor-bounded; no termwise conjugate pairing or positive full wave follows."
+      },
+      {
+        "id": "Round118-prime-power-or-divisor-rich-centre-falsifies-the-wave",
+        "reason": "Prime, square, fourth-power, and divisor-rich exact levels are divisor-bounded. Across the full window they recover only the existing D/L capacity and no complement sign."
+      },
+      {
+        "id": "Round118-positive-near-centre-core-is-a-lower-bound",
+        "reason": "A sufficiently small kernel core has a common real direction, but chi_4 has both signs, the physical normalization rotates it, and every shoulder and complementary product remains uncontrolled."
+      },
+      {
+        "id": "Round118-single-same-character-run-falsifies-the-target",
+        "reason": "The mod-4 lattice gap and divided differences give the target-safe actual-scale bounds in the coherent-run obstruction. A selected run also cannot lower-bound its signed complement."
+      },
+      {
+        "id": "Round118-integer-phase-one-square-sector-falsifies-the-target",
+        "reason": "Its interior leading stationary contribution is O_epsilon(sqrt(D/L)X^epsilon), target-safe throughout the strict range. Other real-X coherent phases and the nonsquare complement remain open rather than supporting this countermodel."
+      },
+      {
+        "id": "Round118-row-curvature-closes-a-strict-residual-cell",
+        "reason": "The exponent min(a,(1-a)/2) is strictly above 1/4 for every strict 1/4<a<1/2, although it saves over absolute capacity for a>1/3."
+      },
+      {
+        "id": "Round118-clean-r2-completion-or-second-transform-contracts",
+        "reason": "The literal truncated divisor orientation is not r_2/4, and coefficient-preserving Poisson or B-process inversion returns the same physical packet and capacity."
+      },
+      {
+        "id": "Round118-external-divisor-or-Voronoi-theorem-directly-applies",
+        "reason": "The audited sources fail at the moving truncated coefficient, prescribed real centre, profile, pointwise norm, power saving, or endpoint hypotheses."
+      },
+      {
+        "id": "Round118-Round117-savings-transfer-to-UNBAL",
+        "reason": "The determinant lane has different scales and norms. Only the algebraic product-wave warning transfers; neither Y^(1/8) nor Y^(1/6) is an UNBAL exponent saving."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M2-smooth-unbalanced-three-quarter-estimate",
+        "reason": "The complete joint signed selector still lacks the factor needed for X^(1/4+epsilon), and endpoint packages remain outside the flat result."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Hard TOP, BAL, and complete UNBAL remain open."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "Neither direct M1 physical parent is estimated in this campaign."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "The analytic parents remain open and this round excludes endpoint kernels."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain open."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "Its full M9 hypothesis remains open."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The new wave envelope is an orientation of the accepted direct menu and gives no uniform exponent below one third."
+      },
+      {
+        "id": "GC-W7-16-actual-reduced-determinant-correlation",
+        "reason": "No Round-118 estimate reaches the Y^(1/2) determinant target or transfers the UNBAL scales."
+      },
+      {
+        "id": "GC-target",
+        "reason": "No all-parent quarter theorem or improved uniform exponent is proved."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 6,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 118 rigorously calibrates the literal fixed-centre wave: it certifies the exact one-dimensional curvature envelope, repairs and proves a uniform same-residue run obstruction, controls the integer phase-one stationary sector, and rules out the proposed coherent countermodels and all audited source imports. The full joint selector, every endpoint package, all M9 parents, and every exponent remain open."
+  }
+}

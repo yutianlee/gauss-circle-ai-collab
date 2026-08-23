@@ -1,0 +1,220 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "GC-W7-16-post-inner-shell-support-refinement",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Post-inner reduced-denominator shell support refinement",
+        "status": "proved_internal",
+        "statement_tex": "Fix W=Y^(7/16), D=Y^(1/2), L=Y^(1/6), one literal M1 or M2 fixed stratum, and one half-open inner reduced-denominator shell b' asymp B with D/L<=B<=D. After the exact Stieltjes thresholds have recombined to the physical complete-lift coefficient, support forces g asymp D/B and |a'| asymp LB/D, so for each outer ray the signed inner-numerator support has O(LB/D) integers. The Round-129 branch and divisor theorem gives K_B/L for each fixed outer ray and inner numerator, while outer Cauchy gives sum_r |A_i(r)|<<D. Consequently |O_(i,B)^+|<<_epsilon B K_B Y^epsilon, where K_B=min(Q_B,Q_B sqrt(lambda_B)+lambda_B^(-1/2)) asymp Y^(11/48+o(1)). Thus every range B<=D Y^(-sigma) gains Y^(-sigma) over D K_B, the smallest shell costs Y^(9/16+o(1)), and the complete block is localized to B asymp D. The top shell still costs Y^(35/48+o(1)), so the complete exponent and every global exponent remain unchanged. The support count is not asserted for each separated Stieltjes threshold atom.",
+        "dependencies": [
+          "GC-W7-16-reduced-Farey-cluster-reduction",
+          "GC-W7-16-direct-Stieltjes-birth-block-curvature-lemma"
+        ],
+        "implies": [
+          "GC-W7-16-complete-all-shell-curvature-saving",
+          "GC-W7-16-actual-reduced-determinant-correlation"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/reports/actual_numerator_increment_recombination_attack.md",
+            "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/reviews/independent_shell_refinement_and_inversion_audit.md",
+            "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/reviews/conductor_round130_post_inner_adjudication.md",
+            "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use B K_B shellwise and discard lower shells with a fixed margin. Concentrate any future graded correlation attack on the exact signed bounded-lift B asymp D scalar."
+      },
+      {
+        "id": "GC-W7-16-top-shell-determinant-residue-reindexing",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Primitive top-shell determinant-residue bounded-multiplicity chart",
+        "status": "proved_internal",
+        "statement_tex": "After Möbius pieces are reassembled to the physical primitive inner ray, fix one primitive top-shell outer ray (a,b), put a'=a+p, b'=b+q, and n=ab'-a'b. Then n=aq-bp, b'={b(a+p)+n}/a, and n is congruent to -bp modulo |a|. If the literal p-support is a bounded union of intervals of total span O(|a|), as on the top shell |a| asymp L, every fixed n has O(1) admissible p-lifts and q is forced. Thus p is an induced determinant-residue lift rather than an independent Cartesian long variable. The statement is per fixed outer ray, top-shell only, and after physical reassembly; it does not bound multiplicity when the outer ray varies. The M1 denominator and M2 numerator characters pull back to induced residue weights, not automatically clean characters of n, and the same-denominator aligned packets show that bounded multiplicity alone gives no cancellation.",
+        "dependencies": [
+          "GC-W7-16-reduced-Farey-cluster-reduction"
+        ],
+        "implies": [
+          "GC-W7-16-actual-reduced-determinant-correlation"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/candidates/conductor_determinant_residue_outer_gram.md",
+            "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/reviews/blind_post_unmask_outer_gram_seam.md",
+            "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/reviews/hostile_determinant_residue_gram_addendum.md",
+            "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/reviews/conductor_round130_post_inner_adjudication.md",
+            "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "If this interface is reopened, write the exact induced M1/M2 residue weights including thresholds and owners, and prove a literal complete-class signed estimate. Do not assign an independent square-root gain to p."
+      },
+      {
+        "id": "GC-W7-16-post-inner-outer-energy-obstruction",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Post-inner positive outer-energy and full-completion obstruction",
+        "status": "proved_internal",
+        "statement_tex": "Let H be the exact literal incidence map from increment, divisor, and branch labels to outer rays after the Round-129 inner theorem. The resolved row is F=H 1 and its exact atom-space energy is 1^* H^* H 1; after physical primitive reassembly the same ray-space energy is b^* K_(B,+)^* K_(B,+) b. The complete symmetric triangular random-cell operator G instead satisfies ||G b||_2^2=b^*G^2b. No connector or positive-order comparison identifies the resolved energy with G^2, because shell, orientation, diagonal, and mixed cross terms have no proved sign. A support- and scale-matched phase-aligned control satisfying the displayed outer pointwise and l2 facts and inner K_B/L entry size has resolved energy L D K_B^2 and scalar size D K_B. Therefore the marginal support, pointwise, and energy hypotheses do not imply either the target energy L D or a scalar saving. Positive energy is an all-directions problem strictly stronger than the single physical scalar. This is a coefficient-interface obstruction, not a lower bound for the actual Vaaler family.",
+        "dependencies": [
+          "GC-W7-16-reduced-Farey-cluster-reduction",
+          "GC-W7-16-direct-Stieltjes-birth-block-curvature-lemma"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/reports/blind_outer_bilinear_dual_feasibility.md",
+            "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/reports/outer_ray_bilinear_hostile_audit.md",
+            "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/reviews/blind_post_unmask_outer_gram_seam.md",
+            "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/reviews/hostile_determinant_residue_gram_addendum.md",
+            "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/reviews/conductor_round130_post_inner_adjudication.md",
+            "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Do not replace the physical scalar by a target outer square function without proving the exact actual-family Gram theorem. Prefer a direct actual-coefficient scalar correlation or prove the required vector connector and spectral exclusion explicitly."
+      }
+    ],
+    "update": [
+      {
+        "id": "GC-W7-16-complete-all-shell-curvature-saving",
+        "statement_tex": "For the complete literal W=Y^(7/16), D=Y^(1/2), L=Y^(1/6) fixed determinant block, decompose the inner reduced denominator into half-open shells D/L<=B<=D. The direct character-Stieltjes birth-block lemma and Möbius divisor sum give K_B/L for fixed outer ray and inner numerator. Exact recombined complete-lift support gives only O(LB/D) inner numerators on shell B, while outer Cauchy gives sum_r|A_i(r)|<<D; hence each shell costs B K_B. Uniformly for B=Y^b, 1/3<=b<=1/2, K_B asymp Y^(11/48+o(1)), so lower shells gain B/D and every B<=D Y^(-sigma) gains Y^(-sigma). The top B asymp D shell remains D K_D=Y^(35/48+o(1)), and logarithmic assembly gives O_epsilon(Y^(35/48+epsilon)) for the complete fixed block. This includes the separately target-safe equal-ray diagonal, threshold equality residuals, both M1 branches, M2, and all literal owners. It remains Y^(11/48) above the Y^(1/2) determinant target and yields no global exponent improvement.",
+        "dependencies_added": [
+          "GC-W7-16-post-inner-shell-support-refinement"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/reviews/conductor_round130_post_inner_adjudication.md",
+            "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Use the sharpened B K_B ledger to discard all lower shells with a proportional margin. The sole exponent-critical graded residual is the literal signed B asymp D scalar at Y^(35/48)."
+      },
+      {
+        "id": "GC-W7-16-actual-reduced-determinant-correlation",
+        "dependencies_added": [
+          "GC-W7-16-post-inner-shell-support-refinement",
+          "GC-W7-16-top-shell-determinant-residue-reindexing",
+          "GC-W7-16-post-inner-outer-energy-obstruction"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/synthesis.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/reports/blind_outer_bilinear_dual_feasibility.md",
+            "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/reports/outer_ray_bilinear_hostile_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/reports/actual_numerator_increment_recombination_attack.md"
+          ]
+        },
+        "next_action": "The complete best remains Y^(35/48), but every lower shell is now strictly cheaper. Prove a direct actual-coefficient saving on the bounded-lift B asymp D scalar, retaining determinant residue weights, thresholds, reciprocal aliases, outer coefficients, and characters before a norm. Any fixed delta>0 is new local progress; delta=11/48 reaches the determinant target."
+      },
+      {
+        "id": "GC-W7-16-original-numerator-product-window-bound",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/reports/actual_numerator_increment_recombination_attack.md",
+            "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/reviews/independent_shell_refinement_and_inversion_audit.md"
+          ]
+        },
+        "next_action": "Exact Stieltjes, Möbius, and complete-lift inversion returns this original product wave only after all half-open reduced-denominator owners are reassembled. It then gives Y^(37/48), worse than the current Y^(35/48); do not infer the same bound for an isolated top owner without rerunning the owner-compatible proof."
+      },
+      {
+        "id": "GC-W7-16-determinant-half-shift-transform-obstruction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/reports/actual_numerator_increment_recombination_attack.md",
+            "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/reports/outer_ray_bilinear_hostile_audit.md",
+            "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/reviews/independent_shell_refinement_and_inversion_audit.md"
+          ]
+        },
+        "next_action": "Round 130 reconfirms the top-shell return: p-first product-window modulus costs D^2/L and the complete two-variable aliaswise transform costs D Q_*, both worse than D K_D. Do not repeat these positive-norm continuations; only an actual signed threshold/residue/outer-ray correlation remains eligible."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round130-marginal-support-and-outer-L2-imply-target-energy",
+        "reason": "A support- and norm-matched aligned incidence control has energy L D K_B^2, missing the target L D by K_B^2."
+      },
+      {
+        "id": "Round130-positive-outer-energy-is-equivalent-to-physical-scalar",
+        "reason": "Positive energy optimizes over every outer phase direction, while the physical scalar tests only the actual complete-lift coefficient direction; the energy is strictly stronger."
+      },
+      {
+        "id": "Round130-resolved-post-inner-energy-equals-b-star-G2-b",
+        "reason": "The exact resolved operators are H^*H in atom coordinates and K_(B,+)^*K_(B,+) in physical ray coordinates. G^2 belongs only to a fully completed symmetric row, with uncontrolled mixed cross terms."
+      },
+      {
+        "id": "Round130-independent-numerator-square-root-credit",
+        "reason": "For a fixed primitive top-shell outer ray, p is a bounded-multiplicity residue lift of n=aq-bp, not an independent Cartesian long variable."
+      },
+      {
+        "id": "Round130-M1-M2-character-splitting-removes-product-resonances",
+        "reason": "Exact same-denominator packets align the M1 carrier and character product and likewise the M2 carrier with its numerator-character product."
+      },
+      {
+        "id": "Round130-p-first-product-window-improves-Y35over48",
+        "reason": "The lawful top-shell p-first product-window modulus returns D^2/L=Y^(40/48), worse than the accepted Y^(35/48)."
+      },
+      {
+        "id": "Round130-sequential-unit-Hessian-transform-improves-Y35over48",
+        "reason": "The transform is invertible, quarter shifts only translate aliases, and aliaswise modulus returns D Q_*=Y^(43/48)."
+      },
+      {
+        "id": "Round130-lower-shell-BKB-refinement-improves-complete-or-global-exponent",
+        "reason": "The top B asymp D shell remains Y^(35/48), so neither the complete fixed-block exponent nor its persistence exponent changes."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "Both direct one-third-critical parents and the lower-GAR alternative remain open."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Hard TOP, BAL, and every UNBAL owner remain open."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "No uniform all-owner endpoint estimate is proved."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain open."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The bridge remains conditional on the complete open M9 hypothesis."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The complete graded exponent remains 35/48 and gives no persistence below the proved internal one-third theorem."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The quarter target still lacks both M9 components, endpoint uniformity, and the final unconditional bridge."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 8,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 130 proves the exact B K_B shell refinement and localizes the complete graded obstruction to the bounded-lift top shell. Independent blind, discovery, hostile, and post-unmask reviews also certify the exact resolved Gram distinction, the primitive determinant-residue chart, and scoped product-window and unit-Hessian no-gos. No complete exponent or M9 parent changes."
+  }
+}

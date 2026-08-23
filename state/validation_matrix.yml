@@ -1,33 +1,784 @@
 {
   "schema_version": 1,
-  "campaign_id": "m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation",
-  "promotion_status": "round_113_literal_dictionary_connector_certified_signed_estimate_open",
-  "graph_sha256": "411adc0c93d2451dfc1235840f27063b3ef4869d0c67aebfbbc74fe9ef04387c",
+  "campaign_id": "gc-w7-16-local-transverse-lift-variation-gate",
+  "promotion_status": "round_128_character_split_local_V2_patch_applied",
+  "graph_sha256": "476b1445ef73d86627fd87de8bd2dd76a5efa53564a5b195230f2ad33ba2bbe8",
   "gates": [
-    {"id": "denominator_partition", "status": "green_exact_telescope_unique_j0_hard_profile", "artifact": "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/reviews/conductor_round113_dictionary_and_normalization.md"},
-    {"id": "frequency_partition", "status": "green_exact_telescope_unique_r0_clip_bottom_retained", "artifact": "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/reports/blind_atom_dictionary_rederivation.md"},
-    {"id": "empty_small_height", "status": "green_H1_H2_have_no_full_residual_label", "artifact": "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/reports/literal_atom_dictionary_constructor.md"},
-    {"id": "d0_phase", "status": "green_whole_d0_summand_defined_zero_equivalently_d_ge_1", "artifact": "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/reports/literal_atom_dictionary_constructor.md"},
-    {"id": "physical_normalization", "status": "green_outer_four_times_frequency_pair_gives_eight_real_part", "artifact": "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/reviews/conductor_round113_dictionary_and_normalization.md"},
-    {"id": "stationary_normalization", "status": "green_minus_e_one_eighth_over_two_pi", "artifact": "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/reports/atom_dictionary_hostile_seam_audit.md"},
-    {"id": "balanced_ratio", "status": "green_j1_persistent_j2_exact_square_boundary_only", "artifact": "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/reviews/conductor_round113_dictionary_and_normalization.md"},
-    {"id": "continuum_symbol", "status": "green_positive_quadrant_extension_agrees_on_integer_coefficients", "artifact": "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/reports/literal_atom_dictionary_constructor.md"},
-    {"id": "support_crossings", "status": "green_slanted_smooth_factor_and_transform_error_owned_once", "artifact": "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/reports/atom_dictionary_hostile_seam_audit.md"},
-    {"id": "profile_seminorms", "status": "green_uniform_after_continuum_repair", "artifact": "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/reports/blind_atom_dictionary_rederivation.md"},
-    {"id": "gcd_telescope", "status": "green_exact_integer_bottom_and_unique_high_boundary_owner", "artifact": "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/reviews/conductor_round113_ownership_and_scope.md"},
-    {"id": "quarter_packet", "status": "green_one_quarter_minus_three_quarters_with_one_over_two_i", "artifact": "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/reports/literal_atom_dictionary_constructor.md"},
-    {"id": "frequency_conjugacy", "status": "green_Q_minus_R_equals_minus_conjugate_Q_R", "artifact": "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/reviews/conductor_round113_ownership_and_scope.md"},
-    {"id": "owner_priority", "status": "green_high_then_square_then_nonsquare_near_with_frozen_equalities", "artifact": "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/reports/atom_dictionary_hostile_seam_audit.md"},
-    {"id": "physical_one_count", "status": "green_high_square_near_residual_transform_error_exact_equation", "artifact": "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/reviews/conductor_round113_ownership_and_scope.md"},
-    {"id": "false_masks_and_models", "status": "green_no_arithmetic_mask_unsigned_or_adversarial_inference", "artifact": "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/controls/conductor_round113_controls.md"},
-    {"id": "block_scope", "status": "green_modulus_per_fixed_physical_block_no_cross_DL_cancellation", "artifact": "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/synthesis.md"},
-    {"id": "capacity", "status": "green_identity_preserves_capacity_worst_deficit_X_one_twelfth", "artifact": "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/synthesis.md"},
-    {"id": "actual_signed_target", "status": "open_no_bound_or_actual_symbol_lower_obstruction", "artifact": "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/synthesis.md"},
-    {"id": "blind_gate", "status": "green_statement_only_rederivation_and_counterexample_to_unrepaired_interpolation", "artifact": "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/reports/blind_atom_dictionary_rederivation.md"},
-    {"id": "hostile_gate", "status": "green_repaired_dictionary_and_first_analytic_gap_certified", "artifact": "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/reports/atom_dictionary_hostile_seam_audit.md"},
-    {"id": "artifact_hygiene", "status": "green_utf8_lf_seven_sections_balanced_TeX_no_controls_or_trailing_whitespace", "artifact": "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/controls/conductor_round113_controls.md"},
-    {"id": "state_patch", "status": "applied_1_created_4_updated_8_rejected_graph_validated_unittest_pass", "artifact": "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/state_patch.json"},
-    {"id": "downstream_scope", "status": "green_signed_packet_hard_unbalanced_M9_components_endpoint_and_exponent_open", "artifact": "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/synthesis.md"}
+    {
+      "id": "literal_lower_reciprocal_antecedent",
+      "status": "green_exact_profiles_floors_H_plus_one_stars_hard_sample_both_signs",
+      "artifact": "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/reports/literal_character_paired_height_kernel_attack.md"
+    },
+    {
+      "id": "external_R_normalization",
+      "status": "green_exactly_one_R_and_target_B_low_O_R_Xepsilon",
+      "artifact": "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/reviews/conductor_round121_flattening_and_pairing_adjudication.md"
+    },
+    {
+      "id": "profile_first_aggregation",
+      "status": "green_finite_reordering_no_cancellation_claimed",
+      "artifact": "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/reports/blind_lower_height_kernel_rederivation.md"
+    },
+    {
+      "id": "bottom_and_active_one_count",
+      "status": "green_cutoff_relative_to_certified_Cb_and_hard_sample_retained",
+      "artifact": "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/reports/lower_height_kernel_hostile_audit.md"
+    },
+    {
+      "id": "Vaaler_error_BV",
+      "status": "green_value_and_derivative_quadratic_suppression",
+      "artifact": "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/reports/literal_character_paired_height_kernel_attack.md"
+    },
+    {
+      "id": "smooth_weighted_separation",
+      "status": "green_Cinfinity_weighted_Wiener_repair_not_bare_C1",
+      "artifact": "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/reviews/conductor_round121_flattening_and_pairing_adjudication.md"
+    },
+    {
+      "id": "full_profile_flattening",
+      "status": "green_both_signs_O_R_Xepsilon_full_lower_cutoff",
+      "artifact": "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/synthesis.md"
+    },
+    {
+      "id": "integer_phase",
+      "status": "green_change_phase_only_absolute_O_R",
+      "artifact": "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/reports/blind_lower_height_kernel_rederivation.md"
+    },
+    {
+      "id": "Fourier_completion",
+      "status": "green_explicit_sample_interpolant_sign_N_plus_k_and_d_divides_zero",
+      "artifact": "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/reports/literal_character_paired_height_kernel_attack.md"
+    },
+    {
+      "id": "all_integer_discrepancy",
+      "status": "green_floor_formula_every_k_and_exact_Abel_shift",
+      "artifact": "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/reports/blind_lower_height_kernel_rederivation.md"
+    },
+    {
+      "id": "interpolation_scope",
+      "status": "green_growing_seminorms_no_uniform_bound_inferred",
+      "artifact": "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/reports/lower_height_kernel_hostile_audit.md"
+    },
+    {
+      "id": "mod_four_pairing",
+      "status": "green_exact_zero_extended_identity_all_boundary_pairs",
+      "artifact": "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/reports/literal_character_paired_height_kernel_attack.md"
+    },
+    {
+      "id": "amplitude_seams",
+      "status": "green_full_log_squared_and_flat_log",
+      "artifact": "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/reports/lower_height_kernel_hostile_audit.md"
+    },
+    {
+      "id": "integer_increment_subpackage",
+      "status": "green_O_R_log_X_target_safe",
+      "artifact": "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/reports/literal_character_paired_height_kernel_attack.md"
+    },
+    {
+      "id": "resonance_tubewise_capacity",
+      "status": "green_R_three_halves_local_norm_obstruction_not_signed_lower_bound",
+      "artifact": "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/reports/lower_height_kernel_hostile_audit.md"
+    },
+    {
+      "id": "old_return_map",
+      "status": "green_global_sharp_Round64_65_return_no_saving_claimed",
+      "artifact": "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/synthesis.md"
+    },
+    {
+      "id": "statement_only_gate",
+      "status": "green_independent_pair_derivation_and_second_stage_line_audit",
+      "artifact": "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/reports/blind_lower_height_kernel_rederivation.md"
+    },
+    {
+      "id": "hostile_gate",
+      "status": "green_boundaries_resonances_false_analogues_and_implications",
+      "artifact": "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/reports/lower_height_kernel_hostile_audit.md"
+    },
+    {
+      "id": "artifact_hygiene",
+      "status": "green_14_UTF8_LF_no_C0_replacement_or_trailing",
+      "artifact": "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/controls/conductor_round121_controls.md"
+    },
+    {
+      "id": "unit_tests",
+      "status": "green_six_of_six_and_compileall",
+      "artifact": "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/controls/conductor_round121_controls.md"
+    },
+    {
+      "id": "campaign_validation",
+      "status": "green_complete",
+      "artifact": "state/active_campaign.yml"
+    },
+    {
+      "id": "state_patch",
+      "status": "applied_2_create_6_update_9_reject_graph_validated",
+      "artifact": "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/state_patch.json"
+    },
+    {
+      "id": "downstream_scope",
+      "status": "green_lower_GAR_and_all_M9_parents_open_no_exponent_change",
+      "artifact": "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/synthesis.md"
+    },
+    {
+      "id": "round122_uniform_wavelet_envelope",
+      "status": "green_two_transition_scales_and_explicit_y_dependent_derivative_norms",
+      "artifact": "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/reports/blind_near_square_divisor_involution.md"
+    },
+    {
+      "id": "round122_tail_and_positive_window",
+      "status": "green_far_DW_tail_target_safe_and_all_retained_intervals_positive",
+      "artifact": "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/reports/literal_two_adic_complementary_divisor_attack.md"
+    },
+    {
+      "id": "round122_central_k_window",
+      "status": "green_complete_modulus_bound_O_R_X_epsilon",
+      "artifact": "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/candidates/conductor_wavelet_localization_and_two_adic_split.md"
+    },
+    {
+      "id": "round122_centering_and_high_two_adic",
+      "status": "green_localized_centering_tail_and_exact_cumulative_projection",
+      "artifact": "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/reports/near_square_complement_hostile_audit.md"
+    },
+    {
+      "id": "round122_all_two_adic_complement",
+      "status": "green_odd_part_map_every_residue_strict_cutoff_and_hard_sample",
+      "artifact": "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/reports/blind_near_square_divisor_involution.md"
+    },
+    {
+      "id": "round122_squares_and_central_boundaries",
+      "status": "green_q_equal_y_fixed_point_once_and_even_bands_wide",
+      "artifact": "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/reports/literal_two_adic_complementary_divisor_attack.md"
+    },
+    {
+      "id": "round122_odd_central_factor_pairs",
+      "status": "green_ordered_pair_box_and_cumulative_wavelet_target_safe",
+      "artifact": "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/reports/near_square_complement_hostile_audit.md"
+    },
+    {
+      "id": "round122_overlap_and_survivor",
+      "status": "green_centering_high_valuation_and_half_central_overlap_exact",
+      "artifact": "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/reviews/conductor_round122_complement_adjudication.md"
+    },
+    {
+      "id": "round122_self_return_and_circularity",
+      "status": "green_negative_residue_self_return_full_circle_piece_left_open",
+      "artifact": "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/synthesis.md"
+    },
+    {
+      "id": "round122_statement_only_gate",
+      "status": "green_independent_derivation_and_supersession_audit",
+      "artifact": "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/reports/blind_near_square_divisor_involution.md"
+    },
+    {
+      "id": "round122_hostile_gate",
+      "status": "green_all_seams_controls_and_exact_smallest_survivor",
+      "artifact": "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/reports/near_square_complement_hostile_audit.md"
+    },
+    {
+      "id": "round122_campaign_validation",
+      "status": "green_complete",
+      "artifact": "state/active_campaign.yml"
+    },
+    {
+      "id": "round122_state_patch",
+      "status": "applied_2_create_6_update_10_reject_graph_validated",
+      "artifact": "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/state_patch.json"
+    },
+    {
+      "id": "round122_downstream_scope",
+      "status": "green_lower_GAR_and_all_M9_parents_open_no_exponent_change",
+      "artifact": "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/synthesis.md"
+    },
+    {
+      "id": "round123_physical_integerization",
+      "status": "green_movable_integer_centre_cost_one_plus_distance_Xepsilon",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/reviews/conductor_round123_integerization_gram_adjudication.md"
+    },
+    {
+      "id": "round123_ordinary_gram_scope",
+      "status": "green_one_way_only_diagonal_R_above_square_target",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/reports/blind_integer_gram_rederivation.md"
+    },
+    {
+      "id": "round123_alias_factor_and_character",
+      "status": "green_unique_alias_exact_product_identity_all_two_adic_signs",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/reports/signed_alias_product_attack.md"
+    },
+    {
+      "id": "round123_shifted_kernel",
+      "status": "green_exact_prefactor_both_profiles_and_two_reciprocal_selectors",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/reviews/independent_shifted_gram_candidate_audit.md"
+    },
+    {
+      "id": "round123_complete_zero_alias",
+      "status": "green_all_shifted_self_correlations_and_off_diagonal_zero_aliases_target_safe",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/reviews/hostile_shifted_zero_alias_addendum.md"
+    },
+    {
+      "id": "round123_exact_and_far_aliases",
+      "status": "green_nonzero_exact_aliases_global_divisor_small_and_far_defects_rapid",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/reviews/conductor_round123_integerization_gram_adjudication.md"
+    },
+    {
+      "id": "round123_power_excess_inverse",
+      "status": "green_fixed_eta_complete_signed_nonzero_nonexact_near_alias_survivor",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/synthesis.md"
+    },
+    {
+      "id": "round123_capacity_and_two_adic_controls",
+      "status": "green_density_heuristic_not_promoted_and_near_congruence_tautological",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/reviews/conductor_round123_integerization_gram_adjudication.md"
+    },
+    {
+      "id": "round123_fixed_alias_derivative_no_go",
+      "status": "green_active_transverse_modes_and_interior_shifted_crossings_no_lower_bound",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/reviews/hostile_alias_curve_no_go_audit.md"
+    },
+    {
+      "id": "round123_statement_only_gate",
+      "status": "green_independent_rederivation_and_second_stage_formula_repairs",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/reports/blind_integer_gram_rederivation.md"
+    },
+    {
+      "id": "round123_hostile_gate",
+      "status": "green_integerization_gram_zero_alias_and_derivative_seams",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/reviews/hostile_alias_curve_no_go_audit.md"
+    },
+    {
+      "id": "round123_artifact_hygiene",
+      "status": "green_UTF8_LF_no_C0_replacement_trailing_or_delimiter_errors",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/controls/conductor_round123_controls.md"
+    },
+    {
+      "id": "round123_unit_tests",
+      "status": "green_six_of_six_and_compileall",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/controls/conductor_round123_controls.md"
+    },
+    {
+      "id": "round123_campaign_validation",
+      "status": "green_complete",
+      "artifact": "state/active_campaign.yml"
+    },
+    {
+      "id": "round123_state_patch",
+      "status": "applied_2_create_4_update_12_reject_graph_validated",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/state_patch.json"
+    },
+    {
+      "id": "round123_downstream_scope",
+      "status": "green_flat_smooth_UNBAL_and_all_parents_open_no_exponent_change",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-reciprocal-gram-factorization-gate/synthesis.md"
+    },
+    {
+      "id": "round124_unmasked_stationary_transform",
+      "status": "green_complete_rowwise_transform_aggregate_O1_error",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-joint-stationary-lattice-gate/reviews/conductor_round124_stationary_lattice_adjudication.md"
+    },
+    {
+      "id": "round124_character_signs_and_scalar_saddles",
+      "status": "green_both_quarter_classes_gaussian_units_profiles_and_zero_extension",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-joint-stationary-lattice-gate/reports/blind_joint_stationary_lattice_rederivation.md"
+    },
+    {
+      "id": "round124_dual_product_diagonal",
+      "status": "green_p_equals_q_h_zero_one_count_square_target_safe",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-joint-stationary-lattice-gate/reports/double_poisson_product_defect_attack.md"
+    },
+    {
+      "id": "round124_offproduct_inverse_reduction",
+      "status": "green_full_minus_safe_scalar_identity_two_complete_dual_sectors",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-joint-stationary-lattice-gate/reviews/conductor_round124_stationary_lattice_adjudication.md"
+    },
+    {
+      "id": "round124_product_gradient_alias_correction",
+      "status": "green_G_equals_N_minus_p_plus_q_times_h_and_Estar_identity",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-joint-stationary-lattice-gate/reports/double_poisson_product_defect_attack.md"
+    },
+    {
+      "id": "round124_physical_selector_scope",
+      "status": "green_not_transported_rowwise_full_minus_safe_only",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-joint-stationary-lattice-gate/reports/joint_stationary_lattice_hostile_audit.md"
+    },
+    {
+      "id": "round124_joint_principal_phase_return",
+      "status": "green_interior_Hessian_Legendre_and_inverse_map_no_complete_endpoint_claim",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-joint-stationary-lattice-gate/reviews/conductor_round124_stationary_lattice_adjudication.md"
+    },
+    {
+      "id": "round124_capacity_scope",
+      "status": "green_D2_and_D2_over_L_unsigned_diagnostics_not_lower_bounds",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-joint-stationary-lattice-gate/reports/joint_stationary_lattice_hostile_audit.md"
+    },
+    {
+      "id": "round124_statement_only_gate",
+      "status": "green_independent_full_stationary_transform_diagonal_and_self_return",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-joint-stationary-lattice-gate/reports/blind_joint_stationary_lattice_rederivation.md"
+    },
+    {
+      "id": "round124_hostile_gate",
+      "status": "green_selector_capacity_endpoint_and_downstream_scope",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-joint-stationary-lattice-gate/reports/joint_stationary_lattice_hostile_audit.md"
+    },
+    {
+      "id": "round124_artifact_hygiene",
+      "status": "green_UTF8_LF_no_control_trailing_or_delimiter_errors",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-joint-stationary-lattice-gate/controls/conductor_round124_controls.md"
+    },
+    {
+      "id": "round124_unit_tests",
+      "status": "green_six_of_six_and_compileall",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-joint-stationary-lattice-gate/controls/conductor_round124_controls.md"
+    },
+    {
+      "id": "round124_campaign_validation",
+      "status": "green_complete",
+      "artifact": "state/active_campaign.yml"
+    },
+    {
+      "id": "round124_state_patch",
+      "status": "applied_2_create_4_update_11_reject_graph_validated",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-joint-stationary-lattice-gate/state_patch.json"
+    },
+    {
+      "id": "round124_downstream_scope",
+      "status": "green_flat_smooth_UNBAL_and_all_parents_open_no_exponent_change",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-joint-stationary-lattice-gate/synthesis.md"
+    },
+    {
+      "id": "round125_full_character_energy_identity",
+      "status": "green_endpoint_complete_Echi_D0_sector_recombination",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/reviews/conductor_round125_dual_sector_adjudication.md"
+    },
+    {
+      "id": "round125_negative_tail",
+      "status": "green_target_safe_by_Echi_positivity_and_diagonal",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/reports/blind_dual_offproduct_sector_rederivation.md"
+    },
+    {
+      "id": "round125_positive_target_equivalence",
+      "status": "green_exactly_Echi_upper_bound_retained_open",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/synthesis.md"
+    },
+    {
+      "id": "round125_sector_intercancellation",
+      "status": "green_exact_two_row_fixed_power_coefficient_blind_no_go",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/reports/blind_dual_offproduct_sector_rederivation.md"
+    },
+    {
+      "id": "round125_fixed_row_curvature_bound",
+      "status": "green_complete_Xhalf_times_min_H_Q_not_target",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/reports/actual_symbol_dual_sector_attack.md"
+    },
+    {
+      "id": "round125_crossing_regime",
+      "status": "green_dual_Q_labels_primal_H_spacings_and_min_H_Q_ledger",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/reports/dual_offproduct_hostile_audit.md"
+    },
+    {
+      "id": "round125_principal_reciprocal_packet",
+      "status": "green_strict_interior_minus_2i_over_p_profile_and_self_return_only",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/reviews/conductor_round125_dual_sector_adjudication.md"
+    },
+    {
+      "id": "round125_half_integer_alias",
+      "status": "green_A_Estar_lattice_factor_and_odd_alias_sign",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/reports/dual_offproduct_hostile_audit.md"
+    },
+    {
+      "id": "round125_moving_p_window",
+      "status": "green_fatal_fixed_n_d_dprime_length_one_over_H_and_floor_overlap",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/reports/actual_symbol_dual_sector_attack.md"
+    },
+    {
+      "id": "round125_endpoint_scope",
+      "status": "green_principal_only_no_complete_B_process_or_near_defect_claim",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/reports/dual_offproduct_hostile_audit.md"
+    },
+    {
+      "id": "round125_statement_only_gate",
+      "status": "green_independent_energy_identity_and_sectorization_adversary",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/reports/blind_dual_offproduct_sector_rederivation.md"
+    },
+    {
+      "id": "round125_hostile_gate",
+      "status": "green_capacity_alias_moving_window_endpoint_and_scope_repairs",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/reports/dual_offproduct_hostile_audit.md"
+    },
+    {
+      "id": "round125_artifact_hygiene",
+      "status": "green_authored_UTF8_LF_no_control_replacement_trailing_or_delimiters",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/controls/conductor_round125_controls.md"
+    },
+    {
+      "id": "round125_unit_tests",
+      "status": "green_six_of_six_compileall_and_diff_check",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/controls/conductor_round125_controls.md"
+    },
+    {
+      "id": "round125_campaign_validation",
+      "status": "green_complete",
+      "artifact": "state/active_campaign.yml"
+    },
+    {
+      "id": "round125_state_patch",
+      "status": "applied_2_create_5_update_12_reject_graph_validated",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/state_patch.json"
+    },
+    {
+      "id": "round125_downstream_scope",
+      "status": "green_flat_smooth_UNBAL_and_all_parents_open_no_exponent_change",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/synthesis.md"
+    },
+    {
+      "id": "round126_literal_vector",
+      "status": "green_exact_Round75_character_vector_hard_affine_support_and_orientation",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-actual-vector-spectral-gate/reports/blind_hard_top_vector_rederivation.md"
+    },
+    {
+      "id": "round126_square_entry_sector",
+      "status": "green_hm_square_energy_L_three_halves_and_HS_L_log_L",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-actual-vector-spectral-gate/reports/hard_top_parity_spectral_operator_attack.md"
+    },
+    {
+      "id": "round126_square_sector_connector",
+      "status": "green_norm_triangle_only_no_orthogonal_energy_split",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-actual-vector-spectral-gate/reviews/conductor_round126_adjudication.md"
+    },
+    {
+      "id": "round126_parity_highpass",
+      "status": "green_no_go_pi_mode_multiplier_two_no_contraction",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-actual-vector-spectral-gate/reports/hard_top_actual_vector_hostile_audit.md"
+    },
+    {
+      "id": "round126_filter_dichotomy",
+      "status": "green_retain_pi_and_equivalent_or_kill_pi_and_need_separate_estimate",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-actual-vector-spectral-gate/candidates/conductor_hard_top_spectral_filter_dichotomy.md"
+    },
+    {
+      "id": "round126_operator_character_scope",
+      "status": "green_unitary_column_modulation_spectrum_blind_fixed_direction_open",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-actual-vector-spectral-gate/reports/blind_hard_top_vector_rederivation.md"
+    },
+    {
+      "id": "round126_affine_support_adversary",
+      "status": "green_sharp_L_factor_method_control_not_physical_lower_bound",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-actual-vector-spectral-gate/reports/hard_top_actual_vector_hostile_audit.md"
+    },
+    {
+      "id": "round126_offset_inverse",
+      "status": "green_positive_excess_to_complete_dyadic_r_or_q_shell_with_log_loss",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-actual-vector-spectral-gate/reviews/conductor_round126_adjudication.md"
+    },
+    {
+      "id": "round126_shell_scope",
+      "status": "green_r_and_q_are_separate_partitions_and_completion_is_global_only",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-actual-vector-spectral-gate/reviews/conductor_round126_adjudication.md"
+    },
+    {
+      "id": "round126_resonance_controls",
+      "status": "green_square_Pell_fourth_power_defeat_uniform_gap_without_lower_bound",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-actual-vector-spectral-gate/reports/hard_top_actual_vector_hostile_audit.md"
+    },
+    {
+      "id": "round126_statement_only_gate",
+      "status": "green_independent_matrix_no_go_and_offset_inverse",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-actual-vector-spectral-gate/reports/blind_hard_top_vector_rederivation.md"
+    },
+    {
+      "id": "round126_hostile_gate",
+      "status": "green_capacity_faces_resonance_one_count_and_downstream_scope",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-actual-vector-spectral-gate/reports/hard_top_actual_vector_hostile_audit.md"
+    },
+    {
+      "id": "round126_artifact_hygiene",
+      "status": "green_14_UTF8_no_C0_replacement_trailing_or_delimiter_errors_10_authored_LF_4_generated_CRLF",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-actual-vector-spectral-gate/controls/conductor_round126_controls.md"
+    },
+    {
+      "id": "round126_unit_tests",
+      "status": "green_six_of_six_compileall_graph_and_diff_check",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-actual-vector-spectral-gate/controls/conductor_round126_controls.md"
+    },
+    {
+      "id": "round126_campaign_validation",
+      "status": "green_complete",
+      "artifact": "state/active_campaign.yml"
+    },
+    {
+      "id": "round126_state_patch",
+      "status": "applied_3_create_4_update_10_reject_graph_validated",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-actual-vector-spectral-gate/state_patch.json"
+    },
+    {
+      "id": "round126_downstream_scope",
+      "status": "green_strict_hard_TOP_sector_only_all_parents_open_no_exponent_change",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-actual-vector-spectral-gate/synthesis.md"
+    },
+    {
+      "id": "round127_literal_frontiers",
+      "status": "green_hard_energy_lower_scalar_wavelet_and_graded_correlation_kept_separate",
+      "artifact": "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/reviews/conductor_round127_frontier_selection_adjudication.md"
+    },
+    {
+      "id": "round127_hard_phase_alignment",
+      "status": "green_exact_L3_capacity_after_hm_square_deletion_method_only",
+      "artifact": "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/reports/blind_hard_top_nonsquare_feasibility.md"
+    },
+    {
+      "id": "round127_product_fibre_mean",
+      "status": "green_noninvertible_average_fixes_coherent_product_fibre",
+      "artifact": "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/reports/blind_hard_top_nonsquare_feasibility.md"
+    },
+    {
+      "id": "round127_lower_centering",
+      "status": "green_uncentered_actual_energy_false_centered_scalar_equivalent",
+      "artifact": "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/reports/lower_gar_wavelet_feasibility.md"
+    },
+    {
+      "id": "round127_lower_farey_identity",
+      "status": "green_exact_b1_center_determinant_diagonal_safe_but_separated_self_return",
+      "artifact": "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/reports/lower_gar_wavelet_feasibility.md"
+    },
+    {
+      "id": "round127_graded_scalar_capacity",
+      "status": "green_critical_contact_exactly_Y37over48_no_strict_saving",
+      "artifact": "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/reports/graded_determinant_long_lift_feasibility.md"
+    },
+    {
+      "id": "round127_local_birth_count",
+      "status": "green_JB_one_plus_DQB_over_B2_conditional_literal_variation_open",
+      "artifact": "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/reviews/conductor_round127_frontier_selection_adjudication.md"
+    },
+    {
+      "id": "round127_graded_capacity",
+      "status": "green_conditional_Y73over96_saving_Y1over96_no_global_exponent_change",
+      "artifact": "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/reports/graded_determinant_long_lift_feasibility.md"
+    },
+    {
+      "id": "round127_single_selection",
+      "status": "green_round128_local_V2_coefficient_gate_only",
+      "artifact": "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/reviews/conductor_round127_frontier_selection_adjudication.md"
+    },
+    {
+      "id": "round127_statement_only_gate",
+      "status": "green_independent_hard_interface_obstruction_no_physical_lower_bound",
+      "artifact": "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/reports/blind_hard_top_nonsquare_feasibility.md"
+    },
+    {
+      "id": "round127_state_patch",
+      "status": "applied_4_create_6_update_10_reject_graph_validated",
+      "artifact": "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/state_patch.json"
+    },
+    {
+      "id": "round127_campaign_validation",
+      "status": "green_complete",
+      "artifact": "state/active_campaign.yml"
+    },
+    {
+      "id": "round127_downstream_scope",
+      "status": "green_all_M1_M2_M9_and_exponents_open",
+      "artifact": "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/synthesis.md"
+    },
+    {
+      "id": "round128_abstract_no_go",
+      "status": "green_pointwise_character_and_birth_count_do_not_imply_V2",
+      "artifact": "rounds/codex-managed/gc-w7-16-local-transverse-lift-variation-gate/reports/blind_local_v2_feasibility.md"
+    },
+    {
+      "id": "round128_literal_dictionary",
+      "status": "green_frequency_BV_times_denominator_BV_no_coupled_support",
+      "artifact": "rounds/codex-managed/gc-w7-16-local-transverse-lift-variation-gate/reports/literal_lift_coefficient_variation_attack.md"
+    },
+    {
+      "id": "round128_BV_threshold_proof",
+      "status": "green_exact_Stieltjes_character_Abel_Minkowski_JB_square_variation",
+      "artifact": "rounds/codex-managed/gc-w7-16-local-transverse-lift-variation-gate/reviews/conductor_round128_literal_v2_adjudication.md"
+    },
+    {
+      "id": "round128_endpoint_and_literal_faces",
+      "status": "green_both_endpoints_smooth_hard_floor_star_support_and_shell_faces",
+      "artifact": "rounds/codex-managed/gc-w7-16-local-transverse-lift-variation-gate/controls/conductor_round128_controls.md"
+    },
+    {
+      "id": "round128_M1_normalization",
+      "status": "green_unsplit_character_rejected_exact_quarter_phase_branches_pass",
+      "artifact": "rounds/codex-managed/gc-w7-16-local-transverse-lift-variation-gate/reports/literal_lift_coefficient_variation_attack.md"
+    },
+    {
+      "id": "round128_hostile_gate",
+      "status": "green_restricted_no_certification_reconciled_by_exact_Round95_dictionary",
+      "artifact": "rounds/codex-managed/gc-w7-16-local-transverse-lift-variation-gate/reviews/conductor_round128_literal_v2_adjudication.md"
+    },
+    {
+      "id": "round128_capacity",
+      "status": "green_theta_one_half_below_two_thirds_curvature_still_open",
+      "artifact": "rounds/codex-managed/gc-w7-16-local-transverse-lift-variation-gate/synthesis.md"
+    },
+    {
+      "id": "round128_state_patch",
+      "status": "applied_2_create_3_update_6_reject_graph_validated",
+      "artifact": "rounds/codex-managed/gc-w7-16-local-transverse-lift-variation-gate/state_patch.json"
+    },
+    {
+      "id": "round128_campaign_validation",
+      "status": "green_complete",
+      "artifact": "state/active_campaign.yml"
+    },
+    {
+      "id": "round128_downstream_scope",
+      "status": "green_curvature_correlation_M1_M2_M9_and_exponents_open",
+      "artifact": "rounds/codex-managed/gc-w7-16-local-transverse-lift-variation-gate/synthesis.md"
+    },
+    {
+      "id": "round129_exact_V2_dual",
+      "status": "green_prefix_variance_and_Dirichlet_path_Green_kernel",
+      "artifact": "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/reports/blind_structured_v2_curvature_feasibility.md"
+    },
+    {
+      "id": "round129_norm_relative_no_go",
+      "status": "green_structured_stationary_alias_triangle_Y1over48_failure_both_endpoints_zero",
+      "artifact": "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/reports/reciprocal_curvature_hostile_audit.md"
+    },
+    {
+      "id": "round129_direct_threshold_theorem",
+      "status": "green_character_Abel_plateau_curvature_Stieltjes_Krho_over_L",
+      "artifact": "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/reports/actual_stieltjes_reciprocal_sum_attack.md"
+    },
+    {
+      "id": "round129_JB_absorption",
+      "status": "green_NLambda_equals_Lrho_times_JBminus1_no_JB_loss",
+      "artifact": "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/reviews/hostile_birth_block_curvature_addendum.md"
+    },
+    {
+      "id": "round129_literal_faces",
+      "status": "green_equalities_stars_floors_taper_clipping_and_half_open_owners",
+      "artifact": "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/controls/conductor_round129_controls.md"
+    },
+    {
+      "id": "round129_Mobius_progressions",
+      "status": "green_uniform_Krho_divisor_sum_to_KB",
+      "artifact": "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/reviews/post_blind_absolute_curvature_outer_ledger.md"
+    },
+    {
+      "id": "round129_outer_ledger",
+      "status": "green_LD_times_L_times_Lminus1_times_KBoverL_equals_DKB",
+      "artifact": "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/reviews/post_blind_absolute_curvature_outer_ledger.md"
+    },
+    {
+      "id": "round129_complete_fixed_block",
+      "status": "green_all_B_shells_Y35over48_improves_complete_envelope_by_Y1over24",
+      "artifact": "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/reviews/conductor_round129_direct_curvature_adjudication.md"
+    },
+    {
+      "id": "round129_statement_only_gate",
+      "status": "green_blind_no_go_then_independent_direct_outer_confirmation",
+      "artifact": "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/reviews/post_blind_absolute_curvature_outer_ledger.md"
+    },
+    {
+      "id": "round129_hostile_gate",
+      "status": "green_norm_obstruction_and_direct_all_shell_certification",
+      "artifact": "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/reviews/hostile_birth_block_curvature_addendum.md"
+    },
+    {
+      "id": "round129_state_patch",
+      "status": "applied_3_create_5_update_6_reject_graph_validated",
+      "artifact": "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/state_patch.json"
+    },
+    {
+      "id": "round129_campaign_validation",
+      "status": "green_complete",
+      "artifact": "state/active_campaign.yml"
+    },
+    {
+      "id": "round129_downstream_scope",
+      "status": "green_Y1over2_target_all_M9_parents_and_global_exponents_open",
+      "artifact": "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/synthesis.md"
+    },
+    {
+      "id": "round130_literal_dictionary",
+      "status": "green_both_complete_lifts_thresholds_characters_phases_taper_and_owners_before_norm",
+      "artifact": "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/reports/actual_numerator_increment_recombination_attack.md"
+    },
+    {
+      "id": "round130_shell_support",
+      "status": "green_exact_recombined_support_number_a_prime_at_most_LB_over_D",
+      "artifact": "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/reviews/independent_shell_refinement_and_inversion_audit.md"
+    },
+    {
+      "id": "round130_shell_bound",
+      "status": "green_BKB_lower_shell_refinement_top_remains_Y35over48",
+      "artifact": "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/reviews/conductor_round130_post_inner_adjudication.md"
+    },
+    {
+      "id": "round130_outer_gram",
+      "status": "green_HstarH_or_KstarK_resolved_G2_full_completion_only",
+      "artifact": "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/reviews/hostile_determinant_residue_gram_addendum.md"
+    },
+    {
+      "id": "round130_phase_aligned_control",
+      "status": "green_LDKB2_energy_and_DKB_scalar_method_obstruction_not_physical_lower_bound",
+      "artifact": "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/reports/blind_outer_bilinear_dual_feasibility.md"
+    },
+    {
+      "id": "round130_determinant_residue",
+      "status": "green_fixed_primitive_top_ray_bounded_multiplicity_after_physical_reassembly",
+      "artifact": "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/reviews/hostile_determinant_residue_gram_addendum.md"
+    },
+    {
+      "id": "round130_character_inversion",
+      "status": "green_M1_chi4_dprime_M2_fixed_sign_chi4_hprime_all_owners_only",
+      "artifact": "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/reviews/independent_shell_refinement_and_inversion_audit.md"
+    },
+    {
+      "id": "round130_product_window",
+      "status": "green_complete_inversion_Y37over48_top_p_first_Y40over48_no_go",
+      "artifact": "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/reports/actual_numerator_increment_recombination_attack.md"
+    },
+    {
+      "id": "round130_unit_Hessian",
+      "status": "green_top_aliaswise_transform_Y43over48_scoped_control",
+      "artifact": "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/reports/outer_ray_bilinear_hostile_audit.md"
+    },
+    {
+      "id": "round130_owners",
+      "status": "green_Mobius_threshold_stars_support_shell_diagonal_and_orientation_once",
+      "artifact": "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/controls/conductor_round130_controls.md"
+    },
+    {
+      "id": "round130_statement_only_gate",
+      "status": "green_independent_exact_dual_aligned_control_and_post_unmask_scope_correction",
+      "artifact": "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/reviews/blind_post_unmask_outer_gram_seam.md"
+    },
+    {
+      "id": "round130_hostile_gate",
+      "status": "green_resolved_gram_resonances_transform_and_downstream_scope",
+      "artifact": "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/reports/outer_ray_bilinear_hostile_audit.md"
+    },
+    {
+      "id": "round130_artifact_hygiene",
+      "status": "green_16_UTF8_no_C0_replacement_trailing_or_conflict_defects",
+      "artifact": "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/controls/conductor_round130_controls.md"
+    },
+    {
+      "id": "round130_unit_tests",
+      "status": "green_six_of_six_compileall_graph_patch_campaign_and_diff_check",
+      "artifact": "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/controls/conductor_round130_controls.md"
+    },
+    {
+      "id": "round130_campaign_validation",
+      "status": "green_complete",
+      "artifact": "state/active_campaign.yml"
+    },
+    {
+      "id": "round130_state_patch",
+      "status": "applied_3_create_4_update_8_reject_graph_validated",
+      "artifact": "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/state_patch.json"
+    },
+    {
+      "id": "round130_downstream_scope",
+      "status": "green_top_scalar_Y1over2_target_all_M9_parents_and_global_exponents_open",
+      "artifact": "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/synthesis.md"
+    }
   ],
-  "decision_rule": "Promote only the repaired finite coefficientwise dictionary and exact physical one-count connector. Retain the signed balanced estimate, every other M9 parent, endpoint uniformity, M9, and every exponent claim as open."
+  "decision_rule": "Promote the exact B K_B shell support refinement, the primitive top-shell determinant-residue chart, and the scoped resolved-energy obstruction. Retain the complete Y^(35/48) fixed block, the Y^(1/2) determinant target, every M9 parent, endpoint uniformity, M9, every global exponent, and the quarter target unchanged."
 }

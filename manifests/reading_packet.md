@@ -1,6 +1,7 @@
 # Reading Packet
 
-Generated for active campaign `m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation`.
+Most recently generated for the now-closed campaign
+`gc-w7-16-post-inner-outer-bilinear-gate`.  No round is currently active.
 
 ## Current Theorem Target
 
@@ -99,14 +100,14 @@ No State Patch applied. Campaign preparation changes workflow artifacts only.
 - Status: `open`
 - Track: `M9_analytic`
 - Historical steward: `Codex conductor` (non-binding)
-- Next action: Seek a phase-sensitive determinant or additive-divisor estimate with the literal character placements, or prove a fixed power saving in Popov's additive local-discrepancy term.
+- Next action: The complete fixed block is now O_epsilon(Y^(35/48+epsilon)) uniformly over every reduced-denominator shell, leaving Y^(11/48) to the Y^(1/2) target. Seek signed cancellation across the remaining numerator increments or outer rays; sequential two-dimensional transforms with aliaswise modulus are already known to self-return.
 
 ### GC-nonsubcoherent-actual-cluster-local-moment: Non-subcoherent actual M1/M2 cluster local moment
 
 - Status: `open`
 - Track: `M9_analytic`
 - Historical steward: `Codex conductor` (non-binding)
-- Next action: At W=Y^(7/16), the exact remaining block theorem is GC-W7-16-actual-reduced-determinant-correlation. Do not repeat coefficient-blind Farey spacing; seek literal signed phase/character cancellation or a power saving in the additive full-discrepancy term.
+- Next action: The first actual complete-block saving is certified, but Y^(37/48) is still above the Y^(1/2) cluster target and yields no improved pointwise exponent. Continue only through the prescribed-centre truncated product-wave/UNBAL probe or a new joint signed inequality.
 
 ### GC-target: Gauss circle conjectural exponent target
 
@@ -130,7 +131,7 @@ No State Patch applied. Campaign preparation changes workflow artifacts only.
 - Track: `M9_analytic`
 - Historical steward: `A2` (non-binding)
 - Blockers: `M9-M1-top-endpoint-signed-cone`, `M9-M1-direct-smooth-residual-blockwise-estimate`
-- Next action: Prove the residual hard top signed cone and literal smooth residual estimate, or one alternative whole-U_1 theorem. The canonical global Gram has no direct blockwise implication.
+- Next action: On the direct route, prove both separately one-third-critical parents with the missing X^(1/12) gain. On the alternative route, prove both global radial parents and GAR, then use only the separate total-M1 bridge; GAR does not prove blockwise M9-M1.
 
 ### M9-M1-alpha-bounded-zeta-high-transition-bound: Connector-completed alpha-bounded zeta-high transition bound
 
@@ -166,7 +167,7 @@ No State Patch applied. Campaign preparation changes workflow artifacts only.
 - Status: `open`
 - Track: `M9_analytic`
 - Historical steward: `Codex conductor` (non-binding)
-- Next action: Prove the literal smooth residual estimate, or replace it and the hard child by one whole-U_1 theorem such as the exact odd-kernel or RCS target. Do not import the global canonical Gram without a block-local inverse.
+- Next action: The first smooth profile D=floor(sqrt X)/2 with L asymp X^(1/6) has accepted menu capacity X^(1/3+o(1)), missing X^(1/12). Prove a new actual-symbol saving uniformly on all smooth U_1 labels, or one whole-U_1 theorem with an exact owner bridge.
 
 ### M9-M1-dual-restricted-convolution-RCS: Dual restricted-convolution estimate for M1 resonance cells
 
@@ -180,22 +181,15 @@ No State Patch applied. Campaign preparation changes workflow artifacts only.
 - Status: `open`
 - Track: `M9_analytic`
 - Historical steward: `Codex conductor` (non-binding)
-- Blockers: `M9-M1-global-lower-radial-signed-estimate`, `M9-M1-global-radial-interface-estimate`
-- Next action: Prove the exact lower-radial and sharp-interface parents. Canonical, alpha, near-product, and conductor programs are alternative nested attacks, not conjunctive GAR dependencies.
+- Blockers: `M9-M1-global-lower-radial-signed-estimate`
+- Next action: GAR remains open on the Round-122 low-two-adic survivor. The complementary-divisor gate is parked absent a genuinely joint signed inequality.
 
 ### M9-M1-global-lower-radial-signed-estimate: Exact lower-radial signed aggregate for global M1
 
 - Status: `open`
 - Track: `M9_analytic`
 - Historical steward: `Codex conductor` (non-binding)
-- Next action: Prove the exact lower-radial signed aggregate. Treat alpha and product-wavelet/conductor decompositions as alternative refinements, not simultaneous owners.
-
-### M9-M1-global-radial-interface-estimate: Sharp radial endpoint and interface estimate for global M1
-
-- Status: `open`
-- Track: `M9_analytic`
-- Historical steward: `Codex conductor` (non-binding)
-- Next action: Prove the exact sharp radial/top interface package without extending the compact critical theorem to its excluded endpoint.
+- Next action: Lower GAR remains at the exact Round-122 signed wavelet. Do not replace it by the false uncentered energy or an ambient separated Farey square function; a new signed scalar inequality is required.
 
 ### M9-M1-maximal-angular-sign-kernel: Maximal actual-profile angular-sign radial correlation
 
@@ -224,3 +218,10 @@ No State Patch applied. Campaign preparation changes workflow artifacts only.
 - Track: `M9_analytic`
 - Historical steward: `Codex conductor` (non-binding)
 - Next action: The delta/Kloosterman reformulation retains the same H/L-sized deficit in a short moving numerator. Standard complete-sum estimates do not prove PSC; a genuinely joint signed near-product theorem remains necessary.
+
+### M9-M1-swept-transition-horizontal-operator: Swept single-transition and horizontal-side vector operator
+
+- Status: `open`
+- Track: `M9_analytic`
+- Historical steward: `Codex conductor` (non-binding)
+- Next action: Close the explicit projected alpha cosine-Cauchy/GAR-return obligation; the beta branch is already closed and must not be reopened.

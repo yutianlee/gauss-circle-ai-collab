@@ -2722,3 +2722,575 @@ balanced deficit remains \(X^{1/12}\). M9-M2 still has three open parents,
 M9-M1 still has two standard open parents, and the global exponents remain
 the internally proved \(1/3\) and repaired external
 \(0.3144831759740614\ldots\); the pointwise quarter exponent remains open.
+
+## Round 114 progress (2026-08-21)
+
+The literal balanced packet has now been squared without losing either gcd
+lift. Its genuine diagonal is equality of the full products
+\(hk=h'k'\), not equality of the primitive products, and its total
+diagonal energy is \(O_\varepsilon(L^2X^\varepsilon)\).
+
+With
+
+\[
+ \Delta=h'k'-hk,\qquad \rho=hk'-h'k,
+\]
+
+each width-\(L\) corridor has absolute energy
+\(O_\varepsilon(L^3X^\varepsilon)\). The exact square-root ray identity
+is certified, and the older full-symbol mean square is now connected
+correctly to the balanced packet. It is a sufficient stronger estimate,
+not a proved estimate and not a route to the other M2 parents.
+
+After removing those target-safe pieces, the remaining problem is an
+actual-symbol, \(\chi_4\)-twisted shifted-divisor energy on
+\(|\Delta|>L\) and \(|\rho|>L\). Its coefficient-blind capacity is
+\(L^4\), so determinant size alone and a uniform broad estimate are
+rigorously ruled out. The next lawful attack must use the literal signed
+inner correlation. The balanced \(X^{1/12}\) deficit, all M9-M1
+obligations, and both global exponents are unchanged.
+
+## Round 115 progress (2026-08-21)
+
+The exact double-far shifted-divisor structure is now exposed. In
+increment coordinates (h'=h+p), (k'=k+q),
+
+\[
+ \Delta=hq+kp+pq,\qquad \rho=hq-kp,
+\]
+
+and nonzero character factors force (p=2s) with
+(\chi_4(h)\chi_4(h+p)=(-1)^s). The character therefore shifts the
+Poisson lattice by one half; it does not cancel a fixed-shift fibre.
+
+The fully assembled phase-free double-far aggregate is proved to satisfy
+
+\[
+ |M_B^{(0)}|\ll_\varepsilon L^3X^\varepsilon.
+\]
+
+This is a genuine factor-(L) saving for that mode, obtained twice by
+literal character summation. It cannot be applied after taking absolute
+values over residues, shifts, divisors, or shells. Subtracting it leaves
+the exact oscillatory remainder
+
+\[
+ \mathcal R_B^{\mathrm{osc}}
+ =\sum_{\mathrm{df}}a_B^{<}(h,k)
+ \overline{a_B^{<}(h',k')}
+ [e(R(\sqrt{hk}-\sqrt{h'k'}))-1],
+\]
+
+whose (O_\varepsilon(L^3X^\varepsilon)) bound is now the smallest open
+balanced target.
+
+A plain shortened Fejer step cannot reuse the two target-saturating
+corridor bounds without the (L^2/H) owner amplification, and the
+critical outer B-process returns a dual sum of the original length.
+Continuous Hessian nondegeneracy also does not control the discrete
+half-shifted aliases. These are proved route obstructions, not a lower
+bound for the actual signed sum.
+
+M9-M2 still has open TOP, BAL, and UNBAL parents. M9-M1 remains unchanged,
+as do endpoint uniformity and M9. The strongest internal pointwise
+exponent remains (1/3), the audited external benchmark remains
+(0.3144831759740614\ldots), and the pointwise quarter exponent remains
+open.
+
+## Round 116 progress (2026-08-21)
+
+The half-shifted Poisson chart has now been made literal through the second
+gcd mask. Each odd divisor (d) produces a progression
+(s=s_d+dt), a dual lattice
+(lambda=(1/2-m)/d), (dL^3) aliases of amplitude
+((dL)^{-1}), and a required residue phase
+(s_d(1/2-\lambda)). Both far gates have exact dual images, and all
+boundary, nonstationary, support-crossing, and transition pieces have
+aggregate cost (O_\varepsilon(L^3X^\varepsilon)).
+
+The resulting complete signed bulk alias kernel remains unbounded. The
+round instead proves a precise no-go for the proposed standalone
+mechanisms: aliaswise absolute values have (L^5) capacity;
+reciprocal-frequency divisor counting returns only (L^4); spacing forces
+(L^2)-sized clusters at (d=1) and a full large-sieve diagonal; and a
+second B-process exactly reconstructs the original progression. The
+positive row energy is a stronger nearly replicated Gram, not an
+equivalent target.
+
+Accordingly, the one-alias/reciprocal-large-sieve balanced follow-through
+is parked, but BAL itself is not rejected. M9-M2 still requires TOP, BAL,
+and UNBAL; M9-M1 still requires its two direct parents; endpoint uniformity
+and M9 remain open. There is no exponent change: the best internal uniform
+bound is (1/3), the audited external benchmark is
+(0.3144831759740614\ldots), and the pointwise quarter theorem remains
+open. The next bounded lane is the (W=Y^{7/16}) actual reduced-
+determinant correlation, whose full target would give the internal exponent
+(5/16) without closing M9.
+
+## Round 117 update
+
+The graded \(W=Y^{7/16}\) lane produced the first certified
+coefficient-sensitive gains. A complete literal fixed-block estimate now
+gives \(Y^{37/48+\varepsilon}\) at minimax, improving the earlier
+\(Y^{43/48}\) capacity by \(Y^{1/8}\). On the bounded-lift top reduced-
+denominator shell, reciprocal curvature gives the sharper
+\(Y^{35/48+\varepsilon}\), a \(Y^{1/6}\) saving.
+
+Neither estimate reaches the required \(Y^{1/2+\varepsilon}\): the
+remaining deficits are \(Y^{13/48}\) for the complete block and
+\(Y^{11/48}\) for the bounded-lift shell. Lower reduced-denominator shells
+also retain a long-lift variation seam. The exact two-dimensional
+half-shift transform and clean \(r_2/4\) product completion self-return
+under standard norms, so those standalone mechanisms are parked.
+
+There is no exponent change. The internal uniform theorem remains
+\(1/3\), the separately audited external benchmark remains
+\(0.3144831759740614\ldots\), and the pointwise quarter theorem remains
+open. The next campaign combines the prescribed-centre truncated-product
+survivor with the planned unbalanced M2 falsification/viability probe.
+
+## Round 118 update
+
+The unbalanced prescribed-centre probe is closed. On every frozen flat
+smooth component it certifies
+
+\[
+ \mathscr R_{D,L}(X)
+ \ll_\varepsilon X^\varepsilon
+ \min\left(D/L,\sqrt{XL/D}+\sqrt{X/(LD)}\right).
+\]
+
+Writing \(a=\delta-\ell\), this saves over absolute capacity exactly for
+\(a>1/3\), but its exponent \(\min(a,(1-a)/2)\) is still above \(1/4\)
+at every strict residual point. Uniform finite-difference controls show
+that one consecutive same-character central run is target-safe. The
+integer-centre interior phase-one stationary sector is also only
+\(O_\varepsilon(\sqrt{D/L}X^\varepsilon)\).
+
+The full disconnected selector, other real-centre coherent phases,
+noncentral shoulders, endpoint packages, and signed complement remain
+open. Thus UNBAL, BAL, hard TOP, M9-M2, both M1 parents, endpoint
+uniformity, M9, and the quarter theorem are unchanged. The internal
+uniform exponent remains \(1/3\), and the audited external benchmark
+remains \(0.3144831759740614\ldots\). The next core deliverable is direct
+minimization of the two M9-M1 physical parents.
+
+## Round 119 update
+
+The direct M1 minimization is closed. For (a=\delta-\ell), every
+residual block has accepted capacity exponent
+
+\[
+ \min\left(a,{1-a\over2},
+ {89(1+\ell)+819\delta\over1282}\right).
+\]
+
+Its worst value is (1/3), and Round 119 verifies this separately on both
+literal physical parents. The unique hard profile
+(D_0=\lfloor\sqrt X\rfloor) and the first smooth profile (D_1=D_0/2)
+each have a full nonterminal (L\asymp X^{1/6}) residual shell. The two
+elementary rows are (X^{1/3+o(1)}), while TTY tends to
+(770/1923=1/3+43/641).
+
+On the hard cone the normalized (L^2) capacity must first be multiplied
+by (X^{1/4}L^{-3/2}), giving physical
+(X^{1/4}L^{1/2}\asymp X^{1/3}). Both direct parents therefore miss the
+quarter target by (X^{1/12}=L^{1/2}). This is a menu-capacity
+certificate, not an arithmetic lower bound.
+
+The exact adjacent-profile telescope retains the Vaaler-height differences
+and both boundary owners. Equal deficits, scale BV, and raw profile
+addition do not give a connector. The canonical Gram remains nonlocal to
+the direct blocks, and GAR remains a separate total-active route requiring
+both its lower-radial and sharp radial/interface parents.
+
+No analytic parent or exponent changed. The direct route is frozen unless
+a new sign-sensitive (X^{1/12}) mechanism or a lawful whole-residual
+theorem is supplied. The next M1 backup deliverable is to reconcile the
+already proved physical upper-radial endpoint with the still-open sharp
+radial/interface owner and isolate its exact remaining complement. The
+internal uniform exponent remains (1/3), the audited external benchmark
+remains (0.3144831759740614\ldots), and the pointwise quarter theorem
+remains open.
+
+## Round 120 update
+
+The sharp GAR radial/interface parent is now proved. The new device is a
+fixed terminal-height cutoff \(\vartheta(h/H_j)\) inserted directly into
+the literal global coefficient. Its reciprocal frequency weight has BV
+\(O(H_j^{-1})\), so the accepted terminal divisor theorem bounds the
+positive antecedent by \(O_\varepsilon(X^{1/4+\varepsilon})\). The
+coefficientwise smooth and one-sided hard transforms, including their
+absolute polylogarithmic error and cotangent-boundary ledgers, give the
+normalized terminal radial sum in complex modulus.
+
+The exact stationary geometry
+
+\[
+ {hX^{1/4}\over D_j}={t\sqrt{n/\sqrt X}\over2},
+ \qquad {1\over2}\leq t\leq{3\over2},
+\]
+
+shows that the terminal coefficient equals the original coefficient for
+\(n/\sqrt X\geq s_0\) and vanishes below \(s_0/144\). After inserting one
+fixed auxiliary compact multiplier already on the reciprocal antecedent,
+the lower-cutoff part of the terminal coefficient is also target-safe.
+Therefore the entire complement of a fixed lower radial cutoff is
+\(O_\varepsilon(X^\varepsilon)\) at normalized scale.
+
+For the Round-98 three-piece partition, subtracting the already proved
+compact critical cells yields the exact sharp interface. This argument
+does not identify the varying-phase collar with the constant-phase physical
+endpoint prefix. Endpoint-boundary and \(R_1\) packages occur only in an
+alternative transformed route and have multiplicity zero here.
+
+Consequently the exact lower-radial signed aggregate is now the sole
+analytic parent of GAR. GAR itself remains open and would control only the
+total active M1 sum, not either blockwise M1 parent. Hard TOP, BAL and
+UNBAL remain open for M9-M2, endpoint uniformity remains independent, and
+there is no exponent change: internal \(1/3\), audited external
+\(0.3144831759740614\ldots\), pointwise quarter open.
+
+## Round 121 update
+
+The entire literal lower profile/floor kernel is now reduced at the target
+scale to one exact sharp denominator cone. Lower-support geometry makes
+every contributing height lie strictly below its Vaaler endpoint and
+excludes the inactive bottom. The quadratic factor
+\(\Phi(h/(H_j+1))-1\), together with a uniform smooth two-variable
+separation and the accepted frequency-first theorem, gives total error
+\(O_\varepsilon(X^{1/4+\varepsilon})\). This covers the full lower
+cutoff, including the part above the earlier \(n=X^{2/5}\) small-angle
+threshold.
+
+Changing only the reciprocal phase to \(N=\lfloor X\rfloor\) costs
+\(O(X^{1/4})\). Exact finite Fourier completion then identifies the
+remaining cone with an all-integer prescribed-centre truncated
+character-divisor discrepancy against a one-sided lower-radial wavelet.
+This is a target-scale equivalence, not an estimate: the sample-exact
+interpolant has growing seminorms.
+
+Adjacent mod-four pairing has a polylogarithmic amplitude seam, but the
+surviving phase bracket is maximal at half-integer increment resonances.
+On fourth-power controls, disjoint resonance tubes have total
+post-tube-modulus capacity \(\gg X^{3/8}\), exceeding the reciprocal
+target \(X^{1/4+\varepsilon}\). Thus local pairing and resonancewise
+absolute norms are frozen. Cancellation jointly across heights and
+resonance labels remains possible and is exactly the open theorem.
+
+The lower-radial estimate and GAR remain open. Both direct M1 parents,
+hard TOP, BAL, UNBAL, endpoint uniformity, M9, and the quarter theorem also
+remain open. There is no exponent change: internal \(1/3\), audited
+external \(0.3144831759740614\ldots\).
+
+## Round 122 update
+
+The exact Round-121 lower discrepancy is now uniformly localized.  Its
+one-sided difference wavelet has the correct three Fourier ranges:
+(R^{-1}) up to (|k|\asymp R), (1/|k|) through the (y)-scale, and
+rapid decay beyond (y) with every power of the moving cutoff recorded.
+For fixed (0<\delta<1/8), the far range (|k|>yX^\delta), central range
+(|k|\leq R), aggregate (v_2\geq\lceil\log_2R\rceil), and odd
+positive-character central divisor band are all target-safe.
+
+The all-two-adic complementary formula is exact:
+
+\[
+ A_y(2^an)=\frac{r_2(2^an)}4
+ -\chi_4(n)\sum_{\substack{q\mid n\\q<n/y}}\chi_4(q),
+ \qquad n\text{ odd}.
+\]
+
+The complement uses the odd part (n), not the even integer (2^an),
+and every hard boundary and square fixed point is now priced.  The
+(n\equiv3\pmod4) branch is an exact self-return; the positive branch
+retains one half of the full circle coefficient.  Low even valuations
+retain the full coefficient and exact complement jointly.
+
+The remaining lower object is a medium-index, low-two-adic cumulative
+wavelet of absolute capacity (R^2) against the (R) target.  It is not
+estimated.  The complement mechanism, full-circle completion, and another
+Abel/Fourier return are parked.  GAR and both direct M1 parents remain
+open.  Hard TOP, BAL, UNBAL, endpoint uniformity, M9, and the quarter
+theorem remain open.  There is no exponent change: internal (1/3),
+audited external (0.3144831759740614\ldots).
+
+## Round 123 update
+
+The literal flat-smooth strict-UNBAL reciprocal row is now stable under a
+phase-only move from real \(X\) to any integer \(M\asymp X\): with every
+amplitude and the physical denominator frozen at \(X\), the cost is
+\(O_\varepsilon((1+|M-X|)X^\varepsilon)\).  This justifies floor
+integerization and, at target cost, a centre with
+\(2^{v_2(M)}\asymp X^{1/4}\).
+
+The exact shifted block square has two reciprocal Fejer selectors.  A
+product layer cake proves that its complete nearest-alias sector \(j=0\),
+including all shifted self-correlations and off-diagonal zero aliases, is
+\(O_\varepsilon(X^{1/2+\varepsilon})\) at
+\(H_0=\lceil X^{1/2}/D\rceil\).  All nonzero exact aliases are globally
+divisor-small, and defects \(|E|>X^{1+\rho}/L\) are rapidly small.
+Consequently, for every fixed \(\eta>0\), a violation
+\(|\mathscr R_X|\geq X^{1/4+\eta}\) forces a positive-real contribution
+\(\gg X^{1/2+2\eta}\) in one explicit complete signed sector
+\(j\ne0\), \(E\ne0\), \(|E|\leq X^{1+\eta/10}/L\).
+
+This is an inverse reduction, not the quarter estimate.  The factor
+identity \((M-jr)(M+js)-M^2=jE\) is invertible on the live sector and its
+two-adic sign is exactly the original character.  Transverse Poisson modes
+have size \(\nu\asymp L\), and allowed shifts create interior stationary
+crossings, so the proposed fixed-alias first-derivative argument fails
+without proving a lower bound.  Complete UNBAL, hard TOP, BAL, M9-M2,
+both M1 routes, endpoint uniformity, M9, and the quarter theorem remain
+open.  There is no exponent change: internal \(1/3\), audited external
+\(0.3144831759740614\ldots\).
+
+## Round 124 update
+
+The complete unmasked flat-smooth shifted square now has an audited
+double-character stationary transform with aggregate \(O(1)\) error.  Its
+dual phase is
+
+\[
+ \Theta_{p,q,h}(k)=\sqrt M\{\sqrt{p(k+h)}-\sqrt{qk}\},
+\]
+
+and the complete product-equality sector \(p=q,h=0\) is square-target-safe.
+Subtracting the already-safe Round-123 physical package after transforming
+the full square gives an exact target-equivalence between the physical
+near-alias survivor and the complete dual off-product aggregate
+\(p=q,h\ne0\) plus \(p\ne q\).  Any fixed-power violation localizes to at
+least one of these two full actual-sign sectors.
+
+The necessary algebraic repair is that
+\(\mathcal N=p(k+h)-qk\) is the phase numerator, while
+\(\mathcal G=pk-q(k+h)=\mathcal N-(p+q)h\) is the alias-gradient
+numerator.  Every simultaneous \(k\)-saddle has continuous physical defect
+\(E_*=0\); the discrete \(E\ne0\) projector does not pass rowwise through
+Poisson.  On fixed interiors, the later joint Hessian is nondegenerate but
+its Legendre phase returns to the primal reciprocal phase.  The resulting
+\(D^2\) and \(D^2/L\) capacities are diagnostics, not lower bounds.
+
+Neither complete dual sector is estimated.  Flat-smooth and complete
+UNBAL, hard TOP, BAL, M9-M2, both M1 routes, endpoint uniformity, M9, and
+the quarter theorem remain open.  The internal exponent remains \(1/3\),
+and the audited external benchmark remains
+\(0.3144831759740614\ldots\).
+
+## Round 125 update
+
+The complete dual off-product aggregate has now been recombined into its
+smallest endpoint-complete positive object. If
+
+\[
+ B_{p,n}=\sum_{a=0}^{H-1}b_{p,n+a},\qquad
+ \mathcal E_\chi=C_H\sum_n
+ \left|\sum_{p>0\atop p\text{ odd}}\chi_4(p)B_{p,n}\right|^2,
+\]
+
+then exact Fejer expansion gives
+
+\[
+ \mathcal S_{\rm off}=\mathcal E_\chi-\mathcal D_0,
+ \qquad \mathcal D_0\ll X^{1/2}.
+\]
+
+Thus the negative side is target-safe, and the remaining theorem is the
+single positive upper bound
+
+\[
+ \mathcal E_\chi\ll_\varepsilon X^{1/2+\varepsilon}.
+\]
+
+Modulo the Round-123 safe package, the physical survivor equals this
+energy plus a target-sized term. Hence any fixed-power failure is positive.
+
+Separate equal-mode and unequal-mode target bounds are not equivalent to
+this problem. Two identical smooth coefficient rows in opposite
+$\chi_4$ classes can make both sectors larger by a factor $H$ while their
+sum is only $-\mathcal D_0$. This is a structural coefficient test, not a
+counterexample to the physical array, but it rigorously rules out
+sectorwise positivity or support-only arguments.
+
+The complete fixed-mode curvature estimate is
+
+\[
+ \mathcal E_{\rm eq}
+ \ll_\varepsilon X^{1/2+\varepsilon}\min\{H,Q\},
+ \qquad Q=\frac{D^2}{L\sqrt X}\to\infty.
+\]
+
+Both $H$ and $Q$ tend to infinity, so this remains over target. On strict
+interiors, the reciprocal B-process has coefficient $-2i/p$ and $Q$ dual
+labels, but a second process returns the original block. Odd-$p$ coherence
+uses a half-integer alias lattice; the earlier $4a$ lattice misses odd
+aliases. At fixed $(n,d,d')$, the literal selector leaves only an
+$O(1/H)$ mode interval, not a length-$L$ sum, and summing $n$ first leaves
+an uncontrolled moving floor overlap. No endpoint-complete near-defect
+reduction follows.
+
+This final bounded UNBAL mechanism is therefore parked at
+$\mathcal E_\chi$. Flat-smooth and complete UNBAL, hard TOP, BAL,
+M9-M2, both M1 routes, endpoint uniformity, M9, and the quarter theorem
+remain open. The internal exponent stays $1/3$ and the audited external
+benchmark stays $0.3144831759740614\ldots$.
+
+## Round 126 update
+
+The bounded hard-TOP actual-vector spectral gate has closed one strict
+sector.  If (A_L^\square) is the literal hard-cone matrix restricted to
+entries with (hm=\square), then
+
+\[
+ \|A_L^\square c\|_2^2
+ \ll_\varepsilon L^{3/2}X^\varepsilon
+ \qquad (|c_h|\le1).
+\]
+
+The proof writes (m=du^2,h=dv^2) with (d) squarefree and uses
+(u\le v\le2u).  This entry projection is distinct from the prior
+primitive (ab=\square) off-diagonal owner.  It is removed only by the
+norm triangle; the square and nonsquare matrix pieces are not orthogonal.
+
+The proposed parity mechanism does not contract.  The actual energy is
+the height Fourier density at (pi), while the adjacent high-pass has
+multiplier (1-e^{i\theta}), of maximal modulus two at (pi).
+Character insertion is a unitary column modulation and leaves every
+ambient singular value unchanged.  A support-sharp bounded adversary
+retains the full factor-(L) gap between diagonal (L^2) and coherent
+energy (L^3); this is not a lower bound for the physical vector.
+
+Every positive actual excess above the diagonal localizes, with only an
+(O(\log L)) loss, to one complete signed physical-offset shell, and a
+separate direct partition gives the same statement for one primitive-(q)
+shell.  All one-count data remain joint.  This inverse theorem does not
+estimate the selected shell, and the Round-110 completed-to-physical
+comparison remains global rather than shellwise.
+
+The exact survivor is the nonsquare actual-character vector, equivalently
+the original global one-sided completed real scalar modulo a target-safe
+component.  The parity-only spectral mechanism is parked.  Hard TOP,
+BAL, every UNBAL owner, M9-M2, both M1 routes, endpoint uniformity, M9,
+and the quarter theorem remain open.  No exponent changes: internal
+(1/3), audited external (0.3144831759740614\ldots).
+
+## Round 127 frontier selection (2026-08-23)
+
+Round 127 evaluated the four August 21 strategy reviews and revisions
+against the accepted graph, then compared exactly three live frontiers.
+Hard TOP has no coefficient-blind continuation: exact phase alignment
+retains \(L^3\) energy after the power-safe \(hm=\square\) entries are
+removed, and product-fibre averaging fixes the coherent fibre mean.  This
+does not lower-bound the literal endpoint coefficient.
+
+The lower-GAR uncentered square function is false for the actual survivor
+because of its \(kc_y\) drift.  The corrected centered energy would imply
+the scalar wavelet target, and it has an exact reduced-Farey determinant
+form with a safe diagonal, but it is a stronger separated norm reached by
+an ambient Fourier canonicalization.  At the critical block it still asks
+for the full missing factor, so it was not selected.
+
+For the graded determinant, the scalar prescribed-centre continuation
+returns exactly the present \(Y^{37/48}\) capacity.  A new local
+transverse-square-variation candidate counts only
+\(J_B=1+DQ_B/B^2\) lift births inside the same reciprocal window.  If its
+literal coefficient norm and joint curvature inequality are proved, the
+complete block improves conditionally to \(Y^{73/96+\varepsilon}\), a
+\(Y^{1/96}\) saving.  The next round tests the coefficient norm first.
+
+No new analytic parent or global exponent is proved.  The internal
+baseline remains \(1/3\), the audited external exponent remains
+\(0.3144831759740614\ldots\), and the quarter target remains open.
+
+## Round 128 local lift-variation gate (2026-08-23)
+
+The graded coefficient gate passes after one essential normalization.
+The exact reduced-ray coefficient is a common \(\chi_4(g)\) lift sum of a
+frequency-only sampled-BV factor times the denominator profile
+\(\omega_D(gb')\).  An exact discrete Stieltjes decomposition of that
+profile, followed by interval-uniform character Abel and Minkowski, proves
+
+\[
+ \|U_{i,\rho,\eta}\|_{V^2(I)}
+ \ll_\varepsilon {J_B^{1/2}\over L}Y^\varepsilon,
+ \qquad J_B=1+{DQ_B\over B^2},
+\]
+
+including both endpoint values, smooth and hard profiles, stars, floors,
+support motion, determinant taper, divisor progressions, and shell cuts.
+It holds for two exact M1 quarter-phase branches and one M2 branch.
+
+The unsplit M1 coefficient does not obey this norm: its reduced character
+has dense transverse variation \(Q_B^{1/2}/L\) even when \(J_B\asymp1\).
+Writing \(\chi_4(b')\) as the difference of \(e(\pm b'/4)\) moves it
+exactly into the carrier phase.  Abstract birth-count and pointwise
+arguments remain false, as fixed-window phase-conjugating controls show.
+
+The next analytic gate is the genuinely joint actual-family reciprocal
+curvature inequality without the generic \(N_\rho^{1/2}\) loss.  It is
+not proved.  Hence the proposed \(Y^{73/96+\varepsilon}\) complete block
+bound remains conditional, and the global exponent remains \(1/3\)
+internally and \(0.3144831759740614\ldots\) externally.  Both M9
+components, endpoint uniformity, M9, and the quarter target remain open.
+
+## Round 129 direct threshold curvature gate (2026-08-23)
+
+The proposed norm-relative reciprocal-curvature estimate is false: the
+exact discrete \(V^2\) dual and a real stationary-alias Stieltjes triangle
+give a \(Y^{1/48}\) counterexample with both endpoint values zero.
+
+The exact physical sum nevertheless has a stronger direct bound.  Freeze
+one Stieltjes threshold, use the common lift character by Abel before a
+modulus, estimate the literal floor plateaux by reciprocal curvature, and
+recombine thresholds last.  The scale identity
+\(N_\rho\Lambda_\rho\asymp L\rho(J_B-1)\) removes every local birth
+loss and proves \(K_\rho/L\), with all aliases, stars, floors, taper,
+divisor progressions, and shell owners included.
+
+The complete outer ledger now gives
+
+\[
+ |\mathfrak O_i|\ll_\varepsilon Y^{35/48+\varepsilon}
+\]
+
+uniformly over all reduced-denominator shells.  This is a certified
+\(Y^{1/24}\) improvement over the previous complete \(Y^{37/48}\)
+envelope and closes the long-lift lower-shell seam.  It remains
+\(Y^{11/48}\) above target, persists only to \(7/18>1/3\), and changes
+no global exponent or M9 status.
+
+## Round 130 post-inner outer-bilinear gate (2026-08-23)
+
+The exact shell ledger is sharper than the Round-129 uniform count.  On
+the half-open inner reduced-denominator shell $b'\asymp B$, the exact
+Stieltjes-recombined complete lift has $g\asymp D/B$ and
+$|a'|\asymp LB/D$.  Hence there are only $O(LB/D)$ inner numerators per
+outer ray, and
+
+\[
+ |\mathfrak O_{i,B}^{+}|
+ \ll_\varepsilon BK_BY^\varepsilon.
+\]
+
+Every lower shell gains $B/D$; the complete residual is localized to the
+bounded-lift shell $B\asymp D$.  That top shell still costs
+$DK_D=Y^{35/48+o(1)}$, so the complete fixed-block exponent and the
+$Y^{11/48}$ target gap do not change.
+
+The proposed positive outer energy is a genuinely stronger problem.  Its
+exact resolved Gram is $H^*H$ in auxiliary coordinates or
+$K_{B,+}^*K_{B,+}$ after physical reassembly; $G^2$ applies only to a
+fully completed symmetric row.  Support-matched phase alignment retains
+the raw $LDK_B^2$ energy and $DK_B$ scalar capacities.  This is a method
+obstruction, not a lower bound for the physical coefficient.
+
+For a fixed primitive top-shell outer ray, $n=aq-bp$ makes $p$ a
+bounded-multiplicity residue lift of the determinant.  Exact M1/M2
+same-denominator resonances survive, full auxiliary inversion returns the
+original all-owner product wave, and product-window or unit-Hessian
+positive norms are weaker than the accepted bound.  The sole graded
+frontier is now the literal signed $B\asymp D$ determinant-residue scalar.
+
+No global exponent changes: internally proved $1/3$, audited external
+$0.3144831759740614\ldots$.  M9-M1, M9-M2, endpoint uniformity, M9, and
+the quarter target remain open.

@@ -1,0 +1,236 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 118,
+    "round_type": "m9_m2_unbalanced_prescribed_centre_wave_gate",
+    "campaign_id": "m9-m2-unbalanced-prescribed-centre-wave-gate",
+    "title": "Unbalanced M2 prescribed-centre truncated-divisor falsification and viability gate",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "d4e626708a04680cc97b043835466948204c6e123a1dc9fd569b50377349feeb",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 98,
+      "numerical_experimental_maximum_percent": 2,
+      "planned_numerical_percent": 0,
+      "literature_policy": "Use primary divisor-wave, reciprocal-sum, Voronoi, or spectral sources only after matching the literal prescribed centre, truncated character divisor orientation, profiles, endpoints, and pointwise norm. Structural analogy has no proof status."
+    },
+    "target_obligations": [
+      "M9-M2-smooth-unbalanced-three-quarter-estimate",
+      "M9-M2-unbalanced-truncated-divisor-fixed-centre-return",
+      "GC-W7-16-actual-reduced-determinant-correlation"
+    ],
+    "frozen_target": {
+      "question": "Does the exact smooth unbalanced M2 prescribed-centre truncated divisor wave satisfy O(X^(1/4+epsilon)), admit a target-safe strict subrange or quantified actual-sign saving, fail by a rigorous literal coherent countermodel, or reduce to a smaller signed survivor after the proposed falsification controls?",
+      "reference_formula": "R_(D,L)(X)=sum_s sum_(r|s,r odd) chi_4(r) W(X/(rD)) Q_L(r(X-s)/(4X)), with Q_L(y)=int q_L(h)h^(-1)e(hy)dh, r asymp X/D, |s-X| rapidly restricted to D/L, absolute capacity (D/L)X^epsilon, and target X^(1/4+epsilon). Equivalently R=sum_(r odd)chi_4(r)W(X/(rD))sum_k q_L(4Xk/r^2)k^(-1)e(Xk/r), modulo the accepted flat-smooth normalization and target-safe stationary remainder.",
+      "quantities": [
+        "X large real; D=X^delta and L=X^ell in the strict residual unbalanced region",
+        "1/4<=delta<1/2, 0<=ell<delta-1/4, and 178ell+1638delta>463",
+        "K=XL/D^2, M=LK, F=XL/D, Delta=D/L, missing factor H_D/L=D/(LX^(1/4))",
+        "literal nonnegative q_L and smooth W profiles with inherited Vaaler height taper",
+        "chi_4 remains on the odd complementary divisor r; the truncated coefficient is not r_2/4",
+        "exact centre s=X is divisor-bounded and cannot alone falsify the target",
+        "a positive or coherent subset is not a lower bound without controlling every complementary signed term",
+        "Round 117 exposes an analogous prescribed-centre product wave but supplies no automatic exponent transfer",
+        "sharp, starred, hard, and arithmetic-owner endpoints lie outside a flat-smooth claim unless their exact kernels are retained"
+      ]
+    },
+    "completion_criteria": [
+      "Rederive the wave in both divisor-product and reciprocal-row orientations, including scale, character, real centre, profiles, and target normalization.",
+      "Audit exact centre, near centre, primes in both odd classes, squares, fourth powers, divisor-rich products, short coherent runs, and profile edges.",
+      "Any countermodel must give a lower bound for the complete literal outside-absolute wave and control the entire signed complement.",
+      "Any upper bound must name the cancellation mechanism and price the sparse selector, character, profiles, endpoints, and every norm or transform factor.",
+      "Prove the full X^(1/4) target, a nonempty target-safe strict region, a quantified actual-sign saving, a rigorous literal countermodel, or a scoped no-go with the smallest signed survivor.",
+      "Show why the argument does not also prove the false unsigned or arbitrary-coefficient analogue.",
+      "Audit every external theorem against the prescribed real centre, truncated divisor orientation, parameter range, coefficient norm, and endpoint hypotheses.",
+      "Do not claim hard TOP, BAL, all UNBAL boundaries, M9-M2, M9, or an exponent change from a proper flat smooth subpacket."
+    ],
+    "controls": [
+      "literal_wave_and_physical_normalization",
+      "product_and_reciprocal_row_equivalence",
+      "exact_centre_and_tie",
+      "near_centre_kernel_sign",
+      "prime_square_fourth_power_divisor_rich",
+      "coherent_run_selector_and_complement",
+      "character_residue_and_both_signs",
+      "profile_support_and_endpoint_kernels",
+      "capacity_before_after_each_norm",
+      "actual_symbol_vs_unsigned_adversary",
+      "strict_residual_exponent_region",
+      "external_theorem_hypothesis_fit",
+      "round117_transfer_scope",
+      "downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "blind_prescribed_centre_wave_probe",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "active",
+        "target": "Independently stress-test the exact prescribed-centre truncated divisor wave, derive all arithmetic and coherent-run controls, and prove the target, a strict subrange or saving, a literal countermodel, or the first exact obstruction.",
+        "context_files": [
+          "problems/gauss_circle.md",
+          "state/control_models.md",
+          "rounds/codex-managed/m9-m2-unbalanced-prescribed-centre-wave-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "all strategy files",
+          "all Round-107 and Round-117 reports and reviews",
+          "the Round-118 derivation packet and conductor candidate",
+          "all Round-118 sibling reports"
+        ],
+        "required_controls": [
+          "literal_wave_and_physical_normalization",
+          "product_and_reciprocal_row_equivalence",
+          "exact_centre_and_tie",
+          "near_centre_kernel_sign",
+          "prime_square_fourth_power_divisor_rich",
+          "coherent_run_selector_and_complement",
+          "character_residue_and_both_signs",
+          "profile_support_and_endpoint_kernels",
+          "capacity_before_after_each_norm",
+          "actual_symbol_vs_unsigned_adversary",
+          "strict_residual_exponent_region",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section statement-only report.",
+          "Exact central, near-central, arithmetic, coherent-run, complement, and capacity controls.",
+          "A complete estimate/countermodel or a precisely scoped no-go with the smallest survivor.",
+          "A promote, retain, revise, reject, or no-change recommendation."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-unbalanced-prescribed-centre-wave-gate/reports/blind_prescribed_centre_wave_probe.md"
+      },
+      {
+        "id": "literal_unbalanced_wave_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "active",
+        "target": "Attack the literal fixed-centre wave before absolute values. Test the reciprocal-selector coherent-run scenario, seek a target-safe subrange or quantitative signed saving, and retain every actual profile and endpoint in any claimed estimate or countermodel.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0821_full_proof_strategy.md",
+          "rounds/codex-managed/m9-m2-smooth-unbalanced-divisor-recombination/synthesis.md",
+          "rounds/codex-managed/m9-m2-smooth-unbalanced-divisor-recombination/reports/truncated_r2_recombination_attack.md",
+          "rounds/codex-managed/m9-m2-smooth-unbalanced-divisor-recombination/reviews/conductor_round107_recombination_and_capacity.md",
+          "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/synthesis.md",
+          "rounds/codex-managed/m9-m2-unbalanced-prescribed-centre-wave-gate/derivation_packet.md",
+          "rounds/codex-managed/m9-m2-unbalanced-prescribed-centre-wave-gate/candidates/conductor_wave_probe.md"
+        ],
+        "required_controls": [
+          "literal_wave_and_physical_normalization",
+          "product_and_reciprocal_row_equivalence",
+          "exact_centre_and_tie",
+          "near_centre_kernel_sign",
+          "prime_square_fourth_power_divisor_rich",
+          "coherent_run_selector_and_complement",
+          "character_residue_and_both_signs",
+          "profile_support_and_endpoint_kernels",
+          "capacity_before_after_each_norm",
+          "actual_symbol_vs_unsigned_adversary",
+          "strict_residual_exponent_region",
+          "round117_transfer_scope",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section discovery report.",
+          "The strongest proved target, strict region, saving, literal countermodel, or exact signed survivor.",
+          "Every selector, character, curvature, transform, Cauchy, divisor, profile, and endpoint factor charged.",
+          "A precise state recommendation."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-unbalanced-prescribed-centre-wave-gate/reports/literal_unbalanced_wave_attack.md"
+      },
+      {
+        "id": "prescribed_centre_wave_hostile_source_audit",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "status": "active",
+        "target": "Hostilely audit every proposed upper bound and countermodel for complement cancellation, transform self-return, false positivity, endpoint loss, and exact primary-source theorem fit; determine whether the pointwise wave strategy remains viable.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0821_full_proof_strategy.md",
+          "rounds/codex-managed/m9-m2-smooth-unbalanced-divisor-recombination/synthesis.md",
+          "rounds/codex-managed/m9-m2-smooth-unbalanced-divisor-recombination/reports/unbalanced_product_source_hostile_audit.md",
+          "rounds/codex-managed/m9-m2-smooth-unbalanced-divisor-recombination/reviews/conductor_round107_recombination_and_capacity.md",
+          "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/reviews/conductor_round117_involution_product_and_source.md",
+          "rounds/codex-managed/m9-m2-unbalanced-prescribed-centre-wave-gate/derivation_packet.md",
+          "rounds/codex-managed/m9-m2-unbalanced-prescribed-centre-wave-gate/candidates/conductor_wave_probe.md",
+          "sources/popov_2024_voronoi_gauss.md"
+        ],
+        "required_controls": [
+          "literal_wave_and_physical_normalization",
+          "product_and_reciprocal_row_equivalence",
+          "exact_centre_and_tie",
+          "near_centre_kernel_sign",
+          "prime_square_fourth_power_divisor_rich",
+          "coherent_run_selector_and_complement",
+          "character_residue_and_both_signs",
+          "profile_support_and_endpoint_kernels",
+          "capacity_before_after_each_norm",
+          "actual_symbol_vs_unsigned_adversary",
+          "strict_residual_exponent_region",
+          "external_theorem_hypothesis_fit",
+          "round117_transfer_scope",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section hostile/source report.",
+          "A pass/fail table for normalization, arithmetic controls, complement, capacity, endpoints, sources, and scope.",
+          "A rigorous named no-go, verified countermodel, or the exact theorem still required.",
+          "A precise state recommendation."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-unbalanced-prescribed-centre-wave-gate/reports/prescribed_centre_wave_hostile_source_audit.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "literal_wave",
+        "requirement": "The exact profile, Vaaler taper, character orientation, real centre, flat-smooth scope, and physical normalization are retained."
+      },
+      {
+        "id": "arithmetic_controls",
+        "requirement": "Exact centre, ties, primes, squares, fourth powers, divisor-rich products, and near-centre products are tested without completing the divisor sum."
+      },
+      {
+        "id": "countermodel",
+        "requirement": "A claimed lower bound controls the complete signed complement and the literal complex kernel, not merely a positive subset."
+      },
+      {
+        "id": "selector",
+        "requirement": "Sparse reciprocal selection, run length, product residual, congruence, and profile support are all charged."
+      },
+      {
+        "id": "capacity",
+        "requirement": "Every transform, curvature, Cauchy, divisor, and endpoint factor is compared with D/L and X^(1/4)."
+      },
+      {
+        "id": "actual_symbol",
+        "requirement": "Any saving or countermodel uses the fixed literal coefficient and does not prove a false arbitrary-sign analogue."
+      },
+      {
+        "id": "source",
+        "requirement": "Every source theorem matches the pointwise real centre, truncated character divisor orientation, parameter range, norm, and endpoints."
+      },
+      {
+        "id": "scope",
+        "requirement": "A flat smooth result is not promoted as hard TOP, BAL, complete UNBAL, M9-M2, M9, or a global exponent without the full owner assembly."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "d4e626708a04680cc97b043835466948204c6e123a1dc9fd569b50377349feeb",
+    "generated_at": "2026-08-21T15:58:10.775648+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

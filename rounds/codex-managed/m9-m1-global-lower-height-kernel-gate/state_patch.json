@@ -1,0 +1,204 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-lower-radial-flat-discrepancy-equivalence",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Target-scale lower-profile flattening and sharp character-divisor discrepancy reduction",
+        "status": "proved_internal",
+        "statement_tex": "Let R=X^(1/4), y=floor(sqrt X), D_j=2^(-j)y, H_j=floor(D_j/R), and choose the fixed lower radial cutoff sufficiently small relative to the certified fixed inactive-bottom support. For both frequency signs, the exact floor-perturbed lower reciprocal antecedent B_low^pm equals the flat sharp cone B_flat^pm=sum_(d<=y)chi_4(d)sum_(h>=1)V_low(4R^2h^2/d^2)e(pm hX/d)/h plus O_epsilon(RX^epsilon). The proof retains every H_j, H_j+1, hard sample, profile star, and boundary; it uses Phi(u)-1=O(u^2), Phi'(u)=O(u), a uniform high-regularity weighted two-variable Fourier separation, and the accepted frequency-first theorem. Changing only the phase to N=floor X costs O(R). Fix J_(R,y)(t)=eta(yt)V_low(4R^2t^2)/t on the small positive arc, extended smoothly by zero and periodically. With A_y(m)=sum_(d<=y,d|m)chi_4(d) for all integer m including d|0, c_y=sum_(d<=y)chi_4(d)/d, and D_N(k)=sum_(d<=y)chi_4(d)(floor((N+k)/d)-floor(N/d)-k/d) for every integer k, exact Fourier completion and Abel summation give B_flat^(N)=sum_k D_N(k)(hat J_(R,y)(k)-hat J_(R,y)(k+1)). Hence the original lower owner is equivalent at the RX^epsilon scale to this prescribed-centre sharp truncated-character divisor discrepancy. The growing J seminorms supply no uniform estimate.",
+        "dependencies": [
+          "H4-Phi-regularity",
+          "M9-M2-dyadic-weight-nondegeneracy",
+          "M9-M1-terminal-frequency-divisor-bound",
+          "M9-M1-global-angular-recombination",
+          "M9-M1-product-wavelet-affine-Abel-reduction"
+        ],
+        "implies": [
+          "M9-M1-global-lower-radial-signed-estimate"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/candidates/conductor_profile_flattening_and_integer_phase.md",
+            "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/reports/blind_lower_height_kernel_rederivation.md",
+            "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/reports/literal_character_paired_height_kernel_attack.md",
+            "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/reports/lower_height_kernel_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/reviews/conductor_round121_flattening_and_pairing_adjudication.md",
+            "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Prove one genuinely joint signed RX^epsilon bound for the exact sharp discrepancy wavelet, equivalently for the flat phase kernel. The interpolation seminorm, another invertible completion, or an outside absolute value is not a saving."
+      },
+      {
+        "id": "M9-M1-lower-mod-four-resonance-tubewise-no-go",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Global lower mod-four pairing and resonance-tubewise capacity obstruction",
+        "status": "proved_internal",
+        "statement_tex": "After exact profile-first aggregation and zero extension, adjacent odd pairing gives B_low^+=E_amp+K_X, where E_amp<<log^2 X and K_X=sum_(d=1 mod 4)sum_h b_X(h,d+2)e(hX/d)(1-e(-2hX/(d(d+2))))/h. For the flat cone E_amp<<log X. Thus the phase kernel is target-equivalent to the original lower antecedent. The sector ||2hX/(d(d+2))||<=R^(-1) is O(R log X), but local pairing does not control its complement. For infinitely many X=R^4, on d asymp R^2 and R^(4/5)<=h<=cR inside the lower support, disjoint tubes of width asymp R/sqrt(h) around the half-integer resonances 2hR^4/(d(d+2))=k+1/2 have fixed-sector phase and bracket; there are asymp h tubes per h, each of modulus >>R/h^(3/2), so the sum of tube moduli is >>R^(3/2). Therefore termwise, pairwise, or resonance-tubewise absolute summation cannot prove the RX^epsilon target. This is not a signed lower bound for the complete kernel; joint cancellation across heights and resonance labels remains open.",
+        "dependencies": [
+          "M9-M1-lower-radial-flat-discrepancy-equivalence",
+          "M9-M1-top-block-adjacent-odd-pairing-no-go",
+          "M9-M1-global-angular-recombination",
+          "M9-M2-dyadic-weight-nondegeneracy"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/reports/blind_lower_height_kernel_rederivation.md",
+            "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/reports/literal_character_paired_height_kernel_attack.md",
+            "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/reports/lower_height_kernel_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/reviews/conductor_round121_flattening_and_pairing_adjudication.md",
+            "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Freeze local mod-four pairing and resonance-by-resonance norms. Any continuation must retain the complete cross-height and cross-resonance signed sum until a quantified inequality is obtained."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-global-lower-radial-signed-estimate",
+        "dependencies_added": [
+          "M9-M1-lower-radial-flat-discrepancy-equivalence"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/reports/blind_lower_height_kernel_rederivation.md",
+            "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/reports/literal_character_paired_height_kernel_attack.md",
+            "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/reports/lower_height_kernel_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Prove the exact prescribed-centre sharp truncated-character divisor-discrepancy wavelet bound from the Round-121 reduction, or equivalently the complete flat phase-kernel bound, jointly across all heights and resonance labels."
+      },
+      {
+        "id": "M9-M1-global-radial-one-count-assembly",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The sole open analytic child is now target-equivalent to the exact Round-121 sharp discrepancy wavelet. Prove that signed bound; the nonlower child is already complete."
+      },
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/synthesis.md"
+          ]
+        },
+        "next_action": "GAR remains open only on the lower owner, now represented by the exact Round-121 sharp discrepancy wavelet. A proof must keep global cross-height and cross-resonance cancellation."
+      },
+      {
+        "id": "M9-M1-product-wavelet-affine-Abel-reduction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/reviews/conductor_round121_flattening_and_pairing_adjudication.md",
+            "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Round 121 proves a full-lower sharp-cutoff version of the same unmatched period-four crossing return. Seek a joint signed wavelet inequality; another local pairing or invertible Fourier return is exhausted."
+      },
+      {
+        "id": "M9-M1-top-block-adjacent-odd-pairing-no-go",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/reviews/conductor_round121_flattening_and_pairing_adjudication.md",
+            "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The global lower kernel has the same amplitude-plus-unsaved-phase decomposition and a stronger resonance-tubewise obstruction. Do not return to adjacent pairing without a joint cross-height inequality."
+      },
+      {
+        "id": "M9-M1-terminal-frequency-divisor-bound",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/reviews/conductor_round121_flattening_and_pairing_adjudication.md",
+            "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Its homogeneous BV form now removes the complete quadratic Vaaler-profile error after lower-support flattening. It still does not estimate the resulting flat signed cone."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round121-C1-two-variable-Fourier-absolute-summability",
+        "reason": "Bare C1 regularity in two variables does not give an absolutely summable Fourier series. The valid proof uses the actual C-infinity multiplier and a weighted high-derivative Wiener estimate."
+      },
+      {
+        "id": "Round121-bottom-exclusion-from-an-uncited-numerical-edge",
+        "reason": "The graph certifies a fixed bottom-support constant. The proof chooses s_0 relative to that constant; a bare numerical edge may be used only with the exact profile certificate cited."
+      },
+      {
+        "id": "Round121-profile-flattening-proves-the-lower-estimate",
+        "reason": "Flattening costs at most the target error but leaves the full flat signed cone. It is a bidirectional target-scale reduction, not an estimate of either main term."
+      },
+      {
+        "id": "Round121-fixed-X-Schwartz-decay-is-a-uniform-bound",
+        "reason": "The sample-exact cutoff changes between 0 and 1/y and has growing seminorms. Fixed-X Fourier convergence proves the identity only."
+      },
+      {
+        "id": "Round121-adjacent-character-pairing-supplies-a-small-phase-increment",
+        "reason": "The bracket is maximal at half-integer increment resonances. Only the narrow integer-increment sector is target-safe by absolute values."
+      },
+      {
+        "id": "Round121-resonance-tubewise-capacity-is-a-signed-lower-bound",
+        "reason": "The R^(3/2) statement sums moduli after decomposing into tubes. Cancellation between tubes, labels, and heights remains available in the actual signed kernel."
+      },
+      {
+        "id": "Round121-integerizing-the-lower-phase-proves-endpoint-uniformity",
+        "reason": "The O(R) integerization changes only this reciprocal lower phase. It proves no uniform control of the separate endpoint operators or the full M9 bridge."
+      },
+      {
+        "id": "Round121-discrepancy-completion-is-a-new-saving-over-Round65",
+        "reason": "The completion globalizes the sharp denominator cutoff and full lower wavelet but returns to the accepted unmatched-crossing obstruction class without a quantitative inequality."
+      },
+      {
+        "id": "Round121-lower-or-GAR-closure-implies-blockwise-M1",
+        "reason": "Even a future complete GAR theorem controls only the total active M1 aggregate and has no inverse implication to either literal blockwise M1 parent."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "Both direct blockwise parents remain open, and the alternative GAR route still lacks its lower signed estimate."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Its hard TOP, balanced, and unbalanced parents are independent and remain open."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "Integerization of one lower reciprocal phase is not the separate endpoint-uniformity theorem."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity are not proved."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The new result is a target-scale equivalence and no-go, not a signed estimate below the accepted one-third menu frontier."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The lower GAR estimate, M9-M2, endpoint uniformity, and final bridge remain open; no quarter theorem or improved exponent follows."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 8,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 121 proves that the entire literal lower profile/floor kernel is target-equivalent to one sharp cone and an exact all-integer truncated-character divisor-discrepancy wavelet. It also proves that local mod-four and resonance-tubewise norms retain R^(3/2) capacity. The signed discrepancy estimate, GAR, every M9 parent, and every exponent improvement remain open."
+  }
+}

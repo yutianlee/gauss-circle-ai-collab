@@ -1,0 +1,168 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "GC-W7-16-local-lift-BV-threshold-V2-lemma",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Character-split local complete-lift BV-threshold square variation",
+        "status": "proved_internal",
+        "statement_tex": "Let chi=chi_4, let P be supported on g asymp G with bounded zero-extended supremum plus discrete variation, and let w be supported on d asymp D with the same bound. If |a|G asymp L, b'=rho v asymp B, and the physical b'-window has length at most Q, then R(v)=a^(-1)sum_g chi(g)g^(-1)P(g)w(g rho v) satisfies ||R||_(V^2(I)) << L^(-1)(1+DQ/B^2)^(1/2), including both V^2 endpoint values. The result survives a bounded-BV reduced-variable multiplier, O(1) clipped intervals, and uniformly each divisor progression. For the accepted Round-95 M1/M2 coefficients, P=Phi(g|a'|/(H+1))v_L(g|a'|), w=omega_(i,D), G=D/B, Q=Q_B, every literal support and star is in this separable formula, the determinant taper and shell cut are bounded-BV multipliers, and the divisor sum costs Y^epsilon. Hence the bound J_B^(1/2)L^(-1)Y^epsilon holds for the two M1 branches after chi_4(b') is transferred exactly to phases e(+/-b'/4), and for the single M2 branch. This proves only the coefficient norm, not the joint reciprocal-curvature inequality or a determinant-correlation bound.",
+        "dependencies": [
+          "GC-W7-16-reduced-Farey-cluster-reduction"
+        ],
+        "implies": [
+          "GC-W7-16-local-transverse-square-variation-connector"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/gc-w7-16-local-transverse-lift-variation-gate/candidates/conductor_bv_threshold_v2_lemma.md",
+            "rounds/codex-managed/gc-w7-16-local-transverse-lift-variation-gate/reports/literal_lift_coefficient_variation_attack.md",
+            "rounds/codex-managed/gc-w7-16-local-transverse-lift-variation-gate/reviews/conductor_round128_literal_v2_adjudication.md",
+            "rounds/codex-managed/gc-w7-16-local-transverse-lift-variation-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/gc-w7-16-local-transverse-lift-variation-gate/reports/blind_local_v2_feasibility.md",
+            "rounds/codex-managed/gc-w7-16-local-transverse-lift-variation-gate/reports/local_variation_hostile_audit.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use only the exact character-split packages. The remaining task is the joint actual-family V^2-weighted reciprocal-curvature inequality; do not infer it from this norm by generic partial summation."
+      },
+      {
+        "id": "GC-W7-16-local-V2-normalization-obstruction",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Abstract birth-count and unsplit-M1 transverse-variation obstruction",
+        "status": "proved_internal",
+        "statement_tex": "A local birth count, pointwise coefficient scale L^(-1), and the displayed common character chi_4(g) do not imply a J_B^(1/2)/L V^2 bound: on a fixed lift window the admissible abstract choice omega_v(g)=L^(-1)chi_4(g)(-1)^v has norm asymp G sqrt(N)/L with zero births, and its constant-in-v version already has endpoint size asymp G/L. In the physical M1 coefficient there is a separate literal normalization obstruction: if the reduced denominator character chi_4(b') remains inside the transverse amplitude, an interior one-lift top-shell packet has V^2 norm >>Q_B^(1/2)/L while J_B asymp 1. The exact identity chi_4(b')=(e(b'/4)-e(-b'/4))/(2i) moves this dense alternation into two carrier phases and is mandatory before taking the amplitude V^2 norm. These are method and normalization obstructions, not lower bounds for the correctly split physical family.",
+        "dependencies": [
+          "GC-W7-16-reduced-Farey-cluster-reduction"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/gc-w7-16-local-transverse-lift-variation-gate/reports/blind_local_v2_feasibility.md",
+            "rounds/codex-managed/gc-w7-16-local-transverse-lift-variation-gate/reports/literal_lift_coefficient_variation_attack.md",
+            "rounds/codex-managed/gc-w7-16-local-transverse-lift-variation-gate/reports/local_variation_hostile_audit.md",
+            "rounds/codex-managed/gc-w7-16-local-transverse-lift-variation-gate/reviews/conductor_round128_literal_v2_adjudication.md",
+            "rounds/codex-managed/gc-w7-16-local-transverse-lift-variation-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Keep the M1 reduced character in the exact quarter-linear carrier branches and keep the common lift character inside the BV lift sum. Reject arguments using J_B, pointwise size, or character notation without the literal separable coefficient structure."
+      }
+    ],
+    "update": [
+      {
+        "id": "GC-W7-16-local-transverse-square-variation-connector",
+        "statement_tex": "At W=Y^(7/16), D=Y^(1/2), L=Y^(1/6), let B=Y^b with 1/3<=b<=1/2, Q_B=min(B,BD/(WL)), lambda_B=YL/(DB^2), and J_B=1+DQ_B/B^2. The exact two M1 quarter-phase branches and one M2 branch now satisfy the proved coefficient bound ||U_(i,rho,eta)||_(V^2(I)) << Y^epsilon J_B^(1/2)/L, including all smooth, hard, floor, star, endpoint, support-birth, Mobius, taper, and shell-owner pieces. The remaining hypothesis is the joint actual-family inequality |sum_(v in I)^* U_(i,rho,eta)(v)e(-ca'/(kappa_i rho v)+vartheta_(i,eta)rho v)| << ||U_(i,rho,eta)||_(V^2(I)) min(N_rho,N_rho sqrt(lambda_B rho^2)+(lambda_B rho^2)^(-1/2))Y^epsilon, without an extra N_rho^(1/2). If this open inequality holds, the complete B-shell is O_epsilon(D J_B^(1/2)min(Q_B,Q_Bsqrt(lambda_B)+lambda_B^(-1/2))Y^epsilon), and all shells give Y^(73/96+epsilon), a strict Y^(1/96) fixed-block saving. Its persistence exponent is 115/288>1/3, so it would not improve the global theorem.",
+        "dependencies_added": [
+          "GC-W7-16-local-lift-BV-threshold-V2-lemma",
+          "GC-W7-16-local-V2-normalization-obstruction"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/gc-w7-16-local-transverse-lift-variation-gate/reports/literal_lift_coefficient_variation_attack.md",
+            "rounds/codex-managed/gc-w7-16-local-transverse-lift-variation-gate/reviews/conductor_round128_literal_v2_adjudication.md",
+            "rounds/codex-managed/gc-w7-16-local-transverse-lift-variation-gate/synthesis.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/gc-w7-16-local-transverse-lift-variation-gate/reports/blind_local_v2_feasibility.md",
+            "rounds/codex-managed/gc-w7-16-local-transverse-lift-variation-gate/reports/local_variation_hostile_audit.md"
+          ]
+        },
+        "next_action": "Test only the joint branchwise actual-family reciprocal-curvature inequality. A generic V^2 theorem, separated lift norm, or proof with an extra N_rho^(1/2) does not pass."
+      },
+      {
+        "id": "GC-W7-16-actual-reduced-determinant-correlation",
+        "dependencies_added": [
+          "GC-W7-16-local-lift-BV-threshold-V2-lemma"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/gc-w7-16-local-transverse-lift-variation-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The local branchwise lift-coefficient norm is proved. Next test the joint V^2-weighted reciprocal-curvature inequality without N_rho^(1/2); even success gives only Y^(73/96), not the Y^(1/2) determinant target."
+      },
+      {
+        "id": "GC-W7-16-bounded-lift-top-shell-curvature-saving",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/gc-w7-16-local-transverse-lift-variation-gate/reviews/conductor_round128_literal_v2_adjudication.md"
+          ]
+        },
+        "next_action": "The long-lift coefficient variation seam is now closed after exact M1 phase splitting. Extending the curvature saving below the top shell still requires the separate joint actual-family reciprocal inequality."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round128-birth-count-and-pointwise-scale-imply-local-V2",
+        "reason": "Fixed-window alternating and phase-conjugating coefficients have zero births but V2 capacity G sqrt(N)/L, and endpoint values can have capacity G/L."
+      },
+      {
+        "id": "Round128-common-character-notation-alone-implies-Abel-cancellation",
+        "reason": "A phase-conjugating lift weight cancels chi_4(g); bounded sampled variation of the actual frequency factor is essential."
+      },
+      {
+        "id": "Round128-unsplit-M1-character-has-JB-square-variation",
+        "reason": "The literal reduced character alternates densely and gives Q_B^(1/2)/L on a top-shell one-lift packet while J_B is bounded."
+      },
+      {
+        "id": "Round128-coefficient-V2-bound-implies-joint-curvature",
+        "reason": "Generic partial summation and Cauchy insert an additional N_rho^(1/2); the required actual-family inequality is separate and open."
+      },
+      {
+        "id": "Round128-coefficient-gate-proves-Y73over96-correlation",
+        "reason": "The Y^(73/96) consequence also requires the open joint reciprocal-curvature inequality."
+      },
+      {
+        "id": "Round128-local-coefficient-theorem-improves-global-exponent",
+        "reason": "No complete correlation bound is proved, and even the conditional persistence exponent 115/288 is worse than one third."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "Neither direct M1 parent nor the exact lower-GAR alternative is proved."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Hard TOP, BAL, and every UNBAL owner remain open."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "No all-owner endpoint estimate is proved."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain open."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The complete M9 hypothesis remains open."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The new coefficient lemma proves no complete local correlation and no pointwise improvement."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The quarter target still lacks both M9 components, endpoint uniformity, and the final bridge."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 128 proves the finite branchwise local V2 coefficient theorem by exact discrete Stieltjes decomposition and character Abel, and it finds the literal unsplit-M1 normalization counterterm. It leaves the genuinely joint reciprocal-curvature inequality, the conditional block saving, every M9 parent, and every global exponent unchanged."
+  }
+}

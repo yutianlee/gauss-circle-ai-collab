@@ -1,0 +1,234 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 122,
+    "round_type": "m9_m1_near_square_complementary_divisor_gate",
+    "campaign_id": "m9-m1-near-square-complementary-divisor-gate",
+    "title": "Near-square complementary-divisor gate for the lower M1 discrepancy",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "3e85caebbaf6c69d0019009bee3ce8f720f34f579bfb0cfa2035b92be0fb2c13",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 99,
+      "numerical_experimental_maximum_percent": 1,
+      "planned_numerical_percent": 0,
+      "literature_policy": "Use no new theorem unless a primary source matches the prescribed centre, sharp sqrt(X) divisor truncation, chi_4 coefficient, one-sided Fourier wavelet, pointwise real-X norm, and required power. Do not import the desired circle estimate through a short-interval bound."
+    },
+    "target_obligations": [
+      "M9-M1-lower-radial-flat-discrepancy-equivalence",
+      "M9-M1-global-lower-radial-signed-estimate",
+      "M9-M1-global-angular-radial-estimate"
+    ],
+    "frozen_target": {
+      "question": "After a target-safe localization of the exact Round-121 discrepancy wavelet, does the near-square complementary-divisor involution give a noninvertible signed gain, a strict target-safe branch, or a rigorous self-return?",
+      "reference_formula": "B_flat^(N)=sum_(k in Z)D_N(k)W_(R,y)(k), where D_N(k)=sum_(d<=y)chi_4(d)(floor((N+k)/d)-floor(N/d)-k/d), W_(R,y)(k)=hat J(k)-hat J(k+1), J(t)=eta(yt)V_low(4R^2t^2)/t, and the target is B_flat^(N)<<R X^epsilon.",
+      "quantities": [
+        "X large real, R=X^(1/4), y=floor(sqrt X), N=floor X",
+        "all k in Z before a proved target-safe tail deletion",
+        "K_(R,y)(t)=J_(R,y)(t)(1-e(-t)) and its uniform Fourier envelope",
+        "m=N+k positive on the localized window",
+        "m=2^a m_0 with m_0 odd and every a>=0",
+        "fixed cutoff d<=y versus complementary threshold m_0/y",
+        "m_0 mod 4 character sign, square ties, central divisor band, and hard d=y sample",
+        "signed k-wavelet retained across every parity and complement branch",
+        "full r_2/4 coefficient plus exact complementary tail, never one without the other",
+        "all Round-121 normalization, real-X amplitudes, and downstream owner restrictions"
+      ]
+    },
+    "completion_criteria": [
+      "Prove a uniform Fourier envelope and target-safe far-k tail for W_(R,y).",
+      "Keep m=N+k positive and quantify the exact surviving k-window.",
+      "Derive the complementary-divisor identity for every 2-adic valuation and odd residue class.",
+      "Price all strict/weak cutoff boundaries, square ties, and the central divisor band.",
+      "Keep the complete signed k-sum until a quantitative inequality is obtained.",
+      "Audit whether the full r_2 coefficient invokes the circle problem or only a proved input.",
+      "Distinguish a noninvertible gain from reconstruction of the Round-121 cone or Round-65 crossing return.",
+      "Prove the complete target, a strict target-safe subpackage, a signed power saving/inverse theorem, or a rigorous self-return/no-go with the smallest survivor.",
+      "State exactly what follows for lower GAR, GAR, blockwise M1, M9-M2, endpoint uniformity, M9, and every exponent."
+    ],
+    "controls": [
+      "exact_Round121_discrepancy",
+      "uniform_wavelet_envelope",
+      "far_k_tail_budget",
+      "positive_near_square_window",
+      "two_adic_divisor_involution",
+      "character_residue_branches",
+      "square_and_central_boundaries",
+      "full_divisor_and_complement_one_count",
+      "signed_k_aggregation",
+      "circle_problem_noncircularity",
+      "old_return_map_nonduplication",
+      "false_unsigned_control",
+      "one_count_downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "blind_near_square_divisor_involution",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "active",
+        "target": "Independently localize the exact discrepancy wavelet, derive every complementary-divisor branch, and prove a target, strict subpackage, inverse theorem, or smallest rigorous self-return without nonblind history.",
+        "context_files": [
+          "problems/gauss_circle.md",
+          "state/control_models.md",
+          "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "all strategy files",
+          "all Round-64 through Round-122 nonblind artifacts",
+          "all Round-122 sibling reports"
+        ],
+        "required_controls": [
+          "exact_Round121_discrepancy",
+          "uniform_wavelet_envelope",
+          "far_k_tail_budget",
+          "positive_near_square_window",
+          "two_adic_divisor_involution",
+          "character_residue_branches",
+          "square_and_central_boundaries",
+          "full_divisor_and_complement_one_count",
+          "signed_k_aggregation",
+          "circle_problem_noncircularity",
+          "false_unsigned_control",
+          "one_count_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section statement-only report.",
+          "A uniform wavelet-tail derivation and complete 2-adic divisor involution.",
+          "A complete estimate, strict target-safe package, inverse theorem, or exact self-return/no-go.",
+          "A promote, retain, revise, reject, or no-change recommendation."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/reports/blind_near_square_divisor_involution.md"
+      },
+      {
+        "id": "literal_two_adic_complementary_divisor_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "active",
+        "target": "Derive the literal Fourier localization and all 2-adic complementary-divisor branches, then seek a noninvertible signed inequality on the complete near-square wavelet.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0821_full_proof_strategy.md",
+          "rounds/codex-managed/m9-m1-reciprocal-product-wavelet/synthesis.md",
+          "rounds/codex-managed/m9-m1-product-wavelet-local-discrepancy/synthesis.md",
+          "rounds/codex-managed/m9-m1-unmatched-crossing-fourier-modes/synthesis.md",
+          "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/synthesis.md",
+          "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/derivation_packet.md"
+        ],
+        "required_controls": [
+          "exact_Round121_discrepancy",
+          "uniform_wavelet_envelope",
+          "far_k_tail_budget",
+          "positive_near_square_window",
+          "two_adic_divisor_involution",
+          "character_residue_branches",
+          "square_and_central_boundaries",
+          "full_divisor_and_complement_one_count",
+          "signed_k_aggregation",
+          "circle_problem_noncircularity",
+          "old_return_map_nonduplication",
+          "false_unsigned_control",
+          "one_count_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section analytic report.",
+          "Exact Fourier-envelope and 2-adic complement formulas with capacity table.",
+          "A target estimate, strict signed gain, inverse theorem, or smallest exact return.",
+          "A precise state recommendation."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/reports/literal_two_adic_complementary_divisor_attack.md"
+      },
+      {
+        "id": "near_square_complement_hostile_audit",
+        "role": "seam_reviewer",
+        "access_mode": "selected_context",
+        "status": "active",
+        "target": "Hostilely audit wavelet-tail uniformity, every parity and central boundary, circular use of the circle estimate, self-return to prior cones, false unsigned analogues, and all claimed downstream implications.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0821_full_proof_strategy.md",
+          "rounds/codex-managed/m9-m1-top-block-signed-adjacent-odd-pairing/synthesis.md",
+          "rounds/codex-managed/m9-m1-reciprocal-product-wavelet/synthesis.md",
+          "rounds/codex-managed/m9-m1-product-wavelet-local-discrepancy/synthesis.md",
+          "rounds/codex-managed/m9-m1-unmatched-crossing-fourier-modes/synthesis.md",
+          "rounds/codex-managed/m9-m2-unbalanced-prescribed-centre-wave-gate/synthesis.md",
+          "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/synthesis.md",
+          "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/derivation_packet.md"
+        ],
+        "required_controls": [
+          "exact_Round121_discrepancy",
+          "uniform_wavelet_envelope",
+          "far_k_tail_budget",
+          "positive_near_square_window",
+          "two_adic_divisor_involution",
+          "character_residue_branches",
+          "square_and_central_boundaries",
+          "full_divisor_and_complement_one_count",
+          "signed_k_aggregation",
+          "circle_problem_noncircularity",
+          "old_return_map_nonduplication",
+          "false_unsigned_control",
+          "one_count_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section hostile report.",
+          "A pass/fail seam table and capacity/circularity controls.",
+          "The maximal safe theorem or fatal correction and smallest survivor.",
+          "A precise state recommendation."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/reports/near_square_complement_hostile_audit.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "wavelet",
+        "requirement": "The difference weight is derived from the explicit one-sided sample interpolant, with uniform norms and a target-safe discarded tail."
+      },
+      {
+        "id": "window",
+        "requirement": "Every retained m=N+k is positive and near-square at the quantified scale; d|0 and negative-index conventions are not silently dropped."
+      },
+      {
+        "id": "involution",
+        "requirement": "The divisor complement is exact for every 2-adic valuation, odd character residue, strict cutoff, square tie, and central divisor."
+      },
+      {
+        "id": "one_count",
+        "requirement": "The full divisor coefficient and complementary tail are inserted together exactly once."
+      },
+      {
+        "id": "sign",
+        "requirement": "The k-wavelet and all parity branches remain jointly signed until a quantified inequality is proved."
+      },
+      {
+        "id": "circularity",
+        "requirement": "No bound assumes the quarter circle discrepancy, an equivalent short-interval theorem, or a stronger unproved full-divisor estimate."
+      },
+      {
+        "id": "return",
+        "requirement": "Complementary inversion, r_2 completion, or Fourier reconstruction is not called a gain if it returns to the accepted cone or unmatched-crossing functional."
+      },
+      {
+        "id": "scope",
+        "requirement": "A lower-GAR reduction or subpackage is not promoted to GAR, blockwise M1, M9-M2, endpoint uniformity, M9, or an exponent without its exact graph bridge."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "3e85caebbaf6c69d0019009bee3ce8f720f34f579bfb0cfa2035b92be0fb2c13",
+    "generated_at": "2026-08-21T18:22:34.735884+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

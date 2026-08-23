@@ -1,0 +1,222 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 126,
+    "round_type": "m9_m2_hard_top_actual_vector_spectral_gate",
+    "campaign_id": "m9-m2-hard-top-actual-vector-spectral-gate",
+    "title": "Hard TOP actual-character vector spectral gate",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "85cf63f0087c6c6adf911bd0f7fdf5d3985a6a49b4e0d6158a7dc28470da10c9",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 99,
+      "numerical_experimental_maximum_percent": 1,
+      "planned_numerical_percent": 0,
+      "literature_policy": "Import no estimate unless its primary statement controls the literal hard affine vector with the actual quarter character, moving endpoints, stars, floors, one-count slabs, and L^2 energy target. Generic large-sieve or operator analogies are strategy evidence only."
+    },
+    "target_obligations": [
+      "M9-M2-top-endpoint-signed-cone",
+      "M9-M2-top-endpoint-transposed-character-energy",
+      "M9-M2-top-endpoint-density-discrepancy-energy"
+    ],
+    "frozen_target": {
+      "question": "Can the exact hard-TOP transposed actual-character vector be bounded at diagonal energy scale by a genuinely noninvertible signed spectral/operator inequality, or can every violation be localized to a smaller complete offset family before the hard-TOP lane is parked again?",
+      "reference_formula": "R_m=sum_(h in H_L, m<=h<=4m) chi_4(h)a_end(h,m)e(sqrt(Xhm)); prove E_top=sum_m|R_m|^2<<_epsilon L^2X^epsilon, equivalently Re C_(L,tag)^comp<<_epsilon L^2X^epsilon for the one-orientation completed directional scalar.",
+      "quantities": [
+        "X real at least 2, J=sqrt(X), and one polynomial intermediate hard-top height block L with bounded and terminal blocks already owned",
+        "R_m is the literal Round-75 row with chi_4(h) inside the h-sum, the hard affine range m<=h<=4m, the actual endpoint coefficient a_end(h,m), and zero extension",
+        "E_top=sum_m|R_m|^2 is nonnegative; its diagonal D_L is O_epsilon(L^2X^epsilon)",
+        "E_top=D_L+2Re C_L^off and also equals owned_L+2Re C_(L,tag)^comp with owned_L target-safe",
+        "one representative orientation h<s, equivalently primitive a<b, followed by one outer 2Re; both orientations plus 2Re are forbidden",
+        "C_L^off=sum_(a odd,q) (-1)^q F_(L,a)(q), with literal coprimality, odd lifts, moving ceiling, reciprocal intervals, collars, entries, exits, stars, floors, metric centres, and one-count slabs",
+        "fixed-a Gram, complex modulus, blockwise absolute mass, slabwise l1, adjacent total variation, scaled-comb transport, and another reciprocal transform are strictly stronger or already parked",
+        "the target is a positive actual-vector Bessel/contraction theorem or the equivalent one-sided real off-diagonal bound, not a coefficient-blind norm",
+        "hard TOP M2 owner only; BAL, UNBAL, all M1 owners, endpoint uniformity, and downstream graph parents excluded"
+      ]
+    },
+    "completion_criteria": [
+      "Reproduce the exact Round-75 hard vector, diagonal, off-diagonal, character parity, affine endpoints, one orientation, and Round-110 completed real-part equivalence.",
+      "State capacity before each inequality and distinguish the minimal actual-vector energy from complex, fixed-a, slabwise, offsetwise, transport, and coefficient-blind norms.",
+      "Test a parity-twisted noninvertible spectral/operator inequality on the complete m-vector before separating one-count slabs or reciprocal modes.",
+      "Retain every actual coefficient and phase seam; arbitrary aligned, random-sign, square/Pell/fourth-power, bulk-sampler, and endpoint controls must be answered.",
+      "Prove the L^2X^epsilon target, a strict target-safe complete offset subrange, a positive-power saving or inverse theorem, or the smallest rigorous no-go and exact parked survivor.",
+      "Audit all hard affine faces, support births and deaths, ceilings, collars, floors, stars, zero extension, and prior target-safe owners exactly once.",
+      "State exactly what follows for hard TOP, BAL, UNBAL, M9-M2, both M1 routes, endpoint uniformity, M9, the quarter theorem, and all exponents."
+    ],
+    "controls": [
+      "literal_Round75_hard_top_vector",
+      "one_orientation_and_outer_2Re",
+      "diagonal_one_count_and_target",
+      "character_inside_vector_before_square",
+      "hard_affine_support_and_zero_extension",
+      "block_energy_vs_offdiagonal_realpart",
+      "parity_highpass_vector_scope",
+      "actual_vs_adversarial_vectors",
+      "square_Pell_fourth_power_resonances",
+      "one_count_slabs_retained_jointly",
+      "capacity_before_and_claimed_gain",
+      "endpoint_and_prior_owner_scope",
+      "owner_and_downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "blind_hard_top_vector_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "pending",
+        "target": "Independently derive the exact hard-TOP actual-character vector energy and prove its target, a strict complete-offset saving, a quantitative inverse theorem, or the smallest rigorous coefficient/spectral no-go.",
+        "context_files": [
+          "problems/gauss_circle.md",
+          "state/control_models.md",
+          "rounds/codex-managed/m9-m2-hard-top-actual-vector-spectral-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "all strategy files",
+          "all Round-75 through Round-126 nonblind artifacts",
+          "all Round-126 sibling reports"
+        ],
+        "required_controls": [
+          "literal_Round75_hard_top_vector",
+          "one_orientation_and_outer_2Re",
+          "diagonal_one_count_and_target",
+          "character_inside_vector_before_square",
+          "hard_affine_support_and_zero_extension",
+          "block_energy_vs_offdiagonal_realpart",
+          "parity_highpass_vector_scope",
+          "actual_vs_adversarial_vectors",
+          "square_Pell_fourth_power_resonances",
+          "one_count_slabs_retained_jointly",
+          "capacity_before_and_claimed_gain",
+          "endpoint_and_prior_owner_scope",
+          "owner_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section statement-only report.",
+          "An exact derivation of the vector energy, diagonal and one-sided target.",
+          "A target estimate, strict saving, inverse theorem, or smallest no-go.",
+          "A promote, retain, revise, reject, or no-change recommendation."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-hard-top-actual-vector-spectral-gate/reports/blind_hard_top_vector_rederivation.md"
+      },
+      {
+        "id": "hard_top_parity_spectral_operator_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "target": "Develop a noninvertible parity-twisted spectral/operator inequality for the complete actual m-vector, retaining one-count slabs jointly and exhibiting the full saving from coefficient-blind hard-TOP capacity to L^2.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0821_full_proof_strategy.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-near-product-energy/synthesis.md",
+          "rounds/codex-managed/m9-m2-global-signed-completed-directional/synthesis.md",
+          "rounds/codex-managed/m9-m2-global-signed-completed-directional/reviews/conductor_round110_recombination_and_orientation.md",
+          "rounds/codex-managed/m9-m2-adjacent-ray-transport-commutator/synthesis.md",
+          "rounds/codex-managed/m9-m2-hard-top-actual-vector-spectral-gate/derivation_packet.md"
+        ],
+        "required_controls": [
+          "literal_Round75_hard_top_vector",
+          "one_orientation_and_outer_2Re",
+          "diagonal_one_count_and_target",
+          "character_inside_vector_before_square",
+          "hard_affine_support_and_zero_extension",
+          "block_energy_vs_offdiagonal_realpart",
+          "parity_highpass_vector_scope",
+          "actual_vs_adversarial_vectors",
+          "square_Pell_fourth_power_resonances",
+          "one_count_slabs_retained_jointly",
+          "capacity_before_and_claimed_gain",
+          "endpoint_and_prior_owner_scope",
+          "owner_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section analytic report.",
+          "The exact vector/operator and all comparison norms with capacities.",
+          "A proved inequality, strict subrange, inverse theorem, or first invalid seam.",
+          "A precise state recommendation."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-hard-top-actual-vector-spectral-gate/reports/hard_top_parity_spectral_operator_attack.md"
+      },
+      {
+        "id": "hard_top_actual_vector_hostile_audit",
+        "role": "seam_reviewer",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "target": "Hostilely audit the hard-TOP vector target, parity spectral proposal, diagonal and off-diagonal capacities, resonant controls, one-count slabs, endpoints, and every claimed gain.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0821_full_proof_strategy.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-near-product-energy/synthesis.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-signed-strict-metric-energy/synthesis.md",
+          "rounds/codex-managed/m9-m2-global-signed-completed-directional/synthesis.md",
+          "rounds/codex-managed/m9-m2-adjacent-ray-transport-commutator/synthesis.md",
+          "rounds/codex-managed/m9-m2-hard-top-actual-vector-spectral-gate/derivation_packet.md"
+        ],
+        "required_controls": [
+          "literal_Round75_hard_top_vector",
+          "one_orientation_and_outer_2Re",
+          "diagonal_one_count_and_target",
+          "character_inside_vector_before_square",
+          "hard_affine_support_and_zero_extension",
+          "block_energy_vs_offdiagonal_realpart",
+          "parity_highpass_vector_scope",
+          "actual_vs_adversarial_vectors",
+          "square_Pell_fourth_power_resonances",
+          "one_count_slabs_retained_jointly",
+          "capacity_before_and_claimed_gain",
+          "endpoint_and_prior_owner_scope",
+          "owner_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section hostile report.",
+          "A pass/fail seam table for the exact vector, capacities, signs, resonances and endpoints.",
+          "The maximal safe theorem or exact fatal correction.",
+          "A precise state recommendation and parked survivor if the route fails."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-hard-top-actual-vector-spectral-gate/reports/hard_top_actual_vector_hostile_audit.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "literal_vector",
+        "requirement": "The proof uses the exact Round-75 a_end(h,m), hard affine interval, character inside the vector, and zero extension."
+      },
+      {
+        "id": "minimal_target",
+        "requirement": "The positive vector energy and equivalent one-sided real off-diagonal are distinguished from complex, fixed-a, slabwise and coefficient-blind norms."
+      },
+      {
+        "id": "sign_and_orientation",
+        "requirement": "One h<s orientation and one outer 2Re are used; parity is retained before any norm."
+      },
+      {
+        "id": "noninvertibility",
+        "requirement": "The claimed gain comes from an actual signed operator inequality, not adjacent transport, comb total variation, another B-process, or random-sign credit."
+      },
+      {
+        "id": "capacity_and_controls",
+        "requirement": "Every norm states its diagonal and coherent capacity and answers arbitrary aligned vectors plus square, Pell, fourth-power and endpoint controls."
+      },
+      {
+        "id": "scope",
+        "requirement": "No hard-TOP result is promoted to BAL, UNBAL, complete M9-M2, M9, or an exponent without every graph bridge."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "85cf63f0087c6c6adf911bd0f7fdf5d3985a6a49b4e0d6158a7dc28470da10c9",
+    "generated_at": "2026-08-23T03:44:20.364427+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

@@ -1,0 +1,234 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 115,
+    "round_type": "m9_m2_balanced_double_far_shifted_divisor_fork",
+    "campaign_id": "m9-m2-balanced-double-far-shifted-divisor-fork",
+    "title": "Actual-symbol double-far shifted-divisor fork",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "6eb6eb5941e6d4720294c6b0890356113700db3201cf7c19337b96fb5ed47155",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 98,
+      "numerical_experimental_maximum_percent": 2,
+      "planned_numerical_percent": 0,
+      "literature_policy": "Do not import a shifted-convolution, spectral, delta-method, or large-sieve theorem by analogy. This round first derives the exact finite correlation and tests its actual-symbol main term. Any external theorem mentioned must be a primary source with every conductor, weight, shift, norm, and uniformity hypothesis matched."
+    },
+    "target_obligations": [
+      "M9-M2-balanced-double-far-actual-energy",
+      "M9-M2-smooth-balanced-quarter-packet-estimate",
+      "M9-M2-balanced-full-product-double-corridor-reduction"
+    ],
+    "frozen_target": {
+      "question": "For the exact Round-114 double-far survivor, can the literal chi_4-twisted shifted-divisor coefficient be exposed and estimated by a genuinely noninvertible dispersion mechanism with one factor L of saving, or does its actual-symbol main term rigorously retain equal capacity and close this route?",
+      "reference_formula": "For one persistent j=1 block, a_B^<(h,k)=chi_4(h) eta(gcd(h,k)/(sqrt L/2)) A_B(h,k) and E_(B,df)=sum_(|r|>L)sum_n e(R(sqrt n-sqrt(n+r))) C_B(n,r), where C_B(n,r)=sum_(hk=n,h'k'=n+r, |hk'-h'k|>L) a_B^<(h,k) conjugate(a_B^<(h',k')). The target is |E_(B,df)|<<L^3 X^epsilon at R=sqrt X asymp L^3 and K asymp L. The phase is constant within a fixed (n,r) fibre, so the required saving must act on the literal signed divisor correlation or on its outer shifted-product sum.",
+      "quantities": [
+        "X>=4096 real, R=sqrt X, persistent j=1, L asymp R^(1/3), and 1<=K/L<=16",
+        "one fixed physical block B with the exact Round-113 real slanted symbol A_B and all floors, tapers, profiles, stars, and support crossings",
+        "low-gcd weight eta(gcd(h,k)/(sqrt L/2)); high gcd, squares, near squares, transform error, and isolated exact-square j=2 retain prior owners",
+        "full products n=hk and n+r=h'k'; determinant rho=hk'-h'k; only |r|>L and |rho|>L remain",
+        "chi_4(h)chi_4(h') and the exact parity relation for p=h'-h must remain visible",
+        "linear target L^(3/2), energy target L^3, and coefficient-blind double-far capacity L^4",
+        "no absolute value may enter the inner divisor sum or the outer r,n sum unless the resulting capacity is explicitly paid",
+        "distinct physical blocks and gcd shells may not be combined before their accepted one-count maps"
+      ]
+    },
+    "completion_criteria": [
+      "Derive coefficientwise the exact divisor-pair formula for C_B(n,r), including the determinant inequality after substituting k=n/h and k'=(n+r)/h'.",
+      "Derive an exact alternative chart in increments p=h'-h and q=k'-k, including chi_4(h)chi_4(h+p), r, rho, support, and fibre multiplicities.",
+      "Identify and compute every zero-frequency or nonoscillatory main term produced by any dispersion, Poisson, delta, Mellin, or spectral decomposition before estimating a remainder.",
+      "Prove the target, a target-safe strict subrange with a smaller named survivor, a genuine positive-power saving, or an actual-symbol equal-capacity obstruction with a lawful control.",
+      "Distinguish cancellation in the inner divisor coefficient from cancellation of the outer nonlinear phase; do not transfer one to the other without an exact inequality.",
+      "Audit shift uniformity up to |r| comparable to L^2, conductor four, gcd truncation, slanted nonseparable weights, endpoint owners, and the critical R asymp L^3 relation.",
+      "Do not claim BAL, any M2 parent, M9-M1, endpoint uniformity, M9, or a new exponent unless the corresponding complete estimate and graph implication are proved."
+    ],
+    "controls": [
+      "literal_full_product_to_divisor_pair_identity",
+      "determinant_gate_after_divisor_substitution",
+      "increment_chart_and_parity_character",
+      "gcd_cutoff_and_slanted_symbol_retention",
+      "inner_vs_outer_cancellation",
+      "zero_frequency_and_main_term",
+      "shift_range_and_conductor_uniformity",
+      "linear_vs_energy_capacity",
+      "actual_symbol_vs_phase_adapted_control",
+      "double_far_owner_and_corridor_scope",
+      "fixed_block_and_no_shellwise_l1",
+      "critical_j1_and_exact_square_j2_boundary",
+      "external_theorem_hypothesis_fit",
+      "downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "blind_shifted_divisor_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "active",
+        "target": "Independently derive the exact divisor-pair and increment charts for the supplied double-far energy, classify the character and zero-frequency structure, and determine the first lawful place where one factor L might be saved or where equal capacity persists.",
+        "context_files": [
+          "problems/gauss_circle.md",
+          "state/control_models.md",
+          "rounds/codex-managed/m9-m2-balanced-double-far-shifted-divisor-fork/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "all strategy files",
+          "the Round-115 derivation packet and conductor candidate",
+          "all Round-114 reports and Round-115 sibling reports"
+        ],
+        "required_controls": [
+          "literal_full_product_to_divisor_pair_identity",
+          "determinant_gate_after_divisor_substitution",
+          "increment_chart_and_parity_character",
+          "gcd_cutoff_and_slanted_symbol_retention",
+          "inner_vs_outer_cancellation",
+          "zero_frequency_and_main_term",
+          "shift_range_and_conductor_uniformity",
+          "linear_vs_energy_capacity",
+          "actual_symbol_vs_phase_adapted_control",
+          "double_far_owner_and_corridor_scope",
+          "fixed_block_and_no_shellwise_l1",
+          "critical_j1_and_exact_square_j2_boundary",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section statement-only report.",
+          "Two exact finite charts with all signs, support, and gates, or the first failed seam.",
+          "A capacity table for zero modes, generic modes, and boundary modes.",
+          "A promote, retain, revise, reject, or no-change recommendation."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-balanced-double-far-shifted-divisor-fork/reports/blind_shifted_divisor_rederivation.md"
+      },
+      {
+        "id": "literal_dispersion_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "active",
+        "target": "Starting only from the exact Round-114 survivor, construct and test the smallest noninvertible actual-symbol dispersion, Poisson, Mellin, or shifted-convolution inequality. Compute its main term first and prove a target-safe shift range, strict saving, full target, or exact failed seam.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0821_full_proof_strategy.md",
+          "rounds/codex-managed/m9-m2-balanced-double-far-shifted-divisor-fork/derivation_packet.md",
+          "rounds/codex-managed/m9-m2-balanced-double-far-shifted-divisor-fork/candidates/conductor_shifted_divisor_fork.md",
+          "rounds/codex-managed/m9-m2-balanced-literal-energy-connector-fork/synthesis.md",
+          "rounds/codex-managed/m9-m2-balanced-literal-energy-connector-fork/reviews/conductor_round114_energy_and_corridors.md",
+          "rounds/codex-managed/m9-m2-balanced-smooth-quarter-packet-canonicalization/reports/balanced_packet_actual_symbol_formalization.md"
+        ],
+        "required_controls": [
+          "literal_full_product_to_divisor_pair_identity",
+          "determinant_gate_after_divisor_substitution",
+          "increment_chart_and_parity_character",
+          "gcd_cutoff_and_slanted_symbol_retention",
+          "inner_vs_outer_cancellation",
+          "zero_frequency_and_main_term",
+          "shift_range_and_conductor_uniformity",
+          "linear_vs_energy_capacity",
+          "actual_symbol_vs_phase_adapted_control",
+          "double_far_owner_and_corridor_scope",
+          "fixed_block_and_no_shellwise_l1",
+          "critical_j1_and_exact_square_j2_boundary",
+          "external_theorem_hypothesis_fit",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section discovery report.",
+          "An exact noninvertible transform or inequality with every main term and norm displayed.",
+          "The best proved target-safe range, saving, obstruction, or first failed seam.",
+          "A precise state recommendation."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-balanced-double-far-shifted-divisor-fork/reports/literal_dispersion_attack.md"
+      },
+      {
+        "id": "actual_symbol_main_term_hostile",
+        "role": "barrier_no_go",
+        "access_mode": "selected_context",
+        "status": "active",
+        "target": "Hostilely determine whether the literal chi_4 and slanted symbol annihilate the relevant zero-frequency/main term or whether a coherent actual-symbol contribution survives. Audit any proposed shifted-divisor or spectral theorem at the exact conductor, shift range, and norm, and isolate the smallest surviving target.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/A1_0821_2.md",
+          "strategy/A2_0821_2.md",
+          "strategy/conductor_0821_full_proof_strategy.md",
+          "rounds/codex-managed/m9-m2-balanced-double-far-shifted-divisor-fork/derivation_packet.md",
+          "rounds/codex-managed/m9-m2-balanced-double-far-shifted-divisor-fork/candidates/conductor_shifted_divisor_fork.md",
+          "rounds/codex-managed/m9-m2-balanced-literal-energy-connector-fork/reports/mean_square_ray_hostile_audit.md",
+          "rounds/codex-managed/m9-m2-balanced-literal-energy-connector-fork/synthesis.md",
+          "rounds/codex-managed/m9-m2-balanced-smooth-quarter-packet-canonicalization/reports/balanced_packet_actual_symbol_formalization.md"
+        ],
+        "required_controls": [
+          "literal_full_product_to_divisor_pair_identity",
+          "determinant_gate_after_divisor_substitution",
+          "increment_chart_and_parity_character",
+          "gcd_cutoff_and_slanted_symbol_retention",
+          "inner_vs_outer_cancellation",
+          "zero_frequency_and_main_term",
+          "shift_range_and_conductor_uniformity",
+          "linear_vs_energy_capacity",
+          "actual_symbol_vs_phase_adapted_control",
+          "double_far_owner_and_corridor_scope",
+          "fixed_block_and_no_shellwise_l1",
+          "critical_j1_and_exact_square_j2_boundary",
+          "external_theorem_hypothesis_fit",
+          "downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section hostile report.",
+          "A pass/fail table for character, main-term, capacity, source, owner, and downstream seams.",
+          "An actual-symbol coherent control or a proof that the candidate main term vanishes.",
+          "The smallest lawful surviving target and state recommendation."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-balanced-double-far-shifted-divisor-fork/reports/actual_symbol_main_term_hostile.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "literal_identity",
+        "requirement": "The divisor-pair and increment charts agree coefficientwise with the Round-114 energy and double-far gates."
+      },
+      {
+        "id": "character",
+        "requirement": "The conductor-four character and parity are retained through every main-term and transform calculation."
+      },
+      {
+        "id": "main_term",
+        "requirement": "Every zero mode is computed before a remainder estimate is invoked."
+      },
+      {
+        "id": "norm",
+        "requirement": "Inner signed correlation, outer nonlinear cancellation, mean square, and absolute mass are not conflated."
+      },
+      {
+        "id": "capacity",
+        "requirement": "Every transform, Cauchy step, shift sum, conductor, and boundary term is costed against L^3 at R asymp L^3."
+      },
+      {
+        "id": "source",
+        "requirement": "Any external theorem has a primary-source card and exact hypothesis match; structural analogy has no proof status."
+      },
+      {
+        "id": "owners",
+        "requirement": "The two removed corridors and all prior physical owners are neither reintroduced nor double counted."
+      },
+      {
+        "id": "scope",
+        "requirement": "A subrange, stronger norm, or mechanism obstruction is not reported as BAL or a downstream theorem."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "6eb6eb5941e6d4720294c6b0890356113700db3201cf7c19337b96fb5ed47155",
+    "generated_at": "2026-08-21T06:27:39.487204+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

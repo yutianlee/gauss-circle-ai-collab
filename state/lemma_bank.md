@@ -783,8 +783,117 @@ length (O(M)), the outside-absolute bound
 implies (mathcal T_{L,K}ll_\varepsilon M^{3/4}X^\varepsilon). The
 implication is exact; the signed correlation estimate is open.
 
+## Round 114 balanced full-product energy
+
+| Lemma | Status and content |
+|---|---|
+| M9-M2-balanced-full-product-double-corridor-reduction | Proved internally. The literal packet has full-product diagonal \(hk=h'k'\) of energy \(O_\varepsilon(L^2X^\varepsilon)\). The corridors \(|h'k'-hk|\le L\) and \(|hk'-h'k|\le L\) are each \(O_\varepsilon(L^3X^\varepsilon)\), and the exact square-root ray-defect identity is valid. |
+| M9-M2-balanced-full-symbol-mean-square-connector | Proved internally as an implication only. The stated full-\(A_B\) row mean square implies the fixed-block balanced packet after Cauchy and high-gcd subtraction. The estimate itself is open and does not imply hard TOP or all of M9-M2. |
+| M9-M2-balanced-double-far-actual-energy | Open. Modulo the two target-safe corridors, BAL is equivalent to the actual signed \(\chi_4\)-twisted energy \(E_{B,\mathrm{df}}\ll_\varepsilon L^3X^\varepsilon\). The coefficient-blind capacity is \(L^4\), so actual-symbol cancellation is indispensable. |
+
 ## Round 113 balanced smooth literal dictionary
 
 | Lemma | Status and content |
 |---|---|
 | `M9-M2-balanced-smooth-literal-atom-dictionary` | Proved internally. It fixes the exact denominator/frequency telescopes, \(d=0\) convention, real continuum symbol, physical and stationary constants, \(j=1\) plus exact-square \(j=2\) balanced labels, smooth gcd bottom/high owner, quarter packet, uniform seminorms, and the complete high/square/near/residual/transform-error physical one-count equation. It proves no signed packet estimate. |
+
+## Round 115 balanced double-far shifted-divisor fork
+
+| Lemma | Status and content |
+|---|---|
+| `M9-M2-balanced-double-far-phase-free-mode-reduction` | Proved internally. The literal divisor and increment charts, even-shift character identity, angular identity, and fixed-shift Hessian formula are exact. The fully assembled phase-free double-far mode is (O_\varepsilon(L^3X^\varepsilon)) by two independent character-summation arguments. No internal signed family may be replaced by its absolute mass. |
+| `M9-M2-balanced-double-far-oscillatory-remainder` | Open. The actual double-far energy differs from its target-safe phase-free mode by the zero-subtracted remainder (\mathcal R_B^{\mathrm{osc}}). Proving (\mathcal R_B^{\mathrm{osc}}\ll_\varepsilon L^3X^\varepsilon) is equivalent, modulo the proved term, to the actual double-far target. |
+| `M9-M2-balanced-fejer-owner-amplification-obstruction` | Proved internally and scoped. The exact Fejer prefactor prevents the existing target-saturating corridor owners from certifying any fixed-power shortening; the critical outer B-process is capacity-preserving, and Hessian size alone is not a discrete alias bound. This does not rule out a new signed local-energy theorem. |
+
+## Round 116 balanced divisor-progressive alias gate
+
+| Lemma | Status and content |
+|---|---|
+| `M9-M2-balanced-divisor-progressive-alias-reduction` | Proved internally. After expanding the second gcd mask, every odd divisor (d) produces the literal aliases (lambda=(1/2-m)/d), residue phase (s_d(1/2-\lambda)), (dL^3) modes of size ((dL)^{-1}), and the exact two gate images. Finite-Poisson boundary, transition, nonstationary, and stationary-remainder pieces total (O_\varepsilon(L^3X^\varepsilon)). The complete signed bulk kernel remains open. |
+| `M9-M2-balanced-one-alias-reciprocal-self-return-obstruction` | Proved internally and scoped. Aliaswise (\ell^1), reciprocal-(v) resonance counting alone, spacing-only large sieve followed by outer norms, and a second B-process do not gain the missing factor (L). The row local energy is stronger than the scalar target. This is not a lower bound for the actual signed remainder and does not reject BAL. |
+
+## Round 117 actual determinant-fibre gate
+
+| Lemma | Status and content |
+|---|---|
+| `GC-W7-16-original-numerator-product-window-bound` | Proved internally. In the original \((h,d)\) variables, numerator geometric summation and a real-centre divisor-product window count give \(\mathcal C_i,|\mathfrak O_i|\ll_\varepsilon(D^2/L^2+WD/L)Y^\varepsilon\). At minimax this is \(Y^{37/48+\varepsilon}\), a \(Y^{1/8}\) actual-phase saving, not the \(Y^{1/2}\) target. |
+| `GC-W7-16-bounded-lift-top-shell-curvature-saving` | Proved internally. On \(b,b'\asymp D\), finite-lift BV, Möbius progressions, and reciprocal curvature give \(D\min(Q_*,Q_*\sqrt\lambda+\lambda^{-1/2})Y^\varepsilon\), or \(Y^{35/48+\varepsilon}\) at minimax. The long-lift \(B<D\) shells are excluded. |
+| `GC-W7-16-determinant-half-shift-transform-obstruction` | Proved internally and scoped. The two-dimensional Legendre dual is the same ratio phase with one half-shifted coordinate, and standard dual norms retain the \(Y^{43/48}\) diagonal. Fixed-determinant long alternation, sequential transforms, clean literal \(r_2/4\) completion, and product-wave positivity do not close the target. This is not a lower bound for the actual signed correlation. |
+
+## Round 118 prescribed-centre wave gate
+
+| Lemma | Status and content |
+|---|---|
+| `M9-M2-unbalanced-flat-wave-curvature-envelope` | Proved internally for frozen flat smooth components. The literal wave is bounded by \(X^\varepsilon\min(D/L,\sqrt{XL/D}+\sqrt{X/(LD)})\). It saves over product capacity only for \(\delta-\ell>1/3\) and never reaches \(X^{1/4}\) at a strict residual point. Endpoint kernels are excluded. |
+| `M9-M2-unbalanced-coherent-sector-countermodel-no-go` | Proved internally and scoped. A consecutive same-residue central-lobe run obeys the uniform affine/quadratic actual-scale split and is target-safe. For integer \(X=bA^2\), the interior leading phase-one stationary sector contributes \(O_\varepsilon(\sqrt{D/L}X^\varepsilon)\). Unions of runs, other coherent phases for real \(X\), transitions, endpoints, remainders, and the signed complement remain open. |
+
+## Round 119 direct M1 parent minimax
+
+| Lemma | Status and content |
+|---|---|
+| `M9-M1-direct-hard-smooth-separate-one-third-minimax` | Proved internally as a normalization. The accepted direct capacity exponent is (\min(a,(1-a)/2,[89(1+\ell)+819\delta]/1282)\). The literal hard (D_0=\lfloor\sqrt X\rfloor) and first smooth (D_1=D_0/2) profiles each have a full (L\asymp X^{1/6}) residual witness with menu capacity (X^{1/3+o(1)}); TTY is (770/1923). On the hard cone, normalized (L^2) converts to physical (X^{1/4}L^{1/2}). This is menu optimality, not an arithmetic lower bound. |
+| `M9-M1-adjacent-hard-smooth-profile-connector-no-go` | Proved internally and scoped. The exact profile telescope retains all Vaaler-height differences and both boundary owners, while original scale atoms have one common character phase and nonnegative scale weights. Raw profile addition, adjacent differencing, scale BV, and equal (X^{1/12}) deficits supply no connector gain. A new joint signed inequality after the complete scale sum is not obstructed. |
+
+## Round 120 GAR radial-interface completion
+
+| Lemma | Status and content |
+|---|---|
+| `M9-M1-terminal-height-nonlower-radial-completion` | Proved internally. A fixed cutoff in the literal ratio (h/H_j), supported on terminal heights and equal to one on every atom with (n/\sqrt X\ge s_0), has BV (O(H_j^{-1})). The terminal divisor theorem and coefficientwise positive smooth/hard transforms prove its full radial sum in complex modulus. Exact support (1/2\le t\le3/2) gives lower support (n/\sqrt X\ge s_0/144). After an antecedent-level auxiliary compact Mellin cutoff, subtraction proves the entire fixed nonlower complement at normalized (X^\varepsilon) scale, with floors, stars, hard sample and transform errors retained. |
+| `M9-M1-global-radial-interface-estimate` | Proved internally. In the Round-98 partition, the old interface equals the proved whole nonlower complement minus the already proved fixed compact critical cells. The endpoint prefix, endpoint boundary and (R_1) modules belong to an alternative route and are not inserted. The result leaves the exact lower-radial signed aggregate as the sole analytic GAR parent and has no blockwise M1 implication. |
+
+## Round 121 lower profile-height kernel gate
+
+| Lemma | Status and content |
+|---|---|
+| `M9-M1-lower-radial-flat-discrepancy-equivalence` | Proved internally. The complete floor-perturbed lower reciprocal antecedent is target-equivalent for both signs to one flat sharp denominator cone, after a quadratic Vaaler-profile error bounded by the frequency-first theorem. Changing only the phase to (N=\lfloor X\rfloor) costs (O(R)). Exact sample Fourier completion and all-integer Abel summation identify the survivor as the prescribed-centre truncated-character divisor discrepancy (\sum_kD_N(k)(\widehat J(k)-\widehat J(k+1))). Growing interpolation seminorms give no bound. |
+| `M9-M1-lower-mod-four-resonance-tubewise-no-go` | Proved internally and scoped. Exact adjacent odd pairing has full-profile amplitude seam (O(\log^2X)), flat seam (O(\log X)), and leaves the phase-increment kernel. The narrow integer-increment sector is target-safe, but fourth-power half-integer resonance tubes have post-tube-modulus capacity (\gg R^{3/2}). Local/tubewise norms cannot prove the (R) target; no signed lower bound is asserted. |
+
+## Round 122 near-square complementary-divisor gate
+
+| Lemma | Status and content |
+|---|---|
+| `M9-M1-lower-near-square-wavelet-reduction` | Proved internally. The one-sided difference wavelet has uniform envelope \((R+|k|)^{-1}(1+|k|/y)^{-A}\). For any fixed \(0<\delta<1/8\), the far, central-index, high-two-adic cumulative, and odd positive-character central-band packages are target-safe. The exact survivor is the medium-index low-two-adic cumulative wavelet with the already-safe central correction removed. |
+| `M9-M1-near-square-complementary-divisor-self-return` | Proved internally and scoped. For \(m=2^an\), \(A_y(m)=r_2(m)/4-\chi_4(n)T_{n/y}(n)\), with every strict cutoff, hard sample, and square tie audited. The \(n\equiv3\pmod4\) branch returns \(A_y\) exactly; the positive branch retains a full circle coefficient. Full completion minus the tail reconstructs the original cone, so the involution alone gives no power saving. |
+
+## Round 123 unbalanced shifted near-alias gate
+
+| Lemma | Status and content |
+|---|---|
+| `M9-M2-unbalanced-integer-centred-shifted-alias-reduction` | Proved internally. Phase-only movement to any integer \(M\asymp X\) costs \(O_\varepsilon((1+|M-X|)X^\varepsilon)\) with amplitudes frozen. The exact shifted kernel has two reciprocal selectors; at \(H_0=\lceil X^{1/2}/D\rceil\), its complete \(j=0\) sector is square-target-safe. All nonzero exact aliases are globally divisor-small and far defects are rapid. Any fixed-power scalar violation is forced into the complete signed nonzero, nonexact near-alias sector. |
+| `M9-M2-unbalanced-alias-factor-and-derivative-self-return` | Proved internally and scoped. The identity \((M-jr)(M+js)-M^2=jE\) and the two-adic sign are exact but invertible on the live sector, so they give no automatic thinning. Active transverse modes satisfy \(\nu\asymp L\), and allowed shifts create interior stationary crossings. This blocks the proposed uniform fixed-alias first-derivative proof, not a joint stationary-lattice estimate and not the target itself. |
+
+## Round 127 frontier-selection lemmas
+
+| Lemma | Status and content |
+|---|---|
+| `M9-M2-hard-top-product-fibre-mean-obstruction` | Proved internally and scoped. Entrywise phase alignment reaches coherent row capacity after the square-entry sector is removed. Product-fibre averaging fixes the aligned mean. This blocks coefficient-interface proofs only and is not a lower bound for the literal endpoint array. |
+| `M9-M1-lower-centered-square-function-farey-self-return` | Proved internally and scoped. The uncentered actual square function is false because of \(kc_y\). The centered energy is sufficient but stronger than the scalar target; its exact Farey determinant diagonal is safe, while the nonzero determinant and the full missing factor remain open. |
+| `GC-W7-16-scalar-cell-continuation-capacity-obstruction` | Proved internally. Even a lossless literal transfer of the prescribed-centre scalar cell envelope gives exactly \(Y^{37/48}\) at \(D/L=Y^{1/3}\), so it has no uniform strict saving. |
+| `GC-W7-16-local-transverse-square-variation-connector` | Proved as a conditional reduction only. Literal local lift variation \(J_B^{1/2}/L\) plus a joint \(V^2\)-weighted curvature estimate without a reciprocal-window square-root loss would give \(Y^{73/96+\varepsilon}\). Both hypotheses remain open, and the payoff would not improve the global one-third theorem. |
+
+## Round 128 local transverse lift variation
+
+| Lemma | Status and content |
+|---|---|
+| GC-W7-16-local-lift-BV-threshold-V2-lemma | Proved internally. Exact discrete Stieltjes decomposition of the sampled-BV denominator profile, interval-uniform \(\chi_4\) Abel summation, and Minkowski prove \(J_B^{1/2}/L\) local \(V^2\) for the character-split literal M1/M2 lift packages, including both endpoints and every hard, floor, star, taper, progression, and shell face. |
+| GC-W7-16-local-V2-normalization-obstruction | Proved internally and scoped. Pointwise size, a birth count, and character notation alone admit fixed-window countermodels. The unsplit physical M1 reduced character has \(Q_B^{1/2}/L\) transverse variation at the top shell and must be transferred exactly to the two quarter phases. |
+| GC-W7-16-local-transverse-square-variation-connector | Revised conditional reduction. Its coefficient hypothesis is now proved branchwise; only the joint actual-family reciprocal-curvature inequality remains open. The conditional \(Y^{73/96+\varepsilon}\) block consequence is not yet a theorem and would not improve the global exponent. |
+
+## Round 129 direct reciprocal-curvature lemmas
+
+| Lemma | Status and content |
+|---|---|
+| GC-W7-16-direct-Stieltjes-birth-block-curvature-lemma | Proved internally. Thresholdwise common-character Abel, curvature on literal floor plateaux, \(N_\rho\Lambda_\rho\asymp L\rho(J_B-1)\), and final Stieltjes Minkowski give \(K_\rho/L\) for every exact M1/M2 branch and divisor progression, including all literal faces and aliases. |
+| GC-W7-16-complete-all-shell-curvature-saving | Proved internally. Divisor summation gives \(K_B/L\); the complete outer ledger gives \(DK_B\), uniformly \(Y^{35/48+\varepsilon}\) over all reduced-denominator shells. This remains \(Y^{11/48}\) above target. |
+| GC-W7-16-norm-relative-reciprocal-curvature-obstruction | Proved internally and scoped. The exact endpoint-inclusive \(V^2\) dual is prefix-sum variance. A real one-lift stationary-alias triangle violates the norm-relative statement by \(Y^{1/48}\), with both endpoints zero. |
+| GC-W7-16-local-transverse-square-variation-connector | Revised proved route. The conditional \(Y^{73/96}\) forecast is superseded by the direct complete \(Y^{35/48}\) theorem; the completed-norm formulation is rejected. |
+
+## Round 130 post-inner outer-bilinear lemmas
+
+| Lemma | Status and content |
+|---|---|
+| GC-W7-16-post-inner-shell-support-refinement | Proved internally. After exact Stieltjes recombination, shell support gives $\#a'\ll LB/D$ and therefore $|\mathfrak O_{i,B}^{+}|\ll_\varepsilon BK_BY^\varepsilon$. Lower shells gain $B/D$; the top shell remains $Y^{35/48}$. |
+| GC-W7-16-top-shell-determinant-residue-reindexing | Proved internally and scoped. For one fixed primitive top-shell outer ray, $n=aq-bp$ makes $p$ an $O(1)$-multiplicity residue lift when its support span is $O(|a|)$. This supplies no character cancellation by itself. |
+| GC-W7-16-post-inner-outer-energy-obstruction | Proved internally and scoped. The resolved energy is $\mathbf1^*H^*H\mathbf1$, equivalently $b^*K_{B,+}^*K_{B,+}b$ after physical reassembly; full-row $b^*G^2b$ is a different positive problem. Marginal hypotheses admit $DK_B$ phase alignment. |
+| GC-W7-16-original-numerator-product-window-bound | Scope refined. Exact Stieltjes/Möbius/lift inversion returns this complete product wave only after all $B$-owners are reassembled, giving $Y^{37/48}$ rather than improving the current bound. |
+| GC-W7-16-determinant-half-shift-transform-obstruction | Reconfirmed. Top-shell $p$-first modulus returns $D^2/L=Y^{40/48}$ and aliaswise two-variable transform returns $DQ_*=Y^{43/48}$; neither is a physical lower bound. |

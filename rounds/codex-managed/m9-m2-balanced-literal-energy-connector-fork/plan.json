@@ -1,0 +1,233 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 114,
+    "round_type": "m9_m2_balanced_literal_energy_connector_fork",
+    "campaign_id": "m9-m2-balanced-literal-energy-connector-fork",
+    "title": "Literal balanced energy connector and noninvertible mechanism fork",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "411adc0c93d2451dfc1235840f27063b3ef4869d0c67aebfbbc74fe9ef04387c",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 95,
+      "numerical_experimental_maximum_percent": 5,
+      "planned_numerical_percent": 0,
+      "literature_policy": "Use only already audited source cards this round. The objective is the exact internal connector and its capacity; do not import a cone, spectral, or shifted-convolution theorem by analogy."
+    },
+    "target_obligations": [
+      "M9-M2-smooth-balanced-quarter-packet-estimate",
+      "M9-M2-balanced-smooth-literal-atom-dictionary",
+      "M9-M2-dual-square-root-spacing-mean-square"
+    ],
+    "frozen_target": {
+      "question": "Starting from the exact Round-113 fixed-block packet, what is the smallest lawful squared or Gram representation at the critical persistent j=1 scale, and does the proposed mean-square, shifted-product, or rational-ray mechanism give a strict actual-symbol saving or a rigorous no-go?",
+      "reference_formula": "For Z_B(R)=sum_sigma G_sigma Q_(B,sigma)^full(R)=2i T_B^low, prove identities coefficientwise from T_B^low=sum_(sigma,g,u,v) psi_sigma(g) chi_4(g)chi_4(u) A_B(gu,gv)e(Rg sqrt(uv)). The direct target is |Z_B(R)|<<L^(3/2)X^epsilon, equivalently |Z_B(R)|^2<<L^3X^epsilon. The live product is g^2uv; neither uv-u'v' nor the ray defect mr-us is accepted until an exact map from these literal variables is proved.",
+      "quantities": [
+        "X>=4096 real, R=sqrt X, persistent smooth denominator label j=1",
+        "D=floor(R)/2 and K/L=4X/floor(R)^2 in a fixed compact interval",
+        "critical frequency scale L comparable to R^(1/3)=X^(1/6), with all other L recorded only for range consequences",
+        "Z_B(R)=sum_sigma G_sigma Q_(B,sigma)^full(R) with the modulus outside the complete smooth gcd-shell sum",
+        "original coordinates h=gu, k=gv, (u,v)=1, g and u odd, phase Rg sqrt(uv), and product h k=g^2uv",
+        "linear budget L^(3/2) and squared-energy budget L^3 displayed separately",
+        "actual Vaaler taper, slanted symbol, both quarter shifts, chi_4, floors, and fixed physical block scope",
+        "high gcd, exact square, near square, transform error, and isolated exact-square j=2 boundary remain with their Round-113 owners"
+      ]
+    },
+    "completion_criteria": [
+      "Derive an exact coefficientwise formula for |Z_B(R)|^2 or identify the first datum preventing it; retain both gcd lifts and every character factor.",
+      "Separate the genuine diagonal/equal-full-product contribution from the off-diagonal and compute each target capacity without replacing g^2uv by uv.",
+      "Prove or refute the literal implication from either orientation of the diagonal-critical mean square to the fixed-block packet, including the exact Cauchy cost and character placement.",
+      "Prove or refute an exact connector from the literal off-diagonal to a shifted-product or rational-ray defect decomposition; the algebraic ray identity alone is insufficient.",
+      "If a connector passes, obtain a strict actual-symbol power saving, a target-safe subrange, or a rigorously stated inverse/no-go theorem; otherwise close the proposed mechanism at its first failed seam.",
+      "Audit the narrow/broad threshold interface, shellwise-l1 substitution, coefficient adversary, exact/near squares, and the isolated j=2 boundary.",
+      "Do not claim the balanced estimate, M9-M2, M9-M1, endpoint uniformity, M9, or a new exponent unless the corresponding full proof is supplied and validated."
+    ],
+    "controls": [
+      "literal_packet_to_physical_sum_identity",
+      "gcd_lift_and_full_product_retention",
+      "quarter_shift_and_character_placement",
+      "linear_vs_energy_capacity",
+      "mean_square_orientation_and_cauchy_cost",
+      "equal_full_product_diagonal",
+      "shifted_product_connector",
+      "ray_defect_connector_and_rank_one_identity",
+      "narrow_broad_threshold_interface",
+      "actual_symbol_vs_adversarial_coefficients",
+      "no_shellwise_l1_or_cross_block_cancellation",
+      "square_near_square_high_gcd_owner_scope",
+      "critical_j1_and_exact_square_j2_boundary",
+      "involution_barrier_and_downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "blind_literal_energy_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "active",
+        "target": "Independently expand the supplied literal fixed-block packet into its exact squared energy, classify the true diagonal and off-diagonal variables, and determine whether the advertised mean-square or ray-defect reductions follow. Do not attempt a source import.",
+        "context_files": [
+          "problems/gauss_circle.md",
+          "state/control_models.md",
+          "rounds/codex-managed/m9-m2-balanced-literal-energy-connector-fork/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "all strategy files",
+          "the Round-114 derivation packet and candidate",
+          "all Round-112/113 reports and Round-114 sibling reports"
+        ],
+        "required_controls": [
+          "literal_packet_to_physical_sum_identity",
+          "gcd_lift_and_full_product_retention",
+          "quarter_shift_and_character_placement",
+          "linear_vs_energy_capacity",
+          "mean_square_orientation_and_cauchy_cost",
+          "equal_full_product_diagonal",
+          "shifted_product_connector",
+          "ray_defect_connector_and_rank_one_identity",
+          "no_shellwise_l1_or_cross_block_cancellation",
+          "square_near_square_high_gcd_owner_scope",
+          "critical_j1_and_exact_square_j2_boundary",
+          "involution_barrier_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section statement-only report.",
+          "An exact expanded formula with both lift variables, or the first exact failed seam.",
+          "A capacity and implication table for the direct energy and both mean-square orientations.",
+          "A promote, retain, revise, reject, or no-change recommendation."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-balanced-literal-energy-connector-fork/reports/blind_literal_energy_rederivation.md"
+      },
+      {
+        "id": "actual_symbol_connector_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "active",
+        "target": "Construct the smallest exact actual-symbol energy/Gram/full-product connector from the Round-113 dictionary. If a ray-defect chart is literal, derive it and estimate the narrow rational-ruling contribution at the critical scale; otherwise prove the precise connector no-go.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0821_full_proof_strategy.md",
+          "rounds/codex-managed/m9-m2-balanced-literal-energy-connector-fork/derivation_packet.md",
+          "rounds/codex-managed/m9-m2-balanced-literal-energy-connector-fork/candidates/conductor_literal_energy_fork.md",
+          "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/synthesis.md",
+          "rounds/codex-managed/m9-m2-balanced-smooth-quarter-packet-canonicalization/reports/balanced_packet_actual_symbol_formalization.md"
+        ],
+        "required_controls": [
+          "literal_packet_to_physical_sum_identity",
+          "gcd_lift_and_full_product_retention",
+          "quarter_shift_and_character_placement",
+          "linear_vs_energy_capacity",
+          "mean_square_orientation_and_cauchy_cost",
+          "equal_full_product_diagonal",
+          "shifted_product_connector",
+          "ray_defect_connector_and_rank_one_identity",
+          "narrow_broad_threshold_interface",
+          "actual_symbol_vs_adversarial_coefficients",
+          "no_shellwise_l1_or_cross_block_cancellation",
+          "square_near_square_high_gcd_owner_scope",
+          "critical_j1_and_exact_square_j2_boundary",
+          "involution_barrier_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section discovery report.",
+          "A coefficientwise connector proof or a quantitative connector obstruction.",
+          "If lawful, the best proved narrow-branch or target-safe subrange estimate with before/after capacity.",
+          "The first doubtful step and a precise state recommendation."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-balanced-literal-energy-connector-fork/reports/actual_symbol_connector_attack.md"
+      },
+      {
+        "id": "mean_square_ray_hostile_audit",
+        "role": "barrier_no_go",
+        "access_mode": "selected_context",
+        "status": "active",
+        "target": "Hostilely test the proposed mean-square and ray-defect routes against literal character placement, gcd-lift interactions, full-product diagonals, threshold capacity, actual-symbol and phase-conjugating controls, and all Round-113 owners. Certify only the smallest surviving implication.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/A1_0821_1.md",
+          "strategy/A1_0821_2.md",
+          "strategy/A2_0821_1.md",
+          "strategy/A2_0821_2.md",
+          "strategy/conductor_0821_full_proof_strategy.md",
+          "rounds/codex-managed/m9-m2-balanced-literal-energy-connector-fork/derivation_packet.md",
+          "rounds/codex-managed/m9-m2-balanced-literal-energy-connector-fork/candidates/conductor_literal_energy_fork.md",
+          "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/synthesis.md",
+          "rounds/codex-managed/m9-m2-balanced-smooth-quarter-packet-canonicalization/reports/balanced_packet_actual_symbol_formalization.md"
+        ],
+        "required_controls": [
+          "literal_packet_to_physical_sum_identity",
+          "gcd_lift_and_full_product_retention",
+          "quarter_shift_and_character_placement",
+          "linear_vs_energy_capacity",
+          "mean_square_orientation_and_cauchy_cost",
+          "equal_full_product_diagonal",
+          "shifted_product_connector",
+          "ray_defect_connector_and_rank_one_identity",
+          "narrow_broad_threshold_interface",
+          "actual_symbol_vs_adversarial_coefficients",
+          "no_shellwise_l1_or_cross_block_cancellation",
+          "square_near_square_high_gcd_owner_scope",
+          "critical_j1_and_exact_square_j2_boundary",
+          "involution_barrier_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section hostile audit report.",
+          "A pass/fail table for every connector, norm, owner, and capacity seam.",
+          "An explicit false shadow or coherent actual-symbol obstruction when available.",
+          "The smallest lawful corrected target and a state recommendation."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-balanced-literal-energy-connector-fork/reports/mean_square_ray_hostile_audit.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "literal_identity",
+        "requirement": "The packet, physical low-gcd sum, and squared energy agree coefficientwise with both gcd lifts retained."
+      },
+      {
+        "id": "norm",
+        "requirement": "Direct modulus, squared energy, both Gram orientations, and shellwise l1 are never conflated."
+      },
+      {
+        "id": "diagonal",
+        "requirement": "The exact equal-full-product locus is identified and bounded at the L^3 energy scale."
+      },
+      {
+        "id": "connector",
+        "requirement": "Any shifted-product or ray-defect variables are obtained by an explicit finite-to-one map from literal atoms."
+      },
+      {
+        "id": "capacity",
+        "requirement": "Every Cauchy, dyadic, shell, threshold, and multiplicity cost is displayed at L=R^(1/3)."
+      },
+      {
+        "id": "character",
+        "requirement": "chi_4 and the quarter-shift difference remain inside the estimate at the step that claims saving."
+      },
+      {
+        "id": "owners",
+        "requirement": "High gcd, square, near square, transform error, and j=2 boundary are neither lost nor double counted."
+      },
+      {
+        "id": "scope",
+        "requirement": "A stronger sufficient norm or a model no-go is not reported as the direct balanced estimate or a downstream theorem."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "de0981e570e4a5f306abed5d16fa2fc34914160f27bf5621df78f927d8cfa9c9",
+    "generated_at": "2026-08-21T05:56:08.289696+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

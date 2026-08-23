@@ -1,0 +1,182 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-terminal-height-nonlower-radial-completion",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Terminal-height completion of every fixed nonlower M1 radial sector",
+        "status": "proved_internal",
+        "statement_tex": "Let R=X^(1/4), Y=sqrt X, D_j=2^(-j)floor(Y), H_j=floor(D_j/R), fix 0<s_0<8, kappa=sqrt(s_0)/4, and insert a fixed smooth vartheta(h/H_j), zero for h/H_j<=kappa/2 and one for h/H_j>=kappa, into every nonempty literal (j,h)-atom of C_X^*(n), defining C_(T,X)^*(n). Then sum_(n<=N_X)^* C_(T,X)^*(n)n^(-3/4)e(sqrt(Xn))<<_(epsilon,s_0)X^epsilon. The certified profile support 1/2<=t<=3/2 and exact floors imply C_(T,X)^*(n)=C_X^*(n) for n/Y>=s_0 and C_(T,X)^*(n)=0 for n/Y<s_0/144. For every fixed lower cutoff V_low=1 on s<=s_0 and 0 on s>=2s_0, an antecedent-level auxiliary compact multiplier proves the V_low-weighted terminal sum is O_epsilon(X^epsilon). Hence sum_(n<=N_X)^*(1-V_low(n/Y))C_X^*(n)n^(-3/4)e(sqrt(Xn))<<_epsilon X^epsilon. The proof uses the terminal frequency BV bound, the coefficientwise positive smooth and one-sided hard transforms, absolute polylogarithmic errors, exact floors, stars, hard sample, and conjugate negative sign. Endpoint-prefix and R1 modules are alternative-route owners and are not inserted.",
+        "dependencies": [
+          "H4-Phi-regularity",
+          "M9-M2-dyadic-weight-nondegeneracy",
+          "M9-M1-terminal-frequency-divisor-bound",
+          "M9-M1-top-endpoint-transform",
+          "M9-M1-global-angular-recombination"
+        ],
+        "implies": [
+          "M9-M1-global-radial-interface-estimate"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-gar-radial-interface-reconciliation/candidates/conductor_terminal_height_interface_completion.md",
+            "rounds/codex-managed/m9-m1-gar-radial-interface-reconciliation/reports/literal_radial_interface_reconciliation.md",
+            "rounds/codex-managed/m9-m1-gar-radial-interface-reconciliation/reports/radial_interface_hostile_scope_audit.md",
+            "rounds/codex-managed/m9-m1-gar-radial-interface-reconciliation/reviews/conductor_round120_terminal_height_adjudication.md",
+            "rounds/codex-managed/m9-m1-gar-radial-interface-reconciliation/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-gar-radial-interface-reconciliation/reports/blind_radial_interface_partition.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use this theorem only for the whole fixed nonlower radial complement. The exact lower-radial signed aggregate remains independent; do not infer blockwise M9-M1 from this global owner."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-global-radial-interface-estimate",
+        "type": "lemma",
+        "status": "proved_internal",
+        "statement_tex": "Fix a Round-98 one-count radial partition 1=V_low+sum_a V_a+U, where V_low is one near zero, each V_a is fixed and compact inside (0,16), and U is the sharp upper/interface remainder through N_X=floor(16sqrt X) with its outer star. The terminal-height whole-nonlower theorem gives G_X[1-V_low]<<_epsilon X^epsilon, and the proved compact critical transfer gives every G_X[V_a]<<_epsilon X^epsilon. Therefore G_X[U]=G_X[1-V_low]-sum_a G_X[V_a]<<_epsilon X^epsilon, with the exact C_X^* coefficient, floors, profile stars, hard sample, signs, and outer product tie. No endpoint-prefix identification, C approaching 16, moving seminorm, arbitrary finite Mellin height, alpha connector, endpoint/R1 duplication, or extra flat owner is used.",
+        "dependencies_added": [
+          "M9-M1-terminal-height-nonlower-radial-completion"
+        ],
+        "blockers": [],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-gar-radial-interface-reconciliation/reports/literal_radial_interface_reconciliation.md",
+            "rounds/codex-managed/m9-m1-gar-radial-interface-reconciliation/reports/radial_interface_hostile_scope_audit.md",
+            "rounds/codex-managed/m9-m1-gar-radial-interface-reconciliation/reviews/conductor_round120_terminal_height_adjudication.md",
+            "rounds/codex-managed/m9-m1-gar-radial-interface-reconciliation/synthesis.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-gar-radial-interface-reconciliation/reports/blind_radial_interface_partition.md"
+          ]
+        },
+        "reason_for_promotion": "The terminal-height theorem proves the stronger whole nonlower complement at normalized X^epsilon scale. Exact subtraction of the already proved compact critical cells then proves the old sharp radial/interface owner with all physical one-count seams audited.",
+        "next_action": "Use this proved interface only through the coarse radial one-count assembly. GAR still requires the exact lower-radial signed aggregate."
+      },
+      {
+        "id": "M9-M1-global-radial-one-count-assembly",
+        "blockers": [
+          "M9-M1-global-lower-radial-signed-estimate"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-gar-radial-interface-reconciliation/synthesis.md"
+          ]
+        },
+        "next_action": "The sharp radial/interface child is proved. Prove the exact lower-radial signed aggregate; it is now the sole analytic child needed for GAR under this one-count assembly."
+      },
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "blockers": [
+          "M9-M1-global-lower-radial-signed-estimate"
+        ],
+        "dependencies_added": [
+          "M9-M1-terminal-height-nonlower-radial-completion"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-gar-radial-interface-reconciliation/synthesis.md"
+          ]
+        },
+        "next_action": "Attack the exact lower-radial signed aggregate globally. The complete nonlower complement is proved, but GAR remains open until that lower owner is target-safe."
+      },
+      {
+        "id": "M9-M1-global-lower-radial-signed-estimate",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-gar-radial-interface-reconciliation/synthesis.md"
+          ]
+        },
+        "next_action": "This is now the sole analytic GAR parent. Start from its exact reciprocal antecedent and seek a global sign-preserving inequality across the lower height range; keep floors, the hard profile, all smooth profiles, stars, and signs in one count."
+      },
+      {
+        "id": "M9-M1-terminal-frequency-divisor-bound",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-gar-radial-interface-reconciliation/synthesis.md"
+          ]
+        },
+        "next_action": "Its fixed-ratio terminal strength now closes every fixed nonlower radial sector through a height cutoff. It still gives a growing D/L loss when h/H_j tends to zero, exactly the remaining lower-radial problem."
+      },
+      {
+        "id": "M9-M1-global-angular-recombination",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-gar-radial-interface-reconciliation/synthesis.md"
+          ]
+        },
+        "next_action": "Use the exact coefficient either in the proved nonlower theorem or the open lower-radial aggregate. Do not localize this global result back to an individual physical block."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round120-uniform-profile-support-strictly-below-three-halves",
+        "reason": "The certified smooth profile has closed support through t=3/2. The lawful constant is C_W=3/2, giving the terminal lower radial threshold c_T=s_0/144."
+      },
+      {
+        "id": "Round120-terminal-coefficient-support-alone-makes-Vlow-Mellin-admissible",
+        "reason": "V_low equals one at zero and is not compactly supported in the positive half-line. The proof requires an auxiliary fixed compact multiplier inserted at the reciprocal antecedent, where terminal-height geometry makes it exactly one on every surviving summand."
+      },
+      {
+        "id": "Round120-whole-nonlower-is-definitionally-old-interface",
+        "reason": "The whole nonlower complement also contains the already proved compact critical cells. The old interface follows only after their exact coefficientwise subtraction, or under a new exact two-piece lower/complement partition."
+      },
+      {
+        "id": "Round120-radial-collar-equals-physical-endpoint-prefix",
+        "reason": "The collar retains U(n/Y)e(sqrt(Xn)), whereas the physical integration-by-parts prefix has constant phase e(sqrt(XN_X)). The terminal-height proof bounds the collar directly and never identifies the two."
+      },
+      {
+        "id": "Round120-endpoint-R1-modules-are-hard-transform-errors",
+        "reason": "The physical endpoint boundary and R1 modules belong to a different transformed routing. They are inserted zero times in the terminal-height radial proof and are not relabelled as Poisson transform errors."
+      },
+      {
+        "id": "Round120-terminal-height-cutoff-creates-unpriced-transform-interface",
+        "reason": "The transform is coefficientwise in h. The new sampled height cutoff has BV O(1/H_j); accepted per-frequency remainders are summed absolutely on h asymp H_j, and the hard cotangent boundary has O(1) terminal h^(-1) mass."
+      },
+      {
+        "id": "Round120-interface-proof-extends-endpoint-modules-to-arbitrary-finite-height",
+        "reason": "The proof uses only the physical finite reciprocal sums and an ordinary Mellin inversion of one fixed compact radial multiplier. It supplies no uniform finite Perron- or Mellin-height theorem for the endpoint modules."
+      },
+      {
+        "id": "Round120-interface-closure-proves-GAR-or-blockwise-M1",
+        "reason": "GAR still needs the exact lower-radial signed aggregate. Even full GAR controls only the total active M1 sum and has no inverse implication to either direct blockwise M1 parent."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "Both direct blockwise physical parents remain open; the proved interface is part of an alternative total-active-M1 route."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Its hard TOP, balanced, and unbalanced parents are independent of this M1 radial result."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "No endpoint-uniformity theorem is proved or required inside the scoped radial interface lemma."
+      },
+      {
+        "id": "M9",
+        "reason": "Neither blockwise M9-M1 nor M9-M2 is proved."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The lower-radial GAR parent, M9-M2, and the remaining bridge requirements stay open; no discrepancy exponent changes."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 10,
+    "idea_quality_score": 10,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 120 proves a new terminal-height theorem for the entire fixed nonlower radial complement and thereby closes the sharp GAR interface parent. The support constant, localized Mellin cutoff, one-count owner, hard error, and alternative endpoint/R1 routes were all independently repaired and audited. The lower-radial signed aggregate remains the sole GAR analytic blocker, so no global exponent is claimed."
+  }
+}

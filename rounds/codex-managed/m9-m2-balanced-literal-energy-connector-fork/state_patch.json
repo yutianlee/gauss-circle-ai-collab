@@ -1,0 +1,222 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-balanced-full-product-double-corridor-reduction",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Literal full-product energy and target-safe radial-determinant corridors",
+        "status": "proved_internal",
+        "statement_tex": "For every Round-113 literal balanced block B, set a_B^<(h,k)=chi_4(h) eta(gcd(h,k)/(sqrt L/2)) A_B(h,k). Then Z_B(R)=sum_sigma G_sigma Q_(B,sigma)^full(R)=2i sum_(h,k) a_B^<(h,k)e(R sqrt(hk)) coefficientwise. In the squared energy the true phase diagonal is hk=h'k', equivalently g^2uv=g'^2u'v', and its mass is O_epsilon(L^2 X^epsilon). With Delta=h'k'-hk and rho=hk'-h'k, the absolute masses |Delta|<=U and |rho|<=Q are each O_epsilon(L^2(U+1)X^epsilon) and O_epsilon(L^2(Q+1)X^epsilon), respectively; thus their U=Q=L union is target-safe at energy L^3. For h'=h+p, k'=k+q, the exact tangent remainder is -rho^2/[4(hk)^(3/2)(P+sqrt(Q_0))], while Delta+rho=q(h+h') and Delta-rho=p(k+k'). Up to these target-safe corridors the packet energy is exactly the actual signed double-far shifted-divisor energy M9-M2-balanced-double-far-actual-energy. This is a reduction and counting theorem, not the broad estimate or the balanced parent.",
+        "dependencies": [
+          "M9-M2-balanced-smooth-literal-atom-dictionary",
+          "M9-M2-balanced-quarter-packet-normalization-scope",
+          "M9-M2-character-factor"
+        ],
+        "implies": [
+          "M9-M2-balanced-double-far-actual-energy",
+          "M9-M2-smooth-balanced-quarter-packet-estimate"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-balanced-literal-energy-connector-fork/reports/blind_literal_energy_rederivation.md",
+            "rounds/codex-managed/m9-m2-balanced-literal-energy-connector-fork/reports/actual_symbol_connector_attack.md",
+            "rounds/codex-managed/m9-m2-balanced-literal-energy-connector-fork/reports/mean_square_ray_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-balanced-literal-energy-connector-fork/reviews/conductor_round114_energy_and_corridors.md",
+            "rounds/codex-managed/m9-m2-balanced-literal-energy-connector-fork/reviews/conductor_round114_norm_owner_and_mean_square.md",
+            "rounds/codex-managed/m9-m2-balanced-literal-energy-connector-fork/controls/conductor_round114_prechecks.md",
+            "rounds/codex-managed/m9-m2-balanced-literal-energy-connector-fork/controls/conductor_round114_controls.md",
+            "rounds/codex-managed/m9-m2-balanced-literal-energy-connector-fork/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Attack only the literal double-far signed shifted-divisor energy. Generic determinant transversality and fixed-invariant divisor multiplicity are coefficient-uniformly obstructed."
+      },
+      {
+        "id": "M9-M2-balanced-full-symbol-mean-square-connector",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Full-symbol diagonal-critical mean-square connector to the balanced packet",
+        "status": "proved_internal",
+        "statement_tex": "For one literal balanced smooth block B, if sum_(h asymp L, h odd)|sum_(k asymp K) A_B(h,k)e(sqrt(Xhk))|^2 <<_epsilon L^(1/2)K^(3/2)X^epsilon, then Cauchy gives |T_B|<<(LK)^(3/4)X^epsilon. Subtracting the proved high-gcd owner and using Z_B=2iT_B^low gives |Z_B|<<L^(3/2)X^epsilon for 1<=K/L<=16. This connector uses the full smooth symbol, not the arithmetic gcd-masked Gram; it intentionally erases chi_4(h) outside the row modulus and proves no mean-square estimate. The character-preserving k-outer alternative has sufficient budget L^(3/2)K^(1/2)X^epsilon.",
+        "dependencies": [
+          "M9-M2-dual-square-root-spacing-mean-square",
+          "M9-M2-balanced-smooth-literal-atom-dictionary",
+          "M9-M2-smooth-small-gcd-quarter-packet"
+        ],
+        "implies": [
+          "M9-M2-smooth-balanced-quarter-packet-estimate"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-balanced-literal-energy-connector-fork/reports/mean_square_ray_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-balanced-literal-energy-connector-fork/reviews/conductor_round114_norm_owner_and_mean_square.md",
+            "rounds/codex-managed/m9-m2-balanced-literal-energy-connector-fork/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Retain as a stronger optional route. Prove the actual full-symbol mean square or the character-preserving alternative; arbitrary bounded coefficients are false."
+      },
+      {
+        "id": "M9-M2-balanced-double-far-actual-energy",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Double-far actual signed shifted-divisor energy for the balanced packet",
+        "status": "open",
+        "statement_tex": "For every persistent j=1 Round-113 balanced block at the critical scale L asymp X^(1/6), with a_B^<(h,k)=chi_4(h)eta(gcd(h,k)/(sqrt L/2))A_B(h,k), prove |E_(B,df)|<<_epsilon L^3X^epsilon, where E_(B,df)=sum_(|r|>L) sum_n e(sqrt X(sqrt n-sqrt(n+r))) sum_(hk=n,h'k'=n+r,|hk'-h'k|>L) a_B^<(h,k)conj(a_B^<(h',k')). The exact-square j=2 boundary is controlled separately. The inner correlation retains chi_4(h)chi_4(h'), the gcd cutoff, slanted Vaaler symbol, floors, and fixed physical block scope. Coefficient-uniform versions are false at L^4 capacity; a proof must use the actual symbol. By the proved double-corridor reduction this estimate is equivalent up to target-safe terms to the balanced packet energy.",
+        "dependencies": [
+          "M9-M2-balanced-full-product-double-corridor-reduction",
+          "M9-M2-balanced-smooth-literal-atom-dictionary",
+          "M9-M2-character-factor"
+        ],
+        "implies": [
+          "M9-M2-smooth-balanced-quarter-packet-estimate"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-balanced-literal-energy-connector-fork/reports/actual_symbol_connector_attack.md",
+            "rounds/codex-managed/m9-m2-balanced-literal-energy-connector-fork/reports/mean_square_ray_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-balanced-literal-energy-connector-fork/synthesis.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Derive the literal character-twisted shifted-divisor main term and prove a sign-sensitive dispersion or spectral estimate saving one factor L, or prove an actual-symbol obstruction that parks the broad route."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-dual-square-root-spacing-mean-square",
+        "statement_tex": "For K>=L and the actual full normalized smooth symbol A_(L,K), prove sum_(h asymp L,h odd)|sum_(k asymp K) A_(L,K)(h,k)e(sqrt(Xhk))|^2 <<_epsilon L^(1/2)K^(3/2)X^epsilon. This is diagonal-critical when K asymp L. Cauchy erases the outer chi_4(h), so the assertion is stronger than the direct signed scalar target and is false for arbitrary phase-adapted coefficients. The literal fixed-balanced-block implication is proved by M9-M2-balanced-full-symbol-mean-square-connector; no hard-TOP implication is asserted.",
+        "implies_removed": [
+          "M9-M2"
+        ],
+        "implies_added": [
+          "M9-M2-smooth-balanced-quarter-packet-estimate"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-balanced-literal-energy-connector-fork/reports/mean_square_ray_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-balanced-literal-energy-connector-fork/synthesis.md"
+          ]
+        },
+        "next_action": "Attack the actual full smooth symbol only. The h-outer mean square loses chi_4 but has an exact balanced connector; the k-outer character-preserving alternative is separate. Do not claim a coefficient-uniform theorem or a hard-TOP implication."
+      },
+      {
+        "id": "M9-M2-smooth-balanced-quarter-packet-estimate",
+        "dependencies_added": [
+          "M9-M2-balanced-full-product-double-corridor-reduction",
+          "M9-M2-balanced-double-far-actual-energy"
+        ],
+        "blockers_added": [
+          "M9-M2-balanced-double-far-actual-energy"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-balanced-literal-energy-connector-fork/reviews/conductor_round114_energy_and_corridors.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-balanced-literal-energy-connector-fork/reports/blind_literal_energy_rederivation.md",
+            "rounds/codex-managed/m9-m2-balanced-literal-energy-connector-fork/reports/actual_symbol_connector_attack.md",
+            "rounds/codex-managed/m9-m2-balanced-literal-energy-connector-fork/reports/mean_square_ray_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-balanced-literal-energy-connector-fork/synthesis.md"
+          ]
+        },
+        "next_action": "Prove the literal double-far actual energy, equivalently a chi_4-twisted shifted-divisor correlation saving one factor L, or prove the stronger actual full-symbol mean square. The full-product and both width-L corridors are target-safe; generic determinant transversality is insufficient."
+      },
+      {
+        "id": "M9-M2-balanced-smooth-literal-atom-dictionary",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-balanced-literal-energy-connector-fork/reports/blind_literal_energy_rederivation.md",
+            "rounds/codex-managed/m9-m2-balanced-literal-energy-connector-fork/reviews/conductor_round114_energy_and_corridors.md"
+          ]
+        },
+        "next_action": "Use its exact coefficientwise recombination Z_B=2i sum_(h,k) a_B^<(h,k)e(R sqrt(hk)); no further dictionary work is needed."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round114-primitive-product-is-packet-energy-diagonal",
+        "reason": "The exact phase product is hk=g^2uv. After squaring, the diagonal is g^2uv=g'^2u'v', not uv=u'v' with the two gcd lifts omitted."
+      },
+      {
+        "id": "Round114-u2-over-m-identity-alone-connects-the-literal-packet",
+        "reason": "The algebraic u^2/m ray identity is correct as a model, but no integer-support bijection maps it to the Round-113 atoms. The lawful literal identity uses rho=hk'-h'k in the square-root phase."
+      },
+      {
+        "id": "Round114-fixed-delta-rho-divisor-multiplicity-saves-L-globally",
+        "reason": "A fixed nonaxial invariant pair has divisor-bounded representations, but (Delta,rho) ranges over a two-dimensional L^4-capacity family. Summing the fixed-pair bound reconstructs the full loss."
+      },
+      {
+        "id": "Round114-coefficient-uniform-double-far-transversality",
+        "reason": "A phase-adapted bounded coefficient array has total and double-far energy of order L^4 after the two target-safe corridors are removed. Any L^3 broad theorem must exploit the actual signed symbol."
+      },
+      {
+        "id": "Round114-large-determinant-alone-forces-mod-one-oscillation",
+        "reason": "Inside a fixed full-product pair the outer phase is independent of the determinant. A large real tangent remainder is not a uniform distance-from-integers estimate at fixed real X."
+      },
+      {
+        "id": "Round114-gcd-masked-Gram-is-the-old-full-symbol-mean-square",
+        "reason": "The old proposed node uses the full smooth symbol A_B. Inserting eta(gcd(h,k)/G_0) defines a distinct stronger local statement, although either can be sufficient after its own Cauchy audit."
+      },
+      {
+        "id": "Round114-dual-mean-square-directly-implies-all-M9-M2",
+        "reason": "The mean square can imply smooth balanced blocks and may later be mapped to unbalanced blocks, but the independent hard TOP parent remains mandatory. It cannot directly imply all of M9-M2."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M2-smooth-balanced-quarter-packet-estimate",
+        "reason": "The exact energy and two target-safe corridors are proved, but the double-far actual-symbol energy remains open."
+      },
+      {
+        "id": "M9-M2-top-endpoint-density-discrepancy-energy",
+        "reason": "Round 114 concerns only full smooth balanced blocks."
+      },
+      {
+        "id": "M9-M2-smooth-unbalanced-three-quarter-estimate",
+        "reason": "No literal unbalanced owner map or estimate is proved in this round."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "TOP, BAL, and UNBAL remain open."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "No M1 estimate is involved."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "The analytic parents are not closed."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain open."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "Its M9 hypothesis remains open."
+      },
+      {
+        "id": "GC-target",
+        "reason": "No pointwise exponent changes."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 6,
+    "idea_quality_score": 8,
+    "state_evidence_score": 9,
+    "calibration_score": 10,
+    "reason": "Round 114 proves the exact full-product energy, a target-safe equal-product diagonal, two width-L target-safe corridors, the literal determinant ray identity, and the corrected full-symbol mean-square connector. It also proves that coefficient-uniform broad transversality remains at L^4 capacity. The actual double-far signed energy, the balanced parent, every other M9 parent, and every exponent remain open."
+  }
+}
