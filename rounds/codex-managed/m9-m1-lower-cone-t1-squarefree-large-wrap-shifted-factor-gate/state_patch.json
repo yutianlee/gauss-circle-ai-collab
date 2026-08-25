@@ -1,0 +1,324 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-lower-cone-t1-squarefree-large-wrap-character-range-reduction",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Exact large-wrap character coordinates and source-legal row corridors",
+        "status": "proved_internal",
+        "statement_tex": "Let R=X^(1/4), N=floor(X), DE asymp M<=R^2, D<=sqrt(M), Q=2sqrt(ND/E), and retain the literal Round-150 compressed t=1 row. For every nonzero centered wrap k, put j=nu_2(|k|), A=NL_1-khr_1, B=NL_2+khr_2, x=(NL_1-A)/2^j, and y=(B-NL_2)/2^j. The collar identities make A,B positive, x,y odd with the same sign, and chi_4(L_1L_2r_1r_2)=chi_4(L_1L_2xy) for both signs of k and every parity of N. Conversely g=gcd(|x|,|y|), r_i=|x_i|/g, and every preimage is indexed by a positive odd divisor h|g with k=sgn(x)2^j g/h, after all original support, coprimality, centeredness, collar, packet, profile, and prefix tests are reimposed; the h fibre cannot be deleted. The wraps with 2^j greater than a constant multiple of N/R^2 asymp R^2 occupy O(1+R^2/Q) classes and have total absolute contribution <<R^2D X^epsilon. The actual Round-148 sampled profile has sup norm plus total q-variation <<X^epsilon at every allowed scale. After exact Mobius inversion, mod-four splitting, unweighted interval estimation, and Abel summation, Bourgain's global pair gives |G_U(d)|<<E^(13/84)Q^(55/84)X^epsilon and target energy when D^84 R^52<<M^29. The Tao--Trudgian--Yang pair gives |G_(U,<=L_0)(d)|<<E^(89/1282)Q^(997/1282)L_0^(267/1282)X^epsilon and target low-low energy when M^819>>R^1424 D^1816 L_0^534. For D=1 the Bourgain full row owns the complete nonexact large-wrap collar after subtracting exact and packet owners; for D>1 it owns collar and generic pieces jointly, while the TTY statement owns only the low-low component. The low-two-adic isolated collar outside these corridors remains open.",
+        "dependencies": [
+          "M9-M1-lower-cone-t1-squarefree-moving-coefficient-small-wrap-reduction",
+          "Bourgain-2017-reciprocal-exponent-pair-source-audit",
+          "M9-M1-TTY-exponent-pair-wedge"
+        ],
+        "implies": [
+          "M9-M1-lower-cone-t1-squarefree-large-wrap-collar-obstruction",
+          "M9-M1-global-lower-radial-signed-estimate"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/reports/large_wrap_character_factorization_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/reports/large_wrap_shifted_divisor_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/candidates/conductor_round151_character_ranges_and_bprocess_boundary.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/reviews/preliminary_tty_corridor_review.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/reviews/independent_conductor_round151_math_review.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/reviews/source_conductor_round151_final.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/reviews/conductor_round151_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/controls/conductor_round151_controls.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Estimate the low-two-adic recovered h|g family outside the Bourgain and TTY row corridors without isolating signed collar terms from a recombined square; at D=L=1 this is the signed square-root-wave estimate."
+      },
+      {
+        "id": "M9-M1-lower-cone-t1-squarefree-reciprocal-bprocess-self-return-obstruction",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Boundary-complete reciprocal B-process principal self-return",
+        "status": "proved_internal",
+        "statement_tex": "At D=d=L=1, retain the literal scalar S_U=sum_(q>0) chi_4(q) A_(1,M,U)(1,4N/q^2)e(N/q) and the external coefficient B_(1,U)(1). The exact identity chi_4(q)=(e(q/4)-e(-q/4))/(2i), applied to the compact smooth actual profile extended by zero, and the accepted Round-148 boundary ledger give S_U=e(-1/8)N^(1/4)P_U+O(RX^epsilon), where P_U=sum_(ell>0 odd)chi_4(ell)ell^(-3/4)A_(1,M,U)(1,ell)e(sqrt(Nell)). The error owns the lower symbols, nonstationary terms, stationary buffers, transitions, tails, and endpoints. A second B-process returns the reciprocal phase and principal stationary symbol with inverse amplitudes and cancelling Gaussian units, but it does not assert exact composition of every lower symbol or endpoint. The direct and dual absolute capacities are min(R^2M^(-1/2),RM^(1/4))X^epsilon, so a bare B-process supplies no intermediate growing-M gain and neither capacity is a signed lower bound. Outside the strict row corridors, the first missing endpoint input is |P_U|<<X^epsilon, equivalently a factor M^(1/4) of signed cancellation over its unit-scale absolute mass.",
+        "dependencies": [
+          "M9-M1-lower-cone-t1-squarefree-reciprocal-transform-reduction",
+          "M9-M1-lower-cone-t1-squarefree-moving-coefficient-small-wrap-reduction"
+        ],
+        "implies": [
+          "M9-M1-lower-cone-t1-squarefree-large-wrap-collar-obstruction",
+          "M9-M1-global-lower-radial-signed-estimate"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/candidates/conductor_round151_character_ranges_and_bprocess_boundary.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/reviews/independent_bprocess_candidate_final.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/reviews/independent_conductor_round151_math_review.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/reviews/source_conductor_round151_final.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/reviews/conductor_round151_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/controls/conductor_round151_controls.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/reports/blind_d1_reciprocal_bprocess_feasibility.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/reviews/independent_bprocess_endpoint_review.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Prove the actual-profile signed square-root-wave bound |P_U|<<X^epsilon in the remaining D=L=1 scale range, or derive a rigorously scoped capacity obstruction for every source-legal route that preserves chi_4."
+      }
+    ],
+    "update": [
+      {
+        "id": "Bourgain-2017-reciprocal-exponent-pair-source-audit",
+        "title": "Bourgain 2017 global reciprocal exponent-pair interface",
+        "statement_tex": "Bourgain Theorem 4 proves the relevant exponential-sum estimate directly in the window T_parameter^(17/42)<<H<<T_parameter^(1/2). Section 5 and Theorem 6 instead establish (13/84+epsilon,55/84+epsilon) as a global exponent pair for the standard derivative class with 1<=H<=T_parameter: the source treats near-square lengths by rescaling, the extreme long range by (1/2,1/2), the remaining long range by Poisson and partial summation as the B-process, and proper subintervals by phase extension and the Sargos partial-sum device. The older Farey specialization remains sum<<T Q^(-5/24) on every proper subinterval. For the Round-151 reciprocal row, after q=c(4n+a), H_c asymp LQ/c and T_c asymp Nd/Q with T_c/H_c asymp cE/L; the reciprocal phase is in the derivative class, actual BV weights enter only after Abel summation, and the fixed comparable edge T_c<H_c is covered separately by a second-derivative bound. Therefore the global pair yields |S_(d,L)|<<(E/L)^(13/84)(LQ)^(55/84)X^epsilon and the all-L row bound used in Round 151. The theorem is not an arbitrary-weight, isolated-collar, or neighbor-cell result.",
+        "implies_added": [
+          "M9-M1-lower-cone-t1-squarefree-large-wrap-character-range-reduction"
+        ],
+        "evidence_added": {
+          "positive": [
+            "sources/bourgain_2017_exponent_pair.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/reports/large_wrap_shifted_divisor_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/candidates/conductor_round151_character_ranges_and_bprocess_boundary.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/reviews/source_conductor_round151_final.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/reviews/conductor_round151_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Use the global pair only after verifying the standard derivative class, H<=T convention or a separate edge estimate, proper-subinterval uniformity, and Abel-after-unweighted ordering."
+      },
+      {
+        "id": "M9-M1-TTY-exponent-pair-wedge",
+        "implies_added": [
+          "M9-M1-lower-cone-t1-squarefree-large-wrap-character-range-reduction"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/reports/large_wrap_character_factorization_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/reports/large_wrap_shifted_divisor_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/reviews/preliminary_tty_corridor_review.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/reviews/source_conductor_round151_final.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Use the graph-certified pair on the exact reciprocal model phase with unweighted interval estimates and actual BV inserted by Abel; Round 151 owns only the named recombined low-row component."
+      },
+      {
+        "id": "M9-M1-lower-cone-t1-squarefree-reciprocal-transform-reduction",
+        "implies_added": [
+          "M9-M1-lower-cone-t1-squarefree-reciprocal-bprocess-self-return-obstruction"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/candidates/conductor_round151_character_ranges_and_bprocess_boundary.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/reviews/independent_bprocess_candidate_final.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The source-complete D=L=1 reciprocal B-process is now calibrated: outside strict ranges, estimate its signed square-root main wave rather than iterating the principal transform."
+      },
+      {
+        "id": "M9-M1-lower-cone-t1-squarefree-gcd-lift-compression-reduction",
+        "implies_added": [
+          "M9-M1-lower-cone-t1-squarefree-large-wrap-character-range-reduction"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/candidates/conductor_round151_character_ranges_and_bprocess_boundary.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/reviews/independent_conductor_round151_math_review.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Exact phases, every fixed wrap, high-two-adic wraps, all-scale profile variation, and the two row corridors are owned. Preserve the compressed coefficient in the remaining low-adic recovered sum."
+      },
+      {
+        "id": "M9-M1-lower-cone-t1-squarefree-moving-coefficient-small-wrap-reduction",
+        "implies_added": [
+          "M9-M1-lower-cone-t1-squarefree-large-wrap-character-range-reduction",
+          "M9-M1-lower-cone-t1-squarefree-reciprocal-bprocess-self-return-obstruction"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/reports/large_wrap_character_factorization_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/candidates/conductor_round151_character_ranges_and_bprocess_boundary.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/reviews/independent_conductor_round151_math_review.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Subtract the accepted fixed-wrap packet and high-adic family only after applying a recombined row theorem. The first isolated survivor is low-adic and retains the h|g fibre."
+      },
+      {
+        "id": "M9-M1-lower-cone-t1-squarefree-large-wrap-collar-obstruction",
+        "title": "Low-two-adic recovery fibre outside the strict large-wrap row corridors",
+        "statement_tex": "Round 151 narrows the growing-M large-wrap frontier. For k nonzero, the shifted factors are positive and the exact odd quotients transfer chi_4, but inverse recovery has a compulsory divisor fibre h|g which changes q_i, k, profiles, support, and the phase denominator. High-two-adic wraps with 2^nu_2(|k|) greater than a constant times R^2 are target-safe. The complete recombined row is target-safe when D^84R^52<<M^29, and the recombined L<=L_0 low-low component is target-safe when M^819>>R^1424D^1816L_0^534. For D=1 the first condition owns the complete large-wrap collar after subtraction of accepted pieces; for D>1 it controls collar and generic terms jointly and cannot be restricted to an arbitrary signed collar subset. The first isolated survivor has j below the R^2 threshold, k outside the accepted packet, 0<|rho|<=hr_1r_2/D, and the full h|g fibre. At D=L=1 it is equivalent to a signed square-root-wave estimate after the boundary-complete B-process; the phase and principal symbol self-return and elementary capacities give no intermediate-scale gain. Audited shifted-divisor and Kloosterman-fraction sources do not directly accept the recovery-weighted isolated collar. This is a scoped proof frontier, not an impossibility theorem or signed lower bound.",
+        "dependencies_added": [
+          "M9-M1-lower-cone-t1-squarefree-large-wrap-character-range-reduction",
+          "M9-M1-lower-cone-t1-squarefree-reciprocal-bprocess-self-return-obstruction"
+        ],
+        "source_card": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/reports/large_wrap_shifted_divisor_source_audit.md",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/reports/large_wrap_character_factorization_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/reports/large_wrap_shifted_divisor_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/candidates/conductor_round151_character_ranges_and_bprocess_boundary.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/reviews/independent_bprocess_candidate_final.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/reviews/independent_conductor_round151_math_review.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/reviews/source_conductor_round151_final.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/reviews/conductor_round151_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/controls/conductor_round151_controls.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/synthesis.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/reports/blind_d1_reciprocal_bprocess_feasibility.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/reviews/independent_bprocess_endpoint_review.md"
+          ]
+        },
+        "next_action": "Attack the low-two-adic h|g-coupled residual below the row corridors. At D=L=1, prove the signed square-root-wave estimate; for D>1, preserve the recombined square or produce a legal positive decomposition before isolating the collar."
+      },
+      {
+        "id": "M9-M1-lower-cone-t1-squarefree-gcd-lift-energy-obstruction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/reviews/conductor_round151_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The fixed-vector obstruction remains parked. Round 151 owns high-adic wraps and two recombined row corridors; the first remaining collar seam is the low-adic recovery fibre outside them."
+      },
+      {
+        "id": "M9-M1-lower-cone-t1-squarefree-reciprocal-dispersion-obstruction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/reviews/independent_bprocess_candidate_final.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/reviews/conductor_round151_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Keep the unrecombined factor-R diagonal placement parked. At D=L=1 the source-complete reciprocal transform now reduces the remaining intermediate range to a signed square-root wave; at D>1 retain the coefficient-sensitive recombined row."
+      },
+      {
+        "id": "M9-M1-global-lower-radial-signed-estimate",
+        "dependencies_added": [
+          "M9-M1-lower-cone-t1-squarefree-large-wrap-character-range-reduction",
+          "M9-M1-lower-cone-t1-squarefree-reciprocal-bprocess-self-return-obstruction"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/reports/large_wrap_character_factorization_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/reports/blind_d1_reciprocal_bprocess_feasibility.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/reports/large_wrap_shifted_divisor_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/candidates/conductor_round151_character_ranges_and_bprocess_boundary.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/reviews/conductor_round151_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/synthesis.md"
+          ]
+        },
+        "next_action": "For t=1, prove the low-two-adic residual outside the Bourgain and TTY corridors, then the growing-M generic complement. Every t>=2 layer and the independent Round-138 cross owner remain open."
+      }
+    ],
+    "correct_rejected": [],
+    "reject": [
+      {
+        "id": "Round151-apply-chi4-directly-to-shifted-factors",
+        "reason": "The shifted factors A and B may be even in compulsory parity classes. The lawful character arguments are the odd quotients (NL_1-A)/2^j and (B-NL_2)/2^j."
+      },
+      {
+        "id": "Round151-shifted-factors-uniquely-recover-h-and-k",
+        "reason": "Fixed A,B,j determine r_i, kh, and rho, but the preimage contains every admissible positive odd divisor h|g with k=sgn(x)2^jg/h. Profiles, support, phase denominator, and packet membership vary along this fibre."
+      },
+      {
+        "id": "Round151-character-transfer-alone-cancels-the-low-adic-sum",
+        "reason": "The transfer is an exact coordinate identity. It supplies no estimate, and absolute summation after recovery returns the rejected all-shift capacity."
+      },
+      {
+        "id": "Round151-high-two-adic-wraps-exhaust-all-large-wraps",
+        "reason": "The target-safe family is the sparse subset with 2^nu_2(|k|) greater than a constant times R^2. The low-two-adic complement contains most wrap classes and remains open outside the row corridors."
+      },
+      {
+        "id": "Round151-Bourgain-Theorem6-is-confined-to-Theorem4-window",
+        "reason": "The 17/42-to-1/2 window is the direct Theorem-4 range. Section 5 and Theorem 6 establish the global exponent-pair interface through the stated rescaling, extreme-range, B-process, and proper-subinterval arguments."
+      },
+      {
+        "id": "Round151-exponent-pair-theorems-accept-arbitrary-denominator-weights",
+        "reason": "Both source theorems are applied to unweighted interval sums. The actual project profile enters only afterwards through its proved bounded variation and Abel summation."
+      },
+      {
+        "id": "Round151-TTY-low-row-controls-the-high-square-and-cross-term",
+        "reason": "The TTY estimate controls the recombined L<=L_0 row and hence its low-low square. The L>L_0 square and low-high cross term are separate open components."
+      },
+      {
+        "id": "Round151-Dgreater1-whole-row-bound-is-an-isolated-collar-bound",
+        "reason": "For D>1 the Bourgain and TTY estimates control recombined rows before the energy is split. An arbitrary signed collar subset cannot be extracted from a square bound without a positive or separately controlled complement."
+      },
+      {
+        "id": "Round151-actual-profile-variation-ledger-is-missing",
+        "reason": "The accepted Round-148 factorization and transition-width ledger prove all-scale sampled BV for the actual compact retained profile. The blind report was statement-isolated and lacked that allowed context."
+      },
+      {
+        "id": "Round151-complete-Bprocess-is-exactly-involutive-with-all-endpoints",
+        "reason": "Only the phase and principal stationary symbol self-return exactly. Lower symbols, nonstationary integrals, tails, transitions, and endpoints retain the accepted boundary ledger."
+      },
+      {
+        "id": "Round151-square-root-dual-main-is-an-error-or-automatic-gain",
+        "reason": "The dual square-root wave is the principal main term. Its target-sized signed estimate remains open outside strict ranges, and a second principal B-process returns the original phase."
+      },
+      {
+        "id": "Round151-transform-capacity-is-a-signed-lower-bound",
+        "reason": "The direct and dual quantities are elementary absolute upper capacities used to diagnose a method. They are not lower bounds for the literal chi_4-weighted sum."
+      },
+      {
+        "id": "Round151-audited-shifted-divisor-sources-directly-close-the-isolated-collar",
+        "reason": "The printed DFI, Cowan, Blomer--Harcos, and Bettin--Chandee interfaces do not accept the literal recovery fibre, profiles, prefixes, character, growing shift family, and coupled coefficients. This is a direct no-match, not an impossibility theorem."
+      },
+      {
+        "id": "Round151-strict-character-ranges-prove-full-t1-M1-or-exponent",
+        "reason": "The low-adic residual outside the row corridors, the growing-M generic sector, every t>=2 layer, the Round-138 cross owner, remaining M1 and M2 owners, endpoint, M9, bridge, and quarter target remain open."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "Round 151 proves strict t=1 row ranges and an exact endpoint reduction, not the full lower cone or all M1 components."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "No M2 hard-TOP, balanced, or unbalanced owner was treated."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "A boundary-complete D=L=1 transform and strict row ranges are not the all-owner endpoint-uniform theorem."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain open."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The bridge remains conditional on complete M9."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The strongest internally proved global exponent remains one third."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "The separately audited external exponent remains (3292+25sqrt(1717))/13762."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The quarter target still lacks the low-adic residual outside strict ranges, growing-M generic t=1 sector, all other M1 and M2 owners, endpoint uniformity, M9, and the unconditional bridge."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 9,
+    "idea_quality_score": 9,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 151 proves an exact mod-four shifted-factor transfer with the complete inverse h-fibre, an all-scale high-two-adic owner, all-scale bounded variation of the actual profile, a corrected global Bourgain source interface, two explicit exponent-pair row corridors, and a boundary-complete reciprocal B-process with a rigorous principal-self-return obstruction. The full low-adic isolated collar, generic complement, scalar target, and every downstream theorem remain open."
+  }
+}

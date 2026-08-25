@@ -1,0 +1,206 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-unbalanced-inverse-selector-reciprocity-projective-obstruction",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Inverse-selector reciprocity and scalar projective-capacity obstruction",
+        "status": "proved_internal",
+        "statement_tex": "Fix the flat-smooth strict-UNBAL M2 owner with X=N_0+xi, D=X^delta, L=X^ell, R=X/D, K=XL/D^2, Delta=D/L, 1/4<=delta<1/2, 0<=ell<delta-1/4, 178ell+1638delta>463, and a=delta-ell. For every coprime j,n, arbitrary inverse representatives, every integer h, and either parity of j, e(-h inverse(j mod n)/n)=e(h inverse(n mod j)/j-h/(jn)). In the centered owner this gives the literal 1/(gnj) summand with chi_4(g)chi_4(n), real centre, moving support, profiles, endpoints, arbitrary gcd strata, and all 1<=h<n retained. Complete h modulo n summation reconstructs the original reciprocal row exactly, and only the accepted h=0 modulo n Ramanujan row is removed once. For every A subset of (Z/jZ)^x, M=|A|, the unweighted kernel F_(j,A)(u,h)=e(h inverse(u mod j)/j), 1<=h<=j-1, satisfies F F*=jI_M-11*, with singular values sqrt(j) of multiplicity M-1 and sqrt(j-M) once. Hence every exact Hilbert rank-one scalarization followed termwise by triangle pays at least the nuclear norm, and for A=(Z/jZ)^x its nuclear-to-Hilbert--Schmidt inflation is asymptotic to sqrt(phi(j))=j^(1/2-o(1)). The normalized positive block 1<=h<=j has orthonormal rows. The full physical range has exact residue-compression norm sqrt(ceil((n-1)/j)) asymptotic to sqrt(Delta); positive h=mj survive with inverse phase one. At g=1, j asymptotic to K, both K^(1/2-o(1)) and X^(a/2) exceed the missing boundary factor X^mu(a) at each fixed strict exponent pair, where mu(a)=a-1/4 for a<=1/3 and mu(a)=(1-2a)/4 for a>=1/3. The exact additive common-test expansion is a full-rank change of basis with high additive bandwidth. The audited scalar Bettin--Chandee/Wright, Blomer--Milicevic, Deshouillers--Iwaniec, Assing--Blomer--Li, and level-four/eight realizations do not absorb the joint coefficient, projective cost, long complement, moving support, high bandwidth, and growing levels at an owner-saving norm. This is only a no-go for exact unweighted Hilbert scalarization plus termwise triangle and the named audited scalar routes. It is not a lower bound for the signed scalar or literal weighted matrix, does not exclude an additional compensating scalar saving, and does not exclude a bespoke vector theorem acting on the complete weighted matrix before positive norms. No target, strict range, downstream owner, or exponent is proved.",
+        "dependencies": [
+          "M9-M2-unbalanced-truncated-divisor-fixed-centre-return",
+          "M9-M2-unbalanced-flat-wave-curvature-envelope",
+          "M9-M2-unbalanced-Kloosterman-dispersion-interface-obstruction",
+          "M9-M2-unbalanced-level-four-spectral-matrix-obstruction",
+          "M9-M2-character-factor",
+          "Divisor-bound-elementary",
+          "Bettin-Chandee-Wright-Kloosterman-source-audit",
+          "Level-four-Kuznetsov-matrix-source-audit"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "proofs/kernels/m9_m2_unbalanced_inverse_selector_reciprocity_projective_obstruction.md",
+            "rounds/codex-managed/m9-m2-unbalanced-inverse-selector-reciprocity-gate/reports/inverse_selector_reciprocity_attack.md",
+            "rounds/codex-managed/m9-m2-unbalanced-inverse-selector-reciprocity-gate/reports/blind_reciprocity_matrix_rederivation.md",
+            "rounds/codex-managed/m9-m2-unbalanced-inverse-selector-reciprocity-gate/reports/reciprocity_projective_source_audit.md",
+            "rounds/codex-managed/m9-m2-unbalanced-inverse-selector-reciprocity-gate/candidates/conductor_round160_reciprocity_projective_obstruction.md",
+            "rounds/codex-managed/m9-m2-unbalanced-inverse-selector-reciprocity-gate/reviews/post_blind_reciprocity_projective_seam.md",
+            "rounds/codex-managed/m9-m2-unbalanced-inverse-selector-reciprocity-gate/reviews/exact_kernel_power_review.md",
+            "rounds/codex-managed/m9-m2-unbalanced-inverse-selector-reciprocity-gate/reviews/source_level_seam_review.md",
+            "rounds/codex-managed/m9-m2-unbalanced-inverse-selector-reciprocity-gate/reviews/scope_hygiene_review.md",
+            "rounds/codex-managed/m9-m2-unbalanced-inverse-selector-reciprocity-gate/reviews/conductor_round160_adjudication.md",
+            "rounds/codex-managed/m9-m2-unbalanced-inverse-selector-reciprocity-gate/reviews/state_patch_scope_round160.md",
+            "rounds/codex-managed/m9-m2-unbalanced-inverse-selector-reciprocity-gate/controls/conductor_round160_controls.md",
+            "rounds/codex-managed/m9-m2-unbalanced-inverse-selector-reciprocity-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Park additive reciprocity followed by canonical scalar common tests on this flat-smooth strict-UNBAL surface. Reopen only with a genuinely new signed vector theorem for the literal complete weighted (g,n,j,h) matrix, including every long frequency, moving boundary, gcd and two-adic stratum, induced spectral level, and the required boundary saving; otherwise rotate to a different mandatory M2 owner."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-smooth-unbalanced-three-quarter-estimate",
+        "dependencies_added": [
+          "M9-M2-unbalanced-inverse-selector-reciprocity-projective-obstruction"
+        ],
+        "evidence_added": {
+          "negative": [
+            "proofs/kernels/m9_m2_unbalanced_inverse_selector_reciprocity_projective_obstruction.md",
+            "rounds/codex-managed/m9-m2-unbalanced-inverse-selector-reciprocity-gate/reviews/conductor_round160_adjudication.md",
+            "rounds/codex-managed/m9-m2-unbalanced-inverse-selector-reciprocity-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The flat strict-UNBAL target remains open. Exact additive reciprocity exposes a full-rank inverse-residue kernel; canonical scalarization plus triangle and the audited scalar source routes pay more than the missing boundary factor, while complete h summation self-returns. Park this scalar surface. Supply a genuinely new signed literal-matrix vector theorem with all long frequencies, weights, levels, and endpoints, or rotate to a distinct mandatory M2 owner."
+      },
+      {
+        "id": "M9-M2-unbalanced-truncated-divisor-fixed-centre-return",
+        "evidence_added": {
+          "positive": [
+            "proofs/kernels/m9_m2_unbalanced_inverse_selector_reciprocity_projective_obstruction.md",
+            "rounds/codex-managed/m9-m2-unbalanced-inverse-selector-reciprocity-gate/reviews/conductor_round160_adjudication.md"
+          ]
+        },
+        "next_action": "Retain the exact fixed-centre wave, level-four embedding, target-safe h=0 row, and Round-160 reciprocity identity. Complete h orthogonality still returns the original row. Canonical scalarization of the shorter-modulus inverse kernel is now parked; progress requires a new signed complete-matrix theorem before positive norms."
+      },
+      {
+        "id": "M9-M2-unbalanced-Kloosterman-dispersion-interface-obstruction",
+        "evidence_added": {
+          "positive": [
+            "proofs/kernels/m9_m2_unbalanced_inverse_selector_reciprocity_projective_obstruction.md",
+            "rounds/codex-managed/m9-m2-unbalanced-inverse-selector-reciprocity-gate/reports/reciprocity_projective_source_audit.md",
+            "rounds/codex-managed/m9-m2-unbalanced-inverse-selector-reciprocity-gate/reviews/source_level_seam_review.md",
+            "rounds/codex-managed/m9-m2-unbalanced-inverse-selector-reciprocity-gate/reviews/conductor_round160_adjudication.md"
+          ]
+        },
+        "next_action": "The inverse-selector coefficient now has an exact shorter-modulus reciprocity and projective ledger. Bettin--Chandee/Wright and related scalar routes do not accept the joint S(N_0,h;n)-weighted moving matrix at an owner-saving norm, and complete h summation self-returns. Reopen only with a new coefficient-sensitive vector theorem, not another scalar fixed-test decomposition."
+      },
+      {
+        "id": "M9-M2-unbalanced-level-four-spectral-matrix-obstruction",
+        "evidence_added": {
+          "positive": [
+            "proofs/kernels/m9_m2_unbalanced_inverse_selector_reciprocity_projective_obstruction.md",
+            "rounds/codex-managed/m9-m2-unbalanced-inverse-selector-reciprocity-gate/reports/reciprocity_projective_source_audit.md",
+            "rounds/codex-managed/m9-m2-unbalanced-inverse-selector-reciprocity-gate/reviews/source_level_seam_review.md",
+            "rounds/codex-managed/m9-m2-unbalanced-inverse-selector-reciprocity-gate/reviews/conductor_round160_adjudication.md"
+          ]
+        },
+        "next_action": "Park scalar fixed-index trace formulas, residue-by-residue Mellin expansion, short-Linnik truncation, and exact Hilbert scalarization plus triangle. Round 160 prices the full inverse-residue rank, growing induced levels, high bandwidth, and long complement. Reopen only with a literal weighted vector theorem preserving chi_4 before positive norms."
+      }
+    ],
+    "correct_rejected": [],
+    "reject": [
+      {
+        "id": "Round160-additive-reciprocity-alone-proves-short-modulus-gain",
+        "reason": "Reciprocity is an exact identity. Its inverse-residue kernel has full finite rank, and complete frequency summation reconstructs the original reciprocal row."
+      },
+      {
+        "id": "Round160-unweighted-nuclear-price-lower-bounds-literal-weighted-matrix",
+        "reason": "The frozen hypotheses contain no nonzero lower buffer with complete unit-class coverage, and diagonal or entrywise weights can reduce nuclear mass."
+      },
+      {
+        "id": "Round160-profile-upper-bounds-supply-nonzero-buffer",
+        "reason": "Support, regularity, zero extension, and upper bounds do not imply a quantitative interval on which the joint profile is bounded below."
+      },
+      {
+        "id": "Round160-positive-h-mj-are-deleted-zero-frequency",
+        "reason": "The centered deletion removes h=0 modulo n. Positive h=mj are zero only modulo j and remain in 1<=h<n."
+      },
+      {
+        "id": "Round160-projective-norm-is-signed-lower-bound",
+        "reason": "The nuclear norm is a lower price for exact Hilbert rank-one factorization closed termwise by triangle, not a lower bound for the signed owner."
+      },
+      {
+        "id": "Round160-high-Fourier-mass-is-automatic-automorphic-Sobolev-loss",
+        "reason": "The high-frequency mass is an exact finite diagnostic. A spectral Sobolev or Bessel loss requires a theorem-specific match to printed hypotheses."
+      },
+      {
+        "id": "Round160-variable-character-encoding-stays-at-level-4-8",
+        "reason": "Mellin encoding with arithmetic period lcm(4,j) creates growing levels; for prime j=p the audited family includes levels through 4p^2 and 8p^2."
+      },
+      {
+        "id": "Round160-short-Linnik-band-controls-full-h-range",
+        "reason": "The sourced band covers only a proportion asymptotic to 1/(Dg) of the physical row, and no theorem controls the complement for free."
+      },
+      {
+        "id": "Round160-complete-h-summation-is-a-saving",
+        "reason": "Complete h orthogonality is a hostile control that returns the original reciprocal row exactly after the already safe zero row is accounted for."
+      },
+      {
+        "id": "Round160-scalar-source-no-match-excludes-bespoke-vector-theorem",
+        "reason": "The audit excludes only named scalar interfaces at owner-saving cost. A new coefficient-sensitive vector theorem remains logically open."
+      },
+      {
+        "id": "Round160-projective-capacity-no-go-proves-owner-target-or-strict-range",
+        "reason": "The no-go scopes a proposed scalar continuation. It proves neither the positive owner estimate nor any strict target-safe range."
+      },
+      {
+        "id": "Round160-obstruction-improves-global-exponent",
+        "reason": "No M2 parent, M9, or bridge is closed, so neither the internal nor external global exponent changes."
+      },
+      {
+        "id": "Round160-triangle-free-vector-methods-pay-the-same-nuclear-norm",
+        "reason": "The nuclear lower price applies to exact rank-one scalarization followed termwise by triangle. It does not constrain a theorem that acts on the joint matrix before positive norms."
+      },
+      {
+        "id": "Round160-long-h-self-return-proves-complement-large",
+        "reason": "The long-block norm and self-return are capacity identities, not lower bounds for the Kloosterman-weighted signed complement."
+      },
+      {
+        "id": "Round160-parity-erases-unit-class-rank",
+        "reason": "Inversion permutes every unit class for even and odd j, and the exact Gram identity remains valid without a parity restriction."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M2",
+        "reason": "The hard-TOP, balanced smooth, and unbalanced smooth mandatory parents all remain open; Round 160 closes only one scalar continuation on one UNBAL surface."
+      },
+      {
+        "id": "M9-M2-physical-one-count-assembly",
+        "reason": "The unbalanced positive owner estimate remains open, so the physical M2 assembly cannot be promoted."
+      },
+      {
+        "id": "M9-M2-smooth-balanced-quarter-packet-estimate",
+        "reason": "Round 160 treats only a flat smooth strict-UNBAL inverse-selector surface."
+      },
+      {
+        "id": "M9-M2-top-endpoint-density-discrepancy-energy",
+        "reason": "No hard-TOP density-discrepancy energy estimate is proved."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "Round 160 treats no M1 owner; the common-profile variable-mask theorem and all broader M1 seams remain open."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "The moving endpoints were retained only to scope a no-go; no all-owner endpoint estimate follows."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, all three mandatory M9-M2 parents, and endpoint uniformity remain open."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The bridge remains conditional on complete M9."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The strongest theorem proved from the internal architecture remains exponent one third."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "The separately audited external exponent remains (3292+25sqrt(1717))/13762."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The quarter target still lacks M9-M1, all three mandatory M9-M2 parents, endpoint uniformity, M9, and an unconditional bridge."
+      }
+    ]
+  }
+}

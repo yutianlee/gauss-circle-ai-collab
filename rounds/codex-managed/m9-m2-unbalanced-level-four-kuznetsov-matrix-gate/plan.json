@@ -1,0 +1,220 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 143,
+    "round_type": "m9_m2_unbalanced_level_four_kuznetsov_matrix_gate",
+    "campaign_id": "m9-m2-unbalanced-level-four-kuznetsov-matrix-gate",
+    "title": "M2 strict-UNBAL level-four Kuznetsov joint-matrix gate",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "7a3ff68dda20717bff1133412f0ca97d35032599930d7f19551109a43d2bd789",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "planned_numerical_percent": 0,
+      "literature_policy": "Use primary fixed-level Kuznetsov, generalized-cusp Kloosterman, spectral-large-sieve, and Bessel-transform sources only after deriving the literal modulus-character embedding. Record theorem number, level, cusps, allowed moduli, Kloosterman normalization, test-function class, spectral terms, coefficient placement, exceptional spectrum, and the full D-L-R-K-Delta power ledger."
+    },
+    "target_obligations": [
+      "M9-M2-smooth-unbalanced-three-quarter-estimate",
+      "M9-M2-unbalanced-Kloosterman-dispersion-interface-obstruction",
+      "M9-M2-unbalanced-truncated-divisor-fixed-centre-return"
+    ],
+    "frozen_target": {
+      "question": "Does the fully gcd-restored inverse-selector completion of the literal flat-smooth strict-UNBAL M2 wave admit a fixed-level-four generalized-Kloosterman and Kuznetsov/spectral-large-sieve estimate that preserves chi_4 across moduli and beats the accepted envelope uniformly at the prescribed real centre; if not, what is the first exact cusp, modulus, coefficient-matrix, Bessel-transform, spectral, self-return, or capacity obstruction?",
+      "reference_formula": "Let X=N_0+xi with N_0=floor X and 0<=xi<1, D=X^delta, L=X^ell, R=X/D, K=XL/D^2, Delta=D/L=R/K, and 1/4<delta-ell<1/2. The flat packet is R_(D,L)(X)=sum_(r asymp R, r odd)chi_4(r)W(X/(rD))sum_(k asymp K)q_L(4Xk/r^2)k^(-1)e(Xk/r). With r=gn, k=gj, (j,n)=1, b_(g,n)(j)=q_L(4Xj/(gn^2))(gj)^(-1)e(xi j/n), gamma_(g,n)(m)=b_(g,n)(inverse_n(m)) on units, and normalized Fourier transform gammahat_(g,n)(h), the exact inverse-first row is sum_(h mod n)gammahat_(g,n)(h)S(N_0,h;n). The full owner retains sum_(g,n odd, gn asymp R)chi_4(g)chi_4(n)W(X/(gnD)) and every gcd stratum. The target is O_epsilon(X^(1/4+epsilon)), or a strictly smaller owner-complete survivor below the accepted envelope min(Delta,sqrt(XL/D)+sqrt(X/(LD))).",
+      "quantities": [
+        "The modulus sign chi_4(n) must remain inside the complete n-sum; replacing it by its modulus or an arbitrary coefficient theorem is not a signed gain.",
+        "An identity with standard or generalized Kloosterman sums is useful only after the exact level, cusps, allowed moduli, residue normalization, and all root-of-unity factors are proved.",
+        "Kuznetsov normally accepts a common Kloosterman argument and a controlled modulus test. Here gammahat_(g,n)(h) is a joint rough function of n and h created by the inverse selector; its separation cost is part of the theorem, not a free preprocessing step.",
+        "All holomorphic, Maass, Eisenstein, exceptional, oldform, continuous-spectrum, and Bessel-transform terms must be included before a spectral estimate is called owner-complete.",
+        "The real-centre repair e(xi j/n) is legal inside b_(g,n); no proof may silently set xi=0 or discard moving profiles, entries, exits, or gcd strata.",
+        "Smooth-weight-first completion is the exact Ramanujan/additive return of size Delta X^epsilon. A proposed spectral gain must not merely transform back to that identity or to the original reciprocal wave.",
+        "This round concerns one flat-smooth strict-UNBAL owner only. It cannot promote sharp, clipped, starred, transition, hard-TOP, BAL, complete M9-M2, endpoint, M9, or the global theorem."
+      ]
+    },
+    "completion_criteria": [
+      "Derive or refute an exact identity embedding chi_4(n)S(N_0,h;n), with n odd, into fixed-level generalized Kloosterman sums, including every cusp, modulus progression, root-of-unity factor, gcd condition, and sign.",
+      "Write the fully gcd-restored completed scalar and identify exactly which variables are spectral coefficients, Kloosterman arguments, moduli, and test-function parameters.",
+      "Prove a lawful separation or vector-valued treatment of gammahat_(g,n)(h), with explicit projective, L2, Sobolev, and endpoint costs; do not replace the inverse selector by an independent coefficient.",
+      "Audit a primary Kuznetsov/spectral-large-sieve theorem against the exact level, cusps, modulus family, test transform, common-sequence requirement, exceptional spectrum, and continuous terms.",
+      "Compute the complete D-L-R-K-Delta capacity on the full strict residual polytope and compare it both with X^(1/4) and the accepted envelope.",
+      "Restore every gcd stratum, real-centre factor, literal profile, and entry/exit term before claiming a target bound or strict reduction.",
+      "Test standard-cusp, switched-cusp, level-four, odd-modulus, h=0, (N_0,n)>1, short-h, full-h, and transform-return cases.",
+      "Close under exactly one label: target_bound, strict_level_four_spectral_reduction, or level_four_spectral_matrix_no_go."
+    ],
+    "controls": [
+      "exact_gcd_restored_inverse_first_identity",
+      "chi4_modulus_sign_and_level_four_embedding",
+      "cusp_modulus_progression_and_root_of_unity",
+      "joint_gammahat_n_h_coefficient_geometry",
+      "real_centre_profile_and_endpoint_ownership",
+      "Kuznetsov_test_Bessel_transform_hypotheses",
+      "holomorphic_Maass_Eisenstein_exceptional_ledger",
+      "spectral_large_sieve_common_sequence_and_norms",
+      "full_polytope_D_L_R_K_Delta_capacity",
+      "Ramanujan_original_wave_and_spectral_self_return",
+      "actual_character_vs_unsigned_adversary",
+      "downstream_owner_and_exponent_scope"
+    ],
+    "tasks": [
+      {
+        "id": "level_four_kloosterman_embedding_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "completed_with_exact_level_four_embedding_and_scoped_matrix_no_go",
+        "target": "Starting from the exact fully gcd-restored inverse-selector completion, derive the literal chi_4(n)-weighted generalized-Kloosterman family at fixed level and attempt a Kuznetsov/spectral-large-sieve estimate before every positive modulus norm. Either prove the quarter target on the flat packet, reduce to a strictly smaller owner-complete spectral survivor, or isolate the first exact algebraic, coefficient-matrix, transform-return, or capacity obstruction.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0823_full_proof_strategy.md",
+          "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/reports/literal_wave_kloosterman_map_attack.md",
+          "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/reports/blind_inverse_congruence_interface_audit.md",
+          "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/reviews/conductor_round135_kloosterman_dispersion_adjudication.md",
+          "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/synthesis.md"
+        ],
+        "required_controls": [
+          "exact_gcd_restored_inverse_first_identity",
+          "chi4_modulus_sign_and_level_four_embedding",
+          "cusp_modulus_progression_and_root_of_unity",
+          "joint_gammahat_n_h_coefficient_geometry",
+          "real_centre_profile_and_endpoint_ownership",
+          "Kuznetsov_test_Bessel_transform_hypotheses",
+          "holomorphic_Maass_Eisenstein_exceptional_ledger",
+          "spectral_large_sieve_common_sequence_and_norms",
+          "full_polytope_D_L_R_K_Delta_capacity",
+          "Ramanujan_original_wave_and_spectral_self_return",
+          "actual_character_vs_unsigned_adversary",
+          "downstream_owner_and_exponent_scope"
+        ],
+        "required_output": [
+          "A seven-section analytic report.",
+          "An exact level/cusp/modulus embedding or a proof that no such fixed-level trace formula representation exists in the required form.",
+          "A complete spectral and power ledger yielding the target, a strict owner-complete survivor, or the first rigorous no-go.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/reports/level_four_kloosterman_embedding_attack.md"
+      },
+      {
+        "id": "blind_joint_matrix_spectral_feasibility",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "completed_with_independent_matrix_norm_no_go_and_repaired_source_ledger",
+        "target": "Independently decide from the frozen flat-wave and inverse-first identities whether a fixed-level trace formula or spectral large sieve can exploit the odd-modulus chi_4 sign with the literal joint gammahat_(g,n)(h) coefficient. Derive all normalizations and capacity from scratch, or prove the first exact no-go.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "all strategy files",
+          "all Round-118 through Round-143 nonblind artifacts",
+          "all Round-143 sibling reports"
+        ],
+        "required_controls": [
+          "exact_gcd_restored_inverse_first_identity",
+          "chi4_modulus_sign_and_level_four_embedding",
+          "cusp_modulus_progression_and_root_of_unity",
+          "joint_gammahat_n_h_coefficient_geometry",
+          "real_centre_profile_and_endpoint_ownership",
+          "Kuznetsov_test_Bessel_transform_hypotheses",
+          "holomorphic_Maass_Eisenstein_exceptional_ledger",
+          "spectral_large_sieve_common_sequence_and_norms",
+          "full_polytope_D_L_R_K_Delta_capacity",
+          "Ramanujan_original_wave_and_spectral_self_return",
+          "actual_character_vs_unsigned_adversary",
+          "downstream_owner_and_exponent_scope"
+        ],
+        "required_output": [
+          "A seven-section statement-only analytic report.",
+          "A self-contained fixed-level Kloosterman/Kuznetsov normalization and joint-coefficient feasibility derivation.",
+          "A target estimate, strict signed spectral survivor, or first rigorous obstruction.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/reports/blind_joint_matrix_spectral_feasibility.md"
+      },
+      {
+        "id": "kuznetsov_source_hypothesis_audit",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "status": "completed_with_exact_level_four_eight_source_audit_and_common_test_obstruction",
+        "target": "Audit primary fixed-level Kuznetsov, generalized-cusp Kloosterman, and spectral-large-sieve results for the exact chi_4(n)-weighted inverse-first matrix. Determine whether any theorem accepts the modulus set, cusps, joint n-h coefficient, real-centre profile, and spectral test with a target-saving full-polytope bound, or state the first precise source-hypothesis and capacity failure.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0823_full_proof_strategy.md",
+          "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/reports/literal_wave_kloosterman_map_attack.md",
+          "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/sources/bettin_chandee_wright_kloosterman.md",
+          "rounds/codex-managed/m9-m1-near-product-delta-salie/reports/delta_kuznetsov_source_hostile_audit.md"
+        ],
+        "required_controls": [
+          "exact_gcd_restored_inverse_first_identity",
+          "chi4_modulus_sign_and_level_four_embedding",
+          "cusp_modulus_progression_and_root_of_unity",
+          "joint_gammahat_n_h_coefficient_geometry",
+          "real_centre_profile_and_endpoint_ownership",
+          "Kuznetsov_test_Bessel_transform_hypotheses",
+          "holomorphic_Maass_Eisenstein_exceptional_ledger",
+          "spectral_large_sieve_common_sequence_and_norms",
+          "full_polytope_D_L_R_K_Delta_capacity",
+          "Ramanujan_original_wave_and_spectral_self_return",
+          "actual_character_vs_unsigned_adversary",
+          "downstream_owner_and_exponent_scope"
+        ],
+        "required_output": [
+          "A seven-section source-audit report.",
+          "Primary-source theorem cards with exact level, cusp, modulus, transform, spectrum, coefficient, and norm hypotheses.",
+          "A usable target theorem or the first rigorous source-level/coefficient/capacity obstruction.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/reports/kuznetsov_source_hypothesis_audit.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "level_four_embedding",
+        "requirement": "The chi_4 modulus sign is represented with exact level, cusp pair, allowed moduli, Kloosterman normalization, and root-of-unity factors, or a precise impossibility is proved."
+      },
+      {
+        "id": "joint_coefficient",
+        "requirement": "The inverse-selector gammahat_(g,n)(h) remains literal; every separation, Sobolev, projective, L2, and endpoint cost is explicit."
+      },
+      {
+        "id": "trace_formula",
+        "requirement": "The geometric and every spectral term match a primary theorem, including Bessel transforms, exceptional spectrum, continuous terms, and common coefficient requirements."
+      },
+      {
+        "id": "capacity",
+        "requirement": "All R, K, Delta, D, L, g, h, level, cusp, and spectral-width powers are computed on the full strict residual polytope."
+      },
+      {
+        "id": "owner_and_return",
+        "requirement": "Every gcd stratum, real-centre factor, profile, entry and exit is restored, and Ramanujan, original-wave, or trace-formula self-return is distinguished from a gain."
+      },
+      {
+        "id": "scope",
+        "requirement": "Only the flat-smooth strict-UNBAL owner or a proved strict survivor may change; every omitted owner and global exponent remains unchanged."
+      }
+    ],
+    "closing_assessment": {
+      "decision": "promote_exact_character_to_level_embedding_and_scoped_joint_matrix_obstruction",
+      "terminal_label": "level_four_spectral_matrix_no_go",
+      "graph_mutation": true,
+      "resulting_graph_sha256": "179e40fb38e6a5e26623c2584d469b1c4c8d5ae444a70d791298852f2d511204",
+      "exponent_change": false
+    }
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "7a3ff68dda20717bff1133412f0ca97d35032599930d7f19551109a43d2bd789",
+    "generated_at": "2026-08-23T20:05:58.767482+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 158,
+    "round_type": "m9_m1_lower_cone_t1_d1_paired_interior_cell_trace_gate",
+    "campaign_id": "m9-m1-lower-cone-t1-d1-paired-interior-cell-trace-gate",
+    "title": "M1 D=1 paired-interior moving-cell trace gate",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "3acbfaf6fb95047babd19800dee4152fb60cb408197a8ceac93931a20c57491f",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "planned_numerical_percent": 0,
+      "literature_policy": "Audit primary incomplete quadratic, polynomial-character, fixed-modulus root, short character, theta, and spectral theorems only against the exact boundary-frozen selected trace. Record modulus, interval and quotient variables, coefficient class, signs, prime-power hypotheses, zero and fold exclusions, all spectral pieces, endpoints, and every restored N-M-V-d power."
+    },
+    "target_obligations": [
+      "M9-M1-lower-cone-t1-d1-nonzero-centering-nyquist-fold",
+      "M9-M1-lower-cone-t1-d1-complete-theta-inversion-obstruction",
+      "M9-M1-d1-outer-defect-spectral-source-audit",
+      "M9-M1-lower-cone-t1-squarefree-large-wrap-collar-obstruction",
+      "M9-M1-global-lower-radial-signed-estimate"
+    ],
+    "frozen_target": {
+      "question": "Can the exact moving-mask Abel trace inside the paired interior D=d=L=1 nonzero theta matrix be proved target-sized after sign-adapted prefix or suffix summation, safe zero and Nyquist trace removal, and exact selected-coordinate rewriting; if not, what is the first strict-prefix, arithmetic, sign, coefficient, endpoint, source, or restored-power obstruction?",
+      "reference_formula": "Fix q=4N, c=q/d, H=c/2, and V<|j|<=2V. With B_j(x)=1_(x>=lambda_sigma(j))F_j(x), lambda_+(j)=j+1, lambda_-(j)=-j, define P^+_(d,v)(j)=sum_(s=a_+)^j K(-v^2,-s;c) and P^-_(d,v)(j)=sum_(s=j)^(b_-) K(-v^2,-s;c). The paired trace is -i(1+i)/(2Nq) sum_(d|N,d odd)chi_4(d)d sqrt(c) times [sum_(j in J_+)F_j(j+1)sum_(v mod H,v!=0,H/2)e_c(-2v(j+1))P^+_(d,v)(j)+sum_(j in J_-)F_j(-j)sum_(v mod H,v!=0,H/2)e_c(2vj)P^-_(d,v)(j)], with exact strict endpoints. Its full-v physical form is sum_j F_j(j+1)sum_(s<=j)G_N((j+1)^2-s)+sum_j F_j(-j)sum_(s>=j)G_N(j^2-s).",
+      "quantities": [
+        "Retain arbitrary N, every odd d|N, c=4N/d, H=c/2, both complementary interior representatives, and the edge case c=4.",
+        "Retain both signed blocks, prefix orientation on the positive side, suffix orientation on the negative side, every Abel outer endpoint, and the exact sign of each moving atom.",
+        "Retain the actual complex residual phase, zero-extended profile, transitions, asymmetric cell, half-open choices, hard endpoints, and external B_(1,U)(1) seam.",
+        "Prove the full-frequency delta-mass inversion and separately bound the v=0 and v=H/2 trace pieces; do not transfer their total-row theorems to an Abel piece.",
+        "Compute complete p-adic root tables for j^2+j+1 and j^2-j, including p=2 and p=3.",
+        "Distinguish the endpoint s=j from every strict prefix s<j or suffix s>j term.",
+        "Rewrite the strict trace in selected coordinates with its literal boundary-frozen coefficient and chi_4 quotient.",
+        "Treat min(M,V) as support cardinality only; a signed square-root theorem remains a separate input.",
+        "Restore every N-M-V-d-c factor before assigning a gain.",
+        "No trace result transfers to the profile bulk, full paired matrix, D>1, L>1, generic t=1, t>=2, cross, M2, endpoint uniformity, M9, bridge, target, or exponent owners."
+      ]
+    },
+    "completion_criteria": [
+      "Independently derive the exact sign-adapted coefficient differences, prefix and suffix Abel identities, moving trace, and all outer endpoint terms.",
+      "Derive the exact full-frequency physical trace and the normalized relation to the paired interior trace.",
+      "Prove separate target-safe bounds for the zero-frequency and Nyquist Abel-trace pieces or identify the first exact failure.",
+      "Prove the complete prime-power root counts for the two endpoint polynomials and the resulting endpoint subrow power.",
+      "Derive the exact strict selected trace with all profiles, phases, signs, transitions, endpoints, and quotient characters.",
+      "Prove the whole trace target, isolate a strict owner-complete range or subrow, or establish the first exact strict-prefix, arithmetic, sign, coefficient, endpoint, or restored-power obstruction.",
+      "Source-audit every imported incomplete quadratic, polynomial-character, fixed-modulus root, character-sum, theta, or spectral theorem against the literal trace.",
+      "Close under exactly one label: paired_interior_cell_trace_target, strict_paired_interior_cell_trace_range, or paired_interior_cell_trace_no_go."
+    ],
+    "controls": [
+      "literal_paired_interior_trace",
+      "positive_prefix_negative_suffix_signs",
+      "all_Abel_outer_endpoints",
+      "full_frequency_delta_inversion",
+      "zero_trace_piece",
+      "Nyquist_trace_piece",
+      "endpoint_polynomial_p_adic_roots",
+      "strict_prefix_suffix_survivor",
+      "selected_coordinate_boundary_weight",
+      "positive_negative_profiles_and_endpoints",
+      "N_M_V_d_c_power_ledger",
+      "source_theorem_trace_match",
+      "upper_capacity_vs_signed_sum",
+      "profile_bulk_and_downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "sign_adapted_cell_trace_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "report_complete",
+        "target": "Derive the exact sign-adapted prefix and suffix Abel trace with every outer endpoint, prove its full-frequency physical inversion, separately control the zero and Nyquist trace pieces, compute all p-adic endpoint roots, and attack the strict selected trace. Prove the target, a strict owner-complete range or subrow, or the first exact strict-prefix, sign, coefficient, endpoint, or restored-power obstruction.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round158_d1_paired_interior_cell_trace_strategy.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-d1-paired-interior-cell-trace-gate/barrier_packet.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-d1-paired-interior-cell-trace-gate/candidates/conductor_round158_cell_trace_seed.md",
+          "proofs/kernels/m9_m1_d1_nonzero_centering_nyquist_fold.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-d1-nonzero-theta-matrix-gate/reports/centered_nonzero_root_discrepancy_attack.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-d1-nonzero-theta-matrix-gate/reviews/conductor_round157_adjudication.md"
+        ],
+        "required_controls": [
+          "literal_paired_interior_trace",
+          "positive_prefix_negative_suffix_signs",
+          "all_Abel_outer_endpoints",
+          "full_frequency_delta_inversion",
+          "zero_trace_piece",
+          "Nyquist_trace_piece",
+          "endpoint_polynomial_p_adic_roots",
+          "strict_prefix_suffix_survivor",
+          "selected_coordinate_boundary_weight",
+          "positive_negative_profiles_and_endpoints",
+          "N_M_V_d_c_power_ledger",
+          "upper_capacity_vs_signed_sum",
+          "profile_bulk_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section analytic report.",
+          "Exact Abel, inversion, p-adic, selected-coordinate, and restored-power derivations.",
+          "A trace target, strict owner-complete range or subrow, or first rigorous obstruction.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-paired-interior-cell-trace-gate/reports/sign_adapted_cell_trace_attack.md"
+      },
+      {
+        "id": "blind_cell_trace_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "report_complete",
+        "target": "Independently derive the moving-cell trace from the literal paired interior matrix. Audit prefix versus suffix signs, outer endpoints, full-frequency inversion, removed-row trace pieces, endpoint polynomials, and any strict selected survivor. Prove the target, a strict range or subrow, or the first exact missing theorem.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-d1-paired-interior-cell-trace-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "all strategy files",
+          "all Round-158 nonblind artifacts",
+          "all Round-158 sibling reports"
+        ],
+        "required_controls": [
+          "literal_paired_interior_trace",
+          "positive_prefix_negative_suffix_signs",
+          "all_Abel_outer_endpoints",
+          "full_frequency_delta_inversion",
+          "zero_trace_piece",
+          "Nyquist_trace_piece",
+          "endpoint_polynomial_p_adic_roots",
+          "strict_prefix_suffix_survivor",
+          "selected_coordinate_boundary_weight",
+          "positive_negative_profiles_and_endpoints",
+          "N_M_V_d_c_power_ledger",
+          "upper_capacity_vs_signed_sum",
+          "profile_bulk_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section statement-only analytic report.",
+          "An independent exact trace normalization and feasibility derivation.",
+          "A target theorem, strict range or subrow, or first rigorous obstruction.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-paired-interior-cell-trace-gate/reports/blind_cell_trace_rederivation.md"
+      },
+      {
+        "id": "cell_trace_source_audit",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "status": "report_complete",
+        "target": "Audit primary incomplete quadratic, polynomial-character, fixed-modulus root, short character, theta, and spectral theorems against the exact boundary-frozen strict selected trace. Supply a source-legal target or strict range with full translation, or the first precise modulus, interval, coefficient, sign, prime-power, endpoint, spectral-piece, or restored-power mismatch.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round158_d1_paired_interior_cell_trace_strategy.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-d1-paired-interior-cell-trace-gate/barrier_packet.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-d1-paired-interior-cell-trace-gate/candidates/conductor_round158_cell_trace_seed.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-d1-nonzero-theta-matrix-gate/reports/nonzero_theta_matrix_source_audit.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-d1-nonzero-theta-matrix-gate/reviews/independent_source_round157.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/reports/quadratic_root_completion_source_audit.md"
+        ],
+        "required_controls": [
+          "literal_paired_interior_trace",
+          "full_frequency_delta_inversion",
+          "zero_trace_piece",
+          "Nyquist_trace_piece",
+          "endpoint_polynomial_p_adic_roots",
+          "strict_prefix_suffix_survivor",
+          "selected_coordinate_boundary_weight",
+          "positive_negative_profiles_and_endpoints",
+          "N_M_V_d_c_power_ledger",
+          "source_theorem_trace_match",
+          "upper_capacity_vs_signed_sum",
+          "profile_bulk_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section primary-source audit.",
+          "Exact theorem cards with modulus, interval, coefficient, sign, prime-power, endpoint, spectral, and translated-power hypotheses.",
+          "A source-legal target or strict range, or the first precise source-interface obstruction.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-paired-interior-cell-trace-gate/reports/cell_trace_source_audit.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "trace_Abel_signs_and_endpoints",
+        "requirement": "Positive prefix and negative suffix identities, moving atoms, and every outer endpoint are exact."
+      },
+      {
+        "id": "full_frequency_and_removed_rows",
+        "requirement": "Delta-mass inversion is normalized, and zero and Nyquist trace pieces are separately controlled."
+      },
+      {
+        "id": "endpoint_p_adic_and_strict_survivor",
+        "requirement": "All prime powers are checked and endpoint roots are not confused with strict prefixes or suffixes."
+      },
+      {
+        "id": "selected_coefficient_and_powers",
+        "requirement": "The literal boundary-frozen selected weight, signs, profiles, transitions, endpoints, and all N-M-V-d-c powers are restored."
+      },
+      {
+        "id": "source_capacity_and_downstream_scope",
+        "requirement": "Sources match the exact trace, capacities are not signed theorems, and no profile-bulk or broader owner is promoted."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "3acbfaf6fb95047babd19800dee4152fb60cb408197a8ceac93931a20c57491f",
+    "generated_at": "2026-08-25T07:27:12.325066+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

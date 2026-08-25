@@ -1,0 +1,237 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-lower-cone-t1-squarefree-gcd-lift-compression-reduction",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Exact squarefree lcm and gcd-lift compression with target-safe exact phase classes",
+        "status": "proved_internal",
+        "statement_tex": "Let R=X^(1/4), N=floor(X), DE asymp M<=R^2, D<=sqrt(M), Q=2sqrt(ND/E), and retain every exact Round-148 prefix. For squarefree d put d_o=d/(d,2). Summing the odd squarefree Mobius cells with lcm n gives C_d(n)=mu(u)mu(v) exactly for n=uv^2, u|d_o, mu^2(uv)=1, (v,d)=1, u,v odd, and zero otherwise; at odd p|d_o the exponent-two cells cancel and p=2 is absent. With the literal nonempty-progression indicator kappa_(d,U), write ell=gL, q=gq_0, (L,q_0)=1 and B_(d,U)(L)=sum_g C_d(gL)kappa_(d,U)(gL)/g. Then T=sum_d mu^2(d)(D/d)G_U(d), where G_U(d)=sum_((L,q_0)=1,q_0 asymp LQ) chi_4(Lq_0)B_(d,U)(L)W_(d,U)(L/q_0)e(NdL/q_0)/L. Uniformly for every finite prefix, sum_L |B_(d,U)(L)|^2/L+sum_L |B_(d,U)(L)|/L<<X^epsilon. The literal equal-cell energy is <<DQX^epsilon. Distinct exact N-alignments have energy <<DX^epsilon, and all exact phase classes including the literal diagonal have energy <<DQX^epsilon, hence are target-safe because Q<=R^2. The nonexact moving-coefficient near/generic energy and the RD scalar target remain open.",
+        "dependencies": [
+          "M9-M1-lower-cone-t1-squarefree-reciprocal-transform-reduction"
+        ],
+        "implies": [
+          "M9-M1-global-lower-radial-signed-estimate"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/reports/gcd_lift_euler_compression_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/reports/blind_compressed_energy_feasibility.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/reports/rational_energy_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/candidates/conductor_round149_gcd_lift_compression_and_energy_boundary.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/reviews/blind_conductor_round149_math_review_v2.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/reviews/source_conductor_round149_final.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/reviews/discovery_source_conductor_round149_review.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/reviews/conductor_round149_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/controls/conductor_round149_controls.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/reviews/blind_conductor_round149_math_review.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Prove the nonexact moving-coefficient near/generic correlation with the actual B_(d,U), profiles, prefixes, chi_4 signs, common divisors, and every aspect, or perform a complete Euler recombination that produces a source-legal signed family."
+      },
+      {
+        "id": "M9-M1-lower-cone-t1-squarefree-gcd-lift-energy-obstruction",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Moving-coefficient gcd-lift near-collision and fixed-vector source obstruction",
+        "status": "proved_internal",
+        "statement_tex": "After the exact gcd-lift compression, the prefix-uniform lift norm, literal DQ diagonal, every exact N-alignment, q_0|N, and the reduced-denominator stratum q_*=q_0/(q_0,N)<=R are target-safe. For two nonexact cells write q_(0,i)=hr_i, (r_1,r_2)=1, delta=L_1r_2-L_2r_1, and rho=Ndelta-khr_1r_2 with |rho|<=hr_1r_2/2. The first open collar is 0<|rho|<=hr_1r_2/D. Its d-kernel contains mu^2(d)B_(d,U)(L_1)conj(B_(d,U)(L_2)) and both moving profiles and exact prefixes. Montgomery--Vaughan's primal and dual large sieves require one common coefficient vector and do not apply verbatim. The audited squarefree-progression, inverse-square, Kloosterman-fraction, and partially fixed-modulus dispersion theorems have different coefficients, phases, averages, diagonals, separability, or ranges. Even an illegal fixed-vector unwrapped-spacing diagnostic has capacity Q(D+M)X^epsilon and loses sqrt(M) in energy. This is a source-applicability and proof-placement no-go, not a lower bound for the signed row and not an impossibility theorem for a coefficient-sensitive correlation or further exact recombination.",
+        "dependencies": [
+          "M9-M1-lower-cone-t1-squarefree-gcd-lift-compression-reduction",
+          "M9-M1-lower-cone-t1-squarefree-reciprocal-dispersion-obstruction",
+          "M9-M1-lower-cone-t1-squarefree-H-resonance-obstruction"
+        ],
+        "implies": [],
+        "blockers": [],
+        "source_card": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/reports/rational_energy_source_audit.md",
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/reports/gcd_lift_euler_compression_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/reports/blind_compressed_energy_feasibility.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/reports/rational_energy_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/candidates/conductor_round149_gcd_lift_compression_and_energy_boundary.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/reviews/blind_conductor_round149_math_review_v2.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/reviews/source_conductor_round149_final.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/reviews/discovery_source_conductor_round149_review.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/reviews/conductor_round149_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/controls/conductor_round149_controls.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Attack the literal nonzero rho collar before positive separation: linearize the d-dependence of both B coefficients and the exact prefix/profile, or prove a matrix-valued rational energy theorem retaining chi_4 and squarefree/coprime structure."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-lower-cone-t1-squarefree-reciprocal-transform-reduction",
+        "implies_added": [
+          "M9-M1-lower-cone-t1-squarefree-gcd-lift-compression-reduction"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/candidates/conductor_round149_gcd_lift_compression_and_energy_boundary.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/reviews/source_conductor_round149_final.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Use the exact gcd-lift-compressed row. Its coefficient norm, literal diagonal, exact phase classes, and small reduced denominators are owned; prove the remaining nonexact moving-coefficient near/generic correlation."
+      },
+      {
+        "id": "M9-M1-lower-cone-t1-squarefree-reciprocal-dispersion-obstruction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/reports/gcd_lift_euler_compression_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/reports/blind_compressed_energy_feasibility.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/candidates/conductor_round149_gcd_lift_compression_and_energy_boundary.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/reviews/conductor_round149_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Round 149 bypasses the factor-R unrecombined progression diagonal by exact lcm and gcd-lift compression. Park the old early-Cauchy placement; the first surviving reciprocal seam is now the nonexact moving-coefficient near/generic correlation."
+      },
+      {
+        "id": "M9-M1-lower-cone-t1-squarefree-H-resonance-obstruction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/reports/gcd_lift_euler_compression_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/reports/rational_energy_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/candidates/conductor_round149_gcd_lift_compression_and_energy_boundary.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The gcd-lift index L is cube-free and its exact prefix destroys a termwise Euler product; it is not the powerful H index. Reopen the H route only after complete Euler recombination and signed aggregation."
+      },
+      {
+        "id": "M9-M1-lower-cone-squarefree-linearization-obstruction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/reports/gcd_lift_euler_compression_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/reports/blind_compressed_energy_feasibility.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/reviews/conductor_round149_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The exact compressed coefficient displays how primes of d_o, excluded primes, and the prefix couple to each L. Any next linearization must preserve this moving arithmetic matrix through the near-collision sum."
+      },
+      {
+        "id": "M9-M1-global-lower-radial-signed-estimate",
+        "dependencies_added": [
+          "M9-M1-lower-cone-t1-squarefree-gcd-lift-compression-reduction",
+          "M9-M1-lower-cone-t1-squarefree-gcd-lift-energy-obstruction"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/reports/gcd_lift_euler_compression_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/reports/blind_compressed_energy_feasibility.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/reports/rational_energy_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/reviews/conductor_round149_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The first t=1 reciprocal seam is now the exact nonzero moving-coefficient near/generic correlation after target-safe compression, diagonal, exact-alignment, and small-denominator owners. Every t>=2 layer and the independent Round-138 cross owner remain open."
+      }
+    ],
+    "correct_rejected": [],
+    "reject": [
+      {
+        "id": "Round149-odd-d-is-required-for-the-lcm-collapse",
+        "reason": "Only alpha,b,ell,q and the gcd-lift variables are odd. For squarefree even d, the lcm coefficient depends on d_o=d/(d,2), and p=2 contributes no local factor."
+      },
+      {
+        "id": "Round149-p-dividing-d-can-occur-squared-in-the-lcm-coefficient",
+        "reason": "At every odd p|d_o, the two exponent-two Mobius cells have signs -1 and +1 and cancel exactly."
+      },
+      {
+        "id": "Round149-the-exact-prefix-must-be-smoothed-to-prove-the-lift-norm",
+        "reason": "The closed cube-free lift formula and absolute Euler majorants use only 0<=kappa<=1 and finite support; arbitrary irregular prefixes satisfy the same norm."
+      },
+      {
+        "id": "Round149-the-compressed-square-norm-alone-implies-the-joint-energy",
+        "reason": "The norm controls only the literal diagonal. The nonexact near/generic Gram matrix retains a genuinely d-dependent arithmetic coefficient and moving profile."
+      },
+      {
+        "id": "Round149-the-literal-diagonal-still-has-the-Round148-factor-R-loss",
+        "reason": "After exact lcm and gcd-lift compression, the literal diagonal is DQX^epsilon<=R^2DX^epsilon. The Round-148 loss was specific to unrecombined progression cells."
+      },
+      {
+        "id": "Round149-equality-of-reduced-cells-exhausts-exact-N-alignments",
+        "reason": "Distinct cells can have the same NL/q_0 phase modulo one. They are classified by common factors or reduced phase classes and are target-safe, not absent."
+      },
+      {
+        "id": "Round149-exact-N-alignments-are-the-first-energy-obstruction",
+        "reason": "The distinct exact off-diagonal is O(DX^epsilon), and all exact phase classes including the literal diagonal are O(DQX^epsilon). The first open sector is nonexact."
+      },
+      {
+        "id": "Round149-large-sieve-duality-allows-a-vector-varying-with-d",
+        "reason": "Montgomery--Vaughan Theorem 1 and its duality lemma retain one common coefficient vector. The literal B_(d,U) profile is a matrix, not that vector."
+      },
+      {
+        "id": "Round149-small-modulus-squarefree-progression-sources-reach-the-hard-sector",
+        "reason": "Their printed reduced-modulus ranges lie inside q_*<=D<=R, an elementary target-safe stratum, and their coefficients and averages also differ."
+      },
+      {
+        "id": "Round149-Bettin-Chandee-or-Wright-directly-matches-the-literal-Gram",
+        "reason": "Those theorems require independent sequences and inverse-fraction or fixed-residue convolution structure; the Round-149 coefficient is jointly determined by d,L,q_0,prefix and profile."
+      },
+      {
+        "id": "Round149-adverse-spacing-capacity-is-a-signed-lower-bound",
+        "reason": "The Q(D+M) and raw rational-spacing losses are upper capacities of illegal fixed-vector or positive-spacing placements, not lower bounds for the actual signed energy."
+      },
+      {
+        "id": "Round149-gcd-lift-compression-proves-t1-M1-or-the-exponent",
+        "reason": "The nonexact moving-row energy, signed t=1 scalar, every t>=2 layer, cross owner, remaining M1 and M2 owners, endpoint, M9, bridge, and quarter target remain open."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "Round 149 repairs one t=1 reciprocal diagonal and exact-alignment seam but does not estimate the remaining nonexact moving-row correlation or assemble the lower cone."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "No M2 hard-TOP, balanced, or unbalanced owner was treated."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "Prefix-uniform coefficient norms for one t=1 interface are not the all-owner endpoint theorem."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain open."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The bridge remains conditional on complete M9."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The strongest internally proved exponent remains one third."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "The separately audited external exponent remains (3292+25sqrt(1717))/13762."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The quarter target still lacks the moving-row t=1 correlation, all remaining M1 and M2 owners, endpoint uniformity, M9, and the final unconditional bridge."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 8,
+    "idea_quality_score": 9,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 149 derives and independently verifies an exact parity-correct lcm collapse, finite gcd-lift compression, closed coefficient formula, arbitrary-prefix square and weighted l1 norms, and target-safe bounds for the literal diagonal and every exact N-alignment. It audits the primary fixed-vector and dispersion interfaces and narrows the first open term to the nonexact moving-coefficient near/generic correlation without treating adverse capacities as signed lower bounds. The target energy, every strict range, and all downstream theorems remain open."
+  }
+}

@@ -1,0 +1,205 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "Bettin-Chandee-Wright-Kloosterman-source-audit",
+        "type": "source_audit",
+        "track": "source_audit",
+        "title": "Bettin--Chandee and Wright Kloosterman-fraction source audit",
+        "status": "proved_external_dependency",
+        "statement_tex": "Bettin--Chandee arXiv:1502.00769v1 Theorem 1, Remark 1, and Corollary 1 and Wright arXiv:2604.25177v2 Theorem 2.1 are source-audited. Bettin--Chandee Theorem 1 has arbitrary independent dyadic coefficients, (m,n)=1, phase e(vartheta a mbar/n), and one outer absolute value; its proof requires the source-safe reading vartheta in Z minus {0}, while Remark 1 permits the printed C1 phase perturbation. Corollary 1 is a fixed nonzero determinant asymptotic with its printed main term and error. Wright Theorem 2.1 has phase e(vartheta a mbar/(nR_0)), (m,nR_0)=1, M<<N^2, R_0<<M^C, arbitrary independent coefficients, and integral nonzero vartheta. Its printed third term has A^(-1/20), whereas the final proof line has the stronger A^(-3/10); the weaker printed theorem is accepted, and the common fifth term is decisive in the project maps. Wright Corollary 2.2 is a modulus sum of individual absolute discrepancies for a fixed nonzero coprime residue, divisor-bounded independent convolution coefficients, a Siegel--Walfisz sequence, a principal subtraction, and one of its printed size regions. Withdrawn arXiv:2601.00292 supplies no theorem.",
+        "dependencies": [],
+        "implies": [],
+        "blockers": [],
+        "source_card": "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/sources/bettin_chandee_wright_kloosterman.md",
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/sources/bettin_chandee_wright_kloosterman.md",
+            "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/reports/wright_bc_exact_source_card.md",
+            "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/reviews/source_post_unmask_discovery_formula_audit.md",
+            "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/reviews/conductor_round135_kloosterman_dispersion_adjudication.md",
+            "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use only the exact audited statements and their printed hypotheses. Keep the Wright third-term discrepancy explicit, do not use the withdrawn paper, and do not infer a signed fixed-centre coefficient-matrix theorem from the generic trilinear or dispersion results."
+      },
+      {
+        "id": "M9-M2-unbalanced-Kloosterman-dispersion-interface-obstruction",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Flat prescribed-centre Kloosterman-fraction and dispersion interface obstruction",
+        "status": "proved_internal",
+        "statement_tex": "Let R=X/D, K=XL/D^2, Delta=R/K=D/L, F=XK/R, and write every real centre X=N_0+xi. On a frozen flat-smooth strict-UNBAL packet, e(xi k/r) belongs to the uniformly smooth normalized tensor and has O(1) Fourier--Mellin projective mass, so every source phase may use integral N_0 without changing norms. The direct m=1 Bettin--Chandee bound is F^(1/2)(R^(11/10)K^(-3/20)+R), and the direct Wright bound is R^(11/8)F^(1/4); their exponent margins over Delta are respectively greater than 3/10, 1/4, and 5/16. On coprime rows, a=j^2 with j=m=k is an exact inverse connector; the diagonal m^(-1)1_(j=m) has sharp projective norm asymp 1, but the resulting Bettin--Chandee and Wright bounds again exceed Delta by fixed powers. Smooth-weight-first completion is Ramanujan or additive and, after every gcd stratum is restored, returns exactly Delta X^epsilon. Inverse-selector-first completion produces a joint rough coefficient times S(N_0,h;r) and positive cost R sqrt(Delta) X^epsilon. The physical shift has exact residue -N_0 but fails Wright's independent convolution, uniform coprimality, range, principal-term, and absolute-value hypotheses. Bettin--Chandee Corollary 1 accepts (m_1,n_2,m_2,n_1)=(d,r,1,N_0), but its main terms aggregate to Delta X^epsilon and its error per nonzero determinant is X^(3/5+epsilon)R^(17/20). Thus these published interfaces neither improve the accepted flat-wave envelope nor prove the quarter estimate. This is a scoped method obstruction, not a lower bound and not a no-go for a new chi_4-signed joint theorem.",
+        "dependencies": [
+          "Bettin-Chandee-Wright-Kloosterman-source-audit",
+          "M9-M2-unbalanced-truncated-divisor-fixed-centre-return",
+          "M9-M2-unbalanced-flat-wave-curvature-envelope",
+          "Divisor-bound-elementary"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/reports/wright_bc_exact_source_card.md",
+            "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/reports/literal_wave_kloosterman_map_attack.md",
+            "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/reports/blind_inverse_congruence_interface_audit.md",
+            "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/candidates/conductor_degenerate_source_capacity.md",
+            "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/reviews/source_post_unmask_discovery_formula_audit.md",
+            "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/reviews/discovery_post_unmask_blind_completion_audit.md",
+            "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/reviews/blind_post_unmask_source_and_capacity_audit.md",
+            "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/reviews/conductor_round135_kloosterman_dispersion_adjudication.md",
+            "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Park direct uses of the audited trilinear, completion, dispersion, and determinant statements. Reopen this packet only with a genuinely new theorem for the literal modulus-dependent coefficient matrix or fixed-centre chi_4-signed scalar that beats min(Delta,sqrt(XL/D)+sqrt(X/(LD))) before positive modulus norms."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-unbalanced-truncated-divisor-fixed-centre-return",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/reports/literal_wave_kloosterman_map_attack.md",
+            "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/reviews/conductor_round135_kloosterman_dispersion_adjudication.md",
+            "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/synthesis.md"
+          ]
+        },
+        "next_action": "The exact physical wave now has an audited standard-source interface ledger: smooth completion returns Delta, the rough inverse completion is worse, Wright dispersion mismatches, and the fixed-determinant error is too large. Reopen only for a new signed coefficient-matrix or fixed-centre theorem, not another direct use of these statements."
+      },
+      {
+        "id": "M9-M2-unbalanced-flat-wave-curvature-envelope",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/reviews/discovery_post_unmask_blind_completion_audit.md",
+            "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/reviews/conductor_round135_kloosterman_dispersion_adjudication.md",
+            "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/synthesis.md"
+          ]
+        },
+        "next_action": "The absolute branch Delta has an exact Ramanujan/additive completion, but every audited Kloosterman-fraction and determinant import is no better and none reaches the curvature branch. Any improvement must exploit the actual cross-modulus sign jointly rather than another scalar completion or source norm."
+      },
+      {
+        "id": "M9-M2-smooth-unbalanced-three-quarter-estimate",
+        "dependencies_added": [
+          "M9-M2-unbalanced-Kloosterman-dispersion-interface-obstruction"
+        ],
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/reviews/conductor_round135_kloosterman_dispersion_adjudication.md",
+            "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/synthesis.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/reports/wright_bc_exact_source_card.md",
+            "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/reports/literal_wave_kloosterman_map_attack.md",
+            "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/reports/blind_inverse_congruence_interface_audit.md"
+          ]
+        },
+        "next_action": "Both the universal positive-energy majorant surface and the standard physical Bettin--Chandee/Wright source-map surface are now parked. Reopen strict UNBAL only for a genuinely new joint chi_4-signed coefficient-matrix or pointwise fixed-centre theorem with a uniform fixed-power gain, or rotate to a distinct unresolved M2 owner after frontier selection."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round135-moving-profile-prevents-independent-source-separation",
+        "reason": "On the frozen flat cell, buffered log-Fourier separation of the complete profile has O(1) integrated projective mass."
+      },
+      {
+        "id": "Round135-real-centre-prevents-Wright-or-classical-completion",
+        "reason": "Writing X=N_0+xi and absorbing e(xi k/r) into the uniformly smooth coefficient tensor makes the source frequency integral for every real X."
+      },
+      {
+        "id": "Round135-ordinary-fraction-has-no-inverse-phase-encoding",
+        "reason": "The direct m=1 map is exact, and on coprime rows m^2 mbar is congruent to m modulo r."
+      },
+      {
+        "id": "Round135-square-diagonal-projective-cost-is-K",
+        "reason": "The diagonal matrix m^(-1)1_(j=m) has nuclear and sharp projective norm asymp 1, a factor K^(1/2) above the direct coefficient norm, not K."
+      },
+      {
+        "id": "Round135-smooth-weight-first-completion-is-Kloosterman",
+        "reason": "Inversion permutes the units, so the complete inverse-only inner sum is Ramanujan; without the coprime restriction it is an ordinary additive delta."
+      },
+      {
+        "id": "Round135-inverse-selector-first-has-smooth-bandwidth-Delta",
+        "reason": "The inversion permutation destroys ordinary Fourier smoothness; only Parseval control remains for the joint modulus-frequency coefficient."
+      },
+      {
+        "id": "Round135-all-completion-orders-cost-R-sqrt-Delta",
+        "reason": "Only inverse-selector-first positive closure has that diagnostic cost. Smooth-weight-first completion exactly returns Delta X^epsilon."
+      },
+      {
+        "id": "Round135-Delta-R19over20-is-the-sharp-completion-capacity",
+        "reason": "That scalar source bound is legal but redundant; exact Ramanujan or additive evaluation gives the smaller owner-complete Delta capacity."
+      },
+      {
+        "id": "Round135-shifted-physical-residue-is-nonintegral-or-modulus-dependent",
+        "reason": "The exact shifted residue is the fixed integer -N_0; the remaining convolution, coprimality, range, coefficient, and absolute-value mismatches are the true obstructions."
+      },
+      {
+        "id": "Round135-Wright-fixed-factor-can-be-the-growing-project-modulus",
+        "reason": "The direct source variable has M=1, so R_0<<M^C forces a bounded fixed factor, and the project modulus family has no common growing divisor."
+      },
+      {
+        "id": "Round135-Wright-dispersion-directly-estimates-the-fixed-centre-wave",
+        "reason": "The project lacks the required independent convolution, uniform coprimality, residue range, principal subtraction, and modulus-by-modulus absolute-discrepancy structure."
+      },
+      {
+        "id": "Round135-Bettin-Chandee-Corollary1-proves-the-quarter-target",
+        "reason": "Its main terms merely aggregate to Delta X^epsilon and its error per nonzero determinant is X^(3/5+epsilon)R^(17/20)."
+      },
+      {
+        "id": "Round135-source-interface-no-go-is-a-lower-bound-or-universal-barrier",
+        "reason": "The result only prices the audited published interfaces after positive norms; it neither proves the literal signed wave large nor rules out a new tailored joint theorem."
+      },
+      {
+        "id": "Round135-source-map-improves-the-global-exponent",
+        "reason": "No complete flat-UNBAL quarter estimate or downstream M9 dependency was proved."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "Round 135 concerns one flat-smooth M2 UNBAL packet and proves no M1 parent."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "The flat-smooth UNBAL target, all other UNBAL owners, BAL, and hard TOP remain open."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "The round excludes sharp, hard, transition, remainder, and all-owner endpoint packages."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain open."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The bridge remains conditional on the complete open M9 hypothesis."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The internally proved global exponent remains one third because no endpoint block estimate changed."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "The separately audited external exponent remains (3292+25sqrt(1717))/13762; Round 135 neither improves nor alters it."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The quarter target still lacks M9-M1, M9-M2, endpoint uniformity, M9, and the final unconditional bridge."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 135 obtains exact all-real-centre direct and square inverse dictionaries, a sharp diagonal norm, an exact Ramanujan equal-capacity completion, a distinct rough Kloosterman completion ledger, and a source-audited determinant map. It rigorously parks the named standard-source route while preserving the possibility of a new joint signed theorem. No quarter estimate or global exponent changes."
+  }
+}

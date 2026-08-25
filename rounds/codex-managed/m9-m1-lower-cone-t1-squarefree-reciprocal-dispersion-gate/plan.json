@@ -1,0 +1,23 @@
+{
+  "round_index": 148,
+  "campaign_id": "m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate",
+  "round_type": "m9_m1_lower_cone_t1_squarefree_reciprocal_dispersion_gate",
+  "status": "closed",
+  "starting_graph_sha256": "bb43abb1e0fbd719b18ebf91f4c7e477bf18e46e7b5225faaa88a7fb38d31352",
+  "objective": "Derive and estimate the exact signed one-sided squarefree reciprocal form before q-modulus, prove a target-safe range, or isolate the first exact dispersion obstruction.",
+  "tasks": [
+    "signed_squarefree_reciprocal_attack",
+    "blind_squarefree_reciprocal_feasibility",
+    "squarefree_progression_source_audit"
+  ],
+  "exit_labels": [
+    "squarefree_reciprocal_target",
+    "strict_signed_reciprocal_range",
+    "squarefree_reciprocal_dispersion_no_go"
+  ],
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

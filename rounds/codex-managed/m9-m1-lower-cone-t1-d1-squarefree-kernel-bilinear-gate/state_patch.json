@@ -1,0 +1,227 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-lower-cone-t1-d1-squarefree-mobius-collapse-obstruction",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Exact complete-Mobius recombination of the D=1 squarefree survivor",
+        "status": "proved_internal",
+        "statement_tex": "Let R=X^(1/4), N=floor(X), 1<<M<=R^2, J=M^(3/4), S=ceil(M^(1/4)), and let F_U(n)=1_(n odd)1_(|k(n)^2-Nn|>J)chi_4(n)n^(-3/4)A_U(n)e(sqrt(Nn)) retain the literal zero-extended actual profile, endpoints, nearest-integer convention, and strict mask. The Round-152 survivor satisfies P_U^*=sum_(s<S odd)sum_(tau odd)mu^2(tau)F_U(tau s^2). Complete inversion mu^2(tau)=sum_(a^2|tau)mu(a), tau=a^2b, and r=as give P_U^*=sum_(r odd)C_S(r)sum_(b odd)F_U(r^2b), where C_S(r)=sum_(a|r,r/a<S)mu(a). For r<S, C_S(r)=1_(r=1). For r>=S, |C_S(r)|<=d(r), r^2b asymp M, and the actual M^(-3/4) weight give an absolute boundary O_epsilon((M^(-1/4)+M^(1/4)/S)X^epsilon)=O_epsilon(X^epsilon). Hence P_U^*=sum_(b odd)F_U(b)+O_epsilon(X^epsilon)=P_U+O_epsilon(X^epsilon), using the accepted Round-152 exact-, small-defect-, and large-square-factor owners. Thus complete Mobius inversion followed by complete recombination self-returns to the original direct large-defect wave; the artificial a- and s-blocks are not independent owners. This does not rule out a future coefficient-sensitive signed bilinear theorem, gives no new range, and proves no downstream theorem or exponent.",
+        "dependencies": [
+          "M9-M1-lower-cone-t1-d1-square-root-wave-strict-range-reduction",
+          "M9-M1-lower-cone-t1-d1-square-root-wave-method-obstruction"
+        ],
+        "implies": [
+          "M9-M1-lower-cone-t1-squarefree-large-wrap-collar-obstruction",
+          "M9-M1-global-lower-radial-signed-estimate"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/reports/squarefree_mobius_bilinear_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/reports/blind_squarefree_kernel_typeii_feasibility.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/reports/squarefree_bilinear_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/candidates/conductor_round153_mobius_boundary_collapse.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/reviews/independent_round153_mobius_collapse_math_review.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/reviews/hostile_round153_bilinear_scope_review.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/reviews/source_conductor_round153_final.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/reviews/conductor_round153_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/controls/conductor_round153_controls.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Attack the returned direct large-defect wave below M^449 asymp R^780 in exact nearest-integer root/defect coordinates or by a genuinely coefficient-sensitive signed theorem; do not assign independent ownership to artificial Mobius blocks."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-lower-cone-t1-d1-square-root-wave-strict-range-reduction",
+        "implies_added": [
+          "M9-M1-lower-cone-t1-d1-squarefree-mobius-collapse-obstruction"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/candidates/conductor_round153_mobius_boundary_collapse.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/reviews/independent_round153_mobius_collapse_math_review.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/reviews/conductor_round153_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Below M^449 asymp R^780, the squarefree-Mobius expansion recombines to the direct large-defect wave. Attack that literal wave in exact root/defect coordinates or prove a coefficient-sensitive signed estimate; retain every Round-152 owner and endpoint."
+      },
+      {
+        "id": "M9-M1-lower-cone-t1-d1-square-root-wave-method-obstruction",
+        "implies_added": [
+          "M9-M1-lower-cone-t1-d1-squarefree-mobius-collapse-obstruction"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/reports/squarefree_mobius_bilinear_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/reports/blind_squarefree_kernel_typeii_feasibility.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/reports/squarefree_bilinear_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/reviews/hostile_round153_bilinear_scope_review.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/reviews/source_conductor_round153_final.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Do not iterate complete squarefree inversion as independent Type-I/Type-II owners. Seek a non-self-returning signed mechanism for the direct large-defect wave, preserving the actual profile and mask."
+      },
+      {
+        "id": "M9-M1-lower-cone-t1-squarefree-large-wrap-collar-obstruction",
+        "statement_tex": "Round 151 leaves a low-two-adic h|g recovery fibre outside its recombined row corridors; for D>1 this coefficient-sensitive collar and the generic complement remain open. At D=d=L=1 the boundary-complete transform gives the actual square-root wave P_U. Round 152 proves the strict range M^449>>R^780 and the exact decomposition P_U=P_U^*+O_epsilon(X^epsilon), with exact squares, small nonzero defects, and large square factors target-safe. Round 153 proves that complete squarefree Mobius inversion of P_U^*, followed by r=as recombination, has coefficient C_S(r)=sum_(a|r,r/a<S)mu(a), equals 1_(r=1) for r<S, and has an O_epsilon(X^epsilon) r>=S boundary. It therefore returns the direct large-defect wave and supplies no independent Type-I/Type-II owner or new range. The s=1 layer and the full direct large-defect wave remain open below M^449 asymp R^780. This is a scoped proof frontier, not a lower bound or an impossibility theorem for future signed methods.",
+        "dependencies_added": [
+          "M9-M1-lower-cone-t1-d1-squarefree-mobius-collapse-obstruction"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/reports/squarefree_mobius_bilinear_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/reports/blind_squarefree_kernel_typeii_feasibility.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/reports/squarefree_bilinear_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/candidates/conductor_round153_mobius_boundary_collapse.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/reviews/independent_round153_mobius_collapse_math_review.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/reviews/hostile_round153_bilinear_scope_review.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/reviews/source_conductor_round153_final.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/reviews/conductor_round153_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/controls/conductor_round153_controls.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/synthesis.md"
+          ]
+        },
+        "next_action": "At D=L=1 attack the returned direct large-defect wave below M^449 asymp R^780 through exact root/defect coordinates or another signed mechanism. At D>1 retain the h|g-dependent row; do not transfer the D=1 collapse without proof."
+      },
+      {
+        "id": "M9-M1-global-lower-radial-signed-estimate",
+        "dependencies_added": [
+          "M9-M1-lower-cone-t1-d1-squarefree-mobius-collapse-obstruction"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/candidates/conductor_round153_mobius_boundary_collapse.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/reviews/conductor_round153_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The D=L=1 squarefree-Mobius route now exactly self-returns below the strict boundary. Prove its direct large-defect wave, the D>1 and L>1 lower-cone owners, generic t=1, every t>=2 layer, and the independent cross owner before global lower-radial assembly."
+      }
+    ],
+    "correct_rejected": [],
+    "reject": [
+      {
+        "id": "Round153-complete-squarefree-inversion-automatically-creates-an-independent-TypeI-TypeII-saving",
+        "reason": "Exact r=as recombination gives C_S(r)=1_(r=1) for r<S and an absolutely safe r>=S boundary, so the complete expansion returns the direct wave rather than creating independent saved blocks."
+      },
+      {
+        "id": "Round153-dyadic-a-or-s-blocks-are-independent-proof-owners",
+        "reason": "For 1<r<S the required cancellation occurs between different a- and s-preimages of the same r; separate ownership destroys this exact divisor sum."
+      },
+      {
+        "id": "Round153-a1-or-s1-may-be-discarded-before-a-signed-estimate",
+        "reason": "The compulsory a=s=1 seam has coefficient one and is exactly the returned direct large-defect wave."
+      },
+      {
+        "id": "Round153-positive-Cauchy-diagonal-or-capacity-is-a-signed-lower-bound",
+        "reason": "The diagonal and pigeonhole quantities are upper capacities for coefficient-blind majorants; surviving Mobius and chi_4 signs can cancel."
+      },
+      {
+        "id": "Round153-Round152-small-defect-owner-licenses-mask-deletion-inside-a-correlation",
+        "reason": "Round 152 permits scalar-level removal before Cauchy, with divisor-bounded expanded multiplicity, but deleting summands inside a signed masked correlation is invalid."
+      },
+      {
+        "id": "Round153-all-exponent-pairs-satisfy-lambda-minus-kappa-at-least-one-half",
+        "reason": "For the relevant pair (195/796,235/398), lambda-kappa=275/796<1/2."
+      },
+      {
+        "id": "Round153-relevant-TypeI-A-exponent-is-nonpositive",
+        "reason": "For the relevant pair, 1-2lambda+2kappa=123/398>0, and absolute s-block summation gives (AS_0)^(123/398)."
+      },
+      {
+        "id": "Round153-R-over-As-is-a-literal-fixed-q-fibre-bound",
+        "reason": "That figure grants quadratic spacing to all ambient B points; a literal fixed-q fibre has only O(sqrt(B/q)+1) points."
+      },
+      {
+        "id": "Round153-ambient-pigeonhole-capacity-is-unavoidable-for-the-actual-weighted-correlation",
+        "reason": "The literal profile and mask may vanish on ambient points and depend on the expansion variables, so ambient capacity does not force actual signed occupancy."
+      },
+      {
+        "id": "Round153-zero-square-product-fibre-is-the-removed-exact-square-ray",
+        "reason": "The equality a_1^2b_1=a_2^2b_2 parametrizes a product fibre that is not generally an exact Nn square and must retain its Mobius coefficient."
+      },
+      {
+        "id": "Round153-Robert-Sargos-Theorem1-directly-matches-the-literal-profile-and-mask",
+        "reason": "The actual A_U(a^2bs^2) and defect mask couple the separated source variables; no direct theorem specialization exists."
+      },
+      {
+        "id": "Round153-primary-source-no-match-proves-literature-or-method-impossibility",
+        "reason": "The audit covers a specified corpus and direct translations only; it neither rules out other sources nor a new signed argument."
+      },
+      {
+        "id": "Round153-Robert-Sargos-upper-bound-term-is-a-lower-bound-for-the-signed-sum",
+        "reason": "R^(1/2)M^(-1/4) is the size of a positive term on the printed upper-bound right-hand side, not a lower bound for the actual sum."
+      },
+      {
+        "id": "Round153-r-ge-S-Mobius-boundary-obstructs-the-target",
+        "reason": "Its complete actual-weight absolute mass is O_epsilon((M^(-1/4)+M^(1/4)/S)X^epsilon)=O_epsilon(X^epsilon)."
+      },
+      {
+        "id": "Round153-exact-Mobius-collapse-rules-out-a-future-coefficient-sensitive-signed-bilinear-theorem",
+        "reason": "The collapse only shows what happens after complete recombination; a signed cross-block theorem remains logically possible and would also prove the direct wave."
+      },
+      {
+        "id": "Round153-an-s1-layer-estimate-alone-proves-the-complete-Pstar-survivor",
+        "reason": "The s=1 layer is compulsory and useful, but the remaining 1<s<S layers require their own owner unless a complete signed argument treats them."
+      },
+      {
+        "id": "Round153-Mobius-collapse-proves-a-new-range-full-M1-or-a-global-exponent",
+        "reason": "The exact identity gives no estimate for the returned direct wave below M^449 asymp R^780 and treats only one D=d=L=1, t=1 route."
+      },
+      {
+        "id": "Round153-D1-collapse-transfers-to-Dgreater1-Lgreater1-generic-tge2-cross-or-M2",
+        "reason": "Those owners have distinct coefficients, fibres, profiles, and endpoint interfaces and were not part of the Round-153 identity."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "Round 153 proves a scoped self-return for one D=L=1 route, not either complete M1 parent."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "No M2 hard-TOP, balanced, or unbalanced owner was treated."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "The literal D=L=1 endpoints are retained, but no all-owner uniform endpoint theorem is proved."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain open."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The bridge remains conditional on complete M9."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The strongest internally proved global exponent remains one third."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "The separately audited external exponent remains (3292+25sqrt(1717))/13762."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The quarter target still lacks the direct large-defect wave below the strict boundary, D>1 and L>1 lower-cone owners, generic t=1, every t>=2 layer, the cross owner, remaining M1 and all M2 owners, endpoint uniformity, M9, and the unconditional bridge."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 8,
+    "idea_quality_score": 9,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 153 proves an exact all-scale algebraic self-collapse for the proposed complete squarefree-Mobius route, reconciles the mask and compulsory short-divisor seams, corrects the bilinear power and spacing interpretations, and source-audits the closest direct theorems. It prevents false block ownership but gives no estimate or new range for the returned direct wave."
+  }
+}

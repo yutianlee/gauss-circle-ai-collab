@@ -2,50 +2,120 @@
 
 ## Round and graph
 
-- Round: 130
-- Campaign: `gc-w7-16-post-inner-outer-bilinear-gate`
+- Round: 163
+- Campaign: m9-m2-hard-top-t1-near-square-divisor-involution-gate
 - Starting graph:
-  `354f5ca462467d091a9a50c8dbc1173ffba56516963274f9fc232ea11890d20e`
+  700182f4dcf805e7f5ae74ca8ac49e88e4025471d9def1746a832c45fb6d2358
 - Resulting graph:
-  `23e7bfacbf6abc5582769fbe8d427cbca2379e1d265b99df21d93a65ec504825`
+  81690ebb72b0dedd99bdb6c6127f947df696a901a22af3f65ac8738209125306
+- Terminal label: strict_t1_prime_toggle_sector
 
 ## Promoted mathematics
 
-1. On shell $b'\asymp B$, exact Stieltjes-recombined complete-lift support
-   gives $g\asymp D/B$, $|a'|\asymp LB/D$, and $\#a'\ll LB/D$.
-2. The Round-129 inner theorem and outer Cauchy therefore give
-   $|\mathfrak O_{i,B}^{+}|\ll_\varepsilon BK_BY^\varepsilon$.  Lower
-   shells gain $B/D$, but the top remains $Y^{35/48}$.
-3. The resolved energy is $\mathbf1^*H^*H\mathbf1$, equivalently
-   $b^*K_{B,+}^*K_{B,+}b$ after physical reassembly.  The full symmetric
-   completion $b^*G^2b$ is a different positive object.
-4. For a fixed primitive top-shell outer ray, the chart
-   $n=aq-bp$ has $O(1)$ $p$-multiplicity on physical support of span
-   $O(|a|)$.  This removes independent-$p$ counting but proves no residue
-   cancellation.
-5. Full auxiliary inversion restores the all-owner original product wave;
-   product-window and unit-Hessian positive-norm continuations return
-   capacities worse than the accepted theorem.
+For every fixed \(\kappa>0\) and supported squarefree \(N\), select
+canonically at most one pair of distinct odd prime factors \(p,q\) with
 
-## Remaining gap
+\[
+ \chi_4(pq)=-1,\qquad |\log(q/p)|\leq\kappa L^{-1/2},
+\]
 
-The complete fixed block remains $Y^{35/48+\varepsilon}$ against target
-$Y^{1/2+\varepsilon}$, leaving $Y^{11/48}$.  The sole graded residual is
-the literal signed bounded-lift $B\asymp D$ scalar.  No global exponent or
-M9 parent changes.
+using \((N,L,\kappa)\) but not the divisor allocation.  On the complete
+incidence set where exactly one selected prime belongs to the odd
+character-bearing divisor \(d\), exchanging \(p\) and \(q\) between
+\(d\) and \(N/d\) is integral, fixed-point-free, and multiplicity one.
+It preserves \(N\), squarefreeness, coprimality, parity, the even-\(N\)
+branch, normalization, shell, and \(e(J\sqrt N)\), and reverses
+\(\chi_4(d)\).
+
+With the literal amplitude extended by zero, exact pairing gives
+
+\[
+ \sum_d\chi_4(d)A_N(d)
+ =
+ \frac12\sum_d\chi_4(d)\{A_N(d)-A_N(T_Nd)\}.
+\]
+
+The close-prime condition moves a divisor by \(O_\kappa(\sqrt L)\).
+On common smooth cells, accepted ordinary profile derivatives yield
+\(O_\kappa(L^{-1/2})\) amplitude difference.  The ambient incidence
+count is \(O(L^2)\).  Every cone, dyadic, profile, endpoint, star,
+ceiling, and zero-extension crossing belongs to finitely many lattice
+collars with \(O_\kappa(L^{3/2}+L)\) points.  Therefore
+
+\[
+ \boxed{|\mathcal S_{L,1}^{\mathrm{cp}}|
+ \ll_\kappa L^{3/2}}
+\]
+
+uniformly in the real centre.
+
+## Qualified route obstruction
+
+A single \(p\equiv3\pmod4\) toggle cannot keep both legs in the
+multiplicative-width-two window.  Normalized averaging over all such
+toggles or any family of full divisor-lattice sign-reversing involutions
+returns the original coefficient.  General exchange matching requires
+equal character-sign counts, while cycles only rewrite profile gradients
+and unmatched terms.  Odd and even complementary divisors enter excluded
+lower intervals, and full-divisor character vanishing leaves an
+uncontrolled profiled complement.
+
+These are route facts, not a physical lower bound and not a theorem that
+all future divisor or cross-product mechanisms fail.
+
+## Remaining gap and scope
+
+No eligible-pair density, per-block nonemptiness, positive proportion, or
+complement estimate is proved.  The exact first survivor is
+
+\[
+ \mathcal S_{L,1}^{\mathrm{rem}}
+ =\mathcal S_{L,1}-\mathcal S_{L,1}^{\mathrm{cp}},
+\]
+
+containing every no-pair product and every neither-prime and both-prime
+incidence.  Its literal profiles, parity, boundaries, floors, stars,
+endpoints, zero extension, and arbitrary-real-centre phase remain open.
+
+Even a complete residual target estimate would leave the
+\(L\ll D\ll L^2,\ t\ll\sqrt L\) few-point channels.  Hard TOP, BAL,
+UNBAL, M9--M2, M9--M1, endpoint uniformity, M9, the bridge, and the
+quarter theorem are unchanged and open.
+
+The strongest internally proved global exponent remains \(1/3\).  The
+audited external benchmark remains
+\(0.3144831759740614\ldots\).
+
+## State mutation
+
+The validated State Patch applied:
+
+- 1 obligation creation;
+- 2 obligation updates;
+- 0 rejected-claim corrections;
+- 16 fresh rejected-inference records; and
+- 19 explicit no-change decisions.
+
+Both updated hard-TOP parents remain open and receive only a dependency
+and inconclusive evidence.  The accepted proof draft was updated only
+after graph mutation.
 
 ## Validation
 
-- Three seven-section reports, three independent post-report reviews, a
-  conductor candidate, conductor adjudication, controls, and synthesis
-  completed.
-- Campaign status `complete` validates.
-- The State Patch applied 3 creates, 4 updates, 8 rejects, and 7 no-change
-  decisions; the patched graph validates.
-- Six of six unit tests pass and bytecode compilation succeeds.
-- All campaign artifacts are strict UTF-8 with no forbidden control,
-  replacement, trailing-whitespace, or conflict-marker defect.
-- All JSON-backed state and campaign files parse.
-- `git diff --check` succeeds with line-ending warnings only.
-- Analytical allocation was 100 percent; no numerical experiment or
-  external theorem import was used.
+- Three primary reports, conductor reproduction, statement-only
+  post-unmask review, profile/boundary/power review, downstream graph
+  review, conductor adjudication, and terminal State Patch review certify
+  the scoped result.
+- Dry and applied patch validation, graph validation, and completed
+  campaign validation pass.
+- Seven structured JSON/YAML files parse, Python compilation passes, and
+  all 6 unit tests pass.
+- All 20 campaign, kernel, and strategy Markdown files generate MathJax
+  previews.
+- The 20 files contain 160 per-file-unique equation tags, 232 balanced
+  display pairs, zero double-dollar tokens, and no byte, whitespace,
+  delimiter, or duplicate-tag issue.
+- Git diff check passes with line-ending conversion notices only.
+
+Full evidence is under
+rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/.

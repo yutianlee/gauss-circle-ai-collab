@@ -1,0 +1,231 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 154,
+    "round_type": "m9_m1_lower_cone_t1_d1_large_defect_root_dispersion_gate",
+    "campaign_id": "m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate",
+    "title": "M1 D=1 large-defect root-dispersion gate",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "6a36e4063b8f944bf5349c333e6cbf569694c8bdbeaa6314cad596631c125984",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "planned_numerical_percent": 0,
+      "literature_policy": "Audit current primary incomplete quadratic Gauss, Salie or Kloosterman, quadratic-congruence-root large-sieve, modular-parabola, sparse-root, and quotient-character sources only against the exact k-j object. Record theorem numbers, modulus and gcd hypotheses, interval lengths, coefficient class, averaging, weights, endpoints, complete and incomplete terms, exceptional cases, and every translated R-M-J-K-N power."
+    },
+    "target_obligations": [
+      "M9-M1-lower-cone-t1-d1-squarefree-mobius-collapse-obstruction",
+      "M9-M1-lower-cone-t1-d1-square-root-wave-strict-range-reduction",
+      "M9-M1-lower-cone-t1-d1-square-root-wave-method-obstruction",
+      "M9-M1-lower-cone-t1-squarefree-large-wrap-collar-obstruction",
+      "M9-M1-global-lower-radial-signed-estimate"
+    ],
+    "frozen_target": {
+      "question": "For the exact D=d=L=1 direct large-defect wave below M^449 asymp R^780, can the nearest-integer root coordinate j=k^2-Nn, its sparse quadratic congruence, quotient chi_4 character, and a cancellation-preserving completion or dispersion prove the X^epsilon target or a strict owner-complete range; if not, what is the first exact Gauss, root-spacing, completion, quotient-profile, diagonal, endpoint, source, or power obstruction?",
+      "reference_formula": "Let R=X^(1/4), N=floor(X), J=M^(3/4), 1<<M<=R^2, k(n)=floor(sqrt(Nn)+1/2), and Q_U=sum_(n>0 odd,|k(n)^2-Nn|>J)chi_4(n)n^(-3/4)A_U(n)e(sqrt(Nn)). With j=k^2-Nn, the exact cell is -k<=j<=k-1, n=(k^2-j)/N is a positive odd quotient, and e(sqrt(Nn))=e(-j/(k+sqrt(k^2-j))). The exact arithmetic selector is 1_(N|t)chi_4(t/N)=(-i/(2N))sum_(h mod 4N,h odd)chi_4(h)e(ht/(4N)).",
+      "quantities": [
+        "Retain the literal actual profile, zero extension, support components, endpoints, transitions, strict large-defect mask, nearest-integer convention, and external B_(1,U)(1) seam.",
+        "Prove and use the exact cell -k<=j<=k-1, not an asymptotic replacement, and keep both signs and every dyadic defect range J<|j|<=k.",
+        "Record k asymp sqrt(NM), its incomplete interval length, 2k<N only with fixed-dilate constants and sufficiently large X, and the exact injectivity or multiplicity of n to k.",
+        "Keep N|(k^2-j), odd quotient, chi_4((k^2-j)/N), and every modulo 2N and 4N parity condition. Do not assume N odd or squarefree.",
+        "If Fourier completion is used, retain every odd h mod 4N, its chi_4 sign, all gcd(h,4N) factors, two-adic cases, complete Gauss terms, incomplete remainders, and outer h and j summations.",
+        "The exact phase is e(-j/(k+sqrt(k^2-j))); no Taylor truncation is licensed uniformly when |j| is comparable to k without a proved error owner.",
+        "Round-152 exact and small-defect sectors may be removed at scalar level before Cauchy but never by deleting a mask inside a correlation.",
+        "Raw pair count, actual M^(-3/4) weighted capacity, and the signed chi_4 mass are separate objects.",
+        "A bound for one root, one h, one j-block, or one complete Gauss sum is not a complete estimate until every outer variable, endpoint, profile, and imprimitive factor is restored.",
+        "The D>1 recovery fibre, L>1 rows, growing-M generic t=1 sector, every original t>=2 layer, the Round-138 cross owner, and every M2 or downstream interface remain separate."
+      ]
+    },
+    "completion_criteria": [
+      "Write and verify the exact bijection between the literal n-sum and the k-j root-defect sum, including no ties, both cell endpoints, converse, positivity, parity, support, injectivity, and unique residue in the cell.",
+      "Derive and verify the exact modulo-4N Fourier encoding of divisibility and the quotient chi_4 character for every parity and factorization of N.",
+      "Produce a complete K-J-N-h power and multiplicity ledger for direct root dispersion, quadratic completion, Gauss evaluation, Poisson, Cauchy, and every dyadic defect range.",
+      "Classify all diagonals, exact phase or congruence collisions, near collisions, imprimitive gcd strata, two-adic cases, completion boundaries, and positive versus negative defect branches before claiming a gain.",
+      "Prove |Q_U|<<X^epsilon, isolate a strict owner-complete range, or establish the first exact completion, Gauss, root-spacing, quotient-profile, source-hypothesis, endpoint, diagonal, or power obstruction.",
+      "Source-audit every imported quadratic Gauss, Salie/Kloosterman, modular-root, sparse-root, square-modulus large-sieve, or quotient-character theorem against the literal expanded sum.",
+      "Independently review the exact coordinate, modulo-4N normalization, every R-M-J-K-N-h power, mask order, endpoint, and downstream scope.",
+      "Close under exactly one label: large_defect_root_dispersion_target, strict_large_defect_root_range, or large_defect_root_dispersion_no_go."
+    ],
+    "controls": [
+      "literal_direct_large_defect_wave",
+      "owned_range_and_mask_order",
+      "exact_root_defect_bijection",
+      "nearest_cell_endpoints_and_converse",
+      "support_injectivity_and_unique_residue",
+      "mod4N_quotient_character_completion",
+      "all_parity_two_adic_imprimitive_Gauss",
+      "positive_negative_and_dyadic_defects",
+      "K_J_N_h_power_ledger",
+      "actual_profile_endpoints_and_B11",
+      "Cauchy_diagonal_and_collision_survival",
+      "completion_remainder_and_outer_sums",
+      "source_theorem_quadratic_root_match",
+      "absolute_capacity_vs_signed_sum",
+      "D_L_generic_tge2_cross_and_downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "large_defect_root_dispersion_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "assigned",
+        "target": "Starting from the exact k-j seed, attack the literal direct large-defect wave through sparse quadratic-root geometry, modulo-4N character completion, incomplete quadratic Gauss sums, Poisson, dispersion, or another signed mechanism. Exhaust positive and negative j, dyadic ranges, imprimitive gcd and two-adic cases, every outer sum, actual profile and endpoint, and every Cauchy diagonal. Prove the target, a strict owner-complete range, or the first exact completion, Gauss, spacing, profile, diagonal, endpoint, or all-scale no-go.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round154_d1_large_defect_root_dispersion_strategy.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/barrier_packet.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/candidates/conductor_round154_exact_root_defect_reparametrization.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/reviews/conductor_round153_adjudication.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/controls/conductor_round153_controls.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/candidates/conductor_round152_square_root_wave_reduction.md"
+        ],
+        "required_controls": [
+          "literal_direct_large_defect_wave",
+          "owned_range_and_mask_order",
+          "exact_root_defect_bijection",
+          "nearest_cell_endpoints_and_converse",
+          "support_injectivity_and_unique_residue",
+          "mod4N_quotient_character_completion",
+          "all_parity_two_adic_imprimitive_Gauss",
+          "positive_negative_and_dyadic_defects",
+          "K_J_N_h_power_ledger",
+          "actual_profile_endpoints_and_B11",
+          "Cauchy_diagonal_and_collision_survival",
+          "completion_remainder_and_outer_sums",
+          "absolute_capacity_vs_signed_sum",
+          "D_L_generic_tge2_cross_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section analytic report.",
+          "The exact k-j and modulo-4N formulas plus a complete K-J-N-h and endpoint ledger.",
+          "A target proof, strict owner-complete range, or first rigorous completion, Gauss, root-spacing, quotient-profile, diagonal, endpoint, or power obstruction.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/reports/large_defect_root_dispersion_attack.md"
+      },
+      {
+        "id": "blind_quadratic_root_wave_feasibility",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "assigned",
+        "target": "Independently rederive the nearest-root defect coordinate and decide whether the literal large-defect wave admits a uniform quadratic completion or dispersion proof. Derive every cell, parity, character, support, injectivity, Gauss, diagonal, outer-sum, endpoint, and capacity seam without claimant context.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "all strategy files",
+          "all Round-152 through Round-154 nonblind artifacts",
+          "all Round-154 sibling reports"
+        ],
+        "required_controls": [
+          "literal_direct_large_defect_wave",
+          "owned_range_and_mask_order",
+          "exact_root_defect_bijection",
+          "nearest_cell_endpoints_and_converse",
+          "support_injectivity_and_unique_residue",
+          "mod4N_quotient_character_completion",
+          "all_parity_two_adic_imprimitive_Gauss",
+          "positive_negative_and_dyadic_defects",
+          "K_J_N_h_power_ledger",
+          "actual_profile_endpoints_and_B11",
+          "Cauchy_diagonal_and_collision_survival",
+          "completion_remainder_and_outer_sums",
+          "absolute_capacity_vs_signed_sum",
+          "D_L_generic_tge2_cross_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section statement-only analytic report.",
+          "An exact theorem, strict range, or first rigorous completion, root-spacing, diagonal, endpoint, or capacity obstruction.",
+          "A complete K-J-N-h, parity, gcd, and endpoint ledger with no numerical certification.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/reports/blind_quadratic_root_wave_feasibility.md"
+      },
+      {
+        "id": "quadratic_root_completion_source_audit",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "status": "assigned",
+        "target": "Audit current primary incomplete quadratic Gauss, Salie or Kloosterman, quadratic-congruence-root large-sieve, modular-parabola, sparse-root, square-modulus, and quotient-character theorems against the exact k-j wave. Supply a source-legal target or strict range with complete translation, or the first precise modulus, gcd, coefficient, averaging, interval, weight, mask, endpoint, exceptional-term, or power mismatch.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round154_d1_large_defect_root_dispersion_strategy.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/barrier_packet.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/candidates/conductor_round154_exact_root_defect_reparametrization.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/reports/squarefree_bilinear_source_audit.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/reviews/source_conductor_round153_final.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/reviews/source_conductor_round152_final.md"
+        ],
+        "required_controls": [
+          "literal_direct_large_defect_wave",
+          "owned_range_and_mask_order",
+          "exact_root_defect_bijection",
+          "nearest_cell_endpoints_and_converse",
+          "support_injectivity_and_unique_residue",
+          "mod4N_quotient_character_completion",
+          "all_parity_two_adic_imprimitive_Gauss",
+          "positive_negative_and_dyadic_defects",
+          "K_J_N_h_power_ledger",
+          "actual_profile_endpoints_and_B11",
+          "Cauchy_diagonal_and_collision_survival",
+          "completion_remainder_and_outer_sums",
+          "source_theorem_quadratic_root_match",
+          "absolute_capacity_vs_signed_sum",
+          "D_L_generic_tge2_cross_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section primary-source audit.",
+          "Exact theorem cards with modulus, gcd, coefficient, interval, average, weights, endpoints, exceptional terms, and translated powers.",
+          "A source-legal target or strict range, or the first precise source and power obstruction.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/reports/quadratic_root_completion_source_audit.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "literal_wave_and_owned_masks",
+        "requirement": "The exact direct large-defect wave retains chi_4, actual profile, zero extension, strict mask, endpoints, B_(1,U)(1), and every prior owner exclusion in a lawful order."
+      },
+      {
+        "id": "root_defect_bijection",
+        "requirement": "No ties, both cell endpoints, the converse, positivity, quotient parity, support length, injectivity, and unique congruence representative are exact for all N."
+      },
+      {
+        "id": "character_completion_and_Gauss",
+        "requirement": "The modulo-4N normalization, sign, odd h family, two-adic cases, imprimitive gcd factors, complete Gauss evaluations, and incomplete remainders are all retained."
+      },
+      {
+        "id": "outer_sums_diagonals_and_powers",
+        "requirement": "Every j-sign and dyadic range, h and k outer sum, Cauchy diagonal, collision, near collision, completion boundary, actual weight, and R-M-J-K-N-h power is priced."
+      },
+      {
+        "id": "source_profile_and_endpoint",
+        "requirement": "Every external theorem matches the literal coefficient, quadratic or root phase, modulus, interval, averaging, gcd, actual profile, cell, mask, endpoint, and uniformity hypotheses."
+      },
+      {
+        "id": "capacity_and_downstream_scope",
+        "requirement": "Root counts, Gauss bounds, capacities, and theorem RHS terms are not signed lower bounds, and no broader owner or exponent is promoted without proof."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "6a36e4063b8f944bf5349c333e6cbf569694c8bdbeaa6314cad596631c125984",
+    "generated_at": "2026-08-25T02:14:51.344668+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

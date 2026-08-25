@@ -1,0 +1,248 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "Level-four-Kuznetsov-matrix-source-audit",
+        "type": "source_audit",
+        "track": "source_audit",
+        "title": "Odd-character level-four/eight Kuznetsov and joint-matrix source audit",
+        "status": "proved_external_dependency",
+        "statement_tex": "Kiral--Young arXiv:1710.00914 Theorem 2.7 and (2.20) assume an even character in a weight-zero setting and do not certify chi_4 or a weight-one switched-cusp trace formula. Blomer--Milicevic arXiv:1410.4538 equation (2.3), at q=q_1=4, gives sum_(n odd) chi_4(n)S(N_0,h;n)omega(n)=chi_4(M_0)/tau(chi_4) times the level-4 sum minus the level-8 sum of S_chi4(M_0,16uh;C)omega(C/4), where u=2^v_2(N_0), M_0=N_0/u, and tau(chi_4)=2i. Its legal parity is kappa=1 and its same-sign spectral ledger is H+M+E: odd holomorphic weights at least 3, all weight-one Maass parameters including exceptional and t=0 if present, and Eisenstein terms over every singular cusp. Level 4 has singular cusps infinity and 0 and no proper-level oldspace for primitive conductor four; level 8 has four singular cusps and level-4 oldclasses. The printed fixed-argument Linnik estimate requires one fixed arithmetic weight, one fixed compact smooth test, positive indices, and mn at most the squared modulus scale. Deshouillers--Iwaniec requires a fixed cusp and one common sequence in its spectral large sieves; Assing--Blomer--Li permits one sequence times a jointly smooth two-variable test under explicit support, derivative, coprimality, and scale hypotheses, but contains neither the chi_4 modulus twist nor the level-4/8 encoding. None of these audited statements accepts the project's literal joint modulus-frequency matrix with an owner-saving norm supplied by the frozen controls.",
+        "dependencies": [],
+        "implies": [],
+        "blockers": [],
+        "source_card": "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/reports/kuznetsov_source_hypothesis_audit.md",
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/reports/kuznetsov_source_hypothesis_audit.md",
+            "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/reviews/blind_post_unmask_source_hypothesis_audit.md",
+            "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/reviews/source_post_unmask_spectral_claims_audit.md",
+            "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/candidates/conductor_round143_level_four_matrix_obstruction.md",
+            "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/reviews/source_conductor_candidate_final_audit.md",
+            "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/reviews/source_conductor_candidate_final_green.md",
+            "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/reviews/conductor_round143_level_four_matrix_adjudication.md",
+            "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/controls/conductor_round143_controls.md",
+            "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use the Blomer--Milicevic identity only with its complete level-4/8, fixed-test, weight-one H+M+E ledger. Do not cite Kiral--Young for odd chi_4, transplant unsupported opposite-sign constants, omit level-8 oldclasses or cusps, or infer an arbitrary joint-matrix theorem from the scalar large sieves."
+      },
+      {
+        "id": "M9-M2-unbalanced-level-four-spectral-matrix-obstruction",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Exact odd-character cusp embedding and joint spectral-matrix obstruction",
+        "status": "proved_internal",
+        "statement_tex": "For the frozen flat-smooth strict-UNBAL owner, with Gamma_0(4), primitive chi_4, kappa=1, cusps (infinity,0), sigma_infinity=I, and sigma_0=((0,-1/2),(2,0)), the allowed generalized moduli are exactly 2n with n odd and S^(chi_4)_(infinity,0)(4N_0,h;2n)=chi_4(n)S(N_0,h;n) for every h and every gcd (N_0,n), with no modulus-dependent root in the fixed convention. After r=gn and k=gj, the full owner is sum_(g,n odd,gn~R)chi_4(g)W(X/(gnD))sum_(h mod n)gammahat_(g,n)(h)S^(chi_4)_(infinity,0)(4N_0,h;2n), retaining all gcd strata, profiles, endpoints, and the real-centre phase. The h=0 contribution is O_epsilon(X^epsilon), so the strict survivor is the centered h nonzero matrix. Row Parseval gives ||A_g||_(S2)^2 << X^epsilon/(gK) and ||A_g||_(S1) << sqrt(Delta)X^epsilon/g; the conditional 2n cross-cusp and sourced 4n standard-cusp samples have automatic norms ||B_g||_(S2) << sqrt(R Delta)X^epsilon/g^(3/2) and ||B_g||_(S1) << R sqrt(Delta)X^epsilon/g^2. These are upper prices only. The frozen data prove no owner-saving common smooth test, common sequence, or vector-valued norm for the literal matrix. The same-sign Linnik comparison scale is H_Lin(g)~X/(D^2g^2)=K/(Lg^2), with discrete coverage at most 1/(Dg) of the row and no nonzero frequency for g much larger than sqrt(K/L); Parseval gives no localization and no audited complementary-range theorem applies. The exact complete Kloosterman second moment yields only R sqrt(Delta)X^epsilon=X^(1-(delta+ell)/2+epsilon), worse than both accepted-envelope branches throughout the strict polytope. Expanding gammahat and summing h returns the original reciprocal row exactly. This is a scoped insufficiency result for the frozen controls, not a signed lower bound or a no-go for a new literal-matrix theorem.",
+        "dependencies": [
+          "Level-four-Kuznetsov-matrix-source-audit",
+          "M9-M2-unbalanced-Kloosterman-dispersion-interface-obstruction",
+          "M9-M2-unbalanced-truncated-divisor-fixed-centre-return",
+          "M9-M2-unbalanced-flat-wave-curvature-envelope",
+          "M9-M2-character-factor"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/reports/level_four_kloosterman_embedding_attack.md",
+            "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/reports/blind_joint_matrix_spectral_feasibility.md",
+            "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/reports/kuznetsov_source_hypothesis_audit.md",
+            "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/reviews/blind_post_unmask_discovery_seam_audit.md",
+            "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/reviews/discovery_post_unmask_blind_seam_audit.md",
+            "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/reviews/source_post_unmask_spectral_claims_audit.md",
+            "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/reviews/blind_post_unmask_source_hypothesis_audit.md",
+            "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/candidates/conductor_round143_level_four_matrix_obstruction.md",
+            "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/reviews/discovery_conductor_candidate_final_green.md",
+            "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/reviews/discovery_conductor_candidate_green_confirmation.md",
+            "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/reviews/blind_conductor_candidate_final_green.md",
+            "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/reviews/source_conductor_candidate_final_green.md",
+            "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/reviews/conductor_round143_level_four_matrix_adjudication.md",
+            "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/controls/conductor_round143_controls.md",
+            "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Park scalar fixed-index Kuznetsov, row-Parseval SVD, point interpolation, and full-frequency positive closures for this owner. Reopen only with a genuinely new theorem for the literal centered nonzero-frequency matrix that controls modulus smoothness, projective or vector norm, the long Linnik complement, all level-4/8 spectral pieces, profiles, and endpoints while preserving chi_4 before positive modulus norms."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-smooth-unbalanced-three-quarter-estimate",
+        "dependencies_added": [
+          "M9-M2-unbalanced-level-four-spectral-matrix-obstruction"
+        ],
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/reports/level_four_kloosterman_embedding_attack.md",
+            "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/reports/blind_joint_matrix_spectral_feasibility.md",
+            "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/reports/kuznetsov_source_hypothesis_audit.md",
+            "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/reviews/conductor_round143_level_four_matrix_adjudication.md",
+            "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The flat strict-UNBAL target remains open after the exact h=0 deletion. The surviving object is the fully gcd-restored centered h nonzero inverse-selector matrix. Park the audited scalar trace-formula route and either supply a genuinely new literal-matrix fixed-centre theorem with a uniform saving or rotate to a distinct unresolved M2 owner."
+      },
+      {
+        "id": "M9-M2-unbalanced-Kloosterman-dispersion-interface-obstruction",
+        "dependencies_added": [
+          "Level-four-Kuznetsov-matrix-source-audit"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/reports/level_four_kloosterman_embedding_attack.md",
+            "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/reports/kuznetsov_source_hypothesis_audit.md",
+            "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/reviews/conductor_round143_level_four_matrix_adjudication.md",
+            "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The inverse-first character-to-level algebra is now exact and h=0 is target-safe, but the centered nonzero-frequency coefficient remains a modulus-dependent matrix outside the audited scalar interfaces. Reopen only with a new owner-saving joint-matrix theorem, not another fixed-index scalar completion."
+      },
+      {
+        "id": "M9-M2-unbalanced-truncated-divisor-fixed-centre-return",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/reports/level_four_kloosterman_embedding_attack.md",
+            "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/reviews/conductor_round143_level_four_matrix_adjudication.md",
+            "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Retain the exact prescribed-centre wave and its new internal level-four arithmetic embedding. The h=0 transformed complement is safe, while complete h-orthogonality returns the original reciprocal row; any further progress must estimate the literal centered h nonzero matrix before positive modulus norms."
+      },
+      {
+        "id": "M9-M2-unbalanced-flat-wave-curvature-envelope",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/reports/blind_joint_matrix_spectral_feasibility.md",
+            "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/reviews/conductor_round143_level_four_matrix_adjudication.md",
+            "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The automatic inverse-first closure R sqrt(Delta) is strictly worse than both accepted-envelope branches throughout the strict polytope. Preserve the curvature envelope as the benchmark; a new route must beat it with actual cross-modulus chi_4 cancellation."
+      },
+      {
+        "id": "M9-M2-character-factor",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/reports/level_four_kloosterman_embedding_attack.md",
+            "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/reviews/conductor_round143_level_four_matrix_adjudication.md",
+            "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Retain chi_4(g) outside and chi_4(n) inside the modulus sum exactly. The internal cusp identity embeds chi_4(n) arithmetically but supplies no analytic saving; no positive norm may erase either character direction before a signed estimate."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round143-Kiral-Young-even-formula-certifies-chi4",
+        "reason": "Kiral--Young Theorem 2.7 assumes an even character in a weight-zero multiplier setting."
+      },
+      {
+        "id": "Round143-weight-zero-is-legal-for-chi4",
+        "reason": "Compatibility with -I forces kappa=1 because chi_4(-1)=-1."
+      },
+      {
+        "id": "Round143-internal-cross-cusp-identity-is-already-a-sourced-trace-formula",
+        "reason": "The double-coset calculation proves only the fixed-modulus arithmetic identity; the convention-matched weight-one spectral formula is not supplied by the audited switched-cusp source."
+      },
+      {
+        "id": "Round143-Blomer-Milicevic-implementation-is-pure-level-four",
+        "reason": "The exact legal character encoding is a standard-cusp level-4 sum minus a level-8 sum."
+      },
+      {
+        "id": "Round143-level-eight-oldclasses-or-cusps-may-be-omitted",
+        "reason": "The level-8 H+M+E ledger includes level-4 oldclasses and Eisenstein terms over four singular cusps."
+      },
+      {
+        "id": "Round143-unsupported-opposite-sign-or-residual-formula",
+        "reason": "No audited odd-weight opposite-sign normalization, ad hoc residual term, or separate holomorphic weight-one limit term supports such a claim."
+      },
+      {
+        "id": "Round143-audited-scalar-large-sieves-accept-arbitrary-gammahat-matrix",
+        "reason": "They require a common test, a common sequence, or controlled joint smoothness and derivative norms not supplied by the frozen coefficient data."
+      },
+      {
+        "id": "Round143-row-Parseval-localizes-the-Linnik-range",
+        "reason": "Parseval gives only complete-frequency L2 mass and no localization to h much less than X/(D^2g^2)."
+      },
+      {
+        "id": "Round143-sharp-g-threshold-without-support-constants",
+        "reason": "The empty nonzero range is constant-safe only for g much larger than sqrt(K/L), not every strict inequality g>sqrt(K/L)."
+      },
+      {
+        "id": "Round143-abstract-diagonal-is-the-literal-matrix",
+        "reason": "The diagonal is only a control showing insufficiency of row Parseval; it proves no literal lower bound, saturation, or rank."
+      },
+      {
+        "id": "Round143-exact-point-interpolation-has-free-Bessel-bandwidth",
+        "reason": "The reciprocal modulus grid forces growing derivative and transform cost for the canonical exact interpolant."
+      },
+      {
+        "id": "Round143-h-zero-is-the-obstruction-or-whole-wave-is-minimal",
+        "reason": "The complete h=0 contribution is O_epsilon(X^epsilon), leaving the centered h nonzero matrix as the strict survivor."
+      },
+      {
+        "id": "Round143-complete-h-summation-is-a-spectral-gain",
+        "reason": "Additive orthogonality returns the original reciprocal row exactly."
+      },
+      {
+        "id": "Round143-positive-R-sqrt-Delta-closure-is-character-cancellation",
+        "reason": "The same proof works for arbitrary unit row phases and therefore does not use the cross-modulus chi_4 direction."
+      },
+      {
+        "id": "Round143-positive-capacity-is-a-signed-lower-bound",
+        "reason": "The displayed capacity is only an available coefficient-blind upper bound."
+      },
+      {
+        "id": "Round143-level-four-matrix-analysis-proves-M9-M2-or-an-exponent",
+        "reason": "The flat strict-UNBAL survivor and all other required M2, M1, endpoint, M9, bridge, and target obligations remain open."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "Round 143 treats one M2 strict-UNBAL owner and proves no M1 parent."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Hard TOP, BAL, the centered nonzero-frequency strict-UNBAL survivor, and all other required UNBAL owners remain open."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "The round treats one flat-smooth interior owner and no sharp, clipped, starred, transition, or endpoint assembly."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain open."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The bridge remains conditional on the complete open M9 hypothesis."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The strongest internally proved global exponent remains one third."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "The separately audited external exponent remains (3292+25sqrt(1717))/13762."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The quarter target still lacks the remaining M1 and M2 estimates, endpoint uniformity, M9, and an unconditional final bridge."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 6,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 143 proves an exact odd-character cross-cusp arithmetic embedding, restores every gcd stratum, and removes the h=0 transformed class at target cost. It source-audits the legal level-4/8 weight-one architecture and rigorously identifies the first common-test, long-frequency, and coefficient-blind capacity obstructions. No owner-saving estimate, downstream theorem, or exponent improvement is obtained."
+  }
+}

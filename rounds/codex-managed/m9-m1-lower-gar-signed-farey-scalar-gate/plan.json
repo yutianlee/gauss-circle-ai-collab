@@ -1,0 +1,227 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 138,
+    "round_type": "m9_m1_lower_gar_signed_farey_scalar_gate",
+    "campaign_id": "m9-m1-lower-gar-signed-farey-scalar-gate",
+    "title": "M1 lower-GAR exact signed reduced-Farey scalar gate",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "56de446648dfb7a492fbb4b46c38d840fb14ac306df61bf61d466d26abfbe797",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "planned_numerical_percent": 0,
+      "literature_policy": "No theorem-name continuation. External input is admissible only after an exact theorem card audits coefficient class, primitive supports, absolute-value placement, centre uniformity, and a complete R-power ledger. The primary objective is a direct actual-scalar derivation."
+    },
+    "target_obligations": [
+      "M9-M1-global-lower-radial-signed-estimate",
+      "M9-M1-lower-near-square-wavelet-reduction",
+      "M9-M1-lower-centered-square-function-farey-self-return"
+    ],
+    "frozen_target": {
+      "question": "Can the exact lower-GAR scalar be bounded by R X^epsilon in its reduced-Farey form, or can its exact scalar square be reduced to a strictly smaller signed nonzero-determinant survivor, without passing through the rejected separated k-square function; if not, what is the first exact resonance, completion, stationary, directionality, self-return, or capacity obstruction?",
+      "reference_formula": "F_N=sum_(2<=b<=y, b odd) lambda_b sum_(1<=a<b,(a,b)=1) e(aN/b)J_(R,y)(a/b), lambda_b=chi_4(b)b^(-1)sum_(g<=y/b)chi_4(g)/g, R=X^(1/4), y=floor(sqrt(X)), N=floor(X), with target |F_N|<<_epsilon R X^epsilon. Its exact square has phase e(N(ab'-a'b)/(bb')) and target R^2=y.",
+      "quantities": [
+        "J_(R,y)(t)=eta(yt)V_low(4R^2t^2)/t on the small positive arc, extended smoothly by zero and periodically, with J(0)=0",
+        "F_N is termwise identical to sum_(d<=y)chi_4(d)sum_(h>=1)h^(-1)V_low(4R^2h^2/d^2)e(hN/d)",
+        "reducing h/d=a/b aggregates all odd lifts into lambda_b before any norm",
+        "the b=1 centre vanishes because J(0)=0; determinant zero in the exact scalar square is equality of reduced fractions",
+        "the diagonal target is O(yX^epsilon); same-denominator unequal numerators remain off diagonal and require a separate control",
+        "the exact scalar has absolute capacity y=R^2 and target R; its exact square has absolute capacity y^2 and target y",
+        "the Round-127 uncentered k-energy is false and the centered k-energy is a stronger separated norm; neither is the frozen mechanism",
+        "all floors, primitive numerators, lift character, literal profile, support endpoints, both signs, and real-X uniformity are retained"
+      ]
+    },
+    "completion_criteria": [
+      "Derive the exact reduced-Farey scalar from the literal flat lower cone, including the missing 1/d, odd lifts, b=1 centre, primitive numerators, profile, and both signs.",
+      "Prove and price the exact scalar-square diagonal and the same-denominator unequal-numerator sector before estimating cross-denominator determinants.",
+      "For every determinant split, character pairing, reciprocity, Poisson, B-process, or stationary step, retain the actual lambda_b and J profile and return the result to the R target uniformly for every real X.",
+      "Test exact and near phase-one families, fourth-power centres, denominators near y, divisors of N, numerator endpoints, stationary dual modes, and support crossings.",
+      "Preserve scalar directionality: no dyadic positive k-energy, coefficient-uniform arbitrary array, rowwise or determinantwise modulus, centre averaging, or full-circle Gauss estimate may substitute for the literal scalar.",
+      "Close under exactly one label: target_bound, strict_signed_farey_reduction, or signed_farey_no_go.",
+      "Make no complete GAR, M9-M1, M9-M2, endpoint, M9, quarter, or exponent promotion unless every corresponding owner and dependency is proved."
+    ],
+    "controls": [
+      "literal_flat_cone_to_reduced_farey_scalar",
+      "lift_character_and_b1_centre",
+      "profile_floor_support_and_both_signs",
+      "exact_scalar_square_and_diagonal",
+      "same_denominator_unequal_numerators",
+      "cross_denominator_determinant_arithmetic",
+      "exact_and_near_phase_one_families",
+      "character_pairing_and_stationary_dual_modes",
+      "scalar_capacity_and_directionality",
+      "transform_contraction_or_self_return",
+      "real_centre_and_boundary_uniformity",
+      "lower_GAR_and_downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "literal_signed_farey_scalar_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "completed_with_strict_signed_farey_reduction_and_transform_controls",
+        "target": "Derive and exploit the exact reduced-Farey scalar and its actual scalar-square determinant form to prove the R target, a strict smaller signed survivor, or the first exact arithmetic or transform obstruction.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0823_full_proof_strategy.md",
+          "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/synthesis.md",
+          "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/synthesis.md",
+          "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/reports/lower_gar_wavelet_feasibility.md",
+          "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/reviews/conductor_round127_frontier_selection_adjudication.md",
+          "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/blind_statement.md"
+        ],
+        "required_controls": [
+          "literal_flat_cone_to_reduced_farey_scalar",
+          "lift_character_and_b1_centre",
+          "profile_floor_support_and_both_signs",
+          "exact_scalar_square_and_diagonal",
+          "same_denominator_unequal_numerators",
+          "cross_denominator_determinant_arithmetic",
+          "exact_and_near_phase_one_families",
+          "character_pairing_and_stationary_dual_modes",
+          "scalar_capacity_and_directionality",
+          "transform_contraction_or_self_return",
+          "real_centre_and_boundary_uniformity",
+          "lower_GAR_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section analytic report.",
+          "An exact scalar and scalar-square dictionary with a complete R-power ledger.",
+          "A target estimate, strict owner-complete signed survivor, or first exact scalar obstruction.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/reports/literal_signed_farey_scalar_attack.md"
+      },
+      {
+        "id": "blind_reduced_fraction_scalar_feasibility",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "completed_with_independent_row_fibre_reduction_and_self_return_diagnosis",
+        "target": "Independently decide from the exact scalar statement whether its character-lift coefficient and determinant phase prove the R bound, yield a strict signed reduction, or encounter a rigorous coherent or self-return obstruction.",
+        "context_files": [
+          "problems/gauss_circle.md",
+          "state/control_models.md",
+          "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "all strategy files",
+          "all Round-121 through Round-138 nonblind artifacts",
+          "all Round-138 sibling reports"
+        ],
+        "required_controls": [
+          "literal_flat_cone_to_reduced_farey_scalar",
+          "lift_character_and_b1_centre",
+          "profile_floor_support_and_both_signs",
+          "exact_scalar_square_and_diagonal",
+          "same_denominator_unequal_numerators",
+          "cross_denominator_determinant_arithmetic",
+          "exact_and_near_phase_one_families",
+          "character_pairing_and_stationary_dual_modes",
+          "scalar_capacity_and_directionality",
+          "transform_contraction_or_self_return",
+          "real_centre_and_boundary_uniformity",
+          "lower_GAR_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section statement-only report.",
+          "A self-contained proof attempt with exact resonance and capacity controls.",
+          "A target estimate, strict signed survivor, or first exact no-go step.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/reports/blind_reduced_fraction_scalar_feasibility.md"
+      },
+      {
+        "id": "farey_scalar_self_return_hostile_audit",
+        "role": "seam_reviewer",
+        "access_mode": "selected_context",
+        "status": "completed_with_owner_complete_endpoint_aspect_and_scope_audit",
+        "target": "Hostilely audit the exact scalar reduction, diagonal and same-denominator sectors, resonance families, and every determinant or stationary transform for direction loss, hidden capacity, self-return, circularity, and downstream overclaim.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0823_full_proof_strategy.md",
+          "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/synthesis.md",
+          "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/candidates/conductor_profile_flattening_and_integer_phase.md",
+          "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/synthesis.md",
+          "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/candidates/conductor_lower_discrepancy_farey_energy_connector.md",
+          "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/reports/lower_gar_wavelet_feasibility.md",
+          "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/blind_statement.md"
+        ],
+        "required_controls": [
+          "literal_flat_cone_to_reduced_farey_scalar",
+          "lift_character_and_b1_centre",
+          "profile_floor_support_and_both_signs",
+          "exact_scalar_square_and_diagonal",
+          "same_denominator_unequal_numerators",
+          "cross_denominator_determinant_arithmetic",
+          "exact_and_near_phase_one_families",
+          "character_pairing_and_stationary_dual_modes",
+          "scalar_capacity_and_directionality",
+          "transform_contraction_or_self_return",
+          "real_centre_and_boundary_uniformity",
+          "lower_GAR_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section hostile analytic report.",
+          "An equation-by-equation directionality and capacity audit of every proposed scalar transform.",
+          "Certification, strict reduction, scope correction, or rigorous no-go.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/reports/farey_scalar_self_return_hostile_audit.md"
+      }
+    ],
+    "closing_assessment": {
+      "decision": "promote_strict_signed_farey_row_and_carrier_reduction_and_scoped_transform_obstruction",
+      "graph_mutation": true,
+      "terminal_label": "strict_signed_farey_reduction",
+      "main_result": "The exact integerized lower scalar square equals one signed cross-denominator residual plus O_epsilon(yX^epsilon). The complete same-denominator block and both ordinary and character-adjusted carrier collars of width y^(-2) are target-square-safe. Determinant fibres have an unavoidable aspect loss; exact hard-endpoint Poisson has a principal R^(3/2) ledger, a unique target-safe exact radical channel, and full nonprincipal owners; repeated transforms self-return. The residual O_epsilon(yX^epsilon) estimate remains open.",
+      "resulting_graph_sha256": "5e82825804e5bb2de43779e7121e76bcfaa4b89d7ac0977ca2ceb84a33be8552",
+      "exponent_change": false,
+      "next_round": 139
+    },
+    "review_seams": [
+      {
+        "id": "dictionary",
+        "requirement": "The literal flat cone, reduced fractions, odd lift sum, primitive numerator, b=1 centre, profile, floors, and both signs are reproduced exactly."
+      },
+      {
+        "id": "diagonal",
+        "requirement": "The exact scalar square is distinguished from the rejected separated k-energy; determinant zero and same-denominator nonzero determinants are priced separately."
+      },
+      {
+        "id": "arithmetic",
+        "requirement": "Exact and near phase-one families, fourth-power centres, denominators dividing N, and numerator/support endpoints are tested with the actual character-lift coefficient."
+      },
+      {
+        "id": "transform",
+        "requirement": "Every pairing, reciprocity, Poisson, determinant-fibre, or stationary step retains coefficients and correction owners and is classified as contraction, strict reduction, or self-return."
+      },
+      {
+        "id": "capacity_and_direction",
+        "requirement": "Every bound returns to R, and no rowwise modulus, arbitrary coefficient norm, positive k-energy, centre average, or circular full-circle estimate replaces the actual scalar."
+      },
+      {
+        "id": "scope",
+        "requirement": "Only the lower-GAR scalar may change; GAR, blockwise M1, M9-M1, all M2 parents, endpoint uniformity, M9, the quarter theorem, and both global exponents retain their owners."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "56de446648dfb7a492fbb4b46c38d840fb14ac306df61bf61d466d26abfbe797",
+    "generated_at": "2026-08-23T15:51:21.052531+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

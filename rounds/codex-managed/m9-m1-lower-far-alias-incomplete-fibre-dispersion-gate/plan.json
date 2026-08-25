@@ -1,0 +1,219 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 141,
+    "round_type": "m9_m1_lower_far_alias_incomplete_fibre_dispersion_gate",
+    "campaign_id": "m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate",
+    "title": "M1 lower far-alias incomplete-fibre dispersion gate",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "072e08848e9d368d65b89fbf03c36423a8e3662e7ae61c48052d4c352d1d71b0",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "planned_numerical_percent": 0,
+      "literature_policy": "Primary-source literature may be used only for exact additive-twist, Voronoi, exponent-pair, divisor, or spacing theorems. Record the theorem statement, parameter dictionary, coefficient class, smoothing, endpoint uniformity, absolute-value placement, and resulting R-power before treating a source as applicable."
+    },
+    "target_obligations": [
+      "M9-M1-global-lower-radial-signed-estimate",
+      "M9-M1-lower-post-collar-smoothed-far-alias-reduction",
+      "M9-M1-lower-height-alias-rank-one-product-fibre-obstruction"
+    ],
+    "frozen_target": {
+      "question": "Can the exact Round-140 far height-alias scalar be bounded at R X^epsilon by signed cancellation in its incomplete divisor coefficient across near-radical and nonsquare phase cells; if not, what is the first exact phase-cell, hyperbola, divisor-pairing, additive-twist, source-hypothesis, self-return, circularity, or capacity obstruction?",
+      "reference_formula": "Let R=X^(1/4), y=floor(sqrt X), N=floor X=y^2+q, 0<=q<=2y, and fix 0<rho<1/8. Put L_h=floor(rho y/sqrt(h)), D_h=y-L_h-1, and let r_h be the least positive odd integer at least 4Nh/D_h^2. The exact grouped far coefficient is A_rho(m)=sum_(h|m, r=m/h odd, r>=r_h+2)chi_4(r). The frozen scalar is T_N=sum_(m>=1)m^(-3/4)V_low(R^2m/N)A_rho(m)e(sqrt(Nm)), effectively m<<N/R^2 asymp y, and the exact target is |T_N|<<_epsilon X^epsilon uniformly for every real X.",
+      "quantities": [
+        "The far mask is height-dependent and integer. Any simplification to r>2sqrt(m), a half-divisor sum, or the complete r_2(m)/4 coefficient must carry an exact target-safe correction.",
+        "The known divisor upper bound and h=1 plateau show matching R^(1/2) excess in the grouped weighted sum before the outer N^(1/4) factor; modulus is not a proof.",
+        "Exact radicals m=Dt^2 for N=Du^2 are target-safe, but near radicals and nonsquare phase cells have no accepted estimate.",
+        "The phase sqrt(Nhr) is rank one and the second canonical transform returns the reciprocal phase. A claimed gain must be noninvertible or use actual signed arithmetic.",
+        "Same-sign supported prime-square fibres and character-correct fourth-power rays rule out automatic fibrewise cancellation, but are not scalar lower bounds.",
+        "The coefficient is a discontinuous divisor-incidence sequence. Any one-dimensional derivative theorem must prove the required coefficient variation or additive partial-sum hypothesis.",
+        "Round 140 supplies unsquared scalar equivalence only. No positive energy, centre average, residual deletion, downstream theorem, or exponent change may substitute for the fixed-centre scalar target."
+      ]
+    },
+    "completion_criteria": [
+      "Derive an exact disjoint phase-cell or near-radical decomposition with every integer, floor, mask, profile, endpoint, and multiplicity retained.",
+      "Prove the nonresonant complement target-safe before isolating a smaller resonant survivor, or give a complete target estimate for the original scalar.",
+      "Audit the exact arithmetic of A_rho(m), including divisor switching, parity, complete-fibre comparison, prime-power controls, and any additive partial sums used.",
+      "For every cited theorem, verify the coefficient class, smoothness, length, frequency, uniformity, and full R-power ledger against the exact scalar.",
+      "Test exact and near radicals, odd fourth powers, q=0 and q=2y, small and top m ranges, and the self-return under any second transform.",
+      "Close under exactly one label: target_bound, strict_near_resonance_reduction, or incomplete_fibre_dispersion_no_go.",
+      "Make no lower-GAR, direct blockwise M1, M9-M1, M2, endpoint, M9, quarter, or exponent promotion unless every corresponding owner closes."
+    ],
+    "controls": [
+      "exact_incomplete_fibre_mask_floors_profiles_and_real_centre",
+      "dyadic_m_range_weight_and_small_m_owner",
+      "chi4_parity_divisor_pairing_and_complete_fibre_comparison",
+      "phase_cell_definition_width_multiplicity_and_endpoints",
+      "exact_radical_versus_near_radical_separation",
+      "nonresonant_complement_target_return",
+      "fourth_power_rays_and_prime_square_fibres",
+      "coefficient_variation_or_additive_partial_sum_hypothesis",
+      "source_theorem_parameter_and_R_power_audit",
+      "canonical_transform_self_return_and_circularity",
+      "fixed_centre_signed_directionality",
+      "lower_GAR_and_downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "near_radical_phase_cell_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "complete",
+        "target": "Construct an exact signed phase-cell or nearest-square decomposition of the grouped far scalar. Prove the nonresonant complement at X^epsilon and either close the residual, isolate a strictly smaller owner-complete near-resonant survivor, or prove the first rigorous spacing, multiplicity, coefficient, or self-return obstruction.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0823_full_proof_strategy.md",
+          "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/reviews/conductor_round140_height_alias_adjudication.md",
+          "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/synthesis.md",
+          "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/synthesis.md",
+          "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/blind_statement.md"
+        ],
+        "required_controls": [
+          "exact_incomplete_fibre_mask_floors_profiles_and_real_centre",
+          "dyadic_m_range_weight_and_small_m_owner",
+          "chi4_parity_divisor_pairing_and_complete_fibre_comparison",
+          "phase_cell_definition_width_multiplicity_and_endpoints",
+          "exact_radical_versus_near_radical_separation",
+          "nonresonant_complement_target_return",
+          "fourth_power_rays_and_prime_square_fibres",
+          "coefficient_variation_or_additive_partial_sum_hypothesis",
+          "canonical_transform_self_return_and_circularity",
+          "fixed_centre_signed_directionality",
+          "lower_GAR_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section analytic report.",
+          "An exact phase-cell or near-radical decomposition and complete weighted R-power ledger.",
+          "A target estimate, strict signed survivor with target-safe complement, or first rigorous obstruction.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/reports/near_radical_phase_cell_attack.md"
+      },
+      {
+        "id": "blind_incomplete_fibre_additive_twist",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "complete",
+        "target": "Independently decide from the exact scalar statement whether divisor pairing, hyperbola decomposition, chi_4 periodicity, phase cells, or a fixed-centre additive-twist argument proves the target or yields a strict reduction; otherwise identify and prove the first exact obstruction.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "all strategy files",
+          "all Round-137 through Round-141 nonblind artifacts",
+          "all Round-141 sibling reports"
+        ],
+        "required_controls": [
+          "exact_incomplete_fibre_mask_floors_profiles_and_real_centre",
+          "dyadic_m_range_weight_and_small_m_owner",
+          "chi4_parity_divisor_pairing_and_complete_fibre_comparison",
+          "phase_cell_definition_width_multiplicity_and_endpoints",
+          "exact_radical_versus_near_radical_separation",
+          "nonresonant_complement_target_return",
+          "fourth_power_rays_and_prime_square_fibres",
+          "coefficient_variation_or_additive_partial_sum_hypothesis",
+          "canonical_transform_self_return_and_circularity",
+          "fixed_centre_signed_directionality",
+          "lower_GAR_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section statement-only analytic report.",
+          "A self-contained coefficient and phase derivation with exact controls.",
+          "A target estimate, strict signed survivor, or first rigorous no-go step.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/reports/blind_incomplete_fibre_additive_twist.md"
+      },
+      {
+        "id": "sqrt_divisor_twist_source_audit",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "status": "complete",
+        "target": "Search primary literature for fixed-centre additive twists or Voronoi and exponent-pair estimates applicable to a square-root phase with a truncated chi_4-divisor coefficient. State exact theorems and map every hypothesis and exponent to the Round-141 scalar; certify a usable gain or prove that the located results are inapplicable, circular, averaged, coefficient-complete, or quantitatively insufficient.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0823_full_proof_strategy.md",
+          "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/reviews/conductor_round140_height_alias_adjudication.md",
+          "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/synthesis.md",
+          "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/synthesis.md"
+        ],
+        "required_controls": [
+          "exact_incomplete_fibre_mask_floors_profiles_and_real_centre",
+          "dyadic_m_range_weight_and_small_m_owner",
+          "chi4_parity_divisor_pairing_and_complete_fibre_comparison",
+          "phase_cell_definition_width_multiplicity_and_endpoints",
+          "exact_radical_versus_near_radical_separation",
+          "nonresonant_complement_target_return",
+          "fourth_power_rays_and_prime_square_fibres",
+          "coefficient_variation_or_additive_partial_sum_hypothesis",
+          "source_theorem_parameter_and_R_power_audit",
+          "canonical_transform_self_return_and_circularity",
+          "fixed_centre_signed_directionality",
+          "lower_GAR_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section source-audit report.",
+          "Primary-source citations and exact theorem-hypothesis cards for every candidate result.",
+          "A complete R-power translation certifying a usable theorem or the first rigorous source-level obstruction.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/reports/sqrt_divisor_twist_source_audit.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "coefficient_dictionary",
+        "requirement": "The height-dependent divisor mask, parity, floors, profiles, and complete-fibre comparison are exact and no correction is silently discarded."
+      },
+      {
+        "id": "phase_cells",
+        "requirement": "Every exact or near resonance has a defined integer parameter, width, multiplicity, endpoint convention, and weighted capacity."
+      },
+      {
+        "id": "nonresonant_bound",
+        "requirement": "Any strict survivor is licensed only after the entire complement is proved at X^epsilon with the actual coefficient."
+      },
+      {
+        "id": "source_hypotheses",
+        "requirement": "Every imported theorem matches the exact coefficient, smoothing, fixed-centre range, uniformity, and absolute-value placement, with a complete R-power ledger."
+      },
+      {
+        "id": "self_return_and_circularity",
+        "requirement": "A transform, full-divisor replacement, or radial theorem is checked for inversion, uncontrolled complements, and dependence on the desired circle estimate."
+      },
+      {
+        "id": "scope",
+        "requirement": "Only the grouped far scalar or a proved strict survivor may change; every square-level, downstream, and exponent claim requires its separate owner."
+      }
+    ],
+    "closing_assessment": {
+      "decision": "promote_far_cone_microscopic_cell_reduction_and_incomplete_fibre_dispersion_obstruction",
+      "graph_mutation": true,
+      "terminal_label": "incomplete_fibre_dispersion_no_go",
+      "main_result": "The exact Round-140 far scalar is target-equivalent to the floor-free cone r>4h after exact and microscopic nearest-square cells |k_m^2-Nm|<=sqrt M are removed at target cost. The remaining nonresonant cone has singleton phase cells and full coefficient-blind excess; exact divisor pairing self-returns or is blind, the coefficient has a linear quarter-frequency mode, and every audited source estimate remains polynomially above target or has the wrong coefficient or direction.",
+      "resulting_graph_sha256": "de02111a1831d30da33c9f4b2d4a549efa1942dcdc32b5d829e671f6ad5e0e76",
+      "exponent_change": false,
+      "next_round": 142
+    }
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "072e08848e9d368d65b89fbf03c36423a8e3662e7ae61c48052d4c352d1d71b0",
+    "generated_at": "2026-08-23T18:19:00.620003+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

@@ -1,33 +1,40 @@
 # Last validation
 
-Round: 130
+Round: 163
 
-Campaign: `gc-w7-16-post-inner-outer-bilinear-gate`
+Campaign: m9-m2-hard-top-t1-near-square-divisor-involution-gate
 
 Graph SHA-256:
-`23e7bfacbf6abc5582769fbe8d427cbca2379e1d265b99df21d93a65ec504825`
+81690ebb72b0dedd99bdb6c6127f947df696a901a22af3f65ac8738209125306
 
-Status: State Patch applied and graph validated.
+Status: State Patch applied and Round 163 closed under
+strict_t1_prime_toggle_sector.  The completed campaign, resulting graph,
+structured state, terminal mathematical and patch-scope reviews, accepted
+proof draft, unit tests, Markdown rendering, whitespace, equation tags,
+display delimiters, and byte hygiene pass validation.
 
 Validated result:
 
-- exact recombined complete-lift support gives only $O(LB/D)$ inner
-  numerators on shell $B$;
-- the shell bound is $BK_B$, improving every lower shell by $B/D$ and
-  localizing the complete residual to $B\asymp D$;
-- the top and complete critical fixed block remains
-  $O_\varepsilon(Y^{35/48+\varepsilon})$;
-- the exact resolved outer Gram is $H^*H$, equivalently
-  $K_{B,+}^*K_{B,+}$ after physical reassembly, while $G^2$ is full-row
-  completion only;
-- for a fixed primitive top-shell outer ray, $p$ is a bounded-multiplicity
-  determinant-residue lift of $n=aq-bp$;
-- product-window reversal, positive outer energy, and sequential
-  unit-Hessian transforms do not improve the accepted complete capacity.
+- a canonical close pair of odd prime divisors \(p,q\) with
+  \(\chi_4(pq)=-1\) and
+  \(|\log(q/p)|\leq\kappa L^{-1/2}\), when it exists, defines an exact
+  sign-reversing exchange on the complete exactly-one incidence sector;
+- the exchange preserves the squarefree product, coprimality, parity,
+  even-\(N\) branch, normalization, and arbitrary-real-centre phase;
+- common smooth cells contribute \(O_\kappa(L^{3/2})\) after the
+  \(L^{-1/2}\) amplitude difference, and every hard-boundary crossing
+  contributes \(O_\kappa(L^{3/2}+L)\); hence
+  \[
+   |\mathcal S_{L,1}^{\mathrm{cp}}|\ll_\kappa L^{3/2};
+  \]
+- one-prime toggles have disjoint physical supports, normalized toggle
+  averages self-return, general matchings require sign-count balance, and
+  complementation enters excluded lower windows.
 
-Open: the literal signed $B\asymp D$ determinant correlation at target
-$Y^{1/2+\varepsilon}$, leaving $Y^{11/48}$; M9-M1, M9-M2, endpoint
-uniformity, M9, the conditional bridge, and the quarter theorem.
+This is a target-safe strict sector with no asserted density.  The literal
+residual \(\mathcal S_{L,1}^{\mathrm{rem}}\), all other few-point
+channels, hard TOP, BAL, UNBAL, M9--M2, M9--M1, endpoint uniformity, M9,
+the bridge, and the quarter theorem remain open.
 
-Exponent: no change. Internal $1/3$; audited external
-$0.3144831759740614\ldots$.
+Exponent: no change.  Internal \(1/3\); audited external
+\(0.3144831759740614\ldots\).

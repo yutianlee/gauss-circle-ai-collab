@@ -1,0 +1,227 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-lower-displacement-curvature-collar-reduction",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Exact lower-scalar displacement curvature-collar reduction",
+        "status": "proved_internal",
+        "statement_tex": "Let R=X^(1/4), y=floor(sqrt X), N=floor X=y^2+q with 0<=q<=2y, and fix 0<rho<1/8. In the exact integerized lower scalar set d=y-v and L_h=floor(rho y/sqrt(h)). For either scalar sign, the complete literal collar 0<=v<=L_h, including the mod-four parity carrier, profile, floors, endpoints, and zero extension, is O(R log(2X)). Indeed on v=p_y+2n its exact phase has second derivative 8 sigma hN/(y-p_y-2n)^3 asymptotic to h/y, one row is O(sqrt(y)+sqrt(y/h)), and the h^(-1) sum is O(R log(2X)). Hence F_N^pm=S_N^pm+O(R log(2X)), where S_N^pm is the exact tail L_h<v<y, and the two scalar targets are equivalent. Together with the Round-138 identity this gives only logical target equivalence to the cross-denominator residual; the lift-dependent cutoff and collar-tail cross term forbid a residual sub-square deletion. The tail bound remains open with y^(1+o(1)) absolute capacity.",
+        "dependencies": [
+          "M9-M1-lower-radial-flat-discrepancy-equivalence",
+          "M9-M1-lower-signed-farey-row-resonance-reduction"
+        ],
+        "implies": [
+          "M9-M1-global-lower-radial-signed-estimate"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/reports/literal_displacement_quadratic_scalar_attack.md",
+            "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/reports/blind_displacement_scalar_feasibility.md",
+            "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/reports/displacement_completion_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/candidates/conductor_round139_curvature_collar_and_quadratic_obstruction.md",
+            "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/reviews/blind_post_unmask_curvature_rederivation.md",
+            "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/reviews/hostile_post_unmask_curvature_and_directionality_audit.md",
+            "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/reviews/discovery_post_unmask_quadratic_completion_audit.md",
+            "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/reviews/conductor_round139_displacement_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/controls/conductor_round139_controls.md",
+            "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Prove the RX^epsilon bound for the exact tail v>rho y/sqrt(h) by a joint signed height-alias theorem, or directly prove the equivalent Round-138 cross-denominator residual bound. Do not square the displacement split before controlling its cross term."
+      },
+      {
+        "id": "M9-M1-lower-displacement-quadratic-completion-obstruction",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Prescribed-centre quadratic completion, correction variation, and alias self-return obstruction",
+        "status": "proved_internal",
+        "statement_tex": "The exact displacement phase has quadratic core hq/y+hv^2/y-v/4+(y-1)/4 and correction E=h v(q+v^2)/(y(y-v)). The per-height window v<< (y^2/h)^(1/3) has bounded correction variation and is target-safe by ordinary quadratic Gauss completion modulo 2y, with |G_(2y)(8h,B)|<={2y(16h,2y)}^(1/2) and the h^(-1) gcd ledger O_epsilon(sqrt(y)X^epsilon). On the full range the correction is not a BV coefficient: at odd fourth powers, q=0,h=1, a literal plateau interval has Var(e(E))>>y. Exact completion is an invertible Fourier correlation of the correction coefficients with ordinary additive Gauss sums, not a Salie sum; coefficient-blind L2 gives no improvement over y capacity. Exact character Poisson retains all half-integer aliases with R^(3/2) principal absolute capacity, and a second Legendre step returns the reciprocal phase. These controls do not obstruct the proved exact-phase collar but rule out extending it by dropping the correction, a full fixed-modulus Gauss factor, or aliaswise modulus.",
+        "dependencies": [
+          "M9-M1-lower-displacement-curvature-collar-reduction",
+          "M9-M1-lower-signed-farey-transform-radical-obstruction",
+          "M9-M1-lower-mod-four-resonance-tubewise-no-go"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/reports/blind_displacement_scalar_feasibility.md",
+            "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/reports/displacement_completion_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/reports/literal_displacement_quadratic_scalar_attack.md",
+            "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/candidates/conductor_round139_curvature_collar_and_quadratic_obstruction.md",
+            "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/reviews/discovery_post_unmask_quadratic_completion_audit.md",
+            "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/reviews/hostile_post_unmask_curvature_and_directionality_audit.md",
+            "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/reviews/blind_post_unmask_curvature_rederivation.md",
+            "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/reviews/conductor_round139_displacement_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/controls/conductor_round139_controls.md",
+            "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Park full prescribed-centre Taylor completion, Salie relabeling, coefficient-blind Fourier norms, aliaswise modulus, and second-transform gains. Reopen only with a joint signed estimate for the exact displacement tail or correction spectrum."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-global-lower-radial-signed-estimate",
+        "dependencies_added": [
+          "M9-M1-lower-displacement-curvature-collar-reduction",
+          "M9-M1-lower-displacement-quadratic-completion-obstruction"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/reports/literal_displacement_quadratic_scalar_attack.md",
+            "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/reports/blind_displacement_scalar_feasibility.md",
+            "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/reports/displacement_completion_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/reviews/conductor_round139_displacement_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The exact scalar top collar v<=rho y/sqrt(h) is target-safe. Prove the literal tail at RX^epsilon by a joint signed height-alias theorem, equivalently prove the complete Round-138 residual, while retaining the lift-dependent cutoff and collar-tail direction."
+      },
+      {
+        "id": "M9-M1-lower-signed-farey-row-resonance-reduction",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/reviews/conductor_round139_displacement_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The scalar target is also equivalent to the exact displacement tail, but the lift-dependent cutoff does not delete a residual sub-square. Prove the full signed residual or the scalar tail without separating their cross owner."
+      },
+      {
+        "id": "M9-M1-lower-signed-farey-transform-radical-obstruction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/reviews/conductor_round139_displacement_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Retain the complete hard-endpoint Poisson, all aliases, and the R^(3/2) principal capacity. The new exact-phase collar is compatible with this obstruction; reopen the remaining transform only through a joint signed tail estimate."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round139-displacement-bijection-itself-saves-a-power",
+        "reason": "The map d=y-v is exact and invertible; the saving comes only from the proved exact-phase curvature estimate on a strict collar."
+      },
+      {
+        "id": "Round139-drop-the-exact-Taylor-correction-globally",
+        "reason": "The correction has polynomial variation outside the per-height Taylor window and discrete variation much greater than y on a literal fourth-power control interval."
+      },
+      {
+        "id": "Round139-correction-is-global-bounded-variation",
+        "reason": "At q=0,h=1 the allowed-parity variation of e(E) is at least a constant times y on a fixed literal plateau."
+      },
+      {
+        "id": "Round139-complete-core-Gauss-value-equals-the-truncated-scalar",
+        "reason": "The literal boundary introduces all Fourier modes, including modes that revive otherwise vanishing gcd cases; the correction remains in their coefficients."
+      },
+      {
+        "id": "Round139-mod-four-character-creates-a-Salie-sum",
+        "reason": "After parity reduction the complete factor is an ordinary additive quadratic Gauss sum; no multiplicative unit character with inverse phase is present."
+      },
+      {
+        "id": "Round139-coefficient-blind-DFT-L2-closes-the-full-scalar",
+        "reason": "Parseval gives no improvement over y scalar capacity on a full active interval."
+      },
+      {
+        "id": "Round139-Fourier-l1-of-the-full-correction-is-target-safe",
+        "reason": "The correction variation can be much greater than y, so the raw l1 estimate may be worse than the trivial bound and provides no gain."
+      },
+      {
+        "id": "Round139-aliaswise-modulus-closes-the-tail",
+        "reason": "The complete full-row half-integer-alias ledger is R^(3/2), and cancellation across aliases and heights remains essential."
+      },
+      {
+        "id": "Round139-interior-principal-Poisson-family-is-the-full-transform",
+        "reason": "The hard half-endpoint, transitions, nonstationary modes, crossings, remainders, branches, floors, and signs retain separate owners."
+      },
+      {
+        "id": "Round139-second-Legendre-step-gives-a-new-saving",
+        "reason": "With every owner retained, the second transform returns the reciprocal phase."
+      },
+      {
+        "id": "Round139-generalized-collar-may-reach-v-equals-y",
+        "reason": "The curvature comparison requires a fixed top fraction L_(alpha,H)=rho yH^(-alpha), or an explicit d asymptotic to y condition."
+      },
+      {
+        "id": "Round139-parity-row-length-is-always-O-of-Lh",
+        "reason": "When the floor gives L_h=0, the row may contain one parity point; the correct bound is M_h<=1+L_h/2."
+      },
+      {
+        "id": "Round139-alpha-one-half-is-a-universal-optimality-barrier",
+        "reason": "It is only the last scale certified at R by the independent rowwise second-derivative ledger; a new cross-height theorem is not excluded."
+      },
+      {
+        "id": "Round139-curvature-collar-deletes-a-Round138-residual-subsquare",
+        "reason": "The cutoff depends on the unreduced lift and the collar-tail cross term is uncontrolled; only scalar target equivalence is proved."
+      },
+      {
+        "id": "Round139-target-safe-collar-makes-the-square-cross-term-target-safe",
+        "reason": "Bounding the collar by R does not bound its product with the open tail by y before the tail estimate is known."
+      },
+      {
+        "id": "Round139-displacement-cutoff-preserves-Lchi-lift-aggregation",
+        "reason": "In h=ag,d=bg coordinates the condition y-bg<=rho y/sqrt(ag) depends on g and splits the exact lift coefficient."
+      },
+      {
+        "id": "Round139-tail-has-reduced-absolute-power-capacity",
+        "reason": "Even after deleting the curvature collar, the literal tail retains y^(1+o(1)) absolute scalar capacity."
+      },
+      {
+        "id": "Round139-strict-collar-reduction-proves-M1-or-an-exponent",
+        "reason": "The tail, lower signed estimate, lower GAR, both direct M1 parents, all M2 parents, endpoint, M9, the bridge, and the target remain open."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "Round 139 advances only the alternative lower-radial scalar route and proves neither complete GAR nor both direct blockwise M1 parents."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Hard TOP, BAL, and every required UNBAL owner remain open."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "One target-safe lower-scalar collar is not an all-owner endpoint theorem."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain open."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The bridge remains conditional on the complete open M9 hypothesis."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The strongest internally proved global exponent remains one third."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "The separately audited external exponent remains (3292+25sqrt(1717))/13762."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The quarter target still lacks the lower-scalar tail or residual bound, the remaining M1 and M2 owners, endpoint uniformity, M9, and an unconditional final bridge."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 8,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 139 proves a genuinely noninvertible exact-phase estimate for a height-dependent top displacement collar, much larger than the perturbative Taylor window, and reduces the literal scalar to its complementary tail at target cost. It also rigorously closes the attempted full fixed-modulus quadratic completion behind correction-variation, Fourier-directionality, alias-capacity, and self-return obstructions. The tail and every downstream exponent remain open."
+  }
+}

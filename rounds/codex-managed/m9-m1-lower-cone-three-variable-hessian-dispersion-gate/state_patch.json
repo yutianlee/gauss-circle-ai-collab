@@ -1,0 +1,260 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-lower-cone-small-t-unmasking-reduction",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Owner-complete unmasking of the exact small-square-factor cone",
+        "status": "proved_internal",
+        "statement_tex": "Let R=X^(1/4), N=floor(X), I_M=N intersect [M,B_M), B_M<=2M, C(m)=sum_(hr=m,r odd,r>4h)chi_4(r), and write m=s t^2 uniquely with s squarefree. Let S_N^(<,>) be the exact Round-145 scalar restricted to t<M^(1/4) and |floor(t sqrt(Ns)+1/2)^2-Nst^2|>M^(3/4), and let U_N^< be the identical scalar with that nearest-square mask deleted. The ambient support is the disjoint union of the masked small-t set, its small-t |j|<=M^(3/4) complement, and t>=ceil(M^(1/4)). The second set is a subset of the accepted Round-144 absolute cell owner, including its separate exact-radical channel, while the third is the accepted Round-145 unmasked large-t owner. Hence S_N^(<,>)=U_N^<+O_(epsilon,V)(X^epsilon) and the inherited full cone scalar T_N=U_N^<+O_(epsilon,V)(X^epsilon) after logarithmic block assembly. Only the nearest-square mask is removed; the exact multiplicity-one coefficient, squarefree and coprimality support, parity, character, strict cone, profile, clipped half-open endpoints, fixed centre, and individual positive direction remain. The signed U_N^< scalar is not estimated.",
+        "dependencies": [
+          "M9-M1-lower-far-cone-microscopic-cell-reduction",
+          "M9-M1-lower-cone-squarefree-kernel-reduction"
+        ],
+        "implies": [
+          "M9-M1-global-lower-radial-signed-estimate"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/reports/three_variable_hessian_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/reports/blind_three_variable_dispersion_feasibility.md",
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/reports/multidimensional_monomial_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/reviews/blind_post_unmask_discovery_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/reviews/discovery_post_unmask_blind_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/candidates/conductor_round146_three_variable_unmasking_and_dispersion_no_go.md",
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/reviews/blind_conductor_candidate_final_green.md",
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/reviews/source_conductor_candidate_final_green_v2.md",
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/reviews/discovery_conductor_candidate_final_green.md",
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/reviews/conductor_round146_three_variable_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/controls/conductor_round146_controls.md",
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Prove U_N^< <<_(epsilon,V) X^epsilon for the exact unmasked small-t coefficient and every clipped prefix, or produce a further owner-complete signed reduction. The t=1 and D=1 faces and the independent Round-138 cross owner remain mandatory."
+      },
+      {
+        "id": "M9-M1-lower-cone-three-variable-dispersion-obstruction",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Three-variable Hessian, short-face, source-power, and transform-return obstruction",
+        "status": "proved_internal",
+        "statement_tex": "For the exact unmasked small-t scalar, write its inherited multiplicity-one coefficient as kappa_t(d,e) and dyadically take t asymp T, d asymp D, e asymp E, with T^2DE asymp M. The coefficient-envelope weighted price is X^epsilon M^(1/4)/T. The relative-coordinate Hessian of f(t,d,e)=sqrt(N)t sqrt(de) is [[0,1/2,1/2],[1/2,-1/4,1/4],[1/2,1/4,-1/4]], with determinant 1/4, but this algebraic fact is not an estimate for the joint arithmetic coefficient. The exact cone gives D<<sqrt(M), E>>sqrt(M)/T^2; E=1 is empty and fixed bounded E is terminal-safe, while t=1 is a mandatory rank-one d,e face and D=1 is structurally present. A t-difference has a constant h=0 diagonal and rank-one h!=0 phases with unproved exact coefficient correlations. The smooth full stationary phase is -2u sqrt(vw)/sqrt(N); c maps to -2/c and back only at the phase level after alias-orthant reversal, while aliaswise modulus has adverse upper capacity. No audited theorem accepts the literal coefficient. Even granting ideal separation, Cao-Zhai Theorem 6 leaves R^(3/8-5tau/8+epsilon) on the balanced top box, hence R^(1/16+epsilon) at formal tau=1/2; Cao-Zhai Theorem 7 leaves R^(7/8+epsilon), and the stated Robert-Sargos and Sargos-Wu uses leave R^(1/4+epsilon) at that endpoint. These are limitations of displayed upper bounds, not signed lower bounds or a disproof of the target. No strict fixed-power intermediate-t reduction is proved.",
+        "dependencies": [
+          "M9-M1-lower-cone-small-t-unmasking-reduction",
+          "M9-M1-lower-cone-squarefree-linearization-obstruction",
+          "M9-M1-lower-incomplete-fibre-dispersion-obstruction",
+          "M9-M1-lower-height-alias-rank-one-product-fibre-obstruction"
+        ],
+        "implies": [],
+        "blockers": [],
+        "source_card": "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/reports/multidimensional_monomial_source_audit.md",
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/reports/three_variable_hessian_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/reports/blind_three_variable_dispersion_feasibility.md",
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/reports/multidimensional_monomial_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/reviews/blind_post_unmask_discovery_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/reviews/discovery_post_unmask_blind_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/reviews/discovery_source_power_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/candidates/conductor_round146_three_variable_unmasking_and_dispersion_no_go.md",
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/reviews/blind_conductor_candidate_final_green.md",
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/reviews/source_conductor_candidate_final_green_v2.md",
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/reviews/discovery_conductor_candidate_final_green.md",
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/reviews/conductor_round146_three_variable_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/controls/conductor_round146_controls.md",
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Park determinant-only cancellation, arbitrary-coefficient or smooth-tensor substitution, one t-difference without a correlation theorem, direct use of the audited monomial estimates, and transform-followed-by-modulus. Reopen only with a genuinely sign-sensitive theorem for the exact coefficient or transformed coefficient that also owns bounded t and every short face."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-lower-far-cone-microscopic-cell-reduction",
+        "implies_added": [
+          "M9-M1-lower-cone-small-t-unmasking-reduction"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/candidates/conductor_round146_three_variable_unmasking_and_dispersion_no_go.md",
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/reviews/conductor_round146_three_variable_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Use the Round-146 child equivalence: the exact first-open small-t scalar is target-equivalent to its unmasked version. The cell theorem removes only the accepted |j|<=M^(3/4) window and supplies no thicker smoothing owner."
+      },
+      {
+        "id": "M9-M1-lower-cone-squarefree-kernel-reduction",
+        "implies_added": [
+          "M9-M1-lower-cone-small-t-unmasking-reduction"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/reports/three_variable_hessian_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/candidates/conductor_round146_three_variable_unmasking_and_dispersion_no_go.md",
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/reviews/conductor_round146_three_variable_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Pass to the Round-146 unmasked child scalar. Retain both multiplicity-one coefficient parametrizations, strict t<M^(1/4), profile, clipped endpoints, fixed centre, and positive direction; the nearest-square mask is no longer an active amplitude hypothesis."
+      },
+      {
+        "id": "M9-M1-lower-cone-squarefree-linearization-obstruction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/reports/multidimensional_monomial_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/reviews/discovery_source_power_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/candidates/conductor_round146_three_variable_unmasking_and_dispersion_no_go.md",
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/reviews/conductor_round146_three_variable_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The nearest-square mask is now removed owner-completely, but the exact joint coefficient, balanced boxes, bounded-t rank-one face, and varying slow frequencies remain. Reopen only with a sign-sensitive exact-coefficient theorem."
+      },
+      {
+        "id": "M9-M1-lower-incomplete-fibre-dispersion-obstruction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/candidates/conductor_round146_three_variable_unmasking_and_dispersion_no_go.md",
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/reviews/conductor_round146_three_variable_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The first-open cone scalar is now unmasked but still restricted to t<M^(1/4). Three-variable Hessian and the audited monomial bounds do not control its exact coefficient or bounded-t faces."
+      },
+      {
+        "id": "M9-M1-lower-height-alias-rank-one-product-fibre-obstruction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/reports/three_variable_hessian_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/reviews/blind_post_unmask_discovery_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/candidates/conductor_round146_three_variable_unmasking_and_dispersion_no_go.md",
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The new t-direction has nonzero three-dimensional Hessian only in the interior. The mandatory t=1 face and every nonzero t-difference return the rank-one d,e product phase with an unproved exact coefficient correlation."
+      },
+      {
+        "id": "M9-M1-lower-cone-Appell-completion-self-return-obstruction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/reports/three_variable_hessian_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/reports/multidimensional_monomial_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/candidates/conductor_round146_three_variable_unmasking_and_dispersion_no_go.md",
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The mask may be restored away, but both the completed-Appell route and the full three-variable stationary transform return the same owner or monomial class. Reopen only with a signed coefficient theorem, not another transform followed by modulus."
+      },
+      {
+        "id": "M9-M1-global-lower-radial-signed-estimate",
+        "dependencies_added": [
+          "M9-M1-lower-cone-small-t-unmasking-reduction",
+          "M9-M1-lower-cone-three-variable-dispersion-obstruction"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/reports/three_variable_hessian_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/reports/blind_three_variable_dispersion_feasibility.md",
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/reports/multidimensional_monomial_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/reviews/conductor_round146_three_variable_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The first open cone owner is the exact unmasked t<M^(1/4) squarefree-kernel scalar U_N^< with literal coefficient, strict cone, profile, clipped endpoints, fixed centre, and positive direction. Prove it together with the independent Round-138 collar-tail cross owner before claiming lower GAR."
+      }
+    ],
+    "correct_rejected": [],
+    "reject": [
+      {
+        "id": "Round146-nearest-square-mask-remains-the-first-amplitude-obstruction",
+        "reason": "The accepted Round-144 absolute cell owner removes the small-t |j|<=M^(3/4) subset, so the first-open scalar is target-equivalent to its unmasked version."
+      },
+      {
+        "id": "Round146-nonzero-three-variable-Hessian-alone-proves-cancellation",
+        "reason": "A Hessian determinant does not control an arbitrary joint coefficient, and the exact arithmetic amplitude is neither smooth nor separated."
+      },
+      {
+        "id": "Round146-arbitrary-bounded-coefficient-theorem-can-use-the-phase-curvature",
+        "reason": "The adversarial bounded array e(-f) cancels the phase identically; a valid theorem must use the exact arithmetic signs and correlations."
+      },
+      {
+        "id": "Round146-all-three-side-lengths-grow-or-short-faces-are-target-safe",
+        "reason": "The t=1 and D=1 faces are mandatory and have owner-sized available capacity, while fixed t leaves the rank-one d,e Hessian."
+      },
+      {
+        "id": "Round146-one-t-difference-produces-nondegenerate-dispersion",
+        "reason": "The h=0 term is diagonal and every h!=0 returned phase is rank one in d,e with an unproved exact coefficient correlation."
+      },
+      {
+        "id": "Round146-full-three-variable-B-process-followed-by-modulus-saves-a-power",
+        "reason": "The dual phase is the same monomial class at phase level, and aliaswise triangle inequality has adverse upper capacity."
+      },
+      {
+        "id": "Round146-Cao-Zhai-directly-closes-a-fixed-power-intermediate-t-range",
+        "reason": "The literal coefficient fails the separated tensor hypothesis, and even ideal separation leaves R^(3/8-5tau/8), including R^(1/16) at formal tau=1/2."
+      },
+      {
+        "id": "Round146-Robert-Sargos-Sargos-Wu-or-smooth-transform-closes-the-target",
+        "reason": "The coefficient classes fail and the audited direct powers or transformed upper ledgers remain polynomially above target."
+      },
+      {
+        "id": "Round146-source-residual-or-capacity-is-a-signed-lower-bound",
+        "reason": "Every displayed residual and box capacity is only an upper-bound limitation; cancellation in the exact scalar remains possible."
+      },
+      {
+        "id": "Round146-three-variable-no-go-proves-M1-or-an-exponent",
+        "reason": "The unmasked signed cone scalar, independent cross owner, direct M1 parents, all M2 owners, endpoint uniformity, M9, bridge, and quarter target remain open."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "Round 146 simplifies one lower-cone amplitude and rejects a mechanism but proves neither that signed scalar, the independent cross owner, nor either direct blockwise M1 parent."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Hard TOP, BAL, and required UNBAL owners were not treated and remain open."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "An unmasking equivalence and mechanism no-go for one lower-cone scalar are not an all-owner endpoint theorem."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain open."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The bridge remains conditional on the complete open M9 hypothesis."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The strongest internally proved global exponent remains one third."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "The separately audited external exponent remains (3292+25sqrt(1717))/13762."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The quarter target still lacks the unmasked small-t lower-radial scalar, remaining M1 and M2 owners, endpoint uniformity, M9, and an unconditional final bridge."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 6,
+    "idea_quality_score": 7,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 146 proves an owner-complete removal of the nearest-square mask from the exact small-t scalar and fully audits the genuinely nonzero three-variable Hessian. It then establishes a precise method no-go: mandatory rank-one short faces, coefficient nonseparability, differencing and phase-level transform return, and an independently checked Cao-Zhai R^(1/16) residual prevent the proposed direct route from reaching target scale. The signed scalar and every downstream theorem remain open."
+  }
+}

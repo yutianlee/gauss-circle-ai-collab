@@ -1,0 +1,226 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-lower-post-collar-smoothed-far-alias-reduction",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Exact post-collar smoothing and far height-alias reduction",
+        "status": "proved_internal",
+        "statement_tex": "Let R=X^(1/4), y=floor(sqrt X), N=floor X=y^2+q with 0<=q<=2y, and fix 0<rho_1<rho_2<1/8. Put L_(i,h)=floor(rho_i y/sqrt(h)), D_(i,h)=y-L_(i,h)-1, and let r_(2,h) be the least positive odd integer at least 4Nh/D_(2,h)^2 on every nonempty row. The literal sharp Round-139 tail S_(N,rho_1)^pm is target-equivalent to the clean far stationary scalar P_(rho_2)^+=e(-1/8)N^(1/4) sum_h sum_(r>=r_(2,h)+2, r odd) chi_4(r)(hr)^(-3/4)V_low(R^2hr/N)e(sqrt(Nhr)), with the negative scalar its conjugate: S_(N,rho_1)^pm=P_(rho_2)^pm+O(R log^C(2X)) for a fixed C. The proof first smooths only across L_(1,h)<y-d<=L_(2,h), costing O(R log X) by the accepted exact-curvature collar; the smooth amplitude has flat endpoints and norms ||A||_infinity+||A'||_1<<h^(-1), ||A''||_1<<h^(-1)((Rh)^(-1)+Delta_h^(-1)). A rowwise smooth B-process, with the cutoff derivative localized to O(sqrt(h)) ramp aliases and remote aliases integrated twice, has error O(h^(-1)log^2(2X)); the height sum is O(log^3(2X)). The full ramp and r_(2,h) cost O(R log X), and r>=r_(2,h)+2 is many Gaussian widths inside the plateau. Thus the first open estimate is |P_(rho_2)^pm|<<_epsilon R X^epsilon. This is an unsquared scalar equivalence only; no residual sub-square or collar-tail cross term is removed.",
+        "dependencies": [
+          "M9-M1-lower-displacement-curvature-collar-reduction"
+        ],
+        "implies": [
+          "M9-M1-global-lower-radial-signed-estimate"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/reports/exact_tail_poisson_alias_connector.md",
+            "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/reports/blind_height_alias_joint_feasibility.md",
+            "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/reports/tail_alias_hostile_directionality_audit.md",
+            "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/candidates/conductor_round140_smoothed_far_alias_reduction.md",
+            "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/reviews/blind_post_unmask_smoothed_connector_rederivation.md",
+            "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/reviews/discovery_post_unmask_rank_product_directionality_audit.md",
+            "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/reviews/hostile_post_unmask_owner_complete_far_alias_audit.md",
+            "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/reviews/conductor_round140_height_alias_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/controls/conductor_round140_controls.md",
+            "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Prove the X^epsilon bound for the exact grouped far sum sum_m m^(-3/4)V_low(R^2m/N)A_(rho_2)(m)e(sqrt(Nm)), using signed control of near-radical and nonsquare incomplete product fibres. Do not replace A_(rho_2) by the complete r_2(m)/4 fibre or square the scalar reduction."
+      },
+      {
+        "id": "M9-M1-lower-height-alias-rank-one-product-fibre-obstruction",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Sharp endpoint, rank-one height-alias, and incomplete product-fibre obstruction",
+        "status": "proved_internal",
+        "statement_tex": "For the literal sharp post-collar tail, each nonzero endpoint row has dual asymptotic I_(h,r)^sharp=A_h(D_h)e(Nh/D_h+rD_h/4)/(2 pi i(r/4-Nh/D_h^2))+O_h(r^(-2)); hence the raw odd-alias family is not absolutely separable and its half-endpoint plus branchwise principal-value order are essential. After the proved two-collar smoothing, the clean survivor groups exactly as P=e(-1/8)N^(1/4) sum_(m<<y)m^(-3/4)V_low(R^2m/N)A_(rho_2)(m)e(sqrt(Nm)), where A_(rho_2)(m)=sum_(h|m, r=m/h odd, r>=r_(2,h)+2)chi_4(r). The joint phase sqrt(Nhr) has Hessian determinant zero and rank one, also after r=4h+s. Coefficient-blind modulus has matching R^(3/2+o(1)) capacity, witnessed on the h=1 plateau. The incomplete mask does not force character cancellation: for sufficiently large odd fourth-power centres and supported m=p^(2a), p=1 mod 4, A_(rho_2)(p^(2a))=a. If N=Du^2 with D squarefree, the exact radical channel m=Dt^2 has absolute mass O_epsilon(RD^(-3/4)X^epsilon), but near radicals and nonsquare incomplete fibres remain open. A second Legendre step returns the reciprocal phase N/z and completing the fibre returns r_2(m)/4. These are scoped no-go controls, not a target failure or a signed lower bound.",
+        "dependencies": [
+          "M9-M1-lower-post-collar-smoothed-far-alias-reduction",
+          "M9-M1-lower-signed-farey-transform-radical-obstruction"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/reports/blind_height_alias_joint_feasibility.md",
+            "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/reports/tail_alias_hostile_directionality_audit.md",
+            "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/reports/exact_tail_poisson_alias_connector.md",
+            "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/candidates/conductor_round140_smoothed_far_alias_reduction.md",
+            "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/reviews/discovery_post_unmask_rank_product_directionality_audit.md",
+            "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/reviews/hostile_post_unmask_owner_complete_far_alias_audit.md",
+            "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/reviews/blind_post_unmask_smoothed_connector_rederivation.md",
+            "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/reviews/conductor_round140_height_alias_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/controls/conductor_round140_controls.md",
+            "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Park sharp aliaswise modulus, closest-alias deletion, generic nondegenerate two-variable Hessian estimates, complete-fibre replacement, exact-radical extrapolation, and another formal Legendre transform. Reopen only with an actual signed theorem for the incomplete coefficient over near-radical and nonsquare phases."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-global-lower-radial-signed-estimate",
+        "dependencies_added": [
+          "M9-M1-lower-post-collar-smoothed-far-alias-reduction",
+          "M9-M1-lower-height-alias-rank-one-product-fibre-obstruction"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/reports/exact_tail_poisson_alias_connector.md",
+            "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/reports/blind_height_alias_joint_feasibility.md",
+            "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/reports/tail_alias_hostile_directionality_audit.md",
+            "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/reviews/conductor_round140_height_alias_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The exact sharp post-collar tail is now target-equivalent to the clean far product-fibre scalar P_(rho_2). Prove its grouped weighted sum at X^epsilon through signed near-radical and nonsquare incomplete-fibre cancellation; retain the scalar-only direction and the open Round-138 cross term."
+      },
+      {
+        "id": "M9-M1-lower-displacement-curvature-collar-reduction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/reviews/conductor_round140_height_alias_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The literal complement of the exact curvature collar is now reduced, after a second target-safe collar band, to the clean far alias scalar P_(rho_2). Prove the X^epsilon grouped incomplete-fibre sum; do not infer a tail-square identity."
+      },
+      {
+        "id": "M9-M1-lower-signed-farey-transform-radical-obstruction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/reports/tail_alias_hostile_directionality_audit.md",
+            "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/reviews/conductor_round140_height_alias_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The former nonprincipal-owner caveat is now resolved after a lawful two-collar smoothing: all discarded owners are target-safe and the exact far scalar remains. Retain the sharp principal-value warning, rank-one product geometry, and exact-radical bound; reopen only through signed near-radical and nonsquare incomplete-fibre control."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round140-sharp-dual-integrals-are-absolutely-separable",
+        "reason": "Every nonzero sharp endpoint row has a harmonic 1/r boundary tail; the half-endpoint and branchwise symmetric ordering are essential."
+      },
+      {
+        "id": "Round140-closest-alias-removes-the-sharp-endpoint-owner",
+        "reason": "The closest stationary alias is target-safe, but deleting it does not remove the remote principal-value boundary series."
+      },
+      {
+        "id": "Round140-principal-only-formula-before-smoothing",
+        "reason": "The sharp formula also contains its half-endpoint, transition, nonstationary, profile-crossing, and conditionally summed boundary owners."
+      },
+      {
+        "id": "Round140-rho1-threshold-is-already-the-clean-bulk",
+        "reason": "The complete band up to the rho_2 threshold lies in the smoothing ramp; the retained clean bulk starts only at r_(2,h)+2."
+      },
+      {
+        "id": "Round140-ramp-has-only-boundedly-many-aliases",
+        "reason": "Its exact derivative-image interval contains O(1+sqrt(h)) odd aliases, all of which must be priced."
+      },
+      {
+        "id": "Round140-one-integration-closes-remote-smooth-aliases",
+        "reason": "One integration reproduces a harmonic tail; flat endpoints and two integrations are required for absolute summation."
+      },
+      {
+        "id": "Round140-cutoff-variation-may-be-counted-on-all-upper-block-aliases",
+        "reason": "The cutoff derivative must be localized to the O(sqrt(h)) aliases whose stationary neighborhoods meet the smoothing ramp."
+      },
+      {
+        "id": "Round140-height-alias-Hessian-is-nondegenerate",
+        "reason": "The Hessian of sqrt(Nhr) has determinant zero and rank one, invariant under the exact linear change r=4h+s."
+      },
+      {
+        "id": "Round140-height-and-alias-variables-give-independent-curvature-savings",
+        "reason": "The phase is homogeneous of degree one and has a radial null direction; rational rays remain linear."
+      },
+      {
+        "id": "Round140-incomplete-product-fibre-equals-r2-over-four",
+        "reason": "The height-dependent far mask truncates the divisor fibre; r_2(m)/4 is only the complete-mask comparison."
+      },
+      {
+        "id": "Round140-character-cancels-uniformly-on-every-product-fibre",
+        "reason": "Supported prime-square fibres with p=1 mod 4 have the exact same-sign value A_(rho_2)(p^(2a))=a."
+      },
+      {
+        "id": "Round140-product-fibre-modulus-is-target-safe",
+        "reason": "Coefficient-blind modulus has matching R^(3/2+o(1)) capacity, losing R^(1/2) against the target."
+      },
+      {
+        "id": "Round140-h1-capacity-is-a-signed-scalar-lower-bound",
+        "reason": "The h=1 plateau controls only the sum of term moduli; cancellation with the rest of the scalar remains possible."
+      },
+      {
+        "id": "Round140-coherent-fourth-power-ray-disproves-the-target",
+        "reason": "The character-correct ray has only target-scale mass and is not isolated from the rest of the signed scalar."
+      },
+      {
+        "id": "Round140-exact-radical-bound-controls-near-radicals",
+        "reason": "The proof applies only when Nm is a square; no spacing or cancellation estimate for near-square phases is obtained."
+      },
+      {
+        "id": "Round140-second-Legendre-transform-gives-a-new-saving",
+        "reason": "Its critical value is the original reciprocal phase N/z, and completion of the fibre returns the sum-of-two-squares interface."
+      },
+      {
+        "id": "Round140-scalar-equivalence-gives-a-tail-square-identity",
+        "reason": "The collar-tail cross term and the lift-dependent cutoff remain uncontrolled; only unsquared target equivalence is proved."
+      },
+      {
+        "id": "Round140-far-alias-reduction-proves-M1-or-an-exponent",
+        "reason": "The far signed estimate, lower GAR, both direct M1 parents, all M2 parents, endpoint uniformity, M9, the bridge, and the target remain open."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "Round 140 sharpens only the alternative lower-radial scalar interface and proves neither complete lower GAR nor both direct blockwise M1 parents."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Hard TOP, BAL, and every required UNBAL owner remain open."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "A smoothed reduction for one lower-scalar tail is not an all-owner endpoint-uniformity theorem."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain open."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The bridge remains conditional on the complete open M9 hypothesis."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The strongest internally proved global exponent remains one third."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "The separately audited external exponent remains (3292+25sqrt(1717))/13762."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The quarter target still lacks the far incomplete-fibre scalar bound, the remaining M1 and M2 owners, endpoint uniformity, M9, and an unconditional final bridge."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 8,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 140 rigorously resolves every endpoint, smoothing, transition, nonstationary, profile, and stationary-remainder owner in the post-collar character-Poisson route and reduces the literal tail to one exact signed far product-fibre scalar. It also identifies sharp principal-value, rank-one, coefficient-blind capacity, incomplete-fibre, near-radical, and self-return barriers without overstating them. The decisive far signed estimate and every downstream exponent remain open."
+  }
+}

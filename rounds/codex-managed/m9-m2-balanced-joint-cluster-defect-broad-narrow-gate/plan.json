@@ -1,0 +1,226 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 136,
+    "round_type": "m9_m2_balanced_joint_cluster_defect_broad_narrow_gate",
+    "campaign_id": "m9-m2-balanced-joint-cluster-defect-broad-narrow-gate",
+    "title": "M2 BAL joint cluster-defect broad--narrow gate",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "c43058006cec6849cd17a49e6a7a5298f5a3c124b34d2333b3279adcb54da1d1",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "planned_numerical_percent": 0,
+      "literature_policy": "No theorem-name continuation. A source may be used only after its exact statement, coefficient class, norm direction, parameter range, and literal kernel map are audited. The primary objective is a direct joint signed derivation."
+    },
+    "target_obligations": [
+      "M9-M2-balanced-double-far-oscillatory-remainder",
+      "M9-M2-balanced-double-far-actual-energy",
+      "M9-M2-smooth-balanced-quarter-packet-estimate"
+    ],
+    "frozen_target": {
+      "question": "Can the complete signed divisor-progressive bulk kernel K_B^bulk be split into a genuinely transverse broad part and arithmetic aligned-ruling narrow parts, with the broad and every narrow contribution together bounded by L^(3+epsilon), while retaining both chi_4 factors, both low-gcd weights, literal slanted profiles, distinct divisor lifts, both far gates, real-centre phases, crossings, and the fixed-block owner; if not, what is the first exact transversality, cluster, arithmetic-sign, or capacity obstruction?",
+      "reference_formula": "K_B=sum_(h odd,k,k') b_B(h,k) sum_(d|k', d odd) gamma_d sum_J sum_(mu in Z+1/2, mu>0, t_* in J) A_(d,J)(h,k,k';mu)e(Theta_(d,mu)), where lambda=mu/d, x_*=Xk'/lambda^2, Theta=R sqrt(hk)-Xk'/(2lambda)-lambda h/2+s_d(1/2-lambda), and the target is |K_B^bulk|<<_epsilon L^3 X^epsilon for L asymp X^(1/6).",
+      "quantities": [
+        "h'=h+2s=d(ell_d+2t), s=s_d+dt, h+2s_d=d ell_d, d odd, mu=1/2-m, lambda=mu/d",
+        "mu asymp dL^3 with spacing one, lambda spacing 1/d, stationary amplitude O((dL)^(-1)), and O(L^3) outer triples",
+        "rho=hk'-x_*k=[hk'/lambda^2](lambda^2-lambda_0^2) and Delta=x_*k'-hk=[hk/lambda^2](lambda_r^2-lambda^2), with both strict far gates |rho|>L and |Delta|>L retained",
+        "the residue phase s_d(1/2-lambda), divisor coefficient gamma_d, and lift label (d,mu) are literal; equal rational lambda from distinct lifts may not be merged",
+        "all finite-Poisson boundary, transition, support-crossing, nonstationary, and stationary-remainder packages are already target-safe at O_epsilon(L^3X^epsilon); the frozen question concerns only the interior bulk",
+        "the phase-free mode is already target-safe only after full signed assembly",
+        "aliaswise l1, one-frequency reciprocal counting, coefficient-uniform spacing large sieves followed by outer norms, a second one-variable B-process, and positive row energy as an equivalent scalar target are parked controls"
+      ]
+    },
+    "completion_criteria": [
+      "Reproduce the exact K_B^bulk index set, amplitude, phase, divisor progression, both far gates, and owner ledger before estimating.",
+      "Define an explicit broad--narrow partition using joint phase-gradient, slope, or rational-cluster data at a stated resolution; no qualitative use of the words broad or narrow is accepted.",
+      "For the broad part, prove the required transversality or determinant lower bound and price every Cauchy, TT*, decoupling, large-sieve, or oscillatory step back to L^3.",
+      "For every narrow part, classify the aligned rational ruling in the literal (d,mu,h,k,k') variables and use the actual chi_4 and residue phases, or construct a lawful actual-symbol coherent obstruction.",
+      "Keep distinct divisor lifts, the two coupled gates, all smooth profiles, fixed-centre phase, and boundary ownership until a proved inequality permits removal.",
+      "Test the mechanism on diagonal, same-rational-lambda, same-denominator, phase-adapted, opposite-character, and gate-boundary packets.",
+      "Close under exactly one label: target_bound, strict_joint_reduction, or broad_narrow_no_go.",
+      "Make no BAL parent, M9-M2, endpoint, M9, quarter, or global-exponent promotion unless the complete literal L^3 estimate and all graph dependencies are proved."
+    ],
+    "controls": [
+      "literal_bulk_kernel_and_owner_ledger",
+      "divisor_progression_and_distinct_lifts",
+      "joint_broad_partition_resolution",
+      "broad_transversality_determinant",
+      "broad_capacity_to_L3",
+      "narrow_rational_ruling_classification",
+      "actual_chi4_and_residue_phase",
+      "coupled_rho_Delta_far_gates",
+      "coherent_and_opposite_character_packets",
+      "boundary_and_transition_scope",
+      "scalar_vs_positive_energy",
+      "full_BAL_owner_and_downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "joint_cluster_defect_broad_narrow_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "completed_with_exact_character_gauge_and_scoped_broad_narrow_no_go",
+        "target": "Construct a literal joint broad--narrow decomposition of K_B^bulk and prove the L^3 bound, a strict owner-complete smaller survivor, or the first exact capacity obstruction.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0823_full_proof_strategy.md",
+          "rounds/codex-managed/m9-m2-balanced-smooth-literal-atom-dictionary-reconciliation/synthesis.md",
+          "rounds/codex-managed/m9-m2-balanced-double-far-shifted-divisor-fork/synthesis.md",
+          "rounds/codex-managed/m9-m2-balanced-nonzero-alias-defect-gate/synthesis.md",
+          "rounds/codex-managed/m9-m2-balanced-nonzero-alias-defect-gate/reports/literal_alias_local_energy_attack.md",
+          "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/blind_statement.md"
+        ],
+        "required_controls": [
+          "literal_bulk_kernel_and_owner_ledger",
+          "divisor_progression_and_distinct_lifts",
+          "joint_broad_partition_resolution",
+          "broad_transversality_determinant",
+          "broad_capacity_to_L3",
+          "narrow_rational_ruling_classification",
+          "actual_chi4_and_residue_phase",
+          "coupled_rho_Delta_far_gates",
+          "coherent_and_opposite_character_packets",
+          "boundary_and_transition_scope",
+          "scalar_vs_positive_energy",
+          "full_BAL_owner_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section analytic report.",
+          "An explicit broad--narrow partition and complete L-power ledger.",
+          "A target estimate, strict smaller survivor, or exact broad/narrow obstruction.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/reports/joint_cluster_defect_broad_narrow_attack.md"
+      },
+      {
+        "id": "blind_signed_cluster_kernel_feasibility",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "completed_with_independent_gradient_fixed_Q_and_scalar_interface_no_go",
+        "target": "Independently derive whether the stated literal signed cluster kernel admits an L^3 broad--narrow estimate; identify the first unproved determinant, norm, or arithmetic-sign step if not.",
+        "context_files": [
+          "problems/gauss_circle.md",
+          "state/control_models.md",
+          "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "all strategy files",
+          "all Round-112 through Round-136 nonblind artifacts",
+          "all Round-136 sibling reports"
+        ],
+        "required_controls": [
+          "literal_bulk_kernel_and_owner_ledger",
+          "divisor_progression_and_distinct_lifts",
+          "joint_broad_partition_resolution",
+          "broad_transversality_determinant",
+          "broad_capacity_to_L3",
+          "narrow_rational_ruling_classification",
+          "actual_chi4_and_residue_phase",
+          "coupled_rho_Delta_far_gates",
+          "coherent_and_opposite_character_packets",
+          "boundary_and_transition_scope",
+          "scalar_vs_positive_energy",
+          "full_BAL_owner_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section statement-only report.",
+          "A self-contained derivation with an explicit scale partition and adversarial controls.",
+          "A target estimate, strict smaller survivor, or first exact no-go step.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/reports/blind_signed_cluster_kernel_feasibility.md"
+      },
+      {
+        "id": "aligned_rational_ruling_hostile_audit",
+        "role": "seam_reviewer",
+        "access_mode": "selected_context",
+        "status": "completed_with_equal_lift_coherence_and_capacity_scope_audit",
+        "target": "Hostilely classify and test the narrow aligned rational rulings and every proposed broad transversality estimate against the actual character, divisor-lift, residue-phase, gate, and owner structure.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0823_full_proof_strategy.md",
+          "rounds/codex-managed/m9-m2-balanced-literal-energy-connector-fork/synthesis.md",
+          "rounds/codex-managed/m9-m2-balanced-double-far-shifted-divisor-fork/synthesis.md",
+          "rounds/codex-managed/m9-m2-balanced-nonzero-alias-defect-gate/reviews/conductor_round116_literal_alias_and_errors.md",
+          "rounds/codex-managed/m9-m2-balanced-nonzero-alias-defect-gate/reviews/conductor_round116_norm_involution_and_scope.md",
+          "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/blind_statement.md"
+        ],
+        "required_controls": [
+          "literal_bulk_kernel_and_owner_ledger",
+          "divisor_progression_and_distinct_lifts",
+          "joint_broad_partition_resolution",
+          "broad_transversality_determinant",
+          "broad_capacity_to_L3",
+          "narrow_rational_ruling_classification",
+          "actual_chi4_and_residue_phase",
+          "coupled_rho_Delta_far_gates",
+          "coherent_and_opposite_character_packets",
+          "boundary_and_transition_scope",
+          "scalar_vs_positive_energy",
+          "full_BAL_owner_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section hostile analytic report.",
+          "A literal aligned-packet or arithmetic-cancellation calculation for each narrow class.",
+          "Certification, scope correction, strict smaller survivor, or rigorous no-go.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/reports/aligned_rational_ruling_hostile_audit.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "literal_kernel",
+        "requirement": "The exact divisor-progressive bulk kernel, actual amplitudes, distinct lifts, phase, gates, and owner ledger are reproduced before estimating."
+      },
+      {
+        "id": "broad",
+        "requirement": "Broadness is defined at an explicit scale and yields a proved determinant or transversality lower bound with a complete L-power ledger."
+      },
+      {
+        "id": "narrow",
+        "requirement": "Every failure of transversality is classified as a literal arithmetic ruling and estimated using actual signs or exposed as an unresolved lawful packet."
+      },
+      {
+        "id": "directionality",
+        "requirement": "No coefficient-uniform positive energy, row Gram, or aliaswise modulus is substituted for the fixed-block signed scalar."
+      },
+      {
+        "id": "controls",
+        "requirement": "Same-lift, equal-rational-lambda, phase-adapted, opposite-character, and gate-boundary controls are all tested."
+      },
+      {
+        "id": "scope",
+        "requirement": "Only the balanced double-far bulk owner may change; BAL, other M2 owners, endpoints, M9, and global exponents require separate closure."
+      }
+    ],
+    "closing_assessment": {
+      "decision": "promote_exact_character_restoration_and_scoped_gauge_ruling_scalar_interface_obstruction",
+      "graph_mutation": true,
+      "terminal_label": "broad_narrow_no_go",
+      "main_result": "The combined linear/residue term exactly restores -i(-1)^m chi_4(d)chi_4(h); equal-rational lifts have a common full carrier and common gates but distinct amplitudes. Raw gradient vectors, gradient-surface normals, and one-body Hessians are different determinant objects, and none has the missing fixed-block scalar interface. Gauge-robust fixed-Q rulings survive both strict gates, while positive capacities remain one factor L above target. The standard broad--narrow mechanism is parked without disproving BAL.",
+      "resulting_graph_sha256": "3c5003b1478d78b8469d4220ad305bb06ee0f869b9c4a741e7211642eeb52cc7",
+      "exponent_change": false,
+      "next_round": 137
+    }
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "c43058006cec6849cd17a49e6a7a5298f5a3c124b34d2333b3279adcb54da1d1",
+    "generated_at": "2026-08-23T14:28:53.294575+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

@@ -1,0 +1,224 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-hard-top-radical-long-channel-exact-collision-control",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Hard-TOP radical long-channel sector and exact-collision control",
+        "status": "proved_internal",
+        "statement_tex": "For the literal nonsquare hard-TOP scalar T_L^ns=sum_(D>1 squarefree)sum_(t>=1)B_D(t)e(tJ sqrt(D)), with c_-L^2<=Dt^2<=c_+L^2 on support and sum_t|B_D(t)|<<_epsilon(1+L/sqrt(D))L^epsilon, the incidence map h=g d_1u^2, m=g d_2v^2, D=d_1d_2, t=guv is bijective subject to d_1,d_2 squarefree, (d_1u,d_2v)=1, g,d_1,u odd, and d_2v^2<=d_1u^2<=4d_2v^2, with every literal profile, endpoint, support condition, and zero extension retained. For every fixed C>0, the aggregate D<=CL is O_(C,epsilon)(L^(3/2)X^epsilon); equivalently every fixed t>=tau sqrt(L) sector is target-safe. At one fixed J, at most one channel has J sqrt(D) rational; the base collision graph J(sqrt(D_1)-sqrt(D_2)) in Z has at most one unequal unordered edge. Every cross-channel atom relation J(t_1sqrt(D_1)-t_2sqrt(D_2))=k, D_1!=D_2 and k!=0, uses the same possible unordered radical pair, with coefficient triples rationally proportional. Trivial same-atom loops are separated from nontrivial same-channel repetitions, which require the unique rational channel; a rational channel cannot coexist with a cross-channel relation. Every channel in this exact classification is target-safe. This proves no positive modulo-one gap, near-collision estimate, owner-complete strict polynomial L-range, or full hard-TOP target.",
+        "dependencies": [
+          "M9-M2-hard-top-truncated-divisor-energy-and-radical-control"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "proofs/kernels/m9_m2_hard_top_radical_long_channel_collision_common_test_obstruction.md",
+            "rounds/codex-managed/m9-m2-hard-top-truncated-divisor-additive-twist-gate/reports/literal_radical_frequency_attack.md",
+            "rounds/codex-managed/m9-m2-hard-top-truncated-divisor-additive-twist-gate/reports/blind_radical_frequency_rederivation.md",
+            "rounds/codex-managed/m9-m2-hard-top-truncated-divisor-additive-twist-gate/candidates/conductor_round161_radical_control_and_obstruction.md",
+            "rounds/codex-managed/m9-m2-hard-top-truncated-divisor-additive-twist-gate/controls/conductor_round161_radical_capacity_controls.md",
+            "rounds/codex-managed/m9-m2-hard-top-truncated-divisor-additive-twist-gate/reviews/blind_post_repair_radical_collision_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-truncated-divisor-additive-twist-gate/reviews/projective_power_scope_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-truncated-divisor-additive-twist-gate/reviews/downstream_scope_graph_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-truncated-divisor-additive-twist-gate/reviews/conductor_round161_adjudication.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use this lemma to remove only D<=CL, equivalently fixed t>=tau sqrt(L), and the finitely many exact-collision channels. The remaining theorem must begin with the literal signed t=1, D asymptotic to L^2 close-factor scalar and then cover L<<D<<L^2, t<<sqrt(L), including near-collision collars."
+      },
+      {
+        "id": "M9-M2-hard-top-radical-frequency-common-test-source-obstruction",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Hard-TOP radical-frequency common-test and named-source obstruction",
+        "status": "proved_internal",
+        "statement_tex": "On t=1 the literal coefficient is B_D(1)=1_(D asymptotic to L^2)(L^2/D)^(3/4) sum_(d_1d_2=D,d_1 odd,d_2<=d_1<=4d_2) chi_4(d_1)eta_L(d_1)Phi(d_1/(H+1))W(sqrt(q_Xd_1/(4d_2))), with the even-D branch retained through d_2. On Q asymptotic to L^2 ambient squarefree rows, the one-column evaluation operator a maps to (a e(J sqrt(D)))_D and has exact norm sqrt(Q). The phase-aligned diagnostic A_D(t)=1_(t=1)e(-J sqrt(D)) has nuclear norm sqrt(Q) and evaluation Q, obeying the accepted coarse support, L^2-energy, and row-mass scales. Hence support, positive energy, fixed-channel capacity, exact-collision sparsity, and a coefficient-uniform common-test, Bessel, large-sieve, or Hilbert-projective theorem do not imply the L^(3/2) target; the positive physical Cauchy capacity remains L^(2+o(1)), missing L^(1/2-o(1)). The diagnostic is not the literal coefficient and gives no physical lower bound or nonzero-row density. Montgomery--Vaughan requires one common coefficient vector; Bombieri--Iwaniec requires separable coefficients and charges absolute collision forms; Robert--Sargos four-root spacing is not the fixed-J modulo-one collision problem, while its direct monomial theorem, even after fictitious cost-one coefficient separation, restores X^(1/8)L^(3/2)+L^(7/4) and gives no strict hard-TOP range; Miller requires coefficients of one fixed GL(3) cusp form. This parks only these named coefficient-uniform and source routes. It does not exclude an actual-coefficient signed theorem, a bespoke joint vector theorem, another source, or the physical target.",
+        "dependencies": [
+          "M9-M2-hard-top-truncated-divisor-energy-and-radical-control",
+          "M9-M2-hard-top-radical-long-channel-exact-collision-control"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "proofs/kernels/m9_m2_hard_top_radical_long_channel_collision_common_test_obstruction.md",
+            "rounds/codex-managed/m9-m2-hard-top-truncated-divisor-additive-twist-gate/reports/literal_radical_frequency_attack.md",
+            "rounds/codex-managed/m9-m2-hard-top-truncated-divisor-additive-twist-gate/reports/blind_radical_frequency_rederivation.md",
+            "rounds/codex-managed/m9-m2-hard-top-truncated-divisor-additive-twist-gate/reports/square_root_spacing_source_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-hard-top-truncated-divisor-additive-twist-gate/candidates/conductor_round161_radical_control_and_obstruction.md",
+            "rounds/codex-managed/m9-m2-hard-top-truncated-divisor-additive-twist-gate/controls/conductor_round161_radical_capacity_controls.md",
+            "rounds/codex-managed/m9-m2-hard-top-truncated-divisor-additive-twist-gate/reviews/projective_power_scope_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-truncated-divisor-additive-twist-gate/reviews/source_power_seam_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-truncated-divisor-additive-twist-gate/reviews/downstream_scope_graph_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-truncated-divisor-additive-twist-gate/reviews/conductor_round161_adjudication.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Park coefficient-uniform radical large sieves, positive Bessel/projective placement, and the four named source interfaces. Reopen only with a coefficient-sensitive fixed-centre theorem for the literal signed t=1 close-factor sequence, or an equivalent joint theorem that fails on the phase-aligned diagnostic; then cover the remaining few-point channels."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "dependencies_added": [
+          "M9-M2-hard-top-radical-long-channel-exact-collision-control",
+          "M9-M2-hard-top-radical-frequency-common-test-source-obstruction"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "proofs/kernels/m9_m2_hard_top_radical_long_channel_collision_common_test_obstruction.md",
+            "rounds/codex-managed/m9-m2-hard-top-truncated-divisor-additive-twist-gate/reports/literal_radical_frequency_attack.md",
+            "rounds/codex-managed/m9-m2-hard-top-truncated-divisor-additive-twist-gate/reports/blind_radical_frequency_rederivation.md",
+            "rounds/codex-managed/m9-m2-hard-top-truncated-divisor-additive-twist-gate/reports/square_root_spacing_source_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-hard-top-truncated-divisor-additive-twist-gate/reviews/conductor_round161_adjudication.md"
+          ]
+        },
+        "next_action": "Remove only the proved D<=CL or fixed t>=tau sqrt(L) sector and the finitely many exact-collision channels. Prove the literal fixed-centre signed t=1 close-factor estimate over D asymptotic to L^2, then the compatible L<<D<<L^2 few-point channels and near-collision collars. Park coefficient-uniform common tests and the named audited source routes."
+      },
+      {
+        "id": "M9-M2-top-endpoint-density-discrepancy-energy",
+        "dependencies_added": [
+          "M9-M2-hard-top-radical-long-channel-exact-collision-control",
+          "M9-M2-hard-top-radical-frequency-common-test-source-obstruction"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "proofs/kernels/m9_m2_hard_top_radical_long_channel_collision_common_test_obstruction.md",
+            "rounds/codex-managed/m9-m2-hard-top-truncated-divisor-additive-twist-gate/reports/literal_radical_frequency_attack.md",
+            "rounds/codex-managed/m9-m2-hard-top-truncated-divisor-additive-twist-gate/reports/blind_radical_frequency_rederivation.md",
+            "rounds/codex-managed/m9-m2-hard-top-truncated-divisor-additive-twist-gate/reports/square_root_spacing_source_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-hard-top-truncated-divisor-additive-twist-gate/reviews/conductor_round161_adjudication.md"
+          ]
+        },
+        "next_action": "Preserve the accepted one-count and completed-real-part connector. Before transferring anything back to that energy, prove a coefficient-sensitive fixed-centre signed estimate for the literal t=1 close-factor scalar and then the remaining D>>L, t<<sqrt(L) channels. The long-channel sector and common-test obstruction are not completed-real-part estimates."
+      }
+    ],
+    "correct_rejected": [],
+    "reject": [
+      {
+        "id": "Round161-long-channel-sector-is-owner-complete-strict-polynomial-range",
+        "reason": "D<=CL, equivalently fixed t>=tau sqrt(L), is a target-safe channel sector only; every growing polynomial hard-TOP block still contains D>>L and t=1,D asymptotic to L^2."
+      },
+      {
+        "id": "Round161-exact-collision-sparsity-controls-near-collision-collars",
+        "reason": "Rational independence classifies exact equalities but supplies no positive lower bound for nonzero modulo-one gaps at the moving channel resolution."
+      },
+      {
+        "id": "Round161-phase-aligned-one-column-array-is-the-physical-coefficient",
+        "reason": "The diagnostic obeys only the coarse support and norm interface; it need not have the divisor incidence, profiles, chi_4 signs, zero pattern, or cancellation of the literal B_D(1)."
+      },
+      {
+        "id": "Round161-one-column-projective-capacity-is-a-physical-lower-bound",
+        "reason": "The exact L^2 saturation is a coefficient-uniform route capacity, not a lower bound for the signed literal scalar or its coefficient mass."
+      },
+      {
+        "id": "Round161-support-energy-and-exact-collisions-prove-the-target",
+        "reason": "A phase-aligned real or complex one-column array satisfies those coarse controls and has L^2 evaluation, so the actual arithmetic coefficient must supply additional signed structure."
+      },
+      {
+        "id": "Round161-varying-BD-rows-enter-a-common-vector-large-sieve-for-free",
+        "reason": "A common-vector theorem does not accept D-dependent coefficient rows; a literal decomposition and its projective and collision norms must be proved and priced first."
+      },
+      {
+        "id": "Round161-close-semiprime-singleton-fibres-prove-family-lower-mass",
+        "reason": "A singleton incidence shows only that coefficientwise divisor cancellation is unavailable on that row; profiles may vanish and no density or aligned lower mass is proved."
+      },
+      {
+        "id": "Round161-Robert-Sargos-four-root-count-is-the-fixed-J-modulo-one-collision-theorem",
+        "reason": "The source theorem counts a real Euclidean four-root inequality, whereas the owner requires fixed-centre circular differences with an integer wrap and coefficient weights."
+      },
+      {
+        "id": "Round161-direct-Robert-Sargos-monomial-bound-proves-a-strict-hard-TOP-range",
+        "reason": "After restoring parameters, its leading term is X^(1/8)L^(3/2), at least the L^2 trivial scale throughout L<<X^(1/4), with equality only at the boundary."
+      },
+      {
+        "id": "Round161-named-source-no-match-excludes-every-future-joint-theorem",
+        "reason": "Only the audited Montgomery--Vaughan, Bombieri--Iwaniec, Robert--Sargos, and Miller interfaces are excluded at target-saving cost; another coefficient-sensitive theorem remains possible."
+      },
+      {
+        "id": "Round161-t1-close-factor-target-is-proved",
+        "reason": "The literal t=1 signed estimate is explicitly the first open physical statement; accepted positive energy gives only L^(2+o(1))."
+      },
+      {
+        "id": "Round161-radical-frequency-no-go-closes-hard-TOP-or-M9-M2",
+        "reason": "The no-go parks a family of coefficient-uniform and named-source routes; the hard-TOP signed cone and density-discrepancy owners remain open, as do BAL and UNBAL."
+      },
+      {
+        "id": "Round161-radical-frequency-obstruction-improves-a-global-exponent",
+        "reason": "No M2 parent, M9, or unconditional bridge is closed, so the internal one-third theorem and external Li--Yang benchmark are unchanged."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M2-hard-top-truncated-divisor-energy-and-radical-control",
+        "reason": "Its accepted Round-137 statement and status remain unchanged; the new long-channel node depends on it in the forward direction."
+      },
+      {
+        "id": "M9-M2-hard-top-product-fibre-transform-self-return",
+        "reason": "Round 161 invokes no new B-process, divisor switch, full-divisor completion, or reciprocal self-return claim."
+      },
+      {
+        "id": "M9-M2-hard-top-square-product-entry-sector",
+        "reason": "The round treats only the already separated nonsquare scalar and does not alter the square-entry owner."
+      },
+      {
+        "id": "M9-M2-physical-one-count-assembly",
+        "reason": "The hard-TOP positive owner remains open, so the physical M2 assembly cannot be promoted."
+      },
+      {
+        "id": "M9-M2-smooth-balanced-quarter-packet-estimate",
+        "reason": "Round 161 treats no balanced smooth packet."
+      },
+      {
+        "id": "M9-M2-smooth-unbalanced-three-quarter-estimate",
+        "reason": "Round 161 treats no unbalanced smooth packet."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Hard TOP, balanced smooth, and unbalanced smooth mandatory parents all remain open."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "Round 161 treats no M1 owner."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "No all-owner endpoint estimate follows from the one nonsquare hard-TOP scalar."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, all three mandatory M9-M2 parents, and endpoint uniformity remain open."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The bridge remains conditional on complete M9."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The strongest theorem proved from the internal architecture remains exponent one third."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "The separately audited external exponent remains (3292+25sqrt(1717))/13762."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The quarter target still lacks M9-M1, all three mandatory M9-M2 parents, endpoint uniformity, M9, and an unconditional bridge."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 161 proves the exact radical-incidence dictionary, removes the complete fixed-constant long-channel sector, classifies all exact fixed-centre base and atom collisions, and isolates the literal t=1 close-factor scalar. It rigorously parks coefficient-uniform common-test/projective placement and four named source interfaces while preserving the possibility of a new actual-coefficient theorem. No hard-TOP target, strict owner-complete range, downstream estimate, or global exponent changes."
+  }
+}

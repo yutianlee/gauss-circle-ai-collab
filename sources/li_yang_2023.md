@@ -11,7 +11,7 @@ and Dirichlet's Divisor Problem*, arXiv:2308.14859v2 [math.NT], revised
 - Primary HTML: https://arxiv.org/html/2308.14859v2
 - ArXiv-issued DOI: https://doi.org/10.48550/arXiv.2308.14859
 
-The arXiv record contains only v1 and v2. As checked on 17 August 2026,
+The arXiv record contains only v1 and v2. As checked on 23 August 2026,
 the current author page still labels the item a preprint; no journal
 version or public erratum was found.
 
@@ -39,7 +39,8 @@ Theorem 4.2 are not imported in their full printed generality.
 
 ## Literal corrections required
 
-The v2 source and PDF contain four uniquely repairable defects:
+The v2 source and PDF contain five defects that are repaired on the final
+narrow application:
 
 1. Definition 4.1 (4.4) must have \(M<T^{7/16}\), not
    \(M<T^{-7/16}\). Li--Yang (5.11) and Bourgain--Watt v1 (4.3)
@@ -52,11 +53,57 @@ The v2 source and PDF contain four uniquely repairable defects:
 4. The isolated \(\sqrt{-1-14x}\) in (5.27) is
    \(\sqrt{-1-8x}\), as forced by the adjacent equations and direct
    algebra.
+5. Lemma 4.1 condition (4.6), after inserting the Case-A \(N\) from
+   (4.8), does not become printed (4.9). Corrected (5.23) instead verifies
+   the original condition (4.6) directly on the final range, so (4.9) is
+   bypassed.
 
 Lemma 3.4 also swaps the names of the null and circular plate exponents
 in its prose. The subsequent localization conditions are geometrically
 correct: \(k\) has width \(\eta^{\beta_1}K\) in the curved direction and
 \(l\) has width \(\eta^{\beta_2}L\) in the flat direction.
+
+The v2 first-spacing presentation has another source-interface warning:
+the exact \(G_q\) norm and the introductory four-vector begin with \(l\),
+whereas the later Section-4 sketch prints \(k\) as the first coordinate.
+The narrow repaired theorem uses the exact norm. Any new direct
+double-large-sieve application must audit the upstream formula rather than
+silently select one four-vector.
+
+## Lemma-4.1 source-condition repair
+
+With \(\lambda=969/14000\),
+
+\[
+N_A=H^{-16/25}M^{41/25}T^{-49/100}(\log T)^\lambda.
+\]
+
+The exact quotient in Lemma 4.1 condition (4.6) is
+
+\[
+\frac{N_A^{6-q}}{H^{2q-6}(M^3/T)^{4-q}}
+\asymp
+\left(\frac MH\right)^{(34q-54)/25}
+T^{(106-51q)/100}(\log T)^{\lambda(6-q)}.
+\]
+
+This is not printed (4.9). After both candidate conditions are compared
+at the common power \(6-q\), the printed allowed right side divided by
+the correct one is \(T^2/M^6\). At \(H/M=T^{-1/3}\),
+\(M=T^{1/2}\), the original condition has fixed \(T\)-power
+\(17(6-q)/300>0\), while printed (4.9) fails.
+
+On the final range, corrected (5.23) cross-multiplies, with the two
+negative factors retained, to
+
+\[
+(216x+106)-q(136x+51)>0,
+\]
+
+which is exactly the strict \(T\)-power form of original (4.6) after
+\(H/M=T^x\). Thus the final proof invokes Lemma 4.1 through (4.6)
+directly and never needs (4.9). General printed Theorem 4.2 is not
+certified with (4.9) as stated.
 
 ## Two restricted-range supplements
 
@@ -126,10 +173,15 @@ the internal quarter route, or the \(1/4\) target.
 ## Audited by
 
 Round-95 source auditor and independent Codex conductor seam review,
-2026-08-17.
+augmented by the Round-133 primary-source and two independent algebra
+audits, 2026-08-23.
 
 ## Evidence
 
 - `rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/reports/li_yang_strict_source_audit.md`
 - `rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/reviews/conductor_round95_li_yang_repair.md`
 - `rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/controls/li_yang_exact_arithmetic_check.txt`
+- `rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reports/li_yang_bi_exact_source_card.md`
+- `rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reviews/blind_post_unmask_source_condition_seam.md`
+- `rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reviews/source_post_unmask_parameter_and_scope_audit.md`
+- `rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reviews/conductor_round133_bi_adjudication.md`

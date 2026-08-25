@@ -1,0 +1,224 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 139,
+    "round_type": "m9_m1_lower_denominator_displacement_quadratic_gate",
+    "campaign_id": "m9-m1-lower-denominator-displacement-quadratic-gate",
+    "title": "M1 lower scalar exact denominator-displacement quadratic gate",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "5e82825804e5bb2de43779e7121e76bcfaa4b89d7ac0977ca2ceb84a33be8552",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "planned_numerical_percent": 0,
+      "literature_policy": "The round is an exact internal scalar gate. A named Weyl, Gauss, Salie, Poisson, or spectral estimate is admissible only after its variable ranges, coefficient class, completion cost, absolute-value placement, q-uniformity, and complete R-power ledger are stated and checked."
+    },
+    "target_obligations": [
+      "M9-M1-global-lower-radial-signed-estimate",
+      "M9-M1-lower-signed-farey-row-resonance-reduction",
+      "M9-M1-lower-signed-farey-transform-radical-obstruction"
+    ],
+    "frozen_target": {
+      "question": "Can the exact prescribed-centre lower scalar be bounded at R X^epsilon after the centre-constrained substitution N=y^2+q and d=y-v by a genuinely noninvertible quadratic Gauss or Salie cancellation in the physical displacement variable; if not, what is the first exact Taylor, completion, alias, boundary, self-return, or capacity obstruction?",
+      "reference_formula": "Let R=X^(1/4), y=floor(sqrt X), N=floor X, q=N-y^2 with 0<=q<=2y. The exact scalar is F_N=sum_(h>=1)h^(-1)sum_(0<=v<y)chi_4(y-v)V_low(4R^2h^2/(y-v)^2)e(h(q+v^2)/(y-v)), with literal zero extension and target |F_N|<<_epsilon R X^epsilon.",
+      "quantities": [
+        "The identity N/(y-v)=y+v+(q+v^2)/(y-v) is exact; the discarded term h(y+v) is integral.",
+        "For y-v odd, the complete physical phase is h(q+v^2)/(y-v)+(y-v-1)/4; even y-v terms vanish.",
+        "The exact quadratic-core expansion has correction h v(q+v^2)/(y(y-v)); it may not be dropped or bounded outside its proved range.",
+        "The literal profile restricts h relative to y-v and must remain smooth with every endpoint and zero-extension owner.",
+        "Round 138 already deletes complete denominator rows and both y^(-2) carrier collars; the present mechanism must either estimate the full scalar or map its gain back to that exact residual.",
+        "The scalar has y^(1+o(1)) absolute capacity and target R; any partial modulus, completion, or dyadic sum must return to R.",
+        "Fourth-power q=0, maximal q=2y, small v, v near y, half-integer stationary aliases, both parities of y, and both scalar signs are mandatory controls."
+      ]
+    },
+    "completion_criteria": [
+      "Derive the displacement identity in both directions, including q, parity, literal profile support, zero extension, floors, and both signs.",
+      "Separate a rational quadratic core only with an exact formula for its correction and a complete range-by-range R-power ledger.",
+      "For every Gauss, Salie, Weyl, Poisson, completion, or differencing step, retain the actual h-weight, character carrier, q-dependence, and boundary terms.",
+      "Test q=0, q=2y, small and terminal displacement, stationary half-integer aliases, fourth powers, and any claimed complete-sum cancellation.",
+      "Preserve scalar directionality: no displacement-block modulus, arbitrary coefficient theorem, centre average, principal-only transform, or desired circle estimate may substitute for the literal scalar.",
+      "Close under exactly one label: target_bound, strict_displacement_quadratic_reduction, or displacement_quadratic_no_go.",
+      "Make no lower-GAR, blockwise M1, M9-M1, M2, endpoint, M9, quarter, or exponent promotion unless every corresponding owner closes."
+    ],
+    "controls": [
+      "exact_N_y2_q_and_displacement_bijection",
+      "literal_profile_support_zero_extension_and_both_signs",
+      "physical_mod_four_carrier_and_y_parity",
+      "exact_quadratic_core_and_Taylor_correction",
+      "small_v_and_terminal_v_boundaries",
+      "dyadic_h_v_capacity_ledger",
+      "quadratic_Gauss_Salie_completion_cost",
+      "stationary_alias_and_half_integer_tubes",
+      "q_zero_q_max_and_real_centre_uniformity",
+      "map_back_to_round138_exact_residual",
+      "noninvertibility_directionality_and_self_return",
+      "lower_GAR_and_downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "literal_displacement_quadratic_scalar_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "complete",
+        "target": "Exploit the exact N=y^2+q, d=y-v scalar to prove the R target, a strictly smaller owner-complete signed survivor, or the first rigorous obstruction to physical quadratic Gauss or Salie cancellation.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0823_full_proof_strategy.md",
+          "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/synthesis.md",
+          "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/synthesis.md",
+          "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/reviews/conductor_round138_signed_farey_adjudication.md",
+          "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/blind_statement.md"
+        ],
+        "required_controls": [
+          "exact_N_y2_q_and_displacement_bijection",
+          "literal_profile_support_zero_extension_and_both_signs",
+          "physical_mod_four_carrier_and_y_parity",
+          "exact_quadratic_core_and_Taylor_correction",
+          "small_v_and_terminal_v_boundaries",
+          "dyadic_h_v_capacity_ledger",
+          "quadratic_Gauss_Salie_completion_cost",
+          "stationary_alias_and_half_integer_tubes",
+          "q_zero_q_max_and_real_centre_uniformity",
+          "map_back_to_round138_exact_residual",
+          "noninvertibility_directionality_and_self_return",
+          "lower_GAR_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section analytic report.",
+          "An exact displacement scalar and full R-power ledger.",
+          "A target estimate, strict owner-complete signed survivor, or first exact quadratic-completion obstruction.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/reports/literal_displacement_quadratic_scalar_attack.md"
+      },
+      {
+        "id": "blind_displacement_scalar_feasibility",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "complete",
+        "target": "Independently decide from the exact displacement statement whether its physical mod-four phase and rational quadratic core yield an R-bound, a strict signed reduction, or a rigorous completion or alias obstruction.",
+        "context_files": [
+          "problems/gauss_circle.md",
+          "state/control_models.md",
+          "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "all strategy files",
+          "all Round-121 through Round-139 nonblind artifacts",
+          "all Round-139 sibling reports"
+        ],
+        "required_controls": [
+          "exact_N_y2_q_and_displacement_bijection",
+          "literal_profile_support_zero_extension_and_both_signs",
+          "physical_mod_four_carrier_and_y_parity",
+          "exact_quadratic_core_and_Taylor_correction",
+          "small_v_and_terminal_v_boundaries",
+          "dyadic_h_v_capacity_ledger",
+          "quadratic_Gauss_Salie_completion_cost",
+          "stationary_alias_and_half_integer_tubes",
+          "q_zero_q_max_and_real_centre_uniformity",
+          "map_back_to_round138_exact_residual",
+          "noninvertibility_directionality_and_self_return",
+          "lower_GAR_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section statement-only report.",
+          "A self-contained proof attempt with exact completion and falsification controls.",
+          "A target estimate, strict displacement survivor, or first exact no-go step.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/reports/blind_displacement_scalar_feasibility.md"
+      },
+      {
+        "id": "displacement_completion_hostile_audit",
+        "role": "seam_reviewer",
+        "access_mode": "selected_context",
+        "status": "complete",
+        "target": "Hostilely audit every displacement, Taylor, quadratic completion, stationary-alias, and Gauss or Salie claim for illegal approximation, lost direction, q-nonuniformity, boundary leakage, self-return, and downstream overclaim.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0823_full_proof_strategy.md",
+          "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/synthesis.md",
+          "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/candidates/conductor_round138_scalar_rows_and_resonance_fibres.md",
+          "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/reviews/hostile_post_unmask_owner_and_capacity_audit.md",
+          "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/synthesis.md",
+          "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/blind_statement.md"
+        ],
+        "required_controls": [
+          "exact_N_y2_q_and_displacement_bijection",
+          "literal_profile_support_zero_extension_and_both_signs",
+          "physical_mod_four_carrier_and_y_parity",
+          "exact_quadratic_core_and_Taylor_correction",
+          "small_v_and_terminal_v_boundaries",
+          "dyadic_h_v_capacity_ledger",
+          "quadratic_Gauss_Salie_completion_cost",
+          "stationary_alias_and_half_integer_tubes",
+          "q_zero_q_max_and_real_centre_uniformity",
+          "map_back_to_round138_exact_residual",
+          "noninvertibility_directionality_and_self_return",
+          "lower_GAR_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section hostile analytic report.",
+          "An equation-by-equation audit of the exact quadratic core, correction, completion, alias, and capacity ledgers.",
+          "Certification, strict reduction, scope correction, or rigorous no-go.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/reports/displacement_completion_hostile_audit.md"
+      }
+    ],
+    "closing_assessment": {
+      "decision": "promote_exact_curvature_collar_and_full_quadratic_completion_obstruction",
+      "graph_mutation": true,
+      "terminal_label": "strict_displacement_quadratic_reduction",
+      "main_result": "The complete exact-phase collar v<=rho y/sqrt(h) is O(R log X), so the literal lower scalar is target-equivalent to its complementary displacement tail. The prescribed-centre Taylor window is also target-safe, but full quadratic completion is obstructed by correction variation, ordinary-Gauss Fourier self-return, and R^(3/2) full-alias capacity. The tail and Round-138 residual bounds remain open.",
+      "resulting_graph_sha256": "a9f766ddfc55c1aa9dd0561d8a406996627ac8701313af063c90e2422cf54eaa",
+      "exponent_change": false,
+      "next_round": 140
+    },
+    "review_seams": [
+      {
+        "id": "dictionary",
+        "requirement": "The N=y^2+q and d=y-v identity is exact in both directions, with q range, parity, profile, floors, zero extension, and signs retained."
+      },
+      {
+        "id": "quadratic_core",
+        "requirement": "Every rational quadratic core is accompanied by its exact correction and a proved range in which completion or approximation is legal."
+      },
+      {
+        "id": "completion",
+        "requirement": "Gauss, Salie, Weyl, Poisson, or differencing steps state the exact modulus, length, coefficients, gcd cases, boundary terms, and completion cost."
+      },
+      {
+        "id": "capacity",
+        "requirement": "Every dyadic or stationary estimate returns to the R scalar target uniformly in h, v, q, y, and real X."
+      },
+      {
+        "id": "directionality",
+        "requirement": "No partial modulus, arbitrary array, centre average, principal-only identity, or invertible self-return substitutes for the literal signed scalar."
+      },
+      {
+        "id": "scope",
+        "requirement": "Only the displacement scalar or its exact Round-138 residual may change; every lower-GAR and downstream owner requires separate closure."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "5e82825804e5bb2de43779e7121e76bcfaa4b89d7ac0977ca2ceb84a33be8552",
+    "generated_at": "2026-08-23T16:55:00.790514+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

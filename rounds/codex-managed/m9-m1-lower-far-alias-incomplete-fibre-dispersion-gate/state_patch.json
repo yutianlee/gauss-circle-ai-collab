@@ -1,0 +1,252 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-lower-far-cone-microscopic-cell-reduction",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Exact far-cone and microscopic nearest-square reduction",
+        "status": "proved_internal",
+        "statement_tex": "Let R=X^(1/4), y=floor(sqrt X), N=floor X=y^2+q with 0<=q<=2y, and fix 0<rho<1/8. Let A_rho(m) be the exact Round-140 incomplete coefficient with least-odd threshold r_h, and let C(m)=sum_(hr=m, r odd, r>4h)chi_4(r). On the disjoint dyadic blocks I_M=[M,2M) intersected with the profile support, put k_m=floor(sqrt(Nm)+1/2) and j_m=k_m^2-Nm. Then the exact frozen scalar equals sum_M sum_(m in I_M, |j_m|>sqrt M) m^(-3/4)V_low(R^2m/N)C(m)e(sqrt(Nm))+O_epsilon(X^epsilon). The exact floor-to-cone correction has weighted mass O(log X). The phase cell indexed by k has real m-length 2k/N<<R^(-1), and the quadratic-congruence bound rho_N(j)<<_epsilon N^epsilon|j|^(1/2) makes all nonzero cells 0<|j_m|<=sqrt M target-safe. Exact radicals are m=Dt^2 when N=Du^2 and are target-safe. The remaining nonresonant cone scalar is not estimated.",
+        "dependencies": [
+          "M9-M1-lower-post-collar-smoothed-far-alias-reduction"
+        ],
+        "implies": [
+          "M9-M1-global-lower-radial-signed-estimate"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/reports/near_radical_phase_cell_attack.md",
+            "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/reports/blind_incomplete_fibre_additive_twist.md",
+            "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/reports/sqrt_divisor_twist_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/candidates/conductor_round141_cone_nonresonant_reduction.md",
+            "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/reviews/discovery_post_unmask_cone_quarter_mode_audit.md",
+            "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/reviews/source_post_unmask_phase_pairing_audit.md",
+            "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/reviews/blind_post_unmask_source_mellin_audit.md",
+            "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/reviews/conductor_round141_incomplete_fibre_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/controls/conductor_round141_controls.md",
+            "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Prove the fixed-centre nonresonant cone estimate sum_M sum_(m in I_M, |k_m^2-Nm|>sqrt M)m^(-3/4)V_low(R^2m/N)C(m)e(sqrt(Nm))<<_epsilon X^epsilon. The accepted congruence count, divisor pairing, generic additive cancellation, source imports, and another canonical transform do not supply it."
+      },
+      {
+        "id": "M9-M1-lower-incomplete-fibre-dispersion-obstruction",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Singleton cells, exact divisor pairing, quarter mode, and source obstruction",
+        "status": "proved_internal",
+        "statement_tex": "For the far scalar, nearest-integer phase cells have length O(R^(-1)) and contain at most one integer, while the elementary congruence count prices a window |j|<=J by M^(-3/4)J^(3/2)X^epsilon and reaches target scale only at J=sqrt M. Writing m=2^nu n with n odd gives the exact identity sigma_chi4(n)=(1+chi_4(n))A_nu(n)+B_nu(n): on chi_4(n)=-1 it is blind, and on chi_4(n)=1 it returns the complete r_2(2^nu n)/4 coefficient plus an exact owner-sized central band. The literal incomplete coefficient satisfies sum_(m<=M)A_rho(m)e(m/4)=i*pi*M/8+O(M^(3/4)) and its m^(-3/4)-weighted version is i*pi*M^(1/4)/2+O(log M), so uniform additive cancellation and low variation are false. After target-safe ratio smoothing the exact double-Mellin arithmetic factor is 4^(-t)zeta(s+t)L(s-t,chi_4), but the audited Robert--Sargos, Sargos--Wu, Tao--Trudgian--Yang, complete radial, standard-twist, subconvex, and moment routes all retain a positive R-power, have the wrong coefficient or scalar direction, or violate a stated hypothesis. These are scoped no-go controls, not a signed lower bound or target failure.",
+        "dependencies": [
+          "M9-M1-lower-far-cone-microscopic-cell-reduction",
+          "M9-M1-lower-height-alias-rank-one-product-fibre-obstruction"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/reports/near_radical_phase_cell_attack.md",
+            "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/reports/blind_incomplete_fibre_additive_twist.md",
+            "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/reports/sqrt_divisor_twist_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/candidates/conductor_round141_cone_nonresonant_reduction.md",
+            "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/reviews/discovery_post_unmask_cone_quarter_mode_audit.md",
+            "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/reviews/source_post_unmask_phase_pairing_audit.md",
+            "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/reviews/blind_post_unmask_source_mellin_audit.md",
+            "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/reviews/conductor_round141_incomplete_fibre_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/controls/conductor_round141_controls.md",
+            "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Park singleton-cell cancellation, wider near-radical extrapolation from the elementary root count, full-divisor completion, uniform additive partial sums, low coefficient variation, sharp Perron truncation, direct imports of the audited theorems, and another invertible transform. Reopen only with an actual fixed-centre signed correlation mechanism for the nonresonant cone."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-global-lower-radial-signed-estimate",
+        "dependencies_added": [
+          "M9-M1-lower-far-cone-microscopic-cell-reduction",
+          "M9-M1-lower-incomplete-fibre-dispersion-obstruction"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/reports/near_radical_phase_cell_attack.md",
+            "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/reports/blind_incomplete_fibre_additive_twist.md",
+            "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/reports/sqrt_divisor_twist_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/reviews/conductor_round141_incomplete_fibre_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The exact Round-140 far scalar is now target-equivalent to the floor-free cone scalar restricted to |k_m^2-Nm|>sqrt M. Prove this fixed-centre signed nonresonant cone estimate at X^epsilon; retain the unsquared direction and the open Round-138 cross term."
+      },
+      {
+        "id": "M9-M1-lower-post-collar-smoothed-far-alias-reduction",
+        "dependencies_added": [
+          "M9-M1-lower-far-cone-microscopic-cell-reduction"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/reviews/conductor_round141_incomplete_fibre_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Use the proved floor-free cone and microscopic-cell reduction. The sole far survivor is the fixed-centre cone scalar on |k_m^2-Nm|>sqrt M; no square identity or cross-term bound follows."
+      },
+      {
+        "id": "M9-M1-lower-height-alias-rank-one-product-fibre-obstruction",
+        "dependencies_added": [
+          "M9-M1-lower-incomplete-fibre-dispersion-obstruction"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/reports/near_radical_phase_cell_attack.md",
+            "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/reports/blind_incomplete_fibre_additive_twist.md",
+            "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/reports/sqrt_divisor_twist_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/reviews/conductor_round141_incomplete_fibre_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Retain the exact divisor-pairing self-return, singleton phase cells, quarter-frequency main term, linear variation, source-power barriers, and canonical self-return. Reopen only with a new fixed-centre signed correlation theorem for the nonresonant cone."
+      },
+      {
+        "id": "M9-M1-lower-signed-farey-transform-radical-obstruction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/reviews/conductor_round141_incomplete_fibre_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The exact-radical control now extends to the microscopic window |k_m^2-Nm|<=sqrt M by a quadratic-congruence count. Wider cells and the fixed-centre nonresonant cone remain open; another formal transform still self-returns."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round141-exact-floor-mask-is-an-essential-main-owner",
+        "reason": "Its difference from the constant cone r>4h has total unscaled weighted mass O(log X)."
+      },
+      {
+        "id": "Round141-nearest-integer-cells-contain-long-sums",
+        "reason": "Each cell has real m-length O(R^(-1)) and contains at most one integer on the effective support."
+      },
+      {
+        "id": "Round141-exact-radicals-are-the-only-target-safe-phase-cells",
+        "reason": "All nonzero cells with |k_m^2-Nm|<=sqrt M are target-safe by the quadratic-congruence root count."
+      },
+      {
+        "id": "Round141-microscopic-root-count-controls-all-near-radicals",
+        "reason": "For a window |j|<=J the proved ledger is M^(-3/4)J^(3/2)X^epsilon and reaches target scale only at J=sqrt M."
+      },
+      {
+        "id": "Round141-divisor-pairing-halves-the-exact-coefficient",
+        "reason": "Negative-character fibres survive untouched, while positive-character fibres introduce both a complete coefficient and an exact central band."
+      },
+      {
+        "id": "Round141-central-band-is-target-safe-by-geometry",
+        "reason": "Its raw weighted incidence capacity is R^(1/2+o(1)); actual signed cancellation is unproved."
+      },
+      {
+        "id": "Round141-negative-character-sector-vanishes",
+        "reason": "The complete and central sums vanish there, but supported prime fibres have a nonzero far coefficient."
+      },
+      {
+        "id": "Round141-raw-capacity-is-a-grouped-or-signed-lower-bound",
+        "reason": "Fibre grouping, character signs, and nonlinear phases can cancel; only raw incidence capacity was proved."
+      },
+      {
+        "id": "Round141-chi4-gives-uniform-additive-cancellation",
+        "reason": "The exact coefficient has the linear quarter-frequency main term i*pi*M/8."
+      },
+      {
+        "id": "Round141-incomplete-coefficient-has-sublinear-variation",
+        "reason": "On every sufficiently large supported plateau range its total variation is bounded below by a constant times M."
+      },
+      {
+        "id": "Round141-quarter-frequency-main-term-lower-bounds-the-target",
+        "reason": "It is a coefficient Fourier direction; nonlinear residual phases can rotate and cancel it."
+      },
+      {
+        "id": "Round141-sharp-Perron-step-has-short-rapid-tail",
+        "reason": "The nearest odd ratio is at logarithmic distance O(H^(-1)), forcing sharp height T much larger than H."
+      },
+      {
+        "id": "Round141-Robert-Sargos-direct-joint-mask-gives-R-one-half",
+        "reason": "R^(1/2+epsilon) uses the smoothed separated specialization; the direct exact-joint placement gives R^(3/4+epsilon)."
+      },
+      {
+        "id": "Round141-Sargos-Wu-Theorem9-excludes-rank-one",
+        "reason": "The genuine separated-coefficient theorem admits alpha=beta=1/2 and gives R^(2/5+epsilon); it is the adjacent joint-domain lemma that excludes alpha+beta-1=0."
+      },
+      {
+        "id": "Round141-rowwise-exponent-pair-closes-the-cone",
+        "reason": "The audited TTY pair gives R^(267/641+epsilon), still polynomially above target."
+      },
+      {
+        "id": "Round141-complete-radial-cosine-controls-each-complex-branch",
+        "reason": "Popov controls one real combination, not an individual branch, and the coefficient completion also leaves an uncontrolled cone."
+      },
+      {
+        "id": "Round141-shifted-mean-square-closes-the-Mellin-integral",
+        "reason": "Even an ideal uniform shifted mean square used through Cauchy and Plancherel gives R^(1+epsilon)."
+      },
+      {
+        "id": "Round141-second-transform-or-completion-is-a-new-saving",
+        "reason": "The transform returns the reciprocal phase and completion returns the full r_2/4 plus central and negative-character owners."
+      },
+      {
+        "id": "Round141-scalar-reduction-proves-a-square-or-residual-deletion",
+        "reason": "The reduction is unsquared; the collar-tail cross term and lift-dependent square interface remain open."
+      },
+      {
+        "id": "Round141-incomplete-fibre-analysis-proves-M1-or-an-exponent",
+        "reason": "The fixed-centre nonresonant cone, lower GAR, direct M1 parents, all M2 parents, endpoint uniformity, M9, the bridge, and the quarter target remain open."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "Round 141 sharpens only the alternative lower-radial scalar and proves neither the complete alternative bridge nor both direct blockwise M1 parents."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Hard TOP, BAL, and every required UNBAL owner remain open."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "A fixed lower-scalar cone reduction is not an all-owner endpoint-uniformity theorem."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain open."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The bridge remains conditional on the complete open M9 hypothesis."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The strongest internally proved global exponent remains one third."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "The separately audited external exponent remains (3292+25sqrt(1717))/13762."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The quarter target still lacks the fixed-centre nonresonant cone estimate, remaining M1 and M2 owners, endpoint uniformity, M9, and an unconditional final bridge."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 141 proves a floor-free cone reduction and removes a genuinely new microscopic nearest-square window by an exact quadratic-congruence count. It also proves exact divisor-pairing and quarter-frequency obstructions and gives a repaired source-power map. The decisive fixed-centre nonresonant cone estimate and every downstream exponent remain open."
+  }
+}

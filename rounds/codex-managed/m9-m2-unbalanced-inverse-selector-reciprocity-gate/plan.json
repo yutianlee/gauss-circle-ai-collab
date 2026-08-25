@@ -1,0 +1,226 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 160,
+    "round_type": "m9_m2_unbalanced_inverse_selector_reciprocity_gate",
+    "campaign_id": "m9-m2-unbalanced-inverse-selector-reciprocity-gate",
+    "title": "M2 UNBAL inverse-selector additive-reciprocity projective gate",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "4ad56f62aeb814c11c31fe655bc48da6d74639e3bd61077e9496d647c366c41d",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "planned_numerical_percent": 0,
+      "literature_policy": "Audit vector-valued odd-character trace, large-sieve, and common-test theorems only against the exact centered matrix. Preserve theorem numbers and hypotheses, absolute-value placement, moduli, the complete h range, level pieces, projective/Sobolev/Bessel norms, endpoints, and every restored X-D-L-R-K power."
+    },
+    "target_obligations": [
+      "M9-M2-smooth-unbalanced-three-quarter-estimate",
+      "M9-M2-unbalanced-truncated-divisor-fixed-centre-return",
+      "M9-M2-unbalanced-Kloosterman-dispersion-interface-obstruction",
+      "M9-M2-unbalanced-level-four-spectral-matrix-obstruction",
+      "M9-M2-physical-one-count-assembly"
+    ],
+    "frozen_target": {
+      "question": "After applying exact additive reciprocity inside the already centered nonzero-frequency inverse-selector coefficient, before every positive modulus norm, can the shorter j-modulus support a signed common-test or low-projective-cost estimate for the full flat-smooth strict-UNBAL M2 owner, or do residue classes, long h, spectral levels, moving support, or restored norms repay the entire apparent gain?",
+      "reference_formula": "R_circ(D,L;X)=sum_(g,n odd, gn asymp R) chi4(g) W(X/(gnD)) sum_(1<=h<n) gammahat_(g,n)(h) S^(chi4)_(infty,0)(4N0,h;2n), where gammahat_(g,n)(h)=n^(-1) sum_(j in J_(g,n),(j,n)=1) q_L(4Xj/(gn^2))/(gj) e(xi j/n) e(h inverse(n mod j)/j-h/(jn)). The target is O_epsilon(X^(1/4+epsilon)).",
+      "quantities": [
+        "X=N0+xi, D=X^delta, L=X^ell, R=X/D, K=XL/D^2, Delta=D/L.",
+        "1/4<=delta<1/2, 0<=ell<delta-1/4, and 178ell+1638delta>463.",
+        "For a=delta-ell, the accepted flat envelope exponent is beta(a)=min(a,(1-a)/2)>1/4.",
+        "A complete method must save X^(a-1/4) for 1/4<a<=1/3 or X^((1-2a)/4) for 1/3<=a<1/2; at a=1/3 the missing factor is X^(1/12).",
+        "The reciprocity identity e(-h inverse(j mod n)/n)=e(h inverse(n mod j)/j-h/(jn)) is exact for every coprime j,n, including even j.",
+        "The h=0 row is already target-safe and is removed exactly once; all 1<=h<n remain.",
+        "Retain primitive g=1, arbitrary gcd(N0,n), both character directions, every two-adic class, the literal moving j-support and zero extension, real-centre factors, profiles, transitions, and endpoints.",
+        "Full h summation is a hostile control and must reconstruct the original reciprocal row exactly.",
+        "No result transfers outside this one flat-smooth strict-UNBAL owner."
+      ]
+    },
+    "completion_criteria": [
+      "Independently prove the inverse-selector reciprocity identity with exact sign, representatives, parity, and normalization, and verify reconstruction of the original row under complete h summation.",
+      "Write the literal centered signed g-n-j-h scalar after reciprocity before every positive norm, preserving the moving support, real centre, character placement, and all boundary pieces.",
+      "Construct and price every n modulo j common-test or projective decomposition, including the exact class count and all projective, Sobolev, and Bessel norms.",
+      "Cover the primitive g=1 stratum and the complete long h range, not merely a short Linnik band or a fixed-h row.",
+      "If a trace formula or spectral large sieve is invoked, audit all level-4/8 holomorphic, Maass, exceptional, Eisenstein, cusp, and oldclass terms with literal theorem hypotheses.",
+      "Restore every X-D-L-R-K power and all moving-support and endpoint costs, and compare the net saving with the required boundary power.",
+      "Prove the target, prove an owner-complete strict range, or establish the smallest rigorous route-scoped reciprocity/projective capacity no-go.",
+      "Close under exactly one label: inverse_selector_reciprocity_target, strict_reciprocity_matrix_range, or inverse_selector_projective_capacity_no_go."
+    ],
+    "controls": [
+      "exact_inverse_selector_reciprocity",
+      "even_odd_j_and_representatives",
+      "centered_h_nonzero_once",
+      "full_h_self_return",
+      "primitive_g1",
+      "chi4_before_positive_norm",
+      "moving_j_support_and_zero_extension",
+      "n_mod_j_class_price",
+      "projective_Sobolev_Bessel_norms",
+      "long_h_complement",
+      "level_four_eight_spectral_ledger",
+      "boundary_power_saving",
+      "source_theorem_literal_match",
+      "flat_owner_and_downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "inverse_selector_reciprocity_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "report_complete",
+        "target": "Derive the exact reciprocity decomposition and attack the full signed g-n-j-h scalar by direct, common-test, or projective means before any positive modulus norm. Compute the complete residue-class, long-h, level, endpoint, and restored-power ledger, and prove the target, an owner-complete strict range, or the first exact capacity obstruction.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round160_m2_unbalanced_inverse_selector_reciprocity_strategy.md",
+          "rounds/codex-managed/m9-m2-unbalanced-inverse-selector-reciprocity-gate/barrier_packet.md",
+          "rounds/codex-managed/m9-m2-unbalanced-inverse-selector-reciprocity-gate/candidates/conductor_round160_reciprocity_seed.md",
+          "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/candidates/conductor_round143_level_four_matrix_obstruction.md",
+          "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/reviews/conductor_round143_level_four_matrix_adjudication.md",
+          "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/synthesis.md"
+        ],
+        "required_controls": [
+          "exact_inverse_selector_reciprocity",
+          "even_odd_j_and_representatives",
+          "centered_h_nonzero_once",
+          "full_h_self_return",
+          "primitive_g1",
+          "chi4_before_positive_norm",
+          "moving_j_support_and_zero_extension",
+          "n_mod_j_class_price",
+          "projective_Sobolev_Bessel_norms",
+          "long_h_complement",
+          "level_four_eight_spectral_ledger",
+          "boundary_power_saving",
+          "flat_owner_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section analytic report.",
+          "The exact post-reciprocity centered matrix and complete class/projective/power ledger.",
+          "A target theorem, owner-complete strict range, or first rigorous scoped obstruction.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-unbalanced-inverse-selector-reciprocity-gate/reports/inverse_selector_reciprocity_attack.md"
+      },
+      {
+        "id": "blind_reciprocity_matrix_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "report_complete",
+        "target": "Starting only from the frozen statement, prove the exact reciprocity identity and reconstruction, derive the complete g-n-j-h scalar, and independently test whether the shorter j-modulus yields a signed or low-projective-cost estimate, a strict range, or a first rigorous obstruction.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/m9-m2-unbalanced-inverse-selector-reciprocity-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "state/active_campaign.yml",
+          "all strategy files",
+          "all Round-160 nonblind artifacts",
+          "all Round-160 sibling reports",
+          "the Round-160 conductor seed"
+        ],
+        "required_controls": [
+          "exact_inverse_selector_reciprocity",
+          "even_odd_j_and_representatives",
+          "centered_h_nonzero_once",
+          "full_h_self_return",
+          "primitive_g1",
+          "moving_j_support_and_zero_extension",
+          "n_mod_j_class_price",
+          "projective_Sobolev_Bessel_norms",
+          "long_h_complement",
+          "boundary_power_saving",
+          "flat_owner_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section statement-only analytic report.",
+          "An independent sign, parity, representative, reconstruction, and target-normalization audit.",
+          "A target theorem, owner-complete strict range, or first rigorous scoped obstruction.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-unbalanced-inverse-selector-reciprocity-gate/reports/blind_reciprocity_matrix_rederivation.md"
+      },
+      {
+        "id": "reciprocity_projective_source_audit",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "status": "report_complete",
+        "target": "Audit direct, vector trace, large-sieve, and projective possibilities after reciprocity against the literal centered matrix. Hostilely test primitive g=1, the long-h complement, level-4/8 pieces, moving endpoints, source hypotheses, and restored powers, and certify only a target, strict range, or exact route-scoped capacity no-go.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round160_m2_unbalanced_inverse_selector_reciprocity_strategy.md",
+          "rounds/codex-managed/m9-m2-unbalanced-inverse-selector-reciprocity-gate/barrier_packet.md",
+          "rounds/codex-managed/m9-m2-unbalanced-inverse-selector-reciprocity-gate/candidates/conductor_round160_reciprocity_seed.md",
+          "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/reports/kuznetsov_source_hypothesis_audit.md",
+          "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/reviews/source_post_unmask_spectral_claims_audit.md",
+          "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/reviews/source_post_unmask_discovery_formula_audit.md",
+          "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/sources/primary_source_manifest.md"
+        ],
+        "required_controls": [
+          "exact_inverse_selector_reciprocity",
+          "centered_h_nonzero_once",
+          "full_h_self_return",
+          "primitive_g1",
+          "chi4_before_positive_norm",
+          "moving_j_support_and_zero_extension",
+          "n_mod_j_class_price",
+          "projective_Sobolev_Bessel_norms",
+          "long_h_complement",
+          "level_four_eight_spectral_ledger",
+          "boundary_power_saving",
+          "source_theorem_literal_match",
+          "flat_owner_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section source and hostile power audit.",
+          "Exact theorem cards or self-contained capacity ledgers with literal parameter maps.",
+          "A source-legal target or strict range, or the first precise route-scoped obstruction.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-unbalanced-inverse-selector-reciprocity-gate/reports/reciprocity_projective_source_audit.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "reciprocity_and_reconstruction",
+        "requirement": "Independently verify the additive-reciprocity sign, representative conventions, even and odd j cases, centered h removal, and complete Fourier reconstruction."
+      },
+      {
+        "id": "literal_matrix_and_projective_price",
+        "requirement": "Write the exact post-reciprocity centered matrix and charge every n modulo j class and common-test, projective, Sobolev, and Bessel norm before claiming a gain."
+      },
+      {
+        "id": "primitive_long_frequency_and_spectrum",
+        "requirement": "Retain g=1 and all 1<=h<n, and audit every level-4/8 spectral piece and theorem hypothesis used on the full matrix."
+      },
+      {
+        "id": "boundary_power_and_scope",
+        "requirement": "Charge moving support, zero extension, real centre, transitions, endpoints, and every restored X-D-L-R-K power, and prevent transfer beyond the flat-smooth owner."
+      }
+    ],
+    "closing_assessment": {
+      "decision": "promote_exact_reciprocity_reconstruction_unweighted_projective_and_long_block_capacity_with_scoped_scalar_route_no_go",
+      "graph_mutation": true,
+      "terminal_label": "inverse_selector_projective_capacity_no_go",
+      "main_result": "Exact additive reciprocity preserves the full centered owner and complete h summation self-returns. The unweighted inverse-residue kernel has Gram matrix jI-11*, scalar projective inflation j^(1/2-o(1)), and full-range compression norm asymptotic to sqrt(Delta); both exceed the missing factor at every fixed strict point. This parks canonical scalar common-test routes but proves no weighted lower bound, vector impossibility, target, strict range, or exponent improvement.",
+      "resulting_graph_sha256": "7e68cfd355ef48407712d3216382a1a54a28be9a27ac9e15c3fd1e59e081a447",
+      "exponent_change": false
+    }
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "4ad56f62aeb814c11c31fe655bc48da6d74639e3bd61077e9496d647c366c41d",
+    "generated_at": "2026-08-25T10:23:52.403078+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

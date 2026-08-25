@@ -1,0 +1,204 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 133,
+    "round_type": "gc_w7_16_bombieri_iwaniec_two_spacing_source_map",
+    "campaign_id": "gc-w7-16-bombieri-iwaniec-two-spacing-source-map",
+    "title": "Bombieri--Iwaniec double-large-sieve and two-spacing source map",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "465093c00a388ff9e49583a8016e0e580f74beea4656b15884fdd9dc9247be5a",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "planned_numerical_percent": 0,
+      "literature_policy": "Audit the official Li--Yang arXiv:2308.14859v2 TeX source literally, including the definition of S, both conditions on F, corrected Case-A sign, q/N/R/Q/K/L/eta hypotheses, the symbolic first-spacing norm, the second-spacing variables, and the final S/H target. Reuse the accepted Round-95 repair only within its certified scope. No theorem-name or global Li--Yang conclusion substitutes for a map to the project scalar."
+    },
+    "target_obligations": [
+      "GC-W7-16-actual-reduced-determinant-correlation",
+      "GC-W7-16-direct-hyperbolic-decoupling-applicability-obstruction"
+    ],
+    "frozen_target": {
+      "question": "Can the exact Li--Yang/Bombieri--Iwaniec standard sum, double-large-sieve inequality, and first/second-spacing machinery be mapped without changing coefficient ownership or absolute-value placement to the literal Round-131 top-shell determinant correlation and produce a complete fixed-block exponent below 27/48; if not, what is the first exact source or normal-form mismatch?",
+      "reference_formula": "Estimate the literal fixed-centre scalar O_(i,D)^+(c)=sum_(r=(a,b))^lit A_i(r) sum_(r'=(a',b'))^lit B_i(r,r') e(ca/(kappa_i b)-ca'/(kappa_i b')), with n=ab'-a'b>0, the taper 1-Wn/(kappa_i bb'), kappa_1=1 and kappa_2=4, and every primitive lift, threshold, Stieltjes/Mobius profile, quarter or chi_4 carrier, reciprocal alias, taper, star, cell, sign, and owner retained. The candidate single-wave phase map is h=a, m=b, H_LY=L, M_LY=D, T_LY=c/kappa_i, F(z)=1/z; this map must be checked rather than assumed to extend to the joint correlation.",
+      "quantities": [
+        "project scales W=Y^(7/16), D=Y^(1/2), L=Y^(1/6), c asymp Y, |a| and |a'| asymp L, b and b' asymp D",
+        "0<n=ab'-a'b lesssim kappa_i bb'/W, fixed-outer bounded determinant-lift multiplicity, complete capacity Y^(35/48+epsilon)",
+        "ideal one-term-per-ray persistence threshold Y^(27/48+epsilon), determinant target Y^(24/48+epsilon)",
+        "candidate Li--Yang parameters H_LY=Y^(1/6), M_LY=Y^(1/2), T_LY=Y, so H_LY/M_LY=T_LY^(-1/3)",
+        "source derivative approximants a_BI/r_BI and project primitive rays (a,b) are different variable roles until an exact bijection is proved"
+      ]
+    },
+    "completion_criteria": [
+      "Produce an exact primary-source card for Li--Yang arXiv:2308.14859v2 Section 4: the sum S, BV weights, both conditions on F, corrected Case (A), Case (B), q and N hypotheses, the R/Q/K/L/eta definitions, the double-large-sieve bound, both spacing problems, and the final S/H target. Preserve the Round-95 warnings on the printed general ranges.",
+      "Verify or refute the candidate single-wave phase map h=a, m=b, H_LY=L, M_LY=D, T_LY=c/kappa_i, F(z)=1/z, including signs, dyadic boxes, F derivative conditions, BV weights, endpoints, and the exact source parameter powers.",
+      "Derive a literal map from the joint determinant correlation to one source S, a controlled superposition of source S sums, or the underlying double-large-sieve form. Price every decomposition and do not separate the pair coefficient for free.",
+      "Distinguish the project primitive ray (a,b) from the source Dirichlet derivative approximant a_BI/r_BI. Map or refute all four first/second-spacing coordinates, modular inverses, coprimality, short intervals, major/minor arcs, and real-centre conditions.",
+      "Compute the actual coefficient/projective/BV norms after physical Stieltjes/Mobius reassembly and preserve thresholds, stars, tapers, aliases, cells, signs, and owners.",
+      "Translate any legal S/H or double-large-sieve estimate back to a complete Y exponent and price broad, narrow, major, minor, boundary, threshold, and owner strata against 35/48, 27/48, and 24/48.",
+      "Close under exactly one label: applicable_positive_margin, exact_missing_hypothesis, or source_level_no_go.",
+      "Make no global exponent, M9-M1, M9-M2, endpoint, bridge, M9, or quarter promotion."
+    ],
+    "controls": [
+      "primary_source_S_and_two_F_conditions",
+      "corrected_source_range_and_general_theorem_scope",
+      "single_wave_phase_and_derivative_map",
+      "source_parameter_power_ledger",
+      "project_ray_vs_derivative_approximant_roles",
+      "joint_coefficient_BV_projective_norm_and_absolute_value_direction",
+      "major_minor_arc_and_short_interval_ownership",
+      "first_spacing_vector_and_norm",
+      "second_spacing_four_coordinates_and_modular_inverses",
+      "same_denominator_M1_M2_aligned_packets",
+      "S_over_H_to_Y_capacity",
+      "capacity_35_27_24_over_48",
+      "no_positive_energy_or_global_promotion"
+    ],
+    "tasks": [
+      {
+        "id": "li_yang_bi_exact_source_card",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "status": "assigned",
+        "target": "Audit the official Li--Yang arXiv:2308.14859v2 source at the exact Bombieri--Iwaniec interface. Record S, BV weights, both F conditions, Case A/B, q/N/R/Q/K/L/eta hypotheses, the double-large-sieve inequality, first and second spacing quantities, the final S/H target, and every known printed-range repair. State precisely what the source does not say about the project determinant correlation.",
+        "context_files": [
+          "protocol.md",
+          "human/current_directives.md",
+          "sources/li_yang_2023.md",
+          "rounds/web-research-test/Li-Yang-arXiv-2308.14859v2.tex",
+          "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/reports/li_yang_strict_source_audit.md",
+          "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/reviews/conductor_round95_li_yang_repair.md"
+        ],
+        "required_controls": [
+          "primary_source_S_and_two_F_conditions",
+          "corrected_source_range_and_general_theorem_scope",
+          "source_parameter_power_ledger",
+          "first_spacing_vector_and_norm",
+          "second_spacing_four_coordinates_and_modular_inverses",
+          "S_over_H_to_Y_capacity",
+          "no_positive_energy_or_global_promotion"
+        ],
+        "required_output": [
+          "A seven-section primary-source report with official arXiv citations and exact local source lines or equation labels.",
+          "A theorem and variable-role card that distinguishes source summation variables from derivative approximants and spacing variables.",
+          "An explicit list of conclusions not contained in the source.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reports/li_yang_bi_exact_source_card.md"
+      },
+      {
+        "id": "literal_joint_scalar_bi_normal_form_map",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "assigned",
+        "target": "Starting from the literal Round-131 scalar and accepted Round-132 chart, verify the exact single-wave Li--Yang phase map and then derive or refute a complete owner-preserving map of the joint determinant correlation to Li--Yang S or the underlying double-large-sieve/two-spacing normal form. Compute every source parameter, spacing coordinate, coefficient norm, owner cost, and resulting Y exponent.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0823_full_proof_strategy.md",
+          "sources/li_yang_2023.md",
+          "rounds/web-research-test/Li-Yang-arXiv-2308.14859v2.tex",
+          "rounds/codex-managed/gc-w7-16-top-shell-determinant-residue-zero-mode-gate/synthesis.md",
+          "rounds/codex-managed/gc-w7-16-top-shell-determinant-residue-zero-mode-gate/reports/literal_induced_residue_weight_derivation.md",
+          "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/synthesis.md",
+          "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/reviews/conductor_round132_hyperbolic_decoupling_adjudication.md"
+        ],
+        "required_controls": [
+          "single_wave_phase_and_derivative_map",
+          "source_parameter_power_ledger",
+          "project_ray_vs_derivative_approximant_roles",
+          "joint_coefficient_BV_projective_norm_and_absolute_value_direction",
+          "major_minor_arc_and_short_interval_ownership",
+          "first_spacing_vector_and_norm",
+          "second_spacing_four_coordinates_and_modular_inverses",
+          "same_denominator_M1_M2_aligned_packets",
+          "S_over_H_to_Y_capacity",
+          "capacity_35_27_24_over_48",
+          "no_positive_energy_or_global_promotion"
+        ],
+        "required_output": [
+          "A seven-section analytic report.",
+          "An exact project-to-source variable, phase, coefficient, spacing, and exponent table.",
+          "A legal applicable stratum with complete margin, one exact missing hypothesis, or a source-level no-go.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reports/literal_joint_scalar_bi_normal_form_map.md"
+      },
+      {
+        "id": "blind_double_large_sieve_feasibility",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "assigned",
+        "target": "Using only the supplied corrected source statement and literal scalar packet, independently determine the weakest legal consequence of the Li--Yang/Bombieri--Iwaniec machinery for the fixed-centre joint determinant correlation. Test variable roles, separability, both spacing problems, aligned rulings, and capacity, and name the first invalid inference if no strict cross-ray power follows.",
+        "context_files": [
+          "problems/gauss_circle.md",
+          "state/control_models.md",
+          "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "all strategy files",
+          "all Round-95 through Round-133 nonblind artifacts",
+          "all Round-133 sibling reports"
+        ],
+        "required_controls": [
+          "single_wave_phase_and_derivative_map",
+          "project_ray_vs_derivative_approximant_roles",
+          "joint_coefficient_BV_projective_norm_and_absolute_value_direction",
+          "first_spacing_vector_and_norm",
+          "second_spacing_four_coordinates_and_modular_inverses",
+          "same_denominator_M1_M2_aligned_packets",
+          "S_over_H_to_Y_capacity",
+          "capacity_35_27_24_over_48",
+          "no_positive_energy_or_global_promotion"
+        ],
+        "required_output": [
+          "A seven-section statement-only report.",
+          "The weakest theorem-level implication or a counter-implication with the first invalid inference named exactly.",
+          "At least one coefficient/role control and one spacing/capacity control with explicit powers.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reports/blind_double_large_sieve_feasibility.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "source",
+        "requirement": "The official v2 source definition of S, both F conditions, corrected ranges, BI parameter definitions, both spacing problems, and S/H target are recorded literally."
+      },
+      {
+        "id": "variable_roles",
+        "requirement": "Project rays, source h/m summation variables, derivative approximants, short-interval labels, and first/second-spacing variables are never conflated."
+      },
+      {
+        "id": "coefficients_and_owners",
+        "requirement": "The joint physical coefficient is mapped with an explicit BV/projective cost and every threshold, modulus, star, taper, alias, sign, and owner retained."
+      },
+      {
+        "id": "spacing",
+        "requirement": "All first- and second-spacing coordinates, modular inverses, coprimality, major/minor arcs, and real-centre hypotheses receive a literal project counterpart or an exact mismatch."
+      },
+      {
+        "id": "directionality",
+        "requirement": "A theorem for one separably weighted S, an averaged spacing norm, or a positive large-sieve energy is not substituted for the prescribed-centre signed joint scalar."
+      },
+      {
+        "id": "capacity",
+        "requirement": "Every decomposition and uncovered stratum is priced against 35/48, the strict 27/48 persistence threshold, and the 24/48 determinant target."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "465093c00a388ff9e49583a8016e0e580f74beea4656b15884fdd9dc9247be5a",
+    "generated_at": "2026-08-23T12:08:23.736910+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

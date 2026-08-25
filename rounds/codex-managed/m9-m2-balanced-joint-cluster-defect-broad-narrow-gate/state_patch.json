@@ -1,0 +1,232 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-balanced-alias-character-restoration",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Balanced divisor-alias character restoration and equal-rational-lift coherence",
+        "status": "proved_internal",
+        "statement_tex": "In the literal balanced divisor-progressive bulk chart h+2s_d=d ell_d, mu=1/2-m, lambda=mu/d, one has e(-lambda h/2+s_d(1/2-lambda))=-i(-1)^m chi_4(d)chi_4(h). If 2lambda=a/b is reduced with a,b odd, every lift is (d,mu)=(bc,ac/2), c odd, and (-1)^m chi_4(d)=chi_4(ab). Hence the full phase-character carrier equals -i chi_4(h)chi_4(ab)e(R sqrt(hk)-Xbk'/a), independent of c, and x_*, rho, and Delta are common across the lifts. The gamma_(bc), progression, J-condition, and literal amplitude remain distinct, so the lifts may not be merged and coherence supplies neither cancellation nor a lower bound. The residue phase alone is not the complete carrier.",
+        "dependencies": [
+          "M9-M2-balanced-divisor-progressive-alias-reduction",
+          "M9-M2-character-factor"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/reports/joint_cluster_defect_broad_narrow_attack.md",
+            "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/reports/aligned_rational_ruling_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/reviews/blind_post_unmask_gauge_and_scalar_interface_audit.md",
+            "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/reviews/discovery_post_unmask_ruling_and_capacity_audit.md",
+            "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/reviews/hostile_post_unmask_determinant_and_character_audit.md",
+            "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/candidates/conductor_round136_character_gauge_ruling_obstruction.md",
+            "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/reviews/conductor_round136_broad_narrow_adjudication.md",
+            "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use the complete restored carrier before any lift grouping, cap, or modulus. Preserve every lift amplitude and gate; do not seek cancellation from the residue phase or chi_4 across equal-rational lifts."
+      },
+      {
+        "id": "M9-M2-balanced-broad-narrow-gauge-ruling-obstruction",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Gauge-sensitive broad geometry and aligned-ruling scalar-interface obstruction",
+        "status": "proved_internal",
+        "statement_tex": "For the complete signed balanced divisor-progressive bulk kernel, the determinant of three unfactored gradient vectors, the determinant of normals to a chosen gradient-image surface, and a one-body transform Hessian are distinct objects. The exact character gauge from M9-M2-balanced-alias-character-restoration changes the raw normal surface (1,r^2,z^2) to the cylindrical normal surface (1,r^2,0) without changing coefficient magnitudes, atoms, gates, or owners. Therefore raw normal curvature is not a representation-independent sufficient certificate for a coefficient-uniform broad theorem; neither a raw gradient determinant nor the unit one-body Hessian has a proved owner-preserving scalar norm interface. The exact fixed-Q classes Q=mu^2 h/(d^2 k)=Xc^2 satisfy G_2+cG_3=0 in both gauges and have rho=hk'(c^2-1)/c^2 and Delta=hk((k'/k)^2-c^2)/c^2, so both strict gates allow determinant-zero rulings. Equal-rational lifts are carrier-coherent. Fixed-slice same-parity clusters have cardinality at least a constant times d^2 L^2, while L^5 alias l1 and L^4 positive-square ledgers are only upper or adversarial capacities. Thus the audited coefficient-uniform determinant, positive-cap, spacing, and canonical second-B mechanisms do not prove the L^3 scalar target. This is a scoped method obstruction, not a physical lower bound, a disproof of BAL, or a no-go for a new gauge-sensitive actual-symbol theorem.",
+        "dependencies": [
+          "M9-M2-balanced-alias-character-restoration",
+          "M9-M2-balanced-divisor-progressive-alias-reduction",
+          "M9-M2-balanced-one-alias-reciprocal-self-return-obstruction",
+          "M9-M2-balanced-double-far-phase-free-mode-reduction"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/reports/blind_signed_cluster_kernel_feasibility.md",
+            "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/reports/joint_cluster_defect_broad_narrow_attack.md",
+            "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/reports/aligned_rational_ruling_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/reviews/blind_post_unmask_gauge_and_scalar_interface_audit.md",
+            "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/reviews/discovery_post_unmask_ruling_and_capacity_audit.md",
+            "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/reviews/hostile_post_unmask_determinant_and_character_audit.md",
+            "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/candidates/conductor_round136_character_gauge_ruling_obstruction.md",
+            "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/reviews/conductor_round136_broad_narrow_adjudication.md",
+            "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Park coefficient-uniform broad determinants, positive cap or row energies, fixed-slice spacing closure, and another one-variable B-process. Reopen BAL only with an owner-preserving gauge-explicit signed inequality for the complete literal (h,k,k',d,mu,J) scalar before any rulingwise modulus."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-balanced-divisor-progressive-alias-reduction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/reviews/conductor_round136_broad_narrow_adjudication.md",
+            "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Use the exact character-restored form from M9-M2-balanced-alias-character-restoration, while retaining all distinct lift amplitudes, progressions, J-labels, and both gates."
+      },
+      {
+        "id": "M9-M2-balanced-double-far-oscillatory-remainder",
+        "dependencies_added": [
+          "M9-M2-balanced-broad-narrow-gauge-ruling-obstruction"
+        ],
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/reviews/conductor_round136_broad_narrow_adjudication.md",
+            "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/synthesis.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/reports/blind_signed_cluster_kernel_feasibility.md",
+            "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/reports/joint_cluster_defect_broad_narrow_attack.md",
+            "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/reports/aligned_rational_ruling_hostile_audit.md"
+          ]
+        },
+        "next_action": "The complete signed character-restored kernel remains the smallest owner-complete survivor. The standard joint broad--narrow, positive-cap, one-frequency, and second-B mechanisms are parked; require a new gauge-sensitive actual-symbol scalar inequality."
+      },
+      {
+        "id": "M9-M2-balanced-double-far-actual-energy",
+        "dependencies_added": [
+          "M9-M2-balanced-broad-narrow-gauge-ruling-obstruction"
+        ],
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/reviews/conductor_round136_broad_narrow_adjudication.md",
+            "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Equivalent modulo proved owners to the complete signed bulk scalar, now with exact character restoration. Do not substitute the L^4 positive shadow; a new non-positive, owner-preserving joint inequality is required."
+      },
+      {
+        "id": "M9-M2-smooth-balanced-quarter-packet-estimate",
+        "dependencies_added": [
+          "M9-M2-balanced-broad-narrow-gauge-ruling-obstruction"
+        ],
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/reviews/conductor_round136_broad_narrow_adjudication.md",
+            "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/synthesis.md"
+          ]
+        },
+        "next_action": "BAL remains open and its standard broad--narrow surface is parked after exact gauge and ruling audits. Reopen only for a genuinely new gauge-sensitive actual-symbol theorem; otherwise rotate to hard TOP or the M1/GAR frontier."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round136-residue-only-phase-is-the-complete-character-carrier",
+        "reason": "The complete combined linear/residue carrier is (136.1); the residue-only multiplier can equal one while the full carrier remains -i chi_4(h)chi_4(ab)."
+      },
+      {
+        "id": "Round136-equal-rational-lifts-cancel-by-chi4",
+        "reason": "For every reduced 2lambda=a/b, the exact factor (-1)^m chi_4(d)=chi_4(ab) is independent of the odd lift multiplier."
+      },
+      {
+        "id": "Round136-equal-rational-lifts-may-be-merged",
+        "reason": "Their gamma_d, progression, J-condition, support, and literal amplitudes remain distinct even though their unit carrier and gates agree."
+      },
+      {
+        "id": "Round136-unfactored-gradient-determinant-equals-surface-normal-determinant",
+        "reason": "The blind gradient-vector determinant and discovery surface-normal determinant are different geometric objects; the hostile Hessian is a third object."
+      },
+      {
+        "id": "Round136-exact-gauge-makes-every-gradient-vector-determinant-zero",
+        "reason": "Only the normals of the chosen gauged gradient surface are coplanar; determinants of three gauged gradient vectors can be nonzero."
+      },
+      {
+        "id": "Round136-whole-literal-kernel-is-intrinsically-narrow",
+        "reason": "The broad part is empty only for the explicitly chosen gauged surface-normal partition, not for every gauge-sensitive arithmetic or gradient-vector decomposition."
+      },
+      {
+        "id": "Round136-any-nonzero-determinant-gives-the-missing-scalar-saving",
+        "reason": "No owner-preserving norm or scalar exponential-sum theorem connects the audited determinants to a factor L gain for the fixed block."
+      },
+      {
+        "id": "Round136-far-gates-remove-fixed-Q-rulings",
+        "reason": "The exact gate formulas allow fixed-Q determinant-zero rulings; for k'=k one has Delta=-rho just beyond the common collar."
+      },
+      {
+        "id": "Round136-fixed-slice-cluster-proves-a-common-v-run",
+        "reason": "The pigeonhole count is valid on one admissible slice, but changing v also changes k', gates, t_*, J, and amplitudes; no common-run intersection was proved."
+      },
+      {
+        "id": "Round136-cluster-capacity-is-an-actual-weighted-lower-bound",
+        "reason": "Only upper amplitude bounds are known; dL, unit square mass, L^5, and L^4 are envelope or adversarial capacities, not lower bounds for the literal scalar."
+      },
+      {
+        "id": "Round136-positive-gamma-over-d-sum-makes-full-literal-lift-packet-positive",
+        "reason": "The divisor identity applies to a 1/d-weighted leading common-profile model; full J-dependent literal amplitudes and admissibility are not common or sign-controlled."
+      },
+      {
+        "id": "Round136-phase-adapted-coefficients-give-a-physical-lower-bound",
+        "reason": "They only falsify coefficient-uniform theorems based on the displayed size hypotheses and need not equal the actual stationary amplitude."
+      },
+      {
+        "id": "Round136-second-B-process-proves-full-owner-return-and-gain",
+        "reason": "The displayed calculation returns the canonical square-root critical action and lattice; full profiles, J-pieces, gates, transitions, and remainders require a new ledger, and no saving follows."
+      },
+      {
+        "id": "Round136-positive-L4-capacity-is-equivalent-to-the-signed-L3-target",
+        "reason": "The positive square shadow is a stronger coefficient-blind object and cannot replace the fixed-block signed scalar."
+      },
+      {
+        "id": "Round136-broad-narrow-no-go-disproves-BAL-or-all-future-joint-theorems",
+        "reason": "The obstruction is limited to the audited determinant, positive-cap, spacing, and canonical-transform mechanisms; a new gauge-sensitive actual-symbol theorem is not excluded."
+      },
+      {
+        "id": "Round136-broad-narrow-gate-improves-the-global-exponent",
+        "reason": "No complete balanced quarter packet or downstream M9 dependency was proved."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "Round 136 concerns one balanced M2 double-far bulk kernel and proves no M1 parent or GAR aggregate."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "BAL remains open, as do hard TOP and every required UNBAL owner."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "The round excludes hard, sharp, boundary, transition, and all-owner endpoint assembly."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain open."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The bridge remains conditional on the complete open M9 hypothesis."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The internally proved global exponent remains one third because no endpoint block estimate changed."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "The separately audited external exponent remains (3292+25sqrt(1717))/13762; Round 136 neither improves nor alters it."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The quarter target still lacks M9-M1, M9-M2, endpoint uniformity, M9, and the final unconditional bridge."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 8,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 136 proves an exact character-restoration identity, completely classifies equal-rational lift coherence and gate invariance, reconciles three inequivalent determinant geometries, and identifies a gauge-robust fixed-Q ruling plus the missing scalar norm interface. It rigorously parks the named broad--narrow surface while preserving the possibility of a new actual-symbol theorem. No balanced target or global exponent changes."
+  }
+}

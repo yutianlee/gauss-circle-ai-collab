@@ -1,0 +1,239 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-lower-cone-t1-squarefree-reciprocal-transform-reduction",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Exact finite t=1 squarefree one-sided reciprocal transform",
+        "status": "proved_internal",
+        "statement_tex": "Let R=X^(1/4), N=floor(X), DE asymp M<=R^2, D<=sqrt(M), and retain every half-open t=1 prefix. After target-safe product-width sqrt(M) and cone-width sqrt(D) collars, let P(d) be the exact finite set of odd pairs (alpha,b), b|d, mu(alpha)mu(b)!=0, alpha^2<=e_+<<E, for which the original progression e=[alpha^2,b]n meets the retained amplitude. Put ell=[alpha^2,b], Q=2sqrt(ND/E) asymp Dsqrt(N/M), and W_(d,ell,U)(q)=A_(D,E,U)(d,4Nd ell^2/q^2). Then S_(D,E,U)=e(1/8)T_(D,E,U)/(N^(1/4)D)+O_(epsilon,V)(X^epsilon), where T=sum_d mu^2(d)(D/d) sum_((alpha,b) in P(d)) mu(alpha)mu(b)chi_4(ell)/ell sum_(q>0,q odd) chi_4(q)W_(d,ell,U)(q)e(Nd ell/q), supported on q asymp ell Q. The exact K=6 stationary/nonstationary ledger, finite DQsqrt(E) progression mass, scaled tail derivative, and dyadic tail sum own every lower symbol, endpoint buffer, negative frequency, and remainder. If g=(ell,q), L=ell/g, q_0=q/g, the correct coordinate is j=NL-Aq_0 with q_0|NL-j; the bare j=N-Aq applies only to ell=1. The transformed target |T|<<RD X^epsilon is not proved.",
+        "dependencies": [
+          "M9-M1-lower-cone-small-t-unmasking-reduction",
+          "M9-M1-lower-cone-t1-squarefree-voronoi-reduction"
+        ],
+        "implies": [
+          "M9-M1-global-lower-radial-signed-estimate"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/reports/signed_squarefree_reciprocal_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/reports/blind_squarefree_reciprocal_feasibility.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/reports/squarefree_progression_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/candidates/conductor_round148_squarefree_reciprocal_transform_and_dispersion_no_go.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/reviews/transform_and_diagonal_seam_review.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/reviews/blind_conductor_round148_candidate_final_v2.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/reviews/source_conductor_round148_final.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/reviews/conductor_round148_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/controls/conductor_round148_controls.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Prove the coefficient-sensitive signed bound for the exact finite reciprocal scalar while keeping all progression cells and common-divisor strata together before any separately positive diagonal, or first perform exact Euler recombination and prove the Round-147 signed H correlation."
+      },
+      {
+        "id": "M9-M1-lower-cone-t1-squarefree-reciprocal-dispersion-obstruction",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Squarefree reciprocal progression-diagonal and source-interface obstruction",
+        "status": "proved_internal",
+        "statement_tex": "For a long interior prefix, the literal b=1 cells of the exact Round-148 reciprocal transform contain a common rectangle with odd squarefree alpha, alpha^2 asymp E, q asymp alpha^2 Q, and a d-norm asymp D. Their absolute cell mass is L asymp Qsqrt(E). If coefficient-weighted Cauchy is applied to these unrecombined cells and the d1=d2 term is then majorized separately and positively, every positive weighting has capacity at least sqrt(D)L asymp Qsqrt(DE)=sqrt(N)D=R(RD), losing R over the target. This no-go is confined to that proof placement and is not a signed lower bound; pre-Cauchy regrouping, N-dependent alignments, signed cross-cell energies, and short collar-owned prefixes remain outside it. The arbitrary-outer-q-coefficient analogue is false at D=1, while the absolute squarefree Q+D analogue remains open. With q_*=q/(q,ell N), the full q_*<=Y stratum costs DYX^epsilon and is safe for Y<=R. The audited progression, variance, inverse-square, inverse-fraction, and separable large-sieve interfaces do not prove the actual varying-q coupled sum; Schlage--Puchta's exact-denominator specialization is nonexhaustive and no audited theorem aggregates the other approximants. There is no termwise ell-to-powerful-H map, and the reciprocal j-band is D times wider than the formal H band.",
+        "dependencies": [
+          "M9-M1-lower-cone-t1-squarefree-reciprocal-transform-reduction",
+          "M9-M1-lower-cone-t1-squarefree-H-resonance-obstruction",
+          "M9-M1-lower-cone-squarefree-linearization-obstruction"
+        ],
+        "implies": [],
+        "blockers": [],
+        "source_card": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/reports/squarefree_progression_source_audit.md",
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/reports/signed_squarefree_reciprocal_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/reports/blind_squarefree_reciprocal_feasibility.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/reports/squarefree_progression_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/candidates/conductor_round148_squarefree_reciprocal_transform_and_dispersion_no_go.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/reviews/transform_and_diagonal_seam_review.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/reviews/source_applicability_seam_review.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/reviews/source_conductor_round148_final.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/reviews/blind_conductor_round148_candidate_final_v2.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/reviews/conductor_round148_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/controls/conductor_round148_controls.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Park progression separation before Cauchy, arbitrary outer coefficients, unproved absolute squarefree Q+D, direct fixed-modulus source import, and a termwise ell=H-index identification. Reopen with a signed joint progression energy, an exact Euler recombination, or a genuinely joint cross-t theorem."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-lower-cone-small-t-unmasking-reduction",
+        "implies_added": [
+          "M9-M1-lower-cone-t1-squarefree-reciprocal-transform-reduction"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/candidates/conductor_round148_squarefree_reciprocal_transform_and_dispersion_no_go.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/reviews/conductor_round148_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The mandatory t=1 face now has exact fixed-order Voronoi and one-sided reciprocal presentations. Neither signed t=1 estimate nor any t>=2 layer is proved, and a joint cross-t theorem remains logically possible."
+      },
+      {
+        "id": "M9-M1-lower-cone-t1-squarefree-voronoi-reduction",
+        "implies_added": [
+          "M9-M1-lower-cone-t1-squarefree-reciprocal-transform-reduction"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/candidates/conductor_round148_squarefree_reciprocal_transform_and_dispersion_no_go.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/reviews/blind_conductor_round148_candidate_final_v2.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Use the exact reciprocal presentation as an alternative arithmetic interface, but do not identify its lcm index termwise with the powerful H index. A layerwise route still needs either a joint signed reciprocal estimate or uniform kernels plus signed H aggregation."
+      },
+      {
+        "id": "M9-M1-lower-cone-t1-squarefree-H-resonance-obstruction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/reports/signed_squarefree_reciprocal_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/reports/squarefree_progression_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/candidates/conductor_round148_squarefree_reciprocal_transform_and_dispersion_no_go.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/reviews/source_conductor_round148_final.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Round 148 gives a boundary-complete reciprocal presentation but no termwise H interface: its lcm index need not be powerful and its natural resonance band is D times wider. Reopen only with exact Euler recombination and signed aggregation, or a different joint mechanism."
+      },
+      {
+        "id": "M9-M1-lower-cone-squarefree-linearization-obstruction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/reports/signed_squarefree_reciprocal_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/reports/blind_squarefree_reciprocal_feasibility.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/reviews/conductor_round148_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The exact reciprocal expansion confirms that square-divisor progressions must remain signed through the first positive quadratic form. Early cellwise Cauchy loses R; only signed cross-cell recombination or exact Euler aggregation can bypass it."
+      },
+      {
+        "id": "M9-M1-global-lower-radial-signed-estimate",
+        "dependencies_added": [
+          "M9-M1-lower-cone-t1-squarefree-reciprocal-transform-reduction",
+          "M9-M1-lower-cone-t1-squarefree-reciprocal-dispersion-obstruction"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/reports/signed_squarefree_reciprocal_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/reports/blind_squarefree_reciprocal_feasibility.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/reports/squarefree_progression_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/reviews/conductor_round148_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The first open cone owner remains the exact unmasked t<M^(1/4) scalar. For a layerwise route, its t=1 reciprocal scalar needs signed cross-progression cancellation or exact Euler recombination; all t>=2 layers and the independent Round-138 cross owner remain open."
+      }
+    ],
+    "correct_rejected": [],
+    "reject": [
+      {
+        "id": "Round148-continuous-saddle-weight-makes-square-divisor-sum-finite",
+        "reason": "For every large alpha, q asymp alpha^2 Q can keep the continuous saddle in e asymp E. Finiteness comes only from the original alpha^2|e support and nonempty discrete progressions."
+      },
+      {
+        "id": "Round148-bare-j-equals-N-minus-Aq-parameterizes-all-progressions",
+        "reason": "After gcd reduction the phase is e(NLd/q_0) and the coordinate is j=NL-Aq_0. The bare original-q formula holds only in the unexpanded ell=1 cell."
+      },
+      {
+        "id": "Round148-arbitrary-outer-q-coefficients-can-replace-actual-transform",
+        "reason": "At D=1 adversarial coefficients align the phase and give size Q>R below the top. The actual chi_4(q), profile, and Mobius coupling are essential."
+      },
+      {
+        "id": "Round148-absolute-squarefree-QplusD-is-available",
+        "reason": "No proof or matching source was found. Literal Mobius expansion under triangle gives Qsqrt(D)+D, while the arbitrary-coefficient analogue is false."
+      },
+      {
+        "id": "Round148-positive-weighting-repairs-progression-cell-diagonal",
+        "reason": "For the frozen unrecombined cell basis, every positive Cauchy weighting followed by a separately positive d-diagonal has capacity at least sqrt(N)D, a factor R above target."
+      },
+      {
+        "id": "Round148-primitive-gcd-reduction-removes-all-phase-alignments",
+        "reason": "The integer-d phases may align whenever N(ell_1q_2-ell_2q_1)=0 mod q_1q_2, even without literal equality of reduced fractions."
+      },
+      {
+        "id": "Round148-exact-denominator-Schlage-Puchta-exhausts-the-source",
+        "reason": "Exact multiples already improve the small reduced-denominator case, and other admissible approximants were not jointly classified. Only the lack of an audited varying-q aggregation theorem is recorded."
+      },
+      {
+        "id": "Round148-fixed-modulus-complete-sum-theorems-directly-match",
+        "reason": "The audited variance, inverse-square, and inverse-fraction theorems have different modulus families, phases, coefficient dependence, averaging, or diagonals."
+      },
+      {
+        "id": "Round148-lcm-index-is-termwise-powerful-H-index",
+        "reason": "ell=[alpha^2,b] may contain first-power primes, while the H index is powerful after exact Euler recombination; their resonance bandwidths also differ by D."
+      },
+      {
+        "id": "Round148-second-transform-creates-new-saving",
+        "reason": "The canonical reciprocal transform returns the original square-root phase. Without a new signed estimate it supplies no independent cancellation."
+      },
+      {
+        "id": "Round148-adverse-diagonal-capacity-is-signed-lower-bound",
+        "reason": "The factor-R loss is an upper-capacity limitation of a specified early Cauchy placement, not a lower bound for the actual signed scalar."
+      },
+      {
+        "id": "Round148-reciprocal-reduction-proves-t1-M1-or-exponent",
+        "reason": "The signed reciprocal target, every t>=2 layer, cross-t owner, remaining M1 and M2 owners, endpoint, M9, bridge, and target remain open."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "Round 148 gives an exact presentation and scoped method obstruction for one mandatory t=1 lower-cone face, but does not estimate that face or the complete lower scalar."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "No M2 hard-TOP, balanced, or unbalanced owner was treated."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "Boundary completeness for one t=1 transform is not the all-owner endpoint theorem."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain open."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The bridge remains conditional on complete M9."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The strongest internally proved exponent remains one third."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "The separately audited external exponent remains (3292+25sqrt(1717))/13762."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The quarter target still lacks the signed t=1 gate, all remaining M1 and M2 owners, endpoint uniformity, M9, and the final unconditional bridge."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 148 derives and independently checks the exact finite one-sided squarefree reciprocal transform, complete K=6 boundary and remainder ledger, corrected reduced resonance coordinate, and a long-prefix progression-diagonal capacity calculation. It also audits the relevant source interfaces and false analogues, narrowing every no-go to its lawful scope. The signed reciprocal target, every strict range, and all downstream theorems remain open."
+  }
+}

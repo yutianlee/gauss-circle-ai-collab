@@ -1,0 +1,226 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-hard-top-truncated-divisor-energy-and-radical-control",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Hard-TOP truncated divisor energy and exact radical-resonance control",
+        "status": "proved_internal",
+        "statement_tex": "For the literal hard-TOP product coefficient C_L(n)=sum_(h|n,h odd,sqrt(n)<=h<=2sqrt(n)) chi_4(h)eta_L(h)Phi(h/(H+1))W(sqrt(q_Xh^2/(4n))), one has sum_n|C_L(n)|^2<<L^2log(2L). If B_L(n)=L^(3/2)n^(-3/4)C_L(n)1_(n nonsquare), then for every squarefree D>1, sum_(sf(n)=D)|B_L(n)|<<_epsilon(1+L/sqrt(D))L^epsilon. The first bound follows from h_1=ga,h_2=gb,m_1=bt,m_2=at; the second from h=gd_1u^2,m=gd_2v^2,d_1d_2=D with sqrt(D)<<A<<L on every nonempty common shell. For n=Dt^2, exact phase one is (J sqrt(D))t in Z. At one fixed centre all exact nonsquare phase-one points lie in at most one D-channel and are therefore target-safe in absolute capacity. These are upper bounds only: Cauchy and summation over all D retain L^(2+o(1)) capacity and give no physical lower mass or fixed-centre scalar estimate.",
+        "dependencies": [
+          "M9-M2-top-endpoint-transform",
+          "M9-M2-character-factor",
+          "M9-M2-hard-top-square-product-entry-sector"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/reports/literal_product_fibre_divisor_scalar_attack.md",
+            "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/reports/blind_truncated_chi4_divisor_phase_feasibility.md",
+            "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/reviews/blind_post_unmask_energy_resonance_audit.md",
+            "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/reviews/discovery_post_unmask_coefficient_and_self_return_audit.md",
+            "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/reviews/hostile_post_unmask_completion_and_radical_audit.md",
+            "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/candidates/conductor_round137_product_fibre_energy_and_self_return.md",
+            "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/reviews/conductor_round137_product_fibre_adjudication.md",
+            "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use the energy and radical bounds only as actual-coefficient controls. The missing theorem must couple distinct nonexact or near-resonant squarefree channels at one prescribed centre and save L^(1/2-o(1)); do not infer pointwise cancellation from the positive energy envelope."
+      },
+      {
+        "id": "M9-M2-hard-top-product-fibre-transform-self-return",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Hard-TOP product-fibre curvature, reciprocal self-return, and full-divisor route obstruction",
+        "status": "proved_internal",
+        "statement_tex": "For f(n)=J sqrt(n) on n asymp L^2, the coefficient-free derivative range has J/L stationary integers of natural size L^(3/2)/sqrt(J), hence formal absolute capacity sqrt(JL)=L^(3/2)(H/L). This is not actual coefficient mass, and the discontinuous divisor-incidence C_L(n) has no proved BV or additive-partial-sum hypothesis authorizing a scalar B-process. Resolving h|n by h^(-1)sum_(a mod h)e(an/h) and setting r=kh-a gives a bijection. The positive saddle is x_(h,r)=Xh^2/(4r^2), with phase Xh/(4r), profile W(r/y), and x^(-3/4)|phi''|^(-1/2)=2J^(-1/2); thus the stationary principal family is 2e(-1/8)L^(3/2)J^(-1/2)sum_(h odd)chi_4(h)eta_L(h)Phi(h/(H+1))/h sum_(J/2<=r<=J)^star W(r/y)e(Xh/(4r)), the original reciprocal hard-TOP principal family. Endpoint, zero, nonstationary, remainder, crossing, and square owners remain separate. Complementary-divisor switching is involutive. Completing C_L=r_2/4-R_L leaves an uncontrolled R_L; importing the desired circle estimate is circular, while an independent radial theorem would still leave R_L. This is a scoped method obstruction, not a lower bound or disproof of hard TOP.",
+        "dependencies": [
+          "M9-M2-hard-top-truncated-divisor-energy-and-radical-control",
+          "M9-M2-top-endpoint-transform",
+          "M9-M2-hard-top-product-fibre-mean-obstruction"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/reports/blind_truncated_chi4_divisor_phase_feasibility.md",
+            "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/reports/literal_product_fibre_divisor_scalar_attack.md",
+            "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/reports/product_fibre_bprocess_circularity_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/reviews/blind_post_unmask_energy_resonance_audit.md",
+            "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/reviews/discovery_post_unmask_coefficient_and_self_return_audit.md",
+            "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/reviews/hostile_post_unmask_completion_and_radical_audit.md",
+            "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/candidates/conductor_round137_product_fibre_energy_and_self_return.md",
+            "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/reviews/conductor_round137_product_fibre_adjudication.md",
+            "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Park smooth-amplitude derivative tests, formal absolute B-ledgers, complementary-divisor switching, full-r_2 replacement, and another canonical B-process. Reopen only with a fixed-centre actual-direction additive-twist theorem for C_L that excludes phase-adapted arrays and does not import the Gauss-circle target."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "dependencies_added": [
+          "M9-M2-hard-top-truncated-divisor-energy-and-radical-control",
+          "M9-M2-hard-top-product-fibre-transform-self-return"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/reports/blind_truncated_chi4_divisor_phase_feasibility.md",
+            "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/reports/literal_product_fibre_divisor_scalar_attack.md",
+            "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/reports/product_fibre_bprocess_circularity_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/reviews/conductor_round137_product_fibre_adjudication.md",
+            "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The nonsquare scalar is exactly the fixed-centre truncated near-square chi_4-divisor sum. Its L^2logL energy and every exact phase-one radical channel are controlled, but the complete scalar still needs an L^(1/2-o(1)) actual-direction additive-twist gain across nonexact or near-resonant channels."
+      },
+      {
+        "id": "M9-M2-top-endpoint-density-discrepancy-energy",
+        "dependencies_added": [
+          "M9-M2-hard-top-truncated-divisor-energy-and-radical-control",
+          "M9-M2-hard-top-product-fibre-transform-self-return"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/reports/blind_truncated_chi4_divisor_phase_feasibility.md",
+            "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/reports/literal_product_fibre_divisor_scalar_attack.md",
+            "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/reports/product_fibre_bprocess_circularity_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/reviews/conductor_round137_product_fibre_adjudication.md",
+            "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The product-fibre scalar and the completed real-part energy remain equivalent only through their existing owners. Product energy, radical decomposition, smooth curvature, divisor switching, full-r_2 completion, and reciprocal self-return are parked; require a new fixed-centre actual-symbol signed theorem."
+      },
+      {
+        "id": "M9-M2-hard-top-product-fibre-mean-obstruction",
+        "dependencies_added": [
+          "M9-M2-hard-top-truncated-divisor-energy-and-radical-control",
+          "M9-M2-hard-top-product-fibre-transform-self-return"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/reviews/conductor_round137_product_fibre_adjudication.md",
+            "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The literal coefficient now has a proved energy envelope and radical controls, but neither excludes fixed-centre alignment across distinct near-resonant channels. Product-fibre averaging, positive energy, and coefficient-uniform phase arguments remain parked."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round137-product-regrouping-averages-each-fibre",
+        "reason": "The map n=hm only collects all literal incidences into C_L(n); it performs no averaging, contraction, or modulus."
+      },
+      {
+        "id": "Round137-divisor-bound-authorizes-smooth-derivative-test",
+        "reason": "The discontinuous truncated divisor coefficient has no proved bounded variation or additive-partial-sum estimate; |C_L(n)|<=tau(n) is only pointwise size."
+      },
+      {
+        "id": "Round137-L2logL-energy-proves-the-scalar-target",
+        "reason": "Cauchy over O(L^2) product values gives L^(2+o(1)), still L^(1/2-o(1)) above the target."
+      },
+      {
+        "id": "Round137-truncated-chi4-cancels-inside-every-fibre",
+        "reason": "Literal prime-power and close-semiprime fibres may contain one term, while many divisors supported on primes 1 mod 4 can all have the same sign."
+      },
+      {
+        "id": "Round137-nonsquare-products-are-nonresonant",
+        "reason": "For n=Dt^2, exact phase one occurs when (J sqrt(D))t is integral; square deletion does not remove these channels."
+      },
+      {
+        "id": "Round137-exact-radical-resonance-is-a-physical-lower-bound",
+        "reason": "The radical theorem is an absolute upper capacity; literal profiles may vanish and chi_4 incidences may cancel."
+      },
+      {
+        "id": "Round137-every-formal-dual-mode-carries-actual-mass",
+        "reason": "J/L and sqrt(JL) describe coefficient-free stationary geometry only; some modes may see zero literal coefficient."
+      },
+      {
+        "id": "Round137-formal-B-process-closes-polynomial-intermediate-L",
+        "reason": "Its absolute capacity is L^(3/2)(H/L), with an unbounded H/L loss, before the rough-coefficient legality problem."
+      },
+      {
+        "id": "Round137-divisibility-completion-produces-a-new-smaller-phase",
+        "reason": "The exact residue/dual bijection restores phase Xh/(4r), profile W(r/y), factor 1/h, and the original reciprocal hard-TOP principal family."
+      },
+      {
+        "id": "Round137-stationary-principal-return-is-a-full-finite-identity",
+        "reason": "Endpoint samples, zero and nonstationary modes, stationary remainders, crossings, and square restoration retain separate owners."
+      },
+      {
+        "id": "Round137-complementary-divisor-switch-is-a-contraction",
+        "reason": "It is an involution with unchanged incidence capacity and transformed literal height and endpoint profiles."
+      },
+      {
+        "id": "Round137-full-divisor-identity-equals-the-truncated-coefficient",
+        "reason": "Completing to r_2(n)/4 leaves a complement containing all omitted scales and profile differences."
+      },
+      {
+        "id": "Round137-full-divisor-complement-is-target-safe",
+        "reason": "Prime and odd 3-power controls show that the complement can contain the whole full coefficient or cancel it to leave a nonzero truncated term."
+      },
+      {
+        "id": "Round137-local-r2-block-is-proved-equivalent-to-the-full-circle-theorem",
+        "reason": "Only importing the desired Gauss-circle conclusion is circular; no two-way theorem equivalence is claimed, and an independent localized radial theorem would be admissible."
+      },
+      {
+        "id": "Round137-second-B-process-gives-an-independent-saving",
+        "reason": "It reverses the canonical stationary phase/profile map and returns the original square-root interface."
+      },
+      {
+        "id": "Round137-product-fibre-no-go-proves-hard-TOP-false-or-improves-the-exponent",
+        "reason": "The no-go is scoped to the audited derivative, completion, switching, full-divisor, and repeated-transform mechanisms and proves no target or downstream estimate."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "Round 137 treats one nonsquare hard-TOP M2 scalar and proves no direct M1 parent or lower-GAR aggregate."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Hard TOP remains open, as do BAL and every required UNBAL owner."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "The round excludes terminal assembly and the remaining sharp, transition, and all-owner endpoint interfaces."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain open."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The bridge remains conditional on the complete open M9 hypothesis."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The strongest internally proved global exponent remains one third."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "The separately audited external exponent remains (3292+25sqrt(1717))/13762."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The quarter target still lacks M9-M1, M9-M2, endpoint uniformity, M9, and the final unconditional bridge."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 137 proves the literal truncated-divisor L^2logL energy envelope, a sharp fixed-radical capacity and exact-resonance classification, and the complete stationary principal reciprocal return with all factors. It rigorously parks the named one-dimensional product-fibre mechanisms while preserving the possibility of a new fixed-centre actual-direction theorem. No hard-TOP target or global exponent changes."
+  }
+}

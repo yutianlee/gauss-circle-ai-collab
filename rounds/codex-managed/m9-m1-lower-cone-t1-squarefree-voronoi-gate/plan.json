@@ -1,0 +1,235 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 147,
+    "round_type": "m9_m1_lower_cone_t1_squarefree_voronoi_gate",
+    "campaign_id": "m9-m1-lower-cone-t1-squarefree-voronoi-gate",
+    "title": "M1 lower-cone t=1 squarefree Voronoi gate",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "1dc79cf41e0dea8888341e944c5d0bf025d87f22cfaa282da34fcd10eecd04f5",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "planned_numerical_percent": 0,
+      "literature_policy": "Use primary generalized-divisor, Estermann, character Voronoi, and uniform Bessel sources only after matching the literal level-four chi_4 coefficient, complex shift, compact smooth radial test, cone collar, clipped prefixes, individual positive square-root direction, powerful Euler convolution, polar and boundary terms, and complete R-M-D-E-k power ledger. Record theorem numbers, conductors and cusps, coefficient normalization, test class, shift strip and uniformity, Bessel branches, poles, endpoint conventions, and every convolution loss."
+    },
+    "target_obligations": [
+      "M9-M1-lower-cone-small-t-unmasking-reduction",
+      "M9-M1-lower-cone-squarefree-linearization-obstruction",
+      "M9-M1-lower-cone-three-variable-dispersion-obstruction",
+      "M9-M1-global-lower-radial-signed-estimate"
+    ],
+    "frozen_target": {
+      "question": "Can the mandatory exact t=1 squarefree-cone prefix be bounded at M^(3/4) by a ratio-Mellin factorization zeta(w+z)L(w-z,chi_4)H(w,z), a level-four complex-order generalized-divisor Voronoi transform, and signed aggregation over the powerful H-convolution; if not, what is the first exact uniform-order, test-function, polar, boundary, self-return, convolution, or all-scale power obstruction?",
+      "reference_formula": "Let R=X^(1/4), N=floor X, I_M=N intersect [M,B_M), B_M<=2M. The mandatory t=1 face is U_N^(1)=sum_M sum_(s in I_M, mu^2(s)=1) s^(-3/4)V_low(R^2s/N)C(s)e(+sqrt(Ns)), with C(s)=sum_(de=s, e odd, e>4d)chi_4(e). Uniformly for every clipped prefix M<=U<=B_M, it is enough to prove |sum_(M<=s<U, mu^2(s)=1)V_low(R^2s/N)C(s)e(+sqrt(Ns))| <<_(epsilon,V) M^(3/4)X^epsilon. Before imposing the cone, Z(w,z)=sum_(d,e>=1, e odd, mu^2(de)=1) chi_4(e)d^(-w-z)e^(-w+z)=zeta(w+z)L(w-z,chi_4)H(w,z), where H_2=1-2^(-2w-2z) and, for odd p with x=p^(-w-z), y=chi_4(p)p^(-w+z), H_p=(1+x+y)(1-x)(1-y)=1-x^2-y^2-xy+x^2y+xy^2.",
+      "quantities": [
+        "Write s=2^nu n with nu in {0,1} and n odd squarefree. Then C(2^nu n)=sum_(e|n, e>2^(1+nu/2)sqrt(n))chi_4(e). Divisor pairing leaves both a complete positive-character sector and a mandatory antisymmetric negative-character tail; neither may be discarded.",
+        "The exact Euler correction H is absolutely convergent when Re(w+z)>1/2 and Re(w-z)>1/2. Its coefficients h_z(k) are supported on powerful integers, but this half-plane convergence is not an unweighted physical l1 bound.",
+        "A hard ratio Perron cutoff must distinguish e=4d+1 and requires height comparable to D. A target-safe collar |e-4d|<=sqrt(D) costs O(X^epsilon) after the physical weight and permits a smooth ratio bandwidth |Im z|<=D^(1/2)X^epsilon, uniformly for clipped radial prefixes.",
+        "For a level-q kernel with Bessel phase e(plus or minus 2sqrt(mx/q)), the conductor-four resonance against e(+sqrt(Nx)) is m=N. After the H convolution the k-family resonates at m=kN+O(k sqrt(N/M)); freeze conductor and cusp normalization before using either centre.",
+        "For the bare complete zeta-L factor, the favorable normalized transfer price is R/sqrt(M), while the trivial t=1 price is M^(1/4). Their minimum peaks at M=R^(4/3) with R^(1/3), so a top-block formula alone cannot improve the all-scale barrier.",
+        "On M comparable to R^2 the complete-factor transform is only target-borderline. Termwise modulus over powerful k loses a positive power; the required new input is joint signed aggregation across moving resonant bands, not absolute convergence of H or a triangle inequality.",
+        "The five-variable gamma-d-a-b-e expansion has scaled Hessian determinant 3/4 but is an exact multiplicity-one over-resolution of the original h-r wave. It creates no new owner and is parked for this round.",
+        "Round 141 already established target-safe cone smoothing, the sharp-versus-smooth ratio bandwidth distinction, and complete-coefficient transform self-return. This round must address the exact squarefree H correction and its signed resonant aggregation rather than repackage the bare zeta-L model.",
+        "Retain squarefreeness, coprimality, parity, chi_4, strict cone or proved collar replacement, profile, half-open prefixes, fixed N=floor X, individual positive direction, exact radicals, D=1, prime and even controls, polar terms, and all Bessel branches.",
+        "The independent Round-138 collar-tail cross owner and every t>=2 layer remain outside this face. No result here alone proves lower GAR, either direct M1 parent, M9-M1, any M2 owner, endpoint uniformity, M9, the bridge, the quarter target, or a better global exponent."
+      ]
+    },
+    "completion_criteria": [
+      "Derive the exact t=1 extraction and its clipped-prefix M^(3/4) target from the accepted unmasked small-t scalar, with all physical weights and endpoint conventions.",
+      "Derive the odd and even squarefree coefficient, all chi_4 sectors, exact cone thresholds, and divisor-pairing identities without deleting the negative-character antisymmetric tail.",
+      "Verify the prime-by-prime Euler product including p=2, the convergence domain of H, exact powerful support and coefficient bounds, and the physical convolution normalization.",
+      "Prove a target-safe hard-to-smooth cone-collar replacement and resulting ratio-Mellin bandwidth uniformly for every D, including D=1 and boundary and terminal boxes.",
+      "Derive or source-audit a level-four generalized-divisor Voronoi formula for the complex shift with the actual compact smooth test, exact conductor and cusp constants, both dual signs, all J-Y-K branches, poles, main terms, prefixes, and polynomial uniformity through the required imaginary-order range.",
+      "Compute the exact stationary and nonstationary transform, resonant centre, window width, one-term amplitude, transition ranges, polar and boundary contributions, and reflected coefficient for every M-D-E aspect.",
+      "Expand the full H convolution and either prove the joint signed powerful-index resonant inequality or show the first exact correlation, self-return, or power obstruction; termwise triangle inequality is not a target proof.",
+      "Audit M comparable to R^2, M=R^(4/3), lower M, D=1, primes, even squarefree inputs, exact radicals, the N=sL^2+1 slow family, and clipped terminal prefixes.",
+      "Prove the complete t=1 target, produce a strictly target-safe top-scale t=1 reduction with its entire complement and errors owned, or identify a rigorous squarefree-H resonance no-go without converting upper capacity into a signed lower bound.",
+      "Close under exactly one label: t1_target_bound, strict_top_t1_voronoi_reduction, or squarefree_H_resonance_no_go."
+    ],
+    "controls": [
+      "t1_exact_extraction_and_prefix_target",
+      "squarefree_coprime_even_odd_character_and_cone",
+      "divisor_pairing_chi4_sector_ledger",
+      "ratio_Mellin_Euler_product_p2_and_H",
+      "target_safe_cone_collar_and_ratio_bandwidth",
+      "shifted_zeta_L_functional_equations_and_poles",
+      "level_four_generalized_divisor_Voronoi_kernel",
+      "uniform_complex_order_and_Bessel_asymptotics",
+      "H_powerful_coefficients_tail_and_signed_aggregation",
+      "dual_resonance_centre_width_amplitude_and_off_resonance",
+      "all_M_D_E_capacity_and_R4over3_barrier",
+      "clipped_prefix_profile_terminal_endpoint",
+      "t1_D1_prime_even_and_slow_family_controls",
+      "individual_positive_direction_and_fixed_centre",
+      "Round141_142_144_self_return_and_zero_mode",
+      "Round138_cross_and_downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "t1_squarefree_voronoi_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "active",
+        "target": "Starting from the exact t=1 face and zeta-L-H factorization, derive the strongest lawful level-four shifted Voronoi reduction for the actual compact smooth prefix. Retain H before estimating, determine every polar, Bessel, boundary, resonant, and nonresonant term, and seek joint signed cancellation across powerful-index moving bands. Prove the t=1 target, isolate a strict top-scale target-safe range with all complements owned, or establish the first exact uniformity, self-return, convolution, or power no-go.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round147_t1_squarefree_cone_strategy.md",
+          "strategy/round147_source_and_method_strategy.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/barrier_packet.md",
+          "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/candidates/conductor_round145_squarefree_kernel_reduction.md",
+          "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/candidates/conductor_round146_three_variable_unmasking_and_dispersion_no_go.md",
+          "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/reviews/conductor_round146_three_variable_adjudication.md",
+          "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/candidates/conductor_round141_cone_nonresonant_reduction.md",
+          "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/controls/conductor_round141_controls.md"
+        ],
+        "required_controls": [
+          "t1_exact_extraction_and_prefix_target",
+          "squarefree_coprime_even_odd_character_and_cone",
+          "divisor_pairing_chi4_sector_ledger",
+          "ratio_Mellin_Euler_product_p2_and_H",
+          "target_safe_cone_collar_and_ratio_bandwidth",
+          "shifted_zeta_L_functional_equations_and_poles",
+          "level_four_generalized_divisor_Voronoi_kernel",
+          "uniform_complex_order_and_Bessel_asymptotics",
+          "H_powerful_coefficients_tail_and_signed_aggregation",
+          "dual_resonance_centre_width_amplitude_and_off_resonance",
+          "all_M_D_E_capacity_and_R4over3_barrier",
+          "clipped_prefix_profile_terminal_endpoint",
+          "t1_D1_prime_even_and_slow_family_controls",
+          "individual_positive_direction_and_fixed_centre",
+          "Round141_142_144_self_return_and_zero_mode",
+          "Round138_cross_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section analytic report.",
+          "An exact shifted Voronoi and H-convolution formula with conductor, order, Bessel, pole, prefix, and boundary ledger.",
+          "A target estimate, strict target-safe top-scale reduction, or first rigorous squarefree-H resonance no-go with a complete R-M-D-E-k power table.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/reports/t1_squarefree_voronoi_attack.md"
+      },
+      {
+        "id": "blind_t1_squarefree_voronoi_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "active",
+        "target": "Independently reconstruct the exact t=1 squarefree-cone coefficient, its Euler factorization and cone-Mellin interface, and determine whether a complex-order generalized-divisor transform with the full powerful Euler correction can meet the uniform prefix target. Give a target proof, strict owner-complete reduction, or exact no-go, with every short face and all-scale power checked.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "all strategy files",
+          "all Round-138 through Round-147 nonblind artifacts",
+          "all Round-147 sibling reports"
+        ],
+        "required_controls": [
+          "t1_exact_extraction_and_prefix_target",
+          "squarefree_coprime_even_odd_character_and_cone",
+          "divisor_pairing_chi4_sector_ledger",
+          "ratio_Mellin_Euler_product_p2_and_H",
+          "target_safe_cone_collar_and_ratio_bandwidth",
+          "level_four_generalized_divisor_Voronoi_kernel",
+          "uniform_complex_order_and_Bessel_asymptotics",
+          "H_powerful_coefficients_tail_and_signed_aggregation",
+          "dual_resonance_centre_width_amplitude_and_off_resonance",
+          "all_M_D_E_capacity_and_R4over3_barrier",
+          "clipped_prefix_profile_terminal_endpoint",
+          "t1_D1_prime_even_and_slow_family_controls",
+          "individual_positive_direction_and_fixed_centre",
+          "Round138_cross_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section statement-only analytic report.",
+          "A self-contained coefficient, Euler-product, cone-bandwidth, transform-resonance, and all-scale power derivation.",
+          "A target estimate, strict owner-complete survivor, or first exact no-go.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/reports/blind_t1_squarefree_voronoi_rederivation.md"
+      },
+      {
+        "id": "complex_order_voronoi_source_audit",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "status": "active",
+        "target": "Audit and, where necessary, derive from primary functional equations the exact level-four chi_4 generalized-divisor Voronoi formula needed for the t=1 face. Decide compact-smooth versus analytic test legality, complex-order uniformity, conductor and cusp normalization, poles, both signs and every Bessel branch, prefix and cone-collar errors, the powerful H convolution, and final target power. Supply a source-legal theorem or the first precise hypothesis or power obstruction.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round147_source_and_method_strategy.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/barrier_packet.md",
+          "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/reports/sqrt_divisor_twist_source_audit.md",
+          "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/reports/quadratic_irrational_divisor_twist_source_audit.md",
+          "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/reports/multidimensional_monomial_source_audit.md",
+          "sources/banerjee_khurana_2023.md"
+        ],
+        "required_controls": [
+          "t1_exact_extraction_and_prefix_target",
+          "ratio_Mellin_Euler_product_p2_and_H",
+          "target_safe_cone_collar_and_ratio_bandwidth",
+          "shifted_zeta_L_functional_equations_and_poles",
+          "level_four_generalized_divisor_Voronoi_kernel",
+          "uniform_complex_order_and_Bessel_asymptotics",
+          "H_powerful_coefficients_tail_and_signed_aggregation",
+          "dual_resonance_centre_width_amplitude_and_off_resonance",
+          "all_M_D_E_capacity_and_R4over3_barrier",
+          "clipped_prefix_profile_terminal_endpoint",
+          "individual_positive_direction_and_fixed_centre",
+          "Round141_142_144_self_return_and_zero_mode",
+          "Round138_cross_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section primary-source audit.",
+          "Exact theorem cards with coefficient, conductor, cusp, test class, order strip and uniformity, Bessel, pole, prefix, convolution, and power hypotheses.",
+          "A source-legal target theorem or the first rigorous test-function, uniform-order, H-convolution, resonance, or all-scale power obstruction.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/reports/complex_order_voronoi_source_audit.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "t1_arithmetic_and_support",
+        "requirement": "The t=1 extraction, squarefree and coprime support, parity, chi_4 sign, strict cone, divisor-pairing sectors, profile, physical weight, prefixes, and terminal endpoints remain literal."
+      },
+      {
+        "id": "Euler_product_and_cone_Mellin",
+        "requirement": "The p=2 and odd Euler factors, H convergence and coefficients, cone collar, ratio bandwidth, and hard-versus-smooth distinctions are exact and uniformly priced."
+      },
+      {
+        "id": "functional_equation_and_Voronoi",
+        "requirement": "The level-four coefficient, conductor and cusp normalization, complex order, compact test, poles, main terms, J-Y-K branches, prefixes, and Bessel asymptotics are source-legal or fully derived."
+      },
+      {
+        "id": "powerful_resonance_and_power",
+        "requirement": "The exact H convolution, moving resonant centres and widths, nonresonant tails, signed aggregation, all M-D-E-k aspects, and R^(4/3) barrier are priced without an unlicensed triangle gain."
+      },
+      {
+        "id": "boundaries_exceptions_and_direction",
+        "requirement": "D=1, primes, even squarefree inputs, exact radicals, slow-frequency families, clipped endpoints, fixed centre, and the individual positive complex direction are checked."
+      },
+      {
+        "id": "owner_and_scope",
+        "requirement": "A strict top-scale reduction is promoted only with its complement target-safe; t>=2, the Round-138 cross owner, downstream M1 and M2 owners, endpoint, M9, bridge, target, and exponent remain separate."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "1dc79cf41e0dea8888341e944c5d0bf025d87f22cfaa282da34fcd10eecd04f5",
+    "generated_at": "2026-08-24T09:11:11.193216+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}
