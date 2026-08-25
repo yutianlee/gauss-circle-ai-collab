@@ -1,0 +1,237 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 149,
+    "round_type": "m9_m1_lower_cone_t1_squarefree_gcd_lift_energy_gate",
+    "campaign_id": "m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate",
+    "title": "M1 lower-cone t=1 squarefree gcd-lift joint-energy gate",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "8f1912eeda4843718379213478a839b30fb2694d6b169ac8decbab5ca3561176",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "planned_numerical_percent": 0,
+      "literature_policy": "Use primary large-sieve, Farey-fraction, additive-character, squarefree-correlation, and Kloosterman-fraction sources only after deriving the exact lcm collapse, gcd-lift coefficient, d-dependent profile, reduced phase, diagonal norm, and R-M-D-E-Q target. Record theorem numbers, coefficient independence, modulus and denominator ranges, spacing or clustering hypotheses, diagonal terms, smoothness, and every translated loss."
+    },
+    "target_obligations": [
+      "M9-M1-lower-cone-t1-squarefree-reciprocal-transform-reduction",
+      "M9-M1-lower-cone-t1-squarefree-reciprocal-dispersion-obstruction",
+      "M9-M1-lower-cone-t1-squarefree-H-resonance-obstruction",
+      "M9-M1-global-lower-radial-signed-estimate"
+    ],
+    "frozen_target": {
+      "question": "After summing the Round-148 Mobius cells with the same lcm and then every gcd lift with the same reduced fraction ell/q=L/q_0, does the exact compressed coefficient satisfy a uniform square norm and does its complete joint d-energy satisfy E_U<<R^2 D X^epsilon, thereby proving |T|<<RD X^epsilon; if not, what is the first exact cutoff, d-dependence, alignment, near-collision, source-hypothesis, boundary, or all-scale obstruction?",
+      "reference_formula": "Let C_d(n)=sum_{b|d,[alpha^2,b]=n}mu(alpha)mu(b), with odd squarefree alpha,b and the exact nonempty-progression indicator kappa_(d,U)(n). For ell=gL, q=gq_0, (L,q_0)=1, define B_(d,U)(L)=sum_g C_d(gL)kappa_(d,U)(gL)/g. The candidate exact row is G_U(d)=sum_((L,q_0)=1) chi_4(Lq_0)B_(d,U)(L)W_(d,U)(L/q_0)e(NdL/q_0)/L, supported on q_0 asymp LQ, and T=sum_d mu^2(d)(D/d)G_U(d). The target follows from sum_d mu^2(d)|G_U(d)|^2<<R^2 D X^epsilon.",
+      "quantities": [
+        "For d_o=d/(d,2), prove locally that C_d(n)=mu(u)mu(v) for n=uv^2, odd u|d_o, odd u,v with mu^2(uv)=1, and (v,d)=1, and is zero otherwise; the odd p|d_o, p^2|n cancellation is compulsory and p=2 is absent from the lcm ledger.",
+        "The exact prefix indicator kappa_(d,U)(n) is finite and may be irregular near the endpoint. No continuous cutoff may silently replace it.",
+        "The chi_4 factors of the common odd gcd lift cancel as chi_4(g)^2=1, while the phase and saddle profile depend only on L/q_0. Every other g-dependence must be displayed.",
+        "Test the uniform truncated-lift norm sum_L |B_(d,U)(L)|^2/L<<X^epsilon before invoking the joint energy.",
+        "The literal equal-cell diagonal should cost DQX^epsilon and is target-safe because Q<=R^2; prove this with the actual d-dependent coefficient.",
+        "The off-diagonal must retain Delta=L_1q_(0,2)-L_2q_(0,1), the congruence NDelta=0 mod q_(0,1)q_(0,2), near alignments, common divisors, and imprimitive reductions.",
+        "A classical large sieve with d-independent coefficients does not apply verbatim to B_(d,U)(L)W_(d,U)(L/q_0).",
+        "Audit D=1, L=1, q_0|N, odd primes dividing d_o, even squarefree d, small reduced denominators, balanced and extreme aspects, short prefixes, and every M<=R^2.",
+        "The Round-147 H correlation is an alternative only after exact Euler recombination; no termwise lcm-to-powerful-index map is allowed.",
+        "Every t>=2 layer and the independent Round-138 cross owner remain separate."
+      ]
+    },
+    "completion_criteria": [
+      "Derive the exact lcm-compressed coefficient C_d(n), including every odd-prime local case and the nonempty-progression cutoff.",
+      "Prove the finite gcd-lift regrouping ell=gL, q=gq_0 as an identity for the actual phase, chi_4 factors, profile, prefix, and amplitude.",
+      "Prove or refute the uniform truncated-lift square norm sum_L |B_(d,U)(L)|^2/L<<X^epsilon.",
+      "Write the exact joint d-energy and prove the literal diagonal is within R^2D X^epsilon.",
+      "Control or isolate the off-diagonal determinant, exact N-dependent alignments, near collisions, common divisors, imprimitive denominators, and d-dependent coefficients.",
+      "Source-audit every imported rational large-sieve, Farey, squarefree additive, Kloosterman-fraction, or dispersion theorem against the literal compressed energy.",
+      "Audit all R-M-D-E-Q aspects, D=1, L=1, q_0|N, small denominators, odd primes dividing d_o, even squarefree d, short prefixes, and boundary terms.",
+      "Prove the target, isolate a strict owner-complete range, or identify a rigorous gcd-lift energy no-go without converting an adverse upper capacity into a signed lower bound.",
+      "Close under exactly one label: euler_compressed_reciprocal_target, strict_joint_energy_range, or gcd_lift_energy_no_go."
+    ],
+    "controls": [
+      "exact_progression_coefficient_collapse",
+      "p_divides_d_square_local_cancellation",
+      "finite_nonempty_progression_prefix_indicator",
+      "gcd_lift_character_phase_profile_recombination",
+      "truncated_lift_square_norm",
+      "joint_d_energy_target_normalization",
+      "literal_equal_cell_diagonal",
+      "offdiagonal_determinant_and_near_collision",
+      "N_dependent_exact_alignments",
+      "common_divisor_and_imprimitive_denominator",
+      "d_dependent_arithmetic_coefficient",
+      "source_theorem_energy_match",
+      "all_M_D_E_Q_power_ledger",
+      "D1_L1_qdividesN_prime_and_prefix_controls",
+      "H_interface_and_transform_self_return",
+      "Round138_cross_tge2_and_downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "gcd_lift_euler_compression_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "assigned",
+        "target": "Derive the exact lcm coefficient C_d(n), finite gcd-lift compression B_(d,U)(L), and compressed reciprocal row. Prove the truncated-lift square norm and literal energy diagonal, then attack the complete signed off-diagonal. Prove the RD target, a strict owner-complete range, or the first exact cutoff, alignment, coefficient, boundary, or all-scale no-go.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round149_gcd_lift_energy_strategy.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/barrier_packet.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/candidates/conductor_round148_squarefree_reciprocal_transform_and_dispersion_no_go.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/reports/signed_squarefree_reciprocal_attack.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/reviews/conductor_round148_adjudication.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/controls/conductor_round148_controls.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/synthesis.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/candidates/conductor_round147_t1_squarefree_voronoi_and_H_no_go.md"
+        ],
+        "required_controls": [
+          "exact_progression_coefficient_collapse",
+          "p_divides_d_square_local_cancellation",
+          "finite_nonempty_progression_prefix_indicator",
+          "gcd_lift_character_phase_profile_recombination",
+          "truncated_lift_square_norm",
+          "joint_d_energy_target_normalization",
+          "literal_equal_cell_diagonal",
+          "offdiagonal_determinant_and_near_collision",
+          "N_dependent_exact_alignments",
+          "common_divisor_and_imprimitive_denominator",
+          "d_dependent_arithmetic_coefficient",
+          "all_M_D_E_Q_power_ledger",
+          "D1_L1_qdividesN_prime_and_prefix_controls",
+          "H_interface_and_transform_self_return",
+          "Round138_cross_tge2_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section analytic report.",
+          "The exact prime-local lcm collapse, gcd-lift row, square norm, joint energy, and complete R-M-D-E-Q ledger.",
+          "A target proof, strict owner-complete range, or first rigorous method-specific no-go.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/reports/gcd_lift_euler_compression_attack.md"
+      },
+      {
+        "id": "blind_compressed_energy_feasibility",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "assigned",
+        "target": "Independently derive the strongest exact lcm and gcd-lift compression from the frozen scalar and test whether its joint d-energy meets R^2D. Prove the target, a strict range, or a precise diagonal, alignment, near-collision, coefficient-dependence, or prefix no-go without access to claimant strategy.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "all strategy files",
+          "all Round-138 through Round-149 nonblind artifacts",
+          "all Round-149 sibling reports"
+        ],
+        "required_controls": [
+          "exact_progression_coefficient_collapse",
+          "p_divides_d_square_local_cancellation",
+          "finite_nonempty_progression_prefix_indicator",
+          "gcd_lift_character_phase_profile_recombination",
+          "truncated_lift_square_norm",
+          "joint_d_energy_target_normalization",
+          "literal_equal_cell_diagonal",
+          "offdiagonal_determinant_and_near_collision",
+          "N_dependent_exact_alignments",
+          "common_divisor_and_imprimitive_denominator",
+          "d_dependent_arithmetic_coefficient",
+          "all_M_D_E_Q_power_ledger",
+          "D1_L1_qdividesN_prime_and_prefix_controls",
+          "Round138_cross_tge2_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section statement-only analytic report.",
+          "An independent exact compression and joint-energy feasibility theorem or rigorous no-go.",
+          "A precise separation of literal diagonal, exact alignment, near collision, and generic off-diagonal.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/reports/blind_compressed_energy_feasibility.md"
+      },
+      {
+        "id": "rational_energy_source_audit",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "status": "assigned",
+        "target": "Audit primary rational large-sieve, Farey-spacing, additive squarefree-correlation, Kloosterman-fraction, and dispersion results against the exact compressed Round-149 energy. Supply a theorem with complete power translation or the first exact coefficient-dependence, spacing, denominator, averaging, diagonal, smoothness, prefix, or all-scale mismatch.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round149_gcd_lift_energy_strategy.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/barrier_packet.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/candidates/conductor_round148_squarefree_reciprocal_transform_and_dispersion_no_go.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/reports/squarefree_progression_source_audit.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/reviews/source_conductor_round148_final.md",
+          "rounds/codex-managed/m9-m1-joint-reciprocal-large-sieve/reports/conductor_signed_reciprocal_energy_analysis.md",
+          "rounds/codex-managed/m9-m1-joint-reciprocal-large-sieve/reports/conductor_RSLS_source_hostile_audit.md",
+          "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/candidates/conductor_round138_scalar_rows_and_resonance_fibres.md",
+          "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/candidates/conductor_round139_curvature_collar_and_quadratic_obstruction.md"
+        ],
+        "required_controls": [
+          "exact_progression_coefficient_collapse",
+          "gcd_lift_character_phase_profile_recombination",
+          "truncated_lift_square_norm",
+          "joint_d_energy_target_normalization",
+          "literal_equal_cell_diagonal",
+          "offdiagonal_determinant_and_near_collision",
+          "N_dependent_exact_alignments",
+          "common_divisor_and_imprimitive_denominator",
+          "d_dependent_arithmetic_coefficient",
+          "source_theorem_energy_match",
+          "all_M_D_E_Q_power_ledger",
+          "D1_L1_qdividesN_prime_and_prefix_controls",
+          "H_interface_and_transform_self_return",
+          "Round138_cross_tge2_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section primary-source audit.",
+          "Exact theorem cards with coefficient, spacing, denominator, averaging, diagonal, smoothness, and translated R-M-D-E-Q hypotheses.",
+          "A source-legal target theorem or the first precise source and power obstruction.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/reports/rational_energy_source_audit.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "lcm_coefficient_and_local_primes",
+        "requirement": "The exact C_d(n) formula, odd p|d_o square cancellation, absent p=2 lcm factor, squarefree conditions, parity, and prefix indicator are independently checked."
+      },
+      {
+        "id": "gcd_lift_identity",
+        "requirement": "The ell=gL, q=gq_0 regrouping retains the chi_4 factors, phase, profile, support, finite cutoff, and every lift exactly."
+      },
+      {
+        "id": "square_norm_and_diagonal",
+        "requirement": "The truncated B_(d,U) square norm and literal joint-energy diagonal are proved uniformly for every prefix and aspect."
+      },
+      {
+        "id": "offdiagonal_and_alignments",
+        "requirement": "Distinct fractions, exact N-dependent alignments, near collisions, common divisors, imprimitive denominators, and d-dependent coefficients are all priced."
+      },
+      {
+        "id": "source_and_power",
+        "requirement": "Every imported theorem matches the actual coefficient and averaging family, and every R-M-D-E-Q range has a complete power ledger."
+      },
+      {
+        "id": "owner_and_scope",
+        "requirement": "No t>=2, Round-138 cross, lower GAR, M1, M2, endpoint, M9, bridge, target, or exponent claim is promoted without its separate owner."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "8f1912eeda4843718379213478a839b30fb2694d6b169ac8decbab5ca3561176",
+    "generated_at": "2026-08-24T11:59:34.439266+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

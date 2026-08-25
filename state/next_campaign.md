@@ -1,39 +1,56 @@
-# Proposed Research Round 131 (not opened)
+# Proposed Research Round 164
 
-Candidate campaign:
-`gc-w7-16-top-shell-determinant-residue-zero-mode-gate`
+Campaign: m9-m2-hard-top-t1-residual-signed-divisor-transport-gate
 
-Starting graph SHA-256:
-`23e7bfacbf6abc5582769fbe8d427cbca2379e1d265b99df21d93a65ec504825`.
+Status: proposed, not launched.
 
-## Candidate objective
+Starting graph:
+81690ebb72b0dedd99bdb6c6127f947df696a901a22af3f65ac8738209125306.
 
-On the sole exponent-critical shell $B\asymp D$, reassemble physical
-primitivity and write the bounded-to-one chart
+## Frozen objective
 
-\[
- n=aq-bp,
- \qquad p\equiv-b^{-1}n\pmod {|a|}
-\]
-
-with the exact M1/M2 induced residue weights, Stieltjes thresholds,
-reciprocal aliases, outer complete-lift coefficient, taper, and owners.
-Test the actual zero Fourier mode before any positive norm.
-
-## Candidate exit gate
-
-Prove
+Prove the complete literal residual estimate
 
 \[
- |\mathfrak O_{i,B\asymp D}^{+}|
- \ll_\varepsilon DK_DY^{-\delta+\varepsilon}
+ |\mathcal S_{L,1}^{\mathrm{rem}}|
+ \ll_\varepsilon L^{3/2}X^\varepsilon,
 \]
 
-for some fixed $\delta>0$, or prove a rigorous physical-profile zero-mode
-obstruction and park the graded interface.  The target needs
-$\delta=11/48$.
+after subtracting only the accepted Round-163 close-opposite-prime XOR
+sector; or derive the smallest exact signed-transport obstruction showing
+why every within-\(N\) positive coupling repays the missing half-power.
 
-The proposed round may not repeat independent-$p$ square-root credit,
-support-only energy, resolved-$G^2$ completion, product-window modulus,
-or sequential unit-Hessian transforms.  It has not been opened or
-delegated.
+## Exact interface
+
+For each residual product \(N\), order the positive and negative
+\(\chi_4\)-divisors in the literal upper near-square window.  Derive both
+the discrete monotone-coupling formula and the equivalent cumulative
+signed-divisor Stieltjes identity, including unequal sign counts,
+unmatched mass, profiles, parity, endpoints, hard support, and zero
+extension.
+
+The aggregate transport cost and unmatched mass must be compared with
+\(L^{3/2+o(1)}\).  If they are too large, the outer phase
+\(e(J\sqrt N)\) must remain available and the exact cross-\(N\)
+coefficient theorem needed for cancellation must be stated.
+
+## Planned orthogonal tasks
+
+1. Attack the full residual by an exact cumulative-discrepancy or
+   monotone-transport identity and retain the outer product phase until
+   justified.
+2. Independently rederive the residual and the strongest possible
+   within-product transport estimate from a statement-only packet.
+3. Hostilely quantify unmatched sign mass and transport capacity on
+   semiprime and multiprime controls, separating raw counts from the
+   physical weighted scalar.
+
+## Exit gates
+
+- hard_top_t1_residual_target;
+- strict_t1_residual_transport_sector; or
+- hard_top_t1_residual_transport_no_go.
+
+The round must not produce another unquantified sparse sector or propagate
+a \(t=1\) result to the remaining few-point channels or any downstream
+owner without an explicit connector.

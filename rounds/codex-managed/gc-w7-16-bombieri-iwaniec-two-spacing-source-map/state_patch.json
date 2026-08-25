@@ -1,0 +1,251 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "GC-W7-16-exact-Li-Yang-single-wave-source-dictionary",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Exact Li--Yang single-wave phase, carrier, and parameter dictionary",
+        "status": "proved_internal",
+        "statement_tex": "For one top-shell reciprocal ray wave, after a finite numerator-sign split, h=a, m=b, H=L, M=D, T=c/kappa_i, and F(z)=1/z give the exact phase ca/(kappa_i b), while F', F'', F''', and F'F'''-3(F'')^2 satisfy the two Li--Yang phase conditions uniformly. The M1 denominator quarter carriers cost O(1), by b=4u+r and F_r(z)=1/(4z+r/M') on four progressions; the M2 chi_4(a) carrier costs O(1), by its two Fourier branches and constant shifts of F. At T asymp Y, H=Y^(1/6), M=Y^(1/2), the repaired Case-A and restricted small-cap hypotheses hold, N_A=Y^(67/300+o(1)), R=Y^(83/600+o(1)), eta=Y^(-17/150+o(1)), and at Q=R the source spacing lengths are Y^(17/600+o(1)) and Y^(17/200+o(1)). The optimized q is (250+10sqrt(170))/91 and Phi(-1/3)=(29+5sqrt(170))/300. This is a dictionary for one already-separated BV source wave only; it does not assert that the literal project ray or pair coefficient satisfies the source coefficient hypotheses.",
+        "dependencies": [
+          "Li-Yang-source-audit",
+          "GC-W7-16-reduced-Farey-cluster-reduction"
+        ],
+        "implies": [
+          "GC-W7-16-actual-reduced-determinant-correlation"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/candidates/conductor_single_wave_bi_parameter_map.md",
+            "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reports/li_yang_bi_exact_source_card.md",
+            "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reports/blind_double_large_sieve_feasibility.md",
+            "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reports/literal_joint_scalar_bi_normal_form_map.md",
+            "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reviews/blind_post_unmask_source_condition_seam.md",
+            "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reviews/source_post_unmask_parameter_and_scope_audit.md",
+            "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reviews/discovery_post_unmask_capacity_and_owner_audit.md",
+            "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reviews/conductor_round133_bi_adjudication.md",
+            "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use only for individually separated full-scale source waves. Any project estimate must additionally preserve the moving determinant wedge, literal coefficient owners, short-interval transformations, and final absolute-value placement."
+      },
+      {
+        "id": "GC-W7-16-direct-Li-Yang-BI-pair-interface-obstruction",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Direct Li--Yang/Bombieri--Iwaniec pair-interface obstruction",
+        "status": "proved_internal",
+        "statement_tex": "The repaired Li--Yang standard-sum theorem and its displayed double-large-sieve/two-spacing interface do not directly give a complete exponent below Y^(27/48) for the literal top-shell determinant scalar. The physical pair coefficient remains joint through the one-sided moving determinant wedge, taper, primitive lifts, Mobius/Stieltjes profiles, thresholds, quarter or chi_4 carriers, aliases, stars, cells, signs, and owners; no owner-preserving projective decomposition with a favorable source norm is proved. The source takes arcwise absolute values and returns positive spacing quantities, not a reverse signed operator inequality. Project rays map to original source summation variables, not to the later derivative approximants, and the determinant does not supply the four modular-inverse and real second-spacing conditions. Even granting a rank-one connector, projection, taper, and every owner at zero cost, two independent normalized source bounds give only Y^(2Phi(-1/3)+epsilon)=Y^(0.6279468270...+epsilon)=Y^(30.1414.../48+epsilon), above 27/48. The formal one-source collapse h=n, m=bb' has product-fibre coefficients and violates the source large-M Case-A range. This is a no-go for the audited direct and factor-first source interfaces, not for a new joint determinant-adapted double-large-sieve theorem.",
+        "dependencies": [
+          "GC-W7-16-exact-Li-Yang-single-wave-source-dictionary",
+          "GC-W7-16-complete-all-shell-curvature-saving",
+          "GC-W7-16-post-inner-outer-energy-obstruction"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reports/li_yang_bi_exact_source_card.md",
+            "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reports/blind_double_large_sieve_feasibility.md",
+            "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reports/literal_joint_scalar_bi_normal_form_map.md",
+            "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/candidates/conductor_moving_wedge_role_control.md",
+            "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reviews/source_post_unmask_parameter_and_scope_audit.md",
+            "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reviews/discovery_post_unmask_capacity_and_owner_audit.md",
+            "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reviews/conductor_round133_bi_adjudication.md",
+            "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Park the direct and factor-first Li--Yang imports. Reopen this lane only with a new joint theorem that retains the actual pair coefficient before arcwise absolute values, resolves the source first-coordinate seam, maps all four spacings, and proves complete capacity below Y^(27/48)."
+      }
+    ],
+    "update": [
+      {
+        "id": "Li-Yang-source-audit",
+        "status": "proved_external_dependency",
+        "statement_tex": "The final real-X inclusive Li--Yang circle theorem is source-audited and independently repaired. The accepted narrow route uses M<T^(7/16), H=MT^x, sqrt(-1-8x) in (5.27), the Bourgain--Watt v1 (7.2) two-sign identity, and a fifth repair: printed Li--Yang (4.9) is not the substitution of Lemma 4.1 condition (4.6) and the Case-A N in (4.8), so corrected (5.23) is used to verify original (4.6) directly. The general printed Proposition 3.1 omits beta_2>=0, the general Case-B comparison omits a logarithm, and general Theorem 4.2 is not certified with (4.9) as printed. On the exact final range, the missing beta_2 condition, Case-B logarithm, and original Lemma condition have explicit fixed-power margins, yielding theta_LY=(3292+25sqrt(1717))/13762. The v2 first-spacing presentation also has an l-versus-k first-coordinate mismatch that must be resolved before a new direct DLS application. The paper remains a preprint and no public erratum was found.",
+        "evidence_added": {
+          "positive": [
+            "sources/li_yang_2023.md",
+            "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reports/li_yang_bi_exact_source_card.md",
+            "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reviews/blind_post_unmask_source_condition_seam.md",
+            "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reviews/source_post_unmask_parameter_and_scope_audit.md",
+            "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reviews/conductor_round133_bi_adjudication.md",
+            "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/synthesis.md"
+          ],
+          "inconclusive": [
+            "rounds/web-research-test/Li-Yang-arXiv-2308.14859v2.tex"
+          ]
+        },
+        "reason_for_promotion": "Round 133 independently identifies and repairs the false (4.9) substitution on the final narrow range by connecting (5.23) directly to original (4.6), while preserving all Round-95 scope restrictions.",
+        "next_action": "Treat only the narrow five-repair theorem as an external dependency. Do not cite printed (4.9), general Theorem 4.2, the full printed Proposition 3.1, or either unverified first-spacing four-vector as a new project interface."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "statement_tex": "For every epsilon>0 and every real X>=2, the inclusive Gauss-circle discrepancy P(X)=N(sqrt(X))-pi X satisfies P(X)<<_epsilon X^(theta_LY+epsilon), where theta_LY=(3292+25sqrt(1717))/13762=0.3144831759740614.... This accepts only the final application after five literal/source-condition repairs: M<T^(7/16), H=MT^x, sqrt(-1-8x) in Li--Yang (5.27), the exact two-sign circle identity from Bourgain--Watt v1 (7.2), and the direct verification of Lemma 4.1 (4.6) by corrected (5.23) while bypassing false printed (4.9). The missing Guth--Maldague beta_2>=0 condition is proved on the final x-range, and the missing Case-B logarithm is absorbed by fixed-power slack. The printed general Proposition 3.1, general Case-B theorem, and general Theorem 4.2 with (4.9) are not accepted. This direct external theorem does not prove the project's internal cluster theorem, M9-M1, M9-M2, M9, or exponent one quarter.",
+        "evidence_added": {
+          "positive": [
+            "sources/li_yang_2023.md",
+            "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reports/li_yang_bi_exact_source_card.md",
+            "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reviews/blind_post_unmask_source_condition_seam.md",
+            "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reviews/conductor_round133_bi_adjudication.md",
+            "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/synthesis.md"
+          ]
+        },
+        "next_action": "Use this unchanged numerical exponent as the strongest certified global pointwise benchmark, with all five repairs and nonimplication scope explicit."
+      },
+      {
+        "id": "GC-W7-16-actual-reduced-determinant-correlation",
+        "dependencies_added": [
+          "GC-W7-16-exact-Li-Yang-single-wave-source-dictionary",
+          "GC-W7-16-direct-Li-Yang-BI-pair-interface-obstruction"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reviews/conductor_round133_bi_adjudication.md",
+            "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/synthesis.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reports/blind_double_large_sieve_feasibility.md",
+            "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reports/literal_joint_scalar_bi_normal_form_map.md",
+            "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reviews/source_post_unmask_parameter_and_scope_audit.md",
+            "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reviews/discovery_post_unmask_capacity_and_owner_audit.md"
+          ]
+        },
+        "next_action": "The best complete bound remains Y^(35/48). The direct Demeter--Wu and direct or factor-first Li--Yang/BI interfaces are parked. Continue only with a genuinely new joint signed theorem that retains the literal coefficient before positive norms and has a complete capacity below Y^(27/48), or rotate to a distinct accepted proof frontier."
+      },
+      {
+        "id": "GC-W7-16-post-inner-outer-energy-obstruction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reports/blind_double_large_sieve_feasibility.md",
+            "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reviews/source_post_unmask_parameter_and_scope_audit.md",
+            "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reviews/conductor_round133_bi_adjudication.md",
+            "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/synthesis.md"
+          ]
+        },
+        "next_action": "Do not replace the literal signed scalar by a positive source arc sum, first-spacing norm, second-spacing count, SVD, row energy, or two independent source-wave product without a proved one-sided owner-preserving connector and complete norm ledger."
+      },
+      {
+        "id": "GC-W7-16-complete-all-shell-curvature-saving",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reviews/conductor_round133_bi_adjudication.md",
+            "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/synthesis.md"
+          ]
+        },
+        "next_action": "Retain Y^(35/48+epsilon) as the complete top-shell bound. The audited Li--Yang/BI interface gives an exact one-wave dictionary but no complete pair estimate below Y^(27/48)."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round133-printed-4.9-is-equivalent-to-4.6-plus-4.8",
+        "reason": "Direct substitution differs from printed (4.9); after a common power comparison the discrepancy is T^2/M^6, and the two conditions have opposite outcomes at M=T^(1/2), H=T^(1/6)."
+      },
+      {
+        "id": "Round133-general-Li-Yang-Theorem-4.2-is-accepted-as-printed",
+        "reason": "The final narrow route bypasses false (4.9), but general Theorem 4.2 is not repaired over its whole printed range."
+      },
+      {
+        "id": "Round133-project-rays-are-BI-derivative-approximants",
+        "reason": "Project rays are original source summation variables with ratio Y^(-1/3) and denominator Y^(1/2); source approximants are created later, have ratio of order one, and denominator at most Y^(1/6)."
+      },
+      {
+        "id": "Round133-project-determinant-implies-four-source-spacings",
+        "reason": "One ordinary-ratio determinant condition supplies neither modular-inverse coordinate nor the derived floor, mu, and fractional-part coordinates."
+      },
+      {
+        "id": "Round133-one-Li-Yang-S-bounds-the-literal-pair-scalar",
+        "reason": "The source theorem starts with one separably BV-weighted wave; the project target is an owner-dependent joint pair coefficient with a moving determinant wedge."
+      },
+      {
+        "id": "Round133-joint-coefficient-has-a-free-source-factorization",
+        "reason": "No owner-preserving projective decomposition through the source short-interval and major/minor-arc transformations has been proved."
+      },
+      {
+        "id": "Round133-positive-spacing-energy-is-signed-cross-ray-cancellation",
+        "reason": "The source takes arcwise absolute values and returns positive spacing quantities; it supplies no reverse signed operator inequality for the project scalar."
+      },
+      {
+        "id": "Round133-M1-quarter-carrier-forces-D-over-L-BV-cost",
+        "reason": "Four denominator progressions make the quarter carrier constant and preserve uniform source phase conditions, so the carrier costs O(1); the remaining joint owners are the actual obstruction."
+      },
+      {
+        "id": "Round133-first-spacing-vector-is-unambiguously-k-first",
+        "reason": "The exact G_q norm and introduction use l as the first coordinate, while the Section-4 sketch prints k; the v2 source does not reconcile them."
+      },
+      {
+        "id": "Round133-q4-directly-satisfies-the-q-greater4-small-cap-formula",
+        "reason": "The printed exponent is singular at q=4; the endpoint uses the source's separate G_4 estimate."
+      },
+      {
+        "id": "Round133-two-independent-S-bounds-cross-27-over-48",
+        "reason": "Even with zero connector cost, the exact exponent is 2Phi(-1/3)=0.6279468270..., which is 30.1414.../48 and exceeds 27/48."
+      },
+      {
+        "id": "Round133-two-Phi-is-a-universal-BI-method-barrier",
+        "reason": "The calculation concerns a factor-first use of two independent one-wave theorems; a genuinely new joint determinant-adapted DLS theorem is a different interface."
+      },
+      {
+        "id": "Round133-short-rectangle-support-alone-violates-source-S",
+        "reason": "Fixed-BV weights can localize short subintervals; the obstruction is the moving nonproduct wedge and absent norm, not short support by itself."
+      },
+      {
+        "id": "Round133-joint-determinant-collapse-is-source-admissible",
+        "reason": "The h=n, m=bb' collapse has a product-fibre coefficient and M asymp T, H asymp T^(9/16), contradicting the large-M Case-A lower condition H at least T^5."
+      },
+      {
+        "id": "Round133-aligned-packet-is-a-physical-lower-bound",
+        "reason": "The packet is a per-ray hostile phase control and upper-capacity ledger; one centre does not align every denominator and actual amplitudes may cancel or vanish."
+      },
+      {
+        "id": "Round133-source-interface-improves-the-global-project-exponent",
+        "reason": "No complete literal pair estimate was proved, so neither the internal one-third theorem nor any M9 or bridge dependency changes."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "No direct M1 parent or alternative global radial parent is proved by the one-wave source dictionary."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Hard TOP, BAL, and all UNBAL owners remain open; the source theorem does not estimate their literal joint coefficients."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "No uniform all-owner endpoint estimate is proved."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain open."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The bridge remains conditional on the complete open M9 hypothesis."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The internally proved global exponent remains one third because the complete fixed-block ledger remains Y^(35/48)."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The quarter target still lacks M9-M1, M9-M2, endpoint uniformity, M9, and the final unconditional bridge."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 8,
+    "idea_quality_score": 9,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 133 proves an exact single-wave Li--Yang phase, carrier, and parameter dictionary, finds and independently repairs a fifth source-condition defect needed by the narrow external theorem, and closes the direct and factor-first pair interfaces with exact coefficient, role, absolute-value, and capacity obstructions. It changes no complete block or global exponent."
+  }
+}

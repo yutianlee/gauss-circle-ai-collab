@@ -3294,3 +3294,74 @@ frontier is now the literal signed $B\asymp D$ determinant-residue scalar.
 No global exponent changes: internally proved $1/3$, audited external
 $0.3144831759740614\ldots$.  M9-M1, M9-M2, endpoint uniformity, M9, and
 the quarter target remain open.
+
+## Current frontier after Round 162 (2026-08-25)
+
+Round 160 closed the UNBAL inverse-selector reciprocity probe without an
+owner estimate. Exact additive reciprocity preserves the complete
+centred owner and reconstructs it after the transform. The unweighted
+inverse-residue matrix has Gram matrix $jI-\mathbf1\mathbf1^*$, so
+scalar projective placement costs $j^{1/2-o(1)}$; the full long-frequency
+compression is $\sqrt{\lceil(n-1)/j\rceil}\asymp\sqrt\Delta$. These are
+route-capacity obstructions, not weighted lower bounds or vector
+impossibility results. UNBAL and its parent remain open.
+
+Round 161 rewrote the nonsquare hard-TOP owner exactly as a
+squarefree-radical frequency sum. Every fixed-constant long-channel sector
+$D\le CL$, equivalently fixed $t\ge\tau\sqrt L$, is target-safe, and
+all exact fixed-centre base and atom collisions are classified. This gives
+no near-collision gap. The first unresolved physical face is the signed
+$t=1$, $D\asymp L^2$ close-factor scalar; coefficient-uniform
+common-test norms saturate capacity $L^{2+o(1)}$ against target
+$L^{3/2+o(1)}$.
+
+Round 162 attacked that literal $t=1$ face. Exact character Poisson is
+involutive and, after the full Möbius lcm opening, exposes a rank-one dual
+product collar
+
+\[
+ |s\ell-XQR|\ll \frac{QRJ}{L},
+ \qquad Q\ell\le Rs\le4Q\ell.
+\]
+
+Its positive capacity is $\sqrt{JL}$: the apparent $QR$-decay is
+repaid by collar width. Product grouping returns a near-square local
+$\chi_4$-divisor window, but completion adds an uncontrolled complement,
+standard differencing erases the character, and the named audited source
+placements restore powers above target. Hard-edge transforms and the full
+signed Möbius-coupled aggregate remain open. This is a scoped no-go, not a
+physical upper or lower bound.
+
+The accepted proof infrastructure still gives the quarter theorem only
+conditionally on M9. M9-M1 is open at its two direct parents, M9-M2 is
+open at hard TOP, BAL, and UNBAL, endpoint uniformity is open, and hence
+M9, the bridge, and the Gauss circle target remain open. The strongest
+internally proved global exponent is still $1/3$; the audited external
+benchmark is still $0.3144831759740614\ldots$.
+
+## Current frontier after Round 163 (2026-08-25)
+
+Round 163 returned to the literal squarefree \(t=1\) product coefficient
+before the Möbius opening.  For each supported \(N\), any canonically
+selected pair of close odd prime factors \(p,q\) with
+\(\chi_4(pq)=-1\) gives an exact exchange on the complete incidence set
+where exactly one of \(p,q\) lies in the character-bearing divisor.  The
+exchange fixes \(N\), phase, parity, and normalization and reverses
+\(\chi_4\).  Common-cell variation costs \(L^{-1/2}\), while all support
+crossings occupy \(O(L^{3/2})\) lattice collars.  Hence the selected
+physical sector is \(O_\kappa(L^{3/2})\), uniformly in the real centre.
+
+This sector has no proved density.  All no-pair products and all
+neither-prime or both-prime incidences remain in the exact residual
+\(\mathcal S_{L,1}^{\rm rem}\).  Single-prime toggles have disjoint
+physical support, normalized toggle averaging self-returns, general
+exchange matchings require sign-count balance, and odd/even complements
+enter excluded lower windows.  These are route obstructions, not a
+physical lower bound.
+
+The proposed next gate is an owner-complete cumulative signed-divisor or
+monotone-transport analysis of the residual, with unmatched mass and the
+outer \(e(J\sqrt N)\) phase retained.  Hard TOP, BAL, UNBAL, M9--M2,
+both M9--M1 routes, endpoint uniformity, M9, and the quarter theorem
+remain open.  The internal exponent remains \(1/3\), and the audited
+external benchmark remains \(0.3144831759740614\ldots\).

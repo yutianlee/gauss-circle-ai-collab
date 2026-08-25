@@ -1,0 +1,232 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "Demeter-Wu-hyperbolic-decoupling-source-audit",
+        "type": "source_audit",
+        "track": "source_audit",
+        "title": "Demeter--Wu hyperbolic-paraboloid decoupling source interface",
+        "status": "proved_external_dependency",
+        "statement_tex": "Demeter--Wu arXiv:2505.09037v2 is audited from the official TeX source. Definition 1.2 requires |xi_1-xi_2| asymp 1 and |eta_1-eta_2| asymp 1 for every pair of points in the two patches. Definition 1.3 and Theorem 1.6 assume Fourier support in an R^(-1)-neighborhood of two transverse hyperbolic-paraboloid patches and bound the global bilinear L2 square by a product of positive L4 cap-square sums at R^(-1/2) cap scale, up to R^epsilon. Definition 1.9 and Theorem 1.10 assume scale-R wave packets and a union X of disjoint R^(1/2)-balls with per-ball tube-incidence parameters, and again conclude a positive refined bilinear norm inequality. Linear Theorem 2.4 and pointwise Proposition 4.11 retain horizontal and vertical ruling rectangles in positive terms. The source states no prescribed-centre arithmetic exponential-sum theorem, no owner-preserving factorization of a joint pair coefficient, and no signed estimate for the retained ruling term.",
+        "dependencies": [],
+        "implies": [],
+        "blockers": [],
+        "source_card": "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/reports/demeter_wu_exact_source_card.md",
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/reports/demeter_wu_exact_source_card.md",
+            "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/reviews/source_post_chart_normalization_audit.md",
+            "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/reviews/conductor_round132_hyperbolic_decoupling_adjudication.md",
+            "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use only after a literal map supplies both-coordinate transverse patches, Fourier thickness, cap and ball normalization, coefficient ownership, and a separately priced ruling term. Do not cite curvature or a positive square function as fixed-centre signed cancellation."
+      },
+      {
+        "id": "GC-W7-16-exact-hyperbolic-ruling-coordinate-chart",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Exact top-shell hyperbolic ruling-coordinate chart",
+        "status": "proved_internal",
+        "statement_tex": "For a top-shell ray r=(a,b), set xi=b/D, eta=-Da/(Lb), and zeta=-a/L. Then zeta=xi eta exactly. For r'=(a',b'), n=ab'-a'b>0, and P_i=cL/(kappa_iD), the reciprocal phase difference equals P_i(eta_(r')-eta_r), with eta_(r')-eta_r=Dn/(Lbb'). Hence P_i asymp Y^(32/48), while the determinant taper confines the difference to h_* asymp kappa_iD/(WL)=Y^(-5/48+o(1)). On a dyadic h-band, after localizing absolute eta, the recentered affine map X=xi-xi_0, H=(eta-eta_0)/h, Z=(zeta-eta_0xi-xi_0eta+xi_0eta_0)/h again satisfies Z=XH and changes the reciprocal evaluation scale to R_h=P_ih; at h=h_* this is c/W=Y^(27/48+o(1)). These are exact surface and physical dual-coordinate identities, not a source-radius or estimate. A widest-band broad pair must satisfy |b-b'|/D asymp 1 and Wn/(kappa_i bb') asymp 1 on sufficiently small patches. Same-denominator pairs remain exact xi-rulings.",
+        "dependencies": [
+          "GC-W7-16-top-shell-determinant-residue-reindexing"
+        ],
+        "implies": [
+          "GC-W7-16-actual-reduced-determinant-correlation"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/candidates/conductor_exact_hyperbolic_normalization.md",
+            "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/reports/blind_pointwise_transversality_feasibility.md",
+            "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/reports/literal_ratio_phase_hyperbolic_map.md",
+            "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/reviews/source_post_chart_normalization_audit.md",
+            "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/reviews/blind_post_unmask_scope_audit.md",
+            "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/reviews/discovery_post_unmask_capacity_audit.md",
+            "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/reviews/conductor_round132_hyperbolic_decoupling_adjudication.md",
+            "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Any analytic use must add absolute-strip localization, Fourier thickening, cap and spatial normalization, Jacobians, owner-preserving coefficient realization, and a separate ruling estimate."
+      },
+      {
+        "id": "GC-W7-16-direct-hyperbolic-decoupling-applicability-obstruction",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Direct hyperbolic-decoupling applicability obstruction",
+        "status": "proved_internal",
+        "statement_tex": "Demeter--Wu Theorems 1.6 and 1.10 do not directly bound the literal Round-131 prescribed-centre top-shell scalar. In the bounded whole-shell chart the determinant support is eta-narrow, so nonzero Hessian does not imply the source's two-coordinate transversality. A recentered determinant-band zoom can create geometrically broad patches, but the physical pair coefficient B_i(r,r') remains joint through the lift selector, variable primitive moduli, Mobius/Stieltjes profiles, thresholds, taper, stars, aliases, cells, signs, and owners. The source starts with two independent functions and supplies no affordable owner-preserving projective decomposition of this matrix. Row or SVD decomposition gives an uncontrolled positive energy. For an already-factorized product, an elementary fixed-Fourier-support kernel yields only the positive Demeter--Wu cap square function with no negative power. Same-denominator packets remain exact rulings, and the source narrow machinery retains them in positive rectangle norms without a signed arithmetic estimate. Thus the current direct source interface gives no complete saving below Y^(27/48), while the best complete upper-capacity ledger remains Y^(35/48). This is a scoped method and coefficient-interface no-go, not a lower bound and not a prohibition on a new determinant-band or narrow arithmetic theorem.",
+        "dependencies": [
+          "Demeter-Wu-hyperbolic-decoupling-source-audit",
+          "GC-W7-16-exact-hyperbolic-ruling-coordinate-chart",
+          "GC-W7-16-residue-mode-interlacing-cross-ray-obstruction",
+          "GC-W7-16-post-inner-outer-energy-obstruction"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/reports/demeter_wu_exact_source_card.md",
+            "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/reports/blind_pointwise_transversality_feasibility.md",
+            "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/reports/literal_ratio_phase_hyperbolic_map.md",
+            "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/reviews/source_post_chart_normalization_audit.md",
+            "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/reviews/blind_post_unmask_scope_audit.md",
+            "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/reviews/discovery_post_unmask_capacity_audit.md",
+            "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/reviews/conductor_round132_hyperbolic_decoupling_adjudication.md",
+            "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Park direct Demeter--Wu import. Reopen only with a proved owner-preserving projective coefficient bound plus Fourier/cap normalization and a separately priced signed ruling theorem."
+      }
+    ],
+    "update": [
+      {
+        "id": "GC-W7-16-actual-reduced-determinant-correlation",
+        "dependencies_added": [
+          "GC-W7-16-exact-hyperbolic-ruling-coordinate-chart",
+          "GC-W7-16-direct-hyperbolic-decoupling-applicability-obstruction"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/reviews/conductor_round132_hyperbolic_decoupling_adjudication.md",
+            "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/synthesis.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/reports/blind_pointwise_transversality_feasibility.md",
+            "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/reports/literal_ratio_phase_hyperbolic_map.md",
+            "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/reviews/source_post_chart_normalization_audit.md",
+            "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/reviews/discovery_post_unmask_capacity_audit.md"
+          ]
+        },
+        "next_action": "The best complete bound remains Y^(35/48). The direct Demeter--Wu route is closed at the joint-coefficient and narrow-ruling seams. Next test a genuinely different cross-ray normal form, with the exact Bombieri--Iwaniec/Li--Yang source statement, both phase conditions, S/H target, literal coefficient ownership, and two-spacing ledger audited before any gain is claimed."
+      },
+      {
+        "id": "GC-W7-16-residue-mode-interlacing-cross-ray-obstruction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/reviews/conductor_round132_hyperbolic_decoupling_adjudication.md",
+            "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/synthesis.md"
+          ]
+        },
+        "next_action": "The internal per-ray residue lane and the direct hyperbolic-decoupling import are parked. Continue only with an owner-preserving theorem for the literal joint cross-ray coefficient or a distinct endpoint frontier."
+      },
+      {
+        "id": "GC-W7-16-post-inner-outer-energy-obstruction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/reports/blind_pointwise_transversality_feasibility.md",
+            "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/reviews/conductor_round132_hyperbolic_decoupling_adjudication.md",
+            "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/synthesis.md"
+          ]
+        },
+        "next_action": "Do not replace the actual scalar by a positive cap square function, packet incidence norm, row energy, SVD nuclear norm, Gram operator, or full symmetric completion."
+      },
+      {
+        "id": "GC-W7-16-complete-all-shell-curvature-saving",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/synthesis.md"
+          ]
+        },
+        "next_action": "The complete Y^(35/48) bound and top-shell localization remain the accepted ledger. Further progress must estimate the literal joint cross-ray scalar or rotate to a distinct endpoint frontier."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round132-nonzero-Hessian-implies-Demeter-Wu-transversality",
+        "reason": "Curvature identifies the hyperbolic surface type, but the full determinant support has eta-separation at most Y^(-5/48), whereas Definition 1.2 requires constant separation in both coordinates."
+      },
+      {
+        "id": "Round132-one-coordinate-determinant-separation-is-bilinear-transverse",
+        "reason": "The source requires both-coordinate separation for every point of the two patches; same-denominator pairs additionally have exact zero xi-separation."
+      },
+      {
+        "id": "Round132-unrecentered-eta-dilation-normalizes-the-top-shell",
+        "reason": "The shell has absolute eta of constant size. A determinant-band zoom first requires absolute eta-strip localization and the recentered hyperbolic shear."
+      },
+      {
+        "id": "Round132-c-over-W-is-automatically-the-source-radius",
+        "reason": "c/W is the exact widest-band reciprocal evaluation scale only; source applicability additionally requires Fourier thickness, Euclidean-neighborhood transport, cap and ball scales, Jacobians, and coefficient realization."
+      },
+      {
+        "id": "Round132-bilinear-L4-integral-directly-bounds-the-arithmetic-centre",
+        "reason": "A fixed-point reproducing kernel is available only for an already-factorized normalized product and leaves positive cap norms; the source does not identify or price the literal scalar."
+      },
+      {
+        "id": "Round132-joint-pair-coefficient-factors-at-free-cost",
+        "reason": "The physical coefficient depends jointly on both rays and all variable moduli and owners. Row and SVD decompositions have uncontrolled positive projective or nuclear cost."
+      },
+      {
+        "id": "Round132-positive-cap-square-function-is-signed-cross-ray-cancellation",
+        "reason": "The source right side is positive and coefficient-blind after factorization; it does not preserve the actual Vaaler, character, Mobius, threshold, or owner cancellation."
+      },
+      {
+        "id": "Round132-free-broad-bound-closes-the-complete-scalar",
+        "reason": "Exact ruling and narrow pieces remain, and the best available complete upper-capacity ledger remains Y^(35/48) even if the geometrically broad contribution is granted for free."
+      },
+      {
+        "id": "Round132-Demeter-Wu-discards-horizontal-or-vertical-rulings",
+        "reason": "Linear Theorem 2.4 and Proposition 4.11 explicitly retain horizontal and vertical rectangle or strip terms in positive norms."
+      },
+      {
+        "id": "Round132-refined-incidence-is-automatically-a-power-saving",
+        "reason": "Every packet contributing at the prescribed centre meets its centre ball, so the relevant local incidence is positive and uncontrolled; the theorem supplies no automatic smallness or negative power."
+      },
+      {
+        "id": "Round132-average-one-lattice-point-per-cap-controls-worst-cap",
+        "reason": "Average occupancy does not control the ruling-aligned worst cap, whose arithmetic occupancy can grow by a fixed power."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "Neither direct one-third-critical M1 parent nor the alternative global radial route is proved by this source audit."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Hard TOP, BAL, and all UNBAL owners remain open; positive decoupling norms do not close them."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "No uniform all-owner endpoint estimate is proved."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain open."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The bridge remains conditional on the complete open M9 hypothesis."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The internal fixed-block ledger remains Y^(35/48), so the internally proved global exponent remains one third."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "The repaired external Li--Yang exponent remains the strongest certified global benchmark and is unaffected by this project-level no-go."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The quarter target still lacks M9-M1, M9-M2, endpoint uniformity, M9, and the final unconditional bridge."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 132 proves an exact affine hyperbolic chart and scale dictionary, completes a primary-source theorem audit, and isolates the owner-preserving projective coefficient norm and signed ruling estimate as the first surviving seams. It rigorously closes the direct Demeter--Wu import without changing the complete Y^(35/48) block, any global exponent, or an M9 parent."
+  }
+}

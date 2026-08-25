@@ -1,0 +1,238 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-lower-signed-farey-row-resonance-reduction",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Exact lower signed Farey row and microscopic-resonance reduction",
+        "status": "proved_internal",
+        "statement_tex": "Let R=X^(1/4), y=floor(sqrt X), N=floor X, L_chi(T)=sum_(g<=T)chi_4(g)/g, and c_(a,b)=L_chi(y/b)V_low(4R^2a^2/b^2)/a on the literal reduced support 2<=b<=y, b odd, 1<=a<b, (a,b)=1. Put theta_(a,b)=Na/b and phi_(a,b)=Na/b+(b-1)/4 mod 1. The exact integerized lower cone is F_N=sum_(a,b)c_(a,b)e(phi_(a,b)); the original X-phase cone differs by the accepted O(R) seam. The complete same-denominator block is O(y log^2(2X)). One ordinary carrier fibre and one physical carrier fibre have l1 mass O(tau(N)log(2X)), and either delta-collision collar has ordered absolute mass O(y tau(N)log^2(2X)(1+delta y^2)). Hence, if R_delta is the signed cross-denominator sum with both carrier distances greater than delta, then |F_N|^2=R_(y^(-2))+O_epsilon(yX^epsilon). The target |F_N|<<_epsilon RX^epsilon is equivalent, after epsilon renaming, to |R_(y^(-2))|<<_epsilon yX^epsilon. This residual estimate is not proved and its absolute capacity remains y^(2+o(1)).",
+        "dependencies": [
+          "M9-M1-lower-radial-flat-discrepancy-equivalence"
+        ],
+        "implies": [
+          "M9-M1-global-lower-radial-signed-estimate"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/reports/literal_signed_farey_scalar_attack.md",
+            "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/reports/blind_reduced_fraction_scalar_feasibility.md",
+            "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/reports/farey_scalar_self_return_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/candidates/conductor_round138_scalar_rows_and_resonance_fibres.md",
+            "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/reviews/discovery_post_unmask_transform_and_scope_audit.md",
+            "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/reviews/blind_post_unmask_scalar_fibre_audit.md",
+            "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/reviews/hostile_post_unmask_owner_and_capacity_audit.md",
+            "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/reviews/conductor_round138_signed_farey_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/controls/conductor_round138_controls.md",
+            "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Prove the prescribed-centre signed bound for the exact cross-denominator residual with both carrier distances greater than y^(-2). Keep the literal coefficient, primitive numerator, determinant, both carriers, and all boundary owners joint."
+      },
+      {
+        "id": "M9-M1-lower-signed-farey-transform-radical-obstruction",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Lower signed Farey determinant, Poisson, radical, and self-return obstruction",
+        "status": "proved_internal",
+        "statement_tex": "For b=Gr, b'=Gs, (r,s)=1, Delta=G delta_0 with delta_0=as-a'r, all solutions are a=a_0+r ell and a'=a'_0+s ell; the determinant phase and chi_4(Gr)chi_4(Gs)=chi_4(rs) are constant in ell. The partial fraction 1/(aa')=(s/a'-r/a)/delta_0 retains unavoidable endpoint/aspect terms; the variable odd-S reciprocal-kernel family rules out an aspect-free 1/|delta_0| gain. Exact character Poisson on the inclusive hard d<=y interval retains a half-endpoint and all dual integrals. Its interior stationary principal factor is e(-1/8)N^(1/4)chi_4(r)(hr)^(-3/4)V_low(R^2hr/N)e(sqrt(Nhr)), with absolute capacity O(R^(3/2)log(2X)), versus target R. If N=Ds^2 with D squarefree, the unique exact variable-phase-one channel is hr=Dt^2 and has principal/transition absolute mass O_epsilon(RD^(-3/4)X^epsilon). Near radicals and every nonprincipal owner remain open. Fourth-power packets show target-scale residual capacity, paired tubes show R^(3/2) post-modulus capacity, and a second Legendre or exact Fourier transform returns the original reciprocal or flat-discrepancy interface. These are scoped controls, not target bounds or physical lower bounds.",
+        "dependencies": [
+          "M9-M1-lower-signed-farey-row-resonance-reduction",
+          "M9-M1-lower-mod-four-resonance-tubewise-no-go",
+          "M9-M1-lower-radial-flat-discrepancy-equivalence"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/reports/literal_signed_farey_scalar_attack.md",
+            "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/reports/blind_reduced_fraction_scalar_feasibility.md",
+            "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/reports/farey_scalar_self_return_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/candidates/conductor_round138_scalar_rows_and_resonance_fibres.md",
+            "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/reviews/discovery_post_unmask_transform_and_scope_audit.md",
+            "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/reviews/blind_post_unmask_scalar_fibre_audit.md",
+            "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/reviews/hostile_post_unmask_owner_and_capacity_audit.md",
+            "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/reviews/conductor_round138_signed_farey_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/controls/conductor_round138_controls.md",
+            "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Park determinantwise modulus, uniform adjacent-character pairing, principal-only Poisson replacement, exact-radical sufficiency, fourth-power lower-bound claims, and repeated-transform gains. Reopen only with an owner-complete signed mechanism for the exact residual."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-global-lower-radial-signed-estimate",
+        "dependencies_added": [
+          "M9-M1-lower-signed-farey-row-resonance-reduction",
+          "M9-M1-lower-signed-farey-transform-radical-obstruction"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/reports/literal_signed_farey_scalar_attack.md",
+            "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/reports/blind_reduced_fraction_scalar_feasibility.md",
+            "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/reports/farey_scalar_self_return_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/reviews/conductor_round138_signed_farey_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The integerized lower scalar square is now reduced to the exact cross-denominator residual with both ordinary and physical carrier distances greater than y^(-2). Prove its O_epsilon(yX^epsilon) signed bound without a separated positive norm, partial modulus, centre average, or principal-only transform."
+      },
+      {
+        "id": "M9-M1-lower-near-square-wavelet-reduction",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/reviews/conductor_round138_signed_farey_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The signed route now has a strict full-scalar Farey residual. Retain the exact medium-index wavelet only through accepted connectors; do not replace the residual by the rejected separated k-square function."
+      },
+      {
+        "id": "M9-M1-lower-centered-square-function-farey-self-return",
+        "dependencies_added": [
+          "M9-M1-lower-signed-farey-row-resonance-reduction",
+          "M9-M1-lower-signed-farey-transform-radical-obstruction"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/reviews/conductor_round138_signed_farey_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The actual scalar, unlike the stronger separated square function, now has target-safe complete rows and y^(-2) carrier collars. The surviving cross-denominator signed residual remains open and must keep both carriers and determinant arithmetic joint."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round138-reduced-Farey-rationalization-itself-gives-a-power-saving",
+        "reason": "The lift aggregation is termwise exact; it changes coordinates and exposes the actual coefficient but performs no averaging or contraction."
+      },
+      {
+        "id": "Round138-equality-diagonal-alone-reduces-the-scalar-to-target",
+        "reason": "The equality diagonal is O(y), but same-denominator unequal numerators and all cross-denominator pairs require separate owners."
+      },
+      {
+        "id": "Round138-same-denominator-unequal-numerators-must-remain-open",
+        "reason": "The entire same-denominator sector is one nonnegative row square and is O(y log^2 X), including every unequal numerator."
+      },
+      {
+        "id": "Round138-exact-phase-collisions-obstruct-the-target",
+        "reason": "Ordinary and character-adjusted exact fibres have subpolynomial maximum mass, and their complete ordered absolute collision mass is target-square-safe."
+      },
+      {
+        "id": "Round138-divisor-denominators-force-a-physical-lower-bound",
+        "reason": "All b dividing N lie in the q=1 ordinary fibre, whose divisor-log mass is only an upper control; exterior terms and profile values retain cancellation."
+      },
+      {
+        "id": "Round138-absorbing-chi4-creates-large-new-exact-fibres",
+        "reason": "A physical carrier fibre is the union of at most two restricted ordinary fibres, so its maximum mass has the same subpolynomial order."
+      },
+      {
+        "id": "Round138-y-minus-two-collar-controls-stationary-tubes-of-natural-width",
+        "reason": "The proved collar has width y^(-2); physical half-integer stationary tubes are vastly wider and remain in the residual."
+      },
+      {
+        "id": "Round138-determinant-partial-fraction-is-aspect-free",
+        "reason": "Summation of 1/(aa')=(s/a'-r/a)/delta_0 retains first-point terms proportional to r and s; the variable odd-S kernel family falsifies a logarithm-only numerator."
+      },
+      {
+        "id": "Round138-even-s-determinant-example-is-admissible",
+        "reason": "Odd denominators force G,r,s all odd. The stale r=1,s=100 working example is invalid and is replaced by a variable odd-S family."
+      },
+      {
+        "id": "Round138-determinant-solution-direction-oscillates",
+        "reason": "Both the determinant phase and denominator character are constant along a=a_0+r ell, a'=a'_0+s ell."
+      },
+      {
+        "id": "Round138-rowwise-or-determinantwise-modulus-closes-the-residual",
+        "reason": "A modulus is affordable only on the already deleted full rows; applying it to determinant fibres restores y^(2+o(1)) square capacity."
+      },
+      {
+        "id": "Round138-adjacent-denominator-character-pairing-is-uniformly-contracting",
+        "reason": "The exact staircase, primitive set, profile, and phase all change, and half-integer increments produce reinforcement on physical tubes."
+      },
+      {
+        "id": "Round138-interior-stationary-family-is-the-complete-hard-Poisson-identity",
+        "reason": "The exact formula includes a half-endpoint and all nonstationary, transition, crossing, remainder, small-height, floor, branch, and sign owners."
+      },
+      {
+        "id": "Round138-hard-half-endpoint-may-be-omitted",
+        "reason": "Symmetric Fourier inversion assigns half weight at d=y; omitting it makes the inclusive finite-interval identity false."
+      },
+      {
+        "id": "Round138-R-three-halves-stationary-capacity-is-a-signed-lower-bound",
+        "reason": "The R^(3/2) ledger is obtained after a partial modulus over actual modes; cancellations across modes and owners remain."
+      },
+      {
+        "id": "Round138-fourth-power-Farey-packet-lower-bounds-the-full-scalar",
+        "reason": "The packet has target-scale internal residual capacity, but every exterior term remains and may cancel it."
+      },
+      {
+        "id": "Round138-exact-radical-control-bounds-near-radicals-or-the-full-scalar",
+        "reason": "The O(RD^(-3/4)X^epsilon) bound is for the unique exact phase-one channel inside a bounded principal or transition family only."
+      },
+      {
+        "id": "Round138-second-Legendre-transform-produces-an-independent-saving",
+        "reason": "The second stationary step returns the reciprocal phase and exact completion returns the flat discrepancy, with no proved contraction."
+      },
+      {
+        "id": "Round138-full-r2-continuation-closes-the-signed-residual",
+        "reason": "Importing the desired circle remainder is circular, while retaining the complementary divisor range reconstructs the original lower cone."
+      },
+      {
+        "id": "Round138-strict-residual-reduction-proves-lower-GAR-or-an-exponent",
+        "reason": "The residual estimate remains open; no complete GAR, blockwise M1, M9-M1, M2, endpoint, M9, quarter, or exponent owner closes."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "Round 138 advances only the alternative global lower-radial route and proves neither direct blockwise M1 parent nor complete GAR."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Hard TOP, BAL, and every required UNBAL owner remain open."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "The round retains the lower hard endpoint inside its residual controls and proves no all-owner terminal uniformity."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain open."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The bridge remains conditional on the complete open M9 hypothesis."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The strongest internally proved global exponent remains one third."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "The separately audited external exponent remains (3292+25sqrt(1717))/13762."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The quarter target still lacks the residual lower-radial bound, the remaining M1 and M2 owners, endpoint uniformity, M9, and an unconditional final bridge."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 8,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 138 proves an owner-complete strict reduction of the actual lower scalar square: all complete denominator rows and both microscopic carrier-collision collars are target-safe, leaving one exact signed cross-denominator residual. It also rigorously scopes the determinant aspect loss, full hard-endpoint Poisson owner, principal capacity, unique exact radical channel, fourth-power controls, and transform self-return. The residual target and every downstream exponent remain open."
+  }
+}

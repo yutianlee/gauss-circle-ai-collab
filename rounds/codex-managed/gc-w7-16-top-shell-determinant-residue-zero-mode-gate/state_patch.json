@@ -1,0 +1,208 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "GC-W7-16-fixed-lift-primitive-residue-fourier-kernel",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Fixed-lift primitive residue support-mask Fourier kernel",
+        "status": "proved_internal",
+        "statement_tex": "Fix one primitive top-shell outer ray (a,b), one physical increment p, put m=a+p, and set n=aq-bp. After physical primitive support is established, let M be the odd part of |m|. The stripped M1 support-character mask w_1(q)=chi_4(b+q) 1_((M,b+q)=1) has minimal q-period 4 rad(M), admits completion modulus 4M, and has normalized DFT exp(kb/(4M)) G_(4,M)(k)c_M(k)/(4M). The mod-four Gauss factor vanishes for even k and has magnitude 2 for odd k, so the zero coefficient vanishes while the k=M,3M coefficients have magnitude phi(M)/(2M) and pull back to the two determinant quarter frequencies. For active odd m, the stripped M2 mask w_2(q)=epsilon_sgn chi_4(|m|)1_((|m|,b+q)=1) has minimal period rad(|m|), admits completion modulus |m|, and has DFT epsilon_sgn chi_4(|m|) exp(kb/|m|)c_|m|(k)/|m|; its fixed-p q-arithmetic k=0 coefficient is epsilon_sgn chi_4(|m|)phi(|m|)/|m| and is generically nonzero. Both normalized Fourier l1 costs are divisor-sized. These are support-mask identities, not a factorization of rho-dependent physical profiles or a signed estimate, and Fourier k=0 is not the determinant point n=0.",
+        "dependencies": [
+          "GC-W7-16-top-shell-determinant-residue-reindexing",
+          "GC-W7-16-reduced-Farey-cluster-reduction"
+        ],
+        "implies": [
+          "GC-W7-16-actual-reduced-determinant-correlation"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "proofs/kernels/gc_w7_16_primitive_residue_fourier.md",
+            "rounds/codex-managed/gc-w7-16-top-shell-determinant-residue-zero-mode-gate/candidates/conductor_primitive_residue_fourier_kernel.md",
+            "rounds/codex-managed/gc-w7-16-top-shell-determinant-residue-zero-mode-gate/reviews/blind_post_unmask_primitive_period_scope_audit.md",
+            "rounds/codex-managed/gc-w7-16-top-shell-determinant-residue-zero-mode-gate/reviews/discovery_post_unmask_fourier_capacity_audit.md",
+            "rounds/codex-managed/gc-w7-16-top-shell-determinant-residue-zero-mode-gate/reviews/hostile_post_unmask_literal_weight_audit.md",
+            "rounds/codex-managed/gc-w7-16-top-shell-determinant-residue-zero-mode-gate/reviews/conductor_round131_residue_mode_adjudication.md",
+            "rounds/codex-managed/gc-w7-16-top-shell-determinant-residue-zero-mode-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/gc-w7-16-top-shell-determinant-residue-zero-mode-gate/reports/literal_induced_residue_weight_derivation.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use this kernel only inside a proved owner-compatible weighted extension. Do not infer a full physical Fourier factorization, character saving, determinant diagonal, or family estimate from a nonzero arithmetic coefficient."
+      },
+      {
+        "id": "GC-W7-16-residue-mode-interlacing-cross-ray-obstruction",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Variable-modulus residue interlacing and cross-ray capacity obstruction",
+        "status": "proved_internal",
+        "statement_tex": "On the W=Y^(7/16), D=Y^(1/2), L=Y^(1/6) top shell, the complete p-interlaced physical determinant weight has no proved common 4|a|-periodic arithmetic factor times a target-cost BV envelope. Physical primitivity introduces m=a+p: post-reassembly M1 divisor support atoms have determinant period |a|lcm(4,rho), M2 atoms have |a|rho, and hiding primitivity in the envelope gives linear variation. The bare Mobius incidence identity does not factor rho-dependent profiles, stars, or owners. Natural p-order profiles can incur O(L) determinant-order switches, erasing a full L Abel gain. The exact n>0 same-denominator M1 and M2 packets have length D/W and refute character-forced per-ray vanishing, but their centres and physical amplitudes do not give a family lower bound. One packet has capacity Y^(30/48+o(1)); the full cell cover recovers Y^(35/48+o(1)) only as worst-case capacity. Fixed-lift arithmetic is Gauss-times-Ramanujan, not a growing quadratic-Gauss or Salie sum. Even ideal one-term-per-ray collapse reaches only Y^(27/48)=Y^(9/16), so strict global improvement requires an actual cross-ray power and the Y^(1/2) determinant target requires a further Y^(-1/16). This is a method and coefficient-interface obstruction, not a lower bound for the actual family.",
+        "dependencies": [
+          "GC-W7-16-fixed-lift-primitive-residue-fourier-kernel",
+          "GC-W7-16-top-shell-determinant-residue-reindexing",
+          "GC-W7-16-post-inner-outer-energy-obstruction",
+          "GC-W7-16-complete-all-shell-curvature-saving"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/gc-w7-16-top-shell-determinant-residue-zero-mode-gate/reports/resonant_packet_cross_ray_hostile_audit.md",
+            "rounds/codex-managed/gc-w7-16-top-shell-determinant-residue-zero-mode-gate/reviews/blind_post_unmask_primitive_period_scope_audit.md",
+            "rounds/codex-managed/gc-w7-16-top-shell-determinant-residue-zero-mode-gate/reviews/discovery_post_unmask_fourier_capacity_audit.md",
+            "rounds/codex-managed/gc-w7-16-top-shell-determinant-residue-zero-mode-gate/reviews/hostile_post_unmask_literal_weight_audit.md",
+            "rounds/codex-managed/gc-w7-16-top-shell-determinant-residue-zero-mode-gate/reviews/conductor_round131_residue_mode_adjudication.md",
+            "rounds/codex-managed/gc-w7-16-top-shell-determinant-residue-zero-mode-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/gc-w7-16-top-shell-determinant-residue-zero-mode-gate/reports/blind_residue_mode_feasibility.md",
+            "rounds/codex-managed/gc-w7-16-top-shell-determinant-residue-zero-mode-gate/reports/literal_induced_residue_weight_derivation.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Park further internal per-ray residue transforms. Continue only with an exact source-audited cross-ray theorem for the actual family scalar, or rotate to a distinct endpoint frontier."
+      }
+    ],
+    "update": [
+      {
+        "id": "GC-W7-16-top-shell-determinant-residue-reindexing",
+        "statement_tex": "After Mobius pieces are reassembled to the physical primitive inner ray, fix one primitive top-shell outer ray (a,b), put a'=a+p, b'=b+q, and n=ab'-a'b. Then n=aq-bp, b'={b(a+p)+n}/a, and n is congruent to -bp modulo |a|. If the literal p-support is a bounded union of intervals of total span O(|a|), every fixed n has O(1) admissible p-lifts and q is forced. Thus p is an induced determinant-residue lift rather than an independent Cartesian variable. Round 131 refines the character scope: the stripped fixed-p primitive M1/M2 support masks have exact variable-modulus Ramanujan Fourier expansions, but the complete weighted physical coefficient has no proved common modulus 4|a| or target-cost BV envelope because a'=a+p, rho-dependent profiles, owners, and determinant-order lift interlacing remain joint. Fixed-p M2 has a nonzero q-arithmetic zero coefficient; an interlaced quarter mode is conditional on odd b and fixed q mod 4, while even b retains a potentially large two-adic coordinate. The statement is per fixed outer ray, top-shell only, after physical reassembly, and proves no cross-ray multiplicity or cancellation.",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/gc-w7-16-top-shell-determinant-residue-zero-mode-gate/reviews/conductor_round131_residue_mode_adjudication.md",
+            "rounds/codex-managed/gc-w7-16-top-shell-determinant-residue-zero-mode-gate/synthesis.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/gc-w7-16-top-shell-determinant-residue-zero-mode-gate/reports/literal_induced_residue_weight_derivation.md"
+          ]
+        },
+        "next_action": "The internal fixed-ray residue lane is terminally parked. Any reopening must supply an owner-compatible weighted extension and a genuinely cross-ray actual-family estimate."
+      },
+      {
+        "id": "GC-W7-16-actual-reduced-determinant-correlation",
+        "dependencies_added": [
+          "GC-W7-16-fixed-lift-primitive-residue-fourier-kernel",
+          "GC-W7-16-residue-mode-interlacing-cross-ray-obstruction"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/gc-w7-16-top-shell-determinant-residue-zero-mode-gate/synthesis.md"
+          ],
+          "negative": [
+            "rounds/codex-managed/gc-w7-16-top-shell-determinant-residue-zero-mode-gate/reports/resonant_packet_cross_ray_hostile_audit.md",
+            "rounds/codex-managed/gc-w7-16-top-shell-determinant-residue-zero-mode-gate/reviews/hostile_post_unmask_literal_weight_audit.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/gc-w7-16-top-shell-determinant-residue-zero-mode-gate/reports/literal_induced_residue_weight_derivation.md",
+            "rounds/codex-managed/gc-w7-16-top-shell-determinant-residue-zero-mode-gate/reviews/discovery_post_unmask_fourier_capacity_audit.md"
+          ]
+        },
+        "next_action": "The best complete bound remains Y^(35/48). The fixed-p arithmetic kernel is exact, but the internal per-ray transform lane is degenerate. Audit a genuinely cross-ray theorem for the actual variable-modulus resonant scalar; any total saving strictly beyond L gives a new global exponent, and total saving Y^(11/48) reaches the determinant target."
+      },
+      {
+        "id": "GC-W7-16-post-inner-outer-energy-obstruction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/gc-w7-16-top-shell-determinant-residue-zero-mode-gate/reports/resonant_packet_cross_ray_hostile_audit.md",
+            "rounds/codex-managed/gc-w7-16-top-shell-determinant-residue-zero-mode-gate/reviews/conductor_round131_residue_mode_adjudication.md",
+            "rounds/codex-managed/gc-w7-16-top-shell-determinant-residue-zero-mode-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Do not replace the first residual actual family scalar by a positive Gram, arbitrary direction, Fourier-coefficient lower bound, or full symmetric completion."
+      },
+      {
+        "id": "GC-W7-16-complete-all-shell-curvature-saving",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/gc-w7-16-top-shell-determinant-residue-zero-mode-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The complete Y^(35/48) bound and top-shell localization remain sharp in the accepted ledger. Further progress must estimate the actual cross-ray top-shell scalar or use a distinct endpoint frontier."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round131-full-physical-weight-periodic-mod-4a",
+        "reason": "Physical primitivity and the inner numerator m=a+p produce variable support moduli; rho-dependent profiles and owners are not factored by the bare Mobius identity."
+      },
+      {
+        "id": "Round131-primitivity-is-a-low-BV-envelope",
+        "reason": "Already 1_(3 does not divide b+q) has variation linear in the interval length when primitivity is moved into the envelope."
+      },
+      {
+        "id": "Round131-naive-M1-zero-mode-controls-resonance",
+        "reason": "The M1 zero coefficient vanishes but the two quarter coefficients have natural magnitude phi(M)/(2M), and other odd Ramanujan modes remain."
+      },
+      {
+        "id": "Round131-M2-has-a-universal-determinant-quarter-mode",
+        "reason": "Fixed p has a nonzero q-arithmetic zero coefficient; the interlaced shift needs odd b and fixed q mod 4, while even b requires an extra potentially large two-adic coordinate."
+      },
+      {
+        "id": "Round131-character-periodicity-gives-an-L-saving",
+        "reason": "Natural M1 quarter and M2 arithmetic zero coefficients survive, and exact n>0 same-denominator packets conjugate the character alternation."
+      },
+      {
+        "id": "Round131-quarter-character-algebra-is-a-Salie-sum",
+        "reason": "The exact finite arithmetic is fixed-modulus-four Gauss times Ramanujan; no complete variable inverse phase or Salié completion is present."
+      },
+      {
+        "id": "Round131-resonant-windows-are-a-sparse-error",
+        "reason": "One packet has length D/W and the full cell cover recovers the raw Y^(35/48) upper capacity; occupancy and actual signs remain unresolved."
+      },
+      {
+        "id": "Round131-per-ray-residue-gain-crosses-persistence",
+        "reason": "Even an ideal full L per-ray gain reaches exactly Y^(27/48)=Y^(9/16), so strict global improvement requires a further cross-ray power."
+      },
+      {
+        "id": "Round131-diagonal-n0-is-in-the-one-sided-residue-target",
+        "reason": "The frozen scalar has n>0. The p=q=n=0 term belongs to the separately accepted target-safe equal-ray diagonal owner."
+      },
+      {
+        "id": "Round131-positive-energy-or-nonzero-Fourier-coefficient-is-a-family-obstruction",
+        "reason": "The actual incomplete envelopes and outer coefficients may cancel; neither a positive Gram nor a stripped arithmetic coefficient proves a scalar lower bound."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "Both direct one-third-critical parents and the complete lower-GAR alternative remain open."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Hard TOP, BAL, and all UNBAL owners remain open."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "No uniform all-owner endpoint estimate is proved."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain open."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The bridge remains conditional on the complete open M9 hypothesis."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The complete graded exponent remains 35/48 and does not cross the 9/16 persistence threshold."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The quarter target still lacks M9-M1, M9-M2, endpoint uniformity, M9, and the final unconditional bridge."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 131 proves the exact fixed-lift Gauss-times-Ramanujan support-mask kernel, corrects the M2 zero/shifted-mode scopes and one-sided diagonal ownership, and terminally isolates the actual variable-modulus cross-ray scalar. It rigorously parks the internal per-ray residue lane without changing the Y^(35/48) fixed-block bound, any global exponent, or an M9 parent."
+  }
+}

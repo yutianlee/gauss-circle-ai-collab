@@ -1,0 +1,244 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-lower-cone-squarefree-kernel-reduction",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Exact squarefree-kernel coefficient and target-safe large-square reduction",
+        "status": "proved_internal",
+        "statement_tex": "Let R=X^(1/4), N=floor(X), C(m)=sum_(hr=m,r odd,r>4h)chi_4(r), k_m=floor(sqrt(Nm)+1/2), and j_m=k_m^2-Nm. Write m=s t^2 uniquely with s squarefree. If gamma is the common part of sf(h),sf(r), then C(st^2)=sum_(gamma|t, gamma squarefree, (gamma,s)=1, gamma odd)chi_4(gamma) sum_(de=s,e odd)chi_4(e) sum_(ab=t/gamma,b odd,e b^2>4d a^2)1. Equivalently, with G=(h,r), C(st^2)=sum_(de=s)^ord sum_(Gab=t,(da,eb)=1,Geb odd,e b^2>4d a^2)chi_4(Ge). Both formulas are multiplicity one and retain every 2-adic case. On each literal half-open block I_M=N intersect [M,B_M), B_M<=2M, the aggregate t>=T has absolute price <<_(epsilon,V)X^epsilon M^(1/4)/T. Hence the Round-144 scalar is target-equivalent to the same masked scalar restricted to t<M^(1/4), where s>M^(1/2), with the t>=ceil(M^(1/4)) complement O_(epsilon,V)(X^epsilon) after dyadic assembly. The retained signed scalar is not estimated.",
+        "dependencies": [
+          "M9-M1-lower-far-cone-microscopic-cell-reduction"
+        ],
+        "implies": [
+          "M9-M1-global-lower-radial-signed-estimate"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/reports/squarefree_kernel_fibre_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/reports/blind_squarefree_linearization_feasibility.md",
+            "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/reports/quadratic_irrational_divisor_twist_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/reviews/discovery_post_unmask_blind_fibre_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/reviews/blind_post_unmask_discovery_fibre_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/candidates/conductor_round145_squarefree_kernel_reduction.md",
+            "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/reviews/blind_conductor_candidate_final_green.md",
+            "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/reviews/discovery_conductor_candidate_final_green.md",
+            "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/reviews/source_conductor_candidate_final_green.md",
+            "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/reviews/conductor_round145_squarefree_kernel_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/controls/conductor_round145_controls.md",
+            "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Prove the fixed-centre individual complex estimate for the exact small-t, large-squarefree-s survivor, or produce a further strict owner-complete reduction. Retain both coefficient parametrizations, the mask, profile, terminal endpoints, and Pell geometry."
+      },
+      {
+        "id": "M9-M1-lower-cone-squarefree-linearization-obstruction",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Bounded-t capacity, exceptional-frequency, and source obstruction",
+        "status": "proved_internal",
+        "statement_tex": "On the exact small-t survivor, the available divisor-envelope upper price of a t-shell is M^(1/4)T^(-1)X^epsilon, and the isolated t=1 layer has upper capacity M^(1/4+o(1)), reaching R^(1/2+o(1)) at M asymp R^2. It receives no cancellation from the t-variable, while C(p)=chi_4(p) for odd primes p>4 proves nonvacuity only. The large-displacement mask does not uniformly separate sqrt(Ns): for squarefree s>1 and X=N=sL^2+1, sqrt(Ns)=sL+rho with rho=(sqrt(L^2+1/s)+L)^(-1), and while t rho<1/2 one has k=sLt, j=-st^2=-m, and e(t sqrt(Ns))=e(t rho). With L=s there is a literal profiled small-t retained range with t rho tending to zero. Thus no uniform frequency-gap or bounded-partial-quotient inference is valid. No audited theorem accepts the exact coefficient, mask, growing centre, and individual direction at target power; even favorable separated Sargos-Wu leaves R^(2/5+epsilon), and Robert-Sargos leaves R^(1/2+epsilon) or R^(3/4+epsilon). These are upper-bound limitations, not signed lower bounds or a disproof of the target.",
+        "dependencies": [
+          "M9-M1-lower-cone-squarefree-kernel-reduction",
+          "M9-M1-lower-incomplete-fibre-dispersion-obstruction"
+        ],
+        "implies": [],
+        "blockers": [],
+        "source_card": "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/reports/quadratic_irrational_divisor_twist_source_audit.md",
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/reports/squarefree_kernel_fibre_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/reports/blind_squarefree_linearization_feasibility.md",
+            "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/reports/quadratic_irrational_divisor_twist_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/candidates/conductor_round145_squarefree_kernel_reduction.md",
+            "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/reviews/source_conductor_candidate_final_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/reviews/blind_conductor_candidate_final_green.md",
+            "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/reviews/discovery_conductor_candidate_final_green.md",
+            "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/reviews/source_conductor_candidate_final_green.md",
+            "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/reviews/conductor_round145_squarefree_kernel_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/controls/conductor_round145_controls.md",
+            "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Park t-only geometric-sum cancellation, uniform partial-quotient assumptions, complete-divisor substitution, linear-squarefree substitution, and direct use of the audited monomial bounds. Reopen with a genuinely signed cross-s or joint s-t theorem for the exact coefficient."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-lower-far-cone-microscopic-cell-reduction",
+        "implies_added": [
+          "M9-M1-lower-cone-squarefree-kernel-reduction"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/candidates/conductor_round145_squarefree_kernel_reduction.md",
+            "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/reviews/conductor_round145_squarefree_kernel_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Use the exact squarefree-kernel child reduction: the strict large-displacement cone is target-equivalent to its t<M^(1/4), s>M^(1/2) part. The surviving signed scalar remains open."
+      },
+      {
+        "id": "M9-M1-lower-incomplete-fibre-dispersion-obstruction",
+        "dependencies_added": [
+          "M9-M1-lower-cone-squarefree-kernel-reduction"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/reports/quadratic_irrational_divisor_twist_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/candidates/conductor_round145_squarefree_kernel_reduction.md",
+            "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/reviews/conductor_round145_squarefree_kernel_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Retain the M^(3/4) displacement deletion and the exact t>=M^(1/4) squarefree-tail deletion. The first open owner is the small-t, large-squarefree-s fixed-centre scalar; its t=1 layer and varying Pell frequencies require new signed cross-s cancellation."
+      },
+      {
+        "id": "M9-M1-lower-post-collar-smoothed-far-alias-reduction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/candidates/conductor_round145_squarefree_kernel_reduction.md",
+            "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/synthesis.md"
+          ]
+        },
+        "next_action": "After the floor-free cone, M^(3/4) cell deletion, and squarefree tail deletion, prove the exact small-t, s>M^(1/2) survivor. The independent collar-tail cross owner remains separate."
+      },
+      {
+        "id": "M9-M1-lower-height-alias-rank-one-product-fibre-obstruction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/reports/squarefree_kernel_fibre_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/reviews/conductor_round145_squarefree_kernel_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Use the new squarefree-kernel parametrization only as an exact support interface. The t=1 layer retains the original rank-one square-root product cone and requires signed cross-kernel cancellation."
+      },
+      {
+        "id": "M9-M1-lower-signed-farey-transform-radical-obstruction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/candidates/conductor_round145_squarefree_kernel_reduction.md",
+            "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/reviews/conductor_round145_squarefree_kernel_adjudication.md"
+          ]
+        },
+        "next_action": "Exact radicals remain separately target-safe, but the N=sL^2+1 family shows that the retained large-displacement mask does not give a uniform base-frequency gap. Keep varying Pell fibres in the signed survivor."
+      },
+      {
+        "id": "M9-M1-lower-cone-Appell-completion-self-return-obstruction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/candidates/conductor_round145_squarefree_kernel_reduction.md",
+            "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The noninvertible squarefree-tail deletion supersedes another completion attempt but leaves the exact small-t signed cone. Completion, rational reconstruction, and reciprocal transforms remain parked."
+      },
+      {
+        "id": "M9-M1-global-lower-radial-signed-estimate",
+        "dependencies_added": [
+          "M9-M1-lower-cone-squarefree-kernel-reduction",
+          "M9-M1-lower-cone-squarefree-linearization-obstruction"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/reports/squarefree_kernel_fibre_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/reports/blind_squarefree_linearization_feasibility.md",
+            "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/reports/quadratic_irrational_divisor_twist_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/reviews/conductor_round145_squarefree_kernel_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The first open cone owner is now the exact t<M^(1/4), s>M^(1/2) squarefree-kernel scalar with the literal C(st^2), mask, profile, endpoints, and positive direction. Prove it together with the independent Round-138 collar-tail cross owner before claiming lower GAR."
+      }
+    ],
+    "correct_rejected": [],
+    "reject": [
+      {
+        "id": "Round145-squarefree-linearization-alone-proves-the-target",
+        "reason": "The target-safe t>=M^(1/4) tail leaves the exact small-t signed scalar, including the mandatory t=1 layer."
+      },
+      {
+        "id": "Round145-large-displacement-mask-uniformly-separates-sqrt-Ns",
+        "reason": "For X=N=sL^2+1 one has j=-st^2 while e(t sqrt(Ns))=e(t rho) with rho arbitrarily small on a literal retained range."
+      },
+      {
+        "id": "Round145-quadratic-irrational-partial-quotient-bounds-are-uniform",
+        "reason": "The discriminant varies with N and s, and the exact exceptional family has an unbounded next continued-fraction quotient."
+      },
+      {
+        "id": "Round145-t-equals-one-is-empty-or-target-safe",
+        "reason": "The t=1 layer has C(p)=chi_4(p) for odd primes p>4 and retains only an owner-sized upper capacity; no signed estimate is proved."
+      },
+      {
+        "id": "Round145-complete-divisor-square-root-twists-apply-to-C-st2",
+        "reason": "C(st^2) is a t-dependent parity-sensitive strict-cone incomplete divisor fibre, not a complete fixed L-function coefficient."
+      },
+      {
+        "id": "Round145-linear-squarefree-twist-theorem-controls-the-s-sum",
+        "reason": "The squarefree variable carries the nonlinear phase e(t sqrt(Ns)); orienting linearly in t leaves the wrong coefficient, support, and hard mask."
+      },
+      {
+        "id": "Round145-Robert-Sargos-or-Sargos-Wu-closes-the-small-t-target",
+        "reason": "Even favorable separated specializations leave positive powers R^(2/5), R^(1/2), or R^(3/4), and the exact joint coefficient is not accepted."
+      },
+      {
+        "id": "Round145-small-t-capacity-is-a-signed-lower-bound",
+        "reason": "M^(1/4+o(1)) is only the available divisor-envelope upper price; cancellation across s, t-layers, and blocks remains possible."
+      },
+      {
+        "id": "Round145-squarefree-tail-reduction-proves-M1-or-an-exponent",
+        "reason": "The small-t cone scalar, independent collar-tail cross owner, direct M1 parents, all M2 owners, endpoint uniformity, M9, bridge, and quarter target remain open."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "Round 145 strictly reduces one lower-cone survivor but proves neither its small-t signed part, the independent collar-tail cross owner, nor either direct blockwise M1 parent."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Hard TOP, BAL, and required UNBAL owners were not treated and remain open."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "A support reduction for one lower-cone scalar is not an all-owner endpoint theorem."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain open."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The bridge remains conditional on the complete open M9 hypothesis."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The strongest internally proved global exponent remains one third."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "The separately audited external exponent remains (3292+25sqrt(1717))/13762."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The quarter target still lacks the small-t lower-radial scalar, remaining M1 and M2 owners, endpoint uniformity, M9, and an unconditional final bridge."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 7,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 145 proves two exact multiplicity-one coefficient parametrizations and a genuine target-safe deletion of every t>=M^(1/4) squarefree fibre, leaving the strict t<M^(1/4), s>M^(1/2) owner. It also proves a literal exceptional-frequency control and audits the first source/power failures without turning upper capacities into lower bounds. The retained signed scalar and all downstream theorems remain open."
+  }
+}

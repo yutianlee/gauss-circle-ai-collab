@@ -1,0 +1,307 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-lower-cone-t1-d1-root-defect-logarithmic-collar-reduction",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Exact D=1 root-defect linearization and logarithmic collar",
+        "status": "proved_internal",
+        "statement_tex": "Let R=X^(1/4), N=floor(X), 1<<M<=R^2, J=M^(3/4), and Q_U=sum_(n>0 odd, |k(n)^2-Nn|>J)chi_4(n)n^(-3/4)A_U(n)e(sqrt(Nn)), with k(n)=floor(sqrt(Nn)+1/2), the literal zero-extended profile, endpoints, and external B_(1,U)(1) seam. Put j=k^2-Nn. There is no tie, and Q_U is in exact bijection with k>=1, -k<=j<=k-1, N|(k^2-j), positive odd quotient n=(k^2-j)/N in literal support. On support k asymp sqrt(NM), the total k-span and each cell are shorter than N, and the map has multiplicity one. Uniformly on the selected graph, -j/(k+sqrt(k^2-j))=-j/(2k)-j^2/[2k(k+sqrt(k^2-j))^2], so replacing the phase by e(-j/(2k)) costs O_epsilon(N^(-1/2)M^(-1/4)X^epsilon). For every fixed A>0, the complete collar J<|j|<=J(log(2X))^A has contribution O_(epsilon,A)(X^epsilon), by the all-parity root bound rho_N(j)<=4*2^omega(N)sqrt((|j|,N)) and its summed form. Hence Q_U equals the same literal signed wave restricted to |j|>J(log(2X))^A plus O_(epsilon,A)(X^epsilon). This is a logarithmic defect owner only: it gives no fixed positive-power enlargement, no new M-range, and no downstream theorem or exponent.",
+        "dependencies": [
+          "M9-M1-lower-cone-t1-d1-square-root-wave-strict-range-reduction",
+          "M9-M1-lower-cone-t1-d1-squarefree-mobius-collapse-obstruction"
+        ],
+        "implies": [
+          "M9-M1-lower-cone-t1-d1-root-dispersion-obstruction",
+          "M9-M1-lower-cone-t1-squarefree-large-wrap-collar-obstruction",
+          "M9-M1-global-lower-radial-signed-estimate"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/candidates/conductor_round154_exact_root_defect_reparametrization.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/reports/large_defect_root_dispersion_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/reports/blind_quadratic_root_wave_feasibility.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/candidates/conductor_round154_root_dispersion_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/reviews/math_conductor_round154_final.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/reviews/hostile_conductor_round154_final.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/reviews/conductor_round154_adjudication.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Attack the remaining |j|>M^(3/4)(log(2X))^A signed wave below M^449 asymp R^780 through a normalized outer-defect theorem for the linearized phase e(-j/(2k)) or the exact completed theta-Kloosterman family; keep A fixed and do not call the collar a positive-power range."
+      },
+      {
+        "id": "M9-M1-d1-theta-kloosterman-source-audit",
+        "type": "source_audit",
+        "track": "source_audit",
+        "title": "DFI theta-Kloosterman completion for the D=1 root-defect wave",
+        "status": "proved_external_dependency",
+        "statement_tex": "Duke--Friedlander--Iwaniec, Weyl Sums for Quadratic Roots, Section 6 and Lemma 6.1, define K(m,n;c)=sum_(a mod c)^* epsilon_a(c/a)e_c(m abar+n a) for c=0 mod 4 and prove |K(m,n;c)|<=(m,n,c)^(1/2)c^(1/2)tau(c), for arbitrary composite c and integer m,n; the official erratum does not alter this lemma. In the literal ambient root-defect completion, q=4N, d=(h,N) is odd, q'=q/d is 0 mod 4, b=2dv is the exact nonzero Gauss condition, and the complete unit-a sum is (1+i)chi_4(d)K(-v^2,-j;q'). Retaining the exterior d sqrt(q'), selector 1/(2N), finite Fourier 1/q, every d and v including v=0, BV profile, cell endpoints, both signs, and outer j gives |Q_U(V)|<<_epsilon(M^(-3/4)V+M^(-1/4))X^epsilon. This independently owns every fixed or polylogarithmic first defect collar but gives no positive-power or all-scale range. Mullner Theorem 5.3 and Lemma 5.4 audit the weaker termwise incomplete-Gauss route. Current modular-root, sparse-root, square-modulus, fixed-polynomial, and modulus-average theorems checked through 2026-08-25 do not directly match the remaining nonseparable outer-j coefficient; this is a direct no-match, not literature impossibility.",
+        "dependencies": [],
+        "implies": [
+          "M9-M1-lower-cone-t1-d1-root-dispersion-obstruction"
+        ],
+        "blockers": [],
+        "source_card": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/reports/quadratic_root_completion_source_audit.md",
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/reports/quadratic_root_completion_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/candidates/conductor_round154_root_dispersion_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/reviews/source_conductor_round154_final.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/reviews/math_conductor_round154_final.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/reviews/hostile_conductor_round154_final.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/reviews/conductor_round154_adjudication.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use DFI Lemma 6.1 only with the exact d sqrt(q') prefactor, finite-Fourier and selector normalizations, zero mode, and all outer sums. A further gain requires a new theorem for the coupled signed outer-j, v, and d family, not another termwise Weil bound."
+      },
+      {
+        "id": "M9-M1-lower-cone-t1-d1-root-dispersion-obstruction",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Selected-row collapse, ambient theta completion, and reciprocal self-return",
+        "status": "proved_internal",
+        "statement_tex": "For the literal D=d=L=1 direct large-defect root wave, the exact quotient selector is 1_(N|t)chi_4(t/N)=(-i/(2N))sum_(h mod 4N,h odd)chi_4(h)e(ht/(4N)). After t=Nn with n odd is already imposed, the unnormalized h rows are iQ_U or -iQ_U, so normalized h-Cauchy is equality and every ordered pair survives with its original character product. This is only a post-selection statement: the lawful ambient rows remain distinct. Exact finite k-completion has normalized form -i(1+i)/(2Nq) sum_j sum_(d|N,d odd)chi_4(d)d sqrt(q') sum_(v mod q'/2) Bhat_j(2dv)K(-v^2,-j;q'), where q=4N and q'=q/d. The source-audited DFI bound, including every nonzero and zero dual mode, yields |Q_U(V)|<<_epsilon(M^(-3/4)V+M^(-1/4))X^epsilon, target-sized only on fixed or polylogarithmic first collars and losing N^(1/2)M^(-1/4) at V asymp sqrt(NM). If the already safe exact and small defects are restored at scalar level before completion, the full nearest cells partition the positive integers and the centered negative row h=4N-a has saddle n*=4N/a^2, phase e(N/a), and symbol e(1/8)N^(-1/4)chi_4(a)A_U(4N/a^2), exactly the accepted reciprocal-row principal self-return with its Round-152 remainder and endpoint ledger. These facts rule out post-selection frequency Cauchy, termwise DFI, independent k/j Gauss savings, and the principal full-cell transform as new gains. They do not rule out a future signed mask-preserving outer-defect theorem. The first open coefficient is nonseparable in j and v, and for odd N the character is constant on each fixed-j root fibre.",
+        "dependencies": [
+          "M9-M1-lower-cone-t1-d1-root-defect-logarithmic-collar-reduction",
+          "M9-M1-d1-theta-kloosterman-source-audit",
+          "M9-M1-lower-cone-t1-d1-square-root-wave-method-obstruction"
+        ],
+        "implies": [
+          "M9-M1-lower-cone-t1-squarefree-large-wrap-collar-obstruction",
+          "M9-M1-global-lower-radial-signed-estimate"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/reports/large_defect_root_dispersion_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/reports/blind_quadratic_root_wave_feasibility.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/reports/quadratic_root_completion_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/candidates/conductor_round154_root_dispersion_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/reviews/math_conductor_round154_final.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/reviews/hostile_conductor_round154_final.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/reviews/source_conductor_round154_final.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/reviews/conductor_round154_adjudication.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Prove a normalized signed outer-defect estimate after the exact theta-Kloosterman completion, or an equivalent selected cross-fibre theorem for e(-j/(2k)), preserving every gcd stratum, zero mode, sign, profile, endpoint, and the |j|>J(log(2X))^A mask."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-lower-cone-t1-d1-square-root-wave-strict-range-reduction",
+        "implies_added": [
+          "M9-M1-lower-cone-t1-d1-root-defect-logarithmic-collar-reduction"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/candidates/conductor_round154_root_dispersion_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/reviews/conductor_round154_adjudication.md"
+          ]
+        },
+        "next_action": "Below M^449 asymp R^780, the direct wave is now reduced to |j|>M^(3/4)(log(2X))^A for every fixed A and may use the target-safe linearized phase e(-j/(2k)). Prove the remaining signed outer-defect theorem; the M-boundary itself is unchanged."
+      },
+      {
+        "id": "M9-M1-lower-cone-t1-d1-square-root-wave-method-obstruction",
+        "implies_added": [
+          "M9-M1-lower-cone-t1-d1-root-dispersion-obstruction"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/reports/large_defect_root_dispersion_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/reviews/math_conductor_round154_final.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/reviews/source_conductor_round154_final.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/reviews/conductor_round154_adjudication.md"
+          ]
+        },
+        "next_action": "Freeze post-selection h-Cauchy, separate termwise Gauss bounds, and the principal full-cell transform as gains. Seek a genuinely signed outer-j theorem for the normalized completed family or its selected linearized equivalent."
+      },
+      {
+        "id": "M9-M1-lower-cone-t1-d1-squarefree-mobius-collapse-obstruction",
+        "implies_added": [
+          "M9-M1-lower-cone-t1-d1-root-defect-logarithmic-collar-reduction"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/candidates/conductor_round154_root_dispersion_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/reviews/conductor_round154_adjudication.md"
+          ]
+        },
+        "next_action": "The returned direct wave has an exact root-defect coordinate, target-safe linearization, and fixed/polylogarithmic collar. Attack only the remaining signed wave beyond that collar; do not reopen artificial Mobius blocks."
+      },
+      {
+        "id": "M9-M1-lower-cone-t1-squarefree-large-wrap-collar-obstruction",
+        "statement_tex": "Round 151 leaves a low-two-adic h|g recovery fibre outside its recombined row corridors; D>1 and the generic complement remain open. At D=d=L=1, Round 152 gives the literal square-root wave, target-safe exact squares, defects |j|<=M^(3/4), large square factors, and the strict range M^449>>R^780. Round 153 proves complete squarefree Mobius inversion self-returns to the direct large-defect wave. Round 154 puts that direct wave in the exact root-defect cell -k<=j<=k-1, proves a target-safe selected-graph linearization to e(-j/(2k)), and for every fixed A owns the full collar M^(3/4)<|j|<=M^(3/4)(log(2X))^A. Post-selection h-Cauchy is equality. The lawful ambient completion is a normalized DFI theta-Kloosterman family with block bound (M^(-3/4)V+M^(-1/4))X^epsilon; its principal full-cell saddle is the accepted reciprocal self-return. The first D=L=1 survivor is the signed wave beyond the polylogarithmic collar, with a nonseparable outer-j and dual-frequency coefficient. This is a scoped frontier, not a positive-power range, lower bound, or impossibility theorem.",
+        "dependencies_added": [
+          "M9-M1-lower-cone-t1-d1-root-defect-logarithmic-collar-reduction",
+          "M9-M1-lower-cone-t1-d1-root-dispersion-obstruction"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/reports/large_defect_root_dispersion_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/reports/blind_quadratic_root_wave_feasibility.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/reports/quadratic_root_completion_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/candidates/conductor_round154_root_dispersion_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/reviews/math_conductor_round154_final.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/reviews/hostile_conductor_round154_final.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/reviews/source_conductor_round154_final.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/reviews/conductor_round154_adjudication.md"
+          ]
+        },
+        "next_action": "At D=L=1 prove the normalized signed outer-defect/theta-Kloosterman theorem beyond every fixed polylogarithmic collar, or an equivalent selected linearized root-wave bound. At D>1 retain the h|g-dependent fibre; do not transfer the D=1 reduction without proof."
+      },
+      {
+        "id": "M9-M1-global-lower-radial-signed-estimate",
+        "dependencies_added": [
+          "M9-M1-lower-cone-t1-d1-root-defect-logarithmic-collar-reduction",
+          "M9-M1-lower-cone-t1-d1-root-dispersion-obstruction"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/candidates/conductor_round154_root_dispersion_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/reviews/conductor_round154_adjudication.md"
+          ]
+        },
+        "next_action": "The D=L=1 direct wave is reduced beyond a fixed/polylogarithmic defect collar and linearized, but its signed outer-defect theorem remains open. Also prove D>1, L>1, generic t=1, every t>=2 layer, and the independent cross owner before global lower-radial assembly."
+      }
+    ],
+    "correct_rejected": [],
+    "reject": [
+      {
+        "id": "Round154-selected-odd-h-rows-are-independent-frequency-samples",
+        "reason": "On t=Nn with n odd, they are N copies of each of two mod-four rows and rank one after the character weight."
+      },
+      {
+        "id": "Round154-post-selection-h-Cauchy-saves-a-square-root-number-of-frequencies",
+        "reason": "With the exact selector normalization, post-selection Cauchy is equality and every ordered odd-quotient pair survives."
+      },
+      {
+        "id": "Round154-post-selection-rank-collapse-also-degenerates-the-ambient-selector-rows",
+        "reason": "Before divisibility is imposed, the off-congruence factor e_N(m(k^2-j)) is nonconstant and the ambient rows are genuinely distinct."
+      },
+      {
+        "id": "Round154-independent-k-and-j-Gauss-savings-may-be-multiplied",
+        "reason": "The ambient phase depends on t=k^2-j and is constant along its tangent level sets; separate gains would double-count the same one-dimensional oscillation."
+      },
+      {
+        "id": "Round154-primitive-Gauss-bound-suffices-for-every-h",
+        "reason": "The exact complete sum has d=(h,N), vanishes unless b=2dv, and carries the mandatory d sqrt(4N/d) prefactor for every imprimitive stratum."
+      },
+      {
+        "id": "Round154-CA22-theta-Kloosterman-sum-is-the-whole-normalized-stratum",
+        "reason": "CA22 is only the primitive unit-a multiplier sum; the full normalized expression is CA22a and retains d sqrt(q'), 1/q, and 1/(2N)."
+      },
+      {
+        "id": "Round154-one-complete-Gauss-or-one-fixed-j-bound-proves-the-wave",
+        "reason": "All h, gcd, dual-frequency, defect, profile, endpoint, and sign sums must be restored; fixed-j root cancellation is absent for allowed prime N."
+      },
+      {
+        "id": "Round154-DFI-Lemma6-1-proves-the-complete-large-defect-target",
+        "reason": "Its fully restored dyadic bound is M^(-3/4)V+M^(-1/4), which loses N^(1/2)M^(-1/4) at the top defect scale."
+      },
+      {
+        "id": "Round154-DFI-top-block-right-side-is-a-lower-bound-for-Q_U",
+        "reason": "It is a positive upper-bound term and says nothing about the actual signed size."
+      },
+      {
+        "id": "Round154-root-injectivity-or-spacing-supplies-signed-cancellation",
+        "reason": "Injectivity and the N/K root spacing permit the full O(M) occupancy and are only multiplicity controls."
+      },
+      {
+        "id": "Round154-chi4-cancels-inside-each-fixed-j-root-fibre",
+        "reason": "For odd N the quotient character is constant on a fixed-j fibre; its possible saving survives only in the outer defect ordering."
+      },
+      {
+        "id": "Round154-fixed-or-polylogarithmic-collar-is-a-positive-power-defect-range",
+        "reason": "Replacing the collar factor by M^delta leaves an unabsorbed M^delta; the proved extension is subpower only."
+      },
+      {
+        "id": "Round154-logarithmic-collar-improves-the-M449-R780-boundary-or-global-exponent",
+        "reason": "It changes only the defect cutoff by a fixed polylogarithm and leaves every power boundary unchanged."
+      },
+      {
+        "id": "Round154-Round152-small-defect-owner-licenses-mask-deletion-inside-a-correlation",
+        "reason": "The owner permits scalar restoration before a linear transform; it does not control mixed terms after Cauchy or dispersion."
+      },
+      {
+        "id": "Round154-linearization-error-may-be-priced-over-all-ambient-k-j-points",
+        "reason": "The O(K^(-1)) error is target-safe only after restriction to the selected O(M)-point graph."
+      },
+      {
+        "id": "Round154-principal-ambient-saddle-is-a-new-transform-gain",
+        "reason": "Its phase, symbol, and accepted remainder ledger are exactly the Round-151/152 reciprocal-row self-return."
+      },
+      {
+        "id": "Round154-stationary-or-cell-endpoints-may-be-discarded",
+        "reason": "Literal half-open support and cell endpoints, starred stationary endpoints, transitions, and hard boundaries remain in the accepted inherited ledger."
+      },
+      {
+        "id": "Round154-positive-and-negative-defects-cancel-formally",
+        "reason": "Their quotients, characters, profiles, congruence classes, and exact phase denominators differ; any cross-sign saving requires a theorem."
+      },
+      {
+        "id": "Round154-current-source-no-match-proves-literature-or-method-impossibility",
+        "reason": "The search is a cutoff-checked direct-interface audit and does not rule out another source or a new coefficient-sensitive proof."
+      },
+      {
+        "id": "Round154-D1-root-reduction-transfers-to-Dgreater1-Lgreater1-generic-tge2-cross-or-M2",
+        "reason": "Those owners have different fibres, coefficients, profiles, endpoints, and transforms and were outside the frozen scalar."
+      },
+      {
+        "id": "Round154-root-collar-or-completion-proves-full-M1-M9-or-the-quarter-target",
+        "reason": "The remaining direct wave and every other M1 and M2 owner, endpoint uniformity, M9, and the bridge remain open."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "Round 154 owns only a logarithmic collar and method ledger for one D=d=L=1 scalar; the remaining direct wave and the other M1 parent interfaces are open."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "No M2 hard-TOP, balanced, or unbalanced owner was treated."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "Literal endpoints for this scalar are retained, but no all-owner endpoint theorem is proved."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain open."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The bridge remains conditional on complete M9."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The strongest internally proved global exponent remains one third."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "The separately audited external exponent remains (3292+25sqrt(1717))/13762."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The quarter target still lacks the signed direct wave beyond the logarithmic collar, D>1 and L>1 lower-cone owners, generic t=1, every t>=2 layer, the cross owner, remaining M1 and all M2 owners, endpoint uniformity, M9, and the unconditional bridge."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 9,
+    "idea_quality_score": 9,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 154 proves an exact root-defect bijection, a target-safe full-cell linearization on the selected graph, and a strict fixed/polylogarithmic defect collar. It also distinguishes selected and ambient Fourier rows, derives the fully normalized even-modulus theta-Kloosterman completion with its zero mode and all gcd strata, and identifies the principal reciprocal self-return and the first nonseparable outer-defect theorem. The progress is real but subpower: the full direct wave, M-boundary, downstream obligations, and both global exponents are unchanged."
+  }
+}

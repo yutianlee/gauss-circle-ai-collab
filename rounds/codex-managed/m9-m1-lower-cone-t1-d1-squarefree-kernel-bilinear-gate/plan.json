@@ -1,0 +1,228 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 153,
+    "round_type": "m9_m1_lower_cone_t1_d1_squarefree_kernel_bilinear_gate",
+    "campaign_id": "m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate",
+    "title": "M1 D=1 squarefree-kernel Mobius bilinear gate",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "9ffef2e30c99d83d02d28141834b585d02dd77483fa7bfd8e572d45d6985fcc1",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "planned_numerical_percent": 0,
+      "literature_policy": "Use current primary bilinear square-root exponential-sum, Mobius/character bilinear-form, squarefree nonlinear-twist, double-large-sieve, and spacing sources only after deriving the exact inversion and literal coefficient. Record theorem numbers, coefficient and phase class, ranges, averaging, diagonals, weights, endpoints, exceptional terms, and every translated R-M-A-B-s power."
+    },
+    "target_obligations": [
+      "M9-M1-lower-cone-t1-d1-square-root-wave-strict-range-reduction",
+      "M9-M1-lower-cone-t1-d1-square-root-wave-method-obstruction",
+      "M9-M1-lower-cone-t1-squarefree-large-wrap-collar-obstruction",
+      "M9-M1-global-lower-radial-signed-estimate"
+    ],
+    "frozen_target": {
+      "question": "For the exact large-defect, small-square-factor D=d=L=1 survivor P_U^* below M^449 asymp R^780, can squarefree Mobius inversion and a cancellation-preserving bilinear estimate prove |P_U^*|<<X^epsilon or a strict owner-complete range; if not, what is the first exact short-divisor, Type-I/Type-II, spacing, diagonal, endpoint, source, or all-scale obstruction?",
+      "reference_formula": "Let N=floor(X), R=X^(1/4), 1<<M<=R^2, and M^449<<R^780. Round 152 proves P_U=P_U^*+O(X^epsilon), where P_U^* sums ell=tau s^2 with tau odd squarefree, 1<=s<ceil(M^(1/4)), and |k(ell)^2-Nell|>M^(3/4), retaining chi_4(tau), ell^(-3/4), the literal zero-extended actual profile, and B_(1,U)(1) outside the wave. For fixed s, mu^2(tau)=sum_(a^2|tau)mu(a), tau=a^2b, gives chi_4(b), phase e(as sqrt(Nb)), and A^2 B s^2 asymp M.",
+      "quantities": [
+        "Retain the exact actual profile, zero extension, support components, endpoints, transitions, tails, nearest-integer convention, large-defect mask, and external B_(1,U)(1) seam.",
+        "The s=1 odd-squarefree layer is compulsory unless a conclusion is explicitly a strict s-range theorem.",
+        "Every Mobius-inversion term, including a=1, and its sign must remain until a legal signed bilinear estimate or exact recombination is applied.",
+        "On a~A and b~B, record A^2 B s^2 asymp M, raw count AB, actual M^(-3/4) weight, and common oscillatory scale sqrt(NM).",
+        "Separately price large-a absolute tails, Type-I and Type-II blocks, the a=1 short-divisor seam, and every dyadic summation.",
+        "If Cauchy is used in either variable, retain the surviving arithmetic coefficient and write the exact correlation phase, diagonal, exact collision, near-collision, and pigeonhole multiplicity.",
+        "Exact frequency collisions for s sqrt(N)(sqrt(b_1)-sqrt(b_2)) must be classified before a large-sieve or spacing bound is claimed.",
+        "A bound for each a separately inherits the Round-152 exponent-pair boundary unless cancellation across the complete Mobius sum is proved.",
+        "The D>1 recovery fibre, L>1 rows, growing-M generic t=1 sector, every original t>=2 layer, and the independent Round-138 cross owner remain separate."
+      ]
+    },
+    "completion_criteria": [
+      "Write and verify the exact fixed-s Mobius-inverted bilinear identity with every coefficient, mask, support, endpoint, and owned-range exclusion retained.",
+      "Derive a complete dyadic A^2Bs^2=M ledger, including raw and weighted capacities, large-a tails, a=1, Type-I/Type-II divisions, and every Cauchy diagonal.",
+      "Classify exact and near frequency collisions for the linear-in-a square-root-in-b phase, including all N parities and square-product cases.",
+      "Prove |P_U^*|<<X^epsilon, isolate a strict owner-complete range, or establish the first exact Mobius-coupling, spacing, source-hypothesis, endpoint, or power obstruction.",
+      "Source-audit every imported bilinear, Mobius, squarefree, nonlinear-twist, double-large-sieve, or spacing theorem against the literal expanded sum.",
+      "Independently review the exact inversion, a=1 seam, coefficient survival after Cauchy, every R-M-A-B-s power, and downstream scope.",
+      "Close under exactly one label: squarefree_kernel_bilinear_target, strict_squarefree_kernel_bilinear_range, or squarefree_kernel_bilinear_no_go."
+    ],
+    "controls": [
+      "literal_Pstar_survivor",
+      "owned_range_and_owner_exclusion",
+      "squarefree_kernel_uniqueness",
+      "exact_Mobius_inversion",
+      "a1_short_divisor_seam",
+      "dyadic_A_B_s_power_ledger",
+      "actual_profile_mask_and_B11",
+      "Cauchy_coefficient_survival",
+      "diagonal_and_pigeonhole_capacity",
+      "exact_and_near_frequency_collisions",
+      "TypeI_TypeII_signed_bilinear_target",
+      "source_theorem_bilinear_match",
+      "absolute_capacity_vs_signed_sum",
+      "N_parity_endpoints_and_transitions",
+      "D_L_generic_tge2_cross_and_downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "squarefree_mobius_bilinear_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "assigned",
+        "target": "Derive the exact fixed-s Mobius inversion of P_U^*, preserve every a including a=1, and attack the resulting linear-times-square-root bilinear form. Exhaust legal Type-I/Type-II splits, Cauchy placements, exact and near frequency collisions, large-a tails, and dyadic powers. Prove the target, a strict owner-complete range, or the first exact short-divisor, spacing, diagonal, or all-scale no-go.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round153_d1_squarefree_kernel_bilinear_strategy.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/barrier_packet.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/candidates/conductor_round152_square_root_wave_reduction.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/reviews/conductor_round152_adjudication.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/controls/conductor_round152_controls.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/candidates/conductor_round148_squarefree_reciprocal_transform_and_dispersion_no_go.md"
+        ],
+        "required_controls": [
+          "literal_Pstar_survivor",
+          "owned_range_and_owner_exclusion",
+          "squarefree_kernel_uniqueness",
+          "exact_Mobius_inversion",
+          "a1_short_divisor_seam",
+          "dyadic_A_B_s_power_ledger",
+          "actual_profile_mask_and_B11",
+          "Cauchy_coefficient_survival",
+          "diagonal_and_pigeonhole_capacity",
+          "exact_and_near_frequency_collisions",
+          "TypeI_TypeII_signed_bilinear_target",
+          "absolute_capacity_vs_signed_sum",
+          "N_parity_endpoints_and_transitions",
+          "D_L_generic_tge2_cross_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section analytic report.",
+          "The exact Mobius-expanded identity and complete A-B-s power ledger.",
+          "A target proof, strict owner-complete range, or first rigorous short-divisor, bilinear, spacing, diagonal, endpoint, or power obstruction.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/reports/squarefree_mobius_bilinear_attack.md"
+      },
+      {
+        "id": "blind_squarefree_kernel_typeii_feasibility",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "assigned",
+        "target": "Independently decide whether the stated large-defect squarefree-kernel wave admits a uniform Mobius-bilinear proof. Derive the exact inversion, short-divisor seam, Type-I/Type-II partitions, Cauchy correlations, spacing multiplicities, endpoints, and capacities without claimant context.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "all strategy files",
+          "all Round-148 through Round-153 nonblind artifacts",
+          "all Round-153 sibling reports"
+        ],
+        "required_controls": [
+          "literal_Pstar_survivor",
+          "owned_range_and_owner_exclusion",
+          "squarefree_kernel_uniqueness",
+          "exact_Mobius_inversion",
+          "a1_short_divisor_seam",
+          "dyadic_A_B_s_power_ledger",
+          "actual_profile_mask_and_B11",
+          "Cauchy_coefficient_survival",
+          "diagonal_and_pigeonhole_capacity",
+          "exact_and_near_frequency_collisions",
+          "TypeI_TypeII_signed_bilinear_target",
+          "absolute_capacity_vs_signed_sum",
+          "N_parity_endpoints_and_transitions",
+          "D_L_generic_tge2_cross_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section statement-only analytic report.",
+          "An exact theorem, strict range, or first rigorous hypothesis, short-divisor, spacing, diagonal, or capacity obstruction.",
+          "A complete A-B-s and endpoint ledger with no numerical certification.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/reports/blind_squarefree_kernel_typeii_feasibility.md"
+      },
+      {
+        "id": "squarefree_bilinear_source_audit",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "status": "assigned",
+        "target": "Audit current primary bilinear square-root exponential-sum, Mobius/character bilinear-form, squarefree nonlinear-twist, double-large-sieve, and spacing theorems against the exact Mobius-expanded P_U^*. Supply a source-legal target or strict range with complete translation, or the first precise coefficient, phase, range, average, diagonal, weight, mask, endpoint, or power mismatch.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round153_d1_squarefree_kernel_bilinear_strategy.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/barrier_packet.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/reports/square_root_wave_source_audit.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/reviews/source_conductor_round152_final.md",
+          "sources/tao_trudgian_yang_2025.md",
+          "sources/bourgain_2017_exponent_pair.md"
+        ],
+        "required_controls": [
+          "literal_Pstar_survivor",
+          "owned_range_and_owner_exclusion",
+          "squarefree_kernel_uniqueness",
+          "exact_Mobius_inversion",
+          "a1_short_divisor_seam",
+          "dyadic_A_B_s_power_ledger",
+          "actual_profile_mask_and_B11",
+          "Cauchy_coefficient_survival",
+          "diagonal_and_pigeonhole_capacity",
+          "exact_and_near_frequency_collisions",
+          "TypeI_TypeII_signed_bilinear_target",
+          "source_theorem_bilinear_match",
+          "absolute_capacity_vs_signed_sum",
+          "N_parity_endpoints_and_transitions",
+          "D_L_generic_tge2_cross_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section primary-source audit.",
+          "Exact theorem cards with coefficient, phase, ranges, averages, diagonals, weight, mask, endpoint, exceptional term, and translated power hypotheses.",
+          "A source-legal target or strict range, or the first precise source and power obstruction.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/reports/squarefree_bilinear_source_audit.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "literal_survivor_and_owned_ranges",
+        "requirement": "The exact P_U^* retains its squarefree kernel, small square factor, large defect, actual profile, B_(1,U)(1), zero extension, endpoints, and every prior owner exclusion."
+      },
+      {
+        "id": "Mobius_inversion_and_short_divisor",
+        "requirement": "The inversion is an exact identity with every a and sign retained; no a=1 or short-divisor term is separately discarded or bounded as though it represented the complete sum."
+      },
+      {
+        "id": "bilinear_coefficients_and_powers",
+        "requirement": "Every Type-I/Type-II or Cauchy placement tracks the surviving mu and chi_4 coefficients, A^2Bs^2=M, actual weight, dyadic summation, and exact R-M-A-B-s powers."
+      },
+      {
+        "id": "collisions_diagonal_and_spacing",
+        "requirement": "Exact collisions, near collisions modulo one, diagonals, pigeonhole multiplicity, and all N parity and square-product cases are completely classified before a large-sieve gain is used."
+      },
+      {
+        "id": "source_and_endpoint",
+        "requirement": "Every external theorem matches the literal coefficient, phase, ranges, average, diagonal, mask, profile, endpoint, and uniformity hypotheses."
+      },
+      {
+        "id": "owner_and_downstream_scope",
+        "requirement": "Absolute capacities are not signed lower bounds, and D>1, L>1, generic, t>=2, cross, M1, M2, endpoint, M9, bridge, target, and exponents are not promoted without complete owners."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "9ffef2e30c99d83d02d28141834b585d02dd77483fa7bfd8e572d45d6985fcc1",
+    "generated_at": "2026-08-25T00:41:22.955757+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

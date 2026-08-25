@@ -1,0 +1,201 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-hard-top-t1-character-poisson-product-collar-obstruction",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Hard-TOP t=1 character-Poisson scaled product-collar obstruction",
+        "status": "proved_internal",
+        "statement_tex": "For the literal t=1 close-factor scalar S_(L,1) over squarefree coprime d_1,d_2 with d_1 odd, d_2<=d_1<=4d_2, and every inherited shell, profile, floor, star, endpoint, and zero-extension convention retained, the exact projector is sum_(a^2|d_1)mu(a) sum_(b^2|d_2)mu(b) sum_(c|(d_1,d_2))mu(c). With Q=[a^2,c], R=[b^2,c], d_1=Qm, d_2=Rn, only Q,m are forced odd and chi_4(Qm)=chi_4(Q)chi_4(m). Exact character Poisson is sum_m chi_4(m)g(m)=(i/2)sum_(s odd)chi_4(s)g_hat(s/4). Its positive saddle is d_1^*=4XQ^2d_2/s^2, with phase XQd_2/s, JQ<=s<=2JQ, literal profile W(XQ/(ys)), and normalized factor 2L^(3/2)J^(-1/2)/(Qd_2). The transform is exactly involutive. The product phase has rank-one Hessian. On every compact smooth interior cell, simultaneous dualization gives s ell=XQR, Q ell<=R s<=4Q ell, and collar |s ell-XQR|<<QRJ/L. One dual coefficient has scale L^(3/2)/(QR sqrt(J)); at most (QRJ/L+1)(XQR)^epsilon factor pairs occur, so termwise positive control has capacity sqrt(JL)X^epsilon=L^(3/2)(H/L+O(L^(-1)))X^epsilon, with the QR decay exactly repaid by collar width. Grouping N=s ell yields a moving near-square chi_4-divisor window; completion to r_2/4 adds an uncontrolled complement. Standard even-step differencing has chi_4(d+2h)chi_4(d)=(-1)^h and loses the character after a positive norm. The audited Bombieri-Iwaniec, Kowalski-Robert-Wu, Robert-Sargos, Duke-Friedlander-Iwaniec, Bettin-Chandee, and Dong-Robles-Zeindler placements do not prove the target after literal coefficient and power restoration; Bettin-Chandee has a formal integral-subcase degenerate placement but an adverse (JL)^(1/2) printed factor. This parks only exact opening followed by termwise positive Poisson control, a second bare transform, standard positive differencing, and these named placements. Literal hard boundaries and the full signed Mobius aggregate remain open. The positive collar is not physical mass, an upper bound for the complete scalar, or a lower bound. No t=1 target, remaining few-point channel, full hard TOP, smooth M2 packet, M9-M2, M9, bridge, quarter theorem, or exponent follows.",
+        "dependencies": [
+          "M9-M2-hard-top-product-fibre-transform-self-return",
+          "M9-M2-hard-top-radical-long-channel-exact-collision-control",
+          "M9-M2-hard-top-radical-frequency-common-test-source-obstruction"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "proofs/kernels/m9_m2_hard_top_t1_character_poisson_product_collar_obstruction.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-close-factor-bilinear-gate/reports/literal_t1_character_poisson_attack.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-close-factor-bilinear-gate/reports/blind_t1_close_factor_rederivation.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-close-factor-bilinear-gate/reports/t1_bilinear_source_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-close-factor-bilinear-gate/candidates/conductor_round162_t1_character_poisson_collar_obstruction.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-close-factor-bilinear-gate/controls/conductor_round162_reproduction_and_selection.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-close-factor-bilinear-gate/reviews/blind_post_unmask_character_collar_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-close-factor-bilinear-gate/reviews/power_involution_and_physical_scope_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-close-factor-bilinear-gate/reviews/source_and_downstream_graph_scope_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-close-factor-bilinear-gate/reviews/conductor_round162_adjudication.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Prove a target-strength signed estimate for the full Mobius-weighted Q,R-scaled local chi_4-divisor collar, retaining the arbitrary-real centre, even-d_2 branch, actual profiles, hard boundaries, floors, stars, endpoint transitions, nonstationary pieces, and collar tails before every positive norm. Park another bare character transform, termwise positive opening, divisor completion, standard positive differencing, and the named audited source placements."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "dependencies_added": [
+          "M9-M2-hard-top-t1-character-poisson-product-collar-obstruction"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "proofs/kernels/m9_m2_hard_top_t1_character_poisson_product_collar_obstruction.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-close-factor-bilinear-gate/candidates/conductor_round162_t1_character_poisson_collar_obstruction.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-close-factor-bilinear-gate/reports/literal_t1_character_poisson_attack.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-close-factor-bilinear-gate/reports/blind_t1_close_factor_rederivation.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-close-factor-bilinear-gate/reports/t1_bilinear_source_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-close-factor-bilinear-gate/reviews/source_and_downstream_graph_scope_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-close-factor-bilinear-gate/reviews/conductor_round162_adjudication.md"
+          ]
+        },
+        "next_action": "Remove only the accepted long-channel and exact-collision sectors. The literal t=1 close-factor target remains open; any next attack must prove the fully signed Mobius-coupled local divisor collar including hard boundaries, or use a genuinely different actual-coefficient mechanism. After t=1, the remaining L<<D<<L^2, t<<sqrt(L) few-point channels and near collars still remain."
+      },
+      {
+        "id": "M9-M2-top-endpoint-density-discrepancy-energy",
+        "dependencies_added": [
+          "M9-M2-hard-top-t1-character-poisson-product-collar-obstruction"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "proofs/kernels/m9_m2_hard_top_t1_character_poisson_product_collar_obstruction.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-close-factor-bilinear-gate/candidates/conductor_round162_t1_character_poisson_collar_obstruction.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-close-factor-bilinear-gate/reports/literal_t1_character_poisson_attack.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-close-factor-bilinear-gate/reports/blind_t1_close_factor_rederivation.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-close-factor-bilinear-gate/reports/t1_bilinear_source_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-close-factor-bilinear-gate/reviews/source_and_downstream_graph_scope_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-close-factor-bilinear-gate/reviews/conductor_round162_adjudication.md"
+          ]
+        },
+        "next_action": "Preserve the accepted one-count and completed-real-part connector. Before transferring anything back to this energy, prove the literal signed t=1 Mobius-coupled local-divisor aggregate with all hard pieces, then the other few-point channels. The positive product collar and named-source obstruction are not completed-real-part estimates."
+      }
+    ],
+    "correct_rejected": [],
+    "reject": [
+      {
+        "id": "Round162-t1-close-factor-target-is-proved",
+        "reason": "The exact character transform and collar identify the first signed aggregate but provide no target-strength cancellation in it."
+      },
+      {
+        "id": "Round162-positive-product-collar-is-physical-mass-or-lower-bound",
+        "reason": "The sqrt(JL) quantity is a termwise positive smooth-interior route capacity. The physical Mobius and chi_4 signs may cancel, and no coefficient density or lower mass is proved."
+      },
+      {
+        "id": "Round162-positive-product-collar-bounds-the-complete-physical-scalar",
+        "reason": "The favorable single-opening collar comparison does not sum the exact Mobius openings or own every hard boundary; it is not an upper bound for the complete scalar."
+      },
+      {
+        "id": "Round162-Mobius-opening-has-free-QR-decay",
+        "reason": "The factor 1/(QR) in one smooth dual coefficient is exactly repaid by the QR factor in the collar width, and positive summation over opening triples remains unpaid."
+      },
+      {
+        "id": "Round162-local-divisor-completion-proves-the-window",
+        "reason": "Completing the near-square chi_4-divisor interval to r_2/4 adds an uncontrolled complementary divisor window and returns to the parked full-divisor interface."
+      },
+      {
+        "id": "Round162-second-character-Poisson-transform-contracts",
+        "reason": "Fourier scaling, the two i/2 factors, and odd character reflection give an exact involution."
+      },
+      {
+        "id": "Round162-standard-positive-differencing-exploits-chi4",
+        "reason": "For the nonzero even shifts, chi_4(d+2h)chi_4(d)=(-1)^h is constant in d and is lost after a positive norm."
+      },
+      {
+        "id": "Round162-all-literal-hard-boundaries-are-target-safe",
+        "reason": "Nonzero zero-extension endpoints can have only reciprocal-frequency decay and saddle-edge transitions require a separate uniform ledger; opened terms need not inherit final physical boundary cancellations."
+      },
+      {
+        "id": "Round162-no-Kloosterman-source-has-any-formal-degenerate-embedding",
+        "reason": "Bettin-Chandee has a formal one-point-inverse placement on an integral subcase, but its printed (JL)^(1/2) factor and separated coefficient prevent a target-strength use."
+      },
+      {
+        "id": "Round162-named-source-no-match-excludes-future-theorems",
+        "reason": "Only the audited direct placements are parked; an unexamined or bespoke coefficient-sensitive theorem remains possible."
+      },
+      {
+        "id": "Round162-t1-no-go-closes-remaining-few-point-channels-or-hard-TOP",
+        "reason": "The compatible L<<D<<L^2, t<<sqrt(L) channels and their near-collision collars remain open even if the t=1 target is later proved."
+      },
+      {
+        "id": "Round162-t1-no-go-improves-a-global-exponent",
+        "reason": "No hard-TOP parent, M9-M2, M9, or unconditional bridge is closed, so neither the internal one-third theorem nor the external Li-Yang benchmark changes."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M2-hard-top-product-fibre-transform-self-return",
+        "reason": "Its accepted Round-137 unprojected self-return remains unchanged and is a forward dependency of the new t=1 obstruction."
+      },
+      {
+        "id": "M9-M2-hard-top-radical-long-channel-exact-collision-control",
+        "reason": "Its accepted Round-161 long-channel sector and exact-collision classification remain unchanged."
+      },
+      {
+        "id": "M9-M2-hard-top-radical-frequency-common-test-source-obstruction",
+        "reason": "Its accepted Round-161 coarse common-test obstruction remains unchanged; the new character-collar node depends on it in the forward direction."
+      },
+      {
+        "id": "M9-M2-hard-top-truncated-divisor-energy-and-radical-control",
+        "reason": "The accepted actual-coefficient energy and radical bounds remain unchanged."
+      },
+      {
+        "id": "M9-M2-hard-top-square-product-entry-sector",
+        "reason": "Round 162 treats the nonsquare t=1 close-factor face and does not alter the accepted square-entry sector."
+      },
+      {
+        "id": "M9-M2-physical-one-count-assembly",
+        "reason": "The hard-TOP positive owner remains open, so the physical M2 assembly receives no promotion."
+      },
+      {
+        "id": "M9-M2-smooth-balanced-quarter-packet-estimate",
+        "reason": "Round 162 treats no balanced smooth packet."
+      },
+      {
+        "id": "M9-M2-smooth-unbalanced-three-quarter-estimate",
+        "reason": "Round 162 treats no unbalanced smooth packet."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Hard TOP, balanced smooth, and unbalanced smooth mandatory parents all remain open."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "Round 162 treats no M1 owner."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "No all-owner endpoint estimate follows from a route no-go on one t=1 hard-TOP face."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, the three mandatory M9-M2 parents, and endpoint uniformity remain open."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The bridge remains conditional on complete M9."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The strongest theorem proved from the internal architecture remains exponent one third."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "The separately audited external exponent remains (3292+25sqrt(1717))/13762."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The quarter target still lacks M9-M1, all three mandatory M9-M2 parents, endpoint uniformity, M9, and an unconditional bridge."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 6,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 162 gives an exact t=1 character-Poisson and Mobius-scaled product-collar interface, proves the bare-transform involution and QR power repayment, identifies the local signed divisor aggregate, and rigorously parks standard positive transforms, differencing, completion, and named source placements. The physical target, hard boundaries, other few-point channels, every parent, and both global exponents remain unchanged."
+  }
+}

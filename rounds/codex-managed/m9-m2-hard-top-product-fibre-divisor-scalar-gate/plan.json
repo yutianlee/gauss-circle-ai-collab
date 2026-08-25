@@ -1,0 +1,227 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 137,
+    "round_type": "m9_m2_hard_top_product_fibre_divisor_scalar_gate",
+    "campaign_id": "m9-m2-hard-top-product-fibre-divisor-scalar-gate",
+    "title": "M2 hard-TOP product-fibre truncated-divisor scalar gate",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "3c5003b1478d78b8469d4220ad305bb06ee0f869b9c4a741e7211642eeb52cc7",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "planned_numerical_percent": 0,
+      "literature_policy": "No theorem-name continuation. A source may be used only after its exact coefficient class, derivative or transform hypotheses, absolute-value placement, parameter range, and literal product-fibre map are audited. The primary objective is a direct actual-coefficient derivation."
+    },
+    "target_obligations": [
+      "M9-M2-top-endpoint-density-discrepancy-energy",
+      "M9-M2-top-endpoint-signed-cone"
+    ],
+    "frozen_target": {
+      "question": "After the proved hm-square entry sector is removed, can the literal hard-TOP scalar be regrouped by n=hm and bounded at L^(3/2) through the actual truncated chi_4-divisor coefficient, uniformly for every real centre and every polynomial intermediate L; if not, what is the first exact divisor, resonance, completion, self-return, circularity, or capacity obstruction?",
+      "reference_formula": "T_L^ns=L^(3/2) sum_(n asymp L^2, n not square) n^(-3/4) C_L(n)e(J sqrt(n)), where C_L(n)=sum_(h|n, h odd, sqrt(n)<=h<=2sqrt(n)) chi_4(h) eta_L(h) Phi(h/(H+1)) W(sqrt(q_X h^2/(4n))), J=sqrt(X), y=floor(J), q_X=X/y^2, H=floor(yX^(-1/4)), and the target is |T_L^ns|<<_epsilon L^(3/2)X^epsilon.",
+      "quantities": [
+        "a_end(h,m)=eta_L(h)Phi(h/(H+1))(L^2/(hm))^(3/4)W(sqrt(q_Xh/(4m))) on ceil(h/4)<=m<=h, with h odd",
+        "the exact product-fibre bijection n=hm, h|n, sqrt(n)<=h<=2sqrt(n), m=n/h",
+        "the proved square-entry energy gives |T_L^square|<<L^(5/4)X^epsilon, so only n nonsquare remains",
+        "n asymp L^2, |C_L(n)|<=tau(n), raw scalar capacity L^(2+o(1)), and target L^(3/2+o(1))",
+        "f'(n)=J/(2sqrt(n)) asymp J/L and f''(n)=-J/(4n^(3/2)) asymp -J/L^3",
+        "the near-square divisor truncation, chi_4, Vaaler taper, dyadic height profile, endpoint W, floors, hard edge, zero extension, nonsquare condition, and real q_X are literal",
+        "support-only, parity-only, ambient spectral, product-fibre averaging, entrywise phase alignment, and positive-energy equivalence are parked controls"
+      ]
+    },
+    "completion_criteria": [
+      "Reproduce the exact hard-cone scalar, the square-entry removal, and the product-fibre bijection before estimating.",
+      "Derive and retain the complete truncated chi_4-divisor coefficient C_L(n), including every profile, floor, hard endpoint, nonsquare condition, and real-centre parameter.",
+      "For any derivative, exponent-pair, Poisson, B-process, Mellin, divisor-switch, or completion step, state the exact coefficient hypothesis and price the result back to L^(3/2) uniformly for 1<<L<<H.",
+      "Distinguish the full divisor identity sum_(d|n)chi_4(d)=r_2(n)/4 from the truncated near-square divisor coefficient, and do not import a circle estimate circularly.",
+      "Test prime, prime-power, many-near-square-divisor, removed-square, near-integral derivative, stationary-dual-mode, hard-face, support-crossing, phase-aligned, and opposite-character configurations.",
+      "Preserve the fixed scalar direction; do not substitute a positive energy, coefficient-uniform arbitrary array, fibrewise modulus, or averaged-centre theorem without a proved connector.",
+      "Close under exactly one label: target_bound, strict_product_fibre_reduction, or product_fibre_no_go.",
+      "Make no complete hard-TOP, BAL, UNBAL, M9-M2, M9-M1, endpoint, M9, quarter, or global-exponent promotion unless all corresponding owners and dependencies are proved."
+    ],
+    "controls": [
+      "literal_hard_cone_and_square_projection",
+      "exact_product_fibre_bijection",
+      "truncated_chi4_divisor_coefficient",
+      "hard_profile_floor_and_real_centre",
+      "nonsquare_and_full_divisor_controls",
+      "phase_derivatives_and_resonant_dual_modes",
+      "one_dimensional_scalar_capacity",
+      "completion_bprocess_and_self_return",
+      "coefficient_directionality_and_phase_alignment",
+      "uniformity_in_L_and_X",
+      "boundary_and_owner_scope",
+      "full_hard_TOP_and_downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "literal_product_fibre_divisor_scalar_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "completed_with_energy_radical_controls_and_product_fibre_no_go",
+        "target": "Exploit the exact truncated chi_4-divisor coefficient in the n=hm scalar to prove the L^(3/2) target, a strict smaller signed survivor, or the first exact arithmetic/capacity obstruction.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0823_full_proof_strategy.md",
+          "rounds/codex-managed/m9-top-endpoint-transform/synthesis.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-affine-cone/synthesis.md",
+          "rounds/codex-managed/m9-m2-hard-top-actual-vector-spectral-gate/blind_statement.md",
+          "rounds/codex-managed/m9-m2-hard-top-actual-vector-spectral-gate/synthesis.md",
+          "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/synthesis.md",
+          "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/blind_statement.md"
+        ],
+        "required_controls": [
+          "literal_hard_cone_and_square_projection",
+          "exact_product_fibre_bijection",
+          "truncated_chi4_divisor_coefficient",
+          "hard_profile_floor_and_real_centre",
+          "nonsquare_and_full_divisor_controls",
+          "phase_derivatives_and_resonant_dual_modes",
+          "one_dimensional_scalar_capacity",
+          "completion_bprocess_and_self_return",
+          "coefficient_directionality_and_phase_alignment",
+          "uniformity_in_L_and_X",
+          "boundary_and_owner_scope",
+          "full_hard_TOP_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section analytic report.",
+          "An exact product-fibre coefficient dictionary and complete L-power ledger.",
+          "A target estimate, strict smaller survivor, or first exact product-fibre obstruction.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/reports/literal_product_fibre_divisor_scalar_attack.md"
+      },
+      {
+        "id": "blind_truncated_chi4_divisor_phase_feasibility",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "completed_with_independent_rough_coefficient_resonance_and_self_return_no_go",
+        "target": "Independently decide from the exact scalar statement whether the truncated chi_4-divisor coefficient and square-root phase imply the L^(3/2) bound, a strict reduction, or an exact coherent/circular obstruction.",
+        "context_files": [
+          "problems/gauss_circle.md",
+          "state/control_models.md",
+          "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "all strategy files",
+          "all Round-126 through Round-137 nonblind artifacts",
+          "all Round-137 sibling reports"
+        ],
+        "required_controls": [
+          "literal_hard_cone_and_square_projection",
+          "exact_product_fibre_bijection",
+          "truncated_chi4_divisor_coefficient",
+          "hard_profile_floor_and_real_centre",
+          "nonsquare_and_full_divisor_controls",
+          "phase_derivatives_and_resonant_dual_modes",
+          "one_dimensional_scalar_capacity",
+          "completion_bprocess_and_self_return",
+          "coefficient_directionality_and_phase_alignment",
+          "uniformity_in_L_and_X",
+          "boundary_and_owner_scope",
+          "full_hard_TOP_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section statement-only report.",
+          "A self-contained derivation with exact arithmetic and resonance controls.",
+          "A target estimate, strict smaller survivor, or first exact no-go step.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/reports/blind_truncated_chi4_divisor_phase_feasibility.md"
+      },
+      {
+        "id": "product_fibre_bprocess_circularity_hostile_audit",
+        "role": "seam_reviewer",
+        "access_mode": "selected_context",
+        "status": "completed_with_lawful_completion_circularity_and_product_fibre_no_go",
+        "target": "Hostilely audit every one-dimensional curvature, completion, divisor-switch, B-process, and full-divisor continuation for uniform capacity, actual-coefficient legality, self-return, and circular use of the Gauss-circle estimate.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0823_full_proof_strategy.md",
+          "rounds/codex-managed/m9-top-endpoint-transform/synthesis.md",
+          "rounds/codex-managed/m9-m2-top-endpoint-near-product-energy/synthesis.md",
+          "rounds/codex-managed/m9-m2-hard-top-actual-vector-spectral-gate/synthesis.md",
+          "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/reviews/conductor_round127_frontier_selection_adjudication.md",
+          "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/synthesis.md",
+          "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/blind_statement.md"
+        ],
+        "required_controls": [
+          "literal_hard_cone_and_square_projection",
+          "exact_product_fibre_bijection",
+          "truncated_chi4_divisor_coefficient",
+          "hard_profile_floor_and_real_centre",
+          "nonsquare_and_full_divisor_controls",
+          "phase_derivatives_and_resonant_dual_modes",
+          "one_dimensional_scalar_capacity",
+          "completion_bprocess_and_self_return",
+          "coefficient_directionality_and_phase_alignment",
+          "uniformity_in_L_and_X",
+          "boundary_and_owner_scope",
+          "full_hard_TOP_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section hostile analytic report.",
+          "An equation-by-equation capacity and circularity audit of every proposed scalar transform.",
+          "Certification, strict reduction, scope correction, or rigorous no-go.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/reports/product_fibre_bprocess_circularity_hostile_audit.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "dictionary",
+        "requirement": "The exact hard cone, square projection, n=hm bijection, and literal product-fibre coefficient are reproduced without softened supports."
+      },
+      {
+        "id": "arithmetic",
+        "requirement": "The truncated near-square chi_4-divisor sum is kept distinct from the full r_2 coefficient, and prime, square, and many-divisor controls are tested."
+      },
+      {
+        "id": "phase",
+        "requirement": "Derivative, resonant-dual, completion, and B-process calculations retain the exact real centre and all stationary/boundary modes."
+      },
+      {
+        "id": "capacity",
+        "requirement": "Every scalar estimate is normalized back to L^(3/2) uniformly on the full polynomial intermediate range."
+      },
+      {
+        "id": "directionality",
+        "requirement": "No positive energy, arbitrary coefficient class, fibrewise modulus, or averaged-centre theorem is substituted for the actual fixed scalar."
+      },
+      {
+        "id": "scope",
+        "requirement": "Only the nonsquare polynomial hard-TOP scalar may change; all other M2 owners and every downstream theorem require separate closure."
+      }
+    ],
+    "closing_assessment": {
+      "decision": "promote_truncated_divisor_energy_radical_control_and_scoped_product_fibre_self_return",
+      "graph_mutation": true,
+      "terminal_label": "product_fibre_no_go",
+      "main_result": "The literal nonsquare hard-TOP scalar has an exact truncated near-square chi_4-divisor coefficient with energy O(L^2 log L). Each fixed squarefree radical channel has absolute mass O((1+L/sqrt(D))L^epsilon), so the unique exact phase-one nonsquare channel at a fixed centre is target-safe. Lawful divisibility completion and both direct B-processes return the original reciprocal hard-TOP principal family, while near resonances and the full truncated coefficient remain uncontrolled. A new fixed-centre actual-direction additive-twist theorem saving L^(1/2-o(1)) is still required.",
+      "resulting_graph_sha256": "56de446648dfb7a492fbb4b46c38d840fb14ac306df61bf61d466d26abfbe797",
+      "exponent_change": false,
+      "next_round": 138
+    }
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "3c5003b1478d78b8469d4220ad305bb06ee0f869b9c4a741e7211642eeb52cc7",
+    "generated_at": "2026-08-23T15:11:54.340043+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

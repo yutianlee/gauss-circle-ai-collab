@@ -1,0 +1,218 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 142,
+    "round_type": "m9_m1_lower_cone_rational_additive_spectrum_gate",
+    "campaign_id": "m9-m1-lower-cone-rational-additive-spectrum-gate",
+    "title": "M1 lower nonresonant cone rational-additive-spectrum gate",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "de02111a1831d30da33c9f4b2d4a549efa1942dcdc32b5d829e671f6ad5e0e76",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "planned_numerical_percent": 0,
+      "literature_policy": "Primary-source literature may be used only for exact rational additive transforms of divisor-type coefficients, Ramanujan or Voronoi expansions, rationally shifted square-root twists, or uniform exponent-pair and large-sieve estimates. Record theorem number, coefficient class, smoothing, rational denominator range, centre uniformity, absolute-value placement, and the full R- and q-power ledger."
+    },
+    "target_obligations": [
+      "M9-M1-global-lower-radial-signed-estimate",
+      "M9-M1-lower-far-cone-microscopic-cell-reduction",
+      "M9-M1-lower-incomplete-fibre-dispersion-obstruction"
+    ],
+    "frozen_target": {
+      "question": "Can the rational additive spectrum of the exact Round-141 cone coefficient be extracted uniformly enough to prove its fixed-centre nonresonant square-root twist, or to reduce it to a strictly smaller owner-complete rational-slope survivor; if not, what is the first exact denominator-uniformity, major-arc accumulation, periodic-branch, endpoint, source-hypothesis, self-return, or capacity obstruction?",
+      "reference_formula": "Let R=X^(1/4), y=floor(sqrt X), N=floor X=y^2+q_X with 0<=q_X<=2y, and C(m)=sum_(hr=m, r odd, r>4h)chi_4(r). On dyadic I_M=[M,2M) within m<=C_VN/R^2, put k_m=floor(sqrt(Nm)+1/2), j_m=k_m^2-Nm. The exact open scalar is T_nr=sum_M sum_(m in I_M, |j_m|>sqrt M)m^(-3/4)V_low(R^2m/N)C(m)e(sqrt(Nm)), with target |T_nr|<<_epsilon X^epsilon.",
+      "quantities": [
+        "Round 141 proves the exact quarter-frequency asymptotic sum_(m<=M)C(m)e(m/4)=i*pi*M/8+O(M^(1/2)); it does not prove that 1/4 is the only rational main mode.",
+        "For a reduced rational alpha=a/q, unfold S_C(M;alpha)=sum_(4h^2<M)sum_(4h<r<=M/h, r odd)chi_4(r)e(alpha h r). Any row mean, residue class, main constant, and error must be derived with exact endpoints.",
+        "A fixed-q asymptotic is not a q-uniform major-arc theorem. Every use in local slope cells must state the allowed q range, arc width, overlap, endpoint convention, and total weighted q-sum.",
+        "Subtracting a finite periodic projection is useful only if its nonlinear square-root branch is target-safe and the residual has the exact additive partial-sum control required on every complementary slope cell.",
+        "The nonresonant condition |j_m|>sqrt M concerns phase values, not derivative distance. It may not be used as a rational-slope separation without a proved implication.",
+        "Raw rational-mode capacity, a main term in a coefficient Fourier transform, or a real radial cosine estimate is not a lower bound or bound for the signed fixed-centre complex scalar.",
+        "Round 141 supplies an unsquared scalar equivalence only. No lower GAR, direct M1, M9-M1, M2, endpoint, M9, quarter, or exponent promotion follows without its separate owner."
+      ]
+    },
+    "completion_criteria": [
+      "Derive the exact finite additive transform of C(m) at reduced a/q, including the condition for a nonzero row mean, its sign and constant, both cone endpoints, and an error uniform in a stated q range.",
+      "If rational main modes are subtracted, define the finite or infinite spectrum, convergence/order, denominator cutoff, residual coefficient, and exact reconstruction error.",
+      "Map local slopes of sqrt(Nm) to rational arcs with explicit widths, multiplicities, endpoint rules, nonresonant interaction, and total weighted capacity.",
+      "Prove every extracted periodic rational-shift square-root branch target-safe and the residual complement at X^epsilon before claiming a strict reduction.",
+      "Audit all source theorems against the actual cone or residual coefficient, rational denominator range, square-root centre, smoothing, and full R- and q-power ledger.",
+      "Test q not divisible by 4, q divisible by 4, q=4, both signs a/q, small and growing q, small and top M, q_X=0 and q_X=2y, and canonical self-return.",
+      "Close under exactly one label: target_bound, strict_rational_spectrum_reduction, or rational_major_arc_self_return_no_go.",
+      "Make no lower-GAR, direct blockwise M1, M9-M1, M2, endpoint, M9, quarter, or exponent promotion unless every corresponding owner closes."
+    ],
+    "controls": [
+      "exact_cone_hyperbola_endpoints_and_parity",
+      "reduced_rational_frequency_and_q_mod_4_cases",
+      "row_mean_residue_classes_sign_and_constant",
+      "fixed_q_versus_growing_q_error_uniformity",
+      "rational_spectrum_convergence_and_reconstruction",
+      "local_derivative_arc_width_overlap_and_multiplicity",
+      "nonresonant_phase_value_versus_slope_distinction",
+      "periodic_branch_all_dyadic_R_and_q_power_ledger",
+      "residual_additive_partial_sum_hypothesis",
+      "source_theorem_coefficient_q_range_and_direction",
+      "raw_capacity_versus_fixed_centre_signed_scalar",
+      "canonical_transform_self_return_and_downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "rational_mode_hyperbola_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "complete",
+        "target": "Derive the exact rational additive spectrum of the cone coefficient. Prove a fixed- and growing-denominator asymptotic for S_C(M;a/q), compute every nonzero main constant, and test whether a denominator-truncated spectral subtraction yields a residual with target-useful uniform additive partial sums and a target-safe reconstruction error.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0823_full_proof_strategy.md",
+          "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/candidates/conductor_round141_cone_nonresonant_reduction.md",
+          "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/reviews/conductor_round141_incomplete_fibre_adjudication.md",
+          "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/synthesis.md"
+        ],
+        "required_controls": [
+          "exact_cone_hyperbola_endpoints_and_parity",
+          "reduced_rational_frequency_and_q_mod_4_cases",
+          "row_mean_residue_classes_sign_and_constant",
+          "fixed_q_versus_growing_q_error_uniformity",
+          "rational_spectrum_convergence_and_reconstruction",
+          "local_derivative_arc_width_overlap_and_multiplicity",
+          "nonresonant_phase_value_versus_slope_distinction",
+          "residual_additive_partial_sum_hypothesis",
+          "raw_capacity_versus_fixed_centre_signed_scalar",
+          "canonical_transform_self_return_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section analytic report.",
+          "An exact rational-frequency theorem with all constants and a complete M-, q-, and R-power ledger.",
+          "A target estimate, strict owner-complete rational-spectrum survivor, or first rigorous denominator-accumulation or reconstruction obstruction.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-lower-cone-rational-additive-spectrum-gate/reports/rational_mode_hyperbola_attack.md"
+      },
+      {
+        "id": "blind_rational_slope_cell_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "complete",
+        "target": "Independently decide from the exact cone scalar whether rational additive modes and local derivative cells prove the target or a strict reduction. Derive the rational row means, q-uniform errors, arc widths, periodic branches, and residual requirement without access to prior derivations; otherwise prove the first exact no-go.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/m9-m1-lower-cone-rational-additive-spectrum-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "all strategy files",
+          "all Round-138 through Round-142 nonblind artifacts",
+          "all Round-142 sibling reports"
+        ],
+        "required_controls": [
+          "exact_cone_hyperbola_endpoints_and_parity",
+          "reduced_rational_frequency_and_q_mod_4_cases",
+          "row_mean_residue_classes_sign_and_constant",
+          "fixed_q_versus_growing_q_error_uniformity",
+          "rational_spectrum_convergence_and_reconstruction",
+          "local_derivative_arc_width_overlap_and_multiplicity",
+          "nonresonant_phase_value_versus_slope_distinction",
+          "periodic_branch_all_dyadic_R_and_q_power_ledger",
+          "residual_additive_partial_sum_hypothesis",
+          "raw_capacity_versus_fixed_centre_signed_scalar",
+          "canonical_transform_self_return_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section statement-only analytic report.",
+          "A self-contained rational-spectrum and local-slope derivation with exact endpoint and q-uniform controls.",
+          "A target estimate, strict signed survivor, or first rigorous no-go step.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-lower-cone-rational-additive-spectrum-gate/reports/blind_rational_slope_cell_rederivation.md"
+      },
+      {
+        "id": "rational_shift_sqrt_twist_source_audit",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "status": "complete",
+        "target": "Audit primary literature and exact transformations for rationally shifted coefficient-free square-root sums and Ramanujan or Voronoi expansions of divisor-type coefficients. Determine whether the extracted a/q branches and their denominator sum are target-safe uniformly at the Round-142 centre, or identify the first coefficient, q-range, smoothing, direction, or self-return obstruction.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0823_full_proof_strategy.md",
+          "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/reports/sqrt_divisor_twist_source_audit.md",
+          "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/reviews/blind_post_unmask_source_mellin_audit.md",
+          "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/reviews/conductor_round141_incomplete_fibre_adjudication.md",
+          "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/synthesis.md"
+        ],
+        "required_controls": [
+          "exact_cone_hyperbola_endpoints_and_parity",
+          "reduced_rational_frequency_and_q_mod_4_cases",
+          "row_mean_residue_classes_sign_and_constant",
+          "fixed_q_versus_growing_q_error_uniformity",
+          "rational_spectrum_convergence_and_reconstruction",
+          "local_derivative_arc_width_overlap_and_multiplicity",
+          "nonresonant_phase_value_versus_slope_distinction",
+          "periodic_branch_all_dyadic_R_and_q_power_ledger",
+          "source_theorem_coefficient_q_range_and_direction",
+          "raw_capacity_versus_fixed_centre_signed_scalar",
+          "canonical_transform_self_return_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section source-audit report.",
+          "Primary-source theorem cards and an exact B-process or Voronoi power ledger for each rational branch and the full denominator sum.",
+          "A usable target theorem or the first rigorous source-level and q-accumulation obstruction.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-lower-cone-rational-additive-spectrum-gate/reports/rational_shift_sqrt_twist_source_audit.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "rational_mode_constant",
+        "requirement": "The exact row mean, q mod 4 condition, two residue classes, sign, main constant, and both cone endpoints are independently verified."
+      },
+      {
+        "id": "q_uniformity",
+        "requirement": "Every fixed-q asymptotic is distinguished from a growing-q theorem, with the exact error and useful denominator range stated."
+      },
+      {
+        "id": "spectrum_reconstruction",
+        "requirement": "Any finite or infinite rational-mode subtraction has a declared order, convergence law, residual coefficient, and target-safe reconstruction error."
+      },
+      {
+        "id": "slope_cells",
+        "requirement": "Derivative arcs have exact widths, overlap and endpoint conventions, and are not confused with the accepted phase-value nonresonance condition."
+      },
+      {
+        "id": "periodic_branch_and_sources",
+        "requirement": "Every rational-shift square-root branch and cited theorem has a complete dyadic R- and q-power ledger and preserves the required complex direction."
+      },
+      {
+        "id": "scope",
+        "requirement": "Only the Round-141 nonresonant cone scalar or a proved strict survivor may change; every square-level, downstream, and exponent claim requires its separate owner."
+      }
+    ],
+    "closing_assessment": {
+      "decision": "promote_exact_rational_spectrum_and_reconstruction_self_return_obstruction",
+      "graph_mutation": true,
+      "terminal_label": "rational_major_arc_self_return_no_go",
+      "main_result": "The exact cone coefficient has a uniform rational mean at every reduced denominator divisible by four, with coefficient i*pi*chi_4(a)/(2q) and error O((sqrt M+q)log(2q)). Finite cutoffs retain omitted modes; denominator-Abel completion returns r_2/4 and leaves the negative-character cone unchanged; the moving wedge, missing local residual norm, source hypotheses, and stationary-principal self-return prevent an owner-complete reduction. The frozen scalar remains open.",
+      "resulting_graph_sha256": "7a3ff68dda20717bff1133412f0ca97d35032599930d7f19551109a43d2bd789",
+      "exponent_change": false,
+      "next_round": 143
+    }
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "de02111a1831d30da33c9f4b2d4a549efa1942dcdc32b5d829e671f6ad5e0e76",
+    "generated_at": "2026-08-23T19:10:21.063256+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

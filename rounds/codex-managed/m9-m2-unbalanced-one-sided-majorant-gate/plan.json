@@ -1,0 +1,216 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 134,
+    "round_type": "m9_m2_unbalanced_one_sided_majorant_gate",
+    "campaign_id": "m9-m2-unbalanced-one-sided-majorant-gate",
+    "title": "M2 UNBAL actual-character one-sided band-limited majorant gate",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "40e83c20e83d542e43aa739931f4b89ea76f4541506fb44ef219ce31dca35024",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "planned_numerical_percent": 0,
+      "literature_policy": "Use only exact extremal-majorant statements whose Fourier convention, degree or exponential type, L1 excess, and pointwise direction are verified. A Beurling--Selberg or Vaaler slogan does not imply quadratic-form domination, actual-character cancellation, or an endpoint estimate."
+    },
+    "target_obligations": [
+      "M9-M2-smooth-unbalanced-three-quarter-estimate",
+      "M9-M2-unbalanced-dual-block-energy-one-sided-reduction",
+      "M9-M2-unbalanced-dual-sector-curvature-no-go"
+    ],
+    "frozen_target": {
+      "question": "Can a one-sided band-limited majorant, applied directly to the endpoint-complete full-character energy E_chi before any sectorwise modulus or positive-row norm, prove E_chi <<_epsilon X^(1/2+epsilon) uniformly on the literal flat-smooth strict-UNBAL packet; if not, what is the first exact order, bandwidth, character, or capacity obstruction?",
+      "reference_formula": "B_(p,n)=sum_(0<=a<H)b_(p,n+a), E_chi=C_H sum_n |sum_(p>0 odd)chi_4(p)B_(p,n)|^2. With A(k)=sum_p chi_4(p)b_(p,k), D_H(alpha)=sum_(0<=a<H)e(a alpha), and Ahat(alpha)=sum_k A(k)e(k alpha), Parseval gives E_chi=C_H int_0^1 |D_H(alpha)|^2 |Ahat(alpha)|^2 d alpha. Test only lawful one-sided domination of this exact quadratic form or of its literal physical selectors.",
+      "quantities": [
+        "M asymp X, D=X^delta, L=X^ell, K=XL/D^2, H=ceil(X^(1/2)/D), K asymp LH^2",
+        "1/4<=delta<1/2, 0<=ell<delta-1/4, 178ell+1638delta>463, Q=D^2/(Lsqrt X) tending to infinity",
+        "b_(p,k)=e(-1/8)M^(1/4)k^(-3/4)p^(-3/4)W((X/(2D))sqrt(p/(Mk)))q_L((X/M)p)e(sqrt(Mpk)) for positive odd p, zero-extended before shifts",
+        "C_H=(J+H-1)/H^2 asymp L and D_0=C_H H sum_(p,k)|b_(p,k)|^2 << X^(1/2)",
+        "E_chi is target-equivalent to the complete flat-smooth strict-UNBAL survivor modulo already-safe packages",
+        "the Fejer multiplier F_H=|D_H|^2 is itself a nonnegative trigonometric polynomial of degree H-1 and integral H",
+        "a meaningful bandwidth contraction must reduce degree below H by a fixed power without an L1, diagonal, endpoint, or owner loss",
+        "Gamma_before=min(H,Q) for the best separate positive-row elementary bound, Gamma_claimed=1, and every surviving factor must be displayed",
+        "flat-smooth strict-UNBAL owner only; hard, sharp, clipped, starred, arithmetic-owner, nonflat, and transition packets are excluded"
+      ]
+    },
+    "completion_criteria": [
+      "Reproduce the exact E_chi block-square and Parseval multiplier identities with the literal b_(p,k), chi_4 placement, zero extension, and normalization.",
+      "Classify every proposed majorant by the exact order relation it supplies: pointwise scalar, coefficientwise, Fourier-multiplier, positive-semidefinite quadratic-form, or actual-family-only.",
+      "For a trigonometric majorant T_Delta>=F_H, derive the sharp or sufficient lower bound on its zeroth coefficient from T_Delta(0)>=H^2, and price the bandwidth against the target.",
+      "Test whether a pointwise majorant of the physical interval or smooth support actually dominates a complex signed block square; supply a phase-adapted countercontrol if it does not.",
+      "If Poisson or completion is used on the majorant side, keep the actual chi_4-weighted p-sum and all moving profiles, and show a complete fixed-power contraction rather than transform inversion.",
+      "Test true chi_4, absolute characters, random signs, opposite-character identical rows, one-row coherent data, and the literal actual-symbol family separately.",
+      "Close under exactly one label: target_bound, strict_majorant_reduction, or majorant_no_go.",
+      "Make no complete-UNBAL, BAL, TOP, M9-M2, M1, endpoint, M9, quarter, or exponent promotion without the corresponding graph dependencies."
+    ],
+    "controls": [
+      "literal_Echi_block_square_and_parseval",
+      "majorant_order_relation",
+      "Fejer_already_bandlimited",
+      "zeroth_coefficient_uncertainty_bound",
+      "bandwidth_and_L1_excess_capacity",
+      "complex_cross_term_domination",
+      "actual_chi4_before_modulus",
+      "opposite_character_and_single_row_controls",
+      "moving_profiles_zero_extension_and_endpoints",
+      "Poisson_only_after_lawful_one_sided_inequality",
+      "Gamma_before_claimed_survivor",
+      "flat_smooth_owner_and_downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "blind_bandlimited_quadratic_majorant_feasibility",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "pending",
+        "target": "Independently determine whether a one-sided band-limited majorant can dominate the exact full-character block quadratic form with a fixed-power bandwidth contraction and target-safe zeroth coefficient; prove the target, a strict reduction, or the smallest rigorous uncertainty/cross-term no-go.",
+        "context_files": [
+          "problems/gauss_circle.md",
+          "state/control_models.md",
+          "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "all strategy files",
+          "all Round-106 through Round-134 nonblind artifacts",
+          "all Round-134 sibling reports"
+        ],
+        "required_controls": [
+          "literal_Echi_block_square_and_parseval",
+          "majorant_order_relation",
+          "Fejer_already_bandlimited",
+          "zeroth_coefficient_uncertainty_bound",
+          "bandwidth_and_L1_excess_capacity",
+          "complex_cross_term_domination",
+          "actual_chi4_before_modulus",
+          "opposite_character_and_single_row_controls",
+          "Gamma_before_claimed_survivor",
+          "flat_smooth_owner_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section statement-only report.",
+          "An exact quadratic-form and Fourier-multiplier derivation.",
+          "A target estimate, strict noninvertible reduction, or quantified no-go.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/reports/blind_bandlimited_quadratic_majorant_feasibility.md"
+      },
+      {
+        "id": "actual_character_fejer_majorant_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "target": "Construct the strongest lawful one-sided Beurling--Selberg, Vaaler, or trigonometric-majorant inequality for the literal E_chi, then carry the actual chi_4-weighted p-sum through any finite Fourier or Poisson step and price the complete X exponent.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0823_full_proof_strategy.md",
+          "strategy/A2_0823_1.md",
+          "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/blind_statement.md",
+          "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/synthesis.md",
+          "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/reviews/conductor_round125_dual_sector_adjudication.md",
+          "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/blind_statement.md"
+        ],
+        "required_controls": [
+          "literal_Echi_block_square_and_parseval",
+          "majorant_order_relation",
+          "Fejer_already_bandlimited",
+          "zeroth_coefficient_uncertainty_bound",
+          "bandwidth_and_L1_excess_capacity",
+          "complex_cross_term_domination",
+          "actual_chi4_before_modulus",
+          "moving_profiles_zero_extension_and_endpoints",
+          "Poisson_only_after_lawful_one_sided_inequality",
+          "Gamma_before_claimed_survivor",
+          "flat_smooth_owner_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section analytic report.",
+          "An exact table of majorant type, direction, Fourier support, zeroth coefficient, endpoint error, and capacity.",
+          "A proved complete bound, a strict smaller survivor, or the first invalid seam with an explicit remaining factor.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/reports/actual_character_fejer_majorant_attack.md"
+      },
+      {
+        "id": "majorant_cross_term_hostile_audit",
+        "role": "seam_reviewer",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "target": "Hostilely audit every plausible one-sided majorant placement for order validity, complex cross terms, character retention, bandwidth uncertainty, diagonal capacity, Poisson ownership, and endpoint completeness.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0823_full_proof_strategy.md",
+          "strategy/A1_0823_2.md",
+          "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/synthesis.md",
+          "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/reports/blind_dual_offproduct_sector_rederivation.md",
+          "rounds/codex-managed/m9-m2-unbalanced-dual-offproduct-sector-gate/reviews/conductor_round125_dual_sector_adjudication.md",
+          "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/blind_statement.md"
+        ],
+        "required_controls": [
+          "literal_Echi_block_square_and_parseval",
+          "majorant_order_relation",
+          "Fejer_already_bandlimited",
+          "zeroth_coefficient_uncertainty_bound",
+          "bandwidth_and_L1_excess_capacity",
+          "complex_cross_term_domination",
+          "actual_chi4_before_modulus",
+          "opposite_character_and_single_row_controls",
+          "moving_profiles_zero_extension_and_endpoints",
+          "Poisson_only_after_lawful_one_sided_inequality",
+          "Gamma_before_claimed_survivor",
+          "flat_smooth_owner_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section hostile report.",
+          "A pass/fail matrix for every possible placement of the majorant.",
+          "The maximal safe theorem or exact fatal correction and surviving power.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/reports/majorant_cross_term_hostile_audit.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "order",
+        "requirement": "The claimed one-sided comparison is an actual scalar or positive-semidefinite quadratic-form inequality; coefficientwise majorization is not used on a complex signed sum."
+      },
+      {
+        "id": "bandwidth",
+        "requirement": "Fourier degree, zeroth coefficient, L1 excess, and the exact fixed-power bandwidth contraction are all explicit."
+      },
+      {
+        "id": "character",
+        "requirement": "The p-sum retains chi_4 and moving profiles before every modulus, norm, or Poisson estimate."
+      },
+      {
+        "id": "noninvertibility",
+        "requirement": "The new inequality produces a strict smaller survivor; replacing F_H by itself or applying an invertible transform is recorded as a return."
+      },
+      {
+        "id": "capacity",
+        "requirement": "Gamma_before, Gamma_claimed, Gamma_survivor, diagonal cost, and endpoint error are priced uniformly over the full UNBAL exponent polytope."
+      },
+      {
+        "id": "scope",
+        "requirement": "Only the flat-smooth strict-UNBAL owner may change state, and no downstream parent or exponent changes without all required bridges."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "40e83c20e83d542e43aa739931f4b89ea76f4541506fb44ef219ce31dca35024",
+    "generated_at": "2026-08-23T12:52:03.900299+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

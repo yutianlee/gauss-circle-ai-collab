@@ -1,0 +1,234 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-hard-top-t1-close-opposite-prime-exchange-sector",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Hard-TOP t=1 canonical close opposite-prime exchange sector",
+        "status": "proved_internal",
+        "statement_tex": "Let J=sqrt(X), y=floor(J), q_X=X/y^2, H=floor(yX^(-1/4)), and 1<<L<<H<=J^(1/2). Retain the literal squarefree t=1 scalar S_(L,1), its half-open N asymp L^2 shell, odd character-bearing divisor d, upper near-square window sqrt(N)<=d<=2sqrt(N), eta_L(d)Phi(d/(H+1))W(sqrt(q_X)d/(2sqrt(N))), even-N branch, floors, stars, endpoints, and zero extension. Fix kappa>0. For each supported squarefree N select canonically at most one pair of distinct odd prime divisors p_(N,L,kappa),q_(N,L,kappa) with chi_4(pq)=-1 and |log(q/p)|<=kappa L^(-1/2), using (N,L,kappa) but not the divisor allocation. Let S_(L,1)^cp be the complete incidence subsum where exactly one selected prime divides d. Exchanging p and q between d and N/d is an integral fixed-point-free multiplicity-one involution preserving N, squarefreeness, coprimality, oddness, the even-N branch, normalization, shell, and e(Jsqrt(N)), while reversing chi_4. On common smooth cells the accepted eta_L, Phi, W interfaces give amplitude difference O_kappa(L^(-1/2)); every cone, dyadic, profile, endpoint, star, ceiling, or zero-extension crossing lies in finitely many collars containing O_kappa(L^(3/2)+L) integer pairs. Hence |S_(L,1)^cp|<<_kappa L^(3/2), uniformly in the real centre. This proves no eligible-pair density, per-block nonemptiness, estimate for neither/both/no-pair incidences, or full t=1 target. A p congruent 3 mod 4 one-prime toggle has completely disjoint physical supports; averaging all such toggles, or any normalized family of sign-reversing full divisor-lattice involutions, returns the original coefficient exactly. Odd complement lies in the excluded lower window; for N=2M the physical complement is even and the odd-part complement lies in [sqrt(N)/4,sqrt(N)/2]. General matching, cycle, complement, and full-divisor identities are scoped route evidence only. No remaining channel, hard TOP parent, smooth packet, M9-M2, M9, bridge, target, or exponent follows.",
+        "dependencies": [
+          "M9-M2-hard-top-t1-character-poisson-product-collar-obstruction",
+          "M9-M2-top-endpoint-actual-symbol-variation",
+          "H4-Phi-regularity"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "proofs/kernels/m9_m2_hard_top_t1_close_opposite_prime_exchange_sector.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/candidates/conductor_round163_close_opposite_prime_exchange_sector.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reports/literal_near_square_divisor_involution_attack.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reports/prime_toggle_complement_leakage_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/controls/conductor_round163_reproduction_and_selection.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/blind_post_unmask_close_pair_sector_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/profile_boundary_power_seam_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/downstream_graph_scope_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/conductor_round163_adjudication.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reports/blind_near_square_divisor_rederivation.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Subtract only the exact canonical close-opposite-prime XOR incidence sector. Prove the literal residual S_(L,1)^rem containing all no-pair products and all neither/both incidences, with arbitrary-real-centre phase, profiles, parity, hard boundaries, floors, stars, endpoints, and zero extension retained. Do not infer eligible-pair density. After the complete t=1 face, the remaining L<<D<<L^2, t<<sqrt(L) channels and near collars still require estimates."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "dependencies_added": [
+          "M9-M2-hard-top-t1-close-opposite-prime-exchange-sector"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "proofs/kernels/m9_m2_hard_top_t1_close_opposite_prime_exchange_sector.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/candidates/conductor_round163_close_opposite_prime_exchange_sector.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reports/literal_near_square_divisor_involution_attack.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reports/blind_near_square_divisor_rederivation.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reports/prime_toggle_complement_leakage_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/blind_post_unmask_close_pair_sector_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/profile_boundary_power_seam_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/downstream_graph_scope_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/conductor_round163_adjudication.md"
+          ]
+        },
+        "next_action": "Remove only the accepted long-channel and exact-collision sectors and the exact close-opposite-prime XOR incidence sector. Prove the complete residual t=1 scalar with no-pair and neither/both incidences, literal profiles, hard boundaries, parity, and arbitrary-real-centre phase; then treat the remaining L<<D<<L^2, t<<sqrt(L) channels and near collars."
+      },
+      {
+        "id": "M9-M2-top-endpoint-density-discrepancy-energy",
+        "dependencies_added": [
+          "M9-M2-hard-top-t1-close-opposite-prime-exchange-sector"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "proofs/kernels/m9_m2_hard_top_t1_close_opposite_prime_exchange_sector.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/candidates/conductor_round163_close_opposite_prime_exchange_sector.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reports/literal_near_square_divisor_involution_attack.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reports/blind_near_square_divisor_rederivation.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reports/prime_toggle_complement_leakage_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/blind_post_unmask_close_pair_sector_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/profile_boundary_power_seam_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/downstream_graph_scope_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/conductor_round163_adjudication.md"
+          ]
+        },
+        "next_action": "Preserve the accepted one-count and completed-real-part connector. Before transferring anything back to this energy, prove the literal signed residual t=1 scalar after subtracting only the close-opposite-prime XOR sector, then the other few-point channels. The strict scalar sector is not a completed-energy estimate."
+      }
+    ],
+    "correct_rejected": [],
+    "reject": [
+      {
+        "id": "Round163-close-prime-selector-is-nonempty-or-dense",
+        "reason": "The theorem selects at most one pair per product and proves no per-block nonemptiness, asymptotic density, positive proportion, or polynomial coverage."
+      },
+      {
+        "id": "Round163-close-prime-sector-proves-full-t1",
+        "reason": "No-pair products and every neither/both incidence remain in the unestimated residual scalar."
+      },
+      {
+        "id": "Round163-single-p3-toggle-has-two-physical-legs",
+        "reason": "The physical interval has multiplicative width two while p>=3, so every one-prime sign-reversing partner lies outside."
+      },
+      {
+        "id": "Round163-averaged-p3-toggles-gain-prime-multiplicity",
+        "reason": "Every active divisor reappears with its original sign once for each p congruent 3 modulo 4; normalized averaging is exact self-return."
+      },
+      {
+        "id": "Round163-partner-existence-gives-canonical-global-matching",
+        "reason": "A noninjective partner rule is not a reindexing; restricted exchange graphs still require sign-count equality and Hall's condition."
+      },
+      {
+        "id": "Round163-unrestricted-exchange-graph-always-has-perfect-matching",
+        "reason": "The complete bipartite sign graph has a perfect matching only when its two sign classes have equal size."
+      },
+      {
+        "id": "Round163-matching-cycles-or-averages-cancel-profiles",
+        "reason": "Even cycles and weighted transports only rewrite literal profile gradients and retain unmatched or same-sign fibres."
+      },
+      {
+        "id": "Round163-odd-complement-preserves-upper-window",
+        "reason": "Odd complementation sends the upper interval to the excluded lower interval [sqrt(N)/2,sqrt(N)]."
+      },
+      {
+        "id": "Round163-even-N-complement-is-upper-character-symmetry",
+        "reason": "For N=2M the physical complement N/d is even, while the odd-part complement M/d lies in [sqrt(N)/4,sqrt(N)/2]."
+      },
+      {
+        "id": "Round163-full-divisor-vanishing-controls-truncation",
+        "reason": "Full-divisor vanishing identifies the truncated coefficient with an uncontrolled profiled complement; it does not make the truncation small."
+      },
+      {
+        "id": "Round163-representable-sector-log-sparsity-is-polynomial-saving",
+        "reason": "Logarithmic sparsity is L^(2-o(1)) at this scale and does not supply the missing L^(1/2-o(1)) gain."
+      },
+      {
+        "id": "Round163-diagnostic-semiprime-or-multiprime-count-is-physical-mass",
+        "reason": "Constant-profile and fixed-modulus prime-counting controls falsify combinatorial inferences but provide no lower bound for the literal weighted oscillatory scalar."
+      },
+      {
+        "id": "Round163-strict-sector-closes-remaining-few-point-or-hard-TOP",
+        "reason": "The residual t=1 incidences and the compatible L<<D<<L^2, t<<sqrt(L) channels remain open."
+      },
+      {
+        "id": "Round163-hard-top-sector-transfers-to-smooth-M2",
+        "reason": "Balanced and unbalanced smooth packets have different owners, coefficients, and interfaces and receive no estimate from this hard-TOP incidence sector."
+      },
+      {
+        "id": "Round163-strict-sector-proves-M9-or-quarter-target",
+        "reason": "Both hard-TOP parents, both smooth M2 parents, M9-M2, M9-M1, endpoint uniformity, M9, and the unconditional bridge remain incomplete."
+      },
+      {
+        "id": "Round163-strict-sector-improves-a-global-exponent",
+        "reason": "No parent theorem or bridge closes, so the internal one-third theorem and the external Li-Yang benchmark remain numerically unchanged."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "H4-Phi-regularity",
+        "reason": "Its accepted bounded C1 profile interface is a forward dependency of the new sector and remains unchanged."
+      },
+      {
+        "id": "M9-M2-top-endpoint-actual-symbol-variation",
+        "reason": "Its fixed-profile symbol interface is used only as an antecedent; its scoped variation theorem is unchanged."
+      },
+      {
+        "id": "M9-M2-hard-top-t1-character-poisson-product-collar-obstruction",
+        "reason": "The Round-162 transform/collar obstruction remains a forward dependency and is neither strengthened nor reversed."
+      },
+      {
+        "id": "M9-M2-hard-top-product-fibre-transform-self-return",
+        "reason": "The accepted Round-137 self-return remains unchanged."
+      },
+      {
+        "id": "M9-M2-hard-top-radical-long-channel-exact-collision-control",
+        "reason": "The accepted long-channel sector and exact-collision classification remain unchanged."
+      },
+      {
+        "id": "M9-M2-hard-top-radical-frequency-common-test-source-obstruction",
+        "reason": "The accepted common-test/source obstruction remains unchanged."
+      },
+      {
+        "id": "M9-M2-hard-top-truncated-divisor-energy-and-radical-control",
+        "reason": "The accepted coefficient energy and radical dictionary remain unchanged."
+      },
+      {
+        "id": "M9-M2-hard-top-square-product-entry-sector",
+        "reason": "The accepted square-entry sector is disjoint from the nonsquare close-prime incidence theorem and remains unchanged."
+      },
+      {
+        "id": "M9-M2-physical-one-count-assembly",
+        "reason": "Both hard-TOP owners and both smooth packet estimates remain incomplete, so the physical assembly receives no promotion."
+      },
+      {
+        "id": "M9-M2-smooth-balanced-quarter-packet-estimate",
+        "reason": "Round 163 treats no balanced smooth packet."
+      },
+      {
+        "id": "M9-M2-smooth-unbalanced-three-quarter-estimate",
+        "reason": "Round 163 treats no unbalanced smooth packet."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Hard TOP, balanced smooth, and unbalanced smooth mandatory parents remain open."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "Round 163 treats no M9-M1 owner."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "A strict incidence sector does not prove all-owner endpoint uniformity."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain incomplete."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The bridge remains conditional on complete M9."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The strongest theorem proved internally remains exponent one third."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "The separately audited external exponent remains (3292+25sqrt(1717))/13762."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The quarter target still lacks M9-M1, all three mandatory M9-M2 parents, endpoint uniformity, M9, and an unconditional bridge."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 6,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 163 proves a genuinely literal target-safe close-opposite-prime XOR incidence sector with complete profile and hard-boundary accounting and rigorously classifies the self-return of unrestricted divisor involutions. It proves no sector density, residual t=1 estimate, hard-TOP parent, downstream theorem, or exponent improvement."
+  }
+}

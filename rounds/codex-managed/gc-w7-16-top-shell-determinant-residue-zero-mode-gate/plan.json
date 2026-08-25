@@ -1,0 +1,216 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 131,
+    "round_type": "gc_w7_16_top_shell_determinant_residue_zero_mode_gate",
+    "campaign_id": "gc-w7-16-top-shell-determinant-residue-zero-mode-gate",
+    "title": "Terminal top-shell determinant-residue resonant-mode gate",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "23e7bfacbf6abc5582769fbe8d427cbca2379e1d265b99df21d93a65ec504825",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "planned_numerical_percent": 0,
+      "literature_policy": "No external theorem is assumed in Round 131. Any proposed Salie, Kloosterman, trace-function, decoupling, or large-sieve continuation is only an interface statement pending a separate source card."
+    },
+    "target_obligations": [
+      "GC-W7-16-top-shell-determinant-residue-reindexing",
+      "GC-W7-16-post-inner-outer-energy-obstruction",
+      "GC-W7-16-actual-reduced-determinant-correlation"
+    ],
+    "frozen_target": {
+      "question": "On the sole exponent-critical B asymp D shell, can the exact physically reassembled determinant-residue weight be legally separated into periodic and BV factors, can its shifted family-level resonant mode be computed, and does that computation yield a literal signed bank, a physical obstruction, or a terminal degeneracy verdict?",
+      "reference_formula": "Use the exact one-sided post-inner scalar in blind_statement.md, reindex after physical Mobius reassembly by n=aq-bp, and retain actual outer coefficients, M1/M2 character placement, Stieltjes thresholds, reciprocal aliases, determinant taper, stars, signs, cells, and owners before the decisive estimate.",
+      "quantities": [
+        "W=Y^(7/16), D=Y^(1/2), L=Y^(1/6), B asymp D",
+        "capacity_before=D K_D=Y^(35/48+epsilon), K_D=Y^(11/48+o(1))",
+        "generic square-root residue bank=Y^(31/48+epsilon)",
+        "ideal one-term-per-ray floor=D K_D/L=Y^(27/48+epsilon)=Y^(9/16+epsilon)",
+        "determinant target=D=Y^(24/48+epsilon)",
+        "strict global improvement requires a complete exponent below 9/16 and therefore a cross-ray gain"
+      ]
+    },
+    "completion_criteria": [
+      "Write the exact n=aq-bp reindexing of the physically reassembled top-shell scalar before any positive norm.",
+      "Prove or refute a periodic-arithmetic versus BV-envelope separation modulo 4|a|, with every threshold, taper, support face, and owner priced.",
+      "Compute the shifted physical resonant mode for M1 and M2 rather than assuming the naive zero mode.",
+      "Decide from exact algebra whether a genuine quadratic-Gauss or Salie-class complete sum occurs, including modulus, unit condition, completion formula, and boundary cost.",
+      "Price the resonant-window mass and test the accepted same-denominator M1/M2 aligned packets, including the M2 sign-crossing convention.",
+      "Distinguish per-ray residue cancellation from the family-summed cross-ray theorem required to cross the persistence threshold.",
+      "Close under exactly one terminal label: bank, obstruct, or degenerate. No second internal per-ray top-shell round is authorized.",
+      "Make no global exponent, M9 component, endpoint, bridge, or quarter promotion."
+    ],
+    "controls": [
+      "literal_top_shell_dictionary",
+      "physical_Mobius_reassembly",
+      "periodic_BV_separation_before_Fourier",
+      "shifted_resonant_mode_mod_4a",
+      "M1_same_denominator_alignment",
+      "M2_positive_numerator_alignment",
+      "M2_sign_crossing_packet",
+      "resonant_window_mass",
+      "threshold_equality_and_owner_ledger",
+      "scalar_vs_positive_energy",
+      "per_ray_vs_cross_ray_capacity",
+      "Salie_identification_or_no_go",
+      "no_global_or_M9_promotion"
+    ],
+    "tasks": [
+      {
+        "id": "blind_residue_mode_feasibility",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "completed_with_statement_only_no_go_and_post_unmask_scope_correction",
+        "target": "From the statement-only packet, derive the weakest legal periodic/BV separation and shifted resonant-mode statement, then prove a residue saving, construct a matched obstruction, or give the sharp no-go.",
+        "context_files": [
+          "problems/gauss_circle.md",
+          "state/control_models.md",
+          "rounds/codex-managed/gc-w7-16-top-shell-determinant-residue-zero-mode-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "all strategy files",
+          "all Round-95 through Round-131 nonblind artifacts",
+          "all Round-131 sibling reports"
+        ],
+        "required_controls": [
+          "periodic_BV_separation_before_Fourier",
+          "shifted_resonant_mode_mod_4a",
+          "M1_same_denominator_alignment",
+          "M2_positive_numerator_alignment",
+          "M2_sign_crossing_packet",
+          "scalar_vs_positive_energy",
+          "per_ray_vs_cross_ray_capacity",
+          "Salie_identification_or_no_go",
+          "no_global_or_M9_promotion"
+        ],
+        "required_output": [
+          "A seven-section statement-only report.",
+          "A legal separation lemma or an exact reason it cannot be stated from the supplied hypotheses.",
+          "A shifted-mode computation, matched control, and exact capacity.",
+          "No graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/gc-w7-16-top-shell-determinant-residue-zero-mode-gate/reports/blind_residue_mode_feasibility.md"
+      },
+      {
+        "id": "literal_induced_residue_weight_derivation",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "completed_with_literal_weight_candidate_and_fourier_capacity_audit",
+        "target": "Derive the literal M1/M2 determinant-residue weight after physical reassembly, prove the periodic/BV separation with a variation ledger, identify the shifted resonant mode and any Salie-class algebra, and estimate the family-summed resonant contribution or isolate the first exact residual.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0823_full_proof_strategy.md",
+          "rounds/codex-managed/gc-w7-16-top-shell-determinant-residue-zero-mode-gate/blind_statement.md",
+          "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/reviews/conductor_round130_post_inner_adjudication.md",
+          "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/synthesis.md"
+        ],
+        "required_controls": [
+          "literal_top_shell_dictionary",
+          "physical_Mobius_reassembly",
+          "periodic_BV_separation_before_Fourier",
+          "shifted_resonant_mode_mod_4a",
+          "resonant_window_mass",
+          "threshold_equality_and_owner_ledger",
+          "per_ray_vs_cross_ray_capacity",
+          "Salie_identification_or_no_go",
+          "no_global_or_M9_promotion"
+        ],
+        "required_output": [
+          "A seven-section analytic report.",
+          "The exact induced residue formula and separation/variation ledger.",
+          "A bank theorem, physical obstruction, or terminal degeneracy result with first residual.",
+          "No graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/gc-w7-16-top-shell-determinant-residue-zero-mode-gate/reports/literal_induced_residue_weight_derivation.md"
+      },
+      {
+        "id": "resonant_packet_cross_ray_hostile_audit",
+        "role": "seam_reviewer",
+        "access_mode": "selected_context",
+        "status": "completed_with_aligned_packet_no_go_and_post_unmask_weighted_seam_audit",
+        "target": "Hostilely test every proposed resonant cancellation against the exact same-denominator M1/M2 packets, sign crossings, threshold ordering, window mass, family-level cross-ray capacity, and the scalar-versus-energy distinction.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0823_full_proof_strategy.md",
+          "rounds/codex-managed/gc-w7-16-top-shell-determinant-residue-zero-mode-gate/blind_statement.md",
+          "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/reviews/hostile_determinant_residue_gram_addendum.md",
+          "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/synthesis.md"
+        ],
+        "required_controls": [
+          "literal_top_shell_dictionary",
+          "physical_Mobius_reassembly",
+          "periodic_BV_separation_before_Fourier",
+          "shifted_resonant_mode_mod_4a",
+          "M1_same_denominator_alignment",
+          "M2_positive_numerator_alignment",
+          "M2_sign_crossing_packet",
+          "resonant_window_mass",
+          "threshold_equality_and_owner_ledger",
+          "scalar_vs_positive_energy",
+          "per_ray_vs_cross_ray_capacity",
+          "no_global_or_M9_promotion"
+        ],
+        "required_output": [
+          "A seven-section hostile analytic report.",
+          "An exact seam matrix and at least one literal aligned-packet calculation.",
+          "Certification, scope correction, or rigorous no-go.",
+          "No graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/gc-w7-16-top-shell-determinant-residue-zero-mode-gate/reports/resonant_packet_cross_ray_hostile_audit.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "ordering",
+        "requirement": "No residue Fourier expansion precedes physical Mobius and Stieltjes reassembly or the periodic/BV separation lemma."
+      },
+      {
+        "id": "arithmetic",
+        "requirement": "M1 denominator carriers and M2 numerator characters are pulled through n=aq-bp in their literal coordinates."
+      },
+      {
+        "id": "resonance",
+        "requirement": "The shifted physical resonant mode and same-denominator aligned packets are both computed."
+      },
+      {
+        "id": "owners",
+        "requirement": "Threshold equality, support births and deaths, stars, determinant diagonal, sign crossings, and half-open top-shell ownership are charged once."
+      },
+      {
+        "id": "directionality",
+        "requirement": "A single actual family scalar is not replaced by an arbitrary positive energy or operator norm."
+      },
+      {
+        "id": "capacity",
+        "requirement": "Every bank displays its exponent relative to 35/48, 31/48, 27/48, and 24/48 and identifies whether the gain is per-ray or cross-ray."
+      }
+    ],
+    "closing_assessment": {
+      "decision": "degenerate_promote_fixed_lift_support_mask_kernel_and_variable_modulus_cross_ray_obstruction",
+      "graph_mutation": true,
+      "terminal_label": "degenerate",
+      "main_result": "The fixed-p primitive support masks have exact divisor-cost Gauss-times-Ramanujan and Ramanujan transforms, but the weighted physical factorization, interlaced BV ledger, and actual cross-ray scalar estimate remain open.",
+      "resulting_graph_sha256": "328a885e71415a8e3509466c46849129248594334dc17df8940bbcd3f12a0fe9",
+      "exponent_change": false,
+      "next_round": 132
+    }
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "23e7bfacbf6abc5582769fbe8d427cbca2379e1d265b99df21d93a65ec504825",
+    "generated_at": "2026-08-23T17:58:00+08:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

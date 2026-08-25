@@ -1,197 +1,218 @@
 {
   "schema_version": 1,
-  "round_index": 130,
-  "round_type": "gc_w7_16_post_inner_outer_bilinear_gate",
-  "campaign_id": "gc-w7-16-post-inner-outer-bilinear-gate",
-  "title": "W=Y^(7/16) post-inner numerator/outer-ray bilinear gate",
+  "round_index": 163,
+  "round_type": "m9_m2_hard_top_t1_near_square_divisor_involution_gate",
+  "campaign_id": "m9-m2-hard-top-t1-near-square-divisor-involution-gate",
+  "title": "M2 hard-TOP t=1 near-square divisor involution gate",
   "status": "complete",
   "max_concurrency": 3,
   "coordinator": "Codex",
-  "starting_graph_sha256": "354f5ca462467d091a9a50c8dbc1173ffba56516963274f9fc232ea11890d20e",
+  "starting_graph_sha256": "700182f4dcf805e7f5ae74ca8ac49e88e4025471d9def1746a832c45fb6d2358",
   "resource_policy": {
     "analytical_algebraic_minimum_percent": 100,
     "numerical_experimental_maximum_percent": 0,
     "planned_numerical_percent": 0,
-    "literature_policy": "No external theorem is assumed. Consult a source only for an exact bilinear or large-sieve inequality whose hypotheses match the literal determinant kernel and actual characters."
+    "literature_policy": "Use primary literature only if a claimed arithmetic density, divisor matching, or exponential-sum theorem becomes promotion-relevant. Derive the exact physical involution, unmatched set, profiles, endpoints, and power ledger first."
   },
   "target_obligations": [
-    "GC-W7-16-complete-all-shell-curvature-saving",
-    "GC-W7-16-actual-reduced-determinant-correlation"
+    "M9-M2-top-endpoint-density-discrepancy-energy",
+    "M9-M2-top-endpoint-signed-cone",
+    "M9-M2-hard-top-truncated-divisor-energy-and-radical-control",
+    "M9-M2-hard-top-product-fibre-transform-self-return",
+    "M9-M2-hard-top-radical-long-channel-exact-collision-control",
+    "M9-M2-hard-top-radical-frequency-common-test-source-obstruction",
+    "M9-M2-hard-top-t1-character-poisson-product-collar-obstruction"
   ],
   "frozen_target": {
-    "question": "After the Round-129 K_rho/L inner reciprocal/lift theorem, can one obtain a genuine signed contraction across the remaining reduced-numerator increments and/or outer rays, or does the exact outer dual, phase alignment, or unit-Hessian geometry force a capacity self-return?",
-    "reference_formula": "For one half-open B-shell, O_(i,B)^+=sum_(r=(a,b)) A_i(r)e(ca/(kappa_i b)) F_i(r), where F_i(r)=sum_(a') sum_(rho|a') sum_(eta) S_(i,r,a',rho,eta), and every S retains its exact threshold/plateau formula. Accepted bounds are sup|A_i|<<L^(-1)Y^epsilon, sum_r|A_i(r)|^2<<D/L Y^epsilon, #r<<LD, #a'<<L, and |S|<<K_B/L Y^epsilon. Outside triangles give D K_B=Y^(35/48), while target is D=Y^(1/2). Test a direct bilinear estimate or the target-scale outer energy sum_r|F_i(r)|^2<<LD Y^epsilon without replacing the actual coefficients by an arbitrary matrix family.",
+    "question": "Can the actual squarefree t=1 product coefficient be bounded at target strength before Mobius separation by an exact p congruent 3 modulo 4 prime toggle, multi-prime exchange, complementary-divisor pairing, or signed boundary decomposition; or does the moving near-square window, parity, profile asymmetry, unmatched-set capacity, arbitrary-real centre, or hard-edge leakage repay the full L^(1/2-o(1)) gain?",
+    "reference_formula": "S_(L,1)=sum_(N asymp L^2) mu^2(N)(L^2/N)^(3/4)e(J sqrt(N)) b_(L,X)(N), where b_(L,X)(N)=sum_(d|N,d odd,sqrt(N)<=d<=2sqrt(N)) chi4(d)eta_L(d)Phi(d/(H+1))W(sqrt(q_X)d/(2sqrt(N))), with the exact half-open shell, cone, even-N branch, profiles, floors, stars, endpoints, and zero extension retained. The target is |S_(L,1)| <<_epsilon L^(3/2)X^epsilon.",
     "quantities": [
-      "W=Y^(7/16), D=Y^(1/2), L=Y^(1/6), D/L<=B<=D",
-      "Q_B=min(B,BD/(WL)), lambda_B=YL/(DB^2), K_B=min(Q_B,Q_B sqrt(lambda_B)+lambda_B^(-1/2))=Y^(11/48+o(1))",
-      "current complete block D K_B=Y^(35/48+epsilon), target D=Y^(1/2+epsilon), missing factor K_B=Y^(11/48)",
-      "outer ray energy sum|A_i|^2<<D/L and pointwise scale L^(-1) are exact actual-coefficient facts",
-      "a'=a+p lies in O(L) literal increments, with determinant taper, M1/M2 characters, Mobius divisors, threshold data, and shell owners retained",
-      "a strict fixed-power saving is bankable, but no global pointwise improvement follows until the complete correlation exponent drops below 9/16"
+      "J=sqrt(X), y=floor(J), q_X=X/y^2, H=floor(y X^(-1/4)), and 1<<L<<H<=J^(1/2).",
+      "The product N is squarefree because the t=1 factors d1,d2 are squarefree and coprime. The physical divisor d=d1 is odd; N may be even through d2.",
+      "The upper near-square divisor window has multiplicative width two. A single odd prime p congruent 3 modulo 4 reverses chi4 but has p>=3.",
+      "Complementation sends the upper window to an excluded lower window. For odd N it changes the character by chi4(N). For even N=2M, the physical complement N/d is even while the odd-part character complement M/d=N/(2d) lies in [sqrt(N)/4,sqrt(N)/2].",
+      "A two-prime exchange may have ratio close to one and is not ruled out by the single-toggle control. Its global matching, character sign, profile difference, multiplicity, and unmatched set must be proved.",
+      "The positive physical capacity is L^(2+o(1)); the target requires a signed L^(1/2-o(1)) gain at every allowed endpoint scale.",
+      "No t=1 result transfers automatically to the remaining few-point channels, full hard TOP, smooth M2 packets, M9-M2, M9, the bridge, or a global exponent."
     ]
   },
   "completion_criteria": [
-    "Write the exact post-inner M1/M2 bilinear sum before either the a'-triangle or outer-ray triangle, preserving both outer and inner complete-lift coefficients, centre phases, determinant taper, threshold representation, and character placement.",
-    "Derive the exact dual or Gram form of the proposed outer energy and test whether it is equivalent to a stronger positive norm rather than the scalar signed target.",
-    "Construct a phase-aligned and coefficient-blind false control at the same support and energy scales; identify the exact physical property required to exclude it.",
-    "Attack the a'=a+p sum jointly with the reciprocal variable, including every product-window resonance and M1/M2 quarter-character orientation, before taking a modulus.",
-    "Audit the known unit-Hessian two-dimensional transform return and show precisely whether the proposed mechanism is noninvertible or merely another canonical self-return.",
-    "Charge Mobius progressions, strict/weak/star faces, threshold equalities, numerator support exits, cross-shell owners, and the equal-ray diagonal exactly once.",
-    "Either prove a complete target-scale outer inequality, prove a strict fixed-power saving with exact first residual, or establish the smallest rigorous no-go and park this interface.",
-    "Do not infer a global exponent improvement unless the complete fixed-block correlation exponent is below 9/16; make no M9 or quarter promotion."
+    "Independently rederive the exact squarefree N-grouping, upper near-square divisor interval, odd-divisor condition, even-N branch, normalization, profiles, endpoints, and zero extension.",
+    "Classify a single p congruent 3 modulo 4 toggle exactly and prove whether both paired divisors can remain in the physical window.",
+    "Test all genuinely different two-prime exchanges that can preserve the window, including residue-class sign, global matching consistency, cycles, multiplicities, and unmatched divisors.",
+    "Derive the complementary-divisor identity separately for odd and even N, retaining the swapped profile and excluded lower interval.",
+    "If full-divisor vanishing or a representable sector is used, prove the exact implication and restore its weighted count; logarithmic sparsity cannot be reported as a polynomial saving.",
+    "Charge every moving-window crossing, profile asymmetry, shell edge, floor, star, endpoint, and arbitrary-real-centre phase before a positive norm.",
+    "Prove the t=1 target, a complete nontrivial arithmetic sector at target strength, or the smallest exact divisor-involution leakage obstruction.",
+    "Close under exactly one label: hard_top_t1_near_square_divisor_target, strict_t1_prime_toggle_sector, or hard_top_t1_divisor_involution_leakage_no_go."
   ],
   "controls": [
-    "literal_post_inner_dictionary",
-    "outer_ray_and_increment_counts",
-    "outer_l2_dual_or_Gram",
-    "phase_aligned_false_control",
-    "actual_character_placement",
-    "M1_M2_increment_orientation",
-    "product_window_resonance_return",
-    "unit_Hessian_sequential_transform_return",
-    "scalar_vs_positive_energy",
-    "Mobius_threshold_and_owner_ledger",
-    "strict_weak_star_and_support_faces",
-    "capacity_before_and_after",
-    "no_exponent_or_M9_promotion"
+    "literal_squarefree_product_grouping",
+    "odd_divisor_and_even_N_branch",
+    "full_divisor_vs_truncated_window",
+    "single_prime_toggle_domain",
+    "two_prime_exchange_matching",
+    "complementary_divisor_orientation",
+    "character_sign_and_parity",
+    "profile_window_and_endpoint_leakage",
+    "representable_sector_density_power",
+    "arbitrary_real_centre_phase",
+    "missing_L_half_power",
+    "physical_coefficient_vs_diagnostic",
+    "remaining_few_point_and_downstream_scope"
   ],
   "tasks": [
     {
-      "id": "blind_outer_bilinear_dual_feasibility",
+      "id": "literal_near_square_divisor_involution_attack",
+      "role": "discovery",
+      "access_mode": "selected_context",
+      "status": "completed",
+      "target": "Attack the complete physical t=1 product coefficient before Mobius separation. Prove a target estimate or complete nontrivial sector using a prime toggle, multi-prime exchange, complement, or another exact signed divisor matching; otherwise derive the first exact leakage obstruction. Do not stop at the known single-toggle observation: test all window-preserving multi-prime exchanges and restore literal profiles and powers.",
+      "context_files": [
+        "protocol.md",
+        "state/proof_obligations.yml",
+        "state/active_campaign.yml",
+        "strategy/round163_m2_hard_top_t1_near_square_divisor_involution_strategy.md",
+        "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/barrier_packet.md",
+        "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/candidates/conductor_round163_divisor_involution_seed.md",
+        "proofs/kernels/m9_m2_hard_top_t1_character_poisson_product_collar_obstruction.md",
+        "rounds/codex-managed/m9-m2-hard-top-t1-close-factor-bilinear-gate/synthesis.md",
+        "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/synthesis.md",
+        "proofs/kernels/m9_m2_hard_top_radical_long_channel_collision_common_test_obstruction.md"
+      ],
+      "required_controls": [
+        "literal_squarefree_product_grouping",
+        "odd_divisor_and_even_N_branch",
+        "full_divisor_vs_truncated_window",
+        "single_prime_toggle_domain",
+        "two_prime_exchange_matching",
+        "complementary_divisor_orientation",
+        "character_sign_and_parity",
+        "profile_window_and_endpoint_leakage",
+        "arbitrary_real_centre_phase",
+        "missing_L_half_power",
+        "physical_coefficient_vs_diagnostic",
+        "remaining_few_point_and_downstream_scope"
+      ],
+      "required_output": [
+        "A seven-section analytic report satisfying the repository report contract.",
+        "The exact divisor matching, cycle, unmatched-set, profile, endpoint, and power ledger.",
+        "A target theorem, complete nontrivial sector, or smallest rigorous scoped leakage obstruction.",
+        "Write only the assigned report and make no graph or shared-state edit."
+      ],
+      "report_path": "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reports/literal_near_square_divisor_involution_attack.md"
+    },
+    {
+      "id": "blind_near_square_divisor_rederivation",
       "role": "blind_rederiver",
       "access_mode": "statement_only",
-      "status": "completed_with_exact_dual_no_go_and_post_unmask_gram_review",
-      "target": "Compute the exact outer dual/Gram implied by the supplied post-inner bilinear statement. Prove the proposed target-scale outer energy, give a support-matched phase-aligned countermodel, or state the sharp additional actual-family property required.",
+      "status": "completed",
+      "target": "Starting only from the frozen statement, independently derive the product coefficient and test all prime-toggle, multi-prime, and complementary-divisor involutions. Decide whether a self-contained target theorem, complete sector, or exact leakage obstruction is available, with all profiles, endpoints, and powers restored.",
       "context_files": [
-        "problems/gauss_circle.md",
-        "state/control_models.md",
-        "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/blind_statement.md"
+        "protocol.md",
+        "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/blind_statement.md"
       ],
       "excluded_context": [
         "state/proof_obligations.yml",
         "state/best_proof_draft.md",
+        "state/active_campaign.yml",
         "all strategy files",
-        "all Round-95 through Round-130 nonblind artifacts",
-        "all Round-130 sibling reports"
+        "all Round-163 nonblind artifacts",
+        "all Round-163 sibling reports",
+        "the Round-163 conductor seed",
+        "all Round-162, Round-161, and Round-137 reports, candidates, reviews, kernels, and syntheses"
       ],
       "required_controls": [
-        "outer_l2_dual_or_Gram",
-        "phase_aligned_false_control",
-        "outer_ray_and_increment_counts",
-        "scalar_vs_positive_energy",
-        "unit_Hessian_sequential_transform_return",
-        "capacity_before_and_after",
-        "no_exponent_or_M9_promotion"
+        "literal_squarefree_product_grouping",
+        "odd_divisor_and_even_N_branch",
+        "full_divisor_vs_truncated_window",
+        "single_prime_toggle_domain",
+        "two_prime_exchange_matching",
+        "complementary_divisor_orientation",
+        "character_sign_and_parity",
+        "profile_window_and_endpoint_leakage",
+        "representable_sector_density_power",
+        "arbitrary_real_centre_phase",
+        "missing_L_half_power",
+        "physical_coefficient_vs_diagnostic",
+        "remaining_few_point_and_downstream_scope"
       ],
       "required_output": [
-        "A seven-section statement-only report.",
-        "An exact dual/Gram calculation and support-matched control.",
-        "A proof, minimal repaired inequality, or rigorous no-go.",
-        "No graph or shared-state edit."
+        "A seven-section statement-only analytic report satisfying the repository report contract.",
+        "An independent exact matching, leakage, parity, profile, and target-power derivation.",
+        "A target theorem, complete nontrivial sector, or first rigorous scoped obstruction.",
+        "Write only the assigned report and make no graph or shared-state edit."
       ],
-      "report_path": "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/reports/blind_outer_bilinear_dual_feasibility.md"
+      "report_path": "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reports/blind_near_square_divisor_rederivation.md"
     },
     {
-      "id": "actual_numerator_increment_recombination_attack",
-      "role": "discovery",
+      "id": "prime_toggle_complement_leakage_hostile_audit",
+      "role": "barrier_no_go",
       "access_mode": "selected_context",
-      "status": "completed_with_BKB_shell_refinement_and_inversion_return",
-      "target": "Recombine the exact a'=a+p increments with the reciprocal variable before modulus. Prove a target or strict saving beyond D K_B, or isolate the first exact product-window or character-alias return, while retaining the Round-129 threshold theorem inside the joint expression.",
+      "status": "completed",
+      "target": "Hostilely classify every proposed sign-reversing divisor involution. Prove or refute global matchings based on one-prime toggles, two-prime exchanges, complement, or full-divisor vanishing. Construct exact semiprime and multi-prime controls, quantify unmatched/profile leakage, and compare the restored capacity with the missing L^(1/2-o(1)).",
       "context_files": [
         "protocol.md",
         "state/proof_obligations.yml",
         "state/active_campaign.yml",
-        "rounds/codex-managed/gc-strict-sub-one-third-cluster-source-fork/reports/actual_rational_cluster_attack.md",
-        "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/reports/actual_character_determinant_attack.md",
-        "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/reports/graded_determinant_long_lift_feasibility.md",
-        "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/reports/actual_stieltjes_reciprocal_sum_attack.md",
-        "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/reviews/conductor_round129_direct_curvature_adjudication.md",
-        "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/synthesis.md"
+        "strategy/round163_m2_hard_top_t1_near_square_divisor_involution_strategy.md",
+        "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/barrier_packet.md",
+        "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/candidates/conductor_round163_divisor_involution_seed.md",
+        "proofs/kernels/m9_m2_hard_top_t1_character_poisson_product_collar_obstruction.md",
+        "rounds/codex-managed/m9-m2-hard-top-t1-close-factor-bilinear-gate/synthesis.md",
+        "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/synthesis.md",
+        "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/candidates/conductor_round137_product_fibre_energy_and_self_return.md",
+        "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/reviews/conductor_round137_product_fibre_adjudication.md"
       ],
       "required_controls": [
-        "literal_post_inner_dictionary",
-        "outer_ray_and_increment_counts",
-        "actual_character_placement",
-        "M1_M2_increment_orientation",
-        "product_window_resonance_return",
-        "unit_Hessian_sequential_transform_return",
-        "Mobius_threshold_and_owner_ledger",
-        "strict_weak_star_and_support_faces",
-        "capacity_before_and_after",
-        "no_exponent_or_M9_promotion"
+        "literal_squarefree_product_grouping",
+        "odd_divisor_and_even_N_branch",
+        "full_divisor_vs_truncated_window",
+        "single_prime_toggle_domain",
+        "two_prime_exchange_matching",
+        "complementary_divisor_orientation",
+        "character_sign_and_parity",
+        "profile_window_and_endpoint_leakage",
+        "representable_sector_density_power",
+        "arbitrary_real_centre_phase",
+        "missing_L_half_power",
+        "physical_coefficient_vs_diagnostic",
+        "remaining_few_point_and_downstream_scope"
       ],
       "required_output": [
-        "A seven-section analytic report.",
-        "The exact p-v-threshold formula before every outside modulus.",
-        "A target theorem, strict saving plus first residual, or exact self-return/no-go.",
-        "No graph or shared-state edit."
+        "A seven-section hostile analytic report satisfying the repository report contract.",
+        "Exact countermodels or a proved global matching, with the full unmatched-set and power ledger.",
+        "A target theorem, complete nontrivial sector, or smallest precise route-scoped no-go.",
+        "Write only the assigned report and make no graph or shared-state edit."
       ],
-      "report_path": "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/reports/actual_numerator_increment_recombination_attack.md"
-    },
-    {
-      "id": "outer_ray_bilinear_hostile_audit",
-      "role": "seam_reviewer",
-      "access_mode": "selected_context",
-      "status": "completed_with_resolved_gram_resonance_and_transform_no_go",
-      "target": "Hostilely test every proposed post-inner outer contraction against actual character placement, phase alignment, positive-energy strengthening, product-window resonances, unit-Hessian return, and exact owners. Certify only a literal scalar gain.",
-      "context_files": [
-        "protocol.md",
-        "state/proof_obligations.yml",
-        "state/active_campaign.yml",
-        "rounds/codex-managed/gc-w7-16-actual-determinant-fibre-gate/reviews/conductor_round117_actual_savings.md",
-        "rounds/codex-managed/full-proof-frontier-inequality-selection-gate/reports/graded_determinant_long_lift_feasibility.md",
-        "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/reports/blind_structured_v2_curvature_feasibility.md",
-        "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/reports/actual_stieltjes_reciprocal_sum_attack.md",
-        "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/reviews/post_blind_absolute_curvature_outer_ledger.md",
-        "rounds/codex-managed/gc-w7-16-joint-stieltjes-reciprocal-curvature-gate/synthesis.md"
-      ],
-      "required_controls": [
-        "literal_post_inner_dictionary",
-        "outer_l2_dual_or_Gram",
-        "phase_aligned_false_control",
-        "actual_character_placement",
-        "M1_M2_increment_orientation",
-        "product_window_resonance_return",
-        "unit_Hessian_sequential_transform_return",
-        "scalar_vs_positive_energy",
-        "Mobius_threshold_and_owner_ledger",
-        "strict_weak_star_and_support_faces",
-        "capacity_before_and_after",
-        "no_exponent_or_M9_promotion"
-      ],
-      "required_output": [
-        "A seven-section hostile review.",
-        "A seam matrix and exact aligned or resonance control.",
-        "Certification, strict scope restriction, or rigorous no-go.",
-        "No graph or shared-state edit."
-      ],
-      "report_path": "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/reports/outer_ray_bilinear_hostile_audit.md"
+      "report_path": "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reports/prime_toggle_complement_leakage_hostile_audit.md"
     }
   ],
   "review_seams": [
     {
-      "id": "dictionary",
-      "requirement": "Both complete ray coefficients, the a' increments, every threshold, the determinant taper, and all phases are written before an outer norm."
+      "id": "literal_product_coefficient_and_parity",
+      "requirement": "Verify the N-grouping, squarefree bijection, odd divisor, even-N branch, cone, normalization, profiles, floors, stars, endpoints, and zero extension."
     },
     {
-      "id": "duality",
-      "requirement": "The exact dual or Gram of every proposed outer energy is computed, and a stronger positive norm is not confused with the scalar target."
+      "id": "involution_matching_and_leakage",
+      "requirement": "Verify every one- and multi-prime matching domain, character sign, cycle consistency, multiplicity, complement orientation, unmatched set, and profile difference."
     },
     {
-      "id": "arithmetic",
-      "requirement": "Actual M1/M2 characters and Mobius congruences remain in their literal variables until any claimed cancellation is obtained."
+      "id": "power_and_physical_scope",
+      "requirement": "Restore all L-H-J-X powers, distinguish a model from the physical coefficient, and require the missing L^(1/2-o(1)) after all leakage."
     },
     {
-      "id": "resonance",
-      "requirement": "Product-window near integers, phase-aligned controls, and every two-dimensional stationary alias are priced."
-    },
-    {
-      "id": "owners",
-      "requirement": "Threshold equality, support exits, stars, diagonal, and half-open shells are charged once."
-    },
-    {
-      "id": "capacity",
-      "requirement": "Every proposed norm displays its exact power relative to current D K_B, target D, and the 9/16 global-improvement threshold."
+      "id": "downstream_graph_scope",
+      "requirement": "Prevent transfer from a t=1 theorem or no-go to remaining few-point channels, full hard TOP, smooth packets, M9-M2, M9, the bridge, or either exponent without explicit connectors."
     }
-  ]
+  ],
+  "closing_assessment": {
+    "decision": "promote_close_opposite_prime_exchange_sector",
+    "graph_mutation": true,
+    "terminal_label": "strict_t1_prime_toggle_sector",
+    "main_result": "A canonical close opposite-character prime exchange proves the complete exactly-one incidence sector at O_kappa(L^(3/2)), uniformly in the real centre, with literal profile and hard-boundary leakage charged. No eligible-pair density, residual t=1 estimate, hard-TOP parent, downstream theorem, or exponent improvement follows.",
+    "resulting_graph_sha256": "81690ebb72b0dedd99bdb6c6127f947df696a901a22af3f65ac8738209125306",
+    "exponent_change": false
+  },
+  "next_round": 164
 }

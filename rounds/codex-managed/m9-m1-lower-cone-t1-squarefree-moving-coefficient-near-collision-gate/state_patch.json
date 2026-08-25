@@ -1,0 +1,222 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-lower-cone-t1-squarefree-moving-coefficient-small-wrap-reduction",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Exact two-row incidence and target-safe fixed-wrap moving-coefficient collar",
+        "status": "proved_internal",
+        "statement_tex": "Let R=X^(1/4), N=floor(X), DE asymp M<=R^2, D<=sqrt(M), Q=2sqrt(ND/E), and retain the exact Round-149 compressed row. For d=eta m with m=d_o odd squarefree and L_i=t_i s_i^2, expanding a_i|t_i, c_i=t_i/a_i, u_i, and v_i gives the exact two-row mask 1_(F|m)1_((m,P)=1)=1_((F,P)=1) sum_(z|P)mu(z)1_(Fz|m), where F=lcm(a_1u_1,a_2u_2) and P=rad(c_1c_2s_1s_2v_1v_2); both exact prefixes and sampled profiles remain joint row-cell functions. The fixed-(L_1,L_2) incidence projective norm is X^epsilon, and uniformly in every finite prefix sum_L |B_(d,U)(L)|/sqrt(L)<<X^epsilon. For q_i=hr_i, (r_1,r_2)=1, delta=L_1r_2-L_2r_1, and centered rho=Ndelta-khr_1r_2, the complete coefficient-weighted absolute mass of 0<|rho|<=hr_1r_2/D in each fixed wrap class k is <<DQX^epsilon after all rows. Hence any O(1+R^2/Q)=O(1+sqrt(M)/D) wrap classes, including the complete k=0 collar and a symmetric small-wrap packet, cost <<R^2DX^epsilon. If M is bounded absolutely, the actual Round-148 sampled profile has bounded q-variation on its fixed-scale support and a weighted second-derivative estimate gives |G_U(d)|<<RX^epsilon, so the entire transformed bottom-scale row has energy <<R^2DX^epsilon. The growing-M large-wrap collar and growing-M generic complement remain open.",
+        "dependencies": [
+          "M9-M1-lower-cone-t1-squarefree-gcd-lift-compression-reduction"
+        ],
+        "implies": [
+          "M9-M1-global-lower-radial-signed-estimate"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/reports/moving_coefficient_two_row_expansion_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/candidates/conductor_round150_small_wrap_collar_and_large_wrap_boundary.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/reviews/blind_fixed_wrap_lemma_review.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/reviews/independent_conductor_round150_math_review.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/reviews/source_conductor_round150_final.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/reviews/conductor_round150_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/controls/conductor_round150_controls.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/reports/blind_nonexact_correlation_feasibility.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Exploit the literal character and shifted-factor structure jointly across the growing-M wrap band outside a target-safe packet; keep both prefixes, profiles, incidence masks, common factors, and the D=1,L=1 reciprocal test."
+      },
+      {
+        "id": "M9-M1-lower-cone-t1-squarefree-large-wrap-collar-obstruction",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Growing-M large-wrap shifted-factor and profile-hypothesis obstruction",
+        "status": "proved_internal",
+        "statement_tex": "In the nonexact collar one has the exact identities (NL_1-khr_1)(NL_2+khr_2)=N^2L_1L_2+kh rho, r_2(NL_1-khr_1)=NL_2r_1+rho, and r_1(NL_2+khr_2)=NL_1r_2-rho. Both factors are positive on support, including q_i|N cases. For fixed (L_1,L_2,h,k,rho) with k nonzero, divisor recovery gives at most X^epsilon candidate pairs, but separately summing all legal h,k,rho has adverse raw capacity NL_1L_2QX^epsilon/D, larger than the trivial L_1L_2Q^2 pair capacity by N/(DQ) asymp R^2sqrt(M)/D^2>=R. The k=0 class has its separate determinant or fixed-wrap owner. This is a no-go only for per-shift absolute divisor summation and is not a signed lower bound. The target-safe fixed-wrap packet has size O(1+R^2/Q), whereas the full wrap range has size N/Q and is larger by order R^2. At D=1,L_1=L_2=1 the growing-M residual is an actual chi_4-weighted reciprocal sum with no row average. A statement-only countermodel also proves that boundedness and pointwise smoothness of an otherwise arbitrary profile cannot imply the full collar theorem; it does not refute the actual profile or the absolute fixed-wrap count. No audited existing shifted-divisor, large-sieve, or Kloosterman-fraction theorem directly matches the joint large-wrap coefficient. The obstruction is scoped to current proof placements, not an impossibility theorem for a joint signed estimate or further exact recombination.",
+        "dependencies": [
+          "M9-M1-lower-cone-t1-squarefree-moving-coefficient-small-wrap-reduction",
+          "M9-M1-lower-cone-t1-squarefree-gcd-lift-energy-obstruction",
+          "M9-M1-lower-cone-t1-squarefree-reciprocal-dispersion-obstruction"
+        ],
+        "implies": [],
+        "blockers": [],
+        "source_card": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/reports/variable_row_collar_source_audit.md",
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/reports/moving_coefficient_two_row_expansion_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/reports/blind_nonexact_correlation_feasibility.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/reports/variable_row_collar_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/candidates/conductor_round150_small_wrap_collar_and_large_wrap_boundary.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/reviews/blind_fixed_wrap_lemma_review.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/reviews/independent_conductor_round150_math_review.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/reviews/source_conductor_round150_final.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/reviews/conductor_round150_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/controls/conductor_round150_controls.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Estimate all growing-M large wraps jointly before absolute shift summation, beginning with the literal D=1,L=1 character reciprocal endpoint and then reinstating incidence and row averaging."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-lower-cone-t1-squarefree-gcd-lift-compression-reduction",
+        "implies_added": [
+          "M9-M1-lower-cone-t1-squarefree-moving-coefficient-small-wrap-reduction"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/candidates/conductor_round150_small_wrap_collar_and_large_wrap_boundary.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/reviews/blind_fixed_wrap_lemma_review.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Use the exact two-row incidence and half-weight norm. Exact phases, every fixed wrap, target-sized small-wrap packets, and bounded M are owned; attack the growing-M large-wrap collar and generic complement."
+      },
+      {
+        "id": "M9-M1-lower-cone-t1-squarefree-gcd-lift-energy-obstruction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/reports/moving_coefficient_two_row_expansion_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/reports/blind_nonexact_correlation_feasibility.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/reports/variable_row_collar_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/reviews/conductor_round150_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Round 150 owns every fixed wrap and a target-sized packet. The first collar obstruction is now the growing-M large-wrap signed correlation; the growing-M generic sector remains separate."
+      },
+      {
+        "id": "M9-M1-lower-cone-t1-squarefree-reciprocal-dispersion-obstruction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/reports/moving_coefficient_two_row_expansion_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/reports/blind_nonexact_correlation_feasibility.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/candidates/conductor_round150_small_wrap_collar_and_large_wrap_boundary.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Keep the old unrecombined factor-R diagonal placement parked. After gcd-lift compression, exact phases and a target-sized fixed-wrap packet are owned; the first reciprocal collar seam is the actual growing-M large-wrap sum."
+      },
+      {
+        "id": "M9-M1-lower-cone-squarefree-linearization-obstruction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/reports/moving_coefficient_two_row_expansion_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/reviews/independent_conductor_round150_math_review.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The exact two-row divisibility masks now have low projective norm, but the two prefixes and profiles remain joint. Any large-wrap linearization must preserve those functions and chi_4 through the signed shift aggregation."
+      },
+      {
+        "id": "M9-M1-global-lower-radial-signed-estimate",
+        "dependencies_added": [
+          "M9-M1-lower-cone-t1-squarefree-moving-coefficient-small-wrap-reduction",
+          "M9-M1-lower-cone-t1-squarefree-large-wrap-collar-obstruction"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/reports/moving_coefficient_two_row_expansion_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/reports/blind_nonexact_correlation_feasibility.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/reports/variable_row_collar_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/reviews/conductor_round150_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/synthesis.md"
+          ]
+        },
+        "next_action": "For t=1, prove the growing-M large-wrap collar and generic complement after the owned exact and fixed-wrap ranges; every t>=2 layer and the independent Round-138 cross owner remain open."
+      }
+    ],
+    "correct_rejected": [],
+    "reject": [
+      {
+        "id": "Round150-exact-two-row-arithmetic-is-an-arbitrary-matrix",
+        "reason": "The divisibility and coprimality masks linearize exactly through F=lcm(a_1u_1,a_2u_2), P=rad(c_1c_2s_1s_2v_1v_2), and z|P with X^epsilon projective norm. Only the two literal prefixes and sampled profiles remain joint."
+      },
+      {
+        "id": "Round150-only-k-zero-is-target-safe",
+        "reason": "For every fixed centered k, the collar confines one reduced denominator to an O(1)-length interval after the other is fixed, giving DQX^epsilon weighted mass. Any O(1+R^2/Q) wrap classes are target-safe."
+      },
+      {
+        "id": "Round150-bounded-smooth-profile-alone-proves-bottom-scale-cancellation",
+        "reason": "A statement-only finite interpolation can align an arbitrary bounded smooth profile with chi_4 and the reciprocal phase. The bounded-M proof uses the quantitative variation ledger of the actual Round-148 profile, not boundedness alone."
+      },
+      {
+        "id": "Round150-a-zero-shifted-factor-occurs-inside-the-collar",
+        "reason": "The exact relations r_2(NL_1-khr_1)=NL_2r_1+rho and r_1(NL_2+khr_2)=NL_1r_2-rho make both factors positive because |rho| is smaller by Q/(DN). This includes denominator-divides-N cases."
+      },
+      {
+        "id": "Round150-fixed-shift-divisor-recovery-closes-the-full-collar",
+        "reason": "Although each fixed nonzero h,k,rho has X^epsilon divisor multiplicity, separate summation over all shifts has adverse raw capacity NL_1L_2Q/D and loses at least R against trivial pair capacity. Joint signed aggregation is still required."
+      },
+      {
+        "id": "Round150-the-target-safe-wrap-packet-exhausts-all-centered-wraps",
+        "reason": "The owned packet has size O(1+R^2/Q), while the full centered range has size N/Q, larger by order N/R^2 asymp R^2. Growing-M large wraps remain."
+      },
+      {
+        "id": "Round150-bounded-M-second-derivative-placement-extends-to-growing-M",
+        "reason": "At bounded M the actual profile has fixed-scale variation and the second-derivative bound is target-sized. The same placement has an RM^(1/4) term for growing M, so no all-scale extension follows."
+      },
+      {
+        "id": "Round150-adverse-all-shift-divisor-capacity-is-a-signed-lower-bound",
+        "reason": "The all-shift calculation is an upper-capacity limitation of separate absolute divisor summation, not a lower bound for the literal chi_4-weighted energy."
+      },
+      {
+        "id": "Round150-small-wrap-reduction-proves-the-full-collar-t1-M1-or-exponent",
+        "reason": "The growing-M large-wrap collar, growing-M generic sector, signed t=1 scalar, every t>=2 layer, cross owner, remaining M1 and M2 owners, endpoint, M9, bridge, and quarter target remain open."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "Round 150 proves strict t=1 moving-row energy ranges but not the growing-M large-wrap or generic sectors and not the complete lower cone."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "No M2 hard-TOP, balanced, or unbalanced owner was treated."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "A bounded-M edge and fixed-wrap t=1 range are not the all-owner endpoint-uniform theorem."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain open."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The bridge remains conditional on complete M9."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The strongest internally proved global exponent remains one third."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "The separately audited external exponent remains (3292+25sqrt(1717))/13762."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The quarter target still lacks the growing-M large-wrap and generic t=1 sectors, all other M1 and M2 owners, endpoint uniformity, M9, and the final unconditional bridge."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 8,
+    "idea_quality_score": 9,
+    "state_evidence_score": 9,
+    "calibration_score": 10,
+    "reason": "Round 150 derives an exact two-row divisor-incidence layer, a new prefix-uniform half-weight coefficient norm, and a uniform fixed-wrap collar count that promotes a target-sized packet of wrap classes and the complete k=0 collar. It separately closes the actual-profile bounded-M row, verifies the shifted-factor identity and exceptional cases, and proves that absolute per-shift divisor recovery loses after full shift summation. The blind countermodel is correctly scoped to under-specified arbitrary profiles. The full growing-M collar, generic sector, scalar target, and every downstream theorem remain open."
+  }
+}

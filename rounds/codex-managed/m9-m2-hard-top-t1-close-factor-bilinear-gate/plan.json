@@ -1,0 +1,219 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 162,
+    "round_type": "m9_m2_hard_top_t1_close_factor_bilinear_gate",
+    "campaign_id": "m9-m2-hard-top-t1-close-factor-bilinear-gate",
+    "title": "M2 hard-TOP literal t=1 close-factor bilinear gate",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "8d39b06bd12357e337159473da3d4d6ec0c71d0ab3217588e4c6b5b34973b422",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "planned_numerical_percent": 0,
+      "literature_policy": "Search primary sources only after the literal character-preserving coefficient, phase geometry, dual lengths, and endpoint costs are derived. Preserve theorem numbers, coefficient hypotheses, summation ranges, smoothing requirements, character moduli, squarefree and coprime openings, absolute-value placement, and every restored L-J-H-X power."
+    },
+    "target_obligations": [
+      "M9-M2-top-endpoint-density-discrepancy-energy",
+      "M9-M2-top-endpoint-signed-cone",
+      "M9-M2-hard-top-truncated-divisor-energy-and-radical-control",
+      "M9-M2-hard-top-product-fibre-transform-self-return",
+      "M9-M2-hard-top-radical-long-channel-exact-collision-control",
+      "M9-M2-hard-top-radical-frequency-common-test-source-obstruction"
+    ],
+    "frozen_target": {
+      "question": "Can the actual chi_4-weighted t=1 squarefree close-factor scalar be bounded by L^(3/2)X^epsilon at one arbitrary fixed real centre using character-preserving Poisson, differencing, or a literal coefficient-sensitive bilinear theorem before every positive norm; or do rank-one product-phase geometry, squarefree and coprime openings, dual hyperbola collars, boundary terms, source hypotheses, or restored powers repay the full L^(1/2-o(1)) gain?",
+      "reference_formula": "S_(L,1)=sum_(d1 d2 asymp L^2, d1,d2 squarefree, (d1,d2)=1, d1 odd, d2<=d1<=4d2) chi4(d1)(L^2/(d1d2))^(3/4)eta_L(d1)Phi(d1/(H+1))W(sqrt(q_X d1/(4d2)))e(J sqrt(d1d2)), with all literal half-open supports, floors, profile entries and exits, cone endpoints, stars, and zero extension retained. The target is |S_(L,1)| <<_epsilon L^(3/2)X^epsilon.",
+      "quantities": [
+        "J=sqrt(X), y=floor(J), q_X=X/y^2, H=floor(y X^(-1/4)), and 1<<L<<H<=J^(1/2) is one half-open hard-TOP frequency block.",
+        "The t=1 radical incidence forces g=u=v=1; hence d1,d2 are squarefree, coprime, d1 is odd, d2 may be even, and both variables are asymptotic to L on the cone.",
+        "The positive or coefficient-uniform capacity is L^(2+o(1)); the target requires L^(1/2-o(1)) arithmetic signed gain.",
+        "The phase f(x,z)=J sqrt(xz) has rank-one Hessian: det Hess(f)=0. Any claim of genuine two-variable curvature must address its radial null direction.",
+        "Using chi4(x)=(e(x/4)-e(-x/4))/(2i), one-variable Poisson has stationary frequencies r=k-sigma/4 and saddle x_0=Xz/(4r^2), with transformed phase Xz/(4r); this must be compared literally with the accepted reciprocal self-return.",
+        "Two-variable stationary equations imply (k-sigma/4)ell=X/4. Finite support broadens this to a dual product collar whose width and coefficient mass must be proved rather than guessed.",
+        "No t=1 result transfers automatically to the remaining few-point channels, the hard-TOP parent, M9-M2, M9, the bridge, or a global exponent."
+      ]
+    },
+    "completion_criteria": [
+      "Independently rederive the literal t=1 coefficient from the accepted radical incidence, including squarefree and coprime restrictions, the even-d2 branch, chi4, normalization, cone, profiles, endpoints, and zero extension.",
+      "Derive the exact rank-one Hessian and the character-shifted one- and two-variable stationary equations, with all Poisson normalizations, dual ranges, degeneracies, and boundary or nonstationary pieces charged.",
+      "If squarefree or coprime conditions are opened, retain the exact Mobius coefficients, rescaled supports, character changes, multiplicities, and total summation cost before claiming cancellation.",
+      "Test whether one-variable character Poisson, complementary variables, or a B-process self-returns to an accepted reciprocal hard-TOP family and state precisely what remains if it does.",
+      "Price the dual product collar, its arithmetic multiplicity, coefficient norms, and the missing L^(1/2-o(1)) at the full allowed L-J endpoint range.",
+      "If an external theorem is invoked, give an exact primary-source theorem card and literal parameter map for the physical coefficient and endpoints.",
+      "Prove the t=1 target, prove a genuinely complete signed sector beyond the fixed-constant long-channel result, or establish the smallest rigorous character-preserving bilinear route no-go.",
+      "Close under exactly one label: hard_top_t1_close_factor_target, strict_hard_top_t1_close_factor_sector, or hard_top_t1_close_factor_bilinear_no_go."
+    ],
+    "controls": [
+      "literal_t1_coefficient_and_orientation",
+      "squarefree_coprime_even_d2_branch",
+      "chi4_preserved_before_positive_norms",
+      "product_phase_rank_one_hessian",
+      "one_variable_character_poisson_self_return",
+      "two_variable_dual_hyperbola",
+      "dual_product_collar_width_and_mass",
+      "mobius_opening_and_rescaled_support_cost",
+      "hard_cone_profiles_floors_endpoints",
+      "missing_L_half_power",
+      "source_theorem_literal_match",
+      "physical_coefficient_vs_diagnostic",
+      "remaining_few_point_and_downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "literal_t1_character_poisson_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "assigned",
+        "target": "Attack the complete physical t=1 scalar before every positive norm. Derive the exact character-preserving one- and two-variable Poisson or differencing formula, including squarefree and coprime restrictions, and prove the target, a complete signed sector, or the first exact self-return, dual-collar, endpoint, or restored-power obstruction.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round162_m2_hard_top_t1_close_factor_strategy.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-close-factor-bilinear-gate/barrier_packet.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-close-factor-bilinear-gate/candidates/conductor_round162_t1_poisson_seed.md",
+          "proofs/kernels/m9_m2_hard_top_radical_long_channel_collision_common_test_obstruction.md",
+          "rounds/codex-managed/m9-m2-hard-top-truncated-divisor-additive-twist-gate/synthesis.md",
+          "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/candidates/conductor_round137_product_fibre_energy_and_self_return.md",
+          "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/reviews/conductor_round137_product_fibre_adjudication.md"
+        ],
+        "required_controls": [
+          "literal_t1_coefficient_and_orientation",
+          "squarefree_coprime_even_d2_branch",
+          "chi4_preserved_before_positive_norms",
+          "product_phase_rank_one_hessian",
+          "one_variable_character_poisson_self_return",
+          "two_variable_dual_hyperbola",
+          "dual_product_collar_width_and_mass",
+          "mobius_opening_and_rescaled_support_cost",
+          "hard_cone_profiles_floors_endpoints",
+          "missing_L_half_power",
+          "physical_coefficient_vs_diagnostic",
+          "remaining_few_point_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section analytic report satisfying the repository report contract.",
+          "The literal coefficient and complete character-Poisson, dual-range, collar, boundary, and power ledger.",
+          "A target theorem, complete signed sector, or first rigorous scoped obstruction.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-hard-top-t1-close-factor-bilinear-gate/reports/literal_t1_character_poisson_attack.md"
+      },
+      {
+        "id": "blind_t1_close_factor_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "assigned",
+        "target": "Starting only from the frozen statement, independently derive the exact coefficient, character algebra, product-phase geometry, stationary and dual ranges, endpoint ledger, and target power. Decide whether a self-contained proof, complete signed sector, or exact obstruction is available.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-close-factor-bilinear-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "state/active_campaign.yml",
+          "all strategy files",
+          "all Round-162 nonblind artifacts",
+          "all Round-162 sibling reports",
+          "the Round-162 conductor seed",
+          "all Round-161 and Round-137 reports, candidates, reviews, and syntheses"
+        ],
+        "required_controls": [
+          "literal_t1_coefficient_and_orientation",
+          "squarefree_coprime_even_d2_branch",
+          "chi4_preserved_before_positive_norms",
+          "product_phase_rank_one_hessian",
+          "one_variable_character_poisson_self_return",
+          "two_variable_dual_hyperbola",
+          "dual_product_collar_width_and_mass",
+          "mobius_opening_and_rescaled_support_cost",
+          "hard_cone_profiles_floors_endpoints",
+          "missing_L_half_power",
+          "physical_coefficient_vs_diagnostic",
+          "remaining_few_point_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section statement-only analytic report satisfying the repository report contract.",
+          "An independent coefficient, parity, stationary-geometry, dual-collar, and target-power derivation.",
+          "A target theorem, complete signed sector, or first rigorous scoped obstruction.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-hard-top-t1-close-factor-bilinear-gate/reports/blind_t1_close_factor_rederivation.md"
+      },
+      {
+        "id": "t1_bilinear_source_hostile_audit",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "status": "assigned",
+        "target": "Hostilely audit primary character-sum, two-variable Poisson, bilinear, incomplete Kloosterman, and product-phase exponential-sum theorems against the exact physical scalar. Derive any needed power ledger independently and certify only a literal source-legal target or range, or the first precise theorem-hypothesis, coefficient, smoothing, endpoint, or restored-power no-match.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round162_m2_hard_top_t1_close_factor_strategy.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-close-factor-bilinear-gate/barrier_packet.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-close-factor-bilinear-gate/candidates/conductor_round162_t1_poisson_seed.md",
+          "proofs/kernels/m9_m2_hard_top_radical_long_channel_collision_common_test_obstruction.md",
+          "rounds/codex-managed/m9-m2-hard-top-truncated-divisor-additive-twist-gate/reports/square_root_spacing_source_hostile_audit.md",
+          "rounds/codex-managed/m9-m2-hard-top-truncated-divisor-additive-twist-gate/reviews/source_power_seam_review.md",
+          "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/reviews/conductor_round137_product_fibre_adjudication.md"
+        ],
+        "required_controls": [
+          "literal_t1_coefficient_and_orientation",
+          "squarefree_coprime_even_d2_branch",
+          "chi4_preserved_before_positive_norms",
+          "product_phase_rank_one_hessian",
+          "one_variable_character_poisson_self_return",
+          "two_variable_dual_hyperbola",
+          "dual_product_collar_width_and_mass",
+          "mobius_opening_and_rescaled_support_cost",
+          "hard_cone_profiles_floors_endpoints",
+          "missing_L_half_power",
+          "source_theorem_literal_match",
+          "physical_coefficient_vs_diagnostic",
+          "remaining_few_point_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section source and hostile power audit satisfying the repository report contract.",
+          "Exact primary-source theorem cards and literal parameter maps, or self-contained no-match ledgers.",
+          "A source-legal target or complete signed sector, or the first precise route-scoped obstruction.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-hard-top-t1-close-factor-bilinear-gate/reports/t1_bilinear_source_hostile_audit.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "literal_coefficient_character_and_openings",
+        "requirement": "Independently verify t=1 incidence, orientations, normalization, chi4, squarefree and coprime conditions, even d2, Mobius openings, profiles, cone, floors, endpoints, and zero extension."
+      },
+      {
+        "id": "stationary_geometry_and_dual_collar",
+        "requirement": "Verify the rank-one Hessian, all character-shifted stationary equations, dual ranges, hyperbola collar width and multiplicity, and every nonstationary and boundary contribution."
+      },
+      {
+        "id": "power_source_and_physical_scope",
+        "requirement": "Restore all L-J-H-X powers and source hypotheses, distinguish method capacity from a physical bound, and require a mechanism that fails on coefficient-uniform diagnostics."
+      },
+      {
+        "id": "downstream_graph_scope",
+        "requirement": "Prevent transfer from a t=1 theorem or no-go to remaining few-point channels, full hard TOP, M9-M2, M9, the bridge, or either global exponent without explicit connectors."
+      }
+    ],
+    "closing_assessment": null
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "8d39b06bd12357e337159473da3d4d6ec0c71d0ab3217588e4c6b5b34973b422",
+    "generated_at": "2026-08-25T13:19:44.109875+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

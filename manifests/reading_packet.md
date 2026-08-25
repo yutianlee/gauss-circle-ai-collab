@@ -1,7 +1,6 @@
 # Reading Packet
 
-Most recently generated for the now-closed campaign
-`gc-w7-16-post-inner-outer-bilinear-gate`.  No round is currently active.
+Generated after legacy round 163 in run `m9-m2-hard-top-t1-near-square-divisor-involution-gate`.
 
 ## Current Theorem Target
 
@@ -34,7 +33,7 @@ Current blockers:
 - `M9-near-collision-estimate` (proposed, historical steward `A2`): Weighted near-collision estimate for M2 fourth moment
   Next action: Do not seek universal numerator-residue cancellation. Either prove denominator-level cancellation in the two-adically locked sector or prefer a direct pointwise frequency-block estimate on the remaining (D,L) region.
 - `M9-M2-character-factor` (proved_internal, historical steward `A2`): M2 frequency-side character factor
-  Next action: Use the exact chi_4 factor as a proved no-erasure normalization guardrail. It is not an analytic estimate and no longer blocks M9-M2.
+  Next action: Retain chi_4(g) outside and chi_4(n) inside the modulus sum exactly. The internal cusp identity embeds chi_4(n) arithmetically but supplies no analytic saving; no positive norm may erase either character direction before a signed estimate.
 
 ## Do-Not-Claim Rules
 
@@ -77,7 +76,7 @@ Diagnostic execution policy:
 
 ## Last State Patch
 
-No State Patch applied. Campaign preparation changes workflow artifacts only.
+Round 163 State Patch applied: one close-opposite-prime exchange sector created, two open hard-TOP parents updated with inconclusive evidence, sixteen overclaims rejected, nineteen nodes unchanged; resulting graph 81690ebb72b0dedd99bdb6c6127f947df696a901a22af3f65ac8738209125306.
 
 ## Active Obligation Briefs
 
@@ -100,7 +99,7 @@ No State Patch applied. Campaign preparation changes workflow artifacts only.
 - Status: `open`
 - Track: `M9_analytic`
 - Historical steward: `Codex conductor` (non-binding)
-- Next action: The complete fixed block is now O_epsilon(Y^(35/48+epsilon)) uniformly over every reduced-denominator shell, leaving Y^(11/48) to the Y^(1/2) target. Seek signed cancellation across the remaining numerator increments or outer rays; sequential two-dimensional transforms with aliaswise modulus are already known to self-return.
+- Next action: The best complete bound remains Y^(35/48). The direct Demeter--Wu and direct or factor-first Li--Yang/BI interfaces are parked. Continue only with a genuinely new joint signed theorem that retains the literal coefficient before positive norms and has a complete capacity below Y^(27/48), or rotate to a distinct accepted proof frontier.
 
 ### GC-nonsubcoherent-actual-cluster-local-moment: Non-subcoherent actual M1/M2 cluster local moment
 
@@ -189,7 +188,7 @@ No State Patch applied. Campaign preparation changes workflow artifacts only.
 - Status: `open`
 - Track: `M9_analytic`
 - Historical steward: `Codex conductor` (non-binding)
-- Next action: Lower GAR remains at the exact Round-122 signed wavelet. Do not replace it by the false uncentered energy or an ambient separated Farey square function; a new signed scalar inequality is required.
+- Next action: The full D=d=L=1 paired-interior Abel package self-returns to the accepted common-profile hard defect wave; its raw M^(3/4) signed variable-mask estimate remains open beyond the fixed-polylogarithmic collar. Prove it plus D>1, L>1, generic t=1, every t>=2 layer, and the independent cross owner before global assembly.
 
 ### M9-M1-maximal-angular-sign-kernel: Maximal actual-profile angular-sign radial correlation
 

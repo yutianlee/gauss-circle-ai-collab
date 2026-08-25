@@ -1,0 +1,218 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 135,
+    "round_type": "m9_m2_unbalanced_kloosterman_dispersion_source_map",
+    "campaign_id": "m9-m2-unbalanced-kloosterman-dispersion-source-map",
+    "title": "M2 UNBAL prescribed-centre Kloosterman-fraction dispersion source map",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "f9aa6fa43900b9cb73f705405f9a6090e6e84fb5d3c8a9e037ffe3c6911b9ea0",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "planned_numerical_percent": 0,
+      "literature_policy": "Use primary sources only. Record the exact theorem number, version, phase, supports, coprimality, coefficient norms, fixed-factor hypotheses, absolute-value placement, uniformity, and parameter ranges. Structural resemblance is not applicability. The withdrawn arXiv:2601.00292 is a negative bibliographic control and may not be used as a theorem."
+    },
+    "target_obligations": [
+      "M9-M2-smooth-unbalanced-three-quarter-estimate",
+      "M9-M2-unbalanced-truncated-divisor-fixed-centre-return",
+      "M9-M2-unbalanced-flat-wave-curvature-envelope"
+    ],
+    "frozen_target": {
+      "question": "Can the exact flat-smooth prescribed-centre M2 UNBAL wave be mapped, without changing its real centre, chi_4 placement, moving q_L and W profiles, pointwise absolute-value direction, or endpoint ownership, to the Bettin-Chandee or Wright partially-fixed-modulus Kloosterman-fraction machinery and thereby prove the X^(1/4+epsilon) target; if not, what is the first exact inverse-phase, congruence, coefficient, range, averaging, endpoint, or capacity mismatch?",
+      "reference_formula": "R_(D,L)(X)=sum_(r odd) chi_4(r)W(X/(rD)) sum_k q_L(4Xk/r^2)k^(-1)e(Xk/r)=sum_s sum_(r|s,r odd)chi_4(r)W(X/(rD))Q_L(r(X-s)/(4X)), with r asymp X/D, k asymp XL/D^2, |s-X| effectively at most D/L, Q_L(y)=int q_L(h)h^(-1)e(hy)dh, and target |R_(D,L)(X)|<<X^(1/4+epsilon).",
+      "quantities": [
+        "D=X^delta, L=X^ell, R=X/D, K=XL/D^2, Delta=D/L, and K/R=L/D=Delta^(-1)",
+        "1/4<=delta<1/2, 0<=ell<delta-1/4, and 178ell+1638delta>463",
+        "absolute product capacity Delta X^epsilon and accepted scalar envelope X^epsilon min(Delta,sqrt(XL/D)+sqrt(X/(LD)))",
+        "Bettin-Chandee phase e(vartheta a mbar/n) with independent dyadic coefficient sequences and (m,n)=1",
+        "Wright phase e(theta a mbar/(nR_0)) with a fixed denominator factor R_0, independent dyadic coefficient sequences, and (m,nR_0)=1",
+        "the project phase e(Xk/r) is an ordinary short additive fraction; any inverse reindexing, completion, Mellin separation, or physical congruence must be derived and priced",
+        "X is a real fixed centre, while r divides the product variable s in the physical form",
+        "flat-smooth strict-UNBAL principal owner only; every nonflat, hard, sharp, clipped, starred, arithmetic-owner, stationary-entry, transition, and remainder package stays separate"
+      ]
+    },
+    "completion_criteria": [
+      "Build an exact source card for Bettin-Chandee Theorem 1 and Wright v2 Theorem 2.1, and include only directly relevant corollaries whose full hypotheses are checked.",
+      "Derive a literal variable dictionary, or prove that none exists, for both the reciprocal Fourier form and the prescribed-centre divisor form.",
+      "Audit the direct m=1 specialization, the substitution k to modular inverse, completion of the K-short interval modulo r, the coupled profile q_L(4Xk/r^2), and every resulting coefficient norm or Fourier mass.",
+      "Audit real X versus integral additive frequency, the self-modulus relation r|s, fixed residue and coprimality, pointwise fixed-centre versus modulus averages, and absolute-value placement.",
+      "Price every formally legal source specialization throughout the full strict-UNBAL exponent polytope and compare it with Delta and X^(1/4).",
+      "Keep chi_4 before every modulus or positive norm and preserve all literal smooth profiles and source/project endpoint owners.",
+      "Close under exactly one label: applicable_positive_margin, exact_missing_hypothesis, or source_level_no_go.",
+      "Make no complete-UNBAL, BAL, TOP, M9-M2, M1, endpoint, M9, quarter, or global-exponent promotion without the corresponding graph dependencies."
+    ],
+    "controls": [
+      "primary_source_version_and_theorem_statement",
+      "phase_inverse_vs_ordinary_fraction",
+      "m_equals_one_degeneracy",
+      "short_interval_inverse_reindexing",
+      "completion_cost_and_coefficient_independence",
+      "coupled_profile_separation",
+      "real_centre_vs_integral_frequency",
+      "physical_divisibility_and_coprimality",
+      "fixed_centre_vs_modulus_average",
+      "absolute_value_placement",
+      "actual_chi4_before_modulus",
+      "full_polytope_capacity",
+      "endpoint_and_owner_scope"
+    ],
+    "tasks": [
+      {
+        "id": "wright_bc_exact_source_card",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "status": "completed_with_exact_source_card_and_scoped_source_no_go",
+        "target": "Extract and audit the exact primary-source statements that could conceivably control the literal wave, centered on Bettin-Chandee Theorem 1 and Wright v2 Theorem 2.1, including every hypothesis and the strongest legally relevant specialization.",
+        "context_files": [
+          "protocol.md",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/sources/primary_source_manifest.md",
+          "rounds/codex-managed/m9-m2-unbalanced-prescribed-centre-wave-gate/synthesis.md"
+        ],
+        "required_controls": [
+          "primary_source_version_and_theorem_statement",
+          "m_equals_one_degeneracy",
+          "real_centre_vs_integral_frequency",
+          "fixed_centre_vs_modulus_average",
+          "absolute_value_placement",
+          "full_polytope_capacity",
+          "endpoint_and_owner_scope"
+        ],
+        "required_output": [
+          "A seven-section source-audit report.",
+          "Exact theorem cards with version, theorem number, phase, support, coefficient norms, coprimality, fixed-factor and range hypotheses, and absolute-value placement.",
+          "A table of every directly legal or illegal specialization to the project scales.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/reports/wright_bc_exact_source_card.md"
+      },
+      {
+        "id": "literal_wave_kloosterman_map_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "completed_with_exact_maps_equal_capacity_and_rough_completion_no_go",
+        "target": "Starting from both exact representations of R_(D,L), construct the strongest owner-preserving Kloosterman-fraction or dispersion map available, or isolate its first exact failure and price all formally legal degeneracies and completion costs.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/conductor_0823_full_proof_strategy.md",
+          "rounds/codex-managed/m9-m2-smooth-unbalanced-divisor-recombination/reviews/conductor_round107_hb_kpoisson_return.md",
+          "rounds/codex-managed/m9-m2-unbalanced-prescribed-centre-wave-gate/synthesis.md",
+          "rounds/codex-managed/m9-m2-unbalanced-prescribed-centre-wave-gate/reviews/conductor_round118_square_sector_seam.md",
+          "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/blind_statement.md",
+          "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/sources/primary_source_manifest.md"
+        ],
+        "required_controls": [
+          "phase_inverse_vs_ordinary_fraction",
+          "m_equals_one_degeneracy",
+          "short_interval_inverse_reindexing",
+          "completion_cost_and_coefficient_independence",
+          "coupled_profile_separation",
+          "real_centre_vs_integral_frequency",
+          "physical_divisibility_and_coprimality",
+          "fixed_centre_vs_modulus_average",
+          "absolute_value_placement",
+          "actual_chi4_before_modulus",
+          "full_polytope_capacity",
+          "endpoint_and_owner_scope"
+        ],
+        "required_output": [
+          "A seven-section analytic report.",
+          "Exact dictionaries for direct m=1, inverse reindexing/completion, and physical congruence routes.",
+          "A target estimate, strict smaller survivor, or first exact mismatch with the surviving power of X.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/reports/literal_wave_kloosterman_map_attack.md"
+      },
+      {
+        "id": "blind_inverse_congruence_interface_audit",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "completed_with_independent_inverse_congruence_no_go",
+        "target": "Independently decide from the supplied wave and theorem statements whether an exact coefficient-independent inverse-phase or fixed-residue dispersion interface exists and is target-capable; identify the first unproved step if not.",
+        "context_files": [
+          "problems/gauss_circle.md",
+          "state/control_models.md",
+          "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "all strategy files",
+          "all Round-107 through Round-135 nonblind artifacts",
+          "all Round-135 sibling reports"
+        ],
+        "required_controls": [
+          "phase_inverse_vs_ordinary_fraction",
+          "m_equals_one_degeneracy",
+          "short_interval_inverse_reindexing",
+          "completion_cost_and_coefficient_independence",
+          "coupled_profile_separation",
+          "real_centre_vs_integral_frequency",
+          "physical_divisibility_and_coprimality",
+          "fixed_centre_vs_modulus_average",
+          "absolute_value_placement",
+          "actual_chi4_before_modulus",
+          "full_polytope_capacity",
+          "endpoint_and_owner_scope"
+        ],
+        "required_output": [
+          "A seven-section statement-only report.",
+          "A direct proof or no-go for the inverse/congruence dictionary, including coefficient and capacity controls.",
+          "A target estimate, strict smaller survivor, or exact source-interface obstruction.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/reports/blind_inverse_congruence_interface_audit.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "source",
+        "requirement": "The exact current primary-source theorem and all hypotheses are recorded; withdrawn or merely analogous results are excluded."
+      },
+      {
+        "id": "phase",
+        "requirement": "Ordinary k/r and modular inverse mbar/n are not identified without an exact invertible variable map and coefficient ledger."
+      },
+      {
+        "id": "arithmetic",
+        "requirement": "Coprimality, fixed factor, fixed residue, real-centre, and self-modulus divisibility conditions match literally."
+      },
+      {
+        "id": "coefficients",
+        "requirement": "Moving profiles remain legal independent coefficients or their separation cost and norm inflation are explicit."
+      },
+      {
+        "id": "capacity",
+        "requirement": "Every theorem bound and completion loss is normalized back to R_(D,L) and tested uniformly on the full strict-UNBAL polytope."
+      },
+      {
+        "id": "scope",
+        "requirement": "Only the flat-smooth prescribed-centre principal owner may change state; endpoint and downstream claims require separate proofs."
+      }
+    ],
+    "closing_assessment": {
+      "decision": "promote_exact_source_audit_and_scoped_kloosterman_dispersion_interface_obstruction",
+      "graph_mutation": true,
+      "terminal_label": "source_level_no_go",
+      "main_result": "Every real centre admits an exact integral-frequency repair, the direct and square inverse dictionaries are legal, the diagonal projective norm is sharp, smooth-first completion returns exactly Delta, inverse-first completion is a rough joint Kloosterman matrix, Wright dispersion mismatches the literal scalar, and the fixed-determinant map is non-saving. The named standard-source route is parked, but a new chi_4-signed joint theorem remains possible.",
+      "resulting_graph_sha256": "c43058006cec6849cd17a49e6a7a5298f5a3c124b34d2333b3279adcb54da1d1",
+      "exponent_change": false,
+      "next_round": 136
+    }
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "f9aa6fa43900b9cb73f705405f9a6090e6e84fb5d3c8a9e037ffe3c6911b9ea0",
+    "generated_at": "2026-08-23T13:32:08.4334015Z"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

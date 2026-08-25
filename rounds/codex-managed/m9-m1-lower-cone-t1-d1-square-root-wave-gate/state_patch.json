@@ -1,0 +1,314 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-lower-cone-t1-d1-square-root-wave-strict-range-reduction",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Arithmetic pruning and strict exponent-pair range for the D=1 square-root wave",
+        "status": "proved_internal",
+        "statement_tex": "Let R=X^(1/4), N=floor(X), 1<<M<=R^2, and retain the literal zero-extended Round-148 profile A_U and the external coefficient B_(1,U)(1). For P_U=sum_(ell>0 odd) chi_4(ell)ell^(-3/4)A_U(ell)e(sqrt(Nell)), let k(ell) be the unique nearest integer to sqrt(Nell), j=k^2-Nell, and write uniquely ell=tau s^2 with tau odd squarefree and s odd. In the disjoint order L_0={j=0}, L_1={0<|j|<=M^(3/4)}, L_2={|j|>M^(3/4),s>=ceil(M^(1/4))}, and L_*={|j|>M^(3/4),s<ceil(M^(1/4))}, the first three weighted sums have total size O_epsilon(X^epsilon). The proof uses the exact-square ray, the all-parity bound rho_N(j)<=4*2^omega(N)*sqrt((|j|,N)), its O_epsilon(JX^epsilon) sum for 1<=|j|<=J, the k-support length O(sqrt(NM))<N, and the O(M^(3/4)) large-square-factor count. Hence P_U=P_U^*+O_epsilon(X^epsilon), where P_U^* is exactly the L_* sum, tau>>M^(1/2), and the s=1 layer remains. Independently, Tao--Trudgian--Yang's source-legal D and B processes applied to Bourgain's pair give D(13/84,55/84)=(18/199,593/796), BD(13/84,55/84)=(195/796,235/398), and |P_U|<<_epsilon(R^780/M^449)^(1/1592)X^epsilon. Thus M^449>>R^780 is target-safe and strictly extends the older M^819>>R^1424 scalar range because 780/449<1424/819. Below the new boundary the estimate |P_U^*|<<X^epsilon remains open. This is only the actual D=d=L=1, t=1 scalar and proves no D>1, L>1, generic, t>=2, cross-owner, full M1, M2, endpoint, M9, bridge, target, or global-exponent statement.",
+        "dependencies": [
+          "M9-M1-lower-cone-t1-squarefree-large-wrap-character-range-reduction",
+          "M9-M1-lower-cone-t1-squarefree-reciprocal-bprocess-self-return-obstruction",
+          "Bourgain-2017-reciprocal-exponent-pair-source-audit",
+          "M9-M1-TTY-exponent-pair-wedge"
+        ],
+        "implies": [
+          "M9-M1-lower-cone-t1-squarefree-large-wrap-collar-obstruction",
+          "M9-M1-global-lower-radial-signed-estimate"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/reports/square_root_character_wave_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/reports/square_root_wave_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/candidates/conductor_round152_square_root_wave_reduction.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/reviews/independent_conductor_round152_math_review.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/reviews/hostile_square_root_pruning_review.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/reviews/source_conductor_round152_final.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/reviews/conductor_round152_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/controls/conductor_round152_controls.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/reports/blind_square_root_wave_feasibility.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Prove |P_U^*|<<X^epsilon below M^449 asymp R^780 while retaining the actual profile and the compulsory s=1 squarefree-kernel layer, or isolate the next strict owner-complete range."
+      },
+      {
+        "id": "M9-M1-lower-cone-t1-d1-square-root-wave-method-obstruction",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Character loss and transform self-return below the strict square-root-wave range",
+        "status": "proved_internal",
+        "statement_tex": "For the literal D=d=L=1 square-root wave, adjacent odd pairing is an exact oscillatory finite difference whose phase increment can approach an integer and cannot be replaced by differentiation of the smooth weight. Every legal A-process uses an even shift 2h and satisfies chi_4(ell+2h)chi_4(ell)=(-1)^h, erasing the variable character. One A-process followed by the second-derivative test gives |P_U|^2<<_epsilon{M^(1/2)/H+R M^(-3/4)H^(1/2)+R^(-1)M^(3/4)H^(-1/2)}X^epsilon and gives no point below M asymp R^2. Mellin inversion has spectral scale sqrt(NM), root number +1, and unbalanced dual length sqrt(N/M); using the oscillatory kernel reproduces exact character Poisson and the accepted reciprocal row, while a second principal B-process returns the phase and principal symbol. The exact audited exponent-pair envelope reaches the target at M=R^(780/449); below it the printed Table-1 line is above the required beta line. Mixed Burgess, higher Voronoi, and fixed-parameter nonlinear-resonance sources do not directly match the coefficient, square-root phase, growing parameter, actual profile, or endpoint class. These are method-specific no-gain and no-match statements, not a signed lower bound or a literature-impossibility theorem. After arithmetic pruning, the first survivor is P_U^* below M^449 asymp R^780.",
+        "dependencies": [
+          "M9-M1-lower-cone-t1-squarefree-reciprocal-bprocess-self-return-obstruction",
+          "M9-M1-lower-cone-t1-d1-square-root-wave-strict-range-reduction",
+          "M9-M1-TTY-exponent-pair-wedge"
+        ],
+        "implies": [
+          "M9-M1-lower-cone-t1-squarefree-large-wrap-collar-obstruction",
+          "M9-M1-global-lower-radial-signed-estimate"
+        ],
+        "blockers": [],
+        "source_card": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/reports/square_root_wave_source_audit.md",
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/reports/square_root_character_wave_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/reports/square_root_wave_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/candidates/conductor_round152_square_root_wave_reduction.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/reviews/independent_conductor_round152_math_review.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/reviews/source_conductor_round152_final.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/reviews/conductor_round152_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/controls/conductor_round152_controls.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/reports/blind_square_root_wave_feasibility.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Seek a genuinely non-self-returning estimate for the large-defect, small-square-factor survivor, especially its s=1 odd squarefree layer; do not iterate the principal B-process or treat an upper capacity as a lower bound."
+      }
+    ],
+    "update": [
+      {
+        "id": "Bourgain-2017-reciprocal-exponent-pair-source-audit",
+        "implies_added": [
+          "M9-M1-lower-cone-t1-d1-square-root-wave-strict-range-reduction"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/reports/square_root_wave_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/candidates/conductor_round152_square_root_wave_reduction.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/reviews/source_conductor_round152_final.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The global Bourgain pair may be fed into source-legal D and B processes only after the complete Tao--Trudgian--Yang maximum and symmetry checks; Round 152 owns only the resulting actual D=L=1 scalar range."
+      },
+      {
+        "id": "M9-M1-TTY-exponent-pair-wedge",
+        "title": "Tao--Trudgian--Yang exponent-pair and D/BD wedges for M1",
+        "statement_tex": "For the active M1 reciprocal model phase, the Tao--Trudgian--Yang pair (89/1282,997/1282) gives B_1(D,L;X)<<_epsilon X^([89(1+ell)+819delta]/1282+epsilon) and the X^(1/4+epsilon) target when 178ell+1638delta<=463, after mod-four splitting, an unweighted interval estimate, and Abel summation with the actual discrete-BV profile. For the Round-152 D=d=L=1 square-root wave, their Lemmas 13--15 applied to Bourgain's global pair give D(13/84,55/84)=(18/199,593/796) and BD(13/84,55/84)=(195/796,235/398). The Lemma-14 maximum is valid because the D-line exceeds the auxiliary line by (17-29alpha)/2388 on 0<=alpha<=1/2; the Lemma-15 symmetry bridge covers the upper half. Hence |P_U|<<_epsilon(R^780/M^449)^(1/1592)X^epsilon and M^449>>R^780 is target-safe. The beta crossing is alpha=127/322 inside the printed Table-1 cell 1508/3825<=alpha<62831/155153. Both statements require the literal phase class and actual BV profile; neither accepts arbitrary denominator weights or proves another M1 owner.",
+        "dependencies_added": [
+          "Bourgain-2017-reciprocal-exponent-pair-source-audit"
+        ],
+        "implies_added": [
+          "M9-M1-lower-cone-t1-d1-square-root-wave-strict-range-reduction",
+          "M9-M1-lower-cone-t1-d1-square-root-wave-method-obstruction"
+        ],
+        "evidence_added": {
+          "positive": [
+            "sources/tao_trudgian_yang_2025.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/reports/square_root_wave_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/candidates/conductor_round152_square_root_wave_reduction.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/reviews/source_conductor_round152_final.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/reviews/independent_conductor_round152_math_review.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Use the new BD pair only on the literal D=L=1 square-root phase after residue splitting and Abel transfer. Below M^449 asymp R^780 the audited Table-1 envelope does not prove the target."
+      },
+      {
+        "id": "M9-M1-lower-cone-t1-squarefree-reciprocal-transform-reduction",
+        "implies_added": [
+          "M9-M1-lower-cone-t1-d1-square-root-wave-method-obstruction"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/candidates/conductor_round152_square_root_wave_reduction.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/reviews/independent_conductor_round152_math_review.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The D=L=1 transform now has a strict BD range and an exact arithmetic pruning. Below that range estimate P_U^* directly rather than iterating the principal self-return."
+      },
+      {
+        "id": "M9-M1-lower-cone-t1-squarefree-large-wrap-character-range-reduction",
+        "implies_added": [
+          "M9-M1-lower-cone-t1-d1-square-root-wave-strict-range-reduction"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/candidates/conductor_round152_square_root_wave_reduction.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/reviews/independent_conductor_round152_math_review.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/reviews/hostile_square_root_pruning_review.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Round 152 separately extends the D=L=1 scalar owner to M^449>>R^780 and prunes its complement to P_U^*. For D>1 retain the exact low-adic h|g recovery fibre and recombined row."
+      },
+      {
+        "id": "M9-M1-lower-cone-t1-squarefree-reciprocal-bprocess-self-return-obstruction",
+        "statement_tex": "At D=d=L=1, retain the literal scalar S_U=sum_(q>0)chi_4(q)A_(1,M,U)(1,4N/q^2)e(N/q) and the external coefficient B_(1,U)(1). The accepted boundary ledger gives S_U=e(-1/8)N^(1/4)P_U+O(RX^epsilon), where P_U=sum_(ell>0 odd)chi_4(ell)ell^(-3/4)A_(1,M,U)(1,ell)e(sqrt(Nell)). A second B-process returns the reciprocal phase and principal stationary symbol and supplies no automatic intermediate gain. Round 152 sharpens this frontier: the BD pair proves the target when M^449>>R^780, while exact arithmetic pruning removes j=0, 0<|j|<=M^(3/4), and s>=ceil(M^(1/4)) absolutely. Below the new boundary the first survivor is the large-defect, small-square-factor P_U^*, including s=1. Adjacent pairing, one legal A-process, Mellin/character Poisson, and the audited source routes do not estimate this survivor. This remains a method-scoped obstruction, not an impossibility theorem or signed lower bound.",
+        "implies_added": [
+          "M9-M1-lower-cone-t1-d1-square-root-wave-strict-range-reduction",
+          "M9-M1-lower-cone-t1-d1-square-root-wave-method-obstruction"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/reports/square_root_character_wave_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/candidates/conductor_round152_square_root_wave_reduction.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/reviews/independent_conductor_round152_math_review.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/reviews/hostile_square_root_pruning_review.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Estimate the exact P_U^* survivor below M^449 asymp R^780; its s=1 squarefree layer has no inner square-factor cancellation and must remain literal."
+      },
+      {
+        "id": "M9-M1-lower-cone-t1-squarefree-large-wrap-collar-obstruction",
+        "title": "Low-adic recovery fibre and pruned D=1 wave below strict corridors",
+        "statement_tex": "Round 151 leaves a low-two-adic h|g recovery fibre outside its recombined row corridors; for D>1 this coefficient-sensitive collar and the generic complement remain open. At D=d=L=1 the boundary-complete transform gives the actual square-root wave P_U. Round 152 proves the strict range M^449>>R^780 and the exact decomposition P_U=P_U^*+O_epsilon(X^epsilon), where P_U^* has |k(ell)^2-Nell|>M^(3/4) and ell=tau s^2 with s<ceil(M^(1/4)); exact squares, small nonzero defects, and large square factors are target-safe. Below M^449 asymp R^780 the s=1 squarefree layer and the full P_U^* remain. Adjacent pairing erases no phase, one legal A-process erases the variable character, Mellin and B-processing self-return, and the audited source envelope reaches no lower boundary. This is a scoped proof frontier, not a lower bound or impossibility theorem.",
+        "dependencies_added": [
+          "M9-M1-lower-cone-t1-d1-square-root-wave-strict-range-reduction",
+          "M9-M1-lower-cone-t1-d1-square-root-wave-method-obstruction"
+        ],
+        "source_card": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/reports/square_root_wave_source_audit.md",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/reports/square_root_character_wave_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/reports/square_root_wave_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/candidates/conductor_round152_square_root_wave_reduction.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/reviews/independent_conductor_round152_math_review.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/reviews/hostile_square_root_pruning_review.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/reviews/source_conductor_round152_final.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/reviews/conductor_round152_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/controls/conductor_round152_controls.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/synthesis.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/reports/blind_square_root_wave_feasibility.md"
+          ]
+        },
+        "next_action": "At D=L=1 attack P_U^* below M^449 asymp R^780, starting with its s=1 odd squarefree layer. At D>1 preserve the recombined h|g-dependent row or prove a legal positive decomposition before isolating the collar."
+      },
+      {
+        "id": "M9-M1-global-lower-radial-signed-estimate",
+        "dependencies_added": [
+          "M9-M1-lower-cone-t1-d1-square-root-wave-strict-range-reduction",
+          "M9-M1-lower-cone-t1-d1-square-root-wave-method-obstruction"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/candidates/conductor_round152_square_root_wave_reduction.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/reviews/conductor_round152_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The D=L=1 row now owns M^449>>R^780 and three arithmetic sectors at all remaining scales. Prove the P_U^* survivor, the D>1 and L>1 lower-cone owners, generic t=1, every t>=2 layer, and the independent cross owner before global lower-radial assembly."
+      }
+    ],
+    "correct_rejected": [],
+    "reject": [
+      {
+        "id": "Round152-adjacent-odd-pairing-differentiates-only-the-smooth-weight",
+        "reason": "The exact adjacent difference contains the full oscillatory phase increment, which can approach an integer; it cannot be bounded by differentiating only the smooth profile."
+      },
+      {
+        "id": "Round152-one-legal-Aprocess-preserves-a-variable-chi4-factor",
+        "reason": "Legal shifts are even and chi_4(ell+2h)chi_4(ell)=(-1)^h, so the variable character disappears after one differencing step."
+      },
+      {
+        "id": "Round152-one-Aprocess-second-derivative-bound-closes-an-intermediate-scale",
+        "reason": "The exact three-term power ledger requires incompatible cutoff inequalities below M asymp R^2 and supplies no new scale."
+      },
+      {
+        "id": "Round152-exact-Nell-squares-obstruct-the-square-root-wave-target",
+        "reason": "There is at most one odd squarefree exact ray, and its complete actual-weight mass is O_epsilon(M^(-1/4)n_0^(-1/2)X^epsilon)."
+      },
+      {
+        "id": "Round152-small-nonzero-square-defects-have-full-absolute-capacity",
+        "reason": "The all-parity quadratic-root count and the sub-N k interval give only O_epsilon(M^(3/4)X^epsilon) terms for 0<|j|<=M^(3/4), whose weighted mass is target-safe."
+      },
+      {
+        "id": "Round152-large-square-factors-obstruct-the-square-root-wave-target",
+        "reason": "The disjoint s>=ceil(M^(1/4)) sector has O(M^(3/4)) supported terms and therefore target-safe actual-weight mass."
+      },
+      {
+        "id": "Round152-root-count-may-ignore-the-two-adic-prime-power-case",
+        "reason": "The proved local count treats p=2 with at most four unit roots and gives rho_N(j)<=4*2^omega(N)*sqrt((|j|,N)) for every N and j."
+      },
+      {
+        "id": "Round152-ceiling-at-M-one-quarter-causes-owner-overlap-or-a-gap",
+        "reason": "The owners are defined in order with s>=ceil(M^(1/4)) versus s<ceil(M^(1/4)), so they are disjoint and exhaustive on the actual support."
+      },
+      {
+        "id": "Round152-pointwise-Mellin-Lindelof-closes-the-literal-wave",
+        "reason": "Absolute Mellin integration loses the oscillatory kernel and retains a factor R even under the hypothetical pointwise Lindelof bound."
+      },
+      {
+        "id": "Round152-functional-equation-or-second-Bprocess-gives-an-independent-saving",
+        "reason": "The exact root number and stationary phase reconstruct the accepted reciprocal row; the second principal transform returns its phase and principal symbol."
+      },
+      {
+        "id": "Round152-Dprocess-is-automatically-a-global-exponent-pair-without-a-maximum-check",
+        "reason": "Global use requires the explicit Lemma-14 maximum comparison and the Lemma-15 symmetry bridge; both are verified here and cannot be omitted."
+      },
+      {
+        "id": "Round152-BD-pair-proves-the-target-below-M449-equals-R780",
+        "reason": "Its exact bound is (R^780/M^449)^(1/1592)X^epsilon, and the printed beta envelope crosses the required line exactly at M=R^(780/449)."
+      },
+      {
+        "id": "Round152-mismatched-Burgess-Voronoi-or-nonlinear-twist-source-closes-Pstar",
+        "reason": "The audited sources fail the literal fixed-modulus square-root phase, coefficient class, growing-parameter uniformity, actual-profile, or endpoint hypotheses and provide only direct no-matches."
+      },
+      {
+        "id": "Round152-an-absolute-capacity-is-a-signed-lower-bound",
+        "reason": "Every capacity used is an upper bound or counting diagnostic; none proves a signed lower bound for P_U or P_U^*."
+      },
+      {
+        "id": "Round152-strict-D1-scalar-range-proves-full-M1-or-a-global-exponent",
+        "reason": "The result treats only the literal D=d=L=1, t=1 row. D>1, L>1, generic t=1, t>=2, cross, M1/M2, endpoint, M9, bridge, target, and exponent owners remain."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "Round 152 proves one strict D=L=1 scalar range and a support reduction, not the full lower cone or every M1 component."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "No M2 hard-TOP, balanced, or unbalanced owner was treated."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "The literal D=L=1 boundary is retained, but no all-owner uniform endpoint theorem is proved."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain open."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The bridge remains conditional on complete M9."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The strongest internally proved global exponent remains one third."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "The separately audited external exponent remains (3292+25sqrt(1717))/13762."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The quarter target still lacks P_U^* below the new boundary, D>1 and L>1 lower-cone owners, generic t=1, every t>=2 layer, the cross owner, remaining M1/M2 owners, endpoint uniformity, M9, and the unconditional bridge."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 9,
+    "idea_quality_score": 9,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 152 proves an exact all-parity arithmetic pruning of the literal D=L=1 square-root wave, adds a genuinely new source-legal scale sliver through the global BD pair, and isolates the remaining large-defect small-square-factor survivor with independently verified method obstructions. The full scalar below the new boundary and every downstream theorem remain open."
+  }
+}

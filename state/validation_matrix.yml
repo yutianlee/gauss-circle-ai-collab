@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "campaign_id": "gc-w7-16-local-transverse-lift-variation-gate",
-  "promotion_status": "round_128_character_split_local_V2_patch_applied",
-  "graph_sha256": "476b1445ef73d86627fd87de8bd2dd76a5efa53564a5b195230f2ad33ba2bbe8",
+  "campaign_id": "m9-m2-hard-top-truncated-divisor-additive-twist-gate",
+  "promotion_status": "round_161_closed_graph_validated",
+  "graph_sha256": "8d39b06bd12357e337159473da3d4d6ec0c71d0ab3217588e4c6b5b34973b422",
   "gates": [
     {
       "id": "literal_lower_reciprocal_antecedent",
@@ -778,7 +778,2572 @@
       "id": "round130_downstream_scope",
       "status": "green_top_scalar_Y1over2_target_all_M9_parents_and_global_exponents_open",
       "artifact": "rounds/codex-managed/gc-w7-16-post-inner-outer-bilinear-gate/synthesis.md"
+    },
+    {
+      "id": "round131_strategy_memo_audit",
+      "status": "green_four_memos_reconciled_with_graph_capacity_and_protocol",
+      "artifact": "strategy/conductor_0823_full_proof_strategy.md"
+    },
+    {
+      "id": "round131_fixed_lift_fourier_kernel",
+      "status": "green_M1_fixed4_Gauss_times_Ramanujan_M2_Ramanujan_divisor_l1_cost",
+      "artifact": "proofs/kernels/gc_w7_16_primitive_residue_fourier.md"
+    },
+    {
+      "id": "round131_primitive_periods",
+      "status": "green_radical_minimal_periods_inner_numerator_completion_overperiods_and_divisor_atoms",
+      "artifact": "rounds/codex-managed/gc-w7-16-top-shell-determinant-residue-zero-mode-gate/reviews/blind_post_unmask_primitive_period_scope_audit.md"
+    },
+    {
+      "id": "round131_M1_modes",
+      "status": "green_zero_vanishes_natural_quarter_coefficients_other_odd_Ramanujan_modes_remain",
+      "artifact": "rounds/codex-managed/gc-w7-16-top-shell-determinant-residue-zero-mode-gate/reviews/discovery_post_unmask_fourier_capacity_audit.md"
+    },
+    {
+      "id": "round131_M2_modes",
+      "status": "green_fixed_p_arithmetic_zero_odd_b_conditional_shift_even_b_two_adic_residual",
+      "artifact": "rounds/codex-managed/gc-w7-16-top-shell-determinant-residue-zero-mode-gate/reviews/hostile_post_unmask_literal_weight_audit.md"
+    },
+    {
+      "id": "round131_weighted_reassembly_and_BV",
+      "status": "green_stripped_support_mask_only_full_weight_factorization_and_interlaced_BV_open",
+      "artifact": "rounds/codex-managed/gc-w7-16-top-shell-determinant-residue-zero-mode-gate/reviews/conductor_round131_residue_mode_adjudication.md"
+    },
+    {
+      "id": "round131_one_sided_packets_and_diagonal",
+      "status": "green_nonzero_determinant_M1_M2_controls_blind_n0_obstruction_retracted",
+      "artifact": "rounds/codex-managed/gc-w7-16-top-shell-determinant-residue-zero-mode-gate/reviews/blind_post_unmask_primitive_period_scope_audit.md"
+    },
+    {
+      "id": "round131_resonant_capacity",
+      "status": "green_one_packet_Y30over48_cover_Y35over48_upper_capacity_not_lower_mass",
+      "artifact": "rounds/codex-managed/gc-w7-16-top-shell-determinant-residue-zero-mode-gate/reviews/discovery_post_unmask_fourier_capacity_audit.md"
+    },
+    {
+      "id": "round131_cross_ray_threshold",
+      "status": "green_ideal_per_ray_Y27over48_exact_persistence_target_needs_Y1over16_more",
+      "artifact": "rounds/codex-managed/gc-w7-16-top-shell-determinant-residue-zero-mode-gate/synthesis.md"
+    },
+    {
+      "id": "round131_complete_sum_class",
+      "status": "green_fixed4_Gauss_Ramanujan_not_growing_quadratic_Gauss_or_Salie",
+      "artifact": "rounds/codex-managed/gc-w7-16-top-shell-determinant-residue-zero-mode-gate/reviews/hostile_post_unmask_literal_weight_audit.md"
+    },
+    {
+      "id": "round131_statement_only_gate",
+      "status": "green_carrier_no_go_then_post_unmask_diagonal_and_inactive_parity_corrections",
+      "artifact": "rounds/codex-managed/gc-w7-16-top-shell-determinant-residue-zero-mode-gate/reviews/blind_post_unmask_primitive_period_scope_audit.md"
+    },
+    {
+      "id": "round131_hostile_gate",
+      "status": "green_weighted_Mobius_extension_period_window_and_scalar_scope_corrections",
+      "artifact": "rounds/codex-managed/gc-w7-16-top-shell-determinant-residue-zero-mode-gate/reviews/hostile_post_unmask_literal_weight_audit.md"
+    },
+    {
+      "id": "round131_artifact_hygiene",
+      "status": "green_UTF8_no_embedded_C0_CR_replacement_trailing_or_conflict_defects",
+      "artifact": "rounds/codex-managed/gc-w7-16-top-shell-determinant-residue-zero-mode-gate/controls/conductor_round131_controls.md"
+    },
+    {
+      "id": "round131_unit_tests",
+      "status": "green_six_of_six_unittest_compileall_graph_patch_campaign_JSON_and_diff_check",
+      "artifact": "rounds/codex-managed/gc-w7-16-top-shell-determinant-residue-zero-mode-gate/controls/conductor_round131_controls.md"
+    },
+    {
+      "id": "round131_state_patch",
+      "status": "applied_2_create_4_update_10_reject_graph_validated",
+      "artifact": "rounds/codex-managed/gc-w7-16-top-shell-determinant-residue-zero-mode-gate/state_patch.json"
+    },
+    {
+      "id": "round131_campaign_validation",
+      "status": "green_complete",
+      "artifact": "state/active_campaign.yml"
+    },
+    {
+      "id": "round131_downstream_scope",
+      "status": "green_Y35over48_global_one_third_all_M9_parents_and_quarter_open",
+      "artifact": "rounds/codex-managed/gc-w7-16-top-shell-determinant-residue-zero-mode-gate/synthesis.md"
+    },
+    {
+      "id": "round132_primary_source_card",
+      "status": "green_official_v2_definitions_theorems_support_norms_rescalings_and_limitations",
+      "artifact": "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/reports/demeter_wu_exact_source_card.md"
+    },
+    {
+      "id": "round132_exact_hyperbolic_chart",
+      "status": "green_zeta_equals_xi_eta_phase_and_determinant_identity_exact",
+      "artifact": "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/reviews/conductor_round132_hyperbolic_decoupling_adjudication.md"
+    },
+    {
+      "id": "round132_recentered_band_normalization",
+      "status": "green_absolute_eta_strip_recentered_shear_Rh_equals_Pih_source_radius_not_inferred",
+      "artifact": "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/reviews/source_post_chart_normalization_audit.md"
+    },
+    {
+      "id": "round132_transversality",
+      "status": "green_both_coordinate_small_patch_criterion_same_denominator_exact_ruling",
+      "artifact": "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/reviews/discovery_post_unmask_capacity_audit.md"
+    },
+    {
+      "id": "round132_fixed_point_bridge",
+      "status": "green_only_after_factorization_positive_square_function_no_negative_power",
+      "artifact": "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/reviews/blind_post_unmask_scope_audit.md"
+    },
+    {
+      "id": "round132_coefficient_and_owners",
+      "status": "green_no_go_joint_projective_norm_missing_row_and_SVD_positive",
+      "artifact": "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/reviews/conductor_round132_hyperbolic_decoupling_adjudication.md"
+    },
+    {
+      "id": "round132_broad_narrow_rulings",
+      "status": "green_geometric_partition_source_retains_narrow_signed_arithmetic_estimate_open",
+      "artifact": "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/reports/demeter_wu_exact_source_card.md"
+    },
+    {
+      "id": "round132_same_denominator_control",
+      "status": "green_m_equals_a_minus_aprime_length_DoverW_phase_aligned_not_family_lower_bound",
+      "artifact": "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/reviews/blind_post_unmask_scope_audit.md"
+    },
+    {
+      "id": "round132_refined_incidence_scope",
+      "status": "green_positive_uncontrolled_local_count_not_automatic_gain_or_global_maximality",
+      "artifact": "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/reviews/discovery_post_unmask_capacity_audit.md"
+    },
+    {
+      "id": "round132_capacity",
+      "status": "green_Y35over48_upper_Y27over48_persistence_Y24over48_target_no_gain",
+      "artifact": "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/synthesis.md"
+    },
+    {
+      "id": "round132_statement_only_gate",
+      "status": "green_independent_direct_interface_no_go_then_post_unmask_scope_and_scale_corrections",
+      "artifact": "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/reviews/blind_post_unmask_scope_audit.md"
+    },
+    {
+      "id": "round132_seam_review_gate",
+      "status": "green_source_geometry_capacity_directionality_and_owner_seams_reconciled",
+      "artifact": "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/reviews/conductor_round132_hyperbolic_decoupling_adjudication.md"
+    },
+    {
+      "id": "round132_artifact_hygiene",
+      "status": "green_16_UTF8_no_C0_replacement_trailing_or_conflict_defects",
+      "artifact": "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/controls/conductor_round132_controls.md"
+    },
+    {
+      "id": "round132_unit_tests",
+      "status": "green_six_of_six_unittest_compileall_graph_patch_campaign_JSON_and_diff_check",
+      "artifact": "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/controls/conductor_round132_controls.md"
+    },
+    {
+      "id": "round132_state_patch",
+      "status": "applied_3_create_4_update_11_reject_graph_validated",
+      "artifact": "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/state_patch.json"
+    },
+    {
+      "id": "round132_campaign_validation",
+      "status": "green_complete",
+      "artifact": "state/active_campaign.yml"
+    },
+    {
+      "id": "round132_downstream_scope",
+      "status": "green_Y35over48_internal_one_third_external_LiYang_all_M9_parents_and_quarter_unchanged",
+      "artifact": "rounds/codex-managed/gc-w7-16-cross-ray-hyperbolic-decoupling-source-map/synthesis.md"
+    },
+    {
+      "id": "round133_primary_source_card",
+      "status": "green_official_v2_S_two_F_conditions_parameters_DLS_spacings_and_scope",
+      "artifact": "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reports/li_yang_bi_exact_source_card.md"
+    },
+    {
+      "id": "round133_source_condition_repair",
+      "status": "green_4point9_false_5point23_directly_verifies_4point6_final_narrow_exponent_preserved",
+      "artifact": "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reviews/blind_post_unmask_source_condition_seam.md"
+    },
+    {
+      "id": "round133_single_wave_phase",
+      "status": "green_exact_reciprocal_phase_both_F_conditions_and_sign_conjugation",
+      "artifact": "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reviews/conductor_round133_bi_adjudication.md"
+    },
+    {
+      "id": "round133_mod_four_carriers",
+      "status": "green_M1_four_progressions_M2_two_Fourier_shifts_O1_cost_DoverL_rejected",
+      "artifact": "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reviews/source_post_unmask_parameter_and_scope_audit.md"
+    },
+    {
+      "id": "round133_source_parameters",
+      "status": "green_N_R_Q_K_L_eta_Q2_and_log_powers_with_full_small_cap_margin",
+      "artifact": "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reports/li_yang_bi_exact_source_card.md"
+    },
+    {
+      "id": "round133_q4_endpoint",
+      "status": "green_separate_G4_route_not_literal_qgreater4_substitution",
+      "artifact": "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reviews/source_post_unmask_parameter_and_scope_audit.md"
+    },
+    {
+      "id": "round133_moving_wedge",
+      "status": "green_one_sided_H0_3over48_M0_19over48_cells_5over48_short_support_scope_corrected",
+      "artifact": "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/candidates/conductor_moving_wedge_role_control.md"
+    },
+    {
+      "id": "round133_variable_roles",
+      "status": "green_project_ray_original_hm_not_derivative_approximant_ratio_and_denominator_mismatch",
+      "artifact": "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reports/literal_joint_scalar_bi_normal_form_map.md"
+    },
+    {
+      "id": "round133_first_spacing",
+      "status": "green_source_l_versus_k_first_coordinate_seam_retained_no_project_map",
+      "artifact": "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reviews/discovery_post_unmask_capacity_and_owner_audit.md"
+    },
+    {
+      "id": "round133_second_spacing",
+      "status": "green_all_four_source_coordinates_retained_project_determinant_implication_rejected",
+      "artifact": "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reports/li_yang_bi_exact_source_card.md"
+    },
+    {
+      "id": "round133_joint_coefficient_and_direction",
+      "status": "green_no_go_owner_projective_norm_missing_arcwise_positive_direction_not_reversible",
+      "artifact": "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reviews/conductor_round133_bi_adjudication.md"
+    },
+    {
+      "id": "round133_two_wave_capacity",
+      "status": "green_factor_first_zero_cost_2Phi_equals_30point1414over48_above_27over48_scoped_only",
+      "artifact": "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reviews/discovery_post_unmask_capacity_and_owner_audit.md"
+    },
+    {
+      "id": "round133_direct_determinant_collapse",
+      "status": "green_no_go_product_fibre_and_large_M_CaseA_range_failure",
+      "artifact": "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reports/literal_joint_scalar_bi_normal_form_map.md"
+    },
+    {
+      "id": "round133_aligned_capacity",
+      "status": "green_Y30over48_one_window_Y35over48_complete_upper_capacities_Y27over48_floor_Y24over48_target",
+      "artifact": "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reviews/discovery_post_unmask_capacity_and_owner_audit.md"
+    },
+    {
+      "id": "round133_statement_only_gate",
+      "status": "green_independent_source_condition_discovery_and_direct_interface_no_go",
+      "artifact": "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reports/blind_double_large_sieve_feasibility.md"
+    },
+    {
+      "id": "round133_seam_review_gate",
+      "status": "green_source_parameter_carrier_owner_capacity_and_scope_reconciled",
+      "artifact": "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/reviews/conductor_round133_bi_adjudication.md"
+    },
+    {
+      "id": "round133_artifact_hygiene",
+      "status": "green_17_UTF8_no_C0_replacement_trailing_or_conflict_defects",
+      "artifact": "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/controls/conductor_round133_controls.md"
+    },
+    {
+      "id": "round133_unit_tests",
+      "status": "green_six_of_six_compileall_graph_patch_campaign_JSON_and_diff_check",
+      "artifact": "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/controls/conductor_round133_controls.md"
+    },
+    {
+      "id": "round133_state_patch",
+      "status": "applied_2_create_5_update_16_reject_graph_validated",
+      "artifact": "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/state_patch.json"
+    },
+    {
+      "id": "round133_campaign_validation",
+      "status": "green_complete",
+      "artifact": "state/active_campaign.yml"
+    },
+    {
+      "id": "round133_downstream_scope",
+      "status": "green_Y35over48_internal_one_third_external_LiYang_value_all_M9_parents_and_quarter_unchanged",
+      "artifact": "rounds/codex-managed/gc-w7-16-bombieri-iwaniec-two-spacing-source-map/synthesis.md"
+    },
+    {
+      "id": "round134_literal_block_parseval",
+      "status": "green_exact_Echi_full_character_sum_zero_extension_and_Fejer_multiplier",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/reviews/conductor_round134_majorant_adjudication.md"
+    },
+    {
+      "id": "round134_order_type",
+      "status": "green_universal_PSD_iff_pointwise_multiplier_coefficientwise_order_rejected",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/reports/majorant_cross_term_hostile_audit.md"
+    },
+    {
+      "id": "round134_exact_extremal_mass",
+      "status": "green_root_of_unity_quadrature_mu_equals_Nminus_s_m2_plus_s_mplus1_squared",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/reports/blind_bandlimited_quadratic_majorant_feasibility.md"
+    },
+    {
+      "id": "round134_folded_factorization",
+      "status": "green_Tstar_equals_abs_mDN_plus_Ds_squared_pointwise_sum_of_squares",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/reviews/discovery_post_unmask_folded_majorant_audit.md"
+    },
+    {
+      "id": "round134_global_physical_inequality",
+      "status": "green_endpoint_exact_after_all_translations_not_blockwise",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/reviews/hostile_post_unmask_exact_majorant_and_poisson_audit.md"
+    },
+    {
+      "id": "round134_L1_and_Fourier_mass",
+      "status": "green_exact_excess_Nm_mminus1_plus_2ms_and_l1_H2",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/candidates/conductor_sharp_folded_majorant_verification.md"
+    },
+    {
+      "id": "round134_bandwidth_capacity",
+      "status": "green_no_go_rho_at_least_HoverN_returns_min_H_Q_under_lag_count",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/reviews/conductor_round134_majorant_adjudication.md"
+    },
+    {
+      "id": "round134_character_placement",
+      "status": "green_actual_chi4_before_modulus_opposite_rows_and_rank_one_controls",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/reports/majorant_cross_term_hostile_audit.md"
+    },
+    {
+      "id": "round134_literal_capacity_scope",
+      "status": "green_rho_is_universal_closure_obstruction_not_literal_lower_bound",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/reviews/blind_post_unmask_character_and_capacity_audit.md"
+    },
+    {
+      "id": "round134_character_Poisson",
+      "status": "green_i_over_2_saddle_profiles_final_1_over_k_and_reciprocal_Gram",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/reviews/hostile_post_unmask_exact_majorant_and_poisson_audit.md"
+    },
+    {
+      "id": "round134_endpoint_scope",
+      "status": "green_exact_integral_or_principal_plus_full_remainder_only_principal_Gram_incomplete",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/reviews/discovery_post_unmask_folded_majorant_audit.md"
+    },
+    {
+      "id": "round134_statement_only_gate",
+      "status": "green_independent_sharp_extremal_theorem_and_exact_capacity_no_go",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/reports/blind_bandlimited_quadratic_majorant_feasibility.md"
+    },
+    {
+      "id": "round134_seam_review_gate",
+      "status": "green_three_post_unmask_reviews_confirm_factorization_capacity_Poisson_and_scope",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/reviews/conductor_round134_majorant_adjudication.md"
+    },
+    {
+      "id": "round134_artifact_hygiene",
+      "status": "green_strict_UTF8_no_C0_DEL_replacement_trailing_conflict_or_delimiter_defects",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/controls/conductor_round134_controls.md"
+    },
+    {
+      "id": "round134_unit_tests",
+      "status": "green_six_of_six_compileall_graph_campaign_JSON_and_diff_check",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/controls/conductor_round134_controls.md"
+    },
+    {
+      "id": "round134_state_patch",
+      "status": "applied_2_create_4_update_12_reject_graph_validated",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/state_patch.json"
+    },
+    {
+      "id": "round134_campaign_validation",
+      "status": "green_complete",
+      "artifact": "state/active_campaign.yml"
+    },
+    {
+      "id": "round134_downstream_scope",
+      "status": "green_internal_one_third_external_LiYang_value_all_M9_parents_and_quarter_unchanged",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/synthesis.md"
+    },
+    {
+      "id": "round135_primary_source_card",
+      "status": "green_BettinChandee_v1_Theorem1_Remark1_Corollary1_Wright_v2_Theorem2point1_and_dispersion_hypotheses_exact",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/sources/bettin_chandee_wright_kloosterman.md"
+    },
+    {
+      "id": "round135_integer_frequency_and_real_centre",
+      "status": "green_X_equals_N0_plus_xi_integral_source_frequency_and_smooth_fractional_centre_absorption",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/reviews/source_post_unmask_discovery_formula_audit.md"
+    },
+    {
+      "id": "round135_smooth_profile_separation",
+      "status": "green_full_qL_W_one_over_k_tensor_O1_projective_mass_uniform_on_polytope",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/candidates/conductor_degenerate_source_capacity.md"
+    },
+    {
+      "id": "round135_direct_source_normalization",
+      "status": "green_literal_norms_and_BettinChandee_Wright_direct_bounds_all_strictly_worse_than_Delta",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/reviews/conductor_round135_kloosterman_dispersion_adjudication.md"
+    },
+    {
+      "id": "round135_Wright_convention_and_fixed_factor",
+      "status": "green_printed_Aminus1over20_used_fifth_term_common_and_M1_forces_R0_O1",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/reports/wright_bc_exact_source_card.md"
+    },
+    {
+      "id": "round135_square_connector",
+      "status": "green_a_equals_j_squared_j_equals_m_equals_k_exact_on_coprime_rows_sharp_projective_norm_asymp1",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/reviews/discovery_post_unmask_blind_completion_audit.md"
+    },
+    {
+      "id": "round135_smooth_first_Ramanujan_completion",
+      "status": "green_all_gcd_strata_restored_exact_equal_capacity_Delta_Xepsilon",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/reports/literal_wave_kloosterman_map_attack.md"
+    },
+    {
+      "id": "round135_inverse_first_Kloosterman_completion",
+      "status": "green_joint_modulus_frequency_matrix_and_positive_cost_R_sqrtDelta_Xepsilon",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/reports/blind_inverse_congruence_interface_audit.md"
+    },
+    {
+      "id": "round135_physical_residue_and_dispersion",
+      "status": "green_exact_residue_minusN0_but_independence_coprimality_range_principal_and_absolute_value_hypotheses_fail",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/reviews/blind_post_unmask_source_and_capacity_audit.md"
+    },
+    {
+      "id": "round135_fixed_determinant",
+      "status": "green_exact_dictionary_main_terms_return_Delta_error_exponent_above_41over40_zero_level_divisor_bounded",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/reviews/source_post_unmask_discovery_formula_audit.md"
+    },
+    {
+      "id": "round135_character_and_absolute_placement",
+      "status": "green_chi4_retained_before_lawful_positive_norm_no_average_for_fixed_centre_scalar",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/reviews/conductor_round135_kloosterman_dispersion_adjudication.md"
+    },
+    {
+      "id": "round135_full_polytope_capacity",
+      "status": "green_direct_and_square_source_margins_at_least_strict_3over10_1over4_5over16_and_no_target_chamber",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/candidates/conductor_degenerate_source_capacity.md"
+    },
+    {
+      "id": "round135_statement_only_gate",
+      "status": "green_independent_inverse_congruence_audit_confirms_equal_capacity_or_worse_and_scoped_source_no_go",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/reports/blind_inverse_congruence_interface_audit.md"
+    },
+    {
+      "id": "round135_seam_review_gate",
+      "status": "green_three_post_unmask_reviews_reconcile_source_formula_completion_order_capacity_and_scope",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/reviews/conductor_round135_kloosterman_dispersion_adjudication.md"
+    },
+    {
+      "id": "round135_artifact_hygiene",
+      "status": "green_21_UTF8_files_no_C0_DEL_replacement_trailing_conflict_or_delimiter_defects",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/controls/conductor_round135_controls.md"
+    },
+    {
+      "id": "round135_unit_tests",
+      "status": "green_six_of_six_compileall_graph_patch_campaign_JSON_and_diff_check",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/controls/conductor_round135_controls.md"
+    },
+    {
+      "id": "round135_state_patch",
+      "status": "applied_2_create_3_update_14_reject_8_no_change_graph_validated",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/state_patch.json"
+    },
+    {
+      "id": "round135_campaign_validation",
+      "status": "green_complete",
+      "artifact": "state/active_campaign.yml"
+    },
+    {
+      "id": "round135_downstream_scope",
+      "status": "green_internal_one_third_external_LiYang_value_complete_block_35over48_all_M9_parents_and_quarter_unchanged",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-kloosterman-dispersion-source-map/synthesis.md"
+    },
+    {
+      "id": "round136_literal_bulk_and_owner_ledger",
+      "status": "green_complete_signed_divisor_progressive_bulk_only_no_boundary_transition_remainder_or_phase_free_reuse",
+      "artifact": "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/reviews/conductor_round136_broad_narrow_adjudication.md"
+    },
+    {
+      "id": "round136_character_restoration",
+      "status": "green_exact_combined_linear_residue_carrier_minus_i_times_parity_chi4d_chi4h",
+      "artifact": "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/reports/aligned_rational_ruling_hostile_audit.md"
+    },
+    {
+      "id": "round136_equal_rational_lifts",
+      "status": "green_d_equals_bc_mu_equals_ac_over2_full_carrier_and_gates_common_amplitudes_distinct",
+      "artifact": "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/reviews/discovery_post_unmask_ruling_and_capacity_audit.md"
+    },
+    {
+      "id": "round136_determinant_reconciliation",
+      "status": "green_gradient_vectors_surface_normals_and_one_body_Hessians_distinguished",
+      "artifact": "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/reviews/blind_post_unmask_gauge_and_scalar_interface_audit.md"
+    },
+    {
+      "id": "round136_gauge_scope",
+      "status": "green_gauged_surface_normals_cylindrical_only_chosen_broad_class_empty_no_intrinsic_universal_claim",
+      "artifact": "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/reviews/hostile_post_unmask_determinant_and_character_audit.md"
+    },
+    {
+      "id": "round136_fixed_Q_and_gates",
+      "status": "green_G2_plus_cG3_zero_rho_Delta_exact_strict_double_far_rulings_survive",
+      "artifact": "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/reports/blind_signed_cluster_kernel_feasibility.md"
+    },
+    {
+      "id": "round136_cluster_direction",
+      "status": "green_fixed_slice_cardinality_only_no_tstar_cluster_common_v_run_actual_mass_or_lower_bound",
+      "artifact": "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/reports/aligned_rational_ruling_hostile_audit.md"
+    },
+    {
+      "id": "round136_scalar_interface",
+      "status": "green_no_norm_or_operator_prices_L7_or_unit_Hessian_to_L3_positive_L4_not_scalar",
+      "artifact": "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/candidates/conductor_round136_character_gauge_ruling_obstruction.md"
+    },
+    {
+      "id": "round136_divisor_positivity_scope",
+      "status": "green_sum_gamma_over_d_only_leading_common_profile_control_not_full_literal_amplitude",
+      "artifact": "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/reports/joint_cluster_defect_broad_narrow_attack.md"
+    },
+    {
+      "id": "round136_phase_adapted_and_second_B_scope",
+      "status": "green_adversarial_coefficients_not_physical_lower_bound_and_second_B_only_canonical_phase_return",
+      "artifact": "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/reviews/conductor_round136_broad_narrow_adjudication.md"
+    },
+    {
+      "id": "round136_statement_only_gate",
+      "status": "green_independent_raw_gradient_fixed_Q_gate_and_scalar_interface_derivation_then_post_unmask_character_repair",
+      "artifact": "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/reports/blind_signed_cluster_kernel_feasibility.md"
+    },
+    {
+      "id": "round136_seam_review_gate",
+      "status": "green_three_post_unmask_reviews_reconcile_character_geometry_capacity_direction_and_scope",
+      "artifact": "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/reviews/conductor_round136_broad_narrow_adjudication.md"
+    },
+    {
+      "id": "round136_artifact_hygiene",
+      "status": "green_16_UTF8_files_no_embedded_C0_DEL_replacement_trailing_conflict_or_delimiter_defects",
+      "artifact": "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/controls/conductor_round136_controls.md"
+    },
+    {
+      "id": "round136_unit_tests",
+      "status": "green_six_of_six_compileall_graph_patch_campaign_JSON_and_diff_check",
+      "artifact": "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/controls/conductor_round136_controls.md"
+    },
+    {
+      "id": "round136_state_patch",
+      "status": "applied_2_create_4_update_16_reject_8_no_change_graph_validated",
+      "artifact": "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/state_patch.json"
+    },
+    {
+      "id": "round136_campaign_validation",
+      "status": "green_all_reports_reviews_controls_synthesis_and_patch_present_manifest_valid",
+      "artifact": "state/active_campaign.yml"
+    },
+    {
+      "id": "round136_downstream_scope",
+      "status": "green_BAL_hard_TOP_UNBAL_M9M2_M9M1_endpoint_M9_quarter_and_both_global_exponents_unchanged",
+      "artifact": "rounds/codex-managed/m9-m2-balanced-joint-cluster-defect-broad-narrow-gate/synthesis.md"
+    },
+    {
+      "id": "round137_literal_product_fibre_dictionary",
+      "status": "green_exact_hm_map_ceiling_profiles_real_centre_and_nonsquare_projection",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/reviews/conductor_round137_product_fibre_adjudication.md"
+    },
+    {
+      "id": "round137_actual_coefficient_energy",
+      "status": "green_upper_envelope_L2_logL_equal_product_parameterization_no_lower_mass_claim",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/candidates/conductor_round137_product_fibre_energy_and_self_return.md"
+    },
+    {
+      "id": "round137_squarefree_radical_control",
+      "status": "green_fixed_D_absolute_mass_one_plus_L_over_sqrtD_with_all_shells_and_plus_one_terms",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/reviews/hostile_post_unmask_completion_and_radical_audit.md"
+    },
+    {
+      "id": "round137_exact_resonance_scope",
+      "status": "green_at_most_one_exact_phase_one_nonsquare_radical_channel_target_safe_near_resonances_open",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/reviews/blind_post_unmask_energy_resonance_audit.md"
+    },
+    {
+      "id": "round137_lawful_divisibility_completion",
+      "status": "green_residue_dual_bijection_stationary_point_phase_profile_and_Jacobian_exact",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/reviews/hostile_post_unmask_completion_and_radical_audit.md"
+    },
+    {
+      "id": "round137_transform_self_return",
+      "status": "green_stationary_principal_family_equals_original_reciprocal_hard_TOP_all_correction_owners_retained",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/reviews/discovery_post_unmask_coefficient_and_self_return_audit.md"
+    },
+    {
+      "id": "round137_full_divisor_scope",
+      "status": "green_r2_over4_minus_complement_exact_complement_uncontrolled_target_import_circular",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/reports/product_fibre_bprocess_circularity_hostile_audit.md"
+    },
+    {
+      "id": "round137_statement_only_gate",
+      "status": "green_independent_rough_coefficient_resonance_capacity_and_self_return_no_go",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/reports/blind_truncated_chi4_divisor_phase_feasibility.md"
+    },
+    {
+      "id": "round137_seam_review_gate",
+      "status": "green_three_post_unmask_reviews_reconcile_energy_radicals_completion_direction_and_scope",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/reviews/conductor_round137_product_fibre_adjudication.md"
+    },
+    {
+      "id": "round137_artifact_hygiene",
+      "status": "green_16_UTF8_files_no_embedded_C0_DEL_replacement_trailing_conflict_or_delimiter_defects",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/controls/conductor_round137_controls.md"
+    },
+    {
+      "id": "round137_unit_tests",
+      "status": "green_six_of_six_compileall_graph_patch_campaign_JSON_and_diff_check",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/controls/conductor_round137_controls.md"
+    },
+    {
+      "id": "round137_state_patch",
+      "status": "applied_2_create_3_update_16_reject_8_no_change_graph_validated",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/state_patch.json"
+    },
+    {
+      "id": "round137_campaign_validation",
+      "status": "green_all_reports_reviews_controls_synthesis_and_patch_present_manifest_valid",
+      "artifact": "state/active_campaign.yml"
+    },
+    {
+      "id": "round137_downstream_scope",
+      "status": "green_hard_TOP_BAL_UNBAL_M9M2_M9M1_endpoint_M9_quarter_and_both_global_exponents_unchanged",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-product-fibre-divisor-scalar-gate/synthesis.md"
+    },
+    {
+      "id": "round138_integerized_scalar_dictionary",
+      "status": "green_exact_BflatN_lift_chi4_staircase_primitive_support_b1_centre_and_O_R_Xphase_seam",
+      "artifact": "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/reviews/conductor_round138_signed_farey_adjudication.md"
+    },
+    {
+      "id": "round138_complete_rows",
+      "status": "green_entire_same_denominator_row_square_y_log2X_including_unequal_numerators",
+      "artifact": "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/candidates/conductor_round138_scalar_rows_and_resonance_fibres.md"
+    },
+    {
+      "id": "round138_ordinary_and_physical_fibres",
+      "status": "green_odd_qg_converse_q1_divisors_two_branch_character_adjusted_fibres",
+      "artifact": "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/reviews/blind_post_unmask_scalar_fibre_audit.md"
+    },
+    {
+      "id": "round138_microscopic_packing",
+      "status": "green_both_y_minus2_carrier_collars_target_square_safe_with_actual_coefficients",
+      "artifact": "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/reviews/hostile_post_unmask_owner_and_capacity_audit.md"
+    },
+    {
+      "id": "round138_strict_residual",
+      "status": "green_Fsquare_equals_real_cross_denominator_two_carrier_residual_plus_O_yXepsilon",
+      "artifact": "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/synthesis.md"
+    },
+    {
+      "id": "round138_determinant_aspect",
+      "status": "green_phase_and_character_coherent_in_ell_variable_odd_S_kernel_falsifies_aspect_free_gain",
+      "artifact": "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/reviews/discovery_post_unmask_transform_and_scope_audit.md"
+    },
+    {
+      "id": "round138_fourth_power_controls",
+      "status": "green_direct_packet_target_scale_and_paired_tubes_Rthreehalves_only_capacity_not_lower_bounds",
+      "artifact": "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/reviews/hostile_post_unmask_owner_and_capacity_audit.md"
+    },
+    {
+      "id": "round138_complete_character_Poisson",
+      "status": "green_hard_half_endpoint_all_integrals_branches_crossings_nonstationary_and_remainder_owners",
+      "artifact": "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/reports/farey_scalar_self_return_hostile_audit.md"
+    },
+    {
+      "id": "round138_stationary_normalization",
+      "status": "green_e_minus_one_eighth_Nquarter_chi4r_hr_minus_threequarters_profile_and_sqrt_phase",
+      "artifact": "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/reviews/discovery_post_unmask_transform_and_scope_audit.md"
+    },
+    {
+      "id": "round138_radical_scope",
+      "status": "green_unique_hr_equals_Dt2_channel_RD_minus_threequarters_upper_only_near_radicals_open",
+      "artifact": "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/reviews/blind_post_unmask_scalar_fibre_audit.md"
+    },
+    {
+      "id": "round138_transform_self_return",
+      "status": "green_second_Legendre_returns_reciprocal_phase_exact_completion_returns_flat_discrepancy",
+      "artifact": "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/reviews/conductor_round138_signed_farey_adjudication.md"
+    },
+    {
+      "id": "round138_statement_only_gate",
+      "status": "green_independent_lift_row_exact_fibre_Poisson_capacity_and_self_return_derivation",
+      "artifact": "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/reports/blind_reduced_fraction_scalar_feasibility.md"
+    },
+    {
+      "id": "round138_seam_review_gate",
+      "status": "green_three_post_unmask_reviews_reconcile_integerization_parity_carriers_endpoint_radicals_and_scope",
+      "artifact": "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/reviews/conductor_round138_signed_farey_adjudication.md"
+    },
+    {
+      "id": "round138_artifact_hygiene",
+      "status": "green_16_UTF8_files_no_embedded_C0_DEL_replacement_trailing_conflict_or_delimiter_defects",
+      "artifact": "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/controls/conductor_round138_controls.md"
+    },
+    {
+      "id": "round138_unit_tests",
+      "status": "green_six_of_six_compileall_graph_patch_campaign_JSON_and_diff_check",
+      "artifact": "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/controls/conductor_round138_controls.md"
+    },
+    {
+      "id": "round138_state_patch",
+      "status": "applied_2_create_3_update_20_reject_8_no_change_graph_validated",
+      "artifact": "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/state_patch.json"
+    },
+    {
+      "id": "round138_campaign_validation",
+      "status": "green_all_reports_reviews_controls_synthesis_and_patch_present_manifest_valid",
+      "artifact": "state/active_campaign.yml"
+    },
+    {
+      "id": "round138_downstream_scope",
+      "status": "green_lower_GAR_direct_M1_M9M1_all_M2_endpoint_M9_quarter_and_both_global_exponents_unchanged",
+      "artifact": "rounds/codex-managed/m9-m1-lower-gar-signed-farey-scalar-gate/synthesis.md"
+    },
+    {
+      "id": "round139_displacement_dictionary",
+      "status": "green_exact_N_equals_y2_plus_q_two_way_d_yminusv_parity_floors_support_zero_extension_and_both_signs",
+      "artifact": "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/reviews/conductor_round139_displacement_adjudication.md"
+    },
+    {
+      "id": "round139_exact_curvature_collar",
+      "status": "green_v_le_rho_y_over_sqrth_complete_exact_phase_collar_O_R_logX",
+      "artifact": "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/reviews/hostile_post_unmask_curvature_and_directionality_audit.md"
+    },
+    {
+      "id": "round139_profile_BV_and_floors",
+      "status": "green_monotone_sampled_profile_variation_zero_extension_and_Mh_le_one_plus_Lh_over_two",
+      "artifact": "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/reviews/blind_post_unmask_curvature_rederivation.md"
+    },
+    {
+      "id": "round139_height_capacity_ledger",
+      "status": "green_actual_h_inverse_sum_R_logX_fixed_rho_alpha_half_method_threshold_full_row_Rthreehalves",
+      "artifact": "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/candidates/conductor_round139_curvature_collar_and_quadratic_obstruction.md"
+    },
+    {
+      "id": "round139_Taylor_correction_window",
+      "status": "green_exact_correction_bounded_variation_only_on_per_height_y2_over_h_one_third_window",
+      "artifact": "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/reports/displacement_completion_hostile_audit.md"
+    },
+    {
+      "id": "round139_quadratic_completion",
+      "status": "green_modulus_2y_gcd_16h_2y_all_boundary_frequencies_constant_unit_and_weighted_divisor_ledger",
+      "artifact": "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/reviews/discovery_post_unmask_quadratic_completion_audit.md"
+    },
+    {
+      "id": "round139_fourth_power_variation",
+      "status": "green_literal_q0_h1_plateau_discrete_correction_variation_at_least_y",
+      "artifact": "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/reviews/conductor_round139_displacement_adjudication.md"
+    },
+    {
+      "id": "round139_Gauss_Salie_and_self_return",
+      "status": "green_ordinary_additive_Gauss_not_Salie_DFT_invertible_L2_y_and_full_alias_Rthreehalves_capacity",
+      "artifact": "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/reviews/discovery_post_unmask_quadratic_completion_audit.md"
+    },
+    {
+      "id": "round139_scalar_residual_directionality",
+      "status": "green_scalar_target_equivalence_only_lift_cutoff_splits_Lchi_cross_term_open_no_residual_subsquare_deletion",
+      "artifact": "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/reviews/hostile_post_unmask_curvature_and_directionality_audit.md"
+    },
+    {
+      "id": "round139_statement_only_gate",
+      "status": "green_independent_core_completion_alias_capacity_and_self_return_no_go_then_post_unmask_exact_collar_rederivation",
+      "artifact": "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/reviews/blind_post_unmask_curvature_rederivation.md"
+    },
+    {
+      "id": "round139_seam_review_gate",
+      "status": "green_three_post_unmask_reviews_reconcile_curvature_floors_fixed_rho_Gauss_normalization_direction_and_scope",
+      "artifact": "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/reviews/conductor_round139_displacement_adjudication.md"
+    },
+    {
+      "id": "round139_artifact_hygiene",
+      "status": "green_16_files_no_C0_DEL_zero_width_replacement_trailing_conflict_or_delimiter_defects",
+      "artifact": "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/controls/conductor_round139_controls.md"
+    },
+    {
+      "id": "round139_unit_tests",
+      "status": "green_six_of_six_compileall_campaign_JSON_patch_validation_and_diff_check",
+      "artifact": "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/controls/conductor_round139_controls.md"
+    },
+    {
+      "id": "round139_state_patch",
+      "status": "applied_2_create_3_update_18_reject_8_no_change_graph_validated",
+      "artifact": "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/state_patch.json"
+    },
+    {
+      "id": "round139_campaign_validation",
+      "status": "green_all_primary_reports_reviews_candidate_controls_synthesis_and_patch_present_manifest_valid",
+      "artifact": "state/active_campaign.yml"
+    },
+    {
+      "id": "round139_downstream_scope",
+      "status": "green_tail_lower_GAR_direct_M1_M9M1_all_M2_endpoint_M9_quarter_and_both_global_exponents_unchanged",
+      "artifact": "rounds/codex-managed/m9-m1-lower-denominator-displacement-quadratic-gate/synthesis.md"
+    },
+    {
+      "id": "round140_exact_tail_and_floor_dictionary",
+      "status": "green_Dih_floors_empty_rows_both_signs_exact_stationary_threshold_and_q_range",
+      "artifact": "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/reviews/conductor_round140_height_alias_adjudication.md"
+    },
+    {
+      "id": "round140_sharp_character_Poisson",
+      "status": "green_exact_half_endpoint_branchwise_symmetric_identity_and_harmonic_boundary_obstruction",
+      "artifact": "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/reviews/hostile_post_unmask_owner_complete_far_alias_audit.md"
+    },
+    {
+      "id": "round140_two_collar_smoothing",
+      "status": "green_exact_off_by_one_band_O_R_logX_before_Poisson_and_flat_endpoint_amplitude",
+      "artifact": "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/reviews/blind_post_unmask_smoothed_connector_rederivation.md"
+    },
+    {
+      "id": "round140_smooth_B_process",
+      "status": "green_derivative_norms_localized_cutoff_variation_two_IBP_remote_tails_row_error_hinverse_log2",
+      "artifact": "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/candidates/conductor_round140_smoothed_far_alias_reduction.md"
+    },
+    {
+      "id": "round140_ramp_and_clean_start",
+      "status": "green_O_sqrth_ramp_aliases_plus_r2_cost_O_R_logX_clean_bulk_starts_r2_plus_2",
+      "artifact": "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/reviews/hostile_post_unmask_owner_complete_far_alias_audit.md"
+    },
+    {
+      "id": "round140_stationary_normalization",
+      "status": "green_e_minus_one_eighth_Nquarter_hr_minus_threequarters_all_remainders_target_safe",
+      "artifact": "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/reviews/blind_post_unmask_smoothed_connector_rederivation.md"
+    },
+    {
+      "id": "round140_product_coefficient",
+      "status": "green_exact_incomplete_A_rho2_no_missing_height_weight_complete_fibre_only_comparison",
+      "artifact": "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/reviews/discovery_post_unmask_rank_product_directionality_audit.md"
+    },
+    {
+      "id": "round140_rank_and_capacity",
+      "status": "green_rank_one_after_r_4h_plus_s_matching_Rthreehalves_absolute_capacity_h1_control",
+      "artifact": "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/reviews/discovery_post_unmask_rank_product_directionality_audit.md"
+    },
+    {
+      "id": "round140_prime_fibre_radical_self_return",
+      "status": "green_supported_A_p2a_equals_a_exact_radicals_target_safe_near_radicals_open_Legendre_self_return",
+      "artifact": "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/reviews/discovery_post_unmask_rank_product_directionality_audit.md"
+    },
+    {
+      "id": "round140_scalar_directionality",
+      "status": "green_unsquared_target_equivalence_only_cross_term_and_lift_cutoff_open_no_residual_deletion",
+      "artifact": "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/reviews/conductor_round140_height_alias_adjudication.md"
+    },
+    {
+      "id": "round140_statement_only_gate",
+      "status": "green_independent_sharp_endpoint_rank_one_product_fibre_radical_and_self_return_audit",
+      "artifact": "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/reports/blind_height_alias_joint_feasibility.md"
+    },
+    {
+      "id": "round140_seam_review_gate",
+      "status": "green_three_post_unmask_reviews_reconcile_B_process_arithmetic_geometry_capacity_and_scope",
+      "artifact": "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/reviews/conductor_round140_height_alias_adjudication.md"
+    },
+    {
+      "id": "round140_artifact_hygiene",
+      "status": "green_16_files_no_standalone_CR_C0_replacement_trailing_conflict_or_delimiter_defects",
+      "artifact": "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/controls/conductor_round140_controls.md"
+    },
+    {
+      "id": "round140_unit_tests",
+      "status": "green_six_of_six_compileall_campaign_JSON_patch_validation_and_diff_check",
+      "artifact": "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/controls/conductor_round140_controls.md"
+    },
+    {
+      "id": "round140_state_patch",
+      "status": "applied_2_create_3_update_18_reject_8_no_change_graph_validated",
+      "artifact": "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/state_patch.json"
+    },
+    {
+      "id": "round140_campaign_validation",
+      "status": "green_all_primary_reports_reviews_candidate_controls_synthesis_and_patch_present_manifest_valid",
+      "artifact": "state/active_campaign.yml"
+    },
+    {
+      "id": "round140_downstream_scope",
+      "status": "green_far_scalar_lower_GAR_direct_M1_M9M1_all_M2_endpoint_M9_quarter_and_both_global_exponents_unchanged",
+      "artifact": "rounds/codex-managed/m9-m1-lower-post-collar-height-alias-gate/synthesis.md"
+    },
+    {
+      "id": "round141_floor_to_cone_dictionary",
+      "status": "green_least_odd_exact_equivalence_A_equals_C_minus_E_all_floors_q_and_real_centres",
+      "artifact": "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/reviews/discovery_post_unmask_cone_quarter_mode_audit.md"
+    },
+    {
+      "id": "round141_floor_correction",
+      "status": "green_O_one_plus_sqrth_plus_h_over_y_aliases_per_height_total_unscaled_O_logX",
+      "artifact": "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/reviews/discovery_post_unmask_cone_quarter_mode_audit.md"
+    },
+    {
+      "id": "round141_nearest_square_cells",
+      "status": "green_exact_half_open_endpoints_no_ties_length_O_Rinverse_singleton_multiplicity",
+      "artifact": "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/reviews/source_post_unmask_phase_pairing_audit.md"
+    },
+    {
+      "id": "round141_quadratic_congruence_count",
+      "status": "green_prime_power_CRT_root_bound_k_less_N_injection_and_Mthreequarters_microscopic_count",
+      "artifact": "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/reviews/source_post_unmask_phase_pairing_audit.md"
+    },
+    {
+      "id": "round141_radical_and_microscopic_weight",
+      "status": "green_exact_Dt2_and_nonzero_abs_j_le_sqrtM_all_dyadic_blocks_target_safe",
+      "artifact": "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/reviews/conductor_round141_incomplete_fibre_adjudication.md"
+    },
+    {
+      "id": "round141_divisor_pairing",
+      "status": "green_two_adic_factorization_disjoint_far_masks_sigma_equals_one_plus_chi_A_plus_B",
+      "artifact": "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/reviews/source_post_unmask_phase_pairing_audit.md"
+    },
+    {
+      "id": "round141_pairing_capacity_direction",
+      "status": "green_negative_character_blind_positive_character_complete_plus_central_raw_capacity_not_lower_bound",
+      "artifact": "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/reviews/source_post_unmask_phase_pairing_audit.md"
+    },
+    {
+      "id": "round141_quarter_mode",
+      "status": "green_exact_i_pi_M_over_8_unweighted_i_pi_Mquarter_over_2_weighted_and_large_M_linear_variation",
+      "artifact": "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/reviews/discovery_post_unmask_cone_quarter_mode_audit.md"
+    },
+    {
+      "id": "round141_ratio_mellin",
+      "status": "green_target_safe_Hminus_half_smoothing_sharp_Perron_height_and_exact_zeta_L_factor",
+      "artifact": "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/reviews/blind_post_unmask_source_mellin_audit.md"
+    },
+    {
+      "id": "round141_source_ledger",
+      "status": "green_repaired_Robert_Sargos_Sargos_Wu_TTY_Popov_LiYang_standard_twist_and_moment_hypotheses_powers",
+      "artifact": "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/reviews/blind_post_unmask_source_mellin_audit.md"
+    },
+    {
+      "id": "round141_nonresonant_owner",
+      "status": "open_fixed_centre_cone_abs_j_gt_sqrtM_retains_Rhalf_excess_no_accepted_theorem",
+      "artifact": "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/synthesis.md"
+    },
+    {
+      "id": "round141_scalar_directionality",
+      "status": "green_unsquared_target_equivalence_only_no_cross_term_square_or_residual_deletion",
+      "artifact": "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/reviews/conductor_round141_incomplete_fibre_adjudication.md"
+    },
+    {
+      "id": "round141_seam_review_gate",
+      "status": "green_three_post_unmask_reviews_after_variation_source_and_hygiene_repairs",
+      "artifact": "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/reviews/conductor_round141_incomplete_fibre_adjudication.md"
+    },
+    {
+      "id": "round141_artifact_hygiene",
+      "status": "green_16_files_no_standalone_CR_controls_replacement_trailing_conflict_or_delimiter_defects",
+      "artifact": "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/controls/conductor_round141_controls.md"
+    },
+    {
+      "id": "round141_state_patch",
+      "status": "applied_2_create_4_update_20_reject_8_no_change_graph_validated",
+      "artifact": "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/state_patch.json"
+    },
+    {
+      "id": "round141_unit_tests",
+      "status": "green_six_of_six_compileall_campaign_JSON_graph_and_diff_checks",
+      "artifact": "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/controls/conductor_round141_controls.md"
+    },
+    {
+      "id": "round141_campaign_validation",
+      "status": "green_all_primary_reports_reviews_candidate_controls_synthesis_and_patch_present_manifest_valid",
+      "artifact": "state/active_campaign.yml"
+    },
+    {
+      "id": "round141_downstream_scope",
+      "status": "green_nonresonant_cone_lower_GAR_direct_M1_M9M1_all_M2_endpoint_M9_quarter_and_both_exponents_unchanged",
+      "artifact": "rounds/codex-managed/m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate/synthesis.md"
+    },
+    {
+      "id": "round142_rational_row_theorem",
+      "status": "green_exact_q_mod4_classes_sign_i_pi_chi_over_2q_strict_endpoints_and_uniform_sqrtM_plus_q_logq_error",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-rational-additive-spectrum-gate/reviews/blind_post_unmask_rational_reconstruction_audit.md"
+    },
+    {
+      "id": "round142_fixed_height_DFT",
+      "status": "green_exact_minus_i_over_2h_coefficient_reduced_mode_aggregation_and_frequency_sign",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-rational-additive-spectrum-gate/reviews/blind_post_unmask_rational_reconstruction_audit.md"
+    },
+    {
+      "id": "round142_finite_projection_and_spectral_norms",
+      "status": "green_omitted_linear_modes_sQ2_error_l1_Q_and_B2_logQ_obstructions",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-rational-additive-spectrum-gate/reviews/blind_post_unmask_rational_reconstruction_audit.md"
+    },
+    {
+      "id": "round142_Gauss_Mobius_Abel_reconstruction",
+      "status": "green_2i_Gauss_pi_over4_hard_cutoff_reciprocal_L_factor_and_r2_over4_limit",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-rational-additive-spectrum-gate/reviews/source_post_unmask_abel_bprocess_audit.md"
+    },
+    {
+      "id": "round142_negative_character_residual",
+      "status": "green_sigma_chi4_zero_on_oddpart_character_minus_one_residual_equals_C",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-rational-additive-spectrum-gate/reviews/source_post_unmask_abel_bprocess_audit.md"
+    },
+    {
+      "id": "round142_moving_boundary_wedge",
+      "status": "green_exact_region_unsigned_weighted_Mquarter_capacity_not_signed_lower_bound",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-rational-additive-spectrum-gate/reviews/blind_post_unmask_rational_reconstruction_audit.md"
+    },
+    {
+      "id": "round142_local_slope_geometry",
+      "status": "green_L_M_Mthreequarters_over_R_Farey_overlap_L_M_cell_count_and_sqrtM_over_R_residual_requirement",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-rational-additive-spectrum-gate/reviews/blind_post_unmask_rational_reconstruction_audit.md"
+    },
+    {
+      "id": "round142_phase_value_slope_distinction",
+      "status": "green_integrality_separation_qminus2_NMminus_half_too_small_for_derivative_arc_exclusion",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-rational-additive-spectrum-gate/reviews/blind_post_unmask_rational_reconstruction_audit.md"
+    },
+    {
+      "id": "round142_periodic_branch_bound",
+      "status": "green_direct_second_derivative_min_Mquarter_RMsqrtinverse_plus_Rinverse_owner_sized_denominator_sum",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-rational-additive-spectrum-gate/reviews/discovery_post_unmask_source_bprocess_audit.md"
+    },
+    {
+      "id": "round142_source_ledger",
+      "status": "green_after_Jutila_locations_holomorphic_hypothesis_Banerjee_Khurana_title_and_boundary_repairs",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-rational-additive-spectrum-gate/reviews/discovery_post_unmask_source_bprocess_audit.md"
+    },
+    {
+      "id": "round142_stationary_principal_self_return",
+      "status": "green_k_minus_beta_and_z_positive_exact_Nminusquarter_signs_R_q_capacity_principal_symbol_only_remainders_open",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-rational-additive-spectrum-gate/reviews/source_post_unmask_abel_bprocess_audit.md"
+    },
+    {
+      "id": "round142_nonresonant_owner",
+      "status": "open_fixed_centre_cone_local_residual_moving_boundary_and_masked_branch_assembly_unproved",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-rational-additive-spectrum-gate/synthesis.md"
+    },
+    {
+      "id": "round142_seam_review_gate",
+      "status": "green_three_post_unmask_reviews_after_phase_density_stationary_normalization_and_source_scope_repairs",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-rational-additive-spectrum-gate/reviews/conductor_round142_rational_spectrum_adjudication.md"
+    },
+    {
+      "id": "round142_artifact_hygiene",
+      "status": "green_16_files_8_seven_section_artifacts_no_CR_controls_unicode_trailing_conflict_bare_qquad_or_delimiter_defects",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-rational-additive-spectrum-gate/controls/conductor_round142_controls.md"
+    },
+    {
+      "id": "round142_state_patch",
+      "status": "applied_1_create_4_update_23_reject_8_no_change_graph_validated",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-rational-additive-spectrum-gate/state_patch.json"
+    },
+    {
+      "id": "round142_unit_tests",
+      "status": "green_six_of_six_compileall_campaign_JSON_patch_validation",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-rational-additive-spectrum-gate/controls/conductor_round142_controls.md"
+    },
+    {
+      "id": "round142_campaign_validation",
+      "status": "green_all_primary_reports_reviews_candidate_controls_synthesis_and_patch_present_manifest_valid",
+      "artifact": "state/active_campaign.yml"
+    },
+    {
+      "id": "round142_downstream_scope",
+      "status": "green_cone_lower_GAR_direct_M1_M9M1_all_M2_endpoint_M9_quarter_and_both_exponents_unchanged",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-rational-additive-spectrum-gate/synthesis.md"
+    },
+    {
+      "id": "round143_exact_cusp_embedding",
+      "status": "green_weight_one_translation_double_quotient_moduli_2n_chi4_sign_no_modulus_root_all_h_and_all_N0_n_gcd",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/reviews/discovery_conductor_candidate_green_confirmation.md"
+    },
+    {
+      "id": "round143_gcd_restored_inverse_first_identity",
+      "status": "green_all_odd_g_strata_unit_inverse_real_centre_profiles_entries_exits_and_exact_Fourier_return",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/candidates/conductor_round143_level_four_matrix_obstruction.md"
+    },
+    {
+      "id": "round143_source_parity_and_level_ledger",
+      "status": "green_KY_even_exclusion_BM_exact_level4_minus_level8_tau2i_HME_four_level8_cusps_and_oldclasses",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/reviews/source_conductor_candidate_final_green.md"
+    },
+    {
+      "id": "round143_zero_frequency",
+      "status": "green_complete_h0_Ramanujan_owner_O_Xepsilon_strict_survivor_centered_h_nonzero",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/reviews/blind_conductor_candidate_final_green.md"
+    },
+    {
+      "id": "round143_joint_matrix_norms",
+      "status": "green_row_Parseval_Hilbert_Schmidt_nuclear_2n_4n_sample_powers_diagonal_control_not_literal_lower_bound",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/reviews/blind_conductor_candidate_final_audit.md"
+    },
+    {
+      "id": "round143_trace_formula_interface",
+      "status": "green_frozen_data_no_owner_saving_common_test_common_sequence_joint_smooth_or_vector_norm_no_universal_no_go",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/reviews/conductor_round143_level_four_matrix_adjudication.md"
+    },
+    {
+      "id": "round143_Linnik_discreteness",
+      "status": "green_scale_X_over_D2g2_discrete_coverage_at_most_one_over_Dg_many_integer_qualification_and_constant_safe_empty_range",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/reviews/source_conductor_candidate_final_green.md"
+    },
+    {
+      "id": "round143_spectral_components",
+      "status": "green_same_sign_weight_one_transforms_HME_exceptional_t0_Eisenstein_oldclasses_no_ad_hoc_residual_or_opposite_sign_formula",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/reviews/source_conductor_candidate_final_audit.md"
+    },
+    {
+      "id": "round143_full_polytope_capacity",
+      "status": "green_R_sqrtDelta_exponent_worse_than_both_accepted_branches_pointwise_and_above_five_eighths",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/controls/conductor_round143_controls.md"
+    },
+    {
+      "id": "round143_self_return_and_character_direction",
+      "status": "green_complete_h_orthogonality_returns_original_row_positive_closure_unsigned_and_not_chi4_cancellation",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/reviews/conductor_round143_level_four_matrix_adjudication.md"
+    },
+    {
+      "id": "round143_seam_review_gate",
+      "status": "green_cross_reviews_and_final_discovery_blind_source_confirmations_after_all_normalization_scope_source_and_TeX_repairs",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/reviews/conductor_round143_level_four_matrix_adjudication.md"
+    },
+    {
+      "id": "round143_artifact_hygiene",
+      "status": "green_all_primary_artifacts_seven_sections_no_lone_CR_controls_replacement_conflict_trailing_display_aligned_duplicate_tag_or_promoted_bare_qquad_defects",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/controls/conductor_round143_controls.md"
+    },
+    {
+      "id": "round143_state_patch_dry_run",
+      "status": "green_2_create_5_update_16_reject_8_no_change_patch_validated_before_apply",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/state_patch.json"
+    },
+    {
+      "id": "round143_campaign_and_unit_validation",
+      "status": "green_campaign_manifest_compileall_and_six_of_six_unittests",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/controls/conductor_round143_controls.md"
+    },
+    {
+      "id": "round143_downstream_scope",
+      "status": "green_flat_strict_UNBAL_survivor_M9M2_M9M1_endpoint_M9_bridge_quarter_and_both_global_exponents_unchanged",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/synthesis.md"
+    },
+    {
+      "id": "round143_state_patch",
+      "status": "applied_2_create_5_update_16_reject_8_no_change_resulting_graph_179e40fb38e6a5e26623c2584d469b1c4c8d5ae444a70d791298852f2d511204",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/state_patch.json"
+    },
+    {
+      "id": "round143_campaign_closure",
+      "status": "green_manifest_plan_ledger_current_round_directive_failure_ledger_proof_draft_and_validation_records_closed",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-level-four-kuznetsov-matrix-gate/synthesis.md"
+    },
+    {
+      "id": "round144_gcd_averaged_displacement",
+      "status": "green_nonzero_count_J_Xepsilon_squareful_uniform_k_less_N_injection_and_weighted_Mminus3quarters_J_price",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/reviews/blind_conductor_candidate_final_green.md"
+    },
+    {
+      "id": "round144_exact_radicals_and_total_count",
+      "status": "green_N_Du2_m_Dt2_target_safe_and_total_J_plus_sqrtM_plus_one_count_for_all_J_nonnegative",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/reviews/discovery_conductor_candidate_final_green.md"
+    },
+    {
+      "id": "round144_M3over4_cell_reduction",
+      "status": "green_strict_arithmetic_support_reduction_maximal_for_absolute_root_count_divisor_ledger_survivor_unestimated",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/reviews/conductor_round144_appell_completion_adjudication.md"
+    },
+    {
+      "id": "round144_completed_Appell_scalar",
+      "status": "green_H_equals_F_plus_quarter_plus_four_corrections_weight_one_chi4_on_Gamma0_4_full_group_characteristic_orbit",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/reviews/source_conductor_candidate_final_green.md"
+    },
+    {
+      "id": "round144_scalar_source_provenance",
+      "status": "green_internally_derived_specialization_of_audited_Jacobi_laws_not_verbatim_not_Round63_rediscovery_no_harmonicity_claim",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/reviews/source_conductor_candidate_final_green.md"
+    },
+    {
+      "id": "round144_character_Poisson_constant",
+      "status": "green_positive_j_principal_range_zero_lt_j_lt_sqrtN_outer_i_over2_e_oneeighth_Nminusquarter_endpoint_Fresnel_owned",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/reviews/blind_conductor_candidate_final_green.md"
+    },
+    {
+      "id": "round144_aggregate_self_return",
+      "status": "green_all_boundary_subtraction_alias_collar_profile_entry_exit_and_remainder_owners_reassembled_before_inverse_Round140_map",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/reviews/conductor_round144_appell_completion_adjudication.md"
+    },
+    {
+      "id": "round144_source_summation_interface",
+      "status": "green_no_audited_harmonic_Maass_Voronoi_or_complete_divisor_theorem_bounds_the_five_pairings_and_literal_complex_test",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/reports/indefinite_theta_source_hypothesis_audit.md"
+    },
+    {
+      "id": "round144_Round142_consistency",
+      "status": "green_level4_cusp_orbit_matches_4dividesq_hierarchy_Abel_still_r2_over4_negative_character_and_wedge_survive",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/reviews/conductor_round144_appell_completion_adjudication.md"
+    },
+    {
+      "id": "round144_capacity_and_slope_scope",
+      "status": "green_cone_Rhalf_reciprocal_R_upper_capacities_not_lower_bounds_special_slope_gap_Rminus3_of_natural_width_no_Farey_exclusion",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/controls/conductor_round144_controls.md"
+    },
+    {
+      "id": "round144_nonresonant_owner",
+      "status": "open_fixed_centre_cone_abs_j_gt_M3over4_and_equivalent_owner_complete_reciprocal_scalar_unproved",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/synthesis.md"
+    },
+    {
+      "id": "round144_seam_review_gate",
+      "status": "green_three_post_unmask_reviews_three_final_GREEN_confirmations_after_arithmetic_multiplier_stationary_endpoint_slope_dependency_and_hygiene_repairs",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/reviews/conductor_round144_appell_completion_adjudication.md"
+    },
+    {
+      "id": "round144_artifact_hygiene",
+      "status": "green_candidate_no_embedded_CR_or_forbidden_controls_and_round_diff_check_clean",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/controls/conductor_round144_controls.md"
+    },
+    {
+      "id": "round144_state_patch_dry_run",
+      "status": "green_2_create_8_update_2_correct_rejected_12_reject_8_no_change_simulated_graph_validated_before_apply",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/state_patch.json"
+    },
+    {
+      "id": "round144_downstream_scope",
+      "status": "green_large_displacement_survivor_lower_GAR_direct_M1_M9M1_all_M2_endpoint_M9_bridge_quarter_and_both_global_exponents_unchanged",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/synthesis.md"
+    },
+    {
+      "id": "round144_state_patch",
+      "status": "applied_2_create_8_update_2_correct_rejected_12_reject_8_no_change_resulting_graph_cc5e1b2597d6d233702d566f49884dc0530d0fa62395ce03684d2f55ae19e756",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/state_patch.json"
+    },
+    {
+      "id": "round144_campaign_and_unit_validation",
+      "status": "green_campaign_manifest_graph_patch_JSON_compileall_diff_checks_and_six_of_six_unittests",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/controls/conductor_round144_controls.md"
+    },
+    {
+      "id": "round144_proof_draft_refresh",
+      "status": "green_accepted_graph_only_M3over4_completion_and_self_return_section_appended_after_patch",
+      "artifact": "state/best_proof_draft.md"
+    },
+    {
+      "id": "round144_campaign_closure",
+      "status": "green_manifest_plan_ledger_proof_draft_validation_records_and_round_artifacts_closed",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/synthesis.md"
+    },
+    {
+      "id": "round145_squarefree_kernel_bijection",
+      "status": "green_two_exact_multiplicity_one_C_st2_parametrizations_with_distinct_common_factor_ledgers_parity_character_and_strict_cone",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/reviews/conductor_round145_squarefree_kernel_adjudication.md"
+    },
+    {
+      "id": "round145_large_t_tail",
+      "status": "green_block_price_Xepsilon_M1over4_over_T_and_target_safe_t_at_least_ceil_M1over4_after_literal_endpoints_and_dyadic_assembly",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/reviews/blind_conductor_candidate_final_green.md"
+    },
+    {
+      "id": "round145_small_t_owner",
+      "status": "open_strict_t_less_M1over4_s_greater_M1over2_large_displacement_fixed_centre_individual_complex_scalar_unproved",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/synthesis.md"
+    },
+    {
+      "id": "round145_mask_and_exceptional_family",
+      "status": "green_exact_nearest_integer_sign_tie_exact_radical_and_generalized_Pell_ledger_with_profiled_N_equals_sL2_plus_one_slow_rotation_control",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/reviews/discovery_conductor_candidate_final_green.md"
+    },
+    {
+      "id": "round145_t_equals_one_control",
+      "status": "green_mandatory_nonvacuous_C_p_equals_chi4_p_layer_has_no_t_cancellation_and_capacity_is_upper_price_only",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/candidates/conductor_round145_squarefree_kernel_reduction.md"
+    },
+    {
+      "id": "round145_source_and_power_audit",
+      "status": "green_no_audited_complete_divisor_Liouville_linear_squarefree_fixed_quadratic_Robert_Sargos_or_Sargos_Wu_theorem_matches_coefficient_direction_uniformity_and_target_power",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/reports/quadratic_irrational_divisor_twist_source_audit.md"
+    },
+    {
+      "id": "round145_seam_review_gate",
+      "status": "green_two_post_unmask_cross_reviews_and_three_definitive_final_GREEN_confirmations_after_endpoint_exceptional_range_source_and_typography_repairs",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/reviews/conductor_round145_squarefree_kernel_adjudication.md"
+    },
+    {
+      "id": "round145_artifact_hygiene",
+      "status": "green_all_round_files_no_embedded_forbidden_controls_and_authoritative_candidate_synthesis_adjudication_controls_have_no_malformed_qquad_token",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/controls/conductor_round145_controls.md"
+    },
+    {
+      "id": "round145_state_patch",
+      "status": "applied_2_create_7_update_9_reject_8_no_change_resulting_graph_7d56a2cf6725cbcbd1746e41c300e01bd2028b9a855cbd057e02546df8a4d18d",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/state_patch.json"
+    },
+    {
+      "id": "round145_downstream_scope",
+      "status": "green_small_t_survivor_cross_owner_lower_GAR_direct_M1_M9M1_all_M2_endpoint_M9_bridge_quarter_and_both_global_exponents_unchanged",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/synthesis.md"
+    },
+    {
+      "id": "round145_campaign_graph_and_unit_validation",
+      "status": "green_completed_campaign_manifest_patched_graph_JSON_compileall_and_six_of_six_unittests",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/controls/conductor_round145_controls.md"
+    },
+    {
+      "id": "round145_proof_draft_refresh",
+      "status": "green_accepted_graph_only_squarefree_kernel_reduction_and_scoped_obstruction_section_appended_after_patch",
+      "artifact": "state/best_proof_draft.md"
+    },
+    {
+      "id": "round145_campaign_closure",
+      "status": "green_manifest_plan_ledger_proof_draft_validation_records_and_round_artifacts_closed",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-squarefree-kernel-linearization-gate/synthesis.md"
+    },
+    {
+      "id": "round146_exact_owner_partition_and_unmasking",
+      "status": "green_disjoint_small_t_large_displacement_small_t_small_displacement_and_large_t_partition_proves_target_equivalence_to_unmasked_small_t_scalar",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/controls/conductor_round146_controls.md"
+    },
+    {
+      "id": "round146_exact_t_d_e_coefficient",
+      "status": "green_multiplicity_one_squarefree_coprimality_parity_character_strict_cone_and_tau3_envelope_retained",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/reviews/conductor_round146_three_variable_adjudication.md"
+    },
+    {
+      "id": "round146_Hessian_and_stationary_algebra",
+      "status": "green_scaled_determinant_one_quarter_eigenvalues_and_dual_critical_phase_independently_rechecked",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/reviews/discovery_conductor_candidate_final_green.md"
+    },
+    {
+      "id": "round146_short_faces_and_capacity",
+      "status": "green_M1over4_over_T_box_price_t1_and_D1_mandatory_rank_one_E1_empty_bounded_E_terminal_safe",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/controls/conductor_round146_controls.md"
+    },
+    {
+      "id": "round146_difference_and_transform_controls",
+      "status": "green_zero_shift_diagonal_nonzero_shift_rank_one_unproved_correlation_phase_level_self_return_and_adverse_alias_triangle_price",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/candidates/conductor_round146_three_variable_unmasking_and_dispersion_no_go.md"
+    },
+    {
+      "id": "round146_source_hypothesis_and_power_audit",
+      "status": "green_Cao_Zhai_only_legal_placement_nonseparable_coefficient_mismatch_fourteen_terms_checked_endpoint_R1over16_and_other_sources_R1over4",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/reviews/source_conductor_candidate_final_green_v2.md"
+    },
+    {
+      "id": "round146_seam_review_gate",
+      "status": "green_three_cross_reviews_and_terminal_blind_source_v2_and_mathematical_GREEN_reviews_after_all_repairs",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/reviews/conductor_round146_three_variable_adjudication.md"
+    },
+    {
+      "id": "round146_artifact_hygiene",
+      "status": "green_all_round_artifacts_LF_only_with_no_forbidden_control_bytes_after_setup_normalization",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/controls/conductor_round146_controls.md"
+    },
+    {
+      "id": "round146_state_patch",
+      "status": "applied_2_create_7_update_10_reject_8_no_change_resulting_graph_1dc79cf41e0dea8888341e944c5d0bf025d87f22cfaa282da34fcd10eecd04f5",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/state_patch.json"
+    },
+    {
+      "id": "round146_downstream_scope",
+      "status": "green_unmasked_small_t_scalar_cross_owner_lower_GAR_direct_M1_M9M1_all_M2_endpoint_M9_bridge_quarter_and_both_global_exponents_unchanged",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/synthesis.md"
+    },
+    {
+      "id": "round146_campaign_graph_and_unit_validation",
+      "status": "green_completed_campaign_manifest_state_JSON_graph_compileall_diff_check_and_six_of_six_unittests",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/controls/conductor_round146_controls.md"
+    },
+    {
+      "id": "round146_proof_draft_refresh",
+      "status": "green_accepted_graph_only_unmasking_reduction_Hessian_identity_and_scoped_no_go_appended_after_patch",
+      "artifact": "state/best_proof_draft.md"
+    },
+    {
+      "id": "round146_campaign_closure",
+      "status": "green_manifest_plan_ledger_proof_draft_validation_records_and_round_artifacts_closed",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-three-variable-hessian-dispersion-gate/synthesis.md"
+    },
+    {
+      "id": "round147_t1_arithmetic_and_cone",
+      "status": "green_exact_odd_even_squarefree_coefficient_strict_cone_character_sectors_prime_D1_and_radical_controls",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/reviews/conductor_round147_adjudication.md"
+    },
+    {
+      "id": "round147_local_Mellin_and_Euler_product",
+      "status": "green_target_safe_collar_exact_unitary_order_radial_twist_zero_mode_p2_odd_factors_and_powerful_support",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/candidates/conductor_round147_t1_squarefree_voronoi_and_H_no_go.md"
+    },
+    {
+      "id": "round147_fixed_order_source_and_convolution",
+      "status": "green_fixed_parameter_compact_smooth_conductor_four_scalar_one_pole_reflected_coefficient_all_JYK_branches_finite_physical_k_support",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/reviews/source_conductor_round147_final_green.md"
+    },
+    {
+      "id": "round147_K_refactor_and_zero_seam",
+      "status": "green_exact_mixed_monomial_local_identity_K_convergence_and_reciprocal_zero_poles_retained",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/reviews/source_conductor_round147_final_green.md"
+    },
+    {
+      "id": "round147_resonance_and_power",
+      "status": "green_fixed_order_kN_window_one_term_amplitude_unitary_absolute_aggregation_R1over3_and_R1over4_losses",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/reviews/discovery_conductor_round147_final_green_v2.md"
+    },
+    {
+      "id": "round147_bare_reciprocal_and_squarefree_loss",
+      "status": "green_QplusD_for_Q_le_Nover4_and_exact_QsqrtD_plus_D_literal_Mobius_triangle_loss",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/reviews/discovery_conductor_round147_final_green_v2.md"
+    },
+    {
+      "id": "round147_seam_review_gate",
+      "status": "green_terminal_source_blind_and_hostile_power_reviews_after_all_candidate_repairs",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/reviews/conductor_round147_adjudication.md"
+    },
+    {
+      "id": "round147_artifact_hygiene",
+      "status": "green_all_21_round_artifacts_LF_only_no_forbidden_controls_no_U200E_and_diff_check_clean",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/controls/conductor_round147_controls.md"
+    },
+    {
+      "id": "round147_state_patch",
+      "status": "applied_2_create_5_update_9_reject_8_no_change_resulting_graph_bb43abb1e0fbd719b18ebf91f4c7e477bf18e46e7b5225faaa88a7fb38d31352",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/state_patch.json"
+    },
+    {
+      "id": "round147_downstream_scope",
+      "status": "green_uniform_kernel_signed_t1_all_tge2_cross_owner_M1_M2_endpoint_M9_bridge_quarter_and_both_exponents_unchanged",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/synthesis.md"
+    },
+    {
+      "id": "round147_campaign_graph_and_unit_validation",
+      "status": "green_complete_campaign_manifest_patched_graph_structured_state_compileall_diff_byte_and_six_of_six_unittests",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/controls/conductor_round147_controls.md"
+    },
+    {
+      "id": "round147_proof_draft_refresh",
+      "status": "green_accepted_graph_only_fixed_order_t1_reduction_and_scoped_squarefree_H_obstruction_appended_after_patch",
+      "artifact": "state/best_proof_draft.md"
+    },
+    {
+      "id": "round147_campaign_closure",
+      "status": "green_manifest_plan_ledger_proof_draft_validation_records_failure_ledger_directives_and_round_artifacts_closed",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/synthesis.md"
+    },
+    {
+      "id": "round148_exact_transform_and_normalization",
+      "status": "green_finite_progression_support_character_Poisson_i_over_2_positive_saddle_e1over8_phase_amplitude_q_support_and_RD_target",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/candidates/conductor_round148_squarefree_reciprocal_transform_and_dispersion_no_go.md"
+    },
+    {
+      "id": "round148_boundary_and_remainder_ledger",
+      "status": "green_K6_four_q_ranges_scaled_derivative_finite_DQsqrtE_mass_stationary_nonstationary_powers_dyadic_tails_and_all_prefixes",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/reviews/blind_conductor_round148_candidate_final_v2.md"
+    },
+    {
+      "id": "round148_reduced_resonance_and_small_stratum",
+      "status": "green_j_equals_NL_minus_Aq0_qstar_exact_j0_divisor_family_and_qstar_le_Y_price_DY",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/reviews/source_conductor_round148_final.md"
+    },
+    {
+      "id": "round148_scoped_diagonal_obstruction",
+      "status": "green_literal_long_prefix_b1_n1_cells_QsqrtE_mass_common_d_norm_and_factor_R_positive_diagonal_capacity",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/reviews/blind_conductor_round148_candidate_final_v2.md"
+    },
+    {
+      "id": "round148_false_analogues_and_source_scope",
+      "status": "green_arbitrary_outer_coefficients_rejected_absolute_squarefree_QplusD_open_and_audited_theorem_interfaces_do_not_match",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/reviews/source_conductor_round148_final.md"
+    },
+    {
+      "id": "round148_H_interface_and_power_ledger",
+      "status": "green_no_termwise_lcm_powerful_map_factor_D_bandwidth_gap_and_five_distinct_capacity_placements",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/reviews/conductor_round148_adjudication.md"
+    },
+    {
+      "id": "round148_seam_review_gate",
+      "status": "green_terminal_source_and_hostile_blind_reviews_after_all_transform_remainder_diagonal_and_source_repairs",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/reviews/conductor_round148_adjudication.md"
+    },
+    {
+      "id": "round148_artifact_hygiene",
+      "status": "green_all_20_round_artifacts_strict_UTF8_LF_only_no_forbidden_controls_no_U200E_unique_equation_tags_and_diff_check_clean",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/controls/conductor_round148_controls.md"
+    },
+    {
+      "id": "round148_state_patch",
+      "status": "applied_2_create_5_update_12_reject_8_no_change_resulting_graph_8f1912eeda4843718379213478a839b30fb2694d6b169ac8decbab5ca3561176",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/state_patch.json"
+    },
+    {
+      "id": "round148_downstream_scope",
+      "status": "green_signed_t1_all_tge2_cross_owner_M1_M2_endpoint_M9_bridge_quarter_and_both_exponents_unchanged",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/synthesis.md"
+    },
+    {
+      "id": "round148_campaign_graph_and_unit_validation",
+      "status": "green_completed_campaign_manifest_patched_graph_structured_state_compileall_diff_byte_equation_and_six_of_six_unittests",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/controls/conductor_round148_controls.md"
+    },
+    {
+      "id": "round148_proof_draft_refresh",
+      "status": "green_accepted_graph_only_exact_reciprocal_transform_and_scoped_progression_dispersion_obstruction_appended_after_patch",
+      "artifact": "state/best_proof_draft.md"
+    },
+    {
+      "id": "round148_campaign_closure",
+      "status": "green_manifest_plan_ledger_proof_draft_validation_records_failure_ledger_directives_and_round_artifacts_closed",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate/synthesis.md"
+    },
+    {
+      "id": "round149_lcm_parity_and_local_primes",
+      "status": "green_exact_Cd_uv2_formula_odd_p_divides_do_square_cancellation_absent_p2_and_even_squarefree_d",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/reviews/source_conductor_round149_final.md"
+    },
+    {
+      "id": "round149_finite_gcd_lift_identity",
+      "status": "green_exact_lcm_then_common_gcd_recombination_character_phase_profile_support_prefix_and_all_lifts",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/candidates/conductor_round149_gcd_lift_compression_and_energy_boundary.md"
+    },
+    {
+      "id": "round149_prefix_uniform_coefficient_norms",
+      "status": "green_closed_cube_free_lift_formula_square_norm_weighted_l1_and_sqrtE_unweighted_capacities_for_arbitrary_prefix",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/reviews/blind_conductor_round149_math_review_v2.md"
+    },
+    {
+      "id": "round149_literal_diagonal",
+      "status": "green_DQ_energy_with_Q_le_R2_using_actual_d_dependent_coefficient_and_profile",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/controls/conductor_round149_controls.md"
+    },
+    {
+      "id": "round149_exact_N_alignments",
+      "status": "green_distinct_exact_offdiagonal_DXepsilon_full_phase_classes_DQ_common_factors_imprimitive_qdividesN_and_even_rows",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/reviews/source_conductor_round149_final.md"
+    },
+    {
+      "id": "round149_near_generic_kernel",
+      "status": "green_exact_h_r1_r2_delta_k_rho_collar_and_literal_moving_d_kernel_classified_with_nonexact_estimate_open",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/reports/gcd_lift_euler_compression_attack.md"
+    },
+    {
+      "id": "round149_source_interface",
+      "status": "green_Montgomery_Vaughan_fixed_vector_squarefree_progression_inverse_fraction_and_Wright_hypotheses_checked_in_primary_sources",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/reviews/discovery_source_conductor_round149_review.md"
+    },
+    {
+      "id": "round149_power_and_false_analogue_ledger",
+      "status": "green_diagonal_exact_low_denominator_triangle_unwrapped_and_wrapped_capacities_separated_and_no_upper_capacity_called_lower_bound",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/reviews/conductor_round149_adjudication.md"
+    },
+    {
+      "id": "round149_D1_profile_and_transform_control",
+      "status": "green_qdividesN_safe_D1L1_compulsory_and_second_derivative_claim_conditional_on_explicit_variation_only",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/reviews/blind_conductor_round149_math_review_v2.md"
+    },
+    {
+      "id": "round149_seam_review_gate",
+      "status": "green_terminal_blind_source_and_discovery_source_reviews_after_the_D1_diagnostic_repair",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/reviews/conductor_round149_adjudication.md"
+    },
+    {
+      "id": "round149_artifact_hygiene",
+      "status": "green_all_18_round_artifacts_strict_UTF8_LF_only_no_forbidden_controls_unique_candidate_equation_tags_and_diff_check_clean",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/controls/conductor_round149_controls.md"
+    },
+    {
+      "id": "round149_state_patch",
+      "status": "applied_2_create_5_update_12_reject_8_no_change_resulting_graph_b6c5ee5b0d51d347876b389c05c78596c069b190af715d297bd937701ea893b6",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/state_patch.json"
+    },
+    {
+      "id": "round149_downstream_scope",
+      "status": "green_moving_row_t1_all_tge2_cross_owner_M1_M2_endpoint_M9_bridge_quarter_and_both_exponents_unchanged",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/synthesis.md"
+    },
+    {
+      "id": "round149_campaign_graph_and_unit_validation",
+      "status": "green_completed_campaign_patched_graph_structured_state_compileall_diff_byte_equation_and_six_of_six_unittests",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/controls/conductor_round149_controls.md"
+    },
+    {
+      "id": "round149_proof_draft_refresh",
+      "status": "green_accepted_graph_only_gcd_lift_compression_norm_diagonal_exact_alignment_and_scoped_energy_obstruction_appended_after_patch",
+      "artifact": "state/best_proof_draft.md"
+    },
+    {
+      "id": "round149_campaign_closure",
+      "status": "green_manifest_ledger_proof_draft_validation_records_failure_ledger_directives_and_round_artifacts_closed",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate/synthesis.md"
+    },
+    {
+      "id": "round150_two_row_incidence_and_half_weight_norm",
+      "status": "green_exact_forced_excluded_prime_masks_arithmetic_projective_norm_joint_prefix_profile_scope_and_global_all_L_half_weight_norm",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/reviews/independent_conductor_round150_math_review.md"
+    },
+    {
+      "id": "round150_fixed_wrap_interval_and_count",
+      "status": "green_supported_factor_positivity_O1_interval_QminLoverh_raw_count_all_L_h_rows_kzero_both_signs_and_D1",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/reviews/blind_fixed_wrap_lemma_review.md"
+    },
+    {
+      "id": "round150_target_safe_wrap_packet",
+      "status": "green_each_fixed_wrap_DQ_and_any_O1plusR2overQ_packet_R2D_with_full_collar_cardinality_not_assumed",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/candidates/conductor_round150_small_wrap_collar_and_large_wrap_boundary.md"
+    },
+    {
+      "id": "round150_shifted_factor_and_all_shift_placement",
+      "status": "green_exact_identity_positive_nonzero_factors_kzero_separate_fixed_k_nonzero_divisor_recovery_and_adverse_absolute_all_shift_capacity_not_signed_lower_bound",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/reviews/conductor_round150_adjudication.md"
+    },
+    {
+      "id": "round150_bounded_M_actual_profile_edge",
+      "status": "green_Round148_finite_profile_variation_weighted_second_derivative_Abel_allowed_residue_classes_row_R_and_energy_R2D",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/reviews/source_conductor_round150_final.md"
+    },
+    {
+      "id": "round150_statement_only_profile_control",
+      "status": "green_arbitrary_bounded_smooth_profile_can_interpolate_finite_samples_but_does_not_refute_actual_profile_or_absolute_fixed_wrap_kernel",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/reports/blind_nonexact_correlation_feasibility.md"
+    },
+    {
+      "id": "round150_primary_source_and_large_wrap_scope",
+      "status": "green_double_large_sieve_quadratic_divisor_Kloosterman_determinant_squarefree_shift_and_van_der_Corput_hypotheses_checked_with_direct_no_match_only",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/reports/variable_row_collar_source_audit.md"
+    },
+    {
+      "id": "round150_D1_large_wrap_and_generic_boundary",
+      "status": "green_bounded_M_full_row_and_small_wraps_owned_growing_M_D1L1_large_wrap_actual_character_sum_and_generic_complement_open",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/reviews/independent_conductor_round150_math_review.md"
+    },
+    {
+      "id": "round150_seam_review_gate",
+      "status": "green_terminal_blind_math_and_source_reviews_after_projective_k_nonzero_residual_subscript_and_profile_variation_repairs",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/reviews/conductor_round150_adjudication.md"
+    },
+    {
+      "id": "round150_artifact_hygiene",
+      "status": "green_all_17_round_artifacts_strict_UTF8_LF_no_forbidden_controls_zero_width_or_BOM_unique_candidate_tags_and_diff_check_clean",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/controls/conductor_round150_controls.md"
+    },
+    {
+      "id": "round150_state_patch_dry_validation",
+      "status": "green_applied_2_create_5_update_9_reject_8_no_change_resulting_graph_521f626e4af7e75e29d2ba909efb0d48864d5da4785de786acbd746d7559c11f",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/state_patch.json"
+    },
+    {
+      "id": "round150_downstream_scope",
+      "status": "green_growing_large_wrap_generic_tge2_cross_owner_M1_M2_endpoint_M9_bridge_quarter_and_both_exponents_unchanged",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/synthesis.md"
+    },
+    {
+      "id": "round150_campaign_graph_and_unit_validation",
+      "status": "green_completed_campaign_patched_graph_structured_state_compileall_diff_equation_byte_and_six_of_six_unittests",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/controls/conductor_round150_controls.md"
+    },
+    {
+      "id": "round150_proof_draft_refresh",
+      "status": "green_accepted_graph_only_two_row_incidence_half_weight_fixed_wrap_packet_bounded_M_edge_and_scoped_large_wrap_obstruction_appended_after_patch",
+      "artifact": "state/best_proof_draft.md"
+    },
+    {
+      "id": "round150_campaign_closure",
+      "status": "green_manifest_ledger_proof_draft_validation_records_directives_and_round_artifacts_closed",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate/synthesis.md"
+    },
+    {
+      "id": "round151_character_transfer_and_inverse_fibre",
+      "status": "green_positive_shifted_factors_all_N_parities_both_k_signs_odd_quotient_character_transfer_and_exact_h_divisor_fibre",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/reviews/independent_conductor_round151_math_review.md"
+    },
+    {
+      "id": "round151_high_two_adic_owner",
+      "status": "green_wrap_support_NoverQ_multiples_of_R2_O1plusR2overQ_classes_and_complete_R2D_absolute_owner",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/candidates/conductor_round151_character_ranges_and_bprocess_boundary.md"
+    },
+    {
+      "id": "round151_actual_profile_all_scale_BV",
+      "status": "green_bulk_radial_cone_transition_width_product_component_sampling_zero_extension_and_prefix_owner_ledger",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/reviews/independent_conductor_round151_math_review.md"
+    },
+    {
+      "id": "round151_Bourgain_global_source_and_corridor",
+      "status": "green_Theorem4_direct_window_distinguished_from_Theorem6_global_pair_reciprocal_class_proper_intervals_edge_patch_and_D84R52_le_M29",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/reviews/source_conductor_round151_final.md"
+    },
+    {
+      "id": "round151_TTY_low_row_corridor",
+      "status": "green_exact_Mobius_character_BV_Abel_normalization_and_M819_ge_R1424D1816L0534_low_low_scope",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/reviews/preliminary_tty_corridor_review.md"
+    },
+    {
+      "id": "round151_boundary_complete_Bprocess",
+      "status": "green_actual_profile_zero_extension_exact_B11_coefficient_square_root_wave_target_safe_error_principal_only_self_return_and_all_M_capacity",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/reviews/independent_bprocess_candidate_final.md"
+    },
+    {
+      "id": "round151_shifted_source_direct_no_matches",
+      "status": "green_DFI_Cowan_Blomer_Harcos_and_Bettin_Chandee_printed_interfaces_checked_with_direct_specialization_scope_only",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/reviews/source_conductor_round151_final.md"
+    },
+    {
+      "id": "round151_row_collar_and_D1_scope",
+      "status": "green_D1_full_row_subtraction_owns_collar_in_Bourgain_range_Dgreater1_whole_row_not_isolated_collar_TTY_high_square_and_cross_open",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/reviews/independent_conductor_round151_math_review.md"
+    },
+    {
+      "id": "round151_seam_review_gate",
+      "status": "green_terminal_math_source_and_Bprocess_reviews_after_five_literalization_repairs_and_source_precision_update",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/reviews/conductor_round151_adjudication.md"
+    },
+    {
+      "id": "round151_artifact_hygiene",
+      "status": "green_all_19_round_artifacts_and_corrected_source_card_strict_UTF8_LF_no_forbidden_controls_unique_tags_balanced_displays_and_diff_clean",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/controls/conductor_round151_controls.md"
+    },
+    {
+      "id": "round151_state_patch",
+      "status": "applied_2_create_9_update_14_reject_8_no_change_resulting_graph_d09d0f8c1e7058a1e423e5249d3cf28b08d8478cff55ddd1c85b1d59bb177b2c",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/state_patch.json"
+    },
+    {
+      "id": "round151_downstream_scope",
+      "status": "green_low_adic_residual_generic_tge2_cross_owner_M1_M2_endpoint_M9_bridge_quarter_and_both_exponents_open_or_unchanged",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/synthesis.md"
+    },
+    {
+      "id": "round151_campaign_graph_and_unit_validation",
+      "status": "green_completed_campaign_patched_graph_structured_state_compileall_diff_equation_byte_and_six_of_six_unittests",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/controls/conductor_round151_controls.md"
+    },
+    {
+      "id": "round151_proof_draft_refresh",
+      "status": "green_accepted_graph_only_character_coordinates_high_adic_profile_BV_two_corridors_and_reciprocal_boundary_appended_after_patch",
+      "artifact": "state/best_proof_draft.md"
+    },
+    {
+      "id": "round151_campaign_closure",
+      "status": "green_manifest_ledger_proof_draft_validation_failure_directives_source_and_round_artifacts_closed",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate/synthesis.md"
+    },
+    {
+      "id": "round152_literal_wave_profile_and_boundary",
+      "status": "green_positive_odd_chi4_weight_actual_zero_extended_profile_exact_B11_coefficient_NfloorX_endpoints_and_owned_ranges",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/reviews/independent_conductor_round152_math_review.md"
+    },
+    {
+      "id": "round152_exact_arithmetic_pruning",
+      "status": "green_no_tie_exact_ray_all_parity_root_count_subN_k_interval_small_defect_large_square_factor_ceiling_and_disjoint_residual",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/reviews/hostile_square_root_pruning_review.md"
+    },
+    {
+      "id": "round152_BD_source_and_strict_range",
+      "status": "green_Bourgain_global_pair_TTY_D_maximum_Remark16_Lemma15_global_bridge_then_B_model_phase_BV_Abel_and_M449_ge_R780",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/reviews/source_conductor_round152_final.md"
+    },
+    {
+      "id": "round152_beta_cell_and_old_boundary_comparison",
+      "status": "green_alpha127over322_inside_printed_cell_exact_556over367731_gap_and_only_new_sliver_credited",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/reviews/source_conductor_round152_final.md"
+    },
+    {
+      "id": "round152_character_Mellin_and_transform_obstructions",
+      "status": "green_adjacent_full_phase_Aprocess_variable_character_loss_exact_three_term_power_root_number_dual_length_and_principal_self_return",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/reviews/independent_conductor_round152_math_review.md"
+    },
+    {
+      "id": "round152_source_no_matches_and_attribution_repairs",
+      "status": "green_mixed_Burgess_pointwise_L_higher_Voronoi_nonlinear_twist_scoped_no_matches_and_KP_LST_attributions_corrected",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/reviews/source_conductor_round152_final.md"
+    },
+    {
+      "id": "round152_seam_review_gate",
+      "status": "green_terminal_math_pruning_and_source_reviews_after_additive_asymptotic_boundary_wording_bridge_and_bibliographic_repairs",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/reviews/conductor_round152_adjudication.md"
+    },
+    {
+      "id": "round152_artifact_hygiene",
+      "status": "green_campaign_and_TTY_source_strict_UTF8_LF_no_forbidden_controls_BOM_U200E_replacement_duplicate_tags_or_unbalanced_displays",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/controls/conductor_round152_controls.md"
+    },
+    {
+      "id": "round152_state_patch",
+      "status": "applied_2_create_7_update_15_reject_8_no_change_resulting_graph_9ffef2e30c99d83d02d28141834b585d02dd77483fa7bfd8e572d45d6985fcc1",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/state_patch.json"
+    },
+    {
+      "id": "round152_downstream_scope",
+      "status": "green_Pstar_Dgreater1_Lgreater1_generic_tge2_cross_M1_M2_endpoint_M9_bridge_quarter_and_both_exponents_open_or_unchanged",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/synthesis.md"
+    },
+    {
+      "id": "round152_campaign_graph_and_unit_validation",
+      "status": "green_completed_campaign_patched_graph_structured_state_compileall_diff_byte_equation_display_and_six_of_six_unittests",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/controls/conductor_round152_controls.md"
+    },
+    {
+      "id": "round152_proof_draft_refresh",
+      "status": "green_accepted_graph_only_arithmetic_pruning_BD_strict_range_and_scoped_method_obstruction_appended_after_patch",
+      "artifact": "state/best_proof_draft.md"
+    },
+    {
+      "id": "round152_campaign_closure",
+      "status": "green_manifest_ledger_proof_draft_validation_failure_directives_source_and_round_artifacts_closed",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-square-root-wave-gate/synthesis.md"
+    },
+    {
+      "id": "round153_exact_Mobius_recombination",
+      "status": "green_literal_chi4_profile_mask_all_odd_variables_no_false_gcd_complete_mu2_inversion_r_equals_as_Cs_and_small_r_cancellation",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/reviews/independent_round153_mobius_collapse_math_review.md"
+    },
+    {
+      "id": "round153_boundary_and_Round152_owner_seam",
+      "status": "green_ceiling_boundary_divisor_count_actual_weight_exact_negative_L2_crosscheck_preCauchy_mask_removal_and_B11_scope",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/reviews/independent_round153_mobius_collapse_math_review.md"
+    },
+    {
+      "id": "round153_bilinear_power_collision_and_scope",
+      "status": "green_corrected_BD_A_exponent_Cauchy_coefficients_diagonals_product_fibres_spacing_allB_capacity_and_future_signed_route_scope",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/reviews/hostile_round153_bilinear_scope_review.md"
+    },
+    {
+      "id": "round153_primary_source_gate",
+      "status": "green_Bourgain_TTY_one_variable_boundary_Robert_Sargos_literal_mismatch_and_power_other_direct_no_matches_and_nonimpossibility_scope",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/reviews/source_conductor_round153_final.md"
+    },
+    {
+      "id": "round153_terminal_review_gate",
+      "status": "green_independent_math_hostile_method_scope_and_primary_source_reviews_after_exponent_spacing_mask_and_wording_repairs",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/reviews/conductor_round153_adjudication.md"
+    },
+    {
+      "id": "round153_artifact_hygiene",
+      "status": "green_all_17_preMutation_artifacts_strict_UTF8_LF_no_controls_zero_width_BOM_replacement_duplicate_tags_unbalanced_displays_or_missing_newline",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/controls/conductor_round153_controls.md"
+    },
+    {
+      "id": "round153_state_patch",
+      "status": "applied_1_create_4_update_18_reject_8_no_change_resulting_graph_6a36e4063b8f944bf5349c333e6cbf569694c8bdbeaa6314cad596631c125984",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/state_patch.json"
+    },
+    {
+      "id": "round153_downstream_scope",
+      "status": "green_direct_wave_Dgreater1_Lgreater1_generic_tge2_cross_M1_M2_endpoint_M9_bridge_quarter_and_both_exponents_open_or_unchanged",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/synthesis.md"
+    },
+    {
+      "id": "round153_campaign_graph_and_unit_validation",
+      "status": "green_completed_campaign_patched_graph_seven_structured_files_compileall_diff_byte_equation_display_and_six_of_six_unittests",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/controls/conductor_round153_controls.md"
+    },
+    {
+      "id": "round153_proof_draft_refresh",
+      "status": "green_accepted_graph_only_exact_complete_Mobius_recombination_safe_boundary_and_route_scoped_obstruction_appended_after_patch",
+      "artifact": "state/best_proof_draft.md"
+    },
+    {
+      "id": "round153_campaign_closure",
+      "status": "green_manifest_ledger_proof_draft_validation_failure_directives_and_round_artifacts_closed",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate/synthesis.md"
+    },
+    {
+      "id": "round154_exact_root_cell_and_linearization",
+      "status": "green_no_tie_asymmetric_cell_converse_positive_odd_quotient_support_injectivity_selected_graph_error_and_no_ambient_overcount",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/reviews/math_conductor_round154_final.md"
+    },
+    {
+      "id": "round154_logarithmic_collar",
+      "status": "green_all_parity_prime_power_root_bound_summed_gcd_count_actual_weight_both_signs_endpoints_fixed_polylog_only",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/reviews/hostile_conductor_round154_final.md"
+    },
+    {
+      "id": "round154_selected_and_ambient_row_seam",
+      "status": "green_exact_mod4N_selector_postselection_rank_one_Cauchy_equality_and_lawful_ambient_rows_kept_distinct",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/candidates/conductor_round154_root_dispersion_adjudication.md"
+    },
+    {
+      "id": "round154_ambient_completion_normalization",
+      "status": "green_all_imprimitive_d_strata_even_dual_condition_dsqrtqprime_normalization_zero_mode_outer_j_sign_profile_and_endpoint_ledger",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/reviews/math_conductor_round154_final.md"
+    },
+    {
+      "id": "round154_DFI_source_gate",
+      "status": "green_Lemma6point1_theta_multiplier_modulus_gcd_and_tau_bound_exact_official_erratum_unrelated_remaining_nonseparable_family_unmatched",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/reviews/source_conductor_round154_final.md"
+    },
+    {
+      "id": "round154_reciprocal_self_return",
+      "status": "green_scalar_mask_restoration_full_cell_partition_centered_negative_row_saddle_phase_symbol_and_inherited_Round152_remainder_scope",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/reviews/hostile_conductor_round154_final.md"
+    },
+    {
+      "id": "round154_terminal_review_gate",
+      "status": "green_independent_math_hostile_scope_and_primary_source_reviews_after_normalization_scope_bibliographic_and_byte_hygiene_repairs",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/reviews/conductor_round154_adjudication.md"
+    },
+    {
+      "id": "round154_artifact_hygiene",
+      "status": "green_all_17_preMutation_artifacts_strict_UTF8_LF_no_controls_zero_width_BOM_replacement_duplicate_tags_unbalanced_displays_or_missing_newline",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/controls/conductor_round154_controls.md"
+    },
+    {
+      "id": "round154_state_patch",
+      "status": "applied_3_create_5_update_21_reject_8_no_change_resulting_graph_84bbcb3413936c9b672c829cdba97b8d0bde69f7a6df677b61f24e9ec27e243a",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/state_patch.json"
+    },
+    {
+      "id": "round154_downstream_scope",
+      "status": "green_outer_defect_Dgreater1_Lgreater1_generic_tge2_cross_M1_M2_endpoint_M9_bridge_quarter_open_and_both_exponents_unchanged",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/synthesis.md"
+    },
+    {
+      "id": "round154_campaign_graph_and_unit_validation",
+      "status": "green_completed_campaign_patched_graph_structured_state_compileall_diff_byte_equation_display_and_six_of_six_unittests",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/controls/conductor_round154_controls.md"
+    },
+    {
+      "id": "round154_proof_draft_refresh",
+      "status": "green_accepted_graph_only_root_cell_linearization_fixed_polylog_collar_theta_completion_and_scoped_self_return_obstruction_appended_after_patch",
+      "artifact": "state/best_proof_draft.md"
+    },
+    {
+      "id": "round154_campaign_closure",
+      "status": "green_manifest_ledger_proof_draft_validation_directives_and_round_artifacts_closed",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/synthesis.md"
+    },
+    {
+      "id": "round155_complete_half_period_inverse",
+      "status": "green_exact_c_over_2_period_half_Gauss_sign_theta_multiplier_dc_equals_q_arbitrary_N_gcd_partition_and_selector_return",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-theta-dispersion-gate/reviews/independent_inverse_gauss_math_review.md"
+    },
+    {
+      "id": "round155_folded_Parseval_and_zero_mode",
+      "status": "green_exact_2N_over_d_folds_both_norm_powers_zero_row_upper_ledger_nonzero_capacity_and_no_signed_lower_claim",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-theta-dispersion-gate/reviews/hostile_conductor_round155_final.md"
+    },
+    {
+      "id": "round155_partial_transform_and_flat_arc",
+      "status": "green_eta_u_minus_ax_nonseparability_hypothetical_Mthreehalves_threshold_and_both_wrapped_reciprocal_branches",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-theta-dispersion-gate/reviews/independent_inverse_gauss_math_review.md"
+    },
+    {
+      "id": "round155_blind_selected_interface",
+      "status": "green_exact_cell_selected_only_error_incidence_capacity_BV_partial_sum_seam_and_ordinary_K_surrogate_quarantined",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-theta-dispersion-gate/reports/blind_linearized_cross_fibre_feasibility.md"
+    },
+    {
+      "id": "round155_primary_source_gate",
+      "status": "green_DFI_termwise_exact_modulus_average_nonzero_frequency_spectral_piece_fixed_kernel_coefficient_and_zero_row_hypotheses_audited",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-theta-dispersion-gate/reviews/independent_spectral_source_review.md"
+    },
+    {
+      "id": "round155_terminal_review_gate",
+      "status": "green_independent_math_source_and_hostile_scope_reviews_after_source_precision_arc_and_byte_hygiene_repairs",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-theta-dispersion-gate/reviews/conductor_round155_adjudication.md"
+    },
+    {
+      "id": "round155_artifact_hygiene",
+      "status": "green_all_19_final_campaign_artifacts_strict_UTF8_LF_no_controls_zero_width_BOM_replacement_duplicate_tags_unbalanced_displays_or_missing_newline",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-theta-dispersion-gate/controls/conductor_round155_controls.md"
+    },
+    {
+      "id": "round155_state_patch",
+      "status": "applied_2_create_5_update_20_reject_8_no_change_resulting_graph_f9866ea08923ae28f9631e503d2a5eb6be3cd85a09eb05505deec2903d1658b6",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-theta-dispersion-gate/state_patch.json"
+    },
+    {
+      "id": "round155_downstream_scope",
+      "status": "green_zero_row_nonzero_matrix_Dgreater1_Lgreater1_generic_tge2_cross_M1_M2_endpoint_M9_bridge_quarter_open_and_both_exponents_unchanged",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-theta-dispersion-gate/synthesis.md"
+    },
+    {
+      "id": "round155_campaign_graph_and_unit_validation",
+      "status": "green_completed_campaign_patched_graph_structured_state_compileall_diff_byte_equation_display_and_six_of_six_unittests",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-theta-dispersion-gate/controls/conductor_round155_controls.md"
+    },
+    {
+      "id": "round155_proof_draft_refresh",
+      "status": "green_accepted_graph_only_inverse_Gauss_folded_Parseval_zero_mode_partial_transform_source_and_first_open_row_appended_after_patch",
+      "artifact": "state/best_proof_draft.md"
+    },
+    {
+      "id": "round155_campaign_closure",
+      "status": "green_manifest_ledger_proof_draft_validation_failure_directives_and_round_artifacts_closed",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-theta-dispersion-gate/synthesis.md"
+    },
+    {
+      "id": "round156_character_conductors_and_local_factors",
+      "status": "green_both_fundamental_discriminants_induced_formula_odd_prime_powers_conductors_1_4_8_principal_Ramanujan_squareful_support_phases_and_two_adic_half_support",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-zero-mode-gate/reviews/independent_recombination_math_round156.md"
+    },
+    {
+      "id": "round156_all_d_recombination_and_interval",
+      "status": "green_exact_selector_gcd_partition_dsqrtc_phase_remaining_q_inverse_root_identity_Fourier_magnitude_zero_even_modes_and_sqrtN_interval_bound",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-zero-mode-gate/reviews/independent_recombination_math_round156.md"
+    },
+    {
+      "id": "round156_literal_Bhat0_variation_and_endpoints",
+      "status": "green_zero_extended_real_profile_monotone_sampling_component_independence_exact_phase_derivative_asymmetric_cell_strict_blocks_both_signs_subsequence_contraction_and_B11",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-zero-mode-gate/reviews/hostile_profile_endpoint_round156_final.md"
+    },
+    {
+      "id": "round156_independent_fixed_d_control",
+      "status": "green_nonzero_unit_frequencies_finite_geometric_series_clogc_interval_bound_Abel_and_restored_all_d_Mminusquarter_power",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-zero-mode-gate/reports/blind_zero_mode_character_rederivation.md"
+    },
+    {
+      "id": "round156_source_and_legal_method_gate",
+      "status": "green_primitive_phases_induced_transform_Ramanujan_two_adic_values_optional_Polya_Vinogradov_and_elementary_source_independence_with_initial_no_match_superseded_for_vzero",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-zero-mode-gate/reviews/independent_source_round156_final.md"
+    },
+    {
+      "id": "round156_terminal_review_gate",
+      "status": "green_independent_recombination_math_independent_source_and_hostile_literal_profile_endpoint_reviews_with_first_defect_none",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-zero-mode-gate/reviews/conductor_round156_adjudication.md"
+    },
+    {
+      "id": "round156_preMutation_artifact_hygiene",
+      "status": "green_all_17_campaign_artifacts_strict_UTF8_LF_no_controls_zero_width_BOM_replacement_duplicate_tags_unbalanced_displays_malformed_spacing_or_missing_newline",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-zero-mode-gate/candidates/conductor_round156_zero_mode_adjudication.md"
+    },
+    {
+      "id": "round156_state_patch_dry_validation",
+      "status": "green_patch_OK_1_create_7_update_18_reject_8_no_change_against_starting_graph",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-zero-mode-gate/state_patch.json"
+    },
+    {
+      "id": "round156_downstream_scope",
+      "status": "green_only_vzero_closed_nonzero_matrix_complete_defect_range_Dgreater1_Lgreater1_generic_tge2_cross_M1_M2_endpoint_M9_bridge_quarter_and_both_exponents_open_or_unchanged",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-zero-mode-gate/reviews/conductor_round156_adjudication.md"
+    },
+    {
+      "id": "round156_state_patch",
+      "status": "applied_1_create_7_update_18_reject_8_no_change_resulting_graph_3b48c540f7acc5b3e2886279f735072e6c66ee14704e77cd05c74fe24f7b39ea",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-zero-mode-gate/state_patch.json"
+    },
+    {
+      "id": "round156_campaign_graph_and_unit_validation",
+      "status": "green_completed_campaign_patched_graph_seven_structured_files_compileall_diff_byte_equation_display_and_six_of_six_unittests",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-zero-mode-gate/controls/conductor_round156_controls.md"
+    },
+    {
+      "id": "round156_proof_draft_refresh",
+      "status": "green_accepted_graph_only_zero_row_BV_recombination_interval_local_arithmetic_and_scope_appended_after_patch",
+      "artifact": "state/best_proof_draft.md"
+    },
+    {
+      "id": "round156_campaign_closure",
+      "status": "green_manifest_ledger_proof_draft_validation_failure_directives_controls_and_round_artifacts_closed",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-zero-mode-gate/synthesis.md"
+    },
+    {
+      "id": "round157_starting_graph_and_campaign",
+      "status": "green_graph_3b48c540_round156_closed_one_frozen_nonzero_matrix_objective_three_orthogonal_tasks_and_100_percent_analytic_allocation",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-nonzero-theta-matrix-gate/plan.json"
+    },
+    {
+      "id": "round157_centered_physical_seed",
+      "status": "candidate_exact_complete_minus_zero_projection_identity_pending_independent_rederivation_and_quantitative_discrepancy_proof",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-nonzero-theta-matrix-gate/candidates/conductor_round157_centered_seed.md"
+    },
+    {
+      "id": "round157_isolation_and_capacity_controls",
+      "status": "green_complete_resummation_zero_row_termwise_DFI_Parseval_separated_weights_fixed_v_absolute_v_Fourier_L1_bare_arc_and_hypothetical_capacity_frozen_as_gains",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-nonzero-theta-matrix-gate/barrier_packet.md"
+    },
+    {
+      "id": "round157_exact_centering_orbit_and_discrepancy_math",
+      "status": "green_exact_one_over_4N_centering_constant_tail_single_zero_subtraction_complex_complementary_pairs_unique_fold_moving_cell_control_completion_and_restored_capacity_ledgers",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-nonzero-theta-matrix-gate/reviews/independent_centered_math_round157.md"
+    },
+    {
+      "id": "round157_Nyquist_fold_target",
+      "status": "green_unique_v_equals_H_over_2_q_over_2_argument_literal_complex_spatial_BV_alternating_Abel_nonzero_twisted_interval_all_d_power_and_Mminusquarter_target",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-nonzero-theta-matrix-gate/reviews/independent_nyquist_fold_round157.md"
+    },
+    {
+      "id": "round157_literal_profile_endpoint_and_blind_scope",
+      "status": "green_profiles_transitions_zero_extension_both_cells_strict_endpoints_c4_arbitrary_N_all_d_external_seam_blind_fold_obstruction_superseded_and_low_band_warning_retained",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-nonzero-theta-matrix-gate/reviews/hostile_profile_scope_round157.md"
+    },
+    {
+      "id": "round157_corrected_selected_incidence_capacity",
+      "status": "green_nearest_cell_intervals_partition_positive_integers_L_bounded_by_min_M_V_square_root_conditionally_target_safe_all_V_but_no_signed_theorem_or_range",
+      "artifact": "proofs/kernels/m9_m1_d1_nonzero_centering_nyquist_fold.md"
+    },
+    {
+      "id": "round157_primary_source_gate",
+      "status": "green_DFI_pointwise_exact_current_fixed_modulus_ordinary_prime_squarefree_prime_square_and_modulus_average_interfaces_audited_entrywise_nuclear_norm_and_all_spectral_pieces_retained_no_literal_match_through_2026_08_25_not_impossibility",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-nonzero-theta-matrix-gate/reviews/independent_source_round157.md"
+    },
+    {
+      "id": "round157_terminal_mathematical_review_gate",
+      "status": "green_independent_centered_math_independent_fold_hostile_profile_scope_and_independent_source_reviews_after_pair_range_source_precision_and_Frobenius_repairs",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-nonzero-theta-matrix-gate/reviews/conductor_round157_adjudication.md"
+    },
+    {
+      "id": "round157_state_patch_scope_and_dry_validation",
+      "status": "green_patch_OK_1_create_8_update_2_correct_rejected_23_reject_8_no_change_all_evidence_paths_cycle_safe_and_no_range_or_exponent_overpromotion",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-nonzero-theta-matrix-gate/reviews/state_patch_scope_round157.md"
+    },
+    {
+      "id": "round157_preMutation_artifact_hygiene_and_render",
+      "status": "green_21_files_260_unique_tags_strict_UTF8_LF_no_controls_zero_width_BOM_replacement_trailing_duplicate_tags_unbalanced_displays_legacy_TeX_or_missing_newline_and_19_markdown_previews_rendered",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-nonzero-theta-matrix-gate/controls/conductor_round157_controls.md"
+    },
+    {
+      "id": "round157_downstream_scope",
+      "status": "green_only_exact_centering_and_Nyquist_fold_closed_paired_interior_complete_D1_range_Dgreater1_Lgreater1_generic_tge2_cross_M1_M2_endpoint_M9_bridge_quarter_open_and_both_exponents_unchanged",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-nonzero-theta-matrix-gate/reviews/conductor_round157_adjudication.md"
+    },
+    {
+      "id": "round157_state_patch",
+      "status": "applied_1_create_8_update_2_correct_rejected_23_reject_8_no_change_resulting_graph_3acbfaf6fb95047babd19800dee4152fb60cb408197a8ceac93931a20c57491f",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-nonzero-theta-matrix-gate/state_patch.json"
+    },
+    {
+      "id": "round157_campaign_graph_structured_compile_and_unit_validation",
+      "status": "green_completed_campaign_patched_graph_seven_structured_files_compileall_and_six_of_six_unittests",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-nonzero-theta-matrix-gate/controls/conductor_round157_controls.md"
+    },
+    {
+      "id": "round157_proof_draft_refresh",
+      "status": "green_accepted_graph_only_exact_centering_orbit_split_Nyquist_fold_selected_capacity_and_scoped_method_source_frontier_appended_after_patch",
+      "artifact": "state/best_proof_draft.md"
+    },
+    {
+      "id": "round157_final_artifact_hygiene",
+      "status": "green_campaign_21_files_260_unique_tags_738_bracket_tokens_and_expanded_35_files_615_unique_tags_1890_bracket_854_double_dollar_tokens_strict_UTF8_LF_no_controls_BOM_replacement_zero_width_trailing_duplicate_or_unbalanced_displays",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-nonzero-theta-matrix-gate/controls/conductor_round157_controls.md"
+    },
+    {
+      "id": "round157_campaign_closure",
+      "status": "green_manifest_ledger_proof_draft_validation_failure_directives_reading_packet_controls_and_round_artifacts_closed_no_exponent_change",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-nonzero-theta-matrix-gate/synthesis.md"
+    },
+    {
+      "id": "round158_starting_graph_and_campaign",
+      "status": "green_graph_3acbfaf6_Round157_closed_one_frozen_paired_interior_cell_trace_objective_three_orthogonal_tasks_and_100_percent_analytic_allocation",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-paired-interior-cell-trace-gate/plan.json"
+    },
+    {
+      "id": "round158_sign_adapted_trace_seed",
+      "status": "candidate_positive_prefix_negative_suffix_full_frequency_physical_inversion_safe_zero_fold_trace_endpoint_p_adic_and_strict_selected_survivor_pending_independent_review",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-paired-interior-cell-trace-gate/candidates/conductor_round158_cell_trace_seed.md"
+    },
+    {
+      "id": "round158_barrier_and_scope_controls",
+      "status": "green_endpoint_polynomials_only_s_equal_j_total_rows_not_Abel_pieces_support_not_cancellation_and_trace_not_profile_bulk_frozen_as_false_gains",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-paired-interior-cell-trace-gate/barrier_packet.md"
+    },
+    {
+      "id": "round158_sign_adapted_Abel_algebra",
+      "status": "green_positive_prefix_negative_suffix_both_moving_atoms_positive_exact_positive_right_negative_left_outer_terms_and_two_profile_bulk_remainders_quarantined",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-paired-interior-cell-trace-gate/reviews/independent_trace_math_round158.md"
+    },
+    {
+      "id": "round158_full_frequency_inversion",
+      "status": "green_half_period_theta_inversion_all_odd_divisor_normalization_exact_GN_prefix_suffix_physical_trace_and_c4_control",
+      "artifact": "proofs/kernels/m9_m1_d1_paired_interior_cell_trace_reduction.md"
+    },
+    {
+      "id": "round158_special_trace_frequencies",
+      "status": "green_individual_vzero_and_Nyquist_Abel_trace_pieces_directly_O_Mminusquarter_without_whole_row_transfer",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-paired-interior-cell-trace-gate/reviews/independent_trace_math_round158.md"
+    },
+    {
+      "id": "round158_endpoint_prime_power_table",
+      "status": "green_j_times_jminus1_two_roots_every_prime_power_and_j2plusjplus1_complete_p2_p3_and_pmod3_table_endpoint_face_target_safe",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-paired-interior-cell-trace-gate/reviews/independent_blind_reconciliation_round158.md"
+    },
+    {
+      "id": "round158_strict_selected_reduction_and_power",
+      "status": "green_exact_two_selectors_distinct_boundary_profiles_quotient_character_support_min_M_V_top_block_only_scalar_target_one_raw_target_Mthreequarters_absolute_capacity_Monequarter",
+      "artifact": "proofs/kernels/m9_m1_d1_paired_interior_cell_trace_reduction.md"
+    },
+    {
+      "id": "round158_method_and_source_gate",
+      "status": "green_named_second_derivative_exponent_pair_incomplete_quadratic_and_favorable_transformed_models_fail_frozen_range_residual_phase_k_dependent_cutoff_dated_literal_source_no_match",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-paired-interior-cell-trace-gate/reviews/independent_source_round158.md"
+    },
+    {
+      "id": "round158_terminal_mathematical_review_gate",
+      "status": "green_independent_blind_reconciliation_independent_trace_math_hostile_profile_power_and_repaired_independent_source_reviews",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-paired-interior-cell-trace-gate/reviews/conductor_round158_adjudication.md"
+    },
+    {
+      "id": "round158_state_patch_scope_and_validation",
+      "status": "green_patch_1_create_8_update_1_correct_rejected_25_reject_8_no_change_all_evidence_paths_present_cycle_safe_no_target_range_or_exponent_overpromotion",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-paired-interior-cell-trace-gate/reviews/state_patch_scope_round158.md"
+    },
+    {
+      "id": "round158_state_patch",
+      "status": "applied_1_create_8_update_1_correct_rejected_25_reject_8_no_change_resulting_graph_8a0f917fb8117e9dbaf287d9f773046ff201729d2d8d8c3df1a51bca7815574b",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-paired-interior-cell-trace-gate/state_patch.json"
+    },
+    {
+      "id": "round158_downstream_scope",
+      "status": "green_trace_target_outer_endpoints_profile_bulk_paired_matrix_complete_D1_power_range_Dgreater1_Lgreater1_generic_t1_original_tge2_cross_M1_M2_endpoint_M9_bridge_quarter_and_both_exponents_open_or_unchanged",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-paired-interior-cell-trace-gate/reviews/conductor_round158_adjudication.md"
+    },
+    {
+      "id": "round158_proof_draft_refresh",
+      "status": "green_accepted_graph_only_Abel_signs_full_frequency_trace_special_trace_rows_endpoint_table_strict_reduction_power_calibration_and_scoped_no_go_appended_after_patch",
+      "artifact": "state/best_proof_draft.md"
+    },
+    {
+      "id": "round158_campaign_graph_structured_compile_unit_render_and_hygiene_validation",
+      "status": "green_completed_campaign_patched_graph_seven_structured_files_compileall_six_of_six_unittests_diff_byte_equation_display_and_all_markdown_previews",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-paired-interior-cell-trace-gate/controls/conductor_round158_controls.md"
+    },
+    {
+      "id": "round158_campaign_closure",
+      "status": "green_manifest_ledger_proof_draft_validation_failure_directives_reading_packet_controls_and_round_artifacts_closed_no_exponent_change",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-paired-interior-cell-trace-gate/synthesis.md"
+    },
+    {
+      "id": "round159_starting_graph_and_campaign",
+      "status": "green_graph_8a0f917f_Round158_fully_closed_one_frozen_full_Abel_commutator_objective_three_orthogonal_tasks_and_100_percent_analytic_allocation",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-abel-commutator-recombination-gate/plan.json"
+    },
+    {
+      "id": "round159_common_profile_seed",
+      "status": "candidate_six_line_Abel_reconstruction_full_frequency_physical_row_unique_nearest_cell_quotient_profile_integral_phase_shift_and_variable_residual_mask_pending_independent_review",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-abel-commutator-recombination-gate/candidates/conductor_round159_common_profile_seed.md"
+    },
+    {
+      "id": "round159_barrier_and_scope_controls",
+      "status": "green_all_outer_bulk_trace_transition_frequency_special_row_variable_mask_raw_target_external_scalar_and_downstream_false_gains_frozen",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-abel-commutator-recombination-gate/barrier_packet.md"
+    },
+    {
+      "id": "round159_full_Abel_reconstruction",
+      "status": "green_two_exact_three_line_telescopes_both_moving_atoms_positive_outer_endpoints_b_and_minusb_empty_singleton_and_zero_extended_transitions_literal",
+      "artifact": "proofs/kernels/m9_m1_d1_full_abel_common_profile_recombination.md"
+    },
+    {
+      "id": "round159_complete_inversion_and_common_profile",
+      "status": "green_all_d_all_v_constant_exact_whole_zero_and_Nyquist_subtracted_once_actual_lift_unique_nearest_cell_and_Round154_common_profile_restored",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-abel-commutator-recombination-gate/reviews/independent_kernel_line_round159.md"
+    },
+    {
+      "id": "round159_variable_mask_and_shifted_mode",
+      "status": "green_exact_quadratic_moving_boundaries_strict_closed_clipping_raw_Mthreequarters_target_and_hminus1_chi4_mode_safe_only",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-abel-commutator-recombination-gate/reviews/hostile_power_source_round159.md"
+    },
+    {
+      "id": "round159_method_source_and_power_gate",
+      "status": "green_complete_ET_literal_Fejer_root_incidence_transformed_pair_Bprocess_and_incomplete_quadratic_ledgers_all_route_scoped_outside_frozen_cone_no_source_match",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-abel-commutator-recombination-gate/reports/common_profile_mask_method_audit.md"
+    },
+    {
+      "id": "round159_terminal_mathematical_review_gate",
+      "status": "green_lift_normalization_kernel_line_and_hostile_power_source_reviews_after_precision_and_periodic_wrap_repairs",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-abel-commutator-recombination-gate/reviews/conductor_round159_adjudication.md"
+    },
+    {
+      "id": "round159_state_patch_scope_and_validation",
+      "status": "green_patch_1_create_9_update_22_reject_8_no_change_all_evidence_paths_present_cycle_safe_Round158_preserved_no_target_range_or_exponent_overpromotion",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-abel-commutator-recombination-gate/reviews/state_patch_scope_round159.md"
+    },
+    {
+      "id": "round159_state_patch",
+      "status": "applied_1_create_9_update_22_reject_8_no_change_resulting_graph_4ad56f62aeb814c11c31fe655bc48da6d74639e3bd61077e9496d647c366c41d",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-abel-commutator-recombination-gate/state_patch.json"
+    },
+    {
+      "id": "round159_downstream_scope",
+      "status": "green_common_profile_raw_target_Dgreater1_Lgreater1_generic_t1_original_tge2_cross_remaining_M1_all_M2_endpoint_M9_bridge_quarter_and_both_exponents_open_or_unchanged",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-abel-commutator-recombination-gate/reviews/conductor_round159_adjudication.md"
+    },
+    {
+      "id": "round159_proof_draft_refresh",
+      "status": "green_accepted_graph_only_six_line_telescope_complete_inversion_common_profile_variable_mask_target_calibration_and_scoped_no_go_appended_after_patch",
+      "artifact": "state/best_proof_draft.md"
+    },
+    {
+      "id": "round159_campaign_graph_structured_compile_unit_render_and_hygiene_validation",
+      "status": "green_completed_campaign_patched_graph_structured_files_compileall_unittests_diff_byte_equation_display_and_all_markdown_previews",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-abel-commutator-recombination-gate/controls/conductor_round159_controls.md"
+    },
+    {
+      "id": "round159_campaign_closure",
+      "status": "green_manifest_ledger_proof_draft_validation_failure_directives_reading_packet_controls_and_round_artifacts_closed_no_exponent_change",
+      "artifact": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-abel-commutator-recombination-gate/synthesis.md"
+    },
+    {
+      "id": "round160_starting_graph_and_campaign",
+      "status": "green_graph_4ad56f62_Round159_closed_one_frozen_inverse_selector_reciprocity_objective_three_orthogonal_tasks_and_100_percent_analytic_allocation",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-inverse-selector-reciprocity-gate/plan.json"
+    },
+    {
+      "id": "round160_reciprocity_seed",
+      "status": "candidate_exact_additive_reciprocity_short_j_modulus_centered_matrix_full_h_self_return_and_boundary_power_pending_independent_review",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-inverse-selector-reciprocity-gate/candidates/conductor_round160_reciprocity_seed.md"
+    },
+    {
+      "id": "round160_projective_kernel_candidate",
+      "status": "candidate_exact_unit_residue_nonzero_h_singular_spectrum_nuclear_inflation_and_fourier_bandwidth_pending_independent_review_and_profile_scope_repair",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-inverse-selector-reciprocity-gate/candidates/conductor_round160_reciprocity_projective_obstruction.md"
+    },
+    {
+      "id": "round160_barrier_and_scope_controls",
+      "status": "green_reciprocity_not_saving_primitive_g1_full_long_h_residue_projective_level_four_eight_endpoint_power_and_owner_false_gains_frozen",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-inverse-selector-reciprocity-gate/barrier_packet.md"
+    },
+    {
+      "id": "round160_exact_reciprocity_and_reconstruction",
+      "status": "green_all_representatives_even_odd_j_literal_1_over_gnj_both_characters_complete_h_self_return_and_single_hzero_deletion",
+      "artifact": "proofs/kernels/m9_m2_unbalanced_inverse_selector_reciprocity_projective_obstruction.md"
+    },
+    {
+      "id": "round160_unweighted_projective_kernel",
+      "status": "green_exact_jI_minus_11star_spectrum_nuclear_and_Hilbert_Schmidt_norms_full_positive_block_orthonormal_rows_and_scalarization_triangle_scope",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-inverse-selector-reciprocity-gate/reviews/exact_kernel_power_review.md"
+    },
+    {
+      "id": "round160_long_frequency_and_boundary_power",
+      "status": "green_exact_sqrt_ceil_nminus1_over_j_compression_positive_h_equal_mj_survive_projective_and_long_block_capacities_exceed_missing_power_pointwise_no_open_face_margin",
+      "artifact": "proofs/kernels/m9_m2_unbalanced_inverse_selector_reciprocity_projective_obstruction.md"
+    },
+    {
+      "id": "round160_source_and_level_gate",
+      "status": "green_named_scalar_interfaces_no_owner_saving_match_growing_levels_all_spectral_pieces_long_complement_and_chi4_encoding_charged_vector_theorem_open",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-inverse-selector-reciprocity-gate/reviews/source_level_seam_review.md"
+    },
+    {
+      "id": "round160_weighted_and_vector_scope",
+      "status": "green_no_profile_lower_buffer_no_unweighted_to_weighted_or_entrywise_Kloosterman_transfer_no_signed_lower_bound_and_no_vector_impossibility",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-inverse-selector-reciprocity-gate/reviews/scope_hygiene_review.md"
+    },
+    {
+      "id": "round160_terminal_mathematical_review_gate",
+      "status": "green_blind_post_blind_exact_power_source_level_scope_hygiene_and_conductor_adjudication_after_all_precision_repairs",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-inverse-selector-reciprocity-gate/reviews/conductor_round160_adjudication.md"
+    },
+    {
+      "id": "round160_state_patch_scope_and_validation",
+      "status": "green_patch_1_create_4_update_15_reject_11_no_change_all_dependencies_and_evidence_present_cycle_safe_weighted_vector_owner_downstream_and_exponent_quarantined",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-inverse-selector-reciprocity-gate/reviews/state_patch_scope_round160.md"
+    },
+    {
+      "id": "round160_state_patch",
+      "status": "applied_1_create_4_update_15_reject_11_no_change_resulting_graph_7e68cfd355ef48407712d3216382a1a54a28be9a27ac9e15c3fd1e59e081a447",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-inverse-selector-reciprocity-gate/state_patch.json"
+    },
+    {
+      "id": "round160_downstream_scope",
+      "status": "green_UNBAL_target_hard_TOP_BAL_M9_M2_all_M1_endpoint_M9_bridge_quarter_and_both_exponents_open_or_unchanged",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-inverse-selector-reciprocity-gate/synthesis.md"
+    },
+    {
+      "id": "round160_proof_draft_refresh",
+      "status": "green_accepted_graph_only_reciprocity_reconstruction_finite_spectrum_long_frequency_power_source_and_scoped_no_go_appended_after_patch",
+      "artifact": "state/best_proof_draft.md"
+    },
+    {
+      "id": "round160_campaign_graph_structured_compile_unit_render_and_hygiene_validation",
+      "status": "green_completed_campaign_patched_graph_seven_structured_files_compileall_six_of_six_unittests_diff_byte_equation_display_and_nineteen_markdown_previews",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-inverse-selector-reciprocity-gate/controls/conductor_round160_controls.md"
+    },
+    {
+      "id": "round160_campaign_closure",
+      "status": "green_manifest_ledger_proof_draft_validation_failure_directives_reading_packet_controls_and_round_artifacts_closed_no_exponent_change",
+      "artifact": "rounds/codex-managed/m9-m2-unbalanced-inverse-selector-reciprocity-gate/synthesis.md"
+    },
+    {
+      "id": "round161_starting_graph_and_campaign",
+      "status": "green_graph_7e68cfd355_Round160_closed_one_frozen_hard_TOP_radical_frequency_objective_three_orthogonal_tasks_and_100_percent_analytic_allocation",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-truncated-divisor-additive-twist-gate/plan.json"
+    },
+    {
+      "id": "round161_radical_incidence_dictionary",
+      "status": "green_unique_n_equal_Dt2_and_h_m_g_d_u_v_bijections_coprimality_parity_cone_profiles_endpoints_even_D_even_t_and_zero_extension",
+      "artifact": "proofs/kernels/m9_m2_hard_top_radical_long_channel_collision_common_test_obstruction.md"
+    },
+    {
+      "id": "round161_long_channel_sector",
+      "status": "green_every_fixed_D_le_CL_equivalently_fixed_t_ge_tau_sqrtL_target_safe_sector_not_owner_complete_strict_polynomial_range",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-truncated-divisor-additive-twist-gate/reviews/projective_power_scope_review.md"
+    },
+    {
+      "id": "round161_exact_collision_classification",
+      "status": "green_at_most_one_base_edge_one_cross_radical_pair_unique_rational_channel_trivial_loops_separated_no_near_gap",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-truncated-divisor-additive-twist-gate/reviews/blind_post_repair_radical_collision_review.md"
+    },
+    {
+      "id": "round161_t1_projective_power",
+      "status": "green_literal_close_factor_normalization_exact_one_column_norm_sqrtQ_phase_aligned_nuclear_saturation_L2_capacity_missing_Lhalf_physical_lower_bound_rejected",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-truncated-divisor-additive-twist-gate/reviews/projective_power_scope_review.md"
+    },
+    {
+      "id": "round161_source_power_gate",
+      "status": "green_MV_common_vector_BI_separable_absolute_collision_RS_fixed_centre_mismatch_and_restored_powers_Miller_fixed_GL3_coefficients_named_routes_only",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-truncated-divisor-additive-twist-gate/reviews/source_power_seam_review.md"
+    },
+    {
+      "id": "round161_downstream_graph_scope",
+      "status": "green_exactly_two_new_scoped_nodes_two_open_parent_updates_no_reverse_edges_cycles_target_range_downstream_or_exponent_promotion",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-truncated-divisor-additive-twist-gate/reviews/downstream_scope_graph_review.md"
+    },
+    {
+      "id": "round161_terminal_mathematical_review_gate",
+      "status": "green_primary_blind_repair_norm_power_source_scope_and_conductor_adjudication_after_all_exactness_repairs",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-truncated-divisor-additive-twist-gate/reviews/conductor_round161_adjudication.md"
+    },
+    {
+      "id": "round161_state_patch_scope_and_validation",
+      "status": "green_patch_2_create_2_update_13_reject_14_no_change_all_dependencies_evidence_cycle_range_near_collision_physical_source_downstream_and_exponent_scope_validated",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-truncated-divisor-additive-twist-gate/reviews/state_patch_scope_round161.md"
+    },
+    {
+      "id": "round161_state_patch",
+      "status": "applied_2_create_2_update_13_reject_14_no_change_resulting_graph_8d39b06bd12357e337159473da3d4d6ec0c71d0ab3217588e4c6b5b34973b422",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-truncated-divisor-additive-twist-gate/state_patch.json"
+    },
+    {
+      "id": "round161_downstream_scope",
+      "status": "green_hard_TOP_BAL_UNBAL_M9_M2_all_M1_endpoint_M9_bridge_quarter_and_both_global_exponents_open_or_unchanged",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-truncated-divisor-additive-twist-gate/synthesis.md"
+    },
+    {
+      "id": "round161_proof_draft_refresh",
+      "status": "green_accepted_graph_only_radical_incidence_long_channel_exact_collision_t1_capacity_source_scope_and_first_open_scalar_appended_after_patch",
+      "artifact": "state/best_proof_draft.md"
+    },
+    {
+      "id": "round161_campaign_graph_structured_compile_unit_render_and_hygiene_validation",
+      "status": "green_completed_campaign_patched_graph_structured_files_compileall_six_of_six_unittests_equation_display_byte_whitespace_and_twenty_one_markdown_previews",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-truncated-divisor-additive-twist-gate/controls/conductor_round161_controls.md"
+    },
+    {
+      "id": "round161_campaign_closure",
+      "status": "green_manifest_ledger_proof_draft_validation_failure_directives_reading_packet_controls_and_round_artifacts_closed_no_exponent_change_Round162_proposed_not_launched",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-truncated-divisor-additive-twist-gate/synthesis.md"
+    },
+    {
+      "id": "round162_starting_graph_and_campaign",
+      "status": "green_graph_8d39b06bd1_Round161_closed_literal_t1_close_factor_objective_three_orthogonal_tasks_and_100_percent_analytic_allocation",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-t1-close-factor-bilinear-gate/plan.json"
+    },
+    {
+      "id": "round162_statement_only_independence",
+      "status": "green_blind_literal_coefficient_even_d2_character_sign_rank_one_hessian_scaled_collar_power_and_boundary_open_scope_rederived_without_graph_strategy_or_sibling_access",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-t1-close-factor-bilinear-gate/reports/blind_t1_close_factor_rederivation.md"
+    },
+    {
+      "id": "round162_exact_character_and_opening",
+      "status": "green_exact_Mobius_lcm_opening_even_d2_i_over_2_chi4_dual_sign_saddle_profile_normalization_and_bare_transform_involution",
+      "artifact": "proofs/kernels/m9_m2_hard_top_t1_character_poisson_product_collar_obstruction.md"
+    },
+    {
+      "id": "round162_rank_one_collar_and_power",
+      "status": "green_s_ell_equal_XQR_dual_cone_Qell_le_Rs_le_4Qell_collar_QRJ_over_L_pair_scale_L3half_over_QRsqrtJ_QR_repayment_and_sqrtJL_capacity_only",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-t1-close-factor-bilinear-gate/reviews/power_involution_and_physical_scope_review.md"
+    },
+    {
+      "id": "round162_local_divisor_and_differencing_scope",
+      "status": "green_scaled_near_square_chi4_divisor_window_completion_adds_uncontrolled_complement_even_step_character_correlation_constant_and_signed_aggregate_open",
+      "artifact": "proofs/kernels/m9_m2_hard_top_t1_character_poisson_product_collar_obstruction.md"
+    },
+    {
+      "id": "round162_hard_edge_quarantine",
+      "status": "green_nonzero_zero_extension_tails_saddle_edge_transitions_stars_profiles_and_opened_boundary_cancellations_retained_open_blanket_target_safe_claim_rejected",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-t1-close-factor-bilinear-gate/reviews/blind_post_unmask_character_collar_review.md"
+    },
+    {
+      "id": "round162_source_power_gate",
+      "status": "green_BI_separation_KRW_RS_restored_powers_DFI_DRZ_uniform_mismatch_Bettin_Chandee_formal_integral_subcase_with_adverse_JLhalf_named_routes_only",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-t1-close-factor-bilinear-gate/reviews/source_and_downstream_graph_scope_review.md"
+    },
+    {
+      "id": "round162_physical_and_downstream_scope",
+      "status": "green_positive_collar_not_complete_upper_bound_mass_or_lower_bound_t1_target_other_few_point_hard_TOP_smooth_M2_all_M1_endpoint_M9_bridge_target_and_exponents_unchanged",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-t1-close-factor-bilinear-gate/reviews/conductor_round162_adjudication.md"
+    },
+    {
+      "id": "round162_terminal_mathematical_review_gate",
+      "status": "green_three_primary_reports_blind_post_unmask_power_involution_source_graph_and_conductor_adjudication_after_hard_edge_and_Bettin_Chandee_calibration",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-t1-close-factor-bilinear-gate/reviews/conductor_round162_adjudication.md"
+    },
+    {
+      "id": "round162_state_patch_scope_and_validation",
+      "status": "green_patch_1_create_2_update_12_reject_16_no_change_all_dependencies_evidence_cycle_hard_edge_source_parent_downstream_and_exponent_scope_validated",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-t1-close-factor-bilinear-gate/reviews/state_patch_scope_round162.md"
+    },
+    {
+      "id": "round162_state_patch",
+      "status": "applied_1_create_2_update_12_reject_16_no_change_resulting_graph_700182f4dcf805e7f5ae74ca8ac49e88e4025471d9def1746a832c45fb6d2358",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-t1-close-factor-bilinear-gate/state_patch.json"
+    },
+    {
+      "id": "round162_downstream_scope",
+      "status": "green_t1_target_hard_edges_signed_Mobius_aggregate_other_few_point_hard_TOP_BAL_UNBAL_M9_M2_all_M1_endpoint_M9_bridge_quarter_and_both_exponents_open_or_unchanged",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-t1-close-factor-bilinear-gate/synthesis.md"
+    },
+    {
+      "id": "round162_proof_draft_refresh",
+      "status": "green_accepted_graph_only_literal_projector_character_Poisson_involution_rank_one_collar_local_divisor_return_source_scope_and_first_open_signed_aggregate_appended_after_patch",
+      "artifact": "state/best_proof_draft.md"
+    },
+    {
+      "id": "round162_campaign_graph_structured_compile_unit_render_and_hygiene_validation",
+      "status": "green_complete_campaign_patched_graph_seven_structured_files_compileall_six_of_six_unittests_diff_byte_equation_display_and_twenty_markdown_previews",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-t1-close-factor-bilinear-gate/controls/conductor_round162_controls.md"
+    },
+    {
+      "id": "round162_campaign_closure",
+      "status": "green_manifest_ledger_proof_draft_validation_failure_directives_reading_packet_controls_and_round_artifacts_closed_no_exponent_change_Round163_proposed_not_launched",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-t1-close-factor-bilinear-gate/synthesis.md"
+    },
+    {
+      "id": "round163_starting_graph_and_campaign",
+      "status": "green_graph_700182f4dc_Round162_closed_one_frozen_actual_near_square_divisor_involution_objective_three_orthogonal_tasks_and_100_percent_analytic_allocation",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/plan.json"
+    },
+    {
+      "id": "round163_barrier_and_scope_controls",
+      "status": "green_single_toggle_width_two_complement_lower_window_full_divisor_completion_even_N_multi_prime_matching_profile_endpoint_power_and_downstream_false_gains_frozen",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/barrier_packet.md"
+    },
+    {
+      "id": "round163_conductor_seed",
+      "status": "candidate_exact_product_grouping_single_toggle_total_leakage_odd_complement_identity_even_branch_and_multi_prime_exchange_open_pending_independent_review",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/candidates/conductor_round163_divisor_involution_seed.md"
+    },
+    {
+      "id": "round163_statement_only_independence",
+      "status": "green_blind_exact_product_grouping_toggle_complement_and_matching_rederivation_then_post_unmask_profile_interface_repair_with_strict_sector_scope_only",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/blind_post_unmask_close_pair_sector_review.md"
+    },
+    {
+      "id": "round163_exact_close_opposite_prime_exchange_sector",
+      "status": "green_canonical_N_L_kappa_selector_XOR_incidences_integral_fixed_point_free_multiplicity_one_sign_reversal_product_phase_parity_and_even_N_preserved",
+      "artifact": "proofs/kernels/m9_m2_hard_top_t1_close_opposite_prime_exchange_sector.md"
+    },
+    {
+      "id": "round163_profile_boundary_and_target_power",
+      "status": "green_common_cell_L_minus_half_difference_O_L2_ambient_incidence_count_O_L3half_boundary_collars_literal_profiles_endpoints_stars_zero_extension_and_real_centre",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/profile_boundary_power_seam_review.md"
+    },
+    {
+      "id": "round163_involution_matching_and_complement_scope",
+      "status": "green_single_toggle_disjoint_normalized_toggle_average_self_return_Hall_balance_required_cycles_only_rewrite_gradients_and_odd_even_complements_excluded",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reports/prime_toggle_complement_leakage_hostile_audit.md"
+    },
+    {
+      "id": "round163_density_and_physical_scope",
+      "status": "green_no_selector_nonemptiness_density_positive_proportion_complement_bound_full_t1_or_physical_mass_inferred_from_diagnostic_counts",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/downstream_graph_scope_review.md"
+    },
+    {
+      "id": "round163_terminal_mathematical_review_gate",
+      "status": "green_three_primary_reports_conductor_reproduction_blind_post_unmask_profile_boundary_power_downstream_graph_and_adjudication_after_notation_repairs",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/conductor_round163_adjudication.md"
+    },
+    {
+      "id": "round163_state_patch_scope_and_dry_validation",
+      "status": "green_patch_1_create_2_update_0_correct_16_reject_19_no_change_fresh_ids_evidence_dependencies_cycle_density_complement_parent_downstream_and_exponent_scope_validated",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/state_patch_scope_round163.md"
+    },
+    {
+      "id": "round163_state_patch",
+      "status": "applied_1_create_2_update_0_correct_16_reject_19_no_change_resulting_graph_81690ebb72b0dedd99bdb6c6127f947df696a901a22af3f65ac8738209125306",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/state_patch.json"
+    },
+    {
+      "id": "round163_downstream_scope",
+      "status": "green_residual_t1_other_few_point_hard_TOP_BAL_UNBAL_M9_M2_all_M1_endpoint_M9_bridge_quarter_and_both_global_exponents_open_or_unchanged",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/synthesis.md"
+    },
+    {
+      "id": "round163_proof_draft_refresh",
+      "status": "green_accepted_graph_only_canonical_selector_exchange_identity_common_cell_difference_boundary_collars_strict_sector_self_return_complement_scope_and_residual_appended_after_patch",
+      "artifact": "state/best_proof_draft.md"
+    },
+    {
+      "id": "round163_campaign_graph_structured_compile_unit_render_and_hygiene_validation",
+      "status": "green_completed_campaign_patched_graph_seven_structured_files_compileall_six_of_six_unittests_diff_byte_equation_display_and_twenty_markdown_previews",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/controls/conductor_round163_controls.md"
+    },
+    {
+      "id": "round163_campaign_closure",
+      "status": "green_manifest_ledger_proof_draft_validation_failure_directives_summary_controls_and_round_artifacts_closed_no_exponent_change_Round164_proposed_not_launched",
+      "artifact": "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/synthesis.md"
     }
   ],
-  "decision_rule": "Promote the exact B K_B shell support refinement, the primitive top-shell determinant-residue chart, and the scoped resolved-energy obstruction. Retain the complete Y^(35/48) fixed block, the Y^(1/2) determinant target, every M9 parent, endpoint uniformity, M9, every global exponent, and the quarter target unchanged."
+  "decision_rule": "Round 163 is closed under strict_t1_prime_toggle_sector on graph 81690ebb72b0dedd99bdb6c6127f947df696a901a22af3f65ac8738209125306. Round 164 is proposed, not launched, on the complete residual signed-divisor transport interface. All hard-TOP parents and both exponents remain open or unchanged."
 }

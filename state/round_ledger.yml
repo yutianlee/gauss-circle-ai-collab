@@ -2,7 +2,7 @@
   "schema_version": 1,
   "research_program": "gauss-circle-proof-development",
   "conductor": "Codex",
-  "active_round": null,
+  "active_round": 162,
   "archive_note": "Rounds 1-25 are documented in their campaign plan, synthesis, state patch, and historical project summary artifacts. This compact ledger retains the immediately active research chain after a repair of the derived ledger file in Round 28.",
   "rounds": [
     {
@@ -4397,6 +4397,1475 @@
         "exponent_change": false
       },
       "next_round": 131
+    },
+    {
+      "round_index": 131,
+      "campaign_id": "gc-w7-16-top-shell-determinant-residue-zero-mode-gate",
+      "type": "gc_w7_16_top_shell_determinant_residue_zero_mode_gate",
+      "status": "closed",
+      "objective": "On the literal signed B asymp D scalar, prove or refute a legal periodic/BV determinant-residue separation, compute the shifted family-level resonant mode, and close the internal graded lane under bank, obstruct, or degenerate.",
+      "tasks": [
+        {
+          "id": "blind_residue_mode_feasibility",
+          "role": "blind_rederiver",
+          "status": "completed_with_statement_only_no_go_and_post_unmask_scope_correction"
+        },
+        {
+          "id": "literal_induced_residue_weight_derivation",
+          "role": "discovery",
+          "status": "completed_with_literal_weight_candidate_and_fourier_capacity_audit"
+        },
+        {
+          "id": "resonant_packet_cross_ray_hostile_audit",
+          "role": "seam_reviewer",
+          "status": "completed_with_aligned_packet_no_go_and_post_unmask_weighted_seam_audit"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0,
+        "planned_numerical_percent": 0
+      },
+      "starting_graph_sha256": "23e7bfacbf6abc5582769fbe8d427cbca2379e1d265b99df21d93a65ec504825",
+      "exit_labels": [
+        "bank",
+        "obstruct",
+        "degenerate"
+      ],
+      "exit_gates": [
+        "literal_top_shell_dictionary",
+        "physical_Mobius_reassembly_scope",
+        "fixed_lift_Gauss_Ramanujan_kernel",
+        "primitive_period_and_completion_modulus",
+        "periodic_BV_separation_before_Fourier",
+        "M1_shifted_resonant_mode",
+        "M2_zero_shifted_and_even_b_parity",
+        "nonzero_same_denominator_controls",
+        "one_sided_diagonal_ownership",
+        "resonant_window_capacity",
+        "scalar_vs_positive_energy",
+        "per_ray_vs_cross_ray_capacity",
+        "Salie_no_go",
+        "no_exponent_or_M9_promotion",
+        "conductor_decision"
+      ],
+      "closing_assessment": {
+        "decision": "degenerate_promote_fixed_lift_support_mask_kernel_and_variable_modulus_cross_ray_obstruction",
+        "graph_mutation": true,
+        "terminal_label": "degenerate",
+        "main_result": "The exact fixed-p support-mask Fourier kernels are Gauss-times-Ramanujan for M1 and Ramanujan for M2, with natural surviving modes and divisor-sized completion cost. The weighted physical factorization, interlaced BV ledger, and actual cross-ray scalar estimate remain open; the internal per-ray residue lane is parked.",
+        "resulting_graph_sha256": "328a885e71415a8e3509466c46849129248594334dc17df8940bbcd3f12a0fe9",
+        "exponent_change": false
+      },
+      "next_round": 132
+    },
+    {
+      "round_index": 132,
+      "campaign_id": "gc-w7-16-cross-ray-hyperbolic-decoupling-source-map",
+      "type": "gc_w7_16_cross_ray_hyperbolic_decoupling_source_map",
+      "status": "closed",
+      "objective": "Audit Demeter--Wu's hyperbolic-paraboloid bilinear decoupling theorems against the literal fixed-centre variable-modulus top-shell scalar and close with an applicable margin, one exact missing hypothesis, or a source-level no-go.",
+      "tasks": [
+        {
+          "id": "demeter_wu_exact_source_card",
+          "role": "source_auditor",
+          "status": "completed_with_exact_source_card_and_source_scope_no_go"
+        },
+        {
+          "id": "literal_ratio_phase_hyperbolic_map",
+          "role": "discovery",
+          "status": "completed_with_exact_chart_and_source_level_no_go"
+        },
+        {
+          "id": "blind_pointwise_transversality_feasibility",
+          "role": "blind_rederiver",
+          "status": "completed_with_statement_only_direct_interface_no_go"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0,
+        "planned_numerical_percent": 0
+      },
+      "starting_graph_sha256": "328a885e71415a8e3509466c46849129248594334dc17df8940bbcd3f12a0fe9",
+      "exit_labels": [
+        "applicable_positive_margin",
+        "exact_missing_hypothesis",
+        "source_level_no_go"
+      ],
+      "closing_assessment": {
+        "decision": "promote_exact_hyperbolic_chart_source_audit_and_direct_applicability_obstruction",
+        "graph_mutation": true,
+        "terminal_label": "source_level_no_go",
+        "main_result": "The top-shell ratio graph is exactly affinely hyperbolic, with whole-shell scale P_i=Y^(32/48) and determinant-band reciprocal evaluation scale R_h=P_i h, reaching c/W=Y^(27/48) at the widest band. Direct Demeter--Wu import does not estimate the literal scalar because an affordable owner-preserving projective coefficient factorization and a signed ruling estimate are missing; the complete bound stays Y^(35/48).",
+        "resulting_graph_sha256": "465093c00a388ff9e49583a8016e0e580f74beea4656b15884fdd9dc9247be5a",
+        "exponent_change": false
+      },
+      "next_round": 133
+    },
+    {
+      "round_index": 133,
+      "campaign_id": "gc-w7-16-bombieri-iwaniec-two-spacing-source-map",
+      "type": "gc_w7_16_bombieri_iwaniec_two_spacing_source_map",
+      "status": "closed",
+      "objective": "Audit the exact Li--Yang/Bombieri--Iwaniec standard sum and first/second-spacing machinery against the literal fixed-centre joint determinant scalar, closing with a complete positive margin, one exact missing hypothesis, or a source-level no-go.",
+      "tasks": [
+        {
+          "id": "li_yang_bi_exact_source_card",
+          "role": "source_auditor",
+          "status": "completed_with_exact_source_card_fifth_repair_and_direct_scope_no_go"
+        },
+        {
+          "id": "literal_joint_scalar_bi_normal_form_map",
+          "role": "discovery",
+          "status": "completed_with_exact_dictionary_black_box_capacity_no_go_and_post_unmask_corrections"
+        },
+        {
+          "id": "blind_double_large_sieve_feasibility",
+          "role": "blind_rederiver",
+          "status": "completed_with_statement_only_no_go_and_source_condition_discovery"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0,
+        "planned_numerical_percent": 0
+      },
+      "starting_graph_sha256": "465093c00a388ff9e49583a8016e0e580f74beea4656b15884fdd9dc9247be5a",
+      "exit_labels": [
+        "applicable_positive_margin",
+        "exact_missing_hypothesis",
+        "source_level_no_go"
+      ],
+      "closing_assessment": {
+        "decision": "promote_exact_single_wave_dictionary_repair_source_condition_and_direct_pair_interface_obstruction",
+        "graph_mutation": true,
+        "terminal_label": "source_level_no_go",
+        "main_result": "One reciprocal wave has an exact Li--Yang phase, O(1) mod-four carrier, and parameter dictionary. Printed (4.9) is false but the final theorem is repaired because corrected (5.23) verifies original (4.6) directly. The literal pair scalar has no owner-preserving source connector, and even a free factor-first use gives 2Phi=30.1414.../48>27/48. The complete block stays Y^(35/48).",
+        "resulting_graph_sha256": "40e83c20e83d542e43aa739931f4b89ea76f4541506fb44ef219ce31dca35024",
+        "exponent_change": false
+      },
+      "next_round": 134
+    },
+    {
+      "round_index": 134,
+      "campaign_id": "m9-m2-unbalanced-one-sided-majorant-gate",
+      "type": "m9_m2_unbalanced_one_sided_majorant_gate",
+      "status": "closed",
+      "objective": "Prove a lawful one-sided band-limited contraction of the endpoint-complete M2 UNBAL energy E_chi, or close the route at its first exact order, bandwidth, character, endpoint, or capacity obstruction.",
+      "tasks": [
+        {
+          "id": "blind_bandlimited_quadratic_majorant_feasibility",
+          "role": "blind_rederiver",
+          "status": "completed_with_sharp_exact_folded_extremal_theorem_and_post_unmask_review"
+        },
+        {
+          "id": "actual_character_fejer_majorant_attack",
+          "role": "discovery",
+          "status": "completed_with_majorant_no_go_poisson_return_and_exact_folded_audit"
+        },
+        {
+          "id": "majorant_cross_term_hostile_audit",
+          "role": "seam_reviewer",
+          "status": "completed_with_placement_matrix_exact_extremal_and_endpoint_scope_audit"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0,
+        "planned_numerical_percent": 0
+      },
+      "starting_graph_sha256": "40e83c20e83d542e43aa739931f4b89ea76f4541506fb44ef219ce31dca35024",
+      "exit_labels": [
+        "target_bound",
+        "strict_majorant_reduction",
+        "majorant_no_go"
+      ],
+      "closing_assessment": {
+        "decision": "promote_sharp_folded_majorant_and_bandwidth_mass_obstruction_park_standalone_energy_majorant",
+        "graph_mutation": true,
+        "terminal_label": "majorant_no_go",
+        "main_result": "For H=mN+s the exact least mass of a degree-(N-1) majorant of the Fejer block multiplier is (N-s)m^2+s(m+1)^2, attained by |mD_N+D_s|^2 and giving an endpoint-exact folded block inequality. Its mass factor is at least H/N and its Fourier l1 mass is H^2, so every diagonal, positive-row, lag-count-only, lagwise-absolute, or Poisson-return closure retains the missing power. The literal signed folded Gram remains open.",
+        "resulting_graph_sha256": "f9aa6fa43900b9cb73f705405f9a6090e6e84fb5d3c8a9e037ffe3c6911b9ea0",
+        "exponent_change": false
+      },
+      "next_round": 135
+    },
+    {
+      "round_index": 135,
+      "campaign_id": "m9-m2-unbalanced-kloosterman-dispersion-source-map",
+      "type": "m9_m2_unbalanced_kloosterman_dispersion_source_map",
+      "status": "closed",
+      "objective": "Audit and either apply or rigorously exclude the exact Bettin--Chandee/Wright Kloosterman-fraction machinery on the literal prescribed-centre wave, with a complete variable dictionary and full-polytope capacity calculation.",
+      "tasks": [
+        {
+          "id": "wright_bc_exact_source_card",
+          "role": "source_auditor",
+          "status": "completed_with_exact_source_card_and_scoped_source_no_go"
+        },
+        {
+          "id": "literal_wave_kloosterman_map_attack",
+          "role": "discovery",
+          "status": "completed_with_exact_maps_equal_capacity_and_rough_completion_no_go"
+        },
+        {
+          "id": "blind_inverse_congruence_interface_audit",
+          "role": "blind_rederiver",
+          "status": "completed_with_independent_inverse_congruence_no_go"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0,
+        "planned_numerical_percent": 0
+      },
+      "starting_graph_sha256": "f9aa6fa43900b9cb73f705405f9a6090e6e84fb5d3c8a9e037ffe3c6911b9ea0",
+      "exit_labels": [
+        "applicable_positive_margin",
+        "exact_missing_hypothesis",
+        "source_level_no_go"
+      ],
+      "closing_assessment": {
+        "decision": "promote_exact_source_audit_and_scoped_kloosterman_dispersion_interface_obstruction",
+        "graph_mutation": true,
+        "terminal_label": "source_level_no_go",
+        "main_result": "Every real centre admits an exact integral-frequency repair, the direct and square inverse dictionaries are legal, the diagonal projective norm is sharp, smooth-first completion returns exactly Delta, inverse-first completion is a rough joint Kloosterman matrix, Wright dispersion mismatches the literal scalar, and the fixed-determinant map is non-saving. The named standard-source route is parked, but a new chi_4-signed joint theorem remains possible.",
+        "resulting_graph_sha256": "c43058006cec6849cd17a49e6a7a5298f5a3c124b34d2333b3279adcb54da1d1",
+        "exponent_change": false
+      },
+      "next_round": 136
+    },
+    {
+      "round_index": 136,
+      "campaign_id": "m9-m2-balanced-joint-cluster-defect-broad-narrow-gate",
+      "type": "m9_m2_balanced_joint_cluster_defect_broad_narrow_gate",
+      "status": "closed",
+      "objective": "Prove an owner-complete L^3 broad--narrow estimate for the complete signed balanced divisor-progressive bulk kernel, a strict smaller survivor, or the first exact transversality, ruling, scalar-interface, or capacity obstruction.",
+      "tasks": [
+        {
+          "id": "joint_cluster_defect_broad_narrow_attack",
+          "role": "discovery",
+          "status": "completed_with_exact_character_gauge_and_scoped_broad_narrow_no_go"
+        },
+        {
+          "id": "blind_signed_cluster_kernel_feasibility",
+          "role": "blind_rederiver",
+          "status": "completed_with_independent_gradient_fixed_Q_and_scalar_interface_no_go"
+        },
+        {
+          "id": "aligned_rational_ruling_hostile_audit",
+          "role": "seam_reviewer",
+          "status": "completed_with_equal_lift_coherence_and_capacity_scope_audit"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0,
+        "planned_numerical_percent": 0
+      },
+      "starting_graph_sha256": "c43058006cec6849cd17a49e6a7a5298f5a3c124b34d2333b3279adcb54da1d1",
+      "exit_labels": [
+        "target_bound",
+        "strict_joint_reduction",
+        "broad_narrow_no_go"
+      ],
+      "closing_assessment": {
+        "decision": "promote_exact_character_restoration_and_scoped_gauge_ruling_scalar_interface_obstruction",
+        "graph_mutation": true,
+        "terminal_label": "broad_narrow_no_go",
+        "main_result": "The combined linear/residue phase exactly restores -i(-1)^m chi_4(d)chi_4(h), and every equal-rational lift has a common full carrier and common gates while keeping distinct amplitudes. Gradient-vector, surface-normal, and one-body-Hessian determinants are inequivalent; none has the missing scalar interface. Fixed-Q rulings survive both gates and positive capacities remain L^4 versus target L^3. The standard broad--narrow surface is parked without disproving BAL.",
+        "resulting_graph_sha256": "3c5003b1478d78b8469d4220ad305bb06ee0f869b9c4a741e7211642eeb52cc7",
+        "exponent_change": false
+      },
+      "next_round": 137
+    },
+    {
+      "round_index": 137,
+      "campaign_id": "m9-m2-hard-top-product-fibre-divisor-scalar-gate",
+      "type": "m9_m2_hard_top_product_fibre_divisor_scalar_gate",
+      "status": "closed",
+      "objective": "Prove the L^(3/2) nonsquare hard-TOP scalar bound from the literal product-fibre coefficient, reduce it to a strictly smaller exact signed survivor, or close the route at the first exact divisor, resonance, completion, self-return, circularity, or capacity obstruction.",
+      "tasks": [
+        {
+          "id": "literal_product_fibre_divisor_scalar_attack",
+          "role": "discovery",
+          "status": "completed_with_energy_radical_controls_and_product_fibre_no_go"
+        },
+        {
+          "id": "blind_truncated_chi4_divisor_phase_feasibility",
+          "role": "blind_rederiver",
+          "status": "completed_with_independent_rough_coefficient_resonance_and_self_return_no_go"
+        },
+        {
+          "id": "product_fibre_bprocess_circularity_hostile_audit",
+          "role": "seam_reviewer",
+          "status": "completed_with_lawful_completion_circularity_and_product_fibre_no_go"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0,
+        "planned_numerical_percent": 0
+      },
+      "starting_graph_sha256": "3c5003b1478d78b8469d4220ad305bb06ee0f869b9c4a741e7211642eeb52cc7",
+      "exit_labels": [
+        "target_bound",
+        "strict_product_fibre_reduction",
+        "product_fibre_no_go"
+      ],
+      "closing_assessment": {
+        "decision": "promote_truncated_divisor_energy_radical_control_and_scoped_product_fibre_self_return",
+        "graph_mutation": true,
+        "terminal_label": "product_fibre_no_go",
+        "main_result": "The literal nonsquare hard-TOP scalar has an exact truncated near-square chi_4-divisor coefficient with energy O(L^2 log L). Every fixed squarefree radical channel has absolute mass O((1+L/sqrt(D))L^epsilon), making the unique exact phase-one nonsquare channel at a fixed centre target-safe. Near resonances remain open, and lawful divisibility completion plus either B-process returns the original reciprocal hard-TOP principal family rather than a saving.",
+        "resulting_graph_sha256": "56de446648dfb7a492fbb4b46c38d840fb14ac306df61bf61d466d26abfbe797",
+        "exponent_change": false
+      },
+      "next_round": 138
+    },
+    {
+      "round_index": 138,
+      "campaign_id": "m9-m1-lower-gar-signed-farey-scalar-gate",
+      "type": "m9_m1_lower_gar_signed_farey_scalar_gate",
+      "status": "closed",
+      "objective": "Prove the R X^epsilon exact lower-GAR scalar bound, reduce its literal scalar square to a strictly smaller owner-complete signed survivor, or close at the first exact resonance, transform, directionality, or capacity obstruction.",
+      "tasks": [
+        {
+          "id": "literal_signed_farey_scalar_attack",
+          "role": "discovery",
+          "status": "completed_with_strict_signed_farey_reduction_and_transform_controls"
+        },
+        {
+          "id": "blind_reduced_fraction_scalar_feasibility",
+          "role": "blind_rederiver",
+          "status": "completed_with_independent_row_fibre_reduction_and_self_return_diagnosis"
+        },
+        {
+          "id": "farey_scalar_self_return_hostile_audit",
+          "role": "seam_reviewer",
+          "status": "completed_with_owner_complete_endpoint_aspect_and_scope_audit"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0,
+        "planned_numerical_percent": 0
+      },
+      "starting_graph_sha256": "56de446648dfb7a492fbb4b46c38d840fb14ac306df61bf61d466d26abfbe797",
+      "exit_labels": [
+        "target_bound",
+        "strict_signed_farey_reduction",
+        "signed_farey_no_go"
+      ],
+      "closing_assessment": {
+        "decision": "promote_strict_signed_farey_row_and_carrier_reduction_and_scoped_transform_obstruction",
+        "graph_mutation": true,
+        "terminal_label": "strict_signed_farey_reduction",
+        "main_result": "The exact integerized lower scalar square equals one signed cross-denominator residual plus O_epsilon(yX^epsilon). The complete same-denominator block and both ordinary and physical y^(-2) carrier collars are target-square-safe. Determinant aspect loss, the full hard-endpoint Poisson owner, R^(3/2) principal capacity, the unique exact radical channel, fourth-power controls, and transform self-return are rigorously scoped. The residual target remains open.",
+        "resulting_graph_sha256": "5e82825804e5bb2de43779e7121e76bcfaa4b89d7ac0977ca2ceb84a33be8552",
+        "exponent_change": false
+      },
+      "next_round": 139
+    },
+    {
+      "round_index": 139,
+      "campaign_id": "m9-m1-lower-denominator-displacement-quadratic-gate",
+      "type": "m9_m1_lower_denominator_displacement_quadratic_gate",
+      "status": "closed",
+      "objective": "Prove the R X^epsilon exact lower scalar bound from the centre-constrained displacement phase, reduce it to a strictly smaller owner-complete signed survivor, or close at the first exact Taylor, completion, alias, boundary, self-return, or capacity obstruction.",
+      "tasks": [
+        {
+          "id": "literal_displacement_quadratic_scalar_attack",
+          "role": "discovery",
+          "status": "completed_with_exact_curvature_collar_reduction"
+        },
+        {
+          "id": "blind_displacement_scalar_feasibility",
+          "role": "blind_rederiver",
+          "status": "completed_with_independent_quadratic_completion_no_go_and_post_unmask_collar_rederivation"
+        },
+        {
+          "id": "displacement_completion_hostile_audit",
+          "role": "seam_reviewer",
+          "status": "completed_with_Taylor_Gauss_window_full_completion_no_go_and_post_unmask_curvature_audit"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0,
+        "planned_numerical_percent": 0
+      },
+      "starting_graph_sha256": "5e82825804e5bb2de43779e7121e76bcfaa4b89d7ac0977ca2ceb84a33be8552",
+      "exit_labels": [
+        "target_bound",
+        "strict_displacement_quadratic_reduction",
+        "displacement_quadratic_no_go"
+      ],
+      "closing_assessment": {
+        "decision": "promote_exact_curvature_collar_and_full_quadratic_completion_obstruction",
+        "graph_mutation": true,
+        "terminal_label": "strict_displacement_quadratic_reduction",
+        "main_result": "The complete exact-phase collar v<=rho y/sqrt(h) is O(R log X), so the literal scalar is target-equivalent to its complementary displacement tail. The smaller Taylor window is also target-safe, but full fixed-modulus completion is obstructed by correction variation, ordinary-Gauss Fourier self-return, and R^(3/2) aliaswise capacity. The tail and Round-138 residual remain open.",
+        "resulting_graph_sha256": "a9f766ddfc55c1aa9dd0561d8a406996627ac8701313af063c90e2422cf54eaa",
+        "exponent_change": false
+      },
+      "next_round": 140
+    },
+    {
+      "round_index": 140,
+      "campaign_id": "m9-m1-lower-post-collar-height-alias-gate",
+      "type": "m9_m1_lower_post_collar_height_alias_gate",
+      "status": "closed",
+      "objective": "Prove the exact post-collar scalar target through an owner-complete joint height-alias mechanism, reduce it to a strictly smaller signed survivor with all transform errors target-safe, or close at the first exact cutoff, endpoint, transition, rank-one, resonant-ray, product-fibre, self-return, or capacity obstruction.",
+      "tasks": [
+        {
+          "id": "exact_tail_poisson_alias_connector",
+          "role": "discovery",
+          "status": "completed_with_smoothed_far_alias_reduction_and_product_fibre_connector"
+        },
+        {
+          "id": "blind_height_alias_joint_feasibility",
+          "role": "blind_rederiver",
+          "status": "completed_with_independent_sharp_endpoint_rank_one_product_fibre_and_self_return_audit"
+        },
+        {
+          "id": "tail_alias_hostile_directionality_audit",
+          "role": "seam_reviewer",
+          "status": "completed_with_two_collar_owner_ledger_and_post_unmask_green_audit"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0,
+        "planned_numerical_percent": 0
+      },
+      "starting_graph_sha256": "a9f766ddfc55c1aa9dd0561d8a406996627ac8701313af063c90e2422cf54eaa",
+      "exit_labels": [
+        "target_bound",
+        "strict_height_alias_reduction",
+        "height_alias_no_go"
+      ],
+      "closing_assessment": {
+        "decision": "promote_smoothed_far_alias_reduction_and_rank_one_product_fibre_obstruction",
+        "graph_mutation": true,
+        "terminal_label": "strict_height_alias_reduction",
+        "main_result": "The literal sharp post-collar tail at rho_1 is target-equivalent to one clean far height-alias scalar at rho_2 after a target-safe two-collar smoothing and owner-complete smooth B-process. Its grouped incomplete divisor coefficient retains rank-one phase and R^(3/2) coefficient-blind capacity; exact radicals are target-safe, while near-radical and nonsquare signed cancellation remains open.",
+        "resulting_graph_sha256": "072e08848e9d368d65b89fbf03c36423a8e3662e7ae61c48052d4c352d1d71b0",
+        "exponent_change": false
+      },
+      "next_round": 141
+    },
+    {
+      "round_index": 141,
+      "campaign_id": "m9-m1-lower-far-alias-incomplete-fibre-dispersion-gate",
+      "type": "m9_m1_lower_far_alias_incomplete_fibre_dispersion_gate",
+      "status": "closed",
+      "objective": "Prove the exact grouped far scalar by signed near-radical or nonsquare incomplete-fibre dispersion, reduce it to a strictly smaller owner-complete survivor with the complement target-safe, or close at the first exact phase-cell, hyperbola, source-hypothesis, self-return, circularity, or capacity obstruction.",
+      "tasks": [
+        {
+          "id": "near_radical_phase_cell_attack",
+          "role": "discovery",
+          "status": "completed_with_microscopic_nearest_square_reduction_exact_pairing_and_post_unmask_green_audit"
+        },
+        {
+          "id": "blind_incomplete_fibre_additive_twist",
+          "role": "blind_rederiver",
+          "status": "completed_with_floor_to_cone_quarter_mode_and_post_unmask_source_green_audit"
+        },
+        {
+          "id": "sqrt_divisor_twist_source_audit",
+          "role": "source_auditor",
+          "status": "completed_with_repaired_source_power_map_and_post_unmask_phase_pairing_green_audit"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0,
+        "planned_numerical_percent": 0
+      },
+      "starting_graph_sha256": "072e08848e9d368d65b89fbf03c36423a8e3662e7ae61c48052d4c352d1d71b0",
+      "exit_labels": [
+        "target_bound",
+        "strict_near_resonance_reduction",
+        "incomplete_fibre_dispersion_no_go"
+      ],
+      "closing_assessment": {
+        "decision": "promote_far_cone_microscopic_cell_reduction_and_incomplete_fibre_dispersion_obstruction",
+        "graph_mutation": true,
+        "terminal_label": "incomplete_fibre_dispersion_no_go",
+        "main_result": "The exact far scalar is target-equivalent to a floor-free nonresonant cone after exact and microscopic nearest-square cells are removed at target cost. The survivor remains open; divisor pairing, quarter-frequency coefficient resonance, the repaired source ledger, and transform self-return identify the first exact barriers.",
+        "resulting_graph_sha256": "de02111a1831d30da33c9f4b2d4a549efa1942dcdc32b5d829e671f6ad5e0e76",
+        "exponent_change": false
+      },
+      "next_round": 142
+    },
+    {
+      "round_index": 142,
+      "campaign_id": "m9-m1-lower-cone-rational-additive-spectrum-gate",
+      "type": "m9_m1_lower_cone_rational_additive_spectrum_gate",
+      "status": "closed",
+      "objective": "Prove the exact nonresonant cone scalar through a rational-additive-spectrum and local-slope mechanism, reduce it to a strictly smaller owner-complete survivor, or close at the first exact denominator-uniformity, major-arc accumulation, periodic-branch, reconstruction, source-hypothesis, or self-return obstruction.",
+      "tasks": [
+        {
+          "id": "rational_mode_hyperbola_attack",
+          "role": "discovery",
+          "status": "completed_with_exact_rational_spectrum_hard_Abel_reconstruction_and_source_cross_review"
+        },
+        {
+          "id": "blind_rational_slope_cell_rederivation",
+          "role": "blind_rederiver",
+          "status": "completed_with_statement_only_rational_reconstruction_no_go_and_final_green_audit"
+        },
+        {
+          "id": "rational_shift_sqrt_twist_source_audit",
+          "role": "source_auditor",
+          "status": "completed_with_repaired_source_scope_direct_branch_ledger_and_Abel_Bprocess_cross_review"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0,
+        "planned_numerical_percent": 0
+      },
+      "starting_graph_sha256": "de02111a1831d30da33c9f4b2d4a549efa1942dcdc32b5d829e671f6ad5e0e76",
+      "exit_labels": [
+        "target_bound",
+        "strict_rational_spectrum_reduction",
+        "rational_major_arc_self_return_no_go"
+      ],
+      "closing_assessment": {
+        "decision": "promote_exact_rational_spectrum_and_reconstruction_self_return_obstruction",
+        "graph_mutation": true,
+        "terminal_label": "rational_major_arc_self_return_no_go",
+        "main_result": "The exact cone coefficient has all reduced rational modes with denominator divisible by four and uniform error O((sqrt M+q)log(2q)). Finite cutoffs retain omitted modes, denominator-Abel completion returns r_2/4 and leaves the negative-character cone unchanged, and local residual, moving-boundary, source, and stationary-principal seams prevent an owner-complete reduction. The frozen nonresonant cone scalar remains open.",
+        "resulting_graph_sha256": "7a3ff68dda20717bff1133412f0ca97d35032599930d7f19551109a43d2bd789",
+        "exponent_change": false
+      },
+      "next_round": 143
+    },
+    {
+      "round_index": 143,
+      "campaign_id": "m9-m2-unbalanced-level-four-kuznetsov-matrix-gate",
+      "type": "m9_m2_unbalanced_level_four_kuznetsov_matrix_gate",
+      "status": "closed",
+      "objective": "Prove the flat-smooth strict-UNBAL quarter bound by an exact level-four generalized-Kloosterman/Kuznetsov estimate, reduce it to a strictly smaller owner-complete spectral survivor, or prove the first exact cusp, coefficient-matrix, trace-formula, transform-return, or capacity obstruction.",
+      "tasks": [
+        {
+          "id": "level_four_kloosterman_embedding_attack",
+          "role": "discovery",
+          "status": "completed_with_exact_level_four_embedding_and_scoped_matrix_no_go"
+        },
+        {
+          "id": "blind_joint_matrix_spectral_feasibility",
+          "role": "blind_rederiver",
+          "status": "completed_with_independent_matrix_norm_no_go_and_repaired_source_ledger"
+        },
+        {
+          "id": "kuznetsov_source_hypothesis_audit",
+          "role": "source_auditor",
+          "status": "completed_with_exact_level_four_eight_source_audit_and_common_test_obstruction"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0,
+        "planned_numerical_percent": 0
+      },
+      "starting_graph_sha256": "7a3ff68dda20717bff1133412f0ca97d35032599930d7f19551109a43d2bd789",
+      "exit_labels": [
+        "target_bound",
+        "strict_level_four_spectral_reduction",
+        "level_four_spectral_matrix_no_go"
+      ],
+      "closing_assessment": {
+        "decision": "promote_exact_character_to_level_embedding_and_scoped_joint_matrix_obstruction",
+        "graph_mutation": true,
+        "terminal_label": "level_four_spectral_matrix_no_go",
+        "main_result": "The exact weight-one cross-cusp arithmetic identity embeds chi_4(n)S(N_0,h;n) at generalized modulus 2n and the complete h=0 class is target-safe. The legal Blomer--Milicevic implementation is level 4 minus level 8, but the centered h-nonzero inverse-selector coefficient is a joint modulus-frequency matrix outside the audited common-test interfaces; the automatic R sqrt(Delta) closure is worse than the accepted envelope and complete h-summation self-returns.",
+        "resulting_graph_sha256": "179e40fb38e6a5e26623c2584d469b1c4c8d5ae444a70d791298852f2d511204",
+        "exponent_change": false
+      },
+      "next_round": 144
+    },
+    {
+      "round_index": 144,
+      "campaign_id": "m9-m1-lower-cone-indefinite-theta-completion-gate",
+      "type": "m9_m1_lower_cone_indefinite_theta_completion_gate",
+      "status": "closed",
+      "objective": "Reconcile the accepted Round-63 level-four Appell completion with the Round-141/142 floor-free nonresonant M1 cone owner, proving the target, a strict owner-complete survivor, or the first exact reconciliation obstruction.",
+      "tasks": [
+        {
+          "id": "indefinite_theta_lattice_completion_attack",
+          "role": "discovery",
+          "status": "completed_with_gcd_averaged_cell_reduction_and_exact_Appell_reconciliation"
+        },
+        {
+          "id": "blind_cone_automorphy_feasibility",
+          "role": "blind_rederiver",
+          "status": "completed_with_statement_only_completion_self_return_and_final_green_audit"
+        },
+        {
+          "id": "indefinite_theta_source_hypothesis_audit",
+          "role": "source_auditor",
+          "status": "completed_with_scalar_source_hypothesis_audit_and_final_green_confirmation"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0,
+        "planned_numerical_percent": 0
+      },
+      "starting_graph_sha256": "179e40fb38e6a5e26623c2584d469b1c4c8d5ae444a70d791298852f2d511204",
+      "exit_labels": [
+        "target_bound",
+        "strict_automorphic_cone_reduction",
+        "indefinite_theta_completion_no_go"
+      ],
+      "closing_assessment": {
+        "decision": "promote_gcd_averaged_M3over4_cell_reduction_and_completed_Appell_self_return_obstruction",
+        "graph_mutation": true,
+        "terminal_label": "indefinite_theta_completion_no_go",
+        "main_result": "The exact nonzero displacement count is O_epsilon(JX^epsilon), giving a strict M^(3/4) target-safe cell deletion. The completed weight-one Gamma_0(4) Appell scalar is exact, but all five coefficient pairings and the owner-complete character-Poisson transform return the same reciprocal scalar. The new large-displacement survivor remains open.",
+        "resulting_graph_sha256": "cc5e1b2597d6d233702d566f49884dc0530d0fa62395ce03684d2f55ae19e756",
+        "exponent_change": false
+      },
+      "next_round": 145
+    },
+    {
+      "round_index": 145,
+      "campaign_id": "m9-m1-lower-cone-squarefree-kernel-linearization-gate",
+      "type": "m9_m1_lower_cone_squarefree_kernel_linearization_gate",
+      "status": "closed",
+      "objective": "Prove the Round-144 strict large-displacement cone scalar through the unique squarefree-kernel linearization, reduce it to a strictly smaller owner-complete small-t/large-s survivor, or prove the first exact coefficient, parity, Diophantine, source, or capacity obstruction.",
+      "tasks": [
+        {
+          "id": "squarefree_kernel_fibre_attack",
+          "role": "discovery",
+          "status": "completed_with_exact_multiplicity_one_fibre_formula_target_safe_large_t_tail_and_final_green_review"
+        },
+        {
+          "id": "blind_squarefree_linearization_feasibility",
+          "role": "blind_rederiver",
+          "status": "completed_with_independent_tail_rederivation_exceptional_frequency_family_and_final_green_review"
+        },
+        {
+          "id": "quadratic_irrational_divisor_twist_source_audit",
+          "role": "source_auditor",
+          "status": "completed_with_primary_source_hypothesis_and_power_audit_and_final_green_review"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0,
+        "planned_numerical_percent": 0
+      },
+      "starting_graph_sha256": "cc5e1b2597d6d233702d566f49884dc0530d0fa62395ce03684d2f55ae19e756",
+      "exit_labels": [
+        "target_bound",
+        "strict_squarefree_kernel_reduction",
+        "squarefree_kernel_linearization_no_go"
+      ],
+      "closing_assessment": {
+        "decision": "promote_squarefree_kernel_reduction_and_linearization_obstruction",
+        "graph_mutation": true,
+        "terminal_label": "strict_squarefree_kernel_reduction",
+        "main_result": "The exact C(s t^2) coefficient has two multiplicity-one cone parametrizations, and every t>=ceil(M^(1/4)) fibre is target-safe after dyadic assembly. The strict survivor is t<M^(1/4), s>M^(1/2) with the original large-displacement mask. The t=1 prime layer is nonzero, a profiled N=sL^2+1 family rotates slowly, and no audited theorem supplies the required fixed-centre individual-direction cancellation.",
+        "resulting_graph_sha256": "7d56a2cf6725cbcbd1746e41c300e01bd2028b9a855cbd057e02546df8a4d18d",
+        "exponent_change": false
+      },
+      "next_round": 146
+    },
+    {
+      "round_index": 146,
+      "campaign_id": "m9-m1-lower-cone-three-variable-hessian-dispersion-gate",
+      "type": "m9_m1_lower_cone_three_variable_hessian_dispersion_gate",
+      "status": "closed",
+      "objective": "Use the exact Round-145 small-t coefficient and mask to prove a three-variable Hessian-dispersion target estimate, make a strict intermediate-t range target-safe, or prove the first exact coefficient, aspect-ratio, source, transform, or power obstruction.",
+      "tasks": [
+        {
+          "id": "three_variable_hessian_attack",
+          "role": "discovery",
+          "status": "completed_with_exact_unmasking_full_Hessian_ledger_and_scoped_dispersion_no_go"
+        },
+        {
+          "id": "blind_three_variable_dispersion_feasibility",
+          "role": "blind_rederiver",
+          "status": "completed_with_independent_short_face_coefficient_and_transform_no_go"
+        },
+        {
+          "id": "multidimensional_monomial_source_audit",
+          "role": "source_auditor",
+          "status": "completed_with_primary_source_hypothesis_and_fourteen_term_power_audit"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0,
+        "planned_numerical_percent": 0
+      },
+      "starting_graph_sha256": "7d56a2cf6725cbcbd1746e41c300e01bd2028b9a855cbd057e02546df8a4d18d",
+      "exit_labels": [
+        "target_bound",
+        "strict_intermediate_t_dispersion_reduction",
+        "three_variable_dispersion_no_go"
+      ],
+      "closing_assessment": {
+        "decision": "promote_exact_small_t_unmasking_and_scoped_three_variable_dispersion_obstruction",
+        "graph_mutation": true,
+        "terminal_label": "three_variable_dispersion_no_go",
+        "main_result": "The Round-145 masked survivor is target-equivalent to its exact unmasked small-t scalar. The t-d-e phase has determinant 1/4, but coefficient nonseparability, mandatory rank-one short faces, differencing and phase-level transform return, and the independently audited source power losses prevent the proposed direct three-variable route from reaching target scale.",
+        "resulting_graph_sha256": "1dc79cf41e0dea8888341e944c5d0bf025d87f22cfaa282da34fcd10eecd04f5",
+        "exponent_change": false
+      },
+      "next_round": 147
+    },
+    {
+      "round_index": 147,
+      "campaign_id": "m9-m1-lower-cone-t1-squarefree-voronoi-gate",
+      "type": "m9_m1_lower_cone_t1_squarefree_voronoi_gate",
+      "status": "closed",
+      "objective": "Prove the mandatory exact t=1 squarefree-cone prefix through a source-legal level-four complex-order Voronoi transform retaining the full powerful Euler correction, isolate a strict owner-complete top-scale range, or prove the first exact uniformity, resonance, convolution, boundary, self-return, or all-scale power obstruction.",
+      "tasks": [
+        {
+          "id": "t1_squarefree_voronoi_attack",
+          "role": "discovery",
+          "status": "completed_with_exact_compact_smooth_transform_refactorization_reciprocal_lemma_and_scoped_H_no_go"
+        },
+        {
+          "id": "blind_t1_squarefree_voronoi_rederivation",
+          "role": "blind_rederiver",
+          "status": "completed_with_independent_coefficient_Euler_conductor_resonance_power_rederivation_and_terminal_green"
+        },
+        {
+          "id": "complex_order_voronoi_source_audit",
+          "role": "source_auditor",
+          "status": "completed_with_exact_level_four_source_normalization_uniformity_gap_and_terminal_green"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0,
+        "planned_numerical_percent": 0
+      },
+      "starting_graph_sha256": "1dc79cf41e0dea8888341e944c5d0bf025d87f22cfaa282da34fcd10eecd04f5",
+      "exit_labels": [
+        "t1_target_bound",
+        "strict_top_t1_voronoi_reduction",
+        "squarefree_H_resonance_no_go"
+      ],
+      "closing_assessment": {
+        "decision": "promote_exact_t1_fixed_order_voronoi_reduction_and_scoped_squarefree_H_resonance_obstruction",
+        "graph_mutation": true,
+        "terminal_label": "squarefree_H_resonance_no_go",
+        "main_result": "The exact squarefree t=1 coefficient and local Mellin normalization factor through a powerful H-convolution and a fixed-order conductor-four Voronoi identity. Growing-order kernel control and signed H-resonance aggregation remain open; absolute H aggregation and literal Mobius-square triangle placement miss the target by positive powers.",
+        "resulting_graph_sha256": "bb43abb1e0fbd719b18ebf91f4c7e477bf18e46e7b5225faaa88a7fb38d31352",
+        "exponent_change": false
+      },
+      "next_round": 148
+    },
+    {
+      "round_index": 148,
+      "campaign_id": "m9-m1-lower-cone-t1-squarefree-reciprocal-dispersion-gate",
+      "type": "m9_m1_lower_cone_t1_squarefree_reciprocal_dispersion_gate",
+      "status": "closed",
+      "objective": "Derive the literal signed one-sided reciprocal transform of the mandatory t=1 squarefree-cone face and prove its RD target by Mobius-first dispersion, isolate a strict owner-complete range, or prove the first exact diagonal, phase-alignment, modulus, source, boundary, or all-scale obstruction.",
+      "tasks": [
+        {
+          "id": "signed_squarefree_reciprocal_attack",
+          "role": "discovery",
+          "status": "report_complete"
+        },
+        {
+          "id": "blind_squarefree_reciprocal_feasibility",
+          "role": "blind_rederiver",
+          "status": "report_complete"
+        },
+        {
+          "id": "squarefree_progression_source_audit",
+          "role": "source_auditor",
+          "status": "report_complete"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0,
+        "planned_numerical_percent": 0
+      },
+      "starting_graph_sha256": "bb43abb1e0fbd719b18ebf91f4c7e477bf18e46e7b5225faaa88a7fb38d31352",
+      "exit_labels": [
+        "squarefree_reciprocal_target",
+        "strict_signed_reciprocal_range",
+        "squarefree_reciprocal_dispersion_no_go"
+      ],
+      "closing_assessment": {
+        "decision": "promote_exact_t1_squarefree_reciprocal_transform_and_scoped_progression_dispersion_obstruction",
+        "graph_mutation": true,
+        "terminal_label": "squarefree_reciprocal_dispersion_no_go",
+        "main_result": "The exact finite one-sided reciprocal transform is boundary-complete and target-equivalent. Early unrecombined progression-cell Cauchy with a separately positive d-diagonal loses R, while the actual joint signed reciprocal estimate and every downstream owner remain open.",
+        "resulting_graph_sha256": "8f1912eeda4843718379213478a839b30fb2694d6b169ac8decbab5ca3561176",
+        "exponent_change": false
+      },
+      "next_round": 149
+    },
+    {
+      "round_index": 149,
+      "campaign_id": "m9-m1-lower-cone-t1-squarefree-gcd-lift-energy-gate",
+      "type": "m9_m1_lower_cone_t1_squarefree_gcd_lift_energy_gate",
+      "status": "closed",
+      "objective": "Compress the exact Round-148 Mobius cells first by lcm and then by common gcd lift, prove the truncated lift square norm, and establish the target-sized joint d-energy or the first exact off-diagonal obstruction.",
+      "tasks": [
+        {
+          "id": "gcd_lift_euler_compression_attack",
+          "role": "discovery",
+          "status": "report_complete"
+        },
+        {
+          "id": "blind_compressed_energy_feasibility",
+          "role": "blind_rederiver",
+          "status": "report_complete"
+        },
+        {
+          "id": "rational_energy_source_audit",
+          "role": "source_auditor",
+          "status": "report_complete"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0,
+        "planned_numerical_percent": 0
+      },
+      "starting_graph_sha256": "8f1912eeda4843718379213478a839b30fb2694d6b169ac8decbab5ca3561176",
+      "exit_labels": [
+        "euler_compressed_reciprocal_target",
+        "strict_joint_energy_range",
+        "gcd_lift_energy_no_go"
+      ],
+      "closing_assessment": {
+        "decision": "promote_exact_gcd_lift_compression_norm_diagonal_and_exact_alignment_bounds_with_scoped_moving_coefficient_energy_obstruction",
+        "graph_mutation": true,
+        "terminal_label": "gcd_lift_energy_no_go",
+        "main_result": "Exact lcm and gcd-lift compression proves prefix-uniform coefficient norms and target-safe literal diagonal and exact phase classes. The full target remains open at the nonexact moving-coefficient near/generic correlation, and no audited fixed-vector or dispersion theorem directly controls it.",
+        "resulting_graph_sha256": "b6c5ee5b0d51d347876b389c05c78596c069b190af715d297bd937701ea893b6",
+        "exponent_change": false
+      },
+      "next_round": 150
+    },
+    {
+      "round_index": 150,
+      "campaign_id": "m9-m1-lower-cone-t1-squarefree-moving-coefficient-near-collision-gate",
+      "type": "m9_m1_lower_cone_t1_squarefree_moving_coefficient_near_collision_gate",
+      "status": "closed",
+      "objective": "Expand the literal two-row moving coefficient and prove the complete nonzero rho collar is target-sized, isolate a strict owner-complete range, or prove the first exact shifted-factor, rank, variation, D=1, source, or all-scale obstruction.",
+      "tasks": [
+        {
+          "id": "moving_coefficient_two_row_expansion_attack",
+          "role": "discovery",
+          "status": "report_complete"
+        },
+        {
+          "id": "blind_nonexact_correlation_feasibility",
+          "role": "blind_rederiver",
+          "status": "report_complete"
+        },
+        {
+          "id": "variable_row_collar_source_audit",
+          "role": "source_auditor",
+          "status": "report_complete"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0,
+        "planned_numerical_percent": 0
+      },
+      "starting_graph_sha256": "b6c5ee5b0d51d347876b389c05c78596c069b190af715d297bd937701ea893b6",
+      "exit_labels": [
+        "moving_coefficient_collar_target",
+        "strict_moving_coefficient_collar_range",
+        "moving_coefficient_collar_no_go"
+      ],
+      "closing_assessment": {
+        "decision": "promote_exact_two_row_incidence_half_weight_norm_fixed_wrap_packet_and_bounded_M_edge_with_scoped_large_wrap_obstruction",
+        "graph_mutation": true,
+        "terminal_label": "strict_moving_coefficient_collar_range",
+        "main_result": "Exact incidence and a new half-weight norm prove DQ energy for every fixed wrap and R2D for any O(1+R2/Q) packet, including k=0; the actual bounded-M full row closes. Growing-M large wraps and the generic complement remain open.",
+        "resulting_graph_sha256": "521f626e4af7e75e29d2ba909efb0d48864d5da4785de786acbd746d7559c11f",
+        "exponent_change": false
+      },
+      "next_round": 151
+    },
+    {
+      "round_index": 151,
+      "campaign_id": "m9-m1-lower-cone-t1-squarefree-large-wrap-shifted-factor-gate",
+      "type": "m9_m1_lower_cone_t1_squarefree_large_wrap_shifted_factor_gate",
+      "status": "closed",
+      "objective": "Prove the complete growing-M large-wrap residual is target-sized, isolate a strict owner-complete two-adic or endpoint range, or establish the first exact shifted-factor recovery, reciprocal self-return, source, or all-scale obstruction.",
+      "tasks": [
+        {
+          "id": "large_wrap_character_factorization_attack",
+          "role": "discovery",
+          "status": "report_complete"
+        },
+        {
+          "id": "blind_d1_reciprocal_bprocess_feasibility",
+          "role": "blind_rederiver",
+          "status": "report_complete"
+        },
+        {
+          "id": "large_wrap_shifted_divisor_source_audit",
+          "role": "source_auditor",
+          "status": "report_complete"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0,
+        "planned_numerical_percent": 0
+      },
+      "starting_graph_sha256": "521f626e4af7e75e29d2ba909efb0d48864d5da4785de786acbd746d7559c11f",
+      "exit_labels": [
+        "large_wrap_collar_target",
+        "strict_large_wrap_character_range",
+        "large_wrap_shifted_factor_no_go"
+      ],
+      "closing_assessment": {
+        "decision": "promote_exact_character_coordinates_high_adic_family_actual_profile_BV_two_row_corridors_and_reciprocal_self_return_boundary",
+        "graph_mutation": true,
+        "terminal_label": "strict_large_wrap_character_range",
+        "main_result": "Exact mod-four shifted-factor transfer and inverse h-fibre, every high-two-adic wrap, all-scale actual-profile variation, Bourgain full-row and TTY low-row corridors, and the boundary-complete D=L=1 principal self-return are accepted. The low-adic residual outside the corridors remains open.",
+        "resulting_graph_sha256": "d09d0f8c1e7058a1e423e5249d3cf28b08d8478cff55ddd1c85b1d59bb177b2c",
+        "exponent_change": false
+      },
+      "next_round": 152
+    },
+    {
+      "round_index": 152,
+      "campaign_id": "m9-m1-lower-cone-t1-d1-square-root-wave-gate",
+      "type": "m9_m1_lower_cone_t1_d1_square_root_wave_gate",
+      "status": "closed",
+      "objective": "Prove the actual-profile D=d=L=1 signed square-root wave is X^epsilon in the growing range below the TTY corridor, isolate a strict owner-complete range, or establish the first exact character-loss, square-resonance, Mellin-conductor, source, endpoint, or power obstruction.",
+      "tasks": [
+        {
+          "id": "square_root_character_wave_attack",
+          "role": "discovery",
+          "status": "report_complete"
+        },
+        {
+          "id": "blind_square_root_wave_feasibility",
+          "role": "blind_rederiver",
+          "status": "report_complete"
+        },
+        {
+          "id": "square_root_wave_source_audit",
+          "role": "source_auditor",
+          "status": "report_complete"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0,
+        "planned_numerical_percent": 0
+      },
+      "starting_graph_sha256": "d09d0f8c1e7058a1e423e5249d3cf28b08d8478cff55ddd1c85b1d59bb177b2c",
+      "exit_labels": [
+        "square_root_wave_target",
+        "strict_square_root_character_range",
+        "square_root_wave_no_go"
+      ],
+      "closing_assessment": {
+        "decision": "promote_exact_square_defect_pruning_new_BD_scale_range_and_scoped_character_transform_obstructions",
+        "graph_mutation": true,
+        "terminal_label": "strict_square_root_character_range",
+        "main_result": "Exact arithmetic pruning removes the exact-square, small-nonzero-defect, and large-square-factor owners, while the global BD pair proves the new M^449>>R^780 scale range. The large-defect small-square-factor P_U^* survivor below that boundary remains open.",
+        "resulting_graph_sha256": "9ffef2e30c99d83d02d28141834b585d02dd77483fa7bfd8e572d45d6985fcc1",
+        "exponent_change": false
+      },
+      "next_round": 153
+    },
+    {
+      "round_index": 153,
+      "campaign_id": "m9-m1-lower-cone-t1-d1-squarefree-kernel-bilinear-gate",
+      "type": "m9_m1_lower_cone_t1_d1_squarefree_kernel_bilinear_gate",
+      "status": "closed",
+      "objective": "Prove the exact large-defect small-square-factor D=L=1 survivor is target-sized through a cancellation-preserving squarefree Mobius bilinear estimate, isolate a strict owner-complete range, or establish the first exact short-divisor, Type-I/Type-II, spacing, diagonal, endpoint, source, or power obstruction.",
+      "tasks": [
+        {
+          "id": "squarefree_mobius_bilinear_attack",
+          "role": "discovery",
+          "status": "report_complete"
+        },
+        {
+          "id": "blind_squarefree_kernel_typeii_feasibility",
+          "role": "blind_rederiver",
+          "status": "report_complete"
+        },
+        {
+          "id": "squarefree_bilinear_source_audit",
+          "role": "source_auditor",
+          "status": "report_complete"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0,
+        "planned_numerical_percent": 0
+      },
+      "starting_graph_sha256": "9ffef2e30c99d83d02d28141834b585d02dd77483fa7bfd8e572d45d6985fcc1",
+      "exit_labels": [
+        "squarefree_kernel_bilinear_target",
+        "strict_squarefree_kernel_bilinear_range",
+        "squarefree_kernel_bilinear_no_go"
+      ],
+      "closing_assessment": {
+        "decision": "promote_exact_complete_Mobius_recombination_with_scoped_bilinear_route_no_go",
+        "graph_mutation": true,
+        "terminal_label": "squarefree_kernel_bilinear_no_go",
+        "main_result": "Complete Mobius inversion and exact r=as recombination return the direct large-defect wave plus an absolutely safe boundary. No new range or exponent is proved, and the literal wave remains open below M^449 asymp R^780.",
+        "resulting_graph_sha256": "6a36e4063b8f944bf5349c333e6cbf569694c8bdbeaa6314cad596631c125984",
+        "exponent_change": false
+      },
+      "next_round": 154
+    },
+    {
+      "round_index": 154,
+      "campaign_id": "m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate",
+      "type": "m9_m1_lower_cone_t1_d1_large_defect_root_dispersion_gate",
+      "status": "closed",
+      "objective": "Prove the exact D=L=1 direct large-defect wave is target-sized through its nearest-integer root congruence and a cancellation-preserving quadratic completion or dispersion, isolate a strict owner-complete range, or establish the first exact Gauss, root-spacing, quotient-profile, diagonal, endpoint, source, or power obstruction.",
+      "tasks": [
+        {
+          "id": "large_defect_root_dispersion_attack",
+          "role": "discovery",
+          "status": "report_complete"
+        },
+        {
+          "id": "blind_quadratic_root_wave_feasibility",
+          "role": "blind_rederiver",
+          "status": "report_complete"
+        },
+        {
+          "id": "quadratic_root_completion_source_audit",
+          "role": "source_auditor",
+          "status": "report_complete"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0,
+        "planned_numerical_percent": 0
+      },
+      "starting_graph_sha256": "6a36e4063b8f944bf5349c333e6cbf569694c8bdbeaa6314cad596631c125984",
+      "exit_labels": [
+        "large_defect_root_dispersion_target",
+        "strict_large_defect_root_range",
+        "large_defect_root_dispersion_no_go"
+      ],
+      "closing_assessment": {
+        "decision": "promote_exact_root_defect_linearization_fixed_polylogarithmic_collar_and_scoped_theta_completion_obstruction",
+        "graph_mutation": true,
+        "terminal_label": "strict_large_defect_root_range",
+        "main_result": "The exact root-defect cell and selected-graph phase linearization reduce the direct wave beyond every fixed polylogarithmic collar. Exact ambient completion gives the normalized theta-Kloosterman family, but termwise DFI loses at large defect and the principal full-cell transform self-returns. No positive-power range or exponent is proved.",
+        "resulting_graph_sha256": "84bbcb3413936c9b672c829cdba97b8d0bde69f7a6df677b61f24e9ec27e243a",
+        "exponent_change": false
+      },
+      "next_round": 155
+    },
+    {
+      "round_index": 155,
+      "campaign_id": "m9-m1-lower-cone-t1-d1-outer-defect-theta-dispersion-gate",
+      "type": "m9_m1_lower_cone_t1_d1_outer_defect_theta_dispersion_gate",
+      "status": "closed",
+      "objective": "Prove the exact signed outer-defect blocks are target-sized through a coefficient-sensitive joint theta transform or selected cross-fibre estimate, isolate a strict owner-complete positive-power range, or establish the first exact inverse-transform, zero-mode, coefficient, diagonal, endpoint, source, or restored-power obstruction.",
+      "tasks": [
+        {
+          "id": "outer_defect_spectral_dispersion_attack",
+          "role": "discovery",
+          "status": "report_complete"
+        },
+        {
+          "id": "blind_linearized_cross_fibre_feasibility",
+          "role": "blind_rederiver",
+          "status": "report_complete"
+        },
+        {
+          "id": "theta_bilinear_spectral_source_audit",
+          "role": "source_auditor",
+          "status": "report_complete"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0,
+        "planned_numerical_percent": 0
+      },
+      "starting_graph_sha256": "84bbcb3413936c9b672c829cdba97b8d0bde69f7a6df677b61f24e9ec27e243a",
+      "exit_labels": [
+        "outer_defect_signed_target",
+        "strict_outer_defect_signed_range",
+        "outer_defect_theta_dispersion_no_go"
+      ],
+      "closing_assessment": {
+        "decision": "promote_exact_complete_theta_inverse_Gauss_self_return_folded_Parseval_zero_mode_and_direct_source_obstructions",
+        "graph_mutation": true,
+        "terminal_label": "outer_defect_theta_dispersion_no_go",
+        "main_result": "Complete half-period theta-frequency resummation exactly inverts the quadratic Gauss completion and restores the quotient selector. Sampled Parseval retains all 2N/d folds, the zero row remains a signed open seam, and current joint spectral sources do not match the fixed-modulus nonseparable coefficient. No positive-power range or exponent is proved.",
+        "resulting_graph_sha256": "f9866ea08923ae28f9631e503d2a5eb6be3cd85a09eb05505deec2903d1658b6",
+        "exponent_change": false
+      },
+      "next_round": 156
+    },
+    {
+      "round_index": 156,
+      "campaign_id": "m9-m1-lower-cone-t1-d1-outer-defect-zero-mode-gate",
+      "type": "m9_m1_lower_cone_t1_d1_outer_defect_zero_mode_gate",
+      "status": "closed",
+      "objective": "Evaluate the exact fixed-modulus theta zero row into primitive or induced real-character local factors and prove its literal weighted signed sum is target-sized, isolate a strict owner-complete range, or identify the first exact conductor, support, profile, endpoint, source, or restored-power obstruction.",
+      "tasks": [
+        {
+          "id": "zero_mode_local_factor_attack",
+          "role": "discovery",
+          "status": "report_complete"
+        },
+        {
+          "id": "blind_zero_mode_character_rederivation",
+          "role": "blind_rederiver",
+          "status": "report_complete"
+        },
+        {
+          "id": "zero_mode_character_source_audit",
+          "role": "source_auditor",
+          "status": "report_complete"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0,
+        "planned_numerical_percent": 0
+      },
+      "starting_graph_sha256": "f9866ea08923ae28f9631e503d2a5eb6be3cd85a09eb05505deec2903d1658b6",
+      "exit_labels": [
+        "outer_defect_zero_mode_target",
+        "strict_outer_defect_zero_mode_range",
+        "outer_defect_zero_mode_arithmetic_no_go"
+      ],
+      "closing_assessment": {
+        "decision": "promote_complete_theta_zero_row_signed_cancellation",
+        "graph_mutation": true,
+        "terminal_label": "outer_defect_zero_mode_target",
+        "main_result": "The literal mandatory v=0 theta row is O_epsilon,A(M^(-1/4)X^epsilon) throughout the full frozen outer-defect range by exact all-divisor quotient-character recombination, a finite signed interval theorem, and the actual Bhat_j(0) BV norm. The incomplete nonzero theta matrix is the first open row.",
+        "resulting_graph_sha256": "3b48c540f7acc5b3e2886279f735072e6c66ee14704e77cd05c74fe24f7b39ea",
+        "exponent_change": false
+      },
+      "next_round": 157
+    },
+    {
+      "round_index": 157,
+      "campaign_id": "m9-m1-lower-cone-t1-d1-nonzero-theta-matrix-gate",
+      "type": "m9_m1_lower_cone_t1_d1_nonzero_theta_matrix_gate",
+      "status": "closed",
+      "objective": "Prove the exact incomplete nonzero theta matrix is target-sized through its centered physical quadratic-root discrepancy, a mask-preserving joint j-v transform, or an equivalent selected cross-fibre theorem; otherwise isolate the first exact mixed-variation, fold, diagonal, source, endpoint, or restored-power obstruction.",
+      "tasks": [
+        {
+          "id": "centered_nonzero_root_discrepancy_attack",
+          "role": "discovery",
+          "status": "report_complete"
+        },
+        {
+          "id": "blind_nonzero_cross_fibre_rederivation",
+          "role": "blind_rederiver",
+          "status": "report_complete"
+        },
+        {
+          "id": "nonzero_theta_matrix_source_audit",
+          "role": "source_auditor",
+          "status": "report_complete"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0,
+        "planned_numerical_percent": 0
+      },
+      "starting_graph_sha256": "3b48c540f7acc5b3e2886279f735072e6c66ee14704e77cd05c74fe24f7b39ea",
+      "exit_labels": [
+        "outer_defect_nonzero_matrix_target",
+        "strict_outer_defect_nonzero_matrix_range",
+        "outer_defect_centered_discrepancy_no_go"
+      ],
+      "closing_assessment": {
+        "decision": "promote_exact_centering_corrected_selected_capacity_and_target_safe_Nyquist_fold_with_scoped_paired_interior_no_go",
+        "graph_mutation": true,
+        "terminal_label": "outer_defect_centered_discrepancy_no_go",
+        "main_result": "The exact nonzero projection is the 1/(4N)-centered physical selector, the selected support count is min(M,V), and the unique Nyquist fold is O_epsilon,A(M^(-1/4)X^epsilon) by literal spatial BV and a twisted geometric interval theorem. The paired interior matrix remains open; the mixed-variation, completion, norm, and source conclusions are route-scoped capacities or no-matches.",
+        "resulting_graph_sha256": "3acbfaf6fb95047babd19800dee4152fb60cb408197a8ceac93931a20c57491f",
+        "exponent_change": false
+      },
+      "next_round": 158
+    },
+    {
+      "round_index": 158,
+      "campaign_id": "m9-m1-lower-cone-t1-d1-paired-interior-cell-trace-gate",
+      "type": "m9_m1_lower_cone_t1_d1_paired_interior_cell_trace_gate",
+      "status": "closed",
+      "objective": "Derive and bound the exact sign-adapted moving-mask Abel trace inside the paired interior D=d=L=1 nonzero theta matrix, isolate a strict target-safe subrow or range, or identify the first strict-prefix, arithmetic, sign, coefficient, endpoint, source, or restored-power obstruction.",
+      "tasks": [
+        {
+          "id": "sign_adapted_cell_trace_attack",
+          "role": "discovery",
+          "status": "report_complete"
+        },
+        {
+          "id": "blind_cell_trace_rederivation",
+          "role": "blind_rederiver",
+          "status": "report_complete"
+        },
+        {
+          "id": "cell_trace_source_audit",
+          "role": "source_auditor",
+          "status": "report_complete"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0,
+        "planned_numerical_percent": 0
+      },
+      "starting_graph_sha256": "3acbfaf6fb95047babd19800dee4152fb60cb408197a8ceac93931a20c57491f",
+      "exit_labels": [
+        "paired_interior_cell_trace_target",
+        "strict_paired_interior_cell_trace_range",
+        "paired_interior_cell_trace_no_go"
+      ],
+      "closing_assessment": {
+        "decision": "promote_exact_cell_trace_reduction_safe_special_trace_rows_and_endpoint_face_with_scoped_strict_mask_no_go",
+        "graph_mutation": true,
+        "terminal_label": "paired_interior_cell_trace_no_go",
+        "main_result": "The paired-interior moving-cell trace has an exact sign-adapted physical reduction. Its separate zero and Nyquist trace pieces and endpoint face are target-safe. The only remaining trace term is the literal two-profile chi_4 strict residual-mask sum, whose scalar target is X^epsilon, equivalently raw M^(3/4)X^epsilon. Standard audited placements and sources do not prove it; both Abel outer endpoints and both profile-bulk remainders also remain open.",
+        "resulting_graph_sha256": "8a0f917fb8117e9dbaf287d9f773046ff201729d2d8d8c3df1a51bca7815574b",
+        "exponent_change": false
+      },
+      "next_round": 159
+    },
+    {
+      "round_index": 159,
+      "campaign_id": "m9-m1-lower-cone-t1-d1-abel-commutator-recombination-gate",
+      "type": "m9_m1_lower_cone_t1_d1_abel_commutator_recombination_gate",
+      "status": "closed",
+      "objective": "Recombine the moving-cell trace, both profile-difference remainders, and both outer endpoints exactly; prove or refute the resulting common-profile selected residual-mask scalar and close the full paired-interior D=d=L=1 matrix, a strict owner-complete range beyond the collar, or the first exact variable-mask, Fourier, truncation, source, or restored-power obstruction.",
+      "tasks": [
+        {
+          "id": "full_abel_commutator_attack",
+          "role": "discovery",
+          "status": "report_complete"
+        },
+        {
+          "id": "blind_full_abel_rederivation",
+          "role": "blind_rederiver",
+          "status": "report_complete"
+        },
+        {
+          "id": "common_profile_mask_method_audit",
+          "role": "source_auditor",
+          "status": "report_complete"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0,
+        "planned_numerical_percent": 0
+      },
+      "starting_graph_sha256": "8a0f917fb8117e9dbaf287d9f773046ff201729d2d8d8c3df1a51bca7815574b",
+      "exit_labels": [
+        "paired_interior_abel_commutator_target",
+        "strict_profile_commutator_range",
+        "paired_interior_abel_commutator_no_go"
+      ],
+      "closing_assessment": {
+        "decision": "promote_exact_full_abel_telescope_and_common_profile_self_return_with_scoped_variable_mask_no_go",
+        "graph_mutation": true,
+        "terminal_label": "paired_interior_abel_commutator_no_go",
+        "main_result": "All six sign-adapted Abel lines telescope before estimation and complete inversion returns exactly the accepted Round-154 common-profile hard defect wave after the whole zero and Nyquist rows are subtracted once. This removes separate Abel-piece obligations but proves no target estimate or strict range; the raw M^(3/4) joint variable-mask theorem remains open beyond the fixed-polylogarithmic collar.",
+        "resulting_graph_sha256": "4ad56f62aeb814c11c31fe655bc48da6d74639e3bd61077e9496d647c366c41d",
+        "exponent_change": false
+      },
+      "next_round": 160
+    },
+    {
+      "round_index": 160,
+      "campaign_id": "m9-m2-unbalanced-inverse-selector-reciprocity-gate",
+      "type": "m9_m2_unbalanced_inverse_selector_reciprocity_gate",
+      "status": "closed",
+      "objective": "Apply exact additive reciprocity inside the centered nonzero inverse-selector coefficient before every positive norm, then prove the flat-smooth strict-UNBAL target, an owner-complete strict range, or the first exact residue-class, projective, long-frequency, spectral, endpoint, or restored-power obstruction.",
+      "tasks": [
+        {
+          "id": "inverse_selector_reciprocity_attack",
+          "role": "discovery",
+          "status": "report_complete"
+        },
+        {
+          "id": "blind_reciprocity_matrix_rederivation",
+          "role": "blind_rederiver",
+          "status": "report_complete"
+        },
+        {
+          "id": "reciprocity_projective_source_audit",
+          "role": "source_auditor",
+          "status": "report_complete"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0,
+        "planned_numerical_percent": 0
+      },
+      "starting_graph_sha256": "4ad56f62aeb814c11c31fe655bc48da6d74639e3bd61077e9496d647c366c41d",
+      "exit_labels": [
+        "inverse_selector_reciprocity_target",
+        "strict_reciprocity_matrix_range",
+        "inverse_selector_projective_capacity_no_go"
+      ],
+      "closing_assessment": {
+        "decision": "promote_exact_reciprocity_reconstruction_unweighted_projective_and_long_block_capacity_with_scoped_scalar_route_no_go",
+        "graph_mutation": true,
+        "terminal_label": "inverse_selector_projective_capacity_no_go",
+        "main_result": "Exact additive reciprocity preserves the full centered owner and complete h summation self-returns. The unweighted inverse-residue kernel has Gram matrix jI-11*, scalar projective inflation j^(1/2-o(1)), and full-range compression norm asymptotic to sqrt(Delta); both exceed the missing factor at every fixed strict point. This parks canonical scalar common-test routes but proves no weighted lower bound, vector impossibility, target, strict range, or exponent improvement.",
+        "resulting_graph_sha256": "7e68cfd355ef48407712d3216382a1a54a28be9a27ac9e15c3fd1e59e081a447",
+        "exponent_change": false
+      },
+      "next_round": 161
+    },
+    {
+      "round_index": 161,
+      "campaign_id": "m9-m2-hard-top-truncated-divisor-additive-twist-gate",
+      "type": "m9_m2_hard_top_radical_frequency_coupling_gate",
+      "status": "closed",
+      "objective": "After unique nonsquare radical linearization, prove the literal fixed-centre hard-TOP target, an owner-complete strict polynomial range, or the first exact coefficient, collision, factorization-norm, source, or restored-power obstruction to coupling the varying B_D(t) channels.",
+      "tasks": [
+        {
+          "id": "literal_radical_frequency_attack",
+          "role": "discovery",
+          "status": "report_complete"
+        },
+        {
+          "id": "blind_radical_frequency_rederivation",
+          "role": "blind_rederiver",
+          "status": "report_complete"
+        },
+        {
+          "id": "square_root_spacing_source_hostile_audit",
+          "role": "source_auditor",
+          "status": "report_complete"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0,
+        "planned_numerical_percent": 0
+      },
+      "starting_graph_sha256": "7e68cfd355ef48407712d3216382a1a54a28be9a27ac9e15c3fd1e59e081a447",
+      "exit_labels": [
+        "hard_top_radical_frequency_target",
+        "strict_hard_top_radical_frequency_range",
+        "hard_top_radical_frequency_coupling_no_go"
+      ],
+      "closing_assessment": {
+        "decision": "promote_long_channel_exact_collision_control_and_common_test_named_source_obstruction",
+        "graph_mutation": true,
+        "terminal_label": "hard_top_radical_frequency_coupling_no_go",
+        "main_result": "The exact radical-incidence dictionary removes every fixed-constant long channel D<=CL and classifies all exact base and atom collisions. The mandatory t=1,D asymptotic to L^2 face has one-column common-test capacity L^(2+o(1)); coefficient-uniform projective placement and the four audited primary-source interfaces do not supply the missing L^(1/2-o(1)). This is a route obstruction, not a physical lower bound. The literal signed close-factor estimate and all downstream owners remain open.",
+        "resulting_graph_sha256": "8d39b06bd12357e337159473da3d4d6ec0c71d0ab3217588e4c6b5b34973b422",
+        "exponent_change": false
+      },
+      "next_round": 162
+    },
+    {
+      "round_index": 162,
+      "campaign_id": "m9-m2-hard-top-t1-close-factor-bilinear-gate",
+      "type": "m9_m2_hard_top_t1_close_factor_bilinear_gate",
+      "status": "closed",
+      "objective": "Prove the literal chi4-weighted t=1 close-factor target, a genuinely complete signed sector beyond the fixed-constant long-channel result, or the first exact character-preserving Poisson, dual-hyperbola, bilinear, endpoint, source, or restored-power obstruction.",
+      "tasks": [
+        {
+          "id": "literal_t1_character_poisson_attack",
+          "role": "discovery",
+          "status": "completed"
+        },
+        {
+          "id": "blind_t1_close_factor_rederivation",
+          "role": "blind_rederiver",
+          "status": "completed"
+        },
+        {
+          "id": "t1_bilinear_source_hostile_audit",
+          "role": "source_auditor",
+          "status": "completed"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0,
+        "planned_numerical_percent": 0
+      },
+      "starting_graph_sha256": "8d39b06bd12357e337159473da3d4d6ec0c71d0ab3217588e4c6b5b34973b422",
+      "exit_labels": [
+        "hard_top_t1_close_factor_target",
+        "strict_hard_top_t1_close_factor_sector",
+        "hard_top_t1_close_factor_bilinear_no_go"
+      ],
+      "closing_assessment": {
+        "decision": "promote_t1_character_poisson_product_collar_obstruction",
+        "graph_mutation": true,
+        "terminal_label": "hard_top_t1_close_factor_bilinear_no_go",
+        "main_result": "Exact chi_4 Poisson and the literal Mobius lcm opening give a rank-one scaled product collar with positive capacity sqrt(JL), exact transform involution, local divisor return, and no target-strength conclusion from standard positive differencing or the named audited sources. The physical signed t=1 target and every downstream owner remain open.",
+        "resulting_graph_sha256": "700182f4dcf805e7f5ae74ca8ac49e88e4025471d9def1746a832c45fb6d2358",
+        "exponent_change": false
+      },
+      "next_round": 163
+    },
+    {
+      "round_index": 163,
+      "campaign_id": "m9-m2-hard-top-t1-near-square-divisor-involution-gate",
+      "type": "m9_m2_hard_top_t1_near_square_divisor_involution_gate",
+      "status": "closed",
+      "objective": "Prove the literal t=1 target or a complete nontrivial arithmetic sector before Mobius separation using an exact near-square divisor involution, or establish the smallest rigorous prime-toggle, multi-prime, complement, profile, endpoint, and restored-power leakage obstruction.",
+      "tasks": [
+        {
+          "id": "literal_near_square_divisor_involution_attack",
+          "role": "discovery",
+          "status": "completed"
+        },
+        {
+          "id": "blind_near_square_divisor_rederivation",
+          "role": "blind_rederiver",
+          "status": "completed"
+        },
+        {
+          "id": "prime_toggle_complement_leakage_hostile_audit",
+          "role": "barrier_no_go",
+          "status": "completed"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0,
+        "planned_numerical_percent": 0
+      },
+      "starting_graph_sha256": "700182f4dcf805e7f5ae74ca8ac49e88e4025471d9def1746a832c45fb6d2358",
+      "exit_labels": [
+        "hard_top_t1_near_square_divisor_target",
+        "strict_t1_prime_toggle_sector",
+        "hard_top_t1_divisor_involution_leakage_no_go"
+      ],
+      "closing_assessment": {
+        "decision": "promote_close_opposite_prime_exchange_sector",
+        "graph_mutation": true,
+        "terminal_label": "strict_t1_prime_toggle_sector",
+        "main_result": "A canonical close opposite-character prime exchange proves the complete exactly-one incidence sector at O_kappa(L^(3/2)), uniformly in the real centre, with literal profile and hard-boundary leakage charged. No eligible-pair density, residual t=1 estimate, hard-TOP parent, downstream theorem, or exponent improvement follows.",
+        "resulting_graph_sha256": "81690ebb72b0dedd99bdb6c6127f947df696a901a22af3f65ac8738209125306",
+        "exponent_change": false
+      },
+      "next_round": 164
     }
   ]
 }

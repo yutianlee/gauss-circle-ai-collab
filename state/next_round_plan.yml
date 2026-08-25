@@ -1,31 +1,28 @@
 {
-  "round_index": 131,
-  "status": "proposed_not_opened",
-  "candidate_type": "gc_w7_16_top_shell_determinant_residue_zero_mode_gate",
-  "candidate_objective": "On the sole exponent-critical B asymp D shell, compute the exact induced determinant-residue weights and prove a literal signed contraction, or identify an actual zero-mode obstruction and park the graded interface.",
-  "starting_graph_sha256": "23e7bfacbf6abc5582769fbe8d427cbca2379e1d265b99df21d93a65ec504825",
-  "target_obligations": [
-    "GC-W7-16-top-shell-determinant-residue-reindexing",
-    "GC-W7-16-post-inner-outer-energy-obstruction",
-    "GC-W7-16-actual-reduced-determinant-correlation"
+  "round_index": 164,
+  "status": "proposed",
+  "campaign_id": "m9-m2-hard-top-t1-residual-signed-divisor-transport-gate",
+  "previous_campaign_id": "m9-m2-hard-top-t1-near-square-divisor-involution-gate",
+  "starting_graph_sha256": "81690ebb72b0dedd99bdb6c6127f947df696a901a22af3f65ac8738209125306",
+  "candidate_interface": "The complete literal residual S_(L,1)^rem after subtracting only the accepted canonical close-opposite-prime XOR incidence sector.",
+  "selection_reason": "Round 163 proves a target-safe strict sector but no density or complement estimate. The smallest owner-complete continuation is the signed residual itself. In one dimension its within-product cancellation has an exact cumulative-discrepancy or monotone-transport formulation, which can either deliver the missing half-power or prove sharply that unmatched sign mass forces cancellation across different products N.",
+  "candidate_objective": "Derive the exact zero-extended signed cumulative-divisor and monotone-transport identities for every residual product N. Prove the aggregate target transport and unmatched-mass bound, use the outer e(J sqrt(N)) oscillation without a positive norm if within-N transport is too large, or establish the smallest quantitative obstruction showing that every within-N positive transport repays the missing L^(1/2-o(1)).",
+  "frozen_scalar": "S_(L,1)^rem=S_(L,1)-S_(L,1)^cp, containing all supported squarefree no-pair products and all neither-selected-prime or both-selected-prime incidences, with the literal odd divisor, even-N branch, upper near-square window, normalization, eta_L, Phi, W, arbitrary-real-centre product phase, floors, stars, endpoints, and zero extension retained.",
+  "target": "S_(L,1)^rem <<_epsilon L^(3/2)X^epsilon",
+  "required_power": "The residual may still have L^(2+o(1)) positive capacity. A successful transport theorem must bound the total logarithmic displacement plus unmatched signed mass at L^(3/2+o(1)), or combine it with cancellation across N before any coefficient-uniform positive norm.",
+  "required_separation": "Distinguish equal-mass transport from unmatched sign mass, raw divisor counts from literal weighted coefficients, within-N cancellation from outer-N phase cancellation, and a sparse sector from an owner-complete residual estimate. Preserve selector dependence on N,L,kappa and do not infer density from existence.",
+  "forbidden_restarts": [
+    "another arbitrary at-most-one prime-pair sector without quantitative residual coverage",
+    "perfect matching inferred from partner existence without sign-count equality and Hall control",
+    "full-divisor character vanishing substituted for the truncated profiled residual",
+    "per-N absolute transport claimed target-safe without total displacement and unmatched-mass bounds",
+    "semiprime or multiprime raw counts treated as literal oscillatory mass",
+    "outer e(J sqrt(N)) phase discarded before proving within-N target control",
+    "transfer from residual t=1 to other few-point channels, hard TOP, smooth M2, M9, or an exponent"
   ],
-  "capacity_before": "Round 130 sharpens every shell to B K_B and localizes the complete Y^(35/48+epsilon) residual to B asymp D. The determinant target is Y^(1/2+epsilon), leaving Y^(11/48).",
-  "target_capacity": "Prove |O_(i,B asymp D)^+|<<D K_D Y^(-delta+epsilon) for some fixed delta>0; delta=11/48 reaches the fixed-block target. No global improvement follows until the complete correlation exponent is below 9/16.",
-  "primary_gate": "After physical Mobius reassembly, write the bounded-to-one n=aq-bp chart with the exact M1/M2 induced residue weights, thresholds, reciprocal aliases, and outer coefficients. Test the actual zero Fourier mode before any positive norm.",
-  "forbidden_repeats": [
-    "independent square-root credit for p",
-    "support-only or coefficient-blind outer energy",
-    "identifying the resolved Gram with G^2",
-    "claiming M1/M2 quarter shifts remove all product resonances",
-    "p-first product-window modulus",
-    "sequential unit-Hessian transforms or aliaswise modulus",
-    "using the complete all-owner Y^(37/48) theorem as an isolated top-owner bound",
-    "claiming a global exponent improvement without a complete exponent below 9/16"
-  ],
-  "fallback_order": [
-    "prove a literal fixed-power signed determinant-residue contraction",
-    "prove an exact actual zero-mode cancellation or nonconcentration criterion",
-    "construct a physical-profile zero-mode obstruction or rigorous no-go",
-    "park the graded interface and return to a distinct M9 or lower-GAR frontier"
+  "candidate_exit_labels": [
+    "hard_top_t1_residual_target",
+    "strict_t1_residual_transport_sector",
+    "hard_top_t1_residual_transport_no_go"
   ]
 }

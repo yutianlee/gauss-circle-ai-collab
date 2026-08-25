@@ -1,0 +1,250 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-lower-cone-t1-d1-theta-zero-row-cancellation",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Exact theta zero-row recombination and literal-BV cancellation",
+        "status": "proved_internal",
+        "statement_tex": "Fix A>0, J_A=M^(3/4)(log(2X))^A, K=sqrt(NM), and J_A<V<=K. In the literal D=d=L=1 ambient theta completion put q=4N, c=4N/d for every odd d|N, A_j=Bhat_j(0), and Z_U(V)=-i(1+i)/(2Nq) sum_(V<|j|<=2V) sum_(d|N,d odd) chi_4(d)d sqrt(c) A_j K(0,-j;c). On each signed block the actual zero-extended profile, exact residual phase, asymmetric cell, strict mask, and endpoints give sup|A_j|+Var(A_j)<<_epsilon K M^(-3/4)X^epsilon. If m=N/d=u^2r with r squarefree, epsilon_a(c/a) splits into the primitive Kronecker characters of the fundamental discriminants Delta_+=r or 4r and Delta_-=-r or -4r, with exact induced-modulus, Ramanujan, repeated-prime, conductor-one, and two-adic local factors. More directly, define S_N(j)=sum_(x mod 4N)1_(N|x^2-j)chi_4((x^2-j)/N). Exact quotient projection and the partition d=(h,N) give S_N(j)=-i(1+i)/(2N) sum_(d|N,d odd)chi_4(d)d sqrt(c)K(0,-j;c), hence Z_U(V)=(4N)^(-1)sum_j A_j S_N(j). Its finite Fourier transform vanishes at even h and has magnitude 2sqrt(8N(h,N)) at odd h, so every interval of length at most 4N has S_N-partial sum <<sqrt(N)tau(N)log(2N). Abel summation yields Z_U(V)<<_epsilon M^(-1/4)X^epsilon uniformly for arbitrary N, every d, both signs, all profile transitions, and all endpoints. An independent fixed-d proof uses sup_I|sum_(j in I)K(0,-j;c)|<<c log(2c) and gives the same power. This closes only v=0; the incomplete nonzero matrix remains open.",
+        "dependencies": [
+          "M9-M1-lower-cone-t1-d1-complete-theta-inversion-obstruction"
+        ],
+        "implies": [
+          "M9-M1-lower-cone-t1-squarefree-large-wrap-collar-obstruction",
+          "M9-M1-global-lower-radial-signed-estimate"
+        ],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "proofs/kernels/m9_m1_d1_theta_zero_row.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-zero-mode-gate/reports/zero_mode_local_factor_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-zero-mode-gate/reports/blind_zero_mode_character_rederivation.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-zero-mode-gate/candidates/conductor_round156_zero_mode_target.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-zero-mode-gate/candidates/conductor_round156_zero_mode_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-zero-mode-gate/reviews/independent_recombination_math_round156.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-zero-mode-gate/reviews/independent_source_round156_final.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-zero-mode-gate/reviews/hostile_profile_endpoint_round156_final.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-zero-mode-gate/reviews/conductor_round156_adjudication.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-zero-mode-gate/reports/zero_mode_character_source_audit.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Freeze the complete zero row as target-safe. Attack the incomplete nonzero-v theta matrix or an exactly equivalent selected signed cross-fibre partial-sum theorem, retaining all d, folds, complementary modes, profile transitions, signs, endpoints, and the external coefficient seam."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-lower-cone-t1-d1-root-defect-logarithmic-collar-reduction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-zero-mode-gate/candidates/conductor_round156_zero_mode_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-zero-mode-gate/reviews/conductor_round156_adjudication.md"
+          ]
+        },
+        "next_action": "The logarithmic collar remains the last proved defect range for the complete D=1 wave. Beyond it the theta zero row is now target-safe; prove the incomplete nonzero matrix or selected signed cross-fibre seam before enlarging the complete range."
+      },
+      {
+        "id": "M9-M1-d1-theta-kloosterman-source-audit",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-zero-mode-gate/reports/zero_mode_character_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-zero-mode-gate/reviews/independent_source_round156_final.md"
+          ]
+        },
+        "next_action": "Retain DFI Lemma 6.1 as an individual-sum theorem. The v=0 row is now closed by an elementary finite-Fourier and literal-BV argument; source-audit only proposed continuations for the incomplete nonzero coupled matrix."
+      },
+      {
+        "id": "M9-M1-lower-cone-t1-d1-root-dispersion-obstruction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-zero-mode-gate/reports/zero_mode_local_factor_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-zero-mode-gate/reviews/independent_recombination_math_round156.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-zero-mode-gate/reviews/conductor_round156_adjudication.md"
+          ]
+        },
+        "next_action": "Freeze complete v-resummation as inverse-Gauss self-return and the v=0 row as target-safe. The first remaining D=1 outer-defect input is the incomplete nonzero matrix or selected cross-fibre partial-sum theorem, with every fold, sign, endpoint, and d retained."
+      },
+      {
+        "id": "M9-M1-d1-outer-defect-spectral-source-audit",
+        "statement_tex": "Duke--Friedlander--Iwaniec Section 6 and Lemma 6.1 remain an exact pointwise match for every K(-v^2,-j;4N/d), including arbitrary composite modulus divisible by four and all gcd strata. The Round-156 source audit also matches the two primitive Kronecker constituents of K(0,-j;c), their induced-modulus formula, Ramanujan branch, Gauss phases, and every two-adic local factor. The zero row no longer needs an external signed theorem: exact all-d finite Fourier recombination, or independently fixed-d geometric sums, combined with the proved literal Bhat_j(0) variation gives M^(-1/4)X^epsilon throughout the frozen range. The initial arbitrary-weight source no-match is therefore superseded for v=0. The DFI and Sun spectral formulas still average moduli, assume nonzero shifted frequencies, and retain their full spectral pieces; the current fixed-modulus bilinear matches still have ordinary or prime kernels and separated coefficients. None directly matches the remaining incomplete nonzero matrix with coupled Bhat_j(2dv). This is a dated direct-interface no-match for that nonzero route, not an impossibility theorem or exponent result.",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-zero-mode-gate/reports/zero_mode_character_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-zero-mode-gate/reviews/independent_source_round156_final.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-zero-mode-gate/reviews/conductor_round156_adjudication.md"
+          ]
+        },
+        "next_action": "Use the exact zero-row arithmetic only as a closed control. Audit a theorem for the incomplete nonzero fixed-modulus theta matrix without replacing Bhat_j(2dv) by separated weights or a modulus average."
+      },
+      {
+        "id": "M9-M1-lower-cone-t1-d1-complete-theta-inversion-obstruction",
+        "statement_tex": "Fix A>0, J_A=M^(3/4)(log(2X))^A, K=sqrt(NM), and J_A<V<=K. In the literal D=d=L=1 ambient completion, complete v modulo 2N/d resummation exactly inverts the quadratic Gauss completion and, after restoring -i(1+i)chi_4(d)d sqrt(c)/(2Nq), using dc=q, and summing the partition d=(h,N), returns the original -i/(2N) odd-frequency quotient selector. Sampled Parseval folds x modulo 2N/d and yields only the upper capacity <<_epsilon(N^(3/2)/(dM)+N/M^(1/2))X^epsilon. Every proper v cutoff becomes eta(u-ax) and remains coupled. Flat-j localization gives only the wrapped circular arc ||a/c+1/(2sqrt(x^2-j))||<<1/V with both near-zero and near-c branches. The former absolute zero-row capacity <<(N^(-1/2)M^(-1/4)V+M^(-1/4))X^epsilon is not an obstruction: Round 156 proves the signed zero row is <<M^(-1/4)X^epsilon by exact all-d recombination or fixed-d geometric sums plus the literal Bhat_j(0) variation. The nonzero termwise capacity remains M^(-3/4)VX^epsilon, and hypothetical selected-incidence square-root cancellation is target-sized only for V<=M^(3/2) but is unproved. The first open signed input is now the incomplete coupled nonzero matrix or an equivalent selected cross-fibre theorem.",
+        "implies_added": [
+          "M9-M1-lower-cone-t1-d1-theta-zero-row-cancellation"
+        ],
+        "evidence_added": {
+          "positive": [
+            "proofs/kernels/m9_m1_d1_theta_zero_row.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-zero-mode-gate/candidates/conductor_round156_zero_mode_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-zero-mode-gate/reviews/independent_recombination_math_round156.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-zero-mode-gate/reviews/conductor_round156_adjudication.md"
+          ]
+        },
+        "next_action": "Do not repeat complete resummation, physical-diagonal-only Parseval, bare flat-j localization, or the zero row as open gains. Seek a mask-preserving incomplete-v or selected cross-fibre theorem with the missing top-scale cancellation."
+      },
+      {
+        "id": "M9-M1-lower-cone-t1-squarefree-large-wrap-collar-obstruction",
+        "statement_tex": "Round 151 leaves a low-two-adic h|g recovery fibre outside its recombined row corridors; D>1 and the generic complement remain open. At D=d=L=1, Rounds 152--154 give the literal square-root wave, target-safe exact and small defects, strict boundary M^449>>R^780, exact direct-wave return, root-defect cell, selected linearization, and every fixed-polylogarithmic collar. Round 155 proves complete theta-frequency resummation self-returns, sampled Parseval retains folds of period 2N/d, every proper cutoff remains coupled, and flat-j localization gives no gain. Round 156 proves the entire theta zero row is target-safe with the stronger bound M^(-1/4)X^epsilon: the actual Bhat_j(0) has BV norm <<K M^(-3/4)X^epsilon, the all-d quotient-character root sequence has interval sums <<sqrt(N)tau(N)log(2N), and an independent fixed-d geometric-sum proof agrees. Exact primitive, induced, principal, squareful, and two-adic local factors are retained. The first D=L=1 survivor is now the incomplete nonzero matrix or selected cross-fibre theorem beyond the polylogarithmic collar. This is a route-scoped frontier, not a complete positive-power range, lower bound, or impossibility theorem.",
+        "dependencies_added": [
+          "M9-M1-lower-cone-t1-d1-theta-zero-row-cancellation"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-zero-mode-gate/reports/zero_mode_local_factor_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-zero-mode-gate/reports/blind_zero_mode_character_rederivation.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-zero-mode-gate/candidates/conductor_round156_zero_mode_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-zero-mode-gate/reviews/independent_recombination_math_round156.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-zero-mode-gate/reviews/independent_source_round156_final.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-zero-mode-gate/reviews/hostile_profile_endpoint_round156_final.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-zero-mode-gate/reviews/conductor_round156_adjudication.md"
+          ]
+        },
+        "next_action": "At D=L=1, freeze v=0 as target-safe and attack the incomplete nonzero theta matrix or an equivalent selected cross-fibre theorem. Keep D>1, generic layers, and every other owner separate."
+      },
+      {
+        "id": "M9-M1-global-lower-radial-signed-estimate",
+        "dependencies_added": [
+          "M9-M1-lower-cone-t1-d1-theta-zero-row-cancellation"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-zero-mode-gate/candidates/conductor_round156_zero_mode_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-zero-mode-gate/reviews/conductor_round156_adjudication.md"
+          ]
+        },
+        "next_action": "The D=L=1 zero row is target-safe, but its incomplete nonzero outer-defect matrix remains open beyond every fixed-polylogarithmic collar. Prove that matrix plus D>1, L>1, generic t=1, every t>=2 layer, and the independent cross owner before global assembly."
+      }
+    ],
+    "correct_rejected": [],
+    "reject": [
+      {
+        "id": "Round156-zero-mode-absolute-Mquarter-capacity-is-unavoidable",
+        "reason": "The absolute DFI ledger is only an upper capacity. Exact signed interval cancellation plus the literal coefficient BV gives M^(-1/4)X^epsilon throughout the frozen range."
+      },
+      {
+        "id": "Round156-literal-Bhat0-has-only-a-supremum-bound",
+        "reason": "Monotone sampling of the zero-extended real profile, the exact residual-phase derivative, the literal cell, and O(K) physical support prove sup plus variation <<K M^(-3/4)X^epsilon on each sign."
+      },
+      {
+        "id": "Round156-profile-variation-requires-a-bounded-component-count",
+        "reason": "Every component, transition, and zero-extension jump is already charged to the total variation of the actual real profile."
+      },
+      {
+        "id": "Round156-divisibility-subsequence-costs-its-step-size",
+        "reason": "Total variation contracts on every ordered subsequence; the skipped adjacent increments are disjoint, so no factor h appears."
+      },
+      {
+        "id": "Round156-selected-linearization-is-needed-for-zero-row-BV",
+        "reason": "The exact phase sqrt(x^2-j)-x has derivative O(K^(-1)) on literal support and total variation O(V/K), so no ambient linearization is used."
+      },
+      {
+        "id": "Round156-conductor-one-piece-has-primitive-square-root-size",
+        "reason": "The conductor-one constituent is the exact Ramanujan sum and retains its repeated-prime valuation shells."
+      },
+      {
+        "id": "Round156-induced-character-may-ignore-extra-unit-primes",
+        "reason": "The exact inclusion-exclusion formula retains every prime outside the primitive conductor and every Ramanujan stratum."
+      },
+      {
+        "id": "Round156-two-adic-character-factor-may-be-dropped",
+        "reason": "Conductors 1, 4, and 8, their induced multiplicities, disjoint supports, phases, and the odd-valuation half-support cancellation are all essential and verified."
+      },
+      {
+        "id": "Round156-local-support-sparsity-alone-proves-the-target",
+        "reason": "Local support counts are upper capacities. The promoted saving comes from a signed interval theorem and literal BV, not sparsity alone."
+      },
+      {
+        "id": "Round156-all-d-recombination-averages-away-imprimitive-strata",
+        "reason": "The identity is exact and has the physical root form rho_(4N)(j+N)-rho_(4N)(j+3N), which retains every local root stratum."
+      },
+      {
+        "id": "Round156-recombined-interval-bound-is-a-spectral-or-asymptotic-input",
+        "reason": "It follows from finite Fourier inversion, exact quadratic-sum magnitude, a geometric-series estimate, and divisor grouping."
+      },
+      {
+        "id": "Round156-fixed-d-geometric-bound-needs-Polya-Vinogradov",
+        "reason": "Opening K exposes only nonzero additive unit frequencies; their finite geometric sums give c log(2c) directly."
+      },
+      {
+        "id": "Round156-initial-source-no-match-keeps-v-zero-open",
+        "reason": "The later claimant and blind reports internally prove the formerly missing literal progression-BV norm, and the terminal source review explicitly supersedes the no-match for v=0."
+      },
+      {
+        "id": "Round156-arbitrary-bounded-weight-countermodel-applies-to-literal-Bhat0",
+        "reason": "The actual coefficient has the proved low-variation structure; a phase-aligned adversarial bounded sequence lies outside that class."
+      },
+      {
+        "id": "Round156-zero-row-theorem-controls-the-nonzero-matrix",
+        "reason": "The nonzero coefficient Bhat_j(2dv) remains coupled to j and v, and neither elementary zero-row interval identity sums that matrix."
+      },
+      {
+        "id": "Round156-zero-row-theorem-enlarges-the-complete-defect-range",
+        "reason": "The nonzero matrix remains open, so the fixed-polylogarithmic collar is still the last proved range for the complete D=1 wave."
+      },
+      {
+        "id": "Round156-zero-row-theorem-transfers-to-Dgreater1-Lgreater1-generic-tge2-cross-or-M2",
+        "reason": "Those owners have different fibres, coefficients, profiles, transforms, and endpoints and were outside the frozen row."
+      },
+      {
+        "id": "Round156-zero-row-theorem-improves-M9-bridge-quarter-or-global-exponent",
+        "reason": "The nonzero D=1 row, all other M1 and M2 owners, endpoint uniformity, M9, and the unconditional bridge remain open."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "Round 156 closes one zero-frequency row; the incomplete nonzero D=1 matrix and many other M1 interfaces remain open."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "No M2 hard-TOP, balanced, or unbalanced owner was treated."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "Literal endpoints are proved for this row only; no all-owner endpoint assembly theorem follows."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain open."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The bridge remains conditional on complete M9."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The strongest internally proved global exponent remains one third."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "The separately audited external exponent remains (3292+25sqrt(1717))/13762."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The quarter target still lacks the incomplete D=1 nonzero outer-defect matrix, D>1 and L>1 lower-cone owners, generic t=1, every t>=2 layer, the cross owner, remaining M1 and all M2 owners, endpoint uniformity, M9, and the unconditional bridge."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 9,
+    "idea_quality_score": 10,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 156 proves the entire mandatory theta zero row with the stronger M^(-1/4)X^epsilon bound. It derives the literal coefficient variation, exact primitive and induced character arithmetic, every two-adic and squareful local factor, an exact all-d recombination, and two independent elementary signed interval closures. This removes the first open Round-155 seam, but the incomplete nonzero matrix still blocks every complete positive-power range and global exponent improvement."
+  }
+}

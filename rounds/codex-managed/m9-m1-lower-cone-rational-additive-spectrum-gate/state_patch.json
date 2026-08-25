@@ -1,0 +1,226 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-lower-cone-rational-spectrum-self-return-obstruction",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Exact cone rational spectrum, reconstruction, and local-slope self-return obstruction",
+        "status": "proved_internal",
+        "statement_tex": "For C(m)=sum_(hr=m, r odd, r>4h)chi_4(r) and every reduced a/q, sum_(m<=M)C(m)e(am/q)=1_(4|q)i*pi*chi_4(a)M/(2q)+O((sqrt(M)+q)log(2q)), uniformly in q. The fixed-height DFT is g_h(m)=(-i/(2h))sum_(b mod 4h, b odd)chi_4(b)e(bm/(4h)); every finite reduced-mode projection leaves nonzero means at all omitted denominators. Limiting coefficient l1 mass is asymptotic to Q and squared mass to log Q. The exact hard cutoff has the Möbius form (pi/4)sum_(ell|m)chi_4(m/ell)sum_(k<=Q/(4ell), k odd)mu(k)chi_4(k)/k, while complete-numerator denominator-Abel damping converges pointwise to sigma_chi4(m)=r_2(m)/4, not C(m), and leaves C unchanged when the odd part has chi_4=-1. Freezing the moving height boundary leaves unsigned weighted incidence asymptotic to M^(1/4). Local slope cells have length M^(3/4)/R and require residual short-interval norm X^epsilon sqrt(M)/R, a factor R beyond the rational prefix error; phase-value nonresonance gives no derivative-arc exclusion. The smooth stationary principal symbol has reciprocal phase Nh/z, exact N^(-1/4) amplitude, owner-sized denominator capacity, and a second principal saddle returning the original square-root phase and character. Branchwise remainders, hard endpoints, and Fresnel transitions are not proved. These are scoped mechanism obstructions, not a signed lower bound or target failure.",
+        "dependencies": [
+          "M9-M1-lower-far-cone-microscopic-cell-reduction",
+          "M9-M1-lower-incomplete-fibre-dispersion-obstruction",
+          "M9-M1-lower-height-alias-rank-one-product-fibre-obstruction"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-rational-additive-spectrum-gate/reports/rational_mode_hyperbola_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-rational-additive-spectrum-gate/reports/blind_rational_slope_cell_rederivation.md",
+            "rounds/codex-managed/m9-m1-lower-cone-rational-additive-spectrum-gate/reports/rational_shift_sqrt_twist_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-rational-additive-spectrum-gate/candidates/conductor_round142_rational_spectrum_self_return.md",
+            "rounds/codex-managed/m9-m1-lower-cone-rational-additive-spectrum-gate/reviews/blind_post_unmask_rational_reconstruction_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-rational-additive-spectrum-gate/reviews/source_post_unmask_abel_bprocess_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-rational-additive-spectrum-gate/reviews/discovery_post_unmask_source_bprocess_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-rational-additive-spectrum-gate/reviews/conductor_round142_rational_spectrum_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-rational-additive-spectrum-gate/controls/conductor_round142_controls.md",
+            "rounds/codex-managed/m9-m1-lower-cone-rational-additive-spectrum-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Park unqualified rational-mode subtraction, denominator cutoffs, phase-value-to-slope inference, branchwise inheritance of the reassembled B-process ledger, and capacity arguments. Reopen only with a genuinely new fixed-centre signed correlation theorem that proves the masked local residual and all moving-boundary and branch owners."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-global-lower-radial-signed-estimate",
+        "dependencies_added": [
+          "M9-M1-lower-cone-rational-spectrum-self-return-obstruction"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-lower-cone-rational-additive-spectrum-gate/reports/rational_mode_hyperbola_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-rational-additive-spectrum-gate/reports/blind_rational_slope_cell_rederivation.md",
+            "rounds/codex-managed/m9-m1-lower-cone-rational-additive-spectrum-gate/reports/rational_shift_sqrt_twist_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-rational-additive-spectrum-gate/reviews/conductor_round142_rational_spectrum_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-rational-additive-spectrum-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The floor-free nonresonant cone scalar remains the first open lower-radial estimate. Its complete rational spectrum is now known, but finite cutoffs, Abel completion, local rational-slope cells, and principal stationary transforms do not give an owner-complete reduction. Prove a new fixed-centre signed correlation theorem at X^epsilon while retaining the unsquared direction and Round-138 cross term."
+      },
+      {
+        "id": "M9-M1-lower-far-cone-microscopic-cell-reduction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-rational-additive-spectrum-gate/reviews/conductor_round142_rational_spectrum_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-rational-additive-spectrum-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Use the exact rational-spectrum theorem only as coefficient information for the accepted nonresonant cone. The microscopic deletion remains target-safe, but it gives phase-value rather than derivative separation and does not authorize a rational-major-arc exclusion."
+      },
+      {
+        "id": "M9-M1-lower-incomplete-fibre-dispersion-obstruction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-rational-additive-spectrum-gate/reports/rational_mode_hyperbola_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-rational-additive-spectrum-gate/reports/rational_shift_sqrt_twist_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-rational-additive-spectrum-gate/reviews/conductor_round142_rational_spectrum_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-rational-additive-spectrum-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Retain the full 4|q rational hierarchy, finite-tail obstruction, r_2/4 Abel completion, owner-sized moving wedge, missing local residual norm, and source-qualified principal self-return. Reopen only with a new signed fixed-centre theorem, not another unregularized rational expansion."
+      },
+      {
+        "id": "M9-M1-lower-height-alias-rank-one-product-fibre-obstruction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-rational-additive-spectrum-gate/reports/rational_shift_sqrt_twist_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-rational-additive-spectrum-gate/reviews/source_post_unmask_abel_bprocess_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-rational-additive-spectrum-gate/reviews/conductor_round142_rational_spectrum_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-rational-additive-spectrum-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Retain the exact coefficient-completion self-return to r_2/4 and the stationary-principal return to the reciprocal height-alias family. Branchwise remainders and hard endpoints cannot be inherited from the reassembled ledger."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round142-quarter-is-the-only-rational-main-mode",
+        "reason": "Every reduced denominator divisible by four has main coefficient i*pi*chi_4(a)/(2q)."
+      },
+      {
+        "id": "Round142-q-not-divisible-by-four-has-a-row-mean",
+        "reason": "The congruences ah/q congruent to plus or minus one quarter have no solution for a reduced fraction unless 4 divides q."
+      },
+      {
+        "id": "Round142-all-q-formula-is-an-all-q-relative-asymptotic",
+        "reason": "The bound is uniform for every q, but its main term dominates only in the displayed growing-denominator range."
+      },
+      {
+        "id": "Round142-fixed-q-mean-is-a-local-short-interval-theorem",
+        "reason": "The prefix error is of square-root size, while local cell assembly requires X^epsilon sqrt(M)/R."
+      },
+      {
+        "id": "Round142-finite-rational-projection-reconstructs-the-cone",
+        "reason": "Every finite cutoff retains a nonzero linear mean at every omitted reduced denominator divisible by four."
+      },
+      {
+        "id": "Round142-finite-projection-has-rationally-mean-zero-residual",
+        "reason": "For each fixed omitted b/s the residual correlation has main term i*pi*chi_4(b)M/(2s)."
+      },
+      {
+        "id": "Round142-limiting-rational-spectrum-is-absolutely-summable",
+        "reason": "Its total absolute coefficient mass through denominator Q is asymptotic to Q."
+      },
+      {
+        "id": "Round142-denominator-truncations-are-B2-Cauchy",
+        "reason": "Their squared spectral mass grows like log Q."
+      },
+      {
+        "id": "Round142-hard-cutoff-converges-to-the-moving-cone-without-a-summation-law",
+        "reason": "The exact hard cutoff contains a conditionally ordered Möbius sum and no target-safe tail theorem."
+      },
+      {
+        "id": "Round142-denominator-Abel-reconstruction-equals-C",
+        "reason": "Complete-numerator Abel damping converges pointwise to sigma_chi4=r_2/4."
+      },
+      {
+        "id": "Round142-complete-radial-extraction-removes-the-negative-character-cone",
+        "reason": "When the odd part has chi_4=-1, sigma_chi4 vanishes and the residual equals C exactly."
+      },
+      {
+        "id": "Round142-pointwise-finite-DFT-is-a-fixed-periodic-projection",
+        "reason": "Its denominator cutoff q^2/4<m moves with m and is precisely part of the cone owner."
+      },
+      {
+        "id": "Round142-moving-boundary-wedge-is-target-safe-by-modulus",
+        "reason": "Its unsigned weighted incidence is M^(1/4), equal to R^(1/2) at the top scale."
+      },
+      {
+        "id": "Round142-phase-value-nonresonance-implies-derivative-arc-separation",
+        "reason": "Integrality gives only separation of order 1/(q^2 sqrt(NM)), much smaller than the natural slope width."
+      },
+      {
+        "id": "Round142-exact-integer-stationary-radicals-empty-nearby-arcs",
+        "reason": "Exact equality forces a radical, but no neighborhood-density or major-arc exclusion follows."
+      },
+      {
+        "id": "Round142-periodic-branches-are-individually-target-safe",
+        "reason": "The rigorous direct bound retains a positive R-power after the required coefficient mass is assembled."
+      },
+      {
+        "id": "Round142-one-over-q-coefficients-give-a-denominator-saving",
+        "reason": "The reciprocal dual length is proportional to q and cancels the explicit reciprocal denominator at principal level."
+      },
+      {
+        "id": "Round142-Jutila-holomorphic-amplitude-theorem-covers-arbitrary-Ccinfinity-cutoffs",
+        "reason": "A nonzero compactly supported smooth amplitude is not holomorphic on the required connected complex tube."
+      },
+      {
+        "id": "Round142-principal-symbol-self-return-is-a-complete-two-step-transform",
+        "reason": "The branchwise remainders, hard endpoint, and Fresnel transition were not derived; only saddle algebra is retained."
+      },
+      {
+        "id": "Round142-reassembled-B-process-errors-may-be-assigned-branchwise",
+        "reason": "The accepted endpoint and remainder ledger holds only after the complete reciprocal family is reassembled."
+      },
+      {
+        "id": "Round142-complete-divisor-or-cosine-source-controls-the-cone-complex-direction",
+        "reason": "The audited sources use complete coefficients, excluded boundary parameters, analytic tests, or prescribed real combinations."
+      },
+      {
+        "id": "Round142-spectrum-wedge-or-branch-capacity-is-a-signed-lower-bound",
+        "reason": "These are norm or unsigned capacity statements; the fixed-centre complex scalar may cancel across all components."
+      },
+      {
+        "id": "Round142-rational-spectrum-analysis-proves-M1-or-an-exponent",
+        "reason": "The frozen cone scalar, lower GAR, direct M1 parents, all M2 parents, endpoint uniformity, M9, bridge, and target remain open."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "Round 142 proves coefficient structure and a route obstruction, not the lower-radial scalar, lower GAR, or both direct M1 parents."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Hard TOP, BAL, and all required UNBAL owners remain open and were not treated."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "A fixed lower-cone coefficient theorem is not a uniform all-owner endpoint result."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain open."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The bridge remains conditional on the complete open M9 hypothesis."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The strongest internally proved global exponent remains one third."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "The separately audited external exponent remains (3292+25sqrt(1717))/13762."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The quarter target still lacks the fixed-centre cone estimate, remaining M1 and M2 owners, endpoint uniformity, M9, and an unconditional final bridge."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 6,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 142 proves the complete rational additive spectrum with a sharp growing-denominator error and exact finite, hard-cutoff, and Abel reconstruction formulas. It rigorously identifies moving-boundary, local-residual, source-hypothesis, and principal-symbol self-return obstructions. No strict survivor, frozen scalar estimate, downstream theorem, or exponent improvement is obtained."
+  }
+}

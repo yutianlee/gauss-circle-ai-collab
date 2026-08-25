@@ -1,0 +1,234 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-lower-cone-t1-squarefree-voronoi-reduction",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Exact t=1 squarefree coefficient and fixed-order conductor-four Voronoi reduction",
+        "status": "proved_internal",
+        "statement_tex": "Let R=X^(1/4), N=floor(X), and C(s)=sum_(de=s,e odd,e>4d)chi_4(e). For squarefree s=2^nu n, nu in {0,1}, n odd, C(2^nu n)=sum_(e|n,e>2^(1+nu/2)sqrt(n))chi_4(e), with the complete positive-total-character sector and mandatory antisymmetric negative-total-character tail both retained. A sqrt(D) cone collar is target-safe; after a local d-asymp-D Mellin partition the exact smooth orders are z=i(tau+t/2), with radial twist s^(-it/2), external D^(it)4^(-i tau), bandwidth |tau|<<D^(1/2)X^epsilon, and the hard Perron zero residue retained. Put A_z(n)=sum_(de=n)chi_4(e)(e/d)^z and B_z(n)=mu^2(n)A_z(n). Then B_z=h_z*A_z and sum A_z(n)n^(-w)=zeta(w+z)L(w-z,chi_4). The exact H_2 and odd H_p factors give powerful support. Moreover H=K/[zeta(2w+2z)zeta(2w-2z)L(2w,chi_4)], with K absolutely convergent for Re w>(1+|Re z|)/3 by the exact mixed-monomial local identity. For every fixed |Re z|<1/4 and compact-smooth F, the conductor-four transform has scalar pi*4^z, one polar term, reflected coefficient A_(-z), and all J/Y/K branches at 2pi sqrt(mx). For K_F=floor(sup supp F), the exact physical H convolution is finite in k<=K_F; every k>K_F polar-dual pair cancels for that same k. Fixed-order resonance occurs at m=kN+O(k sqrt(N/M)), with raw one-term size M^(3/4)/(kR). No growing-order, moving-prefix, signed-correlation, t=1 target, or strict top-range estimate is included.",
+        "dependencies": [
+          "M9-M1-lower-cone-small-t-unmasking-reduction",
+          "Banerjee-Khurana-2023-source-audit"
+        ],
+        "implies": [
+          "M9-M1-global-lower-radial-signed-estimate"
+        ],
+        "blockers": [],
+        "source_card": "sources/banerjee_khurana_2023.md",
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/reports/t1_squarefree_voronoi_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/reports/blind_t1_squarefree_voronoi_rederivation.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/reports/complex_order_voronoi_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/candidates/conductor_round147_t1_squarefree_voronoi_and_H_no_go.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/reviews/source_conductor_round147_candidate_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/reviews/blind_conductor_round147_candidate_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/reviews/discovery_conductor_round147_power_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/reviews/source_conductor_round147_final_green.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/reviews/blind_conductor_round147_final_green.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/reviews/discovery_conductor_round147_final_green_v2.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/reviews/conductor_round147_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/controls/conductor_round147_controls.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "For a layerwise t=1 route, first prove uniform growing-complex-order and moving-prefix estimates for every J/Y/K regime on the exact unitary cone orders; then prove the signed physically truncated H-resonance correlation. A future cross-t route need not bound t=1 separately."
+      },
+      {
+        "id": "M9-M1-lower-cone-t1-squarefree-H-resonance-obstruction",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Squarefree H-convolution resonance, reciprocal-zero, and all-scale absolute-aggregation obstruction",
+        "status": "proved_internal",
+        "statement_tex": "On the exact unitary ratio line, grant optimistically the missing uniform Bessel analysis. For fixed powerful k the best primal/dual physical menu is min(M^(1/4)/k,R/sqrt(M)). Summing its modulus over the physical powerful indices k<=K_F gives M^(1/4+epsilon) for M<=R^(4/3) and R^(1/2+epsilon)M^(-1/8) for R^(4/3)<=M<=R^2, losing R^(1/3) at M=R^(4/3) and R^(1/4) at M=R^2. This is an upper-capacity limitation, not a signed lower bound. The refactor H=K/[zeta(2w+2z)zeta(2w-2z)L(2w,chi_4)] does not license a residue-free shift through possible reciprocal-factor zero poles. The bare lemma sum_(q asymp Q)|sum_(d asymp D)e(Nd/q)|<<_(epsilon)(Q+D)(NQ)^epsilon holds for Q<=N/4, but expanding mu^2(d) and using triangle gives only QD^(1/2)+D before the other squarefree, coprime, parity, character, cone, and prefix conditions. Thus fixed-channel Voronoi plus modulus, absolute powerful-index aggregation, an unowned reciprocal-factor contour shift, and the literal Mobius-square triangle do not prove the t=1 target. The first surviving arithmetic input is joint signed cancellation of h_z(k)A_(-z)(kN+j), |j|<<k sqrt(N/M), k<=K_F, over the actual cone orders, or an equivalent squarefree/coprime strengthening of the bare reciprocal lemma.",
+        "dependencies": [
+          "M9-M1-lower-cone-t1-squarefree-voronoi-reduction",
+          "M9-M1-lower-cone-three-variable-dispersion-obstruction",
+          "M9-M1-lower-cone-squarefree-linearization-obstruction"
+        ],
+        "implies": [],
+        "blockers": [],
+        "source_card": "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/reports/complex_order_voronoi_source_audit.md",
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/reports/t1_squarefree_voronoi_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/reports/blind_t1_squarefree_voronoi_rederivation.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/reports/complex_order_voronoi_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/candidates/conductor_round147_t1_squarefree_voronoi_and_H_no_go.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/reviews/source_conductor_round147_candidate_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/reviews/blind_conductor_round147_candidate_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/reviews/discovery_conductor_round147_power_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/reviews/source_conductor_round147_final_green.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/reviews/blind_conductor_round147_final_green.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/reviews/discovery_conductor_round147_final_green_v2.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/reviews/conductor_round147_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/controls/conductor_round147_controls.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Park fixed-index transform followed by modulus, absolute H aggregation, disjoint-band orthogonality, residue-free reciprocal-factor shifts, and literal squarefree expansion by triangle. Reopen with a uniform kernel theorem plus a signed H/Mobius correlation, or a genuinely different cross-t mechanism."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-lower-cone-small-t-unmasking-reduction",
+        "implies_added": [
+          "M9-M1-lower-cone-t1-squarefree-voronoi-reduction"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/candidates/conductor_round147_t1_squarefree_voronoi_and_H_no_go.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/reviews/conductor_round147_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The exact unmasked t<M^(1/4) scalar contains a mandatory t=1 face. Round 147 supplies its fixed-order conductor-four reduction and a scoped absolute-aggregation obstruction, but neither bounds t=1 nor the remaining t>=2 layers. A cross-t proof remains logically possible."
+      },
+      {
+        "id": "Banerjee-Khurana-2023-source-audit",
+        "implies_added": [
+          "M9-M1-lower-cone-t1-squarefree-voronoi-reduction"
+        ],
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/reports/complex_order_voronoi_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/reviews/source_conductor_round147_candidate_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/reviews/source_conductor_round147_final_green.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/candidates/conductor_round147_t1_squarefree_voronoi_and_H_no_go.md"
+          ]
+        },
+        "statement_tex": "Banerjee--Khurana equation (5.11) gives the required twisted-divisor zeta-L coefficient. Specializing Theorem 4.3 to chi_4, q=4, nu=2z gives scalar pi*4^z, one pole, argument 2pi sqrt(nx), and the exact J/Y/K package for an analytic finite-interval test and fixed 0<Re z<1/4. Mellin inversion of the same completed functional equation gives the compact-smooth identity for each fixed |Re z|<1/4, including the unitary line. Neither the source nor this fixed-parameter derivation supplies estimates uniform for growing imaginary order, moving prefixes, or the hard Perron height.",
+        "next_action": "Use the exact fixed-parameter conductor-four identity and normalization only. Any application to the t=1 cone must separately prove growing-order derivative and transition estimates for the actual unitary orders."
+      },
+      {
+        "id": "M9-M1-lower-cone-three-variable-dispersion-obstruction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/candidates/conductor_round147_t1_squarefree_voronoi_and_H_no_go.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/reviews/discovery_conductor_round147_final_green_v2.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The mandatory t=1 rank-one face now has an exact fixed-order conductor-four Voronoi reduction, but absolute H-channel aggregation loses R^(1/3) at the intermediate transition and R^(1/4) at the top. Reopen only with signed H/Mobius correlation, uniform kernel control, or a genuinely joint cross-t mechanism."
+      },
+      {
+        "id": "M9-M1-lower-cone-squarefree-linearization-obstruction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/reports/t1_squarefree_voronoi_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/reports/blind_t1_squarefree_voronoi_rederivation.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/candidates/conductor_round147_t1_squarefree_voronoi_and_H_no_go.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/reviews/conductor_round147_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Round 147 packages the t=1 squarefree correction exactly into a powerful H convolution and identifies the signed moving-band correlation as the first arithmetic gate after uniform kernel control. Absolute convergence, termwise modulus, and literal Mobius-square expansion do not close it."
+      },
+      {
+        "id": "M9-M1-global-lower-radial-signed-estimate",
+        "dependencies_added": [
+          "M9-M1-lower-cone-t1-squarefree-voronoi-reduction",
+          "M9-M1-lower-cone-t1-squarefree-H-resonance-obstruction"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/reports/t1_squarefree_voronoi_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/reports/blind_t1_squarefree_voronoi_rederivation.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/reports/complex_order_voronoi_source_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/reviews/conductor_round147_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-t1-squarefree-voronoi-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The first open cone owner remains the exact unmasked t<M^(1/4) scalar. For a layerwise route, the t=1 face first needs uniform growing-order kernel control and signed H-resonance aggregation; every t>=2 layer and the independent Round-138 cross owner also remain. A joint cross-t theorem could bypass separate t=1 control."
+      }
+    ],
+    "correct_rejected": [],
+    "reject": [
+      {
+        "id": "Round147-fixed-order-Voronoi-is-uniform-through-growing-cone-orders",
+        "reason": "The source and direct identity are fixed-parameter statements; no audited proof controls all derivatives and Bessel regimes uniformly through |tau|<<D^(1/2)X^epsilon and moving prefixes."
+      },
+      {
+        "id": "Round147-absolute-H-convergence-gives-physical-l1-saving",
+        "reason": "Powerful support and Dirichlet convergence still leave the explicit R^(1/3) intermediate and R^(1/4) top absolute-aggregation losses."
+      },
+      {
+        "id": "Round147-K-refactorization-allows-residue-free-left-shift",
+        "reason": "The reciprocal zeta and L factors may have poles at their zeros; no zero avoidance, cancellation by K, or residue aggregate is owned."
+      },
+      {
+        "id": "Round147-bare-top-reciprocal-transform-proves-squarefree-t1",
+        "reason": "The Q+D lemma is for the bare geometric progression. Literal squarefree expansion by triangle already costs QD^(1/2)+D before the remaining arithmetic conditions."
+      },
+      {
+        "id": "Round147-bare-QplusD-survives-mu2-expansion-by-triangle",
+        "reason": "Summing the square-divisor expansion costs Q sqrt(D)+D, or the same bound after an optimized small/large square split."
+      },
+      {
+        "id": "Round147-disjoint-powerful-bands-imply-scalar-orthogonality",
+        "reason": "Each disjoint dual band is summed to a complex scalar and the centre phases align; support disjointness alone gives no cancellation across k."
+      },
+      {
+        "id": "Round147-adverse-capacity-is-a-signed-lower-bound",
+        "reason": "All displayed losses are upper bounds for specified modulus placements and do not disprove cancellation in the exact signed scalar."
+      },
+      {
+        "id": "Round147-separate-t1-bound-is-necessary-for-every-proof",
+        "reason": "A separate t=1 estimate is sufficient for a layerwise proof, but a joint theorem could exploit cancellation across t-layers."
+      },
+      {
+        "id": "Round147-t1-reduction-proves-M1-or-an-exponent",
+        "reason": "The uniform kernel theorem, signed t=1 correlation, all t>=2 layers, independent cross owner, remaining M1 and M2 owners, endpoint, M9, and bridge are open."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "Round 147 proves only a fixed-order reduction and method obstruction for one mandatory t=1 lower-cone face; it proves neither that face nor the complete lower scalar or either direct M1 parent."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "No M2 hard-TOP, balanced, or unbalanced owner was treated."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "A fixed-order subface reduction is not a uniform all-owner endpoint theorem."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain open."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The bridge remains conditional on complete M9."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The strongest internally proved exponent remains one third."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "The separately audited external exponent remains (3292+25sqrt(1717))/13762."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The quarter target still lacks the signed t=1 gate, all remaining M1 and M2 owners, endpoint uniformity, M9, and the final unconditional bridge."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 147 derives and source-checks the exact squarefree t=1 coefficient, Euler correction, corrected quadratic refactorization, fixed-parameter conductor-four Voronoi transform, physical H convolution, resonance geometry, and a new bare reciprocal lemma. It then isolates two exact remaining gates and proves a scoped no-go for every termwise or triangle placement tested, with three independent terminal GREEN reviews. The signed face and all downstream theorems remain open."
+  }
+}

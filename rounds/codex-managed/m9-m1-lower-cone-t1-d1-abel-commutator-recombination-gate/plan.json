@@ -1,0 +1,222 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 159,
+    "round_type": "m9_m1_lower_cone_t1_d1_abel_commutator_recombination_gate",
+    "campaign_id": "m9-m1-lower-cone-t1-d1-abel-commutator-recombination-gate",
+    "title": "M1 D=1 full Abel commutator recombination gate",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "8a0f917fb8117e9dbaf287d9f773046ff201729d2d8d8c3df1a51bca7815574b",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "planned_numerical_percent": 0,
+      "literature_policy": "Audit fractional-part Fourier, exponent-pair, Poisson or B-process, incomplete quadratic, and character-sum theorems only against the exact common-profile variable residual-mask scalar. Record truncation, moving endpoints, coefficient variation, character twist, modulus and interval ranges, all exceptional modes, and every restored N-M-V power."
+    },
+    "target_obligations": [
+      "M9-M1-lower-cone-t1-d1-paired-interior-cell-trace-obstruction",
+      "M9-M1-lower-cone-t1-d1-nonzero-centering-nyquist-fold",
+      "M9-M1-lower-cone-t1-d1-complete-theta-inversion-obstruction",
+      "M9-M1-d1-outer-defect-spectral-source-audit",
+      "M9-M1-lower-cone-t1-squarefree-large-wrap-collar-obstruction",
+      "M9-M1-global-lower-radial-signed-estimate"
+    ],
+    "frozen_target": {
+      "question": "Does exact recombination of the moving trace, both profile-difference remainders, and both outer endpoints restore a single common-profile selected residual-mask sum for the full paired-interior D=d=L=1 matrix, and can that exact combined scalar be proved target-sized or on a strict owner-complete range; if not, what is the first non-telescoping, variable-mask, coefficient, Fourier, truncation, source, or restored-power obstruction?",
+      "reference_formula": "Retain B_j(x)=1_(x>=1)1_(-x<=j<=x-1)w_U((x^2-j)/N)e(sqrt(x^2-j)-x), every odd d|N, every interior v mod H, both signed j blocks, and all six sign-adapted Abel lines. Recombine before estimation. Complete-frequency inversion gives S_U(V)=sum_(V<|j|<=2V)sum_x B_j(x)G_N(x^2-j). The candidate selected compression is sum_(ell>=1)chi_4(ell)w_U(ell)e(sqrt(N ell))1_(V<|kappa(ell)^2-N ell|<=2V), with kappa(ell)=floor(sqrt(N ell)+1/2). The scalar target is X^epsilon, equivalently raw M^(3/4)X^epsilon.",
+      "quantities": [
+        "Retain the positive right and negative left Abel outer endpoints, both moving atoms, both profile-difference remainders, every component transition, zero extension, half-open choice, and hard dyadic endpoint.",
+        "Prove the finite reconstruction separately on each sign block and for every d and v before complete-frequency inversion.",
+        "Retain arbitrary N, every odd d|N, c=4N/d, H=c/2, both complementary representatives, and c=4.",
+        "Subtract the already closed zero and Nyquist whole rows exactly once; do not transfer their theorems to Abel pieces.",
+        "Audit the physical-lift multiplicity and the nearest-cell partition before replacing x and j by kappa(ell) and r(ell).",
+        "Distinguish the full quotient profile w_U(ell) from both isolated-trace boundary profiles; no isolated-trace statement is retroactively altered.",
+        "Use e(sqrt(N ell)-kappa(ell))=e(sqrt(N ell)) only because kappa(ell) is integral.",
+        "Treat the exact defect mask as the variable band r=-delta(2kappa+delta); no fixed endpoint may replace it without a proved error.",
+        "Treat min(M,V) as support cardinality only and restore the M^(-3/4) atom scale before claiming the scalar target.",
+        "Any new analytic range must lie on the currently open side M^449<<R^780, with R=X^(1/4) and N=floor(X), and must extend beyond the already owned fixed-polylogarithmic defect collar; the known M^449>>R^780 TTY/BD range is not a new gain.",
+        "No result transfers to D>1, L>1, generic t=1, t>=2, cross, another M1 or M2 owner, endpoint uniformity, M9, bridge, target, or exponent owners."
+      ]
+    },
+    "completion_criteria": [
+      "Independently rederive the exact positive and negative finite Abel reconstructions with all six lines, signs, transitions, and endpoints.",
+      "Prove or refute the exact common-profile selected-coordinate compression of the full physical row.",
+      "Audit subtraction of the zero and Nyquist whole rows exactly once and restore the full paired-interior normalization.",
+      "Calibrate the scalar X^epsilon target and raw M^(3/4) target, including the external scalar seam.",
+      "On the open side M^449<<R^780, prove the common-profile residual-mask scalar target, isolate a strict owner-complete range beyond the accepted collar, or identify the first exact variable-mask, Fourier, truncation, coefficient, source, or restored-power obstruction.",
+      "Source-audit every imported Fourier-band, exponent-pair, Poisson, incomplete-quadratic, or character-sum theorem against the literal scalar.",
+      "Close under exactly one label: paired_interior_abel_commutator_target, strict_profile_commutator_range, or paired_interior_abel_commutator_no_go."
+    ],
+    "controls": [
+      "literal_full_Abel_six_line_package",
+      "positive_negative_signs_and_outer_endpoints",
+      "profile_difference_and_transition_reconstruction",
+      "all_d_all_v_complete_frequency_normalization",
+      "zero_and_Nyquist_whole_row_subtraction",
+      "physical_lift_and_nearest_cell_uniqueness",
+      "quotient_profile_not_boundary_profile",
+      "integral_phase_shift",
+      "variable_residual_band",
+      "chi4_shifted_zero_mode",
+      "Fourier_truncation_and_boundary_errors",
+      "N_M_V_power_and_scalar_target",
+      "source_theorem_common_profile_match",
+      "upper_capacity_vs_signed_bound",
+      "external_scalar_and_downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "full_abel_commutator_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "report_complete",
+        "target": "Rederive the literal six-line positive and negative Abel package and prove its exact reconstruction. Derive and attack the proposed common-profile residual-mask scalar, including physical-lift uniqueness, quotient profile, integral phase shift, zero and Nyquist subtraction, Fourier or alternative cancellation, restored target, and all endpoints. Prove the target, a strict owner-complete range beyond the accepted collar, or the first exact obstruction.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round159_d1_abel_commutator_recombination_strategy.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-d1-abel-commutator-recombination-gate/barrier_packet.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-d1-abel-commutator-recombination-gate/candidates/conductor_round159_common_profile_seed.md",
+          "proofs/kernels/m9_m1_d1_nonzero_centering_nyquist_fold.md",
+          "proofs/kernels/m9_m1_d1_paired_interior_cell_trace_reduction.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-d1-paired-interior-cell-trace-gate/reviews/conductor_round158_adjudication.md"
+        ],
+        "required_controls": [
+          "literal_full_Abel_six_line_package",
+          "positive_negative_signs_and_outer_endpoints",
+          "profile_difference_and_transition_reconstruction",
+          "all_d_all_v_complete_frequency_normalization",
+          "zero_and_Nyquist_whole_row_subtraction",
+          "physical_lift_and_nearest_cell_uniqueness",
+          "quotient_profile_not_boundary_profile",
+          "integral_phase_shift",
+          "variable_residual_band",
+          "chi4_shifted_zero_mode",
+          "Fourier_truncation_and_boundary_errors",
+          "N_M_V_power_and_scalar_target",
+          "upper_capacity_vs_signed_bound",
+          "external_scalar_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section analytic report.",
+          "Exact finite reconstruction and selected-coordinate derivations.",
+          "A target theorem, strict owner-complete range beyond the collar, or first rigorous obstruction with restored powers.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-abel-commutator-recombination-gate/reports/full_abel_commutator_attack.md"
+      },
+      {
+        "id": "blind_full_abel_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "report_complete",
+        "target": "From the literal statement alone, independently reconstruct both Abel blocks, derive the full physical and selected scalar with exact endpoints and normalization, and determine whether the combined object is target-sized, has a strict range, or meets a first rigorous algebraic or analytic obstruction.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-d1-abel-commutator-recombination-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "all strategy files",
+          "all Round-159 nonblind artifacts",
+          "all Round-159 sibling reports",
+          "the Round-159 conductor seed"
+        ],
+        "required_controls": [
+          "literal_full_Abel_six_line_package",
+          "positive_negative_signs_and_outer_endpoints",
+          "profile_difference_and_transition_reconstruction",
+          "all_d_all_v_complete_frequency_normalization",
+          "zero_and_Nyquist_whole_row_subtraction",
+          "physical_lift_and_nearest_cell_uniqueness",
+          "quotient_profile_not_boundary_profile",
+          "integral_phase_shift",
+          "variable_residual_band",
+          "chi4_shifted_zero_mode",
+          "Fourier_truncation_and_boundary_errors",
+          "N_M_V_power_and_scalar_target",
+          "upper_capacity_vs_signed_bound",
+          "external_scalar_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section statement-only analytic report.",
+          "An independent exact reconstruction and target calibration.",
+          "A target theorem, strict range, or first rigorous obstruction.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-abel-commutator-recombination-gate/reports/blind_full_abel_rederivation.md"
+      },
+      {
+        "id": "common_profile_mask_method_audit",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "status": "report_complete",
+        "target": "Audit exact Fourier-band, exponent-pair, Poisson or B-process, incomplete-quadratic, and character-sum methods against the common-profile variable residual-mask scalar. Track the chi_4 shifted zero mode, every truncation and moving-boundary error, coefficient variation, uniform N-M-V range, and restored raw target. Supply a source-legal target or strict range, or the first precise interface obstruction.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round159_d1_abel_commutator_recombination_strategy.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-d1-abel-commutator-recombination-gate/barrier_packet.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-d1-abel-commutator-recombination-gate/candidates/conductor_round159_common_profile_seed.md",
+          "proofs/kernels/m9_m1_d1_paired_interior_cell_trace_reduction.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-d1-paired-interior-cell-trace-gate/reports/cell_trace_source_audit.md",
+          "sources/bourgain_2017_exponent_pair.md",
+          "sources/huxley_2003.md",
+          "sources/montgomery_vaughan_1974.md"
+        ],
+        "required_controls": [
+          "literal_full_Abel_six_line_package",
+          "quotient_profile_not_boundary_profile",
+          "integral_phase_shift",
+          "variable_residual_band",
+          "chi4_shifted_zero_mode",
+          "Fourier_truncation_and_boundary_errors",
+          "N_M_V_power_and_scalar_target",
+          "source_theorem_common_profile_match",
+          "upper_capacity_vs_signed_bound",
+          "external_scalar_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section primary-source and analytic-method audit.",
+          "Exact theorem cards or self-contained method ledgers with truncation, coefficient, range, and restored-power hypotheses.",
+          "A source-legal target or strict range, or the first precise source-interface obstruction.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-abel-commutator-recombination-gate/reports/common_profile_mask_method_audit.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "finite_Abel_reconstruction",
+        "requirement": "Independently verify every positive and negative outer, moving, and profile-difference line, sign, endpoint, and transition."
+      },
+      {
+        "id": "selected_common_profile_normalization",
+        "requirement": "Verify all-d inversion, zero and fold subtraction, lift uniqueness, nearest-cell selection, quotient profile, integral phase shift, and exact defect mask."
+      },
+      {
+        "id": "mask_method_and_power",
+        "requirement": "Hostilely audit variable-band Fourier replacement, chi_4 modes, truncation and boundary errors, coefficient class, uniform range, and raw and restored targets."
+      },
+      {
+        "id": "source_and_downstream_scope",
+        "requirement": "Audit every imported theorem and prevent transfer to any unproved seam, owner, target, bridge, or exponent."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "8a0f917fb8117e9dbaf287d9f773046ff201729d2d8d8c3df1a51bca7815574b",
+    "generated_at": "2026-08-25T08:58:21.166182+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

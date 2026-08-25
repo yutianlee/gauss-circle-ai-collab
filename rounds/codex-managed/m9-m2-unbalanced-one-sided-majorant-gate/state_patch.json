@@ -1,0 +1,211 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-unbalanced-sharp-folded-Fejer-majorant",
+        "type": "lemma",
+        "track": "M9_analytic",
+        "title": "Sharp folded Fejer majorant for finite sliding block energies",
+        "status": "proved_internal",
+        "statement_tex": "Let F_H(alpha)=|sum_(0<=a<H)e(a alpha)|^2. For 1<=N<=H write H=mN+s with 0<=s<N and put n_j=m+1 for 0<=j<s and n_j=m for s<=j<N. Among all real trigonometric polynomials T of degree at most N-1 satisfying T>=F_H pointwise, the exact minimum zeroth coefficient is mu_N(H)=(N-s)m^2+s(m+1)^2=H^2/N+s(1-s/N), attained by T^*_(H,N)=|mD_N+D_s|^2. The exact factorization |1-z|^2(T^*_(H,N)-F_H)=|1-z^N|^2 sum_(0<=a<m)(m-a)|1-z^(s+aN)|^2 proves the pointwise order. Hence every finite complex sequence A, zero-extended before translation, satisfies sum_n|sum_(0<=a<H)A(n+a)|^2<=sum_n|sum_(0<=j<N)n_j A(n+j)|^2. The least L1 excess is mu_N(H)-H=Nm(m-1)+2ms, all Fourier coefficients of T^* are nonnegative, and their l1 mass is H^2. Applied after A(k)=sum_(p odd)chi_4(p)b_(p,k), the inequality retains the full actual character sum, moving profiles, and all entries and exits. It is global after summing translations n, not pointwise for each individual block square, and it does not itself estimate the majorized actual-character form.",
+        "dependencies": [
+          "M9-M2-unbalanced-dual-block-energy-one-sided-reduction"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/reports/blind_bandlimited_quadratic_majorant_feasibility.md",
+            "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/reports/actual_character_fejer_majorant_attack.md",
+            "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/reports/majorant_cross_term_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/candidates/conductor_sharp_folded_majorant_verification.md",
+            "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/reviews/blind_post_unmask_character_and_capacity_audit.md",
+            "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/reviews/discovery_post_unmask_folded_majorant_audit.md",
+            "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/reviews/hostile_post_unmask_exact_majorant_and_poisson_audit.md",
+            "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/reviews/conductor_round134_majorant_adjudication.md",
+            "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use the folded inequality only after the complete actual character sum is formed. Any endpoint application must prove a joint signed estimate for its weighted cross-p and cross-lag Gram and explicitly repay mu_N(H)/H; diagonal or lag-count bookkeeping alone is insufficient."
+      },
+      {
+        "id": "M9-M2-unbalanced-bandwidth-mass-majorant-obstruction",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "One-sided majorant bandwidth--mass and character-placement obstruction",
+        "status": "proved_internal",
+        "statement_tex": "For the endpoint-complete strict-UNBAL energy E_chi, every universal degree-(N-1) one-sided multiplier majorant has zeroth factor rho(H,N)=mu_N(H)/H>=H/N, while the optimal folded majorant has total Fourier coefficient mass H^2. Thus N<=H X^(-eta) forces a fixed-power zeroth loss X^eta, and choosing N<=H/Gamma_before to remove Gamma_before=min(H,Q) by lag count leaves Gamma_zeroth>=Gamma_before. Taking lags in moduli restores the full factor H. Universal quadratic-form order is equivalent to pointwise multiplier order; coefficientwise Fourier or physical-window majorization does not order complex cross terms, and rowwise positivity erases the actual chi_4 cancellation. Exact character Poisson preserves the folded weights and returns the reciprocal shifted actual-character Gram; its principal Gram is endpoint-complete only together with every retained remainder term. This is a no-go for standalone universal-majorant plus diagonal, positive-row, lag-count, or lagwise-absolute closures, not a lower bound for the literal array and not a no-go for a new actual-family signed Gram theorem.",
+        "dependencies": [
+          "M9-M2-unbalanced-sharp-folded-Fejer-majorant",
+          "M9-M2-unbalanced-dual-sector-curvature-no-go"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/reports/blind_bandlimited_quadratic_majorant_feasibility.md",
+            "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/reports/actual_character_fejer_majorant_attack.md",
+            "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/reports/majorant_cross_term_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/candidates/conductor_fejer_majorant_uncertainty.md",
+            "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/candidates/conductor_sharp_folded_majorant_verification.md",
+            "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/reviews/blind_post_unmask_character_and_capacity_audit.md",
+            "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/reviews/discovery_post_unmask_folded_majorant_audit.md",
+            "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/reviews/hostile_post_unmask_exact_majorant_and_poisson_audit.md",
+            "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/reviews/conductor_round134_majorant_adjudication.md",
+            "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Park the universal positive-energy majorant route. Reopen only with a theorem acting jointly on the literal folded chi_4 Gram before modulus, including a complete weighted endpoint remainder ledger and an explicit gain beyond rho(H,N)."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-unbalanced-dual-block-energy-one-sided-reduction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/reports/blind_bandlimited_quadratic_majorant_feasibility.md",
+            "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/reviews/conductor_round134_majorant_adjudication.md",
+            "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/synthesis.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/reports/actual_character_fejer_majorant_attack.md"
+          ]
+        },
+        "next_action": "The exact folded majorant is now known and optimal, but its bandwidth gain is paid by mu_N(H)/H. Park universal majorants, coefficientwise windows, rowwise positivity, and Poisson inversion. Reopen E_chi only for a genuinely joint actual-family signed Gram theorem with a complete weighted endpoint ledger."
+      },
+      {
+        "id": "M9-M2-unbalanced-dual-sector-curvature-no-go",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/reports/majorant_cross_term_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/reviews/hostile_post_unmask_exact_majorant_and_poisson_audit.md",
+            "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/reviews/conductor_round134_majorant_adjudication.md",
+            "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Also freeze universal band-limited multiplier majorants and character Poisson as standalone gains. The exact folded optimizer returns the missing lag factor in its zeroth mass, and the principal reciprocal Gram still needs all weighted remainder terms."
+      },
+      {
+        "id": "M9-M2-smooth-unbalanced-three-quarter-estimate",
+        "dependencies_added": [
+          "M9-M2-unbalanced-sharp-folded-Fejer-majorant",
+          "M9-M2-unbalanced-bandwidth-mass-majorant-obstruction"
+        ],
+        "evidence_added": {
+          "negative": [
+            "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/reports/majorant_cross_term_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/reviews/conductor_round134_majorant_adjudication.md",
+            "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/synthesis.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/reports/blind_bandlimited_quadratic_majorant_feasibility.md",
+            "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/reports/actual_character_fejer_majorant_attack.md"
+          ]
+        },
+        "next_action": "The positive-energy universal-majorant surface is parked after its exact optimal tradeoff. Rotate to the distinct physical prescribed-centre truncated-divisor wavelet surface and test a genuinely modulus-aspect signed dispersion theorem; return to E_chi only with a new actual-family folded-Gram inequality."
+      },
+      {
+        "id": "M9-M2-unbalanced-truncated-divisor-fixed-centre-return",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m2-unbalanced-one-sided-majorant-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Round 134 closes the alternative positive-energy majorant surface. The next strategy-authorized UNBAL interface is this physical prescribed-centre wavelet, attacked only through a true modulus-aspect signed dispersion theorem that preserves the centre, chi_4 coefficients, divisor owners, and all endpoints."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round134-no-strict-bandlimited-majorant-exists",
+        "reason": "The folded optimizer |mD_N+D_s|^2 is a strict degree-(N-1) pointwise majorant whenever N<H and gives an exact global translated-block inequality."
+      },
+      {
+        "id": "Round134-coefficientwise-window-order-implies-block-square-order",
+        "reason": "Complex cross terms reverse coefficientwise inequalities; universal order requires Loewner order, equivalently pointwise multiplier domination in the translation-invariant setting."
+      },
+      {
+        "id": "Round134-fixed-power-bandwidth-has-target-safe-L1-excess",
+        "reason": "The exact minimum mass is mu_N(H)>=H^2/N, so N<=H X^(-eta) forces zeroth factor at least X^eta and excess mu_N(H)-H."
+      },
+      {
+        "id": "Round134-lag-count-saving-survives-folded-zeroth-mass",
+        "reason": "Choosing N<=H/Gamma_before forces mu_N(H)/H>=Gamma_before; the hoped lag-count gain is paid back exactly at the zeroth mode."
+      },
+      {
+        "id": "Round134-lagwise-modulus-preserves-majorant-gain",
+        "reason": "The optimal folded coefficients are nonnegative with total mass H^2, so a natural-scale lagwise triangle restores the full factor H."
+      },
+      {
+        "id": "Round134-rowwise-majorization-retains-actual-character",
+        "reason": "Opposite chi_4 rows can cancel exactly in the combined energy while every separated positive row remains nonzero."
+      },
+      {
+        "id": "Round134-folded-physical-inequality-holds-block-by-block",
+        "reason": "The valid inequality holds only after summing all translated blocks; a nonproportional single-window rank-one domination is false."
+      },
+      {
+        "id": "Round134-folded-zeroth-factor-is-a-literal-lower-bound",
+        "reason": "The literal zeroth term contains the full signed cross-p norm and can cancel with nonzero lags; the factor is a universal closure obstruction, not a lower bound for the fixed physical array."
+      },
+      {
+        "id": "Round134-two-grid-majorant-is-extremal",
+        "reason": "The two-grid construction is valid and order-sharp only; the folded optimizer attains the strictly sharper exact sampling lower bound."
+      },
+      {
+        "id": "Round134-character-Poisson-supplies-independent-power",
+        "reason": "Exact character Poisson preserves the folded weights and returns the reciprocal shifted actual-character Gram with no spare saving."
+      },
+      {
+        "id": "Round134-principal-reciprocal-Gram-is-endpoint-complete-alone",
+        "reason": "Endpoint completeness requires every principal--remainder and remainder--remainder term, nonstationary sign, entry, exit, and transition in the weighted remainder ledger."
+      },
+      {
+        "id": "Round134-optimal-folded-majorant-proves-Echi-target",
+        "reason": "The majorized signed Gram estimate at X^(1/2+epsilon), including all profiles and endpoints, remains unproved."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "Round 134 concerns only one flat-smooth M2 UNBAL energy and proves no M1 parent."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "The flat-smooth UNBAL target, all other UNBAL owners, BAL, and hard TOP remain open."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "No all-owner endpoint estimate or transition assembly is proved."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain open."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The bridge remains conditional on the complete open M9 hypothesis."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The internally proved global exponent remains one third because no endpoint block estimate changed."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The quarter target still lacks M9-M1, M9-M2, endpoint uniformity, M9, and the final unconditional bridge."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 8,
+    "idea_quality_score": 9,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 134 solves the finite extremal majorant problem exactly, producing a new endpoint-exact folded inequality and an exact bandwidth--mass tradeoff. It also closes every coefficientwise, rowwise-positive, lag-count-only, lagwise-absolute, and Poisson-return version of the proposed standalone route while preserving the possibility of a new literal signed Gram theorem. No endpoint estimate or global exponent changes."
+  }
+}

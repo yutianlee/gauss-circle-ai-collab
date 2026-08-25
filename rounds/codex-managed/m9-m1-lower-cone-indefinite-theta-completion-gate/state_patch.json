@@ -1,0 +1,286 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-level-four-completed-Appell-scalar-source-audit",
+        "type": "source_audit",
+        "track": "source_audit",
+        "title": "Derived level-four completed Appell scalar specialization and source limits",
+        "status": "proved_external_dependency",
+        "statement_tex": "Let F(tau)=sum_(m>=1) C(m)e(m tau), where C(m)=sum_(hr=m, r odd, r>4h)chi_4(r), and let H(tau)=(1/2) Ahat_4(1/2,-3tau;2tau). The audited completed Appell/Jacobi laws, specialized by an internal elliptic-shift calculation, give H=F+1/4+sum_(a=0)^3 R_a and H(gamma tau)=chi_4(d)(c tau+d)H(tau) for gamma=(a b;c d) in Gamma_0(4). Here R_a=(i/4)(-1)^a theta((2a-3)tau+3/2;8tau)R_Zw(1/2+(3-2a)tau;8tau). The residual integral exponential is e[-c(d+3b)/4]=1. This scalar law is a derived specialization, not a verbatim source theorem or a rediscovery of the Round-63 Appell identity. The holomorphic F is not modular alone, the constant and four corrections are compulsory, the full modular group acts on a characteristic orbit, and neither harmonicity nor a square-root coefficient summation bound follows from the audited sources.",
+        "dependencies": [
+          "M9-M1-level-four-Appell-source-audit"
+        ],
+        "implies": [],
+        "blockers": [],
+        "source_card": "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/reports/indefinite_theta_source_hypothesis_audit.md",
+        "evidence": {
+          "positive": [
+            "sources/semikhatov_taormina_tipunin_2005.md",
+            "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/reports/indefinite_theta_source_hypothesis_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/candidates/conductor_round144_appell_completion_and_cell_reduction.md",
+            "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/reviews/source_post_unmask_completion_and_summation_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/reviews/source_conductor_candidate_final_green.md",
+            "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/reviews/conductor_round144_appell_completion_adjudication.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use the scalar law only with the constant and all four corrections retained. Reopen a coefficient-summation route only after proving the required analytic class and a bound for all five completed pairings in the individual complex direction."
+      },
+      {
+        "id": "M9-M1-lower-cone-Appell-completion-self-return-obstruction",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Completed Appell five-owner pairing and reciprocal self-return obstruction",
+        "status": "proved_internal",
+        "statement_tex": "For the exact cone coefficient C, the completed scalar H=F+1/4+sum_(a=0)^3 R_a is real-analytic of weight one with nebentypus chi_4 on Gamma_0(4), but coefficient extraction consists of one completed pairing minus four correction pairings and no audited theorem bounds these five owners for the literal square-root test. After the target-safe cells are globally restored and exact character Poisson is applied to a smooth dyadic block, the positive-j interior principal family, for 0<j<sqrt(N), has full factor e(1/8)N^(-1/4)chi_4(j)/h times the exact profiles and e(Nh/j); j=sqrt(N) belongs to the endpoint/Fresnel ledger. After the half-boundary, subtraction, negative alias, collar, entry/exit, profile, and remainder owners are reassembled, this is inverse to the Round-140 factor e(-1/8)N^(1/4) and returns the same reciprocal height-alias owner. The Round-142 denominator-Abel completion still reconstructs r_2/4 rather than C and leaves the negative-character sector and moving wedge. Cone capacity M^(1/4+o(1)), top capacity R^(1/2+o(1)), and reciprocal capacity N^(1/4) asymptotic to R are upper capacities, not signed lower bounds. Thus the completed-Appell mechanism proves neither the masked cone target nor a strict automorphic signed survivor.",
+        "dependencies": [
+          "M9-M1-level-four-completed-Appell-scalar-source-audit",
+          "M9-M1-one-sided-divisor-Appell-Poisson-reduction",
+          "M9-M1-lower-far-cone-microscopic-cell-reduction",
+          "M9-M1-lower-cone-rational-spectrum-self-return-obstruction"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/reports/indefinite_theta_lattice_completion_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/reports/blind_cone_automorphy_feasibility.md",
+            "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/reports/indefinite_theta_source_hypothesis_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/candidates/conductor_round144_appell_completion_and_cell_reduction.md",
+            "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/reviews/discovery_post_unmask_blind_cell_and_completion_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/reviews/blind_post_unmask_appell_return_and_cell_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/reviews/source_post_unmask_completion_and_summation_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/reviews/source_conductor_candidate_final_green.md",
+            "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/reviews/blind_conductor_candidate_final_green.md",
+            "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/reviews/discovery_conductor_candidate_final_green.md",
+            "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/reviews/conductor_round144_appell_completion_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/controls/conductor_round144_controls.md",
+            "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Park completion-only modularity, coefficient-only extraction, correction deletion, hard-mask transforms, cosine substitution, and another reciprocal stationary transform. Reopen only with a new fixed-centre signed correlation theorem for the large-displacement survivor that controls every restored owner."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-lower-far-cone-microscopic-cell-reduction",
+        "title": "Exact far-cone and gcd-averaged nearest-square reduction",
+        "statement_tex": "Let R=X^(1/4), N=floor(X), fix 0<rho<1/8, let A_rho(m) be the exact Round-140 incomplete coefficient, and let C(m)=sum_(hr=m, r odd, r>4h)chi_4(r). On disjoint half-open dyadic blocks I_M in the profile support, put k_m=floor(sqrt(Nm)+1/2) and j_m=k_m^2-Nm. For every J>=1, the accepted pointwise root estimate rho_N(j)<<_epsilon N^epsilon sqrt((N,j)), averaged as sum_(1<=|j|<=J)sqrt((N,j))<<_epsilon JN^epsilon and combined with k_m<N, gives #{m in I_M:0<|j_m|<=J}<<_epsilon JX^epsilon. If N=Du^2 with D squarefree, j_m=0 iff m=Dt^2 and that exact-radical channel is target-safe; in total #{m in I_M:|j_m|<=J}<<_epsilon (J+sqrt(M)+1)X^epsilon for J>=0. The nonzero J-window has weighted price M^(-3/4)JX^epsilon. Hence the exact frozen scalar equals sum_M sum_(m in I_M, |j_m|>M^(3/4)) m^(-3/4)V_low(R^2m/N)C(m)e(sqrt(Nm))+O_(epsilon,rho,V)(X^epsilon). The exponent 3/4 is maximal only for this absolute root-count plus divisor-bound ledger. The survivor is not estimated, and the phase-value gap gives no arbitrary rational-slope separation.",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/reports/indefinite_theta_lattice_completion_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/reports/blind_cone_automorphy_feasibility.md",
+            "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/candidates/conductor_round144_appell_completion_and_cell_reduction.md",
+            "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/reviews/blind_conductor_candidate_final_green.md",
+            "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/reviews/discovery_conductor_candidate_final_green.md",
+            "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/reviews/conductor_round144_appell_completion_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Attack the strict large-displacement survivor |j_m|>M^(3/4) by a genuinely signed fixed-centre mechanism. The wider target-safe deletion is arithmetic support information only and does not provide derivative-arc exclusion or a bound."
+      },
+      {
+        "id": "M9-M1-lower-incomplete-fibre-dispersion-obstruction",
+        "statement_tex": "For the far scalar, nearest-integer phase cells have length O(R^(-1)) and contain at most one integer. Retaining the gcd in the accepted congruence root bound prices the nonzero window |j|<=J by M^(-3/4)JX^epsilon, so the present absolute method reaches target scale at J=M^(3/4), not sqrt(M), and proves no larger fixed power. Writing m=2^nu n with n odd gives the exact identity sigma_chi4(n)=(1+chi_4(n))A_nu(n)+B_nu(n): on chi_4(n)=-1 it is blind, and on chi_4(n)=1 it returns the complete r_2(2^nu n)/4 coefficient plus an exact owner-sized central band. For fixed c_0 and 2<=M<=c_0 y, y=floor(sqrt(X)), the literal incomplete coefficient satisfies sum_(m<=M)A_rho(m)e(m/4)=i*pi*M/8+O_(rho,c_0)(M^(3/4)) and its m^(-3/4)-weighted version is i*pi*M^(1/4)/2+O_(rho,c_0)(log(2M)), so uniform additive cancellation and low variation are false. After target-safe ratio smoothing the exact double-Mellin arithmetic factor is 4^(-t)zeta(s+t)L(s-t,chi_4), but the audited dispersion, complete radial, standard-twist, subconvex, moment, and rational-spectrum routes retain a positive R-power, have the wrong coefficient or scalar direction, fail a stated hypothesis, or return the same owner. These are scoped no-go controls, not a signed lower bound or target failure.",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/candidates/conductor_round144_appell_completion_and_cell_reduction.md",
+            "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/reviews/conductor_round144_appell_completion_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Retain the corrected M^(3/4) absolute cell threshold, the full 4|q hierarchy, r_2/4 Abel mismatch, and moving wedge. Reopen only with a new signed fixed-centre theorem for the surviving large-displacement cells."
+      },
+      {
+        "id": "M9-M1-one-sided-divisor-Appell-Poisson-reduction",
+        "dependencies_added": [
+          "M9-M1-level-four-completed-Appell-scalar-source-audit"
+        ],
+        "statement_tex": "For C(m)=sum_(hr=m, r odd, r>4h)chi_4(r), F(tau)=sum_(m>=1)C(m)e(m tau) satisfies A_4(1/2,-3tau;2tau)=1/2+2F(tau). Its completed scalar H=(1/2)Ahat_4(1/2,-3tau;2tau) equals F+1/4 plus four compulsory theta--R_Zw corrections and has weight one and nebentypus chi_4 on Gamma_0(4). For w in C_c^infty((0,infinity)), sum_(m>=1)C(m)w(m) equals one half sum_h w(4h^2) plus (i/2)sum_(h>=1,j nonzero)chi_4(j){h^(-1)int_(4h^2)^infinity w(u)e(-ju/(4h))du-2w(4h^2)/(pi i j)}, with the bracketed double sum interpreted in the accepted symmetric absolutely convergent recombination. For the restored dyadic square-root test and 0<j<sqrt(N), the integral inside braces has principal amplitude 2N^(-1/4)/h and Gaussian e(-1/8); after the outer i/2 the full principal factor is e(1/8)N^(-1/4)/h. The equality j=sqrt(N) remains an endpoint/Fresnel case, while j>sqrt(N) has no interior saddle. This legacy reduction alone supplies no coefficient bound or strict automorphic survivor.",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/reports/indefinite_theta_source_hypothesis_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/candidates/conductor_round144_appell_completion_and_cell_reduction.md",
+            "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/reviews/source_conductor_candidate_final_green.md",
+            "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/reviews/conductor_round144_appell_completion_adjudication.md"
+          ]
+        },
+        "next_action": "Use the exact Poisson identity only after global mask restoration and with the outer i/2, endpoint/Fresnel, subtraction, and four completion owners retained. Another completion or stationary transform is parked unless a new signed correlation estimate prevents aggregate self-return."
+      },
+      {
+        "id": "M9-M1-lower-post-collar-smoothed-far-alias-reduction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/candidates/conductor_round144_appell_completion_and_cell_reduction.md",
+            "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Use the proved floor-free cone and the corrected gcd-averaged cell reduction. The sole far survivor is now the fixed-centre cone scalar on |k_m^2-Nm|>M^(3/4); Appell completion and character Poisson return the aggregate reciprocal owner and do not estimate it."
+      },
+      {
+        "id": "M9-M1-lower-signed-farey-transform-radical-obstruction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/candidates/conductor_round144_appell_completion_and_cell_reduction.md",
+            "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/reviews/conductor_round144_appell_completion_adjudication.md"
+          ]
+        },
+        "next_action": "The global target-safe deletion extends from the separate exact-radical channel to the aggregate nonzero window |k_m^2-Nm|<=M^(3/4) by gcd averaging. The surviving phase-value gap is still R^(-3) times the natural derivative-cell width and excludes no arbitrary Farey arc. Another formal transform self-returns."
+      },
+      {
+        "id": "M9-M1-lower-height-alias-rank-one-product-fibre-obstruction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/candidates/conductor_round144_appell_completion_and_cell_reduction.md",
+            "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/reviews/conductor_round144_appell_completion_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Retain the exact coefficient-completion return to r_2/4 and the completed-Appell/character-Poisson aggregate return to the reciprocal height-alias family. The sharper M^(3/4) deletion is target-safe, but branchwise remainders, hard endpoints, and the surviving signed scalar remain open."
+      },
+      {
+        "id": "M9-M1-lower-cone-rational-spectrum-self-return-obstruction",
+        "evidence_added": {
+          "positive": [
+            "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/reports/indefinite_theta_source_hypothesis_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/candidates/conductor_round144_appell_completion_and_cell_reduction.md",
+            "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/reviews/conductor_round144_appell_completion_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Retain the full 4|q rational hierarchy, finite-tail obstruction, r_2/4 Abel completion, negative-character survivor, owner-sized moving wedge, and completed-Appell aggregate self-return. The sharper M^(3/4) phase-value deletion supplies no derivative-arc exclusion. Reopen only with a new fixed-centre signed theorem."
+      },
+      {
+        "id": "M9-M1-global-lower-radial-signed-estimate",
+        "dependencies_added": [
+          "M9-M1-lower-cone-Appell-completion-self-return-obstruction"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/reports/indefinite_theta_lattice_completion_attack.md",
+            "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/reports/blind_cone_automorphy_feasibility.md",
+            "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/reports/indefinite_theta_source_hypothesis_audit.md",
+            "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/reviews/conductor_round144_appell_completion_adjudication.md",
+            "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The first open lower-radial estimate is the strict cone scalar on |k_m^2-Nm|>M^(3/4). Exact completed-Appell covariance, its five-owner coefficient pairing, rational Abel completion, and reciprocal stationary transforms do not reduce it. Prove a genuinely new fixed-centre signed correlation theorem while retaining the independent Round-138 collar-tail cross owner."
+      }
+    ],
+    "correct_rejected": [
+      {
+        "id": "Round141-exact-radicals-are-the-only-target-safe-phase-cells",
+        "reason": "Gcd-averaging the accepted congruence root bound proves the full aggregate nonzero window |k_m^2-Nm|<=M^(3/4) target-safe after global assembly; exact radicals remain a separate target-safe channel.",
+        "evidence_added": [
+          "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/reviews/conductor_round144_appell_completion_adjudication.md",
+          "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/synthesis.md"
+        ]
+      },
+      {
+        "id": "Round141-microscopic-root-count-controls-all-near-radicals",
+        "reason": "For nonzero |j|<=J the corrected proved ledger is M^(-3/4)JX^epsilon, reaches target scale at J=M^(3/4), and still does not control all larger near-radical cells.",
+        "evidence_added": [
+          "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/reviews/conductor_round144_appell_completion_adjudication.md",
+          "rounds/codex-managed/m9-m1-lower-cone-indefinite-theta-completion-gate/synthesis.md"
+        ]
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round144-holomorphic-cone-series-is-homogeneous-modular",
+        "reason": "F alone is not modular; the separate 1/4 and all four nonholomorphic corrections are compulsory."
+      },
+      {
+        "id": "Round144-completed-scalar-is-harmonic-Maass-and-has-standard-Voronoi",
+        "reason": "Only real-analytic modular covariance is proved; harmonicity and the hypotheses of standard harmonic-Maass coefficient summation formulas are absent."
+      },
+      {
+        "id": "Round144-torsion-section-is-a-scalar-on-full-SL2Z",
+        "reason": "The fixed section is scalar only on Gamma_0(4); the full modular group moves a finite characteristic orbit."
+      },
+      {
+        "id": "Round144-Appell-correction-is-a-single-disposable-unary-error",
+        "reason": "There are four compulsory correction terms plus a separate isotropic constant, and no target-safe bound permits deleting them."
+      },
+      {
+        "id": "Round144-completion-accepts-the-hard-nonresonant-mask-directly",
+        "reason": "The coefficient transform requires a smooth test; the hard mask is handled only through the separately proved global target-safe cell restoration."
+      },
+      {
+        "id": "Round144-real-or-cosine-transform-controls-the-required-complex-direction",
+        "reason": "The target is one individual complex direction; no exact bridge from a cosine or conjugate pair is proved."
+      },
+      {
+        "id": "Round144-principal-stationary-family-is-the-full-exact-transform",
+        "reason": "It is only the interior principal family. The endpoint/Fresnel, boundary, subtraction, alias, profile, and remainder owners remain compulsory."
+      },
+      {
+        "id": "Round144-Appell-completion-equals-the-Round142-Abel-reconstruction",
+        "reason": "The completed torsion section and the denominator-Abel coefficient completion are different operations; the latter reconstructs r_2/4 rather than C."
+      },
+      {
+        "id": "Round144-M3over4-phase-gap-implies-Farey-slope-separation",
+        "reason": "The induced special-slope gap is only R^(-3) times the natural derivative-cell width and says nothing about an arbitrary rational slope."
+      },
+      {
+        "id": "Round144-same-absolute-root-count-deletes-a-fixed-power-beyond-M3over4",
+        "reason": "The proved absolute price is M^(-3/4)JX^epsilon, so this ledger is target-safe only through J=M^(3/4)."
+      },
+      {
+        "id": "Round144-cone-or-reciprocal-capacity-is-a-signed-lower-bound",
+        "reason": "The displayed R^(1/2) and R capacities are unsigned upper prices and do not preclude cancellation in the fixed-centre complex scalar."
+      },
+      {
+        "id": "Round144-completion-or-cell-reduction-proves-M1-or-an-exponent",
+        "reason": "The strict large-displacement survivor, collar-tail cross owner, direct M1 parents, all M2 parents, endpoint uniformity, M9, bridge, and quarter target remain open."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1",
+        "reason": "Round 144 sharpens one alternative-route lower-radial support owner but proves neither that signed survivor, the independent collar-tail cross owner, nor either direct blockwise M1 parent."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Hard TOP, BAL, and all required UNBAL owners were not treated and remain open."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "One fixed lower-cone scalar reduction is not a uniform all-owner endpoint theorem."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain open."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The bridge remains conditional on the complete open M9 hypothesis."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The strongest internally proved global exponent remains one third."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "The separately audited external exponent remains (3292+25sqrt(1717))/13762."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The quarter target still lacks the surviving lower-radial estimate, remaining M1 and M2 owners, endpoint uniformity, M9, and an unconditional final bridge."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 144 proves a genuine strict arithmetic support reduction from the sqrt(M) displacement threshold to M^(3/4), derives and independently verifies the exact Gamma_0(4) completed scalar specialization, and proves that the owner-complete Appell/character-Poisson route self-returns. The surviving signed scalar and every downstream theorem or exponent remain open."
+  }
+}

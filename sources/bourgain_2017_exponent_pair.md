@@ -16,36 +16,42 @@ function*, Journal of the American Mathematical Society **30** (2017),
 This is Jean Bourgain's single-author 2017 paper.  It is not the withdrawn
 Bourgain--Watt paper recorded separately in `sources/bourgain_watt.md`.
 
-## Exact theorem used
+## Exact theorems and their distinct ranges
 
-Theorem 4 and the Section 5 refinement, summarized as Theorem 6, give the
-exponent pair
+Theorem 4 first proves the relevant estimate directly in the source window
+
+\[
+ \mathcal T^{17/42}\ll M\ll\mathcal T^{1/2}.
+\]
+
+Section 5 then removes that window as a restriction on the exponent-pair
+statement.  Theorem 6 states that
 
 \[
  \left(\frac{13}{84}+\varepsilon,
-       \frac{55}{84}+\varepsilon\right).
+       \frac{55}{84}+\varepsilon\right)
 \]
 
-In the source's exponent-sum normalization, for a smooth model phase on a
-dyadic interval of length \(M\), phase parameter \(\mathcal T\), and
-
-\[
- \mathcal T^{17/42}\ll M\ll\mathcal T^{1/2},
-\]
-
-the resulting interval sum has the exponent-pair bound
+is an exponent pair.  In the source's normalization, for an admissible
+exponent-pair phase on a dyadic interval of length \(M\), phase parameter
+\(\mathcal T\), and \(1\le M\le\mathcal T\), this gives
 
 \[
  \sum_{m\asymp M}e(\mathcal T F(m/M))
  \ll_\varepsilon
  (\mathcal T/M)^{13/84+\varepsilon}
- M^{55/84+\varepsilon},
+ M^{55/84+\varepsilon}.
 \]
 
-under the source's fixed smooth derivative hypotheses.  Section 5 treats a
-proper subinterval by extending the phase to the ambient dyadic interval
-and using the partial-sum device attributed there to P. Sargos, at an
-additional logarithmic cost.
+Theorem 6 is not confined to the direct Theorem-4 window.  Section 5
+explicitly treats \(M>\mathcal T^{1/2}\): it uses a near-square rescaling,
+the pair \((1/2,1/2)\) in the extreme long range, and a Poisson/partial-
+summation exponent-pair \(B\)-process in the remaining long range, using
+that the new pair is fixed by \(B\).  It treats a proper subinterval by
+extending the phase to the ambient dyadic interval and using the partial-sum
+device attributed there to P. Sargos.  The latter costs only a logarithm.
+These extensions require the standard exponent-pair derivative class; they
+are not assertions for arbitrary smooth phases.
 
 ## Exact project specialization
 
@@ -71,8 +77,8 @@ with
  J=X^{1/2},\qquad Q=J^{2/5},\qquad T=J^{3/5}.
 \]
 
-Take \(M=T\) and \(\mathcal T=K_{\kappa,b}/T\asymp JQ\).  The direct
-source range holds because
+Take \(M=T\) and \(\mathcal T=K_{\kappa,b}/T\asymp JQ\).  This particular
+specialization already lies in the direct Theorem-4 source range because
 
 \[
  \frac{\log M}{\log\mathcal T}=\frac37
@@ -96,6 +102,12 @@ The logarithmic proper-subinterval loss is absorbed in \(X^\varepsilon\).
 
 - The reciprocal phase has the required fixed smooth derivative pattern on
   every ambient progression, uniformly in the bounded shift \(\alpha\).
+- The global Theorem-6 interface may be used outside the direct
+  \(\mathcal T^{17/42}\ll M\ll\mathcal T^{1/2}\) window only after checking
+  the same standard exponent-pair derivative class, the convention
+  \(M\le\mathcal T\), and the proper-subinterval construction.  A fixed
+  comparable edge with \(\mathcal T<M\) must be covered separately, not by
+  silently violating the convention.
 - A smooth or bounded-variation actual weight is inserted only by Abel
   summation after the unweighted interval estimate.
 - The ambient length remains \(T\).  The theorem is not rescaled to the
@@ -106,8 +118,32 @@ The logarithmic proper-subinterval loss is absorbed in \(X^\varepsilon\).
   does not close the remaining upper conductors, cone edges, full
   \(M9\!-!M1\), \(M9\), or the Gauss-circle exponent.
 
+## Round-151 reciprocal-row specialization
+
+For the exact compressed reciprocal row, after Mobius inversion write
+\(q=c(4n+a)\), \(a\in\{1,3\}\), with interval length
+\(H_c\asymp LQ/c\) and phase \(NdL/[c(4n+a)]\).  Its scaled derivative
+parameter satisfies
+
+\[
+ \mathcal T_c\asymp Nd/Q,
+ \qquad \mathcal T_c/H_c\asymp cE/L.
+\]
+
+The shifted reciprocal is uniformly in the standard exponent-pair class,
+and Section 5 supplies every proper subinterval.  On the part with
+\(\mathcal T_c\ge H_c\), Theorem 6 applies directly.  The finite comparable
+upper-support edge where \(\mathcal T_c<H_c\) is covered by the stronger
+second-derivative estimate because \(55/84>1/2\).  Bounded-variation actual
+weights are inserted only afterwards by Abel summation.  Consequently the
+global pair, not merely Theorem 4's direct window, gives the all-\(L\) row
+bound used in Round 151.
+
 ## Audit status
 
-`proved_external_dependency` for the scoped reciprocal progression bound
-above.  The source is active and distinct from the excluded withdrawn
-Bourgain--Watt paper.
+`proved_external_dependency` for the global Theorem-6 exponent-pair
+interface after the derivative-class, interval, and \(M\le\mathcal T\)
+checks above.  The source is active and distinct from the excluded withdrawn
+Bourgain--Watt paper.  The earlier project wording that inherited the
+Theorem-4 window as the scope of Theorem 6 is corrected by the Round-151
+primary-source audit.

@@ -1,0 +1,227 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 155,
+    "round_type": "m9_m1_lower_cone_t1_d1_outer_defect_theta_dispersion_gate",
+    "campaign_id": "m9-m1-lower-cone-t1-d1-outer-defect-theta-dispersion-gate",
+    "title": "M1 D=1 signed outer-defect theta-dispersion gate",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "84bbcb3413936c9b672c829cdba97b8d0bde69f7a6df677b61f24e9ec27e243a",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "planned_numerical_percent": 0,
+      "literature_policy": "Audit current primary half-integral-weight Kuznetsov, theta-multiplier Kloosterman, fixed-modulus bilinear Kloosterman, spectral large-sieve, modular-root, and quadratic-frequency sources only against the exact normalized outer-defect family. Record theorem numbers, modulus and multiplier hypotheses, coefficient class, averaging variable, zero and exceptional terms, endpoints, and every restored N-M-V-d power."
+    },
+    "target_obligations": [
+      "M9-M1-lower-cone-t1-d1-root-defect-logarithmic-collar-reduction",
+      "M9-M1-d1-theta-kloosterman-source-audit",
+      "M9-M1-lower-cone-t1-d1-root-dispersion-obstruction",
+      "M9-M1-lower-cone-t1-squarefree-large-wrap-collar-obstruction",
+      "M9-M1-global-lower-radial-signed-estimate"
+    ],
+    "frozen_target": {
+      "question": "For the exact D=d=L=1 signed outer-defect blocks beyond every fixed polylogarithmic collar, can a coefficient-sensitive joint j-v theta-Kloosterman transform, a signed selected cross-fibre argument, or another genuinely new mechanism prove the X^epsilon target or a strict owner-complete positive-power range; if not, what is the first exact inverse-transform, zero-mode, nonseparability, diagonal, endpoint, source, or restored-power obstruction?",
+      "reference_formula": "Fix A>0, R=X^(1/4), N=floor(X), J_A=M^(3/4)(log(2X))^A, K=sqrt(NM), and J_A<V<=K. The accepted selected block is Q_U(V)=sum chi_4((k^2-j)/N)w_U((k^2-j)/N)e(-j/(2k)) over -k<=j<=k-1, V<|j|<=2V, N|(k^2-j), and positive odd quotient. Its exact pre-linearization ambient completion is -i(1+i)/(2Nq) sum_j sum_(d|N,d odd)chi_4(d)d sqrt(q_d) sum_(v mod q_d/2) Bhat_j(2dv)K(-v^2,-j;q_d), where q=4N and q_d=q/d.",
+      "quantities": [
+        "Retain the literal actual profile, zero extension, support components, transition and hard endpoints, asymmetric cell -k<=j<=k-1, both defect signs, strict dyadic mask, and external B_(1,U)(1) seam.",
+        "Treat the accepted selected linearization error only on the selected graph; the exact ambient coefficient B_j retains the exact residual phase until an error is separately proved.",
+        "Retain the selector factor -i/(2N), Fourier factor 1/q, Gauss factor d sqrt(q_d), theta multiplier, every odd d|N, v mod q_d/2, zero and nonzero modes, and every outer j block.",
+        "The coefficient Bhat_j(2dv) is literal and nonseparable. A separated bounded surrogate is not admissible without an exact decomposition and total norm ledger.",
+        "Post-selection h-Cauchy is equality; the ambient rows remain distinct. Neither fact may be moved across the selection boundary.",
+        "Before claiming a gain from expanding K and summing v, compute the complete half-period v-transform and decide whether it is an inverse-Gauss self-return.",
+        "Isolate v=0 and all principal or exceptional spectral terms before estimating nonzero modes.",
+        "A square-root incidence gain closes at most V<=M^(3/2); print the complete N-M-V-d power after every outer variable is restored.",
+        "Fixed-modulus theorems, modulus averages, arbitrary coefficient large sieves, and the actual coupled coefficient are distinct interfaces.",
+        "Raw counts, Parseval norms, diagonals, theorem right sides, and optimistic separated models are upper capacities, not signed lower bounds.",
+        "The D>1 recovery fibre, L>1 rows, generic t=1, every original t>=2 layer, the Round-138 cross owner, all M2 owners, endpoint assembly, M9, and the bridge remain separate."
+      ]
+    },
+    "completion_criteria": [
+      "Write the exact selected and ambient block formulas with every selector, Fourier, Gauss, multiplier, gcd, zero-mode, profile, mask, sign, and endpoint normalization.",
+      "Expand the complete v-transform far enough to prove or refute the proposed inverse-Gauss self-return, including the q_d/2 half-period and all multiplier constants.",
+      "Isolate and price the v=0 contribution before any nonzero-mode spectral or dispersion claim.",
+      "Produce a complete N-M-V-d and dual-frequency ledger for every Cauchy, Poisson, Kuznetsov, spectral-large-sieve, two-variable differencing, or selected cross-fibre placement.",
+      "Prove the full block target, isolate a strict owner-complete positive-power defect range, or establish the first exact coefficient, diagonal, endpoint, source-hypothesis, or power obstruction.",
+      "Source-audit every imported theta Kloosterman, half-integral Kuznetsov, bilinear fixed-modulus, spectral large-sieve, modular-root, or quadratic-frequency theorem against the literal expanded coefficient.",
+      "Independently rederive the selected cross-fibre interface from the statement-only packet and test both defect signs, all N parities, exact collisions, and endpoint ranges.",
+      "Close under exactly one label: outer_defect_signed_target, strict_outer_defect_signed_range, or outer_defect_theta_dispersion_no_go."
+    ],
+    "controls": [
+      "literal_outer_defect_block",
+      "selected_ambient_equivalence_and_linearization_scope",
+      "exact_Bj_and_nonseparable_coefficient",
+      "mod4N_selector_and_full_normalization",
+      "all_gcd_two_adic_and_multiplier_strata",
+      "zero_mode_and_exceptional_terms",
+      "complete_vs_truncated_v_transform",
+      "inverse_Gauss_self_return_test",
+      "positive_negative_defect_and_cell_endpoints",
+      "N_M_V_d_power_ledger",
+      "actual_profile_transitions_and_B11",
+      "Cauchy_Parseval_diagonal_and_collision_scope",
+      "fixed_modulus_vs_modulus_average_source_match",
+      "square_root_range_V_le_Mthreehalves",
+      "absolute_capacity_vs_signed_sum",
+      "D_L_generic_tge2_cross_and_downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "outer_defect_spectral_dispersion_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "assigned",
+        "target": "Attack the exact normalized outer-defect family through a coefficient-sensitive joint j-v transform. First derive the complete half-period v-resummation and determine whether it exactly inverts the Gauss completion. Then isolate v=0, split or transform the nonzero modes without separating Bhat_j(2dv), and test Poisson, Kuznetsov, spectral large sieve, or two-variable dispersion. Prove the full target, a strict owner-complete power range, or the first exact inverse-transform, zero-mode, coefficient-norm, diagonal, endpoint, or restored-power obstruction.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round155_d1_outer_defect_theta_dispersion_strategy.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-theta-dispersion-gate/barrier_packet.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-theta-dispersion-gate/candidates/conductor_round155_outer_defect_seed.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/candidates/conductor_round154_root_dispersion_adjudication.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/reviews/conductor_round154_adjudication.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/controls/conductor_round154_controls.md"
+        ],
+        "required_controls": [
+          "literal_outer_defect_block",
+          "selected_ambient_equivalence_and_linearization_scope",
+          "exact_Bj_and_nonseparable_coefficient",
+          "mod4N_selector_and_full_normalization",
+          "all_gcd_two_adic_and_multiplier_strata",
+          "zero_mode_and_exceptional_terms",
+          "complete_vs_truncated_v_transform",
+          "inverse_Gauss_self_return_test",
+          "positive_negative_defect_and_cell_endpoints",
+          "N_M_V_d_power_ledger",
+          "actual_profile_transitions_and_B11",
+          "Cauchy_Parseval_diagonal_and_collision_scope",
+          "square_root_range_V_le_Mthreehalves",
+          "absolute_capacity_vs_signed_sum",
+          "D_L_generic_tge2_cross_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section analytic report.",
+          "The exact half-period inverse-transform calculation, zero-mode ledger, and complete N-M-V-d power accounting.",
+          "A target proof, strict owner-complete range, or first rigorous new-mechanism obstruction.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-theta-dispersion-gate/reports/outer_defect_spectral_dispersion_attack.md"
+      },
+      {
+        "id": "blind_linearized_cross_fibre_feasibility",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "assigned",
+        "target": "Independently attack the literal selected linearized outer-defect block. Test modular-root ordering, character pairing, two-variable differencing, Poisson, dispersion, and large-sieve placements while retaining the exact sparse congruence, both signs, all parities, cell endpoints, profile, and transitions. Prove the full target, a strict owner-complete positive-power range, or the first exact collision, diagonal, character, endpoint, coefficient-variation, or power obstruction.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-theta-dispersion-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "all strategy files",
+          "all Round-151 through Round-155 nonblind artifacts",
+          "all Round-155 sibling reports"
+        ],
+        "required_controls": [
+          "literal_outer_defect_block",
+          "selected_ambient_equivalence_and_linearization_scope",
+          "positive_negative_defect_and_cell_endpoints",
+          "N_M_V_d_power_ledger",
+          "actual_profile_transitions_and_B11",
+          "Cauchy_Parseval_diagonal_and_collision_scope",
+          "square_root_range_V_le_Mthreehalves",
+          "absolute_capacity_vs_signed_sum",
+          "D_L_generic_tge2_cross_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section statement-only analytic report.",
+          "An exact target theorem, strict positive-power range, or first rigorous selected cross-fibre obstruction.",
+          "A complete incidence, collision, character, endpoint, and N-M-V power ledger with no numerical certification.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-theta-dispersion-gate/reports/blind_linearized_cross_fibre_feasibility.md"
+      },
+      {
+        "id": "theta_bilinear_spectral_source_audit",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "status": "assigned",
+        "target": "Audit current primary theta-multiplier Kloosterman, half-integral Kuznetsov, spectral large-sieve, fixed-modulus bilinear Kloosterman, modular-root, and quadratic-frequency theorems against the exact normalized j-v-d family. Supply a source-legal full target or strict range with complete translation, or the first precise fixed-modulus, coefficient, zero-mode, exceptional-spectrum, averaging, endpoint, or restored-power mismatch.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round155_d1_outer_defect_theta_dispersion_strategy.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-theta-dispersion-gate/barrier_packet.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-theta-dispersion-gate/candidates/conductor_round155_outer_defect_seed.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/reports/quadratic_root_completion_source_audit.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/reviews/source_conductor_round154_final.md",
+          "rounds/codex-managed/m9-m1-lower-cone-t1-d1-large-defect-root-dispersion-gate/candidates/conductor_round154_root_dispersion_adjudication.md"
+        ],
+        "required_controls": [
+          "literal_outer_defect_block",
+          "exact_Bj_and_nonseparable_coefficient",
+          "mod4N_selector_and_full_normalization",
+          "all_gcd_two_adic_and_multiplier_strata",
+          "zero_mode_and_exceptional_terms",
+          "complete_vs_truncated_v_transform",
+          "positive_negative_defect_and_cell_endpoints",
+          "N_M_V_d_power_ledger",
+          "actual_profile_transitions_and_B11",
+          "fixed_modulus_vs_modulus_average_source_match",
+          "square_root_range_V_le_Mthreehalves",
+          "absolute_capacity_vs_signed_sum",
+          "D_L_generic_tge2_cross_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section primary-source audit.",
+          "Exact theorem cards with multiplier, modulus, coefficient, average, zero and exceptional terms, endpoints, and translated powers.",
+          "A source-legal target or strict range, or the first precise source-interface obstruction.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-lower-cone-t1-d1-outer-defect-theta-dispersion-gate/reports/theta_bilinear_spectral_source_audit.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "literal_block_and_selected_ambient_seam",
+        "requirement": "The exact selected and ambient formulas retain the literal profile, mask, both signs, asymmetric cell, linearization scope, and external coefficient seam."
+      },
+      {
+        "id": "dual_transform_and_zero_mode",
+        "requirement": "The q_d/2 period, inverse-Gauss constants, complete versus truncated v-transform, zero mode, exceptional terms, and every multiplier are explicit."
+      },
+      {
+        "id": "coefficient_and_spectral_admissibility",
+        "requirement": "No theorem is applied after replacing the actual nonseparable Bhat_j(2dv) by an unlicensed product coefficient or changing a fixed modulus into an average."
+      },
+      {
+        "id": "diagonals_collisions_and_powers",
+        "requirement": "Every Cauchy diagonal, exact and near collision, outer variable, gcd stratum, endpoint, and N-M-V-d power is restored before a gain is claimed."
+      },
+      {
+        "id": "source_and_endpoint_scope",
+        "requirement": "Every imported theorem matches the literal multiplier, modulus, coefficient class, averaging variable, zero and exceptional spectrum, support, masks, endpoints, and uniformity range."
+      },
+      {
+        "id": "capacity_and_downstream_scope",
+        "requirement": "Counts, norms, diagonals, and theorem right sides are not signed lower bounds, and no broader owner or exponent is promoted without proof."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "84bbcb3413936c9b672c829cdba97b8d0bde69f7a6df677b61f24e9ec27e243a",
+    "generated_at": "2026-08-25T03:46:45.073676+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}
