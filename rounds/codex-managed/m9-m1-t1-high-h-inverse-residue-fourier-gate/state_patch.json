@@ -1,0 +1,237 @@
+{
+  "starting_graph_sha256": "d1ace6e362a41f1a08fc09c8e44ce628758040fa91ae39c152113c275f76352a",
+  "reversibility": {
+    "rule": "Remove the one created obligation and every rejected-claim record introduced by this patch; remove every dependencies_added and evidence_added value; restore the next_action value and last-updated metadata recorded below. This recovers the canonical starting graph.",
+    "restore_next_action": {
+      "M9-M1-hard-top-high-radical-small-t-residual-estimate": "Round 186 freezes exactly the one-sided dyadic high-h tangent-gcd inequality for every fixed B and every Y>H_B: bound the single outer real part of the complete sum over both orientations, every primitive row and affine index by O_(B,epsilon)(L^2X^epsilon), not its absolute value and not any positive rowwise surrogate. Retain the Round-184 selector, squarefree and coprime deletions, zero extensions, literal endpoint and profile fields, Fejer factor, phase, signs, canonical anchors, U=1 convention, and multiplicity one. Positive capacity is O(YL^2X^epsilon), so the proof must recover the complete factor Y before positive recombination. A stronger separate signed orientation argument is admissible only if it rigorously implies the joint one-sided inequality; no dyadic lower bound is required. Even success closes only the exact original-t=1 residual and leaves original t>=2 small-G incidences and the large-G near-resonant complement open."
+    },
+    "restore_metadata": {
+      "M9-M1-hard-top-high-radical-small-t-residual-estimate": {
+        "last_updated_round": 186,
+        "last_updated_at": "2026-08-28T09:12:29"
+      }
+    }
+  },
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-hard-top-t1-high-h-inverse-residue-conductor-reduction",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Hard-M1 t=1 high-height inverse-residue conductor reduction",
+        "status": "proved_internal",
+        "statement_tex": "Fix real X>=2, a literal middle or lower residual hard-M1 shell L>=2, sigma in {+1,-1}, fixed B>0, Q=H_B=floor((log(2X))^B), and a nonempty dyadic Y<h<=2Y with Y>H_B. On the exact accepted Round-185 primitive tangent-gcd carrier, expand the odd-U inverse-residue anchor with c_U(k)=2/[U{1+e(-k/U)}] and q_U(k)=U/(k,U), retaining the separate U=1 anchors and every literal selector, deletion, endpoint field, phase, and zero extension. The complete U=1 contribution, every exact conductor q_U(k)<=Q, every remaining mode with U<=4Q, and every remaining ordinary edge mode 0<|k|_U<=Q for U>4Q have total absolute size O_(B,epsilon)(L^2X^epsilon). The exact complementary one-outer-real-part aggregate has U>4Q, q_U(k)>Q, |k|_U>Q and positive capacity O_epsilon(YL^2X^epsilon); its one-sided O_(B,epsilon)(L^2X^epsilon) estimate is open. In u=gU,n=gh coordinates the low-conductor proof uses O(UL) literal atoms at fixed (kappa,u,U) and Fourier mass O((q/U)log(2q)). Centered primitive conductors self-return to the original orientation block, prime U returns literally, and the two near-half modes retain at least 8/pi^2 Fourier l2 mass. These are mechanism controls, not literal lower mass. This node proves only the strict transformed packet and exact reduction; it proves no complete high-h relation, complete t=1 residual, small-t owner, parent, bridge, theorem, or exponent.",
+        "dependencies": [
+          "M9-M1-hard-top-t1-residual-fejer-tangent-gcd-reduction",
+          "Divisor-bound-elementary"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "proofs/kernels/m9_m1_hard_top_t1_high_h_inverse_residue_conductor_reduction.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/candidates/formalized_hard_m1_t1_high_h_inverse_residue_conductor_reduction.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reports/literal_height_fourier_attack.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reports/deletion_resonance_capacity_audit.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reports/blind_high_h_rederivation.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reviews/conductor_round187_report_reconciliation.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reviews/inverse_residue_normalization_multiplicity_post_repair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reviews/candidate_normalization_post_tex_repair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reviews/power_literal_scope_post_tex_repair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reviews/blind_post_unmask_owner_scope_seam_review.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reviews/final_kernel_candidate_consistency_final_hash_verification.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reviews/final_kernel_power_owner_scope_post_repair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reviews/final_kernel_formalization_provenance_post_repair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reviews/conductor_round187_adjudication.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/controls/conductor_round187_wolfram_inverse_residue_check.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/controls/inverse_residue_exact_check.wls",
+            "rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reviews/final_kernel_formalization_provenance_hygiene_review.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Prove the exact one-sided complement uniformly for every dyadic Y>H_B: keep U>4H_B, q_U(k)>H_B, |k|_U>H_B, both orientations, all h,v,t,k, selectors, endpoints, phases, and the single outer real part joint until the full factor Y is recovered. Conductor centering, raw orientation antisymmetry, positive Fourier/Poisson/alias energy, and bare alternation are exact self-return or capacity controls, not substitutes for the literal signed estimate."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-hard-top-high-radical-small-t-residual-estimate",
+        "dependencies_added": [
+          "M9-M1-hard-top-t1-high-h-inverse-residue-conductor-reduction"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "proofs/kernels/m9_m1_hard_top_t1_high_h_inverse_residue_conductor_reduction.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/candidates/formalized_hard_m1_t1_high_h_inverse_residue_conductor_reduction.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reports/literal_height_fourier_attack.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reports/deletion_resonance_capacity_audit.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reports/blind_high_h_rederivation.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reviews/conductor_round187_report_reconciliation.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reviews/inverse_residue_normalization_multiplicity_post_repair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reviews/candidate_normalization_post_tex_repair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reviews/power_literal_scope_post_tex_repair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reviews/blind_post_unmask_owner_scope_seam_review.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reviews/final_kernel_candidate_consistency_final_hash_verification.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reviews/final_kernel_power_owner_scope_post_repair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reviews/final_kernel_formalization_provenance_post_repair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/controls/conductor_round187_wolfram_inverse_residue_check.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reviews/conductor_round187_adjudication.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The large-gcd nonresonant primitive-ray sector, canonical close opposite-character XOR part of t=1, monotone and polylogarithmic-height tangent-gcd sectors, and now the complete U=1, low exact-conductor, small-U, and ordinary-edge Fourier packets of the dyadic high-h t=1 residual are target-safe. Prove the exact one-sided complement U>4H_B, q_U(k)>H_B, |k|_U>H_B under one outer real part, retaining both orientations and every h,v,t,k, selector, endpoint, phase, and zero extension and gaining the full factor Y before positive recombination. Even complete t=1 success leaves every t>=2 small-G incidence and the large-G near-resonant complement open."
+      }
+    ],
+    "correct_rejected": [],
+    "reject": [
+      {
+        "id": "Round187-U1-or-zero-mode-proves-high-h",
+        "reason": "The U=1 and zero-mode pieces are target-safe, but the exact high-conductor large-U away-from-edge complement remains at YL^2 capacity."
+      },
+      {
+        "id": "Round187-low-exact-conductors-prove-high-h",
+        "reason": "Every q<=H_B conductor is target-safe, but all q>H_B, U>4H_B, |k|_U>H_B modes remain in one open signed aggregate."
+      },
+      {
+        "id": "Round187-positive-high-complement-is-target-safe",
+        "reason": "Positive recombination gives O(YL^2X^epsilon), larger than the required O(L^2X^epsilon) by the full dyadic factor Y."
+      },
+      {
+        "id": "Round187-conductor-centering-gains-Y",
+        "reason": "The centered conductor identity is an exact rewriting; for prime U the sole high conductor is literally the original orientation block."
+      },
+      {
+        "id": "Round187-orientation-antisymmetry-pairs-literal-amplitudes",
+        "reason": "The anchors are antisymmetric on units, but the two positive rays, endpoint orders, selectors, deletions, profiles, and phases are not equal."
+      },
+      {
+        "id": "Round187-positive-Fourier-Poisson-or-alias-energy-gains-Y",
+        "reason": "Positive energy reconstructs the signed block or positive residue buckets and retains the full diagonal capacity."
+      },
+      {
+        "id": "Round187-high-mode-Fourier-energy-is-small",
+        "reason": "The two primitive near-half modes alone contribute at least 8/pi^2 to the retained coefficient l2 mass."
+      },
+      {
+        "id": "Round187-adversarial-capacity-is-literal-lower-mass",
+        "reason": "The aligned bounded arrays are coefficient-uniform mechanism controls and need not be realizable by the actual Vaaler endpoint product."
+      },
+      {
+        "id": "Round187-Fourier-packets-are-physical-incidence-sectors",
+        "reason": "The proved packets are an exact linear spectral decomposition of literal incidences, not disjoint physical incidence sets."
+      },
+      {
+        "id": "Round187-HB-is-a-maximal-fixed-polylogarithmic-cutoff",
+        "reason": "The proof works for every fixed polylogarithmic cutoff; H_B is the canonical campaign choice, not a maximal one."
+      },
+      {
+        "id": "Round187-exact-high-conductor-one-sided-relation-is-proved",
+        "reason": "The required factor-Y signed estimate for the exact complement is explicitly the first open relation."
+      },
+      {
+        "id": "Round187-complete-t1-would-prove-the-small-t-owner",
+        "reason": "Every original t>=2 small-G incidence and the large-G near-resonant complement remain open after hypothetical t=1 completion."
+      },
+      {
+        "id": "Round187-strict-Fourier-sector-improves-a-global-exponent",
+        "reason": "Both M1 parents, every M2 parent, endpoint uniformity, M9, both bridges, and the quarter theorem remain incomplete."
+      },
+      {
+        "id": "Round187-unsigned-anchor-has-the-same-zero-mode-gain",
+        "reason": "The unsigned residue function has zero Fourier coefficient one, whereas the chi_4-induced odd-length anchor has mean 1/U."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1-hard-top-t1-residual-fejer-tangent-gcd-reduction",
+        "reason": "The accepted finite reduction and bounded-height sector are used unchanged; only a subordinate Fourier reduction is added."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-comparable-factor-exchange-sector",
+        "reason": "The accepted Round-184 XOR sector and exact residual definition are unchanged."
+      },
+      {
+        "id": "M9-M1-hard-top-small-t-nonresonant-primitive-ray-sector",
+        "reason": "The accepted Round-183 primitive-ray sector is unchanged and remains routing context."
+      },
+      {
+        "id": "M9-M1-top-endpoint-signed-cone",
+        "reason": "The exact high-conductor t=1 complement, all t>=2 small-G incidences, and near-resonant complement remain open."
+      },
+      {
+        "id": "M9-M1-direct-smooth-residual-blockwise-estimate",
+        "reason": "Round 187 treats only a transformed strict packet of the hard residual; the independent smooth parent remains open."
+      },
+      {
+        "id": "M9-M1-physical-one-count-assembly",
+        "reason": "Conditional assembly still requires the complete hard and smooth children."
+      },
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "reason": "The alternative GAR route is not treated."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "The complete hard small-t owner and independent smooth direct-M1 parent remain open."
+      },
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "reason": "No complete hard-TOP channel is proved or changed."
+      },
+      {
+        "id": "M9-M2-smooth-balanced-quarter-packet-estimate",
+        "reason": "No balanced M2 estimate is proved."
+      },
+      {
+        "id": "M9-M2-smooth-unbalanced-three-quarter-estimate",
+        "reason": "No unbalanced M2 estimate is proved."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Complete hard TOP, BAL, and UNBAL remain open."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "A subordinate hard-M1 residual packet proves no parent-level real-X endpoint theorem."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain incomplete."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The standard bridge still requires complete M9."
+      },
+      {
+        "id": "GC-global-M1-alternative-bridge",
+        "reason": "The alternative bridge still requires complete GAR or total active M1 and all of M9-M2."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The strongest theorem proved by the internal architecture remains exponent one third."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "The accepted external benchmark remains 0.3144831759740614... ."
+      },
+      {
+        "id": "GC-target",
+        "reason": "Both lawful quarter routes retain multiple open analytic parents and connectors."
+      },
+      {
+        "id": "Divisor-bound-elementary",
+        "reason": "The elementary divisor estimate is used unchanged as a direct dependency."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 187 proves the exact inverse-residue Fourier decomposition and a strict target-safe packet containing all U=1 rows, every fixed-polylogarithmic exact conductor, all small moduli, and all ordinary edge modes. It isolates a smaller literal joint complement with the same missing factor Y and proves conductor-centering and positive-energy self-return controls. The complete high-h relation, original t=1 residual, every parent, bridge, and exponent remain open."
+  }
+}

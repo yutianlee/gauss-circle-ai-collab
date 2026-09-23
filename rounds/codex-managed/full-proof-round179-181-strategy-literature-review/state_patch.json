@@ -1,0 +1,201 @@
+{
+  "starting_graph_sha256": "fec130bc66641cbdad18c832de10077a7825f1caaf5d10170a67ef65c0b27196",
+  "reversibility": {
+    "rule": "Remove every rejected-claim record introduced by this patch and every inconclusive evidence_added value; restore the selected node's next_action and last-updated metadata below. This recovers the canonical starting graph.",
+    "restore_next_action": {
+      "M9-M1-hard-top-high-radical-small-t-residual-estimate": "Find a genuinely coefficient-sensitive signed contraction for the complete small-t aggregate, retaining t=1. A uniform fixed-t (L^2/t^2)^(3/4) bound would suffice but is stronger than necessary and remains unproved; shifted correlation is only one possible sufficient route."
+    },
+    "restore_metadata": {
+      "M9-M1-hard-top-high-radical-small-t-residual-estimate": {
+        "last_updated_round": 181,
+        "last_updated_at": "2026-08-27T17:11:21"
+      }
+    }
+  },
+  "proof_obligations": {
+    "create": [],
+    "update": [
+      {
+        "id": "M9-M1-hard-top-high-radical-small-t-residual-estimate",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/full-proof-round179-181-strategy-literature-review/reports/full_graph_frontier_reconstruction.md",
+            "rounds/codex-managed/full-proof-round179-181-strategy-literature-review/reports/current_primary_literature_reassessment.md",
+            "rounds/codex-managed/full-proof-round179-181-strategy-literature-review/reports/blind_round183_frontier_selection.md",
+            "rounds/codex-managed/full-proof-round179-181-strategy-literature-review/reviews/dependency_power_selection_seam_review.md",
+            "rounds/codex-managed/full-proof-round179-181-strategy-literature-review/reviews/source_hypotheses_currency_interface_review.md",
+            "rounds/codex-managed/full-proof-round179-181-strategy-literature-review/reviews/source_report_post_repair_verification.md",
+            "rounds/codex-managed/full-proof-round179-181-strategy-literature-review/reviews/source_report_final_post_repair_verification.md",
+            "rounds/codex-managed/full-proof-round179-181-strategy-literature-review/reviews/source_report_final_hygiene_verification.md",
+            "rounds/codex-managed/full-proof-round179-181-strategy-literature-review/reviews/blind_post_unmask_frontier_selection_review.md",
+            "rounds/codex-managed/full-proof-round179-181-strategy-literature-review/reviews/conductor_round182_adjudication.md",
+            "rounds/codex-managed/full-proof-round179-181-strategy-literature-review/controls/conductor_round182_controls.md",
+            "rounds/codex-managed/full-proof-round179-181-strategy-literature-review/synthesis.md"
+          ]
+        },
+        "next_action": "Round 182 freezes only the complete one-absolute-value small-t aggregate s>L, mu^2(s)=1, 1<=t<ceil(sqrt L), for both signs and every literal middle/lower residual hard-M1 shell. Prove the exact actual-coefficient bound L^(3/2)X^epsilon while retaining t=1, chi_4, Vaaler/profile fields, floors, stars, strict edges, hard samples, real-X crossings, endpoints, support, and zero extension. Capacity is L^2, so the missing signed gain is L^(1/2). A fixed-t three-quarter estimate, shifted correlation, or partial Mobius decomposition may be used only as a rigorously sufficient mechanism and may not replace the owner. Park complete Mobius recombination, positive joint-t norms, central-Mellin-only, character-erased, arbitrary-coefficient, dechirped, and early-triangle closures. Do not pivot in Round 183. Success first closes only the hard signed cone through the proved sector reduction; smooth direct M1 and every M2/global owner remain open.",
+        "last_updated_round": 182
+      }
+    ],
+    "correct_rejected": [],
+    "reject": [
+      {
+        "id": "Round182-report-agreement-proves-small-t-estimate",
+        "reason": "Strategy, source, and blind agreement selects an objective but supplies no cancellation for its literal signed aggregate."
+      },
+      {
+        "id": "Round182-fixed-t-three-quarter-is-the-selected-owner",
+        "reason": "The fixed-row estimate is sufficient after summing t^(-3/2) but strictly stronger than the complete aggregate and cannot replace its graph owner."
+      },
+      {
+        "id": "Round182-shifted-correlation-is-proved-or-necessary",
+        "reason": "Shifted correlation is only one possible proof mechanism; no exact literal correlation theorem is proved and the aggregate may admit cross-row cancellation."
+      },
+      {
+        "id": "Round182-partial-Mobius-decomposition-proves-contraction",
+        "reason": "Partial Mobius decomposition is only a proposed diagnostic mechanism; complete recombination is known to self-return modulo a target-safe correction."
+      },
+      {
+        "id": "Round182-squarefree-Kloosterman-theorem-imports-to-hard-M1",
+        "reason": "The favorable fictional power uses a normalized prime finite-field hyper-Kloosterman trace, not the project's Archimedean phase and joint literal coefficient."
+      },
+      {
+        "id": "Round182-Xiao-moment-controls-t1-at-target-power",
+        "reason": "The fourth-moment range misses the critical shell and the second moment yields only a non-saving positive single-frequency bound, before the literal coefficient failure."
+      },
+      {
+        "id": "Round182-TTY-pair-controls-the-complete-literal-aggregate",
+        "reason": "The coefficient-one exponent-pair diagnostic has a restricted parameter range and no proved bounded-variation transfer for the squarefree divisor coefficient and moving endpoints."
+      },
+      {
+        "id": "Round182-Blomer-Pascadi-closes-K17a",
+        "reason": "The fixed-modulus separable Kloosterman theorem supplies only q^(-1/32) in the favorable critical comparison and fails the lifted joint-coefficient interface earlier."
+      },
+      {
+        "id": "Round182-source-audit-is-universal-literature-nonexistence",
+        "reason": "The no-import conclusion is dated and restricted to the named primary corpus and official records through 2026-08-27."
+      },
+      {
+        "id": "Round182-source-metadata-repair-promotes-a-theorem",
+        "reason": "Repairing scale notation, version provenance, theorem attribution, or moment ranges changes source evidence only."
+      },
+      {
+        "id": "Round182-small-t-success-closes-M9-M1",
+        "reason": "Success would close the hard signed cone through the proved sectors, while the independent smooth direct-M1 parent remains open."
+      },
+      {
+        "id": "Round182-small-t-success-closes-M9-or-quarter-target",
+        "reason": "All M2 parents, endpoint uniformity, route assembly, and bridge obligations remain separate even after hypothetical hard-M1 success."
+      },
+      {
+        "id": "Round182-R179-or-R180-self-return-disproves-K17a-or-K26",
+        "reason": "The tested automatic mechanisms self-return at their scoped interfaces, but neither literal residual target is disproved."
+      },
+      {
+        "id": "Round182-GAR-alternative-bypasses-M9-M2",
+        "reason": "GAR replaces only the direct M1 conjunction on its alternative bridge and still requires complete M9-M2."
+      },
+      {
+        "id": "Round182-smallest-missing-power-alone-selects-the-frontier",
+        "reason": "Selection depends on exact theorem scope and owner leverage as well as the numerical deficit; reports are not adjudicated by vote or deficit alone."
+      },
+      {
+        "id": "Round182-strategy-review-improves-the-global-exponent",
+        "reason": "No analytic parent, bridge, or global theorem is proved or imported, so all certified exponent scopes are unchanged."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "GC-target",
+        "reason": "Both lawful quarter routes retain multiple open analytic parents and route-specific connectors."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The standard bridge remains derived only under complete M9."
+      },
+      {
+        "id": "GC-global-M1-alternative-bridge",
+        "reason": "The alternative bridge still requires complete GAR or total active M1 and all of M9-M2."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain incomplete."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "A strategy and source review proves no real-X endpoint assembly."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "The hard small-t residual and the independent smooth direct-M1 parent remain open."
+      },
+      {
+        "id": "M9-M1-top-endpoint-signed-cone",
+        "reason": "Round 182 selects but does not prove the complete small-t residual needed after the accepted strict sectors."
+      },
+      {
+        "id": "M9-M1-direct-smooth-residual-blockwise-estimate",
+        "reason": "The independent smooth direct-M1 parent receives no analytic estimate."
+      },
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "reason": "The complete lower-radial GAR owner remains open."
+      },
+      {
+        "id": "M9-M1-global-lower-radial-signed-estimate",
+        "reason": "The strategy review imports no lower-radial cancellation theorem."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Complete hard TOP, full BAL, and UNBAL remain open."
+      },
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "reason": "K17a, K26, the full t=1 face, and other few-point and collar channels remain below complete hard TOP."
+      },
+      {
+        "id": "M9-M2-top-endpoint-density-discrepancy-energy",
+        "reason": "No complete hard-TOP density or energy theorem is proved."
+      },
+      {
+        "id": "M9-M2-smooth-balanced-quarter-packet-estimate",
+        "reason": "The critical and remaining-label BAL scopes remain independently open."
+      },
+      {
+        "id": "M9-M2-balanced-double-far-oscillatory-remainder",
+        "reason": "No actual-symbol nonlocal estimate is proved for the critical BAL remainder."
+      },
+      {
+        "id": "M9-M2-balanced-remaining-label-owner-quantifier-completion",
+        "reason": "No all-label or exact-square-boundary BAL theorem is proved."
+      },
+      {
+        "id": "M9-M2-smooth-unbalanced-three-quarter-estimate",
+        "reason": "No signed varying-modulus literal-vector theorem is proved or imported."
+      },
+      {
+        "id": "M9-M2-hard-top-t1-residual-k17a-primitive-alias-conductor-reduction",
+        "reason": "The primitive conductor reduction remains proved, while its centered high-conductor defect remains open."
+      },
+      {
+        "id": "M9-M2-hard-top-t1-residual-k26-near-peak-row-gram-self-return-obstruction",
+        "reason": "The scoped row identity and self-return obstruction remain unchanged; the literal unequal-product theorem is not disproved."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The strongest theorem proved by the internal architecture remains exponent one third."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "The repaired Li-Yang dependency remains the accepted external benchmark at 0.3144831759740614... ."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 3,
+    "idea_quality_score": 9,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 182 proves no new analytic estimate, but reconstructs both lawful quarter routes, reconciles the exact R179-R181 residual frontiers, repairs and independently verifies the current primary-source audit, and freezes the complete hard-M1 small-t aggregate as the sole Round-183 owner. Every analytic status, theorem statement, edge, bridge, and certified exponent remains unchanged."
+  }
+}

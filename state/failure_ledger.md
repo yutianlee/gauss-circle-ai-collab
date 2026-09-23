@@ -2,7 +2,7 @@
 
 Generated from `state/proof_obligations.yml`; edit the graph rather than this derived file.
 
-Graph SHA-256: `700182f4dcf805e7f5ae74ca8ac49e88e4025471d9def1746a832c45fb6d2358`.
+Graph SHA-256: `3073235ad5677b9066f1336ec9d958b0e93b92d99cfa7ebea1d823146c799099`.
 
 ## A2-M9-M2-character-factor-proved-internal-claim
 
@@ -7874,136 +7874,6 @@ The exact character transform and collar identify the first signed aggregate but
 Evidence:
 - `rounds/codex-managed/m9-m2-hard-top-t1-close-factor-bilinear-gate/reviews/conductor_round162_adjudication.md`
 
-## Round163-close-prime-selector-is-nonempty-or-dense
-
-The selector chooses at most one pair and proves no per-block
-nonemptiness, density, positive proportion, or polynomial coverage.
-
-Evidence: rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/conductor_round163_adjudication.md
-
-## Round163-close-prime-sector-proves-full-t1
-
-No-pair products and all neither-prime and both-prime incidences remain in
-the unestimated residual.
-
-Evidence: rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/conductor_round163_adjudication.md
-
-## Round163-single-p3-toggle-has-two-physical-legs
-
-The physical interval has multiplicative width two while every
-\(p\equiv3\pmod4\) has \(p\geq3\), so the toggled leg leaves the window.
-
-Evidence: rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/conductor_round163_adjudication.md
-
-## Round163-averaged-p3-toggles-gain-prime-multiplicity
-
-Every active divisor returns with its original sign once for each
-eligible toggling prime; normalized averaging is exact self-return.
-
-Evidence: rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/conductor_round163_adjudication.md
-
-## Round163-partner-existence-gives-canonical-global-matching
-
-A noninjective partner rule is not a reindexing.  Sign-count equality and
-Hall control remain necessary.
-
-Evidence: rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/conductor_round163_adjudication.md
-
-## Round163-unrestricted-exchange-graph-always-has-perfect-matching
-
-The complete bipartite character-sign graph has a perfect matching only
-when the two sign classes have equal cardinality.
-
-Evidence: rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/conductor_round163_adjudication.md
-
-## Round163-matching-cycles-or-averages-cancel-profiles
-
-Cycles and transports rewrite literal profile gradients and retain
-unmatched or same-sign fibres; they do not create cancellation for free.
-
-Evidence: rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/conductor_round163_adjudication.md
-
-## Round163-odd-complement-preserves-upper-window
-
-Odd complementation maps the upper divisor interval to the excluded lower
-interval \([\sqrt N/2,\sqrt N]\).
-
-Evidence: rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/conductor_round163_adjudication.md
-
-## Round163-even-N-complement-is-upper-character-symmetry
-
-For \(N=2M\), the physical complement is even and the odd-part complement
-lies in \([\sqrt N/4,\sqrt N/2]\).
-
-Evidence: rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/conductor_round163_adjudication.md
-
-## Round163-full-divisor-vanishing-controls-truncation
-
-Full-divisor character vanishing identifies the physical truncation with
-an uncontrolled profiled complement.
-
-Evidence: rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/conductor_round163_adjudication.md
-
-## Round163-representable-sector-log-sparsity-is-polynomial-saving
-
-Logarithmic sparsity is \(L^{2-o(1)}\) at this scale and does not supply
-the missing \(L^{1/2-o(1)}\).
-
-Evidence: rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/conductor_round163_adjudication.md
-
-## Round163-diagnostic-semiprime-or-multiprime-count-is-physical-mass
-
-Raw fixed-profile counts can falsify combinatorial claims but do not
-lower-bound the literal weighted oscillatory scalar.
-
-Evidence: rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/conductor_round163_adjudication.md
-
-## Round163-strict-sector-closes-remaining-few-point-or-hard-TOP
-
-The residual \(t=1\) incidences and the
-\(L\ll D\ll L^2,\ t\ll\sqrt L\) channels remain open.
-
-Evidence: rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/conductor_round163_adjudication.md
-
-## Round163-hard-top-sector-transfers-to-smooth-M2
-
-BAL and UNBAL have different coefficients and owners and receive no
-estimate from the hard-TOP incidence sector.
-
-Evidence: rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/conductor_round163_adjudication.md
-
-## Round163-strict-sector-proves-M9-or-quarter-target
-
-Both hard-TOP parents, BAL, UNBAL, M9--M2, M9--M1, endpoint uniformity,
-M9, and the bridge remain incomplete.
-
-Evidence: rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/conductor_round163_adjudication.md
-
-## Round163-strict-sector-improves-a-global-exponent
-
-No parent theorem or bridge closes, so the internal one-third result and
-the audited external benchmark are unchanged.
-
-Evidence: rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/conductor_round163_adjudication.md
-
-## Round 163 frozen route barriers
-
-- A single odd $p\equiv3\pmod4$ toggle reverses $\chi_4$ but cannot keep
-  either paired divisor inside the multiplicative-width-two physical
-  window. It must be treated as total window leakage, not cancellation.
-- Complementation maps the physical upper window to the excluded lower
-  window. For even products the complementary divisor is even.
-- Full-divisor vanishing does not estimate the truncated coefficient.
-- Two-prime exchanges remain genuinely open and must be checked for sign,
-  window preservation, global matching, cycles, multiplicity, profiles,
-  and unmatched mass before any route conclusion.
-- A diagnostic constant-weight coefficient can reject an inference but
-  cannot prove a lower bound for the physical Vaaler profile.
-
-Evidence:
-- `strategy/round163_m2_hard_top_t1_near_square_divisor_involution_strategy.md`
-- `rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/barrier_packet.md`
-
 ## Round162-positive-product-collar-is-physical-mass-or-lower-bound
 
 The sqrt(JL) quantity is a termwise positive smooth-interior route capacity. The physical Mobius and chi_4 signs may cancel, and no coefficient density or lower mass is proved.
@@ -8080,3 +7950,3776 @@ No hard-TOP parent, M9-M2, M9, or unconditional bridge is closed, so neither the
 
 Evidence:
 - `rounds/codex-managed/m9-m2-hard-top-t1-close-factor-bilinear-gate/reviews/conductor_round162_adjudication.md`
+
+## Round163-close-prime-selector-is-nonempty-or-dense
+
+The theorem selects at most one pair per product and proves no per-block nonemptiness, asymptotic density, positive proportion, or polynomial coverage.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/conductor_round163_adjudication.md`
+
+## Round163-close-prime-sector-proves-full-t1
+
+No-pair products and every neither/both incidence remain in the unestimated residual scalar.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/conductor_round163_adjudication.md`
+
+## Round163-single-p3-toggle-has-two-physical-legs
+
+The physical interval has multiplicative width two while p>=3, so every one-prime sign-reversing partner lies outside.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/conductor_round163_adjudication.md`
+
+## Round163-averaged-p3-toggles-gain-prime-multiplicity
+
+Every active divisor reappears with its original sign once for each p congruent 3 modulo 4; normalized averaging is exact self-return.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/conductor_round163_adjudication.md`
+
+## Round163-partner-existence-gives-canonical-global-matching
+
+A noninjective partner rule is not a reindexing; restricted exchange graphs still require sign-count equality and Hall's condition.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/conductor_round163_adjudication.md`
+
+## Round163-unrestricted-exchange-graph-always-has-perfect-matching
+
+The complete bipartite sign graph has a perfect matching only when its two sign classes have equal size.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/conductor_round163_adjudication.md`
+
+## Round163-matching-cycles-or-averages-cancel-profiles
+
+Even cycles and weighted transports only rewrite literal profile gradients and retain unmatched or same-sign fibres.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/conductor_round163_adjudication.md`
+
+## Round163-odd-complement-preserves-upper-window
+
+Odd complementation sends the upper interval to the excluded lower interval [sqrt(N)/2,sqrt(N)].
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/conductor_round163_adjudication.md`
+
+## Round163-even-N-complement-is-upper-character-symmetry
+
+For N=2M the physical complement N/d is even, while the odd-part complement M/d lies in [sqrt(N)/4,sqrt(N)/2].
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/conductor_round163_adjudication.md`
+
+## Round163-full-divisor-vanishing-controls-truncation
+
+Full-divisor vanishing identifies the truncated coefficient with an uncontrolled profiled complement; it does not make the truncation small.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/conductor_round163_adjudication.md`
+
+## Round163-representable-sector-log-sparsity-is-polynomial-saving
+
+Logarithmic sparsity is L^(2-o(1)) at this scale and does not supply the missing L^(1/2-o(1)) gain.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/conductor_round163_adjudication.md`
+
+## Round163-diagnostic-semiprime-or-multiprime-count-is-physical-mass
+
+Constant-profile and fixed-modulus prime-counting controls falsify combinatorial inferences but provide no lower bound for the literal weighted oscillatory scalar.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/conductor_round163_adjudication.md`
+
+## Round163-strict-sector-closes-remaining-few-point-or-hard-TOP
+
+The residual t=1 incidences and the compatible L<<D<<L^2, t<<sqrt(L) channels remain open.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/conductor_round163_adjudication.md`
+
+## Round163-hard-top-sector-transfers-to-smooth-M2
+
+Balanced and unbalanced smooth packets have different owners, coefficients, and interfaces and receive no estimate from this hard-TOP incidence sector.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/conductor_round163_adjudication.md`
+
+## Round163-strict-sector-proves-M9-or-quarter-target
+
+Both hard-TOP parents, both smooth M2 parents, M9-M2, M9-M1, endpoint uniformity, M9, and the unconditional bridge remain incomplete.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/conductor_round163_adjudication.md`
+
+## Round163-strict-sector-improves-a-global-exponent
+
+No parent theorem or bridge closes, so the internal one-third theorem and the external Li-Yang benchmark remain numerically unchanged.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/conductor_round163_adjudication.md`
+
+## Round164-residual-indicator-double-subtracts-both-prime-incidences
+
+The Boolean residual takes values (1,0,0,1) on selected-prime bits (00,10,01,11), exactly complementary to XOR.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reviews/conductor_round164_adjudication.md`
+
+## Round164-selected-residual-inherits-close-prime-displacement
+
+The close p-versus-q exchange lies wholly in the removed XOR sector; the residual sign-reversing pair is a versus pqa and has ratio pq>=15.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reviews/conductor_round164_adjudication.md`
+
+## Round164-selected-ambient-balance-controls-physical-balance
+
+Zero-amplitude divisors may carry the balancing signs; the four-prime control has ambient balance but one unmatched physical unit.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reviews/conductor_round164_adjudication.md`
+
+## Round164-no-pair-residual-is-always-character-balanced
+
+If every odd prime factor is 1 modulo 4, every divisor sign is positive and the total sign mass is 2^omega(M_N).
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reviews/conductor_round164_adjudication.md`
+
+## Round164-cemetery-normalization-removes-unmatched-coefficient-cost
+
+A cemetery only equalizes formal masses; the exact zero-extended Abel/BV pairing retains all amplitude variation and hard jumps crossed.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reviews/conductor_round164_adjudication.md`
+
+## Round164-finitely-many-hard-faces-have-O1-aggregate-cost
+
+A fixed number of faces can be crossed by L^(2-o(1)) incidences; face count alone does not bound aggregate flux.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reviews/conductor_round164_adjudication.md`
+
+## Round164-Abel-or-BV-identity-proves-the-residual-target
+
+The exact dual estimate still needs an L^(3/2+o(1)) aggregate cumulative-discrepancy bound; the available scale is L^(2+o(1)).
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reviews/conductor_round164_adjudication.md`
+
+## Round164-unweighted-oscillation-is-necessary-for-literal-profile
+
+The literal BV/triangle target is the weighted sum sum_N osc(C_N)V_N; the unweighted sum is only the coefficient-uniform envelope under V_N<<1.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reviews/conductor_round164_adjudication.md`
+
+## Round164-coefficient-uniform-positive-transport-proves-the-target
+
+Selector-robust four-prime unit-profile controls have L^2/(log L)^4 capacity under exactly the frozen positive transport information.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reviews/conductor_round164_adjudication.md`
+
+## Round164-four-prime-capacity-is-literal-residual-lower-mass
+
+No accepted hypothesis supplies a nonzero profile plateau on the prime boxes, and the cross-N square-root phase may cancel.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reviews/conductor_round164_adjudication.md`
+
+## Round164-coarse-L2-coefficient-energy-implies-Fejer-energy
+
+Phase-aligned arrays have coefficient energy L^2 but length-L Fejer energy L^3; the actual residual direction must be used.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reviews/conductor_round164_adjudication.md`
+
+## Round164-exact-radical-collision-sparsity-implies-short-shift-energy
+
+Exact same-phase radical relations do not control the near-product shifts d'm'-dm=r for 1<=r<L.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reviews/conductor_round164_adjudication.md`
+
+## Round164-positive-rank-one-collar-proves-the-signed-offdiagonal
+
+Termwise positive collar control destroys the aggregate real part and restores the adverse sqrt(JL) capacity.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reviews/conductor_round164_adjudication.md`
+
+## Round164-additive-shift-modulus-is-the-rank-one-product-collar
+
+Taking moduli in the Fejer off-diagonal leaves the additive relation d'm'-dm=r, whereas the accepted character-Poisson collar has the distinct multiplicative geometry |s ell-XQR|<<QRJ/L; only their adverse positive-power warning is comparable.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reviews/conductor_round164_adjudication.md`
+
+## Round164-shiftwise-absolute-values-are-needed-for-the-Fejer-reduction
+
+The exact energy requires only one one-sided upper bound for the aggregate weighted real part; shiftwise absolute values are a stronger lossy route.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reviews/conductor_round164_adjudication.md`
+
+## Round164-R-smaller-than-L-closes-the-diagonal-ledger
+
+With M_L asymp L^2 and coefficient energy L^2, the diagonal contribution is L^4/R and first reaches the target square at R asymp L.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reviews/conductor_round164_adjudication.md`
+
+## Round164-sliding-Fejer-has-an-uncontrolled-endpoint-error
+
+Zero extension gives exactly M_L+R-1 possible windows and the endpoint-safe factor (M_L+R-1)/R.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reviews/conductor_round164_adjudication.md`
+
+## Round164-transport-no-go-disproves-the-literal-residual-target
+
+The no-go is coefficient-uniform and positive-route scoped; the actual signed cross-N off-diagonal remains viable and open.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reviews/conductor_round164_adjudication.md`
+
+## Round164-Fejer-reduction-proves-full-t1-or-hard-TOP
+
+The off-diagonal theorem is open, and even a residual target would leave the other few-point channels and near collars.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reviews/conductor_round164_adjudication.md`
+
+## Round164-hard-top-reduction-transfers-to-smooth-M2-packets
+
+The balanced and unbalanced smooth packets have different owners and receive no estimate from this hard-TOP reduction.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reviews/conductor_round164_adjudication.md`
+
+## Round164-reduction-proves-M9-or-the-quarter-target
+
+M9-M1, all three M9-M2 parents, endpoint uniformity, M9, and an unconditional bridge remain incomplete.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reviews/conductor_round164_adjudication.md`
+
+## Round164-literature-scan-changes-the-global-exponent
+
+The scoped current-source scan found no applicable later pointwise theorem; literature comparison is not a proof-state promotion.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reviews/conductor_round164_adjudication.md`
+
+## Round164-reduction-improves-a-global-exponent
+
+No parent theorem or bridge closes, so the internal one-third theorem and the audited external Li-Yang benchmark remain unchanged.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reviews/conductor_round164_adjudication.md`
+
+## Round165-parity-connector-proves-residual-target
+
+The connector only dominates the full energy by the even-gap energy; it does not estimate the latter.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/state_patch_scope_round165.md`
+
+## Round165-monotone-sector-cost-is-L2-per-shift
+
+The O(L^2) count is over the complete union of shifts, so another factor R would double count.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/state_patch_scope_round165.md`
+
+## Round165-strict-sectors-prove-complete-residual-or-full-t1
+
+The even opposing low-gcd aggregate and the later full-t1 assembly remain open.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/state_patch_scope_round165.md`
+
+## Round165-high-gcd-bound-proves-all-gcd-scales
+
+L^3/G_0 is target-sized only for G_0 asymp L; the low-gcd complement remains.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/state_patch_scope_round165.md`
+
+## Round165-high-gcd-is-a-unique-product-row-partition
+
+The split owns opened divisor incidences, not unique product rows.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/state_patch_scope_round165.md`
+
+## Round165-cofactor-character-alternates-on-even-shifts
+
+The character is frozen on every even-shift cofactor row, including the squarefree even-even branch.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/state_patch_scope_round165.md`
+
+## Round165-large-real-derivative-gives-modulo-one-separation
+
+A large real derivative does not bound its distance from integers or half-integers.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/state_patch_scope_round165.md`
+
+## Round165-positive-row-Poisson-saves-the-target
+
+Absolute stationary dual modes are no better than the trivial row bound in the inherited range.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/state_patch_scope_round165.md`
+
+## Round165-positive-row-Poisson-no-go-rules-out-all-dual-methods
+
+The obstruction covers only smooth row completion followed by absolute dual modes; coupled, signed, higher-order, and joint transforms remain open.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/state_patch_scope_round165.md`
+
+## Round165-odd-shift-alternation-proves-the-even-frontier
+
+Parity removes the need to estimate odd shifts and leaves the frozen-character even frontier.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/state_patch_scope_round165.md`
+
+## Round165-even-gap-energy-is-the-XOR-sector-energy
+
+It is the complete residual subsequence energy, not the accepted XOR scalar.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/state_patch_scope_round165.md`
+
+## Round165-XOR-scalar-bound-transfers-to-Fejer-energy
+
+Scalar smallness does not control sliding energy; a separate energy connector would be required.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/state_patch_scope_round165.md`
+
+## Round165-variable-scale-identity-proves-the-medium-long-theorem
+
+The identity proves only that (165.K26) is sufficient; the estimate remains open.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/state_patch_scope_round165.md`
+
+## Round165-short-shift-failure-terminates-the-Fejer-route
+
+At maximal scale the shortest shifts are paid and cancellation is moved to even medium/long shifts.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/state_patch_scope_round165.md`
+
+## Round165-all-R-identity-makes-sub-L-windows-diagonal-safe
+
+The identity is valid for every R, but the diagonal reaches the target-square budget first at R asymp L.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/state_patch_scope_round165.md`
+
+## Round165-additive-gcd-fibres-equal-the-multiplicative-product-collar
+
+The physical relation d'm'-dm=r and the transformed character-Poisson product collar are different geometries.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/state_patch_scope_round165.md`
+
+## Round165-hostile-arrays-disprove-the-literal-residual-target
+
+Hostile arrays are coefficient-uniform diagnostics and prove no literal physical lower bound.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/state_patch_scope_round165.md`
+
+## Round165-K17a-or-K26-is-proved
+
+Both displayed aggregate estimates are open sufficient theorems.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/state_patch_scope_round165.md`
+
+## Round165-strict-sector-proves-hard-TOP-or-M9-M2
+
+The complete residual, other few-point channels, BAL, and UNBAL remain open.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/state_patch_scope_round165.md`
+
+## Round165-reduction-proves-M9-or-quarter-target
+
+M9-M1, all three M9-M2 parents, endpoint uniformity, M9, and the unconditional bridge remain incomplete.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/state_patch_scope_round165.md`
+
+## Round165-reduction-improves-a-global-exponent
+
+No parent theorem or bridge closes, so the internal one-third theorem and external Li-Yang benchmark are unchanged.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/state_patch_scope_round165.md`
+
+## Round166-frontier-ranking-proves-K17a
+
+Selecting an inequality for research is not evidence that the inequality is true.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round164-166-strategy-literature-review/reviews/conductor_round166_adjudication.md`
+
+## Round166-Grimmelt-Merikoski-directly-proves-K17a
+
+Only the determinant skeleton and preliminary two-adic/gcd/character map pass; no admissible selector-dependent coefficient or smooth-weight realization is proved.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round164-166-strategy-literature-review/reviews/conductor_round166_adjudication.md`
+
+## Round166-determinant-map-implies-source-applicability
+
+An exact determinant identity does not verify automorphy, smoothness, orbit-correlation, main-term, boundary, or completion hypotheses.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round164-166-strategy-literature-review/reviews/conductor_round166_adjudication.md`
+
+## Round166-GM-phase-cost-is-uniformly-J-on-all-short-shifts
+
+The exact demand is delta^(-1) at least 1+Jr/L; it reaches order J only on the top short-shift stratum r asymp L.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round164-166-strategy-literature-review/reviews/conductor_round166_adjudication.md`
+
+## Round166-GM-hidden-delta-loss-is-target-safe
+
+The source has an unspecified polynomial delta loss, so target-safety is unproved until its exponent and every partition, norm, and completion factor are restored.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round164-166-strategy-literature-review/reviews/conductor_round166_adjudication.md`
+
+## Round166-fixed-r-source-bounds-preserve-the-Fejer-real-part
+
+A fixed-r specialization followed by triangle inequality replaces one signed aggregate by a sum of absolute errors and can lose the required factor L.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round164-166-strategy-literature-review/reviews/conductor_round166_adjudication.md`
+
+## Round166-GM-Part-I-solves-the-oscillatory-selector
+
+Part I is non-oscillatory; its general theorem leaves two positive selector/phase autocorrelations and its determinant corollary reimposes invariance and smoothness.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round164-166-strategy-literature-review/reviews/conductor_round166_adjudication.md`
+
+## Round166-phase-aligned-site-array-is-a-literal-K17a-counterexample
+
+A product-site array has no canonical opposing-displacement or low-gcd incidence filter; it is a control only after those filters have been erased unless an explicit incidence lift is constructed.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round164-166-strategy-literature-review/reviews/conductor_round166_adjudication.md`
+
+## Round166-fixed-shift-Cauchy-bounds-the-filtered-K17a-sector
+
+The signed post-opening sector is not obtained by a monotone deletion from the unpartitioned coefficient correlation; its L^3 capacity comes from the direct opened-incidence ledger.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round164-166-strategy-literature-review/reviews/conductor_round166_adjudication.md`
+
+## Round166-K17a-closes-hard-TOP
+
+K17a would close only the complete residual scalar; other small-t channels and near collars remain before hard TOP.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round164-166-strategy-literature-review/reviews/conductor_round166_adjudication.md`
+
+## Round166-hard-TOP-progress-transfers-to-BAL-or-UNBAL
+
+Hard TOP, BAL, and UNBAL are independent M2 parents with different literal kernels.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round164-166-strategy-literature-review/reviews/conductor_round166_adjudication.md`
+
+## Round166-GAR-proves-blockwise-M9-M1
+
+GAR controls total active M1 only through the alternative bridge and does not prove either direct blockwise M1 parent.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round164-166-strategy-literature-review/reviews/conductor_round166_adjudication.md`
+
+## Round166-endpoint-uniformity-is-an-independent-cancellation-theorem
+
+Endpoint uniformity is an assembly seam whose blockers are the analytic parents; it cannot supply their missing savings.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round164-166-strategy-literature-review/reviews/conductor_round166_adjudication.md`
+
+## Round166-average-or-spectral-mean-square-theorems-prove-a-fixed-X-signed-correlation
+
+Real-centre averages, spectral square averages, and spatial Lp estimates do not directly imply the fixed-centre unsquared signed Fejer aggregate.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round164-166-strategy-literature-review/reviews/conductor_round166_adjudication.md`
+
+## Round166-current-literature-improves-the-certified-global-exponent
+
+The dated primary-source search found no later indexed claimed pointwise improvement applicable to the classical unrestricted discrepancy.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round164-166-strategy-literature-review/reviews/conductor_round166_adjudication.md`
+
+## Round166-strategy-review-proves-the-quarter-target
+
+All M2 parents, a complete M1 route, endpoint assembly, M9 or the alternative bridge, and the quarter theorem remain incomplete.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round164-166-strategy-literature-review/reviews/conductor_round166_adjudication.md`
+
+## Round167-determinant-dictionary-proves-K17a
+
+The exact multiplicity-one matrix map supplies no cancellation; the endpoint form still has L^3X^epsilon positive capacity against an L^2X^epsilon target.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-oscillatory-determinant-interface-gate/reviews/conductor_round167_adjudication.md`
+
+## Round167-finite-endpoint-kernel-is-a-Grimmelt-Merikoski-kernel
+
+The hand-defined directed endpoint matrix is exact but no source-group embedding or relative automorphic-kernel identity without extra pairs is proved.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-oscillatory-determinant-interface-gate/reviews/conductor_round167_adjudication.md`
+
+## Round167-Schur-capacity-improves-the-target
+
+Schur gives only an upper bound one factor L above K17a and is not a matching lower bound or a signed saving.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-oscillatory-determinant-interface-gate/reviews/conductor_round167_adjudication.md`
+
+## Round167-polylog-shift-sector-proves-K17a-on-power-scales
+
+For genuine power-scale L, fixed-B polylogarithmic shifts form only an X^o(1) initial sector and leave the non-polylogarithmic range open.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-oscillatory-determinant-interface-gate/reviews/conductor_round167_adjudication.md`
+
+## Round167-principal-source-character-forces-a-nonzero-main-term
+
+For the bare chi_4(a)chi_4(b) coefficient, the finite principal orbit coefficient vanishes exactly for every 2-power k.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-oscillatory-determinant-interface-gate/reviews/conductor_round167_adjudication.md`
+
+## Round167-bare-orbit-cancellation-persists-after-selector-insertion
+
+A selector-dependent automorphic coefficient changes the finite orbit weights and requires a new main-term calculation.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-oscillatory-determinant-interface-gate/reviews/conductor_round167_adjudication.md`
+
+## Round167-low-gcd-indicator-is-nonautomorphic-for-every-gamma
+
+The explicit global witness applies only for 0<gamma<1/2; for gamma>=1/2 the low-gcd cutoff is automatic on K17a.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-oscillatory-determinant-interface-gate/reviews/conductor_round167_adjudication.md`
+
+## Round167-low-gcd-witness-is-a-literal-project-incidence-pair
+
+The witness disproves a global coefficient law but is not proved to satisfy both literal selector and support systems.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-oscillatory-determinant-interface-gate/reviews/conductor_round167_adjudication.md`
+
+## Round167-common-phase-rank-one-failure-rules-out-all-interpolation
+
+The argument proves continuous rank-one nonseparability only; a target-safe discrete interpolation or controlled-rank expansion is unproved, not impossible.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-oscillatory-determinant-interface-gate/reviews/conductor_round167_adjudication.md`
+
+## Round167-phase-seminorm-loss-rules-out-all-oscillatory-methods
+
+The obstruction covers absorption into a smooth amplitude with an uncompensated fixed positive seminorm loss; new native oscillatory decay remains possible.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-oscillatory-determinant-interface-gate/reviews/conductor_round167_adjudication.md`
+
+## Round167-source-R0-ledger-proves-the-target
+
+The R0 contribution is target-sized only in an optimistic dense-block model before delta and orbit losses, while the displayed R2 route retains L^theta_4.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-oscillatory-determinant-interface-gate/reviews/conductor_round167_adjudication.md`
+
+## Round167-source-application-requires-negative-power-K-plus
+
+The source exposes neither the final delta exponent nor a negative-J orbit mechanism; delta, K_+, and R2 are separate unproved inputs.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-oscillatory-determinant-interface-gate/reviews/conductor_round167_adjudication.md`
+
+## Round167-Part-I-forbids-complex-oscillatory-functions
+
+Part I formally permits complex C^10_delta functions but charges their derivative scale through delta^(-O(1)).
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-oscillatory-determinant-interface-gate/reviews/conductor_round167_adjudication.md`
+
+## Round167-Part-I-raw-kernel-equals-the-discrepancy-kernel
+
+An exact raw kernel identity is missing, and the principal component must be separated before the two discrepancy autocorrelations are estimated.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-oscillatory-determinant-interface-gate/reviews/conductor_round167_adjudication.md`
+
+## Round167-fixed-shift-source-errors-preserve-the-outer-real-part
+
+Summing separate fixed-shift theorem errors inserts absolute values inside the shift aggregate and may lose the required factor L.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-oscillatory-determinant-interface-gate/reviews/conductor_round167_adjudication.md`
+
+## Round167-source-interface-no-go-rules-out-all-determinant-methods
+
+The no-go is confined to the audited direct 2024 placement, its fixed-shift triangle variant, and the presently available Part-I placement.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-oscillatory-determinant-interface-gate/reviews/conductor_round167_adjudication.md`
+
+## Round167-strict-sector-closes-the-residual-or-a-parent
+
+The non-polylogarithmic K17a range, the complete residual, other t=1 channels, hard TOP, BAL, and UNBAL remain open.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-oscillatory-determinant-interface-gate/reviews/conductor_round167_adjudication.md`
+
+## Round167-determinant-progress-improves-a-global-exponent
+
+No analytic parent or bridge closes, so both the internal one-third theorem and external Li--Yang benchmark are unchanged.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-oscillatory-determinant-interface-gate/reviews/conductor_round167_adjudication.md`
+
+## Round168-fixed-polylog-L-sector-proves-the-general-t1-scalar-or-residual
+
+Fixed B gives only L<=(log X)^B=X^o(1), and the residual corollary also fixes kappa; the polynomial-L scalar and general residual remain open.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-pre-mobius-mellin-euler-product-gate/reviews/conductor_round168_adjudication.md`
+
+## Round168-smooth-BV-capacity-is-an-estimate-for-the-exact-cardinal-integral
+
+The stationary scale belongs only to a favorable recombined smooth/BV capacity model; the exact cardinal identity has O(L^2) unit cells and different bandwidths.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-pre-mobius-mellin-euler-product-gate/reviews/conductor_round168_adjudication.md`
+
+## Round168-pointwise-or-positive-moment-control-proves-the-signed-two-height-target
+
+Even the granted unweighted Lindelof placement or stated fixed-angular mean square plus Cauchy has L^(2eta)sqrt(J)L^(3/2)X^delta capacity and misses the target by sqrt(J).
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-pre-mobius-mellin-euler-product-gate/reviews/conductor_round168_adjudication.md`
+
+## Round168-factorwise-FE-or-AFE-exactly-returns-to-the-Round162-collar
+
+No G-coefficient, two-adic, gamma, main-term, truncation, error, or literal-profile bridge is proved; only deliberate reopening of the accepted projector invokes the prior collar.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-pre-mobius-mellin-euler-product-gate/reviews/conductor_round168_adjudication.md`
+
+## Round168-cardinal-zeta-residue-is-the-Stieltjes-residue
+
+The cardinal residue is a continuous oscillatory integral and is O(L^2/J), whereas the exact mixed-difference residue telescopes to a discrete weighted sum and is not automatically small.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-pre-mobius-mellin-euler-product-gate/reviews/conductor_round168_adjudication.md`
+
+## Round168-Mellin-Euler-no-go-rules-out-all-weighted-hybrid-or-functional-equation-methods
+
+The no-go is confined to the two named absolute placements and the dated audited source interfaces; a bespoke signed weighted theorem remains possible.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-pre-mobius-mellin-euler-product-gate/reviews/conductor_round168_adjudication.md`
+
+## Round168-strict-sector-closes-a-parent-or-improves-an-exponent
+
+The non-polylogarithmic t=1 scalar, residual, other hard-TOP channels, BAL, UNBAL, both direct M1 parents, GAR, endpoint assembly, M9-M2, M9, both bridges, and the quarter theorem remain open, so neither exponent ledger changes.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-pre-mobius-mellin-euler-product-gate/reviews/conductor_round168_adjudication.md`
+
+## Round169-finite-physical-zero-mode-equals-full-Mellin-residue
+
+The finite physical Poisson family truncates R at the positive support, whereas the s_2=1 Mellin residue retains the full absolutely convergent R coefficient sum. Their difference E_0 is nonzero in general but is O(L^2/J).
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-joint-functional-equation-spectral-gate/reviews/conductor_round169_adjudication.md`
+
+## Round169-infinite-G-series-may-be-absolutely-resummed-after-left-contour-shift
+
+On the left lines Q^delta R^delta grows and the shifted-line l1 bound no longer applies. The lawful summed transform first forms the finite physical coefficient convolution and then applies exact Poisson.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-joint-functional-equation-spectral-gate/reviews/conductor_round169_adjudication.md`
+
+## Round169-joint-functional-equations-prove-the-signed-two-height-target
+
+The exact transform exposes but does not estimate the signed nonzero-frequency aggregate; the rank-one radial phase is constant at kl=XQR.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-joint-functional-equation-spectral-gate/reviews/conductor_round169_adjudication.md`
+
+## Round169-positive-smooth-product-collar-proves-the-literal-cardinal-scalar
+
+The favorable smooth-interior capacity is sqrt(JL)X^epsilon with H/L deficit, and the exact O(L^2)-cell cardinal array has no proved length-L radial recombination.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-joint-functional-equation-spectral-gate/reviews/conductor_round169_adjudication.md`
+
+## Round169-audited-shifted-convolution-Kuznetsov-or-reciprocity-theorem-directly-accepts-the-moving-collar
+
+The audited theorems require integral additive shifts or Kloosterman data, fixed levels/cusps or controlled moving levels, smooth weights, complete spectra, and positive norms; no exact target-safe map preserves the signed g(Q,R)/(QR) aggregate.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-joint-functional-equation-spectral-gate/reviews/conductor_round169_adjudication.md`
+
+## Round169-self-return-rules-out-every-future-signed-spectral-theorem
+
+The result is a no-go only for bare dualization, named positive placements, and the dated audited source set. A bespoke signed joint-aggregate theorem remains possible.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-joint-functional-equation-spectral-gate/reviews/conductor_round169_adjudication.md`
+
+## Round169-self-return-closes-a-parent-bridge-theorem-or-exponent
+
+The signed aggregate, full polynomial t=1 scalar and residual, other hard-TOP channels, BAL, UNBAL, both M1 routes, endpoint uniformity, M9, both bridges, the quarter theorem, and both exponent ledgers remain open or unchanged.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-joint-functional-equation-spectral-gate/reviews/conductor_round169_adjudication.md`
+
+## Round170-strategy-selection-proves-BAL-j1
+
+Selecting the critical BAL child for research is not evidence that its oscillatory remainder estimate is true.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round167-169-strategy-literature-review/reviews/conductor_round170_adjudication.md`
+
+## Round170-BAL-j1-directly-proves-full-BAL
+
+The critical child excludes noncritical j=1 labels and the isolated exact-square j=2 boundary; a separate all-label connector is required.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round167-169-strategy-literature-review/reviews/conductor_round170_adjudication.md`
+
+## Round170-existing-BAL-edge-supplies-missing-quantifiers
+
+An implication edge cannot silently enlarge a persistent critical j=1 statement to the universally quantified BAL parent.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round167-169-strategy-literature-review/reviews/conductor_round170_adjudication.md`
+
+## Round170-two-defect-factorizations-are-a-commutator-identity
+
+The Delta plus/minus rho factorizations are coordinates only; no exact discrete commutator identity or target-safe complement is proved.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round167-169-strategy-literature-review/reviews/conductor_round170_adjudication.md`
+
+## Round170-phase-free-subtraction-removes-fixed-Q-rulings
+
+Only the assembled phase-free term is subtracted; the Round-136 fixed-Q rulings remain in the oscillatory remainder.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round167-169-strategy-literature-review/reviews/conductor_round170_adjudication.md`
+
+## Round170-fixed-p-chi4-gauge-gives-inner-h-cancellation
+
+The character product is constant on a fixed-p fibre, so any saving must arise only after a larger exact recombination.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round167-169-strategy-literature-review/reviews/conductor_round170_adjudication.md`
+
+## Round170-dividing-by-p-or-q-deletes-axial-sectors
+
+The p=0 and q=0 sectors can satisfy both far gates and require an explicit target-safe ledger.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round167-169-strategy-literature-review/reviews/conductor_round170_adjudication.md`
+
+## Round170-blind-packet-proves-K26-has-no-power-deficit
+
+The authoritative K26 capacity is L^4X^epsilon against target L^3X^epsilon; the blind packet omitted this accepted ledger.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round167-169-strategy-literature-review/reviews/conductor_round170_adjudication.md`
+
+## Round170-K26-closes-full-t1-or-hard-TOP
+
+K26 is sufficient only for the residual scalar; the rest of t=1 and other hard-TOP channels remain.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round167-169-strategy-literature-review/reviews/conductor_round170_adjudication.md`
+
+## Round170-Round169-self-return-proves-the-signed-aggregate
+
+Round 169 proves an exact transform and residue correction but no signed nonzero-frequency estimate.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round167-169-strategy-literature-review/reviews/conductor_round170_adjudication.md`
+
+## Round170-Blomer-Pascadi-proves-the-moving-product-collar
+
+No exact fixed-modulus Kloosterman transform exists for the literal moving product collar and its outer signed cardinal array.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round167-169-strategy-literature-review/reviews/conductor_round170_adjudication.md`
+
+## Round170-Blomer-Pascadi-delta-specialization-saves-UNBAL
+
+The best direct full-row fixed-modulus delta specialization is at n^(1+o(1)) times the coefficient norm and supplies no boundary power saving or varying-modulus vector theorem.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round167-169-strategy-literature-review/reviews/conductor_round170_adjudication.md`
+
+## Round170-exceptional-Maass-large-sieve-is-full-Kuznetsov
+
+The cited large sieves are positive exceptional-spectrum statements and do not dispose of regular Maass, holomorphic, Eisenstein, diagonal, main, or endpoint terms.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round167-169-strategy-literature-review/reviews/conductor_round170_adjudication.md`
+
+## Round170-Gao-smooth-number-theorem-improves-the-classical-exponent
+
+Gao's theorem restricts to friable integers and is not an unrestricted Gauss-circle discrepancy theorem.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round167-169-strategy-literature-review/reviews/conductor_round170_adjudication.md`
+
+## Round170-current-search-is-a-universal-literature-nonexistence-theorem
+
+The conclusion is dated and scoped to indexed primary sources; it does not cover unindexed or future work.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round167-169-strategy-literature-review/reviews/conductor_round170_adjudication.md`
+
+## Round170-equal-local-deficits-merge-across-owners
+
+Equal numerical missing powers in BAL, K26, TOP, UNBAL, or M1 do not create an implication or a global exponent connector.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round167-169-strategy-literature-review/reviews/conductor_round170_adjudication.md`
+
+## Round170-BAL-j1-improves-the-global-exponent
+
+Even a future proof of the scoped child would leave the remaining BAL labels and every other required parent; no exponent theorem follows.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round167-169-strategy-literature-review/reviews/conductor_round170_adjudication.md`
+
+## Round170-strategy-review-proves-the-quarter-target
+
+Both complete proof routes retain multiple open analytic parents, assembly seams, and bridges.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round167-169-strategy-literature-review/reviews/conductor_round170_adjudication.md`
+
+## Round171-defect-factorizations-themselves-save-L
+
+Delta plus/minus rho give exact coordinates only; the displayed normalized multiplier commutators reduce to shifts.
+
+## Round171-all-coordinate-generated-commutators-vanish
+
+The two displayed unnormalized commutators are nonzero, and undisplayed composite or weighted Weyl commutators are outside the proved scope.
+
+## Round171-ordinary-unnormalized-commutator-saves-L
+
+After the target-safe fixed-width 2y=x strip is paid, division cancels the multiplier and returns only an alternating shift tautology.
+
+## Round171-parity-diagonal-commutator-saves-L
+
+After the target-safe fixed-width y=x strip is paid, division by y-x cancels the commutator multiplier and returns the original alternating diagonal difference.
+
+## Round171-affine-singular-strips-have-L4-mass
+
+Each fixed-width affine strip imposes one linear endpoint relation and has absolute mass O_epsilon(L^3X^epsilon).
+
+## Round171-full-scalar-equals-double-antisymmetric-swap-piece
+
+The exact bilinear identity retains a nonzero (++) complement.
+
+## Round171-three-swap-parity-complements-remain
+
+Reality forces the mixed (+-) and (-+) coefficient projections to vanish; only the (++) complement survives beside the double-antisymmetric term.
+
+## Round171-support-crossing-is-a-separate-unavoidable-L4-term
+
+On the invariant endpoint rectangle, global coefficient zero extension absorbs cross-corner support failures into the exact projection identity.
+
+## Round171-bounded-coefficient-independent-q-primitive
+
+Coefficient comparison forces total variation N and supremum at least N/2 on an N-point interval.
+
+## Round171-full-coefficient-support-is-a-geometric-interval
+
+Arithmetic low-gcd holes are not geometric support faces; both gcd weights must remain in the coefficient.
+
+## Round171-large-real-phase-increments-are-small-mod-one
+
+Large real derivatives or mixed increments give no uniform smallness of the exponential differences modulo one.
+
+## Round171-gcd-unit-differences-save-L-pointwise
+
+The arithmetic gcd cutoff has no uniform pointwise L^(-1) discrete variation.
+
+## Round171-phase-free-subtraction-deletes-fixed-Q-rulings
+
+Only the fully assembled phase-free scalar is paid; fixed-Q oscillatory ruling families survive both far gates.
+
+## Round171-dividing-by-p-q-or-affine-multiplier-deletes-axes
+
+The p=0 and q=0 axes can be double-far and are retained and paid separately; every affine singular strip is likewise retained.
+
+## Round171-adversarial-capacity-is-a-physical-lower-bound
+
+The L4 and L5 ledgers are coefficient-independent positive or adversarial capacities, not lower bounds for the literal actual-symbol scalar.
+
+## Round171-commutator-no-go-disproves-critical-remainder
+
+The obstruction is restricted to displayed local coefficient-independent placements; a signed weighted or nonlocal actual-symbol theorem remains possible.
+
+## Round171-critical-j1-result-closes-full-BAL
+
+The critical child remains open and, independently, the remaining-label owner covers noncritical j=1, exact-square j=2, and other balanced labels.
+
+## Round171-commutator-obstruction-improves-global-exponent
+
+No analytic parent, M9, bridge, or global theorem closes.
+
+## Round172-one-parity-peak-is-enough
+
+The exact even-gap projector is the average of the peaks at zero and one half; dropping either peak changes the scalar.
+
+## Round172-relative-window-parity-gives-the-Haar-identity
+
+For odd window length, relative parity swaps between adjacent blocks; the exact identity uses absolute site parity.
+
+## Round172-round-the-terminal-link-to-a-doubling
+
+A strict R<S<2R terminal link has its own exact Fejer-difference weight and no rounded Haar identity.
+
+## Round172-pay-the-short-correction-at-every-link
+
+The short correction occurs exactly once in the stopped-chain telescope and cannot fund repeated positive losses.
+
+## Round172-first-link-is-an-owner-complete-sector
+
+The first link is target-safe but its remaining-link complement has no target-safe estimate.
+
+## Round172-absolute-link-control-is-equivalent-or-necessary
+
+Absolute control of every link is a stronger sufficient condition; the frozen target permits one-sided and cross-link cancellation.
+
+## Round172-literal-common-frequency-transform-is-missing
+
+The real cardinal interpolation and character plus ordinary Poisson give an exact finite transform with constants i/2 and 1/8.
+
+## Round172-ordinary-zero-mode-is-target-safe-termwise-in-k
+
+The bound holds only after the full signed odd-character-frequency recombination.
+
+## Round172-residual-ordinary-zero-is-the-Round169-scalar-zero-mode
+
+They are different transformed objects with different coefficient and frequency families.
+
+## Round172-zero-physical-diagonal-deletes-the-dual-diagonal
+
+The two cardinal variables remain independent; dual diagonal and off-diagonal pieces cancel only after full recombination.
+
+## Round172-endpoint-and-transition-cells-may-be-smoothed-away
+
+The exact cardinal transform retains all hard endpoints, point values, zero-extension transitions, and noncentral pieces.
+
+## Round172-character-cancellation-occurs-on-each-no-pair-row
+
+Positive-character no-pair controls survive, so any saving must be collective and actual-symbol dependent.
+
+## Round172-both-peak-centres-are-uniformly-nondegenerate
+
+After the exact parity gauge, the product-phase Hessian is rank one at both centred peaks.
+
+## Round172-positive-dual-cell-or-opening-norm-saves-factor-L
+
+Before an actual-symbol gain, coefficient-uniform positivity has available upper scale L4 and the in-range dechirped family is sharp at that order.
+
+## Round172-dechirped-capacity-is-literal-physical-mass
+
+The sharp array is a nonliteral envelope control, not a lower bound for the residual coefficient.
+
+## Round172-positive-no-go-rules-out-every-literal-positive-theorem
+
+A positive theorem that first proves and uses a special actual-symbol property remains possible.
+
+## Round172-K26-is-proved-or-disproved
+
+The complete signed nonzero ordinary-frequency aggregate remains unestimated.
+
+## Round172-residual-transform-result-closes-hard-TOP-or-improves-the-exponent
+
+K26 concerns only one residual t=1 route; all other channels, parents, bridges, and theorem exponents remain separate.
+
+## Round174-frontier-ranking-proves-K26
+
+A strategy ranking and an exact theorem statement provide no estimate for the selected signed aggregate.
+
+## Round174-cross-link-cancellation-is-proved-to-exist
+
+Cross-link cancellation remains an unproved eligible mechanism; no accepted identity supplies the missing factor L.
+
+## Round174-whole-chain-recombination-alone-saves-a-factor-L
+
+The stopped-chain recombination is exact but is target-equivalent to K26 modulo already target-safe terms.
+
+## Round174-Round173-self-return-disproves-K26
+
+Round 173 parks only the displayed tangent first-difference family and positivity before an actual-symbol gain; it is neither a literal lower bound nor a disproof of K26.
+
+## Round174-coefficient-uniform-positive-capacity-is-physical-lower-mass
+
+The L^4 diagnostic is attained by a nonliteral control and is only a method-capacity obstruction.
+
+## Round174-K26-closes-full-t1
+
+K26 is sufficient only for the complete residual scalar; other t=1 channels and the full displayed t=1 face remain separate.
+
+## Round174-K26-closes-hard-TOP
+
+Other t=1, few-point, collar, density, endpoint, and real-centre channels remain before complete hard TOP.
+
+## Round174-one-hard-TOP-face-closes-M9-M2
+
+Complete hard TOP, full BAL, and UNBAL are independent mandatory M2 parents.
+
+## Round174-critical-BAL-closes-full-BAL
+
+The persistent critical j=1 child does not cover the separate remaining-label and exact-square-boundary owner.
+
+## Round174-hard-TOP-BAL-and-UNBAL-are-interchangeable
+
+The three M2 parents have different literal kernels and no implication between them.
+
+## Round174-one-direct-M1-parent-closes-M9-M1
+
+The standard route requires both the hard and smooth direct M1 parents.
+
+## Round174-GAR-proves-blockwise-M9-M1
+
+GAR controls only total active M1 through the separate alternative bridge and has no implication to blockwise M9-M1 or M9.
+
+## Round174-endpoint-uniformity-is-an-independent-cancellation-theorem
+
+Endpoint uniformity is a validation and assembly seam that inherits the analytic parents and cannot create their missing savings.
+
+## Round174-equal-local-deficits-merge-owners
+
+Equal factor-L or X^(1/12) deficits do not create a dependency or owner bridge.
+
+## Round174-local-moment-Y-one-sixth-saving-is-strict-sub-one-third
+
+A saving exactly Y^(1/6) reaches the one-third threshold; strict sub-one-third requires Y^(1/6+delta) for some fixed delta>0.
+
+## Round174-local-moment-five-sixteenths-is-proved
+
+Exponent 5/16 is only the consequence of an unproved determinant-correlation target and is not a certified theorem.
+
+## Round174-current-source-search-is-universal-literature-nonexistence
+
+The source result is dated and scoped to named primary records and indexes; it says nothing about unindexed or future manuscripts.
+
+## Round174-averaged-smoothed-fixed-modulus-or-exceptional-spectrum-results-prove-a-project-owner
+
+The audited sources fail a literal quantifier, coefficient, sign, modulus, endpoint, restored-power, or full-spectrum hypothesis.
+
+## Round174-Bourgain-Watt-withdrawal-erases-rederived-algebraic-identities
+
+The withdrawn propositions and Theorems 1--3 are unusable as theorem dependencies, but explicitly audited and independently rederived algebraic identities may remain.
+
+## Round174-Li-Yang-preprint-is-published
+
+The current official and author records still classify the accepted repaired Li--Yang dependency as a preprint.
+
+## Round174-current-literature-improves-the-certified-exponent
+
+No audited source replaces the repaired Li--Yang area-variable exponent 0.3144831759740614... .
+
+## Round174-strategy-review-proves-the-quarter-target
+
+Both lawful quarter routes retain multiple independent analytic parents, endpoint or total-active assembly, and a conditional bridge.
+
+## Round175-whole-chain-telescope-proves-K26
+
+The exact telescope identifies the chain with a positive endpoint difference but supplies no L^3 bound for the top endpoint.
+
+## Round175-cross-link-scale-index-is-independent-cancellation
+
+For the unweighted target every interior scale cancels algebraically, leaving only Q_M^*-Q_(R_0)^*.
+
+## Round175-nonconstant-scale-weights-preserve-the-target
+
+Nonconstant weights introduce intermediate positive energies and estimate a different scalar; restoring constant weights returns the endpoint telescope.
+
+## Round175-lower-endpoint-cancels-maximal-L4-energy
+
+The lower endpoint is nonnegative and already O_epsilon(L^3X^epsilon), so it cannot fund a possible top-scale L^4 contribution.
+
+## Round175-selected-pair-unit-mass-gives-literal-Linverse
+
+The selected-row pairing has disjoint near-square supports and prevents pointwise cancellation; the actual profile supplies neither an L^(-1) factor nor lower mass.
+
+## Round175-squarefree-projector-gives-automatic-cancellation
+
+The squarefree and coprimality factors are nonnegative projectors or recombine to literal zero, not signed savings.
+
+## Round175-profile-BV-gives-Linverse-after-boundaries
+
+The full zero-extended profile has total variation O(1), including hard births, deaths, point values, and endpoint jumps.
+
+## Round175-dechirped-even-site-control-is-literal-lower-mass
+
+The coherent even-site array is a coefficient-insensitive capacity diagnostic, not the literal residual coefficient.
+
+## Round175-abstract-Qstar-control-is-a-literal-cardinal-image
+
+The abstract positive-operator array need not lie in the image of the exact literal cardinal transform.
+
+## Round175-physical-zero-deletes-a-fixed-dual-diagonal
+
+Physical gaps and transformed tuples are distinct ledgers; fixed dual diagonals cancel only after complete recombination.
+
+## Round175-whole-chain-no-go-disproves-K26
+
+The obstruction eliminates only scale-only and coefficient-uniform closures; a direct complete literal coefficient-sensitive theorem remains possible.
+
+## Round175-whole-chain-no-go-closes-the-residual-or-a-parent
+
+K26, the complete residual scalar, other hard-TOP channels, and every parent remain open.
+
+## Round175-whole-chain-no-go-improves-the-global-exponent
+
+A route obstruction proves no analytic parent, bridge, quarter theorem, or exponent improvement.
+
+## Round176-cross-gcd-half-frequency-proves-K17a
+
+Short fibres and positive recombination retain L^3 capacity; the selector-aware signed joint estimate remains unproved.
+
+## Round176-original-gcd-cutoff-varies-along-cross-fibre
+
+On nonzero squarefree atoms, (d,d')=(u,r/(2kappa_*)) is constant along the fibre.
+
+## Round176-inward-cross-gcd-equals-original-divisor-gcd
+
+The inward cross gcd and original divisor gcd are distinct coordinates; the latter equals (u,n).
+
+## Round176-canonical-sawtooth-causes-power-loss
+
+Its exact normalized Fourier algebra norm is logarithmic, although a near-half normalized mode has constant size.
+
+## Round176-canonical-anchor-forces-determinant-alternation
+
+Exact positive-proportion constant-anchor families exist; after Fourier expansion the issue is a signed inverse-residue sum, not automatic adjacency cancellation.
+
+## Round176-rowwise-Abel-gives-constant-fibre-bound
+
+No bounded-variation theorem is known for the literal selector, and the square-root phase can restore full row variation.
+
+## Round176-positive-Bprocess-or-Poisson-saves-the-fibre
+
+The half-frequency translates the stationary lattice but absolute dual-mode recombination returns the trivial fibre power.
+
+## Round176-positive-two-variable-Poisson-closes-K17a
+
+On smooth fixed-relative cells, positive dual recombination returns the physical L^3 capacity; signed dual cancellation remains open.
+
+## Round176-one-inverse-residue-square-root-saving-is-sufficient
+
+The optimistic positive ledger remains L^(5/2), a factor L^(1/2) above target.
+
+## Round176-kappa-at-least-sqrtL-sector-is-proved
+
+That sector would require an unproved constant-size signed bound per primitive row; only fixed-proportion kappa>=delta L is presently target-safe.
+
+## Round176-delta-may-shrink-with-L-at-target-scale
+
+The strict-sector theorem costs delta^(-1); it is target-scale only for fixed delta.
+
+## Round176-zero-extension-enforces-opposing-displacement
+
+The exact identity must and does separately impose s_t,w_t>=1; valid endpoints alone do not determine the displacement sector.
+
+## Round176-constant-anchor-family-is-literal-lower-mass
+
+The family is a character-geometry control with no proved squarefree-selector density or square-root phase alignment.
+
+## Round176-dechirped-or-arbitrary-support-control-is-literal
+
+Those arrays falsify coefficient-uniform mechanisms but are not the actual residual coefficient.
+
+## Round176-route-no-go-disproves-K17a
+
+Only named positive-recombination mechanisms are excluded; a signed selector-aware joint theorem remains possible.
+
+## Round176-cross-gcd-reduction-closes-a-parent-or-improves-the-exponent
+
+The full K17a complement, residual scalar, hard-TOP owners, bridges, quarter theorem, and every exponent owner remain open.
+
+## Round177-low-conductor-packet-proves-K17a
+
+The exact high-conductor packet q>(log(2X))^B remains unproved.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/reviews/conductor_round177_adjudication.md`
+
+## Round177-primitive-anchor-modulus-is-u
+
+After the physical gcd fold, the primitive anchor modulus is u_0=u/(u,n).
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/reviews/conductor_round177_adjudication.md`
+
+## Round177-aliases-may-be-absoluted-before-gcd-folding
+
+The exact g-alias sum must be folded algebraically to c_(u_0)(ell) before absolute values; otherwise the sharp normalization is lost.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/reviews/conductor_round177_adjudication.md`
+
+## Round177-final-additive-conductor-is-always-u_0
+
+For alias ell, the exact conductor is q=u_0/(ell,u_0), which may be a proper divisor of u_0.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/reviews/conductor_round177_adjudication.md`
+
+## Round177-low-q-theorem-is-only-the-small-physical-u_0-sector
+
+The proved transform packet also contains low-conductor aliases belonging to physical strata with large u_0.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/reviews/conductor_round177_adjudication.md`
+
+## Round177-primitive-near-half-aliases-are-negligible
+
+They have q=u_0 and constant-size normalized coefficient.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/reviews/conductor_round177_adjudication.md`
+
+## Round177-one-reciprocal-square-root-saving-is-sufficient
+
+Positive exact-q recombination leaves L sqrt(q) up to logarithms.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/reviews/conductor_round177_adjudication.md`
+
+## Round177-rank-one-TTstar-contracts-the-physical-block
+
+The exact rank-one alias matrix reconstructs the original physical block squared.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/reviews/conductor_round177_adjudication.md`
+
+## Round177-alias-Parseval-diagonal-is-literal-lower-mass
+
+The u_0 sqrt(L) self-diagonal is only an available positive-majorant capacity; signed bucket collisions can cancel it.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/reviews/conductor_round177_adjudication.md`
+
+## Round177-positive-residue-bucket-collision-gives-a-saving
+
+Positive bucket Cauchy can return the full L u_0 stratum capacity.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/reviews/conductor_round177_adjudication.md`
+
+## Round177-completion-modulo-q-erases-physical-lifts
+
+The explicit v, n_0, and fibre lift multiplicities restore the physical capacity and are already included in the literal count.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/reviews/conductor_round177_adjudication.md`
+
+## Round177-anchor-antisymmetry-pairs-the-two-orientations
+
+The amplitude and selector do not pair under sign reversal; both orientations must remain in the signed block.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/reviews/conductor_round177_adjudication.md`
+
+## Round177-complementary-divisor-exchange-is-a-live-orientation-involution
+
+The complement exits the upper near-square divisor window in the odd branch and is even in the even branch.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/reviews/conductor_round177_adjudication.md`
+
+## Round177-selector-regularity-is-automatic-after-alias-folding
+
+No variation, Fourier norm, factorization, or residue-bucket correlation theorem is known for the literal selected/no-pair field.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/reviews/conductor_round177_adjudication.md`
+
+## Round177-positive-energy-route-no-go-disproves-the-high-q-target
+
+Only named coefficient-blind or positive-recombination mechanisms are excluded; a selector- and phase-aware signed theorem remains possible.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/reviews/conductor_round177_adjudication.md`
+
+## Round177-primitive-alias-reduction-closes-a-parent-or-improves-the-exponent
+
+Complete K17a, every downstream owner, both bridges, the quarter theorem, and all exponent owners are unchanged.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/reviews/conductor_round177_adjudication.md`
+
+## Round178-frontier-ranking-proves-K17a
+
+A strategy ranking and exact statement of (177.K34) provide no analytic estimate for its signed high-conductor block.
+
+## Round178-blind-K26-selection-controls-the-conductor-decision
+
+The blind K26 ranking is valid independent evidence, but the accepted kernels and post-unmask mechanism audit, not a report vote, determine the next objective.
+
+## Round178-K17a-and-K26-are-conjunctive-residual-requirements
+
+K17a and K26 are alternative sufficient residual routes; neither is a mandatory dependency of the other.
+
+## Round178-Round175-disproves-K26
+
+Round 175 exhausts the proposed independent scale resource and coefficient-uniform positive closures, but it neither supplies literal lower mass nor disproves the complete actual-symbol endpoint theorem.
+
+## Round178-smallest-numerical-deficit-alone-selects-the-frontier
+
+A missing factor L for K26 versus a conductor factor q for K17a does not compare theorem size without accounting for paid sectors and surviving literal mechanisms.
+
+## Round178-Shen-inverse-residue-theorems-prove-high-q-K17a
+
+Shen requires prime moduli and separable initial inverse rows; even a favorable fictional map supplies only one square-root saving and restores to L sqrt(q), not L.
+
+## Round178-one-reciprocal-square-root-is-partial-K17a-promotion
+
+The restored L sqrt(q) log(q) scale remains above the uniform local L target on the high-conductor range and proves no accepted subowner.
+
+## Round178-withdrawn-Dong-Robles-Zeindler-claim-is-importable
+
+arXiv:2601.00292v2 is withdrawn after a missed L^2 factor changes L^5 to L^7, so it supplies no theorem dependency.
+
+## Round178-current-source-audit-is-universal-literature-nonexistence
+
+The no-match conclusion is dated and limited to the named primary corpus and official records through 2026-08-27.
+
+## Round178-current-literature-improves-the-certified-exponent
+
+No audited source replaces the accepted repaired Li--Yang area-variable exponent 0.3144831759740614... .
+
+## Round178-K17a-closes-full-t1
+
+Even a complete K17a sufficient route concerns only the residual scalar program; other t=1 and few-point/collar channels remain.
+
+## Round178-K17a-closes-hard-TOP-or-M9-M2
+
+Complete hard TOP retains independent channels, and hard TOP, full BAL, and UNBAL remain separate mandatory M2 parents.
+
+## Round178-GAR-proves-blockwise-M9-M1-or-M9
+
+GAR feeds only the total-active alternative bridge and has no implication to blockwise M9-M1 or M9.
+
+## Round178-source-metadata-repair-promotes-an-analytic-theorem
+
+Correcting versions, titles, author metadata, or theorem hypotheses changes provenance only and supplies no project estimate.
+
+## Round178-selected-K34-allows-an-in-round-pivot-to-K35
+
+The stronger aliaswise (177.K35) is sufficient but explicitly unselected; failure of the aggregate target must be recorded without changing objectives.
+
+## Round178-strategy-review-proves-the-quarter-target
+
+Both lawful quarter routes retain multiple independent analytic parents and their route-specific assembly or bridge conditions.
+
+## Round179-primitive-parity-alone-proves-high-q-K17a
+
+Parity isolates a target-safe trace but leaves the complete centered orientation defect open.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-primitive-conductor-orientation-defect-gate/reviews/conductor_round179_adjudication.md`
+
+## Round179-safe-trace-proves-complete-orientation-defect
+
+The trace is only one exact linear component; its complement contains the full unresolved block.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-primitive-conductor-orientation-defect-gate/reviews/conductor_round179_adjudication.md`
+
+## Round179-trace-component-is-a-complete-selector-stable-sector
+
+The trace is an algebraic component, not a nontrivial selector-stable subset of live literal atoms, and it does not satisfy the strict-sector campaign exit.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-primitive-conductor-orientation-defect-gate/reviews/conductor_round179_adjudication.md`
+
+## Round179-centering-alone-supplies-conductor-saving
+
+The centered all-conductor projector reconstructs E_(u_0); prime and prime-square kernels retain unit size. This rejection is limited to automatic or coefficient-uniform centering and does not exclude a future literal signed theorem in centered variables.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-primitive-conductor-orientation-defect-gate/reviews/conductor_round179_adjudication.md`
+
+## Round179-all-conductor-centered-sum-is-a-new-contraction
+
+It equals the original literal orientation block exactly, so the high piece is original minus the already-safe low piece.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-primitive-conductor-orientation-defect-gate/reviews/conductor_round179_adjudication.md`
+
+## Round179-q1-may-be-omitted-from-trace-cancellation
+
+The identity sum_(q|u_0)mu(q)=0 requires q=1; K_1^circ=0 only in the centered defect.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-primitive-conductor-orientation-defect-gate/reviews/conductor_round179_adjudication.md`
+
+## Round179-nonsquarefree-conductor-has-zero-defect
+
+Only the trace vanishes when mu(q)=0; for q=p^2 the centered kernel still has unit size and full coefficient-uniform capacity.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-primitive-conductor-orientation-defect-gate/reviews/conductor_round179_adjudication.md`
+
+## Round179-fixed-modulus-reflection-is-a-literal-orientation-involution
+
+It leaves the complete positive displacement domain and does not preserve endpoint phases, selectors, profiles, or hard values on its small overlap.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-primitive-conductor-orientation-defect-gate/reviews/conductor_round179_adjudication.md`
+
+## Round179-product-preserving-exchange-stays-in-fixed-K34-block
+
+It changes the outer row, primitive modulus, conductor, and bucket; the only fixed-row case has q=1.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-primitive-conductor-orientation-defect-gate/reviews/conductor_round179_adjudication.md`
+
+## Round179-complementary-divisor-exchange-preserves-selector-support
+
+It replaces selected divisors by complements below the upper window in the odd branch or by inadmissible even complements in the even branch.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-primitive-conductor-orientation-defect-gate/reviews/conductor_round179_adjudication.md`
+
+## Round179-one-conductor-square-root-closes-K34
+
+After all physical lifts are restored, one square root leaves L sqrt(q) on power-size conductors.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-primitive-conductor-orientation-defect-gate/reviews/conductor_round179_adjudication.md`
+
+## Round179-adversarial-bucket-capacity-is-literal-lower-mass
+
+The artificial arrays retain only unit and count shadows and discard the literal selector, coefficient, and phase fields.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-primitive-conductor-orientation-defect-gate/reviews/conductor_round179_adjudication.md`
+
+## Round179-self-return-no-go-disproves-K34
+
+The no-go excludes named automatic and coefficient-uniform mechanisms only; a new literal signed theorem remains possible.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-primitive-conductor-orientation-defect-gate/reviews/conductor_round179_adjudication.md`
+
+## Round179-projector-kernel-closes-a-parent-or-improves-the-exponent
+
+Complete K17a, all hard-TOP parents, M9, both bridges, the quarter theorem, and every exponent owner remain unchanged.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-primitive-conductor-orientation-defect-gate/reviews/conductor_round179_adjudication.md`
+
+## Round180-row-Gram-split-proves-offrow-target
+
+The exact identity E_nu=D_nu+G_nu and the target-sized physical diagonal make the one-sided off-row target equivalent at target strength to the original local scalar estimate.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/reviews/conductor_round180_adjudication.md`
+
+## Round180-row-diagonal-implies-row-orthogonality
+
+The physical row diagonal is target-safe, but the complete unequal-product cross-row form remains and no orthogonality theorem follows from the split.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/reviews/conductor_round180_adjudication.md`
+
+## Round180-character-unit-modulation-contracts-Gram
+
+The unit row character can be absorbed by coefficient-uniform controls; any useful cancellation must exploit the complete literal symbol and phases.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/reviews/conductor_round180_adjudication.md`
+
+## Round180-realness-alone-supplies-local-L
+
+Real cosine-dechirped and arbitrary-real-sign nonliteral shadows attain the local L^2 capacity, so realness alone supplies no factor L.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/reviews/conductor_round180_adjudication.md`
+
+## Round180-exact-product-collisions-have-literal-L2-mass
+
+Literal divisor multiplicity and opened-incidence energy give the stronger bound |P_nu|<<_epsilon X^epsilon.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/reviews/conductor_round180_adjudication.md`
+
+## Round180-cross-row-product-diagonal-may-be-deleted
+
+The equal-product cross-row sector is an exact algebraic component that must be evaluated and paid, not silently discarded.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/reviews/conductor_round180_adjudication.md`
+
+## Round180-blind-exact-product-array-is-literal
+
+The blind packet omitted literal scale, total-incidence, divisor-multiplicity, fixed-symbol, and recombined-energy constraints; its abstract array is not a literal residual coefficient.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/reviews/conductor_round180_adjudication.md`
+
+## Round180-blind-fiber-Bessel-is-first-open-literal-relation
+
+After unmasking, |c_N^rem|^2<=tau(N)sum_d|lambda_N(d)|^2 is automatic and does not estimate the unequal-product complement.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/reviews/conductor_round180_adjudication.md`
+
+## Round180-incidence-energy-alone-controls-full-far-arcs
+
+The far-arc bound uses the accepted recombined energy D_L after full product recombination, not opened-incidence energy alone.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/reviews/conductor_round180_adjudication.md`
+
+## Round180-positive-row-norm-preserves-missing-L
+
+Coefficient-uniform positive closure has local capacity L^2 and central Fejer capacity L^4, one factor L above the targets.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/reviews/conductor_round180_adjudication.md`
+
+## Round180-shiftwise-absolute-values-preserve-outer-real-cancellation
+
+Taking absolute values separately over nonzero product shifts loses the single outer real part and returns to unresolved shifted-correlation capacity.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/reviews/conductor_round180_adjudication.md`
+
+## Round180-central-product-phase-is-uniformly-nondegenerate
+
+At a central cell, simultaneous positive dualization returns to the accepted rank-one product collar; no uniform nondegeneracy is available there.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/reviews/conductor_round180_adjudication.md`
+
+## Round180-capacity-controls-are-literal-lower-mass
+
+Every attaining dechirped, cosine, or sign array is nonliteral, while one-row and one-site arrays have zero off-row form; the controls prove only a coefficient-uniform mechanism boundary.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/reviews/conductor_round180_adjudication.md`
+
+## Round180-local-capacity-no-go-disproves-K26
+
+The no-go excludes named feature-insensitive mechanisms only; a new complete literal signed theorem remains possible.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/reviews/conductor_round180_adjudication.md`
+
+## Round180-conditional-connector-proves-K26-or-parent
+
+The connector requires the still-open unequal-product near-cell estimate, so K26 and every parent remain open.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/reviews/conductor_round180_adjudication.md`
+
+## Round180-row-Gram-obstruction-improves-global-exponent
+
+No K26, hard-TOP parent, M9 route, bridge, theorem, or exponent owner is promoted.
+
+Evidence:
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/reviews/conductor_round180_adjudication.md`
+
+## Round181-squarefree-split-proves-high-radical-target
+
+The split is exact, but its small-t high-radical complement remains open, including t=1.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-hard-top-high-squarefree-radical-gate/reviews/conductor_round181_adjudication.md`
+
+## Round181-low-radical-payment-closes-high-owner
+
+The low-radical sector is only one disjoint target-safe piece and says nothing about the retained high-radical small-t sum.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-hard-top-high-squarefree-radical-gate/reviews/conductor_round181_adjudication.md`
+
+## Round181-gcd-divides-t-supplies-missing-power
+
+The one-way relation (h,n)|t leaves the full coprime squarefree t=1 cone and supplies no automatic L^(1/2) gain.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-hard-top-high-squarefree-radical-gate/reviews/conductor_round181_adjudication.md`
+
+## Round181-large-t-safe-sector-covers-high-radical-owner
+
+The proved sector t>=ceil(sqrt L) is disjoint from and does not estimate 1<=t<ceil(sqrt L).
+
+Evidence:
+- `rounds/codex-managed/m9-m1-hard-top-high-squarefree-radical-gate/reviews/conductor_round181_adjudication.md`
+
+## Round181-joint-t-lift-creates-independent-orthogonality
+
+The unique map r<->(s,t) is a permutation of product indices, so a positive joint-t lift retains the same capacity.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-hard-top-high-squarefree-radical-gate/reviews/conductor_round181_adjudication.md`
+
+## Round181-complete-squarefree-Mobius-linearization-contracts
+
+The exact all-L identity returns the original hard cone modulo a target-safe low-radical correction.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-hard-top-high-squarefree-radical-gate/reviews/conductor_round181_adjudication.md`
+
+## Round181-central-Mellin-zero-proves-literal-cone
+
+The central full-divisor mode does not control the noncentral inverse-Mellin modes and endpoint pieces required by the literal truncated ratio cone.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-hard-top-high-squarefree-radical-gate/reviews/conductor_round181_adjudication.md`
+
+## Round181-full-divisor-Euler-factor-equals-literal-coefficient
+
+The literal coefficient contains incomplete divisor orientation, profiles, strict edges, and zero extensions absent from the unrestricted Euler factor.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-hard-top-high-squarefree-radical-gate/reviews/conductor_round181_adjudication.md`
+
+## Round181-support-and-pointwise-size-prove-fixed-t-three-quarter
+
+Those hypotheses give only L^2/t^2 capacity; the proposed three-quarter estimate requires the unproved factor L^(1/2)t^(-1/2).
+
+Evidence:
+- `rounds/codex-managed/m9-m1-hard-top-high-squarefree-radical-gate/reviews/conductor_round181_adjudication.md`
+
+## Round181-t1-face-is-negligible
+
+The t=1 face is a positive-density odd coprime-squarefree cone in the coefficient-uniform class and retains the full missing L^(1/2).
+
+Evidence:
+- `rounds/codex-managed/m9-m1-hard-top-high-squarefree-radical-gate/reviews/conductor_round181_adjudication.md`
+
+## Round181-dechirped-capacity-is-literal-lower-mass
+
+The attaining coefficients are adversarial and nonliteral; they bound method capacity but do not lower-bound the fixed actual hard coefficient.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-hard-top-high-squarefree-radical-gate/reviews/conductor_round181_adjudication.md`
+
+## Round181-strict-radical-sectors-close-hard-parent
+
+The exact small-t high-radical residual remains open, so M9-M1-top-endpoint-signed-cone is not proved.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-hard-top-high-squarefree-radical-gate/reviews/conductor_round181_adjudication.md`
+
+## Round181-radical-reduction-improves-global-exponent
+
+No hard parent, smooth parent, M9-M1, M9-M2, bridge, theorem, or exponent owner is promoted.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-hard-top-high-squarefree-radical-gate/reviews/conductor_round181_adjudication.md`
+
+## Round182-report-agreement-proves-small-t-estimate
+
+Strategy, source, and blind agreement selects an objective but supplies no cancellation for its literal signed aggregate.
+
+## Round182-fixed-t-three-quarter-is-the-selected-owner
+
+The fixed-row estimate is sufficient after summing t^(-3/2) but strictly stronger than the complete aggregate and cannot replace its graph owner.
+
+## Round182-shifted-correlation-is-proved-or-necessary
+
+Shifted correlation is only one possible proof mechanism; no exact literal correlation theorem is proved and the aggregate may admit cross-row cancellation.
+
+## Round182-partial-Mobius-decomposition-proves-contraction
+
+Partial Mobius decomposition is only a proposed diagnostic mechanism; complete recombination is known to self-return modulo a target-safe correction.
+
+## Round182-squarefree-Kloosterman-theorem-imports-to-hard-M1
+
+The favorable fictional power uses a normalized prime finite-field hyper-Kloosterman trace, not the project's Archimedean phase and joint literal coefficient.
+
+## Round182-Xiao-moment-controls-t1-at-target-power
+
+The fourth-moment range misses the critical shell and the second moment yields only a non-saving positive single-frequency bound, before the literal coefficient failure.
+
+## Round182-TTY-pair-controls-the-complete-literal-aggregate
+
+The coefficient-one exponent-pair diagnostic has a restricted parameter range and no proved bounded-variation transfer for the squarefree divisor coefficient and moving endpoints.
+
+## Round182-Blomer-Pascadi-closes-K17a
+
+The fixed-modulus separable Kloosterman theorem supplies only q^(-1/32) in the favorable critical comparison and fails the lifted joint-coefficient interface earlier.
+
+## Round182-source-audit-is-universal-literature-nonexistence
+
+The no-import conclusion is dated and restricted to the named primary corpus and official records through 2026-08-27.
+
+## Round182-source-metadata-repair-promotes-a-theorem
+
+Repairing scale notation, version provenance, theorem attribution, or moment ranges changes source evidence only.
+
+## Round182-small-t-success-closes-M9-M1
+
+Success would close the hard signed cone through the proved sectors, while the independent smooth direct-M1 parent remains open.
+
+## Round182-small-t-success-closes-M9-or-quarter-target
+
+All M2 parents, endpoint uniformity, route assembly, and bridge obligations remain separate even after hypothetical hard-M1 success.
+
+## Round182-R179-or-R180-self-return-disproves-K17a-or-K26
+
+The tested automatic mechanisms self-return at their scoped interfaces, but neither literal residual target is disproved.
+
+## Round182-GAR-alternative-bypasses-M9-M2
+
+GAR replaces only the direct M1 conjunction on its alternative bridge and still requires complete M9-M2.
+
+## Round182-smallest-missing-power-alone-selects-the-frontier
+
+Selection depends on exact theorem scope and owner leverage as well as the numerical deficit; reports are not adjudicated by vote or deficit alone.
+
+## Round182-strategy-review-improves-the-global-exponent
+
+No analytic parent, bridge, or global theorem is proved or imported, so all certified exponent scopes are unchanged.
+
+## Round183-primitive-ray-sector-proves-complete-small-t-owner
+
+The proved incidence sector has the exact small-gcd and near-resonant complement, including the complete t=1 face.
+
+## Round183-primitive-ray-sector-is-a-product-index-subset
+
+The split is made only after expanding each product coefficient into literal divisor incidences; one product may contain incidences on both sides.
+
+## Round183-ray-BV-proves-an-arbitrary-coefficient-theorem
+
+The saving uses the accepted bounded variation of the actual literal ray symbol together with its character-phase progression; dechirped arrays restore capacity.
+
+## Round183-character-erased-ray-sector-has-the-same-nonresonance
+
+Without chi_4(G), half-integer nonresonance does not keep e(2 sigma sqrt(Xuv)) away from one.
+
+## Round183-near-half-integer-rays-are-automatically-sparse
+
+No uniform metric count or signed correlation for the near-resonant primitive products is proved for fixed real X.
+
+## Round183-primitive-ray-gain-treats-the-t1-face
+
+The equality t=1 forces G=rho=1, leaving only one site on each primitive ray and placing the full face in the small-gcd complement.
+
+## Round183-target-scale-partial-Mobius-creates-a-smaller-core
+
+The a<ceil(sqrt L) kernel still equals 1_(u=1) on b>L,u<ceil(sqrt L), so the core is the full product wave modulo target-safe corrections.
+
+## Round183-fixed-row-Fejer-correlation-is-proved-or-equivalent-to-owner
+
+The signed brace estimate is unproved already for t=1 and rowwise control followed by triangle in t is strictly stronger than the frozen aggregate.
+
+## Round183-radical-shift-correlation-is-the-old-PSC
+
+The new quadratic product-difference relation, two coefficients, two squarefree indicators, and moving radical phase are not the old centered linear nearest-product fibre interface.
+
+## Round183-old-PSC-delta-no-go-refutes-the-new-Fejer-brace
+
+The common missing power is only a same-shell diagnostic; the coefficients, centers, shifts, and outer operations differ and no theorem transfers.
+
+## Round183-one-prime-divisor-orientation-contracts-t1
+
+Moving one odd prime multiplies the ratio by p^(plus or minus 2) and leaves the literal cone, so the half-difference identity pairs disjoint supports and self-returns.
+
+## Round183-incidence-capacity-is-literal-lower-mass
+
+The L^2 complete capacity and L^(7/4) sector envelope are method upper capacities; their attaining arrays need not be the fixed literal coefficient.
+
+## Round183-strict-small-t-sector-improves-a-global-exponent
+
+The complete hard owner, independent smooth M1 parent, M9-M1, every M2 owner, endpoint uniformity, M9, both bridges, and the quarter theorem remain open.
+
+## Round184-close-pair-exchange-proves-complete-t1
+
+The theorem covers only selected-product XOR allocations; all no-pair products and selected neither/both allocations remain in the exact residual.
+
+## Round184-eligible-close-pair-sector-is-nonempty-or-dense
+
+The canonical selector is allowed to choose no pair for every supported product, and no density or positive-proportion theorem is proved.
+
+## Round184-ambient-selected-product-sign-balance-bounds-the-physical-residual
+
+The literal one-sided cone, coefficient, profile, and endpoints destroy the constant-amplitude ambient divisor-cube balance.
+
+## Round184-M2-close-pair-theorem-transfers-directly-to-M1
+
+Only the finite exchange algebra transfers; the M1 coefficient, cone, normalization, active support, and collars require the separate proof given here.
+
+## Round184-M2-four-prime-residual-control-transfers-to-the-M1-physical-residual
+
+The M2 residual theorem has different coefficients and physical support and supplies no target estimate for the M1 no-pair plus neither/both residual.
+
+## Round184-unrestricted-ambient-BV-charge-has-active-box-multiplicity
+
+The multiplicity estimate is valid only on the tau-closed set where at least one literal coefficient is nonzero; unrestricted ambient allocations need not lie in an O(L)-box.
+
+## Round184-one-prime-toggle-contracts-the-t1-cone
+
+Moving one odd prime changes v/u by p^(plus or minus 2) and sends the two physical supports apart.
+
+## Round184-normalized-involution-averaging-contracts-the-residual
+
+A normalized average of exact divisor-lattice reindexings is only a rewriting without an independent coverage or coefficient-difference theorem.
+
+## Round184-ordered-divisor-Abel-and-BV-prove-the-residual
+
+Exact Abel summation leaves an uncontrolled weighted divisor-sign oscillation whose positive aggregate remains at L^2 capacity.
+
+## Round184-shiftwise-triangle-proves-the-residual-correlation
+
+Taking a modulus at each shift yields Fejer energy of size L^3 and only the scalar L^2 capacity.
+
+## Round184-residual-Fejer-correlation-is-proved
+
+The one-outer-real-part estimate is an exact sufficient connector and is explicitly unproved.
+
+## Round184-semiprime-and-all-one-mod-four-controls-give-literal-lower-mass
+
+These controls show lack of automatic pair coverage but provide neither occurrence counts nor a coefficient-weighted lower bound.
+
+## Round184-strict-t1-sector-proves-the-complete-small-t-owner
+
+The strict sector does not prove even complete t=1, while the owner also retains every t>=2 small-G and large-G near-resonant incidence.
+
+## Round184-complete-t1-would-prove-the-hard-small-t-owner
+
+A complete t=1 theorem would still leave t>=2 small-G incidences and the large-G near-half-integer-resonant complement open.
+
+## Round184-strict-comparable-factor-sector-improves-a-global-exponent
+
+The complete hard and smooth M1 parents, M9-M1, all M2 parents, endpoint uniformity, M9, both bridges, and the quarter theorem remain incomplete.
+
+## Round185-even-parity-connector-saves-a-power
+
+The even/odd window split has only constant cost and isolates even shifts; it supplies no cancellation beyond the exact connector.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-hard-top-t1-residual-fejer-tangent-gcd-gate/reviews/conductor_round185_adjudication.md`
+
+## Round185-monotone-tangent-sector-proves-the-residual
+
+The monotone sector has O(L^2) incidences, but both opposing orientations remain and contain the exact high-h complement.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-hard-top-t1-residual-fejer-tangent-gcd-gate/reviews/conductor_round185_adjudication.md`
+
+## Round185-original-gcd-tail-with-shrinking-gamma-is-uniformly-target-safe
+
+The bound is gamma^(-1)L^2X^epsilon; a shrinking gamma restores the lost power and cannot be suppressed.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-hard-top-t1-residual-fejer-tangent-gcd-gate/reviews/conductor_round185_adjudication.md`
+
+## Round185-cross-gcd-tail-with-shrinking-delta-is-uniformly-target-safe
+
+The bound is delta^(-1)L^2X^epsilon; a shrinking delta restores the lost power and cannot be suppressed.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-hard-top-t1-residual-fejer-tangent-gcd-gate/reviews/conductor_round185_adjudication.md`
+
+## Round185-high-g-or-high-kappa-sectors-cover-the-opposing-complement
+
+Fixed-proportion tails lie inside bounded h, while small g and kappa with arbitrarily large h remain in the exact complement.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-hard-top-t1-residual-fejer-tangent-gcd-gate/reviews/conductor_round185_adjudication.md`
+
+## Round185-bare-affine-character-alternation-contracts-the-literal-fibre
+
+Adjacent tangent sites flip the bare character, but selectors, squarefree and coprimality deletions, profiles, endpoints, and zero extension need not be invariant.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-hard-top-t1-residual-fejer-tangent-gcd-gate/reviews/conductor_round185_adjudication.md`
+
+## Round185-rowwise-Abel-and-positive-recombination-prove-the-residual
+
+No literal fibre-BV theorem is available, and positive recombination of row estimates retains L^3 capacity.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-hard-top-t1-residual-fejer-tangent-gcd-gate/reviews/conductor_round185_adjudication.md`
+
+## Round185-O1-per-primitive-row-closes-the-correlation
+
+Even an unjustified O(1) estimate on every row positively recombines to O(L^3), above the L^2 energy target.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-hard-top-t1-residual-fejer-tangent-gcd-gate/reviews/conductor_round185_adjudication.md`
+
+## Round185-positive-shift-triangle-proves-the-Fejer-target
+
+Taking a modulus at each shift gives O(L^3X^epsilon) energy and only the O(L^2X^epsilon) scalar capacity.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-hard-top-t1-residual-fejer-tangent-gcd-gate/reviews/conductor_round185_adjudication.md`
+
+## Round185-M2-tangent-gcd-estimate-transfers-as-an-M1-theorem
+
+Only finite identities and counting templates transfer; every M1 coefficient, cone, selector, deletion, endpoint, sign, and power required an independent derivation.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-hard-top-t1-residual-fejer-tangent-gcd-gate/reviews/conductor_round185_adjudication.md`
+
+## Round185-positive-Poisson-Bprocess-or-alias-energy-closes-the-residual
+
+Positive transformed recombination separates or majorizes the signed endpoint aggregate and returns at the original capacity without a new global relation.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-hard-top-t1-residual-fejer-tangent-gcd-gate/reviews/conductor_round185_adjudication.md`
+
+## Round185-primitive-conductor-centering-gains-the-missing-factor
+
+The centered high-conductor defect is an algebraic self-return to the original block modulo already safe packets, not a power-saving estimate.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-hard-top-t1-residual-fejer-tangent-gcd-gate/reviews/conductor_round185_adjudication.md`
+
+## Round185-orientation-reflection-or-complementary-factor-exchange-is-a-literal-self-return
+
+Reflection changes physical endpoints and complementary-factor exchange leaves the strict hard-M1 cone; neither preserves the exact literal aggregate.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-hard-top-t1-residual-fejer-tangent-gcd-gate/reviews/conductor_round185_adjudication.md`
+
+## Round185-residual-neither-both-pairing-self-returns-inside-the-hard-cone
+
+Moving a selected prime pair between the two surviving allocations changes the divisor-to-cofactor ratio by at least 225, so both cannot remain in a cone of ratio width four.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-hard-top-t1-residual-fejer-tangent-gcd-gate/reviews/conductor_round185_adjudication.md`
+
+## Round185-exact-deletion-control-proves-literal-lower-mass
+
+The exact tuple proves only arithmetic-support non-invariance and does not establish any opaque profile nonvanishing, density, lower bound, or asymptotic obstruction.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-hard-top-t1-residual-fejer-tangent-gcd-gate/reviews/conductor_round185_adjudication.md`
+
+## Round185-unrestricted-or-noncanonical-affine-sum-is-the-exact-complement
+
+Exact multiplicity requires the primitive outer domain, one canonical orientation-dependent anchor, s_t=gS_t, and the positive oriented index set before endpoint evaluation.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-hard-top-t1-residual-fejer-tangent-gcd-gate/reviews/conductor_round185_adjudication.md`
+
+## Round185-bounded-h-sector-proves-the-complete-t1-residual
+
+Both orientations with h>floor((log(2X))^B) remain in the exact one-outer-real-part correlation.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-hard-top-t1-residual-fejer-tangent-gcd-gate/reviews/conductor_round185_adjudication.md`
+
+## Round185-dyadic-high-h-signed-relation-is-proved
+
+The required uniform factor-Y cancellation is explicitly the first open analytic relation.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-hard-top-t1-residual-fejer-tangent-gcd-gate/reviews/conductor_round185_adjudication.md`
+
+## Round185-complete-t1-would-prove-the-hard-small-t-owner
+
+Even a complete t=1 theorem would leave every t>=2 small-G incidence and the large-G near-resonant complement open.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-hard-top-t1-residual-fejer-tangent-gcd-gate/reviews/conductor_round185_adjudication.md`
+
+## Round185-strict-tangent-gcd-sector-improves-a-global-exponent
+
+Both M1 parents, every M2 parent, endpoint uniformity, M9, both bridges, and the quarter theorem remain incomplete.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-hard-top-t1-residual-fejer-tangent-gcd-gate/reviews/conductor_round185_adjudication.md`
+
+## Round186-report-agreement-proves-high-h-relation
+
+Agreement among graph, source, and blind reports selects a frontier but supplies no cancellation for the literal high-h aggregate.
+
+## Round186-absolute-real-part-is-the-required-target
+
+The accepted Fejer connector needs only a one-sided upper bound on the single outer real part; an absolute-real-part theorem is sufficient but unnecessarily stronger.
+
+## Round186-negative-dyadic-real-parts-require-control
+
+Negative dyadic real parts help the one-sided Fejer upper bound and no blockwise lower bound is required.
+
+## Round186-positive-capacity-is-literal-lower-mass
+
+The YL^2 ledger is a positive or coefficient-insensitive upper capacity, not a lower bound for the fixed literal signed coefficient.
+
+## Round186-all-proofs-must-couple-orientations-internally
+
+The target couples both orientations, but separately proved stronger signed upper bounds could imply it; only inward absolute values and positive recombination are excluded.
+
+## Round186-rowwise-O1-closes-high-h
+
+Even an O(1) estimate per row followed by positive recombination leaves the wrong global capacity and does not recover the full factor Y.
+
+## Round186-fixed-Y-power-loss-is-absorbable
+
+A residual Y^eta for fixed eta>0 is not a logarithm and does not give the required uniform dyadic L^2 bound.
+
+## Round186-high-h-success-closes-complete-small-t-owner
+
+It would close only the exact original-t=1 residual; original t>=2 small-G and large-G near-resonant incidences remain open.
+
+## Round186-high-h-success-closes-hard-M1-or-M9-M1
+
+The rest of the small-t owner and the independent smooth direct-M1 parent remain open after hypothetical high-h success.
+
+## Round186-high-h-success-closes-M9-or-quarter-target
+
+Every M2 parent, endpoint uniformity, route assembly, and bridge obligation remains separate.
+
+## Round186-K17a-or-K26-is-a-complete-hard-TOP-owner
+
+K17a and K26 are unproved analytic residual targets inside proved reductions and do not replace the complete hard-TOP parent.
+
+## Round186-MRS-imports-to-high-h
+
+MRS Theorem 1.1 is a complete product of shifted Kloosterman sums at one odd prime-power modulus, not the primitive affine varying-height one-outer-real-part aggregate.
+
+## Round186-MRS-imports-to-K17a-K26-or-UNBAL
+
+The project objects fail the theorem's fixed prime-power complete-sum kernel, modulus, coefficient, and norm architecture before a lawful power map.
+
+## Round186-MRS-generic-bound-is-a-pure-q-saving
+
+The generic estimate retains the factor p^(1+1/ceil(k/2)); it cannot be rewritten as a pure full-modulus saving.
+
+## Round186-source-audit-is-universal-literature-nonexistence
+
+The no-import conclusion is dated and restricted to the named versioned primary corpus and official records through 2026-08-28.
+
+## Round186-critical-BAL-alone-closes-BAL
+
+The remaining-label and exact-square BAL scope is an independent open owner.
+
+## Round186-GAR-bypasses-M9-M2
+
+GAR may replace only direct M1 on the alternative route and still requires complete M9-M2.
+
+## Round186-graded-lane-is-a-quarter-route
+
+The graded determinant/local-moment lane is a separate sub-one-third program and has no implication edge to either quarter route.
+
+## Round186-smallest-deficit-or-report-vote-selects-frontier
+
+Selection uses literal theorem scope, accepted connector, freshness, and owner leverage as well as power; reports are not adjudicated by vote.
+
+## Round186-strategy-review-improves-global-exponent
+
+No analytic parent, bridge, endpoint theorem, global theorem, or source import is proved, so all certified exponent scopes remain unchanged.
+
+## Round186-in-round-pivot-is-authorized
+
+Round 187 must close or rigorously diagnose the frozen high-h interface before a different owner can be selected.
+
+## Round187-U1-or-zero-mode-proves-high-h
+
+The U=1 and zero-mode pieces are target-safe, but the exact high-conductor large-U away-from-edge complement remains at YL^2 capacity.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reviews/conductor_round187_adjudication.md`
+
+## Round187-low-exact-conductors-prove-high-h
+
+Every q<=H_B conductor is target-safe, but all q>H_B, U>4H_B, |k|_U>H_B modes remain in one open signed aggregate.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reviews/conductor_round187_adjudication.md`
+
+## Round187-positive-high-complement-is-target-safe
+
+Positive recombination gives O(YL^2X^epsilon), larger than the required O(L^2X^epsilon) by the full dyadic factor Y.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reviews/conductor_round187_adjudication.md`
+
+## Round187-conductor-centering-gains-Y
+
+The centered conductor identity is an exact rewriting; for prime U the sole high conductor is literally the original orientation block.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reviews/conductor_round187_adjudication.md`
+
+## Round187-orientation-antisymmetry-pairs-literal-amplitudes
+
+The anchors are antisymmetric on units, but the two positive rays, endpoint orders, selectors, deletions, profiles, and phases are not equal.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reviews/conductor_round187_adjudication.md`
+
+## Round187-positive-Fourier-Poisson-or-alias-energy-gains-Y
+
+Positive energy reconstructs the signed block or positive residue buckets and retains the full diagonal capacity.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reviews/conductor_round187_adjudication.md`
+
+## Round187-high-mode-Fourier-energy-is-small
+
+The two primitive near-half modes alone contribute at least 8/pi^2 to the retained coefficient l2 mass.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reviews/conductor_round187_adjudication.md`
+
+## Round187-adversarial-capacity-is-literal-lower-mass
+
+The aligned bounded arrays are coefficient-uniform mechanism controls and need not be realizable by the actual Vaaler endpoint product.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reviews/conductor_round187_adjudication.md`
+
+## Round187-Fourier-packets-are-physical-incidence-sectors
+
+The proved packets are an exact linear spectral decomposition of literal incidences, not disjoint physical incidence sets.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reviews/conductor_round187_adjudication.md`
+
+## Round187-HB-is-a-maximal-fixed-polylogarithmic-cutoff
+
+The proof works for every fixed polylogarithmic cutoff; H_B is the canonical campaign choice, not a maximal one.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reviews/conductor_round187_adjudication.md`
+
+## Round187-exact-high-conductor-one-sided-relation-is-proved
+
+The required factor-Y signed estimate for the exact complement is explicitly the first open relation.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reviews/conductor_round187_adjudication.md`
+
+## Round187-complete-t1-would-prove-the-small-t-owner
+
+Every original t>=2 small-G incidence and the large-G near-resonant complement remain open after hypothetical t=1 completion.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reviews/conductor_round187_adjudication.md`
+
+## Round187-strict-Fourier-sector-improves-a-global-exponent
+
+Both M1 parents, every M2 parent, endpoint uniformity, M9, both bridges, and the quarter theorem remain incomplete.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reviews/conductor_round187_adjudication.md`
+
+## Round187-unsigned-anchor-has-the-same-zero-mode-gain
+
+The unsigned residue function has zero Fourier coefficient one, whereas the chi_4-induced odd-length anchor has mean 1/U.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reviews/conductor_round187_adjudication.md`
+
+## Round188-imprimitive-lift-sector-proves-high-h
+
+Only Qm>=Y is paid absolutely; the exact Qm<Y primitive or moderately imprimitive complement remains at YL^2 positive capacity.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/reviews/conductor_round188_adjudication.md`
+
+## Round188-dyadic-OYL-count-alone-gains-Y
+
+The O(YL) count is a sharper one-block capacity ledger; the factor Y disappears only on lifts with 1/m<=Q/Y.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/reviews/conductor_round188_adjudication.md`
+
+## Round188-Qm-less-Y-modes-have-small-coefficients
+
+Primitive near-half modes have coefficient size at least 2/pi and remain wholly in the complement.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/reviews/conductor_round188_adjudication.md`
+
+## Round188-primitive-frequency-completion-gains-conductor
+
+For prime conductor the complete primitive kernel is the original parity anchor minus its mean and has order-one size.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/reviews/conductor_round188_adjudication.md`
+
+## Round188-determinant-phase-oscillates-along-t
+
+The exact determinant equations give e(epsilon a inverse(v) h/q)=e(a S_0/q), constant along the affine t-ray.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/reviews/conductor_round188_adjudication.md`
+
+## Round188-additive-reciprocity-gains-Y
+
+Reciprocity transfers the inverse but supplies no variation or discrepancy theorem for the literal endpoint amplitude.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/reviews/conductor_round188_adjudication.md`
+
+## Round188-periodic-displayed-height-phase-licenses-completion
+
+The displayed exponential is periodic, but the zero-extended literal amplitude, selector, endpoints, Fejer factor, and phase are not proved periodic or bounded-variation.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/reviews/conductor_round188_adjudication.md`
+
+## Round188-determinant-transposition-pairs-orientations
+
+The two positive rays and endpoint allocations are not preserved or identified by the determinant reindexing.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/reviews/conductor_round188_adjudication.md`
+
+## Round188-Mobius-or-squarefree-opening-regularizes-selector
+
+Opening arithmetic masks introduces divisor congruences but does not factor the moving selected-prime mask, endpoints, profiles, or square-root phase.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/reviews/conductor_round188_adjudication.md`
+
+## Round188-positive-completion-or-large-sieve-energy-gains-Y
+
+Positive transforms return residue-bucket or Fourier energy, while primitive near-half modes retain constant mass.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/reviews/conductor_round188_adjudication.md`
+
+## Round188-adversarial-capacity-is-literal-lower-mass
+
+The dephased bounded array is a coefficient-uniform mechanism control and need not be realized by the actual endpoint coefficient.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/reviews/conductor_round188_adjudication.md`
+
+## Round188-logL-absorption-holds-for-independent-L-X
+
+The absorption is lawful only on the inherited nonzero hard-top support L<<X^(1/4); the statement-only independent-parameter packet correctly retained logarithms.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/reviews/conductor_round188_adjudication.md`
+
+## Round188-strict-lift-sector-proves-complete-t1
+
+The exact Qm<Y high-height complement remains open even before the accepted t=1 connectors can close.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/reviews/conductor_round188_adjudication.md`
+
+## Round188-complete-t1-would-prove-small-t-owner
+
+Every original t>=2 small-G incidence and the large-G near-resonant complement remain open after hypothetical t=1 completion.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/reviews/conductor_round188_adjudication.md`
+
+## Round188-strict-lift-sector-improves-global-exponent
+
+Both M1 parents, every M2 parent, endpoint uniformity, M9, both bridges, and the quarter theorem remain incomplete.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/reviews/conductor_round188_adjudication.md`
+
+## Round189-U-over-Y-is-unique-maximal-cutoff
+
+U/Y is the power-neutral baseline, but every predeclared fixed polylogarithmic enlargement is target-safe with its explicit polylogarithmic cost.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reviews/conductor_round189_adjudication.md`
+
+## Round189-projective-cutoff-is-q-over-Y
+
+The exact reduced scale is mq/Y=U/Y; omitting m loses the actual projective multiplicity supplied by the lift.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reviews/conductor_round189_adjudication.md`
+
+## Round189-projective-map-is-not-bijective-on-live-v
+
+Because q divides u and (u,v)=1, v is a unit modulo q and v maps to a inverse(v) bijectively on unit classes.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reviews/conductor_round189_adjudication.md`
+
+## Round189-residue-class-plus-one-causes-power-loss
+
+Each class occurs O(u/q+1)=O(u/q) times because q divides u, so no stray additive term remains.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reviews/conductor_round189_adjudication.md`
+
+## Round189-lift-weight-does-not-cancel-projective-m
+
+The exact identity c_(mq)(ma)=m^(-1)c_q(a) cancels the factor m before divisor summation.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reviews/conductor_round189_adjudication.md`
+
+## Round189-slow-sector-proves-complete-Round188-complement
+
+Only j_q(a,v)<=T_Q is paid; the exact fast complement j_q(a,v)>T_Q remains open.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reviews/conductor_round189_adjudication.md`
+
+## Round189-saturated-cutoff-leaves-fast-unit-slopes
+
+For odd q the cap (q-1)/2 contains every unit least-residue slope, so the fast complement is empty on a saturated lift.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reviews/conductor_round189_adjudication.md`
+
+## Round189-geometric-height-sum-applies-to-literal-weight
+
+The q/J geometric bound applies to a constant coefficient; the actual zero-extended endpoint sequence requires Abel variation or joint discrepancy control.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reviews/conductor_round189_adjudication.md`
+
+## Round189-pointwise-bound-implies-target-height-BV
+
+Pointwise O(kappa X^epsilon) only gives variation O(Y kappa X^epsilon), larger than the sufficient scale by Y/(Qm).
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reviews/conductor_round189_adjudication.md`
+
+## Round189-arithmetic-masks-are-height-invariant
+
+Coprimality, squarefree, selector, profile, anchor, endpoint, Fejer, phase, affine birth/death, and zero-extension fields can all jump with height.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reviews/conductor_round189_adjudication.md`
+
+## Round189-centered-kernel-has-uniform-polylog-prefixes
+
+For odd prime p the centered slope -2 prefix is exactly -(p-1)/2.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reviews/conductor_round189_adjudication.md`
+
+## Round189-prime-bad-slope-is-literal-lower-mass
+
+The survivor belongs to the full centered kernel, while the literal fast packet retains deletions, masks, endpoints, orientations, and the projective split.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reviews/conductor_round189_adjudication.md`
+
+## Round189-positive-completion-or-large-sieve-gains-Y
+
+Positive completion, Poisson, large-sieve, and alias norms return residue-bucket capacity and do not prove actual-coefficient variation.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reviews/conductor_round189_adjudication.md`
+
+## Round189-strict-projective-sector-proves-complete-t1
+
+The exact fast high-height complement remains open before the accepted t=1 connectors can close.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reviews/conductor_round189_adjudication.md`
+
+## Round189-strict-projective-sector-improves-global-exponent
+
+Every complete M1 and M2 route, endpoint uniformity, M9, both bridges, and the quarter theorem remain incomplete.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reviews/conductor_round189_adjudication.md`
+
+## Round190-report-agreement-proves-fast-complement
+
+Agreement among graph, source, and blind reports selects a strategy frontier but supplies no cancellation for the literal fast packet.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round187-189-strategy-literature-review/synthesis.md`
+
+## Round190-positive-variation-is-signed-coboundary
+
+A sum of individual total variations is nonnegative and separately absolutized; it is only a sufficient positive benchmark, not the joint signed jump seam.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round187-189-strategy-literature-review/synthesis.md`
+
+## Round190-joint-jump-packet-proves-orientation-pairing
+
+Keeping both orientations inside one signed packet does not by itself prove an involutive orientation pairing or cancellation identity.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round187-189-strategy-literature-review/synthesis.md`
+
+## Round190-joint-jump-packet-proves-projective-difference
+
+The Abel coboundary is a height difference; no discrete neighboring-projective-slope identity has been proved.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round187-189-strategy-literature-review/synthesis.md`
+
+## Round190-Abel-identity-proves-fast-cancellation
+
+The endpoint-exact Abel identity is algebraic and merely relocates the problem to the unproved signed correlation of literal height jumps.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round187-189-strategy-literature-review/synthesis.md`
+
+## Round190-pointwise-bound-proves-signed-jump-seam
+
+Pointwise boundedness gives only the available Y-scale and misses the required factor Y/(H_Bm).
+
+Evidence:
+- `rounds/codex-managed/full-proof-round187-189-strategy-literature-review/synthesis.md`
+
+## Round190-height-masks-are-invariant
+
+Coprimality, squarefree, selector, profile, anchor, endpoint, Fejer, phase, affine birth/death, and zero-extension fields can all jump with height.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round187-189-strategy-literature-review/synthesis.md`
+
+## Round190-centered-kernel-has-uniform-polylog-prefixes
+
+The odd-prime centered slope -2 prefix is linear, so a uniform polylogarithmic prefix theorem is false.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round187-189-strategy-literature-review/synthesis.md`
+
+## Round190-positive-transforms-gain-fast-deficit
+
+Positive completion, large sieve, alias energy, and selector-blind opening return capacity unless signed actual-coefficient cancellation is proved first.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round187-189-strategy-literature-review/synthesis.md`
+
+## Round190-fixed-power-deficit-is-epsilon-absorbable
+
+Any fixed positive power of Y/(H_Bm) is not a logarithmic loss and fails the required uniform target.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round187-189-strategy-literature-review/synthesis.md`
+
+## Round190-positive-capacity-is-literal-lower-mass
+
+The Y-scale is a positive or coefficient-insensitive upper ledger, not a lower bound for the fixed literal signed packet.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round187-189-strategy-literature-review/synthesis.md`
+
+## Round190-fast-complement-closes-complete-small-t-owner
+
+Fast-complement success would close at most the exact original-t=1 residual; original t>=2 and near-resonant incidence leaves remain open.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round187-189-strategy-literature-review/synthesis.md`
+
+## Round190-fast-complement-closes-hard-M1-or-M9-M1
+
+The rest of the small-t owner and the independent smooth direct-M1 parent remain open after hypothetical fast-complement success.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round187-189-strategy-literature-review/synthesis.md`
+
+## Round190-fast-complement-closes-M9-or-quarter-target
+
+Every M2 parent, endpoint uniformity, route assembly, and bridge obligation remains separate.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round187-189-strategy-literature-review/synthesis.md`
+
+## Round190-GAR-and-direct-M1-may-be-spliced
+
+The standard direct-M1 route and the total-active GAR alternative are connected by a logical OR and cannot be mixed into a fictitious owner.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round187-189-strategy-literature-review/synthesis.md`
+
+## Round190-GAR-bypasses-M9-M2
+
+GAR can replace only direct M1 on the alternative route and still requires complete M9-M2.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round187-189-strategy-literature-review/synthesis.md`
+
+## Round190-K17a-or-K26-is-complete-hard-TOP
+
+K17a and K26 are subordinate residual attacks; other t=1, few-point, collar, and density channels remain below complete hard TOP.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round187-189-strategy-literature-review/synthesis.md`
+
+## Round190-critical-BAL-alone-closes-BAL
+
+The remaining-label and exact-square BAL scope is an independent open owner.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round187-189-strategy-literature-review/synthesis.md`
+
+## Round190-Shen-imports-to-fast-complement
+
+Shen's prime-modulus separable scalar or positive-moment theorems do not control the joint moving-conductor literal height-jump packet under one outer real part.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round187-189-strategy-literature-review/synthesis.md`
+
+## Round190-MRS-imports-to-fast-complement
+
+MRS treats complete products of shifted Kloosterman sums at one odd prime-power modulus, not the literal projective height-jump family.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round187-189-strategy-literature-review/synthesis.md`
+
+## Round190-source-audit-is-universal-literature-nonexistence
+
+The no-import conclusion is dated and restricted to the named versioned primary corpus through 2026-08-29.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round187-189-strategy-literature-review/synthesis.md`
+
+## Round190-strategy-review-improves-global-exponent
+
+No analytic parent, endpoint, bridge, global theorem, or source import is proved, so every certified exponent remains unchanged.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round187-189-strategy-literature-review/synthesis.md`
+
+## Round190-in-round-pivot-is-authorized
+
+Round 191 must close or rigorously diagnose the frozen fast-complement interface before another owner can be selected.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round187-189-strategy-literature-review/synthesis.md`
+
+## Round191-Abel-height-jump-is-cancellation
+
+Endpoint-exact Abel summation returns the normalized jump packet exactly to the original height sum and supplies no saving by itself.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reviews/conductor_round191_adjudication.md`
+
+## Round191-signed-inverse-transport-preserves-literal-support
+
+The determinant-fibre transport is exact on the integer fibre, but positivity, coprimality, squarefree, selector, profile, endpoint, and phase fields can change and create literal births and deaths.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reviews/conductor_round191_adjudication.md`
+
+## Round191-full-anchor-parity-applies-modewise
+
+The full pre-Fourier parity changes by (-1)^rho, while a retained mode has the carry-dependent factor (-1)^nu e(epsilon a rho/q).
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reviews/conductor_round191_adjudication.md`
+
+## Round191-carry-signs-cancel-between-orientations
+
+On common unit heights the two orientations have the same carry parity, and their literal endpoints and phases are not an involutive pair.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reviews/conductor_round191_adjudication.md`
+
+## Round191-small-inverse-sector-is-a-jump-correlation-gain
+
+Its proof is cardinality-only inverse-class sparsity; any prescribed set of the same number of unit inverse classes has the same positive bound.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reviews/conductor_round191_adjudication.md`
+
+## Round191-small-inverse-sector-proves-full-fast-packet
+
+The exact rho-large complement remains open after only the terminal and isolated Fejer projections are removed.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reviews/conductor_round191_adjudication.md`
+
+## Round191-saturated-inverse-cut-leaves-unit-rows
+
+At T_rho=(U-1)/2 every unit inverse class is included, so the row complement is empty for that lift.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reviews/conductor_round191_adjudication.md`
+
+## Round191-residue-class-plus-one-causes-power-loss
+
+Because U divides u, each inverse class occurs O(u/U+1)=O(u/U) times on the O(u)-length literal support.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reviews/conductor_round191_adjudication.md`
+
+## Round191-lift-does-not-cancel-inverse-sector-m
+
+The exact m^(-1)c_q(a) lift cancels the m in the fixed Qm kappa u bound before positive outer summation.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reviews/conductor_round191_adjudication.md`
+
+## Round191-terminal-and-Fejer-projections-break-one-outer-operation
+
+They are exact joint complex linear projections over both orientations before a modulus; their complement is defined by complex subtraction.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reviews/conductor_round191_adjudication.md`
+
+## Round191-positive-variation-closes-rho-large-remainder
+
+Positive variation gives Y kappa u rather than Qm kappa u, with exact deficit Y/(Qm).
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reviews/conductor_round191_adjudication.md`
+
+## Round191-completion-large-sieve-or-alias-energy-gains-height
+
+Coefficient-uniform positive or separable transforms retain the bounded-height-array capacity and do not prove the actual literal signed correlation.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reviews/conductor_round191_adjudication.md`
+
+## Round191-bounded-array-capacity-is-literal-lower-mass
+
+The extremizing bounded height arrays need not arise from the fixed endpoint coefficients and supply no lower bound or disproof for the literal packet.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reviews/conductor_round191_adjudication.md`
+
+## Round191-strict-sector-proves-complete-t1
+
+The exact rho-large fast remainder remains open before the accepted original-t=1 connectors can close.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reviews/conductor_round191_adjudication.md`
+
+## Round191-strict-sector-improves-global-exponent
+
+Every complete M1 and M2 route, endpoint uniformity, M9, both bridges, and the quarter theorem remain incomplete.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reviews/conductor_round191_adjudication.md`
+
+## Round192-canonical-beta-equals-literal-gamma
+
+For v=v0+nU the literal transport quotient is gamma=beta+n rho; the static Farey selector must use canonical beta.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/reviews/conductor_round192_adjudication.md`
+
+## Round192-c-equals-U-is-admissible-covector
+
+The nonzero divisor factor requires 1<=c<U; allowing c=U permits the congruence argument to fail.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/reviews/conductor_round192_adjudication.md`
+
+## Round192-fixed-c-d-ell-has-one-residue-class
+
+The lawful bound is by signed divisors, at most 2 tau(|c+U ell|), not one class.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/reviews/conductor_round192_adjudication.md`
+
+## Round192-T-zero-ell-zero-sector-is-target-safe
+
+When the density budget is below one class the new selector is defined empty; no isolated ell=0 row is charged to it.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/reviews/conductor_round192_adjudication.md`
+
+## Round192-union-overlap-double-counts-complex-object
+
+P_A is a single union indicator; the covector sum is used only for an upper bound and each selected row enters the complex projection once.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/reviews/conductor_round192_adjudication.md`
+
+## Round192-Farey-family-cost-is-free
+
+The family has O(A^2)<=O(Q^(2C0)) members and is absorbed only because Q is polylogarithmic and C0 is fixed.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/reviews/conductor_round192_adjudication.md`
+
+## Round192-Farey-separation-covers-all-rho-large-rows-for-free
+
+Outside the exact empty-core criterion a simultaneous badly approximable core remains; positive covering requires sector cost.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/reviews/conductor_round192_adjudication.md`
+
+## Round192-pigeonhole-rho-bound-estimates-the-core
+
+The lower bound |rho|>=(A+1)(T+1) is only a support restriction and supplies no signed cancellation for actual coefficients.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/reviews/conductor_round192_adjudication.md`
+
+## Round192-large-ell-forces-phase-cancellation
+
+The transported mode phase is e(epsilon ac/q), independent of ell in magnitude, and can be resonant.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/reviews/conductor_round192_adjudication.md`
+
+## Round192-large-ell-forces-carry-cancellation
+
+The cumulative carry is theta-epsilon ell; its parity has no separation or averaging supplied by the core condition.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/reviews/conductor_round192_adjudication.md`
+
+## Round192-endpoint-coefficient-is-transport-invariant
+
+The two endpoint number/divisor translations are unequal, depend on the literal representative through d_v, and can change every arithmetic and profile mask.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/reviews/conductor_round192_adjudication.md`
+
+## Round192-long-step-Abel-gives-a-saving
+
+For finite or absolutely summable zero-extended heights the normalized long difference returns exactly to the original height sum.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/reviews/conductor_round192_adjudication.md`
+
+## Round192-positive-Farey-cover-beats-the-deficit
+
+In the qualified unsaturated residue-universe control about U/T asymptotic to Y/(Qm) target-sized pieces are needed, restoring the deficit.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/reviews/conductor_round192_adjudication.md`
+
+## Round192-bounded-array-capacity-is-literal-lower-mass
+
+Arbitrary bounded-array extremizers need not be realized by the actual endpoint coefficients and do not lower-bound or disprove the literal core.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/reviews/conductor_round192_adjudication.md`
+
+## Round192-strict-Farey-sector-proves-complete-t1-or-exponent
+
+The nonempty core, complete t=1 residual, every t>=2 range, all parents, bridges, the target, and every exponent remain open or unchanged.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/reviews/conductor_round192_adjudication.md`
+
+## Round193-post-Abel-mask-commutes-with-difference
+
+The physical mask depends on affine site; its transported commutator and unmatched-site births and deaths remain in the new core.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reviews/conductor_round193_adjudication.md`
+
+## Round193-core-mask-is-Fourier-mode-predicate
+
+The close mask belongs to physical atoms before Fourier expansion and is inherited coordinatewise by every spectral copy.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reviews/conductor_round193_adjudication.md`
+
+## Round193-double-close-count-has-Y-multiplicity
+
+Height is the determinant h=Sv-Uw or Uw-vS and is fixed by the primitive coordinates; dyadic restriction only deletes atoms.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reviews/conductor_round193_adjudication.md`
+
+## Round193-S-has-D-choices-after-determinant
+
+For fixed kappa,g,U,v,w the determinant confines S to an interval of uniformly bounded length because kappa v is comparable to L.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reviews/conductor_round193_adjudication.md`
+
+## Round193-g-may-grow-like-D-on-live-close
+
+The hard cone, m comparable to L, and the lower close relation give a uniform finite bound for g throughout 1<=D<=L.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reviews/conductor_round193_adjudication.md`
+
+## Round193-k-one-required-for-close-count
+
+Cofactor coprimality is structural for the canonical involution but does not enter the absolute double-close incidence count.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reviews/conductor_round193_adjudication.md`
+
+## Round193-r-two-mod-four-required-for-close-count
+
+The congruence supplies character reversal on the subsidiary involutive sector but is irrelevant to the absolute count.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reviews/conductor_round193_adjudication.md`
+
+## Round193-character-reversal-is-needed-for-safe-bound
+
+The principal double-close sector is paid absolutely; character reversal is retained only as subsidiary algebra.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reviews/conductor_round193_adjudication.md`
+
+## Round193-residual-mask-invariance-needed-for-safe-bound
+
+Every literal predicate only deletes atoms in the absolute proof; selector invariance is needed only for the optional paired identity.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reviews/conductor_round193_adjudication.md`
+
+## Round193-D-beyond-sqrtL-is-free
+
+The absolute ledger contains LD^2; at D=L^(1/2+delta) it costs L^(2+2delta).
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reviews/conductor_round193_adjudication.md`
+
+## Round193-tau-g-is-canonical-involution-for-k-greater-than-one
+
+When (m,m')>1 the recomputed character gcd changes, so the same-g canonical involution can fail.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reviews/conductor_round193_adjudication.md`
+
+## Round193-modewise-orientation-pairing-is-valid
+
+The involution can change the primitive Fourier modulus; the complete anchor Fourier sum must be recombined before physical pairing.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reviews/conductor_round193_adjudication.md`
+
+## Round193-positive-capacity-of-complement-is-literal-lower-mass
+
+The width ledger is only an upper-capacity limitation and does not realize actual endpoint coefficients or lower-bound either complement.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reviews/conductor_round193_adjudication.md`
+
+## Round193-close-sector-proves-complete-core-or-t1
+
+Both disjoint first-failure complements remain open, as do complete rho-large and complete original t=1.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reviews/conductor_round193_adjudication.md`
+
+## Round193-close-sector-improves-global-exponent
+
+A strict subordinate hard-M1 sector closes no parent, endpoint theorem, bridge, or global exponent.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reviews/conductor_round193_adjudication.md`
+
+## Round194-report-agreement-proves-P2
+
+Independent reports can select a strategy but supply no determinant-fibre cancellation for the literal P2 operator.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round191-193-strategy-literature-review/reviews/conductor_round194_adjudication.md`
+
+## Round194-Boolean-first-failure-forces-P1-first
+
+The disjoint Boolean ordering supplies no theorem-readiness or power comparison; P2 retains a close coordinate and a concrete determinant-fibre seam.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round191-193-strategy-literature-review/reviews/conductor_round194_adjudication.md`
+
+## Round194-one-close-geometry-proves-P2-cancellation
+
+The close anchor gives g=O(1) and exact coordinates but no phase separation or endpoint-coefficient Gram saving.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round191-193-strategy-literature-review/reviews/conductor_round194_adjudication.md`
+
+## Round194-relative-positive-mass-contraction-is-equivalent-target
+
+No lower comparison makes the exact positive mass comparable to Y kappa u; proportional contraction is an optional stronger theorem, not the owner normalization.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round191-193-strategy-literature-review/reviews/conductor_round194_adjudication.md`
+
+## Round194-arbitrary-coefficient-dispersion-proves-P2
+
+Phase-conjugating bounded coefficients recover positive capacity, so any valid estimate must exploit the actual literal endpoint coefficient vectors.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round191-193-strategy-literature-review/reviews/conductor_round194_adjudication.md`
+
+## Round194-separate-orientation-norms-retain-required-sign
+
+The needed saving is under one outer real part; separate orientation norms erase the available joint sign.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round191-193-strategy-literature-review/reviews/conductor_round194_adjudication.md`
+
+## Round194-post-expansion-scalar-mask-equals-physical-P2-operator
+
+The affine-site mask has a nonzero commutator with height differencing and must be imposed on the physical source before the accepted operators.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round191-193-strategy-literature-review/reviews/conductor_round194_adjudication.md`
+
+## Round194-width-beyond-sqrtL-estimates-complements
+
+The accepted absolute ledger LD log L+LD^2 loses power beyond D=sqrt L and gives no bound for P1 or P2.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round191-193-strategy-literature-review/reviews/conductor_round194_adjudication.md`
+
+## Round194-static-Farey-refinement-proves-P2
+
+The complete strict Farey core already defeats static covering; another covector subdivision supplies no actual-coefficient saving.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round191-193-strategy-literature-review/reviews/conductor_round194_adjudication.md`
+
+## Round194-scaled-orientation-involution-controls-actual-P2-coefficients
+
+The finite involution is narrower and leaves the actual endpoint-product commutator uncontrolled.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round191-193-strategy-literature-review/reviews/conductor_round194_adjudication.md`
+
+## Round194-MRS-or-Shen-imports-to-first-failure-masks
+
+The audited fixed-prime-power complete product and prime-modulus scalar reciprocal theorems do not accept the moving physical masks, coefficients and one-outer-real-part norm.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round191-193-strategy-literature-review/reviews/conductor_round194_adjudication.md`
+
+## Round194-fixed-modulus-Kloosterman-saving-removes-project-deficit
+
+Restoring varying rows, conductors, endpoints and positive recombination retains the project deficit even under a fictitious scalar embedding.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round191-193-strategy-literature-review/reviews/conductor_round194_adjudication.md`
+
+## Round194-source-no-match-is-universal-literature-nonexistence
+
+The conclusion is dated and restricted to the named versioned primary corpus through 2026-08-30.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round191-193-strategy-literature-review/reviews/conductor_round194_adjudication.md`
+
+## Round194-GAR-route-passes-through-blockwise-M9
+
+The alternative bridge uses GAR, the proved total-active equivalence and M9-M2, bypassing blockwise M9-M1 and M9.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round191-193-strategy-literature-review/reviews/conductor_round194_adjudication.md`
+
+## Round194-remaining-label-BAL-has-critical-L4-to-L3-ledger
+
+The L4-to-L3 energy gap belongs only to the critical j=1 child; the remaining-label owner has an L^(3/2) packet target and no certified complete monomial capacity.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round191-193-strategy-literature-review/reviews/conductor_round194_adjudication.md`
+
+## Round194-P2-closes-complete-original-t1
+
+P1 remains open even after hypothetical P2 success.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round191-193-strategy-literature-review/reviews/conductor_round194_adjudication.md`
+
+## Round194-P2-closes-hard-M1-or-M9-M1
+
+Original t>=2, near resonance and the independent smooth direct-M1 parent remain open.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round191-193-strategy-literature-review/reviews/conductor_round194_adjudication.md`
+
+## Round194-P2-closes-M9-or-quarter-target
+
+Every M2 parent, endpoint and route-specific bridge obligation remains separate.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round191-193-strategy-literature-review/reviews/conductor_round194_adjudication.md`
+
+## Round194-strategy-review-improves-global-exponent
+
+No analytic theorem, parent, endpoint result, bridge or global theorem is proved.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round191-193-strategy-literature-review/reviews/conductor_round194_adjudication.md`
+
+## Round194-in-round-owner-pivot-is-authorized
+
+Round 195 must close or rigorously diagnose the frozen complete P2 interface before another owner is selected.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round191-193-strategy-literature-review/reviews/conductor_round194_adjudication.md`
+
+## Round195-full-P2-proved
+
+The exact packet region kappa<D_L and min(Y,D_L)>H_B \mathfrak m kappa remains open.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/conductor_round195_adjudication.md`
+
+## Round195-large-kappa-count-proves-small-kappa
+
+The L^2 physical count uses kappa>=D_L and does not extend to every small-kappa packet.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/conductor_round195_adjudication.md`
+
+## Round195-capacity-subsector-proves-all-P2
+
+The condition min(Y,D_L)<=H_B \mathfrak m kappa is a strict packet subsector with an explicit reverse complement.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/conductor_round195_adjudication.md`
+
+## Round195-positive-capacity-is-literal-lower-mass
+
+All displayed capacities are upper bounds; actual endpoint coefficients may vanish or cancel.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/conductor_round195_adjudication.md`
+
+## Round195-fixed-plus-anchor-ratio-is-minus-eaq
+
+At one retained mode the plus ratio is carry-dependent (-1)^c e(a/q), not uniformly -e(a/q).
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/conductor_round195_adjudication.md`
+
+## Round195-pre-Fourier-parity-multiplies-one-retained-mode
+
+The physical parity flip is recovered only after all anchor modes recombine and cannot be multiplied by a single-mode phase.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/conductor_round195_adjudication.md`
+
+## Round195-source-channel-labels-are-orthogonal
+
+Same-site current and previous channels have equal-phase Gram blocks and recombine to the original masked jump.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/conductor_round195_adjudication.md`
+
+## Round195-four-orientation-blocks-may-be-separated
+
+The +- and -+ Gram blocks are part of the one outer aggregate and cannot be discarded by separate norms.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/conductor_round195_adjudication.md`
+
+## Round195-squareful-blind-minus-family-is-live
+
+The U=p^2 family violates squarefree nonzero support and multiple live packet normalizations.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/conductor_round195_adjudication.md`
+
+## Round195-blind-shadow-violates-live-target
+
+Restoring u=gU makes the proposed coherent sqrt(U) family smaller than the fixed-packet target.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/conductor_round195_adjudication.md`
+
+## Round195-quadratic-root-bound-closes-P2
+
+The live U^epsilon root count does not price the anchor denominator or actual coefficient correlations.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/conductor_round195_adjudication.md`
+
+## Round195-determinant-multiplicity-controls-actual-Gram
+
+Fibre multiplicity alone controls neither endpoint-vector inner products nor square-root phases.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/conductor_round195_adjudication.md`
+
+## Round195-q-over-J-is-epsilon-loss
+
+The q/J Abel denominator must be paid explicitly and is canceled by projective J/q density only in the proved counts.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/conductor_round195_adjudication.md`
+
+## Round195-safe-packet-condition-is-physical-mask
+
+The small-kappa capacity condition is a spectral packet selector, not a post-expansion substitute for the physical P2 mask.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/conductor_round195_adjudication.md`
+
+## Round195-post-expansion-scalar-mask-equals-physical-sector
+
+P2 is imposed before Fourier expansion and height differencing; the core is rerun on the masked physical source.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/conductor_round195_adjudication.md`
+
+## Round195-mask-commutator-can-be-dropped
+
+Transported physical masking produces an exact commutator plus affine births and deaths in the recomputed core.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/conductor_round195_adjudication.md`
+
+## Round195-T-zero-may-be-omitted
+
+At T=0 the Farey projector is zero and the entire inherited rho-large remainder must be retained.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/conductor_round195_adjudication.md`
+
+## Round195-within-row-far-fibre-is-long
+
+A far-defect parity step changes height by v or U, so a live height block contains only O(1) samples per row.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/conductor_round195_adjudication.md`
+
+## Round195-outer-count-has-a-hidden-height-factor
+
+The determinant fixes h from the primitive coordinates; the direct physical count covers the whole Fejer range.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/conductor_round195_adjudication.md`
+
+## Round195-strict-capacity-sector-closes-original-t1
+
+P1, the strict P2 remainder, and other original-t incidences remain open.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/conductor_round195_adjudication.md`
+
+## Round195-strict-capacity-sector-closes-hard-M1-or-M9-M1
+
+The subordinate sectors do not close the hard small-t owner or the independent smooth M1 parent.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/conductor_round195_adjudication.md`
+
+## Round195-strict-capacity-sector-closes-M9-or-quarter-target
+
+M9-M1, M9-M2, endpoint uniformity, and both bridge routes remain incomplete.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/conductor_round195_adjudication.md`
+
+## Round195-strict-capacity-sector-improves-global-exponent
+
+No parent, bridge, or theorem endpoint is promoted, so no exponent changes.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/conductor_round195_adjudication.md`
+
+## Round196-parity-restored-shadow-is-literal-exact-conductor-atom
+
+The literal atom contains (-1)^t and the parity-restored form has the additional nonconstant E_U(S_0) factor.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/conductor_round196_adjudication.md`
+
+## Round196-dropping-EU-preserves-exact-conductor
+
+Deleting E_U(S_0) changes one literal fixed-conductor atom into a different operator.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/conductor_round196_adjudication.md`
+
+## Round196-multiplying-one-mode-by-EU-stays-in-packet
+
+Multiplication by E_U convolves all U-frequencies and mixes exact conductors, projective bands, and safe/core packets.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/conductor_round196_adjudication.md`
+
+## Round196-literal-x-step-multiplier-is-minus-eaq
+
+Every live-to-live adjacent step is nonwrap and has literal multiplier +e(a/q).
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/conductor_round196_adjudication.md`
+
+## Round196-live-wrap-supplies-denominator-cancellation
+
+The formal negative wrap lands at S_0=0 and is a live/dead zero-extension event, not a paired live cancellation.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/conductor_round196_adjudication.md`
+
+## Round196-coprimality-mask-deletes-wrap-without-boundary
+
+Zero extension retains the live/dead coprimality flip as an unpaired boundary atom with the original coefficient.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/conductor_round196_adjudication.md`
+
+## Round196-actual-height-event-is-uniform-Delta2-in-x
+
+The exact displacement is 2 epsilon_omega rho; strict T>=1 rows have |rho|>1 and the complete T=0 branch is not a unit-inverse selector.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/conductor_round196_adjudication.md`
+
+## Round196-T0-rho-is-never-unit
+
+At T=0 the accepted core does not exclude rho=+1 or rho=-1.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/conductor_round196_adjudication.md`
+
+## Round196-unit-inverse-T0-rows-prove-the-branch
+
+The unit-inverse selector cannot replace the complete T=0 remainder unless its literal complement is proved empty or estimated.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/conductor_round196_adjudication.md`
+
+## Round196-gamma-may-replace-beta-in-farey-selector
+
+The canonical Farey selector uses beta; gamma=beta+n rho is the distinct literal transport quotient.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/conductor_round196_adjudication.md`
+
+## Round196-minus-far-step-moves-common-x
+
+In the minus chart x is the retained close coordinate and the literal far w-step leaves x fixed.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/conductor_round196_adjudication.md`
+
+## Round196-primitive-4q-carrier-alone-proves-saving
+
+Primitivity belongs to the parity-restored shadow and supplies no literal fixed-packet estimate without a genuine event difference.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/conductor_round196_adjudication.md`
+
+## Round196-cumulative-antiderivative-is-cost-free
+
+A manufactured primitive has full support and endpoint capacity and is not an identity for the divisor-supported literal operator.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/conductor_round196_adjudication.md`
+
+## Round196-parity-commutator-is-boundary-only
+
+The E_U product-rule coefficient has modulus two on every live-to-live nonwrap edge.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/conductor_round196_adjudication.md`
+
+## Round196-full-anchor-recombination-estimates-high-conductor
+
+Full recombination returns to pre-conductor physical parity and removes the distinguished high-conductor coefficient.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/conductor_round196_adjudication.md`
+
+## Round196-capacity-is-literal-lower-mass
+
+The positive capacities and near-half controls delimit a method and do not prove nonvanishing or lower mass for the actual endpoint coefficients.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/conductor_round196_adjudication.md`
+
+## Round196-no-go-disproves-literal-P2
+
+The no-go is mechanism-specific and leaves a different coefficient-sensitive complete P2 estimate logically open.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/conductor_round196_adjudication.md`
+
+## Round196-no-go-proves-strict-sector
+
+The formal denominator-cancelling wrap has no live-to-live support and creates no nonempty target-safe sector.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/conductor_round196_adjudication.md`
+
+## Round196-no-go-closes-original-t1-or-owner
+
+Complete P2, P1, other original-t incidences, and the hard small-t owner remain open.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/conductor_round196_adjudication.md`
+
+## Round196-no-go-improves-global-exponent
+
+No parent, bridge, endpoint theorem, or target is promoted, so no exponent changes.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/conductor_round196_adjudication.md`
+
+## Round197-full-P2-proved
+
+Only the explicitly coded P_cc lower-swap sector is estimated; its exact three-piece physical complement remains open.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/conductor_round197_adjudication.md`
+
+## Round197-whole-P0-proved
+
+The proof requires common live sharp code; P_boundary(lit)=P_0(1-C_lit) retains full unresolved face capacity.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/conductor_round197_adjudication.md`
+
+## Round197-full-four-corner-rectangle-target-safe
+
+The simultaneous cross-coprime rectangle forces physical kappa=1 and misses the open packets 2<=kappa<D_L.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/conductor_round197_adjudication.md`
+
+## Round197-four-corner-rectangle-covers-all-small-kappa
+
+In the plus and minus primitive charts the required second cross gcd is exactly kappa, so full orbit closure requires kappa=1.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/conductor_round197_adjudication.md`
+
+## Round197-simultaneous-swap-supplies-character-cancellation
+
+On the alternating sector the simultaneous swap has relative multiplier s_0s_1=+1.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/conductor_round197_adjudication.md`
+
+## Round197-changed-gcd-corner-is-zero-extension
+
+A recomputed gcd g(m,beta), g(alpha,m') or g(m,m') is a different physical allocation, not a missing endpoint value.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/conductor_round197_adjudication.md`
+
+## Round197-missing-corner-may-be-deleted
+
+Every missing or dead corner is represented by literal zero extension and its live/dead boundary must remain in the orbit difference.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/conductor_round197_adjudication.md`
+
+## Round197-common-cell-sector-is-nonempty-or-dense
+
+The theorem asserts neither nonemptiness nor any quantitative mass or density for P_cc.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/conductor_round197_adjudication.md`
+
+## Round197-common-cell-capacity-is-literal-lower-mass
+
+All capacities are upper bounds and the actual endpoint coefficient may vanish or cancel.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/conductor_round197_adjudication.md`
+
+## Round197-arbitrary-bounded-endpoint-arrays-obey-common-cell-ledger
+
+The proof uses the exact K184 smooth, normalized-BV and selector product rule, not boundedness alone.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/conductor_round197_adjudication.md`
+
+## Round197-every-sharp-face-has-DL-squared-collar
+
+A ratio face aligned with g may be crossed by every O(LD_L) lower-close pair and leaves D_LL^2 capacity.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/conductor_round197_adjudication.md`
+
+## Round197-selector-commutator-can-be-dropped-unconditionally
+
+It vanishes only after the finite-g and distinct selected-prime gap audit; bounded shells are paid absolutely.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/conductor_round197_adjudication.md`
+
+## Round197-lower-closeness-leaves-unbounded-g-multiplicity
+
+The live shell, strict cone and lower-close inequality give a uniform fixed bound g<=G_0.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/conductor_round197_adjudication.md`
+
+## Round197-open-packet-condition-is-physical-orbit-mask
+
+The packet condition is applied only after the complete physical estimate through the accepted linear cap/open projector.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/conductor_round197_adjudication.md`
+
+## Round197-post-expansion-mask-equals-physical-Pcc
+
+P_cc is imposed on parent physical atoms before Fourier and height operations; transported-mask commutators and births/deaths remain.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/conductor_round197_adjudication.md`
+
+## Round197-Round193-double-close-collar-proves-P2-boundary
+
+Round 193 estimates the double-close sector, not the one-close P2 literal-face complement.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/conductor_round197_adjudication.md`
+
+## Round197-rewrite-Round195-node-with-refined-remainder
+
+The new theorem depends on Round 195; a reverse dependency or historical statement rewrite would create circular provenance.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/conductor_round197_adjudication.md`
+
+## Round197-sign-failure-and-gcd-failure-are-target-safe
+
+P_sf and P_gf are exact named complements and no target estimate is proved for either.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/conductor_round197_adjudication.md`
+
+## Round197-common-cell-sector-closes-original-t1-or-owner
+
+Complete P2, P1, other original-t incidences, and the hard small-t owner remain open.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/conductor_round197_adjudication.md`
+
+## Round197-common-cell-sector-closes-M9-M1-or-M9
+
+Both M1 parents, M2, endpoint uniformity and bridge requirements remain incomplete.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/conductor_round197_adjudication.md`
+
+## Round197-four-corner-no-go-disproves-P2
+
+The no-go is restricted to this allocation-orbit mechanism and supplies no lower bound for the literal operator.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/conductor_round197_adjudication.md`
+
+## Round197-common-cell-sector-improves-global-exponent
+
+No parent, bridge, endpoint theorem or target is promoted, so every exponent record is unchanged.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/conductor_round197_adjudication.md`
+
+## Round198-report-agreement-proves-P2-remainder
+
+The reports select a strategy and prove no cancellation estimate for the literal three-piece operator.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round195-197-strategy-literature-review/reviews/conductor_round198_adjudication.md`
+
+## Round198-smallest-kernel-means-smallest-named-atom
+
+The smallest proof kernel is the smallest exact completion kernel; a boundary-only theorem would leave two pieces of the same isolated P2 remainder open.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round195-197-strategy-literature-review/reviews/conductor_round198_adjudication.md`
+
+## Round198-boundary-only-theorem-satisfies-selected-Round199-exit
+
+The aligned face is the mandatory first stress test, but the theorem exit must price the full boundary/sign/gcd complement.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round195-197-strategy-literature-review/reviews/conductor_round198_adjudication.md`
+
+## Round198-complete-complement-may-use-separate-component-norms
+
+Taking separate moduli on the three failure channels can erase their only possible joint literal cancellation and is not the claimant operator.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round195-197-strategy-literature-review/reviews/conductor_round198_adjudication.md`
+
+## Round198-aligned-face-capacity-is-literal-lower-bound
+
+D_L L^2 is a positive/mechanism capacity; no nonvanishing, density, or lower mass is proved for the literal coefficient.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round195-197-strategy-literature-review/reviews/conductor_round198_adjudication.md`
+
+## Round198-aligned-face-capacity-disproves-P2
+
+The capacity defeats the audited common-cell route only and does not disprove a different coefficient-sensitive signed estimate.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round195-197-strategy-literature-review/reviews/conductor_round198_adjudication.md`
+
+## Round198-four-corner-kappa1-covers-open-packets
+
+The cross-coprime rectangle forces physical kappa=1 and cannot cover every live 2<=kappa<D_L packet.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round195-197-strategy-literature-review/reviews/conductor_round198_adjudication.md`
+
+## Round198-changed-gcd-corner-is-disposable-zero
+
+A recomputed-gcd corner is a different live physical allocation, not a missing zero-extended corner.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round195-197-strategy-literature-review/reviews/conductor_round198_adjudication.md`
+
+## Round198-sign-failure-piece-is-target-safe
+
+P_sf is an exact open component and no target estimate is proved for it.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round195-197-strategy-literature-review/reviews/conductor_round198_adjudication.md`
+
+## Round198-gcd-failure-piece-is-target-safe
+
+P_gf is an exact open component and no target estimate is proved for it.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round195-197-strategy-literature-review/reviews/conductor_round198_adjudication.md`
+
+## Round198-Pcc-upper-bound-implies-density-or-mass
+
+Round 197 explicitly proves no nonemptiness, density, nonvanishing, or positive-mass statement for P_cc.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round195-197-strategy-literature-review/reviews/conductor_round198_adjudication.md`
+
+## Round198-Gao-friability-theorem-proves-smooth-M1
+
+Prime-factor friability is not the project's smooth physical block and supplies no literal M1 coefficient estimate.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round195-197-strategy-literature-review/reviews/conductor_round198_adjudication.md`
+
+## Round198-Lamzouri-sectorial-resonance-is-fixed-X-upper-bound
+
+The source gives signed omega lower bounds and an existential resonance theorem over a long interval, not the required uniform upper estimate.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round195-197-strategy-literature-review/reviews/conductor_round198_adjudication.md`
+
+## Round198-Cloitre-equivalence-improves-circle-exponent
+
+The Fibonacci identity transports the classical discrepancy and its admissible exponent but creates no improved bound.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round195-197-strategy-literature-review/reviews/conductor_round198_adjudication.md`
+
+## Round198-MRS-complete-prime-power-product-imports-to-P2
+
+The theorem's fixed odd prime-power complete sum does not accept the moving physical masks, coefficients, conductors, endpoints, and norm placement.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round195-197-strategy-literature-review/reviews/conductor_round198_adjudication.md`
+
+## Round198-source-analogy-is-a-project-theorem
+
+Exponent-pair, moment, decoupling, trace, energy, shifted-correlation, and spectral analogies fail a literal hypothesis before a lawful power import.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round195-197-strategy-literature-review/reviews/conductor_round198_adjudication.md`
+
+## Round198-source-no-match-is-universal-literature-nonexistence
+
+The conclusion is dated and restricted to the named versioned primary corpus through 2026-08-31.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round195-197-strategy-literature-review/reviews/conductor_round198_adjudication.md`
+
+## Round198-complete-P2-remainder-closes-original-t1
+
+P1 and other original-t1 incidences remain open even after hypothetical success on the selected remainder.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round195-197-strategy-literature-review/reviews/conductor_round198_adjudication.md`
+
+## Round198-complete-P2-remainder-closes-hard-M1-or-M9-M1
+
+Original t>=2, large-G near resonance, and the independent smooth M1 parent remain open.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round195-197-strategy-literature-review/reviews/conductor_round198_adjudication.md`
+
+## Round198-complete-P2-remainder-closes-M9-or-quarter-target
+
+Every M2 parent, endpoint uniformity, and the route-specific bridges remain separate.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round195-197-strategy-literature-review/reviews/conductor_round198_adjudication.md`
+
+## Round198-GAR-route-bypasses-M9-M2
+
+The alternative route bypasses blockwise M1/M9 but still requires complete M9-M2.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round195-197-strategy-literature-review/reviews/conductor_round198_adjudication.md`
+
+## Round198-strategy-review-improves-global-exponent
+
+No analytic parent, endpoint theorem, bridge, or global theorem is proved.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round195-197-strategy-literature-review/reviews/conductor_round198_adjudication.md`
+
+## Round198-in-round-analytic-pivot-is-authorized
+
+Round 199 must close or rigorously diagnose its frozen complete P2 remainder mechanism before another owner is selected.
+
+Evidence:
+- `rounds/codex-managed/full-proof-round195-197-strategy-literature-review/reviews/conductor_round198_adjudication.md`
+
+## Round199-cross-gcd-factorization-proves-three-piece-target
+
+The factorization organizes the physical allocations but supplies no cancellation estimate for the complete P2 complement.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-cross-gcd-cellular-boundary-gate/reviews/conductor_round199_adjudication.md`
+
+## Round199-lawful-P2-triangle-incidence-cancels
+
+For one odd cross-gcd block the three actual character incidences are 1, t, and tp; the constant-endpoint triangle sum is nonzero in general.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-cross-gcd-cellular-boundary-gate/reviews/conductor_round199_adjudication.md`
+
+## Round199-flat-character-holonomy-implies-zero-boundary
+
+Holonomy +1 only shows path consistency; it does not make the three-edge augmented incidence vanish.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-cross-gcd-cellular-boundary-gate/reviews/conductor_round199_adjudication.md`
+
+## Round199-simultaneous-swap-has-negative-incidence
+
+The actual simultaneous lower-and-upper swap has character quotient +1.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-cross-gcd-cellular-boundary-gate/reviews/conductor_round199_adjudication.md`
+
+## Round199-missing-G00-corner-is-deletable
+
+The unique fourth product corner carries a structural coefficient and cannot be deleted from the exact endpoint identity.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-cross-gcd-cellular-boundary-gate/reviews/conductor_round199_adjudication.md`
+
+## Round199-missing-G00-corner-is-zero-extension
+
+The fourth corner is a live physical allocation rather than an absent point outside the canonical total domain.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-cross-gcd-cellular-boundary-gate/reviews/conductor_round199_adjudication.md`
+
+## Round199-changed-gcd-fourth-corner-is-P2-safe
+
+The fourth corner has gcd Aq and, on the audited aligned shell, satisfies the authoritative lower-first-failure P1 condition.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-cross-gcd-cellular-boundary-gate/reviews/conductor_round199_adjudication.md`
+
+## Round199-P1-requires-both-lower-and-upper-far
+
+The authoritative Round-193 definition of P1 is the lower-first-failure condition alone; an upper-far condition is not part of P1.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-cross-gcd-cellular-boundary-gate/reviews/conductor_round199_adjudication.md`
+
+## Round199-partial-cross-gcd-block-moves-preserve-P2
+
+Their recomputed lower and upper defect masks differ; the resulting terms are physical-mask commutators, not one P2 cellular boundary.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-cross-gcd-cellular-boundary-gate/reviews/conductor_round199_adjudication.md`
+
+## Round199-every-diagonal-allocation-image-is-Pgf
+
+Membership depends on the recomputed physical gcd and defect masks; diagonal-looking factor moves do not uniformly land in P_gf.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-cross-gcd-cellular-boundary-gate/reviews/conductor_round199_adjudication.md`
+
+## Round199-cap-open-projector-is-a-physical-orbit-mask
+
+The cap/open operation is a later linear spectral operation and cannot repair a failed physical allocation identity.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-cross-gcd-cellular-boundary-gate/reviews/conductor_round199_adjudication.md`
+
+## Round199-fixed-kappa-orientation-cancellation
+
+The lawful triangle transports kappa differently in the two orientations, so it is not an internal cancellation within one fixed packet.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-cross-gcd-cellular-boundary-gate/reviews/conductor_round199_adjudication.md`
+
+## Round199-aligned-face-automatically-gains-DL-over-L
+
+The exact ratio identity permits every non-tie close pair to cross the sharp face and gives no such small factor.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-cross-gcd-cellular-boundary-gate/reviews/conductor_round199_adjudication.md`
+
+## Round199-aligned-face-has-a-DL-squared-collar
+
+The sharp face retains ordinary D_L L^2 capacity; no second D_L saving follows from the exact allocation algebra.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-cross-gcd-cellular-boundary-gate/reviews/conductor_round199_adjudication.md`
+
+## Round199-sign-failure-edge-is-an-unmasked-difference
+
+The sign channel remains coupled to changing physical masks and cannot be replaced by a free coefficient difference.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-cross-gcd-cellular-boundary-gate/reviews/conductor_round199_adjudication.md`
+
+## Round199-capacity-proves-positive-lower-mass
+
+Capacity is only a mechanism upper envelope; no nonemptiness, density, nonvanishing, or lower bound is proved.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-cross-gcd-cellular-boundary-gate/reviews/conductor_round199_adjudication.md`
+
+## Round199-cellular-no-go-disproves-the-three-piece-theorem
+
+The no-go is restricted to the specified cross-gcd cellular mechanism and leaves other coefficient-sensitive estimates possible.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-cross-gcd-cellular-boundary-gate/reviews/conductor_round199_adjudication.md`
+
+## Round199-no-go-closes-P2-t1-M1-M9-or-quarter-target
+
+The P2 complement itself remains open, as do P1, other t ranges, smooth M1, all M2 parents, endpoint uniformity, M9, both bridges, and the quarter target.
+
+Evidence:
+- `rounds/codex-managed/m9-m1-t1-p2-cross-gcd-cellular-boundary-gate/reviews/conductor_round199_adjudication.md`

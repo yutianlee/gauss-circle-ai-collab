@@ -1,0 +1,224 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 164,
+    "round_type": "m9_m2_hard_top_t1_residual_signed_divisor_transport_gate",
+    "campaign_id": "m9-m2-hard-top-t1-residual-signed-divisor-transport-gate",
+    "title": "M2 hard-TOP t=1 complete residual signed-divisor transport gate",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "81690ebb72b0dedd99bdb6c6127f947df696a901a22af3f65ac8738209125306",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "planned_numerical_percent": 0,
+      "literature_policy": "Derive the exact residual Abel, transport, unmatched-mass, profile-jump, outer-phase, and power ledgers first. Use a primary fixed-modulus prime-distribution source only if a semiprime or multiprime capacity statement becomes promotion-relevant; raw counts remain diagnostic and never certify physical oscillatory mass."
+    },
+    "target_obligations": [
+      "M9-M2-hard-top-t1-close-opposite-prime-exchange-sector",
+      "M9-M2-top-endpoint-signed-cone",
+      "M9-M2-top-endpoint-density-discrepancy-energy",
+      "M9-M2-hard-top-t1-character-poisson-product-collar-obstruction",
+      "M9-M2-hard-top-radical-long-channel-exact-collision-control",
+      "M9-M2-hard-top-radical-frequency-common-test-source-obstruction",
+      "M9-M2-dyadic-weight-nondegeneracy",
+      "H4-Phi-regularity"
+    ],
+    "frozen_target": {
+      "question": "Can the complete literal residual t=1 scalar after subtracting exactly the Round-163 close-opposite-prime XOR incidence sector be bounded by L^(3/2)X^epsilon through an exact cumulative signed-divisor or monotone-transport identity, possibly retaining cross-N square-root phase cancellation; or do unmatched sign mass, transport distance, hard amplitude jumps, diagnostic semiprime capacity, rank-one product geometry, or restored powers repay the full L^(1/2-o(1)) gain?",
+      "reference_formula": "S_(L,1)^rem=sum_(N asymp L^2)mu^2(N)(L^2/N)^(3/4)e(Jsqrt(N)) sum_(d|N,d odd)chi4(d)rho_N(d)A_N(d), where rho_N is one if no pair was selected and otherwise retains exactly neither/both selected-prime incidences. A_N is the literal zero-extended eta_L Phi W amplitude with every half-open shell, cone, floor, star, endpoint, and parity convention. The target is |S_(L,1)^rem|<<_epsilon L^(3/2)X^epsilon.",
+      "quantities": [
+        "J=sqrt(X), y=floor(J), q_X=X/y^2, H=floor(yX^(-1/4)), and 1<<L<<H<=J^(1/2).",
+        "For each N, the accepted selector depends on N,L,kappa and not on the divisor allocation; it may be absent.",
+        "The residual contains every no-pair product and every neither-selected-prime or both-selected-prime incidence, with the accepted XOR sector subtracted exactly once.",
+        "For ordered residual odd divisors d_i, sigma_i=chi4(d_i), and C_j=sum_(i<=j)sigma_i, exact Abel gives sum_i sigma_i A_i=C_r A_r+sum_(j<r)C_j(A_j-A_(j+1)).",
+        "Equal-mass monotone transport, unequal sign mass, hard jump terms, and zero-extension cemetery terms are distinct.",
+        "The outer phase e(Jsqrt(N)) is constant within one N but must remain available across N if positive transport exceeds target.",
+        "Positive capacity may be L^(2+o(1)); the target requires L^(1/2-o(1)) cancellation after every literal cost.",
+        "No t=1 result transfers automatically to other few-point channels, hard TOP, smooth M2 packets, M9-M2, M9, the bridge, or a global exponent."
+      ]
+    },
+    "completion_criteria": [
+      "Define the residual indicator exactly for no-pair and selected-pair products and prove that the accepted XOR incidence sector is removed once and only once.",
+      "Derive the ordered-divisor Abel and cumulative Stieltjes identities for odd and even N with the literal zero extension and endpoint conventions.",
+      "Classify equal character mass, unmatched sign mass, monotone transport, cemetery atoms, and every hard amplitude jump without assuming a perfect matching.",
+      "Restore the total logarithmic displacement, cumulative discrepancy, incidence multiplicity, and L-H-J-X power ledger.",
+      "If semiprime or multiprime capacity is used, prove the exact residual and profile placement, audit any primary prime-distribution input, and quarantine raw counts from physical lower-mass claims.",
+      "If within-N positive transport is too large, retain e(Jsqrt(N)) and derive the smallest exact cross-N coefficient norm, bilinear form, or oscillatory theorem needed; compare it with the accepted rank-one product-collar obstruction.",
+      "Prove the residual target, an owner-complete quantitatively defined residual sector, or the smallest rigorous residual transport no-go.",
+      "Close under exactly one label: hard_top_t1_residual_target, strict_t1_residual_transport_sector, or hard_top_t1_residual_transport_no_go."
+    ],
+    "controls": [
+      "residual_exact_subtraction",
+      "ordered_divisor_abel_identity",
+      "odd_divisor_and_even_N_branch",
+      "sign_mass_and_unmatched_atoms",
+      "monotone_transport_normalization",
+      "profile_jump_and_zero_extension_variation",
+      "semiprime_multiprime_capacity",
+      "outer_N_phase_preservation",
+      "rank_one_product_collar_comparison",
+      "arbitrary_real_centre_phase",
+      "missing_L_half_power",
+      "physical_coefficient_vs_diagnostic",
+      "remaining_few_point_and_downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "complete_residual_transport_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "active",
+        "target": "Attack the complete literal residual, not another sparse sector. Derive the exact cumulative-discrepancy and monotone-transport identities, attempt the full target, and if positive transport fails retain the outer square-root phase and isolate or prove the smallest cross-N signed theorem that could recover the missing half-power.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round164_m2_hard_top_t1_residual_signed_divisor_transport_strategy.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/barrier_packet.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/candidates/conductor_round164_residual_transport_seed.md",
+          "proofs/kernels/m9_m2_hard_top_t1_close_opposite_prime_exchange_sector.md",
+          "proofs/kernels/m9_m2_hard_top_t1_character_poisson_product_collar_obstruction.md",
+          "proofs/kernels/m9_m2_hard_top_radical_long_channel_collision_common_test_obstruction.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/synthesis.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reports/literal_near_square_divisor_involution_attack.md"
+        ],
+        "required_controls": [
+          "residual_exact_subtraction",
+          "ordered_divisor_abel_identity",
+          "odd_divisor_and_even_N_branch",
+          "sign_mass_and_unmatched_atoms",
+          "monotone_transport_normalization",
+          "profile_jump_and_zero_extension_variation",
+          "outer_N_phase_preservation",
+          "rank_one_product_collar_comparison",
+          "arbitrary_real_centre_phase",
+          "missing_L_half_power",
+          "physical_coefficient_vs_diagnostic",
+          "remaining_few_point_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section analytic report satisfying the repository report contract.",
+          "The exact residual Abel, transport, unmatched, profile-jump, outer-phase, and power ledgers.",
+          "A target theorem, owner-complete quantitative sector, or smallest rigorously scoped transport and cross-N frontier.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reports/complete_residual_transport_attack.md"
+      },
+      {
+        "id": "blind_residual_transport_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "active",
+        "target": "Starting only from the frozen residual statement, independently derive the exact ordered-divisor Abel or Stieltjes identity, unequal-mass correction, hard-jump terms, target power ledger, and the first necessary cross-N theorem if within-product transport does not close.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "state/active_campaign.yml",
+          "all strategy files",
+          "all Round-164 nonblind artifacts",
+          "all Round-164 sibling reports",
+          "the Round-164 conductor seed",
+          "all Round-163 reports, candidates, reviews, controls, kernels, and synthesis",
+          "all earlier residual or divisor-transport campaign artifacts"
+        ],
+        "required_controls": [
+          "residual_exact_subtraction",
+          "ordered_divisor_abel_identity",
+          "odd_divisor_and_even_N_branch",
+          "sign_mass_and_unmatched_atoms",
+          "monotone_transport_normalization",
+          "profile_jump_and_zero_extension_variation",
+          "outer_N_phase_preservation",
+          "arbitrary_real_centre_phase",
+          "missing_L_half_power",
+          "physical_coefficient_vs_diagnostic",
+          "remaining_few_point_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section statement-only analytic report satisfying the repository report contract.",
+          "An independent exact residual, cumulative-discrepancy, unmatched-mass, hard-jump, and target-power derivation.",
+          "A target theorem or first rigorously isolated missing within-N or cross-N estimate.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reports/blind_residual_transport_rederivation.md"
+      },
+      {
+        "id": "unmatched_transport_capacity_hostile_audit",
+        "role": "barrier_no_go",
+        "access_mode": "selected_context",
+        "status": "active",
+        "target": "Hostilely test whether the residual sign masses are balanced or transport-cheap. Construct exact semiprime and multiprime residual controls, quantify literal or coefficient-uniform unmatched capacity, audit any prime-distribution source, and determine precisely what outer-N cancellation remains possible without misstating a route obstruction as physical mass.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round164_m2_hard_top_t1_residual_signed_divisor_transport_strategy.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/barrier_packet.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/candidates/conductor_round164_residual_transport_seed.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reports/literal_near_square_divisor_involution_attack.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reports/prime_toggle_complement_leakage_hostile_audit.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/conductor_round163_adjudication.md",
+          "proofs/kernels/m9_m2_hard_top_t1_close_opposite_prime_exchange_sector.md",
+          "proofs/kernels/m9_m2_hard_top_t1_character_poisson_product_collar_obstruction.md",
+          "rounds/codex-managed/m9-m1-near-product-character-kernel/reports/character_divisor_attack.md"
+        ],
+        "required_controls": [
+          "residual_exact_subtraction",
+          "ordered_divisor_abel_identity",
+          "odd_divisor_and_even_N_branch",
+          "sign_mass_and_unmatched_atoms",
+          "monotone_transport_normalization",
+          "profile_jump_and_zero_extension_variation",
+          "semiprime_multiprime_capacity",
+          "outer_N_phase_preservation",
+          "rank_one_product_collar_comparison",
+          "arbitrary_real_centre_phase",
+          "missing_L_half_power",
+          "physical_coefficient_vs_diagnostic",
+          "remaining_few_point_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section hostile analytic and source-audit report satisfying the repository report contract.",
+          "Exact residual countermodels or a proved target transport bound, with source hypotheses, profile scope, unmatched mass, and powers fully restored.",
+          "A smallest route-scoped no-go and exact surviving cross-N theorem if the target does not follow.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reports/unmatched_transport_capacity_hostile_audit.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "residual_bookkeeping_and_abel",
+        "requirement": "Verify exact one-time subtraction, ordered residual divisor universe, odd/even branches, Abel identity, endpoint term, and zero extension."
+      },
+      {
+        "id": "transport_unmatched_and_profile_power",
+        "requirement": "Verify monotone transport normalization, unequal sign mass, cemetery atoms, hard jumps, profiles, incidence multiplicity, and every L-H-J-X power."
+      },
+      {
+        "id": "capacity_source_and_physical_scope",
+        "requirement": "Audit semiprime and multiprime constructions and every source hypothesis; distinguish coefficient-uniform capacity from literal weighted physical mass."
+      },
+      {
+        "id": "outer_phase_and_downstream_scope",
+        "requirement": "Retain cross-N square-root phase after within-N failure, compare with the rank-one collar, and prevent transfer to other channels, parents, M9, target, or exponents."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "81690ebb72b0dedd99bdb6c6127f947df696a901a22af3f65ac8738209125306",
+    "generated_at": "2026-08-26T00:49:39.102222+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

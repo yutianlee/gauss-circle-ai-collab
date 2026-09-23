@@ -1,0 +1,285 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 198,
+    "round_type": "full_proof_round195_197_strategy_current_literature_review",
+    "campaign_id": "full-proof-round195-197-strategy-literature-review",
+    "title": "Full-proof frontier and current-primary-literature reassessment after Rounds 195--197",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "8aea2ab5b088a0b29a434347ffc4509c70e79f53e450814920e3c83165a1ab69",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "planned_numerical_percent": 0,
+      "computation_policy": "No numerical theorem evidence is planned. Python or Mathematica may be used only for bounded graph, source-metadata, algebraic-consistency, or power-ledger checks; every computation remains diagnostic_only."
+    },
+    "target_obligations": [
+      "M9-M1",
+      "M9-M1-top-endpoint-signed-cone",
+      "M9-M1-hard-top-high-radical-small-t-residual-estimate",
+      "M9-M1-hard-top-t1-rho-large-P2-absolute-capacity-sectors",
+      "M9-M1-hard-top-t1-rho-large-P2-common-cell-allocation-commutator-sector",
+      "M9-M1-direct-smooth-residual-blockwise-estimate",
+      "M9-M1-global-angular-radial-estimate",
+      "M9-M1-global-lower-radial-signed-estimate",
+      "M9-M2",
+      "M9-M2-top-endpoint-signed-cone",
+      "M9-M2-top-endpoint-density-discrepancy-energy",
+      "M9-M2-smooth-balanced-quarter-packet-estimate",
+      "M9-M2-smooth-unbalanced-three-quarter-estimate",
+      "M9-endpoint-uniformity",
+      "M9",
+      "Conditional-bridge",
+      "GC-global-M1-alternative-bridge",
+      "GC-partial-one-third",
+      "GC-external-Li-Yang-theta-star",
+      "GC-target"
+    ],
+    "frozen_target": {
+      "question": "After analytic Rounds 195--197, what is the exact full-proof frontier on both lawful quarter routes, does primary literature current through 2026-08-31 supply a theorem matching any live literal interface, especially the exact remaining P2 boundary/sign/gcd complement, and which single genuinely fresh owner-compatible theorem should Round 199 attack?",
+      "reference_formula": "Reconstruct every open dependency from the quarter target through direct hard/smooth M1 or the GAR alternative, M2 hard-TOP/BAL/UNBAL, endpoint uniformity, and both bridges. On the exact Round-195 open packets kappa<D_L and min(Y,D_L)>H_B mathfrak m kappa, Round 197 proves only P_cc and leaves P_boundary(lit) dotcup P_sf dotcup P_gf. Compare that complement, the disjoint P1 sector, other original-t and large-G incidences, smooth M1, GAR, and all M2 parents by literal formula, target, positive capacity, missing power, coefficient class, parked obstructions, owner leverage, and source hypotheses before selecting exactly one Round-199 objective.",
+      "quantities": [
+        "Round 195 proves all kappa>=D_L packets and all kappa<D_L packets with min(Y,D_L)<=H_B mathfrak m kappa at outer O(L^2X^epsilon).",
+        "Round 196 proves that the parity-restored primitive-4q carrier is not a literal fixed exact-conductor cancellation and supplies no new P2 sector.",
+        "Round 197 proves the exact physical P_cc lower-allocation common-cell sector at outer O(L^2X^epsilon), with no nonemptiness, density, or positive-mass assertion.",
+        "The exact remaining P2 seam is {kappa<D_L, min(Y,D_L)>H_B mathfrak m kappa} intersected with P_boundary(lit) dotcup P_sf dotcup P_gf; the aligned literal sharp face is the first named unresolved component.",
+        "The complete four-corner cross-coprime rectangle forces physical kappa=1 and an aligned sharp face may retain D_LL^2 capacity; this is a mechanism no-go, not a lower bound or disproof of P2.",
+        "Even complete P2 success leaves all of P1, the rest of original t=1, every original t>=2 small-G incidence, and the large-G near-resonant complement open inside the hard-M1 owner.",
+        "The independent smooth M1 parent has an accepted X^(1/3+o(1)) menu capacity at its first critical profile and misses X^(1/12) relative to the quarter target.",
+        "The GAR alternative still requires the full lower-radial signed aggregate and its remaining D=d=L=1 variable-mask wave, all other layers, and the independent cross owner.",
+        "M2 hard TOP, BAL, and UNBAL remain separate open parents; no Round-195--197 result changes them.",
+        "Endpoint uniformity, M9, both bridges, and the quarter target remain open or conditional. Internal exponent 1/3, accepted external benchmark 0.3144831759740614..., and target 1/4 are unchanged.",
+        "The source audit must be primary, versioned, hypothesis-exact, power-restored, dated through 2026-08-31, and explicitly mapped to the P2 complement and every competing live interface.",
+        "Round 198 selects exactly one Round-199 objective but promotes no analytic estimate, parent, endpoint theorem, bridge, global theorem, or exponent."
+      ]
+    },
+    "completion_criteria": [
+      "Reconstruct both lawful quarter-proof trees from the authoritative graph and verify every open or closed dependency and route-specific connector.",
+      "Compare every live direct-M1, GAR, M2 hard-TOP, BAL, UNBAL, endpoint, bridge, and graded frontier with exact target, capacity, missing power, literal coefficients, owner leverage, and parked obstructions.",
+      "Audit the exact remaining P2 P_boundary(lit), P_sf, and P_gf components, all of P1, and their separation from other original-t and near-resonant hard-M1 incidences.",
+      "Audit primary literature current through 2026-08-31, recording exact versions, theorem numbers, hypotheses, URLs, project parameter maps, restored powers, and first failed project hypotheses.",
+      "Receive a statement-only independent ranking of the complete frontier and exactly one Round-199 recommendation.",
+      "Select one and only one Round-199 analytic objective with literal formula, promotion gate, genuinely new seam, false controls, stop rule, and downstream scope.",
+      "Review dependency and power selection, source and hypothesis currency, and post-unmask isolated-selection consistency.",
+      "Apply no graph change without a mechanically valid strategy-only State Patch, reverse/replay, protected-scope, and exponent-quarantine audits.",
+      "Close under exactly one label: strategy_frontier_retained, strategy_frontier_reselected, or strategy_source_update_only."
+    ],
+    "controls": [
+      "both_lawful_quarter_routes",
+      "open_owner_and_dependency_status",
+      "Round195_197_exact_residual_frontiers",
+      "round195_open_packet_condition",
+      "round197_Pcc_and_exact_three_piece_complement",
+      "aligned_literal_sharp_face_capacity",
+      "P1_other_t_and_large_G_separation",
+      "hard_M1_small_t_and_smooth_separation",
+      "GAR_alternative_route_scope",
+      "hard_TOP_remaining_channels",
+      "critical_and_remaining_BAL_scopes",
+      "UNBAL_literal_vector_owner",
+      "endpoint_and_bridge_scope",
+      "graded_sub_one_third_lane",
+      "target_capacity_missing_power",
+      "literal_coefficient_and_absolute_value_interface",
+      "primary_source_currency",
+      "theorem_hypothesis_and_version_audit",
+      "restored_project_power",
+      "dated_no_match_scope",
+      "single_Round199_objective",
+      "strategy_only_no_analytic_promotion",
+      "exponent_quarantine",
+      "no_in_round_analytic_pivot"
+    ],
+    "exit_labels": [
+      "strategy_frontier_retained",
+      "strategy_frontier_reselected",
+      "strategy_source_update_only"
+    ],
+    "tasks": [
+      {
+        "id": "full_graph_frontier_reconstruction_after_round197",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "completed",
+        "target": "Reconstruct both complete lawful quarter-proof trees after Round 197, compare every live frontier by exact power, genuine new seam, and owner leverage, and recommend exactly one Round-199 theorem.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "state/best_proof_draft.md",
+          "state/project_summary.md",
+          "strategy/round198_full_proof_strategy_current_literature_review.md",
+          "rounds/codex-managed/full-proof-round191-193-strategy-literature-review/synthesis.md",
+          "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/synthesis.md",
+          "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/synthesis.md",
+          "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/synthesis.md",
+          "proofs/kernels/m9_m1_hard_top_t1_p2_absolute_capacity_sectors.md",
+          "proofs/kernels/m9_m1_hard_top_t1_p2_on_shell_carrier_normalization_self_return.md",
+          "proofs/kernels/m9_m1_hard_top_t1_p2_common_cell_allocation_commutator_sector.md"
+        ],
+        "required_controls": [
+          "both_lawful_quarter_routes",
+          "open_owner_and_dependency_status",
+          "Round195_197_exact_residual_frontiers",
+          "round195_open_packet_condition",
+          "round197_Pcc_and_exact_three_piece_complement",
+          "aligned_literal_sharp_face_capacity",
+          "P1_other_t_and_large_G_separation",
+          "hard_M1_small_t_and_smooth_separation",
+          "GAR_alternative_route_scope",
+          "hard_TOP_remaining_channels",
+          "critical_and_remaining_BAL_scopes",
+          "UNBAL_literal_vector_owner",
+          "endpoint_and_bridge_scope",
+          "graded_sub_one_third_lane",
+          "target_capacity_missing_power",
+          "single_Round199_objective",
+          "strategy_only_no_analytic_promotion",
+          "exponent_quarantine",
+          "no_in_round_analytic_pivot"
+        ],
+        "required_output": [
+          "A seven-section analytic strategy report satisfying the repository report contract.",
+          "Two exact dependency trees and a frontier comparison table with target, capacity, missing power, genuinely new mechanism, owner leverage, and downstream scope.",
+          "Exactly one Round-199 objective with literal formula, promotion gate, false controls, and stop rule.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/full-proof-round195-197-strategy-literature-review/reports/full_graph_frontier_reconstruction_after_round197.md"
+      },
+      {
+        "id": "current_primary_literature_reassessment_after_round197",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "status": "completed",
+        "target": "Audit primary literature current through 2026-08-31 for exact matches to every live project interface, especially the Round-197 P2 literal-boundary/sign/gcd complement, and report applicability or the first failed hypothesis with restored project powers.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round198_full_proof_strategy_current_literature_review.md",
+          "rounds/codex-managed/full-proof-round191-193-strategy-literature-review/reports/current_primary_literature_reassessment_after_round193.md",
+          "rounds/codex-managed/full-proof-round191-193-strategy-literature-review/reviews/source_hypotheses_currency_interface_review.md",
+          "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/synthesis.md",
+          "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/synthesis.md",
+          "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/synthesis.md",
+          "proofs/kernels/m9_m1_hard_top_t1_p2_common_cell_allocation_commutator_sector.md",
+          "sources/li_yang_2023.md",
+          "sources/milicevic_robinson_shupe_2026.md",
+          "sources/xiao_2026.md",
+          "sources/tao_trudgian_yang_2025.md",
+          "sources/popov_2024_local_moments.md",
+          "sources/popov_2024_voronoi_gauss.md",
+          "sources/bourgain_watt.md",
+          "sources/huxley_2003.md"
+        ],
+        "required_controls": [
+          "primary_source_currency",
+          "theorem_hypothesis_and_version_audit",
+          "restored_project_power",
+          "dated_no_match_scope",
+          "literal_coefficient_and_absolute_value_interface",
+          "Round195_197_exact_residual_frontiers",
+          "round197_Pcc_and_exact_three_piece_complement",
+          "aligned_literal_sharp_face_capacity",
+          "P1_other_t_and_large_G_separation",
+          "hard_M1_small_t_and_smooth_separation",
+          "GAR_alternative_route_scope",
+          "hard_TOP_remaining_channels",
+          "critical_and_remaining_BAL_scopes",
+          "UNBAL_literal_vector_owner",
+          "graded_sub_one_third_lane",
+          "strategy_only_no_analytic_promotion",
+          "exponent_quarantine"
+        ],
+        "required_output": [
+          "A seven-section source report satisfying the repository report contract.",
+          "Exact primary URLs, current versions, theorem numbers, hypotheses, project parameter maps, restored powers, and first failed hypotheses.",
+          "A dated corpus-scoped source conclusion rather than a universal impossibility claim.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/full-proof-round195-197-strategy-literature-review/reports/current_primary_literature_reassessment_after_round197.md"
+      },
+      {
+        "id": "blind_round199_frontier_selection",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "completed",
+        "target": "From the isolated full-frontier packet, independently rank every lawful analytic interface and select exactly one Round-199 objective without graph, strategy, source, or sibling context.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/full-proof-round195-197-strategy-literature-review/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "state/active_campaign.yml",
+          "all strategy files",
+          "all source cards and web-search results",
+          "all prior round reports, reviews, controls, candidates, kernels and synthesis",
+          "all Round-198 sibling reports, reviews, controls and conductor analysis"
+        ],
+        "required_controls": [
+          "both_lawful_quarter_routes",
+          "Round195_197_exact_residual_frontiers",
+          "round195_open_packet_condition",
+          "round197_Pcc_and_exact_three_piece_complement",
+          "aligned_literal_sharp_face_capacity",
+          "P1_other_t_and_large_G_separation",
+          "hard_M1_small_t_and_smooth_separation",
+          "GAR_alternative_route_scope",
+          "hard_TOP_remaining_channels",
+          "critical_and_remaining_BAL_scopes",
+          "UNBAL_literal_vector_owner",
+          "endpoint_and_bridge_scope",
+          "graded_sub_one_third_lane",
+          "target_capacity_missing_power",
+          "single_Round199_objective",
+          "strategy_only_no_analytic_promotion",
+          "exponent_quarantine"
+        ],
+        "required_output": [
+          "A seven-section statement-only report satisfying the repository report contract.",
+          "A complete independent ranking with exact targets, capacities, owner leverage, hidden connectors, false controls, and stop rules.",
+          "Exactly one Round-199 recommendation and the reason each alternative ranks lower.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/full-proof-round195-197-strategy-literature-review/reports/blind_round199_frontier_selection.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "dependency_power_and_selection",
+        "requirement": "Verify both proof trees, all open owners, exact targets, capacities, missing powers, and the single-objective selection."
+      },
+      {
+        "id": "round197_residual_owner_separation",
+        "requirement": "Verify the exact P2 common-cell/complement partition, aligned-face capacity, P1 boundary, and separation from other original-t and near-resonant incidences."
+      },
+      {
+        "id": "source_hypotheses_currency_and_interface",
+        "requirement": "Verify primary-source versions, theorem statements, hypotheses, URLs, parameter maps, restored powers, official cutoff, and dated no-match scope."
+      },
+      {
+        "id": "blind_post_unmask_frontier_selection",
+        "requirement": "Verify the statement-only ranking against the full graph and reconcile notation or owner-scope mismatch without voting."
+      },
+      {
+        "id": "strategy_and_exponent_scope",
+        "requirement": "Allow strategy evidence and next-action changes only; prohibit analytic theorem, parent, endpoint, bridge, global theorem, or exponent promotion."
+      }
+    ],
+    "scheduled_review": "Round 202 is the next mandatory full-proof strategy and current-primary-literature checkpoint after analytic Rounds 199--201."
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "8aea2ab5b088a0b29a434347ffc4509c70e79f53e450814920e3c83165a1ab69",
+    "generated_at": "2026-08-30T16:41:33.953541+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

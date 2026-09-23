@@ -1,0 +1,159 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-hard-top-t1-residual-fejer-parity-gcd-scale-reduction",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Hard-TOP t=1 residual Fejer parity, tangent, gcd, and scale reduction",
+        "status": "proved_internal",
+        "statement_tex": "Retain the complete literal Round-164 residual coefficient c_N^rem, zero-extended on a containing interval of M_L asymp L^2 sites, with D_L=sum_N|c_N^rem|^2<<_epsilon L^2X^epsilon. For every positive integer R, the exact sliding energy is E_R=R^(-1)sum_s|sum_(0<=j<R)c_(s+j)^rem e(Jsqrt(s+j))|^2=D_L+2Re C_R and |S_(L,1)^rem|^2<=((M_L+R-1)/R)E_R. Splitting every window by absolute site parity gives E_R<=2E_R^(2), where E_R^(2) retains exactly even gaps, with the exact odd-R endpoint weights. At R_0=ceil(L), tangent coordinates a=d'-d and b=m'-m give r=db+am+ab, chi_4(d')chi_4(d)=(-1)^(a/2), O(L^2) atoms in the complete a,b>=0 sector, empty nonpositive sectors, and ab<0 otherwise. With g=(d,d'), the exact rows have fixed character, O(1+g) points, and |C_(R_0,g>=G_0)^rem|<<_epsilon L^3G_0^(-1)X^epsilon, so every fixed-fraction high-g sector is target-safe. The cofactor-gcd rows have product step 2mm'/(m,m') and character sigma_0(-1)^((r mod 2)k), hence frozen character on even shifts, including the squarefree even-even branch. The exact phase derivative ledger gives |Psi'| asymp Jh/L, Psi'' asymp Jh/(sL), and |Psi'''| asymp Jh/(s^2L), but no uniform modulo-one separation; positive second-derivative and absolute-dual-mode placements are adverse only in their stated scope. The residual target follows at the minimal scale from the open even-shift, opposing-displacement, low-g aggregate (165.K17a). Alternatively, at R=M_L, fixed-shift Cauchy pays all r<R_0 within the L^3X^epsilon energy budget and the target follows from the distinct open even medium/long aggregate (165.K26). Neither open aggregate is proved, and no complete residual, full t=1, other channel, hard-TOP parent, smooth packet, M9-M2, M9-M1, endpoint, M9, bridge, quarter theorem, or exponent conclusion follows.",
+        "dependencies": [
+          "M9-M2-hard-top-t1-residual-transport-fejer-energy-reduction"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "proofs/kernels/m9_m2_hard_top_t1_residual_fejer_parity_gcd_scale_reduction.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/candidates/conductor_round165_gcd_parity_progression_reduction.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/candidates/conductor_round165_variable_scale_fejer_bypass.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reports/actual_residual_short_shift_attack.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reports/blind_fejer_short_shift_rederivation.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reports/short_shift_arithmetic_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/parity_connector_high_gcd_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/tangent_gcd_parity_seam_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/variable_scale_fejer_bypass_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/terminal_kernel_mathematical_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/kernel_parity_scale_repair_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/kernel_final_repair_verification.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/downstream_graph_state_scope_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/state_patch_scope_round165.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/conductor_round165_adjudication.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "At the minimal scale, prove (165.K17a) with one outer real part and every literal weight retained; alternatively prove the maximal-scale even medium/long theorem (165.K26). Compare both with a direct scalar route in the scheduled Round-166 full-proof strategy and current-literature review."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-hard-top-t1-residual-transport-fejer-energy-reduction",
+        "statement_tex": "Let J=sqrt(X), 1<<L<<H<=J^(1/2), and subtract exactly the accepted canonical close-opposite-prime XOR incidence sector from the literal squarefree hard-TOP t=1 scalar. For N=2^nu M_N with M_N odd, retain all odd divisors if no pair is selected and otherwise use rho_N(d)=1-1_(p|d)-1_(q|d)+2 1_(p|d)1_(q|d), so only neither/both incidences remain. The residual sign mass is product_(r|M_N)(1+chi_4(r)) with no pair and zero with a selected pair. For ordered residual divisors, C_j=sum_(i<=j)chi_4(d_i), a_0=a_(r+1)=0, exact Abel gives b_N^rem=-sum_(j=0)^r C_j(a_(j+1)-a_j), hence |b_N^rem|<=(osc C_N/2)sum_j|a_(j+1)-a_j| for the literal real amplitude, including unequal mass and all zero-extension jumps. Its profile variation is O(1). Fixed-modulus four-prime unit-profile controls have L^(2-o(1)) coefficient-uniform positive-transport capacity, so sign balance, monotone transport, cemetery normalization, bounded variation, finite hard faces, and the accepted positive rank-one collar do not prove the target; this is not literal physical lower mass. Extend c_N^rem by zero on an interval of M_L asymp L^2 sites. For every positive integer R, the exact sliding Fejer energy E_R=(1/R)sum_s|sum_(j<R)c_(s+j)^rem e(Jsqrt(s+j))|^2 equals the coefficient diagonal plus 2Re sum_(1<=r<R)(1-r/R)sum_N c_(N+r)^rem conjugate(c_N^rem)e(J(sqrt(N+r)-sqrt(N))), and |S_(L,1)^rem|^2<=((M_L+R-1)/R)E_R. The choice R=ceil(L) is the minimal diagonal-safe scale, not the unique Fejer continuation. The parity, tangent, dual-gcd, strict-sector, and maximal-scale refinements are proved in M9-M2-hard-top-t1-residual-fejer-parity-gcd-scale-reduction, while its two sufficient aggregate estimates (165.K17a) and (165.K26) remain open. No residual target, full t=1 face, remaining channel, hard TOP parent, smooth packet, M9-M2, M9-M1, endpoint uniformity, M9, bridge, quarter theorem, or exponent follows.",
+        "evidence_added": {
+          "positive": [
+            "proofs/kernels/m9_m2_hard_top_t1_residual_fejer_parity_gcd_scale_reduction.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/variable_scale_fejer_bypass_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/kernel_parity_scale_repair_review.md"
+          ]
+        },
+        "next_action": "Use the Round-165 refinement. At R_0=ceil(L), prove the even-shift, opposing-displacement, low-character-divisor-gcd aggregate (165.K17a), or at R=M_L prove the even medium/long aggregate (165.K26). Preserve the actual selectors, squarefree masks, profiles, endpoints, parity branches, and one outer real part; failure of the minimal short-shift route is not terminal."
+      },
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "dependencies_added": [
+          "M9-M2-hard-top-t1-residual-fejer-parity-gcd-scale-reduction"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "proofs/kernels/m9_m2_hard_top_t1_residual_fejer_parity_gcd_scale_reduction.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/candidates/conductor_round165_gcd_parity_progression_reduction.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/candidates/conductor_round165_variable_scale_fejer_bypass.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reports/actual_residual_short_shift_attack.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reports/blind_fejer_short_shift_rederivation.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reports/short_shift_arithmetic_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/parity_connector_high_gcd_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/tangent_gcd_parity_seam_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/variable_scale_fejer_bypass_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/terminal_kernel_mathematical_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/kernel_parity_scale_repair_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/kernel_final_repair_verification.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/downstream_graph_state_scope_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/state_patch_scope_round165.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/conductor_round165_adjudication.md"
+          ]
+        }
+      },
+      {
+        "id": "M9-M2-top-endpoint-density-discrepancy-energy",
+        "dependencies_added": [
+          "M9-M2-hard-top-t1-residual-fejer-parity-gcd-scale-reduction"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "proofs/kernels/m9_m2_hard_top_t1_residual_fejer_parity_gcd_scale_reduction.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/candidates/conductor_round165_gcd_parity_progression_reduction.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/candidates/conductor_round165_variable_scale_fejer_bypass.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reports/actual_residual_short_shift_attack.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reports/blind_fejer_short_shift_rederivation.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reports/short_shift_arithmetic_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/parity_connector_high_gcd_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/tangent_gcd_parity_seam_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/variable_scale_fejer_bypass_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/terminal_kernel_mathematical_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/kernel_parity_scale_repair_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/kernel_final_repair_verification.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/downstream_graph_state_scope_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/state_patch_scope_round165.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/conductor_round165_adjudication.md"
+          ]
+        }
+      }
+    ],
+    "correct_rejected": [],
+    "reject": [
+      {"id": "Round165-parity-connector-proves-residual-target", "reason": "The connector only dominates the full energy by the even-gap energy; it does not estimate the latter."},
+      {"id": "Round165-monotone-sector-cost-is-L2-per-shift", "reason": "The O(L^2) count is over the complete union of shifts, so another factor R would double count."},
+      {"id": "Round165-strict-sectors-prove-complete-residual-or-full-t1", "reason": "The even opposing low-gcd aggregate and the later full-t1 assembly remain open."},
+      {"id": "Round165-high-gcd-bound-proves-all-gcd-scales", "reason": "L^3/G_0 is target-sized only for G_0 asymp L; the low-gcd complement remains."},
+      {"id": "Round165-high-gcd-is-a-unique-product-row-partition", "reason": "The split owns opened divisor incidences, not unique product rows."},
+      {"id": "Round165-cofactor-character-alternates-on-even-shifts", "reason": "The character is frozen on every even-shift cofactor row, including the squarefree even-even branch."},
+      {"id": "Round165-large-real-derivative-gives-modulo-one-separation", "reason": "A large real derivative does not bound its distance from integers or half-integers."},
+      {"id": "Round165-positive-row-Poisson-saves-the-target", "reason": "Absolute stationary dual modes are no better than the trivial row bound in the inherited range."},
+      {"id": "Round165-positive-row-Poisson-no-go-rules-out-all-dual-methods", "reason": "The obstruction covers only smooth row completion followed by absolute dual modes; coupled, signed, higher-order, and joint transforms remain open."},
+      {"id": "Round165-odd-shift-alternation-proves-the-even-frontier", "reason": "Parity removes the need to estimate odd shifts and leaves the frozen-character even frontier."},
+      {"id": "Round165-even-gap-energy-is-the-XOR-sector-energy", "reason": "It is the complete residual subsequence energy, not the accepted XOR scalar."},
+      {"id": "Round165-XOR-scalar-bound-transfers-to-Fejer-energy", "reason": "Scalar smallness does not control sliding energy; a separate energy connector would be required."},
+      {"id": "Round165-variable-scale-identity-proves-the-medium-long-theorem", "reason": "The identity proves only that (165.K26) is sufficient; the estimate remains open."},
+      {"id": "Round165-short-shift-failure-terminates-the-Fejer-route", "reason": "At maximal scale the shortest shifts are paid and cancellation is moved to even medium/long shifts."},
+      {"id": "Round165-all-R-identity-makes-sub-L-windows-diagonal-safe", "reason": "The identity is valid for every R, but the diagonal reaches the target-square budget first at R asymp L."},
+      {"id": "Round165-additive-gcd-fibres-equal-the-multiplicative-product-collar", "reason": "The physical relation d'm'-dm=r and the transformed character-Poisson product collar are different geometries."},
+      {"id": "Round165-hostile-arrays-disprove-the-literal-residual-target", "reason": "Hostile arrays are coefficient-uniform diagnostics and prove no literal physical lower bound."},
+      {"id": "Round165-K17a-or-K26-is-proved", "reason": "Both displayed aggregate estimates are open sufficient theorems."},
+      {"id": "Round165-strict-sector-proves-hard-TOP-or-M9-M2", "reason": "The complete residual, other few-point channels, BAL, and UNBAL remain open."},
+      {"id": "Round165-reduction-proves-M9-or-quarter-target", "reason": "M9-M1, all three M9-M2 parents, endpoint uniformity, M9, and the unconditional bridge remain incomplete."},
+      {"id": "Round165-reduction-improves-a-global-exponent", "reason": "No parent theorem or bridge closes, so the internal one-third theorem and external Li-Yang benchmark are unchanged."}
+    ],
+    "no_change": [
+      {"id": "M9-M2-hard-top-truncated-divisor-energy-and-radical-control", "reason": "Its coefficient-energy and exact-collision statements are antecedents only."},
+      {"id": "M9-M2-hard-top-t1-character-poisson-product-collar-obstruction", "reason": "Its route-scoped positive collar obstruction remains unchanged."},
+      {"id": "M9-M2-hard-top-t1-close-opposite-prime-exchange-sector", "reason": "The accepted XOR sector remains unchanged."},
+      {"id": "M9-M2-hard-top-product-fibre-transform-self-return", "reason": "Its transform self-return remains unchanged."},
+      {"id": "M9-M2-hard-top-radical-long-channel-exact-collision-control", "reason": "Its strict long-channel and exact-collision scope remains unchanged."},
+      {"id": "M9-M2-hard-top-radical-frequency-common-test-source-obstruction", "reason": "Its common-test and source obstruction remains unchanged."},
+      {"id": "M9-M2-hard-top-square-product-entry-sector", "reason": "It lies outside the residual Fejer interface."},
+      {"id": "M9-M2-physical-one-count-assembly", "reason": "Hard TOP, BAL, and UNBAL parents remain incomplete."},
+      {"id": "M9-M2-smooth-balanced-quarter-packet-estimate", "reason": "Round 165 proves no balanced smooth-packet estimate."},
+      {"id": "M9-M2-smooth-unbalanced-three-quarter-estimate", "reason": "Round 165 proves no unbalanced smooth-packet estimate."},
+      {"id": "M9-M2", "reason": "All three analytic parents remain open."},
+      {"id": "M9-M1", "reason": "Round 165 treats no M9-M1 owner."},
+      {"id": "M9-endpoint-uniformity", "reason": "Strict residual sectors do not prove all-owner endpoint uniformity."},
+      {"id": "M9", "reason": "M9-M1, M9-M2, and endpoint uniformity remain incomplete."},
+      {"id": "Conditional-bridge", "reason": "The bridge remains conditional on complete M9."},
+      {"id": "GC-partial-one-third", "reason": "The strongest internally proved exponent remains one third."},
+      {"id": "GC-external-Li-Yang-theta-star", "reason": "The audited external benchmark remains unchanged."},
+      {"id": "GC-target", "reason": "The quarter target remains open."},
+      {"id": "H4-Phi-regularity", "reason": "Its accepted regularity interface remains unchanged."},
+      {"id": "M9-M2-top-endpoint-actual-symbol-variation", "reason": "Its accepted actual-profile variation interface remains unchanged."}
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 9,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 165 proves an endpoint-exact parity connector, a complete monotone tangent sector, a fixed-fraction high-divisor-gcd sector, and a new maximal-scale Fejer alternative. The decisive minimal low-gcd opposing aggregate and maximal even medium/long aggregate both remain open, so no parent or exponent changes."
+  }
+}

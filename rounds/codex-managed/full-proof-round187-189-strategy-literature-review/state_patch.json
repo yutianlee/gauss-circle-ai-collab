@@ -1,0 +1,251 @@
+{
+  "starting_graph_sha256": "15c770023b649a95596b223e15370657836e230580f0d2f31f5d30c615a98568",
+  "reversibility": {
+    "rule": "Remove every rejected-claim record introduced by this patch and every inconclusive evidence_added value; restore the selected node's next_action and last-updated metadata below. This recovers the canonical starting graph.",
+    "restore_next_action": {
+      "M9-M1-hard-top-high-radical-small-t-residual-estimate": "The large-gcd nonresonant primitive-ray sector, canonical close opposite-character XOR part of t=1, monotone and polylogarithmic-height tangent-gcd sectors, the Round-187 low Fourier packets, the Round-188 H_Bm>=Y lifts, and now every remaining lift with |a inverse(v mod q)|_q<=min((q-1)/2,floor(H_Bmq/Y)) are target-safe. Prove the exact one-sided fast complement under one outer real part by the actual fixed-a dyadic coefficient-variation bound at scale H_B m kappa u J/q, or a genuinely joint signed substitute, retaining every literal field. Even complete t=1 success leaves every t>=2 small-G incidence and the large-G near-resonant complement open."
+    },
+    "restore_metadata": {
+      "M9-M1-hard-top-high-radical-small-t-residual-estimate": {
+        "last_updated_round": 189,
+        "last_updated_at": "2026-08-29T19:34:43"
+      }
+    }
+  },
+  "proof_obligations": {
+    "create": [],
+    "update": [
+      {
+        "id": "M9-M1-hard-top-high-radical-small-t-residual-estimate",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/full-proof-round187-189-strategy-literature-review/reports/full_graph_frontier_reconstruction.md",
+            "rounds/codex-managed/full-proof-round187-189-strategy-literature-review/reports/current_primary_literature_reassessment.md",
+            "rounds/codex-managed/full-proof-round187-189-strategy-literature-review/reports/blind_round191_frontier_selection.md",
+            "rounds/codex-managed/full-proof-round187-189-strategy-literature-review/reviews/conductor_round190_report_reconciliation.md",
+            "rounds/codex-managed/full-proof-round187-189-strategy-literature-review/reviews/dependency_power_selection_seam_review.md",
+            "rounds/codex-managed/full-proof-round187-189-strategy-literature-review/reviews/source_hypotheses_currency_interface_review.md",
+            "rounds/codex-managed/full-proof-round187-189-strategy-literature-review/reviews/blind_post_unmask_frontier_selection_review.md",
+            "rounds/codex-managed/full-proof-round187-189-strategy-literature-review/reviews/conductor_round190_adjudication.md",
+            "rounds/codex-managed/full-proof-round187-189-strategy-literature-review/controls/conductor_round190_controls.md",
+            "rounds/codex-managed/full-proof-round187-189-strategy-literature-review/synthesis.md"
+          ]
+        },
+        "next_action": "Rounds 187-189 prove the low-conductor and edge packets, every H_Bm>=Y lift, and the projectively slow sector of the exact original-t=1 high-height residual. Round 191 must prove the exact one-sided fast complement j_q(a,v)>min((q-1)/2,floor(H_Bmq/Y)) under one outer real part. For each fixed admissible kappa,u,m,q,a and fast dyadic J-band, prove the joint literal signed height-jump coboundary estimate |J_packet|<<H_B m kappa u X^epsilon, or an exactly ledger-equivalent substitute, retaining common-range changes, births, deaths, both orientations, masks, endpoints, phases, and zero extensions in the same aggregate. The positive sum of individual total variations is only a sufficient benchmark at scale H_B m kappa u J/q and is not the fresh signed seam. Recover the full factor Y/(H_Bm) before positive norms. Even complete t=1 success leaves every t>=2 small-G incidence and the large-G near-resonant complement open.",
+        "last_updated_round": 190
+      }
+    ],
+    "correct_rejected": [],
+    "reject": [
+      {
+        "id": "Round190-report-agreement-proves-fast-complement",
+        "reason": "Agreement among graph, source, and blind reports selects a strategy frontier but supplies no cancellation for the literal fast packet."
+      },
+      {
+        "id": "Round190-positive-variation-is-signed-coboundary",
+        "reason": "A sum of individual total variations is nonnegative and separately absolutized; it is only a sufficient positive benchmark, not the joint signed jump seam."
+      },
+      {
+        "id": "Round190-joint-jump-packet-proves-orientation-pairing",
+        "reason": "Keeping both orientations inside one signed packet does not by itself prove an involutive orientation pairing or cancellation identity."
+      },
+      {
+        "id": "Round190-joint-jump-packet-proves-projective-difference",
+        "reason": "The Abel coboundary is a height difference; no discrete neighboring-projective-slope identity has been proved."
+      },
+      {
+        "id": "Round190-Abel-identity-proves-fast-cancellation",
+        "reason": "The endpoint-exact Abel identity is algebraic and merely relocates the problem to the unproved signed correlation of literal height jumps."
+      },
+      {
+        "id": "Round190-pointwise-bound-proves-signed-jump-seam",
+        "reason": "Pointwise boundedness gives only the available Y-scale and misses the required factor Y/(H_Bm)."
+      },
+      {
+        "id": "Round190-height-masks-are-invariant",
+        "reason": "Coprimality, squarefree, selector, profile, anchor, endpoint, Fejer, phase, affine birth/death, and zero-extension fields can all jump with height."
+      },
+      {
+        "id": "Round190-centered-kernel-has-uniform-polylog-prefixes",
+        "reason": "The odd-prime centered slope -2 prefix is linear, so a uniform polylogarithmic prefix theorem is false."
+      },
+      {
+        "id": "Round190-positive-transforms-gain-fast-deficit",
+        "reason": "Positive completion, large sieve, alias energy, and selector-blind opening return capacity unless signed actual-coefficient cancellation is proved first."
+      },
+      {
+        "id": "Round190-fixed-power-deficit-is-epsilon-absorbable",
+        "reason": "Any fixed positive power of Y/(H_Bm) is not a logarithmic loss and fails the required uniform target."
+      },
+      {
+        "id": "Round190-positive-capacity-is-literal-lower-mass",
+        "reason": "The Y-scale is a positive or coefficient-insensitive upper ledger, not a lower bound for the fixed literal signed packet."
+      },
+      {
+        "id": "Round190-fast-complement-closes-complete-small-t-owner",
+        "reason": "Fast-complement success would close at most the exact original-t=1 residual; original t>=2 and near-resonant incidence leaves remain open."
+      },
+      {
+        "id": "Round190-fast-complement-closes-hard-M1-or-M9-M1",
+        "reason": "The rest of the small-t owner and the independent smooth direct-M1 parent remain open after hypothetical fast-complement success."
+      },
+      {
+        "id": "Round190-fast-complement-closes-M9-or-quarter-target",
+        "reason": "Every M2 parent, endpoint uniformity, route assembly, and bridge obligation remains separate."
+      },
+      {
+        "id": "Round190-GAR-and-direct-M1-may-be-spliced",
+        "reason": "The standard direct-M1 route and the total-active GAR alternative are connected by a logical OR and cannot be mixed into a fictitious owner."
+      },
+      {
+        "id": "Round190-GAR-bypasses-M9-M2",
+        "reason": "GAR can replace only direct M1 on the alternative route and still requires complete M9-M2."
+      },
+      {
+        "id": "Round190-K17a-or-K26-is-complete-hard-TOP",
+        "reason": "K17a and K26 are subordinate residual attacks; other t=1, few-point, collar, and density channels remain below complete hard TOP."
+      },
+      {
+        "id": "Round190-critical-BAL-alone-closes-BAL",
+        "reason": "The remaining-label and exact-square BAL scope is an independent open owner."
+      },
+      {
+        "id": "Round190-Shen-imports-to-fast-complement",
+        "reason": "Shen's prime-modulus separable scalar or positive-moment theorems do not control the joint moving-conductor literal height-jump packet under one outer real part."
+      },
+      {
+        "id": "Round190-MRS-imports-to-fast-complement",
+        "reason": "MRS treats complete products of shifted Kloosterman sums at one odd prime-power modulus, not the literal projective height-jump family."
+      },
+      {
+        "id": "Round190-source-audit-is-universal-literature-nonexistence",
+        "reason": "The no-import conclusion is dated and restricted to the named versioned primary corpus through 2026-08-29."
+      },
+      {
+        "id": "Round190-strategy-review-improves-global-exponent",
+        "reason": "No analytic parent, endpoint, bridge, global theorem, or source import is proved, so every certified exponent remains unchanged."
+      },
+      {
+        "id": "Round190-in-round-pivot-is-authorized",
+        "reason": "Round 191 must close or rigorously diagnose the frozen fast-complement interface before another owner can be selected."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "GC-target",
+        "reason": "Both lawful quarter routes retain multiple open analytic parents and route-specific connectors."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The standard bridge remains derived only under complete M9."
+      },
+      {
+        "id": "GC-global-M1-alternative-bridge",
+        "reason": "The alternative bridge still requires complete GAR or total active M1 and all of M9-M2."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain incomplete."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "A strategy and source review proves no real-X endpoint assembly theorem."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "The hard small-t owner and the independent smooth direct-M1 parent remain open."
+      },
+      {
+        "id": "M9-M1-top-endpoint-signed-cone",
+        "reason": "The selected relation proves no complete small-t residual or hard signed cone."
+      },
+      {
+        "id": "M9-M1-hard-top-small-t-nonresonant-primitive-ray-sector",
+        "reason": "The accepted nonresonant strict sector remains proved at exactly its existing scope."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-comparable-factor-exchange-sector",
+        "reason": "The accepted XOR strict sector remains proved at exactly its existing scope."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-residual-fejer-tangent-gcd-reduction",
+        "reason": "The accepted finite reduction and low-height sector remain proved at exactly their existing scope."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-high-h-inverse-residue-conductor-reduction",
+        "reason": "The Round-187 strict Fourier sectors remain proved; no additional conductor sector is promoted."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-high-h-imprimitive-lift-gcd-reduction",
+        "reason": "The Round-188 H_Bm>=Y lift sector remains proved; the complementary fast packet stays open."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-high-h-dual-frequency-projective-reduction",
+        "reason": "The Round-189 projectively slow sector remains proved; the fast complement and signed jump seam are unproved."
+      },
+      {
+        "id": "M9-M1-direct-smooth-residual-blockwise-estimate",
+        "reason": "The independent smooth direct-M1 parent receives no analytic estimate."
+      },
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "reason": "The complete GAR owner remains open."
+      },
+      {
+        "id": "M9-M1-global-lower-radial-signed-estimate",
+        "reason": "The strategy review imports no lower-radial cancellation theorem."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Complete hard TOP, full BAL, and UNBAL remain open."
+      },
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "reason": "K17a, K26, other t=1, few-point, collar, and density channels remain below complete hard TOP."
+      },
+      {
+        "id": "M9-M2-top-endpoint-density-discrepancy-energy",
+        "reason": "No complete hard-TOP density or energy theorem is proved."
+      },
+      {
+        "id": "M9-M2-smooth-balanced-quarter-packet-estimate",
+        "reason": "The critical and remaining-label BAL scopes remain independently open."
+      },
+      {
+        "id": "M9-M2-balanced-double-far-oscillatory-remainder",
+        "reason": "No actual-symbol nonlocal estimate is proved for the critical BAL remainder."
+      },
+      {
+        "id": "M9-M2-balanced-remaining-label-owner-quantifier-completion",
+        "reason": "No all-label or exact-square-boundary BAL theorem is proved."
+      },
+      {
+        "id": "M9-M2-smooth-unbalanced-three-quarter-estimate",
+        "reason": "No signed varying-modulus literal-vector theorem is proved or imported."
+      },
+      {
+        "id": "M9-M2-hard-top-t1-residual-k17a-primitive-alias-conductor-reduction",
+        "reason": "The K17a reduction remains proved while its literal high-conductor estimate remains unproved."
+      },
+      {
+        "id": "M9-M2-hard-top-t1-residual-k26-near-peak-row-gram-self-return-obstruction",
+        "reason": "The K26 scoped reduction and self-return obstruction remain unchanged; its unequal-product theorem is unproved."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The strongest theorem proved by the internal architecture remains exponent one third."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "Li-Yang v2 remains the accepted external benchmark at 0.3144831759740614... ."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 3,
+    "idea_quality_score": 9,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 190 proves no new analytic estimate, but reconstructs both lawful quarter routes after Rounds 187-189, independently verifies the exact fast-complement power and owner ledger, repairs the blind positive-variation mismatch to one joint signed height-jump seam, updates the current primary-source guardrails through 2026-08-29, and freezes one literal Round-191 objective. Every analytic status, theorem statement, dependency, bridge, endpoint result, and certified exponent remains unchanged."
+  }
+}

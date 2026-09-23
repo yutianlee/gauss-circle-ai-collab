@@ -1,0 +1,258 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 183,
+    "round_type": "m9_m1_hard_top_high_radical_small_t_signed_contraction_gate",
+    "campaign_id": "m9-m1-hard-top-high-radical-small-t-signed-contraction-gate",
+    "title": "Hard-M1 complete high-radical small-t signed contraction gate",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "5965e35636d988267311dbfcf8d57243153f88cb1105e2b2bcc35fa59a5e3833",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "planned_numerical_percent": 0,
+      "computation_policy": "No numerical theorem evidence is planned. Bounded exact algebra, hashing, or finite falsification may be used only as a mechanical control."
+    },
+    "target_obligations": [
+      "M9-M1-hard-top-high-radical-small-t-residual-estimate",
+      "M9-M1-hard-top-squarefree-radical-sector-reduction",
+      "M9-M1-hard-top-radical-mobius-mellin-joint-t-obstruction",
+      "M9-M1-top-endpoint-signed-cone",
+      "M9-M1-direct-smooth-residual-blockwise-estimate",
+      "M9-M1",
+      "M9-M1-shifted-divisor-correlation-PSC",
+      "M9-M2",
+      "M9-endpoint-uniformity",
+      "M9",
+      "Conditional-bridge",
+      "GC-global-M1-alternative-bridge",
+      "GC-partial-one-third",
+      "GC-external-Li-Yang-theta-star",
+      "GC-target"
+    ],
+    "frozen_target": {
+      "question": "Can the complete literal hard-M1 high-radical small-t aggregate be bounded by L^(3/2)X^epsilon for every shell and both signs, can a strict owner-compatible signed sector be proved, or does one fresh actual-coefficient mechanism have an exact capacity or self-return obstruction?",
+      "reference_formula": "|sum_(s>L, mu^2(s)=1, 1<=t<ceil(sqrt L)) C_(L,X)^sigma(st^2)e(sigma t sqrt(Xs))| <<_epsilon L^(3/2)X^epsilon, with one absolute value after the complete aggregate and C_(L,X)^sigma(r)=sum_(h|r, h asymp L, r/h odd, 4h<r/h<16h)chi_4(r/h)a_(L,X)^(lit,sigma)(h,r/h).",
+      "quantities": [
+        "The actual coefficient retains the dyadic cutoff, Phi, W, normalized powers, profiles, floors, stars and half weights, strict edges, hard sample, both signs, real-X crossings and endpoints, and zero extension.",
+        "Round 181 proves exact product coordinates and pays s<=L and the disjoint sector s>L, t>=ceil(sqrt L) absolutely at L^(3/2)X^epsilon.",
+        "The complete small-t coefficient-insensitive capacity is L^2X^epsilon, already on t=1, against target L^(3/2)X^epsilon; the missing gain is L^(1/2).",
+        "A uniform fixed-t (L^2/t^2)^(3/4) estimate is sufficient but strictly stronger and is not the owner.",
+        "Partial Mobius and shifted-correlation statements are mechanisms only; they must retain both cutoffs, the literal coefficient, endpoints, and a proved connector to the complete aggregate.",
+        "Success first closes only the hard signed cone; smooth direct M1 and every M2/global owner remain separate.",
+        "The internal exponent is 1/3, the accepted external benchmark is 0.3144831759740614..., and the target is 1/4."
+      ]
+    },
+    "completion_criteria": [
+      "Receive a direct actual-coefficient attack on the complete small-t aggregate, with both signs, all shells, endpoints, t=1, and one final absolute value.",
+      "Derive the exact partial-Mobius kernel with both inequalities and decide whether a target-scale truncation yields a smaller core or self-returns.",
+      "Derive the exact fixed-row shifted-correlation sufficient condition, restore its powers, and audit its relation to the old PSC and delta-Kloosterman deficit.",
+      "Receive a statement-only independent rederivation of capacity, false controls, the Mobius kernel, and the first missing relation.",
+      "Select the narrowest proof, strict sector, or rigorous mechanism no-go without changing the frozen owner or pivoting.",
+      "Review coefficient/product/endpoint algebra, power/self-return and PSC overlap, blind post-unmask consistency, and owner/exponent scope.",
+      "Formalize any stable finite algebraic kernel before a State Patch.",
+      "Apply no graph change without a mechanically valid State Patch, exact inverse, post-application audit, and GREEN validation matrix.",
+      "Close under exactly one label: hard_m1_small_t_target, strict_hard_m1_small_t_sector, or small_t_signed_mechanism_capacity_or_self_return_no_go."
+    ],
+    "controls": [
+      "exact_complete_small_t_aggregate",
+      "literal_coefficient_and_zero_extension",
+      "every_shell_both_signs_real_X_endpoints",
+      "one_outer_absolute_value",
+      "mandatory_t1_face",
+      "capacity_L2_target_L_three_halves",
+      "fixed_t_stronger_not_owner",
+      "joint_t_no_positive_norm",
+      "divisor_orientation_and_character_retention",
+      "noncentral_Mellin_not_central_mode_only",
+      "exact_partial_Mobius_kernel_both_cutoffs",
+      "ceil_sqrt_L_and_strict_t_boundary",
+      "target_scale_truncation_and_self_return",
+      "u_equals_one_original_cone_control",
+      "large_t_sector_once_only",
+      "exact_shifted_correlation_connector",
+      "fixed_t_van_der_Corput_diagonal_and_shifts",
+      "sum_over_t_restored_power",
+      "old_PSC_and_delta_Kloosterman_overlap",
+      "correlation_not_owner",
+      "unsigned_dechirped_character_erased_controls",
+      "one_site_one_fibre_square_centre_controls",
+      "literal_unknown_quarantine",
+      "strict_sector_exact_complement",
+      "hard_signed_cone_connector_only",
+      "smooth_M1_and_M2_separation",
+      "downstream_and_exponent_quarantine",
+      "no_in_round_pivot"
+    ],
+    "exit_labels": [
+      "hard_m1_small_t_target",
+      "strict_hard_m1_small_t_sector",
+      "small_t_signed_mechanism_capacity_or_self_return_no_go"
+    ],
+    "tasks": [
+      {
+        "id": "literal_small_t_signed_contraction_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "completed",
+        "target": "Prove the complete actual-coefficient small-t aggregate, prove a strict target-safe signed sector, or isolate the first exact self-return or capacity obstruction of a fresh literal mechanism.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round183_m1_hard_top_high_radical_small_t_signed_contraction_strategy.md",
+          "proofs/kernels/m9_m1_hard_top_squarefree_radical_reduction_and_self_return.md",
+          "rounds/codex-managed/m9-m1-hard-top-high-squarefree-radical-gate/candidates/formalized_hard_m1_squarefree_radical_reduction.md",
+          "rounds/codex-managed/m9-m1-hard-top-high-squarefree-radical-gate/reports/hard_m1_high_radical_signed_attack.md",
+          "rounds/codex-managed/m9-m1-hard-top-high-squarefree-radical-gate/reviews/literal_capacity_mellin_scope_review.md",
+          "rounds/codex-managed/full-proof-round179-181-strategy-literature-review/synthesis.md"
+        ],
+        "required_controls": [
+          "exact_complete_small_t_aggregate",
+          "literal_coefficient_and_zero_extension",
+          "every_shell_both_signs_real_X_endpoints",
+          "one_outer_absolute_value",
+          "mandatory_t1_face",
+          "capacity_L2_target_L_three_halves",
+          "fixed_t_stronger_not_owner",
+          "joint_t_no_positive_norm",
+          "divisor_orientation_and_character_retention",
+          "noncentral_Mellin_not_central_mode_only",
+          "unsigned_dechirped_character_erased_controls",
+          "strict_sector_exact_complement",
+          "hard_signed_cone_connector_only",
+          "downstream_and_exponent_quarantine",
+          "no_in_round_pivot"
+        ],
+        "required_output": [
+          "A seven-section analytic report satisfying the repository report contract.",
+          "A complete proof, strict target-safe signed sector, or narrowest exact actual-direction mechanism no-go.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-hard-top-high-radical-small-t-signed-contraction-gate/reports/literal_small_t_signed_contraction_attack.md"
+      },
+      {
+        "id": "partial_mobius_shifted_correlation_barrier_audit",
+        "role": "barrier_no_go",
+        "access_mode": "selected_context",
+        "status": "completed",
+        "target": "Derive the exact partial-Mobius and shifted-correlation mechanisms, restore every power and endpoint, compare the old PSC interface, and identify a proof connector or the first exact self-return.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round183_m1_hard_top_high_radical_small_t_signed_contraction_strategy.md",
+          "proofs/kernels/m9_m1_hard_top_squarefree_radical_reduction_and_self_return.md",
+          "rounds/codex-managed/m9-m1-hard-top-high-squarefree-radical-gate/candidates/formalized_hard_m1_squarefree_radical_reduction.md",
+          "rounds/codex-managed/m9-m1-hard-top-high-squarefree-radical-gate/reports/hard_m1_radical_connector_capacity_audit.md",
+          "rounds/codex-managed/m9-m1-hard-top-high-squarefree-radical-gate/reviews/independent_reduction_and_self_return_review.md",
+          "rounds/codex-managed/m9-m1-cross-product-offset-pairing/synthesis.md",
+          "rounds/codex-managed/m9-m1-square-root-product-offdiagonal/synthesis.md",
+          "rounds/codex-managed/m9-m1-near-product-delta-salie/synthesis.md",
+          "rounds/codex-managed/full-proof-round179-181-strategy-literature-review/synthesis.md"
+        ],
+        "required_controls": [
+          "exact_partial_Mobius_kernel_both_cutoffs",
+          "ceil_sqrt_L_and_strict_t_boundary",
+          "target_scale_truncation_and_self_return",
+          "u_equals_one_original_cone_control",
+          "large_t_sector_once_only",
+          "exact_shifted_correlation_connector",
+          "fixed_t_van_der_Corput_diagonal_and_shifts",
+          "sum_over_t_restored_power",
+          "old_PSC_and_delta_Kloosterman_overlap",
+          "correlation_not_owner",
+          "mandatory_t1_face",
+          "downstream_and_exponent_quarantine",
+          "no_in_round_pivot"
+        ],
+        "required_output": [
+          "A seven-section hostile mechanism report satisfying the repository report contract.",
+          "Exact Mobius and shifted-correlation derivations with the first failed seam or full connector.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-hard-top-high-radical-small-t-signed-contraction-gate/reports/partial_mobius_shifted_correlation_barrier_audit.md"
+      },
+      {
+        "id": "blind_complete_small_t_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "completed",
+        "target": "From the isolated finite packet, independently derive the capacity, exact Mobius kernel, fixed-row correlation connector, false controls, and first missing actual-coefficient relation.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/m9-m1-hard-top-high-radical-small-t-signed-contraction-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "state/best_proof_draft.md",
+          "all strategy files",
+          "all prior round artifacts and durable kernels",
+          "all source cards and web-search results",
+          "all sibling reports, reviews, controls, candidates, syntheses, and conductor analysis"
+        ],
+        "required_controls": [
+          "exact_complete_small_t_aggregate",
+          "capacity_L2_target_L_three_halves",
+          "mandatory_t1_face",
+          "fixed_t_stronger_not_owner",
+          "exact_partial_Mobius_kernel_both_cutoffs",
+          "target_scale_truncation_and_self_return",
+          "exact_shifted_correlation_connector",
+          "unsigned_dechirped_character_erased_controls",
+          "one_site_one_fibre_square_centre_controls",
+          "literal_unknown_quarantine",
+          "strict_sector_exact_complement",
+          "downstream_and_exponent_quarantine"
+        ],
+        "required_output": [
+          "A seven-section statement-only report satisfying the repository report contract.",
+          "An independent proof, strict sector, or exact mechanism no-go with the first missing relation.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-hard-top-high-radical-small-t-signed-contraction-gate/reports/blind_complete_small_t_rederivation.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "coefficient_product_endpoint_seam",
+        "requirement": "Verify the exact product coefficient, squarefree coordinates, signs, shells, ceilings, strict inequalities, support crossings, endpoints, and one final absolute value."
+      },
+      {
+        "id": "power_self_return_and_PSC_seam",
+        "requirement": "Verify every capacity and target power, the exact partial-Mobius kernel, truncation tails, shifted-correlation connector, and relation to the old PSC/delta-Kloosterman deficit."
+      },
+      {
+        "id": "blind_post_unmask_small_t_seam",
+        "requirement": "Compare the isolated derivation with the literal coefficient and prior barriers without contaminating provenance or promoting an arbitrary-coefficient control."
+      },
+      {
+        "id": "hard_parent_and_exponent_scope",
+        "requirement": "Verify that any success first affects only the selected node and hard signed cone, while smooth M1, M2, assembly, bridges, theorem, and exponents remain quarantined."
+      }
+    ],
+    "closing_assessment": {
+      "decision": "promote_nonresonant_primitive_ray_incidence_sector_and_truncated_Mobius_self_return",
+      "terminal_label": "strict_hard_m1_small_t_sector",
+      "graph_mutation": true,
+      "main_result": "The actual chi_4(G)-phase progression and exact zero-extended literal step-two BV prove the large-gcd non-half-integer-resonant primitive-ray incidence sector at L^(3/2)X^epsilon, improving its L^(7/4) incidence envelope. The exact small-gcd/near-resonant complement contains all t=1 and remains open. Target-scale partial Mobius truncation self-returns to the full product wave; fixed-row Fejer correlation remains an unproved stronger sufficient mechanism distinct from PSC.",
+      "resulting_graph_sha256": "a8e0e5d84c0c5047e0c96f11128dd215ae035bdd4355bd68ad28dc87afe6cfbd",
+      "patch_effect": "1_create_2_update_0_correct_13_reject_24_no_change",
+      "exponent_change": false,
+      "next_round": 184
+    }
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "5965e35636d988267311dbfcf8d57243153f88cb1105e2b2bcc35fa59a5e3833",
+    "generated_at": "2026-08-27T11:24:27.901Z"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

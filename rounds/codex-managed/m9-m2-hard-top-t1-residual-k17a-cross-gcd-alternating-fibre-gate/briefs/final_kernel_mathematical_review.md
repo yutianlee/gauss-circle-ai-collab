@@ -1,0 +1,3 @@
+# Round 176 final kernel mathematical review
+
+Review `proofs/kernels/m9_m2_hard_top_t1_residual_k17a_cross_gcd_alternating_fibre_reduction.md` against the repaired conductor candidate and all completed Round 176 reviews.  Verify exact identity, both orientations, gcd/parity/Fourier seams, hyperbola count, fixed-proportion theorem, route-capacity scope, and first open estimate.  Check that nothing open is stated as proved and nothing diagnostic is stated as physical mass.  Write only `rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-gate/reviews/final_kernel_mathematical_review.md`.  Return GREEN only if the kernel is promotion-ready; otherwise list exact repairs.  Do not edit any other artifact or shared state.

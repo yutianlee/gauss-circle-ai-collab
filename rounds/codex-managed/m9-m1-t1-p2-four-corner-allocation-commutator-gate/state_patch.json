@@ -1,0 +1,319 @@
+{
+  "starting_graph_sha256": "b9b95784b097b3e30bed95f418ae14e57bf5f03a4a52975beeefa8db85b7f8ae",
+  "reversibility": {
+    "rule": "Remove the one created obligation and every rejected-claim record introduced by this patch; remove every dependencies_added and evidence_added value; restore the next_action value and last-updated metadata recorded below. This recovers the canonical starting graph.",
+    "restore_next_action": {
+      "M9-M1-hard-top-high-radical-small-t-residual-estimate": "Rounds 187-195 prove the accepted Fourier, lift, projective, signed-inverse, Farey, double-close, and P2 absolute-capacity sectors. Round 196 proves that the on-shell primitive-4q carrier is only a parity-restored shadow: the literal fixed mode retains E_U(S_0), every live-to-live step has multiplier +e(a/q), the formal negative wrap is an unpaired live/dead boundary, and no common full-core Delta_2 exists. The exact P2 remainder kappa<D_L with min(Y,D_L)>H_B \\mathfrak m kappa and all of P1 remain open. Prove a coefficient-sensitive joint four-block P2 estimate with every literal field present, or attack P1 in a separately frozen round. Even complete original t=1 success leaves every t>=2 small-G incidence and the large-G near-resonant complement open."
+    },
+    "restore_metadata": {
+      "M9-M1-hard-top-high-radical-small-t-residual-estimate": {
+        "last_updated_round": 196,
+        "last_updated_at": "2026-08-30T12:00:58"
+      }
+    }
+  },
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-hard-top-t1-rho-large-P2-common-cell-allocation-commutator-sector",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Hard-M1 t=1 rho-large P2 common-cell allocation commutator sector",
+        "status": "proved_internal",
+        "statement_tex": "Fix the exact accepted hard-M1 original-t=1 rho-large physical source N=dm, N+r=d'm', its Round-192 core, every literal endpoint and zero-extension field, both primitive orientations, both T branches, all anchor/Fourier copies, and one outer real part. Put g=(d,d'), d=g alpha, d'=g beta, D_L=ceil(sqrt L), and P_2=1_(|d-gm|<=D_L)1_(|d'-gm'|>D_L). On P_0=P_2 1_((m,beta)=1)1_(chi_4(alpha m)=-1), define C_lit by equality of the explicit arithmetic/support/sharp-branch code at the two lower allocations (m,g alpha) and (alpha,gm), with a dead state determined only by the named arithmetic, support, and zero-extension predicates and with coefficient values, rho_N, eta_L and smooth-factor values excluded. Put P_cc=P_0 C_lit; no nonemptiness, density, nonvanishing or mass is asserted. The lower swap (g alpha,m,g beta,m')->(gm,alpha,g beta,m') preserves products, shift, physical defects, common scalar and recomputed gcd g, reverses the character, and gives the actual lower difference lambda_N(g alpha)-lambda_N(gm). On a common live code the exact product rule has separate smooth, normalized-BV and selector summands. The hard cone and lower closeness give g<=G_0. The smooth term gains D_L/L; aggregate BV costs D_L^2; and a selector change is impossible for large L because one selected prime would lie in the fixed divisor set of g while the two distinct selected primes have logarithmic gap at most K_sel L^(-1/2). Bounded shells are absolutely safe. Thus the raw D_L sum_kappa(1+L/kappa)^2<<D_L L^2 capacity becomes D_L^2 L X^epsilon<=4L^2X^epsilon. After exact coordinatewise physical masking and replay of the accepted safe projectors, |R_core,out^sigma(P_cc W)|+|R_open,out^sigma(P_cc W)|<<_(B,C_0,K_sel,epsilon)L^2X^epsilon, where the open packets are kappa<D_L and min(Y,D_L)>H_B \\mathfrak m kappa. The exact physical complement is P_boundary(lit) dotcup P_sf dotcup P_gf. The formal four-corner rectangle has the alternating table on its cross-coprime sign sector but forces physical kappa=1 and cannot cover 2<=kappa<D_L; a sharp ratio face aligned with g can retain D_L L^2 capacity. This is a route no-go, not literal lower mass or a disproof of complete P2. This node proves no complete P2, P1, complete original t=1 or t>=2 range, owner, parent, endpoint theorem, bridge, target, or exponent.",
+        "dependencies": [
+          "M9-M1-hard-top-t1-comparable-factor-exchange-sector",
+          "M9-M1-hard-top-t1-residual-fejer-tangent-gcd-reduction",
+          "M9-M1-hard-top-t1-rho-large-gcd-scaled-close-sector",
+          "M9-M1-hard-top-t1-rho-large-P2-absolute-capacity-sectors"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "proofs/kernels/m9_m1_hard_top_t1_p2_common_cell_allocation_commutator_sector.md",
+            "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/candidates/formalized_hard_m1_t1_p2_common_cell_allocation_commutator_sector.md",
+            "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reports/literal_four_corner_allocation_commutator_attack.md",
+            "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reports/four_corner_orbit_power_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/conductor_round197_report_reconciliation.md",
+            "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/common_cell_power_operator_scope_seam_review.md",
+            "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/common_cell_power_operator_postrepair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/blind_post_unmask_common_cell_postrepair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/candidate_provenance_owner_graph_scope_final_verification.md",
+            "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/final_kernel_blind_postrepair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/final_kernel_power_operator_postrepair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/final_kernel_formalization_provenance_scope_postrepair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/conductor_round197_adjudication.md",
+            "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reports/blind_four_corner_commutator_rederivation.md",
+            "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/blind_post_unmask_common_cell_consistency_review.md",
+            "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/candidate_definition_operator_provenance_repair_spec.md",
+            "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/candidate_provenance_owner_graph_scope_review.md",
+            "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/candidate_provenance_owner_graph_scope_postrepair_verification.md",
+          "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/final_kernel_blind_candidate_consistency_review.md",
+            "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/final_kernel_power_operator_scope_review.md",
+            "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/final_kernel_formalization_provenance_scope_review.md",
+            "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/controls/four_corner_finite_orbit_diagnostic.py",
+            "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/controls/four_corner_finite_orbit_diagnostic_output.txt",
+            "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/controls/four_corner_finite_orbit_diagnostic_report.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Estimate the exact Round-195 open-packet complement P_boundary(lit) dotcup P_sf dotcup P_gf, or leave P2 open and attack the disjoint physical P1 sector in a separately frozen round. The first unresolved common-swap seam is the aligned literal sharp face; any extension must retain its actual face jump, selectors, endpoint products, phases, carries, births/deaths, both T branches, zero extensions and one outer real part. Do not infer nonemptiness or density of P_cc, delete changed-gcd corners, reuse the double-close collar on P2, or make the accepted Round-195 node depend on this later result."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-hard-top-high-radical-small-t-residual-estimate",
+        "dependencies_added": [
+          "M9-M1-hard-top-t1-rho-large-P2-common-cell-allocation-commutator-sector"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "proofs/kernels/m9_m1_hard_top_t1_p2_common_cell_allocation_commutator_sector.md",
+            "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/candidates/formalized_hard_m1_t1_p2_common_cell_allocation_commutator_sector.md",
+            "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reports/literal_four_corner_allocation_commutator_attack.md",
+            "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reports/four_corner_orbit_power_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/conductor_round197_report_reconciliation.md",
+            "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/common_cell_power_operator_scope_seam_review.md",
+            "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/common_cell_power_operator_postrepair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/blind_post_unmask_common_cell_postrepair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/candidate_provenance_owner_graph_scope_final_verification.md",
+            "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/final_kernel_blind_postrepair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/final_kernel_power_operator_postrepair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/final_kernel_formalization_provenance_scope_postrepair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/conductor_round197_adjudication.md",
+            "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/synthesis.md",
+            "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reports/blind_four_corner_commutator_rederivation.md",
+            "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/blind_post_unmask_common_cell_consistency_review.md",
+            "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/candidate_definition_operator_provenance_repair_spec.md",
+            "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/candidate_provenance_owner_graph_scope_review.md",
+            "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/candidate_provenance_owner_graph_scope_postrepair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/final_kernel_blind_candidate_consistency_review.md",
+            "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/final_kernel_power_operator_scope_review.md",
+            "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/final_kernel_formalization_provenance_scope_review.md",
+            "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/controls/four_corner_finite_orbit_diagnostic.py",
+            "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/controls/four_corner_finite_orbit_diagnostic_output.txt",
+            "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/controls/four_corner_finite_orbit_diagnostic_report.md"
+          ]
+        },
+        "next_action": "Rounds 187-197 prove the accepted Fourier, lift, projective, signed-inverse, Farey, double-close, P2 absolute-capacity, and P2 common-cell lower-swap sectors. Inside the exact Round-195 open packets, Round 197 removes only P_cc. The remaining P2 region is kappa<D_L, min(Y,D_L)>H_B \\mathfrak m kappa, intersected with P_boundary(lit) dotcup P_sf dotcup P_gf; all of P1 also remains open. The first P2 seam is the aligned literal sharp face, whose current route retains D_L L^2 capacity. Prove an actual signed face-jump/selector/gcd-failure estimate before positive norms, or attack P1 in a separately frozen round. Complete original t=1, every t>=2 small-G incidence, the large-G near-resonant complement, smooth M1, GAR, M2, endpoint uniformity, M9 and both bridges remain open."
+      }
+    ],
+    "correct_rejected": [],
+    "reject": [
+      {
+        "id": "Round197-full-P2-proved",
+        "reason": "Only the explicitly coded P_cc lower-swap sector is estimated; its exact three-piece physical complement remains open."
+      },
+      {
+        "id": "Round197-whole-P0-proved",
+        "reason": "The proof requires common live sharp code; P_boundary(lit)=P_0(1-C_lit) retains full unresolved face capacity."
+      },
+      {
+        "id": "Round197-full-four-corner-rectangle-target-safe",
+        "reason": "The simultaneous cross-coprime rectangle forces physical kappa=1 and misses the open packets 2<=kappa<D_L."
+      },
+      {
+        "id": "Round197-four-corner-rectangle-covers-all-small-kappa",
+        "reason": "In the plus and minus primitive charts the required second cross gcd is exactly kappa, so full orbit closure requires kappa=1."
+      },
+      {
+        "id": "Round197-simultaneous-swap-supplies-character-cancellation",
+        "reason": "On the alternating sector the simultaneous swap has relative multiplier s_0s_1=+1."
+      },
+      {
+        "id": "Round197-changed-gcd-corner-is-zero-extension",
+        "reason": "A recomputed gcd g(m,beta), g(alpha,m') or g(m,m') is a different physical allocation, not a missing endpoint value."
+      },
+      {
+        "id": "Round197-missing-corner-may-be-deleted",
+        "reason": "Every missing or dead corner is represented by literal zero extension and its live/dead boundary must remain in the orbit difference."
+      },
+      {
+        "id": "Round197-common-cell-sector-is-nonempty-or-dense",
+        "reason": "The theorem asserts neither nonemptiness nor any quantitative mass or density for P_cc."
+      },
+      {
+        "id": "Round197-common-cell-capacity-is-literal-lower-mass",
+        "reason": "All capacities are upper bounds and the actual endpoint coefficient may vanish or cancel."
+      },
+      {
+        "id": "Round197-arbitrary-bounded-endpoint-arrays-obey-common-cell-ledger",
+        "reason": "The proof uses the exact K184 smooth, normalized-BV and selector product rule, not boundedness alone."
+      },
+      {
+        "id": "Round197-every-sharp-face-has-DL-squared-collar",
+        "reason": "A ratio face aligned with g may be crossed by every O(LD_L) lower-close pair and leaves D_LL^2 capacity."
+      },
+      {
+        "id": "Round197-selector-commutator-can-be-dropped-unconditionally",
+        "reason": "It vanishes only after the finite-g and distinct selected-prime gap audit; bounded shells are paid absolutely."
+      },
+      {
+        "id": "Round197-lower-closeness-leaves-unbounded-g-multiplicity",
+        "reason": "The live shell, strict cone and lower-close inequality give a uniform fixed bound g<=G_0."
+      },
+      {
+        "id": "Round197-open-packet-condition-is-physical-orbit-mask",
+        "reason": "The packet condition is applied only after the complete physical estimate through the accepted linear cap/open projector."
+      },
+      {
+        "id": "Round197-post-expansion-mask-equals-physical-Pcc",
+        "reason": "P_cc is imposed on parent physical atoms before Fourier and height operations; transported-mask commutators and births/deaths remain."
+      },
+      {
+        "id": "Round197-Round193-double-close-collar-proves-P2-boundary",
+        "reason": "Round 193 estimates the double-close sector, not the one-close P2 literal-face complement."
+      },
+      {
+        "id": "Round197-rewrite-Round195-node-with-refined-remainder",
+        "reason": "The new theorem depends on Round 195; a reverse dependency or historical statement rewrite would create circular provenance."
+      },
+      {
+        "id": "Round197-sign-failure-and-gcd-failure-are-target-safe",
+        "reason": "P_sf and P_gf are exact named complements and no target estimate is proved for either."
+      },
+      {
+        "id": "Round197-common-cell-sector-closes-original-t1-or-owner",
+        "reason": "Complete P2, P1, other original-t incidences, and the hard small-t owner remain open."
+      },
+      {
+        "id": "Round197-common-cell-sector-closes-M9-M1-or-M9",
+        "reason": "Both M1 parents, M2, endpoint uniformity and bridge requirements remain incomplete."
+      },
+      {
+        "id": "Round197-four-corner-no-go-disproves-P2",
+        "reason": "The no-go is restricted to this allocation-orbit mechanism and supplies no lower bound for the literal operator."
+      },
+      {
+        "id": "Round197-common-cell-sector-improves-global-exponent",
+        "reason": "No parent, bridge, endpoint theorem or target is promoted, so every exponent record is unchanged."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1-hard-top-t1-rho-large-P2-absolute-capacity-sectors",
+        "reason": "The accepted Round-195 safe/open packet theorem and historical statement remain unchanged; no reverse dependency is added."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-rho-large-gcd-scaled-close-sector",
+        "reason": "The accepted Round-193 P_cl/P1/P2 partition and physical-mask interface are reused unchanged."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-rho-large-farey-covector-reduction",
+        "reason": "The accepted Round-192 core and both T branches remain unchanged."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-fast-signed-inverse-transport-reduction",
+        "reason": "The accepted signed-inverse, terminal, Fejer and Abel interfaces remain unchanged."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-high-h-dual-frequency-projective-reduction",
+        "reason": "The accepted projective row and fixed-to-outer ledgers remain unchanged."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-high-h-imprimitive-lift-gcd-reduction",
+        "reason": "The accepted lift identity and weight remain unchanged."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-high-h-inverse-residue-conductor-reduction",
+        "reason": "The accepted Fourier conductor reduction remains unchanged."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-residual-fejer-tangent-gcd-reduction",
+        "reason": "The accepted endpoint source, primitive charts and safe source exits are reused unchanged."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-comparable-factor-exchange-sector",
+        "reason": "The accepted selector and literal coefficient calculus are reused unchanged."
+      },
+      {
+        "id": "M9-M1-hard-top-small-t-nonresonant-primitive-ray-sector",
+        "reason": "The accepted primitive-ray strict sector remains unchanged."
+      },
+      {
+        "id": "M9-M1-hard-top-squarefree-radical-sector-reduction",
+        "reason": "The accepted squarefree-radical reduction remains unchanged."
+      },
+      {
+        "id": "M9-M1-top-endpoint-signed-cone",
+        "reason": "Complete original t=1, every t>=2 small-G incidence and the near-resonant complement remain open."
+      },
+      {
+        "id": "M9-M1-direct-smooth-residual-blockwise-estimate",
+        "reason": "Round 197 treats no part of the independent smooth direct-M1 parent."
+      },
+      {
+        "id": "M9-M1-physical-one-count-assembly",
+        "reason": "The conditional direct-M1 assembly still lacks both complete analytic parents."
+      },
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "reason": "The alternative GAR route is not treated."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "The hard high-radical small-t owner and smooth direct-M1 parent remain open."
+      },
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "reason": "No complete hard-TOP M2 channel is proved or changed."
+      },
+      {
+        "id": "M9-M2-smooth-balanced-quarter-packet-estimate",
+        "reason": "No balanced M2 estimate is proved."
+      },
+      {
+        "id": "M9-M2-smooth-unbalanced-three-quarter-estimate",
+        "reason": "No unbalanced M2 estimate is proved."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Hard TOP, BAL and UNBAL remain open."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "A subordinate hard-M1 common-cell sector proves no endpoint-uniform parent theorem."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2 and endpoint uniformity remain incomplete."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The standard bridge still requires complete M9."
+      },
+      {
+        "id": "GC-global-M1-alternative-bridge",
+        "reason": "The alternative bridge still requires GAR or total active M1 and complete M9-M2."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The strongest theorem proved by the internal architecture remains exponent one third."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "The accepted external benchmark remains 0.3144831759740614... ."
+      },
+      {
+        "id": "GC-target",
+        "reason": "Both lawful quarter routes retain multiple open analytic parents and connectors."
+      },
+      {
+        "id": "Divisor-bound-elementary",
+        "reason": "The elementary divisor bound is inherited unchanged."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 197 proves one exact P2 common-cell lower-allocation commutator sector at the required outer L^2 scale, with a closed sharp code, actual smooth/BV/selector product rule, finite-g audit, full masked-operator replay and exact three-piece complement. It also proves that the full four-corner rectangle forces kappa=1 and that an aligned sharp face returns the route to D_L L^2 capacity. Complete P2, all owners and parents, M9, both bridges, the target and every exponent remain unchanged."
+  }
+}

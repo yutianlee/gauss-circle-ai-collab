@@ -1,0 +1,244 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-hard-top-t1-residual-maximal-fejer-dyadic-positive-transform-obstruction",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Hard-TOP t=1 residual maximal parity-Fejer positive-transform obstruction",
+        "status": "proved_internal",
+        "statement_tex": "Let J=sqrt(X), 1<<L<<H<=J^(1/2), R_0=ceil(L), M asymp L^2, and retain the complete literal residual sequence z_N=c_N^rem e(Jsqrt(N)), zero-extended on an M-site containing interval, with D_L=sum_N|z_N|^2<<_epsilon L^2X^epsilon. The exact even parity-Fejer stopped chain writes (165.K26) as one half of the adjacent-scale energy increments minus one O_epsilon(L^3X^epsilon) short correction. For every integer R<S<=2R the link weight is b_(R,S)(r)=r(S-R)/(RS) for 0<r<R, 1-r/S for R<=r<S, and 0 for r>=S, with b_(R,S)(0)=0; exact doublings have the absolute-site-parity Haar identity and a strict terminal link uses this Fejer difference. The first link is O_epsilon(L^3X^epsilon) but has no target-safe complement. A real disjoint-cardinal interpolation gives the exact common-frequency transform Z_epsilon(theta)=(i/2) sum_(k odd)chi_4(k) sum_ell Btilde_(epsilon,theta)(k/4,ell), and the squared parity-averaged link has coefficient 1/8 with one outer real part. All terms with ell=0 or ell'=0 are O_epsilon(L^3X^epsilon) only after every signed odd character frequency is recombined. The complete signed ell,ell' nonzero aggregate remains open. The physical zero diagonal is not a zero dual diagonal; cancellation occurs only after all dual, cell, endpoint, transition, and zero-extension pieces recombine. Any continuation that, before a proved literal actual-symbol saving, replaces this signed family by a coefficient-uniform positive norm over modes, cells, openings, or common frequency has available maximal-link scale MD_L<<_epsilon L^4X^epsilon. On an admissible M=4P stopped-chain subfamily, a nonliteral dechirped one-parity array attains MD_L/8 asymp L^4. At either centred peak a smooth-interior fixed lawful opening returns to the accepted rank-one product collar. This is a scoped no-go only for coefficient-uniform positivity before an actual-symbol gain. It does not exclude cross-link cancellation or a coefficient-sensitive literal positive theorem, is not physical lower mass, and neither proves nor disproves (165.K26).",
+        "dependencies": [
+          "M9-M2-hard-top-t1-residual-fejer-parity-gcd-scale-reduction",
+          "M9-M2-hard-top-t1-character-poisson-product-collar-obstruction"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "proofs/kernels/m9_m2_hard_top_t1_residual_maximal_fejer_dyadic_positive_transform_obstruction.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-maximal-fejer-dyadic-frequency-gate/candidates/formalized_maximal_fejer_dyadic_positive_transform_obstruction.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-maximal-fejer-dyadic-frequency-gate/reports/literal_maximal_fejer_dyadic_frequency_attack.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-maximal-fejer-dyadic-frequency-gate/reports/blind_maximal_fejer_dyadic_rederivation.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-maximal-fejer-dyadic-frequency-gate/reports/maximal_fejer_transform_endpoint_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-maximal-fejer-dyadic-frequency-gate/reviews/parity_dyadic_endpoint_seam_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-maximal-fejer-dyadic-frequency-gate/reviews/literal_common_frequency_transform_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-maximal-fejer-dyadic-frequency-gate/reviews/power_owner_state_effect_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-maximal-fejer-dyadic-frequency-gate/reviews/parity_post_repair_verification.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-maximal-fejer-dyadic-frequency-gate/reviews/transform_post_repair_verification.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-maximal-fejer-dyadic-frequency-gate/reviews/final_kernel_mathematical_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-maximal-fejer-dyadic-frequency-gate/reviews/final_kernel_transform_endpoint_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-maximal-fejer-dyadic-frequency-gate/reviews/final_kernel_power_owner_scope_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-maximal-fejer-dyadic-frequency-gate/reviews/final_kernel_post_repair_verification.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-maximal-fejer-dyadic-frequency-gate/controls/conductor_round172_controls.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-maximal-fejer-dyadic-frequency-gate/reviews/conductor_round172_adjudication.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-maximal-fejer-dyadic-frequency-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Park coefficient-uniform positive closure of the maximal parity-Fejer nonzero-mode family before an actual-symbol gain. To resume K26, prove a signed estimate for the complete literal nonzero ordinary-frequency aggregate, possibly after summing the stopped chain, or first prove a coefficient-sensitive property that survives all cells, openings, endpoints, and transitions. Cross-link cancellation and literal positive theorems remain open."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-top-endpoint-density-discrepancy-energy",
+        "dependencies_added": [
+          "M9-M2-hard-top-t1-residual-maximal-fejer-dyadic-positive-transform-obstruction"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "proofs/kernels/m9_m2_hard_top_t1_residual_maximal_fejer_dyadic_positive_transform_obstruction.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-maximal-fejer-dyadic-frequency-gate/reviews/final_kernel_mathematical_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-maximal-fejer-dyadic-frequency-gate/reviews/final_kernel_post_repair_verification.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-maximal-fejer-dyadic-frequency-gate/reviews/final_kernel_power_owner_scope_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-maximal-fejer-dyadic-frequency-gate/reviews/conductor_round172_adjudication.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-maximal-fejer-dyadic-frequency-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The maximal K26 route now has an exact parity-Fejer common-frequency transform and a target-safe collectively recombined ordinary-zero sector, but its complete signed nonzero-mode aggregate remains open. Park coefficient-uniform positive dual/cell/opening closure before an actual-symbol gain. A linkwise signed theorem is sufficient but not necessary because cross-link cancellation remains possible; all other hard-TOP owners remain separate."
+      },
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "dependencies_added": [
+          "M9-M2-hard-top-t1-residual-maximal-fejer-dyadic-positive-transform-obstruction"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "proofs/kernels/m9_m2_hard_top_t1_residual_maximal_fejer_dyadic_positive_transform_obstruction.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-maximal-fejer-dyadic-frequency-gate/reviews/final_kernel_mathematical_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-maximal-fejer-dyadic-frequency-gate/reviews/final_kernel_post_repair_verification.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-maximal-fejer-dyadic-frequency-gate/reviews/final_kernel_power_owner_scope_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-maximal-fejer-dyadic-frequency-gate/reviews/conductor_round172_adjudication.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-maximal-fejer-dyadic-frequency-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Retain the full hard-TOP signed-cone owner. On its K26 residual route, the exact remaining theorem is the complete literal signed nonzero ordinary-frequency stopped-chain aggregate before positive norms; the first link, one short correction, and collectively recombined ordinary-zero sector are already target-safe. The other t=1 and few-point channels remain independent."
+      }
+    ],
+    "reject": [
+      {
+        "id": "Round172-one-parity-peak-is-enough",
+        "reason": "The exact even-gap projector is the average of the peaks at zero and one half; dropping either peak changes the scalar."
+      },
+      {
+        "id": "Round172-relative-window-parity-gives-the-Haar-identity",
+        "reason": "For odd window length, relative parity swaps between adjacent blocks; the exact identity uses absolute site parity."
+      },
+      {
+        "id": "Round172-round-the-terminal-link-to-a-doubling",
+        "reason": "A strict R<S<2R terminal link has its own exact Fejer-difference weight and no rounded Haar identity."
+      },
+      {
+        "id": "Round172-pay-the-short-correction-at-every-link",
+        "reason": "The short correction occurs exactly once in the stopped-chain telescope and cannot fund repeated positive losses."
+      },
+      {
+        "id": "Round172-first-link-is-an-owner-complete-sector",
+        "reason": "The first link is target-safe but its remaining-link complement has no target-safe estimate."
+      },
+      {
+        "id": "Round172-absolute-link-control-is-equivalent-or-necessary",
+        "reason": "Absolute control of every link is a stronger sufficient condition; the frozen target permits one-sided and cross-link cancellation."
+      },
+      {
+        "id": "Round172-literal-common-frequency-transform-is-missing",
+        "reason": "The real cardinal interpolation and character plus ordinary Poisson give an exact finite transform with constants i/2 and 1/8."
+      },
+      {
+        "id": "Round172-ordinary-zero-mode-is-target-safe-termwise-in-k",
+        "reason": "The bound holds only after the full signed odd-character-frequency recombination."
+      },
+      {
+        "id": "Round172-residual-ordinary-zero-is-the-Round169-scalar-zero-mode",
+        "reason": "They are different transformed objects with different coefficient and frequency families."
+      },
+      {
+        "id": "Round172-zero-physical-diagonal-deletes-the-dual-diagonal",
+        "reason": "The two cardinal variables remain independent; dual diagonal and off-diagonal pieces cancel only after full recombination."
+      },
+      {
+        "id": "Round172-endpoint-and-transition-cells-may-be-smoothed-away",
+        "reason": "The exact cardinal transform retains all hard endpoints, point values, zero-extension transitions, and noncentral pieces."
+      },
+      {
+        "id": "Round172-character-cancellation-occurs-on-each-no-pair-row",
+        "reason": "Positive-character no-pair controls survive, so any saving must be collective and actual-symbol dependent."
+      },
+      {
+        "id": "Round172-both-peak-centres-are-uniformly-nondegenerate",
+        "reason": "After the exact parity gauge, the product-phase Hessian is rank one at both centred peaks."
+      },
+      {
+        "id": "Round172-positive-dual-cell-or-opening-norm-saves-factor-L",
+        "reason": "Before an actual-symbol gain, coefficient-uniform positivity has available upper scale L4 and the in-range dechirped family is sharp at that order."
+      },
+      {
+        "id": "Round172-dechirped-capacity-is-literal-physical-mass",
+        "reason": "The sharp array is a nonliteral envelope control, not a lower bound for the residual coefficient."
+      },
+      {
+        "id": "Round172-positive-no-go-rules-out-every-literal-positive-theorem",
+        "reason": "A positive theorem that first proves and uses a special actual-symbol property remains possible."
+      },
+      {
+        "id": "Round172-K26-is-proved-or-disproved",
+        "reason": "The complete signed nonzero ordinary-frequency aggregate remains unestimated."
+      },
+      {
+        "id": "Round172-residual-transform-result-closes-hard-TOP-or-improves-the-exponent",
+        "reason": "K26 concerns only one residual t=1 route; all other channels, parents, bridges, and theorem exponents remain separate."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M2-hard-top-t1-residual-fejer-parity-gcd-scale-reduction",
+        "reason": "Its exact reduction remains proved, while both sufficient aggregates K17a and K26 remain open."
+      },
+      {
+        "id": "M9-M2-hard-top-t1-residual-transport-fejer-energy-reduction",
+        "reason": "Round 172 refines only the maximal K26 continuation and proves no residual target."
+      },
+      {
+        "id": "M9-M2-hard-top-t1-character-poisson-product-collar-obstruction",
+        "reason": "Its centred smooth-interior positive collar remains an accepted dependency with unchanged scope."
+      },
+      {
+        "id": "M9-M2-hard-top-t1-joint-functional-equation-double-poisson-self-return",
+        "reason": "The distinct Round-169 complete-scalar transform and zero-mode correction are unchanged."
+      },
+      {
+        "id": "M9-M2-hard-top-t1-residual-determinant-endpoint-polylog-shift-reduction",
+        "reason": "The independent K17a route and its polylogarithmic sector are unchanged."
+      },
+      {
+        "id": "M9-M2-hard-top-truncated-divisor-energy-and-radical-control",
+        "reason": "Round 172 proves no complete hard-TOP estimate."
+      },
+      {
+        "id": "M9-M2-top-endpoint-actual-symbol-variation",
+        "reason": "The literal endpoint-symbol variation owner is retained and not replaced by cardinal smoothing."
+      },
+      {
+        "id": "M9-M2-physical-one-count-assembly",
+        "reason": "All three complete M2 analytic parents are still required."
+      },
+      {
+        "id": "M9-M2-smooth-balanced-quarter-packet-estimate",
+        "reason": "Round 172 treats no balanced packet owner."
+      },
+      {
+        "id": "M9-M2-smooth-unbalanced-three-quarter-estimate",
+        "reason": "Round 172 treats no unbalanced packet owner."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Hard TOP, full BAL, and UNBAL remain open."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "Round 172 treats no direct M1 owner."
+      },
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "reason": "The alternative GAR route is unchanged."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "A residual t=1 route obstruction proves no parent-level endpoint uniformity."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain incomplete."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The standard bridge still requires complete M9."
+      },
+      {
+        "id": "GC-global-M1-alternative-bridge",
+        "reason": "The alternative bridge still requires complete GAR and M9-M2."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The strongest internally proved exponent remains one third."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "The accepted repaired external benchmark remains 0.3144831759740614... ."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The quarter target remains open."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 6,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 172 proves the exact parity-Fejer stopped-chain and literal common-frequency transform, prices the fully recombined ordinary-zero sector at target strength, and isolates a sharp route-scoped obstruction to coefficient-uniform positive closure. The signed nonzero aggregate, K26, every analytic parent, and every exponent remain open."
+  }
+}

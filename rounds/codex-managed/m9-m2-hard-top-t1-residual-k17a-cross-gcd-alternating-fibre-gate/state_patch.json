@@ -1,0 +1,257 @@
+{
+  "starting_graph_sha256": "9409651dccbbd1c69547546b245ba04c21d2a280173733ae37b693f9894c8b03",
+  "reversibility": {
+    "rule": "Remove every create and reject record introduced by this patch; remove every dependencies_added and evidence_added value; restore the three next_action values and their last-updated metadata below. This recovers the canonical starting graph.",
+    "restore_next_action": {
+      "M9-M2-hard-top-t1-residual-determinant-endpoint-polylog-shift-reduction": "K17a remains open on the non-polylogarithmic even opposing low-gcd shifts. Do not repeat the parked direct Grimmelt--Merikoski black-box placements. Compare the exact full residual scalar route and the maximal-scale K26 aggregate, and select one genuinely new signed mechanism after auditing the Round-162 scalar product-collar obstruction.",
+      "M9-M2-hard-top-t1-residual-fejer-parity-gcd-scale-reduction": "K26 remains open. The exact unweighted whole-chain nonzero-frequency target collapses to Q_M^*-Q_(R_0)^*, with Q_(R_0)^* target-safe, so it is equivalent at target strength to the literal positive endpoint theorem Q_M^*<<_epsilon L^3X^epsilon and to K26 after the collectively recombined ordinary-zero sector and once-only short correction. Park scale-only Abel, Haar, martingale, and coefficient-uniform positive closure. Continue through a genuinely coefficient-sensitive complete literal endpoint theorem, or rotate after the round; the independent K17a route remains available.",
+      "M9-M2-top-endpoint-signed-cone": "Retain the complete hard-TOP signed-cone owner. On its K26 residual route, the unweighted whole-chain transform is exactly one endpoint difference and the lower endpoint, collectively restored ordinary-zero sector, and once-only short correction are target-safe. The missing theorem is the literal coefficient-sensitive top endpoint bound Q_M^*<<_epsilon L^3X^epsilon, equivalently K26 at target strength. All other t=1 and few-point channels remain independent."
+    },
+    "restore_metadata": {
+      "M9-M2-hard-top-t1-residual-determinant-endpoint-polylog-shift-reduction": {
+        "last_updated_round": 167,
+        "last_updated_at": "2026-08-26T15:28:52"
+      },
+      "M9-M2-hard-top-t1-residual-fejer-parity-gcd-scale-reduction": {
+        "last_updated_round": 175,
+        "last_updated_at": "2026-08-27T02:39:54"
+      },
+      "M9-M2-top-endpoint-signed-cone": {
+        "last_updated_round": 175,
+        "last_updated_at": "2026-08-27T02:39:54"
+      }
+    }
+  },
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-reduction",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Hard-TOP t=1 residual K17a cross-gcd alternating-fibre reduction",
+        "status": "proved_internal",
+        "statement_tex": "Let J=sqrt(X), 1<<L<<H<=J^(1/2), R_0=ceil(L), R_log=min(R_0-1,floor((log X)^100)), and retain the complete literal residual endpoint atoms in the nonpolylogarithmic even opposing low-original-gcd K17a aggregate with one outer real part. Define the inward cross gcd kappa_*=(d,m') when d'>d,m'<m and kappa_*=(d',m) in the opposite orientation. Writing the inward factors as kappa u,kappa v gives (u,v)=1, r=2kappa n, and the primitive fibres (s,w)=(s_0,w_0)+t(u,v), with common endpoint-product step 2kappa uv and exact character E_u(+/-vbar n)(-1)^t. Both orientations, conjugations, displacement inequalities, parity branches, Fejer weight, determinant range, selectors, hard values, endpoints, and zero extension occur in one exact multiplicity-one identity. On every nonzero squarefree atom, (d,d')=(u,n)=(u,r/(2kappa_*)), so the original gcd cutoff is fibre-stable and distinct from kappa_*. For every odd m, Ehat_m(k)=2/(1+e(-k/m)), its normalized Fourier l1 norm is <<log(2m), normalized l2 norm is one, normalized linfinity norm is asymp one, and the primitive anchor modulus is u/(u,n). A divisor-hyperbola count gives C_kappa<<_epsilon L^3kappa^(-2)X^epsilon and sum_(kappa>=K)C_kappa<<_epsilon L^3K^(-1)X^epsilon. Hence for every fixed 0<delta<1/2 the complete literal sector kappa_*>=delta L is <<_(delta,gamma,epsilon)L^2X^epsilon, with complement kappa_*<delta L. On full fixed-relative fibres, internal alternation followed by positive fibre summation, rowwise Abel without a selector theorem, positively recombined rowwise derivative/B-process/Poisson estimates, positive Mobius-progression recombination, and positively recombined smooth-cell two-variable Poisson restore the physical power; one optimistic inverse-residue square-root saving still leaves L^(5/2). This is a route-scoped capacity/self-return no-go, not physical lower mass. The remaining sufficient selector-aware signed joint inverse-residue estimate is unproved, so full K17a and every parent and exponent owner remain open.",
+        "dependencies": [
+          "M9-M2-hard-top-t1-residual-determinant-endpoint-polylog-shift-reduction"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "proofs/kernels/m9_m2_hard_top_t1_residual_k17a_cross_gcd_alternating_fibre_reduction.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-gate/candidates/formalized_cross_gcd_alternating_fibre_reduction.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-gate/reports/literal_cross_gcd_alternating_fibre_attack.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-gate/reports/blind_k17a_variable_determinant_rederivation.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-gate/reports/joint_fibre_capacity_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-gate/reviews/cross_gcd_capacity_seam_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-gate/reviews/literal_fibre_owner_scope_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-gate/reviews/candidate_mathematical_scope_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-gate/reviews/candidate_post_repair_verification.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-gate/reviews/hyperbola_coordinate_post_repair_verification.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-gate/reviews/final_kernel_mathematical_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-gate/reviews/state_patch_scope_cycle_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-gate/controls/conductor_round176_controls.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-gate/reviews/conductor_round176_adjudication.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Retain the fixed-proportion kappa_*>=delta L sector. On kappa_*<delta L, prove a literal selector-aware signed joint inverse-residue/square-root estimate of the form (176.K35), uniformly including the large near-half alias, both orientations, all determinants, squarefree and Mobius openings, Fejer weight, hard endpoints, and zero extension before absolute recombination. Park fibrewise automatic alternation, canonical determinant pairing, coefficient-blind Abel, and positively recombined rowwise or joint Poisson as sources of the missing factor L."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-hard-top-t1-residual-determinant-endpoint-polylog-shift-reduction",
+        "evidence_added": {
+          "inconclusive": [
+            "proofs/kernels/m9_m2_hard_top_t1_residual_k17a_cross_gcd_alternating_fibre_reduction.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-gate/reviews/final_kernel_mathematical_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-gate/reviews/state_patch_scope_cycle_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-gate/reviews/conductor_round176_adjudication.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-gate/synthesis.md"
+          ]
+        },
+        "next_action": "K17a remains open only on the nonpolylogarithmic complement after removing the proved fixed-proportion inward-cross-gcd sector. Use the exact two-orientation inverse-residue identity and prove the selector-aware signed joint estimate (176.K35) before absolute values over Fourier aliases, determinants, fibres, openings, endpoints, or orientations. Do not repeat fibrewise automatic alternation or positively recombined row/joint transforms."
+      },
+      {
+        "id": "M9-M2-hard-top-t1-residual-fejer-parity-gcd-scale-reduction",
+        "evidence_added": {
+          "inconclusive": [
+            "proofs/kernels/m9_m2_hard_top_t1_residual_k17a_cross_gcd_alternating_fibre_reduction.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-gate/reviews/final_kernel_mathematical_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-gate/reviews/state_patch_scope_cycle_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-gate/reviews/conductor_round176_adjudication.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Both residual routes remain open. K17a now has an exact cross-gcd/inverse-residue reduction and a target-safe fixed-proportion high-cross-gcd sector; its complement requires the signed literal joint estimate (176.K35). K26 remains equivalent at target strength to the complete literal coefficient-sensitive top endpoint theorem after its paid seams. Park coefficient-blind fibre, scale, and positive-transform closures on both routes."
+      },
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "dependencies_added": [
+          "M9-M2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-reduction"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "proofs/kernels/m9_m2_hard_top_t1_residual_k17a_cross_gcd_alternating_fibre_reduction.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-gate/reviews/final_kernel_mathematical_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-gate/reviews/state_patch_scope_cycle_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-gate/reviews/conductor_round176_adjudication.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Retain the complete hard-TOP signed-cone owner. On K17a, the fixed-proportion inward-cross-gcd sector is target-safe and the exact complement is a literal joint inverse-residue problem with open estimate (176.K35). On K26, the whole chain remains a top endpoint problem. Other t=1 and few-point channels remain independent; no residual subroute presently closes this owner."
+      }
+    ],
+    "correct_rejected": [],
+    "reject": [
+      {
+        "id": "Round176-cross-gcd-half-frequency-proves-K17a",
+        "reason": "Short fibres and positive recombination retain L^3 capacity; the selector-aware signed joint estimate remains unproved."
+      },
+      {
+        "id": "Round176-original-gcd-cutoff-varies-along-cross-fibre",
+        "reason": "On nonzero squarefree atoms, (d,d')=(u,r/(2kappa_*)) is constant along the fibre."
+      },
+      {
+        "id": "Round176-inward-cross-gcd-equals-original-divisor-gcd",
+        "reason": "The inward cross gcd and original divisor gcd are distinct coordinates; the latter equals (u,n)."
+      },
+      {
+        "id": "Round176-canonical-sawtooth-causes-power-loss",
+        "reason": "Its exact normalized Fourier algebra norm is logarithmic, although a near-half normalized mode has constant size."
+      },
+      {
+        "id": "Round176-canonical-anchor-forces-determinant-alternation",
+        "reason": "Exact positive-proportion constant-anchor families exist; after Fourier expansion the issue is a signed inverse-residue sum, not automatic adjacency cancellation."
+      },
+      {
+        "id": "Round176-rowwise-Abel-gives-constant-fibre-bound",
+        "reason": "No bounded-variation theorem is known for the literal selector, and the square-root phase can restore full row variation."
+      },
+      {
+        "id": "Round176-positive-Bprocess-or-Poisson-saves-the-fibre",
+        "reason": "The half-frequency translates the stationary lattice but absolute dual-mode recombination returns the trivial fibre power."
+      },
+      {
+        "id": "Round176-positive-two-variable-Poisson-closes-K17a",
+        "reason": "On smooth fixed-relative cells, positive dual recombination returns the physical L^3 capacity; signed dual cancellation remains open."
+      },
+      {
+        "id": "Round176-one-inverse-residue-square-root-saving-is-sufficient",
+        "reason": "The optimistic positive ledger remains L^(5/2), a factor L^(1/2) above target."
+      },
+      {
+        "id": "Round176-kappa-at-least-sqrtL-sector-is-proved",
+        "reason": "That sector would require an unproved constant-size signed bound per primitive row; only fixed-proportion kappa>=delta L is presently target-safe."
+      },
+      {
+        "id": "Round176-delta-may-shrink-with-L-at-target-scale",
+        "reason": "The strict-sector theorem costs delta^(-1); it is target-scale only for fixed delta."
+      },
+      {
+        "id": "Round176-zero-extension-enforces-opposing-displacement",
+        "reason": "The exact identity must and does separately impose s_t,w_t>=1; valid endpoints alone do not determine the displacement sector."
+      },
+      {
+        "id": "Round176-constant-anchor-family-is-literal-lower-mass",
+        "reason": "The family is a character-geometry control with no proved squarefree-selector density or square-root phase alignment."
+      },
+      {
+        "id": "Round176-dechirped-or-arbitrary-support-control-is-literal",
+        "reason": "Those arrays falsify coefficient-uniform mechanisms but are not the actual residual coefficient."
+      },
+      {
+        "id": "Round176-route-no-go-disproves-K17a",
+        "reason": "Only named positive-recombination mechanisms are excluded; a signed selector-aware joint theorem remains possible."
+      },
+      {
+        "id": "Round176-cross-gcd-reduction-closes-a-parent-or-improves-the-exponent",
+        "reason": "The full K17a complement, residual scalar, hard-TOP owners, bridges, quarter theorem, and every exponent owner remain open."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M2-hard-top-t1-residual-transport-fejer-energy-reduction",
+        "reason": "Its residual reduction remains proved, while K17a and K26 remain open."
+      },
+      {
+        "id": "M9-M2-hard-top-t1-residual-maximal-fejer-dyadic-positive-transform-obstruction",
+        "reason": "Round 176 studies the independent K17a cross-gcd route and does not alter the maximal-scale K26 obstruction."
+      },
+      {
+        "id": "M9-M2-hard-top-t1-residual-tangent-fejer-commutator-self-return-obstruction",
+        "reason": "The tangent first-difference obstruction remains unchanged."
+      },
+      {
+        "id": "M9-M2-hard-top-t1-residual-whole-chain-scale-coboundary-positive-capacity-obstruction",
+        "reason": "The K26 endpoint telescope remains unchanged."
+      },
+      {
+        "id": "M9-M2-hard-top-truncated-divisor-energy-and-radical-control",
+        "reason": "No complete hard-TOP estimate is proved."
+      },
+      {
+        "id": "M9-M2-physical-one-count-assembly",
+        "reason": "Hard TOP, full BAL, and UNBAL remain open."
+      },
+      {
+        "id": "M9-M2-smooth-balanced-quarter-packet-estimate",
+        "reason": "Round 176 treats no balanced owner."
+      },
+      {
+        "id": "M9-M2-smooth-unbalanced-three-quarter-estimate",
+        "reason": "Round 176 treats no unbalanced owner."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Complete hard TOP, full BAL, and UNBAL remain open."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "Round 176 treats no direct M1 owner."
+      },
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "reason": "The alternative GAR route is unchanged."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "A strict residual sub-sector proves no parent-level endpoint uniformity."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain incomplete."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The standard bridge still requires complete M9."
+      },
+      {
+        "id": "GC-global-M1-alternative-bridge",
+        "reason": "The alternative bridge still requires complete GAR and M9-M2."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The strongest internally proved exponent remains one third."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "The accepted repaired external benchmark remains 0.3144831759740614... ."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The quarter target remains open."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 176 proves an exact two-orientation cross-gcd/inverse-residue reduction, repairs the original-gcd and canonical-sawtooth seams, and closes the complete fixed-proportion high-cross-gcd sector. It also establishes a sharply scoped positive-transform self-return and identifies a sufficient literal joint estimate for the complement. It proves no complete K17a target, parent, bridge, quarter theorem, or exponent improvement."
+  }
+}

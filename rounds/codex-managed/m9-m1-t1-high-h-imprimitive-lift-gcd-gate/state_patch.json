@@ -1,0 +1,249 @@
+{
+  "starting_graph_sha256": "be0eca9ca93c3534cca958d70b5541d03d28ff993ebfbcbca6be3cd393fae5ff",
+  "reversibility": {
+    "rule": "Remove the one created obligation and every rejected-claim record introduced by this patch; remove every dependencies_added and evidence_added value; restore the next_action value and last-updated metadata recorded below. This recovers the canonical starting graph.",
+    "restore_next_action": {
+      "M9-M1-hard-top-high-radical-small-t-residual-estimate": "The large-gcd nonresonant primitive-ray sector, canonical close opposite-character XOR part of t=1, monotone and polylogarithmic-height tangent-gcd sectors, and now the complete U=1, low exact-conductor, small-U, and ordinary-edge Fourier packets of the dyadic high-h t=1 residual are target-safe. Prove the exact one-sided complement U>4H_B, q_U(k)>H_B, |k|_U>H_B under one outer real part, retaining both orientations and every h,v,t,k, selector, endpoint, phase, and zero extension and gaining the full factor Y before positive recombination. Even complete t=1 success leaves every t>=2 small-G incidence and the large-G near-resonant complement open."
+    },
+    "restore_metadata": {
+      "M9-M1-hard-top-high-radical-small-t-residual-estimate": {
+        "last_updated_round": 187,
+        "last_updated_at": "2026-08-29T15:59:13"
+      }
+    }
+  },
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-hard-top-t1-high-h-imprimitive-lift-gcd-reduction",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Hard-M1 t=1 high-height imprimitive-lift gcd reduction",
+        "status": "proved_internal",
+        "statement_tex": "Fix real X>=2, a nonempty literal middle or lower residual hard-M1 shell L>=2, sigma in {+1,-1}, fixed B>0, Q=H_B=floor((log(2X))^B), and a nonempty dyadic Y<h<=2Y with Y>Q. On the exact accepted Round-187 high packet U>4Q, q_U(k)>Q, |k|_U>Q, put m=(k,U), U=mq, k=ma, (a,q)=1. Then c_U(k)=m^(-1)c_q(a), the inverse-residue phase reduces exactly modulo q, and |k|_U=m|a|_q. The complete sector Qm>=Y has total absolute size O_(B,epsilon)(L^2X^epsilon). Its proof uses the inherited live-shell support L<<X^(1/4), O(YL) literal atoms at fixed (kappa,u,U), exact-conductor mass O(m^(-1)log(2q)), and sum_(U|u)tau(U)=tau_3(u), removing Y only through Y/m<=Q before positivity. The exact complementary one-outer-real-part aggregate retains U=mq>4Q, q>Q, m|a|_q>Q, Qm<Y, both orientations, and every literal selector, deletion, endpoint, phase, affine site, and zero extension; its positive capacity remains O_epsilon(YL^2X^epsilon), and its one-sided target is open. The lifted determinant phase is constant along each affine t-ray, while primitive prime near-half modes remain with constant Fourier energy; reciprocity, completion, determinant transposition, sieve opening, and positive energy are mechanism self-return controls, not a disproof. This node proves only the strict imprimitive-lift sector and exact reduction, not the complete high-height relation, complete t=1 residual, small-t owner, any parent, bridge, theorem, or exponent.",
+        "dependencies": [
+          "M9-M1-hard-top-t1-high-h-inverse-residue-conductor-reduction",
+          "Divisor-bound-elementary"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "proofs/kernels/m9_m1_hard_top_t1_high_h_imprimitive_lift_gcd_reduction.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/candidates/formalized_hard_m1_t1_high_h_imprimitive_lift_gcd_reduction.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/reports/imprimitive_lift_signed_attack.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/reports/lift_power_completion_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/reports/blind_lift_gcd_rederivation.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/reviews/conductor_round188_report_reconciliation.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/reviews/conductor_inherited_hard_m1_shell_support_connector.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/reviews/lift_normalization_and_multiplicity_post_repair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/reviews/lift_power_literal_scope_completion_seam_review.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/reviews/blind_post_unmask_owner_scope_post_repair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/reviews/final_kernel_candidate_consistency_review.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/reviews/final_kernel_power_owner_scope_review.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/reviews/final_kernel_formalization_provenance_hygiene_review.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/reviews/final_kernel_candidate_provenance_post_hygiene_verification.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/reviews/conductor_round188_adjudication.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/reviews/lift_normalization_and_multiplicity_seam_review.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/controls/conductor_round188_blind_report_control_character_repair.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/controls/conductor_round188_wolfram_lift_partition_check.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/controls/lift_partition_exact_check.wls"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Prove the exact one-sided Qm<Y complement uniformly for every dyadic Y>H_B, retaining U=mq>4H_B, q>H_B, m|a|_q>H_B, both orientations, all h,v,t,a, every selector, deletion, endpoint, phase, and zero extension under one outer real part. Gain the complete factor Y through a verified property of the actual endpoint amplitude before positive recombination. Determinant transposition, additive reciprocity alone, assumed height periodicity or bounded variation, positive completion energy, and selector-blind sieve opening are not substitutes."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-hard-top-high-radical-small-t-residual-estimate",
+        "dependencies_added": [
+          "M9-M1-hard-top-t1-high-h-imprimitive-lift-gcd-reduction"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "proofs/kernels/m9_m1_hard_top_t1_high_h_imprimitive_lift_gcd_reduction.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/candidates/formalized_hard_m1_t1_high_h_imprimitive_lift_gcd_reduction.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/reports/imprimitive_lift_signed_attack.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/reports/lift_power_completion_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/reports/blind_lift_gcd_rederivation.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/reviews/conductor_round188_report_reconciliation.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/reviews/conductor_inherited_hard_m1_shell_support_connector.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/reviews/lift_normalization_and_multiplicity_post_repair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/reviews/lift_power_literal_scope_completion_seam_review.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/reviews/blind_post_unmask_owner_scope_post_repair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/reviews/final_kernel_candidate_consistency_review.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/reviews/final_kernel_power_owner_scope_review.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/reviews/final_kernel_formalization_provenance_hygiene_review.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/reviews/final_kernel_candidate_provenance_post_hygiene_verification.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/controls/conductor_round188_blind_report_control_character_repair.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/controls/conductor_round188_wolfram_lift_partition_check.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/reviews/conductor_round188_adjudication.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The large-gcd nonresonant primitive-ray sector, canonical close opposite-character XOR part of t=1, monotone and polylogarithmic-height tangent-gcd sectors, the Round-187 U=1/low-conductor/small-U/ordinary-edge packets, and now every high-packet lift with H_B times (k,U)>=Y are target-safe. Prove the exact one-sided complement U=mq>4H_B, q>H_B, m|a|_q>H_B, H_Bm<Y under one outer real part, retaining both orientations and every h,v,t,a, selector, deletion, endpoint, phase, and zero extension and gaining the full factor Y before positivity. Even complete t=1 success leaves every t>=2 small-G incidence and the large-G near-resonant complement open."
+      }
+    ],
+    "correct_rejected": [],
+    "reject": [
+      {
+        "id": "Round188-imprimitive-lift-sector-proves-high-h",
+        "reason": "Only Qm>=Y is paid absolutely; the exact Qm<Y primitive or moderately imprimitive complement remains at YL^2 positive capacity."
+      },
+      {
+        "id": "Round188-dyadic-OYL-count-alone-gains-Y",
+        "reason": "The O(YL) count is a sharper one-block capacity ledger; the factor Y disappears only on lifts with 1/m<=Q/Y."
+      },
+      {
+        "id": "Round188-Qm-less-Y-modes-have-small-coefficients",
+        "reason": "Primitive near-half modes have coefficient size at least 2/pi and remain wholly in the complement."
+      },
+      {
+        "id": "Round188-primitive-frequency-completion-gains-conductor",
+        "reason": "For prime conductor the complete primitive kernel is the original parity anchor minus its mean and has order-one size."
+      },
+      {
+        "id": "Round188-determinant-phase-oscillates-along-t",
+        "reason": "The exact determinant equations give e(epsilon a inverse(v) h/q)=e(a S_0/q), constant along the affine t-ray."
+      },
+      {
+        "id": "Round188-additive-reciprocity-gains-Y",
+        "reason": "Reciprocity transfers the inverse but supplies no variation or discrepancy theorem for the literal endpoint amplitude."
+      },
+      {
+        "id": "Round188-periodic-displayed-height-phase-licenses-completion",
+        "reason": "The displayed exponential is periodic, but the zero-extended literal amplitude, selector, endpoints, Fejer factor, and phase are not proved periodic or bounded-variation."
+      },
+      {
+        "id": "Round188-determinant-transposition-pairs-orientations",
+        "reason": "The two positive rays and endpoint allocations are not preserved or identified by the determinant reindexing."
+      },
+      {
+        "id": "Round188-Mobius-or-squarefree-opening-regularizes-selector",
+        "reason": "Opening arithmetic masks introduces divisor congruences but does not factor the moving selected-prime mask, endpoints, profiles, or square-root phase."
+      },
+      {
+        "id": "Round188-positive-completion-or-large-sieve-energy-gains-Y",
+        "reason": "Positive transforms return residue-bucket or Fourier energy, while primitive near-half modes retain constant mass."
+      },
+      {
+        "id": "Round188-adversarial-capacity-is-literal-lower-mass",
+        "reason": "The dephased bounded array is a coefficient-uniform mechanism control and need not be realized by the actual endpoint coefficient."
+      },
+      {
+        "id": "Round188-logL-absorption-holds-for-independent-L-X",
+        "reason": "The absorption is lawful only on the inherited nonzero hard-top support L<<X^(1/4); the statement-only independent-parameter packet correctly retained logarithms."
+      },
+      {
+        "id": "Round188-strict-lift-sector-proves-complete-t1",
+        "reason": "The exact Qm<Y high-height complement remains open even before the accepted t=1 connectors can close."
+      },
+      {
+        "id": "Round188-complete-t1-would-prove-small-t-owner",
+        "reason": "Every original t>=2 small-G incidence and the large-G near-resonant complement remain open after hypothetical t=1 completion."
+      },
+      {
+        "id": "Round188-strict-lift-sector-improves-global-exponent",
+        "reason": "Both M1 parents, every M2 parent, endpoint uniformity, M9, both bridges, and the quarter theorem remain incomplete."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1-hard-top-t1-high-h-inverse-residue-conductor-reduction",
+        "reason": "The accepted Round-187 high packet is used unchanged as the exact parent reduction."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-residual-fejer-tangent-gcd-reduction",
+        "reason": "The accepted finite tangent-gcd reduction and bounded-height sector are unchanged."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-comparable-factor-exchange-sector",
+        "reason": "The accepted Round-184 exchange sector and exact residual are unchanged."
+      },
+      {
+        "id": "M9-M1-hard-top-small-t-nonresonant-primitive-ray-sector",
+        "reason": "The accepted Round-183 primitive-ray sector is unchanged."
+      },
+      {
+        "id": "M9-M1-top-endpoint-signed-cone",
+        "reason": "The Qm<Y t=1 complement, all t>=2 small-G incidences, and the near-resonant complement remain open."
+      },
+      {
+        "id": "M9-M1-direct-smooth-residual-blockwise-estimate",
+        "reason": "Round 188 treats only a transformed strict hard-residual packet; the independent smooth parent remains open."
+      },
+      {
+        "id": "M9-M1-physical-one-count-assembly",
+        "reason": "Conditional assembly still requires the complete hard and smooth children."
+      },
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "reason": "The alternative GAR route is not treated."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "The complete hard small-t owner and independent smooth direct-M1 parent remain open."
+      },
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "reason": "No complete hard-TOP M2 channel is proved or changed."
+      },
+      {
+        "id": "M9-M2-smooth-balanced-quarter-packet-estimate",
+        "reason": "No balanced M2 estimate is proved."
+      },
+      {
+        "id": "M9-M2-smooth-unbalanced-three-quarter-estimate",
+        "reason": "No unbalanced M2 estimate is proved."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Complete hard TOP, BAL, and UNBAL remain open."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "A subordinate hard-M1 residual packet proves no parent-level real-X endpoint theorem."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain incomplete."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The standard bridge still requires complete M9."
+      },
+      {
+        "id": "GC-global-M1-alternative-bridge",
+        "reason": "The alternative bridge still requires complete GAR or total active M1 and all of M9-M2."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The strongest theorem proved by the internal architecture remains exponent one third."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "The accepted external benchmark remains 0.3144831759740614... ."
+      },
+      {
+        "id": "GC-target",
+        "reason": "Both lawful quarter routes retain multiple open analytic parents and connectors."
+      },
+      {
+        "id": "Divisor-bound-elementary",
+        "reason": "The elementary divisor estimate is used unchanged as a direct dependency."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 188 proves the exact sufficiently imprimitive Fourier-lift sector of the Round-187 high packet by combining the one-block O(YL) atom count, 1/m coefficient scaling, and the tau_3 divisor ledger. It isolates the exact Qm<Y primitive/moderately-imprimitive complement with the same missing factor Y and proves determinant-phase and completion self-return controls. The complete high-h relation, original t=1 residual, every parent, bridge, and exponent remain open."
+  }
+}

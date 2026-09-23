@@ -1,0 +1,249 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-balanced-two-defect-commutator-ramp-obstruction",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Balanced critical two-defect local commutator and forced-ramp obstruction",
+        "status": "proved_internal",
+        "statement_tex": "For every persistent critical j=1 literal balanced block with L asymp K asymp X^(1/6), the ordered map (h,k,h',k') to (h,k,p=h'-h,q=k'-k) has multiplicity one and Delta+rho=q(2h+p), Delta-rho=p(2k+q); on character support p=2s and chi_4(h)chi_4(h+p)=(-1)^s. The genuine p=0 and q=0 axes are each absolutely O_epsilon(L^3X^epsilon). For x=h+h', y=k+k', U=qx, V=2sy, the four displayed elementary forward-difference multiplier commutators normalize to shifts. The two displayed ordinary and parity-compatible unnormalized commutators are 2(2y-x)T_sT_q and 8(y-x)T_sT_q^2; every fixed-width singular strip is O_epsilon(L^3X^epsilon), while off the strip division cancels the multiplier and returns only the original alternating shift tautology. On the invariant endpoint rectangle, reality gives the exact bilinear decomposition <W,H>_G=<P_(++)W,P_(++)H>_G+(1/16)<D_hD_kW,D_hD_kH>_G; the mixed projections vanish but the (++) complement retains L^4X^epsilon available positive capacity. The exact coefficient-independent mixed Abel identity has a q-primitive whose supremum is at least N/2 on an N-point ambient geometric/profile interval, so at N asymp L the currently accepted positive geometric-support and gate-face owners can lose the missing factor L. Both arithmetic low-gcd weights remain in the coefficient, fixed-Q rulings survive, and aliases/lifts remain corner-dependent if opened. This is a no-go only for the displayed local coefficient-independent commutator, independent-swap, and two-step Abel placements followed by positive closure. It is not a physical lower bound, a disproof of the critical remainder, or a classification of weighted, composite, nonlocal, or actual-symbol commutators.",
+        "dependencies": [
+          "M9-M2-balanced-smooth-literal-atom-dictionary",
+          "M9-M2-character-factor",
+          "M9-M2-balanced-full-product-double-corridor-reduction",
+          "M9-M2-balanced-double-far-phase-free-mode-reduction",
+          "M9-M2-balanced-divisor-progressive-alias-reduction",
+          "M9-M2-balanced-broad-narrow-gauge-ruling-obstruction"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "proofs/kernels/m9_m2_balanced_two_defect_commutator_ramp_obstruction.md",
+            "rounds/codex-managed/m9-m2-balanced-critical-j1-two-defect-commutator-gate/candidates/conductor_round171_two_defect_commutator_ramp_obstruction.md",
+            "rounds/codex-managed/m9-m2-balanced-critical-j1-two-defect-commutator-gate/reports/literal_two_defect_commutator_attack.md",
+            "rounds/codex-managed/m9-m2-balanced-critical-j1-two-defect-commutator-gate/reports/blind_balanced_two_defect_rederivation.md",
+            "rounds/codex-managed/m9-m2-balanced-critical-j1-two-defect-commutator-gate/reports/two_defect_capacity_boundary_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-balanced-critical-j1-two-defect-commutator-gate/reviews/blind_post_unmask_identity_scope_review.md",
+            "rounds/codex-managed/m9-m2-balanced-critical-j1-two-defect-commutator-gate/reviews/ramp_identity_power_seam_review.md",
+            "rounds/codex-managed/m9-m2-balanced-critical-j1-two-defect-commutator-gate/reviews/literal_restoration_owner_scope_review.md",
+            "rounds/codex-managed/m9-m2-balanced-critical-j1-two-defect-commutator-gate/reviews/final_commutator_kernel_verification.md",
+            "rounds/codex-managed/m9-m2-balanced-critical-j1-two-defect-commutator-gate/reviews/final_kernel_repair_verification.md",
+            "rounds/codex-managed/m9-m2-balanced-critical-j1-two-defect-commutator-gate/controls/conductor_round171_controls.md",
+            "rounds/codex-managed/m9-m2-balanced-critical-j1-two-defect-commutator-gate/reviews/conductor_round171_adjudication.md",
+            "rounds/codex-managed/m9-m2-balanced-critical-j1-two-defect-commutator-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Park the displayed local coefficient-independent commutator and two-step Abel placements. Any return to this critical block must supply a genuinely signed nonlocal actual-symbol q-primitive or correlation theorem that controls the surviving (++) complement and ramp-weighted geometric, gate, and arithmetic faces before a positive norm, while retaining fixed-Q families, aliases, endpoints, and the real centre."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-balanced-double-far-oscillatory-remainder",
+        "dependencies_added": [
+          "M9-M2-balanced-two-defect-commutator-ramp-obstruction"
+        ],
+        "evidence_added": {
+          "negative": [
+            "proofs/kernels/m9_m2_balanced_two_defect_commutator_ramp_obstruction.md",
+            "rounds/codex-managed/m9-m2-balanced-critical-j1-two-defect-commutator-gate/candidates/conductor_round171_two_defect_commutator_ramp_obstruction.md",
+            "rounds/codex-managed/m9-m2-balanced-critical-j1-two-defect-commutator-gate/reviews/final_kernel_repair_verification.md",
+            "rounds/codex-managed/m9-m2-balanced-critical-j1-two-defect-commutator-gate/reviews/conductor_round171_adjudication.md",
+            "rounds/codex-managed/m9-m2-balanced-critical-j1-two-defect-commutator-gate/synthesis.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-balanced-critical-j1-two-defect-commutator-gate/reports/literal_two_defect_commutator_attack.md",
+            "rounds/codex-managed/m9-m2-balanced-critical-j1-two-defect-commutator-gate/reports/blind_balanced_two_defect_rederivation.md",
+            "rounds/codex-managed/m9-m2-balanced-critical-j1-two-defect-commutator-gate/reports/two_defect_capacity_boundary_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-balanced-critical-j1-two-defect-commutator-gate/reviews/blind_post_unmask_identity_scope_review.md",
+            "rounds/codex-managed/m9-m2-balanced-critical-j1-two-defect-commutator-gate/reviews/ramp_identity_power_seam_review.md",
+            "rounds/codex-managed/m9-m2-balanced-critical-j1-two-defect-commutator-gate/reviews/literal_restoration_owner_scope_review.md",
+            "rounds/codex-managed/m9-m2-balanced-critical-j1-two-defect-commutator-gate/reviews/final_commutator_kernel_verification.md",
+            "rounds/codex-managed/m9-m2-balanced-critical-j1-two-defect-commutator-gate/controls/conductor_round171_controls.md"
+          ]
+        },
+        "next_action": "The canonical local two-defect commutators, independent endpoint swaps, and coefficient-independent two-step Abel placement are now parked by M9-M2-balanced-two-defect-commutator-ramp-obstruction. Reopen this critical block only with a signed nonlocal actual-symbol q-primitive/correlation theorem that controls the (++) complement and all ramp-weighted geometric, gate, gcd, fixed-Q, alias, and endpoint faces before a positive norm. The target remains open."
+      },
+      {
+        "id": "M9-M2-balanced-double-far-actual-energy",
+        "dependencies_added": [
+          "M9-M2-balanced-two-defect-commutator-ramp-obstruction"
+        ],
+        "evidence_added": {
+          "negative": [
+            "proofs/kernels/m9_m2_balanced_two_defect_commutator_ramp_obstruction.md",
+            "rounds/codex-managed/m9-m2-balanced-critical-j1-two-defect-commutator-gate/reviews/final_kernel_repair_verification.md",
+            "rounds/codex-managed/m9-m2-balanced-critical-j1-two-defect-commutator-gate/reviews/conductor_round171_adjudication.md",
+            "rounds/codex-managed/m9-m2-balanced-critical-j1-two-defect-commutator-gate/synthesis.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-balanced-critical-j1-two-defect-commutator-gate/reports/literal_two_defect_commutator_attack.md",
+            "rounds/codex-managed/m9-m2-balanced-critical-j1-two-defect-commutator-gate/reports/blind_balanced_two_defect_rederivation.md",
+            "rounds/codex-managed/m9-m2-balanced-critical-j1-two-defect-commutator-gate/reports/two_defect_capacity_boundary_hostile_audit.md"
+          ]
+        },
+        "next_action": "This critical energy remains equivalent to the open oscillatory remainder modulo the proved phase-free mode and corridors. The local commutator/Abel route is parked; require a new signed nonlocal actual-symbol theorem, and do not transfer any critical-child statement to the separate remaining-label owner or full BAL."
+      }
+    ],
+    "correct_rejected": [],
+    "reject": [
+      {
+        "id": "Round171-defect-factorizations-themselves-save-L",
+        "reason": "Delta plus/minus rho give exact coordinates only; the displayed normalized multiplier commutators reduce to shifts."
+      },
+      {
+        "id": "Round171-all-coordinate-generated-commutators-vanish",
+        "reason": "The two displayed unnormalized commutators are nonzero, and undisplayed composite or weighted Weyl commutators are outside the proved scope."
+      },
+      {
+        "id": "Round171-ordinary-unnormalized-commutator-saves-L",
+        "reason": "After the target-safe fixed-width 2y=x strip is paid, division cancels the multiplier and returns only an alternating shift tautology."
+      },
+      {
+        "id": "Round171-parity-diagonal-commutator-saves-L",
+        "reason": "After the target-safe fixed-width y=x strip is paid, division by y-x cancels the commutator multiplier and returns the original alternating diagonal difference."
+      },
+      {
+        "id": "Round171-affine-singular-strips-have-L4-mass",
+        "reason": "Each fixed-width affine strip imposes one linear endpoint relation and has absolute mass O_epsilon(L^3X^epsilon)."
+      },
+      {
+        "id": "Round171-full-scalar-equals-double-antisymmetric-swap-piece",
+        "reason": "The exact bilinear identity retains a nonzero (++) complement."
+      },
+      {
+        "id": "Round171-three-swap-parity-complements-remain",
+        "reason": "Reality forces the mixed (+-) and (-+) coefficient projections to vanish; only the (++) complement survives beside the double-antisymmetric term."
+      },
+      {
+        "id": "Round171-support-crossing-is-a-separate-unavoidable-L4-term",
+        "reason": "On the invariant endpoint rectangle, global coefficient zero extension absorbs cross-corner support failures into the exact projection identity."
+      },
+      {
+        "id": "Round171-bounded-coefficient-independent-q-primitive",
+        "reason": "Coefficient comparison forces total variation N and supremum at least N/2 on an N-point interval."
+      },
+      {
+        "id": "Round171-full-coefficient-support-is-a-geometric-interval",
+        "reason": "Arithmetic low-gcd holes are not geometric support faces; both gcd weights must remain in the coefficient."
+      },
+      {
+        "id": "Round171-large-real-phase-increments-are-small-mod-one",
+        "reason": "Large real derivatives or mixed increments give no uniform smallness of the exponential differences modulo one."
+      },
+      {
+        "id": "Round171-gcd-unit-differences-save-L-pointwise",
+        "reason": "The arithmetic gcd cutoff has no uniform pointwise L^(-1) discrete variation."
+      },
+      {
+        "id": "Round171-phase-free-subtraction-deletes-fixed-Q-rulings",
+        "reason": "Only the fully assembled phase-free scalar is paid; fixed-Q oscillatory ruling families survive both far gates."
+      },
+      {
+        "id": "Round171-dividing-by-p-q-or-affine-multiplier-deletes-axes",
+        "reason": "The p=0 and q=0 axes can be double-far and are retained and paid separately; every affine singular strip is likewise retained."
+      },
+      {
+        "id": "Round171-adversarial-capacity-is-a-physical-lower-bound",
+        "reason": "The L4 and L5 ledgers are coefficient-independent positive or adversarial capacities, not lower bounds for the literal actual-symbol scalar."
+      },
+      {
+        "id": "Round171-commutator-no-go-disproves-critical-remainder",
+        "reason": "The obstruction is restricted to displayed local coefficient-independent placements; a signed weighted or nonlocal actual-symbol theorem remains possible."
+      },
+      {
+        "id": "Round171-critical-j1-result-closes-full-BAL",
+        "reason": "The critical child remains open and, independently, the remaining-label owner covers noncritical j=1, exact-square j=2, and other balanced labels."
+      },
+      {
+        "id": "Round171-commutator-obstruction-improves-global-exponent",
+        "reason": "No analytic parent, M9, bridge, or global theorem closes."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M2-balanced-full-product-double-corridor-reduction",
+        "reason": "Its true diagonal and corridor reductions remain proved; Round 171 adds only strict slices and a route obstruction."
+      },
+      {
+        "id": "M9-M2-balanced-double-far-phase-free-mode-reduction",
+        "reason": "The assembled phase-free mode remains proved target-safe and is not used pointwise."
+      },
+      {
+        "id": "M9-M2-balanced-broad-narrow-gauge-ruling-obstruction",
+        "reason": "Its fixed-Q and positive broad--narrow obstruction remains unchanged."
+      },
+      {
+        "id": "M9-M2-balanced-remaining-label-owner-quantifier-completion",
+        "reason": "Round 171 treats only the persistent critical j=1 child."
+      },
+      {
+        "id": "M9-M2-smooth-balanced-quarter-packet-estimate",
+        "reason": "Both the critical energy and the separate remaining-label connector remain open."
+      },
+      {
+        "id": "M9-M2-top-endpoint-density-discrepancy-energy",
+        "reason": "Round 171 treats no hard-TOP owner."
+      },
+      {
+        "id": "M9-M2-smooth-unbalanced-three-quarter-estimate",
+        "reason": "Round 171 treats no UNBAL owner."
+      },
+      {
+        "id": "M9-M2-physical-one-count-assembly",
+        "reason": "All three complete M2 analytic parents are still required."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Hard TOP, full BAL, and UNBAL remain open."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "Round 171 treats no direct M1 owner."
+      },
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "reason": "The alternative GAR route is unchanged."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "A fixed critical block obstruction proves no parent-level endpoint uniformity."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain incomplete."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The standard bridge still requires complete M9."
+      },
+      {
+        "id": "GC-global-M1-alternative-bridge",
+        "reason": "The alternative bridge still requires complete GAR and M9-M2."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The strongest internally proved exponent remains one third."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "The accepted repaired external benchmark remains 0.3144831759740614... ."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The quarter target remains open."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 5,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 171 proves an exact multiplicity/axis/affine-strip package and a durable route-scoped obstruction for the displayed local commutator, endpoint-swap, and coefficient-independent mixed-Abel placements. The physical critical remainder and every analytic parent remain open, so no theorem or exponent changes."
+  }
+}

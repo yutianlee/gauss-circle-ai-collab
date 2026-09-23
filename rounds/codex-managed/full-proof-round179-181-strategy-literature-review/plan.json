@@ -1,0 +1,257 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 182,
+    "round_type": "full_proof_strategy_current_literature_review",
+    "campaign_id": "full-proof-round179-181-strategy-literature-review",
+    "title": "Full-proof frontier and current-primary-literature reassessment after Rounds 179--181",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "fec130bc66641cbdad18c832de10077a7825f1caaf5d10170a67ef65c0b27196",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "planned_numerical_percent": 0,
+      "computation_policy": "No numerical theorem evidence is planned. Exact computation may be used only for bounded graph, source-metadata, or algebraic consistency checks."
+    },
+    "target_obligations": [
+      "M9-M1",
+      "M9-M1-hard-top-high-radical-small-t-residual-estimate",
+      "M9-M1-direct-smooth-residual-blockwise-estimate",
+      "M9-M1-global-angular-radial-estimate",
+      "M9-M2",
+      "M9-M2-top-endpoint-signed-cone",
+      "M9-M2-smooth-balanced-quarter-packet-estimate",
+      "M9-M2-smooth-unbalanced-three-quarter-estimate",
+      "M9-endpoint-uniformity",
+      "M9",
+      "Conditional-bridge",
+      "GC-global-M1-alternative-bridge",
+      "GC-partial-one-third",
+      "GC-external-Li-Yang-theta-star",
+      "GC-target"
+    ],
+    "frozen_target": {
+      "question": "After analytic Rounds 179--181, what is the exact full-proof frontier on both lawful quarter routes, does current primary literature supply a theorem matching any live literal interface, and which single genuinely fresh owner-compatible theorem should Round 183 attack?",
+      "reference_formula": "Reconstruct every open dependency from the quarter target to the direct hard/smooth M1 or GAR alternative, M2 hard-TOP/BAL/UNBAL, endpoint, bridges, and graded sub-one-third lane. Compare exact target, capacity, missing power, literal coefficient class, self-return obstructions, source hypotheses, owner leverage, and downstream scope.",
+      "quantities": [
+        "Round 179 proves the primitive K17a projector and target-safe trace but shows that the high-conductor centered defect returns to the original literal orientation block.",
+        "Round 180 proves the K26 row identity, physical diagonal, and equal-product sector but leaves the complete unequal-product near-cell theorem with one factor L missing.",
+        "Round 181 proves exact hard-M1 squarefree coordinates and two disjoint target-safe sectors, leaving s>L and 1<=t<ceil(sqrt L), especially t=1, short by L^(1/2).",
+        "Hard TOP, both BAL scopes, UNBAL, the smooth direct M1 parent or complete GAR, endpoint uniformity, M9, both bridges, and the quarter theorem remain logically separate.",
+        "The internal exponent is 1/3, the accepted external benchmark is 0.3144831759740614..., and the target is 1/4.",
+        "The source audit must be primary, versioned, hypothesis-exact, power-restored, dated through 2026-08-27, and newly mapped to the R179--R181 residual interfaces.",
+        "Round 182 selects one Round-183 objective but promotes no analytic theorem, parent, bridge, or exponent."
+      ]
+    },
+    "completion_criteria": [
+      "Reconstruct both lawful quarter-proof trees from the authoritative graph and verify every open/closed dependency and route-specific connector.",
+      "Compare every live direct-M1/GAR, M2 hard-TOP/BAL/UNBAL, endpoint, bridge, and graded exponent frontier with exact target, capacity, missing power, literal coefficients, and parked obstructions.",
+      "Audit current primary literature through 2026-08-27, recording exact versions, theorem numbers, hypotheses, parameter maps, restored powers, and first failed project hypotheses, with special attention to the new R179--R181 residuals.",
+      "Receive an isolated statement-only ranking of the complete frontier and one exact Round-183 recommendation.",
+      "Select one and only one Round-183 analytic objective with literal formula, promotion gate, false controls, stop rule, and downstream scope.",
+      "Review dependency/power selection, source/hypothesis currency, and post-unmask blind consistency.",
+      "Apply no graph change without a mechanically valid strategy-only State Patch and post-application audit.",
+      "Close under exactly one label: strategy_frontier_retained, strategy_frontier_reselected, or strategy_source_update_only."
+    ],
+    "controls": [
+      "both_lawful_quarter_routes",
+      "open_owner_and_dependency_status",
+      "Round179_181_exact_residual_frontiers",
+      "hard_M1_small_t_and_smooth_separation",
+      "GAR_alternative_route_scope",
+      "hard_TOP_remaining_channels",
+      "critical_and_remaining_BAL_scopes",
+      "UNBAL_literal_vector_owner",
+      "endpoint_and_bridge_scope",
+      "graded_sub_one_third_lane",
+      "target_capacity_missing_power",
+      "literal_coefficient_and_absolute_value_interface",
+      "primary_source_currency",
+      "theorem_hypothesis_and_version_audit",
+      "restored_project_power",
+      "dated_no_match_scope",
+      "single_Round183_objective",
+      "strategy_only_no_analytic_promotion",
+      "exponent_quarantine",
+      "no_in_round_analytic_pivot"
+    ],
+    "tasks": [
+      {
+        "id": "full_graph_frontier_reconstruction",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "completed",
+        "target": "Reconstruct both complete lawful quarter-proof trees after Round 181, compare every live frontier by exact power and owner leverage, and recommend exactly one Round-183 theorem.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "state/best_proof_draft.md",
+          "state/project_summary.md",
+          "strategy/round182_full_proof_strategy_current_literature_review.md",
+          "rounds/codex-managed/full-proof-round175-177-strategy-literature-review/reports/full_graph_frontier_reconstruction.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-primitive-conductor-orientation-defect-gate/synthesis.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/synthesis.md",
+          "rounds/codex-managed/m9-m1-hard-top-high-squarefree-radical-gate/synthesis.md"
+        ],
+        "required_controls": [
+          "both_lawful_quarter_routes",
+          "open_owner_and_dependency_status",
+          "Round179_181_exact_residual_frontiers",
+          "hard_M1_small_t_and_smooth_separation",
+          "GAR_alternative_route_scope",
+          "hard_TOP_remaining_channels",
+          "critical_and_remaining_BAL_scopes",
+          "UNBAL_literal_vector_owner",
+          "endpoint_and_bridge_scope",
+          "graded_sub_one_third_lane",
+          "target_capacity_missing_power",
+          "single_Round183_objective",
+          "strategy_only_no_analytic_promotion",
+          "exponent_quarantine",
+          "no_in_round_analytic_pivot"
+        ],
+        "required_output": [
+          "A seven-section analytic strategy report satisfying the repository report contract.",
+          "Two exact dependency trees and a frontier comparison table with target, capacity, missing power, mechanism, owner leverage, and downstream scope.",
+          "Exactly one Round-183 objective with literal formula, promotion gate, false controls, and stop rule.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/full-proof-round179-181-strategy-literature-review/reports/full_graph_frontier_reconstruction.md"
+      },
+      {
+        "id": "current_primary_literature_reassessment",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "status": "completed",
+        "target": "Audit primary literature current through 2026-08-27 for exact matches to every live project interface, especially the R179--R181 residuals, and report applicability or the first failed hypothesis with restored project powers.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round182_full_proof_strategy_current_literature_review.md",
+          "rounds/codex-managed/full-proof-round175-177-strategy-literature-review/reports/current_primary_literature_reassessment.md",
+          "rounds/codex-managed/full-proof-round175-177-strategy-literature-review/reviews/source_hypotheses_currency_interface_review.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-primitive-conductor-orientation-defect-gate/synthesis.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/synthesis.md",
+          "rounds/codex-managed/m9-m1-hard-top-high-squarefree-radical-gate/synthesis.md",
+          "proofs/kernels/m9_m1_hard_top_squarefree_radical_reduction_and_self_return.md",
+          "sources/li_yang_2023.md",
+          "sources/bourgain_watt.md",
+          "sources/huxley_2003.md",
+          "sources/banerjee_khurana_2023.md",
+          "sources/kiral_zhou_2016.md",
+          "sources/popov_2024_local_moments.md",
+          "sources/popov_2024_voronoi_gauss.md",
+          "sources/xiao_2026.md",
+          "sources/tao_trudgian_yang_2025.md"
+        ],
+        "required_controls": [
+          "primary_source_currency",
+          "theorem_hypothesis_and_version_audit",
+          "restored_project_power",
+          "dated_no_match_scope",
+          "literal_coefficient_and_absolute_value_interface",
+          "Round179_181_exact_residual_frontiers",
+          "hard_M1_small_t_and_smooth_separation",
+          "GAR_alternative_route_scope",
+          "hard_TOP_remaining_channels",
+          "critical_and_remaining_BAL_scopes",
+          "UNBAL_literal_vector_owner",
+          "graded_sub_one_third_lane",
+          "strategy_only_no_analytic_promotion",
+          "exponent_quarantine"
+        ],
+        "required_output": [
+          "A seven-section source report satisfying the repository report contract.",
+          "Exact primary URLs, current versions, theorem numbers, hypotheses, project parameter maps, restored powers, and first failed hypotheses.",
+          "A dated corpus-scoped source conclusion rather than a universal impossibility claim.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/full-proof-round179-181-strategy-literature-review/reports/current_primary_literature_reassessment.md"
+      },
+      {
+        "id": "blind_round183_frontier_selection",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "completed",
+        "target": "From the isolated full-frontier packet, independently rank every lawful analytic interface and select exactly one Round-183 objective without graph, strategy, source, or sibling context.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/full-proof-round179-181-strategy-literature-review/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "state/active_campaign.yml",
+          "all strategy files",
+          "all source cards and web-search results",
+          "all prior round reports, reviews, controls, and synthesis",
+          "all Round-182 sibling reports, reviews, controls, and conductor analysis"
+        ],
+        "required_controls": [
+          "both_lawful_quarter_routes",
+          "Round179_181_exact_residual_frontiers",
+          "hard_M1_small_t_and_smooth_separation",
+          "GAR_alternative_route_scope",
+          "hard_TOP_remaining_channels",
+          "critical_and_remaining_BAL_scopes",
+          "UNBAL_literal_vector_owner",
+          "endpoint_and_bridge_scope",
+          "graded_sub_one_third_lane",
+          "target_capacity_missing_power",
+          "single_Round183_objective",
+          "strategy_only_no_analytic_promotion",
+          "exponent_quarantine"
+        ],
+        "required_output": [
+          "A seven-section statement-only report satisfying the repository report contract.",
+          "A complete independent ranking with exact targets, capacities, owner leverage, hidden connectors, false controls, and stop rules.",
+          "Exactly one Round-183 recommendation and the reason each alternative ranks lower.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/full-proof-round179-181-strategy-literature-review/reports/blind_round183_frontier_selection.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "dependency_power_and_selection",
+        "requirement": "Verify both proof trees, all open owners, exact targets, capacities, missing powers, and the single-objective selection."
+      },
+      {
+        "id": "source_hypotheses_currency_and_interface",
+        "requirement": "Verify primary-source versions, theorem statements, hypotheses, URLs, parameter maps, restored powers, and dated no-match scope."
+      },
+      {
+        "id": "blind_post_unmask_frontier_selection",
+        "requirement": "Verify the isolated ranking against the full graph and reconcile notation or owner-scope mismatch without voting."
+      },
+      {
+        "id": "strategy_and_exponent_scope",
+        "requirement": "Allow strategy evidence and next-action changes only; prohibit analytic theorem, parent, bridge, or exponent promotion."
+      }
+    ],
+    "closing_assessment": {
+      "decision": "retain_complete_small_t_frontier_and_repaired_source_guardrails",
+      "terminal_label": "strategy_frontier_retained",
+      "graph_mutation": true,
+      "main_result": "Both lawful quarter routes and every open owner are reconstructed. The complete hard-M1 high-radical small-t aggregate is selected as the sole Round-183 objective, with capacity L^2 against target L^(3/2) and mandatory t=1. The current primary-source audit is repaired and independently GREEN but imports no live theorem. No analytic status, parent, bridge, theorem, or exponent changes.",
+      "resulting_graph_sha256": "5965e35636d988267311dbfcf8d57243153f88cb1105e2b2bcc35fa59a5e3833",
+      "patch_effect": "0_create_1_update_0_correct_16_reject_21_no_change",
+      "exponent_change": false,
+      "next_round": 183
+    }
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "fec130bc66641cbdad18c832de10077a7825f1caaf5d10170a67ef65c0b27196",
+    "generated_at": "2026-08-27T09:44:05.026946+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

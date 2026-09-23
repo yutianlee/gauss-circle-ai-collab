@@ -1,0 +1,262 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 191,
+    "round_type": "m9_m1_t1_fast_height_jump_coboundary_gate",
+    "campaign_id": "m9-m1-t1-fast-height-jump-coboundary-gate",
+    "title": "Hard-M1 t=1 projectively fast signed height-jump coboundary gate",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "306425e79ef6d5e25ed037b77d25a0cc180bfc3b68c4a17ef833da7be1a573fa",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 95,
+      "numerical_experimental_maximum_percent": 5,
+      "planned_numerical_percent": 3,
+      "computation_policy": "Mathematica or Python may check finite anchor, jump, residue-band, endpoint, and operator identities only. Every computation is diagnostic_only and cannot certify an asymptotic estimate."
+    },
+    "target_obligations": [
+      "M9-M1-hard-top-high-radical-small-t-residual-estimate",
+      "M9-M1-hard-top-t1-high-h-dual-frequency-projective-reduction",
+      "M9-M1-hard-top-t1-high-h-imprimitive-lift-gcd-reduction",
+      "M9-M1-hard-top-t1-high-h-inverse-residue-conductor-reduction",
+      "M9-M1-hard-top-t1-residual-fejer-tangent-gcd-reduction",
+      "M9-M1-top-endpoint-signed-cone",
+      "M9-M1"
+    ],
+    "frozen_target": {
+      "question": "Can the exact Round-189 projectively fast one-outer-real-part complement be proved through cancellation in the joint literal signed height-jump coboundary packet, can a strict target-safe jump sector with an exact complement be proved, or can the first exact literal jump-correlation obstruction be isolated?",
+      "reference_formula": "Fix Q=H_B=floor((log(2X))^B), a nonempty Y<h<=2Y block with Y>Q, U=mq>4Q, q>Q, m|a|_q>Q, Qm<Y, and j_q(a,v)=|a inverse(v mod q)|_q>T_Q=min((q-1)/2,floor(Qmq/Y)). For a nonempty dyadic J-band, z_(omega,v)=e(epsilon_omega a inverse(v mod q)/q), Delta^-W_v(h)=W_v(h)-W_v(h-1), and J_packet=sum_(omega,v in band)(1-z_(omega,v))^(-1) sum_h Delta^-W_v(h)z_(omega,v)^h. Prove |J_packet|<<_(B,epsilon) Q m kappa u X^epsilon uniformly, or an exactly ledger-equivalent estimate, while retaining every literal field in one signed aggregate.",
+      "quantities": [
+        "The carrier and amplitudes are exactly K185.27 and K185.30--K185.35 after the accepted Round-187 Fourier, Round-188 lift, and Round-189 projective reductions.",
+        "For fixed kappa,u,m,q,a, the relation U=mq divides u, g=u/U, (u,v)=1, (U,h)=1, 0<2kappa g h<ceil(L), Y<h<=2Y, and both orientations remains literal.",
+        "W_v(h) is the complete zero-extended actual height sequence, including the dyadic block, carrier, affine t-sum, selector, squarefree and coprimality masks, profile, floor, star, half-weight, hard sample, crossings, endpoints, Fejer factor, square-root phase, sign, and terminal zero extension.",
+        "The Abel identity is endpoint-exact but supplies no cancellation by itself. Common-range differences and all births and deaths must remain in the same signed packet.",
+        "On J<=j_q(a,v)<2J, |1-z|^(-1) is comparable to q/J. Positive total variation would need scale Q m kappa u J/q, while the available scale is Y kappa u J/q. The exact deficit is Y/(Qm), primitive Y/Q.",
+        "No absolute value may be moved inside the complete jump packet and the two orientations may not be separately absolutized.",
+        "A claimed orientation involution, projective-neighbor difference, periodic mask, smooth free weight, or source theorem must be proved at the literal interface rather than assumed.",
+        "Even complete success closes at most the exact original-t=1 residual after accepted connectors. Every original t>=2 small-G incidence, the large-G near-resonant complement, the hard parent, smooth M1, M2, endpoint, bridges, and the global theorem remain separate."
+      ]
+    },
+    "completion_criteria": [
+      "Derive the exact backward jump decomposition of W_v(h) into common-range coefficient changes, affine-site births and deaths, arithmetic-mask changes, endpoint/crossing changes, and terminal zero-extension terms without dropping a literal field.",
+      "Test whether the common-range component has enough actual smooth or oscillatory h-structure, and whether the discontinuous components admit divisor, residue, coarea, or signed pairing estimates at the Qm kappa u scale.",
+      "Attempt a genuinely joint h-v or projective-band transform before any positive norm, restoring the q/J Abel factor, exact m^(-1)c_q(a) lift, coefficient mass, divisor sums, dyadic bands, endpoints, and all L,Y,Q,X powers.",
+      "Prove the full fast packet, prove a nonempty strict target-safe packet with an exact one-outer-real-part complement, or give a rigorous scoped no-go identifying the first failed correlation and exact remaining deficit.",
+      "Receive a statement-only independent rederivation of the jump identity, operator capacity, literal hypotheses, and strongest justified conclusion.",
+      "Use finite Mathematica or Python checks only to test exact identities, degeneracies, adversarial arrays, and proposed involutions; archive parameters, outputs, and limitations.",
+      "Review normalization and endpoints, jump-source coverage, signed and absolute-value placement, power and divisor ledgers, blind post-unmask consistency, and downstream owner scope before any promotion.",
+      "Apply no graph change without a mechanically valid State Patch, independent reverse/replay audit, green lifecycle validation, and exactly one declared terminal label. Do not pivot in-round to another owner or exponent."
+    ],
+    "controls": [
+      "exact_round189_fast_complement",
+      "literal_K185_27_30_35_carrier",
+      "single_outer_real_part_and_both_orientations",
+      "fixed_a_fast_dyadic_projective_band",
+      "endpoint_exact_zero_extended_backward_difference",
+      "abel_identity_and_q_over_J_normalization",
+      "common_range_birth_death_partition",
+      "selector_squarefree_coprime_mask_jumps",
+      "profile_floor_star_crossing_endpoint_jumps",
+      "affine_site_and_terminal_zero_extension_jumps",
+      "actual_square_root_phase_and_Fejer_factor",
+      "no_absolute_value_inside_jump_packet",
+      "no_separate_orientation_absolutization",
+      "no_false_orientation_involution",
+      "no_unproved_projective_neighbor_identity",
+      "no_assumed_periodicity_smoothness_or_BV",
+      "no_positive_completion_large_sieve_or_alias_self_return",
+      "prime_bad_slope_and_adversarial_array_controls",
+      "saturated_band_and_empty_packet_cases",
+      "exact_m_inverse_cq_lift_and_coefficient_mass",
+      "kappa_u_m_q_a_J_Y_divisor_power_ledger",
+      "full_Y_over_Qm_gain_before_positive_norm",
+      "diagnostic_only_computation",
+      "original_t1_only_downstream_scope",
+      "no_in_round_owner_pivot",
+      "exponent_quarantine"
+    ],
+    "exit_labels": [
+      "hard_m1_t1_high_h_fast_target",
+      "strict_fast_height_jump_sector",
+      "fast_height_jump_correlation_no_go"
+    ],
+    "tasks": [
+      {
+        "id": "literal_height_jump_coboundary_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "completed",
+        "target": "Expand the exact Round-189 height sequence by literal jump source. Prove the joint signed coboundary estimate, or the widest target-safe strict packet with an exact complement, by combining actual common-range coefficient differences, arithmetic-mask openings, affine birth/death geometry, and the square-root phase before any positive norm.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "state/failure_ledger.md",
+          "strategy/round191_m1_t1_fast_height_jump_coboundary_strategy.md",
+          "proofs/kernels/m9_m1_hard_top_t1_comparable_factor_exchange_sector_and_residual_fejer_reduction.md",
+          "proofs/kernels/m9_m1_hard_top_t1_residual_fejer_tangent_gcd_reduction.md",
+          "proofs/kernels/m9_m1_hard_top_t1_high_h_inverse_residue_conductor_reduction.md",
+          "proofs/kernels/m9_m1_hard_top_t1_high_h_imprimitive_lift_gcd_reduction.md",
+          "proofs/kernels/m9_m1_hard_top_t1_high_h_dual_frequency_projective_reduction.md",
+          "rounds/codex-managed/full-proof-round187-189-strategy-literature-review/reviews/conductor_round190_adjudication.md"
+        ],
+        "required_controls": [
+          "exact_round189_fast_complement",
+          "literal_K185_27_30_35_carrier",
+          "single_outer_real_part_and_both_orientations",
+          "fixed_a_fast_dyadic_projective_band",
+          "endpoint_exact_zero_extended_backward_difference",
+          "abel_identity_and_q_over_J_normalization",
+          "common_range_birth_death_partition",
+          "selector_squarefree_coprime_mask_jumps",
+          "profile_floor_star_crossing_endpoint_jumps",
+          "affine_site_and_terminal_zero_extension_jumps",
+          "actual_square_root_phase_and_Fejer_factor",
+          "no_absolute_value_inside_jump_packet",
+          "exact_m_inverse_cq_lift_and_coefficient_mass",
+          "full_Y_over_Qm_gain_before_positive_norm",
+          "original_t1_only_downstream_scope",
+          "exponent_quarantine"
+        ],
+        "required_output": [
+          "A seven-section analytical report satisfying the repository report contract.",
+          "An exact jump-source formula and restored power ledger, with a full proof, a strict proved sector plus exact complement, or the first exact unproved correlation.",
+          "Write only the assigned report and any explicitly named diagnostic under this campaign; make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reports/literal_height_jump_coboundary_attack.md"
+      },
+      {
+        "id": "joint_hv_phase_jump_hostile_audit",
+        "role": "barrier_no_go",
+        "access_mode": "selected_context",
+        "status": "completed",
+        "target": "Hostilely test every proposed source of the Y/(Qm) gain in the joint h-v jump packet. Reindex by projective slope where lawful, examine the actual square-root phase and discontinuity surfaces, determine exact operator capacity, and either prove a complementary signed transform estimate or a scoped no-go for positive, separable, orientation-pairing, neighbor-difference, or completion mechanisms.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "state/failure_ledger.md",
+          "strategy/round191_m1_t1_fast_height_jump_coboundary_strategy.md",
+          "proofs/kernels/m9_m1_hard_top_t1_residual_fejer_tangent_gcd_reduction.md",
+          "proofs/kernels/m9_m1_hard_top_t1_high_h_inverse_residue_conductor_reduction.md",
+          "proofs/kernels/m9_m1_hard_top_t1_high_h_imprimitive_lift_gcd_reduction.md",
+          "proofs/kernels/m9_m1_hard_top_t1_high_h_dual_frequency_projective_reduction.md",
+          "rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reports/height_variation_projective_hostile_audit.md",
+          "rounds/codex-managed/full-proof-round187-189-strategy-literature-review/synthesis.md"
+        ],
+        "required_controls": [
+          "exact_round189_fast_complement",
+          "single_outer_real_part_and_both_orientations",
+          "fixed_a_fast_dyadic_projective_band",
+          "endpoint_exact_zero_extended_backward_difference",
+          "abel_identity_and_q_over_J_normalization",
+          "common_range_birth_death_partition",
+          "no_absolute_value_inside_jump_packet",
+          "no_separate_orientation_absolutization",
+          "no_false_orientation_involution",
+          "no_unproved_projective_neighbor_identity",
+          "no_assumed_periodicity_smoothness_or_BV",
+          "no_positive_completion_large_sieve_or_alias_self_return",
+          "prime_bad_slope_and_adversarial_array_controls",
+          "saturated_band_and_empty_packet_cases",
+          "kappa_u_m_q_a_J_Y_divisor_power_ledger",
+          "full_Y_over_Qm_gain_before_positive_norm",
+          "diagnostic_only_computation",
+          "original_t1_only_downstream_scope",
+          "exponent_quarantine"
+        ],
+        "required_output": [
+          "A seven-section hostile analytical report satisfying the repository report contract.",
+          "An exact signed-operator and phase audit, including the first failed inequality and a quantitative deficit for every rejected mechanism.",
+          "Write only the assigned report and any explicitly named diagnostic under this campaign; make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reports/joint_hv_phase_jump_hostile_audit.md"
+      },
+      {
+        "id": "blind_fast_jump_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "completed",
+        "target": "From the self-contained statement packet only, independently derive the endpoint-exact jump identity, audit the claimed signed scale and abstract operator capacity, and prove the strongest justified theorem or no-go without importing hidden coefficient regularity.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "state/active_campaign.yml",
+          "all strategy files",
+          "all source cards and web-search results",
+          "all prior round reports, reviews, controls, candidates, kernels and synthesis",
+          "all Round-191 sibling reports, reviews, controls and conductor analysis"
+        ],
+        "required_controls": [
+          "single_outer_real_part_and_both_orientations",
+          "fixed_a_fast_dyadic_projective_band",
+          "endpoint_exact_zero_extended_backward_difference",
+          "abel_identity_and_q_over_J_normalization",
+          "common_range_birth_death_partition",
+          "no_absolute_value_inside_jump_packet",
+          "no_false_orientation_involution",
+          "no_unproved_projective_neighbor_identity",
+          "prime_bad_slope_and_adversarial_array_controls",
+          "saturated_band_and_empty_packet_cases",
+          "full_Y_over_Qm_gain_before_positive_norm",
+          "original_t1_only_downstream_scope",
+          "exponent_quarantine"
+        ],
+        "required_output": [
+          "A seven-section statement-only report satisfying the repository report contract.",
+          "An independent exact Abel derivation, operator-capacity control, strongest provable strict statement or scoped insufficiency result, and first missing literal hypothesis.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reports/blind_fast_jump_rederivation.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "jump_definition_normalization_and_endpoints",
+        "requirement": "Verify zero extension, backward difference, Abel sign, q/J normalization, fast-band bounds, empty and saturated cases, and both orientations under one outer real part."
+      },
+      {
+        "id": "literal_jump_source_coverage",
+        "requirement": "Verify common-range changes, all births and deaths, arithmetic masks, selectors, profiles, floors, stars, crossings, endpoints, phases, affine sites, and terminal zeros are present exactly once."
+      },
+      {
+        "id": "signed_mechanism_and_false_controls",
+        "requirement": "Verify that cancellation occurs before positive norms and that no false orientation involution, projective-neighbor identity, assumed BV, free weight, or positive transform is used."
+      },
+      {
+        "id": "lift_divisor_power_and_owner_scope",
+        "requirement": "Verify the m^(-1)c_q(a) lift, coefficient mass, kappa-u-m-q-a-J-Y ledgers, full Y/(Qm) gain, literal t=1-only scope, and exponent quarantine."
+      },
+      {
+        "id": "blind_post_unmask_consistency",
+        "requirement": "Reconcile the statement-only derivation or no-go with the actual literal coefficient class without vote or hidden strengthening."
+      }
+    ],
+    "scheduled_review": "Round 194 is the mandatory full-proof strategy and current-primary-literature checkpoint after analytic Rounds 191--193.",
+    "closing_assessment": {
+      "decision": "promote_fast_signed_inverse_transport_reduction",
+      "terminal_label": "strict_fast_height_jump_sector",
+      "graph_mutation": true,
+      "main_result": "The strict signed-inverse sector 0<|rho_(mq)(v)|<=min(((mq)-1)/2,floor(H_B m (mq)/Y)) and the exact outer-terminal and isolated Fejer jump projections are target-safe by inverse-class sparsity, literal adjacent-fibre transport, and the exact lift/divisor ledger. The exact rho-large complex remainder stays under one outer real part and remains open with deficit Y/(H_Bm). No complete fast packet, original t=1 residual, M1/M2 parent, endpoint theorem, M9 claim, bridge, global theorem, or exponent changes.",
+      "resulting_graph_sha256": "75b44fe68f9c6e094d2ab6e643be3c0309320ef84e73ca22d692698440eeed13",
+      "patch_effect": "1_create_1_update_0_correct_15_reject_23_no_change",
+      "exponent_change": false,
+      "next_round": 192
+    }
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "306425e79ef6d5e25ed037b77d25a0cc180bfc3b68c4a17ef833da7be1a573fa",
+    "generated_at": "2026-08-29T13:18:14.049697+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

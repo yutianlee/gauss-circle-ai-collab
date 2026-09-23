@@ -1,0 +1,174 @@
+{
+  "starting_graph_sha256": "8aea2ab5b088a0b29a434347ffc4509c70e79f53e450814920e3c83165a1ab69",
+  "reversibility": {
+    "rule": "Remove every rejected-claim record introduced by this patch and every inconclusive evidence_added value; restore the selected node's next_action and last-updated metadata below. This recovers the canonical starting graph.",
+    "restore_next_action": {
+      "M9-M1-hard-top-high-radical-small-t-residual-estimate": "Rounds 187-197 prove the accepted Fourier, lift, projective, signed-inverse, Farey, double-close, P2 absolute-capacity, and P2 common-cell lower-swap sectors. Inside the exact Round-195 open packets, Round 197 removes only P_cc. The remaining P2 region is kappa<D_L, min(Y,D_L)>H_B \\mathfrak m kappa, intersected with P_boundary(lit) dotcup P_sf dotcup P_gf; all of P1 also remains open. The first P2 seam is the aligned literal sharp face, whose current route retains D_L L^2 capacity. Prove an actual signed face-jump/selector/gcd-failure estimate before positive norms, or attack P1 in a separately frozen round. Complete original t=1, every t>=2 small-G incidence, the large-G near-resonant complement, smooth M1, GAR, M2, endpoint uniformity, M9 and both bridges remain open."
+    },
+    "restore_metadata": {
+      "M9-M1-hard-top-high-radical-small-t-residual-estimate": {
+        "last_updated_round": 197,
+        "last_updated_at": "2026-08-31T00:13:15"
+      }
+    }
+  },
+  "proof_obligations": {
+    "create": [],
+    "update": [
+      {
+        "id": "M9-M1-hard-top-high-radical-small-t-residual-estimate",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/full-proof-round195-197-strategy-literature-review/reports/full_graph_frontier_reconstruction_after_round197.md",
+            "rounds/codex-managed/full-proof-round195-197-strategy-literature-review/reports/current_primary_literature_reassessment_after_round197.md",
+            "rounds/codex-managed/full-proof-round195-197-strategy-literature-review/reports/blind_round199_frontier_selection.md",
+            "rounds/codex-managed/full-proof-round195-197-strategy-literature-review/reviews/dependency_power_selection_seam_review.md",
+            "rounds/codex-managed/full-proof-round195-197-strategy-literature-review/reviews/source_hypotheses_currency_interface_review.md",
+            "rounds/codex-managed/full-proof-round195-197-strategy-literature-review/reviews/blind_post_unmask_frontier_selection_review.md",
+            "rounds/codex-managed/full-proof-round195-197-strategy-literature-review/reviews/conductor_round198_report_reconciliation.md",
+            "rounds/codex-managed/full-proof-round195-197-strategy-literature-review/reviews/conductor_round198_adjudication.md",
+            "rounds/codex-managed/full-proof-round195-197-strategy-literature-review/controls/conductor_round198_launch_validation.md",
+            "rounds/codex-managed/full-proof-round195-197-strategy-literature-review/controls/conductor_round198_primary_source_currency_check.md",
+            "rounds/codex-managed/full-proof-round195-197-strategy-literature-review/synthesis.md"
+          ]
+        },
+        "next_action": "Round 199 is frozen to the complete exact open-packet P2 remainder: kappa<D_L and min(Y,D_L)>H_B \\mathfrak m kappa, intersected with P_boundary(lit) dotcup P_sf dotcup P_gf. Prove the outer O(L^2 X^epsilon) bound for their joint literal physical operator before componentwise positive norms. The aligned literal sharp face is the mandatory first stress test. Close with a mechanism-scoped no-go and no analytic pivot if the proposed coefficient-preserving route self-returns there; a theorem exit must also price the sign-failure and changed-gcd pieces, every live 2<=kappa<D_L packet, both orientations and T branches, all endpoints, phases, carries, selectors, commutators, births/deaths and zero extensions under one outer real part. Success closes only the remaining P2 sector. P1, the rest of original t=1, every original t>=2 small-G incidence, the large-G near-resonant complement, smooth M1, GAR, every M2 parent, endpoint uniformity, M9 and both bridges remain open.",
+        "last_updated_round": 198
+      }
+    ],
+    "correct_rejected": [],
+    "reject": [
+      {
+        "id": "Round198-report-agreement-proves-P2-remainder",
+        "reason": "The reports select a strategy and prove no cancellation estimate for the literal three-piece operator."
+      },
+      {
+        "id": "Round198-smallest-kernel-means-smallest-named-atom",
+        "reason": "The smallest proof kernel is the smallest exact completion kernel; a boundary-only theorem would leave two pieces of the same isolated P2 remainder open."
+      },
+      {
+        "id": "Round198-boundary-only-theorem-satisfies-selected-Round199-exit",
+        "reason": "The aligned face is the mandatory first stress test, but the theorem exit must price the full boundary/sign/gcd complement."
+      },
+      {
+        "id": "Round198-complete-complement-may-use-separate-component-norms",
+        "reason": "Taking separate moduli on the three failure channels can erase their only possible joint literal cancellation and is not the claimant operator."
+      },
+      {
+        "id": "Round198-aligned-face-capacity-is-literal-lower-bound",
+        "reason": "D_L L^2 is a positive/mechanism capacity; no nonvanishing, density, or lower mass is proved for the literal coefficient."
+      },
+      {
+        "id": "Round198-aligned-face-capacity-disproves-P2",
+        "reason": "The capacity defeats the audited common-cell route only and does not disprove a different coefficient-sensitive signed estimate."
+      },
+      {
+        "id": "Round198-four-corner-kappa1-covers-open-packets",
+        "reason": "The cross-coprime rectangle forces physical kappa=1 and cannot cover every live 2<=kappa<D_L packet."
+      },
+      {
+        "id": "Round198-changed-gcd-corner-is-disposable-zero",
+        "reason": "A recomputed-gcd corner is a different live physical allocation, not a missing zero-extended corner."
+      },
+      {
+        "id": "Round198-sign-failure-piece-is-target-safe",
+        "reason": "P_sf is an exact open component and no target estimate is proved for it."
+      },
+      {
+        "id": "Round198-gcd-failure-piece-is-target-safe",
+        "reason": "P_gf is an exact open component and no target estimate is proved for it."
+      },
+      {
+        "id": "Round198-Pcc-upper-bound-implies-density-or-mass",
+        "reason": "Round 197 explicitly proves no nonemptiness, density, nonvanishing, or positive-mass statement for P_cc."
+      },
+      {
+        "id": "Round198-Gao-friability-theorem-proves-smooth-M1",
+        "reason": "Prime-factor friability is not the project's smooth physical block and supplies no literal M1 coefficient estimate."
+      },
+      {
+        "id": "Round198-Lamzouri-sectorial-resonance-is-fixed-X-upper-bound",
+        "reason": "The source gives signed omega lower bounds and an existential resonance theorem over a long interval, not the required uniform upper estimate."
+      },
+      {
+        "id": "Round198-Cloitre-equivalence-improves-circle-exponent",
+        "reason": "The Fibonacci identity transports the classical discrepancy and its admissible exponent but creates no improved bound."
+      },
+      {
+        "id": "Round198-MRS-complete-prime-power-product-imports-to-P2",
+        "reason": "The theorem's fixed odd prime-power complete sum does not accept the moving physical masks, coefficients, conductors, endpoints, and norm placement."
+      },
+      {
+        "id": "Round198-source-analogy-is-a-project-theorem",
+        "reason": "Exponent-pair, moment, decoupling, trace, energy, shifted-correlation, and spectral analogies fail a literal hypothesis before a lawful power import."
+      },
+      {
+        "id": "Round198-source-no-match-is-universal-literature-nonexistence",
+        "reason": "The conclusion is dated and restricted to the named versioned primary corpus through 2026-08-31."
+      },
+      {
+        "id": "Round198-complete-P2-remainder-closes-original-t1",
+        "reason": "P1 and other original-t1 incidences remain open even after hypothetical success on the selected remainder."
+      },
+      {
+        "id": "Round198-complete-P2-remainder-closes-hard-M1-or-M9-M1",
+        "reason": "Original t>=2, large-G near resonance, and the independent smooth M1 parent remain open."
+      },
+      {
+        "id": "Round198-complete-P2-remainder-closes-M9-or-quarter-target",
+        "reason": "Every M2 parent, endpoint uniformity, and the route-specific bridges remain separate."
+      },
+      {
+        "id": "Round198-GAR-route-bypasses-M9-M2",
+        "reason": "The alternative route bypasses blockwise M1/M9 but still requires complete M9-M2."
+      },
+      {
+        "id": "Round198-strategy-review-improves-global-exponent",
+        "reason": "No analytic parent, endpoint theorem, bridge, or global theorem is proved."
+      },
+      {
+        "id": "Round198-in-round-analytic-pivot-is-authorized",
+        "reason": "Round 199 must close or rigorously diagnose its frozen complete P2 remainder mechanism before another owner is selected."
+      }
+    ],
+    "no_change": [
+      {"id": "M9-M1-hard-top-t1-rho-large-P2-absolute-capacity-sectors", "reason": "The accepted Round-195 packet sectors remain unchanged."},
+      {"id": "M9-M1-hard-top-t1-rho-large-P2-common-cell-allocation-commutator-sector", "reason": "The accepted Round-197 common-cell sector remains unchanged."},
+      {"id": "M9-M1-hard-top-t1-rho-large-gcd-scaled-close-sector", "reason": "The accepted Round-193 double-close sector remains unchanged."},
+      {"id": "M9-M1-hard-top-t1-rho-large-farey-covector-reduction", "reason": "The accepted Round-192 core remains unchanged."},
+      {"id": "M9-M1-hard-top-t1-fast-signed-inverse-transport-reduction", "reason": "The accepted Round-191 reduction remains unchanged."},
+      {"id": "M9-M1-hard-top-t1-high-h-dual-frequency-projective-reduction", "reason": "The accepted Round-189 reduction remains unchanged."},
+      {"id": "M9-M1-hard-top-t1-high-h-imprimitive-lift-gcd-reduction", "reason": "The accepted Round-188 reduction remains unchanged."},
+      {"id": "M9-M1-hard-top-t1-high-h-inverse-residue-conductor-reduction", "reason": "The accepted Round-187 reduction remains unchanged."},
+      {"id": "M9-M1-hard-top-t1-residual-fejer-tangent-gcd-reduction", "reason": "The accepted physical correlation reduction remains unchanged."},
+      {"id": "M9-M1-hard-top-t1-comparable-factor-exchange-sector", "reason": "The accepted Round-184 strict sector remains unchanged."},
+      {"id": "M9-M1-hard-top-small-t-nonresonant-primitive-ray-sector", "reason": "The accepted Round-183 strict sector remains unchanged."},
+      {"id": "M9-M1-top-endpoint-signed-cone", "reason": "The full hard signed cone remains open."},
+      {"id": "M9-M1-direct-smooth-residual-blockwise-estimate", "reason": "The independent smooth direct-M1 parent remains open."},
+      {"id": "M9-M1-physical-one-count-assembly", "reason": "The proved connector still requires its complete hard and smooth children."},
+      {"id": "M9-M1-global-lower-radial-signed-estimate", "reason": "The GAR lower-radial owner receives no analytic estimate."},
+      {"id": "M9-M1-global-angular-radial-estimate", "reason": "GAR remains open."},
+      {"id": "M9-M1", "reason": "Neither direct nor alternative M1 completion is proved."},
+      {"id": "M9-M2-top-endpoint-signed-cone", "reason": "Complete hard TOP remains open."},
+      {"id": "M9-M2-top-endpoint-density-discrepancy-energy", "reason": "No complete hard-TOP density theorem is proved or imported."},
+      {"id": "M9-M2-smooth-balanced-quarter-packet-estimate", "reason": "Critical and remaining-label BAL scopes remain open."},
+      {"id": "M9-M2-smooth-unbalanced-three-quarter-estimate", "reason": "No literal signed vector theorem is proved or imported."},
+      {"id": "M9-M2", "reason": "Hard TOP, BAL, and UNBAL remain open."},
+      {"id": "M9-endpoint-uniformity", "reason": "A strategy/source round proves no endpoint theorem."},
+      {"id": "M9", "reason": "M1, M2, and endpoint inputs remain incomplete."},
+      {"id": "Conditional-bridge", "reason": "The standard bridge remains conditional on M9."},
+      {"id": "GC-global-M1-alternative-bridge", "reason": "The alternative bridge remains conditional on GAR and M9-M2."},
+      {"id": "GC-partial-one-third", "reason": "The strongest theorem proved by the internal architecture remains exponent one third."},
+      {"id": "GC-external-Li-Yang-theta-star", "reason": "The accepted external benchmark remains 0.3144831759740614... ."},
+      {"id": "GC-target", "reason": "Both lawful quarter routes retain multiple open parents and connectors."},
+      {"id": "Divisor-bound-elementary", "reason": "The elementary divisor estimate remains inherited unchanged."}
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 3,
+    "idea_quality_score": 9,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 198 proves no new analytic estimate, but reconstructs both lawful quarter routes after Rounds 195-197, audits current primary literature through 2026-08-31, reconciles boundary-only versus complete-complement selection by the exact completion interface, and freezes the complete three-piece open-packet P2 theorem-or-no-go gate as the unique Round-199 objective. Every analytic status, parent, endpoint result, bridge, global theorem, and exponent remains unchanged."
+  }
+}

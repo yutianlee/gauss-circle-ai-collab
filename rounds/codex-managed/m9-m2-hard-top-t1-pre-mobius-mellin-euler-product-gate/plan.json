@@ -1,0 +1,229 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 168,
+    "round_type": "m9_m2_hard_top_t1_pre_mobius_mellin_euler_product_gate",
+    "campaign_id": "m9-m2-hard-top-t1-pre-mobius-mellin-euler-product-gate",
+    "title": "M2 hard-TOP t=1 pre-M\u00f6bius Mellin--Euler product gate",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "b1af2cf47d81dd96aba8941e590f8b8ec2733476af6dda78a822041f46511c31",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "planned_numerical_percent": 0,
+      "literature_policy": "Audit exact primary-source statements for the fixed-character zeta--L hybrid contour or moment input. A generic mean-value estimate or structural analogy is not theorem applicability."
+    },
+    "target_obligations": [
+      "M9-M2-hard-top-t1-character-poisson-product-collar-obstruction",
+      "M9-M2-hard-top-t1-close-opposite-prime-exchange-sector",
+      "M9-M2-hard-top-t1-residual-transport-fejer-energy-reduction",
+      "M9-M2-top-endpoint-signed-cone",
+      "M9-M2"
+    ],
+    "frozen_target": {
+      "question": "Can the complete literal selector-free t=1 scalar be proved at L^(3/2)X^epsilon by retaining its squarefree, coprime, odd-first-leg chi_4 family as one two-variable Euler product through exact Mellin inversion and functional equations, or where is the first exact pole, hard-boundary, hybrid-moment, or self-return obstruction?",
+      "reference_formula": "Prove S_{L,1}=sum chi_4(d_1) A_{L,X}(d_1,d_2)e(J sqrt(d_1d_2)) <<_epsilon L^(3/2)X^epsilon over d_1 odd and d_1d_2 squarefree, with every literal shell, profile, cone, floor, star, hard value, endpoint, and zero extension retained. The accepted XOR sector may be subtracted exactly only after a full-scalar estimate.",
+      "quantities": [
+        "The exact arithmetic series is D(s_1,s_2)=sum chi_4(d_1)d_1^(-s_1)d_2^(-s_2) over squarefree coprime legs with d_1 odd.",
+        "The local-factor candidate is D=L(s_1,chi_4)zeta(s_2)G, with G_2=1-2^(-2s_2) and G_p=(1+x_p+y_p)(1-x_p)(1-y_p) for odd p.",
+        "The quadratic start of G suggests absolute convergence only for min(Re s_1,Re s_2)>1/2; continuation and every crossed singularity must be proved.",
+        "A literal Mellin, Perron, or Stieltjes representation must reproduce half-open and hard endpoint values exactly.",
+        "The square-root phase concentrates the radial Mellin frequency t_1+t_2 at scale JL; the entire transform length and angular tails must be paid.",
+        "Round 162's termwise M\u00f6bius--Poisson route produced a rank-one product collar and sqrt(JL) positive capacity. Any functional-equation self-return to it must be identified exactly.",
+        "Even a full t=1 proof closes only the residual after the exact accepted XOR subtraction and leaves all other hard-TOP channels and downstream parents open."
+      ]
+    },
+    "completion_criteria": [
+      "Derive the exact Euler product including p=2, the convergence region of the residual product, and every pole or residue used.",
+      "Construct a literal exact Mellin, Perron, or Mellin--Stieltjes representation with all profiles, hard values, half-open endpoints, floors, stars, arbitrary real centre, and zero extension.",
+      "Track radial and angular Mellin frequencies, transform tails, contour lengths, residues, functional equations, and the complete restored-power ledger to L^(3/2)X^epsilon.",
+      "Audit exact primary-source hypotheses for every zeta, fixed-character L, hybrid moment, subconvexity, Perron, or approximate-functional-equation input.",
+      "Compare any dual formula exactly with the Round-162 M\u00f6bius--Poisson product collar and prohibit a renamed self-return.",
+      "Pass statement-only independence, Euler-factor, transform/endpoint, source/power, connector, and downstream graph-scope reviews.",
+      "Close under exactly one label: hard_top_t1_full_scalar_target, strict_t1_mellin_euler_sector, or t1_mellin_euler_interface_no_go."
+    ],
+    "controls": [
+      "literal_full_t1_scalar_and_xor_connector",
+      "exact_Euler_local_factors_including_p2",
+      "G_absolute_convergence_and_singularities",
+      "Mellin_sign_normalization_and_exact_inversion",
+      "hard_half_open_profile_BV_endpoints",
+      "zeta_pole_and_residue",
+      "radial_angular_frequency_support",
+      "full_transform_length_and_tail",
+      "no_absolute_hybrid_moment_inflation",
+      "functional_equation_AFE_self_return",
+      "round162_product_collar_comparison",
+      "arbitrary_real_centre_floors_and_stars",
+      "target_L_three_halves_power_ledger",
+      "primary_source_exact_hypotheses",
+      "statement_only_independence",
+      "downstream_scope_and_no_exponent_promotion",
+      "no_in_round_pivot",
+      "maximal_K26_quarantine"
+    ],
+    "tasks": [
+      {
+        "id": "literal_pre_mobius_mellin_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "completed",
+        "target": "Starting from the exact full t=1 scalar, derive the complete two-variable Euler product and a literal endpoint-safe Mellin/Perron/Stieltjes formula. Attempt the required contour, functional-equation, or signed hybrid analysis. Return the full target, a complete strict sector, or the first exact transform/pole/power/self-return no-go with a complete ledger.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "proofs/kernels/m9_m2_hard_top_t1_character_poisson_product_collar_obstruction.md",
+          "proofs/kernels/m9_m2_hard_top_t1_close_opposite_prime_exchange_sector.md",
+          "proofs/kernels/m9_m2_hard_top_t1_residual_transport_fejer_energy_reduction.md",
+          "strategy/round168_m2_hard_top_t1_pre_mobius_mellin_euler_strategy.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-pre-mobius-mellin-euler-product-gate/barrier_packet.md"
+        ],
+        "required_controls": [
+          "literal_full_t1_scalar_and_xor_connector",
+          "exact_Euler_local_factors_including_p2",
+          "G_absolute_convergence_and_singularities",
+          "Mellin_sign_normalization_and_exact_inversion",
+          "hard_half_open_profile_BV_endpoints",
+          "zeta_pole_and_residue",
+          "radial_angular_frequency_support",
+          "full_transform_length_and_tail",
+          "no_absolute_hybrid_moment_inflation",
+          "functional_equation_AFE_self_return",
+          "round162_product_collar_comparison",
+          "arbitrary_real_centre_floors_and_stars",
+          "target_L_three_halves_power_ledger",
+          "downstream_scope_and_no_exponent_promotion",
+          "no_in_round_pivot",
+          "maximal_K26_quarantine"
+        ],
+        "required_output": [
+          "A seven-section analytic report satisfying the repository report contract.",
+          "The exact local factors, literal transform identity, all residues, frequency ranges, and a complete L-power ledger.",
+          "A proof, complete strict sector, or the first exact scoped no-go with no in-round pivot.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-hard-top-t1-pre-mobius-mellin-euler-product-gate/reports/literal_pre_mobius_mellin_attack.md"
+      },
+      {
+        "id": "blind_mellin_euler_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "completed",
+        "target": "Starting only from the statement packet, independently derive the exact two-variable Euler product and an endpoint-lawful transform. Decide whether its signed contour or hybrid integral can recover the missing half-power, and isolate the first exact failure if it cannot.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-pre-mobius-mellin-euler-product-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "state/active_campaign.yml",
+          "all strategy files",
+          "all Round-162 through Round-167 artifacts",
+          "Round-168 barrier packet",
+          "Round-168 sibling reports",
+          "all conductor candidates, reviews, synthesis, and source audits"
+        ],
+        "required_controls": [
+          "exact_Euler_local_factors_including_p2",
+          "G_absolute_convergence_and_singularities",
+          "Mellin_sign_normalization_and_exact_inversion",
+          "hard_half_open_profile_BV_endpoints",
+          "zeta_pole_and_residue",
+          "radial_angular_frequency_support",
+          "full_transform_length_and_tail",
+          "no_absolute_hybrid_moment_inflation",
+          "functional_equation_AFE_self_return",
+          "arbitrary_real_centre_floors_and_stars",
+          "target_L_three_halves_power_ledger",
+          "statement_only_independence",
+          "downstream_scope_and_no_exponent_promotion",
+          "no_in_round_pivot"
+        ],
+        "required_output": [
+          "A seven-section statement-only report satisfying the repository report contract.",
+          "An independent local-factor, transform, pole, frequency, and target-power derivation.",
+          "A proof, strict sector, or rigorous scoped no-go without claimant or source-audit leakage.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-hard-top-t1-pre-mobius-mellin-euler-product-gate/reports/blind_mellin_euler_rederivation.md"
+      },
+      {
+        "id": "hybrid_zeta_l_source_hostile_audit",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "status": "completed",
+        "target": "Hostilely audit exact primary theorems for the zeta(s_2)L(s_1,chi_4) contour, hybrid moment, subconvexity, Perron, and approximate-functional-equation inputs required by the literal Round-168 transform. Decide whether any source yields the complete target after the actual transform length, pole residue, hard endpoints, and G factor are restored.",
+        "context_files": [
+          "protocol.md",
+          "state/active_campaign.yml",
+          "strategy/round168_m2_hard_top_t1_pre_mobius_mellin_euler_strategy.md",
+          "proofs/kernels/m9_m2_hard_top_t1_character_poisson_product_collar_obstruction.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-pre-mobius-mellin-euler-product-gate/barrier_packet.md"
+        ],
+        "required_controls": [
+          "exact_Euler_local_factors_including_p2",
+          "G_absolute_convergence_and_singularities",
+          "hard_half_open_profile_BV_endpoints",
+          "zeta_pole_and_residue",
+          "radial_angular_frequency_support",
+          "full_transform_length_and_tail",
+          "no_absolute_hybrid_moment_inflation",
+          "functional_equation_AFE_self_return",
+          "round162_product_collar_comparison",
+          "arbitrary_real_centre_floors_and_stars",
+          "target_L_three_halves_power_ledger",
+          "primary_source_exact_hypotheses",
+          "downstream_scope_and_no_exponent_promotion",
+          "no_in_round_pivot"
+        ],
+        "required_output": [
+          "A seven-section hostile source report satisfying the repository report contract.",
+          "Exact primary-source theorem statements, dates, hypotheses, parameter maps, transform lengths, residues, and restored powers.",
+          "A target-safe source placement or the narrowest rigorous source-interface no-go.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-hard-top-t1-pre-mobius-mellin-euler-product-gate/reports/hybrid_zeta_l_source_hostile_audit.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "literal_scalar_euler_and_connector",
+        "requirement": "Verify the exact full scalar, local factors including p=2, parity, squarefree/coprime conditions, and XOR-to-residual subtraction."
+      },
+      {
+        "id": "transform_poles_and_endpoints",
+        "requirement": "Verify exact inversion, hard and half-open boundary conventions, G continuation, zeta residue, and arbitrary-real-centre uniformity."
+      },
+      {
+        "id": "hybrid_power_and_self_return",
+        "requirement": "Verify radial/angular frequencies, full transform length, every source hypothesis and restored power, and any exact return to the Round-162 collar."
+      },
+      {
+        "id": "control_and_downstream_scope",
+        "requirement": "Verify statement-only independence, false controls, no K26 pivot, no physical lower-bound inference, and no promotion beyond the literal t=1 owner or either exponent ledger."
+      }
+    ],
+    "closing_assessment": {
+      "decision": "promote_intact_mellin_euler_signed_moment_reduction_and_fixed_polylogarithmic_L_sector",
+      "graph_mutation": true,
+      "terminal_label": "strict_t1_mellin_euler_sector",
+      "main_result": "The intact t=1 arithmetic family has an exact two-variable Euler product and endpoint-lawful cardinal Mellin reduction with target-safe zeta residue. Every fixed-B polylogarithmic-L full scalar and fixed-kappa residual is target-safe. The polynomial range requires a new signed two-height theorem; no parent, bridge, theorem, or exponent closes.",
+      "resulting_graph_sha256": "a360b2913563c9c288438751729c5033acd2e91ee613e44f171e1d31bc7441be",
+      "exponent_change": false
+    }
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "a360b2913563c9c288438751729c5033acd2e91ee613e44f171e1d31bc7441be",
+    "generated_at": "2026-08-26T09:06:13.527080+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

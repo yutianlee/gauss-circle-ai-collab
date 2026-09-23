@@ -1,0 +1,55 @@
+{
+  "campaign_id": "full-proof-round171-173-strategy-literature-review",
+  "round_index": 174,
+  "round_type": "full_proof_strategy_current_literature_review",
+  "title": "Full-proof frontier and current-primary-literature reassessment after Rounds 171--173",
+  "status": "closed",
+  "starting_graph_sha256": "04090ef6aa8d7d28e05a312f1f2f069fe3ab44ad62002d68d6b62c49dc0d962a",
+  "manifest": "state/active_campaign.yml",
+  "strategy": "strategy/round174_full_proof_strategy_current_literature_review.md",
+  "allocation": {
+    "analytical_algebraic_percent": 100,
+    "numerical_experimental_percent": 0
+  },
+  "tasks": [
+    {
+      "id": "full_graph_frontier_reconstruction",
+      "role": "discovery",
+      "status": "completed",
+      "brief": "rounds/codex-managed/full-proof-round171-173-strategy-literature-review/briefs/full_graph_frontier_reconstruction.md",
+      "report": "rounds/codex-managed/full-proof-round171-173-strategy-literature-review/reports/full_graph_frontier_reconstruction.md"
+    },
+    {
+      "id": "current_primary_literature_reassessment",
+      "role": "source_auditor",
+      "status": "completed",
+      "brief": "rounds/codex-managed/full-proof-round171-173-strategy-literature-review/briefs/current_primary_literature_reassessment.md",
+      "report": "rounds/codex-managed/full-proof-round171-173-strategy-literature-review/reports/current_primary_literature_reassessment.md"
+    },
+    {
+      "id": "blind_round175_frontier_selection",
+      "role": "blind_rederiver",
+      "status": "completed",
+      "brief": "rounds/codex-managed/full-proof-round171-173-strategy-literature-review/briefs/blind_round175_frontier_selection.md",
+      "report": "rounds/codex-managed/full-proof-round171-173-strategy-literature-review/reports/blind_round175_frontier_selection.md"
+    }
+  ],
+  "terminal_labels": [
+    "strategy_frontier_retained",
+    "strategy_frontier_reselected",
+    "strategy_source_update_only"
+  ],
+  "closing_assessment": {
+    "decision": "retain_K26_whole_chain_actual_symbol_frontier",
+    "terminal_label": "strategy_frontier_retained",
+    "resulting_graph_sha256": "e40c214351d06bf05212e25fffbec0f1a4808be21cb9098ba25823f0d9bbf211",
+    "state_patch_effect": "0 create, 1 evidence/next-action update, 0 corrected rejected records, 22 rejected overclaims, and 23 no-change decisions; no status, edge, theorem, bridge, or exponent change",
+    "next_round": 175
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true,
+    "no_in_round_analytic_pivot": true
+  }
+}

@@ -1,45 +1,32 @@
-# Closed Research Round 163
+# Current Research Round 199
 
-Campaign: m9-m2-hard-top-t1-near-square-divisor-involution-gate
+Campaign: `m9-m1-t1-p2-cross-gcd-cellular-boundary-gate` — Hard-M1 t=1 P2 cross-gcd cellular-boundary gate
 
-Status: complete.  Terminal label: strict_t1_prime_toggle_sector.
+Status: `complete`. Maximum concurrent subagents: 3.
 
-Starting graph:
-700182f4dcf805e7f5ae74ca8ac49e88e4025471d9def1746a832c45fb6d2358.
+Graph SHA-256: `3073235ad5677b9066f1336ec9d958b0e93b92d99cfa7ebea1d823146c799099`.
 
-Resulting graph:
-81690ebb72b0dedd99bdb6c6127f947df696a901a22af3f65ac8738209125306.
+## Frozen question
 
-## Accepted result
+On the exact Round-195 open packets, can the complete physical P_boundary(lit) dotcup P_sf dotcup P_gf complement be written as one coefficient-preserving twisted cellular boundary on the four cross-gcd allocation states, so that the aligned literal face, sign failure and changed-gcd failure cancel before positivity and yield the joint outer O(L^2 X^epsilon) bound; or does this specified mechanism have a first exact self-return?
 
-For each supported squarefree \(N\), a canonical pair of close odd prime
-factors of opposite \(\chi_4\)-product, when one exists, defines an exact
-sign-reversing exchange on the complete exactly-one incidence sector.
-The common-cell amplitude difference and every literal hard-boundary
-collar give
+## Task briefs
 
-\[
- |\mathcal S_{L,1}^{\mathrm{cp}}|\ll_\kappa L^{3/2}
-\]
+- `literal_cross_gcd_cellular_boundary_attack` (discovery, selected_context): `rounds/codex-managed/m9-m1-t1-p2-cross-gcd-cellular-boundary-gate/briefs/literal_cross_gcd_cellular_boundary_attack.md`
+- `aligned_face_twisted_boundary_hostile_audit` (barrier_no_go, selected_context): `rounds/codex-managed/m9-m1-t1-p2-cross-gcd-cellular-boundary-gate/briefs/aligned_face_twisted_boundary_hostile_audit.md`
+- `blind_joint_failure_complex_rederivation` (blind_rederiver, statement_only): `rounds/codex-managed/m9-m1-t1-p2-cross-gcd-cellular-boundary-gate/briefs/blind_joint_failure_complex_rederivation.md`
 
-uniformly in the real centre.
+## Completion gates
 
-No selector density, nonemptiness, complement estimate, or full
-\(t=1\) estimate follows.  The exact survivor is
+- Reconstruct the exact physical even-shift source, open packet projector and three-piece complement without taking a premature modulus.
+- Prove the four cross-gcd factorization and construct every proposed allocation edge, inverse edge, recomputed gcd and actual character incidence.
+- Test the aligned literal face first by an exact sharp-code jump cochain and determine whether a complete physical two-cell cancels it or returns an ordinary full-capacity face.
+- If the aligned test passes, include the sign-failure and changed-gcd pieces in the same physical chain, with no componentwise positive norm and no unpriced P1 or other-owner boundary.
+- Expand the actual endpoint products and prove a D_L/L close-leg gain or an already licensed target-safe boundary for every surviving cell; price normalized BV and selector terms exactly.
+- Restore the complete masked operator, both orientations and T branches, all commutators, carries, births/deaths, endpoints, phases and zero extensions before one outer real part.
+- Prove the full joint outer O(L^2 X^epsilon) theorem or isolate the first exact self-return of this specified cross-gcd cellular-boundary mechanism.
+- Use no strict-sector theorem as the terminal theorem, no capacity as lower mass, and no in-round analytic pivot.
+- Receive independent allocation-algebra, hostile aligned-face/operator and statement-only derivations, then complete seam, scope and exponent reviews before any State Patch.
+- Apply no graph change without a valid State Patch, reverse/replay and protected-scope validation; close under exactly one declared terminal label.
 
-\[
- \mathcal S_{L,1}^{\mathrm{rem}}
- =\mathcal S_{L,1}-\mathcal S_{L,1}^{\mathrm{cp}}.
-\]
-
-## State
-
-One proved-internal node was created.  The two hard-TOP parents received
-only a dependency and inconclusive evidence and remain open.  M9--M1,
-all three M9--M2 parents, endpoint uniformity, M9, the bridge, and the
-quarter theorem remain open.  The internal exponent remains \(1/3\);
-the audited external benchmark remains
-\(0.3144831759740614\ldots\).
-
-Round 164 is proposed on a complete signed transport or unmatched-mass
-analysis of the literal residual.  It has not been launched.
+The coordinator may synthesize a State Patch only after the required validation seams are green.

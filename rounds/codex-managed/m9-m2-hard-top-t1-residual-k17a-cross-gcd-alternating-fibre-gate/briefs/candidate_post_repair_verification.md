@@ -1,0 +1,3 @@
+# Round 176 post-repair candidate verification
+
+Verify the repaired conductor candidate against your earlier candidate review and all three reports.  Check that the exact aggregate, displacement positivity, two-adic ledger, phase definition, strict tail, two-variable transform scope, and sufficient open estimate are now correct.  Recompute any changed formula.  Write only `rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-gate/reviews/candidate_post_repair_verification.md`.  Return GREEN only if no mathematical or owner-scope repair remains; otherwise list exact mandatory repairs.  Do not edit any other artifact or shared state.

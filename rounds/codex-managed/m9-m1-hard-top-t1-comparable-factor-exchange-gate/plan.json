@@ -1,0 +1,282 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 184,
+    "round_type": "m9_m1_hard_top_t1_comparable_factor_exchange_gate",
+    "campaign_id": "m9-m1-hard-top-t1-comparable-factor-exchange-gate",
+    "title": "Hard-M1 t=1 comparable-factor exchange and residual gate",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "a8e0e5d84c0c5047e0c96f11128dd215ae035bdd4355bd68ad28dc87afe6cfbd",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "planned_numerical_percent": 0,
+      "computation_policy": "No numerical theorem evidence is planned. Bounded exact algebra, hashing, or finite falsification may be used only as a mechanical control."
+    },
+    "target_obligations": [
+      "M9-M1-hard-top-high-radical-small-t-residual-estimate",
+      "M9-M1-hard-top-small-t-nonresonant-primitive-ray-sector",
+      "M9-M1-hard-top-radical-mobius-mellin-joint-t-obstruction",
+      "M9-M1-top-endpoint-signed-cone",
+      "M9-M1-direct-smooth-residual-blockwise-estimate",
+      "M9-M1",
+      "M9-M2-hard-top-t1-close-opposite-prime-exchange-sector",
+      "M9-M2-hard-top-t1-residual-transport-fejer-energy-reduction",
+      "M9-M2",
+      "M9-endpoint-uniformity",
+      "M9",
+      "Conditional-bridge",
+      "GC-global-M1-alternative-bridge",
+      "GC-partial-one-third",
+      "GC-external-Li-Yang-theta-star",
+      "GC-target"
+    ],
+    "frozen_target": {
+      "question": "Can the complete literal hard-M1 t=1 face be bounded by L^(3/2)X^epsilon for every shell and both signs, can the canonical close opposite-character prime XOR sector be proved target-safe with an exact residual, or does the exchange/transport mechanism have a precise capacity or self-return obstruction?",
+      "reference_formula": "|sum_((u,v)=1, v odd, 4u<v<16u, uv squarefree) chi_4(v) a_(L,X)^(lit,sigma)(u,v)e(sigma sqrt(Xuv))| <<_epsilon L^(3/2)X^epsilon, with one absolute value after the complete t=1 aggregate and zero extension retaining every literal field.",
+      "quantities": [
+        "The t=1 identity is exactly G=rho=1 in the Round-183 primitive-ray coordinates and lies wholly in the small-gcd complement.",
+        "The actual coefficient retains the dyadic cutoff, Phi, W, normalized powers, profiles, floors, stars and half weights, strict edges, hard sample, both signs, real-X crossings and endpoints, and zero extension.",
+        "The coefficient-insensitive t=1 capacity is L^2X^epsilon against target L^(3/2)X^epsilon; the missing signed factor is L^(1/2).",
+        "A canonical pair selector may depend on N=uv, L, and kappa, but never on the divisor allocation u,v.",
+        "The close-pair XOR exchange must preserve product, phase, squarefreeness, coprimality, parity, shell, and multiplicity while reversing chi_4(v), then price all profile and endpoint differences before positivity.",
+        "The exact exchange residual is no-pair products plus neither/both allocations. No eligible-pair density or positive proportion may be inferred.",
+        "The accepted hard-M2 close-pair and residual-transport kernels are method references only; every M1 coefficient, cone, normalization, endpoint, and restored power must be reverified.",
+        "Even a complete t=1 proof leaves t>=2 small-G incidences and the large-G near-resonant complement open.",
+        "The internal exponent is 1/3, the accepted external benchmark is 0.3144831759740614..., and the target is 1/4."
+      ]
+    },
+    "completion_criteria": [
+      "Receive a direct actual-coefficient proof attempt for the complete t=1 aggregate, retaining both signs, all literal shells and endpoints, and one final absolute value.",
+      "Derive the canonical allocation-independent close opposite-character prime selector and prove or refute the exact XOR involution, sign reversal, common-cell variation, and crossing-collar bound.",
+      "State the exact no-pair plus neither/both residual and test a complete ordered-divisor transport or signed short-shift continuation rather than assuming pair density.",
+      "Independently audit every hypothesis and restored power in transferring the M2 exchange/transport mechanism to the hard-M1 coefficient.",
+      "Receive a statement-only rederivation of capacity, false controls, exchange identity, residual, and first missing relation.",
+      "Select the narrowest full theorem, strict target-safe sector, or rigorous mechanism no-go without changing the frozen t=1 owner or pivoting.",
+      "Review exchange algebra, coefficient/profile/endpoint powers, residual transport/correlation, blind post-unmask consistency, and downstream/exponent scope.",
+      "Formalize any stable finite exchange or residual kernel before a State Patch.",
+      "Apply no graph change without a mechanically valid State Patch, exact inverse, post-application audit, and GREEN validation matrix.",
+      "Close under exactly one label: hard_m1_t1_target, strict_hard_m1_t1_comparable_factor_sector, or hard_m1_t1_exchange_transport_capacity_or_self_return_no_go."
+    ],
+    "controls": [
+      "exact_t1_face",
+      "literal_coefficient_and_zero_extension",
+      "every_shell_both_signs_real_X_endpoints",
+      "one_outer_absolute_value",
+      "capacity_L2_target_L_three_halves",
+      "canonical_selector_allocation_independence",
+      "exchange_integrality_multiplicity_fixed_point",
+      "product_phase_squarefree_coprime_parity_preservation",
+      "chi4_sign_reversal",
+      "common_cell_profile_variation",
+      "boundary_crossing_collar_count",
+      "exact_xor_residual",
+      "no_pair_density_inference",
+      "one_prime_toggle_and_involution_average_self_return",
+      "prime_semiprime_all_one_mod4_controls",
+      "m2_to_m1_transfer_scope",
+      "ordered_divisor_transport_identity",
+      "fejer_short_shift_connector",
+      "no_positive_norm_or_shift_triangle",
+      "coefficient_unknown_quarantine",
+      "t_ge_2_and_near_resonant_quarantine",
+      "complete_small_t_owner_quarantine",
+      "downstream_and_exponent_quarantine",
+      "no_in_round_pivot"
+    ],
+    "exit_labels": [
+      "hard_m1_t1_target",
+      "strict_hard_m1_t1_comparable_factor_sector",
+      "hard_m1_t1_exchange_transport_capacity_or_self_return_no_go"
+    ],
+    "tasks": [
+      {
+        "id": "literal_t1_exchange_residual_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "completed",
+        "target": "Prove the complete literal hard-M1 t=1 target, prove the canonical close opposite-character prime XOR incidence sector and derive its exact residual, or isolate the first literal coefficient, endpoint, transport, or correlation seam.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round184_m1_hard_top_t1_comparable_factor_exchange_strategy.md",
+          "proofs/kernels/m9_m1_hard_top_small_t_primitive_ray_sector_and_truncated_mobius_self_return.md",
+          "rounds/codex-managed/m9-m1-hard-top-high-radical-small-t-signed-contraction-gate/reports/literal_small_t_signed_contraction_attack.md",
+          "rounds/codex-managed/m9-m1-hard-top-high-radical-small-t-signed-contraction-gate/reviews/conductor_round183_adjudication.md",
+          "proofs/kernels/m9_m2_hard_top_t1_close_opposite_prime_exchange_sector.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/profile_boundary_power_seam_review.md"
+        ],
+        "required_controls": [
+          "exact_t1_face",
+          "literal_coefficient_and_zero_extension",
+          "every_shell_both_signs_real_X_endpoints",
+          "one_outer_absolute_value",
+          "capacity_L2_target_L_three_halves",
+          "canonical_selector_allocation_independence",
+          "exchange_integrality_multiplicity_fixed_point",
+          "product_phase_squarefree_coprime_parity_preservation",
+          "chi4_sign_reversal",
+          "common_cell_profile_variation",
+          "boundary_crossing_collar_count",
+          "exact_xor_residual",
+          "no_pair_density_inference",
+          "one_prime_toggle_and_involution_average_self_return",
+          "ordered_divisor_transport_identity",
+          "fejer_short_shift_connector",
+          "no_positive_norm_or_shift_triangle",
+          "t_ge_2_and_near_resonant_quarantine",
+          "complete_small_t_owner_quarantine",
+          "downstream_and_exponent_quarantine",
+          "no_in_round_pivot"
+        ],
+        "required_output": [
+          "A seven-section analytic report satisfying the repository report contract.",
+          "A complete t=1 proof, strict target-safe literal sector with exact residual, or narrowest exact actual-direction mechanism no-go.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-hard-top-t1-comparable-factor-exchange-gate/reports/literal_t1_exchange_residual_attack.md"
+      },
+      {
+        "id": "m2_transfer_transport_capacity_audit",
+        "role": "barrier_no_go",
+        "access_mode": "selected_context",
+        "status": "completed",
+        "target": "Audit the exact transfer of the accepted M2 close-pair and residual-transport kernels to the hard-M1 t=1 coefficient, restore every power and endpoint, and identify a sufficient literal connector or the first exact mismatch, capacity, or self-return.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round184_m1_hard_top_t1_comparable_factor_exchange_strategy.md",
+          "proofs/kernels/m9_m1_hard_top_small_t_primitive_ray_sector_and_truncated_mobius_self_return.md",
+          "rounds/codex-managed/m9-m1-hard-top-high-radical-small-t-signed-contraction-gate/reviews/power_self_return_psc_seam_review.md",
+          "proofs/kernels/m9_m2_hard_top_t1_close_opposite_prime_exchange_sector.md",
+          "proofs/kernels/m9_m2_hard_top_t1_residual_transport_fejer_energy_reduction.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/synthesis.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/synthesis.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reviews/transport_capacity_profile_power_source_review.md"
+        ],
+        "required_controls": [
+          "exact_t1_face",
+          "literal_coefficient_and_zero_extension",
+          "capacity_L2_target_L_three_halves",
+          "canonical_selector_allocation_independence",
+          "exchange_integrality_multiplicity_fixed_point",
+          "product_phase_squarefree_coprime_parity_preservation",
+          "chi4_sign_reversal",
+          "common_cell_profile_variation",
+          "boundary_crossing_collar_count",
+          "exact_xor_residual",
+          "no_pair_density_inference",
+          "one_prime_toggle_and_involution_average_self_return",
+          "prime_semiprime_all_one_mod4_controls",
+          "m2_to_m1_transfer_scope",
+          "ordered_divisor_transport_identity",
+          "fejer_short_shift_connector",
+          "no_positive_norm_or_shift_triangle",
+          "t_ge_2_and_near_resonant_quarantine",
+          "complete_small_t_owner_quarantine",
+          "downstream_and_exponent_quarantine",
+          "no_in_round_pivot"
+        ],
+        "required_output": [
+          "A seven-section hostile transfer/capacity report satisfying the repository report contract.",
+          "An exact hypothesis and power comparison, complete residual connector or first mismatch, and all false-control outcomes.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-hard-top-t1-comparable-factor-exchange-gate/reports/m2_transfer_transport_capacity_audit.md"
+      },
+      {
+        "id": "blind_complete_t1_exchange_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "completed",
+        "target": "From the isolated finite packet, independently derive the t=1 capacity, canonical close-prime exchange identity and exact residual, false controls, any transport or Fejer connector, and the first missing relation.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/m9-m1-hard-top-t1-comparable-factor-exchange-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "state/best_proof_draft.md",
+          "all strategy files",
+          "all prior round artifacts and durable kernels",
+          "all source cards and web-search results",
+          "all sibling reports, reviews, controls, candidates, syntheses, and conductor analysis"
+        ],
+        "required_controls": [
+          "exact_t1_face",
+          "capacity_L2_target_L_three_halves",
+          "canonical_selector_allocation_independence",
+          "exchange_integrality_multiplicity_fixed_point",
+          "product_phase_squarefree_coprime_parity_preservation",
+          "chi4_sign_reversal",
+          "common_cell_profile_variation",
+          "boundary_crossing_collar_count",
+          "exact_xor_residual",
+          "no_pair_density_inference",
+          "one_prime_toggle_and_involution_average_self_return",
+          "prime_semiprime_all_one_mod4_controls",
+          "ordered_divisor_transport_identity",
+          "fejer_short_shift_connector",
+          "no_positive_norm_or_shift_triangle",
+          "coefficient_unknown_quarantine",
+          "t_ge_2_and_near_resonant_quarantine",
+          "complete_small_t_owner_quarantine",
+          "downstream_and_exponent_quarantine"
+        ],
+        "required_output": [
+          "A seven-section statement-only report satisfying the repository report contract.",
+          "An independent complete theorem, strict sector, or exact no-go with the first missing relation.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-hard-top-t1-comparable-factor-exchange-gate/reports/blind_complete_t1_exchange_rederivation.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "selector_exchange_character_seam",
+        "requirement": "Verify canonical allocation-independent selection, integrality, multiplicity, fixed points, product/phase invariance, parity, and exact chi_4 reversal."
+      },
+      {
+        "id": "coefficient_profile_endpoint_power_seam",
+        "requirement": "Verify the actual hard-M1 coefficient, common-cell derivative scale, all boundary collars, floors, stars, crossings, zero extension, both signs, and the L^2 to L^(3/2) ledger."
+      },
+      {
+        "id": "residual_transport_correlation_seam",
+        "requirement": "Verify the exact no-pair plus neither/both residual, Abel/transport identities, Fejer connector, one outer real part, and all capacity or self-return claims."
+      },
+      {
+        "id": "blind_post_unmask_t1_seam",
+        "requirement": "Compare the isolated derivation with the literal coefficient and M1/M2 distinctions without contaminating provenance or promoting an arbitrary-coefficient control."
+      },
+      {
+        "id": "owner_and_exponent_scope",
+        "requirement": "Verify that any result affects only the t=1 subordinate interface while t>=2, near resonance, the complete small-t owner, all parents, bridges, theorem, and exponents remain quarantined."
+      }
+    ],
+    "closing_assessment": {
+      "decision": "promote_t1_comparable_factor_exchange_sector_and_residual_fejer_reduction",
+      "terminal_label": "strict_hard_m1_t1_comparable_factor_sector",
+      "graph_mutation": true,
+      "main_result": "The canonical allocation-independent close opposite-character prime exchange proves the selected-product XOR part of the literal hard-M1 t=1 face at L^(3/2)X^epsilon. The exact no-pair plus neither/both residual and its one-outer-real-part Fejer correlation remain open; selector nonemptiness is not claimed. All t>=2 and near-resonant incidences, every parent, and every exponent remain unchanged.",
+      "resulting_graph_sha256": "f16b7a43f8b0261671b39bdd4a59a3f06926cdfe3513d5910e56b89c6b1ab2e0",
+      "patch_effect": "1_create_1_update_0_correct_15_reject_27_no_change",
+      "exponent_change": false,
+      "next_round": 185
+    }
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "a8e0e5d84c0c5047e0c96f11128dd215ae035bdd4355bd68ad28dc87afe6cfbd",
+    "generated_at": "2026-08-27T13:23:50.369580+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

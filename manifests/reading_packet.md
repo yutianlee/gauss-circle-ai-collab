@@ -1,6 +1,6 @@
 # Reading Packet
 
-Generated after legacy round 163 in run `m9-m2-hard-top-t1-near-square-divisor-involution-gate`.
+Generated for active campaign `m9-m1-t1-p2-cross-gcd-cellular-boundary-gate`.
 
 ## Current Theorem Target
 
@@ -76,7 +76,7 @@ Diagnostic execution policy:
 
 ## Last State Patch
 
-Round 163 State Patch applied: one close-opposite-prime exchange sector created, two open hard-TOP parents updated with inconclusive evidence, sixteen overclaims rejected, nineteen nodes unchanged; resulting graph 81690ebb72b0dedd99bdb6c6127f947df696a901a22af3f65ac8738209125306.
+No State Patch applied. Campaign preparation changes workflow artifacts only.
 
 ## Active Obligation Briefs
 
@@ -130,7 +130,7 @@ Round 163 State Patch applied: one close-opposite-prime exchange sector created,
 - Track: `M9_analytic`
 - Historical steward: `A2` (non-binding)
 - Blockers: `M9-M1-top-endpoint-signed-cone`, `M9-M1-direct-smooth-residual-blockwise-estimate`
-- Next action: On the direct route, prove both separately one-third-critical parents with the missing X^(1/12) gain. On the alternative route, prove both global radial parents and GAR, then use only the separate total-M1 bridge; GAR does not prove blockwise M9-M1.
+- Next action: On the direct route, prove the hard high-radical small-t residual and the independent smooth residual parent. On the alternative route, prove both global radial parents and GAR, then use only the separate total-M1 bridge. The Round-181 strict sectors and mechanism no-go close neither route.
 
 ### M9-M1-alpha-bounded-zeta-high-transition-bound: Connector-completed alpha-bounded zeta-high transition bound
 
@@ -190,6 +190,13 @@ Round 163 State Patch applied: one close-opposite-prime exchange sector created,
 - Historical steward: `Codex conductor` (non-binding)
 - Next action: The full D=d=L=1 paired-interior Abel package self-returns to the accepted common-profile hard defect wave; its raw M^(3/4) signed variable-mask estimate remains open beyond the fixed-polylogarithmic collar. Prove it plus D>1, L>1, generic t=1, every t>=2 layer, and the independent cross owner before global assembly.
 
+### M9-M1-hard-top-high-radical-small-t-residual-estimate: Hard-M1 high-radical small-square-multiplier residual estimate
+
+- Status: `open`
+- Track: `M9_analytic`
+- Historical steward: `Codex conductor` (non-binding)
+- Next action: Rounds 187-197 accepted Fourier, lift, projective, signed-inverse, Farey, double-close, P2 absolute-capacity, and P2 common-cell sectors remain valid. Round 199 rules out only the specified cross-gcd cellular completion: the lawful P2 triangle has a nonzero constant-endpoint incidence, its unique fourth product corner is a P1 allocation, and partial-block moves generate physical-mask commutators. The exact P2 boundary/sign/gcd complement remains open. Do not retry assigned-sign, partial-block, deleted-corner, or fixed-packet variants of this mechanism. The next analytic round should either prove a genuinely non-cellular coefficient-sensitive joint outer estimate for the remaining P2 complement or freeze the disjoint P1 owner. Complete original t=1, every original t>=2 small-G incidence, the large-G near-resonant complement, smooth M1, GAR, every M2 parent, endpoint uniformity, M9 and both bridges remain open.
+
 ### M9-M1-maximal-angular-sign-kernel: Maximal actual-profile angular-sign radial correlation
 
 - Status: `open`
@@ -217,10 +224,3 @@ Round 163 State Patch applied: one close-opposite-prime exchange sector created,
 - Track: `M9_analytic`
 - Historical steward: `Codex conductor` (non-binding)
 - Next action: The delta/Kloosterman reformulation retains the same H/L-sized deficit in a short moving numerator. Standard complete-sum estimates do not prove PSC; a genuinely joint signed near-product theorem remains necessary.
-
-### M9-M1-swept-transition-horizontal-operator: Swept single-transition and horizontal-side vector operator
-
-- Status: `open`
-- Track: `M9_analytic`
-- Historical steward: `Codex conductor` (non-binding)
-- Next action: Close the explicit projected alpha cosine-Cauchy/GAR-return obligation; the beta branch is already closed and must not be reopened.

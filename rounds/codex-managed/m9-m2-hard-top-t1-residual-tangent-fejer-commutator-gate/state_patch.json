@@ -1,0 +1,157 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-hard-top-t1-residual-tangent-fejer-commutator-self-return-obstruction",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Hard-TOP t=1 residual tangent-Fejer commutator self-return obstruction",
+        "status": "proved_internal",
+        "statement_tex": "Let J=sqrt(X), 1<<L<<H<=J^(1/2), R_0=ceil(L), and M=M_L asymp L^2. Retain the complete literal residual near-square opening c_N^rem=sum_(d|N,d odd)chi_4(d)lambda_N(d), with D_L<<_epsilon L^2X^epsilon, d,m asymp L, bounded opened weights and divisor multiplicity, every selected/no-pair value, squarefree/coprimality mask, two-adic branch, profile, endpoint, point value, and zero extension. For every stopped-chain link R<T<=2R, open an ordered even-gap atom by d'=d+2s, m'=m+v, v even, and r_s=dv+2s(m+v), on the complete d>0 odd, m>=1, s in Z literal domain. Then chi_4(d')chi_4(d)=(-1)^s and the exact link is Delta_(R,T)=2Re sum (-1)^s beta_(R,T)(r_s)G(s). The bandpass is globally 1/T-Lipschitz, r_(s+1)-r_s=2m' asymp L on nonzero literal support, and the complete opened incidence ledger proves sum_j|C_(R_j,R_(j+1))|<<_epsilon L^3X^epsilon for C_(R,T)=Re sum (-1)^s(beta(r_s)-beta(r_(s+1)))G(s), including every cusp and the strict final link. The finite alternating identity gives Delta=C+R with R_(R,T)=Re sum (-1)^s beta(r_(s+1))(G(s)-G(s+1)). Exact full-line reindexing gives R_(R,T)=Re sum (-1)^s(beta(r_s)+beta(r_(s+1)))G(s)=Delta_(R,T)-C_(R,T). Hence on the complete stopped chain sum_j R_j=2(T_26+B_short)-sum_j C_j, with B_short<<_epsilon L^3X^epsilon, so the one-sided remainder target is equivalent to K26 modulo target-safe terms. Coefficient-uniform positive or absolute closure of the adjacent-sum remainder has available upper scale RL^2X^epsilon, reaching L^4X^epsilon at a maximal link; phase-adapted sharpness is nonliteral and is not physical lower mass. On all-1 mod 4 no-pair support, active tangent sites are even and the two birth/death differences add, an allowed-support warning but not a density theorem or owner-complete sector. The no-go covers only this displayed tangent first-difference, its adjoint or tautological second-Abel transfer, and positivity before an actual-symbol gain. It does not exclude cross-link cancellation, another tangent mechanism, a nonlocal or coefficient-sensitive signed theorem, or K26, which remains open.",
+        "dependencies": [
+          "M9-M2-hard-top-t1-residual-transport-fejer-energy-reduction",
+          "M9-M2-hard-top-t1-residual-fejer-parity-gcd-scale-reduction",
+          "M9-M2-hard-top-t1-residual-maximal-fejer-dyadic-positive-transform-obstruction"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "proofs/kernels/m9_m2_hard_top_t1_residual_tangent_fejer_commutator_self_return_obstruction.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-tangent-fejer-commutator-gate/candidates/formalized_tangent_fejer_commutator_self_return_obstruction.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-tangent-fejer-commutator-gate/reports/literal_tangent_fejer_commutator_attack.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-tangent-fejer-commutator-gate/reports/blind_tangent_fejer_commutator_rederivation.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-tangent-fejer-commutator-gate/reports/tangent_fejer_actual_symbol_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-tangent-fejer-commutator-gate/reviews/blind_packet_post_repair_verification.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-tangent-fejer-commutator-gate/reviews/chart_bandpass_commutator_seam_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-tangent-fejer-commutator-gate/reviews/chart_bandpass_post_repair_verification.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-tangent-fejer-commutator-gate/reviews/self_return_power_owner_scope_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-tangent-fejer-commutator-gate/reviews/self_return_power_post_repair_verification.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-tangent-fejer-commutator-gate/reviews/downstream_owner_state_effect_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-tangent-fejer-commutator-gate/reviews/final_kernel_mathematical_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-tangent-fejer-commutator-gate/reviews/final_kernel_post_repair_verification.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-tangent-fejer-commutator-gate/reviews/final_kernel_power_scope_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-tangent-fejer-commutator-gate/reviews/final_kernel_downstream_scope_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-tangent-fejer-commutator-gate/controls/conductor_round173_controls.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-tangent-fejer-commutator-gate/reviews/conductor_round173_adjudication.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-tangent-fejer-commutator-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Park the displayed tangent first-difference, its positive-variation closure, and any second Abel continuation that only moves the same difference back to the bandpass. To resume K26, prove a genuinely new complete signed actual-symbol stopped-chain correlation before every modulus, retaining cross-link cancellation and every literal support field."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-top-endpoint-density-discrepancy-energy",
+        "dependencies_added": [
+          "M9-M2-hard-top-t1-residual-tangent-fejer-commutator-self-return-obstruction"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "proofs/kernels/m9_m2_hard_top_t1_residual_tangent_fejer_commutator_self_return_obstruction.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-tangent-fejer-commutator-gate/reviews/final_kernel_post_repair_verification.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-tangent-fejer-commutator-gate/reviews/final_kernel_power_scope_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-tangent-fejer-commutator-gate/reviews/final_kernel_downstream_scope_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-tangent-fejer-commutator-gate/reviews/conductor_round173_adjudication.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-tangent-fejer-commutator-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The tangent first-difference continuation of K26 is an exact self-return: its whole-chain commutator is target-safe, but its complementary remainder is K26 modulo target-safe terms. Park this commutator, its positive-variation closure, and any second Abel step that only moves the same difference back to the bandpass. The open theorem remains a genuinely new complete literal signed actual-symbol stopped-chain estimate before every modulus; cross-link cancellation remains allowed and all other hard-TOP owners remain separate."
+      },
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "dependencies_added": [
+          "M9-M2-hard-top-t1-residual-tangent-fejer-commutator-self-return-obstruction"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "proofs/kernels/m9_m2_hard_top_t1_residual_tangent_fejer_commutator_self_return_obstruction.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-tangent-fejer-commutator-gate/reviews/final_kernel_post_repair_verification.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-tangent-fejer-commutator-gate/reviews/final_kernel_power_scope_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-tangent-fejer-commutator-gate/reviews/final_kernel_downstream_scope_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-tangent-fejer-commutator-gate/reviews/conductor_round173_adjudication.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-tangent-fejer-commutator-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Retain the complete hard-TOP signed-cone owner. On its K26 residual route, the tangent-Fejer commutator has no owner-complete sector: the commutator is target-safe and its complementary remainder is exactly K26 up to the single short correction and target-safe terms. Continue only through a genuinely new signed actual-symbol correlation theorem; all other t=1 and few-point channels remain independent."
+      }
+    ],
+    "reject": [],
+    "no_change": [
+      {
+        "id": "M9-M2-hard-top-t1-residual-fejer-parity-gcd-scale-reduction",
+        "reason": "Its K26 target remains open; Round 173 adds only a route obstruction."
+      },
+      {
+        "id": "M9-M2-hard-top-t1-residual-maximal-fejer-dyadic-positive-transform-obstruction",
+        "reason": "Round 173 is a downstream actual-symbol continuation and does not alter the Round-172 transform obstruction."
+      },
+      {
+        "id": "M9-M2-hard-top-truncated-divisor-energy-and-radical-control",
+        "reason": "No complete hard-TOP estimate is proved."
+      },
+      {
+        "id": "M9-M2-physical-one-count-assembly",
+        "reason": "Hard TOP, full BAL, and UNBAL remain open."
+      },
+      {
+        "id": "M9-M2-smooth-balanced-quarter-packet-estimate",
+        "reason": "Round 173 treats no balanced owner."
+      },
+      {
+        "id": "M9-M2-smooth-unbalanced-three-quarter-estimate",
+        "reason": "Round 173 treats no unbalanced owner."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "All three complete M2 parents remain open."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "Round 173 treats no direct M1 owner."
+      },
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "reason": "The alternative GAR route is unchanged."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "A residual route obstruction proves no endpoint-uniform assembly."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain incomplete."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The standard bridge still requires complete M9."
+      },
+      {
+        "id": "GC-global-M1-alternative-bridge",
+        "reason": "The alternative bridge still requires complete GAR and M9-M2."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The strongest internally proved exponent remains one third."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "The accepted repaired external benchmark remains 0.3144831759740614... ."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The quarter target remains open."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 5,
+    "idea_quality_score": 7,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 173 proves the exact tangent chart, target-safe bandpass commutator, and coefficientwise adjacent-sum self-return, rigorously eliminating the displayed first-difference continuation while keeping K26 and every target open."
+  }
+}

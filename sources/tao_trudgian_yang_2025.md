@@ -4,8 +4,8 @@
 
 Terence Tao, Tim Trudgian, Andrew Yang, *New exponent pairs, zero density
 estimates, and zero additive energy estimates: a systematic approach*,
-arXiv:2501.16779 (first submitted 28 January 2025; current source dated
-24 August 2026).
+arXiv:2501.16779v1 (submitted 28 January 2025; the 24 August 2026 date
+records the project's audit, not an arXiv revision).
 
 - Abstract page: https://arxiv.org/abs/2501.16779
 - Primary source inspected: current arXiv TeX source.

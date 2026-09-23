@@ -1,0 +1,268 @@
+{
+  "starting_graph_sha256": "5965e35636d988267311dbfcf8d57243153f88cb1105e2b2bcc35fa59a5e3833",
+  "reversibility": {
+    "rule": "Remove the one created obligation and every rejected-claim record introduced by this patch; remove every dependencies_added and evidence_added value; restore the two next_action values, the obstruction statement_tex, and the last-updated metadata recorded below. This recovers the canonical starting graph.",
+    "restore_next_action": {
+      "M9-M1-hard-top-high-radical-small-t-residual-estimate": "Round 182 freezes only the complete one-absolute-value small-t aggregate s>L, mu^2(s)=1, 1<=t<ceil(sqrt L), for both signs and every literal middle/lower residual hard-M1 shell. Prove the exact actual-coefficient bound L^(3/2)X^epsilon while retaining t=1, chi_4, Vaaler/profile fields, floors, stars, strict edges, hard samples, real-X crossings, endpoints, support, and zero extension. Capacity is L^2, so the missing signed gain is L^(1/2). A fixed-t three-quarter estimate, shifted correlation, or partial Mobius decomposition may be used only as a rigorously sufficient mechanism and may not replace the owner. Park complete Mobius recombination, positive joint-t norms, central-Mellin-only, character-erased, arbitrary-coefficient, dechirped, and early-triangle closures. Do not pivot in Round 183. Success first closes only the hard signed cone through the proved sector reduction; smooth direct M1 and every M2/global owner remain open.",
+      "M9-M1-hard-top-radical-mobius-mellin-joint-t-obstruction": "Park complete squarefree-Mobius inversion/recombination, positive joint-t norms, central-Mellin-only arguments, character erasure, and coefficient-uniform dechirping. A future attack must use a new literal coefficient-sensitive signed relation on the small-t residual, especially t=1; the obstruction does not disprove such a theorem."
+    },
+    "restore_statement_tex": {
+      "M9-M1-hard-top-radical-mobius-mellin-joint-t-obstruction": "Let F_sigma(r)=C_(L,X)^sigma(r)e(sigma sqrt(Xr)) and K_L(b,u)=sum_(a|u, a^2b>L)mu(a). The complete literal high-radical sum H_(L,sigma) equals sum_(b,u)K_L(b,u)F_sigma(bu^2) exactly. Since K_L(b,u)=1_(u=1) for b>L, for every L one has H_(L,sigma)=T_(L,sigma)^M1+E_(L,sigma), where E_(L,sigma)=sum_(b<=L,u)K_L(b,u)F_sigma(bu^2)-sum_(r<=L)F_sigma(r) and E_(L,sigma)<<_epsilon L^(3/2)X^epsilon. Thus complete squarefree Mobius linearization returns the original hard cone modulo a target-safe correction, and joint (s,t) lifting is only a permutation of product indices. Coefficient-uniform capacity is L^2 already on the t=1 odd coprime-squarefree cone, but this is not literal lower mass. For the full-orientation Mellin fibre, odd 3 mod 4 prime exponent cancellation kills only tau=0; the truncated literal cone requires all inverse-Mellin modes and endpoints. This parks complete inversion/recombination, central-mode-only, positive noncentral-mode, coefficient-uniform, character-erased, and multiplier-averaging closures only. It neither refutes the literal small-t target nor proves a parent or exponent."
+    },
+    "restore_metadata": {
+      "M9-M1-hard-top-high-radical-small-t-residual-estimate": {
+        "last_updated_round": 182,
+        "last_updated_at": "2026-08-27T18:50:38"
+      },
+      "M9-M1-hard-top-radical-mobius-mellin-joint-t-obstruction": {
+        "last_updated_round": 181,
+        "last_updated_at": "2026-08-27T17:11:21"
+      }
+    }
+  },
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-hard-top-small-t-nonresonant-primitive-ray-sector",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Hard-M1 small-t nonresonant primitive-ray incidence sector",
+        "status": "proved_internal",
+        "statement_tex": "For every real X>=2, every literal middle or lower residual hard-M1 shell L, and both signs sigma, expand the exact zero-extended product coefficient into divisor incidences and write h=Gu, n=Gv with G=(h,n), (u,v)=1. Put s(u,v)=sf(uv), rho(u,v)=sqrt(uv/s(u,v)), T_L=ceil(sqrt L), G_0=ceil(L^(1/4)), Delta_X(u,v)=dist(2sqrt(Xuv), Z+1/2), and delta_X=(10log(2X))^(-1). The complete signed incidence subaggregate with s(u,v)>L, G rho(u,v)<T_L, G>=G_0, and Delta_X(u,v)>=delta_X is <<_epsilon L^(3/2)X^epsilon, with the actual chi_4(G)chi_4(v) coefficient and every profile, power, floor, star, half weight, strict edge, hard sample, real-X crossing, endpoint, sign, and zero-extension field retained. The proof uses uniform step-two bounded variation of the literal ray symbol and the exact odd-G geometric ratio -e(2 sigma sqrt(Xuv)), followed by a positive sum over O((1+L/G_0)^2) primitive rays. The exact incidence-level complement is {G<G_0} union {G>=G_0:Delta_X(u,v)<delta_X}, inside all original predicates; it contains the complete t=1 face. This strict sector does not estimate the complement or prove the full small-t owner.",
+        "dependencies": [
+          "M9-M1-hard-top-squarefree-radical-sector-reduction",
+          "M9-M1-top-endpoint-transform",
+          "M9-M1-frequency-phase-diagram-R10",
+          "H4-Phi-regularity",
+          "Divisor-bound-elementary"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "proofs/kernels/m9_m1_hard_top_small_t_primitive_ray_sector_and_truncated_mobius_self_return.md",
+            "rounds/codex-managed/m9-m1-hard-top-high-radical-small-t-signed-contraction-gate/candidates/formalized_hard_m1_small_t_primitive_ray_sector_and_self_return.md",
+            "rounds/codex-managed/m9-m1-hard-top-high-radical-small-t-signed-contraction-gate/reports/literal_small_t_signed_contraction_attack.md",
+            "rounds/codex-managed/m9-m1-hard-top-high-radical-small-t-signed-contraction-gate/reviews/coefficient_product_endpoint_seam_review.md",
+            "rounds/codex-managed/m9-m1-hard-top-high-radical-small-t-signed-contraction-gate/reviews/power_self_return_psc_seam_review.md",
+            "rounds/codex-managed/m9-m1-hard-top-high-radical-small-t-signed-contraction-gate/reviews/blind_post_unmask_owner_scope_review.md",
+            "rounds/codex-managed/m9-m1-hard-top-high-radical-small-t-signed-contraction-gate/reviews/final_kernel_literal_post_repair_verification.md",
+            "rounds/codex-managed/m9-m1-hard-top-high-radical-small-t-signed-contraction-gate/reviews/final_kernel_power_scope_review.md",
+            "rounds/codex-managed/m9-m1-hard-top-high-radical-small-t-signed-contraction-gate/reviews/final_kernel_formalization_post_repair_verification.md",
+            "rounds/codex-managed/m9-m1-hard-top-high-radical-small-t-signed-contraction-gate/reviews/conductor_round183_adjudication.md",
+            "rounds/codex-managed/m9-m1-hard-top-high-radical-small-t-signed-contraction-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use this theorem only after expanding the exact divisor incidences. Attack the exact remaining small-gcd or near-half-integer-resonant incidence complement, especially the complete t=1 cone, with a new literal coefficient-sensitive signed relation; do not reinterpret the sector as a subset of product indices."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-hard-top-high-radical-small-t-residual-estimate",
+        "dependencies_added": [
+          "M9-M1-hard-top-small-t-nonresonant-primitive-ray-sector"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "proofs/kernels/m9_m1_hard_top_small_t_primitive_ray_sector_and_truncated_mobius_self_return.md",
+            "rounds/codex-managed/m9-m1-hard-top-high-radical-small-t-signed-contraction-gate/candidates/formalized_hard_m1_small_t_primitive_ray_sector_and_self_return.md",
+            "rounds/codex-managed/m9-m1-hard-top-high-radical-small-t-signed-contraction-gate/reports/literal_small_t_signed_contraction_attack.md",
+            "rounds/codex-managed/m9-m1-hard-top-high-radical-small-t-signed-contraction-gate/reports/partial_mobius_shifted_correlation_barrier_audit.md",
+            "rounds/codex-managed/m9-m1-hard-top-high-radical-small-t-signed-contraction-gate/reports/blind_complete_small_t_rederivation.md",
+            "rounds/codex-managed/m9-m1-hard-top-high-radical-small-t-signed-contraction-gate/reviews/coefficient_product_endpoint_seam_review.md",
+            "rounds/codex-managed/m9-m1-hard-top-high-radical-small-t-signed-contraction-gate/reviews/power_self_return_psc_seam_review.md",
+            "rounds/codex-managed/m9-m1-hard-top-high-radical-small-t-signed-contraction-gate/reviews/blind_post_unmask_owner_scope_review.md",
+            "rounds/codex-managed/m9-m1-hard-top-high-radical-small-t-signed-contraction-gate/reviews/final_kernel_literal_post_repair_verification.md",
+            "rounds/codex-managed/m9-m1-hard-top-high-radical-small-t-signed-contraction-gate/reviews/final_kernel_power_scope_review.md",
+            "rounds/codex-managed/m9-m1-hard-top-high-radical-small-t-signed-contraction-gate/reviews/final_kernel_formalization_post_repair_verification.md",
+            "rounds/codex-managed/m9-m1-hard-top-high-radical-small-t-signed-contraction-gate/reviews/conductor_round183_adjudication.md",
+            "rounds/codex-managed/m9-m1-hard-top-high-radical-small-t-signed-contraction-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The large-gcd nonresonant primitive-ray incidence sector is now target-safe by an actual character-phase BV argument. Prove the exact incidence complement {G<ceil(L^(1/4))} union {G>=ceil(L^(1/4)):Delta_X<(10log(2X))^(-1)}, retaining every original predicate. The first piece contains all t=1 and the second has no proved metric or signed-correlation bound. Partial Mobius truncation self-returns; the fixed-row Fejer brace is only an unproved stronger sufficient condition and is not PSC."
+      },
+      {
+        "id": "M9-M1-hard-top-radical-mobius-mellin-joint-t-obstruction",
+        "statement_tex": "Let F_sigma(r)=C_(L,X)^sigma(r)e(sigma sqrt(Xr)), T=ceil(sqrt L), and K_(L,T)(b,u)=sum_(a|u, a^2b>L, u/a<T)mu(a). The literal high-radical small-t scalar equals sum_(b,u)K_(L,T)(b,u)F_sigma(bu^2) exactly. On b>L and u<T, K_(L,T)(b,u)=1_(u=1); the complementary regions b<=L and b>L,u>=T are each O_epsilon(L^(3/2)X^epsilon). Hence the small-t scalar equals the full literal product wave P_(L,sigma)=sum_r F_sigma(r) modulo O_epsilon(L^(3/2)X^epsilon). If the Mobius divisor is split at a=T, the a>=T tail is target-safe but the a<T core still equals P_(L,sigma) modulo target size because its kernel also equals 1_(u=1) on b>L,u<T. Thus target-scale partial Mobius truncation self-returns to the original product wave, including a=t=u=1. The earlier complete high-radical all-t self-return, joint-(s,t) reindexing, and noncentral-Mellin limitations remain valid. Coefficient-uniform t=1 capacity is not literal lower mass. This obstruction parks only the named automatic recombination, positive-norm, central-mode, character-erased, and truncated-Mobius shortcuts; it neither refutes the literal small-t owner nor proves a parent or exponent.",
+        "evidence_added": {
+          "positive": [
+            "proofs/kernels/m9_m1_hard_top_small_t_primitive_ray_sector_and_truncated_mobius_self_return.md",
+            "rounds/codex-managed/m9-m1-hard-top-high-radical-small-t-signed-contraction-gate/candidates/formalized_hard_m1_small_t_primitive_ray_sector_and_self_return.md",
+            "rounds/codex-managed/m9-m1-hard-top-high-radical-small-t-signed-contraction-gate/reports/partial_mobius_shifted_correlation_barrier_audit.md",
+            "rounds/codex-managed/m9-m1-hard-top-high-radical-small-t-signed-contraction-gate/reports/blind_complete_small_t_rederivation.md",
+            "rounds/codex-managed/m9-m1-hard-top-high-radical-small-t-signed-contraction-gate/reviews/power_self_return_psc_seam_review.md",
+            "rounds/codex-managed/m9-m1-hard-top-high-radical-small-t-signed-contraction-gate/reviews/blind_post_unmask_owner_scope_review.md",
+            "rounds/codex-managed/m9-m1-hard-top-high-radical-small-t-signed-contraction-gate/reviews/final_kernel_power_scope_review.md",
+            "rounds/codex-managed/m9-m1-hard-top-high-radical-small-t-signed-contraction-gate/reviews/final_kernel_formalization_post_repair_verification.md",
+            "rounds/codex-managed/m9-m1-hard-top-high-radical-small-t-signed-contraction-gate/reviews/conductor_round183_adjudication.md",
+            "rounds/codex-managed/m9-m1-hard-top-high-radical-small-t-signed-contraction-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Park complete and target-truncated squarefree-Mobius recombination: the a>=ceil(sqrt L) tail is safe, but the a<ceil(sqrt L) core self-returns to the full product wave modulo target size and retains a=t=u=1. The exact fixed-row Fejer correlation is a distinct unproved sufficient mechanism, not PSC or the owner. Attack only a fresh literal relation on the small-gcd or near-resonant complement."
+      }
+    ],
+    "correct_rejected": [],
+    "reject": [
+      {
+        "id": "Round183-primitive-ray-sector-proves-complete-small-t-owner",
+        "reason": "The proved incidence sector has the exact small-gcd and near-resonant complement, including the complete t=1 face."
+      },
+      {
+        "id": "Round183-primitive-ray-sector-is-a-product-index-subset",
+        "reason": "The split is made only after expanding each product coefficient into literal divisor incidences; one product may contain incidences on both sides."
+      },
+      {
+        "id": "Round183-ray-BV-proves-an-arbitrary-coefficient-theorem",
+        "reason": "The saving uses the accepted bounded variation of the actual literal ray symbol together with its character-phase progression; dechirped arrays restore capacity."
+      },
+      {
+        "id": "Round183-character-erased-ray-sector-has-the-same-nonresonance",
+        "reason": "Without chi_4(G), half-integer nonresonance does not keep e(2 sigma sqrt(Xuv)) away from one."
+      },
+      {
+        "id": "Round183-near-half-integer-rays-are-automatically-sparse",
+        "reason": "No uniform metric count or signed correlation for the near-resonant primitive products is proved for fixed real X."
+      },
+      {
+        "id": "Round183-primitive-ray-gain-treats-the-t1-face",
+        "reason": "The equality t=1 forces G=rho=1, leaving only one site on each primitive ray and placing the full face in the small-gcd complement."
+      },
+      {
+        "id": "Round183-target-scale-partial-Mobius-creates-a-smaller-core",
+        "reason": "The a<ceil(sqrt L) kernel still equals 1_(u=1) on b>L,u<ceil(sqrt L), so the core is the full product wave modulo target-safe corrections."
+      },
+      {
+        "id": "Round183-fixed-row-Fejer-correlation-is-proved-or-equivalent-to-owner",
+        "reason": "The signed brace estimate is unproved already for t=1 and rowwise control followed by triangle in t is strictly stronger than the frozen aggregate."
+      },
+      {
+        "id": "Round183-radical-shift-correlation-is-the-old-PSC",
+        "reason": "The new quadratic product-difference relation, two coefficients, two squarefree indicators, and moving radical phase are not the old centered linear nearest-product fibre interface."
+      },
+      {
+        "id": "Round183-old-PSC-delta-no-go-refutes-the-new-Fejer-brace",
+        "reason": "The common missing power is only a same-shell diagnostic; the coefficients, centers, shifts, and outer operations differ and no theorem transfers."
+      },
+      {
+        "id": "Round183-one-prime-divisor-orientation-contracts-t1",
+        "reason": "Moving one odd prime multiplies the ratio by p^(plus or minus 2) and leaves the literal cone, so the half-difference identity pairs disjoint supports and self-returns."
+      },
+      {
+        "id": "Round183-incidence-capacity-is-literal-lower-mass",
+        "reason": "The L^2 complete capacity and L^(7/4) sector envelope are method upper capacities; their attaining arrays need not be the fixed literal coefficient."
+      },
+      {
+        "id": "Round183-strict-small-t-sector-improves-a-global-exponent",
+        "reason": "The complete hard owner, independent smooth M1 parent, M9-M1, every M2 owner, endpoint uniformity, M9, both bridges, and the quarter theorem remain open."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1-hard-top-squarefree-radical-sector-reduction",
+        "reason": "The accepted exact coordinates and two Round-181 target-safe sectors remain unchanged."
+      },
+      {
+        "id": "M9-M1-top-endpoint-transform",
+        "reason": "The accepted transform supplies the literal coefficient and only a conditional hard-cone connector."
+      },
+      {
+        "id": "M9-M1-top-endpoint-signed-cone",
+        "reason": "The complete small-t complement is still open, so the hard signed cone remains open."
+      },
+      {
+        "id": "M9-M1-shifted-divisor-correlation-PSC",
+        "reason": "The new radical-shift Fejer correlation is distinct and supplies no theorem for PSC."
+      },
+      {
+        "id": "M9-M1-direct-smooth-residual-blockwise-estimate",
+        "reason": "Round 183 treats only the unique hard profile; the smooth direct-M1 parent remains open."
+      },
+      {
+        "id": "M9-M1-direct-hard-smooth-separate-one-third-minimax",
+        "reason": "The accepted menu and separate hard/smooth one-third witnesses are unchanged."
+      },
+      {
+        "id": "M9-M1-physical-one-count-assembly",
+        "reason": "The conditional assembly still requires both the complete hard and smooth parents."
+      },
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "reason": "The alternative GAR route is not treated."
+      },
+      {
+        "id": "M9-M1-global-lower-radial-signed-estimate",
+        "reason": "The alternative lower-radial parent remains open."
+      },
+      {
+        "id": "M9-M1-global-radial-one-count-assembly",
+        "reason": "The alternative radial assembly is unchanged."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "The complete hard and independent smooth direct parents remain open, and the alternative route is also incomplete."
+      },
+      {
+        "id": "M9-M2-hard-top-t1-residual-fejer-parity-gcd-scale-reduction",
+        "reason": "Round 183 treats no M2 hard-TOP residual."
+      },
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "reason": "All hard-TOP channels remain open."
+      },
+      {
+        "id": "M9-M2-smooth-balanced-quarter-packet-estimate",
+        "reason": "No balanced M2 estimate is proved."
+      },
+      {
+        "id": "M9-M2-smooth-unbalanced-three-quarter-estimate",
+        "reason": "No unbalanced M2 estimate is proved."
+      },
+      {
+        "id": "M9-M2-physical-one-count-assembly",
+        "reason": "Hard TOP, BAL, and UNBAL remain open."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Complete hard TOP, BAL, and UNBAL remain open."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "A subordinate hard-M1 incidence sector proves no parent-level endpoint uniformity."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain incomplete."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The standard bridge still requires complete M9."
+      },
+      {
+        "id": "GC-global-M1-alternative-bridge",
+        "reason": "The alternative bridge still requires complete GAR and M9-M2."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The strongest internally proved exponent remains one third."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "The accepted repaired external benchmark remains 0.3144831759740614... ."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The quarter target remains open."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 9,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 183 proves a genuine actual-coefficient signed contraction on the large-gcd nonresonant primitive-ray incidence sector: the character-phase progression plus literal step-two BV improves its L^(7/4) incidence envelope to the L^(3/2) target. It also proves an exact target-scale partial-Mobius self-return and an exact but unproved fixed-row Fejer connector. The small-gcd and near-resonant complement, including all t=1, remains open, so no hard parent, bridge, theorem, or exponent is promoted."
+  }
+}

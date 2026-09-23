@@ -1,0 +1,216 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 179,
+    "round_type": "m9_m2_hard_top_t1_residual_k17a_primitive_conductor_orientation_defect_gate",
+    "campaign_id": "m9-m2-hard-top-t1-residual-k17a-primitive-conductor-orientation-defect-gate",
+    "title": "K17a primitive-conductor parity and literal orientation-defect gate",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "e04380a1965e57971bb68d8169d8a8d8e5349edb535e01b343c8b25ecdcd4e27",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "planned_numerical_percent": 0,
+      "computation_policy": "No numerical theorem evidence is planned. Exact finite checks may be used only to falsify algebra or normalization and cannot promote the asymptotic target."
+    },
+    "target_obligations": [
+      "M9-M2-hard-top-t1-residual-k17a-primitive-alias-conductor-reduction",
+      "M9-M2-top-endpoint-signed-cone"
+    ],
+    "frozen_target": {
+      "question": "Can the exact primitive-conductor parity projection prove the complete signed high-q K17a block (177.K34), prove a strict literal symmetric-orientation conductor sector, or isolate the first exact orientation-defect capacity or self-return obstruction?",
+      "reference_formula": "|sum_(u0|u) sum_(ell mod u0, u0/(ell,u0)>Q_B) c_(u0)(ell) H_(kappa,u,u0,ell)| <<_(B,delta,gamma,epsilon) L X^epsilon uniformly for each supported (kappa,u), with one final outer absolute value.",
+      "quantities": [
+        "u_0 and every exact conductor q divide the odd primitive modulus inherited from the accepted cross-gcd fold.",
+        "For ell=(u_0/q)a with (a,q)=1, c_(u_0)(ell)=(q/u_0)c_q(a).",
+        "The candidate primitive kernel is K_q(b)=sum_((a,q)=1)c_q(a)e(ab/q).",
+        "The candidate parity identity must be derived with its d=1 term and exact q/u_0 normalization.",
+        "A fixed (kappa,u,u_0) stratum has O(u_0 L) atoms and exact-q positive capacity O(L q log(2q)).",
+        "Every q<=Q_B packet is already proved; only q>Q_B belongs to this round.",
+        "The stronger aliaswise (177.K35), K26, other parents, bridges, and exponent work are forbidden pivots."
+      ]
+    },
+    "completion_criteria": [
+      "Independently derive the exact primitive-frequency Mobius projector and sign-reversal law, including the d=1 trace.",
+      "Derive the exact two-orientation bucket decomposition with b a unit modulo q and every coefficient factor correct.",
+      "Prove or refute target-safe summation of the primitive trace over q|u_0 and u_0|u.",
+      "Attack the complete literal orientation defect before any positive norm, retaining selectors, squarefree and coprimality fields, physical lifts, phases, endpoints, and zero extensions.",
+      "Prove (177.K34), prove a complete nontrivial literal defect sector at target scale with its complement stated, or establish the first exact selector, multiplicity, capacity, or self-return obstruction.",
+      "Run an arbitrary-bucket false control without treating it as literal lower mass.",
+      "Do not pivot to (177.K35), K26, another M2 or M1 owner, GAR, assembly, a bridge, or an exponent.",
+      "Close under exactly one authorized exit label after seam review."
+    ],
+    "controls": [
+      "odd_modulus_and_unit_residue",
+      "exact_conductor_Mobius_projection",
+      "d_equals_one_trace_term",
+      "q_over_u0_normalization",
+      "q_and_u0_divisor_summation",
+      "literal_two_orientation_buckets",
+      "orientation_domain_bijectivity",
+      "complementary_divisor_support_failure",
+      "low_q_no_double_count",
+      "selector_squarefree_endpoint_retention",
+      "physical_lift_multiplicity",
+      "primitive_trace_capacity",
+      "orientation_defect_capacity",
+      "adversarial_bucket_false_control",
+      "literal_unknown_quarantine",
+      "one_square_root_restoration",
+      "outer_absolute_value_placement",
+      "no_K35_or_other_owner_pivot",
+      "downstream_scope",
+      "exponent_quarantine"
+    ],
+    "exit_labels": [
+      "hard_top_t1_residual_k17a_high_conductor_target",
+      "strict_k17a_symmetric_orientation_conductor_sector",
+      "primitive_conductor_orientation_defect_capacity_or_self_return_no_go"
+    ],
+    "tasks": [
+      {
+        "id": "literal_primitive_conductor_parity_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "completed",
+        "target": "Derive the exact primitive-conductor parity decomposition and use it to prove K34, a complete strict literal sector, or the first exact obstruction in the orientation defect.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round179_m2_hard_top_t1_residual_k17a_primitive_conductor_orientation_defect_strategy.md",
+          "proofs/kernels/m9_m2_hard_top_t1_residual_k17a_cross_gcd_alternating_fibre_reduction.md",
+          "proofs/kernels/m9_m2_hard_top_t1_residual_k17a_primitive_alias_conductor_reduction.md",
+          "rounds/codex-managed/full-proof-round175-177-strategy-literature-review/reviews/conductor_round178_adjudication.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/synthesis.md"
+        ],
+        "required_controls": [
+          "exact_conductor_Mobius_projection",
+          "d_equals_one_trace_term",
+          "q_over_u0_normalization",
+          "literal_two_orientation_buckets",
+          "selector_squarefree_endpoint_retention",
+          "physical_lift_multiplicity",
+          "low_q_no_double_count",
+          "primitive_trace_capacity",
+          "orientation_defect_capacity",
+          "no_K35_or_other_owner_pivot",
+          "downstream_scope",
+          "exponent_quarantine"
+        ],
+        "required_output": [
+          "A seven-section analytic report satisfying the repository report contract.",
+          "Exact formulas, hypotheses, all multiplicities and divisor sums, the first unproved step, and control outcomes.",
+          "A proof of K34, a strict owner-complete sector, or the narrowest exact obstruction.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-primitive-conductor-orientation-defect-gate/reports/literal_primitive_conductor_parity_attack.md"
+      },
+      {
+        "id": "hostile_orientation_defect_capacity_audit",
+        "role": "barrier_no_go",
+        "access_mode": "selected_context",
+        "status": "completed",
+        "target": "Hostilely verify the projector, normalizations, trace capacity, literal orientation interface, and the first exact capacity or selector self-return.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round179_m2_hard_top_t1_residual_k17a_primitive_conductor_orientation_defect_strategy.md",
+          "proofs/kernels/m9_m2_hard_top_t1_residual_k17a_cross_gcd_alternating_fibre_reduction.md",
+          "proofs/kernels/m9_m2_hard_top_t1_residual_k17a_primitive_alias_conductor_reduction.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/reports/hybrid_large_sieve_capacity_audit.md",
+          "rounds/codex-managed/full-proof-round175-177-strategy-literature-review/reviews/dependency_power_selection_seam_review.md"
+        ],
+        "required_controls": [
+          "odd_modulus_and_unit_residue",
+          "d_equals_one_trace_term",
+          "q_over_u0_normalization",
+          "q_and_u0_divisor_summation",
+          "orientation_domain_bijectivity",
+          "complementary_divisor_support_failure",
+          "selector_squarefree_endpoint_retention",
+          "physical_lift_multiplicity",
+          "adversarial_bucket_false_control",
+          "one_square_root_restoration",
+          "outer_absolute_value_placement",
+          "downstream_scope",
+          "exponent_quarantine"
+        ],
+        "required_output": [
+          "A seven-section hostile audit satisfying the repository report contract.",
+          "Exact proof or counterderivation with restored powers and literal-versus-adversarial distinction.",
+          "The first exact failure, strict sector, or no-go boundary.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-primitive-conductor-orientation-defect-gate/reports/hostile_orientation_defect_capacity_audit.md"
+      },
+      {
+        "id": "blind_primitive_kernel_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "completed",
+        "target": "From the isolated finite packet, independently derive the primitive projector, sign law, trace/defect decomposition, trace capacity, and universal limitation of the defect.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-primitive-conductor-orientation-defect-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "state/best_proof_draft.md",
+          "all strategy files",
+          "all prior round artifacts",
+          "all sibling reports, reviews, controls, synthesis, sources, and conductor analysis"
+        ],
+        "required_controls": [
+          "odd_modulus_and_unit_residue",
+          "exact_conductor_Mobius_projection",
+          "d_equals_one_trace_term",
+          "q_over_u0_normalization",
+          "primitive_trace_capacity",
+          "adversarial_bucket_false_control",
+          "literal_unknown_quarantine",
+          "downstream_scope",
+          "exponent_quarantine"
+        ],
+        "required_output": [
+          "A seven-section statement-only report satisfying the repository report contract.",
+          "An independent exact derivation, capacity calculation, false control, and first unproved literal relation.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-primitive-conductor-orientation-defect-gate/reports/blind_primitive_kernel_rederivation.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "primitive_projector_and_normalization",
+        "requirement": "Verify the Mobius projection, sign reversal, d=1 term, q/u_0 factor, unit support, and exact block decomposition."
+      },
+      {
+        "id": "literal_orientation_selector_and_multiplicity",
+        "requirement": "Verify every orientation bucket, selector domain, endpoint, squarefree field, lift multiplicity, and any proposed defect relation."
+      },
+      {
+        "id": "capacity_owner_and_false_control",
+        "requirement": "Verify trace and defect powers, divisor summation, adversarial controls, owner scope, and exponent quarantine."
+      },
+      {
+        "id": "blind_post_unmask_kernel",
+        "requirement": "Compare the isolated finite derivation with the literal kernel without contaminating the original blind provenance."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "e04380a1965e57971bb68d8169d8a8d8e5349edb535e01b343c8b25ecdcd4e27",
+    "generated_at": "2026-08-27T04:29:27.8143130Z"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

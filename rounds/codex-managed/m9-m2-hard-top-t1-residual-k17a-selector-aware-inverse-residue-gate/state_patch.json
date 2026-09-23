@@ -1,0 +1,276 @@
+{
+  "starting_graph_sha256": "e3927f0ace0f3d74e9e9f5116a319159e3508838c7f7bd14b086fa851cad82b8",
+  "reversibility": {
+    "rule": "Remove every create and reject record introduced by this patch; remove every dependencies_added and evidence_added value; restore the four next_action values and their last-updated metadata below. This recovers the canonical starting graph.",
+    "restore_next_action": {
+      "M9-M2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-reduction": "Retain the fixed-proportion kappa_*>=delta L sector. On kappa_*<delta L, prove a literal selector-aware signed joint inverse-residue/square-root estimate of the form (176.K35), uniformly including the large near-half alias, both orientations, all determinants, squarefree and Mobius openings, Fejer weight, hard endpoints, and zero extension before absolute recombination. Park fibrewise automatic alternation, canonical determinant pairing, coefficient-blind Abel, and positively recombined rowwise or joint Poisson as sources of the missing factor L.",
+      "M9-M2-hard-top-t1-residual-determinant-endpoint-polylog-shift-reduction": "K17a remains open only on the nonpolylogarithmic complement after removing the proved fixed-proportion inward-cross-gcd sector. Use the exact two-orientation inverse-residue identity and prove the selector-aware signed joint estimate (176.K35) before absolute values over Fourier aliases, determinants, fibres, openings, endpoints, or orientations. Do not repeat fibrewise automatic alternation or positively recombined row/joint transforms.",
+      "M9-M2-hard-top-t1-residual-fejer-parity-gcd-scale-reduction": "Both residual routes remain open. K17a now has an exact cross-gcd/inverse-residue reduction and a target-safe fixed-proportion high-cross-gcd sector; its complement requires the signed literal joint estimate (176.K35). K26 remains equivalent at target strength to the complete literal coefficient-sensitive top endpoint theorem after its paid seams. Park coefficient-blind fibre, scale, and positive-transform closures on both routes.",
+      "M9-M2-top-endpoint-signed-cone": "Retain the complete hard-TOP signed-cone owner. On K17a, the fixed-proportion inward-cross-gcd sector is target-safe and the exact complement is a literal joint inverse-residue problem with open estimate (176.K35). On K26, the whole chain remains a top endpoint problem. Other t=1 and few-point channels remain independent; no residual subroute presently closes this owner."
+    },
+    "restore_metadata": {
+      "M9-M2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-reduction": {
+        "last_updated_round": 176,
+        "last_updated_at": "2026-08-27T08:20:19"
+      },
+      "M9-M2-hard-top-t1-residual-determinant-endpoint-polylog-shift-reduction": {
+        "last_updated_round": 176,
+        "last_updated_at": "2026-08-27T08:20:19"
+      },
+      "M9-M2-hard-top-t1-residual-fejer-parity-gcd-scale-reduction": {
+        "last_updated_round": 176,
+        "last_updated_at": "2026-08-27T08:20:19"
+      },
+      "M9-M2-top-endpoint-signed-cone": {
+        "last_updated_round": 176,
+        "last_updated_at": "2026-08-27T08:20:19"
+      }
+    }
+  },
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-hard-top-t1-residual-k17a-primitive-alias-conductor-reduction",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Hard-TOP t=1 residual K17a primitive alias conductor reduction",
+        "status": "proved_internal",
+        "statement_tex": "Within the accepted low-cross-gcd complement kappa_*<delta L of the exact two-orientation K17a identity, write g=(u,n), u=g u_0, n=g n_0, and (n_0,u_0)=1. The primitive anchor satisfies E_u(+/- vbar n)=E_(u_0)(+/- vbar n_0), and its normalized Fourier aliases fold exactly as sum_(j=0)^(g-1)c_u(ell+j u_0)=c_(u_0)(ell). For q=u_0/(ell,u_0), ell=(u_0/q)a, and (a,q)=1, one has c_(u_0)(ell)=(q/u_0)c_q(a) and sum_(cond(ell)=q)|c_(u_0)(ell)|<<(q/u_0)log(2q). A fixed (kappa,u,u_0) stratum has O(u_0 L) literal atoms, so its exact-q positive capacity is O(L q log(2q)). Consequently, for every fixed B>0 and Q_B=(log(2X))^B, the complete exact Fourier packet q<=Q_B is <<_(B,delta,gamma,epsilon)L^2 X^epsilon. This packet contains the complete physical sector u/(u,n)<=Q_B; its exact Fourier complement is q>Q_B. Exact rank-one alias TT* reconstructs the physical block, while alias Parseval, positive bucket closure, one-conductor-square-root recombination, lift-erasing completion, and complementary-divisor orientation pairing give only the scoped capacity or self-return limitations recorded in the kernel and no literal lower mass. The sufficient high-q estimates (177.K34)--(177.K35), complete K17a, every parent, and every exponent implication remain open.",
+        "dependencies": [
+          "M9-M2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-reduction"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "proofs/kernels/m9_m2_hard_top_t1_residual_k17a_primitive_alias_conductor_reduction.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/candidates/formalized_primitive_alias_conductor_reduction.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/reports/literal_hybrid_inverse_residue_attack.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/reports/blind_alias_energy_rederivation.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/reports/hybrid_large_sieve_capacity_audit.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/reviews/conductor_report_reconciliation.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/reviews/literal_kernel_mathematical_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/reviews/blind_post_unmask_alias_conductor_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/reviews/power_owner_scope_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/reviews/post_repair_kernel_candidate_verification.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/reviews/final_post_repair_verification.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/reviews/pre_apply_closure_scope_post_repair_verification.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/reviews/state_patch_scope_cycle_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/controls/conductor_round177_controls.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/reviews/conductor_round177_adjudication.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Retain both proved strict sectors: fixed-proportion kappa_*>=delta L and, on kappa_*<delta L, the complete reduced-alias-conductor packet q<=(log(2X))^B, including the physical primitive-modulus sector u/(u,n)<=(log(2X))^B. On the exact complement q>(log(2X))^B, prove the literal selector- and phase-aware signed estimate (177.K34), or the stronger aliaswise full-conductor-saving estimate (177.K35), before absolute recombination over aliases, gcd strata, determinants, fibre sites, squarefree or Mobius pieces, endpoints, or orientations. Park one-square-root positive recombination, rank-one TT* self-return, alias-Parseval positive diagonals, lift-erasing completion, and complementary-divisor orientation pairing."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-reduction",
+        "evidence_added": {
+          "inconclusive": [
+            "proofs/kernels/m9_m2_hard_top_t1_residual_k17a_primitive_alias_conductor_reduction.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/reviews/final_post_repair_verification.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/reviews/state_patch_scope_cycle_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/reviews/conductor_round177_adjudication.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Retain the fixed-proportion kappa_*>=delta L sector and the complete low-reduced-conductor q<=(log(2X))^B Fourier packet on kappa_*<delta L. The exact remaining K17a packet has q>(log(2X))^B and requires the literal signed estimate (177.K34), or the full-conductor aliaswise estimate (177.K35), with selectors, phases, endpoints, lifts, and both orientations retained. Do not repeat one-square-root positive recombination, rank-one TT* self-return, alias-Parseval positive closure, lift-erasing completion, or complementary-divisor orientation pairing."
+      },
+      {
+        "id": "M9-M2-hard-top-t1-residual-determinant-endpoint-polylog-shift-reduction",
+        "evidence_added": {
+          "inconclusive": [
+            "proofs/kernels/m9_m2_hard_top_t1_residual_k17a_primitive_alias_conductor_reduction.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/reviews/final_post_repair_verification.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/reviews/state_patch_scope_cycle_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/reviews/conductor_round177_adjudication.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/synthesis.md"
+          ]
+        },
+        "next_action": "K17a remains open only after deleting its fixed-proportion cross-gcd sector and, on the low-cross-gcd complement, the complete q<=(log(2X))^B alias packet. Attack the exact high-q packet through a genuinely selector- and phase-aware signed theorem of strength (177.K34) or (177.K35), before absolute values over aliases, gcd strata, determinants, fibres, openings, endpoints, or orientations."
+      },
+      {
+        "id": "M9-M2-hard-top-t1-residual-fejer-parity-gcd-scale-reduction",
+        "evidence_added": {
+          "inconclusive": [
+            "proofs/kernels/m9_m2_hard_top_t1_residual_k17a_primitive_alias_conductor_reduction.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/reviews/final_post_repair_verification.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/reviews/state_patch_scope_cycle_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/reviews/conductor_round177_adjudication.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Both residual routes remain open. K17a retains target-safe fixed-proportion cross-gcd and low-reduced-conductor sectors; its exact complement is high q and requires (177.K34) or (177.K35). K26 remains equivalent at target strength to the complete literal coefficient-sensitive top endpoint theorem after its paid seams. Park coefficient-blind fibre, scale, positive-transform, one-square-root alias, and positive-energy closures on both routes."
+      },
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "dependencies_added": [
+          "M9-M2-hard-top-t1-residual-k17a-primitive-alias-conductor-reduction"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "proofs/kernels/m9_m2_hard_top_t1_residual_k17a_primitive_alias_conductor_reduction.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/reviews/final_post_repair_verification.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/reviews/state_patch_scope_cycle_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/reviews/conductor_round177_adjudication.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Retain the complete hard-TOP signed-cone owner. On K17a, the fixed-proportion cross-gcd and low-reduced-conductor alias sectors are target-safe; the exact remaining high-q packet requires (177.K34) or (177.K35). On K26, the whole chain remains a top endpoint problem. Other t=1 and few-point channels remain independent; no residual subroute presently closes this owner."
+      }
+    ],
+    "correct_rejected": [],
+    "reject": [
+      {
+        "id": "Round177-low-conductor-packet-proves-K17a",
+        "reason": "The exact high-conductor packet q>(log(2X))^B remains unproved."
+      },
+      {
+        "id": "Round177-primitive-anchor-modulus-is-u",
+        "reason": "After the physical gcd fold, the primitive anchor modulus is u_0=u/(u,n)."
+      },
+      {
+        "id": "Round177-aliases-may-be-absoluted-before-gcd-folding",
+        "reason": "The exact g-alias sum must be folded algebraically to c_(u_0)(ell) before absolute values; otherwise the sharp normalization is lost."
+      },
+      {
+        "id": "Round177-final-additive-conductor-is-always-u_0",
+        "reason": "For alias ell, the exact conductor is q=u_0/(ell,u_0), which may be a proper divisor of u_0."
+      },
+      {
+        "id": "Round177-low-q-theorem-is-only-the-small-physical-u_0-sector",
+        "reason": "The proved transform packet also contains low-conductor aliases belonging to physical strata with large u_0."
+      },
+      {
+        "id": "Round177-primitive-near-half-aliases-are-negligible",
+        "reason": "They have q=u_0 and constant-size normalized coefficient."
+      },
+      {
+        "id": "Round177-one-reciprocal-square-root-saving-is-sufficient",
+        "reason": "Positive exact-q recombination leaves L sqrt(q) up to logarithms."
+      },
+      {
+        "id": "Round177-rank-one-TTstar-contracts-the-physical-block",
+        "reason": "The exact rank-one alias matrix reconstructs the original physical block squared."
+      },
+      {
+        "id": "Round177-alias-Parseval-diagonal-is-literal-lower-mass",
+        "reason": "The u_0 sqrt(L) self-diagonal is only an available positive-majorant capacity; signed bucket collisions can cancel it."
+      },
+      {
+        "id": "Round177-positive-residue-bucket-collision-gives-a-saving",
+        "reason": "Positive bucket Cauchy can return the full L u_0 stratum capacity."
+      },
+      {
+        "id": "Round177-completion-modulo-q-erases-physical-lifts",
+        "reason": "The explicit v, n_0, and fibre lift multiplicities restore the physical capacity and are already included in the literal count."
+      },
+      {
+        "id": "Round177-anchor-antisymmetry-pairs-the-two-orientations",
+        "reason": "The amplitude and selector do not pair under sign reversal; both orientations must remain in the signed block."
+      },
+      {
+        "id": "Round177-complementary-divisor-exchange-is-a-live-orientation-involution",
+        "reason": "The complement exits the upper near-square divisor window in the odd branch and is even in the even branch."
+      },
+      {
+        "id": "Round177-selector-regularity-is-automatic-after-alias-folding",
+        "reason": "No variation, Fourier norm, factorization, or residue-bucket correlation theorem is known for the literal selected/no-pair field."
+      },
+      {
+        "id": "Round177-positive-energy-route-no-go-disproves-the-high-q-target",
+        "reason": "Only named coefficient-blind or positive-recombination mechanisms are excluded; a selector- and phase-aware signed theorem remains possible."
+      },
+      {
+        "id": "Round177-primitive-alias-reduction-closes-a-parent-or-improves-the-exponent",
+        "reason": "Complete K17a, every downstream owner, both bridges, the quarter theorem, and all exponent owners are unchanged."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M2-hard-top-t1-residual-transport-fejer-energy-reduction",
+        "reason": "Its residual reduction remains proved, while K17a and K26 remain open."
+      },
+      {
+        "id": "M9-M2-hard-top-t1-residual-maximal-fejer-dyadic-positive-transform-obstruction",
+        "reason": "Round 177 treats the independent K17a alias route and does not alter the maximal-scale K26 obstruction."
+      },
+      {
+        "id": "M9-M2-hard-top-t1-residual-tangent-fejer-commutator-self-return-obstruction",
+        "reason": "The tangent first-difference obstruction remains unchanged."
+      },
+      {
+        "id": "M9-M2-hard-top-t1-residual-whole-chain-scale-coboundary-positive-capacity-obstruction",
+        "reason": "The K26 endpoint telescope remains unchanged."
+      },
+      {
+        "id": "M9-M2-hard-top-truncated-divisor-energy-and-radical-control",
+        "reason": "No complete hard-TOP estimate is proved."
+      },
+      {
+        "id": "M9-M2-physical-one-count-assembly",
+        "reason": "Hard TOP, full BAL, and UNBAL remain open."
+      },
+      {
+        "id": "M9-M2-smooth-balanced-quarter-packet-estimate",
+        "reason": "Round 177 treats no balanced owner."
+      },
+      {
+        "id": "M9-M2-smooth-unbalanced-three-quarter-estimate",
+        "reason": "Round 177 treats no unbalanced owner."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Complete hard TOP, full BAL, and UNBAL remain open."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "Round 177 treats no direct M1 owner."
+      },
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "reason": "The alternative GAR route is unchanged."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "A strict residual sub-sector proves no parent-level endpoint uniformity."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain incomplete."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The standard bridge still requires complete M9."
+      },
+      {
+        "id": "GC-global-M1-alternative-bridge",
+        "reason": "The alternative bridge still requires complete GAR and M9-M2."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The strongest internally proved exponent remains one third."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "The accepted repaired external benchmark remains 0.3144831759740614... ."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The quarter target remains open."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 177 proves an exact primitive-alias folding and reduced-conductor decomposition, closes the complete polylogarithmic reduced-conductor Fourier packet including the physical small-primitive-modulus sector, and isolates the exact high-conductor complement. It also establishes sharply scoped positive-energy, incomplete-lift, and orientation-pairing limitations. It proves no complete K17a target, parent, bridge, quarter theorem, or exponent improvement."
+  }
+}

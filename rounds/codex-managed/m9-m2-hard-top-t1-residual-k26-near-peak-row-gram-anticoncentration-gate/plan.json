@@ -1,0 +1,230 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 180,
+    "round_type": "m9_m2_hard_top_t1_residual_k26_near_peak_row_gram_anticoncentration_gate",
+    "campaign_id": "m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate",
+    "title": "K26 near-peak signed divisor-row Gram anti-concentration gate",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "e94ef6a364988e47f8a59ca3589f03cb098a04a241ec841afc2efa6e685081b4",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "planned_numerical_percent": 0,
+      "computation_policy": "No numerical theorem evidence is planned. Exact finite checks may only falsify cell normalizations or controls and cannot promote the asymptotic target."
+    },
+    "target_obligations": [
+      "M9-M2-hard-top-t1-residual-whole-chain-scale-coboundary-positive-capacity-obstruction",
+      "M9-M2-hard-top-t1-residual-maximal-fejer-dyadic-positive-transform-obstruction",
+      "M9-M2-hard-top-t1-residual-fejer-parity-gcd-scale-reduction",
+      "M9-M2-top-endpoint-density-discrepancy-energy"
+    ],
+    "frozen_target": {
+      "question": "Can the exact chi_4-weighted off-row divisor Gram form in every microscopic near-peak Fejer cell be bounded at local scale L X^epsilon, thereby proving the literal K26 endpoint, or does its first selector-stable contraction self-return or retain L^2 local capacity?",
+      "reference_formula": "(1/2) sum_(epsilon=0)^1 2 Re sum_(d<d', d,d' odd) chi_4(d)chi_4(d') integral_(I_nu) R_(epsilon,d)(theta) conjugate(R_(epsilon,d')(theta)) dtheta <<_epsilon L X^epsilon uniformly for |nu|<=ceil(sqrt(L)).",
+      "quantities": [
+        "J=sqrt(X), 1<<L<<H<=J^(1/2), R_0=ceil(L), and M asymp L^2 is the exact containing cardinality.",
+        "c_N^rem=sum_(d|N,d odd)chi_4(d)lambda_N(d), with every literal selector, squarefree, coprimality, two-adic, profile, endpoint, transition, and zero-extension field retained.",
+        "R_(epsilon,d)(theta)=sum_m(-1)^(epsilon m)lambda_(dm)(d)e(J sqrt(dm)+dm theta), and Z_epsilon=sum_d chi_4(d)R_(epsilon,d).",
+        "I_nu=[(nu-1/2)/M,(nu+1/2)/M) mod 1 for |nu|<=ceil(sqrt(L)).",
+        "The in-round incidence gate is Lambda_2=sum_(d,m)|lambda_(dm)(d)|^2 << L^2 X^epsilon with O(L) cofactors per row.",
+        "The row diagonal and far spectral arcs are proposed target-safe; both implications must be independently rederived before promotion.",
+        "Local positive capacity is L^2 and endpoint positive capacity is L^4, while the targets are L and L^3 respectively.",
+        "The K17a high-q block and every other proof owner are forbidden pivots."
+      ]
+    },
+    "completion_criteria": [
+      "Derive the exact physical divisor-row identity and sinc cell kernel, including wraparound and zero product difference.",
+      "Verify the literal incidence-energy and row-length bounds and prove the complete row diagonal is O(L X^epsilon) in each near cell.",
+      "Verify the Fejer near/far partition, Parseval normalization, ordinary-zero restoration, short correction, and implication from the local off-row theorem to Q_M^*<<L^3 X^epsilon.",
+      "Attack the complete literal off-row form before any positive norm, retaining every selector, phase, collision, endpoint, and both parity branches.",
+      "Prove the uniform near-cell target, prove a strict owner-complete target-safe sector with its exact complement, or establish the first exact capacity or self-return obstruction.",
+      "Run complex-dechirped, real-cosine, arbitrary-sign, constant-character, erased-selector, no-pair, one-row, one-site, exact-collision, product-collar, and hard-boundary controls.",
+      "Do not pivot to K17a, another M2 or M1 owner, GAR, assembly, a bridge, or an exponent.",
+      "Close under exactly one authorized exit label after blind and seam review."
+    ],
+    "controls": [
+      "exact_divisor_row_identity",
+      "half_open_wraparound_cells",
+      "exact_sinc_kernel_and_product_diagonal",
+      "literal_incidence_energy",
+      "per_row_cofactor_length",
+      "row_diagonal_local_power",
+      "near_far_Fejer_partition",
+      "both_parity_branches_and_Parseval",
+      "collective_ordinary_zero_restoration",
+      "once_only_short_correction",
+      "one_outer_real_part",
+      "selector_squarefree_endpoint_retention",
+      "complex_dechirped_false_control",
+      "real_cosine_dechirped_false_control",
+      "arbitrary_real_sign_false_control",
+      "constant_character_and_erased_selector_controls",
+      "all_one_mod_four_no_pair_control",
+      "one_row_one_site_and_exact_collision_controls",
+      "rank_one_product_collar_no_repeat",
+      "fixed_shift_K17a_commutator_scale_no_repeat",
+      "local_and_endpoint_power_restoration",
+      "literal_unknown_quarantine",
+      "downstream_scope",
+      "exponent_quarantine"
+    ],
+    "exit_labels": [
+      "literal_near_peak_row_gram_anticoncentration_target",
+      "strict_literal_row_gram_sector",
+      "row_gram_offdiagonal_capacity_or_self_return_no_go"
+    ],
+    "tasks": [
+      {
+        "id": "literal_near_peak_row_gram_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "completed",
+        "target": "Prove the complete near-peak off-row divisor Gram bound, a strict literal sector, or the first exact selector, collision, capacity, or self-return obstruction.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round180_m2_hard_top_t1_residual_k26_near_peak_row_gram_strategy.md",
+          "proofs/kernels/m9_m2_hard_top_t1_residual_whole_chain_scale_coboundary_positive_capacity_obstruction.md",
+          "proofs/kernels/m9_m2_hard_top_t1_residual_maximal_fejer_dyadic_positive_transform_obstruction.md",
+          "proofs/kernels/m9_m2_hard_top_t1_character_poisson_product_collar_obstruction.md",
+          "proofs/kernels/m9_m2_hard_top_t1_residual_transport_fejer_energy_reduction.md",
+          "rounds/codex-managed/full-proof-round175-177-strategy-literature-review/reviews/dependency_power_selection_seam_review.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-primitive-conductor-orientation-defect-gate/synthesis.md"
+        ],
+        "required_controls": [
+          "exact_divisor_row_identity",
+          "exact_sinc_kernel_and_product_diagonal",
+          "both_parity_branches_and_Parseval",
+          "one_outer_real_part",
+          "selector_squarefree_endpoint_retention",
+          "complex_dechirped_false_control",
+          "real_cosine_dechirped_false_control",
+          "all_one_mod_four_no_pair_control",
+          "rank_one_product_collar_no_repeat",
+          "local_and_endpoint_power_restoration",
+          "downstream_scope",
+          "exponent_quarantine"
+        ],
+        "required_output": [
+          "A seven-section analytic report satisfying the repository report contract.",
+          "Exact formulas, hypotheses, literal fields, powers, first unproved step, and every control outcome.",
+          "A proof, strict owner-complete sector, or the narrowest exact obstruction.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/reports/literal_near_peak_row_gram_attack.md"
+      },
+      {
+        "id": "fejer_cell_owner_capacity_audit",
+        "role": "barrier_no_go",
+        "access_mode": "selected_context",
+        "status": "completed",
+        "target": "Hostilely verify the near-cell reduction to K26, every normalization and paid seam, and the first exact local capacity or self-return.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round180_m2_hard_top_t1_residual_k26_near_peak_row_gram_strategy.md",
+          "proofs/kernels/m9_m2_hard_top_t1_residual_whole_chain_scale_coboundary_positive_capacity_obstruction.md",
+          "proofs/kernels/m9_m2_hard_top_t1_residual_maximal_fejer_dyadic_positive_transform_obstruction.md",
+          "proofs/kernels/m9_m2_hard_top_t1_residual_tangent_fejer_commutator_self_return_obstruction.md",
+          "proofs/kernels/m9_m2_hard_top_t1_residual_fejer_parity_gcd_scale_reduction.md",
+          "proofs/kernels/m9_m2_hard_top_t1_character_poisson_product_collar_obstruction.md",
+          "rounds/codex-managed/full-proof-round175-177-strategy-literature-review/reviews/dependency_power_selection_seam_review.md"
+        ],
+        "required_controls": [
+          "half_open_wraparound_cells",
+          "literal_incidence_energy",
+          "per_row_cofactor_length",
+          "row_diagonal_local_power",
+          "near_far_Fejer_partition",
+          "collective_ordinary_zero_restoration",
+          "once_only_short_correction",
+          "arbitrary_real_sign_false_control",
+          "constant_character_and_erased_selector_controls",
+          "one_row_one_site_and_exact_collision_controls",
+          "fixed_shift_K17a_commutator_scale_no_repeat",
+          "literal_unknown_quarantine",
+          "downstream_scope",
+          "exponent_quarantine"
+        ],
+        "required_output": [
+          "A seven-section hostile audit satisfying the repository report contract.",
+          "An exact verification or first counterderivation with restored powers and literal-versus-adversarial separation.",
+          "The first precise reduction failure, capacity barrier, or no-go boundary.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/reports/fejer_cell_owner_capacity_audit.md"
+      },
+      {
+        "id": "blind_row_gram_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "completed",
+        "target": "Independently derive the finite row-Gram kernel, diagonal and near/far ledger, universal capacity, false controls, and first extra structural relation needed for the target.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "state/best_proof_draft.md",
+          "all strategy files",
+          "all prior round artifacts",
+          "all sibling reports, reviews, controls, candidates, syntheses, sources, and conductor analysis"
+        ],
+        "required_controls": [
+          "half_open_wraparound_cells",
+          "exact_sinc_kernel_and_product_diagonal",
+          "row_diagonal_local_power",
+          "near_far_Fejer_partition",
+          "complex_dechirped_false_control",
+          "real_cosine_dechirped_false_control",
+          "arbitrary_real_sign_false_control",
+          "one_row_one_site_and_exact_collision_controls",
+          "literal_unknown_quarantine",
+          "downstream_scope",
+          "exponent_quarantine"
+        ],
+        "required_output": [
+          "A seven-section statement-only report satisfying the repository report contract.",
+          "An independent exact derivation, capacity calculation, false controls, and first missing structural relation.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/reports/blind_row_gram_rederivation.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "row_identity_cell_kernel_and_diagonal",
+        "requirement": "Verify the physical row identity, half-open cell kernel, product diagonal, incidence energy, row length, and local diagonal power."
+      },
+      {
+        "id": "Fejer_near_far_and_owner_connector",
+        "requirement": "Verify the near/far weighting, parity Parseval, ordinary-zero and short seams, and exact implication into the K26 endpoint only."
+      },
+      {
+        "id": "literal_selector_capacity_and_false_controls",
+        "requirement": "Verify every retained literal field, the actual source of any L-saving, all adversarial controls, restored capacities, and exponent quarantine."
+      },
+      {
+        "id": "blind_post_unmask_row_gram",
+        "requirement": "Compare the isolated finite derivation with the literal coefficient system without contaminating its blind provenance."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "e94ef6a364988e47f8a59ca3589f03cb098a04a241ec841afc2efa6e685081b4",
+    "generated_at": "2026-08-27T06:01:39Z"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

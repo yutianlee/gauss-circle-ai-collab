@@ -1,0 +1,63 @@
+{
+  "campaign_id": "m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate",
+  "round_index": 177,
+  "round_type": "m9_m2_hard_top_t1_residual_k17a_selector_aware_inverse_residue_gate",
+  "title": "K17a selector-aware hybrid inverse-residue gate",
+  "status": "complete",
+  "starting_graph_sha256": "e3927f0ace0f3d74e9e9f5116a319159e3508838c7f7bd14b086fa851cad82b8",
+  "manifest": "state/active_campaign.yml",
+  "strategy": "strategy/round177_m2_hard_top_t1_residual_k17a_selector_aware_inverse_residue_strategy.md",
+  "allocation": {
+    "analytical_algebraic_percent": 100,
+    "numerical_experimental_percent": 0
+  },
+  "tasks": [
+    {
+      "id": "literal_hybrid_inverse_residue_attack",
+      "role": "discovery",
+      "status": "completed",
+      "brief": "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/briefs/literal_hybrid_inverse_residue_attack.md",
+      "report": "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/reports/literal_hybrid_inverse_residue_attack.md"
+    },
+    {
+      "id": "blind_alias_energy_rederivation",
+      "role": "blind_rederiver",
+      "status": "completed",
+      "brief": "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/briefs/blind_alias_energy_rederivation.md",
+      "report": "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/reports/blind_alias_energy_rederivation.md"
+    },
+    {
+      "id": "hybrid_large_sieve_capacity_audit",
+      "role": "barrier_no_go",
+      "status": "completed",
+      "brief": "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/briefs/hybrid_large_sieve_capacity_audit.md",
+      "report": "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/reports/hybrid_large_sieve_capacity_audit.md"
+    }
+  ],
+  "terminal_labels": [
+    "hard_top_t1_residual_k17a_joint_inverse_residue_target",
+    "strict_k17a_low_cross_gcd_selector_aware_sector",
+    "k17a_joint_inverse_residue_alias_capacity_or_self_return_no_go"
+  ],
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "no_in_round_analytic_pivot": true,
+    "coordinator_owns_synthesis_and_state_patch": true
+  },
+  "closing_assessment": {
+    "decision": "promote_primitive_alias_conductor_reduction_and_low_conductor_sector",
+    "graph_mutation": true,
+    "terminal_label": "strict_k17a_low_cross_gcd_selector_aware_sector",
+    "main_result": "Exact primitive folding and reduced-conductor coefficient mass prove the complete q<=(log(2X))^B Fourier packet, including every physical u/(u,n)<=(log(2X))^B stratum. The exact high-q packet remains open at (177.K34)/(177.K35); positive energy and one-square-root closures self-return.",
+    "resulting_graph_sha256": "47c628b3e4b5086391fb3dbd885865ab21bd7470541099f696044bd2d3b609f7",
+    "state_patch_counts": {
+      "create": 1,
+      "update": 4,
+      "correct_rejected": 0,
+      "reject": 16,
+      "no_change": 18
+    },
+    "exponent_change": false
+  }
+}

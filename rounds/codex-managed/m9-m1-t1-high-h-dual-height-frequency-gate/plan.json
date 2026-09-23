@@ -1,0 +1,259 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 189,
+    "round_type": "m9_m1_t1_high_h_dual_height_frequency_gate",
+    "campaign_id": "m9-m1-t1-high-h-dual-height-frequency-gate",
+    "title": "Hard-M1 t=1 high-height dual-frequency projective gate",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "338060b37c19d849053078e5f6a7775c45c626a16b6f9198fafdf9bb4a62265c",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 95,
+      "numerical_experimental_maximum_percent": 5,
+      "planned_numerical_percent": 3,
+      "computation_policy": "Mathematica may check finite exact-conductor kernels, projective residue counts, bad-slope survivor controls, and divisor identities only. Computation is diagnostic_only and cannot certify an asymptotic estimate."
+    },
+    "target_obligations": [
+      "M9-M1-hard-top-high-radical-small-t-residual-estimate",
+      "M9-M1-hard-top-t1-high-h-imprimitive-lift-gcd-reduction",
+      "M9-M1-hard-top-t1-high-h-inverse-residue-conductor-reduction",
+      "M9-M1-hard-top-t1-residual-fejer-tangent-gcd-reduction",
+      "M9-M1-top-endpoint-signed-cone",
+      "M9-M1"
+    ],
+    "frozen_target": {
+      "question": "Can the exact Round-188 complement be bounded by the dual height frequency j_q(a,v)=|a v^{-1}|_q: first prove the maximal coefficient-insensitive slow-frequency sector j_q(a,v)<=floor(mq/Y)=floor(U/Y) absolutely target-safe by projective residue sparsity and the exact 1/m Fourier-lift weight, then use the complementary dyadic j-ranges and only verified variation of the actual literal endpoint coefficient to gain the full factor Y, or isolate the exact coefficient-discrepancy obstruction?",
+      "reference_formula": "Fix Q=H_B=floor((log(2X))^B), Y>Q, U=mq, k=ma, (a,q)=1. Bound Re C_(Y,Q)^sigma by O_(B,epsilon)(L^2X^epsilon), where C is exactly the Round-188 complement U=mq>4Q, q>Q, m|a|_q>Q, Qm<Y. Since q divides U divides u=gU and (u,v)=1, define j_q(a,v)=|a v^{-1}|_q. Split before positivity into 1<=j_q(a,v)<=floor(mq/Y)=floor(U/Y) and j_q(a,v)>mq/Y, preserving every h,t,orientation and literal amplitude under one outer real part.",
+      "quantities": [
+        "The carrier, both orientations, every h,v,t,a,m,q,U, selector, squarefree and coprimality deletion, profile, endpoint, phase, sign, conjugation and zero extension are exactly K185.27 and K185.30--K185.35 as inherited through K187 and K188.",
+        "At fixed (kappa,u,U), one has u,v asymptotic to L/kappa, q divides U divides u, Y<h<=2Y, O(kappa) live affine sites per oriented v-row, and coefficient mass sum over a units |c_q(a)|/m=O(log(2q)/m).",
+        "For fixed a,m,q, v maps projectively to a v^{-1} modulo q. The slow set |a v^{-1}|_q<=floor(mq/Y) uses O(mq/Y) unit residue classes; because q divides u and the literal v-interval has length O(u), it should contain O(um/Y) possible v. The resulting factor m is cancelled exactly by c_U(ma)=m^(-1)c_q(a) before divisor summation.",
+        "The slow dual-frequency sector must be summed with the exact kappa,u,m,q divisor ledger and no absorbed positive power of Y. Its exact complement remains a single signed aggregate.",
+        "A geometric height estimate is admissible only after proving the needed discrete variation or discrepancy for the actual zero-extended A_(kappa,g,h,U,v,omega)^sigma. Squarefree, coprimality, residual-selector, profile and endpoint jumps may not be suppressed or replaced by an arbitrary smooth weight.",
+        "The prime-conductor survivor K_p^circ(b)=E_p(b) has height-prefix discrepancy (p-1)/2 at the projective slope b=-2; this is a falsifier of any uniform polylogarithmic height-prefix claim, not a lower bound for the literal aggregate.",
+        "Even complete success closes only the exact original-t=1 residual through prior connectors. Every original t>=2 small-G incidence and the large-G near-resonant complement remain open."
+      ]
+    },
+    "completion_criteria": [
+      "Prove or refute the projective residue count O(um/Y) for the exact slow set, including floor(U/Y)=0, interval endpoints, units, multiplicity and both least-residue sides.",
+      "Restore the complete L,Y,kappa,u,U,m,q,a,v,t,Q,X ledger and prove the slow dual-frequency sector target-safe before any positive recombination, or identify the first exact failed inequality.",
+      "Retain an exact complementary one-outer-real-part aggregate and attempt its dyadic dual-frequency height cancellation only with a proved actual-coefficient variation or discrepancy relation.",
+      "Derive the exact centered-conductor divisor identity and prime bad-slope survivor needed to distinguish legitimate projective sparsity from false uniform height-BV or positive-completion claims.",
+      "Preserve every selector, arithmetic deletion, profile, endpoint, phase, orientation, affine site, terminal block and zero extension.",
+      "Receive a statement-only independent derivation of the residue count, power ledger, exact complement and first remaining relation.",
+      "Review projective multiplicity, coefficient normalization, divisor powers, literal variation, one-sided scope, bad-slope controls and downstream owner scope before promotion.",
+      "Apply no graph change without a mechanically valid State Patch, independent reverse/replay audit and green lifecycle validation; close under exactly one declared exit label without an in-round owner pivot."
+    ],
+    "controls": [
+      "exact_round188_Qm_lt_Y_complement",
+      "literal_K185_27_30_35_carrier",
+      "single_outer_real_part_and_both_orientations",
+      "dual_frequency_j_abs_a_v_inverse_mod_q",
+      "projective_residue_bijection_and_two_sided_count",
+      "q_divides_U_divides_u_v_interval_multiplicity",
+      "per_v_O_kappa_affine_sites",
+      "exact_cU_m_inverse_cq_normalization",
+      "slow_j_le_floor_U_over_Y_sector_and_exact_complement",
+      "full_factor_Y_before_positive_recombination",
+      "kappa_u_m_q_divisor_power_ledger",
+      "centered_exact_conductor_identity",
+      "prime_bad_slope_height_prefix_survivor",
+      "selector_squarefree_coprime_deletions",
+      "profile_endpoint_phase_zero_extension",
+      "no_invented_height_BV_or_periodicity",
+      "no_positive_large_sieve_Poisson_alias_energy",
+      "false_unsigned_and_adversarial_controls",
+      "original_t1_only_downstream_scope",
+      "no_in_round_owner_pivot",
+      "exponent_quarantine"
+    ],
+    "exit_labels": [
+      "hard_m1_t1_high_h_target",
+      "strict_dual_height_resonance_sector",
+      "dual_height_actual_coefficient_discrepancy_no_go"
+    ],
+    "tasks": [
+      {
+        "id": "dual_height_frequency_signed_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "completed",
+        "target": "Derive the exact dual frequency j_q(a,v)=|a v^{-1}|_q on the Round-188 complement. Prove the widest complete target-safe projective-resonance sector, beginning with j_q(a,v)<=floor(mq/Y)=floor(U/Y), using both projective sparsity and the exact 1/m lift weight with exact multiplicity and divisor powers. Then attack the complementary dyadic j-ranges by summation in h or a joint (h,v) transform using only a verified discrepancy norm of the actual literal endpoint aggregate; otherwise isolate the first exact missing relation and its power deficit.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round189_m1_t1_high_h_dual_height_frequency_strategy.md",
+          "proofs/kernels/m9_m1_hard_top_t1_high_h_imprimitive_lift_gcd_reduction.md",
+          "proofs/kernels/m9_m1_hard_top_t1_high_h_inverse_residue_conductor_reduction.md",
+          "proofs/kernels/m9_m1_hard_top_t1_residual_fejer_tangent_gcd_reduction.md",
+          "rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/reports/imprimitive_lift_signed_attack.md",
+          "rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reports/literal_height_fourier_attack.md"
+        ],
+        "required_controls": [
+          "exact_round188_Qm_lt_Y_complement",
+          "literal_K185_27_30_35_carrier",
+          "single_outer_real_part_and_both_orientations",
+          "dual_frequency_j_abs_a_v_inverse_mod_q",
+          "projective_residue_bijection_and_two_sided_count",
+          "q_divides_U_divides_u_v_interval_multiplicity",
+          "per_v_O_kappa_affine_sites",
+          "exact_cU_m_inverse_cq_normalization",
+          "slow_j_le_floor_U_over_Y_sector_and_exact_complement",
+          "full_factor_Y_before_positive_recombination",
+          "kappa_u_m_q_divisor_power_ledger",
+          "centered_exact_conductor_identity",
+          "selector_squarefree_coprime_deletions",
+          "profile_endpoint_phase_zero_extension",
+          "no_invented_height_BV_or_periodicity",
+          "original_t1_only_downstream_scope",
+          "exponent_quarantine"
+        ],
+        "required_output": [
+          "A seven-section analytical report satisfying the repository report contract.",
+          "An exact dual-frequency split, projective residue count, restored power ledger, proved strict sector and exact signed complement.",
+          "A complete target proof or the first rigorously isolated actual-coefficient height-discrepancy relation with quantitative deficit.",
+          "Write only the assigned report and any explicitly named diagnostic under this campaign; make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reports/dual_height_frequency_signed_attack.md"
+      },
+      {
+        "id": "height_variation_projective_hostile_audit",
+        "role": "barrier_no_go",
+        "access_mode": "selected_context",
+        "status": "completed",
+        "target": "Hostilely audit the slow-projective sector, exact residue and divisor ledger, and every attempted height cancellation on its complement. Derive the centered exact-conductor kernel, prove or repair the prime bad-slope prefix survivor, and determine whether the literal selector, squarefree/coprime, profile, endpoint and affine changes supply any admissible height variation bound or instead force an exact jump/discrepancy remainder.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round189_m1_t1_high_h_dual_height_frequency_strategy.md",
+          "proofs/kernels/m9_m1_hard_top_t1_high_h_imprimitive_lift_gcd_reduction.md",
+          "proofs/kernels/m9_m1_hard_top_t1_high_h_inverse_residue_conductor_reduction.md",
+          "proofs/kernels/m9_m1_hard_top_t1_residual_fejer_tangent_gcd_reduction.md",
+          "rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/reports/lift_power_completion_hostile_audit.md",
+          "rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reports/deletion_resonance_capacity_audit.md"
+        ],
+        "required_controls": [
+          "exact_round188_Qm_lt_Y_complement",
+          "literal_K185_27_30_35_carrier",
+          "single_outer_real_part_and_both_orientations",
+          "dual_frequency_j_abs_a_v_inverse_mod_q",
+          "projective_residue_bijection_and_two_sided_count",
+          "q_divides_U_divides_u_v_interval_multiplicity",
+          "per_v_O_kappa_affine_sites",
+          "exact_cU_m_inverse_cq_normalization",
+          "slow_j_le_floor_U_over_Y_sector_and_exact_complement",
+          "full_factor_Y_before_positive_recombination",
+          "kappa_u_m_q_divisor_power_ledger",
+          "centered_exact_conductor_identity",
+          "prime_bad_slope_height_prefix_survivor",
+          "selector_squarefree_coprime_deletions",
+          "profile_endpoint_phase_zero_extension",
+          "no_invented_height_BV_or_periodicity",
+          "no_positive_large_sieve_Poisson_alias_energy",
+          "false_unsigned_and_adversarial_controls",
+          "original_t1_only_downstream_scope",
+          "exponent_quarantine"
+        ],
+        "required_output": [
+          "A seven-section hostile analytical report satisfying the repository report contract.",
+          "A fully restored projective multiplicity and power table, exact centered-kernel derivation and bad-slope control.",
+          "A validation, repair or refutation of every height-variation step with the first literal jump relation and deficit if the target remains open.",
+          "Write only the assigned report and any explicitly named diagnostic under this campaign; make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reports/height_variation_projective_hostile_audit.md"
+      },
+      {
+        "id": "blind_dual_frequency_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "completed",
+        "target": "Independently derive the sharpest target-safe dual-frequency sector, exact complement and first remaining coefficient-discrepancy relation from the self-contained statement packet only. Test the proposed projective count and prime bad-slope control without claimant context.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "state/active_campaign.yml",
+          "all strategy files",
+          "all source cards and web-search results",
+          "all prior round reports, reviews, controls, candidates, kernels and synthesis",
+          "all Round-189 sibling reports, reviews, controls and conductor analysis"
+        ],
+        "required_controls": [
+          "exact_round188_Qm_lt_Y_complement",
+          "single_outer_real_part_and_both_orientations",
+          "dual_frequency_j_abs_a_v_inverse_mod_q",
+          "projective_residue_bijection_and_two_sided_count",
+          "q_divides_U_divides_u_v_interval_multiplicity",
+          "per_v_O_kappa_affine_sites",
+          "exact_cU_m_inverse_cq_normalization",
+          "slow_j_le_floor_U_over_Y_sector_and_exact_complement",
+          "full_factor_Y_before_positive_recombination",
+          "kappa_u_m_q_divisor_power_ledger",
+          "centered_exact_conductor_identity",
+          "prime_bad_slope_height_prefix_survivor",
+          "no_invented_height_BV_or_periodicity",
+          "false_unsigned_and_adversarial_controls",
+          "original_t1_only_downstream_scope",
+          "exponent_quarantine"
+        ],
+        "required_output": [
+          "A seven-section statement-only report satisfying the repository report contract.",
+          "An independent projective count, coefficient normalization, divisor-power ledger, exact sector/complement and first unproved signed relation.",
+          "A proof or rigorous no-go without inferring hidden regularity for the fixed literal amplitudes.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reports/blind_dual_frequency_rederivation.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "dual_frequency_normalization_and_projective_multiplicity",
+        "requirement": "Verify j_q(a,v)=|a v^{-1}|_q, the unit-class bijection, least-residue sides, q divides U divides u, v-interval counts, per-v affine multiplicity and both orientations."
+      },
+      {
+        "id": "slow_sector_divisor_and_power_scope",
+        "requirement": "Verify the O(um/Y) restricted v count, floor(U/Y)=0 case, exact cancellation by the 1/m lift weight, coefficient mass, kappa-u-m-q sums, terminal blocks and all L,Y,Q,X powers."
+      },
+      {
+        "id": "literal_height_variation_and_one_sided_scope",
+        "requirement": "Verify that every selector, squarefree/coprime mask, profile, endpoint, phase, zero extension, affine site, orientation and the single outer real part remains exact in the complement."
+      },
+      {
+        "id": "centered_kernel_bad_slope_and_false_controls",
+        "requirement": "Audit exact-conductor centering, prime bad slopes, geometric height sums, dyadic dual frequencies and prohibit uniform prefix, positive-energy, arbitrary-weight or assumed-BV shortcuts."
+      },
+      {
+        "id": "blind_post_unmask_and_owner_scope",
+        "requirement": "Reconcile the statement-only sector and obstruction with the literal carrier and quarantine t>=2, near resonance, every parent, bridge, theorem and exponent."
+      }
+    ],
+    "scheduled_review": "Round 190 is the mandatory full-proof strategy and current-primary-literature checkpoint immediately after analytic Round 189 closes.",
+    "closing_assessment": {
+      "decision": "promote_dual_frequency_projective_reduction",
+      "terminal_label": "strict_dual_height_resonance_sector",
+      "graph_mutation": true,
+      "main_result": "The projective frequency j_q(a,v)=|a inverse(v mod q)|_q proves the complete capped sector j_q<=min((q-1)/2,floor(H_Bmq/Y)) of the exact Round-188 complement target-safe at O_(B,epsilon)(L^2X^epsilon). The exact fast complement remains under one outer real part; the sufficient actual-coefficient variation scale is smaller than the available bound by Y/(H_Bm), with primitive deficit Y/H_B. Odd-prime bad slopes rule out a uniform centered-prefix theorem but give no literal lower mass. No complete high-h relation, t=1 residual, parent, bridge, theorem, or exponent changes.",
+      "resulting_graph_sha256": "15c770023b649a95596b223e15370657836e230580f0d2f31f5d30c615a98568",
+      "patch_effect": "1_create_1_update_0_correct_15_reject_22_no_change",
+      "exponent_change": false,
+      "next_round": 190
+    }
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "338060b37c19d849053078e5f6a7775c45c626a16b6f9198fafdf9bb4a62265c",
+    "generated_at": "2026-08-29T10:35:22.049689+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

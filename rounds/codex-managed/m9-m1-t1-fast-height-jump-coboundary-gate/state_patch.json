@@ -1,0 +1,260 @@
+{
+  "starting_graph_sha256": "306425e79ef6d5e25ed037b77d25a0cc180bfc3b68c4a17ef833da7be1a573fa",
+  "reversibility": {
+    "rule": "Remove the one created obligation and every rejected-claim record introduced by this patch; remove every dependencies_added and evidence_added value; restore the next_action value and last-updated metadata recorded below. This recovers the canonical starting graph.",
+    "restore_next_action": {
+      "M9-M1-hard-top-high-radical-small-t-residual-estimate": "Rounds 187-189 prove the low-conductor and edge packets, every H_Bm>=Y lift, and the projectively slow sector of the exact original-t=1 high-height residual. Round 191 must prove the exact one-sided fast complement j_q(a,v)>min((q-1)/2,floor(H_Bmq/Y)) under one outer real part. For each fixed admissible kappa,u,m,q,a and fast dyadic J-band, prove the joint literal signed height-jump coboundary estimate |J_packet|<<H_B m kappa u X^epsilon, or an exactly ledger-equivalent substitute, retaining common-range changes, births, deaths, both orientations, masks, endpoints, phases, and zero extensions in the same aggregate. The positive sum of individual total variations is only a sufficient benchmark at scale H_B m kappa u J/q and is not the fresh signed seam. Recover the full factor Y/(H_Bm) before positive norms. Even complete t=1 success leaves every t>=2 small-G incidence and the large-G near-resonant complement open."
+    },
+    "restore_metadata": {
+      "M9-M1-hard-top-high-radical-small-t-residual-estimate": {
+        "last_updated_round": 190,
+        "last_updated_at": "2026-08-29T20:38:31"
+      }
+    }
+  },
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-hard-top-t1-fast-signed-inverse-transport-reduction",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Hard-M1 t=1 fast signed-inverse transport reduction",
+        "status": "proved_internal",
+        "statement_tex": "Fix X>=2, a nonempty literal middle or lower residual hard-M1 shell L>=2, sigma in {+1,-1}, fixed B>0, Q=H_B=floor((log(2X))^B), and a nonempty dyadic Y<h<=2Y. On the exact Round-189 fast packet U=mq>4Q, q>Q, m|a|_q>Q, Qm<Y, j_q(a,v)>T_Q=min((q-1)/2,floor(Qmq/Y)), retain U|u, g=u/U, kappa,g,U odd, every literal field, and one outer real part over both orientations. Let rho_U(v) be the signed least inverse modulo U, rho_U(v)v-gamma_U(v)U=1, and put T_rho=min((U-1)/2,floor(QmU/Y)). The complete row sector 0<|rho_U(v)|<=T_rho, the live-side outer height/carrier-terminal projection on its complement, and the isolated Fejer-difference projection on persistent outer masks and transported common sites have fixed-packet size O_epsilon(Qm kappa u X^epsilon). After the exact c_(mq)(ma)=m^(-1)c_q(a) lift, coefficient mass, power-of-two projective bands, tau_3(u) divisor ledger, u asymp L/kappa, and L<<X^(1/4), their full contribution is O_(B,epsilon)(L^2X^epsilon). The inverse-sector proof is cardinality only: inversion permutes unit classes modulo U, so #v<<uT_rho/U<<Qmu/Y. Adjacent determinant fibres transport exactly by (S,w)->(S-epsilon_omega rho_U(v),w-epsilon_omega gamma_U(v)); canonical reindexing has carry nu_omega(h) in {-1,0,1}, and a retained mode has factor (-1)^nu e(epsilon_omega a rho_U(v)/q), not the full pre-Fourier parity (-1)^rho. The exact complementary complex aggregate retains |rho_U(v)|>T_rho, coprimality flips, affine births/deaths, carries, both endpoint arithmetic and literal changes, and square-root-phase changes under one outer real part. Its target remains open. Positive variation gives only Y kappa u X^epsilon against Qm kappa u X^epsilon, with deficit Y/(Qm). Bounded zero-extended height arrays have full normalized-Abel capacity; this is a mechanism control, not literal lower mass. This node proves only the strict sector and exact reduction, not the complete fast packet, complete t=1 residual, small-t owner, any parent, bridge, theorem, or exponent.",
+        "dependencies": [
+          "M9-M1-hard-top-t1-high-h-dual-frequency-projective-reduction",
+          "Divisor-bound-elementary"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "proofs/kernels/m9_m1_hard_top_t1_fast_signed_inverse_transport_reduction.md",
+            "rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/candidates/formalized_hard_m1_t1_fast_signed_inverse_transport_reduction.md",
+            "rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reports/literal_height_jump_coboundary_attack.md",
+            "rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reports/joint_hv_phase_jump_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reports/blind_fast_jump_rederivation.md",
+            "rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reviews/conductor_round191_report_reconciliation.md",
+            "rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reviews/blind_signed_inverse_transport_sector_review.md",
+            "rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reviews/signed_inverse_normalization_transport_power_postrepair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reviews/literal_jump_parity_projector_owner_scope_postrepair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reviews/blind_post_unmask_signed_inverse_sector_postrepair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reviews/final_kernel_candidate_consistency_post_hygiene_verification.md",
+            "rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reviews/final_kernel_power_literal_owner_scope_post_hygiene_verification.md",
+            "rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reviews/final_kernel_formalization_provenance_post_hygiene_verification.md",
+            "rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reviews/conductor_round191_adjudication.md",
+            "rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reviews/signed_inverse_normalization_transport_power_seam_review.md",
+            "rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reviews/literal_jump_parity_projector_owner_scope_seam_review.md",
+            "rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reviews/final_kernel_formalization_provenance_hygiene_review.md",
+            "rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/controls/conductor_round191_wolfram_height_jump_check.md",
+            "rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/controls/height_jump_operator_check.wls",
+            "rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/controls/conductor_round191_signed_inverse_transport_check.md",
+            "rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/controls/signed_inverse_transport_check.wls",
+            "rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/controls/conductor_round191_tex_provenance_hygiene_repairs.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Prove the exact rho-large remainder of the Round-189 fast packet. Uniformly for every fixed admissible kappa,u,m,q,a and power-of-two fast J-band, retain j_q(a,v)>min((q-1)/2,floor(H_Bmq/Y)), |rho_(mq)(v)|>min(((mq)-1)/2,floor(H_B m (mq)/Y)), both orientations, outer coprimality flips, affine births/deaths, canonical carries, both endpoint masks and coefficients, every literal cell/crossing field, square-root phases, and zero extensions under one outer real part after the exact terminal and Fejer projections are removed. Prove the complete signed remainder at fixed-packet scale H_B m kappa u X^epsilon, equivalently gain Y/(H_Bm) before positive norms. Do not use the full pre-Fourier parity modewise, assume transport invariance, separately absolutize orientations, or cite bounded-array capacity as literal mass."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-hard-top-high-radical-small-t-residual-estimate",
+        "dependencies_added": [
+          "M9-M1-hard-top-t1-fast-signed-inverse-transport-reduction"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "proofs/kernels/m9_m1_hard_top_t1_fast_signed_inverse_transport_reduction.md",
+            "rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/candidates/formalized_hard_m1_t1_fast_signed_inverse_transport_reduction.md",
+            "rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reports/literal_height_jump_coboundary_attack.md",
+            "rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reports/joint_hv_phase_jump_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reports/blind_fast_jump_rederivation.md",
+            "rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reviews/conductor_round191_report_reconciliation.md",
+            "rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reviews/blind_signed_inverse_transport_sector_review.md",
+            "rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reviews/signed_inverse_normalization_transport_power_postrepair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reviews/literal_jump_parity_projector_owner_scope_postrepair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reviews/blind_post_unmask_signed_inverse_sector_postrepair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reviews/final_kernel_candidate_consistency_post_hygiene_verification.md",
+            "rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reviews/final_kernel_power_literal_owner_scope_post_hygiene_verification.md",
+            "rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reviews/final_kernel_formalization_provenance_post_hygiene_verification.md",
+            "rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/controls/conductor_round191_wolfram_height_jump_check.md",
+            "rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/controls/conductor_round191_signed_inverse_transport_check.md",
+            "rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/controls/conductor_round191_tex_provenance_hygiene_repairs.md",
+            "rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reviews/conductor_round191_adjudication.md",
+            "rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Rounds 187-191 prove the low Fourier packets, every H_Bm>=Y lift, the projectively slow sector, the signed-inverse-small sector of the fast packet, and the exact outer-terminal and isolated Fejer projections. Prove the remaining one-sided fast packet with |rho_(mq)(v)|>min(((mq)-1)/2,floor(H_B m (mq)/Y)) under one outer real part, retaining outer coprimality flips, affine births/deaths, carries, both endpoint changes, every literal cell/crossing field, phases, and zero extensions. At fixed admissible kappa,u,m,q,a,J, gain the exact factor Y/(H_Bm) and prove the complete signed remainder at scale H_B m kappa u X^epsilon before positive norms. Even complete t=1 success leaves every t>=2 small-G incidence and the large-G near-resonant complement open."
+      }
+    ],
+    "correct_rejected": [],
+    "reject": [
+      {
+        "id": "Round191-Abel-height-jump-is-cancellation",
+        "reason": "Endpoint-exact Abel summation returns the normalized jump packet exactly to the original height sum and supplies no saving by itself."
+      },
+      {
+        "id": "Round191-signed-inverse-transport-preserves-literal-support",
+        "reason": "The determinant-fibre transport is exact on the integer fibre, but positivity, coprimality, squarefree, selector, profile, endpoint, and phase fields can change and create literal births and deaths."
+      },
+      {
+        "id": "Round191-full-anchor-parity-applies-modewise",
+        "reason": "The full pre-Fourier parity changes by (-1)^rho, while a retained mode has the carry-dependent factor (-1)^nu e(epsilon a rho/q)."
+      },
+      {
+        "id": "Round191-carry-signs-cancel-between-orientations",
+        "reason": "On common unit heights the two orientations have the same carry parity, and their literal endpoints and phases are not an involutive pair."
+      },
+      {
+        "id": "Round191-small-inverse-sector-is-a-jump-correlation-gain",
+        "reason": "Its proof is cardinality-only inverse-class sparsity; any prescribed set of the same number of unit inverse classes has the same positive bound."
+      },
+      {
+        "id": "Round191-small-inverse-sector-proves-full-fast-packet",
+        "reason": "The exact rho-large complement remains open after only the terminal and isolated Fejer projections are removed."
+      },
+      {
+        "id": "Round191-saturated-inverse-cut-leaves-unit-rows",
+        "reason": "At T_rho=(U-1)/2 every unit inverse class is included, so the row complement is empty for that lift."
+      },
+      {
+        "id": "Round191-residue-class-plus-one-causes-power-loss",
+        "reason": "Because U divides u, each inverse class occurs O(u/U+1)=O(u/U) times on the O(u)-length literal support."
+      },
+      {
+        "id": "Round191-lift-does-not-cancel-inverse-sector-m",
+        "reason": "The exact m^(-1)c_q(a) lift cancels the m in the fixed Qm kappa u bound before positive outer summation."
+      },
+      {
+        "id": "Round191-terminal-and-Fejer-projections-break-one-outer-operation",
+        "reason": "They are exact joint complex linear projections over both orientations before a modulus; their complement is defined by complex subtraction."
+      },
+      {
+        "id": "Round191-positive-variation-closes-rho-large-remainder",
+        "reason": "Positive variation gives Y kappa u rather than Qm kappa u, with exact deficit Y/(Qm)."
+      },
+      {
+        "id": "Round191-completion-large-sieve-or-alias-energy-gains-height",
+        "reason": "Coefficient-uniform positive or separable transforms retain the bounded-height-array capacity and do not prove the actual literal signed correlation."
+      },
+      {
+        "id": "Round191-bounded-array-capacity-is-literal-lower-mass",
+        "reason": "The extremizing bounded height arrays need not arise from the fixed endpoint coefficients and supply no lower bound or disproof for the literal packet."
+      },
+      {
+        "id": "Round191-strict-sector-proves-complete-t1",
+        "reason": "The exact rho-large fast remainder remains open before the accepted original-t=1 connectors can close."
+      },
+      {
+        "id": "Round191-strict-sector-improves-global-exponent",
+        "reason": "Every complete M1 and M2 route, endpoint uniformity, M9, both bridges, and the quarter theorem remain incomplete."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1-hard-top-t1-high-h-dual-frequency-projective-reduction",
+        "reason": "The accepted Round-189 fast packet is used unchanged as the exact parent reduction."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-high-h-imprimitive-lift-gcd-reduction",
+        "reason": "The accepted Round-188 lift reduction remains unchanged."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-high-h-inverse-residue-conductor-reduction",
+        "reason": "The accepted Round-187 Fourier reduction remains unchanged."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-residual-fejer-tangent-gcd-reduction",
+        "reason": "The accepted finite tangent-gcd reduction remains unchanged."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-comparable-factor-exchange-sector",
+        "reason": "The accepted Round-184 exchange sector and exact residual remain unchanged."
+      },
+      {
+        "id": "M9-M1-hard-top-small-t-nonresonant-primitive-ray-sector",
+        "reason": "The accepted Round-183 primitive-ray sector remains unchanged."
+      },
+      {
+        "id": "M9-M1-top-endpoint-signed-cone",
+        "reason": "The rho-large t=1 fast remainder, every t>=2 small-G incidence, and the near-resonant complement remain open."
+      },
+      {
+        "id": "M9-M1-direct-smooth-residual-blockwise-estimate",
+        "reason": "Round 191 treats only a strict transformed hard-residual packet; the independent smooth parent remains open."
+      },
+      {
+        "id": "M9-M1-physical-one-count-assembly",
+        "reason": "Conditional assembly still requires the complete hard and smooth children."
+      },
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "reason": "The alternative GAR route is not treated."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "The complete hard small-t owner and independent smooth direct-M1 parent remain open."
+      },
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "reason": "No complete hard-TOP M2 channel is proved or changed."
+      },
+      {
+        "id": "M9-M2-smooth-balanced-quarter-packet-estimate",
+        "reason": "No balanced M2 estimate is proved."
+      },
+      {
+        "id": "M9-M2-smooth-unbalanced-three-quarter-estimate",
+        "reason": "No unbalanced M2 estimate is proved."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Complete hard TOP, BAL, and UNBAL remain open."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "A subordinate hard-M1 residual packet proves no parent-level real-X endpoint theorem."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain incomplete."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The standard bridge still requires complete M9."
+      },
+      {
+        "id": "GC-global-M1-alternative-bridge",
+        "reason": "The alternative bridge still requires complete GAR or total active M1 and all of M9-M2."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The strongest theorem proved by the internal architecture remains exponent one third."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "The accepted external benchmark remains 0.3144831759740614... ."
+      },
+      {
+        "id": "GC-target",
+        "reason": "Both lawful quarter routes retain multiple open analytic parents and connectors."
+      },
+      {
+        "id": "Divisor-bound-elementary",
+        "reason": "The elementary divisor estimate is used unchanged as a direct dependency."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 6,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 191 proves a strict signed-inverse sector and two exact target-safe jump projections by inverse-class sparsity, literal fibre algebra, and the exact lift/divisor ledger. It produces an exact rho-large complex remainder and identifies the retained-mode carry and Y/(Qm) deficit, while scoped capacity controls rule out coefficient-uniform positive closures. The complete fast packet, original t=1 residual, every parent, bridge, theorem, and exponent remain open."
+  }
+}

@@ -1,0 +1,240 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 170,
+    "round_type": "full_proof_strategy_current_literature_review",
+    "campaign_id": "full-proof-round167-169-strategy-literature-review",
+    "title": "Full-proof frontier and current-primary-literature reassessment after the t=1 self-return",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "111809875d911d279ae22bee2ce44f0dba97130eeedcdca0dc65f53f163283ae",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "planned_numerical_percent": 0,
+      "literature_policy": "Mandatory current-primary-literature review as of 2026-08-26. Use official journal, author, or arXiv sources; audit exact theorem hypotheses, versions, quantifiers, coefficient classes, absolute-value placement, endpoints, spectra, and restored powers."
+    },
+    "target_obligations": [
+      "GC-target",
+      "Conditional-bridge",
+      "GC-global-M1-alternative-bridge",
+      "M9",
+      "M9-endpoint-uniformity",
+      "M9-M1",
+      "M9-M1-top-endpoint-signed-cone",
+      "M9-M1-direct-smooth-residual-blockwise-estimate",
+      "M9-M1-global-angular-radial-estimate",
+      "M9-M2",
+      "M9-M2-physical-one-count-assembly",
+      "M9-M2-top-endpoint-signed-cone",
+      "M9-M2-top-endpoint-density-discrepancy-energy",
+      "M9-M2-smooth-balanced-quarter-packet-estimate",
+      "M9-M2-smooth-unbalanced-three-quarter-estimate",
+      "M9-M2-hard-top-t1-residual-fejer-parity-gcd-scale-reduction",
+      "M9-M2-hard-top-t1-mellin-euler-polylog-and-signed-moment-reduction",
+      "M9-M2-hard-top-t1-joint-functional-equation-double-poisson-self-return",
+      "GC-partial-one-third",
+      "GC-external-Li-Yang-theta-star"
+    ],
+    "frozen_target": {
+      "question": "Given the authoritative graph after Round 169, what is the highest-leverage exact next inequality for a full proof after comparing the signed nonzero-frequency full t=1 aggregate, K17a, K26, remaining hard-TOP channels, BAL, UNBAL, both direct M1 parents, GAR, endpoint assembly, and current primary literature?",
+      "reference_formula": "Reconstruct both quarter-proof trees and compare the Round-169 aggregate I_eta=E_0+(i/2)sum_(Q,R)^phys g(Q,R)/(QR)sum_(k odd)chi_4(k)sum_(ell!=0)B_tilde(k/(4Q),ell/R), with E_0<<L^2/J, against K17a, K26, and every mandatory parent. Produce an exact dependency, power, mechanism, and source-applicability matrix and select precisely one Round-171 analytic objective. No open estimate or source analogy is promoted.",
+      "quantities": [
+        "The standard quarter route requires both direct M1 parents, all three M2 parents, endpoint uniformity, M9, and the accepted conditional bridge.",
+        "The alternative route requires the complete GAR theorem and all of M9-M2; it does not prove blockwise M9-M1.",
+        "Round 169 proves a coefficientwise double-Poisson self-return with E_0<<L^2/J, not the signed nonzero-frequency estimate.",
+        "The full t=1 aggregate has target L^(3/2)X^epsilon; K17a has target L^2X^epsilon and positive capacity L^3X^epsilon; K26 has target L^3X^epsilon.",
+        "Any one t=1 residual or scalar theorem leaves other hard-TOP channels and collars before the hard-TOP parent.",
+        "BAL, UNBAL, the two direct M1 parents, GAR, and endpoint assembly are independent owners with different literal kernels.",
+        "The internally proved exponent is 1/3; the audited external Li-Yang benchmark is 0.3144831759740614...; the target is 1/4.",
+        "A literature match must preserve the exact quantifier, coefficient class, signed aggregate, levels, shifts, spectra, support, hard endpoints, real centre, and every completion cost."
+      ]
+    },
+    "completion_criteria": [
+      "Reconstruct the exact standard and alternative full-proof dependency trees from the authoritative graph, including every open mandatory leaf and logical OR.",
+      "Compare the Round-169 signed aggregate, K17a, K26, remaining hard-TOP channels, BAL, UNBAL, both direct M1 parents, GAR, endpoint uniformity, and any lawful sub-one-third route with exact target, capacity, missing-power, and owner ledgers.",
+      "For each candidate, name the first genuinely new sign-sensitive or noninvertible mechanism needed and every accepted obstruction it must bypass.",
+      "Search current primary literature and record exact citations, versions, theorem statements, hypotheses, quantifiers, absolute-value placement, parameter maps, boundary and spectral terms, and first failed project hypothesis.",
+      "Determine whether any current primary source changes the certified unrestricted pointwise exponent or directly proves an exact project interface; otherwise record a dated scoped no-match.",
+      "Select exactly one Round-171 analytic objective with literal statement, promotion gate, false controls, stop rule, and downstream scope.",
+      "Produce a conductor full-proof strategy synthesis without changing proof statuses unless a separately validated proof or source audit licenses it.",
+      "Close under exactly one label: strategy_frontier_retained, strategy_frontier_reselected, or strategy_source_update_only."
+    ],
+    "controls": [
+      "authoritative_dependency_tree",
+      "standard_vs_GAR_logical_or",
+      "Round169_self_return_scope",
+      "full_t1_vs_K17a_vs_K26",
+      "residual_vs_full_hard_TOP_scope",
+      "BAL_UNBAL_independence",
+      "direct_M1_vs_GAR_scope",
+      "endpoint_assembly_scope",
+      "power_margin_and_global_exponent_connector",
+      "rejected_mechanism_bypass",
+      "primary_source_exact_hypotheses",
+      "current_unrestricted_pointwise_exponent",
+      "average_vs_pointwise_quantifier",
+      "coefficient_sign_and_absolute_value_placement",
+      "spectral_main_continuous_holomorphic_Maass_exceptional_terms",
+      "hard_endpoint_cardinal_and_real_centre",
+      "single_Round171_objective",
+      "statement_only_independence",
+      "no_status_or_exponent_overpromotion",
+      "no_in_round_analytic_pivot"
+    ],
+    "tasks": [
+      {
+        "id": "full_graph_frontier_reconstruction",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "active",
+        "target": "Reconstruct both complete accepted full-proof dependency trees and compare every live Round-171 frontier by exact owner leverage, target and positive capacity, missing power, accepted obstruction, genuinely new mechanism, remaining downstream obligations, and possible exponent effect. Recommend exactly one analytic objective.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "state/best_proof_draft.md",
+          "strategy/round170_full_proof_strategy_current_literature_review.md",
+          "strategy/round166_full_proof_strategy_current_literature_review.md",
+          "rounds/codex-managed/full-proof-round164-166-strategy-literature-review/synthesis.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-residual-oscillatory-determinant-interface-gate/synthesis.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-pre-mobius-mellin-euler-product-gate/synthesis.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-joint-functional-equation-spectral-gate/synthesis.md",
+          "proofs/kernels/m9_m2_hard_top_t1_residual_fejer_parity_gcd_scale_reduction.md",
+          "proofs/kernels/m9_m2_hard_top_t1_joint_functional_equation_double_poisson_self_return.md"
+        ],
+        "required_controls": [
+          "authoritative_dependency_tree",
+          "standard_vs_GAR_logical_or",
+          "Round169_self_return_scope",
+          "full_t1_vs_K17a_vs_K26",
+          "residual_vs_full_hard_TOP_scope",
+          "BAL_UNBAL_independence",
+          "direct_M1_vs_GAR_scope",
+          "endpoint_assembly_scope",
+          "power_margin_and_global_exponent_connector",
+          "rejected_mechanism_bypass",
+          "single_Round171_objective",
+          "no_status_or_exponent_overpromotion",
+          "no_in_round_analytic_pivot"
+        ],
+        "required_output": [
+          "A seven-section analytic strategy report satisfying the repository report contract.",
+          "An exact full-proof dependency, target, capacity, mechanism, leverage, and obstruction matrix.",
+          "One recommended Round-171 inequality with promotion gate, false controls, stop rule, and downstream scope.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/full-proof-round167-169-strategy-literature-review/reports/full_graph_frontier_reconstruction.md"
+      },
+      {
+        "id": "current_primary_literature_reassessment",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "status": "active",
+        "target": "Search primary literature current through 2026-08-26 for the unrestricted pointwise Gauss-circle exponent and exact or near-exact theorems relevant to the surviving signed product-collar, determinant, Fejer, shifted-divisor, Kloosterman, Kuznetsov, spectral-reciprocity, large-sieve, hybrid-moment, BAL, UNBAL, M1, and GAR interfaces. Audit literal applicability and the first failed hypothesis.",
+        "context_files": [
+          "protocol.md",
+          "state/active_campaign.yml",
+          "strategy/round170_full_proof_strategy_current_literature_review.md",
+          "rounds/codex-managed/full-proof-round164-166-strategy-literature-review/reports/current_primary_literature_audit.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-joint-functional-equation-spectral-gate/reports/signed_spectral_reciprocity_source_hostile_audit.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-joint-functional-equation-spectral-gate/synthesis.md",
+          "sources/li_yang_2023.md",
+          "sources/huxley_2003.md",
+          "sources/bourgain_watt.md",
+          "sources/tao_trudgian_yang_2025.md",
+          "sources/xiao_2026.md"
+        ],
+        "required_controls": [
+          "primary_source_exact_hypotheses",
+          "current_unrestricted_pointwise_exponent",
+          "average_vs_pointwise_quantifier",
+          "coefficient_sign_and_absolute_value_placement",
+          "spectral_main_continuous_holomorphic_Maass_exceptional_terms",
+          "hard_endpoint_cardinal_and_real_centre",
+          "Round169_self_return_scope",
+          "full_t1_vs_K17a_vs_K26",
+          "no_status_or_exponent_overpromotion"
+        ],
+        "required_output": [
+          "A seven-section primary-source report satisfying the repository report contract.",
+          "Exact links, citations, versions, theorem numbers, hypotheses, parameter maps, restored powers, and first failed project hypothesis for each candidate.",
+          "A dated conclusion on the certified unrestricted pointwise exponent and whether any source directly changes the graph.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/full-proof-round167-169-strategy-literature-review/reports/current_primary_literature_reassessment.md"
+      },
+      {
+        "id": "blind_round171_frontier_selection",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "active",
+        "target": "From the statement-only packet, independently rank every exact candidate frontier, expose hidden connector and power losses, and recommend one Round-171 objective without inheriting the conductor strategy or source audit.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/full-proof-round167-169-strategy-literature-review/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "state/active_campaign.yml",
+          "all strategy files",
+          "all Round-170 nonblind artifacts",
+          "all Round-170 sibling reports",
+          "all conductor candidates, reviews, synthesis, and source audits",
+          "all source cards and web-search results"
+        ],
+        "required_controls": [
+          "standard_vs_GAR_logical_or",
+          "Round169_self_return_scope",
+          "full_t1_vs_K17a_vs_K26",
+          "residual_vs_full_hard_TOP_scope",
+          "BAL_UNBAL_independence",
+          "direct_M1_vs_GAR_scope",
+          "endpoint_assembly_scope",
+          "power_margin_and_global_exponent_connector",
+          "single_Round171_objective",
+          "statement_only_independence",
+          "no_status_or_exponent_overpromotion"
+        ],
+        "required_output": [
+          "A seven-section statement-only strategy report satisfying the repository report contract.",
+          "An independent target, capacity, owner-leverage, mechanism, and hidden-connector ranking.",
+          "One recommended Round-171 objective and an explicit reason each alternative ranks lower.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/full-proof-round167-169-strategy-literature-review/reports/blind_round171_frontier_selection.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "dependency_and_logical_scope",
+        "requirement": "Verify both complete graph trees, their logical OR, every mandatory leaf, and that no local result is advertised as a parent or global theorem."
+      },
+      {
+        "id": "power_mechanism_and_owner_leverage",
+        "requirement": "Verify every target size, positive capacity, missing power, coefficient mechanism, owner scope, remaining connectors, and possible exponent effect."
+      },
+      {
+        "id": "source_hypotheses_currency_and_exponent",
+        "requirement": "Verify primary-source dates, versions, theorem statements, quantifiers, coefficient classes, ranges, endpoint and spectral costs, and the current unrestricted pointwise benchmark."
+      },
+      {
+        "id": "Round171_selection",
+        "requirement": "Verify exactly one frozen next inequality with a genuinely new mechanism, literal promotion gate, false controls, stop rule, and no proof-state overpromotion."
+      }
+    ],
+    "closing_assessment": null
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "111809875d911d279ae22bee2ce44f0dba97130eeedcdca0dc65f53f163283ae",
+    "generated_at": "2026-08-26T10:17:14.571736+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

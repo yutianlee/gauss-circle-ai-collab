@@ -1,0 +1,301 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 196,
+    "round_type": "m9_m1_t1_p2_on_shell_anchor_carrier_commutator_gate",
+    "campaign_id": "m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate",
+    "title": "Hard-M1 t=1 P2 on-shell anchor-carrier commutator gate",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "f1f6bd2c9ff6370febf37b2c6f50c023cd142470922ffe9ce713e853f5efcce2",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 99,
+      "numerical_experimental_maximum_percent": 1,
+      "planned_numerical_percent": 0,
+      "computation_policy": "Python or Mathematica may check only bounded on-shell congruences, parity, carrier residues, multiplier normalization, and finite commutator counterexamples. Every computation is diagnostic_only and cannot certify an asymptotic estimate."
+    },
+    "target_obligations": [
+      "M9-M1-hard-top-high-radical-small-t-residual-estimate",
+      "M9-M1-hard-top-t1-rho-large-gcd-scaled-close-sector",
+      "M9-M1-hard-top-t1-rho-large-farey-covector-reduction",
+      "M9-M1-hard-top-t1-fast-signed-inverse-transport-reduction",
+      "M9-M1-hard-top-t1-high-h-dual-frequency-projective-reduction",
+      "M9-M1-hard-top-t1-high-h-imprimitive-lift-gcd-reduction",
+      "M9-M1-hard-top-t1-high-h-inverse-residue-conductor-reduction",
+      "M9-M1-hard-top-t1-residual-fejer-tangent-gcd-reduction",
+      "M9-M1-top-endpoint-signed-cone",
+      "M9-M1"
+    ],
+    "frozen_target": {
+      "question": "On the exact unresolved Round-195 physical P2 packet region, does the determinant on-shell congruence merge parity and the inverse-residue anchor into a primitive common x-carrier whose genuine step-two difference cancels the conductor singularity before positive norms, or does the literal commutator retain the complete unresolved capacity and yield a rigorous route-scoped self-return?",
+      "reference_formula": "Keep kappa < D_L and min(Y,D_L) > Q times mfrak times kappa, Q=H_B. In both orientations x=kappa U+2S equals d'/g in the plus chart and d/g in the minus chart. On shell, (-1)^S e(epsilon_omega a inverse_v_q h/q)=chi_4(kappa U) chi_4(x)e(a inverse_2_q x/q). Its step x to x+2 multiplier is z=-e(a/q), while c_q(a)=2/[q(1+e(-a/q))] obeys (1-z)c_q(a)=2e(a/q)/q. Reconstruct the literal operator and prove the full fixed-packet bound |R_core,fix^sigma(P2 W)| << Q times mfrak times kappa times u times X^epsilon, a target-safe strict sector with exact complement, or the first exact self-return.",
+      "quantities": [
+        "The inherited positive estimate is u times {kappa+min(Y,D_L)} times X^epsilon, while the target is Q times mfrak times kappa times u times X^epsilon; the unresolved multiplier min(Y,D_L)/(Q times mfrak times kappa) is strictly larger than one.",
+        "The physical P2 mask is imposed before Fourier expansion and height differencing; T=0 and every simultaneous strict T>=1 Farey condition remain.",
+        "Both primitive orientations, both frequency signs, the complete anchor aggregate, actual endpoint products, residual selectors, squarefree/coprimality masks, unequal translations, carries, Fejer weights, square-root phases, cells, crossings, births/deaths, physical-mask commutators, conjugations, and zero extensions remain under one outer real part.",
+        "The identity (1-z)c_q(a)=2e(a/q)/q may be used only on an actual step-two difference B(x)-B(x-2) arising from the literal recombined event sequence.",
+        "Every remainder created by shifting x by two must be priced: endpoints, physical-mask changes, divisibility support, squarefree/coprimality flips, carries, affine births/deaths, phase and Fejer variation, and zero extension.",
+        "Primitive carrier completion alone, consecutive-support replacement, arbitrary bounded-array replacement, separate-orientation norms, deleted T branches, or a proper unpriced submask do not prove the target.",
+        "Even full success leaves P1, all other original-t incidences, the hard-M1 owner until all complements close, smooth M1, GAR, every M2 parent, endpoint uniformity, M9, both bridges, the quarter theorem, and all exponents separate."
+      ]
+    },
+    "completion_criteria": [
+      "Reconstruct the complete physical-to-core operator on the exact Round-195 open P2 packet region before spectral manipulation.",
+      "Prove the two orientation on-shell x identities, inverse-residue congruences, parity character identity, primitive modulus 4q carrier, step-two multiplier, and conductor coefficient normalization with every sign and representative explicit.",
+      "Reindex the literal recombined event aggregate by x=kappa U+2S and determine whether a genuine Delta_2 B(x)=B(x)-B(x-2) occurs before any positive norm.",
+      "Open and price every literal commutator term from masks, endpoints, divisibility, squarefree/coprimality conditions, translations, carries, births/deaths, Fejer factors, square-root phases, cells, crossings, conjugations, and zero extensions.",
+      "Prove the complete fixed-packet and outer P2 remainder targets, prove a nonempty target-safe strict sector with one exact complement, or isolate a rigorous on-shell carrier/commutator self-return no-go.",
+      "Restore all Q, mfrak, kappa, u, Y, D_L, L, and X powers and the exact-conductor Fourier coefficient mass; absorb no positive power into X^epsilon.",
+      "Test the unsigned, character-erased, phase-conjugated, arbitrary-array, consecutive-support, separate-orientation, low-carrier, mask-deleted, T-branch-deleted, and proper-submask shadows.",
+      "Receive a fresh statement-only derivation of the on-shell phase, primitive carrier, multiplier identity, necessary literal difference, and first exact obstruction.",
+      "Use no more than one percent bounded symbolic or numerical diagnostics and archive any code, output, parameter range, pass rule, and theorem limitation.",
+      "Review algebra and Fourier normalization, literal difference and commutator, packet-to-outer powers, false controls, blind post-unmask consistency, owner scope, and exponent quarantine before promotion.",
+      "Apply no graph change without a mechanically valid State Patch, independent reverse/replay and protected-scope audits, green lifecycle validation, and one declared terminal label. Do not pivot in-round to P1, another owner, or an exponent."
+    ],
+    "controls": [
+      "exact_round195_open_P2_packet_region",
+      "physical_mask_before_spectral_operations",
+      "both_T_branches",
+      "both_orientations_and_frequency_signs",
+      "spectral_lift_gcd_vs_kappa",
+      "on_shell_x_coordinate_identity",
+      "determinant_anchor_congruence",
+      "parity_character_identity",
+      "primitive_4q_carrier",
+      "exact_conductor_coefficient_normalization",
+      "step_two_multiplier_denominator_cancellation",
+      "genuine_Delta2_before_identity",
+      "actual_endpoint_event_vectors",
+      "physical_mask_commutator",
+      "squarefree_coprimality_flips",
+      "carry_birth_death_zero_extension",
+      "Fejer_square_root_phase",
+      "one_outer_real_part",
+      "complete_packet_power_ledger",
+      "unsigned_character_erased_phase_conjugated_controls",
+      "no_consecutive_or_arbitrary_array_replacement",
+      "no_separate_orientation_norm",
+      "no_T_branch_or_submask_escape",
+      "diagnostic_only",
+      "original_t1_only_downstream_scope",
+      "no_in_round_owner_pivot",
+      "exponent_quarantine"
+    ],
+    "exit_labels": [
+      "hard_m1_t1_p2_remainder_target",
+      "strict_p2_on_shell_carrier_commutator_sector",
+      "on_shell_carrier_denominator_self_return_no_go"
+    ],
+    "tasks": [
+      {
+        "id": "literal_on_shell_carrier_commutator_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "completed",
+        "target": "Reconstruct the complete exact P2 remainder operator, prove the common on-shell x-carrier identities, and determine whether the literal recombined event sequence contains an exact step-two difference whose conductor cancellation survives every commutator. Prove the whole target, a genuinely target-safe strict sector with exact complement, or the first rigorous self-return; keep both orientations and signs under one outer real part.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "state/failure_ledger.md",
+          "strategy/round196_m1_t1_p2_on_shell_anchor_carrier_commutator_strategy.md",
+          "proofs/kernels/m9_m1_hard_top_t1_p2_absolute_capacity_sectors.md",
+          "proofs/kernels/m9_m1_hard_top_t1_high_h_inverse_residue_conductor_reduction.md",
+          "proofs/kernels/m9_m1_hard_top_t1_high_h_dual_frequency_projective_reduction.md",
+          "proofs/kernels/m9_m1_hard_top_t1_fast_signed_inverse_transport_reduction.md",
+          "proofs/kernels/m9_m1_hard_top_t1_rho_large_farey_covector_reduction.md",
+          "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reports/literal_p2_determinant_fibre_vector_attack.md",
+          "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/conductor_round195_report_reconciliation.md",
+          "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/synthesis.md",
+          "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/conductor_round195_adjudication.md"
+        ],
+        "required_controls": [
+          "exact_round195_open_P2_packet_region",
+          "physical_mask_before_spectral_operations",
+          "both_T_branches",
+          "both_orientations_and_frequency_signs",
+          "spectral_lift_gcd_vs_kappa",
+          "on_shell_x_coordinate_identity",
+          "determinant_anchor_congruence",
+          "parity_character_identity",
+          "primitive_4q_carrier",
+          "exact_conductor_coefficient_normalization",
+          "step_two_multiplier_denominator_cancellation",
+          "genuine_Delta2_before_identity",
+          "actual_endpoint_event_vectors",
+          "physical_mask_commutator",
+          "squarefree_coprimality_flips",
+          "carry_birth_death_zero_extension",
+          "Fejer_square_root_phase",
+          "one_outer_real_part",
+          "complete_packet_power_ledger",
+          "no_consecutive_or_arbitrary_array_replacement",
+          "no_separate_orientation_norm",
+          "no_T_branch_or_submask_escape",
+          "original_t1_only_downstream_scope",
+          "exponent_quarantine"
+        ],
+        "required_output": [
+          "A seven-section analytical report satisfying the repository report contract.",
+          "An exact full-target theorem, strict-sector-plus-complement theorem, or first rigorous literal Delta_2/commutator self-return with all coefficients and powers exposed.",
+          "Write only the assigned report and any explicitly named bounded diagnostic under this campaign; make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reports/literal_on_shell_carrier_commutator_attack.md"
+      },
+      {
+        "id": "carrier_collision_endpoint_hostile_audit",
+        "role": "barrier_no_go",
+        "access_mode": "selected_context",
+        "status": "completed",
+        "target": "Hostilely audit the proposed on-shell carrier cancellation. Re-derive every sign and normalization, then test the literal endpoint, divisibility, mask, carry, birth/death, squarefree/coprimality, Fejer, square-root, cell, crossing, and zero-extension commutators. Identify the first invalid equality or prove the strongest target-safe repair without converting capacity into literal lower mass.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "state/failure_ledger.md",
+          "strategy/round196_m1_t1_p2_on_shell_anchor_carrier_commutator_strategy.md",
+          "proofs/kernels/m9_m1_hard_top_t1_p2_absolute_capacity_sectors.md",
+          "proofs/kernels/m9_m1_hard_top_t1_high_h_inverse_residue_conductor_reduction.md",
+          "proofs/kernels/m9_m1_hard_top_t1_high_h_dual_frequency_projective_reduction.md",
+          "proofs/kernels/m9_m1_hard_top_t1_fast_signed_inverse_transport_reduction.md",
+          "proofs/kernels/m9_m1_hard_top_t1_rho_large_farey_covector_reduction.md",
+          "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reports/p2_gram_diagonal_collision_hostile_audit.md",
+          "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/literal_gram_nogo_owner_scope_seam_review.md",
+          "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/conductor_round195_report_reconciliation.md",
+          "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/synthesis.md"
+        ],
+        "required_controls": [
+          "exact_round195_open_P2_packet_region",
+          "physical_mask_before_spectral_operations",
+          "both_T_branches",
+          "both_orientations_and_frequency_signs",
+          "spectral_lift_gcd_vs_kappa",
+          "on_shell_x_coordinate_identity",
+          "determinant_anchor_congruence",
+          "parity_character_identity",
+          "primitive_4q_carrier",
+          "exact_conductor_coefficient_normalization",
+          "step_two_multiplier_denominator_cancellation",
+          "genuine_Delta2_before_identity",
+          "actual_endpoint_event_vectors",
+          "physical_mask_commutator",
+          "squarefree_coprimality_flips",
+          "carry_birth_death_zero_extension",
+          "Fejer_square_root_phase",
+          "one_outer_real_part",
+          "complete_packet_power_ledger",
+          "unsigned_character_erased_phase_conjugated_controls",
+          "no_consecutive_or_arbitrary_array_replacement",
+          "no_separate_orientation_norm",
+          "no_T_branch_or_submask_escape",
+          "diagnostic_only",
+          "original_t1_only_downstream_scope",
+          "exponent_quarantine"
+        ],
+        "required_output": [
+          "A seven-section hostile analytical report satisfying the repository report contract.",
+          "An independent exact audit or repair/no-go naming the first invalid equality or inequality, every surviving commutator, each false control, and all restored powers.",
+          "Write only the assigned report and any explicitly named bounded diagnostic under this campaign; make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reports/carrier_collision_endpoint_hostile_audit.md"
+      },
+      {
+        "id": "blind_on_shell_phase_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "completed",
+        "target": "From the isolated statement only, independently derive the two on-shell phase reductions, primitive carrier, step-two multiplier, exact conductor cancellation identity, and the literal difference/commutator structure genuinely required for the fixed-packet target. Prove a full result, strict-sector repair, or the first exact self-return.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "state/active_campaign.yml",
+          "all strategy files",
+          "all source cards and web-search results",
+          "all prior round reports, reviews, controls, candidates, kernels and synthesis",
+          "all Round-196 sibling reports, reviews, controls and conductor analysis"
+        ],
+        "required_controls": [
+          "exact_round195_open_P2_packet_region",
+          "physical_mask_before_spectral_operations",
+          "both_T_branches",
+          "both_orientations_and_frequency_signs",
+          "on_shell_x_coordinate_identity",
+          "determinant_anchor_congruence",
+          "parity_character_identity",
+          "primitive_4q_carrier",
+          "exact_conductor_coefficient_normalization",
+          "step_two_multiplier_denominator_cancellation",
+          "genuine_Delta2_before_identity",
+          "actual_endpoint_event_vectors",
+          "physical_mask_commutator",
+          "squarefree_coprimality_flips",
+          "carry_birth_death_zero_extension",
+          "Fejer_square_root_phase",
+          "one_outer_real_part",
+          "complete_packet_power_ledger",
+          "unsigned_character_erased_phase_conjugated_controls",
+          "no_consecutive_or_arbitrary_array_replacement",
+          "no_separate_orientation_norm",
+          "no_T_branch_or_submask_escape",
+          "diagnostic_only",
+          "original_t1_only_downstream_scope",
+          "exponent_quarantine"
+        ],
+        "required_output": [
+          "A seven-section statement-only report satisfying the repository report contract.",
+          "An independent exact derivation or repair/no-go with all signs, coefficient normalization, literal difference requirements, false controls, and powers explicit.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reports/blind_on_shell_phase_rederivation.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "on_shell_algebra_parity_and_Fourier_normalization",
+        "requirement": "Verify both orientation determinant identities, x definitions, inverse-residue signs, parity character, primitive modulus, step-two multiplier, and exact c_q(a) normalization."
+      },
+      {
+        "id": "literal_x_difference_operator_and_commutator",
+        "requirement": "Verify that any Delta_2 factor exists in the literal recombined operator before positive norms and price every endpoint, mask, support, carry, birth/death, phase, Fejer, and zero-extension commutator."
+      },
+      {
+        "id": "fixed_packet_to_outer_power_ledger",
+        "requirement": "Verify recovery of min(Y,D_L)/(Q times mfrak times kappa), exact-conductor coefficient mass, lift/projective/divisor/shell sums, and the accepted outer L^2 scale."
+      },
+      {
+        "id": "hostile_false_controls",
+        "requirement": "Verify the unsigned, character-erased, phase-conjugated, arbitrary-array, consecutive-support, separate-orientation, mask-deleted, T-deleted, and proper-submask shadows."
+      },
+      {
+        "id": "blind_post_unmask_owner_and_exponent_scope",
+        "requirement": "Reconcile the statement-only derivation with the literal operator and quarantine P1, other original-t ranges, all parents, endpoint, bridges, theorem, and exponents."
+      }
+    ],
+    "scheduled_review": "Round 198 is the mandatory full-proof strategy and current-primary-literature checkpoint after analytic Rounds 195--197.",
+    "closing_assessment": {
+      "decision": "record_on_shell_carrier_normalization_self_return_no_go",
+      "graph_mutation": true,
+      "terminal_label": "on_shell_carrier_denominator_self_return_no_go",
+      "main_result": "The complete physical P2 target remains open. Round 196 proves that the proposed primitive modulus-4q carrier is a parity-restored shadow rather than one literal exact-conductor atom; the literal E_U factor, live/dead wrap boundary, beta/gamma coordinate split, T=0 unit-inverse exception, and genuine event geometry return the method to the unchanged positive capacity. No new safe sector, owner, parent, endpoint, bridge, theorem, or exponent is proved.",
+      "resulting_graph_sha256": "b9b95784b097b3e30bed95f418ae14e57bf5f03a4a52975beeefa8db85b7f8ae",
+      "patch_effect": "0_create_2_update_0_correct_20_reject_27_no_change",
+      "exponent_change": false,
+      "next_round": 197
+    }
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "f1f6bd2c9ff6370febf37b2c6f50c023cd142470922ffe9ce713e853f5efcce2",
+    "generated_at": "2026-08-30T02:53:36.086188+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

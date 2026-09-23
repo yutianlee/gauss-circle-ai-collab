@@ -1,0 +1,160 @@
+{
+  "starting_graph_sha256": "63fa05e3a4d1493bc37bdd956453a4d3eefbb9dca6fadcbf8b7a68e32ade36b5",
+  "reversibility": {
+    "rule": "Remove every rejected-claim record introduced by this patch and every inconclusive evidence_added value; restore the selected node's next_action and last-updated metadata below. This recovers the canonical starting graph.",
+    "restore_next_action": {
+      "M9-M1-hard-top-high-radical-small-t-residual-estimate": "Round 199 is frozen to the complete exact open-packet P2 remainder: kappa<D_L and min(Y,D_L)>H_B \\mathfrak m kappa, intersected with P_boundary(lit) dotcup P_sf dotcup P_gf. Prove the outer O(L^2 X^epsilon) bound for their joint literal physical operator before componentwise positive norms. The aligned literal sharp face is the mandatory first stress test. Close with a mechanism-scoped no-go and no analytic pivot if the proposed coefficient-preserving route self-returns there; a theorem exit must also price the sign-failure and changed-gcd pieces, every live 2<=kappa<D_L packet, both orientations and T branches, all endpoints, phases, carries, selectors, commutators, births/deaths and zero extensions under one outer real part. Success closes only the remaining P2 sector. P1, the rest of original t=1, every original t>=2 small-G incidence, the large-G near-resonant complement, smooth M1, GAR, every M2 parent, endpoint uniformity, M9 and both bridges remain open."
+    },
+    "restore_metadata": {
+      "M9-M1-hard-top-high-radical-small-t-residual-estimate": {
+        "last_updated_round": 198,
+        "last_updated_at": "2026-08-31T01:31:33"
+      }
+    }
+  },
+  "proof_obligations": {
+    "create": [],
+    "update": [
+      {
+        "id": "M9-M1-hard-top-high-radical-small-t-residual-estimate",
+        "evidence_added": {
+          "inconclusive": [
+            "proofs/kernels/m9_m1_hard_top_t1_p2_cross_gcd_cellular_boundary_self_return.md",
+            "rounds/codex-managed/m9-m1-t1-p2-cross-gcd-cellular-boundary-gate/candidates/formalized_hard_m1_t1_p2_cross_gcd_cellular_boundary_self_return.md",
+            "rounds/codex-managed/m9-m1-t1-p2-cross-gcd-cellular-boundary-gate/reports/literal_cross_gcd_cellular_boundary_attack.md",
+            "rounds/codex-managed/m9-m1-t1-p2-cross-gcd-cellular-boundary-gate/reports/aligned_face_twisted_boundary_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-t1-p2-cross-gcd-cellular-boundary-gate/reports/blind_joint_failure_complex_rederivation.md",
+            "rounds/codex-managed/m9-m1-t1-p2-cross-gcd-cellular-boundary-gate/controls/conductor_round199_cross_gcd_factorization_analysis.md",
+            "rounds/codex-managed/m9-m1-t1-p2-cross-gcd-cellular-boundary-gate/controls/conductor_round199_exact_identity_and_review_control.md",
+            "rounds/codex-managed/m9-m1-t1-p2-cross-gcd-cellular-boundary-gate/controls/conductor_round199_launch_validation.md",
+            "rounds/codex-managed/m9-m1-t1-p2-cross-gcd-cellular-boundary-gate/reviews/conductor_round199_report_reconciliation.md",
+            "rounds/codex-managed/m9-m1-t1-p2-cross-gcd-cellular-boundary-gate/reviews/cross_gcd_allocation_incidence_seam_review.md",
+            "rounds/codex-managed/m9-m1-t1-p2-cross-gcd-cellular-boundary-gate/reviews/cross_gcd_allocation_incidence_postrepair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-p2-cross-gcd-cellular-boundary-gate/reviews/cross_gcd_power_operator_owner_scope_review.md",
+            "rounds/codex-managed/m9-m1-t1-p2-cross-gcd-cellular-boundary-gate/reviews/cross_gcd_power_operator_owner_scope_postrepair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-p2-cross-gcd-cellular-boundary-gate/reviews/blind_post_unmask_cross_gcd_consistency_review.md",
+            "rounds/codex-managed/m9-m1-t1-p2-cross-gcd-cellular-boundary-gate/reviews/blind_post_unmask_cross_gcd_postrepair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-p2-cross-gcd-cellular-boundary-gate/reviews/conductor_round199_adjudication.md",
+            "rounds/codex-managed/m9-m1-t1-p2-cross-gcd-cellular-boundary-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Rounds 187-197 accepted Fourier, lift, projective, signed-inverse, Farey, double-close, P2 absolute-capacity, and P2 common-cell sectors remain valid. Round 199 rules out only the specified cross-gcd cellular completion: the lawful P2 triangle has a nonzero constant-endpoint incidence, its unique fourth product corner is a P1 allocation, and partial-block moves generate physical-mask commutators. The exact P2 boundary/sign/gcd complement remains open. Do not retry assigned-sign, partial-block, deleted-corner, or fixed-packet variants of this mechanism. The next analytic round should either prove a genuinely non-cellular coefficient-sensitive joint outer estimate for the remaining P2 complement or freeze the disjoint P1 owner. Complete original t=1, every original t>=2 small-G incidence, the large-G near-resonant complement, smooth M1, GAR, every M2 parent, endpoint uniformity, M9 and both bridges remain open.",
+        "last_updated_round": 199
+      }
+    ],
+    "correct_rejected": [],
+    "reject": [
+      {
+        "id": "Round199-cross-gcd-factorization-proves-three-piece-target",
+        "reason": "The factorization organizes the physical allocations but supplies no cancellation estimate for the complete P2 complement."
+      },
+      {
+        "id": "Round199-lawful-P2-triangle-incidence-cancels",
+        "reason": "For one odd cross-gcd block the three actual character incidences are 1, t, and tp; the constant-endpoint triangle sum is nonzero in general."
+      },
+      {
+        "id": "Round199-flat-character-holonomy-implies-zero-boundary",
+        "reason": "Holonomy +1 only shows path consistency; it does not make the three-edge augmented incidence vanish."
+      },
+      {
+        "id": "Round199-simultaneous-swap-has-negative-incidence",
+        "reason": "The actual simultaneous lower-and-upper swap has character quotient +1."
+      },
+      {
+        "id": "Round199-missing-G00-corner-is-deletable",
+        "reason": "The unique fourth product corner carries a structural coefficient and cannot be deleted from the exact endpoint identity."
+      },
+      {
+        "id": "Round199-missing-G00-corner-is-zero-extension",
+        "reason": "The fourth corner is a live physical allocation rather than an absent point outside the canonical total domain."
+      },
+      {
+        "id": "Round199-changed-gcd-fourth-corner-is-P2-safe",
+        "reason": "The fourth corner has gcd Aq and, on the audited aligned shell, satisfies the authoritative lower-first-failure P1 condition."
+      },
+      {
+        "id": "Round199-P1-requires-both-lower-and-upper-far",
+        "reason": "The authoritative Round-193 definition of P1 is the lower-first-failure condition alone; an upper-far condition is not part of P1."
+      },
+      {
+        "id": "Round199-partial-cross-gcd-block-moves-preserve-P2",
+        "reason": "Their recomputed lower and upper defect masks differ; the resulting terms are physical-mask commutators, not one P2 cellular boundary."
+      },
+      {
+        "id": "Round199-every-diagonal-allocation-image-is-Pgf",
+        "reason": "Membership depends on the recomputed physical gcd and defect masks; diagonal-looking factor moves do not uniformly land in P_gf."
+      },
+      {
+        "id": "Round199-cap-open-projector-is-a-physical-orbit-mask",
+        "reason": "The cap/open operation is a later linear spectral operation and cannot repair a failed physical allocation identity."
+      },
+      {
+        "id": "Round199-fixed-kappa-orientation-cancellation",
+        "reason": "The lawful triangle transports kappa differently in the two orientations, so it is not an internal cancellation within one fixed packet."
+      },
+      {
+        "id": "Round199-aligned-face-automatically-gains-DL-over-L",
+        "reason": "The exact ratio identity permits every non-tie close pair to cross the sharp face and gives no such small factor."
+      },
+      {
+        "id": "Round199-aligned-face-has-a-DL-squared-collar",
+        "reason": "The sharp face retains ordinary D_L L^2 capacity; no second D_L saving follows from the exact allocation algebra."
+      },
+      {
+        "id": "Round199-sign-failure-edge-is-an-unmasked-difference",
+        "reason": "The sign channel remains coupled to changing physical masks and cannot be replaced by a free coefficient difference."
+      },
+      {
+        "id": "Round199-capacity-proves-positive-lower-mass",
+        "reason": "Capacity is only a mechanism upper envelope; no nonemptiness, density, nonvanishing, or lower bound is proved."
+      },
+      {
+        "id": "Round199-cellular-no-go-disproves-the-three-piece-theorem",
+        "reason": "The no-go is restricted to the specified cross-gcd cellular mechanism and leaves other coefficient-sensitive estimates possible."
+      },
+      {
+        "id": "Round199-no-go-closes-P2-t1-M1-M9-or-quarter-target",
+        "reason": "The P2 complement itself remains open, as do P1, other t ranges, smooth M1, all M2 parents, endpoint uniformity, M9, both bridges, and the quarter target."
+      }
+    ],
+    "no_change": [
+      {"id": "M9-M1-hard-top-t1-rho-large-P2-absolute-capacity-sectors", "reason": "The accepted Round-195 packet sectors remain unchanged."},
+      {"id": "M9-M1-hard-top-t1-rho-large-P2-common-cell-allocation-commutator-sector", "reason": "The accepted Round-197 common-cell sector remains unchanged."},
+      {"id": "M9-M1-hard-top-t1-rho-large-gcd-scaled-close-sector", "reason": "The accepted Round-193 double-close sector remains unchanged."},
+      {"id": "M9-M1-hard-top-t1-rho-large-farey-covector-reduction", "reason": "The accepted Round-192 core remains unchanged."},
+      {"id": "M9-M1-hard-top-t1-fast-signed-inverse-transport-reduction", "reason": "The accepted Round-191 reduction remains unchanged."},
+      {"id": "M9-M1-hard-top-t1-high-h-dual-frequency-projective-reduction", "reason": "The accepted Round-189 reduction remains unchanged."},
+      {"id": "M9-M1-hard-top-t1-high-h-imprimitive-lift-gcd-reduction", "reason": "The accepted Round-188 reduction remains unchanged."},
+      {"id": "M9-M1-hard-top-t1-high-h-inverse-residue-conductor-reduction", "reason": "The accepted Round-187 reduction remains unchanged."},
+      {"id": "M9-M1-hard-top-t1-residual-fejer-tangent-gcd-reduction", "reason": "The accepted physical correlation reduction remains unchanged."},
+      {"id": "M9-M1-hard-top-t1-comparable-factor-exchange-sector", "reason": "The accepted Round-184 strict sector remains unchanged."},
+      {"id": "M9-M1-hard-top-small-t-nonresonant-primitive-ray-sector", "reason": "The accepted Round-183 strict sector remains unchanged."},
+      {"id": "M9-M1-top-endpoint-signed-cone", "reason": "The full hard signed cone remains open."},
+      {"id": "M9-M1-direct-smooth-residual-blockwise-estimate", "reason": "The independent smooth direct-M1 parent remains open."},
+      {"id": "M9-M1-physical-one-count-assembly", "reason": "The proved connector still requires its complete hard and smooth children."},
+      {"id": "M9-M1-global-lower-radial-signed-estimate", "reason": "The GAR lower-radial owner receives no analytic estimate."},
+      {"id": "M9-M1-global-angular-radial-estimate", "reason": "GAR remains open."},
+      {"id": "M9-M1", "reason": "Neither direct nor alternative M1 completion is proved."},
+      {"id": "M9-M2-top-endpoint-signed-cone", "reason": "Complete hard TOP remains open."},
+      {"id": "M9-M2-top-endpoint-density-discrepancy-energy", "reason": "No complete hard-TOP density theorem is proved or imported."},
+      {"id": "M9-M2-smooth-balanced-quarter-packet-estimate", "reason": "Critical and remaining-label BAL scopes remain open."},
+      {"id": "M9-M2-smooth-unbalanced-three-quarter-estimate", "reason": "No literal signed vector theorem is proved or imported."},
+      {"id": "M9-M2", "reason": "Hard TOP, BAL, and UNBAL remain open."},
+      {"id": "M9-endpoint-uniformity", "reason": "Round 199 proves no endpoint theorem."},
+      {"id": "M9", "reason": "M1, M2, and endpoint inputs remain incomplete."},
+      {"id": "Conditional-bridge", "reason": "The standard bridge remains conditional on M9."},
+      {"id": "GC-global-M1-alternative-bridge", "reason": "The alternative bridge remains conditional on GAR and M9-M2."},
+      {"id": "GC-partial-one-third", "reason": "The strongest theorem proved by the internal architecture remains exponent one third."},
+      {"id": "GC-external-Li-Yang-theta-star", "reason": "The accepted external benchmark remains 0.3144831759740614... ."},
+      {"id": "GC-target", "reason": "Both lawful quarter routes retain multiple open parents and connectors."},
+      {"id": "Divisor-bound-elementary", "reason": "The elementary divisor estimate remains inherited unchanged."}
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 4,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 199 proves an exact mechanism-scoped no-go for the frozen cross-gcd cellular completion: the lawful triangle has nonzero augmented incidence, its fourth product corner belongs to the disjoint P1 owner, and partial-block alternatives create mask commutators. It proves no new analytic bound and leaves the complete P2 complement and every downstream parent open, but it removes a substantial family of false cellular variants with three independent post-repair PASS reviews."
+  }
+}

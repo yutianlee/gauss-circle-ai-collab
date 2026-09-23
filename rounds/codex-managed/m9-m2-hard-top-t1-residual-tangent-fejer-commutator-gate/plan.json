@@ -1,0 +1,48 @@
+{
+  "campaign_id": "m9-m2-hard-top-t1-residual-tangent-fejer-commutator-gate",
+  "round_index": 173,
+  "round_type": "m9_m2_hard_top_t1_residual_tangent_fejer_commutator_gate",
+  "title": "Hard-TOP t=1 residual tangent-character Fejer-commutator gate",
+  "status": "complete",
+  "starting_graph_sha256": "70592c104e0c149485b4fac3fe6582020767631938fe9036f204ae616f188b7f",
+  "manifest": "state/active_campaign.yml",
+  "strategy": "strategy/round173_m2_hard_top_t1_residual_tangent_fejer_commutator_strategy.md",
+  "allocation": {
+    "analytical_algebraic_percent": 100,
+    "numerical_experimental_percent": 0
+  },
+  "tasks": [
+    {
+      "id": "literal_tangent_fejer_commutator_attack",
+      "role": "discovery",
+      "status": "completed",
+      "brief": "rounds/codex-managed/m9-m2-hard-top-t1-residual-tangent-fejer-commutator-gate/briefs/literal_tangent_fejer_commutator_attack.md",
+      "report": "rounds/codex-managed/m9-m2-hard-top-t1-residual-tangent-fejer-commutator-gate/reports/literal_tangent_fejer_commutator_attack.md"
+    },
+    {
+      "id": "blind_tangent_fejer_commutator_rederivation",
+      "role": "blind_rederiver",
+      "status": "completed",
+      "brief": "rounds/codex-managed/m9-m2-hard-top-t1-residual-tangent-fejer-commutator-gate/briefs/blind_tangent_fejer_commutator_rederivation.md",
+      "report": "rounds/codex-managed/m9-m2-hard-top-t1-residual-tangent-fejer-commutator-gate/reports/blind_tangent_fejer_commutator_rederivation.md"
+    },
+    {
+      "id": "tangent_fejer_actual_symbol_hostile_audit",
+      "role": "barrier_no_go",
+      "status": "completed",
+      "brief": "rounds/codex-managed/m9-m2-hard-top-t1-residual-tangent-fejer-commutator-gate/briefs/tangent_fejer_actual_symbol_hostile_audit.md",
+      "report": "rounds/codex-managed/m9-m2-hard-top-t1-residual-tangent-fejer-commutator-gate/reports/tangent_fejer_actual_symbol_hostile_audit.md"
+    }
+  ],
+  "terminal_labels": [
+    "hard_top_t1_residual_tangent_fejer_target",
+    "strict_tangent_fejer_actual_symbol_sector",
+    "tangent_fejer_actual_symbol_commutator_no_go"
+  ],
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true,
+    "no_in_round_pivot": true
+  }
+}

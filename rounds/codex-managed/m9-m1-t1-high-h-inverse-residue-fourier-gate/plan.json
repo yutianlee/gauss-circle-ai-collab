@@ -1,0 +1,250 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 187,
+    "round_type": "m9_m1_t1_high_h_inverse_residue_fourier_gate",
+    "campaign_id": "m9-m1-t1-high-h-inverse-residue-fourier-gate",
+    "title": "Hard-M1 t=1 high-height inverse-residue Fourier gate",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "d1ace6e362a41f1a08fc09c8e44ce628758040fa91ae39c152113c275f76352a",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 90,
+      "numerical_experimental_maximum_percent": 10,
+      "planned_numerical_percent": 5,
+      "computation_policy": "Exact computation may test finite inverse-residue identities, parity, multiplicity, and adversarial deletion patterns only. It is diagnostic_only and cannot certify an asymptotic estimate."
+    },
+    "target_obligations": [
+      "M9-M1-hard-top-high-radical-small-t-residual-estimate",
+      "M9-M1-hard-top-t1-residual-fejer-tangent-gcd-reduction",
+      "M9-M1-top-endpoint-signed-cone",
+      "M9-M1",
+      "M9"
+    ],
+    "frozen_target": {
+      "question": "Can the exact one-sided dyadic high-height tangent-gcd aggregate be bounded by L^2 X^epsilon through a genuinely joint inverse-residue Fourier mechanism, can a strict target-safe zero/low-frequency or nonresonant sector be proved with an exact centered complement, or does literal arithmetic deletion force an exact capacity or self-return obstruction?",
+      "reference_formula": "For every fixed B>0, every real X>=2, every literal middle or lower residual hard-M1 shell L>=2, sigma in {+1,-1}, and every nonempty dyadic Y<h<=2Y with Y>H_B=floor((log(2X))^B), prove the one-sided inequality Re sum_(omega in {+,-}) sum_(f=(kappa,g,h,U,v) satisfying K185.27, Y<h<=2Y) (-1)^(S_(0,omega)) sum_(t in I_(f,omega)) (-1)^t B_(f,omega)^sigma(t) <<_(B,epsilon) L^2 X^epsilon, with all quantities exactly K185.27 and K185.30--K185.35.",
+      "quantities": [
+        "There is one outer real part over both orientations, every primitive row, every affine index, and every literal endpoint field; the theorem is one-sided and no lower bound for a negative dyadic real part is required.",
+        "The invariant domain is kappa,g,h,U,v>0, kappa,g,U odd, (gU,v)=1, (U,h)=1, and 0<2 kappa g h<R_0=ceil(L), with the separate U=1 anchor convention retained.",
+        "For U>1 the exact anchor is E_U(+bar(v)h) in the plus orientation and E_U(-bar(v)h) in the minus orientation, where E_U(a)=(-1)^[a]_U and E_U(a)=U^(-1) sum_(k mod U) hat(E)_U(k)e(ka/U), hat(E)_U(k)=2/(1+e(-k/U)).",
+        "The fresh mechanism must retain the centered nonzero Fourier modes jointly over h, v, t, both orientations, selectors, deletions, endpoints, and phases before any positive norm. Splitting off a target-safe zero mode is not itself a proof of the complement.",
+        "Positive capacity is O(Y L^2 X^epsilon) and the target is O(L^2 X^epsilon), so the full factor Y must be recovered before any positive row, orientation, frequency, gcd, selector, or endpoint recombination.",
+        "A strict sector must carry an exact complementary signed aggregate. Even complete success closes only the exact original-t=1 residual after accepted connectors; every original t>=2 small-G incidence and the large-G near-resonant complement remain open."
+      ]
+    },
+    "completion_criteria": [
+      "Derive the exact inverse-residue anchor and Fourier normalization for U>1 and reconcile the separate U=1 convention without changing the canonical multiplicity-one carrier.",
+      "Price the zero mode, every proposed low-frequency or nonresonant packet, and its exact centered complement at restored L, Y, kappa, g, U, and X powers.",
+      "Attempt the complete one-sided target with the literal selectors, squarefree and coprimality deletions, profiles, floors, stars, hard samples, crossings, endpoints, phases, and zero extensions retained.",
+      "Identify precisely how the mechanism uses the actual Vaaler/chi_4 coefficient and why it does not prove the unsigned or adversarial analogue.",
+      "Receive an independent statement-only derivation of the high-height carrier, its target/capacity gap, and either a proof kernel or the first unavoidable obstruction.",
+      "Review normalization, multiplicity, literal deletion, power bookkeeping, one-sided real-part placement, and downstream owner scope before any promotion.",
+      "Apply no graph change without a mechanically valid State Patch, independent reverse/replay audit, and green lifecycle validation.",
+      "Close under exactly one declared exit label and do not pivot in-round to another owner."
+    ],
+    "controls": [
+      "exact_one_sided_outer_real_part",
+      "literal_K185_27_30_35_carrier",
+      "both_orientations_and_sigma",
+      "primitive_domain_and_multiplicity_one",
+      "U1_anchor_convention",
+      "selector_squarefree_coprime_deletions",
+      "profile_endpoint_phase_zero_extension",
+      "affine_parity_and_terminal_dyadic_blocks",
+      "inverse_residue_fourier_normalization",
+      "height_zero_mode_power",
+      "centered_nonzero_modes_remain_joint",
+      "full_factor_Y_before_positive_recombination",
+      "no_bare_alternation_or_rowwise_Abel",
+      "no_positive_Poisson_alias_energy_or_conductor_self_return",
+      "false_unsigned_and_adversarial_controls",
+      "original_t1_only_downstream_scope",
+      "no_in_round_owner_pivot",
+      "exponent_quarantine"
+    ],
+    "exit_labels": [
+      "hard_m1_t1_high_h_target",
+      "strict_high_h_inverse_residue_fourier_sector",
+      "high_h_inverse_residue_deletion_capacity_or_self_return_no_go"
+    ],
+    "tasks": [
+      {
+        "id": "literal_height_fourier_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "completed",
+        "target": "Attack the complete one-sided dyadic high-h target by the exact U-anchor Fourier expansion. Prove the full estimate, prove the widest target-safe zero/low-frequency or genuinely nonresonant signed sector with its exact complement, or isolate the first literal nonzero-mode estimate that remains and quantify its full power deficit.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round187_m1_t1_high_h_inverse_residue_fourier_strategy.md",
+          "proofs/kernels/m9_m1_hard_top_t1_residual_fejer_tangent_gcd_reduction.md",
+          "proofs/kernels/m9_m1_hard_top_t1_comparable_factor_exchange_sector_and_residual_fejer_reduction.md",
+          "rounds/codex-managed/m9-m1-hard-top-t1-residual-fejer-tangent-gcd-gate/reports/literal_residual_fejer_tangent_gcd_attack.md",
+          "rounds/codex-managed/m9-m1-hard-top-t1-residual-fejer-tangent-gcd-gate/reports/tangent_gcd_transfer_capacity_audit.md",
+          "rounds/codex-managed/m9-m1-hard-top-t1-residual-fejer-tangent-gcd-gate/synthesis.md",
+          "rounds/codex-managed/full-proof-round183-185-strategy-literature-review/reviews/conductor_round186_adjudication.md"
+        ],
+        "required_controls": [
+          "exact_one_sided_outer_real_part",
+          "literal_K185_27_30_35_carrier",
+          "both_orientations_and_sigma",
+          "primitive_domain_and_multiplicity_one",
+          "U1_anchor_convention",
+          "selector_squarefree_coprime_deletions",
+          "profile_endpoint_phase_zero_extension",
+          "inverse_residue_fourier_normalization",
+          "height_zero_mode_power",
+          "centered_nonzero_modes_remain_joint",
+          "full_factor_Y_before_positive_recombination",
+          "no_positive_Poisson_alias_energy_or_conductor_self_return",
+          "false_unsigned_and_adversarial_controls",
+          "original_t1_only_downstream_scope",
+          "exponent_quarantine"
+        ],
+        "required_output": [
+          "A seven-section analytical report satisfying the repository report contract.",
+          "Exact formulas for the U=1, zero-mode, and centered nonzero-mode pieces, with restored dyadic power ledgers and an exact complement.",
+          "A complete target proof, a strict target-safe sector, or a rigorous scoped no-go with the first unproved literal estimate stated exactly.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reports/literal_height_fourier_attack.md"
+      },
+      {
+        "id": "deletion_resonance_capacity_audit",
+        "role": "barrier_no_go",
+        "access_mode": "selected_context",
+        "status": "completed",
+        "target": "Hostilely audit the inverse-residue Fourier route. Check exact U=1 and zero-mode capacity, centered frequency/conductor recombination, orientation antisymmetry, arithmetic deletion and endpoint instability, and whether any claimed factor Y is lost or self-returns before the one outer real part. Produce a countermodel only as a mechanism control, never as literal lower mass.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round187_m1_t1_high_h_inverse_residue_fourier_strategy.md",
+          "proofs/kernels/m9_m1_hard_top_t1_residual_fejer_tangent_gcd_reduction.md",
+          "rounds/codex-managed/m9-m1-hard-top-t1-residual-fejer-tangent-gcd-gate/reports/tangent_gcd_transfer_capacity_audit.md",
+          "rounds/codex-managed/m9-m1-hard-top-t1-residual-fejer-tangent-gcd-gate/reports/blind_residual_fejer_tangent_rederivation.md",
+          "rounds/codex-managed/m9-m1-hard-top-t1-residual-fejer-tangent-gcd-gate/controls/conductor_round185_exact_fibre_deletion_control.md",
+          "rounds/codex-managed/full-proof-round183-185-strategy-literature-review/reviews/conductor_round186_adjudication.md"
+        ],
+        "required_controls": [
+          "exact_one_sided_outer_real_part",
+          "literal_K185_27_30_35_carrier",
+          "both_orientations_and_sigma",
+          "primitive_domain_and_multiplicity_one",
+          "U1_anchor_convention",
+          "selector_squarefree_coprime_deletions",
+          "profile_endpoint_phase_zero_extension",
+          "affine_parity_and_terminal_dyadic_blocks",
+          "inverse_residue_fourier_normalization",
+          "height_zero_mode_power",
+          "centered_nonzero_modes_remain_joint",
+          "full_factor_Y_before_positive_recombination",
+          "no_bare_alternation_or_rowwise_Abel",
+          "no_positive_Poisson_alias_energy_or_conductor_self_return",
+          "false_unsigned_and_adversarial_controls",
+          "original_t1_only_downstream_scope",
+          "exponent_quarantine"
+        ],
+        "required_output": [
+          "A seven-section hostile analytical report satisfying the repository report contract.",
+          "An exact power table for U=1, the Fourier zero mode, low/nonzero modes, resonant modes, and the centered remainder.",
+          "A rigorous validation or refutation of every proposed cancellation placement, with bounded exact computation archived only if useful.",
+          "Write only the assigned report and any explicitly named diagnostic files under this campaign; make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reports/deletion_resonance_capacity_audit.md"
+      },
+      {
+        "id": "blind_high_h_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "completed",
+        "target": "Independently rederive the exact high-h primitive carrier and seek a one-sided L^2 bound, a strict complete signed sector, or the narrowest unavoidable obstruction, using only the self-contained statement packet.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "state/active_campaign.yml",
+          "all strategy files",
+          "all source cards and web-search results",
+          "all prior round reports, reviews, controls, candidates, kernels, and synthesis",
+          "all Round-187 sibling reports, reviews, controls, and conductor analysis"
+        ],
+        "required_controls": [
+          "exact_one_sided_outer_real_part",
+          "literal_K185_27_30_35_carrier",
+          "both_orientations_and_sigma",
+          "primitive_domain_and_multiplicity_one",
+          "U1_anchor_convention",
+          "selector_squarefree_coprime_deletions",
+          "profile_endpoint_phase_zero_extension",
+          "affine_parity_and_terminal_dyadic_blocks",
+          "inverse_residue_fourier_normalization",
+          "height_zero_mode_power",
+          "centered_nonzero_modes_remain_joint",
+          "full_factor_Y_before_positive_recombination",
+          "no_bare_alternation_or_rowwise_Abel",
+          "no_positive_Poisson_alias_energy_or_conductor_self_return",
+          "false_unsigned_and_adversarial_controls",
+          "original_t1_only_downstream_scope",
+          "exponent_quarantine"
+        ],
+        "required_output": [
+          "A seven-section statement-only report satisfying the repository report contract.",
+          "An independent normalization, target/capacity derivation, exact safe pieces and complement, and first unproved relation.",
+          "A proof, strict sector, or rigorous no-go; do not infer hidden regularity for the literal weights.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reports/blind_high_h_rederivation.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "inverse_residue_normalization_and_multiplicity",
+        "requirement": "Verify the U>1 Fourier coefficients, U=1 convention, both anchor signs, primitive domain, affine index sets, and multiplicity one."
+      },
+      {
+        "id": "literal_deletion_and_endpoint_scope",
+        "requirement": "Verify that selectors, squarefree and coprimality masks, all profiles, floors, stars, hard values, crossings, endpoints, signs, phases, and zero extensions remain literal."
+      },
+      {
+        "id": "power_and_one_sided_real_part",
+        "requirement": "Verify every L, Y, kappa, g, U, and X power, the full factor-Y requirement, and the single one-sided outer real part."
+      },
+      {
+        "id": "mechanism_and_false_controls",
+        "requirement": "Verify that no gain comes from bare alternation, positive frequency/orientation recombination, alias energy, conductor centering, or an arbitrary-coefficient theorem."
+      },
+      {
+        "id": "blind_post_unmask_and_downstream_scope",
+        "requirement": "Reconcile the statement-only result with the literal kernel and quarantine every t>=2, near-resonant, parent, bridge, theorem, and exponent claim."
+      }
+    ],
+    "closing_assessment": {
+      "decision": "promote_high_h_inverse_residue_conductor_reduction",
+      "terminal_label": "strict_high_h_inverse_residue_fourier_sector",
+      "graph_mutation": true,
+      "main_result": "The exact inverse-residue Fourier decomposition proves a strict target-safe packet containing all U=1 rows, every exact conductor q<=H_B, all remaining modes with U<=4H_B, and all remaining ordinary edge modes 0<|k|_U<=H_B. The exact joint complement U>4H_B, q_U(k)>H_B, |k|_U>H_B retains positive capacity YL^2X^epsilon and its one-sided L^2X^epsilon estimate remains open. No complete high-h relation, t=1 residual, parent, bridge, theorem, or exponent changes.",
+      "resulting_graph_sha256": "be0eca9ca93c3534cca958d70b5541d03d28ff993ebfbcbca6be3cd393fae5ff",
+      "patch_effect": "1_create_1_update_0_correct_14_reject_20_no_change",
+      "exponent_change": false,
+      "next_round": 188
+    }
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "d1ace6e362a41f1a08fc09c8e44ce628758040fa91ae39c152113c275f76352a",
+    "generated_at": "2026-08-28T02:05:35.763384+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

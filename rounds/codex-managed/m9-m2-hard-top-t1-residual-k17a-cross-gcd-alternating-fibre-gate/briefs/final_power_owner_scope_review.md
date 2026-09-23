@@ -1,0 +1,3 @@
+# Round 176 final power and owner-scope review
+
+Review the promoted kernel, synthesis, and proposed `state_patch.json`.  Confirm that the strict sector is exactly target-scale only for fixed delta, the open complement is named, all route capacities are diagnostic, the new node implies no parent, and M9-M2, M9-M1, M9, both bridges, quarter theorem, and all exponent records remain unchanged.  Check the graph statement and every rejection for accuracy.  Write only `rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-gate/reviews/final_power_owner_scope_review.md`.  Return GREEN or exact repairs.  Do not edit any other artifact or shared state.

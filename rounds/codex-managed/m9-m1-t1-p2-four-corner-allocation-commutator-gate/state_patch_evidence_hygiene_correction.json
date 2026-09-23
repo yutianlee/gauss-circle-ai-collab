@@ -1,0 +1,29 @@
+{
+  "starting_graph_sha256": "8192df329a85010676a01bf90d62901d810ae10265762186dd3eab17da7b32ae",
+  "reversibility": {
+    "rule": "Restore the named adjudication path to evidence.inconclusive on the created Round-197 obligation. No mathematical field, status, dependency, implication, rejection, or other evidence path is changed."
+  },
+  "proof_obligations": {
+    "create": [],
+    "update": [
+      {
+        "id": "M9-M1-hard-top-t1-rho-large-P2-common-cell-allocation-commutator-sector",
+        "evidence_removed": {
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reviews/conductor_round197_adjudication.md"
+          ]
+        }
+      }
+    ],
+    "correct_rejected": [],
+    "reject": [],
+    "no_change": []
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 0,
+    "idea_quality_score": 0,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Mechanical evidence-bucket hygiene correction only. The official apply helper appended judge_ref to evidence.inconclusive even though that path was already classified as positive in the validated Round-197 patch. This correction removes only the duplicate inconclusive classification."
+  }
+}
