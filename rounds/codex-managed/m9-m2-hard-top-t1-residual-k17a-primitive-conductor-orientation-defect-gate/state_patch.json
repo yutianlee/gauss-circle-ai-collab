@@ -1,0 +1,230 @@
+{
+  "starting_graph_sha256": "e04380a1965e57971bb68d8169d8a8d8e5349edb535e01b343c8b25ecdcd4e27",
+  "reversibility": {
+    "rule": "Remove the created obligation and every reject record introduced by this patch; remove every dependencies_added and evidence_added value; restore the two next_action values and their last-updated metadata below. This recovers the canonical starting graph.",
+    "restore_next_action": {
+      "M9-M2-hard-top-t1-residual-k17a-primitive-alias-conductor-reduction": "Round 178 selects only the exact signed high-reduced-conductor block (177.K34) for Round 179. Uniformly for every supported (kappa,u), prove the O_epsilon(L X^epsilon) outer-absolute estimate after the exact u-to-u_0 gcd fold, all q>(log(2X))^B aliases, both orientations, determinants, incomplete v and n_0 lifts, fibre sites, selected/no-pair and squarefree fields, phases, parity branches, hard endpoints, and zero extensions have been recombined. The restored exact-q capacity is L q log(2q), and one reciprocal square root leaves L sqrt(q) log(2q); a valid proof needs the full conductor saving, two coupled square-root savings, or an equivalent signed average before positivity. Park rank-one TT* self-return, positive alias Parseval or bucket closure, lift-erasing completion, one-square-root recombination, and complementary-divisor orientation pairing. Do not pivot in-round to the stronger aliaswise (177.K35), K26, another hard-TOP channel, BAL, UNBAL, either M1 route, GAR, the graded lane, or endpoint assembly. Success has residual-K17a scope only and changes no exponent without separate accepted connectors.",
+      "M9-M2-top-endpoint-signed-cone": "Retain the complete hard-TOP signed-cone owner. On K17a, the fixed-proportion cross-gcd and low-reduced-conductor alias sectors are target-safe; the exact remaining high-q packet requires (177.K34) or (177.K35). On K26, the whole chain remains a top endpoint problem. Other t=1 and few-point channels remain independent; no residual subroute presently closes this owner."
+    },
+    "restore_metadata": {
+      "M9-M2-hard-top-t1-residual-k17a-primitive-alias-conductor-reduction": {
+        "last_updated_round": 178,
+        "last_updated_at": "2026-08-27T11:49:51"
+      },
+      "M9-M2-top-endpoint-signed-cone": {
+        "last_updated_round": 177,
+        "last_updated_at": "2026-08-27T10:20:58"
+      }
+    }
+  },
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-hard-top-t1-residual-k17a-primitive-conductor-parity-self-return",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Hard-TOP t=1 residual K17a primitive-conductor parity self-return",
+        "status": "proved_internal",
+        "statement_tex": "Within the accepted low-cross-gcd high-reduced-conductor K17a packet, define K_q(b)=sum_((a,q)=1)c_q(a)e(ab/q) and K_q^circ(b)=K_q(b)-mu(q)/q. For odd q, K_q(b)=q^(-1)sum_(d|q)mu(q/d)d E_d(b), and for b in U(q), K_q(b)+K_q(-b)=2mu(q)/q, with the entire symmetric term coming from d=1. The exact-q two-orientation block is the centered defect (q/u_0)sum_b K_q^circ(b)(B^+_(q,b)-B^-_(q,b)) plus the symmetric trace (mu(q)/u_0)sum_b(B^+_(q,b)+B^-_(q,b)); the complete q>Q_B trace is O_(B,delta,gamma,epsilon)(L X^epsilon) after q|u_0 and u_0|u summation. For every odd u_0>1 and b in U(u_0), sum_(q|u_0)(q/u_0)K_q^circ(b)=E_(u_0)(b), while K_1^circ=0. Hence the high-conductor centered defect equals the original literal orientation block minus the already-safe low-conductor packet, and the all-conductor centered traces cancel with q=1 essential. This is exact self-return, not an estimate. Prime and prime-square artificial buckets show coefficient-uniform Lq capacity without literal lower mass. The fixed-modulus reflection fails the complete live displacement and endpoint/selector domain, while the endpoint-preserving exchange changes the fixed row and sends selected divisors to zero-extended complements. The literal high-q estimate (177.K34), complete K17a, every parent, bridge, theorem, and exponent remain open.",
+        "dependencies": [
+          "M9-M2-hard-top-t1-residual-k17a-primitive-alias-conductor-reduction"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "proofs/kernels/m9_m2_hard_top_t1_residual_k17a_primitive_conductor_parity_self_return.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-primitive-conductor-orientation-defect-gate/candidates/formalized_primitive_conductor_parity_self_return.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-primitive-conductor-orientation-defect-gate/reports/literal_primitive_conductor_parity_attack.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-primitive-conductor-orientation-defect-gate/reports/hostile_orientation_defect_capacity_audit.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-primitive-conductor-orientation-defect-gate/reports/blind_primitive_kernel_rederivation.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-primitive-conductor-orientation-defect-gate/reviews/blind_post_unmask_kernel_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-primitive-conductor-orientation-defect-gate/reviews/literal_orientation_selector_and_multiplicity_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-primitive-conductor-orientation-defect-gate/reviews/capacity_owner_and_false_control_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-primitive-conductor-orientation-defect-gate/reviews/conductor_report_reconciliation.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-primitive-conductor-orientation-defect-gate/controls/conductor_round179_controls.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-primitive-conductor-orientation-defect-gate/reviews/conductor_round179_adjudication.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-primitive-conductor-orientation-defect-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Retain the exact target-safe primitive trace and the all-conductor centered self-return. The literal defect (179.K19), equivalently the high-q target (177.K34) after safe terms, remains open. Park parity or centering alone, coefficient-uniform bucket contraction, the fixed-modulus reflection, complementary-divisor orientation exchange, and one-square-root recombination. Any future K17a attack must prove a genuinely selector-, phase-, endpoint-, and lift-aware signed theorem before positivity; no exponent follows without separate accepted connectors."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-hard-top-t1-residual-k17a-primitive-alias-conductor-reduction",
+        "evidence_added": {
+          "inconclusive": [
+            "proofs/kernels/m9_m2_hard_top_t1_residual_k17a_primitive_conductor_parity_self_return.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-primitive-conductor-orientation-defect-gate/reviews/blind_post_unmask_kernel_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-primitive-conductor-orientation-defect-gate/reviews/literal_orientation_selector_and_multiplicity_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-primitive-conductor-orientation-defect-gate/reviews/capacity_owner_and_false_control_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-primitive-conductor-orientation-defect-gate/reviews/conductor_round179_adjudication.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-primitive-conductor-orientation-defect-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Retain the fixed-proportion cross-gcd sector, the complete low-reduced-conductor packet, and the Round-179 target-safe primitive trace. The exact high-q centered defect self-returns to the original literal orientation block minus the safe low packet, so primitive parity or centering alone supplies no gain. The target (177.K34) remains open and requires a genuinely selector-, phase-, endpoint-, and lift-aware signed theorem. Park coefficient-uniform bucket bounds, the two evident orientation maps, one-square-root recombination, rank-one TT*, positive Parseval, and lift-erasing completion. A later campaign may rotate to the independent K26 endpoint rather than repeat this mechanism."
+      },
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "dependencies_added": [
+          "M9-M2-hard-top-t1-residual-k17a-primitive-conductor-parity-self-return"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "proofs/kernels/m9_m2_hard_top_t1_residual_k17a_primitive_conductor_parity_self_return.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-primitive-conductor-orientation-defect-gate/reviews/blind_post_unmask_kernel_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-primitive-conductor-orientation-defect-gate/reviews/literal_orientation_selector_and_multiplicity_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-primitive-conductor-orientation-defect-gate/reviews/capacity_owner_and_false_control_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-primitive-conductor-orientation-defect-gate/reviews/conductor_round179_adjudication.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-primitive-conductor-orientation-defect-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Retain the complete hard-TOP signed-cone owner. On K17a, fixed-proportion cross-gcd and low-conductor sectors plus the primitive trace are target-safe, but the high centered defect self-returns and (177.K34) remains open. Do not repeat primitive parity, automatic centering, the two failed orientation involutions, coefficient-uniform bucket contraction, or one-square-root closure. K26 remains the independent residual alternative and its literal top endpoint remains open. Other t=1 and few-point channels remain independent; no residual route closes hard TOP or any downstream owner."
+      }
+    ],
+    "correct_rejected": [],
+    "reject": [
+      {
+        "id": "Round179-primitive-parity-alone-proves-high-q-K17a",
+        "reason": "Parity isolates a target-safe trace but leaves the complete centered orientation defect open."
+      },
+      {
+        "id": "Round179-safe-trace-proves-complete-orientation-defect",
+        "reason": "The trace is only one exact linear component; its complement contains the full unresolved block."
+      },
+      {
+        "id": "Round179-trace-component-is-a-complete-selector-stable-sector",
+        "reason": "The trace is an algebraic component, not a nontrivial selector-stable subset of live literal atoms, and it does not satisfy the strict-sector campaign exit."
+      },
+      {
+        "id": "Round179-centering-alone-supplies-conductor-saving",
+        "reason": "The centered all-conductor projector reconstructs E_(u_0); prime and prime-square kernels retain unit size. This rejection is limited to automatic or coefficient-uniform centering and does not exclude a future literal signed theorem in centered variables."
+      },
+      {
+        "id": "Round179-all-conductor-centered-sum-is-a-new-contraction",
+        "reason": "It equals the original literal orientation block exactly, so the high piece is original minus the already-safe low piece."
+      },
+      {
+        "id": "Round179-q1-may-be-omitted-from-trace-cancellation",
+        "reason": "The identity sum_(q|u_0)mu(q)=0 requires q=1; K_1^circ=0 only in the centered defect."
+      },
+      {
+        "id": "Round179-nonsquarefree-conductor-has-zero-defect",
+        "reason": "Only the trace vanishes when mu(q)=0; for q=p^2 the centered kernel still has unit size and full coefficient-uniform capacity."
+      },
+      {
+        "id": "Round179-fixed-modulus-reflection-is-a-literal-orientation-involution",
+        "reason": "It leaves the complete positive displacement domain and does not preserve endpoint phases, selectors, profiles, or hard values on its small overlap."
+      },
+      {
+        "id": "Round179-product-preserving-exchange-stays-in-fixed-K34-block",
+        "reason": "It changes the outer row, primitive modulus, conductor, and bucket; the only fixed-row case has q=1."
+      },
+      {
+        "id": "Round179-complementary-divisor-exchange-preserves-selector-support",
+        "reason": "It replaces selected divisors by complements below the upper window in the odd branch or by inadmissible even complements in the even branch."
+      },
+      {
+        "id": "Round179-one-conductor-square-root-closes-K34",
+        "reason": "After all physical lifts are restored, one square root leaves L sqrt(q) on power-size conductors."
+      },
+      {
+        "id": "Round179-adversarial-bucket-capacity-is-literal-lower-mass",
+        "reason": "The artificial arrays retain only unit and count shadows and discard the literal selector, coefficient, and phase fields."
+      },
+      {
+        "id": "Round179-self-return-no-go-disproves-K34",
+        "reason": "The no-go excludes named automatic and coefficient-uniform mechanisms only; a new literal signed theorem remains possible."
+      },
+      {
+        "id": "Round179-projector-kernel-closes-a-parent-or-improves-the-exponent",
+        "reason": "Complete K17a, all hard-TOP parents, M9, both bridges, the quarter theorem, and every exponent owner remain unchanged."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-reduction",
+        "reason": "Its exact reduction and fixed-proportion sector remain proved; the high-conductor target remains open."
+      },
+      {
+        "id": "M9-M2-hard-top-t1-residual-fejer-parity-gcd-scale-reduction",
+        "reason": "Both K17a and the independent K26 route remain incomplete."
+      },
+      {
+        "id": "M9-M2-hard-top-t1-residual-determinant-endpoint-polylog-shift-reduction",
+        "reason": "The determinant reduction remains proved but supplies no high-conductor defect estimate."
+      },
+      {
+        "id": "M9-M2-hard-top-t1-residual-whole-chain-scale-coboundary-positive-capacity-obstruction",
+        "reason": "Round 179 does not alter the independent K26 top-endpoint frontier."
+      },
+      {
+        "id": "M9-M2-hard-top-truncated-divisor-energy-and-radical-control",
+        "reason": "No complete hard-TOP estimate is proved."
+      },
+      {
+        "id": "M9-M2-physical-one-count-assembly",
+        "reason": "Hard TOP, full BAL, and UNBAL remain open."
+      },
+      {
+        "id": "M9-M2-smooth-balanced-quarter-packet-estimate",
+        "reason": "Round 179 treats no balanced owner."
+      },
+      {
+        "id": "M9-M2-smooth-unbalanced-three-quarter-estimate",
+        "reason": "Round 179 treats no unbalanced owner."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Complete hard TOP, full BAL, and UNBAL remain open."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "Round 179 treats no direct M1 owner."
+      },
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "reason": "The alternative GAR route is unchanged."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "A subordinate residual no-go proves no parent-level endpoint uniformity."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain incomplete."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The standard bridge still requires complete M9."
+      },
+      {
+        "id": "GC-global-M1-alternative-bridge",
+        "reason": "The alternative bridge still requires complete GAR and M9-M2."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The strongest internally proved exponent remains one third."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "The accepted repaired external benchmark remains 0.3144831759740614... ."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The quarter target remains open."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 6,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 179 proves an exact primitive projector, target-safe symmetric trace, and all-conductor centered self-return, and it locates two literal orientation-map failures plus full coefficient-uniform conductor capacity. This is a rigorous mechanism-level reduction/no-go. It does not prove the high-conductor K17a target, a parent, a bridge, the quarter theorem, or an exponent improvement."
+  }
+}

@@ -1,0 +1,229 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-hard-top-t1-residual-determinant-endpoint-polylog-shift-reduction",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Hard-TOP t=1 residual determinant endpoint and polylogarithmic-shift reduction",
+        "status": "proved_internal",
+        "statement_tex": "In the accepted hard-TOP residual setting J=sqrt(X), 1<<L<<H<=J^(1/2), R_0=ceil(L), and 0<gamma<1, let u_L(d,m)=chi_4(d)lambda_(dm)(d)e(Jsqrt(dm)) on the complete literal endpoint atoms. Let T_(R_0,gamma)(y,x) carry exactly the Fejer weight, positive even gap below R_0, opposing displacement, and (d,d')<gamma L. Every ordered divisor incidence is in multiplicity-one bijection with [[d',d],[m,m']] of determinant d'm'-dm, and any left Gamma_2(4,1) orbit opening is multiplicity preserving. Exactly C_(R_0,2,opp,g<gamma L)^rem=<T_(R_0,gamma)u_L,u_L>, with one outer real part. The endpoint incidence energy is <<_epsilon L^2X^epsilon and Schur gives ||T||_(2->2)<<_epsilon LX^epsilon, hence only the L^3X^epsilon positive capacity. For every fixed B>0, the complete literal sector r<=min(R_0-1,floor((log X)^B)) is <<_(epsilon,B)L^2X^epsilon. The non-polylogarithmic K17a range remains open, and no residual owner, parent, bridge, quarter theorem, or exponent conclusion follows.",
+        "dependencies": [
+          "M9-M2-hard-top-t1-residual-fejer-parity-gcd-scale-reduction"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "proofs/kernels/m9_m2_hard_top_t1_residual_determinant_endpoint_polylog_shift_reduction.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-oscillatory-determinant-interface-gate/candidates/conductor_round167_determinant_endpoint_polylog_reduction.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-oscillatory-determinant-interface-gate/reports/literal_determinant_kernel_attack.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-oscillatory-determinant-interface-gate/reports/blind_determinant_interface_rederivation.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-oscillatory-determinant-interface-gate/reviews/literal_kernel_capacity_polylog_seam_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-oscillatory-determinant-interface-gate/reviews/conductor_candidate_mathematical_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-oscillatory-determinant-interface-gate/reviews/final_internal_kernel_verification.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-oscillatory-determinant-interface-gate/reviews/conductor_round167_adjudication.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "K17a remains open on the non-polylogarithmic even opposing low-gcd shifts. Do not repeat the parked direct Grimmelt--Merikoski black-box placements. Compare the exact full residual scalar route and the maximal-scale K26 aggregate, and select one genuinely new signed mechanism after auditing the Round-162 scalar product-collar obstruction."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-hard-top-t1-residual-fejer-parity-gcd-scale-reduction",
+        "evidence_added": {
+          "positive": [
+            "proofs/kernels/m9_m2_hard_top_t1_residual_determinant_endpoint_polylog_shift_reduction.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-oscillatory-determinant-interface-gate/reviews/conductor_round167_adjudication.md"
+          ],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-oscillatory-determinant-interface-gate/reports/oscillatory_source_power_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-oscillatory-determinant-interface-gate/reviews/source_orbit_phase_power_seam_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-oscillatory-determinant-interface-gate/reviews/literal_source_interface_reconciliation_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-oscillatory-determinant-interface-gate/reviews/conductor_candidate_source_scope_review.md"
+          ]
+        },
+        "next_action": "The exact determinant endpoint representation and every fixed-B polylogarithmic shift sector are now proved. K17a remains open for the non-polylogarithmic even opposing low-gcd range. The audited direct 2024, fixed-shift-triangle, and current Part-I interfaces are parked; compare a genuinely new full-scalar signed mechanism with the maximal-scale K26 alternative before choosing the next owner."
+      },
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "dependencies_added": [
+          "M9-M2-hard-top-t1-residual-determinant-endpoint-polylog-shift-reduction"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "proofs/kernels/m9_m2_hard_top_t1_residual_determinant_endpoint_polylog_shift_reduction.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-oscillatory-determinant-interface-gate/synthesis.md"
+          ]
+        }
+      },
+      {
+        "id": "M9-M2-top-endpoint-density-discrepancy-energy",
+        "dependencies_added": [
+          "M9-M2-hard-top-t1-residual-determinant-endpoint-polylog-shift-reduction"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "proofs/kernels/m9_m2_hard_top_t1_residual_determinant_endpoint_polylog_shift_reduction.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-oscillatory-determinant-interface-gate/synthesis.md"
+          ]
+        }
+      }
+    ],
+    "correct_rejected": [],
+    "reject": [
+      {
+        "id": "Round167-determinant-dictionary-proves-K17a",
+        "reason": "The exact multiplicity-one matrix map supplies no cancellation; the endpoint form still has L^3X^epsilon positive capacity against an L^2X^epsilon target."
+      },
+      {
+        "id": "Round167-finite-endpoint-kernel-is-a-Grimmelt-Merikoski-kernel",
+        "reason": "The hand-defined directed endpoint matrix is exact but no source-group embedding or relative automorphic-kernel identity without extra pairs is proved."
+      },
+      {
+        "id": "Round167-Schur-capacity-improves-the-target",
+        "reason": "Schur gives only an upper bound one factor L above K17a and is not a matching lower bound or a signed saving."
+      },
+      {
+        "id": "Round167-polylog-shift-sector-proves-K17a-on-power-scales",
+        "reason": "For genuine power-scale L, fixed-B polylogarithmic shifts form only an X^o(1) initial sector and leave the non-polylogarithmic range open."
+      },
+      {
+        "id": "Round167-principal-source-character-forces-a-nonzero-main-term",
+        "reason": "For the bare chi_4(a)chi_4(b) coefficient, the finite principal orbit coefficient vanishes exactly for every 2-power k."
+      },
+      {
+        "id": "Round167-bare-orbit-cancellation-persists-after-selector-insertion",
+        "reason": "A selector-dependent automorphic coefficient changes the finite orbit weights and requires a new main-term calculation."
+      },
+      {
+        "id": "Round167-low-gcd-indicator-is-nonautomorphic-for-every-gamma",
+        "reason": "The explicit global witness applies only for 0<gamma<1/2; for gamma>=1/2 the low-gcd cutoff is automatic on K17a."
+      },
+      {
+        "id": "Round167-low-gcd-witness-is-a-literal-project-incidence-pair",
+        "reason": "The witness disproves a global coefficient law but is not proved to satisfy both literal selector and support systems."
+      },
+      {
+        "id": "Round167-common-phase-rank-one-failure-rules-out-all-interpolation",
+        "reason": "The argument proves continuous rank-one nonseparability only; a target-safe discrete interpolation or controlled-rank expansion is unproved, not impossible."
+      },
+      {
+        "id": "Round167-phase-seminorm-loss-rules-out-all-oscillatory-methods",
+        "reason": "The obstruction covers absorption into a smooth amplitude with an uncompensated fixed positive seminorm loss; new native oscillatory decay remains possible."
+      },
+      {
+        "id": "Round167-source-R0-ledger-proves-the-target",
+        "reason": "The R0 contribution is target-sized only in an optimistic dense-block model before delta and orbit losses, while the displayed R2 route retains L^theta_4."
+      },
+      {
+        "id": "Round167-source-application-requires-negative-power-K-plus",
+        "reason": "The source exposes neither the final delta exponent nor a negative-J orbit mechanism; delta, K_+, and R2 are separate unproved inputs."
+      },
+      {
+        "id": "Round167-Part-I-forbids-complex-oscillatory-functions",
+        "reason": "Part I formally permits complex C^10_delta functions but charges their derivative scale through delta^(-O(1))."
+      },
+      {
+        "id": "Round167-Part-I-raw-kernel-equals-the-discrepancy-kernel",
+        "reason": "An exact raw kernel identity is missing, and the principal component must be separated before the two discrepancy autocorrelations are estimated."
+      },
+      {
+        "id": "Round167-fixed-shift-source-errors-preserve-the-outer-real-part",
+        "reason": "Summing separate fixed-shift theorem errors inserts absolute values inside the shift aggregate and may lose the required factor L."
+      },
+      {
+        "id": "Round167-source-interface-no-go-rules-out-all-determinant-methods",
+        "reason": "The no-go is confined to the audited direct 2024 placement, its fixed-shift triangle variant, and the presently available Part-I placement."
+      },
+      {
+        "id": "Round167-strict-sector-closes-the-residual-or-a-parent",
+        "reason": "The non-polylogarithmic K17a range, the complete residual, other t=1 channels, hard TOP, BAL, and UNBAL remain open."
+      },
+      {
+        "id": "Round167-determinant-progress-improves-a-global-exponent",
+        "reason": "No analytic parent or bridge closes, so both the internal one-third theorem and external Li--Yang benchmark are unchanged."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "GC-target",
+        "reason": "The quarter theorem still depends on open M1/M2 analytic parents and a complete bridge."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The standard bridge remains conditional on complete M9."
+      },
+      {
+        "id": "GC-global-M1-alternative-bridge",
+        "reason": "The alternative bridge still requires complete GAR and all of M9-M2."
+      },
+      {
+        "id": "M9",
+        "reason": "Both direct M1 parents, all three M2 parents, and endpoint uniformity remain incomplete."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "A strict residual sector does not prove any all-owner endpoint estimate."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "Round 167 treats no M1 owner."
+      },
+      {
+        "id": "M9-M1-top-endpoint-signed-cone",
+        "reason": "Round 167 proves no direct hard-M1 cancellation."
+      },
+      {
+        "id": "M9-M1-direct-smooth-residual-blockwise-estimate",
+        "reason": "Round 167 proves no smooth direct-M1 cancellation."
+      },
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "reason": "GAR remains open."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Hard TOP, BAL, and UNBAL remain open."
+      },
+      {
+        "id": "M9-M2-physical-one-count-assembly",
+        "reason": "Its conditional assembly remains proved, but all three analytic children are open."
+      },
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "reason": "Only a strict residual shift sector and an exact representation are added; the hard-TOP parent remains open."
+      },
+      {
+        "id": "M9-M2-top-endpoint-density-discrepancy-energy",
+        "reason": "No complete hard-TOP density or energy theorem is proved."
+      },
+      {
+        "id": "M9-M2-smooth-balanced-quarter-packet-estimate",
+        "reason": "The balanced signed packet remains open."
+      },
+      {
+        "id": "M9-M2-smooth-unbalanced-three-quarter-estimate",
+        "reason": "The unbalanced signed packet remains open."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The strongest internally proved exponent remains one third."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "The source-audited external benchmark remains 0.3144831759740614... ."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 6,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 167 proves an exact determinant and endpoint-kernel representation and an owner-complete fixed-B polylogarithmic shift sector, while rigorously parking the audited direct source interfaces. The missing non-polylogarithmic factor-L cancellation, every parent, and both global exponents remain unchanged."
+  }
+}

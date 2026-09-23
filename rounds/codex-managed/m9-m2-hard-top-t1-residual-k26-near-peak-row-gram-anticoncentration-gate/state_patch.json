@@ -1,0 +1,293 @@
+{
+  "starting_graph_sha256": "e94ef6a364988e47f8a59ca3589f03cb098a04a241ec841afc2efa6e685081b4",
+  "reversibility": {
+    "rule": "Remove the created obligation and every reject record introduced by this patch; remove every dependencies_added and evidence_added value; restore the four next_action values and their last-updated metadata below. This recovers the canonical starting graph.",
+    "restore_next_action": {
+      "M9-M2-hard-top-t1-residual-fejer-parity-gcd-scale-reduction": "Both residual routes remain open. K17a retains target-safe fixed-proportion cross-gcd and low-reduced-conductor sectors; its exact complement is high q and requires (177.K34) or (177.K35). K26 remains equivalent at target strength to the complete literal coefficient-sensitive top endpoint theorem after its paid seams. Park coefficient-blind fibre, scale, positive-transform, one-square-root alias, and positive-energy closures on both routes.",
+      "M9-M2-hard-top-t1-residual-whole-chain-scale-coboundary-positive-capacity-obstruction": "Park cross-link scale cancellation as an independent resource, scalar scale Abel/Haar/martingale closure, and coefficient-uniform positive closure before an actual-symbol gain. Resume K26 only through a complete literal coefficient-sensitive theorem for Q_M^*<<_epsilon L^3X^epsilon, or its exact physical signed endpoint equivalent, retaining every parity, frequency, cell, opening, endpoint, transition, zero-extension, ordinary-zero, and short-correction seam.",
+      "M9-M2-top-endpoint-density-discrepancy-energy": "The K26 whole-chain scale index is not an independent cancellation variable: the exact chain is Q_M^*-Q_(R_0)^*, the lower endpoint is target-safe, and the target is equivalent to the still-open literal positive maximal-energy theorem Q_M^*<<_epsilon L^3X^epsilon. Park scalar scale Abel/Haar/martingale and coefficient-uniform positive closure. The open owner requires a new complete literal coefficient-sensitive endpoint theorem, while every other density-discrepancy channel remains separate.",
+      "M9-M2-top-endpoint-signed-cone": "Retain the complete hard-TOP signed-cone owner. On K17a, fixed-proportion cross-gcd and low-conductor sectors plus the primitive trace are target-safe, but the high centered defect self-returns and (177.K34) remains open. Do not repeat primitive parity, automatic centering, the two failed orientation involutions, coefficient-uniform bucket contraction, or one-square-root closure. K26 remains the independent residual alternative and its literal top endpoint remains open. Other t=1 and few-point channels remain independent; no residual route closes hard TOP or any downstream owner."
+    },
+    "restore_metadata": {
+      "M9-M2-hard-top-t1-residual-fejer-parity-gcd-scale-reduction": {
+        "last_updated_round": 177,
+        "last_updated_at": "2026-08-27T10:20:58"
+      },
+      "M9-M2-hard-top-t1-residual-whole-chain-scale-coboundary-positive-capacity-obstruction": {
+        "last_updated_round": 175,
+        "last_updated_at": "2026-08-27T02:39:54"
+      },
+      "M9-M2-top-endpoint-density-discrepancy-energy": {
+        "last_updated_round": 175,
+        "last_updated_at": "2026-08-27T02:39:54"
+      },
+      "M9-M2-top-endpoint-signed-cone": {
+        "last_updated_round": 179,
+        "last_updated_at": "2026-08-27T13:28:40"
+      }
+    }
+  },
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-hard-top-t1-residual-k26-near-peak-row-gram-self-return-obstruction",
+        "type": "obstruction",
+        "track": "M9_analytic",
+        "title": "Hard-TOP t=1 residual K26 near-peak row-Gram self-return obstruction",
+        "status": "proved_internal",
+        "statement_tex": "Let J=sqrt(X), 1<<L<<H<=J^(1/2), M asymp L^2 be the exact containing cardinality, and retain the complete real literal residual incidence lambda_(dm)(d), both parity gauges, all selectors, projectors, profiles, hard endpoints, transitions, and full-line zero extension. For each near cell I_nu with |nu|<=ceil(sqrt(L)), let E_nu be the complete parity-averaged scalar cell energy, D_nu its physical divisor-row diagonal, and G_nu the complete cross-row form with one outer real part. Then exactly E_nu=D_nu+G_nu and 0<=D_nu<<_epsilon L X^epsilon, so the one-sided target G_nu<<_epsilon L X^epsilon is equivalent at target strength to E_nu<<_epsilon L X^epsilon. The exact cross-row equal-product sector is P_nu=M^(-1)sum_N((c_N^rem)^2-sum_(d|N,d odd)lambda_N(d)^2) and satisfies |P_nu|<<_epsilon X^epsilon by divisor multiplicity and opened-incidence energy. Hence the first open theorem is U_nu:=G_nu-P_nu<<_epsilon L X^epsilon uniformly on all near cells, retaining every nonzero even product gap, sinc factor, square-root and cell-centre phase, character pair, selector, endpoint, transition, and zero extension. This open theorem conditionally implies Q_M^*<<_epsilon L^3X^epsilon and K26 after the verified near/far, ordinary-zero, and once-only short-correction seams. Coefficient-uniform row positivity has local capacity L^2 and central Fejer capacity L^4 on nonliteral complex, real-cosine, and arbitrary-sign shadows; this is not literal lower mass. The blind abstract exact-product counterexample is nonliteral, its fiber-Bessel proposal is automatic after literal divisor multiplicity, and the accepted recombined energy repairs its far arc. Thus row Gramization, positivity, realness, parity, character signs, fixed-shift absolute values, the rank-one central collar, and scalar scale closure alone do not provide the missing factor L. The no-go is mechanism-scoped: U_nu, Q_M^*, K26, every parent, bridge, theorem, and exponent remain open.",
+        "dependencies": [
+          "M9-M2-hard-top-t1-residual-whole-chain-scale-coboundary-positive-capacity-obstruction",
+          "M9-M2-hard-top-t1-character-poisson-product-collar-obstruction"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "proofs/kernels/m9_m2_hard_top_t1_residual_k26_near_peak_row_gram_self_return_obstruction.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/candidates/formalized_near_peak_row_gram_self_return.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/reports/literal_near_peak_row_gram_attack.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/reports/fejer_cell_owner_capacity_audit.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/reports/blind_row_gram_rederivation.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/reviews/blind_post_unmask_row_gram_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/reviews/row_identity_fejer_connector_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/reviews/literal_selector_capacity_false_control_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/reviews/conductor_report_reconciliation.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/reviews/final_kernel_mathematical_scope_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/controls/conductor_round180_controls.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/reviews/conductor_round180_adjudication.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Retain the exact row identity, target-safe physical row diagonal, target-safe cross-row equal-product sector, and the verified conditional K26 connector. The complete unequal-product theorem U_nu<<_epsilon L X^epsilon remains open. Park row positivity, realness, parity, character modulation, fixed-shift absolute values, the rank-one central product collar, scalar scale closure, and coefficient-uniform dechirped or sign controls. Any future K26 attack must prove a complete literal selector-, phase-, endpoint-, transition-, and zero-extension-aware signed theorem before positivity; no exponent follows without the remaining owners and bridges."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-hard-top-t1-residual-fejer-parity-gcd-scale-reduction",
+        "evidence_added": {
+          "inconclusive": [
+            "proofs/kernels/m9_m2_hard_top_t1_residual_k26_near_peak_row_gram_self_return_obstruction.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/reviews/row_identity_fejer_connector_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/reviews/literal_selector_capacity_false_control_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/reviews/final_kernel_mathematical_scope_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/reviews/conductor_round180_adjudication.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Both residual routes remain open. K17a retains target-safe fixed-proportion cross-gcd, low-conductor, and primitive-trace sectors, but its high centered defect self-returns and (177.K34) remains open. On K26, the row diagonal and exact cross-row product collisions are target-safe, while the complete unequal-product near-cell form remains equivalent at target strength to the original literal scalar concentration theorem. Park coefficient-blind fibre, scale, row-positive, realness-only, parity-only, character-only, one-square-root alias, fixed-shift absolute-value, and rank-one collar closures."
+      },
+      {
+        "id": "M9-M2-hard-top-t1-residual-whole-chain-scale-coboundary-positive-capacity-obstruction",
+        "evidence_added": {
+          "inconclusive": [
+            "proofs/kernels/m9_m2_hard_top_t1_residual_k26_near_peak_row_gram_self_return_obstruction.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/reviews/row_identity_fejer_connector_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/reviews/literal_selector_capacity_false_control_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/reviews/final_kernel_mathematical_scope_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/reviews/conductor_round180_adjudication.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Retain the exact whole-chain endpoint reduction and the Round-180 target-safe physical row diagonal and equal-product cross-row sector. Resume K26 only through the complete literal unequal-product near-cell theorem U_nu<<_epsilon L X^epsilon, or an equivalent coefficient-sensitive endpoint theorem for Q_M^*<<_epsilon L^3X^epsilon, retaining all parity, frequency, cell, sinc, phase, selector, endpoint, transition, zero-extension, ordinary-zero, and short-correction seams. Park cross-link scale cancellation as an independent resource, scalar scale Abel/Haar/martingale closure, row positivity, and coefficient-uniform dechirped or sign controls."
+      },
+      {
+        "id": "M9-M2-top-endpoint-density-discrepancy-energy",
+        "dependencies_added": [
+          "M9-M2-hard-top-t1-residual-k26-near-peak-row-gram-self-return-obstruction"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "proofs/kernels/m9_m2_hard_top_t1_residual_k26_near_peak_row_gram_self_return_obstruction.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/reviews/row_identity_fejer_connector_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/reviews/literal_selector_capacity_false_control_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/reviews/final_kernel_mathematical_scope_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/reviews/conductor_round180_adjudication.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The K26 whole-chain scale index and the near-cell divisor-row split are not independent cancellation resources. The physical row diagonal and exact cross-row equal-product collisions are target-safe, but the remaining unequal-product row form is equivalent at target strength to the complete literal local scalar concentration theorem. Resume K26 only with a new selector-, phase-, endpoint-, transition-, and zero-extension-aware signed estimate before positivity, or an exact equivalent coefficient-sensitive endpoint theorem. Every other density-discrepancy channel remains separate."
+      },
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "dependencies_added": [
+          "M9-M2-hard-top-t1-residual-k26-near-peak-row-gram-self-return-obstruction"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "proofs/kernels/m9_m2_hard_top_t1_residual_k26_near_peak_row_gram_self_return_obstruction.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/reviews/row_identity_fejer_connector_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/reviews/literal_selector_capacity_false_control_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/reviews/final_kernel_mathematical_scope_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/reviews/conductor_round180_adjudication.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Retain the complete hard-TOP signed-cone owner. K17a has target-safe fixed-proportion cross-gcd, low-conductor, and primitive-trace sectors, but its high centered defect self-returns. K26 has target-safe row-diagonal and exact-product sectors, but its complete unequal-product near-cell form self-returns to the original scalar concentration theorem and coefficient-uniform row positivity has one missing factor L. Do not repeat the audited automatic mechanisms. Both residual routes, all other t=1 and few-point channels, complete hard TOP, and every downstream owner remain open."
+      }
+    ],
+    "correct_rejected": [],
+    "reject": [
+      {
+        "id": "Round180-row-Gram-split-proves-offrow-target",
+        "reason": "The exact identity E_nu=D_nu+G_nu and the target-sized physical diagonal make the one-sided off-row target equivalent at target strength to the original local scalar estimate."
+      },
+      {
+        "id": "Round180-row-diagonal-implies-row-orthogonality",
+        "reason": "The physical row diagonal is target-safe, but the complete unequal-product cross-row form remains and no orthogonality theorem follows from the split."
+      },
+      {
+        "id": "Round180-character-unit-modulation-contracts-Gram",
+        "reason": "The unit row character can be absorbed by coefficient-uniform controls; any useful cancellation must exploit the complete literal symbol and phases."
+      },
+      {
+        "id": "Round180-realness-alone-supplies-local-L",
+        "reason": "Real cosine-dechirped and arbitrary-real-sign nonliteral shadows attain the local L^2 capacity, so realness alone supplies no factor L."
+      },
+      {
+        "id": "Round180-exact-product-collisions-have-literal-L2-mass",
+        "reason": "Literal divisor multiplicity and opened-incidence energy give the stronger bound |P_nu|<<_epsilon X^epsilon."
+      },
+      {
+        "id": "Round180-cross-row-product-diagonal-may-be-deleted",
+        "reason": "The equal-product cross-row sector is an exact algebraic component that must be evaluated and paid, not silently discarded."
+      },
+      {
+        "id": "Round180-blind-exact-product-array-is-literal",
+        "reason": "The blind packet omitted literal scale, total-incidence, divisor-multiplicity, fixed-symbol, and recombined-energy constraints; its abstract array is not a literal residual coefficient."
+      },
+      {
+        "id": "Round180-blind-fiber-Bessel-is-first-open-literal-relation",
+        "reason": "After unmasking, |c_N^rem|^2<=tau(N)sum_d|lambda_N(d)|^2 is automatic and does not estimate the unequal-product complement."
+      },
+      {
+        "id": "Round180-incidence-energy-alone-controls-full-far-arcs",
+        "reason": "The far-arc bound uses the accepted recombined energy D_L after full product recombination, not opened-incidence energy alone."
+      },
+      {
+        "id": "Round180-positive-row-norm-preserves-missing-L",
+        "reason": "Coefficient-uniform positive closure has local capacity L^2 and central Fejer capacity L^4, one factor L above the targets."
+      },
+      {
+        "id": "Round180-shiftwise-absolute-values-preserve-outer-real-cancellation",
+        "reason": "Taking absolute values separately over nonzero product shifts loses the single outer real part and returns to unresolved shifted-correlation capacity."
+      },
+      {
+        "id": "Round180-central-product-phase-is-uniformly-nondegenerate",
+        "reason": "At a central cell, simultaneous positive dualization returns to the accepted rank-one product collar; no uniform nondegeneracy is available there."
+      },
+      {
+        "id": "Round180-capacity-controls-are-literal-lower-mass",
+        "reason": "Every attaining dechirped, cosine, or sign array is nonliteral, while one-row and one-site arrays have zero off-row form; the controls prove only a coefficient-uniform mechanism boundary."
+      },
+      {
+        "id": "Round180-local-capacity-no-go-disproves-K26",
+        "reason": "The no-go excludes named feature-insensitive mechanisms only; a new complete literal signed theorem remains possible."
+      },
+      {
+        "id": "Round180-conditional-connector-proves-K26-or-parent",
+        "reason": "The connector requires the still-open unequal-product near-cell estimate, so K26 and every parent remain open."
+      },
+      {
+        "id": "Round180-row-Gram-obstruction-improves-global-exponent",
+        "reason": "No K26, hard-TOP parent, M9 route, bridge, theorem, or exponent owner is promoted."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M2-hard-top-t1-residual-transport-fejer-energy-reduction",
+        "reason": "Its exact transport reduction remains proved; Round 180 estimates no complete residual endpoint."
+      },
+      {
+        "id": "M9-M2-hard-top-t1-residual-maximal-fejer-dyadic-positive-transform-obstruction",
+        "reason": "Its positive-capacity obstruction remains proved and is sharpened only by a subordinate row-Gram no-go."
+      },
+      {
+        "id": "M9-M2-hard-top-t1-residual-tangent-fejer-commutator-self-return-obstruction",
+        "reason": "Round 180 does not change the tangent-commutator self-return."
+      },
+      {
+        "id": "M9-M2-hard-top-t1-residual-determinant-endpoint-polylog-shift-reduction",
+        "reason": "The determinant/polylog shift reduction remains proved and supplies no unequal-product near-cell estimate."
+      },
+      {
+        "id": "M9-M2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-reduction",
+        "reason": "Round 180 treats the independent K26 route only."
+      },
+      {
+        "id": "M9-M2-hard-top-t1-residual-k17a-primitive-alias-conductor-reduction",
+        "reason": "The high-conductor K17a target remains open and independent of the K26 row split."
+      },
+      {
+        "id": "M9-M2-hard-top-t1-residual-k17a-primitive-conductor-parity-self-return",
+        "reason": "Its primitive trace and centered self-return remain proved; Round 180 adds no K17a estimate."
+      },
+      {
+        "id": "M9-M2-hard-top-truncated-divisor-energy-and-radical-control",
+        "reason": "No complete hard-TOP estimate is proved."
+      },
+      {
+        "id": "M9-M2-physical-one-count-assembly",
+        "reason": "Hard TOP, full BAL, and UNBAL remain open."
+      },
+      {
+        "id": "M9-M2-smooth-balanced-quarter-packet-estimate",
+        "reason": "Round 180 treats no balanced owner."
+      },
+      {
+        "id": "M9-M2-smooth-unbalanced-three-quarter-estimate",
+        "reason": "Round 180 treats no unbalanced owner."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Complete hard TOP, full BAL, and UNBAL remain open."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "Round 180 treats no direct M1 owner."
+      },
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "reason": "The alternative GAR route is unchanged."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "A subordinate residual no-go proves no parent-level endpoint uniformity."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain incomplete."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The standard bridge still requires complete M9."
+      },
+      {
+        "id": "GC-global-M1-alternative-bridge",
+        "reason": "The alternative bridge still requires complete GAR and M9-M2."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The strongest internally proved exponent remains one third."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "The accepted repaired external benchmark remains 0.3144831759740614... ."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The quarter target remains open."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 6,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 180 proves the exact near-cell row identity, target-safe physical row diagonal, target-safe cross-row equal-product sector, and a complete conditional K26 connector, while identifying coefficient-uniform local and endpoint capacity and repairing the blind/literal scope. This is a rigorous sector reduction and mechanism-level self-return/no-go. It does not prove the unequal-product target, K26, a parent, bridge, theorem, or exponent improvement."
+  }
+}

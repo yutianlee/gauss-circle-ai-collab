@@ -1,0 +1,272 @@
+{
+  "starting_graph_sha256": "7c89a29f96878cb4c8481129a4a76453263768f0a7b699fa20003fc4db207bd9",
+  "reversibility": {
+    "rule": "Remove the one created obligation and every rejected-claim record introduced by this patch; remove every dependencies_added and evidence_added value; restore the next_action value and last-updated metadata recorded below. This recovers the canonical starting graph.",
+    "restore_next_action": {
+      "M9-M1-hard-top-high-radical-small-t-residual-estimate": "Rounds 187-192 prove the low Fourier packets, every H_Bm>=Y lift, the projectively slow sector, the signed-inverse-small sector, the exact terminal and Fejer projections, and the strict small-Farey-covector union of the fast rho-large packet. Prove the exact remaining core: for T=0 the entire inherited rho-large remainder, and for T>=1 the simultaneous sector |rho|>=(A+1)(T+1) and |c beta-d rho|>T for every primitive 1<=c<=A, 0<=d<=c. Retain both orientations, every literal mask, the unequal endpoint number/divisor translations, carries, square-root phases, affine births/deaths, coprimality flips, cells, crossings, and zero extensions under one outer real part. At fixed admissible kappa,u,m,q,a,J, gain Y/(H_Bm) and prove scale H_B m kappa u X^epsilon before positive norms. Even complete t=1 success leaves every t>=2 small-G incidence and the large-G near-resonant complement open."
+    },
+    "restore_metadata": {
+      "M9-M1-hard-top-high-radical-small-t-residual-estimate": {
+        "last_updated_round": 192,
+        "last_updated_at": "2026-08-30T00:29:16"
+      }
+    }
+  },
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-hard-top-t1-rho-large-gcd-scaled-close-sector",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Hard-M1 t=1 rho-large gcd-scaled double-close sector",
+        "status": "proved_internal",
+        "statement_tex": "Fix the exact accepted Round-192 hard-M1 t=1 core and its physical opposing-incidence source N=dm, N+r=d'm', with d,d' odd, 0<r<R_0, 2|r, d,m,d',m' comparable to L, all literal fields and zero extensions retained under one outer real part, and the literal T=0/T>=1 Farey-core convention unchanged. Put g=(d,d'), D_L=ceil(sqrt L), and P_cl=1_(|d-gm|<=D_L)1_(|d'-gm'|<=D_L) on the physical source before Fourier expansion or height differencing. In either primitive orientation the close relations imply S+w<=D_L/g and |kappa(U-v)|<=3D_L/g; the hard cone gives g=O(1), and the determinant confines S to O(1) integers after kappa,g,U,v,w are fixed. Hence the complete physical double-close set has at most O(LD_L log(2L)+LD_L^2)=O(L^2) atoms, with no hidden height or Fourier multiplicity. Rerun every accepted Round-187--Round-192 projector on P_cl W. Its safe proofs are deletion-stable; the affine-site identity retains the physical-mask commutator, births and deaths in the new core. Therefore |R_core(P_cl W)|<<_(B,C0,epsilon)L^2X^epsilon. The exact disjoint complement is P_1=1_(|d-gm|>D_L) and P_2=1_(|d-gm|<=D_L)1_(|d'-gm'|>D_L), and only P_cl is proved safe. For every 1<=D<=L the same absolute mechanism costs O((LD log(2L)+LD^2)X^epsilon), so width beyond sqrt L loses power. On the subsidiary sub-sector (m,m')=1 and r=2 mod 4, tau_g(d,m,d',m')=(gm,d/g,gm',d'/g) is an exact fixed-point-free character-reversing orientation involution after complete Fourier recombination, but this is not needed for the safe bound. This node proves no complete rho-large core, complete original t=1 or t>=2 range, owner, parent, endpoint theorem, bridge, target, or exponent.",
+        "dependencies": [
+          "M9-M1-hard-top-t1-rho-large-farey-covector-reduction"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "proofs/kernels/m9_m1_hard_top_t1_rho_large_gcd_scaled_close_sector.md",
+            "rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/candidates/formalized_hard_m1_t1_rho_large_gcd_scaled_close_sector.md",
+            "rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reports/gcd_scaled_orientation_sector_attack.md",
+            "rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reports/core_projection_mask_power_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reviews/conductor_round193_report_reconciliation.md",
+            "rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reviews/final_candidate_count_operator_postrepair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reviews/final_candidate_count_operator_terminal_verification.md",
+            "rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reviews/final_candidate_provenance_owner_scope_terminal_verification.md",
+            "rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reviews/final_kernel_count_operator_consistency_review.md",
+            "rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reviews/final_kernel_formalization_provenance_hygiene_postrepair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reviews/final_kernel_blind_scope_postrepair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reviews/conductor_round193_adjudication.md",
+            "rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reports/blind_scaled_orientation_involution_rederivation.md",
+            "rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reviews/blind_post_unmask_scaled_orientation_verification.md",
+            "rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reviews/final_candidate_count_operator_seam_review.md",
+            "rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reviews/final_candidate_provenance_owner_scope_review.md",
+            "rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reviews/final_candidate_provenance_owner_scope_postrepair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reviews/final_candidate_provenance_owner_scope_final_verification.md",
+            "rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reviews/final_kernel_formalization_provenance_hygiene_review.md",
+            "rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reviews/final_kernel_blind_scope_consistency_review.md",
+            "rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/controls/gcd_scaled_orientation_involution_diagnostic.wl",
+            "rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/controls/gcd_scaled_orientation_involution_diagnostic_output.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Prove the exact first-failure core complements P_1 and P_2. Preserve the literal T=0 branch and, for T>=1, every simultaneous Farey-covector inequality; retain both orientations, the full anchor Fourier sum, unequal endpoint translations, residual selectors, all literal cells and crossings, carries, square-root phases, affine births/deaths, coprimality flips and zero extensions under one outer real part. Establish the jointly signed fixed-packet saving Y/(H_Bm) before positive norms. The double-close count, scaled involution, static deletion, or width beyond sqrt L does not estimate either complement."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-hard-top-high-radical-small-t-residual-estimate",
+        "dependencies_added": [
+          "M9-M1-hard-top-t1-rho-large-gcd-scaled-close-sector"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "proofs/kernels/m9_m1_hard_top_t1_rho_large_gcd_scaled_close_sector.md",
+            "rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/candidates/formalized_hard_m1_t1_rho_large_gcd_scaled_close_sector.md",
+            "rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reports/gcd_scaled_orientation_sector_attack.md",
+            "rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reports/core_projection_mask_power_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reports/blind_scaled_orientation_involution_rederivation.md",
+            "rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reviews/conductor_round193_report_reconciliation.md",
+            "rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reviews/blind_post_unmask_scaled_orientation_verification.md",
+            "rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reviews/final_candidate_count_operator_seam_review.md",
+            "rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reviews/final_candidate_count_operator_postrepair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reviews/final_candidate_count_operator_terminal_verification.md",
+            "rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reviews/final_candidate_provenance_owner_scope_review.md",
+            "rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reviews/final_candidate_provenance_owner_scope_postrepair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reviews/final_candidate_provenance_owner_scope_final_verification.md",
+            "rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reviews/final_candidate_provenance_owner_scope_terminal_verification.md",
+            "rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reviews/final_kernel_count_operator_consistency_review.md",
+            "rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reviews/final_kernel_formalization_provenance_hygiene_review.md",
+            "rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reviews/final_kernel_formalization_provenance_hygiene_postrepair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reviews/final_kernel_blind_scope_consistency_review.md",
+            "rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reviews/final_kernel_blind_scope_postrepair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/controls/gcd_scaled_orientation_involution_diagnostic.wl",
+            "rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/controls/gcd_scaled_orientation_involution_diagnostic_output.md",
+            "rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reviews/conductor_round193_adjudication.md",
+            "rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Rounds 187-193 prove the low Fourier packets, every H_Bm>=Y lift, the projectively slow sector, the signed-inverse-small sector, exact terminal and Fejer projections, the strict small-Farey-covector union, and the gcd-scaled double-close physical sector of the remaining rho-large core. Prove the two exact first-failure complements P_1: |d-gm|>ceil(sqrt L) and P_2: |d-gm|<=ceil(sqrt L), |d'-gm'|>ceil(sqrt L). Preserve the T=0 branch and, for T>=1, every strict Farey-covector inequality; retain both orientations, the full Fourier aggregate, residual selectors, unequal endpoint translations, carries, square-root phases, affine births/deaths, coprimality flips, cells, crossings and zero extensions under one outer real part. Gain Y/(H_Bm) before positive norms. Even complete t=1 success leaves every t>=2 small-G incidence and the large-G near-resonant complement open."
+      }
+    ],
+    "correct_rejected": [],
+    "reject": [
+      {
+        "id": "Round193-post-Abel-mask-commutes-with-difference",
+        "reason": "The physical mask depends on affine site; its transported commutator and unmatched-site births and deaths remain in the new core."
+      },
+      {
+        "id": "Round193-core-mask-is-Fourier-mode-predicate",
+        "reason": "The close mask belongs to physical atoms before Fourier expansion and is inherited coordinatewise by every spectral copy."
+      },
+      {
+        "id": "Round193-double-close-count-has-Y-multiplicity",
+        "reason": "Height is the determinant h=Sv-Uw or Uw-vS and is fixed by the primitive coordinates; dyadic restriction only deletes atoms."
+      },
+      {
+        "id": "Round193-S-has-D-choices-after-determinant",
+        "reason": "For fixed kappa,g,U,v,w the determinant confines S to an interval of uniformly bounded length because kappa v is comparable to L."
+      },
+      {
+        "id": "Round193-g-may-grow-like-D-on-live-close",
+        "reason": "The hard cone, m comparable to L, and the lower close relation give a uniform finite bound for g throughout 1<=D<=L."
+      },
+      {
+        "id": "Round193-k-one-required-for-close-count",
+        "reason": "Cofactor coprimality is structural for the canonical involution but does not enter the absolute double-close incidence count."
+      },
+      {
+        "id": "Round193-r-two-mod-four-required-for-close-count",
+        "reason": "The congruence supplies character reversal on the subsidiary involutive sector but is irrelevant to the absolute count."
+      },
+      {
+        "id": "Round193-character-reversal-is-needed-for-safe-bound",
+        "reason": "The principal double-close sector is paid absolutely; character reversal is retained only as subsidiary algebra."
+      },
+      {
+        "id": "Round193-residual-mask-invariance-needed-for-safe-bound",
+        "reason": "Every literal predicate only deletes atoms in the absolute proof; selector invariance is needed only for the optional paired identity."
+      },
+      {
+        "id": "Round193-D-beyond-sqrtL-is-free",
+        "reason": "The absolute ledger contains LD^2; at D=L^(1/2+delta) it costs L^(2+2delta)."
+      },
+      {
+        "id": "Round193-tau-g-is-canonical-involution-for-k-greater-than-one",
+        "reason": "When (m,m')>1 the recomputed character gcd changes, so the same-g canonical involution can fail."
+      },
+      {
+        "id": "Round193-modewise-orientation-pairing-is-valid",
+        "reason": "The involution can change the primitive Fourier modulus; the complete anchor Fourier sum must be recombined before physical pairing."
+      },
+      {
+        "id": "Round193-positive-capacity-of-complement-is-literal-lower-mass",
+        "reason": "The width ledger is only an upper-capacity limitation and does not realize actual endpoint coefficients or lower-bound either complement."
+      },
+      {
+        "id": "Round193-close-sector-proves-complete-core-or-t1",
+        "reason": "Both disjoint first-failure complements remain open, as do complete rho-large and complete original t=1."
+      },
+      {
+        "id": "Round193-close-sector-improves-global-exponent",
+        "reason": "A strict subordinate hard-M1 sector closes no parent, endpoint theorem, bridge, or global exponent."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1-hard-top-t1-rho-large-farey-covector-reduction",
+        "reason": "The accepted Round-192 core is the unchanged direct interface for the new physical split."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-fast-signed-inverse-transport-reduction",
+        "reason": "The accepted Round-191 rho-large reduction remains unchanged."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-high-h-dual-frequency-projective-reduction",
+        "reason": "The accepted Round-189 projective reduction is reopened only for deletion stability."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-high-h-imprimitive-lift-gcd-reduction",
+        "reason": "The accepted Round-188 lift reduction is reopened only for deletion stability."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-high-h-inverse-residue-conductor-reduction",
+        "reason": "The accepted Round-187 Fourier reduction is reopened only for deletion stability."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-residual-fejer-tangent-gcd-reduction",
+        "reason": "The accepted multiplicity-one physical chart is used unchanged as transitive provenance."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-comparable-factor-exchange-sector",
+        "reason": "The accepted Round-184 exchange sector and residual selector remain unchanged."
+      },
+      {
+        "id": "M9-M1-hard-top-small-t-nonresonant-primitive-ray-sector",
+        "reason": "The accepted Round-183 primitive-ray sector remains unchanged."
+      },
+      {
+        "id": "M9-M1-top-endpoint-signed-cone",
+        "reason": "Both rho-large first-failure complements, every t>=2 small-G incidence and the near-resonant complement remain open."
+      },
+      {
+        "id": "M9-M1-direct-smooth-residual-blockwise-estimate",
+        "reason": "Round 193 treats only one strict transformed hard-residual sector; the independent smooth parent remains open."
+      },
+      {
+        "id": "M9-M1-physical-one-count-assembly",
+        "reason": "Conditional assembly still requires the complete hard and smooth children."
+      },
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "reason": "The alternative GAR route is not treated."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "The complete hard small-t owner and independent smooth direct-M1 parent remain open."
+      },
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "reason": "No complete hard-TOP M2 channel is proved or changed."
+      },
+      {
+        "id": "M9-M2-smooth-balanced-quarter-packet-estimate",
+        "reason": "No balanced M2 estimate is proved."
+      },
+      {
+        "id": "M9-M2-smooth-unbalanced-three-quarter-estimate",
+        "reason": "No unbalanced M2 estimate is proved."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Complete hard TOP, BAL and UNBAL remain open."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "A subordinate hard-M1 physical sector proves no parent-level real-X endpoint theorem."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2 and endpoint uniformity remain incomplete."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The standard bridge still requires complete M9."
+      },
+      {
+        "id": "GC-global-M1-alternative-bridge",
+        "reason": "The alternative bridge still requires complete GAR or total active M1 and all of M9-M2."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The strongest theorem proved by the internal architecture remains exponent one third."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "The accepted external benchmark remains 0.3144831759740614... ."
+      },
+      {
+        "id": "GC-target",
+        "reason": "Both lawful quarter routes retain multiple open analytic parents and connectors."
+      },
+      {
+        "id": "Divisor-bound-elementary",
+        "reason": "The elementary divisor estimate is inherited unchanged through accepted connector ledgers."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 9,
+    "calibration_score": 10,
+    "reason": "Round 193 proves a stronger all-opposing double-close physical sector at target scale by a uniform gcd bound and determinant multiplicity, and proves that the exact accepted core restriction remains target-safe when every prior projector is rerun on the masked physical input. It also validates the proposed scaled orientation involution as subsidiary algebra, identifies the exact two-piece first-failure complement, and locates square-root width as the boundary of the absolute method. The qualified blind provenance is disclosed and is not a premise of the principal theorem. No complete core, owner, bridge, theorem or exponent is promoted."
+  }
+}

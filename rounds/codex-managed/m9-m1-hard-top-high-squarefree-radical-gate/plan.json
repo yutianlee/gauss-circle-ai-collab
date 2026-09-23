@@ -1,0 +1,249 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 181,
+    "round_type": "m9_m1_hard_top_high_squarefree_radical_gate",
+    "campaign_id": "m9-m1-hard-top-high-squarefree-radical-gate",
+    "title": "Hard-M1 high-squarefree-radical signed cone gate",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "6e3a87d42844a9a2150aad652b2f08a7b0584c3de17e6386311688552f6d7c16",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "planned_numerical_percent": 0,
+      "computation_policy": "No numerical theorem evidence is planned. Exact finite checks may only falsify product grouping, squarefree support, or controls and cannot certify the asymptotic target."
+    },
+    "target_obligations": [
+      "M9-M1-top-endpoint-signed-cone",
+      "M9-M1-top-endpoint-transform",
+      "M9-M1-direct-hard-smooth-separate-one-third-minimax",
+      "M9-M1-physical-one-count-assembly"
+    ],
+    "frozen_target": {
+      "question": "Can the complete literal high-squarefree-radical part of every residual hard-M1 product cone be bounded by L^(3/2) X^epsilon, closing the hard direct-M1 parent after the low-radical sector is paid, or does the first genuinely new actual-direction contraction self-return or retain L^2 capacity?",
+      "reference_formula": "|sum_(s>L, mu^2(s)=1) sum_(t>=1) C_(L,X)(s t^2) e(t sqrt(Xs))| <<_epsilon L^(3/2) X^epsilon, where C_(L,X)(r)=sum_(h|r, h asymp L, r/h odd, 4h<r/h<16h) chi_4(r/h) a_(L,X)^lit(h,r/h).",
+      "quantities": [
+        "The exact hard cone is T_L^M1=sum_(h asymp L)sum_(4h<n<16h,n odd)chi_4(n)a_(L,X)^lit(h,n)e(sqrt(Xhn)).",
+        "The symbol retains Phi(h/(H+1)), W(sqrt(4q_X h/n)), normalized powers, the dyadic shell, strict cone edges, floors, stars, both frequency signs, hard sample, real-X support crossings, and zero extensions.",
+        "Write every product uniquely as r=s t^2 with mu^2(s)=1; literal support gives s<<L^2 and t<<L/sqrt(s).",
+        "The proposed low-radical sector s<=L is target-safe by O(1+L/sqrt(s)) square multipliers and divisor-incidence multiplicity.",
+        "High-radical coefficient-insensitive capacity is L^2 X^epsilon against target L^(3/2) X^epsilon, leaving L^(1/2)=X^(1/12) at L asymp X^(1/6).",
+        "The t=1 high-radical face is mandatory; no gain may come only from averaging square multipliers.",
+        "BAL, UNBAL, smooth M1, GAR, M2, assembly, bridges, and exponent claims are forbidden pivots."
+      ]
+    },
+    "completion_criteria": [
+      "Derive the exact product-fibre identity, unique squarefree decomposition, support ranges, and low-radical incidence bound with every literal seam.",
+      "Attack the complete high-radical aggregate before any positive norm, retaining the actual chi_4-weighted coefficient and t=1 face.",
+      "Price every proposed fixed-t, joint-t, TT*, trace, completion, or spectral step against the exact missing L^(1/2).",
+      "Run perfect-square-centre, t=1, dechirped, arbitrary-coefficient, character-erased, endpoint, one-site, one-fibre, and hard-boundary controls.",
+      "Verify the exact implication from the high-radical target plus low-radical bound to M9-M1-top-endpoint-signed-cone only.",
+      "Prove the complete target, prove a strict owner-compatible target-safe sector with its exact complement, or establish the first exact capacity or self-return obstruction of a genuinely new mechanism.",
+      "Do not repeat product-fibre triangle, rank-one square-root wave, singular Hessian, second B-process, adjacent odd pairing, profile subtraction, canonical Gram, or combined M1/M2 routes.",
+      "Close under exactly one authorized exit label after blind and seam review."
+    ],
+    "controls": [
+      "exact_product_fibre_identity",
+      "unique_squarefree_kernel_decomposition",
+      "literal_product_support",
+      "low_radical_incidence_bound",
+      "high_radical_capacity_ledger",
+      "fixed_t_power_summation",
+      "joint_t_aggregate_scope",
+      "perfect_square_centre_control",
+      "high_radical_t1_control",
+      "complex_dechirped_control",
+      "arbitrary_coefficient_control",
+      "character_erasure_control",
+      "one_site_one_fibre_controls",
+      "hard_endpoint_and_zero_extension",
+      "both_frequency_signs_and_hard_sample",
+      "product_triangle_no_repeat",
+      "rank_one_square_root_wave_no_repeat",
+      "second_B_process_no_repeat",
+      "canonical_Gram_no_repeat",
+      "combined_M1_M2_no_repeat",
+      "hard_parent_connector",
+      "literal_unknown_quarantine",
+      "downstream_scope",
+      "exponent_quarantine"
+    ],
+    "exit_labels": [
+      "hard_m1_high_radical_target",
+      "strict_hard_m1_radical_sector",
+      "hard_m1_high_radical_capacity_or_self_return_no_go"
+    ],
+    "tasks": [
+      {
+        "id": "hard_m1_high_radical_signed_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "completed",
+        "target": "Prove the exact high-squarefree-radical aggregate at L^(3/2) X^epsilon, prove a strict owner-compatible sector with its complement retained, or isolate the first exact arithmetic self-return or capacity obstruction.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round181_selection/conductor_round181_selection_decision.md",
+          "strategy/round181_m1_hard_top_high_squarefree_radical_strategy.md",
+          "strategy/round181_selection/m1_gar_frontier_selection.md",
+          "rounds/codex-managed/m9-m1-direct-parent-minimax-gate/synthesis.md",
+          "rounds/codex-managed/m9-combined-top-cones/synthesis.md"
+        ],
+        "required_controls": [
+          "exact_product_fibre_identity",
+          "unique_squarefree_kernel_decomposition",
+          "literal_product_support",
+          "high_radical_capacity_ledger",
+          "fixed_t_power_summation",
+          "joint_t_aggregate_scope",
+          "perfect_square_centre_control",
+          "high_radical_t1_control",
+          "complex_dechirped_control",
+          "character_erasure_control",
+          "hard_endpoint_and_zero_extension",
+          "both_frequency_signs_and_hard_sample",
+          "rank_one_square_root_wave_no_repeat",
+          "literal_unknown_quarantine",
+          "downstream_scope",
+          "exponent_quarantine"
+        ],
+        "required_output": [
+          "A seven-section analytic report satisfying the repository report contract.",
+          "Exact formulas, hypotheses, powers, literal fields, first unproved step, and every control outcome.",
+          "A proof, strict owner-compatible sector, or the narrowest exact mechanism obstruction.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-hard-top-high-squarefree-radical-gate/reports/hard_m1_high_radical_signed_attack.md"
+      },
+      {
+        "id": "hard_m1_radical_connector_capacity_audit",
+        "role": "barrier_no_go",
+        "access_mode": "selected_context",
+        "status": "completed",
+        "target": "Independently verify the product and squarefree reductions, prove or refute the low-radical ledger, audit every literal seam and proposed source of L^(1/2), and check the exact hard-parent connector.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round181_selection/conductor_round181_selection_decision.md",
+          "strategy/round181_m1_hard_top_high_squarefree_radical_strategy.md",
+          "rounds/codex-managed/m9-m1-direct-parent-minimax-gate/reviews/conductor_round119_capacity_and_labels.md",
+          "rounds/codex-managed/m9-m1-direct-parent-minimax-gate/synthesis.md",
+          "rounds/codex-managed/m9-m1-direct-square-root-product-bilinear/synthesis.md"
+        ],
+        "required_controls": [
+          "exact_product_fibre_identity",
+          "unique_squarefree_kernel_decomposition",
+          "literal_product_support",
+          "low_radical_incidence_bound",
+          "high_radical_capacity_ledger",
+          "fixed_t_power_summation",
+          "perfect_square_centre_control",
+          "high_radical_t1_control",
+          "arbitrary_coefficient_control",
+          "character_erasure_control",
+          "one_site_one_fibre_controls",
+          "hard_endpoint_and_zero_extension",
+          "product_triangle_no_repeat",
+          "second_B_process_no_repeat",
+          "canonical_Gram_no_repeat",
+          "combined_M1_M2_no_repeat",
+          "hard_parent_connector",
+          "literal_unknown_quarantine",
+          "downstream_scope",
+          "exponent_quarantine"
+        ],
+        "required_output": [
+          "A seven-section hostile audit satisfying the repository report contract.",
+          "An exact seam proof or the first counterderivation with restored powers and literal-versus-adversarial separation.",
+          "A precise determination of whether the squarefree split is a strict reduction, self-return, or false partition of the owner.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-hard-top-high-squarefree-radical-gate/reports/hard_m1_radical_connector_capacity_audit.md"
+      },
+      {
+        "id": "blind_hard_m1_radical_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "completed",
+        "target": "From the isolated finite packet, derive the squarefree split, low-sector incidence bound, high-sector capacity and false controls, and the first structural relation required for the proposed fixed-direction saving.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/m9-m1-hard-top-high-squarefree-radical-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "state/best_proof_draft.md",
+          "all strategy files",
+          "all prior round artifacts",
+          "all sibling reports, reviews, controls, candidates, syntheses, sources, and conductor analysis"
+        ],
+        "required_controls": [
+          "exact_product_fibre_identity",
+          "unique_squarefree_kernel_decomposition",
+          "literal_product_support",
+          "low_radical_incidence_bound",
+          "high_radical_capacity_ledger",
+          "fixed_t_power_summation",
+          "perfect_square_centre_control",
+          "high_radical_t1_control",
+          "complex_dechirped_control",
+          "arbitrary_coefficient_control",
+          "character_erasure_control",
+          "one_site_one_fibre_controls",
+          "literal_unknown_quarantine",
+          "downstream_scope",
+          "exponent_quarantine"
+        ],
+        "required_output": [
+          "A seven-section statement-only report satisfying the repository report contract.",
+          "An independent exact derivation, capacity calculation, false controls, and first missing structural relation.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-hard-top-high-squarefree-radical-gate/reports/blind_hard_m1_radical_rederivation.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "product_squarefree_and_low_radical_seam",
+        "requirement": "Verify exact product regrouping, squarefree uniqueness, support, multiplicity, low-radical power, and all hard-profile endpoints."
+      },
+      {
+        "id": "high_radical_actual_direction_and_capacity",
+        "requirement": "Verify that every claimed saving retains the literal coefficient, chi_4, t=1, and exact L^(1/2) ledger before positivity."
+      },
+      {
+        "id": "blind_post_unmask_radical_control",
+        "requirement": "Compare the isolated finite analysis with the literal hard coefficient without contaminating blind provenance or treating capacity as literal lower mass."
+      },
+      {
+        "id": "hard_parent_scope_and_exponent",
+        "requirement": "Verify the exact implication to the hard direct-M1 parent only and quarantine smooth M1, GAR, M9-M1, M9-M2, bridges, theorem, and exponent claims."
+      }
+    ],
+    "closing_assessment": {
+      "decision": "promote_squarefree_radical_reduction_strict_sectors_and_scoped_self_return",
+      "terminal_label": "strict_hard_m1_radical_sector",
+      "graph_mutation": true,
+      "main_result": "Exact product and squarefree coordinates, the low-radical sector, and the disjoint high-radical large-multiplier sector are proved at target size. The exact small-t complement, including t=1, remains open. Complete Mobius linearization self-returns to the original cone modulo a target-safe correction; joint-t and central-Mellin automatic closures are parked only in their proved scopes.",
+      "resulting_graph_sha256": "fec130bc66641cbdad18c832de10077a7825f1caaf5d10170a67ef65c0b27196",
+      "patch_effect": "3_create_4_update_0_correct_13_reject_18_no_change",
+      "exponent_change": false,
+      "next_round": 182
+    }
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "6e3a87d42844a9a2150aad652b2f08a7b0584c3de17e6386311688552f6d7c16",
+    "generated_at": "2026-08-27T08:01:37.561951+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

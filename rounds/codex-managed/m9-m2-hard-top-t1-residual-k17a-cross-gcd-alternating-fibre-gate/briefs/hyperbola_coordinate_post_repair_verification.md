@@ -1,0 +1,3 @@
+# Round 176 hyperbola and coordinate post-repair verification
+
+Verify the repaired conductor candidate against the blind and hostile reports and your prior seam review.  Focus on the exact cross/blind dictionary, primitive Fourier modulus, robust hyperbola row count, fixed-proportion owner theorem, derivative-cell scope, and positive two-variable transform volume.  Write only `rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-gate/reviews/hyperbola_coordinate_post_repair_verification.md`.  Return GREEN only if the promoted statements follow from accepted literal support and all capacity statements remain route-scoped.  Do not edit any other artifact or shared state.

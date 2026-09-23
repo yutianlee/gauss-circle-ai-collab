@@ -30,7 +30,11 @@ Withdrawn source; no hypotheses are imported.
 
 ## Conclusion
 
-No mathematical conclusion from this paper is accepted in the project.
+No withdrawn estimate or theorem from this paper is accepted in the
+project.  A v1 Section-7 sawtooth identity may be retained only where the
+project has independently rederived and audited it inside the repaired
+Li--Yang chain; this does not restore theorem status to the withdrawn
+claims.
 
 ## Constants / Uniformity / Parameter Ranges
 
@@ -38,7 +42,8 @@ Not applicable.
 
 ## How Used In This Project
 
-Method-history comparison only, always marked withdrawn.
+Method-history comparison, always marked withdrawn, plus the narrowly
+independently rederived identity described above.
 
 ## Not Sufficient For
 

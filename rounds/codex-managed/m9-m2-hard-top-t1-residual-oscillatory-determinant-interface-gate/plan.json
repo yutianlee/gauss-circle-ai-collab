@@ -1,0 +1,225 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 167,
+    "round_type": "m9_m2_hard_top_t1_residual_oscillatory_determinant_interface_gate",
+    "campaign_id": "m9-m2-hard-top-t1-residual-oscillatory-determinant-interface-gate",
+    "title": "M2 hard-TOP residual oscillatory determinant source-interface gate",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "9d93f058c3623b7b278aa1ccba99adcf264c2e1d45af95ffbf993a123cfa1f76",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "planned_numerical_percent": 0,
+      "literature_policy": "Audit only exact primary-source hypotheses needed for the frozen determinant interface. A determinant skeleton or structural analogy is not theorem applicability."
+    },
+    "target_obligations": [
+      "M9-M2-hard-top-t1-residual-fejer-parity-gcd-scale-reduction",
+      "M9-M2-hard-top-t1-residual-transport-fejer-energy-reduction",
+      "M9-M2-top-endpoint-signed-cone",
+      "M9-M2"
+    ],
+    "frozen_target": {
+      "question": "Can the exact even-shift, opposing-displacement, low-divisor-gcd residual Fejer aggregate at R_0=ceil(L) be proved at L^2X^epsilon through one selector-aware oscillatory variable-determinant transform, or where is the first exact source-class or restored-power obstruction?",
+      "reference_formula": "Prove Re C_{R_0,2,opp,g<gamma L}^{rem} <<_{gamma,epsilon} L^2 X^epsilon, with R_0=ceil(L), after the literal opening d'm'-dm=r. Preserve exact multiplicity, the actual residual selector, chi_4 twist, even shifts, opposing tangent displacements, low divisor gcd, square-root phase, Fejer weight, endpoints, and one outer real part.",
+      "quantities": [
+        "The exact opened-incidence positive capacity is L^3X^epsilon; the target needs one factor L of genuine signed cancellation.",
+        "The determinant dictionary is [[d',d],[m,m']] with determinant r and must be multiplicity preserving.",
+        "After r=hk, k=2^{v_2(r)}, the preliminary determinant, two-adic gcd, and fixed chi_4 seams are compatible but do not constitute a theorem application.",
+        "The first currently identified source gap is the absence of a proved admissible automorphic or smooth representation of the selector-dependent multiplier.",
+        "Conditional phase smoothing requires delta^{-1} >= 1+Jr/L up to constants, while variable-r aggregation, the principal main term, K_+, residual correlation norms, cells, endpoints, and completion remain unpriced.",
+        "A fixed-r theorem followed by triangle inequality is forbidden because the target real part is outside the full shift aggregate.",
+        "Even success closes only the complete residual scalar; every parent and both exponent ledgers remain separate."
+      ]
+    },
+    "completion_criteria": [
+      "Derive an exact multiplicity-preserving determinant or orbit dictionary for every retained residual incidence.",
+      "Test a literal admissible representation of the actual selector, character, phase, Fejer factor, parity/gcd sector, endpoints, and variable determinant in one aggregate.",
+      "Audit every coefficient, automorphy, smoothness, determinant, gcd, support, quantifier, and absolute-value hypothesis of each invoked primary theorem.",
+      "Restore every phase-seminorm, main-term, K_+, residual-norm, two-adic, Mobius, cell, hard-crossing, endpoint, and completion cost to the L^2X^epsilon target.",
+      "Identify the actual selector or character feature that defeats the phase-aligned filter-erased control; do not infer this from arbitrary arrays alone.",
+      "Pass statement-only independence, source applicability, multiplicity, power/endpoint, and downstream graph-scope reviews.",
+      "Close under exactly one label: hard_top_t1_residual_short_shift_target, strict_oscillatory_determinant_sector, or oscillatory_determinant_interface_no_go."
+    ],
+    "controls": [
+      "literal_residual_selector_and_multiplicity",
+      "determinant_two_adic_gcd_character_dictionary",
+      "one_outer_real_part_and_variable_r_aggregate",
+      "oscillatory_phase_C7_seminorm",
+      "automorphic_or_smooth_coefficient_class",
+      "principal_main_term_and_K_plus",
+      "orbit_correlation_and_residual_norms",
+      "cells_Mobius_boundaries_and_completion",
+      "phase_aligned_filter_erased_control",
+      "fixed_shift_triangle_no_go",
+      "minimal_scale_power_ledger",
+      "endpoint_and_real_centre",
+      "primary_source_exact_hypotheses",
+      "statement_only_independence",
+      "downstream_scope_and_no_exponent_promotion",
+      "no_in_round_pivot"
+    ],
+    "tasks": [
+      {
+        "id": "literal_determinant_kernel_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "completed",
+        "target": "Open the literal K17a sector with exact multiplicity and attempt one joint selector-aware oscillatory variable-determinant transform. Either prove the full L^2X^epsilon aggregate, prove a strict owner-complete sector that survives every control, or isolate the first exact missing determinant-kernel lemma with a complete power ledger.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "proofs/kernels/m9_m2_hard_top_t1_residual_transport_fejer_energy_reduction.md",
+          "proofs/kernels/m9_m2_hard_top_t1_residual_fejer_parity_gcd_scale_reduction.md",
+          "strategy/conductor_0826_full_proof_strategy.md",
+          "strategy/round167_m2_hard_top_t1_residual_oscillatory_determinant_strategy.md",
+          "rounds/codex-managed/full-proof-round164-166-strategy-literature-review/synthesis.md",
+          "rounds/codex-managed/full-proof-round164-166-strategy-literature-review/reports/current_primary_literature_audit.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-residual-oscillatory-determinant-interface-gate/barrier_packet.md"
+        ],
+        "required_controls": [
+          "literal_residual_selector_and_multiplicity",
+          "determinant_two_adic_gcd_character_dictionary",
+          "one_outer_real_part_and_variable_r_aggregate",
+          "oscillatory_phase_C7_seminorm",
+          "automorphic_or_smooth_coefficient_class",
+          "principal_main_term_and_K_plus",
+          "orbit_correlation_and_residual_norms",
+          "cells_Mobius_boundaries_and_completion",
+          "phase_aligned_filter_erased_control",
+          "minimal_scale_power_ledger",
+          "endpoint_and_real_centre",
+          "downstream_scope_and_no_exponent_promotion",
+          "no_in_round_pivot"
+        ],
+        "required_output": [
+          "A seven-section analytic report satisfying the repository report contract.",
+          "An exact determinant dictionary, literal summand, multiplicity proof, and target-power ledger.",
+          "A proof, strict sector, or first exact missing lemma/no-go with no in-round pivot.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-hard-top-t1-residual-oscillatory-determinant-interface-gate/reports/literal_determinant_kernel_attack.md"
+      },
+      {
+        "id": "blind_determinant_interface_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "completed",
+        "target": "Starting only from the statement packet, independently derive the exact determinant mapping and decide whether one variable-determinant oscillatory aggregate can produce the missing factor L while preserving the literal selector and outer real part. Return a proof, strict sector, or the first exact interface/power no-go.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-residual-oscillatory-determinant-interface-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "state/active_campaign.yml",
+          "all strategy files",
+          "all Round-166 artifacts and source audits",
+          "Round-167 barrier packet",
+          "Round-167 sibling reports",
+          "all conductor candidates, reviews, and synthesis",
+          "all source theorem statements not contained in the blind packet"
+        ],
+        "required_controls": [
+          "literal_residual_selector_and_multiplicity",
+          "determinant_two_adic_gcd_character_dictionary",
+          "one_outer_real_part_and_variable_r_aggregate",
+          "phase_aligned_filter_erased_control",
+          "fixed_shift_triangle_no_go",
+          "minimal_scale_power_ledger",
+          "endpoint_and_real_centre",
+          "statement_only_independence",
+          "downstream_scope_and_no_exponent_promotion",
+          "no_in_round_pivot"
+        ],
+        "required_output": [
+          "A seven-section statement-only report satisfying the repository report contract.",
+          "An independent determinant/multiplicity/power derivation and the first doubtful step.",
+          "A proof, strict sector, or rigorous scoped no-go without source analogy.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-hard-top-t1-residual-oscillatory-determinant-interface-gate/reports/blind_determinant_interface_rederivation.md"
+      },
+      {
+        "id": "oscillatory_source_power_hostile_audit",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "status": "completed",
+        "target": "Hostilely audit the exact Grimmelt--Merikoski 2024 Theorem 10.1 and 2025 Part-I interfaces against the literal K17a sector. Decide the first failed coefficient, automorphy, smoothness, variable-determinant, main-term, orbit-correlation, power, or endpoint hypothesis, and determine whether any exact repair remains target-safe.",
+        "context_files": [
+          "protocol.md",
+          "state/active_campaign.yml",
+          "strategy/round167_m2_hard_top_t1_residual_oscillatory_determinant_strategy.md",
+          "proofs/kernels/m9_m2_hard_top_t1_residual_fejer_parity_gcd_scale_reduction.md",
+          "rounds/codex-managed/full-proof-round164-166-strategy-literature-review/reports/current_primary_literature_audit.md",
+          "rounds/codex-managed/full-proof-round164-166-strategy-literature-review/reviews/source_hypotheses_currency_interface_review.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-residual-oscillatory-determinant-interface-gate/barrier_packet.md"
+        ],
+        "required_controls": [
+          "literal_residual_selector_and_multiplicity",
+          "determinant_two_adic_gcd_character_dictionary",
+          "one_outer_real_part_and_variable_r_aggregate",
+          "oscillatory_phase_C7_seminorm",
+          "automorphic_or_smooth_coefficient_class",
+          "principal_main_term_and_K_plus",
+          "orbit_correlation_and_residual_norms",
+          "cells_Mobius_boundaries_and_completion",
+          "fixed_shift_triangle_no_go",
+          "minimal_scale_power_ledger",
+          "endpoint_and_real_centre",
+          "primary_source_exact_hypotheses",
+          "downstream_scope_and_no_exponent_promotion",
+          "no_in_round_pivot"
+        ],
+        "required_output": [
+          "A seven-section hostile source report satisfying the repository report contract.",
+          "Exact theorem hypotheses, literal parameter maps, absolute-value placement, seminorm exponents when recoverable, and first failed hypothesis.",
+          "A target-safe source interface or the narrowest rigorous source-placement no-go.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-hard-top-t1-residual-oscillatory-determinant-interface-gate/reports/oscillatory_source_power_hostile_audit.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "literal_dictionary_and_multiplicity",
+        "requirement": "Verify every residual incidence, determinant map, parity/gcd branch, selector, and multiplicity with no erased endpoint or duplicate orbit."
+      },
+      {
+        "id": "source_class_and_oscillatory_aggregate",
+        "requirement": "Verify exact source hypotheses, coefficient class, smoothness, phase seminorms, variable-r aggregation, and absolute-value placement."
+      },
+      {
+        "id": "restored_power_and_endpoints",
+        "requirement": "Verify every main term, K_+, residual norm, cell, modulus, Mobius, boundary, and completion cost against L^2X^epsilon."
+      },
+      {
+        "id": "control_and_downstream_scope",
+        "requirement": "Verify the literal structure used against false controls and prohibit promotion beyond the residual owner or to either exponent ledger."
+      }
+    ],
+    "closing_assessment": {
+      "decision": "promote_internal_determinant_endpoint_polylog_reduction_and_park_audited_source_interfaces",
+      "terminal_label": "oscillatory_determinant_interface_no_go",
+      "graph_mutation": true,
+      "mutation_scope": "one_homogeneous_internal_reduction_node_three_parent_or_frontier_updates_and_source_route_rejection_records_no_open_status_or_exponent_change",
+      "main_result": "The literal residual has an exact multiplicity-one determinant and endpoint-kernel representation with L^3X^epsilon Schur capacity. Every fixed-B polylogarithmic shift sector is target-safe. The non-polylogarithmic K17a range remains open, and the audited direct 2024, fixed-shift-triangle, and current Part-I interfaces do not certify it.",
+      "resulting_graph_sha256": "b1af2cf47d81dd96aba8941e590f8b8ec2733476af6dda78a822041f46511c31",
+      "exponent_change": false
+    }
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "b1af2cf47d81dd96aba8941e590f8b8ec2733476af6dda78a822041f46511c31",
+    "generated_at": "2026-08-26T07:29:31.191363+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

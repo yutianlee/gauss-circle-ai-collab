@@ -43,6 +43,59 @@ class ProofObligationPatchTests(unittest.TestCase):
         issues = validate_patch_against_graph(self.graph, patch)
         self.assertTrue(any("unknown claim" in issue for issue in issues))
 
+    def test_created_positive_judge_evidence_is_not_duplicated_as_inconclusive(self) -> None:
+        judge_ref = "rounds/test/judge.md"
+        patch = {
+            "proof_obligations": {
+                "create": [
+                    {
+                        "id": "new-claim",
+                        "status": "proved_internal",
+                        "evidence": {
+                            "positive": [judge_ref],
+                            "negative": [],
+                            "inconclusive": [],
+                        },
+                    }
+                ]
+            }
+        }
+        graph, _ = apply_state_patch(self.graph, patch, judge_ref=judge_ref)
+        evidence = graph["proof_obligations"][0]["evidence"]
+        self.assertEqual(evidence["positive"], [judge_ref])
+        self.assertEqual(evidence["inconclusive"], [])
+
+    def test_evidence_removed_is_bucket_specific(self) -> None:
+        judge_ref = "rounds/test/judge.md"
+        graph = {
+            "proof_obligations": [
+                {
+                    "id": "claim",
+                    "status": "proved_internal",
+                    "evidence": {
+                        "positive": [judge_ref],
+                        "negative": [],
+                        "inconclusive": [judge_ref, "rounds/test/diagnostic.md"],
+                    },
+                }
+            ],
+            "rejected_claims": [],
+        }
+        patch = {
+            "proof_obligations": {
+                "update": [
+                    {
+                        "id": "claim",
+                        "evidence_removed": {"inconclusive": [judge_ref]},
+                    }
+                ]
+            }
+        }
+        updated, _ = apply_state_patch(graph, patch)
+        evidence = updated["proof_obligations"][0]["evidence"]
+        self.assertEqual(evidence["positive"], [judge_ref])
+        self.assertEqual(evidence["inconclusive"], ["rounds/test/diagnostic.md"])
+
 
 if __name__ == "__main__":
     unittest.main()

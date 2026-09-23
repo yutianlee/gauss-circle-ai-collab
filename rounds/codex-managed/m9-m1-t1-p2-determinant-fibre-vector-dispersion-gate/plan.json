@@ -1,0 +1,310 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 195,
+    "round_type": "m9_m1_t1_p2_determinant_fibre_vector_dispersion_gate",
+    "campaign_id": "m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate",
+    "title": "Hard-M1 t=1 full-P2 determinant-fibre vector-dispersion gate",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "815c15c4aba04d4ac8e05a3af89db78b05607242fc933e23ec86954138700c89",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 98,
+      "numerical_experimental_maximum_percent": 2,
+      "planned_numerical_percent": 1,
+      "computation_policy": "Python or Mathematica may check only bounded determinant identities, fibre multiplicities, parity, collision equations, and small-index counterexamples. Every computation is diagnostic_only and cannot certify an asymptotic estimate."
+    },
+    "target_obligations": [
+      "M9-M1-hard-top-high-radical-small-t-residual-estimate",
+      "M9-M1-hard-top-t1-rho-large-gcd-scaled-close-sector",
+      "M9-M1-hard-top-t1-rho-large-farey-covector-reduction",
+      "M9-M1-hard-top-t1-fast-signed-inverse-transport-reduction",
+      "M9-M1-hard-top-t1-high-h-dual-frequency-projective-reduction",
+      "M9-M1-hard-top-t1-high-h-imprimitive-lift-gcd-reduction",
+      "M9-M1-hard-top-t1-high-h-inverse-residue-conductor-reduction",
+      "M9-M1-hard-top-t1-residual-fejer-tangent-gcd-reduction",
+      "M9-M1-top-endpoint-signed-cone",
+      "M9-M1"
+    ],
+    "frozen_target": {
+      "question": "Can the complete exact Round-193 lower-close/upper-far physical complement P_2 be estimated at fixed-packet scale by a coefficient-retaining determinant-fibre vector-dispersion theorem before positive norms, or does its literal Gram diagonal, phase-collision family, endpoint/carry/birth-death vector, or mask commutator give a rigorous scoped no-go?",
+      "reference_formula": "With P_2=1_(|d-gm|<=D_L)1_(|d'-gm'|>D_L), D_L=ceil(sqrt L), impose the mask physically before Fourier expansion and rerun the exact core operator. In plus coordinates set Delta_-=kappa(U-v)-2w and Delta_+=kappa(U-v)+2S, so 2h=v Delta_+ + U Delta_- - kappa(U^2-v^2), |g Delta_-|<=D_L, g Delta_+>D_L, and g=O(1). Prove |R_core,fix^sigma(P_2W)| << H_B times the spectral lift gcd times kappa u X^epsilon and hence the outer L^2 X^epsilon bound for the full P_2 mask, or locate the first exact obstruction.",
+      "quantities": [
+        "The fixed-packet positive capacity is Y kappa u X^epsilon and the target is H_B times the spectral lift gcd times kappa u X^epsilon, so the entire factor Y/(H_B times the spectral lift gcd) must be recovered before positive outer norms.",
+        "The stronger contraction relative to a packet's exact positive mass is optional and is not equivalent to the authoritative fixed-packet target.",
+        "At T=0 the Farey projector is empty and the complete inherited rho-large branch remains; at T>=1 every simultaneous strict Farey-covector inequality and |rho|>=(A+1)(T+1) remains.",
+        "Both orientations, frequency signs, the complete anchor Fourier sum, actual Vaaler/profile endpoint products, residual selectors, squarefree/coprimality masks, unequal endpoint translations, carries, Fejer weights, square-root phases, cells, crossings, births/deaths, physical-mask commutators, conjugations, and zero extensions remain under one outer real part.",
+        "Group first by the retained close coordinate (g,Delta_-), resolve the far coordinate by E<g Delta_+<=2E with E>=D_L, and retain the actual literal coefficient family as a vector before TT*, Gram, completion, or any positive norm.",
+        "A scalar coefficient-blind incidence estimate, separate-orientation norm, arbitrary bounded-array replacement, post-expansion scalar mask, wider D, additional Farey cover, or proper unpriced submask does not prove P_2.",
+        "The unsigned, character-erased, phase-conjugating, adversarial bounded-coefficient, and separately normed orientation shadows are required false controls.",
+        "Even complete P_2 success leaves P_1, original t>=2 and near-resonant incidences, smooth M1, GAR, every M2 parent, endpoint uniformity, M9, both bridges, the quarter target, and all exponents separate."
+      ]
+    },
+    "completion_criteria": [
+      "Reconstruct the exact physical-to-core P_2 operator, including T=0 and every strict T>=1 branch, before performing any determinant-fibre opening.",
+      "Derive both orientation versions of the Delta_-/Delta_+ determinant identity and a multiplicity-exact dyadic far-defect partition at fixed (g,Delta_-).",
+      "Write the actual literal endpoint, carry, birth/death, phase, mask-commutator, and zero-extension data as coefficient vectors; do not replace them by arbitrary bounded arrays.",
+      "Form the exact TT* or Gram matrix before positive norms, classify its diagonal, repeated-effective-phase collisions, and off-diagonal determinant fibres, and restore every H_B, spectral-lift-gcd, kappa, u, Y, L, and X power.",
+      "Prove the complete fixed-packet and outer P_2 targets, prove a genuinely target-safe strict sector with one exact complement, or isolate a rigorous scoped diagonal/collision/capacity/self-return no-go.",
+      "Test the unsigned, character-erased, phase-aligned adversarial, arbitrary-coefficient, separate-orientation, T-branch-deleted, wider-width, and proper-submask false controls.",
+      "Receive a fresh statement-only derivation of the determinant fibres, collision equations, necessary vector inequality, and first exact obstruction from the isolated packet.",
+      "Use no more than two percent bounded symbolic or numerical diagnostics and archive any such code, output, parameter range, pass rule, and theorem limitation.",
+      "Review normalization, physical/operator order, coefficient and character algebra, Gram diagonal/collisions, endpoint and commutator vectors, power ledger, blind post-unmask consistency, owner scope, and exponent quarantine before any promotion.",
+      "Apply no graph change without a mechanically valid State Patch, independent reverse/replay and protected-scope audits, green lifecycle validation, and one declared terminal label. Do not pivot in-round to P_1, another owner, or an exponent."
+    ],
+    "controls": [
+      "exact_round193_P2_physical_mask",
+      "mask_before_Fourier_and_height_difference",
+      "exact_round192_core_and_T_zero_scope",
+      "strict_T_positive_Farey_covectors",
+      "spectral_lift_gcd_vs_physical_cofactor_notation",
+      "both_orientation_primitive_charts",
+      "Delta_minus_Delta_plus_identity",
+      "lower_close_uniform_g_bound",
+      "upper_failure_positive_far_defect",
+      "dyadic_far_defect_partition",
+      "determinant_fibre_multiplicity",
+      "complete_anchor_Fourier_aggregate",
+      "actual_endpoint_coefficient_vectors",
+      "squarefree_coprimality_and_residual_selectors",
+      "unequal_endpoint_translations_and_carries",
+      "birth_death_zero_extension_vectors",
+      "physical_mask_commutator",
+      "Fejer_square_root_phase_cells_crossings",
+      "one_outer_real_part",
+      "TTstar_Gram_before_positive_norms",
+      "Gram_diagonal_and_phase_collisions",
+      "off_diagonal_determinant_fibres",
+      "Y_over_HBmfrak_deficit",
+      "fixed_packet_to_outer_power_ledger",
+      "unsigned_character_erased_adversarial_controls",
+      "no_arbitrary_bounded_coefficient_closure",
+      "no_separate_orientation_norm",
+      "no_width_Farey_or_proper_submask_escape",
+      "diagnostic_only_computation",
+      "original_t1_only_downstream_scope",
+      "no_in_round_owner_pivot",
+      "exponent_quarantine"
+    ],
+    "exit_labels": [
+      "hard_m1_t1_p2_target",
+      "strict_p2_determinant_fibre_vector_sector",
+      "p2_determinant_fibre_diagonal_or_self_return_no_go"
+    ],
+    "tasks": [
+      {
+        "id": "literal_p2_determinant_fibre_vector_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "completed",
+        "target": "Attack the complete exact P_2 fixed-packet operator. Derive the full two-orientation determinant-fibre opening, literal coefficient-vector Gram matrix, diagonal/collision and off-diagonal bounds, and the complete power ledger. Prove the whole P_2 target, a genuinely target-safe strict sector with one exact complement, or the first rigorous scoped no-go; never replace actual coefficients or take separate orientation norms.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "state/failure_ledger.md",
+          "strategy/round195_m1_t1_p2_determinant_fibre_vector_dispersion_strategy.md",
+          "proofs/kernels/m9_m1_hard_top_t1_rho_large_gcd_scaled_close_sector.md",
+          "proofs/kernels/m9_m1_hard_top_t1_rho_large_farey_covector_reduction.md",
+          "proofs/kernels/m9_m1_hard_top_t1_fast_signed_inverse_transport_reduction.md",
+          "proofs/kernels/m9_m1_hard_top_t1_high_h_dual_frequency_projective_reduction.md",
+          "proofs/kernels/m9_m1_hard_top_t1_residual_fejer_tangent_gcd_reduction.md",
+          "rounds/codex-managed/full-proof-round191-193-strategy-literature-review/synthesis.md",
+          "rounds/codex-managed/full-proof-round191-193-strategy-literature-review/reviews/conductor_round194_adjudication.md",
+          "rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/synthesis.md"
+        ],
+        "required_controls": [
+          "exact_round193_P2_physical_mask",
+          "mask_before_Fourier_and_height_difference",
+          "exact_round192_core_and_T_zero_scope",
+          "strict_T_positive_Farey_covectors",
+          "spectral_lift_gcd_vs_physical_cofactor_notation",
+          "both_orientation_primitive_charts",
+          "Delta_minus_Delta_plus_identity",
+          "lower_close_uniform_g_bound",
+          "upper_failure_positive_far_defect",
+          "dyadic_far_defect_partition",
+          "determinant_fibre_multiplicity",
+          "complete_anchor_Fourier_aggregate",
+          "actual_endpoint_coefficient_vectors",
+          "squarefree_coprimality_and_residual_selectors",
+          "unequal_endpoint_translations_and_carries",
+          "birth_death_zero_extension_vectors",
+          "physical_mask_commutator",
+          "Fejer_square_root_phase_cells_crossings",
+          "one_outer_real_part",
+          "TTstar_Gram_before_positive_norms",
+          "Gram_diagonal_and_phase_collisions",
+          "off_diagonal_determinant_fibres",
+          "Y_over_HBmfrak_deficit",
+          "fixed_packet_to_outer_power_ledger",
+          "original_t1_only_downstream_scope",
+          "exponent_quarantine"
+        ],
+        "required_output": [
+          "A seven-section analytical report satisfying the repository report contract.",
+          "An exact full-P_2 theorem, exact strict-sector-plus-complement theorem, or first rigorous determinant-fibre/Gram no-go with all literal coefficient and power seams exposed.",
+          "Write only the assigned report and any explicitly named bounded diagnostic under this campaign; make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reports/literal_p2_determinant_fibre_vector_attack.md"
+      },
+      {
+        "id": "p2_gram_diagonal_collision_hostile_audit",
+        "role": "barrier_no_go",
+        "access_mode": "selected_context",
+        "status": "completed",
+        "target": "Hostilely audit the full P_2 determinant-fibre program. Reconstruct the literal operator, compute the exact TT*/Gram diagonal and repeated-effective-phase relations, test endpoint/carry/birth-death/mask-commutator vectors and every false control, and prove the strongest repair or a scoped capacity/self-return obstruction without turning capacity into literal lower mass.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "state/failure_ledger.md",
+          "strategy/round195_m1_t1_p2_determinant_fibre_vector_dispersion_strategy.md",
+          "proofs/kernels/m9_m1_hard_top_t1_rho_large_gcd_scaled_close_sector.md",
+          "proofs/kernels/m9_m1_hard_top_t1_rho_large_farey_covector_reduction.md",
+          "proofs/kernels/m9_m1_hard_top_t1_fast_signed_inverse_transport_reduction.md",
+          "proofs/kernels/m9_m1_hard_top_t1_high_h_dual_frequency_projective_reduction.md",
+          "proofs/kernels/m9_m1_hard_top_t1_residual_fejer_tangent_gcd_reduction.md",
+          "rounds/codex-managed/full-proof-round191-193-strategy-literature-review/reviews/blind_post_unmask_frontier_selection_review.md",
+          "rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reports/core_projection_mask_power_hostile_audit.md",
+          "rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reports/joint_hv_phase_jump_hostile_audit.md"
+        ],
+        "required_controls": [
+          "exact_round193_P2_physical_mask",
+          "mask_before_Fourier_and_height_difference",
+          "exact_round192_core_and_T_zero_scope",
+          "strict_T_positive_Farey_covectors",
+          "spectral_lift_gcd_vs_physical_cofactor_notation",
+          "both_orientation_primitive_charts",
+          "Delta_minus_Delta_plus_identity",
+          "lower_close_uniform_g_bound",
+          "upper_failure_positive_far_defect",
+          "dyadic_far_defect_partition",
+          "determinant_fibre_multiplicity",
+          "actual_endpoint_coefficient_vectors",
+          "unequal_endpoint_translations_and_carries",
+          "birth_death_zero_extension_vectors",
+          "physical_mask_commutator",
+          "one_outer_real_part",
+          "TTstar_Gram_before_positive_norms",
+          "Gram_diagonal_and_phase_collisions",
+          "off_diagonal_determinant_fibres",
+          "Y_over_HBmfrak_deficit",
+          "fixed_packet_to_outer_power_ledger",
+          "unsigned_character_erased_adversarial_controls",
+          "no_arbitrary_bounded_coefficient_closure",
+          "no_separate_orientation_norm",
+          "no_width_Farey_or_proper_submask_escape",
+          "diagnostic_only_computation",
+          "original_t1_only_downstream_scope",
+          "exponent_quarantine"
+        ],
+        "required_output": [
+          "A seven-section hostile analytical report satisfying the repository report contract.",
+          "An independent exact audit or repair/no-go naming the first invalid equality or inequality, the literal collision family, the capacity-versus-lower-mass distinction, and every restored power.",
+          "Write only the assigned report and any explicitly named bounded diagnostic under this campaign; make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reports/p2_gram_diagonal_collision_hostile_audit.md"
+      },
+      {
+        "id": "blind_p2_determinant_fibre_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "completed",
+        "target": "From the isolated packet only, independently derive both P_2 determinant fibres, the exact far-defect multiplicities and collision equations, the vector inequality genuinely needed for the fixed-packet target, and either a valid coefficient-sensitive route or the first rigorous diagonal/self-return obstruction.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "state/active_campaign.yml",
+          "all strategy files",
+          "all source cards and web-search results",
+          "all prior round reports, reviews, controls, candidates, kernels and synthesis",
+          "all Round-195 sibling reports, reviews, controls and conductor analysis"
+        ],
+        "required_controls": [
+          "exact_round193_P2_physical_mask",
+          "mask_before_Fourier_and_height_difference",
+          "exact_round192_core_and_T_zero_scope",
+          "strict_T_positive_Farey_covectors",
+          "spectral_lift_gcd_vs_physical_cofactor_notation",
+          "both_orientation_primitive_charts",
+          "Delta_minus_Delta_plus_identity",
+          "lower_close_uniform_g_bound",
+          "upper_failure_positive_far_defect",
+          "dyadic_far_defect_partition",
+          "determinant_fibre_multiplicity",
+          "actual_endpoint_coefficient_vectors",
+          "birth_death_zero_extension_vectors",
+          "physical_mask_commutator",
+          "one_outer_real_part",
+          "TTstar_Gram_before_positive_norms",
+          "Gram_diagonal_and_phase_collisions",
+          "off_diagonal_determinant_fibres",
+          "Y_over_HBmfrak_deficit",
+          "fixed_packet_to_outer_power_ledger",
+          "unsigned_character_erased_adversarial_controls",
+          "no_arbitrary_bounded_coefficient_closure",
+          "no_separate_orientation_norm",
+          "no_width_Farey_or_proper_submask_escape",
+          "diagnostic_only_computation",
+          "original_t1_only_downstream_scope",
+          "exponent_quarantine"
+        ],
+        "required_output": [
+          "A seven-section statement-only report satisfying the repository report contract.",
+          "An independent exact derivation or repair/no-go with every collision, multiplicity, coefficient-structure requirement, false control, and normalization explicit.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reports/blind_p2_determinant_fibre_rederivation.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "P2_physical_operator_and_branch_normalization",
+        "requirement": "Verify the pre-operator P_2 mask, both primitive orientations, T=0 and strict T>=1 branches, spectral/physical notation, and the exact fixed-packet normalization."
+      },
+      {
+        "id": "determinant_fibre_multiplicity_and_collision",
+        "requirement": "Verify Delta identities, far-defect dyadic partition, fibre integrality/multiplicity, Gram diagonal, repeated-effective-phase families, and off-diagonal determinant relations."
+      },
+      {
+        "id": "literal_coefficient_endpoint_and_commutator_vectors",
+        "requirement": "Verify actual endpoint products, characters, masks, carries, births/deaths, physical-mask commutators, phases, cells, crossings, conjugations, zero extensions, both orientations, and the one outer real part."
+      },
+      {
+        "id": "fixed_packet_outer_power_and_false_controls",
+        "requirement": "Verify recovery of Y/(H_B times the spectral lift gcd), the outer L^2 ledger, and failure of unsigned, adversarial, arbitrary-coefficient, separate-orientation, wider-width, and proper-submask shadows."
+      },
+      {
+        "id": "blind_post_unmask_owner_and_exponent_scope",
+        "requirement": "Reconcile the statement-only derivation with the literal operator and quarantine P_1, all other original-t incidences, parents, endpoint, bridges, theorem, and exponents."
+      }
+    ],
+    "closing_assessment": {
+      "decision": "promote_P2_absolute_capacity_sectors",
+      "terminal_label": "strict_p2_determinant_fibre_vector_sector",
+      "graph_mutation": true,
+      "main_result": "The complete physical P_2 target is not proved. The entire kappa >= D_L sector and every fixed packet with kappa < D_L and min(Y,D_L) <= H_B times the spectral lift gcd times kappa are target-safe and contribute O(L^2 X^epsilon) after the accepted outer ledger. The exact remaining packet region is kappa < D_L and min(Y,D_L) > H_B times the spectral lift gcd times kappa. No hard-M1 owner, M9-M1, M9-M2, endpoint, bridge, theorem, or exponent closes.",
+      "resulting_graph_sha256": "f1f6bd2c9ff6370febf37b2c6f50c023cd142470922ffe9ce713e853f5efcce2",
+      "patch_effect": "1_create_1_update_0_correct_23_reject_27_no_change",
+      "exponent_change": false,
+      "next_round": 196
+    },
+    "scheduled_review": "Round 198 is the mandatory full-proof strategy and current-primary-literature checkpoint after analytic Rounds 195--197."
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "815c15c4aba04d4ac8e05a3af89db78b05607242fc933e23ec86954138700c89",
+    "generated_at": "2026-08-29T19:25:32.553054+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

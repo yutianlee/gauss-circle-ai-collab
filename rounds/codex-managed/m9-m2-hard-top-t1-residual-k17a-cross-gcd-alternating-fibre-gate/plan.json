@@ -1,0 +1,63 @@
+{
+  "campaign_id": "m9-m2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-gate",
+  "round_index": 176,
+  "round_type": "m9_m2_hard_top_t1_residual_k17a_cross_gcd_alternating_fibre_gate",
+  "title": "K17a cross-gcd alternating-fibre gate",
+  "status": "complete",
+  "starting_graph_sha256": "9409651dccbbd1c69547546b245ba04c21d2a280173733ae37b693f9894c8b03",
+  "manifest": "state/active_campaign.yml",
+  "strategy": "strategy/round176_m2_hard_top_t1_residual_k17a_cross_gcd_alternating_fibre_strategy.md",
+  "allocation": {
+    "analytical_algebraic_percent": 100,
+    "numerical_experimental_percent": 0
+  },
+  "tasks": [
+    {
+      "id": "literal_cross_gcd_alternating_fibre_attack",
+      "role": "discovery",
+      "status": "completed",
+      "brief": "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-gate/briefs/literal_cross_gcd_alternating_fibre_attack.md",
+      "report": "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-gate/reports/literal_cross_gcd_alternating_fibre_attack.md"
+    },
+    {
+      "id": "blind_k17a_variable_determinant_rederivation",
+      "role": "blind_rederiver",
+      "status": "completed",
+      "brief": "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-gate/briefs/blind_k17a_variable_determinant_rederivation.md",
+      "report": "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-gate/reports/blind_k17a_variable_determinant_rederivation.md"
+    },
+    {
+      "id": "joint_fibre_capacity_hostile_audit",
+      "role": "barrier_no_go",
+      "status": "completed",
+      "brief": "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-gate/briefs/joint_fibre_capacity_hostile_audit.md",
+      "report": "rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-gate/reports/joint_fibre_capacity_hostile_audit.md"
+    }
+  ],
+  "terminal_labels": [
+    "hard_top_t1_residual_k17a_variable_determinant_target",
+    "strict_k17a_cross_gcd_alternating_fibre_sector",
+    "k17a_cross_gcd_alternating_fibre_capacity_or_self_return_no_go"
+  ],
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "no_in_round_analytic_pivot": true,
+    "coordinator_owns_synthesis_and_state_patch": true
+  },
+  "closing_assessment": {
+    "decision": "promote_cross_gcd_alternating_fibre_reduction_and_fixed_proportion_sector",
+    "graph_mutation": true,
+    "terminal_label": "k17a_cross_gcd_alternating_fibre_capacity_or_self_return_no_go",
+    "main_result": "The exact two-orientation cross-gcd fibres carry a half-frequency character with logarithmic anchor-DFT cost. A robust hyperbola count proves the complete literal fixed-proportion sector kappa_*>=delta L at L^2 X^epsilon for every fixed delta, while the low-cross-gcd complement requires the unproved selector-aware signed joint inverse-residue estimate (176.K35). Positive rowwise and smooth-cell transforms restore capacity, so this is a scoped reduction and route no-go, not the full K17a theorem.",
+    "resulting_graph_sha256": "e3927f0ace0f3d74e9e9f5116a319159e3508838c7f7bd14b086fa851cad82b8",
+    "state_patch_counts": {
+      "create": 1,
+      "update": 3,
+      "correct_rejected": 0,
+      "reject": 16,
+      "no_change": 18
+    },
+    "exponent_change": false
+  }
+}

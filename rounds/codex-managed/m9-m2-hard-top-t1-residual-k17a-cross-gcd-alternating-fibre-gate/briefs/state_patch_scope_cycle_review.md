@@ -1,0 +1,3 @@
+# Round 176 State Patch scope and cycle review
+
+Review the final kernel, synthesis, conductor adjudication, current `state/proof_obligations.yml`, and the proposed campaign `state_patch.json`.  Validate every create/update/reject/no-change effect, dependency direction, status, owner boundary, evidence path, and next action.  Check for cycles, duplicate ids, hidden implications, exponent overclaim, and canonical reversibility from starting graph hash `9409651dccbbd1c69547546b245ba04c21d2a280173733ae37b693f9894c8b03`.  Recompute the exact patch counts.  Write only `rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-gate/reviews/state_patch_scope_cycle_review.md`.  Do not edit the patch or shared state.

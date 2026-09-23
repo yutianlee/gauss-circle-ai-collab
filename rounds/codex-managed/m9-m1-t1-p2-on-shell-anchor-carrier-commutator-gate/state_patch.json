@@ -1,0 +1,289 @@
+{
+  "starting_graph_sha256": "f1f6bd2c9ff6370febf37b2c6f50c023cd142470922ffe9ce713e853f5efcce2",
+  "reversibility": {
+    "rule": "Remove every rejected-claim record introduced by this patch; remove every evidence_added value; restore the next_action values and last-updated metadata recorded below. This recovers the canonical starting graph.",
+    "restore_next_action": {
+      "M9-M1-hard-top-high-radical-small-t-residual-estimate": "Rounds 187-195 prove the low Fourier packets, imprimitive lifts, projectively slow rows, signed-inverse-small rows, terminal and Fejer projections, a strict Farey union, the double-close physical sector, and the two P2 absolute-capacity sectors. The exact P2 remainder is kappa<D_L with min(Y,D_L)>H_B \\mathfrak m kappa; P1 also remains open. Prove one separately frozen complement while retaining both T branches, both orientations, actual endpoints and square-root phases, carries, births/deaths, mask commutators, cells, crossings and zero extensions under one outer real part. Even complete original t=1 success leaves every t>=2 small-G incidence and the large-G near-resonant complement open.",
+      "M9-M1-hard-top-t1-rho-large-P2-absolute-capacity-sectors": "Prove the exact remaining P2 packet region kappa<D_L and min(Y,D_L)>H_B \\mathfrak m kappa, or leave it open and attack the disjoint physical P1 complement in a separately frozen round. For the P2 remainder, form the joint ++,+-,-+,-- cross-row Gram only after exact same-site event recombination and retain actual endpoint products, square-root phases, Fejer factors, residual selectors, unequal translations, carries, births/deaths, physical-mask commutators, both T branches, zero extensions, and one outer real part. Within-row determinant multiplicity, anchor phases, arbitrary bounded arrays, separate orientation norms, or the squarefree root count alone are insufficient."
+    },
+    "restore_metadata": {
+      "M9-M1-hard-top-high-radical-small-t-residual-estimate": {
+        "last_updated_round": 195,
+        "last_updated_at": "2026-08-30T04:40:21"
+      },
+      "M9-M1-hard-top-t1-rho-large-P2-absolute-capacity-sectors": {
+        "last_updated_round": 195,
+        "last_updated_at": "2026-08-30T04:40:21"
+      }
+    }
+  },
+  "proof_obligations": {
+    "create": [],
+    "update": [
+      {
+        "id": "M9-M1-hard-top-high-radical-small-t-residual-estimate",
+        "evidence_added": {
+          "inconclusive": [
+            "proofs/kernels/m9_m1_hard_top_t1_p2_on_shell_carrier_normalization_self_return.md",
+            "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/candidates/formalized_hard_m1_t1_p2_on_shell_carrier_self_return.md",
+            "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reports/literal_on_shell_carrier_commutator_attack.md",
+            "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reports/carrier_collision_endpoint_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reports/blind_on_shell_phase_rederivation.md",
+            "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/conductor_round196_operator_normalization_analysis.md",
+            "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/conductor_round196_report_reconciliation.md",
+            "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/blind_post_unmask_on_shell_carrier_review.md",
+            "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/on_shell_normalization_live_wrap_seam_review.md",
+            "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/on_shell_normalization_live_wrap_postrepair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/commutator_power_owner_scope_seam_review.md",
+            "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/commutator_power_owner_scope_postrepair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/commutator_power_owner_scope_final_verification.md",
+            "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/blind_candidate_postrepair_consistency_verification.md",
+            "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/final_kernel_normalization_formalization_review.md",
+            "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/final_kernel_normalization_formalization_postrepair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/final_kernel_power_owner_scope_review.md",
+            "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/final_kernel_power_owner_scope_postrepair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/final_kernel_power_owner_scope_final_verification.md",
+            "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/final_kernel_blind_consistency_review.md",
+            "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/final_kernel_blind_postrepair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/conductor_round196_adjudication.md",
+            "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/controls/conductor_round196_launch_validation.md",
+            "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Rounds 187-195 prove the accepted Fourier, lift, projective, signed-inverse, Farey, double-close, and P2 absolute-capacity sectors. Round 196 proves that the on-shell primitive-4q carrier is only a parity-restored shadow: the literal fixed mode retains E_U(S_0), every live-to-live step has multiplier +e(a/q), the formal negative wrap is an unpaired live/dead boundary, and no common full-core Delta_2 exists. The exact P2 remainder kappa<D_L with min(Y,D_L)>H_B \\mathfrak m kappa and all of P1 remain open. Prove a coefficient-sensitive joint four-block P2 estimate with every literal field present, or attack P1 in a separately frozen round. Even complete original t=1 success leaves every t>=2 small-G incidence and the large-G near-resonant complement open."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-rho-large-P2-absolute-capacity-sectors",
+        "evidence_added": {
+          "inconclusive": [
+            "proofs/kernels/m9_m1_hard_top_t1_p2_on_shell_carrier_normalization_self_return.md",
+            "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/candidates/formalized_hard_m1_t1_p2_on_shell_carrier_self_return.md",
+            "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reports/literal_on_shell_carrier_commutator_attack.md",
+            "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reports/carrier_collision_endpoint_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reports/blind_on_shell_phase_rederivation.md",
+            "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/conductor_round196_operator_normalization_analysis.md",
+            "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/conductor_round196_report_reconciliation.md",
+            "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/blind_post_unmask_on_shell_carrier_review.md",
+            "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/on_shell_normalization_live_wrap_seam_review.md",
+            "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/on_shell_normalization_live_wrap_postrepair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/commutator_power_owner_scope_seam_review.md",
+            "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/commutator_power_owner_scope_postrepair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/commutator_power_owner_scope_final_verification.md",
+            "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/blind_candidate_postrepair_consistency_verification.md",
+            "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/final_kernel_normalization_formalization_review.md",
+            "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/final_kernel_normalization_formalization_postrepair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/final_kernel_power_owner_scope_review.md",
+            "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/final_kernel_power_owner_scope_postrepair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/final_kernel_power_owner_scope_final_verification.md",
+            "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/final_kernel_blind_consistency_review.md",
+            "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/final_kernel_blind_postrepair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/reviews/conductor_round196_adjudication.md",
+            "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/controls/conductor_round196_launch_validation.md",
+            "rounds/codex-managed/m9-m1-t1-p2-on-shell-anchor-carrier-commutator-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The exact remaining P2 packet region stays kappa<D_L and min(Y,D_L)>H_B \\mathfrak m kappa. Round 196 rules out only the proposed on-shell primitive-carrier completion: the literal atom keeps E_U(S_0), the live multiplier is +e(a/q), the formal negative wrap is an unpaired coprimality boundary, and the genuine height event is not one common Delta_2 on the complete two-orientation core. Prove the actual coefficient-sensitive ++,+-,-+,-- cross-row estimate before positive norms with endpoint products, phases, Fejer factors, masks, carries, births/deaths, both T branches and zero extensions intact, or attack the disjoint physical P1 complement in a separately frozen round. Do not retry parity restoration, full anchor recombination, consecutive support, arbitrary arrays, or separate orientation norms as though they were claimant operators."
+      }
+    ],
+    "correct_rejected": [],
+    "reject": [
+      {
+        "id": "Round196-parity-restored-shadow-is-literal-exact-conductor-atom",
+        "reason": "The literal atom contains (-1)^t and the parity-restored form has the additional nonconstant E_U(S_0) factor."
+      },
+      {
+        "id": "Round196-dropping-EU-preserves-exact-conductor",
+        "reason": "Deleting E_U(S_0) changes one literal fixed-conductor atom into a different operator."
+      },
+      {
+        "id": "Round196-multiplying-one-mode-by-EU-stays-in-packet",
+        "reason": "Multiplication by E_U convolves all U-frequencies and mixes exact conductors, projective bands, and safe/core packets."
+      },
+      {
+        "id": "Round196-literal-x-step-multiplier-is-minus-eaq",
+        "reason": "Every live-to-live adjacent step is nonwrap and has literal multiplier +e(a/q)."
+      },
+      {
+        "id": "Round196-live-wrap-supplies-denominator-cancellation",
+        "reason": "The formal negative wrap lands at S_0=0 and is a live/dead zero-extension event, not a paired live cancellation."
+      },
+      {
+        "id": "Round196-coprimality-mask-deletes-wrap-without-boundary",
+        "reason": "Zero extension retains the live/dead coprimality flip as an unpaired boundary atom with the original coefficient."
+      },
+      {
+        "id": "Round196-actual-height-event-is-uniform-Delta2-in-x",
+        "reason": "The exact displacement is 2 epsilon_omega rho; strict T>=1 rows have |rho|>1 and the complete T=0 branch is not a unit-inverse selector."
+      },
+      {
+        "id": "Round196-T0-rho-is-never-unit",
+        "reason": "At T=0 the accepted core does not exclude rho=+1 or rho=-1."
+      },
+      {
+        "id": "Round196-unit-inverse-T0-rows-prove-the-branch",
+        "reason": "The unit-inverse selector cannot replace the complete T=0 remainder unless its literal complement is proved empty or estimated."
+      },
+      {
+        "id": "Round196-gamma-may-replace-beta-in-farey-selector",
+        "reason": "The canonical Farey selector uses beta; gamma=beta+n rho is the distinct literal transport quotient."
+      },
+      {
+        "id": "Round196-minus-far-step-moves-common-x",
+        "reason": "In the minus chart x is the retained close coordinate and the literal far w-step leaves x fixed."
+      },
+      {
+        "id": "Round196-primitive-4q-carrier-alone-proves-saving",
+        "reason": "Primitivity belongs to the parity-restored shadow and supplies no literal fixed-packet estimate without a genuine event difference."
+      },
+      {
+        "id": "Round196-cumulative-antiderivative-is-cost-free",
+        "reason": "A manufactured primitive has full support and endpoint capacity and is not an identity for the divisor-supported literal operator."
+      },
+      {
+        "id": "Round196-parity-commutator-is-boundary-only",
+        "reason": "The E_U product-rule coefficient has modulus two on every live-to-live nonwrap edge."
+      },
+      {
+        "id": "Round196-full-anchor-recombination-estimates-high-conductor",
+        "reason": "Full recombination returns to pre-conductor physical parity and removes the distinguished high-conductor coefficient."
+      },
+      {
+        "id": "Round196-capacity-is-literal-lower-mass",
+        "reason": "The positive capacities and near-half controls delimit a method and do not prove nonvanishing or lower mass for the actual endpoint coefficients."
+      },
+      {
+        "id": "Round196-no-go-disproves-literal-P2",
+        "reason": "The no-go is mechanism-specific and leaves a different coefficient-sensitive complete P2 estimate logically open."
+      },
+      {
+        "id": "Round196-no-go-proves-strict-sector",
+        "reason": "The formal denominator-cancelling wrap has no live-to-live support and creates no nonempty target-safe sector."
+      },
+      {
+        "id": "Round196-no-go-closes-original-t1-or-owner",
+        "reason": "Complete P2, P1, other original-t incidences, and the hard small-t owner remain open."
+      },
+      {
+        "id": "Round196-no-go-improves-global-exponent",
+        "reason": "No parent, bridge, endpoint theorem, or target is promoted, so no exponent changes."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1-hard-top-t1-rho-large-gcd-scaled-close-sector",
+        "reason": "The accepted Round-193 physical P_cl/P1/P2 partition is unchanged."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-rho-large-farey-covector-reduction",
+        "reason": "The accepted Round-192 core, canonical beta selector, and both T branches are reused unchanged."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-fast-signed-inverse-transport-reduction",
+        "reason": "The accepted Round-191 signed inverse, literal gamma transport, terminal, Fejer, and Abel interfaces are unchanged."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-high-h-dual-frequency-projective-reduction",
+        "reason": "The accepted projective row and fixed-to-outer ledgers are reused unchanged."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-high-h-imprimitive-lift-gcd-reduction",
+        "reason": "The accepted lift identity and weight are reused unchanged."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-high-h-inverse-residue-conductor-reduction",
+        "reason": "The accepted Fourier conductor reduction and exact parity normalization remain unchanged."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-residual-fejer-tangent-gcd-reduction",
+        "reason": "The accepted primitive physical charts and multiplicity-one map are reused unchanged."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-comparable-factor-exchange-sector",
+        "reason": "The accepted comparable-factor sector and residual selector remain unchanged."
+      },
+      {
+        "id": "M9-M1-hard-top-small-t-nonresonant-primitive-ray-sector",
+        "reason": "The accepted primitive-ray strict sector remains unchanged."
+      },
+      {
+        "id": "M9-M1-hard-top-squarefree-radical-sector-reduction",
+        "reason": "The accepted squarefree-radical reduction remains unchanged."
+      },
+      {
+        "id": "M9-M1-top-endpoint-signed-cone",
+        "reason": "Complete original t=1, every t>=2 small-G incidence, and the near-resonant complement remain open."
+      },
+      {
+        "id": "M9-M1-direct-smooth-residual-blockwise-estimate",
+        "reason": "Round 196 treats no part of the independent smooth direct-M1 parent."
+      },
+      {
+        "id": "M9-M1-physical-one-count-assembly",
+        "reason": "The conditional direct-M1 assembly still lacks both complete analytic parents."
+      },
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "reason": "The alternative GAR route is not treated."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "The hard high-radical small-t owner and smooth direct-M1 parent remain open."
+      },
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "reason": "No complete hard-TOP M2 channel is proved or changed."
+      },
+      {
+        "id": "M9-M2-smooth-balanced-quarter-packet-estimate",
+        "reason": "No balanced M2 estimate is proved."
+      },
+      {
+        "id": "M9-M2-smooth-unbalanced-three-quarter-estimate",
+        "reason": "No unbalanced M2 estimate is proved."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Hard TOP, BAL, and UNBAL remain open."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "A route-scoped hard-M1 no-go proves no endpoint-uniform parent theorem."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain incomplete."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The standard bridge still requires complete M9."
+      },
+      {
+        "id": "GC-global-M1-alternative-bridge",
+        "reason": "The alternative bridge still requires GAR or total active M1 and complete M9-M2."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The strongest theorem proved by the internal architecture remains exponent one third."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "The accepted external benchmark remains 0.3144831759740614... ."
+      },
+      {
+        "id": "GC-target",
+        "reason": "Both lawful quarter routes retain multiple open analytic parents and connectors."
+      },
+      {
+        "id": "Divisor-bound-elementary",
+        "reason": "The elementary divisor bound is inherited unchanged."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 5,
+    "idea_quality_score": 7,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 196 proves an exact normalization/support no-go for the proposed on-shell primitive-carrier mechanism, resolves the missing E_U factor, live/dead wrap, beta/gamma coordinate, T=0 unit-inverse, and genuine-versus-artificial event seams, and preserves a reusable durable method boundary. It proves no new safe sector, leaves the exact Round-195 P2 remainder and every owner open, and changes no exponent."
+  }
+}

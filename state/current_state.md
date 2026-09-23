@@ -18133,7 +18133,7 @@ The addendum's proposal to elevate `M9b-CS-Cancellation` to a formal no-go lemma
 
 10. **Reject: ambiguous $\mathcal M_2$ Cauchy--Schwarz kernels.** The next proof draft should choose a consistent normalization or state both separately. Mixing the scalar factor and kernel placement of $|C_h|^2$ creates implementation errors.
 
-11. **Reject: `4th moment works' as a theorem.** Alternative A is promising because it may preserve signs, but it also creates additional diagonal and near-diagonal configurations. Its value depends on an explicit finite expansion and diagonal classification.
+11. **Reject: `4th moment works` as a theorem.** Alternative A is promising because it may preserve signs, but it also creates additional diagonal and near-diagonal configurations. Its value depends on an explicit finite expansion and diagonal classification.
 
 ## Known gaps
 
@@ -24747,3 +24747,1849 @@ See `rounds/obligation-main/round_008/judge/judge-008.md`.
 
 State patch validation: created: M9-M2-interval-URES-strip-identity, M9-M2-interval-URES-strip-count, M9-near-collision-absolute-lower-bounds, M9-M2-signed-lift-cancellation-B1, M9-M2-signed-fat-band-constant; updated: M9-near-collision-estimate, M9-M2-GM4-from-exact-plus-graded, M9-M2-fourth-moment-average-to-pointwise, M9-M2-exact-N0-total-mass, M9-M2-URES-representation-divisor-bound, M9-M2-URES-energy-reduction, M9-M2-unpaired-residual-URES, M9-M2-character-factor, M9-fourth-moment-enumeration, M9-regression-raw-vs-paired, H4-source-audit; rejected: A1-R8-global-GNC-low-for-all-D, A1-R8-full-range-GNC-Abs, A2-R8-M9-M2-absolute-mass-obstruction-proved-internal, A2-R8-URES-interval-factorization-as-written, A2-R8-Poisson-B-Process-Transform-proved, A3-R8-diagnostics-as-proof; no_change: M9, M9-M1, M9-M2, M9-endpoint-uniformity, GC-target, Conditional-bridge, H4, R5-Full, Li-Yang-source-audit; round score: 6; Round 8 makes real proof-graph-safe progress by refuting the old absolute near-collision route in upper dyadic ranges, adding interval URES strip infrastructure, and defining the signed fat-band target. It does not prove M9, M9-M2, M9-M1, H4, or the Gauss circle endpoint.
 
+## Round 165 Update
+
+Timestamp: 2026-08-26
+
+See rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/synthesis.md.
+
+State patch validation: created one proved-internal parity/gcd/scale
+reduction; updated the Round-164 residual reduction and the two open
+hard-TOP parents; recorded 21 rejected overclaims and 20 explicit
+no-change decisions.  Resulting graph:
+87d58660e7e11a23eb3d8759917e02376479ba38acaf727b0a2dc15d5920f5e0.
+
+The exact parity connector, complete monotone tangent sector,
+fixed-fraction high-divisor-gcd sector, and maximal-scale Fejer alternative
+are accepted.  The minimal low-gcd opposing aggregate (165.K17a) and the
+maximal even medium/long aggregate (165.K26) remain open.  All parents,
+the quarter theorem, and both global exponent records remain unchanged.
+
+## Round 166 Update
+
+Timestamp: 2026-08-26
+
+See
+`rounds/codex-managed/full-proof-round164-166-strategy-literature-review/synthesis.md`.
+
+Round 166 closed under `strategy_frontier_retained`.  Both the standard
+blockwise and GAR quarter-proof trees were reconstructed, every requested
+M1/M2 frontier was compared by target, positive capacity, owner leverage,
+and downstream scope, and current primary sources were audited.  No source
+directly proves either residual Fejer estimate or improves the certified
+unrestricted pointwise exponent.
+
+The sole Round-167 target is still (165.K17a):
+
+\[
+ \Re\mathfrak C_{R_0,2,{\rm opp},g<\gamma L}^{\rm rem}
+ \ll_{\gamma,\varepsilon}L^2X^\varepsilon,
+ \qquad R_0=\lceil L\rceil.
+\]
+
+Its new strategy gate is the exact determinant skeleton
+\(d'm'-dm=r\).  Grimmelt--Merikoski Theorem 10.1 is only a candidate
+source model.  The first failed literal hypothesis is the missing admissible
+selector-dependent coefficient/weight representation; the conditional phase
+cost is \(\delta^{-1}\gtrsim1+Jr/L\), and variable-\(r\), main-term,
+orbit-correlation, and endpoint costs remain open.
+
+The State Patch updated only next-action and inconclusive evidence.  Resulting
+graph:
+`9d93f058c3623b7b278aa1ccba99adcf264c2e1d45af95ffbf993a123cfa1f76`.
+Every proof status is unchanged.  Internal exponent \(1/3\), external
+Li--Yang benchmark \(0.3144831759740614\ldots\), target \(1/4\).
+
+## Round 167 Update
+
+Timestamp: 2026-08-26
+
+See
+`rounds/codex-managed/m9-m2-hard-top-t1-residual-oscillatory-determinant-interface-gate/synthesis.md`.
+
+Round 167 closed under `oscillatory_determinant_interface_no_go`.  It
+proved a multiplicity-one determinant opening and exact finite endpoint
+quadratic-form identity for K17a.  Schur control remains
+\(L^3X^\varepsilon\), one factor \(L\) above the target, but every fixed-
+\(B\) polylogarithmic initial shift sector is now owner-complete and
+\(O_{\varepsilon,B}(L^2X^\varepsilon)\).
+
+The bare \(\chi_4\) source coefficient has exact finite-orbit main-term
+cancellation for every two-power determinant part.  This does not repair
+the source call: the literal selector/common-function interface, variable-
+\(r\) phase, source correlation, \(\mathcal R_2\), seminorm, raw-kernel,
+principal-component, boundary, endpoint, and completion obligations remain
+open.  The no-go is confined to the audited direct 2024, fixed-shift
+triangle, and current Part-I placements.
+
+The resulting graph is `b1af2cf47d81dd96aba8941e590f8b8ec2733476af6dda78a822041f46511c31`.  K17a, the complete residual,
+every M2 and M1 parent, endpoint uniformity, M9, both bridges, and the
+quarter theorem remain open.  Exponents remain: internal \(1/3\), external
+Li--Yang \(0.3144831759740614\ldots\), target \(1/4\).
+
+## Round 168 Update
+
+Timestamp: 2026-08-26
+
+See
+`rounds/codex-managed/m9-m2-hard-top-t1-pre-mobius-mellin-euler-product-gate/synthesis.md`.
+
+Round 168 closed under `strict_t1_mellin_euler_sector`.  The complete
+selector-free \(t=1\) arithmetic family now has an exact two-variable
+Euler product and an endpoint-lawful cardinal Mellin reduction.  The only
+crossed pole has residue \(O_\varepsilon(L^2J^{-1}X^\varepsilon)\), so
+the polynomial range is reduced to one exact signed two-height integral.
+
+Every fixed-\(B\) polylogarithmic-\(L\) full scalar is target-safe.  For
+each fixed \(\kappa\), exact subtraction of the accepted XOR sector gives
+the same result for its residual complement.  The favorable smooth/BV
+absolute placements retain a structural \(\sqrt J\) deficit, and no exact
+factorwise-FE/AFE return to the Round-162 collar is proved.
+
+The State Patch created one proved-internal reduction, updated only the
+still-open hard-TOP signed-cone owner with inconclusive evidence, and
+recorded seven scoped false implications.  Resulting graph:
+`a360b2913563c9c288438751729c5033acd2e91ee613e44f171e1d31bc7441be`.
+The polynomial \(t=1\) scalar and residual, K17a, K26, all parents,
+bridges, and the quarter theorem remain open.  Exponents remain: internal
+\(1/3\), external Li--Yang \(0.3144831759740614\ldots\), target \(1/4\).
+
+## Round 169 Update
+
+Timestamp: 2026-08-26
+
+See
+`rounds/codex-managed/m9-m2-hard-top-t1-joint-functional-equation-spectral-gate/synthesis.md`.
+
+Round 169 closed under `t1_joint_FE_spectral_self_return_no_go`.  It
+proved the exact residual coefficient law, including the two-adic branch,
+and collapsed it to the accepted Mobius openings.  The completed zeta and
+\(L(s,\chi_4)\) equations give an exact finite double-Poisson identity.
+
+The finite physical zero mode is not the full Mellin residue.  Their
+difference \(E_0\), as well as each term separately, is
+\(O(L^2/J)\).  After this correction, the open signed two-height integral
+is exactly the active nonzero-frequency Round-162 product collar.  Its
+only positive stationary branch has \(k\ell=XQR\) and
+\(Q\ell\le Rk\le4Q\ell\).
+
+The favorable smooth positive capacity remains
+\(\sqrt{JL}X^\varepsilon\), and no theorem recombines the literal
+\(O(L^2)\) cardinal cells or places the signed outer coefficient aggregate
+in the audited spectral sources at target strength.  This is a scoped
+self-return, not a universal no-go.
+
+The State Patch created one proved-internal reduction, updated only the
+still-open hard-TOP signed-cone owner, and recorded seven scoped false
+implications.  Resulting graph:
+`111809875d911d279ae22bee2ce44f0dba97130eeedcdca0dc65f53f163283ae`.
+Every parent, bridge, theorem, and exponent remains unchanged: internal
+\(1/3\), audited external Li--Yang
+\(0.3144831759740614\ldots\), target \(1/4\).
+
+## Round 170 Launch
+
+Timestamp: 2026-08-26
+
+Campaign:
+`rounds/codex-managed/full-proof-round167-169-strategy-literature-review/plan.json`.
+
+Round 170 is the mandatory strategy checkpoint.  It reconstructs both
+quarter-proof trees, compares the Round-169 aggregate, K17a, K26, the
+remaining hard-TOP channels, BAL, UNBAL, both direct M1 parents, GAR, and
+endpoint assembly, and audits primary literature current through
+2026-08-26.  It will select exactly one Round-171 analytic objective; the
+selection itself cannot change a proof status or exponent.
+
+## Round 170 Update
+
+Timestamp: 2026-08-26
+
+See
+`rounds/codex-managed/full-proof-round167-169-strategy-literature-review/synthesis.md`.
+
+Round 170 closed under `strategy_frontier_reselected`. It found and repaired
+a material graph-scope defect: the persistent critical \(j=1\) balanced
+double-far child did not quantify over the complete BAL parent. A separate
+open remaining-label owner now covers noncritical \(j=1\) scales, the
+exact-square \(j=2\), \(K/L=16\) boundary, and every other uncovered BAL
+label.
+
+The sole selected next inequality is the scoped critical-\(j1\) remainder
+
+\[
+ |\mathcal R_B^{\rm osc}|\ll_\varepsilon L^3X^\varepsilon.
+\]
+
+Its positive capacity is \(L^4X^\varepsilon\), so the proposed exact
+two-defect commutator must save one factor \(L\) before positive norms. The
+identity is not proved. Fixed-\(p\) character constancy, both axial sectors,
+fixed-\(Q\) rulings, boundaries, multiplicity, and every literal weight are
+mandatory controls.
+
+The primary-source audit through 2026-08-26 found no literal theorem match
+and no later indexed unrestricted pointwise exponent improvement. Resulting
+graph:
+`4c98bb13558c06159c5ad23128c6f6ff52970db296863858832309a24a4720ac`.
+No estimate, parent, bridge, theorem, or exponent changed: internal \(1/3\),
+external Li--Yang \(0.3144831759740614\ldots\), target \(1/4\).
+
+## Round 171 Launch
+
+Timestamp: 2026-08-26
+
+Campaign:
+`rounds/codex-managed/m9-m2-balanced-critical-j1-two-defect-commutator-gate/plan.json`.
+
+Round 171 is active only on the persistent critical \(j=1\) balanced
+oscillatory remainder. Three orthogonal tasks attack the exact two-direction
+commutator, rederive it from a statement-only packet, and hostilely audit its
+identity, axial, boundary, ruling, adversary, restoration, and factor-\(L\)
+gates.
+
+No result may transfer to the separate remaining-label BAL owner, full BAL,
+another proof parent, a bridge, or an exponent. The round stops at its first
+exact failed gate and cannot pivot.
+
+## Round 171 Update
+
+Timestamp: 2026-08-26
+
+See
+`rounds/codex-managed/m9-m2-balanced-critical-j1-two-defect-commutator-gate/synthesis.md`.
+
+Round 171 closed under `balanced_two_defect_commutator_no_go`.  The exact
+shift chart, both defect factorizations, fixed-\(p\) character law, axial
+sectors, affine singular strips, and real endpoint-swap identity were proved.
+The axes and fixed-width singular strips are individually target-safe.
+
+The proposed local multiplier commutators do not produce the missing saving:
+off the singular strips their multiplier can be divided out and the identity
+reduces to the original alternating shift.  The real endpoint swap leaves an
+even-even complement of positive capacity \(L^4X^\varepsilon\), and every
+coefficient-independent two-step Abel primitive carries a forced ramp of
+length \(L\).  Hence this route cannot reach the required
+\(L^3X^\varepsilon\) ledger by positive estimates.
+
+The applied State Patch creates one proved-internal obstruction, updates only
+the still-open critical remainder and energy owners, and records eighteen
+scoped false implications.  The physical remainder is not disproved, and
+weighted, composite, or nonlocal actual-symbol commutators remain possible.
+The resulting graph is
+`c98f95b6b3500d0f48365af338e543f9a0f251b22062f3898df5f448d6b54853`.
+All parents, bridges, the quarter theorem, and the exponent ledger remain
+open and unchanged.
+
+## Round 172 Launch
+
+Timestamp: 2026-08-26
+
+Campaign:
+`rounds/codex-managed/m9-m2-hard-top-t1-residual-maximal-fejer-dyadic-frequency-gate/plan.json`.
+
+Round 172 rotates to the exact maximal-scale hard-TOP residual alternative
+(165.K26).  Three selection audits chose this interface because it has one
+complete sufficient scalar, a precise \(L^4\)-to-\(L^3\) factor-\(L\)
+deficit, and a new falsifiable dyadic-frequency gate.
+
+The round decomposes the even parity-Fejer energy into adjacent-scale
+bandpasses with zero diagonal.  Each exact doubling has both a triangular-
+tent \((r,N)\) form and a block-energy minus Haar-detail form.  The literal
+attack will test finite character Poisson on the common Fejer frequency
+before any positive dual-mode sum; the statement-only task and hostile audit
+independently test the identities, endpoints, false controls, restored power,
+and collar self-return.
+
+No result may transfer beyond K26 and the complete residual \(t=1\) scalar.
+The other \(t=1\) channels, hard TOP, BAL, UNBAL, every parent, both bridges,
+the quarter theorem, and all exponents remain quarantined.
+
+## Round 172 Update
+
+Timestamp: 2026-08-26
+
+See
+`rounds/codex-managed/m9-m2-hard-top-t1-residual-maximal-fejer-dyadic-frequency-gate/synthesis.md`.
+
+Round 172 closed under `maximal_fejer_dyadic_character_poisson_no_go`.
+It proved the exact stopped parity-Fejer telescope, zero-diagonal link
+weights, doubling-only Haar identity, strict terminal link, and the complete
+real-cardinal character--ordinary-Poisson transform with constants (i/2)
+and (1/8).  The ordinary-zero-containing sector is target-safe only after
+full signed odd-frequency recombination.
+
+The remaining theorem is the complete literal signed nonzero ordinary-
+frequency aggregate, either linkwise or after the whole stopped chain.
+Physical zero diagonal does not erase a dual diagonal.  Before an
+actual-symbol gain, positive norms over modes, cells, openings, or frequency
+retain (L^4X^\varepsilon) capacity against the (L^3X^\varepsilon)
+target.  The sharp diagnostic array is nonliteral and proves no physical
+lower bound; cross-link cancellation and coefficient-sensitive positive
+theorems remain open.
+
+The applied State Patch creates one route-scoped proved-internal obstruction,
+updates only two open hard-TOP endpoint interfaces without changing status,
+and records eighteen false implications.  Its post-application exact inverse
+recovers the certified Round-171 graph.  The authoritative graph is
+`70592c104e0c149485b4fac3fe6582020767631938fe9036f204ae616f188b7f`.
+K26, every parent, both bridges, the quarter theorem, and the exponent ledger
+remain open and unchanged.
+
+## Round 173 Launch
+
+Timestamp: 2026-08-26
+
+Campaign:
+`rounds/codex-managed/m9-m2-hard-top-t1-residual-tangent-fejer-commutator-gate/plan.json`.
+
+Three post-closure audits separated two ideas. Fixed-product divisor-fibre
+centering is deferred because its exact sign-reversing toggles cross disjoint
+literal supports and leave an uncontrolled positive no-pair complement. The
+selected operator instead follows the tangent divisor coordinate across
+different products and shifts before positivity.
+
+Writing \(d'=d+2s\), \(m'=m+v\), with \(v\) even, gives the exact character
+factor \((-1)^s\). One finite alternating difference splits every Fejer link
+into a bandpass commutator and a complete actual-symbol difference remainder.
+The commutator has a candidate target-safe \(L^3X^\varepsilon\) ledger because
+one tangent step moves the gap by \(2m'\asymp L\), while the link weight has
+slope \(O(R^{-1})\). The remainder retains every selector, mask, support
+jump, endpoint, and phase increment and is unproved.
+
+Round 173 must prove that whole-chain remainder, an owner-complete strict
+sector, or the first exact no-go. It cannot pivot. Round 174 is the mandatory
+full-proof strategy and current-primary-literature review after closure.
+
+## Round 173 Update
+
+Timestamp: 2026-08-26
+
+See
+`rounds/codex-managed/m9-m2-hard-top-t1-residual-tangent-fejer-commutator-gate/synthesis.md`.
+
+Round 173 closed under `tangent_fejer_actual_symbol_commutator_no_go`. The
+complete tangent chart, character alternation, Fejer-bandpass split, cusp and
+terminal-link estimates, and whole-chain reconstruction are exact. The
+commutator is target-safe at \(L^3X^\varepsilon\).
+
+The complementary actual-symbol difference is not a smaller theorem. Exact
+reindexing turns it into the adjacent sum of the original link weights, and
+the stopped-chain identity returns to \(2T_{26}\), one short correction, and
+the target-safe commutator. Positive closure still has
+\(L^4X^\varepsilon\) top-link capacity. The nonliteral phase-adapted control
+and the allowed all-\(1\pmod4\) no-pair support warning are not physical lower
+bounds or owner-complete sectors.
+
+The applied State Patch creates one proved-internal route obstruction and
+updates only two still-open hard-TOP owners with inconclusive evidence. Its
+post-application inverse recovers the certified Round-172 graph exactly. The
+authoritative graph is
+`04090ef6aa8d7d28e05a312f1f2f069fe3ab44ad62002d68d6b62c49dc0d962a`.
+
+K26, the residual \(t=1\) scalar, the other hard-TOP channels, full BAL,
+UNBAL, M9--M2, both direct M1 parents or GAR, endpoint uniformity, M9, both
+bridges, and the quarter theorem remain open. No exponent changes: internal
+\(1/3\), accepted external Li--Yang
+\(0.3144831759740614\ldots\), target \(1/4\). Round 174 is now due as the
+mandatory full-proof and current-primary-literature review.
+
+## Round 174 Launch
+
+Timestamp: 2026-08-26
+
+Campaign:
+`rounds/codex-managed/full-proof-round171-173-strategy-literature-review/plan.json`.
+
+Round 174 is active as the mandatory three-round checkpoint. One task
+reconstructs both complete proof trees and every owner/power deficit, one
+audits current primary literature through 2026-08-27, and one independently
+ranks the frontier from a statement-only packet.
+
+The review compares K26, K17a, the full \(t=1\) signed aggregate, remaining
+hard TOP, both BAL scopes, UNBAL, both direct M1 parents, GAR, endpoint
+assembly, and every lawful exponent connector. It may select exactly one
+Round-175 objective but cannot promote an estimate, theorem, bridge, or
+exponent by ranking or analogy.
+
+## Round 174 Update
+
+Timestamp: 2026-08-27
+
+See
+`rounds/codex-managed/full-proof-round171-173-strategy-literature-review/synthesis.md`.
+
+Round 174 closed under `strategy_frontier_retained`. Both lawful quarter
+routes were reconstructed with every mandatory open leaf. The standard route
+still needs both direct M1 parents, complete hard TOP, both BAL scopes,
+UNBAL, endpoint uniformity, M9, and the conditional bridge. The alternative
+route replaces only the two direct M1 parents by complete GAR and its
+total-active bridge; it still needs all of M9--M2, and GAR does not prove
+blockwise M9--M1 or M9.
+
+The source audit is current through 2026-08-27. After repair of four source
+and interface seams, no audited primary theorem proves a live project owner
+or improves the unrestricted pointwise benchmark. The repaired Li--Yang
+preprint dependency remains the accepted external record at
+\(0.3144831759740614\ldots\).
+
+The sole planned Round-175 theorem is the exact one-sided whole-stopped-chain
+K26 nonzero-frequency bound
+
+\[
+ \sum_{j=0}^{K-1}\mathcal N_{R_j,R_{j+1}}
+ \ll_\varepsilon L^3X^\varepsilon.
+\]
+
+It allows cancellation across links and requires a literal actual-symbol
+gain before positivity. Its coefficient-insensitive capacity is
+\(L^4X^\varepsilon\), so one factor \(L\) remains missing. The applied
+State Patch changes only inconclusive evidence and next action on the
+accepted residual reduction, appends twenty-two rejected overclaims, and
+records twenty-three no-change decisions. Exact post-application audits
+recover the starting graph and find no status, statement, edge, cycle,
+theorem, bridge, or exponent drift.
+
+The authoritative graph is
+`e40c214351d06bf05212e25fffbec0f1a4808be21cb9098ba25823f0d9bbf211`.
+The Gauss circle conjecture is not proved. Exponents remain internal
+\(1/3\), accepted external \(0.3144831759740614\ldots\), and target
+\(1/4\). Round 175 is planned but not launched.
+
+## Round 175 Launch
+
+Timestamp: 2026-08-27
+
+Campaign:
+rounds/codex-managed/m9-m2-hard-top-t1-residual-whole-chain-actual-symbol-scale-correlation-gate/plan.json.
+
+Round 175 is active on the validated Round-174 graph. Its sole frozen
+objective is the exact one-sided whole-stopped-chain K26 nonzero ordinary-
+frequency aggregate at \(L^3X^\varepsilon\). The literal coefficient, both
+parity branches, all links including the strict final link, collective
+ordinary-zero restoration, and once-only short correction remain inside the
+owner-complete formulation.
+
+Three orthogonal tasks test a literal actual-symbol factor-\(L\) mechanism,
+independently rederive the statement from an isolated packet, and audit
+capacity and self-return barriers. Coefficient-uniform positivity, dechirped
+controls, fixed-dual-diagonal deletion, rank-one peak savings, the Round-173
+tangent family, strict subaggregates, and any restored \(L^4X^\varepsilon\)
+ledger are forbidden. No in-round pivot is authorized.
+
+No estimate, proof owner, bridge, theorem, or exponent is promoted at launch.
+Even success would close only K26 and the complete residual scalar.
+
+## Round 175 Update
+
+Timestamp: 2026-08-27
+
+See
+`rounds/codex-managed/m9-m2-hard-top-t1-residual-whole-chain-actual-symbol-scale-correlation-gate/synthesis.md`.
+
+Round 175 closed under
+`whole_chain_actual_symbol_capacity_or_self_return_no_go`. The exact
+nonzero-frequency link is a positive-energy coboundary,
+
+\[
+ \mathcal N_{R,S}=Q_S^*-Q_R^*,
+\]
+
+so the entire stopped chain is \(Q_M^*-Q_{R_0}^*\). The lower endpoint is
+already \(O_\varepsilon(L^3X^\varepsilon)\). After the collectively
+recombined ordinary-zero sector and once-only short correction are restored,
+the chain target is equivalent at target strength to K26 and to the still-
+open literal estimate \(Q_M^*\ll_\varepsilon L^3X^\varepsilon\).
+
+The scale index is therefore not an independent cancellation variable.
+Scalar scale Abel, normalized Haar, or martingale weights either change the
+target or restore the top scale. Coefficient-independent positivity has
+\(L^4X^\varepsilon\) capacity; the sharp even-site and abstract controls are
+nonliteral and prove no residual lower bound. The squarefree, selector,
+character-pairing, and profile-BV identities supply no automatic factor
+\(L\), while a genuinely coefficient-sensitive endpoint theorem remains
+unexcluded.
+
+The applied State Patch creates one proved-internal route obstruction,
+updates exactly one proved reduction and two open endpoint owners without
+status changes, appends thirteen scoped rejected overclaims, and reverses
+exactly to the certified Round-174 graph. The authoritative graph is
+`9409651dccbbd1c69547546b245ba04c21d2a280173733ae37b693f9894c8b03`.
+
+K26, the residual scalar, full \(t=1\), the other hard-TOP channels, hard
+TOP, both BAL scopes, UNBAL, M9--M2, both direct M1 parents or GAR, endpoint
+uniformity, M9, both bridges, and the quarter theorem remain open. No exponent
+changes: internal \(1/3\), accepted external Li--Yang
+\(0.3144831759740614\ldots\), target \(1/4\).
+## Round 176 launch update (2026-08-27)
+
+Round 176 is active on the unchanged authoritative graph
+`9409651dccbbd1c69547546b245ba04c21d2a280173733ae37b693f9894c8b03`.
+It tests only the complete non-polylogarithmic K17a cross-gcd
+alternating-fibre mechanism. The exact parity-preserving fibre has
+\(\chi_4(d')\chi_4(d)=\sigma_0(-1)^t\); the open question is whether this
+half-frequency survives the squarefree projector, selected/no-pair rule,
+original gcd cutoff, phase aliases, endpoints, and zero extension before
+every modulus. The launch changes no proof status or exponent.
+
+## Round 176 update
+
+Timestamp: 2026-08-27
+
+See
+`rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-gate/synthesis.md`.
+
+Round 176 closed under
+`k17a_cross_gcd_alternating_fibre_capacity_or_self_return_no_go`. The exact
+two-orientation, multiplicity-one cross-gcd fibre is proved. Its original
+divisor gcd is the fibre-stable quantity \((u,n)\), and its character is an
+exact half-frequency whose canonical anchor has logarithmic normalized
+Fourier algebra cost.
+
+A robust hyperbola count proves the complete literal fixed-proportion sector
+\(\kappa_*\ge\delta L\) at \(L^2X^\varepsilon\) for every fixed
+\(0<\delta<1/2\). The complement \(\kappa_*<\delta L\) remains open.
+Positive rowwise and two-variable transforms restore capacity, and an
+isolated inverse-residue square-root saving remains insufficient. The first
+live theorem is the selector-aware signed joint estimate (176.K35), retaining
+the near-half alias and every literal selector and endpoint field.
+
+The applied State Patch creates one subordinate proved-internal reduction,
+updates three nodes without status changes, and has exact effect
+`1/3/0/16/18`. The authoritative graph is
+`e3927f0ace0f3d74e9e9f5116a319159e3508838c7f7bd14b086fa851cad82b8`.
+K17a, K26, the residual scalar, full hard TOP, both BAL scopes, UNBAL,
+M9--M2, M9--M1 or GAR, endpoint uniformity, M9, both bridges, and the quarter
+theorem remain open. Exponents are unchanged: internal \(1/3\), accepted
+external \(0.3144831759740614\ldots\), target \(1/4\).
+
+Round 177 is active on the unchanged graph. It tests the complete signed
+fixed-\((\kappa,u)\) hybrid block over \(v,n,t\), whose raw capacity is
+\(L^2/\kappa\) and whose sufficient local scale is \(L\). The near-half
+alias, primitive conductor, selector, squarefree/parity fields, endpoints,
+and both orientations remain coupled. No proof status or exponent changed
+at launch.
+
+Round 178 remains mandatory immediately after Round 177 closes and will
+perform the full-proof strategy and current-primary-literature checkpoint.
+
+## Round 177 closure update
+
+Timestamp: 2026-08-27
+
+Round 177 closed under
+strict_k17a_low_cross_gcd_selector_aware_sector. Exact primitive folding
+reduces the anchor modulus to \(u_0=u/(u,n)\), and an alias of reduced
+conductor \(q=u_0/(\ell,u_0)\) has total coefficient mass
+\(O((q/u_0)\log(2q))\). Since a fixed primitive stratum has
+\(O(u_0L)\) literal capacity, the complete packet
+\(q\le(\log(2X))^B\) is target-safe for every fixed \(B>0\), including
+the complete physical small-\(u_0\) sector.
+
+The exact high-conductor packet remains open. One reciprocal square-root
+saving leaves \(L\sqrt q\); exact rank-one \(TT^*\) self-returns, positive
+alias Parseval exposes only nonliteral capacities, the incomplete lifts
+cannot be erased, and complementary divisors do not pair the literal
+orientations.
+
+The State Patch has exact effect 1/4/0/16/18 and yields graph
+47c628b3e4b5086391fb3dbd885865ab21bd7470541099f696044bd2d3b609f7.
+Canonical inversion and controlled reapplication are exact, and no
+patch-local cycle or implication was added.
+
+Complete K17a, K26, hard TOP, both BAL scopes, UNBAL, M9--M2, M9--M1 or
+GAR, endpoint uniformity, M9, both bridges, and the quarter theorem remain
+open. Exponents are unchanged: internal \(1/3\), accepted external
+\(0.3144831759740614\ldots\), target \(1/4\).
+
+Round 178 is planned but not launched and must now perform the full-proof
+strategy and current-primary-literature checkpoint.
+
+## Round 178 closure update
+
+Timestamp: 2026-08-27
+
+Round 178 closes under `strategy_frontier_retained`. The full graph audit
+confirms that the standard quarter route still needs both direct M1 parents,
+all three M2 parents, endpoint uniformity, M9, and the conditional bridge.
+The alternative route may replace only the direct M1 conjunction by complete
+GAR plus its separate total-active bridge; it still needs every M2 parent.
+
+The unique Round-179 target is the exact signed high-conductor K17a block
+(177.K34), uniformly at local scale \(LX^\varepsilon\). Its positive
+exact-conductor capacity is \(Lq\log(2q)\), and one conductor square root
+leaves \(L\sqrt q\log(2q)\). K26 remains open and ranks second: its
+whole stopped chain is already known to collapse to its maximal endpoint,
+so its original scale resource is exhausted but the endpoint estimate is not
+disproved.
+
+The repaired primary-source audit, dated through 2026-08-27, finds no exact
+theorem match for a live literal interface in the named corpus. The
+strategy-only State Patch has exact effect `0/1/0/16/20` and yields graph
+`e04380a1965e57971bb68d8169d8a8d8e5349edb535e01b343c8b25ecdcd4e27`.
+It changes no analytic status, edge, bridge, theorem, or exponent.
+
+Complete K17a, K26, the residual scalar, full \(t=1\), hard TOP, both BAL
+scopes, UNBAL, M9--M2, M9--M1 or GAR, endpoint uniformity, M9, both bridges,
+and the quarter theorem remain open. Exponents remain internal \(1/3\),
+accepted external \(0.3144831759740614\ldots\), and target \(1/4\).
+
+## Round 179 launch update
+
+Timestamp: 2026-08-27
+
+Round 179 is active on the unchanged graph
+e04380a1965e57971bb68d8169d8a8d8e5349edb535e01b343c8b25ecdcd4e27.
+Its only objective is the aggregate high-conductor K17a estimate (177.K34).
+Three orthogonal tasks test an exact primitive-conductor parity
+decomposition, the literal orientation-defect capacity and selector seams,
+and a statement-only finite-kernel rederivation. No proof status, parent,
+bridge, theorem, or exponent changes at launch.
+
+## Round 179 closure update
+
+Timestamp: 2026-08-27
+
+Round 179 closes under
+`primitive_conductor_orientation_defect_capacity_or_self_return_no_go`.
+For odd (q), the exact primitive-frequency projector is
+
+\[
+ K_q(b)=\frac1q\sum_{d\mid q}\mu(q/d)dE_d(b),
+ \qquad K_q(b)+K_q(-b)=\frac{2\mu(q)}q
+ \quad (b\in U(q)).
+\]
+
+The entire symmetric contribution is the (d=1) trace. After the inherited
+(q/u_0) normalization, the complete high-conductor trace is
+(O_\varepsilon(LX^\varepsilon)). Centering by
+(K_q^\circ=K_q-\mu(q)/q) does not create the hoped-for saving: for every
+odd (u_0>1),
+
+\[
+ \sum_{q\mid u_0}\frac q{u_0}K_q^\circ(b)=E_{u_0}(b).
+\]
+
+Thus the high-conductor centered defect is exactly the original unresolved
+literal orientation block minus the accepted low-conductor packet. The
+fixed-modulus reflection leaks from the live displacement and endpoint
+domain, while the product-preserving exchange changes the fixed row and
+sends selected divisors to zero-extended complements. Coefficient-uniform
+exact-(q) capacity remains (LqX^\varepsilon), and one conductor square
+root remains insufficient.
+
+The State Patch has exact effect `1/2/0/14/18` and creates one subordinate
+`proved_internal` reduction. Its authoritative resulting graph is
+`e94ef6a364988e47f8a59ca3589f03cb098a04a241ec841afc2efa6e685081b4`.
+Independent exact inversion recovers the certified Round-178 graph and
+frozen-time reapplication reproduces the current graph byte-for-byte. There
+is no status, statement, exponent, or dependency-cycle drift beyond the one
+authorized subordinate edge.
+
+(177.K34), complete K17a, K26, the residual scalar, hard TOP, both BAL
+scopes, UNBAL, M9--M2, both direct M1 parents or GAR, endpoint uniformity,
+M9, both bridges, and the quarter theorem remain open. Exponents are
+unchanged: internal (1/3), accepted external
+(0.3144831759740614\ldots), target (1/4). Round 180 has not yet been
+designed or launched.
+
+## Round 180 launch update
+
+Timestamp: 2026-08-27
+
+Round 180 is active on the unchanged authoritative graph
+`e94ef6a364988e47f8a59ca3589f03cb098a04a241ec841afc2efa6e685081b4`.
+It rotates to the independent K26 endpoint and isolates one exact smaller
+seam: the \(\chi_4(d)\chi_4(d')\)-weighted off-row divisor Gram form in
+the microscopic Fejér cells \(|\nu|\le\lceil\sqrt L\rceil\).
+
+The proposed row diagonal and far spectral arcs are separate verification
+gates. If they pass, the open local theorem has target
+\(LX^\varepsilon\), positive capacity \(L^2X^\varepsilon\), and hence one
+missing factor \(L\). The literal residual selector, squarefree and
+coprimality masks, two-adic branches, square-root phase, exact and near
+product collisions, hard endpoints, transitions, zero extension, both
+parity branches, and one outer real part remain joint.
+
+Complex dechirping and real cosine-dechirping are mandatory false controls.
+No scale telescope, tangent commutator, fixed-shift/K17a reduction,
+positive product-collar closure, other owner, bridge, theorem, or exponent
+is authorized in-round. Launch changes no proof status or exponent.
+
+## Round 180 closure update
+
+Timestamp: 2026-08-27
+
+Round 180 closed under
+`row_gram_offdiagonal_capacity_or_self_return_no_go`. For the complete
+literal rows in each near Fejér cell,
+
+\[
+ \mathcal E_\nu=\mathcal D_\nu+\mathcal G_\nu,
+ \qquad
+ 0\le\mathcal D_\nu\ll_\varepsilon LX^\varepsilon.
+\]
+
+Thus the proposed off-row theorem is equivalent at target strength to the
+original local scalar concentration estimate. The exact cross-row
+equal-product sector is owner-complete and satisfies
+
+\[
+ \lvert\mathcal P_\nu\rvert\ll_\varepsilon X^\varepsilon.
+\]
+
+The complete unequal-product form
+\(\mathcal U_\nu\ll_\varepsilon LX^\varepsilon\) remains open. If proved,
+the independently checked near/far, ordinary-zero, and once-only short
+correction seams yield \(Q_M^*\ll_\varepsilon L^3X^\varepsilon\) and K26.
+
+Coefficient-uniform positive closure retains local capacity \(L^2\) and
+endpoint capacity \(L^4\). Nonliteral complex, real-cosine, and sign
+controls show that realness, parity, character modulation, and row
+positivity alone do not supply the missing factor \(L\). They are not
+literal lower mass and do not disprove a new complete signed theorem.
+
+The applied patch has exact effect `1/4/0/16/21` and produces graph
+`6e3a87d42844a9a2150aad652b2f08a7b0584c3de17e6386311688552f6d7c16`.
+Exact inverse and frozen-time replay are GREEN. K26, hard TOP, BAL, UNBAL,
+M9--M2, both direct M1 parents or GAR, endpoint uniformity, M9, both
+bridges, and the quarter theorem remain open. Exponents are unchanged:
+internal \(1/3\), accepted external
+\(0.3144831759740614\ldots\), target \(1/4\).
+
+Round 181 is pending design from this closed graph. Round 182 remains the
+mandatory full-proof strategy and current-literature review.
+
+## Round 181 launch update
+
+Timestamp: 2026-08-27
+
+Round 181 is active on graph
+`6e3a87d42844a9a2150aad652b2f08a7b0584c3de17e6386311688552f6d7c16`.
+After independent BAL, UNBAL, and M1/GAR frontier audits, the conductor
+selected the smallest fresh exact interface: the high-squarefree-radical
+part of the unique hard M1 product cone.
+
+Writing \(r=hn=st^2\) with \(s\) squarefree, the proposed complementary
+sector \(s\le L\) has a target-safe incidence ledger
+\(O_\varepsilon(L^{3/2}X^\varepsilon)\). The frozen open aggregate is
+
+\[
+ \left|\sum_{\substack{s>L\\\mu^2(s)=1}}
+ \sum_{t\ge1}C_{L,X}(st^2)e(t\sqrt{Xs})\right|
+ \ll_\varepsilon L^{3/2}X^\varepsilon.
+\]
+
+Its coefficient-insensitive capacity is \(L^2X^\varepsilon\); the missing
+factor is \(L^{1/2}=X^{1/12}\) on the critical hard shell. The literal
+coefficient, \(\chi_4\), \(t=1\), both signs, floors, stars, cone edges,
+hard sample, support crossings, and zero extensions must remain joint.
+
+Launch changes no proof status or exponent. A successful Round 181 closes
+only the hard direct-M1 parent; smooth M1, M9-M1, GAR, every M2 parent,
+endpoint uniformity, M9, both bridges, and the quarter theorem remain open.
+Round 182 is mandatory immediately after closure for the full-proof
+strategy and current-primary-literature review.
+
+## Round 181 closure update
+
+Timestamp: 2026-08-27
+
+Round 181 closed under strict_hard_m1_radical_sector on graph
+fec130bc66641cbdad18c832de10077a7825f1caaf5d10170a67ef65c0b27196.
+Exact product and squarefree coordinates are proved signwise, together
+with the disjoint absolute target-safe sectors \(s\leq L\) and
+\(s>L,\ t\geq\lceil\sqrt L\rceil\).
+
+The remaining hard-M1 signed cone is exactly
+
+\[
+ \left|\sum_{\substack{s>L,\ \mu^2(s)=1\\
+                        1\leq t<\lceil\sqrt L\rceil}}
+ C_{L,X}^{\sigma}(st^2)e(\sigma t\sqrt{Xs})\right|
+ \ll_\varepsilon L^{3/2}X^\varepsilon.
+\]
+
+It remains open, including the full \(t=1\) coprime-squarefree literal
+face. Complete squarefree Möbius linearization returns to the original
+hard cone modulo an \(O_\varepsilon(L^{3/2}X^\varepsilon)\) correction;
+joint-\(t\), central-Mellin, and coefficient-uniform closures are parked
+only in their proved scopes.
+
+The applied patch has exact effect 3/4/0/13/18. Exact inverse and
+frozen-time replay are GREEN. The hard signed-cone owner, smooth direct-M1
+parent, GAR, M9-M1, every M2 owner, endpoint uniformity, M9, both bridges,
+and the quarter theorem remain open. Exponents are unchanged: internal
+\(1/3\), accepted external \(0.3144831759740614\ldots\), target \(1/4\).
+
+Round 182 is now the mandatory full-proof strategy and current-primary-
+literature checkpoint.
+
+## Round 182 launch update
+
+Timestamp: 2026-08-27
+
+Round 182 is active on unchanged graph
+`fec130bc66641cbdad18c832de10077a7825f1caaf5d10170a67ef65c0b27196`.
+It is a strategy and source-review round only. Three orthogonal tasks
+reconstruct both lawful proof routes, reassess current primary-source
+hypotheses and restored powers, and independently rank the full frontier
+from a statement-only packet.
+
+The new evidence from Rounds 179--181 is frozen: K17a's centered
+high-conductor defect self-returns; K26's unequal-product row form remains
+the original local concentration problem; and hard M1 is narrowed to the
+high-radical small-\(t\) residual, including \(t=1\). The review must select
+exactly one fresh Round 183 analytic theorem and state its literal formula,
+capacity deficit, bypassed obstruction, promotion gate, controls, and stop
+rule.
+
+Launch changes no proof status or exponent. The internal exponent remains
+\(1/3\), the accepted external benchmark remains
+\(0.3144831759740614\ldots\), and the target remains \(1/4\).
+
+## Round 182 closure update
+
+Timestamp: 2026-08-27
+
+Round 182 closed under `strategy_frontier_retained` on graph
+`5965e35636d988267311dbfcf8d57243153f88cb1105e2b2bcc35fa59a5e3833`.
+Both lawful quarter routes were reconstructed exactly, and the repaired
+current-primary-source audit found no import to a live literal interface in
+the named corpus through 2026-08-27.
+
+The sole Round-183 objective is the complete hard-M1 small-\(t\) aggregate
+
+\[
+ \left|
+ \sum_{\substack{s>L,\ \mu^2(s)=1\\
+                   1\le t<\lceil\sqrt L\rceil}}
+ C_{L,X}^{\sigma}(st^2)e(\sigma t\sqrt{Xs})
+ \right|
+ \ll_\varepsilon L^{3/2}X^\varepsilon.
+\]
+
+It retains both signs, every literal shell and endpoint, the exact
+zero-extended coefficient, and \(t=1\).  Its coefficient-uniform capacity
+is \(L^2\), leaving the missing factor \(L^{1/2}\).  Fixed-row,
+shifted-correlation, and partial-Möbius statements are possible proof
+mechanisms only and may not replace the aggregate owner.
+
+The applied patch has exact effect `0/1/0/16/21`; exact inversion and
+frozen-time replay are GREEN.  No analytic status, parent, bridge, theorem,
+or exponent changed.  The internal exponent remains \(1/3\), the accepted
+external benchmark remains \(0.3144831759740614\ldots\), and the target
+remains \(1/4\).  Round 183 is pending design.
+
+## Round 183 launch update
+
+Timestamp: 2026-08-27
+
+Round 183 is active on graph
+`5965e35636d988267311dbfcf8d57243153f88cb1105e2b2bcc35fa59a5e3833`.
+It attacks only the complete literal hard-M1 high-radical small-\(t\)
+aggregate at \(L^{3/2}X^\varepsilon\), with one final absolute value, both
+signs, every shell and endpoint, zero extension, and the mandatory \(t=1\)
+face.
+
+The three active tasks are a direct actual-coefficient contraction attack,
+an exact partial-Möbius and shifted-correlation barrier audit, and a
+statement-only independent rederivation.  Fixed-row and correlation
+estimates remain mechanisms rather than substitute owners.  Launch changes
+no proof status or exponent; Round 184 remains undesigned until closure.
+
+## Round 183 closure update
+
+Timestamp: 2026-08-27
+
+Round 183 closed under strict_hard_m1_small_t_sector on graph
+a8e0e5d84c0c5047e0c96f11128dd215ae035bdd4355bd68ad28dc87afe6cfbd.
+For every literal divisor incidence, write h = Gu and n = Gv with
+(u,v) = 1, s = sf(uv), and t = G sqrt(uv/s). The actual odd-G
+character-phase progression, together with the zero-extended step-two
+bounded-variation bound, proves the sector
+
+    G >= ceil(L^(1/4)),
+    dist(2 sqrt(Xuv), Z + 1/2) >= 1/(10 log(2X))
+
+at O_epsilon(L^(3/2) X^epsilon), with both signs and every original
+coefficient, support predicate, crossing, and endpoint retained. The
+corresponding coefficient-insensitive incidence envelope is
+O_epsilon(L^(7/4) X^epsilon), so this is a genuine signed sector rather
+than a positivity estimate.
+
+The exact surviving incidence complement is the disjoint union of
+G < ceil(L^(1/4)) and the large-G near-half-integer-resonant sector. It
+contains all t = 1, hence the complete small-t owner and the hard signed
+cone remain open. Exact target-scale partial Mobius truncation self-returns
+to the original product wave after target-safe corrections; the fixed-row
+Fejer correlation statement remains an unproved, stronger sufficient
+mechanism and is not the earlier PSC condition.
+
+The State Patch has exact effect 1/2/0/13/24. Exact reversal recovers the
+Round-182 graph and frozen-time reapplication is byte-identical. No hard or
+smooth M1 parent, M9-M1, M2 owner, endpoint claim, M9, bridge, quarter
+theorem, or exponent changed. The internal exponent remains 1/3, the
+accepted external benchmark remains 0.3144831759740614..., and the target
+remains 1/4. Round 184 is pending design from this closed graph.
+
+## Round 184 launch update
+
+Timestamp: 2026-08-27
+
+Round 184 is active on unchanged graph
+a8e0e5d84c0c5047e0c96f11128dd215ae035bdd4355bd68ad28dc87afe6cfbd.
+The conductor compared the small-G and large-G near-resonant pieces with
+smooth M1, GAR, K17a, and K26. The selected component is the complete
+literal t = 1 face because it lies wholly at G = 1, carries the full L^2
+capacity against target L^(3/2), and is the first exact seam on which the
+Round-183 ray progression gives no saving.
+
+The fresh mechanism is an allocation-independent canonical pair of close
+opposite-character primes in the squarefree product uv. Swapping the pair
+between u and v preserves product and phase while reversing chi_4(v).
+The round must prove every actual-coefficient common-cell and crossing-
+collar estimate, state the exact no-pair plus neither/both residual, and
+test a complete residual transport or signed short-shift continuation.
+The analogous M2 kernels are method references only.
+
+No proof status or exponent changes at launch. Even a complete t = 1
+estimate leaves t >= 2 small-G incidences and the large-G near-resonant
+component open. Round 185 remains undesigned until Round 184 closes, and
+Round 186 is the next mandatory full-proof strategy and current-literature
+checkpoint.
+
+## Round 184 closure update
+
+Timestamp: 2026-08-27
+
+Round 184 closed under strict_hard_m1_t1_comparable_factor_sector on graph
+f16b7a43f8b0261671b39bdd4a59a3f06926cdfe3513d5910e56b89c6b1ab2e0.
+The allocation-independent exchange of a canonically selected close pair
+of opposite-character odd prime divisors proves the selected-product XOR
+part of the exact literal hard-M1 t = 1 face at
+O_(kappa,epsilon)(L^(3/2)X^epsilon). The proof preserves the product and
+phase, reverses chi_4(v), and prices the complete active-support,
+common-cell, dyadic-BV, crossing-collar, endpoint, and zero-extension
+ledger before positivity.
+
+The selector may be empty. The exact residual is every allocation of every
+no-pair product plus the neither/both allocations of a selected product.
+Its sliding-Fejer reduction is exact, but the required one-outer-real-part
+correlation at R = ceil(L) remains open. Shiftwise absolute values return
+the L^2X^epsilon scalar capacity.
+
+The State Patch has exact effect 1/1/0/15/27. Independent preapplication
+and postapplication audits recover the exact starting graph and reproduce
+the applied graph byte-for-byte at the frozen application time. The
+complete t = 1 face, t >= 2, near resonance, complete small-t owner, every
+parent, bridge, theorem, and exponent remain open or unchanged. The
+internal exponent is still 1/3, the accepted external benchmark is still
+0.3144831759740614..., and the target is still 1/4. Round 185 is pending
+design from the final GREEN Round-184 closure state.
+
+## Round 185 launch update
+
+Timestamp: 2026-08-28
+
+Round 185 is active on unchanged graph
+f16b7a43f8b0261671b39bdd4a59a3f06926cdfe3513d5910e56b89c6b1ab2e0.
+The conductor compared the exact t = 1 residual with the remaining
+t >= 2 small-G and large-G near-resonant components. The t = 1 residual
+was selected because it is the first isolated owner-relevant gap and has
+an exact one-outer-real-part Fejer correlation at R = ceil(L).
+
+The round rederives for the M1 coefficient the parity, tangent,
+character-leg-gcd, and inward-cross-gcd reductions suggested by accepted
+M2 finite kernels. Shiftwise positivity has L^3X^epsilon energy capacity
+against target L^2X^epsilon. The intended progress is a complete residual
+bound, exact target-safe incidence sectors with their complementary
+correlation, or a rigorous tangent-gcd capacity/self-return obstruction.
+
+Three isolated analytical tasks are active: literal discovery, hostile
+M2-to-M1 transfer and capacity audit, and statement-only rederivation. No
+proof status or exponent changes at launch. Round 186 remains the mandatory
+full-proof strategy and current-primary-literature review after Round 185
+closes.
+
+## Round 185 closure update
+
+Timestamp: 2026-08-28
+
+Round 185 closed under
+strict_hard_m1_t1_residual_tangent_gcd_sector on graph
+f43248060d7876a96d4554cd13372dbf267387bcbe44a832b87cd5f571801575.
+The exact residual now has an endpoint-exact even-parity Fejer connector,
+a multiplicity-one tangent opening, original and inward-cross-gcd normal
+forms, and the joint quotient r = 2 kappa g h.  The complete monotone
+sector and both opposing orientations with
+h <= floor((log(2X))^B) are target-safe at
+O_(B,epsilon)(L^2X^epsilon).
+
+Canonical affine anchors give the exact remaining one-outer-real-part
+correlation on h above that polylogarithmic threshold.  Each dyadic
+Y < h <= 2Y block has positive capacity Y L^2X^epsilon and still needs a
+global factor Y.  Bare row alternation, rowwise Abel, positive transform
+recombination, and conductor centering do not provide it.  The exact
+integer deletion test is diagnostic only.
+
+The State Patch has exact effect 1/1/0/20/31.  Independent preapplication
+and postapplication audits recover the exact Round-184 graph and reproduce
+the applied graph byte-for-byte at the frozen application time.  The
+complete t = 1 residual, t >= 2, near resonance, every parent, bridge,
+theorem, and exponent remain open or unchanged.  The internal exponent is
+still 1/3, the accepted external benchmark is still
+0.3144831759740614..., and the target is still 1/4.  Round 186 is pending
+design as the mandatory full-proof strategy and current-literature review.
+
+The final independent Round-185 closure audit is GREEN. Three notation-only
+TeX repairs reverse byte-for-byte to the historically audited evidence,
+and the current corpus, graph, lifecycle, compilation, tests, owner scope,
+and exponent scope all pass.
+
+## Round 186 strategy and current-literature closure
+
+Round 186 closed under strategy_frontier_retained on graph
+d1ace6e362a41f1a08fc09c8e44ce628758040fa91ae39c152113c275f76352a.
+It reconstructs both lawful quarter routes and independently verifies that
+the unique Round-187 frontier is the one-sided high-h tangent-gcd relation
+under one outer real part. Positive capacity is Y L^2 X^epsilon, target is
+L^2 X^epsilon, and the complete factor Y remains missing. No lower bound
+for a negative dyadic real part is required.
+
+The current named primary-source corpus through 2026-08-28 supplies no
+literal import. Milicevic--Robinson--Shupe arXiv:2608.21346v1 is recorded
+as a prime-power Kloosterman-product nonimport because its kernel, modulus,
+and coefficient architecture fail before a lawful project map.
+
+The strategy-only State Patch has exact effect 0/1/0/21/24. Independent
+preapplication and postapplication audits reverse to graph f4324806... and
+replay to d1ace6e3... byte-for-byte. No analytic status, theorem statement,
+edge, parent, bridge, endpoint result, or exponent changes.
+
+The complete original-t=1 residual remains open, along with every original
+t >= 2 small-G incidence, the large-G near-resonant complement, hard and
+smooth M1, GAR, every M2 parent, endpoint uniformity, M9, both bridges, and
+the quarter theorem. Exponents remain internal 1/3, accepted external
+0.3144831759740614..., and target 1/4. Round 187 is pending design.
+
+## Round 187 high-height inverse-residue Fourier closure
+
+Timestamp: 2026-08-29
+
+Round 187 closed under
+`strict_high_h_inverse_residue_fourier_sector` on graph
+`be0eca9ca93c3534cca958d70b5541d03d28ff993ebfbcbca6be3cd393fae5ff`.
+It proves the exact odd-\(U\) inverse-residue Fourier formula and a strict
+target-safe packet comprising all \(U=1\) rows, every exact conductor
+\(q_U(k)\le H_B\), all remaining modes with \(U\le4H_B\), and all
+remaining ordinary edge modes \(0<|k|_U\le H_B\).
+
+The exact joint complement has
+
+    U > 4H_B,  q_U(k) > H_B,  |k|_U > H_B,
+
+with both orientations and every literal field retained under one outer
+real part. Its positive capacity is \(Y L^2X^\varepsilon\); the required
+bound is \(L^2X^\varepsilon\), so the full factor \(Y\) remains missing.
+Centered conductors, prime-modulus orientation pairing, positive transform
+energy, and bare alternation are exact self-return or capacity controls,
+not proofs of the complement.
+
+The State Patch has exact effect 1/1/0/14/20. It creates one proved
+subordinate reduction and attaches it as inconclusive progress to the
+still-open hard-M1 small-\(t\) owner. It changes no complete owner,
+endpoint statement, bridge, theorem, or exponent.
+
+The complete original-\(t=1\) residual remains open, as do all original
+\(t\ge2\) small-\(G\) incidences, the large-\(G\) near-resonant complement,
+the hard and smooth M1 parents, GAR, hard TOP/BAL/UNBAL on M2, endpoint
+uniformity, M9, both bridges, and the Gauss circle target. Exponents remain
+internal \(1/3\), accepted external
+\(0.3144831759740614\ldots\), and target \(1/4\). Round 188 is pending
+design; Round 190 remains the mandatory strategy and current-literature
+checkpoint.
+
+## Full-proof status after Round 188 (2026-08-29)
+
+Round 188 proves the complete sufficiently imprimitive part of the exact
+Round-187 high-height hard-M1 $t=1$ packet. Writing $m=(k,U)$,
+$U=mq$, and $k=ma$ gives $c_U(k)=m^{-1}c_q(a)$. The one-block
+$O(YL)$ atom count, the $m^{-1}$ conductor mass, and the
+triple-divisor ledger prove every mode with $H_Bm\ge Y$ absolutely at
+$O_{B,\varepsilon}(L^2X^\varepsilon)$.
+
+The first remaining relation is the exact complement
+
+\[
+U=mq>4H_B,\qquad q>H_B,\qquad m|a|_q>H_B,\qquad H_Bm<Y.
+\]
+
+It remains joint under one outer real part and has positive capacity
+$O(YL^2X^\varepsilon)$, so the full factor $Y$ is still missing.
+The lifted determinant phase is constant on each affine $t$-ray, and
+primitive near-half modes retain constant Fourier energy. Determinant
+transposition, reciprocity alone, completion, positive energy, and
+selector-blind sieve opening are therefore ruled out as automatic sources
+of the gain; this does not disprove the actual one-sided estimate.
+
+The reviewed patch has effect `1/1/0/15/21` and produces graph
+`338060b37c19d849053078e5f6a7775c45c626a16b6f9198fafdf9bb4a62265c`.
+M9-M1 remains open: the displayed complement, the rest of the exact
+$t=1$ residual, every original $t\ge2$ small-$G$ incidence, the
+large-$G$ near-resonant complement, the hard parent, the independent
+smooth M1 parent, physical assembly, and GAR remain unfinished. M9-M2 is
+unchanged and open: hard TOP, including the live K17a and K26 residuals,
+BAL, and UNBAL remain unproved. Endpoint uniformity, M9, both bridges,
+and the Gauss circle conjecture remain open or conditional.
+
+There is no global exponent improvement: internal $1/3$, accepted
+external $0.3144831759740614\ldots$, target $1/4$. Round 189 is
+`pending_design`; Round 190 remains the mandatory full-proof strategy and
+current-primary-literature checkpoint.
+
+
+## Round 189 accepted dual-frequency projective reduction
+
+Round 189 closes under strict_dual_height_resonance_sector on graph
+15c770023b649a95596b223e15370657836e230580f0d2f31f5d30c615a98568.
+On the exact Round-188 complement, define
+
+\[
+j_q(a,v)=|a\bar v_q|_q,\qquad
+T_Q(m,q;Y)=
+\min\!\left\{\frac{q-1}{2},
+       \left\lfloor\frac{H_Bmq}{Y}\right\rfloor\right\}.
+\]
+
+The inherited carrier has \(U=mq\) odd and \(q\mid U\mid u\).
+For fixed unit \(a\bmod q\), the map
+\(v\mapsto a\bar v_q\) is a bijection of unit classes. Hence the
+slow set uses at most \(2T_Q\) classes and
+\(O(uT_Q/q)\le O(H_Bum/Y)\) literal \(v\)-values. Restoring
+\(O(Y)\) heights and \(O(\kappa)\) affine sites and using
+
+\[
+c_{mq}(ma)=m^{-1}c_q(a),\qquad
+\sum_{(a,q)=1}|c_q(a)|\ll\log(2q),
+\qquad
+\sum_{mq\mid u}1=\tau_3(u),
+\]
+
+cancels \(Y\) and \(m\) before outer positivity. Therefore the
+complete sector \(j_q(a,v)\le T_Q(m,q;Y)\) is
+\(O_{B,\varepsilon}(L^2X^\varepsilon)\). This includes the
+power-neutral baseline \(j_q\le\lfloor U/Y\rfloor\) and the frozen
+\(H_B\)-enlargement; no positive power of \(Y\) is absorbed.
+
+The exact fast complement \(j_q(a,v)>T_Q(m,q;Y)\) remains under one
+outer real part over both orientations and every literal field. On a
+dyadic \(J\)-band, a sufficient fixed-\(a\) input is
+
+\[
+\sum_{\omega,v}\mathsf V(W_v)
+\ll_\varepsilon
+\frac{H_Bm\kappa uJ}{q}X^\varepsilon,
+\]
+
+whereas the accepted pointwise information gives only
+\(Y\kappa uJ/q\). The exact deficit is \(Y/(H_Bm)\), and primitive
+lifts retain \(Y/H_B\).
+
+For odd prime conductor, the centered slope \(-2\) prefix is exactly
+\(-(p-1)/2\). This rules out a uniform polylogarithmic
+centered-kernel prefix theorem but is not literal lower mass.
+Assumed bounded variation, positive completion energy, and
+selector-blind sieve opening remain invalid shortcuts.
+
+The applied State Patch has exact effect \(1/1/0/15/22\). The
+complete high-height relation, original \(t=1\) residual, every
+original \(t\ge2\) small-\(G\) incidence, the large-\(G\)
+near-resonant complement, both M1 parents, every M2 parent, endpoint
+uniformity, M9, both bridges, and the quarter theorem remain open or
+conditional.
+
+There is no global exponent improvement: internal \(1/3\), accepted
+external \(0.3144831759740614\ldots\), target \(1/4\). Round 190 is
+the mandatory full-proof strategy and current-primary-literature
+checkpoint.
+
+Accepted evidence:
+
+- proofs/kernels/m9_m1_hard_top_t1_high_h_dual_frequency_projective_reduction.md;
+- rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/candidates/formalized_hard_m1_t1_high_h_dual_frequency_projective_reduction.md;
+- rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reviews/final_kernel_candidate_consistency_review.md;
+- rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reviews/final_kernel_power_literal_owner_scope_review.md;
+- rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reviews/final_kernel_formalization_provenance_hygiene_review.md;
+- rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/controls/postapply_independent_reverse_replay_audit.md;
+- rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/controls/postapply_scope_protected_state_audit.md;
+- rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reviews/conductor_round189_adjudication.md; and
+- rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/synthesis.md.
+
+## Round 190 full-proof strategy and literature closure
+
+Timestamp: 2026-08-29
+
+Round 190 closes under strategy_frontier_retained on authoritative graph
+306425e79ef6d5e25ed037b77d25a0cc180bfc3b68c4a17ef833da7be1a573fa.
+It proves no new analytic estimate. Its State Patch has exact effect
+0 create, 1 update, 0 corrected rejection, 23 rejected overclaims, and 27
+no-change decisions. It updates only inconclusive evidence and the next
+action of the already-open hard-M1 small-t owner.
+
+The exact remaining Round-189 fast packet has
+
+\[
+U=mq>4H_B,\quad q>H_B,\quad m|a|_q>H_B,\quad H_Bm<Y,
+\]
+\[
+j_q(a,v)>
+\min\!\left\{\frac{q-1}{2},
+\left\lfloor\frac{H_Bmq}{Y}\right\rfloor\right\},
+\]
+
+under one outer real part over both orientations and every literal field.
+For a dyadic fast band, positive total variation has required scale
+\(H_Bm\kappa uJ/q\), available scale \(Y\kappa uJ/q\), and deficit
+\(Y/(H_Bm)\), primitive \(Y/H_B\).
+
+The selected Round-191 seam keeps all literal height jumps jointly in one
+signed Abel packet and asks for
+
+\[
+|\mathscr J_{\kappa,u,m,q,a,J}^{\sigma}|
+\ll_{B,\varepsilon}H_Bm\kappa uX^\varepsilon.
+\]
+
+This estimate is unproved. The exact Abel identity and final power ledger
+are verified, but no correlation among common-range changes, births,
+deaths, masks, endpoints, phases, orientations, and zero extensions is
+known.
+
+Both lawful quarter routes retain multiple open owners. M9-M1, M9-M2,
+endpoint uniformity, M9, both bridges, and the target remain open or
+conditional. Exponents remain internal \(1/3\), accepted external
+\(0.3144831759740614\ldots\), and target \(1/4\). Round 191 is pending
+design.
+
+## Round 191 signed-inverse transport closure
+
+Timestamp: 2026-08-29
+
+Round 191 closes under `strict_fast_height_jump_sector` on authoritative
+graph
+`75b44fe68f9c6e094d2ab6e643be3c0309320ef84e73ca22d692698440eeed13`.
+The applied State Patch has exact effect `1/1/0/15/23`.
+
+For the Round-189 fast packet, write \(U=mq\), choose the signed least
+inverse \(\varrho_U(v)\) by
+\(\varrho_U(v)v-\gamma U=1\), and put
+
+\[
+T_\varrho=\min\!\left(\frac{U-1}{2},
+\left\lfloor\frac{H_BmU}{Y}\right\rfloor\right).
+\]
+
+The complete strict sector \(0<|\varrho_U(v)|\le T_\varrho\) is target-safe:
+inverse-class sparsity gives \(O(uT_\varrho/U)\), the height/site ledger gives
+the fixed-packet scale \(H_Bm\kappa uX^\varepsilon\), and the exact
+\(m^{-1}c_q(a)\) lift cancels the extra \(m\) before the outer divisor ledger.
+The outer terminal-interval projection and isolated Fejer-difference
+projection are target-safe as well.
+
+The exact adjacent-fibre transport is
+
+\[
+(S,w)\mapsto(S-\epsilon_\omega\varrho,
+w-\epsilon_\omega\gamma),
+\]
+
+with carry \(\nu_\omega(h)\in\{-1,0,1\}\). After Fourier projection the
+retained mode carries
+\((-1)^{\nu_\omega(h)}e(\epsilon_\omega a\varrho/q)\); the full pre-Fourier
+parity \((-1)^\varrho\) cannot be used modewise.
+
+The exact rho-large remainder remains open under one outer real part. It
+retains coprimality flips, affine births and deaths, carries, both endpoint
+changes, every literal cell/crossing field, phases, and zero extensions. Its
+available positive scale is \(Y\kappa u\), versus target \(H_Bm\kappa u\), so
+the missing factor remains \(Y/(H_Bm)\).
+
+No complete fast packet, original \(t=1\) residual, any \(t\ge2\) range,
+hard or smooth M1 parent, M2 parent, endpoint theorem, M9 statement, bridge,
+or Gauss circle theorem is proved. Exponents remain internal \(1/3\), accepted
+external \(0.3144831759740614\ldots\), and target \(1/4\). Round 192 is
+pending design on the exact rho-large remainder; Round 194 remains mandatory.
+
+## Round 192 active Farey-covector gate
+
+Timestamp: 2026-08-29
+
+Round 192 is launch-validated on unchanged graph
+`75b44fe68f9c6e094d2ab6e643be3c0309320ef84e73ca22d692698440eeed13`.
+For canonical \(v_0=[v]_U\), write
+
+\[
+ \rho v_0-\beta U=1,
+ \qquad
+ \ell_{c,d}=c\beta-d\rho.
+\]
+
+The exact factorization
+
+\[
+ \rho(cv_0-dU)=c+U\ell_{c,d}\ne0
+\]
+
+converts each fixed primitive covector and fixed \(\ell\) into a
+divisor-counted sparse residue fibre. The proposed safe union uses
+\(1\le c\le\min(U-1,\lfloor H_B^{C_0}\rfloor)\), \(0\le d\le c\),
+\((c,d)=1\), \(T\ge1\), and \(|\ell_{c,d}|\le T\). Its complement is exact,
+but no cancellation there is yet proved.
+
+Three orthogonal analytical reports are active. A bounded WolframScript
+diagnostic checked 365,696 factorization identities and 305,844 fixed fibres
+with no finite failure; it is diagnostic only. No graph or exponent has
+changed. Round 194 remains mandatory.
+
+## Round 192 Farey-covector closure
+
+Timestamp: 2026-08-30
+
+Round 192 closes under strict_rho_large_farey_covector_sector on
+authoritative graph
+7c89a29f96878cb4c8481129a4a76453263768f0a7b699fa20003fc4db207bd9.
+The applied State Patch has exact effect \(1/1/0/15/24\).
+
+For canonical \(v_0=[v]_U\), define
+
+\[
+ \rho v_0-\beta U=1,\qquad
+ T=\min\!\left(\frac{U-1}{2},
+ \left\lfloor\frac{H_BmU}{Y}\right\rfloor\right).
+\]
+
+With \(A=\min(U-1,\lfloor H_B^{C_0}\rfloor)\), the \(T\ge1\) union
+\[
+ |c\beta-d\rho|\le T
+\]
+over primitive \(1\le c\le A,\ 0\le d\le c\) is target-safe by the exact
+factorization
+\[
+ \rho(cv_0-dU)=c+U(c\beta-d\rho)\ne0,
+\]
+signed-divisor sparsity, literal multiplicity, and the full outer ledger.
+For \(T=0\), the new selector is empty.
+
+The exact core has every allowed covector strictly larger than \(T\) and
+\(|\rho|\ge(A+1)(T+1)\). It is empty under the proved circular-pigeonhole
+criterion. Outside that criterion, its jointly signed estimate remains open
+with deficit \(Y/(H_Bm)\).
+
+No complete original \(t=1\), \(t\ge2\), M9-M1, M9-M2, endpoint, M9,
+bridge, target, or exponent is proved. Exponents remain internal \(1/3\),
+accepted external \(0.3144831759740614\ldots\), and target \(1/4\).
+Round 193 is pending design; Round 194 remains mandatory.
+
+## Round 193 gcd-scaled orientation-involution launch
+
+Timestamp: 2026-08-30
+
+Round 193 is active on unchanged graph
+`7c89a29f96878cb4c8481129a4a76453263768f0a7b699fa20003fc4db207bd9`.
+For one opened opposing even-shift incidence, put
+
+\[
+ N=dm,\quad N+r=d'm',\quad g=(d,d'),\quad k=(m,m').
+\]
+
+On \(k=1\), the new exact candidate map is
+
+\[
+ \tau_g(d,m,d',m')=(gm,d/g,gm',d'/g).
+\]
+
+It is being tested on the invariant sector
+
+\[
+ r\equiv2\pmod4,\qquad
+ |d-gm|,|d'-gm'|\le\lceil L^{1/2}\rceil.
+\]
+
+The finite algebra predicts an integral orientation-reversing involution
+which preserves both endpoint products and the square-root phase and
+reverses the \(\chi_4\) product.  The round must still prove the residual
+selector, literal endpoint, BV/collar, multiplicity, and exact
+physical-to-Round-192-core projection ledgers before any promotion.
+
+Three orthogonal analytical tasks are active.  No graph node, parent,
+bridge, theorem, or exponent has changed.  Round 194 remains the mandatory
+strategy and current-primary-literature checkpoint.
+
+## Round 193 gcd-scaled double-close closure
+
+Timestamp: 2026-08-30
+
+Round 193 closes under `strict_rho_large_gcd_scaled_orientation_sector` on
+authoritative graph
+`cbbb68b5bb7dd324ca60b1e099cf5787fa57639b5970d76464c2bce18cfcdd9e`.
+The applied State Patch has exact effect \(1/1/0/15/25\).
+
+For \(g=(d,d')\) and \(D_L=\lceil\sqrt L\rceil\), the exact Round-192
+core operator rerun on the masked physical input
+
+\[
+ P_{\rm cl}=
+ 1_{\{|d-gm|\le D_L\}}
+ 1_{\{|d'-gm'|\le D_L\}}
+\]
+
+satisfies \(|R_{\rm core}(P_{\rm cl}W)|\ll L^2X^\varepsilon\).  The live
+cone forces \(g=O(1)\), while the determinant relation confines the remaining
+integer and gives
+\(\#\mathcal I_{\rm cl}\ll LD_L\log(2L)+LD_L^2\ll L^2\).
+The proof is deletion-stable through the accepted Round-187--192 projections.
+
+The exact unresolved first-failure complement is
+
+\[
+ P_1=1_{\{|d-gm|>D_L\}},\qquad
+ P_2=1_{\{|d-gm|\le D_L,\ |d'-gm'|>D_L\}}.
+\]
+
+Neither piece is estimated.  Complete original \(t=1\), every original
+\(t\ge2\) range, M9-M1, M9-M2, endpoint uniformity, M9, both bridges, the
+quarter target, and all exponents remain open, conditional, or unchanged.
+
+## Round 194 active full-proof strategy and literature checkpoint
+
+Timestamp: 2026-08-30
+
+Round 194 is active on unchanged graph
+`cbbb68b5bb7dd324ca60b1e099cf5787fa57639b5970d76464c2bce18cfcdd9e`.
+It reconstructs both lawful quarter-proof routes, audits current primary
+literature through 2026-08-30 against every literal live interface, and
+obtains a fresh statement-only ranking before choosing exactly one Round-195
+analytic objective.  It is a strategy-only round: no analytic theorem,
+parent, endpoint, bridge, global theorem, or exponent can be promoted.
+
+Exponents remain internal \(1/3\), accepted external
+\(0.3144831759740614\ldots\), and target \(1/4\).  Round 198 is the next
+mandatory strategy/current-literature checkpoint after analytic Rounds
+195--197.
+
+## Round 194 full-proof strategy and literature closure
+
+Timestamp: 2026-08-30
+
+Round 194 closes under `strategy_frontier_retained` on authoritative graph
+`815c15c4aba04d4ac8e05a3af89db78b05607242fc933e23ec86954138700c89`.
+Its strategy-only State Patch has exact effect \(0/1/0/20/26\): it changes
+only inconclusive evidence, next action, and round metadata on the already
+open hard-M1 small-\(t\) owner, plus rejected-overclaim records. Independent
+postapplication inversion and production replay are exact.
+
+In the plus primitive chart
+
+\[
+d=\kappa gU,\quad d'=g(\kappa U+2S),\quad
+m'=\kappa v,\quad m=\kappa v+2w,
+\]
+
+put
+
+\[
+\Delta_-=\kappa(U-v)-2w,\qquad
+\Delta_+=\kappa(U-v)+2S.
+\]
+
+Then \(g\Delta_-=d-gm\), \(g\Delta_+=d'-gm'\), and
+
+\[
+\Delta_+-\Delta_-=2(S+w)>0,
+\qquad
+2h=v\Delta_+ + U\Delta_- -\kappa(U^2-v^2).
+\]
+
+On \(P_2\), the lower close condition retains the accepted uniform \(g=O(1)\)
+bound, while upper failure is necessarily
+\(g\Delta_+>\lceil\sqrt L\rceil\). This exact signed far-defect determinant
+fibre is the sole Round-195 frontier. The required fixed-packet estimate is
+
+\[
+ |R_{{\rm core,fix}}^\sigma(P_2W)|
+ \ll_{B,\varepsilon} H_B\mathfrak m\kappa uX^\varepsilon,
+\]
+
+before the accepted outer \(O(L^2X^\varepsilon)\) ledger. It is unproved.
+No current theorem in the named primary corpus through 2026-08-30 matches
+the literal coefficient and one-outer-real-part interface.
+
+M9-M1 and M9-M2 remain open, endpoint uniformity and M9 remain open, both
+bridges remain conditional, and the quarter target remains open. Exponents
+remain internal \(1/3\), accepted external
+\(0.3144831759740614\ldots\), and target \(1/4\). Round 195 is pending
+design; Round 198 remains mandatory after analytic Rounds 195--197.
+
+## Round 195 full-P2 determinant-fibre launch
+
+Timestamp: 2026-08-30
+
+Round 195 is active on unchanged graph
+`815c15c4aba04d4ac8e05a3af89db78b05607242fc933e23ec86954138700c89`.
+It attacks only the complete exact \(P_2\) physical mask. The mask precedes
+Fourier expansion and height differencing, and the inherited core operator
+is rerun on \(P_2W\).
+
+The frozen new seam groups first by the retained close coordinate
+\((g,\Delta_-)\), resolves
+
+\[
+E<g\Delta_+\le2E,\qquad E\ge\lceil\sqrt L\rceil,
+\]
+
+and retains the actual endpoint, carry, phase, birth/death, mask-commutator,
+and zero-extension data as coefficient vectors before forming a joint
+two-orientation determinant-fibre Gram matrix. The target is
+
+\[
+|\mathscr R_{{\rm core},{\rm fix}}^\sigma(P_2W)|
+\ll_{B,C_0,\varepsilon}H_B\mathfrak m\kappa uX^\varepsilon,
+\]
+
+which must recover \(Y/(H_B\mathfrak m)\) before positive outer norms.
+Three orthogonal analytical tasks are active: a literal attack, a hostile
+Gram-diagonal/collision audit, and a fresh statement-only rederivation.
+
+No graph node, parent, endpoint result, bridge, theorem, or exponent has
+changed. No in-round pivot to \(P_1\), another owner, or an exponent is
+authorized. Round 198 remains mandatory.
+
+## Round 195 strict P2 absolute-capacity-sector closure
+
+Timestamp: 2026-08-30
+
+Round 195 closes under `strict_p2_determinant_fibre_vector_sector` on authoritative
+graph `f1f6bd2c9ff6370febf37b2c6f50c023cd142470922ffe9ce713e853f5efcce2`.
+The applied State Patch has exact effect \(1/1/0/23/27\), and independent
+postapplication inversion and production replay are byte-exact.
+
+For \(D_L=\lceil\sqrt L\rceil\), the whole physical \(P_2\) sector
+\(\kappa\ge D_L\) is target-safe.  Its physical count is
+
+\[
+ \sum_{\kappa\ge D_L}D_L(1+L/\kappa)^2
+ \ll L^2+LD_L\log(2L)\ll L^2.
+\]
+
+On \(\kappa<D_L\), the exact positive packet estimate is
+
+\[
+ |\mathscr R_{{\rm core},{\rm fix}}^\sigma(P_{2,<D}W)|
+ \ll u\{\kappa+\min(Y,D_L)\}X^\varepsilon.
+\]
+
+It proves every packet with
+\(\min(Y,D_L)\le H_B\mathfrak m\kappa\), and the accepted outer ledger
+again gives \(O(L^2X^\varepsilon)\). The exact unproved \(P_2\) region is
+
+\[
+ \boxed{\kappa<D_L,\qquad
+        \min(Y,D_L)>H_B\mathfrak m\kappa.}
+\]
+
+The literal same-site Gram blocks self-return to the masked jump, the plus
+retained-mode ratio is carry-dependent, and coefficient-blind determinant
+multiplicity does not control the actual four-block cross-row Gram. The
+squareful blind family is not live evidence. No capacity bound is promoted
+to literal lower mass.
+
+Complete \(P_2\), \(P_1\), original \(t=1\), every original \(t\ge2\)
+and near-resonant incidence, both M1 parents, all M2 parents, endpoint
+uniformity, M9, both bridges, and the quarter target remain open or
+conditional. Exponents remain internal \(1/3\), accepted external
+\(0.3144831759740614\ldots\), and target \(1/4\). Round 196 is pending
+design; Round 198 remains mandatory.
+
+## Round 196 on-shell carrier/commutator launch
+
+Timestamp: 2026-08-30
+
+Round 196 is active on unchanged graph
+`f1f6bd2c9ff6370febf37b2c6f50c023cd142470922ffe9ce713e853f5efcce2`.
+It attacks only the exact open (P_2) packets
+
+\[
+ \kappa<D_L,\qquad
+ \min(Y,D_L)>H_B\mathfrak m\kappa.
+\]
+
+The new algebraic test uses the common moving coordinate
+(x=\kappa U+2S). On shell, the parity factor and inverse-residue anchor
+combine into a primitive modulus-(4q) additive carrier. If its literal
+event aggregate has an actual step-two difference, the exact identity
+
+\[
+ (1-z_{q,a})c_q(a)=\frac{2e(a/q)}q
+\]
+
+removes the near-half-frequency denominator before positive norms. Every
+support, endpoint, mask, carry, birth/death, arithmetic, Fejer, phase, and
+zero-extension commutator must be retained and priced.
+
+Three orthogonal analytical tasks are active: literal reconstruction,
+hostile commutator audit, and statement-only rederivation. The launch
+changes no graph node or exponent. Complete (P_2), all larger owners,
+both bridges, and the quarter theorem remain open or conditional. Round 198
+remains mandatory.
+
+## Round 196 on-shell carrier-normalization closure
+
+Timestamp: 2026-08-30
+
+Round 196 closes under
+on_shell_carrier_denominator_self_return_no_go on authoritative graph
+b9b95784b097b3e30bed95f418ae14e57bf5f03a4a52975beeefa8db85b7f8ae.
+The exact State-Patch footprint is \(0/2/0/20/27\); independent
+postapplication inversion and timestamp-locked replay are byte-exact.
+
+The determinant and parity identities do produce a formal primitive
+modulus-\(4q\) carrier, but it is a parity-restored shadow.  A literal
+fixed exact-conductor atom retains
+\[
+ \mathfrak m^{-1}c_q(a)(-1)^t
+ e(\epsilon_\omega a\bar v_qh/q)B_{\omega,\sigma}(h,t)
+\]
+and its on-shell form contains the nonconstant \(E_U(S_0)\).  Restoring
+that factor mixes exact conductors; every live-to-live adjacent edge has
+multiplier \(+e(a/q)\), while the formal negative wrap is an unpaired
+live/dead coprimality boundary.  The genuine height event has displacement
+\(2\epsilon_\omega\rho\), with a \(T=0\) unit-inverse exception that
+does not estimate its complement.  No common full-core \(\Delta_2\)
+survives the literal event geometry and commutators.
+
+No target-safe sector is added.  The exact \(P_2\) remainder remains
+\[
+ \boxed{\kappa<D_L,\qquad
+        \min(Y,D_L)>H_B\mathfrak m\kappa,}
+\]
+with unchanged positive estimate
+\[
+ |\mathscr R_{{\rm core},{\rm fix}}^\sigma(P_2W)|
+ \ll u\{\kappa+\min(Y,D_L)\}X^\varepsilon.
+\]
+Complete \(P_2\), \(P_1\), original \(t=1\), every other original-\(t\)
+incidence, both M1 parents, all M2 parents, endpoint uniformity, M9, both
+bridges, and the quarter target remain open or conditional.  Exponents
+remain internal \(1/3\), accepted external
+\(0.3144831759740614\ldots\), and target \(1/4\).
+
+Round 197 is pending design; no campaign is active.  Round 198 remains
+mandatory immediately after Round 197.
+
+## Round 197 physical four-corner allocation-commutator launch
+
+Timestamp: 2026-08-30
+
+Round 197 is active on unchanged graph
+b9b95784b097b3e30bed95f418ae14e57bf5f03a4a52975beeefa8db85b7f8ae.
+It freezes only the exact physical \(P_2\) four-corner allocation
+commutator.
+
+Writing \(d=g\alpha\), \(d'=g\beta\), the round tests independent lower
+and upper allocation swaps under exact cross-coprimality conditions.  On
+the candidate sector \(\chi_4(\alpha m)=\chi_4(\beta m')=-1\), the four
+character weights are formally \(+,-,-,+\).  The proposed literal main
+term is the product of an upper endpoint difference and the lower close
+endpoint difference.  The only proposed power gain is \(D_L/L\), exactly
+enough to turn the \(D_LL^2\) positive envelope into
+\(D_L^2L\ll L^2\).
+
+Every recomputed gcd, missing corner, source or cone exit, residual
+selector, normalized-BV increment, literal face, arithmetic mask,
+endpoint order and zero extension must be retained and priced.  The
+round may prove the target, a strict target-safe sector with exact
+complement, or a route-scoped self-return no-go.  It changes no graph node
+or exponent at launch and may not pivot to \(P_1\).
+
+Round 198 remains the mandatory full-proof strategy and
+current-primary-literature checkpoint immediately after Round 197 closes.
+
+## Round 197 common-cell allocation-commutator closure
+
+Timestamp: 2026-08-31
+
+Round 197 closes under
+`p2_four_corner_orbit_boundary_self_return_no_go` on authoritative graph
+`8aea2ab5b088a0b29a434347ffc4509c70e79f53e450814920e3c83165a1ab69`.
+The State Patch creates one subordinate proved-internal node, updates only
+the still-open hard-M1 small-\(t\) owner, and adds twenty-two calibrated
+route rejections.  A postapplication evidence-bucket duplicate was removed
+by a mechanically validated hygiene patch; independent reverse/replay and
+protected-scope audits pass on the final graph.
+
+On the explicit physical common-cell code \(P_{\rm cc}\), the lower
+allocation swap preserves products, shift, defects, gcd, Fejer factor, and
+radical phase while reversing the character.  The actual endpoint
+difference splits into smooth, normalized-BV, and selector terms.  The
+strict cone gives \(g\le G_0\), the smooth term gains \(D_L/L\), aggregate
+BV costs \(D_L^2\), and the selector exception is confined to bounded
+shells.  The complete physical replay proves
+
+\[
+ |\mathscr R_{\rm core,out}^{\sigma}(P_{\rm cc}W)|
+ +|\mathscr R_{\rm open,out}^{\sigma}(P_{\rm cc}W)|
+ \ll L^2X^\varepsilon.
+\]
+
+No nonemptiness or density of \(P_{\rm cc}\) is asserted.  The full
+four-corner rectangle forces physical \(\kappa=1\), and an aligned sharp
+face can retain \(D_LL^2\) capacity.  The exact remaining seam is
+
+\[
+ \boxed{
+ \{\kappa<D_L,\ \min(Y,D_L)>H_B\mathfrak m\kappa\}
+ \cap(P_{\partial\rm lit}\dot\cup P_{s\rm f}\dot\cup P_{g\rm f}).}
+\]
+
+Complete \(P_2\), \(P_1\), original \(t=1\), every other original-\(t\)
+incidence, both M1 parents, all M2 parents, endpoint uniformity, M9, both
+bridges, and the quarter target remain open or conditional.  Exponents
+remain internal \(1/3\), accepted external
+\(0.3144831759740614\ldots\), and target \(1/4\).
+
+Round 198 is pending design and is the mandatory full-proof strategy and
+current-primary-literature checkpoint.  No campaign is active.
+
+## Round 198 full-proof strategy and literature launch
+
+Timestamp: 2026-08-31
+
+Round 198 is active on graph
+`8aea2ab5b088a0b29a434347ffc4509c70e79f53e450814920e3c83165a1ab69`.
+It reconstructs both lawful quarter routes after Rounds 195--197, audits
+primary literature through 2026-08-31 against every live literal
+interface, and selects exactly one genuinely new Round-199 objective.
+
+The exact hard-M1 \(P_2\) seam entering the checkpoint is
+
+\[
+\{\kappa<D_L,\ \min(Y,D_L)>H_B\mathfrak m\kappa\}
+\cap(P_{\partial\rm lit}\dot\cup P_{s\rm f}\dot\cup P_{g\rm f}),
+\]
+
+with all of \(P_1\), other original-\(t\), large-\(G\), smooth M1, GAR,
+M2, endpoint, and bridge frontiers retained separately.  The source audit
+must give theorem-exact hypothesis maps and restored powers; structural
+analogies do not count as imports.
+
+No analytic theorem or exponent changes at launch.  Round 202 remains the
+next mandatory strategy checkpoint after analytic Rounds 199--201.
+
+## Round 198 full-proof strategy and literature closure
+
+Timestamp: 2026-08-31
+
+Round 198 closes under `strategy_frontier_retained` on authoritative graph
+`63fa05e3a4d1493bc37bdd956453a4d3eefbb9dca6fadcbf8b7a68e32ade36b5`.
+It proves no analytic estimate. The strategy-only State Patch updates one
+already-open hard-M1 owner, appends twenty-three rejected overclaims, and
+leaves all mathematical statuses, dependencies, parents, endpoint results,
+bridges, global theorems, and exponents unchanged.
+
+The exact selected Round-199 theorem exit is
+
+\[
+ \boxed{
+ \left|\mathscr R_{\rm open,out}^{\sigma}
+ \bigl((P_{\partial\rm lit}+P_{s\rm f}+P_{g\rm f})W\bigr)\right|
+ \ll_{B,C_0,K_{\rm sel},\varepsilon}L^2X^\varepsilon}
+\]
+
+on
+
+\[
+ \kappa<D_L,\qquad \min(Y,D_L)>H_B\mathfrak m\kappa.
+\]
+
+The aligned literal face is the mandatory first stress test, but a face-only
+theorem does not complete the selected gate. A frozen coefficient-preserving
+mechanism may close with a scoped no-go at its first exact face self-return;
+it may not pivot in-round. A theorem must also price the sign-failure and
+changed-gcd pieces under one restored outer real part.
+
+The primary-source audit is current through 2026-08-31 and finds no exact
+import in its enumerated corpus. The audit repaired the Mili\'cevi\'c--
+Robinson--Shupe and Xiao author metadata, the exact MRS Proposition 5.3
+weight class, the Tao--Trudgian--Yang version date, and the Bourgain--Watt
+withdrawal boundary. No source applicability or power changes.
+
+The full proof remains incomplete. Complete hard and smooth M1, GAR, hard
+TOP, BAL, UNBAL, endpoint uniformity, M9, both bridges, and the quarter
+target remain open or conditional. The strongest internal exponent remains
+\(1/3\), the accepted external benchmark remains
+\(0.3144831759740614\ldots\), and the target remains \(1/4\).
+
+Round 199 is pending design and no analytic campaign is active. Round 202 is
+the next mandatory strategy and current-primary-literature checkpoint.
+
+## Round 199 cross-gcd cellular-boundary launch
+
+Timestamp: 2026-08-31
+
+Round 199 is active on unchanged graph
+`63fa05e3a4d1493bc37bdd956453a4d3eefbb9dca6fadcbf8b7a68e32ade36b5`
+under campaign `m9-m1-t1-p2-cross-gcd-cellular-boundary-gate`.
+
+The frozen mechanism treats the exact
+\(P_{\partial\rm lit}\dot\cup P_{s\rm f}\dot\cup P_{g\rm f}\)
+complement as a proposed twisted cellular boundary on the four physical
+cross-gcd states. Its theorem exit is the joint outer
+\(O(L^2X^\varepsilon)\) bound on every Round-195 open packet. The aligned
+literal face is the first mandatory stress test. An exact self-return ends
+the mechanism without an in-round pivot; a face-only or other strict-sector
+theorem is not the terminal theorem.
+
+No proof-state status, owner, endpoint result, bridge, global theorem or
+exponent changes at launch. Round 202 remains mandatory after analytic
+Rounds 199--201.
+
+## Round 199 cross-gcd cellular-boundary closure
+
+Timestamp: 2026-08-31
+
+Round 199 closes under
+`p2_cross_gcd_cellular_boundary_self_return_no_go` on authoritative graph
+`3073235ad5677b9066f1336ec9d958b0e93b92d99cfa7ebea1d823146c799099`.
+The State Patch updates only the still-open hard-M1 small-\(t\) owner with
+inconclusive route-boundary evidence and appends eighteen calibrated rejected
+overclaims. It promotes no lemma, parent, endpoint theorem, bridge, target, or
+exponent.
+
+For one odd cross-gcd block \(q>1\), the only lawful P2 three-edge allocation
+triangle has actual character incidences \(1,t,tp\). Its constant-endpoint
+augmented incidence is nonzero. The unique fourth product corner needed for
+the endpoint identity is live but has recomputed gcd \(Aq\) and belongs to the
+disjoint lower-first-failure \(P_1\) owner. Partial-block alternatives do not
+preserve P2; their differences are physical-mask commutators. Neither later
+cap/open projection nor orientation recombination repairs that prior physical
+identity.
+
+This is a no-go for the specified cellular mechanism, not a lower bound and
+not a disproof of the desired joint estimate by another method. The exact
+open-packet seam remains
+
+\[
+ \boxed{
+ \{\kappa<D_L,\ \min(Y,D_L)>H_B\mathfrak m\kappa\}
+ \cap(P_{\partial\rm lit}\dot\cup P_{s\rm f}\dot\cup P_{g\rm f}).}
+\]
+
+Complete P2, P1, original \(t=1\), every other original-\(t\) incidence,
+hard and smooth M1, GAR, all M2 parents, endpoint uniformity, M9, both bridges,
+and the quarter target remain open or conditional. The strongest internal
+exponent remains \(1/3\); the accepted external benchmark remains
+\(0.3144831759740614\ldots\); the target remains \(1/4\).
+
+Round 200 is pending design. It must choose one genuinely new non-cellular P2
+mechanism or the disjoint P1 owner. Round 202 remains the mandatory full-proof
+strategy and current-primary-literature checkpoint.

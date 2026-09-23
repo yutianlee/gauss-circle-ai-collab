@@ -1,0 +1,190 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-hard-top-t1-joint-functional-equation-double-poisson-self-return",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Hard-TOP t=1 joint functional-equation double-Poisson self-return with residue completion",
+        "status": "proved_internal",
+        "statement_tex": "Let J=sqrt(X), y=floor(J), H=floor(yX^(-1/4))=sqrt(J)+O(1), and 1<<L<<H. Retain the complete literal hard-TOP t=1 scalar and the exact Round-168 disjoint-cardinal interpolant B. The residual Euler coefficients have the exact odd-prime local table (0,0):1, (2,0):-1, (0,2):-1, (1,1):-chi_4(p), (2,1):1, (1,2):chi_4(p), with p=2 table (0,0):1,(0,2):-1, and satisfy g(Q,R)=chi_4(Q) sum_([u^2,c]=Q,[v^2,c]=R;u,c odd) mu(u)mu(v)mu(c). Their shifted-line absolute mass is asymp eta^(-3), while sum |g(Q,R)|/(QR) converges. The completed zeta and chi_4 functional equations have respectively even and odd gamma parity, root number one, and yield the exact cosine and sine kernels. For the canonical finite physical block set, S_(L,1)=(i/2) sum_(Q,R)^phys g(Q,R)/(QR) sum_(k odd)chi_4(k) sum_l B_tilde(k/(4Q),l/R). If Z_phys is its finite l=0 mode and R_zeta is the full Round-168 Mellin residue, then E_0=Z_phys-R_zeta with Z_phys,R_zeta,E_0<<L^2/J; the finite zero mode is not literally the full residue. Consequently I_eta=E_0+(i/2)sum_(Q,R)^phys g(Q,R)/(QR)sum_(k odd)chi_4(k)sum_(l!=0)B_tilde(k/(4Q),l/R). The only positive interior stationary branch has kl=XQR and Ql<=Rk<=4Ql. Substitution of the collapsed coefficient law returns coefficientwise to the accepted Round-162 Mobius character-Poisson/ordinary-Poisson family, including p=2. On a favorable recombined smooth block the inherited positive capacity is sqrt(JL)X^epsilon, with unpaid ratio H/L+O(L^(-1)); the exact cardinal array has no proved global smooth recombination. Thus bare joint functional equations and the named positive or audited source placements do not prove the open signed aggregate. This is a scoped self-return reduction, not a lower bound or universal no-go. No polynomial t=1 target, parent, bridge, theorem, or exponent is proved.",
+        "dependencies": [
+          "M9-M2-hard-top-t1-mellin-euler-polylog-and-signed-moment-reduction",
+          "M9-M2-hard-top-t1-character-poisson-product-collar-obstruction"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "proofs/kernels/m9_m2_hard_top_t1_joint_functional_equation_double_poisson_self_return.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-joint-functional-equation-spectral-gate/candidates/conductor_round169_joint_fe_double_poisson_self_return.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-joint-functional-equation-spectral-gate/reports/joint_functional_equation_dual_kernel_attack.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-joint-functional-equation-spectral-gate/reports/blind_joint_transform_rederivation.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-joint-functional-equation-spectral-gate/reviews/independent_coefficient_gamma_residue_transform_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-joint-functional-equation-spectral-gate/reviews/source_spectral_power_self_return_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-joint-functional-equation-spectral-gate/reviews/downstream_graph_scope_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-joint-functional-equation-spectral-gate/reviews/final_internal_kernel_verification.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-joint-functional-equation-spectral-gate/reviews/conductor_round169_adjudication.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-hard-top-t1-joint-functional-equation-spectral-gate/reports/signed_spectral_reciprocity_source_hostile_audit.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Estimate the single finite active signed nonzero-frequency aggregate before every positive norm, retaining the literal cardinal array or replacing it only through a proved endpoint-lawful recombination. Do not repeat bare joint FE, post-shift absolute resummation of G, the smooth positive collar, or the dated audited source placements."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "dependencies_added": [
+          "M9-M2-hard-top-t1-joint-functional-equation-double-poisson-self-return"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "proofs/kernels/m9_m2_hard_top_t1_joint_functional_equation_double_poisson_self_return.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-joint-functional-equation-spectral-gate/candidates/conductor_round169_joint_fe_double_poisson_self_return.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-joint-functional-equation-spectral-gate/reports/joint_functional_equation_dual_kernel_attack.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-joint-functional-equation-spectral-gate/reports/blind_joint_transform_rederivation.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-joint-functional-equation-spectral-gate/reports/signed_spectral_reciprocity_source_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-joint-functional-equation-spectral-gate/reviews/independent_coefficient_gamma_residue_transform_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-joint-functional-equation-spectral-gate/reviews/source_spectral_power_self_return_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-joint-functional-equation-spectral-gate/reviews/downstream_graph_scope_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-joint-functional-equation-spectral-gate/reviews/final_internal_kernel_verification.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-joint-functional-equation-spectral-gate/reviews/conductor_round169_adjudication.md"
+          ]
+        },
+        "next_action": "For the complete non-polylogarithmic t=1 face, prove the exact finite active signed nonzero-frequency aggregate exposed in Round 169 before every positive norm; the residue-completion correction is already target-safe. Retain all other t=1 and few-point channels, and use the mandatory Round-170 strategy review before selecting the next analytic attack."
+      }
+    ],
+    "correct_rejected": [],
+    "reject": [
+      {
+        "id": "Round169-finite-physical-zero-mode-equals-full-Mellin-residue",
+        "reason": "The finite physical Poisson family truncates R at the positive support, whereas the s_2=1 Mellin residue retains the full absolutely convergent R coefficient sum. Their difference E_0 is nonzero in general but is O(L^2/J)."
+      },
+      {
+        "id": "Round169-infinite-G-series-may-be-absolutely-resummed-after-left-contour-shift",
+        "reason": "On the left lines Q^delta R^delta grows and the shifted-line l1 bound no longer applies. The lawful summed transform first forms the finite physical coefficient convolution and then applies exact Poisson."
+      },
+      {
+        "id": "Round169-joint-functional-equations-prove-the-signed-two-height-target",
+        "reason": "The exact transform exposes but does not estimate the signed nonzero-frequency aggregate; the rank-one radial phase is constant at kl=XQR."
+      },
+      {
+        "id": "Round169-positive-smooth-product-collar-proves-the-literal-cardinal-scalar",
+        "reason": "The favorable smooth-interior capacity is sqrt(JL)X^epsilon with H/L deficit, and the exact O(L^2)-cell cardinal array has no proved length-L radial recombination."
+      },
+      {
+        "id": "Round169-audited-shifted-convolution-Kuznetsov-or-reciprocity-theorem-directly-accepts-the-moving-collar",
+        "reason": "The audited theorems require integral additive shifts or Kloosterman data, fixed levels/cusps or controlled moving levels, smooth weights, complete spectra, and positive norms; no exact target-safe map preserves the signed g(Q,R)/(QR) aggregate."
+      },
+      {
+        "id": "Round169-self-return-rules-out-every-future-signed-spectral-theorem",
+        "reason": "The result is a no-go only for bare dualization, named positive placements, and the dated audited source set. A bespoke signed joint-aggregate theorem remains possible."
+      },
+      {
+        "id": "Round169-self-return-closes-a-parent-bridge-theorem-or-exponent",
+        "reason": "The signed aggregate, full polynomial t=1 scalar and residual, other hard-TOP channels, BAL, UNBAL, both M1 routes, endpoint uniformity, M9, both bridges, the quarter theorem, and both exponent ledgers remain open or unchanged."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M2-hard-top-t1-mellin-euler-polylog-and-signed-moment-reduction",
+        "reason": "Round 169 refines its open signed moment by an exact self-return but does not change the accepted Round-168 statement or status."
+      },
+      {
+        "id": "M9-M2-hard-top-t1-residual-transport-fejer-energy-reduction",
+        "reason": "The full residual Fejer owner is not estimated."
+      },
+      {
+        "id": "M9-M2-hard-top-t1-residual-fejer-parity-gcd-scale-reduction",
+        "reason": "K17a and K26 remain open outside their strict sectors."
+      },
+      {
+        "id": "M9-M2-hard-top-t1-residual-determinant-endpoint-polylog-shift-reduction",
+        "reason": "No non-polylogarithmic residual determinant estimate is proved."
+      },
+      {
+        "id": "M9-M2-top-endpoint-density-discrepancy-energy",
+        "reason": "There is no proved connector from the t=1 self-return to the density-discrepancy owner."
+      },
+      {
+        "id": "M9-M2-physical-one-count-assembly",
+        "reason": "Hard TOP, BAL, and UNBAL remain incomplete."
+      },
+      {
+        "id": "M9-M2-smooth-balanced-quarter-packet-estimate",
+        "reason": "Round 169 treats no balanced packet."
+      },
+      {
+        "id": "M9-M2-smooth-unbalanced-three-quarter-estimate",
+        "reason": "Round 169 treats no unbalanced packet."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "All three M2 analytic parents remain open."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "Round 169 treats no M1 owner."
+      },
+      {
+        "id": "M9-M1-top-endpoint-signed-cone",
+        "reason": "No direct hard-M1 cancellation is proved."
+      },
+      {
+        "id": "M9-M1-direct-smooth-residual-blockwise-estimate",
+        "reason": "No direct smooth-M1 cancellation is proved."
+      },
+      {
+        "id": "M9-M1-global-angular-recombination",
+        "reason": "The conditional GAR recombination remains unchanged."
+      },
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "reason": "The open GAR estimate is not addressed."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "A single t=1 reduction does not prove all-owner endpoint uniformity."
+      },
+      {
+        "id": "M9",
+        "reason": "Both direct M1 parents, all three M2 parents, and endpoint uniformity remain incomplete."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The standard bridge remains conditional on complete M9."
+      },
+      {
+        "id": "GC-global-M1-alternative-bridge",
+        "reason": "The alternative bridge still requires complete GAR and all of M9-M2."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The quarter theorem remains open."
+      },
+      {
+        "id": "M9-direct-menu-one-third-optimality",
+        "reason": "No direct-menu power boundary changes."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The strongest internally proved exponent remains one third."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "The source-audited external benchmark remains 0.3144831759740614... ."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 169 proves the exact G-to-Mobius collapse, completed sine/cosine kernel, finite double-Poisson identity, and target-safe finite-zero/full-residue correction, turning the previously analogical FE comparison into a coefficientwise Round-162 self-return. The signed aggregate and every parent/exponent remain open."
+  }
+}

@@ -3,7 +3,7 @@
 ## Scope and status
 
 This document consolidates the accepted proof-obligation graph through
-completed Codex-managed Round 162, together with the earlier accepted
+completed Codex-managed Round 193, together with the earlier accepted
 infrastructure. It contains an internally proved \(1/3+\epsilon\)
 theorem, a narrowly repaired and source-audited external theorem at
 exponent \(0.3144831759\ldots\), and the conditional architecture for
@@ -2418,7 +2418,7 @@ lemma.
 The aggregate certificate nevertheless remains open. The Round-41 node
 proves signed saddle, entry, and exit cells, but no accepted artifact yet
 exhibits an identical-antecedent finite partition summing to
-(1-\chi _0\) and bounds every nonsaddle remainder. That is now the only
+\(1-\chi _0\) and bounds every nonsaddle remainder. That is now the only
 large-alpha complement seam; it must not be inferred from the word
 “complete” in a theorem title.
 
@@ -3767,7 +3767,7 @@ exact aggregate identity is
 \[
 \begin{aligned}
  \mathcal O_L={}&2\Re
- \sum_{\substack{a<b<4a\\a,b\ \mathrm{odd}\\(a,b)=1}}
+ \sum_{\substack{a<b<4a\\a,b\ \mathrm{odd}\\ (a,b)=1}}
  \sum_k e(\alpha)
  \sum_{2n+1\in\mathcal G_{a,b}}
  \mathfrak B_{a,b,k}^{\circ}(2n+1)e(-n\Lambda/k)\\
@@ -7330,7 +7330,7 @@ and
 
 Indeed, writing (m=du^2) with (d) squarefree forces (h=dv^2),
 and the hard cone gives (u\le v\le2u).  Summing the squared row
-cardinalities gives (L^{3/2}\sum_dd^{-3/2}\).  This condition is on
+cardinalities gives \(L^{3/2}\sum_d d^{-3/2}\).  This condition is on
 individual entries before the energy expansion and is distinct from the
 previously owned primitive (ab=\square) off-diagonal family.
 
@@ -8048,8 +8048,7 @@ Accepted evidence:
 For the endpoint-complete flat-smooth strict-UNBAL energy, form
 
 \[
-A(k)=\sum_{p\ {
-m odd}}\chi_4(p)b_{p,k},
+A(k)=\sum_{p\ \mathrm{odd}}\chi_4(p)b_{p,k},
 \qquad
 \mathcal E_\chi=C_H\int_{\mathbb T}|D_H(\alpha)|^2
 |\widehat A(\alpha)|^2\,d\alpha.
@@ -8535,7 +8534,7 @@ termwise
 \[
  \mathcal F_N=
  \sum_{\substack{2\le b\le y\\b\ {\rm odd}}}\lambda_b
- \sum_{\substack{1\le a<b\\(a,b)=1}}
+ \sum_{\substack{1\le a<b\\ (a,b)=1}}
  e(aN/b)J_{R,y}(a/b).
 \tag{138.1}
 \]
@@ -9271,7 +9270,7 @@ The exact arithmetic reconstruction is as follows.  Put
 
 \[
 \mathcal G_d(m)=
-\sum_{\substack{c\ ({\rm mod}\ 4d)\\(c,4d)=1}}
+\sum_{\substack{c\ ({\rm mod}\ 4d)\\ (c,4d)=1}}
 \chi_4(c)e(cm/(4d)).
 \]
 
@@ -9758,7 +9757,7 @@ Equivalently, with \(G=(h,r)\),
 \boxed{
 C(st^2)=
 \sum_{de=s}^{\rm ord}
-\sum_{\substack{Gab=t\\(da,eb)=1\\
+\sum_{\substack{Gab=t\\ (da,eb)=1\\
                  Geb\ {\rm odd}\\eb^2>4da^2}}
 \chi_4(Ge).}
 \tag{145.3}
@@ -10037,8 +10036,7 @@ Accepted evidence:
 For the mandatory \(t=1\) face, put
 
 \[
-C(s)=\sum_{\substack{de=s\\e\ {
-m odd}\\e>4d}}\chi _4(e).
+C(s)=\sum_{\substack{de=s\\e\ \mathrm{odd}\\e>4d}}\chi _4(e).
 \tag{147.1}
 \]
 
@@ -13099,3 +13097,2454 @@ Accepted evidence:
 - rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/downstream_graph_scope_review.md;
 - rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/conductor_round163_adjudication.md;
 - rounds/codex-managed/m9-m2-hard-top-t1-near-square-divisor-involution-gate/reviews/state_patch_scope_round163.md.
+
+## Accepted graph addition after Round 164
+
+For the literal residual
+
+\[
+ \mathcal S_{L,1}^{\rm rem}
+ =\sum_Nc_N^{\rm rem}e(J\sqrt N),
+\]
+
+the residual indicator is \(1\) on every odd divisor when no Round-163
+pair is selected and, for a selected pair \(p_N,q_N\), is
+
+\[
+ \rho_N(d)
+ =1-\mathbf1_{p_N\mid d}-\mathbf1_{q_N\mid d}
+ +2\mathbf1_{p_N\mid d}\mathbf1_{q_N\mid d}.
+\tag{164.1}
+\]
+
+Thus it is exactly complementary to the accepted XOR sector.  Its ambient
+character mass is
+
+\[
+ \sum_{d\mid M_N}\chi_4(d)\rho_N(d)
+ =\begin{cases}
+ \displaystyle\prod_{r\mid M_N}(1+\chi_4(r)),&\text{no pair},\\[4pt]
+ 0,&\text{selected pair}.
+ \end{cases}
+\tag{164.2}
+\]
+
+In particular, selection gives ambient balance, while a no-pair product
+whose odd prime factors are all \(1\pmod4\) has only positive divisor
+signs.
+
+Order the complete residual odd-divisor universe as
+\(d_1<\cdots<d_r\), including zero-amplitude divisors.  With
+\(\sigma_i=\chi_4(d_i)\), \(C_j=\sum_{i\leq j}\sigma_i\),
+\(C_0=0\), \(a_i=A_N(d_i)\), and \(a_0=a_{r+1}=0\), exact Abel
+summation gives
+
+\[
+ b_N^{\rm rem}
+ =C_ra_r+\sum_{j<r}C_j(a_j-a_{j+1})
+ =-\sum_{j=0}^{r}C_j(a_{j+1}-a_j).
+\tag{164.3}
+\]
+
+Since the zero-extended increments sum to zero, subtracting the midpoint
+of the range of \(C_j\) gives the sharp real-amplitude inequality
+
+\[
+ \boxed{
+ |b_N^{\rm rem}|
+ \leq\frac12\operatorname{osc}(C_N)
+       \sum_{j=0}^{r}|a_{j+1}-a_j|.}
+\tag{164.4}
+\]
+
+The literal profile has sampled total variation \(V_N\ll1\), including
+all hard faces and isolated point values.  The direct literal BV/triangle
+target is the weighted sum
+\(\sum_N\operatorname{osc}(C_N)V_N\); the unweighted sum is only the
+coefficient-uniform envelope.  Audited odd and even four-prime controls
+have \(L^{2-o(1)}\) unit-profile capacity uniformly in selector status.
+This parks coefficient-uniform positive transport but supplies no literal
+profile or oscillatory lower bound.
+
+Let \(c_N^{\rm rem}\) be zero outside an integer interval of
+\(M_L\asymp L^2\) sites and take \(R=\lceil L\rceil\).  The exact sliding
+Fejer energy is
+
+\[
+\begin{aligned}
+ \mathfrak E_R^{\rm rem}
+ &:={1\over R}\sum_s
+  \left|\sum_{j=0}^{R-1}c_{s+j}^{\rm rem}e(J\sqrt{s+j})\right|^2\\
+ &=\sum_N|c_N^{\rm rem}|^2
+ +2\Re\sum_{1\leq r<R}\left(1-\frac rR\right)
+  \sum_Nc_{N+r}^{\rm rem}\overline{c_N^{\rm rem}}
+  e\!\left(\frac{Jr}{\sqrt{N+r}+\sqrt N}\right).
+\end{aligned}
+\tag{164.5}
+\]
+
+Exact window counting and Cauchy's inequality give
+
+\[
+ \boxed{
+ |\mathcal S_{L,1}^{\rm rem}|^2
+ \leq\frac{M_L+R-1}{R}\mathfrak E_R^{\rm rem}.}
+\tag{164.6}
+\]
+
+The coefficient diagonal is
+\(\sum_N|c_N^{\rm rem}|^2\ll_\varepsilon L^2X^\varepsilon\).
+Consequently the residual target follows from the still-open one-sided
+actual-direction estimate
+
+\[
+ \Re\sum_{1\leq r<R}\left(1-\frac rR\right)
+ \sum_Nc_{N+r}^{\rm rem}\overline{c_N^{\rm rem}}
+ e\!\left(\frac{Jr}{\sqrt{N+r}+\sqrt N}\right)
+ \leq C_\varepsilon L^2X^\varepsilon.
+\tag{164.7}
+\]
+
+Opening the two supported squarefree coefficients gives exactly
+
+\[
+ d'm'-dm=r,\qquad1\leq r<R\asymp L,
+\tag{164.8}
+\]
+
+with both selectors, parity branches, profiles, squarefree conditions, and
+the square-root phase retained.  No absolute value around an individual
+shift or divisor opening is part of the reduction.
+
+Round 164 proves no residual target, full \(t=1\) face, remaining
+few-point channel, hard-TOP parent, smooth M2 packet, M9--M2, M9--M1,
+endpoint uniformity, M9, bridge, quarter theorem, or exponent
+improvement.  The internal exponent remains \(1/3\), and the accepted
+external benchmark remains
+\((3292+25\sqrt{1717})/13762=0.3144831759740614\ldots\).
+
+Accepted evidence:
+
+- proofs/kernels/m9_m2_hard_top_t1_residual_transport_fejer_energy_reduction.md;
+- sources/bennett_martin_obryant_rechnitzer_2018.md;
+- rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reports/complete_residual_transport_attack.md;
+- rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reports/blind_residual_transport_rederivation.md;
+- rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reports/unmatched_transport_capacity_hostile_audit.md;
+- rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reviews/blind_repair_verification.md;
+- rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reviews/transport_source_repair_verification.md;
+- rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reviews/downstream_graph_state_scope_review.md; and
+- rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reviews/conductor_round164_adjudication.md.
+
+## Accepted Round 165 parity/gcd/scale reduction
+
+For the complete Round-164 residual, define
+\(z_N=c_N^{\rm rem}e(J\sqrt N)\) on the positive literal shell and zero
+elsewhere.  For every integer \(R\ge1\),
+
+\[
+ \mathfrak E_R={1\over R}\sum_s
+ \left|\sum_{j=0}^{R-1}z_{s+j}\right|^2
+ =D_L+2\Re\mathfrak C_R,
+ \qquad
+ |\mathcal S_{L,1}^{\rm rem}|^2
+ \le {M_L+R-1\over R}\mathfrak E_R.
+\]
+
+Splitting every window by absolute-site parity proves
+
+\[
+ \mathfrak E_R\le2\mathfrak E_R^{(2)},
+\]
+
+where the right side contains exactly the even gaps with their original
+Fejer weights, including the odd-\(R\) terminal weight \(1/R\).
+
+At \(R_0=\lceil L\rceil\), the exact tangent variables
+\(a=d'-d\), \(b=m'-m\) obey
+
+\[
+ r=db+am+ab,
+ \qquad
+ \chi_4(d')\chi_4(d)=(-1)^{a/2}.
+\]
+
+The complete monotone sector \(a,b\ge0\) has \(O(L^2)\) atoms over all
+short shifts; the nonpositive sectors are empty and all remaining tuples
+have \(ab<0\).  With \(g=(d,d')\), the exact divisor-gcd progressions have
+fixed character and give
+
+\[
+ |\mathfrak C_{R_0,g\ge G_0}^{\rm rem}|
+ \ll_\varepsilon L^3G_0^{-1}X^\varepsilon.
+\]
+
+Thus every fixed-fraction high-\(g\) divisor-incidence sector is
+target-safe.  The dual cofactor-gcd progression has character
+\(\sigma_0(-1)^{(r\bmod2)k}\), so the character is frozen on every
+even-shift row.  The exact phase ledger supplies no uniform modulo-one
+separation, and standard positive rowwise transforms do not close the
+remaining aggregate.
+
+The sharpest open minimal-scale theorem is
+
+\[
+ \Re\mathfrak C_{R_0,2,{\rm opp},\,g<\gamma L}^{\rm rem}
+ \ll_{\gamma,\varepsilon}L^2X^\varepsilon.
+\]
+
+There is also a distinct maximal-scale route.  At \(R=M_L\asymp L^2\),
+fixed-shift Cauchy pays every \(r<R_0\); it is sufficient to bound the
+single even medium/long aggregate by \(O(L^3X^\varepsilon)\).  Both
+sufficient estimates are open.  The complete residual, the full \(t=1\)
+face, the other hard-TOP channels, BAL, UNBAL, M9--M2, M9--M1, endpoint
+uniformity, M9, the bridge, and the quarter theorem remain open.  The
+internal exponent remains \(1/3\), and the audited external benchmark
+remains \(0.3144831759740614\ldots\).
+
+Accepted evidence:
+
+- proofs/kernels/m9_m2_hard_top_t1_residual_fejer_parity_gcd_scale_reduction.md;
+- rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reports/actual_residual_short_shift_attack.md;
+- rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reports/blind_fejer_short_shift_rederivation.md;
+- rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reports/short_shift_arithmetic_hostile_audit.md;
+- rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/kernel_final_repair_verification.md;
+- rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/downstream_graph_state_scope_review.md;
+- rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/state_patch_scope_round165.md; and
+- rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reviews/conductor_round165_adjudication.md.
+
+## Round 166 proof-state refresh: no theorem addition
+
+Round 166 changes no accepted statement or status.  The accepted Round-165
+reduction still has two open sufficient estimates, and the selected next one
+is
+
+\[
+ \Re\mathfrak C_{R_0,2,{\rm opp},g<\gamma L}^{\rm rem}
+ \ll_{\gamma,\varepsilon}L^2X^\varepsilon,
+ \qquad R_0=\lceil L\rceil.
+\]
+
+The graph records only a new investigation instruction: test the exact
+variable-determinant skeleton \(d'm'-dm=r\) against a literal
+selector-aware oscillatory source interface, and stop at the first failed
+coefficient, seminorm, aggregate, main-term, boundary, or restored-power
+gate.  The source comparison is inconclusive evidence, not an imported
+lemma.
+
+The complete residual, other hard-TOP channels, hard TOP, BAL, UNBAL,
+M9--M2, both direct M1 parents, GAR, endpoint uniformity, M9, both bridges,
+and the quarter theorem remain open.  The internal exponent remains
+\(1/3\), the external Li--Yang benchmark remains
+\(0.3144831759740614\ldots\), and the target remains \(1/4\).
+
+## Accepted Round 167 determinant endpoint and polylogarithmic reduction
+
+For every literal residual endpoint \(x=(d,m)\), set
+
+\[
+ u_L(d,m)=\chi_4(d)\lambda_{dm}(d)e(J\sqrt{dm}).
+\]
+
+Let \(T_{R_0,\gamma}(y,x)\) contain exactly the Fejer weight, positive
+even gap below \(R_0=\lceil L\rceil\), opposing displacement, and
+\((d,d')<\gamma L\).  Every ordered endpoint incidence maps bijectively
+to
+
+\[
+ \begin{pmatrix}d'&d\\m&m'\end{pmatrix},
+ \qquad \det=d'm'-dm,
+\]
+
+and any left \(\Gamma_2(4,1)\)-orbit opening is multiplicity preserving.
+The complete open aggregate is exactly
+
+\[
+ \boxed{
+ \mathfrak C^{\rm rem}_{R_0,2,{\rm opp},g<\gamma L}
+ =\langle T_{R_0,\gamma}u_L,u_L\rangle.}
+\]
+
+The endpoint incidence norm and Schur degree give only
+
+\[
+ \|u_L\|_2^2\ll_\varepsilon L^2X^\varepsilon,
+ \qquad
+ \|T_{R_0,\gamma}\|_{2\to2}\ll_\varepsilon LX^\varepsilon,
+\]
+
+so the full positive capacity remains \(L^3X^\varepsilon\).
+
+For each fixed \(B>0\), the complete literal initial shift sector is
+proved target-safe:
+
+\[
+ \left|\mathfrak C^{\rm rem}_{r\le
+ \min(R_0-1,\lfloor(\log X)^B\rfloor)}\right|
+ \ll_{\varepsilon,B}L^2X^\varepsilon.
+\]
+
+At a genuine power scale this leaves the non-polylogarithmic K17a range,
+so the complete residual and every parent remain open.  No global exponent
+changes.
+
+Accepted evidence:
+
+- proofs/kernels/m9_m2_hard_top_t1_residual_determinant_endpoint_polylog_shift_reduction.md;
+- rounds/codex-managed/m9-m2-hard-top-t1-residual-oscillatory-determinant-interface-gate/reviews/final_internal_kernel_verification.md; and
+- rounds/codex-managed/m9-m2-hard-top-t1-residual-oscillatory-determinant-interface-gate/reviews/conductor_round167_adjudication.md.
+
+## Accepted Round 168 intact Mellin--Euler and fixed-polylogarithmic reduction
+
+For the complete literal selector-free hard-TOP \(t=1\) scalar, the
+squarefree, coprime, odd-first-leg arithmetic series has the exact
+factorization
+
+\[
+ D(s_1,s_2)=L(s_1,\chi_4)\zeta(s_2)G(s_1,s_2),
+\]
+
+where
+
+\[
+ G_2=1-2^{-2s_2},\qquad
+ G_p=(1+x_p+y_p)(1-x_p)(1-y_p)
+\]
+
+for odd \(p\), and \(G\) is holomorphic for
+\(\Re s_1,\Re s_2>1/2\).  A disjoint-cardinal interpolation reproduces
+every literal lattice value.  Moving the \(s_2\)-contour first gives
+
+\[
+ \mathcal S_{L,1}=R_\zeta+\mathcal I_\eta,
+ \qquad
+ R_\zeta\ll_\varepsilon L^2J^{-1}X^\varepsilon.
+\]
+
+The residue bound follows from the exact coefficient series
+
+\[
+ L(s,\chi_4)G(s,1)
+ =\frac1{\zeta(2)}
+ \sum_{\substack{n\ge1\\n\ {\rm odd,\ squarefree}}}
+ \frac{\chi_4(n)}{n^s}
+ \prod_{p\mid n}(1+p^{-1})^{-1}
+\]
+
+and one nonstationary integration by parts on each of \(O(L^2)\)
+cardinal cells.  The exact open theorem is therefore
+
+\[
+ \mathcal I_\eta\ll_\varepsilon L^{3/2}X^\varepsilon.
+\]
+
+On a favorable recombined smooth/BV control, the stationary band has
+length \(JL\) and transform scale \(L^{2\eta}\sqrt{L/J}\).  The named
+pointwise-triangle and fixed-angular-mean-square/Cauchy placements each
+retain a structural factor \(\sqrt J\); this is a scoped capacity result,
+not a bound or lower bound for the exact cardinal integral.
+
+For every fixed \(B>0\),
+
+\[
+ L\le(\log X)^B
+ \quad\Longrightarrow\quad
+ \mathcal S_{L,1}\ll_{\varepsilon,B}L^{3/2}X^\varepsilon.
+\]
+
+For fixed \(\kappa>0\), the accepted exact close-prime XOR connector gives
+the same fixed-polylogarithmic-\(L\) estimate for its residual complement,
+with constant depending on \(\kappa\).  The polynomial full scalar and
+residual, K17a, K26, every hard-TOP/BAL/UNBAL and M1 parent, endpoint
+uniformity, M9, both bridges, and the quarter theorem remain open.  The
+internal exponent stays \(1/3\), and the audited external benchmark stays
+\(0.3144831759740614\ldots\).
+
+Accepted evidence:
+
+- proofs/kernels/m9_m2_hard_top_t1_mellin_euler_polylog_signed_moment_reduction.md;
+- rounds/codex-managed/m9-m2-hard-top-t1-pre-mobius-mellin-euler-product-gate/reviews/final_internal_kernel_verification.md;
+- rounds/codex-managed/m9-m2-hard-top-t1-pre-mobius-mellin-euler-product-gate/reviews/downstream_graph_state_patch_review.md; and
+- rounds/codex-managed/m9-m2-hard-top-t1-pre-mobius-mellin-euler-product-gate/reviews/conductor_round168_adjudication.md.
+
+## Accepted Round 169 joint functional-equation double-Poisson self-return
+
+Expand the residual Euler product from Round 168 as
+
+\[
+ G(s_1,s_2)=\sum_{Q,R\ge1}g(Q,R)Q^{-s_1}R^{-s_2}.
+\]
+
+For each odd prime, the only nonzero exponent pairs and coefficients are
+
+\[
+ (0,0):1,quad (2,0):-1,quad (0,2):-1,quad
+ (1,1):-\chi_4(p),quad (2,1):1,quad (1,2):\chi_4(p),
+\]
+
+while at (p=2) they are ((0,0):1) and ((0,2):-1).  Equivalently,
+
+\[
+ g(Q,R)=\chi_4(Q)
+ \sum_{\substack{[u^2,c]=Q,\ [v^2,c]=R\\u,c\ \mathrm{odd}}}
+ \mu(u)\mu(v)\mu(c).
+\]
+
+The coefficient masses satisfy
+
+\[
+ \sum_{Q,R}|g(Q,R)|(QR)^{-1/2-\eta}\asymp\eta^{-3},
+ \qquad
+ \sum_{Q,R}\frac{|g(Q,R)|}{QR}<\infty.
+\]
+
+Applying the exact sine transform associated with the completed odd
+(L(s,\chi_4)) equation and the exact cosine transform associated with
+the completed zeta equation to the finite physical convolution gives
+
+\[
+ \mathcal S_{L,1}=\frac i2
+ \sum_{Q,R}^{\mathrm{phys}}\frac{g(Q,R)}{QR}
+ \sum_{k\ \mathrm{odd}}\chi_4(k)\sum_{\ell\in\mathbb Z}
+ \widetilde{\mathcal B}\!\left(\frac{k}{4Q},\frac{\ell}{R}\right).
+\]
+
+If (Z_{\mathrm{phys}}) is the finite \(\ell=0\) mode and (R_\zeta)
+is the full Round-168 Mellin residue, then
+
+\[
+ E_0:=Z_{\mathrm{phys}}-R_\zeta,
+ \qquad Z_{\mathrm{phys}},R_\zeta,E_0\ll L^2/J.
+\]
+
+Therefore
+
+\[
+ \mathcal I_\eta=E_0+\frac i2
+ \sum_{Q,R}^{\mathrm{phys}}\frac{g(Q,R)}{QR}
+ \sum_{k\ \mathrm{odd}}\chi_4(k)\sum_{\ell\ne0}
+ \widetilde{\mathcal B}\!\left(\frac{k}{4Q},\frac{\ell}{R}\right).
+\]
+
+The only positive interior stationary branch satisfies
+
+\[
+ k\ell=XQR,\qquad Q\ell\le Rk\le4Q\ell.
+\]
+
+After substituting the collapsed coefficient law, this is exactly the
+accepted Round-162 Mobius character--Poisson/ordinary-Poisson family, up
+to the target-safe (E_0).  Bare joint functional equations therefore
+expose but do not estimate the signed product collar.  On the favorable
+smooth control its positive capacity remains
+(\sqrt{JL}X^\varepsilon), and the literal cardinal array has no proved
+global smooth recombination.  An infinite (G)-series cannot be
+absolutely resummed after the left contour shift.
+
+This is a proved internal reduction only.  The nonzero-frequency bound
+(O_\varepsilon(L^{3/2}X^\varepsilon)), the polynomial (t=1) scalar,
+every M1/M2 parent, endpoint uniformity, M9, both bridges, and the quarter
+theorem remain open.  No exponent changes.
+
+Accepted evidence:
+
+- proofs/kernels/m9_m2_hard_top_t1_joint_functional_equation_double_poisson_self_return.md;
+- rounds/codex-managed/m9-m2-hard-top-t1-joint-functional-equation-spectral-gate/reviews/final_internal_kernel_verification.md;
+- rounds/codex-managed/m9-m2-hard-top-t1-joint-functional-equation-spectral-gate/reviews/downstream_graph_state_patch_review.md; and
+- rounds/codex-managed/m9-m2-hard-top-t1-joint-functional-equation-spectral-gate/reviews/conductor_round169_adjudication.md.
+
+## Round 170 proof-state refresh: no theorem addition
+
+Round 170 proves no new estimate. Its graph review found that the accepted
+critical balanced double-far children cover only persistent \(j=1\) blocks at
+\(L\asymp X^{1/6}\), whereas the full BAL parent quantifies over every label
+\(1\le K/L\le16\). The exact-square \(j=2\), \(K/L=16\) boundary,
+noncritical \(j=1\) scales, and other uncovered labels therefore require a
+separate owner.
+
+The authoritative graph now includes the open obligation
+`M9-M2-balanced-remaining-label-owner-quantifier-completion`, and the full
+BAL parent depends on it as well as on the still-open critical energy. This is
+a scope correction only.
+
+The sole next candidate is the persistent critical \(j=1\) estimate
+
+\[
+ |\mathcal R_B^{\rm osc}|\ll_\varepsilon L^3X^\varepsilon,
+\]
+
+whose positive capacity is \(L^4X^\varepsilon\). The proposed two-defect
+commutator is unproved and is admitted only as an identity-or-no-go test.
+It must retain fixed-\(p\) character constancy, the axial sectors, fixed-
+\(Q\) rulings, both gcd weights and slanted symbols, sharp boundaries, and
+the complete factor-\(L\) power gate.
+
+The dated primary-source audit found no exact project interface and no later
+indexed unrestricted pointwise exponent improvement. Thus all proof routes
+remain conditional. The graph after Round 170 is
+`4c98bb13558c06159c5ad23128c6f6ff52970db296863858832309a24a4720ac`;
+internal \(1/3\), accepted external
+\(0.3144831759740614\ldots\), and target \(1/4\) are unchanged.
+
+## Round 171 accepted internal obstruction
+
+On the persistent critical \(j=1\) balanced chart, put
+
+\[
+ p=h'-h,\qquad q=k'-k,\qquad
+ \Delta=h'k'-hk,\qquad \rho=hk'-h'k.
+\]
+
+The coordinate change has multiplicity one and gives the exact identities
+
+\[
+ \Delta+\rho=q(2h+p),\qquad
+ \Delta-\rho=p(2k+q),
+\]
+
+When \(p=2s\), the character product is
+\(\chi_4(h)\chi_4(h+p)=(-1)^s\).  Each axial sector \(p=0\) and \(q=0\),
+and each fixed-width singular strip supporting the relevant multiplier
+commutator, has target-safe capacity \(O_\varepsilon(L^3X^\varepsilon)\).
+
+For the actual real scalar, endpoint swap gives the exact pairing
+
+\[
+ \langle W,H\rangle_G
+ =\langle P_{++}W,P_{++}H\rangle_G
+ +\frac1{16}\langle D_hD_kW,D_hD_kH\rangle_G.
+\]
+
+The mixed projections vanish, but the surviving \(P_{++}\) complement still
+has positive capacity \(L^4X^\varepsilon\).  The ordinary and
+parity-compatible local multiplier commutators are exact, but off their
+target-safe affine singular strips, division by the multiplier merely
+returns the original alternating shift identity.  The corresponding exact
+two-step Abel representation is
+
+\[
+ R=\frac12\sum (-1)^s(q-q_0)D_sD_qF.
+\]
+
+Every coefficient-independent primitive on an interval of \(N\) points has
+supremum at least \(N/2\).  Thus the forced ramp restores the missing factor
+\(L\): after all literal weights and boundaries are restored, the available
+positive ledger remains \(L^4X^\varepsilon\), not the required
+\(L^3X^\varepsilon\).
+
+This proves only a route-scoped obstruction to the displayed local,
+coefficient-independent commutator and Abel placements.  It is not a lower
+bound for the physical oscillatory remainder and does not exclude a weighted,
+composite, or nonlocal actual-symbol commutator.  The critical remainder and
+energy, the separate remaining-label BAL owner, every parent, bridge, and the
+quarter theorem remain open.  The resulting graph is
+`c98f95b6b3500d0f48365af338e543f9a0f251b22062f3898df5f448d6b54853`;
+no exponent changes.
+
+Accepted evidence:
+
+- `proofs/kernels/m9_m2_balanced_two_defect_commutator_ramp_obstruction.md`;
+- `rounds/codex-managed/m9-m2-balanced-critical-j1-two-defect-commutator-gate/reviews/final_kernel_repair_verification.md`;
+- `rounds/codex-managed/m9-m2-balanced-critical-j1-two-defect-commutator-gate/reviews/downstream_graph_state_patch_review.md`; and
+- `rounds/codex-managed/m9-m2-balanced-critical-j1-two-defect-commutator-gate/reviews/conductor_round171_adjudication.md`.
+
+## Round 172 accepted internal obstruction
+
+For the complete residual sequence (z_N=c_N^{\rm rem}e(J\sqrt N)), let
+
+\[
+ \mathfrak E_R^{(2)}
+ =D_L+2\!\sum_{\substack{0<r<R\\2\mid r}}
+ \left(1-\frac rR\right)A_r,
+ \qquad D_L\ll_\varepsilon L^2X^\varepsilon.
+\]
+
+Along the exact stopped chain (R_{j+1}=\min(2R_j,M)), (M\asymp L^2),
+
+\[
+ T_{26}=\frac12\sum_j
+ \bigl(\mathfrak E_{R_{j+1}}^{(2)}-\mathfrak E_{R_j}^{(2)}\bigr)
+ -B_{\rm short},
+ \qquad |B_{\rm short}|\ll_\varepsilon L^3X^\varepsilon.
+\]
+
+For (R<S\le2R), the exact even link has zero diagonal and coefficient
+
+\[
+ b_{R,S}(r)=
+ \begin{cases}
+ r(S-R)/(RS),&0<r<R,\\
+ 1-r/S,&R\le r<S,\\
+ 0,&r\ge S.
+ \end{cases}
+\]
+
+Exact doublings have the accepted absolute-site-parity Haar identity; a
+strict terminal link retains the displayed Fejer difference.  A real
+disjoint-cardinal opening of every literal residual incidence gives
+
+\[
+ Z_\epsilon(\theta)=\frac i2
+ \sum_{k\ \mathrm{odd}}\chi_4(k)\sum_{\ell\in\mathbb Z}
+ \widetilde{\mathcal B}_{\epsilon,\theta}(k/4,\ell).
+\]
+
+After squaring and parity averaging, the coefficient is (1/8) with one
+outer real part.  The entire sector with (ell=0) or (ell'=0) is
+(O_\varepsilon(L^3X^\varepsilon)), but only after recombining all signed
+odd character frequencies.  The first open object is the complete signed
+(ell,\ell'\ne0) aggregate; the zero physical diagonal does not delete a
+fixed dual diagonal.
+
+Before a proved literal actual-symbol gain, coefficient-uniform positive
+closure over modes, cells, openings, or common frequency has available
+scale (MD_L\ll_\varepsilon L^4X^\varepsilon).  The admissible nonliteral
+(M=4P) dechirped one-parity family attains (MD_L/8), so this audited
+continuation cannot provide the missing factor (L).  This is not a lower
+bound for the residual coefficient.  Cross-link cancellation and a
+coefficient-sensitive literal theorem remain possible, and K26 remains
+open.
+
+The State Patch creates only the corresponding proved-internal route
+obstruction and adds it as inconclusive evidence to two already-open
+hard-TOP endpoint interfaces.  Every analytic parent, bridge, the quarter
+theorem, and all exponents remain unchanged.  The resulting graph is
+`70592c104e0c149485b4fac3fe6582020767631938fe9036f204ae616f188b7f`.
+
+Accepted evidence:
+
+- `proofs/kernels/m9_m2_hard_top_t1_residual_maximal_fejer_dyadic_positive_transform_obstruction.md`;
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-maximal-fejer-dyadic-frequency-gate/reviews/final_kernel_post_repair_verification.md`;
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-maximal-fejer-dyadic-frequency-gate/reviews/downstream_graph_state_patch_review.md`; and
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-maximal-fejer-dyadic-frequency-gate/controls/conductor_round172_post_apply_reverse_audit.md`.
+
+## Round 173 accepted internal obstruction
+
+For a literal even-gap residual pair write
+
+\[
+ d'=d+2s,\qquad m'=m+v,\qquad v\in2\mathbb Z,
+ \qquad r_s=dv+2s(m+v).
+\]
+
+On the complete literal domain the chart has multiplicity one and
+
+\[
+ \chi_4(d')\chi_4(d)=(-1)^s,
+ \qquad r_{s+1}-r_s=2m'\asymp L.
+\]
+
+For every stopped Fejer link the exact alternating split is
+
+\[
+ \Delta_{R,T}=\mathcal C_{R,T}+\mathcal R_{R,T},
+\]
+
+where the full incidence ledger, including every cusp and the strict final
+link, gives
+
+\[
+ \sum_j|\mathcal C_{R_j,R_{j+1}}|
+ \ll_\varepsilon L^3X^\varepsilon.
+\]
+
+Full-line reindexing, however, gives the exact adjacent-sum self-return
+
+\[
+ \mathcal R_{R,T}
+ =\Re\sum_s(-1)^s
+   \{\beta(r_s)+\beta(r_{s+1})\}G(s)
+ =\Delta_{R,T}-\mathcal C_{R,T}.
+\]
+
+Consequently, over the whole stopped chain,
+
+\[
+ \sum_j\mathcal R_j
+ =2(T_{26}+B_{\rm short})-\sum_j\mathcal C_j.
+\]
+
+Thus the proposed remainder theorem is equivalent to K26 modulo target-safe
+terms; it is not a smaller estimate. Coefficient-uniform positive closure
+retains the available \(RL^2X^\varepsilon\) envelope, reaching
+\(L^4X^\varepsilon\) at the top link, against the
+\(L^3X^\varepsilon\) target. The sharp phase-adapted diagnostic is
+nonliteral and proves no physical lower bound. Cross-link cancellation, a
+different tangent operator, and a genuinely coefficient-sensitive signed
+actual-symbol theorem remain possible.
+
+The State Patch creates only this route-scoped self-return obstruction and
+adds it as inconclusive evidence to two still-open hard-TOP endpoint owners.
+K26, all parents and bridges, the quarter theorem, and every exponent remain
+unchanged. The resulting graph is
+`04090ef6aa8d7d28e05a312f1f2f069fe3ab44ad62002d68d6b62c49dc0d962a`.
+
+Accepted evidence:
+
+- `proofs/kernels/m9_m2_hard_top_t1_residual_tangent_fejer_commutator_self_return_obstruction.md`;
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-tangent-fejer-commutator-gate/reviews/final_kernel_post_repair_verification.md`;
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-tangent-fejer-commutator-gate/reviews/state_patch_scope_cycle_review.md`; and
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-tangent-fejer-commutator-gate/controls/conductor_round173_post_apply_reverse_audit.md`.
+
+## Round 174 accepted proof-state checkpoint
+
+Round 174 proves no new analytic inequality. The authoritative graph audit
+confirms that the two accepted implications into the quarter target remain a
+logical OR: the standard bridge requires complete blockwise M9, while the
+alternative bridge requires complete GAR for total active M1 together with
+all of M9--M2. GAR does not imply blockwise M9--M1 or M9.
+
+The selected K26 whole-chain inequality is an open next action, not an
+accepted lemma. The State Patch changes no status, statement, dependency,
+blocker, implication, theorem, bridge, or exponent. It adds only inconclusive
+strategy/source evidence and the exact next action to the already proved
+residual reduction, and appends scoped rejected-overclaim records. The
+resulting authoritative graph is
+`e40c214351d06bf05212e25fffbec0f1a4808be21cb9098ba25823f0d9bbf211`.
+
+The theorem boundary therefore remains unchanged: K26, complete hard TOP,
+both BAL scopes, UNBAL, M9--M2, both direct M1 parents or complete GAR,
+endpoint uniformity, M9, both bridges, and the quarter theorem are open.
+The exponent ledger remains internal \(1/3\), accepted external
+\(0.3144831759740614\ldots\), and target \(1/4\).
+
+Accepted checkpoint evidence:
+
+- `rounds/codex-managed/full-proof-round171-173-strategy-literature-review/reviews/full_graph_post_repair_verification.md`;
+- `rounds/codex-managed/full-proof-round171-173-strategy-literature-review/reviews/source_report_post_repair_verification.md`;
+- `rounds/codex-managed/full-proof-round171-173-strategy-literature-review/controls/conductor_round174_post_apply_reverse_audit.md`; and
+- `rounds/codex-managed/full-proof-round171-173-strategy-literature-review/reviews/postapply_graph_scope_verification.md`.
+
+## Round 175 accepted internal obstruction
+
+For the complete literal nonzero ordinary-frequency transform, put
+
+\[
+ Q_R^*={1\over2}\sum_{\epsilon=0}^1
+ \int_0^1F_R(\theta)|Z_{\epsilon,*}(\theta)|^2\,d\theta\ge0.
+\]
+
+On every exact stopped-chain link and on the complete chain,
+
+\[
+ \mathcal N_{R,S}=Q_S^*-Q_R^*,\qquad
+ \sum_{j<K}\mathcal N_{R_j,R_{j+1}}=Q_M^*-Q_{R_0}^*.
+\]
+
+More generally,
+
+\[
+ \sum_j a_j\mathcal N_j
+ =a_{K-1}Q_M^*-a_0Q_{R_0}^*
+ +\sum_{j=1}^{K-1}(a_{j-1}-a_j)Q_{R_j}^*.
+\]
+
+Thus constant weights erase every intermediate scale, while nonconstant
+scalar weights change the target. The exact-doubling Haar decrease is
+normalized by \(1/R\); converting it back to the unweighted endpoint
+restores the top factor. A non-doubling terminal link retains its exact
+Fejer difference.
+
+The complete ordinary-zero-containing sector is restored after signed odd-
+character recombination, and the short correction is paid once. With
+\(T_{26}\) exactly the open (165.K26) scalar,
+
+\[
+ \sum_{j<K}\mathcal N_j
+ =2(T_{26}+B_{\rm short})-\mathcal Z_{R_0,M},
+ \qquad
+ |B_{\rm short}|+|\mathcal Z_{R_0,M}|
+ \ll_\varepsilon L^3X^\varepsilon.
+\]
+
+Moreover,
+
+\[
+ Q_{R_0}^*\ll_\varepsilon L^3X^\varepsilon.
+\]
+
+Consequently the deliberately one-sided whole-chain target is equivalent at
+target strength to the still-open literal estimate
+
+\[
+ Q_M^*\ll_\varepsilon L^3X^\varepsilon,
+\]
+
+and to K26 after the paid seams. Coefficient-independent positivity gives
+only \(Q_M^*\ll_\varepsilon L^4X^\varepsilon\). An admissible dechirped
+even-site physical control has endpoint increment at least \(L^4/12\), and
+an abstract positive-operator control has top-link increment \(MD/8\).
+Neither is a literal cardinal image or a lower bound for the residual
+coefficient.
+
+The exact squarefree and coprimality factors are projectors, selected
+opposite-character rows pair disjoint near-square supports without a
+pointwise \(L^{-1}\) gain, all-\(1\pmod4\) no-pair rows give only an
+allowed-support warning, and the full zero-extended profile has variation
+\(O(1)\). This proves a route-scoped obstruction to treating the scale index
+as an independent cancellation resource, scalar scale Abel/Haar/martingale
+closure, or coefficient-uniform positivity before an actual-symbol gain. It
+does not exclude a direct complete literal coefficient-sensitive endpoint
+theorem and proves neither K26 nor its negation.
+
+The State Patch creates only this proved-internal obstruction, updates one
+proved reduction and two open endpoint owners without status changes, and
+leaves every parent, bridge, theorem, and exponent unchanged. The resulting
+graph is
+`9409651dccbbd1c69547546b245ba04c21d2a280173733ae37b693f9894c8b03`.
+
+Accepted evidence:
+
+- `proofs/kernels/m9_m2_hard_top_t1_residual_whole_chain_scale_coboundary_positive_capacity_obstruction.md`;
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-whole-chain-actual-symbol-scale-correlation-gate/reviews/final_kernel_mathematical_verification.md`;
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-whole-chain-actual-symbol-scale-correlation-gate/reviews/state_patch_scope_cycle_review.md`; and
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-whole-chain-actual-symbol-scale-correlation-gate/reviews/postapply_graph_scope_verification.md`.
+
+## Round 176 accepted cross-gcd alternating-fibre reduction
+
+For either opposing incidence define the inward cross gcd by
+
+\[
+ \kappa_*=(d,m')\quad(d'>d,m'<m),\qquad
+ \kappa_*=(d',m)\quad(d'<d,m'>m).
+\]
+
+Writing the inward entries as \(\kappa u,\kappa v\), one has
+\((u,v)=1\), \(r=2\kappa n\), and a multiplicity-one fibre
+
+\[
+ (s,w)=(s_0,w_0)+t(u,v).
+\]
+
+Both endpoint products advance by \(2\kappa uv\), and the exact character
+on the fibre is
+
+\[
+ E_u(\pm\bar v n)(-1)^t,
+ \qquad E_u(a)=(-1)^{[a]_u}.
+\]
+
+Both orientations, conjugations, parity branches, displacement inequalities,
+the Fejer weight, determinant range, literal selected/no-pair field,
+endpoints, zero extension, and one outer real part are retained. On every
+nonzero squarefree atom the original divisor gcd is fibre-stable and distinct
+from the cross gcd:
+
+\[
+ (d,d')=(u,n)=(u,r/(2\kappa_*)).
+\]
+
+For odd \(m\), the canonical anchor has exact transform
+
+\[
+ \widehat E_m(k)={2\over1+e(-k/m)},\qquad
+ {1\over m}\sum_{k\bmod m}|\widehat E_m(k)|\ll\log(2m),
+\]
+
+with primitive modulus \(m=u/(u,n)\). Thus it costs only logarithms but
+does not itself yield a power saving. A robust hyperbola count gives
+
+\[
+ C_\kappa\ll_\varepsilon L^3\kappa^{-2}X^\varepsilon,
+ \qquad
+ \sum_{\kappa\ge K}C_\kappa
+ \ll_\varepsilon L^3K^{-1}X^\varepsilon.
+\]
+
+Consequently, for every fixed \(0<\delta<1/2\), the complete literal sector
+\(\kappa_*\ge\delta L\) is
+\(O_{\delta,\gamma,\varepsilon}(L^2X^\varepsilon)\). The named complement
+\(\kappa_*<\delta L\) remains open.
+
+Rowwise Abel, B-process, or Poisson followed by positive recombination, and
+smooth-cell two-variable Poisson followed by positive dual recombination,
+restore the physical power. Even one optimistic inverse-residue square-root
+saving leaves \(L^{5/2}\). These are route-scoped capacity/self-return
+statements, not literal lower bounds.
+
+The first sufficient unproved theorem is the selector-aware signed joint
+inverse-residue estimate (176.K35). The complete K17a aggregate and every
+parent remain open. The applied State Patch creates only the subordinate
+proved-internal reduction, changes no open status, and produces graph
+`e3927f0ace0f3d74e9e9f5116a319159e3508838c7f7bd14b086fa851cad82b8`.
+
+Accepted evidence:
+
+- `proofs/kernels/m9_m2_hard_top_t1_residual_k17a_cross_gcd_alternating_fibre_reduction.md`;
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-gate/reviews/final_kernel_mathematical_review.md`;
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-gate/reviews/state_patch_scope_cycle_review.md`; and
+- `rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-cross-gcd-alternating-fibre-gate/reviews/post_apply_graph_verification.md`.
+
+## Round 177 accepted primitive-alias conductor reduction
+
+On the exact low-cross-gcd complement from Round 176, write
+
+\[
+ g=(u,n),\qquad u=gu_0,\qquad n=gn_0,\qquad (n_0,u_0)=1.
+\]
+
+The canonical half-frequency anchor reduces to the primitive modulus and
+its Fourier aliases fold exactly:
+
+\[
+ E_u(\pm\bar v n)=E_{u_0}(\pm\bar v n_0),\qquad
+ \sum_{j=0}^{g-1}c_u(\ell+ju_0)=c_{u_0}(\ell).
+\]
+
+For the exact reduced additive conductor
+
+\[
+ q={u_0\over(\ell,u_0)},\qquad
+ \ell={u_0\over q}a,\quad(a,q)=1,
+\]
+
+one has
+
+\[
+ c_{u_0}(\ell)={q\over u_0}c_q(a),\qquad
+ \sum_{\operatorname{cond}(\ell)=q}|c_{u_0}(\ell)|
+ \ll {q\over u_0}\log(2q).
+\]
+
+A fixed \((\kappa,u,u_0)\) stratum has \(O(u_0L)\) literal atoms, hence
+the coefficient-weighted exact-\(q\) capacity is
+\(O(Lq\log(2q))\). Therefore, for every fixed \(B>0\) and
+\(Q_B=(\log(2X))^B\),
+
+\[
+ \left|\mathfrak C^{\rm rem}_{q\le Q_B}\right|
+ \ll_{B,\delta,\gamma,\varepsilon}L^2X^\varepsilon.
+\]
+
+This is the complete exact low-reduced-conductor Fourier packet and
+contains the complete physical sector
+\(u/(u,n)\le Q_B\). Its exact complement is \(q>Q_B\).
+
+Exact rank-one alias \(TT^*\) reconstructs the physical block. Alias
+Parseval followed by positive closure has self-diagonal capacity
+\(u_0\sqrt L\) and can return the full \(Lu_0\) bucket capacity; neither
+is literal lower mass. One reciprocal square-root saving leaves
+\(L\sqrt q\), and the explicit incomplete-lift ledger prevents a
+length-\(q\) completion from erasing physical repetitions. The anchor
+identity \(E_{u_0}(-a)=-E_{u_0}(a)\) does not pair the literal
+orientations because complementary divisors leave the supported selector
+domain.
+
+The first sufficient unproved theorem is the signed high-conductor block
+estimate (177.K34), or the stronger aliaswise full-conductor estimate
+(177.K35). Complete K17a and every parent remain open. The applied State
+Patch creates only this subordinate proved-internal reduction, adds one
+provenance dependency to the still-open hard-TOP owner, changes no open
+status or implication, and produces graph
+47c628b3e4b5086391fb3dbd885865ab21bd7470541099f696044bd2d3b609f7.
+
+Accepted evidence:
+
+- proofs/kernels/m9_m2_hard_top_t1_residual_k17a_primitive_alias_conductor_reduction.md;
+- rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/reviews/final_post_repair_verification.md;
+- rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/reviews/state_patch_scope_cycle_review.md;
+- rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/reviews/post_apply_graph_scope_verification.md; and
+- rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-selector-aware-inverse-residue-gate/controls/conductor_round177_post_apply_reverse_audit.md.
+
+## Round 178 accepted proof-state checkpoint
+
+Round 178 proves no new analytic estimate. Its accepted contribution is a
+strategy-only reconstruction of both lawful quarter-proof trees, a repaired
+primary-source audit current through 2026-08-27, and the unique selection of
+the exact signed high-reduced-conductor K17a block (177.K34) for Round 179:
+
+\[
+ \left|
+ \sum_{u_0\mid u}
+ \sum_{\substack{\ell\bmod u_0\\u_0/(\ell,u_0)>Q_B}}
+ c_{u_0}(\ell)\mathcal H_{\kappa,u,u_0,\ell}
+ \right|
+ \ll_{B,\delta,\gamma,\varepsilon}LX^\varepsilon.
+\]
+
+This inequality remains unproved. At exact conductor
+\(q=u_0/(\ell,u_0)\), positive capacity is
+\(Lq\log(2q)\), while one reciprocal square-root saving still leaves
+\(L\sqrt q\log(2q)\). K26 also remains open; Round 175 only proved that
+its proposed stopped-scale cancellation collapses to the maximal endpoint.
+
+The strategy-only State Patch has exact effect `0/1/0/16/20` and changes no
+status, statement, dependency, implication, blocker, bridge, theorem, or
+exponent. Its resulting graph is
+`e04380a1965e57971bb68d8169d8a8d8e5349edb535e01b343c8b25ecdcd4e27`.
+Canonical reverse and controlled-reapplication audits are GREEN.
+
+Accepted evidence:
+
+- rounds/codex-managed/full-proof-round175-177-strategy-literature-review/reviews/conductor_round178_adjudication.md;
+- rounds/codex-managed/full-proof-round175-177-strategy-literature-review/reviews/dependency_power_selection_seam_review.md;
+- rounds/codex-managed/full-proof-round175-177-strategy-literature-review/reviews/source_report_post_repair_verification.md;
+- rounds/codex-managed/full-proof-round175-177-strategy-literature-review/reviews/blind_post_unmask_frontier_selection_review.md;
+- rounds/codex-managed/full-proof-round175-177-strategy-literature-review/reviews/postapply_graph_scope_verification.md; and
+- rounds/codex-managed/full-proof-round175-177-strategy-literature-review/controls/conductor_round178_post_apply_reverse_audit.md.
+
+## Round 179 accepted primitive-conductor parity and self-return kernel
+
+Retain the exact Round-177 primitive alias fold and define, for odd
+(q\mid u_0),
+
+\[
+ K_q(b)=\sum_{(a,q)=1}c_q(a)e(ab/q),
+ \qquad K_q^\circ(b)=K_q(b)-\frac{\mu(q)}q.
+\]
+
+Möbius inversion gives
+
+\[
+ K_q(b)=\frac1q\sum_{d\mid q}\mu(q/d)dE_d(b).
+\]
+
+For (b\in U(q)), every (d>1) summand is odd under
+(b\mapsto-b), while (d=1) is constant. Hence
+
+\[
+ K_q(b)+K_q(-b)=\frac{2\mu(q)}q.
+\]
+
+With the accepted exact-conductor factor (q/u_0), the literal block is
+therefore
+
+\[
+ \mathcal C_{u_0,q}
+ =\frac q{u_0}\sum_bK_q^\circ(b)(B^+_{q,b}-B^-_{q,b})
+  +\frac{\mu(q)}{u_0}\sum_b(B^+_{q,b}+B^-_{q,b}).
+\]
+
+A fixed stratum has (O(u_0LX^\varepsilon)) atoms, so the trace costs
+(O(|\mu(q)|LX^\varepsilon)). Since
+
+\[
+ \sum_{u_0\mid u}\sum_{q\mid u_0}|\mu(q)|
+ =\prod_{p^a\parallel u}(2a+1)\ll_\varepsilon X^\varepsilon,
+\]
+
+the complete high-conductor symmetric trace is target-safe.
+
+The centered part has the exact all-conductor identity
+
+\[
+ \sum_{q\mid u_0}\frac q{u_0}K_q^\circ(b)=E_{u_0}(b)
+ \qquad (u_0>1),
+\]
+
+with (K_1^\circ=0) and the (q=1) term essential in the trace
+cancellation. Atomwise, the centered conductor resolution reconstructs the
+original literal orientation block. Thus its high-conductor portion is the
+original block minus the accepted low-conductor packet. This is an exact
+self-return obstruction, not an estimate and not a disproof of (177.K34).
+
+The fixed-modulus reflection is not a live literal involution, and the
+product-preserving exchange changes the fixed outer row and replaces
+selected divisors by zero-extended complements. Pointwise
+(K_q^\circ\ll_\varepsilon q^\varepsilon), while coefficient-uniform
+capacity is (LqX^\varepsilon); one square root leaves (L\sqrt q).
+Artificial prime and prime-square buckets demonstrate this capacity but are
+not literal lower mass.
+
+The first unproved statement remains the complete literal centered defect
+(179.A6), equivalently (177.K34) after target-safe pieces. The accepted
+kernel closes no parent, bridge, theorem, or exponent. The applied patch has
+exact effect `1/2/0/14/18` and yields graph
+`e94ef6a364988e47f8a59ca3589f03cb098a04a241ec841afc2efa6e685081b4`.
+
+Accepted evidence:
+
+- proofs/kernels/m9_m2_hard_top_t1_residual_k17a_primitive_conductor_parity_self_return.md;
+- rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-primitive-conductor-orientation-defect-gate/candidates/formalized_primitive_conductor_parity_self_return.md;
+- rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-primitive-conductor-orientation-defect-gate/reviews/conductor_round179_adjudication.md;
+- rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-primitive-conductor-orientation-defect-gate/reviews/literal_orientation_selector_and_multiplicity_review.md;
+- rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-primitive-conductor-orientation-defect-gate/reviews/capacity_owner_and_false_control_review.md;
+- rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-primitive-conductor-orientation-defect-gate/reviews/blind_post_unmask_kernel_review.md; and
+- rounds/codex-managed/m9-m2-hard-top-t1-residual-k17a-primitive-conductor-orientation-defect-gate/controls/postapply_independent_graph_reverse_audit.md.
+
+## Round 180 accepted K26 near-cell row-Gram self-return kernel
+
+For the complete literal divisor rows and every near Fejér cell, define
+\(\mathcal E_\nu\) as the parity-averaged scalar cell energy,
+\(\mathcal D_\nu\) as the complete physical row diagonal, and
+\(\mathcal G_\nu\) as the cross-row form with one outer real part. Exact
+expansion gives
+
+\[
+ \mathcal E_\nu=\mathcal D_\nu+\mathcal G_\nu,
+ \qquad
+ 0\le \mathcal D_\nu\ll_\varepsilon LX^\varepsilon.
+\]
+
+Therefore the one-sided bound
+\(\mathcal G_\nu\ll_\varepsilon LX^\varepsilon\) is equivalent at target
+strength to the original local scalar estimate
+\(\mathcal E_\nu\ll_\varepsilon LX^\varepsilon\). Row Gramization creates
+no automatic orthogonality.
+
+The exact cross-row equal-product component is
+
+\[
+ \mathcal P_\nu
+ =\frac1M\sum_N\left\{(c_N^{\rm rem})^2-
+ \sum_{\substack{d\mid N\\d\ {\rm odd}}}\lambda_N(d)^2\right\},
+ \qquad
+ |\mathcal P_\nu|\ll_\varepsilon X^\varepsilon.
+\]
+
+This is a strict target-safe sector, proved using literal divisor
+multiplicity and the opened-incidence energy. The first open theorem is the
+complete unequal-product complement
+
+\[
+ \mathcal U_\nu:=\mathcal G_\nu-\mathcal P_\nu
+ \ll_\varepsilon LX^\varepsilon
+ \qquad (|\nu|\le\lceil\sqrt L\rceil).
+\]
+
+It retains every nonzero even product gap, sinc factor, square-root and
+cell-centre phase, character pair, selector, hard endpoint, transition,
+and zero extension. If this open estimate holds, the verified near/far
+Fejér partition, collective ordinary-zero restoration, and once-only short
+correction imply
+\(Q_M^*\ll_\varepsilon L^3X^\varepsilon\) and the one-sided K26 endpoint.
+This connector is conditional and is not a proof of K26.
+
+Coefficient-uniform row positivity has local capacity \(L^2\) and central
+Fejér capacity \(L^4\), attained by nonliteral complex, real-cosine, and
+arbitrary-sign shadows. These controls exclude only feature-insensitive
+mechanisms; they are not literal lower mass and do not disprove the open
+unequal-product theorem.
+
+The applied State Patch creates one subordinate `proved_internal`
+obstruction, has exact effect `1/4/0/16/21`, and yields graph
+`6e3a87d42844a9a2150aad652b2f08a7b0584c3de17e6386311688552f6d7c16`.
+Independent exact inversion recovers the Round-179 graph and frozen-time
+reapplication reproduces the current graph byte-for-byte. K26, hard TOP,
+BAL, UNBAL, M9--M2, both M1 routes, endpoint uniformity, M9, both bridges,
+the quarter theorem, and every exponent remain open.
+
+Accepted evidence:
+
+- proofs/kernels/m9_m2_hard_top_t1_residual_k26_near_peak_row_gram_self_return_obstruction.md;
+- rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/candidates/formalized_near_peak_row_gram_self_return.md;
+- rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/reviews/final_kernel_mathematical_scope_review.md;
+- rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/reviews/row_identity_fejer_connector_review.md;
+- rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/reviews/literal_selector_capacity_false_control_review.md;
+- rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/reviews/blind_post_unmask_row_gram_review.md; and
+- rounds/codex-managed/m9-m2-hard-top-t1-residual-k26-near-peak-row-gram-anticoncentration-gate/controls/postapply_independent_graph_reverse_audit.md.
+
+## Round 181 accepted hard-M1 squarefree-radical strict sectors
+
+For every literal residual shell of the unique hard M1 profile and each
+frequency sign \(\sigma\), zero-extend the complete actual symbol and group
+by \(r=hn=st^2\), with \(s\) squarefree. Then exactly
+
+\[
+ \mathcal T_{L,\sigma}^{M1}
+ =\sum_{\substack{s\geq1\\\mu^2(s)=1}}\sum_{t\geq1}
+ C_{L,X}^{\sigma}(st^2)e(\sigma t\sqrt{Xs}).
+\]
+
+For each literal incidence, if \(G=(h,n)\), there are unique squarefree
+\(d,e\) and positive \(a,b\) such that
+
+\[
+ h=Gda^2,\qquad n=Geb^2,\qquad s=de,\qquad t=Gab,
+ \qquad (da,eb)=1.
+\]
+
+Thus \(G\mid t\), while literal support gives \(st^2\asymp L^2\).
+Divisor incidence proves the two disjoint target-safe sectors
+
+\[
+ \sum_{\substack{s\leq L\\\mu^2(s)=1}}\sum_t
+ |C_{L,X}^{\sigma}(st^2)|
+ +
+ \sum_{\substack{s>L,\ \mu^2(s)=1\\
+                   t\geq\lceil\sqrt L\rceil}}
+ |C_{L,X}^{\sigma}(st^2)|
+ \ll_\varepsilon L^{3/2}X^\varepsilon.
+\]
+
+The exact remaining hard signed-cone theorem is
+
+\[
+ \left|
+ \sum_{\substack{s>L,\ \mu^2(s)=1\\
+                   1\leq t<\lceil\sqrt L\rceil}}
+ C_{L,X}^{\sigma}(st^2)e(\sigma t\sqrt{Xs})
+ \right|
+ \ll_\varepsilon L^{3/2}X^\varepsilon.
+\]
+
+It remains open, already on \(t=1\), where the complete
+coprime-squarefree literal cone survives.
+
+For
+
+\[
+ F_\sigma(r)=C_{L,X}^{\sigma}(r)e(\sigma\sqrt{Xr}),
+ \qquad
+ K_L(b,u)=\sum_{\substack{a\mid u\\a^2b>L}}\mu(a),
+\]
+
+complete squarefree Möbius linearization has the exact all-\(L\)
+self-return
+
+\[
+ \sum_{\substack{s>L\\\mu^2(s)=1}}\sum_tF_\sigma(st^2)
+ =\mathcal T_{L,\sigma}^{M1}+E_{L,\sigma},
+\]
+
+\[
+ E_{L,\sigma}
+ =\sum_{\substack{b\leq L\\u\geq1}}K_L(b,u)F_\sigma(bu^2)
+  -\sum_{r\leq L}F_\sigma(r),
+ \qquad
+ E_{L,\sigma}\ll_\varepsilon L^{3/2}X^\varepsilon.
+\]
+
+Hence complete Möbius recombination returns the original hard cone modulo
+a target-safe correction. Joint-\(t\) lifting is only a permutation of
+product indices, and central full-divisor Mellin cancellation does not
+control the required noncentral literal modes. Universal \(t=1\) capacity
+is \(L^2\), but the attaining coefficients are nonliteral and give no
+literal lower bound.
+
+The applied State Patch has exact effect 3/4/0/13/18 and yields graph
+fec130bc66641cbdad18c832de10077a7825f1caaf5d10170a67ef65c0b27196.
+The small-\(t\) estimate, hard signed-cone owner, independent smooth M1
+parent, GAR, M9-M1, every M2 owner, endpoint uniformity, M9, both bridges,
+the quarter theorem, and every exponent remain open.
+
+Accepted evidence:
+
+- proofs/kernels/m9_m1_hard_top_squarefree_radical_reduction_and_self_return.md;
+- rounds/codex-managed/m9-m1-hard-top-high-squarefree-radical-gate/candidates/formalized_hard_m1_squarefree_radical_reduction.md;
+- rounds/codex-managed/m9-m1-hard-top-high-squarefree-radical-gate/reviews/final_kernel_mathematical_scope_review.md;
+- rounds/codex-managed/m9-m1-hard-top-high-squarefree-radical-gate/reviews/product_squarefree_connector_review.md;
+- rounds/codex-managed/m9-m1-hard-top-high-squarefree-radical-gate/reviews/literal_capacity_mellin_scope_review.md;
+- rounds/codex-managed/m9-m1-hard-top-high-squarefree-radical-gate/reviews/blind_post_unmask_radical_review.md; and
+- rounds/codex-managed/m9-m1-hard-top-high-squarefree-radical-gate/controls/postapply_independent_graph_reverse_audit.md.
+
+## Round 183 accepted hard-M1 nonresonant primitive-ray incidence sector
+
+For every literal middle or lower residual hard-M1 shell and each sign,
+expand the exact zero-extended product coefficient into divisor incidences.
+Write
+
+\[
+ h=Gu,\qquad n=Gv,\qquad G=(h,n),\qquad (u,v)=1,
+\]
+
+and define
+
+\[
+ s(u,v)=\operatorname{sf}(uv),\qquad
+ \rho(u,v)=\sqrt{uv/s(u,v)},\qquad t=G\rho(u,v).
+\]
+
+Thus \(s>L\) is independent of \(G\), while the exact small-multiplier
+cutoff is \(G\rho(u,v)<T_L\), where
+\(T_L=\lceil\sqrt L\rceil\).  Put
+
+\[
+ G_0=\lceil L^{1/4}\rceil,\qquad
+ \delta_X=(10\log(2X))^{-1},
+\]
+
+\[
+ \Delta_X(u,v)=\operatorname{dist}
+ \left(2\sqrt{Xuv},\mathbb Z+\tfrac12\right).
+\]
+
+On a fixed primitive ray, all ratio-dependent literal factors are
+constant.  If \(\eta_L\) is the accepted normalized-BV frequency profile,
+then the exact zero-extended factor
+
+\[
+ \Psi_{H,L}(m)=\mathbf1_{1\leq m\leq H}\eta_L(m)
+ \Phi\!\left(\frac m{H+1}\right)
+\]
+
+has uniformly bounded sampled step-two variation: the raw \(\Phi\)
+difference is taken only on \([1,H]\), and both zero-extension boundary
+jumps are counted.  The normalized power has monotone \(G^{-3/2}\)
+variation, while the other literal fields are constant or contribute only
+finitely many endpoint jumps.  Hence the complete ray symbol has
+\(BV_2\ll_\varepsilon X^\varepsilon\).
+
+For consecutive odd \(G\), the actual character-phase progression has
+ratio
+
+\[
+ \frac{\chi_4(G+2)e(\sigma(G+2)\sqrt{Xuv})}
+      {\chi_4(G)e(\sigma G\sqrt{Xuv})}
+ =-e(2\sigma\sqrt{Xuv}).
+\]
+
+Abel summation therefore gives
+\(O_\varepsilon(\delta_X^{-1}X^\varepsilon)\) on every retained
+nonresonant ray.  A nonempty ray with \(G\geq G_0\) has
+\(u\ll L/G_0\) and \(v\asymp u\), so there are
+\(O((1+L/G_0)^2)=O(L^{3/2})\) possible rays.  Taking positivity only after
+the literal character-phase gain proves
+
+\[
+ \boxed{
+ |\mathcal A^{\mathrm{ray,nr}}_{L,X,\sigma}|
+ \ll_\varepsilon L^{3/2}X^\varepsilon.}
+\]
+
+The coefficient-insensitive incidence envelope of this proper sector is
+only \(O(L^2/G_0)=O(L^{7/4})\), so the result is a genuine signed
+contraction.  It is explicitly an incidence-level theorem, not a theorem
+for a subset of product indices.
+
+The exact remaining incidence complement is
+
+\[
+ \{G<G_0\}\ \dot\cup\
+ \{G\geq G_0:\Delta_X(u,v)<\delta_X\},
+\]
+
+inside every original literal predicate.  It contains the complete
+\(t=1\) face, because \(t=1\) forces \(G=\rho=1\).  No estimate for this
+complement is proved.
+
+For the mechanism ledger, with
+\(F_\sigma(r)=C_{L,X}^{\sigma}(r)e(\sigma\sqrt{Xr})\), the exact
+small-\(t\) Mobius kernel is
+
+\[
+ K_{L,T}(b,u)=
+ \sum_{\substack{a\mid u\\a^2b>L\\u/a<T}}\mu(a).
+\]
+
+It equals \(\mathbf1_{u=1}\) on \(b>L,u<T\); all complementary
+transformed regions are target-safe.  Thus the complete small-\(t\) scalar
+equals the full product wave modulo
+\(O_\varepsilon(L^{3/2}X^\varepsilon)\).  Splitting at \(a=T\) pays the
+large-\(a\) tail but leaves that same wave in the small-\(a\) core.  This
+is a scoped self-return, not a refutation of the literal owner.
+
+The fixed-row Fejer identity gives an exact sufficient radical-shift
+correlation condition, but its signed brace is unproved already at
+\(t=1\).  Rowwise control followed by triangle is stronger than the frozen
+one-absolute-value owner.  This quadratic radical-shift interface is not
+the old centered linear-fibre PSC.
+
+The applied State Patch has exact effect `1/2/0/13/24` and yields graph
+`a8e0e5d84c0c5047e0c96f11128dd215ae035bdd4355bd68ad28dc87afe6cfbd`.
+The complete small-\(t\) estimate, hard signed-cone owner, independent
+smooth M1 parent, GAR, M9-M1, every M2 owner, endpoint uniformity, M9, both
+bridges, and the quarter theorem remain open.  Exponents are unchanged:
+internal \(1/3\), accepted external
+\(0.3144831759740614\ldots\), target \(1/4\).
+
+Accepted evidence:
+
+- proofs/kernels/m9_m1_hard_top_small_t_primitive_ray_sector_and_truncated_mobius_self_return.md;
+- rounds/codex-managed/m9-m1-hard-top-high-radical-small-t-signed-contraction-gate/candidates/formalized_hard_m1_small_t_primitive_ray_sector_and_self_return.md;
+- rounds/codex-managed/m9-m1-hard-top-high-radical-small-t-signed-contraction-gate/reviews/final_kernel_literal_post_repair_verification.md;
+- rounds/codex-managed/m9-m1-hard-top-high-radical-small-t-signed-contraction-gate/reviews/final_kernel_power_scope_review.md;
+- rounds/codex-managed/m9-m1-hard-top-high-radical-small-t-signed-contraction-gate/reviews/final_kernel_formalization_post_repair_verification.md;
+- rounds/codex-managed/m9-m1-hard-top-high-radical-small-t-signed-contraction-gate/reviews/conductor_round183_adjudication.md; and
+- rounds/codex-managed/m9-m1-hard-top-high-radical-small-t-signed-contraction-gate/controls/postapply_independent_graph_reverse_audit.md.
+
+## Round 184 accepted hard-M1 t=1 comparable-factor exchange sector
+
+Fix real \(X\geq2\), one literal middle or lower residual hard-M1 shell
+\(L\), \(\sigma\in\{\pm1\}\), and fixed \(\kappa>0\).  The exact
+\(t=1\) face is
+
+\[
+ \mathcal T_{L,X,\sigma}
+ =\sum_{\substack{(u,v)=1,\ v\ {\rm odd},\ 4u<v<16u\\
+                   uv\ {\rm squarefree}}}
+ \chi_4(v)a_{L,X}^{\mathrm{lit},\sigma}(u,v)
+ e(\sigma\sqrt{Xuv}),
+\]
+
+where the complete normalized hard-M1 symbol is extended by zero off
+every original profile, support, strict-cone, floor, star, half-weight,
+hard-sample, real-\(X\) crossing, and endpoint predicate.
+
+For each squarefree \(N\), canonically select from \((N,L,\kappa)\), and
+never from an allocation \(N=uv\), at most one unordered pair of distinct
+odd prime divisors \(\{p_N,q_N\}\) satisfying
+
+\[
+ \chi_4(p_Nq_N)=-1,\qquad
+ |\log(q_N/p_N)|\leq\kappa L^{-1/2}.
+\]
+
+On allocations for which exactly one selected prime divides the odd
+character-bearing leg \(v\), exchange the two selected primes between
+\(u\) and \(v\).  Squarefreeness and coprimality make this an integral,
+fixed-point-free, multiplicity-one involution.  It preserves \(N=uv\),
+the square-root phase, squarefreeness, coprimality, parity, and the
+selector, while reversing \(\chi_4(v)\).  Ambient reindexing with zero
+extension gives
+
+\[
+ \mathcal T^{\rm cp}_{L,X,\sigma}
+ =\frac12\sum_N\sum_{(u,v)\in\mathscr A_N^\oplus}
+ \chi_4(v)e(\sigma\sqrt{XN})
+ \{a(u,v)-a(\tau_N(u,v))\}.
+\]
+
+Coefficient-difference estimates are made only on the
+\(\tau_N\)-closed active set on which at least one orbit leg is supported.
+Both legs then lie in a fixed \(O(L)\)-by-\(O(L)\) enlarged box.  The
+actual moving factor is
+
+\[
+ \eta_L(u)\Phi\!\left(\frac{u}{H+1}\right)
+ W\!\left(\sqrt{\frac{4q_Xu}{v}}\right)
+ \left(\frac{L^2}{uv}\right)^{3/4}.
+\]
+
+The product power is invariant.  On common cells the \(\Phi\)- and
+\(W\)-differences are \(O_\kappa(L^{-1/2})\).  Normalized discrete BV of
+\(\eta_L\), charged with exact active-box multiplicity, costs
+\(O_\kappa(L^{3/2})\).  The finite family of literal support, cone,
+profile, crossing, floor, star, tie, half-weight, and endpoint faces has
+total coefficient-weighted collar cost
+\(O_{\kappa,\varepsilon}(L^{3/2}X^\varepsilon)\).  Consequently
+
+\[
+ \boxed{
+ |\mathcal T^{\rm cp}_{L,X,\sigma}|
+ \ll_{\kappa,\varepsilon}L^{3/2}X^\varepsilon.}
+\]
+
+This is a possibly empty strict sector; no eligible-pair density or
+nonemptiness is asserted.
+
+For a selected pair put
+
+\[
+ \rho_N(v)=1-\mathbf1_{p_N\mid v}-\mathbf1_{q_N\mid v}
+ +2\mathbf1_{p_Nq_N\mid v},
+\]
+
+and put \(\rho_N(v)=1\) if no pair is selected.  The truth table
+\(1,0,0,1\) gives the exact complement
+
+\[
+ \mathcal T_{L,X,\sigma}
+ =\mathcal T^{\rm cp}_{L,X,\sigma}
+  +\sum_Nc_{N,\sigma}^{\rm rem}e(\sigma\sqrt{XN}),
+\]
+
+\[
+ c_{N,\sigma}^{\rm rem}
+ =\mu^2(N)\sum_{\substack{v\mid N\\v\ {\rm odd}}}
+ \chi_4(v)\rho_N(v)
+ a_{L,X}^{\mathrm{lit},\sigma}(N/v,v).
+\]
+
+Thus the residual contains every allocation of every no-pair product and
+the neither/both allocations of every selected product.  At
+\(R=\lceil L\rceil\), the exact sliding-Fejer identity reduces its target
+to the still-open sufficient estimate
+
+\[
+ \Re\sum_{1\leq r<R}\left(1-\frac rR\right)
+ \sum_Nc_{N+r,\sigma}^{\rm rem}
+ \overline{c_{N,\sigma}^{\rm rem}}
+ e\!\left(\frac{\sigma\sqrt X\,r}
+ {\sqrt{N+r}+\sqrt N}\right)
+ \ll_\varepsilon L^2X^\varepsilon.
+\]
+
+There is one outer real part.  Shiftwise absolute values return the
+\(L^2X^\varepsilon\) scalar capacity.  Hence the exact residual and the
+complete \(t=1\) face remain open.  Even a complete \(t=1\) proof leaves
+all \(t\geq2\) small-\(G\) incidences and the large-\(G\) near-resonant
+complement open.
+
+The applied State Patch has exact effect 1/1/0/15/27 and yields graph
+f16b7a43f8b0261671b39bdd4a59a3f06926cdfe3513d5910e56b89c6b1ab2e0.
+The complete small-\(t\) owner, hard signed cone, independent smooth M1
+parent, GAR, M9-M1, every M2 owner, endpoint uniformity, M9, both bridges,
+and the quarter theorem remain open.  Exponents are unchanged: internal
+\(1/3\), accepted external \(0.3144831759740614\ldots\), target \(1/4\).
+
+Accepted evidence:
+
+- proofs/kernels/m9_m1_hard_top_t1_comparable_factor_exchange_sector_and_residual_fejer_reduction.md;
+- rounds/codex-managed/m9-m1-hard-top-t1-comparable-factor-exchange-gate/candidates/formalized_hard_m1_t1_comparable_factor_exchange_sector.md;
+- rounds/codex-managed/m9-m1-hard-top-t1-comparable-factor-exchange-gate/reviews/coefficient_profile_endpoint_power_post_repair_verification.md;
+- rounds/codex-managed/m9-m1-hard-top-t1-comparable-factor-exchange-gate/reviews/final_kernel_literal_candidate_consistency_review.md;
+- rounds/codex-managed/m9-m1-hard-top-t1-comparable-factor-exchange-gate/reviews/final_kernel_power_owner_scope_review.md;
+- rounds/codex-managed/m9-m1-hard-top-t1-comparable-factor-exchange-gate/reviews/final_kernel_formalization_post_repair_verification.md;
+- rounds/codex-managed/m9-m1-hard-top-t1-comparable-factor-exchange-gate/reviews/conductor_round184_adjudication.md; and
+- rounds/codex-managed/m9-m1-hard-top-t1-comparable-factor-exchange-gate/controls/postapply_independent_graph_reverse_audit.md.
+
+## Round 185 accepted hard-M1 \(t=1\) residual tangent-gcd reduction
+
+Retain the exact Round-184 residual coefficient
+
+\[
+ c_{N,\sigma}^{\rm rem}
+ =\mu^2(N)\sum_{\substack{d\mid N\\d\ {\rm odd}}}
+ \chi_4(d)\rho_N(d)
+ a_{L,X}^{\mathrm{lit},\sigma}(N/d,d),
+\]
+
+where \(\rho_N\) is one for a no-pair product and has selected-pair
+truth table \(1,0,0,1\).  The coefficient is zero off every original
+literal shell, cone, arithmetic, profile, sample, endpoint, and sign
+predicate.  Set
+
+\[
+ z_N=c_{N,\sigma}^{\rm rem}e(\sigma\sqrt{XN}),
+ \qquad R_0=\lceil L\rceil.
+\]
+
+The full-line sliding energy has the endpoint-exact even-parity connector
+
+\[
+ \mathfrak E_R\leq2D_{L,\sigma}
+ +4\Re\sum_{1\leq q\leq\lfloor(R-1)/2\rfloor}
+ \left(1-\frac{2q}{R}\right)
+ \sum_Nz_{N+2q}\overline{z_N},
+\]
+
+with \(D_{L,\sigma}\ll_\varepsilon L^2X^\varepsilon\).  The terminal
+coefficient is \(4/R\) for odd \(R\) and \(8/R\) for even \(R\).
+The full-line Cauchy connector has prefactor \(O(L)\) at \(R_0\), so an
+\(O(L^2X^\varepsilon)\) even-shift correlation suffices for the
+\(L^{3/2}X^\varepsilon\) residual target.
+
+Open one positive even shift as
+
+\[
+ N=dm,\qquad N+r=d'm',\qquad
+ a=d'-d,\quad b=m'-m.
+\]
+
+The opening is multiplicity one and gives
+
+\[
+ r=db+am+ab,\qquad
+ \chi_4(d')\chi_4(d)=(-1)^{a/2}.
+\]
+
+The complete monotone sector \(a,b\geq0\) has \(O(L^2)\) incidences.
+In the two opposing orientations, the original character-leg gcd \(g\)
+and inward cross gcd \(\kappa\) have the joint primitive normal form
+
+\[
+ r=2\kappa gh,
+\]
+
+on
+
+\[
+ \kappa,g,h,U,v>0,\qquad
+ \kappa,g,U\ {\rm odd},\qquad
+ (gU,v)=1,\qquad(U,h)=1,\qquad
+ 0<2\kappa gh<R_0.
+\]
+
+For fixed \((\kappa,g,h)\), each orientation has
+\(O(L^2/(\kappa g))\) incidences.  Therefore, for every fixed \(B>0\),
+the complete monotone sector and both opposing sectors with
+
+\[
+ h\leq H_B=\lfloor(\log(2X))^B\rfloor
+\]
+
+have absolute contribution
+
+\[
+ \boxed{O_{B,\varepsilon}(L^2X^\varepsilon)}.
+\]
+
+Canonical least-residue anchors, the separate \(U=1\) convention, and
+positive oriented affine index sets give the exact remaining correlation
+
+\[
+ \Re\sum_{\omega\in\{+,-\}}
+ \sum_{\mathfrak f:\,h>H_B}
+ (-1)^{S_{0,\omega}}
+ \sum_{t\in I_{\mathfrak f,\omega}}
+ (-1)^tB_{\mathfrak f,\omega}^{\sigma}(t),
+\]
+
+with one real part outside both orientations, every shift, gcd, row,
+selector state, endpoint, and sign.  On a dyadic block
+\(Y<h\leq2Y\), positive capacity is
+\(O(YL^2X^\varepsilon)\).  The uniform
+\(O(L^2X^\varepsilon)\) signed estimate is open and requires a global
+factor \(Y\).  Bare affine alternation, rowwise Abel, an \(O(1)\) estimate
+per row followed by positive recombination, positive transforms, alias
+energy, and conductor centering do not supply it.
+
+The applied State Patch has exact effect `1/1/0/20/31` and yields graph
+`f43248060d7876a96d4554cd13372dbf267387bcbe44a832b87cd5f571801575`.
+The complete \(t=1\) residual, every \(t\geq2\) small-\(G\) incidence,
+the large-\(G\) near-resonant complement, both M1 parents, every M2
+parent, endpoint uniformity, M9, both bridges, and the quarter theorem
+remain open.  Exponents are unchanged: internal \(1/3\), accepted external
+\(0.3144831759740614\ldots\), target \(1/4\).
+
+Accepted evidence:
+
+- proofs/kernels/m9_m1_hard_top_t1_residual_fejer_tangent_gcd_reduction.md;
+- rounds/codex-managed/m9-m1-hard-top-t1-residual-fejer-tangent-gcd-gate/candidates/formalized_hard_m1_t1_residual_tangent_gcd_reduction.md;
+- rounds/codex-managed/m9-m1-hard-top-t1-residual-fejer-tangent-gcd-gate/reviews/final_kernel_candidate_consistency_review.md;
+- rounds/codex-managed/m9-m1-hard-top-t1-residual-fejer-tangent-gcd-gate/reviews/final_kernel_power_owner_scope_review.md;
+- rounds/codex-managed/m9-m1-hard-top-t1-residual-fejer-tangent-gcd-gate/reviews/final_kernel_formalization_provenance_hygiene_review.md;
+- rounds/codex-managed/m9-m1-hard-top-t1-residual-fejer-tangent-gcd-gate/reviews/conductor_round185_adjudication.md; and
+- rounds/codex-managed/m9-m1-hard-top-t1-residual-fejer-tangent-gcd-gate/controls/postapply_independent_graph_reverse_audit.md.
+
+## Round 186 accepted strategy and source checkpoint
+
+Round 186 proves no new analytic estimate.  It verifies that both lawful
+quarter routes and every parent, endpoint, bridge, and exponent retain their
+post-Round-185 status.  The exact next analytic target is the one-sided
+high-height relation
+
+\[
+ \Re\!\sum_{\omega\in\{+,-\}}
+ \sum_{\substack{\mathfrak f\ \mathrm{primitive}\\Y<h\leq2Y}}
+ (-1)^{S_{0,\omega}}
+ \sum_{t\in I_{\mathfrak f,\omega}}
+ (-1)^tB_{\mathfrak f,\omega}^{\sigma}(t)
+ \ll_{B,\varepsilon}L^2X^\varepsilon
+\]
+
+for every fixed \(B>0\) and dyadic
+\(Y>\lfloor(\log(2X))^B\rfloor\), with the exact Round-184 residual
+coefficient and every Round-185 primitive row, orientation, endpoint,
+selector, arithmetic deletion, sign, phase, profile field, and zero
+extension retained.  There is one outer real part and no absolute value
+around it.  Negative dyadic real parts require no lower bound.
+
+Positive capacity is \(O(YL^2X^\varepsilon)\), so the missing gain is the
+complete factor \(Y\).  This estimate remains open.  If proved, it would
+close only the exact original-\(t=1\) residual through the accepted
+Round-184 and Round-185 connectors.  Every original \(t\geq2\) small-\(G\)
+incidence, the large-\(G\) near-resonant complement, both direct M1
+parents, GAR, every M2 parent, endpoint uniformity, M9, both bridges, and
+the quarter theorem remain open or conditional at their prior scopes.
+
+The current named primary-source corpus through 2026-08-28 supplies no
+literal import.  Milicevic--Robinson--Shupe arXiv:2608.21346v1,
+Theorem 1.1 is retained only as a non-importable prime-power
+Kloosterman-product guardrail.  Its kernel, modulus, and coefficient
+architecture fails before a lawful map to the high-height relation, K17a,
+K26, or UNBAL.
+
+The applied strategy-only State Patch has exact effect \(0/1/0/21/24\)
+and yields graph
+d1ace6e362a41f1a08fc09c8e44ce628758040fa91ae39c152113c275f76352a.
+Exponents are unchanged: internal \(1/3\), accepted external
+\(0.3144831759740614\ldots\), target \(1/4\).
+
+Accepted evidence:
+
+- rounds/codex-managed/full-proof-round183-185-strategy-literature-review/reviews/full_graph_frontier_postrepair_verification.md;
+- rounds/codex-managed/full-proof-round183-185-strategy-literature-review/reviews/source_hypotheses_currency_interface_review.md;
+- rounds/codex-managed/full-proof-round183-185-strategy-literature-review/reviews/blind_post_unmask_frontier_selection_review.md;
+- rounds/codex-managed/full-proof-round183-185-strategy-literature-review/reviews/conductor_round186_adjudication.md;
+- rounds/codex-managed/full-proof-round183-185-strategy-literature-review/controls/preapply_independent_reverse_audit.md;
+- rounds/codex-managed/full-proof-round183-185-strategy-literature-review/controls/postapply_independent_graph_reverse_audit.md; and
+- rounds/codex-managed/full-proof-round183-185-strategy-literature-review/synthesis.md.
+
+## Round 187 accepted high-height inverse-residue conductor reduction
+
+On the exact Round-185 primitive tangent-gcd carrier, retain the separate
+\(U=1\) convention and, for odd \(U>1\), write
+
+\[
+ E_U(a)=(-1)^{[a]_U}
+ =\sum_{k\bmod U}c_U(k)e(ka/U),
+ \qquad
+ c_U(k)=\frac{2}{U(1+e(-k/U))}.
+\]
+
+Thus \(c_U(0)=1/U\), and the exact conductor of a mode is
+
+\[
+ q_U(k)=\frac{U}{(k,U)}.
+\]
+
+Fix \(B>0\), set \(Q=H_B=\lfloor(\log(2X))^B\rfloor\), and restrict to a
+nonempty dyadic block \(Y<h\le2Y\) with \(Y>H_B\). With every inherited
+selector, squarefree and coprimality deletion, orientation, affine index,
+profile, endpoint, phase, sign, and zero extension retained, the following
+complete transformed packet has total absolute contribution
+
+\[
+ O_{B,\varepsilon}(L^2X^\varepsilon):
+\]
+
+1. all \(U=1\) rows;
+2. every mode with exact conductor \(q_U(k)\le Q\), including the zero
+   mode;
+3. among the remaining modes, every \(U\le4Q\); and
+4. for \(U>4Q\), every ordinary edge mode \(0<|k|_U\le Q\).
+
+The counting input is the literal coordinate change
+\(u=gU, n=gh\), under which \(u,v\asymp L/\kappa\),
+\(n\ll L/\kappa\), and \(h\ll U\). For fixed
+\((\kappa,u,U)\) there are \(O(UL)\) live atoms. The Fourier mass at exact
+conductor \(q\) is \(O((q/U)\log(2q))\), giving cost
+\(O(Lq\log(2q))\) before the standard divisor summation. This proves the
+fixed-polylogarithmic low-conductor packet at the target scale.
+
+The exact complementary signed aggregate is
+
+\[
+ U>4Q,\qquad q_U(k)>Q,\qquad |k|_U>Q,
+\]
+
+still under one outer real part over both orientations and all literal
+variables. Its positive capacity is
+\(O_\varepsilon(YL^2X^\varepsilon)\). The one-sided
+\(O_{B,\varepsilon}(L^2X^\varepsilon)\) estimate, and therefore the full
+factor \(Y\), remain open.
+
+Centering by primitive conductor is an exact self-return control:
+
+\[
+ K_q^\circ(-b)=-K_q^\circ(b),\qquad
+ E_U(b)A_+ + E_U(-b)A_-
+ =\sum_{\substack{q\mid U\\q>1}}
+ \frac qU K_q^\circ(b)(A_+-A_-).
+\]
+
+For prime \(U=p\), the high-conductor kernel returns literally to
+\(E_p(b)\). Moreover, the two near-half modes alone retain at least
+\(8/\pi^2\) of Fourier \(\ell^2\)-mass. Hence conductor centering, raw
+orientation antisymmetry, positive Fourier/Poisson/alias energy, and bare
+alternation do not by themselves recover \(Y\). These are mechanism
+controls, not lower bounds for the literal coefficient.
+
+The applied State Patch has exact effect \(1/1/0/14/20\) and yields graph
+`be0eca9ca93c3534cca958d70b5541d03d28ff993ebfbcbca6be3cd393fae5ff`.
+The complete high-height relation, complete \(t=1\) residual, every
+\(t\ge2\) small-\(G\) incidence, the large-\(G\) near-resonant complement,
+both M1 parents, every M2 parent, endpoint uniformity, M9, both bridges,
+and the quarter theorem remain open. Exponents are unchanged: internal
+\(1/3\), accepted external \(0.3144831759740614\ldots\), target \(1/4\).
+
+Accepted evidence:
+
+- proofs/kernels/m9_m1_hard_top_t1_high_h_inverse_residue_conductor_reduction.md;
+- rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/candidates/formalized_hard_m1_t1_high_h_inverse_residue_conductor_reduction.md;
+- rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reviews/conductor_round187_report_reconciliation.md;
+- rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reviews/final_kernel_candidate_consistency_final_hash_verification.md;
+- rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reviews/final_kernel_power_owner_scope_post_repair_verification.md;
+- rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reviews/final_kernel_formalization_provenance_post_repair_verification.md;
+- rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reviews/conductor_round187_adjudication.md; and
+- rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/synthesis.md.
+
+## Round 188 accepted high-height imprimitive-lift gcd reduction
+
+On the exact Round-187 high packet, put
+
+\[
+m=(k,U),\qquad U=mq,\qquad k=ma,\qquad (a,q)=1.
+\]
+
+These coordinates are unique and satisfy
+
+\[
+c_U(k)=\frac1m c_q(a),\qquad
+e\!\left(\frac{\epsilon_\omega k\bar vh}{U}\right)
+=e\!\left(\frac{\epsilon_\omega a\bar vh}{q}\right),
+\qquad |k|_U=m|a|_q.
+\]
+
+Fix $Q=H_B=\lfloor(\log(2X))^B\rfloor$ and a nonempty dyadic
+$Y<h\le2Y$ with $Y>Q$. At fixed $(\kappa,u,U)$, the literal
+one-block carrier has $O(YL)$ capacity atoms. Exact conductor $q$ at
+lift $m$ has Fourier mass $O(m^{-1}\log(2q))$. Therefore, on
+$Qm\ge Y$, the inequality $Y/m\le Q$, the identity
+
+\[
+\sum_{U\mid u}\tau(U)=\sum_{mq\mid u}1=\tau_3(u),
+\]
+
+and the inherited live-shell support $L\ll X^{1/4}$ give the complete
+absolute estimate
+
+\[
+|\mathscr I_{Y,Q}^{\sigma}|
+\ll_{B,\varepsilon}L^2X^\varepsilon.
+\]
+
+No positive power of $Y$ is hidden in the epsilon budget: $Y$ is
+removed only through the exact coefficient factor $1/m\le Q/Y$ before
+positive recombination.
+
+The exact complementary aggregate retains
+
+\[
+U=mq>4Q,\qquad q>Q,\qquad m|a|_q>Q,\qquad Qm<Y,
+\]
+
+with one outer real part over both orientations and every selector,
+arithmetic deletion, profile, endpoint, affine site, phase, and zero
+extension.  Its positive capacity remains
+$O_\varepsilon(YL^2X^\varepsilon)$. The required one-sided
+$O_{B,\varepsilon}(L^2X^\varepsilon)$ estimate is open.
+
+The determinant equations make the lifted phase constant along each
+affine $t$-ray. Additive reciprocity, determinant transposition,
+completion, selector-blind sieve opening, and positive energy therefore
+do not by themselves provide the missing factor $Y$. Every primitive
+lift $m=1$ remains in the complement, and prime-conductor near-half
+modes retain combined squared coefficient mass at least $8/\pi^2$.
+These are mechanism self-return controls, not a lower bound for the
+literal aggregate.
+
+The applied State Patch has exact effect $1/1/0/15/21$ and yields graph
+`338060b37c19d849053078e5f6a7775c45c626a16b6f9198fafdf9bb4a62265c`.
+The complete high-height relation, original $t=1$ residual, every
+$t\ge2$ small-$G$ incidence, the large-$G$ near-resonant complement,
+both M1 parents, every M2 parent, endpoint uniformity, M9, both bridges,
+and the quarter theorem remain open or conditional.  Exponents are
+unchanged: internal $1/3$, accepted external
+$0.3144831759740614\ldots$, target $1/4$.
+
+Accepted evidence:
+
+- proofs/kernels/m9_m1_hard_top_t1_high_h_imprimitive_lift_gcd_reduction.md;
+- rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/candidates/formalized_hard_m1_t1_high_h_imprimitive_lift_gcd_reduction.md;
+- rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/reviews/final_kernel_candidate_provenance_post_hygiene_verification.md;
+- rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/reviews/conductor_round188_adjudication.md;
+- rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/controls/postapply_independent_reverse_replay_audit.md;
+- rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/controls/postapply_scope_protected_state_audit.md; and
+- rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/synthesis.md.
+
+
+## Round 189 accepted dual-frequency projective reduction
+
+Round 189 closes under strict_dual_height_resonance_sector on graph
+15c770023b649a95596b223e15370657836e230580f0d2f31f5d30c615a98568.
+On the exact Round-188 complement, define
+
+\[
+j_q(a,v)=|a\bar v_q|_q,\qquad
+T_Q(m,q;Y)=
+\min\!\left\{\frac{q-1}{2},
+       \left\lfloor\frac{H_Bmq}{Y}\right\rfloor\right\}.
+\]
+
+The inherited carrier has \(U=mq\) odd and \(q\mid U\mid u\).
+For fixed unit \(a\bmod q\), the map
+\(v\mapsto a\bar v_q\) is a bijection of unit classes. Hence the
+slow set uses at most \(2T_Q\) classes and
+\(O(uT_Q/q)\le O(H_Bum/Y)\) literal \(v\)-values. Restoring
+\(O(Y)\) heights and \(O(\kappa)\) affine sites and using
+
+\[
+c_{mq}(ma)=m^{-1}c_q(a),\qquad
+\sum_{(a,q)=1}|c_q(a)|\ll\log(2q),
+\qquad
+\sum_{mq\mid u}1=\tau_3(u),
+\]
+
+cancels \(Y\) and \(m\) before outer positivity. Therefore the
+complete sector \(j_q(a,v)\le T_Q(m,q;Y)\) is
+\(O_{B,\varepsilon}(L^2X^\varepsilon)\). This includes the
+power-neutral baseline \(j_q\le\lfloor U/Y\rfloor\) and the frozen
+\(H_B\)-enlargement; no positive power of \(Y\) is absorbed.
+
+The exact fast complement \(j_q(a,v)>T_Q(m,q;Y)\) remains under one
+outer real part over both orientations and every literal field. On a
+dyadic \(J\)-band, a sufficient fixed-\(a\) input is
+
+\[
+\sum_{\omega,v}\mathsf V(W_v)
+\ll_\varepsilon
+\frac{H_Bm\kappa uJ}{q}X^\varepsilon,
+\]
+
+whereas the accepted pointwise information gives only
+\(Y\kappa uJ/q\). The exact deficit is \(Y/(H_Bm)\), and primitive
+lifts retain \(Y/H_B\).
+
+For odd prime conductor, the centered slope \(-2\) prefix is exactly
+\(-(p-1)/2\). This rules out a uniform polylogarithmic
+centered-kernel prefix theorem but is not literal lower mass.
+Assumed bounded variation, positive completion energy, and
+selector-blind sieve opening remain invalid shortcuts.
+
+The applied State Patch has exact effect \(1/1/0/15/22\). The
+complete high-height relation, original \(t=1\) residual, every
+original \(t\ge2\) small-\(G\) incidence, the large-\(G\)
+near-resonant complement, both M1 parents, every M2 parent, endpoint
+uniformity, M9, both bridges, and the quarter theorem remain open or
+conditional.
+
+There is no global exponent improvement: internal \(1/3\), accepted
+external \(0.3144831759740614\ldots\), target \(1/4\). Round 190 is
+the mandatory full-proof strategy and current-primary-literature
+checkpoint.
+
+Accepted evidence:
+
+- proofs/kernels/m9_m1_hard_top_t1_high_h_dual_frequency_projective_reduction.md;
+- rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/candidates/formalized_hard_m1_t1_high_h_dual_frequency_projective_reduction.md;
+- rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reviews/final_kernel_candidate_consistency_review.md;
+- rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reviews/final_kernel_power_literal_owner_scope_review.md;
+- rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reviews/final_kernel_formalization_provenance_hygiene_review.md;
+- rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/controls/postapply_independent_reverse_replay_audit.md;
+- rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/controls/postapply_scope_protected_state_audit.md;
+- rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reviews/conductor_round189_adjudication.md; and
+- rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/synthesis.md.
+
+## Round 190 strategy-only proof-state note
+
+Round 190 changes no accepted theorem or analytic lemma. The authoritative
+graph remains at exactly the Round-189 proved projective reduction, with
+the fast complement open.
+
+The verified algebraic successor interface is the endpoint-exact Abel
+identity for the zero-extended literal height sequence and the proposed
+joint signed jump estimate
+
+\[
+|\mathscr J_{\kappa,u,m,q,a,J}^{\sigma}|
+\ll_{B,\varepsilon}H_Bm\kappa uX^\varepsilon.
+\]
+
+This is a research target, not part of the accepted proof. Replacing the
+joint packet by individual total variations gives only the known positive
+sufficient benchmark and does not constitute new cancellation.
+
+No complete original-\(t=1\) residual, small-\(t\) owner, M1 parent, M2
+parent, endpoint theorem, M9 statement, bridge, quarter theorem, or
+exponent is added to the proof draft.
+
+## Round 191 accepted signed-inverse transport reduction
+
+Let \(U=mq\) in the accepted Round-189 fast packet and define the signed
+least inverse by
+
+\[
+\varrho_U(v)v-\gamma U=1,
+\qquad |\varrho_U(v)|\le (U-1)/2.
+\]
+
+Set
+
+\[
+T_\varrho=\min\!\left(\frac{U-1}{2},
+\left\lfloor\frac{H_BmU}{Y}\right\rfloor\right).
+\]
+
+The sector \(0<|\varrho_U(v)|\le T_\varrho\), the exact outer terminal jump
+projection, and the isolated Fejer-difference jump projection contribute
+\(O_{B,\varepsilon}(L^2X^\varepsilon)\) after the accepted lift, coefficient,
+and divisor ledgers. The proof uses the inverse-class count
+\(O(uT_\varrho/U)\) and the exact factor \(m^{-1}c_q(a)\).
+
+For adjacent fibres the literal transport is
+
+\[
+(S,w)\mapsto(S-\epsilon_\omega\varrho,
+w-\epsilon_\omega\gamma),
+\]
+
+with carry \(\nu_\omega(h)\in\{-1,0,1\}\). The retained Fourier mode has
+factor \((-1)^{\nu_\omega(h)}e(\epsilon_\omega a\varrho/q)\), not the full
+pre-Fourier parity \((-1)^\varrho\).
+
+The complementary rho-large literal complex remainder is not estimated.
+It retains every support, arithmetic, endpoint, carry, and phase change under
+one outer real part and still misses the target scale by \(Y/(H_Bm)\).
+Accordingly no original-\(t=1\) residual, M1 or M2 parent, endpoint theorem,
+M9 statement, bridge, quarter theorem, or exponent is added here.
+
+## Round 192 accepted rho-large Farey-covector reduction
+
+Retain the exact accepted Round-191 rho-large remainder and write
+
+\[
+ \rho v_0-\beta U=1,\qquad
+ T=\min\!\left(\frac{U-1}{2},
+ \left\lfloor\frac{H_BmU}{Y}\right\rfloor\right).
+\]
+
+Fix \(C_0\ge2\), put
+\[
+ A=\min\{U-1,\lfloor H_B^{C_0}\rfloor\},
+\]
+and range over primitive pairs
+\[
+ 1\le c\le A,\qquad 0\le d\le c.
+\]
+For \(T\ge1\), let \(P_A\) select the single union for which
+\[
+ |c\beta-d\rho|\le T
+\]
+for at least one such pair. For \(T=0\), set \(P_A=0\).
+
+The exact factorization
+\[
+ \rho(cv_0-dU)=c+U(c\beta-d\rho)\ne0
+\]
+gives at most
+\[
+ 2\tau(|c+U(c\beta-d\rho)|)
+\]
+canonical classes for each fixed covector value. After literal repetitions,
+\(Y\) heights, \(O(\kappa)\) sites, the fixed \(A^2\) polylogarithmic cost,
+the exact \(m^{-1}c_q(a)\) lift, coefficient mass, projective bands, divisor
+ledger, and shell sum,
+\[
+ |P_A\mathscr R_{\rm fix}|
+ \ll_{B,C_0,\varepsilon}H_Bm\kappa uX^\varepsilon
+\]
+and its full outer contribution is
+\[
+ O_{B,C_0,\varepsilon}(L^2X^\varepsilon).
+\]
+
+The exact complex decomposition before the single final real part is
+\[
+ \mathscr J_{\rm safe,192,fix}
+ =\mathscr J_{\rm safe,191,fix}+P_A\mathscr R_{\rm fix},
+\qquad
+ \mathscr R_{\rm core,fix}=(I-P_A)\mathscr R_{\rm fix}.
+\]
+
+For \(T\ge1\), circular pigeonhole gives
+\[
+ \min_{(c,d)}|c\beta-d\rho|
+ \le\left\lfloor\frac{|\rho|}{A+1}\right\rfloor.
+\]
+Hence every core row has
+\[
+ |\rho|\ge(A+1)(T+1),
+\]
+and the core is empty if
+\[
+ \left\lfloor\frac{(U-1)/2}{A+1}\right\rfloor\le T.
+\]
+
+The nonempty core remains unestimated. Its exact literal phase, carry, and
+unequal endpoint number/divisor translations are retained under one outer
+real part. Positive control still loses \(Y/(H_Bm)\); static Farey covering,
+long-step Abel, and bounded-array capacity do not supply the missing signed
+correlation.
+
+No complete original \(t=1\), any \(t\ge2\) range, M1 or M2 parent, endpoint
+theorem, M9 statement, bridge, quarter theorem, or exponent is added here.
+
+## Round 193 accepted gcd-scaled double-close sector
+
+Retain the exact Round-192 core and its opposing physical incidence source
+
+\[
+ N=dm,\qquad N+r=d'm',\qquad g=(d,d').
+\]
+
+Before Fourier expansion or height differencing, impose
+
+\[
+ D_L=\lceil\sqrt L\rceil,
+\qquad
+ P_{\rm cl}=
+ \mathbf1_{|d-gm|\le D_L}
+ \mathbf1_{|d'-gm'|\le D_L}.
+\]
+
+In the plus primitive chart,
+
+\[
+ d=\kappa gU,\quad d'=g(\kappa U+2S),\quad
+ m'=\kappa v,\quad m=\kappa v+2w,
+\]
+
+the close relations give
+
+\[
+ S+w\le D_L/g,
+\qquad |\kappa(U-v)|\le3D_L/g.
+\]
+
+The hard cone and \(m\asymp L\) force \(g=O(1)\).  For fixed
+\((\kappa,g,U,v,w)\), the determinant condition
+
+\[
+ h=Sv-Uw>0,
+\qquad r=2\kappa gh<R_0
+\]
+
+confines \(S\) to an interval of length \(O(1)\).  Restoring every
+small-variable term and both orientations gives
+
+\[
+ \#\mathcal I_{\rm cl}
+ \ll LD_L\log(2L)+LD_L^2\ll L^2.
+\]
+
+There is no hidden dyadic-height multiplicity because \(h\) is determined
+by the primitive coordinates.  Every literal arithmetic, cell, crossing,
+endpoint, and zero-extension condition only deletes physical atoms.
+
+The accepted core restriction is operator evaluation on the masked input,
+
+\[
+ \mathscr R_{\rm core}[P_{\rm cl}]
+ :=\mathscr R_{\rm core}(P_{\rm cl}W),
+\]
+
+not multiplication of an already formed Abel difference.  Its affine-site
+mask commutator and unmatched births and deaths remain in the new core.
+Every Round-187--Round-192 safe projector is rerun on the deleted input and
+retains its positive or exact-deletion bound.  Consequently
+
+\[
+ \boxed{
+ |\mathscr R_{{\rm core},Y,H_B}^{\sigma}(P_{\rm cl}W)|
+ \ll_{B,C_0,\varepsilon}L^2X^\varepsilon .}
+\]
+
+The exact remaining core is the disjoint union
+
+\[
+ P_1=\mathbf1_{|d-gm|>D_L},
+\qquad
+ P_2=\mathbf1_{|d-gm|\le D_L}
+      \mathbf1_{|d'-gm'|>D_L}.
+\]
+
+Neither complement is estimated.  For a general width \(1\le D\le L\),
+the absolute mechanism costs
+\(O_\varepsilon((LD\log(2L)+LD^2)X^\varepsilon)\), so it loses power beyond
+the square-root scale.
+
+On the subsidiary \((m,m')=1\), \(r\equiv2\pmod4\) sub-sector,
+
+\[
+ (d,m,d',m')\mapsto(gm,d/g,gm',d'/g)
+\]
+
+is an exact character-reversing orientation involution after complete
+Fourier recombination.  The principal safe estimate is absolute and does not
+use this cancellation.
+
+The complete Round-192 core, complete original \(t=1\), every original
+\(t\ge2\) range, all M1 and M2 parents, endpoint uniformity, M9, both
+bridges, the quarter theorem, and every exponent remain open, conditional,
+or unchanged.
+
+## Round 194 strategy-only proof-state note
+
+Round 194 changes no accepted analytic theorem or lemma. The authoritative
+graph retains exactly the Round-193 double-close estimate, with \(P_1\) and
+\(P_2\) open.
+
+The verified algebraic successor interface for \(P_2\) is
+
+\[
+\Delta_-=\kappa(U-v)-2w,\qquad
+\Delta_+=\kappa(U-v)+2S,
+\]
+\[
+2h=v\Delta_+ + U\Delta_- -\kappa(U^2-v^2),
+\qquad \Delta_+-\Delta_-=2(S+w)>0.
+\]
+
+Together with \(|g\Delta_-|\le\lceil\sqrt L\rceil\) and
+\(g\Delta_+>\lceil\sqrt L\rceil\), this defines the proposed
+coefficient-retaining determinant-fibre vector-dispersion seam. The
+fixed-packet estimate
+
+\[
+ |R_{{\rm core,fix}}^\sigma(P_2W)|
+ \ll_{B,\varepsilon}H_B\mathfrak m\kappa uX^\varepsilon
+\]
+
+is a research target, not part of the accepted proof. No complete original
+\(t=1\) residual, small-\(t\) owner, M1 or M2 parent, endpoint theorem, M9
+statement, bridge, quarter theorem, or exponent is added here.
+
+## Round 195 accepted P2 absolute-capacity sectors
+
+Retain the exact Round-192 core and impose the physical mask
+
+\[
+ P_2=\mathbf1_{\{|d-gm|\le D_L\}}
+     \mathbf1_{\{|d'-gm'|>D_L\}},
+ \qquad D_L=\lceil\sqrt L\rceil,
+\]
+
+before Fourier expansion or height differencing.  In both primitive
+orientations, lower closeness gives \(g=O(1)\).  For
+\(\kappa\ge D_L\), one close coordinate has \(O(D_L)\) choices and the
+determinant window confines the other to \(O(1)\) choices. Therefore
+
+\[
+ \sum_{\kappa\ge D_L}D_L(1+L/\kappa)^2
+ \ll L^2+LD_L\log(2L)\ll L^2,
+\]
+
+and
+
+\[
+ |\mathscr R_{{\rm core},{\rm fix}}^\sigma(P_{2,\ge D}W)|
+ \ll H_B\mathfrak m\kappa uX^\varepsilon,
+ \qquad
+ |\mathscr R_{{\rm core},Y,H_B}^\sigma(P_{2,\ge D}W)|
+ \ll L^2X^\varepsilon.
+\]
+
+For \(\kappa<D_L\), a fixed height and row has \(O(1)\) close sites,
+whereas the all-height determinant count has \(O(D_L)\) sites after the
+exact anchor/Abel factor. Restoring the terminal and Fejer pieces gives
+
+\[
+ |\mathscr R_{{\rm core},{\rm fix}}^\sigma(P_{2,<D}W)|
+ \ll u\{\kappa+\min(Y,D_L)\}X^\varepsilon.
+\]
+
+Consequently the fixed packets
+
+\[
+ \kappa<D_L,
+ \qquad \min(Y,D_L)\le H_B\mathfrak m\kappa
+\]
+
+are target-safe, and the accepted lift, band, divisor, and shell ledger
+gives an outer \(O(L^2X^\varepsilon)\) bound for their union with the
+large-\(\kappa\) sector.
+
+The exact remaining \(P_2\) region is
+
+\[
+ \boxed{\kappa<D_L,
+        \qquad \min(Y,D_L)>H_B\mathfrak m\kappa.}
+\]
+
+Within one primitive row, the far-defect parity step changes height by
+\(v\) or \(U\), so there are only \(O(1)\) live far samples. The plus
+retained-mode anchor ratio is carry-dependent; the minus ratio is one.
+Same-site current/previous event blocks recombine to the original masked
+jump. Thus a continuation must estimate the actual cross-row
+\(++,+-,-+,--\) Gram with every endpoint, phase, Fejer, selector, carry,
+birth/death, mask-commutator, and zero-extension field intact.
+
+This accepted result creates one subordinate sector only. Complete \(P_2\),
+\(P_1\), original \(t=1\), the hard small-\(t\) owner, both M1 parents,
+all M2 parents, endpoint uniformity, M9, both bridges, the quarter theorem,
+and every exponent remain open, conditional, or unchanged.
+
+## Round 196 accepted carrier-normalization method boundary
+
+Retain the exact unresolved Round-195 region
+\[
+ \kappa<D_L,\qquad
+ M:=\min(Y,D_L)>H_B\mathfrak m\kappa.
+\]
+For \(x=\kappa U+2S\), both primitive charts give
+\[
+ \epsilon_\omega\bar v_qh\equiv\bar2_qx\pmod q,
+ \qquad
+ (-1)^S=\chi_4(\kappa U)\chi_4(x).
+\]
+The resulting parity-restored shadow is a primitive modulus-\(4q\)
+carrier with step-two multiplier \(-e(a/q)\), and formally
+\[
+ (1+e(a/q))c_q(a)=2e(a/q)/q.
+\]
+
+This shadow is not one literal exact-conductor atom.  The accepted
+normalization is
+\[
+ S=S_{0,\omega}+Ut,\qquad
+ (-1)^S=E_U(S_{0,\omega})(-1)^t,
+\]
+and a literal fixed mode is
+\[
+ \mathfrak m^{-1}c_q(a)(-1)^t
+ e(\epsilon_\omega a\bar v_qh/q)B_{\omega,\sigma}(h,t).
+\]
+Its on-shell form retains the nonconstant factor \(E_U(S_0)\).
+Multiplying one fixed mode by this factor convolves all \(U\)-frequencies
+and mixes exact conductors, projective bands, and safe/core packets.
+Full recombination removes the distinguished \(c_q(a)\).
+
+Every live-to-live adjacent-\(S\) edge is nonwrap and has literal ratio
+\(+e(a/q)\).  The formal negative wrap lands at \(S_0=0\) and survives
+only as an unpaired live/dead coprimality boundary after zero extension.
+For \(a=(q-1)/2\),
+\[
+ |(1-e(a/q))c_q(a)|
+ =\frac2q\cot\!\left(\frac{\pi}{2q}\right)\asymp1.
+\]
+Equivalently, commuting \(E_U\) through a hypothetical step-two
+difference creates a modulus-two bulk commutator on every live-to-live
+nonwrap edge.
+
+The genuine height event transports
+\[
+ x_{h-1}^{\rm tr}=x_h-2\epsilon_\omega\rho.
+\]
+For \(T\ge1\), \(|\rho|>1\).  At \(T=0\), unit-inverse rows may occur,
+but they do not estimate their complement and retain every literal
+commutator.  Fixed-height affine spacing is \(2U\), while the plus and
+minus charts assign \(x\) to different physical endpoint roles.  Hence
+no accepted operator supplies one common \(\Delta_2\) on the complete
+two-orientation core.
+
+This establishes only the route-scoped terminal
+on_shell_carrier_denominator_self_return_no_go.  The positive estimate
+\[
+ |\mathscr R_{{\rm core},{\rm fix}}^\sigma(P_2W)|
+ \ll u\{\kappa+M\}X^\varepsilon
+\]
+and the unresolved multiplier
+\[
+ \frac{M}{H_B\mathfrak m\kappa}>1
+\]
+remain unchanged.  A different coefficient-sensitive joint
+\(++,+-,-+,--\) estimate for the complete literal \(P_2\) remainder
+is still logically open.  No sector, owner, parent, bridge, theorem, or
+exponent is promoted.
+
+## Round 197 accepted P2 common-cell allocation-commutator sector
+
+Retain the exact Round-195 open packet region
+
+\[
+ \kappa<D_L,\qquad
+ \min(Y,D_L)>H_B\mathfrak m\kappa.
+\]
+
+Write \(d=g\alpha\), \(d'=g\beta\), and let
+
+\[
+ P_0=P_2\mathbf 1_{(m,\beta)=1}
+          \mathbf 1_{\chi_4(\alpha m)=-1}.
+\]
+
+Define \(C_{\rm lit}\) by equality of the explicit arithmetic, support,
+zero-extension, and sharp-branch code at the two lower allocations
+\((m,g\alpha)\) and \((\alpha,gm)\), and put
+\(P_{\rm cc}=P_0C_{\rm lit}\).  The code excludes coefficient values,
+smooth-factor values, normalized-BV values, selector values, and
+nonvanishing tests.  No nonemptiness, density, or positive mass is claimed.
+
+The lower swap
+
+\[
+ (g\alpha,m,g\beta,m')\longmapsto(gm,\alpha,g\beta,m')
+\]
+
+preserves the two products, shift, physical defects, common gcd \(g\),
+Fejer factor, and radical phase, while reversing the character.  Pairing
+before positive norms gives the literal coefficient difference
+
+\[
+ \lambda_{N,\sigma}(g\alpha)-\lambda_{N,\sigma}(gm).
+\]
+
+On a common live code its exact product rule has smooth,
+normalized-BV, and selector-commutator terms.  The strict cone and lower
+closeness give \(g\le G_0\).  The smooth term gains \(D_L/L\), the
+aggregate BV term costs \(D_L^2\), and a selector change is impossible for
+all sufficiently large \(L\) after the finite-\(g\) selected-prime gap
+audit; bounded shells are paid absolutely.  Hence the raw capacity
+
+\[
+ D_L\sum_{\kappa\ll L}(1+L/\kappa)^2\ll D_LL^2X^\varepsilon
+\]
+
+is reduced to \(D_L^2LX^\varepsilon\le4L^2X^\varepsilon\).  Replaying
+the complete physical mask, both orientations and \(T\)-branches, every
+anchor/Fourier copy, all carries, births/deaths, transported-mask
+commutators, zero extensions, and one outer real part proves
+
+\[
+ |\mathscr R_{\rm core,out}^{\sigma}(P_{\rm cc}W)|
+ +|\mathscr R_{\rm open,out}^{\sigma}(P_{\rm cc}W)|
+ \ll_{B,C_0,K_{\rm sel},\varepsilon}L^2X^\varepsilon.
+\]
+
+The exact open complement is
+
+\[
+ \boxed{
+ \{\kappa<D_L,\ \min(Y,D_L)>H_B\mathfrak m\kappa\}
+ \cap(P_{\partial\rm lit}\dot\cup P_{s\rm f}\dot\cup P_{g\rm f}).}
+\]
+
+The formal four-corner rectangle has recomputed gcds
+\(g\), \(g(m,\beta)\), \(g(\alpha,m')\), and \(g(m,m')\).  Its
+cross-coprime alternating sector forces the physical inward gcd
+\(\kappa=1\), so it cannot cover \(2\le\kappa<D_L\), and its simultaneous
+swap has sign \(+1\).  Moreover,
+
+\[
+ \left({g\alpha\over m}-g\right)
+ \left({gm\over\alpha}-g\right)
+ =-{g^2(\alpha-m)^2\over\alpha m}
+\]
+
+shows that a sharp ratio face aligned with \(g\) can retain the full
+\(D_LL^2X^\varepsilon\) capacity.  This is a mechanism no-go, not a lower
+bound or a disproof of complete \(P_2\).  Complete \(P_2\), \(P_1\),
+original \(t=1\), the hard small-\(t\) owner, both M1 parents, M2,
+endpoint uniformity, M9, both bridges, the quarter theorem, and every
+exponent remain open, conditional, or unchanged.
+
+## Round 199 accepted cross-gcd cellular-boundary method boundary
+
+On the exact Round-195 open packets, factor the four pairwise-coprime cross
+gcds as \(A=G_{00}\), \(B=G_{10}\), \(C=G_{01}\), \(E=G_{11}\), so that
+
+\[
+ d=ACx,\quad m=BEu,\quad d'=ABy,\quad m'=CEv.
+\]
+
+For one odd block \(q>1\), the lawful P2 allocation triangle is
+
+\[
+ V_B=(Ax,qu,Aqy,v),\quad
+ V_E=(Ax,qu,Av,qy),\quad
+ V_C=(Aqu,x,Av,qy).
+\]
+
+If \(p=\chi_4(qxu)\) and \(t=\chi_4(qyv)\), its actual edge incidences are
+\(1,t,tp\). With endpoint values
+\(\ell_0,\ell_1,u_0,u_1\), its coefficient is
+
+\[
+ \Sigma_{BEC}=u_0\bar\ell_0+t u_1\bar\ell_0
+                 +tp u_1\bar\ell_1.
+\]
+
+Although the holonomy is \(+1\), this augmented incidence is not zero. The
+exact product identity is
+
+\[
+ \Sigma_{BEC}
+ =(u_0+t u_1)\overline{(\ell_0+p\ell_1)}
+  -p u_0\overline{\ell_1}.
+\]
+
+The last term is the unique fourth live allocation
+\(V_A=(Aqu,x,Aqy,v)\). Its recomputed gcd is \(Aq\), and on the aligned
+shell it satisfies the authoritative lower-first-failure condition defining
+\(P_1\), rather than the P2 complement. Omitting it leaves a structural
+coefficient; including it crosses owners. Distinct partial-block moves do not
+preserve the two P2 defect masks and therefore create mask commutators.
+
+This proves only
+`p2_cross_gcd_cellular_boundary_self_return_no_go`. It is not a lower bound
+and does not disprove a non-cellular coefficient-sensitive estimate. The
+complete P2 complement, P1, original \(t=1\), both M1 parents, all M2
+parents, endpoint uniformity, M9, both bridges, the quarter theorem, and all
+exponent improvements remain open, conditional, or unchanged.

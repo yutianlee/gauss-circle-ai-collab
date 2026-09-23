@@ -1,0 +1,266 @@
+{
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M2-hard-top-t1-residual-transport-fejer-energy-reduction",
+        "type": "reduction",
+        "track": "M9_analytic",
+        "title": "Hard-TOP t=1 residual transport obstruction and Fejer energy reduction",
+        "status": "proved_internal",
+        "statement_tex": "Let J=sqrt(X), 1<<L<<H<=J^(1/2), and subtract exactly the accepted canonical close-opposite-prime XOR incidence sector from the literal squarefree hard-TOP t=1 scalar. For N=2^nu M_N with M_N odd, retain all odd divisors if no pair is selected and otherwise use rho_N(d)=1-1_(p|d)-1_(q|d)+2 1_(p|d)1_(q|d), so only neither/both incidences remain. The residual sign mass is product_(r|M_N)(1+chi_4(r)) with no pair and zero with a selected pair. For ordered residual divisors, C_j=sum_(i<=j)chi_4(d_i), a_0=a_(r+1)=0, exact Abel gives b_N^rem=-sum_(j=0)^r C_j(a_(j+1)-a_j), hence |b_N^rem|<=(osc C_N/2)sum_j|a_(j+1)-a_j| for the literal real amplitude, including unequal mass and all zero-extension jumps. Its profile variation is O(1). Fixed-modulus four-prime unit-profile controls have L^(2-o(1)) coefficient-uniform positive-transport capacity, so sign balance, monotone transport, cemetery normalization, bounded variation, finite hard faces, and the accepted positive rank-one collar do not prove the target; this is not literal physical lower mass. Extend c_N^rem by zero on an interval of M_L asymp L^2 sites and take R=ceil(L). The exact sliding Fejer energy E_R=(1/R)sum_s|sum_(j<R)c_(s+j)^rem e(Jsqrt(s+j))|^2 equals the coefficient diagonal plus 2Re sum_(1<=r<R)(1-r/R)sum_N c_(N+r)^rem conjugate(c_N^rem)e(J(sqrt(N+r)-sqrt(N))), and |S_(L,1)^rem|^2<=((M_L+R-1)/R)E_R. Since sum_N|c_N^rem|^2<<_epsilon L^2X^epsilon, the residual target follows from the open one-sided actual-direction bound Re sum_(1<=r<R)(1-r/R)sum_N c_(N+r)^rem conjugate(c_N^rem)e(Jr/(sqrt(N+r)+sqrt(N)))<=C_epsilon L^2X^epsilon. Opening supported squarefree rows gives exactly d'm'-dm=r with 1<=r<R asymp L, both selectors, parity branches, profiles, and phases retained. No residual target, full t=1 face, remaining channel, hard TOP parent, smooth packet, M9-M2, M9-M1, endpoint uniformity, M9, bridge, quarter theorem, or exponent follows.",
+        "dependencies": [
+          "M9-M2-hard-top-t1-close-opposite-prime-exchange-sector",
+          "M9-M2-hard-top-truncated-divisor-energy-and-radical-control",
+          "M9-M2-hard-top-t1-character-poisson-product-collar-obstruction",
+          "M9-M2-top-endpoint-actual-symbol-variation",
+          "H4-Phi-regularity"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "proofs/kernels/m9_m2_hard_top_t1_residual_transport_fejer_energy_reduction.md",
+            "sources/bennett_martin_obryant_rechnitzer_2018.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/candidates/conductor_round164_residual_transport_fejer_reduction.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reports/complete_residual_transport_attack.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reports/blind_residual_transport_rederivation.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reports/unmatched_transport_capacity_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/controls/conductor_round164_reproduction_and_selection.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reviews/blind_post_unmask_residual_fejer_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reviews/blind_repair_verification.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reviews/transport_capacity_profile_power_source_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reviews/transport_source_repair_verification.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reviews/downstream_graph_state_scope_review.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reviews/conductor_round164_adjudication.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/controls/conductor_round164_updated_literature_scan.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Prove the length-L actual residual Fejer off-diagonal in its aggregate one-sided real part before any shiftwise absolute value or positive Mobius/divisor opening. Use the exact relation d'm'-dm=r with both literal coefficients, selectors, parity branches, squarefree conditions, and the square-root phase. If that closes the complete residual t=1 face, separately treat the remaining L<<D<<L^2, t<<sqrt(L) channels and near collars."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "dependencies_added": [
+          "M9-M2-hard-top-t1-residual-transport-fejer-energy-reduction"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "proofs/kernels/m9_m2_hard_top_t1_residual_transport_fejer_energy_reduction.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/candidates/conductor_round164_residual_transport_fejer_reduction.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reports/complete_residual_transport_attack.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reports/blind_residual_transport_rederivation.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reports/unmatched_transport_capacity_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reviews/conductor_round164_adjudication.md"
+          ]
+        },
+        "next_action": "Prove the exact length-L actual residual Fejer off-diagonal before positive norms. This would close only the complete residual t=1,D asymp L^2 face; then prove the compatible L<<D<<L^2, t<<sqrt(L) channels and near collars. Do not transfer the transport obstruction to the signed target."
+      },
+      {
+        "id": "M9-M2-top-endpoint-density-discrepancy-energy",
+        "dependencies_added": [
+          "M9-M2-hard-top-t1-residual-transport-fejer-energy-reduction"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "proofs/kernels/m9_m2_hard_top_t1_residual_transport_fejer_energy_reduction.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/candidates/conductor_round164_residual_transport_fejer_reduction.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reports/complete_residual_transport_attack.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reports/blind_residual_transport_rederivation.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reports/unmatched_transport_capacity_hostile_audit.md",
+            "rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reviews/conductor_round164_adjudication.md"
+          ]
+        },
+        "next_action": "Preserve the canonical one-count and completed-real-part connector. Prove the actual residual length-L Fejer short-shift theorem and the other few-point channels before transferring any scalar result back to this energy. The exact reduction is not itself a completed-energy estimate."
+      }
+    ],
+    "correct_rejected": [],
+    "reject": [
+      {
+        "id": "Round164-residual-indicator-double-subtracts-both-prime-incidences",
+        "reason": "The Boolean residual takes values (1,0,0,1) on selected-prime bits (00,10,01,11), exactly complementary to XOR."
+      },
+      {
+        "id": "Round164-selected-residual-inherits-close-prime-displacement",
+        "reason": "The close p-versus-q exchange lies wholly in the removed XOR sector; the residual sign-reversing pair is a versus pqa and has ratio pq>=15."
+      },
+      {
+        "id": "Round164-selected-ambient-balance-controls-physical-balance",
+        "reason": "Zero-amplitude divisors may carry the balancing signs; the four-prime control has ambient balance but one unmatched physical unit."
+      },
+      {
+        "id": "Round164-no-pair-residual-is-always-character-balanced",
+        "reason": "If every odd prime factor is 1 modulo 4, every divisor sign is positive and the total sign mass is 2^omega(M_N)."
+      },
+      {
+        "id": "Round164-cemetery-normalization-removes-unmatched-coefficient-cost",
+        "reason": "A cemetery only equalizes formal masses; the exact zero-extended Abel/BV pairing retains all amplitude variation and hard jumps crossed."
+      },
+      {
+        "id": "Round164-finitely-many-hard-faces-have-O1-aggregate-cost",
+        "reason": "A fixed number of faces can be crossed by L^(2-o(1)) incidences; face count alone does not bound aggregate flux."
+      },
+      {
+        "id": "Round164-Abel-or-BV-identity-proves-the-residual-target",
+        "reason": "The exact dual estimate still needs an L^(3/2+o(1)) aggregate cumulative-discrepancy bound; the available scale is L^(2+o(1))."
+      },
+      {
+        "id": "Round164-unweighted-oscillation-is-necessary-for-literal-profile",
+        "reason": "The literal BV/triangle target is the weighted sum sum_N osc(C_N)V_N; the unweighted sum is only the coefficient-uniform envelope under V_N<<1."
+      },
+      {
+        "id": "Round164-coefficient-uniform-positive-transport-proves-the-target",
+        "reason": "Selector-robust four-prime unit-profile controls have L^2/(log L)^4 capacity under exactly the frozen positive transport information."
+      },
+      {
+        "id": "Round164-four-prime-capacity-is-literal-residual-lower-mass",
+        "reason": "No accepted hypothesis supplies a nonzero profile plateau on the prime boxes, and the cross-N square-root phase may cancel."
+      },
+      {
+        "id": "Round164-coarse-L2-coefficient-energy-implies-Fejer-energy",
+        "reason": "Phase-aligned arrays have coefficient energy L^2 but length-L Fejer energy L^3; the actual residual direction must be used."
+      },
+      {
+        "id": "Round164-exact-radical-collision-sparsity-implies-short-shift-energy",
+        "reason": "Exact same-phase radical relations do not control the near-product shifts d'm'-dm=r for 1<=r<L."
+      },
+      {
+        "id": "Round164-positive-rank-one-collar-proves-the-signed-offdiagonal",
+        "reason": "Termwise positive collar control destroys the aggregate real part and restores the adverse sqrt(JL) capacity."
+      },
+      {
+        "id": "Round164-additive-shift-modulus-is-the-rank-one-product-collar",
+        "reason": "Taking moduli in the Fejer off-diagonal leaves the additive relation d'm'-dm=r, whereas the accepted character-Poisson collar has the distinct multiplicative geometry |s ell-XQR|<<QRJ/L; only their adverse positive-power warning is comparable."
+      },
+      {
+        "id": "Round164-shiftwise-absolute-values-are-needed-for-the-Fejer-reduction",
+        "reason": "The exact energy requires only one one-sided upper bound for the aggregate weighted real part; shiftwise absolute values are a stronger lossy route."
+      },
+      {
+        "id": "Round164-R-smaller-than-L-closes-the-diagonal-ledger",
+        "reason": "With M_L asymp L^2 and coefficient energy L^2, the diagonal contribution is L^4/R and first reaches the target square at R asymp L."
+      },
+      {
+        "id": "Round164-sliding-Fejer-has-an-uncontrolled-endpoint-error",
+        "reason": "Zero extension gives exactly M_L+R-1 possible windows and the endpoint-safe factor (M_L+R-1)/R."
+      },
+      {
+        "id": "Round164-transport-no-go-disproves-the-literal-residual-target",
+        "reason": "The no-go is coefficient-uniform and positive-route scoped; the actual signed cross-N off-diagonal remains viable and open."
+      },
+      {
+        "id": "Round164-Fejer-reduction-proves-full-t1-or-hard-TOP",
+        "reason": "The off-diagonal theorem is open, and even a residual target would leave the other few-point channels and near collars."
+      },
+      {
+        "id": "Round164-hard-top-reduction-transfers-to-smooth-M2-packets",
+        "reason": "The balanced and unbalanced smooth packets have different owners and receive no estimate from this hard-TOP reduction."
+      },
+      {
+        "id": "Round164-reduction-proves-M9-or-the-quarter-target",
+        "reason": "M9-M1, all three M9-M2 parents, endpoint uniformity, M9, and an unconditional bridge remain incomplete."
+      },
+      {
+        "id": "Round164-literature-scan-changes-the-global-exponent",
+        "reason": "The scoped current-source scan found no applicable later pointwise theorem; literature comparison is not a proof-state promotion."
+      },
+      {
+        "id": "Round164-reduction-improves-a-global-exponent",
+        "reason": "No parent theorem or bridge closes, so the internal one-third theorem and the audited external Li-Yang benchmark remain unchanged."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "H4-Phi-regularity",
+        "reason": "Its accepted bounded C1 interface is used as an antecedent and remains unchanged."
+      },
+      {
+        "id": "M9-M2-top-endpoint-actual-symbol-variation",
+        "reason": "Its fixed-profile variation interface is used only as an antecedent and remains unchanged."
+      },
+      {
+        "id": "M9-M2-hard-top-truncated-divisor-energy-and-radical-control",
+        "reason": "Its coefficient-energy and exact-collision scope remain unchanged; no near-shift theorem is inferred."
+      },
+      {
+        "id": "M9-M2-hard-top-t1-character-poisson-product-collar-obstruction",
+        "reason": "Its positive rank-one collar obstruction is retained as a route comparison and is neither strengthened nor reversed."
+      },
+      {
+        "id": "M9-M2-hard-top-t1-close-opposite-prime-exchange-sector",
+        "reason": "The accepted XOR sector remains proved exactly as stated; Round 164 analyzes only its complementary residual."
+      },
+      {
+        "id": "M9-M2-hard-top-product-fibre-transform-self-return",
+        "reason": "The accepted transform self-return remains unchanged."
+      },
+      {
+        "id": "M9-M2-hard-top-radical-long-channel-exact-collision-control",
+        "reason": "The accepted long-channel and exact-collision classification remain unchanged."
+      },
+      {
+        "id": "M9-M2-hard-top-radical-frequency-common-test-source-obstruction",
+        "reason": "The accepted common-test/source obstruction remains unchanged."
+      },
+      {
+        "id": "M9-M2-hard-top-square-product-entry-sector",
+        "reason": "The accepted square-entry sector is outside the residual short-shift theorem and remains unchanged."
+      },
+      {
+        "id": "M9-M2-physical-one-count-assembly",
+        "reason": "Both hard-TOP owners and both smooth packet estimates remain incomplete."
+      },
+      {
+        "id": "M9-M2-smooth-balanced-quarter-packet-estimate",
+        "reason": "Round 164 treats no balanced smooth packet."
+      },
+      {
+        "id": "M9-M2-smooth-unbalanced-three-quarter-estimate",
+        "reason": "Round 164 treats no unbalanced smooth packet."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Hard TOP, balanced smooth, and unbalanced smooth mandatory parents remain open."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "Round 164 treats no M9-M1 owner."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "An open residual off-diagonal reduction does not prove all-owner endpoint uniformity."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain incomplete."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The bridge remains conditional on complete M9."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The strongest theorem proved internally remains exponent one third."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "The separately audited external exponent remains (3292+25sqrt(1717))/13762."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The quarter target still lacks M9-M1, all three mandatory M9-M2 parents, endpoint uniformity, M9, and an unconditional bridge."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 164 exactly classifies the complete residual sign algebra, proves a sharp unequal-mass BV dual bound, rigorously parks coefficient-uniform positive transport, and reduces the residual target without endpoint loss to one actual-coefficient length-L Fejer short-shift theorem. That theorem, the complete residual, all other few-point channels, both hard-TOP parents, every downstream theorem, and both global exponents remain open."
+  }
+}

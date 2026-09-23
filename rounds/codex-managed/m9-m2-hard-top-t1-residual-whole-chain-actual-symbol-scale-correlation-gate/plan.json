@@ -1,0 +1,56 @@
+{
+  "campaign_id": "m9-m2-hard-top-t1-residual-whole-chain-actual-symbol-scale-correlation-gate",
+  "round_index": 175,
+  "round_type": "m9_m2_hard_top_t1_residual_whole_chain_actual_symbol_scale_correlation_gate",
+  "title": "Whole-chain actual-symbol scale-correlation gate for the K26 residual",
+  "status": "complete",
+  "starting_graph_sha256": "e40c214351d06bf05212e25fffbec0f1a4808be21cb9098ba25823f0d9bbf211",
+  "manifest": "state/active_campaign.yml",
+  "strategy": "strategy/round175_m2_hard_top_t1_residual_whole_chain_actual_symbol_strategy.md",
+  "allocation": {
+    "analytical_algebraic_percent": 100,
+    "numerical_experimental_percent": 0
+  },
+  "tasks": [
+    {
+      "id": "literal_actual_symbol_scale_correlation_attack",
+      "role": "discovery",
+      "status": "completed",
+      "brief": "rounds/codex-managed/m9-m2-hard-top-t1-residual-whole-chain-actual-symbol-scale-correlation-gate/briefs/literal_actual_symbol_scale_correlation_attack.md",
+      "report": "rounds/codex-managed/m9-m2-hard-top-t1-residual-whole-chain-actual-symbol-scale-correlation-gate/reports/literal_actual_symbol_scale_correlation_attack.md"
+    },
+    {
+      "id": "blind_whole_chain_rederivation",
+      "role": "blind_rederiver",
+      "status": "completed",
+      "brief": "rounds/codex-managed/m9-m2-hard-top-t1-residual-whole-chain-actual-symbol-scale-correlation-gate/briefs/blind_whole_chain_rederivation.md",
+      "report": "rounds/codex-managed/m9-m2-hard-top-t1-residual-whole-chain-actual-symbol-scale-correlation-gate/reports/blind_whole_chain_rederivation.md"
+    },
+    {
+      "id": "actual_symbol_capacity_hostile_audit",
+      "role": "barrier_no_go",
+      "status": "completed",
+      "brief": "rounds/codex-managed/m9-m2-hard-top-t1-residual-whole-chain-actual-symbol-scale-correlation-gate/briefs/actual_symbol_capacity_hostile_audit.md",
+      "report": "rounds/codex-managed/m9-m2-hard-top-t1-residual-whole-chain-actual-symbol-scale-correlation-gate/reports/actual_symbol_capacity_hostile_audit.md"
+    }
+  ],
+  "terminal_labels": [
+    "hard_top_t1_residual_whole_chain_actual_symbol_target",
+    "strict_whole_chain_actual_symbol_sector",
+    "whole_chain_actual_symbol_capacity_or_self_return_no_go"
+  ],
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true,
+    "no_in_round_analytic_pivot": true
+  },
+  "closing_assessment": {
+    "decision": "promote_whole_chain_scale_coboundary_positive_capacity_obstruction",
+    "graph_mutation": true,
+    "terminal_label": "whole_chain_actual_symbol_capacity_or_self_return_no_go",
+    "main_result": "The exact unweighted nonzero-frequency stopped chain is Q_M^*-Q_(R_0)^*. The lower endpoint, collectively restored ordinary-zero sector, and once-only short correction are target-safe, so the frozen target is equivalent to the still-open literal Q_M^* bound and K26. Coefficient-independent scale closure has sharp L4 capacity against the L3 target; this is a route obstruction, not a target estimate.",
+    "resulting_graph_sha256": "9409651dccbbd1c69547546b245ba04c21d2a280173733ae37b693f9894c8b03",
+    "exponent_change": false
+  }
+}

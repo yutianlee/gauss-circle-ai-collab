@@ -1,0 +1,254 @@
+{
+  "starting_graph_sha256": "338060b37c19d849053078e5f6a7775c45c626a16b6f9198fafdf9bb4a62265c",
+  "reversibility": {
+    "rule": "Remove the one created obligation and every rejected-claim record introduced by this patch; remove every dependencies_added and evidence_added value; restore the next_action value and last-updated metadata recorded below. This recovers the canonical starting graph.",
+    "restore_next_action": {
+      "M9-M1-hard-top-high-radical-small-t-residual-estimate": "The large-gcd nonresonant primitive-ray sector, canonical close opposite-character XOR part of t=1, monotone and polylogarithmic-height tangent-gcd sectors, the Round-187 U=1/low-conductor/small-U/ordinary-edge packets, and now every high-packet lift with H_B times (k,U)>=Y are target-safe. Prove the exact one-sided complement U=mq>4H_B, q>H_B, m|a|_q>H_B, H_Bm<Y under one outer real part, retaining both orientations and every h,v,t,a, selector, deletion, endpoint, phase, and zero extension and gaining the full factor Y before positivity. Even complete t=1 success leaves every t>=2 small-G incidence and the large-G near-resonant complement open."
+    },
+    "restore_metadata": {
+      "M9-M1-hard-top-high-radical-small-t-residual-estimate": {
+        "last_updated_round": 188,
+        "last_updated_at": "2026-08-29T17:36:08"
+      }
+    }
+  },
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-hard-top-t1-high-h-dual-frequency-projective-reduction",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Hard-M1 t=1 high-height dual-frequency projective reduction",
+        "status": "proved_internal",
+        "statement_tex": "Fix X>=2, a nonempty literal middle or lower residual hard-M1 shell L>=2, sigma in {+1,-1}, fixed B>0, Q=H_B=floor((log(2X))^B), and a nonempty dyadic Y<h<=2Y with Y>Q. On the exact accepted Round-188 complement U=mq>4Q, q>Q, m|a|_q>Q, Qm<Y, the inherited carrier has U,m,q odd and q|U|u. Put j_q(a,v)=|a inverse(v mod q)|_q and T_Q=min((q-1)/2,floor(Qmq/Y)). The complete sector 1<=j_q(a,v)<=T_Q has total absolute size O_(B,epsilon)(L^2X^epsilon). For fixed a it uses O(uT_Q/q)<=O(Qum/Y) literal v values; O(Y) heights and O(kappa) affine sites, the exact c_(mq)(ma)=m^(-1)c_q(a) lift weight, coefficient mass O(log(2q)), and sum_(mq|u)1=tau_3(u) cancel Y and m before outer positivity. The exact complementary aggregate j_q(a,v)>T_Q remains under one outer real part over both orientations and every literal selector, deletion, endpoint, phase, affine site, terminal block, and zero extension. Its target is open. On J<=j_q(a,v)<2J a sufficient fixed-a variation input is sum_(omega,v) V(W_v) << Qm kappa u J q^(-1) X^epsilon, while the available bound is only Y kappa u J q^(-1) X^epsilon, with deficit Y/(Qm) and primitive deficit Y/Q. Odd-conductor centering has a prime slope -2 prefix of size (p-1)/2, so it supplies no uniform polylogarithmic prefix theorem; this is not literal lower mass. This node proves only the strict projective sector and exact reduction, not the fast complement, complete high-height relation, complete t=1 residual, small-t owner, any parent, bridge, theorem, or exponent.",
+        "dependencies": [
+          "M9-M1-hard-top-t1-high-h-imprimitive-lift-gcd-reduction",
+          "Divisor-bound-elementary"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "proofs/kernels/m9_m1_hard_top_t1_high_h_dual_frequency_projective_reduction.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/candidates/formalized_hard_m1_t1_high_h_dual_frequency_projective_reduction.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reports/dual_height_frequency_signed_attack.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reports/height_variation_projective_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reports/blind_dual_frequency_rederivation.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reviews/conductor_round189_report_reconciliation.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reviews/dual_frequency_normalization_projective_power_seam_review.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reviews/literal_variation_centered_kernel_scope_seam_review.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reviews/blind_post_unmask_owner_scope_seam_review.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reviews/blind_post_unmask_quantifier_post_repair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reviews/final_candidate_normalization_post_quantifier_verification.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reviews/final_candidate_literal_formalization_post_quantifier_verification.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reviews/final_kernel_candidate_consistency_review.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reviews/final_kernel_power_literal_owner_scope_review.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reviews/final_kernel_formalization_provenance_hygiene_review.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reviews/conductor_round189_adjudication.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/controls/conductor_round189_analytic_controls.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/controls/conductor_round189_wolfram_dual_frequency_check.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/controls/dual_frequency_projective_check.wls",
+            "rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/controls/conductor_round189_candidate_tex_byte_repair.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Prove the exact one-sided fast complement j_q(a,v)>min((q-1)/2,floor(H_Bmq/Y)) uniformly for every dyadic Y>H_B, retaining U=mq>4H_B, q>H_B, m|a|_q>H_B, H_Bm<Y, both orientations, all h,v,t,a, and every literal selector, deletion, endpoint, phase, affine site, and zero extension under one outer real part. Establish the fixed-a dyadic actual-coefficient variation bound sum_(omega,v) V(W_v) << H_B m kappa u J/q times X^epsilon, or a genuinely joint signed substitute with the same final ledger. Assumed bounded variation, uniform centered-kernel prefixes, positive completion energy, and selector-blind sieve opening are not substitutes."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-hard-top-high-radical-small-t-residual-estimate",
+        "dependencies_added": [
+          "M9-M1-hard-top-t1-high-h-dual-frequency-projective-reduction"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "proofs/kernels/m9_m1_hard_top_t1_high_h_dual_frequency_projective_reduction.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/candidates/formalized_hard_m1_t1_high_h_dual_frequency_projective_reduction.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reports/dual_height_frequency_signed_attack.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reports/height_variation_projective_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reports/blind_dual_frequency_rederivation.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reviews/conductor_round189_report_reconciliation.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reviews/dual_frequency_normalization_projective_power_seam_review.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reviews/literal_variation_centered_kernel_scope_seam_review.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reviews/blind_post_unmask_owner_scope_seam_review.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reviews/blind_post_unmask_quantifier_post_repair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reviews/final_candidate_normalization_post_quantifier_verification.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reviews/final_candidate_literal_formalization_post_quantifier_verification.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reviews/final_kernel_candidate_consistency_review.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reviews/final_kernel_power_literal_owner_scope_review.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reviews/final_kernel_formalization_provenance_hygiene_review.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/controls/conductor_round189_candidate_tex_byte_repair.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/reviews/conductor_round189_adjudication.md",
+            "rounds/codex-managed/m9-m1-t1-high-h-dual-height-frequency-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The large-gcd nonresonant primitive-ray sector, canonical close opposite-character XOR part of t=1, monotone and polylogarithmic-height tangent-gcd sectors, the Round-187 low Fourier packets, the Round-188 H_Bm>=Y lifts, and now every remaining lift with |a inverse(v mod q)|_q<=min((q-1)/2,floor(H_Bmq/Y)) are target-safe. Prove the exact one-sided fast complement under one outer real part by the actual fixed-a dyadic coefficient-variation bound at scale H_B m kappa u J/q, or a genuinely joint signed substitute, retaining every literal field. Even complete t=1 success leaves every t>=2 small-G incidence and the large-G near-resonant complement open."
+      }
+    ],
+    "correct_rejected": [],
+    "reject": [
+      {
+        "id": "Round189-U-over-Y-is-unique-maximal-cutoff",
+        "reason": "U/Y is the power-neutral baseline, but every predeclared fixed polylogarithmic enlargement is target-safe with its explicit polylogarithmic cost."
+      },
+      {
+        "id": "Round189-projective-cutoff-is-q-over-Y",
+        "reason": "The exact reduced scale is mq/Y=U/Y; omitting m loses the actual projective multiplicity supplied by the lift."
+      },
+      {
+        "id": "Round189-projective-map-is-not-bijective-on-live-v",
+        "reason": "Because q divides u and (u,v)=1, v is a unit modulo q and v maps to a inverse(v) bijectively on unit classes."
+      },
+      {
+        "id": "Round189-residue-class-plus-one-causes-power-loss",
+        "reason": "Each class occurs O(u/q+1)=O(u/q) times because q divides u, so no stray additive term remains."
+      },
+      {
+        "id": "Round189-lift-weight-does-not-cancel-projective-m",
+        "reason": "The exact identity c_(mq)(ma)=m^(-1)c_q(a) cancels the factor m before divisor summation."
+      },
+      {
+        "id": "Round189-slow-sector-proves-complete-Round188-complement",
+        "reason": "Only j_q(a,v)<=T_Q is paid; the exact fast complement j_q(a,v)>T_Q remains open."
+      },
+      {
+        "id": "Round189-saturated-cutoff-leaves-fast-unit-slopes",
+        "reason": "For odd q the cap (q-1)/2 contains every unit least-residue slope, so the fast complement is empty on a saturated lift."
+      },
+      {
+        "id": "Round189-geometric-height-sum-applies-to-literal-weight",
+        "reason": "The q/J geometric bound applies to a constant coefficient; the actual zero-extended endpoint sequence requires Abel variation or joint discrepancy control."
+      },
+      {
+        "id": "Round189-pointwise-bound-implies-target-height-BV",
+        "reason": "Pointwise O(kappa X^epsilon) only gives variation O(Y kappa X^epsilon), larger than the sufficient scale by Y/(Qm)."
+      },
+      {
+        "id": "Round189-arithmetic-masks-are-height-invariant",
+        "reason": "Coprimality, squarefree, selector, profile, anchor, endpoint, Fejer, phase, affine birth/death, and zero-extension fields can all jump with height."
+      },
+      {
+        "id": "Round189-centered-kernel-has-uniform-polylog-prefixes",
+        "reason": "For odd prime p the centered slope -2 prefix is exactly -(p-1)/2."
+      },
+      {
+        "id": "Round189-prime-bad-slope-is-literal-lower-mass",
+        "reason": "The survivor belongs to the full centered kernel, while the literal fast packet retains deletions, masks, endpoints, orientations, and the projective split."
+      },
+      {
+        "id": "Round189-positive-completion-or-large-sieve-gains-Y",
+        "reason": "Positive completion, Poisson, large-sieve, and alias norms return residue-bucket capacity and do not prove actual-coefficient variation."
+      },
+      {
+        "id": "Round189-strict-projective-sector-proves-complete-t1",
+        "reason": "The exact fast high-height complement remains open before the accepted t=1 connectors can close."
+      },
+      {
+        "id": "Round189-strict-projective-sector-improves-global-exponent",
+        "reason": "Every complete M1 and M2 route, endpoint uniformity, M9, both bridges, and the quarter theorem remain incomplete."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1-hard-top-t1-high-h-imprimitive-lift-gcd-reduction",
+        "reason": "The accepted Round-188 complement is used unchanged as the exact parent reduction."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-high-h-inverse-residue-conductor-reduction",
+        "reason": "The accepted Round-187 Fourier reduction remains unchanged."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-residual-fejer-tangent-gcd-reduction",
+        "reason": "The accepted finite tangent-gcd reduction and bounded-height sector are unchanged."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-comparable-factor-exchange-sector",
+        "reason": "The accepted Round-184 exchange sector and exact residual are unchanged."
+      },
+      {
+        "id": "M9-M1-hard-top-small-t-nonresonant-primitive-ray-sector",
+        "reason": "The accepted Round-183 primitive-ray sector is unchanged."
+      },
+      {
+        "id": "M9-M1-top-endpoint-signed-cone",
+        "reason": "The fast t=1 complement, all t>=2 small-G incidences, and the near-resonant complement remain open."
+      },
+      {
+        "id": "M9-M1-direct-smooth-residual-blockwise-estimate",
+        "reason": "Round 189 treats only a transformed strict hard-residual packet; the independent smooth parent remains open."
+      },
+      {
+        "id": "M9-M1-physical-one-count-assembly",
+        "reason": "Conditional assembly still requires the complete hard and smooth children."
+      },
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "reason": "The alternative GAR route is not treated."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "The complete hard small-t owner and independent smooth direct-M1 parent remain open."
+      },
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "reason": "No complete hard-TOP M2 channel is proved or changed."
+      },
+      {
+        "id": "M9-M2-smooth-balanced-quarter-packet-estimate",
+        "reason": "No balanced M2 estimate is proved."
+      },
+      {
+        "id": "M9-M2-smooth-unbalanced-three-quarter-estimate",
+        "reason": "No unbalanced M2 estimate is proved."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Complete hard TOP, BAL, and UNBAL remain open."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "A subordinate hard-M1 residual packet proves no parent-level real-X endpoint theorem."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain incomplete."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The standard bridge still requires complete M9."
+      },
+      {
+        "id": "GC-global-M1-alternative-bridge",
+        "reason": "The alternative bridge still requires complete GAR or total active M1 and all of M9-M2."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The strongest theorem proved by the internal architecture remains exponent one third."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "The accepted external benchmark remains 0.3144831759740614... ."
+      },
+      {
+        "id": "GC-target",
+        "reason": "Both lawful quarter routes retain multiple open analytic parents and connectors."
+      },
+      {
+        "id": "Divisor-bound-elementary",
+        "reason": "The elementary divisor estimate is used unchanged as a direct dependency."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 189 proves a complete Q-enlarged projective slow-frequency sector of the exact Round-188 complement by unit-class sparsity, exact 1/m lift normalization, and a tau_3 divisor ledger. It isolates the exact fast complement and the first target-scaled actual-coefficient variation relation with deficit Y/(Qm), while prime bad slopes rule out an invented uniform centered-prefix theorem. The complete high-height relation, original t=1 residual, every parent, bridge, theorem, and exponent remain open."
+  }
+}

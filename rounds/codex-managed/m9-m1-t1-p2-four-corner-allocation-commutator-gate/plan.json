@@ -1,0 +1,266 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 197,
+    "round_type": "m9_m1_t1_p2_four_corner_allocation_commutator_gate",
+    "campaign_id": "m9-m1-t1-p2-four-corner-allocation-commutator-gate",
+    "title": "Hard-M1 t=1 P2 four-corner allocation commutator gate",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "b9b95784b097b3e30bed95f418ae14e57bf5f03a4a52975beeefa8db85b7f8ae",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 99,
+      "numerical_experimental_maximum_percent": 1,
+      "planned_numerical_percent": 0,
+      "computation_policy": "Python or Mathematica may check only bounded gcd preservation, four-corner character tables, selector truth tables and finite orbit exits. Computation is diagnostic_only."
+    },
+    "target_obligations": [
+      "M9-M1-hard-top-high-radical-small-t-residual-estimate",
+      "M9-M1-hard-top-t1-residual-fejer-tangent-gcd-reduction",
+      "M9-M1-hard-top-t1-rho-large-gcd-scaled-close-sector",
+      "M9-M1-hard-top-t1-rho-large-P2-absolute-capacity-sectors",
+      "M9-M1-top-endpoint-signed-cone",
+      "M9-M1"
+    ],
+    "frozen_target": {
+      "question": "On the exact physical P2 first-failure source, do two independently valid endpoint allocation swaps form a genuine four-corner orbit with character signs (+,-,-,+), so that the actual endpoint product becomes a mixed lower-times-upper coefficient difference and the lower close leg supplies the exact D_L/L gain before positive norms; or does the first literal orbit, support, selector or zero-extension commutator retain the full unresolved capacity?",
+      "reference_formula": "Write d=g alpha and d'=g beta. Under (m,beta)=(alpha,m')=(m,m')=1 test tau_0(g alpha,m,g beta,m')=(g m,alpha,g beta,m') and tau_1(g alpha,m,g beta,m')=(g alpha,m,g m',beta). On chi_4(alpha m)=chi_4(beta m')=-1 the formal orbit sum is F(g alpha,g beta)-F(g m,g beta)-F(g alpha,g m')+F(g m,g m'), equal to [lambda_1(g beta)-lambda_1(g m')] conjugate([lambda_0(g alpha)-lambda_0(g m)]). The candidate power is (D_L/L)(D_L L^2)=D_L^2 L<=L^2.",
+      "quantities": [
+        "Use the complete physical source N=dm, N+r=d'm', d,d' odd, 0<r<R_0 and r even, with literal endpoint coefficients, character product, Fejer factor, radical phase and zero extensions.",
+        "Impose P2=1_(|d-gm|<=D_L)1_(|d'-gm'|>D_L) before spectral operations; retain the exact Round-195 open packet complement.",
+        "Use an independent swap only where every recomputed gcd equals g and price every missing corner or literal predicate exit.",
+        "The rectangular sign sector has chi_4(alpha m)=chi_4(beta m')=-1 and hence r divisible by four; it is distinct from the Round-193 r=2 mod 4 simultaneous reversal.",
+        "Only the actual endpoint mixed difference may provide D_L/L. Normalized BV, selectors, floors, stars, profile branches, masks, cones, source orientation, cells, crossings, births, deaths and zero extensions remain explicit.",
+        "Even success leaves the exact complement, P1, other original-t incidences, all owners and parents, endpoint uniformity, M9, both bridges, the quarter theorem and every exponent separate."
+      ]
+    },
+    "completion_criteria": [
+      "Reconstruct the exact physical P2 summand before spectral manipulation.",
+      "Prove or refute the four recomputed-gcd identities, commutation and orbit closure with exact cross-coprimality hypotheses.",
+      "Derive the four-corner character table and the r mod 4 split.",
+      "Derive the actual mixed endpoint difference and every literal product-rule commutator.",
+      "Prove the common-cell D_L/L gain using only certified smooth factors and price normalized BV and literal faces by orbit-closed collar counts.",
+      "Prove the full P2 target, a target-safe strict sector with exact complement and outer O(L^2 X^epsilon) ledger, or the first rigorous four-corner self-return no-go.",
+      "Restore every power and hide no positive power in X^epsilon.",
+      "Test single-swap, simultaneous-swap-only, unsigned, character-erased, phase-conjugated, arbitrary-coefficient, missing-corner, mask-deleted and zero-extension shadows.",
+      "Receive a fresh statement-only derivation and complete orbit, coefficient, power, scope and exponent reviews before promotion.",
+      "Apply no graph change without a valid State Patch, reverse/replay, protected-scope audits and a declared terminal label; do not pivot in-round."
+    ],
+    "controls": [
+      "exact_physical_even_shift_source",
+      "exact_round195_open_P2_region",
+      "physical_mask_before_spectral_operations",
+      "four_corner_recomputed_gcd",
+      "cross_coprimality_orbit_closure",
+      "commuting_independent_allocation_swaps",
+      "four_corner_character_table",
+      "r_mod_four_sign_split",
+      "actual_endpoint_mixed_difference",
+      "lower_close_D_L_over_L_gain",
+      "normalized_BV_and_literal_face_collars",
+      "residual_selector_truth_table",
+      "opposing_source_and_cone_exits",
+      "squarefree_coprimality_divisibility",
+      "complete_four_corner_zero_extension",
+      "both_T_branches_if_core_used",
+      "complete_anchor_recombination_if_core_used",
+      "carry_birth_death_mask_commutators",
+      "one_outer_real_part",
+      "complete_outer_power_ledger",
+      "no_arbitrary_coefficient_replacement",
+      "no_simultaneous_swap_substitution",
+      "unsigned_character_erased_phase_conjugated_controls",
+      "diagnostic_only",
+      "original_t1_only_downstream_scope",
+      "no_in_round_owner_pivot",
+      "exponent_quarantine"
+    ],
+    "exit_labels": [
+      "hard_m1_t1_p2_four_corner_remainder_target",
+      "strict_p2_four_corner_allocation_commutator_sector",
+      "p2_four_corner_orbit_boundary_self_return_no_go"
+    ],
+    "tasks": [
+      {
+        "id": "literal_four_corner_allocation_commutator_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "completed",
+        "target": "Reconstruct the exact physical P2 summand, build the two independent allocation swaps and four-corner orbit, derive the alternating character rectangle and actual mixed endpoint difference, and prove the D_L/L target ledger with every literal boundary priced or isolate the first exact self-return.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "state/failure_ledger.md",
+          "strategy/round197_m1_t1_p2_four_corner_allocation_commutator_strategy.md",
+          "proofs/kernels/m9_m1_hard_top_t1_residual_fejer_tangent_gcd_reduction.md",
+          "proofs/kernels/m9_m1_hard_top_t1_rho_large_gcd_scaled_close_sector.md",
+          "proofs/kernels/m9_m1_hard_top_t1_p2_absolute_capacity_sectors.md",
+          "proofs/kernels/m9_m1_hard_top_t1_p2_on_shell_carrier_normalization_self_return.md",
+          "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reports/literal_p2_determinant_fibre_vector_attack.md",
+          "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/conductor_round195_adjudication.md",
+          "rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reviews/conductor_round193_report_reconciliation.md"
+        ],
+        "required_controls": [
+          "exact_physical_even_shift_source",
+          "physical_mask_before_spectral_operations",
+          "four_corner_recomputed_gcd",
+          "cross_coprimality_orbit_closure",
+          "four_corner_character_table",
+          "actual_endpoint_mixed_difference",
+          "lower_close_D_L_over_L_gain",
+          "normalized_BV_and_literal_face_collars",
+          "residual_selector_truth_table",
+          "opposing_source_and_cone_exits",
+          "complete_four_corner_zero_extension",
+          "complete_outer_power_ledger",
+          "no_arbitrary_coefficient_replacement",
+          "original_t1_only_downstream_scope",
+          "exponent_quarantine"
+        ],
+        "required_output": [
+          "A seven-section analytical report satisfying the repository report contract.",
+          "A full target, strict-sector-plus-complement theorem, or first rigorous four-corner self-return with all coefficients and powers exposed.",
+          "Write only the assigned report and any named bounded diagnostic; make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reports/literal_four_corner_allocation_commutator_attack.md"
+      },
+      {
+        "id": "four_corner_orbit_power_hostile_audit",
+        "role": "barrier_no_go",
+        "access_mode": "selected_context",
+        "status": "completed",
+        "target": "Hostilely audit the independent swaps, recomputed gcds, character table, orbit closure, source and cone preservation, selector truth tables, mixed coefficient factorization, BV collars and D_L/L power ledger; prove the strongest repair or identify the first full-capacity boundary.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "state/failure_ledger.md",
+          "strategy/round197_m1_t1_p2_four_corner_allocation_commutator_strategy.md",
+          "proofs/kernels/m9_m1_hard_top_t1_residual_fejer_tangent_gcd_reduction.md",
+          "proofs/kernels/m9_m1_hard_top_t1_rho_large_gcd_scaled_close_sector.md",
+          "proofs/kernels/m9_m1_hard_top_t1_p2_absolute_capacity_sectors.md",
+          "proofs/kernels/m9_m1_hard_top_t1_p2_on_shell_carrier_normalization_self_return.md",
+          "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reports/p2_gram_diagonal_collision_hostile_audit.md",
+          "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/literal_gram_nogo_owner_scope_seam_review.md",
+          "rounds/codex-managed/m9-m1-t1-core-gcd-scaled-orientation-gate/reviews/conductor_round193_adjudication.md"
+        ],
+        "required_controls": [
+          "exact_physical_even_shift_source",
+          "four_corner_recomputed_gcd",
+          "cross_coprimality_orbit_closure",
+          "commuting_independent_allocation_swaps",
+          "four_corner_character_table",
+          "r_mod_four_sign_split",
+          "actual_endpoint_mixed_difference",
+          "lower_close_D_L_over_L_gain",
+          "normalized_BV_and_literal_face_collars",
+          "residual_selector_truth_table",
+          "opposing_source_and_cone_exits",
+          "complete_four_corner_zero_extension",
+          "complete_outer_power_ledger",
+          "no_arbitrary_coefficient_replacement",
+          "no_simultaneous_swap_substitution",
+          "unsigned_character_erased_phase_conjugated_controls",
+          "exponent_quarantine"
+        ],
+        "required_output": [
+          "A seven-section hostile analytical report satisfying the repository report contract.",
+          "An exact audit or repair/no-go naming the first invalid step, surviving commutators, false controls and restored powers.",
+          "Write only the assigned report and any named bounded diagnostic; make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reports/four_corner_orbit_power_hostile_audit.md"
+      },
+      {
+        "id": "blind_four_corner_commutator_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "completed",
+        "target": "From the isolated statement only, independently derive the four-corner gcd conditions, sign table, mixed endpoint difference, D_L/L power ledger and first exact support or boundary obstruction; prove a full result, strict-sector repair or no-go.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "state/active_campaign.yml",
+          "all strategy files",
+          "all source cards and web-search results",
+          "all prior round reports, reviews, controls, candidates, kernels and synthesis",
+          "all Round-197 sibling reports, reviews, controls and conductor analysis"
+        ],
+        "required_controls": [
+          "exact_physical_even_shift_source",
+          "physical_mask_before_spectral_operations",
+          "four_corner_recomputed_gcd",
+          "cross_coprimality_orbit_closure",
+          "commuting_independent_allocation_swaps",
+          "four_corner_character_table",
+          "r_mod_four_sign_split",
+          "actual_endpoint_mixed_difference",
+          "lower_close_D_L_over_L_gain",
+          "normalized_BV_and_literal_face_collars",
+          "complete_four_corner_zero_extension",
+          "complete_outer_power_ledger",
+          "no_arbitrary_coefficient_replacement",
+          "no_simultaneous_swap_substitution",
+          "unsigned_character_erased_phase_conjugated_controls",
+          "diagnostic_only",
+          "original_t1_only_downstream_scope",
+          "exponent_quarantine"
+        ],
+        "required_output": [
+          "A seven-section statement-only report satisfying the repository report contract.",
+          "An independent exact derivation or repair/no-go with every gcd, sign, mixed-difference, support and power condition explicit.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-t1-p2-four-corner-allocation-commutator-gate/reports/blind_four_corner_commutator_rederivation.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "four_corner_gcd_orbit_and_character_algebra",
+        "requirement": "Verify all four recomputed gcds, commutation, defect invariance, r mod 4 split and the exact (+,-,-,+) character table."
+      },
+      {
+        "id": "literal_mixed_coefficient_and_BV_collars",
+        "requirement": "Verify the actual mixed-difference factorization, common-cell C1 gain, normalized BV increments, selector truth tables and every literal face or missing-corner term."
+      },
+      {
+        "id": "physical_source_operator_and_zero_extension",
+        "requirement": "Verify source, cone, shell, arithmetic, endpoint, conjugation and zero-extension closure at the physical Fejer level, or restore every later-core field."
+      },
+      {
+        "id": "outer_power_false_controls_and_scope",
+        "requirement": "Verify the D_L/L times D_L L^2 power, orbit multiplicities, false controls, exact complement, owner boundary and exponent quarantine."
+      },
+      {
+        "id": "blind_post_unmask_consistency",
+        "requirement": "Reconcile the statement-only derivation with the literal operator without importing claimant conclusions or enlarging scope."
+      }
+    ],
+    "scheduled_review": "Round 198 is mandatory immediately after Round 197 and must perform the full-proof strategy and current-primary-literature checkpoint.",
+    "closing_assessment": {
+      "decision": "promote_P2_common_cell_allocation_commutator_sector_and_record_four_corner_no_go",
+      "graph_mutation": true,
+      "terminal_label": "p2_four_corner_orbit_boundary_self_return_no_go",
+      "main_result": "Round 197 proves the exact physical P_cc common-cell lower-allocation-swap sector at outer O(L^2 X^epsilon). The full cross-coprime four-corner rectangle forces physical kappa=1, the exact open complement is the literal-boundary, sign-failure and gcd-failure union inside the Round-195 open packets, and an aligned sharp face retains D_L L^2 capacity. Complete P2, P1, original t=1, every owner and parent, M9, both bridges, the target and all exponent records remain open or unchanged.",
+      "resulting_graph_sha256": "8aea2ab5b088a0b29a434347ffc4509c70e79f53e450814920e3c83165a1ab69",
+      "patch_effect": "1_create_1_owner_update_0_correct_22_reject_28_no_change_plus_postapply_evidence_bucket_hygiene_correction",
+      "exponent_change": false
+    },
+    "next_round": 198
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "8aea2ab5b088a0b29a434347ffc4509c70e79f53e450814920e3c83165a1ab69",
+    "generated_at": "2026-08-30T16:21:04+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

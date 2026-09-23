@@ -1,0 +1,168 @@
+{
+  "proof_obligations": {
+    "create": [],
+    "update": [
+      {
+        "id": "M9-M2-hard-top-t1-residual-fejer-parity-gcd-scale-reduction",
+        "evidence_added": {
+          "inconclusive": [
+            "strategy/conductor_0826_full_proof_strategy.md",
+            "rounds/codex-managed/full-proof-round164-166-strategy-literature-review/reports/full_graph_frontier_strategy_audit.md",
+            "rounds/codex-managed/full-proof-round164-166-strategy-literature-review/reports/current_primary_literature_audit.md",
+            "rounds/codex-managed/full-proof-round164-166-strategy-literature-review/reports/blind_frontier_priority_rederivation.md",
+            "rounds/codex-managed/full-proof-round164-166-strategy-literature-review/reviews/dependency_power_selection_seam_review.md",
+            "rounds/codex-managed/full-proof-round164-166-strategy-literature-review/reviews/source_hypotheses_currency_interface_review.md",
+            "rounds/codex-managed/full-proof-round164-166-strategy-literature-review/reviews/blind_post_unmask_frontier_selection_review.md",
+            "rounds/codex-managed/full-proof-round164-166-strategy-literature-review/reviews/conductor_round166_adjudication.md",
+            "rounds/codex-managed/full-proof-round164-166-strategy-literature-review/reviews/state_patch_scope_round166.md"
+          ]
+        },
+        "next_action": "Round 166 retains the minimal-window estimate (165.K17a) as the sole Round-167 inequality. After the exact signed divisor opening, test one joint variable-determinant source-to-literal-interface for d'm'-dm=r, preserving exact multiplicity, the actual residual selector, chi_4 twist, one outer real part, every endpoint, and the full L^2X^epsilon target. Grimmelt--Merikoski Theorem 10.1 is only a candidate determinant-skeleton model: stop at the first selector-class, C^7 phase-seminorm, variable-r aggregation, orbit-correlation, main-term, boundary, or restored-power failure. Do not pivot within Round 167 to (165.K26) or another owner."
+      }
+    ],
+    "correct_rejected": [],
+    "reject": [
+      {
+        "id": "Round166-frontier-ranking-proves-K17a",
+        "reason": "Selecting an inequality for research is not evidence that the inequality is true."
+      },
+      {
+        "id": "Round166-Grimmelt-Merikoski-directly-proves-K17a",
+        "reason": "Only the determinant skeleton and preliminary two-adic/gcd/character map pass; no admissible selector-dependent coefficient or smooth-weight realization is proved."
+      },
+      {
+        "id": "Round166-determinant-map-implies-source-applicability",
+        "reason": "An exact determinant identity does not verify automorphy, smoothness, orbit-correlation, main-term, boundary, or completion hypotheses."
+      },
+      {
+        "id": "Round166-GM-phase-cost-is-uniformly-J-on-all-short-shifts",
+        "reason": "The exact demand is delta^(-1) at least 1+Jr/L; it reaches order J only on the top short-shift stratum r asymp L."
+      },
+      {
+        "id": "Round166-GM-hidden-delta-loss-is-target-safe",
+        "reason": "The source has an unspecified polynomial delta loss, so target-safety is unproved until its exponent and every partition, norm, and completion factor are restored."
+      },
+      {
+        "id": "Round166-fixed-r-source-bounds-preserve-the-Fejer-real-part",
+        "reason": "A fixed-r specialization followed by triangle inequality replaces one signed aggregate by a sum of absolute errors and can lose the required factor L."
+      },
+      {
+        "id": "Round166-GM-Part-I-solves-the-oscillatory-selector",
+        "reason": "Part I is non-oscillatory; its general theorem leaves two positive selector/phase autocorrelations and its determinant corollary reimposes invariance and smoothness."
+      },
+      {
+        "id": "Round166-phase-aligned-site-array-is-a-literal-K17a-counterexample",
+        "reason": "A product-site array has no canonical opposing-displacement or low-gcd incidence filter; it is a control only after those filters have been erased unless an explicit incidence lift is constructed."
+      },
+      {
+        "id": "Round166-fixed-shift-Cauchy-bounds-the-filtered-K17a-sector",
+        "reason": "The signed post-opening sector is not obtained by a monotone deletion from the unpartitioned coefficient correlation; its L^3 capacity comes from the direct opened-incidence ledger."
+      },
+      {
+        "id": "Round166-K17a-closes-hard-TOP",
+        "reason": "K17a would close only the complete residual scalar; other small-t channels and near collars remain before hard TOP."
+      },
+      {
+        "id": "Round166-hard-TOP-progress-transfers-to-BAL-or-UNBAL",
+        "reason": "Hard TOP, BAL, and UNBAL are independent M2 parents with different literal kernels."
+      },
+      {
+        "id": "Round166-GAR-proves-blockwise-M9-M1",
+        "reason": "GAR controls total active M1 only through the alternative bridge and does not prove either direct blockwise M1 parent."
+      },
+      {
+        "id": "Round166-endpoint-uniformity-is-an-independent-cancellation-theorem",
+        "reason": "Endpoint uniformity is an assembly seam whose blockers are the analytic parents; it cannot supply their missing savings."
+      },
+      {
+        "id": "Round166-average-or-spectral-mean-square-theorems-prove-a-fixed-X-signed-correlation",
+        "reason": "Real-centre averages, spectral square averages, and spatial Lp estimates do not directly imply the fixed-centre unsquared signed Fejer aggregate."
+      },
+      {
+        "id": "Round166-current-literature-improves-the-certified-global-exponent",
+        "reason": "The dated primary-source search found no later indexed claimed pointwise improvement applicable to the classical unrestricted discrepancy."
+      },
+      {
+        "id": "Round166-strategy-review-proves-the-quarter-target",
+        "reason": "All M2 parents, a complete M1 route, endpoint assembly, M9 or the alternative bridge, and the quarter theorem remain incomplete."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "GC-target",
+        "reason": "Both quarter-level proof routes remain conditional on open analytic parents."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The standard bridge remains derived only under complete M9."
+      },
+      {
+        "id": "GC-global-M1-alternative-bridge",
+        "reason": "The alternative bridge still requires complete GAR and all of M9-M2."
+      },
+      {
+        "id": "M9",
+        "reason": "Both direct M1 parents, all three M2 parents, and endpoint uniformity remain open on the standard route."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "No parent-level uniform estimate is proved by a strategy review."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "Neither direct M1 parent is advanced."
+      },
+      {
+        "id": "M9-M1-top-endpoint-signed-cone",
+        "reason": "Round 166 proves no hard direct-M1 cancellation."
+      },
+      {
+        "id": "M9-M1-direct-smooth-residual-blockwise-estimate",
+        "reason": "Round 166 proves no smooth direct-M1 cancellation."
+      },
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "reason": "GAR remains open on its lower-radial signed estimate."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Hard TOP, BAL, and UNBAL remain open."
+      },
+      {
+        "id": "M9-M2-physical-one-count-assembly",
+        "reason": "Its proved conditional assembly is unchanged and all three analytic children remain open."
+      },
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "reason": "The complete residual and the other hard-TOP channels remain open."
+      },
+      {
+        "id": "M9-M2-top-endpoint-density-discrepancy-energy",
+        "reason": "No complete hard-TOP energy theorem is proved."
+      },
+      {
+        "id": "M9-M2-smooth-balanced-quarter-packet-estimate",
+        "reason": "The balanced signed packet remains open."
+      },
+      {
+        "id": "M9-M2-smooth-unbalanced-three-quarter-estimate",
+        "reason": "The unbalanced signed packet remains open."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The strongest theorem proved by the internal architecture remains exponent one third."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "The repaired Li-Yang exponent remains the dated source-audited external benchmark."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 4,
+    "idea_quality_score": 9,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 166 proves no new target estimate, but reconstructs both complete proof trees, corrects the frontier power and scope ledger, audits current primary sources, and identifies an exact determinant-equation source-to-interface gate with a falsifiable first-failure order. K17a, every parent, and both global exponents remain unchanged."
+  }
+}

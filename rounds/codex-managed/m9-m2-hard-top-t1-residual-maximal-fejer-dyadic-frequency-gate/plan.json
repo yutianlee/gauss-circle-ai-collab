@@ -1,0 +1,250 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 172,
+    "round_type": "m9_m2_hard_top_t1_residual_maximal_fejer_dyadic_frequency_gate",
+    "campaign_id": "m9-m2-hard-top-t1-residual-maximal-fejer-dyadic-frequency-gate",
+    "title": "Hard-TOP t=1 residual maximal parity-Fejer dyadic-frequency gate",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "c98f95b6b3500d0f48365af338e543f9a0f251b22062f3898df5f448d6b54853",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "planned_numerical_percent": 0,
+      "literature_policy": "No new survey is scheduled in Round 172. A named theorem may be used only after its exact hypotheses, endpoint conventions, and restored powers are audited. The mandatory full-proof strategy and current-literature review is due after Round 173 closes."
+    },
+    "target_obligations": [
+      "M9-M2-hard-top-t1-residual-transport-fejer-energy-reduction",
+      "M9-M2-hard-top-t1-residual-fejer-parity-gcd-scale-reduction",
+      "M9-M2-hard-top-t1-character-poisson-product-collar-obstruction",
+      "M9-M2-hard-top-t1-joint-functional-equation-double-poisson-self-return",
+      "M9-M2-top-endpoint-signed-cone",
+      "M9-M2-top-endpoint-density-discrepancy-energy",
+      "M9-M2-hard-top-truncated-divisor-energy-and-radical-control",
+      "M9-M2-physical-one-count-assembly",
+      "M9-M2",
+      "M9",
+      "GC-target"
+    ],
+    "frozen_target": {
+      "question": "Can the complete maximal-scale even medium/long residual Fejer aggregate (165.K26) be bounded by L^3X^epsilon through exact parity-Fejer dyadic bandpasses and a common-frequency finite character-Poisson transform before every positive dual-mode sum, or what is the first exact parity, endpoint, transform, bandpass, restored-power, collar-return, or owner-scope no-go?",
+      "reference_formula": "For z_N=c_N^rem e(J sqrt(N)), D_L=sum_N|c_N^rem|^2<<_epsilon L^2X^epsilon, R_0=ceil(L), and M=M_L asymp L^2, prove T_26=Re sum_(R_0<=r<M, 2|r)(1-r/M) sum_N z_(N+r)conj(z_N)<<_epsilon L^3X^epsilon. With F_R(theta)=R^(-1)|sum_(0<=j<R)e(j theta)|^2 and K_R^(2)=(F_R(theta)+F_R(theta+1/2))/2, E_R^(2)=int_0^1|Z(theta)|^2K_R^(2)(theta)dtheta. Along R_(j+1)=min(2R_j,M), T_26 is one half of the sum of adjacent-scale E^(2) increments minus a target-safe short-shift correction.",
+      "quantities": [
+        "J=sqrt(X), 1<<L<<H<=J^(1/2), R_0=ceil(L), and a containing interval has M_L asymp L^2 sites.",
+        "The coefficient c_N^rem is the complete literal residual coefficient with every selector, no-pair row, squarefree mask, chi_4 factor, complementary parity branch, profile, floor, star, crossing, endpoint, point value, and zero-extension jump retained.",
+        "There is one outer real part; no shiftwise, rowwise, Mobius-wise, Poisson-mode-wise, or product-cell-wise modulus is licensed before the factor-L saving.",
+        "The positive coefficient-uniform capacity is L^4X^epsilon and the target is L^3X^epsilon, so the missing saving is exactly one factor L at the top scale.",
+        "The even shifts below R_0 are paid once within L^3X^epsilon and cannot fund a second positive loss.",
+        "The exact doubling increment has zero diagonal, a triangular-tent correlation kernel, and an equivalent block-energy minus Haar-detail identity; the last non-doubling link uses the exact Fejer difference.",
+        "K26 closes only the complete residual t=1 scalar through accepted connectors; all other hard-TOP channels and every downstream parent remain separate."
+      ]
+    },
+    "completion_criteria": [
+      "Prove the exact even-parity Fejer-frequency identity, integer doubling-chain telescoping, target-safe short-shift correction, triangular-tent kernel, and Haar-detail formula with both parity peaks and all endpoint starts.",
+      "Open the literal residual coefficient with multiplicity one and derive any finite one-sided chi_4-Poisson transform uniformly in the common Fejer frequency, including original, zero, boundary, and transition modes.",
+      "Form every adjacent-scale bandpass and the common-frequency integral before any positive norm over physical shifts, divisor rows, Mobius parameters, transformed modes, or product-collar cells.",
+      "Price transformed diagonal, zero modes, endpoints, transitions, and the signed dual off-diagonal by L^3X^epsilon, or isolate the first exact restored L^4 term or coefficientwise collar self-return.",
+      "Retain selected and no-pair rows, squarefree and coprimality holes, both complementary parity branches, profiles, floors, stars, crossings, endpoints, point values, and zero extension throughout.",
+      "Pass dechirped-array, one-site, no-pair positive-sign, global-Parseval, both-Fejer-peak, short-budget, collar-restoration, statement-only, and owner-scope controls.",
+      "Prove K26, an owner-complete strict spectral/dyadic sector with target-safe complement, or the smallest exact dyadic-character-Poisson route no-go.",
+      "Close under exactly one campaign terminal label and do not pivot inside the round."
+    ],
+    "controls": [
+      "literal_residual_coefficient_domain",
+      "one_outer_real_part",
+      "even_parity_fejer_projection",
+      "integer_doubling_chain_and_final_link",
+      "short_shift_correction_once",
+      "triangular_tent_zero_diagonal",
+      "haar_detail_identity_scope",
+      "finite_character_poisson_common_frequency",
+      "original_zero_boundary_transition_modes",
+      "dual_off_diagonal_before_positive_sum",
+      "selected_and_no_pair_rows",
+      "squarefree_coprimality_and_two_adic_branches",
+      "profile_endpoint_and_zero_extension",
+      "dechirped_phase_aligned_array",
+      "one_site_normalization",
+      "no_pair_positive_character_control",
+      "global_parseval_RD_L_no_go",
+      "collar_self_return_and_restored_power",
+      "factor_L_before_positive_norm",
+      "residual_only_owner_quarantine",
+      "no_in_round_pivot",
+      "no_status_or_exponent_overpromotion"
+    ],
+    "tasks": [
+      {
+        "id": "literal_maximal_fejer_dyadic_frequency_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "completed",
+        "target": "Attack the complete literal K26 aggregate through exact adjacent-scale parity-Fejer bandpasses. Derive the full finite character-Poisson formula on the common frequency before positive dual-mode summation and prove every dyadic increment at L^3X^epsilon, an owner-complete strict sector, or the first exact transform, endpoint, power, or collar-return no-go.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round172_m2_hard_top_t1_residual_maximal_fejer_dyadic_strategy.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-residual-maximal-fejer-dyadic-frequency-gate/barrier_packet.md",
+          "proofs/kernels/m9_m2_hard_top_t1_residual_transport_fejer_energy_reduction.md",
+          "proofs/kernels/m9_m2_hard_top_t1_residual_fejer_parity_gcd_scale_reduction.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/candidates/conductor_round165_variable_scale_fejer_bypass.md",
+          "proofs/kernels/m9_m2_hard_top_t1_character_poisson_product_collar_obstruction.md",
+          "proofs/kernels/m9_m2_hard_top_t1_joint_functional_equation_double_poisson_self_return.md",
+          "rounds/codex-managed/full-proof-round167-169-strategy-literature-review/reviews/conductor_round170_adjudication.md"
+        ],
+        "required_controls": [
+          "literal_residual_coefficient_domain",
+          "one_outer_real_part",
+          "even_parity_fejer_projection",
+          "integer_doubling_chain_and_final_link",
+          "short_shift_correction_once",
+          "triangular_tent_zero_diagonal",
+          "haar_detail_identity_scope",
+          "finite_character_poisson_common_frequency",
+          "original_zero_boundary_transition_modes",
+          "dual_off_diagonal_before_positive_sum",
+          "selected_and_no_pair_rows",
+          "squarefree_coprimality_and_two_adic_branches",
+          "profile_endpoint_and_zero_extension",
+          "factor_L_before_positive_norm",
+          "collar_self_return_and_restored_power",
+          "residual_only_owner_quarantine",
+          "no_in_round_pivot",
+          "no_status_or_exponent_overpromotion"
+        ],
+        "required_output": [
+          "A seven-section analytic report satisfying the repository report contract.",
+          "Exact parity, dyadic, tent, Haar, finite-transform, endpoint, zero-mode, dual-mode, and restored-power ledgers.",
+          "A proof, owner-complete strict sector, or first exact route-specific no-go with recommended state effect.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-hard-top-t1-residual-maximal-fejer-dyadic-frequency-gate/reports/literal_maximal_fejer_dyadic_frequency_attack.md"
+      },
+      {
+        "id": "blind_maximal_fejer_dyadic_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "completed",
+        "target": "From the statement-only packet, independently derive or falsify the exact parity-Fejer telescoping, tent, Haar, endpoint, short-budget, and factor-L gates, and state the first actual-coefficient theorem needed for a common-frequency finite character transform.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-residual-maximal-fejer-dyadic-frequency-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "state/active_campaign.yml",
+          "all strategy files",
+          "all prior-round artifacts",
+          "the Round-172 barrier packet",
+          "all Round-172 sibling reports, reviews, candidates, and conductor artifacts",
+          "all source audits and web results"
+        ],
+        "required_controls": [
+          "literal_residual_coefficient_domain",
+          "one_outer_real_part",
+          "even_parity_fejer_projection",
+          "integer_doubling_chain_and_final_link",
+          "short_shift_correction_once",
+          "triangular_tent_zero_diagonal",
+          "haar_detail_identity_scope",
+          "dechirped_phase_aligned_array",
+          "one_site_normalization",
+          "global_parseval_RD_L_no_go",
+          "factor_L_before_positive_norm",
+          "residual_only_owner_quarantine",
+          "no_status_or_exponent_overpromotion"
+        ],
+        "required_output": [
+          "A seven-section statement-only report satisfying the repository report contract.",
+          "An independent exact identity, endpoint, false-control, and power derivation.",
+          "A proof or the first rigorously isolated missing actual-coefficient dyadic estimate.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-hard-top-t1-residual-maximal-fejer-dyadic-frequency-gate/reports/blind_maximal_fejer_dyadic_rederivation.md"
+      },
+      {
+        "id": "maximal_fejer_transform_endpoint_hostile_audit",
+        "role": "barrier_no_go",
+        "access_mode": "selected_context",
+        "status": "completed",
+        "target": "Hostilely audit the parity-Fejer dyadic and common-frequency character-Poisson experiment. Recompute endpoint and non-doubling identities, literal multiplicities, zero and boundary modes, both Fejer peaks, dechirped and no-pair controls, transformed positive capacity, collar self-return, and the exact point at which L^4 can or cannot fall to L^3.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round172_m2_hard_top_t1_residual_maximal_fejer_dyadic_strategy.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-residual-maximal-fejer-dyadic-frequency-gate/barrier_packet.md",
+          "proofs/kernels/m9_m2_hard_top_t1_residual_fejer_parity_gcd_scale_reduction.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reports/short_shift_arithmetic_hostile_audit.md",
+          "proofs/kernels/m9_m2_hard_top_t1_character_poisson_product_collar_obstruction.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-joint-functional-equation-spectral-gate/reports/signed_spectral_reciprocity_source_hostile_audit.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-joint-functional-equation-spectral-gate/reviews/conductor_round169_adjudication.md",
+          "rounds/codex-managed/full-proof-round167-169-strategy-literature-review/reviews/dependency_power_selection_seam_review.md"
+        ],
+        "required_controls": [
+          "literal_residual_coefficient_domain",
+          "one_outer_real_part",
+          "even_parity_fejer_projection",
+          "integer_doubling_chain_and_final_link",
+          "short_shift_correction_once",
+          "triangular_tent_zero_diagonal",
+          "haar_detail_identity_scope",
+          "finite_character_poisson_common_frequency",
+          "original_zero_boundary_transition_modes",
+          "dual_off_diagonal_before_positive_sum",
+          "selected_and_no_pair_rows",
+          "squarefree_coprimality_and_two_adic_branches",
+          "profile_endpoint_and_zero_extension",
+          "dechirped_phase_aligned_array",
+          "one_site_normalization",
+          "no_pair_positive_character_control",
+          "global_parseval_RD_L_no_go",
+          "collar_self_return_and_restored_power",
+          "factor_L_before_positive_norm",
+          "residual_only_owner_quarantine",
+          "no_in_round_pivot",
+          "no_status_or_exponent_overpromotion"
+        ],
+        "required_output": [
+          "A seven-section hostile analytic report satisfying the repository report contract.",
+          "Exact pass/fail rulings for parity, endpoint, transform, zero-mode, dual-mode, false-control, collar, power, and owner gates.",
+          "The first rigorous route-specific no-go or the exact conditions a proof must meet.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-hard-top-t1-residual-maximal-fejer-dyadic-frequency-gate/reports/maximal_fejer_transform_endpoint_hostile_audit.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "parity_dyadic_tent_haar_and_endpoints",
+        "requirement": "Verify both Fejer peaks, the all-integer identity, telescoping and short correction, exact tent, doubling-only Haar formula, final non-doubling link, and every zero-extension endpoint."
+      },
+      {
+        "id": "literal_character_transform_and_modes",
+        "requirement": "Verify multiplicity, selectors, squarefree and coprimality holes, both parity branches, finite character Poisson, and all original, zero, boundary, transition, and dual modes on the common frequency."
+      },
+      {
+        "id": "bandpass_restored_power_and_false_controls",
+        "requirement": "Verify the one-real-part placement, dechirped and no-pair controls, transformed diagonal and off-diagonal, collar self-return, and a factor-L saving before positive norms."
+      },
+      {
+        "id": "residual_connector_and_downstream_scope",
+        "requirement": "Verify that only K26 and the complete residual t=1 scalar can change and that every other channel, parent, bridge, theorem, and exponent remains separate."
+      }
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "c98f95b6b3500d0f48365af338e543f9a0f251b22062f3898df5f448d6b54853",
+    "generated_at": "2026-08-26T13:02:09.803542+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

@@ -1,0 +1,261 @@
+{
+  "starting_graph_sha256": "75b44fe68f9c6e094d2ab6e643be3c0309320ef84e73ca22d692698440eeed13",
+  "reversibility": {
+    "rule": "Remove the one created obligation and every rejected-claim record introduced by this patch; remove every dependencies_added and evidence_added value; restore the next_action value and last-updated metadata recorded below. This recovers the canonical starting graph.",
+    "restore_next_action": {
+      "M9-M1-hard-top-high-radical-small-t-residual-estimate": "Rounds 187-191 prove the low Fourier packets, every H_Bm>=Y lift, the projectively slow sector, the signed-inverse-small sector of the fast packet, and the exact outer-terminal and isolated Fejer projections. Prove the remaining one-sided fast packet with |rho_(mq)(v)|>min(((mq)-1)/2,floor(H_B m (mq)/Y)) under one outer real part, retaining outer coprimality flips, affine births/deaths, carries, both endpoint changes, every literal cell/crossing field, phases, and zero extensions. At fixed admissible kappa,u,m,q,a,J, gain the exact factor Y/(H_Bm) and prove the complete signed remainder at scale H_B m kappa u X^epsilon before positive norms. Even complete t=1 success leaves every t>=2 small-G incidence and the large-G near-resonant complement open."
+    },
+    "restore_metadata": {
+      "M9-M1-hard-top-high-radical-small-t-residual-estimate": {
+        "last_updated_round": 191,
+        "last_updated_at": "2026-08-29T22:59:10"
+      }
+    }
+  },
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-hard-top-t1-rho-large-farey-covector-reduction",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Hard-M1 t=1 rho-large Farey-covector reduction",
+        "status": "proved_internal",
+        "statement_tex": "Fix the exact accepted Round-191 hard-M1 t=1 rho-large remainder with Q=H_B, U=mq>4Q, q>Q, m|a|_q>Q, Qm<Y, the inherited fast dyadic projective band, U|u, and every literal field under one outer real part. For v0=[v]_U let rho v0-beta U=1 be the signed least-inverse identity and put T=min((U-1)/2,floor(QmU/Y)). Fix C0>=2, A=min(U-1,floor(Q^C0)), F_A={(c,d):1<=c<=A,0<=d<=c,(c,d)=1}, and ell_(c,d)=c beta-d rho. For T>=1 let P_A select the single union with |ell_(c,d)|<=T for some (c,d) in F_A; for T=0 set P_A=0. The identity rho(c v0-dU)=c+U ell_(c,d) is nonzero for c<U, and each fixed (c,d,ell) has at most 2 tau(|c+U ell|) canonical classes. After literal repetitions, Y heights, kappa sites, the fixed A^2 polylogarithmic cost, the exact m^(-1)c_q(a) lift, coefficient mass, bands, divisor ledger, and shell sum, |P_A R_fix|<<Qm kappa u X^epsilon and its outer contribution is <<L^2X^epsilon. The exact decomposition is J_safe,192,fix=J_safe,191,fix+P_A R_fix and R_core,fix=(I-P_A)R_fix, with no terminal or Fejer double count. For T>=1 every core row satisfies |c beta-d rho|>T for all F_A and |rho|>=(A+1)(T+1); the core is empty if floor(((U-1)/2)/(A+1))<=T, equivalently U<=2(A+1)(T+1)-1. For literal v=v0+nU, gamma=beta+n rho; with d_v=cn+d and Delta=cv-d_v U, rho Delta=c+U ell, gamma Delta=d_v+v ell, and the exact phase, carry, and unequal endpoint number/divisor translations retain all literal fields. Long-step Abel is a self-return. A coefficient-blind positive Farey cover restores the Y/(Qm) deficit in the qualified unsaturated residue-universe control, and bounded arrays retain full capacity; neither is literal lower mass. The nonempty core estimate remains open. This node proves only the strict Farey union, exact core reduction, coverage corollaries, and method boundary, not complete rho-large, complete t=1, a parent, bridge, theorem, or exponent.",
+        "dependencies": [
+          "M9-M1-hard-top-t1-fast-signed-inverse-transport-reduction",
+          "Divisor-bound-elementary"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "proofs/kernels/m9_m1_hard_top_t1_rho_large_farey_covector_reduction.md",
+            "rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/candidates/formalized_hard_m1_t1_rho_large_farey_covector_reduction.md",
+            "rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/reports/farey_covector_sparse_sector_attack.md",
+            "rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/reports/central_core_phase_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/reports/blind_unimodular_covector_rederivation.md",
+            "rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/reviews/conductor_round192_report_reconciliation.md",
+            "rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/reviews/blind_post_unmask_farey_covector_postrepair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/reviews/canonical_covector_divisor_power_seam_review.md",
+            "rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/reviews/literal_phase_carry_core_owner_scope_seam_review.md",
+            "rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/reviews/final_kernel_candidate_power_postrepair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/reviews/final_kernel_literal_owner_scope_review.md",
+            "rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/reviews/final_kernel_formalization_provenance_hygiene_review.md",
+            "rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/reviews/conductor_round192_adjudication.md",
+            "rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/reviews/blind_post_unmask_farey_covector_verification.md",
+            "rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/reviews/final_kernel_candidate_power_consistency_review.md",
+            "rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/controls/farey_covector_finite_diagnostic_report.md",
+            "rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/controls/farey_covector_finite_diagnostic.wls",
+            "rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/controls/farey_covector_finite_diagnostic_output.txt"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Prove the exact core remainder. For T=0 retain the entire Round-191 rho-large remainder. For T>=1 retain simultaneously |rho|>=(A+1)(T+1) and |c beta-d rho|>T for every primitive 1<=c<=A, 0<=d<=c, while preserving the fast J-band, both orientations, every literal mask, unequal endpoint number/divisor translation, canonical carry, square-root phase, affine birth/death, coprimality flip, and zero extension under one outer real part. Establish a jointly signed fixed-packet estimate <<Qm kappa u X^epsilon, gaining Y/(Qm) before positive norms. Static Farey separation, long-step Abel, positive covering, or bounded-array capacity alone is insufficient."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-hard-top-high-radical-small-t-residual-estimate",
+        "dependencies_added": [
+          "M9-M1-hard-top-t1-rho-large-farey-covector-reduction"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "proofs/kernels/m9_m1_hard_top_t1_rho_large_farey_covector_reduction.md",
+            "rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/candidates/formalized_hard_m1_t1_rho_large_farey_covector_reduction.md",
+            "rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/reports/farey_covector_sparse_sector_attack.md",
+            "rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/reports/central_core_phase_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/reports/blind_unimodular_covector_rederivation.md",
+            "rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/reviews/conductor_round192_report_reconciliation.md",
+            "rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/reviews/blind_post_unmask_farey_covector_verification.md",
+            "rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/reviews/blind_post_unmask_farey_covector_postrepair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/reviews/canonical_covector_divisor_power_seam_review.md",
+            "rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/reviews/literal_phase_carry_core_owner_scope_seam_review.md",
+            "rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/reviews/final_kernel_candidate_power_consistency_review.md",
+            "rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/reviews/final_kernel_candidate_power_postrepair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/reviews/final_kernel_literal_owner_scope_review.md",
+            "rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/reviews/final_kernel_formalization_provenance_hygiene_review.md",
+            "rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/controls/farey_covector_finite_diagnostic_report.md",
+            "rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/controls/farey_covector_finite_diagnostic.wls",
+            "rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/controls/farey_covector_finite_diagnostic_output.txt",
+            "rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/reviews/conductor_round192_adjudication.md",
+            "rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/synthesis.md"
+          ]
+        },
+        "next_action": "Rounds 187-192 prove the low Fourier packets, every H_Bm>=Y lift, the projectively slow sector, the signed-inverse-small sector, the exact terminal and Fejer projections, and the strict small-Farey-covector union of the fast rho-large packet. Prove the exact remaining core: for T=0 the entire inherited rho-large remainder, and for T>=1 the simultaneous sector |rho|>=(A+1)(T+1) and |c beta-d rho|>T for every primitive 1<=c<=A, 0<=d<=c. Retain both orientations, every literal mask, the unequal endpoint number/divisor translations, carries, square-root phases, affine births/deaths, coprimality flips, cells, crossings, and zero extensions under one outer real part. At fixed admissible kappa,u,m,q,a,J, gain Y/(H_Bm) and prove scale H_B m kappa u X^epsilon before positive norms. Even complete t=1 success leaves every t>=2 small-G incidence and the large-G near-resonant complement open."
+      }
+    ],
+    "correct_rejected": [],
+    "reject": [
+      {
+        "id": "Round192-canonical-beta-equals-literal-gamma",
+        "reason": "For v=v0+nU the literal transport quotient is gamma=beta+n rho; the static Farey selector must use canonical beta."
+      },
+      {
+        "id": "Round192-c-equals-U-is-admissible-covector",
+        "reason": "The nonzero divisor factor requires 1<=c<U; allowing c=U permits the congruence argument to fail."
+      },
+      {
+        "id": "Round192-fixed-c-d-ell-has-one-residue-class",
+        "reason": "The lawful bound is by signed divisors, at most 2 tau(|c+U ell|), not one class."
+      },
+      {
+        "id": "Round192-T-zero-ell-zero-sector-is-target-safe",
+        "reason": "When the density budget is below one class the new selector is defined empty; no isolated ell=0 row is charged to it."
+      },
+      {
+        "id": "Round192-union-overlap-double-counts-complex-object",
+        "reason": "P_A is a single union indicator; the covector sum is used only for an upper bound and each selected row enters the complex projection once."
+      },
+      {
+        "id": "Round192-Farey-family-cost-is-free",
+        "reason": "The family has O(A^2)<=O(Q^(2C0)) members and is absorbed only because Q is polylogarithmic and C0 is fixed."
+      },
+      {
+        "id": "Round192-Farey-separation-covers-all-rho-large-rows-for-free",
+        "reason": "Outside the exact empty-core criterion a simultaneous badly approximable core remains; positive covering requires sector cost."
+      },
+      {
+        "id": "Round192-pigeonhole-rho-bound-estimates-the-core",
+        "reason": "The lower bound |rho|>=(A+1)(T+1) is only a support restriction and supplies no signed cancellation for actual coefficients."
+      },
+      {
+        "id": "Round192-large-ell-forces-phase-cancellation",
+        "reason": "The transported mode phase is e(epsilon ac/q), independent of ell in magnitude, and can be resonant."
+      },
+      {
+        "id": "Round192-large-ell-forces-carry-cancellation",
+        "reason": "The cumulative carry is theta-epsilon ell; its parity has no separation or averaging supplied by the core condition."
+      },
+      {
+        "id": "Round192-endpoint-coefficient-is-transport-invariant",
+        "reason": "The two endpoint number/divisor translations are unequal, depend on the literal representative through d_v, and can change every arithmetic and profile mask."
+      },
+      {
+        "id": "Round192-long-step-Abel-gives-a-saving",
+        "reason": "For finite or absolutely summable zero-extended heights the normalized long difference returns exactly to the original height sum."
+      },
+      {
+        "id": "Round192-positive-Farey-cover-beats-the-deficit",
+        "reason": "In the qualified unsaturated residue-universe control about U/T asymptotic to Y/(Qm) target-sized pieces are needed, restoring the deficit."
+      },
+      {
+        "id": "Round192-bounded-array-capacity-is-literal-lower-mass",
+        "reason": "Arbitrary bounded-array extremizers need not be realized by the actual endpoint coefficients and do not lower-bound or disprove the literal core."
+      },
+      {
+        "id": "Round192-strict-Farey-sector-proves-complete-t1-or-exponent",
+        "reason": "The nonempty core, complete t=1 residual, every t>=2 range, all parents, bridges, the target, and every exponent remain open or unchanged."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1-hard-top-t1-fast-signed-inverse-transport-reduction",
+        "reason": "The accepted Round-191 rho-large remainder is used unchanged as the exact parent reduction."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-high-h-dual-frequency-projective-reduction",
+        "reason": "The accepted Round-189 projective reduction remains unchanged."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-high-h-imprimitive-lift-gcd-reduction",
+        "reason": "The accepted Round-188 lift reduction remains unchanged."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-high-h-inverse-residue-conductor-reduction",
+        "reason": "The accepted Round-187 Fourier reduction remains unchanged."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-residual-fejer-tangent-gcd-reduction",
+        "reason": "The accepted finite tangent-gcd reduction remains unchanged."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-comparable-factor-exchange-sector",
+        "reason": "The accepted Round-184 exchange sector and exact residual remain unchanged."
+      },
+      {
+        "id": "M9-M1-hard-top-small-t-nonresonant-primitive-ray-sector",
+        "reason": "The accepted Round-183 primitive-ray sector remains unchanged."
+      },
+      {
+        "id": "M9-M1-top-endpoint-signed-cone",
+        "reason": "The rho-large t=1 core, every t>=2 small-G incidence, and the near-resonant complement remain open."
+      },
+      {
+        "id": "M9-M1-direct-smooth-residual-blockwise-estimate",
+        "reason": "Round 192 treats only a strict transformed hard-residual packet; the independent smooth parent remains open."
+      },
+      {
+        "id": "M9-M1-physical-one-count-assembly",
+        "reason": "Conditional assembly still requires the complete hard and smooth children."
+      },
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "reason": "The alternative GAR route is not treated."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "The complete hard small-t owner and independent smooth direct-M1 parent remain open."
+      },
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "reason": "No complete hard-TOP M2 channel is proved or changed."
+      },
+      {
+        "id": "M9-M2-smooth-balanced-quarter-packet-estimate",
+        "reason": "No balanced M2 estimate is proved."
+      },
+      {
+        "id": "M9-M2-smooth-unbalanced-three-quarter-estimate",
+        "reason": "No unbalanced M2 estimate is proved."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Complete hard TOP, BAL, and UNBAL remain open."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "A subordinate hard-M1 residual packet proves no parent-level real-X endpoint theorem."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain incomplete."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The standard bridge still requires complete M9."
+      },
+      {
+        "id": "GC-global-M1-alternative-bridge",
+        "reason": "The alternative bridge still requires complete GAR or total active M1 and all of M9-M2."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The strongest theorem proved by the internal architecture remains exponent one third."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "The accepted external benchmark remains 0.3144831759740614... ."
+      },
+      {
+        "id": "GC-target",
+        "reason": "Both lawful quarter routes retain multiple open analytic parents and connectors."
+      },
+      {
+        "id": "Divisor-bound-elementary",
+        "reason": "The elementary divisor estimate is used unchanged as a direct dependency."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 6,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 192 proves a strict Farey-covector union by exact Bezout factorization, signed-divisor sparsity, literal multiplicity, and the full outer ledger; it also proves a circular-pigeonhole core bound and exact phase, carry, and endpoint transport identities. It leaves one exact jointly signed core with the same Y/(Qm) deficit and supplies scoped no-go controls for static covering, long-step Abel, positive recombination, and bounded arrays. No complete owner, bridge, theorem, or exponent is promoted."
+  }
+}

@@ -1,0 +1,271 @@
+{
+  "starting_graph_sha256": "a8e0e5d84c0c5047e0c96f11128dd215ae035bdd4355bd68ad28dc87afe6cfbd",
+  "reversibility": {
+    "rule": "Remove the one created obligation and every rejected-claim record introduced by this patch; remove every dependencies_added and evidence_added value; restore the next_action value and last-updated metadata recorded below. This recovers the canonical starting graph.",
+    "restore_next_action": {
+      "M9-M1-hard-top-high-radical-small-t-residual-estimate": "The large-gcd nonresonant primitive-ray incidence sector is now target-safe by an actual character-phase BV argument. Prove the exact incidence complement {G<ceil(L^(1/4))} union {G>=ceil(L^(1/4)):Delta_X<(10log(2X))^(-1)}, retaining every original predicate. The first piece contains all t=1 and the second has no proved metric or signed-correlation bound. Partial Mobius truncation self-returns; the fixed-row Fejer brace is only an unproved stronger sufficient condition and is not PSC."
+    },
+    "restore_metadata": {
+      "M9-M1-hard-top-high-radical-small-t-residual-estimate": {
+        "last_updated_round": 183,
+        "last_updated_at": "2026-08-27T20:38:45"
+      }
+    }
+  },
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-hard-top-t1-comparable-factor-exchange-sector",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Hard-M1 t=1 comparable-factor character-reversing exchange sector",
+        "status": "proved_internal",
+        "statement_tex": "Fix real X>=2, one literal middle or lower residual hard-M1 shell L, sigma in {+1,-1}, and kappa>0. On the exact t=1 face, sum over (u,v)=1, v odd, 4u<v<16u, and uv squarefree with the complete zero-extended literal coefficient. For every squarefree N=uv, canonically select from (N,L,kappa), independently of the allocation, at most one unordered pair of distinct odd primes {p_N,q_N}|N satisfying chi_4(p_Nq_N)=-1 and |log(q_N/p_N)|<=kappa L^(-1/2). The complete selected-product XOR allocation sector, where exactly one selected prime divides v, is <<_(kappa,epsilon) L^(3/2)X^epsilon. The proof is the fixed-point-free multiplicity-one exchange of p_N and q_N between the two legs: it preserves product, phase, squarefreeness, coprimality, parity, and selector, reverses chi_4(v), and turns the sector into coefficient differences. On the tau-closed active support box, common-cell Phi and W differences are O_kappa(L^(-1/2)), normalized dyadic BV costs O_kappa(L^(3/2)), and every literal boundary collar and endpoint trace costs O_(kappa,epsilon)(L^(3/2)X^epsilon). The exact complement is every allocation of every no-pair product plus the neither/both allocations of a selected product. Its exact coefficient is c_(N,sigma)^rem=mu^2(N)sum_(v|N,v odd)chi_4(v)rho_N(v)a_(L,X)^(lit,sigma)(N/v,v), where rho_N=1 for no pair and rho_N(v)=1-1_(p_N|v)-1_(q_N|v)+2 1_(p_Nq_N|v) otherwise. At R=ceil(L), the one-outer-real-part Fejer correlation Re sum_(1<=r<R)(1-r/R)sum_N c_(N+r,sigma)^rem conjugate(c_(N,sigma)^rem)e(sigma sqrt(X)r/(sqrt(N+r)+sqrt(N))) <<_epsilon L^2X^epsilon is a sufficient but unproved residual estimate. The selector may always be empty; no density, complete t=1, complete small-t, parent, bridge, theorem, or exponent conclusion follows.",
+        "dependencies": [
+          "M9-M1-hard-top-squarefree-radical-sector-reduction",
+          "M9-M1-hard-top-small-t-nonresonant-primitive-ray-sector",
+          "M9-M1-top-endpoint-transform",
+          "M9-M1-frequency-phase-diagram-R10",
+          "H4-Phi-regularity",
+          "M9-M2-dyadic-weight-nondegeneracy",
+          "Divisor-bound-elementary"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "proofs/kernels/m9_m1_hard_top_t1_comparable_factor_exchange_sector_and_residual_fejer_reduction.md",
+            "rounds/codex-managed/m9-m1-hard-top-t1-comparable-factor-exchange-gate/candidates/formalized_hard_m1_t1_comparable_factor_exchange_sector.md",
+            "rounds/codex-managed/m9-m1-hard-top-t1-comparable-factor-exchange-gate/reports/literal_t1_exchange_residual_attack.md",
+            "rounds/codex-managed/m9-m1-hard-top-t1-comparable-factor-exchange-gate/reports/m2_transfer_transport_capacity_audit.md",
+            "rounds/codex-managed/m9-m1-hard-top-t1-comparable-factor-exchange-gate/reports/blind_complete_t1_exchange_rederivation.md",
+            "rounds/codex-managed/m9-m1-hard-top-t1-comparable-factor-exchange-gate/reviews/selector_exchange_character_blind_post_unmask_review.md",
+            "rounds/codex-managed/m9-m1-hard-top-t1-comparable-factor-exchange-gate/reviews/coefficient_profile_endpoint_power_seam_review.md",
+            "rounds/codex-managed/m9-m1-hard-top-t1-comparable-factor-exchange-gate/reviews/coefficient_profile_endpoint_power_post_repair_verification.md",
+            "rounds/codex-managed/m9-m1-hard-top-t1-comparable-factor-exchange-gate/reviews/residual_transport_correlation_owner_scope_review.md",
+            "rounds/codex-managed/m9-m1-hard-top-t1-comparable-factor-exchange-gate/reviews/final_kernel_literal_candidate_consistency_review.md",
+            "rounds/codex-managed/m9-m1-hard-top-t1-comparable-factor-exchange-gate/reviews/final_kernel_power_owner_scope_review.md",
+            "rounds/codex-managed/m9-m1-hard-top-t1-comparable-factor-exchange-gate/reviews/final_kernel_formalization_provenance_review.md",
+            "rounds/codex-managed/m9-m1-hard-top-t1-comparable-factor-exchange-gate/reviews/final_kernel_formalization_post_repair_verification.md",
+            "rounds/codex-managed/m9-m1-hard-top-t1-comparable-factor-exchange-gate/reviews/conductor_round184_report_reconciliation.md",
+            "rounds/codex-managed/m9-m1-hard-top-t1-comparable-factor-exchange-gate/reviews/conductor_round184_adjudication.md",
+            "rounds/codex-managed/m9-m1-hard-top-t1-comparable-factor-exchange-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use the theorem only on the canonically selected XOR allocations. Prove the exact no-pair plus neither/both residual, preferably through the stated one-outer-real-part Fejer correlation at R=ceil(L), without pair-density, positive-norm, or shiftwise-triangle assumptions. Even a complete residual proof closes only t=1; retain every t>=2 and near-resonant incidence."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-hard-top-high-radical-small-t-residual-estimate",
+        "dependencies_added": [
+          "M9-M1-hard-top-t1-comparable-factor-exchange-sector"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "proofs/kernels/m9_m1_hard_top_t1_comparable_factor_exchange_sector_and_residual_fejer_reduction.md",
+            "rounds/codex-managed/m9-m1-hard-top-t1-comparable-factor-exchange-gate/candidates/formalized_hard_m1_t1_comparable_factor_exchange_sector.md",
+            "rounds/codex-managed/m9-m1-hard-top-t1-comparable-factor-exchange-gate/reports/literal_t1_exchange_residual_attack.md",
+            "rounds/codex-managed/m9-m1-hard-top-t1-comparable-factor-exchange-gate/reports/m2_transfer_transport_capacity_audit.md",
+            "rounds/codex-managed/m9-m1-hard-top-t1-comparable-factor-exchange-gate/reports/blind_complete_t1_exchange_rederivation.md",
+            "rounds/codex-managed/m9-m1-hard-top-t1-comparable-factor-exchange-gate/reviews/selector_exchange_character_blind_post_unmask_review.md",
+            "rounds/codex-managed/m9-m1-hard-top-t1-comparable-factor-exchange-gate/reviews/coefficient_profile_endpoint_power_seam_review.md",
+            "rounds/codex-managed/m9-m1-hard-top-t1-comparable-factor-exchange-gate/reviews/coefficient_profile_endpoint_power_post_repair_verification.md",
+            "rounds/codex-managed/m9-m1-hard-top-t1-comparable-factor-exchange-gate/reviews/residual_transport_correlation_owner_scope_review.md",
+            "rounds/codex-managed/m9-m1-hard-top-t1-comparable-factor-exchange-gate/reviews/final_kernel_literal_candidate_consistency_review.md",
+            "rounds/codex-managed/m9-m1-hard-top-t1-comparable-factor-exchange-gate/reviews/final_kernel_power_owner_scope_review.md",
+            "rounds/codex-managed/m9-m1-hard-top-t1-comparable-factor-exchange-gate/reviews/final_kernel_formalization_provenance_review.md",
+            "rounds/codex-managed/m9-m1-hard-top-t1-comparable-factor-exchange-gate/reviews/final_kernel_formalization_post_repair_verification.md",
+            "rounds/codex-managed/m9-m1-hard-top-t1-comparable-factor-exchange-gate/reviews/conductor_round184_report_reconciliation.md",
+            "rounds/codex-managed/m9-m1-hard-top-t1-comparable-factor-exchange-gate/reviews/conductor_round184_adjudication.md",
+            "rounds/codex-managed/m9-m1-hard-top-t1-comparable-factor-exchange-gate/synthesis.md"
+          ]
+        },
+        "next_action": "The large-gcd nonresonant primitive-ray sector and the canonical close opposite-character prime XOR part of t=1 are now target-safe. Prove the exact t=1 no-pair plus neither/both residual via the actual one-outer-real-part Fejer correlation at R=ceil(L), or an equivalent direct target estimate, retaining zero extension and every literal field. No selector density or nonemptiness is known, and shiftwise triangle returns L^2 capacity. Even a complete t=1 proof leaves t>=2 small-G incidences and the large-G near-resonant complement open."
+      }
+    ],
+    "correct_rejected": [],
+    "reject": [
+      {
+        "id": "Round184-close-pair-exchange-proves-complete-t1",
+        "reason": "The theorem covers only selected-product XOR allocations; all no-pair products and selected neither/both allocations remain in the exact residual."
+      },
+      {
+        "id": "Round184-eligible-close-pair-sector-is-nonempty-or-dense",
+        "reason": "The canonical selector is allowed to choose no pair for every supported product, and no density or positive-proportion theorem is proved."
+      },
+      {
+        "id": "Round184-ambient-selected-product-sign-balance-bounds-the-physical-residual",
+        "reason": "The literal one-sided cone, coefficient, profile, and endpoints destroy the constant-amplitude ambient divisor-cube balance."
+      },
+      {
+        "id": "Round184-M2-close-pair-theorem-transfers-directly-to-M1",
+        "reason": "Only the finite exchange algebra transfers; the M1 coefficient, cone, normalization, active support, and collars require the separate proof given here."
+      },
+      {
+        "id": "Round184-M2-four-prime-residual-control-transfers-to-the-M1-physical-residual",
+        "reason": "The M2 residual theorem has different coefficients and physical support and supplies no target estimate for the M1 no-pair plus neither/both residual."
+      },
+      {
+        "id": "Round184-unrestricted-ambient-BV-charge-has-active-box-multiplicity",
+        "reason": "The multiplicity estimate is valid only on the tau-closed set where at least one literal coefficient is nonzero; unrestricted ambient allocations need not lie in an O(L)-box."
+      },
+      {
+        "id": "Round184-one-prime-toggle-contracts-the-t1-cone",
+        "reason": "Moving one odd prime changes v/u by p^(plus or minus 2) and sends the two physical supports apart."
+      },
+      {
+        "id": "Round184-normalized-involution-averaging-contracts-the-residual",
+        "reason": "A normalized average of exact divisor-lattice reindexings is only a rewriting without an independent coverage or coefficient-difference theorem."
+      },
+      {
+        "id": "Round184-ordered-divisor-Abel-and-BV-prove-the-residual",
+        "reason": "Exact Abel summation leaves an uncontrolled weighted divisor-sign oscillation whose positive aggregate remains at L^2 capacity."
+      },
+      {
+        "id": "Round184-shiftwise-triangle-proves-the-residual-correlation",
+        "reason": "Taking a modulus at each shift yields Fejer energy of size L^3 and only the scalar L^2 capacity."
+      },
+      {
+        "id": "Round184-residual-Fejer-correlation-is-proved",
+        "reason": "The one-outer-real-part estimate is an exact sufficient connector and is explicitly unproved."
+      },
+      {
+        "id": "Round184-semiprime-and-all-one-mod-four-controls-give-literal-lower-mass",
+        "reason": "These controls show lack of automatic pair coverage but provide neither occurrence counts nor a coefficient-weighted lower bound."
+      },
+      {
+        "id": "Round184-strict-t1-sector-proves-the-complete-small-t-owner",
+        "reason": "The strict sector does not prove even complete t=1, while the owner also retains every t>=2 small-G and large-G near-resonant incidence."
+      },
+      {
+        "id": "Round184-complete-t1-would-prove-the-hard-small-t-owner",
+        "reason": "A complete t=1 theorem would still leave t>=2 small-G incidences and the large-G near-half-integer-resonant complement open."
+      },
+      {
+        "id": "Round184-strict-comparable-factor-sector-improves-a-global-exponent",
+        "reason": "The complete hard and smooth M1 parents, M9-M1, all M2 parents, endpoint uniformity, M9, both bridges, and the quarter theorem remain incomplete."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1-hard-top-squarefree-radical-sector-reduction",
+        "reason": "The accepted coordinates and prior target-safe sectors remain unchanged."
+      },
+      {
+        "id": "M9-M1-hard-top-small-t-nonresonant-primitive-ray-sector",
+        "reason": "The Round-183 large-gcd nonresonant incidence theorem is used only as accepted context and is unchanged."
+      },
+      {
+        "id": "M9-M1-hard-top-radical-mobius-mellin-joint-t-obstruction",
+        "reason": "Round 184 adds a different finite exchange mechanism and does not alter the Mobius, Mellin, or joint-t self-return obstruction."
+      },
+      {
+        "id": "M9-M1-top-endpoint-transform",
+        "reason": "The accepted transform supplies the literal coefficient and only a conditional hard-cone connector."
+      },
+      {
+        "id": "M9-M1-top-endpoint-signed-cone",
+        "reason": "The exact t=1 residual, t>=2 small-G incidences, and near-resonant complement remain open."
+      },
+      {
+        "id": "M9-M1-shifted-divisor-correlation-PSC",
+        "reason": "The residual product-shift Fejer correlation has different coefficients and interface and proves no theorem for PSC."
+      },
+      {
+        "id": "M9-M1-direct-smooth-residual-blockwise-estimate",
+        "reason": "Round 184 treats only one strict sector of the unique hard profile; the smooth direct-M1 parent remains open."
+      },
+      {
+        "id": "M9-M1-direct-hard-smooth-separate-one-third-minimax",
+        "reason": "The accepted hard/smooth route menu and one-third witnesses are unchanged."
+      },
+      {
+        "id": "M9-M1-physical-one-count-assembly",
+        "reason": "This conditional assembly remains proved_internal and still requires both complete hard and smooth children."
+      },
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "reason": "The alternative GAR route is not treated."
+      },
+      {
+        "id": "M9-M1-global-lower-radial-signed-estimate",
+        "reason": "The alternative lower-radial parent remains open."
+      },
+      {
+        "id": "M9-M1-global-radial-one-count-assembly",
+        "reason": "The alternative radial assembly is unchanged."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "The complete hard and independent smooth direct parents remain open, and the alternative route is incomplete."
+      },
+      {
+        "id": "M9-M2-hard-top-t1-close-opposite-prime-exchange-sector",
+        "reason": "This accepted M2 theorem is a method control only and is unchanged."
+      },
+      {
+        "id": "M9-M2-hard-top-t1-residual-transport-fejer-energy-reduction",
+        "reason": "This accepted M2 reduction is a method control only and is unchanged."
+      },
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "reason": "All complete hard-TOP channels remain open."
+      },
+      {
+        "id": "M9-M2-smooth-balanced-quarter-packet-estimate",
+        "reason": "No balanced M2 estimate is proved."
+      },
+      {
+        "id": "M9-M2-smooth-unbalanced-three-quarter-estimate",
+        "reason": "No unbalanced M2 estimate is proved."
+      },
+      {
+        "id": "M9-M2-physical-one-count-assembly",
+        "reason": "Hard TOP, BAL, and UNBAL remain open."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Complete hard TOP, BAL, and UNBAL remain open."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "A subordinate hard-M1 incidence sector proves no parent-level endpoint uniformity."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain incomplete."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The standard bridge still requires complete M9."
+      },
+      {
+        "id": "GC-global-M1-alternative-bridge",
+        "reason": "The alternative bridge still requires complete GAR and M9-M2."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The strongest internally proved exponent remains one third."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "The accepted repaired external benchmark remains 0.3144831759740614... ."
+      },
+      {
+        "id": "GC-target",
+        "reason": "The quarter target remains open."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 7,
+    "idea_quality_score": 9,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 184 proves a genuine actual-coefficient character-reversing contraction on the canonical close opposite-character prime XOR part of the hard-M1 t=1 face. The exchange improves that proper sector from L^2 capacity to the L^(3/2) target and gives an exact no-pair plus neither/both residual with a precise still-open one-outer-real-part Fejer correlation. Selector nonemptiness, the complete t=1 face, all t>=2 and near-resonant incidences, every parent, and every exponent remain open."
+  }
+}

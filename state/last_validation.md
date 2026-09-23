@@ -1,40 +1,43 @@
-# Last validation
+# Last Validation
 
-Round: 163
+Closed round: 199
 
-Campaign: m9-m2-hard-top-t1-near-square-divisor-involution-gate
+Next round: 200 (pending_design)
+
+Campaign: m9-m1-t1-p2-cross-gcd-cellular-boundary-gate
 
 Graph SHA-256:
-81690ebb72b0dedd99bdb6c6127f947df696a901a22af3f65ac8738209125306
+3073235ad5677b9066f1336ec9d958b0e93b92d99cfa7ebea1d823146c799099
 
-Status: State Patch applied and Round 163 closed under
-strict_t1_prime_toggle_sector.  The completed campaign, resulting graph,
-structured state, terminal mathematical and patch-scope reviews, accepted
-proof draft, unit tests, Markdown rendering, whitespace, equation tags,
-display delimiters, and byte hygiene pass validation.
+Status: Round 199 closure GREEN under terminal label
+p2_cross_gcd_cellular_boundary_self_return_no_go.
 
-Validated result:
+Validated closure state:
 
-- a canonical close pair of odd prime divisors \(p,q\) with
-  \(\chi_4(pq)=-1\) and
-  \(|\log(q/p)|\leq\kappa L^{-1/2}\), when it exists, defines an exact
-  sign-reversing exchange on the complete exactly-one incidence sector;
-- the exchange preserves the squarefree product, coprimality, parity,
-  even-\(N\) branch, normalization, and arbitrary-real-centre phase;
-- common smooth cells contribute \(O_\kappa(L^{3/2})\) after the
-  \(L^{-1/2}\) amplitude difference, and every hard-boundary crossing
-  contributes \(O_\kappa(L^{3/2}+L)\); hence
-  \[
-   |\mathcal S_{L,1}^{\mathrm{cp}}|\ll_\kappa L^{3/2};
-  \]
-- one-prime toggles have disjoint physical supports, normalized toggle
-  averages self-return, general matchings require sign-count balance, and
-  complementation enters excluded lower windows.
+- all three seven-section reports, reconciliation, exact-identity controls,
+  candidate, durable kernel, and allocation/power/blind reviews are complete;
+- the lawful cross-gcd P2 triangle has actual incidences 1, t, tp and a
+  nonzero augmented boundary coefficient;
+- the unique fourth live product corner belongs to the disjoint P1 owner;
+- partial-block variants change the P2 defect masks and create commutators;
+- the result is a mechanism-scoped no-go, not a lower bound or a disproof of
+  the desired joint estimate by another method;
+- the State Patch has exact effect 0 create / 1 update / 0 correct / 18 reject
+  / 30 no-change;
+- independent inversion recovers starting graph 63fa05e3..., and normalized
+  replay with production timestamp and judge reference reproduces live graph
+  3073235a... exactly;
+- only one already-open obligation changes, and all protected statuses,
+  edges, statements, parents, bridges, target, and exponents are unchanged;
+- campaign and embedded plan are deep-equal and complete, the ledger closes
+  Round 199, and Round 200 is pending design;
+- graph/campaign validation, structured parsing, 8 unit tests, compilation,
+  whitespace, UTF-8, and control-byte checks pass.
 
-This is a target-safe strict sector with no asserted density.  The literal
-residual \(\mathcal S_{L,1}^{\mathrm{rem}}\), all other few-point
-channels, hard TOP, BAL, UNBAL, M9--M2, M9--M1, endpoint uniformity, M9,
-the bridge, and the quarter theorem remain open.
+Advisories: three inherited two-node dependency cycles are unchanged. Eight
+distinct older evidence paths, occurring in 28 references, remain unresolved;
+all seventeen Round-199 additions resolve.
 
-Exponent: no change.  Internal \(1/3\); audited external
-\(0.3144831759740614\ldots\).
+No analytic estimate or exponent improves. M9-M1, M9-M2, endpoint uniformity,
+M9, both bridges, and the quarter target remain open or conditional. Exponents
+remain internal 1/3, accepted external 0.3144831759740614..., and target 1/4.

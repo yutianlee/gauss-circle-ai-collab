@@ -227,6 +227,23 @@ def _merge_evidence(obligation: dict[str, Any], added: Any) -> None:
             _append_unique(evidence[key], added[key])
 
 
+def _remove_evidence(obligation: dict[str, Any], removed: Any) -> None:
+    """Remove named evidence paths from explicit evidence buckets.
+
+    Evidence removal is deliberately bucket-specific: a path removed from one
+    bucket is not silently removed from the others.  This supports auditable
+    reclassification patches without replacing the complete evidence mapping.
+    """
+    if not isinstance(removed, dict):
+        return
+    evidence = _ensure_evidence(obligation)
+    for key in ("positive", "negative", "inconclusive"):
+        if key not in removed:
+            continue
+        remove_values = set(_normalize_list(removed[key]))
+        evidence[key] = [entry for entry in evidence[key] if entry not in remove_values]
+
+
 def _patch_ops(patch: dict[str, Any]) -> dict[str, list[Any]]:
     proof_patch = patch.get("proof_obligations", patch)
     if not isinstance(proof_patch, dict):
@@ -347,7 +364,12 @@ def apply_state_patch(
             new_item["last_updated_round"] = round_index
         new_item["last_updated_at"] = timestamp
         if judge_ref:
-            _merge_evidence(new_item, {"inconclusive": [judge_ref]})
+            evidence = _ensure_evidence(new_item)
+            if not any(
+                judge_ref in evidence[bucket]
+                for bucket in ("positive", "negative", "inconclusive")
+            ):
+                _merge_evidence(new_item, {"inconclusive": [judge_ref]})
         obligations.append(new_item)
         by_id[new_item["id"]] = new_item
         created.append(new_item["id"])
@@ -372,6 +394,9 @@ def apply_state_patch(
                 continue
             if key.endswith("_removed"):
                 target_key = key[: -len("_removed")]
+                if target_key == "evidence":
+                    _remove_evidence(obligation, value)
+                    continue
                 current = obligation.get(target_key, [])
                 if isinstance(current, list):
                     remove_values = set(_normalize_list(value))

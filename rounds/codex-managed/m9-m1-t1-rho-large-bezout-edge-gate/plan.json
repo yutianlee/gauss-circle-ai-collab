@@ -1,0 +1,269 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 192,
+    "round_type": "m9_m1_t1_rho_large_farey_covector_gate",
+    "campaign_id": "m9-m1-t1-rho-large-bezout-edge-gate",
+    "title": "Hard-M1 t=1 rho-large Farey-covector sparsity gate",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "75b44fe68f9c6e094d2ab6e643be3c0309320ef84e73ca22d692698440eeed13",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 96,
+      "numerical_experimental_maximum_percent": 4,
+      "planned_numerical_percent": 2,
+      "computation_policy": "Mathematica may check finite signed-inverse, canonical-quotient, covector-factorization, floor, coverage, and multiplicity identities only. Every computation is diagnostic_only and cannot certify an asymptotic estimate."
+    },
+    "target_obligations": [
+      "M9-M1-hard-top-high-radical-small-t-residual-estimate",
+      "M9-M1-hard-top-t1-fast-signed-inverse-transport-reduction",
+      "M9-M1-hard-top-t1-high-h-dual-frequency-projective-reduction",
+      "M9-M1-hard-top-t1-high-h-imprimitive-lift-gcd-reduction",
+      "M9-M1-hard-top-t1-high-h-inverse-residue-conductor-reduction",
+      "M9-M1-hard-top-t1-residual-fejer-tangent-gcd-reduction",
+      "M9-M1-top-endpoint-signed-cone",
+      "M9-M1"
+    ],
+    "frozen_target": {
+      "question": "Can the exact Round-191 rho-large remainder be reduced further by a target-safe union of small unimodular Farey covectors of the canonical inverse matrix, with an exact badly-approximable core, and can that core be estimated by a genuinely literal phase/carry mechanism or shown to resist the proposed iteration?",
+      "reference_formula": "Fix Q=H_B, U=mq>4Q, q>Q, Qm<Y, the exact Round-189 fast projective condition, and the Round-191 remainder |rho_U(v)|>T=min((U-1)/2,floor(QmU/Y)) after its terminal and isolated Fejer projections. For v0=[v]_U define rho v0-beta U=1. For 1<=c< U and 0<=d<=c define ell_(c,d)=c beta-d rho, so rho(c v0-dU)=c+U ell_(c,d). With A=min(U-1,floor(Q^C0)), prove the union T>=1 and min_(c,d coprime,c<=A)|ell_(c,d)|<=T target-safe at fixed scale Qm kappa u X^epsilon and through the exact outer ledger, or locate the first exact failure.",
+      "quantities": [
+        "The canonical beta uses v0=[v]_U in 1,...,U-1. It is not the actual transport quotient gamma=(rho v-1)/U for a noncanonical literal representative.",
+        "For fixed c,d,ell the exact identity rho(c v0-dU)=c+U ell converts residue classes into divisor pairs; c<U prevents a zero right side.",
+        "The Farey family has O(Q^(2C0)) members, a fixed polylogarithmic cost that may be absorbed only through a fresh epsilon budget.",
+        "The T=0 sector is defined empty; isolated ell=0 classes may not be called target-safe when the density budget is below one residue class.",
+        "The inherited literal v support has total length O(u), U divides u, and each residue class occurs O(u/U+1)=O(u/U) times; projective bands and literal masks only delete rows.",
+        "Both orientations, all remaining jump sources, every endpoint field, phase, carry, mask, and zero extension remain in one complex aggregate before the final real part.",
+        "A full-core claim needs cancellation for the fixed literal coefficients. Farey separation alone supplies no cancellation for arbitrary bounded arrays.",
+        "Even complete rho-large success closes at most the exact original-t=1 residual through accepted connectors; every original t>=2 range, near resonance, smooth M1, M2, endpoint, bridge, theorem, and exponent remains separate."
+      ]
+    },
+    "completion_criteria": [
+      "Derive the signed canonical quotient and exact covector factorization without conflating canonical residue, literal representative, or transport quotient.",
+      "Prove or refute the O(T X^eta) residue-class count for each covector, including negative rho, ell=0, T=0, floors, c<U, and factor multiplicity.",
+      "Restore literal interval multiplicity, projective-band restriction, Y heights, kappa sites, the exact m^(-1)c_q(a) lift, coefficient mass, Farey-family size, dyadic bands, divisor sums, and every Q,L,Y,X power.",
+      "Produce an exact one-outer-real-part safe projection and complement; do not double-count the Round-191 terminal or Fejer projections.",
+      "Attempt the badly-approximable core only with a proved literal phase, carry, endpoint, or arithmetic correlation; otherwise give a quantified no-go for Farey covering, bounded arrays, or positive recombination.",
+      "Receive a statement-only independent rederivation of the factorization, count, exceptions, strongest coverage corollary, and method boundary.",
+      "Run finite Mathematica controls only for exact identities, multiplicities, signs, floors, saturation, and proposed coverage; archive code, output, and limitations.",
+      "Review normalization, divisor multiplicity, literal representative scope, Farey-family power cost, outer ledger, exact complement, blind post-unmask consistency, downstream owner scope, and exponent quarantine before promotion.",
+      "Apply no graph change without a mechanically valid State Patch, independent reverse/replay audit, green lifecycle validation, and one declared terminal label. Do not pivot in-round to another owner or exponent."
+    ],
+    "controls": [
+      "exact_round191_rho_large_remainder",
+      "round191_terminal_and_Fejer_already_removed",
+      "canonical_v0_vs_literal_v_vs_transport_gamma",
+      "signed_least_inverse_and_beta_signs",
+      "exact_unimodular_covector_factorization",
+      "c_strictly_less_than_U_nonzero_rhs",
+      "T_zero_sector_empty",
+      "ell_zero_and_floor_cases",
+      "divisor_pair_multiplicity",
+      "Farey_family_size_polylogarithmic",
+      "literal_residue_class_multiplicity_U_divides_u",
+      "fast_projective_band_only_deletes",
+      "one_outer_real_part_both_orientations",
+      "no_literal_field_dropped",
+      "safe_projection_union_no_double_count",
+      "exact_badly_approximable_core",
+      "small_U_coverage_corollary",
+      "no_false_Farey_full_cover_without_sector_cost",
+      "no_bounded_array_or_positive_completion_closure",
+      "exact_m_inverse_cq_lift_and_outer_divisor_ledger",
+      "Q_L_Y_X_power_and_epsilon_budget",
+      "diagnostic_only_computation",
+      "original_t1_only_downstream_scope",
+      "no_in_round_owner_pivot",
+      "exponent_quarantine"
+    ],
+    "exit_labels": [
+      "hard_m1_t1_rho_large_target",
+      "strict_rho_large_farey_covector_sector",
+      "rho_large_farey_iteration_no_go"
+    ],
+    "tasks": [
+      {
+        "id": "farey_covector_sparse_sector_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "completed",
+        "target": "Prove the widest exact target-safe Farey-covector sector of the Round-191 remainder. Derive the factorization and divisor count, define a disjoint or union-safe complex projection, restore the full fixed and outer ledgers, prove every valid small-U or edge/central coverage corollary, and leave one exact literal core if the full target is not reached.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "state/failure_ledger.md",
+          "strategy/round192_m1_t1_rho_large_farey_covector_strategy.md",
+          "proofs/kernels/m9_m1_hard_top_t1_fast_signed_inverse_transport_reduction.md",
+          "proofs/kernels/m9_m1_hard_top_t1_high_h_dual_frequency_projective_reduction.md",
+          "proofs/kernels/m9_m1_hard_top_t1_high_h_imprimitive_lift_gcd_reduction.md",
+          "proofs/kernels/m9_m1_hard_top_t1_residual_fejer_tangent_gcd_reduction.md",
+          "rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/synthesis.md",
+          "rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reviews/conductor_round191_adjudication.md"
+        ],
+        "required_controls": [
+          "exact_round191_rho_large_remainder",
+          "round191_terminal_and_Fejer_already_removed",
+          "canonical_v0_vs_literal_v_vs_transport_gamma",
+          "signed_least_inverse_and_beta_signs",
+          "exact_unimodular_covector_factorization",
+          "c_strictly_less_than_U_nonzero_rhs",
+          "T_zero_sector_empty",
+          "ell_zero_and_floor_cases",
+          "divisor_pair_multiplicity",
+          "Farey_family_size_polylogarithmic",
+          "literal_residue_class_multiplicity_U_divides_u",
+          "fast_projective_band_only_deletes",
+          "one_outer_real_part_both_orientations",
+          "safe_projection_union_no_double_count",
+          "exact_badly_approximable_core",
+          "small_U_coverage_corollary",
+          "exact_m_inverse_cq_lift_and_outer_divisor_ledger",
+          "Q_L_Y_X_power_and_epsilon_budget",
+          "original_t1_only_downstream_scope",
+          "exponent_quarantine"
+        ],
+        "required_output": [
+          "A seven-section analytical report satisfying the repository report contract.",
+          "An exact covector-sector lemma, proof, outer power ledger, safe projection, and complement, or the first failed inequality with a quantitative deficit.",
+          "Write only the assigned report and any explicitly named diagnostic under this campaign; make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/reports/farey_covector_sparse_sector_attack.md"
+      },
+      {
+        "id": "central_core_phase_hostile_audit",
+        "role": "barrier_no_go",
+        "access_mode": "selected_context",
+        "status": "completed",
+        "target": "Hostilely audit the covector count and attempt the exact badly-approximable core. Test every sign, zero, floor, factor, overlap, and power case; determine whether Farey separation couples lawfully to the retained height phase, mechanical carry, endpoint displacement, or literal arithmetic fields, or prove a scoped no-go showing that covering or positive recombination restores the Y/(Qm) deficit.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "state/failure_ledger.md",
+          "strategy/round192_m1_t1_rho_large_farey_covector_strategy.md",
+          "proofs/kernels/m9_m1_hard_top_t1_fast_signed_inverse_transport_reduction.md",
+          "proofs/kernels/m9_m1_hard_top_t1_high_h_dual_frequency_projective_reduction.md",
+          "rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reports/joint_hv_phase_jump_hostile_audit.md",
+          "rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reviews/final_kernel_power_literal_owner_scope_post_hygiene_verification.md",
+          "rounds/codex-managed/m9-m1-t1-fast-height-jump-coboundary-gate/reviews/conductor_round191_adjudication.md"
+        ],
+        "required_controls": [
+          "exact_round191_rho_large_remainder",
+          "round191_terminal_and_Fejer_already_removed",
+          "canonical_v0_vs_literal_v_vs_transport_gamma",
+          "signed_least_inverse_and_beta_signs",
+          "exact_unimodular_covector_factorization",
+          "c_strictly_less_than_U_nonzero_rhs",
+          "T_zero_sector_empty",
+          "ell_zero_and_floor_cases",
+          "divisor_pair_multiplicity",
+          "Farey_family_size_polylogarithmic",
+          "one_outer_real_part_both_orientations",
+          "no_literal_field_dropped",
+          "exact_badly_approximable_core",
+          "no_false_Farey_full_cover_without_sector_cost",
+          "no_bounded_array_or_positive_completion_closure",
+          "Q_L_Y_X_power_and_epsilon_budget",
+          "diagnostic_only_computation",
+          "original_t1_only_downstream_scope",
+          "exponent_quarantine"
+        ],
+        "required_output": [
+          "A seven-section hostile analytical report satisfying the repository report contract.",
+          "An exact audit of factorization, counts, Farey coverage cost, phase/carry coupling, first failed literal relation, and remaining deficit.",
+          "Write only the assigned report and any explicitly named diagnostic under this campaign; make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/reports/central_core_phase_hostile_audit.md"
+      },
+      {
+        "id": "blind_unimodular_covector_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "completed",
+        "target": "From the self-contained statement only, independently derive the covector factorization, residue and literal multiplicities, target-safe union, exact exceptions and strongest coverage corollary. Determine whether the complement condition can imply cancellation without a literal coefficient hypothesis.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "state/active_campaign.yml",
+          "all strategy files",
+          "all source cards and web-search results",
+          "all prior round reports, reviews, controls, candidates, kernels and synthesis",
+          "all Round-192 sibling reports, reviews, controls and conductor analysis"
+        ],
+        "required_controls": [
+          "canonical_v0_vs_literal_v_vs_transport_gamma",
+          "signed_least_inverse_and_beta_signs",
+          "exact_unimodular_covector_factorization",
+          "c_strictly_less_than_U_nonzero_rhs",
+          "T_zero_sector_empty",
+          "ell_zero_and_floor_cases",
+          "divisor_pair_multiplicity",
+          "Farey_family_size_polylogarithmic",
+          "literal_residue_class_multiplicity_U_divides_u",
+          "safe_projection_union_no_double_count",
+          "exact_badly_approximable_core",
+          "small_U_coverage_corollary",
+          "no_false_Farey_full_cover_without_sector_cost",
+          "no_bounded_array_or_positive_completion_closure",
+          "original_t1_only_downstream_scope",
+          "exponent_quarantine"
+        ],
+        "required_output": [
+          "A seven-section statement-only report satisfying the repository report contract.",
+          "An independent proof or rigorous repair/no-go with every zero, sign, floor, factor, multiplicity, and capacity exception explicit.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-t1-rho-large-bezout-edge-gate/reports/blind_unimodular_covector_rederivation.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "canonical_inverse_covector_normalization",
+        "requirement": "Verify v0, signed rho, beta, ell, signs, c<U, nonzero factor, T=0, ell=0, floors, and all primitive covector conventions."
+      },
+      {
+        "id": "divisor_multiplicity_and_literal_row_count",
+        "requirement": "Verify factor-pair multiplicity, divisor bounds, covector-family size, U|u residue repetitions, projective-band deletions, overlaps, and saturated or empty cases."
+      },
+      {
+        "id": "safe_projection_literal_and_outer_power_scope",
+        "requirement": "Verify exact restriction of the Round-191 remainder, no terminal/Fejer double count, one outer real part, every literal field, fixed-packet scale, lift cancellation, and all Q,L,Y,X powers."
+      },
+      {
+        "id": "central_core_mechanism_and_false_controls",
+        "requirement": "Verify the exact badly-approximable core and prohibit full-cover, bounded-array, phase-only, carry-only, positive-completion, or hidden-smoothness overclaims."
+      },
+      {
+        "id": "blind_post_unmask_and_owner_scope",
+        "requirement": "Reconcile the statement-only result with the literal carrier and quarantine complete t=1, t>=2, every parent, bridge, theorem, and exponent."
+      }
+    ],
+    "scheduled_review": "Round 194 is the mandatory full-proof strategy and current-primary-literature checkpoint after analytic Rounds 191--193.",
+    "closing_assessment": {
+      "decision": "promote_rho_large_farey_covector_reduction",
+      "terminal_label": "strict_rho_large_farey_covector_sector",
+      "graph_mutation": true,
+      "main_result": "The exact small-Farey-covector union inside the Round-191 rho-large hard-M1 t=1 remainder is target-safe by Bezout factorization, signed-divisor sparsity, literal multiplicity, and the full outer ledger. Circular pigeonhole gives the exact strict core and an empty-core criterion. The nonempty jointly signed core remains open with deficit Y/(H_Bm). No complete t=1 residual, owner, bridge, theorem, or exponent changes.",
+      "resulting_graph_sha256": "7c89a29f96878cb4c8481129a4a76453263768f0a7b699fa20003fc4db207bd9",
+      "patch_effect": "1_create_1_update_0_correct_15_reject_24_no_change",
+      "exponent_change": false,
+      "next_round": 193
+    }
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "75b44fe68f9c6e094d2ab6e643be3c0309320ef84e73ca22d692698440eeed13",
+    "generated_at": "2026-08-29T15:30:32.530462+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

@@ -1,0 +1,238 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 165,
+    "round_type": "m9_m2_hard_top_t1_residual_fejer_short_shift_gate",
+    "campaign_id": "m9-m2-hard-top-t1-residual-fejer-short-shift-gate",
+    "title": "M2 hard-TOP t=1 actual residual Fejer short-shift gate",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "141bbc8c998981245e33f18c9c116ef12f309ecfc54898e3a1dbd4569e0f7ba0",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "planned_numerical_percent": 0,
+      "literature_policy": "Round 165 is an exact analytic attack on the accepted short-shift frontier. Do not import a shifted-convolution theorem by analogy. The scheduled full-proof and current-literature review occurs at Round 166 closure before Round 167."
+    },
+    "target_obligations": [
+      "M9-M2-hard-top-t1-residual-transport-fejer-energy-reduction",
+      "M9-M2-top-endpoint-signed-cone",
+      "M9-M2-top-endpoint-density-discrepancy-energy",
+      "M9-M2-hard-top-truncated-divisor-energy-and-radical-control",
+      "M9-M2-hard-top-t1-close-opposite-prime-exchange-sector",
+      "M9-M2-hard-top-t1-character-poisson-product-collar-obstruction",
+      "M9-M2-hard-top-radical-long-channel-exact-collision-control",
+      "M9-M2-hard-top-radical-frequency-common-test-source-obstruction"
+    ],
+    "frozen_target": {
+      "question": "Can the exact one-sided aggregate actual residual Fejer short-shift correlation at length R=ceil(L) be bounded by L^2X^epsilon before any shiftwise absolute value, using the signed arithmetic of d'm'-dm=r, chi_4(d')chi_4(d), the literal selectors and profiles, and the square-root phase; or do gcd multiplicity, tangent hyperbola families, near-integral phase increments, parity, hard boundaries, or restored opening scales force a smallest rigorous actual-short-shift no-go?",
+      "reference_formula": "C_(R,J,L)^rem=sum_(1<=r<R)(1-r/R)sum_N c_(N+r)^rem conjugate(c_N^rem)e(Jr/(sqrt(N+r)+sqrt(N))). Prove Re C_(R,J,L)^rem<=C_epsilon L^2X^epsilon. The literal opening is N=dm, N+r=d'm', d'm'-dm=r, with both supported squarefree residual coefficients, selectors, parity branches, profiles, boundaries, and zero extensions retained.",
+      "quantities": [
+        "J=sqrt(X), y=floor(J), q_X=X/y^2, H=floor(yX^(-1/4)), 1<<L<<H<=J^(1/2), and R=ceil(L).",
+        "The coefficient c_N^rem is exactly the accepted Round-164 residual coefficient and is zero off its supported squarefree row domain.",
+        "The required estimate is one-sided in the complete aggregate real part; no shiftwise, tuplewise, selectorwise, paritywise, or Mobius-opening absolute value is licensed.",
+        "Opening gives the additive product shift d'm'-dm=r, not the separate multiplicative character-Poisson collar.",
+        "The diagonal coefficient energy is L^(2+o(1)); arbitrary phase-aligned arrays can have Fejer energy L^3 and are mandatory false controls.",
+        "A direct full-t1 scalar proof is allowed only with an exact scalar connector; target-safety of the XOR scalar does not imply energy equivalence.",
+        "No t=1 result transfers automatically to other few-point channels, hard TOP, smooth M2 packets, M9-M2, M9, the bridge, or an exponent."
+      ]
+    },
+    "completion_criteria": [
+      "Expand the actual correlation with multiplicity one, supported squarefree rows, both selectors, both parity branches, every profile and endpoint, and the exact square-root phase.",
+      "Classify the additive near-product equation d'm'-dm=r by integral gcd, tangent, determinant, or progression coordinates without losing the aggregate Fejer real part.",
+      "If character cancellation is claimed, exhibit the exact long chi_4 sum or sign-reversing pairing and charge its modulus, length, endpoints, and profile variation.",
+      "If square-root phase cancellation is claimed, audit distance-to-integer derivatives, resonant and transition ranges, endpoints, and every L-H-J-X power uniformly in the inherited real centre.",
+      "Distinguish scalar equivalence from Fejer-energy equivalence when using the accepted target-safe XOR sector.",
+      "Test phase-aligned arbitrary arrays, unit-profile four-prime rows, equal- and near-product tangent families, selected/no-pair rows, both parity branches, hard boundaries, and every positive-norm self-return.",
+      "Prove the aggregate target, an owner-complete quantitative signed short-shift sector, or the smallest rigorous actual-short-shift no-go with an exact surviving theorem.",
+      "Close under exactly one label: hard_top_t1_residual_fejer_target, strict_residual_short_shift_sector, or hard_top_t1_residual_fejer_no_go."
+    ],
+    "controls": [
+      "actual_residual_coefficient_domain",
+      "aggregate_one_sided_real_part",
+      "additive_product_shift_multiplicity",
+      "gcd_tangent_and_determinant_coordinates",
+      "chi4_progression_or_pairing",
+      "square_root_phase_resonance",
+      "selected_and_no_pair_rows",
+      "odd_divisor_and_even_complement_branch",
+      "hard_profile_endpoint_and_zero_extension",
+      "phase_aligned_arbitrary_array",
+      "four_prime_unit_profile_capacity",
+      "scalar_vs_energy_connector",
+      "rank_one_collar_geometry_separation",
+      "missing_L_half_power",
+      "remaining_few_point_and_downstream_scope"
+    ],
+    "tasks": [
+      {
+        "id": "actual_residual_short_shift_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "completed",
+        "target": "Attack the complete one-sided actual residual short-shift correlation. Test exact additive-divisor, gcd/tangent, character-preserving, phase, delta, or completion mechanisms before every positive norm, and prove the target or isolate the smallest exact sufficient signed subform.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round165_m2_hard_top_t1_residual_fejer_short_shift_strategy.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/barrier_packet.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/candidates/conductor_round165_short_shift_seed.md",
+          "proofs/kernels/m9_m2_hard_top_t1_residual_transport_fejer_energy_reduction.md",
+          "proofs/kernels/m9_m2_hard_top_t1_close_opposite_prime_exchange_sector.md",
+          "proofs/kernels/m9_m2_hard_top_t1_character_poisson_product_collar_obstruction.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/synthesis.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reports/complete_residual_transport_attack.md"
+        ],
+        "required_controls": [
+          "actual_residual_coefficient_domain",
+          "aggregate_one_sided_real_part",
+          "additive_product_shift_multiplicity",
+          "gcd_tangent_and_determinant_coordinates",
+          "chi4_progression_or_pairing",
+          "square_root_phase_resonance",
+          "selected_and_no_pair_rows",
+          "odd_divisor_and_even_complement_branch",
+          "hard_profile_endpoint_and_zero_extension",
+          "phase_aligned_arbitrary_array",
+          "scalar_vs_energy_connector",
+          "rank_one_collar_geometry_separation",
+          "missing_L_half_power",
+          "remaining_few_point_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section analytic report satisfying the repository report contract.",
+          "An exact literal expansion and every multiplicity, phase, profile, parity, and power ledger.",
+          "A proof, owner-complete signed sector, or smallest rigorously scoped actual-short-shift frontier.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reports/actual_residual_short_shift_attack.md"
+      },
+      {
+        "id": "blind_fejer_short_shift_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "completed",
+        "target": "Starting only from the frozen short-shift statement, independently derive exact additive near-product coordinates, character or phase cancellation mechanisms, and the first missing actual-direction theorem without shiftwise absolute values.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "state/active_campaign.yml",
+          "all strategy files",
+          "all Round-165 nonblind artifacts",
+          "all Round-165 sibling reports",
+          "the Round-165 conductor seed",
+          "all Round-164 reports, candidates, reviews, controls, kernels, and synthesis",
+          "all earlier hard-TOP short-shift or divisor-transport artifacts"
+        ],
+        "required_controls": [
+          "actual_residual_coefficient_domain",
+          "aggregate_one_sided_real_part",
+          "additive_product_shift_multiplicity",
+          "gcd_tangent_and_determinant_coordinates",
+          "chi4_progression_or_pairing",
+          "square_root_phase_resonance",
+          "selected_and_no_pair_rows",
+          "odd_divisor_and_even_complement_branch",
+          "hard_profile_endpoint_and_zero_extension",
+          "phase_aligned_arbitrary_array",
+          "missing_L_half_power",
+          "remaining_few_point_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section statement-only analytic report satisfying the repository report contract.",
+          "An independent exact short-shift, multiplicity, resonance, and target-power derivation.",
+          "A proof or the first rigorously isolated missing actual-direction estimate.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reports/blind_fejer_short_shift_rederivation.md"
+      },
+      {
+        "id": "short_shift_arithmetic_hostile_audit",
+        "role": "barrier_no_go",
+        "access_mode": "selected_context",
+        "status": "completed",
+        "target": "Hostilely classify solution multiplicity, tangent and gcd families, phase resonances, character lengths, selector and parity effects, hard profiles, scalar-versus-energy transfer, and restored powers. Determine the smallest standard short-shift route no-go without turning raw capacity into physical mass.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round165_m2_hard_top_t1_residual_fejer_short_shift_strategy.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/barrier_packet.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/candidates/conductor_round165_short_shift_seed.md",
+          "proofs/kernels/m9_m2_hard_top_t1_residual_transport_fejer_energy_reduction.md",
+          "proofs/kernels/m9_m2_hard_top_t1_character_poisson_product_collar_obstruction.md",
+          "proofs/kernels/m9_m2_hard_top_radical_long_channel_collision_common_test_obstruction.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reports/unmatched_transport_capacity_hostile_audit.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reviews/transport_source_repair_verification.md",
+          "rounds/codex-managed/m9-m2-hard-top-t1-residual-signed-divisor-transport-gate/reviews/conductor_round164_adjudication.md"
+        ],
+        "required_controls": [
+          "actual_residual_coefficient_domain",
+          "aggregate_one_sided_real_part",
+          "additive_product_shift_multiplicity",
+          "gcd_tangent_and_determinant_coordinates",
+          "chi4_progression_or_pairing",
+          "square_root_phase_resonance",
+          "selected_and_no_pair_rows",
+          "odd_divisor_and_even_complement_branch",
+          "hard_profile_endpoint_and_zero_extension",
+          "phase_aligned_arbitrary_array",
+          "four_prime_unit_profile_capacity",
+          "scalar_vs_energy_connector",
+          "rank_one_collar_geometry_separation",
+          "missing_L_half_power",
+          "remaining_few_point_and_downstream_scope"
+        ],
+        "required_output": [
+          "A seven-section hostile analytic report satisfying the repository report contract.",
+          "Exact high-capacity or resonant controls with multiplicities and all restored powers.",
+          "A target theorem or smallest route-scoped actual-short-shift no-go and surviving signed theorem.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m2-hard-top-t1-residual-fejer-short-shift-gate/reports/short_shift_arithmetic_hostile_audit.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "literal_expansion_and_multiplicity",
+        "requirement": "Verify supported-row expansion, one-count multiplicity, selectors, parity, profiles, endpoints, and d'm'-dm=r."
+      },
+      {
+        "id": "gcd_tangent_character_and_phase",
+        "requirement": "Verify every additive coordinate, gcd count, character length, phase derivative, resonance, and transition range."
+      },
+      {
+        "id": "aggregate_real_part_and_power",
+        "requirement": "Prevent shiftwise positive losses and restore the complete L-H-J-X ledger through the target L^2 correlation scale."
+      },
+      {
+        "id": "physical_and_downstream_scope",
+        "requirement": "Separate arbitrary-array and raw-capacity controls from the literal coefficient and prevent transfer to other channels, parents, M9, target, or exponents."
+      }
+    ],
+    "closing_assessment": {
+      "decision": "promote_residual_fejer_parity_gcd_scale_reduction",
+      "terminal_label": "strict_residual_short_shift_sector",
+      "graph_mutation": true,
+      "main_result": "The all-scale Fejer identity, exact parity connector, complete monotone tangent sector, fixed-fraction high-divisor-gcd sector, dual gcd progressions, and maximal-scale alternative are proved. The minimal low-gcd opposing aggregate (165.K17a) and maximal even medium/long aggregate (165.K26) remain open; no parent or exponent closes.",
+      "resulting_graph_sha256": "87d58660e7e11a23eb3d8759917e02376479ba38acaf727b0a2dc15d5920f5e0",
+      "exponent_change": false
+    }
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "87d58660e7e11a23eb3d8759917e02376479ba38acaf727b0a2dc15d5920f5e0",
+    "generated_at": "2026-08-26T03:15:11.714406+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

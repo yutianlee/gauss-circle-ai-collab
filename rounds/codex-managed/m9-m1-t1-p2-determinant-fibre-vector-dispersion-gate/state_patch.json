@@ -1,0 +1,306 @@
+{
+  "starting_graph_sha256": "815c15c4aba04d4ac8e05a3af89db78b05607242fc933e23ec86954138700c89",
+  "reversibility": {
+    "rule": "Remove the one created obligation and every rejected-claim record introduced by this patch; remove every dependencies_added and evidence_added value; restore the next_action value and last-updated metadata recorded below. This recovers the canonical starting graph.",
+    "restore_next_action": {
+      "M9-M1-hard-top-high-radical-small-t-residual-estimate": "Round 195 must prove the complete physical lower-close/upper-far complement P_2: |d-gm|<=D_L and |d'-gm'|>D_L, D_L=ceil(sqrt L), inside the exact Round-192 core. At fixed packet prove |R_core,fix^sigma(P_2W)|<<H_B \\mathfrak m kappa u X^epsilon and then the outer L^2X^epsilon estimate. In primitive coordinates Delta_-=kappa(U-v)-2w and Delta_+=kappa(U-v)+2S satisfy 2h=v Delta_+ + U Delta_- - kappa(U^2-v^2); fix the close coordinate (g,Delta_-), dyadically resolve g Delta_+>D_L, retain the actual endpoint/carry/mask family as a vector, and obtain the full Y/(H_B \\mathfrak m) saving before positive norms. Preserve T=0 and every simultaneous strict Farey condition for T>=1, both orientations, the full anchor Fourier aggregate, residual selectors, unequal endpoints, carries, phases, cells, crossings, affine births/deaths, mask commutators, coprimality flips, conjugations and zero extensions under one outer real part. Stop on a target-sized diagonal, collision self-return, coefficient-blind reduction, strict submask, branch deletion or lost deficit; do not pivot in-round. P_1, every original t>=2 small-G incidence, the large-G near-resonant complement, smooth M1, GAR and all M2 owners remain open."
+    },
+    "restore_metadata": {
+      "M9-M1-hard-top-high-radical-small-t-residual-estimate": {
+        "last_updated_round": 194,
+        "last_updated_at": "2026-08-30T02:58:26"
+      }
+    }
+  },
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "M9-M1-hard-top-t1-rho-large-P2-absolute-capacity-sectors",
+        "type": "candidate_lemma",
+        "track": "M9_analytic",
+        "title": "Hard-M1 t=1 rho-large P2 absolute-capacity sectors",
+        "status": "proved_internal",
+        "statement_tex": "Fix the exact accepted Round-192 hard-M1 original-t=1 rho-large core, its physical opposing-incidence source N=dm, N+r=d'm', all literal fields, the T=0/T>=1 Farey-core convention, both orientations and frequency signs, and one outer real part. Put g=(d,d'), D_L=ceil(sqrt L), and impose P_2=1_(|d-gm|<=D_L)1_(|d'-gm'|>D_L) on the physical source before Fourier expansion or height differencing. With kappa the inward physical cross gcd, the whole sector kappa>=D_L has fixed-packet size O(H_B \\mathfrak m kappa u X^epsilon) and outer size O(L^2X^epsilon). On kappa<D_L the complete positive bound is |R_core,fix(P_2W)|<<u{kappa+min(Y,D_L)}X^epsilon. Hence every packet with min(Y,D_L)<=H_B \\mathfrak m kappa is also target-safe, and the union of both safe sectors has outer size O(L^2X^epsilon) after the exact \\mathfrak m^(-1) lift and accepted anchor, band, divisor and shell ledger. The exact remaining packet region is kappa<D_L and min(Y,D_L)>H_B \\mathfrak m kappa. The large-kappa proof is the absolute count sum_(kappa>=D_L) D_L(1+L/kappa)^2<<L^2; the small-kappa proof combines fixed-height Yu and all-height D_Lu counts with the accepted kappa u terminal/Fejer cost. The transported physical-mask commutator, births, deaths, carries, endpoints, phases, cells, crossings and zero extensions remain in the recomputed core. Within one remaining row the far fibre has O(1) samples; the plus fixed-mode anchor ratio is carry-dependent and the minus ratio is one. Same-site event Gram blocks recombine to the original masked jump. Live squarefreeness gives only U^epsilon congruence multiplicity and does not control the actual cross-row ++,+-,-+,-- coefficient Gram. This node proves no complete P2, P1, complete original t=1 or t>=2 range, owner, parent, endpoint theorem, bridge, target, or exponent.",
+        "dependencies": [
+          "M9-M1-hard-top-t1-rho-large-gcd-scaled-close-sector"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "proofs/kernels/m9_m1_hard_top_t1_p2_absolute_capacity_sectors.md",
+            "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/candidates/formalized_hard_m1_t1_p2_large_kappa_sector.md",
+            "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reports/literal_p2_determinant_fibre_vector_attack.md",
+            "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reports/p2_gram_diagonal_collision_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/conductor_round195_report_reconciliation.md",
+            "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/count_power_masked_operator_seam_review.md",
+            "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/count_power_masked_operator_postrepair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/absolute_capacity_sector_power_postrepair_review.md",
+            "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/literal_gram_capacity_postrepair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/blind_packet_notation_terminal_verification.md",
+            "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/final_kernel_count_power_consistency_review.md",
+            "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/final_kernel_gram_scope_provenance_review.md",
+            "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/final_kernel_blind_evidence_consistency_review.md",
+            "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/conductor_round195_adjudication.md",
+            "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/synthesis.md"
+          ],
+          "negative": [],
+          "inconclusive": [
+            "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reports/blind_p2_determinant_fibre_rederivation.md",
+            "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/blind_post_unmask_p2_fibre_review.md",
+            "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/blind_post_unmask_p2_fibre_postrepair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/literal_gram_nogo_owner_scope_seam_review.md",
+            "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/controls/conductor_round195_launch_validation.md"
+          ]
+        },
+        "owner": "Codex conductor",
+        "next_action": "Prove the exact remaining P2 packet region kappa<D_L and min(Y,D_L)>H_B \\mathfrak m kappa, or leave it open and attack the disjoint physical P1 complement in a separately frozen round. For the P2 remainder, form the joint ++,+-,-+,-- cross-row Gram only after exact same-site event recombination and retain actual endpoint products, square-root phases, Fejer factors, residual selectors, unequal translations, carries, births/deaths, physical-mask commutators, both T branches, zero extensions, and one outer real part. Within-row determinant multiplicity, anchor phases, arbitrary bounded arrays, separate orientation norms, or the squarefree root count alone are insufficient."
+      }
+    ],
+    "update": [
+      {
+        "id": "M9-M1-hard-top-high-radical-small-t-residual-estimate",
+        "dependencies_added": [
+          "M9-M1-hard-top-t1-rho-large-P2-absolute-capacity-sectors"
+        ],
+        "evidence_added": {
+          "inconclusive": [
+            "proofs/kernels/m9_m1_hard_top_t1_p2_absolute_capacity_sectors.md",
+            "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/candidates/formalized_hard_m1_t1_p2_large_kappa_sector.md",
+            "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reports/literal_p2_determinant_fibre_vector_attack.md",
+            "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reports/p2_gram_diagonal_collision_hostile_audit.md",
+            "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/conductor_round195_report_reconciliation.md",
+            "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/count_power_masked_operator_seam_review.md",
+            "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/count_power_masked_operator_postrepair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/absolute_capacity_sector_power_postrepair_review.md",
+            "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/literal_gram_capacity_postrepair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/blind_packet_notation_terminal_verification.md",
+            "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/final_kernel_count_power_consistency_review.md",
+            "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/final_kernel_gram_scope_provenance_review.md",
+            "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/final_kernel_blind_evidence_consistency_review.md",
+            "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/conductor_round195_adjudication.md",
+            "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/synthesis.md",
+            "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reports/blind_p2_determinant_fibre_rederivation.md",
+            "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/blind_post_unmask_p2_fibre_review.md",
+            "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/blind_post_unmask_p2_fibre_postrepair_verification.md",
+            "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/reviews/literal_gram_nogo_owner_scope_seam_review.md",
+            "rounds/codex-managed/m9-m1-t1-p2-determinant-fibre-vector-dispersion-gate/controls/conductor_round195_launch_validation.md"
+          ]
+        },
+        "next_action": "Rounds 187-195 prove the low Fourier packets, imprimitive lifts, projectively slow rows, signed-inverse-small rows, terminal and Fejer projections, a strict Farey union, the double-close physical sector, and the two P2 absolute-capacity sectors. The exact P2 remainder is kappa<D_L with min(Y,D_L)>H_B \\mathfrak m kappa; P1 also remains open. Prove one separately frozen complement while retaining both T branches, both orientations, actual endpoints and square-root phases, carries, births/deaths, mask commutators, cells, crossings and zero extensions under one outer real part. Even complete original t=1 success leaves every t>=2 small-G incidence and the large-G near-resonant complement open."
+      }
+    ],
+    "correct_rejected": [],
+    "reject": [
+      {
+        "id": "Round195-full-P2-proved",
+        "reason": "The exact packet region kappa<D_L and min(Y,D_L)>H_B \\mathfrak m kappa remains open."
+      },
+      {
+        "id": "Round195-large-kappa-count-proves-small-kappa",
+        "reason": "The L^2 physical count uses kappa>=D_L and does not extend to every small-kappa packet."
+      },
+      {
+        "id": "Round195-capacity-subsector-proves-all-P2",
+        "reason": "The condition min(Y,D_L)<=H_B \\mathfrak m kappa is a strict packet subsector with an explicit reverse complement."
+      },
+      {
+        "id": "Round195-positive-capacity-is-literal-lower-mass",
+        "reason": "All displayed capacities are upper bounds; actual endpoint coefficients may vanish or cancel."
+      },
+      {
+        "id": "Round195-fixed-plus-anchor-ratio-is-minus-eaq",
+        "reason": "At one retained mode the plus ratio is carry-dependent (-1)^c e(a/q), not uniformly -e(a/q)."
+      },
+      {
+        "id": "Round195-pre-Fourier-parity-multiplies-one-retained-mode",
+        "reason": "The physical parity flip is recovered only after all anchor modes recombine and cannot be multiplied by a single-mode phase."
+      },
+      {
+        "id": "Round195-source-channel-labels-are-orthogonal",
+        "reason": "Same-site current and previous channels have equal-phase Gram blocks and recombine to the original masked jump."
+      },
+      {
+        "id": "Round195-four-orientation-blocks-may-be-separated",
+        "reason": "The +- and -+ Gram blocks are part of the one outer aggregate and cannot be discarded by separate norms."
+      },
+      {
+        "id": "Round195-squareful-blind-minus-family-is-live",
+        "reason": "The U=p^2 family violates squarefree nonzero support and multiple live packet normalizations."
+      },
+      {
+        "id": "Round195-blind-shadow-violates-live-target",
+        "reason": "Restoring u=gU makes the proposed coherent sqrt(U) family smaller than the fixed-packet target."
+      },
+      {
+        "id": "Round195-quadratic-root-bound-closes-P2",
+        "reason": "The live U^epsilon root count does not price the anchor denominator or actual coefficient correlations."
+      },
+      {
+        "id": "Round195-determinant-multiplicity-controls-actual-Gram",
+        "reason": "Fibre multiplicity alone controls neither endpoint-vector inner products nor square-root phases."
+      },
+      {
+        "id": "Round195-q-over-J-is-epsilon-loss",
+        "reason": "The q/J Abel denominator must be paid explicitly and is canceled by projective J/q density only in the proved counts."
+      },
+      {
+        "id": "Round195-safe-packet-condition-is-physical-mask",
+        "reason": "The small-kappa capacity condition is a spectral packet selector, not a post-expansion substitute for the physical P2 mask."
+      },
+      {
+        "id": "Round195-post-expansion-scalar-mask-equals-physical-sector",
+        "reason": "P2 is imposed before Fourier expansion and height differencing; the core is rerun on the masked physical source."
+      },
+      {
+        "id": "Round195-mask-commutator-can-be-dropped",
+        "reason": "Transported physical masking produces an exact commutator plus affine births and deaths in the recomputed core."
+      },
+      {
+        "id": "Round195-T-zero-may-be-omitted",
+        "reason": "At T=0 the Farey projector is zero and the entire inherited rho-large remainder must be retained."
+      },
+      {
+        "id": "Round195-within-row-far-fibre-is-long",
+        "reason": "A far-defect parity step changes height by v or U, so a live height block contains only O(1) samples per row."
+      },
+      {
+        "id": "Round195-outer-count-has-a-hidden-height-factor",
+        "reason": "The determinant fixes h from the primitive coordinates; the direct physical count covers the whole Fejer range."
+      },
+      {
+        "id": "Round195-strict-capacity-sector-closes-original-t1",
+        "reason": "P1, the strict P2 remainder, and other original-t incidences remain open."
+      },
+      {
+        "id": "Round195-strict-capacity-sector-closes-hard-M1-or-M9-M1",
+        "reason": "The subordinate sectors do not close the hard small-t owner or the independent smooth M1 parent."
+      },
+      {
+        "id": "Round195-strict-capacity-sector-closes-M9-or-quarter-target",
+        "reason": "M9-M1, M9-M2, endpoint uniformity, and both bridge routes remain incomplete."
+      },
+      {
+        "id": "Round195-strict-capacity-sector-improves-global-exponent",
+        "reason": "No parent, bridge, or theorem endpoint is promoted, so no exponent changes."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "M9-M1-hard-top-t1-rho-large-gcd-scaled-close-sector",
+        "reason": "The accepted Round-193 physical P_cl/P1/P2 partition is the unchanged direct interface."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-rho-large-farey-covector-reduction",
+        "reason": "The accepted Round-192 core and both T branches remain unchanged."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-fast-signed-inverse-transport-reduction",
+        "reason": "The accepted Round-191 signed-inverse, terminal, Fejer, and Abel interfaces are reused unchanged."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-high-h-dual-frequency-projective-reduction",
+        "reason": "The accepted projective row and fixed-to-outer ledgers are reused unchanged."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-high-h-imprimitive-lift-gcd-reduction",
+        "reason": "The accepted lift identity and weight are reused unchanged."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-high-h-inverse-residue-conductor-reduction",
+        "reason": "The accepted Fourier conductor reduction remains unchanged."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-residual-fejer-tangent-gcd-reduction",
+        "reason": "The accepted primitive physical charts and multiplicity-one map are reused unchanged."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-comparable-factor-exchange-sector",
+        "reason": "The accepted comparable-factor sector and residual selector remain unchanged."
+      },
+      {
+        "id": "M9-M1-hard-top-small-t-nonresonant-primitive-ray-sector",
+        "reason": "The accepted primitive-ray strict sector remains unchanged."
+      },
+      {
+        "id": "M9-M1-hard-top-squarefree-radical-sector-reduction",
+        "reason": "The accepted squarefree-radical reduction remains unchanged."
+      },
+      {
+        "id": "M9-M1-top-endpoint-signed-cone",
+        "reason": "Complete original t=1, every t>=2 small-G incidence, and the near-resonant complement remain open."
+      },
+      {
+        "id": "M9-M1-direct-smooth-residual-blockwise-estimate",
+        "reason": "Round 195 treats no part of the independent smooth direct-M1 parent."
+      },
+      {
+        "id": "M9-M1-physical-one-count-assembly",
+        "reason": "The conditional direct-M1 assembly still lacks both complete analytic parents."
+      },
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "reason": "The alternative GAR route is not treated."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "The hard high-radical small-t owner and smooth direct-M1 parent remain open."
+      },
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "reason": "No complete hard-TOP M2 channel is proved or changed."
+      },
+      {
+        "id": "M9-M2-smooth-balanced-quarter-packet-estimate",
+        "reason": "No balanced M2 estimate is proved."
+      },
+      {
+        "id": "M9-M2-smooth-unbalanced-three-quarter-estimate",
+        "reason": "No unbalanced M2 estimate is proved."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Hard TOP, BAL, and UNBAL remain open."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "A subordinate hard-M1 packet sector proves no endpoint-uniform parent theorem."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain incomplete."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The standard bridge still requires complete M9."
+      },
+      {
+        "id": "GC-global-M1-alternative-bridge",
+        "reason": "The alternative bridge still requires GAR or total active M1 and complete M9-M2."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The strongest theorem proved by the internal architecture remains exponent one third."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "The accepted external benchmark remains 0.3144831759740614... ."
+      },
+      {
+        "id": "GC-target",
+        "reason": "Both lawful quarter routes retain multiple open analytic parents and connectors."
+      },
+      {
+        "id": "Divisor-bound-elementary",
+        "reason": "The elementary divisor bound is inherited unchanged."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 8,
+    "idea_quality_score": 8,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 195 proves the whole physical P2 large-kappa sector and a second exact small-kappa packet sector by absolute counts, sharpens the remaining capacity from Y to min(Y,D_L), corrects the plus-mode carry phase, rejects the blind squareful false shadow, and isolates the exact strict packet complement and actual four-block Gram seam. Complete P2, every owner and parent, all bridges, the target and all exponents remain unchanged."
+  }
+}

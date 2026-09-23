@@ -1,0 +1,232 @@
+{
+  "starting_graph_sha256": "f43248060d7876a96d4554cd13372dbf267387bcbe44a832b87cd5f571801575",
+  "reversibility": {
+    "rule": "Remove every rejected-claim record introduced by this patch and every inconclusive evidence_added value; restore the selected node's next_action and last-updated metadata below. This recovers the canonical starting graph.",
+    "restore_next_action": {
+      "M9-M1-hard-top-high-radical-small-t-residual-estimate": "The large-gcd nonresonant primitive-ray sector, the canonical close opposite-character XOR part of t=1, and the complete monotone plus polylogarithmic-h tangent-gcd part of the exact t=1 residual are now target-safe. Prove the exact canonical h>floor((log(2X))^B) complement through its one-outer-real-part dyadic signed relation, retaining both orientations, every row label, selector, zero extension, literal endpoint field, and sign, and gaining the full factor Y on Y<h<=2Y. Bare row alternation and positive recombination remain at capacity. Even a complete t=1 proof leaves t>=2 small-G incidences and the large-G near-resonant complement open."
+    },
+    "restore_metadata": {
+      "M9-M1-hard-top-high-radical-small-t-residual-estimate": {
+        "last_updated_round": 185,
+        "last_updated_at": "2026-08-28T02:16:28"
+      }
+    }
+  },
+  "proof_obligations": {
+    "create": [],
+    "update": [
+      {
+        "id": "M9-M1-hard-top-high-radical-small-t-residual-estimate",
+        "evidence_added": {
+          "inconclusive": [
+            "rounds/codex-managed/full-proof-round183-185-strategy-literature-review/reports/full_graph_frontier_reconstruction.md",
+            "rounds/codex-managed/full-proof-round183-185-strategy-literature-review/reports/current_primary_literature_reassessment.md",
+            "rounds/codex-managed/full-proof-round183-185-strategy-literature-review/reports/blind_round187_frontier_selection.md",
+            "rounds/codex-managed/full-proof-round183-185-strategy-literature-review/reviews/dependency_power_selection_seam_review.md",
+            "rounds/codex-managed/full-proof-round183-185-strategy-literature-review/reviews/full_graph_frontier_postrepair_verification.md",
+            "rounds/codex-managed/full-proof-round183-185-strategy-literature-review/reviews/source_hypotheses_currency_interface_review.md",
+            "rounds/codex-managed/full-proof-round183-185-strategy-literature-review/reviews/blind_post_unmask_frontier_selection_review.md",
+            "sources/milicevic_robinson_shupe_2026.md",
+            "rounds/codex-managed/full-proof-round183-185-strategy-literature-review/reviews/conductor_round186_adjudication.md",
+            "rounds/codex-managed/full-proof-round183-185-strategy-literature-review/controls/conductor_round186_controls.md",
+            "rounds/codex-managed/full-proof-round183-185-strategy-literature-review/synthesis.md"
+          ]
+        },
+        "next_action": "Round 186 freezes exactly the one-sided dyadic high-h tangent-gcd inequality for every fixed B and every Y>H_B: bound the single outer real part of the complete sum over both orientations, every primitive row and affine index by O_(B,epsilon)(L^2X^epsilon), not its absolute value and not any positive rowwise surrogate. Retain the Round-184 selector, squarefree and coprime deletions, zero extensions, literal endpoint and profile fields, Fejer factor, phase, signs, canonical anchors, U=1 convention, and multiplicity one. Positive capacity is O(YL^2X^epsilon), so the proof must recover the complete factor Y before positive recombination. A stronger separate signed orientation argument is admissible only if it rigorously implies the joint one-sided inequality; no dyadic lower bound is required. Even success closes only the exact original-t=1 residual and leaves original t>=2 small-G incidences and the large-G near-resonant complement open.",
+        "last_updated_round": 186
+      }
+    ],
+    "correct_rejected": [],
+    "reject": [
+      {
+        "id": "Round186-report-agreement-proves-high-h-relation",
+        "reason": "Agreement among graph, source, and blind reports selects a frontier but supplies no cancellation for the literal high-h aggregate."
+      },
+      {
+        "id": "Round186-absolute-real-part-is-the-required-target",
+        "reason": "The accepted Fejer connector needs only a one-sided upper bound on the single outer real part; an absolute-real-part theorem is sufficient but unnecessarily stronger."
+      },
+      {
+        "id": "Round186-negative-dyadic-real-parts-require-control",
+        "reason": "Negative dyadic real parts help the one-sided Fejer upper bound and no blockwise lower bound is required."
+      },
+      {
+        "id": "Round186-positive-capacity-is-literal-lower-mass",
+        "reason": "The YL^2 ledger is a positive or coefficient-insensitive upper capacity, not a lower bound for the fixed literal signed coefficient."
+      },
+      {
+        "id": "Round186-all-proofs-must-couple-orientations-internally",
+        "reason": "The target couples both orientations, but separately proved stronger signed upper bounds could imply it; only inward absolute values and positive recombination are excluded."
+      },
+      {
+        "id": "Round186-rowwise-O1-closes-high-h",
+        "reason": "Even an O(1) estimate per row followed by positive recombination leaves the wrong global capacity and does not recover the full factor Y."
+      },
+      {
+        "id": "Round186-fixed-Y-power-loss-is-absorbable",
+        "reason": "A residual Y^eta for fixed eta>0 is not a logarithm and does not give the required uniform dyadic L^2 bound."
+      },
+      {
+        "id": "Round186-high-h-success-closes-complete-small-t-owner",
+        "reason": "It would close only the exact original-t=1 residual; original t>=2 small-G and large-G near-resonant incidences remain open."
+      },
+      {
+        "id": "Round186-high-h-success-closes-hard-M1-or-M9-M1",
+        "reason": "The rest of the small-t owner and the independent smooth direct-M1 parent remain open after hypothetical high-h success."
+      },
+      {
+        "id": "Round186-high-h-success-closes-M9-or-quarter-target",
+        "reason": "Every M2 parent, endpoint uniformity, route assembly, and bridge obligation remains separate."
+      },
+      {
+        "id": "Round186-K17a-or-K26-is-a-complete-hard-TOP-owner",
+        "reason": "K17a and K26 are unproved analytic residual targets inside proved reductions and do not replace the complete hard-TOP parent."
+      },
+      {
+        "id": "Round186-MRS-imports-to-high-h",
+        "reason": "MRS Theorem 1.1 is a complete product of shifted Kloosterman sums at one odd prime-power modulus, not the primitive affine varying-height one-outer-real-part aggregate."
+      },
+      {
+        "id": "Round186-MRS-imports-to-K17a-K26-or-UNBAL",
+        "reason": "The project objects fail the theorem's fixed prime-power complete-sum kernel, modulus, coefficient, and norm architecture before a lawful power map."
+      },
+      {
+        "id": "Round186-MRS-generic-bound-is-a-pure-q-saving",
+        "reason": "The generic estimate retains the factor p^(1+1/ceil(k/2)); it cannot be rewritten as a pure full-modulus saving."
+      },
+      {
+        "id": "Round186-source-audit-is-universal-literature-nonexistence",
+        "reason": "The no-import conclusion is dated and restricted to the named versioned primary corpus and official records through 2026-08-28."
+      },
+      {
+        "id": "Round186-critical-BAL-alone-closes-BAL",
+        "reason": "The remaining-label and exact-square BAL scope is an independent open owner."
+      },
+      {
+        "id": "Round186-GAR-bypasses-M9-M2",
+        "reason": "GAR may replace only direct M1 on the alternative route and still requires complete M9-M2."
+      },
+      {
+        "id": "Round186-graded-lane-is-a-quarter-route",
+        "reason": "The graded determinant/local-moment lane is a separate sub-one-third program and has no implication edge to either quarter route."
+      },
+      {
+        "id": "Round186-smallest-deficit-or-report-vote-selects-frontier",
+        "reason": "Selection uses literal theorem scope, accepted connector, freshness, and owner leverage as well as power; reports are not adjudicated by vote."
+      },
+      {
+        "id": "Round186-strategy-review-improves-global-exponent",
+        "reason": "No analytic parent, bridge, endpoint theorem, global theorem, or source import is proved, so all certified exponent scopes remain unchanged."
+      },
+      {
+        "id": "Round186-in-round-pivot-is-authorized",
+        "reason": "Round 187 must close or rigorously diagnose the frozen high-h interface before a different owner can be selected."
+      }
+    ],
+    "no_change": [
+      {
+        "id": "GC-target",
+        "reason": "Both lawful quarter routes retain multiple open analytic parents and route-specific connectors."
+      },
+      {
+        "id": "Conditional-bridge",
+        "reason": "The standard bridge remains derived only under complete M9."
+      },
+      {
+        "id": "GC-global-M1-alternative-bridge",
+        "reason": "The alternative bridge still requires complete GAR or total active M1 and all of M9-M2."
+      },
+      {
+        "id": "M9",
+        "reason": "M9-M1, M9-M2, and endpoint uniformity remain incomplete."
+      },
+      {
+        "id": "M9-endpoint-uniformity",
+        "reason": "A strategy and source review proves no real-X endpoint assembly theorem."
+      },
+      {
+        "id": "M9-M1",
+        "reason": "The hard small-t owner and the independent smooth direct-M1 parent remain open."
+      },
+      {
+        "id": "M9-M1-top-endpoint-signed-cone",
+        "reason": "The selected relation proves no complete small-t residual or hard signed cone."
+      },
+      {
+        "id": "M9-M1-hard-top-small-t-nonresonant-primitive-ray-sector",
+        "reason": "The accepted Round-183 strict sector remains proved at exactly its existing scope."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-comparable-factor-exchange-sector",
+        "reason": "The accepted Round-184 XOR sector remains proved at exactly its existing scope."
+      },
+      {
+        "id": "M9-M1-hard-top-t1-residual-fejer-tangent-gcd-reduction",
+        "reason": "The accepted Round-185 finite reduction and bounded-height sector remain proved; the high-h inequality is open."
+      },
+      {
+        "id": "M9-M1-direct-smooth-residual-blockwise-estimate",
+        "reason": "The independent smooth direct-M1 parent receives no analytic estimate."
+      },
+      {
+        "id": "M9-M1-global-angular-radial-estimate",
+        "reason": "The complete GAR owner remains open."
+      },
+      {
+        "id": "M9-M1-global-lower-radial-signed-estimate",
+        "reason": "The strategy review imports no lower-radial cancellation theorem."
+      },
+      {
+        "id": "M9-M2",
+        "reason": "Complete hard TOP, full BAL, and UNBAL remain open."
+      },
+      {
+        "id": "M9-M2-top-endpoint-signed-cone",
+        "reason": "K17a, K26, other t=1, few-point, collar, and density channels remain below complete hard TOP."
+      },
+      {
+        "id": "M9-M2-top-endpoint-density-discrepancy-energy",
+        "reason": "No complete hard-TOP density or energy theorem is proved."
+      },
+      {
+        "id": "M9-M2-smooth-balanced-quarter-packet-estimate",
+        "reason": "The critical and remaining-label BAL scopes remain independently open."
+      },
+      {
+        "id": "M9-M2-balanced-double-far-oscillatory-remainder",
+        "reason": "No actual-symbol nonlocal estimate is proved for the critical BAL remainder."
+      },
+      {
+        "id": "M9-M2-balanced-remaining-label-owner-quantifier-completion",
+        "reason": "No all-label or exact-square-boundary BAL theorem is proved."
+      },
+      {
+        "id": "M9-M2-smooth-unbalanced-three-quarter-estimate",
+        "reason": "No signed varying-modulus literal-vector theorem is proved or imported."
+      },
+      {
+        "id": "M9-M2-hard-top-t1-residual-k17a-primitive-alias-conductor-reduction",
+        "reason": "The K17a reduction remains proved while its literal high-conductor estimate remains unproved."
+      },
+      {
+        "id": "M9-M2-hard-top-t1-residual-k26-near-peak-row-gram-self-return-obstruction",
+        "reason": "The K26 scoped reduction and self-return obstruction remain unchanged; the unequal-product theorem is unproved."
+      },
+      {
+        "id": "GC-partial-one-third",
+        "reason": "The strongest theorem proved by the internal architecture remains exponent one third."
+      },
+      {
+        "id": "GC-external-Li-Yang-theta-star",
+        "reason": "Li-Yang v2 remains the accepted external benchmark at 0.3144831759740614... ."
+      }
+    ]
+  },
+  "round_assessment": {
+    "mathematical_progress_score": 3,
+    "idea_quality_score": 9,
+    "state_evidence_score": 10,
+    "calibration_score": 10,
+    "reason": "Round 186 proves no new analytic estimate, but reconstructs both lawful quarter routes after Rounds 183--185, independently verifies the exact high-h one-sided factor-Y interface, updates the current primary-source guardrails through 2026-08-28, and freezes one literal Round-187 objective. Every analytic status, theorem statement, dependency, bridge, endpoint result, and certified exponent remains unchanged."
+  }
+}

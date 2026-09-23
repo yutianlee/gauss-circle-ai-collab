@@ -1,0 +1,250 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 188,
+    "round_type": "m9_m1_t1_high_h_imprimitive_lift_gcd_gate",
+    "campaign_id": "m9-m1-t1-high-h-imprimitive-lift-gcd-gate",
+    "title": "Hard-M1 t=1 high-height imprimitive-lift gcd gate",
+    "status": "complete",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "be0eca9ca93c3534cca958d70b5541d03d28ff993ebfbcbca6be3cd393fae5ff",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 95,
+      "numerical_experimental_maximum_percent": 5,
+      "planned_numerical_percent": 3,
+      "computation_policy": "Mathematica or Python may test finite lift partitions, exact Fourier coefficients, divisor identities, and adversarial completion controls only. Computation is diagnostic_only and cannot certify an asymptotic estimate."
+    },
+    "target_obligations": [
+      "M9-M1-hard-top-high-radical-small-t-residual-estimate",
+      "M9-M1-hard-top-t1-high-h-inverse-residue-conductor-reduction",
+      "M9-M1-hard-top-t1-residual-fejer-tangent-gcd-reduction",
+      "M9-M1-top-endpoint-signed-cone",
+      "M9-M1"
+    ],
+    "frozen_target": {
+      "question": "Can the exact Round-187 high-conductor complement be bounded by sharpening the fixed-(kappa,u,U) atom count to one dyadic height block, thereby proving every sufficiently imprimitive Fourier lift Q(k,U)>=Y target-safe, and can the remaining primitive or moderately imprimitive packet be controlled by a genuinely signed reciprocity, completion, or determinant mechanism without inventing variation of the literal amplitude?",
+      "reference_formula": "Fix Q=H_B=floor((log(2X))^B) and Y>Q. Bound Re R_(Y,Q)^sigma by O_(B,epsilon)(L^2X^epsilon), where R is exactly K187.7 restricted to U>4Q, q_U(k)=U/(k,U)>Q, and |k|_U>Q. Put m=(k,U), so U=mq, k=ma, (a,q)=1, c_U(k)=m^(-1)c_q(a). First test the exact sector Qm>=Y and retain the exact complementary joint aggregate Qm<Y under the same single outer real part.",
+      "quantities": [
+        "The carrier, both orientations, all h,v,t,k, selectors, squarefree and coprimality deletions, profiles, endpoints, phase, signs, and zero extensions are exactly K185.27 and K185.30--K185.35 as inherited through K187.1--K187.11.",
+        "The exact high packet has U>4Q, q_U(k)>Q, and |k|_U>Q. The lift variable is m=(k,U)=U/q_U(k), with unique U=mq and k=ma for a unit modulo q.",
+        "On a single dyadic height block, the predicted fixed-(kappa,u,U) live-atom count is O(YL), not the all-height O(UL) count. This and exact-conductor mass O(log(2q)/m) must be proved before any target-safe lift claim.",
+        "The proposed strict lift sector is Qm>=Y. Its exact complement has Qm<Y and must retain one outer real part over all remaining labels until a signed estimate is proved.",
+        "The complete positive capacity is O(YL^2X^epsilon), while the target is O(L^2X^epsilon). Fixed polylogarithmic losses may be rebudgeted, but no positive power of Y may be absorbed.",
+        "Reciprocity, height completion, determinant transposition, or a squarefree-sieve opening is admissible only with every literal weight and hypothesis verified. Raw reflection, arbitrary-weight large sieve, positive transform energy, and assumed periodicity or bounded variation are forbidden shortcuts.",
+        "Even complete success closes only the exact original-t=1 residual through prior connectors. Every original t>=2 small-G incidence and the large-G near-resonant complement remain open."
+      ]
+    },
+    "completion_criteria": [
+      "Derive and verify the unique lift coordinates U=mq, k=ma and the exact coefficient and phase normalization on the full Round-187 high packet.",
+      "Prove or refute the O(YL) dyadic atom count at fixed (kappa,u,U), sum the complete Qm>=Y sector with exact divisor powers, and retain an exact complementary signed aggregate.",
+      "Attempt the complete one-sided target on Qm<Y using only a verified actual-coefficient reciprocity, completion, determinant, or sieve mechanism; state the first unproved relation and its full power deficit if it fails.",
+      "Preserve every selector, arithmetic deletion, profile, endpoint, phase, orientation, affine index, terminal dyadic block, zero extension, and the single outer real part.",
+      "Explain why any gain fails for the unsigned or adversarial bounded-array control and why no positive norm or raw orientation pairing supplies the factor Y.",
+      "Receive a statement-only independent derivation of the lift split, target ledger, exact complement, and first remaining relation.",
+      "Review normalization, multiplicity, dyadic count, divisor summation, literal deletion, completion hypotheses, one-sided scope, and downstream owner scope before promotion.",
+      "Apply no graph change without a mechanically valid State Patch, independent reverse/replay audit, and green lifecycle validation; close under exactly one declared exit label without an in-round owner pivot."
+    ],
+    "controls": [
+      "exact_round187_high_packet",
+      "literal_K185_27_30_35_carrier",
+      "single_outer_real_part_and_both_orientations",
+      "unique_U_mq_k_ma_lift_coordinates",
+      "exact_cU_m_inverse_cq_normalization",
+      "dyadic_fixed_kappa_u_U_atom_count",
+      "triple_divisor_convolution_power",
+      "Qm_ge_Y_sector_and_exact_complement",
+      "full_factor_Y_before_positive_recombination",
+      "selector_squarefree_coprime_deletions",
+      "profile_endpoint_phase_zero_extension",
+      "no_invented_height_or_residue_variation",
+      "no_positive_large_sieve_Poisson_alias_energy",
+      "no_raw_orientation_reflection_or_conductor_self_return",
+      "false_unsigned_and_adversarial_controls",
+      "original_t1_only_downstream_scope",
+      "no_in_round_owner_pivot",
+      "exponent_quarantine"
+    ],
+    "exit_labels": [
+      "hard_m1_t1_high_h_target",
+      "strict_high_h_imprimitive_lift_sector",
+      "high_h_primitive_lift_reciprocity_or_deletion_no_go"
+    ],
+    "tasks": [
+      {
+        "id": "imprimitive_lift_signed_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "completed",
+        "target": "Reparameterize the exact Round-187 high packet by U=mq and k=ma. Prove the widest complete target-safe imprimitive-lift sector, beginning with Qm>=Y and its exact complement, then attack the remaining Qm<Y aggregate by a literal signed reciprocity, height-completion, determinant, or sieve mechanism. Either prove the full target or state the first exact unproved relation with restored powers.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round188_m1_t1_high_h_imprimitive_lift_gcd_strategy.md",
+          "proofs/kernels/m9_m1_hard_top_t1_high_h_inverse_residue_conductor_reduction.md",
+          "proofs/kernels/m9_m1_hard_top_t1_residual_fejer_tangent_gcd_reduction.md",
+          "rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reports/literal_height_fourier_attack.md",
+          "rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reports/deletion_resonance_capacity_audit.md",
+          "rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/synthesis.md"
+        ],
+        "required_controls": [
+          "exact_round187_high_packet",
+          "literal_K185_27_30_35_carrier",
+          "single_outer_real_part_and_both_orientations",
+          "unique_U_mq_k_ma_lift_coordinates",
+          "exact_cU_m_inverse_cq_normalization",
+          "dyadic_fixed_kappa_u_U_atom_count",
+          "triple_divisor_convolution_power",
+          "Qm_ge_Y_sector_and_exact_complement",
+          "full_factor_Y_before_positive_recombination",
+          "selector_squarefree_coprime_deletions",
+          "profile_endpoint_phase_zero_extension",
+          "no_invented_height_or_residue_variation",
+          "no_positive_large_sieve_Poisson_alias_energy",
+          "false_unsigned_and_adversarial_controls",
+          "original_t1_only_downstream_scope",
+          "exponent_quarantine"
+        ],
+        "required_output": [
+          "A seven-section analytical report satisfying the repository report contract.",
+          "An exact lift-coordinate formula, dyadic atom and divisor-power ledger, target-safe sector, and exact signed complement.",
+          "A complete target proof or the first rigorously isolated actual-coefficient reciprocity/completion relation and quantitative deficit.",
+          "Write only the assigned report and any explicitly named diagnostic under this campaign; make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/reports/imprimitive_lift_signed_attack.md"
+      },
+      {
+        "id": "lift_power_completion_hostile_audit",
+        "role": "barrier_no_go",
+        "access_mode": "selected_context",
+        "status": "completed",
+        "target": "Hostilely audit the proposed Qm>=Y sector and every attempted extension. Verify the O(YL) atom count, q/U=1/m mass, triple-divisor sum, terminal ranges, and epsilon budget; test whether reciprocity or completion survives literal selectors, arithmetic deletions, endpoints, and phases, or whether it self-returns to the exact primitive-lift aggregate.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round188_m1_t1_high_h_imprimitive_lift_gcd_strategy.md",
+          "proofs/kernels/m9_m1_hard_top_t1_high_h_inverse_residue_conductor_reduction.md",
+          "proofs/kernels/m9_m1_hard_top_t1_residual_fejer_tangent_gcd_reduction.md",
+          "rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reports/deletion_resonance_capacity_audit.md",
+          "rounds/codex-managed/m9-m1-t1-high-h-inverse-residue-fourier-gate/reviews/blind_post_unmask_owner_scope_seam_review.md"
+        ],
+        "required_controls": [
+          "exact_round187_high_packet",
+          "literal_K185_27_30_35_carrier",
+          "single_outer_real_part_and_both_orientations",
+          "unique_U_mq_k_ma_lift_coordinates",
+          "exact_cU_m_inverse_cq_normalization",
+          "dyadic_fixed_kappa_u_U_atom_count",
+          "triple_divisor_convolution_power",
+          "Qm_ge_Y_sector_and_exact_complement",
+          "full_factor_Y_before_positive_recombination",
+          "selector_squarefree_coprime_deletions",
+          "profile_endpoint_phase_zero_extension",
+          "no_invented_height_or_residue_variation",
+          "no_positive_large_sieve_Poisson_alias_energy",
+          "no_raw_orientation_reflection_or_conductor_self_return",
+          "false_unsigned_and_adversarial_controls",
+          "original_t1_only_downstream_scope",
+          "exponent_quarantine"
+        ],
+        "required_output": [
+          "A seven-section hostile analytical report satisfying the repository report contract.",
+          "A fully restored power and divisor table for the proposed sector and its complement.",
+          "A validation, repair, or refutation of every completion/reciprocity step, with a bounded diagnostic only if useful.",
+          "Write only the assigned report and any explicitly named diagnostic under this campaign; make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/reports/lift_power_completion_hostile_audit.md"
+      },
+      {
+        "id": "blind_lift_gcd_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "completed",
+        "target": "Independently derive the exact Fourier-lift decomposition of the stated high packet, the sharpest target-safe lift-gcd sector obtainable from the dyadic atom count, and the first remaining signed relation, using only the self-contained statement packet.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/blind_statement.md"
+        ],
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "state/active_campaign.yml",
+          "all strategy files",
+          "all source cards and web-search results",
+          "all prior round reports, reviews, controls, candidates, kernels, and synthesis",
+          "all Round-188 sibling reports, reviews, controls, and conductor analysis"
+        ],
+        "required_controls": [
+          "exact_round187_high_packet",
+          "literal_K185_27_30_35_carrier",
+          "single_outer_real_part_and_both_orientations",
+          "unique_U_mq_k_ma_lift_coordinates",
+          "exact_cU_m_inverse_cq_normalization",
+          "dyadic_fixed_kappa_u_U_atom_count",
+          "triple_divisor_convolution_power",
+          "Qm_ge_Y_sector_and_exact_complement",
+          "full_factor_Y_before_positive_recombination",
+          "selector_squarefree_coprime_deletions",
+          "profile_endpoint_phase_zero_extension",
+          "no_invented_height_or_residue_variation",
+          "no_positive_large_sieve_Poisson_alias_energy",
+          "false_unsigned_and_adversarial_controls",
+          "original_t1_only_downstream_scope",
+          "exponent_quarantine"
+        ],
+        "required_output": [
+          "A seven-section statement-only report satisfying the repository report contract.",
+          "An independent normalization, multiplicity and dyadic-power derivation, exact sector/complement, and first unproved signed relation.",
+          "A proof or rigorous no-go without inferring hidden regularity for the fixed literal amplitude.",
+          "Write only the assigned report and make no graph or shared-state edit."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-t1-high-h-imprimitive-lift-gcd-gate/reports/blind_lift_gcd_rederivation.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "lift_normalization_and_multiplicity",
+        "requirement": "Verify U=mq, k=ma uniqueness, q/U=1/m coefficient scaling, phase reduction, carrier multiplicity, and both orientation signs."
+      },
+      {
+        "id": "dyadic_atom_divisor_and_power_scope",
+        "requirement": "Verify the O(YL) fixed-(kappa,u,U) count, terminal block, triple-divisor convolution, all L,Y,Q,X powers, and epsilon rebudgeting."
+      },
+      {
+        "id": "literal_deletion_endpoint_and_one_sided_scope",
+        "requirement": "Verify that every selector, squarefree/coprime mask, profile, endpoint, phase, zero extension, orientation, and the single outer real part remains exact."
+      },
+      {
+        "id": "reciprocity_completion_and_false_controls",
+        "requirement": "Audit every reciprocity, completion, determinant, or sieve hypothesis and prohibit positive-energy, arbitrary-weight, periodicity, BV, reflection, or conductor-self-return shortcuts."
+      },
+      {
+        "id": "blind_post_unmask_and_owner_scope",
+        "requirement": "Reconcile the statement-only sector and complement with the literal kernel and quarantine t>=2, near resonance, every parent, bridge, theorem, and exponent."
+      }
+    ],
+    "scheduled_review": "Round 190 is the next mandatory full-proof strategy and current-primary-literature checkpoint after analytic Rounds 187--189.",
+    "closing_assessment": {
+      "decision": "promote_high_h_imprimitive_lift_gcd_reduction",
+      "terminal_label": "strict_high_h_imprimitive_lift_sector",
+      "graph_mutation": true,
+      "main_result": "The exact lift coordinates U=mq and k=ma prove every Round-187 high-packet mode with H_B m>=Y target-safe at O_(B,epsilon)(L^2X^epsilon). The exact complement U=mq>4H_B, q>H_B, m|a|_q>H_B, H_Bm<Y remains under one outer real part at YL^2X^epsilon positive capacity; determinant phase, reciprocity, completion, sieve, and positive-energy mechanisms do not by themselves gain Y. No complete high-h relation, t=1 residual, parent, bridge, theorem, or exponent changes.",
+      "resulting_graph_sha256": "338060b37c19d849053078e5f6a7775c45c626a16b6f9198fafdf9bb4a62265c",
+      "patch_effect": "1_create_1_update_0_correct_15_reject_21_no_change",
+      "exponent_change": false,
+      "next_round": 189
+    }
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "be0eca9ca93c3534cca958d70b5541d03d28ff993ebfbcbca6be3cd393fae5ff",
+    "generated_at": "2026-08-29T08:32:17.913983+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}
