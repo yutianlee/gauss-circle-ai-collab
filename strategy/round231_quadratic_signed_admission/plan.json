@@ -1,0 +1,86 @@
+{
+  "round_index": 231,
+  "type": "bounded_prelaunch_quadratic_signed_admission",
+  "status": "complete",
+  "analytic_campaign_launched": false,
+  "objective": "Obtain or falsify a genuinely new actual quadratic signed estimate with improved complete twelfth-moment restoration",
+  "starting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+  "generated_at": "2026-10-11T06:27:16.219629+00:00",
+  "budget": {
+    "analytical_minimum_percent": 95,
+    "numerical_maximum_percent": 5,
+    "tasks": 3,
+    "source_application_audits_maximum": 2,
+    "review_repair_cycles_maximum": 1
+  },
+  "tasks": [
+    {
+      "id": "quadratic_remainder_attack",
+      "brief": "briefs/quadratic_remainder_attack.md",
+      "status": "complete",
+      "report": "reports/quadratic_remainder_attack.md",
+      "report_sha256": "abff6860790aba4cda537ad9e81af504c1f175844a2c252479e685077dd1eb24"
+    },
+    {
+      "id": "blind_quadratic_rows",
+      "brief": "briefs/blind_quadratic_statement.md",
+      "status": "complete",
+      "report": "reports/blind_quadratic_rows.md",
+      "report_sha256": "dcf93c50bbc93f8592038c0d1c15e0cddf9ccfe12613be042bfb864908faca6b"
+    },
+    {
+      "id": "quadratic_source_audit",
+      "brief": "briefs/quadratic_source_audit.md",
+      "status": "complete",
+      "report": "reports/quadratic_source_audit.md",
+      "report_sha256": "ce861af26fb579ecda5cf5f4a208f28a48ce13ea06744494045030a69c08ff67"
+    }
+  ],
+  "exit_gates": [
+    "Three reports or explicit termination",
+    "Conductor independent finite reproduction and full exponent restoration",
+    "Important finite lemma statement-only proof and nonauthor seam review",
+    "No analytic admission without new applicable signed bound and full-cost improvement",
+    "Protected state unchanged; validators pass"
+  ],
+  "state_effect": "none unless separately reviewed and validated State Patch",
+  "forbidden": "No automatic successor; no accepted claim from a local identity or certificate no-go",
+  "conductor_interventions": [
+    "Require exact primitive rationalization or reduced-conductor accounting.",
+    "Derive actual integer Taylor resonance; do not import the earlier first-order singleton barrier to longer quadratic patches.",
+    "Source A directly covers r2-r2sharp with a positive power saving; bounded quartic Taylor check repairs the quadratic length seam without changing the complete target.",
+    "Regroup patch-dependent approximants by divisor across full shells; candidate paid main has sup exponent5447/52500 and moment3044/2625; assign independent proof and source seam.",
+    "Three orthogonal nonauthor reviews; no source constant guessed and no complete gain inferred from component payment."
+  ],
+  "reviews": [
+    {
+      "path": "reviews/conductor_finite_row_review.md",
+      "status": "pass",
+      "sha256": "79b1447291fb80aeb00572ad33fd93f910c3a51098f85f63767dfd56a96086cb"
+    },
+    {
+      "path": "reviews/type_i_main_and_resonance_review.md",
+      "status": "pass",
+      "sha256": "a47dc8dbfda42b2003282ed0f4d00e9c3815b064df154d445f741adf6c661189"
+    },
+    {
+      "path": "reviews/source_restoration_seam_review.md",
+      "status": "pass",
+      "sha256": "fdf35ef0fa82b9570fbbcaabf0d5083210e5ccf044d84ffa36c54e2acf38ce66"
+    },
+    {
+      "path": "reviews/quadratic_bound_seam_review.md",
+      "status": "pass",
+      "sha256": "d0d25142f4c5bf365d28418d57fb697aad3a964bd674f69b9623f331cee7242b"
+    }
+  ],
+  "last_updated_at": "2026-10-11T06:37:39.684055+00:00",
+  "completed_at": "2026-10-11T06:43:22.385711+00:00",
+  "decision": "retain_new_signed_component_inputs_no_complete_gain_not_admitted",
+  "graph_effect": "none; reviewed evidence only",
+  "resource_outcome": {
+    "analytical_minimum_percent": 95,
+    "numerical_maximum_percent": 5,
+    "description": "Three analytical reports, independent main proof and three seams, two source applications, finite diagnostic reproduction only."
+  }
+}

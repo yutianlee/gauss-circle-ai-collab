@@ -1,0 +1,7 @@
+# Trace the source saving quantitatively
+
+Read protocol.md, state/active_campaign.yml, selectively the two accepted complete moment/radical graph nodes, residual_interface.md, previous packet reports/quadratic_source_audit.md and reviews/source_restoration_seam_review.md. Read only these local contexts and exact primary arXiv2204.03754v4, especially Theorem1.1(iii), Theorem4.2, TypeI2 and its derivation. No sibling reports or broad new literature sweep.
+
+Trace the proof's quantitative dependencies for the degree-four, dimension-one actual r2 residual. Try to extract an explicit admissible saving or identify exact numerical bottlenecks that constrain the proof. Distinguish a valid lower bound for available c from an upper obstruction for the uniform statement. Optimize fixed source margin and polynomial degree if mathematically justified, paying the complete norm range and unchanged approximant. If the source proof only uses unspecified constants, locate the first irreducible such dependency precisely rather than inventing a number.
+
+Seek a strengthened phase-specific conclusion from the source's major/minor-arc alternatives for P=Taylor(R sqrt(n)), or an averaged radius conclusion that can bypass the previous uniform-ceiling threshold. State exact major-arc measure/count and every exceptional owner; a formal alternative alone is not a bound. Do not stop at repeating c>0. Budget15min analytical work, one bounded review later. Write reports/source_constant_extraction.md, seven sections, hash; stop.

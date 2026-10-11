@@ -1,0 +1,28 @@
+{
+  "status": "green",
+  "round_index": 201,
+  "graph_schema": "pass",
+  "campaign_schema": "pass",
+  "state_patch": "pass",
+  "new_dependency_cone": "acyclic_with_accepted_dependencies",
+  "all_396_existing_nodes_and_other_graph_data_unchanged": true,
+  "reverse_structured_and_original_raw_hash": "pass",
+  "replay_except_new_timestamp": "pass",
+  "exact_reviewed_kernel_sha256": "f4264bc70dcb5e47d031baa9aeb9e94ff3c785e8832420a2ea9a20d792761120",
+  "artifact_utf8_and_control_checks": [
+    "proofs/kernels/gc_weighted_square_root_exact_resonance_mass.md",
+    "rounds/codex-managed/gc-whole-discrepancy-twelfth-moment/synthesis.md",
+    "rounds/codex-managed/gc-whole-discrepancy-twelfth-moment/briefs/blind_exact_resonance_rederivation.md",
+    "rounds/codex-managed/gc-whole-discrepancy-twelfth-moment/briefs/blind_resonance_statement.md",
+    "rounds/codex-managed/gc-whole-discrepancy-twelfth-moment/briefs/circle_moment_primary_source_audit.md",
+    "rounds/codex-managed/gc-whole-discrepancy-twelfth-moment/briefs/whole_moment_analytic_attack.md",
+    "rounds/codex-managed/gc-whole-discrepancy-twelfth-moment/controls/conductor_resonance_and_bridge_analysis.md",
+    "rounds/codex-managed/gc-whole-discrepancy-twelfth-moment/reports/blind_exact_resonance_rederivation.md",
+    "rounds/codex-managed/gc-whole-discrepancy-twelfth-moment/reports/circle_moment_primary_source_audit.md",
+    "rounds/codex-managed/gc-whole-discrepancy-twelfth-moment/reports/whole_moment_analytic_attack.md",
+    "rounds/codex-managed/gc-whole-discrepancy-twelfth-moment/reviews/conductor_round201_reconciliation.md",
+    "rounds/codex-managed/gc-whole-discrepancy-twelfth-moment/reviews/independent_resonance_kernel_review.md"
+  ],
+  "analytic_target": "open",
+  "exponent_change": false
+}

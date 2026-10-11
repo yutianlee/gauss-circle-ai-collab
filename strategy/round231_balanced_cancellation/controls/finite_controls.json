@@ -1,0 +1,210 @@
+{
+  "diagnostic_only": true,
+  "status": "passed",
+  "command": "python strategy/round231_balanced_cancellation/controls/reproduce_controls.py",
+  "exact_quarter_character_sums": [
+    {
+      "D": 4,
+      "phase_numerator_over4": 0,
+      "sum": [
+        0,
+        0
+      ]
+    },
+    {
+      "D": 4,
+      "phase_numerator_over4": 1,
+      "sum": [
+        0,
+        2
+      ]
+    },
+    {
+      "D": 4,
+      "phase_numerator_over4": 2,
+      "sum": [
+        0,
+        0
+      ]
+    },
+    {
+      "D": 4,
+      "phase_numerator_over4": 3,
+      "sum": [
+        0,
+        -2
+      ]
+    },
+    {
+      "D": 8,
+      "phase_numerator_over4": 0,
+      "sum": [
+        0,
+        0
+      ]
+    },
+    {
+      "D": 8,
+      "phase_numerator_over4": 1,
+      "sum": [
+        0,
+        4
+      ]
+    },
+    {
+      "D": 8,
+      "phase_numerator_over4": 2,
+      "sum": [
+        0,
+        0
+      ]
+    },
+    {
+      "D": 8,
+      "phase_numerator_over4": 3,
+      "sum": [
+        0,
+        -4
+      ]
+    },
+    {
+      "D": 16,
+      "phase_numerator_over4": 0,
+      "sum": [
+        0,
+        0
+      ]
+    },
+    {
+      "D": 16,
+      "phase_numerator_over4": 1,
+      "sum": [
+        0,
+        8
+      ]
+    },
+    {
+      "D": 16,
+      "phase_numerator_over4": 2,
+      "sum": [
+        0,
+        0
+      ]
+    },
+    {
+      "D": 16,
+      "phase_numerator_over4": 3,
+      "sum": [
+        0,
+        -8
+      ]
+    },
+    {
+      "D": 64,
+      "phase_numerator_over4": 0,
+      "sum": [
+        0,
+        0
+      ]
+    },
+    {
+      "D": 64,
+      "phase_numerator_over4": 1,
+      "sum": [
+        0,
+        32
+      ]
+    },
+    {
+      "D": 64,
+      "phase_numerator_over4": 2,
+      "sum": [
+        0,
+        0
+      ]
+    },
+    {
+      "D": 64,
+      "phase_numerator_over4": 3,
+      "sum": [
+        0,
+        -32
+      ]
+    }
+  ],
+  "actual_reciprocal_resonances": [
+    {
+      "h": 7,
+      "sign": -1,
+      "R_squared": 189,
+      "outer_phase": "27/4",
+      "stationary_m_over_d": "27/28"
+    },
+    {
+      "h": 7,
+      "sign": 1,
+      "R_squared": 203,
+      "outer_phase": "29/4",
+      "stationary_m_over_d": "29/28"
+    },
+    {
+      "h": 16,
+      "sign": -1,
+      "R_squared": 1008,
+      "outer_phase": "63/4",
+      "stationary_m_over_d": "63/64"
+    },
+    {
+      "h": 16,
+      "sign": 1,
+      "R_squared": 1040,
+      "outer_phase": "65/4",
+      "stationary_m_over_d": "65/64"
+    },
+    {
+      "h": 41,
+      "sign": -1,
+      "R_squared": 6683,
+      "outer_phase": "163/4",
+      "stationary_m_over_d": "163/164"
+    },
+    {
+      "h": 41,
+      "sign": 1,
+      "R_squared": 6765,
+      "outer_phase": "165/4",
+      "stationary_m_over_d": "165/164"
+    }
+  ],
+  "rank_one_hessian_exact_cases": 64,
+  "exact_actual_hyperbola_ownership_cases": 1870,
+  "combined_owner_profiles": [
+    {
+      "gamma": "13/125",
+      "moment_budget": "29/25",
+      "lower_norm": "52/125",
+      "upper_norm": "99/125",
+      "T_factor_cutoff": "-533/5250"
+    },
+    {
+      "gamma": "1/8",
+      "moment_budget": "5/4",
+      "lower_norm": "1/2",
+      "upper_norm": "3/4",
+      "T_factor_cutoff": "-5/84"
+    },
+    {
+      "gamma": "16/125",
+      "moment_budget": "32/25",
+      "lower_norm": "64/125",
+      "upper_norm": "93/125",
+      "T_factor_cutoff": "-281/5250"
+    }
+  ],
+  "optimistic_certificate_crossing": {
+    "norm_exponent": "2/3",
+    "ceiling_exponent": "1/6",
+    "M12_certificate": "5/3"
+  },
+  "scope": "Exact finite normalization, factor ownership, resonant character, and rational arithmetic controls only; no actual moment lower bound or numerical asymptotic proof."
+}

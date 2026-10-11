@@ -1,0 +1,186 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 206,
+    "round_type": "complete_arithmetic_moment_attack",
+    "campaign_id": "gc-complete-signed-shell-arithmetic",
+    "title": "Actual divisor and shifted-correlation attack on the complete signed shell moment",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+    "generated_at": "2026-09-26T02:01:55.588572+00:00",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "planned_numerical_percent": 0,
+      "budget": "Three bounded analytical/source reports, conductor complete arithmetic analysis, one same-round seam cycle if needed. No mathematical numerical experiments."
+    },
+    "target_obligations": [
+      "GC-target",
+      "GC-complete-square-root-large-values-moment-bound"
+    ],
+    "frozen_target": {
+      "question": "Can the actual signed middle-band shell moment gain the required complete power through arithmetic divisor or shifted-correlation information?",
+      "reference_formula": "Integral_[T/sqrt(2),sqrt(3)T] |sum_(T^(52/125)<N=2^j<T^(99/125)) sum_m r2(m)m^(-1/4)L_(N,T)(R-sqrt(m))|^12 dR << T^(29/25+epsilon).",
+      "quantities": [
+        "L is the exact odd sine kernel and fixed smooth partition from the reviewed205 interface.",
+        "All other frequency ranges and all previous transform errors are already estimated.",
+        "Current full moment exponent10beta; required saving10beta-29/25; a success gives only102/325."
+      ]
+    },
+    "completion_criteria": [
+      "Three seven-section reports including an isolated important-lemma rederivation.",
+      "At least one complete actual arithmetic estimate attempted and priced beyond restating the transform.",
+      "All middle scales, divisors, shifts, tails, exceptional sets and real endpoints retained.",
+      "Exact independent seams and source checks for any accepted new theorem; otherwise identity patch.",
+      "Graph-valid State Patch and conductor closure; full quarter goal and source qualifications retained."
+    ],
+    "controls": [
+      "complete_middle_range",
+      "actual_r2_character",
+      "all_divisors_and_shifts",
+      "curvature_and_mean_error",
+      "infinite_tails",
+      "real_endpoints",
+      "signed_not_positive",
+      "full_moment_power_ledger",
+      "source_hypotheses",
+      "no_gaussian_inference",
+      "full_proof_scope"
+    ],
+    "exit_labels": [
+      "complete_arithmetic_moment_gain",
+      "complete_arithmetic_attempt_no_gain",
+      "scoped_arithmetic_method_no_go"
+    ],
+    "tasks": [
+      {
+        "id": "actual_divisor_shell_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "target": "Attack the complete actual signed shell moment using r2=4 sum_(d|n)chi4(d). Derive a real arithmetic estimate beyond the already known Poisson identity and positive shell count. Attempt full coupled divisor or shifted correlations, keeping all divisors, repeated shifts, local congruence main terms, and errors. A possible sufficient sixth centered-filter moment is specified in the strategy, but it is unproved: derive and price its actual arithmetic expansion rather than assuming Gaussian behavior. A uniform estimate over every middle N suffices; no smaller unestimated complement. If the target fails to follow, give a complete bound and the exact first arithmetic inequality missing. No broad literature survey or successor design.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round206_complete_signed_shell_arithmetic_attack.md",
+          "rounds/codex-managed/gc-full-frontier-moment-strategy-review/controls/conductor_middle_band_strategy.md",
+          "rounds/codex-managed/gc-full-frontier-moment-strategy-review/reviews/independent_middle_band_review.md",
+          "proofs/kernels/gc_complete_square_root_large_values_moment_bound.md",
+          "rounds/codex-managed/gc-full-frontier-moment-strategy-review/controls/conductor_arithmetic_source_gate.md",
+          "rounds/codex-managed/gc-complete-signed-convolution-attack/reports/arithmetic_signed_tail_attack.md"
+        ],
+        "required_controls": [
+          "complete_middle_range",
+          "actual_r2_character",
+          "all_divisors_and_shifts",
+          "curvature_and_mean_error",
+          "infinite_tails",
+          "real_endpoints",
+          "signed_not_positive",
+          "full_moment_power_ledger",
+          "source_hypotheses",
+          "no_gaussian_inference",
+          "full_proof_scope"
+        ],
+        "required_output": [
+          "Seven numbered sections: result, exact hypotheses, proof, first gap, controls, exact dependencies, recommended state effect.",
+          "Write only the assigned report; no graph, draft, matrix, synthesis, source-card or successor edits."
+        ],
+        "report_path": "rounds/codex-managed/gc-complete-signed-shell-arithmetic/reports/actual_divisor_shell_attack.md"
+      },
+      {
+        "id": "shifted_moment_source_attack",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "target": "Audit and attempt actual-r2 short-interval sixth/higher-moment or shifted-spectral methods for the complete middle band. A candidate sufficient input is the centered additive-filter sixth moment at X h^3, h=2sqrt(x)/sqrt(N), X=T^2; test every transfer, filter, variable width, real endpoint and exceptional term. Inspect at most three substantive primary theorem interfaces, prioritizing actual representation-weight short-interval moments and shifted r2 correlations. Distinguish circle r2 from divisor d(n), indicator functions, random-model moments and zeta moments. Derive the strongest completely restored bound supplied by each serious legal import, or its first failed hypothesis; do not stop at a name list. A fourth/second moment is not a sixth moment. No source-card promotion, shared state or successor edits.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round206_complete_signed_shell_arithmetic_attack.md",
+          "rounds/codex-managed/gc-full-frontier-moment-strategy-review/controls/conductor_middle_band_strategy.md",
+          "rounds/codex-managed/gc-full-frontier-moment-strategy-review/reviews/independent_middle_band_review.md",
+          "proofs/kernels/gc_complete_square_root_large_values_moment_bound.md",
+          "rounds/codex-managed/gc-full-frontier-moment-strategy-review/controls/conductor_arithmetic_source_gate.md",
+          "strategy/gauss_circle_strategy_checkpoint_round205_2026-09-26.md"
+        ],
+        "required_controls": [
+          "complete_middle_range",
+          "actual_r2_character",
+          "all_divisors_and_shifts",
+          "curvature_and_mean_error",
+          "infinite_tails",
+          "real_endpoints",
+          "signed_not_positive",
+          "full_moment_power_ledger",
+          "source_hypotheses",
+          "no_gaussian_inference",
+          "full_proof_scope"
+        ],
+        "required_output": [
+          "Seven numbered sections: result, exact hypotheses, proof, first gap, controls, exact dependencies, recommended state effect.",
+          "Write only the assigned report; no graph, draft, matrix, synthesis, source-card or successor edits."
+        ],
+        "report_path": "rounds/codex-managed/gc-complete-signed-shell-arithmetic/reports/shifted_moment_source_attack.md"
+      },
+      {
+        "id": "blind_odd_shell_bridge",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "pending",
+        "target": "Independently prove or refute the curved-shell to centered additive-filter bridge, all errors, actual supremum and sixth-to-twelfth moment criterion in the isolated packet. No claimant context or external literature. Stop after the assigned report.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/gc-complete-signed-shell-arithmetic/briefs/blind_odd_shell_statement.md"
+        ],
+        "required_controls": [
+          "complete_middle_range",
+          "actual_r2_character",
+          "all_divisors_and_shifts",
+          "curvature_and_mean_error",
+          "infinite_tails",
+          "real_endpoints",
+          "signed_not_positive",
+          "full_moment_power_ledger",
+          "source_hypotheses",
+          "no_gaussian_inference",
+          "full_proof_scope"
+        ],
+        "required_output": [
+          "Seven numbered sections: result, exact hypotheses, proof, first gap, controls, exact dependencies, recommended state effect.",
+          "Write only the assigned report; no graph, draft, matrix, synthesis, source-card or successor edits."
+        ],
+        "report_path": "rounds/codex-managed/gc-complete-signed-shell-arithmetic/reports/blind_odd_shell_bridge.md",
+        "excluded_context": [
+          "Graph, manifest, strategy, predecessor, claimant, siblings and external sources."
+        ]
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "analytic_bridge",
+        "requirement": "Exact filter/curvature/mean errors, supremum and moment normalization."
+      },
+      {
+        "id": "arithmetic_and_source",
+        "requirement": "Actual coefficients, all coupled shifts and theorem hypotheses, complete restored power."
+      }
+    ],
+    "previous_goal_turn_classification": "progress_completed_review_and_evidence_changed_next_action_no_new_bound",
+    "scheduled_review": "Next mandatory broad strategy/current-literature review208, after205--207."
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+    "generated_at": "2026-09-26T02:01:56.831223+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

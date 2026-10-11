@@ -1,0 +1,6 @@
+# Round230 isolated statement
+Read only protocol.md, this statement and your task brief. No graph, history, sources or sibling work.
+Let N(x) be a nondecreasing counting function on positive reals and P(x)=N(x)-c x, c>0. Assume |P(x)|=o(x). For each fixed p>=2 suppose integral_{Y/2}^{3Y}|P(x)|^p dx <= C_{p,epsilon}Y^{a_p+epsilon}. Derive a uniform bound on |P(x)| for Y<=x<=2Y, paying one-sided persistence and jumps, and characterize when an unbounded sequence of fixed p can imply exponent 1/4+epsilon. No p depending on Y is permitted.
+Further suppose P(R^2)=sqrt(R)B_T(R)/pi+O_epsilon(T^{1/2+epsilon}) for R comparable to T, and M_p(B_T)<=T^{b_p+epsilon}, with the same fixed-p quantifiers. Derive the restored exponent and the conditions to improve a given theta in (1/4,1/3).
+For theta=(3292+25sqrt(1717))/13762 and beta=2theta-1/2, assess b_p=max(1,(p-2)beta), p>=2; assess p=12,b_12=29/25; and assess an unbounded fixed-even-order family b_p<=5/4. Prove all comparisons analytically; bounded symbolic rational arithmetic is permitted but no numerical simulation. Determine whether any of these assumptions is itself a proof of the conjectural estimate without the remaining hypotheses.
+Output all seven protocol sections to the assigned report, hash it and stop.

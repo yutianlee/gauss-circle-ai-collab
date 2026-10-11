@@ -1,32 +1,13 @@
-# Current Research Round 199
+# Current research status - central balanced cancellation test closed
 
-Campaign: `m9-m1-t1-p2-cross-gcd-cellular-boundary-gate` — Hard-M1 t=1 P2 cross-gcd cellular-boundary gate
+11 October 2026. The bounded Round231 continuation tested the actual central balanced signed residual through reciprocal character cancellation, a primary bilinear theorem, and an independently derived smooth Hankel tail. No complete moment improvement was obtained. The accepted complete bound remains M12(B_T)<<T^(10beta+epsilon), 10beta=1.289663519481... .
 
-Status: `complete`. Maximum concurrent subagents: 3.
+The reviewed reciprocal rectangle bound is T^epsilon[(T/N)^(1/2)+T^(-1/2)]. Its exact quarter-frequency leading term vanishes after taking the real circle phase, while a physical detuning gives a coherent real individual fibre. Thus uniform per-frequency square-root cancellation is false; no full-wave or moment lower bound follows. Cancellation across the reciprocal frequencies or in the radius average remains unquantified.
 
-Graph SHA-256: `3073235ad5677b9066f1336ec9d958b0e93b92d99cfa7ebea1d823146c799099`.
+KRW Proposition5 genuinely applies to the sharp moving divisor intervals after logarithmic completion, but its leading normalized term T^(1/8)N^(1/16) is insufficient. Even its optimistic combination with the head and Hankel bounds reaches ceiling1/6 and moment certificate5/3. This rejects that certificate only.
 
-## Frozen question
+Historical correction: the independently recovered smooth tail and norm band were already reviewed in Rounds203/205/208 and are not new gains. Combining the inherited band with the recent adaptive factor cutoff gives an exact owner C_gamma on T^(4gamma)<n<2T^(1-2gamma), d,m>=T^(2gamma-13/42)x(n)^(29/84). All complementary owners are paid at m(gamma)=max(1,10gamma,1+20gamma/13). At gamma16/125, proving M12(C_gamma)<<T^(32/25+epsilon) would improve the complete bound to1.28; that estimate is still unproved. The preferred gamma13/125 target29/25 remains open as well.
 
-On the exact Round-195 open packets, can the complete physical P_boundary(lit) dotcup P_sf dotcup P_gf complement be written as one coefficient-preserving twisted cellular boundary on the four cross-gcd allocation states, so that the aligned literal face, sign failure and changed-gcd failure cancel before positivity and yield the joint outer O(L^2 X^epsilon) bound; or does this specified mechanism have a first exact self-return?
+Three frozen reports, three nonauthor reviews, a forward correction attachment, and independent exact finite controls are complete. Corrections cover the D=1/2 logarithm, real resonance scope, and the complementary29/25 moment floor. Earlier evidence remains immutable. The preceding residual packet's adaptive-cutoff proof, uniform all-polynomial saving cap1/20, conditional inverse-exponent targets and coefficient-energy obstruction retain their original limited scopes.
 
-## Task briefs
-
-- `literal_cross_gcd_cellular_boundary_attack` (discovery, selected_context): `rounds/codex-managed/m9-m1-t1-p2-cross-gcd-cellular-boundary-gate/briefs/literal_cross_gcd_cellular_boundary_attack.md`
-- `aligned_face_twisted_boundary_hostile_audit` (barrier_no_go, selected_context): `rounds/codex-managed/m9-m1-t1-p2-cross-gcd-cellular-boundary-gate/briefs/aligned_face_twisted_boundary_hostile_audit.md`
-- `blind_joint_failure_complex_rederivation` (blind_rederiver, statement_only): `rounds/codex-managed/m9-m1-t1-p2-cross-gcd-cellular-boundary-gate/briefs/blind_joint_failure_complex_rederivation.md`
-
-## Completion gates
-
-- Reconstruct the exact physical even-shift source, open packet projector and three-piece complement without taking a premature modulus.
-- Prove the four cross-gcd factorization and construct every proposed allocation edge, inverse edge, recomputed gcd and actual character incidence.
-- Test the aligned literal face first by an exact sharp-code jump cochain and determine whether a complete physical two-cell cancels it or returns an ordinary full-capacity face.
-- If the aligned test passes, include the sign-failure and changed-gcd pieces in the same physical chain, with no componentwise positive norm and no unpriced P1 or other-owner boundary.
-- Expand the actual endpoint products and prove a D_L/L close-leg gain or an already licensed target-safe boundary for every surviving cell; price normalized BV and selector terms exactly.
-- Restore the complete masked operator, both orientations and T branches, all commutators, carries, births/deaths, endpoints, phases and zero extensions before one outer real part.
-- Prove the full joint outer O(L^2 X^epsilon) theorem or isolate the first exact self-return of this specified cross-gcd cellular-boundary mechanism.
-- Use no strict-sector theorem as the terminal theorem, no capacity as lower mass, and no in-round analytic pivot.
-- Receive independent allocation-algebra, hostile aligned-face/operator and statement-only derivations, then complete seam, scope and exponent reviews before any State Patch.
-- Apply no graph change without a valid State Patch, reverse/replay and protected-scope validation; close under exactly one declared terminal label.
-
-The coordinator may synthesize a State Patch only after the required validation seams are green.
+Analytic Round231 remains pending_design, with no tasks launched, State Patch, accepted promotion, pointwise gain or automatic successor. The graph, proof draft, accepted kernels, validation matrices, active closed Round230 manifest and ledger are unchanged. The missing input is a quantitative signed estimate for the actual central owner. Decision: strategy/round231_balanced_cancellation/conductor_decision.md. Corrected report scope: strategy/round231_balanced_cancellation/conductor_seam_repairs.md.

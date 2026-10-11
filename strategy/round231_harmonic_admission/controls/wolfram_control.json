@@ -1,0 +1,13 @@
+{
+  "diagnostic_only": true,
+  "code": "s=2^-18+3^-18+4^-18+5^-9+1/(8 5^8); <|\"common_multiple_majorant\"->s,\"strict_bound\"->(s<1/200000),\"square_divisor_price\"->(1/4+3*17/72),\"retained_fraction\"->(1-(1/4+3*17/72)),\"common_multiple_margin\"->(1/4096-2s),\"margin_exceeds\"->(1/4096-2s>1/8192),\"bounded_vector_removal_power\"->(1+12/100)|>",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Out[1]= <|\"common_multiple_majorant\" -> 241757181358081099469/51998697814228992000000000, \"strict_bound\" -> True, \"square_divisor_price\" -> 23/24, \"retained_fraction\" -> 1/24, \"common_multiple_margin\" -> 6105740110417918900531/25999348907114496000000000, \"margin_exceeds\" -> True, \"bounded_vector_removal_power\" -> 28/25|>"
+      }
+    ],
+    "isError": false
+  }
+}

@@ -1,0 +1,46 @@
+"""Prepare new round229 closure code; never executes an earlier closure."""
+from pathlib import Path
+base=Path('rounds/codex-managed/gc-full-goal-cuspidal-source-review')
+assert not (base/'controls/artifact_hashes.json').exists()
+dest=base/'controls/close_round229.py'
+assert not dest.exists()
+s=Path('rounds/codex-managed/gc-signed-heegner-phase/controls/close_round228.py').read_text(encoding='utf-8')
+# Simultaneous round substitutions avoid rewriting a newly substituted number.
+for old in ['229','228','227','732']:
+ s=s.replace(old,'__OLD_'+old+'__')
+for old,new in [('229','230'),('228','229'),('227','228'),('732','763')]:
+ s=s.replace('__OLD_'+old+'__',new)
+s=s.replace("len(entries)==28","len(entries)==29")
+s=s.replace('gc-signed-heegner-phase','gc-full-goal-cuspidal-source-review')
+s=s.replace('reports/signed_hecke_functional_attack.md','reports/signed_cm_spectral_sources.md')
+s=s.replace('reports/complete_eisenstein_pairing.md','reports/complete_frontier_source_comparison.md')
+s=s.replace('reports/blind_gamma_transition.md','reports/blind_radial_abel_kernel.md')
+s=s.replace('controls/conductor_gamma_application.md','controls/conductor_radial_abel_application.md')
+s=s.replace('briefs/blind_gamma_transition_statement.md','briefs/blind_radial_abel_statement.md')
+s=s.replace('blind_gamma_transition_statement.md','blind_radial_abel_statement.md')
+s=s.replace('conductor_gamma_transition_review.md','conductor_radial_abel_review.md')
+s=s.replace('independent_signed_hecke_review.md','independent_cm_source_review.md')
+s=s.replace('independent_eisenstein_review.md','independent_frontier_source_review.md')
+s=s.replace('independent_gamma_application_review.md','independent_radial_application_review.md')
+s=s.replace("reviews=[", "checkpoint=Path('strategy/gauss_circle_strategy_checkpoint_round229_2026-09-29.md')\nstatus=base/'controls/conductor_current_primary_status.md'\ncontract(checkpoint);contract(status)\nreviews=[",1)
+s=s.replace("(base/'reviews/conductor_complete_frontier_review.md',[attack,profile,blind,control])]", "(base/'reviews/conductor_complete_frontier_review.md',[attack,profile,blind,control]),\n (base/'reviews/independent_strategy_checkpoint_review.md',[checkpoint,status])]")
+s=s.replace("+[control,packet]+[p for p,_ in reviews]", "+[control,packet,checkpoint,status]+[p for p,_ in reviews]")
+s=s.replace('complete_continuous_component_bound_reviewed','inherited_continuous_component_bound_retained')
+s=s.replace('GREEN for scoped signed Heegner and gamma-transition evidence only','GREEN for scoped current-source, radial Abel and full-goal strategy evidence only')
+s=s.replace('len(gates)==10','len(gates)==11').replace('All10 gates','All11 gates')
+s=s.replace('round_229_closed_identity_patch_signed_heegner_no_complete_gain','round_229_closed_identity_patch_cuspidal_source_review_no_complete_gain')
+s=s.replace('Signed Heegner transform, complete continuous component, gamma application and full costs reviewed.','Current source hypotheses, radial Abel application and complete-frontier costs reviewed.')
+s=s.replace("design_constraint='Design the mandatory broad strategy/current-primary review230 only after closed229. Assess the full goal, the complete cusp remainder and the reviewed continuous component; do not count a formal identity or paid component as a complete-wave bound.'", "design_constraint='Design one bounded complete analytic attempt only after closed229. Follow the validated checkpoint, retain every full complementary owner, and require a fully restored gain or the exact first unproved complete estimate.'")
+s=s.replace("scheduled_review='Next broad strategy/current-primary review230.'", "scheduled_review='Next broad strategy/current-primary review232.'")
+s=s.replace("summary=_next_campaign(m,output_dir=base,graph_hash=sha(gp))+'\\n## Closing decision\\n\\nRound229 signed Heegner phase attempt closed. The entire continuous component meets the sufficient bound as reviewed evidence; the complete signed cusp target remains open. Identity State Patch; all401 nodes and proof-draft bytes unchanged. No complete-wave estimate or exponent gain. Round230 mandatory strategy/current-primary review pending design.\\n'", "summary=_next_campaign(m,output_dir=base,graph_hash=sha(gp))+'\\n## Closing decision\\n\\nMandatory strategy review229 closed with current primary-source and full-frontier audits. The inherited entire continuous bound remains reviewed evidence; no complete cusp, wave, moment or exponent gain. Identity State Patch; graph401 and draft bytes unchanged. Round230 pending design from checkpoint229; next broad review232.\\n'")
+s=s.replace('Round229 signed Heegner phase closure (2026-09-28)','Round229 full-goal cuspidal strategy closure (2026-09-29)')
+s=s.replace("b'## Round229 signed Heegner phase closure'", "b'## Round229 full-goal cuspidal strategy closure'")
+s=s.replace('next_strategy_checkpoint=230','next_strategy_checkpoint=232')
+s=s.replace('Complete continuous-component target reviewed; whole signed cusp target still open.','Inherited complete continuous component retained; whole signed cusp target still open.')
+s=s.replace('No complete-wave estimate or pointwise exponent gain. Round230 mandatory\nstrategy/current-primary review pending design.', 'No complete-wave estimate or pointwise exponent gain. Round230 pending design\nfrom checkpoint229; next broad strategy/current-primary review232.')
+s=s.replace("strategy=Path('strategy/round229_signed_heegner_phase.md');hashes[strategy.as_posix()]=sha(strategy)", "strategy=Path('strategy/round229_full_goal_cuspidal_source_review.md');hashes[strategy.as_posix()]=sha(strategy)\nhashes[checkpoint.as_posix()]=sha(checkpoint)")
+assert 'gamma' not in s and 'Round228' not in s
+assert 'checkpoint' in s and 'len(gates)==11' in s
+dest.write_text(s,encoding='utf-8',newline='\n')
+compile(s,str(dest),'exec')
+print('Prepared new229 closure code only; no shared-state writes and no closure executed.')

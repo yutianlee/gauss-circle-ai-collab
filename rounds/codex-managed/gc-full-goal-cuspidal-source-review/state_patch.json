@@ -1,0 +1,32 @@
+{
+  "round_index": 229,
+  "campaign_id": "gc-full-goal-cuspidal-source-review",
+  "starting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+  "proof_obligations": {
+    "create": [],
+    "update": [],
+    "correct_rejected": [],
+    "reject": [],
+    "no_change": [
+      "GC-target",
+      "Conditional-bridge",
+      "M9",
+      "M9-M1",
+      "M9-M2",
+      "M9-endpoint-uniformity",
+      "M9-M1-global-angular-radial-estimate",
+      "M9-M1-global-lower-radial-signed-estimate",
+      "M9-M1-GAR-total-active-equivalence",
+      "GC-external-Li-Yang-theta-star",
+      "GC-complete-square-root-large-values-moment-bound",
+      "GC-complete-distinct-radical-twelfth-reduction"
+    ]
+  },
+  "round_assessment": {
+    "terminal_label": "strategy_cuspidal_source_review_no_complete_gain",
+    "reason": "Mandatory source and strategy review found no new complete bound or exponent gain. AH's CM majorant cannot replace the exact weight inside a signed sum; KL's lawful trace still needs complete CM/Fourier/test reconstruction and a quantitative signed estimate. Xiao's fourth-moment range misses substantial shells, while the legal Kim-Ko application restores only the existing triangle scale. The isolated full radial Abel mass and compact-spectral obstruction are proved and reviewed. The inherited entire continuous component stays paid as reviewed evidence; the entire cusp target remains open."
+  },
+  "reversibility": {
+    "rule": "Identity in-memory application, inverse and replay; graph and proof-draft bytes never rewritten."
+  }
+}

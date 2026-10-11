@@ -1,0 +1,30 @@
+{
+  "round_index": 209,
+  "campaign_id": "gc-complete-signed-tenth-moment",
+  "starting_graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+  "proof_obligations": {
+    "create": [],
+    "update": [],
+    "correct_rejected": [],
+    "reject": [],
+    "no_change": [
+      "GC-target",
+      "Conditional-bridge",
+      "M9",
+      "M9-M1",
+      "M9-M2",
+      "M9-endpoint-uniformity",
+      "GC-external-Li-Yang-theta-star",
+      "GC-weighted-square-root-exact-resonance-mass",
+      "GC-physical-twelfth-moment-absolute-majorant-obstruction",
+      "GC-complete-square-root-large-values-moment-bound"
+    ]
+  },
+  "round_assessment": {
+    "terminal_label": "scoped_actual_method_no_go",
+    "reason": "Complete exact rational fifth-convolution energy is O(T^(7+epsilon)N^-1/2), safely below the tenth gate; after all exact relations are removed the actual individual-integral near majorant is at least T^11N^-1/2. Exact root mass is likewise harmless, while absolute near closure fails throughout the new band. Discrete-mean removal and positive arithmetic duality yield no full signed gain. The actual signed offdiagonal/high-value integral and full quarter remain open."
+  },
+  "reversibility": {
+    "rule": "Identity in-memory application, inverse and replay; graph/draft bytes never rewritten."
+  }
+}

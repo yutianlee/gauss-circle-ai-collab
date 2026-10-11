@@ -1,0 +1,205 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 229,
+    "round_type": "mandatory_full_goal_cuspidal_source_review",
+    "campaign_id": "gc-full-goal-cuspidal-source-review",
+    "title": "Full-goal cuspidal, wave and moment strategy review",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+    "generated_at": "2026-09-28T23:48:28.218930+00:00",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 95,
+      "numerical_experimental_maximum_percent": 5,
+      "planned_numerical_percent": 0,
+      "budget": "Three bounded reports; at most two exact theorem audits per source role, one review/repair cycle, zero experiments."
+    },
+    "target_obligations": [
+      "GC-target",
+      "M9-M1",
+      "M9-M2",
+      "GC-complete-square-root-large-values-moment-bound",
+      "GC-complete-distinct-radical-twelfth-reduction"
+    ],
+    "frozen_target": {
+      "question": "Which current exactly applicable signed cuspidal or alternative full-frontier method can advance the FULL quarter goal after226--228, and what complete next inequality is justified?",
+      "reference_formula": "Full P(X)<<X^(1/4+epsilon); exact whole cusp target2Re D<=A_J^2N^(3/2)T^epsilon with entire continuous component already reviewed; every complete alternative remains in scope.",
+      "quantities": [
+        "Actual r2, CM measures, primitive local factors, every real radius, shift, scale, spectral channel, endpoint and tail.",
+        "Inherited beta is only complete real; fixed twelfth29/25 implies102/325 only.",
+        "A shorter dual transform or paid complete component is not a complete-wave gain.",
+        "Wave-kernel absolute mass and actual signed arithmetic cancellation are distinct."
+      ]
+    },
+    "completion_criteria": [
+      "Two bounded current-primary and full-frontier reports plus one isolated radial Abel derivation.",
+      "Final-hash nonauthor source/application and scalar-control reviews, conductor strategy checkpoint and complete restoration.",
+      "Validated complete gain or explicit no-gain synthesis and mechanically valid State Patch before230 design."
+    ],
+    "controls": [
+      "current_primary_versions",
+      "exact_source_hypotheses",
+      "actual_coefficients_and_cm_measure",
+      "growing_test_and_transform_costs",
+      "complete_cusp_and_continuous_ownership",
+      "all_shifts_endpoints_and_tails",
+      "complete_alternative_frontiers",
+      "real_complex_and_average_scope",
+      "full_power_restoration",
+      "certificate_not_actual_lower_bound",
+      "statement_only_control",
+      "fixed_unbounded_order_scope"
+    ],
+    "exit_labels": [
+      "complete_cuspidal_source_gain_requires_validation",
+      "strategy_cuspidal_source_review_no_complete_gain"
+    ],
+    "tasks": [
+      {
+        "id": "signed_cm_spectral_sources",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "target": "Bounded current-primary audit of the COMPLETE actual CM-weighted signed cusp sum. At most TWO exact theorem audits after bounded screening. Investigate a lawful CM point-value/central-L-value formula and a genuinely signed spectral, relative-trace, Kuznetsov or reciprocity estimate that could see the actual surviving phase (qdR^2/n)^(it). Match conductors1 and2, even/Fricke-plus, oldspace denominator, harmonic and area weights, local two-factors and all moving test functions. The entire continuous partner is reviewed target-sized but must remain in reconstruction. Sources must state exact versions, theorem numbers, hypotheses and quantitative height/derivative/strip costs. A fixed-coefficient or averaged-point theorem does not automatically control the actual fixed CM test. Derive all approximate-functional-equation lengths and norms if used; preserve every discrete mode, descendant, dual tail and geometric term. Compare the full restored raw size with A^2N^(3/2) and the original A^2N^2 cap. Repeating the228 positive price or formal inversion is not a new mechanism. Recommend one COMPLETE quantitative next objective with a concrete new input, or a precise first failed import premise. Seven numbered sections, no experiments, no current siblings/blind/root controls, assigned report only, final SHA256 and stop.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round229_full_goal_cuspidal_source_review.md",
+          "strategy/gauss_circle_strategy_review_2026-09-23.md",
+          "strategy/gauss_circle_strategy_checkpoint_round226_2026-09-28.md",
+          "rounds/codex-managed/gc-full-goal-cuspidal-source-review/briefs/complete_cuspidal_interfaces.md",
+          "rounds/codex-managed/gc-signed-heegner-phase/synthesis.md",
+          "proofs/kernels/gc_complete_square_root_large_values_moment_bound.md",
+          "rounds/codex-managed/gc-signed-heegner-phase/reports/signed_hecke_functional_attack.md",
+          "rounds/codex-managed/gc-signed-heegner-phase/reviews/independent_signed_hecke_review.md",
+          "rounds/codex-managed/gc-signed-heegner-phase/reports/complete_eisenstein_pairing.md",
+          "rounds/codex-managed/gc-signed-heegner-phase/reviews/independent_eisenstein_review.md",
+          "rounds/codex-managed/gc-complete-joint-spectral-remainder/reports/heegner_joint_norm_audit.md"
+        ],
+        "required_controls": [
+          "current_primary_versions",
+          "exact_source_hypotheses",
+          "actual_coefficients_and_cm_measure",
+          "growing_test_and_transform_costs",
+          "complete_cusp_and_continuous_ownership",
+          "all_shifts_endpoints_and_tails",
+          "complete_alternative_frontiers",
+          "real_complex_and_average_scope",
+          "full_power_restoration",
+          "certificate_not_actual_lower_bound",
+          "statement_only_control",
+          "fixed_unbounded_order_scope"
+        ],
+        "required_output": [
+          "Seven numbered protocol sections: result, hypotheses, proof/derivation, first gap, controls, exact provenance, state effect.",
+          "Assigned report only; primary source cards for imported theorems; final SHA256 then stop."
+        ],
+        "report_path": "rounds/codex-managed/gc-full-goal-cuspidal-source-review/reports/signed_cm_spectral_sources.md"
+      },
+      {
+        "id": "complete_frontier_source_comparison",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "target": "Independent mandatory current-primary review of alternative COMPLETE full-proof frontiers after226--228. At most TWO exact theorem audits after bounded screening. Seek source-compatible new harmonic/Fourier/decoupling, high-moment, arithmetic correlation or complete bilinear input, and compare with the now entirely paid continuous spectrum plus remaining ENTIRE cusp owner. Preserve all M1 HARD/SMOOTH, M2 TOP/BAL/UNBAL, GAR lower/cross owners and endpoints; retain complete real versus complex scope and adequate unbounded FIXED even-order family. Do not extrapolate an unweighted fourth moment, rational-time, averaged-radius, random/distributional, prime-only or local-sector theorem to the full objective. Exact paper version/date/theorem/hypotheses and all coefficient, transform, norm, endpoint and complement costs are required. Use the named existing barriers to avoid repeating retired positive transfers. Recommend one quantitatively specified complete next objective with an identifiable new reason, or clearly identify why the tested import does not improve a full bound. No broad catalog without application audit, no numerical experiments, no current sibling/blind/root-control reads. Seven numbered sections, assigned report only, freeze final SHA256 and stop.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round229_full_goal_cuspidal_source_review.md",
+          "strategy/gauss_circle_strategy_review_2026-09-23.md",
+          "strategy/gauss_circle_strategy_checkpoint_round226_2026-09-28.md",
+          "rounds/codex-managed/gc-full-goal-cuspidal-source-review/briefs/complete_cuspidal_interfaces.md",
+          "rounds/codex-managed/gc-signed-heegner-phase/synthesis.md",
+          "proofs/kernels/gc_complete_square_root_large_values_moment_bound.md",
+          "state/best_proof_draft.md",
+          "proofs/kernels/gc_complete_distinct_radical_moment_reduction.md",
+          "rounds/codex-managed/gc-full-goal-spectral-source-review/reports/theta_wave_full_frontiers.md",
+          "rounds/codex-managed/gc-complete-logarithmic-convolution/synthesis.md",
+          "rounds/codex-managed/gc-full-goal-signed-source-review/reports/geometric_complete_frontiers.md"
+        ],
+        "required_controls": [
+          "current_primary_versions",
+          "exact_source_hypotheses",
+          "actual_coefficients_and_cm_measure",
+          "growing_test_and_transform_costs",
+          "complete_cusp_and_continuous_ownership",
+          "all_shifts_endpoints_and_tails",
+          "complete_alternative_frontiers",
+          "real_complex_and_average_scope",
+          "full_power_restoration",
+          "certificate_not_actual_lower_bound",
+          "statement_only_control",
+          "fixed_unbounded_order_scope"
+        ],
+        "required_output": [
+          "Seven numbered protocol sections: result, hypotheses, proof/derivation, first gap, controls, exact provenance, state effect.",
+          "Assigned report only; primary source cards for imported theorems; final SHA256 then stop."
+        ],
+        "report_path": "rounds/codex-managed/gc-full-goal-cuspidal-source-review/reports/complete_frontier_source_comparison.md"
+      },
+      {
+        "id": "blind_radial_abel_kernel",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "pending",
+        "target": "Read ONLY protocol.md and the isolated radial Abel statement. Derive or refute the exact transform, support, uniform front profile, sharp complete absolute radial mass and signed mass. Pay the entire interior and r=0. Distinguish compact time from smooth compact spectral cutoff without unsupported automorphic assertions. No sources, experiments, arithmetic or other context. Seven numbered sections, only assigned report, disclose isolation, freeze SHA256 and stop.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/gc-full-goal-cuspidal-source-review/briefs/blind_radial_abel_statement.md"
+        ],
+        "required_controls": [
+          "current_primary_versions",
+          "exact_source_hypotheses",
+          "actual_coefficients_and_cm_measure",
+          "growing_test_and_transform_costs",
+          "complete_cusp_and_continuous_ownership",
+          "all_shifts_endpoints_and_tails",
+          "complete_alternative_frontiers",
+          "real_complex_and_average_scope",
+          "full_power_restoration",
+          "certificate_not_actual_lower_bound",
+          "statement_only_control",
+          "fixed_unbounded_order_scope"
+        ],
+        "required_output": [
+          "Seven numbered protocol sections: result, hypotheses, proof/derivation, first gap, controls, exact provenance, state effect.",
+          "Assigned report only; primary source cards for imported theorems; final SHA256 then stop."
+        ],
+        "report_path": "rounds/codex-managed/gc-full-goal-cuspidal-source-review/reports/blind_radial_abel_kernel.md",
+        "excluded_context": [
+          "All except protocol and isolated statement; no arithmetic/source/history context."
+        ]
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "actual_cm_signed_source",
+        "requirement": "Source versions, exact CM harmonic measure, primitive/local factors and growing spectral tests."
+      },
+      {
+        "id": "radial_abel_control",
+        "requirement": "Isolated full mass/profile derivation and separate nonauthor application review."
+      },
+      {
+        "id": "complete_frontier_strategy",
+        "requirement": "All complete owners, current benchmark status, full costs and one next quantitative inequality."
+      }
+    ],
+    "previous_goal_turn_classification": "progress_reviewed_complete_continuous_component_and_cusp_reduction_no_complete_wave_gain",
+    "scheduled_review": "Mandatory229 after226--228; next broad strategy/current-primary review232."
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+    "generated_at": "2026-09-28T23:48:28.506008+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

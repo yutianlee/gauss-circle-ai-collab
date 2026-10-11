@@ -1,0 +1,98 @@
+{
+  "round_index": 231,
+  "phase": "second_prelaunch_admission_harmonic_pooling",
+  "status": "complete",
+  "analytic_campaign_launched": false,
+  "generated_at": "2026-10-11T02:57:58.458563+00:00",
+  "starting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+  "predecessor_packet": "strategy/round231_admission",
+  "frozen_objective": "Test full harmonic pooling at each fixed squarefree tuple for complete twelfth-moment cancellation and decide admission.",
+  "max_concurrency": 3,
+  "resource_policy": {
+    "analytical_algebraic_minimum_percent": 95,
+    "numerical_maximum_percent": 5,
+    "budget": "Three bounded reports plus at most one repair/review pass; no broad literature search or numerical asymptotic experiment."
+  },
+  "tasks": [
+    {
+      "id": "harmonic_pooling_discovery",
+      "role": "arithmetic cancellation discovery",
+      "context_files": [
+        "protocol.md",
+        "state/proof_obligations.yml",
+        "state/active_campaign.yml",
+        "strategy/round231_harmonic_admission/briefs/complete_target.md",
+        "proofs/kernels/gc_complete_distinct_radical_moment_reduction.md",
+        "proofs/kernels/gc_distinct_radical_absolute_certificate_obstruction.md",
+        "strategy/round231_admission/reports/radical_packet_cancellation.md"
+      ],
+      "report": "reports/harmonic_pooling_discovery.md",
+      "status": "completed",
+      "report_sha256": "d5c56d66442579162bb1440e1b13379439a0583a7afb5b854822c85a3239539e"
+    },
+    {
+      "id": "blind_harmonic_pooling",
+      "role": "statement-only rederiver",
+      "context_files": [
+        "protocol.md",
+        "strategy/round231_harmonic_admission/briefs/blind_harmonic_statement.md"
+      ],
+      "report": "reports/blind_harmonic_pooling.md",
+      "status": "completed",
+      "report_sha256": "16af77813be06098cc10ff77c1b176657953024c37ef52873d81f648a6f871f8"
+    },
+    {
+      "id": "blind_squarefree_mass",
+      "role": "independent arithmetic input rederiver",
+      "context_files": [
+        "protocol.md",
+        "strategy/round231_harmonic_admission/briefs/blind_squarefree_statement.md"
+      ],
+      "report": "reports/blind_squarefree_mass.md",
+      "status": "completed",
+      "report_sha256": "12aaf0a9fbb03786abd862b3cc2da11cdf25415eafa02851f6f3e7f3087c0267"
+    }
+  ],
+  "exit_gates": [
+    "All harmonic and sign sums restored before absolute values; no use of C_cos lower bound as C_harm lower bound.",
+    "Independent new arithmetic seam and statement-only harmonic rederivation checked.",
+    "Quantitative complete target reached or precise scoped failure recorded; graph and earlier evidence preserved."
+  ],
+  "completed_at": "2026-10-11T03:06:50.552563+00:00",
+  "decision": "not_admitted_full_harmonic_certificate_obstruction",
+  "conductor_decision": "conductor_decision.md",
+  "graph_effect": "none; no State Patch proposed or applied",
+  "evidence_level": "reviewed admission evidence; no graph promotion",
+  "reviews": [
+    {
+      "path": "reports/blind_harmonic_pooling.md",
+      "sha256": "16af77813be06098cc10ff77c1b176657953024c37ef52873d81f648a6f871f8",
+      "scope": "statement-only different Gram proof, supplied shell input discharged separately"
+    },
+    {
+      "path": "reports/blind_squarefree_mass.md",
+      "sha256": "12aaf0a9fbb03786abd862b3cc2da11cdf25415eafa02851f6f3e7f3087c0267",
+      "scope": "isolated elementary arithmetic proof"
+    },
+    {
+      "path": "reviews/harmonic_pooling_seam_review.md",
+      "sha256": "09cd09be654fcba243f6d62190f945d645b0a7b270c2fbdc1a6fc53ae0b5a860",
+      "scope": "nonauthor review of exact conductor candidate hash; no restoration-source access"
+    },
+    {
+      "path": "reviews/conductor_report_review.md",
+      "sha256": "c2c442fc88babe636a1a7c86cfdebc9075b4b242ca9fac149b06af5aa0c0c5ef",
+      "scope": "all report seams, source-free arithmetic and graph-backed full restoration"
+    }
+  ],
+  "conductor_interventions": [
+    "Narrowed discovery to necessary lower-bound input and complete pooling cost; offered an unused fixed-cutoff sign-coherence alternative after discovery had independently found arithmetic dominance.",
+    "Selected the minimal fixed-H direct proof using independently checked arithmetic dominance and the elementary squarefree shell lemma.",
+    "Independently checked the blind Gram proof and discharged its supplied shell input; did not infer C_harm lower bound from previous C_cos result."
+  ],
+  "resource_outcome": {
+    "analytical_algebraic_minimum_percent": 95,
+    "numerical_experimental_maximum_percent": 5,
+    "activity": "One exact Wolfram rational diagnostic independently reproduced locally; no simulation, numerical asymptotic or external source import."
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 208,
+    "round_type": "full_proof_strategy_current_literature_review",
+    "campaign_id": "gc-full-proof-signed-arithmetic-review",
+    "title": "Full-proof signed arithmetic strategy and current literature review",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+    "generated_at": "2026-09-27T14:35:40.308954+00:00",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "planned_numerical_percent": 0,
+      "budget": "Three bounded reports and one same-round seam cycle; at most two fully priced theorem interfaces per source task; no mathematical numerical experiments."
+    },
+    "target_obligations": [
+      "GC-target",
+      "M9-M1",
+      "M9-M2",
+      "GC-complete-square-root-large-values-moment-bound"
+    ],
+    "frozen_target": {
+      "question": "Which complete actual signed arithmetic estimate should be pursued after205--207, with current primary-source costs and a route toward the full quarter theorem?",
+      "reference_formula": "P(X)<<X^(1/4+epsilon); retain the open full M1/M2 frontier and sufficient arbitrarily-high-fixed-moment route.",
+      "quantities": [
+        "Current p12 milestone radius T^(29/25), only pointwise102/325.",
+        "Round207 termwise rational majorant>=X^3H is a scoped obstruction, not a signed lower bound."
+      ]
+    },
+    "completion_criteria": [
+      "Three seven-section reports and an important statement-only derivation.",
+      "Current bounded primary-literature check with exact source hypotheses and costs.",
+      "Conductor comparison and complete next objective with complements and full-proof limits.",
+      "Independent seams; validated State Patch and closed ledger before successor design."
+    ],
+    "controls": [
+      "full_quarter_scope",
+      "complete_ranges",
+      "actual_coefficients",
+      "signed_absolute_distinction",
+      "all_costs_restored",
+      "real_endpoints",
+      "source_versions_hypotheses",
+      "independent_hierarchy"
+    ],
+    "exit_labels": [
+      "costed_strategy_adjustment",
+      "new_complete_candidate_requires_validation"
+    ],
+    "tasks": [
+      {
+        "id": "harmonic_current_sources",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "target": "Check current primary literature for Gauss-circle improvements, withdrawals and harmonic/large-values/decoupling methods. Compare actual signed high values with the complete existing distribution. Fully price at most two promising exact theorem interfaces (beyond mere names), retaining trace, coefficient norms, scales, exceptional peaks and reconstruction. Give a bounded corpus/search log, exact versions and URLs, distinguish metadata from verified theorem. Seek a new complete estimate or explain the first missing arithmetic inequality. Do not design or start a successor.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round208_full_proof_strategy_review.md",
+          "strategy/gauss_circle_strategy_review_2026-09-23.md",
+          "strategy/gauss_circle_strategy_checkpoint_round205_2026-09-26.md",
+          "rounds/codex-managed/gc-signed-rational-filter-attack/synthesis.md",
+          "proofs/kernels/gc_complete_square_root_large_values_moment_bound.md"
+        ],
+        "required_controls": [
+          "full_quarter_scope",
+          "complete_ranges",
+          "actual_coefficients",
+          "signed_absolute_distinction",
+          "all_costs_restored",
+          "real_endpoints",
+          "source_versions_hypotheses",
+          "independent_hierarchy"
+        ],
+        "required_output": [
+          "Seven numbered protocol sections; exact citations and artifact dependencies.",
+          "Write only the assigned report; no shared state or successor edits."
+        ],
+        "report_path": "rounds/codex-managed/gc-full-proof-signed-arithmetic-review/reports/harmonic_current_sources.md"
+      },
+      {
+        "id": "arithmetic_full_frontier",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "target": "Review actual rational total-frequency aggregation versus arithmetic/spectral/shifted-correlation approaches, and compare with open full M1/M2 parents. Refresh current primary sources including potentially relevant new developments. Fully audit at most two exact theorem interfaces with actual norms, all-moduli/prime-power restrictions, shift/width ranges, main terms, signed cancellation and restored powers. Read the permitted205 complete frontier, plus207 rational ledger; no new transform by itself is a gain. State which full-source objective is quantitatively justified and its first unproved estimate. Stop after report.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round208_full_proof_strategy_review.md",
+          "strategy/gauss_circle_strategy_review_2026-09-23.md",
+          "strategy/gauss_circle_strategy_checkpoint_round205_2026-09-26.md",
+          "rounds/codex-managed/gc-signed-rational-filter-attack/synthesis.md",
+          "proofs/kernels/gc_complete_square_root_large_values_moment_bound.md",
+          "rounds/codex-managed/gc-full-frontier-moment-strategy-review/reports/internal_arithmetic_routes.md",
+          "rounds/codex-managed/gc-signed-rational-filter-attack/controls/conductor_rational_norm_ledger.md"
+        ],
+        "required_controls": [
+          "full_quarter_scope",
+          "complete_ranges",
+          "actual_coefficients",
+          "signed_absolute_distinction",
+          "all_costs_restored",
+          "real_endpoints",
+          "source_versions_hypotheses",
+          "independent_hierarchy"
+        ],
+        "required_output": [
+          "Seven numbered protocol sections; exact citations and artifact dependencies.",
+          "Write only the assigned report; no shared state or successor edits."
+        ],
+        "report_path": "rounds/codex-managed/gc-full-proof-signed-arithmetic-review/reports/arithmetic_full_frontier.md"
+      },
+      {
+        "id": "blind_moment_hierarchy",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "pending",
+        "target": "Independently prove or refute every assertion requested in the isolated statement packet; no other context. Stop after the seven-section report.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/gc-full-proof-signed-arithmetic-review/briefs/blind_moment_hierarchy_statement.md"
+        ],
+        "required_controls": [
+          "full_quarter_scope",
+          "complete_ranges",
+          "actual_coefficients",
+          "signed_absolute_distinction",
+          "all_costs_restored",
+          "real_endpoints",
+          "source_versions_hypotheses",
+          "independent_hierarchy"
+        ],
+        "required_output": [
+          "Seven numbered protocol sections; exact citations and artifact dependencies.",
+          "Write only the assigned report; no shared state or successor edits."
+        ],
+        "report_path": "rounds/codex-managed/gc-full-proof-signed-arithmetic-review/reports/blind_moment_hierarchy.md",
+        "excluded_context": [
+          "Everything except protocol and the isolated statement packet, including generated general brief and web."
+        ]
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "all_moment_scope",
+        "requirement": "Exact moment powers, endpoints, complements and full theorem."
+      },
+      {
+        "id": "source_selection",
+        "requirement": "Primary hypotheses, restored costs and selection based on complete source."
+      }
+    ],
+    "previous_goal_turn_classification": "progress_completed_validated207_scoped_obstruction_changes_next_action",
+    "scheduled_review": "This is mandatory208; next mandatory review211 after208--210."
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+    "generated_at": "2026-09-27T14:35:40.350183+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "round_index": 207,
+  "campaign_id": "gc-signed-rational-filter-attack",
+  "starting_graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+  "proof_obligations": {
+    "create": [],
+    "update": [],
+    "correct_rejected": [],
+    "reject": [],
+    "no_change": [
+      "GC-target",
+      "Conditional-bridge",
+      "M9",
+      "M9-M1",
+      "M9-M2",
+      "M9-endpoint-uniformity",
+      "GC-external-Li-Yang-theta-star",
+      "GC-weighted-square-root-exact-resonance-mass",
+      "GC-physical-twelfth-moment-absolute-majorant-obstruction",
+      "GC-complete-square-root-large-values-moment-bound"
+    ]
+  },
+  "round_assessment": {
+    "terminal_label": "scoped_rational_method_no_go",
+    "reason": "Complete signed rational-filter and reciprocal estimates recover existing bounds only. The actual termwise rational sixth majorant is at least X^3H after single-frequency grouping; signed sextuple cancellation remains open. Threshold, mask and width costs are fully paid. Archive this scoped no-go without graph promotion."
+  },
+  "reversibility": {
+    "rule": "Identity patch. In-memory application, inverse identity and replay equal the original graph. Graph and proof-draft bytes are not rewritten."
+  }
+}

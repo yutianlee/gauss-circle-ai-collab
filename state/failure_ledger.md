@@ -2,7 +2,7 @@
 
 Generated from `state/proof_obligations.yml`; edit the graph rather than this derived file.
 
-Graph SHA-256: `3073235ad5677b9066f1336ec9d958b0e93b92d99cfa7ebea1d823146c799099`.
+Graph SHA-256: `4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71`.
 
 ## A2-M9-M2-character-factor-proved-internal-claim
 
@@ -11723,3 +11723,322 @@ The P2 complement itself remains open, as do P1, other t ranges, smooth M1, all 
 
 Evidence:
 - `rounds/codex-managed/m9-m1-t1-p2-cross-gcd-cellular-boundary-gate/reviews/conductor_round199_adjudication.md`
+
+
+## Round 206 complete signed-shell arithmetic (2026-09-26)
+
+The full divisor/CRT and shifted-pair attempts are closed and reviewed.
+The actual centered absolute sixth expansion is at least cXH^6, too large
+even for the relaxed sufficient sixth threshold; this is not a lower
+bound for the signed moment. Exact hyperbola/CRT opening retains every
+local density and moving mask but its absolute endpoint-error cost
+X^(3+epsilon)H^6 gives no gain. Patterns with at most three distinct
+shifts are safe; the joint4--6-distinct-shift contribution remains open.
+
+Direct frequency spacing gives M2(H_N)<<TN^-1/2. Combining it with the
+accepted distribution yields M6(H_N)<<TN^-29/110, still insufficient
+for a better complete p12 bound. The required additional sixth saving
+is g(alpha)=6min(alpha/4,beta,(1-alpha)/2)-4/25-29alpha/110>0 throughout
+52/125<alpha<99/125. A Gaussian variance sixth input is stronger than
+needed; the exact relaxed sufficient threshold is retained in the report.
+
+All399 graph nodes and proof-draft bytes are unchanged by an identity
+State Patch. Complete p12 exponent10beta and pointwise theta_LY remain
+the accepted bounds; M1/M2 and the quarter theorem remain open. No new
+external source is promoted. Three reports and three exact-hash seam
+reviews pass in their stated scopes. See
+`rounds/codex-managed/gc-complete-signed-shell-arithmetic/synthesis.md`.
+Round207 is pending design from closed evidence; next broad review208.
+
+
+## Round207 frozen barriers
+
+Round206 proves that actual centered absolute sixth expansion is too large. Both hyperbola arms and the signed4--6-shift aggregate remain essential. Pair variance, discarded CRT errors, a Gaussian necessity inference and unestimated sub-bands are forbidden. This round tests short-period annihilation and fully paid threshold freezing before a complete signed rational estimate. See strategy/round207_signed_rational_filter_attack.md.
+
+
+## Round207 signed rational-filter attack (2026-09-27)
+
+The complete signed reciprocal estimate recovers the existing physical
+coefficient supremum. Direct rational variance pays collisions, variable
+width and moving prefixes with logarithms. The hyperbola threshold error
+is target-safe; an independently reviewed even cutoff makes it rapid.
+
+Actual single-frequency grouping leaves l1 mass of order sqrt(X).
+The termwise integrated rational sixth majorant is at least X^3H,
+exceeding the sufficient threshold by at least T^(517/250). This lower
+bound includes exact and near triple relations and does not lower-bound
+the signed moment or reject joint total-frequency cancellation.
+
+Identity State Patch: all399 graph nodes and proof-draft bytes unchanged.
+No improved complete moment or pointwise exponent; M1/M2 and quarter
+remain open. Three reports and three exact-hash seams are green in their
+declared scopes. See rounds/codex-managed/gc-signed-rational-filter-attack/synthesis.md.
+Round208 is pending design as the mandatory broad strategy and current-
+literature review after205--207.
+
+
+## Round208 barriers
+
+The207 obstruction concerns termwise absolute sextuple integrals, not the signed moment or cancellation after total-frequency aggregation. Current masks and variance are paid. Further isolated transforms and repeated recovered bounds are not gains. Full quarter scope requires arbitrarily high fixed moments or complete M1/M2 parents.
+
+## Round208 complete strategy review (2026-09-27)
+
+The reviewed local Fourier reproduction bridge selects K10(N)<<T^(473/65+epsilon)N^-1/2
+for EVERY dyadic T^(166/325)<N<T^(242/325), with all complementary frequencies,
+explicit shell errors, real endpoints and infinite tails paid. This conditional gate
+would imply102/325 directly; it does not claim the earlier complete p12 milestone.
+The existing tenth bound retains both T^7N^-3/110 and T^(6+8omega), leaving worst
+deficit7beta-101/130. Actual signed ten-factor cancellation remains unproved.
+
+Fresh primary-source audit rejects the Xiao--Li shifted-log-cutoff theorem as an
+additive r2-correlation import and excludes withdrawn Kim2509.24152v4. Paid generic
+decoupling and Kloosterman imports remain insufficient. Three reports, three external
+seam reviews and conductor arithmetic-source review bind final hashes.
+
+Identity State Patch:399 graph nodes and proof-draft bytes unchanged. No complete
+moment or pointwise exponent improved. Full quarter and all M1/M2 parents remain open.
+See strategy/gauss_circle_strategy_checkpoint_round208_2026-09-27.md and
+rounds/codex-managed/gc-full-proof-signed-arithmetic-review/synthesis.md.
+209 pending design; next mandatory broad strategy/literature review211.
+
+
+## Round209 barriers
+
+Retain both tenth-moment terms; the actual high-value diagonal is not removed by variance, exact resonance bounds, a transform, or coefficient-uniform kernel estimates. A positive absolute-majorant obstruction does not refute a signed moment or signed total-frequency aggregation. Complete K10 and all quarter-theorem parents remain open.
+
+## Round209 complete signed tenth-moment attack (2026-09-27)
+
+Round209 closed with reviewed local evidence and an identity State Patch. The complete rational exact diagonal is O(T^(7+epsilon)N^-1/2); its actual nonzero near termwise integral majorant is >=T^11N^-1/2 after removing all exact relations. The original-root exact mass is O(T N^(-5/2+epsilon)), while the actual nonzero absolute expansion is >=N^2. These are scoped absolute-method obstructions, never signed-moment lower bounds. Discrete mean removal is pointwise safe but leaves the centered high values unproved; positive weighted duality loses the fixed-vector anchor. Both existing tenth-moment terms remain, including the separate bulk deficiency for alpha>99/169. No complete moment or accepted pointwise exponent improved. All399 graph nodes and proof-draft bytes remain unchanged. Full quarter and M1/M2 remain open. See rounds/codex-managed/gc-complete-signed-tenth-moment/synthesis.md.210 pending design; next mandatory broad strategy/current-literature review211.
+
+
+## Round210 barriers
+
+Exact relations are already target-safe. Full signed bins require internal modulation and amplitude derivatives; moving prefixes cannot be differentiated for free. Unweighted shifted-correlation errors must pay phase variation. Retain both old tenth-moment terms and all complements. No positive majorant is a signed lower bound.
+
+## Round210 complete signed near-frequency attack (2026-09-27)
+
+Round210 closed with three reviewed reports, independent seams and an identity State Patch. Phase-preserving smooth bins plus maximum-original-label prefixes give a legal full transfer. The actual normalized joint energy is bounded by H^9 up to epsilon, hence the integrated tenth norm by XH^9=T^11N^-9/2; this only recovers a known coarse bound and misses the target by T^(242/65)N^-4. All interval, derivative, modulation and tail costs are paid. Actual centered jumps plus absolute Abel variation force incompatible positive certificate costs N^(1/2)/L and TL/N; compatibility would require N>=T^(318/325), outside the band. Actual large-divisor CRT singletons independently reject the outer-absolute progression closure. These are scoped certificate failures, never signed-moment lower bounds. The sufficient signed residuals are the joint bin energy at T^(343/65+epsilon)N^-1/2 or the positive-part Fejer fifth moment at T^(83/65+epsilon)L^5N^-11/2 with its stated cutoff. Neither is proved; both inherited moment terms remain. All399 graph nodes and proof-draft bytes are unchanged; full quarter and M1/M2 remain open. See rounds/codex-managed/gc-signed-near-frequency-cancellation/synthesis.md. Round211 is the now-due mandatory broad strategy/current-primary-literature review after208--210, pending design.
+
+
+## Round211 barriers
+
+The210 H^9 bin input only recovers a coarse bound. Positive Abel variation and outer-absolute CRT closures fail on actual arithmetic controls. Neither is a signed no-go. A physical divisor decomposition must retain both complete arms, residue-four costs and every reconstruction scale. No external exponential-sum theorem applies to r2 weights without its exact coefficient interface. Full quarter and all M1/M2 routes remain open.
+
+## Round211 full-source strategy review (2026-09-28)
+
+Round211 completed the mandatory strategy/current-primary-source review after208--210. The exact actual hyperbola transfer is T^kappa N^(lambda/2-1/4); a statement-only derivation prices all cutoffs and reconstruction. The explicitly named exponent-pair generator closure has a proved invariant region and fails at alpha=7/10. Wu1999 Theorem1 and published KRW2007 Proposition5 both legally admit the real square-root product phase and preserve actual coefficient norms, but their restored powers are insufficient; KRW's T^(1/8)N^(1/16) term is redundant on the complete1<=N<=T range. Current primary metadata and withdrawal/merger claims were checked. The new reviewed finite two-stage bridge is |F_N|^4<<T^epsilon[N/L^2+N/K+A4]. At b=83/650 its two diagonals and every smooth main-term shift product are paid, leaving the complete actual four-point oscillatory average A4<<T^(166/325+epsilon) on T^(166/325)<N<T^(242/325) as the candidate next attack. This is sufficient for the102/325 pointwise milestone, not equivalent to the old tenth moment and not the quarter theorem. Its arithmetic estimate and any useful densities remain unproved. All399 graph nodes and proof-draft bytes are unchanged; all full M1/M2, endpoint and GAR scopes are preserved. See strategy/gauss_circle_strategy_checkpoint_round211_2026-09-28.md and rounds/codex-managed/gc-full-source-method-review/synthesis.md.212 is pending design; next mandatory broad strategy/current-source review214.
+
+
+## Round212 barriers
+
+The complete four-point target remains open. Global unweighted errors incur full phase variation; a local discrepancy input is stronger and must be proved. Every actual shift, repeated factor, small product, density and overlap must remain until its normalized cost is paid. No positive certificate floor is a signed arithmetic lower bound.211 scalar/bilinear imports and210 absolute closures are parked. Full quarter and all M1/M2 alternatives remain open.
+
+## Round212 complete four-point arithmetic attack (2026-09-28)
+
+Round212 closed with three reviewed reports, independent seams and an identity State Patch. Actual repeated shifts cost at mostN/K, and all hk<=N^(3/2)/T cost at mostN^(5/2)/(TLK), both withinT^(166/325+epsilon). For distinct shifts the p-adic norm product rho_loc is nonnegative and bounded byT^epsilon; it is a candidate model, not a proved mean. Repeated-shift factors1+1/p+O(p^-2) invalidate the copied constant product but their entire sector is already paid. The trivial local H(1) is proved. A stronger real-interval error ell^theta, theta<=45/83, would pay the full target; the isolated general criterion is b>=(1+eta)/(10-4nu+2eta), sharp for its abstract input class. The square-root instance has7/325 remainder margin at the milestone and a5/16 limiting exponent, not quarter. Matthiesen1106.4690v3 Theorem1.1 fails on fixed translated one-variable forms; its valid3D lift lacks the required quantitative error and absolute-fiber norm. Actual residual coefficient mass gives a scoped positive radius-Gram price at leastN T^-38/325, which fails abovealpha=204/325. This does not lower-bound signed A4. The conductor separately proves actual small-phase A4 mass of orderN^(5/2)/(TLK) on fixed interior scales above2/3, excluding uniform fixed power improvement on that safe sector across the full open band but not moving-edge little-oh. No complete A4/moment/pointwise gain; all399 graph nodes and draft bytes unchanged. See rounds/codex-managed/gc-complete-four-point-correlation/synthesis.md.213 is pending design around the complete actual signed model remainder; mandatory broad review214 remains scheduled.
+
+
+## Round213 barriers
+
+The complete actual model remainder is open. Centering by a bounded candidate is an identity, not a proved mean or cancellation estimate. The212 uncentered Gram obstruction must not be transferred to centered coefficients without proof. Every actual shift, support, model cross term and norm cost is retained. The invalid fixed-shift source import,210 CRT closure and211 scalar/bilinear failures are parked. Full quarter and all M1/M2 alternatives remain open; mandatory broad review214 follows this round.
+
+## Round213 complete centered arithmetic attack (2026-09-28)
+
+Round213 closed with three reports, independent final-hash seams and an identity State Patch. A proved enlarged-window Fourier-bandwidth transfer costs sqrt(q), with explicit tails. The unproved complete signed radius input Q_j << T^epsilon(sqrt(N)+N q^(-3/2)) would suffice, giving sqrt(N Lambda_*)+N/Lambda_* and restored powers159/325 and166/325. The gate is equivalent for D and D-rho_loc I up to the paid allowance; centering supplies no arithmetic estimate. Actual residue zeros force scalar-centered positive certificates to retain N/sqrt(Lambda_*), and continuous total variation has the same cost. Even exact model cross terms cannot rescue an absolute-DD certificate: after the bandwidth cost it is at least cN throughout every fixed interior scale. Whole nonnegative norm models with period<=cN/(1+Lambda), including all Fourier aliases and mean mismatch, have target-safe oscillatory cost. But their complete actual L1 approximation error is at least cN/log T uniformly over such model choices, by an omitted inert prime, CRT and surviving actual mass. The sole source is Kedlaya Theorem4.12 at fixed progression(3,4); no growing-modulus uniformity is invoked. These are specified certificate obstructions, never lower bounds on signed E or circle discrepancy. The full signed input, original tenth gate, every M1/M2 parent and quarter remain open. All399 graph nodes and proof-draft bytes unchanged. See rounds/codex-managed/gc-complete-centered-arithmetic/synthesis.md.214 is pending design as the mandatory broad strategy/current-source review.
+
+
+## Round214 barriers
+
+The213 signed radius gate remains unproved; its full bandwidth and enlarged-window costs are mandatory. Scalar centering, absolute DD with exact model terms and low-period nonnegative-model L1 complements have scoped obstructions, not signed counterexamples. Do not repeat those closures. Full quarter, original high moments, all small-t M1 HARD, independent M1 SMOOTH, M2 TOP/BAL/UNBAL, endpoints and GAR complement remain open. Audit current primary sources and net powers before selecting another complete objective.
+
+## Round214 full-goal strategy and source review (2026-09-28)
+
+Round214 completed the mandatory full-goal strategy/current-primary-literature review after211--213. Under the unproved radius input, the complete certificate N/L^2+N/K+N/D+sqrt(ND), D=TLK/N^(3/2), optimizes to uniform block exponent1/8 and conditional physical5/16; exact scalesT=m^4,N=m^3 prove only a certificate limitation. Formal frequency decay requires1-sigma<=b(8-6sigma). Neither conclusion proves arithmetic cancellation. The two arithmetic source audits fail at extra coefficient weights (Chamizo, whose original shift range does pass) and rank/single-equation scope (Wessel--zur Verth). Guth--Maynard's logarithmic-frequency theorem has no proved square-root dictionary. The legal localized Guth--Maldague lattice lift gives M_p<<T^epsilon[TN^(1-p/4)+TN^(p/4-1)], insufficient for the complete tenth gate after spatial trace and all windows. Current primary versions and withdrawals were rechecked; no exhaustive literature absence is claimed. The dated checkpoint selects a complete weighted localized cone-wave estimate with actual modulated coefficients as the next candidate, explicitly unproved and only a102/325 milestone if established. The full moment family and every M1/M2/GAR/endpoint alternative remain open. Three reports and final-hash independent seams pass in scope; identity State Patch, all399 graph nodes and draft bytes unchanged. See rounds/codex-managed/gc-full-goal-radius-source-review/synthesis.md and strategy/gauss_circle_strategy_checkpoint_round214_2026-09-28.md.215 pending design; next mandatory review217.
+
+
+## Round215 barriers
+
+The complete weighted localized wave momentC215 is unproved. Retain actual common modulations and all narrow/aligned packets, windows, tails and spatial norms. The unweighted cone theorem is not a free weighted-measure result; the214 generic cap/trace moment is insufficient. Positive radius/centering certificates remain scoped failures, not signed lower bounds. Full quarter and every M1/M2/GAR/endpoint alternative stay open. A new identity without a complete quantitative gain does not solve the moment.
+
+## Round215 complete actual localized-wave attack (2026-09-28)
+
+Round215 closes without an arithmetic or exponent gain. The complete weighted amplitude-envelope transfer preserves its thresholds and all tails but changes the legal source scale to min(N,r); the full crude bound is TN^(2+epsilon). The exact angular reduction retains all multiples-of-four modes including A_0=r2; reproduced finite-block duality and all tails yield C<<T^epsilon(Tsqrt(N)+N^(5/2)), dominated by the second term throughout the critical band. Its sufficient angular estimate remains open. Independent actual coefficient binding and an isolated derivation prove lower bounds TN^2 and N^(5/2) for two specified positive Fourier upper certificates, distinguished by whether center phases are summed before taking modulus. These are not lower bounds on the signed moment. Source, angular, actual-kernel and blind-report reviews pass at final hashes after one explicit coefficient-definition repair; frozen scope and original reports remain unchanged. Identity State Patch, all399 nodes and proof-draft bytes unchanged. The outcome is reviewed method diagnosis with no mathematical gain, not a solved or blocked goal. All M1/M2/GAR/endpoint alternatives and the full-quarter moment-family requirement remain open.216 pending design, with the already costed actual full-series twelfth high-value gate retained as a candidate; next broad strategy/current-literature review217. See rounds/codex-managed/gc-complete-localized-wave-moment/synthesis.md.
+
+
+## Round216 barriers
+
+The complete actual high-value targetH216 remains open. Squarefree independence proves exact relations only, not finite-time independence or near-frequency cancellation. The fixed cutoffQ=T^(2/5) must retain all s, signs, unequal blocks and smoothing tails. Pay the entire high-event transfer. Generic norm/Gram bounds erase the absolute-radius anchor; centered L1 and positive Fourier certificates remain parked. Random-model exceptional sets and qualitative thin-box correlations do not prove power-level tails. Fullquarter and all M1/M2/GAR/endpoint alternatives stay open.
+
+## Round216 complete distinct-radical reduction (2026-09-28)
+
+One complete actual arithmetic reduction is accepted after final-hash and statement-only validation. For Q=floor(T^(2/5)), M12(L_Q)<<T^(15/13+epsilon), and integral w|Z_Q^12-E12|<<T^(8beta-1/5+epsilon), with beta=2theta_LY-1/2. H216 is equivalent to the target-sized signed twelve-distinct-class integral, which remains open. The collective estimate includes nonzero repeated-class configurations and is stronger in scope than the exact diagonal bound, but supplies no new complete moment power or pointwise exponent. The anchored divisor route retains its explicit unproved signed energy with loss rho<=208/2625. All399 previous graph nodes are unchanged; full quarter, M1/M2/GAR and endpoint obligations remain open. No numerical experiments or new external theorem. Mandatory broad strategy/current-literature review217 is pending design.
+
+
+## Round217 review barriers
+
+Accepted216 pays the actual small-class head and collective repeated classes, but its distinct signed integral remains open. Three-class near controls and whole-kernel absolute certificates are not distinct-class controls. Exact radical independence is not finite-window cancellation. The anchored divisor signed energy is unproved. Assess complete p-family and any recursive premises before claiming quarter reach. All full-proof alternatives and existing source repairs remain; re-audit current primary literature, not old labels.
+
+## Round217 full-goal distinct-source review (2026-09-28)
+
+Round217 accepts only the actual distinct-class termwise absolute-certificate obstruction: for fixed even p>=4 and alpha<1, one positive balanced block has mass at least T^(p/4-1/2). It does not lower-bound signed I_p or disprove the target. The conditional family Q_p=floor(T^(1/p)), I_p<=T^(5/4+epsilon) at an unbounded fixed-even subsequence suffices by same-order absorption and the paid head, but every new grant remains unproved. Current source audits preserve the qualified benchmark and all full M1/M2/GAR frontiers. Complete moment and pointwise powers are unchanged; quarter remains open. Next218 is pending design, next broad review220.
+
+
+## Round218 joint signed-kernel barriers
+
+The complete distinct positive certificate is at leastT^(5/2); its signed target remains open. Preserve original kernel phases, actual chi4 and integer dual multiplicities. The squarefree mask is not smooth. Full ambient dimension is not stationary-phase rank. Old203 scalar Poisson/free centering and210 absolute CRT costs must be bypassed by a new joint signed estimate, not merely renamed. The paid216 equivalence permits the full actual B moment, with no smaller complement substituted.
+
+## Round218 complete joint signed-kernel attack (2026-09-28)
+
+Round218 closes with an identity State Patch. The joint divisor/lattice phases have rank12 at fixed radius and14 with the common radius, leaving11 radial null directions. The particular complete unblocked Gaussian-lattice certificate taking a modulus only after each full radius integral obeys cT^7<=P_T<=T^(7+epsilon); the critical annular certificate costs T^3. These lower bounds concern positive certificates only. The complete elementary fallback is the oldT^(7/3), weaker than acceptedT^(10beta). Actual signed I12, equivalent normalized dual moment, full-quarter family and all M1/M2/GAR parents remain open. All401 graph nodes and proof-draft bytes are unchanged. Next219 pending design; broad review220 remains scheduled.
+
+
+## Round219 complete anchored-energy barriers
+
+The216 signed energy inequality is unproved; scalar moduli lose D and an unabsorbable term. Round218 stationary transforms do not improve the full moment. Preserve actual aligned signs, both real kernels and every exact/near anchor incidence. A rephased control cannot refute actual high-value energy. Returning known bounds is no complete-bound progress; no new smaller complement is a success.
+
+## Round219 complete anchored divisor-energy attack (2026-09-28)
+
+Round219 closes with an identity State Patch. Exact and near multiplicative-anchor packing improves the inverse certificate to JN sqrt(J)+J^2D sqrt(N)log(T)/T; actual high-rectangle restrictions and Young absorption leave169/3500+epsilon against budget208/2625. The full capped oscillatory cost still prevents the complete signed energy target. Character signs factor into anchor signs on exact common labels; the abstract coherence controls do not refute actual aligned high points. The reciprocal-anchor attempt establishes no complete signed saving. All401 graph nodes, the proof draft and accepted powers remain unchanged. Quarter, unbounded fixed-order grants and all original analytic parents remain open. Mandatory broad strategy/current-primary-source review220 is next, pending design.
+
+
+## Round220 full-goal source-review barriers
+
+Rounds217--219 did not improve a complete moment. The219 inverse certificate is paid, but both signed modular kernels remain. Real anchors can be rounded only with an exact smooth-factor norm proof; combined-row operator hypotheses must not be enlarged from separate product factors. Current theorems need exact primary audits and full costs; source resemblance and smaller complements are not progress to a complete estimate.
+
+## Round220 full-goal strategy and current-source review (2026-09-28)
+
+Round220 mandatory full-goal strategy/current-primary review closes with an identity State Patch. The smooth residual-phase and moving-interval operator lemma is reviewed infrastructure; BP, MQW, Guth--Maynard and Glidewell transfers give no complete improvement after exact norms, eligibility and restoration costs. Enlarged arbitrary complex and real row controls do not refute actual aligned high points. Checkpoint220 corrects the earlier UNBAL summary to K=XL/D^2 and e(sqrt(X h k)); graph/draft and closed217 remain unchanged. All401 nodes, accepted moment powers, qualified Li--Yang exponent, quarter target and original analytic parents retain their status. Round221 is pending design for a direct actual-vector signed Gram attack; next broad review223.
+
+
+## Round221 fixed-vector correlation barriers
+
+Rounds204/209 already show that positive r2-weighted difference Gram norms retain the diagonal and lose the actual vector anchor. Round217 rules out termwise absolute distinct-frequency closure;218 pays no complete signed gain from joint transforms;220 source transfers and arbitrary-row certificates do not establish the actual target. Retain fixed-vector chain endpoints or prove a new actual joint arithmetic estimate, and restore the entire signed moment. No smaller unestimated complement is a success.
+
+## Round221 actual-vector correlation closure (2026-09-28)
+
+Round221 closes with an identity State Patch and no complete analytic gain. The isolated Gram/preimage algebra and its endpoint-ceiling application are valid, but the latter gives v_eff<=v. The actual fixed-offset sixth-chain average has a phase-insensitive certificate floor T^(10beta), with the real rephased control distinguished from the actual waveform. The complete pair-divisor/CRT/Abel calculation pays its principal mode, every alias, square and class correction; its phase-erased actual Fejer certificate costs T^3 globally, not a physical moment lower bound. Both complete attacks retain the stronger accepted10beta fallback with both high-tail terms. All401 nodes, proof-draft bytes, qualified external exponent, quarter goal and analytic parents remain unchanged. The round is stalled at the complete estimate, not externally blocked. Round222 is pending design on the complete actual M2 UNBAL vector frontier with corrected K=XL/D^2 and phase e(sqrt(Xhk)); broad strategy/current-primary review223 remains scheduled.
+
+
+## Round222 complete UNBAL vector barriers
+
+Complete target has K=XL/D^2 and phase e(sqrt(Xhk)). Smooth dual equivalence is not an estimate or hard-endpoint transfer. Flat107/118/143/160 identities and envelopes do not cover every literal companion. Complete h summation self-returns; scalarization, long-frequency compression, positive row norms and generic multiplier grants are already priced. Cross-modulus complete-period orthogonality is not a short or differently weighted row theorem. Retain actual characters and the full joint coefficient before a signed estimate, then restore every owner cost. No unestimated smaller complement or enlarged-vector counterexample closes the actual target.
+
+## Round222 complete UNBAL vector closure (2026-09-28)
+
+Round222 closes with an identity State Patch and no complete analytic gain. Bare Kloosterman complete-period orthogonality does not survive the actual row-dependent Fourier weights, and deleting h=0 does not remove their constant mode. The fully priced joint finite-window closure costs R^(3/2)X^epsilon. The exact signed product increments retain (-1)^r, but the tested rectangle norm removes it; its actual buffered trace certificate costs X^(11/32) on one legal family, not a lower bound for the actual signed sum. Its restored upper estimate improves neither the elementary smooth fallback nor the accepted flat envelope in its legal scope. All profiles, masks, gcd/frequency rows, real centres and endpoint owners are kept. All401 graph nodes, proof-draft bytes and the qualified Li--Yang benchmark remain unchanged; complete UNBAL, all full-proof parents, the sufficient moment family and quarter goal remain open. The round is stalled at a complete estimate, not externally blocked. Mandatory broad strategy/current-primary review223 is pending design after220--222.
+
+
+## Round223 full-goal signed source barriers
+
+Complete220 source costs,221 fixed-vector/positive-correlation failures and222 weighted constant-mode/rectangle certificate losses are retained. No complete bound improved. A logarithmic source saving is not a fixed-power improvement; actual r2 and radical-mask coefficients must satisfy the exact source class, with constants controlled. Continuous Fourier-L1 transfer and its signed periodization are different objects. All exceptional moduli, real phases, endpoints, tails, product norms and reconstruction costs remain. Do not promote a source resemblance or a smaller complement. Compare every full M1/M2/GAR and fixed-unbounded-moment route before selecting one complete next target.
+
+## Round223 full-goal signed-source review closure (2026-09-28)
+
+Mandatory review223 closes with an identity State Patch and no complete analytic or pointwise exponent gain. The raw r2/4 coefficient fails a fixed linear mean-square class; fixed damping is legal but does not make the nonlinear masked wave a linear theorem application. The reviewed absolute Fourier certificate has a quantified loss only under its explicit global-majorant floor; signed periodization and optimal discrete norms need not share it. Pascadi full-range and FKMS correctly oriented product applications preserve their full completion costs and give no complete UNBAL improvement. The complete-frontier checkpoint selects the real total-M1 GAR inequality for224 pending design, with all lower scales and later ownership through159 retained. This is a strategy change, not a new theorem or demonstrated saving mechanism. All401 graph nodes, proof-draft bytes, accepted results and qualified Li--Yang benchmark remain unchanged. Full M1/M2/GAR, endpoints, the sufficient unbounded fixed-even-moment family and the quarter goal remain open. No external blocker exists; next broad strategy/current-primary review226.
+
+
+## Round224 complete GAR split-prime barriers
+
+Actual angular coefficients are not unrestricted r2/4 Hecke eigenvectors. Keep all profile commutators and p-adic overlaps under the complete real pairing. Prime dilations retain amplitude factors, divisibility restrictions, changed radial cutoffs and phases at scaled centres while A_X stays fixed. No parameter average, cross-prime orthogonality, target-safe correction, or flat-to-complete bridge is granted. Retain accepted120 nonlower completion,121--122 exact lower reductions and later lower-owner dependencies through159. Complementary inversion, reflection, Fourier/Abel self-return and coefficient-blind positive norms alone are not a new gain. Full M2/endpoints and the quarter goal remain open.
+
+## Round224 complete GAR split-prime closure (2026-09-28)
+
+Round224 closes the bounded complete-GAR split-prime attempt with no complete estimate or exponent gain. Exact prime allocation retains every overlap and the original-X profile commutator. Completed rows self-return; their Cauchy estimate has equality. The separately priced expanded/incidence procedures retain normalized X^(1/8) mass, worse than the actual complete baseline X^(1/12). The conductor grouped-coefficient control, independently source-audited, is limited to its explicit semiprime range and still says nothing about signed radial size. Identity State Patch; all401 nodes and proof-draft bytes unchanged. Full M1/M2/GAR, endpoints, the sufficient unbounded fixed-even-moment family and the quarter goal remain open. Round225 pending design; next broad strategy/current-primary review226.
+
+
+## Round225 complete logarithmic-convolution barriers
+
+The complete actual circle wave uses r2, not the GAR angular coefficient. Prime-factorization identities do not save powers. Keep both Lambda and chi4 Lambda branches, every prime power, n=1, literal U/V endpoints, all Type-I/II complements and the nonlinear real phase. Do not import linear multiplicative theorems or fixed-class assumptions from223 without a proved bridge. All actual vector norms, product masks and infinite Schwartz tails must be restored before comparing with beta=2theta_LY-1/2. The completed-row Hecke self-return224 and expanded/incidence/grouped certificate floors do not lower-bound the signed wave. Full quarter remains open; next mandatory broad review226.
+
+## Round225 complete logarithmic-convolution closure (2026-09-28)
+
+Both actual logarithmic/Vaughan branches and their full inverse contractions are valid, but no complete signed bound below inherited beta is obtained. The scoped generic factor certificate can reach47/378 locally at N=T^(2/3); even freely granting optimal factors at every scale leaves worst exponent81/614 at N=T^(226/307), above beta. All actual cutoff terms, norms, singleton, infinite tail and sharp reconstruction are paid. Upper-certificate capacity is not an actual arithmetic lower bound. No complete real, moment or pointwise gain. Identity State Patch: all401 graph nodes and proof-draft bytes unchanged. The independently derived complex13/56 bound is a weaker scoped certificate, not a new real benchmark. The missing estimate is: Uniformly for every real T>=2 and R in [cT,CT], bound the ENTIRE actual real eight-term logarithmic/Vaughan recombination, or its exact contracted circle wave, by T^(gamma+epsilon) with gamma<beta=2theta_LY-1/2, ultimately gamma=0. Every scale, singleton, sign, cutoff and Schwartz tail remains included. Full quarter, unbounded fixed-order moments, M1/M2/GAR and endpoints remain open. Zero mathematical experiments. Mandatory strategy/current-primary review226 is pending design.
+
+
+## Round226 full-goal spectral source barriers
+
+All667 prior archived entries verified. Round225 completes a bounded reviewed attempt but no analytic exponent gain. Keep223 source/absolute-transfer limits,224 actual angular commutator and225 all-scale factor costs. Round221 already prices elementary shifted r2 aliases: source review must supply new uniform oscillatory information, not repeat a small main mode. Growing shifts, oscillatory-test derivatives, exceptional spectra and complex contour limits cannot be suppressed. Compare every complete owner and retain the full quarter target. No source resemblance, transform identity or unestimated complement is progress.
+
+## Round226 full-goal spectral-source review closure (2026-09-28)
+
+Four bounded theorem/source audits and the isolated subordination control supply no complete bound or exponent gain. The actual-r2 July2026 source motivates a direct joint spectral test, but absolute Abel transfer loses growing phase variation. The fully restored one-sided signed Fejer remainder target retains every shift, density, diagonal, endpoint and tail and is sufficient for quarter; it remains unproved. Identity State Patch: all401 graph nodes and proof-draft bytes unchanged. M1 HARD/SMOOTH, M2 TOP/BAL/UNBAL, GAR lower ownership through159, endpoints and unbounded fixed-order alternatives remain open. The fixed twelfth target is not quarter. No actual-value lower bound or all-method no-go is inferred. Zero experiments. Round227 pending analytic design; next broad strategy/current-primary review229. Selected first unproved estimate: For actual g_N(t)=(t/N)^(-3/4)Psi(sqrt(t/T))w(t/N), H=2N and R~T, prove 2 Re sum_{1<=h<H}(1-h/H)[C_h-rho_h integral g_N(t+h)g_N(t)e(R(sqrt(t+h)-sqrt(t)))dt] <=C_epsilon,J A_J(N)^2 N^(3/2)T^epsilon uniformly over every dyadic 2<=N<=P, P the smallest dyadic >=T^(3/2). All shifts and spectral terms retained; exact complete restoration is checkpoint(F)--(H).
+
+
+## Round227 complete joint spectral barriers
+
+All701 closed200--226 archive entries verified. Previous turn completed reviewed source evidence changing the next action, but no complete analytic gain. The target is the entire signed Fejer remainder, all shifts and scales. Round226 already prices absolute Abel and straight-ray heat majorants. Direct spectral work must preserve the actual coefficient/test pairing and pay every continuous/discrete term, height, residue, endpoint and tail. AH point fourth moments do not automatically bound the HKLDW regularized-theta pairing; derive the identity or identify the failed premise. Upper certificate losses are not actual lower bounds. Full quarter, sufficient unbounded fixed-order moments and all M1/M2/GAR/endpoints remain open.
+
+## Round227 complete joint spectral remainder closure (2026-09-28)
+
+The complete actual remainder has exact ordered HKLDW and whole-functional level1/2 Heegner formulations with paid scalar transforms and tails. The stated point fourth moment and individual Hecke norm give raw A^2 T N^2; even a hypothetical free fixed-sieve-size twisted norm leaves A^2 T N^(3/2). The elementary A^2 N^2 cap is still stronger and gives no new complete exponent. The actual signed spectral inequality at A^2 N^(3/2) remains unproved. Identity State Patch: all401 nodes and proof-draft bytes unchanged. M1 HARD/SMOOTH, M2 TOP/BAL/UNBAL, GAR lower ownership through159, endpoints and sufficient unbounded fixed-order alternatives remain open; fixed twelfth is not quarter. No arithmetic lower bound or all-method no-go. Zero mathematical experiments. Round228 pending design; broad strategy/current-primary review229. First complete unproved estimate: Uniformly for every R~T, dyadic2<=N<=P<2T^(3/2), and actual g_N, prove 2Re{sum_{q=1,2}sum_{j!=0}|u_j(z_q)|^2 V_q(j)+(1/(4pi))sum_{q,cusps}integral |E_cusp(z_q,1/2+it)|^2 V_q_cts(t)dt}<=C_epsilon,J A_J(N)^2 N^(3/2)T^epsilon, with V_q=sum_{h<2N}(1-h/(2N))L_q,h H_h, exactly as reviewed Heegner report(7)--(10). Retain all shifts, two-adic factors, continuous spectra and tails; do not replace the signed expression by an unproved sufficient norm.
+
+
+## Round228 signed Heegner phase barriers
+
+All732 closed200--227 archive entries verified. Previous turn changed the next analytical action through reviewed complete spectral evidence, not an improved bound. The exact Heegner functional avoids a false level4 coefficientwise point transfer. Its positive norms cost A^2 T N^2, even an optimistic free fixed-sieve-size comparison costs A^2 T N^(3/2), and the elementary A^2N^2 cap is better. Preserve actual h^(it) with the common spectral phase before norms. Resonant functional equations require every transition, parity, conductor, oldspace and dual reconstruction cost. A paid entire continuous spectrum does not pay its cusp partner. All full-proof owners remain open; upper certificates are not actual lower bounds. Mandatory broad review229.
+
+## Round228 signed Heegner phase closure (2026-09-28)
+
+The complete continuous component is reviewed at raw A_J^2 N^(3/2)T^epsilon using exact CM values and a proved degree-two mean square. The actual cuspidal functional equation has dual scale qt/(pi^2 L) and surviving phase (qdR^2/n)^(it), but its paid positive certificate A^2 T^(3/2)N^(5/4) does not improve the whole arithmetic cap. The remaining complete signed cusp target is unproved; no complete-wave or exponent gain. Identity State Patch: all401 nodes and proof-draft bytes unchanged. Reviewed spectral evidence has not been packaged into a dependency-closed graph promotion. M1 HARD/SMOOTH, M2 TOP/BAL/UNBAL, GAR lower ownership through159, endpoints and sufficient unbounded fixed-order alternatives remain open; fixed twelfth is not quarter. No actual arithmetic lower bound or all-method no-go. Zero experiments. Mandatory strategy/current-primary review229 pending design. First complete unproved estimate: Uniformly for actual signed g_N, every R~T, all dyadic2<=N<=P<2T^(3/2), prove 2Re D<=C_epsilon,J A_J(N)^2 N^(3/2)T^epsilon, where D is the ENTIRE exact level1/2 cusp expression in complete_eisenstein_pairing(5), equivalently signed_hecke_functional_attack(24), with every h<2N, two-adic descendant, old/new factor, discrete mode and full scalar tail. The entire continuous component is reviewed at the allowed target error.
+
+
+## Round229 full-goal cuspidal source barriers
+
+All763 archived entries from200--228 verified. Round228 reviewed the entire continuous component at target size, but no full-wave gain. The complete cusp owner retains all primitive levels, oldspace weights, two-adic factors and spectral phases. Formal inversion and the shorter qt/L dual vector alone do not estimate cancellation. Source imports must pay actual CM harmonic measure, growing tests, strip and separation costs, every geometric and spectral partner, and reconstruction. Keep all alternative M1/M2/GAR/endpoints and unbounded fixed-order moment owners. No source resemblance, averaged surrogate or unestimated complement is a complete advance.
+
+## Round229 full-goal cuspidal strategy closure (2026-09-29)
+
+Mandatory source and strategy review found no new complete bound or exponent gain. AH's CM majorant cannot replace the exact weight inside a signed sum; KL's lawful trace still needs complete CM/Fourier/test reconstruction and a quantitative signed estimate. Xiao's fourth-moment range misses substantial shells, while the legal Kim-Ko application restores only the existing triangle scale. The isolated full radial Abel mass and compact-spectral obstruction are proved and reviewed. The inherited entire continuous component stays paid as reviewed evidence; the entire cusp target remains open. Identity State Patch: all401 graph nodes and proof-draft bytes unchanged. M1 HARD/SMOOTH, M2 TOP/BAL/UNBAL, total-M1 GAR lower ownership through159 and the separate cross owner, endpoints and the sufficient unbounded fixed-order family remain open. Fixed twelfth29/25 is not quarter. No actual arithmetic no-go is claimed. Round230 pending conditional design; next broad strategy/current-primary review232. First unproved full estimate: For actual g_N(x)=(x/N)^(-3/4)Psi(sqrt(x/T))w(x/N), A_J=(1+N/T)^(-J), every R comparable to T and every dyadic2<=N<=P, P the least dyadic>=T^(3/2), prove2Re D<=C_epsilon,J A_J^2N^(3/2)T^epsilon for BOTH cusp levels together. D+E is the full signed Fejer correlation remainder, with all three continuous cusps already reviewed target-sized. All exact CM measures, primitive/local factors, shifts, descendants, modes, endpoints and tails remain; checkpoint229 gives complete restoration.
+
+
+## Round230 strategy-review barrier packet
+
+Closed229 found no new complete bound. Whole continuous evidence from228 is not an accepted dependency-closed theorem. Exact local/toric identities and shorter dual lengths alone are not analytic gain. Preserve all signed measures, all full M1/M2/GAR owners, real/complex scope, endpoint/tail ownership and fixed-order quantifiers. Review stagnation explicitly; do not launch a successor without a new quantitative complete mechanism.
+
+
+## Round230 status and strategy review closure (2026-10-11)
+
+Status review confirms last complete accepted gain204 and25 subsequent no-gain rounds. Kim–Ko v3 changes weight scope but not the tested complete bound; Yang family mismatch persists. Correct all-order216 attribution forward, retain reviewed228 component, and require new complete quantitative input before another analytic round. Complete twelfth improvement needs b12<1.1765625753;29/25 gives102/325, not quarter. An adequate unbounded fixed-order direct-wave family remains unproved. Kim–Ko general weights and point measures remove an evaluation seam but no power; Yang torus/Eisenstein index sets do not become the actual Maaß cusp measure. Graph/draft and closed artifacts unchanged. Round231 pending admission, no tasks.
+
+
+## Round231 prelaunch admission screen — 2026-10-11, no analytic campaign
+
+Reviewed evidence only, not accepted graph additions: strategy/round231_admission/conductor_decision.md. Completed scalar r2 prime rows are exactly2B; covariance averaging supplies no independent saving, and a zero-sum filter removes the signal. Growing-prime windows, all valuation corrections, squarefree masks/collisions and coprime companions must be paid. The coprime covariance gate is a restatement, not a new source input.
+
+New scoped analytical control, independently rederived: summing all4096 cosine signs at each fixed norm tuple before taking that tuple's modulus still produces an actual-coefficient certificate >=cT^(5/2). This does not cover grouping all harmonic tuples for fixed squarefree labels before modulus, nor the fully signed sum or moment. Do not cite this as a lower bound for I12 or M12. Any fixed-tuple Galois partition is subject to the same certificate control; genuine cross-norm/harmonic cancellation remains possible. No new complete moment/pointwise gain. Round231 remains pending design. Reports and reviews are frozen in the admission packet; graph promotion would require the ordinary separate campaign/patch gates.
+
+
+## Round231 second prelaunch screen — full harmonic pooling, 2026-10-11
+
+Reviewed evidence only, not graph-promoted: strategy/round231_harmonic_admission/conductor_decision.md. Define J_d=integral w product_j f_(d_j), with each f_d the full actual infinite harmonic series, and C_harm=sum_(ordered pairwise distinct squarefree d_j>Q)|J_d|. A fresh direct proof and an isolated Gram rederivation give C_harm>=cT^(5/2) for all sufficiently large realT. The earlier norm-tuple certificate was NOT used to transfer this lower bound. Actual squarefree shell mass, every common multiple, higher Psi signs, all mixed harmonics and the full infinite tail are paid. The conductor candidate has a nonauthor exact-hash seam review. No certificate estimate with exponent below5/2 can hold for this precise quantity.
+
+Scope: this is NOT a lower bound on signed I12=sum_d J_d or the complete moment. Full harmonic pooling followed by per-label-tuple absolute values is now excluded; cancellation between DIFFERENT squarefree-label tuples remains unestimated. Preserve accepted216's twelfth-only restoration. The complete10beta benchmark and preferred29/25 target are unchanged. Round231 remains pending with no analytic tasks or graph patch. Previous admission evidence is immutable.
+
+
+## Round231 third prelaunch screen — exact smooth cancellation, 2026-10-11
+
+Reviewed evidence only: strategy/round231_cross_label_admission/conductor_decision.md. The actual squarefree harmonic mean residue is kappa_s=kappa product_(p^a||s,p=1 mod4)[1+2a(p+1)/(p+2)], and sum_s kappa_s/s^2=pi. Full pooling makes the continuous area wave exactly zero for positive R>T^-1/2. The whole d>Q continuum is O(T^-1 Q^-1/4), so centering costs only T^(9beta-11/10+epsilon) in M12. Every harmonic, sharp real endpoint and complete restored owner is paid. This establishes an exact main-term identity, not cancellation of the remaining arithmetic discrepancy.
+
+The signed CDF transfer has one outer T; a sufficient weighted/local error is T^(4/25+epsilon) at frequency resolution1/T, with paid exterior tails. Coarse one-factor mean laws do not imply it: an isolated nonnegative coherent twelve-factor modulation control retains a T^(5/2) moment despite small CDF errors. This is an information-content control, not an actual r2 counterexample. The known upper bound already forces large positive and negative label-tuple masses to cancel; deriving this from that upper bound is not a new proof of it.
+
+Primary source controls: Lamzouri2410.03652v1 Proposition3.1 permits only n<=T^(1/2072)/144 at order12 after x=R^2, below Q=T^(2/5); the target component is empty. Zhai2004 Theorem3 at k12 requires an optimal absolute moment A0>12, which already implies a stronger result. No source admitted. Do not repeat smooth-main subtraction or a Fourier identity as if it were a new arithmetic inequality. Full10beta and29/25 target are unchanged; Round231 remains pending with no analytic campaign, graph patch or promotion. Both prior packets remain immutable.
+
+
+## Round231 local-arithmetic admission continuation (2026-10-11)
+
+The resumed bounded test closes without analytic admission. Exact local norm densities retain the full signed remainder and numerator-completion costs. A specific absolute first-order short-patch certificate is >=cT^(1/6) on an actual required shell, which its generic norm-head bound cannot remove at a gain. Separately, an independently proved fixed-cell perturbation lemma and reviewed smaller-shell extension preserve actual represented support, exact finite cell totals, the complete complement and inherited pointwise ceiling while attaining M12>=cT^(10beta). This is an information-content obstruction, not an actual r2 lower bound; multiplicativity and all prefix estimates are outside its preserved data. Both nonauthor reviews pass and 753 finite residue controls were reproduced locally. No complete bound, graph patch, proof-draft change or successor. Next admission needs a new actual signed inequality with rational mains and all shells paid. Full decision: strategy/round231_local_arithmetic_admission/conductor_decision.md.
+
+
+## Round231 signed polynomial admission (2026-10-11)
+
+New actual signed inputs were tested. An elementary quadratic-twist divisor bound is valid but its short-fibre completion cost gives no complete gain. Higher uniformity I, arXiv2204.03754v4 PropositionA.3, explicitly supplies polynomial power savings for r2-r2sharp; quartic patches repair its interval-length restriction above the paid norm head. Regrouping the varying approximant by divisor is independently proved and reviewed: its full component has supremum exponent5447/52500 and twelfth-moment exponent3044/2625=29/25-1/2625. The main is paid, but the remaining actual residual is not: the source's unspecified positive saving does not certify kappa>1/4-beta for strict gain or kappa>=73/500 for29/25. Scoped quadratic-row and actual resonant-patch controls forbid specific shortcuts without rejecting joint/averaged signed methods. Reports and nonauthor seams pass, and bounded finite controls were independently reproduced. No accepted complete bound changes; analytic231 stays pending_design with no State Patch. Decision: strategy/round231_quadratic_signed_admission/conductor_decision.md.
+
+
+## Round231 actual residual-saving admission (2026-10-11)
+
+New reviewed adaptive factor cutoff D_T(x)=T^(-533/5250)x^(29/84) pays all actual unbalanced pairs at complete moment29/25, with top-scale cutoff853/3500. The original residual correction, head and tail are paid; the remaining balanced W_* needs a new signed estimate. An independent fixed-alpha11/50 component has exponent33787/26250<10beta. The literal all-polynomial residual saving is now rigorously capped at1/20, surviving arbitrary scalar centering; source quantifiers imply c<=3/20, so mere extraction of the unchanged universal constant cannot meet the complete-ceiling gate. The actual physical quartic major-arc set is empty below explicit thresholds. Common inverse exponents C_d>=d limit that certificate to saving7/72 over fixed degrees. Separate hypothetical A=3,B=4 would yield23/18, but are unproved. Actual same-character semiprimes obstruct coefficient-energy power saving only; no physical moment lower bound follows. Three reports, three nonauthor seams and bounded exact controls completed. Complete10beta unchanged; analytic231 pending_design, no State Patch. Decision: strategy/round231_residual_saving/conductor_decision.md.
+
+
+## Round231 central balanced cancellation admission (2026-10-11)
+
+No complete gain. Actual reciprocal character cancellation proves a smooth rectangle bound T^epsilon[(T/N)^(1/2)+T^(-1/2)], with all stationary errors and near-product resonances paid. Exact quarter frequencies have zero leading real contribution; detuned physical frequencies can be real-coherent, rejecting only uniform individual-fibre square-root cancellation. No full moment lower bound is established. KRW Proposition5 applies after logarithmic completion of the actual sharp moving intervals and product partial summation, but its controlling T^(1/8)N^(1/16) term cannot improve the complete bound; the optimistic head/source/tail certificate reaches1/6 and moment5/3. The independent Hankel tail reproduction is NOT new: Rounds203/205/208 already contain the estimate and general norm-band principle. Historical attribution was corrected forward. Combining that inherited norm band with the recent adaptive factor cutoff yields the exact C_gamma owner with complementary budget m(gamma); gamma16/125 gives an explicit sufficient32/25 target, still unproved. Three frozen reports, three nonauthor reviews, exact finite controls, and a forward attachment resolve the logarithm endpoint, real-phase scope and complementary-budget restoration. Accepted10beta unchanged; analytic231 pending_design; no State Patch. Decision: strategy/round231_balanced_cancellation/conductor_decision.md. Repairs: strategy/round231_balanced_cancellation/conductor_seam_repairs.md.

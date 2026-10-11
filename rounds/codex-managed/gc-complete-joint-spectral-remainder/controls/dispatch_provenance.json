@@ -1,0 +1,12 @@
+{
+  "round_index": 227,
+  "frozen_objective_changed": false,
+  "agent_tasks": [
+    "joint_shift_spectral_attack",
+    "heegner_joint_norm_audit",
+    "blind_mellin_phase"
+  ],
+  "isolation": "New task-specific agents use fork_turns none; blind current inputs protocol and isolated packet only. No current sibling reads before initial reports freeze.",
+  "previous_turn_classification": "progress_completed_reviewed_source_evidence_changes_next_action_no_complete_analytic_gain",
+  "mathematical_numerical_experiments": 0
+}

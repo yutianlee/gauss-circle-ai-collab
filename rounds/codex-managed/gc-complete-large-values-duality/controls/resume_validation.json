@@ -1,0 +1,23 @@
+{
+  "resumed_at": "2026-09-26T01:19:00.851456+00:00",
+  "goal_status_verified": "active",
+  "prior_goal_turn_classification": "progress_completed_three_reports_candidate_not_yet_accepted",
+  "pause_checkpoint": "rounds/codex-managed/gc-complete-large-values-duality/controls/paused_checkpoint.json",
+  "remaining_round_work": "Exact-hash seam reviews, conductor reconciliation, validated State Patch and closure.",
+  "starting_state_and_frozen_artifacts": "unchanged",
+  "completed_report_hashes": {
+    "rounds/codex-managed/gc-complete-large-values-duality/reports/actual_large_values_attack.md": "1af3924b18e604ad0d6795d329eb6d33e825ac99606a70fd247dd21430f5fb98",
+    "rounds/codex-managed/gc-complete-large-values-duality/reports/blind_gram_covering_audit.md": "340eed3ddd8bfb329a77d8583bdb32e00bf45cbbbfa58f4c322f0c1c0266db16",
+    "rounds/codex-managed/gc-complete-large-values-duality/reports/large_values_primary_source_audit.md": "15685e292a53f27caf543b6276628964699b751fde66bee9d917b7dfcc275e86"
+  },
+  "candidate_repair": {
+    "task_id": "gram_tail_seam_review",
+    "change": "Repair candidate Section5 by explicitly retaining singleton n=1.",
+    "frozen_objective_changed": false,
+    "old_candidate_sha256": "5f0c1efcdb230b7ba73206dc960a95a58a6fd03166deb8340f00ed46ab532c6e",
+    "new_candidate_sha256": "942083c3a124ffb8320f306eb767de376ae45e2b3b12175ffe9c5b70feeb5212"
+  },
+  "graph_mutated": false,
+  "proof_draft_mutated": false,
+  "numerical_experiments": 0
+}

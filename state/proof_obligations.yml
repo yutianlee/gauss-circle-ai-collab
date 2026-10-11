@@ -16535,6 +16535,185 @@
       "next_action": "Estimate the exact Round-195 open-packet complement P_boundary(lit) dotcup P_sf dotcup P_gf, or leave P2 open and attack the disjoint physical P1 sector in a separately frozen round. The first unresolved common-swap seam is the aligned literal sharp face; any extension must retain its actual face jump, selectors, endpoint products, phases, carries, births/deaths, both T branches, zero extensions and one outer real part. Do not infer nonemptiness or density of P_cc, delete changed-gcd corners, reuse the double-close collar on P2, or make the accepted Round-195 node depend on this later result.",
       "last_updated_round": 197,
       "last_updated_at": "2026-08-31T00:16:13"
+    },
+    {
+      "id": "GC-weighted-square-root-exact-resonance-mass",
+      "type": "lemma",
+      "track": "proof_infrastructure",
+      "title": "Uniform weighted exact square-root resonance mass and even constant coefficient",
+      "status": "proved_internal",
+      "statement_tex": "For fixed integer k>=2 and b_n>=0, set A_d=sum_(s>=1)b_(d s^2) for squarefree d and S=sum_d A_d^2<infinity. The sum over all 2^k sign vectors and ordered n_j>=1 with sum_j epsilon_j sqrt(n_j)=0 of product_j b_(n_j) is at most 2^k B_k S^(k/2), where B_k counts set partitions of k labels with no singleton. The mixed bound is 2^k B_k product_j S_j^(1/2). If b_n<=C tau(n)n^(-3/4), then S<=C^2 zeta(3/2)^10. Exact-resonance tails with max n_j>U are bounded by k2^k B_k S_>U^(1/2) S^((k-1)/2), tending uniformly to zero under a common divisor envelope. For real coefficients |a_n|<=b_n the even cosine exact coefficient is nonnegative; its contribution against w(R/T)>=0 is <=T||w||_1 B_k S^(k/2). Identification with the full infinite moment additionally requires sum|a_n|<infinity. For a_n(T)=r_2(n)n^(-3/4)Psi(sqrt(n/T)), real Schwartz Psi with |Psi|<=1, this yields 0<=D_12(T)<=T||w||_1 B_12 4^12 zeta(3/2)^60. Only zero radical differences are estimated: no finite-window near-resonance, full twelfth-moment, M1/M2 or pointwise exponent estimate follows.",
+      "dependencies": [
+        "H1-H3",
+        "Divisor-bound-elementary"
+      ],
+      "implies": [],
+      "blockers": [],
+      "evidence": {
+        "positive": [
+          "proofs/kernels/gc_weighted_square_root_exact_resonance_mass.md",
+          "rounds/codex-managed/gc-whole-discrepancy-twelfth-moment/reports/blind_exact_resonance_rederivation.md",
+          "rounds/codex-managed/gc-whole-discrepancy-twelfth-moment/reports/whole_moment_analytic_attack.md",
+          "rounds/codex-managed/gc-whole-discrepancy-twelfth-moment/controls/conductor_resonance_and_bridge_analysis.md",
+          "rounds/codex-managed/gc-whole-discrepancy-twelfth-moment/reviews/independent_resonance_kernel_review.md",
+          "rounds/codex-managed/gc-whole-discrepancy-twelfth-moment/reviews/conductor_round201_reconciliation.md"
+        ],
+        "negative": [],
+        "inconclusive": []
+      },
+      "owner": "Codex conductor",
+      "next_action": "Use only to remove the exact-frequency part of a complete fixed-window moment. The actual signed displaced nonzero-frequency aggregate remains unproved; no parent or exponent is discharged.",
+      "last_updated_round": 201,
+      "last_updated_at": "2026-09-23T20:34:08"
+    },
+    {
+      "id": "GC-physical-twelfth-moment-absolute-majorant-obstruction",
+      "type": "lemma",
+      "track": "proof_infrastructure",
+      "status": "proved_internal",
+      "title": "Actual nonzero near-resonance mass obstructs a termwise absolute twelfth-moment bound",
+      "statement_tex": "Let Psi be fixed real even Schwartz with Psi(0)=1 and w nonzero nonnegative C_c^infinity((0,infinity)). For a_n(T)=r_2(n)n^(-3/4)Psi(sqrt(n/T)), there exist fixed0<a<b and h,c>0 such that for every sufficiently large realT, the actual coefficients are nonnegative on I_T=[aT,bT] intersect N, and T sum_(n_1,...,n_12 in I_T,0<|Delta|<=h/T) product_j a_(n_j)(T) Re w-hat(-TDelta)>=cT^(5/2), where Delta=sum_(j<=6)sqrt(n_j)-sum_(j>6)sqrt(n_j). All exact radical relations are removed using the uniform accepted absolute exact-mass bound. Consequently the full nonzero-frequency all-sign termwise absolute Fourier majorant (with prefactorT/2^12) is >=c_prime T^(5/2), so cannot be O_epsilon(T^(1+2eta+epsilon)) for everyepsilon>0 if eta<3/4. The proof uses elementary physical band mass and weighted six-root bins. For balanced2k with k>=4 the same method gives nonzero positive subsum >=c_k T^((k-1)/2); the conclusion is not asserted for k<=3 after exact deletion. This is strictly a majorant obstruction, not a lower bound for the complete signed displaced moment, and it disproves no actual moment target, M1/M2 estimate or pointwise exponent.",
+      "dependencies": [
+        "H1-H3",
+        "Divisor-bound-elementary",
+        "GC-weighted-square-root-exact-resonance-mass"
+      ],
+      "implies": [],
+      "blockers": [],
+      "evidence": {
+        "positive": [
+          "proofs/kernels/gc_physical_twelfth_moment_absolute_majorant_obstruction.md",
+          "rounds/codex-managed/gc-strategy-signed-moment-majorant-review/reports/blind_physical_near_resonance_mass.md",
+          "rounds/codex-managed/gc-strategy-signed-moment-majorant-review/controls/conductor_round202_independent_analysis.md",
+          "rounds/codex-managed/gc-strategy-signed-moment-majorant-review/reviews/independent_physical_majorant_review.md",
+          "rounds/codex-managed/gc-strategy-signed-moment-majorant-review/reviews/conductor_round202_reconciliation.md"
+        ],
+        "negative": [],
+        "inconclusive": []
+      },
+      "owner": "Codex conductor",
+      "next_action": "Retain the oscillatory Fourier window in the complete signed source. Any cutoff route must price the full actual tail and all mixed terms. This no-go does not reject the desired twelfth moment or supply any exponent improvement.",
+      "last_updated_round": 202,
+      "last_updated_at": "2026-09-23T21:03:41"
+    },
+    {
+      "id": "GC-complete-square-root-large-values-moment-bound",
+      "type": "lemma",
+      "track": "proof_infrastructure",
+      "status": "proved_internal",
+      "title": "Complete square-root large-value distribution and improved recorded circle moments",
+      "statement_tex": "For fixed real even Schwartz Psi, fixed bounded measurable nonnegative w supported in [c,C] subset (0,infinity), real T>=2 and every real U>=0, let B_(T,U)(R)=sum_(n>U)r_2(n)n^(-3/4)Psi(sqrt(n/T))cos(2pi R sqrt(n)-3pi/4). Uniformly in U and V>=1, D_(T,U)(V)=integral w(R/T)1_(|B_(T,U)|>V)dR <<_epsilon T^epsilon(V^(-2)+T V^(-136/13)). The proof includes singleton n=1, all partial dyadic blocks, the infinite Schwartz tail, the exact Gram diagonal and the full localization ceiling. For Psi the Fourier transform of a fixed nonnegative real radial smooth unit-mass mollifier supported in the unit disk, theta=theta_LY and beta=2theta-1/2, every fixed p>=2 satisfies integral w(R/T)|B_(T,0)(R)|^p dR <<_(p,epsilon) T^(1+epsilon)+T^((p-2)beta+epsilon). The same moment bound holds for U=floor(T^(1/2047)), not asserted uniformly for all U. For the inclusive sharp discrepancy and real Y>=4, integral_(Y/2)^(3Y)|P(x)|^p dx <<_(p,epsilon)Y^(1+p/4+epsilon)+Y^(1+(p-2)theta+epsilon). In particular p=12 gives Y^(1+10theta+epsilon), normalized sixth-power norm T^(5beta+epsilon), and the conjectural-order moment endpoint q_star=2+1/beta>262/27. This improves the recorded project moment comparison without a novelty claim. It does not prove the stronger Round204 distribution, any M1/M2 parent, a better pointwise exponent or the quarter theorem. The aligned arbitrary-coefficient control explains the generic diagonal term; it is not an arithmetic counterexample.",
+      "dependencies": [
+        "H1-H3",
+        "Divisor-bound-elementary",
+        "Bourgain-2017-reciprocal-exponent-pair-source-audit",
+        "GC-external-Li-Yang-theta-star"
+      ],
+      "implies": [],
+      "blockers": [],
+      "evidence": {
+        "positive": [
+          "proofs/kernels/gc_complete_square_root_large_values_moment_bound.md",
+          "rounds/codex-managed/gc-complete-large-values-duality/reports/actual_large_values_attack.md",
+          "rounds/codex-managed/gc-complete-large-values-duality/reports/large_values_primary_source_audit.md",
+          "rounds/codex-managed/gc-complete-large-values-duality/reports/blind_gram_covering_audit.md",
+          "rounds/codex-managed/gc-complete-large-values-duality/reviews/gram_tail_seam_review.md",
+          "rounds/codex-managed/gc-complete-large-values-duality/reviews/source_correlation_seam_review.md",
+          "rounds/codex-managed/gc-complete-large-values-duality/reviews/sharp_moment_seam_review.md",
+          "rounds/codex-managed/gc-complete-large-values-duality/controls/conductor_round204_independent_analysis.md",
+          "rounds/codex-managed/gc-complete-large-values-duality/reviews/conductor_round204_reconciliation.md"
+        ],
+        "negative": [],
+        "inconclusive": []
+      },
+      "owner": "Codex conductor",
+      "next_action": "At the next scheduled strategy review, compare complete arithmetic routes to improve the remaining high values. The generic coefficient norm and correlation estimate do not remove the V^-2 term. Preserve the full quarter target and unchanged source qualifications.",
+      "last_updated_round": 204,
+      "last_updated_at": "2026-09-26T09:30:28"
+    },
+    {
+      "id": "GC-complete-distinct-radical-twelfth-reduction",
+      "type": "lemma",
+      "track": "proof_infrastructure",
+      "status": "proved_internal",
+      "title": "Complete actual twelfth-moment reduction to distinct large squarefree classes",
+      "statement_tex": "Fix a nonnegative real radial smooth unit-mass mollifier supported in the unit disk, Psi(s)=rho-hat(s e1), and a fixed nonnegative smooth w supported in [1/2,2] and equal1 on [1/sqrt(2),sqrt(3)]. For real T>=2 let a_n(T)=r2(n)n^(-3/4)Psi(sqrt(n/T)), f_d(R)=sum_(s>=1)a_(d s^2)(T)cos(2pi R s sqrt(d)-3pi/4), Q=floor(T^(2/5)), L_Q=sum_(squarefree d<=Q)f_d, Z_Q=sum_(squarefree d>Q)f_d, B_T=L_Q+Z_Q, E12=sum_(ordered pairwise distinct squarefree d_1,...,d_12>Q)product_j f_(d_j), I12=integral w(R/T)E12(R)dR and M_p(F)=integral w(R/T)|F|^p dR. With the existing qualified Li--Yang exponent theta_LY and beta=2theta_LY-1/2, M12(L_Q)<<_epsilon T^(15/13+epsilon) and integral w(R/T)|Z_Q^12-E12|dR<<_epsilon T^(8beta-1/5+epsilon). Consequently |M12(Z_Q)-I12| obeys the latter error bound. The complete high-value bound integral_(|B_T|>T^(13/125))w|B_T|^12<<T^(29/25+epsilon), the full B_T twelfth-moment bound at that power, the full Z_Q bound at that power, and |I12|<<T^(29/25+epsilon) are equivalent, with every bound quantified for each epsilon>0. A one-sided upper bound on real I12 suffices. None of these equivalent target bounds is proved here. The exact signed partition identity pays every repeated-class configuration collectively, including nonzero and nonpairing relations, with all harmonics, signs, blocks, tails, real endpoints and floor retained. Distinct-class frequencies are nonzero but no sufficient separation or cancellation estimate is proved. This is not an additive approximation to M12(B_T), a new complete moment or pointwise exponent, a sufficient unbounded-order family, or a proof of any M1/M2/GAR parent, endpoint or the quarter theorem.",
+      "dependencies": [
+        "H1-H3",
+        "Divisor-bound-elementary",
+        "GC-complete-square-root-large-values-moment-bound",
+        "GC-weighted-square-root-exact-resonance-mass",
+        "GC-external-Li-Yang-theta-star"
+      ],
+      "implies": [],
+      "blockers": [],
+      "evidence": {
+        "positive": [
+          "proofs/kernels/gc_complete_distinct_radical_moment_reduction.md",
+          "rounds/codex-managed/gc-actual-radical-high-values/reports/actual_radical_tail.md",
+          "rounds/codex-managed/gc-actual-radical-high-values/reports/anchored_divisor_high_values.md",
+          "rounds/codex-managed/gc-actual-radical-high-values/reports/blind_radical_cutoff.md",
+          "rounds/codex-managed/gc-actual-radical-high-values/candidates/complete_distinct_radical_reduction.md",
+          "rounds/codex-managed/gc-actual-radical-high-values/controls/conductor_radical_ledger.md",
+          "rounds/codex-managed/gc-actual-radical-high-values/briefs/isolated_distinct_class_statement.md",
+          "rounds/codex-managed/gc-actual-radical-high-values/reviews/conductor_blind_radical_review.md",
+          "rounds/codex-managed/gc-actual-radical-high-values/reviews/independent_distinct_reduction_review.md",
+          "rounds/codex-managed/gc-actual-radical-high-values/reviews/independent_radical_report_review.md",
+          "rounds/codex-managed/gc-actual-radical-high-values/reviews/independent_anchored_arithmetic_review.md",
+          "rounds/codex-managed/gc-actual-radical-high-values/reviews/independent_actual_radical_binding_review.md",
+          "rounds/codex-managed/gc-actual-radical-high-values/reviews/isolated_distinct_class_rederivation.md",
+          "rounds/codex-managed/gc-actual-radical-high-values/reviews/conductor_round216_reconciliation.md"
+        ],
+        "negative": [],
+        "inconclusive": []
+      },
+      "owner": "Codex conductor",
+      "next_action": "At mandatory broad strategy/current-literature review217 compare the complete remaining distinct-class signed integral and anchored energy with all full-proof frontiers. The 29/25 target and full quarter theorem remain open; preserve every inherited source qualification.",
+      "last_updated_round": 216,
+      "last_updated_at": "2026-09-28T02:20:43"
+    },
+    {
+      "id": "GC-distinct-radical-absolute-certificate-obstruction",
+      "type": "lemma",
+      "track": "proof_infrastructure",
+      "status": "proved_internal",
+      "title": "Actual distinct-radical termwise absolute Fourier certificate obstruction",
+      "statement_tex": "Fix a nonnegative real radial smooth unit-mass mollifier supported in the unit disk, Psi(s)=rho-hat(s e1), a nonnegative smooth w supported in [1/2,2] with positive integral, fixed even p=2k>=4 and fixed 0<=alpha<1. For real T sufficiently large set Q=floor(T^alpha), a_n=r2(n)n^(-3/4)Psi(sqrt(n/T)). Choose fixed c>0 small enough that Psi>=1/2 on sqrt(c)<=s<=sqrt(2c), and retain integers N_T={cT<=n<=2cT:sf(n)>Q}. Then T 2^(-p) sum_(ordered n_1,...,n_p in N_T; sf(n_i) pairwise distinct) product_i a_(n_i) |w-hat(-T[sum_(i<=k)sqrt(n_i)-sum_(i>k)sqrt(n_i)])| >=c_(p,alpha,rho,w) T^(p/4-1/2). This is a positive subcollection of the complete termwise absolute distinct-class Fourier expansion. Its proof retains actual coefficients, all harmonics in the selected block, all repeated-class exclusion, ordered multiplicities and real endpoints. Distinct squarefree classes make each retained frequency nonzero. At p=12,alpha=2/5 the lower bound T^(5/2) rules out closing the29/25 target by this termwise absolute certificate. It is not a lower bound for signed I_p or any physical moment, does not reject the signed target or quarter theorem, and is not uniform for p growing with T.",
+      "dependencies": [
+        "H1-H3",
+        "Divisor-bound-elementary",
+        "GC-weighted-square-root-exact-resonance-mass",
+        "GC-complete-distinct-radical-twelfth-reduction"
+      ],
+      "implies": [],
+      "blockers": [],
+      "evidence": {
+        "positive": [
+          "proofs/kernels/gc_distinct_radical_absolute_certificate_obstruction.md",
+          "rounds/codex-managed/gc-full-goal-distinct-source-review/reports/distinct_correlation_sources.md",
+          "rounds/codex-managed/gc-full-goal-distinct-source-review/reports/full_frontier_sources.md",
+          "rounds/codex-managed/gc-full-goal-distinct-source-review/reports/blind_moment_family.md",
+          "rounds/codex-managed/gc-full-goal-distinct-source-review/controls/conductor_distinct_absolute_certificate.md",
+          "rounds/codex-managed/gc-full-goal-distinct-source-review/controls/conductor_distinct_frequency_control.md",
+          "rounds/codex-managed/gc-full-goal-distinct-source-review/controls/conductor_current_source_status.md",
+          "rounds/codex-managed/gc-full-goal-distinct-source-review/briefs/isolated_distinct_certificate_statement.md",
+          "rounds/codex-managed/gc-full-goal-distinct-source-review/reviews/independent_distinct_certificate_review.md",
+          "rounds/codex-managed/gc-full-goal-distinct-source-review/reviews/independent_distinct_sources_review.md",
+          "rounds/codex-managed/gc-full-goal-distinct-source-review/reviews/independent_moment_family_review.md",
+          "rounds/codex-managed/gc-full-goal-distinct-source-review/reviews/conductor_full_frontier_source_review.md",
+          "rounds/codex-managed/gc-full-goal-distinct-source-review/reviews/conductor_moment_family_binding.md",
+          "rounds/codex-managed/gc-full-goal-distinct-source-review/reviews/isolated_distinct_certificate_rederivation.md",
+          "strategy/gauss_circle_strategy_checkpoint_round217_2026-09-28.md",
+          "rounds/codex-managed/gc-full-goal-distinct-source-review/synthesis.md",
+          "rounds/codex-managed/gc-full-goal-distinct-source-review/reviews/conductor_round217_reconciliation.md"
+        ],
+        "negative": [],
+        "inconclusive": []
+      },
+      "owner": "Codex conductor",
+      "next_action": "Keep the complete signed distinct-class target open; preserve the oscillatory kernel before norms and require a fully paid joint signed estimate. Track an explicitly sufficient unbounded-fixed-order family.",
+      "last_updated_round": 217,
+      "last_updated_at": "2026-09-28T02:48:56"
     }
   ],
   "rejected_claims": [

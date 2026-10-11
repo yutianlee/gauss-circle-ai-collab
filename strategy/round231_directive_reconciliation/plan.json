@@ -1,0 +1,16 @@
+{
+  "round_index": 231,
+  "packet_id": "round231_directive_reconciliation",
+  "type": "user_requested_strategy_reconciliation_prelaunch",
+  "status": "in_progress",
+  "analytic_campaign_launched": false,
+  "objective": "Reconcile next_campaign_gauss_circle_20261011.md, based on Round199, with closed Round230 and subsequent admission evidence; adopt useful changes without duplicating completed work or promoting mathematics.",
+  "starting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+  "resource_budget": "Two bounded orthogonal reports, conductor primary-source spot audit, one nonauthor strategy review. At least95 percent analytical/source reasoning, at most5 percent exact diagnostic computation. No new analytic attack or successor.",
+  "tasks": [
+    {"id":"transfer_history_audit","role":"historical_interface_reviewer","report":"reports/transfer_history_audit.md"},
+    {"id":"moment_strategy_audit","role":"restoration_and_scope_reviewer","report":"reports/moment_strategy_audit.md"}
+  ],
+  "exit_gates": ["Both seven-section reports frozen", "New versus already implemented recommendations separated", "Source claims checked at primary statement level or left explicitly conditional", "Complete costs and linear/Gram distinction preserved", "Nonauthor review of final strategy", "Graph, proof draft, accepted kernels, validation matrices and historical evidence unchanged"],
+  "allowed_state_effect": "Strategy supplement and narrow next_round_plan workflow update only; no State Patch or accepted mathematics change."
+}

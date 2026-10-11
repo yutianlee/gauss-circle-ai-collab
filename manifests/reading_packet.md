@@ -1,6 +1,20 @@
+# Current research status — Round230 closed,11 October2026
+
+The quarter theorem remains open. The graph has401 unchanged nodes. The strongest certified pointwise exponent is the qualified external0.314483175974..., with internal fallback1/3. Round204 remains the last complete moment gain;205–229 contained25 subsequent rounds without another complete moment or pointwise improvement.228's full continuous component remains reviewed evidence, leaving the full cusp target.
+
+This user-requested review found Kim–Ko v3 (October2), but its tested complete application still gives3/8. It corrected the forward attribution of an all-order bridge: accepted216 proves only the specified twelfth-order reduction. Direct complete-wave fixed-order family implications remain conditional.
+
+Strategy: prefer the complete twelfth milestone b12<=29/25 when a new signed arithmetic input is available; retain the whole cusp candidate subject to an exact matched signed input. Require a complete restored power comparison before launching an analytic round. No automatic successor. Round231 is pending design with no tasks. The proof graph and draft are unchanged.
+
+Details: strategy/gauss_circle_strategy_checkpoint_round230_2026-10-11.md and rounds/codex-managed/gc-research-status-strategy-reset/synthesis.md.
+
+---
+
+## Historical record retained below
+
 # Reading Packet
 
-Generated for active campaign `m9-m1-t1-p2-cross-gcd-cellular-boundary-gate`.
+Generated for active campaign `gc-full-goal-cuspidal-source-review`.
 
 ## Current Theorem Target
 

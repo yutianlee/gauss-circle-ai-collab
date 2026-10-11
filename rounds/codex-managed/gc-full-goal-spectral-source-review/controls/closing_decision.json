@@ -1,0 +1,27 @@
+{
+  "round_index": 226,
+  "campaign_id": "gc-full-goal-spectral-source-review",
+  "generated_at": "2026-09-27T23:21:06.467474+00:00",
+  "decision": "close_mandatory_review_select_complete_signed_spectral_target",
+  "terminal_label": "strategy_spectral_source_review_no_complete_gain",
+  "graph_mutation": false,
+  "complete_frontier_bound_improved": false,
+  "complete_moment_bound_improved": false,
+  "pointwise_exponent_change": false,
+  "reason": "Four bounded theorem/source audits and the isolated subordination control supply no complete bound or exponent gain. The actual-r2 July2026 source motivates a direct joint spectral test, but absolute Abel transfer loses growing phase variation. The fully restored one-sided signed Fejer remainder target retains every shift, density, diagonal, endpoint and tail and is sufficient for quarter; it remains unproved.",
+  "goal_turn_classification": "progress_strategy_and_source_evidence_changes_next_action_no_complete_analytic_gain",
+  "next_objective": "Bound the COMPLETE actual joint signed Fejer correlation remainder at checkpoint(F), sufficient for the full quarter goal.",
+  "next_method": "Derive the actual shifted-r2 spectral kernel and preserve the h-sum and oscillatory test together; quantify all discrete/continuous spectral, transform and reconstruction costs using the exactly applicable Heegner input, if useful.",
+  "first_unproved_estimate": "For actual g_N(t)=(t/N)^(-3/4)Psi(sqrt(t/T))w(t/N), H=2N and R~T, prove 2 Re sum_{1<=h<H}(1-h/H)[C_h-rho_h integral g_N(t+h)g_N(t)e(R(sqrt(t+h)-sqrt(t)))dt] <=C_epsilon,J A_J(N)^2 N^(3/2)T^epsilon uniformly over every dyadic 2<=N<=P, P the smallest dyadic >=T^(3/2). All shifts and spectral terms retained; exact complete restoration is checkpoint(F)--(H).",
+  "interventions": [
+    "Frozen objective unchanged; exactly two audited source works per source role; no successor launched.",
+    "Conductor retained literal printed h^Theta, N^(4/2) and self-reference caveats instead of silently repairing sources.",
+    "Conductor required full all-shift Fejer restoration and corrected dyadic residual support before report freeze.",
+    "Source claimants froze before reciprocal nonauthor reviews; primary-source application reviews route around claimants.",
+    "Statement-only subordination derivation retained isolation and prior-history disclosure; conductor reproduced the finite identity before seeing it.",
+    "Separate nonauthor review checked the conductor application, finite undamping and distinction between majorant and actual-value norms.",
+    "The checkpoint received a distinct final-hash nonauthor review of every complete owner, current primary statuses and the sufficient full Fejer target.",
+    "No analytic progress inferred from identities, upper-bound certificate losses, a fixed moment, or narrower retained sectors."
+  ],
+  "state_note": "Four bounded theorem/source audits and the isolated subordination control supply no complete bound or exponent gain. The actual-r2 July2026 source motivates a direct joint spectral test, but absolute Abel transfer loses growing phase variation. The fully restored one-sided signed Fejer remainder target retains every shift, density, diagonal, endpoint and tail and is sufficient for quarter; it remains unproved. Identity State Patch: all401 graph nodes and proof-draft bytes unchanged. M1 HARD/SMOOTH, M2 TOP/BAL/UNBAL, GAR lower ownership through159, endpoints and unbounded fixed-order alternatives remain open. The fixed twelfth target is not quarter. No actual-value lower bound or all-method no-go is inferred. Zero experiments. Round227 pending analytic design; next broad strategy/current-primary review229. Selected first unproved estimate: For actual g_N(t)=(t/N)^(-3/4)Psi(sqrt(t/T))w(t/N), H=2N and R~T, prove 2 Re sum_{1<=h<H}(1-h/H)[C_h-rho_h integral g_N(t+h)g_N(t)e(R(sqrt(t+h)-sqrt(t)))dt] <=C_epsilon,J A_J(N)^2 N^(3/2)T^epsilon uniformly over every dyadic 2<=N<=P, P the smallest dyadic >=T^(3/2). All shifts and spectral terms retained; exact complete restoration is checkpoint(F)--(H)."
+}

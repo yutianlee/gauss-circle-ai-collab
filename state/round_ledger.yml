@@ -2,7 +2,7 @@
   "schema_version": 1,
   "research_program": "gauss-circle-proof-development",
   "conductor": "Codex",
-  "active_round": 199,
+  "active_round": 230,
   "archive_note": "Rounds 1-25 are documented in their campaign plan, synthesis, state patch, and historical project summary artifacts. This compact ledger retains the immediately active research chain after a repair of the derived ledger file in Round 28.",
   "rounds": [
     {
@@ -1822,9 +1822,21 @@
       "status": "complete",
       "objective": "Prove the optimally scaled signed reciprocal energy, or identify its exact square-root-product self-return.",
       "tasks": [
-        {"id": "signed_reciprocal_energy_attack", "role": "discovery", "status": "complete_final_message_conductor_materialized"},
-        {"id": "blind_RSLS_rederivation", "role": "statement_only_blind_rederiver", "status": "complete_clean"},
-        {"id": "reciprocal_large_sieve_source_hostile_audit", "role": "hostile_source_reviewer", "status": "complete_final_message_conductor_materialized"}
+        {
+          "id": "signed_reciprocal_energy_attack",
+          "role": "discovery",
+          "status": "complete_final_message_conductor_materialized"
+        },
+        {
+          "id": "blind_RSLS_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "complete_clean"
+        },
+        {
+          "id": "reciprocal_large_sieve_source_hostile_audit",
+          "role": "hostile_source_reviewer",
+          "status": "complete_final_message_conductor_materialized"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 80,
@@ -1832,9 +1844,17 @@
         "actual_numerical_percent": 0
       },
       "exit_gates": [
-        "Cauchy normalization", "diagonal", "Poisson energy", "character sign",
-        "reciprocal clustering", "B-process", "product fibers", "perfect powers",
-        "source applicability", "blind and hostile gates", "conductor decision"
+        "Cauchy normalization",
+        "diagonal",
+        "Poisson energy",
+        "character sign",
+        "reciprocal clustering",
+        "B-process",
+        "product fibers",
+        "perfect powers",
+        "source applicability",
+        "blind and hostile gates",
+        "conductor decision"
       ],
       "closing_assessment": {
         "decision": "promote_exact_target_diagonal_energy_Bprocess_reduction_retain_RSLS_open",
@@ -1850,9 +1870,21 @@
       "status": "complete",
       "objective": "Prove or sharply obstruct the lossless signed off-diagonal in the shifted square-root-product second moment.",
       "tasks": [
-        {"id": "square_root_product_energy_attack", "role": "discovery", "status": "terminated_without_report_conductor_rederived"},
-        {"id": "blind_offdiagonal_rederivation", "role": "statement_only_blind_rederiver", "status": "complete_clean"},
-        {"id": "square_root_product_source_hostile_audit", "role": "hostile_source_reviewer", "status": "complete_clean"}
+        {
+          "id": "square_root_product_energy_attack",
+          "role": "discovery",
+          "status": "terminated_without_report_conductor_rederived"
+        },
+        {
+          "id": "blind_offdiagonal_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "complete_clean"
+        },
+        {
+          "id": "square_root_product_source_hostile_audit",
+          "role": "hostile_source_reviewer",
+          "status": "complete_clean"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 80,
@@ -1860,9 +1892,15 @@
         "actual_numerical_percent": 3
       },
       "exit_gates": [
-        "difference algebra", "diagonal", "cross-residue near diagonal",
-        "Poisson and B-process aliases", "perfect powers", "actual ratio symbol",
-        "source applicability", "blind and hostile gates", "conductor decision"
+        "difference algebra",
+        "diagonal",
+        "cross-residue near diagonal",
+        "Poisson and B-process aliases",
+        "perfect powers",
+        "actual ratio symbol",
+        "source applicability",
+        "blind and hostile gates",
+        "conductor decision"
       ],
       "closing_assessment": {
         "decision": "promote_actual_ratio_symbol_and_stationary_main_involution_retain_signed_energy_open",
@@ -1878,9 +1916,21 @@
       "status": "complete",
       "objective": "Prove or sharply obstruct the direct Q^(3/2) square-root-product bilinear estimate before Cauchy.",
       "tasks": [
-        {"id": "direct_product_bilinear_attack", "role": "discovery", "status": "complete"},
-        {"id": "blind_direct_bilinear_rederivation", "role": "statement_only_blind_rederiver", "status": "complete_clean"},
-        {"id": "direct_bilinear_source_hostile_audit", "role": "hostile_source_reviewer", "status": "complete_corrected"}
+        {
+          "id": "direct_product_bilinear_attack",
+          "role": "discovery",
+          "status": "complete"
+        },
+        {
+          "id": "blind_direct_bilinear_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "complete_clean"
+        },
+        {
+          "id": "direct_bilinear_source_hostile_audit",
+          "role": "hostile_source_reviewer",
+          "status": "complete_corrected"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 80,
@@ -1888,10 +1938,16 @@
         "actual_numerical_percent": 0
       },
       "exit_gates": [
-        "direct normalization", "actual wavelet symbol", "one-sided cone",
-        "product grouping", "perfect powers", "stationary aliases",
-        "stationary remainder", "source applicability",
-        "blind and hostile gates", "conductor decision"
+        "direct normalization",
+        "actual wavelet symbol",
+        "one-sided cone",
+        "product grouping",
+        "perfect powers",
+        "stationary aliases",
+        "stationary remainder",
+        "source applicability",
+        "blind and hostile gates",
+        "conductor decision"
       ],
       "closing_assessment": {
         "decision": "promote_direct_X7_20_bound_and_product_wavelet_return_retain_Q3_2_target_open",
@@ -1907,9 +1963,21 @@
       "status": "complete",
       "objective": "Prove or sharply obstruct the signed J^(1/2) fixed-centre product-wavelet bound through an exact delta/Salié transform.",
       "tasks": [
-        {"id": "delta_salie_transform_attack", "role": "discovery", "status": "complete"},
-        {"id": "blind_delta_method_rederivation", "role": "statement_only_blind_rederiver", "status": "complete_clean"},
-        {"id": "delta_kuznetsov_source_hostile_audit", "role": "hostile_source_reviewer", "status": "complete_with_patch_audit"}
+        {
+          "id": "delta_salie_transform_attack",
+          "role": "discovery",
+          "status": "complete"
+        },
+        {
+          "id": "blind_delta_method_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "complete_clean"
+        },
+        {
+          "id": "delta_kuznetsov_source_hostile_audit",
+          "role": "hostile_source_reviewer",
+          "status": "complete_with_patch_audit"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 80,
@@ -1941,9 +2009,21 @@
       "status": "complete",
       "objective": "Prove the joint incomplete-numerator Kloosterman estimate or isolate a strictly smaller conductor survivor.",
       "tasks": [
-        {"id": "short_numerator_dispersion_attack", "role": "discovery", "status": "terminated_after_analytic_interim_no_report"},
-        {"id": "blind_short_numerator_large_sieve", "role": "statement_only_blind_rederiver", "status": "complete_clean_with_post_isolation_seam_pass"},
-        {"id": "short_numerator_source_hostile_audit", "role": "hostile_source_reviewer", "status": "complete_clean_source_and_seam_audit"}
+        {
+          "id": "short_numerator_dispersion_attack",
+          "role": "discovery",
+          "status": "terminated_after_analytic_interim_no_report"
+        },
+        {
+          "id": "blind_short_numerator_large_sieve",
+          "role": "statement_only_blind_rederiver",
+          "status": "complete_clean_with_post_isolation_seam_pass"
+        },
+        {
+          "id": "short_numerator_source_hostile_audit",
+          "role": "hostile_source_reviewer",
+          "status": "complete_clean_source_and_seam_audit"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 80,
@@ -1976,10 +2056,26 @@
       "status": "complete",
       "objective": "Prove the optimally normalized upper-conductor b-energy or isolate a smaller actual-symbol survivor.",
       "tasks": [
-        {"id": "upper_reciprocal_energy_attack", "role": "discovery", "status": "complete"},
-        {"id": "blind_upper_conductor_clean", "role": "statement_only_blind_rederiver", "status": "complete_clean"},
-        {"id": "upper_third_derivative_seam_review", "role": "independent_seam_reviewer", "status": "complete_pass"},
-        {"id": "upper_reciprocal_source_hostile_audit", "role": "hostile_source_reviewer", "status": "complete_clean"}
+        {
+          "id": "upper_reciprocal_energy_attack",
+          "role": "discovery",
+          "status": "complete"
+        },
+        {
+          "id": "blind_upper_conductor_clean",
+          "role": "statement_only_blind_rederiver",
+          "status": "complete_clean"
+        },
+        {
+          "id": "upper_third_derivative_seam_review",
+          "role": "independent_seam_reviewer",
+          "status": "complete_pass"
+        },
+        {
+          "id": "upper_reciprocal_source_hostile_audit",
+          "role": "hostile_source_reviewer",
+          "status": "complete_clean"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 80,
@@ -2012,9 +2108,21 @@
       "status": "complete",
       "objective": "Combine the accepted third-derivative range with residue, Farey-numerator, or spectral cancellation on J^(32/45)<C<=J, or isolate a strictly smaller actual-symbol survivor.",
       "tasks": [
-        {"id": "hybrid_residue_energy_attack", "role": "discovery", "status": "complete"},
-        {"id": "blind_hybrid_energy_rederivation", "role": "statement_only_blind_rederiver", "status": "complete_clean"},
-        {"id": "hybrid_spectral_source_hostile_audit", "role": "hostile_source_reviewer", "status": "complete_clean"}
+        {
+          "id": "hybrid_residue_energy_attack",
+          "role": "discovery",
+          "status": "complete"
+        },
+        {
+          "id": "blind_hybrid_energy_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "complete_clean"
+        },
+        {
+          "id": "hybrid_spectral_source_hostile_audit",
+          "role": "hostile_source_reviewer",
+          "status": "complete_clean"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 80,
@@ -2047,9 +2155,21 @@
       "status": "complete",
       "objective": "Prove the exact signed top M2 affine cone, a strict intermediate-L subrange, or isolate a smaller actual-symbol survivor.",
       "tasks": [
-        {"id": "m2_affine_cone_attack", "role": "discovery", "status": "complete_candidate"},
-        {"id": "blind_m2_cone_rederivation", "role": "statement_only_blind_rederiver", "status": "complete_clean"},
-        {"id": "m2_cone_source_hostile_audit", "role": "hostile_source_reviewer", "status": "complete_clean"}
+        {
+          "id": "m2_affine_cone_attack",
+          "role": "discovery",
+          "status": "complete_candidate"
+        },
+        {
+          "id": "blind_m2_cone_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "complete_clean"
+        },
+        {
+          "id": "m2_cone_source_hostile_audit",
+          "role": "hostile_source_reviewer",
+          "status": "complete_clean"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 80,
@@ -2083,9 +2203,21 @@
       "status": "complete",
       "objective": "Validate the exact character-preserving near-product energy and either prove it, find a strict polynomial L-range, or isolate a smaller actual-symbol survivor.",
       "tasks": [
-        {"id": "blind_near_product_energy_rederivation", "role": "statement_only_blind_rederiver", "status": "complete_clean"},
-        {"id": "reciprocal_energy_attack", "role": "discovery", "status": "complete"},
-        {"id": "near_product_energy_hostile_audit", "role": "hostile_source_reviewer", "status": "complete_clean"}
+        {
+          "id": "blind_near_product_energy_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "complete_clean"
+        },
+        {
+          "id": "reciprocal_energy_attack",
+          "role": "discovery",
+          "status": "complete"
+        },
+        {
+          "id": "near_product_energy_hostile_audit",
+          "role": "hostile_source_reviewer",
+          "status": "complete_clean"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 80,
@@ -2119,9 +2251,21 @@
       "status": "complete",
       "objective": "Bound the exact alternating even-offset energy or isolate its smallest actual-symbol gcd-lift resonance survivor.",
       "tasks": [
-        {"id": "blind_signed_offset_rederivation", "role": "statement_only_blind_rederiver", "status": "complete_clean"},
-        {"id": "gcd_lift_resonance_attack", "role": "discovery", "status": "complete"},
-        {"id": "signed_offset_hostile_audit", "role": "hostile_source_reviewer", "status": "complete_clean"}
+        {
+          "id": "blind_signed_offset_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "complete_clean"
+        },
+        {
+          "id": "gcd_lift_resonance_attack",
+          "role": "discovery",
+          "status": "complete"
+        },
+        {
+          "id": "signed_offset_hostile_audit",
+          "role": "hostile_source_reviewer",
+          "status": "complete_clean"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 80,
@@ -2155,9 +2299,21 @@
       "status": "closed",
       "objective": "Prove or refute the complete collar-extracted Poisson/gcd-lift identity, aggregate error, and step-two actual-symbol variation theorem.",
       "tasks": [
-        {"id": "blind_actual_symbol_rederivation", "role": "statement_only_blind_rederiver", "status": "completed"},
-        {"id": "centered_integral_variation_attack", "role": "analytic_discovery", "status": "completed"},
-        {"id": "actual_symbol_hostile_audit", "role": "hostile_seam_reviewer", "status": "completed"}
+        {
+          "id": "blind_actual_symbol_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed"
+        },
+        {
+          "id": "centered_integral_variation_attack",
+          "role": "analytic_discovery",
+          "status": "completed"
+        },
+        {
+          "id": "actual_symbol_hostile_audit",
+          "role": "hostile_seam_reviewer",
+          "status": "completed"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 80,
@@ -2190,9 +2346,21 @@
       "status": "closed",
       "objective": "Prove or sharply refute target-sized closure of the complete actual-symbol primitive-square contribution and determine the capacity of its absolute Abel majorant.",
       "tasks": [
-        {"id": "blind_square_resonance_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean"},
-        {"id": "square_resonance_mass_attack", "role": "analytic_discovery", "status": "completed"},
-        {"id": "square_resonance_hostile_audit", "role": "hostile_seam_reviewer", "status": "completed_clean"}
+        {
+          "id": "blind_square_resonance_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed_clean"
+        },
+        {
+          "id": "square_resonance_mass_attack",
+          "role": "analytic_discovery",
+          "status": "completed"
+        },
+        {
+          "id": "square_resonance_hostile_audit",
+          "role": "hostile_seam_reviewer",
+          "status": "completed_clean"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 80,
@@ -2224,9 +2392,21 @@
       "status": "closed",
       "objective": "Prove a quantitative inverse/incidence theorem for the residual nonsquare reciprocal-resonance set, or isolate a rigorous obstruction and smaller signed survivor.",
       "tasks": [
-        {"id": "blind_nonsquare_geometry_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean"},
-        {"id": "nonsquare_reciprocal_incidence_attack", "role": "analytic_discovery", "status": "completed"},
-        {"id": "nonsquare_resonance_hostile_source_audit", "role": "hostile_source_reviewer", "status": "completed_clean"}
+        {
+          "id": "blind_nonsquare_geometry_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed_clean"
+        },
+        {
+          "id": "nonsquare_reciprocal_incidence_attack",
+          "role": "analytic_discovery",
+          "status": "completed"
+        },
+        {
+          "id": "nonsquare_resonance_hostile_source_audit",
+          "role": "hostile_source_reviewer",
+          "status": "completed_clean"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 80,
@@ -2259,9 +2439,21 @@
       "status": "closed",
       "objective": "Prove the complete-coefficient signed strict-metric nonsquare energy on AJD^3>>L^3, close a new hard subrange, or isolate a smaller exact signed survivor.",
       "tasks": [
-        {"id": "blind_strict_metric_energy_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean"},
-        {"id": "primitive_ray_parity_energy_attack", "role": "analytic_discovery", "status": "completed"},
-        {"id": "strict_metric_energy_hostile_source_audit", "role": "hostile_source_reviewer", "status": "completed_clean"}
+        {
+          "id": "blind_strict_metric_energy_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed_clean"
+        },
+        {
+          "id": "primitive_ray_parity_energy_attack",
+          "role": "analytic_discovery",
+          "status": "completed"
+        },
+        {
+          "id": "strict_metric_energy_hostile_source_audit",
+          "role": "hostile_source_reviewer",
+          "status": "completed_clean"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 80,
@@ -2295,9 +2487,21 @@
       "status": "closed",
       "objective": "Prove or refute a complete-symbol neighbor-independent Gaussian main plus O(sqrt(C/J)) transition remainder and its C <= J^(13/18) implication.",
       "tasks": [
-        {"id": "blind_transition_flattening_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean_after_authorized_exact_integral_reaudit"},
-        {"id": "farey_transition_flattening_attack", "role": "analytic_discovery", "status": "completed"},
-        {"id": "transition_gluing_hostile_audit", "role": "hostile_source_reviewer", "status": "completed_clean"}
+        {
+          "id": "blind_transition_flattening_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed_clean_after_authorized_exact_integral_reaudit"
+        },
+        {
+          "id": "farey_transition_flattening_attack",
+          "role": "analytic_discovery",
+          "status": "completed"
+        },
+        {
+          "id": "transition_gluing_hostile_audit",
+          "role": "hostile_source_reviewer",
+          "status": "completed_clean"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 80,
@@ -2329,9 +2533,21 @@
       "status": "closed",
       "objective": "Prove the smooth nonaxial M1 energy on J^(13/18)<C<=J^(3/4), prove a nonempty extension, or isolate a strictly smaller exact phase-sensitive Kloosterman correlation.",
       "tasks": [
-        {"id": "blind_chirped_kloosterman_energy_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean"},
-        {"id": "chirped_residue_energy_attack", "role": "analytic_discovery", "status": "completed"},
-        {"id": "kloosterman_energy_source_hostile_audit", "role": "hostile_source_reviewer", "status": "completed_clean"}
+        {
+          "id": "blind_chirped_kloosterman_energy_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed_clean"
+        },
+        {
+          "id": "chirped_residue_energy_attack",
+          "role": "analytic_discovery",
+          "status": "completed"
+        },
+        {
+          "id": "kloosterman_energy_source_hostile_audit",
+          "role": "hostile_source_reviewer",
+          "status": "completed_clean"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 80,
@@ -2362,9 +2578,21 @@
       "status": "closed",
       "objective": "Prove any fixed B-power saving in the coherent nonzero residue-offset actual-unit correlation, close the first band, or isolate a strictly smaller exact signed survivor.",
       "tasks": [
-        {"id": "blind_offset_dispersion_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean"},
-        {"id": "inverse_unit_offset_attack", "role": "analytic_discovery", "status": "completed_clean_after_normalization_correction"},
-        {"id": "offset_trace_source_hostile_audit", "role": "hostile_source_reviewer", "status": "completed_clean"}
+        {
+          "id": "blind_offset_dispersion_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed_clean"
+        },
+        {
+          "id": "inverse_unit_offset_attack",
+          "role": "analytic_discovery",
+          "status": "completed_clean_after_normalization_correction"
+        },
+        {
+          "id": "offset_trace_source_hostile_audit",
+          "role": "hostile_source_reviewer",
+          "status": "completed_clean"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 80,
@@ -2395,9 +2623,21 @@
       "status": "closed",
       "objective": "Exploit the exact stationary Fourier weights to prove a B-power gain in the centred d!=0 Kloosterman-product correlation or isolate a strictly smaller signed resonance survivor.",
       "tasks": [
-        {"id": "blind_dual_difference_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean"},
-        {"id": "stationary_dual_difference_attack", "role": "analytic_discovery", "status": "completed"},
-        {"id": "dual_difference_source_hostile_audit", "role": "hostile_source_reviewer", "status": "completed_clean"}
+        {
+          "id": "blind_dual_difference_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed_clean"
+        },
+        {
+          "id": "stationary_dual_difference_attack",
+          "role": "analytic_discovery",
+          "status": "completed"
+        },
+        {
+          "id": "dual_difference_source_hostile_audit",
+          "role": "hostile_source_reviewer",
+          "status": "completed_clean"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 80,
@@ -2430,9 +2670,21 @@
       "status": "closed",
       "objective": "Couple the exact M1 large dual differences across (d,b,r), preserving the physical reciprocal-row saving and the Round-84 stationary deletion.",
       "tasks": [
-        {"id": "blind_hybrid_large_difference_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean"},
-        {"id": "hybrid_large_difference_attack", "role": "analytic_discovery", "status": "completed_clean"},
-        {"id": "large_difference_source_hostile_audit", "role": "hostile_source_reviewer", "status": "completed_clean"}
+        {
+          "id": "blind_hybrid_large_difference_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed_clean"
+        },
+        {
+          "id": "hybrid_large_difference_attack",
+          "role": "analytic_discovery",
+          "status": "completed_clean"
+        },
+        {
+          "id": "large_difference_source_hostile_audit",
+          "role": "hostile_source_reviewer",
+          "status": "completed_clean"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 80,
@@ -2465,9 +2717,21 @@
       "status": "closed",
       "objective": "Estimate the exact middle-difference M1 correlation through continuously twisted physical rows or the weighted four-Kloosterman A-process off-diagonal while retaining Q^(-5/12).",
       "tasks": [
-        {"id": "blind_four_kloosterman_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean"},
-        {"id": "twisted_ambiguity_attack", "role": "analytic_discovery", "status": "completed_clean"},
-        {"id": "four_kloosterman_hostile_source_audit", "role": "hostile_source_reviewer", "status": "completed_clean"}
+        {
+          "id": "blind_four_kloosterman_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed_clean"
+        },
+        {
+          "id": "twisted_ambiguity_attack",
+          "role": "analytic_discovery",
+          "status": "completed_clean"
+        },
+        {
+          "id": "four_kloosterman_hostile_source_audit",
+          "role": "hostile_source_reviewer",
+          "status": "completed_clean"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 80,
@@ -2500,9 +2764,21 @@
       "status": "closed",
       "objective": "Classify and estimate the divisor-aligned and prime-power exceptional strata in the exact deep M1 four-Kloosterman ambiguity while retaining the actual stationary symbol and Q^(-5/12).",
       "tasks": [
-        {"id": "blind_exceptional_strata_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean_with_supplemental_certification"},
-        {"id": "aligned_mode_aggregate_attack", "role": "analytic_discovery", "status": "completed_clean_after_normalization_correction"},
-        {"id": "exceptional_trace_hostile_source_audit", "role": "hostile_source_reviewer", "status": "completed_clean_with_supplemental_certification"}
+        {
+          "id": "blind_exceptional_strata_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed_clean_with_supplemental_certification"
+        },
+        {
+          "id": "aligned_mode_aggregate_attack",
+          "role": "analytic_discovery",
+          "status": "completed_clean_after_normalization_correction"
+        },
+        {
+          "id": "exceptional_trace_hostile_source_audit",
+          "role": "hostile_source_reviewer",
+          "status": "completed_clean_with_supplemental_certification"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 80,
@@ -2537,9 +2813,21 @@
       "status": "closed",
       "objective": "Estimate the exact cross-group deep M1 Fejer off-diagonal after separating partial-period lower-conductor returns from genuinely aperiodic local traces.",
       "tasks": [
-        {"id": "blind_cross_group_tensor_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean_with_supplemental_certification"},
-        {"id": "period_depth_tensor_attack", "role": "analytic_discovery", "status": "completed_clean"},
-        {"id": "cross_group_hostile_source_audit", "role": "hostile_source_reviewer", "status": "completed_clean"}
+        {
+          "id": "blind_cross_group_tensor_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed_clean_with_supplemental_certification"
+        },
+        {
+          "id": "period_depth_tensor_attack",
+          "role": "analytic_discovery",
+          "status": "completed_clean"
+        },
+        {
+          "id": "cross_group_hostile_source_audit",
+          "role": "hostile_source_reviewer",
+          "status": "completed_clean"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 80,
@@ -2574,9 +2862,21 @@
       "status": "closed",
       "objective": "Classify and estimate the complete small-prime, nonunit-K, and full 2-adic reciprocal-period fibres in the exact hard M1 cross-group operator.",
       "tasks": [
-        {"id": "blind_bad_prime_fibre_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean_with_supplemental_certification"},
-        {"id": "bad_prime_period_graph_attack", "role": "analytic_discovery", "status": "completed_clean_after_citation_repair"},
-        {"id": "bad_prime_hostile_source_audit", "role": "hostile_source_reviewer", "status": "completed_clean_with_supplemental_certification"}
+        {
+          "id": "blind_bad_prime_fibre_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed_clean_with_supplemental_certification"
+        },
+        {
+          "id": "bad_prime_period_graph_attack",
+          "role": "analytic_discovery",
+          "status": "completed_clean_after_citation_repair"
+        },
+        {
+          "id": "bad_prime_hostile_source_audit",
+          "role": "hostile_source_reviewer",
+          "status": "completed_clean_with_supplemental_certification"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 80,
@@ -2612,9 +2912,21 @@
       "status": "closed",
       "objective": "Prove equal-capacity self-return of the complete first-band M1 survivor or isolate a strict non-returning signed operator with reduced capacity power.",
       "tasks": [
-        {"id": "blind_m1_capacity_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean_with_post_isolation_seam_certification"},
-        {"id": "m1_self_return_barrier_attack", "role": "analytic_discovery", "status": "completed_clean"},
-        {"id": "m1_self_return_hostile_source_audit", "role": "hostile_source_reviewer", "status": "completed_clean"}
+        {
+          "id": "blind_m1_capacity_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed_clean_with_post_isolation_seam_certification"
+        },
+        {
+          "id": "m1_self_return_barrier_attack",
+          "role": "analytic_discovery",
+          "status": "completed_clean"
+        },
+        {
+          "id": "m1_self_return_hostile_source_audit",
+          "role": "hostile_source_reviewer",
+          "status": "completed_clean"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 80,
@@ -2649,9 +2961,21 @@
       "status": "closed",
       "objective": "Determine the strongest unconditional global exponent implied by the accepted hyperbola--Vaaler reduction and proved direct M1/M2 block menu.",
       "tasks": [
-        {"id": "blind_global_exponent_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean"},
-        {"id": "global_exponent_assembly_attack", "role": "analytic_assembly", "status": "completed_clean"},
-        {"id": "global_exponent_hostile_audit", "role": "hostile_dependency_reviewer", "status": "completed_clean"}
+        {
+          "id": "blind_global_exponent_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed_clean"
+        },
+        {
+          "id": "global_exponent_assembly_attack",
+          "role": "analytic_assembly",
+          "status": "completed_clean"
+        },
+        {
+          "id": "global_exponent_hostile_audit",
+          "role": "hostile_dependency_reviewer",
+          "status": "completed_clean"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 80,
@@ -2687,9 +3011,21 @@
       "status": "closed",
       "objective": "Formalize the accepted Round-90 M1 hard actual-symbol Gram operator and Round-80 M2 signed density--discrepancy kernel as two self-contained graph-ready theorem targets with exact owners, normalizations, capacity gaps, false shadows, source mismatches, and downstream scope.",
       "tasks": [
-        {"id": "blind_canonical_core_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean"},
-        {"id": "canonical_core_formalization_attack", "role": "formalizer", "status": "completed_clean_after_format_repair"},
-        {"id": "canonical_core_hostile_hygiene_audit", "role": "hostile_source_reviewer", "status": "completed_clean"}
+        {
+          "id": "blind_canonical_core_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed_clean"
+        },
+        {
+          "id": "canonical_core_formalization_attack",
+          "role": "formalizer",
+          "status": "completed_clean_after_format_repair"
+        },
+        {
+          "id": "canonical_core_hostile_hygiene_audit",
+          "role": "hostile_source_reviewer",
+          "status": "completed_clean"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 90,
@@ -2727,9 +3063,21 @@
       "status": "closed",
       "objective": "Prove the strongest honest global second-moment and exceptional-set theorem for the exact frozen M2 block and decide whether the moving Vaaler height/top profile transfers without a power loss.",
       "tasks": [
-        {"id": "blind_m2_moment_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean"},
-        {"id": "moving_coefficient_moment_attack", "role": "analytic_discovery", "status": "completed_clean"},
-        {"id": "moment_hostile_source_audit", "role": "hostile_source_reviewer", "status": "completed_clean_after_partition_correction"}
+        {
+          "id": "blind_m2_moment_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed_clean"
+        },
+        {
+          "id": "moving_coefficient_moment_attack",
+          "role": "analytic_discovery",
+          "status": "completed_clean"
+        },
+        {
+          "id": "moment_hostile_source_audit",
+          "role": "hostile_source_reviewer",
+          "status": "completed_clean_after_partition_correction"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 90,
@@ -2763,9 +3111,21 @@
       "status": "closed",
       "objective": "Prove the exact persistence and discrete exceptional-set consequences of the Round-93 mean square, then derive and attack the weakest uniform local actual-coefficient moment capable of removing a prescribed exceptional point.",
       "tasks": [
-        {"id": "blind_pointwise_bridge_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean"},
-        {"id": "local_cluster_moment_attack", "role": "analytic_discovery", "status": "terminated_without_artifact_conductor_rederived"},
-        {"id": "pointwise_bridge_hostile_source_audit", "role": "hostile_source_reviewer", "status": "completed_context_contaminated_conductor_revalidated"}
+        {
+          "id": "blind_pointwise_bridge_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed_clean"
+        },
+        {
+          "id": "local_cluster_moment_attack",
+          "role": "analytic_discovery",
+          "status": "terminated_without_artifact_conductor_rederived"
+        },
+        {
+          "id": "pointwise_bridge_hostile_source_audit",
+          "role": "hostile_source_reviewer",
+          "status": "completed_context_contaminated_conductor_revalidated"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 90,
@@ -2801,9 +3161,21 @@
       "status": "closed",
       "objective": "Decide whether a rigorously certified uniform exponent below one third follows from the fixed W=Y^(7/16) actual cluster estimate or the independently audited Li--Yang direct theorem.",
       "tasks": [
-        {"id": "blind_fixed_cluster_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean"},
-        {"id": "actual_rational_cluster_attack", "role": "analytic_discovery", "status": "completed_clean_after_format_repair"},
-        {"id": "li_yang_strict_source_audit", "role": "hostile_source_reviewer", "status": "completed_clean"}
+        {
+          "id": "blind_fixed_cluster_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed_clean"
+        },
+        {
+          "id": "actual_rational_cluster_attack",
+          "role": "analytic_discovery",
+          "status": "completed_clean_after_format_repair"
+        },
+        {
+          "id": "li_yang_strict_source_audit",
+          "role": "hostile_source_reviewer",
+          "status": "completed_clean"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 90,
@@ -2838,9 +3210,21 @@
       "status": "closed",
       "objective": "Test whether exact cross-ray differencing in q=(b-a)/2 supplies the missing rho^(-1/2) gain in the canonical M2 density--discrepancy energy.",
       "tasks": [
-        {"id": "blind_primitive_ray_q_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean"},
-        {"id": "primitive_ray_q_dispersion_attack", "role": "analytic_discovery", "status": "completed_clean"},
-        {"id": "primitive_ray_q_hostile_source_audit", "role": "hostile_source_reviewer", "status": "completed_clean"}
+        {
+          "id": "blind_primitive_ray_q_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed_clean"
+        },
+        {
+          "id": "primitive_ray_q_dispersion_attack",
+          "role": "analytic_discovery",
+          "status": "completed_clean"
+        },
+        {
+          "id": "primitive_ray_q_hostile_source_audit",
+          "role": "hostile_source_reviewer",
+          "status": "completed_clean"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 90,
@@ -2874,9 +3258,21 @@
       "status": "closed",
       "objective": "Determine the exact additional outside packets required, beyond the canonical hard-top theorem, to prove full pointwise M9-M2.",
       "tasks": [
-        {"id": "blind_m2_assembly_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean"},
-        {"id": "m2_outside_packet_assembly_attack", "role": "discovery", "status": "completed_clean_after_format_repair"},
-        {"id": "m2_assembly_hostile_hygiene_audit", "role": "source_auditor", "status": "completed_clean"}
+        {
+          "id": "blind_m2_assembly_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed_clean"
+        },
+        {
+          "id": "m2_outside_packet_assembly_attack",
+          "role": "discovery",
+          "status": "completed_clean_after_format_repair"
+        },
+        {
+          "id": "m2_assembly_hostile_hygiene_audit",
+          "role": "source_auditor",
+          "status": "completed_clean"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 95,
@@ -2911,9 +3307,21 @@
       "status": "closed",
       "objective": "Separate the direct blockwise M1 owner tree from the alternative global angular-radial route, and identify every packet outside the canonical first-band Gram.",
       "tasks": [
-        {"id": "blind_m1_route_assembly_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean"},
-        {"id": "m1_route_assembly_attack", "role": "discovery", "status": "completed_clean_after_lf_normalization"},
-        {"id": "m1_route_graph_hostile_audit", "role": "source_auditor", "status": "completed_clean_after_lf_normalization"}
+        {
+          "id": "blind_m1_route_assembly_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed_clean"
+        },
+        {
+          "id": "m1_route_assembly_attack",
+          "role": "discovery",
+          "status": "completed_clean_after_lf_normalization"
+        },
+        {
+          "id": "m1_route_graph_hostile_audit",
+          "role": "source_auditor",
+          "status": "completed_clean_after_lf_normalization"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 95,
@@ -2950,9 +3358,21 @@
       "status": "closed",
       "objective": "Prove or sharply obstruct the missing J^(-1/6) spectral gain in the complete canonical hard M1 four-row Gram.",
       "tasks": [
-        {"id": "blind_joint_gram_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean_after_format_repair"},
-        {"id": "complete_trace_spectral_attack", "role": "discovery", "status": "completed_clean"},
-        {"id": "joint_gram_source_hostile_audit", "role": "source_auditor", "status": "completed_clean_after_control_byte_repair"}
+        {
+          "id": "blind_joint_gram_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed_clean_after_format_repair"
+        },
+        {
+          "id": "complete_trace_spectral_attack",
+          "role": "discovery",
+          "status": "completed_clean"
+        },
+        {
+          "id": "joint_gram_source_hostile_audit",
+          "role": "source_auditor",
+          "status": "completed_clean_after_control_byte_repair"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 90,
@@ -2994,9 +3414,21 @@
       "status": "closed",
       "objective": "Determine the literal fixed-actual-vector coupling to the exact q=8 parity and paired coherent modes after all canonical hard owners.",
       "tasks": [
-        {"id": "blind_coherent_projection_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean"},
-        {"id": "actual_vector_parity_projection_attack", "role": "formalizer", "status": "completed_clean_after_format_repair"},
-        {"id": "coherent_projection_hostile_source_audit", "role": "source_auditor", "status": "completed_clean"}
+        {
+          "id": "blind_coherent_projection_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed_clean"
+        },
+        {
+          "id": "actual_vector_parity_projection_attack",
+          "role": "formalizer",
+          "status": "completed_clean_after_format_repair"
+        },
+        {
+          "id": "coherent_projection_hostile_source_audit",
+          "role": "source_auditor",
+          "status": "completed_clean"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 95,
@@ -3036,9 +3468,21 @@
       "status": "closed",
       "objective": "Formalize the full two-power actual-row cyclic convolution and owner partition beyond the exact q=8 subfamily.",
       "tasks": [
-        {"id": "blind_full_two_adic_orbit_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean_after_conjugation_correction"},
-        {"id": "full_two_adic_actual_symbol_formalization", "role": "formalizer", "status": "completed_clean"},
-        {"id": "full_two_adic_hostile_owner_audit", "role": "source_auditor", "status": "completed_clean_after_whitespace_repair"}
+        {
+          "id": "blind_full_two_adic_orbit_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed_clean_after_conjugation_correction"
+        },
+        {
+          "id": "full_two_adic_actual_symbol_formalization",
+          "role": "formalizer",
+          "status": "completed_clean"
+        },
+        {
+          "id": "full_two_adic_hostile_owner_audit",
+          "role": "source_auditor",
+          "status": "completed_clean_after_whitespace_repair"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 95,
@@ -3080,9 +3524,21 @@
       "status": "closed",
       "objective": "Prove a rho^(-1/2) gain, a strict disjoint hard subrange, or a rigorous new mechanism obstruction for the complete fixed-a primitive-ray M2 Gram.",
       "tasks": [
-        {"id": "blind_determinant_gram_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean_with_disclosed_followup"},
-        {"id": "determinant_weighted_gram_attack", "role": "discovery", "status": "completed_clean_with_seam_addendum"},
-        {"id": "determinant_gram_hostile_source_audit", "role": "source_auditor", "status": "completed_clean_with_seam_addendum"}
+        {
+          "id": "blind_determinant_gram_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed_clean_with_disclosed_followup"
+        },
+        {
+          "id": "determinant_weighted_gram_attack",
+          "role": "discovery",
+          "status": "completed_clean_with_seam_addendum"
+        },
+        {
+          "id": "determinant_gram_hostile_source_audit",
+          "role": "source_auditor",
+          "status": "completed_clean_with_seam_addendum"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 90,
@@ -3126,9 +3582,21 @@
       "status": "closed",
       "objective": "Prove the complete singleton q=1 actual diagonal, find a literal actual obstruction, or reduce it to a strictly smaller signed kernel.",
       "tasks": [
-        {"id": "blind_q1_diagonal_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean_after_format_repair"},
-        {"id": "q1_stationary_energy_attack", "role": "discovery", "status": "completed_clean_after_conductor_hygiene_repair"},
-        {"id": "q1_actual_symbol_hostile_source_audit", "role": "source_auditor", "status": "completed_clean"}
+        {
+          "id": "blind_q1_diagonal_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed_clean_after_format_repair"
+        },
+        {
+          "id": "q1_stationary_energy_attack",
+          "role": "discovery",
+          "status": "completed_clean_after_conductor_hygiene_repair"
+        },
+        {
+          "id": "q1_actual_symbol_hostile_source_audit",
+          "role": "source_auditor",
+          "status": "completed_clean"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 90,
@@ -3174,9 +3642,21 @@
       "status": "closed",
       "objective": "Generalize the proved singleton sampled-k theorem to literal q~D rows and certify the maximal short-shell Gram range without polynomial q-cancellation.",
       "tasks": [
-        {"id": "blind_fixed_q_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean"},
-        {"id": "fixed_q_sampled_k_attack", "role": "discovery", "status": "completed_clean_after_notation_repair"},
-        {"id": "fixed_q_hostile_source_audit", "role": "source_auditor", "status": "completed_clean"}
+        {
+          "id": "blind_fixed_q_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed_clean"
+        },
+        {
+          "id": "fixed_q_sampled_k_attack",
+          "role": "discovery",
+          "status": "completed_clean_after_notation_repair"
+        },
+        {
+          "id": "fixed_q_hostile_source_audit",
+          "role": "source_auditor",
+          "status": "completed_clean"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 95,
@@ -3224,9 +3704,21 @@
       "status": "closed",
       "objective": "Prove the complete actual maximal alternating q theorem on polynomial primitive-ray shells, a strict polynomial subrange, or a rigorous actual-symbol obstruction with a smaller survivor.",
       "tasks": [
-        {"id": "blind_maximal_q_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_provenance_contaminated_but_statement_derived"},
-        {"id": "adjacent_q_transport_attack", "role": "discovery", "status": "completed_clean_after_format_repair"},
-        {"id": "maximal_q_hostile_source_audit", "role": "source_auditor", "status": "completed_clean_after_format_repair"}
+        {
+          "id": "blind_maximal_q_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed_provenance_contaminated_but_statement_derived"
+        },
+        {
+          "id": "adjacent_q_transport_attack",
+          "role": "discovery",
+          "status": "completed_clean_after_format_repair"
+        },
+        {
+          "id": "maximal_q_hostile_source_audit",
+          "role": "source_auditor",
+          "status": "completed_clean_after_format_repair"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 95,
@@ -3268,9 +3760,21 @@
       "status": "closed",
       "objective": "Derive the complete owner-preserving primitive dual-square actual-symbol transform and seek the full D-saving or a strict polynomial shell.",
       "tasks": [
-        {"id": "blind_dual_square_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean"},
-        {"id": "dual_square_actual_transfer_attack", "role": "discovery", "status": "completed_clean_after_format_repair"},
-        {"id": "dual_square_owner_hostile_source_audit", "role": "source_auditor", "status": "completed_clean"}
+        {
+          "id": "blind_dual_square_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed_clean"
+        },
+        {
+          "id": "dual_square_actual_transfer_attack",
+          "role": "discovery",
+          "status": "completed_clean_after_format_repair"
+        },
+        {
+          "id": "dual_square_owner_hostile_source_audit",
+          "role": "source_auditor",
+          "status": "completed_clean"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 95,
@@ -3316,9 +3820,21 @@
       "status": "closed",
       "objective": "Regroup the literal unbalanced smooth product-phase packet and test an exact Mellin/functional-equation proof, strict residual corridor, or coefficient-preserving self-return.",
       "tasks": [
-        {"id": "blind_unbalanced_divisor_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean"},
-        {"id": "truncated_r2_recombination_attack", "role": "discovery", "status": "completed_clean_after_format_repair"},
-        {"id": "unbalanced_product_source_hostile_audit", "role": "source_auditor", "status": "completed_clean_after_format_repair"}
+        {
+          "id": "blind_unbalanced_divisor_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed_clean"
+        },
+        {
+          "id": "truncated_r2_recombination_attack",
+          "role": "discovery",
+          "status": "completed_clean_after_format_repair"
+        },
+        {
+          "id": "unbalanced_product_source_hostile_audit",
+          "role": "source_auditor",
+          "status": "completed_clean_after_format_repair"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 90,
@@ -3359,9 +3875,21 @@
       "status": "closed",
       "objective": "Derive an exact joint two-character metaplectic representation of the hard M2 fixed-a Gram and prove a rho^(-1/2) linear gain, a strict rho-power subrange, or an equal-capacity obstruction.",
       "tasks": [
-        {"id": "blind_two_character_energy_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean_after_format_repair"},
-        {"id": "metaplectic_two_character_attack", "role": "discovery", "status": "completed_clean"},
-        {"id": "two_character_spectral_source_hostile_audit", "role": "source_auditor", "status": "completed_clean"}
+        {
+          "id": "blind_two_character_energy_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed_clean_after_format_repair"
+        },
+        {
+          "id": "metaplectic_two_character_attack",
+          "role": "discovery",
+          "status": "completed_clean"
+        },
+        {
+          "id": "two_character_spectral_source_hostile_audit",
+          "role": "source_auditor",
+          "status": "completed_clean"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 90,
@@ -3397,9 +3925,21 @@
       "status": "closed",
       "objective": "Prove the literal blockwise fixed-K owner-completion identity and O(L^2 X^epsilon) outside-absolute owner norm, a strict partial completion, or the first exact failing owner.",
       "tasks": [
-        {"id": "blind_owner_completion_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean"},
-        {"id": "linear_owner_completion_attack", "role": "formalizer", "status": "completed_clean"},
-        {"id": "owner_completion_hostile_audit", "role": "seam_reviewer", "status": "completed_clean_with_terminal_followup"}
+        {
+          "id": "blind_owner_completion_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed_clean"
+        },
+        {
+          "id": "linear_owner_completion_attack",
+          "role": "formalizer",
+          "status": "completed_clean"
+        },
+        {
+          "id": "owner_completion_hostile_audit",
+          "role": "seam_reviewer",
+          "status": "completed_clean_with_terminal_followup"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 95,
@@ -3436,9 +3976,21 @@
       "status": "closed",
       "objective": "Prove the exact global signed completed-scalar implication for the hard-top energy, write its literal two-character kernel, and prove a bound, strict subrange, smaller survivor, or rigorous no-go.",
       "tasks": [
-        {"id": "blind_global_signed_implication", "role": "statement_only_blind_rederiver", "status": "completed_clean"},
-        {"id": "completed_directional_kernel_attack", "role": "formalizer", "status": "completed_clean_after_format_repair"},
-        {"id": "completed_directional_hostile_audit", "role": "seam_reviewer", "status": "completed_clean"}
+        {
+          "id": "blind_global_signed_implication",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed_clean"
+        },
+        {
+          "id": "completed_directional_kernel_attack",
+          "role": "formalizer",
+          "status": "completed_clean_after_format_repair"
+        },
+        {
+          "id": "completed_directional_hostile_audit",
+          "role": "seam_reviewer",
+          "status": "completed_clean"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 95,
@@ -3479,9 +4031,21 @@
       "status": "closed",
       "objective": "Prove the one-sided Round-75 signed off-diagonal by an exact adjacent-ray parity commutator, close a strict polynomial hard subrange, or prove equal-capacity transport/lattice return.",
       "tasks": [
-        {"id": "blind_adjacent_commutator_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean"},
-        {"id": "adjacent_transport_commutator_attack", "role": "discovery", "status": "completed_clean_after_format_repair"},
-        {"id": "adjacent_commutator_hostile_source_audit", "role": "source_auditor", "status": "completed_clean"}
+        {
+          "id": "blind_adjacent_commutator_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed_clean"
+        },
+        {
+          "id": "adjacent_transport_commutator_attack",
+          "role": "discovery",
+          "status": "completed_clean_after_format_repair"
+        },
+        {
+          "id": "adjacent_commutator_hostile_source_audit",
+          "role": "source_auditor",
+          "status": "completed_clean"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 90,
@@ -3514,9 +4078,21 @@
       "status": "closed",
       "objective": "Canonicalize the proved balanced smooth M9-M2 reduction as one literal actual-symbol quarter-packet theorem, or identify its first unresolved normalization seam.",
       "tasks": [
-        {"id": "blind_balanced_packet_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean_after_format_repair"},
-        {"id": "balanced_packet_actual_symbol_formalization", "role": "formalizer", "status": "completed_clean_after_format_repair"},
-        {"id": "balanced_packet_hostile_source_audit", "role": "source_auditor", "status": "completed_clean_after_format_repair"}
+        {
+          "id": "blind_balanced_packet_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed_clean_after_format_repair"
+        },
+        {
+          "id": "balanced_packet_actual_symbol_formalization",
+          "role": "formalizer",
+          "status": "completed_clean_after_format_repair"
+        },
+        {
+          "id": "balanced_packet_hostile_source_audit",
+          "role": "source_auditor",
+          "status": "completed_clean_after_format_repair"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 95,
@@ -3550,9 +4126,21 @@
       "status": "closed",
       "objective": "Instantiate and certify the finite coefficientwise balanced smooth M2 atom dictionary and exact one-count equation, or isolate its first exact missing datum.",
       "tasks": [
-        {"id": "blind_atom_dictionary_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean_after_format_repair"},
-        {"id": "literal_atom_dictionary_constructor", "role": "formalizer", "status": "completed_clean_after_d0_and_format_repair"},
-        {"id": "atom_dictionary_hostile_seam_audit", "role": "seam_reviewer", "status": "completed_clean_after_format_repair"}
+        {
+          "id": "blind_atom_dictionary_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed_clean_after_format_repair"
+        },
+        {
+          "id": "literal_atom_dictionary_constructor",
+          "role": "formalizer",
+          "status": "completed_clean_after_d0_and_format_repair"
+        },
+        {
+          "id": "atom_dictionary_hostile_seam_audit",
+          "role": "seam_reviewer",
+          "status": "completed_clean_after_format_repair"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 98,
@@ -3586,9 +4174,21 @@
       "status": "closed",
       "objective": "Derive the exact full-product energy of the literal balanced packet, validate or reject the mean-square and ray-defect connectors, and prove a target-safe branch, strict saving, or rigorous mechanism obstruction.",
       "tasks": [
-        {"id": "blind_literal_energy_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean_after_escape_repair"},
-        {"id": "actual_symbol_connector_attack", "role": "discovery", "status": "completed_clean_after_escape_repair"},
-        {"id": "mean_square_ray_hostile_audit", "role": "barrier_no_go", "status": "completed_clean_after_escape_repair"}
+        {
+          "id": "blind_literal_energy_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed_clean_after_escape_repair"
+        },
+        {
+          "id": "actual_symbol_connector_attack",
+          "role": "discovery",
+          "status": "completed_clean_after_escape_repair"
+        },
+        {
+          "id": "mean_square_ray_hostile_audit",
+          "role": "barrier_no_go",
+          "status": "completed_clean_after_escape_repair"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 95,
@@ -3623,9 +4223,21 @@
       "status": "closed",
       "objective": "Expose the exact literal chi_4-twisted shifted-divisor coefficient in the Round-114 double-far energy and either save one factor L by a noninvertible actual-symbol mechanism or prove an equal-capacity actual-symbol obstruction.",
       "tasks": [
-        {"id": "blind_shifted_divisor_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean_after_lf_normalization"},
-        {"id": "literal_dispersion_attack", "role": "discovery", "status": "completed_clean_after_lf_normalization"},
-        {"id": "actual_symbol_main_term_hostile", "role": "barrier_no_go", "status": "completed_clean_after_hostile_audit_and_lf_normalization"}
+        {
+          "id": "blind_shifted_divisor_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed_clean_after_lf_normalization"
+        },
+        {
+          "id": "literal_dispersion_attack",
+          "role": "discovery",
+          "status": "completed_clean_after_lf_normalization"
+        },
+        {
+          "id": "actual_symbol_main_term_hostile",
+          "role": "barrier_no_go",
+          "status": "completed_clean_after_hostile_audit_and_lf_normalization"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 98,
@@ -3710,9 +4322,21 @@
       "status": "closed",
       "objective": "Exploit the literal W=Y^(7/16) determinant centre phase and M1/M2 character high-passes to prove the Y^(1/2) target, a target-safe subrange, a quantified actual-symbol saving, or a rigorous mechanism obstruction.",
       "tasks": [
-        {"id": "blind_determinant_fibre_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean_after_control_character_repair"},
-        {"id": "actual_character_determinant_attack", "role": "discovery", "status": "completed_clean_with_hostile_addendum"},
-        {"id": "determinant_fibre_hostile_source_audit", "role": "source_auditor", "status": "completed_clean_after_control_character_repair"}
+        {
+          "id": "blind_determinant_fibre_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed_clean_after_control_character_repair"
+        },
+        {
+          "id": "actual_character_determinant_attack",
+          "role": "discovery",
+          "status": "completed_clean_with_hostile_addendum"
+        },
+        {
+          "id": "determinant_fibre_hostile_source_audit",
+          "role": "source_auditor",
+          "status": "completed_clean_after_control_character_repair"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 98,
@@ -3748,9 +4372,21 @@
       "status": "closed",
       "objective": "Test the literal smooth unbalanced M2 prescribed-centre truncated-divisor wave for the quarter target, a target-safe subrange or saving, a rigorous coherent countermodel, or a scoped no-go with the smallest signed survivor.",
       "tasks": [
-        {"id": "blind_prescribed_centre_wave_probe", "role": "statement_only_blind_rederiver", "status": "completed_clean_with_square_sector_seam"},
-        {"id": "literal_unbalanced_wave_attack", "role": "discovery", "status": "completed_clean_with_hostile_addendum"},
-        {"id": "prescribed_centre_wave_hostile_source_audit", "role": "source_auditor", "status": "completed_clean_with_discovery_addendum"}
+        {
+          "id": "blind_prescribed_centre_wave_probe",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed_clean_with_square_sector_seam"
+        },
+        {
+          "id": "literal_unbalanced_wave_attack",
+          "role": "discovery",
+          "status": "completed_clean_with_hostile_addendum"
+        },
+        {
+          "id": "prescribed_centre_wave_hostile_source_audit",
+          "role": "source_auditor",
+          "status": "completed_clean_with_discovery_addendum"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 98,
@@ -3786,9 +4422,21 @@
       "status": "closed",
       "objective": "Minimize every accepted direct estimate separately on the hard and smooth M9-M1 physical parents, prove a lawful shrink or certify their exact separate minimax witnesses and connector scope.",
       "tasks": [
-        {"id": "blind_m1_parent_minimax_rederivation", "role": "statement_only_blind_rederiver", "status": "completed_clean_after_physical_normalization_repair"},
-        {"id": "literal_m1_parent_capacity_attack", "role": "discovery", "status": "completed_clean_after_LF_normalization"},
-        {"id": "m1_parent_minimax_hostile_audit", "role": "source_auditor", "status": "completed_clean_after_LF_and_trailing_whitespace_normalization"}
+        {
+          "id": "blind_m1_parent_minimax_rederivation",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed_clean_after_physical_normalization_repair"
+        },
+        {
+          "id": "literal_m1_parent_capacity_attack",
+          "role": "discovery",
+          "status": "completed_clean_after_LF_normalization"
+        },
+        {
+          "id": "m1_parent_minimax_hostile_audit",
+          "role": "source_auditor",
+          "status": "completed_clean_after_LF_and_trailing_whitespace_normalization"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 99,
@@ -3824,9 +4472,21 @@
       "status": "closed",
       "objective": "Reconcile the exact GAR sharp radial/interface owner with every proved compact, endpoint, boundary, and residue module, and prove it or isolate its smallest exact survivor.",
       "tasks": [
-        {"id": "blind_radial_interface_partition", "role": "statement_only_blind_rederiver", "status": "completed_clean_with_terminal_candidate_addendum"},
-        {"id": "literal_radial_interface_reconciliation", "role": "formalizer", "status": "completed_clean_after_support_and_owner_repairs"},
-        {"id": "radial_interface_hostile_scope_audit", "role": "seam_reviewer", "status": "completed_clean_after_support_and_text_hygiene_repairs"}
+        {
+          "id": "blind_radial_interface_partition",
+          "role": "statement_only_blind_rederiver",
+          "status": "completed_clean_with_terminal_candidate_addendum"
+        },
+        {
+          "id": "literal_radial_interface_reconciliation",
+          "role": "formalizer",
+          "status": "completed_clean_after_support_and_owner_repairs"
+        },
+        {
+          "id": "radial_interface_hostile_scope_audit",
+          "role": "seam_reviewer",
+          "status": "completed_clean_after_support_and_text_hygiene_repairs"
+        }
       ],
       "resource_policy": {
         "analytical_algebraic_minimum_percent": 99,
@@ -6095,23 +6755,23 @@
       "round_index": 169,
       "campaign_id": "m9-m2-hard-top-t1-joint-functional-equation-spectral-gate",
       "type": "m9_m2_hard_top_t1_joint_functional_equation_spectral_gate",
-    "status": "closed",
+      "status": "closed",
       "objective": "Prove the exact Round-168 signed two-height integral by expanding G coefficientwise and applying both GL(1) functional equations jointly before positive norms, prove an owner-complete strict polynomial-L sector beyond fixed polylogarithmic L, or establish the first exact coefficient, gamma, transform, spectral, endpoint, restored-power, or self-return no-go.",
       "tasks": [
         {
           "id": "joint_functional_equation_dual_kernel_attack",
           "role": "discovery",
-        "status": "completed"
+          "status": "completed"
         },
         {
           "id": "blind_joint_transform_rederivation",
           "role": "blind_rederiver",
-        "status": "completed"
+          "status": "completed"
         },
         {
           "id": "signed_spectral_reciprocity_source_hostile_audit",
           "role": "source_auditor",
-        "status": "completed"
+          "status": "completed"
         }
       ],
       "resource_policy": {
@@ -6125,17 +6785,17 @@
         "strict_t1_joint_FE_spectral_sector",
         "t1_joint_FE_spectral_self_return_no_go"
       ],
-    "scheduled_review": "Round 170 must perform the mandatory full-proof strategy and current-literature review after Rounds 167--169 close.",
-    "closing_assessment": {
-      "decision": "promote_exact_joint_FE_double_Poisson_self_return_and_park_unmatched_spectral_interface",
-      "graph_mutation": true,
-      "terminal_label": "t1_joint_FE_spectral_self_return_no_go",
-      "main_result": "The exact g-coefficient collapse, completed sine/cosine kernels, finite double-Poisson identity, and target-safe finite-zero/full-residue correction prove a coefficientwise return to the Round-162 product collar. The signed aggregate and every parent/exponent remain open.",
-      "resulting_graph_sha256": "111809875d911d279ae22bee2ce44f0dba97130eeedcdca0dc65f53f163283ae",
-      "exponent_change": false
+      "scheduled_review": "Round 170 must perform the mandatory full-proof strategy and current-literature review after Rounds 167--169 close.",
+      "closing_assessment": {
+        "decision": "promote_exact_joint_FE_double_Poisson_self_return_and_park_unmatched_spectral_interface",
+        "graph_mutation": true,
+        "terminal_label": "t1_joint_FE_spectral_self_return_no_go",
+        "main_result": "The exact g-coefficient collapse, completed sine/cosine kernels, finite double-Poisson identity, and target-safe finite-zero/full-residue correction prove a coefficientwise return to the Round-162 product collar. The signed aggregate and every parent/exponent remain open.",
+        "resulting_graph_sha256": "111809875d911d279ae22bee2ce44f0dba97130eeedcdca0dc65f53f163283ae",
+        "exponent_change": false
+      },
+      "next_round": 170
     },
-    "next_round": 170
-  },
     {
       "round_index": 170,
       "campaign_id": "full-proof-round167-169-strategy-literature-review",
@@ -6259,8 +6919,7 @@
         "strict_residual_maximal_fejer_spectral_sector",
         "maximal_fejer_dyadic_character_poisson_no_go"
       ],
-      "scheduled_review": "The next mandatory full-proof strategy and current-literature review is due after Round 173 closes."
-      ,
+      "scheduled_review": "The next mandatory full-proof strategy and current-literature review is due after Round 173 closes.",
       "closing_assessment": {
         "decision": "promote_residual_maximal_fejer_dyadic_positive_transform_obstruction",
         "graph_mutation": true,
@@ -7502,6 +8161,1536 @@
         "exponent_change": false
       },
       "next_round": 200
+    },
+    {
+      "round_index": 200,
+      "campaign_id": "m9-m1-t1-complete-source-coefficient-mask-analysis",
+      "type": "complete_source_coefficient_mask_analysis",
+      "status": "closed",
+      "objective": "Can the complete original-t=1 residual even-shift source, with P1 and P2 recombined, be bounded at L^2 X^epsilon; otherwise what exact coefficient norm or unmasked analytic estimate is missing after every mask and reconstruction cost?",
+      "tasks": [
+        {
+          "id": "complete_source_analytic_derivation",
+          "role": "discovery",
+          "status": "completed"
+        },
+        {
+          "id": "actual_symbol_norm_power_audit",
+          "role": "seam_reviewer",
+          "status": "completed"
+        },
+        {
+          "id": "blind_interval_operator_rederivation",
+          "role": "blind_rederiver",
+          "status": "completed"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0,
+        "planned_numerical_percent": 0,
+        "budget": "Three analytical reports, one bounded correction/review cycle, conductor synthesis. No numerical experiments."
+      },
+      "starting_graph_sha256": "2f4448e999ab90387bca06498ddc60ee97b50f9900a9dfc6ad41fb201833c5f5",
+      "exit_labels": [
+        "complete_t1_residual_target_proved",
+        "complete_source_interface_with_open_estimate"
+      ],
+      "started_at": "2026-09-23T11:44:56.548448+00:00",
+      "closing_assessment": {
+        "decision": "archive_complete_source_interface_keep_analytic_target_open",
+        "terminal_label": "complete_source_interface_with_open_estimate",
+        "graph_mutation": false,
+        "main_result": "Complete-source coefficient, mask, and power analysis finished; the actual-vector L^2 correlation bound is unproved. No new parent estimate or exponent. Finite tools are archived without promotion.",
+        "resulting_graph_sha256": "2f4448e999ab90387bca06498ddc60ee97b50f9900a9dfc6ad41fb201833c5f5",
+        "patch_effect": "0_create_0_update_0_correct_0_reject_13_no_change",
+        "exponent_change": false
+      },
+      "completed_at": "2026-09-23T12:09:53.814349+00:00",
+      "next_round": 201
+    },
+    {
+      "round_index": 201,
+      "campaign_id": "gc-whole-discrepancy-twelfth-moment",
+      "type": "whole_discrepancy_twelfth_moment",
+      "status": "closed",
+      "objective": "Can the complete whole-discrepancy twelfth moment be bounded by Y^(4+eta+epsilon) with eta<13theta_LY-4, using a fixed-window weighted square-root expansion; if not, what exact signed offdiagonal estimate and power gap remain?",
+      "tasks": [
+        {
+          "id": "whole_moment_analytic_attack",
+          "role": "discovery",
+          "status": "completed"
+        },
+        {
+          "id": "blind_exact_resonance_rederivation",
+          "role": "blind_rederiver",
+          "status": "completed"
+        },
+        {
+          "id": "circle_moment_primary_source_audit",
+          "role": "source_auditor",
+          "status": "completed"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0,
+        "planned_numerical_percent": 0,
+        "budget": "Three bounded analytical/source reports and one repair/review cycle; no numerical experiments."
+      },
+      "starting_graph_sha256": "2f4448e999ab90387bca06498ddc60ee97b50f9900a9dfc6ad41fb201833c5f5",
+      "exit_labels": [
+        "whole_discrepancy_twelfth_moment_improvement",
+        "whole_discrepancy_moment_reduction_open_offdiagonal"
+      ],
+      "started_at": "2026-09-23T12:16:19.641941+00:00",
+      "closing_assessment": {
+        "decision": "promote_exact_resonance_kernel_keep_full_moment_open",
+        "terminal_label": "whole_discrepancy_moment_reduction_open_offdiagonal",
+        "graph_mutation": true,
+        "main_result": "Promote only the independently proved full weighted exact-resonance kernel. Complete fixed-window reduction and audited moment benchmark leave the actual signed offdiagonal estimate open; no pointwise exponent improvement.",
+        "resulting_graph_sha256": "682cb189a3ab0ef26f8d19701e2949547446d37505df01f7b7eaf1cfdd0f359c",
+        "patch_effect": "1_create_0_update_0_correct_0_reject_9_no_change",
+        "exponent_change": false
+      },
+      "completed_at": "2026-09-23T12:34:08.425098+00:00",
+      "next_round": 202
+    },
+    {
+      "round_index": 202,
+      "campaign_id": "gc-strategy-signed-moment-majorant-review",
+      "type": "scheduled_strategy_literature_and_signed_moment_gate",
+      "status": "closed",
+      "objective": "Which complete signed analytic route survives the current-source and actual-coefficient majorant audit and merits the next campaign toward the quarter theorem?",
+      "tasks": [
+        {
+          "id": "current_primary_methods_audit",
+          "role": "source_auditor",
+          "status": "completed"
+        },
+        {
+          "id": "signed_cutoff_tail_moment_audit",
+          "role": "discovery",
+          "status": "completed"
+        },
+        {
+          "id": "blind_physical_near_resonance_mass",
+          "role": "blind_rederiver",
+          "status": "completed"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0,
+        "planned_numerical_percent": 0,
+        "budget": "Three bounded analytical/source reports and one repair/seam-review cycle. No numerical experiments."
+      },
+      "starting_graph_sha256": "682cb189a3ab0ef26f8d19701e2949547446d37505df01f7b7eaf1cfdd0f359c",
+      "exit_labels": [
+        "strategy_review_with_complete_signed_next_target",
+        "strategy_review_no_source_compatible_gain"
+      ],
+      "started_at": "2026-09-23T12:39:29.931182+00:00",
+      "closing_assessment": {
+        "decision": "promote_physical_majorant_obstruction_select_complete_signed_route",
+        "terminal_label": "strategy_review_with_complete_signed_next_target",
+        "graph_mutation": true,
+        "main_result": "Promote only the physical absolute-majorant obstruction; complete dated strategy/source/cutoff review and identify the complete signed filtered-convolution target. Actual moment, parent obligations and exponents remain unchanged.",
+        "resulting_graph_sha256": "abc88f6cd29d757b880037b6f600b802a22ac4b57fcce40662205150f3ed8ceb",
+        "patch_effect": "1_create_0_update_0_correct_0_reject_8_no_change",
+        "exponent_change": false
+      },
+      "completed_at": "2026-09-23T13:03:41.746439+00:00",
+      "next_round": 203
+    },
+    {
+      "round_index": 203,
+      "campaign_id": "gc-complete-signed-convolution-attack",
+      "type": "complete_signed_analytic_attack",
+      "status": "closed",
+      "objective": "Can a complete coefficient-sensitive density or arithmetic estimate prove the actual signed filtered-convolution target with its full remainder?",
+      "tasks": [
+        {
+          "id": "actual_density_remainder_attack",
+          "role": "discovery",
+          "status": "completed"
+        },
+        {
+          "id": "arithmetic_signed_tail_attack",
+          "role": "discovery",
+          "status": "completed"
+        },
+        {
+          "id": "blind_filter_scale_audit",
+          "role": "blind_rederiver",
+          "status": "completed"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0,
+        "planned_numerical_percent": 0,
+        "budget": "Three bounded analytical reports, conductor independent radial analysis, and one repair/review cycle; no numerical experiments."
+      },
+      "starting_graph_sha256": "abc88f6cd29d757b880037b6f600b802a22ac4b57fcce40662205150f3ed8ceb",
+      "exit_labels": [
+        "complete_signed_norm_bound_proved",
+        "complete_analytic_attempt_no_new_bound"
+      ],
+      "started_at": "2026-09-23T13:10:39.904237+00:00",
+      "closing_assessment": {
+        "decision": "retain_open_target_archive_complete_analytic_attempt",
+        "terminal_label": "complete_analytic_attempt_no_new_bound",
+        "graph_mutation": false,
+        "main_result": "Complete density and arithmetic attempts include all tails and errors, but establish no new complete moment bound. The strongest inherited norm exponent remains0.648072478; target0.58 and all parent/exponent claims remain open.",
+        "resulting_graph_sha256": "abc88f6cd29d757b880037b6f600b802a22ac4b57fcce40662205150f3ed8ceb",
+        "patch_effect": "0_create_0_update_0_correct_0_reject_9_no_change",
+        "exponent_change": false
+      },
+      "completed_at": "2026-09-23T13:27:50.635668+00:00",
+      "next_round": 204
+    },
+    {
+      "round_index": 204,
+      "campaign_id": "gc-complete-large-values-duality",
+      "type": "complete_large_values_analytic_attack",
+      "status": "closed",
+      "objective": "Can actual finite-vector large-values analysis prove the complete high-value distribution required by the twelfth-moment target?",
+      "tasks": [
+        {
+          "id": "actual_large_values_attack",
+          "role": "discovery",
+          "status": "completed"
+        },
+        {
+          "id": "large_values_primary_source_audit",
+          "role": "source_auditor",
+          "status": "completed"
+        },
+        {
+          "id": "blind_gram_covering_audit",
+          "role": "blind_rederiver",
+          "status": "completed"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0,
+        "planned_numerical_percent": 0,
+        "budget": "Three bounded analytical/source reports, conductor independent derivation, and one repair/seam-review cycle. No mathematical numerical experiments."
+      },
+      "starting_graph_sha256": "abc88f6cd29d757b880037b6f600b802a22ac4b57fcce40662205150f3ed8ceb",
+      "exit_labels": [
+        "complete_target_distribution_proved",
+        "complete_distribution_gain_target_open",
+        "large_values_attempt_no_new_bound"
+      ],
+      "started_at": "2026-09-23T13:36:12.044193+00:00",
+      "closing_assessment": {
+        "decision": "promote_complete_large_values_and_moment_bound_only",
+        "terminal_label": "complete_distribution_gain_target_open",
+        "graph_mutation": true,
+        "main_result": "Promote a complete actual distribution and its improved recorded moment consequences; retain the frozen stronger distribution and all pointwise/parent targets as open.",
+        "resulting_graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+        "patch_effect": "1_create_0_update_0_correct_0_reject_10_no_change",
+        "moment_comparison_improved": true,
+        "pointwise_exponent_change": false
+      },
+      "completed_at": "2026-09-26T01:30:26.615376+00:00",
+      "next_round": 205
+    },
+    {
+      "round_index": 205,
+      "campaign_id": "gc-full-frontier-moment-strategy-review",
+      "type": "scheduled_full_frontier_strategy_review",
+      "status": "closed",
+      "objective": "Which complete arithmetic objective and costed method should be attempted next toward the full quarter theorem?",
+      "tasks": [
+        {
+          "id": "current_circle_methods",
+          "role": "source_auditor",
+          "status": "completed"
+        },
+        {
+          "id": "internal_arithmetic_routes",
+          "role": "source_auditor",
+          "status": "completed"
+        },
+        {
+          "id": "blind_gain_frontier",
+          "role": "blind_rederiver",
+          "status": "completed"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0,
+        "planned_numerical_percent": 0,
+        "budget": "Three bounded analytical/source reports, conductor independent synthesis, one parameter/source seam-review cycle if needed. No mathematical numerical experiments."
+      },
+      "starting_graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+      "exit_labels": [
+        "strategy_review_select_complete_arithmetic_objective",
+        "strategy_review_no_source_compatible_gain"
+      ],
+      "started_at": "2026-09-26T01:33:52.439816+00:00",
+      "closing_assessment": {
+        "decision": "retain_graph_select_complete_signed_shell_objective",
+        "terminal_label": "strategy_review_select_complete_arithmetic_objective",
+        "graph_mutation": false,
+        "main_result": "Scheduled full-frontier review completed. Exact modular completion and current theorem costs give no certified arithmetic gain. The complete middle-band signed shell moment is selected as the next proposed objective, with all other frequency ranges estimated at the milestone scale. No new graph theorem or exponent.",
+        "resulting_graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+        "patch_effect": "0_create_0_update_0_correct_0_reject_10_no_change",
+        "pointwise_exponent_change": false,
+        "new_mathematical_bound": false,
+        "strategy_checkpoint": "strategy/gauss_circle_strategy_checkpoint_round205_2026-09-26.md"
+      },
+      "completed_at": "2026-09-26T01:57:05.064630+00:00",
+      "next_round": 206
+    },
+    {
+      "round_index": 206,
+      "campaign_id": "gc-complete-signed-shell-arithmetic",
+      "type": "complete_arithmetic_moment_attack",
+      "status": "closed",
+      "objective": "Can the actual signed middle-band shell moment gain the required complete power through arithmetic divisor or shifted-correlation information?",
+      "tasks": [
+        {
+          "id": "actual_divisor_shell_attack",
+          "role": "discovery",
+          "status": "completed"
+        },
+        {
+          "id": "shifted_moment_source_attack",
+          "role": "source_auditor",
+          "status": "completed"
+        },
+        {
+          "id": "blind_odd_shell_bridge",
+          "role": "blind_rederiver",
+          "status": "completed"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0,
+        "planned_numerical_percent": 0,
+        "budget": "Three bounded analytical/source reports, conductor complete arithmetic analysis, one same-round seam cycle if needed. No mathematical numerical experiments."
+      },
+      "starting_graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+      "exit_labels": [
+        "complete_arithmetic_moment_gain",
+        "complete_arithmetic_attempt_no_gain",
+        "scoped_arithmetic_method_no_go"
+      ],
+      "started_at": "2026-09-26T02:01:55.588572+00:00",
+      "closing_assessment": {
+        "decision": "retain_graph_archive_scoped_arithmetic_no_go",
+        "terminal_label": "scoped_arithmetic_method_no_go",
+        "graph_mutation": false,
+        "main_result": "Complete actual divisor/CRT and shifted-source attempts yield no improved complete moment. The actual absolute sixth expansion is too large for the sufficient certificate; the signed4--6-distinct-shift correlation remains open at an explicit relaxed threshold. Archive the reviewed scoped no-go and power ledger without graph promotion.",
+        "resulting_graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+        "patch_effect": "0_create_0_update_0_correct_0_reject_10_no_change",
+        "complete_moment_bound_improved": false,
+        "pointwise_exponent_change": false,
+        "goal_turn_classification": "scoped_method_no_go_precise_remaining_signed_estimate_no_complete_bound_gain"
+      },
+      "completed_at": "2026-09-26T02:27:54.125176+00:00",
+      "next_round": 207
+    },
+    {
+      "round_index": 207,
+      "campaign_id": "gc-signed-rational-filter-attack",
+      "type": "complete_signed_rational_moment_attack",
+      "status": "closed",
+      "objective": "Can the complete actual signed rational-filter representation yield the required middle-band moment saving?",
+      "tasks": [
+        {
+          "id": "periodic_hyperbola_attack",
+          "role": "discovery",
+          "status": "completed"
+        },
+        {
+          "id": "signed_rational_moment_attack",
+          "role": "discovery",
+          "status": "completed"
+        },
+        {
+          "id": "blind_periodic_threshold",
+          "role": "blind_rederiver",
+          "status": "completed"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0,
+        "planned_numerical_percent": 0,
+        "budget": "Three bounded analytical/source reports, conductor signed-norm analysis, one same-round seam cycle. No mathematical numerical experiments."
+      },
+      "starting_graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+      "exit_labels": [
+        "complete_signed_arithmetic_gain",
+        "complete_rational_attempt_no_gain",
+        "scoped_rational_method_no_go"
+      ],
+      "started_at": "2026-09-27T14:10:05.349477+00:00",
+      "closing_assessment": {
+        "decision": "retain_graph_archive_scoped_arithmetic_no_go",
+        "terminal_label": "scoped_rational_method_no_go",
+        "graph_mutation": false,
+        "main_result": "Complete signed rational-filter and reciprocal estimates recover existing bounds only. The actual termwise rational sixth majorant is at least X^3H after single-frequency grouping; signed sextuple cancellation remains open. Threshold, mask and width costs are fully paid. Archive this scoped no-go without graph promotion.",
+        "resulting_graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+        "patch_effect": "0_create_0_update_0_correct_0_reject_10_no_change",
+        "complete_moment_bound_improved": false,
+        "pointwise_exponent_change": false,
+        "goal_turn_classification": "scoped_method_no_go_precise_remaining_signed_estimate_no_complete_bound_gain"
+      },
+      "completed_at": "2026-09-27T14:29:29.040265+00:00",
+      "next_round": 208
+    },
+    {
+      "round_index": 208,
+      "campaign_id": "gc-full-proof-signed-arithmetic-review",
+      "type": "full_proof_strategy_current_literature_review",
+      "status": "closed",
+      "objective": "Which complete actual signed arithmetic estimate should be pursued after205--207, with current primary-source costs and a route toward the full quarter theorem?",
+      "tasks": [
+        {
+          "id": "harmonic_current_sources",
+          "role": "source_auditor",
+          "status": "completed"
+        },
+        {
+          "id": "arithmetic_full_frontier",
+          "role": "source_auditor",
+          "status": "completed"
+        },
+        {
+          "id": "blind_moment_hierarchy",
+          "role": "blind_rederiver",
+          "status": "completed"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 100,
+        "numerical_experimental_maximum_percent": 0,
+        "planned_numerical_percent": 0,
+        "budget": "Three bounded reports and one same-round seam cycle; at most two fully priced theorem interfaces per source task; no mathematical numerical experiments."
+      },
+      "starting_graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+      "exit_labels": [
+        "costed_strategy_adjustment",
+        "new_complete_candidate_requires_validation"
+      ],
+      "started_at": "2026-09-27T14:35:40.308954+00:00",
+      "closing_assessment": {
+        "decision": "retain_graph_adopt_reviewed_conditional_peak_gate",
+        "terminal_label": "costed_strategy_adjustment",
+        "graph_mutation": false,
+        "main_result": "Current sources supply no arithmetic gain. A reviewed local Fourier reproduction bridge selects the complete tenth-moment gate K10(N)<<T^(473/65+epsilon)N^-1/2 on T^(166/325)<N<T^(242/325), with all complements paid. Its conditional pointwise consequence is102/325; the actual gate and full quarter theorem remain open.",
+        "resulting_graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+        "patch_effect": "0_create_0_update_0_correct_0_reject_10_no_change",
+        "complete_moment_bound_improved": false,
+        "pointwise_exponent_change": false,
+        "goal_turn_classification": "progress_completed_required_source_review_and_new_complete_conditional_bridge_changes_next_action"
+      },
+      "completed_at": "2026-09-27T14:57:41.752169+00:00",
+      "next_round": 209
+    },
+    {
+      "round_index": 209,
+      "campaign_id": "gc-complete-signed-tenth-moment",
+      "type": "complete_actual_signed_tenth_moment_attack",
+      "status": "closed",
+      "objective": "Can actual arithmetic cancellation prove the complete tenth-moment gate, or a complete quantitatively better pointwise estimate?",
+      "tasks": [
+        {
+          "id": "actual_tenth_high_values",
+          "role": "discovery",
+          "status": "completed"
+        },
+        {
+          "id": "signed_fifth_convolution",
+          "role": "discovery",
+          "status": "completed"
+        },
+        {
+          "id": "blind_ten_root_audit",
+          "role": "blind_rederiver",
+          "status": "completed"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 95,
+        "numerical_experimental_maximum_percent": 5,
+        "planned_numerical_percent": 0,
+        "budget": "Three bounded reports, at most two substantive mechanisms each, then one same-round seam cycle; planned zero mathematical experiments."
+      },
+      "starting_graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+      "exit_labels": [
+        "complete_arithmetic_gain_candidate",
+        "scoped_actual_method_no_go",
+        "no_new_bound_precise_open_residual"
+      ],
+      "started_at": "2026-09-27T15:02:06.650310+00:00",
+      "closing_assessment": {
+        "decision": "retain_graph_record_reviewed_arithmetic_diagnostics",
+        "terminal_label": "scoped_actual_method_no_go",
+        "graph_mutation": false,
+        "main_result": "Complete exact rational fifth-convolution energy is O(T^(7+epsilon)N^-1/2), safely below the tenth gate; after all exact relations are removed the actual individual-integral near majorant is at least T^11N^-1/2. Exact root mass is likewise harmless, while absolute near closure fails throughout the new band. Discrete-mean removal and positive arithmetic duality yield no full signed gain. The actual signed offdiagonal/high-value integral and full quarter remain open.",
+        "resulting_graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+        "patch_effect": "0_create_0_update_0_correct_0_reject_10_no_change",
+        "complete_moment_bound_improved": false,
+        "pointwise_exponent_change": false,
+        "goal_turn_classification": "progress_completed_validated209_actual_exact_near_separation_and_scoped_method_no_go"
+      },
+      "completed_at": "2026-09-27T15:17:39.348633+00:00",
+      "next_round": 210
+    },
+    {
+      "round_index": 210,
+      "campaign_id": "gc-signed-near-frequency-cancellation",
+      "type": "complete_signed_near_frequency_attack",
+      "status": "closed",
+      "objective": "Can phase-preserving rational bin energy or actual oscillatory shifted correlations prove the complete signed near-frequency target or another complete pointwise gain?",
+      "tasks": [
+        {
+          "id": "signed_rational_bins",
+          "role": "discovery",
+          "status": "completed"
+        },
+        {
+          "id": "actual_shifted_correlations",
+          "role": "discovery",
+          "status": "completed"
+        },
+        {
+          "id": "blind_bin_transfer",
+          "role": "blind_rederiver",
+          "status": "completed"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 95,
+        "numerical_experimental_maximum_percent": 5,
+        "planned_numerical_percent": 0,
+        "budget": "Three bounded reports, at most two substantive mechanisms each, then one same-round seam cycle; planned zero mathematical experiments."
+      },
+      "starting_graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+      "exit_labels": [
+        "complete_arithmetic_gain_candidate",
+        "scoped_actual_method_no_go",
+        "no_new_bound_precise_open_residual"
+      ],
+      "started_at": "2026-09-27T15:22:37.513775+00:00",
+      "closing_assessment": {
+        "decision": "retain_graph_record_reviewed_arithmetic_diagnostics",
+        "terminal_label": "scoped_actual_method_no_go",
+        "graph_mutation": false,
+        "main_result": "The full phase-preserving rational bin transfer is valid and its actual joint input is bounded by H^9 up to epsilon, yielding only XH^9=T^11N^-9/2 and missing the target by T^(242/65)N^-4. Actual centered atoms and full Abel variation obstruct a specified positive unweighted-error transfer; actual CRT singleton progressions obstruct the outer-absolute divisor-pair closure. Neither result lower-bounds a signed moment. Complete signed bin/shift inputs, the original tenth gate, the full quarter theorem and M1/M2 remain open; no accepted moment or exponent improves.",
+        "resulting_graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+        "patch_effect": "0_create_0_update_0_correct_0_reject_10_no_change",
+        "complete_moment_bound_improved": false,
+        "pointwise_exponent_change": false,
+        "goal_turn_classification": "progress_completed_validated210_scoped_actual_arithmetic_transfer_and_method_failures"
+      },
+      "completed_at": "2026-09-27T15:46:25.105957+00:00",
+      "next_round": 211
+    },
+    {
+      "round_index": 211,
+      "campaign_id": "gc-full-source-method-review",
+      "type": "mandatory_full_source_strategy_review",
+      "status": "closed",
+      "objective": "Which complete actual-coefficient estimate should be attacked after208--210, judged by current primary hypotheses and restored powers across the full proof frontier?",
+      "tasks": [
+        {
+          "id": "harmonic_pair_sources",
+          "role": "source_auditor",
+          "status": "completed"
+        },
+        {
+          "id": "bilinear_arithmetic_sources",
+          "role": "source_auditor",
+          "status": "completed"
+        },
+        {
+          "id": "blind_hyperbola_transfer",
+          "role": "blind_rederiver",
+          "status": "completed"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 95,
+        "numerical_experimental_maximum_percent": 5,
+        "planned_numerical_percent": 0,
+        "budget": "Three bounded reports; at most two full theorem audits per source task; one same-round seam cycle; planned zero experiments."
+      },
+      "starting_graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+      "exit_labels": [
+        "costed_strategy_adjustment",
+        "new_complete_candidate_requires_validation"
+      ],
+      "started_at": "2026-09-27T15:50:51.171375+00:00",
+      "closing_assessment": {
+        "decision": "retain_graph_record_reviewed_arithmetic_diagnostics",
+        "terminal_label": "costed_strategy_adjustment_actual_four_point_input_open",
+        "graph_mutation": false,
+        "main_result": "Two scalar and two bilinear primary theorem interfaces were audited with actual hyperbola coefficients, masks, norms and complete reconstruction. The named exponent-pair closure and both bilinear certificates give no complete gain. An isolated derivation confirms the exact two-arm transfer. A separately reviewed two-stage finite inequality gives |F_N|^4<<T^epsilon[N/L^2+N/K+A4], with all diagonals and conditional smooth main terms paid at L~N^(1/2)T^(-2b),K~NT^(-4b),b=83/650. The complete actual oscillatory four-point average A4<<T^(4b+epsilon) remains unproved, as does the original tenth gate. No accepted moment, pointwise exponent, M1/M2 parent or full-quarter claim changes.",
+        "resulting_graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+        "patch_effect": "0_create_0_update_0_correct_0_reject_10_no_change",
+        "complete_moment_bound_improved": false,
+        "pointwise_exponent_change": false,
+        "goal_turn_classification": "progress_completed_validated211_costed_source_review_and_complete_four_point_interface"
+      },
+      "completed_at": "2026-09-27T16:13:41.927291+00:00",
+      "next_round": 212
+    },
+    {
+      "round_index": 212,
+      "campaign_id": "gc-complete-four-point-correlation",
+      "type": "complete_actual_four_point_attack",
+      "status": "closed",
+      "objective": "Can the complete actual four-point shift average satisfy the selected power, or what exact arithmetic input or scoped obstruction remains after all costs?",
+      "tasks": [
+        {
+          "id": "four_point_local_arithmetic",
+          "role": "discovery",
+          "status": "completed"
+        },
+        {
+          "id": "four_point_oscillatory_attack",
+          "role": "discovery",
+          "status": "completed"
+        },
+        {
+          "id": "blind_local_interval_transfer",
+          "role": "blind_rederiver",
+          "status": "completed"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 95,
+        "numerical_experimental_maximum_percent": 5,
+        "planned_numerical_percent": 0,
+        "budget": "Three bounded reports; at most one full primary theorem audit in the local-arithmetic task; one same-round seam cycle; planned zero experiments."
+      },
+      "starting_graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+      "exit_labels": [
+        "complete_four_point_gain_requires_validation",
+        "essential_local_transfer_actual_input_open",
+        "scoped_actual_four_point_obstruction"
+      ],
+      "started_at": "2026-09-27T16:18:38.877310+00:00",
+      "closing_assessment": {
+        "decision": "retain_graph_record_reviewed_arithmetic_diagnostics",
+        "terminal_label": "essential_local_transfer_actual_input_open",
+        "graph_mutation": false,
+        "main_result": "Actual h=k and small-product sectors are completely target-safe. Distinct-shift local norm factors define a nonnegative bounded candidate rho_loc, while repeated-shift factors have a divergent constant-product control; no true integer mean is asserted. Local error ell^theta with theta<=45/83 would pay the complete target, with a sharp independently derived general criterion; only the trivial H(1) is established. The audited fixed-shift Matthiesen import fails, and the valid lift has insufficient rate and norm. Actual residual mass proves a scoped absolute radius-Gram certificate obstruction above alpha=204/325. A separate actual small-phase lower control precludes any uniform fixed power saving for that paid sector near the upper band. Complete A4, the tenth gate, all direct parents and quarter remain open; no accepted exponent improves.",
+        "resulting_graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+        "patch_effect": "0_create_0_update_0_correct_0_reject_10_no_change",
+        "complete_moment_bound_improved": false,
+        "pointwise_exponent_change": false,
+        "goal_turn_classification": "progress_completed_validated212_actual_sector_controls_local_model_and_scoped_gram_obstruction"
+      },
+      "completed_at": "2026-09-27T16:40:02.827499+00:00",
+      "next_round": 213
+    },
+    {
+      "round_index": 213,
+      "campaign_id": "gc-complete-centered-arithmetic",
+      "type": "complete_signed_model_remainder_attack",
+      "status": "closed",
+      "objective": "Can the complete actual signed model remainder attain the selected power, or what exact scoped obstruction remains after centering and every cost?",
+      "tasks": [
+        {
+          "id": "centered_divisor_attack",
+          "role": "discovery",
+          "status": "completed"
+        },
+        {
+          "id": "centered_shell_dispersion",
+          "role": "discovery",
+          "status": "completed"
+        },
+        {
+          "id": "blind_centered_certificate",
+          "role": "blind_rederiver",
+          "status": "completed"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 95,
+        "numerical_experimental_maximum_percent": 5,
+        "planned_numerical_percent": 0,
+        "budget": "Three bounded reports; at most two narrow primary theorem audits, one per arithmetic task; one same-round seam cycle; planned zero experiments."
+      },
+      "starting_graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+      "exit_labels": [
+        "complete_centered_gain_requires_validation",
+        "complete_signed_remainder_still_open",
+        "scoped_centered_certificate_obstruction"
+      ],
+      "started_at": "2026-09-27T16:44:04.909594+00:00",
+      "closing_assessment": {
+        "decision": "retain_graph_record_reviewed_arithmetic_diagnostics",
+        "terminal_label": "complete_signed_remainder_still_open",
+        "graph_mutation": false,
+        "main_result": "A complete signed radius gate on the enlarged window, Q_j << T^epsilon(sqrt(N)+N q^(-3/2)), is sufficient after a proved sqrt(q) bandwidth transfer and paid tails; it yields restored powers159/325 and166/325 but remains unproved. Actual residue zeros show scalar centering leaves positive Fourier certificates at N/sqrt(Lambda_*). Keeping model cross terms exact still leaves the fully priced absolute-DD certificate at least cN. Whole low-period norm models and their mean mismatch are target-safe, but every nonnegative model in that period range has actual complete L1 approximation certificate at least cN/log T. These are method-specific obstructions, not lower bounds on signed arithmetic. No complete moment, pointwise exponent or full-goal parent improves.",
+        "resulting_graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+        "patch_effect": "0_create_0_update_0_correct_0_reject_10_no_change",
+        "complete_moment_bound_improved": false,
+        "pointwise_exponent_change": false,
+        "goal_turn_classification": "progress_completed_validated213_signed_radius_bridge_and_actual_centered_periodic_obstructions"
+      },
+      "completed_at": "2026-09-27T16:58:17.087462+00:00",
+      "next_round": 214
+    },
+    {
+      "round_index": 214,
+      "campaign_id": "gc-full-goal-radius-source-review",
+      "type": "mandatory_full_goal_source_review",
+      "status": "closed",
+      "objective": "Which complete actual-coefficient route should follow211--213 after current primary-source audits and full power comparison, preserving the quarter goal?",
+      "tasks": [
+        {
+          "id": "signed_radius_sources",
+          "role": "source_auditor",
+          "status": "completed"
+        },
+        {
+          "id": "full_goal_harmonic_sources",
+          "role": "source_auditor",
+          "status": "completed"
+        },
+        {
+          "id": "blind_radius_optimization",
+          "role": "blind_rederiver",
+          "status": "completed"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 95,
+        "numerical_experimental_maximum_percent": 5,
+        "planned_numerical_percent": 0,
+        "budget": "Three bounded reports; at most two full theorem audits per source task; one same-round seam cycle; planned zero experiments."
+      },
+      "starting_graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+      "exit_labels": [
+        "costed_full_goal_strategy_adjustment",
+        "new_complete_candidate_requires_validation"
+      ],
+      "started_at": "2026-09-27T17:03:35.186054+00:00",
+      "closing_assessment": {
+        "decision": "retain_graph_record_reviewed_arithmetic_diagnostics",
+        "terminal_label": "costed_full_goal_strategy_adjustment",
+        "graph_mutation": false,
+        "main_result": "The fully paid hypothetical diagonal-scale radius input has exact optimized uniform block exponent1/8 and physical milestone5/16; free lengths cannot improve its positive certificate. A formal frequency-decaying input at target lengths requires1-sigma<=b(8-6sigma), so quarter needs sigma approaching1 in that family, still unproved. Four primary interfaces were audited: Chamizo fails extra arithmetic weights, Wessel--zur Verth fails rank/single-equation scope, Guth--Maynard has the wrong frequency class, and the legal Guth--Maldague lattice lift has insufficient fully priced cap/trace moments. Current source statuses and every full M1/M2/moment alternative were reviewed. The next concrete candidate is the complete weighted localized cone-wave tenth estimate with exact modulated coefficients before the generic torus trace. No actual signed estimate, complete moment, pointwise exponent or full-goal parent improves.",
+        "resulting_graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+        "patch_effect": "0_create_0_update_0_correct_0_reject_10_no_change",
+        "complete_moment_bound_improved": false,
+        "pointwise_exponent_change": false,
+        "goal_turn_classification": "progress_completed_validated214_full_goal_radius_limit_primary_source_review_and_strategy_adjustment"
+      },
+      "completed_at": "2026-09-27T17:21:22.299572+00:00",
+      "next_round": 215
+    },
+    {
+      "round_index": 215,
+      "campaign_id": "gc-complete-localized-wave-moment",
+      "type": "complete_actual_localized_wave_attack",
+      "status": "closed",
+      "objective": "Prove or rigorously delimit the complete actual weighted localized cone-wave moment(C215), retaining its full-quarter extension criterion.",
+      "tasks": [
+        {
+          "id": "weighted_envelope_transfer",
+          "role": "discovery",
+          "status": "completed"
+        },
+        {
+          "id": "actual_lattice_envelopes",
+          "role": "discovery",
+          "status": "completed"
+        },
+        {
+          "id": "blind_spatial_kernel",
+          "role": "blind_rederiver",
+          "status": "completed"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 95,
+        "numerical_experimental_maximum_percent": 5,
+        "planned_numerical_percent": 0,
+        "budget": "Three bounded reports; one primary amplitude-envelope interface and at most one arithmetic import; one same-round seam cycle; zero planned experiments."
+      },
+      "starting_graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+      "exit_labels": [
+        "complete_localized_moment_candidate_requires_validation",
+        "complete_localized_moment_still_open"
+      ],
+      "started_at": "2026-09-27T17:26:44.196998+00:00",
+      "closing_assessment": {
+        "decision": "retain_graph_record_reviewed_arithmetic_diagnostics",
+        "terminal_label": "complete_localized_moment_still_open",
+        "graph_mutation": false,
+        "main_result": "The legal amplitude-dependent weighted transfer requires source scale S comparable to min(N,r) and yields a complete threshold-preserving certificate whose target estimate is unproved; its fully paid crude cost is TN^(2+epsilon). A complete actual angular-mode reduction and reproduced finite coefficient duality give C<<T^epsilon(Tsqrt(N)+N^(5/2)), still insufficient throughout fixed interior critical scales. The original r2 zeroth mode remains. Actual-coefficient positive Fourier certificates have lower bounds TN^2 when windows are bounded separately and N^(5/2) after exact center summation. These lower-bound upper certificates, not the signed moment. Three independent seams and a conductor review pass at final hashes; no moment, exponent or full-goal parent improves.",
+        "resulting_graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+        "patch_effect": "0_create_0_update_0_correct_0_reject_10_no_change",
+        "complete_moment_bound_improved": false,
+        "pointwise_exponent_change": false,
+        "goal_turn_classification": "no_mathematical_gain_completed_validated215_complete_wave_costs_and_scoped_certificate_limits"
+      },
+      "completed_at": "2026-09-27T17:47:07.281767+00:00",
+      "next_round": 216
+    },
+    {
+      "round_index": 216,
+      "campaign_id": "gc-actual-radical-high-values",
+      "type": "complete_actual_radical_high_values",
+      "status": "closed",
+      "objective": "Prove, quantitatively improve toward, or rigorously delimit the complete actual full-series twelfth high-value gateH216, preserving the full-quarter goal.",
+      "tasks": [
+        {
+          "id": "actual_radical_tail",
+          "role": "discovery",
+          "status": "completed"
+        },
+        {
+          "id": "anchored_divisor_high_values",
+          "role": "discovery",
+          "status": "completed"
+        },
+        {
+          "id": "blind_radical_cutoff",
+          "role": "blind_rederiver",
+          "status": "completed"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 95,
+        "numerical_experimental_maximum_percent": 5,
+        "planned_numerical_percent": 0,
+        "budget": "Three bounded reports; at most one primary import per discovery role; one same-round review cycle; zero experiments planned."
+      },
+      "starting_graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+      "exit_labels": [
+        "complete_actual_high_value_gain_requires_validation",
+        "complete_actual_high_value_gate_open"
+      ],
+      "started_at": "2026-09-27T17:52:21.664981+00:00",
+      "closing_assessment": {
+        "decision": "promote_complete_distinct_radical_reduction_only",
+        "terminal_label": "complete_actual_high_value_gate_open",
+        "graph_mutation": true,
+        "main_result": "Accept the completely paid reduction of the actual twelfth moment to twelve distinct large squarefree classes. The head costs T^(15/13+epsilon), and the collective repeated-class error costs T^(8beta-1/5+epsilon). The remaining signed distinct-class estimate at T^(29/25+epsilon) is unproved. Retain the anchored divisor conditional interface and scoped controls without promoting their missing arithmetic input.",
+        "resulting_graph_sha256": "f7c8b74e9acaa3bf5234c3678f20e2aaf8dbb9ba6179f73d839fa2f0537a14d7",
+        "patch_effect": "1_create_0_update_0_correct_0_reject_10_no_change",
+        "complete_moment_bound_improved": false,
+        "pointwise_exponent_change": false,
+        "goal_turn_classification": "progress_new_complete_arithmetic_reduction_validated_no_complete_moment_or_pointwise_gain"
+      },
+      "completed_at": "2026-09-27T18:20:42.896833+00:00",
+      "next_round": 217
+    },
+    {
+      "round_index": 217,
+      "campaign_id": "gc-full-goal-distinct-source-review",
+      "type": "mandatory_full_goal_distinct_source_review",
+      "status": "closed",
+      "objective": "Which complete actual-coefficient objective should follow214--216 after current primary-source audits and full-goal comparison of the distinct-radical reduction with every alternative frontier?",
+      "tasks": [
+        {
+          "id": "distinct_correlation_sources",
+          "role": "source_auditor",
+          "status": "completed"
+        },
+        {
+          "id": "full_frontier_sources",
+          "role": "source_auditor",
+          "status": "completed"
+        },
+        {
+          "id": "blind_moment_family",
+          "role": "blind_rederiver",
+          "status": "completed"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 95,
+        "numerical_experimental_maximum_percent": 5,
+        "planned_numerical_percent": 0,
+        "budget": "Three bounded reports; at most two full primary theorem audits per source task; one same-round seam cycle; zero experiments planned."
+      },
+      "starting_graph_sha256": "f7c8b74e9acaa3bf5234c3678f20e2aaf8dbb9ba6179f73d839fa2f0537a14d7",
+      "exit_labels": [
+        "costed_full_goal_strategy_adjustment",
+        "new_complete_candidate_requires_validation"
+      ],
+      "started_at": "2026-09-27T18:24:33.784749+00:00",
+      "closing_assessment": {
+        "decision": "accept_narrow_absolute_certificate_obstruction_and_adjust_full_goal_strategy",
+        "terminal_label": "costed_full_goal_strategy_adjustment",
+        "graph_mutation": true,
+        "main_result": "A fully reviewed actual distinct-class absolute Fourier certificate has lower bound T^(p/4-1/2), excluding that closure at the current twelfth target. Independent same-order absorption identifies a weaker sufficient unbounded-fixed-order family; four primary theorem audits supply no complete signed estimate. All existing nodes and powers remain unchanged.",
+        "resulting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+        "patch_effect": "1_create_0_update_0_correct_0_reject_10_no_change",
+        "complete_moment_bound_improved": false,
+        "pointwise_exponent_change": false,
+        "goal_turn_classification": "progress_validated_precise_certificate_obstruction_and_sufficient_family_strategy_no_complete_moment_gain"
+      },
+      "completed_at": "2026-09-27T18:48:56.155049+00:00",
+      "next_round": 218
+    },
+    {
+      "round_index": 218,
+      "campaign_id": "gc-complete-signed-radical-kernel",
+      "type": "complete_actual_signed_kernel_attack",
+      "status": "closed",
+      "objective": "Can joint divisor or Gaussian-integer lattice cancellation bound the COMPLETE actual signed I12 at29/25, with every complement and restored power paid?",
+      "tasks": [
+        {
+          "id": "joint_divisor_kernel",
+          "role": "discovery",
+          "status": "completed"
+        },
+        {
+          "id": "joint_lattice_kernel",
+          "role": "discovery",
+          "status": "completed"
+        },
+        {
+          "id": "blind_joint_radial",
+          "role": "blind_rederiver",
+          "status": "completed"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 95,
+        "numerical_experimental_maximum_percent": 5,
+        "planned_numerical_percent": 0,
+        "budget": "Three bounded reports; one complete mechanism per discovery task; at most one primary theorem audit per task if needed; one same-round seam cycle; zero experiments planned."
+      },
+      "starting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+      "exit_labels": [
+        "complete_signed_moment_gain_requires_validation",
+        "complete_joint_kernel_attempt_no_new_bound"
+      ],
+      "started_at": "2026-09-27T18:53:32.860077+00:00",
+      "closing_assessment": {
+        "decision": "retain_graph_record_complete_joint_kernel_diagnosis",
+        "terminal_label": "complete_joint_kernel_attempt_no_new_bound",
+        "graph_mutation": false,
+        "main_result": "Both complete joint transforms have rank14 rather than full rank25 and recover only the classical complete7/3 moment bound. A specified complete unblocked Gaussian-lattice certificate still costs T^7 even after each full radius integral and all internal signs/scales precede modulus. Independent radial and packet-coherence derivations and actual-binding reviews validate the diagnosis. No signed arithmetic gain is established.",
+        "resulting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+        "patch_effect": "0_create_0_update_0_correct_0_reject_11_no_change",
+        "complete_moment_bound_improved": false,
+        "pointwise_exponent_change": false,
+        "goal_turn_classification": "progress_completed_joint_transform_attack_with_new_after_radius_certificate_evidence_no_accepted_exponent_gain"
+      },
+      "completed_at": "2026-09-27T19:12:51.738620+00:00",
+      "next_round": 219
+    },
+    {
+      "round_index": 219,
+      "campaign_id": "gc-complete-anchored-divisor-energy",
+      "type": "complete_actual_anchored_energy_attack",
+      "status": "closed",
+      "objective": "Can the complete actual aligned anchored divisor energy satisfy inequality(12) at rho208/2625?",
+      "tasks": [
+        {
+          "id": "joint_cofactor_dispersion",
+          "role": "discovery",
+          "status": "completed"
+        },
+        {
+          "id": "actual_anchor_incidence",
+          "role": "barrier_no_go",
+          "status": "completed"
+        },
+        {
+          "id": "blind_anchor_classes",
+          "role": "blind_rederiver",
+          "status": "completed"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 95,
+        "numerical_experimental_maximum_percent": 5,
+        "planned_numerical_percent": 0,
+        "budget": "Three bounded seven-section reports, one mechanism per discovery task and one same-round review cycle; zero planned mathematical experiments."
+      },
+      "starting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+      "exit_labels": [
+        "complete_anchored_energy_gain_requires_validation",
+        "complete_anchored_energy_attempt_no_new_bound"
+      ],
+      "started_at": "2026-09-27T19:20:44.015191+00:00",
+      "closing_assessment": {
+        "decision": "retain_graph_record_partial_incidence_improvement_without_complete_gain",
+        "terminal_label": "complete_anchored_energy_attempt_no_new_bound",
+        "graph_mutation": false,
+        "main_result": "Rational-anchor packing pays the full inverse-frequency certificate with residual exponent169/3500, below the allowed208/2625. Exact character algebra gives no automatic cancellation inside common radical classes. The remaining complete oscillatory energy, including both signs and nonzero integer aliases in the reciprocal-anchor calculation, is not bounded at the required power. No complete moment or pointwise improvement follows.",
+        "resulting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+        "patch_effect": "0_create_0_update_0_correct_0_reject_11_no_change",
+        "complete_moment_bound_improved": false,
+        "pointwise_exponent_change": false,
+        "goal_turn_classification": "no_complete_estimate_progress_partial_incidence_cost_improved"
+      },
+      "completed_at": "2026-09-27T19:43:50.934542+00:00",
+      "next_round": 220
+    },
+    {
+      "round_index": 220,
+      "campaign_id": "gc-full-goal-arithmetic-source-review",
+      "type": "mandatory_full_goal_strategy_source_review",
+      "status": "closed",
+      "objective": "Does any current source, with a complete exact application and restored costs, advance a live full-proof frontier after217--219?",
+      "tasks": [
+        {
+          "id": "reciprocal_energy_sources",
+          "role": "source_auditor",
+          "status": "completed"
+        },
+        {
+          "id": "full_frontier_sources",
+          "role": "source_auditor",
+          "status": "completed"
+        },
+        {
+          "id": "blind_smooth_mask",
+          "role": "blind_rederiver",
+          "status": "completed"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 95,
+        "numerical_experimental_maximum_percent": 5,
+        "planned_numerical_percent": 0,
+        "budget": "Three bounded reports, at most two full theorem audits per source role, one same-round review cycle and zero planned mathematical experiments."
+      },
+      "starting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+      "exit_labels": [
+        "complete_source_gain_requires_validation",
+        "strategy_source_review_no_complete_gain"
+      ],
+      "started_at": "2026-09-27T19:48:51.465779+00:00",
+      "closing_assessment": {
+        "decision": "retain_graph_close_mandatory_source_review_and_change_application_strategy",
+        "terminal_label": "strategy_source_review_no_complete_gain",
+        "graph_mutation": false,
+        "main_result": "Four exact current-source transfers fail to improve a complete live frontier after full norms and restoration. Exact smooth rounding and interval masking are valid under the stated operator hypothesis; enlarged complex and real row certificates fail scoped controls. The actual signed target remains open. Checkpoint220 corrects two UNBAL summary transcriptions forward without altering accepted mathematics.",
+        "resulting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+        "patch_effect": "0_create_0_update_0_correct_0_reject_12_no_change",
+        "complete_moment_bound_improved": false,
+        "pointwise_exponent_change": false,
+        "goal_turn_classification": "progress_completed_reviewed_strategy_evidence_changes_next_action_no_complete_estimate_gain"
+      },
+      "completed_at": "2026-09-27T20:12:38.384973+00:00",
+      "next_round": 221
+    },
+    {
+      "round_index": 221,
+      "campaign_id": "gc-actual-vector-gram-correlations",
+      "type": "complete_actual_vector_correlation_attack",
+      "status": "closed",
+      "objective": "Can an actual fixed-vector Gram-chain or joint arithmetic shifted-correlation estimate prove the complete signed twelfth target with all costs restored?",
+      "tasks": [
+        {
+          "id": "actual_anchored_gram_attack",
+          "role": "discovery",
+          "status": "completed"
+        },
+        {
+          "id": "actual_shifted_correlations",
+          "role": "discovery",
+          "status": "completed"
+        },
+        {
+          "id": "blind_anchored_gram",
+          "role": "blind_rederiver",
+          "status": "completed"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 95,
+        "numerical_experimental_maximum_percent": 5,
+        "planned_numerical_percent": 0,
+        "budget": "Two bounded one-mechanism analytic reports, one isolated finite report, one same-round review/repair cycle; zero planned mathematical experiments."
+      },
+      "starting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+      "exit_labels": [
+        "complete_actual_correlation_gain_requires_validation",
+        "complete_actual_correlation_attempt_no_new_bound"
+      ],
+      "started_at": "2026-09-27T20:19:20.760868+00:00",
+      "closing_assessment": {
+        "decision": "retain_graph_archive_failed_closures_and_change_next_frontier",
+        "terminal_label": "complete_actual_correlation_attempt_no_new_bound",
+        "graph_mutation": false,
+        "main_result": "The fixed-offset sixth-chain average loses endpoint phases and its complete certificate has a T^(10beta) floor on actual masked magnitudes, certified by a different real rephasing. Exact pair-divisor completion has a small zero mode but its entire nonzero-mode package retains the full correlation capacity; the phase-erased actual Fejer certificate costs T^3 globally. Both attacks restore every block, level and tail and leave the accepted complete10beta bound unchanged. Finite identities and scoped certificate bounds are reviewed evidence, not a new complete estimate or an actual signed lower bound.",
+        "resulting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+        "patch_effect": "0_create_0_update_0_correct_0_reject_12_no_change",
+        "complete_moment_bound_improved": false,
+        "pointwise_exponent_change": false,
+        "goal_turn_classification": "stalled_no_complete_estimate_or_exponent_gain_scoped_failures_archived"
+      },
+      "completed_at": "2026-09-27T20:46:48.960294+00:00",
+      "next_round": 222
+    },
+    {
+      "round_index": 222,
+      "campaign_id": "m9-m2-complete-unbalanced-vector",
+      "type": "complete_unbalanced_actual_vector_attack",
+      "status": "closed",
+      "objective": "Can a genuinely joint actual cross-modulus vector or product-phase correlation prove the complete M2 UNBAL three-quarter estimate after every cost?",
+      "tasks": [
+        {
+          "id": "joint_cross_modulus_attack",
+          "role": "discovery",
+          "status": "completed"
+        },
+        {
+          "id": "actual_product_phase_attack",
+          "role": "discovery",
+          "status": "completed"
+        },
+        {
+          "id": "blind_cross_modulus",
+          "role": "blind_rederiver",
+          "status": "completed"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 95,
+        "numerical_experimental_maximum_percent": 5,
+        "planned_numerical_percent": 0,
+        "budget": "Two bounded one-mechanism complete-target attacks, one isolated finite report, one same-round review/repair cycle; zero planned experiments."
+      },
+      "starting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+      "exit_labels": [
+        "complete_unbal_vector_gain_requires_validation",
+        "complete_unbal_vector_attempt_no_new_bound"
+      ],
+      "started_at": "2026-09-27T20:53:52.683027+00:00",
+      "closing_assessment": {
+        "decision": "retain_graph_archive_scoped_failed_certificates_and_require_full_strategy_review",
+        "terminal_label": "complete_unbal_vector_attempt_no_new_bound",
+        "graph_mutation": false,
+        "main_result": "The literal weighted cross-modulus rows retain the original reciprocal row total in their common-period mean even after zero-column deletion. The completely paid joint short-window Gram closure gives only R^(3/2)X^epsilon. The original product-phase rectangle closure erases the fixed character signs and has an actual buffered certificate floor X^(11/32) on a legal dyadic family; its full upper price improves neither the elementary smooth bound nor the accepted scoped flat envelope. All masks, gcd rows, frequencies, real-centre factors and owner/endpoint limits are retained. These are reviewed finite and failed-certificate results, not actual signed lower bounds or a complete UNBAL estimate.",
+        "resulting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+        "patch_effect": "0_create_0_update_0_correct_0_reject_12_no_change",
+        "complete_moment_bound_improved": false,
+        "complete_unbal_bound_improved": false,
+        "pointwise_exponent_change": false,
+        "goal_turn_classification": "stalled_no_complete_estimate_or_exponent_gain_scoped_failures_archived"
+      },
+      "completed_at": "2026-09-27T21:19:27.052008+00:00",
+      "next_round": 223
+    },
+    {
+      "round_index": 223,
+      "campaign_id": "gc-full-goal-signed-source-review",
+      "type": "mandatory_full_goal_signed_source_review",
+      "status": "closed",
+      "objective": "Does any exactly applicable current source or changed signed mechanism advance a complete full-proof frontier after220--222, and which complete quantified target should be attempted next?",
+      "tasks": [
+        {
+          "id": "multiplicative_wave_sources",
+          "role": "source_auditor",
+          "status": "completed"
+        },
+        {
+          "id": "geometric_complete_frontiers",
+          "role": "source_auditor",
+          "status": "completed"
+        },
+        {
+          "id": "blind_oscillatory_transfer",
+          "role": "blind_rederiver",
+          "status": "completed"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 95,
+        "numerical_experimental_maximum_percent": 5,
+        "planned_numerical_percent": 0,
+        "budget": "Three bounded reports, at most two full audits per source role, one same-round review/repair cycle, zero planned experiments."
+      },
+      "starting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+      "exit_labels": [
+        "complete_signed_source_gain_requires_validation",
+        "strategy_signed_source_review_no_complete_gain"
+      ],
+      "started_at": "2026-09-27T21:25:18.696683+00:00",
+      "closing_assessment": {
+        "decision": "retain_graph_close_mandatory_source_review_select_complete_total_m1_gar",
+        "terminal_label": "strategy_signed_source_review_no_complete_gain",
+        "graph_mutation": false,
+        "main_result": "The two multiplicative source interfaces do not estimate the complete actual nonlinear masked wave: the raw coefficient fails the fixed mean-square class, legal damping restores no fixed-power gain, and all exceptional frequencies remain. The two geometric applications have exact product kernels but lose after their full-frequency norms and eligible length ranges are paid. The independently derived Fourier control distinguishes a continuous absolute certificate from signed periodization and optimal discrete norms. Every complete M1/M2/GAR and moment frontier remains open. The mandatory strategy review selects complete total-M1 GAR for the next bounded objective, without asserting a new mechanism or source theorem proving it.",
+        "resulting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+        "patch_effect": "0_create_0_update_0_correct_0_reject_13_no_change",
+        "complete_moment_bound_improved": false,
+        "complete_frontier_bound_improved": false,
+        "pointwise_exponent_change": false,
+        "goal_turn_classification": "progress_completed_reviewed_strategy_round_changes_next_action_no_complete_analytic_gain"
+      },
+      "completed_at": "2026-09-27T21:55:44.996910+00:00",
+      "next_round": 224
+    },
+    {
+      "round_index": 224,
+      "campaign_id": "m9-m1-complete-gar-prime-amplification",
+      "type": "complete_gar_split_prime_amplification",
+      "status": "closed",
+      "objective": "Can split-prime amplification using the complete actual divisor-allocation relation and its profile commutators prove or quantitatively improve the complete real total-M1 GAR estimate?",
+      "tasks": [
+        {
+          "id": "complete_signed_prime_attack",
+          "role": "discovery",
+          "status": "completed"
+        },
+        {
+          "id": "actual_prime_profile_control",
+          "role": "seam_reviewer",
+          "status": "completed"
+        },
+        {
+          "id": "blind_prime_allocation",
+          "role": "blind_rederiver",
+          "status": "completed"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 95,
+        "numerical_experimental_maximum_percent": 5,
+        "planned_numerical_percent": 0,
+        "budget": "Three bounded seven-section reports, one amplifier family, one same-round review/repair cycle; zero planned experiments. At most one narrow primary import audit if essential."
+      },
+      "starting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+      "exit_labels": [
+        "complete_gar_gain_requires_validation",
+        "complete_gar_amplification_no_new_bound"
+      ],
+      "started_at": "2026-09-27T22:04:16.432476+00:00",
+      "closing_assessment": {
+        "decision": "retain_graph_close_bounded_split_prime_attempt",
+        "terminal_label": "complete_gar_amplification_no_new_bound",
+        "graph_mutation": false,
+        "main_result": "Every completed prime row equals twice the original actual wave. Completed-row Cauchy returns the inherited GAR X^(1/12+epsilon) bound. The full positive allocation and incidence certificates cost X^(1/8), hence physical X^(3/8), worse than inherited X^(1/3). A separately reviewed actual grouped-coefficient semiprime control also shows a loss in its stated prime range, but none of these is a signed lower bound. No complete bound improves.",
+        "resulting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+        "patch_effect": "0_create_0_update_0_correct_0_reject_12_no_change",
+        "complete_moment_bound_improved": false,
+        "complete_frontier_bound_improved": false,
+        "pointwise_exponent_change": false,
+        "goal_turn_classification": "no_progress_on_complete_bounds_bounded_mechanism_closed_with_verified_controls"
+      },
+      "completed_at": "2026-09-27T22:21:57.916980+00:00",
+      "next_round": 225
+    },
+    {
+      "round_index": 225,
+      "campaign_id": "gc-complete-logarithmic-convolution",
+      "type": "complete_circle_logarithmic_convolution",
+      "status": "closed",
+      "objective": "Can the exact logarithmic convolution and finite prime-factor decomposition yield a complete uniform bound for the actual circle wave better than the inherited beta, ultimately at T^epsilon?",
+      "tasks": [
+        {
+          "id": "complete_nonlinear_prime_attack",
+          "role": "discovery",
+          "status": "completed"
+        },
+        {
+          "id": "complete_factor_norm_audit",
+          "role": "seam_reviewer",
+          "status": "completed"
+        },
+        {
+          "id": "blind_finite_convolution",
+          "role": "blind_rederiver",
+          "status": "completed"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 95,
+        "numerical_experimental_maximum_percent": 5,
+        "planned_numerical_percent": 0,
+        "budget": "Three bounded seven-section reports; one logarithmic/Vaughan decomposition family; one same-round review/repair cycle; zero experiments. At most one coordinated narrow primary theorem audit if essential."
+      },
+      "starting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+      "exit_labels": [
+        "complete_circle_wave_gain_requires_validation",
+        "complete_logarithmic_convolution_no_new_bound"
+      ],
+      "started_at": "2026-09-27T22:28:30.177940+00:00",
+      "closing_assessment": {
+        "decision": "close_bounded_attempt_without_complete_gain",
+        "terminal_label": "complete_logarithmic_convolution_no_new_bound",
+        "graph_mutation": false,
+        "main_result": "Both actual logarithmic/Vaughan branches and their full inverse contractions are valid, but no complete signed bound below inherited beta is obtained. The scoped generic factor certificate can reach47/378 locally at N=T^(2/3); even freely granting optimal factors at every scale leaves worst exponent81/614 at N=T^(226/307), above beta. All actual cutoff terms, norms, singleton, infinite tail and sharp reconstruction are paid. Upper-certificate capacity is not an actual arithmetic lower bound. No complete real, moment or pointwise gain.",
+        "resulting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+        "patch_effect": "0_create_0_update_0_correct_0_reject_12_no_change",
+        "complete_moment_bound_improved": false,
+        "complete_frontier_bound_improved": false,
+        "pointwise_exponent_change": false,
+        "goal_turn_classification": "no_progress_on_complete_bounds_bounded_mechanism_closed_with_verified_controls"
+      },
+      "completed_at": "2026-09-27T22:50:11.434686+00:00",
+      "next_round": 226
+    },
+    {
+      "round_index": 226,
+      "campaign_id": "gc-full-goal-spectral-source-review",
+      "type": "mandatory_full_goal_spectral_source_review",
+      "status": "closed",
+      "objective": "Can a current exactly applicable spectral, shifted-convolution or theta/wave source advance a complete full-proof frontier after223--225, and what complete next estimate is justified?",
+      "tasks": [
+        {
+          "id": "actual_shifted_spectral_sources",
+          "role": "source_auditor",
+          "status": "completed"
+        },
+        {
+          "id": "theta_wave_full_frontiers",
+          "role": "source_auditor",
+          "status": "completed"
+        },
+        {
+          "id": "blind_complex_subordination",
+          "role": "blind_rederiver",
+          "status": "completed"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 95,
+        "numerical_experimental_maximum_percent": 5,
+        "planned_numerical_percent": 0,
+        "budget": "Three bounded reports, at most two exact theorem audits per source role, one review/repair cycle, zero experiments."
+      },
+      "starting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+      "exit_labels": [
+        "complete_spectral_source_gain_requires_validation",
+        "strategy_spectral_source_review_no_complete_gain"
+      ],
+      "started_at": "2026-09-27T22:55:43.153082+00:00",
+      "closing_assessment": {
+        "decision": "close_mandatory_review_select_complete_signed_spectral_target",
+        "terminal_label": "strategy_spectral_source_review_no_complete_gain",
+        "graph_mutation": false,
+        "main_result": "Four bounded theorem/source audits and the isolated subordination control supply no complete bound or exponent gain. The actual-r2 July2026 source motivates a direct joint spectral test, but absolute Abel transfer loses growing phase variation. The fully restored one-sided signed Fejer remainder target retains every shift, density, diagonal, endpoint and tail and is sufficient for quarter; it remains unproved.",
+        "resulting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+        "patch_effect": "0_create_0_update_0_correct_0_reject_12_no_change",
+        "complete_moment_bound_improved": false,
+        "complete_frontier_bound_improved": false,
+        "pointwise_exponent_change": false,
+        "goal_turn_classification": "progress_strategy_and_source_evidence_changes_next_action_no_complete_analytic_gain"
+      },
+      "completed_at": "2026-09-27T23:21:14.009156+00:00",
+      "next_round": 227
+    },
+    {
+      "round_index": 227,
+      "campaign_id": "gc-complete-joint-spectral-remainder",
+      "type": "complete_signed_spectral_remainder_attack",
+      "status": "closed",
+      "objective": "Can the COMPLETE actual signed all-shift Fejer remainder gain through a joint spectral estimate with every norm and reconstruction cost paid?",
+      "tasks": [
+        {
+          "id": "joint_shift_spectral_attack",
+          "role": "discovery",
+          "status": "completed"
+        },
+        {
+          "id": "heegner_joint_norm_audit",
+          "role": "seam_reviewer",
+          "status": "completed"
+        },
+        {
+          "id": "blind_mellin_phase",
+          "role": "blind_rederiver",
+          "status": "completed"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 95,
+        "numerical_experimental_maximum_percent": 5,
+        "planned_numerical_percent": 0,
+        "budget": "Three bounded reports; one analytic attack/assessment cycle and one review/repair cycle; at most one additional indispensable source theorem per nonblind role; zero experiments."
+      },
+      "starting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+      "exit_labels": [
+        "complete_joint_spectral_gain_requires_validation",
+        "complete_joint_spectral_remainder_no_new_bound"
+      ],
+      "started_at": "2026-09-27T23:26:07.414767+00:00",
+      "closing_assessment": {
+        "decision": "close_bounded_joint_spectral_attempt_retain_full_signed_target",
+        "terminal_label": "complete_joint_spectral_remainder_no_new_bound",
+        "graph_mutation": false,
+        "main_result": "The complete actual remainder has exact ordered HKLDW and whole-functional level1/2 Heegner formulations with paid scalar transforms and tails. The stated point fourth moment and individual Hecke norm give raw A^2 T N^2; even a hypothetical free fixed-sieve-size twisted norm leaves A^2 T N^(3/2). The elementary A^2 N^2 cap is still stronger and gives no new complete exponent. The actual signed spectral inequality at A^2 N^(3/2) remains unproved.",
+        "resulting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+        "patch_effect": "0_create_0_update_0_correct_0_reject_12_no_change",
+        "complete_moment_bound_improved": false,
+        "complete_frontier_bound_improved": false,
+        "pointwise_exponent_change": false,
+        "goal_turn_classification": "progress_reviewed_complete_spectral_interface_changes_next_action_no_complete_analytic_gain"
+      },
+      "completed_at": "2026-09-27T23:47:08.825001+00:00",
+      "next_round": 228
+    },
+    {
+      "round_index": 228,
+      "campaign_id": "gc-signed-heegner-phase",
+      "type": "complete_signed_heegner_phase_attack",
+      "status": "closed",
+      "objective": "Can the COMPLETE actual signed Heegner pairing gain by its resonant Hecke functional equation and a fully paid continuous spectrum?",
+      "tasks": [
+        {
+          "id": "signed_hecke_functional_attack",
+          "role": "discovery",
+          "status": "completed"
+        },
+        {
+          "id": "complete_eisenstein_pairing",
+          "role": "discovery",
+          "status": "completed"
+        },
+        {
+          "id": "blind_gamma_transition",
+          "role": "blind_rederiver",
+          "status": "completed"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 95,
+        "numerical_experimental_maximum_percent": 5,
+        "planned_numerical_percent": 0,
+        "budget": "Three bounded reports, one attack/assessment and one review/repair cycle; at most one additional indispensable primary work per nonblind role; zero experiments."
+      },
+      "starting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+      "exit_labels": [
+        "complete_signed_heegner_gain_requires_validation",
+        "complete_signed_heegner_no_new_bound"
+      ],
+      "started_at": "2026-09-27T23:52:21.022235+00:00",
+      "closing_assessment": {
+        "decision": "close_bounded_signed_phase_attempt_retain_complete_continuous_evidence_and_full_cusp_owner",
+        "terminal_label": "complete_signed_heegner_no_new_bound",
+        "graph_mutation": false,
+        "main_result": "The complete continuous component is reviewed at raw A_J^2 N^(3/2)T^epsilon using exact CM values and a proved degree-two mean square. The actual cuspidal functional equation has dual scale qt/(pi^2 L) and surviving phase (qdR^2/n)^(it), but its paid positive certificate A^2 T^(3/2)N^(5/4) does not improve the whole arithmetic cap. The remaining complete signed cusp target is unproved; no complete-wave or exponent gain.",
+        "resulting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+        "patch_effect": "0_create_0_update_0_correct_0_reject_12_no_change",
+        "complete_moment_bound_improved": false,
+        "complete_frontier_bound_improved": false,
+        "pointwise_exponent_change": false,
+        "complete_continuous_component_bound_reviewed": true,
+        "goal_turn_classification": "progress_reviewed_complete_continuous_component_and_cusp_reduction_no_complete_wave_gain"
+      },
+      "completed_at": "2026-09-28T00:16:34.285704+00:00",
+      "next_round": 229
+    },
+    {
+      "round_index": 229,
+      "campaign_id": "gc-full-goal-cuspidal-source-review",
+      "type": "mandatory_full_goal_cuspidal_source_review",
+      "status": "closed",
+      "objective": "Which current exactly applicable signed cuspidal or alternative full-frontier method can advance the FULL quarter goal after226--228, and what complete next inequality is justified?",
+      "tasks": [
+        {
+          "id": "signed_cm_spectral_sources",
+          "role": "source_auditor",
+          "status": "completed"
+        },
+        {
+          "id": "complete_frontier_source_comparison",
+          "role": "source_auditor",
+          "status": "completed"
+        },
+        {
+          "id": "blind_radial_abel_kernel",
+          "role": "blind_rederiver",
+          "status": "completed"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 95,
+        "numerical_experimental_maximum_percent": 5,
+        "planned_numerical_percent": 0,
+        "budget": "Three bounded reports; at most two exact theorem audits per source role, one review/repair cycle, zero experiments."
+      },
+      "starting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+      "exit_labels": [
+        "complete_cuspidal_source_gain_requires_validation",
+        "strategy_cuspidal_source_review_no_complete_gain"
+      ],
+      "started_at": "2026-09-28T23:48:28.218930+00:00",
+      "closing_assessment": {
+        "decision": "close_mandatory_review_park_failed_imports_preserve_complete_cusp_target",
+        "terminal_label": "strategy_cuspidal_source_review_no_complete_gain",
+        "graph_mutation": false,
+        "main_result": "Mandatory source and strategy review found no new complete bound or exponent gain. AH's CM majorant cannot replace the exact weight inside a signed sum; KL's lawful trace still needs complete CM/Fourier/test reconstruction and a quantitative signed estimate. Xiao's fourth-moment range misses substantial shells, while the legal Kim-Ko application restores only the existing triangle scale. The isolated full radial Abel mass and compact-spectral obstruction are proved and reviewed. The inherited entire continuous component stays paid as reviewed evidence; the entire cusp target remains open.",
+        "resulting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+        "patch_effect": "0_create_0_update_0_correct_0_reject_12_no_change",
+        "complete_moment_bound_improved": false,
+        "complete_frontier_bound_improved": false,
+        "pointwise_exponent_change": false,
+        "inherited_continuous_component_bound_retained": true,
+        "goal_turn_classification": "progress_strategy_source_and_radial_control_evidence_no_complete_analytic_gain"
+      },
+      "completed_at": "2026-09-29T00:22:39.680342+00:00",
+      "next_round": 230
+    },
+    {
+      "round_index": 230,
+      "campaign_id": "gc-research-status-strategy-reset",
+      "type": "user_requested_full_goal_status_strategy_review",
+      "status": "closed",
+      "objective": "What has actually improved through229, has current primary literature changed the attainable complete bounds, and which revised full-goal strategy has a concrete quantitative admission gate?",
+      "tasks": [
+        {
+          "id": "progress_frontier_audit",
+          "role": "seam_reviewer",
+          "status": "completed"
+        },
+        {
+          "id": "latest_literature_audit",
+          "role": "source_auditor",
+          "status": "completed"
+        },
+        {
+          "id": "blind_moment_restoration",
+          "role": "blind_rederiver",
+          "status": "completed"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 95,
+        "numerical_experimental_maximum_percent": 5,
+        "planned_numerical_percent": 0,
+        "budget": "Three bounded reports, at most two exact new source applications, one reciprocal review/repair cycle; one Wolfram symbolic check independently reproduced locally."
+      },
+      "starting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+      "exit_labels": [
+        "review_complete_gain_requires_further_validation",
+        "review_strategy_reset_no_new_complete_bound"
+      ],
+      "started_at": "2026-10-11T02:09:43.812207+00:00",
+      "closing_assessment": {
+        "decision": "close_user_requested_review_revise_admission_strategy_no_automatic_successor",
+        "terminal_label": "review_strategy_reset_no_new_complete_bound",
+        "graph_mutation": false,
+        "main_result": "Status review confirms last complete accepted gain204 and25 subsequent no-gain rounds. Kim–Ko v3 changes weight scope but not the tested complete bound; Yang family mismatch persists. Correct all-order216 attribution forward, retain reviewed228 component, and require new complete quantitative input before another analytic round.",
+        "resulting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+        "patch_effect": "0_create_0_update_0_correct_0_reject_12_no_change",
+        "complete_moment_bound_improved": false,
+        "complete_frontier_bound_improved": false,
+        "pointwise_exponent_change": false,
+        "source_revision_found": true,
+        "authority_attribution_corrected_forward": true,
+        "goal_turn_classification": "completed_requested_status_review_with_strategy_correction_no_complete_analytic_gain"
+      },
+      "completed_at": "2026-10-11T02:22:08.225186+00:00",
+      "next_round": 231
     }
   ]
 }

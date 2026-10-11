@@ -1,0 +1,30 @@
+{
+  "round_index": 215,
+  "campaign_id": "gc-complete-localized-wave-moment",
+  "starting_graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+  "proof_obligations": {
+    "create": [],
+    "update": [],
+    "correct_rejected": [],
+    "reject": [],
+    "no_change": [
+      "GC-target",
+      "Conditional-bridge",
+      "M9",
+      "M9-M1",
+      "M9-M2",
+      "M9-endpoint-uniformity",
+      "GC-external-Li-Yang-theta-star",
+      "GC-weighted-square-root-exact-resonance-mass",
+      "GC-physical-twelfth-moment-absolute-majorant-obstruction",
+      "GC-complete-square-root-large-values-moment-bound"
+    ]
+  },
+  "round_assessment": {
+    "terminal_label": "complete_localized_moment_still_open",
+    "reason": "The legal amplitude-dependent weighted transfer requires source scale S comparable to min(N,r) and yields a complete threshold-preserving certificate whose target estimate is unproved; its fully paid crude cost is TN^(2+epsilon). A complete actual angular-mode reduction and reproduced finite coefficient duality give C<<T^epsilon(Tsqrt(N)+N^(5/2)), still insufficient throughout fixed interior critical scales. The original r2 zeroth mode remains. Actual-coefficient positive Fourier certificates have lower bounds TN^2 when windows are bounded separately and N^(5/2) after exact center summation. These lower-bound upper certificates, not the signed moment. Three independent seams and a conductor review pass at final hashes; no moment, exponent or full-goal parent improves."
+  },
+  "reversibility": {
+    "rule": "Identity in-memory application, inverse and replay; graph/draft bytes never rewritten."
+  }
+}

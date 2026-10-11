@@ -1,0 +1,30 @@
+{
+  "round_index": 212,
+  "campaign_id": "gc-complete-four-point-correlation",
+  "starting_graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+  "proof_obligations": {
+    "create": [],
+    "update": [],
+    "correct_rejected": [],
+    "reject": [],
+    "no_change": [
+      "GC-target",
+      "Conditional-bridge",
+      "M9",
+      "M9-M1",
+      "M9-M2",
+      "M9-endpoint-uniformity",
+      "GC-external-Li-Yang-theta-star",
+      "GC-weighted-square-root-exact-resonance-mass",
+      "GC-physical-twelfth-moment-absolute-majorant-obstruction",
+      "GC-complete-square-root-large-values-moment-bound"
+    ]
+  },
+  "round_assessment": {
+    "terminal_label": "essential_local_transfer_actual_input_open",
+    "reason": "Actual h=k and small-product sectors are completely target-safe. Distinct-shift local norm factors define a nonnegative bounded candidate rho_loc, while repeated-shift factors have a divergent constant-product control; no true integer mean is asserted. Local error ell^theta with theta<=45/83 would pay the complete target, with a sharp independently derived general criterion; only the trivial H(1) is established. The audited fixed-shift Matthiesen import fails, and the valid lift has insufficient rate and norm. Actual residual mass proves a scoped absolute radius-Gram certificate obstruction above alpha=204/325. A separate actual small-phase lower control precludes any uniform fixed power saving for that paid sector near the upper band. Complete A4, the tenth gate, all direct parents and quarter remain open; no accepted exponent improves."
+  },
+  "reversibility": {
+    "rule": "Identity in-memory application, inverse and replay; graph/draft bytes never rewritten."
+  }
+}

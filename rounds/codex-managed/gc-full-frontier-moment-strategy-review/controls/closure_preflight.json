@@ -1,0 +1,43 @@
+{
+  "round_index": 205,
+  "status": "green_identity_patch_preflight",
+  "graph_schema": "pass",
+  "campaign_schema": "pass",
+  "identity_patch": "pass",
+  "all_399_nodes_and_other_graph_data_unchanged": true,
+  "reverse_identity_replay": "pass",
+  "exact_review_hashes": {
+    "rounds/codex-managed/gc-full-frontier-moment-strategy-review/controls/conductor_middle_band_strategy.md": "f297dadc44d0113097d6549650228992b6e969740b75e25451eab3a514cebffb",
+    "rounds/codex-managed/gc-full-frontier-moment-strategy-review/reports/internal_arithmetic_routes.md": "e128c8d9121a4553681943e7716130c75cfe9e25383ef01cad8bc60f677983ef",
+    "rounds/codex-managed/gc-full-frontier-moment-strategy-review/controls/conductor_arithmetic_source_gate.md": "b642700d0f1f9348c31534a8c8c2681c416a6207f5dc303c5d280085b464e17f"
+  },
+  "three_report_hashes": {
+    "rounds/codex-managed/gc-full-frontier-moment-strategy-review/reports/current_circle_methods.md": "7041034efa3bf6993ac16e40c826a4c2b51ab09731ae6e346630c280aed879bf",
+    "rounds/codex-managed/gc-full-frontier-moment-strategy-review/reports/internal_arithmetic_routes.md": "e128c8d9121a4553681943e7716130c75cfe9e25383ef01cad8bc60f677983ef",
+    "rounds/codex-managed/gc-full-frontier-moment-strategy-review/reports/blind_gain_frontier.md": "6956e3e3bafadd9b915de63882a01ee2db88afb0a918adbf5c25b450c770b838"
+  },
+  "frozen_scope_and_briefs_unchanged": true,
+  "closed_round200_through204_archives_unchanged": true,
+  "protected_archive_entries_checked": 108,
+  "checkpoint_sha256": "03e05b85fcb0fc72fe0e65869f13e33763fea3dc503e9a85d6d1e883eebdcfc4",
+  "report_hygiene": [
+    "rounds/codex-managed/gc-full-frontier-moment-strategy-review/synthesis.md",
+    "rounds/codex-managed/gc-full-frontier-moment-strategy-review/briefs/blind_gain_frontier.md",
+    "rounds/codex-managed/gc-full-frontier-moment-strategy-review/briefs/blind_gain_frontier_statement.md",
+    "rounds/codex-managed/gc-full-frontier-moment-strategy-review/briefs/current_circle_methods.md",
+    "rounds/codex-managed/gc-full-frontier-moment-strategy-review/briefs/internal_arithmetic_routes.md",
+    "rounds/codex-managed/gc-full-frontier-moment-strategy-review/controls/conductor_arithmetic_source_gate.md",
+    "rounds/codex-managed/gc-full-frontier-moment-strategy-review/controls/conductor_middle_band_strategy.md",
+    "rounds/codex-managed/gc-full-frontier-moment-strategy-review/reports/blind_gain_frontier.md",
+    "rounds/codex-managed/gc-full-frontier-moment-strategy-review/reports/current_circle_methods.md",
+    "rounds/codex-managed/gc-full-frontier-moment-strategy-review/reports/internal_arithmetic_routes.md",
+    "rounds/codex-managed/gc-full-frontier-moment-strategy-review/reviews/conductor_round205_reconciliation.md",
+    "rounds/codex-managed/gc-full-frontier-moment-strategy-review/reviews/independent_arithmetic_source_review.md",
+    "rounds/codex-managed/gc-full-frontier-moment-strategy-review/reviews/independent_middle_band_review.md",
+    "rounds/codex-managed/gc-full-frontier-moment-strategy-review/reviews/independent_modular_cost_review.md",
+    "strategy/gauss_circle_strategy_checkpoint_round205_2026-09-26.md"
+  ],
+  "mathematical_numerical_experiments": 0,
+  "analytic_target": "open",
+  "exponent_change": false
+}

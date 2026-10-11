@@ -1,0 +1,14 @@
+{
+  "code": "h=(1-1/p)^2 (1+2/p); k=1/(1-p^(-2))+2 (p+1)/(p+2) p^(-2)/(1-p^(-2))^2; {Factor[h k-1], FullSimplify[Re[Exp[-3 Pi I/4] Sqrt[Pi] (z-2 Pi I a)^(-1/2)] /. z->0, Assumptions->a>0], FullSimplify[(1-3/p^2+2/p^3) ((2 b+1) p+2 b+2)/(p+2) - (2 b+1) (1+(2 b+2)/((2 b+1) p)) (1-1/p)^2], FullSimplify[10 ((50 Sqrt[1717]-297)/13762)-29/25]}",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Out[1]= {0, 0, 0, (2*(-118337 + 3125*Sqrt[1717]))/172025}"
+      }
+    ],
+    "isError": false
+  },
+  "status": "diagnostic_only",
+  "purpose": "Exact Euler-factor and Abel phase checks; no asymptotic certification."
+}

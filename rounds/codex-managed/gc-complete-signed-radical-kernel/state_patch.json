@@ -1,0 +1,31 @@
+{
+  "round_index": 218,
+  "campaign_id": "gc-complete-signed-radical-kernel",
+  "starting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+  "proof_obligations": {
+    "create": [],
+    "update": [],
+    "correct_rejected": [],
+    "reject": [],
+    "no_change": [
+      "GC-target",
+      "Conditional-bridge",
+      "M9",
+      "M9-M1",
+      "M9-M2",
+      "M9-endpoint-uniformity",
+      "GC-external-Li-Yang-theta-star",
+      "GC-weighted-square-root-exact-resonance-mass",
+      "GC-complete-square-root-large-values-moment-bound",
+      "GC-complete-distinct-radical-twelfth-reduction",
+      "GC-distinct-radical-absolute-certificate-obstruction"
+    ]
+  },
+  "round_assessment": {
+    "terminal_label": "complete_joint_kernel_attempt_no_new_bound",
+    "reason": "Both complete joint transforms have rank14 rather than full rank25 and recover only the classical complete7/3 moment bound. A specified complete unblocked Gaussian-lattice certificate still costs T^7 even after each full radius integral and all internal signs/scales precede modulus. Independent radial and packet-coherence derivations and actual-binding reviews validate the diagnosis. No signed arithmetic gain is established."
+  },
+  "reversibility": {
+    "rule": "Identity in-memory application, inverse and replay; graph and proof-draft bytes are never rewritten."
+  }
+}

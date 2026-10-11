@@ -15548,3 +15548,117 @@ and does not disprove a non-cellular coefficient-sensitive estimate. The
 complete P2 complement, P1, original \(t=1\), both M1 parents, all M2
 parents, endpoint uniformity, M9, both bridges, the quarter theorem, and all
 exponent improvements remain open, conditional, or unchanged.
+
+## Round 201 accepted weighted exact-resonance kernel
+
+The accepted node `GC-weighted-square-root-exact-resonance-mass` proves
+that, for b_n>=0, A_d=sum_s b_(d s^2) over squarefree d and S=sum_d A_d^2,
+the full ordered k-root exact-resonance mass is at most 2^k B_k S^(k/2),
+where B_k counts label partitions without singleton blocks. All signs,
+nonpairings, unequal supports and infinite limits are included. For
+b_n<=C tau(n)n^(-3/4), S<=C^2 zeta(3/2)^10. The mixed bound also gives
+uniform exact-resonance tails under a common envelope.
+
+For real cosine coefficients, the total even exact coefficient is a
+nonnegative torus constant coefficient. The actual smoothed circle
+coefficients have C=4, so their exact twelfth-moment contribution is
+0<=D_12(T)<<T, uniformly in the smoothing scale. Individual exact terms
+need not be positive. The kernel is proved in
+`proofs/kernels/gc_weighted_square_root_exact_resonance_mass.md` and was
+independently reviewed with statement-only rederivation and seam checks.
+
+This controls only zero radical difference. The complete signed sum
+over nonzero differences, with displaced Fourier weight retained,
+remains unproved. No full twelfth-moment estimate, M1/M2 parent, endpoint
+obligation, quarter theorem, or pointwise exponent is discharged.
+
+## Round 202 accepted physical absolute-majorant obstruction
+
+The accepted node `GC-physical-twelfth-moment-absolute-majorant-obstruction`
+proves that actual circle coefficients on a fixed positive band n~T
+have a balanced, nonzero near-resonance subsum of real Fourier-weighted
+size at least cT^(5/2), after every exact resonance has been deleted.
+The physical coefficient mass T^(1/4), six-root bin count T^(3/2),
+weighted Cauchy bound and accepted O(1) exact mass give the proof.
+Consequently a termwise absolute all-sign Fourier majorant cannot
+have scale T^(1+2eta+epsilon) for every epsilon>0 when eta<3/4.
+
+This is only a no-go for that majorant. The complementary Fourier
+terms remain signed, so the lower bound does not apply to the complete
+displaced moment. The actual twelfth-moment target, every M1/M2 parent,
+the quarter theorem, and all pointwise exponents remain unchanged.
+The full proof and scope controls are in
+`proofs/kernels/gc_physical_twelfth_moment_absolute_majorant_obstruction.md`.
+
+## Round 204 accepted complete large-values and moment bound
+
+The accepted node `GC-complete-square-root-large-values-moment-bound`
+proves D_(T,U)(V)<<T^epsilon(V^-2+T V^(-136/13)) for the full
+smoothed square-root series, uniformly in every lower cutoff U>=0
+and V>=1. Its finite Gram proof retains the diagonal and the full
+localization ceiling. The proof includes n=1, all partial blocks
+and the complete infinite upper tail. The external pair acts only
+on the unweighted correlation kernel, with its exact square-root
+derivative class and all small-parameter regimes separately checked.
+
+For the radial mollifier and theta=theta_LY, beta=2theta-1/2, the
+full normalized p-moment is bounded by T^(1+epsilon) plus
+T^((p-2)beta+epsilon), for every fixed p>=2. The sharp inclusive
+discrepancy therefore has p-moment at most Y^(1+p/4+epsilon) plus
+Y^(1+(p-2)theta+epsilon). At p=12 this is Y^(1+10theta+epsilon);
+the conjectural-order moment endpoint is2+1/beta>262/27.
+
+This is an improvement of the project's recorded moment comparison;
+no novelty or pointwise exponent improvement is claimed. The resulting
+p=12 persistence exponent(1+10theta)/13 is larger than theta. The
+frozen stronger high-value target remains open above its proved
+initial range; the full quarter theorem and all M1/M2 parents remain
+open. The aligned generic coefficient example does not refute the
+actual arithmetic target. See the complete reviewed proof in
+`proofs/kernels/gc_complete_square_root_large_values_moment_bound.md`.
+
+## Round216 accepted complete distinct-radical reduction
+
+The accepted node `GC-complete-distinct-radical-twelfth-reduction`
+uses the actual full mollified cosine series and Q=floor(T^(2/5)).
+The small-squarefree-class head satisfies M12(L_Q)<<T^(15/13+epsilon).
+For the tail Z_Q and the ordered twelve-distinct-class product sum E12,
+the complete collective error is
+integral w(R/T)|Z_Q^12-E12|dR<<T^(8beta-1/5+epsilon),
+where beta=2theta_LY-1/2 and 8beta-1/5<21/25. The exact partition
+identity includes every repeated-class configuration, including nonzero
+and nonpairing relations, with all infinite harmonics and signs retained.
+
+The high-value gate at V0=T^(13/125), the full B_T and Z_Q twelfth
+moment bounds at T^(29/25+epsilon), and the bound on the absolute value
+of I12=integral w(R/T)E12 are equivalent. A one-sided upper bound on
+real I12 suffices. None of these equivalent target bounds is proved.
+The small additive error is for M12(Z_Q); the B_T-to-Z_Q transfer uses
+the paid head and power inequalities and is not an additive approximation.
+
+The remaining actual displaced Fourier kernel over twelve distinct
+large squarefree classes is unestimated. This supplies a complete
+reduction but no improved complete moment or pointwise exponent.
+Even the open target would give only102/325, not the quarter theorem.
+No sufficient unbounded-order family or M1/M2/GAR parent is proved.
+See `proofs/kernels/gc_complete_distinct_radical_moment_reduction.md`.
+
+## Round217 accepted distinct-class absolute-certificate obstruction
+
+The accepted node `GC-distinct-radical-absolute-certificate-obstruction`
+shows that taking termwise Fourier moduli still fails after restricting
+all squarefree classes to be distinct and greater than Q=floor(T^alpha).
+For each fixed even p>=4 and fixed alpha<1, one actual positive block
+n comparable to T and one balanced sign pattern have certificate at least
+c T^(p/4-1/2). Weighted root-sum bins supply close tuples; a same-block
+class-energy bound and a last-index count remove every repeated class
+with a smaller error. Actual coefficients and real endpoints are retained.
+
+At p=12,alpha=2/5 this is T^(5/2), exceeding the target T^(29/25).
+This is only a lower bound on the named termwise absolute certificate.
+It does not lower-bound signed I12 or any physical moment, and it does
+not disprove the target. All previous accepted powers and parent statuses
+are unchanged. The complete signed estimate and quarter theorem remain
+open. See `proofs/kernels/gc_distinct_radical_absolute_certificate_obstruction.md`.
+The conditional moment-family analysis is strategy evidence, not an
+accepted new moment bound.

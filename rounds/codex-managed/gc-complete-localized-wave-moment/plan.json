@@ -1,0 +1,195 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 215,
+    "round_type": "complete_actual_localized_wave_attack",
+    "campaign_id": "gc-complete-localized-wave-moment",
+    "title": "Complete actual weighted lattice-wave tenth moment",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+    "generated_at": "2026-09-27T17:26:44.196998+00:00",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 95,
+      "numerical_experimental_maximum_percent": 5,
+      "planned_numerical_percent": 0,
+      "budget": "Three bounded reports; one primary amplitude-envelope interface and at most one arithmetic import; one same-round seam cycle; zero planned experiments."
+    },
+    "target_obligations": [
+      "GC-target",
+      "GC-complete-square-root-large-values-moment-bound",
+      "M9-M1",
+      "M9-M2"
+    ],
+    "frozen_target": {
+      "question": "Prove or rigorously delimit the complete actual weighted localized cone-wave moment(C215), retaining its full-quarter extension criterion.",
+      "reference_formula": "C(T,N)=sum_j integral W(y)|phi(y/N)eta(u/N)F_N(y/sqrt(N),R_j+u/sqrt(N))|^10 dydu << T^(83/65+epsilon), for every T^(166/325)<N<T^(242/325).",
+      "quantities": [
+        "Exact c_m=|m|^(-3/2)Psi(|m|/sqrt(T))v(|m|^2/N); every direction, norm, common center phase, radius window, real endpoint and Schwartz tail.",
+        "I=[T/sqrt(2),sqrt(3)T], J=ceil((sqrt(3)-1/sqrt(2))T/sqrt(N)), R_j=T/sqrt(2)+j sqrt(N),0<=j<=J; fixed product cutoff and W=C_A(1+|y|^2)^(-100).",
+        "C215 implies the complete tenth gate by fixed spatial bandwidth and du=sqrt(N)dR;102/325 is a milestone only. The full goal still requires a sufficient complete moment family or alternative parents."
+      ]
+    },
+    "completion_criteria": [
+      "Three bounded seven-section reports, including an isolated important kernel derivation.",
+      "Complete weighted analytic and actual arithmetic costs, with first unproved steps and genuine no-go scopes.",
+      "Independent final-hash seams and conductor synthesis preserving every full-goal alternative.",
+      "Validated State Patch and ledger closure before successor design; no unsupported moment/exponent/parent promotion."
+    ],
+    "controls": [
+      "exact_r2_lift",
+      "actual_common_modulation",
+      "weighted_fourier_normalization",
+      "all_windows_tails",
+      "narrow_aligned_directions",
+      "complete_coefficient_norms",
+      "source_hypotheses",
+      "all_restored_powers",
+      "actual_arbitrary_distinction",
+      "certificate_signed_distinction",
+      "real_endpoints",
+      "full_quarter_scope",
+      "statement_only_control"
+    ],
+    "exit_labels": [
+      "complete_localized_moment_candidate_requires_validation",
+      "complete_localized_moment_still_open"
+    ],
+    "tasks": [
+      {
+        "id": "weighted_envelope_transfer",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "target": "Derive and quantitatively test a legal amplitude-dependent cone-envelope bound for the complete frozen weighted tube moment. Inspect the primary Guth--Maldague amplitude-dependent theorem and exact envelope definitions; at most this one source interface. Preserve the spatial weight, thresholds, all packets, actual modulated coefficients, localization/window/tail costs and narrow/aligned directions. Prove the strongest complete justified inequality or a precisely scoped analytic/source obstruction. Do not repeat the already priced generic Theorem3 small-cap calculation. No siblings or successor work. Seven sections and stop.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round215_complete_localized_wave_attack.md",
+          "strategy/gauss_circle_strategy_checkpoint_round214_2026-09-28.md",
+          "rounds/codex-managed/gc-full-goal-radius-source-review/reports/full_goal_harmonic_sources.md",
+          "rounds/codex-managed/gc-full-goal-radius-source-review/reviews/independent_harmonic_sources_review.md"
+        ],
+        "required_controls": [
+          "exact_r2_lift",
+          "actual_common_modulation",
+          "weighted_fourier_normalization",
+          "all_windows_tails",
+          "narrow_aligned_directions",
+          "complete_coefficient_norms",
+          "source_hypotheses",
+          "all_restored_powers",
+          "actual_arbitrary_distinction",
+          "certificate_signed_distinction",
+          "real_endpoints",
+          "full_quarter_scope",
+          "statement_only_control"
+        ],
+        "required_output": [
+          "Seven numbered protocol sections with exact hypotheses, derivation, first unproved step, controls, dependencies and state recommendation.",
+          "Write only assigned report; no shared state, synthesis, blind/sibling report or successor edits."
+        ],
+        "report_path": "rounds/codex-managed/gc-complete-localized-wave-moment/reports/weighted_envelope_transfer.md"
+      },
+      {
+        "id": "actual_lattice_envelopes",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "target": "Analytically attack the complete C215 moment on its actual lattice coefficients, retaining the common center modulation, every direction/norm/window and all tails. Seek an actual coefficient-sensitive envelope or arithmetic bound with a complete power gain; transformations must retain their full remainder and cost. At most one promising primary-source import, fully audited. If no gain, give the first precise open step and any rigorously proved complete certificate limitation, never an arbitrary-array control labeled as an actual obstruction. No siblings or successor work. Seven sections and stop.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round215_complete_localized_wave_attack.md",
+          "strategy/gauss_circle_strategy_checkpoint_round214_2026-09-28.md",
+          "rounds/codex-managed/gc-full-goal-radius-source-review/reports/full_goal_harmonic_sources.md",
+          "rounds/codex-managed/gc-full-goal-radius-source-review/reviews/independent_harmonic_sources_review.md",
+          "proofs/kernels/gc_complete_square_root_large_values_moment_bound.md"
+        ],
+        "required_controls": [
+          "exact_r2_lift",
+          "actual_common_modulation",
+          "weighted_fourier_normalization",
+          "all_windows_tails",
+          "narrow_aligned_directions",
+          "complete_coefficient_norms",
+          "source_hypotheses",
+          "all_restored_powers",
+          "actual_arbitrary_distinction",
+          "certificate_signed_distinction",
+          "real_endpoints",
+          "full_quarter_scope",
+          "statement_only_control"
+        ],
+        "required_output": [
+          "Seven numbered protocol sections with exact hypotheses, derivation, first unproved step, controls, dependencies and state recommendation.",
+          "Write only assigned report; no shared state, synthesis, blind/sibling report or successor edits."
+        ],
+        "report_path": "rounds/codex-managed/gc-complete-localized-wave-moment/reports/actual_lattice_envelopes.md"
+      },
+      {
+        "id": "blind_spatial_kernel",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "pending",
+        "target": "Independently derive the isolated spatial-weight/kernel packet, compare both orders of taking absolute values, and retain certificate versus actual signed scope. Read only protocol and isolated packet; no web or other context. Seven sections and stop.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/gc-complete-localized-wave-moment/briefs/blind_spatial_kernel_statement.md"
+        ],
+        "required_controls": [
+          "exact_r2_lift",
+          "actual_common_modulation",
+          "weighted_fourier_normalization",
+          "all_windows_tails",
+          "narrow_aligned_directions",
+          "complete_coefficient_norms",
+          "source_hypotheses",
+          "all_restored_powers",
+          "actual_arbitrary_distinction",
+          "certificate_signed_distinction",
+          "real_endpoints",
+          "full_quarter_scope",
+          "statement_only_control"
+        ],
+        "required_output": [
+          "Seven numbered protocol sections with exact hypotheses, derivation, first unproved step, controls, dependencies and state recommendation.",
+          "Write only assigned report; no shared state, synthesis, blind/sibling report or successor edits."
+        ],
+        "report_path": "rounds/codex-managed/gc-complete-localized-wave-moment/reports/blind_spatial_kernel.md",
+        "excluded_context": [
+          "Everything except protocol and isolated packet; exclude generated general brief, graph, manifest, strategy, all prior/current reports and web."
+        ]
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "weighted_analytic_transfer",
+        "requirement": "Exact source envelope, weighted norm, thresholds, windows and tails with all restored powers."
+      },
+      {
+        "id": "actual_arithmetic_scope",
+        "requirement": "Actual lattice coefficients, common modulation and complete signed or certificate estimates."
+      },
+      {
+        "id": "spatial_kernel_control",
+        "requirement": "Exact Fourier factors, actual mass binding, both absolute-value orders and signed distinction."
+      }
+    ],
+    "previous_goal_turn_classification": "progress_completed_validated214_full_goal_radius_limit_primary_source_review_and_strategy_adjustment",
+    "scheduled_review": "Broad review214 completed; next mandatory strategy/current-literature review217 after214--216."
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+    "generated_at": "2026-09-27T17:26:44.222700+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

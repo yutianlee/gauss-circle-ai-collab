@@ -1,0 +1,32 @@
+{
+  "round_index": 226,
+  "campaign_id": "gc-full-goal-spectral-source-review",
+  "starting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+  "proof_obligations": {
+    "create": [],
+    "update": [],
+    "correct_rejected": [],
+    "reject": [],
+    "no_change": [
+      "GC-target",
+      "Conditional-bridge",
+      "M9",
+      "M9-M1",
+      "M9-M2",
+      "M9-endpoint-uniformity",
+      "M9-M1-global-angular-radial-estimate",
+      "M9-M1-global-lower-radial-signed-estimate",
+      "M9-M1-GAR-total-active-equivalence",
+      "GC-external-Li-Yang-theta-star",
+      "GC-complete-square-root-large-values-moment-bound",
+      "GC-complete-distinct-radical-twelfth-reduction"
+    ]
+  },
+  "round_assessment": {
+    "terminal_label": "strategy_spectral_source_review_no_complete_gain",
+    "reason": "Four bounded theorem/source audits and the isolated subordination control supply no complete bound or exponent gain. The actual-r2 July2026 source motivates a direct joint spectral test, but absolute Abel transfer loses growing phase variation. The fully restored one-sided signed Fejer remainder target retains every shift, density, diagonal, endpoint and tail and is sufficient for quarter; it remains unproved."
+  },
+  "reversibility": {
+    "rule": "Identity in-memory application, inverse and replay; graph and proof-draft bytes never rewritten."
+  }
+}

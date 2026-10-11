@@ -1,0 +1,43 @@
+{
+  "round_index": 210,
+  "status": "green_identity_patch_preflight",
+  "graph_schema": "pass",
+  "campaign_schema": "pass",
+  "identity_patch": "pass",
+  "reverse_identity_replay": "pass",
+  "all_399_nodes_and_other_graph_data_unchanged": true,
+  "exact_review_hashes": {
+    "rounds/codex-managed/gc-signed-near-frequency-cancellation/controls/conductor_shift_and_bin_ledger.md": "2a7bb78bcbca542e5fbecb4d056412e5e31a92467392564d4f8f396b939cf169",
+    "rounds/codex-managed/gc-signed-near-frequency-cancellation/reports/signed_rational_bins.md": "72437c1f52135b6cff5854a2d1d4d76c1a69e4be0af76be54a168d2edbc77853",
+    "rounds/codex-managed/gc-signed-near-frequency-cancellation/reports/actual_shifted_correlations.md": "657fb00457c9ed8fabf4b3d3ffe71b26fdbeff85e767c35a94ff279aec248168",
+    "rounds/codex-managed/gc-signed-near-frequency-cancellation/reports/blind_bin_transfer.md": "81e4afa4cd9df504c5ba75072a923ff9e39400d89edcf6269d1f5d884f544b2e"
+  },
+  "three_report_hashes": {
+    "rounds/codex-managed/gc-signed-near-frequency-cancellation/reports/signed_rational_bins.md": "72437c1f52135b6cff5854a2d1d4d76c1a69e4be0af76be54a168d2edbc77853",
+    "rounds/codex-managed/gc-signed-near-frequency-cancellation/reports/actual_shifted_correlations.md": "657fb00457c9ed8fabf4b3d3ffe71b26fdbeff85e767c35a94ff279aec248168",
+    "rounds/codex-managed/gc-signed-near-frequency-cancellation/reports/blind_bin_transfer.md": "81e4afa4cd9df504c5ba75072a923ff9e39400d89edcf6269d1f5d884f544b2e"
+  },
+  "frozen_scope_and_briefs_unchanged": true,
+  "closed_round200_through209_archives_unchanged": true,
+  "protected_archive_entries_checked": 225,
+  "report_hygiene": [
+    "rounds/codex-managed/gc-signed-near-frequency-cancellation/synthesis.md",
+    "rounds/codex-managed/gc-signed-near-frequency-cancellation/briefs/actual_shifted_correlations.md",
+    "rounds/codex-managed/gc-signed-near-frequency-cancellation/briefs/blind_bin_transfer.md",
+    "rounds/codex-managed/gc-signed-near-frequency-cancellation/briefs/blind_bin_transfer_statement.md",
+    "rounds/codex-managed/gc-signed-near-frequency-cancellation/briefs/signed_rational_bins.md",
+    "rounds/codex-managed/gc-signed-near-frequency-cancellation/controls/conductor_shift_and_bin_ledger.md",
+    "rounds/codex-managed/gc-signed-near-frequency-cancellation/reports/actual_shifted_correlations.md",
+    "rounds/codex-managed/gc-signed-near-frequency-cancellation/reports/blind_bin_transfer.md",
+    "rounds/codex-managed/gc-signed-near-frequency-cancellation/reports/signed_rational_bins.md",
+    "rounds/codex-managed/gc-signed-near-frequency-cancellation/reviews/conductor_blind_bin_review.md",
+    "rounds/codex-managed/gc-signed-near-frequency-cancellation/reviews/conductor_round210_reconciliation.md",
+    "rounds/codex-managed/gc-signed-near-frequency-cancellation/reviews/independent_conductor_transfer_review.md",
+    "rounds/codex-managed/gc-signed-near-frequency-cancellation/reviews/independent_rational_bins_review.md",
+    "rounds/codex-managed/gc-signed-near-frequency-cancellation/reviews/independent_shifted_correlations_review.md"
+  ],
+  "mathematical_numerical_experiments": 0,
+  "analytic_target": "open",
+  "complete_moment_bound_improved": false,
+  "pointwise_exponent_change": false
+}

@@ -1,0 +1,32 @@
+{
+  "round_index": 222,
+  "campaign_id": "m9-m2-complete-unbalanced-vector",
+  "starting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+  "proof_obligations": {
+    "create": [],
+    "update": [],
+    "correct_rejected": [],
+    "reject": [],
+    "no_change": [
+      "GC-target",
+      "Conditional-bridge",
+      "M9",
+      "M9-M1",
+      "M9-M2",
+      "M9-endpoint-uniformity",
+      "M9-M2-smooth-unbalanced-three-quarter-estimate",
+      "GC-external-Li-Yang-theta-star",
+      "GC-weighted-square-root-exact-resonance-mass",
+      "GC-complete-square-root-large-values-moment-bound",
+      "GC-complete-distinct-radical-twelfth-reduction",
+      "GC-distinct-radical-absolute-certificate-obstruction"
+    ]
+  },
+  "round_assessment": {
+    "terminal_label": "complete_unbal_vector_attempt_no_new_bound",
+    "reason": "The literal weighted cross-modulus rows retain the original reciprocal row total in their common-period mean even after zero-column deletion. The completely paid joint short-window Gram closure gives only R^(3/2)X^epsilon. The original product-phase rectangle closure erases the fixed character signs and has an actual buffered certificate floor X^(11/32) on a legal dyadic family; its full upper price improves neither the elementary smooth bound nor the accepted scoped flat envelope. All masks, gcd rows, frequencies, real-centre factors and owner/endpoint limits are retained. These are reviewed finite and failed-certificate results, not actual signed lower bounds or a complete UNBAL estimate."
+  },
+  "reversibility": {
+    "rule": "Identity in-memory application, inverse and replay; graph and proof-draft bytes never rewritten."
+  }
+}

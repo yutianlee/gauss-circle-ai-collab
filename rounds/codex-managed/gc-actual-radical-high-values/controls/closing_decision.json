@@ -1,0 +1,22 @@
+{
+  "round_index": 216,
+  "campaign_id": "gc-actual-radical-high-values",
+  "terminal_label": "complete_actual_high_value_gate_open",
+  "decision": "promote_complete_distinct_radical_reduction_only",
+  "graph_mutation": true,
+  "complete_moment_bound_improved": false,
+  "pointwise_exponent_change": false,
+  "reason": "Accept the completely paid reduction of the actual twelfth moment to twelve distinct large squarefree classes. The head costs T^(15/13+epsilon), and the collective repeated-class error costs T^(8beta-1/5+epsilon). The remaining signed distinct-class estimate at T^(29/25+epsilon) is unproved. Retain the anchored divisor conditional interface and scoped controls without promoting their missing arithmetic input.",
+  "goal_turn_classification": "progress_new_complete_arithmetic_reduction_validated_no_complete_moment_or_pointwise_gain",
+  "interventions": [
+    "Kept H216 as the frozen complete high-value objective; priced the whole-tail replacement before using it.",
+    "Supplied the actual prime-factor head bound and masked finite-distribution extension to discovery as explicitly nonblind inputs.",
+    "Redirected the radical report toward collective signed repeated-class regrouping, replacing incomplete termwise partition controls.",
+    "Created a separate abstract statement-only packet for independent derivation after the original blind cutoff report was frozen.",
+    "Required independent final-hash candidate, actual-binding, original-report and anchored-arithmetic reviews before any graph mutation."
+  ],
+  "next_objective": "Mandatory broad full-goal strategy and current-primary-literature review217 after rounds214--216, assessing the new complete distinct-class reduction against all full-proof frontiers before choosing a subsequent analytic objective.",
+  "next_method": "Pending the broad review; no successor arithmetic mechanism is selected in round216.",
+  "first_unproved_estimate": "I12(T)=integral w(R/T) sum_(d_1,...,d_12>floor(T^(2/5)) pairwise distinct squarefree) product_j f_(d_j)(R) dR <= C_epsilon T^(29/25+epsilon). Its actual displaced Fourier kernel, all harmonics, signs and tails remain.",
+  "state_note": "One complete actual arithmetic reduction is accepted after final-hash and statement-only validation. For Q=floor(T^(2/5)), M12(L_Q)<<T^(15/13+epsilon), and integral w|Z_Q^12-E12|<<T^(8beta-1/5+epsilon), with beta=2theta_LY-1/2. H216 is equivalent to the target-sized signed twelve-distinct-class integral, which remains open. The collective estimate includes nonzero repeated-class configurations and is stronger in scope than the exact diagonal bound, but supplies no new complete moment power or pointwise exponent. The anchored divisor route retains its explicit unproved signed energy with loss rho<=208/2625. All399 previous graph nodes are unchanged; full quarter, M1/M2/GAR and endpoint obligations remain open. No numerical experiments or new external theorem. Mandatory broad strategy/current-literature review217 is pending design."
+}

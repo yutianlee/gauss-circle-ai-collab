@@ -1,0 +1,209 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 228,
+    "round_type": "complete_signed_heegner_phase_attack",
+    "campaign_id": "gc-signed-heegner-phase",
+    "title": "Complete signed Heegner phase and continuous spectrum",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+    "generated_at": "2026-09-27T23:52:21.022235+00:00",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 95,
+      "numerical_experimental_maximum_percent": 5,
+      "planned_numerical_percent": 0,
+      "budget": "Three bounded reports, one attack/assessment and one review/repair cycle; at most one additional indispensable primary work per nonblind role; zero experiments."
+    },
+    "target_obligations": [
+      "GC-target",
+      "M9-M1",
+      "M9-M2",
+      "GC-complete-square-root-large-values-moment-bound",
+      "GC-complete-distinct-radical-twelfth-reduction"
+    ],
+    "frozen_target": {
+      "question": "Can the COMPLETE actual signed Heegner pairing gain by its resonant Hecke functional equation and a fully paid continuous spectrum?",
+      "reference_formula": "Checkpoint226(F), exact whole-functional Heegner report227(7)--(10): complete signed raw remainder <= A_J^2 N^(3/2)T^epsilon, all h<2N and dyadicN<=P<2T^(3/2), every real R~T.",
+      "quantities": [
+        "Actual signed g_N and r2; all parity and old/new factors, all continuous cusps and discrete modes.",
+        "Exact growing transforms, dual lengths, gamma transitions, source hypotheses and fully reconstructed powers.",
+        "A paid full spectral component retains its entire complementary owner and is not a whole-wave gain.",
+        "Full quarter or genuinely stronger complete exponent remains the goal; beta only complete REAL."
+      ]
+    },
+    "completion_criteria": [
+      "Complete discrete attack and complete continuous owner reports, plus isolated gamma derivation.",
+      "Nonauthor final-hash reviews of sources, transforms, full components and root application.",
+      "Full restored result or exact first unproved complete estimate, synthesis and valid State Patch before round229 design."
+    ],
+    "controls": [
+      "actual_full_target",
+      "all_shifts_parity_and_scales",
+      "signed_joint_phase_before_norms",
+      "source_and_functional_equation_hypotheses",
+      "complete_discrete_and_continuous_spectra",
+      "gamma_transitions_and_dual_lengths",
+      "literal_endpoints_and_tails",
+      "real_complex_scope",
+      "full_power_restoration",
+      "certificate_not_actual_lower_bound",
+      "statement_only_control",
+      "fixed_order_full_goal"
+    ],
+    "exit_labels": [
+      "complete_signed_heegner_gain_requires_validation",
+      "complete_signed_heegner_no_new_bound"
+    ],
+    "tasks": [
+      {
+        "id": "signed_hecke_functional_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "target": "Attack the COMPLETE signed cuspidal pairing in the exact level1/2 Heegner expression, with every shift, parity descendant, spectral mode and tail. Preserve its h^(it) times common spectral phase before norms. Investigate the exact Hecke L functional equation or equivalent Voronoi transformation at the resonant archimedean parameter; derive actual dual length, transform, root number, parity, conductor and old/new normalization. At the CM points check rather than assume any reflection/Fricke simplification. Seek an actual fully restored signed bound; a shorter formal dual polynomial alone is insufficient. Test any pretrace/geometric return for whether it simply recreates the original circle wave. At most one additional indispensable primary work with exact theorem audit, zero experiments. The continuous spectrum has a separate owner but remains in the FULL target; state the precise estimate needed for the full closure and retain prior complete cap if no gain. No current sibling or blind reads. Seven sections, assigned report only, freeze hash and stop.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round228_signed_heegner_phase.md",
+          "strategy/gauss_circle_strategy_review_2026-09-23.md",
+          "strategy/gauss_circle_strategy_checkpoint_round226_2026-09-28.md",
+          "rounds/codex-managed/gc-signed-heegner-phase/briefs/complete_signed_heegner_interface.md",
+          "rounds/codex-managed/gc-complete-joint-spectral-remainder/briefs/complete_joint_spectral_interface.md",
+          "rounds/codex-managed/gc-complete-joint-spectral-remainder/reports/heegner_joint_norm_audit.md",
+          "rounds/codex-managed/gc-complete-joint-spectral-remainder/reviews/independent_heegner_norm_review.md",
+          "rounds/codex-managed/gc-complete-joint-spectral-remainder/reports/joint_shift_spectral_attack.md",
+          "rounds/codex-managed/gc-complete-joint-spectral-remainder/reviews/independent_spectral_attack_review.md",
+          "rounds/codex-managed/gc-complete-joint-spectral-remainder/synthesis.md",
+          "proofs/kernels/gc_complete_square_root_large_values_moment_bound.md"
+        ],
+        "required_controls": [
+          "actual_full_target",
+          "all_shifts_parity_and_scales",
+          "signed_joint_phase_before_norms",
+          "source_and_functional_equation_hypotheses",
+          "complete_discrete_and_continuous_spectra",
+          "gamma_transitions_and_dual_lengths",
+          "literal_endpoints_and_tails",
+          "real_complex_scope",
+          "full_power_restoration",
+          "certificate_not_actual_lower_bound",
+          "statement_only_control",
+          "fixed_order_full_goal"
+        ],
+        "required_output": [
+          "Seven numbered sections: result, exact hypotheses, proof, first gap, controls, dependencies/provenance, state effect.",
+          "Write only assigned report; exact primary hypotheses for imports; final SHA256 then stop."
+        ],
+        "report_path": "rounds/codex-managed/gc-signed-heegner-phase/reports/signed_hecke_functional_attack.md"
+      },
+      {
+        "id": "complete_eisenstein_pairing",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "target": "Own the ENTIRE continuous spectrum in the complete level1/2 Heegner remainder, not a local band. Derive exact Eisenstein values at i and (-1+i)/2, every cusp and fixed local factor. Test whether their actual CM Dirichlet-series mean values pay the raw A_J^2 N^(3/2)T^epsilon continuous target with every h<2N, parity descendant, both signs and spectral tails restored. Prove or exactly source all needed mean-value/functional-equation inputs; at most one additional indispensable primary work. Do not substitute a point cusp fourth moment or a generic local-Weyl price as a claimed gain. If continuous target is paid, quantify the remaining ENTIRE signed cusp term and explain why this alone does not prove a whole-wave gain. Also independently assess whether the exact geometric/pretrace recombination would recreate the original wave. No current sibling, blind or root control reads. Seven sections, zero experiments, assigned report only, final hash then stop.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round228_signed_heegner_phase.md",
+          "strategy/gauss_circle_strategy_review_2026-09-23.md",
+          "strategy/gauss_circle_strategy_checkpoint_round226_2026-09-28.md",
+          "rounds/codex-managed/gc-signed-heegner-phase/briefs/complete_signed_heegner_interface.md",
+          "rounds/codex-managed/gc-complete-joint-spectral-remainder/briefs/complete_joint_spectral_interface.md",
+          "rounds/codex-managed/gc-complete-joint-spectral-remainder/reports/heegner_joint_norm_audit.md",
+          "rounds/codex-managed/gc-complete-joint-spectral-remainder/reviews/independent_heegner_norm_review.md",
+          "rounds/codex-managed/gc-complete-joint-spectral-remainder/reports/joint_shift_spectral_attack.md",
+          "rounds/codex-managed/gc-complete-joint-spectral-remainder/reviews/independent_spectral_attack_review.md",
+          "rounds/codex-managed/gc-complete-joint-spectral-remainder/synthesis.md",
+          "proofs/kernels/gc_complete_square_root_large_values_moment_bound.md"
+        ],
+        "required_controls": [
+          "actual_full_target",
+          "all_shifts_parity_and_scales",
+          "signed_joint_phase_before_norms",
+          "source_and_functional_equation_hypotheses",
+          "complete_discrete_and_continuous_spectra",
+          "gamma_transitions_and_dual_lengths",
+          "literal_endpoints_and_tails",
+          "real_complex_scope",
+          "full_power_restoration",
+          "certificate_not_actual_lower_bound",
+          "statement_only_control",
+          "fixed_order_full_goal"
+        ],
+        "required_output": [
+          "Seven numbered sections: result, exact hypotheses, proof, first gap, controls, dependencies/provenance, state effect.",
+          "Write only assigned report; exact primary hypotheses for imports; final SHA256 then stop."
+        ],
+        "report_path": "rounds/codex-managed/gc-signed-heegner-phase/reports/complete_eisenstein_pairing.md"
+      },
+      {
+        "id": "blind_gamma_transition",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "pending",
+        "target": "Read ONLY protocol and isolated gamma-ratio packet. Independently derive factorization, all phase constants, near-transition uniform expansion and fixed-order derivative control, both transition centers and full-axis modulus envelope. Prove controls at critical sigma and v=0. No arithmetic applications, sources or experiments. Seven sections, only assigned report; disclose isolation, freeze hash and stop.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/gc-signed-heegner-phase/briefs/blind_gamma_transition_statement.md"
+        ],
+        "required_controls": [
+          "actual_full_target",
+          "all_shifts_parity_and_scales",
+          "signed_joint_phase_before_norms",
+          "source_and_functional_equation_hypotheses",
+          "complete_discrete_and_continuous_spectra",
+          "gamma_transitions_and_dual_lengths",
+          "literal_endpoints_and_tails",
+          "real_complex_scope",
+          "full_power_restoration",
+          "certificate_not_actual_lower_bound",
+          "statement_only_control",
+          "fixed_order_full_goal"
+        ],
+        "required_output": [
+          "Seven numbered sections: result, exact hypotheses, proof, first gap, controls, dependencies/provenance, state effect.",
+          "Write only assigned report; exact primary hypotheses for imports; final SHA256 then stop."
+        ],
+        "report_path": "rounds/codex-managed/gc-signed-heegner-phase/reports/blind_gamma_transition.md",
+        "excluded_context": [
+          "All except protocol and isolated gamma statement; no arithmetic, source, sibling or history context."
+        ]
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "signed_hecke_transform",
+        "requirement": "Actual dual transform, every parity/conductor/oldspace factor and full signed spectral estimate."
+      },
+      {
+        "id": "complete_eisenstein_estimate",
+        "requirement": "All CM cusp values and source hypotheses, full mean-value bound and complete all-shift cost."
+      },
+      {
+        "id": "gamma_transition_application",
+        "requirement": "Isolated uniform derivation and nonauthor application without false Stirling or cancellation."
+      },
+      {
+        "id": "full_goal_restoration",
+        "requirement": "Every component, tail, complete owner and physical exponent restored."
+      }
+    ],
+    "previous_goal_turn_classification": "progress_reviewed_complete_spectral_interface_changes_next_action_no_complete_analytic_gain",
+    "scheduled_review": "Mandatory broad strategy/current-primary review229 after228 closure."
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+    "generated_at": "2026-09-27T23:52:21.052415+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

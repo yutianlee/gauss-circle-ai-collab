@@ -1,0 +1,81 @@
+{
+  "round_index": 228,
+  "generated_at": "2026-09-28T00:16:25.862129+00:00",
+  "frozen_objective_changed": false,
+  "maximum_concurrent_subagents": 3,
+  "mathematical_numerical_experiments": 0,
+  "original_report_claimants": {
+    "rounds/codex-managed/gc-signed-heegner-phase/reports/signed_hecke_functional_attack.md": "/root/signed_hecke_functional_attack",
+    "rounds/codex-managed/gc-signed-heegner-phase/reports/complete_eisenstein_pairing.md": "/root/complete_eisenstein_pairing",
+    "rounds/codex-managed/gc-signed-heegner-phase/reports/blind_gamma_transition.md": "/root/blind_gamma_transition",
+    "rounds/codex-managed/gc-signed-heegner-phase/controls/conductor_gamma_application.md": "/root"
+  },
+  "reviews": [
+    {
+      "path": "rounds/codex-managed/gc-signed-heegner-phase/reviews/conductor_gamma_transition_review.md",
+      "reviewer": "/root",
+      "claimant": "/root/blind_gamma_transition",
+      "reviewed": {
+        "rounds/codex-managed/gc-signed-heegner-phase/reports/blind_gamma_transition.md": "9dcfb60996d011bccde60112c1f8577440b6bf4cc330b808c4e5cc5d2ae4ac4f",
+        "rounds/codex-managed/gc-signed-heegner-phase/briefs/blind_gamma_transition_statement.md": "b801dea99d5db4243f728c7b16b690d237a0a0f758f8d83eb63bebdedad82039"
+      },
+      "mode": "nonauthor_review_of_isolated_scalar_derivation"
+    },
+    {
+      "path": "rounds/codex-managed/gc-signed-heegner-phase/reviews/independent_signed_hecke_review.md",
+      "reviewer": "/root/complete_eisenstein_pairing",
+      "claimant": "/root/signed_hecke_functional_attack",
+      "reviewed": {
+        "rounds/codex-managed/gc-signed-heegner-phase/reports/signed_hecke_functional_attack.md": "f0d2507ef603e8ce1dac149994e52feb660ec9ccf27cf070a1ee83079b6d55dd"
+      },
+      "mode": "post_freeze_nonauthor_transform_and_full_cost_review"
+    },
+    {
+      "path": "rounds/codex-managed/gc-signed-heegner-phase/reviews/independent_eisenstein_review.md",
+      "reviewer": "/root/signed_hecke_functional_attack",
+      "claimant": "/root/complete_eisenstein_pairing",
+      "reviewed": {
+        "rounds/codex-managed/gc-signed-heegner-phase/reports/complete_eisenstein_pairing.md": "cf92b16e42ad85d900a532a66f1df33cb8aa2be175c7f0f4d8013501a4112d1f"
+      },
+      "mode": "post_freeze_nonauthor_complete_component_review"
+    },
+    {
+      "path": "rounds/codex-managed/gc-signed-heegner-phase/reviews/independent_gamma_application_review.md",
+      "reviewer": "/root/blind_gamma_transition",
+      "claimant": "/root",
+      "reviewed": {
+        "rounds/codex-managed/gc-signed-heegner-phase/controls/conductor_gamma_application.md": "f90c8dbbd21e4c881259d7026a16ddeb0a635525f741d89eeb715f3ad7659515"
+      },
+      "mode": "post_isolation_nonauthor_conditional_application_review"
+    },
+    {
+      "path": "rounds/codex-managed/gc-signed-heegner-phase/reviews/conductor_complete_frontier_review.md",
+      "reviewer": "/root",
+      "mode": "conductor_complete_frontier_review",
+      "reviewed": {
+        "rounds/codex-managed/gc-signed-heegner-phase/reports/signed_hecke_functional_attack.md": "f0d2507ef603e8ce1dac149994e52feb660ec9ccf27cf070a1ee83079b6d55dd",
+        "rounds/codex-managed/gc-signed-heegner-phase/reports/complete_eisenstein_pairing.md": "cf92b16e42ad85d900a532a66f1df33cb8aa2be175c7f0f4d8013501a4112d1f",
+        "rounds/codex-managed/gc-signed-heegner-phase/reports/blind_gamma_transition.md": "9dcfb60996d011bccde60112c1f8577440b6bf4cc330b808c4e5cc5d2ae4ac4f",
+        "rounds/codex-managed/gc-signed-heegner-phase/controls/conductor_gamma_application.md": "f90c8dbbd21e4c881259d7026a16ddeb0a635525f741d89eeb715f3ad7659515",
+        "rounds/codex-managed/gc-signed-heegner-phase/reviews/conductor_gamma_transition_review.md": "0d1a0b43b025db480c2941865afd896480c2c5af6f99a7fffb1c1a79cac1b57b",
+        "rounds/codex-managed/gc-signed-heegner-phase/reviews/independent_signed_hecke_review.md": "2cc4fa02cf7c76bdb6ef2fede88f7512da6331acf31878f452974e63678ca287",
+        "rounds/codex-managed/gc-signed-heegner-phase/reviews/independent_eisenstein_review.md": "2197f126051957c3671060c5c83ed076b5939c53bef2036df76d9c90e2c7c5bc",
+        "rounds/codex-managed/gc-signed-heegner-phase/reviews/independent_gamma_application_review.md": "fa22a5d94f2eacd939ff7e4de99d5ab251578f87de52b1afaa4c19a3a0f8bed5"
+      },
+      "limitation": "Root-authored scalar application has its separate nonauthor review."
+    }
+  ],
+  "interventions": [
+    "Frozen all-shift objective unchanged; three fresh fork_none initial roles, with scalar statement-only isolation.",
+    "Conductor required actual primitive conductors, root numbers, Euler-two depletion, oldspace weights, full dual tails and restored norm costs.",
+    "The entire continuous component retained all three cusps, both signs, every shift and all low/high tails; source and AFE moving-weight hypotheses were checked.",
+    "Two initial reports received disclosed byte-only carriage-return repairs; all final reviews bind corrected hashes.",
+    "Conductor requested an explicit small-n dual-envelope audit; nonauthor review supplied the positive-contour pole argument as well as stationary-symbol checks.",
+    "The root gamma control widened its valid large-pair window to cover bounded t; its final version has a separate nonauthor application review.",
+    "The continuous component gain is distinguished from a complete-wave gain; the whole cusp owner and original full coefficient cap are restored.",
+    "No source printing defect, formal inversion or upper-certificate loss is treated as an estimate or actual lower bound.",
+    "Identity patch only; mandatory review229 remains pending design, with no successor launched."
+  ],
+  "isolation": "Initial roles fresh fork_none; blind initial context only protocol and isolated statement. Claimants froze before reciprocal reviews. Later application review retained only disclosed own history and the root control.",
+  "source_policy": "At most one additional primary work per nonblind role; the continuous role added exact Leong v5 Corollary4. No broad literature review or silent source repair."
+}

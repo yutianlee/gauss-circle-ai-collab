@@ -1,0 +1,215 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 225,
+    "round_type": "complete_circle_logarithmic_convolution",
+    "campaign_id": "gc-complete-logarithmic-convolution",
+    "title": "Complete circle wave through logarithmic convolution",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+    "generated_at": "2026-09-27T22:28:30.177940+00:00",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 95,
+      "numerical_experimental_maximum_percent": 5,
+      "planned_numerical_percent": 0,
+      "budget": "Three bounded seven-section reports; one logarithmic/Vaughan decomposition family; one same-round review/repair cycle; zero experiments. At most one coordinated narrow primary theorem audit if essential."
+    },
+    "target_obligations": [
+      "GC-target",
+      "GC-complete-square-root-large-values-moment-bound",
+      "GC-external-Li-Yang-theta-star"
+    ],
+    "frozen_target": {
+      "question": "Can the exact logarithmic convolution and finite prime-factor decomposition yield a complete uniform bound for the actual circle wave better than the inherited beta, ultimately at T^epsilon?",
+      "reference_formula": "sup_(R in [cT,CT]) |sum_(n>=1) r2(n)n^(-3/4)Psi(sqrt(n/T)) cos(2pi R sqrt(n)-3pi/4)| << T^epsilon.",
+      "quantities": [
+        "Fixed accepted mollifier Psi, every real T and R, n=1, all dyadic scales and complete infinite Schwartz tail.",
+        "f=1*chi4=r2/4; f log=f*((1+chi4)Lambda); literal Vaughan cutoffs U,V and both branches with every prime power.",
+        "Actual character/Mobius/divisor vectors and nonlinear phase R sqrt(product), product masks, all norms and both real signs.",
+        "Complete inherited real exponent beta=2theta_LY-1/2; a complex bound is stronger and is not inherited.",
+        "P(R^2)=sqrt(R)/pi B_T(R)+O(T^(1/2+epsilon)); target suffices for full quarter, intermediate gamma gives 1/4+gamma/2.",
+        "Independent M1/M2/GAR and moment owners remain until a validated complete theorem discharges the target."
+      ]
+    },
+    "completion_criteria": [
+      "Complete nonlinear attack and independent full parameter/norm audit, plus statement-only finite derivation.",
+      "Independent final-hash algebra/application and source reviews if needed; all tails, actual coefficients and full physical costs checked.",
+      "Complete gain or precise no-new-bound conclusion, conductor synthesis and valid State Patch; close225 before successor226."
+    ],
+    "controls": [
+      "complete_actual_circle_wave",
+      "logarithmic_identity",
+      "both_character_branches",
+      "literal_vaughan_cutoffs",
+      "prime_powers_and_two",
+      "singleton_log_division",
+      "actual_product_norms",
+      "all_type_i_ii_ranges",
+      "real_radius_uniformity",
+      "cosine_and_complex_scope",
+      "schwartz_tail_and_mixed_scales",
+      "physical_sharp_reconstruction",
+      "statement_only_derivation",
+      "actual_vs_generic_control",
+      "source_hypotheses_if_used",
+      "full_goal_scope"
+    ],
+    "exit_labels": [
+      "complete_circle_wave_gain_requires_validation",
+      "complete_logarithmic_convolution_no_new_bound"
+    ],
+    "tasks": [
+      {
+        "id": "complete_nonlinear_prime_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "target": "Attempt the COMPLETE real circle wave uniformly at every real R in [cT,CT], with actual f=1*chi4, using exact f log=f*((1+chi4)Lambda) and one finite Vaughan decomposition family. Derive every short/long term for both character branches, literal U,V cutoffs and repeated prime powers; then seek a complete signed Type-I/Type-II estimate before arbitrary-coefficient Cauchy. Optimize U,V only after the entire decomposition is bounded with actual vector norms, product masks, real phase and all tails. Preserve n=1, divide by log only for n>=2, retain possible Psi sign changes and both cosine signs. Full target T^epsilon; inherited COMPLETE real baseline T^(beta+epsilon), beta=2theta_LY-1/2. A complex bound is sufficient if proved, not inherited. No average over R, favorable factor range, simple identity, source analogy or unestimated residual counts as a gain. Use exact physical sharp bridge and retain every mixed scale. At most one jointly coordinated narrow primary audit if essential; no broad survey. Seven sections; one bounded decomposition and review/repair cycle; zero experiments. Assigned report only, no sibling or blind reads, shared edits or successor; stop at final hash.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round225_complete_circle_logarithmic_convolution.md",
+          "rounds/codex-managed/gc-complete-logarithmic-convolution/briefs/conductor_complete_circle_wave.md",
+          "strategy/gauss_circle_strategy_checkpoint_round223_2026-09-28.md",
+          "rounds/codex-managed/m9-m1-complete-gar-prime-amplification/synthesis.md",
+          "rounds/codex-managed/gc-complete-signed-convolution-attack/synthesis.md",
+          "proofs/kernels/gc_complete_square_root_large_values_moment_bound.md",
+          "rounds/codex-managed/gc-full-goal-signed-source-review/reports/multiplicative_wave_sources.md",
+          "rounds/codex-managed/gc-actual-radical-high-values/synthesis.md"
+        ],
+        "required_controls": [
+          "complete_actual_circle_wave",
+          "logarithmic_identity",
+          "both_character_branches",
+          "literal_vaughan_cutoffs",
+          "prime_powers_and_two",
+          "singleton_log_division",
+          "actual_product_norms",
+          "all_type_i_ii_ranges",
+          "real_radius_uniformity",
+          "cosine_and_complex_scope",
+          "schwartz_tail_and_mixed_scales",
+          "physical_sharp_reconstruction",
+          "statement_only_derivation",
+          "actual_vs_generic_control",
+          "source_hypotheses_if_used",
+          "full_goal_scope"
+        ],
+        "required_output": [
+          "Seven numbered protocol sections: result, exact hypotheses, proof/derivation, first gap, controls, dependencies/provenance, state effect.",
+          "Assigned report only, no shared edits, sibling access or successor; stop at final SHA256."
+        ],
+        "report_path": "rounds/codex-managed/gc-complete-logarithmic-convolution/reports/complete_nonlinear_prime_attack.md"
+      },
+      {
+        "id": "complete_factor_norm_audit",
+        "role": "seam_reviewer",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "target": "Independently derive and quantitatively test the COMPLETE logarithmic-convolution/Vaughan decomposition of the actual real circle wave in the conductor packet. Audit all f/chi4/Mobius/Lambda factors, short and long ranges, their actual l1/l2 norms, literal cutoff masks, logs, repeated prime powers, real-R uniformity, singleton and full Schwartz tail. Attempt a full nonlinear Type-I/Type-II estimate; if norms are used give the exact resulting exponent and compare to inherited beta. Identify actual signed arithmetic information lost in each closure; any adverse generic vector is not an arithmetic counterexample. All remaining terms must be bounded or explicitly left in the one complete missing inequality; do not create a chain of local survivors. The accepted unweighted exponent-pair kernel may be used only on a legal unweighted interval, with remaining norms restored. One narrow primary theorem audit is permitted if essential and coordinated with conductor; otherwise none. Seven sections, zero experiments. No current sibling/blind packet, shared edits or successor. Assigned report only; stop at final hash.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round225_complete_circle_logarithmic_convolution.md",
+          "rounds/codex-managed/gc-complete-logarithmic-convolution/briefs/conductor_complete_circle_wave.md",
+          "strategy/gauss_circle_strategy_checkpoint_round223_2026-09-28.md",
+          "rounds/codex-managed/m9-m1-complete-gar-prime-amplification/synthesis.md",
+          "rounds/codex-managed/gc-complete-signed-convolution-attack/synthesis.md",
+          "proofs/kernels/gc_complete_square_root_large_values_moment_bound.md",
+          "sources/bourgain_2017_exponent_pair.md",
+          "rounds/codex-managed/gc-full-goal-signed-source-review/synthesis.md"
+        ],
+        "required_controls": [
+          "complete_actual_circle_wave",
+          "logarithmic_identity",
+          "both_character_branches",
+          "literal_vaughan_cutoffs",
+          "prime_powers_and_two",
+          "singleton_log_division",
+          "actual_product_norms",
+          "all_type_i_ii_ranges",
+          "real_radius_uniformity",
+          "cosine_and_complex_scope",
+          "schwartz_tail_and_mixed_scales",
+          "physical_sharp_reconstruction",
+          "statement_only_derivation",
+          "actual_vs_generic_control",
+          "source_hypotheses_if_used",
+          "full_goal_scope"
+        ],
+        "required_output": [
+          "Seven numbered protocol sections: result, exact hypotheses, proof/derivation, first gap, controls, dependencies/provenance, state effect.",
+          "Assigned report only, no shared edits, sibling access or successor; stop at final SHA256."
+        ],
+        "report_path": "rounds/codex-managed/gc-complete-logarithmic-convolution/reports/complete_factor_norm_audit.md"
+      },
+      {
+        "id": "blind_finite_convolution",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "pending",
+        "target": "Read only protocol and isolated statement. Independently prove the logarithmic convolution, both character Vaughan branches, all prime powers and literal truncations, full finite contraction and controls. No application/source/experiment. Seven sections with retained-history disclosure, assigned report only; no shared state or successor; stop at final hash.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/gc-complete-logarithmic-convolution/briefs/blind_finite_convolution_statement.md"
+        ],
+        "required_controls": [
+          "complete_actual_circle_wave",
+          "logarithmic_identity",
+          "both_character_branches",
+          "literal_vaughan_cutoffs",
+          "prime_powers_and_two",
+          "singleton_log_division",
+          "actual_product_norms",
+          "all_type_i_ii_ranges",
+          "real_radius_uniformity",
+          "cosine_and_complex_scope",
+          "schwartz_tail_and_mixed_scales",
+          "physical_sharp_reconstruction",
+          "statement_only_derivation",
+          "actual_vs_generic_control",
+          "source_hypotheses_if_used",
+          "full_goal_scope"
+        ],
+        "required_output": [
+          "Seven numbered protocol sections: result, exact hypotheses, proof/derivation, first gap, controls, dependencies/provenance, state effect.",
+          "Assigned report only, no shared edits, sibling access or successor; stop at final SHA256."
+        ],
+        "report_path": "rounds/codex-managed/gc-complete-logarithmic-convolution/reports/blind_finite_convolution.md",
+        "excluded_context": [
+          "All files except protocol and isolated statement; retained prior history disclosed."
+        ]
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "finite_convolution",
+        "requirement": "All signs, character branches, prime powers, truncation endpoints and finite contractions."
+      },
+      {
+        "id": "nonlinear_factor_estimates",
+        "requirement": "Actual arithmetic vectors, all Type-I/II terms, product masks, source premises and complete parameter optimization."
+      },
+      {
+        "id": "complete_sharp_bridge",
+        "requirement": "Real target, singleton, all scales/tails and physical exponent restoration."
+      }
+    ],
+    "previous_goal_turn_classification": "no_progress_on_complete_bounds_bounded_mechanism_closed_with_verified_controls",
+    "scheduled_review": "Mandatory broad strategy/current-primary review226 after225."
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+    "generated_at": "2026-09-27T22:28:30.221932+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

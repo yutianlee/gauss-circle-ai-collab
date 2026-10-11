@@ -1,0 +1,28 @@
+{
+  "round_index": 217,
+  "status": "green_create_only_obstruction_preflight",
+  "graph_schema": "pass",
+  "campaign_schema": "pass",
+  "state_patch": "pass",
+  "all_400_existing_nodes_and_other_graph_data_unchanged": true,
+  "dependency_cone": "acyclic_and_all_accepted",
+  "dependency_cone_nodes": [
+    "Bourgain-2017-reciprocal-exponent-pair-source-audit",
+    "Divisor-bound-elementary",
+    "GC-complete-distinct-radical-twelfth-reduction",
+    "GC-complete-square-root-large-values-moment-bound",
+    "GC-distinct-radical-absolute-certificate-obstruction",
+    "GC-external-Li-Yang-theta-star",
+    "GC-weighted-square-root-exact-resonance-mass",
+    "H1-H3",
+    "Li-Yang-source-audit"
+  ],
+  "reverse_to_original_graph_bytes": "pass",
+  "replay": "pass",
+  "frozen_scope": "pass",
+  "protected_archive_entries_checked": 402,
+  "numerical_experiments": 0,
+  "analytical_algebraic_percent_at_least": 95,
+  "complete_moment_bound_improved": false,
+  "pointwise_exponent_change": false
+}

@@ -1,0 +1,16 @@
+{
+  "round_index": 230,
+  "completed_at": "2026-10-11T02:22:08.225186+00:00",
+  "decision": "close_user_requested_review_revise_admission_strategy_no_automatic_successor",
+  "terminal_label": "review_strategy_reset_no_new_complete_bound",
+  "graph_mutation": false,
+  "main_result": "Status review confirms last complete accepted gain204 and25 subsequent no-gain rounds. Kim–Ko v3 changes weight scope but not the tested complete bound; Yang family mismatch persists. Correct all-order216 attribution forward, retain reviewed228 component, and require new complete quantitative input before another analytic round.",
+  "resulting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+  "patch_effect": "0_create_0_update_0_correct_0_reject_12_no_change",
+  "complete_moment_bound_improved": false,
+  "complete_frontier_bound_improved": false,
+  "pointwise_exponent_change": false,
+  "source_revision_found": true,
+  "authority_attribution_corrected_forward": true,
+  "goal_turn_classification": "completed_requested_status_review_with_strategy_correction_no_complete_analytic_gain"
+}

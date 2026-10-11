@@ -1,0 +1,7 @@
+# Nonauthor source/restoration seam
+
+Same bounded Round231 admission packet; no new round. Your attack report is frozen. Read reports/quadratic_source_audit.md (SHA256 ce861af26fb579ecda5cf5f4a208f28a48ce13ea06744494045030a69c08ff67), conductor_type_i_main.md, complete_interface.md, the accepted complete moment kernel, and the primary exact versions cited in the source report. Review only source correctness, actual-coefficient specialization, degree/length/complexity and residual restoration. Main Type-I regrouping is being independently reviewed elsewhere, but test its coupling to the source's patch-dependent approximant and check inherited supremum qualifications.
+
+Determine whether quartic patches validly yield V_N<=N^(1/4-kappa), whether summing tails/endpoints and generic distribution is legal, and whether the stated residual gates kappa>1/4-beta and kappa>=73/500 are correctly scoped to that particular ceiling certificate. Check source B's actual coefficient and exceptional-set claims. Pay exact first/last partial intervals. No arbitrary-mask import of the actual supremum. Give PASS, scoped correction, or fail with proof and exact source URLs/theorem numbers. Do not just agree with claimant.
+
+Write only reviews/source_restoration_seam_review.md, seven protocol sections, final SHA256. At most one repair/review cycle. Do not edit source report, state, synthesis or successor.

@@ -1,0 +1,67 @@
+{
+  "round_index": 204,
+  "campaign_id": "gc-complete-large-values-duality",
+  "starting_graph_sha256": "abc88f6cd29d757b880037b6f600b802a22ac4b57fcce40662205150f3ed8ceb",
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "GC-complete-square-root-large-values-moment-bound",
+        "type": "lemma",
+        "track": "proof_infrastructure",
+        "status": "proved_internal",
+        "title": "Complete square-root large-value distribution and improved recorded circle moments",
+        "statement_tex": "For fixed real even Schwartz Psi, fixed bounded measurable nonnegative w supported in [c,C] subset (0,infinity), real T>=2 and every real U>=0, let B_(T,U)(R)=sum_(n>U)r_2(n)n^(-3/4)Psi(sqrt(n/T))cos(2pi R sqrt(n)-3pi/4). Uniformly in U and V>=1, D_(T,U)(V)=integral w(R/T)1_(|B_(T,U)|>V)dR <<_epsilon T^epsilon(V^(-2)+T V^(-136/13)). The proof includes singleton n=1, all partial dyadic blocks, the infinite Schwartz tail, the exact Gram diagonal and the full localization ceiling. For Psi the Fourier transform of a fixed nonnegative real radial smooth unit-mass mollifier supported in the unit disk, theta=theta_LY and beta=2theta-1/2, every fixed p>=2 satisfies integral w(R/T)|B_(T,0)(R)|^p dR <<_(p,epsilon) T^(1+epsilon)+T^((p-2)beta+epsilon). The same moment bound holds for U=floor(T^(1/2047)), not asserted uniformly for all U. For the inclusive sharp discrepancy and real Y>=4, integral_(Y/2)^(3Y)|P(x)|^p dx <<_(p,epsilon)Y^(1+p/4+epsilon)+Y^(1+(p-2)theta+epsilon). In particular p=12 gives Y^(1+10theta+epsilon), normalized sixth-power norm T^(5beta+epsilon), and the conjectural-order moment endpoint q_star=2+1/beta>262/27. This improves the recorded project moment comparison without a novelty claim. It does not prove the stronger Round204 distribution, any M1/M2 parent, a better pointwise exponent or the quarter theorem. The aligned arbitrary-coefficient control explains the generic diagonal term; it is not an arithmetic counterexample.",
+        "dependencies": [
+          "H1-H3",
+          "Divisor-bound-elementary",
+          "Bourgain-2017-reciprocal-exponent-pair-source-audit",
+          "GC-external-Li-Yang-theta-star"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "proofs/kernels/gc_complete_square_root_large_values_moment_bound.md",
+            "rounds/codex-managed/gc-complete-large-values-duality/reports/actual_large_values_attack.md",
+            "rounds/codex-managed/gc-complete-large-values-duality/reports/large_values_primary_source_audit.md",
+            "rounds/codex-managed/gc-complete-large-values-duality/reports/blind_gram_covering_audit.md",
+            "rounds/codex-managed/gc-complete-large-values-duality/reviews/gram_tail_seam_review.md",
+            "rounds/codex-managed/gc-complete-large-values-duality/reviews/source_correlation_seam_review.md",
+            "rounds/codex-managed/gc-complete-large-values-duality/reviews/sharp_moment_seam_review.md",
+            "rounds/codex-managed/gc-complete-large-values-duality/controls/conductor_round204_independent_analysis.md",
+            "rounds/codex-managed/gc-complete-large-values-duality/reviews/conductor_round204_reconciliation.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "At the next scheduled strategy review, compare complete arithmetic routes to improve the remaining high values. The generic coefficient norm and correlation estimate do not remove the V^-2 term. Preserve the full quarter target and unchanged source qualifications."
+      }
+    ],
+    "update": [],
+    "correct_rejected": [],
+    "reject": [],
+    "no_change": [
+      "GC-target",
+      "Conditional-bridge",
+      "M9",
+      "M9-M1",
+      "M9-M2",
+      "M9-endpoint-uniformity",
+      "GC-external-Li-Yang-theta-star",
+      "Bourgain-2017-reciprocal-exponent-pair-source-audit",
+      "GC-weighted-square-root-exact-resonance-mass",
+      "GC-physical-twelfth-moment-absolute-majorant-obstruction"
+    ]
+  },
+  "round_assessment": {
+    "terminal_label": "complete_distribution_gain_target_open",
+    "reason": "Promote a complete actual distribution and its improved recorded moment consequences; retain the frozen stronger distribution and all pointwise/parent targets as open."
+  },
+  "reversibility": {
+    "remove_created_ids": [
+      "GC-complete-square-root-large-values-moment-bound"
+    ],
+    "rule": "Remove the sole created node to restore all prior structured graph data and canonical/original raw bytes. Replay agrees except for the new-node timestamp."
+  }
+}

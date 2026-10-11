@@ -1,0 +1,43 @@
+{
+  "round_index": 213,
+  "status": "green_identity_patch_preflight",
+  "graph_schema": "pass",
+  "campaign_schema": "pass",
+  "identity_patch": "pass",
+  "reverse_identity_replay": "pass",
+  "all_399_nodes_and_other_graph_data_unchanged": true,
+  "exact_review_hashes": {
+    "rounds/codex-managed/gc-complete-centered-arithmetic/controls/conductor_centering_ledger.md": "9d626e323eff1239ec7a5fa76def29d0e53c90b48cebd9701894329d12e0a22d",
+    "rounds/codex-managed/gc-complete-centered-arithmetic/reports/centered_divisor_attack.md": "7f826451cb58b578e93c5b4e471eb3ccdc0cda60276fc60551695a1d80e3407e",
+    "rounds/codex-managed/gc-complete-centered-arithmetic/reports/centered_shell_dispersion.md": "f7165a8d41b9541ff54b53442f238f3d295a8dc944b1ee421a95bc6e3b51af28",
+    "rounds/codex-managed/gc-complete-centered-arithmetic/reports/blind_centered_certificate.md": "a16db0ca6ec19bace974febee7df1ed252b766772574a8469edf75dacfcc1e1a"
+  },
+  "three_report_hashes": {
+    "rounds/codex-managed/gc-complete-centered-arithmetic/reports/centered_divisor_attack.md": "7f826451cb58b578e93c5b4e471eb3ccdc0cda60276fc60551695a1d80e3407e",
+    "rounds/codex-managed/gc-complete-centered-arithmetic/reports/centered_shell_dispersion.md": "f7165a8d41b9541ff54b53442f238f3d295a8dc944b1ee421a95bc6e3b51af28",
+    "rounds/codex-managed/gc-complete-centered-arithmetic/reports/blind_centered_certificate.md": "a16db0ca6ec19bace974febee7df1ed252b766772574a8469edf75dacfcc1e1a"
+  },
+  "frozen_scope_and_briefs_unchanged": true,
+  "closed_round200_through212_archives_unchanged": true,
+  "protected_archive_entries_checked": 298,
+  "report_hygiene": [
+    "rounds/codex-managed/gc-complete-centered-arithmetic/synthesis.md",
+    "rounds/codex-managed/gc-complete-centered-arithmetic/briefs/blind_centered_certificate.md",
+    "rounds/codex-managed/gc-complete-centered-arithmetic/briefs/blind_centered_certificate_statement.md",
+    "rounds/codex-managed/gc-complete-centered-arithmetic/briefs/centered_divisor_attack.md",
+    "rounds/codex-managed/gc-complete-centered-arithmetic/briefs/centered_shell_dispersion.md",
+    "rounds/codex-managed/gc-complete-centered-arithmetic/controls/conductor_centering_ledger.md",
+    "rounds/codex-managed/gc-complete-centered-arithmetic/reports/blind_centered_certificate.md",
+    "rounds/codex-managed/gc-complete-centered-arithmetic/reports/centered_divisor_attack.md",
+    "rounds/codex-managed/gc-complete-centered-arithmetic/reports/centered_shell_dispersion.md",
+    "rounds/codex-managed/gc-complete-centered-arithmetic/reviews/conductor_blind_centering_review.md",
+    "rounds/codex-managed/gc-complete-centered-arithmetic/reviews/conductor_round213_reconciliation.md",
+    "rounds/codex-managed/gc-complete-centered-arithmetic/reviews/independent_centering_review.md",
+    "rounds/codex-managed/gc-complete-centered-arithmetic/reviews/independent_periodic_model_review.md",
+    "rounds/codex-managed/gc-complete-centered-arithmetic/reviews/independent_radius_dispersion_review.md"
+  ],
+  "mathematical_numerical_experiments": 0,
+  "analytic_target": "open",
+  "complete_moment_bound_improved": false,
+  "pointwise_exponent_change": false
+}

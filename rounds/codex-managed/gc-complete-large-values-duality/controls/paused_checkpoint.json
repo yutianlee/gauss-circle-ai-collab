@@ -1,0 +1,25 @@
+{
+  "campaign_id": "gc-complete-large-values-duality",
+  "round_index": 204,
+  "recorded_at": "2026-09-23T13:47:04.7693468Z",
+  "execution_status": "paused_goal",
+  "reason": "The goal tool reports paused. Preserve completed reports and stop further research or proof-state changes.",
+  "reports": "All three assigned reports delivered; exact-hash candidate reviews and State Patch have not been completed.",
+  "candidate_status": "Unaccepted candidate; graph unchanged; full target remains open; no claimed pointwise improvement.",
+  "intervention": {
+    "purpose": "Full smoothing reconstruction",
+    "permitted_sections": "2 and 3.1-3.3 only",
+    "frozen_objective_changed": false,
+    "additional_context": "rounds/codex-managed/gc-whole-discrepancy-twelfth-moment/reports/whole_moment_analytic_attack.md",
+    "task_id": "actual_large_values_attack"
+  },
+  "next_action_on_resume": "Review the candidate kernel by independent exact-hash seams, reconcile reports, and close Round204 with validated patch or identity patch. Only then design mandatory Round205 strategy/current-literature review.",
+  "artifact_sha256": {
+    "state/proof_obligations.yml": "abc88f6cd29d757b880037b6f600b802a22ac4b57fcce40662205150f3ed8ceb",
+    "state/best_proof_draft.md": "1f7fb8e1134451b10c14c845896ad7d7d6d16fc1857a2ba2d03a6160d1018e7d",
+    "proofs/kernels/gc_complete_square_root_large_values_moment_bound.md": "5f0c1efcdb230b7ba73206dc960a95a58a6fd03166deb8340f00ed46ab532c6e",
+    "rounds/codex-managed/gc-complete-large-values-duality/reports/actual_large_values_attack.md": "1af3924b18e604ad0d6795d329eb6d33e825ac99606a70fd247dd21430f5fb98",
+    "rounds/codex-managed/gc-complete-large-values-duality/reports/blind_gram_covering_audit.md": "340eed3ddd8bfb329a77d8583bdb32e00bf45cbbbfa58f4c322f0c1c0266db16",
+    "rounds/codex-managed/gc-complete-large-values-duality/reports/large_values_primary_source_audit.md": "15685e292a53f27caf543b6276628964699b751fde66bee9d917b7dfcc275e86"
+  }
+}

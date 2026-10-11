@@ -1,0 +1,32 @@
+{
+  "round_index": 225,
+  "campaign_id": "gc-complete-logarithmic-convolution",
+  "starting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+  "proof_obligations": {
+    "create": [],
+    "update": [],
+    "correct_rejected": [],
+    "reject": [],
+    "no_change": [
+      "GC-target",
+      "Conditional-bridge",
+      "M9",
+      "M9-M1",
+      "M9-M2",
+      "M9-endpoint-uniformity",
+      "M9-M1-global-angular-radial-estimate",
+      "M9-M1-global-lower-radial-signed-estimate",
+      "M9-M1-GAR-total-active-equivalence",
+      "GC-external-Li-Yang-theta-star",
+      "GC-complete-square-root-large-values-moment-bound",
+      "GC-complete-distinct-radical-twelfth-reduction"
+    ]
+  },
+  "round_assessment": {
+    "terminal_label": "complete_logarithmic_convolution_no_new_bound",
+    "reason": "Both actual logarithmic/Vaughan branches and their full inverse contractions are valid, but no complete signed bound below inherited beta is obtained. The scoped generic factor certificate can reach47/378 locally at N=T^(2/3); even freely granting optimal factors at every scale leaves worst exponent81/614 at N=T^(226/307), above beta. All actual cutoff terms, norms, singleton, infinite tail and sharp reconstruction are paid. Upper-certificate capacity is not an actual arithmetic lower bound. No complete real, moment or pointwise gain."
+  },
+  "reversibility": {
+    "rule": "Identity in-memory application, inverse and replay; graph and proof-draft bytes never rewritten."
+  }
+}

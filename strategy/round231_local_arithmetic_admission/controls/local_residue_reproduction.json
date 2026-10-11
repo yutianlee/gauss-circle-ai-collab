@@ -1,0 +1,15 @@
+{
+  "diagnostic_only": true,
+  "report_sha256": "403e2c52c67dd46d033a06ae0d002d308dd695af1018241463f5c91410f67d41",
+  "script_sha256": "b728ef4494d537f77a896476ac06e6ca890ea46948c7a1ed0c89018a55dc4e1b",
+  "command": [
+    "C:\\Users\\yutia\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "strategy\\round231_local_arithmetic_admission\\controls\\reproduce_local_residue_report.py"
+  ],
+  "exit_code": 0,
+  "stdout": "PASS exact residue formulas, CRT, zero-mode total, odd Ramanujan inversion and odd Fourier L1 product\nmoduli= [1, 3, 5, 7, 9, 15, 25, 27, 45, 49, 63, 81, 105, 2, 4, 8, 16, 32, 64, 12, 20, 24, 36, 40, 60]\nresidue_cases= 753\nNo floating-point computation; diagnostic_only.\n",
+  "stderr": "",
+  "precision": "Exact integers and fractions only",
+  "pass_rule": "Every exhaustive residue/formula assertion passes and exit_code=0",
+  "limitations": "Finite checks do not prove an asymptotic estimate."
+}

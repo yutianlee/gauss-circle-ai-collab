@@ -1,0 +1,17 @@
+{
+  "diagnostic_only": true,
+  "command": "python strategy/round231_harmonic_admission/controls/reproduce_exact_controls.py",
+  "precision": "Exact Python fractions and integers; no floating point",
+  "common_multiple_majorant": "241757181358081099469/51998697814228992000000000",
+  "strict_common_multiple_bound": "pass: <1/200000",
+  "square_divisor_price": "23/24",
+  "retained_fraction": "1/24",
+  "common_multiple_margin": "6105740110417918900531/25999348907114496000000000",
+  "margin_exceeds": "pass: >1/8192",
+  "full_per_tuple_margin": "pass: 1/8192-2/65536>1/16384",
+  "discovery_bounded_vector_removal": "28/25",
+  "blind_overlap_exponent": "9/4",
+  "smallest_split_prime_inequality": "pass: 3^4<5^3",
+  "wolfram_reproduction": "pass",
+  "limitations": "Only finite rational comparisons are checked. Infinite series are bounded analytically in the reports; no truncated Euler product, numerical moment, or sampled asymptotic is used."
+}

@@ -1,0 +1,32 @@
+{
+  "round_index": 221,
+  "campaign_id": "gc-actual-vector-gram-correlations",
+  "starting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+  "proof_obligations": {
+    "create": [],
+    "update": [],
+    "correct_rejected": [],
+    "reject": [],
+    "no_change": [
+      "GC-target",
+      "Conditional-bridge",
+      "M9",
+      "M9-M1",
+      "M9-M2",
+      "M9-endpoint-uniformity",
+      "M9-M2-smooth-unbalanced-three-quarter-estimate",
+      "GC-external-Li-Yang-theta-star",
+      "GC-weighted-square-root-exact-resonance-mass",
+      "GC-complete-square-root-large-values-moment-bound",
+      "GC-complete-distinct-radical-twelfth-reduction",
+      "GC-distinct-radical-absolute-certificate-obstruction"
+    ]
+  },
+  "round_assessment": {
+    "terminal_label": "complete_actual_correlation_attempt_no_new_bound",
+    "reason": "The fixed-offset sixth-chain average loses endpoint phases and its complete certificate has a T^(10beta) floor on actual masked magnitudes, certified by a different real rephasing. Exact pair-divisor completion has a small zero mode but its entire nonzero-mode package retains the full correlation capacity; the phase-erased actual Fejer certificate costs T^3 globally. Both attacks restore every block, level and tail and leave the accepted complete10beta bound unchanged. Finite identities and scoped certificate bounds are reviewed evidence, not a new complete estimate or an actual signed lower bound."
+  },
+  "reversibility": {
+    "rule": "Identity in-memory application, inverse and replay; graph and proof-draft bytes never rewritten."
+  }
+}

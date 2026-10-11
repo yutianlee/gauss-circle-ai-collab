@@ -1,0 +1,182 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 204,
+    "round_type": "complete_large_values_analytic_attack",
+    "campaign_id": "gc-complete-large-values-duality",
+    "title": "Actual square-root large values with full Gram diagonal",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "abc88f6cd29d757b880037b6f600b802a22ac4b57fcce40662205150f3ed8ceb",
+    "generated_at": "2026-09-23T13:36:12.044193+00:00",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "planned_numerical_percent": 0,
+      "budget": "Three bounded analytical/source reports, conductor independent derivation, and one repair/seam-review cycle. No mathematical numerical experiments."
+    },
+    "target_obligations": [
+      "GC-target",
+      "GC-external-Li-Yang-theta-star",
+      "Bourgain-2017-reciprocal-exponent-pair-source-audit",
+      "GC-physical-twelfth-moment-absolute-majorant-obstruction"
+    ],
+    "frozen_target": {
+      "question": "Can actual finite-vector large-values analysis prove the complete high-value distribution required by the twelfth-moment target?",
+      "reference_formula": "D_T(V)<<T^(29/25+epsilon)V^(-12) for T^(54/775)<=V<=T^(beta+epsilon), beta=2theta_LY-1/2",
+      "quantities": [
+        "Exact actual B_T and window in frozen strategy.",
+        "Candidate weaker envelope T^epsilon(V^-2+T V^(-136/13)) must be proved, not assumed.",
+        "Keep the complete diagonal, all localization intervals and upper tails; a generic aligned counterexample is not an arithmetic counterexample."
+      ]
+    },
+    "completion_criteria": [
+      "Three bounded reports and a statement-only independent Gram/covering control.",
+      "Complete actual level-set inequality or exact first failed step with no lost diagonal, ceiling or tail.",
+      "Primary square-root source applicability and all powers independently checked.",
+      "Any new complete proved kernel receives exact-hash independent reviews and graph validation; otherwise identity patch.",
+      "Distinguish better moments from pointwise progress and keep full quarter goal."
+    ],
+    "controls": [
+      "actual_coefficients",
+      "complete_distribution",
+      "full_diagonal_and_ceiling",
+      "source_hypotheses",
+      "all_tails_and_ranges",
+      "real_uniformity",
+      "net_moment_and_pointwise_powers",
+      "independent_statement_only_control",
+      "no_parent_overclaim"
+    ],
+    "exit_labels": [
+      "complete_target_distribution_proved",
+      "complete_distribution_gain_target_open",
+      "large_values_attempt_no_new_bound"
+    ],
+    "tasks": [
+      {
+        "id": "actual_large_values_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "target": "Attack the frozen full actual large-value distribution using finite-vector duality and localized Gram matrices. Prove or refute the candidate D(V)<<T^epsilon(V^-2+T V^(-136/13)) by deriving the correlation interpolation from the accepted source card plus elementary derivatives, all small-u regimes, real level-set covering and full dyadic/tail recombination. Preserve all diagonal and ceiling terms. Then attempt the coefficient-sensitive improvement needed to reach the frozen target; identify exactly why any generic bound falls short. Derive the best complete moment consequence with the accepted pointwise exponent only after pricing its exact smoothing interface; do not just substitute into a printed endpoint. Seven sections and stop.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round204_complete_large_values_attack.md",
+          "rounds/codex-managed/gc-complete-signed-convolution-attack/synthesis.md",
+          "sources/bourgain_2017_exponent_pair.md",
+          "rounds/codex-managed/gc-complete-signed-convolution-attack/reports/arithmetic_signed_tail_attack.md",
+          "rounds/codex-managed/gc-strategy-signed-moment-majorant-review/reports/signed_cutoff_tail_moment_audit.md"
+        ],
+        "required_controls": [
+          "actual_coefficients",
+          "complete_distribution",
+          "full_diagonal_and_ceiling",
+          "source_hypotheses",
+          "all_tails_and_ranges",
+          "real_uniformity",
+          "net_moment_and_pointwise_powers",
+          "independent_statement_only_control",
+          "no_parent_overclaim"
+        ],
+        "required_output": [
+          "Seven-section report: result, exact hypotheses, proof, first gap, controls, dependencies, state effect.",
+          "Write only assigned report; no graph/draft/matrix/synthesis/source-card/successor edits."
+        ],
+        "report_path": "rounds/codex-managed/gc-complete-large-values-duality/reports/actual_large_values_attack.md"
+      },
+      {
+        "id": "large_values_primary_source_audit",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "target": "Audit primary sources for this specific complete large-values attempt. Check Bourgain2017 global Theorem6 on f(n)=u sqrt(n), its derivative class, proper intervals and all source parameter ranges; compare interpolation with the elementary second derivative estimate and the proposed exponent13/55. Independently audit the original circle large-values/moment trail (Ivic1990, published Tsang-Zhai q0 benchmark, or directly accessible primary proof) for whether q0=262/27 is fixed by an older pointwise exponent and exactly what an update would require. Prioritize at most two full primary proofs. Do not guess a new endpoint. Report applicability, exact theorem locations and costs, including negative conclusions. Seven sections, write only report and stop.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round204_complete_large_values_attack.md",
+          "rounds/codex-managed/gc-complete-signed-convolution-attack/synthesis.md",
+          "sources/bourgain_2017_exponent_pair.md",
+          "rounds/codex-managed/gc-whole-discrepancy-twelfth-moment/reports/circle_moment_primary_source_audit.md",
+          "rounds/codex-managed/gc-strategy-signed-moment-majorant-review/reports/signed_cutoff_tail_moment_audit.md"
+        ],
+        "required_controls": [
+          "actual_coefficients",
+          "complete_distribution",
+          "full_diagonal_and_ceiling",
+          "source_hypotheses",
+          "all_tails_and_ranges",
+          "real_uniformity",
+          "net_moment_and_pointwise_powers",
+          "independent_statement_only_control",
+          "no_parent_overclaim"
+        ],
+        "required_output": [
+          "Seven-section report: result, exact hypotheses, proof, first gap, controls, dependencies, state effect.",
+          "Write only assigned report; no graph/draft/matrix/synthesis/source-card/successor edits."
+        ],
+        "report_path": "rounds/codex-managed/gc-complete-large-values-duality/reports/large_values_primary_source_audit.md"
+      },
+      {
+        "id": "blind_gram_covering_audit",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "pending",
+        "target": "Solve the isolated Gram/covering problem independently, retaining diagonal, localization ceilings and a one-peak aligned control. No claimant or sibling reads. Seven sections and stop.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/gc-complete-large-values-duality/briefs/blind_gram_statement.md"
+        ],
+        "required_controls": [
+          "actual_coefficients",
+          "complete_distribution",
+          "full_diagonal_and_ceiling",
+          "source_hypotheses",
+          "all_tails_and_ranges",
+          "real_uniformity",
+          "net_moment_and_pointwise_powers",
+          "independent_statement_only_control",
+          "no_parent_overclaim"
+        ],
+        "required_output": [
+          "Seven-section report: result, exact hypotheses, proof, first gap, controls, dependencies, state effect.",
+          "Write only assigned report; no graph/draft/matrix/synthesis/source-card/successor edits."
+        ],
+        "report_path": "rounds/codex-managed/gc-complete-large-values-duality/reports/blind_gram_covering_audit.md",
+        "excluded_context": [
+          "Graph, manifest, strategy, source cards, every prior/claimant/sibling derivation."
+        ]
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "duality_covering",
+        "requirement": "Finite Gram normalization, sample separation, all localization regimes."
+      },
+      {
+        "id": "source_and_moments",
+        "requirement": "Exact source class and complete error/exponent reconstruction."
+      },
+      {
+        "id": "scope",
+        "requirement": "Actual weights versus generic controls; moment versus pointwise improvement."
+      }
+    ],
+    "previous_goal_turn_classification": "progress_completed_analytic_attempt_changed_next_action_no_exponent_gain",
+    "scheduled_review": "Round205 mandatory broad strategy/current-literature review after202--204."
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "abc88f6cd29d757b880037b6f600b802a22ac4b57fcce40662205150f3ed8ceb",
+    "generated_at": "2026-09-23T13:36:13.138408+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

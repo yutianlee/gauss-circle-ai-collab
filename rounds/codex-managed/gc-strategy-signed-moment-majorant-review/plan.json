@@ -1,0 +1,189 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 202,
+    "round_type": "scheduled_strategy_literature_and_signed_moment_gate",
+    "campaign_id": "gc-strategy-signed-moment-majorant-review",
+    "title": "Scheduled strategy review and physical signed-moment majorant gate",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "682cb189a3ab0ef26f8d19701e2949547446d37505df01f7b7eaf1cfdd0f359c",
+    "generated_at": "2026-09-23T12:39:29.931182+00:00",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "planned_numerical_percent": 0,
+      "budget": "Three bounded analytical/source reports and one repair/seam-review cycle. No numerical experiments."
+    },
+    "target_obligations": [
+      "GC-target",
+      "GC-external-Li-Yang-theta-star",
+      "GC-weighted-square-root-exact-resonance-mass",
+      "M9-M1",
+      "M9-M2"
+    ],
+    "frozen_target": {
+      "question": "Which complete signed analytic route survives the current-source and actual-coefficient majorant audit and merits the next campaign toward the quarter theorem?",
+      "reference_formula": "Round200 actual Q_R<<L^2 X^epsilon; Round201 actual O_12(T)<<T^(1+2eta+epsilon), eta<13theta_LY-4. Test physical nonzero balanced near-resonance positive subsum >=c T^(5/2) and audit cutoff-tail alternatives; do not infer a signed-moment lower bound.",
+      "quantities": [
+        "T=sqrt(Y), fixed a_n(T)=r_2(n)n^(-3/4)Psi(sqrt(n/T)); w fixed supported away from zero.",
+        "Existing graph/exponents remain authoritative. Any majorant no-go concerns only termwise absolute Fourier expansion.",
+        "Any successor must preserve the actual source and restore all coefficient, cutoff, tail and reconstruction powers."
+      ]
+    },
+    "completion_criteria": [
+      "Dated primary-source and full-frontier review.",
+      "Independent physical majorant proof/refutation with exact resonance deletion.",
+      "Complete cutoff-dependent signed-tail sufficient inequality and source gap.",
+      "One conductor strategy choice justified by reviewed evidence.",
+      "Required seams and mechanically reversible State Patch; no exponent overclaim."
+    ],
+    "controls": [
+      "complete_source_scope",
+      "physical_coefficients",
+      "current_primary_hypotheses",
+      "withdrawals_and_versions",
+      "signed_absolute_distinction",
+      "all_costs_restored",
+      "exact_nonzero_resonance_split",
+      "real_endpoint_uniformity",
+      "independent_statement_only_control",
+      "full_proof_frontier",
+      "no_parent_or_exponent_overclaim"
+    ],
+    "exit_labels": [
+      "strategy_review_with_complete_signed_next_target",
+      "strategy_review_no_source_compatible_gain"
+    ],
+    "tasks": [
+      {
+        "id": "current_primary_methods_audit",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "target": "Perform the scheduled dated current-primary-literature review for the full Gauss circle goal. Use the actual Round-200 and Round-201 complete interfaces. Check strongest claims and withdrawals, then audit a bounded set of recent decoupling/amplitude, bilinear Kloosterman, trace-function or spectral methods from the supplied strategy. Match exact arithmetic kernel, coefficient class, modulus, lengths, averaging variable, norm costs and endpoints. Prioritize full theorem text and at most two concrete potential imports. Do not repeat prior audits without checking what changed; report first unmet hypothesis and net exponent, not paper names. Current leads include Blomer-Pascadi 2607.24311, Pascadi 2511.08445, Milicevic-Qin-Wu 2511.07550, Fouvry-Kowalski-Michel-Sawin 2511.09459, and amplitude-dependent cone methods. Bounded corpus, no universal literature claim. Seven-section report; no sibling reads or shared edits.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round202_strategy_literature_signed_moment_review.md",
+          "strategy/gauss_circle_strategy_review_2026-09-23.md",
+          "rounds/codex-managed/m9-m1-t1-complete-source-coefficient-mask-analysis/synthesis.md",
+          "rounds/codex-managed/gc-whole-discrepancy-twelfth-moment/synthesis.md",
+          "rounds/codex-managed/gc-whole-discrepancy-twelfth-moment/reports/circle_moment_primary_source_audit.md",
+          "sources/li_yang_2023.md"
+        ],
+        "required_controls": [
+          "complete_source_scope",
+          "physical_coefficients",
+          "current_primary_hypotheses",
+          "withdrawals_and_versions",
+          "signed_absolute_distinction",
+          "all_costs_restored",
+          "exact_nonzero_resonance_split",
+          "real_endpoint_uniformity",
+          "independent_statement_only_control",
+          "full_proof_frontier",
+          "no_parent_or_exponent_overclaim"
+        ],
+        "required_output": [
+          "Seven-section report: result, hypotheses, proof, first open step, controls, dependencies, state recommendation.",
+          "Write only assigned report; no graph, draft, synthesis, validation, source-card or next-round edits."
+        ],
+        "report_path": "rounds/codex-managed/gc-strategy-signed-moment-majorant-review/reports/current_primary_methods_audit.md"
+      },
+      {
+        "id": "signed_cutoff_tail_moment_audit",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "target": "Derive and audit a complete cutoff-dependent route to the actual twelfth moment. Split H_T into n<=U and n>U, keep actual coefficients and fixed window. Inspect primary circle higher-moment/large-values methods for their actual residual or truncated-series estimates and ranges (Zhai II 0805.1270 and applicable original sources). Determine whether those estimates, with exact full tails and accepted theta_LY, beat eta_0=(62/27)(theta_LY-1/4); do not guess a new admissible q by substituting theta. Give a concrete sufficient signed tail inequality with complete T,U exponent accounting, and identify the first new estimate needed. Address why known low moments do not imply a twelfth moment. Work independently of sibling reports; no shared edits. Seven-section report and stop.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round202_strategy_literature_signed_moment_review.md",
+          "rounds/codex-managed/gc-whole-discrepancy-twelfth-moment/synthesis.md",
+          "rounds/codex-managed/gc-whole-discrepancy-twelfth-moment/reports/whole_moment_analytic_attack.md",
+          "rounds/codex-managed/gc-whole-discrepancy-twelfth-moment/reports/circle_moment_primary_source_audit.md"
+        ],
+        "required_controls": [
+          "complete_source_scope",
+          "physical_coefficients",
+          "current_primary_hypotheses",
+          "withdrawals_and_versions",
+          "signed_absolute_distinction",
+          "all_costs_restored",
+          "exact_nonzero_resonance_split",
+          "real_endpoint_uniformity",
+          "independent_statement_only_control",
+          "full_proof_frontier",
+          "no_parent_or_exponent_overclaim"
+        ],
+        "required_output": [
+          "Seven-section report: result, hypotheses, proof, first open step, controls, dependencies, state recommendation.",
+          "Write only assigned report; no graph, draft, synthesis, validation, source-card or next-round edits."
+        ],
+        "report_path": "rounds/codex-managed/gc-strategy-signed-moment-majorant-review/reports/signed_cutoff_tail_moment_audit.md"
+      },
+      {
+        "id": "blind_physical_near_resonance_mass",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "pending",
+        "target": "Prove or refute the actual-coefficient positive near-resonance statement from the isolated packet, including nonzero-frequency deletion and exact consequence for termwise absolute majorants. Preserve statement-only isolation. Seven-section report and stop.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/gc-strategy-signed-moment-majorant-review/briefs/blind_physical_mass_statement.md"
+        ],
+        "required_controls": [
+          "complete_source_scope",
+          "physical_coefficients",
+          "current_primary_hypotheses",
+          "withdrawals_and_versions",
+          "signed_absolute_distinction",
+          "all_costs_restored",
+          "exact_nonzero_resonance_split",
+          "real_endpoint_uniformity",
+          "independent_statement_only_control",
+          "full_proof_frontier",
+          "no_parent_or_exponent_overclaim"
+        ],
+        "required_output": [
+          "Seven-section report: result, hypotheses, proof, first open step, controls, dependencies, state recommendation.",
+          "Write only assigned report; no graph, draft, synthesis, validation, source-card or next-round edits."
+        ],
+        "report_path": "rounds/codex-managed/gc-strategy-signed-moment-majorant-review/reports/blind_physical_near_resonance_mass.md",
+        "excluded_context": [
+          "Graph, proof draft, manifest, strategy, all claimant/sibling or historical derivations."
+        ]
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "physical_majorant",
+        "requirement": "Independent physical coefficients, real endpoints, nonzero exclusion, signed-scope control."
+      },
+      {
+        "id": "source_and_tail",
+        "requirement": "Primary theorem conditions and complete cutoff exponent bookkeeping."
+      },
+      {
+        "id": "full_proof_strategy",
+        "requirement": "Compare complete routes and select one exact next inequality without treating mechanism exclusions as exponent gain."
+      }
+    ],
+    "scheduled_review": "Round202 satisfies review after199--201. Next checkpoint Round205 after202--204."
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "682cb189a3ab0ef26f8d19701e2949547446d37505df01f7b7eaf1cfdd0f359c",
+    "generated_at": "2026-09-23T12:39:30.223670+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

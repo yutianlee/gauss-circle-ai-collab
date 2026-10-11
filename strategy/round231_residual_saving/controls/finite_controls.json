@@ -1,0 +1,104 @@
+{
+  "diagnostic_only": true,
+  "status": "passed",
+  "command": "python strategy/round231_residual_saving/controls/reproduce_controls.py",
+  "chi4_tail_diagnostic": {
+    "precision_digits": 80,
+    "rows": [
+      {
+        "z": 5,
+        "2zA(z)": "1.1873149673078164294899417915320905438262568317710978857706948141028743490488563",
+        "scaled_zero_phase_mean": "-32.881618998844230739529562281341974070959233991145289310344015315484293928544724",
+        "scaled_quarter_phase_mean": "1.1873149673078164294899417915320905438262568317710978857706948141028743490488563"
+      },
+      {
+        "z": 9,
+        "2zA(z)": "1.1085955125826410016533237961863344074586908686165476229586792368137452568593700",
+        "scaled_zero_phase_mean": "-33.642879746864124915464777378286234925816739282861710156624003650657921214932649",
+        "scaled_quarter_phase_mean": "1.1085955125826410016533237961863344074586908686165476229586792368137452568593700"
+      },
+      {
+        "z": 17,
+        "2zA(z)": "1.0584271104027974164873583127653294052308294495779543678419185895059943429876679",
+        "scaled_zero_phase_mean": "-33.861547371846158172450620438942174541413087250999123339372849997818413462916295",
+        "scaled_quarter_phase_mean": "1.0584271104027974164873583127653294052308294495779543678419185895059943429876679"
+      },
+      {
+        "z": 41,
+        "2zA(z)": "1.0243613619000694389840128909398750518735800443580250862348313807334105961638375",
+        "scaled_zero_phase_mean": "-33.949715187315609278636136788411640643813901286665672275284391102815588765397809",
+        "scaled_quarter_phase_mean": "1.0243613619000694389840128909398750518735800443580250862348313807334105961638375"
+      }
+    ],
+    "limits": {
+      "scaled_zero_phase_mean": -34,
+      "scaled_quarter_phase_mean": 1
+    }
+  },
+  "inverse_common_exponent_control": [
+    {
+      "p": 5,
+      "degree": 2,
+      "modulus": 25,
+      "exact_complete_sum": 5
+    },
+    {
+      "p": 5,
+      "degree": 3,
+      "modulus": 125,
+      "exact_complete_sum": 25
+    },
+    {
+      "p": 5,
+      "degree": 4,
+      "modulus": 625,
+      "exact_complete_sum": 125
+    },
+    {
+      "p": 7,
+      "degree": 5,
+      "modulus": 16807,
+      "exact_complete_sum": 2401
+    },
+    {
+      "p": 7,
+      "degree": 6,
+      "modulus": 117649,
+      "exact_complete_sum": 16807
+    },
+    {
+      "p": 7,
+      "degree": 2,
+      "modulus": 49,
+      "exact_complete_sum": 7
+    },
+    {
+      "p": 7,
+      "degree": 3,
+      "modulus": 343,
+      "exact_complete_sum": 49
+    },
+    {
+      "p": 7,
+      "degree": 4,
+      "modulus": 2401,
+      "exact_complete_sum": 343
+    }
+  ],
+  "exact_exponents": {
+    "strip_sup": "33787/262500",
+    "strip_M12": "33787/26250",
+    "common_C_all_degree_maximum_saving": "7/72",
+    "conditional_separate_A3_B4_sup": "23/180",
+    "conditional_separate_A3_B4_M12": "23/18"
+  },
+  "all_degree_identity": "7/72-(4d-5)/(6d(d+1))=(d-3)(7d-20)/(72d(d+1)); nonnegative for integers d>=2",
+  "adaptive_factor_cutoff": {
+    "T_exponent": "-533/5250",
+    "x_exponent": "29/84",
+    "top_scale_cutoff": "853/3500",
+    "supremum": "13/125",
+    "M12": "29/25",
+    "diagnostic_only": true
+  }
+}

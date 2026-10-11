@@ -1,0 +1,204 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 226,
+    "round_type": "mandatory_full_goal_spectral_source_review",
+    "campaign_id": "gc-full-goal-spectral-source-review",
+    "title": "Full-goal spectral, shifted-convolution and theta source review",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+    "generated_at": "2026-09-27T22:55:43.153082+00:00",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 95,
+      "numerical_experimental_maximum_percent": 5,
+      "planned_numerical_percent": 0,
+      "budget": "Three bounded reports, at most two exact theorem audits per source role, one review/repair cycle, zero experiments."
+    },
+    "target_obligations": [
+      "GC-target",
+      "M9-M1",
+      "M9-M2",
+      "GC-complete-square-root-large-values-moment-bound",
+      "GC-complete-distinct-radical-twelfth-reduction"
+    ],
+    "frozen_target": {
+      "question": "Can a current exactly applicable spectral, shifted-convolution or theta/wave source advance a complete full-proof frontier after223--225, and what complete next estimate is justified?",
+      "reference_formula": "Full P(X)<<X^(1/4+epsilon); complete actual real B_T(R)<<T^epsilon, all M1/M2/GAR/endpoints or a sufficient unbounded fixed-order moment family. Local factor or transform identities are not gains.",
+      "quantities": [
+        "Every real radius, actual coefficients, all shifts, parameter dependence, exceptional spectra, masks, endpoints and tails.",
+        "Inherited beta is only complete real; fixed twelfth29/25 is only102/325.",
+        "Existing223 chirp,224 angular commutator,225 all-scale81/614 and221 alias costs remain scoped evidence.",
+        "Complex contour identity and its absolute transfer norm are different from an actual oscillatory lower bound."
+      ]
+    },
+    "completion_criteria": [
+      "Two bounded current-primary and complete-frontier reports plus isolated subordination derivation.",
+      "Independent final-hash source/application and control reviews, strategy checkpoint and exact full costs.",
+      "Validated complete gain or explicit no-gain synthesis and State Patch; close226 before successor227."
+    ],
+    "controls": [
+      "current_primary_versions",
+      "exact_source_hypotheses",
+      "actual_coefficients_and_phase",
+      "growing_parameter_uniformity",
+      "spectral_and_contour_costs",
+      "complete_frontiers",
+      "all_shifts_endpoints_and_tails",
+      "real_complex_and_average_scope",
+      "full_power_restoration",
+      "actual_vs_certificate_scope",
+      "statement_only_control",
+      "fixed_unbounded_order_scope"
+    ],
+    "exit_labels": [
+      "complete_spectral_source_gain_requires_validation",
+      "strategy_spectral_source_review_no_complete_gain"
+    ],
+    "tasks": [
+      {
+        "id": "actual_shifted_spectral_sources",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "target": "Bounded current-primary audit of actual r2(n+h)r2(n) spectral/shifted-convolution estimates, at most TWO exact theorem audits. Start from Hulse-Kuan-Lowry-Duda-Walker arXiv1705.04771 and inspect its current exact primary theorem text, shift dependence, smoothed versus sharp error, spectral exceptional terms and test-function dependence. Screen a distinct current extension only if source-compatible. Map the actual nonlinear C_h(R) packet, with R~T, growing shifts and all overlapping endpoints; price every derivative or Mellin/contour norm, main term, error and all shifts. Compare full restored wave/moment costs, not a small zero mode. Round221 already priced elementary divisor completion; do not repeat it or use withdrawn Kim2509.24152. No cusp, function-field or fixed-h substitution without proof. Recommend ONE complete quantified next inequality with a reason to expect genuinely new arithmetic input, or a precise first failed premise. Full quarter and unbounded fixed-order scope preserved. Seven sections, exact primary URLs/versions/theorem numbers, zero experiments; assigned report only, no siblings/shared edits/successor, stop at final hash.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round226_full_goal_spectral_source_review.md",
+          "strategy/gauss_circle_strategy_review_2026-09-23.md",
+          "strategy/gauss_circle_strategy_checkpoint_round223_2026-09-28.md",
+          "rounds/codex-managed/gc-full-goal-spectral-source-review/briefs/conductor_complete_spectral_interfaces.md",
+          "rounds/codex-managed/gc-complete-logarithmic-convolution/synthesis.md",
+          "rounds/codex-managed/m9-m1-complete-gar-prime-amplification/synthesis.md",
+          "proofs/kernels/gc_complete_square_root_large_values_moment_bound.md",
+          "rounds/codex-managed/gc-actual-vector-gram-correlations/synthesis.md",
+          "rounds/codex-managed/gc-actual-vector-gram-correlations/reports/actual_shifted_correlations.md",
+          "proofs/kernels/gc_complete_distinct_radical_moment_reduction.md"
+        ],
+        "required_controls": [
+          "current_primary_versions",
+          "exact_source_hypotheses",
+          "actual_coefficients_and_phase",
+          "growing_parameter_uniformity",
+          "spectral_and_contour_costs",
+          "complete_frontiers",
+          "all_shifts_endpoints_and_tails",
+          "real_complex_and_average_scope",
+          "full_power_restoration",
+          "actual_vs_certificate_scope",
+          "statement_only_control",
+          "fixed_unbounded_order_scope"
+        ],
+        "required_output": [
+          "Seven numbered protocol sections: result, exact hypotheses, derivation, first gap, controls, dependencies/provenance, recommended state effect.",
+          "Only assigned report; exact primary URLs/versions/theorem numbers for external claims. Stop after final SHA256."
+        ],
+        "report_path": "rounds/codex-managed/gc-full-goal-spectral-source-review/reports/actual_shifted_spectral_sources.md"
+      },
+      {
+        "id": "theta_wave_full_frontiers",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "target": "Independent bounded current-primary theta/automorphic-wave/harmonic-analysis source review and COMPLETE frontier comparison, at most TWO exact theorem audits. Seek a theorem retaining the actual oscillatory phase beyond the225 multiplicative norm closure and the223 absolute chirp transfer. Theta modularity, complex heat/subordination, metaplectic/spectral wave or decoupling are possible leads, not mandatory imports. Require exact actual r2 or GAR coefficient match; cusp-only, averaged-radius, random/distributional, rational-time, smooth-number and almost-everywhere results do not give the required uniform full theorem without proved transfers. Price damping removal, contour/transform norms, major/minor/rational regimes, exceptional terms and all scales. Compare M1 HARD/SMOOTH, M2 TOP/BAL/UNBAL, GAR and moment alternatives using graph and223 checkpoint; do not drop an owner. Screen current primary records then audit only source-compatible statements; exact identities alone not gain. Recommend one COMPLETE next objective with a specific actual signed mechanism. Seven sections, exact primary links/versions/theorem hypotheses, zero experiments; no sibling/blind/shared/successor work, report and stop.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round226_full_goal_spectral_source_review.md",
+          "strategy/gauss_circle_strategy_review_2026-09-23.md",
+          "strategy/gauss_circle_strategy_checkpoint_round223_2026-09-28.md",
+          "rounds/codex-managed/gc-full-goal-spectral-source-review/briefs/conductor_complete_spectral_interfaces.md",
+          "rounds/codex-managed/gc-complete-logarithmic-convolution/synthesis.md",
+          "rounds/codex-managed/m9-m1-complete-gar-prime-amplification/synthesis.md",
+          "proofs/kernels/gc_complete_square_root_large_values_moment_bound.md",
+          "state/best_proof_draft.md",
+          "rounds/codex-managed/gc-full-goal-signed-source-review/reports/multiplicative_wave_sources.md",
+          "rounds/codex-managed/gc-full-goal-signed-source-review/reports/geometric_complete_frontiers.md",
+          "strategy/gauss_circle_strategy_checkpoint_round211_2026-09-28.md"
+        ],
+        "required_controls": [
+          "current_primary_versions",
+          "exact_source_hypotheses",
+          "actual_coefficients_and_phase",
+          "growing_parameter_uniformity",
+          "spectral_and_contour_costs",
+          "complete_frontiers",
+          "all_shifts_endpoints_and_tails",
+          "real_complex_and_average_scope",
+          "full_power_restoration",
+          "actual_vs_certificate_scope",
+          "statement_only_control",
+          "fixed_unbounded_order_scope"
+        ],
+        "required_output": [
+          "Seven numbered protocol sections: result, exact hypotheses, derivation, first gap, controls, dependencies/provenance, recommended state effect.",
+          "Only assigned report; exact primary URLs/versions/theorem numbers for external claims. Stop after final SHA256."
+        ],
+        "report_path": "rounds/codex-managed/gc-full-goal-spectral-source-review/reports/theta_wave_full_frontiers.md"
+      },
+      {
+        "id": "blind_complex_subordination",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "pending",
+        "target": "Read ONLY protocol and isolated packet. Independently derive/refute complex-subordination sectors, exact ray integral multiplier and optimal order in the stated range, including one-coefficient and sector-boundary controls. Seven sections, retained-history disclosure, no web/experiments or application. Assigned report only, no siblings/shared edits/successor; stop at final hash.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/gc-full-goal-spectral-source-review/briefs/blind_complex_subordination_statement.md"
+        ],
+        "required_controls": [
+          "current_primary_versions",
+          "exact_source_hypotheses",
+          "actual_coefficients_and_phase",
+          "growing_parameter_uniformity",
+          "spectral_and_contour_costs",
+          "complete_frontiers",
+          "all_shifts_endpoints_and_tails",
+          "real_complex_and_average_scope",
+          "full_power_restoration",
+          "actual_vs_certificate_scope",
+          "statement_only_control",
+          "fixed_unbounded_order_scope"
+        ],
+        "required_output": [
+          "Seven numbered protocol sections: result, exact hypotheses, derivation, first gap, controls, dependencies/provenance, recommended state effect.",
+          "Only assigned report; exact primary URLs/versions/theorem numbers for external claims. Stop after final SHA256."
+        ],
+        "report_path": "rounds/codex-managed/gc-full-goal-spectral-source-review/reports/blind_complex_subordination.md",
+        "excluded_context": [
+          "All except protocol and isolated statement; prior history disclosed."
+        ]
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "actual_spectral_application",
+        "requirement": "Source versions, r2 coefficients, growing shifts and test-function/spectral costs."
+      },
+      {
+        "id": "complex_subordination",
+        "requirement": "Statement-only sector/constant/norm proof and independent application review."
+      },
+      {
+        "id": "full_goal_strategy",
+        "requirement": "All complete owners, benchmark status, quantitative next inequality and full quarter scope."
+      }
+    ],
+    "previous_goal_turn_classification": "progress_completed_reviewed_round_changes_method_selection_no_complete_analytic_gain",
+    "scheduled_review": "Mandatory226 after223--225; next broad strategy/current-primary review229."
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+    "generated_at": "2026-09-27T22:55:43.198975+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

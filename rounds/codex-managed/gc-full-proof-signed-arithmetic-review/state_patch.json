@@ -1,0 +1,30 @@
+{
+  "round_index": 208,
+  "campaign_id": "gc-full-proof-signed-arithmetic-review",
+  "starting_graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+  "proof_obligations": {
+    "create": [],
+    "update": [],
+    "correct_rejected": [],
+    "reject": [],
+    "no_change": [
+      "GC-target",
+      "Conditional-bridge",
+      "M9",
+      "M9-M1",
+      "M9-M2",
+      "M9-endpoint-uniformity",
+      "GC-external-Li-Yang-theta-star",
+      "GC-weighted-square-root-exact-resonance-mass",
+      "GC-physical-twelfth-moment-absolute-majorant-obstruction",
+      "GC-complete-square-root-large-values-moment-bound"
+    ]
+  },
+  "round_assessment": {
+    "terminal_label": "costed_strategy_adjustment",
+    "reason": "Current sources supply no arithmetic gain. A reviewed local Fourier reproduction bridge selects the complete tenth-moment gate K10(N)<<T^(473/65+epsilon)N^-1/2 on T^(166/325)<N<T^(242/325), with all complements paid. Its conditional pointwise consequence is102/325; the actual gate and full quarter theorem remain open."
+  },
+  "reversibility": {
+    "rule": "Identity in-memory application, inverse and replay; graph/draft bytes never rewritten."
+  }
+}
