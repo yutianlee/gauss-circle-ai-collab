@@ -1,0 +1,25 @@
+{
+  "round_index": 200,
+  "campaign_id": "m9-m1-t1-complete-source-coefficient-mask-analysis",
+  "generated_at": "2026-09-23T12:09:53.814349+00:00",
+  "terminal_label": "complete_source_interface_with_open_estimate",
+  "status": "green_analysis_closure",
+  "graph_validation": "pass",
+  "campaign_validation": "pass",
+  "identity_state_patch_validation": "pass",
+  "in_memory_application_equals_start": true,
+  "reverse_identity_and_replay_equals_start": true,
+  "protected_input_hashes_unchanged": {
+    "state/proof_obligations.yml": "2f4448e999ab90387bca06498ddc60ee97b50f9900a9dfc6ad41fb201833c5f5",
+    "state/best_proof_draft.md": "208ffa03c2d6120b9dd6b3e6c605a007adffd77786079f4e1212ee087d8f18fd",
+    "strategy/gauss_circle_strategy_review_2026-09-23.md": "0729f1d9c596867e7a06bdcd096847b32e6747653235706b01275a153bd617c6"
+  },
+  "graph_nodes": 396,
+  "mathematical_numerical_experiments": 0,
+  "three_seven_section_reports": "present",
+  "independent_operator_review": "green_after_repair",
+  "legacy_and_round199_paths_unchanged": true,
+  "accepted_proof_draft_updated": false,
+  "analytic_target": "open",
+  "exponent_change": false
+}

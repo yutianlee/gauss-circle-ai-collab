@@ -1,0 +1,13 @@
+{
+  "diagnostic_only": true,
+  "code": "Clear[z]; sets=Select[Subsets[Range[12],{6}],Total[#^2]==325&]; s=First[sets]; signed=Total[Sqrt[1+#^2 z^2]& /@ s]-Total[Sqrt[1+#^2 z^2]& /@ Complement[Range[12],s]]; <|\"balanced_count\"->Length[Subsets[Range[12],{6}]],\"equal_square_sets\"->sets,\"equal_square_count\"->Length[sets],\"first_series\"->Series[signed,{z,0,6}],\"balanced_cosine_phase\"->Exp[-3 Pi I (6-6)/4],\"split_recurrence\"->Simplify[(k+2)+k-2(k+1)],\"split_generating_function\"->Sum[(k+1)z^k,{k,0,Infinity},Assumptions->Abs[z]<1]|>",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Out[1]= <|\"balanced_count\" -> 924, \"equal_square_sets\" -> {{1, 3, 7, 8, 9, 11}, {2, 4, 5, 6, 10, 12}}, \"equal_square_count\" -> 2, \"first_series\" -> SeriesData[z, 0, {1287/2, 0, -342225/4}, 4, 7, 1], \"balanced_cosine_phase\" -> 1, \"split_recurrence\" -> 0, \"split_generating_function\" -> (-1 + z)^(-2)|>"
+      }
+    ],
+    "isError": false
+  }
+}

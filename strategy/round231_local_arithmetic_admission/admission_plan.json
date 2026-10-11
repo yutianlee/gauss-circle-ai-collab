@@ -1,0 +1,86 @@
+{
+  "round_index": 231,
+  "stage": "prelaunch_admission",
+  "status": "complete",
+  "analytic_campaign_launched": false,
+  "starting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+  "generated_at": "2026-10-11T05:51:58.324032+00:00",
+  "objective": "Test actual local congruence information with its full oscillatory remainder against the complete twelfth moment gate; independently test whether exact cell margins exclude coherent actual-location perturbations.",
+  "resource_policy": {
+    "analytical_minimum_percent": 95,
+    "numerical_maximum_percent": 5,
+    "budget": "Three orthogonal reports, one review/repair cycle, bounded exact controls only."
+  },
+  "tasks": [
+    {
+      "id": "local_residue_arithmetic",
+      "role": "arithmetic derivation",
+      "brief": "briefs/local_residue_arithmetic.md",
+      "report": "reports/local_residue_arithmetic.md",
+      "status": "completed",
+      "report_sha256": "403e2c52c67dd46d033a06ae0d002d308dd695af1018241463f5c91410f67d41"
+    },
+    {
+      "id": "blind_cell_control",
+      "role": "statement-only independent proof",
+      "brief": "briefs/blind_cell_control.md",
+      "report": "reports/blind_cell_control.md",
+      "status": "completed",
+      "report_sha256": "001465ba0e7e73d99f75e0375df449b7cddcc0d2a362cfb5baba06e649e35fec"
+    },
+    {
+      "id": "oscillatory_remainder_gate",
+      "role": "signed remainder and full-restoration audit",
+      "brief": "briefs/oscillatory_remainder_gate.md",
+      "report": "reports/oscillatory_remainder_gate.md",
+      "status": "completed",
+      "report_sha256": "834954f74200d00a508aeb0d360134a444ea1b3b0b2271d4e3b271ecd95febfe"
+    }
+  ],
+  "exit_gates": [
+    "A new actual inequality and complete restored gain before analytic admission",
+    "Independent proof and nonauthor seam review of any retained finite obstruction",
+    "No perturbation theorem claimed for exact r2; no density identity claimed as arithmetic gain",
+    "Graph, closed archives and prior packets preserved; no successor"
+  ],
+  "resumed_at": "2026-10-11T06:01:24.842644+00:00",
+  "pause_history": [
+    {
+      "stopped_at": "2026-10-11T05:52:58.815274+00:00",
+      "note": "User requested stop immediately after task dispatch. No research conclusion, graph mutation, promotion or analytic campaign launch."
+    }
+  ],
+  "post_report_review": {
+    "task": "cell_obstruction_seam_review",
+    "status": "completed_pass",
+    "candidate": "conductor_cell_obstruction.md",
+    "candidate_sha256": "09548d3a7f039258bdb60e34e6faedcc560f8b76b84b17bfd3cb088ba7ab12f2",
+    "isolated_report_preserved": true
+  },
+  "conductor_interventions": [
+    "Resumed at user request after explicit stop; same three assigned tasks and isolation.",
+    "Preserved preexisting local arithmetic packet artifacts; independently rechecked only the explicit inherited finite control.",
+    "Kept microscopic phase width distinct from polynomial rational demodulation.",
+    "Conductor independently derived exact-cell obstruction, then smaller-shell ceiling-preserving extension.",
+    "Nonauthor reviewer requested uniform mollifier positivity and explicit physical supremum window; repaired before final review."
+  ],
+  "completed_at": "2026-10-11T06:16:33.726261+00:00",
+  "reviews": [
+    {
+      "path": "reviews/cell_obstruction_seam_review.md",
+      "sha256": "7fd6d37406c2c9ae42ee3f188da1386274b5d9eda990f982d3529d669d535756"
+    },
+    {
+      "path": "reviews/local_transfer_seam_review.md",
+      "sha256": "5fa4c9ef117c2e5fd268f21f84f4f4e8e0df1483c4fcaaddd3fd01f1666bb5a0"
+    }
+  ],
+  "decision": "not_admitted_scoped_local_information_and_patch_certificate_obstructions",
+  "conductor_decision": "conductor_decision.md",
+  "graph_effect": "none; reviewed evidence only",
+  "resource_outcome": {
+    "analytical_minimum_percent": 95,
+    "numerical_maximum_percent": 5,
+    "activity": "Three analytical reports, independent cell proof, two nonauthor reviews, bounded exact residue/finite-control reproduction; no asymptotic simulation or new theorem import."
+  }
+}

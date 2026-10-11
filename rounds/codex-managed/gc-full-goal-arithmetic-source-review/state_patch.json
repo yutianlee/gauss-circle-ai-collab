@@ -1,0 +1,32 @@
+{
+  "round_index": 220,
+  "campaign_id": "gc-full-goal-arithmetic-source-review",
+  "starting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+  "proof_obligations": {
+    "create": [],
+    "update": [],
+    "correct_rejected": [],
+    "reject": [],
+    "no_change": [
+      "GC-target",
+      "Conditional-bridge",
+      "M9",
+      "M9-M1",
+      "M9-M2",
+      "M9-endpoint-uniformity",
+      "M9-M2-smooth-unbalanced-three-quarter-estimate",
+      "GC-external-Li-Yang-theta-star",
+      "GC-weighted-square-root-exact-resonance-mass",
+      "GC-complete-square-root-large-values-moment-bound",
+      "GC-complete-distinct-radical-twelfth-reduction",
+      "GC-distinct-radical-absolute-certificate-obstruction"
+    ]
+  },
+  "round_assessment": {
+    "terminal_label": "strategy_source_review_no_complete_gain",
+    "reason": "Four exact current-source transfers fail to improve a complete live frontier after full norms and restoration. Exact smooth rounding and interval masking are valid under the stated operator hypothesis; enlarged complex and real row certificates fail scoped controls. The actual signed target remains open. Checkpoint220 corrects two UNBAL summary transcriptions forward without altering accepted mathematics."
+  },
+  "reversibility": {
+    "rule": "Identity in-memory application, inverse and replay; graph and proof-draft bytes never rewritten."
+  }
+}

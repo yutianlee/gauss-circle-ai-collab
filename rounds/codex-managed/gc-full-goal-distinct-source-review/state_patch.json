@@ -1,0 +1,75 @@
+{
+  "round_index": 217,
+  "campaign_id": "gc-full-goal-distinct-source-review",
+  "starting_graph_sha256": "f7c8b74e9acaa3bf5234c3678f20e2aaf8dbb9ba6179f73d839fa2f0537a14d7",
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "GC-distinct-radical-absolute-certificate-obstruction",
+        "type": "lemma",
+        "track": "proof_infrastructure",
+        "status": "proved_internal",
+        "title": "Actual distinct-radical termwise absolute Fourier certificate obstruction",
+        "statement_tex": "Fix a nonnegative real radial smooth unit-mass mollifier supported in the unit disk, Psi(s)=rho-hat(s e1), a nonnegative smooth w supported in [1/2,2] with positive integral, fixed even p=2k>=4 and fixed 0<=alpha<1. For real T sufficiently large set Q=floor(T^alpha), a_n=r2(n)n^(-3/4)Psi(sqrt(n/T)). Choose fixed c>0 small enough that Psi>=1/2 on sqrt(c)<=s<=sqrt(2c), and retain integers N_T={cT<=n<=2cT:sf(n)>Q}. Then T 2^(-p) sum_(ordered n_1,...,n_p in N_T; sf(n_i) pairwise distinct) product_i a_(n_i) |w-hat(-T[sum_(i<=k)sqrt(n_i)-sum_(i>k)sqrt(n_i)])| >=c_(p,alpha,rho,w) T^(p/4-1/2). This is a positive subcollection of the complete termwise absolute distinct-class Fourier expansion. Its proof retains actual coefficients, all harmonics in the selected block, all repeated-class exclusion, ordered multiplicities and real endpoints. Distinct squarefree classes make each retained frequency nonzero. At p=12,alpha=2/5 the lower bound T^(5/2) rules out closing the29/25 target by this termwise absolute certificate. It is not a lower bound for signed I_p or any physical moment, does not reject the signed target or quarter theorem, and is not uniform for p growing with T.",
+        "dependencies": [
+          "H1-H3",
+          "Divisor-bound-elementary",
+          "GC-weighted-square-root-exact-resonance-mass",
+          "GC-complete-distinct-radical-twelfth-reduction"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "proofs/kernels/gc_distinct_radical_absolute_certificate_obstruction.md",
+            "rounds/codex-managed/gc-full-goal-distinct-source-review/reports/distinct_correlation_sources.md",
+            "rounds/codex-managed/gc-full-goal-distinct-source-review/reports/full_frontier_sources.md",
+            "rounds/codex-managed/gc-full-goal-distinct-source-review/reports/blind_moment_family.md",
+            "rounds/codex-managed/gc-full-goal-distinct-source-review/controls/conductor_distinct_absolute_certificate.md",
+            "rounds/codex-managed/gc-full-goal-distinct-source-review/controls/conductor_distinct_frequency_control.md",
+            "rounds/codex-managed/gc-full-goal-distinct-source-review/controls/conductor_current_source_status.md",
+            "rounds/codex-managed/gc-full-goal-distinct-source-review/briefs/isolated_distinct_certificate_statement.md",
+            "rounds/codex-managed/gc-full-goal-distinct-source-review/reviews/independent_distinct_certificate_review.md",
+            "rounds/codex-managed/gc-full-goal-distinct-source-review/reviews/independent_distinct_sources_review.md",
+            "rounds/codex-managed/gc-full-goal-distinct-source-review/reviews/independent_moment_family_review.md",
+            "rounds/codex-managed/gc-full-goal-distinct-source-review/reviews/conductor_full_frontier_source_review.md",
+            "rounds/codex-managed/gc-full-goal-distinct-source-review/reviews/conductor_moment_family_binding.md",
+            "rounds/codex-managed/gc-full-goal-distinct-source-review/reviews/isolated_distinct_certificate_rederivation.md",
+            "strategy/gauss_circle_strategy_checkpoint_round217_2026-09-28.md",
+            "rounds/codex-managed/gc-full-goal-distinct-source-review/synthesis.md",
+            "rounds/codex-managed/gc-full-goal-distinct-source-review/reviews/conductor_round217_reconciliation.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Keep the complete signed distinct-class target open; preserve the oscillatory kernel before norms and require a fully paid joint signed estimate. Track an explicitly sufficient unbounded-fixed-order family."
+      }
+    ],
+    "update": [],
+    "correct_rejected": [],
+    "reject": [],
+    "no_change": [
+      "GC-target",
+      "Conditional-bridge",
+      "M9",
+      "M9-M1",
+      "M9-M2",
+      "M9-endpoint-uniformity",
+      "GC-external-Li-Yang-theta-star",
+      "GC-weighted-square-root-exact-resonance-mass",
+      "GC-complete-square-root-large-values-moment-bound",
+      "GC-complete-distinct-radical-twelfth-reduction"
+    ]
+  },
+  "round_assessment": {
+    "terminal_label": "costed_full_goal_strategy_adjustment",
+    "reason": "A fully reviewed actual distinct-class absolute Fourier certificate has lower bound T^(p/4-1/2), excluding that closure at the current twelfth target. Independent same-order absorption identifies a weaker sufficient unbounded-fixed-order family; four primary theorem audits supply no complete signed estimate. All existing nodes and powers remain unchanged."
+  },
+  "reversibility": {
+    "remove_created_ids": [
+      "GC-distinct-radical-absolute-certificate-obstruction"
+    ],
+    "rule": "Remove the sole created node to restore all previous graph data and original graph bytes; replay differs only in a normalized creation timestamp."
+  }
+}

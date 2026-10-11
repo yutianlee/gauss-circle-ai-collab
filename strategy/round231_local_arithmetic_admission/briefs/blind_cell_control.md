@@ -1,0 +1,3 @@
+# Statement-only cell control
+
+Read only protocol.md and strategy/round231_local_arithmetic_admission/briefs/blind_cell_statement.md, plus this brief. Starting graph hash is supplied as provenance only: a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b. Do not open graph, state, history, siblings or sources. Independently prove/refute the isolated statement, no numerical work, seven protocol sections, explicit first gap and controls. Write only strategy/round231_local_arithmetic_admission/reports/blind_cell_control.md; report final SHA256 and stop. This statement-only context restriction overrides the general research-read rule for this task.

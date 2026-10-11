@@ -1,0 +1,33 @@
+{
+  "round_index": 223,
+  "campaign_id": "gc-full-goal-signed-source-review",
+  "starting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+  "proof_obligations": {
+    "create": [],
+    "update": [],
+    "correct_rejected": [],
+    "reject": [],
+    "no_change": [
+      "GC-target",
+      "Conditional-bridge",
+      "M9",
+      "M9-M1",
+      "M9-M2",
+      "M9-endpoint-uniformity",
+      "M9-M1-global-angular-radial-estimate",
+      "M9-M1-global-lower-radial-signed-estimate",
+      "GC-external-Li-Yang-theta-star",
+      "GC-weighted-square-root-exact-resonance-mass",
+      "GC-complete-square-root-large-values-moment-bound",
+      "GC-complete-distinct-radical-twelfth-reduction",
+      "GC-distinct-radical-absolute-certificate-obstruction"
+    ]
+  },
+  "round_assessment": {
+    "terminal_label": "strategy_signed_source_review_no_complete_gain",
+    "reason": "The two multiplicative source interfaces do not estimate the complete actual nonlinear masked wave: the raw coefficient fails the fixed mean-square class, legal damping restores no fixed-power gain, and all exceptional frequencies remain. The two geometric applications have exact product kernels but lose after their full-frequency norms and eligible length ranges are paid. The independently derived Fourier control distinguishes a continuous absolute certificate from signed periodization and optimal discrete norms. Every complete M1/M2/GAR and moment frontier remains open. The mandatory strategy review selects complete total-M1 GAR for the next bounded objective, without asserting a new mechanism or source theorem proving it."
+  },
+  "reversibility": {
+    "rule": "Identity in-memory application, inverse and replay; graph and proof-draft bytes never rewritten."
+  }
+}

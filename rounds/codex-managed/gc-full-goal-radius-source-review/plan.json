@@ -1,0 +1,186 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 214,
+    "round_type": "mandatory_full_goal_source_review",
+    "campaign_id": "gc-full-goal-radius-source-review",
+    "title": "Full-goal strategy and current primary sources after211--213",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+    "generated_at": "2026-09-27T17:03:35.186054+00:00",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 95,
+      "numerical_experimental_maximum_percent": 5,
+      "planned_numerical_percent": 0,
+      "budget": "Three bounded reports; at most two full theorem audits per source task; one same-round seam cycle; planned zero experiments."
+    },
+    "target_obligations": [
+      "GC-target",
+      "M9-M1",
+      "M9-M2",
+      "GC-complete-square-root-large-values-moment-bound"
+    ],
+    "frozen_target": {
+      "question": "Which complete actual-coefficient route should follow211--213 after current primary-source audits and full power comparison, preserving the quarter goal?",
+      "reference_formula": "P(X)<<X^(1/4+epsilon); compare the complete signed radius gate Q_j<<T^epsilon(sqrt(N)+Nq^(-3/2)) with original high moments and all M1/M2 alternatives.",
+      "quantities": [
+        "No free pointwise recovery from radius mean: the actual sqrt(q) bandwidth price and all tails remain.",
+        "Every fixed-b gain is only a milestone. Determine the optimized reach of the radius method and audit exact coefficient/norm/scale hypotheses of proposed imports."
+      ]
+    },
+    "completion_criteria": [
+      "Three bounded seven-section reports, including an isolated important derivation.",
+      "Current bounded primary-literature and full-frontier review, with exact hypotheses, complete costs and next objective.",
+      "Independent mathematical/source seams and conductor synthesis at final hashes.",
+      "Validated State Patch and ledger closure before successor design; no unsupported exponent or parent promotion."
+    ],
+    "controls": [
+      "actual_four_point_coefficients",
+      "complete_shifts_overlap",
+      "local_global_discrepancy",
+      "density_hypotheses",
+      "real_endpoints",
+      "all_restored_powers",
+      "signed_absolute_distinction",
+      "full_quarter_scope",
+      "statement_only_control",
+      "source_versions_hypotheses",
+      "complete_frontier"
+    ],
+    "exit_labels": [
+      "costed_full_goal_strategy_adjustment",
+      "new_complete_candidate_requires_validation"
+    ],
+    "tasks": [
+      {
+        "id": "signed_radius_sources",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "target": "Review current primary arithmetic and spectral correlation theorems for the literal complete signed radius-energy input. Fully audit at most two promising theorem interfaces, retaining actual four/eight r2 factors, growing additive shifts, anisotropic lengths, complete shell norms, real kernel and all restored costs. Seek a complete consequence or first exact failed hypothesis, not another unestimated reformulation. Do not repeat known invalid fixed-shift finite-complexity or positive-kernel imports. No siblings or successor work. Write seven sections and stop.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round214_full_goal_source_review.md",
+          "strategy/gauss_circle_strategy_review_2026-09-23.md",
+          "strategy/gauss_circle_strategy_checkpoint_round211_2026-09-28.md",
+          "rounds/codex-managed/gc-complete-centered-arithmetic/synthesis.md",
+          "rounds/codex-managed/gc-complete-centered-arithmetic/reports/centered_shell_dispersion.md",
+          "rounds/codex-managed/gc-complete-four-point-correlation/reports/four_point_local_arithmetic.md"
+        ],
+        "required_controls": [
+          "actual_four_point_coefficients",
+          "complete_shifts_overlap",
+          "local_global_discrepancy",
+          "density_hypotheses",
+          "real_endpoints",
+          "all_restored_powers",
+          "signed_absolute_distinction",
+          "full_quarter_scope",
+          "statement_only_control",
+          "source_versions_hypotheses",
+          "complete_frontier"
+        ],
+        "required_output": [
+          "Seven numbered protocol sections with exact hypotheses, derivation, first unproved step, controls, dependencies and state recommendation.",
+          "Write only the assigned report; no shared state, synthesis, blind/sibling report or successor edits."
+        ],
+        "report_path": "rounds/codex-managed/gc-full-goal-radius-source-review/reports/signed_radius_sources.md"
+      },
+      {
+        "id": "full_goal_harmonic_sources",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "target": "Review current primary Gauss-circle, harmonic, high-moment and large-value methods against the full whole-discrepancy goal. Audit at most two promising full theorem interfaces and compare full M1/M2/GAR and moment/wave routes. Check current benchmark and source status; do not repeat the named exponent-pair or bilinear failures unless a genuinely new input changes their full consequence. Restore actual r2 coefficient, scale, norm and reconstruction costs and recommend one complete quantitative direction. No siblings or successor work. Write seven sections and stop.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round214_full_goal_source_review.md",
+          "strategy/gauss_circle_strategy_review_2026-09-23.md",
+          "strategy/gauss_circle_strategy_checkpoint_round211_2026-09-28.md",
+          "rounds/codex-managed/gc-complete-centered-arithmetic/synthesis.md",
+          "rounds/codex-managed/gc-full-proof-signed-arithmetic-review/reports/arithmetic_full_frontier.md",
+          "rounds/codex-managed/gc-full-source-method-review/reports/harmonic_pair_sources.md",
+          "proofs/kernels/gc_complete_square_root_large_values_moment_bound.md"
+        ],
+        "required_controls": [
+          "actual_four_point_coefficients",
+          "complete_shifts_overlap",
+          "local_global_discrepancy",
+          "density_hypotheses",
+          "real_endpoints",
+          "all_restored_powers",
+          "signed_absolute_distinction",
+          "full_quarter_scope",
+          "statement_only_control",
+          "source_versions_hypotheses",
+          "complete_frontier"
+        ],
+        "required_output": [
+          "Seven numbered protocol sections with exact hypotheses, derivation, first unproved step, controls, dependencies and state recommendation.",
+          "Write only the assigned report; no shared state, synthesis, blind/sibling report or successor edits."
+        ],
+        "report_path": "rounds/codex-managed/gc-full-goal-radius-source-review/reports/full_goal_harmonic_sources.md"
+      },
+      {
+        "id": "blind_radius_optimization",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "pending",
+        "target": "Derive, optimize or refute the isolated complete radius-certificate packet. Read only protocol and packet; no web, graph, manifest, strategy or other files. Arithmetic input remains hypothetical. Seven sections and stop.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/gc-full-goal-radius-source-review/briefs/blind_radius_optimization_statement.md"
+        ],
+        "required_controls": [
+          "actual_four_point_coefficients",
+          "complete_shifts_overlap",
+          "local_global_discrepancy",
+          "density_hypotheses",
+          "real_endpoints",
+          "all_restored_powers",
+          "signed_absolute_distinction",
+          "full_quarter_scope",
+          "statement_only_control",
+          "source_versions_hypotheses",
+          "complete_frontier"
+        ],
+        "required_output": [
+          "Seven numbered protocol sections with exact hypotheses, derivation, first unproved step, controls, dependencies and state recommendation.",
+          "Write only the assigned report; no shared state, synthesis, blind/sibling report or successor edits."
+        ],
+        "report_path": "rounds/codex-managed/gc-full-goal-radius-source-review/reports/blind_radius_optimization.md",
+        "excluded_context": [
+          "Everything except protocol and isolated packet; exclude generated general brief, graph, strategy, all prior reports, siblings and web."
+        ]
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "optimized_radius_certificate",
+        "requirement": "Complete shell fractions, free integer lengths, complementary caps, full-goal limits and certificate scope."
+      },
+      {
+        "id": "current_sources_full_goal",
+        "requirement": "Primary versions, exact coefficients, norms and ranges; complete frontiers, net powers and a concrete next objective."
+      }
+    ],
+    "previous_goal_turn_classification": "progress_completed_validated213_signed_radius_bridge_and_actual_centered_periodic_obstructions",
+    "scheduled_review": "Mandatory review214 after211--213; next broad review217 after214--216."
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+    "generated_at": "2026-09-27T17:03:35.212404+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

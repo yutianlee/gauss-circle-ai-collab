@@ -1,0 +1,205 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 216,
+    "round_type": "complete_actual_radical_high_values",
+    "campaign_id": "gc-actual-radical-high-values",
+    "title": "Complete physical high values with actual radical coefficients",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+    "generated_at": "2026-09-27T17:52:21.664981+00:00",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 95,
+      "numerical_experimental_maximum_percent": 5,
+      "planned_numerical_percent": 0,
+      "budget": "Three bounded reports; at most one primary import per discovery role; one same-round review cycle; zero experiments planned."
+    },
+    "target_obligations": [
+      "GC-target",
+      "GC-complete-square-root-large-values-moment-bound",
+      "GC-weighted-square-root-exact-resonance-mass",
+      "M9-M1",
+      "M9-M2"
+    ],
+    "frozen_target": {
+      "question": "Prove, quantitatively improve toward, or rigorously delimit the complete actual full-series twelfth high-value gateH216, preserving the full-quarter goal.",
+      "reference_formula": "H12(T)=integral_(|B_T|>T^(13/125)) w(R/T)|B_T(R)|^12dR << T^(29/25+epsilon), with the exact full mollified r2 cosine series B_T.",
+      "quantities": [
+        "RealT>=2; Psi is the Fourier transform of a fixed nonnegative real radial unit-mass smooth mollifier supported in the unit disk; w>=0 smooth supported[1/2,2], equal1 on[1/sqrt(2),sqrt(3)].",
+        "B_T=sum_(n>=1)r2(n)n^(-3/4)Psi(sqrt(n/T))cos(2pi R sqrt(n)-3pi/4), every block, sign and Schwartz tail.",
+        "New interface n=d s^2, d squarefree, Q=floor(T^(2/5)); L_Q uses d<=Q and Z_Q all d>Q. Prove the head and complete high-event transfer; no free independence or exact-to-near inference.",
+        "Accepted204 pays low values; H216 success gives only102/325. Fullquarter requires a complete sufficient family or alternative parents."
+      ]
+    },
+    "completion_criteria": [
+      "Three bounded seven-section reports, including an isolated important radical-cutoff derivation.",
+      "Actual coefficient estimates or precisely scoped failures with complete high-event, scale and tail costs.",
+      "Independent final-hash seams and conductor full-goal synthesis.",
+      "Validated State Patch and closed ledger before mandatory review217 design; no unsupported arithmetic promotion."
+    ],
+    "controls": [
+      "actual_coefficients",
+      "absolute_radius_anchor",
+      "all_cosine_signs",
+      "squarefree_exact_nonzero_distinction",
+      "d1_and_nonpairing",
+      "all_s_and_integer_cutoff",
+      "high_event_threshold_constants",
+      "all_blocks_and_schwartz_tails",
+      "signed_certificate_distinction",
+      "source_hypotheses",
+      "real_endpoints",
+      "restored_powers",
+      "full_quarter_scope",
+      "statement_only_control"
+    ],
+    "exit_labels": [
+      "complete_actual_high_value_gain_requires_validation",
+      "complete_actual_high_value_gate_open"
+    ],
+    "tasks": [
+      {
+        "id": "actual_radical_tail",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "target": "Attack the complete actual full-series twelfth high-value gateH216 by the exact squarefree-class cutoffQ=floor(T^(2/5)), retaining every s, sign, repeated class, unequal block, nonpairing relation, high-event cost and smoothing tail. Prove the low-class bound and seek an actual signed nonzero-correlation or complete high-tail estimate. Exact relations alone, arbitrary-array controls and a new unestimated remainder are not an arithmetic gain. At most one relevant primary theorem interface, audited completely. Seven sections; write only assigned report and stop.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round216_actual_radical_high_values.md",
+          "strategy/gauss_circle_strategy_checkpoint_round214_2026-09-28.md",
+          "rounds/codex-managed/gc-complete-localized-wave-moment/synthesis.md",
+          "proofs/kernels/gc_complete_square_root_large_values_moment_bound.md",
+          "rounds/codex-managed/gc-complete-signed-tenth-moment/reports/actual_tenth_high_values.md",
+          "rounds/codex-managed/gc-full-frontier-moment-strategy-review/controls/conductor_arithmetic_source_gate.md",
+          "proofs/kernels/gc_weighted_square_root_exact_resonance_mass.md"
+        ],
+        "required_controls": [
+          "actual_coefficients",
+          "absolute_radius_anchor",
+          "all_cosine_signs",
+          "squarefree_exact_nonzero_distinction",
+          "d1_and_nonpairing",
+          "all_s_and_integer_cutoff",
+          "high_event_threshold_constants",
+          "all_blocks_and_schwartz_tails",
+          "signed_certificate_distinction",
+          "source_hypotheses",
+          "real_endpoints",
+          "restored_powers",
+          "full_quarter_scope",
+          "statement_only_control"
+        ],
+        "required_output": [
+          "Seven numbered protocol sections: result; exact hypotheses; proof; first gap; controls; dependencies; state effect.",
+          "Write only assigned report; no siblings, state, synthesis or successor work."
+        ],
+        "report_path": "rounds/codex-managed/gc-actual-radical-high-values/reports/actual_radical_tail.md"
+      },
+      {
+        "id": "anchored_divisor_high_values",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "target": "AttackH216 through one actual divisor or fixed-vector projection mechanism preserving the absolute R~T anchor before Cauchy loses it. Keep actual r2, both cosine signs, all blocks and tails. Do not repeat the209 centered-L1 or translation-invariant Gram failure. Seek a complete quantitative high-value gain; if none, give the exact first failed arithmetic estimate and complete costs. The squarefree cutoff is optional for this independent route. At most one relevant primary theorem interface. Seven sections; write only assigned report and stop.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round216_actual_radical_high_values.md",
+          "strategy/gauss_circle_strategy_checkpoint_round214_2026-09-28.md",
+          "rounds/codex-managed/gc-complete-localized-wave-moment/synthesis.md",
+          "proofs/kernels/gc_complete_square_root_large_values_moment_bound.md",
+          "rounds/codex-managed/gc-complete-signed-tenth-moment/reports/actual_tenth_high_values.md",
+          "rounds/codex-managed/gc-full-frontier-moment-strategy-review/controls/conductor_arithmetic_source_gate.md"
+        ],
+        "required_controls": [
+          "actual_coefficients",
+          "absolute_radius_anchor",
+          "all_cosine_signs",
+          "squarefree_exact_nonzero_distinction",
+          "d1_and_nonpairing",
+          "all_s_and_integer_cutoff",
+          "high_event_threshold_constants",
+          "all_blocks_and_schwartz_tails",
+          "signed_certificate_distinction",
+          "source_hypotheses",
+          "real_endpoints",
+          "restored_powers",
+          "full_quarter_scope",
+          "statement_only_control"
+        ],
+        "required_output": [
+          "Seven numbered protocol sections: result; exact hypotheses; proof; first gap; controls; dependencies; state effect.",
+          "Write only assigned report; no siblings, state, synthesis or successor work."
+        ],
+        "report_path": "rounds/codex-managed/gc-actual-radical-high-values/reports/anchored_divisor_high_values.md"
+      },
+      {
+        "id": "blind_radical_cutoff",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "pending",
+        "target": "Independently derive the isolated squarefree-cutoff packet, exact resonance mass, complete high-event transfer and precise remaining signed scope. Read only protocol and isolated packet; no web or other context. Seven sections; write only assigned report and stop.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/gc-actual-radical-high-values/briefs/blind_radical_cutoff_statement.md"
+        ],
+        "required_controls": [
+          "actual_coefficients",
+          "absolute_radius_anchor",
+          "all_cosine_signs",
+          "squarefree_exact_nonzero_distinction",
+          "d1_and_nonpairing",
+          "all_s_and_integer_cutoff",
+          "high_event_threshold_constants",
+          "all_blocks_and_schwartz_tails",
+          "signed_certificate_distinction",
+          "source_hypotheses",
+          "real_endpoints",
+          "restored_powers",
+          "full_quarter_scope",
+          "statement_only_control"
+        ],
+        "required_output": [
+          "Seven numbered protocol sections: result; exact hypotheses; proof; first gap; controls; dependencies; state effect.",
+          "Write only assigned report; no siblings, state, synthesis or successor work."
+        ],
+        "report_path": "rounds/codex-managed/gc-actual-radical-high-values/reports/blind_radical_cutoff.md",
+        "excluded_context": [
+          "Everything except protocol and isolated packet, including generated general brief, graph, manifest, strategy, all reports, sources and web."
+        ]
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "radical_high_event_transfer",
+        "requirement": "Squarefree cutoff, exact coefficients, signs, high-event inclusion and every infinite tail."
+      },
+      {
+        "id": "anchored_arithmetic",
+        "requirement": "Absolute-radius information, actual divisor weights and complete bounds with first gap."
+      },
+      {
+        "id": "conductor_complete_power_scope",
+        "requirement": "All low/high values, exact/nonzero separation, milestone and fullquarter scope."
+      }
+    ],
+    "previous_goal_turn_classification": "progress_completed_and_validated215_changed_next_action_no_mathematical_gain",
+    "scheduled_review": "Next mandatory broad strategy/current-literature review217 after214--216."
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+    "generated_at": "2026-09-27T17:52:21.682937+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

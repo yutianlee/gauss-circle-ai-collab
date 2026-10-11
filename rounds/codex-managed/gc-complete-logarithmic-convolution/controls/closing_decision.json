@@ -1,0 +1,26 @@
+{
+  "round_index": 225,
+  "campaign_id": "gc-complete-logarithmic-convolution",
+  "generated_at": "2026-09-27T22:50:00.411738+00:00",
+  "decision": "close_bounded_attempt_without_complete_gain",
+  "terminal_label": "complete_logarithmic_convolution_no_new_bound",
+  "graph_mutation": false,
+  "complete_frontier_bound_improved": false,
+  "complete_moment_bound_improved": false,
+  "pointwise_exponent_change": false,
+  "reason": "Both actual logarithmic/Vaughan branches and their full inverse contractions are valid, but no complete signed bound below inherited beta is obtained. The scoped generic factor certificate can reach47/378 locally at N=T^(2/3); even freely granting optimal factors at every scale leaves worst exponent81/614 at N=T^(226/307), above beta. All actual cutoff terms, norms, singleton, infinite tail and sharp reconstruction are paid. Upper-certificate capacity is not an actual arithmetic lower bound. No complete real, moment or pointwise gain.",
+  "goal_turn_classification": "no_progress_on_complete_bounds_bounded_mechanism_closed_with_verified_controls",
+  "next_objective": "Mandatory broad full-goal strategy and current-primary-source review226 after closed225; select one complete parent inequality.",
+  "next_method": "Review complete signed methods against all-scale225 costs and the pinned Sep23 strategy; a local exponent, finite identity or unestimated complement cannot count as progress.",
+  "first_unproved_estimate": "Uniformly for every real T>=2 and R in [cT,CT], bound the ENTIRE actual real eight-term logarithmic/Vaughan recombination, or its exact contracted circle wave, by T^(gamma+epsilon) with gamma<beta=2theta_LY-1/2, ultimately gamma=0. Every scale, singleton, sign, cutoff and Schwartz tail remains included.",
+  "state_note": "Both actual logarithmic/Vaughan branches and their full inverse contractions are valid, but no complete signed bound below inherited beta is obtained. The scoped generic factor certificate can reach47/378 locally at N=T^(2/3); even freely granting optimal factors at every scale leaves worst exponent81/614 at N=T^(226/307), above beta. All actual cutoff terms, norms, singleton, infinite tail and sharp reconstruction are paid. Upper-certificate capacity is not an actual arithmetic lower bound. No complete real, moment or pointwise gain. Identity State Patch: all401 graph nodes and proof-draft bytes unchanged. The independently derived complex13/56 bound is a weaker scoped certificate, not a new real benchmark. The missing estimate is: Uniformly for every real T>=2 and R in [cT,CT], bound the ENTIRE actual real eight-term logarithmic/Vaughan recombination, or its exact contracted circle wave, by T^(gamma+epsilon) with gamma<beta=2theta_LY-1/2, ultimately gamma=0. Every scale, singleton, sign, cutoff and Schwartz tail remains included. Full quarter, unbounded fixed-order moments, M1/M2/GAR and endpoints remain open. Zero mathematical experiments. Mandatory strategy/current-primary review226 is pending design.",
+  "interventions": [
+    "Frozen objective unchanged; all three initial tasks remained within one Vaughan family.",
+    "Conductor highlighted exact full Mobius contractions before norms and independently reproduced the bilinear exponents.",
+    "A general optimizer formula in discovery correspondence was corrected before report freeze; no frozen report retained that error.",
+    "Conductor expanded the local comparison to all scales, then assigned a separate isolated scalar rederivation containing no anticipated result.",
+    "Final norm report explicitly records fixed-mod4 affine-square-root derivatives, ambient intervals, length/phase convention and bounded-T fallback.",
+    "After reports froze, discovery author reviewed norm author and norm author reviewed discovery author; the finite/scalar rederiver separately reviewed the conductor's application.",
+    "Review clarification preserves beta as a COMPLETE real bound, and general physical restoration uses max(gamma,0)."
+  ]
+}

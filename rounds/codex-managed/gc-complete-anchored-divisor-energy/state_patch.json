@@ -1,0 +1,31 @@
+{
+  "round_index": 219,
+  "campaign_id": "gc-complete-anchored-divisor-energy",
+  "starting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+  "proof_obligations": {
+    "create": [],
+    "update": [],
+    "correct_rejected": [],
+    "reject": [],
+    "no_change": [
+      "GC-target",
+      "Conditional-bridge",
+      "M9",
+      "M9-M1",
+      "M9-M2",
+      "M9-endpoint-uniformity",
+      "GC-external-Li-Yang-theta-star",
+      "GC-weighted-square-root-exact-resonance-mass",
+      "GC-complete-square-root-large-values-moment-bound",
+      "GC-complete-distinct-radical-twelfth-reduction",
+      "GC-distinct-radical-absolute-certificate-obstruction"
+    ]
+  },
+  "round_assessment": {
+    "terminal_label": "complete_anchored_energy_attempt_no_new_bound",
+    "reason": "Rational-anchor packing pays the full inverse-frequency certificate with residual exponent169/3500, below the allowed208/2625. Exact character algebra gives no automatic cancellation inside common radical classes. The remaining complete oscillatory energy, including both signs and nonzero integer aliases in the reciprocal-anchor calculation, is not bounded at the required power. No complete moment or pointwise improvement follows."
+  },
+  "reversibility": {
+    "rule": "Identity in-memory application, inverse and replay; graph and proof-draft bytes never rewritten."
+  }
+}

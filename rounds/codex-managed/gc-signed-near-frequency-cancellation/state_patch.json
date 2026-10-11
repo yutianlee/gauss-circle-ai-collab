@@ -1,0 +1,30 @@
+{
+  "round_index": 210,
+  "campaign_id": "gc-signed-near-frequency-cancellation",
+  "starting_graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+  "proof_obligations": {
+    "create": [],
+    "update": [],
+    "correct_rejected": [],
+    "reject": [],
+    "no_change": [
+      "GC-target",
+      "Conditional-bridge",
+      "M9",
+      "M9-M1",
+      "M9-M2",
+      "M9-endpoint-uniformity",
+      "GC-external-Li-Yang-theta-star",
+      "GC-weighted-square-root-exact-resonance-mass",
+      "GC-physical-twelfth-moment-absolute-majorant-obstruction",
+      "GC-complete-square-root-large-values-moment-bound"
+    ]
+  },
+  "round_assessment": {
+    "terminal_label": "scoped_actual_method_no_go",
+    "reason": "The full phase-preserving rational bin transfer is valid and its actual joint input is bounded by H^9 up to epsilon, yielding only XH^9=T^11N^-9/2 and missing the target by T^(242/65)N^-4. Actual centered atoms and full Abel variation obstruct a specified positive unweighted-error transfer; actual CRT singleton progressions obstruct the outer-absolute divisor-pair closure. Neither result lower-bounds a signed moment. Complete signed bin/shift inputs, the original tenth gate, the full quarter theorem and M1/M2 remain open; no accepted moment or exponent improves."
+  },
+  "reversibility": {
+    "rule": "Identity in-memory application, inverse and replay; graph/draft bytes never rewritten."
+  }
+}

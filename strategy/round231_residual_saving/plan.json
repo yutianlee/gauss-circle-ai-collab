@@ -1,0 +1,81 @@
+{
+  "round_index": 231,
+  "type": "bounded_prelaunch_actual_residual_saving",
+  "status": "complete",
+  "analytic_campaign_launched": false,
+  "objective": "Quantify or strengthen the actual signed residual enough for a complete moment gain; rigorously test uniform-power obstructions and phase-specific replacements",
+  "starting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+  "generated_at": "2026-10-11T06:50:46.867152+00:00",
+  "budget": {
+    "analytical_minimum_percent": 95,
+    "numerical_maximum_percent": 5,
+    "tasks": 3,
+    "source_families": 1,
+    "review_repair_cycles_maximum": 1
+  },
+  "tasks": [
+    {
+      "id": "source_constant_extraction",
+      "brief": "briefs/source_constant_extraction.md",
+      "status": "complete",
+      "report": "reports/source_constant_extraction.md",
+      "report_sha256": "fb2eda32f5667262f00e4a51e94cdd25d7121659dbdd9578142fcff092a6b954"
+    },
+    {
+      "id": "blind_residual_control",
+      "brief": "briefs/blind_residual_statement.md",
+      "status": "complete",
+      "report": "reports/blind_residual_control.md",
+      "report_sha256": "c78fa696c881c3068541a38ae807fc1de9a58817c87c30716524e471478a2d2b"
+    },
+    {
+      "id": "actual_residual_attack",
+      "brief": "briefs/actual_residual_attack.md",
+      "status": "complete",
+      "report": "reports/actual_residual_attack.md",
+      "report_sha256": "0d18fa59d915809427e1758ee478ba439303748738e8ec1f86d7e95060dd0bc5"
+    }
+  ],
+  "exit_gates": [
+    "Three frozen reports",
+    "Statement-only important control and nonauthor seams",
+    "Complete quantitative restoration with actual coefficients and all tails",
+    "Source constants and major arcs never guessed",
+    "No analytic admission without a valid improved complete bound; no automatic successor",
+    "Protected graph and archives unchanged unless separately validated State Patch"
+  ],
+  "completed_at": "2026-10-11T07:10:03.234870+00:00",
+  "reviews": [
+    {
+      "path": "reviews/review_uniform_control.md",
+      "status": "pass",
+      "sha256": "cfe423ce1503a528e39c0fb96728f052bfe9858762fedf7c800f1d5e4196f872"
+    },
+    {
+      "path": "reviews/review_physical_inverse.md",
+      "status": "pass",
+      "sha256": "c6af571bed1e2f82a7aa20e9c5e03a22dc35df5a23c91c3323a6a805e6ff1c32"
+    },
+    {
+      "path": "reviews/review_factor_strips.md",
+      "status": "pass",
+      "sha256": "33ca852fc7861847233f901c74df555f4673b39ca08d1a549a26a24914a99b1d"
+    }
+  ],
+  "conductor_interventions": [
+    "Preserved initial statement-only isolation for the important arithmetic residual control.",
+    "Redirected source investigation from an unspecified uniform saving toward the actual physical phase after the arithmetic obstruction appeared.",
+    "Required separate inverse exponents, full restoration and a common-exponent finite adversary; checked its all-degree optimization independently.",
+    "Suggested elementary prime counting and a sign pigeonhole for the actual semiprime energy control.",
+    "Strengthened the frozen fixed-alpha component result to an adaptive factor cutoff and assigned it within the factor reviewer's same single review cycle.",
+    "Kept all source numerical premises conditional and all certificate obstructions narrower than the physical moment problem."
+  ],
+  "decision": "retain_adaptive_signed_component_and_quantified_obstructions_no_complete_gain_not_admitted",
+  "graph_effect": "none; reviewed evidence only",
+  "complete_moment_bound_improved": false,
+  "resource_outcome": {
+    "analytical_minimum_percent": 95,
+    "numerical_maximum_percent": 5,
+    "description": "Three analytical reports, two conductor derivations, three nonauthor seams and one bounded diagnostic script; one primary source family."
+  }
+}

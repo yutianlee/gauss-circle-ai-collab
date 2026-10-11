@@ -1,0 +1,81 @@
+{
+  "round_index": 231,
+  "phase": "prelaunch_admission",
+  "status": "complete",
+  "analytic_campaign_launched": false,
+  "predecessor_round": 230,
+  "graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+  "generated_at": "2026-10-11T02:27:09.152444+00:00",
+  "objective": "Seek a new arithmetic signed input for the complete twelfth moment and decide whether analytic231 passes admission.",
+  "tasks": [
+    {
+      "id": "split_prime_cancellation",
+      "role": "arithmetic mechanism scout",
+      "context_files": [
+        "protocol.md",
+        "state/active_campaign.yml",
+        "state/proof_obligations.yml",
+        "strategy/round231_admission/briefs/complete_target.md",
+        "rounds/codex-managed/m9-m1-complete-gar-prime-amplification/synthesis.md",
+        "rounds/codex-managed/gc-complete-logarithmic-convolution/synthesis.md"
+      ],
+      "report": "reports/split_prime_cancellation.md",
+      "status": "completed",
+      "report_sha256": "9dbeb8ca02ff9b90dc1aa63d8d5688bfac4cf38639a4a33f7615a213897cd79e"
+    },
+    {
+      "id": "radical_packet_cancellation",
+      "role": "orthogonal arithmetic mechanism scout",
+      "context_files": [
+        "protocol.md",
+        "state/active_campaign.yml",
+        "state/proof_obligations.yml",
+        "strategy/round231_admission/briefs/complete_target.md",
+        "proofs/kernels/gc_complete_distinct_radical_moment_reduction.md",
+        "proofs/kernels/gc_distinct_radical_absolute_certificate_obstruction.md",
+        "rounds/codex-managed/gc-complete-signed-radical-kernel/synthesis.md"
+      ],
+      "report": "reports/radical_packet_cancellation.md",
+      "status": "completed",
+      "report_sha256": "6554e39da0ae6177ecd4244859a0b9f4b4198b32c703e3a1eb32ea139bca384d"
+    },
+    {
+      "id": "blind_prime_relations",
+      "role": "statement-only algebra rederiver",
+      "context_files": [
+        "protocol.md",
+        "strategy/round231_admission/briefs/blind_prime_statement.md"
+      ],
+      "report": "reports/blind_prime_relations.md",
+      "status": "completed",
+      "report_sha256": "dee5900e90918e7762f4f9a3fe8d09e660e4b02e7b7faeee9d334ff82140a7e8"
+    }
+  ],
+  "resource_policy": {
+    "analytical_algebraic_minimum_percent": 95,
+    "numerical_maximum_percent": 5
+  },
+  "exit_gate": "Only exact new signed input with restored complete power gain admits a campaign; otherwise keep pending.",
+  "completed_at": "2026-10-11T02:33:19.599337+00:00",
+  "decision": "not_admitted_no_new_complete_signed_input",
+  "conductor_decision": "conductor_decision.md",
+  "graph_effect": "none; no State Patch proposed or applied",
+  "proof_status": "reviewed evidence only; accepted graph unchanged",
+  "independent_rederivations": [
+    {
+      "path": "reports/blind_prime_relations.md",
+      "sha256": "dee5900e90918e7762f4f9a3fe8d09e660e4b02e7b7faeee9d334ff82140a7e8",
+      "scope": "statement_only"
+    },
+    {
+      "path": "reviews/blind_cosine_packet_rederivation.md",
+      "sha256": "0487e7cf8541e6c4f265d0792df05b81df83444d02d51bf45d23868f7746d2ba",
+      "scope": "statement_only"
+    }
+  ],
+  "resource_outcome": {
+    "analytical_algebraic_minimum_percent": 95,
+    "numerical_experimentation_maximum_percent": 5,
+    "activity": "Exact finite Wolfram/local controls only; no simulation or computational asymptotic proof; no new external source imported."
+  }
+}

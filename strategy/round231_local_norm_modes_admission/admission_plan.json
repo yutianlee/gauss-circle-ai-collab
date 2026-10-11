@@ -1,0 +1,65 @@
+{
+  "round_index": 231,
+  "phase": "fourth_prelaunch_local_arithmetic_modes",
+  "status": "active",
+  "analytic_campaign_launched": false,
+  "generated_at": "2026-10-11T05:56:04.571501+00:00",
+  "starting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+  "predecessor_packet": "strategy/round231_cross_label_admission",
+  "frozen_objective": "Test nonzero local additive norm modes after squarefree centering as a quantitative arithmetic cancellation mechanism for the complete twelfth moment.",
+  "max_concurrency": 3,
+  "resource_policy": {
+    "analytical_minimum_percent": 95,
+    "numerical_maximum_percent": 5,
+    "budget": "Three bounded reports, one review/clarification pass, exact Wolfram finite controls locally reproduced; at most one targeted primary theorem audit."
+  },
+  "tasks": [
+    {
+      "id": "local_norm_modes",
+      "role": "actual local arithmetic discovery",
+      "context_files": [
+        "protocol.md",
+        "state/proof_obligations.yml",
+        "state/active_campaign.yml",
+        "strategy/round231_local_norm_modes_admission/briefs/complete_target.md",
+        "strategy/round231_cross_label_admission/reports/cross_label_arithmetic.md",
+        "rounds/codex-managed/gc-complete-four-point-correlation/synthesis.md"
+      ],
+      "report": "reports/local_norm_modes.md",
+      "status": "pending"
+    },
+    {
+      "id": "blind_local_twelfth",
+      "role": "statement-only finite arithmetic rederiver",
+      "context_files": [
+        "protocol.md",
+        "strategy/round231_local_norm_modes_admission/briefs/isolated_local_statement.md"
+      ],
+      "report": "reports/blind_local_twelfth.md",
+      "status": "pending"
+    },
+    {
+      "id": "local_global_bridge",
+      "role": "signed global arithmetic bridge auditor",
+      "context_files": [
+        "protocol.md",
+        "state/proof_obligations.yml",
+        "state/active_campaign.yml",
+        "strategy/round231_local_norm_modes_admission/briefs/complete_target.md",
+        "proofs/kernels/gc_complete_distinct_radical_moment_reduction.md",
+        "strategy/round231_cross_label_admission/conductor_signed_cancellation.md",
+        "rounds/codex-managed/gc-complete-four-point-correlation/synthesis.md",
+        "rounds/codex-managed/gc-complete-anchored-divisor-energy/synthesis.md",
+        "rounds/codex-managed/m9-m1-lower-cone-rational-additive-spectrum-gate/synthesis.md"
+      ],
+      "report": "reports/local_global_bridge.md",
+      "status": "pending"
+    }
+  ],
+  "exit_gates": [
+    "Exact arithmetic includes every nonzero/imprimitive/ramified mode and harmonic.",
+    "Statement-only finite rederivation and exact locally reproduced Wolfram controls.",
+    "Any local-to-global implication retains the actual real-root kernel and all costs.",
+    "New quantitative complete gain required for analytic launch; local identities or unsupported congruence restrictions do not qualify."
+  ]
+}

@@ -1,0 +1,78 @@
+# Task Brief: signed_rational_moment_attack
+
+- Campaign: `gc-signed-rational-filter-attack`
+- Research round: `207` (`complete_signed_rational_moment_attack`)
+- Role: `discovery`
+- Access mode: `selected_context`
+- Graph SHA-256: `4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71`
+- Generated: `2026-09-27T14:10:05.682122+00:00`
+- Status: candidate evidence only; do not edit shared proof state.
+
+## Research allocation and tools
+
+- Analytical/algebraic effort: at least 100%.
+- Numerical/experimental effort: at most 0%.
+- Python and Mathematica may be used for bounded symbolic, pattern-finding, normalization, or falsification checks.
+- Numerical examples may motivate a conjecture or lemma, or falsify one; they cannot certify an asymptotic theorem.
+- Web literature checks are allowed for strategy or method review. Cite exact sources and audit theorem hypotheses.
+
+## Frozen question
+
+Can the complete actual signed rational-filter representation yield the required middle-band moment saving?
+
+## Reference formula and distinctions
+
+Integral_I |sum_(T^(52/125)<N=2^j<T^(99/125)) S_N|^12 << T^(29/25+epsilon); sufficient K6(N)<<T^(129/25-6omega(alpha)+epsilon).
+
+- I=[T/sqrt(2),sqrt(3)T], X=T^2, h(x)=2sqrt(x)/sqrt(N), exact fixed205 filters.
+- omega=min(alpha/4,beta,(1-alpha)/2); sixth saving still needed g=6omega-4/25-29alpha/110.
+- All outer bands are already estimated; best complete p12 remains10beta; milestone would imply only102/325.
+
+## Assigned target
+
+Independently derive enough of the complete actual hyperbola/rational formula to attack its sixth correlation or a genuine bilinear/reciprocal-phase estimate. Keep both arms, all characters and mod4 phases, variable width, masks and boundary error. Price physical coefficient norms, frequency collisions, all shifts and reconstruction. Inspect at most two substantive primary theorem interfaces if useful; every hypothesis and net power must match. Do not repeat pair variance or positive six-shift counting as a gain. Produce a complete bound or a precise scoped obstruction to the attempted signed estimate, then stop.
+
+## Permitted context
+
+- `protocol.md`
+- `state/proof_obligations.yml`
+- `state/active_campaign.yml`
+- `strategy/round207_signed_rational_filter_attack.md`
+- `rounds/codex-managed/gc-complete-signed-shell-arithmetic/reports/actual_divisor_shell_attack.md`
+- `rounds/codex-managed/gc-complete-signed-shell-arithmetic/controls/conductor_sixth_moment_power_ledger.md`
+- `rounds/codex-managed/gc-complete-signed-shell-arithmetic/reviews/independent_divisor_obstruction_review.md`
+- `rounds/codex-managed/gc-complete-signed-shell-arithmetic/reviews/independent_bridge_power_review.md`
+- `rounds/codex-managed/gc-full-frontier-moment-strategy-review/controls/conductor_middle_band_strategy.md`
+- `proofs/kernels/gc_complete_square_root_large_values_moment_bound.md`
+- `strategy/gauss_circle_strategy_review_2026-09-23.md`
+
+## Required controls
+
+- `complete_middle_range`
+- `actual_two_arm_characters`
+- `all_harmonics_and_duplicates`
+- `moving_threshold_error`
+- `low_period_annihilation`
+- `variable_width`
+- `real_endpoints_and_tails`
+- `signed_not_positive`
+- `restored_sixth_and_twelfth_powers`
+- `source_hypotheses`
+- `full_proof_scope`
+
+## Required deliverables
+
+- Seven numbered sections: result, exact hypotheses, proof, first gap, controls, exact dependencies, state effect.
+- Write only the assigned report. No graph, proof draft, validation matrix, synthesis, source-card or successor edits.
+
+## Report contract
+
+1. Result: lemma or no-go result.
+2. Exact statement and hypotheses.
+3. Proof or derivation.
+4. First doubtful or unproved step.
+5. Control tests and outcomes.
+6. Dependencies and artifacts used.
+7. Recommended state effect.
+
+A rigorous refutation or quantitative obstruction is a successful result. Do not preserve the proposed mechanism if a control falsifies it.

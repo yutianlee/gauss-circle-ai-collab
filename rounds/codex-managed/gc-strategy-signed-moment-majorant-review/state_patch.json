@@ -1,0 +1,60 @@
+{
+  "round_index": 202,
+  "campaign_id": "gc-strategy-signed-moment-majorant-review",
+  "starting_graph_sha256": "682cb189a3ab0ef26f8d19701e2949547446d37505df01f7b7eaf1cfdd0f359c",
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "GC-physical-twelfth-moment-absolute-majorant-obstruction",
+        "type": "lemma",
+        "track": "proof_infrastructure",
+        "status": "proved_internal",
+        "title": "Actual nonzero near-resonance mass obstructs a termwise absolute twelfth-moment bound",
+        "statement_tex": "Let Psi be fixed real even Schwartz with Psi(0)=1 and w nonzero nonnegative C_c^infinity((0,infinity)). For a_n(T)=r_2(n)n^(-3/4)Psi(sqrt(n/T)), there exist fixed0<a<b and h,c>0 such that for every sufficiently large realT, the actual coefficients are nonnegative on I_T=[aT,bT] intersect N, and T sum_(n_1,...,n_12 in I_T,0<|Delta|<=h/T) product_j a_(n_j)(T) Re w-hat(-TDelta)>=cT^(5/2), where Delta=sum_(j<=6)sqrt(n_j)-sum_(j>6)sqrt(n_j). All exact radical relations are removed using the uniform accepted absolute exact-mass bound. Consequently the full nonzero-frequency all-sign termwise absolute Fourier majorant (with prefactorT/2^12) is >=c_prime T^(5/2), so cannot be O_epsilon(T^(1+2eta+epsilon)) for everyepsilon>0 if eta<3/4. The proof uses elementary physical band mass and weighted six-root bins. For balanced2k with k>=4 the same method gives nonzero positive subsum >=c_k T^((k-1)/2); the conclusion is not asserted for k<=3 after exact deletion. This is strictly a majorant obstruction, not a lower bound for the complete signed displaced moment, and it disproves no actual moment target, M1/M2 estimate or pointwise exponent.",
+        "dependencies": [
+          "H1-H3",
+          "Divisor-bound-elementary",
+          "GC-weighted-square-root-exact-resonance-mass"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "proofs/kernels/gc_physical_twelfth_moment_absolute_majorant_obstruction.md",
+            "rounds/codex-managed/gc-strategy-signed-moment-majorant-review/reports/blind_physical_near_resonance_mass.md",
+            "rounds/codex-managed/gc-strategy-signed-moment-majorant-review/controls/conductor_round202_independent_analysis.md",
+            "rounds/codex-managed/gc-strategy-signed-moment-majorant-review/reviews/independent_physical_majorant_review.md",
+            "rounds/codex-managed/gc-strategy-signed-moment-majorant-review/reviews/conductor_round202_reconciliation.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Retain the oscillatory Fourier window in the complete signed source. Any cutoff route must price the full actual tail and all mixed terms. This no-go does not reject the desired twelfth moment or supply any exponent improvement."
+      }
+    ],
+    "update": [],
+    "correct_rejected": [],
+    "reject": [],
+    "no_change": [
+      "GC-target",
+      "Conditional-bridge",
+      "M9",
+      "M9-M1",
+      "M9-M2",
+      "M9-endpoint-uniformity",
+      "GC-external-Li-Yang-theta-star",
+      "GC-weighted-square-root-exact-resonance-mass"
+    ]
+  },
+  "round_assessment": {
+    "terminal_label": "strategy_review_with_complete_signed_next_target",
+    "reason": "Promote only the physical absolute-majorant obstruction; complete dated strategy/source/cutoff review and identify the complete signed filtered-convolution target. Actual moment, parent obligations and exponents remain unchanged."
+  },
+  "reversibility": {
+    "remove_created_ids": [
+      "GC-physical-twelfth-moment-absolute-majorant-obstruction"
+    ],
+    "rule": "Delete sole created node to restore all prior structured graph data and canonical/original raw bytes. Replay from restored graph agrees except for new-node timestamp."
+  }
+}

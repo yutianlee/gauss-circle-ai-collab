@@ -1,0 +1,44 @@
+{
+  "round_index": 214,
+  "status": "green_identity_patch_preflight",
+  "graph_schema": "pass",
+  "campaign_schema": "pass",
+  "identity_patch": "pass",
+  "reverse_identity_replay": "pass",
+  "all_399_nodes_and_other_graph_data_unchanged": true,
+  "exact_review_hashes": {
+    "rounds/codex-managed/gc-full-goal-radius-source-review/controls/conductor_radius_power_ledger.md": "c4bb7f561e468d271b9487ed10057feb739e8e2c0c52b7dffadfe6ed712bae20",
+    "rounds/codex-managed/gc-full-goal-radius-source-review/reports/signed_radius_sources.md": "feb841a2f0305addd6b98caa88c8daad06b9dfca5784f2870dc56f789535fac0",
+    "rounds/codex-managed/gc-full-goal-radius-source-review/reports/full_goal_harmonic_sources.md": "50228227fa0f77a6ce944ea8e2fbfd8f1fe75ddad60662bf041a487dcb0cf4b3",
+    "rounds/codex-managed/gc-full-goal-radius-source-review/reports/blind_radius_optimization.md": "2a7c30eea3ee2a53a156df98487b6b79a4be54e9c08fd2ae09542df45067a1d2"
+  },
+  "three_report_hashes": {
+    "rounds/codex-managed/gc-full-goal-radius-source-review/reports/signed_radius_sources.md": "feb841a2f0305addd6b98caa88c8daad06b9dfca5784f2870dc56f789535fac0",
+    "rounds/codex-managed/gc-full-goal-radius-source-review/reports/full_goal_harmonic_sources.md": "50228227fa0f77a6ce944ea8e2fbfd8f1fe75ddad60662bf041a487dcb0cf4b3",
+    "rounds/codex-managed/gc-full-goal-radius-source-review/reports/blind_radius_optimization.md": "2a7c30eea3ee2a53a156df98487b6b79a4be54e9c08fd2ae09542df45067a1d2"
+  },
+  "frozen_scope_and_briefs_unchanged": true,
+  "closed_round200_through213_archives_unchanged": true,
+  "protected_archive_entries_checked": 322,
+  "report_hygiene": [
+    "rounds/codex-managed/gc-full-goal-radius-source-review/synthesis.md",
+    "rounds/codex-managed/gc-full-goal-radius-source-review/briefs/blind_radius_optimization.md",
+    "rounds/codex-managed/gc-full-goal-radius-source-review/briefs/blind_radius_optimization_statement.md",
+    "rounds/codex-managed/gc-full-goal-radius-source-review/briefs/full_goal_harmonic_sources.md",
+    "rounds/codex-managed/gc-full-goal-radius-source-review/briefs/signed_radius_sources.md",
+    "rounds/codex-managed/gc-full-goal-radius-source-review/controls/conductor_primary_refresh.md",
+    "rounds/codex-managed/gc-full-goal-radius-source-review/controls/conductor_radius_power_ledger.md",
+    "rounds/codex-managed/gc-full-goal-radius-source-review/reports/blind_radius_optimization.md",
+    "rounds/codex-managed/gc-full-goal-radius-source-review/reports/full_goal_harmonic_sources.md",
+    "rounds/codex-managed/gc-full-goal-radius-source-review/reports/signed_radius_sources.md",
+    "rounds/codex-managed/gc-full-goal-radius-source-review/reviews/conductor_blind_radius_review.md",
+    "rounds/codex-managed/gc-full-goal-radius-source-review/reviews/conductor_round214_reconciliation.md",
+    "rounds/codex-managed/gc-full-goal-radius-source-review/reviews/independent_harmonic_sources_review.md",
+    "rounds/codex-managed/gc-full-goal-radius-source-review/reviews/independent_radius_power_review.md",
+    "rounds/codex-managed/gc-full-goal-radius-source-review/reviews/independent_signed_sources_review.md"
+  ],
+  "mathematical_numerical_experiments": 0,
+  "analytic_target": "open",
+  "complete_moment_bound_improved": false,
+  "pointwise_exponent_change": false
+}

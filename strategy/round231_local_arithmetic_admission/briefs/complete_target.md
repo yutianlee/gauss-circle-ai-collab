@@ -1,0 +1,11 @@
+# Round231 local arithmetic admission interface
+
+11 October 2026. This is a bounded admission continuation, not a launched analytic campaign. Round230 remains closed; previous three admission packets are immutable. Frozen graph SHA256 a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b.
+
+Use the exact complete wave and fixed functions in `strategy/round231_cross_label_admission/briefs/complete_target.md`: B_T(R)=sum r2(n)n^(-3/4)Psi(sqrt(n/T))cos(2pi R sqrt(n)-3pi/4), real T>=2, R in [T/2,2T]. Psi is the Fourier transform of a fixed nonnegative radial smooth unit-mass mollifier supported in the unit disk. w>=0 is smooth, supported [1/2,2], and one on [1/sqrt(2),sqrt(3)]. Complete target M12(B_T)<=T^(29/25+epsilon); accepted bound T^(10beta+epsilon), beta=(50sqrt(1717)-297)/13762. Strict pointwise gain requires b12<13beta-1/2. All classes, harmonics, mixed blocks and infinite tails remain.
+
+Frozen question: can exact local congruence information for the actual r2 coefficients, together with its properly restored oscillatory remainder, provide a new complete signed estimate? Test additive residue structure (not the already excluded completed scalar prime amplifier). A density formula or transform alone is not admission. Develop the actual local Fourier coefficients and their uniform error; assess the cost at physical frequency R~T. Independently test whether exact residue-cell margins at actual square-root locations rule out coherent peaks.
+
+The prior continuum identity and sufficient T^(4/25+epsilon) cumulative discrepancy at frequency 1/T are reviewed evidence, not accepted arithmetic bounds. Do not repeat their derivation as a new input. Do not equate an adversarial coefficient construction with a counterexample for exact r2. A local or shell estimate must pay its whole complement before it can change the complete target.
+
+Resources: three bounded tasks, one nonauthor review/repair cycle, >=95% analytical/algebraic and <=5% exact diagnostics. No broad literature re-search, no asymptotic simulation, no successor. Seven protocol sections, exact context and SHA256, write only assigned report and stop. Graph/draft/validation/closed campaign files cannot be edited by subagents.

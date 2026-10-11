@@ -1,0 +1,195 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 200,
+    "round_type": "complete_source_coefficient_mask_analysis",
+    "campaign_id": "m9-m1-t1-complete-source-coefficient-mask-analysis",
+    "title": "Complete original-t=1 source: coefficients, masks and net power",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "2f4448e999ab90387bca06498ddc60ee97b50f9900a9dfc6ad41fb201833c5f5",
+    "generated_at": "2026-09-23T11:44:56.548448+00:00",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "planned_numerical_percent": 0,
+      "budget": "Three analytical reports, one bounded correction/review cycle, conductor synthesis. No numerical experiments."
+    },
+    "target_obligations": [
+      "M9-M1-hard-top-high-radical-small-t-residual-estimate",
+      "M9-M1-hard-top-t1-comparable-factor-exchange-sector",
+      "M9-M1-hard-top-t1-residual-fejer-tangent-gcd-reduction"
+    ],
+    "frozen_target": {
+      "question": "Can the complete original-t=1 residual even-shift source, with P1 and P2 recombined, be bounded at L^2 X^epsilon; otherwise what exact coefficient norm or unmasked analytic estimate is missing after every mask and reconstruction cost?",
+      "reference_formula": "C_even=sum_(0<r<R0, 2|r)(1-r/R0) sum_N c_(N+r,sigma)^rem conjugate(c_(N,sigma)^rem) e(sigma sqrt(X) r/(sqrt(N+r)+sqrt(N))), R0=ceil(L). Target Re C_even << L^2 X^epsilon; c and total zero-extended lambda are exactly K185.1--3. E_R<=2D+4Re C_even and scalar prefactor O(L).",
+      "quantities": [
+        "Complete source precedes P_cl/P1/P2, both opposing orientations, all gcd/height/packet splits and later T branches.",
+        "A partition identity removes artificial partition boundaries only for a common genuine transport; it provides no analytic saving.",
+        "Geometric interval masks require a proved unmasked all-vector bilinear estimate and a controlled product or projective norm.",
+        "No t>=2, complete M1/M2, bridge, target or exponent conclusion is implied by a t=1 result."
+      ]
+    },
+    "completion_criteria": [
+      "Complete physical source and literal amplitude/support/multiplicity table.",
+      "Independent finite interval, projective-norm and parity connector derivations.",
+      "Quantified actual-symbol mask/norm and restored power ledger.",
+      "Complete target proof or explicit conditional interface locating the first unresolved analytic estimate; no endless smaller complements.",
+      "Conductor seam reconciliation and mechanical campaign/graph validation before closure; proof promotion requires all separate State Patch gates."
+    ],
+    "controls": [
+      "complete_source_multiplicity",
+      "actual_coefficients_only",
+      "literal_endpoint_zero_extension",
+      "partition_recombination",
+      "row_interval_vs_arithmetic_masks",
+      "product_and_projective_norms",
+      "even_parity_connector",
+      "one_outer_real_part",
+      "net_power_ledger",
+      "no_capacity_lower_bound",
+      "no_unverified_theorem_import",
+      "protected_parent_and_exponent_scope"
+    ],
+    "exit_labels": [
+      "complete_t1_residual_target_proved",
+      "complete_source_interface_with_open_estimate"
+    ],
+    "tasks": [
+      {
+        "id": "complete_source_analytic_derivation",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "target": "Reconstruct the complete original-t=1 residual even-shift source before sector norms. Expand the actual normalized symbol by following only its exact antecedent definitions as needed. Give a common-domain coefficient/phase/support/multiplicity table and exact P_cl/P1/P2 recombination. Test natural arithmetic row/column coordinates and interval sections; seek the complete Re C_even << L^2 X^epsilon inequality, or identify the precise missing analytic estimate. Do not stop at the old P2 triangle no-go. Record every additional antecedent read. Write only your assigned report.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round200_complete_source_coefficient_mask_strategy.md",
+          "proofs/kernels/m9_m1_hard_top_t1_comparable_factor_exchange_sector_and_residual_fejer_reduction.md",
+          "proofs/kernels/m9_m1_hard_top_t1_residual_fejer_tangent_gcd_reduction.md",
+          "proofs/kernels/m9_m1_hard_top_small_t_primitive_ray_sector_and_truncated_mobius_self_return.md",
+          "strategy/gauss_circle_strategy_review_2026-09-23.md",
+          "proofs/kernels/m9_m1_hard_top_t1_p2_cross_gcd_cellular_boundary_self_return.md"
+        ],
+        "required_controls": [
+          "complete_source_multiplicity",
+          "actual_coefficients_only",
+          "literal_endpoint_zero_extension",
+          "partition_recombination",
+          "row_interval_vs_arithmetic_masks",
+          "product_and_projective_norms",
+          "even_parity_connector",
+          "one_outer_real_part",
+          "net_power_ledger",
+          "no_capacity_lower_bound",
+          "no_unverified_theorem_import",
+          "protected_parent_and_exponent_scope"
+        ],
+        "required_output": [
+          "Seven-section protocol report with exact hypotheses, proof, first open step, controls, dependencies and state recommendation.",
+          "No shared-state edits; stop after the assigned report."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-t1-complete-source-coefficient-mask-analysis/reports/complete_source_analytic_derivation.md"
+      },
+      {
+        "id": "actual_symbol_norm_power_audit",
+        "role": "seam_reviewer",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "target": "Independently audit the full actual source coefficients, all masks and a quantitative product/projective-norm interface. Determine which geometric row sections are intervals, which arithmetic masks remain inside the kernel/amplitude, and whether an affordable norm is actually proved. Give raw L^3 correlation capacity versus L^2 target, high-h Y loss only as a subsidiary ledger, and scalar reconstruction. Display an explicit all-cost conditional inequality for a source-compatible bilinear import; do not claim a Kloosterman kernel or imported saving without proof. Follow exact symbol antecedents as needed and log them. Write only your assigned report.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round200_complete_source_coefficient_mask_strategy.md",
+          "proofs/kernels/m9_m1_hard_top_t1_comparable_factor_exchange_sector_and_residual_fejer_reduction.md",
+          "proofs/kernels/m9_m1_hard_top_t1_residual_fejer_tangent_gcd_reduction.md",
+          "proofs/kernels/m9_m1_hard_top_small_t_primitive_ray_sector_and_truncated_mobius_self_return.md",
+          "strategy/gauss_circle_strategy_review_2026-09-23.md"
+        ],
+        "required_controls": [
+          "complete_source_multiplicity",
+          "actual_coefficients_only",
+          "literal_endpoint_zero_extension",
+          "partition_recombination",
+          "row_interval_vs_arithmetic_masks",
+          "product_and_projective_norms",
+          "even_parity_connector",
+          "one_outer_real_part",
+          "net_power_ledger",
+          "no_capacity_lower_bound",
+          "no_unverified_theorem_import",
+          "protected_parent_and_exponent_scope"
+        ],
+        "required_output": [
+          "Seven-section protocol report with exact hypotheses, proof, first open step, controls, dependencies and state recommendation.",
+          "No shared-state edits; stop after the assigned report."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-t1-complete-source-coefficient-mask-analysis/reports/actual_symbol_norm_power_audit.md"
+      },
+      {
+        "id": "blind_interval_operator_rederivation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "pending",
+        "target": "Independently prove or refute every finite statement in the independent statement packet, including interval-mask, mixed-amplitude norm, commutator and even-parity connector statements. Do not infer any arithmetic saving. Produce a seven-section report and stop.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/m9-m1-t1-complete-source-coefficient-mask-analysis/briefs/independent_statement_packet.md"
+        ],
+        "required_controls": [
+          "complete_source_multiplicity",
+          "actual_coefficients_only",
+          "literal_endpoint_zero_extension",
+          "partition_recombination",
+          "row_interval_vs_arithmetic_masks",
+          "product_and_projective_norms",
+          "even_parity_connector",
+          "one_outer_real_part",
+          "net_power_ledger",
+          "no_capacity_lower_bound",
+          "no_unverified_theorem_import",
+          "protected_parent_and_exponent_scope"
+        ],
+        "required_output": [
+          "Seven-section protocol report with exact hypotheses, proof, first open step, controls, dependencies and state recommendation.",
+          "No shared-state edits; stop after the assigned report."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-t1-complete-source-coefficient-mask-analysis/reports/blind_interval_operator_rederivation.md",
+        "excluded_context": [
+          "state/proof_obligations.yml",
+          "state/best_proof_draft.md",
+          "strategy review and all claimant or historical derivations; read only protocol and the independent statement packet"
+        ]
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "source_and_multiplicity",
+        "requirement": "Check common physical source, actual symbol, arithmetic deletions, all endpoints and multiplicity."
+      },
+      {
+        "id": "interval_and_norm",
+        "requirement": "Check independent row-interval proof, correct complex projective norm and actual applicability."
+      },
+      {
+        "id": "power_and_scope",
+        "requirement": "Check even-parity connector, full versus high-h capacity, every reconstruction cost and protected scope."
+      }
+    ],
+    "scheduled_review": "Round 202 remains the full-proof strategy/current-primary-literature checkpoint; no successor is launched in Round 200."
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "2f4448e999ab90387bca06498ddc60ee97b50f9900a9dfc6ad41fb201833c5f5",
+    "generated_at": "2026-09-23T11:45:02.347606+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

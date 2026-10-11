@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "campaign_id": "m9-m1-t1-p2-cross-gcd-cellular-boundary-gate",
-  "promotion_status": "round_199_closed_cross_gcd_cellular_boundary_self_return_no_go_no_analytic_or_exponent_promotion",
-  "graph_sha256": "3073235ad5677b9066f1336ec9d958b0e93b92d99cfa7ebea1d823146c799099",
+  "campaign_id": "gc-research-status-strategy-reset",
+  "promotion_status": "round230_closed_identity_patch_strategy_revised_no_new_complete_bound",
+  "graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
   "gates": [
     {
       "id": "literal_lower_reciprocal_antecedent",
@@ -6118,7 +6118,1423 @@
       "id": "round199_final_closure_hygiene",
       "status": "green_independent_terminal_recheck_after_validation_matrix_header_repair_all_graph_patch_replay_scope_lifecycle_derived_state_tests_compile_and_hygiene_controls_pass_no_analytic_or_exponent_promotion",
       "artifact": "rounds/codex-managed/m9-m1-t1-p2-cross-gcd-cellular-boundary-gate/reviews/final_round199_closure_hygiene_verification.md"
+    },
+    {
+      "id": "round200_source_and_multiplicity",
+      "status": "green_reviewed_interface_only_no_analytic_promotion",
+      "artifact": "rounds/codex-managed/m9-m1-t1-complete-source-coefficient-mask-analysis/reports/complete_source_analytic_derivation.md"
+    },
+    {
+      "id": "round200_interval_and_norm",
+      "status": "green_reviewed_interface_only_no_analytic_promotion",
+      "artifact": "rounds/codex-managed/m9-m1-t1-complete-source-coefficient-mask-analysis/reports/blind_interval_operator_rederivation.md"
+    },
+    {
+      "id": "round200_power_and_scope",
+      "status": "green_reviewed_interface_only_no_analytic_promotion",
+      "artifact": "rounds/codex-managed/m9-m1-t1-complete-source-coefficient-mask-analysis/reports/actual_symbol_norm_power_audit.md"
+    },
+    {
+      "id": "round200_conductor_reconciliation",
+      "status": "green_reviewed_interface_only_no_analytic_promotion",
+      "artifact": "rounds/codex-managed/m9-m1-t1-complete-source-coefficient-mask-analysis/reviews/conductor_report_reconciliation.md"
+    },
+    {
+      "id": "round200_identity_patch_and_protected_scope",
+      "status": "green",
+      "artifact": "rounds/codex-managed/m9-m1-t1-complete-source-coefficient-mask-analysis/controls/closure_validation.json"
+    },
+    {
+      "id": "round201_whole_source",
+      "status": "green_reviewed_stated_scope_offdiagonal_open",
+      "artifact": "rounds/codex-managed/gc-whole-discrepancy-twelfth-moment/reports/whole_moment_analytic_attack.md"
+    },
+    {
+      "id": "round201_exact_resonance",
+      "status": "green_reviewed_stated_scope_offdiagonal_open",
+      "artifact": "rounds/codex-managed/gc-whole-discrepancy-twelfth-moment/reports/blind_exact_resonance_rederivation.md"
+    },
+    {
+      "id": "round201_primary_moment_sources",
+      "status": "green_reviewed_stated_scope_offdiagonal_open",
+      "artifact": "rounds/codex-managed/gc-whole-discrepancy-twelfth-moment/reports/circle_moment_primary_source_audit.md"
+    },
+    {
+      "id": "round201_conductor_reconciliation",
+      "status": "green_reviewed_stated_scope_offdiagonal_open",
+      "artifact": "rounds/codex-managed/gc-whole-discrepancy-twelfth-moment/reviews/conductor_round201_reconciliation.md"
+    },
+    {
+      "id": "round201_independent_formal_kernel",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-whole-discrepancy-twelfth-moment/reviews/independent_resonance_kernel_review.md"
+    },
+    {
+      "id": "round201_patch_reverse_replay_and_scope",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-whole-discrepancy-twelfth-moment/controls/promotion_preflight.json"
+    },
+    {
+      "id": "round202_current_primary_methods_audit",
+      "status": "green_stated_scope_only_signed_target_open",
+      "artifact": "rounds/codex-managed/gc-strategy-signed-moment-majorant-review/reports/current_primary_methods_audit.md"
+    },
+    {
+      "id": "round202_signed_cutoff_tail_moment_audit",
+      "status": "green_stated_scope_only_signed_target_open",
+      "artifact": "rounds/codex-managed/gc-strategy-signed-moment-majorant-review/reports/signed_cutoff_tail_moment_audit.md"
+    },
+    {
+      "id": "round202_blind_physical_near_resonance_mass",
+      "status": "green_stated_scope_only_signed_target_open",
+      "artifact": "rounds/codex-managed/gc-strategy-signed-moment-majorant-review/reports/blind_physical_near_resonance_mass.md"
+    },
+    {
+      "id": "round202_conductor_reconciliation",
+      "status": "green_stated_scope_only_signed_target_open",
+      "artifact": "rounds/codex-managed/gc-strategy-signed-moment-majorant-review/reviews/conductor_round202_reconciliation.md"
+    },
+    {
+      "id": "round202_physical_kernel_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-strategy-signed-moment-majorant-review/reviews/independent_physical_majorant_review.md"
+    },
+    {
+      "id": "round202_signed_interface_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-strategy-signed-moment-majorant-review/reviews/independent_signed_convolution_review.md"
+    },
+    {
+      "id": "round202_patch_reverse_replay",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-strategy-signed-moment-majorant-review/controls/promotion_preflight.json"
+    },
+    {
+      "id": "round203_actual_density_remainder_attack",
+      "status": "green_bounded_attempt_only_target_open",
+      "artifact": "rounds/codex-managed/gc-complete-signed-convolution-attack/reports/actual_density_remainder_attack.md"
+    },
+    {
+      "id": "round203_arithmetic_signed_tail_attack",
+      "status": "green_bounded_attempt_only_target_open",
+      "artifact": "rounds/codex-managed/gc-complete-signed-convolution-attack/reports/arithmetic_signed_tail_attack.md"
+    },
+    {
+      "id": "round203_blind_filter_scale_audit",
+      "status": "green_bounded_attempt_only_target_open",
+      "artifact": "rounds/codex-managed/gc-complete-signed-convolution-attack/reports/blind_filter_scale_audit.md"
+    },
+    {
+      "id": "round203_conductor_reconciliation",
+      "status": "green_bounded_attempt_only_target_open",
+      "artifact": "rounds/codex-managed/gc-complete-signed-convolution-attack/reviews/conductor_round203_reconciliation.md"
+    },
+    {
+      "id": "round203_independent_density_remainder_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-signed-convolution-attack/reviews/independent_density_remainder_review.md"
+    },
+    {
+      "id": "round203_independent_arithmetic_packet_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-signed-convolution-attack/reviews/independent_arithmetic_packet_review.md"
+    },
+    {
+      "id": "round203_independent_radial_poisson_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-signed-convolution-attack/reviews/independent_radial_poisson_review.md"
+    },
+    {
+      "id": "round203_identity_patch_scope",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-signed-convolution-attack/controls/closure_preflight.json"
+    },
+    {
+      "id": "round204_actual_large_values_attack",
+      "status": "green_stated_scope_only_stronger_target_open",
+      "artifact": "rounds/codex-managed/gc-complete-large-values-duality/reports/actual_large_values_attack.md"
+    },
+    {
+      "id": "round204_large_values_primary_source_audit",
+      "status": "green_stated_scope_only_stronger_target_open",
+      "artifact": "rounds/codex-managed/gc-complete-large-values-duality/reports/large_values_primary_source_audit.md"
+    },
+    {
+      "id": "round204_blind_gram_covering_audit",
+      "status": "green_stated_scope_only_stronger_target_open",
+      "artifact": "rounds/codex-managed/gc-complete-large-values-duality/reports/blind_gram_covering_audit.md"
+    },
+    {
+      "id": "round204_conductor_reconciliation",
+      "status": "green_stated_scope_only_stronger_target_open",
+      "artifact": "rounds/codex-managed/gc-complete-large-values-duality/reviews/conductor_round204_reconciliation.md"
+    },
+    {
+      "id": "round204_gram_tail_seam_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-large-values-duality/reviews/gram_tail_seam_review.md"
+    },
+    {
+      "id": "round204_source_correlation_seam_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-large-values-duality/reviews/source_correlation_seam_review.md"
+    },
+    {
+      "id": "round204_sharp_moment_seam_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-large-values-duality/reviews/sharp_moment_seam_review.md"
+    },
+    {
+      "id": "round204_patch_reverse_replay",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-large-values-duality/controls/promotion_preflight.json"
+    },
+    {
+      "id": "round205_current_circle_methods",
+      "status": "green_strategy_only_target_open",
+      "artifact": "rounds/codex-managed/gc-full-frontier-moment-strategy-review/reports/current_circle_methods.md"
+    },
+    {
+      "id": "round205_internal_arithmetic_routes",
+      "status": "green_strategy_only_target_open",
+      "artifact": "rounds/codex-managed/gc-full-frontier-moment-strategy-review/reports/internal_arithmetic_routes.md"
+    },
+    {
+      "id": "round205_blind_gain_frontier",
+      "status": "green_strategy_only_target_open",
+      "artifact": "rounds/codex-managed/gc-full-frontier-moment-strategy-review/reports/blind_gain_frontier.md"
+    },
+    {
+      "id": "round205_conductor_reconciliation",
+      "status": "green_strategy_only_target_open",
+      "artifact": "rounds/codex-managed/gc-full-frontier-moment-strategy-review/reviews/conductor_round205_reconciliation.md"
+    },
+    {
+      "id": "round205_independent_middle_band_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-frontier-moment-strategy-review/reviews/independent_middle_band_review.md"
+    },
+    {
+      "id": "round205_independent_modular_cost_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-frontier-moment-strategy-review/reviews/independent_modular_cost_review.md"
+    },
+    {
+      "id": "round205_independent_arithmetic_source_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-frontier-moment-strategy-review/reviews/independent_arithmetic_source_review.md"
+    },
+    {
+      "id": "round205_identity_patch_scope",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-frontier-moment-strategy-review/controls/closure_preflight.json"
+    },
+    {
+      "id": "round206_actual_divisor_shell_attack",
+      "status": "green_scoped_attempt_only_signed_target_open",
+      "artifact": "rounds/codex-managed/gc-complete-signed-shell-arithmetic/reports/actual_divisor_shell_attack.md"
+    },
+    {
+      "id": "round206_shifted_moment_source_attack",
+      "status": "green_scoped_attempt_only_signed_target_open",
+      "artifact": "rounds/codex-managed/gc-complete-signed-shell-arithmetic/reports/shifted_moment_source_attack.md"
+    },
+    {
+      "id": "round206_blind_odd_shell_bridge",
+      "status": "green_scoped_attempt_only_signed_target_open",
+      "artifact": "rounds/codex-managed/gc-complete-signed-shell-arithmetic/reports/blind_odd_shell_bridge.md"
+    },
+    {
+      "id": "round206_conductor_reconciliation",
+      "status": "green_scoped_attempt_only_signed_target_open",
+      "artifact": "rounds/codex-managed/gc-complete-signed-shell-arithmetic/reviews/conductor_round206_reconciliation.md"
+    },
+    {
+      "id": "round206_independent_shifted_source_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-signed-shell-arithmetic/reviews/independent_shifted_source_review.md"
+    },
+    {
+      "id": "round206_independent_divisor_obstruction_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-signed-shell-arithmetic/reviews/independent_divisor_obstruction_review.md"
+    },
+    {
+      "id": "round206_independent_bridge_power_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-signed-shell-arithmetic/reviews/independent_bridge_power_review.md"
+    },
+    {
+      "id": "round206_identity_patch_scope",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-signed-shell-arithmetic/controls/closure_preflight.json"
+    },
+    {
+      "id": "round207_periodic_hyperbola_attack",
+      "status": "green_scoped_attempt_only_signed_target_open",
+      "artifact": "rounds/codex-managed/gc-signed-rational-filter-attack/reports/periodic_hyperbola_attack.md"
+    },
+    {
+      "id": "round207_signed_rational_moment_attack",
+      "status": "green_scoped_attempt_only_signed_target_open",
+      "artifact": "rounds/codex-managed/gc-signed-rational-filter-attack/reports/signed_rational_moment_attack.md"
+    },
+    {
+      "id": "round207_blind_periodic_threshold",
+      "status": "green_scoped_attempt_only_signed_target_open",
+      "artifact": "rounds/codex-managed/gc-signed-rational-filter-attack/reports/blind_periodic_threshold.md"
+    },
+    {
+      "id": "round207_conductor_reconciliation",
+      "status": "green_scoped_attempt_only_signed_target_open",
+      "artifact": "rounds/codex-managed/gc-signed-rational-filter-attack/reviews/conductor_round207_reconciliation.md"
+    },
+    {
+      "id": "round207_independent_signed_norm_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-signed-rational-filter-attack/reviews/independent_signed_norm_review.md"
+    },
+    {
+      "id": "round207_independent_rational_majorant_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-signed-rational-filter-attack/reviews/independent_rational_majorant_review.md"
+    },
+    {
+      "id": "round207_independent_threshold_even_cutoff_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-signed-rational-filter-attack/reviews/independent_threshold_even_cutoff_review.md"
+    },
+    {
+      "id": "round207_identity_patch_scope",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-signed-rational-filter-attack/controls/closure_preflight.json"
+    },
+    {
+      "id": "round208_harmonic_current_sources",
+      "status": "green_strategy_scope_only_arithmetic_target_open",
+      "artifact": "rounds/codex-managed/gc-full-proof-signed-arithmetic-review/reports/harmonic_current_sources.md"
+    },
+    {
+      "id": "round208_arithmetic_full_frontier",
+      "status": "green_strategy_scope_only_arithmetic_target_open",
+      "artifact": "rounds/codex-managed/gc-full-proof-signed-arithmetic-review/reports/arithmetic_full_frontier.md"
+    },
+    {
+      "id": "round208_blind_moment_hierarchy",
+      "status": "green_strategy_scope_only_arithmetic_target_open",
+      "artifact": "rounds/codex-managed/gc-full-proof-signed-arithmetic-review/reports/blind_moment_hierarchy.md"
+    },
+    {
+      "id": "round208_conductor_reconciliation",
+      "status": "green_strategy_scope_only_arithmetic_target_open",
+      "artifact": "rounds/codex-managed/gc-full-proof-signed-arithmetic-review/reviews/conductor_round208_reconciliation.md"
+    },
+    {
+      "id": "round208_independent_bandlimited_peak_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-proof-signed-arithmetic-review/reviews/independent_bandlimited_peak_review.md"
+    },
+    {
+      "id": "round208_independent_hierarchy_gate_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-proof-signed-arithmetic-review/reviews/independent_hierarchy_gate_review.md"
+    },
+    {
+      "id": "round208_independent_harmonic_source_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-proof-signed-arithmetic-review/reviews/independent_harmonic_source_review.md"
+    },
+    {
+      "id": "round208_conductor_arithmetic_source_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-proof-signed-arithmetic-review/reviews/conductor_arithmetic_source_review.md"
+    },
+    {
+      "id": "round208_identity_patch_scope",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-proof-signed-arithmetic-review/controls/closure_preflight.json"
+    },
+    {
+      "id": "round209_actual_tenth_high_values",
+      "status": "green_scoped_evidence_actual_target_open",
+      "artifact": "rounds/codex-managed/gc-complete-signed-tenth-moment/reports/actual_tenth_high_values.md"
+    },
+    {
+      "id": "round209_signed_fifth_convolution",
+      "status": "green_scoped_evidence_actual_target_open",
+      "artifact": "rounds/codex-managed/gc-complete-signed-tenth-moment/reports/signed_fifth_convolution.md"
+    },
+    {
+      "id": "round209_blind_ten_root_audit",
+      "status": "green_scoped_evidence_actual_target_open",
+      "artifact": "rounds/codex-managed/gc-complete-signed-tenth-moment/reports/blind_ten_root_audit.md"
+    },
+    {
+      "id": "round209_conductor_reconciliation",
+      "status": "green_scoped_evidence_actual_target_open",
+      "artifact": "rounds/codex-managed/gc-complete-signed-tenth-moment/reviews/conductor_round209_reconciliation.md"
+    },
+    {
+      "id": "round209_independent_tenth_power_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-signed-tenth-moment/reviews/independent_tenth_power_review.md"
+    },
+    {
+      "id": "round209_independent_rational_tenth_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-signed-tenth-moment/reviews/independent_rational_tenth_review.md"
+    },
+    {
+      "id": "round209_independent_high_values_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-signed-tenth-moment/reviews/independent_high_values_review.md"
+    },
+    {
+      "id": "round209_conductor_blind_report_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-signed-tenth-moment/reviews/conductor_blind_report_review.md"
+    },
+    {
+      "id": "round209_identity_patch_scope",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-signed-tenth-moment/controls/closure_preflight.json"
+    },
+    {
+      "id": "round210_signed_rational_bins",
+      "status": "green_scoped_evidence_actual_target_open",
+      "artifact": "rounds/codex-managed/gc-signed-near-frequency-cancellation/reports/signed_rational_bins.md"
+    },
+    {
+      "id": "round210_actual_shifted_correlations",
+      "status": "green_scoped_evidence_actual_target_open",
+      "artifact": "rounds/codex-managed/gc-signed-near-frequency-cancellation/reports/actual_shifted_correlations.md"
+    },
+    {
+      "id": "round210_blind_bin_transfer",
+      "status": "green_scoped_evidence_actual_target_open",
+      "artifact": "rounds/codex-managed/gc-signed-near-frequency-cancellation/reports/blind_bin_transfer.md"
+    },
+    {
+      "id": "round210_conductor_reconciliation",
+      "status": "green_scoped_evidence_actual_target_open",
+      "artifact": "rounds/codex-managed/gc-signed-near-frequency-cancellation/reviews/conductor_round210_reconciliation.md"
+    },
+    {
+      "id": "round210_independent_conductor_transfer_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-signed-near-frequency-cancellation/reviews/independent_conductor_transfer_review.md"
+    },
+    {
+      "id": "round210_independent_rational_bins_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-signed-near-frequency-cancellation/reviews/independent_rational_bins_review.md"
+    },
+    {
+      "id": "round210_independent_shifted_correlations_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-signed-near-frequency-cancellation/reviews/independent_shifted_correlations_review.md"
+    },
+    {
+      "id": "round210_conductor_blind_bin_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-signed-near-frequency-cancellation/reviews/conductor_blind_bin_review.md"
+    },
+    {
+      "id": "round210_identity_patch_scope",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-signed-near-frequency-cancellation/controls/closure_preflight.json"
+    },
+    {
+      "id": "round211_harmonic_pair_sources",
+      "status": "green_scoped_evidence_actual_target_open",
+      "artifact": "rounds/codex-managed/gc-full-source-method-review/reports/harmonic_pair_sources.md"
+    },
+    {
+      "id": "round211_bilinear_arithmetic_sources",
+      "status": "green_scoped_evidence_actual_target_open",
+      "artifact": "rounds/codex-managed/gc-full-source-method-review/reports/bilinear_arithmetic_sources.md"
+    },
+    {
+      "id": "round211_blind_hyperbola_transfer",
+      "status": "green_scoped_evidence_actual_target_open",
+      "artifact": "rounds/codex-managed/gc-full-source-method-review/reports/blind_hyperbola_transfer.md"
+    },
+    {
+      "id": "round211_conductor_reconciliation",
+      "status": "green_scoped_evidence_actual_target_open",
+      "artifact": "rounds/codex-managed/gc-full-source-method-review/reviews/conductor_round211_reconciliation.md"
+    },
+    {
+      "id": "round211_independent_two_stage_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-source-method-review/reviews/independent_two_stage_review.md"
+    },
+    {
+      "id": "round211_independent_harmonic_sources_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-source-method-review/reviews/independent_harmonic_sources_review.md"
+    },
+    {
+      "id": "round211_independent_bilinear_sources_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-source-method-review/reviews/independent_bilinear_sources_review.md"
+    },
+    {
+      "id": "round211_conductor_blind_hyperbola_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-source-method-review/reviews/conductor_blind_hyperbola_review.md"
+    },
+    {
+      "id": "round211_identity_patch_scope",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-source-method-review/controls/closure_preflight.json"
+    },
+    {
+      "id": "round212_four_point_local_arithmetic",
+      "status": "green_scoped_evidence_actual_target_open",
+      "artifact": "rounds/codex-managed/gc-complete-four-point-correlation/reports/four_point_local_arithmetic.md"
+    },
+    {
+      "id": "round212_four_point_oscillatory_attack",
+      "status": "green_scoped_evidence_actual_target_open",
+      "artifact": "rounds/codex-managed/gc-complete-four-point-correlation/reports/four_point_oscillatory_attack.md"
+    },
+    {
+      "id": "round212_blind_local_interval_transfer",
+      "status": "green_scoped_evidence_actual_target_open",
+      "artifact": "rounds/codex-managed/gc-complete-four-point-correlation/reports/blind_local_interval_transfer.md"
+    },
+    {
+      "id": "round212_conductor_reconciliation",
+      "status": "green_scoped_evidence_actual_target_open",
+      "artifact": "rounds/codex-managed/gc-complete-four-point-correlation/reviews/conductor_round212_reconciliation.md"
+    },
+    {
+      "id": "round212_independent_actual_sector_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-four-point-correlation/reviews/independent_actual_sector_review.md"
+    },
+    {
+      "id": "round212_independent_local_arithmetic_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-four-point-correlation/reviews/independent_local_arithmetic_review.md"
+    },
+    {
+      "id": "round212_independent_oscillatory_attack_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-four-point-correlation/reviews/independent_oscillatory_attack_review.md"
+    },
+    {
+      "id": "round212_conductor_blind_local_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-four-point-correlation/reviews/conductor_blind_local_review.md"
+    },
+    {
+      "id": "round212_identity_patch_scope",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-four-point-correlation/controls/closure_preflight.json"
+    },
+    {
+      "id": "round213_centered_divisor_attack",
+      "status": "green_scoped_evidence_actual_target_open",
+      "artifact": "rounds/codex-managed/gc-complete-centered-arithmetic/reports/centered_divisor_attack.md"
+    },
+    {
+      "id": "round213_centered_shell_dispersion",
+      "status": "green_scoped_evidence_actual_target_open",
+      "artifact": "rounds/codex-managed/gc-complete-centered-arithmetic/reports/centered_shell_dispersion.md"
+    },
+    {
+      "id": "round213_blind_centered_certificate",
+      "status": "green_scoped_evidence_actual_target_open",
+      "artifact": "rounds/codex-managed/gc-complete-centered-arithmetic/reports/blind_centered_certificate.md"
+    },
+    {
+      "id": "round213_conductor_reconciliation",
+      "status": "green_scoped_evidence_actual_target_open",
+      "artifact": "rounds/codex-managed/gc-complete-centered-arithmetic/reviews/conductor_round213_reconciliation.md"
+    },
+    {
+      "id": "round213_independent_centering_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-centered-arithmetic/reviews/independent_centering_review.md"
+    },
+    {
+      "id": "round213_independent_periodic_model_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-centered-arithmetic/reviews/independent_periodic_model_review.md"
+    },
+    {
+      "id": "round213_independent_radius_dispersion_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-centered-arithmetic/reviews/independent_radius_dispersion_review.md"
+    },
+    {
+      "id": "round213_conductor_blind_centering_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-centered-arithmetic/reviews/conductor_blind_centering_review.md"
+    },
+    {
+      "id": "round213_identity_patch_scope",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-centered-arithmetic/controls/closure_preflight.json"
+    },
+    {
+      "id": "round214_signed_radius_sources",
+      "status": "green_scoped_evidence_actual_target_open",
+      "artifact": "rounds/codex-managed/gc-full-goal-radius-source-review/reports/signed_radius_sources.md"
+    },
+    {
+      "id": "round214_full_goal_harmonic_sources",
+      "status": "green_scoped_evidence_actual_target_open",
+      "artifact": "rounds/codex-managed/gc-full-goal-radius-source-review/reports/full_goal_harmonic_sources.md"
+    },
+    {
+      "id": "round214_blind_radius_optimization",
+      "status": "green_scoped_evidence_actual_target_open",
+      "artifact": "rounds/codex-managed/gc-full-goal-radius-source-review/reports/blind_radius_optimization.md"
+    },
+    {
+      "id": "round214_conductor_reconciliation",
+      "status": "green_scoped_evidence_actual_target_open",
+      "artifact": "rounds/codex-managed/gc-full-goal-radius-source-review/reviews/conductor_round214_reconciliation.md"
+    },
+    {
+      "id": "round214_independent_radius_power_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-goal-radius-source-review/reviews/independent_radius_power_review.md"
+    },
+    {
+      "id": "round214_independent_signed_sources_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-goal-radius-source-review/reviews/independent_signed_sources_review.md"
+    },
+    {
+      "id": "round214_independent_harmonic_sources_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-goal-radius-source-review/reviews/independent_harmonic_sources_review.md"
+    },
+    {
+      "id": "round214_conductor_blind_radius_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-goal-radius-source-review/reviews/conductor_blind_radius_review.md"
+    },
+    {
+      "id": "round214_identity_patch_scope",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-goal-radius-source-review/controls/closure_preflight.json"
+    },
+    {
+      "id": "round215_weighted_envelope_transfer",
+      "status": "green_scoped_evidence_actual_target_open",
+      "artifact": "rounds/codex-managed/gc-complete-localized-wave-moment/reports/weighted_envelope_transfer.md"
+    },
+    {
+      "id": "round215_actual_lattice_envelopes",
+      "status": "green_scoped_evidence_actual_target_open",
+      "artifact": "rounds/codex-managed/gc-complete-localized-wave-moment/reports/actual_lattice_envelopes.md"
+    },
+    {
+      "id": "round215_blind_spatial_kernel",
+      "status": "green_scoped_evidence_actual_target_open",
+      "artifact": "rounds/codex-managed/gc-complete-localized-wave-moment/reports/blind_spatial_kernel.md"
+    },
+    {
+      "id": "round215_conductor_reconciliation",
+      "status": "green_scoped_evidence_actual_target_open",
+      "artifact": "rounds/codex-managed/gc-complete-localized-wave-moment/reviews/conductor_round215_reconciliation.md"
+    },
+    {
+      "id": "round215_independent_actual_kernel_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-localized-wave-moment/reviews/independent_actual_kernel_review.md"
+    },
+    {
+      "id": "round215_independent_actual_wave_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-localized-wave-moment/reviews/independent_actual_wave_review.md"
+    },
+    {
+      "id": "round215_independent_weighted_transfer_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-localized-wave-moment/reviews/independent_weighted_transfer_review.md"
+    },
+    {
+      "id": "round215_conductor_blind_spatial_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-localized-wave-moment/reviews/conductor_blind_spatial_review.md"
+    },
+    {
+      "id": "round215_identity_patch_scope",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-localized-wave-moment/controls/closure_preflight.json"
+    },
+    {
+      "id": "round216_actual_radical_tail",
+      "status": "green_complete_reduction_only_target_open",
+      "artifact": "rounds/codex-managed/gc-actual-radical-high-values/reports/actual_radical_tail.md"
+    },
+    {
+      "id": "round216_anchored_divisor_high_values",
+      "status": "green_complete_reduction_only_target_open",
+      "artifact": "rounds/codex-managed/gc-actual-radical-high-values/reports/anchored_divisor_high_values.md"
+    },
+    {
+      "id": "round216_blind_radical_cutoff",
+      "status": "green_complete_reduction_only_target_open",
+      "artifact": "rounds/codex-managed/gc-actual-radical-high-values/reports/blind_radical_cutoff.md"
+    },
+    {
+      "id": "round216_conductor_reconciliation",
+      "status": "green_complete_reduction_only_target_open",
+      "artifact": "rounds/codex-managed/gc-actual-radical-high-values/reviews/conductor_round216_reconciliation.md"
+    },
+    {
+      "id": "round216_conductor_blind_radical_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-actual-radical-high-values/reviews/conductor_blind_radical_review.md"
+    },
+    {
+      "id": "round216_independent_distinct_reduction_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-actual-radical-high-values/reviews/independent_distinct_reduction_review.md"
+    },
+    {
+      "id": "round216_independent_radical_report_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-actual-radical-high-values/reviews/independent_radical_report_review.md"
+    },
+    {
+      "id": "round216_independent_anchored_arithmetic_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-actual-radical-high-values/reviews/independent_anchored_arithmetic_review.md"
+    },
+    {
+      "id": "round216_independent_actual_radical_binding_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-actual-radical-high-values/reviews/independent_actual_radical_binding_review.md"
+    },
+    {
+      "id": "round216_isolated_distinct_class_rederivation",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-actual-radical-high-values/reviews/isolated_distinct_class_rederivation.md"
+    },
+    {
+      "id": "round216_patch_reverse_replay",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-actual-radical-high-values/controls/promotion_preflight.json"
+    },
+    {
+      "id": "round217_distinct_correlation_sources",
+      "status": "green_narrow_obstruction_only_signed_target_open",
+      "artifact": "rounds/codex-managed/gc-full-goal-distinct-source-review/reports/distinct_correlation_sources.md"
+    },
+    {
+      "id": "round217_full_frontier_sources",
+      "status": "green_narrow_obstruction_only_signed_target_open",
+      "artifact": "rounds/codex-managed/gc-full-goal-distinct-source-review/reports/full_frontier_sources.md"
+    },
+    {
+      "id": "round217_blind_moment_family",
+      "status": "green_narrow_obstruction_only_signed_target_open",
+      "artifact": "rounds/codex-managed/gc-full-goal-distinct-source-review/reports/blind_moment_family.md"
+    },
+    {
+      "id": "round217_conductor_reconciliation",
+      "status": "green_narrow_obstruction_only_signed_target_open",
+      "artifact": "rounds/codex-managed/gc-full-goal-distinct-source-review/reviews/conductor_round217_reconciliation.md"
+    },
+    {
+      "id": "round217_independent_distinct_certificate_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-goal-distinct-source-review/reviews/independent_distinct_certificate_review.md"
+    },
+    {
+      "id": "round217_independent_distinct_sources_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-goal-distinct-source-review/reviews/independent_distinct_sources_review.md"
+    },
+    {
+      "id": "round217_independent_moment_family_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-goal-distinct-source-review/reviews/independent_moment_family_review.md"
+    },
+    {
+      "id": "round217_conductor_full_frontier_source_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-goal-distinct-source-review/reviews/conductor_full_frontier_source_review.md"
+    },
+    {
+      "id": "round217_conductor_moment_family_binding",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-goal-distinct-source-review/reviews/conductor_moment_family_binding.md"
+    },
+    {
+      "id": "round217_isolated_distinct_certificate_rederivation",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-goal-distinct-source-review/reviews/isolated_distinct_certificate_rederivation.md"
+    },
+    {
+      "id": "round217_patch_reverse_replay",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-goal-distinct-source-review/controls/promotion_preflight.json"
+    },
+    {
+      "id": "round218_joint_divisor_kernel",
+      "status": "green_scoped_evidence_actual_target_open",
+      "artifact": "rounds/codex-managed/gc-complete-signed-radical-kernel/reports/joint_divisor_kernel.md"
+    },
+    {
+      "id": "round218_joint_lattice_kernel",
+      "status": "green_scoped_evidence_actual_target_open",
+      "artifact": "rounds/codex-managed/gc-complete-signed-radical-kernel/reports/joint_lattice_kernel.md"
+    },
+    {
+      "id": "round218_blind_joint_radial",
+      "status": "green_scoped_evidence_actual_target_open",
+      "artifact": "rounds/codex-managed/gc-complete-signed-radical-kernel/reports/blind_joint_radial.md"
+    },
+    {
+      "id": "round218_conductor_reconciliation",
+      "status": "green_scoped_evidence_actual_target_open",
+      "artifact": "rounds/codex-managed/gc-complete-signed-radical-kernel/reviews/conductor_round218_reconciliation.md"
+    },
+    {
+      "id": "round218_conductor_joint_radial_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-signed-radical-kernel/reviews/conductor_joint_radial_review.md"
+    },
+    {
+      "id": "round218_independent_joint_lattice_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-signed-radical-kernel/reviews/independent_joint_lattice_review.md"
+    },
+    {
+      "id": "round218_independent_joint_divisor_and_control_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-signed-radical-kernel/reviews/independent_joint_divisor_and_control_review.md"
+    },
+    {
+      "id": "round218_isolated_packet_coherence_rederivation",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-signed-radical-kernel/reviews/isolated_packet_coherence_rederivation.md"
+    },
+    {
+      "id": "round218_conductor_packet_coherence_binding",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-signed-radical-kernel/reviews/conductor_packet_coherence_binding.md"
+    },
+    {
+      "id": "round218_identity_patch_scope",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-signed-radical-kernel/controls/closure_preflight.json"
+    },
+    {
+      "id": "round219_joint_cofactor_dispersion",
+      "status": "green_scoped_evidence_actual_target_open",
+      "artifact": "rounds/codex-managed/gc-complete-anchored-divisor-energy/reports/joint_cofactor_dispersion.md"
+    },
+    {
+      "id": "round219_actual_anchor_incidence",
+      "status": "green_scoped_evidence_actual_target_open",
+      "artifact": "rounds/codex-managed/gc-complete-anchored-divisor-energy/reports/actual_anchor_incidence.md"
+    },
+    {
+      "id": "round219_blind_anchor_classes",
+      "status": "green_scoped_evidence_actual_target_open",
+      "artifact": "rounds/codex-managed/gc-complete-anchored-divisor-energy/reports/blind_anchor_classes.md"
+    },
+    {
+      "id": "round219_conductor_reconciliation",
+      "status": "green_scoped_evidence_actual_target_open",
+      "artifact": "rounds/codex-managed/gc-complete-anchored-divisor-energy/reviews/conductor_round219_reconciliation.md"
+    },
+    {
+      "id": "round219_conductor_anchor_class_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-anchored-divisor-energy/reviews/conductor_anchor_class_review.md"
+    },
+    {
+      "id": "round219_independent_dispersion_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-anchored-divisor-energy/reviews/independent_dispersion_review.md"
+    },
+    {
+      "id": "round219_independent_incidence_and_control_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-anchored-divisor-energy/reviews/independent_incidence_and_control_review.md"
+    },
+    {
+      "id": "round219_isolated_fraction_packing_rederivation",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-anchored-divisor-energy/reviews/isolated_fraction_packing_rederivation.md"
+    },
+    {
+      "id": "round219_conductor_fraction_packing_binding",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-anchored-divisor-energy/reviews/conductor_fraction_packing_binding.md"
+    },
+    {
+      "id": "round219_identity_patch_scope",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-anchored-divisor-energy/controls/closure_preflight.json"
+    },
+    {
+      "id": "round220_reciprocal_energy_sources",
+      "status": "green_scoped_evidence_actual_target_open",
+      "artifact": "rounds/codex-managed/gc-full-goal-arithmetic-source-review/reports/reciprocal_energy_sources.md"
+    },
+    {
+      "id": "round220_full_frontier_sources",
+      "status": "green_scoped_evidence_actual_target_open",
+      "artifact": "rounds/codex-managed/gc-full-goal-arithmetic-source-review/reports/full_frontier_sources.md"
+    },
+    {
+      "id": "round220_blind_smooth_mask",
+      "status": "green_scoped_evidence_actual_target_open",
+      "artifact": "rounds/codex-managed/gc-full-goal-arithmetic-source-review/reports/blind_smooth_mask.md"
+    },
+    {
+      "id": "round220_conductor_reconciliation",
+      "status": "green_scoped_evidence_actual_target_open",
+      "artifact": "rounds/codex-managed/gc-full-goal-arithmetic-source-review/reviews/conductor_round220_reconciliation.md"
+    },
+    {
+      "id": "round220_conductor_smooth_mask_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-goal-arithmetic-source-review/reviews/conductor_smooth_mask_review.md"
+    },
+    {
+      "id": "round220_independent_rounding_application_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-goal-arithmetic-source-review/reviews/independent_rounding_application_review.md"
+    },
+    {
+      "id": "round220_independent_reciprocal_source_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-goal-arithmetic-source-review/reviews/independent_reciprocal_source_review.md"
+    },
+    {
+      "id": "round220_independent_full_frontier_source_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-goal-arithmetic-source-review/reviews/independent_full_frontier_source_review.md"
+    },
+    {
+      "id": "round220_conductor_source_and_strategy_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-goal-arithmetic-source-review/reviews/conductor_source_and_strategy_review.md"
+    },
+    {
+      "id": "round220_identity_patch_scope",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-goal-arithmetic-source-review/controls/closure_preflight.json"
+    },
+    {
+      "id": "round221_actual_anchored_gram_attack",
+      "status": "green_scoped_evidence_actual_target_open",
+      "artifact": "rounds/codex-managed/gc-actual-vector-gram-correlations/reports/actual_anchored_gram_attack.md"
+    },
+    {
+      "id": "round221_actual_shifted_correlations",
+      "status": "green_scoped_evidence_actual_target_open",
+      "artifact": "rounds/codex-managed/gc-actual-vector-gram-correlations/reports/actual_shifted_correlations.md"
+    },
+    {
+      "id": "round221_blind_anchored_gram",
+      "status": "green_scoped_evidence_actual_target_open",
+      "artifact": "rounds/codex-managed/gc-actual-vector-gram-correlations/reports/blind_anchored_gram.md"
+    },
+    {
+      "id": "round221_conductor_reconciliation",
+      "status": "green_scoped_evidence_actual_target_open",
+      "artifact": "rounds/codex-managed/gc-actual-vector-gram-correlations/reviews/conductor_round221_reconciliation.md"
+    },
+    {
+      "id": "round221_conductor_finite_gram_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-actual-vector-gram-correlations/reviews/conductor_finite_gram_review.md"
+    },
+    {
+      "id": "round221_independent_chain_ceiling_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-actual-vector-gram-correlations/reviews/independent_chain_ceiling_review.md"
+    },
+    {
+      "id": "round221_independent_anchored_gram_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-actual-vector-gram-correlations/reviews/independent_anchored_gram_review.md"
+    },
+    {
+      "id": "round221_independent_shifted_correlation_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-actual-vector-gram-correlations/reviews/independent_shifted_correlation_review.md"
+    },
+    {
+      "id": "round221_conductor_complete_target_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-actual-vector-gram-correlations/reviews/conductor_complete_target_review.md"
+    },
+    {
+      "id": "round221_identity_patch_scope",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-actual-vector-gram-correlations/controls/closure_preflight.json"
+    },
+    {
+      "id": "round222_joint_cross_modulus_attack",
+      "status": "green_scoped_evidence_actual_target_open",
+      "artifact": "rounds/codex-managed/m9-m2-complete-unbalanced-vector/reports/joint_cross_modulus_attack.md"
+    },
+    {
+      "id": "round222_actual_product_phase_attack",
+      "status": "green_scoped_evidence_actual_target_open",
+      "artifact": "rounds/codex-managed/m9-m2-complete-unbalanced-vector/reports/actual_product_phase_attack.md"
+    },
+    {
+      "id": "round222_blind_cross_modulus",
+      "status": "green_scoped_evidence_actual_target_open",
+      "artifact": "rounds/codex-managed/m9-m2-complete-unbalanced-vector/reports/blind_cross_modulus.md"
+    },
+    {
+      "id": "round222_conductor_reconciliation",
+      "status": "green_scoped_evidence_actual_target_open",
+      "artifact": "rounds/codex-managed/m9-m2-complete-unbalanced-vector/reviews/conductor_round222_reconciliation.md"
+    },
+    {
+      "id": "round222_conductor_finite_cross_modulus_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/m9-m2-complete-unbalanced-vector/reviews/conductor_finite_cross_modulus_review.md"
+    },
+    {
+      "id": "round222_independent_weighted_period_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/m9-m2-complete-unbalanced-vector/reviews/independent_weighted_period_review.md"
+    },
+    {
+      "id": "round222_independent_cross_modulus_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/m9-m2-complete-unbalanced-vector/reviews/independent_cross_modulus_review.md"
+    },
+    {
+      "id": "round222_independent_product_phase_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/m9-m2-complete-unbalanced-vector/reviews/independent_product_phase_review.md"
+    },
+    {
+      "id": "round222_conductor_complete_owner_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/m9-m2-complete-unbalanced-vector/reviews/conductor_complete_owner_review.md"
+    },
+    {
+      "id": "round222_identity_patch_scope",
+      "status": "green",
+      "artifact": "rounds/codex-managed/m9-m2-complete-unbalanced-vector/controls/closure_preflight.json"
+    },
+    {
+      "id": "round223_multiplicative_wave_sources",
+      "status": "green_scoped_evidence_full_targets_open",
+      "artifact": "rounds/codex-managed/gc-full-goal-signed-source-review/reports/multiplicative_wave_sources.md"
+    },
+    {
+      "id": "round223_geometric_complete_frontiers",
+      "status": "green_scoped_evidence_full_targets_open",
+      "artifact": "rounds/codex-managed/gc-full-goal-signed-source-review/reports/geometric_complete_frontiers.md"
+    },
+    {
+      "id": "round223_blind_oscillatory_transfer",
+      "status": "green_scoped_evidence_full_targets_open",
+      "artifact": "rounds/codex-managed/gc-full-goal-signed-source-review/reports/blind_oscillatory_transfer.md"
+    },
+    {
+      "id": "round223_conductor_reconciliation",
+      "status": "green_scoped_evidence_full_targets_open",
+      "artifact": "rounds/codex-managed/gc-full-goal-signed-source-review/reviews/conductor_round223_reconciliation.md"
+    },
+    {
+      "id": "round223_conductor_finite_transfer_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-goal-signed-source-review/reviews/conductor_finite_transfer_review.md"
+    },
+    {
+      "id": "round223_independent_linear_transfer_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-goal-signed-source-review/reviews/independent_linear_transfer_review.md"
+    },
+    {
+      "id": "round223_independent_multiplicative_source_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-goal-signed-source-review/reviews/independent_multiplicative_source_review.md"
+    },
+    {
+      "id": "round223_independent_geometric_source_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-goal-signed-source-review/reviews/independent_geometric_source_review.md"
+    },
+    {
+      "id": "round223_independent_strategy_checkpoint_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-goal-signed-source-review/reviews/independent_strategy_checkpoint_review.md"
+    },
+    {
+      "id": "round223_conductor_complete_frontier_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-goal-signed-source-review/reviews/conductor_complete_frontier_review.md"
+    },
+    {
+      "id": "round223_identity_patch_scope",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-goal-signed-source-review/controls/closure_preflight.json"
+    },
+    {
+      "id": "round224_complete_signed_prime_attack",
+      "status": "green_scoped_evidence_full_targets_open",
+      "artifact": "rounds/codex-managed/m9-m1-complete-gar-prime-amplification/reports/complete_signed_prime_attack.md"
+    },
+    {
+      "id": "round224_actual_prime_profile_control",
+      "status": "green_scoped_evidence_full_targets_open",
+      "artifact": "rounds/codex-managed/m9-m1-complete-gar-prime-amplification/reports/actual_prime_profile_control.md"
+    },
+    {
+      "id": "round224_blind_prime_allocation",
+      "status": "green_scoped_evidence_full_targets_open",
+      "artifact": "rounds/codex-managed/m9-m1-complete-gar-prime-amplification/reports/blind_prime_allocation.md"
+    },
+    {
+      "id": "round224_conductor_reconciliation",
+      "status": "green_scoped_evidence_full_targets_open",
+      "artifact": "rounds/codex-managed/m9-m1-complete-gar-prime-amplification/reviews/conductor_round224_reconciliation.md"
+    },
+    {
+      "id": "round224_conductor_finite_allocation_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/m9-m1-complete-gar-prime-amplification/reviews/conductor_finite_allocation_review.md"
+    },
+    {
+      "id": "round224_independent_complete_attack_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/m9-m1-complete-gar-prime-amplification/reviews/independent_complete_attack_review.md"
+    },
+    {
+      "id": "round224_independent_actual_profile_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/m9-m1-complete-gar-prime-amplification/reviews/independent_actual_profile_review.md"
+    },
+    {
+      "id": "round224_independent_grouped_control_source_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/m9-m1-complete-gar-prime-amplification/reviews/independent_grouped_control_source_review.md"
+    },
+    {
+      "id": "round224_conductor_complete_owner_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/m9-m1-complete-gar-prime-amplification/reviews/conductor_complete_owner_review.md"
+    },
+    {
+      "id": "round224_identity_patch_scope",
+      "status": "green",
+      "artifact": "rounds/codex-managed/m9-m1-complete-gar-prime-amplification/controls/closure_preflight.json"
+    },
+    {
+      "id": "round225_complete_nonlinear_prime_attack",
+      "status": "green_scoped_evidence_full_targets_open",
+      "artifact": "rounds/codex-managed/gc-complete-logarithmic-convolution/reports/complete_nonlinear_prime_attack.md"
+    },
+    {
+      "id": "round225_complete_factor_norm_audit",
+      "status": "green_scoped_evidence_full_targets_open",
+      "artifact": "rounds/codex-managed/gc-complete-logarithmic-convolution/reports/complete_factor_norm_audit.md"
+    },
+    {
+      "id": "round225_blind_finite_convolution",
+      "status": "green_scoped_evidence_full_targets_open",
+      "artifact": "rounds/codex-managed/gc-complete-logarithmic-convolution/reports/blind_finite_convolution.md"
+    },
+    {
+      "id": "round225_conductor_reconciliation",
+      "status": "green_scoped_evidence_full_targets_open",
+      "artifact": "rounds/codex-managed/gc-complete-logarithmic-convolution/reviews/conductor_round225_reconciliation.md"
+    },
+    {
+      "id": "round225_conductor_finite_convolution_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-logarithmic-convolution/reviews/conductor_finite_convolution_review.md"
+    },
+    {
+      "id": "round225_independent_complete_attack_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-logarithmic-convolution/reviews/independent_complete_attack_review.md"
+    },
+    {
+      "id": "round225_independent_complete_norm_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-logarithmic-convolution/reviews/independent_complete_norm_review.md"
+    },
+    {
+      "id": "round225_independent_envelope_rederivation",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-logarithmic-convolution/reviews/independent_envelope_rederivation.md"
+    },
+    {
+      "id": "round225_independent_envelope_application_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-logarithmic-convolution/reviews/independent_envelope_application_review.md"
+    },
+    {
+      "id": "round225_conductor_complete_owner_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-logarithmic-convolution/reviews/conductor_complete_owner_review.md"
+    },
+    {
+      "id": "round225_identity_patch_scope",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-logarithmic-convolution/controls/closure_preflight.json"
+    },
+    {
+      "id": "round226_actual_shifted_spectral_sources",
+      "status": "green_scoped_evidence_full_targets_open",
+      "artifact": "rounds/codex-managed/gc-full-goal-spectral-source-review/reports/actual_shifted_spectral_sources.md"
+    },
+    {
+      "id": "round226_theta_wave_full_frontiers",
+      "status": "green_scoped_evidence_full_targets_open",
+      "artifact": "rounds/codex-managed/gc-full-goal-spectral-source-review/reports/theta_wave_full_frontiers.md"
+    },
+    {
+      "id": "round226_blind_complex_subordination",
+      "status": "green_scoped_evidence_full_targets_open",
+      "artifact": "rounds/codex-managed/gc-full-goal-spectral-source-review/reports/blind_complex_subordination.md"
+    },
+    {
+      "id": "round226_conductor_reconciliation",
+      "status": "green_scoped_evidence_full_targets_open",
+      "artifact": "rounds/codex-managed/gc-full-goal-spectral-source-review/reviews/conductor_round226_reconciliation.md"
+    },
+    {
+      "id": "round226_conductor_subordination_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-goal-spectral-source-review/reviews/conductor_subordination_review.md"
+    },
+    {
+      "id": "round226_independent_shifted_source_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-goal-spectral-source-review/reviews/independent_shifted_source_review.md"
+    },
+    {
+      "id": "round226_independent_theta_source_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-goal-spectral-source-review/reviews/independent_theta_source_review.md"
+    },
+    {
+      "id": "round226_independent_subordination_application_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-goal-spectral-source-review/reviews/independent_subordination_application_review.md"
+    },
+    {
+      "id": "round226_independent_strategy_checkpoint_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-goal-spectral-source-review/reviews/independent_strategy_checkpoint_review.md"
+    },
+    {
+      "id": "round226_conductor_complete_frontier_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-goal-spectral-source-review/reviews/conductor_complete_frontier_review.md"
+    },
+    {
+      "id": "round226_identity_patch_scope",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-goal-spectral-source-review/controls/closure_preflight.json"
+    },
+    {
+      "id": "round227_joint_shift_spectral_attack",
+      "status": "green_scoped_evidence_full_targets_open",
+      "artifact": "rounds/codex-managed/gc-complete-joint-spectral-remainder/reports/joint_shift_spectral_attack.md"
+    },
+    {
+      "id": "round227_heegner_joint_norm_audit",
+      "status": "green_scoped_evidence_full_targets_open",
+      "artifact": "rounds/codex-managed/gc-complete-joint-spectral-remainder/reports/heegner_joint_norm_audit.md"
+    },
+    {
+      "id": "round227_blind_mellin_phase",
+      "status": "green_scoped_evidence_full_targets_open",
+      "artifact": "rounds/codex-managed/gc-complete-joint-spectral-remainder/reports/blind_mellin_phase.md"
+    },
+    {
+      "id": "round227_conductor_reconciliation",
+      "status": "green_scoped_evidence_full_targets_open",
+      "artifact": "rounds/codex-managed/gc-complete-joint-spectral-remainder/reviews/conductor_round227_reconciliation.md"
+    },
+    {
+      "id": "round227_conductor_mellin_phase_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-joint-spectral-remainder/reviews/conductor_mellin_phase_review.md"
+    },
+    {
+      "id": "round227_independent_spectral_attack_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-joint-spectral-remainder/reviews/independent_spectral_attack_review.md"
+    },
+    {
+      "id": "round227_independent_heegner_norm_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-joint-spectral-remainder/reviews/independent_heegner_norm_review.md"
+    },
+    {
+      "id": "round227_independent_mellin_application_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-joint-spectral-remainder/reviews/independent_mellin_application_review.md"
+    },
+    {
+      "id": "round227_conductor_complete_frontier_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-joint-spectral-remainder/reviews/conductor_complete_frontier_review.md"
+    },
+    {
+      "id": "round227_identity_patch_scope",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-complete-joint-spectral-remainder/controls/closure_preflight.json"
+    },
+    {
+      "id": "round228_signed_hecke_functional_attack",
+      "status": "green_scoped_evidence_full_targets_open",
+      "artifact": "rounds/codex-managed/gc-signed-heegner-phase/reports/signed_hecke_functional_attack.md"
+    },
+    {
+      "id": "round228_complete_eisenstein_pairing",
+      "status": "green_scoped_evidence_full_targets_open",
+      "artifact": "rounds/codex-managed/gc-signed-heegner-phase/reports/complete_eisenstein_pairing.md"
+    },
+    {
+      "id": "round228_blind_gamma_transition",
+      "status": "green_scoped_evidence_full_targets_open",
+      "artifact": "rounds/codex-managed/gc-signed-heegner-phase/reports/blind_gamma_transition.md"
+    },
+    {
+      "id": "round228_conductor_reconciliation",
+      "status": "green_scoped_evidence_full_targets_open",
+      "artifact": "rounds/codex-managed/gc-signed-heegner-phase/reviews/conductor_round228_reconciliation.md"
+    },
+    {
+      "id": "round228_conductor_gamma_transition_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-signed-heegner-phase/reviews/conductor_gamma_transition_review.md"
+    },
+    {
+      "id": "round228_independent_signed_hecke_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-signed-heegner-phase/reviews/independent_signed_hecke_review.md"
+    },
+    {
+      "id": "round228_independent_eisenstein_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-signed-heegner-phase/reviews/independent_eisenstein_review.md"
+    },
+    {
+      "id": "round228_independent_gamma_application_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-signed-heegner-phase/reviews/independent_gamma_application_review.md"
+    },
+    {
+      "id": "round228_conductor_complete_frontier_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-signed-heegner-phase/reviews/conductor_complete_frontier_review.md"
+    },
+    {
+      "id": "round228_identity_patch_scope",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-signed-heegner-phase/controls/closure_preflight.json"
+    },
+    {
+      "id": "round229_signed_cm_spectral_sources",
+      "status": "green_scoped_evidence_full_targets_open",
+      "artifact": "rounds/codex-managed/gc-full-goal-cuspidal-source-review/reports/signed_cm_spectral_sources.md"
+    },
+    {
+      "id": "round229_complete_frontier_source_comparison",
+      "status": "green_scoped_evidence_full_targets_open",
+      "artifact": "rounds/codex-managed/gc-full-goal-cuspidal-source-review/reports/complete_frontier_source_comparison.md"
+    },
+    {
+      "id": "round229_blind_radial_abel_kernel",
+      "status": "green_scoped_evidence_full_targets_open",
+      "artifact": "rounds/codex-managed/gc-full-goal-cuspidal-source-review/reports/blind_radial_abel_kernel.md"
+    },
+    {
+      "id": "round229_conductor_reconciliation",
+      "status": "green_scoped_evidence_full_targets_open",
+      "artifact": "rounds/codex-managed/gc-full-goal-cuspidal-source-review/reviews/conductor_round229_reconciliation.md"
+    },
+    {
+      "id": "round229_conductor_radial_abel_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-goal-cuspidal-source-review/reviews/conductor_radial_abel_review.md"
+    },
+    {
+      "id": "round229_independent_cm_source_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-goal-cuspidal-source-review/reviews/independent_cm_source_review.md"
+    },
+    {
+      "id": "round229_independent_frontier_source_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-goal-cuspidal-source-review/reviews/independent_frontier_source_review.md"
+    },
+    {
+      "id": "round229_independent_radial_application_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-goal-cuspidal-source-review/reviews/independent_radial_application_review.md"
+    },
+    {
+      "id": "round229_conductor_complete_frontier_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-goal-cuspidal-source-review/reviews/conductor_complete_frontier_review.md"
+    },
+    {
+      "id": "round229_independent_strategy_checkpoint_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-goal-cuspidal-source-review/reviews/independent_strategy_checkpoint_review.md"
+    },
+    {
+      "id": "round229_identity_patch_scope",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-full-goal-cuspidal-source-review/controls/closure_preflight.json"
+    },
+    {
+      "id": "round230_progress_frontier_audit",
+      "status": "green_scoped_evidence_full_targets_open",
+      "artifact": "rounds/codex-managed/gc-research-status-strategy-reset/reports/progress_frontier_audit.md"
+    },
+    {
+      "id": "round230_latest_literature_audit",
+      "status": "green_scoped_evidence_full_targets_open",
+      "artifact": "rounds/codex-managed/gc-research-status-strategy-reset/reports/latest_literature_audit.md"
+    },
+    {
+      "id": "round230_blind_moment_restoration",
+      "status": "green_scoped_evidence_full_targets_open",
+      "artifact": "rounds/codex-managed/gc-research-status-strategy-reset/reports/blind_moment_restoration.md"
+    },
+    {
+      "id": "round230_conductor_round230_adjudication",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-research-status-strategy-reset/reviews/conductor_round230_adjudication.md"
+    },
+    {
+      "id": "round230_independent_strategy_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-research-status-strategy-reset/reviews/independent_strategy_review.md"
+    },
+    {
+      "id": "round230_independent_moment_application_review",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-research-status-strategy-reset/reviews/independent_moment_application_review.md"
+    },
+    {
+      "id": "round230_identity_patch_scope",
+      "status": "green",
+      "artifact": "rounds/codex-managed/gc-research-status-strategy-reset/controls/closure_preflight.json"
     }
   ],
-  "decision_rule": "Round 199 is closed under p2_cross_gcd_cellular_boundary_self_return_no_go on graph 3073235ad5677b9066f1336ec9d958b0e93b92d99cfa7ebea1d823146c799099. The exact remaining P2 theorem, every parent, endpoint theorem, bridge, target, and exponent stay unchanged. Round 200 is pending design and Round 202 remains mandatory."
+  "decision_rule": "Current-primary revision and source applications, status provenance, fixed-order restoration and revised strategy reviewed; no full-bound gain or theorem promotion.",
+  "analytic_target_status": "open_all_complete_full_proof_frontiers"
 }

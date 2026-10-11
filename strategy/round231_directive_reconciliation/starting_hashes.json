@@ -1,0 +1,46 @@
+[
+  {
+    "path": "state/proof_obligations.yml",
+    "sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b"
+  },
+  {
+    "path": "state/best_proof_draft.md",
+    "sha256": "65989358d00f0ecf7c4d385ea58bfad09eaa026af98924266207c5f8af872f00"
+  },
+  {
+    "path": "state/validation_matrix.yml",
+    "sha256": "708f25bc2f8f38a84696c6ecec0c891c8fff84f6bedf92be98e0c0386e5bea1c"
+  },
+  {
+    "path": "state/active_campaign.yml",
+    "sha256": "fd65ce5c6b117aa4ca8ed097f85e2c786621c8054ca81791aa6e5e17006a82fa"
+  },
+  {
+    "path": "state/round_ledger.yml",
+    "sha256": "0adf5751beac7895f643a9c8da47ca5a2ce802039d6bb4376efe5b272e0c8f13"
+  },
+  {
+    "path": "strategy/next_campaign_gauss_circle_20261011.md",
+    "sha256": "aff0b81cb3ed71126776a680733fc4e831cf7e198cee8407f13c0354fd908e35"
+  },
+  {
+    "path": "strategy/gauss_circle_strategy_checkpoint_round230_2026-10-11.md",
+    "sha256": "d8dadae0d42e0b84a31fda14a132556e3fd2fdccfdf6b37c782564c4721fc34b"
+  },
+  {
+    "path": "state/current_round.md",
+    "sha256": "7d39f3dd547b679259d5fc50a2d5b35c1e68afe8c96db3c1ec79e923f361e2e4"
+  },
+  {
+    "path": "state/current_state.md",
+    "sha256": "621ea1fe024f9010c7e3a3f63dc3b410e4011b8acf9e418fe8cd8a43f01d1af0"
+  },
+  {
+    "path": "state/project_summary.md",
+    "sha256": "1c910a83f373347133f901cfc3b18ef3d50e3bc810299cf7a252c9726515f112"
+  },
+  {
+    "path": "state/next_campaign.md",
+    "sha256": "7d39f3dd547b679259d5fc50a2d5b35c1e68afe8c96db3c1ec79e923f361e2e4"
+  }
+]

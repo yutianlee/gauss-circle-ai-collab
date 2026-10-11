@@ -1,0 +1,30 @@
+{
+  "round_index": 206,
+  "campaign_id": "gc-complete-signed-shell-arithmetic",
+  "starting_graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+  "proof_obligations": {
+    "create": [],
+    "update": [],
+    "correct_rejected": [],
+    "reject": [],
+    "no_change": [
+      "GC-target",
+      "Conditional-bridge",
+      "M9",
+      "M9-M1",
+      "M9-M2",
+      "M9-endpoint-uniformity",
+      "GC-external-Li-Yang-theta-star",
+      "GC-weighted-square-root-exact-resonance-mass",
+      "GC-physical-twelfth-moment-absolute-majorant-obstruction",
+      "GC-complete-square-root-large-values-moment-bound"
+    ]
+  },
+  "round_assessment": {
+    "terminal_label": "scoped_arithmetic_method_no_go",
+    "reason": "Complete actual divisor/CRT and shifted-source attempts yield no improved complete moment. The actual absolute sixth expansion is too large for the sufficient certificate; the signed4--6-distinct-shift correlation remains open at an explicit relaxed threshold. Archive the reviewed scoped no-go and power ledger without graph promotion."
+  },
+  "reversibility": {
+    "rule": "Identity patch. In-memory application, inverse identity and replay equal the original graph. Graph and proof-draft bytes are not rewritten."
+  }
+}

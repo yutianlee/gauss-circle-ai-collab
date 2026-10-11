@@ -1,0 +1,15 @@
+{
+  "round": 230,
+  "evidence_level": "diagnostic_only",
+  "purpose": "Exact exponent bookkeeping only; no asymptotic claim certified.",
+  "code": "theta=(3292+25 Sqrt[1717])/13762; beta=2 theta-1/2; {FullSimplify[1/4+(29/25+1/2)/(2(12+1))], FullSimplify[(5/4+1+p/2)/(2(p+1))-(1/4+7/(8(p+1)))], FullSimplify[(1+(p-2)theta)/(p+1)-theta], FullSimplify[(b+1+p/2)/(2(p+1))-(1/4+(b+1/2)/(2(p+1)))], FullSimplify[13 beta-1/2], FullSimplify[10 beta-(13 beta-1/2)], N[{theta,beta,102/325,theta-102/325,13 beta-1/2,10 beta,1/2-2 beta},16], FullSimplify[theta>102/325 && theta<1/3 && beta>1/8 && beta<13/100]}",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Out[1]= {102/325, 0, (3886 - 75*Sqrt[1717])/(13762*(1 + p)), 0, (-5371 + 325*Sqrt[1717])/6881, (3886 - 75*Sqrt[1717])/6881, {0.31448317597406140673580717394153980816`16., 0.1289663519481228134716143478830796036`16., 0.31384615384615384615384615384615384615`16., 0.00063702212790756058196102009538596201`16., 1.17656257532559657513098652248003484683`16., 1.28966351948122813471614347883079603602`16., 0.2420672961037543730567713042338407928`16.}, True}"
+      }
+    ],
+    "isError": false
+  }
+}

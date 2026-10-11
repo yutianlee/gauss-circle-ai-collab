@@ -1,0 +1,28 @@
+{
+  "round_index": 227,
+  "campaign_id": "gc-complete-joint-spectral-remainder",
+  "generated_at": "2026-09-27T23:47:02.645959+00:00",
+  "decision": "close_bounded_joint_spectral_attempt_retain_full_signed_target",
+  "terminal_label": "complete_joint_spectral_remainder_no_new_bound",
+  "graph_mutation": false,
+  "complete_frontier_bound_improved": false,
+  "complete_moment_bound_improved": false,
+  "pointwise_exponent_change": false,
+  "reason": "The complete actual remainder has exact ordered HKLDW and whole-functional level1/2 Heegner formulations with paid scalar transforms and tails. The stated point fourth moment and individual Hecke norm give raw A^2 T N^2; even a hypothetical free fixed-sieve-size twisted norm leaves A^2 T N^(3/2). The elementary A^2 N^2 cap is still stronger and gives no new complete exponent. The actual signed spectral inequality at A^2 N^(3/2) remains unproved.",
+  "goal_turn_classification": "progress_reviewed_complete_spectral_interface_changes_next_action_no_complete_analytic_gain",
+  "next_objective": "Bound the COMPLETE actual signed Heegner spectral pairing at raw A_J^2 N^(3/2)T^epsilon or produce a stronger complete restored exponent.",
+  "next_method": "Use the exact level1/2 whole-functional bridge and preserve h^(it) with the common spectral phase before any positive norm. Test phase-sensitive spectral/Hecke summation against complete pretrace reconstruction; quantify every component and tail in one bounded analytic attempt.",
+  "first_unproved_estimate": "Uniformly for every R~T, dyadic2<=N<=P<2T^(3/2), and actual g_N, prove 2Re{sum_{q=1,2}sum_{j!=0}|u_j(z_q)|^2 V_q(j)+(1/(4pi))sum_{q,cusps}integral |E_cusp(z_q,1/2+it)|^2 V_q_cts(t)dt}<=C_epsilon,J A_J(N)^2 N^(3/2)T^epsilon, with V_q=sum_{h<2N}(1-h/(2N))L_q,h H_h, exactly as reviewed Heegner report(7)--(10). Retain all shifts, two-adic factors, continuous spectra and tails; do not replace the signed expression by an unproved sufficient norm.",
+  "interventions": [
+    "Frozen all-shift objective unchanged; exactly three fresh initial roles with fork_turns none and no sibling reads before freeze.",
+    "Conductor independently derived the Mellin curvature and interior joint phase, and flagged the small-shift gamma transition.",
+    "Conductor required the arbitrary complex radial orbit/pretrace derivation, matrix/parity normalization and probability-to-area conversion before the Heegner report froze.",
+    "Reports retain all discrete/continuous spectra and every atom, density, endpoint and tail; ordinary Parseval does not grant normalized theta growth or a reversed limit.",
+    "Claimants froze before reciprocal nonauthor kernel/source/cost reviews; final hashes are bound.",
+    "Isolated phase report has conductor nonauthor review; root application has separate nonauthor post-isolation review, including the harmless universal gamma phase -i.",
+    "Printed AH collective-sieve defects remain literal; no corrected range, normalization or missing height condition is imported.",
+    "Complete norm prices and original coefficient cap are compared only as upper certificates, never arithmetic lower bounds or universal impossibility.",
+    "No successor task starts before closure; all other complete owners and the full quarter goal remain open."
+  ],
+  "state_note": "The complete actual remainder has exact ordered HKLDW and whole-functional level1/2 Heegner formulations with paid scalar transforms and tails. The stated point fourth moment and individual Hecke norm give raw A^2 T N^2; even a hypothetical free fixed-sieve-size twisted norm leaves A^2 T N^(3/2). The elementary A^2 N^2 cap is still stronger and gives no new complete exponent. The actual signed spectral inequality at A^2 N^(3/2) remains unproved. Identity State Patch: all401 nodes and proof-draft bytes unchanged. M1 HARD/SMOOTH, M2 TOP/BAL/UNBAL, GAR lower ownership through159, endpoints and sufficient unbounded fixed-order alternatives remain open; fixed twelfth is not quarter. No arithmetic lower bound or all-method no-go. Zero mathematical experiments. Round228 pending design; broad strategy/current-primary review229. First complete unproved estimate: Uniformly for every R~T, dyadic2<=N<=P<2T^(3/2), and actual g_N, prove 2Re{sum_{q=1,2}sum_{j!=0}|u_j(z_q)|^2 V_q(j)+(1/(4pi))sum_{q,cusps}integral |E_cusp(z_q,1/2+it)|^2 V_q_cts(t)dt}<=C_epsilon,J A_J(N)^2 N^(3/2)T^epsilon, with V_q=sum_{h<2N}(1-h/(2N))L_q,h H_h, exactly as reviewed Heegner report(7)--(10). Retain all shifts, two-adic factors, continuous spectra and tails; do not replace the signed expression by an unproved sufficient norm."
+}

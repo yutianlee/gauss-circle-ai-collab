@@ -1,0 +1,32 @@
+{
+  "round_index": 227,
+  "campaign_id": "gc-complete-joint-spectral-remainder",
+  "starting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+  "proof_obligations": {
+    "create": [],
+    "update": [],
+    "correct_rejected": [],
+    "reject": [],
+    "no_change": [
+      "GC-target",
+      "Conditional-bridge",
+      "M9",
+      "M9-M1",
+      "M9-M2",
+      "M9-endpoint-uniformity",
+      "M9-M1-global-angular-radial-estimate",
+      "M9-M1-global-lower-radial-signed-estimate",
+      "M9-M1-GAR-total-active-equivalence",
+      "GC-external-Li-Yang-theta-star",
+      "GC-complete-square-root-large-values-moment-bound",
+      "GC-complete-distinct-radical-twelfth-reduction"
+    ]
+  },
+  "round_assessment": {
+    "terminal_label": "complete_joint_spectral_remainder_no_new_bound",
+    "reason": "The complete actual remainder has exact ordered HKLDW and whole-functional level1/2 Heegner formulations with paid scalar transforms and tails. The stated point fourth moment and individual Hecke norm give raw A^2 T N^2; even a hypothetical free fixed-sieve-size twisted norm leaves A^2 T N^(3/2). The elementary A^2 N^2 cap is still stronger and gives no new complete exponent. The actual signed spectral inequality at A^2 N^(3/2) remains unproved."
+  },
+  "reversibility": {
+    "rule": "Identity in-memory application, inverse and replay; graph and proof-draft bytes never rewritten."
+  }
+}

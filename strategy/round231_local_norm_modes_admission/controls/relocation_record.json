@@ -1,0 +1,56 @@
+{
+  "reason": "Another probe replaced the original packet plan and added different task briefs; its stopped record is preserved. Current user requested continuation.",
+  "original_plan_preserved": {
+    "round_index": 231,
+    "stage": "prelaunch_admission",
+    "status": "stopped_by_user",
+    "analytic_campaign_launched": false,
+    "starting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+    "generated_at": "2026-10-11T05:51:58.324032+00:00",
+    "objective": "Test actual local congruence information with its full oscillatory remainder against the complete twelfth moment gate; independently test whether exact cell margins exclude coherent actual-location perturbations.",
+    "resource_policy": {
+      "analytical_minimum_percent": 95,
+      "numerical_maximum_percent": 5,
+      "budget": "Three orthogonal reports, one review/repair cycle, bounded exact controls only."
+    },
+    "tasks": [
+      {
+        "id": "local_residue_arithmetic",
+        "role": "arithmetic derivation",
+        "brief": "briefs/local_residue_arithmetic.md",
+        "report": "reports/local_residue_arithmetic.md",
+        "status": "interrupted_by_user"
+      },
+      {
+        "id": "blind_cell_control",
+        "role": "statement-only independent proof",
+        "brief": "briefs/blind_cell_control.md",
+        "report": "reports/blind_cell_control.md",
+        "status": "interrupted_by_user"
+      },
+      {
+        "id": "oscillatory_remainder_gate",
+        "role": "signed remainder and full-restoration audit",
+        "brief": "briefs/oscillatory_remainder_gate.md",
+        "report": "reports/oscillatory_remainder_gate.md",
+        "status": "interrupted_by_user"
+      }
+    ],
+    "exit_gates": [
+      "A new actual inequality and complete restored gain before analytic admission",
+      "Independent proof and nonauthor seam review of any retained finite obstruction",
+      "No perturbation theorem claimed for exact r2; no density identity claimed as arithmetic gain",
+      "Graph, closed archives and prior packets preserved; no successor"
+    ],
+    "stopped_at": "2026-10-11T05:52:58.815274+00:00",
+    "closing_note": "User requested stop immediately after task dispatch. No research conclusion, graph mutation, promotion or analytic campaign launch."
+  },
+  "copied_current_task_artifacts": {
+    "controls/wolfram_exact_control.json": "82db2432e07b496c125f908aa1c0e7a77a625edcf925b8602eb93e806c909ddf",
+    "controls/reproduce_exact_controls.py": "ed31afb89850b563c89d6ead9c45c7641af5528d13852303f32aa550f5dd73e8",
+    "controls/local_exact_controls.json": "842170614e36dc2cc164b5f97e178d6cd16d07b1c3768c417921f7e8ec75529a",
+    "reports/local_global_bridge.md": "2bff7926f867e7f578b1d6efbcbc8d5f44f73a968c91379d3338d86b1bd0f12f"
+  },
+  "action": "Recreated this tasks frozen plan and briefs in the separate local_norm_modes packet; redirected active agents and copied already-frozen global report without changing its provenance. No file deleted or moved.",
+  "new_packet": "strategy\\round231_local_norm_modes_admission"
+}

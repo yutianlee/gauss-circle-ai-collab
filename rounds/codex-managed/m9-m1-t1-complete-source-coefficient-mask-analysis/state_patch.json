@@ -1,0 +1,33 @@
+{
+  "round_index": 200,
+  "campaign_id": "m9-m1-t1-complete-source-coefficient-mask-analysis",
+  "starting_graph_sha256": "2f4448e999ab90387bca06498ddc60ee97b50f9900a9dfc6ad41fb201833c5f5",
+  "proof_obligations": {
+    "create": [],
+    "update": [],
+    "correct_rejected": [],
+    "reject": [],
+    "no_change": [
+      "GC-target",
+      "Conditional-bridge",
+      "M9",
+      "M9-M1",
+      "M9-M2",
+      "M9-M1-top-endpoint-signed-cone",
+      "M9-M1-direct-smooth-residual-blockwise-estimate",
+      "M9-M1-hard-top-high-radical-small-t-residual-estimate",
+      "M9-M1-hard-top-t1-comparable-factor-exchange-sector",
+      "M9-M1-hard-top-t1-residual-fejer-tangent-gcd-reduction",
+      "M9-M1-hard-top-t1-rho-large-P2-absolute-capacity-sectors",
+      "M9-M1-hard-top-t1-rho-large-P2-common-cell-allocation-commutator-sector",
+      "M9-endpoint-uniformity"
+    ]
+  },
+  "round_assessment": {
+    "terminal_label": "complete_source_interface_with_open_estimate",
+    "reason": "Complete-source coefficient, mask, and power analysis finished; the actual-vector L^2 correlation bound is unproved. No new parent estimate or exponent. Finite tools are archived without promotion."
+  },
+  "reversibility": {
+    "rule": "Identity patch. In-memory application and replay equal the original graph; reversal is the identity. Do not serialize an unchanged graph merely to change its line endings."
+  }
+}

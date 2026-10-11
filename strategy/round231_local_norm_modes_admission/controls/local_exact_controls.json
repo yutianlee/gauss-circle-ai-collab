@@ -1,0 +1,66 @@
+{
+  "status": "passed",
+  "diagnostic_only": true,
+  "odd_prime_controls": [
+    {
+      "p": 3,
+      "norm_count_zero": 9,
+      "norm_count_units": 12,
+      "norm_count_valuation_one": 0,
+      "A": "-4/9",
+      "B": "0",
+      "twelfth_at_zero": "33554432/282429536481",
+      "all_residues_checked": 9,
+      "passes": true
+    },
+    {
+      "p": 5,
+      "norm_count_zero": 65,
+      "norm_count_units": 20,
+      "norm_count_valuation_one": 40,
+      "A": "12/125",
+      "B": "-8/125",
+      "twelfth_at_zero": "37038791327744/14551915228366851806640625",
+      "all_residues_checked": 25,
+      "passes": true
+    },
+    {
+      "p": 7,
+      "norm_count_zero": 49,
+      "norm_count_units": 56,
+      "norm_count_valuation_one": 0,
+      "A": "-8/49",
+      "B": "0",
+      "twelfth_at_zero": "412316860416/191581231380566414401",
+      "all_residues_checked": 49,
+      "passes": true
+    }
+  ],
+  "two_adic": {
+    "raw_counts": [
+      8,
+      16,
+      16,
+      0,
+      8,
+      16,
+      0,
+      0
+    ],
+    "squarefree_profile": [
+      "0",
+      "2",
+      "2",
+      "0",
+      "0",
+      "2",
+      "0",
+      "0"
+    ],
+    "mean": "3/4",
+    "signed_twelfth_at_zero": "23511/16777216",
+    "balanced_six_against_six": "31255/16777216",
+    "different_quantities": true
+  },
+  "limitations": "Finite exact controls do not certify any asymptotic theorem or transfer norm congruences to real root near-relations."
+}

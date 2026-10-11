@@ -1,0 +1,42 @@
+{
+  "round_index": 206,
+  "status": "green_identity_patch_preflight",
+  "graph_schema": "pass",
+  "campaign_schema": "pass",
+  "identity_patch": "pass",
+  "reverse_identity_replay": "pass",
+  "all_399_nodes_and_other_graph_data_unchanged": true,
+  "exact_review_hashes": {
+    "rounds/codex-managed/gc-complete-signed-shell-arithmetic/reports/shifted_moment_source_attack.md": "e6d78df605d26dae7012684625f11e1650a12eabc3a98b4b60a7fb23806c7a1e",
+    "rounds/codex-managed/gc-complete-signed-shell-arithmetic/reports/actual_divisor_shell_attack.md": "999f9c77ff468a39fb87eb4c593bede24d9bd6542d5ee16a2ade7ae60e0743b5",
+    "rounds/codex-managed/gc-complete-signed-shell-arithmetic/reports/blind_odd_shell_bridge.md": "f7c7e3362acc69e71ca8c38b2ec37a1d5b5a08f87682f9c056f2bc4c6770d511",
+    "rounds/codex-managed/gc-complete-signed-shell-arithmetic/controls/conductor_sixth_moment_power_ledger.md": "0a60519b209389501b62a82225e5ca9506cf01c0e739acab8d7836b05d275f5a"
+  },
+  "three_report_hashes": {
+    "rounds/codex-managed/gc-complete-signed-shell-arithmetic/reports/actual_divisor_shell_attack.md": "999f9c77ff468a39fb87eb4c593bede24d9bd6542d5ee16a2ade7ae60e0743b5",
+    "rounds/codex-managed/gc-complete-signed-shell-arithmetic/reports/shifted_moment_source_attack.md": "e6d78df605d26dae7012684625f11e1650a12eabc3a98b4b60a7fb23806c7a1e",
+    "rounds/codex-managed/gc-complete-signed-shell-arithmetic/reports/blind_odd_shell_bridge.md": "f7c7e3362acc69e71ca8c38b2ec37a1d5b5a08f87682f9c056f2bc4c6770d511"
+  },
+  "frozen_scope_and_briefs_unchanged": true,
+  "closed_round200_through205_archives_unchanged": true,
+  "protected_archive_entries_checked": 132,
+  "report_hygiene": [
+    "rounds/codex-managed/gc-complete-signed-shell-arithmetic/synthesis.md",
+    "rounds/codex-managed/gc-complete-signed-shell-arithmetic/briefs/actual_divisor_shell_attack.md",
+    "rounds/codex-managed/gc-complete-signed-shell-arithmetic/briefs/blind_odd_shell_bridge.md",
+    "rounds/codex-managed/gc-complete-signed-shell-arithmetic/briefs/blind_odd_shell_statement.md",
+    "rounds/codex-managed/gc-complete-signed-shell-arithmetic/briefs/shifted_moment_source_attack.md",
+    "rounds/codex-managed/gc-complete-signed-shell-arithmetic/controls/conductor_sixth_moment_power_ledger.md",
+    "rounds/codex-managed/gc-complete-signed-shell-arithmetic/reports/actual_divisor_shell_attack.md",
+    "rounds/codex-managed/gc-complete-signed-shell-arithmetic/reports/blind_odd_shell_bridge.md",
+    "rounds/codex-managed/gc-complete-signed-shell-arithmetic/reports/shifted_moment_source_attack.md",
+    "rounds/codex-managed/gc-complete-signed-shell-arithmetic/reviews/conductor_round206_reconciliation.md",
+    "rounds/codex-managed/gc-complete-signed-shell-arithmetic/reviews/independent_bridge_power_review.md",
+    "rounds/codex-managed/gc-complete-signed-shell-arithmetic/reviews/independent_divisor_obstruction_review.md",
+    "rounds/codex-managed/gc-complete-signed-shell-arithmetic/reviews/independent_shifted_source_review.md"
+  ],
+  "mathematical_numerical_experiments": 0,
+  "analytic_target": "open",
+  "complete_moment_bound_improved": false,
+  "pointwise_exponent_change": false
+}

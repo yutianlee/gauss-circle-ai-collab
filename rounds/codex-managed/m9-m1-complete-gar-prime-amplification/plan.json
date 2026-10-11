@@ -1,0 +1,210 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 224,
+    "round_type": "complete_gar_split_prime_amplification",
+    "campaign_id": "m9-m1-complete-gar-prime-amplification",
+    "title": "Complete real GAR split-prime amplification",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+    "generated_at": "2026-09-27T22:04:16.432476+00:00",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 95,
+      "numerical_experimental_maximum_percent": 5,
+      "planned_numerical_percent": 0,
+      "budget": "Three bounded seven-section reports, one amplifier family, one same-round review/repair cycle; zero planned experiments. At most one narrow primary import audit if essential."
+    },
+    "target_obligations": [
+      "GC-target",
+      "M9-M1-global-angular-radial-estimate",
+      "M9-M1-global-lower-radial-signed-estimate",
+      "M9-M1-GAR-total-active-equivalence"
+    ],
+    "frozen_target": {
+      "question": "Can split-prime amplification using the complete actual divisor-allocation relation and its profile commutators prove or quantitatively improve the complete real total-M1 GAR estimate?",
+      "reference_formula": "|Re{e(1/8) sum_(n<=16sqrt X) C_X^*(n)n^(-3/4)e(sqrt(Xn))}| << X^epsilon for every real X and exact fixed accepted profiles.",
+      "quantities": [
+        "A_X(h,q)=sum_j1_(h<=H_j)Phi(h/(H_j+1))[w_j(2sqrt(Xh/q))]^*, D_j=2^(-j)floor(sqrt X), H_j=floor(D_j X^(-1/4)).",
+        "Complete Hecke main-minus-commutator expression, repeated-prime overlaps, both original signs, prime2 and all literal endpoints.",
+        "Exact factors p^(3/4), p^(-3/4), divisibility masks, shifted phases and cutoffs; A_X remains at the original prescribed centre.",
+        "Accepted120 nonlower estimate and every lower scale/dependency through159; no fragment or upper-certificate floor is a complete gain.",
+        "Physical factor -(4/pi)X^(1/4), owned transform errors and inactive bottom. GAR controls total M1 only; every M2/endpoint and full quarter remain open."
+      ]
+    },
+    "completion_criteria": [
+      "Complete signed amplification report, independent actual-profile control and statement-only finite allocation derivation.",
+      "Independent final-hash mathematical/application reviews and source audit only if a theorem is imported; all controls and full physical costs.",
+      "Complete gain or precise no-gain/failure statement, conductor synthesis, mechanically valid State Patch and224 closure before any successor."
+    ],
+    "controls": [
+      "complete_actual_gar_owner",
+      "exact_chi4_divisor_relation",
+      "prime_power_overlap",
+      "actual_profile_commutator",
+      "literal_floors_stars",
+      "real_pairing",
+      "radial_dilation_cutoffs",
+      "fixed_vs_scaled_centre",
+      "all_lower_scales",
+      "norm_and_physical_restoration",
+      "actual_vs_enlarged_control",
+      "statement_only_derivation",
+      "source_hypotheses_if_used",
+      "full_goal_scope"
+    ],
+    "exit_labels": [
+      "complete_gar_gain_requires_validation",
+      "complete_gar_amplification_no_new_bound"
+    ],
+    "tasks": [
+      {
+        "id": "complete_signed_prime_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "target": "Attempt the COMPLETE real GAR target for the exact A_X and F_X in the conductor packet using one split-prime Hecke amplification before separate norms. Derive all actual coefficient commutators and repeated-prime overlaps; keep the joint main-minus-commutator expression under its single real part. Attempt a quantitative complete cross-prime estimate with the actual chi4 divisor vector; optimize a stated amplifier range only with every norm, dilation, cutoff, profile, endpoint and reconstruction cost restored. Constants must be uniform in real X. No average over changed centres is a pointwise theorem. Do not replace A_X by1, discard commutators or grant arbitrary-vector orthogonality. If positivity or Cauchy is used, identify exactly where actual signs are lost and price the entire resulting certificate. Compare with the inherited COMPLETE estimate, keeping paid nonlower and all lower scales; a fragment, finite identity or newly named open norm is not a gain. At most one narrowly justified primary-source import audit if essential. Seven sections, zero experiments, one amplifier family, assigned report only, no current sibling/shared-state/successor work; stop with final hash.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round224_complete_gar_split_prime_amplification.md",
+          "rounds/codex-managed/m9-m1-complete-gar-prime-amplification/briefs/conductor_actual_gar_interface.md",
+          "strategy/gauss_circle_strategy_checkpoint_round223_2026-09-28.md",
+          "rounds/codex-managed/gc-full-goal-signed-source-review/synthesis.md",
+          "rounds/codex-managed/m9-m1-gar-radial-interface-reconciliation/candidates/conductor_terminal_height_interface_completion.md",
+          "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/candidates/conductor_profile_flattening_and_integer_phase.md",
+          "proofs/kernels/m9_m1_d1_full_abel_common_profile_recombination.md",
+          "state/best_proof_draft.md",
+          "rounds/codex-managed/m9-m1-global-angular-shifted-correlation/synthesis.md",
+          "rounds/codex-managed/m9-m1-reflected-mode-correlation/synthesis.md"
+        ],
+        "required_controls": [
+          "complete_actual_gar_owner",
+          "exact_chi4_divisor_relation",
+          "prime_power_overlap",
+          "actual_profile_commutator",
+          "literal_floors_stars",
+          "real_pairing",
+          "radial_dilation_cutoffs",
+          "fixed_vs_scaled_centre",
+          "all_lower_scales",
+          "norm_and_physical_restoration",
+          "actual_vs_enlarged_control",
+          "statement_only_derivation",
+          "source_hypotheses_if_used",
+          "full_goal_scope"
+        ],
+        "required_output": [
+          "Seven numbered protocol sections: result, exact hypotheses, proof/derivation, first gap, controls, dependencies/provenance, state effect.",
+          "Only assigned report; no shared edits, synthesis, sibling access or successor. Stop after final SHA256."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-complete-gar-prime-amplification/reports/complete_signed_prime_attack.md"
+      },
+      {
+        "id": "actual_prime_profile_control",
+        "role": "seam_reviewer",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "target": "Independently control the complete actual A_X profile commutator in the proposed split-prime amplifier. Derive prime-shifted angular arguments, unchanged X-dependent heights, floors, hard stars and all overlap terms for p|n. Test whether the full correction is target-safe or whether its joint sign with the amplified term is indispensable; attempt a full estimate, not a locally cheap sector. If using lower flattening, include the physical error, complete range and later lower owners through159. Give actual-symbol controls when provable, distinguishing certificate mass from signed size and alternate arrays. Compare A_X(h,pq), A_X(ph,q), A_X(ph,pq) with A_X and with the INCORRECT substitution of coefficients at pX or X/p. Price the full parameter range of the tested amplifier and all physical restoration. No prime-count or source grant, no experiment, no current sibling/blind packet/shared-state/successor read or edit. Seven sections, one bounded mechanism, assigned report only; stop with final hash.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round224_complete_gar_split_prime_amplification.md",
+          "rounds/codex-managed/m9-m1-complete-gar-prime-amplification/briefs/conductor_actual_gar_interface.md",
+          "strategy/gauss_circle_strategy_checkpoint_round223_2026-09-28.md",
+          "rounds/codex-managed/gc-full-goal-signed-source-review/synthesis.md",
+          "rounds/codex-managed/m9-m1-gar-radial-interface-reconciliation/candidates/conductor_terminal_height_interface_completion.md",
+          "rounds/codex-managed/m9-m1-global-lower-height-kernel-gate/candidates/conductor_profile_flattening_and_integer_phase.md",
+          "proofs/kernels/m9_m1_d1_full_abel_common_profile_recombination.md",
+          "rounds/codex-managed/m9-m1-near-square-complementary-divisor-gate/synthesis.md",
+          "rounds/codex-managed/m9-m1-angular-mellin-separation/synthesis.md"
+        ],
+        "required_controls": [
+          "complete_actual_gar_owner",
+          "exact_chi4_divisor_relation",
+          "prime_power_overlap",
+          "actual_profile_commutator",
+          "literal_floors_stars",
+          "real_pairing",
+          "radial_dilation_cutoffs",
+          "fixed_vs_scaled_centre",
+          "all_lower_scales",
+          "norm_and_physical_restoration",
+          "actual_vs_enlarged_control",
+          "statement_only_derivation",
+          "source_hypotheses_if_used",
+          "full_goal_scope"
+        ],
+        "required_output": [
+          "Seven numbered protocol sections: result, exact hypotheses, proof/derivation, first gap, controls, dependencies/provenance, state effect.",
+          "Only assigned report; no shared edits, synthesis, sibling access or successor. Stop after final SHA256."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-complete-gar-prime-amplification/reports/actual_prime_profile_control.md"
+      },
+      {
+        "id": "blind_prime_allocation",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "pending",
+        "target": "Read only protocol and isolated statement. Independently derive coefficient allocation, exact overlap/commutator, adjoint identity, radial dilation factors and endpoints, constant-profile prime-power recurrence and the stated finite control. No application or source. Seven sections with prior-history disclosure, no experiments/web, assigned report only; stop.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/m9-m1-complete-gar-prime-amplification/briefs/blind_prime_allocation_statement.md"
+        ],
+        "required_controls": [
+          "complete_actual_gar_owner",
+          "exact_chi4_divisor_relation",
+          "prime_power_overlap",
+          "actual_profile_commutator",
+          "literal_floors_stars",
+          "real_pairing",
+          "radial_dilation_cutoffs",
+          "fixed_vs_scaled_centre",
+          "all_lower_scales",
+          "norm_and_physical_restoration",
+          "actual_vs_enlarged_control",
+          "statement_only_derivation",
+          "source_hypotheses_if_used",
+          "full_goal_scope"
+        ],
+        "required_output": [
+          "Seven numbered protocol sections: result, exact hypotheses, proof/derivation, first gap, controls, dependencies/provenance, state effect.",
+          "Only assigned report; no shared edits, synthesis, sibling access or successor. Stop after final SHA256."
+        ],
+        "report_path": "rounds/codex-managed/m9-m1-complete-gar-prime-amplification/reports/blind_prime_allocation.md",
+        "excluded_context": [
+          "Every file except protocol and isolated statement; prior-agent history disclosed."
+        ]
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "prime_allocation_and_adjoint",
+        "requirement": "All p-adic overlaps, character cases, phase/amplitude and integer endpoints."
+      },
+      {
+        "id": "actual_commutator_and_signed_estimate",
+        "requirement": "Actual fixed-X profiles and complete main-minus-correction before norms; distinguish actual signed size from certificates."
+      },
+      {
+        "id": "complete_owner_restoration",
+        "requirement": "All lower scales, exact real pairing, full physical powers, no total-to-blockwise or M1-to-full-target inference."
+      }
+    ],
+    "previous_goal_turn_classification": "progress_completed_reviewed_strategy_round_changes_next_action_no_complete_analytic_gain",
+    "scheduled_review": "Next broad strategy/current-primary review226."
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+    "generated_at": "2026-09-27T22:04:16.472223+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

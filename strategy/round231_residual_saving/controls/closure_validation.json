@@ -1,0 +1,70 @@
+{
+  "completed_at": "2026-10-11T07:10:03.234870+00:00",
+  "decision": {
+    "completed_at": "2026-10-11T07:10:03.234870+00:00",
+    "status": "not_admitted",
+    "analytic_campaign_launched": false,
+    "packet": "strategy/round231_residual_saving",
+    "decision": "strategy/round231_residual_saving/conductor_decision.md",
+    "mechanism": "Quantified actual signed residual; physical inverse exponents and adaptive actual divisor-factor localization",
+    "findings": [
+      "New reviewed adaptive cutoff D_T(x)=T^(-533/5250)x^(29/84) pays every unbalanced actual divisor pair at complete moment29/25, with top-scale cutoff exponent853/3500. Original residual correction, norm head and infinite tail are all paid; central balanced W_* remains open.",
+      "Fixed alpha11/50 independently gives unbalanced component exponent33787/26250<10beta, without changing the complete bound.",
+      "Statement-only arithmetic control proves uniform all-polynomial saving kappa<=1/20 for the literal residual, even after any scalar subtraction; independent conductor sequence and source quantifiers imply any valid transferred c<=3/20. This is not a physical-phase impossibility.",
+      "Actual physical quartic major arcs are empty below explicit thresholds. Any one common degree-d inverse exponent must satisfy C_d>=d, limiting that all-degree ceiling certificate to saving7/72, below1/4-beta.",
+      "Separate inverse exponents A=3,B=4 would restore complete moment23/18, but those numerical powers remain unproved and are not supplied by the source.",
+      "Elementary same-character semiprimes keep balanced coefficient energy at least T^(-1/2)/log^2T. This rejects only a coefficient-energy power gain, not a signed-moment gain.",
+      "Three frozen reports, statement-only independent derivation, three nonauthor reviews including adaptive cutoff, and bounded exact local controls completed."
+    ],
+    "scope": "Reviewed component estimates and scoped obstructions; no new complete exponent.",
+    "graph_effect": "none; no State Patch or promotion",
+    "required_new_input": "Estimate the actual adaptively balanced W_* signed moment at b<10beta (b<=29/25 for the preferred milestone), or prove sufficiently strong separate physical inverse exponents, with every complete owner paid. The unchanged uniform residual theorem cannot cross its1/20 saving cap.",
+    "complete_target": "M12<=T^(29/25+epsilon); accepted10beta=1.289663519481... unchanged."
+  },
+  "validation": [
+    {
+      "command": [
+        "C:\\Users\\yutia\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-m",
+        "math_collab.validate_state_patch"
+      ],
+      "exit_code": 0,
+      "stdout": "Graph OK: D:\\BaiduSyncdisk\\Codex\\gauss circle\\state\\proof_obligations.yml\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\yutia\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-m",
+        "math_collab.campaigns",
+        "validate"
+      ],
+      "exit_code": 0,
+      "stdout": "Campaign OK: D:\\BaiduSyncdisk\\Codex\\gauss circle\\state\\active_campaign.yml\n",
+      "stderr": ""
+    }
+  ],
+  "protected_files_verified": 5075,
+  "authorized_metadata_changes": [
+    "state/next_round_plan.yml",
+    "state/current_round.md",
+    "state/next_campaign.md",
+    "state/project_summary.md",
+    "state/failure_ledger.md"
+  ],
+  "graph_nodes": 401,
+  "graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+  "proof_draft_sha256": "65989358d00f0ecf7c4d385ea58bfad09eaa026af98924266207c5f8af872f00",
+  "active_manifest_sha256": "fd65ce5c6b117aa4ca8ed097f85e2c786621c8054ca81791aa6e5e17006a82fa",
+  "frozen_evidence_hashes": {
+    "reports/source_constant_extraction.md": "fb2eda32f5667262f00e4a51e94cdd25d7121659dbdd9578142fcff092a6b954",
+    "reports/blind_residual_control.md": "c78fa696c881c3068541a38ae807fc1de9a58817c87c30716524e471478a2d2b",
+    "reports/actual_residual_attack.md": "0d18fa59d915809427e1758ee478ba439303748738e8ec1f86d7e95060dd0bc5",
+    "conductor_uniform_saving_limit.md": "ffebdca4d1e4ea8ccb1358596626a602c9c53e95226bd3f541c68913ac6187b6",
+    "conductor_adaptive_factor_cutoff.md": "02727c91e64931a13d3707ca15df021418d3e96510e35894e0d96a70182506fa",
+    "reviews/review_uniform_control.md": "cfe423ce1503a528e39c0fb96728f052bfe9858762fedf7c800f1d5e4196f872",
+    "reviews/review_physical_inverse.md": "c6af571bed1e2f82a7aa20e9c5e03a22dc35df5a23c91c3323a6a805e6ff1c32",
+    "reviews/review_factor_strips.md": "33ca852fc7861847233f901c74df555f4673b39ca08d1a549a26a24914a99b1d"
+  },
+  "status": "passed"
+}

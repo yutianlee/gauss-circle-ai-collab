@@ -1,0 +1,30 @@
+{
+  "round_index": 213,
+  "campaign_id": "gc-complete-centered-arithmetic",
+  "starting_graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+  "proof_obligations": {
+    "create": [],
+    "update": [],
+    "correct_rejected": [],
+    "reject": [],
+    "no_change": [
+      "GC-target",
+      "Conditional-bridge",
+      "M9",
+      "M9-M1",
+      "M9-M2",
+      "M9-endpoint-uniformity",
+      "GC-external-Li-Yang-theta-star",
+      "GC-weighted-square-root-exact-resonance-mass",
+      "GC-physical-twelfth-moment-absolute-majorant-obstruction",
+      "GC-complete-square-root-large-values-moment-bound"
+    ]
+  },
+  "round_assessment": {
+    "terminal_label": "complete_signed_remainder_still_open",
+    "reason": "A complete signed radius gate on the enlarged window, Q_j << T^epsilon(sqrt(N)+N q^(-3/2)), is sufficient after a proved sqrt(q) bandwidth transfer and paid tails; it yields restored powers159/325 and166/325 but remains unproved. Actual residue zeros show scalar centering leaves positive Fourier certificates at N/sqrt(Lambda_*). Keeping model cross terms exact still leaves the fully priced absolute-DD certificate at least cN. Whole low-period norm models and their mean mismatch are target-safe, but every nonnegative model in that period range has actual complete L1 approximation certificate at least cN/log T. These are method-specific obstructions, not lower bounds on signed arithmetic. No complete moment, pointwise exponent or full-goal parent improves."
+  },
+  "reversibility": {
+    "rule": "Identity in-memory application, inverse and replay; graph/draft bytes never rewritten."
+  }
+}

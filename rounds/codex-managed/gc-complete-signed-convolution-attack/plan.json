@@ -1,0 +1,172 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 203,
+    "round_type": "complete_signed_analytic_attack",
+    "campaign_id": "gc-complete-signed-convolution-attack",
+    "title": "Complete signed sixfold-convolution analytic attack",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "abc88f6cd29d757b880037b6f600b802a22ac4b57fcce40662205150f3ed8ceb",
+    "generated_at": "2026-09-23T13:10:39.904237+00:00",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "planned_numerical_percent": 0,
+      "budget": "Three bounded analytical reports, conductor independent radial analysis, and one repair/review cycle; no numerical experiments."
+    },
+    "target_obligations": [
+      "GC-target",
+      "GC-external-Li-Yang-theta-star",
+      "GC-weighted-square-root-exact-resonance-mass",
+      "GC-physical-twelfth-moment-absolute-majorant-obstruction"
+    ],
+    "frozen_target": {
+      "question": "Can a complete coefficient-sensitive density or arithmetic estimate prove the actual signed filtered-convolution target with its full remainder?",
+      "reference_formula": "||K_T*mu_(T,>floor(T^(1/2047)))^{*6}||_2 << T^(29/50+epsilon)",
+      "quantities": [
+        "Exact definitions in strategy/round203_complete_signed_convolution_attack.md.",
+        "Target gives only intermediate102/325; quarter theorem remains full goal.",
+        "All infinite tails, both cosine signs and sixfold/twelfth cross terms are retained."
+      ]
+    },
+    "completion_criteria": [
+      "Three bounded reports, with an independent statement-only filter/remainder control.",
+      "Each analytic attempt derives a bound and exact first missing inequality; no transform-only success.",
+      "Conductor independently reproduces material algebra and reconciles all power/error seams.",
+      "Reviewed exact kernel only if warranted; otherwise identity State Patch and unchanged proof draft.",
+      "Validate graph/patch, protected artifacts and round lifecycle before closure."
+    ],
+    "controls": [
+      "actual_coefficients",
+      "complete_tail_and_cross_terms",
+      "signed_filter_preserved",
+      "all_errors_priced",
+      "real_uniformity",
+      "net_exponent",
+      "independent_statement_only_control",
+      "no_parent_overclaim"
+    ],
+    "exit_labels": [
+      "complete_signed_norm_bound_proved",
+      "complete_analytic_attempt_no_new_bound"
+    ],
+    "tasks": [
+      {
+        "id": "actual_density_remainder_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "target": "Attack the actual complete signed sixfold-convolution norm target via a continuous density subtraction. Derive a concrete density from the actual r_2 weights, use its oscillatory filtered cancellation, and rigorously estimate every remainder and mixed term. Start from exact Stieltjes summation with sum r_2(n)=pi x+P(x)-1 and accepted theta if helpful; do not replace a single summatory estimate by a sixfold approximation theorem. Try to obtain the target, not merely restate it. If the method self-returns or loses powers, give the strongest bound actually obtained and the exact quantitative first gap. Preserve all n>U and upper tails. One bounded analytical attempt and at most one targeted primary source check if essential. Seven sections and stop.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round203_complete_signed_convolution_attack.md",
+          "rounds/codex-managed/gc-strategy-signed-moment-majorant-review/candidates/conductor_signed_convolution_interface.md",
+          "rounds/codex-managed/gc-strategy-signed-moment-majorant-review/reports/signed_cutoff_tail_moment_audit.md"
+        ],
+        "required_controls": [
+          "actual_coefficients",
+          "complete_tail_and_cross_terms",
+          "signed_filter_preserved",
+          "all_errors_priced",
+          "real_uniformity",
+          "net_exponent",
+          "independent_statement_only_control",
+          "no_parent_overclaim"
+        ],
+        "required_output": [
+          "Seven-section report with exact result, hypotheses, derivation, first gap, controls, dependencies, state effect.",
+          "Write only assigned report. No graph, draft, matrix, synthesis, source cards or successor work."
+        ],
+        "report_path": "rounds/codex-managed/gc-complete-signed-convolution-attack/reports/actual_density_remainder_attack.md"
+      },
+      {
+        "id": "arithmetic_signed_tail_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "target": "Attack the full actual signed tail twelfth moment using r_2(n)=4 sum_(d|n)chi_4(d) or radial lattice Poisson/stationary phase. Choose a concrete complete arithmetic approach and push its estimates to their quantitative limit. Preserve chi_4 and all weights, frequency signs, dyadic recombination, errors, endpoints and infinite tail. A transform alone is not a result: show a saving or explicitly derive the net loss/self-return and the first new inequality needed. Do not subdivide indefinitely or discuss unrelated external methods. Seven sections and stop.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round203_complete_signed_convolution_attack.md",
+          "rounds/codex-managed/gc-strategy-signed-moment-majorant-review/candidates/conductor_signed_convolution_interface.md",
+          "rounds/codex-managed/gc-strategy-signed-moment-majorant-review/reports/signed_cutoff_tail_moment_audit.md"
+        ],
+        "required_controls": [
+          "actual_coefficients",
+          "complete_tail_and_cross_terms",
+          "signed_filter_preserved",
+          "all_errors_priced",
+          "real_uniformity",
+          "net_exponent",
+          "independent_statement_only_control",
+          "no_parent_overclaim"
+        ],
+        "required_output": [
+          "Seven-section report with exact result, hypotheses, derivation, first gap, controls, dependencies, state effect.",
+          "Write only assigned report. No graph, draft, matrix, synthesis, source cards or successor work."
+        ],
+        "report_path": "rounds/codex-managed/gc-complete-signed-convolution-attack/reports/arithmetic_signed_tail_attack.md"
+      },
+      {
+        "id": "blind_filter_scale_audit",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "pending",
+        "target": "Independently solve the smoothing-scale and full-remainder statement in the isolated packet. No claimant or sibling reads. Seven sections and stop.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/gc-complete-signed-convolution-attack/briefs/blind_filter_statement.md"
+        ],
+        "required_controls": [
+          "actual_coefficients",
+          "complete_tail_and_cross_terms",
+          "signed_filter_preserved",
+          "all_errors_priced",
+          "real_uniformity",
+          "net_exponent",
+          "independent_statement_only_control",
+          "no_parent_overclaim"
+        ],
+        "required_output": [
+          "Seven-section report with exact result, hypotheses, derivation, first gap, controls, dependencies, state effect.",
+          "Write only assigned report. No graph, draft, matrix, synthesis, source cards or successor work."
+        ],
+        "report_path": "rounds/codex-managed/gc-complete-signed-convolution-attack/reports/blind_filter_scale_audit.md",
+        "excluded_context": [
+          "Graph, manifest, strategy, all prior/claimant/sibling derivations."
+        ]
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "remainder",
+        "requirement": "Full arithmetic tails, both signs, all mixed terms and smoothing scales."
+      },
+      {
+        "id": "powers",
+        "requirement": "Quantitative restored norm and moment exponents."
+      },
+      {
+        "id": "scope",
+        "requirement": "Distinguish actual coefficient theorem from generic mechanism controls."
+      }
+    ],
+    "scheduled_review": "Next broad strategy/current-literature checkpoint205 after202--204."
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "abc88f6cd29d757b880037b6f600b802a22ac4b57fcce40662205150f3ed8ceb",
+    "generated_at": "2026-09-23T13:10:41.565447+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

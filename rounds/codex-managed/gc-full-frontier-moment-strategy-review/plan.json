@@ -1,0 +1,184 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 205,
+    "round_type": "scheduled_full_frontier_strategy_review",
+    "campaign_id": "gc-full-frontier-moment-strategy-review",
+    "title": "Full frontier and arithmetic gain strategy after the complete moment bound",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+    "generated_at": "2026-09-26T01:33:52.439816+00:00",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "planned_numerical_percent": 0,
+      "budget": "Three bounded analytical/source reports, conductor independent synthesis, one parameter/source seam-review cycle if needed. No mathematical numerical experiments."
+    },
+    "target_obligations": [
+      "GC-target",
+      "M9",
+      "M9-M1",
+      "M9-M2",
+      "GC-complete-square-root-large-values-moment-bound"
+    ],
+    "frozen_target": {
+      "question": "Which complete arithmetic objective and costed method should be attempted next toward the full quarter theorem?",
+      "reference_formula": "P(X)<<X^(1/4+epsilon); current D(V)<<T^epsilon(V^-2+T V^(-136/13)); p12 milestone M12<<T^(29/25+epsilon).",
+      "quantities": [
+        "Assess complete original-t=1 Q_R target, all independent M1/M2 parents, and actual whole-discrepancy high values.",
+        "Current theta unchanged; beta=2theta-1/2; complete moment norm exponent5beta, target29/50."
+      ]
+    },
+    "completion_criteria": [
+      "Three reports including isolated independent quantitative derivation.",
+      "Dated primary literature/version/withdrawal review with exact import costs and limitations.",
+      "Full frontier comparison and one concrete next objective with first unproved estimate.",
+      "Valid State Patch, ordinarily identity unless a separately reviewed new theorem is proved.",
+      "Keep the full goal and all existing source qualifications."
+    ],
+    "controls": [
+      "complete_source_scope",
+      "actual_arithmetic_coefficients",
+      "current_primary_hypotheses",
+      "withdrawals_and_versions",
+      "all_costs_restored",
+      "signed_absolute_distinction",
+      "independent_gain_frontier",
+      "real_endpoint_uniformity",
+      "full_proof_scope",
+      "no_unproved_import"
+    ],
+    "exit_labels": [
+      "strategy_review_select_complete_arithmetic_objective",
+      "strategy_review_no_source_compatible_gain"
+    ],
+    "tasks": [
+      {
+        "id": "current_circle_methods",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "target": "Review current primary circle/moment/large-value and harmonic-analysis literature as of2026-09-26, including named withdrawals and any newly relevant method. Inspect theorem texts for at most three substantive candidates, prioritizing one beyond generic unweighted exponent pairs: arithmetic large values, amplitude-sensitive decoupling, restriction, or Dirichlet-polynomial large values. For each serious candidate state exact formula, coefficients, parameter/averaging domain, source location, and first transfer obstruction or a full costed implication for the actual series. Current metadata checks alone do not import a theorem. Compare to the complete Round204 high-value gap. Produce a ranked, quantified method recommendation with limits; no next-round launch.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round205_full_frontier_strategy_review.md",
+          "rounds/codex-managed/gc-complete-large-values-duality/synthesis.md",
+          "strategy/gauss_circle_strategy_checkpoint_round202_2026-09-23.md",
+          "proofs/kernels/gc_complete_square_root_large_values_moment_bound.md",
+          "rounds/codex-managed/gc-strategy-signed-moment-majorant-review/reports/current_primary_methods_audit.md",
+          "sources/li_yang_2023.md"
+        ],
+        "required_controls": [
+          "complete_source_scope",
+          "actual_arithmetic_coefficients",
+          "current_primary_hypotheses",
+          "withdrawals_and_versions",
+          "all_costs_restored",
+          "signed_absolute_distinction",
+          "independent_gain_frontier",
+          "real_endpoint_uniformity",
+          "full_proof_scope",
+          "no_unproved_import"
+        ],
+        "required_output": [
+          "Seven numbered sections: result, hypotheses, derivation, first gap, controls, exact dependencies, state effect.",
+          "Write only assigned report; no state, draft, matrix, synthesis, source-card or successor edits."
+        ],
+        "report_path": "rounds/codex-managed/gc-full-frontier-moment-strategy-review/reports/current_circle_methods.md"
+      },
+      {
+        "id": "internal_arithmetic_routes",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "target": "Audit all complete internal M1/M2 frontiers and the complete original-t=1 source against a fresh modular/spectral alternative. Extract exact graph statements for M9/M1/M2 direct parents, GAR alternative and endpoint owners. Read the complete Round200 source and at most two additional exact evidence artifacts per shortlisted parent as needed, recording paths. Check current primary modular/trace-function theorem texts for at most two serious imports. Attempt an explicit arithmetic kernel identification or bounded transform on one complete source; retain real endpoints, physical coefficients, norms and exceptional moduli. Give full power ledger and first failed hypothesis if no transfer. Assess what a success actually closes and what remains. No unpriced name-list or next-round launch.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round205_full_frontier_strategy_review.md",
+          "rounds/codex-managed/gc-complete-large-values-duality/synthesis.md",
+          "strategy/gauss_circle_strategy_checkpoint_round202_2026-09-23.md",
+          "strategy/gauss_circle_strategy_review_2026-09-23.md",
+          "rounds/codex-managed/m9-m1-t1-complete-source-coefficient-mask-analysis/synthesis.md",
+          "rounds/codex-managed/m9-m1-t1-complete-source-coefficient-mask-analysis/reports/complete_source_analytic_derivation.md",
+          "rounds/codex-managed/gc-strategy-signed-moment-majorant-review/reports/current_primary_methods_audit.md"
+        ],
+        "required_controls": [
+          "complete_source_scope",
+          "actual_arithmetic_coefficients",
+          "current_primary_hypotheses",
+          "withdrawals_and_versions",
+          "all_costs_restored",
+          "signed_absolute_distinction",
+          "independent_gain_frontier",
+          "real_endpoint_uniformity",
+          "full_proof_scope",
+          "no_unproved_import"
+        ],
+        "required_output": [
+          "Seven numbered sections: result, hypotheses, derivation, first gap, controls, exact dependencies, state effect.",
+          "Write only assigned report; no state, draft, matrix, synthesis, source-card or successor edits."
+        ],
+        "report_path": "rounds/codex-managed/gc-full-frontier-moment-strategy-review/reports/internal_arithmetic_routes.md"
+      },
+      {
+        "id": "blind_gain_frontier",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "pending",
+        "target": "Independently derive the exact gain frontier and no-self-bootstrap control from the isolated packet; no claimant/sibling context. Stop after report.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/gc-full-frontier-moment-strategy-review/briefs/blind_gain_frontier_statement.md"
+        ],
+        "required_controls": [
+          "complete_source_scope",
+          "actual_arithmetic_coefficients",
+          "current_primary_hypotheses",
+          "withdrawals_and_versions",
+          "all_costs_restored",
+          "signed_absolute_distinction",
+          "independent_gain_frontier",
+          "real_endpoint_uniformity",
+          "full_proof_scope",
+          "no_unproved_import"
+        ],
+        "required_output": [
+          "Seven numbered sections: result, hypotheses, derivation, first gap, controls, exact dependencies, state effect.",
+          "Write only assigned report; no state, draft, matrix, synthesis, source-card or successor edits."
+        ],
+        "report_path": "rounds/codex-managed/gc-full-frontier-moment-strategy-review/reports/blind_gain_frontier.md",
+        "excluded_context": [
+          "Graph, manifest, strategy, prior/claimant/sibling derivations and all sources."
+        ]
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "gain_and_scope",
+        "requirement": "Exact normalized powers, abstract controls and scope versus actual arithmetic."
+      },
+      {
+        "id": "source_application",
+        "requirement": "Primary theorem hypotheses, actual coefficient/trace/mask costs and remaining parents."
+      }
+    ],
+    "previous_goal_turn_classification": "progress_validated_complete_distribution_moment_lemma_added",
+    "scheduled_review": "This is the mandatory review after202--204; next broad review208 after205--207."
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+    "generated_at": "2026-09-26T01:33:52.740755+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

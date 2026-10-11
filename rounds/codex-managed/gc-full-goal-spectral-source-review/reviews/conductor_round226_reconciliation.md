@@ -1,0 +1,71 @@
+# Round226 conductor reconciliation
+
+## 1. Result
+
+GREEN for scoped spectral-source and subordination evidence only.
+No complete analytic estimate, moment or exponent improved. Select the
+checkpoint's full signed Fejer target for subsequent bounded design.
+
+## 2. Exact statement and hypotheses
+
+Frozen226 source-review objective unchanged. Actual real-radius wave,
+actual coefficients, every shift and dyadic scale, fixed masks, endpoints,
+all spectral terms and tails. Full quarter remains the goal; all other
+complete frontiers and sufficient fixed-order moment alternatives persist.
+
+## 3. Proof and reconciliation
+
+The two source reports, isolated derivation and conductor application have
+final-hash nonauthor checks. The checkpoint independently restores its
+proposed one-sided remainder estimate through exact Fejer, density and
+diagonal costs to the entire wave and the sharp discrepancy. It does not
+prove that estimate. Legal source transfers and positive heat norms give
+no improved complete price. Source-print and growing-parameter caveats,
+both real signs, complex scope, all shifts and tails are retained.
+The synthesis and complete-frontier review record the conductor's algebraic
+reproduction and strategy choice. No decision is taken by agent vote.
+
+## 4. First unproved step
+
+Checkpoint(F), the entire actual joint signed correlation remainder, is
+unproved. The current fourth-moment theorem does not automatically estimate
+its spectral coefficient or test transform. No local or averaged result,
+finite identity or positive certificate closes that gap.
+
+## 5. Required controls and outcome
+
+All required review seams GREEN within scope; mathematical experiments zero.
+Mechanical closure separately checks campaign/graph schemas, frozen scope,
+final hashes, all667 prior archive entries, protected legacy paths, identity
+patch application/replay, all401 nodes and unchanged graph/draft bytes.
+No successor begins before those checks and closure succeed.
+
+## 6. Dependencies and exact artifact bindings
+
+- rounds/codex-managed/gc-full-goal-spectral-source-review/reports/actual_shifted_spectral_sources.md: 1bcb14e1899138097a3ab0e273060f2deaa800e3eb732e2924afb2f1f02d25bc.
+- rounds/codex-managed/gc-full-goal-spectral-source-review/reports/theta_wave_full_frontiers.md: e5e95a4d49ab5220b0533e52a92f6d2fb727d3f4b475ce4813ab3ab698d69c79.
+- rounds/codex-managed/gc-full-goal-spectral-source-review/reports/blind_complex_subordination.md: 35b28a172e791013cab241a44d47c43b0aea8fd6f7e372be3665b48146a45c0e.
+- rounds/codex-managed/gc-full-goal-spectral-source-review/controls/conductor_subordination_application.md: 69186e78d593c27618f89f16fba22436fec5e64dac078e182e1dbf235767ff8a.
+- rounds/codex-managed/gc-full-goal-spectral-source-review/briefs/blind_complex_subordination_statement.md: 5666b5ab44da69ab9b35dbcd28658cd9a9e9ba5dd454d25fe1df8ef21222b39a.
+- rounds/codex-managed/gc-full-goal-spectral-source-review/controls/conductor_current_primary_status.md: 8ec44865166527e8b3c2bb5c76c441fc5b7167fd9b647cd82d907b672aeb7b4f.
+- strategy/gauss_circle_strategy_checkpoint_round226_2026-09-28.md: f6aba7be605277ef9e09915e749ce07d22deb3cbfe95cc761660508a7f5c53c9.
+- rounds/codex-managed/gc-full-goal-spectral-source-review/reviews/conductor_subordination_review.md: 6f6f0f2ccfb7011784cd119e633571cb1f3639376c6b371eda1ece1bb4775c49.
+- rounds/codex-managed/gc-full-goal-spectral-source-review/reviews/independent_shifted_source_review.md: ddc722665f6417515cd1039b1538018e8e8c0fa9c98a00773253705505430df8.
+- rounds/codex-managed/gc-full-goal-spectral-source-review/reviews/independent_theta_source_review.md: 37ccadb3bc7a65b9dc5b4ea62ef91f7e8e58dd6f467d6a7efb5ed21eb6965e67.
+- rounds/codex-managed/gc-full-goal-spectral-source-review/reviews/independent_subordination_application_review.md: 3fed467c46d3a69b0a663c72aa20ae4c971279dbb9c3f4bb87382e69a9219860.
+- rounds/codex-managed/gc-full-goal-spectral-source-review/reviews/independent_strategy_checkpoint_review.md: 83ce6eea06304b661a441c262fe7f0a551857cbad00211b58bab42fbbe7cba2a.
+- rounds/codex-managed/gc-full-goal-spectral-source-review/reviews/conductor_complete_frontier_review.md: df6a06cf2239b976c02882d16c62d8b33ba8adcf7376599013f691e3463f1013.
+- rounds/codex-managed/gc-full-goal-spectral-source-review/controls/dispatch_provenance.json: d98b6fce0c88875d50c29016603d742873432bdf61dea4861b844e2398634c56.
+- rounds/codex-managed/gc-full-goal-spectral-source-review/controls/review_dispatch_provenance.json: 0027b4f7900f02bb9ffc233f92da0324085f8556aa0ffdcf3f5a388786d64133.
+- rounds/codex-managed/gc-full-goal-spectral-source-review/synthesis.md: 8c43670fa6021fc30a3c0a421f26abd4f1636045b79084a272556b54ef273720.
+- rounds/codex-managed/gc-full-goal-spectral-source-review/controls/closing_decision.json: 72be5b90612154367675f9d4aa29e516f5e1e2aaf52de534f603a11a6cae73a5.
+
+These bindings are inserted by the closure operation before state writes.
+Claimants, reviewers, isolation and interventions are recorded in provenance.
+Conductor authorship is not substituted for required nonauthor review.
+
+## 7. Recommended state effect
+
+Identity patch only; no analytic promotion or proof-draft edit. Close226,
+leave227 pending design, and retain229 as the next broad strategy/current-
+primary review. Full goal remains active without a claimed external blocker.

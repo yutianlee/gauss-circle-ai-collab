@@ -1,0 +1,66 @@
+{
+  "completed_at": "2026-10-11T06:43:22.385711+00:00",
+  "decision": {
+    "completed_at": "2026-10-11T06:43:22.385711+00:00",
+    "status": "not_admitted",
+    "analytic_campaign_launched": false,
+    "packet": "strategy/round231_quadratic_signed_admission",
+    "decision": "strategy/round231_quadratic_signed_admission/conductor_decision.md",
+    "mechanism": "Actual quadratic signed twists and higher-uniformity remainder; quartic patches and fully regrouped Type-I approximant",
+    "findings": [
+      "Proved actual quadratic-twist divisor estimate with arbitrary real linear phase; its short-fibre completion cost does not improve the complete moment.",
+      "Statement-only finite quadratic Gram proof and nonauthor review show a dominant common arithmetic component; residual decorrelation does not pay that owner.",
+      "Primary2204.03754v4 PropositionA.3 gives actual r2-r2sharp polynomial power savings. Quartic patches repair the length seam throughout the paid norm-head complement.",
+      "New independently derived and reviewed component bound: piecewise varying r2sharp, regrouped by divisor without patch-count loss, has supremum T^(5447/52500+epsilon) and M12<=T^(3044/2625+epsilon), below29/25 by1/2625.",
+      "The actual residual remains unpaid at a new complete exponent. Its source-based ceiling certificate needs kappa>1/4-beta for strict gain, or kappa>=73/500 for29/25; an unspecified positive source constant certifies neither.",
+      "Actual resonant moving quadratic patches refute uniform local square-root cancellation only; no full moment lower bound or polynomial-method impossibility is claimed.",
+      "Three nonauthor seams and conductor finite-row review pass;3354 transform and3354 Gram entries and an actual resonant patch reproduced diagnostically."
+    ],
+    "scope": "Reviewed component and source evidence only; complete bound unchanged.",
+    "graph_effect": "none; no State Patch or promotion",
+    "required_new_input": "A quantitative signed estimate for the actual residual after the now-paid Type-I approximant and norm head, using joint or averaged cancellation or a source saving with fully certified strength; preserve complete tails and all real radii.",
+    "complete_target": "M12<=T^(29/25+epsilon); accepted10beta=1.289663519481... unchanged."
+  },
+  "validation": [
+    {
+      "command": [
+        "C:\\Users\\yutia\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-m",
+        "math_collab.validate_state_patch"
+      ],
+      "exit_code": 0,
+      "stdout": "Graph OK: D:\\BaiduSyncdisk\\Codex\\gauss circle\\state\\proof_obligations.yml\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\yutia\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-m",
+        "math_collab.campaigns",
+        "validate"
+      ],
+      "exit_code": 0,
+      "stdout": "Campaign OK: D:\\BaiduSyncdisk\\Codex\\gauss circle\\state\\active_campaign.yml\n",
+      "stderr": ""
+    }
+  ],
+  "protected_files_verified": 5050,
+  "authorized_metadata_changes": [
+    "state/next_round_plan.yml",
+    "state/current_round.md",
+    "state/next_campaign.md",
+    "state/project_summary.md",
+    "state/failure_ledger.md"
+  ],
+  "graph_nodes": 401,
+  "graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+  "proof_draft_sha256": "65989358d00f0ecf7c4d385ea58bfad09eaa026af98924266207c5f8af872f00",
+  "active_manifest_sha256": "fd65ce5c6b117aa4ca8ed097f85e2c786621c8054ca81791aa6e5e17006a82fa",
+  "review_hashes": {
+    "reviews/conductor_finite_row_review.md": "79b1447291fb80aeb00572ad33fd93f910c3a51098f85f63767dfd56a96086cb",
+    "reviews/type_i_main_and_resonance_review.md": "a47dc8dbfda42b2003282ed0f4d00e9c3815b064df154d445f741adf6c661189",
+    "reviews/source_restoration_seam_review.md": "fdf35ef0fa82b9570fbbcaabf0d5083210e5ccf044d84ffa36c54e2acf38ce66",
+    "reviews/quadratic_bound_seam_review.md": "d0d25142f4c5bf365d28418d57fb697aad3a964bd674f69b9623f331cee7242b"
+  },
+  "status": "passed"
+}

@@ -1,0 +1,149 @@
+{
+  "status": "passed",
+  "diagnostic_only": true,
+  "method": "exact integer and rational arithmetic; exhaustive finite norm counts and trial division",
+  "odd_modulus_controls": [
+    {
+      "q": 1,
+      "all_residue_counts_match": true,
+      "zero_norm_count": 1
+    },
+    {
+      "q": 3,
+      "all_residue_counts_match": true,
+      "zero_norm_count": 1
+    },
+    {
+      "q": 5,
+      "all_residue_counts_match": true,
+      "zero_norm_count": 9
+    },
+    {
+      "q": 7,
+      "all_residue_counts_match": true,
+      "zero_norm_count": 1
+    },
+    {
+      "q": 9,
+      "all_residue_counts_match": true,
+      "zero_norm_count": 9
+    },
+    {
+      "q": 15,
+      "all_residue_counts_match": true,
+      "zero_norm_count": 9
+    },
+    {
+      "q": 25,
+      "all_residue_counts_match": true,
+      "zero_norm_count": 65
+    },
+    {
+      "q": 27,
+      "all_residue_counts_match": true,
+      "zero_norm_count": 9
+    },
+    {
+      "q": 45,
+      "all_residue_counts_match": true,
+      "zero_norm_count": 81
+    },
+    {
+      "q": 49,
+      "all_residue_counts_match": true,
+      "zero_norm_count": 49
+    },
+    {
+      "q": 63,
+      "all_residue_counts_match": true,
+      "zero_norm_count": 9
+    },
+    {
+      "q": 81,
+      "all_residue_counts_match": true,
+      "zero_norm_count": 81
+    },
+    {
+      "q": 105,
+      "all_residue_counts_match": true,
+      "zero_norm_count": 9
+    }
+  ],
+  "inherited_actual_support_control": {
+    "T": 1166400000036,
+    "Q": 67102,
+    "T_times_root_difference_upper_bound": "643431600019859/2662000000000000",
+    "signed_norm_sum": -1820000000,
+    "mod3": 1,
+    "all_distinct_squarefree": true,
+    "norms": [
+      121000001,
+      484000001,
+      1089000001,
+      3025000001,
+      12100000001,
+      27225000001,
+      1296000001,
+      324000001,
+      144000001,
+      32400000001,
+      8100000001,
+      3600000001
+    ],
+    "prime_factorizations": [
+      {
+        "1933": 1,
+        "62597": 1
+      },
+      {
+        "73": 1,
+        "6630137": 1
+      },
+      {
+        "1089000001": 1
+      },
+      {
+        "5437": 1,
+        "556373": 1
+      },
+      {
+        "941": 1,
+        "12858661": 1
+      },
+      {
+        "281": 1,
+        "96886121": 1
+      },
+      {
+        "181": 1,
+        "1361": 1,
+        "5261": 1
+      },
+      {
+        "13": 1,
+        "521": 1,
+        "47837": 1
+      },
+      {
+        "144000001": 1
+      },
+      {
+        "17": 1,
+        "61": 1,
+        "173": 1,
+        "313": 1,
+        "577": 1
+      },
+      {
+        "8017": 1,
+        "1010353": 1
+      },
+      {
+        "13": 1,
+        "1009": 1,
+        "274453": 1
+      }
+    ]
+  },
+  "limitations": "No asymptotic theorem is certified. The finite tuple only falsifies the proposed implication from a real near-root relation to an additive norm congruence."
+}

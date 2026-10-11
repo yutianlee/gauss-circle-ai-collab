@@ -1,0 +1,73 @@
+{
+  "round_index": 216,
+  "campaign_id": "gc-actual-radical-high-values",
+  "starting_graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "GC-complete-distinct-radical-twelfth-reduction",
+        "type": "lemma",
+        "track": "proof_infrastructure",
+        "status": "proved_internal",
+        "title": "Complete actual twelfth-moment reduction to distinct large squarefree classes",
+        "statement_tex": "Fix a nonnegative real radial smooth unit-mass mollifier supported in the unit disk, Psi(s)=rho-hat(s e1), and a fixed nonnegative smooth w supported in [1/2,2] and equal1 on [1/sqrt(2),sqrt(3)]. For real T>=2 let a_n(T)=r2(n)n^(-3/4)Psi(sqrt(n/T)), f_d(R)=sum_(s>=1)a_(d s^2)(T)cos(2pi R s sqrt(d)-3pi/4), Q=floor(T^(2/5)), L_Q=sum_(squarefree d<=Q)f_d, Z_Q=sum_(squarefree d>Q)f_d, B_T=L_Q+Z_Q, E12=sum_(ordered pairwise distinct squarefree d_1,...,d_12>Q)product_j f_(d_j), I12=integral w(R/T)E12(R)dR and M_p(F)=integral w(R/T)|F|^p dR. With the existing qualified Li--Yang exponent theta_LY and beta=2theta_LY-1/2, M12(L_Q)<<_epsilon T^(15/13+epsilon) and integral w(R/T)|Z_Q^12-E12|dR<<_epsilon T^(8beta-1/5+epsilon). Consequently |M12(Z_Q)-I12| obeys the latter error bound. The complete high-value bound integral_(|B_T|>T^(13/125))w|B_T|^12<<T^(29/25+epsilon), the full B_T twelfth-moment bound at that power, the full Z_Q bound at that power, and |I12|<<T^(29/25+epsilon) are equivalent, with every bound quantified for each epsilon>0. A one-sided upper bound on real I12 suffices. None of these equivalent target bounds is proved here. The exact signed partition identity pays every repeated-class configuration collectively, including nonzero and nonpairing relations, with all harmonics, signs, blocks, tails, real endpoints and floor retained. Distinct-class frequencies are nonzero but no sufficient separation or cancellation estimate is proved. This is not an additive approximation to M12(B_T), a new complete moment or pointwise exponent, a sufficient unbounded-order family, or a proof of any M1/M2/GAR parent, endpoint or the quarter theorem.",
+        "dependencies": [
+          "H1-H3",
+          "Divisor-bound-elementary",
+          "GC-complete-square-root-large-values-moment-bound",
+          "GC-weighted-square-root-exact-resonance-mass",
+          "GC-external-Li-Yang-theta-star"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "proofs/kernels/gc_complete_distinct_radical_moment_reduction.md",
+            "rounds/codex-managed/gc-actual-radical-high-values/reports/actual_radical_tail.md",
+            "rounds/codex-managed/gc-actual-radical-high-values/reports/anchored_divisor_high_values.md",
+            "rounds/codex-managed/gc-actual-radical-high-values/reports/blind_radical_cutoff.md",
+            "rounds/codex-managed/gc-actual-radical-high-values/candidates/complete_distinct_radical_reduction.md",
+            "rounds/codex-managed/gc-actual-radical-high-values/controls/conductor_radical_ledger.md",
+            "rounds/codex-managed/gc-actual-radical-high-values/briefs/isolated_distinct_class_statement.md",
+            "rounds/codex-managed/gc-actual-radical-high-values/reviews/conductor_blind_radical_review.md",
+            "rounds/codex-managed/gc-actual-radical-high-values/reviews/independent_distinct_reduction_review.md",
+            "rounds/codex-managed/gc-actual-radical-high-values/reviews/independent_radical_report_review.md",
+            "rounds/codex-managed/gc-actual-radical-high-values/reviews/independent_anchored_arithmetic_review.md",
+            "rounds/codex-managed/gc-actual-radical-high-values/reviews/independent_actual_radical_binding_review.md",
+            "rounds/codex-managed/gc-actual-radical-high-values/reviews/isolated_distinct_class_rederivation.md",
+            "rounds/codex-managed/gc-actual-radical-high-values/reviews/conductor_round216_reconciliation.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "At mandatory broad strategy/current-literature review217 compare the complete remaining distinct-class signed integral and anchored energy with all full-proof frontiers. The 29/25 target and full quarter theorem remain open; preserve every inherited source qualification."
+      }
+    ],
+    "update": [],
+    "correct_rejected": [],
+    "reject": [],
+    "no_change": [
+      "GC-target",
+      "Conditional-bridge",
+      "M9",
+      "M9-M1",
+      "M9-M2",
+      "M9-endpoint-uniformity",
+      "GC-external-Li-Yang-theta-star",
+      "GC-weighted-square-root-exact-resonance-mass",
+      "GC-physical-twelfth-moment-absolute-majorant-obstruction",
+      "GC-complete-square-root-large-values-moment-bound"
+    ]
+  },
+  "round_assessment": {
+    "terminal_label": "complete_actual_high_value_gate_open",
+    "reason": "Accept the completely paid reduction of the actual twelfth moment to twelve distinct large squarefree classes. The head costs T^(15/13+epsilon), and the collective repeated-class error costs T^(8beta-1/5+epsilon). The remaining signed distinct-class estimate at T^(29/25+epsilon) is unproved. Retain the anchored divisor conditional interface and scoped controls without promoting their missing arithmetic input."
+  },
+  "reversibility": {
+    "remove_created_ids": [
+      "GC-complete-distinct-radical-twelfth-reduction"
+    ],
+    "rule": "Remove the sole created node to restore every previous graph entry and the original graph bytes. Replay is identical after normalizing only the new-node timestamp."
+  }
+}

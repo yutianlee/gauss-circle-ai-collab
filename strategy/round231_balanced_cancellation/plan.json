@@ -1,0 +1,87 @@
+{
+  "round_index": 231,
+  "type": "bounded_prelaunch_central_balanced_cancellation",
+  "status": "complete",
+  "analytic_campaign_launched": false,
+  "objective": "New signed cancellation estimate for the actual central balanced residual sufficient for a complete moment gain; paid narrowing and scoped obstruction if no gain",
+  "starting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+  "generated_at": "2026-10-11T07:21:15.112767+00:00",
+  "budget": {
+    "analytical_minimum_percent": 95,
+    "numerical_maximum_percent": 5,
+    "tasks": 3,
+    "new_source_applications_maximum": 2,
+    "review_repair_cycles_maximum": 1
+  },
+  "tasks": [
+    {
+      "id": "balanced_reciprocal_attack",
+      "brief": "briefs/balanced_reciprocal_attack.md",
+      "status": "complete",
+      "report": "reports/balanced_reciprocal_attack.md",
+      "report_sha256": "fa63868418be5c8d24d30284394976fa3e0f1df077117dc3a9227441d55cf61f"
+    },
+    {
+      "id": "balanced_source_audit",
+      "brief": "briefs/balanced_source_audit.md",
+      "status": "complete",
+      "report": "reports/balanced_source_audit.md",
+      "report_sha256": "bd7beaa816e2443be41aaed903e92c8b884b1b827b1ea5b2fb1eb9004b0e9cd7"
+    },
+    {
+      "id": "blind_hankel_tail",
+      "brief": "briefs/blind_hankel_tail.md",
+      "status": "complete",
+      "report": "reports/blind_hankel_tail.md",
+      "report_sha256": "03b30638eb6da7242343731ac03b425e2f09e16749f73685adc343a357cd01d5"
+    }
+  ],
+  "exit_gates": [
+    "Three frozen reports, including isolated important estimate",
+    "Nonauthor reviews and exact source hypotheses",
+    "Full restoration and all cutoff/tail owners",
+    "Independent local reproduction of important finite controls",
+    "No accepted promotion or campaign launch without valid complete gain",
+    "Protected graph and archives preserved absent separately validated State Patch"
+  ],
+  "completed_at": "2026-10-11T07:42:24.567758+00:00",
+  "reviews": [
+    {
+      "path": "reviews/review_source_application.md",
+      "status": "pass_with_attached_complementary_budget_correction",
+      "sha256": "39a778d3ddcf1acdd25b21be6206bd86559c4abef1067cb781056cdfa64d68a4"
+    },
+    {
+      "path": "reviews/review_reciprocal_signs.md",
+      "status": "pass_with_attached_logarithm_correction_and_real_phase_clarification",
+      "sha256": "8bfd3a3c5ed3b4a43f668708a57e9234dca99965ba35ceb3bd59e27df3524b03"
+    },
+    {
+      "path": "reviews/review_hankel_and_owner.md",
+      "status": "pass",
+      "sha256": "bb9b8654518c8ee42c4f609bccd575b1f74c61d29cb52626280d9d19fc677d24"
+    }
+  ],
+  "repair_attachment": {
+    "path": "conductor_seam_repairs.md",
+    "sha256": "e4dc22c726eb241e24a4e7c485202ea6b6b567ecc4e16a3708d435ddc82eab14"
+  },
+  "conductor_interventions": [
+    "Preserved statement-only isolation until the important Hankel tail report was frozen.",
+    "Searched the existing mathematical history, found the recovered norm-tail and band already in Rounds203/205/208, and required corrected provenance before closure.",
+    "Required complete actual-mask restoration, including bounded variation of each extra cutoff and both character placements.",
+    "Identified the exact real-phase cancellation, required an independent detuned real-fibre control, and rejected any full-wave lower-bound inference.",
+    "Combined the inherited norm band with the recent adaptive factor cutoff and assigned the parameterized owner to a nonauthor reviewer.",
+    "Attached localized endpoint and complementary-budget repairs without altering frozen initial reports; the same review cycle checked the real detuning and inherited-mask seam."
+  ],
+  "decision": "retain_corrected_evidence_and_exact_owner_no_complete_gain_not_admitted",
+  "graph_effect": "none; corrected reviewed evidence only",
+  "complete_moment_bound_improved": false,
+  "resource_outcome": {
+    "analytical_minimum_percent": 95,
+    "numerical_maximum_percent": 5,
+    "new_source_applications": 2,
+    "review_repair_cycles": 1,
+    "description": "Three analytical reports, one combined owner derivation, one forward repair attachment, three nonauthor seams and one bounded exact diagnostic script."
+  }
+}

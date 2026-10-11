@@ -1,0 +1,34 @@
+{
+  "round_index": 203,
+  "status": "green_identity_patch_preflight",
+  "graph_schema": "pass",
+  "campaign_schema": "pass",
+  "identity_patch": "pass",
+  "all_398_nodes_and_all_other_graph_data_unchanged": true,
+  "reverse_identity_replay": "pass",
+  "exact_review_hashes": {
+    "rounds/codex-managed/gc-complete-signed-convolution-attack/reports/actual_density_remainder_attack.md": "09136945693d920615e84dbb1b4223419e1b9896660e1446a37cdbcd169f538c",
+    "rounds/codex-managed/gc-complete-signed-convolution-attack/reports/arithmetic_signed_tail_attack.md": "c8780626545887e255ffbb77815bf6fad1f7f743846c0485e35f34924b5739b8",
+    "rounds/codex-managed/gc-complete-signed-convolution-attack/controls/conductor_radial_poisson_analysis.md": "b58b66f6231c3a3fe01d5f2851a9136f1aaf9c7f0c095b5997a2e57a66a1366a"
+  },
+  "frozen_scope_and_briefs_unchanged": true,
+  "closed_round200_201_202_archives_unchanged": true,
+  "report_hygiene": [
+    "rounds/codex-managed/gc-complete-signed-convolution-attack/synthesis.md",
+    "rounds/codex-managed/gc-complete-signed-convolution-attack/briefs/actual_density_remainder_attack.md",
+    "rounds/codex-managed/gc-complete-signed-convolution-attack/briefs/arithmetic_signed_tail_attack.md",
+    "rounds/codex-managed/gc-complete-signed-convolution-attack/briefs/blind_filter_scale_audit.md",
+    "rounds/codex-managed/gc-complete-signed-convolution-attack/briefs/blind_filter_statement.md",
+    "rounds/codex-managed/gc-complete-signed-convolution-attack/controls/conductor_radial_poisson_analysis.md",
+    "rounds/codex-managed/gc-complete-signed-convolution-attack/reports/actual_density_remainder_attack.md",
+    "rounds/codex-managed/gc-complete-signed-convolution-attack/reports/arithmetic_signed_tail_attack.md",
+    "rounds/codex-managed/gc-complete-signed-convolution-attack/reports/blind_filter_scale_audit.md",
+    "rounds/codex-managed/gc-complete-signed-convolution-attack/reviews/conductor_round203_reconciliation.md",
+    "rounds/codex-managed/gc-complete-signed-convolution-attack/reviews/independent_arithmetic_packet_review.md",
+    "rounds/codex-managed/gc-complete-signed-convolution-attack/reviews/independent_density_remainder_review.md",
+    "rounds/codex-managed/gc-complete-signed-convolution-attack/reviews/independent_radial_poisson_review.md"
+  ],
+  "mathematical_numerical_experiments": 0,
+  "analytic_target": "open",
+  "exponent_change": false
+}

@@ -1,0 +1,30 @@
+{
+  "round_index": 211,
+  "campaign_id": "gc-full-source-method-review",
+  "starting_graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+  "proof_obligations": {
+    "create": [],
+    "update": [],
+    "correct_rejected": [],
+    "reject": [],
+    "no_change": [
+      "GC-target",
+      "Conditional-bridge",
+      "M9",
+      "M9-M1",
+      "M9-M2",
+      "M9-endpoint-uniformity",
+      "GC-external-Li-Yang-theta-star",
+      "GC-weighted-square-root-exact-resonance-mass",
+      "GC-physical-twelfth-moment-absolute-majorant-obstruction",
+      "GC-complete-square-root-large-values-moment-bound"
+    ]
+  },
+  "round_assessment": {
+    "terminal_label": "costed_strategy_adjustment_actual_four_point_input_open",
+    "reason": "Two scalar and two bilinear primary theorem interfaces were audited with actual hyperbola coefficients, masks, norms and complete reconstruction. The named exponent-pair closure and both bilinear certificates give no complete gain. An isolated derivation confirms the exact two-arm transfer. A separately reviewed two-stage finite inequality gives |F_N|^4<<T^epsilon[N/L^2+N/K+A4], with all diagonals and conditional smooth main terms paid at L~N^(1/2)T^(-2b),K~NT^(-4b),b=83/650. The complete actual oscillatory four-point average A4<<T^(4b+epsilon) remains unproved, as does the original tenth gate. No accepted moment, pointwise exponent, M1/M2 parent or full-quarter claim changes."
+  },
+  "reversibility": {
+    "rule": "Identity in-memory application, inverse and replay; graph/draft bytes never rewritten."
+  }
+}

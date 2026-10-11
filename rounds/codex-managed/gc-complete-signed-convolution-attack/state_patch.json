@@ -1,0 +1,29 @@
+{
+  "round_index": 203,
+  "campaign_id": "gc-complete-signed-convolution-attack",
+  "starting_graph_sha256": "abc88f6cd29d757b880037b6f600b802a22ac4b57fcce40662205150f3ed8ceb",
+  "proof_obligations": {
+    "create": [],
+    "update": [],
+    "correct_rejected": [],
+    "reject": [],
+    "no_change": [
+      "GC-target",
+      "Conditional-bridge",
+      "M9",
+      "M9-M1",
+      "M9-M2",
+      "M9-endpoint-uniformity",
+      "GC-external-Li-Yang-theta-star",
+      "GC-weighted-square-root-exact-resonance-mass",
+      "GC-physical-twelfth-moment-absolute-majorant-obstruction"
+    ]
+  },
+  "round_assessment": {
+    "terminal_label": "complete_analytic_attempt_no_new_bound",
+    "reason": "Complete density and arithmetic attempts include all tails and errors, but establish no new complete moment bound. The strongest inherited norm exponent remains0.648072478; target0.58 and all parent/exponent claims remain open."
+  },
+  "reversibility": {
+    "rule": "Identity patch; in-memory application, reversal and replay equal the entire original graph. Preserve original graph and proof-draft bytes without serialization."
+  }
+}

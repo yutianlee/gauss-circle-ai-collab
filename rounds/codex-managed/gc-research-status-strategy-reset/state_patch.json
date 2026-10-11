@@ -1,0 +1,32 @@
+{
+  "round_index": 230,
+  "campaign_id": "gc-research-status-strategy-reset",
+  "starting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+  "proof_obligations": {
+    "create": [],
+    "update": [],
+    "correct_rejected": [],
+    "reject": [],
+    "no_change": [
+      "GC-target",
+      "Conditional-bridge",
+      "M9",
+      "M9-M1",
+      "M9-M2",
+      "M9-endpoint-uniformity",
+      "M9-M1-global-angular-radial-estimate",
+      "M9-M1-global-lower-radial-signed-estimate",
+      "M9-M1-GAR-total-active-equivalence",
+      "GC-external-Li-Yang-theta-star",
+      "GC-complete-square-root-large-values-moment-bound",
+      "GC-complete-distinct-radical-twelfth-reduction"
+    ]
+  },
+  "round_assessment": {
+    "terminal_label": "review_strategy_reset_no_new_complete_bound",
+    "reason": "Status review confirms last complete accepted gain204 and25 subsequent no-gain rounds. Kim–Ko v3 changes weight scope but not the tested complete bound; Yang family mismatch persists. Correct all-order216 attribution forward, retain reviewed228 component, and require new complete quantitative input before another analytic round."
+  },
+  "reversibility": {
+    "rule": "Identity in-memory application, inverse and replay; graph and proof-draft bytes never rewritten."
+  }
+}

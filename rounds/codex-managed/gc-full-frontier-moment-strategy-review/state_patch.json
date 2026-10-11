@@ -1,0 +1,30 @@
+{
+  "round_index": 205,
+  "campaign_id": "gc-full-frontier-moment-strategy-review",
+  "starting_graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+  "proof_obligations": {
+    "create": [],
+    "update": [],
+    "correct_rejected": [],
+    "reject": [],
+    "no_change": [
+      "GC-target",
+      "Conditional-bridge",
+      "M9",
+      "M9-M1",
+      "M9-M2",
+      "M9-endpoint-uniformity",
+      "GC-external-Li-Yang-theta-star",
+      "GC-weighted-square-root-exact-resonance-mass",
+      "GC-physical-twelfth-moment-absolute-majorant-obstruction",
+      "GC-complete-square-root-large-values-moment-bound"
+    ]
+  },
+  "round_assessment": {
+    "terminal_label": "strategy_review_select_complete_arithmetic_objective",
+    "reason": "Scheduled full-frontier review completed. Exact modular completion and current theorem costs give no certified arithmetic gain. The complete middle-band signed shell moment is selected as the next proposed objective, with all other frequency ranges estimated at the milestone scale. No new graph theorem or exponent."
+  },
+  "reversibility": {
+    "rule": "Identity patch. In-memory application, inverse identity and replay equal the original graph; original graph and proof-draft bytes are not rewritten."
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 209,
+    "round_type": "complete_actual_signed_tenth_moment_attack",
+    "campaign_id": "gc-complete-signed-tenth-moment",
+    "title": "Complete signed tenth moment and arithmetic high values",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+    "generated_at": "2026-09-27T15:02:06.650310+00:00",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 95,
+      "numerical_experimental_maximum_percent": 5,
+      "planned_numerical_percent": 0,
+      "budget": "Three bounded reports, at most two substantive mechanisms each, then one same-round seam cycle; planned zero mathematical experiments."
+    },
+    "target_obligations": [
+      "GC-target",
+      "M9-M1",
+      "M9-M2",
+      "GC-complete-square-root-large-values-moment-bound"
+    ],
+    "frozen_target": {
+      "question": "Can actual arithmetic cancellation prove the complete tenth-moment gate, or a complete quantitatively better pointwise estimate?",
+      "reference_formula": "K10(N)<<T^(473/65+epsilon)N^-1/2 for every dyadic T^(166/325)<N<T^(242/325).",
+      "quantities": [
+        "Equivalent actual M10(H_N)<<T^(83/65+epsilon)N^-1/2 with reviewed errors.",
+        "This milestone would imply102/325 only; full quarter and M1/M2 remain open."
+      ]
+    },
+    "completion_criteria": [
+      "Three seven-section reports, including isolated independent derivation.",
+      "Complete cost ledger; actual gain or rigorous scoped failure and missing estimate.",
+      "Independent review of substantive selected claims.",
+      "Validated State Patch and ledger closure before successor design."
+    ],
+    "controls": [
+      "actual_coefficients",
+      "complete_scales",
+      "signed_absolute_distinction",
+      "exact_nonpairing_relations",
+      "real_endpoints",
+      "all_costs_restored",
+      "full_quarter_scope",
+      "statement_only_control"
+    ],
+    "exit_labels": [
+      "complete_arithmetic_gain_candidate",
+      "scoped_actual_method_no_go",
+      "no_new_bound_precise_open_residual"
+    ],
+    "tasks": [
+      {
+        "id": "actual_tenth_high_values",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "target": "Attack the complete actual signed tenth-moment target through coefficient-sensitive high values. Derive a new arithmetic estimate, not the generic coefficient-uniform Gram bound. Analyze at most two serious mechanisms; keep both existing terms and pay every complement, level, error and sharp reconstruction cost. The actual positive r2 coefficients and prescribed displaced radius window must be used before generic absolute estimates. A precise failure identifies the first missing actual inequality and its full deficit. Read only supplied context; exact primary sources may be consulted when necessary. Stop after report.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round209_complete_signed_tenth_moment_attack.md",
+          "strategy/gauss_circle_strategy_checkpoint_round208_2026-09-27.md",
+          "rounds/codex-managed/gc-full-proof-signed-arithmetic-review/controls/conductor_bandlimited_strategy.md",
+          "proofs/kernels/gc_complete_square_root_large_values_moment_bound.md",
+          "rounds/codex-managed/gc-complete-signed-shell-arithmetic/controls/conductor_sixth_moment_power_ledger.md"
+        ],
+        "required_controls": [
+          "actual_coefficients",
+          "complete_scales",
+          "signed_absolute_distinction",
+          "exact_nonpairing_relations",
+          "real_endpoints",
+          "all_costs_restored",
+          "full_quarter_scope",
+          "statement_only_control"
+        ],
+        "required_output": [
+          "Seven numbered protocol sections; exact dependencies and first unproved step.",
+          "Only assigned report may be written; no shared state or successor edits."
+        ],
+        "report_path": "rounds/codex-managed/gc-complete-signed-tenth-moment/reports/actual_tenth_high_values.md"
+      },
+      {
+        "id": "signed_fifth_convolution",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "target": "Attack the complete actual K10 through signed fifth rational convolution or equivalent shifted shell correlations. Use the existing complete rational representation, including both arms, all collisions/near relations, variable width and moving prefix; avoid another identity alone. Seek and prove a quantitative gain using arithmetic signs in total-frequency aggregates. At most two serious mechanisms. If no gain, isolate a precise complete residual estimate with costs and explain why a suggested cancellation fails; distinguish actual obstruction from upper-method costs. No broad literature sweep needed. Stop after report.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round209_complete_signed_tenth_moment_attack.md",
+          "strategy/gauss_circle_strategy_checkpoint_round208_2026-09-27.md",
+          "rounds/codex-managed/gc-full-proof-signed-arithmetic-review/controls/conductor_bandlimited_strategy.md",
+          "rounds/codex-managed/gc-signed-rational-filter-attack/controls/conductor_rational_norm_ledger.md",
+          "rounds/codex-managed/gc-signed-rational-filter-attack/reports/periodic_hyperbola_attack.md",
+          "rounds/codex-managed/gc-signed-rational-filter-attack/reports/signed_rational_moment_attack.md"
+        ],
+        "required_controls": [
+          "actual_coefficients",
+          "complete_scales",
+          "signed_absolute_distinction",
+          "exact_nonpairing_relations",
+          "real_endpoints",
+          "all_costs_restored",
+          "full_quarter_scope",
+          "statement_only_control"
+        ],
+        "required_output": [
+          "Seven numbered protocol sections; exact dependencies and first unproved step.",
+          "Only assigned report may be written; no shared state or successor edits."
+        ],
+        "report_path": "rounds/codex-managed/gc-complete-signed-tenth-moment/reports/signed_fifth_convolution.md"
+      },
+      {
+        "id": "blind_ten_root_audit",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "pending",
+        "target": "Independently derive or refute assertions in the isolated statement packet. No other context and no web. Stop after report.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/gc-complete-signed-tenth-moment/briefs/blind_ten_root_statement.md"
+        ],
+        "required_controls": [
+          "actual_coefficients",
+          "complete_scales",
+          "signed_absolute_distinction",
+          "exact_nonpairing_relations",
+          "real_endpoints",
+          "all_costs_restored",
+          "full_quarter_scope",
+          "statement_only_control"
+        ],
+        "required_output": [
+          "Seven numbered protocol sections; exact dependencies and first unproved step.",
+          "Only assigned report may be written; no shared state or successor edits."
+        ],
+        "report_path": "rounds/codex-managed/gc-complete-signed-tenth-moment/reports/blind_ten_root_audit.md",
+        "excluded_context": [
+          "Everything except protocol and isolated packet, including generated general brief and web."
+        ]
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "actual_power_scope",
+        "requirement": "Complete tenth norm, signed coefficients and all complements."
+      },
+      {
+        "id": "exact_near_frequency",
+        "requirement": "Nonpairing exact mass and near-frequency scope; no signed lower-bound fallacy."
+      }
+    ],
+    "previous_goal_turn_classification": "progress_validated208_conditional_bridge_changes_complete_arithmetic_target",
+    "scheduled_review": "Next mandatory broad strategy/current-literature review211."
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+    "generated_at": "2026-09-27T15:02:06.679679+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

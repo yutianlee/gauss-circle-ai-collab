@@ -1,0 +1,189 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 207,
+    "round_type": "complete_signed_rational_moment_attack",
+    "campaign_id": "gc-signed-rational-filter-attack",
+    "title": "Complete signed rational-filter arithmetic moment attack",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+    "generated_at": "2026-09-27T14:10:05.349477+00:00",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 100,
+      "numerical_experimental_maximum_percent": 0,
+      "planned_numerical_percent": 0,
+      "budget": "Three bounded analytical/source reports, conductor signed-norm analysis, one same-round seam cycle. No mathematical numerical experiments."
+    },
+    "target_obligations": [
+      "GC-target",
+      "GC-complete-square-root-large-values-moment-bound"
+    ],
+    "frozen_target": {
+      "question": "Can the complete actual signed rational-filter representation yield the required middle-band moment saving?",
+      "reference_formula": "Integral_I |sum_(T^(52/125)<N=2^j<T^(99/125)) S_N|^12 << T^(29/25+epsilon); sufficient K6(N)<<T^(129/25-6omega(alpha)+epsilon).",
+      "quantities": [
+        "I=[T/sqrt(2),sqrt(3)T], X=T^2, h(x)=2sqrt(x)/sqrt(N), exact fixed205 filters.",
+        "omega=min(alpha/4,beta,(1-alpha)/2); sixth saving still needed g=6omega-4/25-29alpha/110.",
+        "All outer bands are already estimated; best complete p12 remains10beta; milestone would imply only102/325."
+      ]
+    },
+    "completion_criteria": [
+      "Three seven-section reports, including statement-only rederivation of an important threshold/filter lemma.",
+      "Complete actual arithmetic estimate attempted after the transform, or a proved actual-coefficient norm-placement obstruction.",
+      "Both hyperbola arms, all frequencies, masks, errors, real endpoints and full middle range retained.",
+      "Exact independent seams and source cards for promotion; otherwise identity patch.",
+      "Conductor synthesis, mechanically validated State Patch, and closed ledger before208."
+    ],
+    "controls": [
+      "complete_middle_range",
+      "actual_two_arm_characters",
+      "all_harmonics_and_duplicates",
+      "moving_threshold_error",
+      "low_period_annihilation",
+      "variable_width",
+      "real_endpoints_and_tails",
+      "signed_not_positive",
+      "restored_sixth_and_twelfth_powers",
+      "source_hypotheses",
+      "full_proof_scope"
+    ],
+    "exit_labels": [
+      "complete_signed_arithmetic_gain",
+      "complete_rational_attempt_no_gain",
+      "scoped_rational_method_no_go"
+    ],
+    "tasks": [
+      {
+        "id": "periodic_hyperbola_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "target": "Derive the complete actual-r2 band-filtered hyperbola formula, freeze moving thresholds only with a proved error, evaluate exact mod4 Gauss factors and short-period annihilation, retain both arms and all coincident rational frequencies. Then attempt a signed sixth estimate beyond rewriting the identity. Price the complete result against T^(129/25-6omega); preserve every middle N. At least one real signed-sum estimate or an actual-coefficient norm-placement obstruction is required. No successor design or broad literature survey.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round207_signed_rational_filter_attack.md",
+          "rounds/codex-managed/gc-complete-signed-shell-arithmetic/reports/actual_divisor_shell_attack.md",
+          "rounds/codex-managed/gc-complete-signed-shell-arithmetic/controls/conductor_sixth_moment_power_ledger.md",
+          "rounds/codex-managed/gc-complete-signed-shell-arithmetic/reviews/independent_divisor_obstruction_review.md",
+          "rounds/codex-managed/gc-complete-signed-shell-arithmetic/reviews/independent_bridge_power_review.md",
+          "rounds/codex-managed/gc-full-frontier-moment-strategy-review/controls/conductor_middle_band_strategy.md",
+          "proofs/kernels/gc_complete_square_root_large_values_moment_bound.md"
+        ],
+        "required_controls": [
+          "complete_middle_range",
+          "actual_two_arm_characters",
+          "all_harmonics_and_duplicates",
+          "moving_threshold_error",
+          "low_period_annihilation",
+          "variable_width",
+          "real_endpoints_and_tails",
+          "signed_not_positive",
+          "restored_sixth_and_twelfth_powers",
+          "source_hypotheses",
+          "full_proof_scope"
+        ],
+        "required_output": [
+          "Seven numbered sections: result, exact hypotheses, proof, first gap, controls, exact dependencies, state effect.",
+          "Write only the assigned report. No graph, proof draft, validation matrix, synthesis, source-card or successor edits."
+        ],
+        "report_path": "rounds/codex-managed/gc-signed-rational-filter-attack/reports/periodic_hyperbola_attack.md"
+      },
+      {
+        "id": "signed_rational_moment_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "target": "Independently derive enough of the complete actual hyperbola/rational formula to attack its sixth correlation or a genuine bilinear/reciprocal-phase estimate. Keep both arms, all characters and mod4 phases, variable width, masks and boundary error. Price physical coefficient norms, frequency collisions, all shifts and reconstruction. Inspect at most two substantive primary theorem interfaces if useful; every hypothesis and net power must match. Do not repeat pair variance or positive six-shift counting as a gain. Produce a complete bound or a precise scoped obstruction to the attempted signed estimate, then stop.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round207_signed_rational_filter_attack.md",
+          "rounds/codex-managed/gc-complete-signed-shell-arithmetic/reports/actual_divisor_shell_attack.md",
+          "rounds/codex-managed/gc-complete-signed-shell-arithmetic/controls/conductor_sixth_moment_power_ledger.md",
+          "rounds/codex-managed/gc-complete-signed-shell-arithmetic/reviews/independent_divisor_obstruction_review.md",
+          "rounds/codex-managed/gc-complete-signed-shell-arithmetic/reviews/independent_bridge_power_review.md",
+          "rounds/codex-managed/gc-full-frontier-moment-strategy-review/controls/conductor_middle_band_strategy.md",
+          "proofs/kernels/gc_complete_square_root_large_values_moment_bound.md",
+          "strategy/gauss_circle_strategy_review_2026-09-23.md"
+        ],
+        "required_controls": [
+          "complete_middle_range",
+          "actual_two_arm_characters",
+          "all_harmonics_and_duplicates",
+          "moving_threshold_error",
+          "low_period_annihilation",
+          "variable_width",
+          "real_endpoints_and_tails",
+          "signed_not_positive",
+          "restored_sixth_and_twelfth_powers",
+          "source_hypotheses",
+          "full_proof_scope"
+        ],
+        "required_output": [
+          "Seven numbered sections: result, exact hypotheses, proof, first gap, controls, exact dependencies, state effect.",
+          "Write only the assigned report. No graph, proof draft, validation matrix, synthesis, source-card or successor edits."
+        ],
+        "report_path": "rounds/codex-managed/gc-signed-rational-filter-attack/reports/signed_rational_moment_attack.md"
+      },
+      {
+        "id": "blind_periodic_threshold",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "pending",
+        "target": "Prove or refute the periodic Poisson, exact mod4 phase and threshold-freezing assertions of the isolated packet. Preserve real endpoints and variable widths; no claimant context. Stop after the assigned seven-section report.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/gc-signed-rational-filter-attack/briefs/blind_periodic_threshold_statement.md"
+        ],
+        "required_controls": [
+          "complete_middle_range",
+          "actual_two_arm_characters",
+          "all_harmonics_and_duplicates",
+          "moving_threshold_error",
+          "low_period_annihilation",
+          "variable_width",
+          "real_endpoints_and_tails",
+          "signed_not_positive",
+          "restored_sixth_and_twelfth_powers",
+          "source_hypotheses",
+          "full_proof_scope"
+        ],
+        "required_output": [
+          "Seven numbered sections: result, exact hypotheses, proof, first gap, controls, exact dependencies, state effect.",
+          "Write only the assigned report. No graph, proof draft, validation matrix, synthesis, source-card or successor edits."
+        ],
+        "report_path": "rounds/codex-managed/gc-signed-rational-filter-attack/reports/blind_periodic_threshold.md",
+        "excluded_context": [
+          "Graph, campaign, general brief, strategy, predecessors, claimants, siblings and web."
+        ]
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "periodic_threshold",
+        "requirement": "Exact Gauss factors, periodic cancellation, threshold and tail errors."
+      },
+      {
+        "id": "signed_moment",
+        "requirement": "Complete actual coefficient correlation, restored norm powers and scope."
+      }
+    ],
+    "previous_goal_turn_classification": "progress_scoped_method_no_go_and_validated_evidence_changed_next_action_no_complete_bound_gain",
+    "scheduled_review": "Mandatory broad strategy/current-literature review208 after205--207."
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "4f6f990b276b15b24c791870864c945a4a9921b0acdd7dcc734a2b5d3f007c71",
+    "generated_at": "2026-09-27T14:10:05.682122+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

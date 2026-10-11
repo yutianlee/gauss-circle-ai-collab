@@ -1,0 +1,43 @@
+{
+  "status": "green_exact_kernel_promotion_and_round_closure",
+  "round_index": 201,
+  "graph_schema": "pass",
+  "campaign_schema": "pass",
+  "state_patch": "pass",
+  "new_dependency_cone": "acyclic_with_accepted_dependencies",
+  "all_396_existing_nodes_and_other_graph_data_unchanged": true,
+  "reverse_structured_and_original_raw_hash": "pass",
+  "replay_except_new_timestamp": "pass",
+  "exact_reviewed_kernel_sha256": "f4264bc70dcb5e47d031baa9aeb9e94ff3c785e8832420a2ea9a20d792761120",
+  "artifact_utf8_and_control_checks": [
+    "proofs/kernels/gc_weighted_square_root_exact_resonance_mass.md",
+    "rounds/codex-managed/gc-whole-discrepancy-twelfth-moment/synthesis.md",
+    "rounds/codex-managed/gc-whole-discrepancy-twelfth-moment/briefs/blind_exact_resonance_rederivation.md",
+    "rounds/codex-managed/gc-whole-discrepancy-twelfth-moment/briefs/blind_resonance_statement.md",
+    "rounds/codex-managed/gc-whole-discrepancy-twelfth-moment/briefs/circle_moment_primary_source_audit.md",
+    "rounds/codex-managed/gc-whole-discrepancy-twelfth-moment/briefs/whole_moment_analytic_attack.md",
+    "rounds/codex-managed/gc-whole-discrepancy-twelfth-moment/controls/conductor_resonance_and_bridge_analysis.md",
+    "rounds/codex-managed/gc-whole-discrepancy-twelfth-moment/reports/blind_exact_resonance_rederivation.md",
+    "rounds/codex-managed/gc-whole-discrepancy-twelfth-moment/reports/circle_moment_primary_source_audit.md",
+    "rounds/codex-managed/gc-whole-discrepancy-twelfth-moment/reports/whole_moment_analytic_attack.md",
+    "rounds/codex-managed/gc-whole-discrepancy-twelfth-moment/reviews/conductor_round201_reconciliation.md",
+    "rounds/codex-managed/gc-whole-discrepancy-twelfth-moment/reviews/independent_resonance_kernel_review.md"
+  ],
+  "analytic_target": "open",
+  "exponent_change": false,
+  "campaign_id": "gc-whole-discrepancy-twelfth-moment",
+  "generated_at": "2026-09-23T12:34:08.425098+00:00",
+  "terminal_label": "whole_discrepancy_moment_reduction_open_offdiagonal",
+  "starting_graph_raw_sha256": "2f4448e999ab90387bca06498ddc60ee97b50f9900a9dfc6ad41fb201833c5f5",
+  "starting_graph_canonical_sha256": "3073235ad5677b9066f1336ec9d958b0e93b92d99cfa7ebea1d823146c799099",
+  "final_graph_sha256": "682cb189a3ab0ef26f8d19701e2949547446d37505df01f7b7eaf1cfdd0f359c",
+  "graph_nodes": 397,
+  "new_nodes": [
+    "GC-weighted-square-root-exact-resonance-mass"
+  ],
+  "accepted_proof_draft_updated_after_valid_patch": true,
+  "final_proof_draft_sha256": "6317a55ebae82bc0236505ed124ddbdc0d4ee274108b5bd1ce3cf80625140719",
+  "all_three_reports_and_independent_review_complete": true,
+  "legacy_and_round199_paths_unchanged": true,
+  "mathematical_numerical_experiments": 0
+}

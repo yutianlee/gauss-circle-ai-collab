@@ -1,0 +1,190 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 221,
+    "round_type": "complete_actual_vector_correlation_attack",
+    "campaign_id": "gc-actual-vector-gram-correlations",
+    "title": "Complete actual-vector Gram and shifted-correlation attack",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+    "generated_at": "2026-09-27T20:19:20.760868+00:00",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 95,
+      "numerical_experimental_maximum_percent": 5,
+      "planned_numerical_percent": 0,
+      "budget": "Two bounded one-mechanism analytic reports, one isolated finite report, one same-round review/repair cycle; zero planned mathematical experiments."
+    },
+    "target_obligations": [
+      "GC-target",
+      "GC-complete-square-root-large-values-moment-bound",
+      "GC-complete-distinct-radical-twelfth-reduction"
+    ],
+    "frozen_target": {
+      "question": "Can an actual fixed-vector Gram-chain or joint arithmetic shifted-correlation estimate prove the complete signed twelfth target with all costs restored?",
+      "reference_formula": "I12(T,floor(T^(2/5)))<=C_epsilon T^(29/25+epsilon), equivalent to the full physical twelfth milestone; full goal remains P(X)<<X^(1/4+epsilon).",
+      "quantities": [
+        "Actual rho,Psi,w,r2 and all ordered distinct large squarefree classes from216, with every harmonic and cosine sign.",
+        "Paid small-class head15/13 and repeated-class error8beta-1/5; current complete bound10beta.",
+        "Fixed coefficient vector retained through the joint correlation; difference-only operator norms and new notation are not gains.",
+        "All levels, unequal blocks, endpoints and infinite tails; unbounded fixed-order family and original parents remain open."
+      ]
+    },
+    "completion_criteria": [
+      "Two bounded complete-target attack reports and one isolated Gram-chain report.",
+      "Exact actual-vector/application bindings, independent final-hash seams and controls.",
+      "Complete restored improvement or exact failed-certificate costs, synthesis, mechanically valid State Patch and221 closure."
+    ],
+    "controls": [
+      "actual_coefficients_and_mask",
+      "absolute_radius_anchor",
+      "all_real_signs",
+      "complete_levels_blocks_tails",
+      "no_unproved_source_import",
+      "fixed_vector_vs_operator",
+      "singular_and_finite_controls",
+      "full_exponent_restoration",
+      "statement_only_rederivation",
+      "full_goal_scope"
+    ],
+    "exit_labels": [
+      "complete_actual_correlation_gain_requires_validation",
+      "complete_actual_correlation_attempt_no_new_bound"
+    ],
+    "tasks": [
+      {
+        "id": "actual_anchored_gram_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "target": "Attack the COMPLETE actual signed I12(T,floor(T^(2/5)))<=T^(29/25+epsilon), equivalently the full physical twelfth moment, through one serious direct high-value/Gram-chain mechanism retaining the fixed actual coefficient vector and radius anchor through the joint estimate. Pay the small-class/repeated-class removal using216. Do not repeat209 positive weighted Cauchy, discard the vector endpoints, or replace the target by an unestimated remainder. Explicitly derive and try to estimate a complete actual joint correlation, keeping all levels, real cosine signs, unequal blocks and tails. A coefficient norm or finite identity alone is not a gain. Return a complete quantitative improvement or a scoped failed certificate with exact cost/first gap and actual-versus-enlarged control. Seven sections, at most one serious mechanism, no experiments, no shared edits/sibling/successor; stop.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round221_actual_vector_gram_and_correlations.md",
+          "strategy/gauss_circle_strategy_checkpoint_round220_2026-09-28.md",
+          "proofs/kernels/gc_complete_square_root_large_values_moment_bound.md",
+          "proofs/kernels/gc_complete_distinct_radical_moment_reduction.md",
+          "proofs/kernels/gc_distinct_radical_absolute_certificate_obstruction.md",
+          "rounds/codex-managed/gc-complete-signed-tenth-moment/reports/actual_tenth_high_values.md",
+          "rounds/codex-managed/gc-complete-signed-radical-kernel/synthesis.md",
+          "rounds/codex-managed/gc-full-goal-arithmetic-source-review/synthesis.md",
+          "rounds/codex-managed/gc-full-goal-arithmetic-source-review/reports/full_frontier_sources.md"
+        ],
+        "required_controls": [
+          "actual_coefficients_and_mask",
+          "absolute_radius_anchor",
+          "all_real_signs",
+          "complete_levels_blocks_tails",
+          "no_unproved_source_import",
+          "fixed_vector_vs_operator",
+          "singular_and_finite_controls",
+          "full_exponent_restoration",
+          "statement_only_rederivation",
+          "full_goal_scope"
+        ],
+        "required_output": [
+          "Seven numbered protocol sections; exact complete bound or scoped failed certificate, proof, first gap, controls, exact dependencies and state effect.",
+          "Only assigned report. Stop; no next round or shared-state/synthesis edit."
+        ],
+        "report_path": "rounds/codex-managed/gc-actual-vector-gram-correlations/reports/actual_anchored_gram_attack.md"
+      },
+      {
+        "id": "actual_shifted_correlations",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "target": "Attack the same COMPLETE actual signed I12 upper bound at29/25 through one serious arithmetic joint-correlation mechanism with actual r2 coefficients and sf(n)>floor(T^(2/5)). An exact pair-increment, divisor or lattice-determinant grouping is allowed, but derive all weights/multiplicities and keep every real sign pattern/unequal block. Attempt a signed estimate before norms. Do not assume a shifted-convolution asymptotic, remove the arithmetic mask as smooth, or repeat the218 absolute dual-tuple closure. Explicitly restore the full moment and compare with10beta; a main term plus unestimated remainder is not a gain. Seven sections, exact proof or precise failed certificate, controls, first gap, complete powers. At most one serious mechanism, zero experiments, no shared edits/sibling/successor; stop.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round221_actual_vector_gram_and_correlations.md",
+          "strategy/gauss_circle_strategy_checkpoint_round220_2026-09-28.md",
+          "proofs/kernels/gc_complete_square_root_large_values_moment_bound.md",
+          "proofs/kernels/gc_complete_distinct_radical_moment_reduction.md",
+          "proofs/kernels/gc_distinct_radical_absolute_certificate_obstruction.md",
+          "rounds/codex-managed/gc-complete-signed-tenth-moment/reports/actual_tenth_high_values.md",
+          "rounds/codex-managed/gc-complete-signed-radical-kernel/synthesis.md",
+          "rounds/codex-managed/gc-full-goal-arithmetic-source-review/synthesis.md"
+        ],
+        "required_controls": [
+          "actual_coefficients_and_mask",
+          "absolute_radius_anchor",
+          "all_real_signs",
+          "complete_levels_blocks_tails",
+          "no_unproved_source_import",
+          "fixed_vector_vs_operator",
+          "singular_and_finite_controls",
+          "full_exponent_restoration",
+          "statement_only_rederivation",
+          "full_goal_scope"
+        ],
+        "required_output": [
+          "Seven numbered protocol sections; exact complete bound or scoped failed certificate, proof, first gap, controls, exact dependencies and state effect.",
+          "Only assigned report. Stop; no next round or shared-state/synthesis edit."
+        ],
+        "report_path": "rounds/codex-managed/gc-actual-vector-gram-correlations/reports/actual_shifted_correlations.md"
+      },
+      {
+        "id": "blind_anchored_gram",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "pending",
+        "target": "Read only protocol and the isolated packet. Prove or refute the finite fixed-vector Gram-chain, bordered PSD, pseudoinverse and translation-control statements. Seven sections, explicit prior-history disclosure; no web, experiments, application or sibling context. Write only assigned report and stop.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/gc-actual-vector-gram-correlations/briefs/blind_anchored_gram_statement.md"
+        ],
+        "required_controls": [
+          "actual_coefficients_and_mask",
+          "absolute_radius_anchor",
+          "all_real_signs",
+          "complete_levels_blocks_tails",
+          "no_unproved_source_import",
+          "fixed_vector_vs_operator",
+          "singular_and_finite_controls",
+          "full_exponent_restoration",
+          "statement_only_rederivation",
+          "full_goal_scope"
+        ],
+        "required_output": [
+          "Seven numbered protocol sections; exact complete bound or scoped failed certificate, proof, first gap, controls, exact dependencies and state effect.",
+          "Only assigned report. Stop; no next round or shared-state/synthesis edit."
+        ],
+        "report_path": "rounds/codex-managed/gc-actual-vector-gram-correlations/reports/blind_anchored_gram.md",
+        "excluded_context": [
+          "All files except protocol and isolated statement; prior-agent history must be disclosed."
+        ]
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "fixed_vector_chain",
+        "requirement": "Exact finite identities, singular cases, actual binding and no implicit coefficient enlargement."
+      },
+      {
+        "id": "arithmetic_joint_correlation",
+        "requirement": "Actual arithmetic coefficients, class masks, sign patterns, multiplicities and complete costs."
+      },
+      {
+        "id": "full_moment_restoration",
+        "requirement": "All levels, blocks, tails and restored powers; fixed-order/full-quarter distinction."
+      }
+    ],
+    "previous_goal_turn_classification": "progress_completed_reviewed_strategy_evidence_changes_next_action_no_complete_estimate_gain",
+    "scheduled_review": "Next mandatory broad strategy/current-primary review223 after220--222."
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+    "generated_at": "2026-09-27T20:19:20.788287+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

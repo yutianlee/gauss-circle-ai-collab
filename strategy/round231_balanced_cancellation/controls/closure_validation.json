@@ -1,0 +1,74 @@
+{
+  "completed_at": "2026-10-11T07:42:24.567758+00:00",
+  "decision": {
+    "completed_at": "2026-10-11T07:42:24.567758+00:00",
+    "status": "not_admitted",
+    "analytic_campaign_launched": false,
+    "packet": "strategy/round231_balanced_cancellation",
+    "decision": "strategy/round231_balanced_cancellation/conductor_decision.md",
+    "mechanism": "Actual central balanced reciprocal character cancellation, exact bilinear source application, and combined norm/factor ownership",
+    "findings": [
+      "A reviewed actual-character smooth rectangle bound gives T^epsilon[(T/N)^(1/2)+T^(-1/2)] after one-variable Poisson and an integer-product resonance count. Absolute summation over remaining frequencies yields no complete gain.",
+      "Exact quarter-frequency fibres are imaginary and their leading real circle term vanishes. Physical detuning produces coherent real individual fibres, so a uniform per-frequency square-root bound is false. This is not a full-wave or moment lower bound.",
+      "KRW Proposition5 applies to the actual sharp moving fibre intervals after logarithmic completion and product partial summation. Its leading term T^(1/8)N^(1/16), even optimistically combined with head/tail bounds, reaches ceiling1/6 and moment certificate5/3, insufficient for10beta.",
+      "The independently rederived smooth actual Hankel tail and norm band were already reviewed in Rounds203/205/208. They are verification, not new progress; historical attribution was corrected before closure.",
+      "Combining that old norm band with the recent adaptive factor cutoff gives an exact parameterized owner C_gamma with all complementary terms paid at m(gamma)=max(1,10gamma,1+20gamma/13). For gamma16/125 the sufficient residual target32/25=1.28 is explicit but unproved.",
+      "Three frozen reports and three nonauthor reviews completed. Attached corrections replace log(2D) by log(2+D), clarify exact versus detuned real resonances, and restore the complementary29/25 floor in sharp-moment conversion. Exact finite controls passed."
+    ],
+    "scope": "Corrected signed rectangle estimate, scoped source/control failures, and exact residual interface; no new complete exponent.",
+    "graph_effect": "none; no State Patch or promotion",
+    "required_new_input": "Signed cancellation across reciprocal frequencies or a direct radius-averaged estimate for actual C_gamma at m(gamma)<10beta, with every sharp arithmetic cutoff and complementary owner restored. Merely reproducing the old Hankel tail or assuming fibrewise square-root cancellation cannot supply it.",
+    "complete_target": "Preferred M12<=T^(29/25+epsilon); explicit modest target32/25 also open; accepted10beta=1.289663519481... unchanged."
+  },
+  "validation": [
+    {
+      "command": [
+        "C:\\Users\\yutia\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-m",
+        "math_collab.validate_state_patch"
+      ],
+      "exit_code": 0,
+      "stdout": "Graph OK: D:\\BaiduSyncdisk\\Codex\\gauss circle\\state\\proof_obligations.yml\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\yutia\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-m",
+        "math_collab.campaigns",
+        "validate"
+      ],
+      "exit_code": 0,
+      "stdout": "Campaign OK: D:\\BaiduSyncdisk\\Codex\\gauss circle\\state\\active_campaign.yml\n",
+      "stderr": ""
+    }
+  ],
+  "protected_files_verified": 5099,
+  "authorized_metadata_changes": [
+    "state/next_round_plan.yml",
+    "state/current_round.md",
+    "state/next_campaign.md",
+    "state/project_summary.md",
+    "state/failure_ledger.md"
+  ],
+  "graph_nodes": 401,
+  "graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+  "proof_draft_sha256": "65989358d00f0ecf7c4d385ea58bfad09eaa026af98924266207c5f8af872f00",
+  "active_manifest_sha256": "fd65ce5c6b117aa4ca8ed097f85e2c786621c8054ca81791aa6e5e17006a82fa",
+  "frozen_evidence_hashes": {
+    "reports/balanced_reciprocal_attack.md": "fa63868418be5c8d24d30284394976fa3e0f1df077117dc3a9227441d55cf61f",
+    "reports/balanced_source_audit.md": "bd7beaa816e2443be41aaed903e92c8b884b1b827b1ea5b2fb1eb9004b0e9cd7",
+    "reports/blind_hankel_tail.md": "03b30638eb6da7242343731ac03b425e2f09e16749f73685adc343a357cd01d5",
+    "conductor_combined_owner.md": "9f5d9a31c0624e7ee97a21bcdfa2e638154fa313cc45cbab198856222366d76b",
+    "conductor_seam_repairs.md": "e4dc22c726eb241e24a4e7c485202ea6b6b567ecc4e16a3708d435ddc82eab14",
+    "reviews/review_source_application.md": "39a778d3ddcf1acdd25b21be6206bd86559c4abef1067cb781056cdfa64d68a4",
+    "reviews/review_reciprocal_signs.md": "8bfd3a3c5ed3b4a43f668708a57e9234dca99965ba35ceb3bd59e27df3524b03",
+    "reviews/review_hankel_and_owner.md": "bb9b8654518c8ee42c4f609bccd575b1f74c61d29cb52626280d9d19fc677d24"
+  },
+  "review_disposition": {
+    "reviews/review_source_application.md": "pass_with_attached_complementary_budget_correction",
+    "reviews/review_reciprocal_signs.md": "pass_with_attached_logarithm_correction_and_real_phase_clarification",
+    "reviews/review_hankel_and_owner.md": "pass"
+  },
+  "status": "passed"
+}

@@ -1,0 +1,61 @@
+{
+  "round_index": 201,
+  "campaign_id": "gc-whole-discrepancy-twelfth-moment",
+  "starting_graph_sha256": "2f4448e999ab90387bca06498ddc60ee97b50f9900a9dfc6ad41fb201833c5f5",
+  "proof_obligations": {
+    "create": [
+      {
+        "id": "GC-weighted-square-root-exact-resonance-mass",
+        "type": "lemma",
+        "track": "proof_infrastructure",
+        "title": "Uniform weighted exact square-root resonance mass and even constant coefficient",
+        "status": "proved_internal",
+        "statement_tex": "For fixed integer k>=2 and b_n>=0, set A_d=sum_(s>=1)b_(d s^2) for squarefree d and S=sum_d A_d^2<infinity. The sum over all 2^k sign vectors and ordered n_j>=1 with sum_j epsilon_j sqrt(n_j)=0 of product_j b_(n_j) is at most 2^k B_k S^(k/2), where B_k counts set partitions of k labels with no singleton. The mixed bound is 2^k B_k product_j S_j^(1/2). If b_n<=C tau(n)n^(-3/4), then S<=C^2 zeta(3/2)^10. Exact-resonance tails with max n_j>U are bounded by k2^k B_k S_>U^(1/2) S^((k-1)/2), tending uniformly to zero under a common divisor envelope. For real coefficients |a_n|<=b_n the even cosine exact coefficient is nonnegative; its contribution against w(R/T)>=0 is <=T||w||_1 B_k S^(k/2). Identification with the full infinite moment additionally requires sum|a_n|<infinity. For a_n(T)=r_2(n)n^(-3/4)Psi(sqrt(n/T)), real Schwartz Psi with |Psi|<=1, this yields 0<=D_12(T)<=T||w||_1 B_12 4^12 zeta(3/2)^60. Only zero radical differences are estimated: no finite-window near-resonance, full twelfth-moment, M1/M2 or pointwise exponent estimate follows.",
+        "dependencies": [
+          "H1-H3",
+          "Divisor-bound-elementary"
+        ],
+        "implies": [],
+        "blockers": [],
+        "evidence": {
+          "positive": [
+            "proofs/kernels/gc_weighted_square_root_exact_resonance_mass.md",
+            "rounds/codex-managed/gc-whole-discrepancy-twelfth-moment/reports/blind_exact_resonance_rederivation.md",
+            "rounds/codex-managed/gc-whole-discrepancy-twelfth-moment/reports/whole_moment_analytic_attack.md",
+            "rounds/codex-managed/gc-whole-discrepancy-twelfth-moment/controls/conductor_resonance_and_bridge_analysis.md",
+            "rounds/codex-managed/gc-whole-discrepancy-twelfth-moment/reviews/independent_resonance_kernel_review.md",
+            "rounds/codex-managed/gc-whole-discrepancy-twelfth-moment/reviews/conductor_round201_reconciliation.md"
+          ],
+          "negative": [],
+          "inconclusive": []
+        },
+        "owner": "Codex conductor",
+        "next_action": "Use only to remove the exact-frequency part of a complete fixed-window moment. The actual signed displaced nonzero-frequency aggregate remains unproved; no parent or exponent is discharged."
+      }
+    ],
+    "update": [],
+    "correct_rejected": [],
+    "reject": [],
+    "no_change": [
+      "GC-target",
+      "Conditional-bridge",
+      "M9",
+      "M9-M1",
+      "M9-M2",
+      "M9-endpoint-uniformity",
+      "GC-external-Li-Yang-theta-star",
+      "GC-global-real-second-moment-density-one-quarter",
+      "M9-M1-hard-top-t1-comparable-factor-exchange-sector"
+    ]
+  },
+  "round_assessment": {
+    "terminal_label": "whole_discrepancy_moment_reduction_open_offdiagonal",
+    "reason": "Promote only the independently proved full weighted exact-resonance kernel. Complete fixed-window reduction and audited moment benchmark leave the actual signed offdiagonal estimate open; no pointwise exponent improvement."
+  },
+  "reversibility": {
+    "remove_created_ids": [
+      "GC-weighted-square-root-exact-resonance-mass"
+    ],
+    "rule": "Removing the sole created node restores all prior structured graph data and the original canonical hash. CRLF serialization restores the original raw byte hash. Replay from restored graph agrees except for the new-node timestamp; no old record may differ."
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "round_index": 218,
+  "status": "green_identity_patch_preflight",
+  "graph_schema": "pass",
+  "campaign_schema": "pass",
+  "identity_patch": "pass",
+  "reverse_identity_replay": "pass",
+  "all_401_nodes_and_other_graph_data_unchanged": true,
+  "exact_review_hashes": {
+    "rounds/codex-managed/gc-complete-signed-radical-kernel/reports/blind_joint_radial.md": "339971305a6dd5af4460d8827cb920c75350531294021b50df8c9249be062a47",
+    "rounds/codex-managed/gc-complete-signed-radical-kernel/reports/joint_lattice_kernel.md": "c3193b053d594b3a1599cdf707161b438f3387703f9e0f2010cf1d3b0101d41c",
+    "rounds/codex-managed/gc-complete-signed-radical-kernel/reports/joint_divisor_kernel.md": "81a983cbf4f3de82e0c88911d1569c26b3920c7b6cb4adaf7ebb71918cdcba87",
+    "rounds/codex-managed/gc-complete-signed-radical-kernel/controls/conductor_joint_rank_and_shell_cost.md": "f865b9d69883b47d75cb1033b3aaf3f4a1ee9e6a9015ae5deb42f76eed570b2d",
+    "rounds/codex-managed/gc-complete-signed-radical-kernel/briefs/isolated_packet_coherence_statement.md": "9c3ec90596f8c938cadb31ac9bc9f3bde646c1cbf3095b69d0855e1ff65eaae1",
+    "rounds/codex-managed/gc-complete-signed-radical-kernel/reviews/isolated_packet_coherence_rederivation.md": "bec8ef06ba0a0105bf0cf07feb2ed2bacb301d7958a7b41e42276d02ffd73f1e"
+  },
+  "three_report_hashes": {
+    "rounds/codex-managed/gc-complete-signed-radical-kernel/reports/joint_divisor_kernel.md": "81a983cbf4f3de82e0c88911d1569c26b3920c7b6cb4adaf7ebb71918cdcba87",
+    "rounds/codex-managed/gc-complete-signed-radical-kernel/reports/joint_lattice_kernel.md": "c3193b053d594b3a1599cdf707161b438f3387703f9e0f2010cf1d3b0101d41c",
+    "rounds/codex-managed/gc-complete-signed-radical-kernel/reports/blind_joint_radial.md": "339971305a6dd5af4460d8827cb920c75350531294021b50df8c9249be062a47"
+  },
+  "frozen_scope_and_briefs_unchanged": true,
+  "closed_round200_through217_archives_unchanged": true,
+  "protected_archive_entries_checked": 433,
+  "report_hygiene": [
+    "rounds/codex-managed/gc-complete-signed-radical-kernel/synthesis.md",
+    "rounds/codex-managed/gc-complete-signed-radical-kernel/briefs/blind_joint_radial.md",
+    "rounds/codex-managed/gc-complete-signed-radical-kernel/briefs/blind_joint_radial_statement.md",
+    "rounds/codex-managed/gc-complete-signed-radical-kernel/briefs/isolated_packet_coherence_statement.md",
+    "rounds/codex-managed/gc-complete-signed-radical-kernel/briefs/joint_divisor_kernel.md",
+    "rounds/codex-managed/gc-complete-signed-radical-kernel/briefs/joint_lattice_kernel.md",
+    "rounds/codex-managed/gc-complete-signed-radical-kernel/controls/conductor_joint_rank_and_shell_cost.md",
+    "rounds/codex-managed/gc-complete-signed-radical-kernel/reports/blind_joint_radial.md",
+    "rounds/codex-managed/gc-complete-signed-radical-kernel/reports/joint_divisor_kernel.md",
+    "rounds/codex-managed/gc-complete-signed-radical-kernel/reports/joint_lattice_kernel.md",
+    "rounds/codex-managed/gc-complete-signed-radical-kernel/reviews/conductor_joint_radial_review.md",
+    "rounds/codex-managed/gc-complete-signed-radical-kernel/reviews/conductor_packet_coherence_binding.md",
+    "rounds/codex-managed/gc-complete-signed-radical-kernel/reviews/conductor_round218_reconciliation.md",
+    "rounds/codex-managed/gc-complete-signed-radical-kernel/reviews/independent_joint_divisor_and_control_review.md",
+    "rounds/codex-managed/gc-complete-signed-radical-kernel/reviews/independent_joint_lattice_review.md",
+    "rounds/codex-managed/gc-complete-signed-radical-kernel/reviews/isolated_packet_coherence_rederivation.md"
+  ],
+  "mathematical_numerical_experiments": 0,
+  "analytical_algebraic_percent_at_least": 95,
+  "analytic_target": "open",
+  "complete_moment_bound_improved": false,
+  "pointwise_exponent_change": false
+}

@@ -1,0 +1,94 @@
+{
+  "round_index": 231,
+  "phase": "third_prelaunch_signed_cross_label_admission",
+  "status": "complete",
+  "analytic_campaign_launched": false,
+  "generated_at": "2026-10-11T03:20:48.373405+00:00",
+  "starting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+  "predecessor_packet": "strategy/round231_harmonic_admission",
+  "frozen_objective": "Test smooth-frequency-density subtraction and actual arithmetic discrepancy for complete cross-label signed cancellation, with exact full restoration and an admission decision.",
+  "max_concurrency": 3,
+  "resource_policy": {
+    "analytical_minimum_percent": 95,
+    "numerical_maximum_percent": 5,
+    "budget": "Three bounded reports, one review/repair cycle, at most two new primary theorem audits, no asymptotic simulation."
+  },
+  "tasks": [
+    {
+      "id": "cross_label_arithmetic",
+      "role": "arithmetic discovery",
+      "context_files": [
+        "protocol.md",
+        "state/proof_obligations.yml",
+        "state/active_campaign.yml",
+        "strategy/round231_cross_label_admission/briefs/complete_target.md",
+        "proofs/kernels/gc_complete_distinct_radical_moment_reduction.md",
+        "strategy/round231_harmonic_admission/reports/harmonic_pooling_discovery.md",
+        "rounds/codex-managed/gc-actual-vector-gram-correlations/synthesis.md"
+      ],
+      "report": "reports/cross_label_arithmetic.md",
+      "status": "completed",
+      "report_sha256": "7e3a090f1c754b252b45207eb00a311b0a8c65a6b1de693b0ed3dea31e0bbd5a"
+    },
+    {
+      "id": "blind_signed_transport",
+      "role": "statement-only independent rederiver",
+      "context_files": [
+        "protocol.md",
+        "strategy/round231_cross_label_admission/briefs/isolated_transport.md"
+      ],
+      "report": "reports/blind_signed_transport.md",
+      "status": "completed",
+      "report_sha256": "47b6e84139f14a9e85e15200f51de0ae6a05eacb3b4443c71c51f394bea7186e"
+    },
+    {
+      "id": "signed_correlation_sources",
+      "role": "targeted primary literature auditor",
+      "context_files": [
+        "protocol.md",
+        "strategy/round231_cross_label_admission/briefs/complete_target.md",
+        "strategy/gauss_circle_strategy_checkpoint_round230_2026-10-11.md"
+      ],
+      "report": "reports/signed_correlation_sources.md",
+      "status": "completed",
+      "report_sha256": "f32d40a313bf70f1e5119384f9a03a13004a143d7e850a9b19343386a2cf4bdc"
+    }
+  ],
+  "exit_gates": [
+    "Preserve cross-label signs and every complete owner.",
+    "Distinguish smooth main-term annihilation from the actual fine-scale arithmetic bound.",
+    "Statement-only transfer/control; source hypothesis and all-cost audit.",
+    "Launch only with a new quantitative input improving the complete power; otherwise freeze the exact missing estimate and do not loop through equivalent identities."
+  ],
+  "completed_at": "2026-10-11T03:41:33.396316+00:00",
+  "decision": "not_admitted_exact_main_cancellation_without_arithmetic_discrepancy_gain",
+  "conductor_decision": "conductor_decision.md",
+  "graph_effect": "none; no State Patch or promotion",
+  "evidence_level": "reviewed prelaunch evidence",
+  "reviews": [
+    {
+      "path": "reviews/signed_cancellation_seam_review.md",
+      "sha256": "8e0f3a2568b880e825d5408f2f9e1af1f2624d16b5b81be5c32c5089a9a88e7f"
+    },
+    {
+      "path": "reviews/local_tail_clarification.md",
+      "sha256": "447bc40c2324ada510d34f365a1e1c71cdcf40b226a19ad6a7c4f69c6f677904"
+    },
+    {
+      "path": "reviews/conductor_report_review.md",
+      "sha256": "3d2122880925c6e71de445984bd462b8eab54b41886f5ccca4f97f5acfc01ea7"
+    }
+  ],
+  "conductor_interventions": [
+    "Sent candidate harmonic-residue formula and Abel phase identity to arithmetic discovery for explicit checking; report discloses this shared suggestion.",
+    "Preserved statement-only transport isolation until its report was frozen; then assigned a separate nonauthor line review of the conductor proof and accepted restoration sources.",
+    "Limited sources to two primary theorem audits and preserved their actual cutoff and high-moment hypotheses.",
+    "Selected exact main cancellation plus unpaid fine-scale discrepancy as the result; did not infer an actual moment improvement from a continuum identity."
+  ],
+  "resource_outcome": {
+    "analytical_minimum_percent": 95,
+    "numerical_maximum_percent": 5,
+    "activity": "Analytical proofs, modulation and endpoint controls; two primary source audits; bounded exact Euler/phase diagnostics independently reproduced locally. No asymptotic simulation."
+  },
+  "execution_recovery": "Arithmetic report was completely written before a final stream disconnect. A read-only completion retry also disconnected. The conductor closed the bounded task from its complete seven-section hash-verified report and the independently reviewed matching proof; no unfinished mathematics or report bytes were lost."
+}

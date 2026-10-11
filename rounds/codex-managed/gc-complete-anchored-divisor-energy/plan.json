@@ -1,0 +1,187 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 219,
+    "round_type": "complete_actual_anchored_energy_attack",
+    "campaign_id": "gc-complete-anchored-divisor-energy",
+    "title": "Complete actual anchored divisor-energy attack",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+    "generated_at": "2026-09-27T19:20:44.015191+00:00",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 95,
+      "numerical_experimental_maximum_percent": 5,
+      "planned_numerical_percent": 0,
+      "budget": "Three bounded seven-section reports, one mechanism per discovery task and one same-round review cycle; zero planned mathematical experiments."
+    },
+    "target_obligations": [
+      "GC-target",
+      "GC-complete-square-root-large-values-moment-bound",
+      "GC-complete-distinct-radical-twelfth-reduction"
+    ],
+    "frozen_target": {
+      "question": "Can the complete actual aligned anchored divisor energy satisfy inequality(12) at rho208/2625?",
+      "reference_formula": "O <= J^2 v^2 N^(3/2)/(64K) + C_eta T^(208/2625+eta) JN, uniformly over every actual rectangle and aligned high-point set.",
+      "quantities": [
+        "Exact real Q and constant diagonal D from216, O=Q-D; all minus cosine and plus sine terms retained.",
+        "R_j physical in[T/2,2T], N^(-1/2)-separated maximal high points, sigma_j=sign H(R_j), every rectangle N<=T^(3/2), K=N/D.",
+        "v>=T^(13/125)/(2L), L is the total number of dyadic rectangles.",
+        "Conditional full high twelfth moment has exponent113/125+42rho/13=29/25; the input is unproved.",
+        "Fixed milestone only; full quarter requires a sufficient unbounded-fixed-order family or full alternate parents."
+      ]
+    },
+    "completion_criteria": [
+      "Three bounded seven-section reports and statement-only exact-anchor rederivation.",
+      "All actual signed energy terms and restored costs accounted for; precise scope of any failed enlarged assertion.",
+      "Independent final-hash seams, conductor controls, validated patch and219 closure."
+    ],
+    "controls": [
+      "actual_coefficients",
+      "actual_aligned_high_points",
+      "exact_anchor_incidence",
+      "near_anchor_incidence",
+      "all_plus_minus_terms",
+      "every_rectangle_and_tail",
+      "full_exponent_restoration",
+      "arbitrary_sign_scope",
+      "statement_only_control",
+      "unbounded_order_goal_scope"
+    ],
+    "exit_labels": [
+      "complete_anchored_energy_gain_requires_validation",
+      "complete_anchored_energy_attempt_no_new_bound"
+    ],
+    "tasks": [
+      {
+        "id": "joint_cofactor_dispersion",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "target": "Attack the COMPLETE actual anchored energy inequality (12) of the216 report at rho208/2625. Use a joint cofactor-dispersion or joint Poisson calculation before separate moduli, preserving actual chi4, real high-value signs, the absolute radius and both minus cosine and plus sine terms. Bound every rectangle/major arc and restoration cost, or close this one mechanism at its first unproved estimate. Do not merely repeat216 scalar modulus bounds or218 stationary rank. No experiments. Seven sections and stop; assigned report only.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round219_complete_anchored_energy_attack.md",
+          "strategy/gauss_circle_strategy_checkpoint_round217_2026-09-28.md",
+          "proofs/kernels/gc_complete_square_root_large_values_moment_bound.md",
+          "proofs/kernels/gc_complete_distinct_radical_moment_reduction.md",
+          "rounds/codex-managed/gc-actual-radical-high-values/reports/anchored_divisor_high_values.md",
+          "rounds/codex-managed/gc-complete-signed-radical-kernel/synthesis.md",
+          "rounds/codex-managed/gc-complete-signed-radical-kernel/reports/joint_divisor_kernel.md"
+        ],
+        "required_controls": [
+          "actual_coefficients",
+          "actual_aligned_high_points",
+          "exact_anchor_incidence",
+          "near_anchor_incidence",
+          "all_plus_minus_terms",
+          "every_rectangle_and_tail",
+          "full_exponent_restoration",
+          "arbitrary_sign_scope",
+          "statement_only_control",
+          "unbounded_order_goal_scope"
+        ],
+        "required_output": [
+          "Seven numbered protocol sections: result; exact hypotheses; proof; first gap; controls; exact dependencies; state effect.",
+          "Only assigned report; no shared state, synthesis, siblings or next round."
+        ],
+        "report_path": "rounds/codex-managed/gc-complete-anchored-divisor-energy/reports/joint_cofactor_dispersion.md"
+      },
+      {
+        "id": "actual_anchor_incidence",
+        "role": "barrier_no_go",
+        "access_mode": "selected_context",
+        "status": "pending",
+        "target": "Independently attack or audit the complete actual anchored energy inequality (12) of216 through exact and near multiplicative-anchor incidence arithmetic and chi4 signs. Keep actual sigma_j=sign H(R_j) and the fact these are high points. Test whether character cancellation survives common radical labels, whether a usable signed cluster estimate follows from alignment, and pay all remaining near/plus terms. An arbitrary-sign counterexample is only a control of an enlarged assertion; do not refute actual target with it. Produce complete quantitative bound or scoped limitation with precise first gap. No experiments. Seven sections and stop; assigned report only.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/round219_complete_anchored_energy_attack.md",
+          "strategy/gauss_circle_strategy_checkpoint_round217_2026-09-28.md",
+          "proofs/kernels/gc_complete_square_root_large_values_moment_bound.md",
+          "proofs/kernels/gc_complete_distinct_radical_moment_reduction.md",
+          "rounds/codex-managed/gc-actual-radical-high-values/reports/anchored_divisor_high_values.md",
+          "rounds/codex-managed/gc-complete-signed-radical-kernel/synthesis.md"
+        ],
+        "required_controls": [
+          "actual_coefficients",
+          "actual_aligned_high_points",
+          "exact_anchor_incidence",
+          "near_anchor_incidence",
+          "all_plus_minus_terms",
+          "every_rectangle_and_tail",
+          "full_exponent_restoration",
+          "arbitrary_sign_scope",
+          "statement_only_control",
+          "unbounded_order_goal_scope"
+        ],
+        "required_output": [
+          "Seven numbered protocol sections: result; exact hypotheses; proof; first gap; controls; exact dependencies; state effect.",
+          "Only assigned report; no shared state, synthesis, siblings or next round."
+        ],
+        "report_path": "rounds/codex-managed/gc-complete-anchored-divisor-energy/reports/actual_anchor_incidence.md"
+      },
+      {
+        "id": "blind_anchor_classes",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "status": "pending",
+        "target": "Solve only the isolated exact anchored radical-class statement; no arithmetic application or other context. Seven sections, no experiments, assigned report only and stop.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/gc-complete-anchored-divisor-energy/briefs/blind_anchor_statement.md"
+        ],
+        "required_controls": [
+          "actual_coefficients",
+          "actual_aligned_high_points",
+          "exact_anchor_incidence",
+          "near_anchor_incidence",
+          "all_plus_minus_terms",
+          "every_rectangle_and_tail",
+          "full_exponent_restoration",
+          "arbitrary_sign_scope",
+          "statement_only_control",
+          "unbounded_order_goal_scope"
+        ],
+        "required_output": [
+          "Seven numbered protocol sections: result; exact hypotheses; proof; first gap; controls; exact dependencies; state effect.",
+          "Only assigned report; no shared state, synthesis, siblings or next round."
+        ],
+        "report_path": "rounds/codex-managed/gc-complete-anchored-divisor-energy/reports/blind_anchor_classes.md",
+        "excluded_context": [
+          "All files except protocol and isolated statement; disclose prior-task history if reused."
+        ]
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "signed_energy_and_character",
+        "requirement": "Exact characters, real signs, all terms, anchors, integer multiplicities and endpoints."
+      },
+      {
+        "id": "complete_restoration",
+        "requirement": "Every rectangle/major arc/tail and full high-value exponent; no arbitrary-sign control promoted as actual counterexample."
+      },
+      {
+        "id": "isolated_anchor_binding",
+        "requirement": "Statement-only class derivation and independent actual application."
+      }
+    ],
+    "previous_goal_turn_classification": "progress_completed_joint_transform_diagnosis_no_complete_moment_gain",
+    "scheduled_review": "Mandatory broad strategy/current-primary-literature review220 after217--219."
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+    "generated_at": "2026-09-27T19:20:44.071284+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}

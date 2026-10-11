@@ -1,0 +1,194 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 230,
+    "round_type": "user_requested_full_goal_status_strategy_review",
+    "campaign_id": "gc-research-status-strategy-reset",
+    "title": "Research status, current literature and strategy recalibration",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "starting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+    "generated_at": "2026-10-11T02:09:43.812207+00:00",
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 95,
+      "numerical_experimental_maximum_percent": 5,
+      "planned_numerical_percent": 0,
+      "budget": "Three bounded reports, at most two exact new source applications, one reciprocal review/repair cycle; one Wolfram symbolic check independently reproduced locally."
+    },
+    "target_obligations": [
+      "GC-target",
+      "M9",
+      "M9-M1",
+      "M9-M2",
+      "GC-complete-square-root-large-values-moment-bound",
+      "GC-complete-distinct-radical-twelfth-reduction"
+    ],
+    "frozen_target": {
+      "question": "What has actually improved through229, has current primary literature changed the attainable complete bounds, and which revised full-goal strategy has a concrete quantitative admission gate?",
+      "reference_formula": "P(X)<<X^(1/4+epsilon); complete cusp2Re D<=A^2N^(3/2)T^epsilon or complete fixed-order moments M_p(B_T)<=T^(b_p+epsilon) with b_p=o(p).",
+      "quantities": [
+        "All real X and actual coefficients; accepted graph versus reviewed evidence; every full complementary owner.",
+        "Early user-requested review replaces an unlaunched speculative230 attack; no automatic successor."
+      ]
+    },
+    "completion_criteria": [
+      "Three reports including isolated moment rederivation.",
+      "Nonauthor reviews of quantitative conclusions and conductor revised strategy; bounded primary checks and Wolfram symbolic control.",
+      "Mechanically valid State Patch, graph/archive preservation checks and conductor closure; no promotion from source resemblance."
+    ],
+    "controls": [
+      "graph_vs_evidence",
+      "complete_bound_vs_component",
+      "current_primary_versions",
+      "exact_source_hypotheses",
+      "full_restoration",
+      "fixed_order_quantifiers",
+      "real_complex_scope",
+      "all_owners_preserved",
+      "certificate_not_lower_bound",
+      "blind_independence"
+    ],
+    "tasks": [
+      {
+        "id": "progress_frontier_audit",
+        "role": "seam_reviewer",
+        "access_mode": "selected_context",
+        "target": "Audit current research status and progress since Round199/200 through229 against the authoritative graph and closed evidence. Identify the last accepted full estimates, accepted reductions and merely reviewed components separately. Quantify complete exponent/moment changes and the number/scope of subsequent no-gain rounds from the ledger. Read only named contexts, parsing graph selectively; no sibling reports. Give a candid strategy diagnosis and ranked complete owners with precise new-evidence admission and stopping gates. Do not repeat retired methods or design a successor round. Seven sections, assigned report only, freeze hash and stop.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/gauss_circle_strategy_checkpoint_round229_2026-09-29.md",
+          "rounds/codex-managed/gc-full-goal-cuspidal-source-review/briefs/complete_cuspidal_interfaces.md",
+          "state/round_ledger.yml",
+          "state/next_round_plan.yml",
+          "strategy/gauss_circle_strategy_review_2026-09-23.md",
+          "proofs/kernels/gc_complete_square_root_large_values_moment_bound.md",
+          "proofs/kernels/gc_complete_distinct_radical_moment_reduction.md",
+          "rounds/codex-managed/gc-signed-heegner-phase/synthesis.md",
+          "rounds/codex-managed/gc-full-goal-cuspidal-source-review/synthesis.md"
+        ],
+        "status": "pending",
+        "required_controls": [
+          "graph_vs_evidence",
+          "complete_bound_vs_component",
+          "current_primary_versions",
+          "exact_source_hypotheses",
+          "full_restoration",
+          "fixed_order_quantifiers",
+          "real_complex_scope",
+          "all_owners_preserved",
+          "certificate_not_lower_bound",
+          "blind_independence"
+        ],
+        "required_output": [
+          "Seven numbered protocol sections; exact hypotheses, proof, first gap, controls, provenance, scoped state effect.",
+          "Assigned report only; final SHA256; no successor."
+        ],
+        "report_path": "rounds/codex-managed/gc-research-status-strategy-reset/reports/progress_frontier_audit.md"
+      },
+      {
+        "id": "latest_literature_audit",
+        "role": "source_auditor",
+        "access_mode": "selected_context",
+        "target": "Current-primary literature review as of2026-10-11, emphasizing changes since2026-09-29. Verify current Li-Yang source version and qualifications, relevant withdrawn claims, and new plausible actual signed cusp/toric or complete-wave/high-moment inputs. Bounded screening followed by at most TWO exact theorem application audits, preferably genuinely new sources or revisions. A candidate is useful only if actual coefficients, CM/local measures, moving tests, complete partners, endpoints/tails and full restored powers match. Record versions, submission/revision dates, theorem numbers, URLs, failed first premise and uncertainty. Do not claim exhaustive search or promote a new arXiv claim on its abstract. Compare concrete directions; no sibling reports. Seven sections, assigned report only, final hash and stop.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "strategy/gauss_circle_strategy_checkpoint_round229_2026-09-29.md",
+          "rounds/codex-managed/gc-full-goal-cuspidal-source-review/briefs/complete_cuspidal_interfaces.md",
+          "rounds/codex-managed/gc-full-goal-cuspidal-source-review/reports/signed_cm_spectral_sources.md",
+          "rounds/codex-managed/gc-full-goal-cuspidal-source-review/reports/complete_frontier_source_comparison.md",
+          "rounds/codex-managed/gc-full-goal-cuspidal-source-review/controls/conductor_current_primary_status.md"
+        ],
+        "status": "pending",
+        "required_controls": [
+          "graph_vs_evidence",
+          "complete_bound_vs_component",
+          "current_primary_versions",
+          "exact_source_hypotheses",
+          "full_restoration",
+          "fixed_order_quantifiers",
+          "real_complex_scope",
+          "all_owners_preserved",
+          "certificate_not_lower_bound",
+          "blind_independence"
+        ],
+        "required_output": [
+          "Seven numbered protocol sections; exact hypotheses, proof, first gap, controls, provenance, scoped state effect.",
+          "Assigned report only; final SHA256; no successor."
+        ],
+        "report_path": "rounds/codex-managed/gc-research-status-strategy-reset/reports/latest_literature_audit.md"
+      },
+      {
+        "id": "blind_moment_restoration",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "target": "Independently prove or refute the isolated one-sided persistence, moment-to-pointwise restoration and fixed-order optimization. Use ONLY protocol, isolated statement and this brief. Pay jumps, sign, smoothing/Jacobian and fixed-p epsilon choices. No literature or research history. Seven sections, assigned report only, freeze hash and stop.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/gc-research-status-strategy-reset/briefs/blind_moment_statement.md"
+        ],
+        "excluded_context": [
+          "All files except protocol, isolated statement and own brief; no graph, history, siblings, sources or root controls."
+        ],
+        "status": "pending",
+        "required_controls": [
+          "graph_vs_evidence",
+          "complete_bound_vs_component",
+          "current_primary_versions",
+          "exact_source_hypotheses",
+          "full_restoration",
+          "fixed_order_quantifiers",
+          "real_complex_scope",
+          "all_owners_preserved",
+          "certificate_not_lower_bound",
+          "blind_independence"
+        ],
+        "required_output": [
+          "Seven numbered protocol sections; exact hypotheses, proof, first gap, controls, provenance, scoped state effect.",
+          "Assigned report only; final SHA256; no successor."
+        ],
+        "report_path": "rounds/codex-managed/gc-research-status-strategy-reset/reports/blind_moment_restoration.md"
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "status_provenance",
+        "requirement": "Graph and ledger provenance versus complete mathematical gain"
+      },
+      {
+        "id": "current_source_application",
+        "requirement": "Primary version, theorem, applicability and restored cost"
+      },
+      {
+        "id": "blind_power_restoration",
+        "requirement": "Persistence, fixed order and full pointwise implication"
+      },
+      {
+        "id": "strategy_admission",
+        "requirement": "Nonauthor review of final strategy and stop gates"
+      }
+    ],
+    "exit_labels": [
+      "review_complete_gain_requires_further_validation",
+      "review_strategy_reset_no_new_complete_bound"
+    ],
+    "scheduled_review": "This user-requested early review supersedes the pending230 analytic design; next review only after a new applicable input or at most two complete analytic attempts.",
+    "conductor_interventions": [
+      "User steering explicitly requests status/progress/strategy review and permits latest literature. No unlaunched toric attack is treated as authorized mathematical progress."
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+    "generated_at": "2026-10-11T02:09:43.812207+00:00"
+  },
+  "artifact_policy": {
+    "subagents_may_edit_shared_state": false,
+    "computation_evidence_level": "diagnostic_only",
+    "coordinator_owns_synthesis_and_state_patch": true
+  }
+}
