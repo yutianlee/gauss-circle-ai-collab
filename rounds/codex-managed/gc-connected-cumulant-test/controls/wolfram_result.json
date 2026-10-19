@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "Out[1]= <|\"coefficientChecks\" -> {{2, True}, {3, True}, {4, True}, {5, True}, {6, True}, {7, True}, {8, True}, {9, True}, {10, True}, {11, True}, {12, True}}, \"properPartitions\" -> {{{9, 3}, 9/4, -220}, {{8, 4}, 2, -495}, {{7, 5}, 2, -792}, {{6, 6}, 2, -462}, {{6, 3, 3}, 3/2, 18480}, {{5, 4, 3}, 5/4, 55440}, {{4, 4, 4}, 1, 11550}, {{3, 3, 3, 3}, 1, -92400}}, \"maximumOuterExponent\" -> 9/4, \"balancedConstantFamilies\" -> {{12, 1925/12, 1925/12}, {24, 148225/64, 1301375075/192}, {48, 64774325/12288, 33527982212725/12288}}, \"constantCumulantsVanish\" -> {{2, True}, {3, True}, {4, True}, {5, True}, {6, True}, {7, True}, {8, True}, {9, True}, {10, True}, {11, True}, {12, True}}, \"diagnosticOnly\" -> True|>"
+    }
+  ],
+  "isError": false
+}

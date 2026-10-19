@@ -1,0 +1,16 @@
+# Preserve reviewed evidence bytes, including the line endings in SHA-256 manifests.
+/rounds/codex-managed/gc-actual-upper-tail-a/** -text
+/rounds/codex-managed/gc-upper-tail-separated-products/** -text
+/rounds/codex-managed/gc-fixed-order-moment-absorption/** -text
+/rounds/codex-managed/gc-connected-cumulant-test/** -text
+/rounds/codex-managed/gc-signed-sixth-dispersion/** -text
+/proofs/kernels/gc_complete_fixed_even_moment_distinct_absorption.md -text
+/state/proof_obligations.yml -text
+/state/best_proof_draft.md -text
+
+# Preserve the accompanying strategy evidence and the files its manifests bind.
+/strategy/round231_tail_strategy_review/** -text
+/strategy/round231_directive_reconciliation/** -text
+/strategy/gauss_circle_upper_tail_strategy_2026-10-11.md -text
+/strategy/round231_strategy_review_2026-10-11.md -text
+/strategy/gauss_circle_strategy_directive_reconciliation_2026-10-11.md -text

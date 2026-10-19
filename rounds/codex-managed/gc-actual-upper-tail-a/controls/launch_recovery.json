@@ -1,0 +1,3 @@
+{
+  "recovery": "Explicit UTF-8 used for the historical failure-ledger read after the initial launch script encountered a Windows locale decode error. Manifest, plan, briefs and active ledger were already written; no rerun or duplicate round. Barrier packet now prepended preserving prior content."
+}

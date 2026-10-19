@@ -1,0 +1,66 @@
+{
+  "status": "passed",
+  "evidence_level": "diagnostic_only",
+  "partition_checks": [
+    {
+      "order": 2,
+      "monomials": 1,
+      "derangement_coefficient_check": true,
+      "total_coefficient_check": true,
+      "one_pair_coefficient": 1
+    },
+    {
+      "order": 4,
+      "monomials": 4,
+      "derangement_coefficient_check": true,
+      "total_coefficient_check": true,
+      "one_pair_coefficient": 6
+    },
+    {
+      "order": 6,
+      "monomials": 10,
+      "derangement_coefficient_check": true,
+      "total_coefficient_check": true,
+      "one_pair_coefficient": 15
+    },
+    {
+      "order": 8,
+      "monomials": 21,
+      "derangement_coefficient_check": true,
+      "total_coefficient_check": true,
+      "one_pair_coefficient": 28
+    },
+    {
+      "order": 10,
+      "monomials": 41,
+      "derangement_coefficient_check": true,
+      "total_coefficient_check": true,
+      "one_pair_coefficient": 45
+    },
+    {
+      "order": 12,
+      "monomials": 76,
+      "derangement_coefficient_check": true,
+      "total_coefficient_check": true,
+      "one_pair_coefficient": 66
+    },
+    {
+      "order": 14,
+      "monomials": 134,
+      "derangement_coefficient_check": true,
+      "total_coefficient_check": true,
+      "one_pair_coefficient": 91
+    },
+    {
+      "order": 16,
+      "monomials": 230,
+      "derangement_coefficient_check": true,
+      "total_coefficient_check": true,
+      "one_pair_coefficient": 120
+    }
+  ],
+  "finite_sequence_absorption_cases": 64,
+  "negative_signed_control_order6": -720,
+  "p12_growing_cutoff_head_exponent": "161/156",
+  "limitations": "Exact finite checks only, not a proof for arbitrary p, actual signed integral, or any asymptotic Gauss estimate."
+}

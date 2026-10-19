@@ -1,0 +1,105 @@
+{
+  "status": "passed",
+  "completed_at": "2026-10-12T00:46:39.504368+00:00",
+  "round_index": 234,
+  "terminal_label": "connected_correlation_test_closed_without_complete_gain",
+  "graph_sha256": "dd743db27ed8eaac685d23dd2f92da743dd2d1742c2f150ddecf802dbbca5306",
+  "graph_nodes": 402,
+  "proof_draft_unchanged": true,
+  "identity_application": true,
+  "inverse_identity": true,
+  "replay_identity": true,
+  "patch_summary": "no_change: GC-target, Conditional-bridge, M9, M9-M1, M9-M2, M9-endpoint-uniformity, M9-M1-global-angular-radial-estimate, M9-M1-global-lower-radial-signed-estimate, M9-M1-GAR-total-active-equivalence, GC-external-Li-Yang-theta-star, GC-complete-square-root-large-values-moment-bound, GC-complete-distinct-radical-twelfth-reduction, GC-complete-fixed-even-moment-distinct-absorption; The actual signed disconnected contribution is paid at T^(1+epsilon), but the connected aggregate at29/25 remains unproved. The full-harmonic tuplewise absolute connected certificate is at least cT^(5/2), since its entire correction costs only T^(9/4+epsilon). Independent derivation, nonauthor reviews and exact Wolfram/local controls pass. No complete moment or pointwise improvement; identity State Patch and unchanged402-node graph/proof draft.",
+  "protected_preexisting_files_checked": 5248,
+  "prior_ledger_entries_unchanged": true,
+  "prior_validation_gates_unchanged": true,
+  "initial_reports_unchanged": true,
+  "reviewed_artifact_hashes": {
+    "rounds/codex-managed/gc-connected-cumulant-test/reports/blind_collision_bound.md": "035febf79ed5f6acc569ad2109f1091b9d014e382a1305b65671743108e9bc7c",
+    "rounds/codex-managed/gc-connected-cumulant-test/reports/connected_certificate_audit.md": "7e18113aef8099a1724256720d196eecec0d61dd9ab6bddf47590261d51783c6",
+    "rounds/codex-managed/gc-connected-cumulant-test/reports/signed_connected_attack.md": "09ee3a7ee1031c015cbc34b463b887524d7150966d774fec477d2a9dcad45fa4",
+    "rounds/codex-managed/gc-connected-cumulant-test/reviews/certificate_review.md": "e33021d42fb3417998284d9bc7ca99103278f24ddaa49f5e758070082272ee0f",
+    "rounds/codex-managed/gc-connected-cumulant-test/reviews/complete_scope_review.md": "ccdf6c5a7f6c92f0957866e2e3f26efa14ee5c896b87f1ae5a0295785c291223",
+    "rounds/codex-managed/gc-connected-cumulant-test/reviews/conductor_blind_collision_review.md": "a96707b890dad7f152cf63f6dbf1ab2672c370c835cd13d9d04ccdaa1e88cb8a",
+    "rounds/codex-managed/gc-connected-cumulant-test/reviews/signed_remainder_review.md": "f36d256950dd20aa4e0742329ddb10c1b4d12355da23d9c12ac1bb1644d33a22",
+    "rounds/codex-managed/gc-connected-cumulant-test/candidates/conductor_connected_test.md": "3a443b5e63e826511f99e9428438018e5fc41f358a014fc15d9b8bb75233ae97",
+    "rounds/codex-managed/gc-connected-cumulant-test/briefs/actual_interface.md": "8d7cd13111517df44932faef0420e5c4679b69a70e23a0520561497d0a3caee6",
+    "rounds/codex-managed/gc-connected-cumulant-test/briefs/blind_collision_bound.md": "6e4a786bc784c46f371f98f5cb0cce24283a74291123aba597459fe0a92257a4",
+    "rounds/codex-managed/gc-connected-cumulant-test/briefs/certificate_review.md": "8560813ee1ae1b4ae9e6f8be17a2acca8fc52bd650dbb18c4421ae9a9ecf2f37",
+    "rounds/codex-managed/gc-connected-cumulant-test/briefs/complete_scope_review.md": "4433732a85021c6e3fe58ec6d5f6c63dd4fd3ea4f48004717e219669bd8c4d67",
+    "rounds/codex-managed/gc-connected-cumulant-test/briefs/connected_certificate_audit.md": "e6cf1de08dea30b90e8fae48105f50081b34b35387ad38f43b5f8ff70cbcc0c5",
+    "rounds/codex-managed/gc-connected-cumulant-test/briefs/isolated_collision.md": "605a7c3f57923c692e55deab3e1157d29d2dcc0d313630eeac2a54a3753db551",
+    "rounds/codex-managed/gc-connected-cumulant-test/briefs/signed_connected_attack.md": "875d24fc778ab6568e5a2a2233742236e6f25567102b936493ae4e1287e81c1d",
+    "rounds/codex-managed/gc-connected-cumulant-test/briefs/signed_remainder_review.md": "7f81714394123fe5a67bd48d22a5f99d352523a4ad7e369f3d0533583fb2f1e2",
+    "rounds/codex-managed/gc-connected-cumulant-test/synthesis.md": "fc90f9a04a4d851f7dcaa05f90771ab8762f3987b97bc23a6add445006e55213",
+    "rounds/codex-managed/gc-connected-cumulant-test/controls/review_acceptance.json": "a1440081f0045cbece7dfc51e565e5f625689663593ea3eb8533442edf533250",
+    "rounds/codex-managed/gc-connected-cumulant-test/controls/control_manifest.md": "637fff1ca0f85b632f2e5a3cb93772639b19c5833dd19e9ff8e1b316fbad803d",
+    "rounds/codex-managed/gc-connected-cumulant-test/controls/wolfram_checks.wl": "86a6b7859beb9e55c36f990de14eb7f31f42960946f23396be789ed3f6cd0c4b",
+    "rounds/codex-managed/gc-connected-cumulant-test/controls/wolfram_result.json": "d74902cd85bb708b01388b79a60890e9f50ca19fb7466b6187af9c0a5ec22524",
+    "rounds/codex-managed/gc-connected-cumulant-test/controls/exact_local_controls.py": "b99d46d7c7e912091e894e7cb604da0b84cebe19fcae2358c5751052e1cb4253",
+    "rounds/codex-managed/gc-connected-cumulant-test/controls/exact_local_controls.json": "89e888dfaf9c7e933ebeded4b165ae0598880aebcc29b1d30f3e18d46b780cd1"
+  },
+  "new_gates": [
+    {
+      "id": "round234_normalization",
+      "status": "green_single_outer_radius_mass",
+      "artifact": "rounds/codex-managed/gc-connected-cumulant-test/reviews/complete_scope_review.md"
+    },
+    {
+      "id": "round234_rapid_pairs",
+      "status": "green_distinct_classes_and_full_tail",
+      "artifact": "rounds/codex-managed/gc-connected-cumulant-test/reviews/signed_remainder_review.md"
+    },
+    {
+      "id": "round234_blind_collision",
+      "status": "green_statement_only_uniform_bound",
+      "artifact": "rounds/codex-managed/gc-connected-cumulant-test/reports/blind_collision_bound.md"
+    },
+    {
+      "id": "round234_signed_remainder",
+      "status": "green_actual_moments_through_nine",
+      "artifact": "rounds/codex-managed/gc-connected-cumulant-test/reviews/signed_remainder_review.md"
+    },
+    {
+      "id": "round234_absolute_blocks",
+      "status": "green_all_scales_and_schwartz_tail",
+      "artifact": "rounds/codex-managed/gc-connected-cumulant-test/reviews/certificate_review.md"
+    },
+    {
+      "id": "round234_harmonic_lower",
+      "status": "green_actual_squarefree_mass_and_full_harmonics",
+      "artifact": "rounds/codex-managed/gc-connected-cumulant-test/reviews/certificate_review.md"
+    },
+    {
+      "id": "round234_cumulant_transfer",
+      "status": "green_absolute_correction_below_lower_mass",
+      "artifact": "rounds/codex-managed/gc-connected-cumulant-test/reviews/certificate_review.md"
+    },
+    {
+      "id": "round234_restoration",
+      "status": "green_conditional_only_with_all_paid_owners",
+      "artifact": "rounds/codex-managed/gc-connected-cumulant-test/reviews/complete_scope_review.md"
+    },
+    {
+      "id": "round234_finite_controls",
+      "status": "green_wolfram_and_local_exact_agree",
+      "artifact": "rounds/codex-managed/gc-connected-cumulant-test/controls/control_manifest.md"
+    },
+    {
+      "id": "round234_countercontrols",
+      "status": "green_no_independence_or_absolute_swap",
+      "artifact": "rounds/codex-managed/gc-connected-cumulant-test/reviews/conductor_blind_collision_review.md"
+    },
+    {
+      "id": "round234_first_gap",
+      "status": "green_signed_K12_unproved_no_complete_gain",
+      "artifact": "rounds/codex-managed/gc-connected-cumulant-test/synthesis.md"
+    },
+    {
+      "id": "round234_state_history",
+      "status": "green_identity_only_protected_inventory",
+      "artifact": "rounds/codex-managed/gc-connected-cumulant-test/controls/starting_hashes.json"
+    }
+  ],
+  "next_round": "235 pending_design, no tasks, no launch"
+}

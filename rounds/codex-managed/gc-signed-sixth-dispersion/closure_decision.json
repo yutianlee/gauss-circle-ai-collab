@@ -1,0 +1,134 @@
+{
+  "round_index": 235,
+  "campaign_id": "gc-signed-sixth-dispersion",
+  "conductor_review_complete": true,
+  "result": "signed_sixth_attempt_closed_without_complete_gain",
+  "reason": "The actual sixth-band bridge and all Hankel errors are paid, as are exact two-character grouping, square correction, paired sextuples and single-denominator exact-zero relations. The actual nonpaired signed rational sextuple estimate remains unproved. Its tuplewise absolute certificate is at least c T^6 H0 on an actual interior block, so that certificate cannot meet the target. Independent review and exact Wolfram/local controls pass. No complete moment or pointwise improvement; identity State Patch preserves the402-node graph and proof draft.",
+  "reviewed_artifact_hashes": {
+    "rounds/codex-managed/gc-signed-sixth-dispersion/reports/actual_sixth_bridge.md": "e7e1b99ab4b62fb94d66b7f8c1c16b88d6e3bb9f891405da1b4d3c2e697795b6",
+    "rounds/codex-managed/gc-signed-sixth-dispersion/reports/blind_packet_control.md": "755a6e08d18868c02b6a3bdb971b66ff1709496fd845c41bee8006ed8aef89c0",
+    "rounds/codex-managed/gc-signed-sixth-dispersion/reports/signed_fraction_dispersion.md": "9406863b09750d841adde32c46b71e3581c529de76e5d48a46a1902d1532c253",
+    "rounds/codex-managed/gc-signed-sixth-dispersion/reviews/actual_bridge_review.md": "76385d6f494ac64dfdf5bd58f482d25932ebfbda37c1cce491b92c7a7fce3dcc",
+    "rounds/codex-managed/gc-signed-sixth-dispersion/reviews/arithmetic_dispersion_review.md": "ab7773bc7960ff4b137c0b9b5ea207af23cc90733a3ab5b3b86caf4e1ea58d36",
+    "rounds/codex-managed/gc-signed-sixth-dispersion/reviews/complete_scope_review.md": "98cf6624da2395606671f7544de280590eb25781d88eccfb331f9b4989202f56",
+    "rounds/codex-managed/gc-signed-sixth-dispersion/reviews/conductor_blind_packet_review.md": "5c7758d7bf610f52dfe3a5415a0028a37a4754d0280db38ec2f81a502cebf69d",
+    "rounds/codex-managed/gc-signed-sixth-dispersion/candidates/conductor_signed_sixth.md": "cee1d243f21577e090acb0f9387c0412f4f70748b918aa3661e64db15586a8f3",
+    "rounds/codex-managed/gc-signed-sixth-dispersion/briefs/actual_bridge_review.md": "a7fe5788913a34da9ba43303e9c5e73444df7c1defd54d9d0085ebf0f111a8df",
+    "rounds/codex-managed/gc-signed-sixth-dispersion/briefs/actual_interface.md": "e665ea9cd651c7c6346279d90e89ca7b476bc9f39f757becc9f788abc1a4ecfa",
+    "rounds/codex-managed/gc-signed-sixth-dispersion/briefs/actual_sixth_bridge.md": "d99ae8e265175c581f9242a8ba3539f07e46a02c0d9d1357cd61d30d6919e723",
+    "rounds/codex-managed/gc-signed-sixth-dispersion/briefs/arithmetic_dispersion_review.md": "29fff904fa4f69aa5bf696c412e01c03ec613124bcd990ff446554101735ef7f",
+    "rounds/codex-managed/gc-signed-sixth-dispersion/briefs/blind_packet_control.md": "a18510a02b9c429c8dc480114cf2c31e14bf65bba34b654a0293e9a69e6e3014",
+    "rounds/codex-managed/gc-signed-sixth-dispersion/briefs/complete_scope_review.md": "9ef69a71467102766eb54fb6dd9b1d0f08dcc5756ee67ad9210e2c6131d5125a",
+    "rounds/codex-managed/gc-signed-sixth-dispersion/briefs/isolated_packet.md": "15c40f1605efc87eb8bb3807acb5b6bf066a6ebcf1a95f58269ffff95b2e2905",
+    "rounds/codex-managed/gc-signed-sixth-dispersion/briefs/signed_fraction_dispersion.md": "f7cdde107fe24855c0aa0a01f8048c86352fa0da3978f5a8f76ed082083760f5",
+    "rounds/codex-managed/gc-signed-sixth-dispersion/synthesis.md": "d53a12a885b0fb9896fa562feb369282d35b73e0dcb5b25e5f8ed5125ce677bd",
+    "rounds/codex-managed/gc-signed-sixth-dispersion/controls/control_manifest.md": "a2751a7fbca018496711c9002732a9bb76b0474cd588f654915f6b1fe538d385",
+    "rounds/codex-managed/gc-signed-sixth-dispersion/controls/exact_local_controls.json": "2e6cdf957006c16d4c43455e9151073c36b02732ba7280648c16e2caaf05e7e3",
+    "rounds/codex-managed/gc-signed-sixth-dispersion/controls/exact_local_controls.py": "dd23da301d9c57bfc359cb159cf1ba561b9fdf7fc0bd65dd311d25e5918bcb75",
+    "rounds/codex-managed/gc-signed-sixth-dispersion/controls/review_acceptance.json": "1c97a29719e0a533537e0cabcb900a46dfd02955fba7c6550f55163a44230052",
+    "rounds/codex-managed/gc-signed-sixth-dispersion/controls/source_check.md": "315c1b7dbd28f1b69836aabc3a90c7899f73ec5ff913dcd98fffcb30767fc3dd",
+    "rounds/codex-managed/gc-signed-sixth-dispersion/controls/wolfram_correction.wl": "abd68c908db11668f8b6b73322f068716e0e4cbf190b6ff4b6d7adb063c09ab1",
+    "rounds/codex-managed/gc-signed-sixth-dispersion/controls/wolfram_correction_response.json": "6625ecb634c76c06c68dc61530452db10646246d24c747fab88207ff94247fa4",
+    "rounds/codex-managed/gc-signed-sixth-dispersion/controls/wolfram_grouping.wl": "055ea49da99155b371fe942e0c916b7e83426b8e5965883a073f86433ab218b5",
+    "rounds/codex-managed/gc-signed-sixth-dispersion/controls/wolfram_grouping_response.json": "792f0598a5e24605220e7319eb6759414d331d7522abb72e53a6c0f939c3e273",
+    "rounds/codex-managed/gc-signed-sixth-dispersion/controls/wolfram_phase.wl": "a03d6979fcceca9623bf39778dd2ce2ebf4561ad0f65ddb785a49af399972a71",
+    "rounds/codex-managed/gc-signed-sixth-dispersion/controls/wolfram_phase_response.json": "421ec3a4fe9db39a9e2d866c59592f696b935f6939a4bfdf8ed3a016105ef663",
+    "rounds/codex-managed/gc-signed-sixth-dispersion/controls/wolfram_primary.wl": "88b71cadba640e43dcc49a320636312b4e685e248f03509d5c5c64538e5f1801",
+    "rounds/codex-managed/gc-signed-sixth-dispersion/controls/wolfram_primary_response.json": "e74700cd7820d0e2c40995a91b6bb67312aa94eb5d3541c5078f29e63837778a"
+  },
+  "gates": [
+    {
+      "id": "round235_actual_variance",
+      "status": "green_all_classes_harmonics_paid",
+      "artifact": "rounds/codex-managed/gc-signed-sixth-dispersion/reviews/actual_bridge_review.md"
+    },
+    {
+      "id": "round235_hankel",
+      "status": "green_two_terms_full_tail_and_moving_width",
+      "artifact": "rounds/codex-managed/gc-signed-sixth-dispersion/reviews/actual_bridge_review.md"
+    },
+    {
+      "id": "round235_restoration",
+      "status": "green_all_complements_conditional_only",
+      "artifact": "rounds/codex-managed/gc-signed-sixth-dispersion/reviews/complete_scope_review.md"
+    },
+    {
+      "id": "round235_blind_filter",
+      "status": "green_statement_only_signs_and_cutoffs",
+      "artifact": "rounds/codex-managed/gc-signed-sixth-dispersion/reports/blind_packet_control.md"
+    },
+    {
+      "id": "round235_hyperbola",
+      "status": "green_both_branches_squares_and_endpoints",
+      "artifact": "rounds/codex-managed/gc-signed-sixth-dispersion/reviews/arithmetic_dispersion_review.md"
+    },
+    {
+      "id": "round235_grouping",
+      "status": "green_exact_characters_and_bounded_variation",
+      "artifact": "rounds/codex-managed/gc-signed-sixth-dispersion/reviews/arithmetic_dispersion_review.md"
+    },
+    {
+      "id": "round235_paired_sector",
+      "status": "green_paired_and_same_denominator_paid",
+      "artifact": "rounds/codex-managed/gc-signed-sixth-dispersion/reviews/arithmetic_dispersion_review.md"
+    },
+    {
+      "id": "round235_actual_certificate",
+      "status": "green_full_window_signed_scope_verified",
+      "artifact": "rounds/codex-managed/gc-signed-sixth-dispersion/reviews/arithmetic_dispersion_review.md"
+    },
+    {
+      "id": "round235_countercontrol",
+      "status": "green_artificial_absolute_not_signed",
+      "artifact": "rounds/codex-managed/gc-signed-sixth-dispersion/reviews/conductor_blind_packet_review.md"
+    },
+    {
+      "id": "round235_exact_controls",
+      "status": "green_wolfram_local_agree_disclosures_retained",
+      "artifact": "rounds/codex-managed/gc-signed-sixth-dispersion/controls/control_manifest.md"
+    },
+    {
+      "id": "round235_source",
+      "status": "green_positive_real_two_term_hypotheses",
+      "artifact": "rounds/codex-managed/gc-signed-sixth-dispersion/controls/source_check.md"
+    },
+    {
+      "id": "round235_independent_scope",
+      "status": "green_no_reverse_blockwise_implication",
+      "artifact": "rounds/codex-managed/gc-signed-sixth-dispersion/reviews/complete_scope_review.md"
+    },
+    {
+      "id": "round235_first_gap",
+      "status": "green_signed_nonpaired_open_no_complete_gain",
+      "artifact": "rounds/codex-managed/gc-signed-sixth-dispersion/synthesis.md"
+    },
+    {
+      "id": "round235_history",
+      "status": "green_identity_only_protected_inventory",
+      "artifact": "rounds/codex-managed/gc-signed-sixth-dispersion/controls/starting_hashes.json"
+    }
+  ],
+  "interventions": [
+    "Initial reports frozen before all expanded cross-review; exact statement-only isolation preserved.",
+    "Complete bridge, actual arithmetic and source seams independently reviewed; blockwise S6 remains sufficient only.",
+    "Actual grouped tuple-absolute certificate obstructed with full-window signs paid; no signed-moment lower bound inferred.",
+    "Shared exact Wolfram checks independently reproduced locally with disclosed correction/warning; no numerical theorem certification.",
+    "One bounded signed-sixth attempt closes with explicit signed nonpaired gap and identity State Patch."
+  ],
+  "assessment": {
+    "actual_variance_and_hankel_paid": true,
+    "paired_and_single_denominator_sectors_paid": true,
+    "actual_absolute_grouped_certificate_refuted": true,
+    "signed_nonpaired_target_proved": false,
+    "complete_moment_gain": false,
+    "pointwise_gain": false,
+    "quarter_proved": false,
+    "independent_review_complete": true,
+    "prior_upper_tail_attempts_completed": 2,
+    "prior_connected_premise_attempts_completed": 1,
+    "signed_sixth_premise_attempts_completed": 1
+  },
+  "future_constraint": "No successor launched. Further signed-sixth work needs a quantitative estimate for actual nonpaired mixed-denominator rational correlations, including exact resonances and moving coefficients. Repeating filters, paired bounds, centering or tuplewise moduli is insufficient. A different complete mechanism requires a fresh bounded admission with all costs. Prior upper-tail two-attempt reassessment and connected obstruction remain in force.",
+  "status_summary": "# Round235 closed: signed sixth-order dispersion still needs a nonpaired estimate\n\n12 October2026 Asia/Shanghai. The bounded actual norm-band attempt uses gamma=13/125 and the sufficient M6(F) target193/500. All squarefree classes and band harmonics are retained. Their variance pays repeats at47/125. The correctly normalized odd Hankel packet keeps its exact moving width H(x)=2sqrt(x)/sqrt(N), and the complete error costs at most T N^(-6) in the sixth moment.\n\nThe actual two-branch divisor expansion groups reduced fractions into odd denominators and denominators divisible by4. Both character signs, the moving divisor cutoff, all tails and a signed square correction are retained. The paired sixth-order sector costs T^2 H0^3 log^3 T; the one-denominator exact-zero sector costs T^2 H0 log T. The first unpaid term is the remaining SIGNED nonpaired rational sextuple sum, including mixed-denominator exact relations, at T^(2+1/100+epsilon)H0^3.\n\nTaking each tuple in modulus cannot close it: for an actual interior block, the grouped balanced-six absolute certificate is at least cT^6 H0. This is not a lower bound on the signed moment. A separate statement-only constant-coefficient control has absolute mass of order L H^6 while its signed total is exactly zero.\n\nIf the signed target were proved uniformly for all required actual blocks, full restoration would give complete29/25 and sharp102/325. The exact interpolation margin is positive but only0.000201888311263119... . These gains were not proved. The accepted complete10beta, qualified pointwise0.314483175974..., all fixed-order qualifications, and open quarter/M1/M2/GAR/endpoints remain unchanged.\n\nThree initial reports were frozen before expanded review. Nonauthor reviews of actual bridge, arithmetic dispersion and complete scope passed, along with exact Wolfram checks independently reproduced locally. Computation remains diagnostic only. The identity State Patch changes no graph or proof-draft byte; protected history and earlier ledger/matrix entries are preserved.\n\nStrategy: any successor must estimate the actual signed nonpaired mixed-denominator correlations with their moving coefficients, or supply a different fully costed mechanism. Repeating centering, the filter, a paired estimate, or a tuplewise absolute certificate is insufficient. One bounded attempt on this signed-sixth premise is complete; the prior connected attempt and two-attempt upper-tail reassessment remain in force. Round236 is pending design with no tasks or automatic launch.\n\nDetails: rounds/codex-managed/gc-signed-sixth-dispersion/synthesis.md. Historical material below is retained evidence, not an instruction to relaunch a closed round.",
+  "barrier_summary": "# Round235 signed sixth-order strategy update\n\n- Full-band repeat budget47/125 and complete Hankel error budget T N^(-6) are paid; these are component reductions, not a new actual M6 estimate.\n- Exact grouping retains odd-q chi4(q) and4|q chi4(a) branches. Their coefficient square-sum O(H0 log T) pays the paired sixth sector. Single-denominator exact-zero tuples are also paid. Mixed-denominator nonpaired relations remain.\n- Natural center resolution is T^(-2). The actual moving-cutoff coefficients have bounded variation, yielding only a min(T^2,1/|Lambda|) tuple bound without additional endpoint work. Never assume arbitrarily rapid phase decay across jumps.\n- The actual interior-block grouped tuple-absolute certificate is at least cT^6 H0, far above T^(2+1/100)H0^3. This rejects that certificate, not the signed estimate or all dispersion methods. Full-window signs and negative contributions were checked.\n- The isolated constant-coefficient countercontrol has absolute mass of order L H^6 and exactly zero signed total. It is not an r2 counterexample. The different progression thresholds are1/b and1/(4b).\n- CRT full-period density leaves an unpaid discrepancy when the joint modulus exceeds the T^2 center window. Six factors share one center; no independence is granted.\n- S6 is sufficient blockwise; no reverse implication from the full band to each block is claimed. Only the full-band M6 and its one-sided distinct-six target are proved equivalent. The exact margin into29/25 is small and positive; the improvement itself is unproved.\n- Graph/draft unchanged. Prior source qualifications and the closed two-attempt upper-tail reassessment are preserved. A successor needs a new quantitative signed estimate, not a repeat of these paid identities.\n\nExact proofs and nonauthor reviews: rounds/codex-managed/gc-signed-sixth-dispersion/."
+}

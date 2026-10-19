@@ -1,0 +1,33 @@
+{
+  "round_index": 234,
+  "campaign_id": "gc-connected-cumulant-test",
+  "starting_graph_sha256": "dd743db27ed8eaac685d23dd2f92da743dd2d1742c2f150ddecf802dbbca5306",
+  "proof_obligations": {
+    "create": [],
+    "update": [],
+    "correct_rejected": [],
+    "reject": [],
+    "no_change": [
+      "GC-target",
+      "Conditional-bridge",
+      "M9",
+      "M9-M1",
+      "M9-M2",
+      "M9-endpoint-uniformity",
+      "M9-M1-global-angular-radial-estimate",
+      "M9-M1-global-lower-radial-signed-estimate",
+      "M9-M1-GAR-total-active-equivalence",
+      "GC-external-Li-Yang-theta-star",
+      "GC-complete-square-root-large-values-moment-bound",
+      "GC-complete-distinct-radical-twelfth-reduction",
+      "GC-complete-fixed-even-moment-distinct-absorption"
+    ]
+  },
+  "round_assessment": {
+    "terminal_label": "connected_correlation_test_closed_without_complete_gain",
+    "reason": "The actual signed disconnected contribution is paid at T^(1+epsilon), but the connected aggregate at29/25 remains unproved. The full-harmonic tuplewise absolute connected certificate is at least cT^(5/2), since its entire correction costs only T^(9/4+epsilon). Independent derivation, nonauthor reviews and exact Wolfram/local controls pass. No complete moment or pointwise improvement; identity State Patch and unchanged402-node graph/proof draft."
+  },
+  "reversibility": {
+    "rule": "Identity in-memory application, inverse and replay; graph and proof-draft bytes are never rewritten."
+  }
+}

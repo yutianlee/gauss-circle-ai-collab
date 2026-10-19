@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "campaign_id": "gc-research-status-strategy-reset",
-  "promotion_status": "round230_closed_identity_patch_strategy_revised_no_new_complete_bound",
-  "graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+  "campaign_id": "gc-signed-sixth-dispersion",
+  "promotion_status": "round235_identity_closure_signed_sixth",
+  "graph_sha256": "dd743db27ed8eaac685d23dd2f92da743dd2d1742c2f150ddecf802dbbca5306",
   "gates": [
     {
       "id": "literal_lower_reciprocal_antecedent",
@@ -7533,6 +7533,316 @@
       "id": "round230_identity_patch_scope",
       "status": "green",
       "artifact": "rounds/codex-managed/gc-research-status-strategy-reset/controls/closure_preflight.json"
+    },
+    {
+      "id": "round231_actual_family",
+      "status": "green_actual_full_band_and_fixed_coefficients",
+      "artifact": "rounds/codex-managed/gc-actual-upper-tail-a/briefs/actual_interface.md"
+    },
+    {
+      "id": "round231_second_poisson",
+      "status": "green_exact_sign_factor_and_distinct_fourier_indices",
+      "artifact": "rounds/codex-managed/gc-actual-upper-tail-a/reviews/independent_signed_tail_review.md"
+    },
+    {
+      "id": "round231_actual_covariance",
+      "status": "green_scoped_positive_negative_disjoint_controls",
+      "artifact": "rounds/codex-managed/gc-actual-upper-tail-a/reviews/independent_actual_controls_review.md"
+    },
+    {
+      "id": "round231_blind_independence",
+      "status": "green_statement_only_frozen_before_context_expansion",
+      "artifact": "rounds/codex-managed/gc-actual-upper-tail-a/reports/blind_odd_kernel_covariance.md"
+    },
+    {
+      "id": "round231_blind_analytic_review",
+      "status": "green_exact_covariance_boundaries_and_discrepancy",
+      "artifact": "rounds/codex-managed/gc-actual-upper-tail-a/reviews/conductor_blind_analytic_review.md"
+    },
+    {
+      "id": "round231_exceptional_set",
+      "status": "green_sufficient_inequality_explicitly_unproved",
+      "artifact": "rounds/codex-managed/gc-actual-upper-tail-a/reviews/independent_signed_tail_review.md"
+    },
+    {
+      "id": "round231_all_scales_errors",
+      "status": "green_complete_band_tail_and_restricted_error_paid",
+      "artifact": "rounds/codex-managed/gc-actual-upper-tail-a/reviews/independent_signed_tail_review.md"
+    },
+    {
+      "id": "round231_complete_restoration",
+      "status": "green_both_tails_boundary_ceiling_and_complements",
+      "artifact": "rounds/codex-managed/gc-actual-upper-tail-a/reviews/independent_complete_restoration.md"
+    },
+    {
+      "id": "round231_theta_repair",
+      "status": "green_localized_repair_independently_verified",
+      "artifact": "rounds/codex-managed/gc-actual-upper-tail-a/candidates/conductor_seam_repairs.md"
+    },
+    {
+      "id": "round231_finite_controls",
+      "status": "green_exact_and_detuned_diagnostic_controls",
+      "artifact": "rounds/codex-managed/gc-actual-upper-tail-a/controls/control_manifest.md"
+    },
+    {
+      "id": "round231_scope_and_no_gain",
+      "status": "green_no_actual_tail_disproof_or_unearned_promotion",
+      "artifact": "rounds/codex-managed/gc-actual-upper-tail-a/synthesis.md"
+    },
+    {
+      "id": "round231_source_scope",
+      "status": "green_no_new_external_theorem_import",
+      "artifact": "rounds/codex-managed/gc-actual-upper-tail-a/synthesis.md"
+    },
+    {
+      "id": "round232_actual_family",
+      "status": "green_actual_full_band_actual_E_all_q",
+      "artifact": "rounds/codex-managed/gc-upper-tail-separated-products/briefs/actual_interface.md"
+    },
+    {
+      "id": "round232_near_payment",
+      "status": "green_all_product_close_absolute_bound",
+      "artifact": "rounds/codex-managed/gc-upper-tail-separated-products/reviews/independent_near_payment_review.md"
+    },
+    {
+      "id": "round232_high_gcd",
+      "status": "green_distinct_pairs_and_all_original_labels",
+      "artifact": "rounds/codex-managed/gc-upper-tail-separated-products/reviews/independent_separated_attack_review.md"
+    },
+    {
+      "id": "round232_atomic_tails",
+      "status": "green_absolute_elementary_local_and_exterior_mixed_tails",
+      "artifact": "rounds/codex-managed/gc-upper-tail-separated-products/reviews/independent_collision_ledger_review.md"
+    },
+    {
+      "id": "round232_blind_isolation",
+      "status": "green_initial_statement_only_frozen_before_expansion",
+      "artifact": "rounds/codex-managed/gc-upper-tail-separated-products/reports/blind_packet_band.md"
+    },
+    {
+      "id": "round232_blind_lemma",
+      "status": "green_band_cross_families_nonlinear_scope",
+      "artifact": "rounds/codex-managed/gc-upper-tail-separated-products/reviews/conductor_blind_band_review.md"
+    },
+    {
+      "id": "round232_small_gcd_control",
+      "status": "green_component_uniform_scope_only_not_actual_E",
+      "artifact": "rounds/codex-managed/gc-upper-tail-separated-products/reviews/independent_separated_attack_review.md"
+    },
+    {
+      "id": "round232_residual_identity",
+      "status": "green_disjoint_sectors_original_E_and_errors",
+      "artifact": "rounds/codex-managed/gc-upper-tail-separated-products/reviews/independent_collision_ledger_review.md"
+    },
+    {
+      "id": "round232_complete_restoration",
+      "status": "green_conditional_both_tails_threshold_and_full_owners",
+      "artifact": "rounds/codex-managed/gc-upper-tail-separated-products/reviews/independent_near_payment_review.md"
+    },
+    {
+      "id": "round232_finite_controls",
+      "status": "green_exact_diagnostic_checks_pass",
+      "artifact": "rounds/codex-managed/gc-upper-tail-separated-products/controls/control_manifest.md"
+    },
+    {
+      "id": "round232_strategy_reassessment",
+      "status": "green_two_attempt_review_completed_no_automatic_successor",
+      "artifact": "rounds/codex-managed/gc-upper-tail-separated-products/candidates/strategy_reassessment.md"
+    },
+    {
+      "id": "round232_source_scope_no_gain",
+      "status": "green_no_new_import_no_complete_promotion",
+      "artifact": "rounds/codex-managed/gc-upper-tail-separated-products/synthesis.md"
+    },
+    {
+      "id": "round233_finite_identity",
+      "status": "green_self_contained_permutation_proof",
+      "artifact": "rounds/codex-managed/gc-fixed-order-moment-absorption/reviews/conductor_blind_absorption_review.md"
+    },
+    {
+      "id": "round233_blind_initial",
+      "status": "green_statement_only_frozen_before_expansion",
+      "artifact": "rounds/codex-managed/gc-fixed-order-moment-absorption/reports/blind_partition_absorption.md"
+    },
+    {
+      "id": "round233_finite_final_hash",
+      "status": "green_unchanged_finite_integral_scope",
+      "artifact": "rounds/codex-managed/gc-fixed-order-moment-absorption/reviews/finite_absorption_final_hash_supplement.md"
+    },
+    {
+      "id": "round233_actual_family",
+      "status": "green_all_harmonics_square_sum_and_real_cutoffs",
+      "artifact": "rounds/codex-managed/gc-fixed-order-moment-absorption/reviews/independent_actual_kernel_review.md"
+    },
+    {
+      "id": "round233_signed_integral",
+      "status": "green_negative_part_and_nonnegative_offset",
+      "artifact": "rounds/codex-managed/gc-fixed-order-moment-absorption/reviews/independent_scope_restoration_review.md"
+    },
+    {
+      "id": "round233_head_refinement",
+      "status": "green_A13_repaired_range_verified",
+      "artifact": "rounds/codex-managed/gc-fixed-order-moment-absorption/reviews/independent_actual_kernel_review.md"
+    },
+    {
+      "id": "round233_sharp_restoration",
+      "status": "green_amplitude_jacobian_smoothing_persistence",
+      "artifact": "rounds/codex-managed/gc-fixed-order-moment-absorption/reviews/independent_scope_restoration_review.md"
+    },
+    {
+      "id": "round233_fixed_order",
+      "status": "green_p_selected_before_T_no_uniformity_claim",
+      "artifact": "rounds/codex-managed/gc-fixed-order-moment-absorption/reviews/independent_scope_restoration_review.md"
+    },
+    {
+      "id": "round233_wolfram_controls",
+      "status": "green_exact_coefficients_independently_reproduced",
+      "artifact": "rounds/codex-managed/gc-fixed-order-moment-absorption/controls/control_manifest.md"
+    },
+    {
+      "id": "round233_repair_provenance",
+      "status": "green_original_retained_final_hash_reviewed",
+      "artifact": "rounds/codex-managed/gc-fixed-order-moment-absorption/candidates/review_repair_record.md"
+    },
+    {
+      "id": "round233_source_scope",
+      "status": "green_inherited_qualifications_no_new_import",
+      "artifact": "rounds/codex-managed/gc-fixed-order-moment-absorption/synthesis.md"
+    },
+    {
+      "id": "round233_reduction_only",
+      "status": "green_signed_targets_and_complete_exponents_unchanged",
+      "artifact": "rounds/codex-managed/gc-fixed-order-moment-absorption/synthesis.md"
+    },
+    {
+      "id": "round234_normalization",
+      "status": "green_single_outer_radius_mass",
+      "artifact": "rounds/codex-managed/gc-connected-cumulant-test/reviews/complete_scope_review.md"
+    },
+    {
+      "id": "round234_rapid_pairs",
+      "status": "green_distinct_classes_and_full_tail",
+      "artifact": "rounds/codex-managed/gc-connected-cumulant-test/reviews/signed_remainder_review.md"
+    },
+    {
+      "id": "round234_blind_collision",
+      "status": "green_statement_only_uniform_bound",
+      "artifact": "rounds/codex-managed/gc-connected-cumulant-test/reports/blind_collision_bound.md"
+    },
+    {
+      "id": "round234_signed_remainder",
+      "status": "green_actual_moments_through_nine",
+      "artifact": "rounds/codex-managed/gc-connected-cumulant-test/reviews/signed_remainder_review.md"
+    },
+    {
+      "id": "round234_absolute_blocks",
+      "status": "green_all_scales_and_schwartz_tail",
+      "artifact": "rounds/codex-managed/gc-connected-cumulant-test/reviews/certificate_review.md"
+    },
+    {
+      "id": "round234_harmonic_lower",
+      "status": "green_actual_squarefree_mass_and_full_harmonics",
+      "artifact": "rounds/codex-managed/gc-connected-cumulant-test/reviews/certificate_review.md"
+    },
+    {
+      "id": "round234_cumulant_transfer",
+      "status": "green_absolute_correction_below_lower_mass",
+      "artifact": "rounds/codex-managed/gc-connected-cumulant-test/reviews/certificate_review.md"
+    },
+    {
+      "id": "round234_restoration",
+      "status": "green_conditional_only_with_all_paid_owners",
+      "artifact": "rounds/codex-managed/gc-connected-cumulant-test/reviews/complete_scope_review.md"
+    },
+    {
+      "id": "round234_finite_controls",
+      "status": "green_wolfram_and_local_exact_agree",
+      "artifact": "rounds/codex-managed/gc-connected-cumulant-test/controls/control_manifest.md"
+    },
+    {
+      "id": "round234_countercontrols",
+      "status": "green_no_independence_or_absolute_swap",
+      "artifact": "rounds/codex-managed/gc-connected-cumulant-test/reviews/conductor_blind_collision_review.md"
+    },
+    {
+      "id": "round234_first_gap",
+      "status": "green_signed_K12_unproved_no_complete_gain",
+      "artifact": "rounds/codex-managed/gc-connected-cumulant-test/synthesis.md"
+    },
+    {
+      "id": "round234_state_history",
+      "status": "green_identity_only_protected_inventory",
+      "artifact": "rounds/codex-managed/gc-connected-cumulant-test/controls/starting_hashes.json"
+    },
+    {
+      "id": "round235_actual_variance",
+      "status": "green_all_classes_harmonics_paid",
+      "artifact": "rounds/codex-managed/gc-signed-sixth-dispersion/reviews/actual_bridge_review.md"
+    },
+    {
+      "id": "round235_hankel",
+      "status": "green_two_terms_full_tail_and_moving_width",
+      "artifact": "rounds/codex-managed/gc-signed-sixth-dispersion/reviews/actual_bridge_review.md"
+    },
+    {
+      "id": "round235_restoration",
+      "status": "green_all_complements_conditional_only",
+      "artifact": "rounds/codex-managed/gc-signed-sixth-dispersion/reviews/complete_scope_review.md"
+    },
+    {
+      "id": "round235_blind_filter",
+      "status": "green_statement_only_signs_and_cutoffs",
+      "artifact": "rounds/codex-managed/gc-signed-sixth-dispersion/reports/blind_packet_control.md"
+    },
+    {
+      "id": "round235_hyperbola",
+      "status": "green_both_branches_squares_and_endpoints",
+      "artifact": "rounds/codex-managed/gc-signed-sixth-dispersion/reviews/arithmetic_dispersion_review.md"
+    },
+    {
+      "id": "round235_grouping",
+      "status": "green_exact_characters_and_bounded_variation",
+      "artifact": "rounds/codex-managed/gc-signed-sixth-dispersion/reviews/arithmetic_dispersion_review.md"
+    },
+    {
+      "id": "round235_paired_sector",
+      "status": "green_paired_and_same_denominator_paid",
+      "artifact": "rounds/codex-managed/gc-signed-sixth-dispersion/reviews/arithmetic_dispersion_review.md"
+    },
+    {
+      "id": "round235_actual_certificate",
+      "status": "green_full_window_signed_scope_verified",
+      "artifact": "rounds/codex-managed/gc-signed-sixth-dispersion/reviews/arithmetic_dispersion_review.md"
+    },
+    {
+      "id": "round235_countercontrol",
+      "status": "green_artificial_absolute_not_signed",
+      "artifact": "rounds/codex-managed/gc-signed-sixth-dispersion/reviews/conductor_blind_packet_review.md"
+    },
+    {
+      "id": "round235_exact_controls",
+      "status": "green_wolfram_local_agree_disclosures_retained",
+      "artifact": "rounds/codex-managed/gc-signed-sixth-dispersion/controls/control_manifest.md"
+    },
+    {
+      "id": "round235_source",
+      "status": "green_positive_real_two_term_hypotheses",
+      "artifact": "rounds/codex-managed/gc-signed-sixth-dispersion/controls/source_check.md"
+    },
+    {
+      "id": "round235_independent_scope",
+      "status": "green_no_reverse_blockwise_implication",
+      "artifact": "rounds/codex-managed/gc-signed-sixth-dispersion/reviews/complete_scope_review.md"
+    },
+    {
+      "id": "round235_first_gap",
+      "status": "green_signed_nonpaired_open_no_complete_gain",
+      "artifact": "rounds/codex-managed/gc-signed-sixth-dispersion/synthesis.md"
+    },
+    {
+      "id": "round235_history",
+      "status": "green_identity_only_protected_inventory",
+      "artifact": "rounds/codex-managed/gc-signed-sixth-dispersion/controls/starting_hashes.json"
     }
   ],
   "decision_rule": "Current-primary revision and source applications, status provenance, fixed-order restoration and revised strategy reviewed; no full-bound gain or theorem promotion.",

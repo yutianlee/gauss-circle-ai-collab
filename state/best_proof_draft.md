@@ -15662,3 +15662,17 @@ are unchanged. The complete signed estimate and quarter theorem remain
 open. See `proofs/kernels/gc_distinct_radical_absolute_certificate_obstruction.md`.
 The conditional moment-family analysis is strategy evidence, not an
 accepted new moment bound.
+
+
+## Round233 accepted fixed-even-order relative reduction
+
+The accepted node `GC-complete-fixed-even-moment-distinct-absorption` extends the complete signed distinct-class interface to every fixed even p>=2. For the actual complete squarefree-class tail, with Z=sum f_d, V=sum f_d^2 and E_p the ordered distinct polynomial,
+
+    integral w|Z^p-E_p|<=delta M_p(Z)+C_(p,delta) integral w V^(p/2).
+
+The variance-power term is O_(p,epsilon)(T Q^(-p/4+epsilon)). At Q=1 it and the complete small-class head cost O_p(T). Hence full B_T and Z_Q moment bounds at any exponent b>=1 are equivalent to a one-sided upper bound on signed I_p=integral w E_p. The negative part is explicitly paid; I_p is not assumed positive. All harmonics and tails remain.
+
+For Q=floor(T^(1/p)), the elementary head floor is5/4, or h_p=1+(p-136/13)_+/(4p) using the accepted distribution refinement restricted to1<=Q<=T. Full sharp reconstruction gives pointwise exponent1/4+(1+2b)/(4(p+1)) for a paid complete b>=1. Thus actual signed estimates b_p=o(p) along unbounded fixed even orders would imply quarter. Those estimates remain unproved; p must be chosen before T.
+
+This adds a reduction only. It does not improve any complete moment or pointwise exponent, prove target A, or close M1/M2/GAR/endpoints. Round216's stronger additive p12 statement and every older node remain unchanged. Proof: `proofs/kernels/gc_complete_fixed_even_moment_distinct_absorption.md`; review and validation: `rounds/codex-managed/gc-fixed-order-moment-absorption/`.
+

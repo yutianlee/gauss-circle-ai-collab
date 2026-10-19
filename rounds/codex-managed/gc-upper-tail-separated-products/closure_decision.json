@@ -1,0 +1,108 @@
+{
+  "round_index": 232,
+  "campaign_id": "gc-upper-tail-separated-products",
+  "conductor_review_complete": true,
+  "result": "separated_product_attempt_closed_without_complete_gain",
+  "reason": "Nearby products cost T^(-3/250+epsilon), and distinct high-gcd products cost T^(-9/500+epsilon), with all atomic tails and errors paid. The actual separated small-gcd signed energy saving a*=10beta-32/25 remains open. Independent reviews pass with explicit atomic-tail and component-control scope supplements. The required two-attempt strategy reassessment is complete; no complete moment or pointwise gain and no accepted graph change.",
+  "reviewed_artifact_hashes": {
+    "rounds/codex-managed/gc-upper-tail-separated-products/reports/actual_near_product_payment.md": "a4943d33174f49270506dcde6fb81a58412870daeec3dcf2c2686e175985a92a",
+    "rounds/codex-managed/gc-upper-tail-separated-products/reports/blind_packet_band.md": "e377760753ee31525af78ced5b0ed488b779070b1822231bcea3fa8d5cb5d087",
+    "rounds/codex-managed/gc-upper-tail-separated-products/reports/separated_product_attack.md": "e8974ef88d0c24e675cbfaf3328655a9cdff292fbff2999e5b9b79019be5fffc",
+    "rounds/codex-managed/gc-upper-tail-separated-products/reviews/conductor_blind_band_review.md": "6fc9a95d3a66c665aa8508ae4265798dbd86caaaefc2cad8e71eb7be4483bd14",
+    "rounds/codex-managed/gc-upper-tail-separated-products/reviews/independent_collision_ledger_review.md": "0dda72b831a6bb160fc14aded69f808c58740330659da09a663260667a80de14",
+    "rounds/codex-managed/gc-upper-tail-separated-products/reviews/independent_near_payment_review.md": "c86d66d3c55b5fd383a633f4ff623e4693ccd6feb2093fd9fbc93499db2d8ac5",
+    "rounds/codex-managed/gc-upper-tail-separated-products/reviews/independent_separated_attack_review.md": "5e1376071332139a25c392b503f737f02d9e9db65514667f8448fe6b4835bc9e",
+    "rounds/codex-managed/gc-upper-tail-separated-products/candidates/conductor_collision_ledger.md": "153228f0f23256fb7c65a8e155d5134c53b6c11ad643fef2494b3cb7fbd28085",
+    "rounds/codex-managed/gc-upper-tail-separated-products/candidates/strategy_reassessment.md": "286415c548b027b986f939d17ef9654d51a4d5083253d2df09117d656a20c476",
+    "rounds/codex-managed/gc-upper-tail-separated-products/briefs/actual_interface.md": "c52e963aa8836fc7663c0528e170f4271396a907eafbee1ecc682db5d5885607",
+    "rounds/codex-managed/gc-upper-tail-separated-products/briefs/actual_near_product_payment.md": "a3642ead79102b9dbc7bd358e84c13dbaab723594231ed864fe8afa69415b1e0",
+    "rounds/codex-managed/gc-upper-tail-separated-products/briefs/blind_packet_band.md": "2e460d93278ba95e2e9a9b1b07903e3e4ec6a4ad72fdf7b860733e615c9ee0c7",
+    "rounds/codex-managed/gc-upper-tail-separated-products/briefs/isolated_packet_band.md": "6c1d32bb503d2136c059c4a52dcb6bc60da5b536016cb6b0a75b716b440f3456",
+    "rounds/codex-managed/gc-upper-tail-separated-products/briefs/separated_product_attack.md": "c67d5a03c75b25fc62b260341a63120aef90e36aba195a6f8d83c8f55f521aac",
+    "rounds/codex-managed/gc-upper-tail-separated-products/synthesis.md": "be79d07cc2c75e689c8296a3f0494267015f607c2a104a3434e651172bfe8835",
+    "rounds/codex-managed/gc-upper-tail-separated-products/controls/control_manifest.md": "f13c0f06d50e989474aa33212675fa0377d3018603a83ddb9e98cb513eb658ff",
+    "rounds/codex-managed/gc-upper-tail-separated-products/controls/exact_controls.py": "17a4d90ea8a6499608dd632578a69f626c965661bd2c28de883e79169e38d334",
+    "rounds/codex-managed/gc-upper-tail-separated-products/controls/exact_controls.json": "4fa3b9ad12d9e24ea6fc652a6de2d2b8ddd02c509fc9e9e9fd4d5cd3102f19b5"
+  },
+  "gates": [
+    {
+      "id": "round232_actual_family",
+      "status": "green_actual_full_band_actual_E_all_q",
+      "artifact": "rounds/codex-managed/gc-upper-tail-separated-products/briefs/actual_interface.md"
+    },
+    {
+      "id": "round232_near_payment",
+      "status": "green_all_product_close_absolute_bound",
+      "artifact": "rounds/codex-managed/gc-upper-tail-separated-products/reviews/independent_near_payment_review.md"
+    },
+    {
+      "id": "round232_high_gcd",
+      "status": "green_distinct_pairs_and_all_original_labels",
+      "artifact": "rounds/codex-managed/gc-upper-tail-separated-products/reviews/independent_separated_attack_review.md"
+    },
+    {
+      "id": "round232_atomic_tails",
+      "status": "green_absolute_elementary_local_and_exterior_mixed_tails",
+      "artifact": "rounds/codex-managed/gc-upper-tail-separated-products/reviews/independent_collision_ledger_review.md"
+    },
+    {
+      "id": "round232_blind_isolation",
+      "status": "green_initial_statement_only_frozen_before_expansion",
+      "artifact": "rounds/codex-managed/gc-upper-tail-separated-products/reports/blind_packet_band.md"
+    },
+    {
+      "id": "round232_blind_lemma",
+      "status": "green_band_cross_families_nonlinear_scope",
+      "artifact": "rounds/codex-managed/gc-upper-tail-separated-products/reviews/conductor_blind_band_review.md"
+    },
+    {
+      "id": "round232_small_gcd_control",
+      "status": "green_component_uniform_scope_only_not_actual_E",
+      "artifact": "rounds/codex-managed/gc-upper-tail-separated-products/reviews/independent_separated_attack_review.md"
+    },
+    {
+      "id": "round232_residual_identity",
+      "status": "green_disjoint_sectors_original_E_and_errors",
+      "artifact": "rounds/codex-managed/gc-upper-tail-separated-products/reviews/independent_collision_ledger_review.md"
+    },
+    {
+      "id": "round232_complete_restoration",
+      "status": "green_conditional_both_tails_threshold_and_full_owners",
+      "artifact": "rounds/codex-managed/gc-upper-tail-separated-products/reviews/independent_near_payment_review.md"
+    },
+    {
+      "id": "round232_finite_controls",
+      "status": "green_exact_diagnostic_checks_pass",
+      "artifact": "rounds/codex-managed/gc-upper-tail-separated-products/controls/control_manifest.md"
+    },
+    {
+      "id": "round232_strategy_reassessment",
+      "status": "green_two_attempt_review_completed_no_automatic_successor",
+      "artifact": "rounds/codex-managed/gc-upper-tail-separated-products/candidates/strategy_reassessment.md"
+    },
+    {
+      "id": "round232_source_scope_no_gain",
+      "status": "green_no_new_import_no_complete_promotion",
+      "artifact": "rounds/codex-managed/gc-upper-tail-separated-products/synthesis.md"
+    }
+  ],
+  "interventions": [
+    "Three initial tasks and one bounded nonauthor review cycle completed; all initial reports remain frozen.",
+    "Explicit absolute-elementary tail supplement and precise smooth-component control quantifier incorporated in synthesis.",
+    "Mandatory two-attempt strategy reassessment completed before identity closure; no automatic successor."
+  ],
+  "assessment": {
+    "complete_moment_gain": false,
+    "pointwise_gain": false,
+    "target_A_proved": false,
+    "target_A_disproved": false,
+    "new_actual_component_bounds": true,
+    "independent_review_complete": true,
+    "attempts_on_current_premise_completed": 2,
+    "mandatory_strategy_reassessment_complete": true,
+    "terminal_label": "separated_product_attempt_closed_without_complete_gain"
+  },
+  "future_constraint": "No successor designed or launched. Two same-premise attempts and mandatory reassessment are complete. Before a new analytic attempt, specify a materially different aggregate arithmetic mechanism or complete parent, its precise conjectured lemma, previous obstruction bypassed, independently checked complete costs and falsification controls. A new proof is not required for exploratory admission. Cutoff changes and equivalent transforms do not reset attempt2.",
+  "status_summary": "# Round232 closed: two collision sectors paid; complete upper-tail gain open\n\n12 October2026 Asia/Shanghai. The continued bounded attempt is complete, with three frozen reports, independent review, exact finite controls and the mandatory reassessment after attempt2. Nearby products at distance at most sqrt(T) cost T^(-3/250+epsilon); the remaining distinct products with gcd(h,h')>=T^(1/4) cost T^(-9/500+epsilon). Both lie below the required energy power-a*, a*=10beta-32/25=0.009663519481... . All modes, elementary cross terms, tails, errors and the original exceptional set are retained.\n\nThe precise missing estimate is the one-sided signed aggregate over product gaps>sqrt(T) and gcd(h,h')<T^(1/4), on E={|F_(16/125)|>T^(16/125)}. Q_E(F) equals that remainder up to O(T^(-3/250+epsilon)). The actual small-gcd control rejects only a uniform pointwise alternation/variation certificate across smooth components; it neither disproves target A nor estimates the full event. Component bounds remain reviewed evidence, not accepted complete mathematics.\n\nAn identity State Patch preserves the401-node graph and proof draft. Complete10beta=1.289663519481... and the pointwise benchmark0.314483175974... remain unchanged. Complete32/25 is still conditional and would give the weaker pointwise207/650. Quarter, M1/M2 and endpoints remain open; Round216 is only its stated twelfth-order reduction.\n\nThe two-attempt review ends this elementary local-count/termwise-alternation cycle. Any new attempt needs a concrete aggregate arithmetic mechanism or a different complete parent, with an explicit conjectured lemma, a bypass of existing controls, full conditional costs and falsification tests. It need not prove its lemma before exploratory admission. Equivalent transforms or cutoff changes do not reset the attempt count. Round233 is pending design, has no tasks and is not automatically launched.\n\nAuthoritative record: rounds/codex-managed/gc-upper-tail-separated-products/synthesis.md. Strategy reassessment: candidates/strategy_reassessment.md in that campaign. Mechanical closure: controls/closure_validation.json. Historical snapshots below are retained evidence, not current instructions.",
+  "barrier_summary": "# Round232 closed barrier packet\n\n- Near products up to sqrt(T) and separated gcd(h,h')>=T^(1/4) are paid at powers-3/250 and-9/500 on the original E. Exact products are in the first sector; preserve disjoint ownership.\n- Remaining signed small-gcd separated energy at-a*=-(10beta-32/25) is OPEN. The full signed zero-power bound cannot be used to cap an unsigned subcollection; its elementary absolute certificate costs T^(29/125+epsilon).\n- Apply local product truncation to A_p=sum of absolute elementary labels. Rapid atomic l1 tails pay every mixed term. Grouped cancellation alone cannot control an h-selected sector.\n- The close matrix is not PSD. Blind nonlinear diagonal interpolation is valid, but a cost-free linear transfer is false at generic-envelope scope.\n- Small-gcd progressions are wider than the packets; odd-odd CRT centers need not vary slowly across differences. The actual h=T,h'=T+4 control refutes only smooth-component-uniform pointwise alternation/variation savings, including fixed refinements. No actual E lower bound or unsplit/full aggregate impossibility follows.\n- Actual coefficients, all odd modes, real branches, both tails, threshold, exact complementary owners and selected-set errors remain mandatory. Complete32/25 remains conditional and is not a pointwise benchmark gain.\n- Two unchanged-premise attempts are complete and the required reassessment is recorded. Do not auto-launch a third local-cutoff or transform variant. New exploratory admission requires a materially different quantified mechanism; it may start from a precise conjectured lemma.\n\nEvidence: rounds/codex-managed/gc-upper-tail-separated-products/synthesis.md and its reports, independent reviews, controls and strategy reassessment."
+}

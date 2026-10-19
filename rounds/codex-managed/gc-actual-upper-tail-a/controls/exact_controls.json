@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "evidence_level": "diagnostic_only",
+  "counts": {
+    "same_two_adic_covariance": 49664,
+    "mixed_two_adic_alternation": 97792,
+    "exact_coincidences": 680,
+    "full_product_character_vs_literal_lattice": 512,
+    "real_resonance_character_identity": 528
+  },
+  "parameters": {
+    "h_and_hprime": "1..24",
+    "q_and_qprime": "positive odd1..31",
+    "v": "1..512"
+  },
+  "exact_budget": {
+    "gamma": "16/125",
+    "target": "32/25",
+    "A_first_margin_lower_bound": "67296103754373/200000000000000000",
+    "second_margin_lower_bound": "106067296103754373/1300000000000000000"
+  },
+  "limitations": "Exact finite algebra and exponent arithmetic only. Full-product identities do not replace actual partial weighted products. No actual tail estimate or asymptotic covariance bound is certified."
+}

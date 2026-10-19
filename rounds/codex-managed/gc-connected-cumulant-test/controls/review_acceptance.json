@@ -1,0 +1,18 @@
+{
+  "all_required_seams_passed": true,
+  "conductor_read_all_reviews": true,
+  "accepted_hashes": {
+    "reviews/signed_remainder_review.md": "f36d256950dd20aa4e0742329ddb10c1b4d12355da23d9c12ac1bb1644d33a22",
+    "reviews/certificate_review.md": "e33021d42fb3417998284d9bc7ca99103278f24ddaa49f5e758070082272ee0f",
+    "reviews/complete_scope_review.md": "ccdf6c5a7f6c92f0957866e2e3f26efa14ee5c896b87f1ae5a0295785c291223",
+    "candidates/conductor_connected_test.md": "3a443b5e63e826511f99e9428438018e5fc41f358a014fc15d9b8bb75233ae97"
+  },
+  "review_coverage": {
+    "signed_remainder": "Independent certificate analyst verifies nonauthored collision/moment proof and actual binding.",
+    "actual_certificate": "Independent signed-remainder analyst verifies actual Gram/shell lower proof and all harmonic/tail seams.",
+    "complete_scope": "Initially blind analyst verifies full restoration and scope after frozen isolated derivation; C10 proof covered separately."
+  },
+  "candidate_repair_required": false,
+  "control_provenance_note": "Two reviews record the pre-append control manifest9254a1...; the final scope review binds current637fff... including the discovery diagnostic repair disclosure. All bind current exact result89e888... and unchanged mathematical candidate. No mathematical statement changed.",
+  "decision": "Retain reviewed evidence; identity State Patch; no new complete gain or graph promotion."
+}

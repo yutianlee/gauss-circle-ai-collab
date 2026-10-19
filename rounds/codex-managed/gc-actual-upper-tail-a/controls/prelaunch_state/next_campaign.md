@@ -1,0 +1,13 @@
+# Current research status - central balanced cancellation test closed
+
+11 October 2026. The bounded Round231 continuation tested the actual central balanced signed residual through reciprocal character cancellation, a primary bilinear theorem, and an independently derived smooth Hankel tail. No complete moment improvement was obtained. The accepted complete bound remains M12(B_T)<<T^(10beta+epsilon), 10beta=1.289663519481... .
+
+The reviewed reciprocal rectangle bound is T^epsilon[(T/N)^(1/2)+T^(-1/2)]. Its exact quarter-frequency leading term vanishes after taking the real circle phase, while a physical detuning gives a coherent real individual fibre. Thus uniform per-frequency square-root cancellation is false; no full-wave or moment lower bound follows. Cancellation across the reciprocal frequencies or in the radius average remains unquantified.
+
+KRW Proposition5 genuinely applies to the sharp moving divisor intervals after logarithmic completion, but its leading normalized term T^(1/8)N^(1/16) is insufficient. Even its optimistic combination with the head and Hankel bounds reaches ceiling1/6 and moment certificate5/3. This rejects that certificate only.
+
+Historical correction: the independently recovered smooth tail and norm band were already reviewed in Rounds203/205/208 and are not new gains. Combining the inherited band with the recent adaptive factor cutoff gives an exact owner C_gamma on T^(4gamma)<n<2T^(1-2gamma), d,m>=T^(2gamma-13/42)x(n)^(29/84). All complementary owners are paid at m(gamma)=max(1,10gamma,1+20gamma/13). At gamma16/125, proving M12(C_gamma)<<T^(32/25+epsilon) would improve the complete bound to1.28; that estimate is still unproved. The preferred gamma13/125 target29/25 remains open as well.
+
+Three frozen reports, three nonauthor reviews, a forward correction attachment, and independent exact finite controls are complete. Corrections cover the D=1/2 logarithm, real resonance scope, and the complementary29/25 moment floor. Earlier evidence remains immutable. The preceding residual packet's adaptive-cutoff proof, uniform all-polynomial saving cap1/20, conditional inverse-exponent targets and coefficient-energy obstruction retain their original limited scopes.
+
+Analytic Round231 remains pending_design, with no tasks launched, State Patch, accepted promotion, pointwise gain or automatic successor. The graph, proof draft, accepted kernels, validation matrices, active closed Round230 manifest and ledger are unchanged. The missing input is a quantitative signed estimate for the actual central owner. Decision: strategy/round231_balanced_cancellation/conductor_decision.md. Corrected report scope: strategy/round231_balanced_cancellation/conductor_seam_repairs.md.

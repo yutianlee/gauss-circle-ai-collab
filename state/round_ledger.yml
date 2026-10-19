@@ -2,7 +2,7 @@
   "schema_version": 1,
   "research_program": "gauss-circle-proof-development",
   "conductor": "Codex",
-  "active_round": 230,
+  "active_round": 235,
   "archive_note": "Rounds 1-25 are documented in their campaign plan, synthesis, state patch, and historical project summary artifacts. This compact ledger retains the immediately active research chain after a repair of the derived ledger file in Round 28.",
   "rounds": [
     {
@@ -9691,6 +9691,252 @@
       },
       "completed_at": "2026-10-11T02:22:08.225186+00:00",
       "next_round": 231
+    },
+    {
+      "round_index": 231,
+      "campaign_id": "gc-actual-upper-tail-a",
+      "type": "bounded_actual_upper_tail_analytic_attempt",
+      "status": "complete",
+      "objective": "Can actual signed reciprocal-frequency and radius information improve upper-tail target A, or its integrated version, sufficiently to prove complete moment32/25? If the tested mechanism fails, what exact quantitative seam remains?",
+      "tasks": [
+        {
+          "id": "signed_upper_tail_attack",
+          "role": "discovery",
+          "status": "complete"
+        },
+        {
+          "id": "resonance_hostile_controls",
+          "role": "barrier_no_go",
+          "status": "complete"
+        },
+        {
+          "id": "blind_odd_kernel_covariance",
+          "role": "blind_rederiver",
+          "status": "complete"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 95,
+        "numerical_experimental_maximum_percent": 5,
+        "planned_numerical_percent": 3,
+        "budget": "Three bounded initial tasks (about10-12 minutes each), conductor analytic restoration and exact finite controls, one independent review/repair cycle. No automatic successor."
+      },
+      "starting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+      "exit_labels": [
+        "upper_tail_A_complete_gain_requires_promotion",
+        "upper_tail_A_attempt_closed_without_complete_gain"
+      ],
+      "started_at": "2026-10-11T15:09:21.434192+00:00",
+      "completed_at": "2026-10-11T15:32:55.521460+00:00",
+      "terminal_label": "upper_tail_A_attempt_closed_without_complete_gain",
+      "synthesis": "rounds/codex-managed/gc-actual-upper-tail-a/synthesis.md",
+      "state_patch": "rounds/codex-managed/gc-actual-upper-tail-a/state_patch.json",
+      "assessment": {
+        "complete_moment_gain": false,
+        "pointwise_gain": false,
+        "target_A_proved": false,
+        "target_A_disproved": false,
+        "new_actual_component_controls": true,
+        "independent_review_complete": true,
+        "attempts_on_current_premise_completed": 1,
+        "terminal_label": "upper_tail_A_attempt_closed_without_complete_gain"
+      },
+      "next_round": 232,
+      "next_round_status": "pending_design_no_automatic_launch"
+    },
+    {
+      "round_index": 232,
+      "campaign_id": "gc-upper-tail-separated-products",
+      "type": "bounded_separated_product_upper_tail_attempt",
+      "status": "complete",
+      "objective": "Can exact and nearby product collisions be paid below the required exceptional-set energy, and can the remaining actual signed separated-product correlations yield complete32/25?",
+      "started_at": "2026-10-11T23:49:29.362704+00:00",
+      "starting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+      "attempt_on_current_premise": 2,
+      "tasks": [
+        {
+          "id": "actual_near_product_payment",
+          "role": "formalizer",
+          "status": "complete"
+        },
+        {
+          "id": "separated_product_attack",
+          "role": "discovery",
+          "status": "complete"
+        },
+        {
+          "id": "blind_packet_band",
+          "role": "blind_rederiver",
+          "status": "complete"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 95,
+        "numerical_experimental_maximum_percent": 5,
+        "budget": "Three initial10-12 minute tasks, one nonauthor review/repair cycle; mandatory strategy reassessment at closure if no gain; no automatic successor."
+      },
+      "completed_at": "2026-10-12T00:03:42.587804+00:00",
+      "terminal_label": "separated_product_attempt_closed_without_complete_gain",
+      "synthesis": "rounds/codex-managed/gc-upper-tail-separated-products/synthesis.md",
+      "state_patch": "rounds/codex-managed/gc-upper-tail-separated-products/state_patch.json",
+      "assessment": {
+        "complete_moment_gain": false,
+        "pointwise_gain": false,
+        "target_A_proved": false,
+        "target_A_disproved": false,
+        "new_actual_component_bounds": true,
+        "independent_review_complete": true,
+        "attempts_on_current_premise_completed": 2,
+        "mandatory_strategy_reassessment_complete": true,
+        "terminal_label": "separated_product_attempt_closed_without_complete_gain"
+      },
+      "next_round": 233,
+      "next_round_status": "pending_design_no_automatic_launch"
+    },
+    {
+      "round_index": 233,
+      "campaign_id": "gc-fixed-order-moment-absorption",
+      "type": "bounded_fixed_order_absorption_reduction",
+      "status": "complete",
+      "objective": "Can repeated-class terms be absorbed into the unknown fixed-even-order moment, yielding a complete all-fixed-order distinct-class reduction without paying them through the baseline pointwise exponent?",
+      "started_at": "2026-10-12T00:08:55.314635+00:00",
+      "starting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+      "tasks": [
+        {
+          "id": "actual_fixed_order_bridge",
+          "role": "formalizer",
+          "status": "complete"
+        },
+        {
+          "id": "hostile_bridge_audit",
+          "role": "barrier_no_go",
+          "status": "complete"
+        },
+        {
+          "id": "blind_partition_absorption",
+          "role": "blind_rederiver",
+          "status": "complete"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 90,
+        "numerical_experimental_maximum_percent": 10,
+        "budget": "Three initial tasks about10 minutes, one bounded nonauthor review/repair cycle, exact Wolfram/local controls; no automatic successor."
+      },
+      "completed_at": "2026-10-12T00:21:44.188679+00:00",
+      "terminal_label": "fixed_order_absorption_reduction_reviewed",
+      "synthesis": "rounds/codex-managed/gc-fixed-order-moment-absorption/synthesis.md",
+      "state_patch": "rounds/codex-managed/gc-fixed-order-moment-absorption/state_patch.json",
+      "assessment": {
+        "new_complete_reduction": true,
+        "complete_moment_gain": false,
+        "pointwise_gain": false,
+        "target_A_proved": false,
+        "quarter_proved": false,
+        "independent_review_complete": true,
+        "prior_upper_tail_attempts_completed": 2
+      },
+      "resulting_graph_sha256": "dd743db27ed8eaac685d23dd2f92da743dd2d1742c2f150ddecf802dbbca5306",
+      "next_round": 234,
+      "next_round_status": "pending_design_no_automatic_launch"
+    },
+    {
+      "round_index": 234,
+      "campaign_id": "gc-connected-cumulant-test",
+      "type": "bounded_actual_connected_correlation_test",
+      "status": "complete",
+      "objective": "Does subtracting all disconnected lower correlations yield a quantitatively useful actual signed connected12 estimate at29/25? Test the stronger absolute-cluster mechanism against full-harmonic controls and pay the signed remainder.",
+      "started_at": "2026-10-12T00:32:49.020996+00:00",
+      "starting_graph_sha256": "dd743db27ed8eaac685d23dd2f92da743dd2d1742c2f150ddecf802dbbca5306",
+      "tasks": [
+        {
+          "id": "signed_connected_attack",
+          "role": "discovery",
+          "status": "complete"
+        },
+        {
+          "id": "connected_certificate_audit",
+          "role": "barrier_no_go",
+          "status": "complete"
+        },
+        {
+          "id": "blind_collision_bound",
+          "role": "blind_rederiver",
+          "status": "complete"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 95,
+        "numerical_experimental_maximum_percent": 5,
+        "budget": "Three bounded initial tasks about10 minutes, one independent review/repair cycle, exact Wolfram/local checks; close before successor."
+      },
+      "completed_at": "2026-10-12T00:46:39.504368+00:00",
+      "terminal_label": "connected_correlation_test_closed_without_complete_gain",
+      "synthesis": "rounds/codex-managed/gc-connected-cumulant-test/synthesis.md",
+      "state_patch": "rounds/codex-managed/gc-connected-cumulant-test/state_patch.json",
+      "assessment": {
+        "actual_disconnected_component_paid": true,
+        "absolute_connected_mechanism_refuted": true,
+        "signed_connected_target_proved": false,
+        "complete_moment_gain": false,
+        "pointwise_gain": false,
+        "quarter_proved": false,
+        "independent_review_complete": true,
+        "prior_upper_tail_attempts_completed": 2,
+        "connected_premise_attempts_completed": 1
+      },
+      "next_round": 235,
+      "next_round_status": "pending_design_no_automatic_launch"
+    },
+    {
+      "round_index": 235,
+      "campaign_id": "gc-signed-sixth-dispersion",
+      "type": "bounded_signed_sixth_short_interval_dispersion",
+      "status": "complete",
+      "objective": "Can actual signed reciprocal-fraction dispersion prove a sixth-moment norm-band bound strong enough to pay the complete29/25 twelfth target?",
+      "started_at": "2026-10-12T11:29:10.372245+00:00",
+      "starting_graph_sha256": "dd743db27ed8eaac685d23dd2f92da743dd2d1742c2f150ddecf802dbbca5306",
+      "tasks": [
+        {
+          "id": "actual_sixth_bridge",
+          "role": "formalizer",
+          "status": "complete"
+        },
+        {
+          "id": "signed_fraction_dispersion",
+          "role": "discovery",
+          "status": "complete"
+        },
+        {
+          "id": "blind_packet_control",
+          "role": "blind_rederiver",
+          "status": "complete"
+        }
+      ],
+      "resource_policy": {
+        "analytical_algebraic_minimum_percent": 90,
+        "numerical_experimental_maximum_percent": 10,
+        "budget": "Three initial tasks about12 minutes; one bounded nonauthor review/repair cycle; shared exact Wolfram/local controls; close before successor."
+      },
+      "completed_at": "2026-10-12T11:49:39.380837+00:00",
+      "terminal_label": "signed_sixth_attempt_closed_without_complete_gain",
+      "synthesis": "rounds/codex-managed/gc-signed-sixth-dispersion/synthesis.md",
+      "state_patch": "rounds/codex-managed/gc-signed-sixth-dispersion/state_patch.json",
+      "assessment": {
+        "actual_variance_and_hankel_paid": true,
+        "paired_and_single_denominator_sectors_paid": true,
+        "actual_absolute_grouped_certificate_refuted": true,
+        "signed_nonpaired_target_proved": false,
+        "complete_moment_gain": false,
+        "pointwise_gain": false,
+        "quarter_proved": false,
+        "independent_review_complete": true,
+        "prior_upper_tail_attempts_completed": 2,
+        "prior_connected_premise_attempts_completed": 1,
+        "signed_sixth_premise_attempts_completed": 1
+      },
+      "next_round": 236,
+      "next_round_status": "pending_design_no_automatic_launch"
     }
   ]
 }

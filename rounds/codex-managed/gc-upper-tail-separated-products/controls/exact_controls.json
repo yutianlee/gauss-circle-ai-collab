@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "evidence_level": "diagnostic_only",
+  "counts": {
+    "non_psd_band": 1,
+    "multiple_bounds": 376,
+    "distinct_gcd_pair_bounds": 144,
+    "actual_small_gcd_character_identity": 3131
+  },
+  "exact_exponents": {
+    "near": "-3/250",
+    "high_gcd": "-9/500",
+    "near_margin_lower": "467296103754373/200000000000000000",
+    "high_gcd_margin_lower": "1667296103754373/200000000000000000",
+    "same_premise_attempt": 2
+  },
+  "parameters": "Real intervals with rational starts1,7/2,51,201/2 and lengths1/2,3/2,4,17/2,23,81/2; odd T101..301 and u3..33 for algebraic separated-product identity.",
+  "limitations": "Checks exact finite algebra and budget arithmetic only. The small-gcd construction is not a full-wave upper-tail event. No target A or signed exceptional-set saving is certified."
+}

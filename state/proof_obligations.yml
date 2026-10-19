@@ -16714,6 +16714,47 @@
       "next_action": "Keep the complete signed distinct-class target open; preserve the oscillatory kernel before norms and require a fully paid joint signed estimate. Track an explicitly sufficient unbounded-fixed-order family.",
       "last_updated_round": 217,
       "last_updated_at": "2026-09-28T02:48:56"
+    },
+    {
+      "id": "GC-complete-fixed-even-moment-distinct-absorption",
+      "type": "lemma",
+      "track": "proof_infrastructure",
+      "status": "proved_internal",
+      "title": "Complete fixed-even-order distinct-squarefree-class reduction by relative absorption",
+      "statement_tex": "Fix the nonnegative real radial smooth unit-mass mollifier rho supported in the unit disk, Psi(s)=rho-hat(s e1), and nonnegative smooth w supported[1/2,2], equal1 on[1/sqrt(2),sqrt(3)]. For real T>=2 define a_n(T)=r2(n)n^(-3/4)Psi(sqrt(n/T)), f_d(R)=sum_(s>=1)a_(d s^2)(T)cos(2pi R s sqrt(d)-3pi/4) for squarefree d, B_T=sum_d f_d, L_Q=sum_(d<=Q)f_d, Z_Q=sum_(d>Q)f_d, V_Q=sum_(d>Q)f_d^2 for real Q>=1. Let p>=2 be any fixed even integer independent of T, E_(p,Q) the ordered pairwise-distinct d_1,...,d_p>Q product sum, I_(p,Q)=integral w E_(p,Q), M_p(F)=integral w|F|^p, and J_(p,Q)=integral w V_Q^(p/2). For every0<delta<1, integral w|Z_Q^p-E_(p,Q)|<=delta M_p(Z_Q)+C_(p,delta)J_(p,Q), where C=(p!-1)max(1,((p!-1)/delta)^((p-2)/2)). Thus (1-delta)M_p(Z_Q)<=I_(p,Q)+CJ, I_(p,Q)>=-CJ and |I_(p,Q)|<=(1+delta)M_p(Z_Q)+CJ. For every sufficiently small eta>0, J<<_(p,eta)T Q^(-p/4+eta), while M_p(L_Q)<<_p T Q^(p/4). All harmonics and infinite tails converge absolutely for each fixed T and are retained. At Q=1, the full B_T moment, Z_Q moment, |I_(p,Q)| bound and one-sided I_(p,Q) upper bound at T^(b+epsilon) are equivalent for every b>=1, with each bound quantified for every epsilon>0. At Q=floor(T^(1/p)), the same holds for b>=5/4, or b>=h_p=1+(p-136/13)_+/(4p) using the inherited coefficient-mask distribution; that optional head proof is restricted to1<=Q<=T. For a complete normalized moment exponent b>=1, sharp reconstruction and inclusive-count persistence give exponent1/4+(1+2b)/(4(p+1)). An unbounded sequence of fixed even orders with actual one-sided signed exponents b_p=o(p) would imply the quarter theorem, after paying the head floor. Those signed estimates are not proved. Constants may depend arbitrarily on fixed p; no p growing with T, no tuplewise absolute estimate, no stronger additive replacement of216, no improved full moment or pointwise exponent, and no M1/M2/GAR/endpoint or quarter proof is asserted.",
+      "dependencies": [
+        "H1-H3",
+        "Divisor-bound-elementary",
+        "GC-complete-square-root-large-values-moment-bound",
+        "GC-complete-distinct-radical-twelfth-reduction",
+        "GC-weighted-square-root-exact-resonance-mass"
+      ],
+      "implies": [],
+      "blockers": [],
+      "evidence": {
+        "positive": [
+          "proofs/kernels/gc_complete_fixed_even_moment_distinct_absorption.md",
+          "rounds/codex-managed/gc-fixed-order-moment-absorption/candidates/conductor_fixed_order_kernel.md",
+          "rounds/codex-managed/gc-fixed-order-moment-absorption/reports/actual_fixed_order_bridge.md",
+          "rounds/codex-managed/gc-fixed-order-moment-absorption/reports/hostile_bridge_audit.md",
+          "rounds/codex-managed/gc-fixed-order-moment-absorption/reports/blind_partition_absorption.md",
+          "rounds/codex-managed/gc-fixed-order-moment-absorption/reviews/conductor_blind_absorption_review.md",
+          "rounds/codex-managed/gc-fixed-order-moment-absorption/reviews/independent_finite_absorption_review.md",
+          "rounds/codex-managed/gc-fixed-order-moment-absorption/reviews/finite_absorption_final_hash_supplement.md",
+          "rounds/codex-managed/gc-fixed-order-moment-absorption/reviews/independent_actual_kernel_review.md",
+          "rounds/codex-managed/gc-fixed-order-moment-absorption/reviews/independent_scope_restoration_review.md",
+          "rounds/codex-managed/gc-fixed-order-moment-absorption/candidates/review_repair_record.md",
+          "rounds/codex-managed/gc-fixed-order-moment-absorption/synthesis.md"
+        ],
+        "negative": [],
+        "inconclusive": [
+          "rounds/codex-managed/gc-fixed-order-moment-absorption/controls/control_manifest.md"
+        ]
+      },
+      "owner": "Codex conductor",
+      "next_action": "Prove an actual signed distinct-class aggregate upper bound with a complete improved budget; a b_p=o(p) family at unbounded fixed even orders would suffice for quarter. Preserve signed cancellations and the accepted absolute-certificate obstruction. The reduction alone improves no complete exponent.",
+      "last_updated_round": 233,
+      "last_updated_at": "2026-10-12T08:21:44"
     }
   ],
   "rejected_claims": [

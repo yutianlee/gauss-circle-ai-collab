@@ -1,0 +1,100 @@
+{
+  "status": "passed",
+  "completed_at": "2026-10-12T00:03:42.587804+00:00",
+  "round_index": 232,
+  "terminal_label": "separated_product_attempt_closed_without_complete_gain",
+  "graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+  "graph_nodes": 401,
+  "proof_draft_unchanged": true,
+  "identity_application": true,
+  "inverse_identity": true,
+  "replay_identity": true,
+  "patch_summary": "no_change: GC-target, Conditional-bridge, M9, M9-M1, M9-M2, M9-endpoint-uniformity, M9-M1-global-angular-radial-estimate, M9-M1-global-lower-radial-signed-estimate, M9-M1-GAR-total-active-equivalence, GC-external-Li-Yang-theta-star, GC-complete-square-root-large-values-moment-bound, GC-complete-distinct-radical-twelfth-reduction; Nearby products cost T^(-3/250+epsilon), and distinct high-gcd products cost T^(-9/500+epsilon), with all atomic tails and errors paid. The actual separated small-gcd signed energy saving a*=10beta-32/25 remains open. Independent reviews pass with explicit atomic-tail and component-control scope supplements. The required two-attempt strategy reassessment is complete; no complete moment or pointwise gain and no accepted graph change.",
+  "protected_preexisting_files_checked": 5160,
+  "prior_ledger_entries_unchanged": true,
+  "prior_validation_gates_unchanged": true,
+  "initial_reports_unchanged": true,
+  "reviewed_artifact_hashes": {
+    "rounds/codex-managed/gc-upper-tail-separated-products/reports/actual_near_product_payment.md": "a4943d33174f49270506dcde6fb81a58412870daeec3dcf2c2686e175985a92a",
+    "rounds/codex-managed/gc-upper-tail-separated-products/reports/blind_packet_band.md": "e377760753ee31525af78ced5b0ed488b779070b1822231bcea3fa8d5cb5d087",
+    "rounds/codex-managed/gc-upper-tail-separated-products/reports/separated_product_attack.md": "e8974ef88d0c24e675cbfaf3328655a9cdff292fbff2999e5b9b79019be5fffc",
+    "rounds/codex-managed/gc-upper-tail-separated-products/reviews/conductor_blind_band_review.md": "6fc9a95d3a66c665aa8508ae4265798dbd86caaaefc2cad8e71eb7be4483bd14",
+    "rounds/codex-managed/gc-upper-tail-separated-products/reviews/independent_collision_ledger_review.md": "0dda72b831a6bb160fc14aded69f808c58740330659da09a663260667a80de14",
+    "rounds/codex-managed/gc-upper-tail-separated-products/reviews/independent_near_payment_review.md": "c86d66d3c55b5fd383a633f4ff623e4693ccd6feb2093fd9fbc93499db2d8ac5",
+    "rounds/codex-managed/gc-upper-tail-separated-products/reviews/independent_separated_attack_review.md": "5e1376071332139a25c392b503f737f02d9e9db65514667f8448fe6b4835bc9e",
+    "rounds/codex-managed/gc-upper-tail-separated-products/candidates/conductor_collision_ledger.md": "153228f0f23256fb7c65a8e155d5134c53b6c11ad643fef2494b3cb7fbd28085",
+    "rounds/codex-managed/gc-upper-tail-separated-products/candidates/strategy_reassessment.md": "286415c548b027b986f939d17ef9654d51a4d5083253d2df09117d656a20c476",
+    "rounds/codex-managed/gc-upper-tail-separated-products/briefs/actual_interface.md": "c52e963aa8836fc7663c0528e170f4271396a907eafbee1ecc682db5d5885607",
+    "rounds/codex-managed/gc-upper-tail-separated-products/briefs/actual_near_product_payment.md": "a3642ead79102b9dbc7bd358e84c13dbaab723594231ed864fe8afa69415b1e0",
+    "rounds/codex-managed/gc-upper-tail-separated-products/briefs/blind_packet_band.md": "2e460d93278ba95e2e9a9b1b07903e3e4ec6a4ad72fdf7b860733e615c9ee0c7",
+    "rounds/codex-managed/gc-upper-tail-separated-products/briefs/isolated_packet_band.md": "6c1d32bb503d2136c059c4a52dcb6bc60da5b536016cb6b0a75b716b440f3456",
+    "rounds/codex-managed/gc-upper-tail-separated-products/briefs/separated_product_attack.md": "c67d5a03c75b25fc62b260341a63120aef90e36aba195a6f8d83c8f55f521aac",
+    "rounds/codex-managed/gc-upper-tail-separated-products/synthesis.md": "be79d07cc2c75e689c8296a3f0494267015f607c2a104a3434e651172bfe8835",
+    "rounds/codex-managed/gc-upper-tail-separated-products/controls/control_manifest.md": "f13c0f06d50e989474aa33212675fa0377d3018603a83ddb9e98cb513eb658ff",
+    "rounds/codex-managed/gc-upper-tail-separated-products/controls/exact_controls.py": "17a4d90ea8a6499608dd632578a69f626c965661bd2c28de883e79169e38d334",
+    "rounds/codex-managed/gc-upper-tail-separated-products/controls/exact_controls.json": "4fa3b9ad12d9e24ea6fc652a6de2d2b8ddd02c509fc9e9e9fd4d5cd3102f19b5"
+  },
+  "new_gates": [
+    {
+      "id": "round232_actual_family",
+      "status": "green_actual_full_band_actual_E_all_q",
+      "artifact": "rounds/codex-managed/gc-upper-tail-separated-products/briefs/actual_interface.md"
+    },
+    {
+      "id": "round232_near_payment",
+      "status": "green_all_product_close_absolute_bound",
+      "artifact": "rounds/codex-managed/gc-upper-tail-separated-products/reviews/independent_near_payment_review.md"
+    },
+    {
+      "id": "round232_high_gcd",
+      "status": "green_distinct_pairs_and_all_original_labels",
+      "artifact": "rounds/codex-managed/gc-upper-tail-separated-products/reviews/independent_separated_attack_review.md"
+    },
+    {
+      "id": "round232_atomic_tails",
+      "status": "green_absolute_elementary_local_and_exterior_mixed_tails",
+      "artifact": "rounds/codex-managed/gc-upper-tail-separated-products/reviews/independent_collision_ledger_review.md"
+    },
+    {
+      "id": "round232_blind_isolation",
+      "status": "green_initial_statement_only_frozen_before_expansion",
+      "artifact": "rounds/codex-managed/gc-upper-tail-separated-products/reports/blind_packet_band.md"
+    },
+    {
+      "id": "round232_blind_lemma",
+      "status": "green_band_cross_families_nonlinear_scope",
+      "artifact": "rounds/codex-managed/gc-upper-tail-separated-products/reviews/conductor_blind_band_review.md"
+    },
+    {
+      "id": "round232_small_gcd_control",
+      "status": "green_component_uniform_scope_only_not_actual_E",
+      "artifact": "rounds/codex-managed/gc-upper-tail-separated-products/reviews/independent_separated_attack_review.md"
+    },
+    {
+      "id": "round232_residual_identity",
+      "status": "green_disjoint_sectors_original_E_and_errors",
+      "artifact": "rounds/codex-managed/gc-upper-tail-separated-products/reviews/independent_collision_ledger_review.md"
+    },
+    {
+      "id": "round232_complete_restoration",
+      "status": "green_conditional_both_tails_threshold_and_full_owners",
+      "artifact": "rounds/codex-managed/gc-upper-tail-separated-products/reviews/independent_near_payment_review.md"
+    },
+    {
+      "id": "round232_finite_controls",
+      "status": "green_exact_diagnostic_checks_pass",
+      "artifact": "rounds/codex-managed/gc-upper-tail-separated-products/controls/control_manifest.md"
+    },
+    {
+      "id": "round232_strategy_reassessment",
+      "status": "green_two_attempt_review_completed_no_automatic_successor",
+      "artifact": "rounds/codex-managed/gc-upper-tail-separated-products/candidates/strategy_reassessment.md"
+    },
+    {
+      "id": "round232_source_scope_no_gain",
+      "status": "green_no_new_import_no_complete_promotion",
+      "artifact": "rounds/codex-managed/gc-upper-tail-separated-products/synthesis.md"
+    }
+  ],
+  "next_round": "233 pending_design, no tasks, no launch"
+}
