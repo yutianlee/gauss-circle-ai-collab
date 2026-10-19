@@ -1,3 +1,93 @@
+# Round235 closed: signed sixth-order dispersion still needs a nonpaired estimate
+
+12 October2026 Asia/Shanghai. The bounded actual norm-band attempt uses gamma=13/125 and the sufficient M6(F) target193/500. All squarefree classes and band harmonics are retained. Their variance pays repeats at47/125. The correctly normalized odd Hankel packet keeps its exact moving width H(x)=2sqrt(x)/sqrt(N), and the complete error costs at most T N^(-6) in the sixth moment.
+
+The actual two-branch divisor expansion groups reduced fractions into odd denominators and denominators divisible by4. Both character signs, the moving divisor cutoff, all tails and a signed square correction are retained. The paired sixth-order sector costs T^2 H0^3 log^3 T; the one-denominator exact-zero sector costs T^2 H0 log T. The first unpaid term is the remaining SIGNED nonpaired rational sextuple sum, including mixed-denominator exact relations, at T^(2+1/100+epsilon)H0^3.
+
+Taking each tuple in modulus cannot close it: for an actual interior block, the grouped balanced-six absolute certificate is at least cT^6 H0. This is not a lower bound on the signed moment. A separate statement-only constant-coefficient control has absolute mass of order L H^6 while its signed total is exactly zero.
+
+If the signed target were proved uniformly for all required actual blocks, full restoration would give complete29/25 and sharp102/325. The exact interpolation margin is positive but only0.000201888311263119... . These gains were not proved. The accepted complete10beta, qualified pointwise0.314483175974..., all fixed-order qualifications, and open quarter/M1/M2/GAR/endpoints remain unchanged.
+
+Three initial reports were frozen before expanded review. Nonauthor reviews of actual bridge, arithmetic dispersion and complete scope passed, along with exact Wolfram checks independently reproduced locally. Computation remains diagnostic only. The identity State Patch changes no graph or proof-draft byte; protected history and earlier ledger/matrix entries are preserved.
+
+Strategy: any successor must estimate the actual signed nonpaired mixed-denominator correlations with their moving coefficients, or supply a different fully costed mechanism. Repeating centering, the filter, a paired estimate, or a tuplewise absolute certificate is insufficient. One bounded attempt on this signed-sixth premise is complete; the prior connected attempt and two-attempt upper-tail reassessment remain in force. Round236 is pending design with no tasks or automatic launch.
+
+Details: rounds/codex-managed/gc-signed-sixth-dispersion/synthesis.md. Historical material below is retained evidence, not an instruction to relaunch a closed round.
+
+---
+
+## Historical record retained below
+
+# Round234 closed: connected correlations do not yet give a complete gain
+
+12 October2026 Asia/Shanghai. For the literal actual wave, all harmonics and Q=floor(T^(2/5)), define the connected12 sum K12 using the probability measure w(R/T)dR/(T integral w). The signed disconnected contribution satisfies |I12-K12|<<T^(1+epsilon). The proof uses rapid distinct-class singleton/pair means, exact collision algebra at independent radii, and the already accepted actual moments through order9.
+
+The stronger proposed absolute-cluster method fails: C_conn=(T integral w)sum_distinct|kappa12|>=cT^(5/2). The entire proper-partition correction costs only T^(9/4+epsilon), so it cannot remove the re-audited full-harmonic absolute mass. This is a scoped certificate obstruction, not a lower bound on signed K12, I12 or the complete moment.
+
+The actual one-sided signed estimate K12<=T^(29/25+epsilon) remains OPEN. If supplied it would restore the complete29/25 moment and conditional102/325 sharp exponent; those are not obtained. Complete10beta and the qualified pointwise0.314483175974... remain unchanged. Accepted233's all-fixed-order reduction remains intact; its sufficient unbounded-order signed family and quarter remain open.
+
+Three initial reports were frozen before expanded review; the important collision lemma was independently derived from its statement alone. Three nonauthor reviews of signed remainder, actual lower certificate and complete scope passed at the unchanged candidate hash. Wolfram exact controls, including a disclosed repaired expression, were independently reproduced locally. Computation is diagnostic only.
+
+Conductor decision: retain the new component estimates and scoped obstruction as reviewed evidence, with an identity State Patch. All402 graph nodes and the proof draft remain byte-for-byte unchanged. All pre-existing protected evidence and historical ledger/matrix entries are preserved. No new graph kernel is promoted merely for an equivalent unestimated target.
+
+Strategy: a successor must estimate the genuinely signed cross-tuple aggregate, or introduce a different complete mechanism with quantified costs and falsifiable arithmetic input. Small pair covariances, formal cumulant identities, or tuplewise absolute connected estimates do not supply that input. The earlier upper-tail cycle remains closed after two attempts; this separate connected-correlation premise has one completed attempt. Round235 is pending design, with no tasks or automatic launch.
+
+Record: rounds/codex-managed/gc-connected-cumulant-test/synthesis.md. Candidate and proof details: candidates/conductor_connected_test.md in that campaign. Validation: controls/closure_validation.json. Historical material below is retained evidence, not a launch instruction.
+
+---
+
+## Historical record retained below
+
+# Round233 closed: fixed-order absorption reduction accepted
+
+12 October2026 Asia/Shanghai. One new narrow lemma, GC-complete-fixed-even-moment-distinct-absorption, supplies the complete distinct-squarefree-class reduction at every fixed even order. The relative inequality |Z^p-E_p|<=delta|Z|^p+C_(p,delta)V^(p/2) absorbs repeated classes into the unknown moment. For the actual full wave and Q=1, both head and absorption budgets are O_p(T); one-sided signed-integral bounds are equivalent to full moment bounds above that floor. All harmonics, signs, tails and real endpoints are retained.
+
+For Q=floor(T^(1/p)), the defect is T^(3/4+epsilon), the elementary head is T^(5/4), and the optional accepted-distribution head exponent is h_p=1+(p-136/13)_+/(4p). Its layer-cake refinement is restricted to1<=Q<=T. The current complete exponents do not improve: an actual signed estimate remains missing. The graph now has402 nodes with all401 prior nodes unchanged;216's stronger additive twelfth-order lemma is preserved.
+
+An unbounded sequence of fixed even orders with actual signed exponents b_p=o(p) would imply quarter after complete sharp restoration. This is an unproved target family, not an established bound. Choose p before T; constants need not be uniform in p. The absolute distinct-tuple certificate remains insufficient by the accepted T^(p/4-1/2) obstruction, which is not a lower bound for signed I.
+
+Three frozen initial reports, statement-only rederivation, final-hash nonauthor reviews, one optional-head scope repair, and bounded Wolfram checks independently reproduced locally are complete. The State Patch adds only the reduction; the proof draft is appended after validation. Complete10beta, pointwise0.314483175974..., target A and all quarter/M1/M2/endpoints remain unchanged/open as before.
+
+The two earlier local upper-tail attempts remain closed and their reassessment remains in force. Future research must estimate the actual signed aggregate with a concrete arithmetic mechanism and complete costs. Round234 is pending design, has no tasks and is not automatically launched.
+
+Authoritative record: rounds/codex-managed/gc-fixed-order-moment-absorption/synthesis.md. Accepted kernel: proofs/kernels/gc_complete_fixed_even_moment_distinct_absorption.md. Mechanical validation: controls/closure_validation.json in that campaign. Historical snapshots below are retained evidence, not current launch instructions.
+
+---
+
+## Historical record retained below
+
+# Round232 closed: two collision sectors paid; complete upper-tail gain open
+
+12 October2026 Asia/Shanghai. The continued bounded attempt is complete, with three frozen reports, independent review, exact finite controls and the mandatory reassessment after attempt2. Nearby products at distance at most sqrt(T) cost T^(-3/250+epsilon); the remaining distinct products with gcd(h,h')>=T^(1/4) cost T^(-9/500+epsilon). Both lie below the required energy power-a*, a*=10beta-32/25=0.009663519481... . All modes, elementary cross terms, tails, errors and the original exceptional set are retained.
+
+The precise missing estimate is the one-sided signed aggregate over product gaps>sqrt(T) and gcd(h,h')<T^(1/4), on E={|F_(16/125)|>T^(16/125)}. Q_E(F) equals that remainder up to O(T^(-3/250+epsilon)). The actual small-gcd control rejects only a uniform pointwise alternation/variation certificate across smooth components; it neither disproves target A nor estimates the full event. Component bounds remain reviewed evidence, not accepted complete mathematics.
+
+An identity State Patch preserves the401-node graph and proof draft. Complete10beta=1.289663519481... and the pointwise benchmark0.314483175974... remain unchanged. Complete32/25 is still conditional and would give the weaker pointwise207/650. Quarter, M1/M2 and endpoints remain open; Round216 is only its stated twelfth-order reduction.
+
+The two-attempt review ends this elementary local-count/termwise-alternation cycle. Any new attempt needs a concrete aggregate arithmetic mechanism or a different complete parent, with an explicit conjectured lemma, a bypass of existing controls, full conditional costs and falsification tests. It need not prove its lemma before exploratory admission. Equivalent transforms or cutoff changes do not reset the attempt count. Round233 is pending design, has no tasks and is not automatically launched.
+
+Authoritative record: rounds/codex-managed/gc-upper-tail-separated-products/synthesis.md. Strategy reassessment: candidates/strategy_reassessment.md in that campaign. Mechanical closure: controls/closure_validation.json. Historical snapshots below are retained evidence, not current instructions.
+
+---
+
+## Historical record retained below
+
+# Round231 closed: upper-tail A remains open
+
+11 October2026. The user-authorized bounded analytic attempt is complete, with three frozen initial reports, four nonauthor review seams, bounded controls and one localized convention repair. No complete moment or pointwise improvement was proved. This is attempt1 on the adopted upper-tail premise; earlier Round231-labelled strategy packets were prelaunch evidence.
+
+The useful sufficient target is now explicit: for actual F_(16/125), the quadratic energy on {|F|>T^(16/125)} should be bounded by T^(-a*+epsilon), a*=10beta-32/25=0.009663519481... . Its signed reciprocal-product version requires T^(2-a*+epsilon) on the same actual exceptional set. These estimates remain unproved. Exact resonance zeros and small signed first means cannot replace this bound. Actual positive, negative and disjoint covariance controls exclude uniform pairwise decorrelation at their stated component scope; they do not disprove target A.
+
+Both distribution terms, the threshold boundary, all errors and the exact L/F/H restoration are paid conditionally. Complete32/25 would improve moments only, giving the weaker pointwise consequence207/650. The correct accepted relation is theta=(1+2beta)/4. The graph's401 nodes, accepted exponent10beta=1.289663519481..., pointwise benchmark0.314483175974..., and proof-draft bytes are unchanged under a validated identity State Patch. Quarter, M1/M2 and endpoint obligations remain open; accepted216 is only its stated twelfth-order reduction.
+
+Strategy now requires a quantitative estimate for actual restricted weighted aggregate correlations, including the rigid same-two-adic sector. Another exact transform or a generic odd-kernel argument does not reset the attempt count. Reassess after at most two attempts on unchanged premises. Round232 is pending design with no tasks and no automatic launch.
+
+Authoritative round record: rounds/codex-managed/gc-actual-upper-tail-a/synthesis.md. Reviews and controls are in that campaign; mechanical closure is recorded in controls/closure_validation.json. Historical snapshots below describe earlier states and are not current launch instructions.
+
+---
+
+## Historical record retained below
+
 # Current research status — Round230 closed,11 October2026
 
 The quarter theorem remains open. The graph has401 unchanged nodes. The strongest certified pointwise exponent is the qualified external0.314483175974..., with internal fallback1/3. Round204 remains the last complete moment gain;205–229 contained25 subsequent rounds without another complete moment or pointwise improvement.228's full continuous component remains reviewed evidence, leaving the full cusp target.

@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "Out[1]= <|\"partitionChecks\" -> {<|\"order\" -> 2, \"monomials\" -> 1, \"derangementCoefficientCheck\" -> True, \"totalCoefficientCheck\" -> True, \"onePairCoefficient\" -> pp[2]|>, <|\"order\" -> 4, \"monomials\" -> 4, \"derangementCoefficientCheck\" -> True, \"totalCoefficientCheck\" -> True, \"onePairCoefficient\" -> 6*pp[2]|>, <|\"order\" -> 6, \"monomials\" -> 10, \"derangementCoefficientCheck\" -> True, \"totalCoefficientCheck\" -> True, \"onePairCoefficient\" -> 15*pp[2]|>, <|\"order\" -> 8, \"monomials\" -> 21, \"derangementCoefficientCheck\" -> True, \"totalCoefficientCheck\" -> True, \"onePairCoefficient\" -> 28*pp[2]|>, <|\"order\" -> 10, \"monomials\" -> 41, \"derangementCoefficientCheck\" -> True, \"totalCoefficientCheck\" -> True, \"onePairCoefficient\" -> 45*pp[2]|>, <|\"order\" -> 12, \"monomials\" -> 76, \"derangementCoefficientCheck\" -> True, \"totalCoefficientCheck\" -> True, \"onePairCoefficient\" -> 66*pp[2]|>, <|\"order\" -> 14, \"monomials\" -> 134, \"derangementCoefficientCheck\" -> True, \"totalCoefficientCheck\" -> True, \"onePairCoefficient\" -> 91*pp[2]|>, <|\"order\" -> 16, \"monomials\" -> 230, \"derangementCoefficientCheck\" -> True, \"totalCoefficientCheck\" -> True, \"onePairCoefficient\" -> 120*pp[2]|>}, \"finiteSignedChecks\" -> {True, True, True, True, True, True, True, True}, \"negativeIntegralControlOrder6\" -> -720, \"growingCutoffP12HeadExponent\" -> 161/156, \"sharpPointwiseExponent\" -> (2 + 2*b + m)/(4*(1 + m))|>"
+    }
+  ],
+  "isError": false
+}

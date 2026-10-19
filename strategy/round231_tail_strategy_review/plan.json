@@ -1,0 +1,62 @@
+{
+  "round_index": 231,
+  "packet_id": "round231_tail_strategy_review",
+  "type": "user_requested_strategy_review_prelaunch",
+  "status": "complete",
+  "objective": "Assess the incoming Round231 review's actual-coefficient upper-tail targets, smooth-band representation, signed reciprocal mechanism and exploratory admission rule; revise strategy without claiming the open estimates or launching analytic work.",
+  "starting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+  "analytic_campaign_launched": false,
+  "resource_budget": "Two short orthogonal reports, one independent final strategy review; at least95 percent analytical reasoning, at most5 percent exact diagnostics; no new source import or open-target attack.",
+  "tasks": [
+    {
+      "id": "blind_tail_restoration",
+      "role": "statement_only_rederiver",
+      "report": "reports/blind_tail_restoration.md",
+      "status": "completed",
+      "report_sha256": "4fc8364469aad6cd94b1ac2650b6216393ce4895250c841c259820cbcd84a9ae"
+    },
+    {
+      "id": "actual_band_reciprocal_audit",
+      "role": "coefficient_and_phase_reviewer",
+      "report": "reports/actual_band_reciprocal_audit.md",
+      "status": "completed",
+      "report_sha256": "e988b5bcab002a700f3d3a56995a374aac8d1ec9598abbc6db7a0fb948ba4b7e"
+    }
+  ],
+  "exit_gates": [
+    "Both reports and source-scope checks complete",
+    "Conditional implications distinguished from open bounds",
+    "Full moment equivalence not confused with pointwise tail transfer",
+    "Nonauthor strategy review",
+    "Graph/campaign validation and protected content unchanged"
+  ],
+  "allowed_changes": [
+    "New strategy supplement and this review packet",
+    "Narrow workflow metadata in state/next_round_plan.yml"
+  ],
+  "forbidden_changes": [
+    "Claim graph, proof draft, accepted kernels, validation matrix, closed active manifest and ledger",
+    "Incoming review and closed historical artifacts"
+  ],
+  "completed_at": "2026-10-11T15:04:59.528949+00:00",
+  "independent_review": {
+    "status": "pass_no_required_repair",
+    "path": "reviews/independent_strategy_review.md",
+    "report_sha256": "62b1d779a7cd2d8e180b32c6ae09455b65003617de2780b0e904545e93cb0b47",
+    "reviewed_strategy_sha256": "a4ac7bd99bd19cadf3ded1f525b20715afd5ff6093437ed8a9907e7fa393d15f"
+  },
+  "closing_assessment": {
+    "decision": "select_actual_upper_tail_A_for_bounded_exploratory_design",
+    "mathematical_status": "A_and_B_open; no new complete estimate",
+    "analytic_campaign_launched": false,
+    "graph_effect": "none",
+    "state_patch_applied": false,
+    "validation": "validation.json",
+    "protected_files_unchanged": 5111,
+    "workflow_keys_changed": [
+      "candidate_objective",
+      "design_constraint",
+      "upper_tail_strategy_update"
+    ]
+  }
+}

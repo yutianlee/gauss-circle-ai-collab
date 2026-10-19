@@ -1,3 +1,5 @@
-# Round230 validation
+# Round235 validation passed
 
-Graph and campaign schemas:PASS. Identity patch:PASS, including in-memory application, inverse and replay.401 graph nodes and proof-draft bytes unchanged.792 protected archive/state files unchanged. Scoped mathematical reviews green; one strategy clarification repaired and final hash reviewed. No complete analytic or pointwise gain.
+The actual sixth-band bridge and all Hankel errors are paid, as are exact two-character grouping, square correction, paired sextuples and single-denominator exact-zero relations. The actual nonpaired signed rational sextuple estimate remains unproved. Its tuplewise absolute certificate is at least c T^6 H0 on an actual interior block, so that certificate cannot meet the target. Independent review and exact Wolfram/local controls pass. No complete moment or pointwise improvement; identity State Patch preserves the402-node graph and proof draft.
+
+402-node graph and proof draft unchanged. All three initial reports frozen; statement-only filter/countercontrol and nonauthor final-hash reviews complete; full-band, all-harmonic, Hankel, arithmetic grouping, endpoint and exact Wolfram/local controls passed. The actual signed nonpaired estimate remains open. Identity State Patch validated, applied in memory, inverted and replayed. Historical protected files and prior ledger/matrix entries preserved. Full details: rounds/codex-managed/gc-signed-sixth-dispersion/controls/closure_validation.json.

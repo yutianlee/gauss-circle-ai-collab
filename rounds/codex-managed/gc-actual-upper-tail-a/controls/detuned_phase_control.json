@@ -1,0 +1,171 @@
+{
+  "status": "passed",
+  "evidence_level": "diagnostic_only",
+  "precision": "Python IEEE754 binary64; absolute tolerance2e-8 for large phase evaluation. Exact phase and sine positivity are proved analytically in the cited seam repair.",
+  "controls": "Both chi4 signs; exact resonance; positive and negative physical detuning; no radius restriction to integers.",
+  "limitations": "An algebraic leading fibre control only. Does not evaluate complete F or bound any high-value-set moment. No stationary-error lower bound is inferred numerically.",
+  "rows": [
+    {
+      "D": 16,
+      "h": 4093,
+      "q": 4093,
+      "c": -0.03125,
+      "real_radius": 4092.996093748136,
+      "sine_sum": -2.3186069491452206,
+      "direct_error": 6.361844384628057e-11
+    },
+    {
+      "D": 16,
+      "h": 4093,
+      "q": 4093,
+      "c": 0,
+      "real_radius": 4093.0,
+      "sine_sum": 0.0,
+      "direct_error": 7.051610878069547e-11
+    },
+    {
+      "D": 16,
+      "h": 4093,
+      "q": 4093,
+      "c": 0.03125,
+      "real_radius": 4093.003906248136,
+      "sine_sum": 2.3186069491452206,
+      "direct_error": 4.2592152027509655e-11
+    },
+    {
+      "D": 16,
+      "h": 4095,
+      "q": 4095,
+      "c": -0.03125,
+      "real_radius": 4094.996093748137,
+      "sine_sum": 2.3186069491452206,
+      "direct_error": 7.239719934659661e-11
+    },
+    {
+      "D": 16,
+      "h": 4095,
+      "q": 4095,
+      "c": 0,
+      "real_radius": 4095.0,
+      "sine_sum": -0.0,
+      "direct_error": 2.1654281778944212e-11
+    },
+    {
+      "D": 16,
+      "h": 4095,
+      "q": 4095,
+      "c": 0.03125,
+      "real_radius": 4095.003906248137,
+      "sine_sum": -2.3186069491452206,
+      "direct_error": 6.625056059306189e-11
+    },
+    {
+      "D": 32,
+      "h": 4093,
+      "q": 4093,
+      "c": -0.03125,
+      "real_radius": 4092.998046874534,
+      "sine_sum": -4.637126604049287,
+      "direct_error": 1.7765255932999935e-10
+    },
+    {
+      "D": 32,
+      "h": 4093,
+      "q": 4093,
+      "c": 0,
+      "real_radius": 4093.0,
+      "sine_sum": 0.0,
+      "direct_error": 2.820644351227819e-10
+    },
+    {
+      "D": 32,
+      "h": 4093,
+      "q": 4093,
+      "c": 0.03125,
+      "real_radius": 4093.001953124534,
+      "sine_sum": 4.637126604049287,
+      "direct_error": 1.9194246192455466e-10
+    },
+    {
+      "D": 32,
+      "h": 4095,
+      "q": 4095,
+      "c": -0.03125,
+      "real_radius": 4094.9980468745343,
+      "sine_sum": 4.637126604049287,
+      "direct_error": 1.589492981679541e-10
+    },
+    {
+      "D": 32,
+      "h": 4095,
+      "q": 4095,
+      "c": 0,
+      "real_radius": 4095.0,
+      "sine_sum": -0.0,
+      "direct_error": 1.1572095757251056e-10
+    },
+    {
+      "D": 32,
+      "h": 4095,
+      "q": 4095,
+      "c": 0.03125,
+      "real_radius": 4095.0019531245343,
+      "sine_sum": -4.637126604049287,
+      "direct_error": 2.5613910992206e-10
+    },
+    {
+      "D": 64,
+      "h": 4093,
+      "q": 4093,
+      "c": -0.03125,
+      "real_radius": 4092.9990234373836,
+      "sine_sum": -9.274209561696939,
+      "direct_error": 7.283400549340513e-10
+    },
+    {
+      "D": 64,
+      "h": 4093,
+      "q": 4093,
+      "c": 0,
+      "real_radius": 4093.0,
+      "sine_sum": 0.0,
+      "direct_error": 7.208041140968557e-10
+    },
+    {
+      "D": 64,
+      "h": 4093,
+      "q": 4093,
+      "c": 0.03125,
+      "real_radius": 4093.0009765623836,
+      "sine_sum": 9.274209561696939,
+      "direct_error": 8.118341554563813e-10
+    },
+    {
+      "D": 64,
+      "h": 4095,
+      "q": 4095,
+      "c": -0.03125,
+      "real_radius": 4094.9990234373836,
+      "sine_sum": 9.274209561696939,
+      "direct_error": 8.703153753231163e-10
+    },
+    {
+      "D": 64,
+      "h": 4095,
+      "q": 4095,
+      "c": 0,
+      "real_radius": 4095.0,
+      "sine_sum": -0.0,
+      "direct_error": 4.628838302900422e-10
+    },
+    {
+      "D": 64,
+      "h": 4095,
+      "q": 4095,
+      "c": 0.03125,
+      "real_radius": 4095.0009765623836,
+      "sine_sum": -9.274209561696939,
+      "direct_error": 7.339320262644833e-10
+    }
+  ]
+}

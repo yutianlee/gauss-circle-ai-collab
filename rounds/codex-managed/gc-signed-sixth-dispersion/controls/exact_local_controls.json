@@ -1,0 +1,82 @@
+{
+  "classification": "diagnostic_only",
+  "status": "passed",
+  "checks": {
+    "sqrt_threshold_positive": true,
+    "beta_strictly_below_129_1000": true,
+    "sixth_exponent": true,
+    "conditional_sharp": true,
+    "width_endpoints": true,
+    "hyperbola_all_256": true,
+    "missing_branch_negative_control": true,
+    "square_correction_nonzero_control": true,
+    "character_fourier_residues": true,
+    "strict_positive_margin": true,
+    "exact_grouping": true,
+    "grouped_frequency_count": true,
+    "no_denominator_2_mod_4": true,
+    "partial_chi_harmonic_bounded": true,
+    "newton_distinct_six": true
+  },
+  "exact_margin_interval": [
+    "2778386939603046021/13762000000000000000000",
+    "347298367450380753/1720250000000000000000"
+  ],
+  "decimal_margin_for_display": 0.00020188831126311918,
+  "grouping_parameters": {
+    "H": 3,
+    "D": 19,
+    "packet": "indicator of [1,2] for exact coefficient algebra only"
+  },
+  "bounded_hyperbola_range": [
+    1,
+    256
+  ],
+  "signed_vectors": [
+    [
+      "-2",
+      "-1",
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    [
+      "1",
+      "-1",
+      "1",
+      "-1",
+      "1",
+      "-1",
+      "1"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    [
+      "1/2",
+      "-2/3",
+      "1",
+      "0",
+      "2",
+      "-1"
+    ]
+  ],
+  "script_sha256": "dd23da301d9c57bfc359cb159cf1ba561b9fdf7fc0bd65dd311d25e5918bcb75",
+  "limitations": "Finite identities and exponent arithmetic only. No control certifies the unproved actual signed S6 estimate."
+}

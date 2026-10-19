@@ -1,0 +1,193 @@
+{
+  "campaign": {
+    "schema_version": 1,
+    "round_index": 234,
+    "round_type": "bounded_actual_connected_correlation_test",
+    "campaign_id": "gc-connected-cumulant-test",
+    "title": "Test connected-correlation subtraction on the actual distinct-class twelfth moment",
+    "status": "active",
+    "max_concurrency": 3,
+    "coordinator": "Codex",
+    "generated_at": "2026-10-12T00:32:49.020996+00:00",
+    "user_date": "2026-10-12 Asia/Shanghai",
+    "starting_graph_sha256": "dd743db27ed8eaac685d23dd2f92da743dd2d1742c2f150ddecf802dbbca5306",
+    "prior_upper_tail_attempts_completed": 2,
+    "resource_policy": {
+      "analytical_algebraic_minimum_percent": 95,
+      "numerical_experimental_maximum_percent": 5,
+      "budget": "Three bounded initial tasks about10 minutes, one independent review/repair cycle, exact Wolfram/local checks; close before successor."
+    },
+    "target_obligations": [
+      "GC-target",
+      "GC-complete-distinct-radical-twelfth-reduction",
+      "GC-complete-fixed-even-moment-distinct-absorption"
+    ],
+    "frozen_target": {
+      "question": "Does subtracting all disconnected lower correlations yield a quantitatively useful actual signed connected12 estimate at29/25? Test the stronger absolute-cluster mechanism against full-harmonic controls and pay the signed remainder.",
+      "reference_formula": "I12=K12+D12; seek D12<<T^(1+eps), K12<=T^(29/25+eps); test C_conn at29/25 rather than assume it.",
+      "quantities": [
+        "p=12 fixed, Q=floor(T^(2/5)), probability weight w/(TW), all harmonics and signs.",
+        "New complete gain requires signed K12 bound, not just paid D12.",
+        "No automatic all-order estimate or third old upper-tail packet attempt."
+      ]
+    },
+    "completion_criteria": [
+      "Three frozen reports including isolated collision derivation.",
+      "Nonauthor finite-algebra and full actual certificate/restoration reviews.",
+      "Exact Wolfram controls locally reproduced, diagnostic only.",
+      "Validated State Patch, graph/history preservation, explicit first gap and terminal decision."
+    ],
+    "controls": [
+      "probability_normalization",
+      "actual_full_harmonics",
+      "rapid_single_pair",
+      "signed_collision_sum",
+      "connected_absolute_control",
+      "complete_budget",
+      "no_signed_lower_bound",
+      "wolfram_local_exact",
+      "blind_isolation",
+      "history_preservation"
+    ],
+    "tasks": [
+      {
+        "id": "signed_connected_attack",
+        "role": "discovery",
+        "access_mode": "selected_context",
+        "target": "Attempt the actual signed connected aggregate. Prove or refute D12<<T^(1+epsilon) using precise mixed-radius collision algebra and lower actual moments, paying singleton/pair partitions and infinite tails. Then seek a genuinely quantitative bound on K12; state the exact first gap if unavailable. Give complete conditional restoration and controls. Do not read sibling reports.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/gc-connected-cumulant-test/briefs/actual_interface.md",
+          "proofs/kernels/gc_complete_fixed_even_moment_distinct_absorption.md",
+          "proofs/kernels/gc_complete_distinct_radical_moment_reduction.md",
+          "proofs/kernels/gc_complete_square_root_large_values_moment_bound.md"
+        ],
+        "required_controls": [
+          "probability_normalization",
+          "actual_full_harmonics",
+          "rapid_single_pair",
+          "signed_collision_sum",
+          "connected_absolute_control",
+          "complete_budget",
+          "no_signed_lower_bound",
+          "wolfram_local_exact",
+          "blind_isolation",
+          "history_preservation"
+        ],
+        "required_output": [
+          "Seven protocol sections, exact context hashes, proof or first gap, controls and state recommendation.",
+          "Write only assigned report, hash and stop; no successor."
+        ],
+        "status": "assigned",
+        "report_path": "rounds/codex-managed/gc-connected-cumulant-test/reports/signed_connected_attack.md"
+      },
+      {
+        "id": "connected_certificate_audit",
+        "role": "barrier_no_go",
+        "access_mode": "selected_context",
+        "target": "Test whether C_conn can meet29/25 after all full-harmonic cumulant subtractions. Independently prove requisite absolute block bounds and audit the prior full-harmonic lower-mass proof; derive a scoped actual no-go or locate its gap. Do not mistake it for a lower bound on signed K/I or a theorem rejecting all cumulant methods. Do not read sibling reports.",
+        "context_files": [
+          "protocol.md",
+          "state/proof_obligations.yml",
+          "state/active_campaign.yml",
+          "rounds/codex-managed/gc-connected-cumulant-test/briefs/actual_interface.md",
+          "proofs/kernels/gc_complete_fixed_even_moment_distinct_absorption.md",
+          "proofs/kernels/gc_complete_distinct_radical_moment_reduction.md",
+          "proofs/kernels/gc_complete_square_root_large_values_moment_bound.md",
+          "strategy/round231_harmonic_admission/conductor_harmonic_obstruction.md",
+          "strategy/round231_harmonic_admission/reports/blind_harmonic_pooling.md",
+          "strategy/round231_harmonic_admission/reviews/harmonic_pooling_seam_review.md"
+        ],
+        "required_controls": [
+          "probability_normalization",
+          "actual_full_harmonics",
+          "rapid_single_pair",
+          "signed_collision_sum",
+          "connected_absolute_control",
+          "complete_budget",
+          "no_signed_lower_bound",
+          "wolfram_local_exact",
+          "blind_isolation",
+          "history_preservation"
+        ],
+        "required_output": [
+          "Seven protocol sections, exact context hashes, proof or first gap, controls and state recommendation.",
+          "Write only assigned report, hash and stop; no successor."
+        ],
+        "status": "assigned",
+        "report_path": "rounds/codex-managed/gc-connected-cumulant-test/reports/connected_certificate_audit.md"
+      },
+      {
+        "id": "blind_collision_bound",
+        "role": "blind_rederiver",
+        "access_mode": "statement_only",
+        "target": "Solve only isolated_collision.md. About10 minutes; provide independent proof or counterexample, uniformity and domination, exact control, then freeze and stop.",
+        "context_files": [
+          "protocol.md",
+          "rounds/codex-managed/gc-connected-cumulant-test/briefs/isolated_collision.md"
+        ],
+        "required_controls": [
+          "signed_collision_sum",
+          "blind_isolation"
+        ],
+        "required_output": [
+          "Seven protocol sections, exact context hashes, proof or first gap, controls and state recommendation.",
+          "Write only assigned report, hash and stop; no successor."
+        ],
+        "status": "assigned",
+        "report_path": "rounds/codex-managed/gc-connected-cumulant-test/reports/blind_collision_bound.md",
+        "excluded_context": [
+          "All except protocol.md, isolated_collision.md and own brief; no graph, application or sibling."
+        ]
+      }
+    ],
+    "review_seams": [
+      {
+        "id": "signed_remainder",
+        "requirement": "Mixed-radius collision algebra, full moment inputs and no absolute-value swap."
+      },
+      {
+        "id": "certificate_scope",
+        "requirement": "Actual lower certificate, every harmonic, Schwartz tail, cumulant correction and scope."
+      },
+      {
+        "id": "complete_restoration",
+        "requirement": "Correct normalized/unnormalized factors, accepted216 costs and open target."
+      }
+    ],
+    "exit_labels": [
+      "connected_correlation_complete_gain_reviewed",
+      "connected_correlation_test_closed_without_complete_gain"
+    ],
+    "conductor_interventions": [
+      "Closed233 enables the new fixed-order parent; remaining arithmetic estimate is still open.",
+      "Freeze a concrete connected-correlation mechanism and its falsifiable absolute-cluster claim; no premise that cumulants behave independently."
+    ]
+  },
+  "provenance": {
+    "graph_path": "state/proof_obligations.yml",
+    "graph_sha256": "dd743db27ed8eaac685d23dd2f92da743dd2d1742c2f150ddecf802dbbca5306",
+    "generated_at": "2026-10-12T00:32:49.020996+00:00"
+  },
+  "artifact_policy": {
+    "state_owner": "conductor_only",
+    "computation": "diagnostic_only",
+    "allowed_workflow_changes": [
+      "state/active_campaign.yml",
+      "state/next_round_plan.yml",
+      "state/current_round.md",
+      "state/next_campaign.md",
+      "state/project_summary.md",
+      "state/current_state.md",
+      "state/round_ledger.yml",
+      "state/validation_matrix.yml",
+      "state/failure_ledger.md",
+      "state/last_validation.md",
+      "state/last_validation_report.md",
+      "manifests/reading_packet.md"
+    ],
+    "promotion_rule": "No graph promotion without separate reviewed kernel and all green gates."
+  }
+}

@@ -1,3 +1,119 @@
+# Round235 signed sixth-order strategy update
+
+- Full-band repeat budget47/125 and complete Hankel error budget T N^(-6) are paid; these are component reductions, not a new actual M6 estimate.
+- Exact grouping retains odd-q chi4(q) and4|q chi4(a) branches. Their coefficient square-sum O(H0 log T) pays the paired sixth sector. Single-denominator exact-zero tuples are also paid. Mixed-denominator nonpaired relations remain.
+- Natural center resolution is T^(-2). The actual moving-cutoff coefficients have bounded variation, yielding only a min(T^2,1/|Lambda|) tuple bound without additional endpoint work. Never assume arbitrarily rapid phase decay across jumps.
+- The actual interior-block grouped tuple-absolute certificate is at least cT^6 H0, far above T^(2+1/100)H0^3. This rejects that certificate, not the signed estimate or all dispersion methods. Full-window signs and negative contributions were checked.
+- The isolated constant-coefficient countercontrol has absolute mass of order L H^6 and exactly zero signed total. It is not an r2 counterexample. The different progression thresholds are1/b and1/(4b).
+- CRT full-period density leaves an unpaid discrepancy when the joint modulus exceeds the T^2 center window. Six factors share one center; no independence is granted.
+- S6 is sufficient blockwise; no reverse implication from the full band to each block is claimed. Only the full-band M6 and its one-sided distinct-six target are proved equivalent. The exact margin into29/25 is small and positive; the improvement itself is unproved.
+- Graph/draft unchanged. Prior source qualifications and the closed two-attempt upper-tail reassessment are preserved. A successor needs a new quantitative signed estimate, not a repeat of these paid identities.
+
+Exact proofs and nonauthor reviews: rounds/codex-managed/gc-signed-sixth-dispersion/.
+
+---
+
+## Historical record retained below
+
+# Round235 active: signed sixth-moment dispersion
+
+Test the literal norm-band M6 bound at193/500 through actual odd short-interval r2 packets and signed reciprocal-fraction dispersion. Complete29/25 restoration, character branches, errors and controls are part of the task. The target is conjectured, not a proved input. Three bounded tasks and independent review; graph and draft unchanged pending validation. No automatic successor.
+
+Keep the234 absolute connected-cluster obstruction, old two-attempt upper-tail reassessment, all moving-cutoff errors, and the two character branches. A compact-frequency identity is not a sixth moment estimate.
+
+---
+
+# Round234 connected-correlation strategy update
+
+- Actual normalized first- and second-order distinct-class absolute means are rapidly small under the fixed smooth radius window; this is not a claim about diagonal pairs or independence.
+- Exact mixed-radius collision algebra pays the SIGNED disconnected12 contribution at T^(1+epsilon), using actual lower moments through9. Never move absolute values inside the label-tuple sum in this argument.
+- With all harmonics pooled, the actual absolute connected12 certificate is still >=cT^(5/2). The cumulative absolute correction is <=T^(9/4+epsilon). This excludes the proposed tuplewise absolute connected bound at29/25, but not signed connected methods.
+- The paid identity I12=K12+O(T^(1+epsilon)) supplies no new K12 estimate. The first gap remains K12<=T^(29/25+epsilon); complete restoration would give102/325 only conditionally. A twelfth moment does not imply quarter.
+- Artificial constant and centered Walsh controls distinguish lower moments/pair decorrelation from higher-order independence. They are not actual r2 counterexamples; the actual certificate lower bound has a separate full-harmonic proof.
+- Graph/draft unchanged; new proofs remain reviewed campaign evidence. All inherited source qualifications and accepted233 fixed-order quantifiers remain in force.
+- One attempt on this separate connected premise is complete; the old two-attempt upper-tail reassessment is not reset. Further use requires a quantitative cross-tuple signed mechanism, not another subtraction identity or absolute cluster norm.
+
+Exact proofs/reviews: rounds/codex-managed/gc-connected-cumulant-test/.
+
+---
+
+## Historical record retained below
+
+# Round233 closed strategy and barrier update
+
+- All-fixed-even-order relative absorption is now accepted. It pays repeated-class terms by delta M_p+C J, not by the baseline T^((p-4)beta) ceiling. This is a new complete reduction, not a signed moment estimate.
+- I_p and E_p can be negative; keep the offset C J and its negative-part bound. At Q=1, J and the complete small-class head cost O_p(T).
+- For floor(T^(1/p)), the head floor is at most5/4, refined to1+(p-136/13)_+/(4p). The optional head derivation has1<=Q<=T. Floors, all harmonics and every mixed head/tail term are paid.
+- The actual signed I_(p,Q) upper bounds remain OPEN. Distinct radicals give nonzero frequencies only. The accepted absolute-certificate lower bound T^(p/4-1/2) applies to the chosen cutoffs and bars a tuplewise absolute route to sublinear order exponents; it is not a lower bound for signed I.
+- p is fixed before T. Large p-dependent constants are harmless only with this quantifier order; do not set p=p(T).
+- Retain216's stronger additive twelfth-order result. The relative reduction does not overwrite it and produces no complete moment or pointwise gain by itself.
+- Previous upper-tail attempt count remains2. No third relabeled local product cutoff attempt is authorized by this new bridge. A successor needs a concrete actual aggregate mechanism with a quantified complete implication and tests; a conjectured lemma may be admitted for bounded exploration.
+
+Evidence: rounds/codex-managed/gc-fixed-order-moment-absorption/synthesis.md and the reviewed accepted kernel.
+
+---
+
+## Historical record retained below
+
+# Round233 active: fixed-order repeated-class absorption
+
+Test the relative partition inequality and its actual all-fixed-even-order complete bridge. The signed distinct-class integral remains unestimated. Three bounded tasks, independent review, and exact Wolfram/local controls are required. This changes mathematical interface after the two-attempt upper-tail reassessment; no old attempt count is reset. Graph and proof draft remain unchanged pending reviewed promotion.
+
+Do not replace I_p by a tuplewise absolute certificate, assert positivity of E_p, let p grow with T, or omit the head/infinite harmonics. A relative error is not the stronger additive216 estimate.
+
+---
+
+# Round232 closed barrier packet
+
+- Near products up to sqrt(T) and separated gcd(h,h')>=T^(1/4) are paid at powers-3/250 and-9/500 on the original E. Exact products are in the first sector; preserve disjoint ownership.
+- Remaining signed small-gcd separated energy at-a*=-(10beta-32/25) is OPEN. The full signed zero-power bound cannot be used to cap an unsigned subcollection; its elementary absolute certificate costs T^(29/125+epsilon).
+- Apply local product truncation to A_p=sum of absolute elementary labels. Rapid atomic l1 tails pay every mixed term. Grouped cancellation alone cannot control an h-selected sector.
+- The close matrix is not PSD. Blind nonlinear diagonal interpolation is valid, but a cost-free linear transfer is false at generic-envelope scope.
+- Small-gcd progressions are wider than the packets; odd-odd CRT centers need not vary slowly across differences. The actual h=T,h'=T+4 control refutes only smooth-component-uniform pointwise alternation/variation savings, including fixed refinements. No actual E lower bound or unsplit/full aggregate impossibility follows.
+- Actual coefficients, all odd modes, real branches, both tails, threshold, exact complementary owners and selected-set errors remain mandatory. Complete32/25 remains conditional and is not a pointwise benchmark gain.
+- Two unchanged-premise attempts are complete and the required reassessment is recorded. Do not auto-launch a third local-cutoff or transform variant. New exploratory admission requires a materially different quantified mechanism; it may start from a precise conjectured lemma.
+
+Evidence: rounds/codex-managed/gc-upper-tail-separated-products/synthesis.md and its reports, independent reviews, controls and strategy reassessment.
+
+---
+
+## Historical record retained below
+
+# Round232 active barrier packet
+
+The actual selected set E is retained. Exact/near product collisions must be paid, not deleted. The close-band matrix is not automatically positive. No arbitrary-mask ceiling, pairwise decorrelation, slow-indicator replacement, or unsigned shifted-product estimate implies a gain. Full second-Poisson modes, transitions, small factors, all errors and complete owners remain. Attempt2 requires reassessment if no complete gain.
+
+Interface: rounds/codex-managed/gc-upper-tail-separated-products/briefs/actual_interface.md.
+
+---
+
+# Round231 closed barrier and strategy packet
+
+- Target A and its integrated alternative remain OPEN. No actual high-tail lower bound or all-method impossibility was proved.
+- The sufficient energy Q_tail<=T^(-a*+epsilon), a*=10beta-32/25, must retain the actual full-F exceptional set. The signed product covariance budget is T^(2-a*), with both amplitude and radius Jacobian paid.
+- Small signed first averages, kernel oddness and a slow-window covariance are not this exceptional-set bound. Positive near covariance survives oddness.
+- Same-two-adic frequencies have rigid character signs on each product-difference class. Actual localized components refute uniform power-saving pairwise decorrelation for every distinct pair. Mixed-valuation alternation requires actual weight/range control.
+- One product packet has size at most T^(-1/2+epsilon); high events require at least T^(157/250-epsilon) distinct signed packets in a rectangle. This is a necessary count, not an event-probability estimate.
+- Nearest-q identities require unique ownership; the second-Poisson all-q formula instead has genuine distinct Fourier indices. Boundary ties include both aliases. The negative branch is conjugate.
+- Both tails, the threshold boundary, all smooth transitions, infinite complementary tail, small factors and summed errors remain paid. No arbitrary-mask ceiling or automatic F/C threshold-tail equivalence is allowed.
+- Accepted theta=(1+2beta)/4; conditional32/25 is a moment milestone only. Attempt1 closed without a complete gain; no Round232 launch.
+
+Evidence: rounds/codex-managed/gc-actual-upper-tail-a/synthesis.md, frozen reports, nonauthor reviews and controls. These scoped controls do not reject aggregate signed cancellation.
+
+---
+
+## Historical record retained below
+
+# Round231 active barrier packet
+
+Graph SHA256: a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b.
+
+Actual F_(16/125), fixed real coefficients and full band only. No arbitrary-mask ceiling; exact real resonance zeros do not remove detuned fibres or imply high-moment cancellation. Oddness controls a mean, not automatically a positive moment. Absolute reciprocal counting returns the known sqrt(T/N) envelope. Preserve both distribution terms, ceiling epsilon, q ownership, all errors/norms/tails and complete complementary budgets. Existing generic and coefficient-energy obstructions retain their exact scope.
+
+Exact context: rounds/codex-managed/gc-actual-upper-tail-a/briefs/actual_interface.md.
+
+---
+
 # Failure Ledger
 
 Generated from `state/proof_obligations.yml`; edit the graph rather than this derived file.

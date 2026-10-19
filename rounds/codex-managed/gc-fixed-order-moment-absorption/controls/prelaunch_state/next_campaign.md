@@ -1,0 +1,11 @@
+# Round232 closed: two collision sectors paid; complete upper-tail gain open
+
+12 October2026 Asia/Shanghai. The continued bounded attempt is complete, with three frozen reports, independent review, exact finite controls and the mandatory reassessment after attempt2. Nearby products at distance at most sqrt(T) cost T^(-3/250+epsilon); the remaining distinct products with gcd(h,h')>=T^(1/4) cost T^(-9/500+epsilon). Both lie below the required energy power-a*, a*=10beta-32/25=0.009663519481... . All modes, elementary cross terms, tails, errors and the original exceptional set are retained.
+
+The precise missing estimate is the one-sided signed aggregate over product gaps>sqrt(T) and gcd(h,h')<T^(1/4), on E={|F_(16/125)|>T^(16/125)}. Q_E(F) equals that remainder up to O(T^(-3/250+epsilon)). The actual small-gcd control rejects only a uniform pointwise alternation/variation certificate across smooth components; it neither disproves target A nor estimates the full event. Component bounds remain reviewed evidence, not accepted complete mathematics.
+
+An identity State Patch preserves the401-node graph and proof draft. Complete10beta=1.289663519481... and the pointwise benchmark0.314483175974... remain unchanged. Complete32/25 is still conditional and would give the weaker pointwise207/650. Quarter, M1/M2 and endpoints remain open; Round216 is only its stated twelfth-order reduction.
+
+The two-attempt review ends this elementary local-count/termwise-alternation cycle. Any new attempt needs a concrete aggregate arithmetic mechanism or a different complete parent, with an explicit conjectured lemma, a bypass of existing controls, full conditional costs and falsification tests. It need not prove its lemma before exploratory admission. Equivalent transforms or cutoff changes do not reset the attempt count. Round233 is pending design, has no tasks and is not automatically launched.
+
+Authoritative record: rounds/codex-managed/gc-upper-tail-separated-products/synthesis.md. Strategy reassessment: candidates/strategy_reassessment.md in that campaign. Mechanical closure: controls/closure_validation.json. Historical snapshots below are retained evidence, not current instructions.

@@ -1,0 +1,15 @@
+# Conductor review of the isolated collision report
+
+Round234, 2026-10-12 Asia/Shanghai. Exact report SHA256 `035febf79ed5f6acc569ad2109f1091b9d014e382a1305b65671743108e9bc7c`. Report: `reports/blind_collision_bound.md`. Initial statement-only isolation is preserved; the report was frozen before expanded context.
+
+Verdict: PASS for the signed lemma and the explicitly artificial absolute-sum controls. No graph promotion is implied.
+
+The equality-partition coefficient is the product over components of signed cycle counts, distinct from the cumulant coefficient indexed by the number of blocks. Mixed-radius components with total degree at least2 are bounded by Holder and the pointwise l2 mass; singleton components alone produce the complete Z at the relevant independent radius. The maximum singleton degree at one radius is its original block size, at most9. The final constant12! max(1,H)^12 max(1,L_1,...,L_9)^k is valid, including H=0. It is independent of label count.
+
+The countable caveat is necessary and correctly stated. Bounds on the full signed Z do not control arbitrary partial sums. An actual interchange assumption, such as E(sum|x_d|)^9<infinity, is required to identify the written tuple series with the integral of the pointwise sum. In the actual circle application each fixed T has a uniform finite coefficient l1 majorant, so this condition holds; its magnitude does not enter the lemma's final constant. There is no T-uniform absolute l1 hypothesis.
+
+The deterministic balanced control follows from (1-z^2/N)^(N/2). Its signed distinct12 sum is bounded while its absolute sum grows as N^6. All its higher joint cumulants vanish because its variables are constant; it cannot prove an actual cumulant lower bound, and the conductor candidate explicitly says so.
+
+The stronger Walsh control is also sound. The nonzero characters have zero means and diagonal covariance; summing the quadratic sign twist over one half of F2^(2n) yields sqrt(q)(-1)^(u dot v), so |Z|<=(sqrt(q)+1)/sqrt(q-1)<=sqrt(3) for q>=4. For each block of size>=3, the free-coordinate linear forms and their forced sum are nonzero and pairwise different; distinct blocks use disjoint coordinates. Each zero-label or collision equation is therefore a nonzero surjective map to G and has exactly1/q of all solutions. A union bound over12+66 conditions gives the stated positive count for q>78. All block-moment absolute values are(q-1)^(-m/2). This establishes the asserted divergence under centered, uncorrelated data while retaining uniformly bounded global moments. It does not assert mutual independence or model the actual r2 coefficients.
+
+Independent local six-position tests reproduce the collision identity exactly and verify the signed-versus-absolute distinction; the analytical proof, not these finite cases, covers twelve positions and arbitrary families. All seven output sections, context hashes and scope limitations are present. Retain as reviewed evidence; the active mathematical state is conductor-owned.

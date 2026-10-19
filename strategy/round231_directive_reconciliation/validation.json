@@ -1,0 +1,63 @@
+{
+  "checked_at": "2026-10-11T14:13:28.487477+00:00",
+  "status": "passed",
+  "evidence_level": "diagnostic_only; analytical proofs and source matching remain necessary",
+  "checks": {
+    "critical_saving": "1/32",
+    "envelope_boundary_and_interior_checks": "pass",
+    "exact_prefix_selector_cases": 5200,
+    "complement_gamma_13/125": "29/25",
+    "complement_gamma_16/125": "32/25",
+    "moment_b_1": {
+      "lambda": "0",
+      "pointwise": "4/13"
+    },
+    "moment_b_29/25": {
+      "lambda": "2/25",
+      "pointwise": "102/325"
+    },
+    "moment_b_32/25": {
+      "lambda": "7/50",
+      "pointwise": "207/650"
+    },
+    "decimal_diagnostics": {
+      "theta": "0.3144831759740614067358071739415398029498857539677224445906062036641435",
+      "beta": "0.1289663519481228134716143478830796058997715079354448891812124073282870",
+      "accepted_b12": "1.289663519481228134716143478830796058997715079354448891812124073282870",
+      "pointwise_b12_threshold": "1.176562575325596575130986522480034876697029603160783559355761295267731",
+      "sharp_lambda_threshold": "0.088281287662798287565493261240017438348514801580391779677880647633866",
+      "central_gamma_threshold": "0.1147656739616377738351412396120226698530692420545093135812448419240252"
+    },
+    "workflow_keys_changed": [
+      "candidate_objective",
+      "strategy_reconciliation"
+    ]
+  },
+  "protected_files_verified": 4775,
+  "validation": [
+    {
+      "command": [
+        "C:\\Users\\yutia\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-m",
+        "math_collab.validate_state_patch"
+      ],
+      "exit_code": 0,
+      "stdout": "Graph OK: D:\\BaiduSyncdisk\\Codex\\gauss circle\\state\\proof_obligations.yml\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\yutia\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-m",
+        "math_collab.campaigns",
+        "validate"
+      ],
+      "exit_code": 0,
+      "stdout": "Campaign OK: D:\\BaiduSyncdisk\\Codex\\gauss circle\\state\\active_campaign.yml\n",
+      "stderr": ""
+    }
+  ],
+  "graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+  "analytic_campaign_launched": false,
+  "state_patch_applied": false
+}

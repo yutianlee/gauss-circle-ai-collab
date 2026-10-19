@@ -1,0 +1,213 @@
+{
+  "schema_version": 1,
+  "round_index": 231,
+  "round_type": "bounded_actual_upper_tail_analytic_attempt",
+  "campaign_id": "gc-actual-upper-tail-a",
+  "title": "Actual upper-tail target A: signed reciprocal-radius attempt",
+  "status": "complete",
+  "max_concurrency": 3,
+  "coordinator": "Codex",
+  "starting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+  "generated_at": "2026-10-11T15:09:21.434192+00:00",
+  "attempt_on_current_premise": 1,
+  "resource_policy": {
+    "analytical_algebraic_minimum_percent": 95,
+    "numerical_experimental_maximum_percent": 5,
+    "planned_numerical_percent": 3,
+    "budget": "Three bounded initial tasks (about10-12 minutes each), conductor analytic restoration and exact finite controls, one independent review/repair cycle. No automatic successor."
+  },
+  "target_obligations": [
+    "GC-target",
+    "GC-complete-square-root-large-values-moment-bound",
+    "GC-complete-distinct-radical-twelfth-reduction"
+  ],
+  "frozen_target": {
+    "question": "Can actual signed reciprocal-frequency and radius information improve upper-tail target A, or its integrated version, sufficiently to prove complete moment32/25? If the tested mechanism fails, what exact quantitative seam remains?",
+    "reference_formula": "F=F_(16/125); D_F(V)<=T^epsilon[T^(-1/100)V^-2+T V^(-136/13)] for V>=T^(16/125), or12 integral_(T^(16/125))^infinity V^11D_F(V)dV<=T^(32/25+epsilon).",
+    "quantities": [
+      "Actual fixed r2 coefficients, real cosine, all real T/radii, full smooth band, exact complementary restoration.",
+      "A is open; no theorem required before exploration; promotion requires full validation.",
+      "Complete32/25 would improve moments only, not the pointwise benchmark.",
+      "Use exact phase/character signs and q ownership; no arbitrary-mask ceiling or individual-fibre square-root premise."
+    ]
+  },
+  "completion_criteria": [
+    "All three bounded reports frozen or explicitly terminated.",
+    "At least one statement-only independent important lemma plus nonauthor review of discovery and conductor complete restoration.",
+    "Actual exact/degenerate/detuned controls and bounded local reproduction archived.",
+    "All complete owners and both tail terms restored; unsuccessful mechanism scoped to its proved limit.",
+    "Green validation matrix and mechanically valid State Patch; protect accepted graph/draft unless a fully validated promotion exists.",
+    "Conductor synthesis and round-ledger closure; no automatic Round232 launch."
+  ],
+  "controls": [
+    "actual_coefficients",
+    "odd_resonance_and_detuning",
+    "unique_q_and_branches",
+    "all_scales_errors_tails",
+    "threshold_and_both_tail_terms",
+    "generic_capacity_not_arithmetic_lower_bound",
+    "blind_independence",
+    "full_restoration",
+    "source_scope",
+    "graph_preservation"
+  ],
+  "tasks": [
+    {
+      "id": "signed_upper_tail_attack",
+      "role": "discovery",
+      "access_mode": "selected_context",
+      "target": "Make a bounded actual mathematical attempt on target A for the frozen smooth full band. Preserve real odd reciprocal kernels and radius averaging. Try to obtain a signed local product-discrepancy, exceptional-set or integrated-tail inequality that improves the complete32/25 budget, with all stationary errors and norm scales restored. A new exact representation alone is insufficient. Work beyond the inherited absolute product count; identify the first quantitative inequality that cannot be proved if unsuccessful. You may derive a useful subestimate, but state its complete effect. Do not assume reflection symmetry or independence. Approximately12 minutes, one report and one later assigned review/repair cycle; no successor.",
+      "context_files": [
+        "protocol.md",
+        "state/proof_obligations.yml",
+        "state/active_campaign.yml",
+        "rounds/codex-managed/gc-actual-upper-tail-a/briefs/actual_interface.md",
+        "strategy/gauss_circle_upper_tail_strategy_2026-10-11.md",
+        "proofs/kernels/gc_complete_square_root_large_values_moment_bound.md",
+        "strategy/round231_balanced_cancellation/conductor_combined_owner.md",
+        "strategy/round231_balanced_cancellation/conductor_seam_repairs.md",
+        "strategy/round231_balanced_cancellation/reports/balanced_reciprocal_attack.md"
+      ],
+      "required_controls": [
+        "actual_coefficients",
+        "odd_resonance_and_detuning",
+        "unique_q_and_branches",
+        "all_scales_errors_tails",
+        "threshold_and_both_tail_terms",
+        "generic_capacity_not_arithmetic_lower_bound",
+        "blind_independence",
+        "full_restoration",
+        "source_scope",
+        "graph_preservation"
+      ],
+      "required_output": [
+        "Seven protocol sections with exact proof/gap and complete exponent ledger.",
+        "Assigned report only; freeze SHA256; stop."
+      ],
+      "status": "complete",
+      "report_path": "rounds/codex-managed/gc-actual-upper-tail-a/reports/signed_upper_tail_attack.md",
+      "report_sha256": "ccd6592b215eecd1c38909fb088d40de2f0ea0b1916b1e568a58d54ba3c94e20"
+    },
+    {
+      "id": "resonance_hostile_controls",
+      "role": "barrier_no_go",
+      "access_mode": "selected_context",
+      "target": "Independently attack the signed-resonance strategy with actual arithmetic controls. Test whether pairing across integer products can force cancellation, keeping unique q assignment, coincident/near products, both chi4 signs, real detuning and all sharp radius boundaries. Attempt a rigorous actual-product covariance/diagonal classification or a quantitative limitation of a precise proposed certificate. Find the strongest diagnostic that addresses high-level aggregate events rather than merely repeating the known individual-fibre counterexample. Do not assert generic model controls are actual lower bounds; do not reject target A without an actual proof. Bound work to approximately12 minutes/one report and one review cycle.",
+      "context_files": [
+        "protocol.md",
+        "state/proof_obligations.yml",
+        "state/active_campaign.yml",
+        "rounds/codex-managed/gc-actual-upper-tail-a/briefs/actual_interface.md",
+        "strategy/gauss_circle_upper_tail_strategy_2026-10-11.md",
+        "proofs/kernels/gc_complete_square_root_large_values_moment_bound.md",
+        "strategy/round231_balanced_cancellation/conductor_combined_owner.md",
+        "strategy/round231_balanced_cancellation/conductor_seam_repairs.md",
+        "strategy/round231_balanced_cancellation/reports/balanced_reciprocal_attack.md"
+      ],
+      "required_controls": [
+        "actual_coefficients",
+        "odd_resonance_and_detuning",
+        "unique_q_and_branches",
+        "all_scales_errors_tails",
+        "threshold_and_both_tail_terms",
+        "generic_capacity_not_arithmetic_lower_bound",
+        "blind_independence",
+        "full_restoration",
+        "source_scope",
+        "graph_preservation"
+      ],
+      "required_output": [
+        "Seven protocol sections, actual versus model controls explicitly separated, first gap, full-scale consequences.",
+        "Assigned report only; freeze SHA256; stop."
+      ],
+      "status": "complete",
+      "report_path": "rounds/codex-managed/gc-actual-upper-tail-a/reports/resonance_hostile_controls.md",
+      "report_sha256": "89693f8519e735dbdd9582850e5465c85fef30835aeab50e398b16fe34f837e8"
+    },
+    {
+      "id": "blind_odd_kernel_covariance",
+      "role": "blind_rederiver",
+      "access_mode": "statement_only",
+      "target": "Solve only the isolated odd-kernel mean/covariance problem in the statement packet. Prove or refute any claimed power gain; derive a sharp signed-discrepancy/Fourier-norm interface if useful. Do not read the actual campaign/interface, graph or siblings. Approximately10 minutes/one report, then stop.",
+      "context_files": [
+        "protocol.md",
+        "rounds/codex-managed/gc-actual-upper-tail-a/briefs/blind_odd_kernel_statement.md"
+      ],
+      "excluded_context": [
+        "Every file except protocol.md, blind_odd_kernel_statement.md and own generated brief; no graph, active manifest, actual interface, history, sources or sibling reports."
+      ],
+      "required_controls": [
+        "blind_independence",
+        "generic_capacity_not_arithmetic_lower_bound",
+        "odd_resonance_and_detuning"
+      ],
+      "required_output": [
+        "Seven numbered protocol sections; exact hypotheses, proof, first gap, analytic controls and isolation provenance.",
+        "Assigned report only; freeze SHA256; stop."
+      ],
+      "status": "complete",
+      "report_path": "rounds/codex-managed/gc-actual-upper-tail-a/reports/blind_odd_kernel_covariance.md",
+      "report_sha256": "b4333428aee065f580ee3adae0a4b6a6ef952c9be115eb8638fa926f130de810"
+    }
+  ],
+  "review_seams": [
+    {
+      "id": "signed_arithmetic",
+      "requirement": "Actual character, product pairing, q ownership and real phase"
+    },
+    {
+      "id": "analytic_uniformity",
+      "requirement": "Radius endpoints, amplitudes, derivatives and all errors"
+    },
+    {
+      "id": "complete_power",
+      "requirement": "Both tails, actual ceiling, boundary and full restoration"
+    },
+    {
+      "id": "blind_control",
+      "requirement": "Independent odd-kernel scope versus arithmetic implications"
+    }
+  ],
+  "exit_labels": [
+    "upper_tail_A_complete_gain_requires_promotion",
+    "upper_tail_A_attempt_closed_without_complete_gain"
+  ],
+  "conductor_interventions": [
+    "User explicitly authorized bounded analytic Round231; strategy-only pending status is now superseded.",
+    "Three tasks are orthogonal discovery, actual hostile controls and isolated analytic covariance; no sibling reading during initial work.",
+    "Initial reports frozen before context expansion; one bounded nonauthor review cycle assigned, including conductor restoration and isolated analytic report.",
+    "Bounded initial work stopped at a precise exceptional-set gap; no additional discovery cycle launched.",
+    "Four nonauthor seams completed. Independent review corrected only the conductor theta convention against a frozen original; correction verified.",
+    "Close attempt1 with an identity patch after green scoped gates; preserve all accepted parents and historical artifacts."
+  ],
+  "initial_reports_frozen_at": "2026-10-11T15:23:59.597746+00:00",
+  "review_assignments": [
+    {
+      "reviewer": "round231_actual_controls",
+      "claimant": "signed_upper_tail_attack",
+      "report": "reviews/independent_signed_tail_review.md"
+    },
+    {
+      "reviewer": "round231_signed_tail",
+      "claimant": "resonance_hostile_controls",
+      "report": "reviews/independent_actual_controls_review.md"
+    },
+    {
+      "reviewer": "round231_blind_odd_kernel_after_initial_freeze",
+      "claimant": "conductor_tail_restoration",
+      "report": "reviews/independent_complete_restoration.md"
+    },
+    {
+      "reviewer": "conductor",
+      "claimant": "blind_odd_kernel_covariance",
+      "report": "reviews/conductor_blind_analytic_review.md"
+    }
+  ],
+  "completed_at": "2026-10-11T15:32:55.521460+00:00",
+  "terminal_label": "upper_tail_A_attempt_closed_without_complete_gain",
+  "closing_assessment": "Bounded target-A attempt isolates sufficient actual exceptional-set quadratic saving a*=10beta-32/25, but obtains no such saving. Exact product representation and actual localized covariance controls rule out only the tested first-average/uniform-pair-decorrelation shortcuts. Independent review passes after the explicit theta convention repair. Accepted complete10beta and all parent/quarter statuses remain unchanged.",
+  "state_patch": "rounds/codex-managed/gc-actual-upper-tail-a/state_patch.json",
+  "synthesis": "rounds/codex-managed/gc-actual-upper-tail-a/synthesis.md",
+  "attempts_on_current_premise_completed": 1,
+  "next_round_automatic": false
+}

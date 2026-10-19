@@ -1,0 +1,96 @@
+{
+  "round_index": 231,
+  "campaign_id": "gc-actual-upper-tail-a",
+  "conductor_review_complete": true,
+  "result": "upper_tail_A_attempt_closed_without_complete_gain",
+  "reason": "Bounded target-A attempt isolates sufficient actual exceptional-set quadratic saving a*=10beta-32/25, but obtains no such saving. Exact product representation and actual localized covariance controls rule out only the tested first-average/uniform-pair-decorrelation shortcuts. Independent review passes after the explicit theta convention repair. Accepted complete10beta and all parent/quarter statuses remain unchanged.",
+  "reviewed_artifact_hashes": {
+    "rounds/codex-managed/gc-actual-upper-tail-a/reviews/independent_signed_tail_review.md": "dbcb1eb37c35c50e9cf69220ed235708de8252e9fde7737f79809bd6c93e8235",
+    "rounds/codex-managed/gc-actual-upper-tail-a/reviews/independent_actual_controls_review.md": "90626beac5b2bb38331884b13d4d493599c7a540688d5e6d8684d86aadcb2a48",
+    "rounds/codex-managed/gc-actual-upper-tail-a/reviews/independent_complete_restoration.md": "596521a43af94c57c2fba8e5698128bf40aceb512d0bf3a7cdc36b77094fe103",
+    "rounds/codex-managed/gc-actual-upper-tail-a/reviews/conductor_blind_analytic_review.md": "ce29797ac9079c188d59e36a53d317c6b615d0c67ff807d887af49a99e75b1e6",
+    "rounds/codex-managed/gc-actual-upper-tail-a/candidates/conductor_tail_restoration.md": "792af94bcaa73cff66e837f5382eef9baf96d6e51171954f70229dbb168c36d3",
+    "rounds/codex-managed/gc-actual-upper-tail-a/candidates/conductor_seam_repairs.md": "c3877cea77e37a11b2919a35a0f692230432a19f912c09737f543600bdc863cd",
+    "rounds/codex-managed/gc-actual-upper-tail-a/synthesis.md": "8f8e7a07d2238728b4f672cc3694ad3431d8c146b7689738c0210452434784a3"
+  },
+  "gates": [
+    {
+      "id": "round231_actual_family",
+      "status": "green_actual_full_band_and_fixed_coefficients",
+      "artifact": "rounds/codex-managed/gc-actual-upper-tail-a/briefs/actual_interface.md"
+    },
+    {
+      "id": "round231_second_poisson",
+      "status": "green_exact_sign_factor_and_distinct_fourier_indices",
+      "artifact": "rounds/codex-managed/gc-actual-upper-tail-a/reviews/independent_signed_tail_review.md"
+    },
+    {
+      "id": "round231_actual_covariance",
+      "status": "green_scoped_positive_negative_disjoint_controls",
+      "artifact": "rounds/codex-managed/gc-actual-upper-tail-a/reviews/independent_actual_controls_review.md"
+    },
+    {
+      "id": "round231_blind_independence",
+      "status": "green_statement_only_frozen_before_context_expansion",
+      "artifact": "rounds/codex-managed/gc-actual-upper-tail-a/reports/blind_odd_kernel_covariance.md"
+    },
+    {
+      "id": "round231_blind_analytic_review",
+      "status": "green_exact_covariance_boundaries_and_discrepancy",
+      "artifact": "rounds/codex-managed/gc-actual-upper-tail-a/reviews/conductor_blind_analytic_review.md"
+    },
+    {
+      "id": "round231_exceptional_set",
+      "status": "green_sufficient_inequality_explicitly_unproved",
+      "artifact": "rounds/codex-managed/gc-actual-upper-tail-a/reviews/independent_signed_tail_review.md"
+    },
+    {
+      "id": "round231_all_scales_errors",
+      "status": "green_complete_band_tail_and_restricted_error_paid",
+      "artifact": "rounds/codex-managed/gc-actual-upper-tail-a/reviews/independent_signed_tail_review.md"
+    },
+    {
+      "id": "round231_complete_restoration",
+      "status": "green_both_tails_boundary_ceiling_and_complements",
+      "artifact": "rounds/codex-managed/gc-actual-upper-tail-a/reviews/independent_complete_restoration.md"
+    },
+    {
+      "id": "round231_theta_repair",
+      "status": "green_localized_repair_independently_verified",
+      "artifact": "rounds/codex-managed/gc-actual-upper-tail-a/candidates/conductor_seam_repairs.md"
+    },
+    {
+      "id": "round231_finite_controls",
+      "status": "green_exact_and_detuned_diagnostic_controls",
+      "artifact": "rounds/codex-managed/gc-actual-upper-tail-a/controls/control_manifest.md"
+    },
+    {
+      "id": "round231_scope_and_no_gain",
+      "status": "green_no_actual_tail_disproof_or_unearned_promotion",
+      "artifact": "rounds/codex-managed/gc-actual-upper-tail-a/synthesis.md"
+    },
+    {
+      "id": "round231_source_scope",
+      "status": "green_no_new_external_theorem_import",
+      "artifact": "rounds/codex-managed/gc-actual-upper-tail-a/synthesis.md"
+    }
+  ],
+  "interventions": [
+    "Bounded initial work stopped at a precise exceptional-set gap; no additional discovery cycle launched.",
+    "Four nonauthor seams completed. Independent review corrected only the conductor theta convention against a frozen original; correction verified.",
+    "Close attempt1 with an identity patch after green scoped gates; preserve all accepted parents and historical artifacts."
+  ],
+  "assessment": {
+    "complete_moment_gain": false,
+    "pointwise_gain": false,
+    "target_A_proved": false,
+    "target_A_disproved": false,
+    "new_actual_component_controls": true,
+    "independent_review_complete": true,
+    "attempts_on_current_premise_completed": 1,
+    "terminal_label": "upper_tail_A_attempt_closed_without_complete_gain"
+  },
+  "future_constraint": "No successor is designed or launched. Use closed231 evidence to select one quantitative actual exceptional-set/aggregate-correlation objective, or revise the mechanism. Pay the rigid collision sector and full owners; an equivalent transform does not reset attempt1. Reassess after at most two attempts on unchanged premises; preserve other complete routes.",
+  "status_summary": "# Round231 closed: upper-tail A remains open\n\n11 October2026. The user-authorized bounded analytic attempt is complete, with three frozen initial reports, four nonauthor review seams, bounded controls and one localized convention repair. No complete moment or pointwise improvement was proved. This is attempt1 on the adopted upper-tail premise; earlier Round231-labelled strategy packets were prelaunch evidence.\n\nThe useful sufficient target is now explicit: for actual F_(16/125), the quadratic energy on {|F|>T^(16/125)} should be bounded by T^(-a*+epsilon), a*=10beta-32/25=0.009663519481... . Its signed reciprocal-product version requires T^(2-a*+epsilon) on the same actual exceptional set. These estimates remain unproved. Exact resonance zeros and small signed first means cannot replace this bound. Actual positive, negative and disjoint covariance controls exclude uniform pairwise decorrelation at their stated component scope; they do not disprove target A.\n\nBoth distribution terms, the threshold boundary, all errors and the exact L/F/H restoration are paid conditionally. Complete32/25 would improve moments only, giving the weaker pointwise consequence207/650. The correct accepted relation is theta=(1+2beta)/4. The graph's401 nodes, accepted exponent10beta=1.289663519481..., pointwise benchmark0.314483175974..., and proof-draft bytes are unchanged under a validated identity State Patch. Quarter, M1/M2 and endpoint obligations remain open; accepted216 is only its stated twelfth-order reduction.\n\nStrategy now requires a quantitative estimate for actual restricted weighted aggregate correlations, including the rigid same-two-adic sector. Another exact transform or a generic odd-kernel argument does not reset the attempt count. Reassess after at most two attempts on unchanged premises. Round232 is pending design with no tasks and no automatic launch.\n\nAuthoritative round record: rounds/codex-managed/gc-actual-upper-tail-a/synthesis.md. Reviews and controls are in that campaign; mechanical closure is recorded in controls/closure_validation.json. Historical snapshots below describe earlier states and are not current launch instructions.",
+  "barrier_summary": "# Round231 closed barrier and strategy packet\n\n- Target A and its integrated alternative remain OPEN. No actual high-tail lower bound or all-method impossibility was proved.\n- The sufficient energy Q_tail<=T^(-a*+epsilon), a*=10beta-32/25, must retain the actual full-F exceptional set. The signed product covariance budget is T^(2-a*), with both amplitude and radius Jacobian paid.\n- Small signed first averages, kernel oddness and a slow-window covariance are not this exceptional-set bound. Positive near covariance survives oddness.\n- Same-two-adic frequencies have rigid character signs on each product-difference class. Actual localized components refute uniform power-saving pairwise decorrelation for every distinct pair. Mixed-valuation alternation requires actual weight/range control.\n- One product packet has size at most T^(-1/2+epsilon); high events require at least T^(157/250-epsilon) distinct signed packets in a rectangle. This is a necessary count, not an event-probability estimate.\n- Nearest-q identities require unique ownership; the second-Poisson all-q formula instead has genuine distinct Fourier indices. Boundary ties include both aliases. The negative branch is conjugate.\n- Both tails, the threshold boundary, all smooth transitions, infinite complementary tail, small factors and summed errors remain paid. No arbitrary-mask ceiling or automatic F/C threshold-tail equivalence is allowed.\n- Accepted theta=(1+2beta)/4; conditional32/25 is a moment milestone only. Attempt1 closed without a complete gain; no Round232 launch.\n\nEvidence: rounds/codex-managed/gc-actual-upper-tail-a/synthesis.md, frozen reports, nonauthor reviews and controls. These scoped controls do not reject aggregate signed cancellation."
+}

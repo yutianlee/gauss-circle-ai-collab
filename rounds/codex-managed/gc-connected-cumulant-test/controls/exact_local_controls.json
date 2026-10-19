@@ -1,0 +1,177 @@
+{
+  "status": "passed",
+  "evidence_level": "diagnostic_only",
+  "cumulant_coefficients": [
+    {
+      "order": 2,
+      "partition_vs_recurrence": true,
+      "constant_cumulant_zero": true
+    },
+    {
+      "order": 3,
+      "partition_vs_recurrence": true,
+      "constant_cumulant_zero": true
+    },
+    {
+      "order": 4,
+      "partition_vs_recurrence": true,
+      "constant_cumulant_zero": true
+    },
+    {
+      "order": 5,
+      "partition_vs_recurrence": true,
+      "constant_cumulant_zero": true
+    },
+    {
+      "order": 6,
+      "partition_vs_recurrence": true,
+      "constant_cumulant_zero": true
+    },
+    {
+      "order": 7,
+      "partition_vs_recurrence": true,
+      "constant_cumulant_zero": true
+    },
+    {
+      "order": 8,
+      "partition_vs_recurrence": true,
+      "constant_cumulant_zero": true
+    },
+    {
+      "order": 9,
+      "partition_vs_recurrence": true,
+      "constant_cumulant_zero": true
+    },
+    {
+      "order": 10,
+      "partition_vs_recurrence": true,
+      "constant_cumulant_zero": true
+    },
+    {
+      "order": 11,
+      "partition_vs_recurrence": true,
+      "constant_cumulant_zero": true
+    },
+    {
+      "order": 12,
+      "partition_vs_recurrence": true,
+      "constant_cumulant_zero": true
+    }
+  ],
+  "proper_partitions": [
+    {
+      "blocks": [
+        9,
+        3
+      ],
+      "outer_exponent": "9/4",
+      "coefficient": -220
+    },
+    {
+      "blocks": [
+        8,
+        4
+      ],
+      "outer_exponent": "2",
+      "coefficient": -495
+    },
+    {
+      "blocks": [
+        7,
+        5
+      ],
+      "outer_exponent": "2",
+      "coefficient": -792
+    },
+    {
+      "blocks": [
+        6,
+        6
+      ],
+      "outer_exponent": "2",
+      "coefficient": -462
+    },
+    {
+      "blocks": [
+        6,
+        3,
+        3
+      ],
+      "outer_exponent": "3/2",
+      "coefficient": 18480
+    },
+    {
+      "blocks": [
+        5,
+        4,
+        3
+      ],
+      "outer_exponent": "5/4",
+      "coefficient": 55440
+    },
+    {
+      "blocks": [
+        4,
+        4,
+        4
+      ],
+      "outer_exponent": "1",
+      "coefficient": 11550
+    },
+    {
+      "blocks": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "outer_exponent": "1",
+      "coefficient": -92400
+    }
+  ],
+  "maximum_outer_exponent": "9/4",
+  "balanced_constant_controls": [
+    {
+      "labels": 12,
+      "signed": "1925/12",
+      "absolute": "1925/12"
+    },
+    {
+      "labels": 24,
+      "signed": "148225/64",
+      "absolute": "1301375075/192"
+    },
+    {
+      "labels": 48,
+      "signed": "64774325/12288",
+      "absolute": "33527982212725/12288"
+    }
+  ],
+  "independent_multiradius_checks": [
+    {
+      "direct": "-560",
+      "collision_expansion": "-560",
+      "bound_passed": true,
+      "set_partitions": 203
+    },
+    {
+      "direct": "-23120",
+      "collision_expansion": "-23120",
+      "bound_passed": true,
+      "set_partitions": 203
+    }
+  ],
+  "discovery_report_mixed_radius_control": {
+    "direct": -68112,
+    "expanded": -68112,
+    "distinct_assignments": 5040
+  },
+  "reviewer_harmonic_control": {
+    "exact_upper": "241757181358081099469/51998697814228992000000000",
+    "less_than_1_over_200000": true,
+    "positive_margin": true,
+    "squarefree_union": "23/24",
+    "conditional_restoration": "102/325"
+  },
+  "limitations": "Exact finite identities and budget arithmetic only; no sampled asymptotic or proof of a signed arithmetic bound."
+}

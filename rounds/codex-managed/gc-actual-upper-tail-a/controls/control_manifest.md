@@ -1,0 +1,13 @@
+# Round231 bounded controls
+
+Campaign `gc-actual-upper-tail-a`; conductor; generated2026-10-11 UTC. All finite computation is diagnostic_only. The proofs and their scopes are in the frozen reports and nonauthor reviews.
+
+1. Command: `python rounds/codex-managed/gc-actual-upper-tail-a/controls/exact_controls.py`. Exact Python integer and Fraction arithmetic; h,h' in1..24, q,q' positive odd1..31; products1..512; Gaussian-integer quarter phases q odd-15..15 and d0..32. Pass rule: all assertions hold. Output `exact_controls.json` records49,664 same-two-adic sign tests,97,792 mixed-sector alternations,680 exact coincidences,512 complete-factor/literal-lattice identities and528 real-phase identities. Rational square comparisons enclose beta; exact arithmetic verifies both conditional target-A margins, the low budget, the second quadratic-tail exponent-27/325 and the pointwise conversion207/650. Result: PASS.
+
+2. Command: `python rounds/codex-managed/gc-actual-upper-tail-a/controls/detuned_phase_control.py`. Eighteen leading real-fibre checks with D=16,32,64; h=q=4093,4095; detuning c=-1/32,0,1/32 and real R=sqrt(hq+4hc/D). Python binary64, tolerance2e-8; observed largest residual below8.71e-10. Pass rule: direct real phase equals the sine identity within tolerance; detuned signs and analytic sine lower bound agree; exact sine at zero detuning vanishes. Output `detuned_phase_control.json`. Result: PASS. These are algebraic fibre weights, not an evaluation of complete F.
+
+3. Independent analytic controls: the blind report proves exact same-sign/near-coincident, opposite-sign, nonzero-mass, finite-boundary and Gaussian odd-kernel cases. The actual hostile report constructs positive, negative and zero localized covariances using the original smooth divisor amplitude and both character signs. The latter is an actual component construction, not a full-wave or upper-tail lower bound. No numerical sampling is used to certify these statements.
+
+4. Preservation and patch controls: `closure_validation.json` will record the frozen report hashes, in-memory identity patch/inverse/replay, graph validation, unchanged proof-draft and historical files, and preserved prior ledger entries. A green closure gate means the no-gain conclusion is accurately scoped; it does not mean target A was proved.
+
+No random numerical survey, fitted exponent, extrapolation, or unverified external theorem was used. The number of analytical derivations and bounded control operations supports the planned at-least95% analytical allocation; no automated reasoning-time measurement is asserted. The hard80/20 limit was respected.

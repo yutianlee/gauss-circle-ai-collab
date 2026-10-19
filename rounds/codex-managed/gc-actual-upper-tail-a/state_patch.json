@@ -1,0 +1,32 @@
+{
+  "round_index": 231,
+  "campaign_id": "gc-actual-upper-tail-a",
+  "starting_graph_sha256": "a50642edf65a3000056cd1443996a32193eb7bf3477b789314be49b843e25f0b",
+  "proof_obligations": {
+    "create": [],
+    "update": [],
+    "correct_rejected": [],
+    "reject": [],
+    "no_change": [
+      "GC-target",
+      "Conditional-bridge",
+      "M9",
+      "M9-M1",
+      "M9-M2",
+      "M9-endpoint-uniformity",
+      "M9-M1-global-angular-radial-estimate",
+      "M9-M1-global-lower-radial-signed-estimate",
+      "M9-M1-GAR-total-active-equivalence",
+      "GC-external-Li-Yang-theta-star",
+      "GC-complete-square-root-large-values-moment-bound",
+      "GC-complete-distinct-radical-twelfth-reduction"
+    ]
+  },
+  "round_assessment": {
+    "terminal_label": "upper_tail_A_attempt_closed_without_complete_gain",
+    "reason": "Bounded target-A attempt isolates sufficient actual exceptional-set quadratic saving a*=10beta-32/25, but obtains no such saving. Exact product representation and actual localized covariance controls rule out only the tested first-average/uniform-pair-decorrelation shortcuts. Independent review passes after the explicit theta convention repair. Accepted complete10beta and all parent/quarter statuses remain unchanged."
+  },
+  "reversibility": {
+    "rule": "Identity in-memory application, inverse and replay; graph and proof-draft bytes are never rewritten."
+  }
+}

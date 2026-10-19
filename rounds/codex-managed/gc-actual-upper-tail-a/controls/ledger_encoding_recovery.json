@@ -1,0 +1,23 @@
+{
+  "status": "repaired",
+  "generated_at": "2026-10-11T15:32:54.899362+00:00",
+  "cause": "Launch helper read historical UTF-8 ledger through Windows default decoding. Two non-ASCII descriptions changed. Closure preservation check correctly rejected this state.",
+  "changed_fields_restored_from_exact_prelaunch_snapshot": [
+    {
+      "round_index": 70,
+      "fields": [
+        "objective"
+      ]
+    },
+    {
+      "round_index": 230,
+      "fields": [
+        "closing_assessment"
+      ]
+    }
+  ],
+  "prior_entries_preserved_after_repair": true,
+  "graph_and_proof_draft_touched": false,
+  "closure_before_failure": "Identity patch validated and applied in memory; matrix gates written; no ledger closure or manifest completion had occurred.",
+  "retry": "Closure script permits exact existing gates without duplication; all source reads and writes use explicit UTF-8."
+}

@@ -47,6 +47,8 @@ Preserve the separate quarter route: an unbounded sequence of fixed even orders 
 
 The latest reviewed central owner is C_gamma from `strategy/round231_balanced_cancellation/conductor_decision.md`, with T^(4gamma)<n<2T^(1-2gamma), actual divisor characters and d,m>=T^(2gamma-13/42)x(n)^(29/84). Its complete complementary moment budget is m(gamma)=max(1,10gamma,1+20gamma/13). At gamma16/125 the sufficient target is32/25; at gamma13/125 it is29/25. A new bound for a component must be combined with that complementary floor. This owner is reviewed admission evidence, not an accepted new graph reduction.
 
+For this family to beat the pointwise benchmark with its current complementary estimates, both 10gamma and1+20gamma/13 must be below13beta-1/2. The stricter condition is gamma<13(13beta-3/2)/20=0.114765673961... . Thus gamma16/125 can support a modest moment improvement but cannot deliver a pointwise gain merely by improving its central term; its companions would also need improvement. This is a restriction on the current upper-bound calculation, not a lower bound or a restriction on different methods.
+
 Seek a signed estimate across reciprocal frequencies or directly in the radius average for this owner, or a different genuinely complete mechanism. Exact quarter-frequency cancellation in the leading real term is useful structure; nearby frequencies can be coherent. Uniform square-root cancellation in each separate fibre is already excluded. Preserve signs across frequencies and squarefree-label tuples. The accepted and reviewed absolute-certificate obstructions do not lower-bound the actual signed moment.
 
 ## 2. Kloosterman transfer: use the mask tool, price the actual operator
